@@ -13,15 +13,18 @@ def new(name, directory):
     cursor = connection.cursor()
     
     # All CORGIS datasets have a version table
-    cursor.execute('''CREATE TABLE version
-                         (version integer, builder text, author text, datetime text)''')
-    cursor.execute('''INSERT INTO version
-                         (version, builder, author, datetime)
-                         VALUES (?, ?, ?, ?) ''',
-                         (VERSION_INFORMATION['version'],
-                         VERSION_INFORMATION['builder'],
-                         VERSION_INFORMATION['author'],
-                         VERSION_INFORMATION['datetime']))
+    cursor.execute('''
+        CREATE TABLE version
+        (version integer, builder text, author text, datetime text)
+    ''')
+    cursor.execute('''
+        INSERT INTO version
+        (version, builder, author, datetime)
+        VALUES (?, ?, ?, ?) ''',
+        (VERSION_INFORMATION['version'],
+         VERSION_INFORMATION['builder'],
+         VERSION_INFORMATION['author'],
+         VERSION_INFORMATION['datetime']))
     connection.commit()
     # And a list of commands
     
