@@ -1,10 +1,21 @@
-version:
+metadata:
     version: 1
     builder: 'Python'
     author: 'acbart'
     datetime: '9/23/2015'
+    description: >
+        The Music library is all about some interesting music data.\n
+        This is multiple lines long.
+    users: >
+        This is some additional information that users would be interested in having.
+    developers: >
+        This is some information that developers would be interested in.
+    citation: This is some citation data. It is meant to be embeddable.
+    appendix:
+      - name: Extra guide
+        file: notes.txt
 datasets:
-  - file: music/music.json
+  - file: music.json
     name: music
 rest:
   - name: forecast.gov

@@ -1,8 +1,20 @@
+'''
+
+name: validate.py
+author: acbart
+version: 2
+
+The motivation behind a custom validator (as opposed to Rx or Voluptuous) is that
+ we want to be able to collect warnings and errors without early termination.
+ When debugging a long spec, it's likely that there will be multiple errors, and
+ we don't want to have to crash on just the first one.
+
+'''
+
 from itertools import chain
 from auxiliary import clean_json
 import re
 import sys
-# validate spec
 
 readable_types = {str : "String",
                   int : "Integer",
@@ -171,7 +183,7 @@ def validate_spec(spec):
     """
     Returns a list of warnings and a list of errors
     """
-    # Abuse state to hold warnings and errors in lists accessed simply
+    # Nice closure to hold warnings and errors in lists accessed simply
     warnings, errors = [], []
     def add_warning(message): warnings.append(message)
     def add_error(message): errors.append(message)
