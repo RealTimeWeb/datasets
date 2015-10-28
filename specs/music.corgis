@@ -1,0 +1,28 @@
+version:
+    version: 1
+    builder: 'Python'
+    author: 'acbart'
+    datetime: '9/23/2015'
+datasets:
+  - file: music/music.json
+    name: music
+rest:
+  - name: forecast.gov
+    url: http://forecast.weather.gov/MapClick.php&lat=37.2327&lon=-80.4284&FcstType=json
+    verb: get
+    type: JSON
+interfaces:
+  - name: get songs
+    returns: int
+    test:
+        sql: SELECT data FROM music LIMIT {hardware}
+    prod:
+        sql: SELECT data FROM music
+  - name: get temperatures
+    returns: list[int]
+    test:
+        sql: SELECT temperature FROM weather WHERE city={city} ORDER BY date LIMIT {hardware}
+    prod:
+        api: forecast.gov
+        pre: geocode city > lat,lon
+        post: data.temperature

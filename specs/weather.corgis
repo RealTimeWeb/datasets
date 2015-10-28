@@ -1,0 +1,39 @@
+version:
+    version: 1
+    builder: 'Python'
+    author: 'acbart'
+    datetime: '9/23/2015'
+datasets:
+  - name: weather
+    columns:
+      - temperature: int
+        description: string
+        date: int
+rest:
+  - name: forecast.gov
+    url: http://forecast.weather.gov/MapClick.php&lat=37.2327&lon=-80.4284&FcstType=json
+    verb: get
+    type: JSON
+interfaces:
+  - name: get_temperature
+    returns: int
+    test:
+        sql: SELECT temperature FROM weather WHERE city={city} ORDER BY date LIMIT 1
+        constraint:
+            test: SELECT COUNT(*)>=1 FROM weather WHERE city=?
+            failure: The given city was not in the cache.
+    prod:
+        api: forecast.gov
+        pre: geocode city > lat,lon
+        post: data.temperature[0]
+    args:
+      - name: city
+        type: location
+  - name: get_temperatures
+    returns: list[int]
+    test:
+        sql: SELECT temperature FROM weather WHERE city={city} ORDER BY date LIMIT {hardware}
+    prod:
+        api: forecast.gov
+        pre: geocode city > lat,lon
+        post: data.temperature
