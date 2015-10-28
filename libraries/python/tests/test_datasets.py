@@ -1,12 +1,12 @@
 import unittest
 
-from datasets import weather
+from datasets import music
 
-class TestWeather(unittest.TestCase):
+class TestMusic(unittest.TestCase):
  
-    def test_get_temperature(self):
-        weather_data = weather.get_temperature()
-        print weather_data
+    def test_get_songs(self):
+        songs = music.get_songs()
+        print songs
         self.assertEqual( 1, 1)
  
 if __name__ == '__main__':

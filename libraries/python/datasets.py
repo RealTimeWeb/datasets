@@ -5,10 +5,12 @@ If you are a student, you do not need to learn about this dataset.
 '''
 
 from types import ModuleType
+import sqlite3
+import json
 import sys, os
 import inspect
 
-FILE_FORMATS = ['.sql', '.corgis']
+FILE_FORMATS = ['.db', '.corgis']
 DEV = True
 DEV_DIRECTORIES = [r'C:\Users\acbart\Projects\datasets\datasets']
 
@@ -45,7 +47,15 @@ class DatasetInstance(object):
         
     def _access_dataset(self, method):
         def _command(**kwargs):
-            return "Hello World"
+            connection = sqlite3.connect(self._connection_file)
+            cursor = connection.cursor()
+            cursor.execute("""
+                SELECT data FROM music
+            """)
+            total = []
+            for data in cursor.fetchall():
+                total.append(json.loads(data[0]))
+            return len(total)
         return _command
         
     def _load_dataset(self):
