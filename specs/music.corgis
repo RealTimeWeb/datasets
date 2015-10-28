@@ -1,16 +1,19 @@
 metadata:
     version: 1
-    builder: 'Python'
-    author: 'acbart'
-    datetime: '9/23/2015'
-    description: >
-        The Music library is all about some interesting music data.\n
-        This is multiple lines long.
-    users: >
-        This is some additional information that users would be interested in having.
-    developers: >
-        This is some information that developers would be interested in.
-    citation: This is some citation data. It is meant to be embeddable.
+    name: Music
+    builder: Python
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 9/23/2015
+    tags: music, songs, artists, creativity, media
+    description:
+        overview: >
+            The Music library is all about some interesting music data.\n
+            This is multiple lines long.
+        users: >
+            This is some additional information that users would be interested in having. Like maybe they didn't realize it.
+        developers: >
+            This is some information that developers would be interested in. Like maybe an oddity in the structure.
+        citation: This is some citation data. It is meant to be embeddable.
     appendix:
       - name: Extra guide
         file: notes.txt

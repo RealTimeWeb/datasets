@@ -3,7 +3,7 @@ import yaml
 from pprint import pprint
 
 # Builder specific
-from validate import validate_spec
+from validate import SpecValidator
 
 
 if __name__ == '__main__':
@@ -18,7 +18,7 @@ if __name__ == '__main__':
     with open(args.spec, 'r') as specification_file:
         specification = yaml.load(specification_file)
         pprint(specification)
-        warnings, errors = validate_spec(specification)
+        warnings, errors = SpecValidator(specification).run()
         for warning in warnings:
             print "Warning!", warning
         for error in errors:
