@@ -86,8 +86,8 @@ class Compiler(object):
                                                                     readable_types.get(expected_type, expected_type), 
                                                                     readable_types.get(got_type, got_type)))
     
-    def require_field(self, location, owner, error_value, test_type=None):
-        name = location.split(".")[-1]
+    def require_field(self, location, name, owner, error_value, test_type=None):
+        location = location + "." + field
         if name in owner:
             if isinstance(test_type, set):
                 typecheck = owner[name] in test_type
@@ -101,8 +101,8 @@ class Compiler(object):
             self.not_found_error(location)
             return error_value
         
-    def recommend_field(self, location, owner, default_value, test_type=None, not_found=""):
-        name = location.split(".")[-1]
+    def recommend_field(self, location, name, owner, default_value, test_type=None, not_found=""):
+        location = location + "." + field
         if name in owner:
             if isinstance(test_type, set):
                 typecheck = owner[name] in test_type
@@ -116,8 +116,8 @@ class Compiler(object):
             self.not_found_warning(location, not_found)
             return default_value
             
-    def typecheck_field(self, location, owner, default_value, test_type):
-        name = location.split(".")[-1]
+    def typecheck_field(self, location, name, owner, default_value, test_type):
+        location = location + "." + field
         if name in owner:
             if isinstance(test_type, set):
                 typecheck = owner[name] in test_type
@@ -141,14 +141,14 @@ class Compiler(object):
                 
     def walk_metadata(self, raw):
         metadata = Metadata()
-        metadata.name = self.require_field("metadata.name", raw, "Untitled", str)
-        metadata.author = self.recommend_field("metadata.author", raw, '', str)
-        metadata.datetime = self.typecheck_field("metadata.datetime", raw, '', str)
-        metadata.version = self.recommend_field("metadata.version", raw, 1, int, "Assuming version is 1.")
+        metadata.name = self.require_field("metadata", "name", raw, "Untitled", str)
+        metadata.author = self.recommend_field("metadata", "author", raw, '', str)
+        metadata.datetime = self.typecheck_field("metadata", "datetime", raw, '', str)
+        metadata.version = self.recommend_field("metadata", "version", raw, 1, int, "Assuming version is 1.")
         # TODO: Handle descriptions
-        metadata.description = self.recommend_field("metadata.description", raw, {}, dict, "There will be no top-level documentation!")
+        metadata.description = self.recommend_field("metadata", "description", raw, {}, dict, "There will be no top-level documentation!")
         # TODO: Handle appendix
-        metadata.tags = self.recommend_field("metadata.tags", raw, [], list)
+        metadata.tags = self.recommend_field("metadata", "tags", raw, [], list)
         return metadata
             
     def walk_enum(self, name, data, location):
@@ -165,11 +165,10 @@ class Compiler(object):
     def walk_field(self, name, data, location):
         location = "{}.{}".format(location, name)
         if isinstance(data, dict):
-            self.require_field("type", "{}.type".format(location), data, str)
-            self.require_field("path", "{}.path".format(location), data, str)
-            self.recommend_field("description", "{}.description".format(location), 
-                            data, str, not_found="There will be no documentation for {}!".format(location))
-            self.typecheck_field("comment", "{}.comment".format(location), data, str)
+            self.require_field(location, "type", data, "", str)
+            self.require_field(location, "path", data, "", str)
+            self.recommend_field(location, "description", data, "", str, not_found="There will be no documentation for {}!".format(location))
+            self.typecheck_field(location, "comment", data, "", str)
         else:
             self.type_error(location, dict, type(data))
         
@@ -197,16 +196,16 @@ class Compiler(object):
     def walk_input(self, name, data, location):
         location = "{}.{}".format(location, name)
         if isinstance(data, dict):
-            self.require_field("path", "{}.path".format(location), data, str)
-            self.require_field("type", "{}.type".format(location), data, str)
-            self.typecheck_field("comment", "{}.comment".format(location), data, str)
-            self.recommend_field("description", 
+            self.require_field(location, "path", "{}.path".format(location), data, str)
+            self.require_field(location, "type", "{}.type".format(location), data, str)
+            self.typecheck_field(location, "comment", "{}.comment".format(location), data, str)
+            self.recommend_field(location, "description", 
                             "functions.{}.description".format(location),
                             data, str, not_found="There will be no documentation for {}!".format(name))
-            self.recommend_field("indexed", "{}.indexed".format(location), 
+            self.recommend_field(location, "indexed", "{}.indexed".format(location), 
                             data, bool,
                             not_found = "{}.indexed will default to true.".format(name))
-            self.recommend_field("hidden", "{}.hidden".format(location), 
+            self.recommend_field(location, "hidden", "{}.hidden".format(location), 
                             data, bool,
                             not_found = "{}.hidden will default to false.".format(name))
         else:
@@ -235,13 +234,13 @@ class Compiler(object):
     production:
         sql: SELECT data FROM music WHERE index={title} LIMIT 1'''
         if isinstance(data, dict):
-            self.require_field("name", "{}.name".format(location), data, str)
+            self.require_field(location, "name", data, "", str)
             interface.name = de_identifier(data.get("name", ""))
             
-            self.require_field("returns", "{}.returns".format(location), data, str)
+            self.require_field(location, "returns", data, str)
             interface.returns = de_identifier(data.get("returns", ""))
             
-            self.require_field("production", "{}.production".format(location), data, str)
+            self.require_field(location, "production", data, str)
             interface.production = de_identifier(data.get("returns", ""))
             
         else:
