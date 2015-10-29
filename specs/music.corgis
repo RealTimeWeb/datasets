@@ -1,10 +1,10 @@
 metadata:
     version: 1
     name: Music
-    builder: Python
+    builder: 2
     author: Austin Cory Bart <acbart@vt.edu>
     datetime: 9/23/2015
-    tags: music, songs, artists, creativity, media
+    tags: [music, songs, artists, creativity, media]
     description:
         overview: >
             The Music library is all about some interesting music data.\n
@@ -17,26 +17,44 @@ metadata:
     appendix:
       - name: Extra guide
         file: notes.txt
-datasets:
+local:
   - file: music.json
     name: music
-rest:
-  - name: forecast.gov
-    url: http://forecast.weather.gov/MapClick.php&lat=37.2327&lon=-80.4284&FcstType=json
-    verb: get
-    type: JSON
+    indexes:
+      - name: title
+        jsonpath: song.title
+      - name: artist
+        jsonpath: artist.name
+objects:
+  - name: song
+    
 interfaces:
   - name: get songs
-    returns: int
+    returns: list[song]
     test:
         sql: SELECT data FROM music LIMIT {hardware}
-    prod:
+    production:
         sql: SELECT data FROM music
-  - name: get temperatures
-    returns: list[int]
-    test:
-        sql: SELECT temperature FROM weather WHERE city={city} ORDER BY date LIMIT {hardware}
-    prod:
-        api: forecast.gov
-        pre: geocode city > lat,lon
-        post: data.temperature
+  - name: get song by name
+    args:
+      - name: title
+        type: string
+    returns: song
+    production:
+        sql: SELECT data FROM music WHERE title={title} LIMIT 1
+  - name: get rating by name
+    args:
+      - name: title
+        type: string
+    returns: float
+    production:
+        sql: SELECT data FROM music WHERE title={title} LIMIT 1
+        post: jsonpath("song.hotttnesss")
+  - name: get ratings by artist
+    args:
+      - name: artist
+        type: string
+    production:
+        sql: SELECT data FROM music WHERE artist={artist}
+        post: mapjsonpath("song.hotttnesss")
+    returns: list[float]
