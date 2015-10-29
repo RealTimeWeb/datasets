@@ -20,8 +20,10 @@ if __name__ == '__main__':
         specification = yaml.load(specification_file)
         pprint(specification)
         compiled, warnings, errors = Compiler(specification).run()
+        print("*"*10)
         for warning in warnings:
             print "Warning!", warning
         for error in errors:
             print "Error!", error
+        print("*"*10)
         pprint(to_dict(compiled))

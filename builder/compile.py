@@ -25,9 +25,6 @@ readable_types = {str : "String",
 ### Error and warning messages
 
 class PrintableObject(object):
-    def __init__(self, **items):
-        for key, value in items.items():
-            setattr(self, key, value)
 
     def __repr__(self):
         args = ", ".join(["{}={}".format(k,v) for k,v in vars(self).items()])
@@ -36,13 +33,15 @@ class PrintableObject(object):
 class Package(PrintableObject): pass
 class Metadata(PrintableObject): pass
 class Interface(PrintableObject): pass
+class Implementation(PrintableObject): pass
+class Argument(PrintableObject): pass
 class HTTP(PrintableObject): pass
 class Local(PrintableObject): pass
+class Index(PrintableObject): pass
 class Object(PrintableObject): pass
 class Field(PrintableObject): pass
 class Function(PrintableObject): pass
 class Input(PrintableObject): pass
-class Implementation(PrintableObject): pass
 
 def de_identifier(name):
     name = name.replace("_", " ").replace("-", " ")
@@ -87,7 +86,7 @@ class Compiler(object):
                                                                     readable_types.get(got_type, got_type)))
     
     def require_field(self, location, name, owner, error_value, test_type=None):
-        location = location + "." + field
+        location = location + "." + name
         if name in owner:
             if isinstance(test_type, set):
                 typecheck = owner[name] in test_type
@@ -102,7 +101,7 @@ class Compiler(object):
             return error_value
         
     def recommend_field(self, location, name, owner, default_value, test_type=None, not_found=""):
-        location = location + "." + field
+        location = location + "." + name
         if name in owner:
             if isinstance(test_type, set):
                 typecheck = owner[name] in test_type
@@ -117,7 +116,7 @@ class Compiler(object):
             return default_value
             
     def typecheck_field(self, location, name, owner, default_value, test_type):
-        location = location + "." + field
+        location = location + "." + name
         if name in owner:
             if isinstance(test_type, set):
                 typecheck = owner[name] in test_type
@@ -133,11 +132,11 @@ class Compiler(object):
 
     def walk_list(self, location, name, data, walk_element): 
         if name in data:
-            if isinstance(data[name], dict):
-                for element_name, element_data in data[name].iteritems():
-                    yield walk_element(element_name, element_data, location)
+            if isinstance(data[name], list):
+                for index, element_data in enumerate(data[name]):
+                    yield walk_element(index, element_data, location)
             else:
-                self.type_error(location, dict, type(spec[name]))
+                self.type_error(location, list, type(data[name]))
                 
     def walk_metadata(self, raw):
         metadata = Metadata()
@@ -193,56 +192,100 @@ class Compiler(object):
     def walk_objects(self, spec):
         self.walk_list("objects", "objects", spec, self.walk_object)
         
-    def walk_input(self, name, data, location):
+    def walk_http():
+        self.recommend_field(location, "indexed", "{}.indexed".format(location), 
+                        data, bool,
+                        not_found = "{}.indexed will default to true.".format(name))
+        self.recommend_field(location, "hidden", "{}.hidden".format(location), 
+                        data, bool,
+                        not_found = "{}.hidden will default to false.".format(name))
+        
+    def walk_index(self, name, data, location):
+        index = Index()
         location = "{}.{}".format(location, name)
         if isinstance(data, dict):
-            self.require_field(location, "path", "{}.path".format(location), data, str)
-            self.require_field(location, "type", "{}.type".format(location), data, str)
-            self.typecheck_field(location, "comment", "{}.comment".format(location), data, str)
-            self.recommend_field(location, "description", 
-                            "functions.{}.description".format(location),
-                            data, str, not_found="There will be no documentation for {}!".format(name))
-            self.recommend_field(location, "indexed", "{}.indexed".format(location), 
-                            data, bool,
-                            not_found = "{}.indexed will default to true.".format(name))
-            self.recommend_field(location, "hidden", "{}.hidden".format(location), 
-                            data, bool,
-                            not_found = "{}.hidden will default to false.".format(name))
+            index.name = self.require_field(location, "name", data, "", str)
+            if "jsonpath" in data:
+                index.type = "JSON"
+                index.jsonpath = self.typecheck_field(location, "jsonpath", data, "", str)
+            else:
+                index.type = ""
+                raise NotImplementedError("Only jsonpath is supported currently")
         else:
             self.type_error(location, dict, type(data))
+        return index
+    
+    def walk_local(self, name, data, location):
+        local = Local()
+        location = "{}.{}".format(location, name)
+        if isinstance(data, dict):
+            local.name = de_identifier(self.require_field(location, "name", data, "", str))
+            local.file = self.require_field(location, "file", data, "", str)
+            local.type = local.name.split(".")[-1]
+            if "indexes" in data:
+                local.indexes = list(self.walk_list("{}.indexes".format(location), "indexes", data, self.walk_index))
+            # Implementations
+            if "production" in data:
+                interface.production = self.walk_implementation("production", data["production"], location)
+            else:
+                self.not_found_error("{}.{}".format(location, "production"))
+            if "test" in data:
+                interface.test = self.walk_implementation("test", data["test"], location)
+            # Arguments
+            if "args" in data:
+                self.walk_list("{}.args".format(location), "args", data, self.walk_arg)
+        else:
+            self.type_error(location, dict, type(data))
+        return local
+    
+    def walk_locals(self, spec):
+        return list(self.walk_list("local", "local", spec, self.walk_local))
+    
+    def walk_arg(self, name, data, location):
+        location = "{}.{}".format(location, name)
+        argument = Argument()
+        if isinstance(data, dict):
+            argument.type = self.require_field(location, "type", data, "", str)
+            argument.name = self.require_field(location, "name", data, "", str)
+            argument.description = self.recommend_field(location, "description", 
+                            data, "", str, not_found="There will be no documentation for {}!".format(name))
+        else:
+            self.type_error(location, dict, type(data))
+        return argument
             
     def walk_implementation(self, name, data, location):
         implementation = Implementation()
         location = "{}.{}".format(location, name)
-        
-        return 
+        if isinstance(data, dict):
+            if "sql" in data:
+                implementation.type = "SQL"
+                implementation.sql = self.typecheck_field(location, "sql", data, "", str)
+            elif "http" in data:
+                implementation.type = "HTTP"
+                implementation.http = self.typecheck_field(location, "http", data, "", str)
+            else:
+                self.not_found_error("{}.sql|http|dynamic".format(location))
+            implementation.pre = self.typecheck_field(location, "pre", data, "", str)
+            implementation.post = self.typecheck_field(location, "post", data, "", str)
+        return implementation
         
     def walk_interface(self, name, data, location):
         interface = Interface()
         location = "{}.{}".format(location, name)
-        '''- name: get songs
-    returns: list
-    test:
-        sql: SELECT data FROM music LIMIT {hardware}
-    production:
-        sql: SELECT data FROM music
-  - name: get song by name
-    args:
-      - name: title
-        type: string
-    returns: dict
-    production:
-        sql: SELECT data FROM music WHERE index={title} LIMIT 1'''
         if isinstance(data, dict):
-            self.require_field(location, "name", data, "", str)
-            interface.name = de_identifier(data.get("name", ""))
-            
-            self.require_field(location, "returns", data, str)
-            interface.returns = de_identifier(data.get("returns", ""))
-            
-            self.require_field(location, "production", data, str)
-            interface.production = de_identifier(data.get("returns", ""))
-            
+            interface.name = de_identifier(self.require_field(location, "name", data, "", str))
+            interface.returns = de_identifier(self.require_field(location, "returns", data, "", str))
+            interface.description = self.recommend_field(location, "description", 
+                            data, "", str, not_found="There will be no documentation for {}!".format(name))
+            # Implementations
+            if "production" in data:
+                interface.production = self.walk_implementation("production", data["production"], location)
+            else:
+                self.not_found_error("{}.{}".format(location, "production"))
+            if "test" in data:
+                interface.test = self.walk_implementation("test", data["test"], location)
+            # Arguments
+            interface.args = list(self.walk_list("{}.args".format(location), "args", data, self.walk_arg))
         else:
             self.type_error(location, dict, type(data))
         return interface
@@ -270,7 +313,7 @@ class Compiler(object):
         return interface'''
 
     def walk_interfaces(self, spec):
-        return self.walk_list("functions", "functions", spec, self.walk_interface)
+        return list(self.walk_list("interfaces", "interfaces", spec, self.walk_interface))
         
     def walk_spec(self, spec):
         self.package = Package()
@@ -282,6 +325,11 @@ class Compiler(object):
         
         # Interfaces
         if "interfaces" in spec:
-            self.package.interfaces = self.walk_interfaces(spec["interfaces"])
+            self.package.interfaces = self.walk_interfaces(spec)
         else:
             self.not_found_error("interfaces")
+        
+        # Interfaces
+        if "local" in spec:
+            self.package.locals = self.walk_locals(spec)
+        

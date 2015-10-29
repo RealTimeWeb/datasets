@@ -36,9 +36,11 @@ interfaces:
     production:
         sql: SELECT data FROM music
   - name: get song by name
+    description: Given the title of a song, returns information about the song.
     args:
       - name: title
         type: string
+        description: The title of the song. Must match the exact name of the song.
     returns: song
     production:
         sql: SELECT data FROM music WHERE title={title} LIMIT 1

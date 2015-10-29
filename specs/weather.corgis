@@ -22,9 +22,9 @@ datasets:
       - temperature: int
         description: string
         date: int
-rest:
+http:
   - name: forecast.gov
-    url: http://forecast.weather.gov/MapClick.php&lat=37.2327&lon=-80.4284&FcstType=json
+    url: http://forecast.weather.gov/MapClick.php&lat=<lat>&lon=<lon>&FcstType=json
     verb: get
     type: JSON
 interfaces:
