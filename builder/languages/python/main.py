@@ -1,54 +1,40 @@
-from __future__ import print_function
-import sys
-import json
+import sys as _sys
+import os as _os
+import json as _json
+import sqlite3 as _sql
 
-HEADER = {'User-Agent': 
+_HEADER = {'User-Agent': 
           'CORGIS {{ metadata.name|title }} library for educational purposes'}
-PYTHON_3 = sys.version_info >= (3, 0)
+_PYTHON_3 = _sys.version_info >= (3, 0)
+_TEST = False
+_HARDWARE = 10
 
-if PYTHON_3:
-    from urllib.error import HTTPError
-    import urllib.request as request
-    from urllib.parse import quote_plus
+if _PYTHON_3:
+    import urllib.request as _request
+    from urllib.parse import quote_plus as _quote_plus
 else:
-    from urllib2 import HTTPError
-    import urllib2
-    from urllib import quote_plus
+    import urllib2 as _urllib2
+    from urllib import quote_plus as _quote_plus
+    
+_DATABASE_NAME = "{{ metadata.name|flat_case }}.db"
+if _os.path.isfile(_DATABASE_NAME):
+    _DATABASE = _sql.connect(_DATABASE_NAME)
+else:
+    raise DatasetException("Error! Could not find the \"{}\" file. Make sure that it is in the same directory as {}.py!".format(_DATABASE_NAME, __name__))
 
 ################################################################################
 # Auxilary
 ################################################################################
 
-def _parse_int(value, default=0):
+def _parse_type(value, type_func):
     """
-    Attempt to cast *value* into an integer, returning *default* if it fails.
+    Attempt to cast *value* into *type_func*, returning *default* if it fails.
     """
+    default = type_func(0)
     if value is None:
         return default
     try:
-        return int(value)
-    except ValueError:
-        return default
-
-def _parse_float(value, default=0):
-    """
-    Attempt to cast *value* into a float, returning *default* if it fails.
-    """
-    if value is None:
-        return default
-    try:
-        return float(value)
-    except ValueError:
-        return default
-
-def _parse_boolean(value, default=False):
-    """
-    Attempt to cast *value* into a bool, returning *default* if it fails.
-    """
-    if value is None:
-        return default
-    try:
-        return bool(value)
+        return type_func(value)
     except ValueError:
         return default
 
@@ -60,10 +46,7 @@ def _iteritems(_dict):
     :param dict _dict: the dictionary to parse
     :returns: the iterable dictionary
     """
-    if PYTHON_3:
-        return _dict.items()
-    else:
-        return _dict.iteritems()
+    return _dict.items() if _PYTHON_3 else _dict.iteritems()
 
 
 def _urlencode(query, params):
@@ -74,7 +57,7 @@ def _urlencode(query, params):
     :param dict params: the parameters to send to the url
     :returns: a *str* of the full url
     """
-    return query + '?' + '&'.join(key+'='+quote_plus(str(value))
+    return query + '?' + '&'.join(key+'='+_quote_plus(str(value))
                                   for key, value in _iteritems(params))
 
 
@@ -85,36 +68,33 @@ def _get(url):
     :param str url: the url to request a response from
     :returns: the *str* response
     """
-    if PYTHON_3:
-        req = request.Request(url, headers=HEADER)
-        response = request.urlopen(req)
+    if _PYTHON_3:
+        req = _request.Request(url, headers=_HEADER)
+        response = _request.urlopen(req)
         return response.read().decode('utf-8')
     else:
-        req = urllib2.Request(url, headers=HEADER)
-        response = urllib2.urlopen(req)
+        req = _urllib2.Request(url, headers=_HEADER)
+        response = _urllib2.urlopen(req)
         return response.read()
 
 
-def _recursively_convert_unicode_to_str(input):
+def _byteify(input):
     """
     Force the given input to only use `str` instead of `bytes` or `unicode`.
-
     This works even if the input is a dict, list,
     """
     if isinstance(input, dict):
-        return {_recursively_convert_unicode_to_str(key): 
-                _recursively_convert_unicode_to_str(value) 
-                for key, value in input.items()}
+        return {_byteify(key): _byteify(value) for key, value in input.items()}
     elif isinstance(input, list):
-        return [_recursively_convert_unicode_to_str(element) 
-                for element in input]
-    elif not PYTHON_3:
-        return input.encode('utf-8')
-    elif PYTHON_3 and isinstance(input, str):
+        return [_byteify(element) for element in input]
+    elif _PYTHON_3 and isinstance(input, str):
+        return str(input.encode('ascii', 'replace').decode('ascii'))
+    elif not _PYTHON_3 and isinstance(input, unicode):
         return str(input.encode('ascii', 'replace').decode('ascii'))
     else:
         return input
 
+{% if http %}
 
 ################################################################################
 # Cache
@@ -177,7 +157,7 @@ class _Cache(object):
         :param str filename: the location to store this at.
         """
         with open(filename, 'w') as f:
-            json.dump({"data": self._cache, "metadata": ""}, f)
+            _json.dump({"data": self._cache, "metadata": ""}, f)
 
     def lookup(self, key):
         """
@@ -225,7 +205,7 @@ class _Cache(object):
         """
         try:
             with open(filename, 'r') as f:
-                raw_data = json.load(f)
+                raw_data = _json.load(f)
                 self._cache = _recursively_convert_unicode_to_str(raw_data)['data']
         except (OSError, IOError) as e:
             raise {{ metadata.name|camel_case_caps }}(
@@ -240,13 +220,16 @@ _stop_editing = _CACHE.stop_editing
 _save_cache = _CACHE.stop_editing
 connect = _CACHE.connect
 disconnect = _CACHE.disconnect
+
+{% endif %}
         
 ################################################################################
 # Exceptions
 ################################################################################
 
 
-class {{ metadata.name|camel_case_caps }}Exception(Exception):
+class DatasetException(Exception):
+    ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
 
 ################################################################################
@@ -278,13 +261,13 @@ class {{ object.name | camel_case_caps }}(object):
         return """ <> """.format()
 
     def __repr__(self):
-        if PYTHON_3:
+        if _PYTHON_3:
             return self.__unicode__().encode('utf-8')
         else:
             return self.__unicode__()
 
     def __str__(self):
-        if PYTHON_3:
+        if _PYTHON_3:
             return self.__unicode__().encode('utf-8')
         else:
             return self.__unicode__()
@@ -329,29 +312,25 @@ class {{ object.name | camel_case_caps }}(object):
                             {% if not loop.last %},
                         {% endif %}{%- endfor %})
 {% endfor %}
-
-################################################################################
-# Service Methods
-################################################################################
     
-{% for function in functions %}
-def _{{ function.name | snake_case }}_request({% for input in function.visible_inputs %}{{input.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %}):
+{% for http in https %}
+def _{{ http.name | snake_case }}_request({% for input in http.visible_inputs %}{{input.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %}):
     """
-    Used to build the request string used by :func:`{{ function.name | snake_case }}`.
+    Used to build the request string used by :func:`{{ http.name | snake_case }}`.
     
-    {% for input in function.visible_inputs -%}
+    {% for input in http.visible_inputs -%}
     :param {{input.name | snake_case }}: {{ input.description }}
     :type {{input.name | snake_case }}: {{ input.type | to_python_type }}
     {% endfor -%}
     :returns: str
     """
-    baseurl = "{{ function.url | convert_url_parameters }}".format({% for input in function.url_inputs %}{{ input.name | snake_case}}{% if not loop.last %},{% endif%}{% endfor %})
-    indexed_query = _urlencode(baseurl, { {%- for input in function.visible_inputs -%}
+    baseurl = "{{ http.url | convert_url_parameters }}".format({% for input in http.url_inputs %}{{ input.name | snake_case}}{% if not loop.last %},{% endif%}{% endfor %})
+    indexed_query = _urlencode(baseurl, { {%- for input in http.visible_inputs -%}
                     '{{input.path }}': {{input.name| snake_case }}
                     {%- if not loop.last %}, 
                                          {% endif -%}
                   {%- endfor %} })
-    full_query = _urlencode(baseurl, { {%- for input in function.payload_inputs -%}
+    full_query = _urlencode(baseurl, { {%- for input in http.payload_inputs -%}
                     '{{input.path }}': {% if input.hidden %}"{{input.default }}"{% else %}{{input.name| snake_case }}{% endif %}
                     {%- if not loop.last %}, 
                                       {% endif -%}
@@ -367,31 +346,109 @@ def _{{ function.name | snake_case }}_request({% for input in function.visible_i
     try:
         if _CACHE._connected and _CACHE._editable:
             _CACHE.add_to_cache(indexed_query, result)
-        return _recursively_convert_unicode_to_str(json.loads(result))
+        return _recursively_convert_unicode_to_str(_json.loads(result))
     except ValueError:
         raise {{ metadata.name|camel_case_caps }}Exception("Internal Error.")
 
-def {{ function.name | snake_case }}({% for input in function.visible_inputs %}{{input.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %}):
+def {{ http.name | snake_case }}({% for input in http.visible_inputs %}{{input.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %}):
     """
-    {{ function.description }}
+    {{ http.description }}
     
-    {% for input in function.visible_inputs -%}
+    {% for input in http.visible_inputs -%}
     :param {{input.name | snake_case }}: {{ input.description }}
     :type {{input.name | snake_case }}: {{ input.type | to_python_type }}
     {% endfor -%}
     
-    :returns: {{ function.output | to_python_type }}
+    :returns: {{ http.output | to_python_type }}
     """
-    result = _{{ function.name | snake_case }}_request({% for input in function.visible_inputs %}{{input.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %})
-    {% if function.output | is_builtin -%}
-    return result{{ function.post | parse_json_path("") }}
-    {% elif function.output | is_list -%}
-    result_list = map({{ function.output | strip_list | to_python_type }}._from_json, result{{ function.post | parse_json_path("")}})
+    result = _{{ http.name | snake_case }}_request({% for input in http.visible_inputs %}{{input.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %})
+    {% if http.output | is_builtin -%}
+    return result{{ http.post | parse_json_path("") }}
+    {% elif http.output | is_list -%}
+    result_list = map({{ http.output | strip_list | to_python_type }}._from_json, result{{ http.post | parse_json_path("")}})
     #return result_list
     return [item._to_dict() for item in result_list]
     {% else -%}
-    class_result = {{ function.output | to_python_type }}._from_json(result{{ function.post | parse_json_path("") }})
+    class_result = {{ http.output | to_python_type }}._from_json(result{{ http.post | parse_json_path("") }})
     # return class_result
     return class_result._to_dict()
     {% endif %}
 {% endfor %}
+
+################################################################################
+# Interfaces
+################################################################################
+
+{% for interface in interfaces %}
+
+def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=True{% endif %}):
+    """
+    {{ interface.description }}
+    
+    {% for arg in interface.args -%}
+    :param {{arg.name | snake_case }}: {{ arg.description }}
+    :type {{arg.name | snake_case }}: {{ arg.type | to_python_type }}
+    {% endfor -%}
+    """
+    {% if interface.test %}
+    if _TEST or test:
+        {% if interface.test.type == "SQL" -%}
+        rows = _DATABASE.execute("{{ interface.test.sql }}".format(
+            hardware=_HARDWARE){% if interface.args %},
+            ({% for arg in interface.args %}{{arg.name| snake_case }}, {% endfor %}){% endif %})
+        data = [r[0] for r in rows]
+        {% if interface.test.post -%}
+        data = [{{ interface.test.post|parse_bark }} for r in data]
+        {% endif -%}
+        return _byteify(data)
+        {% endif -%}
+    {% else %}
+    if False:
+        # If there was a Test version of this method, it would go here. But alas.
+        pass
+    {% endif %}
+    else:
+        {% if interface.production.type == "SQL" -%}
+        rows = _DATABASE.execute("{{ interface.production.sql }}".format(
+            hardware=_HARDWARE){% if interface.args %},
+            ({% for arg in interface.args %}{{arg.name| snake_case }}, {% endfor %}){% endif %})
+        data = [r[0] for r in rows]
+        {% if interface.production.post -%}
+        data = [{{ interface.production.post|parse_bark }} for r in data]
+        {% endif -%}
+        return _byteify(data)
+        {% endif -%}
+
+{% endfor %}
+
+################################################################################
+# Internalized testing code
+################################################################################
+
+def _test_interfaces():
+    from pprint import pprint
+    {%- for interface in interfaces %}
+    {% if interface.test %}
+    pprint(len({{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.args %}, {% endif %}test=True)))
+    pprint(len({{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %})))
+    {% else %}
+    pprint(len({{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %})))
+    {% endif %}
+    {%- endfor %}
+
+if __name__ == '__main__':
+    from optparse import OptionParser as _OptionParser
+    _parser = _OptionParser()
+    _parser.add_option("-t", "--test", action="store_true",
+                      default=False,
+                      help="Execute the interfaces to test them.")
+    _parser.add_option("-r", "--reset", action="store_true",
+                      default=False,
+                      help="Reset the cache")
+    (_options, _args) = _parser.parse_args()
+    
+    if _options.test:
+        _test_interfaces()
+
+    if _options.reset:
+        _modify_self()

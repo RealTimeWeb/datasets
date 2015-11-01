@@ -15,6 +15,7 @@ from auxiliary import clean_json
 from collections import namedtuple
 import re
 import sys
+import os
 
 readable_types = {str : "String",
                   int : "Integer",
@@ -25,12 +26,11 @@ readable_types = {str : "String",
 ### Error and warning messages
 
 class PrintableObject(object):
-
     def __repr__(self):
         args = ", ".join(["{}={}".format(k,v) for k,v in vars(self).items()])
         return self.__class__.__name__ + "("+args+")"
 
-class Package(PrintableObject): pass
+class Package(PrintableObject): pass    
 class Metadata(PrintableObject): pass
 class Interface(PrintableObject): pass
 class Implementation(PrintableObject): pass
@@ -54,8 +54,9 @@ def de_identifier(name):
 
 class Compiler(object):
     
-    def __init__(self, specification):
+    def __init__(self, path, specification):
         self.specification = specification
+        self.path = os.path.splitext(path)[0]+'/'
         self.warnings = []
         self.errors = []
         self.package = None
@@ -210,7 +211,7 @@ class Compiler(object):
                 index.jsonpath = self.typecheck_field(location, "jsonpath", data, "", str)
             else:
                 index.type = ""
-                raise NotImplementedError("Only jsonpath is supported currently")
+                self.error("Could not build index for {}. Only jsonpath is supported currently".format(location))
         else:
             self.type_error(location, dict, type(data))
         return index
@@ -221,19 +222,12 @@ class Compiler(object):
         if isinstance(data, dict):
             local.name = de_identifier(self.require_field(location, "name", data, "", str))
             local.file = self.require_field(location, "file", data, "", str)
-            local.type = local.name.split(".")[-1]
+            local.file = os.path.join(self.path, local.file)
+            local.type = local.file.split(".")[-1].lower()
+            if not local.type:
+                self.warning("Could not infer type of local {}. No file extension?".format(location))
             if "indexes" in data:
                 local.indexes = list(self.walk_list("{}.indexes".format(location), "indexes", data, self.walk_index))
-            # Implementations
-            if "production" in data:
-                interface.production = self.walk_implementation("production", data["production"], location)
-            else:
-                self.not_found_error("{}.{}".format(location, "production"))
-            if "test" in data:
-                interface.test = self.walk_implementation("test", data["test"], location)
-            # Arguments
-            if "args" in data:
-                self.walk_list("{}.args".format(location), "args", data, self.walk_arg)
         else:
             self.type_error(location, dict, type(data))
         return local
@@ -247,6 +241,7 @@ class Compiler(object):
         if isinstance(data, dict):
             argument.type = self.require_field(location, "type", data, "", str)
             argument.name = self.require_field(location, "name", data, "", str)
+            argument.default = self.recommend_field(location, "default", data, "", str)
             argument.description = self.recommend_field(location, "description", 
                             data, "", str, not_found="There will be no documentation for {}!".format(name))
         else:
@@ -284,6 +279,8 @@ class Compiler(object):
                 self.not_found_error("{}.{}".format(location, "production"))
             if "test" in data:
                 interface.test = self.walk_implementation("test", data["test"], location)
+            else:
+                interface.test = None
             # Arguments
             interface.args = list(self.walk_list("{}.args".format(location), "args", data, self.walk_arg))
         else:

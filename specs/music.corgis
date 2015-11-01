@@ -27,36 +27,44 @@ local:
         jsonpath: artist.name
 objects:
   - name: song
-    
 interfaces:
   - name: get songs
     returns: list[song]
     test:
         sql: SELECT data FROM music LIMIT {hardware}
+        post: json()
     production:
         sql: SELECT data FROM music
+        post: json()
   - name: get song by name
     description: Given the title of a song, returns information about the song.
     args:
       - name: title
         type: string
+        default: '0'
         description: The title of the song. Must match the exact name of the song.
     returns: song
     production:
-        sql: SELECT data FROM music WHERE title={title} LIMIT 1
+        sql: SELECT data FROM music WHERE title=? LIMIT 1
+        post: json()
   - name: get rating by name
     args:
       - name: title
+        default: '0'
         type: string
     returns: float
     production:
-        sql: SELECT data FROM music WHERE title={title} LIMIT 1
-        post: jsonpath("song.hotttnesss")
+        sql: SELECT data FROM music WHERE title=? LIMIT 1
+        post: json()|jsonpath(song.hotttnesss)
   - name: get ratings by artist
     args:
       - name: artist
+        default: '"The Notorious B.I.G."'
         type: string
     production:
-        sql: SELECT data FROM music WHERE artist={artist}
-        post: mapjsonpath("song.hotttnesss")
+        sql: SELECT data FROM music WHERE artist=?
+        post: json()|jsonpath(song.hotttnesss)
+    test:
+        sql: SELECT data FROM music WHERE artist=? LIMIT {hardware}
+        post: json()|jsonpath(song.hotttnesss)
     returns: list[float]
