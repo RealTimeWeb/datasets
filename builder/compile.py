@@ -228,6 +228,8 @@ class Compiler(object):
                 self.warning("Could not infer type of local {}. No file extension?".format(location))
             if "indexes" in data:
                 local.indexes = list(self.walk_list("{}.indexes".format(location), "indexes", data, self.walk_index))
+            else:
+                local.indexes = []
         else:
             self.type_error(location, dict, type(data))
         return local
@@ -242,6 +244,7 @@ class Compiler(object):
             argument.type = self.require_field(location, "type", data, "", str)
             argument.name = self.require_field(location, "name", data, "", str)
             argument.default = self.recommend_field(location, "default", data, "", str)
+            argument.matches = self.typecheck_field(location, "matches", data, "", str)
             argument.description = self.recommend_field(location, "description", 
                             data, "", str, not_found="There will be no documentation for {}!".format(name))
         else:

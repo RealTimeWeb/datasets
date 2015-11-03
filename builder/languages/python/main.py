@@ -2,12 +2,13 @@ import sys as _sys
 import os as _os
 import json as _json
 import sqlite3 as _sql
+import difflib as _difflib
 
 _HEADER = {'User-Agent': 
           'CORGIS {{ metadata.name|title }} library for educational purposes'}
 _PYTHON_3 = _sys.version_info >= (3, 0)
 _TEST = False
-_HARDWARE = 10
+_HARDWARE = 1000
 
 if _PYTHON_3:
     import urllib.request as _request
@@ -37,6 +38,24 @@ def _parse_type(value, type_func):
         return type_func(value)
     except ValueError:
         return default
+        
+def _byteify(input):
+    """
+    Force the given input to only use `str` instead of `bytes` or `unicode`.
+    This works even if the input is a dict, list,
+    """
+    if isinstance(input, dict):
+        return {_byteify(key): _byteify(value) for key, value in input.items()}
+    elif isinstance(input, list):
+        return [_byteify(element) for element in input]
+    elif _PYTHON_3 and isinstance(input, str):
+        return str(input.encode('ascii', 'replace').decode('ascii'))
+    elif not _PYTHON_3 and isinstance(input, unicode):
+        return str(input.encode('ascii', 'replace').decode('ascii'))
+    else:
+        return input
+        
+{% if http %}
 
 def _iteritems(_dict):
     """
@@ -76,25 +95,6 @@ def _get(url):
         req = _urllib2.Request(url, headers=_HEADER)
         response = _urllib2.urlopen(req)
         return response.read()
-
-
-def _byteify(input):
-    """
-    Force the given input to only use `str` instead of `bytes` or `unicode`.
-    This works even if the input is a dict, list,
-    """
-    if isinstance(input, dict):
-        return {_byteify(key): _byteify(value) for key, value in input.items()}
-    elif isinstance(input, list):
-        return [_byteify(element) for element in input]
-    elif _PYTHON_3 and isinstance(input, str):
-        return str(input.encode('ascii', 'replace').decode('ascii'))
-    elif not _PYTHON_3 and isinstance(input, unicode):
-        return str(input.encode('ascii', 'replace').decode('ascii'))
-    else:
-        return input
-
-{% if http %}
 
 ################################################################################
 # Cache
@@ -390,6 +390,18 @@ def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name|
     :type {{arg.name | snake_case }}: {{ arg.type | to_python_type }}
     {% endfor -%}
     """
+    {% for arg in interface.args -%}
+    {% if arg.matches -%}
+    # Match it against recommend values
+    potentials = [r[0].lower() for r in _DATABASE.execute("{{ arg.matches }}").fetchall()]
+    if {{arg.name|snake_case}}.lower() not in potentials:
+        best_guesses = _difflib.get_close_matches({{arg.name|snake_case}}, potentials)
+        if best_guesses:
+            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
+        else:
+            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
+    {% endif %}
+    {% endfor %}
     {% if interface.test %}
     if _TEST or test:
         {% if interface.test.type == "SQL" -%}
@@ -400,6 +412,9 @@ def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name|
         {% if interface.test.post -%}
         data = [{{ interface.test.post|parse_bark }} for r in data]
         {% endif -%}
+        {% if not interface.returns.startswith("list[") %}
+        data = data[0]
+        {% endif %}
         return _byteify(data)
         {% endif -%}
     {% else %}
@@ -415,6 +430,9 @@ def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name|
         data = [r[0] for r in rows]
         {% if interface.production.post -%}
         data = [{{ interface.production.post|parse_bark }} for r in data]
+        {% if not interface.returns.startswith("list[") %}
+        data = data[0]
+        {% endif %}
         {% endif -%}
         return _byteify(data)
         {% endif -%}
@@ -426,14 +444,33 @@ def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name|
 ################################################################################
 
 def _test_interfaces():
-    from pprint import pprint
+    from pprint import pprint as _pprint
+    from timeit import default_timer as _default_timer
     {%- for interface in interfaces %}
-    {% if interface.test %}
-    pprint(len({{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.args %}, {% endif %}test=True)))
-    pprint(len({{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %})))
+    # Production test
+    print("Production {{ interface.name | snake_case }}")
+    start_time = _default_timer()
+    result = {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.args %}, {% endif %}{% if interface.test %}test=False{% endif %})
+    {% if interface.returns.startswith("list[") %}
+    print("{} entries found.".format(len(result)))
+    _pprint(result[0])
     {% else %}
-    pprint(len({{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %})))
+    _pprint(result)
     {% endif %}
+    print("Time taken: {}".format(_default_timer() - start_time))
+    {% if interface.test -%}
+    # Test test
+    print("Test {{ interface.name | snake_case }}")
+    start_time = _default_timer()
+    result = {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %})
+    {% if interface.returns.startswith("list[") %}
+    print("{} entries found.".format(len(result)))
+    _pprint(result[0])
+    {% else %}
+    _pprint(result)
+    {% endif %}
+    print("Time taken: {}".format(_default_timer() - start_time))
+    {% endif -%}
     {%- endfor %}
 
 if __name__ == '__main__':

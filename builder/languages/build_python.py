@@ -205,7 +205,12 @@ def build_locals(model, database_file):
                 header = "{}(data{})".format(name, index_titles)
                 blanks = "?" + (", ?" * len(indexes))
                 database_file.execute('CREATE TABLE '+header)
-                for row, indices in zip(json_list, zip(*indexes)):
+                print len(zip(json_list, []))
+                if local["indexes"]:
+                    the_list = zip(json_list, zip(*indexes))
+                else:
+                    the_list = zip(json_list, [tuple() for x in json_list])
+                for row, indices in the_list:
                     database_file.execute("INSERT INTO {} VALUES ({})".format(name, blanks),
                                           (row,)+indices)
                 database_file.commit()

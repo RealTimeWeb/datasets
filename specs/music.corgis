@@ -41,7 +41,7 @@ interfaces:
     args:
       - name: title
         type: string
-        default: '0'
+        default: '"I Didn''t Mean To"'
         description: The title of the song. Must match the exact name of the song.
     returns: song
     production:
@@ -50,7 +50,7 @@ interfaces:
   - name: get rating by name
     args:
       - name: title
-        default: '0'
+        default: '"I Didn''t Mean To"'
         type: string
     returns: float
     production:
@@ -59,7 +59,7 @@ interfaces:
   - name: get ratings by artist
     args:
       - name: artist
-        default: '"The Notorious B.I.G."'
+        default: "'Aerosmith'"
         type: string
     production:
         sql: SELECT data FROM music WHERE artist=?
