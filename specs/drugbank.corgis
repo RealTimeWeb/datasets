@@ -1,0 +1,24 @@
+metadata:
+    version: 1
+    name: Drugbank
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/2/2015
+    tags: [drugs, drug, drugbank, chemistry, biology, biochemistry, proteins]
+    description:
+        overview: >
+            The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.
+
+        citation: "Wishart DS, Knox C, Guo AC, Shrivastava S, Hassanali M, Stothard P, Chang Z, Woolsey J. DrugBank: a comprehensive resource for in silico drug discovery and exploration. Nucleic Acids Res. 2006 Jan 1;34(Database issue):D668-72. 16381955"
+local:
+  - file: drugbank.json
+    name: drugbank
+interfaces:
+  - name: get drugs
+    returns: list[drug]
+    production:
+        sql: SELECT data FROM drugbank
+        post: json()
+    test:
+        sql: SELECT data FROM drugbank LIMIT {hardware}
+        post: json()

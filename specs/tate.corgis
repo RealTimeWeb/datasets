@@ -1,0 +1,26 @@
+metadata:
+    version: 1
+    name: Tate
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/2/2015
+    tags: [artwork, art, sculpture, tate]
+    description:
+        overview: >
+            Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art.
+            The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation and performance.
+            
+            This dataset has metadata about many pieces from their collection.
+        citation: http://www.tate.org.uk/about/our-work/collection/about-the-collection
+local:
+  - file: tate.json
+    name: tate
+interfaces:
+  - name: get artwork
+    returns: list[art]
+    production:
+        sql: SELECT data FROM tate
+        post: json()
+    test:
+        sql: SELECT data FROM tate LIMIT {hardware}
+        post: json()

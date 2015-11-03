@@ -1,0 +1,20 @@
+metadata:
+    version: 1
+    name: Immigration
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/1/2015
+    tags: [immigration, naturalization, illegals, permanants, united states, us]
+    description:
+        overview: >
+            The Yearbook of Immigration Statistics is a compendium of tables that provides data on foreign nationals who, during a fiscal year, were granted lawful permanent residence (i.e., admitted as immigrants or became legal permanent residents), were admitted into the United States on a temporary basis (e.g., tourists, students, or workers), applied for asylum or refugee status, or were naturalized. The Yearbook also presents data on immigration enforcement actions, including alien apprehensions, removals, and returns.
+        citation: http://www.dhs.gov/yearbook-immigration-statistics
+local:
+  - file: immigration.json
+    name: immigration
+interfaces:
+  - name: get records
+    returns: list[record]
+    production:
+        sql: SELECT data FROM immigration
+        post: json()

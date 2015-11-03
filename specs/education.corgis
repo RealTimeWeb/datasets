@@ -1,0 +1,36 @@
+metadata:
+    version: 1
+    name: Education
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/1/2015
+    tags: [school, education, K-12, kindergarten, learning, teaching]
+    description:
+        overview: >
+            Information about K-12 education for different states, collected from the US government.
+local:
+  - file: school.json
+    name: school
+    indexes:
+      - name: state
+        jsonpath: state
+interfaces:
+  - name: get state
+    args:
+      - name: state
+        type: str
+        description: The state you are interested in.
+        default: "'Virginia'"
+        matches: SELECT DISTINCT state FROM school
+    returns: record
+    description: Returns information about one state. Enrollment data is for Pre-K through 12th grade.
+    production:
+        sql: SELECT data FROM school WHERE state=? COLLATE NOCASE
+        post: json()|jsonpath(data)
+  - name: get all states
+    args: []
+    returns: list[record]
+    description: Returns all of the data for every state into a list.
+    production:
+        sql: SELECT data FROM school
+        post: json()

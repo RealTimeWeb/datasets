@@ -1,0 +1,29 @@
+metadata:
+    version: 1
+    name: Soccer
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/1/2015
+    tags: [soccer, germany, austrian, Bundesliga, football]
+    description:
+        overview: >
+            Free open public domain football data. Leagues include the English Premier League, Deutsche Bundesliga, Spanish Primera Division ("La Liga"), Italian Serie A, and more.
+        citation: https://github.com/openfootball/football.json
+local:
+  - file: soccer.json
+    name: soccer
+    indexes:
+      - name: name
+        jsonpath: name
+interfaces:
+  - name: get games
+    args:
+      - name: league
+        type: str
+        description: The league you want information about. Must be one of "Austrian Bundesliga", "Austrian Erste Liga", "English Premier League", "Spanish Primera Division", "Deutsche Bundesliga", "Deutsche Bundesliga 2", or "Italian Serie A".
+        default: "'Austrian Bundesliga'"
+        matches: SELECT DISTINCT name FROM soccer
+    returns: record
+    production:
+        sql: SELECT data FROM soccer WHERE name=?
+        post: json()|jsonpath(data)

@@ -1,0 +1,77 @@
+metadata:
+    version: 1
+    name: NFL
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/1/2015
+    tags: [nfl, football, sports, games]
+    description:
+        overview: >
+            Information about NFL games and players.
+local:
+  - file: games.json
+    name: games
+    indexes:
+      - name: home_team
+        jsonpath: home_team
+      - name: away_team
+        jsonpath: away_team
+  - file: players.json
+    name: players
+    indexes:
+      - name: name
+        jsonpath: name
+interfaces:
+  - name: get games by home team
+    args:
+      - name: home_team
+        type: str
+        default: '"St. Louis Cardinals"'
+        matches: SELECT DISTINCT home_team FROM games
+    returns: list[game]
+    description: Returns information about a single football game.
+    production:
+        sql: SELECT data from games WHERE home_team=? COLLATE NOCASE
+        post: json()
+  - name: get games by away team
+    args:
+      - name: away_team
+        type: str
+        default: '"St. Louis Cardinals"'
+        matches: SELECT DISTINCT away_team FROM games
+    returns: list[game]
+    description: Returns information about a single football game.
+    production:
+        sql: SELECT data from games WHERE away_team=? COLLATE NOCASE
+        post: json()
+  - name: get games
+    args: []
+    returns: list[game]
+    description: Returns information about a single football game.
+    test:
+        sql: SELECT data from games LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM games
+        post: json()
+  - name: get players
+    args: []
+    returns: list[player]
+    description: Returns information about all the football players.
+    test:
+        sql: SELECT data from players LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM players
+        post: json()
+  - name: get player by name
+    args:
+      - name: name
+        type: str
+        default: "'Ameer Abdullah'"
+        matches: SELECT DISTINCT name from players
+    returns: player
+    description: Returns information about a single football player
+    production:
+        sql: SELECT data FROM players WHERE name=? COLLATE NOCASE LIMIT 1
+        post: json()
