@@ -8,7 +8,7 @@ _HEADER = {'User-Agent':
           'CORGIS {{ metadata.name|title }} library for educational purposes'}
 _PYTHON_3 = _sys.version_info >= (3, 0)
 _TEST = False
-_HARDWARE = 1000
+_HARDWARE = {{ metadata.hardware }}
 
 if _PYTHON_3:
     import urllib.request as _request
@@ -16,6 +16,10 @@ if _PYTHON_3:
 else:
     import urllib2 as _urllib2
     from urllib import quote_plus as _quote_plus
+
+class DatasetException(Exception):
+    ''' Thrown when there is an error loading the dataset for some reason.'''
+    pass
     
 _DATABASE_NAME = "{{ metadata.name|flat_case }}.db"
 if _os.path.isfile(_DATABASE_NAME):
@@ -54,6 +58,15 @@ def _byteify(input):
         return str(input.encode('ascii', 'replace').decode('ascii'))
     else:
         return input
+        
+def _guess_schema(input):
+    if isinstance(input, dict):
+        return {str(key.encode('ascii', 'replace').decode('ascii')): 
+                _guess_schema(value) for key, value in input.items()}
+    elif isinstance(input, list):
+        return [_guess_schema(input[0])] if input else []
+    else:
+        return type(input)
         
 {% if http %}
 
@@ -222,15 +235,6 @@ connect = _CACHE.connect
 disconnect = _CACHE.disconnect
 
 {% endif %}
-        
-################################################################################
-# Exceptions
-################################################################################
-
-
-class DatasetException(Exception):
-    ''' Thrown when there is an error loading the dataset for some reason.'''
-    pass
 
 ################################################################################
 # Domain Objects
@@ -391,6 +395,10 @@ def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name|
     {% endfor -%}
     """
     {% for arg in interface.args -%}
+    {% if arg.type in ("integer", "float") %}
+    if not isinstance({{arg.name|snake_case}}, {{ arg.type| to_python_type}}):
+        raise DatasetException("Error, the parameter {{ arg.name|snake_case}} must be of type {{ arg.type|to_python_type}}")
+    {% endif %}
     {% if arg.matches -%}
     # Match it against recommend values
     potentials = [r[0].lower() for r in _DATABASE.execute("{{ arg.matches }}").fetchall()]
@@ -453,7 +461,7 @@ def _test_interfaces():
     result = {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.args %}, {% endif %}{% if interface.test %}test=False{% endif %})
     {% if interface.returns.startswith("list[") %}
     print("{} entries found.".format(len(result)))
-    _pprint(result[0])
+    _pprint(_guess_schema(result))
     {% else %}
     _pprint(result)
     {% endif %}
@@ -465,7 +473,7 @@ def _test_interfaces():
     result = {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %})
     {% if interface.returns.startswith("list[") %}
     print("{} entries found.".format(len(result)))
-    _pprint(result[0])
+    _pprint(_guess_schema(result))
     {% else %}
     _pprint(result)
     {% endif %}

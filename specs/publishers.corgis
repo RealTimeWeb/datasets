@@ -7,7 +7,7 @@ metadata:
     tags: [publishers, amazon, books, sales, genres, literature, english]
     description:
         overview: >
-            From a newspaper article about analyzing amazon book sales by genre and publisher.
+            From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.
         citation: http://www.dhs.gov/yearbook-immigration-statistics
 local:
   - file: publishers.json
@@ -15,6 +15,7 @@ local:
 interfaces:
   - name: get books
     returns: list[book]
+    description: Returns a list of the books in the database.
     production:
         sql: SELECT data FROM publishers
         post: json()

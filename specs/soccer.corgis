@@ -7,7 +7,7 @@ metadata:
     tags: [soccer, germany, austrian, Bundesliga, football]
     description:
         overview: >
-            Free open public domain football data. Leagues include the English Premier League, Deutsche Bundesliga, Spanish Primera Division ("La Liga"), Italian Serie A, and more.
+            Free open public domain soccer data (football). Leagues include the English Premier League, Deutsche Bundesliga, Spanish Primera Division ("La Liga"), Italian Serie A, and more.
         citation: https://github.com/openfootball/football.json
 local:
   - file: soccer.json
@@ -17,6 +17,7 @@ local:
         jsonpath: name
 interfaces:
   - name: get games
+    description: Returns information about all of the soccer games for a given league.
     args:
       - name: league
         type: str

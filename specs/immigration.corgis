@@ -18,3 +18,4 @@ interfaces:
     production:
         sql: SELECT data FROM immigration
         post: json()
+    description: Returns data about immigration from all the years and states.

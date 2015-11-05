@@ -18,6 +18,7 @@ local:
 interfaces:
   - name: get artwork
     returns: list[art]
+    description: Returns a list of all the pieces of art in the Tate collection.
     production:
         sql: SELECT data FROM tate
         post: json()

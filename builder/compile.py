@@ -34,6 +34,7 @@ class Package(PrintableObject): pass
 class Metadata(PrintableObject): pass
 class Interface(PrintableObject): pass
 class Implementation(PrintableObject): pass
+class Appendix(PrintableObject): pass
 class Argument(PrintableObject): pass
 class HTTP(PrintableObject): pass
 class Local(PrintableObject): pass
@@ -51,6 +52,18 @@ def de_identifier(name):
             word = word[0].lower() + word[1:]
         result.append(word)
     return " ".join(result)
+    
+def clean_identifier(name):
+    return name.replace(" ", "_")
+    
+def parse_author(author):
+    if '<' in author:
+        name, email = author.split('<')
+        email = email.strip('>').strip()
+        name = name.strip()
+        return '{name} (<a href="mailto:{email}">{email}</a>)'.format(name=name, email=email)
+    else:
+        return author
 
 class Compiler(object):
     
@@ -75,11 +88,11 @@ class Compiler(object):
 
     def not_found_warning(self, key_name, additional=""):
         additional = " "+additional if additional else additional
-        self.warning("Expected keyword {} not found.{}".format(key_name, additional))
+        self.warning("Missing field {}.{}".format(key_name, additional))
         
     def not_found_error(self, key_name, additional=""):
         additional = " "+additional if additional else additional
-        self.error("Expected keyword {} not found.{}".format(key_name, additional))
+        self.error("Missing field {} not found.{}".format(key_name, additional))
     
     def type_error(self, key_name, expected_type, got_type):
         self.error("Type Error for {}; expected {}, but got {}.".format(key_name, 
@@ -139,15 +152,33 @@ class Compiler(object):
             else:
                 self.type_error(location, list, type(data[name]))
                 
+    def walk_appendix(self, name, data, in_location):
+        appendix = Appendix()
+        location = "{}.{}".format(in_location, name)
+        if isinstance(data, dict):
+            appendix.name = self.require_field(location, "name", data, "", str)
+            location = "{}.{}".format(in_location, appendix.name)
+            appendix.file = self.require_field(location, "file", data, "", str)
+            appendix.file = os.path.join(self.path, appendix.file)
+            appendix.description = self.recommend_field(location, "description", data, "", str)
+        else:
+            self.type_error(location, dict, type(data))
+        return appendix
+                
     def walk_metadata(self, raw):
         metadata = Metadata()
         metadata.name = self.require_field("metadata", "name", raw, "Untitled", str)
         metadata.author = self.recommend_field("metadata", "author", raw, '', str)
+        metadata.author = [parse_author(author) for author in metadata.author.split(",")]
+        metadata.author = ''.join(metadata.author)
         metadata.datetime = self.typecheck_field("metadata", "datetime", raw, '', str)
         metadata.version = self.recommend_field("metadata", "version", raw, 1, int, "Assuming version is 1.")
-        # TODO: Handle descriptions
+        metadata.hardware = self.typecheck_field("metadata", "hardware", raw, 1000, int)
         metadata.description = self.recommend_field("metadata", "description", raw, {}, dict, "There will be no top-level documentation!")
-        # TODO: Handle appendix
+        if 'appendix' in raw:
+            metadata.appendix = self.walk_list("metadata.appendix", "appendix", raw, self.walk_appendix)
+        else:
+            metadata.appendix = []
         metadata.tags = self.recommend_field("metadata", "tags", raw, [], list)
         return metadata
             
@@ -201,11 +232,12 @@ class Compiler(object):
                         data, bool,
                         not_found = "{}.hidden will default to false.".format(name))
         
-    def walk_index(self, name, data, location):
+    def walk_index(self, name, data, in_location):
         index = Index()
-        location = "{}.{}".format(location, name)
+        location = "{}.{}".format(in_location, name)
         if isinstance(data, dict):
             index.name = self.require_field(location, "name", data, "", str)
+            location = "{}.{}".format(in_location, clean_identifier(index.name))
             if "jsonpath" in data:
                 index.type = "JSON"
                 index.jsonpath = self.typecheck_field(location, "jsonpath", data, "", str)
@@ -216,11 +248,12 @@ class Compiler(object):
             self.type_error(location, dict, type(data))
         return index
     
-    def walk_local(self, name, data, location):
+    def walk_local(self, name, data, in_location):
         local = Local()
-        location = "{}.{}".format(location, name)
+        location = "{}.{}".format(in_location, name)
         if isinstance(data, dict):
             local.name = de_identifier(self.require_field(location, "name", data, "", str))
+            location = "{}.{}".format(in_location, clean_identifier(local.name))
             local.file = self.require_field(location, "file", data, "", str)
             local.file = os.path.join(self.path, local.file)
             local.type = local.file.split(".")[-1].lower()
@@ -237,23 +270,24 @@ class Compiler(object):
     def walk_locals(self, spec):
         return list(self.walk_list("local", "local", spec, self.walk_local))
     
-    def walk_arg(self, name, data, location):
-        location = "{}.{}".format(location, name)
+    def walk_arg(self, name, data, in_location):
+        location = "{}.{}".format(in_location, name)
         argument = Argument()
         if isinstance(data, dict):
-            argument.type = self.require_field(location, "type", data, "", str)
             argument.name = self.require_field(location, "name", data, "", str)
+            location = "{}.{}".format(in_location, clean_identifier(argument.name))
+            argument.type = self.require_field(location, "type", data, "", str)            
             argument.default = self.recommend_field(location, "default", data, "", str)
             argument.matches = self.typecheck_field(location, "matches", data, "", str)
             argument.description = self.recommend_field(location, "description", 
-                            data, "", str, not_found="There will be no documentation for {}!".format(name))
+                            data, "", str)
         else:
             self.type_error(location, dict, type(data))
         return argument
             
-    def walk_implementation(self, name, data, location):
+    def walk_implementation(self, name, data, in_location):
         implementation = Implementation()
-        location = "{}.{}".format(location, name)
+        location = "{}.{}".format(in_location, name)
         if isinstance(data, dict):
             if "sql" in data:
                 implementation.type = "SQL"
@@ -267,14 +301,15 @@ class Compiler(object):
             implementation.post = self.typecheck_field(location, "post", data, "", str)
         return implementation
         
-    def walk_interface(self, name, data, location):
+    def walk_interface(self, name, data, in_location):
         interface = Interface()
-        location = "{}.{}".format(location, name)
+        location = "{}.{}".format(in_location, name)
         if isinstance(data, dict):
             interface.name = de_identifier(self.require_field(location, "name", data, "", str))
+            location = "{}.{}".format(in_location, clean_identifier(interface.name))
             interface.returns = de_identifier(self.require_field(location, "returns", data, "", str))
             interface.description = self.recommend_field(location, "description", 
-                            data, "", str, not_found="There will be no documentation for {}!".format(name))
+                            data, "", str)
             # Implementations
             if "production" in data:
                 interface.production = self.walk_implementation("production", data["production"], location)

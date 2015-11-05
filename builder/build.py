@@ -35,9 +35,11 @@ def build_dir(files, moves, prepend):
             ensure_dir(filename)
             with open(filename, "wb+") as output:
                 output.write(data)
-        for offset, src in moves.iteritems():
+        for src, offset in moves.iteritems():
             new_folder = prepend+'/'+offset
             ensure_dir(new_folder)
+            if not os.path.isfile(src):
+                print 'Warning, file "{}" does not exist'.format(src)
             shutil.copy(src, new_folder)
     except Exception, e:
         error_log.append(traceback.format_exc())

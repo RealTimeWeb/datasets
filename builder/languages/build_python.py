@@ -11,8 +11,9 @@ from auxiliary import snake_case, kebab_case, flat_case, copy_file
 import sqlite3
 import re
 from jinja2 import Environment, FileSystemLoader
+import jinja2_highlight
 templates = 'languages/python/'
-env = Environment(loader=FileSystemLoader(templates))
+env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader(templates))
 env.filters['camel_case_caps'] = camel_case_caps
 env.filters['camel_case'] = camel_case
 env.filters['snake_case'] = snake_case
@@ -70,10 +71,10 @@ def collect_url_parameters(url):
     return map(str, re.findall("<(.*?)>", url))
     
 def is_list(type):
-    return type.endswith("[]")
+    return type.endswith("]") and type.startswith('list[')
 
 def strip_list(type):
-    return type[:-2]
+    return type[5:-1]
 
 def create_json_conversion(data, type):
     if is_list(type):
@@ -139,8 +140,21 @@ def parse_bark(commands):
         elif command_name == "jsonpath":
             result = parse_json_path(args[0], result)
     return result
+    
+def to_python_variable(source):
+    was_list = is_list(source)
+    if was_list:
+        source = strip_list(source) #chomp out the "list(" and ")"
+    converted_type= python_types.get(source, None)
+    if converted_type is None: # need to convert to custom class
+        converted_type = snake_case(source)
+    if was_list: # if it's a list, apply it to each element
+        return "list_of_{}".format(converted_type)
+    else: # otherwise just return it normally
+        return "a_{}".format(converted_type)
 
 env.filters['to_python_type'] = convert_to_python_type
+env.filters['to_python_variable'] = to_python_variable
 env.filters['convert_url_parameters'] = convert_url_parameters
 #env.filters['collect_url_parameters'] = collect_url_parameters
 env.filters['is_builtin'] = is_builtin
@@ -165,13 +179,13 @@ def json_path(path, data):
 def build_metafiles(model):
     name = model['metadata']['name']
     return {
-            #'python/' + flat_case(name) + '/' + 'test.py' : env.get_template('test.py', globals=model).render()
+            'python/' + flat_case(name) + '/' + flat_case(name) + '.html' : env.get_template('main.html').render(**model)
             }
     
 def build_main(model):
     name = model['metadata']['name']
     return {'python/' + flat_case(name) + '/' + flat_case(name) + '.py' :
-                env.get_template('main.py', globals=model).render()}
+                env.get_template('main.py').render(**model)}
                 
 def build_database(model):
     name = flat_case(model['metadata']['name'])
@@ -205,7 +219,6 @@ def build_locals(model, database_file):
                 header = "{}(data{})".format(name, index_titles)
                 blanks = "?" + (", ?" * len(indexes))
                 database_file.execute('CREATE TABLE '+header)
-                print len(zip(json_list, []))
                 if local["indexes"]:
                     the_list = zip(json_list, zip(*indexes))
                 else:
@@ -227,7 +240,9 @@ def build_python(model):
     build_locals(model, database_file)
     
     database_file.close()
-    moves = {'python/' + flat_case(model['metadata']['name']) + '/':  new_file}
+    moves = {new_file: 'python/' + flat_case(model['metadata']['name']) + '/'}
+    for appendix in model['metadata']['appendix']:
+        moves[appendix['file']] = 'python/' + flat_case(model['metadata']['name']) + '/'
     
     return files, moves
     

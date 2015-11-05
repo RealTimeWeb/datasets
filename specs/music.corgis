@@ -7,16 +7,7 @@ metadata:
     tags: [music, songs, artists, creativity, media]
     description:
         overview: >
-            The Music library is all about some interesting music data.\n
-            This is multiple lines long.
-        users: >
-            This is some additional information that users would be interested in having. Like maybe they didn't realize it.
-        developers: >
-            This is some information that developers would be interested in. Like maybe an oddity in the structure.
-        citation: This is some citation data. It is meant to be embeddable.
-    appendix:
-      - name: Extra guide
-        file: notes.txt
+            The Music library has data about a multitude of songs and artists.
 local:
   - file: music.json
     name: music
@@ -28,43 +19,51 @@ local:
 objects:
   - name: song
 interfaces:
-  - name: get songs
-    returns: list[song]
-    test:
-        sql: SELECT data FROM music LIMIT {hardware}
-        post: json()
-    production:
-        sql: SELECT data FROM music
-        post: json()
   - name: get song by name
     description: Given the title of a song, returns information about the song.
     args:
       - name: title
         type: string
         default: '"I Didn''t Mean To"'
-        description: The title of the song. Must match the exact name of the song.
+        description: The title of the song.
+        matches: SELECT DISTINCT title FROM music
     returns: song
     production:
         sql: SELECT data FROM music WHERE title=? LIMIT 1
         post: json()
-  - name: get rating by name
-    args:
-      - name: title
-        default: '"I Didn''t Mean To"'
-        type: string
-    returns: float
-    production:
-        sql: SELECT data FROM music WHERE title=? LIMIT 1
-        post: json()|jsonpath(song.hotttnesss)
-  - name: get ratings by artist
+  #- name: get rating by name
+  #  description: A very simple method for getting the rating of a specific song.
+  #  args:
+  #    - name: title
+  #      default: '"I Didn''t Mean To"'
+  #      type: string
+  #      matches: SELECT DISTINCT title FROM music
+  #      description: The title of the song.
+  #  returns: float
+  #  production:
+  #      sql: SELECT data FROM music WHERE title=? LIMIT 1
+  #      post: json()|jsonpath(song.hotttnesss)
+  - name: get songs by artist
+    description: Given the name of an artist, returns all the songs by that artist in the database.
     args:
       - name: artist
         default: "'Aerosmith'"
         type: string
+        matches: SELECT DISTINCT artist FROM music
+        description: The name of the artist or band.
     production:
         sql: SELECT data FROM music WHERE artist=?
-        post: json()|jsonpath(song.hotttnesss)
+        post: json()
     test:
         sql: SELECT data FROM music WHERE artist=? LIMIT {hardware}
-        post: json()|jsonpath(song.hotttnesss)
-    returns: list[float]
+        post: json()
+    returns: list[song]
+  - name: get songs
+    returns: list[song]
+    description: Gets a list of all the songs in the database.
+    test:
+        sql: SELECT data FROM music LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM music
+        post: json()

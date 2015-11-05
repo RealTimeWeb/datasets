@@ -15,6 +15,7 @@ local:
     name: drugbank
 interfaces:
   - name: get drugs
+    description: Returns data about all the drugs in the database.
     returns: list[drug]
     production:
         sql: SELECT data FROM drugbank
