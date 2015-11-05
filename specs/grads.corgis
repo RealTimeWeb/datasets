@@ -1,0 +1,20 @@
+metadata:
+    version: 1
+    name: Grads
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/1/2015
+    tags: [graduation, grads, majors, education, college, university, higher education, jobs, careers]
+    description:
+        overview: >
+            This library holds data about employment of new graduates by major.
+local:
+  - file: grads.json
+    name: grads
+interfaces:
+  - name: get majors
+    returns: list[major]
+    description: Returns information about all recorded majors.
+    production:
+        sql: SELECT data FROM grads
+        post: json()

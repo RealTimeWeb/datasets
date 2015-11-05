@@ -1,0 +1,26 @@
+metadata:
+    version: 1
+    name: Airports
+    builder: 2
+    hardware: 100
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/1/2015
+    tags: [airplane, airports, travel, plane, air]
+    description:
+        overview: >
+            This dataset is all about airports.
+            
+            Additional information, explaining the names of some of the fields, is available: <a href="http://www.faa.gov/airports/airport_safety/airportdata_5010/#datadictionaries">http://www.faa.gov/airports/airport_safety/airportdata_5010/#datadictionaries</a>
+local:
+  - file: airports.json
+    name: airports
+interfaces:
+  - name: get airports
+    returns: list[airport]
+    description: Returns a list of airports around the world.
+    production:
+        sql: SELECT data FROM airports
+        post: json()
+    test:
+        sql: SELECT data FROM airports LIMIT {hardware}
+        post: json()

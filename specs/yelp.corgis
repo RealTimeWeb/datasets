@@ -1,0 +1,85 @@
+metadata:
+    version: 1
+    name: Yelp
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/1/2015
+    tags: [yelp, businesses, restaurants]
+    description:
+        overview: >
+            Yelp is providing all the data and reviews of the 250 closest businesses for 30 universities for students and academics to explore and research
+
+            Yelp's dataset includes information for businesses near these 30 schools: Brown University, California Institute of Technology, California Polytechnic State University, Carnegie Mellon University, Columbia University, Cornell University, Georgia Institute of Technology, Harvard University, Harvey Mudd College, Massachusetts Institute of Technology, Princeton University, Purdue University, Rensselaer Polytechnic Institute, Rice University, Stanford University, University of California - Los Angeles, University of California - San Diego, University of California at Berkeley, University of Illinois - Urbana-Champaign, University of Maryland - College Park, University of Massachusetts - Amherst, University of Michigan - Ann Arbor, University of North Carolina - Chapel Hill, University of Pennsylvania, University of Southern California, University of Texas - Austin, University of Washington, University of Waterloo, University of Wisconsin - Madison, and Virginia Tech.
+        citation: https://www.yelp.com/academic_dataset
+local:
+  - file: businesses.json
+    name: businesses
+    indexes:
+      - name: city
+        jsonpath: city
+      - name: name
+        jsonpath: name
+  - file: users.json
+    name: users
+    indexes:
+      - name: uid
+        jsonpath: user_id
+interfaces:
+  - name: get businesses by city
+    args:
+      - name: city
+        type: str
+        description: The name of the city.
+        default: "'blacksburg'"
+        matches: SELECT DISTINCT city FROM businesses
+    returns: list[business]
+    description: Returns all the businesses in the given city.
+    test:
+        sql: SELECT data FROM businesses WHERE city=? COLLATE NOCASE LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM businesses WHERE city=? COLLATE NOCASE
+        post: json()
+  - name: get business by name
+    args:
+      - name: name
+        type: str
+        description: The name of the business. It can be part of the name instead of the entire name.
+        default: "'subway'"
+    returns: list[business]
+    description: Returns all the businesses with the given name (matches fuzzily, so 'subway' would match 'Subway' and 'The subway').
+    test:
+        sql: SELECT data FROM businesses WHERE name LIKE ('%' || ? || '%') COLLATE NOCASE LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM businesses WHERE name LIKE ('%' || ? || '%') COLLATE NOCASE
+        post: json()
+  - name: get all businesses
+    returns: list[business]
+    description: Returns all the businesses in the database.
+    test:
+        sql: SELECT data FROM businesses LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM businesses
+        post: json()
+  - name: get user by id
+    args:
+      - name: user id
+        type: str
+        description: A unique user id, given by the reviews of a business.
+        default: "'UqNSytSc3hiYfKVCGwvLCg'"
+    returns: user
+    description: Returns the information for a given user by their ID
+    production:
+        sql: SELECT data FROM users WHERE uid=? LIMIT 1
+        post: json()
+  - name: get users
+    returns: list[user]
+    description: Returns all of the users in the database.
+    test:
+        sql: SELECT data FROM users LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM users
+        post: json()

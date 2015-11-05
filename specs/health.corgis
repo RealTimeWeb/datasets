@@ -1,0 +1,74 @@
+metadata:
+    version: 1
+    name: Health
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/1/2015
+    tags: [health, diseases, infection]
+    description:
+        overview: >
+            This library holds data about reports of diseases in America.
+local:
+  - file: health.json
+    name: health
+    indexes:
+      - name: disease
+        jsonpath: disease
+      - name: location
+        jsonpath: loc
+      - name: year
+        jsonpath: year
+interfaces:
+  - name: get reports by year
+    returns: list[report]
+    description: Returns information about the status of disease for the given year, from 1928 to 2011.
+    args:
+      - name: year
+        type: int
+        description: A year between 1928 and 2011.
+        default: "1990"
+    test:
+        sql: SELECT data FROM health WHERE year=? ORDER BY year, location, disease ASC LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM health WHERE year=? ORDER BY year, location, disease ASC
+        post: json()
+  - name: get reports by disease
+    returns: list[report]
+    description: Returns information about the status of disease for the given disease.
+    args:
+      - name: disease
+        type: str
+        description: A disease such as 'HEPATITIS A', 'MEASLES', 'MUMPS', 'PERTUSSIS', 'POLIO', 'RUBELLA', or 'SMALLPOX'.
+        default: "'MUMPS'"
+        matches: SELECT DISTINCT disease FROM health
+    test:
+        sql: SELECT data FROM health WHERE disease=? COLLATE NOCASE ORDER BY year, location, disease ASC LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM health WHERE disease=? COLLATE NOCASE ORDER BY year, location, disease ASC
+        post: json()
+  - name: get reports by location
+    returns: list[report]
+    description: Returns information about the status of disease for the given location.
+    args:
+      - name: location
+        type: str
+        description: A state such as "Alabama"
+        default: "'Delaware'"
+        matches: SELECT DISTINCT location FROM health
+    test:
+        sql: SELECT data FROM health WHERE location=? COLLATE NOCASE ORDER BY year, location, disease ASC LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM health WHERE location=? COLLATE NOCASE ORDER BY year, location, disease ASC
+        post: json()
+  - name: get all reports
+    returns: list[report]
+    description: Returns information about the status of disease for all locations, diseases, and years.
+    test:
+        sql: SELECT data FROM health ORDER BY year, location, disease ASC LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM health ORDER BY year, location, disease ASC
+        post: json()

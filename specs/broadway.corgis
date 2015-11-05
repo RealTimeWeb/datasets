@@ -1,0 +1,41 @@
+metadata:
+    version: 1
+    name: Broadway
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/1/2015
+    tags: [broadway, musical, theatre, tickets]
+    description:
+        overview: >
+            This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry).
+local:
+  - file: broadway.json
+    name: broadway
+    indexes:
+      - name: theatre
+        jsonpath: theatre
+interfaces:
+  - name: get shows
+    returns: list[show]
+    description: Returns information about all the shows
+    test:
+        sql: SELECT data FROM broadway LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM broadway
+        post: json()
+  - name: get show by theatre
+    returns: list[show]
+    description: Returns information about all the shows at a given theatre
+    args:
+      - name: theatre
+        type: str
+        default: '"friedman"'
+        matches: SELECT DISTINCT theatre FROM broadway
+        description: The name of the theatre (e.g., "friedman").
+    test:
+        sql: SELECT data FROM broadway WHERE theatre=? COLLATE NOCASE LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM broadway WHERE theatre=? COLLATE NOCASE
+        post: json()

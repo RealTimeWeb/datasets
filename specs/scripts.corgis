@@ -1,0 +1,39 @@
+metadata:
+    version: 1
+    name: Scripts
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/3/2015
+    tags: [movies, scripts, gender]
+    hardware: 20
+    description:
+        overview: >
+            This dataset is all about over 600 movies. It was collected and organized by the Cornell Movie Dialogs Corpus. More information about the project is available at the CMDC site (http://www.mpi-sws.org/~cristian/Cornell_Movie-Dialogs_Corpus.html).
+local:
+  - file: scripts.json
+    name: scripts
+    indexes:
+      - name: title
+        jsonpath: data.title
+interfaces:
+  - name: get scripts
+    returns: list[script]
+    description: Returns all the scripts
+    test:
+        sql: SELECT data FROM scripts LIMIT {hardware}
+        post: json()|jsonpath(data)
+    production:
+        sql: SELECT data FROM scripts
+        post: json()|jsonpath(data)
+  - name: get script by title
+    returns: script
+    description: Returns a specific script, given it's title.
+    args:
+      - name: title
+        type: str
+        description: "The title of the movie. There are only 600 movies in the database, but there are many popular ones."
+        default: '"the princess bride"'
+        matches: SELECT DISTINCT title FROM scripts
+    production:
+        sql: SELECT data FROM scripts WHERE title=? COLLATE NOCASE LIMIT 1
+        post: json()|jsonpath(data)

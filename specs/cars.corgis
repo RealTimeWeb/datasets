@@ -1,0 +1,57 @@
+metadata:
+    version: 1
+    name: Cars
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/3/2015
+    tags: [cars, vehicles, fuel]
+    description:
+        overview: >
+            This is a dataset about cars.
+local:
+  - file: cars.json
+    name: cars
+    indexes:
+      - name: year
+        jsonpath: year
+      - name: make
+        jsonpath: Make
+interfaces:
+  - name: get cars
+    returns: list[car]
+    description: Returns the complete list of cars.
+    production:
+        sql: SELECT data FROM cars
+        post: json()
+    test:
+        sql: SELECT data FROM cars LIMIT {hardware}
+        post: json()
+  - name: get cars by year
+    args:
+      - name: year
+        type: integer
+        description: The year as an integer, between 1921 and 2013.
+        default: '2001'
+    returns: list[car]
+    description: Returns all the cars for a given year.
+    production:
+        sql: SELECT data FROM cars WHERE year=?
+        post: json()
+    test:
+        sql: SELECT data FROM cars WHERE year=? LIMIT {hardware}
+        post: json()
+  - name: get cars by make
+    returns: list[car]
+    description: Returns all the cars of a certain make.
+    args:
+      - name: make
+        type: str
+        description: The make of the cars
+        default: "'Pontiac'"
+        matches: SELECT DISTINCT make FROM cars
+    production:
+        sql: SELECT data FROM cars WHERE make=? COLLATE NOCASE
+        post: json()
+    test:
+        sql: SELECT data FROM cars WHERE make=? COLLATE NOCASE LIMIT {hardware}
+        post: json()

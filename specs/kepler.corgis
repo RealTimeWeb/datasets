@@ -1,0 +1,88 @@
+metadata:
+    version: 1
+    name: Kepler
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/1/2015
+    tags: [kepler, space, planets, aerospace, moon, sun, stellar, solar system]
+    description:
+        overview: >
+            The NASA Exoplanet Archive is an online astronomical exoplanet and stellar catalog and data service that collates and cross-correlates astronomical data and information on exoplanets and their host stars and provides tools to work with these data. The Exoplanet Archive is dedicated to collecting and serving important public data sets involved in the search for and characterization of extrasolar planets and their host stars. The data include stellar parameters (such as positions, magnitudes, and temperatures), exoplanet parameters (such as masses and orbital parameters) and discovery/characterization data (such as published radial velocity curves, photometric light curves, images, and spectra).
+    appendix:
+      - name: Exoplanets
+        description: Information about the ExoPlanets
+        file: exoplanets.html
+      - name: Stellar Data
+        file: kepler_stellar.html
+        description: Information about the Stellar data
+      - name: Objects of Interest
+        file: koi_cumulative.html
+        description: Information about the Kepler Objects of Interest
+      - name: Names
+        file: kepler_names.html
+        description: Information about names in the Kepler data.
+      - name: Threshold Crossing Events
+        file: tce.html
+        description: Information about Threshold Crossing Events
+local:
+  - file: exoplanets.json
+    name: exoplanets
+  - file: kepler_names.json
+    name: keplernames
+    indexes:
+      - name: kepid
+        jsonpath: kepid
+  - file: koi_cumulative.json
+    name: koicumulative
+  - file: stellar_table.json
+    name: stellartable
+  - file: tce.json
+    name: tce
+interfaces:
+  - name: get exoplanets
+    returns: list[exoplanet]
+    description: Returns information about Exoplanets discovered by Kepler. An exoplanet or extrasolar planet is a planet that orbits a star other than the Sun.
+    test:
+        sql: SELECT data FROM exoplanets LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM exoplanets
+        post: json()
+  - name: get name by id
+    returns: record
+    description: Returns information about the name of a given target.
+    args:
+      - name: kepid
+        type: str
+        description: Target identification number, as listed elsewhere in the data.
+        default: '"11446443"'
+    production:
+        sql: SELECT data FROM keplernames WHERE kepid=?
+        post: json()
+  - name: get objects of interest
+    returns: list[koi]
+    description: Returns the Kepler Objects of Interests (KOI), targets identified by the Kepler Project that displays at least one transit-like sequence within Kepler time-series photometry that appears to be of astrophysical origin and initially consistent with a planetary transit hypothesis.
+    test:
+        sql: SELECT data FROM koicumulative LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM koicumulative
+        post: json()
+  - name: get stellar
+    returns: list[stellar]
+    description: Returns stellar information about various objects of interest.
+    test:
+        sql: SELECT data FROM stellartable LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM stellartable
+        post: json()
+  - name: get threshold crossing events
+    description: Returns information about Threshold Crossing Events (TCE), sequences of transit-like features in the flux time series of a given target that resembles the signature of a transiting planet to a sufficient degree that the target is passed on for further analysis.
+    returns: list[tce]
+    test:
+        sql: SELECT data FROM tce LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM tce
+        post: json()

@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Column Names Used in Kepler Names Table</title>
+        <script type="text/javascript" src="/js/local/util.js"></script>
+        <script src="/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/css/fixed.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="/css/docs.css" />
+</head>
+
+<body>
+	<div class="bbox">
+	<div class="b2box">
+
+<!-- begin drop down menu banner -->
+<!-- START EXO_BANNER.HTML -->
+<script type="text/javascript">
+   var timer;
+   var oldid;
+
+   function fixMenuLocations()
+   {
+      jQuery("#archive_menu").css("position", "absolute");
+      jQuery("#data_menu"   ).css("position", "absolute");
+      jQuery("#tool_menu"   ).css("position", "absolute");
+      jQuery("#help_menu"   ).css("position", "absolute");
+   }
+
+   function enterMenu(id)
+   {
+      fixMenuLocations();
+
+      clearTimeout(timer);
+
+      timer = setTimeout(function() {showMenu(id); clearTimeout(timer);}, 500);
+   }
+
+   function showMenu(id)
+   {
+      hideMenu(oldid);
+
+      oldid = id;
+
+      jQuery(id).children('ul').show();
+
+      jQuery(id).mouseout(function(){leaveMenu(id);});
+   }
+
+   function leaveMenu(id)
+   {
+      clearTimeout(timer);
+
+      timer = setTimeout(function() {hideMenu(id); clearTimeout(timer);}, 1);
+   }
+
+   function hideMenu(id)
+   {
+      jQuery(id).children('ul').hide();
+
+      jQuery(id).mouseout(function(){leaveMenu(id);});
+   }
+</script>
+
+<div id="banner">
+ <a href="/index.html"><img src="/images/nsted_banner.jpg" alt="Exoplanet Archive banner" /></a>
+</div> <!-- end banner -->
+      
+<div class="hbox">
+ <div class="home_box">
+   <a href="/index.html">Home</a>
+ </div> <!-- end home_box -->
+      
+ <div id="archive_box" class="archive_box" onmouseover="enterMenu('#archive_box')" onmouseout="leaveMenu('#archive_box')" >
+   <a href="/docs/about.html">About the Archive</a>
+   <ul id="archive_menu" class="menu" style="display: none; ">
+    <li><a href="/docs/intro.html">Overview</a></li>
+    <li><a href="/docs/holdings.html">Holdings</a></li>
+	<li><a href='/docs/counts_detail.html'>Exoplanets Counts</a></li>
+    <li><a href="/docs/faq.html">FAQ</a></li>
+    <li><a href="/docs/intro.html#ack">Acknowledgements</a></li>
+    <li><a href="/docs/privacy.html">Privacy Notice</a></li>
+   </ul>
+ </div> <!-- end archive_box -->
+ 
+ <div id="data_box" class="data_box" onmouseover="enterMenu('#data_box')" onmouseout="leaveMenu('#data_box')" >
+   <a href="/docs/data.html">Data</a>
+   <ul id="data_menu" class="menu" style="display: none; ">
+   
+   <li><a href="/cgi-bin/ExoTables/nph-exotbls?dataset=planets">Confirmed Planets</a></li>
+   <li><a href='/cgi-bin/ExoTables/nph-exotbls?dataset=cumulative_only'>KOI (Cumulative list)</a></li>
+   <li><a href='/cgi-bin/ExoTables/nph-exotbls?dataset=cumulative'>KOI (All lists)</a></li>
+   <li><a href="/cgi-bin/ExoTables/nph-exotbls?dataset=tce">Kepler Threshold-Crossing Events (TCEs)</a></li>
+   <li><a href="/applications/ExoTables/search.html?dataset=keplerstellar">Kepler Stellar Table (search)</a></li>
+   <li><a href="/cgi-bin/ExoTables/nph-exotbls?dataset=keplernames">Kepler Names Table</a></li>
+   <li><a href="/applications/ETSS/Kepler_index.html">Kepler Light Curves</a></li>
+   <li><a href="/applications/ExoTables/search.html?dataset=superwasptimeseries">SuperWASP Light Curves</a></li>
+   <li><a href="/applications/ETSS/CoRoT_astero_index.html">CoRoT Astero-Seismology</a></li>
+   <li><a href="/applications/ETSS/CoRoT_exo_index.html">CoRoT Exoplanet</a></li>
+   <li><a href="/cgi-bin/ICEETSS/nph-ICEETSS?dataset=XO">XO Light Curves</a></li>
+   <li><a href="/applications/ETSS/HATNet_index.html">HATNet Light Curves</a></li>
+   <li><a href="/cgi-bin/ICEETSS/nph-ICEETSS?dataset=TrES">TrES Light Curves</a></li>
+   <li><a href="/cgi-bin/ICEETSS/nph-ICEETSS?dataset=KELT">KELT Light Curves</a></li>
+   <li><a href="/cgi-bin/ICEETSS/nph-ICEETSS?dataset=cluster">Cluster Light Curves</a></li>
+      <li><a href="/applications/ExoTables/upload.html">Interactive Tables Search and File Upload</a></li>
+   </ul>
+ </div> <!-- end data_box -->
+ 
+ <div id="tool_box" class="tool_box" onmouseover="enterMenu('#tool_box')" onmouseout="leaveMenu('#tool_box')" >
+   <a href="/docs/tools.html">Tools</a>
+   <ul id="tool_menu" class="menu" style="display: none; ">
+   <li><a href="/applications/ExoTables/upload.html">Interactive Tables Search and File Upload</a></li>     
+   <li><a href="/cgi-bin/TransitTables/nph-visibletbls?dataset=transits">Transit and Ephemeris Service</a></li>
+   <li><a href="/applications/Inventory/search.html">Explore the Archive</a></li>
+   <li><a href="/cgi-bin/Periodogram/nph-simpleupload">Periodogram <br />and Light Curve Viewer</a></li>
+   <li><a href="/docs/program_interfaces.html">Application Programming<br /> Interface (API)</a></li>
+   <li><a href="/bulk_data_download">Bulk Data Download</a></li>
+   </ul>
+ </div> <!-- end tool_box -->
+ 
+ <div id="help_box" class="help_box" onmouseover="enterMenu('#help_box')" onmouseout="leaveMenu('#help_box')" >
+   <a href="/docs/help.html">User Guides &amp; Helpdesk</a>
+   <ul id="help_menu" class="menu" style="display: none; ">
+     <li><a href="/docs/documentation.html">Documentation Index</a></li>
+     <li><a href="/docs/KeplerMission.html">Kepler Documentation</a></li>
+     <li><a href="/docs/connect.html">Social Media (Facebook, YouTube, Twitter)</a></li>
+        <li><a href="https://lists.ipac.caltech.edu/mailman/listinfo/exoplanet-announce">Subscribe to email updates</a></li>
+         <li><a href="/applications/Helpdesk">Contact Us</a></li>
+   </ul>
+ </div> <!-- end help_box -->
+
+ <div class="clear"></div>
+
+</div> <!-- end hbox -->
+<!-- END EXO_BANNER.HTML -->
+
+<!-- end drop down menu banner -->
+<div class="docs">
+ 
+<h1>Data Columns in the Kepler Names Table</h1>
+
+<p>The following table lists all of the data columns in the Kepler Names table (<code>keplernames</code>) that can be returned through the Exoplanet Archive's <a href="/docs/program_interfaces.html">Application Programming Interface (API)</a>. </p>
+
+<p>Additional Links:</p> 
+<ul>
+<li><a href="/docs/KeplerNumbers.html">Exoplanet Name Policy</a></li>
+<li><a href="/docs/ExoPlanArchPhilosophy.html">Kepler Extended Mission Archive Philosophy</a></li>
+<li><a href="/docs/KeplerMission.html">Exoplanet Archive Kepler Mission Resources</a></li>
+</ul>
+
+<p>Questions about the structure and use of this table in the archive format should use the Helpdesk link in the header.  Questions about the content descriptions should be sent to the 
+Kepler Science Office at keplergo@mail.arc.nasa.gov.</p> 
+ 
+<br />
+<h2>Target Labels and Flags</h2>
+
+<table border="1" cellpadding="1" cellspacing="3" width="642">
+
+  <tr>
+    <th scope="col">Database Column Name</th>
+    <th scope="col">Table Label</th>
+    <th scope="col">Description</th>
+    </tr>
+
+
+     <tr class="column" id="kepid">
+    <td class="name"><a name="kepid"></a>kepid&dagger;</td>
+    <td class="label">Kepler Identification or KepID </td>
+    <td class="description">
+Target identification number, as listed in the <a href="http://adsabs.harvard.edu/abs/2011AJ....142..112B">Kepler Input Catalog (KIC)</a>. 
+The KIC was derived from a ground-based imaging survey of the Kepler field 
+conducted prior to launch. The survey's purpose was to identify stars for 
+the Kepler exoplanet survey by magnitude and color. The full catalog of 
+13 million sources can be searched at the <a href="http://archive.stsci.edu/kepler/kic10/search.php">MAST archive</a>. The subset of 
+4 million targets found upon the Kepler CCDs can be searched via the <a href="http://archive.stsci.edu/kepler/kepler_fov/search.php">Kepler Target Search form</a>. 
+The Kepler ID is unique to a target and there is only one Kepler ID per target.</td>
+    </tr>
+
+    <tr class="column" id="kepoi_name">
+    <td class="name">kepoi_name&dagger;</td>
+    <td class="label">KOI Name</td>
+<td class="description">
+A number used to identify and track a Kepler Object of Interest (KOI). 
+A KOI is a target identified by the Kepler Project that displays at least 
+one transit-like sequence within Kepler time-series photometry that appears 
+to be of astrophysical origin and initially consistent with a planetary 
+transit hypothesis. A KOI name has an integer and a decimal part of the 
+format KNNNNN.DD. The integer part designates the target star; the 
+two-digit decimal part identifies a unique transiting object associated 
+with that star. It is not necessarily the planetary candidate listed in 
+that order within a DV report, nor does it indicate the distance of the 
+planet from the the host star relative to other planets in the system. </td>
+    </tr>
+
+  <tr class="column" id="kepler_name">
+    <td class="name">kepler_name&dagger;</td>
+    <td class="label">Kepler Name</td>
+<td class="description">
+Kepler number name of the form "Kepler-N" plus a lower-case letter 
+identifying the planet. In general, these numbers are easier to 
+remember than the corresponding KOI or KIC/KepID designations and 
+are intended to clearly indicate a class of objects that have been 
+confirmed or validated as planets&mdash;a step up from the planet 
+candidate designation.</td>
+    </tr>
+
+  <tr class="column" id="alt_name">
+    <td class="name">alt_name&dagger;</td>
+    <td class="label">Confirmed Name</td>
+<td class="description">
+The planet name as used in the Exoplanet Archive confirmed planet table.</td>
+    </tr>
+
+  <tr class="column" id="koi_list_flag">
+    <td class="name">koi_list_flag&dagger;</td>
+    <td class="label">Is In KOI List?</td>
+<td class="description">
+This flag indicates whether the planet is listed in the 
+KOI candidate list (value of "YES") or not (value of "NOT"). 
+KOI candidates are identified through transit signatures 
+from the Kepler light curves. Follow-up observations may 
+confirm the presence of additional planets via signatures 
+that are not those of transiting objects, for example via 
+Transit Timing Variations.</td>
+    </tr>
+
+  <tr class="column" id="tm_designation">
+    <td class="name">tm_designation</td>
+    <td class="label">2MASS Name</td>
+<td class="description">
+2MASS designation from the 2MASS point source catalog (Skrutskie et al. 2006, ApJ, 131, 1163).</td>
+    </tr>
+  <tr class="column" id="last_update">
+    <td class="name">last_update&dagger;</td>
+    <td class="label">Date of Last Update</td>
+<td class="description">
+Date of last update for this Kepler planet</td>
+  </tr>
+
+</table>
+    <br />
+    &dagger; Default column: these columns display in the interactive table when the table is first loaded, and when <strong>Reset Filters</strong> is clicked.<br />
+<br />
+ 
+<h2>Kepler Input Catalog (KIC) Parameters</h2>
+
+<table border="1" cellpadding="1" cellspacing="3" width="642">
+ <tr>
+    <th width="134" scope="col">Database Column Name</th>
+   <th width="160" scope="col"> Uncertainties Column<br />
+        (positive +)<br />
+        (negative -)</th>
+    <th width="128">Table Label</th>
+    <th width="187" scope="col">Description</th>
+  </tr>
+
+ 
+    <tr class="column" id="ra">
+    <td class="name">ra</td>
+    <td class="uncertainty">ra_err</td>
+    <td class="label">RA (deg)</td>
+<td class="description">
+KIC Right Ascension</td>
+  </tr>
+
+  <tr class="column" id="dec">
+    <td class="name">dec</td>
+     <td class="uncertainty">dec_err</td>
+    <td class="label">Dec (deg) </td>
+<td class="description">
+KIC Declination</td>
+  </tr>
+      <tr class="column" id="ra_str">
+    <td class="name">ra_str&dagger;</td>
+    <td class="uncertainty">&nbsp;</td>
+    <td class="label">RA (sex)</td>
+<td class="description">
+KIC Right Ascension</td>
+  </tr>
+  <tr class="column" id="dec_str">
+    <td class="name">dec_str&dagger;</td>
+     <td class="uncertainty">&nbsp;</td>
+    <td class="label">Dec (sex) </td>
+<td class="description">
+KIC Declination</td>
+  </tr>
+
+ </table>
+    <br />
+    &dagger; Default column: these columns display in the interactive table when the table is first loaded, and when <strong>Reset Filters</strong> is clicked.<br />
+<br />
+<br />
+
+<p> Last updated: 16 July 2014 </p>
+</div> <!-- end #docs-->
+
+<div class="tbox">
+  <p><a href="http://www.nasa.gov" title="National Aeronautics and Space Administration">
+        <img src="/images/logos/NASA_small.jpg" alt="NASA" width="87" height="75"/></a>
+
+    <a href="http://www.ipac.caltech.edu" title="Infrared Processing and Analysis Center">
+        <img src="/images/logos/IPAC_small.jpg" alt="IPAC" width="139" height="75" /></a>
+    <a href="http://nexsci.caltech.edu" title="NASA Exoplanet Science Institute">
+        <img src="/images/logos/logo_nexsci.gif" alt="NExScI" /></a>
+     <a href="http://www.caltech.edu" title="California Institute of Technology">
+        <img src="/images/logos/Caltech_LOGO-Orange_PMS165.jpg" alt="Caltech" width="25%" /></a></p>
+
+</div> <!-- end tbox div -->
+
+
+<div class="hbox">
+         <div class="home_box">
+           <a href="/index.html">Home</a>
+         </div>
+       
+         <div class="archive_box" onmouseout="jQuery(this).children('ul').hide()" onmouseover="jQuery(this).children('ul').show()">
+           <a href="/docs/about.html">About the Archive</a>
+         </div>
+       
+         <div class="data_box" onmouseout="jQuery(this).children('ul').hide()" onmouseover="jQuery(this).children('ul').show()">
+           <a href="/docs/data.html">Data</a>
+          </div>
+       
+         <div class="tool_box" onmouseout="jQuery(this).children('ul').hide()" onmouseover="jQuery(this).children('ul').show()">
+           <a href="/docs/tools.html">Tools</a>
+          </div>
+       
+         <div class="help_box" onmouseout="jQuery(this).children('ul').hide()" onmouseover="jQuery(this).children('ul').show()">
+           <a href="/docs/help.html">User Guides &amp; Helpdesk</a>
+         </div>
+           
+         <div class="clear"></div>
+</div> <!-- end hbox -->
+
+
+
+</div> <!-- end b2box -->
+</div> <!-- end bbox -->
+</body>
+</html>
