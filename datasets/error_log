@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\acbart\Projects\datasets\builder\build.py", line 41, in build_dir
+    shutil.move(src, new_folder)
+  File "C:\Python27\lib\shutil.py", line 292, in move
+    raise Error, "Destination path '%s' already exists" % real_dst
+Error: Destination path '../datasets//python/baseball/baseball.db' already exists

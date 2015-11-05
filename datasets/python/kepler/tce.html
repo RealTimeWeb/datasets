@@ -1,0 +1,1142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Column Names Used in Kepler TCE Data</title>
+        <script type="text/javascript" src="/js/local/util.js"></script>
+        <script src="/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/fixed.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/docs.css" />
+</head>
+
+<body>
+<div class="bbox">
+  <div class="b2box"> 
+    
+    <!-- begin drop down menu banner --> 
+    <!-- START EXO_BANNER.HTML -->
+<script type="text/javascript">
+   var timer;
+   var oldid;
+
+   function fixMenuLocations()
+   {
+      jQuery("#archive_menu").css("position", "absolute");
+      jQuery("#data_menu"   ).css("position", "absolute");
+      jQuery("#tool_menu"   ).css("position", "absolute");
+      jQuery("#help_menu"   ).css("position", "absolute");
+   }
+
+   function enterMenu(id)
+   {
+      fixMenuLocations();
+
+      clearTimeout(timer);
+
+      timer = setTimeout(function() {showMenu(id); clearTimeout(timer);}, 500);
+   }
+
+   function showMenu(id)
+   {
+      hideMenu(oldid);
+
+      oldid = id;
+
+      jQuery(id).children('ul').show();
+
+      jQuery(id).mouseout(function(){leaveMenu(id);});
+   }
+
+   function leaveMenu(id)
+   {
+      clearTimeout(timer);
+
+      timer = setTimeout(function() {hideMenu(id); clearTimeout(timer);}, 1);
+   }
+
+   function hideMenu(id)
+   {
+      jQuery(id).children('ul').hide();
+
+      jQuery(id).mouseout(function(){leaveMenu(id);});
+   }
+</script>
+
+<div id="banner">
+ <a href="/index.html"><img src="/images/nsted_banner.jpg" alt="Exoplanet Archive banner" /></a>
+</div> <!-- end banner -->
+      
+<div class="hbox">
+ <div class="home_box">
+   <a href="/index.html">Home</a>
+ </div> <!-- end home_box -->
+      
+ <div id="archive_box" class="archive_box" onmouseover="enterMenu('#archive_box')" onmouseout="leaveMenu('#archive_box')" >
+   <a href="/docs/about.html">About the Archive</a>
+   <ul id="archive_menu" class="menu" style="display: none; ">
+    <li><a href="/docs/intro.html">Overview</a></li>
+    <li><a href="/docs/holdings.html">Holdings</a></li>
+	<li><a href='/docs/counts_detail.html'>Exoplanets Counts</a></li>
+    <li><a href="/docs/faq.html">FAQ</a></li>
+    <li><a href="/docs/intro.html#ack">Acknowledgements</a></li>
+    <li><a href="/docs/privacy.html">Privacy Notice</a></li>
+   </ul>
+ </div> <!-- end archive_box -->
+ 
+ <div id="data_box" class="data_box" onmouseover="enterMenu('#data_box')" onmouseout="leaveMenu('#data_box')" >
+   <a href="/docs/data.html">Data</a>
+   <ul id="data_menu" class="menu" style="display: none; ">
+   
+   <li><a href="/cgi-bin/ExoTables/nph-exotbls?dataset=planets">Confirmed Planets</a></li>
+   <li><a href='/cgi-bin/ExoTables/nph-exotbls?dataset=cumulative_only'>KOI (Cumulative list)</a></li>
+   <li><a href='/cgi-bin/ExoTables/nph-exotbls?dataset=cumulative'>KOI (All lists)</a></li>
+   <li><a href="/cgi-bin/ExoTables/nph-exotbls?dataset=tce">Kepler Threshold-Crossing Events (TCEs)</a></li>
+   <li><a href="/applications/ExoTables/search.html?dataset=keplerstellar">Kepler Stellar Table (search)</a></li>
+   <li><a href="/cgi-bin/ExoTables/nph-exotbls?dataset=keplernames">Kepler Names Table</a></li>
+   <li><a href="/applications/ETSS/Kepler_index.html">Kepler Light Curves</a></li>
+   <li><a href="/applications/ExoTables/search.html?dataset=superwasptimeseries">SuperWASP Light Curves</a></li>
+   <li><a href="/applications/ETSS/CoRoT_astero_index.html">CoRoT Astero-Seismology</a></li>
+   <li><a href="/applications/ETSS/CoRoT_exo_index.html">CoRoT Exoplanet</a></li>
+   <li><a href="/cgi-bin/ICEETSS/nph-ICEETSS?dataset=XO">XO Light Curves</a></li>
+   <li><a href="/applications/ETSS/HATNet_index.html">HATNet Light Curves</a></li>
+   <li><a href="/cgi-bin/ICEETSS/nph-ICEETSS?dataset=TrES">TrES Light Curves</a></li>
+   <li><a href="/cgi-bin/ICEETSS/nph-ICEETSS?dataset=KELT">KELT Light Curves</a></li>
+   <li><a href="/cgi-bin/ICEETSS/nph-ICEETSS?dataset=cluster">Cluster Light Curves</a></li>
+      <li><a href="/applications/ExoTables/upload.html">Interactive Tables Search and File Upload</a></li>
+   </ul>
+ </div> <!-- end data_box -->
+ 
+ <div id="tool_box" class="tool_box" onmouseover="enterMenu('#tool_box')" onmouseout="leaveMenu('#tool_box')" >
+   <a href="/docs/tools.html">Tools</a>
+   <ul id="tool_menu" class="menu" style="display: none; ">
+   <li><a href="/applications/ExoTables/upload.html">Interactive Tables Search and File Upload</a></li>     
+   <li><a href="/cgi-bin/TransitTables/nph-visibletbls?dataset=transits">Transit and Ephemeris Service</a></li>
+   <li><a href="/applications/Inventory/search.html">Explore the Archive</a></li>
+   <li><a href="/cgi-bin/Periodogram/nph-simpleupload">Periodogram <br />and Light Curve Viewer</a></li>
+   <li><a href="/docs/program_interfaces.html">Application Programming<br /> Interface (API)</a></li>
+   <li><a href="/bulk_data_download">Bulk Data Download</a></li>
+   </ul>
+ </div> <!-- end tool_box -->
+ 
+ <div id="help_box" class="help_box" onmouseover="enterMenu('#help_box')" onmouseout="leaveMenu('#help_box')" >
+   <a href="/docs/help.html">User Guides &amp; Helpdesk</a>
+   <ul id="help_menu" class="menu" style="display: none; ">
+     <li><a href="/docs/documentation.html">Documentation Index</a></li>
+     <li><a href="/docs/KeplerMission.html">Kepler Documentation</a></li>
+     <li><a href="/docs/connect.html">Social Media (Facebook, YouTube, Twitter)</a></li>
+        <li><a href="https://lists.ipac.caltech.edu/mailman/listinfo/exoplanet-announce">Subscribe to email updates</a></li>
+         <li><a href="/applications/Helpdesk">Contact Us</a></li>
+   </ul>
+ </div> <!-- end help_box -->
+
+ <div class="clear"></div>
+
+</div> <!-- end hbox -->
+<!-- END EXO_BANNER.HTML -->
+ 
+    <!-- end drop down menu banner -->
+    <div class="docs">
+      <h1>Data Columns in the Kepler TCE Table</h1>
+      <p>The following table lists all of the data columns in the Kepler TCE table (<code>TCEs</code>) that can be returned through the Exoplanet Archive's <a href="/docs/program_interfaces.html">Application 
+        Programming Interface (API)</a>. A Threshold Crossing Event (TCE) is a sequence of transit-like features in the flux time series of a given target that resembles the signature 
+        of a transiting planet to a sufficient degree that the target is passed on for further analysis.  For more information, see the <a href="/docs/tce_releasenotes_q1q12.pdf">TCE release notes</a>. </p>
+      <p>There are similar documents for the <a href="/docs/API_exoplanet_columns.html">Confirmed Planets</a> table and the <a href="API_kepcandidate_columns.html">Kepler 
+        Planetary Candidates</a> table.</p>
+      <p> Additional Links:</p>
+      <ul>
+        <li><a href="/docs/ExoPlanArchPhilosophy.html">Kepler Extended Mission Archive Philosophy</a></li>
+        <li><a href="/docs/KeplerMission.html">Exoplanet Archive Kepler Mission Resources</a></li>
+      </ul>
+      <p>Questions about the structure and use of this table in the archive format should use the Helpdesk link in the header.  Questions about the content descriptions should be sent to the 
+        Kepler Science Office at <a href="mailto:keplergo@mail.arc.nasa.gov">keplergo(at)mail.arc.gov</a>.</p>
+      <br />
+      <hr />
+      <p> <strong>Skip to a section:</strong></p>
+      <ul>
+        <li><a href="#target_flags">Target Labels and Flags</a></li>
+        <li><a href="#transit_fit_param">Transit Fit Parameters</a></li>
+        <li><a href="#scaled_plt_param">Scaled Planetary Parameters</a></li>
+        <li><a href="#stellar_param">Stellar Parameters</a></li>
+        <li><a href="#lc_koi_vet_stats">Light Curve-Based KOI Vetting Statistics</a></li>
+        <li><a href="#pixel_koi_vet_stats">Pixel-Based KOI Vetting Statisics</a></li>
+      </ul>
+      <a name="target_flags"></a>
+      <h2>Target Labels and Flags</h2>
+      <table border="1" cellpadding="1" cellspacing="3" width="642">
+        <tbody>
+          <tr>
+            <th scope="col">Database Column Name</th>
+            <th scope="col">Table Label</th>
+            <th scope="col">Description</th>
+          </tr>
+           <tr class="column" id="kepid">
+            <td class="name">kepid</td>
+            <td class="label">KepID or Kepler Identification</td>
+<td class="description">
+Target identification number, as listed in the <a href="http://adsabs.harvard.edu/abs/2011AJ....142..112B" target="_blank">Kepler Input Catalog (KIC)</a>. 
+The KIC was derived from a ground-based imaging survey of the Kepler field 
+conducted prior to launch. The survey's purpose was to identify stars for the 
+Kepler exoplanet survey by magnitude and color. The full catalog of 13 million 
+sources can be searched at the <a href="http://archive.stsci.edu/kepler/kic10/search.php" target="_blank">MAST archive</a>. The subset of 4 million 
+targets found upon the Kepler CCDs can be searched via the <a href="http://archive.stsci.edu/kepler/kepler_fov/search.php" target="_blank">Kepler Target Search form</a>. 
+The Kepler ID is unique to a target and there is only one Kepler ID per target.</td>
+          </tr>
+           <tr class="column" id="tce_plnt_num">
+            <td class="name">tce_plnt_num </td>
+            <td class="label">Planet Number </td>
+<td class="description">Planet Number</td>
+          </tr>
+           <tr class="column" id="tce_delivname">
+            <td class="name">tce_delivname</td>
+            <td class="label">Delivery Name</td>
+<td class="description">
+The TCE delivery name from the Kepler project. 
+Possible values are: q1_q12_tce and q1_q16_tce</td>
+          </tr>
+           <tr class="column" id="rowupdate">
+            <td class="name">rowupdate</td>
+            <td class="label">Date of Last Update</td>
+            <td class="description">
+Date of last update for this TCE</td>
+          </tr>
+
+   <tr class="column" id="tce_datalink_dvs">
+    <td class="name">tce_datalink_dvs</td>
+    <td class="label">Link to DV Summary</td>
+<td class="description">
+This is the relative path for the data validation summary; 
+use it when retrieving individual reports through the archive's 
+<a href="/docs/program_interfaces.html">application programming interface</a></strong> with wget. 
+You must append the following URL to the file name in your 
+wget query:<br /> <code>http://exoplanetarchive.ipac.caltech.edu/data/KeplerData/</code></td>
+  </tr>
+
+   <tr class="column" id="tce_datalink_dvr">
+    <td class="name">tce_datalink_dvr</td>
+    <td class="label">Link to DV Report</td>
+<td class="description">
+This is the relative path for the data validation report; 
+use it when retrieving individual reports through the archive's 
+<a href="/docs/program_interfaces.html">application programming interface</a></strong> with wget. 
+You must append the following URL to the file name in your wget query:<br /> <code>http://exoplanetarchive.ipac.caltech.edu/data/KeplerData/</code></td>
+  </tr>
+
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <br />
+      <a name="transit_fit_param"></a>
+      <h2>Transit Fit Parameters</h2>
+      <p>Transit parameters delivered by the Kepler Project are typically best-fit parameters produced by a <a href="http://adsabs.harvard.edu/abs/2002ApJ...580L.171M" target="_blank">Mandel-Agol 
+        (2002)</a> fit to a multi-quarter Kepler light curve, assuming a linear orbital ephemeris. Some of the parameters listed below are fit directly, other are derived from the 
+        best-fit parameters. Limb darkening coefficients are fixed and pre-calculated from host star properties. Orbital Period, Transit Epoch, 
+        Planet-Star Radius Ratio, Planet-Star Separation and mpact Parameter are the free parameters in the fit. 
+        Matrix covariances are adopted as errors to the fit parameters, they therefore ignore the effects of correlation between the fit parameters and are likely 
+        to be underestimates.</p>
+      <table border="1" cellpadding="1" cellspacing="3" width="642">
+        <tbody>
+          <tr>
+            <th scope="col">Database Column Name</th>
+            <th scope="col"> Uncertainties Column<br />
+              (positive +)<br />
+              (negative -)</th>
+            <th scope="col">Displayed String Name</th>
+            <th scope="col">Table Label</th>
+            <th scope="col">Description</th>
+          </tr>
+           <tr class="column" id="tce_period">
+            <td class="name"> tce_period</td>
+            <td class="uncertainty">tce_period_err </td>
+            <td class="label">tce_period_str</td>
+            <td class="label">Orbital Period (days)</td>
+<td class="description">
+The interval between consecutive planetary transits.</td>
+          </tr>
+           <tr class="column" id="tce_time0bk">
+            <td class="name"> tce_time0bk</td>
+            <td class="uncertainty">tce_time0bk_err </td>
+            <td class="label">tce_time0bk_str</td>
+            <td class="label">Transit Epoch (BJD - 2,545,833.0) </td>
+<td class="description">
+The time corresponding to the center of the first detected transit in 
+Barycentric Julian Day (BJD) minus a constant offset of 2,454,833.0 days. 
+The offset corresponds to 12:00 on Jan 1, 2009 UTC.</td>
+          </tr>
+           <tr class="column" id="tce_time0">
+            <td class="name"> tce_time0</td>
+            <td class="uncertainty">tce_time0_err </td>
+            <td class="label">tce_time0_str</td>
+            <td class="label">Transit Epoch in BJD</td>
+<td class="description">
+The time corresponding to the center of the first 
+detected transit in Barycentric Julian Day (BJD).</td>
+          </tr>
+           <tr class="column" id="tce_ror">
+            <td class="name"> tce_ror</td>
+            <td class="uncertainty">tce_ror_err</td>
+            <td class="label">tce_ror_str</td>
+            <td class="label">Planet-Star Radius Ratio</td>
+<td class="description">
+The planet radius divided by the stellar radius.</td>
+          </tr>
+           <tr class="column" id="tce_dor">
+            <td class="name"> tce_dor</td>
+            <td class="uncertainty">tce_dor_err </td>
+            <td class="label">tce_dor_str</td>
+            <td class="label">Planet-Star Separation</td>
+<td class="description">
+The distance between the planet and the star at mid-transit 
+divided by the stellar radius. For the case of zero orbital 
+eccentricity, the distance at mid-transit is the semi-major 
+axis of the planetary orbit.</td>
+          </tr>
+           <tr class="column" id="tce_incl">
+            <td class="name">tce_incl</td>
+            <td class="uncertainty"> tce_incl_err</td>
+            <td class="label">tce_incl_str</td>
+            <td class="label">Inclination (deg)</td>
+<td class="description">
+The angle between the plane of the sky 
+(perpendicular to the line of sight) and 
+the orbital plane of the planet candidate.</td>
+          </tr>
+           <tr class="column" id="tce_impact">
+            <td class="name"> tce_impact</td>
+            <td class="uncertainty">tce_impact_err </td>
+            <td class="label">tce_impact_str</td>
+            <td class="label">Impact Parameter</td>
+<td class="description"> 
+The sky-projected distance between the center of the 
+stellar disc and the center of the planet disc at 
+conjunction, normalized by the stellar radius.</td>
+          </tr>
+           <tr class="column" id="tce_duration">
+            <td class="name"> tce_duration</td>
+            <td class="uncertainty"> tce_duration_err</td>
+            <td class="label">tce_duration_str</td>
+            <td class="label"> Transit Duration (hrs) </td>
+<td class="description">
+The duration of the observed transits. Duration is measured 
+from first contact between the planet and star until last contact. 
+Contact times are typically computed from a best-fit model 
+produced by a <a href="http://adsabs.harvard.edu/abs/2002ApJ...580L.171M" target="_blank">Mandel-Agol (2002)</a> model fit to a multi-quarter 
+Kepler light curve, assuming a linear orbital ephemeris. </td>
+          </tr>
+           <tr class="column" id="tce_ingress">
+            <td class="name"> tce_ingress</td>
+            <td class="uncertainty"> tce_ingress_err</td>
+            <td class="label">tce_ingress_str</td>
+            <td class="label">Ingress Duration (hrs) </td>
+<td class="description">
+The time between first and second contact of the planetary transit. 
+Contact times are typically computed from a best-fit model produced 
+by a <a href="http://adsabs.harvard.edu/abs/2002ApJ...580L.171M" target="_blank">Mandel-Agol (2002)</a> model fit to a multi-quarter Kepler light 
+curve, assuming a linear orbital ephemeris.</td>
+          </tr>
+           <tr class="column" id="tce_depth">
+            <td class="name">tce_depth</td>
+            <td class="uncertainty">tce_depth_err</td>
+            <td class="label">tce_depth_str</td>
+            <td class="label">Transit Depth (ppm)</td>
+<td class="description">
+The fraction of stellar flux lost at the minimum of the planetary transit. 
+Transit depths are typically computed from a best-fit model produced by a 
+<a href="http://adsabs.harvard.edu/abs/2002ApJ...580L.171M" target="_blank">Mandel-Agol (2002)</a> model fit to a multi-quarter Kepler light curve, 
+assuming a linear orbital ephemeris. </td>
+          </tr>
+           <tr class="column" id="tce_eccen">
+            <td class="name">tce_eccen</td>
+            <td class="uncertainty">tce_eccen_err</td>
+            <td class="label">tce_eccen_str</td>
+            <td class="label">Eccentricity</td>
+<td class="description">
+Eccentricity Value</td>
+          </tr>
+           <tr class="column" id="tce_longp">
+            <td class="name">tce_longp</td>
+            <td class="uncertainty"> tce_longp_err</td>
+            <td class="label">tce_longp_str</td>
+            <td class="label">Long. of Periastron (deg)</td>
+<td class="description">
+Longitude of Periastron</td>
+          </tr>
+           <tr class="column" id="tce_limbdark_mod">
+            <td class="name">tce_limbdark_mod</td>
+            <td class="uncertainty">&nbsp;</td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Limb Darkening Model Name</td>
+<td class="description">
+A reference to the limb darkening model used to 
+calculate stellar limb darkening coefficients.</td>
+          </tr>
+           <tr class="column" id="tce_ldm_coeff1">
+            <td class="name"> tce_ldm_coeff1,  tce_ldm_coeff2,  tce_ldm_coeff3,  tce_ldm_coeff4 </td>
+            <td class="uncertainty">&nbsp;</td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Limb Darkening Coefficients </td>
+<td class="description">
+Up to four coefficients (a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, a<sub>4</sub>) 
+that define stellar limb darkening (e.g., <a href="http://adsabs.harvard.edu/abs/2000A%26A...363.1081C" target="_blank">Claret 2000</a>). 
+Limb darkening is the variation of specific intensity of the star 
+as a function of &mu; = cos(&theta;). &theta; is the angle between 
+the line-of-sight of an observer and a line perpendicular to the 
+stellar surface at an observed point. Coefficients are dependent 
+upon stellar temperature, surface gravity and metallicity. Adopted 
+coefficients are required input for <a href="http://adsabs.harvard.edu/abs/2002ApJ...580L.171M" target="_blank">Mandel-Agol (2002)</a> fits 
+and are extracted from archived tables (e.g., <a
+href="http://adsabs.harvard.edu/abs/2011A%26A...529A..75C" target="_blank">Claret and Bloemen 2011)</a>. 
+Limb darkening coefficients remain fixed during fit minimization. 
+Note that the dependence of limb darkening coefficients upon stellar 
+parameters implies that planet radius does not scale linearly with 
+stellar radius. If new stellar parameters are adopted, the most-correct 
+approach is to re-fit the transit with new limb-darkening coefficients 
+in order to re-measure planet size. </td>
+          </tr>
+           <tr class="column" id="tce_num_transits">
+            <td class="name">tce_num_transits </td>
+            <td class="uncertainty"></td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Number of Transits</td>
+<td class="description">
+The number of expected transits or partially-observed 
+transits associated with the planet candidate occurring 
+within the searched light curve. This does not include 
+transits that fall completely within data gaps. </td>
+          </tr>
+           <tr class="column" id="tce_trans_mod">
+            <td class="name">tce_trans_mod</td>
+            <td class="uncertainty">&nbsp;</td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Transit Model</td>
+<td class="description">
+A reference to the transit model used to fit the data (e.g., <a href="http://adsabs.harvard.edu/abs/2002ApJ...580L.171M" target="_blank">Mandel-Agol 2002</a>).</td>
+          </tr>
+           <tr class="column" id="tce_full_conv">
+            <td class="name">tce_full_conv</td>
+            <td class="uncertainty">&nbsp;</td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Full Convergence Flag</td>
+<td class="description">
+True or false. The model convergence indicates whether the fit 
+converged to a solution. True indicates the fit was successful.</td>
+          </tr>
+           <tr class="column" id="tce_model_snr">
+            <td class="name">tce_model_snr </td>
+            <td class="uncertainty"></td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Transit Signal-to-Noise (SNR)</td>
+<td class="description">
+Transit depth normalized by the mean 
+uncertainty in the flux during the transits.</td>
+          </tr>
+           <tr class="column" id="tce_model_chisq">
+            <td class="name">tce_model_chisq</td>
+            <td class="uncertainty">&nbsp;</td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Chi-Square</td>
+<td class="description">
+The goodness of the transit fit to the data. 
+Within the TCE table this quantity is the &chi;<sup>2</sup> statistic. 
+Within the KOI table this quantity is the reduced-&chi;<sup>2</sup> 
+statistic, e.g., divided by the number of degrees of freedom in the fit. </td>
+          </tr>
+           <tr class="column" id="tce_model_dof">
+            <td class="name">tce_model_dof</td>
+            <td class="uncertainty">&nbsp;</td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Degrees of Freedom</td>
+            <td class="description">
+The number of degrees of freedom used when 
+fitting the transit model to the data.</td>
+          </tr>
+           <tr class="column" id="tce_robstat">
+            <td class="name">tce_robstat</td>
+            <td class="uncertainty">&nbsp;</td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Robust Statistic</td>
+<td class="description">
+This statistic measures the significance of transit depth variations 
+among the events that contribute to the potential TCE. In cases where 
+the transit depths are consistent across all events, the robust statistic 
+will equal the multiple event statistic (MES). The robust statistic will 
+be less than the MES when the potential TCE consists of an inconsistent 
+set of transit depths. As a result, the robust statistic is used by the 
+pipeline to remove potential TCEs with significant transit depth variations, 
+such as a single deep systematic event combined with numerous shallow events. 
+A value significantly below the value of the MES indicates the TCE is made 
+of inconsistent transit depths. The exact formulation of the robust statistic 
+is found in Appendix A of <a href="http://adsabs.harvard.edu/abs/2013ApJS..206....5T" target="_blank">Tenenbaum et al. (2013, ApJS, 206, 5)</a>.</td>
+          </tr>
+           <tr class="column" id="tce_dof1">
+            <td class="name">tce_dof1</td>
+            <td class="uncertainty">&nbsp;</td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Degrees of Freedom 1</td>
+<td class="description">
+The degrees of freedom associated with the first chi-square discriminator. 
+It is used along with Chi Square 1 to remove likely false-positives from 
+the TCE list. For more information on how this value is used to remove 
+false-positives, see Appendix B of <a href="http://adsabs.harvard.edu/abs/2013ApJS..206....5T" target="_blank">Tenenbaum et al. (2013, ApJS, 206, 5)</a>, 
+and in more detail in <a href="http://adsabs.harvard.edu/abs/2013ApJS..206...25S" target="_blank">Seader et al. (2013, ApJS, 206, 25)</a>.</td>
+          </tr>
+           <tr class="column" id="tce_dof2">
+            <td class="name">tce_dof2</td>
+            <td class="uncertainty">&nbsp;</td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Degrees of Freedom 2</td>
+<td class="description">
+The degrees of freedom associated with the second chi-square discriminator. 
+It is used along with Chi Square 2 to remove likely false-positives from the 
+TCE list. For more information on how this value is used to remove 
+false-positives, see Appendix B of <a href="http://adsabs.harvard.edu/abs/2013ApJS..206....5T" target="_blank">Tenenbaum et al. (2013, ApJS, 206, 5)</a>, 
+and in more detail in <a href="http://adsabs.harvard.edu/abs/2013ApJS..206...25S" target="_blank">Seader et al. (2013, ApJS, 206, 25)</a>.</td>
+          </tr>
+           <tr class="column" id="tce_chisq1">
+            <td class="name">tce_chisq1</td>
+            <td class="uncertainty">&nbsp;</td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Chi Square 1</td>
+<td class="description">
+The first chi-square discriminator is used along with the associated degrees of 
+freedom and MES to remove likely false-positives from the TCE list. This statistic 
+compares the single event statistic in the wavelet domain to what is expected given 
+the noise. If the data match the model and the noise behaves as expected, this 
+statistic should equal the degrees of freedom. Larger values indicate a poor match 
+to the model given the estimate of the noise. The exact formulation of this statistic 
+is described in Appendix B, equation B8, of <a href="http://adsabs.harvard.edu/abs/2013ApJS..206....5T" target="_blank">Tenenbaum et al. (2013, ApJS, 206, 5)</a> 
+and in more detail in <a href="http://adsabs.harvard.edu/abs/2013ApJS..206...25S" target="_blank">Seader et al. (2013, ApJS, 206, 25)</a>. </td>
+          </tr>
+           <tr class="column" id="tce_chisq2">
+            <td class="name">tce_chisq2</td>
+            <td class="uncertainty">&nbsp;</td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Chi Square 2</td>
+<td class="description">
+The second chi-square discriminator used along with the associated degrees of 
+freedom and MES to remove likely false-positives from the TCE list. This statistic 
+compares the measured temporal contributions to the multiple event statistic to 
+what is expected. If the data matches the model and the noise behaves as expected, 
+this statistic should equal the degrees of freedom. Larger values indicate a poor 
+match to the model given the estimate of the noise. The exact formulation of this 
+statistic is described in Appendix B, equation B13, of <a href="http://adsabs.harvard.edu/abs/2013ApJS..206....5T" target="_blank">Tenenbaum et al. (2013, ApJS, 206, 5)</a>) 
+and in more detail in <a href="http://adsabs.harvard.edu/abs/2013ApJS..206...25S" target="_blank">Seader et al. (2013, ApJS, 206, 25)</a>.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <br />
+      <a name="scaled_plt_param"></a>
+      <h2>Scaled Planetary Parameters</h2>
+      <p>Scaled planetary parameters combine the dimensionless fit parameters
+        with physical stellar parameters to produce planet characteristics in
+        physical units.</p>
+      <table border="1" cellpadding="1" cellspacing="3" width="642">
+        <tbody>
+          <tr>
+            <th scope="col">Database Column Name</th>
+            <th scope="col"> Uncertainties Column<br />
+              (positive +)<br />
+              (negative -)</th>
+            <th scope="col">Displayed String Name</th>
+            <th scope="col">Table Label</th>
+            <th scope="col">Description</th>
+          </tr>
+           <tr class="column" id="tce_prad">
+            <td class="name"> tce_prad</td>
+            <td class="uncertainty">tce_prad_err</td>
+            <td class="label">tce_prad_str</td>
+            <td class="label">Planetary Radius (Earth radii)</td>
+<td class="description">
+The radius of the planet. Planetary radius is the product 
+of the planet star radius ratio and the stellar radius. </td>
+          </tr>
+           <tr class="column" id="tce_sma">
+            <td class="name">tce_sma</td>
+            <td class="uncertainty">tce_sma_err</td>
+            <td class="label">tce_sma_str</td>
+            <td class="label">Orbit Semi-Major Axis (AU)</td>
+<td class="description">
+Half of the long axis of the ellipse defining a planet's orbit. 
+For a circular orbit this is the planet-star separation. 
+The semi-major axis is derived based on Kepler's third law, i.e., 
+utilizing the orbital period and stellar mass, not scaling the 
+planet-star separation by the stellar radius.</td>
+          </tr>
+           <tr class="column" id="tce_teq">
+            <td class="name">tce_eqt</td>
+            <td class="uncertainty">tce_eqt_err</td>
+            <td class="label">tce_eqt_str</td>
+            <td class="label">Equilibrium Temperature (K)</td>
+<td class="description">
+Approximation for the temperature of the planet. 
+The calculation of equilibrium temperature assumes 
+i) thermodynamic equilibrium between the incident stellar flux and the radiated heat from the planet, 
+ii) a Bond albedo (the fraction of total power incident upon the planet scattered back into space) of 0.3, 
+iii)that the planet and star are blackbodies, and 
+iv) that the heat is evenly distributed between the day and night sides of the planet. </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <br />
+      <a name="stellar_param"></a>
+      <h2>Stellar Parameters</h2>
+      <p>Best-fit planetary transit parameters are typically normalized to the
+        size of the host star. Physical planet parameters may be derived by
+        scaling to the star's size and temperature. Transit parameters also depend weakly upon the limb
+        darkening coefficients which are derived from the stellar parameters (e.g., <a
+href="http://adsabs.harvard.edu/abs/2011A%26A...529A..75C" target="_blank">Claret and
+        Bloemen 2011)</a>. Stellar effective temperature, surface gravity, metallicity, radius, mass, and age should comprise a consistent set. 
+        Associated error estimates are 1-&sigma; uncertainties. </p>
+     
+  <table border="1" cellpadding="1" cellspacing="3" width="642">
+            <tbody>
+              <tr>
+                <th scope="col">Database Column Name</th>
+                <th scope="col"> Uncertainties Column<br />
+                  (positive +)<br />
+                  (negative -)</th>
+                <th scope="col">Displayed String Name</th>
+                <th scope="col">Table Label</th>
+                <th scope="col">Description</th>
+              </tr>
+               <tr class="column" id="tce_nkoi">
+                <td class="name">tce_nkoi</td>
+                <td class="uncertainty">&nbsp;</td>
+                <td class="label">&nbsp;</td>
+                <td class="label">Number of Associated KOIs</td>
+<td class="description">
+The total number of TCEs detected on this target by DV during 
+the specified run. This should not be confused with the planet 
+number, which is used to denote different TCEs on the same target.</td>
+              </tr>
+               <tr class="column" id="tce_quarters">
+                <td class="name">tce_quarters</td>
+                <td class="uncertainty">&nbsp;</td>
+                <td class="label">&nbsp;</td>
+                <td class="label">Quarters Observed</td>
+<td class="description">
+A string of zeroes and ones indicating which quarters contain 
+data searched by TPS for transits. The left-most bit represents 
+quarter 1 and the quarters increase to the right. A target that 
+is not observed in season 2, but is observed during all other 
+seasons for 16 quarters, will have the following string: <code>11101110111011100000</code>.</td>
+              </tr>
+               <tr class="column" id="tce_steff">
+                <td class="name">tce_steff</td>
+                <td class="uncertainty">tce_steff_err </td>
+                <td class="label">tce_steff_str</td>
+                <td class="label">Stellar Effective Temperature (K)</td>
+<td class="description">
+The photospheric temperature of the star.</td>
+              </tr>
+               <tr class="column" id="tce_slogg">
+                <td class="name">tce_slogg</td>
+                <td class="uncertainty">tce_slogg_err</td>
+                <td class="label">tce_slogg_str</td>
+                <td class="label">Stellar Surface Gravity (log<sub>10</sub>(cm s<sup>-2</sup>)</td>
+<td class="description">
+The base-10 logarithm of the acceleration due 
+to gravity at the surface of the star.</td>
+              </tr>
+               <tr class="column" id="tce_smet">
+                <td class="name">tce_smet</td>
+                <td class="uncertainty">tce_smet_err </td>
+                <td class="label">tce_smet_str</td>
+                <td class="label">Stellar Metallicity (dex)</td>
+<td class="description">
+The base-10 logarithm of the Fe to H ratio at the surface 
+of the star, normalized by the solar Fe to H ratio. </td>
+              </tr>
+               <tr class="column" id="tce_sradius">
+                <td class="name">tce_sradius</td>
+                <td class="uncertainty">tce_sradius_err</td>
+                <td class="label">tce_sradius_str</td>
+                <td class="label">Stellar Radius (solar radii)</td>
+<td class="description">
+The photospheric radius of the star. </td>
+              </tr>
+              
+               <tr class="column" id="tce_steff_prov">
+                <td height="300"><a name="prov_flags"></a>tce_steff_prov</td>
+                <td class="uncertainty">&nbsp;</td>
+                <td class="label">&nbsp;</td>
+                <td class="label">Stellar Effective Temperature Provenance</td>
+<td class="description" rowspan="3">
+A flag describing the source of the stellar effective temperature, surface gravity and metallicity.
+ <ul>
+ <li><b>KIC</b> = the parameters are extracted from the Kepler Input Catalog (<a href="http://adsabs.harvard.edu/abs/2011AJ....142..112B" target="_blank">Brown et al. 2011</a>). Uncertainties of Teff = 200 K, log(g) = 0.3 dex and [Fe/H] = 0.4.</li>
+                    <br />
+<li><b>J-K</b> = the star is unclassified in the KIC, J-K has been used to estimate temperature. The host star is assumed to be on the ZAMS with corresponding log(g) based on the Schmidt-Kaler relation.</li>
+                    <br />
+<li><b>Pinsonneault</b> = uses a revised T<sub>eff</sub> scale from <a href="http://adsabs.harvard.edu/abs/2012ApJS..199...30P" target="_blank">Pinsonneault et al. (2012)</a> with [Fe/H] fixed at -0.2. The quantity log(g) is taken from the KIC. Values are then revised by fitting to Yonsei-Yale stellar evolution models (<a href="http://adsabs.harvard.edu/abs/2001ApJS..136..417Y" target="_blank">Yi et al. 2001)</a>.</li>
+                    <br />
+<li><strong>SPE</strong> = Spectroscopy</li>
+                    <br />
+<li><strong>PHO</strong> = Photometry</li>
+                    <br />
+<li><strong>TRA</strong> = Transits or Eclipsing Binaries</li>
+                    <br />
+<li><strong>AST</strong> = Asteroseismology</li>
+                    <br />
+<li><strong>Solar</strong> = No physical parameters are known for this object and so the pipeline used Solar values. These values were used directly without fitting.</li>
+                  </ul>
+<p><hide>If the letter code is trailed by a number, the number corresponds to a specific paper. That list is available <a href="/docs/prov_papers.html">here</a></hide>.</p></td>
+              </tr>
+               <tr class="column" id="tce_slogg_prov">
+                <td class="name">tce_slogg_prov</td>
+                <td class="uncertainty">&nbsp;</td>
+                <td class="label">&nbsp;</td>
+                <td class="label">Stellar Surface Gravity Provenance</td>
+              </tr>
+               <tr class="column" id="tce_smet_prov">
+                <td class="name">tce_smet_prov</td>
+                <td class="uncertainty">&nbsp;</td>
+                <td class="label">&nbsp;</td>
+                <td class="label">Stellar Metallicity Provenance</td>
+              </tr>
+                <tr class="column" id="tce_sradius_prov">
+               <td class="name">tce_sradius_prov </td>
+                <td class="uncertainty">&nbsp;</td>
+                <td class="label">&nbsp;</td>
+                <td class="label">Stellar Radius Provenance</td>
+<td class="description">
+The internal parameters (R, M, rho) codes:<br />
+                <ul>
+<li><strong>DSEP</strong> = Based on Dartmouth Stellar Evolution Program. DSEP given without a reference number corresponds to values derived with the model grid presented in Huber et al. 2013.</li>
+                  <br />
+<li><strong>MULT</strong> = Based on multiple evolutionary tracks/isochrones, including DSEP</li></ul>
+
+<p>If the letter code is trailed by a number, the number corresponds to a specific paper. <hide>That list is available <a href="/docs/prov_papers.html">here</a>.</hide></p></td>
+              </tr>  
+            </tbody>
+          </table>
+
+      <br />
+      <br />
+      <br />
+      <a name="lc_koi_vet_stats"></a>
+      <h2>Light Curve-Based KOI Vetting Statistics</h2>
+      <p>The <a href="http://archive.stsci.edu/kepler/manuals/KSCI-19081-001_Data_Processing_Handbook.pdf" target="_blank">Transiting Planet Search (TPS) module</a> of the Kepler data analysis pipeline performs a detection test for planet transits in the multi-quarter, gap-filled flux time series. The TPS module 
+        detrends each quarterly PDC light curve to remove edge effects around data gaps and then combines the data segments together, filling gaps with 
+        interpolated data so as to condition the flux time series for a matched filter. The module applies an adaptive, wavelet-based matched filter 
+        (<a href="http://adsabs.harvard.edu/abs/2002ApJ...575..493J" target="_blank">Jenkins 2002</a>, <a href="http://adsabs.harvard.edu/abs/2010ApJ...713L..87J" target="_blank">Jenkins 
+        et al. 2010</a> and <a href="http://adsabs.harvard.edu/abs/2012ApJS..199...24T" target="_blank">Tenenbaum et al. (2012)</a>) to perform a joint characterization 
+        of observation noise and detection of transit-like features in the light curve.</p>
+      <p>The TPS module estimates the Power Spectral Density of the
+        flux time series as a function in time. This provides coefficients for a
+        whitening filter to accommodate non-stationary, non-white noise and yields
+        Single Event Statistic (SES) time series components. These can be interpreted as
+        measurements of the statistical significance of the presence of a transit
+        of trial duration at each point in the time series.</p>
+      <p>Single Event Statistics are folded at each trial orbital period and the maximum
+        Multiple Event Statistic (MES) is obtained over all trial periods and phases. The MES estimates the signal to
+        noise ratio of the putative transit-like sequence against the measurement
+        noise. The MES threshold for defining the sample of <a href="http://adsabs.harvard.edu/abs/2012ApJS..199...24T" target="_blank">Threshold-Crossing Events (TCEs)</a> is
+        provided within the Release Notes. For reference, a lower MES threshold of 7.1&sigma; limits the number of false positives in the TCE sample due to statistical random noise to
+        less than 1 over the primary mission (<a href="http://adsabs.harvard.edu/abs/2002ApJ...564..495J" target="_blank">Jenkins, Caldwell and Borucki 2002</a>).</p>
+      <table border="1" cellpadding="1" cellspacing="3" width="642">
+        <tbody>
+          <tr>
+            <th scope="col">Database Column Name</th>
+            <th scope="col">Table Label</th>
+            <th scope="col">Description</th>
+          </tr>
+           <tr class="column" id="tce_max_sngle_ev">
+            <td class="name">tce_max_sngle_ev</td>
+            <td class="label"><a name="ses"></a>Single Event Statistic</td>
+            <td class="description">The maximum calculated value of the SES. Maximum SES statistics for different TCEs from the 
+              same target differ because the most significant TCE is removed from the time 
+              series before repeating the test for further, weaker transit signals. </td>
+          </tr>
+           <tr class="column" id="tce_max_mult_ev">
+            <td class="name">tce_max_mult_ev</td>
+            <td class="label">Multiple Event Statistic (MES)</td>
+<td class="description">
+The maximum calculated value of the MES. TCEs that meet the maximum MES threshold 
+criterion and other criteria listed in the TCE release notes are delivered to the 
+<a href="http://archive.stsci.edu/kepler/manuals/KSCI-19081-001_Data_Processing_Handbook.pdf" target="_blank">Data Validation (DV) module</a> of the Kepler data analysis pipeline for transit 
+characterization and the calculation of statistics required for disposition. 
+A TCE exceeding the maximum MES threshold are removed from the time-series data 
+and the SES and MES statistics recalculated. If a second TCE exceeds the maximum 
+MES threshold then it is also propagated through the DV module and the cycle is 
+iterated until no more events exceed the criteria. Candidate multi-planet systems 
+are thus found this way. Users of the TCE table can exploit the maximum MES 
+statistic to help filter and sort samples of TCEs for the purposes of discerning 
+the event quality, determining the likelihood of planet candidacy, or assessing 
+the risks of observational follow-up. </td>
+                        </tr>
+           <tr class="column" id="tce_minmes">
+            <td class="name">tce_minmes</td>
+            <td class="label">Minimum MES</td>
+<td class="description">&nbsp;</td>
+          </tr>
+           <tr class="column" id="tce_mesmad">
+            <td class="name">tce_mesmad</td>
+            <td class="label">Median Absolute Deviation (MAD) MES</td>
+<td class="description">&nbsp;</td>
+          </tr>
+           <tr class="column" id="tce_bin_oedp_sig">
+            <td class="name">tce_bin_oedp_sig </td>
+            <td class="label">Odd-Even Depth Comparison Statistic</td>
+<td class="description">
+A transit model is fit independently to the even-numbered transits 
+and the odd-numbered transits. The depth of the fit to 
+even-numbered transits is compared to that of the odd-numbered transits. 
+A statistically significant difference in the transit depths is an 
+indication of a planetary candidate false positive, due either to a 
+background binary contaminant in the light curve or a binary star 
+system displaying a grazing eclipse. The odd-even depth statistic 
+is a number by which the depths of the odd transit and even transit 
+fits deviate. The larger the statistic, the more likely the event is 
+an astrophysical false positive. The odd-even diagnostic is only 
+useful for identifying circular or near-circular binary stars. The 
+TCE table provides the statistic by a percentage likelihood of depth 
+mis-match, whereas the KOI table provides the statistic in terms of 
+the number of &sigma; deviating from equal depth. </td>
+          </tr>
+           <tr class="column" id="tce_rmesmad">
+            <td class="name">tce_rmesmad</td>
+            <td class="label">Calculated Ratio MES over MAD MES</td>
+<td class="description">&nbsp;</td>
+          </tr>
+           <tr class="column" id="tce_rsnrmes">
+            <td class="name">tce_rsnrmes</td>
+            <td class="label">Calculated Ratio SNR over MES</td>
+<td class="description">&nbsp;</td>
+          </tr>
+           <tr class="column" id="tce_rminmes">
+            <td class="name">tce_rminmes</td>
+            <td class="label">Calculated Ratio Min. MES over MES</td>
+ <td class="description">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <br />
+      <a name="pixel_koi_vet_stats"></a>
+      <h2>Pixel-Based KOI Vetting Statisics</h2>
+      <p>Planetary transit false positives are commonly caused by <a
+href="http://keplerscience.arc.nasa.gov/PyKEprimerWalkthroughA.shtml" target="_blank">light
+        curve contamination</a> from an eclipsing binary falling partially
+        within the target aperture (i.e., the pixels used to collect and sum target flux). 
+        Two pixel analysis methods are used to identify such eclipsing binaries:
+        flux-weighted centroiding, which measures how the center of light in the collected pixels
+        changes during a transit,
+        and PRF-fit difference images, which localize the source of the transit signal. Both methods provide an estimate of the location of the source of the transit signal. When that source location is offset from the target star by more than 3-&sigma;, it is likely that the transit signal is due to a background source (note the caveats due to crowding described below).
+        These analysis techniques use pixel-level data, available in the <a href="http://keplerscience.arc.nasa.gov/DataAnalysisTargetPixels.shtml" target="_blank">Target Pixel Files (TPFs)</a>.  The resulting position measurements
+        are compared with the <a href="http://archive.stsci.edu/kepler/kepler_fov/search.php" target="_blank">Kepler Input Catalog</a> (KIC) (<a href="http://adsabs.harvard.edu/abs/2011AJ....142..112B" target="_blank">Brown et al. 2011</a>).</p>
+      <p>In flux-weighted centroid analysis, when more than one source is present within a pixel aperture, either fully or partially, then the combined center of light within the collected pixels will occur between the locations of the sources. When the
+        flux from either the target or one of the nearby contaminants varies in a transit or eclipse, then the combined center of light within the aperture will move across the focal plane. This motion is called a centroid shift. The location of the varying source can often be inferred from the centroid shift. The size and direction of the centroid shift is measured using the flux-weighted (FW) mean, (e.g., the first moment of the pixel data). This mean is computed with every flux measurement (30-minute long cadence),
+        creating a time series of flux-weighted means. The centroid shift is measured by comparing portions of the 
+        flux-weighted mean time series that are Out-Of-Transit (OOT) with
+        portions that are In-Transit (IT). The flux-weighted shift of the IT mean from the OOT mean is given as Right Ascension and Declination shifts.
+        The offset of the transiting source object from the OOT flux-weighted mean is computed by taking the product of the FW shift and the factor [1 - 1 / (fractional transit depth)]. The <a href="#FWsourceA">Right Ascension, &alpha; (J2000)</a>, and <a href="#FWsourceD">Declination, &delta; (J2000)</a>, of the transiting object calculated in this way are reported in the table. The &alpha; and &delta; offsets of the resulting source location from the KIC target star position are also reported. The uncertainties and significance of the FW shifts and offsets are provided but do not reflect systematics caused by crowding.  The flux-weighted method can be very accurate when the target star is well isolated and the transit source is located (well) within the flux aperture associated with the target star.</p>
+      <p>The PRF-fit difference image method uses three images: i)
+        an average of Out-Of-Transit (OOT) Target Pixel File images
+        from data that were obtained near but not during transit events, ii) an average of In-Transit
+        (IT) image Target Pixel File images that were collected
+        during transit events, and iii) a Difference Image (DIFF) that is the
+        difference between the Out-Of-Transit and
+        In-Transit average images. The difference image provides an image of the
+        transit source (neglecting variability of field stars). The Pixel Response Function (PRF) is a convolution of the Kepler Point Spread Function model with a model of typical 
+        spacecraft pointing jitter, providing a system point spread function (<a
+href="http://adsabs.harvard.edu/abs/2010ApJ...713L..97B" target="_blank">Bryson
+        et al. 2010)</a>.  The PRF is
+        fit separately to the OOT and DIFF images, providing a measured location of the target star 
+        (fit to the OOT image) and a measured location of the transit source (fit to the DIFF image). 
+        The offset of the transit source location from the target star is given in the table as 
+        Right Ascension and Declination offsets (&Delta;&alpha;,&Delta;&delta;) as well as magnitude (sky offset &Delta;&theta;).</p>
+      <p> PRF offsets can only be computed on a per-quarter basis.  Quarterly results are combined 
+        using two methods. i) Single Quarter (SQ) images and centroids are calculated for each individual quarter. The quarterly centroid offsets are then combined by weighted mean. 
+        ii) PRFs are simultaneously fit across multiple quarters (MQ). The MQ method is computationally expensive and only performed for very low SNR targets.</p>
+      <p>The target position measured by the PRF fit to the OOT images is vulnerable to crowding. Therefore an alternative PRF offset of the transit source (measured by the PRF 
+        fit to the DIFF image) from the KIC position of the target star is provided. Both the flux-weighted and PRF-fit methods will have systematic errors due to crowding when other 
+        stars appear in the aperture's pixels, though these error are smaller for the PRF-fit method compared to the flux-weighted method.</p>
+      <p>The associated error estimates are 1-&sigma; uncertainties. </p>
+      <table border="1" cellpadding="1" cellspacing="3" width="792">
+        <tbody>
+          <tr>
+            <th width="101" scope="col">Database Column Name</th>
+            <th width="132" scope="col"> Uncertainties Column<br />
+              (positive +)<br />
+              (negative -)</th>
+            <th width="143" scope="col">Displayed String Name</th>
+            <th width="143" scope="col">Table Label</th>
+            <th width="233" scope="col">Description</th>
+          </tr>
+           <tr class="column" id="tce_fwm_sra">
+            <td class="name">tce_fwm_sra</td>
+            <td class="uncertainty">tce_fwm_sra_err</td>
+            <td class="label">tce_fwm_sra_str</td>
+            <td class="label">FW Source &alpha;(OOT) (hours) </td>
+<td class="description">
+The Right Ascension (J2000) of the location of the transiting object 
+calculated from the flux-weighted centroids. This result does not 
+reflect the systematics due to crowding which can introduce significant 
+errors in the calculated position</td>
+          </tr>
+           <tr class="column" id="tce_fwm_sdec">
+            <td class="name">tce_fwm_sdec</td>
+            <td class="uncertainty">tce_fwm_sdec_err</td>
+            <td class="label">tce_fwm_sdec_str</td>
+            <td class="label">FW Source &delta;(OOT) (degrees) </td>
+<td class="description">
+The Declination (J2000) of the location of the transiting object 
+calculated from the flux-weighted centroids. This result does not 
+reflect the systematics due to crowding which can introduce 
+significant errors in the calculated position.</td>
+          </tr>
+           <tr class="column" id="tce_fwm_srao">
+            <td class="name"> tce_fwm_srao</td>
+            <td class="uncertainty">tce_fwm_srao_err</td>
+            <td class="label">tce_fwm_srao_str</td>
+            <td class="label">FW &Delta;&alpha;(OOT)(seconds (not arcseconds))</td>
+<td class="description">
+The RA (J2000) flux-weighted centroid shift. 
+This is the RA of the in-transit flux weighted 
+centroid minus the RA of the out-of-transit 
+flux weighted centroid.</td>
+          </tr>
+           <tr class="column" id="tce_fwm_sdeco">
+            <td class="name">tce_fwm_sdeco</td>
+            <td class="uncertainty">tce_fwm_sdeco_err</td>
+            <td class="label">tce_fwm_sdeco_str</td>
+            <td class="label">FW &Delta;&delta;(OOT)(arcseconds) </td>
+<td class="description">
+The Dec (J2000) flux-weighted centroid shift. 
+This is the Dec of the in-transit flux weighted centroid 
+minus the Dec of the out-of-transit flux weighted centroid.</td>
+          </tr>
+           <tr class="column" id="tce_fwm_prao">
+            <td class="name">tce_fwm_prao</td>
+            <td class="uncertainty">tce_fwm_prao_err</td>
+            <td class="label">tce_fwm_prao_str</td>
+            <td class="label">FW Source &Delta;&alpha;(OOT) (seconds (not arcseconds))</td>
+<td class="description">
+The calculated Right Ascension offset of the transiting or 
+eclipsing object from the KIC location of the target star. 
+The accuracy of this calculation degrades when the transit 
+source has significant flux that falls outside the 
+photometric aperture + a halo of pixels around it.</td>
+          </tr>
+           <tr class="column" id="tce_fwm_pdeco">
+            <td class="name">tce_fwm_pdeco</td>
+            <td class="uncertainty">tce_fwm_pdeco_err</td>
+            <td class="label">tce_fwm_pdeco_str</td>
+            <td class="label">FW Source &Delta;&delta;(OOT) (arcseconds)</td>
+<td class="description">
+The calculated Declination offset of the transiting or eclipsing 
+object from the KIC location of the target star. The accuracy of 
+this calculation degrades when the transit source has significant 
+flux that falls outside the photometric aperture + a halo of 
+pixels around it.</td>
+          </tr>
+           <tr class="column" id="tce_fwm_stat">
+            <td class="name">tce_fwm_stat</td>
+            <td class="uncertainty">&nbsp;</td>
+            <td class="label">&nbsp;</td>
+            <td class="label">Flux-Weighted Offset Significance (percent)</td>
+<td class="description">
+Indicates whether there is a statistically significant 
+flux-weighted offset between in-transit and out-of-transit images. 
+100% indicates there is no offset and there is confidence that 
+the transit is on the target star. The accuracy of this calculation 
+degrades when the transit source has significant flux that falls 
+outside the photometric aperture + a halo of pixels around it.</td>
+          </tr>
+           <tr class="column" id="tce_dicco_fra">
+            <td class="name">tce_dicco_fra</td>
+            <td class="uncertainty">tce_dicco_fra_err </td>
+            <td class="label">&nbsp;</td>
+            <td class="label">PRF &Delta;&alpha;<sub>SQ</sub>(OOT) (arcseconds)</td>
+<td class="description">
+The angular offset in the RA (J2000) direction between the 
+best-fit PRF centroids from the Out-Of-Transit image and the 
+Difference Image by averaging the weighted single-quarter 
+measurements. The out-of-transit centroids are subtracted 
+from the difference image centroids.</td>
+          </tr>
+           <tr class="column" id="tce_dicco_fdec">
+            <td class="name">tce_dicco_fdec</td>
+            <td class="uncertainty">tce_dicco_fdec_err</td>
+            <td class="label">tce_dicco_fra_str</td>
+            <td class="label">PRF &Delta;&delta;<sub>SQ</sub>(OOT) (arcseconds)</td>
+<td class="description">
+The angular offset in the Dec (J2000) direction between the 
+best-fit PRF centroids from the Out-Of-Transit image and the 
+Difference Image by averaging the weighted single-quarter 
+measurements. The out-of-transit centroids are subtracted 
+from the difference image centroids. </td>
+          </tr>
+           <tr class="column" id="tce_dicco_fsky">
+            <td class="name">tce_dicco_fsky</td>
+            <td class="uncertainty">tce_dicco_fsky_err</td>
+            <td class="label">tce_dicco_fsky_str</td>
+            <td class="label">PRF &Delta;&theta;<sub>SQ</sub>(OOT) (arcseconds)</td>
+<td class="description">
+The angular offset on the plane of the sky between the best-fit PRF 
+centroids from the Out-Of-Transit image and the Difference Image 
+by averaging the weighted single-quarter measurements. The out-of-transit 
+centroids are subtracted from the difference image centroids.</td>
+          </tr>
+           <tr class="column" id="tce_dicco_mra">
+            <td class="name">tce_dicco_mra</td>
+            <td class="uncertainty">tce_dicco_mra_err</td>
+            <td class="label">tce_dicco_mra_str</td>
+            <td class="label">PRF &Delta;&alpha;<sub>MQ</sub>(OOT) (arcseconds)</td>
+ <td class="description">
+ The angular offset in the RA (J2000) direction between the best-fit PRF 
+ centroids from the Out-Of-Transit image and the Difference Image by 
+ simultaneously fitting all quarters.  The out-of-transit centroid is 
+ subtracted from the difference image centroid.</td>
+           </tr>
+           <tr class="column" id="tce_dicco_mdec">
+            <td class="name">tce_dicco_mdec</td>
+            <td class="uncertainty">tce_dicco_mdec_err</td>
+            <td class="label">tce_dicco_mdec_str</td>
+            <td class="label">PRF &Delta;&delta;<sub>MQ</sub>(OOT) (arcseconds)</td>
+ <td class="description">
+ The angular offset in the Dec (J2000) direction between the best-fit PRF 
+ centroids from the Out-Of-Transit image and the Difference Image by 
+ simultaneously fitting all quarters. The out-of-transit centroid is 
+ subtracted from the difference image centroid. </td>
+          </tr>
+           <tr class="column" id="tce_dicco_msky">
+            <td class="name">tce_dicco_msky</td>
+            <td class="uncertainty">tce_dicco_msky_err </td>
+            <td class="label">tce_dicco_msky_str</td>
+            <td class="label">PRF &Delta;&theta;<sub>MQ</sub>(OOT) (arcseconds)</td>
+<td class="description">
+The angular offset on the plane of the sky between the best-fit PRF centroids 
+from the Out-Of-Transit image and the Difference Image by simultaneously 
+fitting all quarters. The out-of-transit centroid is subtracted from the 
+difference image centroid. </td>
+          </tr>
+           <tr class="column" id="tce_dikco_fra">
+            <td class="name">tce_dikco_fra</td>
+            <td class="uncertainty">tce_dikco_fra_err</td>
+            <td class="label">tce_dikco_fra_str</td>
+            <td class="label">PRF &Delta;&alpha;<sub>SQ</sub>(KIC) (arcseconds)</td>
+<td class="description">
+The angular offset in the RA (J2000) direction between the best-fit PRF centroids 
+from the difference image and the <a href="http://archive.stsci.edu/kepler/kepler_fov/search.php" target="_blank">Kepler Input Catalog</a> position by averaging 
+the weighted single-quarter measurements. The KIC position is subtracted from the 
+difference image centroids. </td>
+          </tr>
+           <tr class="column" id="tce_dikco_fdec">
+            <td class="name">tce_dikco_fdec</td>
+            <td class="uncertainty">tce_dikco_fdec_err</td>
+            <td class="label">tce_dikco_fdec_str</td>
+            <td class="label">PRF &Delta;&delta;<sub>SQ</sub>(KIC) (arcseconds)</td>
+<td class="description">
+The angular offset in the Dec (J2000) direction between the best-fit PRF centroids 
+from the difference image and the <a href="http://archive.stsci.edu/kepler/kepler_fov/search.php" target="_blank">Kepler Input Catalog</a> position by averaging 
+the weighted single-quarter measurements. The KIC position is subtracted from the 
+difference image centroids. </td>
+          </tr>
+           <tr class="column" id="tce_dikco_fsky">
+            <td class="name">tce_dikco_fsky</td>
+            <td class="uncertainty">tce_dikco_fsky_err</td>
+            <td class="label">tce_dikco_fsky_str</td>
+            <td class="label">PRF &Delta;&theta;<sub>SQ</sub>(KIC) (arcseconds)</td>
+<td class="description">
+The angular offset in the plane of the sky between the best-fit PRF centroids 
+from the difference image and the <a href="http://archive.stsci.edu/kepler/kepler_fov/search.php" target="_blank">Kepler Input Catalog</a> position by averaging 
+the weighted single-quarter measurements. The KIC position is subtracted from the 
+difference image centroids. </td>
+          </tr>
+           <tr class="column" id="tce_dikco_mra">
+            <td class="name"> tce_dikco_mra</td>
+            <td class="uncertainty"> tce_dikco_mra_err</td>
+            <td class="label">tce_dikco_mra_str</td>
+            <td class="label">PRF &Delta;&alpha;<sub>MQ</sub>(KIC) (arcseconds)</td>
+<td class="description">
+The angular offset in the RA (J2000) direction between the best-fit PRF centroids 
+from the difference image and the <a href="http://archive.stsci.edu/kepler/kepler_fov/search.php" target="_blank">Kepler Input Catalog</a> position by 
+simultaneously fitting all quarters. The KIC position is subtracted from the 
+difference image centroid. </td>
+          </tr>
+           <tr class="column" id="tce_dikco_mdec">
+            <td class="name">tce_dikco_mdec</td>
+            <td class="uncertainty">tce_dikco_mdec_err</td>
+            <td class="label">tce_dikco_mdec_str</td>
+            <td class="label">PRF &Delta;&delta;<sub>MQ</sub>(KIC) (arcseconds)</td>
+ <td class="description">
+The angular offset in the Dec (J2000) direction between the best-fit PRF centroids 
+from the difference image and the <a href="http://archive.stsci.edu/kepler/kepler_fov/search.php" target="_blank">Kepler Input Catalog</a> position by 
+simultaneously fitting all quarters. The KIC position is subtracted from the 
+difference image centroid. </td>
+          </tr>
+           <tr class="column" id="tce_dikco_msky">
+            <td class="name">tce_dikco_msky</td>
+            <td class="uncertainty">tce_dikco_msky_err </td>
+            <td class="label">tce_dikco_mky_str</td>
+            <td class="label">PRF &Delta;&theta;<sub>MQ</sub>(KIC) (arcseconds)</td>
+<td class="description">
+The angular offset on the plane of the sky between the best-fit PRF centroids 
+from the difference image and the <a href="http://archive.stsci.edu/kepler/kepler_fov/search.php" target="_blank">Kepler Input Catalog</a> position by 
+simultaneously fitting all quarters. The KIC position is subtracted from the 
+difference image centroid. </td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <br />
+      <br />
+      <p> Last updated: 10 July 2014 </p>
+    </div>
+    <!-- end #docs--> 
+    
+<div class="tbox">
+  <p><a href="http://www.nasa.gov" title="National Aeronautics and Space Administration">
+        <img src="/images/logos/NASA_small.jpg" alt="NASA" width="87" height="75"/></a>
+
+    <a href="http://www.ipac.caltech.edu" title="Infrared Processing and Analysis Center">
+        <img src="/images/logos/IPAC_small.jpg" alt="IPAC" width="139" height="75" /></a>
+    <a href="http://nexsci.caltech.edu" title="NASA Exoplanet Science Institute">
+        <img src="/images/logos/logo_nexsci.gif" alt="NExScI" /></a>
+     <a href="http://www.caltech.edu" title="California Institute of Technology">
+        <img src="/images/logos/Caltech_LOGO-Orange_PMS165.jpg" alt="Caltech" width="25%" /></a></p>
+
+</div> <!-- end tbox div -->
+
+
+<div class="hbox">
+         <div class="home_box">
+           <a href="/index.html">Home</a>
+         </div>
+       
+         <div class="archive_box" onmouseout="jQuery(this).children('ul').hide()" onmouseover="jQuery(this).children('ul').show()">
+           <a href="/docs/about.html">About the Archive</a>
+         </div>
+       
+         <div class="data_box" onmouseout="jQuery(this).children('ul').hide()" onmouseover="jQuery(this).children('ul').show()">
+           <a href="/docs/data.html">Data</a>
+          </div>
+       
+         <div class="tool_box" onmouseout="jQuery(this).children('ul').hide()" onmouseover="jQuery(this).children('ul').show()">
+           <a href="/docs/tools.html">Tools</a>
+          </div>
+       
+         <div class="help_box" onmouseout="jQuery(this).children('ul').hide()" onmouseover="jQuery(this).children('ul').show()">
+           <a href="/docs/help.html">User Guides &amp; Helpdesk</a>
+         </div>
+           
+         <div class="clear"></div>
+</div> <!-- end hbox -->
+
+ 
+    
+  </div>
+  <!-- end b2box --> 
+</div>
+<!-- end bbox -->
+</body>
+</html>

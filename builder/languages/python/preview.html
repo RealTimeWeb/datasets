@@ -1,0 +1,12 @@
+<div class="media col-md-4 col-md-offset-1">
+  <!--<div class="media-left">
+      <img class="media-object" src="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.png" alt="{{ metadata.name }}">
+  </div>-->
+  <div class="media-body">
+    <a href="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.html">
+    <h4 class="media-heading">{{ metadata.name }}</h4>
+    </a>
+    {{ metadata.description.overview[:250] }}<br>
+    <i>{{ metadata.tags|join(", ") }}</i>
+  </div>
+</div>
