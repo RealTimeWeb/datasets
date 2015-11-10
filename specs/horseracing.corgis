@@ -1,0 +1,20 @@
+metadata:
+    version: 1
+    name: Horse Racing
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/10/2015
+    tags: [churchill downs, horses, equines, racing, horse racing, gambling]
+    description:
+        overview: >
+            Data about horse races at Churchill Downs
+local:
+  - file: horseracing.json
+    name: races
+interfaces:
+  - name: get races
+    returns: list[race]
+    description: Returns information about all the races
+    production:
+        sql: SELECT data FROM races
+        post: json()
