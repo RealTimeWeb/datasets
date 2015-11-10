@@ -1,13 +1,13 @@
 metadata:
     version: 1
     name: Broadway
-    builder: 2
+    builder: 3
     author: Austin Cory Bart <acbart@vt.edu>
     datetime: 11/1/2015
     tags: [broadway, musical, theatre, tickets]
     description:
         overview: >
-            This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry).
+            This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry). You can view the data online at http://www.broadwayleague.com/.
 local:
   - file: broadway.json
     name: broadway
