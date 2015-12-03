@@ -8,6 +8,25 @@ metadata:
     description:
         overview: >
             United States Government reports on consumption, production, import, and export of various fuel sources.
+structures:
+  - name: report
+    fields:
+      - name: data
+        type: data
+        role: value
+      - name: year
+        type: int
+        role: key
+  - name: data
+    fields:
+      - name: imports
+        type: imports
+      - name: exports
+        type: exports
+      - name: production
+        type: production
+      - name: consumption
+        type: consumption
 local:
   - file: energy.json
     name: energy

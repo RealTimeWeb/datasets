@@ -1,0 +1,70 @@
+metadata:
+    version: 1
+    name: Weather
+    builder: Python
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 11/12/2015
+    tags: [weather, united states, climate, temperature]
+    description:
+        overview: 
+            The Weather library is all about some interesting weather data. The weather is collected from the US weather system, so it is only available for the United States.
+http:
+  - name: forecastgov
+    url: http://forecast.weather.gov/MapClick.php
+    args:
+      - name: lat
+        type: float
+        description: The latitude
+        form: query
+      - name: lon
+        type: float
+        description: The longitude
+        form: query
+      - name: result format
+        type: string
+        description: A hidden parameter that controls the result format.
+        default: '"json"'
+        form: query
+    verb: get
+    cache: timed(600)
+interfaces:
+  - name: get report
+    description: Gets a report on the current weather, forecast, and more detailed information about the location.
+    returns: report
+    production:
+        pre: geocode(city, lat, lon)
+        http: forecastgov
+    cache:
+      - '"Blacksburg, VA"'
+      - '"Newark, DE"'
+      - '"San Francisco, CA"'
+      - '"Miami, FL"'
+    args:
+      - name: city
+        type: string
+        description: The name of the city you want to get information about.
+        default: '"Blacksburg, VA"'
+        indexed: true
+  #- name: get_temperature
+  #  returns: int
+  #  test:
+  #      sql: SELECT temperature FROM weather WHERE city={city} ORDER BY date LIMIT 1
+  #      constraint:
+  #          test: SELECT COUNT(*)>=1 FROM weather WHERE city=?
+  #          failure: The given city was not in the cache.
+  #  prod:
+  #      api: forecast.gov
+  #      pre: geocode city > lat,lon
+  #      post: data.temperature[0]
+  #  args:
+  #    - name: city
+  #      type: location
+  #- name: get temperatures
+  #  returns: list[int]
+  #  test:
+  #      sql: SELECT temperature FROM weather WHERE city={city} ORDER BY date LIMIT {hardware}
+  #  prod:
+  #      api: forecast.gov
+  #      pre: geocode city > lat,lon
+  #      post: data.temperature
+    

@@ -14,6 +14,17 @@ local:
     indexes:
       - name: state
         jsonpath: state
+structures:
+  - name: score
+    fields:
+      - name: science
+        type: List[grade scale score]
+      - name: reading
+        type: List[grade scale score]
+      - name: math
+        type: List[grade scale score]
+      - name: writing
+        type: List[grade scale score]
 interfaces:
   - name: get state
     args:

@@ -8,4 +8,7 @@ Created on Tue Nov 10 14:26:48 2015
 import baseball
 
 
-a_player = baseball.get_player_by_name("cal ripken")
+list_of_players = baseball.get_players()
+
+for a_player in list_of_players:
+    pass

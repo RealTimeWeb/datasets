@@ -1,6 +1,8 @@
 Traceback (most recent call last):
-  File "C:\Users\acbart\Projects\datasets\builder\build.py", line 41, in build_dir
-    shutil.move(src, new_folder)
-  File "C:\Python27\lib\shutil.py", line 292, in move
-    raise Error, "Destination path '%s' already exists" % real_dst
-Error: Destination path '../datasets//python/baseball/baseball.db' already exists
+  File "C:\Users\acbart\Projects\datasets\builder\build.py", line 43, in build_dir
+    shutil.copy(src, new_folder)
+  File "C:\Python27\lib\shutil.py", line 119, in copy
+    copyfile(src, dst)
+  File "C:\Python27\lib\shutil.py", line 82, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: 'csv/publishers/publishers.csv'

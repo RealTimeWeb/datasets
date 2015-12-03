@@ -41,6 +41,7 @@ def build_dir(files, moves, prepend):
             if not os.path.isfile(src):
                 print 'Warning, file "{}" does not exist'.format(src)
             shutil.copy(src, new_folder)
+            os.remove(src)
     except Exception, e:
         error_log.append(traceback.format_exc())
     if error_log:

@@ -30,7 +30,7 @@ class PrintableObject(object):
         args = ", ".join(["{}={}".format(k,v) for k,v in vars(self).items()])
         return self.__class__.__name__ + "("+args+")"
 
-class Package(PrintableObject): pass    
+class Package(PrintableObject): pass
 class Metadata(PrintableObject): pass
 class Interface(PrintableObject): pass
 class Implementation(PrintableObject): pass
@@ -43,6 +43,7 @@ class Object(PrintableObject): pass
 class Field(PrintableObject): pass
 class Function(PrintableObject): pass
 class Input(PrintableObject): pass
+
 
 def de_identifier(name):
     name = name.replace("_", " ").replace("-", " ")
@@ -66,7 +67,6 @@ def parse_author(author):
         return author
 
 class Compiler(object):
-    
     def __init__(self, path, specification):
         self.specification = specification
         self.path = os.path.splitext(path)[0]+'/'
@@ -175,6 +175,8 @@ class Compiler(object):
         metadata.version = self.recommend_field("metadata", "version", raw, 1, int, "Assuming version is 1.")
         metadata.hardware = self.typecheck_field("metadata", "hardware", raw, 1000, int)
         metadata.description = self.recommend_field("metadata", "description", raw, {}, dict, "There will be no top-level documentation!")
+        if 'overview' not in metadata.description:
+            metadata.description['overview'] = ""
         if 'appendix' in raw:
             metadata.appendix = self.walk_list("metadata.appendix", "appendix", raw, self.walk_appendix)
         else:
@@ -223,14 +225,38 @@ class Compiler(object):
         
     def walk_objects(self, spec):
         self.walk_list("objects", "objects", spec, self.walk_object)
+    
+    def walk_http_arg(self, name, data, in_location):
+        argument = Argument()
+        location = "{}.{}".format(in_location, name)
+        if isinstance(data, dict):
+            argument.name = de_identifier(self.require_field(location, "name", data, "", str))
+            location = "{}.{}".format(in_location, clean_identifier(argument.name))
+            argument.type = self.require_field(location, "type", data, "str", str)
+            argument.description = self.recommend_field(location, "description", 
+                            data, "", str)
+            argument.form = self.recommend_field(location, "form", data, "query", str)
+            argument.default = self.typecheck_field(location, "default", data, "", str)
+        else:
+            self.type_error(location, dict, type(data))
+        return argument
         
-    def walk_http():
-        self.recommend_field(location, "indexed", "{}.indexed".format(location), 
-                        data, bool,
-                        not_found = "{}.indexed will default to true.".format(name))
-        self.recommend_field(location, "hidden", "{}.hidden".format(location), 
-                        data, bool,
-                        not_found = "{}.hidden will default to false.".format(name))
+    def walk_http(self, name, data, in_location):
+        http = HTTP()
+        location = "{}.{}".format(in_location, name)
+        if isinstance(data, dict):
+            http.name = de_identifier(self.require_field(location, "name", data, "", str))
+            location = "{}.{}".format(in_location, clean_identifier(http.name))
+            http.verb = self.require_field(location, "verb", data, "", str)
+            http.url = self.require_field(location, "url", data, "", str)
+            http.args = list(self.walk_list("{}.args".format(location), "args", data, self.walk_http_arg))
+            http.cached = self.typecheck_field(location, "cached", data, "none", str)
+        else:
+            self.type_error(location, dict, type(data))
+        return http
+                        
+    def walk_https(self, spec):
+        return list(self.walk_list("http", "http", spec, self.walk_http))
         
     def walk_index(self, name, data, in_location):
         index = Index()
@@ -270,13 +296,13 @@ class Compiler(object):
     def walk_locals(self, spec):
         return list(self.walk_list("local", "local", spec, self.walk_local))
     
-    def walk_arg(self, name, data, in_location):
+    def walk_interface_arg(self, name, data, in_location):
         location = "{}.{}".format(in_location, name)
         argument = Argument()
         if isinstance(data, dict):
             argument.name = self.require_field(location, "name", data, "", str)
             location = "{}.{}".format(in_location, clean_identifier(argument.name))
-            argument.type = self.require_field(location, "type", data, "", str)            
+            argument.type = self.require_field(location, "type", data, "", str)
             argument.default = self.recommend_field(location, "default", data, "", str)
             argument.matches = self.typecheck_field(location, "matches", data, "", str)
             argument.description = self.recommend_field(location, "description", 
@@ -308,8 +334,7 @@ class Compiler(object):
             interface.name = de_identifier(self.require_field(location, "name", data, "", str))
             location = "{}.{}".format(in_location, clean_identifier(interface.name))
             interface.returns = de_identifier(self.require_field(location, "returns", data, "", str))
-            interface.description = self.recommend_field(location, "description", 
-                            data, "", str)
+            interface.description = self.recommend_field(location, "description", data, "", str)
             # Implementations
             if "production" in data:
                 interface.production = self.walk_implementation("production", data["production"], location)
@@ -320,7 +345,8 @@ class Compiler(object):
             else:
                 interface.test = None
             # Arguments
-            interface.args = list(self.walk_list("{}.args".format(location), "args", data, self.walk_arg))
+            interface.args = list(self.walk_list("{}.args".format(location), "args", data, self.walk_interface_arg))
+            interface.cache = self.typecheck_field(location, "cache", data, [], list)
         else:
             self.type_error(location, dict, type(data))
         return interface
@@ -365,6 +391,9 @@ class Compiler(object):
             self.not_found_error("interfaces")
         
         # Interfaces
-        if "local" in spec:
-            self.package.locals = self.walk_locals(spec)
+        self.package.locals = self.walk_locals(spec)
+        if 'http' in spec:
+            self.package.https = self.walk_https(spec)
         
+        
+pass
