@@ -1,0 +1,38 @@
+metadata:
+    version: 1
+    name: Real Estate
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 2/23/2016
+    tags: [real, estate, buildings, government, building]
+    description:
+        overview: >
+            Real Estate Across the United States (REXUS) is the primary tool used by PBS to track and manage the government's real property assets and to store inventory data, building data, customer data, and lease information. STAR manages aspects of real property space management, including identification of all building space and daily management of 22,000 assignments for all property to its client Federal agencies. This data set contains PBS building inventory that consists of both owned and leased buildings with active and excess status.
+        citation: https://catalog.data.gov/dataset/real-estate-across-the-united-states-rexus-inventory-building
+local:
+  - file: real_estate.json
+    name: real_estate
+    indexes:
+      - name: state
+        jsonpath: location.address.state
+interfaces:
+  - name: get buildings
+    returns: list[building]
+    description: Returns a list of the buildings in the database.
+    production:
+        sql: SELECT data FROM real_estate
+        post: json()
+    test:
+        sql: SELECT data FROM real_estate LIMIT {hardware}
+        post: json()
+  - name: get buildings by state
+    returns: list[building]
+    description: Returns a list of the buildings in the database for a state.
+    args:
+      - name: state
+        type: str
+        description: The name of a state
+        matches: SELECT DISTINCT state FROM real_estate
+    production:
+        sql: SELECT data FROM real_estate WHERE state=?
+        post: json()

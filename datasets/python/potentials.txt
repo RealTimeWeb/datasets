@@ -1,0 +1,26 @@
+Airline
+Animal products
+Building construction
+Building permits
+New York Crime
+Officer Shootings
+Suicide attacks
+Disease
+University crime
+Food
+Redlights
+Aid
+Cancer
+Medal of honor
+Hydropower
+Hospitals
+Drug spending
+Injuries
+Energy use historic http://www.eia.gov/electricity/data/eia923/
+Religious groups: http://www.thearda.com/rcms2010/
+Youth risk http://www.cdc.gov/healthyyouth/data/yrbs/data.htm
+Foreign assistance
+mortgage
+state department per diem
+Flights
+http://dhresourcesforprojectbuilding.pbworks.com/w/page/69244469/Data%20Collections%20and%20Datasets

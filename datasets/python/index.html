@@ -19,6 +19,58 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <script src="../_lib/lunr.js"></script>
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        try {
+            $.post('https://localhost:5000/services/log', {
+                        'user_id': user_id,
+                        'event': 'corgis',
+                        'action': action,
+                        'body': body
+                    }, function(data) {
+                        console.log(data);
+                    });
+        } catch(err) {console.error(err)};
+    }
+    
+    var searcher = lunr(function() {
+        this.field('name', 10);
+        this.field('tags', 100);
+        this.field('body');
+        this.field('description');
+        
+        this.ref('name');
+    });
+    $(document).ready(function() {
+        $("#search-bar").on('input propertychange', function() {
+            var needle = $(this).val();
+            if (needle == "") {
+                $(".dataset-card").show();
+            } else {
+                var results = searcher.search(needle);
+                $(".dataset-card").hide();
+                results.forEach(function (data) {
+                    $("#"+data.ref).show();
+                });
+            }
+            log('search', needle);
+        });
+        log('load', 'index');
+        function doPoll(){
+            log('remain', 'index, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+    });
+    </script>
+    
 </head>
 
 <body>
@@ -32,54 +84,75 @@
         <span class="text-muted">By Austin Cory Bart, Eli Tilevich, Clifford A. Shaffer, Dennis Kafura</span><br>
     </div>
     
+    <div class='row'>
+    <div class='search-bar'>
+    <form class="form-horizontal">
+      <div class="form-group form-group-lg">
+        <label for="search-bar" class="col-sm-2 control-label">Filter</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="search-bar" placeholder="Keyword or phrase">
+        </div>
+      </div>
+    </form>
+    </div>
+    </div>
+    <hr>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="airports/airports.png" alt="Airports">
-  </div>-->
+    <div class="row">
+    
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="airports">
+  
+  <div class="media-left  media-middle">
+    <a target="_blank" href="airports/airports.html">
+      <img class="media-object" src="airports/airports.png" alt="Airports" style="width: 64px; height: 64px;">
+    </a>
+  </div>
+  
   <div class="media-body">
-    <a href="airports/airports.html">
+    <a target="_blank" href="airports/airports.html">
     <h4 class="media-heading">Airports</h4>
     </a>
-    This dataset is all about airports.
-Additional information, explaining the names of some of the fields, is available: <a href="http://www.faa.gov/airports/airport_safety/airportdata_5010/#datadictionaries">http://www.faa.gov/airports/airport_safety/a<br>
+    All about airports across the world, including features like runway length and geocoordinates.<br>
     <i>airplane, airports, travel, plane, air</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "airports",
+        'body': "This dataset is all about airports. Additional information, explaining the names of some of the fields, is available: http://www.faa.gov/airports/airport_safety/airportdata_5010/#datadictionaries",
+        'description': "All about airports across the world, including features like runway length and geocoordinates.",
+        'tags': ['airplane', 'airports', 'travel', 'plane', 'air']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="baseball/baseball.png" alt="Baseball">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="broadway">
+  
   <div class="media-body">
-    <a href="baseball/baseball.html">
-    <h4 class="media-heading">Baseball</h4>
-    </a>
-    This database contains pitching, hitting, and fielding statistics for Major League Baseball from 1871 through 2012. It includes data from the two current leagues (American and National), the four other major leagues (American Association, Union Assoc<br>
-    <i>baseball, sports</i>
-  </div>
-</div>
-    
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="broadway/broadway.png" alt="Broadway">
-  </div>-->
-  <div class="media-body">
-    <a href="broadway/broadway.html">
+    <a target="_blank" href="broadway/broadway.html">
     <h4 class="media-heading">Broadway</h4>
     </a>
-    This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry).
+    This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry). You can view the data online at http://www.broadwayleague.com/.
 <br>
     <i>broadway, musical, theatre, tickets</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "broadway",
+        'body': "This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry). You can view the data online at http://www.broadwayleague.com/.",
+        'description': "This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry). You can view the data online at http://www.broadwayleague.com/.",
+        'tags': ['broadway', 'musical', 'theatre', 'tickets']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="cars/cars.png" alt="Cars">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="cars">
+  
   <div class="media-body">
-    <a href="cars/cars.html">
+    <a target="_blank" href="cars/cars.html">
     <h4 class="media-heading">Cars</h4>
     </a>
     This is a dataset about cars.
@@ -87,13 +160,21 @@ Additional information, explaining the names of some of the fields, is available
     <i>cars, vehicles, fuel</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "cars",
+        'body': "This is a dataset about cars.",
+        'description': "This is a dataset about cars.",
+        'tags': ['cars', 'vehicles', 'fuel']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="drugbank/drugbank.png" alt="Drugbank">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="drugbank">
+  
   <div class="media-body">
-    <a href="drugbank/drugbank.html">
+    <a target="_blank" href="drugbank/drugbank.html">
     <h4 class="media-heading">Drugbank</h4>
     </a>
     The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.
@@ -101,13 +182,21 @@ Additional information, explaining the names of some of the fields, is available
     <i>drugs, drug, drugbank, chemistry, biology, biochemistry, proteins</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "drugbank",
+        'body': "The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.",
+        'description': "The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.",
+        'tags': ['drugs', 'drug', 'drugbank', 'chemistry', 'biology', 'biochemistry', 'proteins']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="drugs/drugs.png" alt="Drugs">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="drugs">
+  
   <div class="media-body">
-    <a href="drugs/drugs.html">
+    <a target="_blank" href="drugs/drugs.html">
     <h4 class="media-heading">Drugs</h4>
     </a>
     This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.
@@ -115,13 +204,21 @@ Additional information, explaining the names of some of the fields, is available
     <i>drugs, substances, drug usage</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "drugs",
+        'body': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.",
+        'description': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.",
+        'tags': ['drugs', 'substances', 'drug usage']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="education/education.png" alt="Education">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="education">
+  
   <div class="media-body">
-    <a href="education/education.html">
+    <a target="_blank" href="education/education.html">
     <h4 class="media-heading">Education</h4>
     </a>
     Information about K-12 education for different states, collected from the US government.
@@ -129,13 +226,21 @@ Additional information, explaining the names of some of the fields, is available
     <i>school, education, K-12, kindergarten, learning, teaching</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "education",
+        'body': "Information about K-12 education for different states, collected from the US government.",
+        'description': "Information about K-12 education for different states, collected from the US government.",
+        'tags': ['school', 'education', 'K-12', 'kindergarten', 'learning', 'teaching']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="energy/energy.png" alt="Energy">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="energy">
+  
   <div class="media-body">
-    <a href="energy/energy.html">
+    <a target="_blank" href="energy/energy.html">
     <h4 class="media-heading">Energy</h4>
     </a>
     United States Government reports on consumption, production, import, and export of various fuel sources.
@@ -143,26 +248,42 @@ Additional information, explaining the names of some of the fields, is available
     <i>energy, renewable, united states, us, nuclear, fossil fuels, power</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "energy",
+        'body': "United States Government reports on consumption, production, import, and export of various fuel sources.",
+        'description': "United States Government reports on consumption, production, import, and export of various fuel sources.",
+        'tags': ['energy', 'renewable', 'united states', 'us', 'nuclear', 'fossil fuels', 'power']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="finance/finance.png" alt="Finance">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="finance">
+  
   <div class="media-body">
-    <a href="finance/finance.html">
+    <a target="_blank" href="finance/finance.html">
     <h4 class="media-heading">Finance</h4>
     </a>
     The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states. The data contain detail of revenue by source, expenditure by object and functi<br>
     <i>finance, government, expenditure, charges, money, united states, us</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "finance",
+        'body': "The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states. The data contain detail of revenue by source, expenditure by object and function, indebtedness by term, and assets by purpose. This data goes back for almost two decades across every date.",
+        'description': "The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states. The data contain detail of revenue by source, expenditure by object and functi",
+        'tags': ['finance', 'government', 'expenditure', 'charges', 'money', 'united states', 'us']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="grads/grads.png" alt="Grads">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="grads">
+  
   <div class="media-body">
-    <a href="grads/grads.html">
+    <a target="_blank" href="grads/grads.html">
     <h4 class="media-heading">Grads</h4>
     </a>
     This library holds data about employment of new graduates by major.
@@ -170,27 +291,21 @@ Additional information, explaining the names of some of the fields, is available
     <i>graduation, grads, majors, education, college, university, higher education, jobs, careers</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "grads",
+        'body': "This library holds data about employment of new graduates by major.",
+        'description': "This library holds data about employment of new graduates by major.",
+        'tags': ['graduation', 'grads', 'majors', 'education', 'college', 'university', 'higher education', 'jobs', 'careers']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="publishers/publishers.png" alt="Publishers">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="health">
+  
   <div class="media-body">
-    <a href="gutenberg/gutenberg.html">
-    <h4 class="media-heading">Gutenberg</h4>
-    </a>
-    Project Gutenberg hosts the complete text for a variety of classical books.
-<br>
-    <i>gutenberg, books, reading, library, text</i>
-  </div>
-</div>
-    
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="health/health.png" alt="Health">
-  </div>-->
-  <div class="media-body">
-    <a href="health/health.html">
+    <a target="_blank" href="health/health.html">
     <h4 class="media-heading">Health</h4>
     </a>
     This library holds data about reports of diseases in America.
@@ -198,67 +313,106 @@ Additional information, explaining the names of some of the fields, is available
     <i>health, diseases, infection</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "health",
+        'body': "This library holds data about reports of diseases in America.",
+        'description': "This library holds data about reports of diseases in America.",
+        'tags': ['health', 'diseases', 'infection']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="immigration/immigration.png" alt="Immigration">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="horseracing">
+  
   <div class="media-body">
-    <a href="immigration/immigration.html">
+    <a target="_blank" href="horseracing/horseracing.html">
+    <h4 class="media-heading">Horse Racing</h4>
+    </a>
+    Data about horse races at Churchill Downs
+<br>
+    <i>churchill downs, horses, equines, racing, horse racing, gambling</i>
+  </div>
+</div>
+<script>
+searcher.add(
+    {
+        'name': "horseracing",
+        'body': "Data about horse races at Churchill Downs",
+        'description': "Data about horse races at Churchill Downs",
+        'tags': ['churchill downs', 'horses', 'equines', 'racing', 'horse racing', 'gambling']
+    }
+);
+</script>
+    
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="immigration">
+  
+  <div class="media-body">
+    <a target="_blank" href="immigration/immigration.html">
     <h4 class="media-heading">Immigration</h4>
     </a>
     The Yearbook of Immigration Statistics is a compendium of tables that provides data on foreign nationals who, during a fiscal year, were granted lawful permanent residence (i.e., admitted as immigrants or became legal permanent residents), were admit<br>
     <i>immigration, naturalization, illegals, permanants, united states, us</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "immigration",
+        'body': "The Yearbook of Immigration Statistics is a compendium of tables that provides data on foreign nationals who, during a fiscal year, were granted lawful permanent residence (i.e., admitted as immigrants or became legal permanent residents), were admitted into the United States on a temporary basis (e.g., tourists, students, or workers), applied for asylum or refugee status, or were naturalized. The Yearbook also presents data on immigration enforcement actions, including alien apprehensions, removals, and returns.",
+        'description': "The Yearbook of Immigration Statistics is a compendium of tables that provides data on foreign nationals who, during a fiscal year, were granted lawful permanent residence (i.e., admitted as immigrants or became legal permanent residents), were admit",
+        'tags': ['immigration', 'naturalization', 'illegals', 'permanants', 'united states', 'us']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="kepler/kepler.png" alt="Kepler">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="kepler">
+  
   <div class="media-body">
-    <a href="kepler/kepler.html">
+    <a target="_blank" href="kepler/kepler.html">
     <h4 class="media-heading">Kepler</h4>
     </a>
     The NASA Exoplanet Archive is an online astronomical exoplanet and stellar catalog and data service that collates and cross-correlates astronomical data and information on exoplanets and their host stars and provides tools to work with these data. Th<br>
     <i>kepler, space, planets, aerospace, moon, sun, stellar, solar system</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "kepler",
+        'body': "The NASA Exoplanet Archive is an online astronomical exoplanet and stellar catalog and data service that collates and cross-correlates astronomical data and information on exoplanets and their host stars and provides tools to work with these data. The Exoplanet Archive is dedicated to collecting and serving important public data sets involved in the search for and characterization of extrasolar planets and their host stars. The data include stellar parameters (such as positions, magnitudes, and temperatures), exoplanet parameters (such as masses and orbital parameters) and discovery/characterization data (such as published radial velocity curves, photometric light curves, images, and spectra).",
+        'description': "The NASA Exoplanet Archive is an online astronomical exoplanet and stellar catalog and data service that collates and cross-correlates astronomical data and information on exoplanets and their host stars and provides tools to work with these data. Th",
+        'tags': ['kepler', 'space', 'planets', 'aerospace', 'moon', 'sun', 'stellar', 'solar system']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="music/music.png" alt="Music">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="music">
+  
   <div class="media-body">
-    <a href="music/music.html">
+    <a target="_blank" href="music/music.html">
     <h4 class="media-heading">Music</h4>
     </a>
-    The Music library has data about a multitude of songs and artists.
-<br>
+    The Music library has data about a multitude of songs and artists.<br>
     <i>music, songs, artists, creativity, media</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "music",
+        'body': "The Music library has data about a multitude of songs and artists.",
+        'description': "The Music library has data about a multitude of songs and artists.",
+        'tags': ['music', 'songs', 'artists', 'creativity', 'media']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="nfl/nfl.png" alt="NFL">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="publishers">
+  
   <div class="media-body">
-    <a href="nfl/nfl.html">
-    <h4 class="media-heading">NFL</h4>
-    </a>
-    Information about NFL games and players.
-<br>
-    <i>nfl, football, sports, games</i>
-  </div>
-</div>
-    
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="publishers/publishers.png" alt="Publishers">
-  </div>-->
-  <div class="media-body">
-    <a href="publishers/publishers.html">
+    <a target="_blank" href="publishers/publishers.html">
     <h4 class="media-heading">Publishers</h4>
     </a>
     From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.
@@ -266,13 +420,42 @@ Additional information, explaining the names of some of the fields, is available
     <i>publishers, amazon, books, sales, genres, literature, english</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "publishers",
+        'body': "From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.",
+        'description': "From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.",
+        'tags': ['publishers', 'amazon', 'books', 'sales', 'genres', 'literature', 'english']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="scripts/scripts.png" alt="Scripts">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="realestate">
+  
   <div class="media-body">
-    <a href="scripts/scripts.html">
+    <a target="_blank" href="realestate/realestate.html">
+    <h4 class="media-heading">Real Estate</h4>
+    </a>
+    Real Estate Across the United States (REXUS) is the primary tool used by PBS to track and manage the government's real property assets and to store inventory data, building data, customer data, and lease information. STAR manages aspects of real prop<br>
+    <i>real, estate, buildings, government, building</i>
+  </div>
+</div>
+<script>
+searcher.add(
+    {
+        'name': "realestate",
+        'body': "Real Estate Across the United States (REXUS) is the primary tool used by PBS to track and manage the government's real property assets and to store inventory data, building data, customer data, and lease information. STAR manages aspects of real property space management, including identification of all building space and daily management of 22,000 assignments for all property to its client Federal agencies. This data set contains PBS building inventory that consists of both owned and leased buildings with active and excess status.",
+        'description': "Real Estate Across the United States (REXUS) is the primary tool used by PBS to track and manage the government's real property assets and to store inventory data, building data, customer data, and lease information. STAR manages aspects of real prop",
+        'tags': ['real', 'estate', 'buildings', 'government', 'building']
+    }
+);
+</script>
+    
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="scripts">
+  
+  <div class="media-body">
+    <a target="_blank" href="scripts/scripts.html">
     <h4 class="media-heading">Scripts</h4>
     </a>
     This dataset is all about over 600 movies. It was collected and organized by the Cornell Movie Dialogs Corpus. More information about the project is available at the CMDC site (http://www.mpi-sws.org/~cristian/Cornell_Movie-Dialogs_Corpus.html).
@@ -280,54 +463,84 @@ Additional information, explaining the names of some of the fields, is available
     <i>movies, scripts, gender</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "scripts",
+        'body': "This dataset is all about over 600 movies. It was collected and organized by the Cornell Movie Dialogs Corpus. More information about the project is available at the CMDC site (http://www.mpi-sws.org/~cristian/Cornell_Movie-Dialogs_Corpus.html).",
+        'description': "This dataset is all about over 600 movies. It was collected and organized by the Cornell Movie Dialogs Corpus. More information about the project is available at the CMDC site (http://www.mpi-sws.org/~cristian/Cornell_Movie-Dialogs_Corpus.html).",
+        'tags': ['movies', 'scripts', 'gender']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="soccer/soccer.png" alt="Soccer">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="slavery">
+  
   <div class="media-body">
-    <a href="soccer/soccer.html">
-    <h4 class="media-heading">Soccer</h4>
+    <a target="_blank" href="slavery/slavery.html">
+    <h4 class="media-heading">Slavery</h4>
     </a>
-    Free open public domain soccer data (football). Leagues include the English Premier League, Deutsche Bundesliga, Spanish Primera Division ("La Liga"), Italian Serie A, and more.
-<br>
-    <i>soccer, germany, austrian, Bundesliga, football</i>
+    This dataset has financial records of New Orleans slave sales, 1856-1861. There are almost 16,000 sales recorded in this dataset.<br>
+    <i>history, slavery, economics, slaves</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "slavery",
+        'body': "This dataset has financial records of New Orleans slave sales, 1856-1861. There are almost 16,000 sales recorded in this dataset.",
+        'description': "This dataset has financial records of New Orleans slave sales, 1856-1861. There are almost 16,000 sales recorded in this dataset.",
+        'tags': ['history', 'slavery', 'economics', 'slaves']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="tate/tate.png" alt="Tate">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="tate">
+  
   <div class="media-body">
-    <a href="tate/tate.html">
+    <a target="_blank" href="tate/tate.html">
     <h4 class="media-heading">Tate</h4>
     </a>
     Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art. The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation<br>
     <i>artwork, art, sculpture, tate</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "tate",
+        'body': "Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art. The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation and performance. This dataset has metadata about many pieces from their collection.",
+        'description': "Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art. The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation",
+        'tags': ['artwork', 'art', 'sculpture', 'tate']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="publishers/publishers.png" alt="Publishers">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="weather">
+  
   <div class="media-body">
-    <a href="twitter/twitter.html">
-    <h4 class="media-heading">Twitter</h4>
+    <a target="_blank" href="weather/weather.html">
+    <h4 class="media-heading">Weather</h4>
     </a>
-    Twitter is a service for sending very short messages called Tweets. Twitter has a very restrictive API, but you can access tweets using it.
-<br>
-    <i>twitter, social, text</i>
+    The Weather library is all about some interesting weather data. The weather is collected from the US weather system, so it is only available for the United States.<br>
+    <i>weather, united states, climate, temperature</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "weather",
+        'body': "The Weather library is all about some interesting weather data. The weather is collected from the US weather system, so it is only available for the United States.",
+        'description': "The Weather library is all about some interesting weather data. The weather is collected from the US weather system, so it is only available for the United States.",
+        'tags': ['weather', 'united states', 'climate', 'temperature']
+    }
+);
+</script>
     
-    <div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="yelp/yelp.png" alt="Yelp">
-  </div>-->
+    <div class="media col-md-4 col-md-offset-1 dataset-card" id="yelp">
+  
   <div class="media-body">
-    <a href="yelp/yelp.html">
+    <a target="_blank" href="yelp/yelp.html">
     <h4 class="media-heading">Yelp</h4>
     </a>
     Yelp is providing all the data and reviews of the 250 closest businesses for 30 universities for students and academics to explore and research
@@ -335,6 +548,53 @@ Yelp's dataset includes information for businesses near these 30 schools: Brown 
     <i>yelp, businesses, restaurants</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "yelp",
+        'body': "Yelp is providing all the data and reviews of the 250 closest businesses for 30 universities for students and academics to explore and research Yelp's dataset includes information for businesses near these 30 schools: Brown University, California Institute of Technology, California Polytechnic State University, Carnegie Mellon University, Columbia University, Cornell University, Georgia Institute of Technology, Harvard University, Harvey Mudd College, Massachusetts Institute of Technology, Princeton University, Purdue University, Rensselaer Polytechnic Institute, Rice University, Stanford University, University of California - Los Angeles, University of California - San Diego, University of California at Berkeley, University of Illinois - Urbana-Champaign, University of Maryland - College Park, University of Massachusetts - Amherst, University of Michigan - Ann Arbor, University of North Carolina - Chapel Hill, University of Pennsylvania, University of Southern California, University of Texas - Austin, University of Washington, University of Waterloo, University of Wisconsin - Madison, and Virginia Tech.",
+        'description': "Yelp is providing all the data and reviews of the 250 closest businesses for 30 universities for students and academics to explore and research Yelp's dataset includes information for businesses near these 30 schools: Brown University, California Ins",
+        'tags': ['yelp', 'businesses', 'restaurants']
+    }
+);
+</script>
     
+    </div>
+    
+    <div class="row">
+    <hr>
+    
+    <h2>Future Potential Datasets</h2>
+    
+    <p>The datasets listed below have not been fully implemented, but they could be! Feel free to consider them too.</p>
+    
+    <div class='col-md-8 col-md-offset-1'>
+    <ol>
+    <li>Airlines: Bureau of Transportation Statistics about flights recorded in the united states, including how long it was in the air, whether it was delayed, how long it spent taxiing, etc. (<a href="http://dhresourcesforprojectbuilding.pbworks.com/w/page/69244469/Data%20Collections%20and%20Datasets">Link</a>)</li>
+    <li>Agriculture: Datasets about agricultural statistics in the US (<a href="http://www.ers.usda.gov/data-products.aspx">Link</a>)</li>
+    <li>OSHA Safety Reports</li>
+    <li>Building permits</li>
+    <li>New York Crime: Detailed information about crime reports in New York City.</li>
+    <li>Officer Shootings: Reports about shootings committed by officers, including race.</li>
+    <li>Suicide attacks: Reports about suicide bombings since the 1980s around the world. </li>
+    <li>Disease: Reported aggregates of diseases throughout american history.</li>
+    <li>University crime: Reported statistics of crime on college campuses.</li>
+    <li>Food: Information about food regulated by the US.</li>
+    <li>Cancer: Incidences of different kinds of cancer in the US.</li>
+    <li>Medal of honor: Reports of Medal of Honor awards.</li>
+    <li>Hydropower: Information about hydropower dams across the US.</li>
+    <li>Hospitals: Information about hospitals across the US.</li>
+    <li>Drug spending: Information about how much drugs cost to sell and produce.</li>
+    <li>Injuries: CPSC's National Electronic Injury Surveillance System (NEISS) is a national probability sample of hospitals in the U.S. and its territories. Patient information is collected from each NEISS hospital for every emergency visit involving an injury associated with consumer products. From this sample, the total number of product-related injuries treated in hospital emergency rooms nationwide can be estimated. This web access to NEISS allows certain estimates to be retrieved on-line. These estimates can be focused by setting some or all of the following variables: date, product, sex, diagnosis, part injured, and age.</li>
+    <li>Historic Energy use: Information about energy usage in the US (<a href="http://www.eia.gov/electricity/data/eia923/">Link</a>)</li>
+    <li>Religious groups: Information about membership in religious groups (<a href="http://www.thearda.com/rcms2010/">Link</a>)</li>
+    <li>Youth risk: The Youth Risk Behavior Surveillance System (YRBSS) monitors six types of health-risk behaviors that contribute to the leading causes of death and disability among youth and adults, including: Behaviors that contribute to unintentional injuries and violence, Sexual behaviors that contribute to unintended pregnancy and sexually transmitted diseases, including HIV infection, Alcohol and other drug use, Tobacco use, Unhealthy dietary behaviors, Inadequate physical activity. YRBSS also measures the prevalence of obesity and asthma among youth and young adults.<a href="http://www.cdc.gov/healthyyouth/data/yrbs/data.htm">Link</a></li>
+    <li>Foreign assistance: Reports of foreign assistance from the US to other countries.</li>
+    <li>Mortgage: HMDA data provide information regarding home mortgage lending activity. The Home Mortgage Disclosure Act (HMDA) was enacted by Congress in 1975 and was implemented by the Federal Reserve Board's Regulation C. On July 21, 2011, the rule-writing authority of Regulation C was transferred to the Consumer Financial Protection Bureau (CFPB). </li>
+    <li>State Department per Diem: Information about per diem reported by US State Department employees</li>
+    </ol>
+    </div>
+    
+    </div>
     
 </div>

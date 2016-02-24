@@ -22,6 +22,7 @@ if __name__ == '__main__':
     parser.add_argument('spec', help='Location of a spec file (or source directory with -a).')
     parser.add_argument('-l', '--language', help='The desired output language bindings. If not present, defaults to all known languages.')
     parser.add_argument('-v', '--validate', help='Only validates the spec, skips compilation.', action='store_true')
+    parser.add_argument('-f', '--fast', help='Only builds the supporting files, skips database building.', action='store_true')
     parser.add_argument('-a', '--all', help='Builds all the .corgis files in the source directory.', action='store_true')
     parser.add_argument('target', help="Build output location.")
 
@@ -53,7 +54,7 @@ if __name__ == '__main__':
             #print("*"*10)
             pprint(to_dict(compiled))
             if args.language.lower() == "python":
-                files, moves = build_python(to_dict(compiled))
+                files, moves = build_python(to_dict(compiled), args.fast)
                 build_data, build_errors = build_dir(files, moves, args.target)
             elif args.language.lower() == "csv":
                 files, moves = build_csv(to_dict(compiled))

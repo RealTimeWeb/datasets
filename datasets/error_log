@@ -5,4 +5,4 @@ Traceback (most recent call last):
     copyfile(src, dst)
   File "C:\Python27\lib\shutil.py", line 82, in copyfile
     with open(src, 'rb') as fsrc:
-IOError: [Errno 2] No such file or directory: 'csv/publishers/publishers.csv'
+IOError: [Errno 2] No such file or directory: 'specs\\yelp/Yelp.png'

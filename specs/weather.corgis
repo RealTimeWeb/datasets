@@ -20,11 +20,12 @@ http:
         type: float
         description: The longitude
         form: query
-      - name: result format
+      - name: FcstType
         type: string
         description: A hidden parameter that controls the result format.
         default: '"json"'
         form: query
+        visible: false
     verb: get
     cache: timed(600)
 interfaces:
@@ -34,6 +35,7 @@ interfaces:
     production:
         pre: geocode(city, lat, lon)
         http: forecastgov
+        post: json()
     cache:
       - '"Blacksburg, VA"'
       - '"Newark, DE"'
@@ -45,20 +47,23 @@ interfaces:
         description: The name of the city you want to get information about.
         default: '"Blacksburg, VA"'
         indexed: true
-  #- name: get_temperature
-  #  returns: int
-  #  test:
-  #      sql: SELECT temperature FROM weather WHERE city={city} ORDER BY date LIMIT 1
-  #      constraint:
-  #          test: SELECT COUNT(*)>=1 FROM weather WHERE city=?
-  #          failure: The given city was not in the cache.
-  #  prod:
-  #      api: forecast.gov
-  #      pre: geocode city > lat,lon
-  #      post: data.temperature[0]
-  #  args:
-  #    - name: city
-  #      type: location
+  - name: get_temperature
+    returns: integer
+    cache:
+      - '"Blacksburg, VA"'
+      - '"Newark, DE"'
+      - '"San Francisco, CA"'
+      - '"Miami, FL"'
+    production:
+        pre: geocode(city, lat, lon)
+        http: forecastgov
+        post: json()|jsonpath(data.temperature.[0])
+    args:
+      - name: city
+        type: string
+        description: The name of the city you want to get information about.
+        default: '"Blacksburg, VA"'
+        indexed: true
   #- name: get temperatures
   #  returns: list[int]
   #  test:

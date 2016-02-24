@@ -6,6 +6,7 @@ metadata:
     datetime: 9/23/2015
     tags: [music, songs, artists, creativity, media]
     description:
+        short: The Music library has data about a multitude of songs and artists.
         overview: >
             The Music library has data about a multitude of songs and artists.
 local:
@@ -16,8 +17,6 @@ local:
         jsonpath: song.title
       - name: artist
         jsonpath: artist.name
-objects:
-  - name: song
 interfaces:
   - name: get song by name
     description: Given the title of a song, returns information about the song.
@@ -67,3 +66,88 @@ interfaces:
     production:
         sql: SELECT data FROM music
         post: json()
+objects:
+  - name: song
+    fields:
+      - name: key
+        type: float
+      - name: mode_confidence
+        type: float
+      - name: artist_mbtags_count
+        type: float
+      - name: key_confidence
+        type: float
+      - name: tatums_start
+        type: float
+      - name: year
+        type: int
+      - name: duration
+        type: float
+      - name: hotttnesss
+        type: float
+      - name: beats_start
+        type: float
+      - name: time_signature_confidence
+        type: float
+      - name: title
+        type: int
+      - name: bars_confidence
+        type: float
+      - name: id
+        type: str
+      - name: bars_start
+        type: float
+      - name: artist_mbtags
+        type: float
+      - name: start_of_fade_out
+        type: float
+      - name: tempo
+        type: float
+      - name: end_of_fade_in
+        type: float
+      - name: beats_confidence
+        type: float
+      - name: tatums_confidence
+        type: float
+      - name: mode
+        type: int
+      - name: time_signature
+        type: float
+      - name: loudness
+        type: float
+  - name: artist
+    fields:
+      - name: terms_freq
+        type: float
+      - name: terms
+        type: str
+      - name: name
+        type: str
+      - name: familiarity
+        type: float
+      - name: longitude
+        type: NoneType
+      - name: id
+        type: str
+      - name: location
+        type: int
+      - name: latitude
+        type: NoneType
+      - name: similar
+        type: float
+      - name: hotttnesss
+        type: float
+  - name: release
+    fields:
+      - name: id
+        type: int
+      - name: name
+        type: int
+  - name: release artist song
+    fields:
+      - name: release
+        type: release
+      - name: artist
+        type: artist
+      - name: song
+        type: song

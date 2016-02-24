@@ -91,6 +91,30 @@
     /*.highlight .vi { color: #D0D0FF} /* Name.Variable.Instance */
     /*.highlight .il { color: #A5C261} /* Literal.Number.Integer.Long */
     </style>
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://localhost:5000/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        log('load', 'Immigration');
+        function doPoll(){  
+            log('remain', 'Immigration, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+    });
+    </script>
 
 </head>
 
@@ -99,9 +123,9 @@
 <div class="container">
 
     <div class="page-header">
+        
         <h1>Immigration Library</h1>
         <p class="lead">From the CORGIS Dataset Project</p>
-        
         <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
         <span class="text-muted">Version 1, created 11/1/2015</span><br>
         <span class="text-muted">Tags: immigration, naturalization, illegals, permanants, united states, us</span><br>

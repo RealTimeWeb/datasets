@@ -4,70 +4,78 @@ import json as _json
 import sqlite3 as _sql
 import difflib as _difflib
 
-_HEADER = {'User-Agent': 
-          'CORGIS Baseball library for educational purposes'}
-_PYTHON_3 = _sys.version_info >= (3, 0)
-_TEST = False
-_HARDWARE = 1000
+class _Constants(object):
+    _HEADER = {'User-Agent': 
+              'CORGIS Baseball library for educational purposes'}
+    _PYTHON_3 = _sys.version_info >= (3, 0)
+    _TEST = False
+    _HARDWARE = 1000
 
-if _PYTHON_3:
+if _Constants._PYTHON_3:
     import urllib.request as _request
     from urllib.parse import quote_plus as _quote_plus
+    from urllib.error import HTTPError as _HTTPError
 else:
     import urllib2 as _urllib2
     from urllib import quote_plus as _quote_plus
+    from urllib2 import HTTPError as _HTTPError
 
 class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_DATABASE_NAME = "baseball.db"
-if _os.path.isfile(_DATABASE_NAME):
-    _DATABASE = _sql.connect(_DATABASE_NAME)
-else:
-    raise DatasetException("Error! Could not find the \"{}\" file. Make sure that it is in the same directory as {}.py!".format(_DATABASE_NAME, __name__))
+_Constants._DATABASE_NAME = "baseball.db"
+if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
+    raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
+elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
+    raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
+elif not _os.access(_Constants._DATABASE_NAME, _os.W_OK):
+    _sys.stderr.write('The local cache (\" \") will not be updated. Make sure that it is writable by changing its permissions. You may need to get help from your instructor.\n'.format(_Constants._DATABASE_NAME))
+    _sys.stderr.flush()
 
-################################################################################
-# Auxilary
-################################################################################
+_Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 
-def _parse_type(value, type_func):
-    """
-    Attempt to cast *value* into *type_func*, returning *default* if it fails.
-    """
-    default = type_func(0)
-    if value is None:
-        return default
-    try:
-        return type_func(value)
-    except ValueError:
-        return default
-        
-def _byteify(input):
-    """
-    Force the given input to only use `str` instead of `bytes` or `unicode`.
-    This works even if the input is a dict, list,
-    """
-    if isinstance(input, dict):
-        return {_byteify(key): _byteify(value) for key, value in input.items()}
-    elif isinstance(input, list):
-        return [_byteify(element) for element in input]
-    elif _PYTHON_3 and isinstance(input, str):
-        return str(input.encode('ascii', 'replace').decode('ascii'))
-    elif not _PYTHON_3 and isinstance(input, unicode):
-        return str(input.encode('ascii', 'replace').decode('ascii'))
-    else:
-        return input
-        
-def _guess_schema(input):
-    if isinstance(input, dict):
-        return {str(key.encode('ascii', 'replace').decode('ascii')): 
-                _guess_schema(value) for key, value in input.items()}
-    elif isinstance(input, list):
-        return [_guess_schema(input[0])] if input else []
-    else:
-        return type(input)
-        
+class _Auxiliary(object):
+    @staticmethod
+    def _parse_type(value, type_func):
+        """
+        Attempt to cast *value* into *type_func*, returning *default* if it fails.
+        """
+        default = type_func(0)
+        if value is None:
+            return default
+        try:
+            return type_func(value)
+        except ValueError:
+            return default
+    
+    @staticmethod    
+    def _byteify(input):
+        """
+        Force the given input to only use `str` instead of `bytes` or `unicode`.
+        This works even if the input is a dict, list,
+        """
+        if isinstance(input, dict):
+            return {_Auxiliary._byteify(key): _Auxiliary._byteify(value) for key, value in input.items()}
+        elif isinstance(input, list):
+            return [_Auxiliary._byteify(element) for element in input]
+        elif _Constants._PYTHON_3 and isinstance(input, str):
+            return str(input.encode('ascii', 'replace').decode('ascii'))
+        elif not _Constants._PYTHON_3 and isinstance(input, unicode):
+            return str(input.encode('ascii', 'replace').decode('ascii'))
+        else:
+            return input
+    
+    @staticmethod    
+    def _guess_schema(input):
+        if isinstance(input, dict):
+            return {str(key.encode('ascii', 'replace').decode('ascii')): 
+                    _Auxiliary._guess_schema(value) for key, value in input.items()}
+        elif isinstance(input, list):
+            return [_Auxiliary._guess_schema(input[0])] if input else []
+        else:
+            return type(input)
+            
 
 
 ################################################################################
@@ -93,30 +101,26 @@ def get_player_by_name(name):
     """
     
     # Match it against recommend values
-    potentials = [r[0].lower() for r in _DATABASE.execute("SELECT DISTINCT name FROM players").fetchall()]
+    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT name FROM players").fetchall()]
     if name.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(name, potentials)
         if best_guesses:
             raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
         else:
             raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
-    
-    
-    
     if False:
         # If there was a Test version of this method, it would go here. But alas.
         pass
-    
     else:
-        rows = _DATABASE.execute("SELECT data FROM players WHERE name=? COLLATE NOCASE LIMIT 1".format(
-            hardware=_HARDWARE),
+        rows = _Constants._DATABASE.execute("SELECT data FROM players WHERE name=? COLLATE NOCASE LIMIT 1".format(
+            hardware=_Constants._HARDWARE),
             (name, ))
         data = [r[0] for r in rows]
-        data = [_json.loads(r) for r in data]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
         
         data = data[0]
         
-        return _byteify(data)
+        return _Auxiliary._byteify(data)
         
 
 def get_players(test=True):
@@ -124,23 +128,21 @@ def get_players(test=True):
     Returns information about all the players.
     
     """
-    
-    
-    if _TEST or test:
-        rows = _DATABASE.execute("SELECT data FROM players LIMIT {hardware}".format(
-            hardware=_HARDWARE))
+    if _Constants._TEST or test:
+        rows = _Constants._DATABASE.execute("SELECT data FROM players LIMIT {hardware}".format(
+            hardware=_Constants._HARDWARE))
         data = [r[0] for r in rows]
-        data = [_json.loads(r) for r in data]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
         
-        return _byteify(data)
+        return _Auxiliary._byteify(data)
         
     else:
-        rows = _DATABASE.execute("SELECT data FROM players".format(
-            hardware=_HARDWARE))
+        rows = _Constants._DATABASE.execute("SELECT data FROM players".format(
+            hardware=_Constants._HARDWARE))
         data = [r[0] for r in rows]
-        data = [_json.loads(r) for r in data]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
         
-        return _byteify(data)
+        return _Auxiliary._byteify(data)
         
 
 def get_team_by_name(name):
@@ -152,30 +154,26 @@ def get_team_by_name(name):
     """
     
     # Match it against recommend values
-    potentials = [r[0].lower() for r in _DATABASE.execute("SELECT DISTINCT name FROM teams").fetchall()]
+    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT name FROM teams").fetchall()]
     if name.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(name, potentials)
         if best_guesses:
             raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
         else:
             raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
-    
-    
-    
     if False:
         # If there was a Test version of this method, it would go here. But alas.
         pass
-    
     else:
-        rows = _DATABASE.execute("SELECT data FROM teams WHERE name=? COLLATE NOCASE LIMIT 1".format(
-            hardware=_HARDWARE),
+        rows = _Constants._DATABASE.execute("SELECT data FROM teams WHERE name=? COLLATE NOCASE LIMIT 1".format(
+            hardware=_Constants._HARDWARE),
             (name, ))
         data = [r[0] for r in rows]
-        data = [_json.loads(r) for r in data]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
         
         data = data[0]
         
-        return _byteify(data)
+        return _Auxiliary._byteify(data)
         
 
 def get_teams(test=True):
@@ -183,23 +181,21 @@ def get_teams(test=True):
     Returns information about all the teams.
     
     """
-    
-    
-    if _TEST or test:
-        rows = _DATABASE.execute("SELECT data FROM teams LIMIT {hardware}".format(
-            hardware=_HARDWARE))
+    if _Constants._TEST or test:
+        rows = _Constants._DATABASE.execute("SELECT data FROM teams LIMIT {hardware}".format(
+            hardware=_Constants._HARDWARE))
         data = [r[0] for r in rows]
-        data = [_json.loads(r) for r in data]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
         
-        return _byteify(data)
+        return _Auxiliary._byteify(data)
         
     else:
-        rows = _DATABASE.execute("SELECT data FROM teams".format(
-            hardware=_HARDWARE))
+        rows = _Constants._DATABASE.execute("SELECT data FROM teams".format(
+            hardware=_Constants._HARDWARE))
         data = [r[0] for r in rows]
-        data = [_json.loads(r) for r in data]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
         
-        return _byteify(data)
+        return _Auxiliary._byteify(data)
         
 
 ################################################################################
@@ -212,7 +208,7 @@ def _test_interfaces():
     # Production test
     print("Production get_player_by_name")
     start_time = _default_timer()
-    result = get_player_by_name('Jon Edward Zuber', )
+    result = get_player_by_name('Jon Edward Zuber')
     
     _pprint(result)
     
@@ -224,7 +220,7 @@ def _test_interfaces():
     result = get_players(test=False)
     
     print("{} entries found.".format(len(result)))
-    _pprint(_guess_schema(result))
+    _pprint(_Auxiliary._guess_schema(result))
     
     print("Time taken: {}".format(_default_timer() - start_time))
     # Test test
@@ -233,14 +229,14 @@ def _test_interfaces():
     result = get_players()
     
     print("{} entries found.".format(len(result)))
-    _pprint(_guess_schema(result))
+    _pprint(_Auxiliary._guess_schema(result))
     
     print("Time taken: {}".format(_default_timer() - start_time))
     
     # Production test
     print("Production get_team_by_name")
     start_time = _default_timer()
-    result = get_team_by_name('Philadelphia Phillies', )
+    result = get_team_by_name('Philadelphia Phillies')
     
     _pprint(result)
     
@@ -252,7 +248,7 @@ def _test_interfaces():
     result = get_teams(test=False)
     
     print("{} entries found.".format(len(result)))
-    _pprint(_guess_schema(result))
+    _pprint(_Auxiliary._guess_schema(result))
     
     print("Time taken: {}".format(_default_timer() - start_time))
     # Test test
@@ -261,7 +257,7 @@ def _test_interfaces():
     result = get_teams()
     
     print("{} entries found.".format(len(result)))
-    _pprint(_guess_schema(result))
+    _pprint(_Auxiliary._guess_schema(result))
     
     print("Time taken: {}".format(_default_timer() - start_time))
     

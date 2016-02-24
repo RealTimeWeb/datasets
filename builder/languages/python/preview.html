@@ -1,12 +1,26 @@
-<div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.png" alt="{{ metadata.name }}">
-  </div>-->
+<div class="media col-md-4 col-md-offset-1 dataset-card" id="{{ metadata.name|flat_case }}">
+  {% if metadata.icon %}
+  <div class="media-left  media-middle">
+    <a target="_blank" href="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.html">
+      <img class="media-object" src="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.png" alt="{{ metadata.name }}" style="width: 64px; height: 64px;">
+    </a>
+  </div>
+  {% endif %}
   <div class="media-body">
-    <a href="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.html">
+    <a target="_blank" href="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.html">
     <h4 class="media-heading">{{ metadata.name }}</h4>
     </a>
-    {{ metadata.description.overview[:250] }}<br>
+    {{ metadata.description.short }}<br>
     <i>{{ metadata.tags|join(", ") }}</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "{{ metadata.name|flat_case }}",
+        'body': "{{ metadata.description.overview|replace('\n', ' ')|replace('\r',' ')|striptags|trim }}",
+        'description': "{{ metadata.description.short|replace('\n', ' ')|striptags|trim }}",
+        'tags': {{ metadata.tags|safe }}
+    }
+);
+</script>

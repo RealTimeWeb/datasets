@@ -1,13 +1,26 @@
-<div class="media col-md-4 col-md-offset-1">
-  <!--<div class="media-left">
-      <img class="media-object" src="airports/airports.png" alt="Airports">
-  </div>-->
+<div class="media col-md-4 col-md-offset-1 dataset-card" id="airports">
+  
+  <div class="media-left  media-middle">
+    <a target="_blank" href="airports/airports.html">
+      <img class="media-object" src="airports/airports.png" alt="Airports" style="width: 64px; height: 64px;">
+    </a>
+  </div>
+  
   <div class="media-body">
-    <a href="airports/airports.html">
+    <a target="_blank" href="airports/airports.html">
     <h4 class="media-heading">Airports</h4>
     </a>
-    This dataset is all about airports.
-Additional information, explaining the names of some of the fields, is available: <a href="http://www.faa.gov/airports/airport_safety/airportdata_5010/#datadictionaries">http://www.faa.gov/airports/airport_safety/a<br>
+    All about airports across the world, including features like runway length and geocoordinates.<br>
     <i>airplane, airports, travel, plane, air</i>
   </div>
 </div>
+<script>
+searcher.add(
+    {
+        'name': "airports",
+        'body': "This dataset is all about airports. Additional information, explaining the names of some of the fields, is available: http://www.faa.gov/airports/airport_safety/airportdata_5010/#datadictionaries",
+        'description': "All about airports across the world, including features like runway length and geocoordinates.",
+        'tags': ['airplane', 'airports', 'travel', 'plane', 'air']
+    }
+);
+</script>

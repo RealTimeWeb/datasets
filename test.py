@@ -10,6 +10,8 @@ start_time = default_timer()
 os.chdir(root)
 total_datasets = 0
 for dataset in datasets:
+    if not os.path.isdir(dataset):
+        continue
     python_file = dataset+'.py'
     html_file = dataset+'.html'
     os.chdir(dataset)

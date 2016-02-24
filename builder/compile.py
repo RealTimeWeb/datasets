@@ -177,10 +177,13 @@ class Compiler(object):
         metadata.description = self.recommend_field("metadata", "description", raw, {}, dict, "There will be no top-level documentation!")
         if 'overview' not in metadata.description:
             metadata.description['overview'] = ""
+        if 'short' not in metadata.description:
+            metadata.description['short'] = metadata.description['overview'][:250]
         if 'appendix' in raw:
             metadata.appendix = self.walk_list("metadata.appendix", "appendix", raw, self.walk_appendix)
         else:
             metadata.appendix = []
+        metadata.icon = os.path.join(self.path, metadata.name+'.png')
         metadata.tags = self.recommend_field("metadata", "tags", raw, [], list)
         return metadata
             
@@ -232,11 +235,13 @@ class Compiler(object):
         if isinstance(data, dict):
             argument.name = de_identifier(self.require_field(location, "name", data, "", str))
             location = "{}.{}".format(in_location, clean_identifier(argument.name))
+            argument.internal_name = self.require_field(location, "name", data, "", str)
             argument.type = self.require_field(location, "type", data, "str", str)
             argument.description = self.recommend_field(location, "description", 
                             data, "", str)
             argument.form = self.recommend_field(location, "form", data, "query", str)
             argument.default = self.typecheck_field(location, "default", data, "", str)
+            argument.visible = self.typecheck_field(location, "visible", data, True, bool)
         else:
             self.type_error(location, dict, type(data))
         return argument
@@ -394,6 +399,7 @@ class Compiler(object):
         self.package.locals = self.walk_locals(spec)
         if 'http' in spec:
             self.package.https = self.walk_https(spec)
+            self.package.lookup_https = {h.name: h for h in self.package.https}
         
         
 pass

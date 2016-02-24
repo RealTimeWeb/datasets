@@ -14,18 +14,24 @@ class _Constants(object):
 if _Constants._PYTHON_3:
     import urllib.request as _request
     from urllib.parse import quote_plus as _quote_plus
+    from urllib.error import HTTPError as _HTTPError
 else:
     import urllib2 as _urllib2
     from urllib import quote_plus as _quote_plus
+    from urllib2 import HTTPError as _HTTPError
 
 class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
 _Constants._DATABASE_NAME = "weather.db"
+if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
+    raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
+elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
+    raise DatasetException("Error! Could not read the \"{0}\" file. Make sure that it readable by changing its permissions. You may need to get help from your instructor.".format(_Constants._DATABASE_NAME, __name__))
+
 _Constants._DATABASE = _sql.connect(_Constants._DATABASE_NAME)
 
-    
 class _Auxiliary(object):
     @staticmethod
     def _parse_type(value, type_func):
@@ -114,19 +120,25 @@ class _Auxiliary(object):
 ################################################################################
 
 class _Cache(object):
+    GEOCODE_ERRORS = {"REQUEST_DENIED": "The given address was denied.",
+				  "ZERO_RESULTS": "The given address could not be found.",
+				  "OVER_QUERY_LIMIT": "The geocoding service has been used too many times today.",
+				  "INVALID_REQUEST": "The given address was invalid.",
+				  "UNKNOWN_ERROR": "A temporary error occurred; please try again.",
+				  "UNAVAILABLE": "The given address is not available offline."}
 
     def __init__(self):
         self._cache = {}
         self._cache_count = {}
         self._editable = False
-        self._connected = False
+        self._connected = True
         self._pattern = 'repeat'
         
     def get(self, indexed_query, full_query):
         '''
         Get any data available for this query if online, else get the offline
         '''
-        return _Auxiliary._get(full_query) if self._connected else self._lookup(indexed_queryquery)
+        return _Auxiliary._get(full_query) if self._connected else self.lookup(indexed_query)
     
     def start_editing(self, pattern="repeat"):
         """
@@ -228,6 +240,48 @@ class _Cache(object):
             self._cache_counter[key] = 0
         self._connected = False
         
+    def _geocode_intepret(self, response):
+        if response == "":
+            if self._connected:
+                raise DatasetException("Nothing was returned from the server.")
+            else:
+                raise DatasetException("The given city was not in the cache.")
+        try:
+            geocode_data = _Auxiliary._byteify(_json.loads(response))
+        except ValueError:
+            raise DatasetException("The response from the Server was invalid. Perhaps the internet is down?")
+        status = geocode_data.get('status', 'INVALID_RETURN')
+        if status == 'OK':
+            try:
+                results = geocode_data['results']
+                if results:
+                    location = results[0]['geometry']['location']
+                    latitude = location['lat']
+                    longitude = location['lng']
+                else:
+                    raise DatasetException("The address could not be found; check that it's valid on Google Maps.")
+            except KeyError:
+                raise DatasetException("The response from the Geocode server was invalid. Perhaps this wasn't a valid address?")
+            return latitude, longitude
+        else:
+            raise DatasetException(self.GEOCODE_ERRORS.get(status, "Unknown error occurred: "+status))
+        
+    def geocode(self, address):
+        address = ",".join([p.strip() for p in address.lower().split(",")])
+        arguments = dict([("address", address), ("sensor", "true")])
+        key = _Auxiliary._urlencode("http://maps.googleapis.com/maps/api/geocode/json", arguments)
+        try:
+            result = self.get(key, key)
+        except _HTTPError as e:
+            raise DatasetException("Could not connect. Check your internet connection.")
+        # Store to the cache if necessary
+        try:
+            if self._connected and self._editable:
+                self.add_to_cache(full_query, result)
+            return self._geocode_intepret(result)
+        except ValueError:
+            raise DatasetException("Internal Error.")
+        
 _CACHE = _Cache()
 _start_editing = _CACHE.start_editing
 _stop_editing = _CACHE.stop_editing
@@ -244,7 +298,7 @@ disconnect = _CACHE.disconnect
 
     
 
-def _forecastgov_request(lat, lon, result_format="json"):
+def _forecastgov_request(lat, lon, fcsttype="json"):
     """
     Connects to an online data source and retrieves information from http://forecast.weather.gov/MapClick.php
     
@@ -252,22 +306,22 @@ def _forecastgov_request(lat, lon, result_format="json"):
     :type lat: float
     :param lon: The longitude
     :type lon: float
-    :param result_format: A hidden parameter that controls the result format.
-    :type result_format: string
+    :param fcsttype: A hidden parameter that controls the result format.
+    :type fcsttype: string
     :returns: str
     """
-    baseurl = "http://forecast.weather.gov/MapClick.php".format()
+    baseurl = "http://forecast.weather.gov/MapClick.php"
     
     # Build up the query
     full_query = _Auxiliary._urlencode(baseurl, {
                                        'lat': lat,
                                        'lon': lon,
-                                       'result format': result_format})
+                                       'FcstType': fcsttype})
     
     # Retrieve the data, either cached or online
     try:
         result = _CACHE.get(full_query, full_query)
-    except HTTPError as e:
+    except _HTTPError as e:
         raise DatasetException("Could not connect. Check your internet connection.")
     
     # Make sure the result is not empty
@@ -278,7 +332,7 @@ def _forecastgov_request(lat, lon, result_format="json"):
     try:
         if _CACHE._connected and _CACHE._editable:
             _CACHE.add_to_cache(full_query, result)
-        return _Auxiliary._byteify(_json.loads(result))
+        return result
     except ValueError:
         raise DatasetException("Internal Error.")
 
@@ -298,14 +352,36 @@ def get_report(city):
     :type city: str
     """
     
+    if False:
+        # If there was a Test version of this method, it would go here. But alas.
+        pass
+    else:
+        lat,  lon = _CACHE.geocode(city)
+        r = _forecastgov_request(lat, lon)
+        r = _Auxiliary._byteify(_json.loads(r))
+        
+        return r
+        
+
+def get_temperature(city):
+    """
     
     
+    :param city: The name of the city you want to get information about.
+    :type city: str
+    """
     
     if False:
         # If there was a Test version of this method, it would go here. But alas.
         pass
-    
     else:
+        lat,  lon = _CACHE.geocode(city)
+        r = _forecastgov_request(lat, lon)
+        r = _Auxiliary._byteify(_json.loads(r))['data']['temperature'][0]
+        
+        r = _Auxiliary._parse_type(r, int)
+        
+        return r
         
 
 ################################################################################
@@ -318,7 +394,16 @@ def _test_interfaces():
     # Production test
     print("Production get_report")
     start_time = _default_timer()
-    result = get_report("Blacksburg, VA", )
+    result = get_report("Blacksburg, VA")
+    
+    _pprint(result)
+    
+    print("Time taken: {}".format(_default_timer() - start_time))
+    
+    # Production test
+    print("Production get_temperature")
+    start_time = _default_timer()
+    result = get_temperature("Blacksburg, VA")
     
     _pprint(result)
     

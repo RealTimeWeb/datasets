@@ -14,9 +14,11 @@ class _Constants(object):
 if _Constants._PYTHON_3:
     import urllib.request as _request
     from urllib.parse import quote_plus as _quote_plus
+    from urllib.error import HTTPError as _HTTPError
 else:
     import urllib2 as _urllib2
     from urllib import quote_plus as _quote_plus
+    from urllib2 import HTTPError as _HTTPError
 
 class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
@@ -122,19 +124,25 @@ class _Auxiliary(object):
 ################################################################################
 
 class _Cache(object):
+    GEOCODE_ERRORS = {"REQUEST_DENIED": "The given address was denied.",
+				  "ZERO_RESULTS": "The given address could not be found.",
+				  "OVER_QUERY_LIMIT": "The geocoding service has been used too many times today.",
+				  "INVALID_REQUEST": "The given address was invalid.",
+				  "UNKNOWN_ERROR": "A temporary error occurred; please try again.",
+				  "UNAVAILABLE": "The given address is not available offline."}
 
     def __init__(self):
         self._cache = {}
         self._cache_count = {}
         self._editable = False
-        self._connected = False
+        self._connected = True
         self._pattern = 'repeat'
         
     def get(self, indexed_query, full_query):
         '''
         Get any data available for this query if online, else get the offline
         '''
-        return _Auxiliary._get(full_query) if self._connected else self._lookup(indexed_queryquery)
+        return _Auxiliary._get(full_query) if self._connected else self.lookup(indexed_query)
     
     def start_editing(self, pattern="repeat"):
         """
@@ -235,6 +243,48 @@ class _Cache(object):
         for key in self._cache.keys():
             self._cache_counter[key] = 0
         self._connected = False
+        
+    def _geocode_intepret(self, response):
+        if response == "":
+            if self._connected:
+                raise DatasetException("Nothing was returned from the server.")
+            else:
+                raise DatasetException("The given city was not in the cache.")
+        try:
+            geocode_data = _Auxiliary._byteify(_json.loads(response))
+        except ValueError:
+            raise DatasetException("The response from the Server was invalid. Perhaps the internet is down?")
+        status = geocode_data.get('status', 'INVALID_RETURN')
+        if status == 'OK':
+            try:
+                results = geocode_data['results']
+                if results:
+                    location = results[0]['geometry']['location']
+                    latitude = location['lat']
+                    longitude = location['lng']
+                else:
+                    raise DatasetException("The address could not be found; check that it's valid on Google Maps.")
+            except KeyError:
+                raise DatasetException("The response from the Geocode server was invalid. Perhaps this wasn't a valid address?")
+            return latitude, longitude
+        else:
+            raise DatasetException(self.GEOCODE_ERRORS.get(status, "Unknown error occurred: "+status))
+        
+    def geocode(self, address):
+        address = ",".join([p.strip() for p in address.lower().split(",")])
+        arguments = dict([("address", address), ("sensor", "true")])
+        key = _Auxiliary._urlencode("http://maps.googleapis.com/maps/api/geocode/json", arguments)
+        try:
+            result = self.get(key, key)
+        except _HTTPError as e:
+            raise DatasetException("Could not connect. Check your internet connection.")
+        # Store to the cache if necessary
+        try:
+            if self._connected and self._editable:
+                self.add_to_cache(full_query, result)
+            return self._geocode_intepret(result)
+        except ValueError:
+            raise DatasetException("Internal Error.")
         
 _CACHE = _Cache()
 _start_editing = _CACHE.start_editing
@@ -337,19 +387,19 @@ def _{{ http.name | snake_case }}_request({% for arg in http.args %}{{arg.name |
     {% endfor -%}
     :returns: str
     """
-    baseurl = "{{ http.url | convert_url_parameters }}".format({% for input in http.url_inputs %}{{ input.name | snake_case}}{% if not loop.last %},{% endif%}{% endfor %})
+    baseurl = "{{ http.url | convert_url_parameters }}"{% if http.url_inputs %}.format({% for input in http.url_inputs %}{{ input.name | snake_case}}{% if not loop.last %},{% endif%}{% endfor %}){% endif %}
     
     # Build up the query
     full_query = _Auxiliary._urlencode(baseurl, {
                                        {%- for arg in http.args %}
-                                       '{{arg.name }}': {{arg.name| snake_case }}
+                                       '{{arg.internal_name }}': {{arg.name| snake_case }}
                                        {%- if not loop.last %},{% endif -%}
                                        {%- endfor %}})
     
     # Retrieve the data, either cached or online
     try:
         result = _CACHE.get(full_query, full_query)
-    except HTTPError as e:
+    except _HTTPError as e:
         raise DatasetException("Could not connect. Check your internet connection.")
     
     # Make sure the result is not empty
@@ -360,7 +410,7 @@ def _{{ http.name | snake_case }}_request({% for arg in http.args %}{{arg.name |
     try:
         if _CACHE._connected and _CACHE._editable:
             _CACHE.add_to_cache(full_query, result)
-        return _Auxiliary._byteify(_json.loads(result))
+        return result
     except ValueError:
         raise DatasetException("Internal Error.")
 
@@ -395,9 +445,9 @@ def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name|
             raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
         else:
             raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
-    {% endif %}
-    {% endfor %}
-    {% if interface.test %}
+    {% endif -%}
+    {% endfor -%}
+    {% if interface.test -%}
     if _Constants._TEST or test:
         {% if interface.test.type == "SQL" -%}
         rows = _Constants._DATABASE.execute("{{ interface.test.sql }}".format(
@@ -411,13 +461,16 @@ def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name|
         data = data[0]
         {% endif %}
         return _Auxiliary._byteify(data)
-        {% endif -%}
-    {% else %}
+        {% endif %}
+    {% else -%}
     if False:
         # If there was a Test version of this method, it would go here. But alas.
         pass
-    {% endif %}
+    {% endif -%}
     else:
+        {% if interface.production.pre -%}
+        {{ (interface.production.pre|parse_bark).lstrip() }}
+        {% endif -%}
         {% if interface.production.type == "SQL" -%}
         rows = _Constants._DATABASE.execute("{{ interface.production.sql }}".format(
             hardware=_Constants._HARDWARE){% if interface.args %},
@@ -430,8 +483,18 @@ def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name|
         {% endif %}
         {% endif -%}
         return _Auxiliary._byteify(data)
+        {% elif interface.production.type == "HTTP" -%}
+        {% set http = lookup_https[interface.production.http] -%}
+        r = _{{ interface.production.http | snake_case }}_request({% if http.args|selectattr('visible') %}{% for arg in http.args|selectattr('visible') %}{{arg.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %}{% endif %})
+        {% if interface.production.post -%}
+        r = {{ interface.production.post|parse_bark }}
         {% endif -%}
-
+        {% if interface.returns|is_builtin %}
+        r = {{ 'r'|convert_builtin(interface.returns) }}
+        {% endif %}
+        return r
+        {% endif -%}
+        
 {% endfor %}
 
 ################################################################################
@@ -445,7 +508,7 @@ def _test_interfaces():
     # Production test
     print("Production {{ interface.name | snake_case }}")
     start_time = _default_timer()
-    result = {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.args %}, {% endif %}{% if interface.test %}test=False{% endif %})
+    result = {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=False{% endif %})
     {% if interface.returns.startswith("list[") %}
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))

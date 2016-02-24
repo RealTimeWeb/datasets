@@ -12,7 +12,9 @@ import sqlite3
 import re
 from jinja2 import Environment, FileSystemLoader
 import jinja2_highlight
-templates = 'languages/python/'
+base_directory = os.path.dirname(os.path.realpath(__file__))
+templates = os.path.join(base_directory, 'python/')
+print templates
 env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader(templates))
 env.filters['camel_case_caps'] = camel_case_caps
 env.filters['camel_case'] = camel_case
@@ -90,7 +92,7 @@ def convert_builtin(data, type):
     if type == "string":
         return data
     else:
-        return '_parse_type({}, {})'.format(python_types[type], data)
+        return '_Auxiliary._parse_type({}, {})'.format(data, python_types[type])
 
 def create_xml_conversion(data, type):
     if is_list(type):
@@ -136,9 +138,11 @@ def parse_bark(commands):
         command_name = components[0][0]
         args = components[0][1].split(",")
         if command_name == "json":
-            result = "_json.loads({})".format(result)
+            result = "_Auxiliary._byteify(_json.loads({}))".format(result)
         elif command_name == "jsonpath":
             result = parse_json_path(args[0], result)
+        elif command_name == "geocode":
+            result = "{}, {} = _CACHE.geocode({})".format(args[1], args[2], args[0])
     return result
     
 def to_python_variable(source):
@@ -231,19 +235,33 @@ def build_locals(model, database_file):
             elif type == "csv":
                 pass
 
-def build_python(model):
+def build_python(model, fast):
     new_file, database_file = build_database(model)
     
+    name = flat_case(model['metadata']['name'])
+    new_folder = 'python/' + name + '/'
+    
     files = {}
+    
+    icon_file = model['metadata']['icon']
+    if os.path.exists(icon_file):
+        with open(icon_file, 'rb') as icon_data:
+            files[new_folder+name+'.png'] = icon_data.read()
+    else:
+        model["metadata"]["icon"] = False
+    
     files.update(build_metafiles(model))
     files.update(build_main(model))
     
-    build_locals(model, database_file)
-    
-    database_file.close()
-    moves = {new_file: 'python/' + flat_case(model['metadata']['name']) + '/'}
-    for appendix in model['metadata']['appendix']:
-        moves[appendix['file']] = 'python/' + flat_case(model['metadata']['name']) + '/'
+    if not fast:
+        build_locals(model, database_file)
+        
+        database_file.close()
+        moves = {new_file: new_folder}
+        for appendix in model['metadata']['appendix']:
+            moves[appendix['file']] = new_folder
+    else:
+        moves = {}
     
     return files, moves
     

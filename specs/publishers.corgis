@@ -8,7 +8,7 @@ metadata:
     description:
         overview: >
             From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.
-        citation: http://www.dhs.gov/yearbook-immigration-statistics
+        citation: http://authorearnings.com/report/september-2015-author-earnings-report/
 local:
   - file: publishers.json
     name: publishers

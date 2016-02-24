@@ -19,6 +19,58 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <script src="../_lib/lunr.js"></script>
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        try {
+            $.post('https://localhost:5000/services/log', {
+                        'user_id': user_id,
+                        'event': 'corgis',
+                        'action': action,
+                        'body': body
+                    }, function(data) {
+                        console.log(data);
+                    });
+        } catch(err) {console.error(err)};
+    }
+    
+    var searcher = lunr(function() {
+        this.field('name', 10);
+        this.field('tags', 100);
+        this.field('body');
+        this.field('description');
+        
+        this.ref('name');
+    });
+    $(document).ready(function() {
+        $("#search-bar").on('input propertychange', function() {
+            var needle = $(this).val();
+            if (needle == "") {
+                $(".dataset-card").show();
+            } else {
+                var results = searcher.search(needle);
+                $(".dataset-card").hide();
+                results.forEach(function (data) {
+                    $("#"+data.ref).show();
+                });
+            }
+            log('search', needle);
+        });
+        log('load', 'index');
+        function doPoll(){
+            log('remain', 'index, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+    });
+    </script>
+    
 </head>
 
 <body>
@@ -32,8 +84,62 @@
         <span class="text-muted">By Austin Cory Bart, Eli Tilevich, Clifford A. Shaffer, Dennis Kafura</span><br>
     </div>
     
+    <div class='row'>
+    <div class='search-bar'>
+    <form class="form-horizontal">
+      <div class="form-group form-group-lg">
+        <label for="search-bar" class="col-sm-2 control-label">Filter</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="search-bar" placeholder="Keyword or phrase">
+        </div>
+      </div>
+    </form>
+    </div>
+    </div>
+    <hr>
+    
+    <div class="row">
     {% for preview in previews %}
     {{ preview }}
     {% endfor %}
+    </div>
+    
+    <div class="row">
+    <hr>
+    
+    <h2>Future Potential Datasets</h2>
+    
+    <p>The datasets listed below have not been fully implemented, but they could be! Feel free to consider them too.</p>
+    
+    <div class='col-md-8 col-md-offset-1'>
+    <ol>
+    <li>Airlines: Bureau of Transportation Statistics about flights recorded in the united states, including how long it was in the air, whether it was delayed, how long it spent taxiing, etc. (<a href="http://dhresourcesforprojectbuilding.pbworks.com/w/page/69244469/Data%20Collections%20and%20Datasets">Link</a>)</li>
+    <li>Agriculture: Datasets about agricultural statistics in the US (<a href="http://www.ers.usda.gov/data-products.aspx">Link</a>)</li>
+    <li>OSHA Safety Reports</li>
+    <li>Building permits</li>
+    <li>New York Crime: Detailed information about crime reports in New York City.</li>
+    <li>Officer Shootings: Reports about shootings committed by officers, including race.</li>
+    <li>Suicide attacks: Reports about suicide bombings since the 1980s around the world. </li>
+    <li>Disease: Reported aggregates of diseases throughout american history.</li>
+    <li>University crime: Reported statistics of crime on college campuses.</li>
+    <li>Food: Information about food regulated by the US.</li>
+    <li>Cancer: Incidences of different kinds of cancer in the US.</li>
+    <li>Medal of honor: Reports of Medal of Honor awards.</li>
+    <li>Hydropower: Information about hydropower dams across the US.</li>
+    <li>Hospitals: Information about hospitals across the US.</li>
+    <li>Drug spending: Information about how much drugs cost to sell and produce.</li>
+    <li>Injuries: CPSC's National Electronic Injury Surveillance System (NEISS) is a national probability sample of hospitals in the U.S. and its territories. Patient information is collected from each NEISS hospital for every emergency visit involving an injury associated with consumer products. From this sample, the total number of product-related injuries treated in hospital emergency rooms nationwide can be estimated. This web access to NEISS allows certain estimates to be retrieved on-line. These estimates can be focused by setting some or all of the following variables: date, product, sex, diagnosis, part injured, and age.</li>
+    <li>Historic Energy use: Information about energy usage in the US (<a href="http://www.eia.gov/electricity/data/eia923/">Link</a>)</li>
+    <li>Religious groups: Information about membership in religious groups (<a href="http://www.thearda.com/rcms2010/">Link</a>)</li>
+    <li>Youth risk: The Youth Risk Behavior Surveillance System (YRBSS) monitors six types of health-risk behaviors that contribute to the leading causes of death and disability among youth and adults, including: Behaviors that contribute to unintentional injuries and violence, Sexual behaviors that contribute to unintended pregnancy and sexually transmitted diseases, including HIV infection, Alcohol and other drug use, Tobacco use, Unhealthy dietary behaviors, Inadequate physical activity. YRBSS also measures the prevalence of obesity and asthma among youth and young adults.<a href="http://www.cdc.gov/healthyyouth/data/yrbs/data.htm">Link</a></li>
+    <li>Foreign assistance: Reports of foreign assistance from the US to other countries.</li>
+    <li>Mortgage: HMDA data provide information regarding home mortgage lending activity. The Home Mortgage Disclosure Act (HMDA) was enacted by Congress in 1975 and was implemented by the Federal Reserve Board's Regulation C. On July 21, 2011, the rule-writing authority of Regulation C was transferred to the Consumer Financial Protection Bureau (CFPB). </li>
+    <li>State Department per Diem: Information about per diem reported by US State Department employees.</li>
+    <li>Skyscrapers: Information about skyscrapers all over the world. (<a href="http://www.skyscrapercenter.com/interactive-data/submit?type%5B%5D=building&type%5B%5D=tower&status%5B%5D=COM&status%5B%5D=UC&status%5B%5D=UCT&status%5B%5D=STO&status%5B%5D=OH&status%5B%5D=NC&status%5B%5D=PRO&status%5B%5D=VIS&status%5B%5D=DEM&material%5B%5D=steel&material%5B%5D=concrete&material%5B%5D=composite&material%5B%5D=concrete%2Fsteel&material%5B%5D=steel%2Fconcrete&material%5B%5D=precast&material%5B%5D=masonry&function%5B%5D=office&function%5B%5D=residential&function%5B%5D=hotel&function%5B%5D=mixed-use&base_region=0&base_country=163&base_city=0&base_height_range=0&base_company=All&base_min_year=1960&base_max_year=2017&comp_region=0&comp_country=2&comp_city=0&comp_height_range=3&comp_company=All&comp_min_year=1960&comp_max_year=2017&skip_comparison=on&output%5B%5D=list&dataSubmit=Show+Results">Link</a>)</li>
+    <li>Major Construction Developments: Listing of major development projects completed, underway or approved and their characteristics (<a href="https://data.kcmo.org/Construction/Major-Development-Projects-1990-to-2012/wx2f-2ukt">Link</a>)</li>
+    </ol>
+    </div>
+    
+    </div>
     
 </div>

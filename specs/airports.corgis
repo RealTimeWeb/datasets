@@ -7,6 +7,7 @@ metadata:
     datetime: 11/1/2015
     tags: [airplane, airports, travel, plane, air]
     description:
+        short: All about airports across the world, including features like runway length and geocoordinates.
         overview: >
             This dataset is all about airports.
             
