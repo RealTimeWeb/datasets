@@ -236,14 +236,13 @@ def build_locals(model, database_file):
                 pass
 
 def build_python(model, fast):
-    new_file, database_file = build_database(model)
-    
     name = flat_case(model['metadata']['name'])
     new_folder = 'python/' + name + '/'
     
     files = {}
     
     icon_file = model['metadata']['icon']
+    
     if os.path.exists(icon_file):
         with open(icon_file, 'rb') as icon_data:
             files[new_folder+name+'.png'] = icon_data.read()
@@ -254,6 +253,7 @@ def build_python(model, fast):
     files.update(build_main(model))
     
     if not fast:
+        new_file, database_file = build_database(model)
         build_locals(model, database_file)
         
         database_file.close()

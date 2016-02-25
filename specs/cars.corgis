@@ -7,7 +7,7 @@ metadata:
     tags: [cars, vehicles, fuel]
     description:
         overview: >
-            This is a dataset about cars.
+            This is a dataset about cars and how much fuel they use.
 local:
   - file: cars.json
     name: cars

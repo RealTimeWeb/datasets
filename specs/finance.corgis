@@ -6,6 +6,7 @@ metadata:
     datetime: 11/1/2015
     tags: [finance, government, expenditure, charges, money, united states, us]
     description:
+        short: The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states.
         overview: >
             The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states. The data contain detail of revenue by source, expenditure by object and function, indebtedness by term, and assets by purpose. This data goes back for almost two decades across every date.
         citation: http://www.census.gov//govs/state/about_the_survey.html

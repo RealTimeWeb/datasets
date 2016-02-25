@@ -183,7 +183,7 @@ class Compiler(object):
             metadata.appendix = self.walk_list("metadata.appendix", "appendix", raw, self.walk_appendix)
         else:
             metadata.appendix = []
-        metadata.icon = os.path.join(self.path, metadata.name+'.png')
+        metadata.icon = os.path.join(self.path, metadata.name.replace(' ', '').lower()+'.png')
         metadata.tags = self.recommend_field("metadata", "tags", raw, [], list)
         return metadata
             

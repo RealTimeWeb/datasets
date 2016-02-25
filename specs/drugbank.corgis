@@ -6,6 +6,7 @@ metadata:
     datetime: 11/2/2015
     tags: [drugs, drug, drugbank, chemistry, biology, biochemistry, proteins]
     description:
+        short: The DrugBank database is a cheminformatics resource that combines detailed drug data with comprehensive drug target information.
         overview: >
             The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.
 

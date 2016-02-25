@@ -5,7 +5,7 @@ base_directory = os.path.dirname(os.path.realpath(__file__))
 
 templates = base_directory
 env = Environment(loader=FileSystemLoader(templates))
-skip_list = ['baseball', 'nfl', 'soccer', 'twitter', 'gutenberg']
+skip_list = ['baseball', 'nfl', 'soccer', 'twitter', 'gutenberg', 'weather']
 
 previews = [open(os.path.join(base_directory, folder, folder+'_preview.html')).read()
             for folder in os.listdir(base_directory+'/') 
