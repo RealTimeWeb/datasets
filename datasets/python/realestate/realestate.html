@@ -98,7 +98,7 @@
         user_id = localStorage.getItem('user_id');
     }
     function log(action, body) {
-        $.post('https://localhost:5000/services/log', {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
                     'user_id': user_id,
                     'event': 'corgis',
                     'action': action,
