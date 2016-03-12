@@ -98,7 +98,7 @@ def get_buildings(test=True):
     
     """
     if _Constants._TEST or test:
-        rows = _Constants._DATABASE.execute("SELECT data FROM real_estate LIMIT {hardware}".format(
+        rows = _Constants._DATABASE.execute("SELECT data FROM realestate LIMIT {hardware}".format(
             hardware=_Constants._HARDWARE))
         data = [r[0] for r in rows]
         data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
@@ -106,7 +106,7 @@ def get_buildings(test=True):
         return _Auxiliary._byteify(data)
         
     else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM real_estate".format(
+        rows = _Constants._DATABASE.execute("SELECT data FROM realestate".format(
             hardware=_Constants._HARDWARE))
         data = [r[0] for r in rows]
         data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
@@ -118,12 +118,12 @@ def get_buildings_by_state(state):
     """
     Returns a list of the buildings in the database for a state.
     
-    :param state: The name of a state
+    :param state: The two-letter abbreviation for a state
     :type state: Str
     """
     
     # Match it against recommend values
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT state FROM real_estate").fetchall()]
+    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT state FROM realestate").fetchall()]
     if state.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(state, potentials)
         if best_guesses:
@@ -134,7 +134,7 @@ def get_buildings_by_state(state):
         # If there was a Test version of this method, it would go here. But alas.
         pass
     else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM real_estate WHERE state=?".format(
+        rows = _Constants._DATABASE.execute("SELECT data FROM realestate WHERE state=?".format(
             hardware=_Constants._HARDWARE),
             (state, ))
         data = [r[0] for r in rows]
@@ -172,7 +172,7 @@ def _test_interfaces():
     # Production test
     print("Production get_buildings_by_state")
     start_time = _default_timer()
-    result = get_buildings_by_state()
+    result = get_buildings_by_state('VA')
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))

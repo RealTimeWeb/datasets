@@ -5,9 +5,12 @@ import csv
 import shutil
 import json
 import sys, os
+import requests
+import xlrd
 from tempfile import NamedTemporaryFile
 from collections import OrderedDict
 from pprint import pprint
+
 
 _PYTHON_3 = sys.version_info >= (3, 0)
 def _byteify(input):
@@ -34,6 +37,70 @@ class Dataset(object):
     def iterator(self):
         return []
         
+class XLSDataset(Dataset):
+    def __init__(self, location, sheet, 
+                 header_start_row=None, header_end_row=None,
+                 header_start_column=None, header_end_column=None,
+                 data_start_row=None, data_end_row=None,
+                 data_start_column=None, data_end_column=None):
+        self.location = location
+        self.sheet = sheet
+        self.header_start_row = header_start_row
+        self.header_end_row = header_end_row
+        self.header_start_column = header_start_column
+        self.header_end_column = header_end_column
+        self.data_start_row=data_start_row
+        self.data_end_row=data_end_row
+        self.data_start_column=data_start_column
+        self.data_end_column=data_end_column
+        
+    def grab_content(self, rows, start_row, end_row, start_col, end_col):
+        header = {}
+        row_mode = 'STARTING'
+        start_row_index = 0
+        col_mode = 'STARTING'
+        start_column_index = 0
+        for index, row in enumerate(rows):
+            if row_mode == 'STARTING' and start_row(index, row):
+                row_mode = 'GRABBING'
+                start_row_index = index
+            if row_mode == 'GRABBING':
+                for col_index, col in enumerate(row):
+                    if col_mode == 'STARTING' and start_col(col_index, col):
+                        col_mode = 'GRABBING'
+                        start_column_index = col_index
+                    if col_mode == 'GRABBING':
+                        if col_index in header:
+                            header[col_index].append(col)
+                        else:
+                            header[col_index] = [col]
+                        if end_col(col_index, start_column_index, row):
+                            break
+                col_mode = 'STARTING'
+                if end_row(index, start_row_index, row):
+                    break
+        return map(lambda x: x[1], sorted(header.items(), key=lambda x: x[0]))
+    
+    def _reload_header(self, rows):
+        return self.grab_content(rows, self.header_start_row, self.header_end_row,
+                          self.header_start_column, self.header_end_column)
+    def _reload_body(self, rows):
+        return self.grab_content(rows, self.data_start_row, self.data_end_row,
+                          self.data_start_column, self.data_end_column)
+        
+    def iterator(self):
+        workbook = xlrd.open_workbook(self.location)
+        if isinstance(self.sheet, int):
+            sheet = workbook.sheet_by_index(self.sheet)
+        else:
+            sheet = workbook.sheet_by_name(self.sheet)
+        rows = [map(str, sheet.row_values(line)) for line in xrange(sheet.nrows)]
+        self._header = self._reload_header(rows)
+        yield self._header
+        for row in self._reload_body(rows):
+            yield row
+            #yield OrderedDict(zip(self._header, row))
+        
 class JSONDataset(Dataset):
     def __init__(self, data):
         self.data = data
@@ -45,7 +112,16 @@ class JSONDataset(Dataset):
     def to_file(self, filename):
         with open(filename, 'w') as output:
             json.dump(_byteify(list(self.data)), output)
+            
+
     
+class FileList(Dataset):
+    def __init__(self, file_list):
+        self.file_list = file_list
+        
+    def iterator(self):
+        for element in self.file_list:
+            yield element
         
 class CSVReaderDataset(Dataset):
     def __init__(self, location, delimiter, quotechar, header):
@@ -84,6 +160,30 @@ class Step(object):
     def apply(self, data):
         return data
         
+def download_file(url, destination_folder, replace=False):
+    local_filename = destination_folder+url.split('/')[-1]
+    if os.path.exists(local_filename) and not replace:
+        return local_filename
+    r = requests.get(url, stream=True)
+    with open(local_filename, 'wb') as f:
+        for chunk in r.iter_content(chunk_size=1024): 
+            if chunk:
+                f.write(chunk)
+    return local_filename
+        
+class Download(object):
+    def __init__(self, target, destination, replace=False):
+        if isinstance(target, str):
+            self.targets = [target]
+        else:
+            self.targets = target
+        self.destination = destination
+        self.replace = replace
+        
+    def apply(self, data):
+        return FileList([download_file(target, self.destination, self.replace)
+                         for target in self.targets])
+        
 class LoadCSV(object):
     '''
     Loads in a CSV file and returns an iterator over that file.
@@ -100,6 +200,24 @@ class LoadCSV(object):
     def apply(self, data):
         return CSVReaderDataset(self.location, self.delimiter, self.quotechar, self.header)
         
+class LoadCSVs(object):
+    '''
+    Loads in a CSV file and returns an iterator over that file.
+    
+    :param header: If this parameter is False, no header is present in the file and you will have to refer to columns with a numerical index. If it is True, then the header is inferred from the first line. If this parameter is a list of strings, that list of strings will be used as the header.
+    :type header: Boolean, or list of strings
+    '''
+    def __init__(self, delimiter=',', quotechar='"', header=False):
+        self.delimiter = delimiter
+        self.quotechar = quotechar
+        self.header = header
+        
+    def apply(self, data):
+        print "HEY WHAT"
+        for location in data.iterator():
+            print(location)
+            yield CSVReaderDataset(location, self.delimiter, self.quotechar, self.header)
+        
 class MapFunction(object):
     '''
     Manipulates individual elements according to a rule.
@@ -109,7 +227,65 @@ class MapFunction(object):
         
     def apply(self, data):
         return JSONDataset(self.rule(element) for element in data.iterator())
-            
+class FilterFunction(object):
+    '''
+    Manipulates individual elements according to a rule.
+    '''
+    def __init__(self, rule):
+        self.rule = rule
+        
+    def apply(self, data):
+        if isinstance(data, FileList):
+            return FileList(list(element for element in data.iterator() if self.rule(element)))
+        else:
+            return JSONDataset(element for element in data.iterator() if self.rule(element))
+class Slice(object):
+    '''
+    Manipulates individual elements according to a rule.
+    '''
+    def __init__(self, start=0, end=-1, stride=1):
+        self.start = start
+        self.end = end
+        
+    def apply(self, data):
+        for item in itertools.islice(data.iterator(), self.start, self.end, self.stride):
+            yield item
+        
+        
+class OverList(Step):
+    def __init__(self, step_function):
+        self.step_function = step_function
+    def apply(self, data):
+        for item in data:
+            yield self.step_function.apply(item)
+    
+class Print(object):
+    def apply(self, data):
+        for item in data.iterator():
+            pprint(item)
+                
+class DumpXLS(object):
+    def __init__(self, replace=False):
+        self.replace = replace
+    def apply(self, data):
+        files = []
+        for excel_file in data.iterator():
+            #print excel_file
+            workbook = xlrd.open_workbook(excel_file)
+            all_worksheets = workbook.sheet_names()
+            base = excel_file.rsplit('.', 1)[0]
+            for worksheet_name in all_worksheets:
+                worksheet = workbook.sheet_by_name(worksheet_name)
+                output_filename = base+worksheet_name+'.csv'
+                if os.path.exists(output_filename) and not self.replace:
+                    files.append(output_filename)
+                your_csv_file = open(output_filename, 'wb')
+                wr = csv.writer(your_csv_file, quoting=csv.QUOTE_ALL)
+                for rownum in xrange(worksheet.nrows):
+                    wr.writerow([unicode(entry).encode("utf-8") for entry in worksheet.row_values(rownum)])
+                your_csv_file.close()
+                files.append(output_filename)
+        return FileList(files)
         
 class Save(object):
     '''

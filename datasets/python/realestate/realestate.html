@@ -185,7 +185,7 @@
     
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">realestate</span>
 <span class="n">list_of_building</span> <span class="o">=</span> <span class="n">realestate</span><span class="o">.</span><span class="n">get_buildings</span><span class="p">()</span>
-<span class="n">list_of_building</span> <span class="o">=</span> <span class="n">realestate</span><span class="o">.</span><span class="n">get_buildings_by_state</span><span class="p">()</span>
+<span class="n">list_of_building</span> <span class="o">=</span> <span class="n">realestate</span><span class="o">.</span><span class="n">get_buildings_by_state</span><span class="p">(</span><span class="s">&#39;VA&#39;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -236,7 +236,7 @@ Returns a list of the buildings in the database for a state.
 
 <li class="list-group-item">
     <h5 class="list-group-item-heading"><b>state</b>: <i>Str</i></h5>
-    <p class="list-group-item-text">The name of a state
+    <p class="list-group-item-text">The two-letter abbreviation for a state
     <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
     </p>
 </li>

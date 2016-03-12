@@ -1,0 +1,23 @@
+metadata:
+    version: 1
+    name: Labor
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 3/11/2016
+    tags: [labor, race, age, sex, gender, america, usa, census, employed, unemployed, employability, job, work, civilian, black, white, asian, government]
+    description:
+        overview: >
+            The Current Population Survey (CPS) is a monthly survey of households conducted by the Bureau of Census for the Bureau of Labor Statistics. It provides a comprehensive body of data on the labor force, employment, unemployment, persons not in the labor force, hours of work, earnings, and other demographic and labor force characteristics.
+        short: >
+            Employment status of the civilian population by race, sex, and age
+        citation: http://www.bls.gov/cps/home.htm
+local:
+  - file: labor.json
+    name: labor
+interfaces:
+  - name: get results
+    returns: list[result]
+    description: Returns the results of the survey for each month, stretching back several decades.
+    production:
+        sql: SELECT data FROM labor
+        post: json()
