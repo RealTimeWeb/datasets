@@ -52,7 +52,7 @@ if __name__ == '__main__':
             for error in errors:
                 print "\t\t", error
             #print("*"*10)
-            pprint(to_dict(compiled))
+            #pprint(to_dict(compiled))
             if args.language.lower() == "python":
                 files, moves = build_python(to_dict(compiled), args.fast)
                 build_data, build_errors = build_dir(files, moves, args.target)

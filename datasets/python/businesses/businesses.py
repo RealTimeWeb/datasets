@@ -6,7 +6,7 @@ import difflib as _difflib
 
 class _Constants(object):
     _HEADER = {'User-Agent': 
-              'CORGIS Yelp library for educational purposes'}
+              'CORGIS Businesses library for educational purposes'}
     _PYTHON_3 = _sys.version_info >= (3, 0)
     _TEST = False
     _HARDWARE = 1000
@@ -24,7 +24,7 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "yelp.db"
+_Constants._DATABASE_NAME = "businesses.db"
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):
