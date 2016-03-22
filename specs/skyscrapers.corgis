@@ -1,0 +1,25 @@
+metadata:
+    version: 1
+    name: Skyscrapers
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 3/22/2016
+    tags: [buildings, construction, building, skyscrapers, international, tall, height, tower]
+    description:
+        short: Information about tall buildings constructed all over the world.
+        overview: >
+            Collected statistics about the tallest buildings all over the world, including the materials used to develop them, the purpose of the buildings, and more.
+        citation: http://www.skyscrapercenter.com/
+local:
+  - file: skyscrapers.json
+    name: skyscrapers
+interfaces:
+  - name: get skyscrapers
+    returns: list[skyscraper]
+    description: Returns a list of the skyscrapers in the database.
+    production:
+        sql: SELECT data FROM skyscrapers
+        post: json()
+    test:
+        sql: SELECT data FROM skyscrapers LIMIT {hardware}
+        post: json()
