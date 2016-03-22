@@ -1,0 +1,26 @@
+metadata:
+    version: 1
+    name: Construction Spending
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 3/20/2016
+    tags: [construction, spending, us, united states, america, government, buildings, residential, non-residential, private, public]
+    description:
+        short: Estimates of the total dollar value of construction work done in the U.S.
+        overview: >
+            The Value of Construction Put in Place Survey (VIP) provides monthly estimates of the total dollar value of construction work done in the U.S. The United States Code, Title 13, authorizes this program. The survey covers construction work done each month on new structures or improvements to existing structures for private and public sectors. Data estimates include the cost of labor and materials, cost of architectural and engineering work, overhead costs, interest and taxes paid during construction, and contractor's profits. Data collection and estimation activities begin on the first day after the reference month and continue for about three weeks. Reported data and estimates are for activity taking place during the previous calendar month. The survey has been conducted monthly since 1964. 
+
+        citation: http://www.census.gov/construction/c30/c30index.html
+local:
+  - file: constructionspending.json
+    name: constructionspending
+interfaces:
+  - name: get spending
+    description: Returns spending data from every year.
+    returns: list[spending]
+    production:
+        sql: SELECT data FROM constructionspending
+        post: json()
+    test:
+        sql: SELECT data FROM constructionspending LIMIT {hardware}
+        post: json()

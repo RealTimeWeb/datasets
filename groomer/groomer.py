@@ -113,7 +113,9 @@ class JSONDataset(Dataset):
         with open(filename, 'w') as output:
             json.dump(_byteify(list(self.data)), output)
             
-
+class Datasets(object):
+    def __init__(self):
+        self.list = {}
     
 class FileList(Dataset):
     def __init__(self, file_list):
@@ -124,8 +126,9 @@ class FileList(Dataset):
             yield element
         
 class CSVReaderDataset(Dataset):
-    def __init__(self, location, delimiter, quotechar, header):
+    def __init__(self, name, location, delimiter, quotechar, header):
         # Initialization of attributes
+        self.name = name
         self.location = location
         self.header = header
         self.delimiter = delimiter
@@ -191,14 +194,15 @@ class LoadCSV(object):
     :param header: If this parameter is False, no header is present in the file and you will have to refer to columns with a numerical index. If it is True, then the header is inferred from the first line. If this parameter is a list of strings, that list of strings will be used as the header.
     :type header: Boolean, or list of strings
     '''
-    def __init__(self, location, delimiter=',', quotechar='"', header=False):
+    def __init__(self, location, delimiter=',', quotechar='"', header=False, name=None):
         self.location = location
         self.delimiter = delimiter
         self.quotechar = quotechar
         self.header = header
+        self.name = name if name is not None else location
         
     def apply(self, data):
-        return CSVReaderDataset(self.location, self.delimiter, self.quotechar, self.header)
+        return CSVReaderDataset(self.name, self.location, self.delimiter, self.quotechar, self.header)
         
 class LoadCSVs(object):
     '''

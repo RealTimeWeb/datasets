@@ -1,0 +1,23 @@
+metadata:
+    version: 1
+    name: Billionaires
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 3/12/2016
+    tags: [money, rich, wealthy, people, person, billionaire]
+    description:
+        overview: >
+            Researchers have compiled a multi-decade database of the super-rich. Building off the Forbes World's Billionaires lists from 1996-2014, scholars at Peterson Institute for International Economics have added a couple dozen more variables about each billionaire - including whether they were self-made or inherited their wealth. (Roughly half of European billionaires and one-third of U.S. billionaires got a significant financial boost from family, the authors estimate.)
+        short: >
+            Information about over 2000 billionaires from around the world.
+        citation: http://www.iie.com/publications/interstitial.cfm?ResearchID=2917
+local:
+  - file: billionaires.json
+    name: billionaires
+interfaces:
+  - name: get billionaires
+    returns: list[billionaire]
+    description: Returns information about all the billionaires.
+    production:
+        sql: SELECT data FROM billionaires
+        post: json()
