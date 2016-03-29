@@ -1,0 +1,29 @@
+metadata:
+    version: 1
+    name: Suicide Attacks
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 3/27/2016
+    tags: [global, attack, damage, kill, hurt, destroy, pain, suffering, terror, terrorism, religion, warfare, war, car, bomb, gun, shooting]
+    description:
+        short: This dataset has about suicide attacks all over the world for the past three decades.
+        overview: >
+            The Chicago Project on Security and Terrorism (CPOST) maintains a searchable database on all suicide attacks from 1982 through September 2015. The database includes information about the location of attacks, the target type, the weapon used, and systematic information on the demographic and general biographical characteristics of suicide attackers. The database expands the breadth of the data available in English using native language sources (e.g., Arabic, Hebrew, Russian, Tamil) that are likely to have the most extensive relevant information.
+            
+            The current CPOST-SAD release contains the universe of suicide attacks from 1982 through September 2015, a total of 4,814 attacks in over 40 countries. The CPOST Suicide Attack Database (CPOST-SAD) contains data on the universe of suicide attacks. For each attack, the database includes information about the geographic location, target classification, and weapon(s) used, as well as systematic information on the demographic and general biographical characteristics of suicide attackers. More information about the coding and methodology is available on the CPOST website below.
+            
+            Note that multiple attackers or targets are collapsed into a single record for simplicity's sake.
+        citation: Chicago Project on Security and Terrorism (CPOST). 2015. Suicide Attack Database (December 9, 2015 Release). [Data File]. Retrieved from http://cpostdata.uchicago.edu/
+local:
+  - file: suicide_attacks.json
+    name: suicideattacks
+interfaces:
+  - name: get attacks
+    returns: list[attack]
+    description: Returns a list of the attacks in the database.
+    production:
+        sql: SELECT data FROM suicideattacks
+        post: json()
+    test:
+        sql: SELECT data FROM suicideattacks LIMIT {hardware}
+        post: json()

@@ -1,0 +1,27 @@
+metadata:
+    version: 1
+    name: Airlines
+    builder: 2
+    hardware: 100
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 3/27/2015
+    tags: [airplane, airports, travel, plane, air, flights, delays, national, united states, transportation]
+    description:
+        short: Information about flight delays in major aiports since 2003.
+        overview: >
+            This dataset is all about flights in the united states, including information about the number, length, and type of delays. The data is reported for individual months at every major airport for every carrier.
+            
+            Additional information is available: <a href="http://www.rita.dot.gov/bts/help/aviation/html/understanding.html">http://www.rita.dot.gov/bts/help/aviation/html/understanding.html</a>
+local:
+  - file: airlines.json
+    name: airlines
+interfaces:
+  - name: get reports
+    returns: list[report]
+    description: Returns a list of reports in the database.
+    production:
+        sql: SELECT data FROM airlines
+        post: json()
+    test:
+        sql: SELECT data FROM airlines LIMIT {hardware}
+        post: json()
