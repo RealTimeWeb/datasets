@@ -7,6 +7,7 @@ metadata:
     tags: [movies, scripts, gender]
     hardware: 20
     description:
+        short: This dataset is all about the text scripts of over 600 movies.
         overview: >
             This dataset is all about over 600 movies. It was collected and organized by the Cornell Movie Dialogs Corpus. More information about the project is available at the CMDC site (http://www.mpi-sws.org/~cristian/Cornell_Movie-Dialogs_Corpus.html).
 local:

@@ -6,8 +6,13 @@ metadata:
     datetime: 11/1/2015
     tags: [energy, renewable, united states, us, nuclear, fossil fuels, power]
     description:
+        short: United States Government reports on consumption, production, import, and export of various fuel sources.
         overview: >
             United States Government reports on consumption, production, import, and export of various fuel sources.
+            
+            This data comes from the US Energy Information Administration, which has historical data from 1949 to 2014. All numbers are given in Quadrillion BTUs. 
+            
+        citation: http://www.eia.gov/tools/faqs/
 structures:
   - name: report
     fields:

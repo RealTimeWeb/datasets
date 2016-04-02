@@ -1,0 +1,26 @@
+metadata:
+    version: 1
+    name: Construction Permits
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 4/2/2016
+    tags: [construction, permits, us, united states, america, government, buildings, private, units, valuation, housing]
+    description:
+        short: This dataset provides data on the number and valuation of new housing units authorized by building permits.
+        overview: >
+            This dataset provides data on the number and valuation of new housing units authorized by building permits. Data are available monthly at the national, regional, divisional, and state level. The data are from the Building Permits Survey. The United States Code, Title 13, authorizes this survey, provides for voluntary responses, and provides an exception to confidentiality for public records.
+
+        citation: https://www.census.gov/construction/bps/about_the_surveys/
+local:
+  - file: constructionpermits.json
+    name: constructionpermits
+interfaces:
+  - name: get records
+    description: Returns permit data from every year.
+    returns: list[permit]
+    production:
+        sql: SELECT data FROM constructionpermits
+        post: json()
+    test:
+        sql: SELECT data FROM constructionpermits LIMIT {hardware}
+        post: json()

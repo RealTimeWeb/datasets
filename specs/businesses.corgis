@@ -6,6 +6,7 @@ metadata:
     datetime: 11/1/2015
     tags: [yelp, businesses, restaurants]
     description:
+        short: Information about businesses around college cities, provided by Yelp.
         overview: >
             Yelp is providing all the data and reviews of the 250 closest businesses for 30 universities for students and academics to explore and research
 

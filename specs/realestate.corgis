@@ -6,6 +6,7 @@ metadata:
     datetime: 2/23/2016
     tags: [real, estate, buildings, government, building]
     description:
+        short: Real estate information in the United States, including inventory, building, and customer data.
         overview: >
             Real Estate Across the United States (REXUS) is the primary tool used by PBS to track and manage the government's real property assets and to store inventory data, building data, customer data, and lease information. STAR manages aspects of real property space management, including identification of all building space and daily management of 22,000 assignments for all property to its client Federal agencies. This data set contains PBS building inventory that consists of both owned and leased buildings with active and excess status.
         citation: https://catalog.data.gov/dataset/real-estate-across-the-united-states-rexus-inventory-building

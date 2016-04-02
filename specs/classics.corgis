@@ -1,0 +1,26 @@
+metadata:
+    version: 1
+    name: Classics
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 4/2/2016
+    tags: [classics, books, texts, text, book, classic, english, shakespeare, literature, novel, language, composition, writing, author, publication, words]
+    description:
+        short: Records and computed statistics about the top 1000 books on Project Gutenberg.
+        overview: >
+            Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural works, to 'encourage the creation and distribution of eBooks'. It was founded in 1971 by Michael S. Hart and is the oldest digital library. This dataset is a collection of the top 1000 most popular books on Project Gutenberg, as determined by downloads. Each book has information about its authorship, publication date, congressional classication, and a few other fields. It also has some simple, computed statistics based on common metrics such as sentiment analysis, Flesch Kincaid Reading level, and average sentence length. 
+
+        citation: https://www.gutenberg.org/ebooks/search/?sort_order=downloads
+local:
+  - file: classics.json
+    name: classics
+interfaces:
+  - name: get books
+    description: Returns books from the dataset.
+    returns: list[book]
+    production:
+        sql: SELECT data FROM classics
+        post: json()
+    test:
+        sql: SELECT data FROM classics LIMIT {hardware}
+        post: json()
