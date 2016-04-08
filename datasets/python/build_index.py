@@ -5,7 +5,7 @@ base_directory = os.path.dirname(os.path.realpath(__file__))
 
 templates = base_directory
 env = Environment(loader=FileSystemLoader(templates))
-skip_list = ['baseball', 'nfl', 'soccer', 'twitter', 'gutenberg', 'weather', 'airports']
+skip_list = ['baseball', 'nfl', 'soccer', 'twitter', 'gutenberg', 'weather', 'airports', 'johnsongrass']
 
 folders = [folder
            for folder in os.listdir(base_directory+'/') 

@@ -1,0 +1,25 @@
+metadata:
+    version: 1
+    name: Johnson Grass
+    builder: 2
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 4/8/2016
+    tags: [johnson grass, agriculture]
+    description:
+        short: This dataset comes from Plant Genome Mapping Laboratory of Virginia Tech. It is about Johnson Grass collected around the region.
+        overview: >
+            ~500 Johnsongrass genotypes were collected from 70 sites throughout the USA and grown in a common garden in Blacksburg. Height and biomass were recorded at the end of the growing season. The growth of each genotype can be related to the habitat it was collected in, the temperature and precipitation of its homesite, whether it was collected in an agricultural habitat, and which genetic cluster the genotype belongs to.
+            
+            This dataset was created and published by Daniel Z. Atwater, U. Uzay Sezen, Valorie Goff, Wenqian Kong, Andrew H. Paterson and Jacob N. Barney. 
+            Their website is at <a href='https://weedeco.ppws.vt.edu/'>https://weedeco.ppws.vt.edu/</a>.
+        citation: Atwater, Daniel Z., et al. 'Reconstructing changes in the genotype, phenotype, and climatic niche of an introduced species.' Ecography (2015).
+local:
+  - file: johnsongrass.json
+    name: johnsongrass
+interfaces:
+  - name: get johnsongrass
+    returns: list[johnsongrass]
+    description: Returns a list of the johnsongrass in the database.
+    production:
+        sql: SELECT data FROM johnsongrass
+        post: json()
