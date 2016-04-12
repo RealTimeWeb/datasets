@@ -311,7 +311,7 @@ searcher.add(
 searcher.add(
     {
         'name': "constructionspending",
-        'body': "The Value of Construction Put in Place Survey (VIP) provides monthly estimates of the total dollar value of construction work done in the U.S. The United States Code, Title 13, authorizes this program. The survey covers construction work done each month on new structures or improvements to existing structures for private and public sectors. Data estimates include the cost of labor and materials, cost of architectural and engineering work, overhead costs, interest and taxes paid during construction, and contractor's profits. Data collection and estimation activities begin on the first day after the reference month and continue for about three weeks. Reported data and estimates are for activity taking place during the previous calendar month. The survey has been conducted monthly since 1964.",
+        'body': "The Value of Construction Put in Place Survey (VIP) provides monthly estimates of the total dollar value of construction work done in the U.S. The United States Code, Title 13, authorizes this program. The survey covers construction work done each month on new structures or improvements to existing structures for private and public sectors. Data estimates include the cost of labor and materials, cost of architectural and engineering work, overhead costs, interest and taxes paid during construction, and contractor's profits. Data collection and estimation activities begin on the first day after the reference month and continue for about three weeks. Reported data and estimates are for activity taking place during the previous calendar month. The survey has been conducted monthly since 1964. Why isn't the "total construction" the sum of the other categories? It is! the trick is that the "residential" and "nonresidential" categories are supposed to be below the "total construction" level, and the other categories are below those two categories. This example of the data should make it more clear: http://www.census.gov/construction/c30/pdf/tot.pdf",
         'description': "Estimates of the total dollar value of construction work done in the U.S.",
         'tags': ['construction', 'spending', 'us', 'united states', 'america', 'government', 'buildings', 'residential', 'non-residential', 'private', 'public']
     }
@@ -385,8 +385,7 @@ searcher.add(
     <a target="_blank" href="education/education.html">
     <h4 class="media-heading">Education</h4>
     </a>
-    Information about K-12 education for different states, collected from the US government.
-<br>
+    Information about K-12 education for different states, collected from the US government.<br>
     <i>school, education, K-12, kindergarten, learning, teaching</i>
   </div>
 </div>
@@ -394,7 +393,7 @@ searcher.add(
 searcher.add(
     {
         'name': "education",
-        'body': "Information about K-12 education for different states, collected from the US government.",
+        'body': "This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The "Year" field has records for Preschool, Kindergarten, and grades 1-12.",
         'description': "Information about K-12 education for different states, collected from the US government.",
         'tags': ['school', 'education', 'K-12', 'kindergarten', 'learning', 'teaching']
     }
