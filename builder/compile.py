@@ -16,10 +16,15 @@ from collections import namedtuple
 import re
 import sys
 import os
+import json
+from pprint import pprint
+
+from json_walker import JsonWalker
 
 readable_types = {str : "String",
                   int : "Integer",
                   float : "Float",
+                  bool : 'Bool',
                   list : "List",
                   dict : "Dictionary"}
              
@@ -143,6 +148,14 @@ class Compiler(object):
         return default_value
         
     ### Validations
+    
+    def walk_dict(self, location, name, data, walk_element): 
+        if name in data:
+            if isinstance(data[name], dict):
+                for key, element_data in data[name].items():
+                    yield key, walk_element(key, element_data, location)
+            else:
+                self.type_error(location, dict, type(data[name]))
 
     def walk_list(self, location, name, data, walk_element): 
         if name in data:
@@ -285,6 +298,7 @@ class Compiler(object):
         if isinstance(data, dict):
             local.name = de_identifier(self.require_field(location, "name", data, "", str))
             location = "{}.{}".format(in_location, clean_identifier(local.name))
+            local.row = self.typecheck_field(location, "row", data, local.name, str)
             local.file = self.require_field(location, "file", data, "", str)
             local.file = os.path.join(self.path, local.file)
             local.type = local.file.split(".")[-1].lower()
@@ -300,6 +314,16 @@ class Compiler(object):
     
     def walk_locals(self, spec):
         return list(self.walk_list("local", "local", spec, self.walk_local))
+        
+    def walk_structure(self, name, data, in_location):
+        location = "{}.{}".format(in_location, name)
+        if isinstance(data, str):
+            return data
+        else:
+            self.type_error(location, str, type(data))
+        
+    def walk_structures(self, spec):
+        return dict(self.walk_dict("structures", "structures", spec, self.walk_structure))
     
     def walk_interface_arg(self, name, data, in_location):
         location = "{}.{}".format(in_location, name)
@@ -395,8 +419,22 @@ class Compiler(object):
         else:
             self.not_found_error("interfaces")
         
-        # Interfaces
+        # Locals
         self.package.locals = self.walk_locals(spec)
+        self.package.structures_comments = self.walk_structures(spec)
+        self.package.structures = {}
+        for local in self.package.locals:
+            if os.path.exists(local.file):
+                with open(local.file) as json_file:
+                    walked = JsonWalker(local.name, self.package.structures_comments).walk(json.load(json_file), local.row)
+                    self.package.structures[local.name] = {
+                        'lists': walked.lists,
+                        'dictionaries': walked.dictionaries,
+                    }
+            else:
+                self.warning('Could not find local data file {}.'.format(local.file))
+        
+        # HTTP specs
         if 'http' in spec:
             self.package.https = self.walk_https(spec)
             self.package.lookup_https = {h.name: h for h in self.package.https}

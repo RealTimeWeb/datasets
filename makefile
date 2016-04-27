@@ -1,3 +1,5 @@
+racket:
+	python builder/builder.py -l racket specs/$(target).corgis ./datasets
 build:
 	python builder/builder.py -l python specs/$(target).corgis ./datasets
 all:

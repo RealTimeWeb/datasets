@@ -7,20 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Cars Library (CORGIS Datasets Project)</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"><link>-->
     
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
     <style>
-    .highlight  { background: #2B2B2B; color: #E6E1DC}
+    .ui-dialog table {
+        width: 100%;
+        font-size: 10pt;
+    }
+    
+    .ui-dialog td {
+        border-bottom: 1px solid #CCC;
+        overflow: 
+    }
+    
+    .ui-dialog-content {
+        max-height: 400px;
+        overflow:auto;
+    }
+    
+    .dialog-opener {
+        cursor: pointer;
+    }
+    
+    .ui-widget-header {
+        border: 0px solid black;
+        border-bottom: 1px solid #ccc;
+        background: #cde;
+    }
+    
+    /*.highlight  { background: #2B2B2B; color: #E6E1DC}*/
     .highlight .hll { background-color: #ffffcc }
     .highlight .c { color: #BC9458; font-style: italic} /* Comment */
     .highlight .err { color: #E6E1DC} /* Error */
@@ -108,12 +137,17 @@
                 });
     }
     $(document).ready(function() {
+        /*
         log('load', 'Cars');
         function doPoll(){  
             log('remain', 'Cars, '+$(document).scrollTop()+", "+$(document).height());
         }
         setInterval(doPoll, 5000);
+        */
     });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     </script>
 
 </head>
@@ -279,6 +313,297 @@ Returns all the cars of a certain make.
 </ul>
 
 </div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-cars'>Explore cars data</button>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-cars").click(function() {
+        $( "#explore-cars" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-cars' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-cars-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cars" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-cars-__0__").click(function() {
+            $( "#explore-cars-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-cars-__0__' title='Dictionary (23 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Acceleration"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"highway_mpg"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>26</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Make"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Pontiac"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Hybrid"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Base Curb Weight"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Width"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2004</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"2004 Pontiac GTO Coupe Pontiac 5.7L 8 Cylinder 6 Speed Manual"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Engine"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Pontiac 5.7L 8 Cylinder"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"fuel"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"city_mpg"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>16</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Transmission"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"6 Speed Manual"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Length"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Top Speed"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Classification"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Manual transmission"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Engine Type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"8 Cylinder"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Torque"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Height"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number Of Forward Gears"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Horsepower"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Driveline"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Model Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"2004 Pontiac GTO Coupe"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Size"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>5.7</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cars-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cars-__0__-Acceleration").click(function() {
+            $( "#explore-cars-__0__-Acceleration" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-highway_mpg").click(function() {
+            $( "#explore-cars-__0__-highway_mpg" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Make").click(function() {
+            $( "#explore-cars-__0__-Make" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Hybrid").click(function() {
+            $( "#explore-cars-__0__-Hybrid" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Base-Curb-Weight").click(function() {
+            $( "#explore-cars-__0__-Base-Curb-Weight" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Width").click(function() {
+            $( "#explore-cars-__0__-Width" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-year").click(function() {
+            $( "#explore-cars-__0__-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-id").click(function() {
+            $( "#explore-cars-__0__-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Engine").click(function() {
+            $( "#explore-cars-__0__-Engine" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-fuel").click(function() {
+            $( "#explore-cars-__0__-fuel" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-city_mpg").click(function() {
+            $( "#explore-cars-__0__-city_mpg" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Transmission").click(function() {
+            $( "#explore-cars-__0__-Transmission" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Length").click(function() {
+            $( "#explore-cars-__0__-Length" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Top-Speed").click(function() {
+            $( "#explore-cars-__0__-Top-Speed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Classification").click(function() {
+            $( "#explore-cars-__0__-Classification" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Engine-Type").click(function() {
+            $( "#explore-cars-__0__-Engine-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Torque").click(function() {
+            $( "#explore-cars-__0__-Torque" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Height").click(function() {
+            $( "#explore-cars-__0__-Height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Number-Of-Forward-Gears").click(function() {
+            $( "#explore-cars-__0__-Number-Of-Forward-Gears" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Horsepower").click(function() {
+            $( "#explore-cars-__0__-Horsepower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Driveline").click(function() {
+            $( "#explore-cars-__0__-Driveline" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Model-Year").click(function() {
+            $( "#explore-cars-__0__-Model-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cars-__0__-Size").click(function() {
+            $( "#explore-cars-__0__-Size" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
 
 
     

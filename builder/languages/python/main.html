@@ -7,20 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>{{ metadata.name }} Library (CORGIS Datasets Project)</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"><link>-->
     
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
     <style>
-    .highlight  { background: #2B2B2B; color: #E6E1DC}
+    .ui-dialog table {
+        width: 100%;
+        font-size: 10pt;
+    }
+    
+    .ui-dialog td {
+        border-bottom: 1px solid #CCC;
+        overflow: 
+    }
+    
+    .ui-dialog-content {
+        max-height: 400px;
+        overflow:auto;
+    }
+    
+    .dialog-opener {
+        cursor: pointer;
+    }
+    
+    .ui-widget-header {
+        border: 0px solid black;
+        border-bottom: 1px solid #ccc;
+        background: #cde;
+    }
+    
+    /*.highlight  { background: #2B2B2B; color: #E6E1DC}*/
     .highlight .hll { background-color: #ffffcc }
     .highlight .c { color: #BC9458; font-style: italic} /* Comment */
     .highlight .err { color: #E6E1DC} /* Error */
@@ -108,12 +137,17 @@
                 });
     }
     $(document).ready(function() {
+        /*
         log('load', '{{ metadata.name }}');
         function doPoll(){  
             log('remain', '{{ metadata.name }}, '+$(document).scrollTop()+", "+$(document).height());
         }
         setInterval(doPoll, 5000);
+        */
     });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     </script>
 
 </head>
@@ -235,6 +269,79 @@ import {{ metadata.name | flat_case }}
 </ul>
 
 </div>
+
+{% endfor %}
+
+<h3 id="structure">Explore Structure</h3>
+{% for name, structure in structures.items() %}
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-{{ name }}'>Explore {{ name }} data</button>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-{{ name }}").click(function() {
+        $( "#explore-{{ name }}" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+{% for path, data in structure.lists.items() %}
+    <div id='explore-{{ path|sluggify}}' title='List'>
+        {% if data.comment %}
+        <div><i>Comment: {{ data.comment }}</i></div>
+        {% endif %}
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td>{{ data.type|to_human_readable_type }}</td> 
+                 <td>{{ data.example|convert_example_value("btn-explore-"+data.path|sluggify)}}</td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-{{ path|sluggify }}" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-{{ data.path|sluggify }}").click(function() {
+            $( "#explore-{{ data.path|sluggify }}" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+{% endfor %}
+
+{% for path, data in structure.dictionaries.items() %}
+    <div id='explore-{{ path|sluggify }}' title='Dictionary ({{ data.fields|length }} keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            {% for field in data.fields %}
+            <tr> <td><code>{{ field.key|wrap_quotes }}</code></td> 
+                 <td>{{ field.type|to_human_readable_type }}</td> 
+                 <td>{{ field.example|convert_example_value("btn-explore-"+field.path|sluggify)}}</td> 
+                 <td>{{ field.comment }}</td> </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-{{ path|sluggify }}" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        {% for field in data.fields %}
+        $("#btn-explore-{{ field.path|sluggify }}").click(function() {
+            $( "#explore-{{ field.path|sluggify }}" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        {% endfor %}
+    });
+    </script>
+{% endfor %}
 
 {% endfor %}
     

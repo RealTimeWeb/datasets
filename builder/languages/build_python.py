@@ -14,7 +14,6 @@ from jinja2 import Environment, FileSystemLoader
 import jinja2_highlight
 base_directory = os.path.dirname(os.path.realpath(__file__))
 templates = os.path.join(base_directory, 'python/')
-print templates
 env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader(templates))
 env.filters['camel_case_caps'] = camel_case_caps
 env.filters['camel_case'] = camel_case
@@ -156,7 +155,48 @@ def to_python_variable(source):
         return "list_of_{}".format(converted_type)
     else: # otherwise just return it normally
         return "a_{}".format(converted_type)
+        
+def sluggify(astr):
+    return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_")
+    
+EXTENDED_TYPE_INFO = {
+    'dict': '<span data-toggle="tooltip" title="Dictionary">dict</span>',
+    'unicode': '<span data-toggle="tooltip" title="String (text)">str</span>',
+    'list': '<span data-toggle="tooltip" title="List">list</span>',
+    'str': '<span data-toggle="tooltip" title="String (text)">str</span>',
+    'int': '<span data-toggle="tooltip" title="Integer (whole number)">int</span>',
+    'float': '<span data-toggle="tooltip" title="Float (decimal number)">float</span>',
+    'long': '<span data-toggle="tooltip" title="Long (a very big whole number)">long</span>',
+    'bool': '<span data-toggle="tooltip" title="Boolean (True or False)">bool</span>',
+}
+def to_human_readable_type(atype):
+    return EXTENDED_TYPE_INFO[atype]
+    
+EXPAND = "<span class='glyphicon glyphicon-new-window' aria-hidden='true'></span>"
+def convert_example_value(data, possible_path=""):
+    if isinstance(data, dict):
+        return "<a class='dialog-opener' id='{possible_path}'>{{ {E} }}</a>".format(possible_path=possible_path, E=EXPAND)
+    elif isinstance(data, list):
+        return "<a class='dialog-opener' id='{possible_path}'>[ {E} ]</a>".format(possible_path=possible_path, E=EXPAND)
+    elif isinstance(data, str) or isinstance(data, unicode):
+        return "<code>{data}</code>".format(data=wrap_quotes(data))
+    else:
+        return "<code>{data}</code>".format(data=data)
+        
+def wrap_quotes(data):
+    if '"' not in data:
+        pretty = '"{data}"'.format(data=data)
+    elif "'" not in data:
+        pretty = "'{data}'".format(data=data)
+    else:
+        pretty = '"{data}"'.format(data=data.replace('"', '\"'))
+    return pretty
 
+env.filters['tojson'] = json.dumps
+env.filters['sluggify'] = sluggify
+env.filters['wrap_quotes'] = wrap_quotes
+env.filters['to_human_readable_type'] = to_human_readable_type
+env.filters['convert_example_value'] = convert_example_value
 env.filters['to_python_type'] = convert_to_python_type
 env.filters['to_python_variable'] = to_python_variable
 env.filters['convert_url_parameters'] = convert_url_parameters

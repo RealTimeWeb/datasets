@@ -7,26 +7,18 @@ metadata:
     tags: [school, education, K-12, kindergarten, learning, teaching]
     description:
         overview: >
-            This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The "Year" field has records for Preschool, Kindergarten, and grades 1-12.
+            This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The 'Year' field has records for Preschool, Kindergarten, and grades 1-12.
         short: Information about K-12 education for different states, collected from the US government.
         citation: <a href='https://nces.ed.gov/ccd/aboutCCD.asp'>https://nces.ed.gov/ccd/aboutCCD.asp</a>
 local:
   - file: school.json
     name: school
+    row: state record
     indexes:
       - name: state
         jsonpath: state
 structures:
-  - name: score
-    fields:
-      - name: science
-        type: List[grade scale score]
-      - name: reading
-        type: List[grade scale score]
-      - name: math
-        type: List[grade scale score]
-      - name: writing
-        type: List[grade scale score]
+    "school.[0].data.enrollment.students.year": "Each of these match to the different age groups for students: The first one is Preschool, the second is Kindergarten, and so on for 1st grade - 12th grade."
 interfaces:
   - name: get state
     args:
@@ -35,14 +27,14 @@ interfaces:
         description: The state you are interested in.
         default: "'Virginia'"
         matches: SELECT DISTINCT state FROM school
-    returns: record
+    returns: state record
     description: Returns information about one state. Enrollment data is for Pre-K through 12th grade.
     production:
         sql: SELECT data FROM school WHERE state=? COLLATE NOCASE
         post: json()|jsonpath(data)
   - name: get all states
     args: []
-    returns: list[record]
+    returns: list[state record]
     description: Returns all of the data for every state into a list.
     production:
         sql: SELECT data FROM school

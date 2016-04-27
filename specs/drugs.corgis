@@ -9,7 +9,7 @@ metadata:
     description:
         short: This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.
         overview: >
-            This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The "CI" refers to "Confidence Intervals".
+            This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.
         citation: <a href='https://nsduhweb.rti.org/respweb/homepage.cfm'>https://nsduhweb.rti.org/respweb/homepage.cfm</a>
             
 local:

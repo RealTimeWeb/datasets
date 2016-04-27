@@ -14,6 +14,7 @@ metadata:
 local:
   - file: classics.json
     name: classics
+    row: book
 interfaces:
   - name: get books
     description: Returns books from the dataset.
@@ -24,3 +25,6 @@ interfaces:
     test:
         sql: SELECT data FROM classics LIMIT {hardware}
         post: json()
+structures:
+    "classics.[0].statistics.difficulty.flesch reading ease": This is a comment that I've incorporated into the explorer.
+    "classics.[0].metadata": Here's a comment.

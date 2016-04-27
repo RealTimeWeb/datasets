@@ -8,6 +8,7 @@ from compile import Compiler
 from auxiliary import to_dict
 from build import build_dir
 from languages.build_python import build_python
+from languages.build_racket import build_racket
 from languages.build_csv import build_csv
 
 try:
@@ -39,7 +40,7 @@ if __name__ == '__main__':
     else:
         pbar = list
     for a_spec in pbar(args.spec):
-        print a_spec
+        #print a_spec
         with open(a_spec, 'r') as specification_file:
             specification = yaml.load(specification_file)
             #pprint(specification)
@@ -55,7 +56,8 @@ if __name__ == '__main__':
             #pprint(to_dict(compiled))
             if args.language.lower() == "python":
                 files, moves = build_python(to_dict(compiled), args.fast)
-                build_data, build_errors = build_dir(files, moves, args.target)
             elif args.language.lower() == "csv":
                 files, moves = build_csv(to_dict(compiled))
-                build_data, build_errors = build_dir(files, moves, args.target)
+            elif args.language.lower() == "racket":
+                files, moves = build_racket(to_dict(compiled), args.fast)
+            build_data, build_errors = build_dir(files, moves, args.target)

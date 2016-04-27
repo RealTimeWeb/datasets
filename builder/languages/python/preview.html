@@ -18,9 +18,9 @@
 searcher.add(
     {
         'name': "{{ metadata.name|flat_case }}",
-        'body': "{{ metadata.description.overview|replace('\n', ' ')|replace('\r',' ')|striptags|trim }}",
-        'description': "{{ metadata.description.short|replace('\n', ' ')|striptags|trim }}",
-        'tags': {{ metadata.tags|safe }}
+        'body': {{ metadata.description.overview|replace('\n', ' ')|replace('\r',' ')|striptags|trim|tojson|safe }},
+        'description': {{ metadata.description.short|replace('\n', ' ')|striptags|trim|tojson|safe }},
+        'tags': {{ metadata.tags|tojson|safe }}
     }
 );
 </script>

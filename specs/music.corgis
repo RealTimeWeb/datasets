@@ -12,6 +12,7 @@ metadata:
 local:
   - file: music.json
     name: music
+    row: music
     indexes:
       - name: title
         jsonpath: song.title
@@ -23,10 +24,10 @@ interfaces:
     args:
       - name: title
         type: string
-        default: '"I Didn''t Mean To"'
+        default: "I Didn't Mean To"
         description: The title of the song.
         matches: SELECT DISTINCT title FROM music
-    returns: song
+    returns: music
     production:
         sql: SELECT data FROM music WHERE title=? LIMIT 1
         post: json()
@@ -34,7 +35,7 @@ interfaces:
   #  description: A very simple method for getting the rating of a specific song.
   #  args:
   #    - name: title
-  #      default: '"I Didn''t Mean To"'
+  #      default: "I Didn't Mean To"
   #      type: string
   #      matches: SELECT DISTINCT title FROM music
   #      description: The title of the song.
@@ -46,7 +47,7 @@ interfaces:
     description: Given the name of an artist, returns all the songs by that artist in the database.
     args:
       - name: artist
-        default: "'Aerosmith'"
+        default: "Aerosmith"
         type: string
         matches: SELECT DISTINCT artist FROM music
         description: The name of the artist or band.
@@ -56,9 +57,9 @@ interfaces:
     test:
         sql: SELECT data FROM music WHERE artist=? LIMIT {hardware}
         post: json()
-    returns: list[song]
+    returns: list[music]
   - name: get songs
-    returns: list[song]
+    returns: list[music]
     description: Gets a list of all the songs in the database.
     test:
         sql: SELECT data FROM music LIMIT {hardware}
@@ -66,88 +67,3 @@ interfaces:
     production:
         sql: SELECT data FROM music
         post: json()
-objects:
-  - name: song
-    fields:
-      - name: key
-        type: float
-      - name: mode_confidence
-        type: float
-      - name: artist_mbtags_count
-        type: float
-      - name: key_confidence
-        type: float
-      - name: tatums_start
-        type: float
-      - name: year
-        type: int
-      - name: duration
-        type: float
-      - name: hotttnesss
-        type: float
-      - name: beats_start
-        type: float
-      - name: time_signature_confidence
-        type: float
-      - name: title
-        type: int
-      - name: bars_confidence
-        type: float
-      - name: id
-        type: str
-      - name: bars_start
-        type: float
-      - name: artist_mbtags
-        type: float
-      - name: start_of_fade_out
-        type: float
-      - name: tempo
-        type: float
-      - name: end_of_fade_in
-        type: float
-      - name: beats_confidence
-        type: float
-      - name: tatums_confidence
-        type: float
-      - name: mode
-        type: int
-      - name: time_signature
-        type: float
-      - name: loudness
-        type: float
-  - name: artist
-    fields:
-      - name: terms_freq
-        type: float
-      - name: terms
-        type: str
-      - name: name
-        type: str
-      - name: familiarity
-        type: float
-      - name: longitude
-        type: NoneType
-      - name: id
-        type: str
-      - name: location
-        type: int
-      - name: latitude
-        type: NoneType
-      - name: similar
-        type: float
-      - name: hotttnesss
-        type: float
-  - name: release
-    fields:
-      - name: id
-        type: int
-      - name: name
-        type: int
-  - name: release artist song
-    fields:
-      - name: release
-        type: release
-      - name: artist
-        type: artist
-      - name: song
-        type: song
