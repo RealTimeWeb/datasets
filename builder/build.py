@@ -1,8 +1,13 @@
+from __future__ import print_function
+
 import os
 import shutil
 import traceback
 from zipfile import ZipFile
-from StringIO import StringIO
+try:
+    from StringIO import StringIO
+except ImportError:
+    from io import StringIO
 
 def ensure_dir(f):
     d = os.path.dirname(f)
@@ -17,7 +22,7 @@ def build_zip(files):
     try:
         for filename, data in files.iteritems():
             zipFile.writestr(filename.encode('utf-8'), data.encode('utf8'))
-    except Exception, e:
+    except Exception:
         error_log.append(traceback.format_exc().encode('utf-8'))
     if error_log:
         zipFile.writestr("error_log".encode('utf-8'), error_log)
@@ -30,19 +35,23 @@ def build_zip(files):
 def build_dir(files, moves, prepend):
     error_log = []
     try:
-        for filename, data in files.iteritems():
+        for filename, data in files.items():
             filename = os.path.join(prepend, filename)
             ensure_dir(filename)
-            with open(filename, "wb+") as output:
-                output.write(data)
-        for src, offset in moves.iteritems():
+            if isinstance(data, bytes):
+                with open(filename, "wb+") as output:
+                    output.write(data)
+            else:
+                with open(filename, "w+") as output:
+                    output.write(data)
+        for src, offset in moves.items():
             new_folder = prepend+'/'+offset
             ensure_dir(new_folder)
             if not os.path.isfile(src):
-                print 'Warning, file "{}" does not exist'.format(src)
+                print('Warning, file "{}" does not exist'.format(src))
             shutil.copy(src, new_folder)
             os.remove(src)
-    except Exception, e:
+    except Exception:
         error_log.append(traceback.format_exc())
     if error_log:
         error_filename = os.path.join(prepend, "error_log")

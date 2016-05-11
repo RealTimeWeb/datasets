@@ -14,11 +14,11 @@ metadata:
 local:
   - file: classics.json
     name: classics
-    row: book
+    row: classic
 interfaces:
   - name: get books
     description: Returns books from the dataset.
-    returns: list[book]
+    returns: list[classic]
     production:
         sql: SELECT data FROM classics
         post: json()

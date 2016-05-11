@@ -11,13 +11,8 @@ The motivation behind a custom validator (as opposed to Rx or Voluptuous) is tha
 
 '''
 
-from auxiliary import clean_json
-from collections import namedtuple
-import re
-import sys
 import os
 import json
-from pprint import pprint
 
 from json_walker import JsonWalker
 
@@ -439,5 +434,3 @@ class Compiler(object):
             self.package.https = self.walk_https(spec)
             self.package.lookup_https = {h.name: h for h in self.package.https}
         
-        
-pass

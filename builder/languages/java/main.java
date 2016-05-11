@@ -1,268 +1,174 @@
-package realtimeweb.{{ metadata.name | flat_case }};
+package corgis.{{ metadata.name | flat_case }};
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.InputStream;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
-{% if "xml" in formats_required -%}
-import javax.xml.xpath.XPath;
-import javax.xml.xpath.XPathFactory;
-{%- endif %}
-import realtimeweb.{{ metadata.name | flat_case }}.domain.*;
 
-import realtimeweb.stickyweb.EditableCache;
-import realtimeweb.stickyweb.StickyWeb;
-import realtimeweb.stickyweb.StickyWebRequest;
-import realtimeweb.stickyweb.StickyWebResponse;
-import realtimeweb.stickyweb.exceptions.StickyWebDataSourceNotFoundException;
-import realtimeweb.stickyweb.exceptions.StickyWebDataSourceParseException;
-import realtimeweb.stickyweb.exceptions.StickyWebInternetException;
-import realtimeweb.stickyweb.exceptions.StickyWebInvalidPostArguments;
-import realtimeweb.stickyweb.exceptions.StickyWebInvalidQueryString;
-import realtimeweb.stickyweb.exceptions.StickyWebJsonResponseParseException;
-import realtimeweb.stickyweb.exceptions.StickyWebLoadDataSourceException;
-import realtimeweb.stickyweb.exceptions.StickyWebNotInCacheException;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import corgis.{{ metadata.name | flat_case }}.domain.*;
+
+import java.sql.*;
 
 /**
  * {{ metadata.description }}
  */
-public class {{ metadata.name | camel_case_caps }} {
+public class {{ metadata.name | camel_case_caps }}Library {
     {% if metadata.comment %}
     // {{ metadata.comment }}
     {% endif -%}
-	private StickyWeb connection;
-	private boolean online;
+    private String databasePath;
+	private Connection connection;
+    private JSONParser parser;
+    private final int HARDWARE = {{ metadata.hardware }};
     
     public static void main(String[] args) {
-        {{ metadata.name | camel_case_caps }} {{ metadata.name | camel_case }} = new {{ metadata.name | camel_case_caps }}();
-        
-        // The following pre-generated code demonstrates how you can
-		// use StickyWeb's EditableCache to create data files.
-		try {
-            // First, you create a new EditableCache, possibly passing in an FileInputStream to an existing cache
-			EditableCache recording = new EditableCache();
-            // You can add a Request object directly to the cache.
-			// recording.addData({{ metadata.name | camel_case }}.{{ functions[0].name | camel_case }}Request(...));
-            // Then you can save the expanded cache, possibly over the original
-			recording.saveToStream(new FileOutputStream("cache.json"));
-		} catch (StickyWebDataSourceNotFoundException e) {
-			System.err.println("The given FileStream was not able to be found.");
-		} catch (StickyWebDataSourceParseException e) {
-			System.err.println("The given FileStream could not be parsed; possibly the structure is incorrect.");
-		} catch (StickyWebLoadDataSourceException e) {
-			System.err.println("The given data source could not be loaded.");
-		} catch (FileNotFoundException e) {
-			System.err.println("The given cache.json file was not found, or could not be opened.");
-		}
-        // ** End of how to use the EditableCache
+        System.out.println("Testing {{ metadata.name | camel_case_caps}}");
+        {{ metadata.name | camel_case_caps }}Library {{ metadata.name | camel_case }}Library = new {{ metadata.name | camel_case_caps }}Library();
+        {% for interface in interfaces %}
+        {% if interface.production %}
+        System.out.println("Testing production {{ interface.name | camel_case_caps}}");
+        {{ interface.returns | to_java_type }} {{ interface.returns | to_java_variable }}_{{loop.index}}_production = {{ metadata.name|camel_case }}Library.{{ interface.name | camel_case }}({% for arg in interface.args %}{{arg.default|tojson|safe }}{{ ', ' if not loop.last }}{% endfor %}{% if interface.test %}{{ ', ' if interface.args }}false{% endif %});
+        {% endif %}
+        {% if interface.test %}
+        System.out.println("Testing test {{ interface.name | camel_case_caps}}");
+        {{ interface.returns | to_java_type }} {{ interface.returns | to_java_variable }}_{{loop.index}}_test = {{ metadata.name|camel_case }}Library.{{ interface.name | camel_case }}({% for arg in interface.args %}{{arg.default|tojson|safe }}{{ ', ' if not loop.last }}{% endfor %}{% if interface.test %}{{ ', ' if interface.args }}true{% endif %});
+        {% endif %}
+        {% endfor %}
+    }
+    
+    private void connectToDatabase(String databasePath) {
+        this.connection = null;
+        try {
+            this.connection = DriverManager.getConnection("jdbc:sqlite:"+databasePath);
+        } catch ( Exception e ) {
+            System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+            System.exit(0);
+        }
+        this.parser =  new JSONParser();
     }
 	
     /**
-     * Create a new, online connection to the service
+     * Create a connection to the database file in its standard position.
      */
-	public {{ metadata.name | camel_case_caps }}() {
-        this.online = true;
-		try {
-			this.connection = new StickyWeb(null);
-		} catch (StickyWebDataSourceNotFoundException e) {
-			System.err.println("The given datastream could not be loaded.");
-		} catch (StickyWebDataSourceParseException e) {
-			System.err.println("The given datastream could not be parsed");
-		} catch (StickyWebLoadDataSourceException e) {
-			System.err.println("The given data source could not be loaded");
-		}
+	public {{ metadata.name | camel_case_caps }}Library() {
+        this.databasePath = "{{ metadata.name | flat_case }}.db";
+        this.connectToDatabase(this.databasePath);
 	}
 	
     /**
-     * Create a new, offline connection to the service.
-     * @param cache The filename of the cache to be used.
+     * Create a connection to the database file, stored explicitly somewhere.
+     * @param databasePath The filename of the database file.
      */
-	public {{ metadata.name | camel_case_caps }}(String cache) {
-        // TODO: You might consider putting the cache directly into the jar file,
-        // and not even exposing filenames!
-        try {
-            this.online = false;
-            this.connection = new StickyWeb(new FileInputStream(cache));
-        } catch (StickyWebDataSourceNotFoundException e) {
-			System.err.println("The given data source could not be found.");
-            System.exit(1);
-		} catch (StickyWebDataSourceParseException e) {
-			System.err.println("Could not read the data source. Perhaps its format is incorrect?");
-            System.exit(1);
-		} catch (StickyWebLoadDataSourceException e) {
-			System.err.println("The given data source could not be read.");
-			System.exit(1);
-		} catch (FileNotFoundException e) {
-			System.err.println("The given cache file could not be found. Make sure it is in the right folder.");
-			System.exit(1);
-		}
+	public {{ metadata.name | camel_case_caps }}Library(String databasePath) {
+        this.databasePath = databasePath;
+        this.connectToDatabase(this.databasePath);
 	}
     
-    {% for function in functions %}
+    {% for interface in interfaces %}
+    {% if interface.test %}
     /**
-     * {{ function.description }}
-     *
-     * This version of the function meant for instructors to capture a
-     * StickyWebRequest object which can be put into an EditableCache and then
-     * stored to a "cache.json" file.
-     * 
-     {% for input in function.visible_inputs -%}
-     * @param {{input.name | camel_case }} {{input.description }}
-     * @return a StickyWebRequest
-     {% endfor -%}
-    */
-    private StickyWebRequest {{ function.name | camel_case }}Request(
-    {%- for input in function.visible_inputs -%}
-        {{ input.type | to_java_type }} {{input.name | camel_case }}
-        {%- if not loop.last -%}, {% endif -%}
-    {%- endfor -%}
-    ) {
-        try {
-            /*
-            * Perform any user parameter validation here. E.g.,
-            * if the first argument can't be zero, or they give an empty string.
-            */
-            
-            // Build up query string
-            final String url = String.format("{{ function.url | convert_url_parameters }}"
-            {%- for parameter in function.url_inputs -%}
-            {%- if parameter.hidden -%}
-                , "{{ parameter.default }}"
-            {%- else -%}
-                , String.valueOf({{ parameter.name }})
-            {%- endif -%}
-            {%- endfor -%}
-            );
-            
-            // Build up the query arguments that will be sent to the server
-            HashMap<String, String> parameters = new HashMap<String, String>();
-            {%- for parameter in function.payload_inputs -%}
-            {%- if parameter.hidden %}
-            parameters.put("{{ parameter.path }}", "{{ parameter.default }}");
-            {%- else %}
-            parameters.put("{{ parameter.path }}", String.valueOf({{ parameter.name }}));
-            {%- endif -%}
-            {% endfor %}
-            
-            // Build up the list of actual arguments that should be used to
-            // create the local cache hash key
-            ArrayList<String> indexList = new ArrayList<String>();
-            {% for parameter in function.payload_inputs if parameter.indexed -%}
-            indexList.add("{{ parameter.path }}");
-            {% endfor %}
-            
-            // Build and return the connection object.
-            return connection.{{ function.verb }}(url, parameters)
-                            .setOnline(online)
-                            .setIndexes(indexList);
-        
-        } catch (StickyWebDataSourceNotFoundException e) {
-			System.err.println("Could not find the data source.");
-		}
-        return null;
-    }
-    
-    /**
-     * {{ function.description }}
-    {% for input in function.visible_inputs %}
-     * @param {{input.name| camel_case}} {{ input.description }}
+     * {{ interface.description }}
+    {% for arg in interface.args %}
+     * @param {{arg.name| camel_case}} {{ arg.description }}
     {%- endfor %}
-     * @return a {{ function.output }}
+     * @return a {{ interface.returns }}
      */
-	public {{ function.output | to_java_type }} {{ function.name | camel_case }}(
-    {%- for input in function.visible_inputs -%}
-        {{ input.type | to_java_type }} {{input.name | camel_case }}
+	public {{ interface.returns | to_java_type }} {{ interface.name | camel_case }}(
+    {%- for arg in interface.args -%}
+        {{ arg.type | to_java_type }} {{arg.name | camel_case }}
         {%- if not loop.last -%}
         , {% endif -%}
-    {%- endfor -%}
-    ) {
-        {% if function.comment %}
-        // {{ function.comment }}
+        {%- endfor -%}) {
+        return this.{{ interface.name | camel_case }}(
+    {%- for arg in interface.args -%}
+        {{arg.name | camel_case }}
+        {%- if not loop.last -%}
+        , {% endif -%}
+        {%- endfor -%}{{- ', ' if interface.args -}}true);
+    }
+    {% endif %}
+    
+    /**
+     * {{ interface.description }}
+    {% for arg in interface.args %}
+     * @param {{arg.name| camel_case}} {{ arg.description }}
+    {%- endfor %}
+     * @return a {{ interface.returns }}
+     */
+	public {{ interface.returns | to_java_type }} {{ interface.name | camel_case }}(
+    {%- for arg in interface.args -%}
+        {{ arg.type | to_java_type }} {{arg.name | camel_case }}
+        {%- if not loop.last -%}
+        , {% endif -%}
+        {%- endfor -%}{% if interface.test %}{{- ', ' if interface.args -}}boolean test{% endif %}) {
+        {% if interface.comment %}
+        // {{ interface.comment }}
         {% endif -%}
-		try {
-			StickyWebRequest request =  {{ function.name | camel_case }}Request(
-            {%- for input in function.visible_inputs -%}
-                {{input.name | camel_case }}
-                {%- if not loop.last -%}, {% endif -%}
-            {%- endfor -%}
-            );
-            {% if function.format == "xml" -%}
-                {%- if function.post == "" -%}
-            return new {{ function.output | to_java_type }}(request.execute().asXML());
-                {%- else -%}
-            XPath xPath =  XPathFactory.newInstance().newXPath();
-            return new {{ function.output | to_java_type }}(xPath.compile("{{ function.post }}").evaluate(request.execute().asXML()));
-                {%- endif -%}
-            {%- elif function.format == "html" -%}
-                {%- if function.post == "" -%}
-            return new {{ function.output | to_java_type }}(request.execute().asHTML());
-                {%- else -%}
-            // TODO: Probably want to cast to (org.htmlcleaner.TagNode) and manipulate data
-            return new {{ function.output | to_java_type }}(request.execute().asHTML().evaluateXPath("{{ function.post }}"));
-                {%- endif -%}
-            {%- elif function.format == "json" -%}
-            {% if function.output | is_list %}
-            {{function.output | to_java_type }} result = new {{function.output | to_java_type }}();
-            StickyWebResponse response = request.execute();
-            // TODO: Validate the output here using response.isNull, response.asText, etc.
-            if (response.isNull())
-                return result;
-            Iterator<Object> resultIter = ((ArrayList<Object>) {{ function.post | parse_json_path_all("response.asJSON" | enforce_json_array(function.post)) }}).iterator();
-            while (resultIter.hasNext()) {
-                result.add(new {{ function.output | strip_list | to_java_type }}((
-                {%- if object_is_map[function.output | strip_list] -%}
-                Map<String, Object>
-                {%- else -%}
-                List<Object>
-                {%- endif -%}
-                )resultIter.next()));
+        String query;
+        {% if not interface.test -%}
+        boolean test = false;
+        {% endif -%}
+        if (test) {
+            query = String.format("{{ interface.test.sql|replace('{hardware}', '%d') }}", this.HARDWARE);
+        } else {
+            query = "{{ interface.production.sql }}";
+        }
+        PreparedStatement preparedQuery = null;
+        ResultSet rs = null;
+        try {
+            preparedQuery = this.connection.prepareStatement(query);
+        } catch (SQLException e) {
+            System.err.println("Could not build SQL query for local database.");
+    		e.printStackTrace();
+        }
+        {% for arg in interface.args -%}
+        try {
+            preparedQuery.set{{ arg.type | to_java_type}}({{ loop.index }}, {{ arg.name | camel_case }});
+        } catch (SQLException e) {
+            System.err.println("Could not build prepare argument: {{ arg.name }}");
+    		e.printStackTrace();
+        }
+        {% endfor -%}
+        try {
+            rs = preparedQuery.executeQuery();
+        } catch (SQLException e) {
+            System.err.println("Could not execute query.");
+    		e.printStackTrace();
+        }
+        
+        {{interface.returns | to_java_type }} result = {% if interface.returns | is_list %}new {{interface.returns | to_java_type }}(){% else %}null{% endif %};
+        try {
+            while (rs.next()) {
+                String raw_result = rs.getString(1);
+                {{ locals[0].name | to_java_type }} parsed = null;
+                if (test) {
+                    {% if interface.test.post -%}
+                    parsed = new {{ locals[0].row | to_java_type }}({{ interface.test.post|parse_bark }});
+                    {% endif %}
+                } else {
+                    {% if interface.production.post -%}
+                    parsed = new {{ locals[0].row | to_java_type }}({{ interface.production.post|parse_bark }});
+                    {% endif %}
+                }
+                {% if interface.returns.startswith("list[") %}
+                result.add(parsed);
+                {% else %}
+                result = parsed;
+                {% endif %}
             }
-            return result;
-            {%- else -%}
-            return new {{ function.output | to_java_type }}((Map<String, Object>)request.execute().asJSON
-            {%- if function.post != "" and function.post[0] == "[" -%}
-                Array
-            {%- elif function.post == "" -%}
-                {{ object_is_map | make_array(function.output | to_java_type) }}
-            {%- endif -%}
-            ()
-                {%- if function.post != "" -%}
-                    {{ function.post | parse_json_path("") }}
-                {%- endif -%});
-            {%- endif %}
-            {%- elif function.format == "text" -%}
-                return new {{ function.output | to_java_type }}(request.execute().asText());
-            {%- elif function.format == "csv" -%}
-                {%- if function.post == "" -%}
-            return new {{ function.output | to_java_type }}(request.execute().asCSV());
-                {%- else -%}
-            return new {{ function.output | to_java_type }}(request.execute().asCSV().get({{ function.post }}));
-                {%- endif -%}
-            {%- endif %}
-		} catch (StickyWebNotInCacheException e) {
-			System.err.println("There is no query in the cache for the given inputs. Perhaps something was mispelled?");
-		} catch (StickyWebInternetException e) {
-			System.err.println("Could not connect to the web service. It might be your internet connection, or a problem with the web service.");
-		} catch (StickyWebInvalidQueryString e) {
-			System.err.println("The given arguments were invalid, and could not be turned into a query.");
-		} catch (StickyWebInvalidPostArguments e) {
-			System.err.println("The given arguments were invalid, and could not be turned into a query.");
-        {% if function.format != "text" %}
-        {%- if function.format == "csv" -%}
-		} catch (StickyWebCSVResponseParseException e) {
-        {%- elif function.format == "xml" or function.format == "html" -%}
-        } catch (StickyWebXMLResponseParseException e) {
-        {%- else %}
-        } catch (StickyWebJsonResponseParseException e) {
-        {%- endif %}
-            System.err.println("The response from the server couldn't be understood.");
-        {% endif %}
-		}
-		return null;
+        } catch (SQLException e) {
+            System.err.println("Could not iterate through query.");
+    		e.printStackTrace();
+        } catch (ParseException e) {
+            System.err.println("Could not convert the response from {{ interface.name | camel_case }}; a parser error occurred.");
+    		e.printStackTrace();
+        }
+        return result;
 	}
     {% endfor %}
 }

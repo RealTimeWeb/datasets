@@ -1,10 +1,13 @@
+from __future__ import print_function
 import json
 import csv
 import sys, os
 from pprint import pprint
-from itertools import tee, izip
-from urlparse import urlparse
-from urllib import quote_plus, urlencode
+from itertools import tee
+try:
+    from itertools import izip
+except ImportError:
+    izip = zip
 from textwrap import wrap
 from collections import OrderedDict
 from auxiliary import to_dict, camel_case_caps, camel_case

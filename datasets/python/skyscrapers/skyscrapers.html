@@ -7,20 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Skyscrapers Library (CORGIS Datasets Project)</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"><link>-->
     
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
     <style>
-    .highlight  { background: #2B2B2B; color: #E6E1DC}
+    .ui-dialog table {
+        width: 100%;
+        font-size: 10pt;
+    }
+    
+    .ui-dialog td {
+        border-bottom: 1px solid #CCC;
+        overflow: 
+    }
+    
+    .ui-dialog-content {
+        max-height: 400px;
+        overflow:auto;
+    }
+    
+    .dialog-opener {
+        cursor: pointer;
+    }
+    
+    .ui-widget-header {
+        border: 0px solid black;
+        border-bottom: 1px solid #ccc;
+        background: #cde;
+    }
+    
+    /*.highlight  { background: #2B2B2B; color: #E6E1DC}*/
     .highlight .hll { background-color: #ffffcc }
     .highlight .c { color: #BC9458; font-style: italic} /* Comment */
     .highlight .err { color: #E6E1DC} /* Error */
@@ -108,12 +137,17 @@
                 });
     }
     $(document).ready(function() {
+        /*
         log('load', 'Skyscrapers');
         function doPoll(){  
             log('remain', 'Skyscrapers, '+$(document).scrollTop()+", "+$(document).height());
         }
         setInterval(doPoll, 5000);
+        */
     });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     </script>
 
 </head>
@@ -221,6 +255,633 @@ Returns a list of the skyscrapers in the database.
 </ul>
 
 </div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-skyscrapers'>Explore skyscrapers data</button>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-skyscrapers").click(function() {
+        $( "#explore-skyscrapers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-skyscrapers' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-skyscrapers-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-skyscrapers" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-skyscrapers-__0__").click(function() {
+            $( "#explore-skyscrapers-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-skyscrapers-__0__-purposes' title='Dictionary (23 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"bridge"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"industrial"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"office"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>True</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"library"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"education"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"religious"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"telecommunications"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"belltower"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"residential"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>True</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hospital"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"other"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"exhibition"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"serviced apartments"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"multiple"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"government"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>True</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hotel"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>True</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"commercial"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"abandoned"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"observation"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"air traffic control tower"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"casino"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"museum"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-skyscrapers-__0__-purposes" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-bridge").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-bridge" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-industrial").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-industrial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-office").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-office" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-library").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-library" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-education").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-education" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-religious").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-religious" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-telecommunications").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-telecommunications" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-belltower").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-belltower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-residential").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-residential" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-hospital").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-hospital" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-other").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-other" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-exhibition").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-exhibition" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-serviced-apartments").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-serviced-apartments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-multiple").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-multiple" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-government").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-government" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-hotel").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-hotel" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-commercial").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-commercial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-abandoned").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-abandoned" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-observation").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-observation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-air-traffic-control-tower").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-air-traffic-control-tower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-casino").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-casino" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-retail").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-retail" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes-museum").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes-museum" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-skyscrapers-__0__-statistics' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"number of purposes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"floors above"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>528</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"rank"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"height"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1609.35998535</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-skyscrapers-__0__-statistics" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-statistics-number-of-purposes").click(function() {
+            $( "#explore-skyscrapers-__0__-statistics-number-of-purposes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-statistics-floors-above").click(function() {
+            $( "#explore-skyscrapers-__0__-statistics-floors-above" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-statistics-rank").click(function() {
+            $( "#explore-skyscrapers-__0__-statistics-rank" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-statistics-height").click(function() {
+            $( "#explore-skyscrapers-__0__-statistics-height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-skyscrapers-__0__' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"status"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-skyscrapers-__0__-status'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"statistics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-skyscrapers-__0__-statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"The Illinois"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"material"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"steel"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"purposes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-skyscrapers-__0__-purposes'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"location"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-skyscrapers-__0__-location'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>12</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-skyscrapers-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-status").click(function() {
+            $( "#explore-skyscrapers-__0__-status" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-statistics").click(function() {
+            $( "#explore-skyscrapers-__0__-statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-name").click(function() {
+            $( "#explore-skyscrapers-__0__-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-material").click(function() {
+            $( "#explore-skyscrapers-__0__-material" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-purposes").click(function() {
+            $( "#explore-skyscrapers-__0__-purposes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-location").click(function() {
+            $( "#explore-skyscrapers-__0__-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-id").click(function() {
+            $( "#explore-skyscrapers-__0__-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-skyscrapers-__0__-location' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"city"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Chicago"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"city_id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1539</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"country"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"US"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"country id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>163</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"longitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"latitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-skyscrapers-__0__-location" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-location-city").click(function() {
+            $( "#explore-skyscrapers-__0__-location-city" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-location-city_id").click(function() {
+            $( "#explore-skyscrapers-__0__-location-city_id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-location-country").click(function() {
+            $( "#explore-skyscrapers-__0__-location-country" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-location-country-id").click(function() {
+            $( "#explore-skyscrapers-__0__-location-country-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-location-longitude").click(function() {
+            $( "#explore-skyscrapers-__0__-location-longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-location-latitude").click(function() {
+            $( "#explore-skyscrapers-__0__-location-latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-skyscrapers-__0__-status-started' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"is started"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-skyscrapers-__0__-status-started" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-status-started-is-started").click(function() {
+            $( "#explore-skyscrapers-__0__-status-started-is-started" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-status-started-year").click(function() {
+            $( "#explore-skyscrapers-__0__-status-started-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-skyscrapers-__0__-status-completed' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"is completed"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-skyscrapers-__0__-status-completed" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-status-completed-is-completed").click(function() {
+            $( "#explore-skyscrapers-__0__-status-completed-is-completed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-status-completed-year").click(function() {
+            $( "#explore-skyscrapers-__0__-status-completed-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-skyscrapers-__0__-status' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"current"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"vision"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"started"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-skyscrapers-__0__-status-started'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"completed"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-skyscrapers-__0__-status-completed'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-skyscrapers-__0__-status" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-status-current").click(function() {
+            $( "#explore-skyscrapers-__0__-status-current" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-status-started").click(function() {
+            $( "#explore-skyscrapers-__0__-status-started" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-skyscrapers-__0__-status-completed").click(function() {
+            $( "#explore-skyscrapers-__0__-status-completed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
 
 
     

@@ -1,10 +1,22 @@
+import collections
+try:
+  # Python 2.7+
+  basestring
+except NameError:
+  # Python 3.3+
+  basestring = str 
+try:
+    unicode
+except NameError:
+    unicode = str
+
 def copy_file(filename):
     with open(filename, 'rb') as input:
         return input.read()
 
 def clean_json(input):
     if isinstance(input, dict):
-        return {clean_json(key.lower()): clean_json(value) for key, value in input.iteritems()}
+        return {clean_json(key.lower()): clean_json(value) for key, value in input.items()}
     elif isinstance(input, list):
         return [clean_json(element) for element in input]
     elif isinstance(input, unicode):
@@ -13,21 +25,17 @@ def clean_json(input):
         return input
         
 def to_dict(obj, classkey=None):
-    if isinstance(obj, dict):
-        for k in obj.keys():
-            obj[k] = to_dict(obj[k], classkey)
-        return obj
-    elif hasattr(obj, "__iter__"):
-        return [to_dict(v, classkey) for v in obj]
-    elif hasattr(obj, "__dict__"):
-        data = dict([(key, to_dict(value, classkey)) 
-            for key, value in obj.__dict__.iteritems() 
-            if not callable(value) and not key.startswith('_')])
-        if classkey is not None and hasattr(obj, "__class__"):
-            data[classkey] = obj.__class__.__name__
-        return data
-    else:
-        return obj
+    if isinstance(obj, basestring):
+        return obj 
+    elif isinstance(obj, dict):
+        return dict((key, to_dict(val)) for key, val in obj.items())
+    elif isinstance(obj, collections.Iterable):
+        return [to_dict(val) for val in obj]
+    elif hasattr(obj, '__dict__'):
+        return to_dict(vars(obj))
+    elif hasattr(obj, '__slots__'):
+        return to_dict(dict((name, getattr(obj, name)) for name in getattr(obj, '__slots__')))
+    return obj
 
         
 def snake_case(string):

@@ -61,7 +61,7 @@
 {% for interface in interfaces %}
 (define ({{ interface.name | kebab_case }} {% for arg in interface.args %}{{arg.name| kebab_case }}{{ ' ' if not loop.last }}{% endfor %}{% if interface.test %}{% if interface.args %} {% endif %}[test #t]{% endif %})
 {%- for arg in interface.args %} 
-    (check-arg '{{ arg.name | kebab_case}} ({{arg.type | kebab_case}}? {{arg.name | kebab_case}}) '{{arg.type | kebab_case}} {{ loop.index}} {{arg.name | kebab_case}})
+    (check-arg '{{ arg.name | kebab_case}} ({{arg.type | convert_to_racket_type | kebab_case}}? {{arg.name | kebab_case}}) '{{arg.type | kebab_case}} {{ loop.index}} {{arg.name | kebab_case}})
     {% if arg.matches -%}
     ; Ensure a match exists
     (let ([potentials (map string-downcase 

@@ -1,9 +1,13 @@
+from __future__ import print_function
+
 import json
 import sys, os
 from pprint import pprint
-from itertools import tee, izip
-from urlparse import urlparse
-from urllib import quote_plus, urlencode
+from itertools import tee
+try:
+    from itertools import izip
+except ImportError:
+    izip = zip
 from textwrap import wrap
 from collections import OrderedDict
 from auxiliary import to_dict, camel_case_caps, camel_case
@@ -21,12 +25,6 @@ env.filters['snake_case'] = snake_case
 env.filters['kebab_case'] = kebab_case
 env.filters['flat_case'] = flat_case
 env.filters['tojson'] = json.dumps
-
-def pairwise(iterable):
-    "s -> (s0,s1), (s1,s2), (s2, s3), ..."
-    a, b = tee(iterable)
-    next(b, None)
-    return izip(a, b)
 
 conversion_mapping = { ("string", "integer") : "",
                        ("string", "float") : "",
@@ -320,7 +318,7 @@ if __name__ == "__main__":
     from validate import validate_spec
     warnings, errors = validate_spec(input)
     for warning in warnings:
-        print "Warning!", warning
+        print("Warning!", warning)
     if not errors:
         from compile import compile_spec
         new_package = compile_spec(input)
@@ -329,4 +327,4 @@ if __name__ == "__main__":
         build_dir(files, sys.argv[2])
     else:
         for error in errors:
-            print "Error!", error
+            print("Error!", error)

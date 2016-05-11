@@ -1,8 +1,4 @@
 Traceback (most recent call last):
-  File "C:\Users\acbart\Projects\datasets\builder\build.py", line 43, in build_dir
-    shutil.copy(src, new_folder)
-  File "C:\Python27\lib\shutil.py", line 119, in copy
-    copyfile(src, dst)
-  File "C:\Python27\lib\shutil.py", line 82, in copyfile
-    with open(src, 'rb') as fsrc:
-IOError: [Errno 2] No such file or directory: 'specs\\kepler/kepler_stellar.html'
+  File "C:\Users\acbart\Projects\datasets\builder\build.py", line 42, in build_dir
+    output.write(data.encode('latin-1'))
+AttributeError: 'bytes' object has no attribute 'encode'

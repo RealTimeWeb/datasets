@@ -1,7 +1,8 @@
+from __future__ import print_function
+
 import argparse
 import yaml
 import glob
-from pprint import pprint
 
 # Builder specific
 from compile import Compiler
@@ -10,6 +11,8 @@ from build import build_dir
 from languages.build_python import build_python
 from languages.build_racket import build_racket
 from languages.build_csv import build_csv
+from languages.build_java import build_java
+from languages.build_sql import build_sql
 
 try:
     import progressbar
@@ -46,12 +49,14 @@ if __name__ == '__main__':
             #pprint(specification)
             compiled, warnings, errors = Compiler(a_spec, specification).run()
             #print("*"*10)
-            if warnings: print "\tWarnings!"
-            for warning in warnings:
-                print "\t\t", warning
-            if errors: print "\tErrors!"
-            for error in errors:
-                print "\t\t", error
+            if warnings:
+                print("\tWarnings!")
+                for warning in warnings:
+                    print("\t\t", warning)
+            if errors:
+                print("\tErrors!")
+                for error in errors:
+                    print("\t\t", error)
             #print("*"*10)
             #pprint(to_dict(compiled))
             if args.language.lower() == "python":
@@ -60,4 +65,12 @@ if __name__ == '__main__':
                 files, moves = build_csv(to_dict(compiled))
             elif args.language.lower() == "racket":
                 files, moves = build_racket(to_dict(compiled), args.fast)
+            elif args.language.lower() == "java":
+                files, moves = build_java(to_dict(compiled), args.fast)
+            elif args.language.lower() == "sql":
+                files, moves = build_sql(to_dict(compiled), args.fast)
             build_data, build_errors = build_dir(files, moves, args.target)
+            if build_errors:
+                print("\tBuild Errors!")
+                for error in build_errors:
+                    print("\t\t", error)
