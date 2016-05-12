@@ -4,8 +4,10 @@ sql:
 	python builder/builder.py -l sql specs/$(target).corgis ./datasets
 racket:
 	python builder/builder.py -l racket specs/$(target).corgis ./datasets
+explorer:
+	python builder/builder.py -l explorer specs/$(target).corgis ./datasets
 python:
-	C:/Users/acbart/anaconda3/python.exe builder/builder.py -l python specs/$(target).corgis ./datasets
+	python builder/builder.py -l python specs/$(target).corgis ./datasets
 all:
 	python builder/builder.py -l python -a specs/ ./datasets
 all_fast:

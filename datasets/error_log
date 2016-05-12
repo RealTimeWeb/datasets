@@ -1,4 +1,6 @@
 Traceback (most recent call last):
-  File "C:\Users\acbart\Projects\datasets\builder\build.py", line 42, in build_dir
-    output.write(data.encode('latin-1'))
-AttributeError: 'bytes' object has no attribute 'encode'
+  File "C:\Users\acbart\Projects\datasets\builder\build.py", line 50, in build_dir
+    if not os.path.isfile(src):
+  File "C:\Python27\lib\genericpath.py", line 29, in isfile
+    st = os.stat(path)
+TypeError: coercing to Unicode: need string or buffer, generator found

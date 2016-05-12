@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Data Explorer Demo</title>
+    
+    <!-- JQuery -->
+    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <style>
+
+    body {
+      font: 14px sans-serif;
+    }
+
+    .axis path,
+    .axis line {
+      fill: none;
+      stroke: #000;
+      shape-rendering: crispEdges;
+    }
+
+    /*.x.axis path {
+      display: none;
+    }*/
+
+    .line {
+      fill: none;
+      stroke: steelblue;
+      stroke-width: 1.5px;
+      shape-rendering: crispEdges;
+    }
+    
+    .circle {
+        fill: black;
+        r: 3;
+        shape-rendering: crispEdges;
+    }
+    
+    .vertically-align {
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+    }
+    
+    .bar {
+        fill: lightblue;
+        outline: 1px solid blue;
+        shape-rendering: crispEdges;
+    }
+    
+    .data-viz {
+        height: 100%;
+        position: absolute;
+    }
+
+    </style>
+    
+    <!-- Datasets! -->
+    
+    <script src='constructionspending.js'></script>
+    
+    
+    <script>
+    
+var CHARTS = ko.observableArray([
+        {'name': 'Line Plot', 'id': 'line', 'is2d': false, 'left': 'Y-values', 'right': 'Blank'},
+        {'name': 'Histogram', 'id': 'hist', 'is2d': false, 'left': 'Values', 'right': 'Blank'},
+        {'name': 'XY Plot', 'id': 'xy', 'is2d': true, 'left': 'X-values', 'right': 'Y-values'},
+        {'name': 'Scatter Plot', 'id': 'scatter', 'is2d': true, 'left': 'X-values', 'right': 'Y-values'},
+        //{'name': 'Bar Graph', 'id': 'bar', 'is2d': true},
+    ]);
+var mainModel = {
+    'charts': CHARTS,
+    'selected': {
+        'dataset': ko.observable('weather'),
+        'left': ko.observable('wind speed'),
+        'right': ko.observable('humidity'),
+        'chart': ko.observable(CHARTS()[1])
+    },
+    'structures':  ko.observableArray([
+    
+        {'name': "constructionspending", 'data': constructionspending}
+    
+    ])
+};
+
+// Here's a custom Knockout binding that makes elements shown/hidden via jQuery's fadeIn()/fadeOut() methods
+// Could be stored in a separate utility library
+ko.bindingHandlers.fadeVisible = {
+    init: function(element, valueAccessor) {
+        // Initially set the element to be instantly visible/hidden depending on the value
+        var value = valueAccessor();
+        $(element).toggle(ko.unwrap(value)); // Use "unwrapObservable" so we can handle values that may or may not be observable
+    },
+    update: function(element, valueAccessor) {
+        // Whenever the value subsequently changes, slowly fade the element in or out
+        var value = valueAccessor();
+        ko.unwrap(value) ? $(element).fadeIn() : $(element).fadeOut();
+    }
+};
+
+$(document).ready(function () {
+    ko.applyBindings(mainModel);
+    
+    var margin = {top: 20, right: 20, bottom: 30, left: 50},
+        width = 800 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+    var formatDate = d3.time.format("%d-%b-%y");
+    
+    var x = d3.scale.linear()
+        .range([0, width]);
+    
+    var y = d3.scale.linear()
+        .range([height, 0]);
+        
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left");
+        
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+    
+    var line = d3.svg.line()
+        .x(function(d) { return x(d.x); })
+        .y(function(d) { return y(d.y); })
+        .interpolate("linear");
+        
+    var xMap = function(d) {return x(d.x)};
+    var yMap = function(d) {return y(d.y)};
+
+    mainModel.charts().forEach(function (e, i) {
+        e.canvas = d3.select("#data-visualization-"+e.id).append("svg")
+                        .attr("width", width + margin.left + margin.right)
+                        .attr("height", height + margin.top + margin.bottom)
+                      .append("g")
+                        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        e.canvas.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis);
+        e.canvas.append("g")
+              .attr("class", "y axis")
+              .call(yAxis);
+    });
+    
+    // TODO: implement http://www.thesoftwaresimpleton.com/blog/2016/01/16/d3-axis/
+        
+    
+        
+    function changeDataset() {
+        var chart = mainModel.selected.chart();
+        var canvas = chart.canvas;
+    
+        var actualData, ys;
+        if (chart.is2d) {
+            actualData = d3.zip(mainModel.selected.left().data,
+                                mainModel.selected.right().data).map(function(element) {
+                return {'x': element[0], 'y': element[1]}
+            });
+        } else {
+            ys = mainModel.selected.left().data;
+            actualData = ys.map(function(element, index) {
+                return {'x': index, 'y': element}
+            });
+        }
+        
+        if (chart.id == 'hist') {
+            x.domain([d3.min(ys), d3.max(ys)+1]);
+            var histMapper = d3.layout.histogram().bins(x.ticks(20))(ys);
+            y.domain([0, d3.max(histMapper, function(d) { return d.y; })]);
+        } else {
+            x.domain(d3.extent(actualData, function(d) { return d.x; }));
+            y.domain(d3.extent(actualData, function(d) { return d.y; }));
+        }
+    
+        // bind data
+        
+        // add new elements
+        var appending;
+        if (chart.id == 'xy' || chart.id == 'line') {
+            appending = canvas.selectAll('.line')
+                              .data(actualData);
+            appending.exit()
+                .transition()
+                .attr("stroke-width", 0)
+                .remove();
+            appending.enter().append('path')
+                     .attr("class", "line")
+                     .transition()
+                        .duration(500)
+                        .attr("d", line(actualData));
+            appending.transition()
+                    .duration(500)
+                    .attr("d", line(actualData));
+        } else if (chart.id == 'scatter') {
+            appending = canvas.selectAll('circle')
+                              .data(actualData);
+            appending.exit()
+                .transition()
+                .attr("r", 0)
+                .remove();
+            appending.enter().append('circle')
+                     .attr("class", "circle")
+                     .attr("cx", xMap)
+                     .attr("cy", yMap)
+                    .attr('r', 4);
+            appending.transition()
+                    .duration(500)
+                    .attr("cx", xMap)
+                    .attr("cy", yMap);
+        } else if (chart.id == 'hist') {
+            bars = canvas.selectAll('.bar')
+                              .data(histMapper);
+            bars.exit()
+                .transition()
+                .duration(500)
+                .attr("y", y(0))
+                .attr('height', height - y(0))
+                .style('fill-opacity', 1e-6)
+                .remove();
+            
+            bars.enter().append("rect")
+                .attr("class", "bar")
+                .attr("y", y(0))
+                .attr("height", height - y(0));
+                
+            bars.transition()
+                .duration(500)
+                .attr("x", function(d) { return x(d.x); })
+                .attr("width", width/(histMapper.length-1)-1) 
+                .attr("y", function(d) { return y(d.y); })
+                .attr("height", function(d) { return height - y(d.y); }); 
+            /*
+            var bar = appending.enter().append("g")
+                            .attr("class", "bar")
+                            .attr("transform", function(d) { 
+                                return "translate(" + x(d.x) + "," + y(d.y) + ")"; 
+                            });
+            bar.append("rect")
+                .attr("x", 0)
+                .attr("data-comment2", function(d) { 
+                    return d.y; 
+                })
+                .attr("width", width/(histMapper.length-1) - 1)
+                .attr("height", function(d) { 
+                    return height - y(d.y); 
+                });
+            canvas.selectAll('.bar rect')
+                .attr("height", function(d) { 
+                    return height - y(d.y); 
+                })
+                .attr('fill', 'red');
+            appending.transition()
+                .duration(500)
+                .attr("data-comment", function(d) { return ""+d.y })
+                .attr("transform", function(d) { 
+                                return "translate(" + x(d.x) + "," + y(d.y) + ")"; 
+                            });
+            appending.exit()
+                .transition()
+                .attr("height", 0)
+                .remove();*/
+        }
+        
+        // Update the axis
+        var xAxis = d3.svg.axis().scale(x).orient("bottom");
+        var yAxis = d3.svg.axis().scale(y).orient("left");
+
+        canvas.selectAll("g.y.axis")
+            .call(yAxis)
+
+        canvas.selectAll("g.x.axis")
+            .call(xAxis);
+    }
+    
+        
+    // generate initial legend
+    changeDataset();
+    mainModel.selected.left.subscribe(changeDataset);
+    mainModel.selected.right.subscribe(changeDataset);
+    mainModel.selected.chart.subscribe(changeDataset);
+    
+    mainModel.selected.chart.subscribe(function (chart_type) {
+    });
+});
+    </script>
+    
+</head>
+<body>
+<h1>Data Visualizer Demo</h1>
+<div class='container'>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <div class="form-group">
+            <label for="choose-dataset">Dataset: </label>
+            <select class="form-control" id="choose-dataset"
+                    data-bind="options: structures,
+                               value: selected.dataset,
+                               optionsText: 'name'">
+            </select>
+        </div>
+    </div>
+    <div class='col-md-2'>
+        <label for="choose-chart">Chart Type: </label>
+        <select class="form-control vertically-align" id="choose-chart"
+                data-bind="options: charts,
+                           value: selected.chart,
+                           optionsText: 'name'">
+        </select>
+    </div>
+    <div class='col-md-2'>
+        <label for="choose-left" data-bind="text: selected.chart().left">Left: </label>
+        <select class="form-control vertically-align" id="choose-left"
+                    data-bind="options: selected.dataset().data,
+                               value: selected.left,
+                               optionsText: 'name'">
+        </select>
+    </div>
+    <div class='col-md-2' data-bind="visible: selected.chart().is2d">
+        <label for="choose-right" data-bind="text: selected.chart().right">Right: </label>
+        <select class="form-control vertically-align" id="choose-right"
+                    data-bind="options: selected.dataset().data,
+                               value: selected.right,
+                               optionsText: 'name'">
+        </select>
+    </div>
+</div>
+
+<div class='row' style='height: 400px'>
+    <div id="data-visualization-line" class='data-viz col-md-4'
+         data-bind="fadeVisible: selected.chart().id == 'line'"></div>
+    <div id="data-visualization-xy" class='data-viz col-md-4'
+         data-bind="fadeVisible: selected.chart().id == 'xy'"></div>
+    <div id="data-visualization-hist" class='data-viz col-md-4'
+         data-bind="fadeVisible: selected.chart().id == 'hist'"></div>
+    <div id="data-visualization-scatter" class='data-viz col-md-4'
+         data-bind="fadeVisible: selected.chart().id == 'scatter'"></div>
+</div>
+
+</div>
+
+</body>
+
+</html>
