@@ -28,17 +28,22 @@ metadata:
 local:
   - file: exoplanets.json
     name: exoplanets
+    row: exoplanet
   - file: kepler_names.json
     name: keplernames
+    row: record
     indexes:
       - name: kepid
         jsonpath: kepid
   - file: koi_cumulative.json
     name: koicumulative
+    row: koi
   - file: stellar_table.json
     name: stellartable
+    row: stellar
   - file: tce.json
     name: tce
+    row: tce
 interfaces:
   - name: get exoplanets
     returns: list[exoplanet]

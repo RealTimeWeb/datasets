@@ -13,28 +13,10 @@ metadata:
             This data comes from the US Energy Information Administration, which has historical data from 1949 to 2014. All numbers are given in Quadrillion BTUs. 
             
         citation: http://www.eia.gov/tools/faqs/
-structures:
-  - name: report
-    fields:
-      - name: data
-        type: data
-        role: value
-      - name: year
-        type: int
-        role: key
-  - name: data
-    fields:
-      - name: imports
-        type: imports
-      - name: exports
-        type: exports
-      - name: production
-        type: production
-      - name: consumption
-        type: consumption
 local:
   - file: energy.json
     name: energy
+    row: report
 interfaces:
   - name: get reports
     returns: list[report]
@@ -42,3 +24,5 @@ interfaces:
     production:
         sql: SELECT data FROM energy
         post: json()
+structures:
+  "energy.[0].data": Units are in quadrillion BTUs

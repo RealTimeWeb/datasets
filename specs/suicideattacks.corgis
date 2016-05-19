@@ -17,6 +17,7 @@ metadata:
 local:
   - file: suicide_attacks.json
     name: suicideattacks
+    row: attack
 interfaces:
   - name: get attacks
     returns: list[attack]

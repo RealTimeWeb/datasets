@@ -2,9 +2,9 @@ metadata:
     version: 1
     name: Slavery
     builder: 2
-    author: Austin Cory Bart <acbart@vt.edu>
-    datetime: 2/22/2016
-    tags: [history, slavery, economics, slaves]
+    author: Ryan Whitcomb <rwhit94@vt.edu>
+    datetime: 5-17-16
+    tags: [slavery, slave, slaves, buyer, seller, origin, history, economics]
     description:
         short: This dataset has financial records of New Orleans slave sales, 1856-1861. There are almost 16,000 sales recorded in this dataset. 
         overview: >
@@ -13,19 +13,23 @@ metadata:
             These data were collected from the office of the Orleans parish Civil Clerk of Court. The sample includes all slave sales recorded by the register of conveyance from October 1856 to August 1861. The construction of the dataset is similar to that employed previously by Fogel and Engerman (1976). The unit of observation is the individual with the exception of children who were bundled with their mothers. 
         citation: >
             Calomiris, Charles W., and Jonathan Pritchett. 2016. "Betting on Secession: Quantifying Political Events Surrounding Slavery and the Civil War." American Economic Review, 106(1): 1-23.
-local:
+local:  # Think of as database
   - file: slavery.json
     name: slavery
-    indexes:
-      - name: name
-        jsonpath: slave.name
+    row: transaction record # Name this different than the list titles
 interfaces:
-  - name: get all
-    returns: list[slave]
-    description: Gets a list of all the slaves in the database.
-    test:
-        sql: SELECT data FROM slavery LIMIT {hardware}
-        post: json()
+  - name: get transaction
+    returns: list[tracsaction record]
+    description: Returns a list of the transactions in the database.
     production:
         sql: SELECT data FROM slavery
+        post: json() #|jsonpath(transaction.sale details.price)
+        # Post is where you 'make' the function happen
+    test: 
+        sql: SELECT data FROM slavery LIMIT {hardware}
         post: json()
+structures:
+    "slavery.[0].Slave.Age": Ages that are represented as -1 stand for ages that were not available in the data that was collected.
+    "slavery.[0].Transaction.Sale Details.Discount Rate": Missing values were replaced using the mean of the rest of the category
+    "slavery.[0].Transaction.Sale Details.Predicted Rate": Missing values were replaced using the mean of the rest of the category
+    "slavery.[0].Transaction.Sale Details.Price": Missing values were replaced using the mean of the rest of the category"

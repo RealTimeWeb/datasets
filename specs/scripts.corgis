@@ -13,6 +13,7 @@ metadata:
 local:
   - file: scripts.json
     name: scripts
+    row: script
     indexes:
       - name: title
         jsonpath: data.title

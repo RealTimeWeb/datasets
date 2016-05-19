@@ -19,6 +19,7 @@ metadata:
 local:
   - file: retailservices.json
     name: retailservices
+    row: report
 interfaces:
   - name: get report
     description: Returns sales, inventory, and ratio data for every month.
@@ -29,3 +30,5 @@ interfaces:
     test:
         sql: SELECT data FROM retailservices LIMIT {hardware}
         post: json()
+structures:
+    "retailservices.[0].data": Numbers represent millions of dollars

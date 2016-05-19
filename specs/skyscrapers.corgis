@@ -13,6 +13,7 @@ metadata:
 local:
   - file: skyscrapers.json
     name: skyscrapers
+    row: skyscraper
 interfaces:
   - name: get skyscrapers
     returns: list[skyscraper]

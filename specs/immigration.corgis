@@ -13,6 +13,7 @@ metadata:
 local:
   - file: immigration.json
     name: immigration
+    row: record
 interfaces:
   - name: get records
     returns: list[record]

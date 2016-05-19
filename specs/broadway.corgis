@@ -13,12 +13,13 @@ metadata:
 local:
   - file: broadway.json
     name: broadway
+    row: production
     indexes:
       - name: theatre
         jsonpath: theatre
 interfaces:
   - name: get shows
-    returns: list[show]
+    returns: list[production]
     description: Returns information about all the shows
     test:
         sql: SELECT data FROM broadway LIMIT {hardware}
@@ -27,7 +28,7 @@ interfaces:
         sql: SELECT data FROM broadway
         post: json()
   - name: get show by theatre
-    returns: list[show]
+    returns: list[production]
     description: Returns information about all the shows at a given theatre
     args:
       - name: theatre
