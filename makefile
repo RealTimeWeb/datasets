@@ -1,5 +1,7 @@
 java:
 	python builder/builder.py -l java specs/$(target).corgis ./datasets
+metrics:
+	python builder/builder.py -l metrics specs/$(target).corgis ./datasets
 sql:
 	python builder/builder.py -l sql specs/$(target).corgis ./datasets
 racket:

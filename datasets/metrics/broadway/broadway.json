@@ -1,0 +1,27 @@
+{
+  "broadway": {
+    "dicts": {
+      "count": 0, 
+      "widths": [], 
+      "heights": []
+    }, 
+    "unions": {
+      "count": 0, 
+      "sizes": []
+    }, 
+    "lists": {
+      "count": 0, 
+      "widths": [], 
+      "heights": []
+    }, 
+    "locals": 0, 
+    "atomics": {
+      "nones": 1, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 7, 
+      "strings": 3, 
+      "floats": 0
+    }
+  }
+}

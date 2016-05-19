@@ -8,6 +8,7 @@ class JsonWalker(object):
         self.lists = {}
         self.path = []
         self.name = name
+        self.empty_list_warnings = []
         self.comment_dictionary = comment_dictionary
     
     @property
@@ -39,16 +40,19 @@ class JsonWalker(object):
             self.path.pop()
             self.dictionaries[self.json_path]['fields'].append(dictionary)
     def walk_list(self, a_list, parent_name):
-        assert a_list, "Empty list at {path}".format(path=self.json_path)
-        entry_path = self.json_path
-        self.path.append("[0]")
-        first = a_list[0]
-        self.lists[entry_path] = {'type': self.type_check(first), 
-                                  'example': first, 
-                                  'comment': self.comment_dictionary.get(self.json_path, ""), 
-                                  'path': self.json_path}
-        self.walk(first, parent_name)
-        self.path.pop()
+        #assert a_list, "Empty list at {path}".format(path=self.json_path)
+        if a_list:
+            entry_path = self.json_path
+            self.path.append("[0]")
+            first = a_list[0]
+            self.lists[entry_path] = {'type': self.type_check(first), 
+                                      'example': first, 
+                                      'comment': self.comment_dictionary.get(self.json_path, ""), 
+                                      'path': self.json_path}
+            self.walk(first, parent_name)
+            self.path.pop()
+        else:
+            self.empty_list_warnings.append(self.json_path)
     def walk_atomic(self, an_atomic, parent_name):
         pass
 

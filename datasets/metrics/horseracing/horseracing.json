@@ -1,0 +1,28 @@
+{
+  "races": {
+    "dicts": {
+      "count": 0, 
+      "widths": [], 
+      "heights": []
+    }, 
+    "unions": {
+      "count": 0, 
+      "sizes": []
+    }, 
+    "lists": {
+      "count": 0, 
+      "widths": [], 
+      "heights": []
+    }, 
+    "locals": 0, 
+    "atomics": {
+      "count": 220, 
+      "nones": 14, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 40, 
+      "strings": 79, 
+      "floats": 87
+    }
+  }
+}

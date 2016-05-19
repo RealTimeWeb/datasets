@@ -1,0 +1,28 @@
+{
+  "slavery": {
+    "dicts": {
+      "count": 13, 
+      "average branching factor": 4
+    }, 
+    "atomics": {
+      "count": 40, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 0, 
+      "strings": 40, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 2, 
+      "lengths": 14713, 
+      "complex": 1
+    }, 
+    "heights": 5, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
+  }
+}

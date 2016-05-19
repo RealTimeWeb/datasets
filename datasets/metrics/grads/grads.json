@@ -1,0 +1,27 @@
+{
+  "grads": {
+    "dicts": {
+      "count": 0, 
+      "widths": [], 
+      "heights": []
+    }, 
+    "unions": {
+      "count": 0, 
+      "sizes": []
+    }, 
+    "lists": {
+      "count": 0, 
+      "widths": [], 
+      "heights": []
+    }, 
+    "locals": 0, 
+    "atomics": {
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 17, 
+      "strings": 2, 
+      "floats": 2
+    }
+  }
+}

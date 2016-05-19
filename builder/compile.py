@@ -422,6 +422,9 @@ class Compiler(object):
             if os.path.exists(local.file):
                 with open(local.file) as json_file:
                     walked = JsonWalker(local.name, self.package.structures_comments).walk(json.load(json_file), local.row)
+                    if walked.empty_list_warnings:
+                        for location in walked.empty_list_warnings:
+                            self.warning("Empty list at {}".format(location))
                     self.package.structures[local.name] = {
                         'lists': walked.lists,
                         'dictionaries': walked.dictionaries,

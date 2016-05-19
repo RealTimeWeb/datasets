@@ -1,0 +1,28 @@
+{
+  "supremecourt": {
+    "dicts": {
+      "count": 0, 
+      "widths": [], 
+      "heights": []
+    }, 
+    "unions": {
+      "count": 0, 
+      "sizes": []
+    }, 
+    "lists": {
+      "count": 0, 
+      "widths": [], 
+      "heights": []
+    }, 
+    "locals": 0, 
+    "atomics": {
+      "count": 735846, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 366544, 
+      "strings": 369302, 
+      "floats": 0
+    }
+  }
+}

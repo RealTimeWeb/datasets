@@ -1,0 +1,28 @@
+{
+  "skyscrapers": {
+    "dicts": {
+      "count": 7, 
+      "average branching factor": 6
+    }, 
+    "atomics": {
+      "count": 41, 
+      "nones": 0, 
+      "booleans": 25, 
+      "longs": 0, 
+      "ints": 10, 
+      "strings": 5, 
+      "floats": 1
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 2431, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
+  }
+}

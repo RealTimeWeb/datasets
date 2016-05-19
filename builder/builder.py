@@ -13,6 +13,7 @@ from languages.build_racket import build_racket
 from languages.build_csv import build_csv
 from languages.build_java import build_java
 from languages.build_sql import build_sql
+from languages.build_metrics import build_metrics
 from languages.build_explorer import build_explorer
 
 try:
@@ -70,6 +71,8 @@ if __name__ == '__main__':
                 files, moves = build_java(to_dict(compiled), args.fast)
             elif args.language.lower() == "sql":
                 files, moves = build_sql(to_dict(compiled), args.fast)
+            elif args.language.lower() == "metrics":
+                files, moves = build_metrics(to_dict(compiled), args.fast)
             elif args.language.lower() == "explorer":
                 files, moves = build_explorer(to_dict(compiled), args.fast)
             build_data, build_errors = build_dir(files, moves, args.target)
