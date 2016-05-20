@@ -1,24 +1,24 @@
 {
-  "broadway": {
+  "soccer": {
     "dicts": {
-      "count": 1, 
-      "average branching factor": 11
+      "count": 7, 
+      "average branching factor": 2
     }, 
     "atomics": {
-      "count": 11, 
+      "count": 14, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 7, 
-      "strings": 3, 
+      "ints": 2, 
+      "strings": 12, 
       "floats": 0
     }, 
     "lists": {
-      "count": 1, 
-      "lengths": 41750, 
-      "complex": 1
+      "count": 4, 
+      "lengths": 8, 
+      "complex": 4
     }, 
-    "heights": 2, 
+    "heights": 9, 
     "unions": {
       "count": 0, 
       "sizes": 0

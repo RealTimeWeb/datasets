@@ -1,22 +1,22 @@
 {
-  "classics": {
+  "drugbank": {
     "dicts": {
-      "count": 10, 
-      "average branching factor": 4
+      "count": 3, 
+      "average branching factor": 9
     }, 
     "atomics": {
-      "count": 38, 
+      "count": 26, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 14, 
-      "strings": 10, 
-      "floats": 14
+      "ints": 0, 
+      "strings": 18, 
+      "floats": 2
     }, 
     "lists": {
-      "count": 5, 
-      "lengths": 1006, 
-      "complex": 1
+      "count": 7, 
+      "lengths": 7759, 
+      "complex": 2
     }, 
     "heights": 5, 
     "unions": {

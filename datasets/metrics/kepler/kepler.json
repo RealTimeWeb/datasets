@@ -1,0 +1,132 @@
+{
+  "stellartable": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 33
+    }, 
+    "atomics": {
+      "count": 33, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 8, 
+      "strings": 7, 
+      "floats": 18
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 39336, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
+  }, 
+  "tce": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 43
+    }, 
+    "atomics": {
+      "count": 43, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 6, 
+      "strings": 5, 
+      "floats": 32
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 16285, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
+  }, 
+  "keplernames": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 13
+    }, 
+    "atomics": {
+      "count": 13, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 1, 
+      "strings": 8, 
+      "floats": 4
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 992, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
+  }, 
+  "exoplanets": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 79
+    }, 
+    "atomics": {
+      "count": 79, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 33, 
+      "strings": 7, 
+      "floats": 39
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 1763, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
+  }, 
+  "koicumulative": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 69
+    }, 
+    "atomics": {
+      "count": 69, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 2, 
+      "strings": 13, 
+      "floats": 54
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 7305, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
+  }
+}

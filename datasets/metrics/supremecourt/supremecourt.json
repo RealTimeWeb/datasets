@@ -1,28 +1,28 @@
 {
   "supremecourt": {
     "dicts": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
+      "count": 29, 
+      "average branching factor": 3
     }, 
-    "unions": {
-      "count": 0, 
-      "sizes": []
+    "atomics": {
+      "count": 86, 
+      "nones": 0, 
+      "booleans": 7, 
+      "longs": 0, 
+      "ints": 36, 
+      "strings": 43, 
+      "floats": 0
     }, 
     "lists": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
+      "count": 1, 
+      "lengths": 8631, 
+      "complex": 1
     }, 
-    "locals": 0, 
-    "atomics": {
-      "count": 735846, 
-      "nones": 0, 
-      "booleans": 0, 
-      "longs": 0, 
-      "ints": 366544, 
-      "strings": 369302, 
-      "floats": 0
-    }
+    "heights": 5, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
   }
 }

@@ -1,27 +1,28 @@
 {
   "airlines": {
     "dicts": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
+      "count": 8, 
+      "average branching factor": 3
     }, 
-    "unions": {
-      "count": 0, 
-      "sizes": []
-    }, 
-    "lists": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
-    }, 
-    "locals": 0, 
     "atomics": {
+      "count": 23, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
       "ints": 18, 
       "strings": 5, 
       "floats": 0
-    }
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 54013, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
   }
 }

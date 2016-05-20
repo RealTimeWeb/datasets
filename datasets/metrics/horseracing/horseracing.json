@@ -1,28 +1,28 @@
 {
   "races": {
     "dicts": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
+      "count": 82, 
+      "average branching factor": 3
     }, 
-    "unions": {
-      "count": 0, 
-      "sizes": []
-    }, 
-    "lists": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
-    }, 
-    "locals": 0, 
     "atomics": {
       "count": 220, 
-      "nones": 14, 
+      "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
       "ints": 40, 
       "strings": 79, 
       "floats": 87
-    }
+    }, 
+    "lists": {
+      "count": 21, 
+      "lengths": 109, 
+      "complex": 11
+    }, 
+    "heights": 6, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
   }
 }

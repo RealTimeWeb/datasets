@@ -1,24 +1,24 @@
 {
-  "broadway": {
+  "suicideattacks": {
     "dicts": {
-      "count": 1, 
-      "average branching factor": 11
+      "count": 8, 
+      "average branching factor": 3
     }, 
     "atomics": {
-      "count": 11, 
+      "count": 23, 
       "nones": 0, 
-      "booleans": 0, 
+      "booleans": 1, 
       "longs": 0, 
       "ints": 7, 
-      "strings": 3, 
+      "strings": 15, 
       "floats": 0
     }, 
     "lists": {
-      "count": 1, 
-      "lengths": 41750, 
+      "count": 3, 
+      "lengths": 4616, 
       "complex": 1
     }, 
-    "heights": 2, 
+    "heights": 4, 
     "unions": {
       "count": 0, 
       "sizes": 0

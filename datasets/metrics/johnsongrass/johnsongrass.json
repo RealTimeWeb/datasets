@@ -1,24 +1,24 @@
 {
-  "broadway": {
+  "johnsongrass": {
     "dicts": {
-      "count": 1, 
-      "average branching factor": 11
+      "count": 5, 
+      "average branching factor": 2
     }, 
     "atomics": {
-      "count": 11, 
+      "count": 9, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 7, 
-      "strings": 3, 
-      "floats": 0
+      "ints": 6, 
+      "strings": 1, 
+      "floats": 1
     }, 
     "lists": {
       "count": 1, 
-      "lengths": 41750, 
+      "lengths": 583, 
       "complex": 1
     }, 
-    "heights": 2, 
+    "heights": 4, 
     "unions": {
       "count": 0, 
       "sizes": 0

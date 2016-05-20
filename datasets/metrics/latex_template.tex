@@ -1,0 +1,11 @@
+\begin{figure*}
+\begin{tabular}{ l | c c | c c c c c c |}
+ & \multicolumn{2}{|c|}{Structure} & \multicolumn{6}{|c|}{Data Types} \\
+Name & ABF & Height & Lists & Objects & Booleans & Integers & Strings & Floats \\\hline
+{% for report in reports -%}
+{% for name, data in report.items() -%}
+{{ name }} & {{ data.dicts['average branching factor'] }} & {{ data.heights }} & {{data.lists.count}} & {{data.dicts.count}} & {{ data.atomics.booleans }} & {{ data.atomics.ints }} & {{data.atomics.strings}} & {{data.atomics.floats }}\\
+{% endfor -%}
+{% endfor -%}
+\end{tabular}
+\end{figure*}

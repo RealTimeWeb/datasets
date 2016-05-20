@@ -1,27 +1,28 @@
 {
   "health": {
     "dicts": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
+      "count": 1, 
+      "average branching factor": 6
     }, 
-    "unions": {
-      "count": 0, 
-      "sizes": []
-    }, 
-    "lists": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
-    }, 
-    "locals": 0, 
     "atomics": {
+      "count": 6, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
       "ints": 3, 
       "strings": 2, 
       "floats": 1
-    }
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 14265, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
   }
 }

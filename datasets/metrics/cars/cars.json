@@ -1,28 +1,28 @@
 {
   "cars": {
     "dicts": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
+      "count": 1, 
+      "average branching factor": 23
     }, 
-    "unions": {
-      "count": 0, 
-      "sizes": []
-    }, 
-    "lists": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
-    }, 
-    "locals": 0, 
     "atomics": {
-      "count": 576219, 
+      "count": 23, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 250530, 
-      "strings": 250530, 
-      "floats": 75159
-    }
+      "ints": 10, 
+      "strings": 10, 
+      "floats": 3
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 25053, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
   }
 }

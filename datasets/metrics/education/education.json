@@ -1,27 +1,28 @@
 {
   "school": {
     "dicts": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
+      "count": 15, 
+      "average branching factor": 3
     }, 
-    "unions": {
-      "count": 0, 
-      "sizes": []
-    }, 
-    "lists": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
-    }, 
-    "locals": 0, 
     "atomics": {
+      "count": 35, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
       "ints": 24, 
       "strings": 2, 
       "floats": 7
-    }
+    }, 
+    "lists": {
+      "count": 6, 
+      "lengths": 51, 
+      "complex": 5
+    }, 
+    "heights": 6, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
   }
 }

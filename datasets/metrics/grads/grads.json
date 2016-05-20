@@ -1,27 +1,28 @@
 {
   "grads": {
     "dicts": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
+      "count": 1, 
+      "average branching factor": 21
     }, 
-    "unions": {
-      "count": 0, 
-      "sizes": []
-    }, 
-    "lists": {
-      "count": 0, 
-      "widths": [], 
-      "heights": []
-    }, 
-    "locals": 0, 
     "atomics": {
+      "count": 21, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
       "ints": 17, 
       "strings": 2, 
       "floats": 2
-    }
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 173, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
   }
 }

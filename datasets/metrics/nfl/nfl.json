@@ -1,0 +1,54 @@
+{
+  "players": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 26
+    }, 
+    "atomics": {
+      "count": 26, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 10, 
+      "strings": 5, 
+      "floats": 11
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 4947, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
+  }, 
+  "games": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 11
+    }, 
+    "atomics": {
+      "count": 11, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 6, 
+      "strings": 5, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 11192, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "locals": 0
+  }
+}

@@ -1,24 +1,24 @@
 {
-  "broadway": {
+  "constructionspending": {
     "dicts": {
-      "count": 1, 
-      "average branching factor": 11
+      "count": 10, 
+      "average branching factor": 12
     }, 
     "atomics": {
-      "count": 11, 
+      "count": 119, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 7, 
-      "strings": 3, 
+      "ints": 51, 
+      "strings": 2, 
       "floats": 0
     }, 
     "lists": {
       "count": 1, 
-      "lengths": 41750, 
+      "lengths": 169, 
       "complex": 1
     }, 
-    "heights": 2, 
+    "heights": 4, 
     "unions": {
       "count": 0, 
       "sizes": 0

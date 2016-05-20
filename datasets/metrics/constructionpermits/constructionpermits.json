@@ -1,24 +1,24 @@
 {
-  "broadway": {
+  "constructionpermits": {
     "dicts": {
-      "count": 1, 
-      "average branching factor": 11
+      "count": 5, 
+      "average branching factor": 3
     }, 
     "atomics": {
-      "count": 11, 
+      "count": 14, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 7, 
-      "strings": 3, 
+      "ints": 9, 
+      "strings": 4, 
       "floats": 0
     }, 
     "lists": {
-      "count": 1, 
-      "lengths": 41750, 
-      "complex": 1
+      "count": 2, 
+      "lengths": 139, 
+      "complex": 2
     }, 
-    "heights": 2, 
+    "heights": 5, 
     "unions": {
       "count": 0, 
       "sizes": 0

@@ -1,24 +1,24 @@
 {
-  "broadway": {
+  "realestate": {
     "dicts": {
-      "count": 1, 
-      "average branching factor": 11
+      "count": 6, 
+      "average branching factor": 3
     }, 
     "atomics": {
-      "count": 11, 
+      "count": 18, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 7, 
-      "strings": 3, 
+      "ints": 0, 
+      "strings": 18, 
       "floats": 0
     }, 
     "lists": {
       "count": 1, 
-      "lengths": 41750, 
+      "lengths": 9315, 
       "complex": 1
     }, 
-    "heights": 2, 
+    "heights": 4, 
     "unions": {
       "count": 0, 
       "sizes": 0

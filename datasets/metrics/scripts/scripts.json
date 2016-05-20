@@ -1,24 +1,24 @@
 {
-  "immigration": {
+  "scripts": {
     "dicts": {
       "count": 4, 
-      "average branching factor": 42
+      "average branching factor": 4
     }, 
     "atomics": {
-      "count": 166, 
+      "count": 15, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 166, 
-      "strings": 0, 
-      "floats": 0
+      "ints": 3, 
+      "strings": 11, 
+      "floats": 1
     }, 
     "lists": {
-      "count": 1, 
-      "lengths": 10, 
-      "complex": 1
+      "count": 4, 
+      "lengths": 669, 
+      "complex": 3
     }, 
-    "heights": 3, 
+    "heights": 5, 
     "unions": {
       "count": 0, 
       "sizes": 0
