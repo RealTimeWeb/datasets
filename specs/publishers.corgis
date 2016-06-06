@@ -12,6 +12,7 @@ metadata:
 local:
   - file: publishers.json
     name: publishers
+    row: book
 interfaces:
   - name: get books
     returns: list[book]

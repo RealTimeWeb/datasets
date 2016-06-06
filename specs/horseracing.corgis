@@ -11,6 +11,7 @@ metadata:
 local:
   - file: horseracing.json
     name: races
+    row: race
 interfaces:
   - name: get races
     returns: list[race]

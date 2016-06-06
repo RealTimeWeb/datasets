@@ -13,6 +13,7 @@ metadata:
 local:
   - file: finance.json
     name: finance
+    row: record
     indexes:
       - name: state
         jsonpath: state

@@ -2,8 +2,8 @@ metadata:
     version: 1
     name: Billionaires
     builder: 2
-    author: Austin Cory Bart <acbart@vt.edu>
-    datetime: 3/12/2016
+    author: Ryan Whitcomb <rwhit94> # It only likes one author, Idk who to put here
+    datetime: 5-17-16
     tags: [money, rich, wealthy, people, person, billionaire]
     description:
         overview: >
@@ -14,6 +14,7 @@ metadata:
 local:
   - file: billionaires.json
     name: billionaires
+    row: billionaire
 interfaces:
   - name: get billionaires
     returns: list[billionaire]
@@ -21,3 +22,5 @@ interfaces:
     production:
         sql: SELECT data FROM billionaires
         post: json()
+structures:
+    "billionaires.[0].demographics.age": Ages that are represented as -1 stand for ages that were not available in the data that was collected.

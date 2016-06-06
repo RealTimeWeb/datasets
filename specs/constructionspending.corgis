@@ -14,6 +14,7 @@ metadata:
 local:
   - file: constructionspending.json
     name: constructionspending
+    row: spending
 interfaces:
   - name: get spending
     description: Returns spending data from every year.

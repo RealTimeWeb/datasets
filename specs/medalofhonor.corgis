@@ -15,6 +15,7 @@ metadata:
 local:
   - file: medal_of_honor.json
     name: medalofhonor
+    row: awardee
 interfaces:
   - name: get awardees
     returns: list[awardee]

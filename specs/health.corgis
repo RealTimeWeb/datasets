@@ -11,6 +11,7 @@ metadata:
 local:
   - file: health.json
     name: health
+    row: report
     indexes:
       - name: disease
         jsonpath: disease

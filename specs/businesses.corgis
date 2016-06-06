@@ -15,6 +15,7 @@ metadata:
 local:
   - file: businesses.json
     name: businesses
+    row: business
     indexes:
       - name: city
         jsonpath: city
@@ -22,6 +23,7 @@ local:
         jsonpath: name
   - file: users.json
     name: users
+    row: user
     indexes:
       - name: uid
         jsonpath: user_id

@@ -1,0 +1,26 @@
+<div class="media col-md-5 col-md-offset-1 dataset-card" id="{{ metadata.name|flat_case }}">
+  {% if metadata.icon %}
+  <div class="media-left  media-middle">
+    <a target="_blank" href="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.html">
+      <img class="media-object" src="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.png" alt="{{ metadata.name }}" style="max-width: 64px; max-height: 64px;">
+    </a>
+  </div>
+  {% endif %}
+  <div class="media-body">
+    <a target="_blank" href="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.html">
+    <h4 class="media-heading">{{ metadata.name }}</h4>
+    </a>
+    {{ metadata.description.short }}<br>
+    <i>{{ metadata.tags|join(", ") }}</i>
+  </div>
+</div>
+<script>
+searcher.add(
+    {
+        'name': "{{ metadata.name|flat_case }}",
+        'body': {{ metadata.description.overview|replace('\n', ' ')|replace('\r',' ')|striptags|trim|tojson|safe }},
+        'description': {{ metadata.description.short|replace('\n', ' ')|striptags|trim|tojson|safe }},
+        'tags': {{ metadata.tags|tojson|safe }}
+    }
+);
+</script>

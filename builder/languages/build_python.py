@@ -23,8 +23,9 @@ except NameError:
     unicode = str
 
 base_directory = os.path.dirname(os.path.realpath(__file__))
-templates = os.path.join(base_directory, 'python/')
-env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader(templates))
+python_templates = os.path.join(base_directory, 'python/')
+templates = os.path.join(base_directory, 'templates/')
+env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader([templates, python_templates]))
 env.filters['camel_case_caps'] = camel_case_caps
 env.filters['camel_case'] = camel_case
 env.filters['snake_case'] = snake_case

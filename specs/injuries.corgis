@@ -22,6 +22,7 @@ metadata:
 local:
   - file: injuries.json
     name: injuries
+    row: report
 interfaces:
   - name: get reports
     description: Returns injury reports for companies in the US.

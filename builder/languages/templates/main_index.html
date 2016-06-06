@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block title %}CORGIS - Index{% endblock %}
+
+{% block body %}
+
+<div class="page-header">
+    <img src='_images/corgis-logo-smaller.png' class='pull-right img-responsive'>
+    <h1>CORGIS Datasets Project</h1>
+    <p class="lead">The <b>C</b>ollection of <b>R</b>eally <b>G</b>reat, <b>I</b>nteresting, <b>S</b>ituated Datasets</p>
+    <span class="text-muted">By Austin Cory Bart, Ryan Whitcomb, Jason Riddle, Omar Saleem, Dr. Eli Tilevich, Dr. Clifford A. Shaffer, Dr. Dennis Kafura</span><br>
+</div>
+
+{% for category, category_label in [('language', 'Languages'), ('raw', "Raw Datasets"), ('other', 'Other Types')] %}
+
+<div class='row'>
+    <h3>{{ category_label }}</h3>
+    
+    {% for language in index %}
+    {% if index[language].category == category %}
+    <div class="well col-md-offset-1 col-md-3 media">
+        <div class="media-left  media-middle">
+            <a target="_blank" href="{{ language.lower() }}/index.html">
+                <img class="media-object" src="_images/{{ language.lower() }}.png" alt="{{ language }}" style="max-width: 64px; max-height: 64px;">
+            </a>
+        </div>
+        <div class="media-body">
+            <a target="_blank" href="{{ language.lower() }}/index.html">
+                <h4 class="media-heading">{{ language.title() }}</h4>
+            </a>
+            {{ index[language.lower()].datasets|length }} Libraries
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+{% endfor %}
+
+{% endblock %}

@@ -437,3 +437,8 @@ class Compiler(object):
             self.package.https = self.walk_https(spec)
             self.package.lookup_https = {h.name: h for h in self.package.https}
         
+        if 'questions' in spec:
+            self.package.questions = spec['questions']
+        else:
+            self.package.questions = []
+        

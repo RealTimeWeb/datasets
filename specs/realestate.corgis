@@ -16,6 +16,7 @@ metadata:
 local:
   - file: real_estate.json
     name: realestate
+    row: building
     indexes:
       - name: state
         jsonpath: location.address.state

@@ -6,15 +6,21 @@ metadata:
     datetime: 11/1/2015
     tags: [graduation, grads, majors, education, college, university, higher education, jobs, careers]
     description:
+        short: This library holds data about employment of new graduates by major.
         overview: >
-            This library holds data about employment of new graduates by major.
+            This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series.  Included is information about employment numbers, major information, and the earnings of different majors.
+        citation: http://www.census.gov/acs/www/data_documentation/pums_documentation/ <br> https://github.com/fivethirtyeight/data/tree/master/college-majors
 local:
   - file: grads.json
     name: grads
+    row: grad major
 interfaces:
   - name: get majors
-    returns: list[major]
+    returns: list[grad major]
     description: Returns information about all recorded majors.
     production:
         sql: SELECT data FROM grads
         post: json()
+structures:
+    "slavery.[0].Slave.Age":
+    "grads.[0].Earnings.Earnings Breakdown.Median": Based on full time, year-round workers

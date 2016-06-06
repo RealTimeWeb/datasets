@@ -6,8 +6,8 @@ sql:
 	python builder/builder.py -l sql specs/$(target).corgis ./datasets
 racket:
 	python builder/builder.py -l racket specs/$(target).corgis ./datasets
-explorer:
-	python builder/builder.py -l explorer specs/$(target).corgis ./datasets
+visualizer:
+	python builder/builder.py -l visualizer specs/$(target).corgis ./datasets
 python:
 	python builder/builder.py -l python specs/$(target).corgis ./datasets
 all:

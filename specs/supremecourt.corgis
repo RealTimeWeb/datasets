@@ -22,10 +22,11 @@ metadata:
 local:
   - file: supreme_court.json
     name: supremecourt
+    row: court case
 interfaces:
   - name: get cases
-    returns: list[case]
-    description: Returns a list of the cases in the database.
+    returns: list[court case]
+    description: Returns a list of the court cases in the database.
     production:
         sql: SELECT data FROM supremecourt
         post: json()

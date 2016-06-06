@@ -3,8 +3,8 @@ metadata:
     name: Drugs
     builder: 2
     hardware: 100
-    author: Austin Cory Bart <acbart@vt.edu>
-    datetime: 11/1/2015
+    author: Austin Cory Bart <acbart@vt.edu>, Ryan Whitcomb <rwhit94@vt.edu>
+    datetime: 5-18-16
     tags: [drugs, substances, drug usage]
     description:
         short: This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.
@@ -15,6 +15,7 @@ metadata:
 local:
   - file: drugs.json
     name: drugs
+    row: survey
     indexes:
       - name: name
         jsonpath: name
@@ -31,3 +32,10 @@ interfaces:
     production:
         sql: SELECT data FROM drugs WHERE name=? COLLATE NOCASE
         post: json()
+structures:
+    "drugs.[0].data.Young": Unit of 1000 people
+    "drugs.[0].data.Medium": Unit of 1000 people
+    "drugs.[0].data.Old": Unit of 1000 people
+    "drugs.[0].data.Young CI": Designates the range for which the value that is likely to encompass the true value, e.g. 2 - 1 to 2 + 1 with 2 as the value for the unit of 1000 young users and 1 as the range of the confidence interval.
+    "drugs.[0].data.Medium CI": Designates the range for which the value that is likely to encompass the true value, e.g. 14 - 5 to 14 + 5 with 14 as the value for the unit of 1000  medium-aged users and 5 as the range of the confidence interval.
+    "drugs.[0].data.Old CI": Designates the range for which the value that is likely to encompass the true value, e.g. 32 - 17 to 32 + 17 with 32 as the value for the unit of 1000 old users and 17 as the range of the confidence interval.

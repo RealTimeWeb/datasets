@@ -16,6 +16,7 @@ metadata:
 local:
   - file: tate.json
     name: tate
+    row: art
 interfaces:
   - name: get artwork
     returns: list[art]

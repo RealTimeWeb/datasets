@@ -15,6 +15,9 @@ local:
   - file: classics.json
     name: classics
     row: classic
+    indexes:
+      - name: author
+        jsonpath: bibliography.author.name
 interfaces:
   - name: get books
     description: Returns books from the dataset.
@@ -28,3 +31,7 @@ interfaces:
 structures:
     "classics.[0].statistics.difficulty.flesch reading ease": This is a comment that I've incorporated into the explorer.
     "classics.[0].metadata": Here's a comment.
+questions:
+  - What is the distribution of polarity and subjectivity?
+  - Is there a correlation between books' difficulty and their popularity?
+  - In what century were most of the books published?

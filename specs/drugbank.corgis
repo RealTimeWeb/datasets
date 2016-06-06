@@ -14,6 +14,7 @@ metadata:
 local:
   - file: drugbank.json
     name: drugbank
+    row: drug
 interfaces:
   - name: get drugs
     description: Returns data about all the drugs in the database.
