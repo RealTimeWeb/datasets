@@ -1,0 +1,27 @@
+metadata:
+    version: 1
+    name: Election
+    builder: 2
+    author: Ryan Whitcomb
+    datetime: 6/1/2016
+    tags: [politics, election, votes, counties, candidate]
+    description:
+        short: A breakdown of how each county voted in the 2016 Presidential primaries.
+        overview: >
+            Data about the results was collected from CNN's 2016 election center.  Each county has the breakdown of how many votes each candidate recieved in that county and what percentage of the total vote from that county that the candidate recieved.  The candidate's political party is also represented.  
+
+        citation: http://www.cnn.com/election/primaries/counties/va/Dem
+local:
+  - file: election_results.json
+    name: election
+    row: result
+interfaces:
+  - name: get results
+    description: Returns the result of each primary for every county from the dataset.
+    returns: list[result]
+    production:
+        sql: SELECT data FROM election
+        post: json()
+    test:
+        sql: SELECT data FROM election LIMIT {hardware}
+        post: json()

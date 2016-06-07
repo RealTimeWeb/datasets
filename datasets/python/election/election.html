@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Election Library (CORGIS Datasets Project)</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <style>
+    .ui-dialog table {
+        width: 100%;
+        font-size: 10pt;
+    }
+    
+    .ui-dialog td {
+        border-bottom: 1px solid #CCC;
+        overflow: 
+    }
+    
+    .ui-dialog-content {
+        max-height: 400px;
+        overflow:auto;
+    }
+    
+    .dialog-opener {
+        cursor: pointer;
+    }
+    
+    .ui-widget-header {
+        border: 0px solid black;
+        border-bottom: 1px solid #ccc;
+        background: #cde;
+    }
+    
+    /*.highlight  { background: #2B2B2B; color: #E6E1DC}*/
+    .highlight .hll { background-color: #ffffcc }
+    .highlight .c { color: #BC9458; font-style: italic} /* Comment */
+    .highlight .err { color: #E6E1DC} /* Error */
+    /*.highlight .g { color: #E6E1DC} /* Generic */
+    .highlight .k { color: #CC7833} /* Keyword */
+    /*.highlight .l { color: #E6E1DC} /* Literal */
+    /*.highlight .n { color: #E6E1DC} /* Name */
+    /*.highlight .o { color: #E6E1DC} /* Operator */
+    /*.highlight .x { color: #E6E1DC} /* Other */
+    /*.highlight .p { color: #E6E1DC} /* Punctuation */
+    /*.highlight .cm { color: #BC9458; font-style: italic} /* Comment.Multiline */
+    /*.highlight .cp { color: #CC7833} /* Comment.Preproc */
+    /*.highlight .c1 { color: #BC9458; font-style: italic} /* Comment.Single */
+    /*.highlight .cs { color: #BC9458; font-style: italic} /* Comment.Special */
+    /*.highlight .gd { color: #E6E1DC; background-color: #660000 } /* Generic.Deleted */
+    /*.highlight .ge { color: #E6E1DC} /* Generic.Emph */
+    /*.highlight .gr { color: #FFFFFF; background-color: #990000 } /* Generic.Error */
+    /*.highlight .gh { color: #FFFFFF} /* Generic.Heading */
+    /*.highlight .gi { color: #E6E1DC; background-color: #144212 } /* Generic.Inserted */
+    /*.highlight .go { color: #E6E1DC} /* Generic.Output */
+    /*.highlight .gp { color: #E6E1DC} /* Generic.Prompt */
+    /*.highlight .gs { color: #E6E1DC} /* Generic.Strong */
+    /*.highlight .gu { color: #FFFFFF} /* Generic.Subheading */
+    /*.highlight .gt { color: #E6E1DC} /* Generic.Traceback */
+    /*.highlight .kc { color: #CC7833} /* Keyword.Constant */
+    /*.highlight .kd { color: #CC7833} /* Keyword.Declaration */
+    .highlight .kn { color: #CC7833; font-weight: bold} /* Keyword.Namespace */
+    /*.highlight .kp { color: #CC7833} /* Keyword.Pseudo */
+    /*.highlight .kr { color: #CC7833} /* Keyword.Reserved */
+    /*.highlight .kt { color: #DA4939} /* Keyword.Type */
+    /*.highlight .ld { color: #E6E1DC} /* Literal.Date */
+    /*.highlight .m { color: #A5C261} /* Literal.Number */
+    .highlight .s { color: #A5C261} /* Literal.String */
+    /*.highlight .na { color: #FFC66D} /* Name.Attribute */
+    /*.highlight .nb { color: #E6E1DC} /* Name.Builtin */
+    /*.highlight .nc { color: #E6E1DC} /* Name.Class */
+    /*.highlight .no { color: #6D9CBE} /* Name.Constant */
+    /*.highlight .nd { color: #E6E1DC} /* Name.Decorator */
+    /*.highlight .ni { color: #E6E1DC} /* Name.Entity */
+    /*.highlight .ne { color: #E6E1DC} /* Name.Exception */
+    /*.highlight .nf { color: #FFC66D} /* Name.Function */
+    /*.highlight .nl { color: #E6E1DC} /* Name.Label */
+    /*.highlight .nn { color: #E6E1DC} /* Name.Namespace */
+    /*.highlight .nx { color: #E6E1DC} /* Name.Other */
+    /*.highlight .py { color: #E6E1DC} /* Name.Property */
+    /*.highlight .nt { color: #CC7833} /* Name.Tag */
+    /*.highlight .nv { color: #D0D0FF} /* Name.Variable */
+    /*.highlight .ow { color: #E6E1DC} /* Operator.Word */
+    /*.highlight .w { color: #E6E1DC} /* Text.Whitespace */
+    /*.highlight .mf { color: #A5C261} /* Literal.Number.Float */
+    /*.highlight .mh { color: #A5C261} /* Literal.Number.Hex */
+    /*.highlight .mi { color: #A5C261} /* Literal.Number.Integer */
+    /*.highlight .mo { color: #A5C261} /* Literal.Number.Oct */
+    /*.highlight .sb { color: #A5C261} /* Literal.String.Backtick */
+    /*.highlight .sc { color: #A5C261} /* Literal.String.Char */
+    /*.highlight .sd { color: #A5C261} /* Literal.String.Doc */
+    /*.highlight .s2 { color: #A5C261} /* Literal.String.Double */
+    /*.highlight .se { color: #A5C261} /* Literal.String.Escape */
+    /*.highlight .sh { color: #A5C261} /* Literal.String.Heredoc */
+    /*.highlight .si { color: #A5C261} /* Literal.String.Interpol */
+    /*.highlight .sx { color: #A5C261} /* Literal.String.Other */
+    /*.highlight .sr { color: #A5C261} /* Literal.String.Regex */
+    /*.highlight .s1 { color: #A5C261} /* Literal.String.Single */
+    /*.highlight .ss { color: #A5C261} /* Literal.String.Symbol */
+    /*.highlight .bp { color: #E6E1DC} /* Name.Builtin.Pseudo */
+    /*.highlight .vc { color: #D0D0FF} /* Name.Variable.Class */
+    /*.highlight .vg { color: #D0D0FF} /* Name.Variable.Global */
+    /*.highlight .vi { color: #D0D0FF} /* Name.Variable.Instance */
+    /*.highlight .il { color: #A5C261} /* Literal.Number.Integer.Long */
+    </style>
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', 'Election');
+        function doPoll(){  
+            log('remain', 'Election, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <h1>Election Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Ryan Whitcomb</span><br>
+        <span class="text-muted">Version 1, created 6/1/2016</span><br>
+        <span class="text-muted">Tags: politics, election, votes, counties, candidate</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_results'>get_results</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    Data about the results was collected from CNN's 2016 election center.  Each county has the breakdown of how many votes each candidate recieved in that county and what percentage of the total vote from that county that the candidate recieved.  The candidate's political party is also represented.  
+
+    </p>
+    
+    
+    <p>
+    <i>http://www.cnn.com/election/primaries/counties/va/Dem</i>
+    </p>
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="election.py?forcedownload=1" download="election.py" target="_blank">
+            <strong>election.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="election.db?forcedownload=1" download="election.db" target="_blank">
+            <strong>election.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 1 function you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">election</span>
+<span class="n">list_of_result</span> <span class="o">=</span> <span class="n">election</span><span class="o">.</span><span class="n">get_results</span><span class="p">()</span>
+</pre></div>
+
+
+
+
+    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">election</span>
+<span class="c"># These may be slow!</span>
+<span class="n">list_of_result</span> <span class="o">=</span> <span class="n">election</span><span class="o">.</span><span class="n">get_results</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_results'>election.get_results(test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns the result of each primary for every county from the dataset.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-election'>Explore election data</button>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-election").click(function() {
+        $( "#explore-election" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-election' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-election-__0__").click(function() {
+            $( "#explore-election-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-election-__0__-Location' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"County"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Abbeville"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"State"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"South Carolina"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"State Abbreviation"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"SC"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Location" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Location-County").click(function() {
+            $( "#explore-election-__0__-Location-County" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Location-State").click(function() {
+            $( "#explore-election-__0__-Location-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Location-State-Abbreviation").click(function() {
+            $( "#explore-election-__0__-Location-State-Abbreviation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Ted-Cruz' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Republican"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>876</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>23.9</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Ted-Cruz" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Ted-Cruz-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Ted-Cruz-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Ted-Cruz-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Ted-Cruz-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Ted-Cruz-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Ted-Cruz-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Hillary-Clinton' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Democrat"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1501</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>81.8</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Hillary-Clinton" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Hillary-Clinton-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Hillary-Clinton-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Hillary-Clinton-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Hillary-Clinton-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Hillary-Clinton-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Hillary-Clinton-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Location"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Location'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Vote Data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Location").click(function() {
+            $( "#explore-election-__0__-Location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data").click(function() {
+            $( "#explore-election-__0__-Vote-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Donald-Trump' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Republican"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1353</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>36.9</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Donald-Trump" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Donald-Trump-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Donald-Trump-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Donald-Trump-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Donald-Trump-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Donald-Trump-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Donald-Trump-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Rick-Santorum' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Republican"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Rick-Santorum" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Rick-Santorum-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Rick-Santorum-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Rick-Santorum-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Rick-Santorum-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Rick-Santorum-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Rick-Santorum-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Uncommitted' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"N/A"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Uncommitted" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Uncommitted-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Uncommitted-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Uncommitted-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Uncommitted-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Uncommitted-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Uncommitted-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Mike-Huckabee' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Republican"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Mike-Huckabee" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Mike-Huckabee-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Mike-Huckabee-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Mike-Huckabee-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Mike-Huckabee-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Mike-Huckabee-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Mike-Huckabee-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-No-Preference' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"N/A"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-No-Preference" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-No-Preference-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-No-Preference-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-No-Preference-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-No-Preference-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-No-Preference-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-No-Preference-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Marco-Rubio' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Republican"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>740</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>20.2</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Marco-Rubio" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Marco-Rubio-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Marco-Rubio-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Marco-Rubio-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Marco-Rubio-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Marco-Rubio-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Marco-Rubio-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Chris-Christie' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Republican"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Chris-Christie" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Chris-Christie-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Chris-Christie-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Chris-Christie-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Chris-Christie-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Chris-Christie-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Chris-Christie-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data' title='Dictionary (16 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Rand Paul"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Rand-Paul'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Rick Santorum"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Rick-Santorum'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Martin O'Malley"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Martin-O'Malley'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"No Preference"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-No-Preference'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Chris Christie"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Chris-Christie'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Jeb Bush"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Jeb-Bush'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Hillary Clinton"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Hillary-Clinton'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"John Kasich"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-John-Kasich'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Donald Trump"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Donald-Trump'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Uncommitted"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Uncommitted'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Mike Huckabee"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Mike-Huckabee'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Marco Rubio"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Marco-Rubio'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Bernie Sanders"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Bernie-Sanders'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Carly Fiorina"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Carly-Fiorina'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Ben Carson"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Ben-Carson'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Ted Cruz"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-election-__0__-Vote-Data-Ted-Cruz'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Rand-Paul").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Rand-Paul" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Rick-Santorum").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Rick-Santorum" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Martin-O'Malley").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Martin-O'Malley" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-No-Preference").click(function() {
+            $( "#explore-election-__0__-Vote-Data-No-Preference" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Chris-Christie").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Chris-Christie" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Jeb-Bush").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Jeb-Bush" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Hillary-Clinton").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Hillary-Clinton" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-John-Kasich").click(function() {
+            $( "#explore-election-__0__-Vote-Data-John-Kasich" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Donald-Trump").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Donald-Trump" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Uncommitted").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Uncommitted" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Mike-Huckabee").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Mike-Huckabee" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Marco-Rubio").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Marco-Rubio" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Bernie-Sanders").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Bernie-Sanders" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Carly-Fiorina").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Carly-Fiorina" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Ben-Carson").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Ben-Carson" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Ted-Cruz").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Ted-Cruz" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Carly-Fiorina' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Republican"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Carly-Fiorina" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Carly-Fiorina-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Carly-Fiorina-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Carly-Fiorina-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Carly-Fiorina-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Carly-Fiorina-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Carly-Fiorina-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Jeb-Bush' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Republican"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>236</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>6.4</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Jeb-Bush" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Jeb-Bush-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Jeb-Bush-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Jeb-Bush-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Jeb-Bush-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Jeb-Bush-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Jeb-Bush-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Bernie-Sanders' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Democrat"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>312</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>17.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Bernie-Sanders" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Bernie-Sanders-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Bernie-Sanders-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Bernie-Sanders-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Bernie-Sanders-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Bernie-Sanders-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Bernie-Sanders-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Martin-O'Malley' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Democrat"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Martin-O'Malley" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Martin-O'Malley-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Martin-O'Malley-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Martin-O'Malley-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Martin-O'Malley-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Martin-O'Malley-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Martin-O'Malley-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-John-Kasich' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Republican"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>157</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.3</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-John-Kasich" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-John-Kasich-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-John-Kasich-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-John-Kasich-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-John-Kasich-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-John-Kasich-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-John-Kasich-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Rand-Paul' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Republican"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Rand-Paul" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Rand-Paul-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Rand-Paul-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Rand-Paul-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Rand-Paul-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Rand-Paul-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Rand-Paul-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-election-__0__-Vote-Data-Ben-Carson' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Republican"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>305</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Percent of Votes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>8.3</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-election-__0__-Vote-Data-Ben-Carson" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Ben-Carson-Party").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Ben-Carson-Party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Ben-Carson-Number-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Ben-Carson-Number-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-election-__0__-Vote-Data-Ben-Carson-Percent-of-Votes").click(function() {
+            $( "#explore-election-__0__-Vote-Data-Ben-Carson-Percent-of-Votes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+    
+</div>

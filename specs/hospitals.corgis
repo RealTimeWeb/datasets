@@ -1,0 +1,27 @@
+metadata:
+    version: 1
+    name: Hospitals
+    builder: 2
+    author: Ryan Whitcomb
+    datetime: 6/1/2016
+    tags: [hospitals, healthcare, medicare, outpatient, patient, doctor, health]
+    description:
+        short: Records about the outpatient volume and other information for hospitals across the U.S.
+        overview: >
+            Medicare has collected data on many different hospitals throughout the country to allow users to compare the quality of these institutions before using their services.  Data includes descriptions of the location of the hospitals, information about the hospitals' emergency services and type of hospital, and outpatient volume for the different wards of the hospitals.
+
+        citation: https://data.medicare.gov/data/hospital-compare
+local:
+  - file: fixed_hospitals.json
+    name: hospitals
+    row: hospital
+interfaces:
+  - name: get hospitals
+    description: Returns hospitals from the dataset.
+    returns: list[hospital]
+    production:
+        sql: SELECT data FROM hospitals
+        post: json()
+    test:
+        sql: SELECT data FROM hospitals LIMIT {hardware}
+        post: json()

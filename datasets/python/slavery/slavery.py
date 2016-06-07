@@ -1,3 +1,11 @@
+'''
+Hello student. Thank you for downloading a CORGIS library. However, you do not need to open this library. Instead you should use the following:
+
+    import slavery
+    
+If you opened the file because you are curious how this library works, then well done! We hope that you find it a useful learning experience. However, you should know that this code is meant to solve somewhat esoteric pedagogical problems, so it is often not best practices. 
+'''
+
 import sys as _sys
 import os as _os
 import json as _json
@@ -5,6 +13,9 @@ import sqlite3 as _sql
 import difflib as _difflib
 
 class _Constants(object):
+    '''
+    Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
+    '''
     _HEADER = {'User-Agent': 
               'CORGIS Slavery library for educational purposes'}
     _PYTHON_3 = _sys.version_info >= (3, 0)
@@ -92,9 +103,9 @@ class _Auxiliary(object):
 
 
 
-def get_all(test=True):
+def get_transaction(test=True):
     """
-    Gets a list of all the slaves in the database.
+    Returns a list of the transactions in the database.
     
     """
     if _Constants._TEST or test:
@@ -122,18 +133,18 @@ def _test_interfaces():
     from pprint import pprint as _pprint
     from timeit import default_timer as _default_timer
     # Production test
-    print("Production get_all")
+    print("Production get_transaction")
     start_time = _default_timer()
-    result = get_all(test=False)
+    result = get_transaction(test=False)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
     
     print("Time taken: {}".format(_default_timer() - start_time))
     # Test test
-    print("Test get_all")
+    print("Test get_transaction")
     start_time = _default_timer()
-    result = get_all()
+    result = get_transaction()
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))

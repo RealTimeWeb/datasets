@@ -142,7 +142,7 @@ def _test_interfaces():
     # Production test
     print("Production get_surveys")
     start_time = _default_timer()
-    result = get_surveys('Cigarette Use')
+    result = get_surveys("'Cigarette Use'")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
