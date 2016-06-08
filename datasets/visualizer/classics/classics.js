@@ -2303,7 +2303,9 @@ classics = [
     "index": true
   }, 
   {
-    "type": "number", 
+    "comment": "The day of the month when the book was published. Notice that missing values have been coded as \"0\".", 
+    "index": false, 
+    "name": "classic.[0].bibliography.publication.day", 
     "data": [
       1, 
       1, 
@@ -3176,9 +3178,8 @@ classics = [
       17, 
       19
     ], 
-    "name": "classic.[0].bibliography.publication.day", 
     "pretty": "Bibliography Publication: Day", 
-    "index": false
+    "type": "number"
   }, 
   {
     "type": "text", 

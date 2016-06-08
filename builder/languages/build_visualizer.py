@@ -176,7 +176,11 @@ def remove_outliers(lodol):
     print("Bad indexes:", len(bad_indexes))
     for data in lodol:
         data['data'] = [v for i, v in enumerate(data['data']) if i not in bad_indexes]
-        category, name = data['name'].split('.', 2)[2].rsplit('.', 1)
+        inter = data['name'].split('.', 2)[2]
+        if '.' in inter:
+            category, name = inter.rsplit('.', 1)
+        else:
+            category, name = inter, inter
         category = category.replace('.', ' ')
         data['pretty'] = category.title() + ": "+name.title()
         if isinstance(data['data'][0], (float, int)):
@@ -241,7 +245,11 @@ def build_locals(model, js_path):
                                 'sum': sum(values),                                
                                 'average': statistics.mean(values)
                             }
-                    category, name = index_path.split('.', 2)[2].rsplit('.', 1)
+                    inter = index_path.split('.', 2)[2]
+                    if '.' in inter:
+                        category, name = inter.rsplit('.', 1)
+                    else:
+                        category, name = inter, inter
                     category = category.replace('.', ' ')
                     bar_data.append({
                         'data': aggregated_values,

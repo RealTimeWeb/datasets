@@ -30,6 +30,7 @@ interfaces:
         post: json()
 structures:
     "classic.[0].statistics.difficulty.flesch reading ease": The 'Flesch Reading Ease' uses the sentence length (number of words per sentence) and the number of syllables per word in an equation to calculate the reading ease. Texts with a very high Flesch reading Ease score (about 100) are very easy to read, have short sentences and no words of more than two syllables.
+    "classic.[0].bibliography.publication.day": The day of the month when the book was published. Notice that missing values have been coded as "0".
     "classic.[0].statistics.difficulty.flesch kincaid grade": The "Flesch-Kincaid Grade Level Formula" presents a score as a U.S. grade level, making it easier to understand. It uses a similar formula to the Flesch Reading Ease measure.
     "classic.[0].metadata": Here's a comment.
 questions:
