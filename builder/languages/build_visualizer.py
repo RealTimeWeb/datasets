@@ -102,8 +102,7 @@ def json_path(path, data):
 def build_metafiles(model):
     name = model['metadata']['name']
     return {
-            'visualizer/' + flat_case(name) + '/' + flat_case(name) + '.html' : env.get_template('main.html').render(**model),
-            'visualizer/' + flat_case(name) + '/' + flat_case(name) + '_preview.html' : env.get_template('preview.html').render(**model)
+            'visualizer/' + flat_case(name) + '/' + flat_case(name) + '.html' : env.get_template('main.html').render(**model)
             }
 
 class JsonLeafNodes(object):    
@@ -147,7 +146,14 @@ class JsonLeafNodes(object):
             self.result[self.json_path] = an_atomic
             
 def lod_to_dol(LD):
-    return [{'name': k, 'data': v} for k,v in zip(LD[0],zip(*[d.values() for d in LD]))]
+    dictionaires = {}
+    for row in LD:
+        for key, value in row.items():
+            if key in dictionaires:
+                dictionaires[key].append(value)
+            else:
+                dictionaires[key] = [value]
+    return [{'name': k, 'data': v} for k,v in dictionaires.items()]
 
 def sample_down(dol):
     for data in dol:
@@ -155,7 +161,8 @@ def sample_down(dol):
         
 def remove_outliers(lodol):
     bad_indexes = set()
-    DEVIATIONS = 2
+    DEVIATIONS = 4
+    
     for data in lodol:
         #print(data['name'])
         #print([e for e in data['data'] if isinstance(e, (str, unicode))])
@@ -165,10 +172,11 @@ def remove_outliers(lodol):
             for index, value in enumerate(data['data']):
                 if mean - DEVIATIONS*std >= value or value >= mean + DEVIATIONS*std:
                     bad_indexes.add(index)
+    
     print("Bad indexes:", len(bad_indexes))
     for data in lodol:
         data['data'] = [v for i, v in enumerate(data['data']) if i not in bad_indexes]
-        category, name = data['name'].split('.', 1)[1].rsplit('.', 1)
+        category, name = data['name'].split('.', 2)[2].rsplit('.', 1)
         category = category.replace('.', ' ')
         data['pretty'] = category.title() + ": "+name.title()
         if isinstance(data['data'][0], (float, int)):
@@ -181,24 +189,73 @@ def remove_outliers(lodol):
 def build_locals(model, js_path):
     locals = model["locals"]
     model['visualized_datasets'] = {}
-    
+    print("")
     for local in locals:
         name = local["name"]
         file = local["file"]
         row_type = local["type"]
         row = local["row"]
         json_path = name + ".js"
-        with open(file, "r") as local_file, open(json_path, 'w') as output_file:
+        json_bar_path = name + "_bar.js"
+        with open(file, "r") as local_file, open(json_path, 'w') as output_file, open(json_bar_path, 'w') as output_bar_file:
             output_file.write(name+" = ")
+            output_bar_file.write(name+"_bar = ")
             if row_type == "json":
                 data_list = json.load(local_file)
-                data = [JsonLeafNodes(row, item).result for item in data_list]
+                data = [JsonLeafNodes(row+'.[0]', item).result for item in data_list]                
                 data = lod_to_dol(data)
+                bar_data = []
                 remove_outliers(data)
+                for row in data:
+                    if row['name'] in model['structures_comments']:
+                        row['comment'] = model['structures_comments'][row['name']]
+                    is_index = row['name'] in [i['jsonpath'] for i in local['indexes']]
+                    row['index'] = is_index
+                dol = {d['name']: d['data'] for d in data}
+                lod = [dict(zip(dol, t)) for t in zip(*dol.values())]
+                
+                for index in local['indexes']:
+                    index_path = index['jsonpath']
+                    indexed_values = {}
+                    aggregated_values = {}
+                    for chunk in lod:
+                        if index_path in chunk:
+                            category = chunk[index_path]
+                        else:
+                            category = ""
+                        if category not in indexed_values:
+                            indexed_values[category] = {}
+                        for key, value in chunk.items():
+                            if not isinstance(value, (int, float)):
+                                continue
+                            if key not in indexed_values[category]:
+                                indexed_values[category][key] = []
+                            indexed_values[category][key].append(value)
+                    
+                    for category, items in indexed_values.items():
+                        for key, values in items.items():
+                            if key not in aggregated_values:
+                                aggregated_values[key] = {}
+                            aggregated_values[key][category.replace(',', '')] = {
+                                'count': len(values),
+                                'sum': sum(values),                                
+                                'average': statistics.mean(values)
+                            }
+                    category, name = index_path.split('.', 2)[2].rsplit('.', 1)
+                    category = category.replace('.', ' ')
+                    bar_data.append({
+                        'data': aggregated_values,
+                        'name': index_path,
+                        'indexes': [k.replace(',', '') for k in indexed_values.keys()],
+                        'best_indexes': [k.replace(',', '') for k, v in sorted([(k, v['count']) for k, v in aggregated_values.values()[0].items()], key=lambda i: -i[1])[:10]],
+                        'pretty': category.title() + ": "+name.title()
+                    })
                 #sample_down(data)
                 json.dump(data, output_file, indent=2)
+                json.dump(bar_data, output_bar_file, indent=2)
                 #model['visualized_datasets'][name] = data.keys()
         yield json_path
+        yield json_bar_path
 
 def build_visualizer(model, fast):
     name = flat_case(model['metadata']['name'])
