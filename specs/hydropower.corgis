@@ -8,7 +8,7 @@ metadata:
     description:
         short: Records about dams in the United States such as location, dimensions, and project information
         overview: >
-            Recent Federal policies and legislation focus on moving the nation towards a cleaner energy economy that includes developing environmentally appropriate renewable energy projects involving solar, wind and waves, geothermal, biofuels, and hydropower.  The 2010 Federal Memorandum of Understanding for Hydropower and the Energy Policy Act of 2005 direct the U.S. Department of Reclamation to evaluate development of new hydropower projects at Federally-owned facilities and upgrade or rehabilitate existing hydropower generation facilities, as a contribution to the nation’s clean energy goals.  The following data describes the facilities currently being operated that contribute to nationwide renewable energy strategies.
+            Recent Federal policies and legislation focus on moving the nation towards a cleaner energy economy that includes developing environmentally appropriate renewable energy projects involving solar, wind and waves, geothermal, biofuels, and hydropower.  The 2010 Federal Memorandum of Understanding for Hydropower and the Energy Policy Act of 2005 direct the U.S. Department of Reclamation to evaluate development of new hydropower projects at Federally-owned facilities and upgrade or rehabilitate existing hydropower generation facilities, as a contribution to the nation's clean energy goals.  The following data describes the facilities currently being operated that contribute to nationwide renewable energy strategies.
 
         citation: http://www.usbr.gov/power/AssessmentReport/
 local:
@@ -22,7 +22,9 @@ interfaces:
     production:
         sql: SELECT data FROM hydropower
         post: json()
-
 structures:
-    "classics.[0].statistics.difficulty.flesch reading ease": This is a comment that I've incorporated into the explorer.
-    "classics.[0].metadata": Here's a comment.
+    "hydropower.[0].Location.Latitude": Missing values for the Latitude were imputed with a mean value of 36.278079019861529
+    "hydropower.[0].Location.Longitude": Missing values for the Longitude were imputed with a mean value of -97.501892792978808
+    "hydropower.[0].Dimensions.Crest Height": In feet, missing values were imputed with a mean value of 2784.18
+    "hydropower.[0].Dimensions.Crest Elevation": In feet, missing values were imputed with a mean value of 4141.10
+    "hydropower.[0].Dimensions.Structural Height": In feet, missing values were imputed with a mean value of 132.17

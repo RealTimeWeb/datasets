@@ -12,7 +12,7 @@ metadata:
 
         citation: https://data.medicare.gov/data/hospital-compare
 local:
-  - file: fixed_hospitals.json
+  - file: hospitals.json
     name: hospitals
     row: hospital
 interfaces:
@@ -25,3 +25,5 @@ interfaces:
     test:
         sql: SELECT data FROM hospitals LIMIT {hardware}
         post: json()
+structures:
+    "hospitals.[0].Outpatient Volume": Outpatient data for 2014.

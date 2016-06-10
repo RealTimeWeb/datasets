@@ -1,0 +1,64 @@
+metadata:
+    version: 1
+    name: State Crime
+    builder: 2
+    author: Ryan Whitcomb
+    datetime: 6/7/2016
+    tags: [crime, burglary, larceny, motor, property, violent, assault, murder, rape, robbery]
+    description:
+        short: Records about the crime rates and totals for US states over time.
+        overview: >
+            From the Unified Crime Reporting Statistics and under the collaboration of the U.S. Department of Justice and the Federal Bureau of Investigation information crime statistics are available for public review.  The following data set has information on the crime rates and totals for states across the United States for a wide range of years.  The crime reports are divided into two main categories: property and violent crime.  Property crime refers to burglary, larceny, and motor related crime while violent crime refers to assault, murder, rape, and robbery.
+
+        citation: http://www.ucrdatatool.gov/Search/Crime/Local/JurisbyJurisStepTwo.cfm
+local:
+  - file: state_crime.json
+    name: crime
+    row: report
+    indexes:
+      - name: state
+        jsonpath: State
+      - name: year
+        jsonpath: Year
+interfaces:
+  - name: get all crimes
+    returns: list[report]
+    description: Gets a list of all the crime reports in the database.
+    test:
+        sql: SELECT data FROM crime LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM crime
+        post: json()
+  - name: get crime by state
+    description: Given the name of a state, returns all the crime reports for that state in the database.
+    args:
+      - name: department
+        default: "Alabama"
+        type: string
+        matches: SELECT DISTINCT state FROM crime
+        description: The name of the county.
+    production:
+        sql: SELECT data FROM crime WHERE state=?
+        post: json()
+    test:
+        sql: SELECT data FROM crime WHERE state=? LIMIT {hardware}
+        post: json()
+    returns: list[report]
+  - name: get crime by year
+    description: Given a year, returns all the crime reports for that year in the database.
+    args:
+      - name: year
+        default: '1984'
+        type: int
+        matches: SELECT DISTINCT department FROM crime
+        description: The year to get reports.
+    production:
+        sql: SELECT data FROM crime WHERE year=?
+        post: json()
+    test:
+        sql: SELECT data FROM crime WHERE year=? LIMIT {hardware}
+        post: json()
+    returns: list[report]
+structures:
+  "crime.[0].Data.Rates": Rates are the number of reported offenses per 100,000 population.
