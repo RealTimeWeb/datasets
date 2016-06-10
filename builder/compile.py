@@ -294,6 +294,7 @@ class Compiler(object):
             local.name = de_identifier(self.require_field(location, "name", data, "", str))
             location = "{}.{}".format(in_location, clean_identifier(local.name))
             local.row = self.typecheck_field(location, "row", data, local.name, str)
+            local.order = self.typecheck_field(location, "order", data, "Index", str)
             local.file = self.require_field(location, "file", data, "", str)
             local.file = os.path.join(self.path, local.file)
             local.type = local.file.split(".")[-1].lower()

@@ -7,20 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Slavery Library (CORGIS Datasets Project)</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"><link>-->
     
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
     <style>
-    .highlight  { background: #2B2B2B; color: #E6E1DC}
+    .ui-dialog table {
+        width: 100%;
+        font-size: 10pt;
+    }
+    
+    .ui-dialog td {
+        border-bottom: 1px solid #CCC;
+        overflow: 
+    }
+    
+    .ui-dialog-content {
+        max-height: 400px;
+        overflow:auto;
+    }
+    
+    .dialog-opener {
+        cursor: pointer;
+    }
+    
+    .ui-widget-header {
+        border: 0px solid black;
+        border-bottom: 1px solid #ccc;
+        background: #cde;
+    }
+    
+    /*.highlight  { background: #2B2B2B; color: #E6E1DC}*/
     .highlight .hll { background-color: #ffffcc }
     .highlight .c { color: #BC9458; font-style: italic} /* Comment */
     .highlight .err { color: #E6E1DC} /* Error */
@@ -108,12 +137,17 @@
                 });
     }
     $(document).ready(function() {
+        /*
         log('load', 'Slavery');
         function doPoll(){  
             log('remain', 'Slavery, '+$(document).scrollTop()+", "+$(document).height());
         }
         setInterval(doPoll, 5000);
+        */
     });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     </script>
 
 </head>
@@ -128,9 +162,9 @@
         
         <h1>Slavery Library</h1>
         <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
-        <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
-        <span class="text-muted">Version 1, created 2/22/2016</span><br>
-        <span class="text-muted">Tags: history, slavery, economics, slaves</span><br>
+        <span class="text-muted">By Ryan Whitcomb (<a href="mailto:rwhit94@vt.edu">rwhit94@vt.edu</a>)</span><br>
+        <span class="text-muted">Version 1, created 5-17-16</span><br>
+        <span class="text-muted">Tags: slavery, slave, slaves, buyer, seller, origin, history, economics</span><br>
     </div>
     
     <h3>Table of Contents</h3>
@@ -139,7 +173,7 @@
         <li><a href="#downloads">Downloads</a></li>
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
-        <li><a href='#get_all'>get_all</a></li>
+        <li><a href='#get_transaction'>get_transaction</a></li>
         
         </ol></li>
         
@@ -184,7 +218,7 @@
     This library has 1 function you can use.
     
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">slavery</span>
-<span class="n">list_of_slave</span> <span class="o">=</span> <span class="n">slavery</span><span class="o">.</span><span class="n">get_all</span><span class="p">()</span>
+<span class="n">list_of_tracsaction_record</span> <span class="o">=</span> <span class="n">slavery</span><span class="o">.</span><span class="n">get_transaction</span><span class="p">()</span>
 </pre></div>
 
 
@@ -194,7 +228,7 @@
 
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">slavery</span>
 <span class="c"># These may be slow!</span>
-<span class="n">list_of_slave</span> <span class="o">=</span> <span class="n">slavery</span><span class="o">.</span><span class="n">get_all</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_tracsaction_record</span> <span class="o">=</span> <span class="n">slavery</span><span class="o">.</span><span class="n">get_transaction</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 
 
@@ -202,11 +236,11 @@
     
     <h3 id="documentation">Documentation</h3>
     
-<h4 id='get_all'>slavery.get_all(test=True)</h4>
+<h4 id='get_transaction'>slavery.get_transaction(test=True)</h4>
 
 <div class='row'>
 <div class='col-md-offset-1'>
-Gets a list of all the slaves in the database.
+Returns a list of the transactions in the database.
 </div>
 <br>
 
@@ -222,6 +256,407 @@ Gets a list of all the slaves in the database.
 </ul>
 
 </div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-slavery'>Explore slavery data</button>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-slavery").click(function() {
+        $( "#explore-slavery" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-slavery' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-slavery-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-slavery" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-slavery-__0__").click(function() {
+            $( "#explore-slavery-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-slavery-__0__-Transaction-Sale-Details' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Prices Listed"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Price"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>650.0</code></td> 
+                 <td>Missing values were imputed using the mean of the rest of the category"</td> </tr>
+            
+            <tr> <td><code>"Payment Method"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Cash"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Discount Rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.00602698</code></td> 
+                 <td>Missing values were imputed using the mean of the rest of the category</td> </tr>
+            
+            <tr> <td><code>"Predicted Interest Rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.07477</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-slavery-__0__-Transaction-Sale-Details" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-slavery-__0__-Transaction-Sale-Details-Prices-Listed").click(function() {
+            $( "#explore-slavery-__0__-Transaction-Sale-Details-Prices-Listed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Transaction-Sale-Details-Price").click(function() {
+            $( "#explore-slavery-__0__-Transaction-Sale-Details-Price" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Transaction-Sale-Details-Payment-Method").click(function() {
+            $( "#explore-slavery-__0__-Transaction-Sale-Details-Payment-Method" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Transaction-Sale-Details-Discount-Rate").click(function() {
+            $( "#explore-slavery-__0__-Transaction-Sale-Details-Discount-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Transaction-Sale-Details-Predicted-Interest-Rate").click(function() {
+            $( "#explore-slavery-__0__-Transaction-Sale-Details-Predicted-Interest-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-slavery-__0__' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Buyer"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-slavery-__0__-Buyer'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Transaction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-slavery-__0__-Transaction'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Slave"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-slavery-__0__-Slave'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Seller"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-slavery-__0__-Seller'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-slavery-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-slavery-__0__-Buyer").click(function() {
+            $( "#explore-slavery-__0__-Buyer" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Transaction").click(function() {
+            $( "#explore-slavery-__0__-Transaction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Slave").click(function() {
+            $( "#explore-slavery-__0__-Slave" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Seller").click(function() {
+            $( "#explore-slavery-__0__-Seller" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-slavery-__0__-Seller' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Origin"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Unknown, AL"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"County of Origin"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Unknown"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Full Name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Benjamin Screws"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"State of Origin"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"AL"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-slavery-__0__-Seller" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-slavery-__0__-Seller-Origin").click(function() {
+            $( "#explore-slavery-__0__-Seller-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Seller-County-of-Origin").click(function() {
+            $( "#explore-slavery-__0__-Seller-County-of-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Seller-Full-Name").click(function() {
+            $( "#explore-slavery-__0__-Seller-Full-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Seller-State-of-Origin").click(function() {
+            $( "#explore-slavery-__0__-Seller-State-of-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-slavery-__0__-Slave' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Gender"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"M"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Age"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>40.0</code></td> 
+                 <td>Ages that are represented as -1 stand for ages that were not available in the data that was collected.</td> </tr>
+            
+            <tr> <td><code>"Skin Color"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Unknown"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Shadrack"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-slavery-__0__-Slave" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-slavery-__0__-Slave-Gender").click(function() {
+            $( "#explore-slavery-__0__-Slave-Gender" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Slave-Age").click(function() {
+            $( "#explore-slavery-__0__-Slave-Age" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Slave-Skin-Color").click(function() {
+            $( "#explore-slavery-__0__-Slave-Skin-Color" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Slave-Name").click(function() {
+            $( "#explore-slavery-__0__-Slave-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-slavery-__0__-Buyer' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Origin"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Unknown, Unknown"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"County of Origin"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Unknown"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Full Name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Maria Hopson"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"State of Origin"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Unknown"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-slavery-__0__-Buyer" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-slavery-__0__-Buyer-Origin").click(function() {
+            $( "#explore-slavery-__0__-Buyer-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Buyer-County-of-Origin").click(function() {
+            $( "#explore-slavery-__0__-Buyer-County-of-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Buyer-Full-Name").click(function() {
+            $( "#explore-slavery-__0__-Buyer-Full-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Buyer-State-of-Origin").click(function() {
+            $( "#explore-slavery-__0__-Buyer-State-of-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-slavery-__0__-Transaction' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Date"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"10/6/1856"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Total Slaves Purchased"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Adult Slaves"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Child Slaves"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Sale Details"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-slavery-__0__-Transaction-Sale-Details'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-slavery-__0__-Transaction" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-slavery-__0__-Transaction-Date").click(function() {
+            $( "#explore-slavery-__0__-Transaction-Date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Transaction-Number-of-Total-Slaves-Purchased").click(function() {
+            $( "#explore-slavery-__0__-Transaction-Number-of-Total-Slaves-Purchased" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Transaction-Number-of-Adult-Slaves").click(function() {
+            $( "#explore-slavery-__0__-Transaction-Number-of-Adult-Slaves" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Transaction-Number-of-Child-Slaves").click(function() {
+            $( "#explore-slavery-__0__-Transaction-Number-of-Child-Slaves" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Transaction-Sale-Details").click(function() {
+            $( "#explore-slavery-__0__-Transaction-Sale-Details" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
 
 
     

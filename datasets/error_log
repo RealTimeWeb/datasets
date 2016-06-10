@@ -1,6 +1,4 @@
 Traceback (most recent call last):
-  File "C:\Users\acbart\Projects\datasets\builder\build.py", line 50, in build_dir
-    if not os.path.isfile(src):
-  File "C:\Python27\lib\genericpath.py", line 29, in isfile
-    st = os.stat(path)
-TypeError: coercing to Unicode: need string or buffer, generator found
+  File "C:\Users\acbart\Projects\datasets\builder\build.py", line 47, in build_dir
+    output.write(data)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 8397: ordinal not in range(128)

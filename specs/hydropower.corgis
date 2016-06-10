@@ -1,0 +1,28 @@
+metadata:
+    version: 1
+    name: Hydropower
+    builder: 2
+    author: Ryan Whitcomb
+    datetime: 6/1/2016
+    tags: [hydropower, dams, lakes, rivers, waterways, irrigation, human consumption, industrial use, aquaculture, navigability, energy, electricity]
+    description:
+        short: Records about dams in the United States such as location, dimensions, and project information
+        overview: >
+            Recent Federal policies and legislation focus on moving the nation towards a cleaner energy economy that includes developing environmentally appropriate renewable energy projects involving solar, wind and waves, geothermal, biofuels, and hydropower.  The 2010 Federal Memorandum of Understanding for Hydropower and the Energy Policy Act of 2005 direct the U.S. Department of Reclamation to evaluate development of new hydropower projects at Federally-owned facilities and upgrade or rehabilitate existing hydropower generation facilities, as a contribution to the nation's clean energy goals.  The following data describes the facilities currently being operated that contribute to nationwide renewable energy strategies.
+
+        citation: http://www.usbr.gov/power/AssessmentReport/
+local:
+  - file: hydropower.json
+    name: hydropower
+    row: dam
+interfaces:
+  - name: get dams
+    description: Returns dams from the dataset.
+    returns: list[dam]
+    production:
+        sql: SELECT data FROM hydropower
+        post: json()
+
+structures:
+    "classics.[0].statistics.difficulty.flesch reading ease": This is a comment that I've incorporated into the explorer.
+    "classics.[0].metadata": Here's a comment.

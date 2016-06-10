@@ -1,0 +1,24 @@
+metadata:
+    version: 1
+    name: Earthquakes
+    builder: 2
+    author: Ryan Whitcomb
+    datetime: 6/7/2016
+    tags: [earthquakes, nature, disaster, magnitude, richter scale, latitude, longitude]
+    description:
+        short: Records from different earthquake occurences across the world.
+        overview: >
+            Earthquake records from around the world collected from the United States Geological Survey.  Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake.  Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included.
+
+        citation: http://earthquake.usgs.gov/earthquakes/
+local:
+  - file: earthquakes.json
+    name: earthquakes
+    row: earthquake
+interfaces:
+  - name: get earthquakes
+    description: Returns earthquakes from the dataset.
+    returns: list[earthquake]
+    production:
+        sql: SELECT data FROM earthquakes
+        post: json()

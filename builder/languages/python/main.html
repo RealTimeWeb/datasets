@@ -71,7 +71,7 @@
 {% highlight 'python3' %}
 import {{ metadata.name | flat_case }}
 {% for interface in interfaces -%}
-{{ interface.returns|to_python_variable }} = {{ metadata.name | flat_case }}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %})
+{{ interface.returns|to_python_variable }} = {{ metadata.name | flat_case }}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default|tojson }}{% if not loop.last %}, {%endif %}{% endfor %})
 {% endfor %}
 {% endhighlight %}
 
@@ -83,7 +83,7 @@ import {{ metadata.name | flat_case }}
 import {{ metadata.name | flat_case }}
 # These may be slow!
 {% for interface in interfaces %}{% if interface.test -%}
-{{ interface.returns|to_python_variable }} = {{ metadata.name | flat_case }}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=False{% endif %})
+{{ interface.returns|to_python_variable }} = {{ metadata.name | flat_case }}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default|tojson }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=False{% endif %})
 {% endif %}{% endfor %}
 {% endhighlight %}
 

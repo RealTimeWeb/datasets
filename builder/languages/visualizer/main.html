@@ -26,46 +26,17 @@
     <script src="../../_lib/bootstrap-tagsinput.js"></script>
     <script src="../../_lib/typeahead.bundle.js"></script>
     
-    <style>
+    <style id='d3-styling'>
+    
 
     body {
       font: 14px sans-serif;
-    }
-
-    .axis path,
-    .axis line {
-      fill: none;
-      stroke: #000;
-      shape-rendering: crispEdges;
-    }
-
-    /*.x.axis path {
-      display: none;
-    }*/
-
-    .line {
-      fill: none;
-      stroke: steelblue;
-      stroke-width: 1.5px;
-      shape-rendering: crispEdges;
-    }
-    
-    .circle {
-        fill: black;
-        r: 3;
-        shape-rendering: crispEdges;
     }
     
     .vertically-align {
         display: inline-block;
         vertical-align: middle;
         float: none;
-    }
-    
-    .bar {
-        fill: lightblue;
-        outline: 1px solid blue;
-        shape-rendering: crispEdges;
     }
     
     .data-viz {
@@ -82,6 +53,46 @@
     {% endfor %}
     
     <script>
+    
+var doctype = '<?xml version="1.0" standalone="no"?>' + '<' + '!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">';
+
+function captureImage() {
+    var selector = d3.select("#data-visualization-"+mainModel.selected.chart().id+" svg");
+    // serialize our SVG XML to a string.
+    var source = (new XMLSerializer()).serializeToString(selector.node());
+    // create a file blob of our SVG.
+    var blob = new Blob([ doctype + source], { type: 'image/svg+xml;charset=utf-8' });
+    var url = window.URL.createObjectURL(blob);
+    // Put the svg into an image tag so that the Canvas element can read it in.
+    var svg_object = selector;
+    var img = d3.select('#capture-dialog .modal-body img')
+        .attr('width', svg_object.attr('width'))
+        .attr('height', svg_object.attr('height'))
+        .node();
+    $('#capture-dialog .modal-dialog')
+        .width(30+parseInt(svg_object.attr('width')))
+        .height(100+parseInt(svg_object.attr('height')));
+    img.onload = function(){
+        // Now that the image has loaded, put the image into a canvas element.
+        var canvas = d3.select('body').append('canvas').node();
+        canvas.width = svg_object.attr('width');
+        canvas.height = svg_object.attr('height');
+        var ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        var canvasUrl = canvas.toDataURL("image/png");
+        var img2 = d3.select('#capture-dialog .modal-body img')
+            .attr('width', svg_object.attr('width'))
+            .attr('height', svg_object.attr('height'))
+            .node();
+        img2.onload = function() {};
+        // this is now the base64 encoded version of our PNG! you could optionally 
+        // redirect the user to download the PNG by sending them to the url with 
+        // `window.location.href= canvasUrl`.
+        img2.src = canvasUrl; 
+    }
+    // start loading the image.
+    img.src = url;
+}
     
 function compare(a,b) {
   if (a.name < b.name)
@@ -110,17 +121,35 @@ var CHARTS = ko.observableArray([
         {'name': 'Bar Chart', 'id': 'bar', 'parameters': 3, 'first': 'Values', 'second': 'Category', 'third': 'Aggregation'},
         //{'name': 'XY Plot', 'id': 'xy', 'parameters': 2, 'first': 'X-values', 'second': 'Y-values'},        
     ]);
+var COLOR_SCHEMES = [
+        {'name': 'Blue', 'stroke': 'blue', 'fill': 'lightblue'},
+        {'name': 'Green', 'stroke': 'green', 'fill': 'lightgreen'},
+        {'name': 'Red', 'stroke': 'red', 'fill': 'pink'},
+        {'name': 'Black', 'stroke': 'black', 'fill': 'black'},
+        {'name': 'Grey', 'stroke': 'darkgray', 'fill': 'lightgray'},
+        {'name': 'Yellow', 'stroke': 'goldenrod', 'fill': 'LightGoldenRodYellow '},
+        {'name': 'Purple', 'stroke': 'purple', 'fill': 'plum '}
+    ];
+    
 var mainModel = {
     'aggregators': ko.observableArray([
         {'name': 'Count', 'id': 'count'},
         {'name': 'Sum', 'id': 'sum'},
         {'name': 'Average', 'id': 'average'}
     ]),
+    'schemes': COLOR_SCHEMES,
+    'settings': {
+        'title': ko.observable('Add your title here'),
+        'sampling': ko.observable(400),
+        'color': ko.observable(COLOR_SCHEMES[0]),
+        'bins': ko.observable(20)
+    },
     'charts': CHARTS,
     'selected': {
         'dataset': ko.observable('weather'),
-        'first': ko.observable('wind speed'),
+        'first': ko.observable({'data': []}),
         'second': ko.observable('humidity'),
+        'category': ko.observable(''),
         'third': ko.observable('humidity'),
         'chart': ko.observable(CHARTS()[1])
     },
@@ -131,7 +160,7 @@ var mainModel = {
     ]),
     'structures':  ko.observableArray([
     {% for local in locals %}
-        {'name': {{ local.name|replace('.', ' ')|tojson }}, 'data': {{ local.name }}}{{ ',' if not loop.last}}
+        {'name': {{ local.name|replace('.', ' ')|tojson }}, 'order': {{ local.order|tojson }}, 'data': {{ local.name }}}{{ ',' if not loop.last}}
     {% endfor %}
     ])
 };
@@ -177,6 +206,12 @@ ko.bindingHandlers.fadeVisible = {
 
 
 $(document).ready(function () {
+
+    $('#capture-button').click(function() {
+        captureImage();
+        $("#capture-dialog").modal('show');
+    });
+
     ko.applyBindings(mainModel);
     
     var bar_data = mainModel.selected.bar_dataset().data[0];
@@ -189,7 +224,12 @@ $(document).ready(function () {
             source: bar_data.indexes
           }
         });
-    $('#select-bar-keys').multiSelect();
+    $('#select-bar-keys').multiSelect({
+        //selectableHeader: "<input type='text' class='search-input' autocomplete='off' placeholder='filter'>",
+        //selectionHeader: "<input type='text' class='search-input' autocomplete='off' placeholder='filter'>",
+        selectableHeader: "<div class='custom-header'>Available</div>",
+        selectionHeader: "<div class='custom-header'>Selected</div>"
+    });
     
     for (var i = 0, length = bar_data.indexes.length; i < length; i = i+1) {
         if (!bar_data.indexes[i].includes("'")) {
@@ -211,7 +251,7 @@ $(document).ready(function () {
     
     
     
-    var margin = {top: 20, right: 20, bottom: 200, left: 50},
+    var margin = {top: 60, right: 20, bottom: 100, left: 100},
         width = 800 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
 
@@ -246,11 +286,16 @@ $(document).ready(function () {
     var yMap = function(d) {return y(d.y)};
 
     mainModel.charts().forEach(function (e, i) {
-        e.canvas = d3.select("#data-visualization-"+e.id).append("svg")
+        var svg = d3.select("#data-visualization-"+e.id).append("svg")
                         .attr("width", width + margin.left + margin.right)
                         .attr("height", height + margin.top + margin.bottom)
-                      .append("g")
+        e.canvas = svg.append("g")
                         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        if (e.id == 'xy' || e.id == 'line') {
+            e.canvas.append('path')
+                     .attr("class", "line")
+                     .style('stroke', mainModel.settings.color().stroke);
+        }
         e.canvas.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(0," + height + ")")
@@ -258,6 +303,43 @@ $(document).ready(function () {
         e.canvas.append("g")
               .attr("class", "y axis")
               .call(yAxis);
+        e.canvas.append("text")      // text label for the x axis
+            .attr("transform", "translate(" + (width / 2) + " ," + (height + margin.bottom-5) + ")")
+            .attr("class", "x-axis-label")
+            .style("text-anchor", "middle")
+            .text(mainModel.selected.first().pretty);
+        e.canvas.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("class", "y-axis-label")
+            .attr("y", 0 - margin.left)
+            .attr("x", 0 - (height / 2))
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .text(mainModel.selected.second().pretty);
+        e.canvas.append("text")
+            .attr("x", (width / 2))
+            .attr("y", 0 - (margin.top / 2))
+            .attr("class", "title-text")
+            .attr("text-anchor", "middle")  
+            .style("font-size", "16px") 
+            .style("text-decoration", "underline")  
+            .text(mainModel.settings.title());
+        e.canvas.append("text")
+            .attr("class", "aggregator-text")
+            .style("text-anchor", "left")
+            .attr("transform", "translate(" + (0 - margin.left) + " ," + (height + margin.bottom-5) + ")")
+            .style("font-size", "10px") 
+            .text(mainModel.selected.third().name);
+        svg.insert('defs', ":first-child")
+            .append('style')
+            .attr("type", "text/css")
+            .text(/*"<![CDATA[\n"+*/
+"svg { background-color: white; }\n"+
+".axis path,.axis line { fill: none; stroke: black; shape-rendering: crispEdges;}\n"+
+".line { fill: none; stroke-width: 1px;}\n"+
+".circle { r: 3; shape-rendering: crispEdges; }\n"+
+".bar { shape-rendering: crispEdges;}\n"
+/*"]]>"*/)
     });
     
     // TODO: implement http://www.thesoftwaresimpleton.com/blog/2016/01/16/d3-axis/
@@ -266,23 +348,23 @@ $(document).ready(function () {
         
     function changeDataset() {
         var chart = mainModel.selected.chart();
+       
         var canvas = chart.canvas;
         
         getRandomSubarray = function(l, leng) {
-            return l;
             return l.filter(function(element, index) {
-                return index % (l.length / leng) == 0;
+                return index % Math.round(l.length / leng) == 0;
             });
         }
         
-        var left = getRandomSubarray(mainModel.selected.first().data, 100)
+        var left = mainModel.selected.first().data
         var actualData, ys;
         if (chart.id == 'bar') {
             var indexes = $('#select-bar-keys').val();
             // TODO: fix this to be the chosen index
             var indexed_data = mainModel.selected.bar_dataset().data[0].data;
             var key = mainModel.selected.first().name;
-            var indexifier = mainModel.selected.second();
+            var indexifier = mainModel.selected.category();
             var aggregator = mainModel.selected.third().id;
             actualData = [];
             for (var i = 0, length = indexes.length; i < length; i = i+1) {
@@ -291,9 +373,10 @@ $(document).ready(function () {
                                  'value': indexed_data[key][index][aggregator]});
             }
         } else if (chart.id == 'scatter') {
+            left = getRandomSubarray(left, mainModel.settings.sampling());
             var right = mainModel.selected.first().name == mainModel.selected.second().name
                         ? left
-                        : getRandomSubarray(mainModel.selected.second().data, 100);
+                        : getRandomSubarray(mainModel.selected.second().data, mainModel.settings.sampling());
             actualData = d3.zip(left, right).map(function(element) {
                 return {'x': element[0], 'y': element[1]}
             });
@@ -303,10 +386,16 @@ $(document).ready(function () {
                 return {'x': index, 'y': element}
             });
         }
-        console.log(actualData);
+        
         if (chart.id == 'hist') {
             x.domain([d3.min(ys), d3.max(ys)]);
-            var histMapper = d3.layout.histogram().bins(x.ticks(20))(ys);
+            var bins = parseInt(mainModel.settings.bins());
+            tempScale = d3.scale.linear().domain([0, bins]).range(d3.extent(ys));
+            tickArray = d3.range(bins).map(tempScale).map(function(e) {
+                return Math.floor(e);
+            });
+            //var histMapper = d3.layout.histogram().bins(x.ticks(tickArray))(ys);
+            var histMapper = d3.layout.histogram().bins(tickArray)(ys);
             y.domain([0, d3.max(histMapper, function(d) { return d.y; })]);
         } else if (chart.id == 'bar') {
             xOrdinal.domain(actualData.map(function(d) { return d.index; }));
@@ -322,21 +411,21 @@ $(document).ready(function () {
         var appending;
         if (chart.id == 'xy' || chart.id == 'line') {
             appending = canvas.selectAll('.line')
+                            //.style('fill', mainModel.settings.color().fill)
+                            .style('stroke', mainModel.settings.color().stroke)
                               .data(actualData);
             appending.exit()
                 .transition()
                 .attr("stroke-width", 0)
                 .remove();
-            appending.enter().append('path')
-                     .attr("class", "line")
-                     .transition()
-                        .duration(500)
-                        .attr("d", line(actualData));
+                        
             appending.transition()
                     .duration(500)
                     .attr("d", line(actualData));
         } else if (chart.id == 'scatter') {
             appending = canvas.selectAll('circle')
+                            .style('fill', mainModel.settings.color().stroke)
+                            //.style('outline', '1px solid '+mainModel.settings.color().stroke)
                               .data(actualData);
             appending.exit()
                 .transition()
@@ -344,6 +433,7 @@ $(document).ready(function () {
                 .remove();
             appending.enter().append('circle')
                      .attr("class", "circle")
+                     .style('fill', mainModel.settings.color().stroke)
                      .attr("cx", xMap)
                      .attr("cy", yMap)
                     .attr('r', 4);
@@ -353,7 +443,9 @@ $(document).ready(function () {
                     .attr("cy", yMap);
         } else if (chart.id == 'bar') {
             bars = canvas.selectAll('.bar')
-                              .data(actualData);
+                            .style('fill', mainModel.settings.color().fill)
+                            .style('outline', '1px solid '+mainModel.settings.color().stroke)
+                            .data(actualData);
             bars.exit()
                 .transition()
                 .duration(500)
@@ -364,6 +456,8 @@ $(document).ready(function () {
             
             bars.enter().append("rect")
                 .attr("class", "bar")
+                .style('fill', mainModel.settings.color().fill)
+                .style('outline', '1px solid '+mainModel.settings.color().stroke)
                 .attr("y", y(0))
                 .attr("height", height - y(0));
                 
@@ -381,18 +475,22 @@ $(document).ready(function () {
             
         } else if (chart.id == 'hist') {
             bars = canvas.selectAll('.bar')
-                              .data(histMapper);
+                            .style('fill', mainModel.settings.color().fill)
+                            .style('outline', '1px solid '+mainModel.settings.color().stroke)
+                            .data(histMapper);
             bars.exit()
                 .transition()
                 .duration(500)
                 .attr("y", y(0))
                 .attr('height', height - y(0))
-                .style('fill-opacity', 1e-6)
+                //.style('fill-opacity', 1e-6)
                 .remove();
             
             bars.enter().append("rect")
                 .attr("class", "bar")
                 .attr("y", y(0))
+                .style('fill', mainModel.settings.color().fill)
+                .style('outline', '1px solid '+mainModel.settings.color().stroke)
                 .attr("height", height - y(0));
                 
             bars.transition()
@@ -401,36 +499,6 @@ $(document).ready(function () {
                 .attr("width", width/(histMapper.length-1)-1) 
                 .attr("y", function(d) { return y(d.y); })
                 .attr("height", function(d) { return height - y(d.y); }); 
-            /*
-            var bar = appending.enter().append("g")
-                            .attr("class", "bar")
-                            .attr("transform", function(d) { 
-                                return "translate(" + x(d.x) + "," + y(d.y) + ")"; 
-                            });
-            bar.append("rect")
-                .attr("x", 0)
-                .attr("data-comment2", function(d) { 
-                    return d.y; 
-                })
-                .attr("width", width/(histMapper.length-1) - 1)
-                .attr("height", function(d) { 
-                    return height - y(d.y); 
-                });
-            canvas.selectAll('.bar rect')
-                .attr("height", function(d) { 
-                    return height - y(d.y); 
-                })
-                .attr('fill', 'red');
-            appending.transition()
-                .duration(500)
-                .attr("data-comment", function(d) { return ""+d.y })
-                .attr("transform", function(d) { 
-                                return "translate(" + x(d.x) + "," + y(d.y) + ")"; 
-                            });
-            appending.exit()
-                .transition()
-                .attr("height", 0)
-                .remove();*/
         }
         
         // Update the axis
@@ -449,10 +517,29 @@ $(document).ready(function () {
         if (chart.id == 'bar') {
             r.selectAll("text")  
             .style("text-anchor", "end")
-            .attr("dx", "-.8em")
+            .attr("dx", "-.3em")
             .attr("dy", ".15em")
-            .attr("transform", "rotate(-35)" );
+            .attr("transform", "rotate(-15)" );
+            
+            d3.selectAll("text.aggregator-text")
+                .text("Aggregation: "+mainModel.selected.third().name);
+        } else {
+            d3.selectAll("text.aggregator-text")
+                .text("");
         }
+        
+        canvas.selectAll("text.x-axis-label")
+            .text(mainModel.selected.chart().id == 'bar' ? 
+                  mainModel.selected.category().pretty : 
+                  mainModel.selected.chart().id == 'line' ? 
+                  mainModel.selected.dataset().order : 
+                  mainModel.selected.first().pretty);
+        canvas.selectAll("text.y-axis-label")
+            .text(mainModel.selected.chart().id == 'hist' ? 
+                  'Frequency': 
+                  mainModel.selected.chart().id == 'line' ? 
+                  mainModel.selected.first().pretty :
+                  mainModel.selected.second().pretty);
     }
     
         
@@ -460,10 +547,19 @@ $(document).ready(function () {
     changeDataset();
     mainModel.selected.first.subscribe(changeDataset);
     mainModel.selected.second.subscribe(changeDataset);
+    mainModel.selected.category.subscribe(changeDataset);
     mainModel.selected.third.subscribe(changeDataset);
     mainModel.selected.chart.subscribe(changeDataset);
     
     mainModel.selected.chart.subscribe(function (chart_type) {
+    });
+    
+    mainModel.settings.bins.subscribe(changeDataset);
+    mainModel.settings.sampling.subscribe(changeDataset);
+    mainModel.settings.color.subscribe(changeDataset);
+    mainModel.settings.title.subscribe(function() {
+        d3.selectAll("text.title-text")
+            .text(mainModel.settings.title());
     });
 });
     </script>
@@ -481,6 +577,23 @@ $(document).ready(function () {
     <span class="text-muted">By {{metadata.author}}</span><br>
     <span class="text-muted">Version {{metadata.version}}, created {{ metadata.datetime}}</span><br>
     <span class="text-muted">Tags: {{ metadata.tags|join(', ')}}</span><br>
+</div>
+
+<div class='modal fade' id="capture-dialog" style='display:none'>
+    <div class='modal-dialog' style='width:750px'>
+        <div class='modal-content' id='modal-message' >
+            <div class='modal-header'>
+                <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+                <h4 class='modal-title'>Capture Dialog</h4>
+            </div>
+            <div class='modal-body' style='width:100%; height:400px; white-space:pre-wrap'>
+            <img />
+            </div>
+            <!--<div class='modal-footer'>
+                <button type='button' class='btn btn-white' data-dismiss='modal'>Close</button>
+            </div>    -->
+        </div>
+    </div>
 </div>
 
 <div class='row'>
@@ -512,6 +625,13 @@ $(document).ready(function () {
         </div>
     </div>
     
+    <!-- Dataset selector -->
+    <div class='col-md-3'>
+        <div class="form-group">
+            <label for="set-title">Title: </label>
+            <input name='set-title' class='form-control' data-bind="textInput: settings.title" />
+        </div>
+    </div>
     <!-- Chart Type selector -->
     <div class='col-md-2'>
         <label for="choose-chart">Chart Type: </label>
@@ -521,7 +641,41 @@ $(document).ready(function () {
                            optionsText: 'name'">
         </select>
     </div>
+    <!-- Sampling selector -->
+    <div class='col-md-3' data-bind="visible: selected.chart().id == 'scatter'">
+        <div class="form-group">
+            <label for="set-sampling">Number of points: </label>
+            <span data-bind="text: settings.sampling" class='text-muted'></span>
+            <input type="range" name='set-sampling' data-bind="attr: {min: 10, max: mainModel.selected.first().data.length}, value: settings.sampling" />
+        </div>
+    </div>
+    <!-- Bin selector -->
+    <div class='col-md-3'" data-bind="visible: selected.chart().id == 'hist'">
+        <div class="form-group">
+            <label for="set-bins">Bins: </label>
+            <input name='set-bins' class='form-control' data-bind="textInput: settings.bins" />
+        </div>
+    </div>
+    <!-- Aggregate selector, bar charts -->
+    <div class='col-md-3' data-bind="visible: selected.chart().id == 'bar'">
+        <label for="choose-third-bar" data-bind="text: selected.chart().third"></label>
+        <select class="form-control vertically-align" id="choose-third-bar"
+                    data-bind="options: aggregators,
+                               value: selected.third,
+                               optionsText: 'name'">
+        </select>
+    </div>
+    <!-- Color Scheme selector, bar charts -->
+    <div class='col-md-3'>
+        <label for="choose-color">Color Scheme:</label>
+        <select class="form-control" id="choose-color"
+                    data-bind="options: schemes,
+                               value: settings.color,
+                               optionsText: 'name'">
+        </select>
+    </div>
 </div>
+<hr>
 <!-- Key selector, all charts -->
 <div class='row'>
     <div class='col-md-6'>
@@ -531,56 +685,41 @@ $(document).ready(function () {
                                value: selected.first, 
                                optionsText: 'pretty'">
         </select>
+        <div data-bind="text: selected.first().comment"></div>
     </div>
-    <div class='col-md-6' data-bind="text: selected.first().comment"></div>
-</div>
 <!-- Secondary Key selector, scatter plots -->
-<div class='row' data-bind="visible: selected.chart().id == 'scatter'">
-    <hr>
-    <div class='col-md-6'>
+    <div class='col-md-6' data-bind="visible: selected.chart().id == 'scatter'">
         <label for="choose-second-scatter" data-bind="text: selected.chart().second"></label>
         <select class="form-control vertically-align" id="choose-second-scatter"
                     data-bind="options: $root.only_numbers(selected.dataset().data),
                                value: selected.second,
                                optionsText: 'pretty'">
         </select>
+        <div data-bind="text: selected.second().comment"></div>
     </div>
-    <div class='col-md-6' data-bind="text: selected.second().comment"></div>
-</div>
 <!-- Category selector, bar charts -->
-<div class='row' data-bind="visible: selected.chart().id == 'bar'">
-    <hr>
-    <div class='col-md-6'>
-        <label for="choose-second-bar" data-bind="text: selected.chart().second"></label>
+    <div class='col-md-6' data-bind="visible: selected.chart().id == 'bar'">
+        <label for="choose-second-bar" data-bind="text: selected.chart().category"></label>
         <select class="form-control vertically-align" id="choose-second-bar"
                     data-bind="options: mainModel.selected.bar_dataset().data,
-                               value: selected.second,
+                               value: selected.category,
                                optionsText: 'pretty'">
         </select>
+        <div data-bind="text: selected.category().comment"></div>
     </div>
-    <div class='col-md-6' data-bind="text: selected.second().comment"></div>
-<!-- Aggregate selector, bar charts -->
-    <div class='col-md-6'>
-        <label for="choose-third-bar" data-bind="text: selected.chart().third"></label>
-        <select class="form-control vertically-align" id="choose-third-bar"
-                    data-bind="options: aggregators,
-                               value: selected.third,
-                               optionsText: 'name'">
-        </select>
-    </div>
-    <div class='col-md-6' data-bind="text: selected.third().comment"></div>
-</div>
 <!-- Key selector, bar charts -->
-<div class='row' data-bind="visible: selected.chart().id == 'bar'">
-    <!--<div class='col-md-12'>
-        <input type="text" value="" id="input-bar-keys" data-role="tagsinput">
-    </div>-->
-    <div class='col-md-12'>
+    <div class='col-md-6' data-bind="visible: selected.chart().id == 'bar'">
+        <label for="select-bar-keys-named[]">Group By</label>
+        <div data-bind="text: selected.third().comment"></div>
         <select multiple=multiple id='select-bar-keys' name='select-bar-keys-named[]'>
         </select>
     </div>
 </div>
+<hr>
 
+<button class='btn btn-default' id='capture-button'><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>Download Visualization</button>
+
+<hr>
 <span data-bind=""></span>
 
 <div class='row' style='height: 400px'>

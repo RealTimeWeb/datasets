@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Hospitals Library (CORGIS Datasets Project)</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <style>
+    .ui-dialog table {
+        width: 100%;
+        font-size: 10pt;
+    }
+    
+    .ui-dialog td {
+        border-bottom: 1px solid #CCC;
+        overflow: 
+    }
+    
+    .ui-dialog-content {
+        max-height: 400px;
+        overflow:auto;
+    }
+    
+    .dialog-opener {
+        cursor: pointer;
+    }
+    
+    .ui-widget-header {
+        border: 0px solid black;
+        border-bottom: 1px solid #ccc;
+        background: #cde;
+    }
+    
+    /*.highlight  { background: #2B2B2B; color: #E6E1DC}*/
+    .highlight .hll { background-color: #ffffcc }
+    .highlight .c { color: #BC9458; font-style: italic} /* Comment */
+    .highlight .err { color: #E6E1DC} /* Error */
+    /*.highlight .g { color: #E6E1DC} /* Generic */
+    .highlight .k { color: #CC7833} /* Keyword */
+    /*.highlight .l { color: #E6E1DC} /* Literal */
+    /*.highlight .n { color: #E6E1DC} /* Name */
+    /*.highlight .o { color: #E6E1DC} /* Operator */
+    /*.highlight .x { color: #E6E1DC} /* Other */
+    /*.highlight .p { color: #E6E1DC} /* Punctuation */
+    /*.highlight .cm { color: #BC9458; font-style: italic} /* Comment.Multiline */
+    /*.highlight .cp { color: #CC7833} /* Comment.Preproc */
+    /*.highlight .c1 { color: #BC9458; font-style: italic} /* Comment.Single */
+    /*.highlight .cs { color: #BC9458; font-style: italic} /* Comment.Special */
+    /*.highlight .gd { color: #E6E1DC; background-color: #660000 } /* Generic.Deleted */
+    /*.highlight .ge { color: #E6E1DC} /* Generic.Emph */
+    /*.highlight .gr { color: #FFFFFF; background-color: #990000 } /* Generic.Error */
+    /*.highlight .gh { color: #FFFFFF} /* Generic.Heading */
+    /*.highlight .gi { color: #E6E1DC; background-color: #144212 } /* Generic.Inserted */
+    /*.highlight .go { color: #E6E1DC} /* Generic.Output */
+    /*.highlight .gp { color: #E6E1DC} /* Generic.Prompt */
+    /*.highlight .gs { color: #E6E1DC} /* Generic.Strong */
+    /*.highlight .gu { color: #FFFFFF} /* Generic.Subheading */
+    /*.highlight .gt { color: #E6E1DC} /* Generic.Traceback */
+    /*.highlight .kc { color: #CC7833} /* Keyword.Constant */
+    /*.highlight .kd { color: #CC7833} /* Keyword.Declaration */
+    .highlight .kn { color: #CC7833; font-weight: bold} /* Keyword.Namespace */
+    /*.highlight .kp { color: #CC7833} /* Keyword.Pseudo */
+    /*.highlight .kr { color: #CC7833} /* Keyword.Reserved */
+    /*.highlight .kt { color: #DA4939} /* Keyword.Type */
+    /*.highlight .ld { color: #E6E1DC} /* Literal.Date */
+    /*.highlight .m { color: #A5C261} /* Literal.Number */
+    .highlight .s { color: #A5C261} /* Literal.String */
+    /*.highlight .na { color: #FFC66D} /* Name.Attribute */
+    /*.highlight .nb { color: #E6E1DC} /* Name.Builtin */
+    /*.highlight .nc { color: #E6E1DC} /* Name.Class */
+    /*.highlight .no { color: #6D9CBE} /* Name.Constant */
+    /*.highlight .nd { color: #E6E1DC} /* Name.Decorator */
+    /*.highlight .ni { color: #E6E1DC} /* Name.Entity */
+    /*.highlight .ne { color: #E6E1DC} /* Name.Exception */
+    /*.highlight .nf { color: #FFC66D} /* Name.Function */
+    /*.highlight .nl { color: #E6E1DC} /* Name.Label */
+    /*.highlight .nn { color: #E6E1DC} /* Name.Namespace */
+    /*.highlight .nx { color: #E6E1DC} /* Name.Other */
+    /*.highlight .py { color: #E6E1DC} /* Name.Property */
+    /*.highlight .nt { color: #CC7833} /* Name.Tag */
+    /*.highlight .nv { color: #D0D0FF} /* Name.Variable */
+    /*.highlight .ow { color: #E6E1DC} /* Operator.Word */
+    /*.highlight .w { color: #E6E1DC} /* Text.Whitespace */
+    /*.highlight .mf { color: #A5C261} /* Literal.Number.Float */
+    /*.highlight .mh { color: #A5C261} /* Literal.Number.Hex */
+    /*.highlight .mi { color: #A5C261} /* Literal.Number.Integer */
+    /*.highlight .mo { color: #A5C261} /* Literal.Number.Oct */
+    /*.highlight .sb { color: #A5C261} /* Literal.String.Backtick */
+    /*.highlight .sc { color: #A5C261} /* Literal.String.Char */
+    /*.highlight .sd { color: #A5C261} /* Literal.String.Doc */
+    /*.highlight .s2 { color: #A5C261} /* Literal.String.Double */
+    /*.highlight .se { color: #A5C261} /* Literal.String.Escape */
+    /*.highlight .sh { color: #A5C261} /* Literal.String.Heredoc */
+    /*.highlight .si { color: #A5C261} /* Literal.String.Interpol */
+    /*.highlight .sx { color: #A5C261} /* Literal.String.Other */
+    /*.highlight .sr { color: #A5C261} /* Literal.String.Regex */
+    /*.highlight .s1 { color: #A5C261} /* Literal.String.Single */
+    /*.highlight .ss { color: #A5C261} /* Literal.String.Symbol */
+    /*.highlight .bp { color: #E6E1DC} /* Name.Builtin.Pseudo */
+    /*.highlight .vc { color: #D0D0FF} /* Name.Variable.Class */
+    /*.highlight .vg { color: #D0D0FF} /* Name.Variable.Global */
+    /*.highlight .vi { color: #D0D0FF} /* Name.Variable.Instance */
+    /*.highlight .il { color: #A5C261} /* Literal.Number.Integer.Long */
+    </style>
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', 'Hospitals');
+        function doPoll(){  
+            log('remain', 'Hospitals, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <h1>Hospitals Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Ryan Whitcomb</span><br>
+        <span class="text-muted">Version 1, created 6/1/2016</span><br>
+        <span class="text-muted">Tags: hospitals, healthcare, medicare, outpatient, patient, doctor, health</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_hospitals'>get_hospitals</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    Medicare has collected data on many different hospitals throughout the country to allow users to compare the quality of these institutions before using their services.  Data includes descriptions of the location of the hospitals, information about the hospitals' emergency services and type of hospital, and outpatient volume for the different wards of the hospitals.
+
+    </p>
+    
+    
+    <p>
+    <i>https://data.medicare.gov/data/hospital-compare</i>
+    </p>
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="hospitals.py?forcedownload=1" download="hospitals.py" target="_blank">
+            <strong>hospitals.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="hospitals.db?forcedownload=1" download="hospitals.db" target="_blank">
+            <strong>hospitals.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 1 function you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">hospitals</span>
+<span class="n">list_of_hospital</span> <span class="o">=</span> <span class="n">hospitals</span><span class="o">.</span><span class="n">get_hospitals</span><span class="p">()</span>
+</pre></div>
+
+
+
+
+    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">hospitals</span>
+<span class="c"># These may be slow!</span>
+<span class="n">list_of_hospital</span> <span class="o">=</span> <span class="n">hospitals</span><span class="o">.</span><span class="n">get_hospitals</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_hospitals'>hospitals.get_hospitals(test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns hospitals from the dataset.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-hospitals'>Explore hospitals data</button>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-hospitals").click(function() {
+        $( "#explore-hospitals" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-hospitals' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-hospitals-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-hospitals" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-hospitals-__0__").click(function() {
+            $( "#explore-hospitals-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-hospitals-__0__' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Information"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-hospitals-__0__-Information'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Outpatient Volume"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-hospitals-__0__-Outpatient-Volume'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Provider ID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"110004"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Location"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-hospitals-__0__-Location'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-hospitals-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-hospitals-__0__-Information").click(function() {
+            $( "#explore-hospitals-__0__-Information" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Outpatient-Volume").click(function() {
+            $( "#explore-hospitals-__0__-Outpatient-Volume" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Provider-ID").click(function() {
+            $( "#explore-hospitals-__0__-Provider-ID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Location").click(function() {
+            $( "#explore-hospitals-__0__-Location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-hospitals-__0__-Location' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"City"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"FORT OGLETHORPE"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ZIP Code"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"30742"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Longitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>-85.263105</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"County"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"CATOOSA"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"State"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"GA"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Address"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"100 GROSS CRESCENT"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Latitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>34.949143</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-hospitals-__0__-Location" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-hospitals-__0__-Location-City").click(function() {
+            $( "#explore-hospitals-__0__-Location-City" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Location-ZIP-Code").click(function() {
+            $( "#explore-hospitals-__0__-Location-ZIP-Code" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Location-Longitude").click(function() {
+            $( "#explore-hospitals-__0__-Location-Longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Location-County").click(function() {
+            $( "#explore-hospitals-__0__-Location-County" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Location-State").click(function() {
+            $( "#explore-hospitals-__0__-Location-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Location-Address").click(function() {
+            $( "#explore-hospitals-__0__-Location-Address" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Location-Latitude").click(function() {
+            $( "#explore-hospitals-__0__-Location-Latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-hospitals-__0__-Outpatient-Volume' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Genitourinary"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>113</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Eye"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>244</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Nervous System"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>710</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Musculoskeletal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>76</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Skin"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>25</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Gastrointestinal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>395</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Cardiovascular"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>14</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-hospitals-__0__-Outpatient-Volume" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-hospitals-__0__-Outpatient-Volume-Genitourinary").click(function() {
+            $( "#explore-hospitals-__0__-Outpatient-Volume-Genitourinary" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Outpatient-Volume-Eye").click(function() {
+            $( "#explore-hospitals-__0__-Outpatient-Volume-Eye" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Outpatient-Volume-Nervous-System").click(function() {
+            $( "#explore-hospitals-__0__-Outpatient-Volume-Nervous-System" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Outpatient-Volume-Musculoskeletal").click(function() {
+            $( "#explore-hospitals-__0__-Outpatient-Volume-Musculoskeletal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Outpatient-Volume-Skin").click(function() {
+            $( "#explore-hospitals-__0__-Outpatient-Volume-Skin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Outpatient-Volume-Gastrointestinal").click(function() {
+            $( "#explore-hospitals-__0__-Outpatient-Volume-Gastrointestinal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Outpatient-Volume-Cardiovascular").click(function() {
+            $( "#explore-hospitals-__0__-Outpatient-Volume-Cardiovascular" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-hospitals-__0__-Information' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Acute Care Hospitals"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Phone Number"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"7068582101"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Emergency Services"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Yes"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"HUTCHESON MEDICAL CENTER"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Ownership"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Government - Hospital District or Authority"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-hospitals-__0__-Information" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-hospitals-__0__-Information-Type").click(function() {
+            $( "#explore-hospitals-__0__-Information-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Information-Phone-Number").click(function() {
+            $( "#explore-hospitals-__0__-Information-Phone-Number" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Information-Emergency-Services").click(function() {
+            $( "#explore-hospitals-__0__-Information-Emergency-Services" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Information-Name").click(function() {
+            $( "#explore-hospitals-__0__-Information-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-hospitals-__0__-Information-Ownership").click(function() {
+            $( "#explore-hospitals-__0__-Information-Ownership" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+    
+</div>
