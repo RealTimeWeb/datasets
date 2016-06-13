@@ -1,75 +1,27 @@
 metadata:
     version: 1
     name: Weather
-    builder: Python
-    author: Austin Cory Bart <acbart@vt.edu>
-    datetime: 11/12/2015
-    tags: [weather, united states, climate, temperature]
+    builder: 2
+    author: Ryan Whitcomb
+    datetime: 6/13/2016
+    tags: [weather, rain, snow, sleet, fog, temperature, wind]
     description:
-        overview: 
-            The Weather library is all about some interesting weather data. The weather is collected from the US weather system, so it is only available for the United States.
-http:
-  - name: forecastgov
-    url: http://forecast.weather.gov/MapClick.php
-    args:
-      - name: lat
-        type: float
-        description: The latitude
-        form: query
-      - name: lon
-        type: float
-        description: The longitude
-        form: query
-      - name: FcstType
-        type: string
-        description: A hidden parameter that controls the result format.
-        default: '"json"'
-        form: query
-        visible: false
-    verb: get
-    cache: timed(600)
+        short: Weather records through the months of April and June of 2016 across the U.S.
+        overview: >
+            Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county.  This is done through the use of 122 different Weather Forcast Offices throughout the country.  These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage.  This data set takes the information from these WFO reports for cities across the country through the months of April to June of 2016.
+
+        citation: http://w2.weather.gov/climate/
+local:
+  - file: weather.json
+    name: weather
+    row: report
 interfaces:
-  - name: get report
-    description: Gets a report on the current weather, forecast, and more detailed information about the location.
-    returns: report
+  - name: get weather
+    description: Returns weather reports from the dataset.
+    returns: list[report]
     production:
-        pre: geocode(city, lat, lon)
-        http: forecastgov
+        sql: SELECT data FROM weather
         post: json()
-    cache:
-      - '"Blacksburg, VA"'
-      - '"Newark, DE"'
-      - '"San Francisco, CA"'
-      - '"Miami, FL"'
-    args:
-      - name: city
-        type: string
-        description: The name of the city you want to get information about.
-        default: '"Blacksburg, VA"'
-        indexed: true
-  - name: get_temperature
-    returns: integer
-    cache:
-      - '"Blacksburg, VA"'
-      - '"Newark, DE"'
-      - '"San Francisco, CA"'
-      - '"Miami, FL"'
-    production:
-        pre: geocode(city, lat, lon)
-        http: forecastgov
-        post: json()|jsonpath(data.temperature.[0])
-    args:
-      - name: city
-        type: string
-        description: The name of the city you want to get information about.
-        default: '"Blacksburg, VA"'
-        indexed: true
-  #- name: get temperatures
-  #  returns: list[int]
-  #  test:
-  #      sql: SELECT temperature FROM weather WHERE city={city} ORDER BY date LIMIT {hardware}
-  #  prod:
-  #      api: forecast.gov
-  #      pre: geocode city > lat,lon
-  #      post: data.temperature
-    
+    test:
+        sql: SELECT data FROM weather LIMIT {hardware}
+        post: json()
