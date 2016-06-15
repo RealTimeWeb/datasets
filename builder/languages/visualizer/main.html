@@ -152,7 +152,7 @@ var mainModel = {
         'second': ko.observable('humidity'),
         'category': ko.observable({'comment': '', 'name': ''}),
         'third': ko.observable('humidity'),
-        'chart': ko.observable(CHARTS()[3])
+        'chart': ko.observable(CHARTS()[0])
     },
     'bars': ko.observableArray([
     {% for local in locals %}
@@ -715,7 +715,7 @@ $(document).ready(function () {
 <hr>
 <!-- Key selector, all charts -->
 <div class='row'>
-    <div class='col-md-6' data-bind="visible: !selected.chart().id == 'bar' || selected.bar_dataset().data.length > 0">
+    <div class='col-md-6' data-bind="visible: selected.chart().id != 'bar' || selected.bar_dataset().data.length > 0">
         <label for="choose-left" data-bind="text: selected.chart().first"></label>
         <select class="form-control vertically-align" id="choose-left"
                     data-bind="options: $root.only_numbers(selected.dataset().data), 

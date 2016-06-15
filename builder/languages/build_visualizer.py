@@ -161,6 +161,7 @@ def sample_down(dol):
         
 def remove_outliers(lodol):
     bad_indexes = set()
+    bad_keys = set()
     DEVIATIONS = 4
     
     for data in lodol:
@@ -169,11 +170,16 @@ def remove_outliers(lodol):
         if isinstance(data['data'][0], (int, float)):
             mean = statistics.mean(data['data'])
             std = statistics.stdev(data['data'])
+            evils = 0
             for index, value in enumerate(data['data']):
-                if mean - DEVIATIONS*std >= value or value >= mean + DEVIATIONS*std:
+                if mean - DEVIATIONS*std > value or value > mean + DEVIATIONS*std:
+                    bad_keys.add(data['name'])
                     bad_indexes.add(index)
+                    evils += 1
+            print(data['name'], mean-4*std, mean+4*std, evils)
     
     print("Bad indexes:", len(bad_indexes), "/", len(lodol[0]['data']))
+    print("Contributing keys:", ', '.join(bad_keys))
     for data in lodol:
         data['data'] = [v for i, v in enumerate(data['data']) if i not in bad_indexes]
         inter = data['name'].split('.', 2)[2]
@@ -224,7 +230,7 @@ def build_locals(model, js_path):
                     aggregated_values = {}
                     for chunk in lod:
                         if index_path in chunk:
-                            category = chunk[index_path]
+                            category = str(chunk[index_path])
                         else:
                             category = ""
                         if category not in indexed_values:
@@ -237,6 +243,7 @@ def build_locals(model, js_path):
                             indexed_values[category][key].append(value)
                     
                     for category, items in indexed_values.items():
+                        category = str(category)
                         for key, values in items.items():
                             if key not in aggregated_values:
                                 aggregated_values[key] = {}
