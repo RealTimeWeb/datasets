@@ -1,0 +1,1 @@
+earthquakes_bar = []

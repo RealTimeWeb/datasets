@@ -173,7 +173,7 @@ def remove_outliers(lodol):
                 if mean - DEVIATIONS*std >= value or value >= mean + DEVIATIONS*std:
                     bad_indexes.add(index)
     
-    print("Bad indexes:", len(bad_indexes))
+    print("Bad indexes:", len(bad_indexes), "/", len(lodol[0]['data']))
     for data in lodol:
         data['data'] = [v for i, v in enumerate(data['data']) if i not in bad_indexes]
         inter = data['name'].split('.', 2)[2]

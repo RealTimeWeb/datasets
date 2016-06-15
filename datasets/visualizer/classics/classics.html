@@ -25,6 +25,7 @@
     <script src="../../_lib/jquery.multi-select.js" type="text/javascript"></script>
     <script src="../../_lib/bootstrap-tagsinput.js"></script>
     <script src="../../_lib/typeahead.bundle.js"></script>
+    <script src="../../_lib/jquery.quicksearch.js"></script>
     
     <style id='d3-styling'>
     
@@ -149,9 +150,9 @@ var mainModel = {
         'dataset': ko.observable('weather'),
         'first': ko.observable({'data': []}),
         'second': ko.observable('humidity'),
-        'category': ko.observable(''),
+        'category': ko.observable({'comment': '', 'name': ''}),
         'third': ko.observable('humidity'),
-        'chart': ko.observable(CHARTS()[1])
+        'chart': ko.observable(CHARTS()[3])
     },
     'bars': ko.observableArray([
     
@@ -166,9 +167,13 @@ var mainModel = {
 };
 mainModel.selected.bar_dataset = ko.computed(function() {
     var self = this;
-    return this.bars().filter(function(elem) {
-        return elem.name == self.selected.dataset().name;
-    })[0];
+    if (this.bars().length > 0) {
+        return this.bars().filter(function(elem) {
+            return elem.name == self.selected.dataset().name;
+        })[0];
+    } else {
+        return null;
+    }
 }, mainModel);
 
 /*
@@ -214,40 +219,66 @@ $(document).ready(function () {
 
     ko.applyBindings(mainModel);
     
-    var bar_data = mainModel.selected.bar_dataset().data[0];
-    $('#input-bar-keys').tagsinput({
-          freeInput: false,
-          typeahead: {
-            /*name: 'citynames',
-            displayKey: 'name',
-            valueKey: 'name',*/
-            source: bar_data.indexes
-          }
-        });
+    mainModel.settings.sampling(Math.min(400, mainModel.structures()[0].data.length))
+    
+    function changeCategory() {
+        $('#select-bar-keys').empty().multiSelect('refresh');
+        // Check the first one to get the length
+        var bar_data = mainModel.selected.category();//bar_dataset().data[0];
+        for (var i = 0, length = bar_data.indexes.length; i < length; i = i+1) {
+            if (!bar_data.indexes[i].includes("'")) {
+                $('#select-bar-keys').multiSelect('addOption', {
+                    value: bar_data.indexes[i],
+                    text: bar_data.indexes[i],
+                });
+            }
+        }
+        $('#select-bar-keys').multiSelect('select', bar_data.best_indexes);
+        changeDataset();
+    }
+    
     $('#select-bar-keys').multiSelect({
         //selectableHeader: "<input type='text' class='search-input' autocomplete='off' placeholder='filter'>",
         //selectionHeader: "<input type='text' class='search-input' autocomplete='off' placeholder='filter'>",
-        selectableHeader: "<div class='custom-header'>Available</div>",
-        selectionHeader: "<div class='custom-header'>Selected</div>"
-    });
-    
-    for (var i = 0, length = bar_data.indexes.length; i < length; i = i+1) {
-        if (!bar_data.indexes[i].includes("'")) {
-            $('#select-bar-keys').multiSelect('addOption', {
-                value: bar_data.indexes[i],
-                text: bar_data.indexes[i],
-            });
+        selectableHeader: "<div class='custom-header'>Available</div>"+
+            "<input type='text' class='search-input' autocomplete='off' placeholder='Search'>",
+        selectionHeader: "<div class='custom-header'>Selected</div>"+
+            "<input type='text' class='search-input' autocomplete='off' placeholder='Search'>",
+        afterInit: function(ms) {
+            var that = this,
+            $selectableSearch = that.$selectableUl.prev(),
+            $selectionSearch = that.$selectionUl.prev(),
+            selectableSearchString = '#'+that.$container.attr('id')+' .ms-elem-selectable:not(.ms-selected)',
+            selectionSearchString = '#'+that.$container.attr('id')+' .ms-elem-selection.ms-selected';
+            
+            that.qs1 = $selectableSearch.quicksearch(selectableSearchString)
+                .on('keydown', function(e){
+                  if (e.which === 40){
+                    that.$selectableUl.focus();
+                    return false;
+                  }
+                });
+            that.qs2 = $selectionSearch.quicksearch(selectionSearchString)
+                .on('keydown', function(e){
+                  if (e.which == 40){
+                    that.$selectionUl.focus();
+                    return false;
+                  }
+                });
+        },
+        afterSelect: function() {
+            this.qs1.cache();
+            this.qs2.cache();
+        },
+        afterDeselect: function() {
+            this.qs1.cache();
+            this.qs2.cache();
         }
-    }
-    $('#select-bar-keys').multiSelect('select', bar_data.best_indexes);
-    
+    });
+        
     $('#select-bar-keys').on("change", function() {
         changeDataset();
     });
-    
-    /*for (var i = 0, length = bar_data.best_indexes.length; i < length; i = i+1) {
-        //$('#input-bar-keys').tagsinput('add', bar_data.best_indexes[i]);
-    }*/
     
     
     
@@ -361,8 +392,11 @@ $(document).ready(function () {
         var actualData, ys;
         if (chart.id == 'bar') {
             var indexes = $('#select-bar-keys').val();
+            if (mainModel.selected.bar_dataset().data.length == 0) {
+                return;
+            }
             // TODO: fix this to be the chosen index
-            var indexed_data = mainModel.selected.bar_dataset().data[0].data;
+            var indexed_data = mainModel.selected.category().data;
             var key = mainModel.selected.first().name;
             var indexifier = mainModel.selected.category();
             var aggregator = mainModel.selected.third().id;
@@ -392,7 +426,7 @@ $(document).ready(function () {
             var bins = parseInt(mainModel.settings.bins());
             tempScale = d3.scale.linear().domain([0, bins]).range(d3.extent(ys));
             tickArray = d3.range(bins).map(tempScale).map(function(e) {
-                return Math.floor(e);
+                return e;
             });
             //var histMapper = d3.layout.histogram().bins(x.ticks(tickArray))(ys);
             var histMapper = d3.layout.histogram().bins(tickArray)(ys);
@@ -544,10 +578,13 @@ $(document).ready(function () {
     
         
     // generate initial legend
-    changeDataset();
+    if (mainModel.selected.bar_dataset().data.length > 0) {
+        changeCategory();
+    }
+    //changeDataset();
     mainModel.selected.first.subscribe(changeDataset);
     mainModel.selected.second.subscribe(changeDataset);
-    mainModel.selected.category.subscribe(changeDataset);
+    mainModel.selected.category.subscribe(changeCategory);
     mainModel.selected.third.subscribe(changeDataset);
     mainModel.selected.chart.subscribe(changeDataset);
     
@@ -679,7 +716,7 @@ $(document).ready(function () {
 <hr>
 <!-- Key selector, all charts -->
 <div class='row'>
-    <div class='col-md-6'>
+    <div class='col-md-6' data-bind="visible: !selected.chart().id == 'bar' || selected.bar_dataset().data.length > 0">
         <label for="choose-left" data-bind="text: selected.chart().first"></label>
         <select class="form-control vertically-align" id="choose-left"
                     data-bind="options: $root.only_numbers(selected.dataset().data), 
@@ -699,17 +736,20 @@ $(document).ready(function () {
         <div data-bind="text: selected.second().comment"></div>
     </div>
 <!-- Category selector, bar charts -->
-    <div class='col-md-6' data-bind="visible: selected.chart().id == 'bar'">
+    <div class='alert alert-warning col-md-6' data-bind="visible: selected.chart().id == 'bar' && selected.bar_dataset().data.length == 0">
+        This dataset has no indexes, so you cannot use it in a bar chart.
+    </div>
+    <div class='col-md-6' data-bind="visible: selected.chart().id == 'bar'  && selected.bar_dataset().data.length > 0">
         <label for="choose-second-bar" data-bind="text: selected.chart().category"></label>
         <select class="form-control vertically-align" id="choose-second-bar"
                     data-bind="options: mainModel.selected.bar_dataset().data,
                                value: selected.category,
                                optionsText: 'pretty'">
         </select>
-        <div data-bind="text: selected.category().comment"></div>
+        <div data-bind="text: bars.length > 0 ? selected.category().comment : ''"></div>
     </div>
 <!-- Key selector, bar charts -->
-    <div class='col-md-6' data-bind="visible: selected.chart().id == 'bar'">
+    <div class='col-md-6' data-bind="visible: selected.chart().id == 'bar'  && selected.bar_dataset().data.length > 0">
         <label for="select-bar-keys-named[]">Group By</label>
         <div data-bind="text: selected.third().comment"></div>
         <select multiple=multiple id='select-bar-keys' name='select-bar-keys-named[]'>

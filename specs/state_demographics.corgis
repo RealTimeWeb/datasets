@@ -1,0 +1,60 @@
+metadata:
+    version: 1
+    name: State Demographics
+    builder: 2
+    author: Ryan Whitcomb
+    datetime: 6/1/2016
+    tags: [demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, states]
+    description:
+        short: Demographic information for the states in the United States.
+        overview: >
+            The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau.  Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.
+
+        citation: http://www.census.gov/quickfacts/table/PST045215/00
+local:
+  - file: state_demographics.json
+    name: demographics
+    row: report
+interfaces:
+  - name: get all states
+    description: Returns the report for each state from the dataset.
+    returns: list[report]
+    production:
+        sql: SELECT data FROM demographics
+        post: json()
+    test:
+        sql: SELECT data FROM demographics LIMIT {hardware}
+        post: json()
+structures:
+    "demographics.[0].Age": percent, 2014
+    "demographics.[0].Miscellaneous.Percent Female": '2014'
+    "demographics.[0].Ethnicities": percent, 2014
+    "demographics.[0].Miscellaneous.Living in Same House +1 Years": percent, 2009-2013
+    "demographics.[0].Miscellaneous.Foreign Born": percent 2009-2013
+    "demographics.[0].Miscellaneous.Language Other than English at Home" : age 5+, percent, 2009-2013
+    "demographics.[0].Education": percent, 2009-2013
+    "demographics.[0].Miscellaneous.Veterans": 2009-2013
+    "demographics.[0].Miscellaneous.Mean Travel Time to Work": minutes, workers aged 16+, 2009-2013
+    "demographics.[0].Housing.Housing Units": '2014'
+    "demographics.[0].Housing.Homeownership Rate": 2009-2013
+    "demographics.[0].Housing.Units in Multi-Unit Structures": percent, 2009-2013
+    "demographics.[0].Housing.Median Value of Owner-Occupied Units": 2009-2013
+    "demographics.[0].Housing.Households": 2009-2013
+    "demographics.[0].Housing.Persons per Houseold": 2009-2013
+    "demographics.[0].Income": 2009-2013
+    "demographics.[0].Income.Per Capita Income": 2013 dollars
+    "demographics.[0].Income.Persons Below Poverty level": percent
+    "demographics.[0].Employment.Private Non-farm Establishments": '2013'
+    "demographics.[0].Employment.Private Non-farm Employment": '2013'
+    "demographics.[0].Employment.Private Non-farm Employment Percent Change": 2012-2013
+    "demographics.[0].Employment.Nonemployer Establishments": '2013'
+    "demographics.[0].Employment.firms": '2007'
+    "demographics.[0].Miscellaneous.Manufacturers Shipments": $100,000 of dollars, 2007
+    "demographics.[0].Sales": '2007'
+    "demographics.[0].Sales.Accommodation and Food Services Sales": $100,000 of dollars
+    "demographics.[0].Sales.Merchant Wholesaler Sales": $100,000 of dollars
+    "demographics.[0].Sales.Retail Sales": $100,000 of dollars
+    "demographics.[0].Miscellaneous.Building Permits": '2014'
+    "demographics.[0].Miscellaneous.Land Area": Square Miles, 2010
+    "demographics.[0].Population.Population per Square Mile": '2010'
+    "demographics.[0].Population.Population Percent Change": April 1, 2010 to July 1, 2014

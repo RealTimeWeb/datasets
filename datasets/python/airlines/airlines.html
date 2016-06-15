@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Airlines Library (CORGIS Datasets Project)</title>
+    <title>
+Airlines Library (CORGIS Datasets Project)
+</title>
     
     <!-- JQuery UI CSS-->
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -138,9 +140,9 @@
     }
     $(document).ready(function() {
         /*
-        log('load', 'Airlines');
+        log('load', '{ metadata.name }');
         function doPoll(){  
-            log('remain', 'Airlines, '+$(document).scrollTop()+", "+$(document).height());
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
         setInterval(doPoll, 5000);
         */
@@ -155,6 +157,7 @@
 <body>
 
 <div class="container">
+
 
     <div class="page-header">
         
@@ -214,7 +217,7 @@ Additional information is available: <a href="http://www.rita.dot.gov/bts/help/a
     This library has 1 function you can use.
     
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">airlines</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">airlines</span><span class="o">.</span><span class="n">get_reports</span><span class="p">()</span>
+<span class="n">list_of_airline</span> <span class="o">=</span> <span class="n">airlines</span><span class="o">.</span><span class="n">get_reports</span><span class="p">()</span>
 </pre></div>
 
 
@@ -224,7 +227,7 @@ Additional information is available: <a href="http://www.rita.dot.gov/bts/help/a
 
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">airlines</span>
 <span class="c"># These may be slow!</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">airlines</span><span class="o">.</span><span class="n">get_reports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_airline</span> <span class="o">=</span> <span class="n">airlines</span><span class="o">.</span><span class="n">get_reports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 
 
@@ -236,7 +239,7 @@ Additional information is available: <a href="http://www.rita.dot.gov/bts/help/a
 
 <div class='row'>
 <div class='col-md-offset-1'>
-Returns a list of reports in the database.
+Returns a list of airline reports in the database.
 </div>
 <br>
 
@@ -261,6 +264,8 @@ Returns a list of reports in the database.
     <div class='col-md-2'>
         <button class='btn btn-default' id='btn-explore-airlines'>Explore airlines data</button>
     </div>
+    
+    <br><br><br>
 </div>
 
 <script>
@@ -633,52 +638,6 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-airlines-__0__-time' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"label"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"2003/6"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"year"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2003</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"month"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>6</code></td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-airlines-__0__-time" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-airlines-__0__-time-label").click(function() {
-            $( "#explore-airlines-__0__-time-label" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-airlines-__0__-time-year").click(function() {
-            $( "#explore-airlines-__0__-time-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-airlines-__0__-time-month").click(function() {
-            $( "#explore-airlines-__0__-time-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-    });
-    </script>
-
     <div id='explore-airlines-__0__-statistics' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
@@ -725,9 +684,56 @@ $(document).ready(function() {
     });
     </script>
 
+    <div id='explore-airlines-__0__-time' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"label"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"2003/6"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2003</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-airlines-__0__-time" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-airlines-__0__-time-label").click(function() {
+            $( "#explore-airlines-__0__-time-label" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airlines-__0__-time-year").click(function() {
+            $( "#explore-airlines-__0__-time-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airlines-__0__-time-month").click(function() {
+            $( "#explore-airlines-__0__-time-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
 
 
     
 
-    
+
+
 </div>

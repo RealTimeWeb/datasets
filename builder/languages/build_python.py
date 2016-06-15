@@ -179,6 +179,7 @@ EXTENDED_TYPE_INFO = {
     'int': '<span data-toggle="tooltip" title="Integer (whole number)">int</span>',
     'float': '<span data-toggle="tooltip" title="Float (decimal number)">float</span>',
     'long': '<span data-toggle="tooltip" title="Long (a very big whole number)">long</span>',
+    'NoneType': '<span data-toggle="tooltip" title="None (nothing, not zero or an empty list, just nothing)">None</span>',
     'bool': '<span data-toggle="tooltip" title="Boolean (True or False)">bool</span>',
 }
 def to_human_readable_type(atype):

@@ -6,21 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Broadway Library (CORGIS Datasets Project)</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"><link>-->
+    <title>
+Broadway Library (CORGIS Datasets Project)
+</title>
     
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
     <style>
-    .highlight  { background: #2B2B2B; color: #E6E1DC}
+    .ui-dialog table {
+        width: 100%;
+        font-size: 10pt;
+    }
+    
+    .ui-dialog td {
+        border-bottom: 1px solid #CCC;
+        overflow: 
+    }
+    
+    .ui-dialog-content {
+        max-height: 400px;
+        overflow:auto;
+    }
+    
+    .dialog-opener {
+        cursor: pointer;
+    }
+    
+    .ui-widget-header {
+        border: 0px solid black;
+        border-bottom: 1px solid #ccc;
+        background: #cde;
+    }
+    
+    /*.highlight  { background: #2B2B2B; color: #E6E1DC}*/
     .highlight .hll { background-color: #ffffcc }
     .highlight .c { color: #BC9458; font-style: italic} /* Comment */
     .highlight .err { color: #E6E1DC} /* Error */
@@ -108,12 +139,17 @@
                 });
     }
     $(document).ready(function() {
-        log('load', 'Broadway');
+        /*
+        log('load', '{ metadata.name }');
         function doPoll(){  
-            log('remain', 'Broadway, '+$(document).scrollTop()+", "+$(document).height());
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
         setInterval(doPoll, 5000);
+        */
     });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     </script>
 
 </head>
@@ -121,6 +157,7 @@
 <body>
 
 <div class="container">
+
 
     <div class="page-header">
         
@@ -180,8 +217,8 @@
     This library has 2 functions you can use.
     
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">broadway</span>
-<span class="n">list_of_show</span> <span class="o">=</span> <span class="n">broadway</span><span class="o">.</span><span class="n">get_shows</span><span class="p">()</span>
-<span class="n">list_of_show</span> <span class="o">=</span> <span class="n">broadway</span><span class="o">.</span><span class="n">get_show_by_theatre</span><span class="p">(</span><span class="s">&quot;friedman&quot;</span><span class="p">)</span>
+<span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadway</span><span class="o">.</span><span class="n">get_shows</span><span class="p">()</span>
+<span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadway</span><span class="o">.</span><span class="n">get_show_by_theatre</span><span class="p">(</span><span class="s">&quot;friedman&quot;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -191,8 +228,8 @@
 
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">broadway</span>
 <span class="c"># These may be slow!</span>
-<span class="n">list_of_show</span> <span class="o">=</span> <span class="n">broadway</span><span class="o">.</span><span class="n">get_shows</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
-<span class="n">list_of_show</span> <span class="o">=</span> <span class="n">broadway</span><span class="o">.</span><span class="n">get_show_by_theatre</span><span class="p">(</span><span class="s">&quot;friedman&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadway</span><span class="o">.</span><span class="n">get_shows</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadway</span><span class="o">.</span><span class="n">get_show_by_theatre</span><span class="p">(</span><span class="s">&quot;friedman&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 
 
@@ -250,7 +287,181 @@ Returns information about all the shows at a given theatre
 </div>
 
 
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-broadway'>Explore broadway data</button>
+    </div>
     
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-broadway").click(function() {
+        $( "#explore-broadway" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-broadway' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-broadway-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-broadway" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-broadway-__0__").click(function() {
+            $( "#explore-broadway-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-broadway-__0__' title='Dictionary (11 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"gross"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>360507</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"attendance"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>11430</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"capacity"</code></td> 
+                 <td><span data-toggle="tooltip" title="None (nothing, not zero or an empty list, just nothing)">None</span></td> 
+                 <td><code>None</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"theatre"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Majestic"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"show"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"42ND STREET '80"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"performances"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"previews"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1984</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"date"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"06/10/1984"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"day"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>10</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-broadway-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-broadway-__0__-gross").click(function() {
+            $( "#explore-broadway-__0__-gross" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-attendance").click(function() {
+            $( "#explore-broadway-__0__-attendance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-capacity").click(function() {
+            $( "#explore-broadway-__0__-capacity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-theatre").click(function() {
+            $( "#explore-broadway-__0__-theatre" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-show").click(function() {
+            $( "#explore-broadway-__0__-show" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-performances").click(function() {
+            $( "#explore-broadway-__0__-performances" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-previews").click(function() {
+            $( "#explore-broadway-__0__-previews" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-year").click(function() {
+            $( "#explore-broadway-__0__-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-date").click(function() {
+            $( "#explore-broadway-__0__-date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-month").click(function() {
+            $( "#explore-broadway-__0__-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-day").click(function() {
+            $( "#explore-broadway-__0__-day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
 
     
+
+
+
 </div>

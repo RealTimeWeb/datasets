@@ -33,7 +33,7 @@ interfaces:
     args:
       - name: theatre
         type: str
-        default: '"friedman"'
+        default: friedman
         matches: SELECT DISTINCT theatre FROM broadway
         description: The name of the theatre (e.g., "friedman").
     test:
