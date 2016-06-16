@@ -174,6 +174,8 @@
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_weather'>get_weather</a></li>
+        <li><a href='#get_weather_by_day'>get_weather_by_day</a></li>
+        <li><a href='#get_weather_by_city'>get_weather_by_city</a></li>
         
         </ol></li>
         
@@ -214,10 +216,12 @@
     
     <h3 id="usage">Usage</h3>
     
-    This library has 1 function you can use.
+    This library has 3 functions you can use.
     
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">weather</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather</span><span class="p">()</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather_by_day</span><span class="p">(</span><span class="mi">6</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather_by_city</span><span class="p">(</span><span class="n">Blacksburg</span><span class="p">)</span>
 </pre></div>
 
 
@@ -228,6 +232,8 @@
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">weather</span>
 <span class="c"># These may be slow!</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather_by_day</span><span class="p">(</span><span class="mi">6</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">16</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather_by_city</span><span class="p">(</span><span class="n">Blacksburg</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 
 
@@ -244,6 +250,62 @@ Returns weather reports from the dataset.
 <br>
 
 <ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+<h4 id='get_weather_by_day'>weather.get_weather_by_day(day, test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Given a day, returns all the weather reports for that day in the database.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>day</b>: <i>Str</i></h5>
+    <p class="list-group-item-text">The day to get reports.
+    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
+    </p>
+</li>
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+<h4 id='get_weather_by_city'>weather.get_weather_by_city(city, test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Given a city, returns all the weather reports for that city in the database.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>city</b>: <i>Str</i></h5>
+    <p class="list-group-item-text">The city to get reports.
+    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
+    </p>
+</li>
 
 
 <li class="list-group-item list-group-item-warning">
@@ -329,7 +391,7 @@ $(document).ready(function() {
             <tr> <td><code>"Weather Conditions"</code></td> 
                  <td><span data-toggle="tooltip" title="List">list</span></td> 
                  <td><a class='dialog-opener' id='btn-explore-weather-__0__-Weather-Conditions'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
-                 <td></td> </tr>
+                 <td>An empty list represents no significant weather to report for that day</td> </tr>
             
             <tr> <td><code>"Region"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -451,12 +513,12 @@ $(document).ready(function() {
             <tr> <td><code>"Precipitation"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>0.0</code></td> 
-                 <td></td> </tr>
+                 <td>Inches</td> </tr>
             
             <tr> <td><code>"Temperature"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td><a class='dialog-opener' id='btn-explore-weather-__0__-Data-Temperature'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
+                 <td>Degrees Farenheit</td> </tr>
             
             <tr> <td><code>"Wind"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
