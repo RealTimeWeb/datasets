@@ -735,6 +735,17 @@ $(document).ready(function () {
         </select>
         <div data-bind="text: selected.second().comment"></div>
     </div>
+<!-- Category selector, other charts -->
+    <div class='col-md-6' data-bind="visible: (selected.chart().id == 'line' || selected.chart().id == 'hist' || selected.chart().id == 'scatter')  && selected.bar_dataset().data.length > 0">
+        <label for="choose-filter-index">Filter</label>
+        <select class="form-control vertically-align" id="choose-filter-index"
+                data-bind="value: selected.filter">
+            <!-- ko foreach: mainModel.selected.bar_dataset().data -->
+            <option data-bind="attr: { value: name }, text: pretty"></option>
+            <!-- /ko -->
+        </select>
+        <div data-bind="text: bars.length > 0 ? selected.filter().comment : ''"></div>
+    </div>
 <!-- Category selector, bar charts -->
     <div class='alert alert-warning col-md-6' data-bind="visible: selected.chart().id == 'bar' && selected.bar_dataset().data.length == 0">
         This dataset has no indexes, so you cannot use it in a bar chart.
