@@ -1,0 +1,63 @@
+metadata:
+    version: 1
+    name: Cancer
+    builder: 2
+    author: Ryan Whitcomb
+    datetime: 6/17/2016
+    tags: [cancer, death, states, gender, race, population, crude rate]
+    description:
+        short: Cancer crude rate totals for different ages, races, genders, and geographical areas across the United States.
+        overview: >
+            From the United States Cancer Statistics as part of the U.S. Center for Disease Control, the following data set focuses on the crude rate for all types of cancer reported for different demograpic groups.  Significant groupings include age, gender, race and geographical area.
+            
+
+        citation: http://www.cdc.gov/cancer/npcr/uscs/download_data.htm
+local:
+  - file: cancer.json
+    name: cancer
+    row: report
+    indexes:
+      - name: area
+        jsonpath: Area
+      - name: year
+        jsonpath: Year
+interfaces:
+  - name: get reports
+    description: Returns cancer reports from the dataset.
+    returns: list[report]
+    production:
+        sql: SELECT data FROM cancer
+        post: json()
+    test:
+        sql: SELECT data FROM cancer LIMIT {hardware}
+        post: json()
+  - name: get reports by year
+    description: Given a year, returns all the cancer reports for that year in the database.
+    args:
+      - name: year
+        default: '1999'
+        type: int
+        matches: SELECT DISTINCT report FROM cancer
+        description: The year to get reports.
+    production:
+        sql: SELECT data FROM cancer WHERE year=?
+        post: json()
+    test:
+        sql: SELECT data FROM cancer WHERE year=? LIMIT {hardware}
+        post: json()
+    returns: list[report]
+  - name: get reports by area
+    description: Given a area, returns all the cancer reports for that area in the database.
+    args:
+      - name: area
+        default: 'Alabama'
+        type: str
+        matches: SELECT DISTINCT report FROM cancer
+        description: The year to get reports.
+    production:
+        sql: SELECT data FROM cancer WHERE year=?
+        post: json()
+    test:
+        sql: SELECT data FROM cancer WHERE year=? LIMIT {hardware}
+        post: json()
+    returns: list[report]
