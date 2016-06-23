@@ -436,7 +436,7 @@ $(document).ready(function () {
             filter_index = null;
         }
         
-        var left = mainModel.selected.first().data
+        var left = mainModel.selected.first().data;
         var actualData, xs, ys;
         if (chart.id == 'bar') {
             var indexes = $('#select-bar-keys').val();
@@ -479,10 +479,15 @@ $(document).ready(function () {
                 var indices = filter_index_values().data;
                 ys = [];
                 for (var i = 0, length = indices.length; i < length; i = i+1) {
-                    if (filter_value == indices[i]) {
+                    var key_value = indices[i];
+                    if (typeof key_value) {
+                        key_value = key_value.replace(',', '')
+                    }
+                    if (filter_value == key_value) {
                         ys.push(left[i]);
                     }
                 }
+                console.log(ys);
             } else {
                 ys = left;
             }

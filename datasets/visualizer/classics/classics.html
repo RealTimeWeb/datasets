@@ -94,6 +94,10 @@ function captureImage() {
     // start loading the image.
     img.src = url;
 }
+
+function stringContains(aString, it) { 
+    return aString.indexOf(it) != -1; 
+};
     
 function compare(a,b) {
   if (a.name < b.name)
@@ -152,7 +156,9 @@ var mainModel = {
         'second': ko.observable('humidity'),
         'category': ko.observable({'comment': '', 'name': ''}),
         'third': ko.observable('humidity'),
-        'chart': ko.observable(CHARTS()[3])
+        'filter': ko.observable('none'),
+        'filter_value': ko.observable(''),
+        'chart': ko.observable(CHARTS()[0])
     },
     'bars': ko.observableArray([
     
@@ -175,6 +181,39 @@ mainModel.selected.bar_dataset = ko.computed(function() {
         return null;
     }
 }, mainModel);
+mainModel.sorted_indexes = function () {
+    return mainModel.selected.filter_index_data().indexes.concat().sort();
+};
+mainModel.selected.filter_index_data = ko.computed(function() {
+    var self = this;
+    var target = self.selected.filter();
+    if (target == "none") {
+        return null;
+    }
+    var dataset = self.selected.bar_dataset().data;
+    if (dataset.length > 0) {
+        return dataset.filter(function(elem) {
+            return elem.name == target;
+        })[0];
+    } else {
+        return null;
+    }
+}, mainModel);
+function filter_index_values() {
+    var self = mainModel;
+    var target = self.selected.filter();
+    if (target == "none") {
+        return null;
+    }
+    var dataset = self.selected.dataset().data;
+    if (dataset.length > 0) {
+        return dataset.filter(function(elem) {
+            return elem.name == target;
+        })[0];
+    } else {
+        return null;
+    }
+}
 
 /*
 mainModel.structures().forEach(function(e, i) {
@@ -225,11 +264,12 @@ $(document).ready(function () {
         $('#select-bar-keys').empty().multiSelect('refresh');
         // Check the first one to get the length
         var bar_data = mainModel.selected.category();//bar_dataset().data[0];
-        for (var i = 0, length = bar_data.indexes.length; i < length; i = i+1) {
-            if (!bar_data.indexes[i].includes("'")) {
+        var indexes = bar_data.indexes.concat().sort();
+        for (var i = 0, length = indexes.length; i < length; i = i+1) {
+            if (!stringContains(indexes[i], "'")) {
                 $('#select-bar-keys').multiSelect('addOption', {
-                    value: bar_data.indexes[i],
-                    text: bar_data.indexes[i],
+                    value: indexes[i],
+                    text: indexes[i],
                 });
             }
         }
@@ -388,8 +428,16 @@ $(document).ready(function () {
             });
         }
         
-        var left = mainModel.selected.first().data
-        var actualData, ys;
+        var filter_index = mainModel.selected.filter();
+        var filter_value = null;
+        if (filter_index != "none") {
+            filter_value = mainModel.selected.filter_value();
+        } else {
+            filter_index = null;
+        }
+        
+        var left = mainModel.selected.first().data;
+        var actualData, xs, ys;
         if (chart.id == 'bar') {
             var indexes = $('#select-bar-keys').val();
             if (mainModel.selected.bar_dataset().data.length == 0) {
@@ -407,15 +455,42 @@ $(document).ready(function () {
                                  'value': indexed_data[key][index][aggregator]});
             }
         } else if (chart.id == 'scatter') {
-            left = getRandomSubarray(left, mainModel.settings.sampling());
-            var right = mainModel.selected.first().name == mainModel.selected.second().name
-                        ? left
-                        : getRandomSubarray(mainModel.selected.second().data, mainModel.settings.sampling());
-            actualData = d3.zip(left, right).map(function(element) {
+            var same_names = mainModel.selected.first().name == mainModel.selected.second().name;
+            var right = same_names ? left : mainModel.selected.second().data;
+            if (filter_index != null && filter_value != null) {
+                var indices = filter_index_values().data;
+                ys = [];
+                xs = [];
+                for (var i = 0, length = indices.length; i < length; i = i+1) {
+                    if (filter_value == indices[i]) {
+                        xs.push(left[i]);
+                        ys.push(right[i]);
+                    }
+                }
+            } else {
+                xs = getRandomSubarray(left, mainModel.settings.sampling());
+                ys = same_names ? xs : getRandomSubarray(right, mainModel.settings.sampling());
+            }
+            actualData = d3.zip(xs, ys).map(function(element) {
                 return {'x': element[0], 'y': element[1]}
             });
         } else {
-            ys = left;
+            if (filter_index != null && filter_value != null) {
+                var indices = filter_index_values().data;
+                ys = [];
+                for (var i = 0, length = indices.length; i < length; i = i+1) {
+                    var key_value = indices[i];
+                    if (typeof key_value) {
+                        key_value = key_value.replace(',', '')
+                    }
+                    if (filter_value == key_value) {
+                        ys.push(left[i]);
+                    }
+                }
+                console.log(ys);
+            } else {
+                ys = left;
+            }
             actualData = ys.map(function(element, index) {
                 return {'x': index, 'y': element}
             });
@@ -535,6 +610,17 @@ $(document).ready(function () {
                 .attr("height", function(d) { return height - y(d.y); }); 
         }
         
+        var x_axis_label = mainModel.selected.chart().id == 'bar' ? 
+                  mainModel.selected.category().pretty : 
+                  mainModel.selected.chart().id == 'line' ? 
+                  (mainModel.selected.dataset().order) : 
+                  mainModel.selected.first().pretty;
+        var y_axis_label = mainModel.selected.chart().id == 'hist' ? 
+                  'Frequency': 
+                  mainModel.selected.chart().id == 'line' || mainModel.selected.chart().id == 'bar' ? 
+                  mainModel.selected.first().pretty :
+                  mainModel.selected.second().pretty;
+        
         // Update the axis
         var xAxis = d3.svg.axis().scale(x).orient("bottom");
         var xAxisOrdinal = d3.svg.axis()
@@ -542,7 +628,15 @@ $(document).ready(function () {
                     //.tickFormat(function(d) { return d.index })
                     .orient("bottom");
         var yAxis = d3.svg.axis().scale(y).orient("left");
-
+        
+        if (stringContains(x_axis_label.toLowerCase(), "year")) {
+            xAxis.tickFormat(d3.format("d"));
+            xAxisOrdinal.tickFormat(d3.format("d"));
+        }
+        if (stringContains(y_axis_label.toLowerCase(), "year")) {
+            yAxis.tickFormat(d3.format("d"));
+        }
+        
         canvas.selectAll("g.y.axis")
             .call(yAxis)
 
@@ -558,22 +652,20 @@ $(document).ready(function () {
             d3.selectAll("text.aggregator-text")
                 .text("Aggregation: "+mainModel.selected.third().name);
         } else {
-            d3.selectAll("text.aggregator-text")
+            if (mainModel.selected.filter_value() !== undefined) {
+                d3.selectAll("text.aggregator-text")
+                    .text(mainModel.selected.filter_value());
+            } else {
+                d3.selectAll("text.aggregator-text")
                 .text("");
+            }
         }
         
+        
         canvas.selectAll("text.x-axis-label")
-            .text(mainModel.selected.chart().id == 'bar' ? 
-                  mainModel.selected.category().pretty : 
-                  mainModel.selected.chart().id == 'line' ? 
-                  mainModel.selected.dataset().order : 
-                  mainModel.selected.first().pretty);
+            .text(x_axis_label);
         canvas.selectAll("text.y-axis-label")
-            .text(mainModel.selected.chart().id == 'hist' ? 
-                  'Frequency': 
-                  mainModel.selected.chart().id == 'line' ? 
-                  mainModel.selected.first().pretty :
-                  mainModel.selected.second().pretty);
+            .text(y_axis_label);
     }
     
         
@@ -587,6 +679,8 @@ $(document).ready(function () {
     mainModel.selected.category.subscribe(changeCategory);
     mainModel.selected.third.subscribe(changeDataset);
     mainModel.selected.chart.subscribe(changeDataset);
+    mainModel.selected.filter.subscribe(changeDataset);
+    mainModel.selected.filter_value.subscribe(changeDataset);
     
     mainModel.selected.chart.subscribe(function (chart_type) {
     });
@@ -716,7 +810,7 @@ $(document).ready(function () {
 <hr>
 <!-- Key selector, all charts -->
 <div class='row'>
-    <div class='col-md-6' data-bind="visible: !selected.chart().id == 'bar' || selected.bar_dataset().data.length > 0">
+    <div class='col-md-6' data-bind="visible: selected.chart().id != 'bar' || selected.bar_dataset().data.length > 0">
         <label for="choose-left" data-bind="text: selected.chart().first"></label>
         <select class="form-control vertically-align" id="choose-left"
                     data-bind="options: $root.only_numbers(selected.dataset().data), 
@@ -734,6 +828,26 @@ $(document).ready(function () {
                                optionsText: 'pretty'">
         </select>
         <div data-bind="text: selected.second().comment"></div>
+    </div>
+<!-- Category selector, other charts -->
+    <div class='col-md-6' data-bind="visible: (selected.chart().id == 'line' || selected.chart().id == 'hist' || selected.chart().id == 'scatter')  && selected.bar_dataset().data.length > 0">
+        <label for="choose-filter-index">Filter</label>
+        <select class="form-control vertically-align" id="choose-filter-index"
+                data-bind="value: selected.filter">
+            <option value="none">None</option>
+            <!-- ko foreach: selected.bar_dataset().data -->
+            <option data-bind="attr: { value: name }, text: pretty"></option>
+            <!-- /ko -->
+        </select>
+        <div data-bind="text: bars.length > 0 ? selected.filter().comment : ''"></div>
+    </div>
+    <div class='col-md-6' data-bind="visible: (selected.chart().id == 'line' || selected.chart().id == 'hist' || selected.chart().id == 'scatter')  && selected.bar_dataset().data.length > 0 && selected.filter() != 'none'">
+        <label for="choose-filter-value">By</label>
+        <div data-bind="text: selected.filter_index_data() === null ? '' : selected.filter_index_data().comment"></div>
+        <select id='select-filter-value' class='form-control' 
+                data-bind="options: selected.filter_index_data() === null ? [] : sorted_indexes(),
+                                                    value: selected.filter_value">
+        </select>
     </div>
 <!-- Category selector, bar charts -->
     <div class='alert alert-warning col-md-6' data-bind="visible: selected.chart().id == 'bar' && selected.bar_dataset().data.length == 0">
