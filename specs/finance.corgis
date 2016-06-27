@@ -39,3 +39,5 @@ interfaces:
     test:
         sql: SELECT data FROM finance LIMIT {hardware}
         post: json()
+structures:
+    "finance.[0].Details": NEC - Not Elsewhere Defined
