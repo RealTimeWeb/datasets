@@ -16,7 +16,7 @@ local:
     row: record
     indexes:
       - name: state
-        jsonpath: state
+        jsonpath: State
 interfaces:
   - name: get finances by state
     args:

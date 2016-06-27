@@ -1,3 +1,11 @@
+'''
+Hello student. Thank you for downloading a CORGIS library. However, you do not need to open this library. Instead you should use the following:
+
+    import finance
+    
+If you opened the file because you are curious how this library works, then well done! We hope that you find it a useful learning experience. However, you should know that this code is meant to solve somewhat esoteric pedagogical problems, so it is often not best practices. 
+'''
+
 import sys as _sys
 import os as _os
 import json as _json
@@ -5,6 +13,9 @@ import sqlite3 as _sql
 import difflib as _difflib
 
 class _Constants(object):
+    '''
+    Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
+    '''
     _HEADER = {'User-Agent': 
               'CORGIS Finance library for educational purposes'}
     _PYTHON_3 = _sys.version_info >= (3, 0)
@@ -155,7 +166,7 @@ def _test_interfaces():
     # Production test
     print("Production get_finances_by_state")
     start_time = _default_timer()
-    result = get_finances_by_state('Alaska')
+    result = get_finances_by_state("'Alaska'")
     
     _pprint(result)
     
