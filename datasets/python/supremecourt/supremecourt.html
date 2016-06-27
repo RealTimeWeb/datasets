@@ -7,20 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Supreme Court Library (CORGIS Datasets Project)</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"><link>-->
     
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
     <style>
-    .highlight  { background: #2B2B2B; color: #E6E1DC}
+    .ui-dialog table {
+        width: 100%;
+        font-size: 10pt;
+    }
+    
+    .ui-dialog td {
+        border-bottom: 1px solid #CCC;
+        overflow: 
+    }
+    
+    .ui-dialog-content {
+        max-height: 400px;
+        overflow:auto;
+    }
+    
+    .dialog-opener {
+        cursor: pointer;
+    }
+    
+    .ui-widget-header {
+        border: 0px solid black;
+        border-bottom: 1px solid #ccc;
+        background: #cde;
+    }
+    
+    /*.highlight  { background: #2B2B2B; color: #E6E1DC}*/
     .highlight .hll { background-color: #ffffcc }
     .highlight .c { color: #BC9458; font-style: italic} /* Comment */
     .highlight .err { color: #E6E1DC} /* Error */
@@ -108,12 +137,17 @@
                 });
     }
     $(document).ready(function() {
+        /*
         log('load', 'Supreme Court');
         function doPoll(){  
             log('remain', 'Supreme Court, '+$(document).scrollTop()+", "+$(document).height());
         }
         setInterval(doPoll, 5000);
+        */
     });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     </script>
 
 </head>
@@ -183,7 +217,7 @@
     This library has 1 function you can use.
     
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">supremecourt</span>
-<span class="n">list_of_case</span> <span class="o">=</span> <span class="n">supremecourt</span><span class="o">.</span><span class="n">get_cases</span><span class="p">()</span>
+<span class="n">list_of_court_case</span> <span class="o">=</span> <span class="n">supremecourt</span><span class="o">.</span><span class="n">get_cases</span><span class="p">()</span>
 </pre></div>
 
 
@@ -193,7 +227,7 @@
 
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">supremecourt</span>
 <span class="c"># These may be slow!</span>
-<span class="n">list_of_case</span> <span class="o">=</span> <span class="n">supremecourt</span><span class="o">.</span><span class="n">get_cases</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_court_case</span> <span class="o">=</span> <span class="n">supremecourt</span><span class="o">.</span><span class="n">get_cases</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 
 
@@ -205,7 +239,7 @@
 
 <div class='row'>
 <div class='col-md-offset-1'>
-Returns a list of the cases in the database.
+Returns a list of the court cases in the database.
 </div>
 <br>
 
@@ -221,6 +255,1655 @@ Returns a list of the cases in the database.
 </ul>
 
 </div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-supremecourt'>Explore supremecourt data</button>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-supremecourt").click(function() {
+        $( "#explore-supremecourt" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-supremecourt' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-supremecourt-__0__").click(function() {
+            $( "#explore-supremecourt-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-supremecourt-__0__' title='Dictionary (14 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"origin"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-origin'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"lower court"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-lower-court'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"HALLIBURTON OIL WELL CEMENTING CO. v. WALKER et al., DOING BUSINESS AS DEPTHOGRAPH CO."</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"3 judge dc?"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"docket"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>24</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"decision"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-decision'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"citation"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-citation'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"natural court"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-natural-court'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"source"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-source'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"arguments"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-arguments'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"voting"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-voting'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"issue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-issue'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-id'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"laws"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-laws'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-origin").click(function() {
+            $( "#explore-supremecourt-__0__-origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-lower-court").click(function() {
+            $( "#explore-supremecourt-__0__-lower-court" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-name").click(function() {
+            $( "#explore-supremecourt-__0__-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-3-judge-dc?").click(function() {
+            $( "#explore-supremecourt-__0__-3-judge-dc?" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-docket").click(function() {
+            $( "#explore-supremecourt-__0__-docket" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision").click(function() {
+            $( "#explore-supremecourt-__0__-decision" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-citation").click(function() {
+            $( "#explore-supremecourt-__0__-citation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-source").click(function() {
+            $( "#explore-supremecourt-__0__-source" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments").click(function() {
+            $( "#explore-supremecourt-__0__-arguments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting").click(function() {
+            $( "#explore-supremecourt-__0__-voting" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-issue").click(function() {
+            $( "#explore-supremecourt-__0__-issue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-id").click(function() {
+            $( "#explore-supremecourt-__0__-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-laws").click(function() {
+            $( "#explore-supremecourt-__0__-laws" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-decision' title='Dictionary (13 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"precedent altered?"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>True</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"direction"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"liberal"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"jurisdiction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-decision-jurisdiction'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"authority 1"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-decision-authority-1'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"authority 2"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"admin action"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-decision-admin-action'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"unconstitutional"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"no unconstitutionality"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"term"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1946</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"case data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-decision-case-data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"date"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-decision-date'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"winning party"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"favorable disposition for petitioning party"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"court opinion"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"dissent agrees"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-decision" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-precedent-altered?").click(function() {
+            $( "#explore-supremecourt-__0__-decision-precedent-altered?" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-direction").click(function() {
+            $( "#explore-supremecourt-__0__-decision-direction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-jurisdiction").click(function() {
+            $( "#explore-supremecourt-__0__-decision-jurisdiction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-authority-1").click(function() {
+            $( "#explore-supremecourt-__0__-decision-authority-1" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-authority-2").click(function() {
+            $( "#explore-supremecourt-__0__-decision-authority-2" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-admin-action").click(function() {
+            $( "#explore-supremecourt-__0__-decision-admin-action" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-unconstitutional").click(function() {
+            $( "#explore-supremecourt-__0__-decision-unconstitutional" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-term").click(function() {
+            $( "#explore-supremecourt-__0__-decision-term" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-case-data").click(function() {
+            $( "#explore-supremecourt-__0__-decision-case-data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-date").click(function() {
+            $( "#explore-supremecourt-__0__-decision-date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-winning-party").click(function() {
+            $( "#explore-supremecourt-__0__-decision-winning-party" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-type").click(function() {
+            $( "#explore-supremecourt-__0__-decision-type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-dissent-agrees").click(function() {
+            $( "#explore-supremecourt-__0__-decision-dissent-agrees" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-natural-court-end' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"full"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"August/23/1949"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1949</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"day"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>23</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-natural-court-end" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-end-full").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-end-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-end-year").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-end-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-end-day").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-end-day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-end-month").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-end-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-citation' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"sct"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"67 S. Ct. 6"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"led"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"91 L. Ed. 3"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"lexis"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1946 U.S. LEXIS 1724"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"us"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"329 U.S. 1"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-citation" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-citation-sct").click(function() {
+            $( "#explore-supremecourt-__0__-citation-sct" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-citation-led").click(function() {
+            $( "#explore-supremecourt-__0__-citation-led" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-citation-lexis").click(function() {
+            $( "#explore-supremecourt-__0__-citation-lexis" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-citation-us").click(function() {
+            $( "#explore-supremecourt-__0__-citation-us" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-natural-court-start' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"full"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"June/24/1946"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1946</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"day"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>24</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-natural-court-start" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-start-full").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-start-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-start-year").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-start-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-start-day").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-start-day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-start-month").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-start-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-arguments-date-argued' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"full"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1/9/1946"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1946</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"day"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>9</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-arguments-date-argued" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-date-argued-full").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-date-argued-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-date-argued-year").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-date-argued-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-date-argued-day").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-date-argued-day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-date-argued-month").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-date-argued-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-decision-date' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"full"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"11/18/1946"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1946</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"day"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>18</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>11</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-decision-date" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-date-full").click(function() {
+            $( "#explore-supremecourt-__0__-decision-date-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-date-year").click(function() {
+            $( "#explore-supremecourt-__0__-decision-date-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-date-day").click(function() {
+            $( "#explore-supremecourt-__0__-decision-date-day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-date-month").click(function() {
+            $( "#explore-supremecourt-__0__-decision-date-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-decision-admin-action' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"state"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"agency"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"unknown"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>-1</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-decision-admin-action" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-admin-action-state").click(function() {
+            $( "#explore-supremecourt-__0__-decision-admin-action-state" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-admin-action-agency").click(function() {
+            $( "#explore-supremecourt-__0__-decision-admin-action-agency" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-admin-action-id").click(function() {
+            $( "#explore-supremecourt-__0__-decision-admin-action-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-natural-court' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"start"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-natural-court-start'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"chief"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Vinson"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"end"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-natural-court-end'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"period"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1301</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-natural-court" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-start").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-chief").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-chief" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-end").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-end" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-period").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-period" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-natural-court-id").click(function() {
+            $( "#explore-supremecourt-__0__-natural-court-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-decision-case-data' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"unusual"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"disposition"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-decision-case-data-disposition'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-decision-case-data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-case-data-unusual").click(function() {
+            $( "#explore-supremecourt-__0__-decision-case-data-unusual" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-case-data-disposition").click(function() {
+            $( "#explore-supremecourt-__0__-decision-case-data-disposition" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-source' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"state"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>29</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"U.S. Court of Appeals, Ninth Circuit"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-source" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-source-state").click(function() {
+            $( "#explore-supremecourt-__0__-source-state" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-source-id").click(function() {
+            $( "#explore-supremecourt-__0__-source-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-source-name").click(function() {
+            $( "#explore-supremecourt-__0__-source-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-decision-authority-1' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"authority"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"statutory construction"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-decision-authority-1" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-authority-1-id").click(function() {
+            $( "#explore-supremecourt-__0__-decision-authority-1-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-authority-1-authority").click(function() {
+            $( "#explore-supremecourt-__0__-decision-authority-1-authority" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-arguments-date-reargued' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"full"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"10/23/1946"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1946</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"day"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>23</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>10</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-arguments-date-reargued" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-date-reargued-full").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-date-reargued-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-date-reargued-year").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-date-reargued-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-date-reargued-day").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-date-reargued-day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-date-reargued-month").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-date-reargued-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-lower-court-reasons' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"reason"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"to resolve question presented"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>11</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-lower-court-reasons" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-lower-court-reasons-reason").click(function() {
+            $( "#explore-supremecourt-__0__-lower-court-reasons-reason" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-lower-court-reasons-id").click(function() {
+            $( "#explore-supremecourt-__0__-lower-court-reasons-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-decision-jurisdiction' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"manner"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"rehearing or reargument"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-decision-jurisdiction" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-jurisdiction-id").click(function() {
+            $( "#explore-supremecourt-__0__-decision-jurisdiction-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-jurisdiction-manner").click(function() {
+            $( "#explore-supremecourt-__0__-decision-jurisdiction-manner" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-issue-area' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"area"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Economic Activity"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-issue-area" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-issue-area-id").click(function() {
+            $( "#explore-supremecourt-__0__-issue-area-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-issue-area-area").click(function() {
+            $( "#explore-supremecourt-__0__-issue-area-area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-issue' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"text"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"patents and copyrights: patent"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>80180</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"area"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-issue-area'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-issue" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-issue-text").click(function() {
+            $( "#explore-supremecourt-__0__-issue-text" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-issue-id").click(function() {
+            $( "#explore-supremecourt-__0__-issue-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-issue-area").click(function() {
+            $( "#explore-supremecourt-__0__-issue-area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-decision-case-data-disposition' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"disposition"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"reversed"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-decision-case-data-disposition" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-case-data-disposition-id").click(function() {
+            $( "#explore-supremecourt-__0__-decision-case-data-disposition-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-decision-case-data-disposition-disposition").click(function() {
+            $( "#explore-supremecourt-__0__-decision-case-data-disposition-disposition" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-origin' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"state"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>51</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"California Southern U.S. District Court"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-origin" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-origin-state").click(function() {
+            $( "#explore-supremecourt-__0__-origin-state" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-origin-id").click(function() {
+            $( "#explore-supremecourt-__0__-origin-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-origin-name").click(function() {
+            $( "#explore-supremecourt-__0__-origin-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-voting' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"unclear"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"minority"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"majority"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"majority assigner"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-voting-majority-assigner'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"majority writer"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-voting-majority-writer'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"split on second"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-voting" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting-unclear").click(function() {
+            $( "#explore-supremecourt-__0__-voting-unclear" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting-minority").click(function() {
+            $( "#explore-supremecourt-__0__-voting-minority" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting-majority").click(function() {
+            $( "#explore-supremecourt-__0__-voting-majority" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting-majority-assigner").click(function() {
+            $( "#explore-supremecourt-__0__-voting-majority-assigner" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting-majority-writer").click(function() {
+            $( "#explore-supremecourt-__0__-voting-majority-writer" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting-split-on-second").click(function() {
+            $( "#explore-supremecourt-__0__-voting-split-on-second" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-arguments-respondent' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"state"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>172</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"entity"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"inventor, patent assigner, trademark owner or holder"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-arguments-respondent" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-respondent-state").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-respondent-state" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-respondent-id").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-respondent-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-respondent-entity").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-respondent-entity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-id' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"vote"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1946-001-01-01-01"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"docket"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1946-001-01"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"case data"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1946-001"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"case issues"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1946-001-01-01"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-id" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-id-vote").click(function() {
+            $( "#explore-supremecourt-__0__-id-vote" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-id-docket").click(function() {
+            $( "#explore-supremecourt-__0__-id-docket" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-id-case-data").click(function() {
+            $( "#explore-supremecourt-__0__-id-case-data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-id-case-issues").click(function() {
+            $( "#explore-supremecourt-__0__-id-case-issues" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-laws' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Infrequently litigated statutes"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-laws" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-laws-type").click(function() {
+            $( "#explore-supremecourt-__0__-laws-type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-laws-id").click(function() {
+            $( "#explore-supremecourt-__0__-laws-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-lower-court-disposition' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"disposition"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"affirmed"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-lower-court-disposition" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-lower-court-disposition-id").click(function() {
+            $( "#explore-supremecourt-__0__-lower-court-disposition-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-lower-court-disposition-disposition").click(function() {
+            $( "#explore-supremecourt-__0__-lower-court-disposition-disposition" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-voting-majority-writer' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"long name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Black, Hugo ( 08/19/1937 - 09/17/1971 )"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>78</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"HLBlack"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-voting-majority-writer" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting-majority-writer-long-name").click(function() {
+            $( "#explore-supremecourt-__0__-voting-majority-writer-long-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting-majority-writer-id").click(function() {
+            $( "#explore-supremecourt-__0__-voting-majority-writer-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting-majority-writer-name").click(function() {
+            $( "#explore-supremecourt-__0__-voting-majority-writer-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-arguments-petitioner' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"state"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>198</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"entity"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"oil company, or natural gas producer"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-arguments-petitioner" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-petitioner-state").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-petitioner-state" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-petitioner-id").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-petitioner-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-petitioner-entity").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-petitioner-entity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-voting-majority-assigner' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"long name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Black, Hugo ( 08/19/1937 - 09/17/1971 )"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>78</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"HLBlack"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-voting-majority-assigner" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting-majority-assigner-long-name").click(function() {
+            $( "#explore-supremecourt-__0__-voting-majority-assigner-long-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting-majority-assigner-id").click(function() {
+            $( "#explore-supremecourt-__0__-voting-majority-assigner-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-voting-majority-assigner-name").click(function() {
+            $( "#explore-supremecourt-__0__-voting-majority-assigner-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-lower-court' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"reasons"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-lower-court-reasons'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"disagreement?"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"direction"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"conservative"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"disposition"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-lower-court-disposition'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-lower-court" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-lower-court-reasons").click(function() {
+            $( "#explore-supremecourt-__0__-lower-court-reasons" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-lower-court-disagreement?").click(function() {
+            $( "#explore-supremecourt-__0__-lower-court-disagreement?" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-lower-court-direction").click(function() {
+            $( "#explore-supremecourt-__0__-lower-court-direction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-lower-court-disposition").click(function() {
+            $( "#explore-supremecourt-__0__-lower-court-disposition" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-supremecourt-__0__-arguments' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"date reargued"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-arguments-date-reargued'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"date argued"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-arguments-date-argued'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"respondent"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-arguments-respondent'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"petitioner"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-supremecourt-__0__-arguments-petitioner'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-supremecourt-__0__-arguments" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-date-reargued").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-date-reargued" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-date-argued").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-date-argued" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-respondent").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-respondent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-supremecourt-__0__-arguments-petitioner").click(function() {
+            $( "#explore-supremecourt-__0__-arguments-petitioner" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
 
 
     
