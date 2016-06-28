@@ -1,0 +1,46 @@
+metadata:
+    version: 1
+    name: Global Development
+    builder: 2
+    author: Ryan Whitcomb
+    datetime: 6/28/2016
+    tags: [world, countries, development, health, population, urban, rural, agriculture, infrastructure]
+    description:
+        short: Reports of country's development over time
+        overview: >
+            The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank.  Included is different data about urban development, agriculture and rural development, health, and infrastructure.       
+
+        citation: https://ndb.nal.usda.gov/
+local:
+  - file: global_development.json
+    name: development
+    row: report
+interfaces:
+  - name: get reports
+    description: Returns global development reports from the dataset.
+    returns: list[report]
+    production:
+        sql: SELECT data FROM development
+        post: json()
+    test:
+        sql: SELECT data FROM development LIMIT {hardware}
+        post: json()
+structures:
+    "development.[0].Data.Urban Development.Population Density": People per square kilometer of land area
+    "development.[0].Data.Urban Development.Urban Population": Percent of total
+    "development.[0].Data.Urban Development.Urban Population Growth": Annual percent
+    "development.[0].Data.Agriculture and Rural Development.Rural Population": Percent of total population
+    "development.[0].Data.Agriculture and Rural Development. Land Area": Square kilometers
+    "development.[0].Data.Agriculture and Rural Development.Rural Population Growth": Annual Percent
+    "development.[0].Data.Agriculture and Rural Development.Arable Land Percent": Percent of land area
+    "development.[0].Data.Agriculture and Rural Development.Surface Area": Square kilometers
+    "development.[0].Data.Agriculture and Rural Development.Agricultural Land Percent": Percent of land area
+    "development.[0].Data.Agriculture and Rural Development. Arable Land": Hectacres per person
+    "development.[0].Data.Agriculture and Rural Development.Agricultural Land": Square kilometers
+    "development.[0].Data.Health.Birth Rate": Crude, per 1000 People
+    "development.[0].Data.Health.Death Rate": Crude, per 100 People
+    "development.[0].Data.Health.Fertility Rate": Total, Births per woman
+    "development.[0].Data.Health.Life Expectancy at Birth, Total": Years
+    "development.[0].Data.Health.Life Expectancy at Birth, Female": Years
+    "development.[0].Data.Health.Life Expectancy at Birth, Male": Years
+    "development.[0].Data.Health.Population Growth": Annual Percent
