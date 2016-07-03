@@ -14,9 +14,12 @@ local:
   - file: finance.json
     name: finance
     row: record
+    order: Year
     indexes:
       - name: state
-        jsonpath: record.[0].state
+        jsonpath: record.[0].State
+      - name: year
+        jsonpath: record.[0].Year
 interfaces:
   - name: get finances by state
     args:
@@ -39,3 +42,5 @@ interfaces:
     test:
         sql: SELECT data FROM finance LIMIT {hardware}
         post: json()
+structures:
+    "finance.[0].Details": NEC - Not Elsewhere Defined

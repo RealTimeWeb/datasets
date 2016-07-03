@@ -1,0 +1,32 @@
+metadata:
+    version: 1
+    name: Food
+    builder: 2
+    author: Ryan Whitcomb
+    datetime: 6/21/2016
+    tags: [food, vitamins, minerals, health, nutrition]
+    description:
+        short: Statistics for various food items
+        overview: >
+            The following data comes from the United States Department of Agriculture's Food Composition Database.  It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages.  The food covered spans a large variety of foods from butter to Campbell's soup.            
+
+        citation: https://ndb.nal.usda.gov/
+local:
+  - file: food.json
+    name: food
+    row: report
+interfaces:
+  - name: get reports
+    description: Returns food reports from the dataset.
+    returns: list[report]
+    production:
+        sql: SELECT data FROM food
+        post: json()
+    test:
+        sql: SELECT data FROM food LIMIT {hardware}
+        post: json()
+structures:
+    "food.[0].Data.Vitamins.Vitamin A IU": In International Units
+    "food.[0].Data.Vitamins.Vitamin A RAE": In retinol activity equivalents
+    "food.[0].Data.Vitamins": In milligrams per 100 grams
+    "food.[0].Data.Major Minerals": In milligrams per 100 grams
