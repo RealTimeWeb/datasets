@@ -16,7 +16,7 @@ local:
     row: state record
     indexes:
       - name: state
-        jsonpath: state
+        jsonpath: school.[0].state
 structures:
     "school.[0].data.enrollment.students.year": "Each of these match to the different age groups for students: The first one is Preschool, the second is Kindergarten, and so on for 1st grade - 12th grade."
 interfaces:

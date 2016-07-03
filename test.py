@@ -1,6 +1,7 @@
 import subprocess
 import os
 from timeit import default_timer
+import sys
 
 root = 'datasets/python/'
 datasets = os.listdir(root)
@@ -8,6 +9,10 @@ datasets = os.listdir(root)
 skip_list = ['baseball', 'nfl', 'soccer', 'twitter', 'gutenberg', 'weather', 'airports', 'johnsongrass']
 
 start_time = default_timer()
+
+if len(sys.argv) >= 2:
+    if sys.argv[1] != 'all':
+        datasets = [sys.argv[1]]
 
 os.chdir(root)
 total_datasets = 0

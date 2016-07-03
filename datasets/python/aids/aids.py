@@ -134,7 +134,7 @@ def get_reports_by_year(year, test=True):
     """
     
     # Match it against recommend values
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT report FROM aids").fetchall()]
+    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT year FROM aids").fetchall()]
     if year.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(year, potentials)
         if best_guesses:
@@ -169,7 +169,7 @@ def get_reports_by_country(country, test=True):
     """
     
     # Match it against recommend values
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT report FROM aids").fetchall()]
+    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT country FROM aids").fetchall()]
     if country.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(country, potentials)
         if best_guesses:

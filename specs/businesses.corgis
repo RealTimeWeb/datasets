@@ -18,15 +18,15 @@ local:
     row: business
     indexes:
       - name: city
-        jsonpath: city
+        jsonpath: businesses.[0].city
       - name: name
-        jsonpath: name
+        jsonpath: businesses.[0].name
   - file: users.json
     name: users
     row: user
     indexes:
       - name: uid
-        jsonpath: user_id
+        jsonpath: users.[0].user_id
 interfaces:
   - name: get businesses by city
     args:

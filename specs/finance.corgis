@@ -17,9 +17,9 @@ local:
     order: Year
     indexes:
       - name: state
-        jsonpath: record.[0].State
+        jsonpath: finance.[0].State
       - name: year
-        jsonpath: record.[0].Year
+        jsonpath: finance.[0].Year
 interfaces:
   - name: get finances by state
     args:

@@ -52,7 +52,7 @@ if __name__ == '__main__':
         args.spec = [args.spec]
 
     for a_spec in tqdm(args.spec):
-        # print a_spec
+        print(a_spec)
         with open(a_spec, 'r') as specification_file:
             specification = yaml.load(specification_file)
             # pprint(specification)

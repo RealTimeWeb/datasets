@@ -1,0 +1,2528 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Airports Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <img class="img-rounded pull-right" src="airports.png" alt="Airports" style="max-width: 128px; max-height: 128px;">
+        
+        <h1>Airports Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+        <span class="text-muted">Version 1, created 11/1/2015</span><br>
+        <span class="text-muted">Tags: airplane, airports, travel, plane, air</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_airports'>get_airports</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    This dataset is all about airports.
+Additional information, explaining the names of some of the fields, is available: <a href="http://www.faa.gov/airports/airport_safety/airportdata_5010/#datadictionaries">http://www.faa.gov/airports/airport_safety/airportdata_5010/#datadictionaries</a>
+
+    </p>
+    
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="airports.py?forcedownload=1" download="airports.py" target="_blank">
+            <strong>airports.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="airports.db?forcedownload=1" download="airports.db" target="_blank">
+            <strong>airports.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 1 function you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">airports</span>
+<span class="n">list_of_airport</span> <span class="o">=</span> <span class="n">airports</span><span class="o">.</span><span class="n">get_airports</span><span class="p">()</span>
+</pre></div>
+
+
+
+
+    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">airports</span>
+<span class="c"># These may be slow!</span>
+<span class="n">list_of_airport</span> <span class="o">=</span> <span class="n">airports</span><span class="o">.</span><span class="n">get_airports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_airports'>airports.get_airports(test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns a list of airports around the world.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-airports'>Explore airports data</button>
+    </div>
+    
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-airports").click(function() {
+        $( "#explore-airports" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-airports-__0__-Schedules' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-airports-__0__-Schedules-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-airports-__0__-Schedules" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-airports-__0__-Schedules-__0__").click(function() {
+            $( "#explore-airports-__0__-Schedules-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+    <div id='explore-airports' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-airports-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-airports" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-airports-__0__").click(function() {
+            $( "#explore-airports-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+    <div id='explore-airports-__0__-Runways' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-airports-__0__-Runways-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-airports-__0__-Runways" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-airports-__0__-Runways-__0__").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-airports-__0__-Facility' title='Dictionary (101 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"OperationsGALocal"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"PowerPlantRepair"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"NONE"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"AirportToFSSPhoneNumber"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"OperationsAirTaxi"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ARPElevation"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"490"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"OperationsMilitary"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ResponsibleARTCCComputerID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"OwnerAddress"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"P.O. BOX 260"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"AirportStatusCode"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"O"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ARPMethod"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"E"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"AlternateFSSID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ARPLatitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"31-58-20.5350N"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"TransientStorage"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"TIE"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ChartName"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"NEW ORLEANS"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"OperationsDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"08/06/2014"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"InspectionGroup"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"S"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Region"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ASO"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ManagerAddress"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"P.O. BOX 260"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"AirframeRepair"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"NONE"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"MagneticVariationYear"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1985"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"GlidersOperational"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"CTAFFrequency"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"122.900"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BeaconSchedule"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"SS-SR"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"OperationsGAItin"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"200"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"WindIndicator"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Y-L"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"AirportPositionSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"MedicalUse"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"HelicoptersGA"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"State"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"AL"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"AIRPORT"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ContractFuelAvailable"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"County"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"LOWNDES"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"OperationsCommuter"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"MilitaryLandingRights"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"OperationsCommercial"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"LastOwnerInformationDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BulkOxygenType"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"InspectionMethod"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"S"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BeaconColor"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"CG"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"TrafficPatternAltitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"TieInFSSID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ANB"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ATCT"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"N"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"EffectiveDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"09/18/2014"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"NOTAMService"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Y"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"SegmentedCircle"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"N"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"MilitaryJointUse"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"DirectionFromCBD"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"SW"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"JetEngineGA"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ActiviationDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"UNICOMFrequencies"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"AlternateFSSTollFreeNumber"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BoundaryARTCCName"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ATLANTA"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Owner"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"CITY OF FORT DEPOSIT"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"TieInFSS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"N"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Use"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"PU"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"LightingSchedule"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"SS-SR"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ARPLatitudeS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"115100.5350N"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"AirportElevationSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"DistanceFromCBD"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ARPLongitudeS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"311729.9090W"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"StateName"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ALABAMA"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Ultralights"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"LandAreaCoveredByAirport"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"   55"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BoundaryARTCCComputerID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ZCT"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"TieInFSSTollFreeNumber"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1-800-WX-BRIEF"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"CustomsLandingRights"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"FuelTypes"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"OtherServices"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ResponsibleARTCCName"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"LastInspectionDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"08062014"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"AirportElevationSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"DistrictOffice"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"JAN"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"City"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"FORT DEPOSIT"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"NOTAMFacilityID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ANB"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ManagerPhone"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"    334-227-4331"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"MultiEngineGA"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BottledOxygenType"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"AlternateFSSName"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ARPElevationMethod"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"E"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ResponsibleARTCCID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"SingleEngineGA"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Manager"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"CITY OF FORT DEPOSIT"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Ownership"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"PU"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"MilitaryOperational"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"OwnerCSZ"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"FORT DEPOSIT, AL 36032"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"TieInFSSName"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ANNISTON"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ManagerCSZ"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"FORT DEPOSIT, AL 36032"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"IcaoIdentifier"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"CustomsAirportOfEntry"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"LocationID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"'67A"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"FacilityName"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"FORT DEPOSIT-LOWNDES COUNTY"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"CertificationTypeDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"FederalAgreements"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"AirportPositionSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"NonCommercialLandingFee"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"N"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ARPLongitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"086-35-29.9090W"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"CountyState"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"AL"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"MagneticVariation"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"00E"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BoundaryARTCCID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ZTL"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"OwnerPhone"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"    334-227-4331"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"AirspaceDetermination"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"NO OBJECTION"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-airports-__0__-Facility" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-OperationsGALocal").click(function() {
+            $( "#explore-airports-__0__-Facility-OperationsGALocal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-PowerPlantRepair").click(function() {
+            $( "#explore-airports-__0__-Facility-PowerPlantRepair" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-AirportToFSSPhoneNumber").click(function() {
+            $( "#explore-airports-__0__-Facility-AirportToFSSPhoneNumber" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-OperationsAirTaxi").click(function() {
+            $( "#explore-airports-__0__-Facility-OperationsAirTaxi" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ARPElevation").click(function() {
+            $( "#explore-airports-__0__-Facility-ARPElevation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-OperationsMilitary").click(function() {
+            $( "#explore-airports-__0__-Facility-OperationsMilitary" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ResponsibleARTCCComputerID").click(function() {
+            $( "#explore-airports-__0__-Facility-ResponsibleARTCCComputerID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-OwnerAddress").click(function() {
+            $( "#explore-airports-__0__-Facility-OwnerAddress" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-AirportStatusCode").click(function() {
+            $( "#explore-airports-__0__-Facility-AirportStatusCode" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ARPMethod").click(function() {
+            $( "#explore-airports-__0__-Facility-ARPMethod" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-AlternateFSSID").click(function() {
+            $( "#explore-airports-__0__-Facility-AlternateFSSID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ARPLatitude").click(function() {
+            $( "#explore-airports-__0__-Facility-ARPLatitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-TransientStorage").click(function() {
+            $( "#explore-airports-__0__-Facility-TransientStorage" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ChartName").click(function() {
+            $( "#explore-airports-__0__-Facility-ChartName" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-OperationsDate").click(function() {
+            $( "#explore-airports-__0__-Facility-OperationsDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-InspectionGroup").click(function() {
+            $( "#explore-airports-__0__-Facility-InspectionGroup" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-Region").click(function() {
+            $( "#explore-airports-__0__-Facility-Region" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ManagerAddress").click(function() {
+            $( "#explore-airports-__0__-Facility-ManagerAddress" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-AirframeRepair").click(function() {
+            $( "#explore-airports-__0__-Facility-AirframeRepair" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-MagneticVariationYear").click(function() {
+            $( "#explore-airports-__0__-Facility-MagneticVariationYear" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-GlidersOperational").click(function() {
+            $( "#explore-airports-__0__-Facility-GlidersOperational" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-CTAFFrequency").click(function() {
+            $( "#explore-airports-__0__-Facility-CTAFFrequency" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-BeaconSchedule").click(function() {
+            $( "#explore-airports-__0__-Facility-BeaconSchedule" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-OperationsGAItin").click(function() {
+            $( "#explore-airports-__0__-Facility-OperationsGAItin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-WindIndicator").click(function() {
+            $( "#explore-airports-__0__-Facility-WindIndicator" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-AirportPositionSourceDate").click(function() {
+            $( "#explore-airports-__0__-Facility-AirportPositionSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-MedicalUse").click(function() {
+            $( "#explore-airports-__0__-Facility-MedicalUse" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-HelicoptersGA").click(function() {
+            $( "#explore-airports-__0__-Facility-HelicoptersGA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-State").click(function() {
+            $( "#explore-airports-__0__-Facility-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-Type").click(function() {
+            $( "#explore-airports-__0__-Facility-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ContractFuelAvailable").click(function() {
+            $( "#explore-airports-__0__-Facility-ContractFuelAvailable" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-County").click(function() {
+            $( "#explore-airports-__0__-Facility-County" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-OperationsCommuter").click(function() {
+            $( "#explore-airports-__0__-Facility-OperationsCommuter" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-MilitaryLandingRights").click(function() {
+            $( "#explore-airports-__0__-Facility-MilitaryLandingRights" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-OperationsCommercial").click(function() {
+            $( "#explore-airports-__0__-Facility-OperationsCommercial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-LastOwnerInformationDate").click(function() {
+            $( "#explore-airports-__0__-Facility-LastOwnerInformationDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-BulkOxygenType").click(function() {
+            $( "#explore-airports-__0__-Facility-BulkOxygenType" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-InspectionMethod").click(function() {
+            $( "#explore-airports-__0__-Facility-InspectionMethod" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-BeaconColor").click(function() {
+            $( "#explore-airports-__0__-Facility-BeaconColor" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-TrafficPatternAltitude").click(function() {
+            $( "#explore-airports-__0__-Facility-TrafficPatternAltitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-TieInFSSID").click(function() {
+            $( "#explore-airports-__0__-Facility-TieInFSSID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ATCT").click(function() {
+            $( "#explore-airports-__0__-Facility-ATCT" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-EffectiveDate").click(function() {
+            $( "#explore-airports-__0__-Facility-EffectiveDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-NOTAMService").click(function() {
+            $( "#explore-airports-__0__-Facility-NOTAMService" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-SegmentedCircle").click(function() {
+            $( "#explore-airports-__0__-Facility-SegmentedCircle" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-MilitaryJointUse").click(function() {
+            $( "#explore-airports-__0__-Facility-MilitaryJointUse" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-DirectionFromCBD").click(function() {
+            $( "#explore-airports-__0__-Facility-DirectionFromCBD" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-JetEngineGA").click(function() {
+            $( "#explore-airports-__0__-Facility-JetEngineGA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ActiviationDate").click(function() {
+            $( "#explore-airports-__0__-Facility-ActiviationDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-UNICOMFrequencies").click(function() {
+            $( "#explore-airports-__0__-Facility-UNICOMFrequencies" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-AlternateFSSTollFreeNumber").click(function() {
+            $( "#explore-airports-__0__-Facility-AlternateFSSTollFreeNumber" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-BoundaryARTCCName").click(function() {
+            $( "#explore-airports-__0__-Facility-BoundaryARTCCName" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-Owner").click(function() {
+            $( "#explore-airports-__0__-Facility-Owner" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-TieInFSS").click(function() {
+            $( "#explore-airports-__0__-Facility-TieInFSS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-Use").click(function() {
+            $( "#explore-airports-__0__-Facility-Use" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-LightingSchedule").click(function() {
+            $( "#explore-airports-__0__-Facility-LightingSchedule" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ARPLatitudeS").click(function() {
+            $( "#explore-airports-__0__-Facility-ARPLatitudeS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-AirportElevationSource").click(function() {
+            $( "#explore-airports-__0__-Facility-AirportElevationSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-DistanceFromCBD").click(function() {
+            $( "#explore-airports-__0__-Facility-DistanceFromCBD" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ARPLongitudeS").click(function() {
+            $( "#explore-airports-__0__-Facility-ARPLongitudeS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-StateName").click(function() {
+            $( "#explore-airports-__0__-Facility-StateName" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-Ultralights").click(function() {
+            $( "#explore-airports-__0__-Facility-Ultralights" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-LandAreaCoveredByAirport").click(function() {
+            $( "#explore-airports-__0__-Facility-LandAreaCoveredByAirport" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-BoundaryARTCCComputerID").click(function() {
+            $( "#explore-airports-__0__-Facility-BoundaryARTCCComputerID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-TieInFSSTollFreeNumber").click(function() {
+            $( "#explore-airports-__0__-Facility-TieInFSSTollFreeNumber" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-CustomsLandingRights").click(function() {
+            $( "#explore-airports-__0__-Facility-CustomsLandingRights" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-FuelTypes").click(function() {
+            $( "#explore-airports-__0__-Facility-FuelTypes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-OtherServices").click(function() {
+            $( "#explore-airports-__0__-Facility-OtherServices" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ResponsibleARTCCName").click(function() {
+            $( "#explore-airports-__0__-Facility-ResponsibleARTCCName" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-LastInspectionDate").click(function() {
+            $( "#explore-airports-__0__-Facility-LastInspectionDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-AirportElevationSourceDate").click(function() {
+            $( "#explore-airports-__0__-Facility-AirportElevationSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-DistrictOffice").click(function() {
+            $( "#explore-airports-__0__-Facility-DistrictOffice" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-City").click(function() {
+            $( "#explore-airports-__0__-Facility-City" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-NOTAMFacilityID").click(function() {
+            $( "#explore-airports-__0__-Facility-NOTAMFacilityID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ManagerPhone").click(function() {
+            $( "#explore-airports-__0__-Facility-ManagerPhone" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-MultiEngineGA").click(function() {
+            $( "#explore-airports-__0__-Facility-MultiEngineGA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-BottledOxygenType").click(function() {
+            $( "#explore-airports-__0__-Facility-BottledOxygenType" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-AlternateFSSName").click(function() {
+            $( "#explore-airports-__0__-Facility-AlternateFSSName" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ARPElevationMethod").click(function() {
+            $( "#explore-airports-__0__-Facility-ARPElevationMethod" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ResponsibleARTCCID").click(function() {
+            $( "#explore-airports-__0__-Facility-ResponsibleARTCCID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-SingleEngineGA").click(function() {
+            $( "#explore-airports-__0__-Facility-SingleEngineGA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-Manager").click(function() {
+            $( "#explore-airports-__0__-Facility-Manager" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-Ownership").click(function() {
+            $( "#explore-airports-__0__-Facility-Ownership" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-MilitaryOperational").click(function() {
+            $( "#explore-airports-__0__-Facility-MilitaryOperational" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-OwnerCSZ").click(function() {
+            $( "#explore-airports-__0__-Facility-OwnerCSZ" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-TieInFSSName").click(function() {
+            $( "#explore-airports-__0__-Facility-TieInFSSName" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ManagerCSZ").click(function() {
+            $( "#explore-airports-__0__-Facility-ManagerCSZ" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-IcaoIdentifier").click(function() {
+            $( "#explore-airports-__0__-Facility-IcaoIdentifier" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-CustomsAirportOfEntry").click(function() {
+            $( "#explore-airports-__0__-Facility-CustomsAirportOfEntry" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-LocationID").click(function() {
+            $( "#explore-airports-__0__-Facility-LocationID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-FacilityName").click(function() {
+            $( "#explore-airports-__0__-Facility-FacilityName" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-CertificationTypeDate").click(function() {
+            $( "#explore-airports-__0__-Facility-CertificationTypeDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-FederalAgreements").click(function() {
+            $( "#explore-airports-__0__-Facility-FederalAgreements" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-AirportPositionSource").click(function() {
+            $( "#explore-airports-__0__-Facility-AirportPositionSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-NonCommercialLandingFee").click(function() {
+            $( "#explore-airports-__0__-Facility-NonCommercialLandingFee" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-ARPLongitude").click(function() {
+            $( "#explore-airports-__0__-Facility-ARPLongitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-CountyState").click(function() {
+            $( "#explore-airports-__0__-Facility-CountyState" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-MagneticVariation").click(function() {
+            $( "#explore-airports-__0__-Facility-MagneticVariation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-BoundaryARTCCID").click(function() {
+            $( "#explore-airports-__0__-Facility-BoundaryARTCCID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-OwnerPhone").click(function() {
+            $( "#explore-airports-__0__-Facility-OwnerPhone" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility-AirspaceDetermination").click(function() {
+            $( "#explore-airports-__0__-Facility-AirspaceDetermination" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-airports-__0__-Runways-__0__' title='Dictionary (113 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"BaseEndLandingDistanceAvailableLDA"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndMarkingsCondition"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"G"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndDisplacedLatitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndDisplacedLength"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"RunwayLengthSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndTouchdownZoneElevationSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndRVV"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndRVR"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndPhysicalLatitudeS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"115115.0400N"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndDisplacedThresholdElevationSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"RunwayWeightBearingCapacityDDT"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndVASI"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"PavementClass"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndGradientDirection"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndObjectDescription"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"TREE"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndTouchdownZoneElevationSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"EdgeLightsIntensity"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"MED"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndPositionSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"OWNER"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndDisplacedLongitudeS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndObjectDescription"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"TREE"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndPhysicalLatitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"31-58-35.0400N"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"RunwayLengthSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndPhysicalLatitudeS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"115084.1400N"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndRightTrafficPattern"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"N"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndGradient"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndCrossingHeight"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndPositionSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"OWNER"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndPhysicalElevation"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndDisplacedLongitudeS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndLandingDistanceAvailableLDA"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"RunwayID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"'15/33"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndPhysicalLongitudeS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"311720.8200W"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndObjectOffset"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"188R"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"RunwayWidth"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"78"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndPositionSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"01/03/2001"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndDisplacedLatitudeS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndRVR"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndRVV"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndPhysicalLongitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"086-35-20.8200W"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndPart77Category"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"A(V)"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndALS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndDisplacedThresholdPositionSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndObjectOffset"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"7R"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndDisplacedLength"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndTouchdownZoneElevationSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndDisplacedThresholdElevationSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndDisplacedLongitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"'15"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndDisplacedThresholdPositionSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndAcltStopDistanceAvailableASDA"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"RunwaySurfaceTypeCondition"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ASPH-F"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndTakeOffRunAvailableTORA"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndObjectMarkLight"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndRightTrafficPattern"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"N"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndALS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndCrossingHeight"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndTouchdownLights"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndObjectHeight"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"25"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndGradientDirection"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndVASI"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndAcltStopDistanceAvailableASDA"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndTrueAlignment"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndCenterlineLights"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndILSType"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndDisplacedThresholdPositionSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndPhysicalLongitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"086-35-41.6400W"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndTouchdownZoneElevationSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndPhysicalElevation"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndDisplacedLatitudeS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndObjectMarkLight"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndREIL"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"'33"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndObjectDistance"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1098.0"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndPart77Category"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"A(V)"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndDisplacedThresholdElevationSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndElevationSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndTakeOffDistanceAvailableTODA"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"RunwayWeightBearingCapacityDW"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"RunwayWeightBearingCapacityDT"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndDisplacedElevation"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndTakeOffRunAvailableTORA"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndObjectClearSlope"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"21"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndDisplacedLongitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndGlidePathAngle"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndMarkingsType"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"BSC"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndTouchdownLights"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndDisplacedThresholdElevationSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndElevationSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndILSType"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndTDZElevation"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndPositionSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"01/03/2001"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndMarkingsCondition"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"G"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndPhysicalLatitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"31-58-04.1400N"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndREIL"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndGlidePathAngle"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndObjectClearSlope"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"20"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndGradient"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndElevationSourceDate"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndTDZElevation"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndDisplacedElevation"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndDisplacedThresholdPositionSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndCenterlineLights"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"RunwayLength"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"3593"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndTakeOffDistanceAvailableTODA"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndDisplacedLatitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"RunwaySurfaceTreatment"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndPhysicalLongitudeS"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"311741.6400W"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndTrueAlignment"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndObjectHeight"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"44"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndElevationSource"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ReciprocalEndObjectDistance"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"741.0"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"RunwayWeightBearingCapacitySW"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"  15.0"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"BaseEndMarkingsType"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"BSC"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-airports-__0__-Runways-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndLandingDistanceAvailableLDA").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndLandingDistanceAvailableLDA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndMarkingsCondition").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndMarkingsCondition" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndDisplacedLatitude").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndDisplacedLatitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedLength").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedLength" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-RunwayLengthSourceDate").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-RunwayLengthSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndTouchdownZoneElevationSourceDate").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndTouchdownZoneElevationSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndRVV").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndRVV" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndRVR").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndRVR" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndPhysicalLatitudeS").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndPhysicalLatitudeS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedThresholdElevationSource").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedThresholdElevationSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-RunwayWeightBearingCapacityDDT").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-RunwayWeightBearingCapacityDDT" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndVASI").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndVASI" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-PavementClass").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-PavementClass" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndGradientDirection").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndGradientDirection" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndObjectDescription").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndObjectDescription" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndTouchdownZoneElevationSourceDate").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndTouchdownZoneElevationSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-EdgeLightsIntensity").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-EdgeLightsIntensity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndPositionSource").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndPositionSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedLongitudeS").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedLongitudeS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndObjectDescription").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndObjectDescription" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndPhysicalLatitude").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndPhysicalLatitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-RunwayLengthSource").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-RunwayLengthSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndPhysicalLatitudeS").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndPhysicalLatitudeS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndRightTrafficPattern").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndRightTrafficPattern" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndGradient").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndGradient" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndCrossingHeight").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndCrossingHeight" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndPositionSource").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndPositionSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndPhysicalElevation").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndPhysicalElevation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndDisplacedLongitudeS").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndDisplacedLongitudeS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndLandingDistanceAvailableLDA").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndLandingDistanceAvailableLDA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-RunwayID").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-RunwayID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndPhysicalLongitudeS").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndPhysicalLongitudeS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndObjectOffset").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndObjectOffset" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-RunwayWidth").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-RunwayWidth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndPositionSourceDate").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndPositionSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedLatitudeS").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedLatitudeS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndRVR").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndRVR" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndRVV").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndRVV" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndPhysicalLongitude").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndPhysicalLongitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndPart77Category").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndPart77Category" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndALS").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndALS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedThresholdPositionSource").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedThresholdPositionSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndObjectOffset").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndObjectOffset" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndDisplacedLength").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndDisplacedLength" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndTouchdownZoneElevationSource").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndTouchdownZoneElevationSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndDisplacedThresholdElevationSourceDate").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndDisplacedThresholdElevationSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedLongitude").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedLongitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndID").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedThresholdPositionSourceDate").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedThresholdPositionSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndAcltStopDistanceAvailableASDA").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndAcltStopDistanceAvailableASDA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-RunwaySurfaceTypeCondition").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-RunwaySurfaceTypeCondition" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndTakeOffRunAvailableTORA").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndTakeOffRunAvailableTORA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndObjectMarkLight").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndObjectMarkLight" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndRightTrafficPattern").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndRightTrafficPattern" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndALS").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndALS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndCrossingHeight").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndCrossingHeight" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndTouchdownLights").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndTouchdownLights" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndObjectHeight").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndObjectHeight" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndGradientDirection").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndGradientDirection" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndVASI").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndVASI" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndAcltStopDistanceAvailableASDA").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndAcltStopDistanceAvailableASDA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndTrueAlignment").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndTrueAlignment" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndCenterlineLights").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndCenterlineLights" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndILSType").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndILSType" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndDisplacedThresholdPositionSourceDate").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndDisplacedThresholdPositionSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndPhysicalLongitude").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndPhysicalLongitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndTouchdownZoneElevationSource").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndTouchdownZoneElevationSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndPhysicalElevation").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndPhysicalElevation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndDisplacedLatitudeS").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndDisplacedLatitudeS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndObjectMarkLight").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndObjectMarkLight" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndREIL").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndREIL" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndID").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndObjectDistance").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndObjectDistance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndPart77Category").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndPart77Category" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndDisplacedThresholdElevationSource").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndDisplacedThresholdElevationSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndElevationSource").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndElevationSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndTakeOffDistanceAvailableTODA").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndTakeOffDistanceAvailableTODA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-RunwayWeightBearingCapacityDW").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-RunwayWeightBearingCapacityDW" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-RunwayWeightBearingCapacityDT").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-RunwayWeightBearingCapacityDT" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedElevation").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedElevation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndTakeOffRunAvailableTORA").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndTakeOffRunAvailableTORA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndObjectClearSlope").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndObjectClearSlope" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndDisplacedLongitude").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndDisplacedLongitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndGlidePathAngle").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndGlidePathAngle" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndMarkingsType").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndMarkingsType" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndTouchdownLights").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndTouchdownLights" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedThresholdElevationSourceDate").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedThresholdElevationSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndElevationSourceDate").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndElevationSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndILSType").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndILSType" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndTDZElevation").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndTDZElevation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndPositionSourceDate").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndPositionSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndMarkingsCondition").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndMarkingsCondition" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndPhysicalLatitude").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndPhysicalLatitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndREIL").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndREIL" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndGlidePathAngle").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndGlidePathAngle" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndObjectClearSlope").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndObjectClearSlope" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndGradient").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndGradient" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndElevationSourceDate").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndElevationSourceDate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndTDZElevation").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndTDZElevation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndDisplacedElevation").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndDisplacedElevation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndDisplacedThresholdPositionSource").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndDisplacedThresholdPositionSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndCenterlineLights").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndCenterlineLights" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-RunwayLength").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-RunwayLength" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndTakeOffDistanceAvailableTODA").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndTakeOffDistanceAvailableTODA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedLatitude").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndDisplacedLatitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-RunwaySurfaceTreatment").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-RunwaySurfaceTreatment" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndPhysicalLongitudeS").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndPhysicalLongitudeS" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndTrueAlignment").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndTrueAlignment" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndObjectHeight").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndObjectHeight" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndElevationSource").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndElevationSource" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-ReciprocalEndObjectDistance").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-ReciprocalEndObjectDistance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-RunwayWeightBearingCapacitySW").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-RunwayWeightBearingCapacitySW" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Runways-__0__-BaseEndMarkingsType").click(function() {
+            $( "#explore-airports-__0__-Runways-__0__-BaseEndMarkingsType" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-airports-__0__-Schedules-__0__' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"AttendanceSchedule"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"UNATNDD"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"SequenceNumber"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>" 1"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-airports-__0__-Schedules-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-airports-__0__-Schedules-__0__-AttendanceSchedule").click(function() {
+            $( "#explore-airports-__0__-Schedules-__0__-AttendanceSchedule" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Schedules-__0__-SequenceNumber").click(function() {
+            $( "#explore-airports-__0__-Schedules-__0__-SequenceNumber" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-airports-__0__' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Runways"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-airports-__0__-Runways'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Schedules"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-airports-__0__-Schedules'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"SiteNumber"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"00326.*A"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Facility"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-airports-__0__-Facility'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-airports-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-airports-__0__-Runways").click(function() {
+            $( "#explore-airports-__0__-Runways" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Schedules").click(function() {
+            $( "#explore-airports-__0__-Schedules" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-SiteNumber").click(function() {
+            $( "#explore-airports-__0__-SiteNumber" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-airports-__0__-Facility").click(function() {
+            $( "#explore-airports-__0__-Facility" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+
+</div>

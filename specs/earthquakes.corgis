@@ -17,7 +17,7 @@ local:
     row: earthquake
     indexes:
       - name: state
-        jsonpath: earthquake.[0].location.state
+        jsonpath: earthquakes.[0].location.state
 interfaces:
   - name: get earthquakes
     description: Returns earthquakes from the dataset.

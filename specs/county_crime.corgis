@@ -17,9 +17,9 @@ local:
     row: report
     indexes:
       - name: department
-        jsonpath: Department
+        jsonpath: crime.[0].Department
       - name: year
-        jsonpath: Year
+        jsonpath: crime.[0].Year
 interfaces:
   - name: get all crimes
     returns: list[report]

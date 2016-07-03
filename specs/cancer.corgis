@@ -18,9 +18,9 @@ local:
     row: report
     indexes:
       - name: area
-        jsonpath: Area
+        jsonpath: cancer.[0].Area
       - name: year
-        jsonpath: Year
+        jsonpath: cancer.[0].Year
 interfaces:
   - name: get reports
     description: Returns cancer reports from the dataset.

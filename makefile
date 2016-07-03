@@ -17,7 +17,10 @@ all_metrics:
 all_fast:
 	python builder/builder.py -l python --all --fast specs/ ./datasets
 test:
-	python test.py
+	python test.py $(target)
+python_test:
+	python builder/builder.py -l python specs/$(target).corgis ./datasets
+	python test.py $(target)
 index:
 	python datasets/python/build_index.py
 latex_index:

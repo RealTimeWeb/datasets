@@ -1,3 +1,11 @@
+'''
+Hello student. Thank you for downloading a CORGIS library. However, you do not need to open this library. Instead you should use the following:
+
+    import soccer
+    
+If you opened the file because you are curious how this library works, then well done! We hope that you find it a useful learning experience. However, you should know that this code is meant to solve somewhat esoteric pedagogical problems, so it is often not best practices. 
+'''
+
 import sys as _sys
 import os as _os
 import json as _json
@@ -5,6 +13,9 @@ import sqlite3 as _sql
 import difflib as _difflib
 
 class _Constants(object):
+    '''
+    Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
+    '''
     _HEADER = {'User-Agent': 
               'CORGIS Soccer library for educational purposes'}
     _PYTHON_3 = _sys.version_info >= (3, 0)
@@ -116,7 +127,7 @@ def get_games(league):
             hardware=_Constants._HARDWARE),
             (league, ))
         data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r))['data'] for r in data]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
         
         data = data[0]
         
@@ -133,7 +144,7 @@ def _test_interfaces():
     # Production test
     print("Production get_games")
     start_time = _default_timer()
-    result = get_games('Austrian Bundesliga')
+    result = get_games("'Austrian Bundesliga'")
     
     _pprint(result)
     

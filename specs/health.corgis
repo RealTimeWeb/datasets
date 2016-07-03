@@ -14,11 +14,11 @@ local:
     row: report
     indexes:
       - name: disease
-        jsonpath: disease
+        jsonpath: health.[0].disease
       - name: location
-        jsonpath: loc
+        jsonpath: health.[0].loc
       - name: year
-        jsonpath: year
+        jsonpath: health.[0].year
 interfaces:
   - name: get reports by year
     returns: list[report]

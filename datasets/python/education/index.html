@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Education Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <img class="img-rounded pull-right" src="education.png" alt="Education" style="max-width: 128px; max-height: 128px;">
+        
+        <h1>Education Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+        <span class="text-muted">Version 1, created 11/1/2015</span><br>
+        <span class="text-muted">Tags: school, education, K-12, kindergarten, learning, teaching</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_state'>get_state</a></li>
+        <li><a href='#get_all_states'>get_all_states</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The 'Year' field has records for Preschool, Kindergarten, and grades 1-12.
+
+    </p>
+    
+    
+    <p>
+    <i><a href='https://nces.ed.gov/ccd/aboutCCD.asp'>https://nces.ed.gov/ccd/aboutCCD.asp</a></i>
+    </p>
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="education.py?forcedownload=1" download="education.py" target="_blank">
+            <strong>education.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="education.db?forcedownload=1" download="education.db" target="_blank">
+            <strong>education.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 2 functions you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">education</span>
+<span class="n">a_state_record</span> <span class="o">=</span> <span class="n">education</span><span class="o">.</span><span class="n">get_state</span><span class="p">(</span><span class="s">&quot;&#39;Virginia&#39;&quot;</span><span class="p">)</span>
+<span class="n">list_of_state_record</span> <span class="o">=</span> <span class="n">education</span><span class="o">.</span><span class="n">get_all_states</span><span class="p">()</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_state'>education.get_state(state)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns information about one state. Enrollment data is for Pre-K through 12th grade.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>state</b>: <i>Str</i></h5>
+    <p class="list-group-item-text">The state you are interested in.
+    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
+    </p>
+</li>
+
+
+</ul>
+
+</div>
+
+<h4 id='get_all_states'>education.get_all_states()</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns all of the data for every state into a list.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-school'>Explore school data</button>
+    </div>
+    
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-school").click(function() {
+        $( "#explore-school" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-school-__0__-data-score-math' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-score-math-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-score-math" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-school-__0__-data-score-math-__0__").click(function() {
+            $( "#explore-school-__0__-data-score-math-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-score-reading' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-score-reading-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-score-reading" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-school-__0__-data-score-reading-__0__").click(function() {
+            $( "#explore-school-__0__-data-score-reading-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+    <div id='explore-school' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-school-__0__").click(function() {
+            $( "#explore-school-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-score-science' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-score-science-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-score-science" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-school-__0__-data-score-science-__0__").click(function() {
+            $( "#explore-school-__0__-data-score-science-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-score-writing' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-score-writing-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-score-writing" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-school-__0__-data-score-writing-__0__").click(function() {
+            $( "#explore-school-__0__-data-score-writing-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-enrollment-students-year' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8179</code></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-enrollment-students-year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-school-__0__-data-enrollment-students-year-__0__").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-year-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-school-__0__-data-score-math-__0__' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"grade"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"scale score"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>228</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-score-math-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-score-math-__0__-grade").click(function() {
+            $( "#explore-school-__0__-data-score-math-__0__-grade" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-score-math-__0__-scale-score").click(function() {
+            $( "#explore-school-__0__-data-score-math-__0__-scale-score" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"state"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"alabama"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-state").click(function() {
+            $( "#explore-school-__0__-state" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data").click(function() {
+            $( "#explore-school-__0__-data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-score-science-__0__' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"grade"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"scale score"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>142</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-score-science-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-score-science-__0__-grade").click(function() {
+            $( "#explore-school-__0__-data-score-science-__0__-grade" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-score-science-__0__-scale-score").click(function() {
+            $( "#explore-school-__0__-data-score-science-__0__-scale-score" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-enrollment-students-gender' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"male"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>387549</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"female"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>368003</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-enrollment-students-gender" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-gender-male").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-gender-male" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-gender-female").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-gender-female" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"enrollment"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-enrollment'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"attendance"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-attendance'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"funding"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-funding'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"score"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-score'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"location"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-location'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment").click(function() {
+            $( "#explore-school-__0__-data-enrollment" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-attendance").click(function() {
+            $( "#explore-school-__0__-data-attendance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-funding").click(function() {
+            $( "#explore-school-__0__-data-funding" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-score").click(function() {
+            $( "#explore-school-__0__-data-score" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-location").click(function() {
+            $( "#explore-school-__0__-data-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-attendance' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"average student rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>96</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"average teacher rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>93.38461538</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"average minutes"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>61768.53846</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-attendance" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-attendance-average-student-rate").click(function() {
+            $( "#explore-school-__0__-data-attendance-average-student-rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-attendance-average-teacher-rate").click(function() {
+            $( "#explore-school-__0__-data-attendance-average-teacher-rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-attendance-average-minutes").click(function() {
+            $( "#explore-school-__0__-data-attendance-average-minutes" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-enrollment-students' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"gender"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-enrollment-students-gender'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"all"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>755552</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"race"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-enrollment-students-race'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"other"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-enrollment-students-other'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-enrollment-students-year'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td>Each of these match to the different age groups for students: The first one is Preschool, the second is Kindergarten, and so on for 1st grade - 12th grade.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-enrollment-students" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-gender").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-gender" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-all").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-all" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-race").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-race" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-other").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-other" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-year").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-enrollment' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"schools"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1615</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"students"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-enrollment-students'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"student teacher ratio"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>15.31</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"teachers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>49363.24</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"staff"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>95144.48</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-enrollment" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-schools").click(function() {
+            $( "#explore-school-__0__-data-enrollment-schools" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-student-teacher-ratio").click(function() {
+            $( "#explore-school-__0__-data-enrollment-student-teacher-ratio" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-teachers").click(function() {
+            $( "#explore-school-__0__-data-enrollment-teachers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-staff").click(function() {
+            $( "#explore-school-__0__-data-enrollment-staff" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-score' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"science"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-score-science'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"reading"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-score-reading'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"math"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-score-math'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"writing"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school-__0__-data-score-writing'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-score" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-score-science").click(function() {
+            $( "#explore-school-__0__-data-score-science" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-score-reading").click(function() {
+            $( "#explore-school-__0__-data-score-reading" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-score-math").click(function() {
+            $( "#explore-school-__0__-data-score-math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-score-writing").click(function() {
+            $( "#explore-school-__0__-data-score-writing" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-funding' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"expenditures"</code></td> 
+                 <td><span data-toggle="tooltip" title="Long (a very big whole number)">long</span></td> 
+                 <td><code>7646087117</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Long (a very big whole number)">long</span></td> 
+                 <td><code>7239690678</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-funding" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-funding-expenditures").click(function() {
+            $( "#explore-school-__0__-data-funding-expenditures" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-funding-revenue").click(function() {
+            $( "#explore-school-__0__-data-funding-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-score-reading-__0__' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"grade"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"scale score"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>216</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-score-reading-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-score-reading-__0__-grade").click(function() {
+            $( "#explore-school-__0__-data-score-reading-__0__-grade" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-score-reading-__0__-scale-score").click(function() {
+            $( "#explore-school-__0__-data-score-reading-__0__-scale-score" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-enrollment-students-other' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"individualized education program"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>81216</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"free lunch eligible"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>356929</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ungraded students"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"lep/ell students"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>17559</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"reduced-price lunch eligible"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>45457</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-enrollment-students-other" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-other-individualized-education-program").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-other-individualized-education-program" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-other-free-lunch-eligible").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-other-free-lunch-eligible" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-other-ungraded-students").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-other-ungraded-students" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-other-lep_ell-students").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-other-lep_ell-students" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-other-reduced-price-lunch-eligible").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-other-reduced-price-lunch-eligible" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-location' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"latitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>32.3182314</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"longitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>-86.902298</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-location" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-location-latitude").click(function() {
+            $( "#explore-school-__0__-data-location-latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-location-longitude").click(function() {
+            $( "#explore-school-__0__-data-location-longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-score-writing-__0__' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"grade"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"scale score"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>140</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-score-writing-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-score-writing-__0__-grade").click(function() {
+            $( "#explore-school-__0__-data-score-writing-__0__-grade" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-score-writing-__0__-scale-score").click(function() {
+            $( "#explore-school-__0__-data-score-writing-__0__-scale-score" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school-__0__-data-enrollment-students-race' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"biracial"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2534</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hispanic"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>35389</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"black"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>261255</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"asian"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>9753</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"white"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>440519</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"native american"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6102</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school-__0__-data-enrollment-students-race" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-race-biracial").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-race-biracial" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-race-hispanic").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-race-hispanic" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-race-black").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-race-black" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-race-asian").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-race-asian" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-race-white").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-race-white" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school-__0__-data-enrollment-students-race-native-american").click(function() {
+            $( "#explore-school-__0__-data-enrollment-students-race-native-american" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+
+</div>

@@ -18,7 +18,7 @@ local:
     row: survey
     indexes:
       - name: name
-        jsonpath: name
+        jsonpath: drugs.[0].name
 interfaces:
   - name: get surveys
     description: Given one of the survey questions, returns the associated data from respondents.

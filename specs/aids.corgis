@@ -9,8 +9,6 @@ metadata:
         short: Records of AIDS related statistics from several countries.
         overview: >
             The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease.  The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.
-            
-
         citation: http://aidsinfo.unaids.org/
 local:
   - file: aids.json
@@ -18,9 +16,9 @@ local:
     row: report
     indexes:
       - name: country
-        jsonpath: Country
+        jsonpath: aids.[0].Country
       - name: year
-        jsonpath: Year
+        jsonpath: aids.[0].Year
 interfaces:
   - name: get reports
     description: Returns aids reports from the dataset.
@@ -37,7 +35,7 @@ interfaces:
       - name: year
         default: '1990'
         type: int
-        matches: SELECT DISTINCT report FROM aids
+        matches: SELECT DISTINCT year FROM aids
         description: The year to get reports.
     production:
         sql: SELECT data FROM aids WHERE year=?
@@ -52,7 +50,7 @@ interfaces:
       - name: country
         default: 'Afghanistan'
         type: str
-        matches: SELECT DISTINCT report FROM aids
+        matches: SELECT DISTINCT country FROM aids
         description: The year to get reports.
     production:
         sql: SELECT data FROM aids WHERE year=?

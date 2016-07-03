@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Drugs Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <img class="img-rounded pull-right" src="drugs.png" alt="Drugs" style="max-width: 128px; max-height: 128px;">
+        
+        <h1>Drugs Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)Ryan Whitcomb (<a href="mailto:rwhit94@vt.edu">rwhit94@vt.edu</a>)</span><br>
+        <span class="text-muted">Version 1, created 5-18-16</span><br>
+        <span class="text-muted">Tags: drugs, substances, drug usage</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_surveys'>get_surveys</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.
+
+    </p>
+    
+    
+    <p>
+    <i><a href='https://nsduhweb.rti.org/respweb/homepage.cfm'>https://nsduhweb.rti.org/respweb/homepage.cfm</a></i>
+    </p>
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="drugs.py?forcedownload=1" download="drugs.py" target="_blank">
+            <strong>drugs.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="drugs.db?forcedownload=1" download="drugs.db" target="_blank">
+            <strong>drugs.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 1 function you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">drugs</span>
+<span class="n">list_of_survey</span> <span class="o">=</span> <span class="n">drugs</span><span class="o">.</span><span class="n">get_surveys</span><span class="p">(</span><span class="s">&quot;&#39;Cigarette Use&#39;&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_surveys'>drugs.get_surveys(question)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Given one of the survey questions, returns the associated data from respondents.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>question</b>: <i>Str</i></h5>
+    <p class="list-group-item-text">The name of the survey question. Must be one of 'Cocaine Year', 'Alcohol Month', 'Cigarette Use', 'Alcohol Risk', 'Illicit/Alcohol Dependence or Abuse', 'Marijuana New', 'Illicit Dependence', 'Alcohol Dependence', 'Tobacco Use', 'Alcohol Binge', 'Marijuana Risk', 'Alcohol Abuse', 'Marijuana Month', 'Illicit Dependence or Abuse', 'Smoking Risk', 'Illicit Month', 'Alcohol Treatment', 'Nonmarijuana Illicit', 'Pain Relievers', 'Marijuana Year', 'Illicit Treatment', 'Depression'.
+    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
+    </p>
+</li>
+
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-drugs'>Explore drugs data</button>
+    </div>
+    
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-drugs").click(function() {
+        $( "#explore-drugs" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-drugs' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-drugs-__0__").click(function() {
+            $( "#explore-drugs-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-data' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-data-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-drugs-__0__-data-__0__").click(function() {
+            $( "#explore-drugs-__0__-data-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-drugs-__0__-data-__0__' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Young CI"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Medium"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>14</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Old"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>32</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Medium CI"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>5</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Young"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"State"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Alabama"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Old CI"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>17</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-data-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-data-__0__-Young-CI").click(function() {
+            $( "#explore-drugs-__0__-data-__0__-Young-CI" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-data-__0__-Medium").click(function() {
+            $( "#explore-drugs-__0__-data-__0__-Medium" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-data-__0__-Old").click(function() {
+            $( "#explore-drugs-__0__-data-__0__-Old" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-data-__0__-Medium-CI").click(function() {
+            $( "#explore-drugs-__0__-data-__0__-Medium-CI" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-data-__0__-Young").click(function() {
+            $( "#explore-drugs-__0__-data-__0__-Young" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-data-__0__-State").click(function() {
+            $( "#explore-drugs-__0__-data-__0__-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-data-__0__-Old-CI").click(function() {
+            $( "#explore-drugs-__0__-data-__0__-Old-CI" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"about"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Cocaine Use in the Past Year"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"data"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-data'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Cocaine Year"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-about").click(function() {
+            $( "#explore-drugs-__0__-about" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-data").click(function() {
+            $( "#explore-drugs-__0__-data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-name").click(function() {
+            $( "#explore-drugs-__0__-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+
+</div>

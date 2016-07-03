@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Cancer Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <img class="img-rounded pull-right" src="cancer.png" alt="Cancer" style="max-width: 128px; max-height: 128px;">
+        
+        <h1>Cancer Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Ryan Whitcomb</span><br>
+        <span class="text-muted">Version 1, created 6/17/2016</span><br>
+        <span class="text-muted">Tags: cancer, death, states, gender, race, population, crude rate</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_reports'>get_reports</a></li>
+        <li><a href='#get_reports_by_year'>get_reports_by_year</a></li>
+        <li><a href='#get_reports_by_area'>get_reports_by_area</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    From the United States Cancer Statistics as part of the U.S. Center for Disease Control, the following data set focuses on the crude rate for all types of cancer reported for different demograpic groups.  Significant groupings include age, gender, race and geographical area.
+
+    </p>
+    
+    
+    <p>
+    <i>http://www.cdc.gov/cancer/npcr/uscs/download_data.htm</i>
+    </p>
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="cancer.py?forcedownload=1" download="cancer.py" target="_blank">
+            <strong>cancer.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="cancer.db?forcedownload=1" download="cancer.db" target="_blank">
+            <strong>cancer.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 3 functions you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">cancer</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">cancer</span><span class="o">.</span><span class="n">get_reports</span><span class="p">()</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">cancer</span><span class="o">.</span><span class="n">get_reports_by_year</span><span class="p">(</span><span class="s">&quot;1999&quot;</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">cancer</span><span class="o">.</span><span class="n">get_reports_by_area</span><span class="p">(</span><span class="s">&quot;Alabama&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+
+
+    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">cancer</span>
+<span class="c"># These may be slow!</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">cancer</span><span class="o">.</span><span class="n">get_reports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">cancer</span><span class="o">.</span><span class="n">get_reports_by_year</span><span class="p">(</span><span class="s">&quot;1999&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">cancer</span><span class="o">.</span><span class="n">get_reports_by_area</span><span class="p">(</span><span class="s">&quot;Alabama&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_reports'>cancer.get_reports(test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns cancer reports from the dataset.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+<h4 id='get_reports_by_year'>cancer.get_reports_by_year(year, test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Given a year, returns all the cancer reports for that year in the database.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>year</b>: <i>Int</i></h5>
+    <p class="list-group-item-text">The year to get reports.
+    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
+    </p>
+</li>
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+<h4 id='get_reports_by_area'>cancer.get_reports_by_area(area, test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Given a area, returns all the cancer reports for that area in the database.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>area</b>: <i>Str</i></h5>
+    <p class="list-group-item-text">The year to get reports.
+    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
+    </p>
+</li>
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-cancer'>Explore cancer data</button>
+    </div>
+    
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-cancer").click(function() {
+        $( "#explore-cancer" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-cancer' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-cancer-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cancer" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-cancer-__0__").click(function() {
+            $( "#explore-cancer-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-cancer-__0__-Age' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Age Adjusted Rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>165.5</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Age Adjusted CI Lower"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>160.6</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Age Adjusted CI Upper"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>170.5</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cancer-__0__-Age" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cancer-__0__-Age-Age-Adjusted-Rate").click(function() {
+            $( "#explore-cancer-__0__-Age-Age-Adjusted-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Age-Age-Adjusted-CI-Lower").click(function() {
+            $( "#explore-cancer-__0__-Age-Age-Adjusted-CI-Lower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Age-Age-Adjusted-CI-Upper").click(function() {
+            $( "#explore-cancer-__0__-Age-Age-Adjusted-CI-Upper" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-cancer-__0__' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Age"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-cancer-__0__-Age'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Area"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Alabama"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-cancer-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1999</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cancer-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cancer-__0__-Age").click(function() {
+            $( "#explore-cancer-__0__-Age" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Area").click(function() {
+            $( "#explore-cancer-__0__-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Data").click(function() {
+            $( "#explore-cancer-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Year").click(function() {
+            $( "#explore-cancer-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-cancer-__0__-Data' title='Dictionary (8 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Count"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4366</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Crude Rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>190.4</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Crude CI Upper"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>196.1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Crude CI Lower"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>184.8</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Sex"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Female"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Race"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"All Races"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Event Type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Mortality"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2293259</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cancer-__0__-Data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cancer-__0__-Data-Count").click(function() {
+            $( "#explore-cancer-__0__-Data-Count" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Data-Crude-Rate").click(function() {
+            $( "#explore-cancer-__0__-Data-Crude-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Data-Crude-CI-Upper").click(function() {
+            $( "#explore-cancer-__0__-Data-Crude-CI-Upper" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Data-Crude-CI-Lower").click(function() {
+            $( "#explore-cancer-__0__-Data-Crude-CI-Lower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Data-Sex").click(function() {
+            $( "#explore-cancer-__0__-Data-Sex" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Data-Race").click(function() {
+            $( "#explore-cancer-__0__-Data-Race" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Data-Event-Type").click(function() {
+            $( "#explore-cancer-__0__-Data-Event-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-cancer-__0__-Data-Population").click(function() {
+            $( "#explore-cancer-__0__-Data-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+
+</div>

@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Food Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <img class="img-rounded pull-right" src="food.png" alt="Food" style="max-width: 128px; max-height: 128px;">
+        
+        <h1>Food Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Ryan Whitcomb</span><br>
+        <span class="text-muted">Version 1, created 6/21/2016</span><br>
+        <span class="text-muted">Tags: food, vitamins, minerals, health, nutrition</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_reports'>get_reports</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    The following data comes from the United States Department of Agriculture's Food Composition Database.  It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages.  The food covered spans a large variety of foods from butter to Campbell's soup.            
+
+    </p>
+    
+    
+    <p>
+    <i>https://ndb.nal.usda.gov/</i>
+    </p>
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="food.py?forcedownload=1" download="food.py" target="_blank">
+            <strong>food.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="food.db?forcedownload=1" download="food.db" target="_blank">
+            <strong>food.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 1 function you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">food</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">food</span><span class="o">.</span><span class="n">get_reports</span><span class="p">()</span>
+</pre></div>
+
+
+
+
+    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">food</span>
+<span class="c"># These may be slow!</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">food</span><span class="o">.</span><span class="n">get_reports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_reports'>food.get_reports(test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns food reports from the dataset.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-food'>Explore food data</button>
+    </div>
+    
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-food").click(function() {
+        $( "#explore-food" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-food' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-food-__0__").click(function() {
+            $( "#explore-food-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-food-__0__' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Category"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"BUTTER"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Description"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"BUTTER,WITH SALT"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Nutrient Data Bank Number"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1001</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food-__0__-Category").click(function() {
+            $( "#explore-food-__0__-Category" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data").click(function() {
+            $( "#explore-food-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Description").click(function() {
+            $( "#explore-food-__0__-Description" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Nutrient-Data-Bank-Number").click(function() {
+            $( "#explore-food-__0__-Nutrient-Data-Bank-Number" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food-__0__-Data-Fat' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Saturated Fat"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>51.368</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Monosaturated Fat"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>21.021</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total Lipid"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>81.11</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Polysaturated Fat"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.043</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food-__0__-Data-Fat" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food-__0__-Data-Fat-Saturated-Fat").click(function() {
+            $( "#explore-food-__0__-Data-Fat-Saturated-Fat" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Fat-Monosaturated-Fat").click(function() {
+            $( "#explore-food-__0__-Data-Fat-Monosaturated-Fat" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Fat-Total-Lipid").click(function() {
+            $( "#explore-food-__0__-Data-Fat-Total-Lipid" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Fat-Polysaturated-Fat").click(function() {
+            $( "#explore-food-__0__-Data-Fat-Polysaturated-Fat" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food-__0__-Data' title='Dictionary (26 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Niacin"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.042</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Major Minerals"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food-__0__-Data-Major-Minerals'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>In milligrams per 100 grams</td> </tr>
+            
+            <tr> <td><code>"Vitamins"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food-__0__-Data-Vitamins'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>In milligrams per 100 grams</td> </tr>
+            
+            <tr> <td><code>"Carboydrate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.06</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Selenium"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Thiamin"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.005</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Choline"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>19</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Beta Carotene"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>158</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Fiber"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Refuse Percentage"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Fat"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food-__0__-Data-Fat'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Water"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>15.87</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Lycopene"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Pantothenic Acid"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.11</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Ash"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>2.11</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Alpha Carotene"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Retinol"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>671</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Manganese"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Beta Cryptoxanthin"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Riboflavin"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.034</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Cholesterol"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>215</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Lutein and Zeaxanthin"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Kilocalories"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>717</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Household Weights"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food-__0__-Data-Household-Weights'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Sugar Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.059999999</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Protein"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.85</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food-__0__-Data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food-__0__-Data-Niacin").click(function() {
+            $( "#explore-food-__0__-Data-Niacin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Major-Minerals").click(function() {
+            $( "#explore-food-__0__-Data-Major-Minerals" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Vitamins").click(function() {
+            $( "#explore-food-__0__-Data-Vitamins" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Carboydrate").click(function() {
+            $( "#explore-food-__0__-Data-Carboydrate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Selenium").click(function() {
+            $( "#explore-food-__0__-Data-Selenium" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Thiamin").click(function() {
+            $( "#explore-food-__0__-Data-Thiamin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Choline").click(function() {
+            $( "#explore-food-__0__-Data-Choline" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Beta-Carotene").click(function() {
+            $( "#explore-food-__0__-Data-Beta-Carotene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Fiber").click(function() {
+            $( "#explore-food-__0__-Data-Fiber" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Refuse-Percentage").click(function() {
+            $( "#explore-food-__0__-Data-Refuse-Percentage" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Fat").click(function() {
+            $( "#explore-food-__0__-Data-Fat" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Water").click(function() {
+            $( "#explore-food-__0__-Data-Water" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Lycopene").click(function() {
+            $( "#explore-food-__0__-Data-Lycopene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Pantothenic-Acid").click(function() {
+            $( "#explore-food-__0__-Data-Pantothenic-Acid" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Ash").click(function() {
+            $( "#explore-food-__0__-Data-Ash" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Alpha-Carotene").click(function() {
+            $( "#explore-food-__0__-Data-Alpha-Carotene" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Retinol").click(function() {
+            $( "#explore-food-__0__-Data-Retinol" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Manganese").click(function() {
+            $( "#explore-food-__0__-Data-Manganese" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Beta-Cryptoxanthin").click(function() {
+            $( "#explore-food-__0__-Data-Beta-Cryptoxanthin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Riboflavin").click(function() {
+            $( "#explore-food-__0__-Data-Riboflavin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Cholesterol").click(function() {
+            $( "#explore-food-__0__-Data-Cholesterol" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Lutein-and-Zeaxanthin").click(function() {
+            $( "#explore-food-__0__-Data-Lutein-and-Zeaxanthin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Kilocalories").click(function() {
+            $( "#explore-food-__0__-Data-Kilocalories" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Household-Weights").click(function() {
+            $( "#explore-food-__0__-Data-Household-Weights" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Sugar-Total").click(function() {
+            $( "#explore-food-__0__-Data-Sugar-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Protein").click(function() {
+            $( "#explore-food-__0__-Data-Protein" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food-__0__-Data-Vitamins' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Vitamin A - IU"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2499</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Vitamin C"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Vitamin B12"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.17</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Vitamin B6"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.003</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Vitamin A - RAE"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>684</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Vitamin E"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>2.32</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Vitamin K"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>7.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food-__0__-Data-Vitamins" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food-__0__-Data-Vitamins-Vitamin-A---IU").click(function() {
+            $( "#explore-food-__0__-Data-Vitamins-Vitamin-A---IU" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Vitamins-Vitamin-C").click(function() {
+            $( "#explore-food-__0__-Data-Vitamins-Vitamin-C" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Vitamins-Vitamin-B12").click(function() {
+            $( "#explore-food-__0__-Data-Vitamins-Vitamin-B12" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Vitamins-Vitamin-B6").click(function() {
+            $( "#explore-food-__0__-Data-Vitamins-Vitamin-B6" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Vitamins-Vitamin-A---RAE").click(function() {
+            $( "#explore-food-__0__-Data-Vitamins-Vitamin-A---RAE" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Vitamins-Vitamin-E").click(function() {
+            $( "#explore-food-__0__-Data-Vitamins-Vitamin-E" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Vitamins-Vitamin-K").click(function() {
+            $( "#explore-food-__0__-Data-Vitamins-Vitamin-K" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food-__0__-Data-Major-Minerals' title='Dictionary (8 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Copper"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Iron"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.02</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Sodium"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>576</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Potassium"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>24</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Calcium"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>24</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Magnesium"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Zinc"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.09</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Phosphorus"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>24</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food-__0__-Data-Major-Minerals" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food-__0__-Data-Major-Minerals-Copper").click(function() {
+            $( "#explore-food-__0__-Data-Major-Minerals-Copper" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Major-Minerals-Iron").click(function() {
+            $( "#explore-food-__0__-Data-Major-Minerals-Iron" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Major-Minerals-Sodium").click(function() {
+            $( "#explore-food-__0__-Data-Major-Minerals-Sodium" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Major-Minerals-Potassium").click(function() {
+            $( "#explore-food-__0__-Data-Major-Minerals-Potassium" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Major-Minerals-Calcium").click(function() {
+            $( "#explore-food-__0__-Data-Major-Minerals-Calcium" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Major-Minerals-Magnesium").click(function() {
+            $( "#explore-food-__0__-Data-Major-Minerals-Magnesium" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Major-Minerals-Zinc").click(function() {
+            $( "#explore-food-__0__-Data-Major-Minerals-Zinc" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Major-Minerals-Phosphorus").click(function() {
+            $( "#explore-food-__0__-Data-Major-Minerals-Phosphorus" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food-__0__-Data-Household-Weights' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"1st Household Weight Description"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1 cup"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1st Household Weight"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>227.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"2nd Household Weight"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>14</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"2nd Household Weight Description"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1 tbsp"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food-__0__-Data-Household-Weights" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food-__0__-Data-Household-Weights-1st-Household-Weight-Description").click(function() {
+            $( "#explore-food-__0__-Data-Household-Weights-1st-Household-Weight-Description" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Household-Weights-1st-Household-Weight").click(function() {
+            $( "#explore-food-__0__-Data-Household-Weights-1st-Household-Weight" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Household-Weights-2nd-Household-Weight").click(function() {
+            $( "#explore-food-__0__-Data-Household-Weights-2nd-Household-Weight" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food-__0__-Data-Household-Weights-2nd-Household-Weight-Description").click(function() {
+            $( "#explore-food-__0__-Data-Household-Weights-2nd-Household-Weight-Description" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+
+</div>

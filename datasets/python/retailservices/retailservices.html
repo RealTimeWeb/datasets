@@ -1,126 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-  
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Retail Services Library (CORGIS Datasets Project)</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"><link>-->
-    
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    
-    <style>
-    .highlight  { background: #2B2B2B; color: #E6E1DC}
-    .highlight .hll { background-color: #ffffcc }
-    .highlight .c { color: #BC9458; font-style: italic} /* Comment */
-    .highlight .err { color: #E6E1DC} /* Error */
-    /*.highlight .g { color: #E6E1DC} /* Generic */
-    .highlight .k { color: #CC7833} /* Keyword */
-    /*.highlight .l { color: #E6E1DC} /* Literal */
-    /*.highlight .n { color: #E6E1DC} /* Name */
-    /*.highlight .o { color: #E6E1DC} /* Operator */
-    /*.highlight .x { color: #E6E1DC} /* Other */
-    /*.highlight .p { color: #E6E1DC} /* Punctuation */
-    /*.highlight .cm { color: #BC9458; font-style: italic} /* Comment.Multiline */
-    /*.highlight .cp { color: #CC7833} /* Comment.Preproc */
-    /*.highlight .c1 { color: #BC9458; font-style: italic} /* Comment.Single */
-    /*.highlight .cs { color: #BC9458; font-style: italic} /* Comment.Special */
-    /*.highlight .gd { color: #E6E1DC; background-color: #660000 } /* Generic.Deleted */
-    /*.highlight .ge { color: #E6E1DC} /* Generic.Emph */
-    /*.highlight .gr { color: #FFFFFF; background-color: #990000 } /* Generic.Error */
-    /*.highlight .gh { color: #FFFFFF} /* Generic.Heading */
-    /*.highlight .gi { color: #E6E1DC; background-color: #144212 } /* Generic.Inserted */
-    /*.highlight .go { color: #E6E1DC} /* Generic.Output */
-    /*.highlight .gp { color: #E6E1DC} /* Generic.Prompt */
-    /*.highlight .gs { color: #E6E1DC} /* Generic.Strong */
-    /*.highlight .gu { color: #FFFFFF} /* Generic.Subheading */
-    /*.highlight .gt { color: #E6E1DC} /* Generic.Traceback */
-    /*.highlight .kc { color: #CC7833} /* Keyword.Constant */
-    /*.highlight .kd { color: #CC7833} /* Keyword.Declaration */
-    .highlight .kn { color: #CC7833; font-weight: bold} /* Keyword.Namespace */
-    /*.highlight .kp { color: #CC7833} /* Keyword.Pseudo */
-    /*.highlight .kr { color: #CC7833} /* Keyword.Reserved */
-    /*.highlight .kt { color: #DA4939} /* Keyword.Type */
-    /*.highlight .ld { color: #E6E1DC} /* Literal.Date */
-    /*.highlight .m { color: #A5C261} /* Literal.Number */
-    .highlight .s { color: #A5C261} /* Literal.String */
-    /*.highlight .na { color: #FFC66D} /* Name.Attribute */
-    /*.highlight .nb { color: #E6E1DC} /* Name.Builtin */
-    /*.highlight .nc { color: #E6E1DC} /* Name.Class */
-    /*.highlight .no { color: #6D9CBE} /* Name.Constant */
-    /*.highlight .nd { color: #E6E1DC} /* Name.Decorator */
-    /*.highlight .ni { color: #E6E1DC} /* Name.Entity */
-    /*.highlight .ne { color: #E6E1DC} /* Name.Exception */
-    /*.highlight .nf { color: #FFC66D} /* Name.Function */
-    /*.highlight .nl { color: #E6E1DC} /* Name.Label */
-    /*.highlight .nn { color: #E6E1DC} /* Name.Namespace */
-    /*.highlight .nx { color: #E6E1DC} /* Name.Other */
-    /*.highlight .py { color: #E6E1DC} /* Name.Property */
-    /*.highlight .nt { color: #CC7833} /* Name.Tag */
-    /*.highlight .nv { color: #D0D0FF} /* Name.Variable */
-    /*.highlight .ow { color: #E6E1DC} /* Operator.Word */
-    /*.highlight .w { color: #E6E1DC} /* Text.Whitespace */
-    /*.highlight .mf { color: #A5C261} /* Literal.Number.Float */
-    /*.highlight .mh { color: #A5C261} /* Literal.Number.Hex */
-    /*.highlight .mi { color: #A5C261} /* Literal.Number.Integer */
-    /*.highlight .mo { color: #A5C261} /* Literal.Number.Oct */
-    /*.highlight .sb { color: #A5C261} /* Literal.String.Backtick */
-    /*.highlight .sc { color: #A5C261} /* Literal.String.Char */
-    /*.highlight .sd { color: #A5C261} /* Literal.String.Doc */
-    /*.highlight .s2 { color: #A5C261} /* Literal.String.Double */
-    /*.highlight .se { color: #A5C261} /* Literal.String.Escape */
-    /*.highlight .sh { color: #A5C261} /* Literal.String.Heredoc */
-    /*.highlight .si { color: #A5C261} /* Literal.String.Interpol */
-    /*.highlight .sx { color: #A5C261} /* Literal.String.Other */
-    /*.highlight .sr { color: #A5C261} /* Literal.String.Regex */
-    /*.highlight .s1 { color: #A5C261} /* Literal.String.Single */
-    /*.highlight .ss { color: #A5C261} /* Literal.String.Symbol */
-    /*.highlight .bp { color: #E6E1DC} /* Name.Builtin.Pseudo */
-    /*.highlight .vc { color: #D0D0FF} /* Name.Variable.Class */
-    /*.highlight .vg { color: #D0D0FF} /* Name.Variable.Global */
-    /*.highlight .vi { color: #D0D0FF} /* Name.Variable.Instance */
-    /*.highlight .il { color: #A5C261} /* Literal.Number.Integer.Long */
-    </style>
-    
-    <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
-    $(document).ready(function() {
-        log('load', 'Retail Services');
-        function doPoll(){  
-            log('remain', 'Retail Services, '+$(document).scrollTop()+", "+$(document).height());
-        }
-        setInterval(doPoll, 5000);
-    });
-    </script>
-
-</head>
-
-<body>
-
-<div class="container">
 
     <div class="page-header">
         
@@ -225,7 +102,2198 @@ Returns sales, inventory, and ratio data for every month.
 </div>
 
 
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-retailservices'>Explore retailservices data</button>
+    </div>
     
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-retailservices").click(function() {
+        $( "#explore-retailservices" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-retailservices' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-retailservices-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-retailservices" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-retailservices-__0__").click(function() {
+            $( "#explore-retailservices-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-retailservices-__0__-data-ratio' title='Dictionary (65 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"floor covering stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"automotive parts, acc., and tire stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"department stores (excl. l.d.)"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.28</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"limited service eating places"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"gift, novelty, and souvenir stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"building mat. and garden equip. and supplies dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>2.18</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"furniture and home furnishings stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"miscellaneous store retailers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sporting goods stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"family clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"drinking places"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"other general merchandise stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"home furnishings stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hardware stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"auto and other motor vehicles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"food and beverage stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.91</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"men's clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sporting goods, hobby, book, and music stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"furniture, home furn, electronics, and appliance stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1.95</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"gasoline stations"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"other clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"office supplies, stationery, and gift stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"office supplies and stationery stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"general merchandise stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>2.92</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"motor vehicle and parts dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>2.1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"new car dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"department stores (excl. discount department stores)"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"radio, t.v., and other elect. stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"department stores (incl. l.d.)"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"warehouse clubs and superstores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"electronics and appliance stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"food services and drinking places"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"health and personal care stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"pharmacies and drug stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"household appliance stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail trade"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1.8</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"beer, wine, and liquor stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"fuel dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"shoe stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"all other gen. merchandise stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail trade, ex auto"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1.71</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"clothing and clothing access. stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.26</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail trade and food services, ex auto"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"supermarkets and other grocery (except convenience) stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"book stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"building mat. and supplies dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"appl., tv, and other elect. stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"furniture stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"gafo"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"electronic shopping and mail-order houses"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"used car dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"automobile dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"used merchandise stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hobby, toy, and game stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"full service restaurants"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"discount dept. stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"all other home furnishings stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail trade and food services"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"paint and wallpaper stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"women's clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"grocery stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"nonstore retailers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"jewelry stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"computer and software stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-retailservices-__0__-data-ratio" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-floor-covering-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-floor-covering-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-automotive-parts,-acc-,-and-tire-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-automotive-parts,-acc-,-and-tire-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-department-stores-(excl--l-d-)").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-department-stores-(excl--l-d-)" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-limited-service-eating-places").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-limited-service-eating-places" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-gift,-novelty,-and-souvenir-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-gift,-novelty,-and-souvenir-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-building-mat--and-garden-equip--and-supplies-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-building-mat--and-garden-equip--and-supplies-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-furniture-and-home-furnishings-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-furniture-and-home-furnishings-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-miscellaneous-store-retailers").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-miscellaneous-store-retailers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-sporting-goods-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-sporting-goods-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-family-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-family-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-drinking-places").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-drinking-places" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-other-general-merchandise-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-other-general-merchandise-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-home-furnishings-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-home-furnishings-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-hardware-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-hardware-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-auto-and-other-motor-vehicles").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-auto-and-other-motor-vehicles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-food-and-beverage-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-food-and-beverage-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-men_s-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-men_s-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-sporting-goods,-hobby,-book,-and-music-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-sporting-goods,-hobby,-book,-and-music-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-furniture,-home-furn,-electronics,-and-appliance-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-furniture,-home-furn,-electronics,-and-appliance-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-gasoline-stations").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-gasoline-stations" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-other-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-other-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-office-supplies,-stationery,-and-gift-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-office-supplies,-stationery,-and-gift-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-office-supplies-and-stationery-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-office-supplies-and-stationery-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-general-merchandise-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-general-merchandise-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-motor-vehicle-and-parts-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-motor-vehicle-and-parts-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-new-car-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-new-car-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-department-stores-(excl--discount-department-stores)").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-department-stores-(excl--discount-department-stores)" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-radio,-t-v-,-and-other-elect--stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-radio,-t-v-,-and-other-elect--stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-department-stores-(incl--l-d-)").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-department-stores-(incl--l-d-)" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-warehouse-clubs-and-superstores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-warehouse-clubs-and-superstores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-electronics-and-appliance-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-electronics-and-appliance-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-food-services-and-drinking-places").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-food-services-and-drinking-places" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-health-and-personal-care-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-health-and-personal-care-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-pharmacies-and-drug-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-pharmacies-and-drug-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-household-appliance-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-household-appliance-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-retail-trade").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-retail-trade" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-beer,-wine,-and-liquor-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-beer,-wine,-and-liquor-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-fuel-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-fuel-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-shoe-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-shoe-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-all-other-gen--merchandise-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-all-other-gen--merchandise-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-retail-trade,-ex-auto").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-retail-trade,-ex-auto" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-clothing-and-clothing-access--stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-clothing-and-clothing-access--stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-retail-trade-and-food-services,-ex-auto").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-retail-trade-and-food-services,-ex-auto" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-supermarkets-and-other-grocery-(except-convenience)-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-supermarkets-and-other-grocery-(except-convenience)-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-book-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-book-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-building-mat--and-supplies-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-building-mat--and-supplies-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-appl-,-tv,-and-other-elect--stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-appl-,-tv,-and-other-elect--stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-furniture-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-furniture-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-gafo").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-gafo" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-electronic-shopping-and-mail-order-houses").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-electronic-shopping-and-mail-order-houses" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-used-car-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-used-car-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-automobile-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-automobile-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-used-merchandise-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-used-merchandise-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-hobby,-toy,-and-game-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-hobby,-toy,-and-game-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-full-service-restaurants").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-full-service-restaurants" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-discount-dept--stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-discount-dept--stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-all-other-home-furnishings-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-all-other-home-furnishings-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-retail-trade-and-food-services").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-retail-trade-and-food-services" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-paint-and-wallpaper-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-paint-and-wallpaper-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-women_s-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-women_s-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-grocery-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-grocery-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-nonstore-retailers").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-nonstore-retailers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-jewelry-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-jewelry-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio-computer-and-software-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio-computer-and-software-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-retailservices-__0__-time' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"month name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Jan"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"index"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"period"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Jan1992"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1992</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-retailservices-__0__-time" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-retailservices-__0__-time-month-name").click(function() {
+            $( "#explore-retailservices-__0__-time-month-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-time-month").click(function() {
+            $( "#explore-retailservices-__0__-time-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-time-index").click(function() {
+            $( "#explore-retailservices-__0__-time-index" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-time-period").click(function() {
+            $( "#explore-retailservices-__0__-time-period" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-time-year").click(function() {
+            $( "#explore-retailservices-__0__-time-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-retailservices-__0__-data-inventories' title='Dictionary (65 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"floor covering stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"automotive parts, acc., and tire stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"department stores (excl. l.d.)"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>33798</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"limited service eating places"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"gift, novelty, and souvenir stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"building mat. and garden equip. and supplies dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>19545</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"furniture and home furnishings stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"miscellaneous store retailers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sporting goods stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"family clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"drinking places"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"other general merchandise stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"home furnishings stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hardware stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"auto and other motor vehicles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"food and beverage stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>26963</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"men's clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sporting goods, hobby, book, and music stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"furniture, home furn, electronics, and appliance stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>13850</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"gasoline stations"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"other clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"office supplies, stationery, and gift stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"office supplies and stationery stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"general merchandise stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>43750</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"motor vehicle and parts dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>62619</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"new car dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"department stores (excl. discount department stores)"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"radio, t.v., and other elect. stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"department stores (incl. l.d.)"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"warehouse clubs and superstores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"electronics and appliance stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"food services and drinking places"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"health and personal care stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"pharmacies and drug stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"household appliance stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail trade"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>235509</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"beer, wine, and liquor stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"fuel dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"shoe stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"all other gen. merchandise stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail trade, ex auto"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>172890</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"clothing and clothing access. stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>22622</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail trade and food services, ex auto"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"supermarkets and other grocery (except convenience) stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"book stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"building mat. and supplies dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"appl., tv, and other elect. stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"furniture stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"gafo"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"electronic shopping and mail-order houses"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"used car dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"automobile dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"used merchandise stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hobby, toy, and game stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"full service restaurants"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"discount dept. stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"all other home furnishings stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail trade and food services"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"paint and wallpaper stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"women's clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"grocery stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"nonstore retailers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"jewelry stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"computer and software stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-retailservices-__0__-data-inventories" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-floor-covering-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-floor-covering-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-automotive-parts,-acc-,-and-tire-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-automotive-parts,-acc-,-and-tire-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-department-stores-(excl--l-d-)").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-department-stores-(excl--l-d-)" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-limited-service-eating-places").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-limited-service-eating-places" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-gift,-novelty,-and-souvenir-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-gift,-novelty,-and-souvenir-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-building-mat--and-garden-equip--and-supplies-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-building-mat--and-garden-equip--and-supplies-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-furniture-and-home-furnishings-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-furniture-and-home-furnishings-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-miscellaneous-store-retailers").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-miscellaneous-store-retailers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-sporting-goods-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-sporting-goods-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-family-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-family-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-drinking-places").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-drinking-places" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-other-general-merchandise-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-other-general-merchandise-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-home-furnishings-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-home-furnishings-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-hardware-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-hardware-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-auto-and-other-motor-vehicles").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-auto-and-other-motor-vehicles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-food-and-beverage-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-food-and-beverage-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-men_s-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-men_s-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-sporting-goods,-hobby,-book,-and-music-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-sporting-goods,-hobby,-book,-and-music-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-furniture,-home-furn,-electronics,-and-appliance-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-furniture,-home-furn,-electronics,-and-appliance-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-gasoline-stations").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-gasoline-stations" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-other-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-other-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-office-supplies,-stationery,-and-gift-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-office-supplies,-stationery,-and-gift-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-office-supplies-and-stationery-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-office-supplies-and-stationery-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-general-merchandise-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-general-merchandise-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-motor-vehicle-and-parts-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-motor-vehicle-and-parts-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-new-car-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-new-car-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-department-stores-(excl--discount-department-stores)").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-department-stores-(excl--discount-department-stores)" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-radio,-t-v-,-and-other-elect--stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-radio,-t-v-,-and-other-elect--stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-department-stores-(incl--l-d-)").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-department-stores-(incl--l-d-)" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-warehouse-clubs-and-superstores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-warehouse-clubs-and-superstores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-electronics-and-appliance-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-electronics-and-appliance-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-food-services-and-drinking-places").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-food-services-and-drinking-places" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-health-and-personal-care-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-health-and-personal-care-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-pharmacies-and-drug-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-pharmacies-and-drug-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-household-appliance-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-household-appliance-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-retail-trade").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-retail-trade" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-beer,-wine,-and-liquor-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-beer,-wine,-and-liquor-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-fuel-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-fuel-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-shoe-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-shoe-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-all-other-gen--merchandise-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-all-other-gen--merchandise-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-retail-trade,-ex-auto").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-retail-trade,-ex-auto" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-clothing-and-clothing-access--stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-clothing-and-clothing-access--stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-retail-trade-and-food-services,-ex-auto").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-retail-trade-and-food-services,-ex-auto" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-supermarkets-and-other-grocery-(except-convenience)-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-supermarkets-and-other-grocery-(except-convenience)-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-book-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-book-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-building-mat--and-supplies-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-building-mat--and-supplies-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-appl-,-tv,-and-other-elect--stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-appl-,-tv,-and-other-elect--stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-furniture-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-furniture-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-gafo").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-gafo" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-electronic-shopping-and-mail-order-houses").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-electronic-shopping-and-mail-order-houses" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-used-car-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-used-car-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-automobile-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-automobile-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-used-merchandise-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-used-merchandise-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-hobby,-toy,-and-game-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-hobby,-toy,-and-game-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-full-service-restaurants").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-full-service-restaurants" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-discount-dept--stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-discount-dept--stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-all-other-home-furnishings-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-all-other-home-furnishings-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-retail-trade-and-food-services").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-retail-trade-and-food-services" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-paint-and-wallpaper-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-paint-and-wallpaper-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-women_s-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-women_s-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-grocery-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-grocery-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-nonstore-retailers").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-nonstore-retailers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-jewelry-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-jewelry-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories-computer-and-software-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories-computer-and-software-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-retailservices-__0__-data' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"inventories"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-retailservices-__0__-data-inventories'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ratio"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-retailservices-__0__-data-ratio'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sales"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-retailservices-__0__-data-sales'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-retailservices-__0__-data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-inventories").click(function() {
+            $( "#explore-retailservices-__0__-data-inventories" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-ratio").click(function() {
+            $( "#explore-retailservices-__0__-data-ratio" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales").click(function() {
+            $( "#explore-retailservices-__0__-data-sales" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-retailservices-__0__' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-retailservices-__0__-data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>Numbers represent millions of dollars</td> </tr>
+            
+            <tr> <td><code>"time"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-retailservices-__0__-time'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-retailservices-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-retailservices-__0__-data").click(function() {
+            $( "#explore-retailservices-__0__-data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-time").click(function() {
+            $( "#explore-retailservices-__0__-time" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-retailservices-__0__-data-sales' title='Dictionary (65 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"floor covering stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>728</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"automotive parts, acc., and tire stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3023</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"department stores (excl. l.d.)"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>10306</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"limited service eating places"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6438</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"gift, novelty, and souvenir stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>658</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"building mat. and garden equip. and supplies dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8964</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"furniture and home furnishings stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3846</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"miscellaneous store retailers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3642</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sporting goods stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>972</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"family clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1649</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"drinking places"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1049</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"other general merchandise stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4690</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"home furnishings stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1454</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hardware stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>842</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"auto and other motor vehicles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>26788</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"food and beverage stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>29589</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"men's clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>701</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sporting goods, hobby, book, and music stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3439</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"furniture, home furn, electronics, and appliance stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>7087</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"gasoline stations"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>12099</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"other clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"office supplies, stationery, and gift stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1446</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"office supplies and stationery stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>788</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"general merchandise stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>14996</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"motor vehicle and parts dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>29811</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"new car dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>24056</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"department stores (excl. discount department stores)"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4959</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"radio, t.v., and other elect. stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1541</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"department stores (incl. l.d.)"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>10560</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"warehouse clubs and superstores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2579</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"electronics and appliance stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3241</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"food services and drinking places"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>15693</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"health and personal care stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>7258</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"pharmacies and drug stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6358</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"household appliance stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>601</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail trade"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>130683</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"beer, wine, and liquor stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1509</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"fuel dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1916</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"shoe stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1206</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"all other gen. merchandise stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2111</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail trade, ex auto"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>100872</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"clothing and clothing access. stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6938</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail trade and food services, ex auto"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>116565</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"supermarkets and other grocery (except convenience) stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"book stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>790</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"building mat. and supplies dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>7637</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"appl., tv, and other elect. stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2142</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"furniture stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2392</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"gafo"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>33906</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"electronic shopping and mail-order houses"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2692</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4852</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"used car dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1744</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"automobile dealers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>25800</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"used merchandise stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>371</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hobby, toy, and game stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>620</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"full service restaurants"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6887</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"discount dept. stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>5601</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"all other home furnishings stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"retail trade and food services"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>146376</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"paint and wallpaper stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"women's clothing stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1873</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"grocery stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>27306</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"nonstore retailers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6860</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"jewelry stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>796</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"computer and software stores"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>933</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-retailservices-__0__-data-sales" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-floor-covering-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-floor-covering-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-automotive-parts,-acc-,-and-tire-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-automotive-parts,-acc-,-and-tire-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-department-stores-(excl--l-d-)").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-department-stores-(excl--l-d-)" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-limited-service-eating-places").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-limited-service-eating-places" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-gift,-novelty,-and-souvenir-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-gift,-novelty,-and-souvenir-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-building-mat--and-garden-equip--and-supplies-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-building-mat--and-garden-equip--and-supplies-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-furniture-and-home-furnishings-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-furniture-and-home-furnishings-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-miscellaneous-store-retailers").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-miscellaneous-store-retailers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-sporting-goods-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-sporting-goods-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-family-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-family-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-drinking-places").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-drinking-places" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-other-general-merchandise-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-other-general-merchandise-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-home-furnishings-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-home-furnishings-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-hardware-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-hardware-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-auto-and-other-motor-vehicles").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-auto-and-other-motor-vehicles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-food-and-beverage-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-food-and-beverage-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-men_s-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-men_s-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-sporting-goods,-hobby,-book,-and-music-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-sporting-goods,-hobby,-book,-and-music-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-furniture,-home-furn,-electronics,-and-appliance-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-furniture,-home-furn,-electronics,-and-appliance-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-gasoline-stations").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-gasoline-stations" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-other-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-other-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-office-supplies,-stationery,-and-gift-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-office-supplies,-stationery,-and-gift-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-office-supplies-and-stationery-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-office-supplies-and-stationery-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-general-merchandise-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-general-merchandise-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-motor-vehicle-and-parts-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-motor-vehicle-and-parts-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-new-car-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-new-car-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-department-stores-(excl--discount-department-stores)").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-department-stores-(excl--discount-department-stores)" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-radio,-t-v-,-and-other-elect--stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-radio,-t-v-,-and-other-elect--stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-department-stores-(incl--l-d-)").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-department-stores-(incl--l-d-)" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-warehouse-clubs-and-superstores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-warehouse-clubs-and-superstores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-electronics-and-appliance-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-electronics-and-appliance-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-food-services-and-drinking-places").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-food-services-and-drinking-places" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-health-and-personal-care-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-health-and-personal-care-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-pharmacies-and-drug-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-pharmacies-and-drug-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-household-appliance-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-household-appliance-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-retail-trade").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-retail-trade" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-beer,-wine,-and-liquor-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-beer,-wine,-and-liquor-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-fuel-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-fuel-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-shoe-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-shoe-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-all-other-gen--merchandise-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-all-other-gen--merchandise-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-retail-trade,-ex-auto").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-retail-trade,-ex-auto" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-clothing-and-clothing-access--stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-clothing-and-clothing-access--stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-retail-trade-and-food-services,-ex-auto").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-retail-trade-and-food-services,-ex-auto" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-supermarkets-and-other-grocery-(except-convenience)-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-supermarkets-and-other-grocery-(except-convenience)-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-book-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-book-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-building-mat--and-supplies-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-building-mat--and-supplies-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-appl-,-tv,-and-other-elect--stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-appl-,-tv,-and-other-elect--stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-furniture-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-furniture-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-gafo").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-gafo" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-electronic-shopping-and-mail-order-houses").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-electronic-shopping-and-mail-order-houses" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-used-car-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-used-car-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-automobile-dealers").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-automobile-dealers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-used-merchandise-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-used-merchandise-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-hobby,-toy,-and-game-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-hobby,-toy,-and-game-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-full-service-restaurants").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-full-service-restaurants" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-discount-dept--stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-discount-dept--stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-all-other-home-furnishings-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-all-other-home-furnishings-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-retail-trade-and-food-services").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-retail-trade-and-food-services" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-paint-and-wallpaper-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-paint-and-wallpaper-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-women_s-clothing-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-women_s-clothing-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-grocery-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-grocery-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-nonstore-retailers").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-nonstore-retailers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-jewelry-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-jewelry-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-retailservices-__0__-data-sales-computer-and-software-stores").click(function() {
+            $( "#explore-retailservices-__0__-data-sales-computer-and-software-stores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
 
     
-</div>
+

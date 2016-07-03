@@ -1,3 +1,11 @@
+'''
+Hello student. Thank you for downloading a CORGIS library. However, you do not need to open this library. Instead you should use the following:
+
+    import businesses
+    
+If you opened the file because you are curious how this library works, then well done! We hope that you find it a useful learning experience. However, you should know that this code is meant to solve somewhat esoteric pedagogical problems, so it is often not best practices. 
+'''
+
 import sys as _sys
 import os as _os
 import json as _json
@@ -5,6 +13,9 @@ import sqlite3 as _sql
 import difflib as _difflib
 
 class _Constants(object):
+    '''
+    Global singleton object to hide some of the constants; some IDEs reveal internal module details very aggressively, and there's no other way to hide stuff.
+    '''
     _HEADER = {'User-Agent': 
               'CORGIS Businesses library for educational purposes'}
     _PYTHON_3 = _sys.version_info >= (3, 0)
@@ -231,7 +242,7 @@ def _test_interfaces():
     # Production test
     print("Production get_businesses_by_city")
     start_time = _default_timer()
-    result = get_businesses_by_city('blacksburg', test=False)
+    result = get_businesses_by_city("'blacksburg'", test=False)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -240,7 +251,7 @@ def _test_interfaces():
     # Test test
     print("Test get_businesses_by_city")
     start_time = _default_timer()
-    result = get_businesses_by_city('blacksburg')
+    result = get_businesses_by_city("'blacksburg'")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -250,7 +261,7 @@ def _test_interfaces():
     # Production test
     print("Production get_business_by_name")
     start_time = _default_timer()
-    result = get_business_by_name('subway', test=False)
+    result = get_business_by_name("'subway'", test=False)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -259,7 +270,7 @@ def _test_interfaces():
     # Test test
     print("Test get_business_by_name")
     start_time = _default_timer()
-    result = get_business_by_name('subway')
+    result = get_business_by_name("'subway'")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -288,7 +299,7 @@ def _test_interfaces():
     # Production test
     print("Production get_user_by_id")
     start_time = _default_timer()
-    result = get_user_by_id('UqNSytSc3hiYfKVCGwvLCg')
+    result = get_user_by_id("'UqNSytSc3hiYfKVCGwvLCg'")
     
     _pprint(result)
     

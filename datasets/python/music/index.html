@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Music Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <img class="img-rounded pull-right" src="music.png" alt="Music" style="max-width: 128px; max-height: 128px;">
+        
+        <h1>Music Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Ryan Whitcomb (<a href="mailto:rwhit94@vt.edu">rwhit94@vt.edu</a>)</span><br>
+        <span class="text-muted">Version 1, created 5-18-16</span><br>
+        <span class="text-muted">Tags: music, songs, artists, creativity, media</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_song_by_name'>get_song_by_name</a></li>
+        <li><a href='#get_songs_by_artist'>get_songs_by_artist</a></li>
+        <li><a href='#get_songs'>get_songs</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    This library comes from the Million Song Dataset, which used a company called the Echo Nest to derive data points about one million popular contemporary songs.  The Million Song Dataset is a collaboration between the Echo Nest and LabROSA, a laboratory working towards intelligent machine listening.  The project was also funded in part by the National Science Foundation of America (NSF) to provide a large data set to evaluate research related to algorithms on a commercial size while promoting further research into the Music Information Retrieval field.  The data contains standard information about the songs such as artist name, title, and year released.  Additionally, the data contains more advanced information; for example, the length of the song, how many musical bars long the song is, and how long the fade in to the song was.
+
+    </p>
+    
+    
+    <p>
+    <i>Thierry Bertin-Mahieux, Daniel P.W. Ellis, Brian Whitman, and Paul Lamere. <br> The Million Song Dataset. In Proceedings of the 12th International Society <br> for Music Information Retrieval Conference (ISMIR 2011), 2011.</i>
+    </p>
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="music.py?forcedownload=1" download="music.py" target="_blank">
+            <strong>music.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="music.db?forcedownload=1" download="music.db" target="_blank">
+            <strong>music.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 3 functions you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">music</span>
+<span class="n">a_music</span> <span class="o">=</span> <span class="n">music</span><span class="o">.</span><span class="n">get_song_by_name</span><span class="p">(</span><span class="s">&quot;I Didn&#39;t Mean To&quot;</span><span class="p">)</span>
+<span class="n">list_of_music</span> <span class="o">=</span> <span class="n">music</span><span class="o">.</span><span class="n">get_songs_by_artist</span><span class="p">(</span><span class="s">&quot;Aerosmith&quot;</span><span class="p">)</span>
+<span class="n">list_of_music</span> <span class="o">=</span> <span class="n">music</span><span class="o">.</span><span class="n">get_songs</span><span class="p">()</span>
+</pre></div>
+
+
+
+
+    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">music</span>
+<span class="c"># These may be slow!</span>
+<span class="n">list_of_music</span> <span class="o">=</span> <span class="n">music</span><span class="o">.</span><span class="n">get_songs_by_artist</span><span class="p">(</span><span class="s">&quot;Aerosmith&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_music</span> <span class="o">=</span> <span class="n">music</span><span class="o">.</span><span class="n">get_songs</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_song_by_name'>music.get_song_by_name(title)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Given the title of a song, returns information about the song.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>title</b>: <i>str</i></h5>
+    <p class="list-group-item-text">The title of the song.
+    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
+    </p>
+</li>
+
+
+</ul>
+
+</div>
+
+<h4 id='get_songs_by_artist'>music.get_songs_by_artist(artist, test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Given the name of an artist, returns all the songs by that artist in the database.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>artist</b>: <i>str</i></h5>
+    <p class="list-group-item-text">The name of the artist or band.
+    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
+    </p>
+</li>
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+<h4 id='get_songs'>music.get_songs(test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Gets a list of all the songs in the database.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-music'>Explore music data</button>
+    </div>
+    
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-music").click(function() {
+        $( "#explore-music" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-music' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-music-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-music" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-music-__0__").click(function() {
+            $( "#explore-music-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-music-__0__' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"release"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-music-__0__-release'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"artist"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-music-__0__-artist'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"song"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-music-__0__-song'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-music-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-music-__0__-release").click(function() {
+            $( "#explore-music-__0__-release" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist").click(function() {
+            $( "#explore-music-__0__-artist" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song").click(function() {
+            $( "#explore-music-__0__-song" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-music-__0__-artist' title='Dictionary (10 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"terms_freq"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"terms"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"hip hop"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Casual"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"familiarity"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.581793766</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"longitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>-63.9333578685</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ARD7TVE1187B99BFB1"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"location"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"California - LA"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"latitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>37.1573567501</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"similar"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ARV4KO21187FB38008"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hotttnesss"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.401997543</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-music-__0__-artist" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-music-__0__-artist-terms_freq").click(function() {
+            $( "#explore-music-__0__-artist-terms_freq" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist-terms").click(function() {
+            $( "#explore-music-__0__-artist-terms" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist-name").click(function() {
+            $( "#explore-music-__0__-artist-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist-familiarity").click(function() {
+            $( "#explore-music-__0__-artist-familiarity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist-longitude").click(function() {
+            $( "#explore-music-__0__-artist-longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist-id").click(function() {
+            $( "#explore-music-__0__-artist-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist-location").click(function() {
+            $( "#explore-music-__0__-artist-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist-latitude").click(function() {
+            $( "#explore-music-__0__-artist-latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist-similar").click(function() {
+            $( "#explore-music-__0__-artist-similar" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist-hotttnesss").click(function() {
+            $( "#explore-music-__0__-artist-hotttnesss" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-music-__0__-song' title='Dictionary (23 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"key"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"mode_confidence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.636</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"artist_mbtags_count"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"key_confidence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.736</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"tatums_start"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.28519</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"duration"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>218.93179</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"hotttnesss"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.60211999</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"beats_start"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.58521</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"time_signature_confidence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.778</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"title"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"I Didn't Mean To"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"bars_confidence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.643</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"SOMZWCG12A8C13C480"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"bars_start"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.58521</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"artist_mbtags"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"start_of_fade_out"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>218.932</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"tempo"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>92.198</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"end_of_fade_in"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.247</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"beats_confidence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.834</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"tatums_confidence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.779</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"mode"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"time_signature"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"loudness"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>-11.197</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-music-__0__-song" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-music-__0__-song-key").click(function() {
+            $( "#explore-music-__0__-song-key" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-mode_confidence").click(function() {
+            $( "#explore-music-__0__-song-mode_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-artist_mbtags_count").click(function() {
+            $( "#explore-music-__0__-song-artist_mbtags_count" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-key_confidence").click(function() {
+            $( "#explore-music-__0__-song-key_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-tatums_start").click(function() {
+            $( "#explore-music-__0__-song-tatums_start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-year").click(function() {
+            $( "#explore-music-__0__-song-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-duration").click(function() {
+            $( "#explore-music-__0__-song-duration" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-hotttnesss").click(function() {
+            $( "#explore-music-__0__-song-hotttnesss" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-beats_start").click(function() {
+            $( "#explore-music-__0__-song-beats_start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-time_signature_confidence").click(function() {
+            $( "#explore-music-__0__-song-time_signature_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-title").click(function() {
+            $( "#explore-music-__0__-song-title" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-bars_confidence").click(function() {
+            $( "#explore-music-__0__-song-bars_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-id").click(function() {
+            $( "#explore-music-__0__-song-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-bars_start").click(function() {
+            $( "#explore-music-__0__-song-bars_start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-artist_mbtags").click(function() {
+            $( "#explore-music-__0__-song-artist_mbtags" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-start_of_fade_out").click(function() {
+            $( "#explore-music-__0__-song-start_of_fade_out" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-tempo").click(function() {
+            $( "#explore-music-__0__-song-tempo" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-end_of_fade_in").click(function() {
+            $( "#explore-music-__0__-song-end_of_fade_in" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-beats_confidence").click(function() {
+            $( "#explore-music-__0__-song-beats_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-tatums_confidence").click(function() {
+            $( "#explore-music-__0__-song-tatums_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-mode").click(function() {
+            $( "#explore-music-__0__-song-mode" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-time_signature").click(function() {
+            $( "#explore-music-__0__-song-time_signature" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-song-loudness").click(function() {
+            $( "#explore-music-__0__-song-loudness" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-music-__0__-release' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>300848</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Fear Itself"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-music-__0__-release" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-music-__0__-release-id").click(function() {
+            $( "#explore-music-__0__-release-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-release-name").click(function() {
+            $( "#explore-music-__0__-release-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+
+</div>

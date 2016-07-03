@@ -16,7 +16,7 @@ local:
     row: script
     indexes:
       - name: title
-        jsonpath: data.title
+        jsonpath: scripts.[0].data.title
 interfaces:
   - name: get scripts
     returns: list[script]

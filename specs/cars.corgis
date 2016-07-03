@@ -14,9 +14,9 @@ local:
     row: car
     indexes:
       - name: year
-        jsonpath: year
+        jsonpath: cars.[0].year
       - name: make
-        jsonpath: Make
+        jsonpath: cars.[0].Make
 interfaces:
   - name: get cars
     returns: list[car]

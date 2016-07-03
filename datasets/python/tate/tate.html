@@ -1,126 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-  
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Tate Library (CORGIS Datasets Project)</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"><link>-->
-    
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    
-    <style>
-    .highlight  { background: #2B2B2B; color: #E6E1DC}
-    .highlight .hll { background-color: #ffffcc }
-    .highlight .c { color: #BC9458; font-style: italic} /* Comment */
-    .highlight .err { color: #E6E1DC} /* Error */
-    /*.highlight .g { color: #E6E1DC} /* Generic */
-    .highlight .k { color: #CC7833} /* Keyword */
-    /*.highlight .l { color: #E6E1DC} /* Literal */
-    /*.highlight .n { color: #E6E1DC} /* Name */
-    /*.highlight .o { color: #E6E1DC} /* Operator */
-    /*.highlight .x { color: #E6E1DC} /* Other */
-    /*.highlight .p { color: #E6E1DC} /* Punctuation */
-    /*.highlight .cm { color: #BC9458; font-style: italic} /* Comment.Multiline */
-    /*.highlight .cp { color: #CC7833} /* Comment.Preproc */
-    /*.highlight .c1 { color: #BC9458; font-style: italic} /* Comment.Single */
-    /*.highlight .cs { color: #BC9458; font-style: italic} /* Comment.Special */
-    /*.highlight .gd { color: #E6E1DC; background-color: #660000 } /* Generic.Deleted */
-    /*.highlight .ge { color: #E6E1DC} /* Generic.Emph */
-    /*.highlight .gr { color: #FFFFFF; background-color: #990000 } /* Generic.Error */
-    /*.highlight .gh { color: #FFFFFF} /* Generic.Heading */
-    /*.highlight .gi { color: #E6E1DC; background-color: #144212 } /* Generic.Inserted */
-    /*.highlight .go { color: #E6E1DC} /* Generic.Output */
-    /*.highlight .gp { color: #E6E1DC} /* Generic.Prompt */
-    /*.highlight .gs { color: #E6E1DC} /* Generic.Strong */
-    /*.highlight .gu { color: #FFFFFF} /* Generic.Subheading */
-    /*.highlight .gt { color: #E6E1DC} /* Generic.Traceback */
-    /*.highlight .kc { color: #CC7833} /* Keyword.Constant */
-    /*.highlight .kd { color: #CC7833} /* Keyword.Declaration */
-    .highlight .kn { color: #CC7833; font-weight: bold} /* Keyword.Namespace */
-    /*.highlight .kp { color: #CC7833} /* Keyword.Pseudo */
-    /*.highlight .kr { color: #CC7833} /* Keyword.Reserved */
-    /*.highlight .kt { color: #DA4939} /* Keyword.Type */
-    /*.highlight .ld { color: #E6E1DC} /* Literal.Date */
-    /*.highlight .m { color: #A5C261} /* Literal.Number */
-    .highlight .s { color: #A5C261} /* Literal.String */
-    /*.highlight .na { color: #FFC66D} /* Name.Attribute */
-    /*.highlight .nb { color: #E6E1DC} /* Name.Builtin */
-    /*.highlight .nc { color: #E6E1DC} /* Name.Class */
-    /*.highlight .no { color: #6D9CBE} /* Name.Constant */
-    /*.highlight .nd { color: #E6E1DC} /* Name.Decorator */
-    /*.highlight .ni { color: #E6E1DC} /* Name.Entity */
-    /*.highlight .ne { color: #E6E1DC} /* Name.Exception */
-    /*.highlight .nf { color: #FFC66D} /* Name.Function */
-    /*.highlight .nl { color: #E6E1DC} /* Name.Label */
-    /*.highlight .nn { color: #E6E1DC} /* Name.Namespace */
-    /*.highlight .nx { color: #E6E1DC} /* Name.Other */
-    /*.highlight .py { color: #E6E1DC} /* Name.Property */
-    /*.highlight .nt { color: #CC7833} /* Name.Tag */
-    /*.highlight .nv { color: #D0D0FF} /* Name.Variable */
-    /*.highlight .ow { color: #E6E1DC} /* Operator.Word */
-    /*.highlight .w { color: #E6E1DC} /* Text.Whitespace */
-    /*.highlight .mf { color: #A5C261} /* Literal.Number.Float */
-    /*.highlight .mh { color: #A5C261} /* Literal.Number.Hex */
-    /*.highlight .mi { color: #A5C261} /* Literal.Number.Integer */
-    /*.highlight .mo { color: #A5C261} /* Literal.Number.Oct */
-    /*.highlight .sb { color: #A5C261} /* Literal.String.Backtick */
-    /*.highlight .sc { color: #A5C261} /* Literal.String.Char */
-    /*.highlight .sd { color: #A5C261} /* Literal.String.Doc */
-    /*.highlight .s2 { color: #A5C261} /* Literal.String.Double */
-    /*.highlight .se { color: #A5C261} /* Literal.String.Escape */
-    /*.highlight .sh { color: #A5C261} /* Literal.String.Heredoc */
-    /*.highlight .si { color: #A5C261} /* Literal.String.Interpol */
-    /*.highlight .sx { color: #A5C261} /* Literal.String.Other */
-    /*.highlight .sr { color: #A5C261} /* Literal.String.Regex */
-    /*.highlight .s1 { color: #A5C261} /* Literal.String.Single */
-    /*.highlight .ss { color: #A5C261} /* Literal.String.Symbol */
-    /*.highlight .bp { color: #E6E1DC} /* Name.Builtin.Pseudo */
-    /*.highlight .vc { color: #D0D0FF} /* Name.Variable.Class */
-    /*.highlight .vg { color: #D0D0FF} /* Name.Variable.Global */
-    /*.highlight .vi { color: #D0D0FF} /* Name.Variable.Instance */
-    /*.highlight .il { color: #A5C261} /* Literal.Number.Integer.Long */
-    </style>
-    
-    <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
-    $(document).ready(function() {
-        log('load', 'Tate');
-        function doPoll(){  
-            log('remain', 'Tate, '+$(document).scrollTop()+", "+$(document).height());
-        }
-        setInterval(doPoll, 5000);
-    });
-    </script>
-
-</head>
-
-<body>
-
-<div class="container">
 
     <div class="page-header">
         
@@ -224,7 +101,404 @@ Returns a list of all the pieces of art in the Tate collection.
 </div>
 
 
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-tate'>Explore tate data</button>
+    </div>
     
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-tate").click(function() {
+        $( "#explore-tate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-tate' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-tate-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-tate" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-tate-__0__").click(function() {
+            $( "#explore-tate-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-tate-__0__-dimensions' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"units"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"width"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"depth"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"height"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-tate-__0__-dimensions" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-tate-__0__-dimensions-units").click(function() {
+            $( "#explore-tate-__0__-dimensions-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-dimensions-width").click(function() {
+            $( "#explore-tate-__0__-dimensions-width" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-dimensions-depth").click(function() {
+            $( "#explore-tate-__0__-dimensions-depth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-dimensions-height").click(function() {
+            $( "#explore-tate-__0__-dimensions-height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-tate-__0__' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"artist"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-tate-__0__-artist'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-tate-__0__-data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"dimensions"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-tate-__0__-dimensions'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"metadata"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-tate-__0__-metadata'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-tate-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-tate-__0__-artist").click(function() {
+            $( "#explore-tate-__0__-artist" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-data").click(function() {
+            $( "#explore-tate-__0__-data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-dimensions").click(function() {
+            $( "#explore-tate-__0__-dimensions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-metadata").click(function() {
+            $( "#explore-tate-__0__-metadata" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-tate-__0__-data' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"url"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"http://www.tate.org.uk/art/artworks/abakanowicz-backs-t12981"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"medium"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Burlap and resin"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"thumbnail"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"http://www.tate.org.uk/art/images/work/T/T12/T12981_8.jpg"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"title"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Backs"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-tate-__0__-data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-tate-__0__-data-url").click(function() {
+            $( "#explore-tate-__0__-data-url" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-data-medium").click(function() {
+            $( "#explore-tate-__0__-data-medium" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-data-thumbnail").click(function() {
+            $( "#explore-tate-__0__-data-thumbnail" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-data-title").click(function() {
+            $( "#explore-tate-__0__-data-title" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-tate-__0__-artist-death' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"location"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>""</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-tate-__0__-artist-death" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-tate-__0__-artist-death-location").click(function() {
+            $( "#explore-tate-__0__-artist-death-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-artist-death-year").click(function() {
+            $( "#explore-tate-__0__-artist-death-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-tate-__0__-artist' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"gender"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Female"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"death"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-tate-__0__-artist-death'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"role"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"artist"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Abakanowicz, Magdalena"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"birth"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-tate-__0__-artist-birth'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-tate-__0__-artist" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-tate-__0__-artist-gender").click(function() {
+            $( "#explore-tate-__0__-artist-gender" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-artist-death").click(function() {
+            $( "#explore-tate-__0__-artist-death" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-artist-role").click(function() {
+            $( "#explore-tate-__0__-artist-role" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-artist-name").click(function() {
+            $( "#explore-tate-__0__-artist-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-artist-birth").click(function() {
+            $( "#explore-tate-__0__-artist-birth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-tate-__0__-artist-birth' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"location"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Polska"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1930</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-tate-__0__-artist-birth" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-tate-__0__-artist-birth-location").click(function() {
+            $( "#explore-tate-__0__-artist-birth-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-artist-birth-year").click(function() {
+            $( "#explore-tate-__0__-artist-birth-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-tate-__0__-metadata' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"credit"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Presented anonymously 2009"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"acquisition date"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2009</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"creation year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1976</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-tate-__0__-metadata" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-tate-__0__-metadata-credit").click(function() {
+            $( "#explore-tate-__0__-metadata-credit" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-metadata-acquisition-date").click(function() {
+            $( "#explore-tate-__0__-metadata-acquisition-date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-metadata-creation-year").click(function() {
+            $( "#explore-tate-__0__-metadata-creation-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
 
     
-</div>
+

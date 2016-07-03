@@ -19,7 +19,7 @@ local:
     row: building
     indexes:
       - name: state
-        jsonpath: location.address.state
+        jsonpath: realestate.[0].location.address.state
 interfaces:
   - name: get buildings
     returns: list[building]
