@@ -125,6 +125,76 @@ def get_weather(test=True):
         return _Auxiliary._byteify(data)
         
 
+def get_weather_by_day(day, test=True):
+    """
+    Given a day, returns all the weather reports for that day in the database.
+    
+    :param day: The day to get reports.
+    :type day: Str
+    """
+    
+    # Match it against recommend values
+    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT report FROM weather").fetchall()]
+    if day.lower() not in potentials:
+        best_guesses = _difflib.get_close_matches(day, potentials)
+        if best_guesses:
+            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
+        else:
+            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
+    if _Constants._TEST or test:
+        rows = _Constants._DATABASE.execute("SELECT data FROM weather WHERE year=? LIMIT {hardware}".format(
+            hardware=_Constants._HARDWARE),
+            (day, ))
+        data = [r[0] for r in rows]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
+        
+        return _Auxiliary._byteify(data)
+        
+    else:
+        rows = _Constants._DATABASE.execute("SELECT data FROM weather WHERE year=?".format(
+            hardware=_Constants._HARDWARE),
+            (day, ))
+        data = [r[0] for r in rows]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
+        
+        return _Auxiliary._byteify(data)
+        
+
+def get_weather_by_city(city, test=True):
+    """
+    Given a city, returns all the weather reports for that city in the database.
+    
+    :param city: The city to get reports.
+    :type city: Str
+    """
+    
+    # Match it against recommend values
+    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT report FROM weather").fetchall()]
+    if city.lower() not in potentials:
+        best_guesses = _difflib.get_close_matches(city, potentials)
+        if best_guesses:
+            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
+        else:
+            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
+    if _Constants._TEST or test:
+        rows = _Constants._DATABASE.execute("SELECT data FROM weather WHERE year=? LIMIT {hardware}".format(
+            hardware=_Constants._HARDWARE),
+            (city, ))
+        data = [r[0] for r in rows]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
+        
+        return _Auxiliary._byteify(data)
+        
+    else:
+        rows = _Constants._DATABASE.execute("SELECT data FROM weather WHERE year=?".format(
+            hardware=_Constants._HARDWARE),
+            (city, ))
+        data = [r[0] for r in rows]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
+        
+        return _Auxiliary._byteify(data)
+        
+
 ################################################################################
 # Internalized testing code
 ################################################################################
@@ -145,6 +215,44 @@ def _test_interfaces():
     print("Test get_weather")
     start_time = _default_timer()
     result = get_weather()
+    
+    print("{} entries found.".format(len(result)))
+    _pprint(_Auxiliary._guess_schema(result))
+    
+    print("Time taken: {}".format(_default_timer() - start_time))
+    
+    # Production test
+    print("Production get_weather_by_day")
+    start_time = _default_timer()
+    result = get_weather_by_day("6-1-16", test=False)
+    
+    print("{} entries found.".format(len(result)))
+    _pprint(_Auxiliary._guess_schema(result))
+    
+    print("Time taken: {}".format(_default_timer() - start_time))
+    # Test test
+    print("Test get_weather_by_day")
+    start_time = _default_timer()
+    result = get_weather_by_day("6-1-16")
+    
+    print("{} entries found.".format(len(result)))
+    _pprint(_Auxiliary._guess_schema(result))
+    
+    print("Time taken: {}".format(_default_timer() - start_time))
+    
+    # Production test
+    print("Production get_weather_by_city")
+    start_time = _default_timer()
+    result = get_weather_by_city("Blacksburg", test=False)
+    
+    print("{} entries found.".format(len(result)))
+    _pprint(_Auxiliary._guess_schema(result))
+    
+    print("Time taken: {}".format(_default_timer() - start_time))
+    # Test test
+    print("Test get_weather_by_city")
+    start_time = _default_timer()
+    result = get_weather_by_city("Blacksburg")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))

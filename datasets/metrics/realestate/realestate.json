@@ -4,6 +4,13 @@
       "count": 6, 
       "average branching factor": 3
     }, 
+    "tags": [
+      "real", 
+      "estate", 
+      "buildings", 
+      "government", 
+      "building"
+    ], 
     "atomics": {
       "count": 18, 
       "nones": 0, 
@@ -23,6 +30,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 9315, 
+    "locals": 0, 
+    "size": 4461802
   }
 }

@@ -52,7 +52,7 @@ racket_types = {"str": "string",
 
 def parse_json_path(path, result="json_data"):
     elements = []
-    for keys in path.split("."):
+    for keys in path.split(".")[2:]:
         while keys:
             left, sep, keys = keys.partition("[")
             val, sep, keys = keys.partition("]")
@@ -219,7 +219,7 @@ env.filters['convert_builtin'] = convert_builtin
 env.filters['parse_bark'] = parse_bark
 
 def json_path(path, data):
-    entries = path.split(".")
+    entries = path.split(".")[2:]
     for entry in entries:
         if entry.startswith("["):
             entry = int(entry[1:-1])

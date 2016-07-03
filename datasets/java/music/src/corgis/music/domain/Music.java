@@ -1,5 +1,6 @@
 package corgis.music.domain;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -66,9 +67,9 @@ public class Music {
 	 * @return 
 	 */
     public Music(JSONObject json_data) {
-        try {
-            this.release = new Release((JSONObject)json_data.get("release"));
-            this.artist = new Artist((JSONObject)json_data.get("artist"));
+        try {// release
+            this.release = new Release((JSONObject)json_data.get("release"));// artist
+            this.artist = new Artist((JSONObject)json_data.get("artist"));// song
             this.song = new Song((JSONObject)json_data.get("song"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Music; a field was missing.");

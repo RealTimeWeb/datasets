@@ -4,6 +4,12 @@
       "count": 1, 
       "average branching factor": 11
     }, 
+    "tags": [
+      "broadway", 
+      "musical", 
+      "theatre", 
+      "tickets"
+    ], 
     "atomics": {
       "count": 11, 
       "nones": 0, 
@@ -23,6 +29,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 41750, 
+    "locals": 0, 
+    "size": 8457344
   }
 }

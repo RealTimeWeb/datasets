@@ -4,6 +4,24 @@
       "count": 10, 
       "average branching factor": 4
     }, 
+    "tags": [
+      "classics", 
+      "books", 
+      "texts", 
+      "text", 
+      "book", 
+      "classic", 
+      "english", 
+      "shakespeare", 
+      "literature", 
+      "novel", 
+      "language", 
+      "composition", 
+      "writing", 
+      "author", 
+      "publication", 
+      "words"
+    ], 
     "atomics": {
       "count": 38, 
       "nones": 0, 
@@ -23,6 +41,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 1006, 
+    "locals": 0, 
+    "size": 1360444
   }
 }

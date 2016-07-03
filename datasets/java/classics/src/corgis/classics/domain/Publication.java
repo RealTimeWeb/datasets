@@ -1,5 +1,6 @@
 package corgis.classics.domain;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -15,9 +16,9 @@ import org.json.simple.JSONObject;
  */
 public class Publication {
 	
-    private Integer month;
+    private String fullDate;
     private String monthName;
-    private String full;
+    private Integer month;
     private Integer day;
     private Integer year;
     
@@ -25,8 +26,8 @@ public class Publication {
     /*
      * @return 
      */
-    public Integer getMonth() {
-        return this.month;
+    public String getFullDate() {
+        return this.fullDate;
     }
     
     
@@ -43,8 +44,8 @@ public class Publication {
     /*
      * @return 
      */
-    public String getFull() {
-        return this.full;
+    public Integer getMonth() {
+        return this.month;
     }
     
     
@@ -74,7 +75,7 @@ public class Publication {
 	 * @return String
 	 */
 	public String toString() {
-		return "Publication[" +month+", "+monthName+", "+full+", "+day+", "+year+"]";
+		return "Publication[" +fullDate+", "+monthName+", "+month+", "+day+", "+year+"]";
 	}
 	
 	/**
@@ -83,12 +84,12 @@ public class Publication {
 	 * @return 
 	 */
     public Publication(JSONObject json_data) {
-        try {
-            this.month = (Integer)json_data.get("month");
-            this.monthName = (String)json_data.get("month name");
-            this.full = (String)json_data.get("full");
-            this.day = (Integer)json_data.get("day");
-            this.year = (Integer)json_data.get("year");
+        try {// Full Date
+            this.fullDate = (String)json_data.get("Full Date");// Month Name
+            this.monthName = (String)json_data.get("Month Name");// Month
+            this.month = new Integer(((Long)json_data.get("Month")).intValue());// Day
+            this.day = new Integer(((Long)json_data.get("Day")).intValue());// Year
+            this.year = new Integer(((Long)json_data.get("Year")).intValue());
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Publication; a field was missing.");
     		e.printStackTrace();

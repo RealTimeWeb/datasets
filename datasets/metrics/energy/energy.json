@@ -4,6 +4,15 @@
       "count": 6, 
       "average branching factor": 8
     }, 
+    "tags": [
+      "energy", 
+      "renewable", 
+      "united states", 
+      "us", 
+      "nuclear", 
+      "fossil fuels", 
+      "power"
+    ], 
     "atomics": {
       "count": 44, 
       "nones": 0, 
@@ -23,6 +32,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 66, 
+    "locals": 0, 
+    "size": 71292
   }
 }

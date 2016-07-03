@@ -1,0 +1,47 @@
+{
+  "demographics": {
+    "dicts": {
+      "count": 11, 
+      "average branching factor": 5
+    }, 
+    "tags": [
+      "demographics", 
+      "population", 
+      "age", 
+      "ethnicity", 
+      "race", 
+      "language", 
+      "education", 
+      "foreign", 
+      "households", 
+      "income", 
+      "employment", 
+      "unemployment", 
+      "sales", 
+      "land area", 
+      "states"
+    ], 
+    "atomics": {
+      "count": 51, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 18, 
+      "strings": 1, 
+      "floats": 32
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 52, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 52, 
+    "locals": 0, 
+    "size": 92423
+  }
+}

@@ -4,6 +4,25 @@
       "count": 8, 
       "average branching factor": 3
     }, 
+    "tags": [
+      "us", 
+      "usa", 
+      "united states", 
+      "military", 
+      "combat", 
+      "government", 
+      "army", 
+      "airforce", 
+      "marines", 
+      "navy", 
+      "fighting", 
+      "war", 
+      "award", 
+      "medal", 
+      "honor", 
+      "glory", 
+      "death"
+    ], 
     "atomics": {
       "count": 22, 
       "nones": 0, 
@@ -23,6 +42,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 3475, 
+    "locals": 0, 
+    "size": 4189998
   }
 }

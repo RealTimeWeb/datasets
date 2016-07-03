@@ -4,6 +4,14 @@
       "count": 15, 
       "average branching factor": 3
     }, 
+    "tags": [
+      "school", 
+      "education", 
+      "K-12", 
+      "kindergarten", 
+      "learning", 
+      "teaching"
+    ], 
     "atomics": {
       "count": 35, 
       "nones": 0, 
@@ -23,6 +31,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 51, 
+    "locals": 0, 
+    "size": 60995
   }
 }

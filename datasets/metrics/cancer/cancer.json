@@ -1,0 +1,39 @@
+{
+  "cancer": {
+    "dicts": {
+      "count": 3, 
+      "average branching factor": 5
+    }, 
+    "tags": [
+      "cancer", 
+      "death", 
+      "states", 
+      "gender", 
+      "race", 
+      "population", 
+      "crude rate"
+    ], 
+    "atomics": {
+      "count": 13, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 3, 
+      "strings": 4, 
+      "floats": 6
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 22140, 
+      "complex": 1
+    }, 
+    "heights": 3, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 22140, 
+    "locals": 0, 
+    "size": 7091975
+  }
+}

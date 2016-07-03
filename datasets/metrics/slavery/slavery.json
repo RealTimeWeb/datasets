@@ -1,28 +1,40 @@
 {
   "slavery": {
     "dicts": {
-      "count": 13, 
+      "count": 6, 
       "average branching factor": 4
     }, 
+    "tags": [
+      "slavery", 
+      "slave", 
+      "slaves", 
+      "buyer", 
+      "seller", 
+      "origin", 
+      "history", 
+      "economics"
+    ], 
     "atomics": {
-      "count": 40, 
+      "count": 21, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 0, 
-      "strings": 40, 
-      "floats": 0
+      "ints": 4, 
+      "strings": 13, 
+      "floats": 4
     }, 
     "lists": {
-      "count": 2, 
-      "lengths": 14713, 
+      "count": 1, 
+      "lengths": 9599, 
       "complex": 1
     }, 
-    "heights": 5, 
+    "heights": 4, 
     "unions": {
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 9599, 
+    "locals": 0, 
+    "size": 6099012
   }
 }

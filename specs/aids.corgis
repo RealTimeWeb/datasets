@@ -1,0 +1,81 @@
+metadata:
+    version: 1
+    name: Aids
+    builder: 2
+    author: Ryan Whitcomb
+    datetime: 6/16/2016
+    tags: [aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un]
+    description:
+        short: Records of AIDS related statistics from several countries.
+        overview: >
+            The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease.  The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.
+            
+
+        citation: http://aidsinfo.unaids.org/
+local:
+  - file: aids.json
+    name: aids
+    row: report
+    indexes:
+      - name: country
+        jsonpath: Country
+      - name: year
+        jsonpath: Year
+interfaces:
+  - name: get reports
+    description: Returns aids reports from the dataset.
+    returns: list[report]
+    production:
+        sql: SELECT data FROM aids
+        post: json()
+    test:
+        sql: SELECT data FROM aids LIMIT {hardware}
+        post: json()
+  - name: get reports by year
+    description: Given a year, returns all the aids reports for that year in the database.
+    args:
+      - name: year
+        default: '1990'
+        type: int
+        matches: SELECT DISTINCT report FROM aids
+        description: The year to get reports.
+    production:
+        sql: SELECT data FROM aids WHERE year=?
+        post: json()
+    test:
+        sql: SELECT data FROM aids WHERE year=? LIMIT {hardware}
+        post: json()
+    returns: list[report]
+  - name: get reports by country
+    description: Given a country, returns all the aids reports for that country in the database.
+    args:
+      - name: country
+        default: 'Afghanistan'
+        type: str
+        matches: SELECT DISTINCT report FROM aids
+        description: The year to get reports.
+    production:
+        sql: SELECT data FROM aids WHERE year=?
+        post: json()
+    test:
+        sql: SELECT data FROM aids WHERE year=? LIMIT {hardware}
+        post: json()
+    returns: list[report]
+structures:
+    "aids.[0].Data.People Living with HIV.Adults Living with HIV": '15+ Years Old'
+    "aids.[0].Data.People Living with HIV.Male Adults Living with HIV": '15+ Years Old'
+    "aids.[0].Data.People Living with HIV.Female Adults Living with HIV": '15+ Years Old'
+    "aids.[0].Data.People Living with HIV.Children Living with HIV": '0-14 Years Old'
+    "aids.[0].Data.People Living with HIV.HIV Prevalence Among Adults": '15-49 Years Old'
+    "aids.[0].Data.People Living with HIV.HIV Prevalence Among Young Men": '15-24 Years Old'
+    "aids.[0].Data.People Living with HIV.HIV Prevalence Among Young Women": '15-24 Years Old'
+    "aids.[0].New HIV Infections.New HIV Infections Among Adults": '15+ Years Old'
+    "aids.[0].New HIV Infections.New HIV Infections Among Male Adults": '15+ Years Old'
+    "aids.[0].New HIV Infections.New HIV Infections Among Female Adults": '15+ Years Old'
+    "aids.[0].New HIV Infections.New HIV Infections Among Children": '0-14 Years Old'
+    "aids.[0].New HIV Infections.Incidence Rate Among Adults": '15-49 Years Old'
+    "aids.[0].AIDS-Related Deaths.AIDS-Related Deaths Among Adults": '15+ Years Old'
+    "aids.[0].AIDS-Related Deaths.AIDS-Related Deaths Among Male Adults": '15+ Years Old'
+    "aids.[0].AIDS-Related Deaths.AIDS-Related Deaths Among Female Adults": '15+ Years Old'
+    "aids.[0].AIDS-Related Deaths.AIDS-Related Deaths Among Children": '0-14 Years Old'
+    "aids.[0].AIDS-Related Deaths.AIDS Orphans": '0-17 Years Old'

@@ -173,6 +173,9 @@ def build_report(model):
                 data_list = json.load(local_file)
                 metrics = JsonMetrics({}, data_list, row)
                 json_reports[name] = metrics.report
+                json_reports[name]['length'] = len(data_list)
+                json_reports[name]['size'] = os.path.getsize(file)
+                json_reports[name]['tags'] = model['metadata']['tags']
             elif type == "csv":
                 pass
     return json.dumps(json_reports, indent=2)

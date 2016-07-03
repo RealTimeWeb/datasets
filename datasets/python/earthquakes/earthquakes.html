@@ -284,33 +284,140 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-earthquakes-__0__' title='Dictionary (8 keys)'>
+    <div id='explore-earthquakes-__0__-impact' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"magnitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.57</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"significance"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>5</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"gap"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>79.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-earthquakes-__0__-impact" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-earthquakes-__0__-impact-magnitude").click(function() {
+            $( "#explore-earthquakes-__0__-impact-magnitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-impact-significance").click(function() {
+            $( "#explore-earthquakes-__0__-impact-significance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-impact-gap").click(function() {
+            $( "#explore-earthquakes-__0__-impact-gap" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-earthquakes-__0__-location' title='Dictionary (6 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
             <tr> <td><code>"distance"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.0029</code></td> 
+                 <td><code>0.06538</code></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"significance"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>7</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"gap"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>91.0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"location_description"</code></td> 
+            <tr> <td><code>"full"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"10km WNW of The Geysers, California"</code></td> 
+                 <td><code>"10km SW of Anza, CA"</code></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"magnitude"</code></td> 
+            <tr> <td><code>"state"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"California"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"longitude"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.66</code></td> 
+                 <td><code>-116.7625</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"depth"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>8.64</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"latitude"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>33.5033333</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-earthquakes-__0__-location" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-earthquakes-__0__-location-distance").click(function() {
+            $( "#explore-earthquakes-__0__-location-distance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-location-full").click(function() {
+            $( "#explore-earthquakes-__0__-location-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-location-state").click(function() {
+            $( "#explore-earthquakes-__0__-location-state" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-location-longitude").click(function() {
+            $( "#explore-earthquakes-__0__-location-longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-location-depth").click(function() {
+            $( "#explore-earthquakes-__0__-location-depth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-location-latitude").click(function() {
+            $( "#explore-earthquakes-__0__-location-latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-earthquakes-__0__' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"impact"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-earthquakes-__0__-impact'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ci37389103"</code></td> 
                  <td></td> </tr>
             
             <tr> <td><code>"location"</code></td> 
@@ -319,13 +426,8 @@ $(document).ready(function() {
                  <td></td> </tr>
             
             <tr> <td><code>"time"</code></td> 
-                 <td><span data-toggle="tooltip" title="Long (a very big whole number)">long</span></td> 
-                 <td><code>1424577875110</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"id"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"nc72399435"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-earthquakes-__0__-time'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
         </table>
@@ -337,28 +439,13 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-earthquakes-__0__-distance").click(function() {
-            $( "#explore-earthquakes-__0__-distance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-earthquakes-__0__-impact").click(function() {
+            $( "#explore-earthquakes-__0__-impact" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-earthquakes-__0__-significance").click(function() {
-            $( "#explore-earthquakes-__0__-significance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-earthquakes-__0__-gap").click(function() {
-            $( "#explore-earthquakes-__0__-gap" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-earthquakes-__0__-location_description").click(function() {
-            $( "#explore-earthquakes-__0__-location_description" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-earthquakes-__0__-magnitude").click(function() {
-            $( "#explore-earthquakes-__0__-magnitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-earthquakes-__0__-id").click(function() {
+            $( "#explore-earthquakes-__0__-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -372,54 +459,99 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-earthquakes-__0__-id").click(function() {
-            $( "#explore-earthquakes-__0__-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
     });
     </script>
 
-    <div id='explore-earthquakes-__0__-location' title='Dictionary (3 keys)'>
+    <div id='explore-earthquakes-__0__-time' title='Dictionary (8 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"latitude"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>38.827</code></td> 
+            <tr> <td><code>"full"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"2016-06-16 15:02:40"</code></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"depth"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>2.48</code></td> 
+            <tr> <td><code>"hour"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>15</code></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"longitude"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>-122.853</code></td> 
+            <tr> <td><code>"second"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>40</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"epoch"</code></td> 
+                 <td><span data-toggle="tooltip" title="Long (a very big whole number)">long</span></td> 
+                 <td><code>1466103760770</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2016</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"day"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>16</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"minute"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2</code></td> 
                  <td></td> </tr>
             
         </table>
     </div>
     <script>
     $(document).ready(function() {
-        $( "#explore-earthquakes-__0__-location" ).dialog({
+        $( "#explore-earthquakes-__0__-time" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-earthquakes-__0__-location-latitude").click(function() {
-            $( "#explore-earthquakes-__0__-location-latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-earthquakes-__0__-time-full").click(function() {
+            $( "#explore-earthquakes-__0__-time-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-earthquakes-__0__-location-depth").click(function() {
-            $( "#explore-earthquakes-__0__-location-depth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-earthquakes-__0__-time-hour").click(function() {
+            $( "#explore-earthquakes-__0__-time-hour" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-earthquakes-__0__-location-longitude").click(function() {
-            $( "#explore-earthquakes-__0__-location-longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-earthquakes-__0__-time-second").click(function() {
+            $( "#explore-earthquakes-__0__-time-second" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-time-month").click(function() {
+            $( "#explore-earthquakes-__0__-time-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-time-epoch").click(function() {
+            $( "#explore-earthquakes-__0__-time-epoch" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-time-year").click(function() {
+            $( "#explore-earthquakes-__0__-time-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-time-day").click(function() {
+            $( "#explore-earthquakes-__0__-time-day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-earthquakes-__0__-time-minute").click(function() {
+            $( "#explore-earthquakes-__0__-time-minute" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

@@ -4,6 +4,15 @@
       "count": 3, 
       "average branching factor": 9
     }, 
+    "tags": [
+      "drugs", 
+      "drug", 
+      "drugbank", 
+      "chemistry", 
+      "biology", 
+      "biochemistry", 
+      "proteins"
+    ], 
     "atomics": {
       "count": 26, 
       "nones": 0, 
@@ -23,6 +32,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 7759, 
+    "locals": 0, 
+    "size": 8597950
   }
 }

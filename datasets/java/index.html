@@ -6,22 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>CORGIS Datasets Project</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"><link>-->
+    <title>CORGIS - Java Index</title>
     
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
     
-    <script src="../_lib/lunr.js"></script>
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+
+<script src="../_lib/lunr.js"></script>
+
+
     
     <script>
     var user_id = "";
@@ -29,51 +41,85 @@
         user_id = localStorage.getItem('user_id');
     }
     function log(action, body) {
-        try {
-            $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                        'user_id': user_id,
-                        'event': 'corgis',
-                        'action': action,
-                        'body': body
-                    }, function(data) {
-                        console.log(data);
-                    });
-        } catch(err) {console.error(err)};
-    }
-    
-    var searcher = lunr(function() {
-        this.field('name', 10);
-        this.field('tags', 100);
-        this.field('body');
-        this.field('description');
-        
-        this.ref('name');
-    });
-    $(document).ready(function() {
-        $("#search-bar").on('input propertychange', function() {
-            var needle = $(this).val();
-            if (needle == "") {
-                $(".dataset-card").show();
-            } else {
-                var results = searcher.search(needle);
-                $(".dataset-card").hide();
-                results.forEach(function (data) {
-                    $("#"+data.ref).show();
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
                 });
-            }
-            log('search', needle);
-        });
-        log('load', 'index');
-        function doPoll(){
-            log('remain', 'index, '+$(document).scrollTop()+", "+$(document).height());
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
         setInterval(doPoll, 5000);
+        */
     });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     </script>
-    
+
 </head>
 
 <body>
+
+<div class="container">
+
+
+<body>
+
+<script>
+var user_id = "";
+if (localStorage.getItem('user_id') !== null) {
+    user_id = localStorage.getItem('user_id');
+}
+function log(action, body) {
+    try {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    } catch(err) {console.error(err)};
+}
+
+var searcher = lunr(function() {
+    this.field('name', 10);
+    this.field('tags', 100);
+    this.field('body');
+    this.field('description');
+    
+    this.ref('name');
+});
+$(document).ready(function() {
+    $("#search-bar").on('input propertychange', function() {
+        var needle = $(this).val();
+        if (needle == "") {
+            $(".dataset-card").show();
+        } else {
+            var results = searcher.search(needle);
+            $(".dataset-card").hide();
+            results.forEach(function (data) {
+                $("#"+data.ref).show();
+            });
+        }
+        log('search', needle);
+    });
+    log('load', 'index');
+    function doPoll(){
+        log('remain', 'index, '+$(document).scrollTop()+", "+$(document).height());
+    }
+    setInterval(doPoll, 5000);
+});
+</script>
 
 <div class="container">
 
@@ -81,9 +127,8 @@
         <img src='../_images/java.png' class='pull-left img-responsive' style='max-width:64px; max-height: 64px'>
         <img src='../_images/corgis-logo-smaller.png' class='pull-right img-responsive'>
         <h1>Java Datasets</h1>
-        <p class="lead">CORGIS Datasets Project: The Collection of Real-time, Giant, Interesting, Situated Datasets</p>
-        
-        <span class="text-muted">By Austin Cory Bart, Eli Tilevich, Clifford A. Shaffer, Dennis Kafura</span><br>
+        <p class="lead">The <b>C</b>ollection of <b>R</b>eally <b>G</b>reat, <b>I</b>nteresting, <b>S</b>ituated Datasets</p>
+        <span class="text-muted">By Austin Cory Bart, Ryan Whitcomb, Jason Riddle, Omar Saleem, Dr. Eli Tilevich, Dr. Clifford A. Shaffer, Dr. Dennis Kafura</span><br>
     </div>
     
     <div class='row'>
@@ -102,16 +147,152 @@
     
     <div class="row">
     
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="publishers">
+      
+      <div class="media-left  media-middle">
+        <a href="publishers/publishers.html">
+          <img class="media-object" src="publishers/publishers.png" alt="Publishers" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="publishers/publishers.html">
+        <h4 class="media-heading">Publishers</h4>
+        </a>
+        From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.
+<br>
+        <i>publishers, amazon, books, sales, genres, literature, english</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "publishers",
+            'body': "From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.",
+            'description': "From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.",
+            'tags': ["publishers", "amazon", "books", "sales", "genres", "literature", "english"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="finance">
+      
+      <div class="media-left  media-middle">
+        <a href="finance/finance.html">
+          <img class="media-object" src="finance/finance.png" alt="Finance" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="finance/finance.html">
+        <h4 class="media-heading">Finance</h4>
+        </a>
+        The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states.<br>
+        <i>finance, government, expenditure, charges, money, united states, us</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "finance",
+            'body': "The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states. The data contain detail of revenue by source, expenditure by object and function, indebtedness by term, and assets by purpose. This data goes back for almost two decades across every date.",
+            'description': "The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states.",
+            'tags': ["finance", "government", "expenditure", "charges", "money", "united states", "us"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="statecrime">
+      
+      <div class="media-left  media-middle">
+        <a href="statecrime/statecrime.html">
+          <img class="media-object" src="statecrime/statecrime.png" alt="State Crime" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="statecrime/statecrime.html">
+        <h4 class="media-heading">State Crime</h4>
+        </a>
+        Records about the crime rates and totals for US states over time.<br>
+        <i>crime, burglary, larceny, motor, property, violent, assault, murder, rape, robbery</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "statecrime",
+            'body': "From the Unified Crime Reporting Statistics and under the collaboration of the U.S. Department of Justice and the Federal Bureau of Investigation information crime statistics are available for public review. The following data set has information on the crime rates and totals for states across the United States for a wide range of years. The crime reports are divided into two main categories: property and violent crime. Property crime refers to burglary, larceny, and motor related crime while violent crime refers to assault, murder, rape, and robbery.",
+            'description': "Records about the crime rates and totals for US states over time.",
+            'tags': ["crime", "burglary", "larceny", "motor", "property", "violent", "assault", "murder", "rape", "robbery"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="supremecourt">
+      
+      <div class="media-left  media-middle">
+        <a href="supremecourt/supremecourt.html">
+          <img class="media-object" src="supremecourt/supremecourt.png" alt="Supreme Court" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="supremecourt/supremecourt.html">
+        <h4 class="media-heading">Supreme Court</h4>
+        </a>
+        This dataset contains information about supreme court cases for the several decades.<br>
+        <i>us, usa, united states, government, law, legal, court, case, supreme, judge, barrister, lawyer, federal, national</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "supremecourt",
+            'body': "The U.S. Supreme Court Database traces its history back about two decades ago, when Harold J. Spaeth asked the National Science Foundation to fund a database that would be so rich in content that multiple users - even those with vastly distinct projects and purposes in mind - could draw on it. Professor Spaeth's goal was at once refreshingly simple and extremely ambitious: to produce a database that would include and classify every single vote by a Supreme Court justice in all argued cases over a five-decade period. After securing the funding, Spaeth collected and coded the data, performed reliability checks, and eventually amassed the Database. In the late 1980s, he made it (and the documentation necessary to use it) publicly available. Since then, Professor Spaeth has not only updated it each term; he has also continued to perform reliability analyses, thereby ensuring its integrity with each release, and added new variables. Today's version of the Database houses 247 pieces of information for each case, roughly broken down into six categories: (1) identification variables (e.g., citations and docket numbers); (2) background variables (e.g., how the Court took jurisdiction, origin and source of the case, the reason the Court agreed to decide it); (3) chronological variables (e.g., the date of decision, term of Court, natural court); (4) substantive variables (e.g., legal provisions, issues, direction of decision); (5) outcome variables (e.g., disposition of the case, winning party, formal alteration of precedent, declaration of unconstitutionality); and (6) voting and opinion variables (e.g., how the individual justices voted, their opinions and interagreements). Case Centered data provides case level information; i.e., each row in the database corresponds to a dispute. These data do not contain specific justice vote information. A tremendously helpful resource for learning more about the dataset is the codebook: http://supremecourtdatabase.org/documentation.php?s=1.",
+            'description': "This dataset contains information about supreme court cases for the several decades.",
+            'tags': ["us", "usa", "united states", "government", "law", "legal", "court", "case", "supreme", "judge", "barrister", "lawyer", "federal", "national"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="music">
+      
+      <div class="media-left  media-middle">
+        <a href="music/music.html">
+          <img class="media-object" src="music/music.png" alt="Music" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="music/music.html">
+        <h4 class="media-heading">Music</h4>
+        </a>
+        The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.<br>
+        <i>music, songs, artists, creativity, media</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "music",
+            'body': "This library comes from the Million Song Dataset, which used a company called the Echo Nest to derive data points about one million popular contemporary songs. The Million Song Dataset is a collaboration between the Echo Nest and LabROSA, a laboratory working towards intelligent machine listening. The project was also funded in part by the National Science Foundation of America (NSF) to provide a large data set to evaluate research related to algorithms on a commercial size while promoting further research into the Music Information Retrieval field. The data contains standard information about the songs such as artist name, title, and year released. Additionally, the data contains more advanced information; for example, the length of the song, how many musical bars long the song is, and how long the fade in to the song was.",
+            'description': "The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.",
+            'tags': ["music", "songs", "artists", "creativity", "media"]
+        }
+    );
+    </script>
+    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="classics">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="classics/classics.html">
+        <a href="classics/classics.html">
           <img class="media-object" src="classics/classics.png" alt="Classics" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="classics/classics.html">
+        <a href="classics/classics.html">
         <h4 class="media-heading">Classics</h4>
         </a>
         Records and computed statistics about the top 1000 books on Project Gutenberg.<br>
@@ -125,6 +306,33 @@
             'body': "Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural works, to 'encourage the creation and distribution of eBooks'. It was founded in 1971 by Michael S. Hart and is the oldest digital library. This dataset is a collection of the top 1000 most popular books on Project Gutenberg, as determined by downloads. Each book has information about its authorship, publication date, congressional classication, and a few other fields. It also has some simple, computed statistics based on common metrics such as sentiment analysis, Flesch Kincaid Reading level, and average sentence length.",
             'description': "Records and computed statistics about the top 1000 books on Project Gutenberg.",
             'tags': ["classics", "books", "texts", "text", "book", "classic", "english", "shakespeare", "literature", "novel", "language", "composition", "writing", "author", "publication", "words"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="earthquakes">
+      
+      <div class="media-left  media-middle">
+        <a href="earthquakes/earthquakes.html">
+          <img class="media-object" src="earthquakes/earthquakes.png" alt="Earthquakes" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="earthquakes/earthquakes.html">
+        <h4 class="media-heading">Earthquakes</h4>
+        </a>
+        Records from different earthquake occurences across the world.<br>
+        <i>earthquakes, nature, disaster, magnitude, richter scale, latitude, longitude</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "earthquakes",
+            'body': "Earthquake records from around the world collected from the United States Geological Survey. Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake. Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included.",
+            'description': "Records from different earthquake occurences across the world.",
+            'tags': ["earthquakes", "nature", "disaster", "magnitude", "richter scale", "latitude", "longitude"]
         }
     );
     </script>
@@ -168,4 +376,7 @@
     
     </div>
     
+</div>
+
+
 </div>

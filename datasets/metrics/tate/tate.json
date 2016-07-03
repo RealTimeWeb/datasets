@@ -4,6 +4,12 @@
       "count": 7, 
       "average branching factor": 3
     }, 
+    "tags": [
+      "artwork", 
+      "art", 
+      "sculpture", 
+      "tate"
+    ], 
     "atomics": {
       "count": 18, 
       "nones": 0, 
@@ -23,6 +29,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 3332, 
+    "locals": 0, 
+    "size": 2068403
   }
 }

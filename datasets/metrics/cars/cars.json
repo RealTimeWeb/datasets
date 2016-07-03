@@ -4,6 +4,11 @@
       "count": 1, 
       "average branching factor": 23
     }, 
+    "tags": [
+      "cars", 
+      "vehicles", 
+      "fuel"
+    ], 
     "atomics": {
       "count": 23, 
       "nones": 0, 
@@ -23,6 +28,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 25053, 
+    "locals": 0, 
+    "size": 14069072
   }
 }

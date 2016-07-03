@@ -4,6 +4,22 @@
       "count": 29, 
       "average branching factor": 3
     }, 
+    "tags": [
+      "us", 
+      "usa", 
+      "united states", 
+      "government", 
+      "law", 
+      "legal", 
+      "court", 
+      "case", 
+      "supreme", 
+      "judge", 
+      "barrister", 
+      "lawyer", 
+      "federal", 
+      "national"
+    ], 
     "atomics": {
       "count": 86, 
       "nones": 0, 
@@ -23,6 +39,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 8631, 
+    "locals": 0, 
+    "size": 20475340
   }
 }

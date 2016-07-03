@@ -4,6 +4,10 @@
       "count": 5, 
       "average branching factor": 2
     }, 
+    "tags": [
+      "johnson grass", 
+      "agriculture"
+    ], 
     "atomics": {
       "count": 9, 
       "nones": 0, 
@@ -23,6 +27,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 583, 
+    "locals": 0, 
+    "size": 125036
   }
 }

@@ -1,5 +1,6 @@
 package corgis.classics.domain;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -15,12 +16,11 @@ import org.json.simple.JSONObject;
  */
 public class Difficulty {
 	
-    // This is a comment that I've incorporated into the explorer.
     private Double fleschReadingEase;
     private Double automatedReadabilityIndex;
     private Double colemanLiauIndex;
     private Double fleschKincaidGrade;
-    private Double linsearWriteFormula;
+    private Double linearWriteFormula;
     private Double daleChallReadabilityScore;
     private Double gunningFog;
     private Double smogIndex;
@@ -66,8 +66,8 @@ public class Difficulty {
     /*
      * @return 
      */
-    public Double getLinsearWriteFormula() {
-        return this.linsearWriteFormula;
+    public Double getLinearWriteFormula() {
+        return this.linearWriteFormula;
     }
     
     
@@ -115,7 +115,7 @@ public class Difficulty {
 	 * @return String
 	 */
 	public String toString() {
-		return "Difficulty[" +fleschReadingEase+", "+automatedReadabilityIndex+", "+colemanLiauIndex+", "+fleschKincaidGrade+", "+linsearWriteFormula+", "+daleChallReadabilityScore+", "+gunningFog+", "+smogIndex+", "+difficultWords+"]";
+		return "Difficulty[" +fleschReadingEase+", "+automatedReadabilityIndex+", "+colemanLiauIndex+", "+fleschKincaidGrade+", "+linearWriteFormula+", "+daleChallReadabilityScore+", "+gunningFog+", "+smogIndex+", "+difficultWords+"]";
 	}
 	
 	/**
@@ -124,19 +124,21 @@ public class Difficulty {
 	 * @return 
 	 */
     public Difficulty(JSONObject json_data) {
-        try {
-            this.fleschReadingEase = (Double)json_data.get("flesch reading ease");
-            this.automatedReadabilityIndex = (Double)json_data.get("automated readability index");
-            this.colemanLiauIndex = (Double)json_data.get("coleman liau index");
-            this.fleschKincaidGrade = (Double)json_data.get("flesch kincaid grade");
-            this.linsearWriteFormula = (Double)json_data.get("linsear write formula");
-            this.daleChallReadabilityScore = (Double)json_data.get("dale chall readability score");
-            this.gunningFog = (Double)json_data.get("gunning fog");
-            this.smogIndex = (Double)json_data.get("smog index");
-            this.difficultWords = (Integer)json_data.get("difficult words");
+        try {// Flesch Reading Ease
+        	System.out.println("Diff:"+json_data);
+            this.fleschReadingEase = (Double)json_data.get("Flesch Reading Ease");// Automated Readability Index
+            this.automatedReadabilityIndex = (Double)json_data.get("Automated Readability Index");// Coleman Liau Index
+            this.colemanLiauIndex = (Double)json_data.get("Coleman Liau Index");// Flesch Kincaid Grade
+            this.fleschKincaidGrade = (Double)json_data.get("Flesch Kincaid Grade");// Linear Write Formula
+            this.linearWriteFormula = (Double)json_data.get("Linear Write Formula");// Dale Chall Readability Score
+            this.daleChallReadabilityScore = (Double)json_data.get("Dale Chall Readability Score");// Gunning Fog
+            this.gunningFog = (Double)json_data.get("Gunning Fog");// Smog Index
+            this.smogIndex = (Double)json_data.get("Smog Index");// Difficult Words
+            this.difficultWords = new Integer(((Long)json_data.get("Difficult Words")).intValue());
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Difficulty; a field was missing.");
     		e.printStackTrace();
+    		System.exit(0);
     	} catch (ClassCastException e) {
     		System.err.println("Could not convert the response to a Difficulty; a field had the wrong structure.");
     		e.printStackTrace();

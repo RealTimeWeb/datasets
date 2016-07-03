@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Classics Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    
+    
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <img class="img-rounded pull-right" src="classics.png" alt="Classics" style="max-width: 128px; max-height: 128px;">
+        
+        <h1>Classics Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+        <span class="text-muted">Version 1, created 4/2/2016</span><br>
+        <span class="text-muted">Tags: classics, books, texts, text, book, classic, english, shakespeare, literature, novel, language, composition, writing, author, publication, words</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_books'>get_books</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural works, to 'encourage the creation and distribution of eBooks'. It was founded in 1971 by Michael S. Hart and is the oldest digital library. This dataset is a collection of the top 1000 most popular books on Project Gutenberg, as determined by downloads. Each book has information about its authorship, publication date, congressional classication, and a few other fields. It also has some simple, computed statistics based on common metrics such as sentiment analysis, Flesch Kincaid Reading level, and average sentence length. 
+
+    </p>
+    
+    
+    <p>
+    <i>https://www.gutenberg.org/ebooks/search/?sort_order=downloads</i>
+    </p>
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="classics.py?forcedownload=1" download="classics.py" target="_blank">
+            <strong>classics.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="classics.db?forcedownload=1" download="classics.db" target="_blank">
+            <strong>classics.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 1 function you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">classics</span>
+<span class="n">list_of_book</span> <span class="o">=</span> <span class="n">classics</span><span class="o">.</span><span class="n">get_books</span><span class="p">()</span>
+</pre></div>
+
+
+
+
+    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">classics</span>
+<span class="c"># These may be slow!</span>
+<span class="n">list_of_book</span> <span class="o">=</span> <span class="n">classics</span><span class="o">.</span><span class="n">get_books</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_books'>classics.get_books(test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns books from the dataset.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-classics'>Explore classics data</button>
+    </div>
+    
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-classics").click(function() {
+        $( "#explore-classics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-classics-__0__-Metadata-Formats-Types' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"text/plain"</code></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Metadata-Formats-Types" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-classics-__0__-Metadata-Formats-Types-__0__").click(function() {
+            $( "#explore-classics-__0__-Metadata-Formats-Types-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+    <div id='explore-classics' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-classics-__0__").click(function() {
+            $( "#explore-classics-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+    <div id='explore-classics-__0__-Bibliography-Congress-Classifications' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"PR"</code></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Bibliography-Congress-Classifications" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-classics-__0__-Bibliography-Congress-Classifications-__0__").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Congress-Classifications-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+    <div id='explore-classics-__0__-Bibliography-Subjects' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Sisters -- Fiction"</code></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Bibliography-Subjects" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-classics-__0__-Bibliography-Subjects-__0__").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Subjects-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+    <div id='explore-classics-__0__-Bibliography-Languages' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"en"</code></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Bibliography-Languages" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-classics-__0__-Bibliography-Languages-__0__").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Languages-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-classics-__0__-Metadata' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Url"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"https://www.gutenberg.org/ebooks/1342"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Downloads"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>36576</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ID"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1342</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Rank"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Formats"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Metadata-Formats'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Metadata" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-Metadata-Url").click(function() {
+            $( "#explore-classics-__0__-Metadata-Url" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Metadata-Downloads").click(function() {
+            $( "#explore-classics-__0__-Metadata-Downloads" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Metadata-ID").click(function() {
+            $( "#explore-classics-__0__-Metadata-ID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Metadata-Rank").click(function() {
+            $( "#explore-classics-__0__-Metadata-Rank" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Metadata-Formats").click(function() {
+            $( "#explore-classics-__0__-Metadata-Formats" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-classics-__0__-Statistics-Statistics' title='Dictionary (8 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Polysyllables"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4603</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Average Letter per Word"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.83</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Average Sentence Length"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>18.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Characters"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>586794</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Words"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>121533</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Sentences"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6511</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Average Sentence per Word"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.05</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Syllables"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>170648.1</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Statistics-Statistics" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Statistics-Polysyllables").click(function() {
+            $( "#explore-classics-__0__-Statistics-Statistics-Polysyllables" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Statistics-Average-Letter-per-Word").click(function() {
+            $( "#explore-classics-__0__-Statistics-Statistics-Average-Letter-per-Word" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Statistics-Average-Sentence-Length").click(function() {
+            $( "#explore-classics-__0__-Statistics-Statistics-Average-Sentence-Length" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Statistics-Characters").click(function() {
+            $( "#explore-classics-__0__-Statistics-Statistics-Characters" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Statistics-Words").click(function() {
+            $( "#explore-classics-__0__-Statistics-Statistics-Words" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Statistics-Sentences").click(function() {
+            $( "#explore-classics-__0__-Statistics-Statistics-Sentences" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Statistics-Average-Sentence-per-Word").click(function() {
+            $( "#explore-classics-__0__-Statistics-Statistics-Average-Sentence-per-Word" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Statistics-Syllables").click(function() {
+            $( "#explore-classics-__0__-Statistics-Statistics-Syllables" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-classics-__0__-Statistics-Difficulty' title='Dictionary (9 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Flesch Reading Ease"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>70.13</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Automated Readability Index"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>10.7</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Coleman Liau Index"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>10.73</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Flesch Kincaid Grade"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>7.9</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Linear Write Formula"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>13.5</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Dale Chall Readability Score"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>5.7</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Gunning Fog"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>9.2</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Smog Index"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Difficult Words"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>9032</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Statistics-Difficulty" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Difficulty-Flesch-Reading-Ease").click(function() {
+            $( "#explore-classics-__0__-Statistics-Difficulty-Flesch-Reading-Ease" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Difficulty-Automated-Readability-Index").click(function() {
+            $( "#explore-classics-__0__-Statistics-Difficulty-Automated-Readability-Index" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Difficulty-Coleman-Liau-Index").click(function() {
+            $( "#explore-classics-__0__-Statistics-Difficulty-Coleman-Liau-Index" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Difficulty-Flesch-Kincaid-Grade").click(function() {
+            $( "#explore-classics-__0__-Statistics-Difficulty-Flesch-Kincaid-Grade" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Difficulty-Linear-Write-Formula").click(function() {
+            $( "#explore-classics-__0__-Statistics-Difficulty-Linear-Write-Formula" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Difficulty-Dale-Chall-Readability-Score").click(function() {
+            $( "#explore-classics-__0__-Statistics-Difficulty-Dale-Chall-Readability-Score" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Difficulty-Gunning-Fog").click(function() {
+            $( "#explore-classics-__0__-Statistics-Difficulty-Gunning-Fog" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Difficulty-Smog-Index").click(function() {
+            $( "#explore-classics-__0__-Statistics-Difficulty-Smog-Index" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Difficulty-Difficult-Words").click(function() {
+            $( "#explore-classics-__0__-Statistics-Difficulty-Difficult-Words" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-classics-__0__' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Statistics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Bibliography"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Bibliography'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Metadata"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Metadata'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics").click(function() {
+            $( "#explore-classics-__0__-Statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography").click(function() {
+            $( "#explore-classics-__0__-Bibliography" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Metadata").click(function() {
+            $( "#explore-classics-__0__-Metadata" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-classics-__0__-Bibliography-Author' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Death"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1817</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Austen, Jane"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Birth"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1775</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Bibliography-Author" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Author-Death").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Author-Death" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Author-Name").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Author-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Author-Birth").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Author-Birth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-classics-__0__-Metadata-Formats' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Types"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Metadata-Formats-Types'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Metadata-Formats" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-Metadata-Formats-Total").click(function() {
+            $( "#explore-classics-__0__-Metadata-Formats-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Metadata-Formats-Types").click(function() {
+            $( "#explore-classics-__0__-Metadata-Formats-Types" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-classics-__0__-Statistics-Sentiments' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Polarity"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.136713377605</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Subjectivity"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.52223914947</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Statistics-Sentiments" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Sentiments-Polarity").click(function() {
+            $( "#explore-classics-__0__-Statistics-Sentiments-Polarity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Sentiments-Subjectivity").click(function() {
+            $( "#explore-classics-__0__-Statistics-Sentiments-Subjectivity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-classics-__0__-Statistics' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Difficulty"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Statistics-Difficulty'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Statistics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Statistics-Statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Sentiments"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Statistics-Sentiments'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Statistics" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Difficulty").click(function() {
+            $( "#explore-classics-__0__-Statistics-Difficulty" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Statistics").click(function() {
+            $( "#explore-classics-__0__-Statistics-Statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Statistics-Sentiments").click(function() {
+            $( "#explore-classics-__0__-Statistics-Sentiments" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-classics-__0__-Bibliography' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Publication"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Bibliography-Publication'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Author"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Bibliography-Author'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Title"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Pride and Prejudice"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Languages"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Bibliography-Languages'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Subjects"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Bibliography-Subjects'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Congress Classifications"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-classics-__0__-Bibliography-Congress-Classifications'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Text"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Bibliography" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Publication").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Publication" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Author").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Author" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Title").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Title" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Languages").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Languages" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Subjects").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Subjects" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Congress-Classifications").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Congress-Classifications" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Type").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-classics-__0__-Bibliography-Publication' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Full Date"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"June, 1998"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Month Name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"June"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Day"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1998</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-classics-__0__-Bibliography-Publication" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Publication-Full-Date").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Publication-Full-Date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Publication-Month-Name").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Publication-Month-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Publication-Month").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Publication-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Publication-Day").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Publication-Day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-classics-__0__-Bibliography-Publication-Year").click(function() {
+            $( "#explore-classics-__0__-Bibliography-Publication-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+
+</div>

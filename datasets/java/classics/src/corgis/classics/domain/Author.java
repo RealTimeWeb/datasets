@@ -1,5 +1,6 @@
 package corgis.classics.domain;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -63,10 +64,10 @@ public class Author {
 	 * @return 
 	 */
     public Author(JSONObject json_data) {
-        try {
-            this.death = (Integer)json_data.get("death");
-            this.name = (String)json_data.get("name");
-            this.birth = (Integer)json_data.get("birth");
+        try {// Death
+            this.death = new Integer(((Long)json_data.get("Death")).intValue());// Name
+            this.name = (String)json_data.get("Name");// Birth
+            this.birth = new Integer(((Long)json_data.get("Birth")).intValue());
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Author; a field was missing.");
     		e.printStackTrace();

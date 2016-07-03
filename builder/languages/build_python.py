@@ -88,6 +88,12 @@ def is_list(type):
 
 def strip_list(type):
     return type[5:-1]
+    
+def get_base_type(type):
+    if type.startswith('list'):
+        return 'list'
+    else:
+        return type
 
 def create_json_conversion(data, type):
     if is_list(type):
@@ -183,7 +189,7 @@ EXTENDED_TYPE_INFO = {
     'bool': '<span data-toggle="tooltip" title="Boolean (True or False)">bool</span>',
 }
 def to_human_readable_type(atype):
-    return EXTENDED_TYPE_INFO[atype]
+    return EXTENDED_TYPE_INFO[get_base_type(atype)]
     
 EXPAND = "<span class='glyphicon glyphicon-new-window' aria-hidden='true'></span>"
 def convert_example_value(data, possible_path=""):
@@ -236,7 +242,8 @@ def json_path(path, data):
 def build_metafiles(model):
     name = model['metadata']['name']
     return {
-            'python/' + flat_case(name) + '/' + flat_case(name) + '.html' : env.get_template('main.html').render(**model),
+            'python/' + flat_case(name) + '/' + flat_case(name) + '.html' : env.get_template('main.html').render(standalone=False, **model),
+            'python/' + flat_case(name) + '/index.html' : env.get_template('main.html').render(standalone=True, **model),
             'python/' + flat_case(name) + '/' + flat_case(name) + '_preview.html' : env.get_template('preview.html').render(**model)
             }
     

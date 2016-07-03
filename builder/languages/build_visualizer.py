@@ -22,8 +22,9 @@ import random
 import statistics
 random.seed(133)
 base_directory = os.path.dirname(os.path.realpath(__file__))
-templates = os.path.join(base_directory, 'visualizer/')
-env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader(templates))
+visualizer_templates = os.path.join(base_directory, 'visualizer/')
+templates = os.path.join(base_directory, 'templates/')
+env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader([templates, visualizer_templates]))
 env.filters['camel_case_caps'] = camel_case_caps
 env.filters['camel_case'] = camel_case
 env.filters['snake_case'] = snake_case
@@ -102,7 +103,8 @@ def json_path(path, data):
 def build_metafiles(model):
     name = model['metadata']['name']
     return {
-            'visualizer/' + flat_case(name) + '/' + flat_case(name) + '.html' : env.get_template('main.html').render(**model)
+            'visualizer/' + flat_case(name) + '/' + flat_case(name) + '.html' : env.get_template('main.html').render(standalone=False, **model),
+            'visualizer/' + flat_case(name) + '/index.html' : env.get_template('main.html').render(standalone=True, **model)
             }
 
 class JsonLeafNodes(object):    

@@ -4,6 +4,16 @@
       "count": 7, 
       "average branching factor": 6
     }, 
+    "tags": [
+      "buildings", 
+      "construction", 
+      "building", 
+      "skyscrapers", 
+      "international", 
+      "tall", 
+      "height", 
+      "tower"
+    ], 
     "atomics": {
       "count": 41, 
       "nones": 0, 
@@ -23,6 +33,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 2431, 
+    "locals": 0, 
+    "size": 2280320
   }
 }

@@ -29,11 +29,11 @@ public class ClassicsLibrary {
         
         
         System.out.println("Testing production GetBooks");
-        ArrayList<Classic> list_of_classic_1_production = classicsLibrary.getBooks(false);
+        ArrayList<Book> list_of_book_1_production = classicsLibrary.getBooks(false);
         
         
         System.out.println("Testing test GetBooks");
-        ArrayList<Classic> list_of_classic_1_test = classicsLibrary.getBooks(true);
+        ArrayList<Book> list_of_book_1_test = classicsLibrary.getBooks(true);
         
         
     }
@@ -71,9 +71,9 @@ public class ClassicsLibrary {
     /**
      * Returns books from the dataset.
     
-     * @return a list[classic]
+     * @return a list[Book]
      */
-	public ArrayList<Classic> getBooks() {
+	public ArrayList<Book> getBooks() {
         return this.getBooks(true);
     }
     
@@ -81,9 +81,9 @@ public class ClassicsLibrary {
     /**
      * Returns books from the dataset.
     
-     * @return a list[classic]
+     * @return a list[Book]
      */
-	public ArrayList<Classic> getBooks(boolean test) {
+	public ArrayList<Book> getBooks(boolean test) {
         String query;
         if (test) {
             query = String.format("SELECT data FROM classics LIMIT %d", this.HARDWARE);
@@ -105,16 +105,17 @@ public class ClassicsLibrary {
     		e.printStackTrace();
         }
         
-        ArrayList<Classic> result = new ArrayList<Classic>();
+        ArrayList<Book> result = new ArrayList<Book>();
         try {
             while (rs.next()) {
+            	System.out.println("LOOPING");
                 String raw_result = rs.getString(1);
-                Classics parsed = null;
+                Book parsed = null;
                 if (test) {
-                    parsed = new Classic((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Book((JSONObject)this.parser.parse(raw_result));
                     
                 } else {
-                    parsed = new Classic((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Book((JSONObject)this.parser.parse(raw_result));
                     
                 }
                 

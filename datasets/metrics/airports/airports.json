@@ -4,6 +4,13 @@
       "count": 4, 
       "average branching factor": 55
     }, 
+    "tags": [
+      "airplane", 
+      "airports", 
+      "travel", 
+      "plane", 
+      "air"
+    ], 
     "atomics": {
       "count": 217, 
       "nones": 0, 
@@ -23,6 +30,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 678, 
+    "locals": 0, 
+    "size": 5230460
   }
 }

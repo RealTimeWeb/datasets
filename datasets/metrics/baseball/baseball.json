@@ -4,6 +4,10 @@
       "count": 5, 
       "average branching factor": 5
     }, 
+    "tags": [
+      "baseball", 
+      "sports"
+    ], 
     "atomics": {
       "count": 19, 
       "nones": 0, 
@@ -23,13 +27,19 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 18589, 
+    "locals": 0, 
+    "size": 18151781
   }, 
   "teams": {
     "dicts": {
       "count": 2, 
       "average branching factor": 7
     }, 
+    "tags": [
+      "baseball", 
+      "sports"
+    ], 
     "atomics": {
       "count": 13, 
       "nones": 0, 
@@ -49,6 +59,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 50, 
+    "locals": 0, 
+    "size": 418301
   }
 }
