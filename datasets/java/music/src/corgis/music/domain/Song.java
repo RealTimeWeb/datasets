@@ -1,5 +1,6 @@
 package corgis.music.domain;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -20,7 +21,7 @@ public class Song {
     private Double artist_Mbtags_Count;
     private Double key_Confidence;
     private Double tatums_Start;
-    private Long year;
+    private Integer year;
     private Double duration;
     private Double hotttnesss;
     private Double beats_Start;
@@ -35,7 +36,7 @@ public class Song {
     private Double end_Of_Fade_In;
     private Double beats_Confidence;
     private Double tatums_Confidence;
-    private Long mode;
+    private Integer mode;
     private Double time_Signature;
     private Double loudness;
     
@@ -88,7 +89,7 @@ public class Song {
     /*
      * @return 
      */
-    public Long getYear() {
+    public Integer getYear() {
         return this.year;
     }
     
@@ -223,7 +224,7 @@ public class Song {
     /*
      * @return 
      */
-    public Long getMode() {
+    public Integer getMode() {
         return this.mode;
     }
     
@@ -263,29 +264,29 @@ public class Song {
 	 * @return 
 	 */
     public Song(JSONObject json_data) {
-        try {
-            this.key = (Double)json_data.get("key");
-            this.mode_Confidence = (Double)json_data.get("mode_confidence");
-            this.artist_Mbtags_Count = (Double)json_data.get("artist_mbtags_count");
-            this.key_Confidence = (Double)json_data.get("key_confidence");
-            this.tatums_Start = (Double)json_data.get("tatums_start");
-            this.year = (Long)json_data.get("year");
-            this.duration = (Double)json_data.get("duration");
-            this.hotttnesss = (Double)json_data.get("hotttnesss");
-            this.beats_Start = (Double)json_data.get("beats_start");
-            this.time_Signature_Confidence = (Double)json_data.get("time_signature_confidence");
-            this.title = (String)json_data.get("title");
-            this.bars_Confidence = (Double)json_data.get("bars_confidence");
-            this.id = (String)json_data.get("id");
-            this.bars_Start = (Double)json_data.get("bars_start");
-            this.artist_Mbtags = (String)json_data.get("artist_mbtags");
-            this.start_Of_Fade_Out = (Double)json_data.get("start_of_fade_out");
-            this.tempo = (Double)json_data.get("tempo");
-            this.end_Of_Fade_In = (Double)json_data.get("end_of_fade_in");
-            this.beats_Confidence = (Double)json_data.get("beats_confidence");
-            this.tatums_Confidence = (Double)json_data.get("tatums_confidence");
-            this.mode = (Long)json_data.get("mode");
-            this.time_Signature = (Double)json_data.get("time_signature");
+        try {// key
+            this.key = (Double)json_data.get("key");// mode_confidence
+            this.mode_Confidence = (Double)json_data.get("mode_confidence");// artist_mbtags_count
+            this.artist_Mbtags_Count = (Double)json_data.get("artist_mbtags_count");// key_confidence
+            this.key_Confidence = (Double)json_data.get("key_confidence");// tatums_start
+            this.tatums_Start = (Double)json_data.get("tatums_start");// year
+            this.year = new Integer(((Long)json_data.get("year")).intValue());// duration
+            this.duration = (Double)json_data.get("duration");// hotttnesss
+            this.hotttnesss = (Double)json_data.get("hotttnesss");// beats_start
+            this.beats_Start = (Double)json_data.get("beats_start");// time_signature_confidence
+            this.time_Signature_Confidence = (Double)json_data.get("time_signature_confidence");// title
+            this.title = (String)json_data.get("title");// bars_confidence
+            this.bars_Confidence = (Double)json_data.get("bars_confidence");// id
+            this.id = (String)json_data.get("id");// bars_start
+            this.bars_Start = (Double)json_data.get("bars_start");// artist_mbtags
+            this.artist_Mbtags = (String)json_data.get("artist_mbtags");// start_of_fade_out
+            this.start_Of_Fade_Out = (Double)json_data.get("start_of_fade_out");// tempo
+            this.tempo = (Double)json_data.get("tempo");// end_of_fade_in
+            this.end_Of_Fade_In = (Double)json_data.get("end_of_fade_in");// beats_confidence
+            this.beats_Confidence = (Double)json_data.get("beats_confidence");// tatums_confidence
+            this.tatums_Confidence = (Double)json_data.get("tatums_confidence");// mode
+            this.mode = new Integer(((Long)json_data.get("mode")).intValue());// time_signature
+            this.time_Signature = (Double)json_data.get("time_signature");// loudness
             this.loudness = (Double)json_data.get("loudness");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Song; a field was missing.");

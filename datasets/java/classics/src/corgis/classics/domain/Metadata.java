@@ -1,5 +1,6 @@
 package corgis.classics.domain;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -84,12 +85,12 @@ public class Metadata {
 	 * @return 
 	 */
     public Metadata(JSONObject json_data) {
-        try {
-            this.url = (String)json_data.get("url");
-            this.downloads = (Integer)json_data.get("downloads");
-            this.id = (Integer)json_data.get("id");
-            this.rank = (Integer)json_data.get("rank");
-            this.formats = new Formats((JSONObject)json_data.get("formats"));
+        try {// Url
+            this.url = (String)json_data.get("Url");// Downloads
+            this.downloads = new Integer(((Long)json_data.get("Downloads")).intValue());// ID
+            this.id = new Integer(((Long)json_data.get("ID")).intValue());// Rank
+            this.rank = new Integer(((Long)json_data.get("Rank")).intValue());// Formats
+            this.formats = new Formats((JSONObject)json_data.get("Formats"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Metadata; a field was missing.");
     		e.printStackTrace();

@@ -1,5 +1,6 @@
 package corgis.classics.domain;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -53,12 +54,13 @@ public class Sentiments {
 	 * @return 
 	 */
     public Sentiments(JSONObject json_data) {
-        try {
-            this.polarity = (Double)json_data.get("polarity");
-            this.subjectivity = (Double)json_data.get("subjectivity");
+        try {// Polarity
+            this.polarity = (Double)json_data.get("Polarity");// Subjectivity
+            this.subjectivity = (Double)json_data.get("Subjectivity");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Sentiments; a field was missing.");
     		e.printStackTrace();
+    		System.exit(0);;
     	} catch (ClassCastException e) {
     		System.err.println("Could not convert the response to a Sentiments; a field had the wrong structure.");
     		e.printStackTrace();

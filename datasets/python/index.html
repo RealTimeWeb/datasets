@@ -6,22 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>CORGIS Datasets Project</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"><link>-->
+    <title>CORGIS - Python Index</title>
     
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
+    <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
     
-    <script src="../_lib/lunr.js"></script>
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+
+<script src="../_lib/lunr.js"></script>
+
+
     
     <script>
     var user_id = "";
@@ -29,51 +41,85 @@
         user_id = localStorage.getItem('user_id');
     }
     function log(action, body) {
-        try {
-            $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                        'user_id': user_id,
-                        'event': 'corgis',
-                        'action': action,
-                        'body': body
-                    }, function(data) {
-                        console.log(data);
-                    });
-        } catch(err) {console.error(err)};
-    }
-    
-    var searcher = lunr(function() {
-        this.field('name', 10);
-        this.field('tags', 100);
-        this.field('body');
-        this.field('description');
-        
-        this.ref('name');
-    });
-    $(document).ready(function() {
-        $("#search-bar").on('input propertychange', function() {
-            var needle = $(this).val();
-            if (needle == "") {
-                $(".dataset-card").show();
-            } else {
-                var results = searcher.search(needle);
-                $(".dataset-card").hide();
-                results.forEach(function (data) {
-                    $("#"+data.ref).show();
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
                 });
-            }
-            log('search', needle);
-        });
-        log('load', 'index');
-        function doPoll(){
-            log('remain', 'index, '+$(document).scrollTop()+", "+$(document).height());
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
         setInterval(doPoll, 5000);
+        */
     });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     </script>
-    
+
 </head>
 
 <body>
+
+<div class="container">
+
+
+<body>
+
+<script>
+var user_id = "";
+if (localStorage.getItem('user_id') !== null) {
+    user_id = localStorage.getItem('user_id');
+}
+function log(action, body) {
+    try {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    } catch(err) {console.error(err)};
+}
+
+var searcher = lunr(function() {
+    this.field('name', 10);
+    this.field('tags', 100);
+    this.field('body');
+    this.field('description');
+    
+    this.ref('name');
+});
+$(document).ready(function() {
+    $("#search-bar").on('input propertychange', function() {
+        var needle = $(this).val();
+        if (needle == "") {
+            $(".dataset-card").show();
+        } else {
+            var results = searcher.search(needle);
+            $(".dataset-card").hide();
+            results.forEach(function (data) {
+                $("#"+data.ref).show();
+            });
+        }
+        log('search', needle);
+    });
+    log('load', 'index');
+    function doPoll(){
+        log('remain', 'index, '+$(document).scrollTop()+", "+$(document).height());
+    }
+    setInterval(doPoll, 5000);
+});
+</script>
 
 <div class="container">
 
@@ -81,9 +127,8 @@
         <img src='../_images/python.png' class='pull-left img-responsive' style='max-width:64px; max-height: 64px'>
         <img src='../_images/corgis-logo-smaller.png' class='pull-right img-responsive'>
         <h1>Python Datasets</h1>
-        <p class="lead">CORGIS Datasets Project: The Collection of Real-time, Giant, Interesting, Situated Datasets</p>
-        
-        <span class="text-muted">By Austin Cory Bart, Eli Tilevich, Clifford A. Shaffer, Dennis Kafura</span><br>
+        <p class="lead">The <b>C</b>ollection of <b>R</b>eally <b>G</b>reat, <b>I</b>nteresting, <b>S</b>ituated Datasets</p>
+        <span class="text-muted">By Austin Cory Bart, Ryan Whitcomb, Jason Riddle, Omar Saleem, Dr. Eli Tilevich, Dr. Clifford A. Shaffer, Dr. Dennis Kafura</span><br>
     </div>
     
     <div class='row'>
@@ -105,13 +150,13 @@
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="broadway/broadway.html">
+        <a href="broadway/broadway.html">
           <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="broadway/broadway.html">
+        <a href="broadway/broadway.html">
         <h4 class="media-heading">Broadway</h4>
         </a>
         This library holds data about Broadway shows, such as tickets sold.<br>
@@ -132,13 +177,13 @@
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="classics">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="classics/classics.html">
+        <a href="classics/classics.html">
           <img class="media-object" src="classics/classics.png" alt="Classics" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="classics/classics.html">
+        <a href="classics/classics.html">
         <h4 class="media-heading">Classics</h4>
         </a>
         Records and computed statistics about the top 1000 books on Project Gutenberg.<br>
@@ -159,13 +204,13 @@
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="airlines">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="airlines/airlines.html">
+        <a href="airlines/airlines.html">
           <img class="media-object" src="airlines/airlines.png" alt="Airlines" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="airlines/airlines.html">
+        <a href="airlines/airlines.html">
         <h4 class="media-heading">Airlines</h4>
         </a>
         Information about flight delays in major aiports since 2003.<br>
@@ -186,13 +231,13 @@
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="hydropower">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="hydropower/hydropower.html">
+        <a href="hydropower/hydropower.html">
           <img class="media-object" src="hydropower/hydropower.png" alt="Hydropower" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="hydropower/hydropower.html">
+        <a href="hydropower/hydropower.html">
         <h4 class="media-heading">Hydropower</h4>
         </a>
         Records about dams in the United States such as location, dimensions, and project information<br>
@@ -249,4 +294,7 @@
     
     </div>
     
+</div>
+
+
 </div>

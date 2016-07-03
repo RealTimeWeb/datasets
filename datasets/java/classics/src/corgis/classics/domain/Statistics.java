@@ -1,5 +1,6 @@
 package corgis.classics.domain;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -66,10 +67,11 @@ public class Statistics {
 	 * @return 
 	 */
     public Statistics(JSONObject json_data) {
-        try {
-            this.difficulty = new Difficulty((JSONObject)json_data.get("difficulty"));
-            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));
-            this.sentiments = new Sentiments((JSONObject)json_data.get("sentiments"));
+        try {// Difficulty
+        	System.out.println("STATS:"+json_data);
+            this.difficulty = new Difficulty((JSONObject)json_data.get("Difficulty"));// Statistics
+            this.statistics = new Statistics((JSONObject)json_data.get("Statistics"));// Sentiments
+            this.sentiments = new Sentiments((JSONObject)json_data.get("Sentiments"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Statistics; a field was missing.");
     		e.printStackTrace();

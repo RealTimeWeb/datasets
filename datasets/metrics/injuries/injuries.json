@@ -4,6 +4,27 @@
       "count": 5, 
       "average branching factor": 3
     }, 
+    "tags": [
+      "osha", 
+      "united states", 
+      "us", 
+      "usa", 
+      "government", 
+      "health", 
+      "safety", 
+      "injury", 
+      "injuries", 
+      "hurt", 
+      "pain", 
+      "job", 
+      "work", 
+      "industry", 
+      "career", 
+      "occuptation", 
+      "safety", 
+      "hazard", 
+      "health"
+    ], 
     "atomics": {
       "count": 14, 
       "nones": 0, 
@@ -23,6 +44,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 25010, 
+    "locals": 0, 
+    "size": 11367169
   }
 }

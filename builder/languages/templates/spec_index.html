@@ -1,79 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-  
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>CORGIS Datasets Project</title>
+{% if standalone %}{% extends 'layout.html' %}
+{% block title %}CORGIS - {{ language.title() }} Index{% endblock %}
+{% endif -%}
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+{% block extrahead %}
+{% if standalone %}
+<script src="../_lib/lunr.js"></script>
+{% endif %}
+{% endblock %}
 
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"><link>-->
-    
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
-    
-    <script src="../_lib/lunr.js"></script>
-    
-    <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        try {
-            $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                        'user_id': user_id,
-                        'event': 'corgis',
-                        'action': action,
-                        'body': body
-                    }, function(data) {
-                        console.log(data);
-                    });
-        } catch(err) {console.error(err)};
-    }
-    
-    var searcher = lunr(function() {
-        this.field('name', 10);
-        this.field('tags', 100);
-        this.field('body');
-        this.field('description');
-        
-        this.ref('name');
-    });
-    $(document).ready(function() {
-        $("#search-bar").on('input propertychange', function() {
-            var needle = $(this).val();
-            if (needle == "") {
-                $(".dataset-card").show();
-            } else {
-                var results = searcher.search(needle);
-                $(".dataset-card").hide();
-                results.forEach(function (data) {
-                    $("#"+data.ref).show();
-                });
-            }
-            log('search', needle);
-        });
-        log('load', 'index');
-        function doPoll(){
-            log('remain', 'index, '+$(document).scrollTop()+", "+$(document).height());
-        }
-        setInterval(doPoll, 5000);
-    });
-    </script>
-    
-</head>
+{% block body %}
 
 <body>
+
+<script>
+var user_id = "";
+if (localStorage.getItem('user_id') !== null) {
+    user_id = localStorage.getItem('user_id');
+}
+function log(action, body) {
+    try {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    } catch(err) {console.error(err)};
+}
+
+var searcher = lunr(function() {
+    this.field('name', 10);
+    this.field('tags', 100);
+    this.field('body');
+    this.field('description');
+    
+    this.ref('name');
+});
+$(document).ready(function() {
+    $("#search-bar").on('input propertychange', function() {
+        var needle = $(this).val();
+        if (needle == "") {
+            $(".dataset-card").show();
+        } else {
+            var results = searcher.search(needle);
+            $(".dataset-card").hide();
+            results.forEach(function (data) {
+                $("#"+data.ref).show();
+            });
+        }
+        log('search', needle);
+    });
+    log('load', 'index');
+    function doPoll(){
+        log('remain', 'index, '+$(document).scrollTop()+", "+$(document).height());
+    }
+    setInterval(doPoll, 5000);
+});
+</script>
 
 <div class="container">
 
@@ -81,9 +66,8 @@
         <img src='../_images/{{ language }}.png' class='pull-left img-responsive' style='max-width:64px; max-height: 64px'>
         <img src='../_images/corgis-logo-smaller.png' class='pull-right img-responsive'>
         <h1>{{ language.title() }} Datasets</h1>
-        <p class="lead">CORGIS Datasets Project: The Collection of Real-time, Giant, Interesting, Situated Datasets</p>
-        
-        <span class="text-muted">By Austin Cory Bart, Eli Tilevich, Clifford A. Shaffer, Dennis Kafura</span><br>
+        <p class="lead">The <b>C</b>ollection of <b>R</b>eally <b>G</b>reat, <b>I</b>nteresting, <b>S</b>ituated Datasets</p>
+        <span class="text-muted">By Austin Cory Bart, Ryan Whitcomb, Jason Riddle, Omar Saleem, Dr. Eli Tilevich, Dr. Clifford A. Shaffer, Dr. Dennis Kafura</span><br>
     </div>
     
     <div class='row'>
@@ -105,13 +89,13 @@
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="{{ metadata.name|flat_case }}">
       {% if metadata.icon %}
       <div class="media-left  media-middle">
-        <a target="_blank" href="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.html">
+        <a href="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.html">
           <img class="media-object" src="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.png" alt="{{ metadata.name }}" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       {% endif %}
       <div class="media-body">
-        <a target="_blank" href="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.html">
+        <a href="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.html">
         <h4 class="media-heading">{{ metadata.name }}</h4>
         </a>
         {{ metadata.short }}<br>
@@ -169,3 +153,5 @@
     </div>
     
 </div>
+
+{% endblock %}

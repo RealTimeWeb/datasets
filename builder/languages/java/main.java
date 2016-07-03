@@ -145,7 +145,7 @@ public class {{ metadata.name | camel_case_caps }}Library {
         try {
             while (rs.next()) {
                 String raw_result = rs.getString(1);
-                {{ locals[0].name | to_java_type }} parsed = null;
+                {% if interface.returns | is_list %}{{ interface.returns | strip_list | to_java_type }}{% else %}{{ interface.returns | to_java_type}}{% endif %} parsed = null;
                 if (test) {
                     {% if interface.test.post -%}
                     parsed = new {{ locals[0].row | to_java_type }}({{ interface.test.post|parse_bark }});

@@ -4,6 +4,16 @@
       "count": 1, 
       "average branching factor": 33
     }, 
+    "tags": [
+      "kepler", 
+      "space", 
+      "planets", 
+      "aerospace", 
+      "moon", 
+      "sun", 
+      "stellar", 
+      "solar system"
+    ], 
     "atomics": {
       "count": 33, 
       "nones": 0, 
@@ -23,13 +33,25 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 39336, 
+    "locals": 0, 
+    "size": 25766635
   }, 
   "tce": {
     "dicts": {
       "count": 1, 
       "average branching factor": 43
     }, 
+    "tags": [
+      "kepler", 
+      "space", 
+      "planets", 
+      "aerospace", 
+      "moon", 
+      "sun", 
+      "stellar", 
+      "solar system"
+    ], 
     "atomics": {
       "count": 43, 
       "nones": 0, 
@@ -49,13 +71,25 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 16285, 
+    "locals": 0, 
+    "size": 16046542
   }, 
   "keplernames": {
     "dicts": {
       "count": 1, 
       "average branching factor": 13
     }, 
+    "tags": [
+      "kepler", 
+      "space", 
+      "planets", 
+      "aerospace", 
+      "moon", 
+      "sun", 
+      "stellar", 
+      "solar system"
+    ], 
     "atomics": {
       "count": 13, 
       "nones": 0, 
@@ -75,13 +109,25 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 992, 
+    "locals": 0, 
+    "size": 320602
   }, 
   "exoplanets": {
     "dicts": {
       "count": 1, 
       "average branching factor": 79
     }, 
+    "tags": [
+      "kepler", 
+      "space", 
+      "planets", 
+      "aerospace", 
+      "moon", 
+      "sun", 
+      "stellar", 
+      "solar system"
+    ], 
     "atomics": {
       "count": 79, 
       "nones": 0, 
@@ -101,13 +147,25 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 1763, 
+    "locals": 0, 
+    "size": 2679967
   }, 
   "koicumulative": {
     "dicts": {
       "count": 1, 
       "average branching factor": 69
     }, 
+    "tags": [
+      "kepler", 
+      "space", 
+      "planets", 
+      "aerospace", 
+      "moon", 
+      "sun", 
+      "stellar", 
+      "solar system"
+    ], 
     "atomics": {
       "count": 69, 
       "nones": 0, 
@@ -127,6 +185,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 7305, 
+    "locals": 0, 
+    "size": 11787419
   }
 }

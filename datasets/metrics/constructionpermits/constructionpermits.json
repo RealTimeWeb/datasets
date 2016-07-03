@@ -4,6 +4,19 @@
       "count": 5, 
       "average branching factor": 3
     }, 
+    "tags": [
+      "construction", 
+      "permits", 
+      "us", 
+      "united states", 
+      "america", 
+      "government", 
+      "buildings", 
+      "private", 
+      "units", 
+      "valuation", 
+      "housing"
+    ], 
     "atomics": {
       "count": 14, 
       "nones": 0, 
@@ -23,6 +36,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 139, 
+    "locals": 0, 
+    "size": 3599110
   }
 }

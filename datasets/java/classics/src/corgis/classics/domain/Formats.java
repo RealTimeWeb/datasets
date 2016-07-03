@@ -1,5 +1,6 @@
 package corgis.classics.domain;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -9,7 +10,6 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.classics.domain.Types;
 
 /**
  * 
@@ -17,7 +17,7 @@ import corgis.classics.domain.Types;
 public class Formats {
 	
     private Integer total;
-    private Types types;
+    private ArrayList<String> types;
     
     
     /*
@@ -32,7 +32,7 @@ public class Formats {
     /*
      * @return 
      */
-    public Types getTypes() {
+    public ArrayList<String> getTypes() {
         return this.types;
     }
     
@@ -54,9 +54,13 @@ public class Formats {
 	 * @return 
 	 */
     public Formats(JSONObject json_data) {
-        try {
-            this.total = (Integer)json_data.get("total");
-            this.types = new Types((JSONObject)json_data.get("types"));
+        try {// Total
+            this.total = new Integer(((Long)json_data.get("Total")).intValue());// Types
+            this.types = new ArrayList<String>();
+            Iterator<Object> typesIter = ((List<Object>)json_data.get("Types")).iterator();
+            while (typesIter.hasNext()) {
+                this.types.add(new String((String)typesIter.next()));
+            }
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Formats; a field was missing.");
     		e.printStackTrace();

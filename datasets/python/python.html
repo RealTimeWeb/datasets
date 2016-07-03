@@ -1,0 +1,231 @@
+
+
+
+
+
+
+<body>
+
+<script>
+var user_id = "";
+if (localStorage.getItem('user_id') !== null) {
+    user_id = localStorage.getItem('user_id');
+}
+function log(action, body) {
+    try {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    } catch(err) {console.error(err)};
+}
+
+var searcher = lunr(function() {
+    this.field('name', 10);
+    this.field('tags', 100);
+    this.field('body');
+    this.field('description');
+    
+    this.ref('name');
+});
+$(document).ready(function() {
+    $("#search-bar").on('input propertychange', function() {
+        var needle = $(this).val();
+        if (needle == "") {
+            $(".dataset-card").show();
+        } else {
+            var results = searcher.search(needle);
+            $(".dataset-card").hide();
+            results.forEach(function (data) {
+                $("#"+data.ref).show();
+            });
+        }
+        log('search', needle);
+    });
+    log('load', 'index');
+    function doPoll(){
+        log('remain', 'index, '+$(document).scrollTop()+", "+$(document).height());
+    }
+    setInterval(doPoll, 5000);
+});
+</script>
+
+<div class="container">
+
+    <div class="page-header">
+        <img src='../_images/python.png' class='pull-left img-responsive' style='max-width:64px; max-height: 64px'>
+        <img src='../_images/corgis-logo-smaller.png' class='pull-right img-responsive'>
+        <h1>Python Datasets</h1>
+        <p class="lead">The <b>C</b>ollection of <b>R</b>eally <b>G</b>reat, <b>I</b>nteresting, <b>S</b>ituated Datasets</p>
+        <span class="text-muted">By Austin Cory Bart, Ryan Whitcomb, Jason Riddle, Omar Saleem, Dr. Eli Tilevich, Dr. Clifford A. Shaffer, Dr. Dennis Kafura</span><br>
+    </div>
+    
+    <div class='row'>
+    <div class='search-bar'>
+    <form class="form-horizontal">
+      <div class="form-group form-group-lg">
+        <label for="search-bar" class="col-sm-2 control-label">Filter</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="search-bar" placeholder="Keyword or phrase">
+        </div>
+      </div>
+    </form>
+    </div>
+    </div>
+    <hr>
+    
+    <div class="row">
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+      
+      <div class="media-left  media-middle">
+        <a href="broadway/broadway.html">
+          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="broadway/broadway.html">
+        <h4 class="media-heading">Broadway</h4>
+        </a>
+        This library holds data about Broadway shows, such as tickets sold.<br>
+        <i>broadway, musical, theatre, tickets</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "broadway",
+            'body': "This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry). You can view the data online at http://www.broadwayleague.com/.",
+            'description': "This library holds data about Broadway shows, such as tickets sold.",
+            'tags': ["broadway", "musical", "theatre", "tickets"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="classics">
+      
+      <div class="media-left  media-middle">
+        <a href="classics/classics.html">
+          <img class="media-object" src="classics/classics.png" alt="Classics" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="classics/classics.html">
+        <h4 class="media-heading">Classics</h4>
+        </a>
+        Records and computed statistics about the top 1000 books on Project Gutenberg.<br>
+        <i>classics, books, texts, text, book, classic, english, shakespeare, literature, novel, language, composition, writing, author, publication, words</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "classics",
+            'body': "Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural works, to 'encourage the creation and distribution of eBooks'. It was founded in 1971 by Michael S. Hart and is the oldest digital library. This dataset is a collection of the top 1000 most popular books on Project Gutenberg, as determined by downloads. Each book has information about its authorship, publication date, congressional classication, and a few other fields. It also has some simple, computed statistics based on common metrics such as sentiment analysis, Flesch Kincaid Reading level, and average sentence length.",
+            'description': "Records and computed statistics about the top 1000 books on Project Gutenberg.",
+            'tags': ["classics", "books", "texts", "text", "book", "classic", "english", "shakespeare", "literature", "novel", "language", "composition", "writing", "author", "publication", "words"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="airlines">
+      
+      <div class="media-left  media-middle">
+        <a href="airlines/airlines.html">
+          <img class="media-object" src="airlines/airlines.png" alt="Airlines" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="airlines/airlines.html">
+        <h4 class="media-heading">Airlines</h4>
+        </a>
+        Information about flight delays in major aiports since 2003.<br>
+        <i>airplane, airports, travel, plane, air, flights, delays, national, united states, transportation</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "airlines",
+            'body': "This dataset is all about flights in the united states, including information about the number, length, and type of delays. The data is reported for individual months at every major airport for every carrier. Additional information is available: http://www.rita.dot.gov/bts/help/aviation/html/understanding.html",
+            'description': "Information about flight delays in major aiports since 2003.",
+            'tags': ["airplane", "airports", "travel", "plane", "air", "flights", "delays", "national", "united states", "transportation"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="hydropower">
+      
+      <div class="media-left  media-middle">
+        <a href="hydropower/hydropower.html">
+          <img class="media-object" src="hydropower/hydropower.png" alt="Hydropower" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="hydropower/hydropower.html">
+        <h4 class="media-heading">Hydropower</h4>
+        </a>
+        Records about dams in the United States such as location, dimensions, and project information<br>
+        <i>hydropower, dams, lakes, rivers, waterways, irrigation, human consumption, industrial use, aquaculture, navigability, energy, electricity</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "hydropower",
+            'body': "Recent Federal policies and legislation focus on moving the nation towards a cleaner energy economy that includes developing environmentally appropriate renewable energy projects involving solar, wind and waves, geothermal, biofuels, and hydropower. The 2010 Federal Memorandum of Understanding for Hydropower and the Energy Policy Act of 2005 direct the U.S. Department of Reclamation to evaluate development of new hydropower projects at Federally-owned facilities and upgrade or rehabilitate existing hydropower generation facilities, as a contribution to the nation's clean energy goals. The following data describes the facilities currently being operated that contribute to nationwide renewable energy strategies.",
+            'description': "Records about dams in the United States such as location, dimensions, and project information",
+            'tags': ["hydropower", "dams", "lakes", "rivers", "waterways", "irrigation", "human consumption", "industrial use", "aquaculture", "navigability", "energy", "electricity"]
+        }
+    );
+    </script>
+    
+    </div>
+    
+    <div class="row">
+    <hr>
+    
+    <h2>Future Potential Datasets</h2>
+    
+    <p>The datasets listed below have not been fully implemented, but they could be! Feel free to consider them too.</p>
+    
+    <div class='col-md-8 col-md-offset-1'>
+    <ol>
+    <li>Agriculture: Datasets about agricultural statistics in the US (<a href="http://www.ers.usda.gov/data-products.aspx">Link</a>)</li>
+    <li>Cancer: Incidences of different kinds of cancer in the US.</li>
+    <li>Drug spending: Information about how much drugs cost to sell and produce.</li>
+    <li>Food: Information about food regulated by the US.</li>
+    <li>Foreign assistance: Reports of foreign assistance from the US to other countries.</li>
+    <li>Hospitals: Information about hospitals across the US.</li>
+    <li>Hydropower: Information about hydropower dams across the US.</li>
+    <li>Mortgage: HMDA data provide information regarding home mortgage lending activity. The Home Mortgage Disclosure Act (HMDA) was enacted by Congress in 1975 and was implemented by the Federal Reserve Board's Regulation C. On July 21, 2011, the rule-writing authority of Regulation C was transferred to the Consumer Financial Protection Bureau (CFPB). </li>
+    <li>New York Crime: Detailed information about crime reports in New York City.</li>
+    <li>Officer Shootings: Reports about shootings committed by officers, including race.</li>
+    <li>Religious groups: Information about membership in religious groups (<a href="http://www.thearda.com/rcms2010/">Link</a>)</li>
+    <li>State Department per Diem: Information about per diem reported by US State Department employees.</li>
+    <li>University crime: Reported statistics of crime on college campuses.</li>
+    <li>Youth risk: The Youth Risk Behavior Surveillance System (YRBSS) monitors six types of health-risk behaviors that contribute to the leading causes of death and disability among youth and adults, including: Behaviors that contribute to unintentional injuries and violence, Sexual behaviors that contribute to unintended pregnancy and sexually transmitted diseases, including HIV infection, Alcohol and other drug use, Tobacco use, Unhealthy dietary behaviors, Inadequate physical activity. YRBSS also measures the prevalence of obesity and asthma among youth and young adults.<a href="http://www.cdc.gov/healthyyouth/data/yrbs/data.htm">Link</a></li>
+    </ol>
+    </div>
+    
+    </div>
+    <div class="row">
+    
+    <br>
+    
+    <p>
+        If you still cannot find a good dataset, or you have an idea for a good dataset, feel free to suggest other ideas!
+    </p>
+    
+    </div>
+    
+</div>
+

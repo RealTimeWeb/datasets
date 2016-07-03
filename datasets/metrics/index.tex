@@ -1,35 +1,424 @@
 \begin{figure*}
-\begin{tabular}{ l | c c | c c c c |}
- & \multicolumn{2}{|c|}{Structure} & \multicolumn{4}{|c|}{Data Types} \\
-Name & ABF & Maximum Height & Lists & Objects & Booleans & Integers & Strings & Floats \\\hline
-airlines & 3 & 4 & 1 & 8 & 0 & 18 & 5 & 0\\
-billionaires & 4 & 4 & 1 & 6 & 4 & 4 & 12 & 2\\
-broadway & 11 & 2 & 1 & 1 & 0 & 7 & 3 & 0\\
-cars & 23 & 2 & 1 & 1 & 0 & 10 & 10 & 3\\
-classics & 4 & 5 & 5 & 10 & 0 & 14 & 10 & 14\\
-constructionpermits & 3 & 5 & 2 & 5 & 0 & 9 & 4 & 0\\
-constructionspending & 12 & 4 & 1 & 10 & 0 & 51 & 2 & 0\\
-drugbank & 9 & 5 & 7 & 3 & 0 & 0 & 18 & 2\\
-drugs & 5 & 4 & 2 & 2 & 0 & 6 & 3 & 0\\
-school & 3 & 6 & 6 & 15 & 0 & 24 & 2 & 7\\
-energy & 8 & 4 & 1 & 6 & 0 & 1 & 0 & 43\\
-finance & 61 & 5 & 2 & 4 & 0 & 240 & 1 & 0\\
-grads & 21 & 2 & 1 & 1 & 0 & 17 & 2 & 2\\
-health & 6 & 2 & 1 & 1 & 0 & 3 & 2 & 1\\
-races & 3 & 6 & 21 & 82 & 0 & 40 & 79 & 87\\
-immigration & 42 & 3 & 1 & 4 & 0 & 166 & 0 & 0\\
-injuries & 3 & 3 & 1 & 5 & 0 & 3 & 8 & 3\\
-labor & 2 & 6 & 1 & 73 & 0 & 11 & 39 & 39\\
-medalofhonor & 3 & 4 & 1 & 8 & 1 & 7 & 12 & 2\\
-music & 9 & 3 & 1 & 4 & 0 & 3 & 9 & 21\\
-publishers & 6 & 3 & 1 & 4 & 11 & 3 & 1 & 6\\
-realestate & 3 & 4 & 1 & 6 & 0 & 0 & 18 & 0\\
-retailservices & 15 & 4 & 1 & 6 & 0 & 31 & 2 & 9\\
-scripts & 4 & 5 & 4 & 4 & 0 & 3 & 11 & 1\\
-skyscrapers & 6 & 4 & 1 & 7 & 25 & 10 & 5 & 1\\
-slavery & 4 & 5 & 2 & 13 & 0 & 0 & 40 & 0\\
-suicideattacks & 3 & 4 & 3 & 8 & 1 & 7 & 15 & 0\\
-supremecourt & 3 & 5 & 1 & 29 & 7 & 36 & 43 & 0\\
-tate & 3 & 4 & 1 & 7 & 0 & 4 & 11 & 3\\
+\begin{tabular}{ l | c c | c c c c c c |}
+ & \multicolumn{2}{|c|}{Structure} & \multicolumn{6}{|c|}{Data Types} & \multicolumn{2}{|c|}{Data}\\
+Name & ABF & Height & Lists & Objects & Booleans & Integers & Strings & Floats & Entries & Size\\\hline
+aids & 5 & 4 & 1 & 5 & 0 & 16 & 1 & 5 &  & 2367334\\
+airlines & 3 & 4 & 1 & 8 & 0 & 18 & 5 & 0 &  & 30157358\\
+players & 5 & 4 & 5 & 5 & 0 & 13 & 6 & 0 &  & 18151781\\
+teams & 7 & 4 & 2 & 2 & 0 & 11 & 2 & 0 &  & 418301\\
+billionaires & 4 & 4 & 1 & 6 & 4 & 4 & 12 & 2 &  & 1444578\\
+books & 5 & 2 & 1 & 1 & 1 & 1 & 2 & 1 &  & 898\\
+broadway & 11 & 2 & 1 & 1 & 0 & 7 & 3 & 0 &  & 8457344\\
+cancer & 5 & 3 & 1 & 3 & 0 & 3 & 4 & 6 &  & 7091975\\
+cars & 23 & 2 & 1 & 1 & 0 & 10 & 10 & 3 &  & 14069072\\
+classics & 4 & 5 & 5 & 10 & 0 & 14 & 10 & 14 &  & 1360444\\
+constructionpermits & 3 & 5 & 2 & 5 & 0 & 9 & 4 & 0 &  & 3599110\\
+constructionspending & 12 & 4 & 1 & 10 & 0 & 51 & 2 & 0 &  & 809518\\
+crime & 3 & 5 & 1 & 8 & 0 & 10 & 2 & 10 &  & 53221689\\
+demographics & 5 & 4 & 1 & 11 & 0 & 18 & 2 & 32 &  & 5533844\\
+drugbank & 9 & 5 & 7 & 3 & 0 & 0 & 18 & 2 &  & 8597950\\
+drugs & 5 & 4 & 2 & 2 & 0 & 6 & 3 & 0 &  & 123621\\
+earthquakes & 5 & 3 & 1 & 4 & 0 & 7 & 4 & 6 &  & 3567648\\
+school & 3 & 6 & 6 & 15 & 0 & 24 & 2 & 7 &  & 60995\\
+election & 3 & 4 & 1 & 19 & 0 & 16 & 19 & 16 &  & 3128099\\
+energy & 8 & 4 & 1 & 6 & 0 & 1 & 0 & 43 &  & 71292\\
+finance & 61 & 5 & 2 & 4 & 0 & 240 & 1 & 0 &  & 8850412\\
+grads & 4 & 4 & 1 & 6 & 0 & 16 & 2 & 2 &  & 110659\\
+health & 6 & 2 & 1 & 1 & 0 & 3 & 2 & 1 &  & 1743261\\
+races & 3 & 6 & 21 & 82 & 0 & 40 & 79 & 87 &  & 662044\\
+hospitals & 5 & 3 & 1 & 4 & 0 & 7 & 11 & 2 &  & 2682333\\
+hydropower & 3 & 4 & 1 & 5 & 0 & 1 & 5 & 5 &  & 113989\\
+immigration & 42 & 3 & 1 & 4 & 0 & 166 & 0 & 0 &  & 30649\\
+injuries & 3 & 3 & 1 & 5 & 0 & 3 & 8 & 3 &  & 11367169\\
+labor & 2 & 6 & 1 & 73 & 0 & 11 & 39 & 39 &  & 1655873\\
+medalofhonor & 3 & 4 & 1 & 8 & 1 & 7 & 12 & 2 &  & 4189998\\
+music & 9 & 3 & 1 & 4 & 0 & 3 & 9 & 21 &  & 8803901\\
+players & 26 & 2 & 1 & 1 & 0 & 10 & 5 & 11 &  & 2228807\\
+games & 11 & 2 & 1 & 1 & 0 & 6 & 5 & 0 &  & 3052719\\
+publishers & 6 & 3 & 1 & 4 & 11 & 3 & 1 & 6 &  & 13746142\\
+realestate & 3 & 4 & 1 & 6 & 0 & 0 & 18 & 0 &  & 4461802\\
+retailservices & 34 & 4 & 1 & 6 & 0 & 189 & 2 & 9 &  & 2599335\\
+scripts & 4 & 5 & 4 & 4 & 0 & 3 & 11 & 1 &  & 36960302\\
+skyscrapers & 6 & 4 & 1 & 7 & 25 & 10 & 5 & 1 &  & 2280320\\
+slavery & 4 & 4 & 1 & 6 & 0 & 4 & 13 & 4 &  & 6099012\\
+soccer & 2 & 9 & 4 & 7 & 0 & 2 & 12 & 0 &  & 1617888\\
+crime & 3 & 5 & 1 & 8 & 0 & 11 & 1 & 9 &  & 1205727\\
+demographics & 5 & 4 & 1 & 11 & 0 & 18 & 1 & 32 &  & 92423\\
+suicideattacks & 3 & 4 & 3 & 8 & 1 & 7 & 15 & 0 &  & 3021293\\
+supremecourt & 3 & 5 & 1 & 29 & 7 & 36 & 43 & 0 &  & 20475340\\
+tate & 3 & 4 & 1 & 7 & 0 & 4 & 11 & 3 &  & 2068403\\
 \end{tabular}
 \end{figure*}
+
+aids
+death
+disease
+hiv
+orphans
+health
+countries
+world
+gender
+united~nations
+un
+airplane
+airports
+travel
+plane
+air
+flights
+delays
+national
+united~states
+transportation
+baseball
+sports
+baseball
+sports
+money
+rich
+wealthy
+people
+person
+billionaire
+books
+reading
+author
+pages
+english
+language
+literature
+broadway
+musical
+theatre
+tickets
+cancer
+death
+states
+gender
+race
+population
+crude~rate
+cars
+vehicles
+fuel
+classics
+books
+texts
+text
+book
+classic
+english
+shakespeare
+literature
+novel
+language
+composition
+writing
+author
+publication
+words
+construction
+permits
+us
+united~states
+america
+government
+buildings
+private
+units
+valuation
+housing
+construction
+spending
+us
+united~states
+america
+government
+buildings
+residential
+non-residential
+private
+public
+crime
+burglary
+larceny
+motor
+property
+violent
+assault
+murder
+rape
+robbery
+demographics
+population
+age
+ethnicity
+race
+language
+education
+foreign
+households
+income
+employment
+unemployment
+sales
+land~area
+counties
+drugs
+drug
+drugbank
+chemistry
+biology
+biochemistry
+proteins
+drugs
+substances
+drug~usage
+earthquakes
+nature
+disaster
+magnitude
+richter~scale
+latitude
+longitude
+school
+education
+K-12
+kindergarten
+learning
+teaching
+politics
+election
+votes
+counties
+candidate
+energy
+renewable
+united~states
+us
+nuclear
+fossil~fuels
+power
+finance
+government
+expenditure
+charges
+money
+united~states
+us
+graduation
+grads
+majors
+education
+college
+university
+higher~education
+jobs
+careers
+health
+diseases
+infection
+churchill~downs
+horses
+equines
+racing
+horse~racing
+gambling
+hospitals
+healthcare
+medicare
+outpatient
+patient
+doctor
+health
+hydropower
+dams
+lakes
+rivers
+waterways
+irrigation
+human~consumption
+industrial~use
+aquaculture
+navigability
+energy
+electricity
+immigration
+naturalization
+illegals
+permanants
+united~states
+us
+osha
+united~states
+us
+usa
+government
+health
+safety
+injury
+injuries
+hurt
+pain
+job
+work
+industry
+career
+occuptation
+safety
+hazard
+health
+labor
+race
+age
+sex
+gender
+america
+usa
+census
+employed
+unemployed
+employability
+job
+work
+civilian
+black
+white
+asian
+government
+us
+usa
+united~states
+military
+combat
+government
+army
+airforce
+marines
+navy
+fighting
+war
+award
+medal
+honor
+glory
+death
+music
+songs
+artists
+creativity
+media
+nfl
+football
+sports
+games
+nfl
+football
+sports
+games
+publishers
+amazon
+books
+sales
+genres
+literature
+english
+real
+estate
+buildings
+government
+building
+retail
+services
+government
+united~states
+usa
+us
+trade
+food
+services
+movies
+scripts
+gender
+buildings
+construction
+building
+skyscrapers
+international
+tall
+height
+tower
+slavery
+slave
+slaves
+buyer
+seller
+origin
+history
+economics
+soccer
+germany
+austrian
+Bundesliga
+football
+crime
+burglary
+larceny
+motor
+property
+violent
+assault
+murder
+rape
+robbery
+demographics
+population
+age
+ethnicity
+race
+language
+education
+foreign
+households
+income
+employment
+unemployment
+sales
+land~area
+states
+global
+attack
+damage
+kill
+hurt
+destroy
+pain
+suffering
+terror
+terrorism
+religion
+warfare
+war
+car
+bomb
+gun
+shooting
+us
+usa
+united~states
+government
+law
+legal
+court
+case
+supreme
+judge
+barrister
+lawyer
+federal
+national
+artwork
+art
+sculpture
+tate

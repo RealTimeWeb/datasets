@@ -4,6 +4,14 @@
       "count": 4, 
       "average branching factor": 42
     }, 
+    "tags": [
+      "immigration", 
+      "naturalization", 
+      "illegals", 
+      "permanants", 
+      "united states", 
+      "us"
+    ], 
     "atomics": {
       "count": 166, 
       "nones": 0, 
@@ -23,6 +31,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 10, 
+    "locals": 0, 
+    "size": 30649
   }
 }

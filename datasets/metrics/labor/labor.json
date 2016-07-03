@@ -4,6 +4,26 @@
       "count": 73, 
       "average branching factor": 2
     }, 
+    "tags": [
+      "labor", 
+      "race", 
+      "age", 
+      "sex", 
+      "gender", 
+      "america", 
+      "usa", 
+      "census", 
+      "employed", 
+      "unemployed", 
+      "employability", 
+      "job", 
+      "work", 
+      "civilian", 
+      "black", 
+      "white", 
+      "asian", 
+      "government"
+    ], 
     "atomics": {
       "count": 89, 
       "nones": 0, 
@@ -23,6 +43,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 528, 
+    "locals": 0, 
+    "size": 1655873
   }
 }

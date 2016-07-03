@@ -4,6 +4,11 @@
       "count": 1, 
       "average branching factor": 6
     }, 
+    "tags": [
+      "health", 
+      "diseases", 
+      "infection"
+    ], 
     "atomics": {
       "count": 6, 
       "nones": 0, 
@@ -23,6 +28,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 14265, 
+    "locals": 0, 
+    "size": 1743261
   }
 }

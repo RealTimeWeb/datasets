@@ -1,5 +1,6 @@
 package corgis.classics.domain;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -11,9 +12,6 @@ import org.json.simple.JSONObject;
 
 import corgis.classics.domain.Publication;
 import corgis.classics.domain.Author;
-import corgis.classics.domain.Languages;
-import corgis.classics.domain.Subjects;
-import corgis.classics.domain.CongressClassifications;
 
 /**
  * 
@@ -23,9 +21,9 @@ public class Bibliography {
     private Publication publication;
     private Author author;
     private String title;
-    private Languages languages;
-    private Subjects subjects;
-    private CongressClassifications congressClassifications;
+    private ArrayList<String> languages;
+    private ArrayList<String> subjects;
+    private ArrayList<String> congressClassifications;
     private String type;
     
     
@@ -59,7 +57,7 @@ public class Bibliography {
     /*
      * @return 
      */
-    public Languages getLanguages() {
+    public ArrayList<String> getLanguages() {
         return this.languages;
     }
     
@@ -68,7 +66,7 @@ public class Bibliography {
     /*
      * @return 
      */
-    public Subjects getSubjects() {
+    public ArrayList<String> getSubjects() {
         return this.subjects;
     }
     
@@ -77,7 +75,7 @@ public class Bibliography {
     /*
      * @return 
      */
-    public CongressClassifications getCongressClassifications() {
+    public ArrayList<String> getCongressClassifications() {
         return this.congressClassifications;
     }
     
@@ -108,14 +106,26 @@ public class Bibliography {
 	 * @return 
 	 */
     public Bibliography(JSONObject json_data) {
-        try {
-            this.publication = new Publication((JSONObject)json_data.get("publication"));
-            this.author = new Author((JSONObject)json_data.get("author"));
-            this.title = (String)json_data.get("title");
-            this.languages = new Languages((JSONObject)json_data.get("languages"));
-            this.subjects = new Subjects((JSONObject)json_data.get("subjects"));
-            this.congressClassifications = new CongressClassifications((JSONObject)json_data.get("congress classifications"));
-            this.type = (String)json_data.get("type");
+        try {// Publication
+            this.publication = new Publication((JSONObject)json_data.get("Publication"));// Author
+            this.author = new Author((JSONObject)json_data.get("Author"));// Title
+            this.title = (String)json_data.get("Title");// Languages
+            this.languages = new ArrayList<String>();
+            Iterator<Object> languagesIter = ((List<Object>)json_data.get("Languages")).iterator();
+            while (languagesIter.hasNext()) {
+                this.languages.add(new String((String)languagesIter.next()));
+            }// Subjects
+            this.subjects = new ArrayList<String>();
+            Iterator<Object> subjectsIter = ((List<Object>)json_data.get("Subjects")).iterator();
+            while (subjectsIter.hasNext()) {
+                this.subjects.add(new String((String)subjectsIter.next()));
+            }// Congress Classifications
+            this.congressClassifications = new ArrayList<String>();
+            Iterator<Object> congressClassificationsIter = ((List<Object>)json_data.get("Congress Classifications")).iterator();
+            while (congressClassificationsIter.hasNext()) {
+                this.congressClassifications.add(new String((String)congressClassificationsIter.next()));
+            }// Type
+            this.type = (String)json_data.get("Type");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Bibliography; a field was missing.");
     		e.printStackTrace();

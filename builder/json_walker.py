@@ -16,7 +16,13 @@ class JsonWalker(object):
         return ".".join([self.name]+self.path)
         
     def type_check(self, value):
-        return value.__class__.__name__
+        if isinstance(value, list):
+            if value:
+                return 'list[{}]'.format(self.type_check(value[0]))
+            else:
+                return 'list[Unknown]'
+        else:
+            return value.__class__.__name__
         
     def walk(self, chunk, parent_name):
         if isinstance(chunk, dict):

@@ -119,7 +119,10 @@ def create_json_conversion(data, type, key):
     if is_list(type):
         was_list = True
         type = strip_list(type)
-    if type in json_conversion:
+    # Because simplejson is weird and Java is type heavy
+    if type in ('int', 'integer'):
+        return "new Integer(((Long){}).intValue())".format(data)
+    elif type in json_conversion:
         return "{}{}".format(json_conversion[type], data)
     elif was_list:
         return "new {}((JSONArray){})".format(convert_to_java_type(type, key), data)
@@ -141,13 +144,16 @@ def create_xml_conversion(data, type):
     else:
         return xml_conversion[type]
                     
-def convert_to_java_type(source_type, source_name=None):
+def convert_to_java_type(source_type, source_name=None, something=None):
     if source_name is None:
         source_name = source_type
     was_list = is_list(source_type)
     if was_list:
         source_type = strip_list(source_type) #chomp out the "list(" and ")"
-        source_name = strip_list(source_name)
+        if is_list(source_name):
+            source_name = strip_list(source_name)
+        #print(source_type, source_name)
+    source_name = clean_invalid_characters(source_name)
     target_type = java_type_names.get(source_type, camel_case_caps(source_name))
     if was_list: # if it's a list, apply it to each element
         return "ArrayList<{}>".format(target_type)
@@ -209,8 +215,11 @@ def to_java_variable(source):
     else: # otherwise just return it normally
         return "a_{}".format(converted_type)
         
+def clean_invalid_characters(astr):
+    return astr.replace("'", '').replace('.', " ").replace('"', '').replace('#', 'number').replace('-', ' ').replace('?', '').replace('1', 'one').replace('2', 'two').replace('3', 'three').replace('4', 'four').replace('5', 'five').replace('6', 'six').replace('7', 'seven').replace('8', 'eight').replace('9', 'nine').replace('0', 'zero').replace('/', ' ')
+        
 def sluggify(astr):
-    return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_")
+    return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_").replace("'", "_")
     
 EXTENDED_TYPE_INFO = {
     'dict': '<span data-toggle="tooltip" title="Dictionary">dict</span>',
@@ -267,9 +276,10 @@ env.filters['convert_builtin'] = convert_builtin
 env.filters['parse_bark'] = parse_bark
 env.filters['make_array'] = make_array
 env.filters['enforce_json_array'] = enforce_json_array
+env.filters['clean_invalid_characters'] = clean_invalid_characters
 
 def json_path(path, data):
-    entries = path.split(".")
+    entries = path.split(".")[2:]
     for entry in entries:
         if entry.startswith("["):
             entry = int(entry[1:-1])
@@ -278,7 +288,7 @@ def json_path(path, data):
 
 def build_metafiles(model):
     name = model['metadata']['name']
-    root = 'java/{name}/'.format(name=name)
+    root = 'java/{name}/'.format(name=flat_case(name))
     return {root+'.classpath': env.get_template('.classpath').render(**model),
             root+'.project':   env.get_template('.project').render(**model),
             root+'build.xml':  env.get_template('build.xml').render(**model)}
@@ -296,7 +306,7 @@ def build_classes(model):
     template = env.get_template('domain.java')
     for structure_name, structure in model['structures'].items():
         for path, data in structure['dictionaries'].items():
-            filename = root + camel_case_caps(data['name']) + '.java'
+            filename = root + camel_case_caps(clean_invalid_characters(data['name'])) + '.java'
             files[filename] = template.render(dictionary=data, **model)
     return files
                 

@@ -4,6 +4,11 @@
       "count": 2, 
       "average branching factor": 5
     }, 
+    "tags": [
+      "drugs", 
+      "substances", 
+      "drug usage"
+    ], 
     "atomics": {
       "count": 9, 
       "nones": 0, 
@@ -23,6 +28,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 22, 
+    "locals": 0, 
+    "size": 123621
   }
 }

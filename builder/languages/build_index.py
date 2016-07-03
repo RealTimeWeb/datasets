@@ -10,6 +10,12 @@ index_environment = Environment(loader=FileSystemLoader(templates))
 index_environment.filters['flat_case'] = flat_case
 index_environment.filters['tojson'] = json.dumps
 
+def write_jinja(template_file, new_filename, **kwargs):
+    data = (index_environment.get_template(template_file)
+                             .render(**kwargs))
+    with open(new_filename, 'w') as output:
+        output.write(data)
+
 INDEX_NAME = 'index.json'
 CATEGORIES = {
     'python': 'language',
@@ -53,14 +59,12 @@ def rebuild_index(target):
         index = json.load(index_file)
     # Create the language index
     LANGUAGE_INDEX_PATH = os.path.join(target, 'index.html')
-    main_index = (index_environment.get_template('main_index.html')
-                                   .render(index=index))
-    with open(LANGUAGE_INDEX_PATH, 'w') as output:
-        output.write(main_index)
+    LANGUAGE_INDEX_PATH_EMBED = os.path.join(target, 'libraries.html')
+    write_jinja('main_index.html', LANGUAGE_INDEX_PATH, index=index, standalone=True)
+    write_jinja('main_index.html', LANGUAGE_INDEX_PATH_EMBED, index=index, standalone=False)
     # Create each individual language index
     for language, language_data in index.items():
         SPEC_INDEX_PATH = os.path.join(target, language, 'index.html')
-        spec_index = (index_environment.get_template('spec_index.html')
-                                       .render(specs=language_data['datasets'], language=language))
-        with open(SPEC_INDEX_PATH, 'w') as output:
-            output.write(spec_index)
+        SPEC_INDEX_PATH_EMBED = os.path.join(target, language, language+'.html')
+        write_jinja('spec_index.html', SPEC_INDEX_PATH, specs=language_data['datasets'], language=language, standalone=True)
+        write_jinja('spec_index.html', SPEC_INDEX_PATH_EMBED, specs=language_data['datasets'], language=language, standalone=False)

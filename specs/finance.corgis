@@ -16,13 +16,13 @@ local:
     row: record
     indexes:
       - name: state
-        jsonpath: state
+        jsonpath: record.[0].state
 interfaces:
   - name: get finances by state
     args:
       - name: state
         type: str
-        default: "'Alaska'"
+        default: 'Alaska'
         matches: SELECT DISTINCT state FROM finance
         description: The name of the state (e.g., "Alaska").
     returns: record

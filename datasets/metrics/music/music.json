@@ -4,6 +4,13 @@
       "count": 4, 
       "average branching factor": 9
     }, 
+    "tags": [
+      "music", 
+      "songs", 
+      "artists", 
+      "creativity", 
+      "media"
+    ], 
     "atomics": {
       "count": 35, 
       "nones": 0, 
@@ -23,6 +30,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 10000, 
+    "locals": 0, 
+    "size": 8803901
   }
 }

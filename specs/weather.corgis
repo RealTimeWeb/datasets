@@ -25,3 +25,38 @@ interfaces:
     test:
         sql: SELECT data FROM weather LIMIT {hardware}
         post: json()
+  - name: get weather by day
+    description: Given a day, returns all the weather reports for that day in the database.
+    args:
+      - name: day
+        default: '6-1-16'
+        type: str
+        matches: SELECT DISTINCT report FROM weather
+        description: The day to get reports.
+    production:
+        sql: SELECT data FROM weather WHERE year=?
+        post: json()
+    test:
+        sql: SELECT data FROM weather WHERE year=? LIMIT {hardware}
+        post: json()
+    returns: list[report]
+  - name: get weather by city
+    description: Given a city, returns all the weather reports for that city in the database.
+    args:
+      - name: city
+        default: 'Blacksburg'
+        type: str
+        matches: SELECT DISTINCT report FROM weather
+        description: The city to get reports.
+    production:
+        sql: SELECT data FROM weather WHERE year=?
+        post: json()
+    test:
+        sql: SELECT data FROM weather WHERE year=? LIMIT {hardware}
+        post: json()
+    returns: list[report]
+structures:
+    "weather.[0].Weather Conditions": 'An empty list represents no significant weather to report for that day'
+    "weather.[0].Data.Precipitation": 'Inches'
+    "weather.[0].Data.Temperature": 'Degrees Farenheit'
+    "weather.[0].": 'Miles per Hour'

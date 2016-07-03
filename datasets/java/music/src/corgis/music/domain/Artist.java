@@ -1,5 +1,6 @@
 package corgis.music.domain;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -19,10 +20,10 @@ public class Artist {
     private String terms;
     private String name;
     private Double familiarity;
-    private Double longitude;
+    private String longitude;
     private String id;
     private String location;
-    private Double latitude;
+    private String latitude;
     private String similar;
     private Double hotttnesss;
     
@@ -66,7 +67,7 @@ public class Artist {
     /*
      * @return 
      */
-    public Double getLongitude() {
+    public String getLongitude() {
         return this.longitude;
     }
     
@@ -93,7 +94,7 @@ public class Artist {
     /*
      * @return 
      */
-    public Double getLatitude() {
+    public String getLatitude() {
         return this.latitude;
     }
     
@@ -133,16 +134,17 @@ public class Artist {
 	 * @return 
 	 */
     public Artist(JSONObject json_data) {
-        try {
-            this.terms_Freq = (Double)json_data.get("terms_freq");
-            this.terms = (String)json_data.get("terms");
-            this.name = (String)json_data.get("name");
-            this.familiarity = (Double)json_data.get("familiarity");
-            this.longitude = (Double)json_data.get("longitude");
-            this.id = (String)json_data.get("id");
-            this.location = (String)json_data.get("location");
-            this.latitude = (Double)json_data.get("latitude");
-            this.similar = (String)json_data.get("similar");
+        try {// terms_freq
+        	System.out.println(json_data);
+            this.terms_Freq = (Double)json_data.get("terms_freq");// terms
+            this.terms = (String)json_data.get("terms");// name
+            this.name = (String)json_data.get("name");// familiarity
+            this.familiarity = (Double)json_data.get("familiarity");// longitude
+            this.longitude = (String)json_data.get("longitude");// id
+            this.id = (String)json_data.get("id");// location
+            this.location = (String)json_data.get("location");// latitude
+            this.latitude = (String)json_data.get("latitude");// similar
+            this.similar = (String)json_data.get("similar");// hotttnesss
             this.hotttnesss = (Double)json_data.get("hotttnesss");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Artist; a field was missing.");

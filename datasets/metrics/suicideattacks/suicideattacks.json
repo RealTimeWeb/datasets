@@ -4,6 +4,25 @@
       "count": 8, 
       "average branching factor": 3
     }, 
+    "tags": [
+      "global", 
+      "attack", 
+      "damage", 
+      "kill", 
+      "hurt", 
+      "destroy", 
+      "pain", 
+      "suffering", 
+      "terror", 
+      "terrorism", 
+      "religion", 
+      "warfare", 
+      "war", 
+      "car", 
+      "bomb", 
+      "gun", 
+      "shooting"
+    ], 
     "atomics": {
       "count": 23, 
       "nones": 0, 
@@ -23,6 +42,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 4616, 
+    "locals": 0, 
+    "size": 3021293
   }
 }

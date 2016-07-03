@@ -1,15 +1,26 @@
 {
   "grads": {
     "dicts": {
-      "count": 1, 
-      "average branching factor": 21
+      "count": 6, 
+      "average branching factor": 4
     }, 
+    "tags": [
+      "graduation", 
+      "grads", 
+      "majors", 
+      "education", 
+      "college", 
+      "university", 
+      "higher education", 
+      "jobs", 
+      "careers"
+    ], 
     "atomics": {
-      "count": 21, 
+      "count": 20, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 17, 
+      "ints": 16, 
       "strings": 2, 
       "floats": 2
     }, 
@@ -18,11 +29,13 @@
       "lengths": 173, 
       "complex": 1
     }, 
-    "heights": 2, 
+    "heights": 4, 
     "unions": {
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 173, 
+    "locals": 0, 
+    "size": 110659
   }
 }

@@ -4,6 +4,14 @@
       "count": 82, 
       "average branching factor": 3
     }, 
+    "tags": [
+      "churchill downs", 
+      "horses", 
+      "equines", 
+      "racing", 
+      "horse racing", 
+      "gambling"
+    ], 
     "atomics": {
       "count": 220, 
       "nones": 0, 
@@ -23,6 +31,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 109, 
+    "locals": 0, 
+    "size": 662044
   }
 }

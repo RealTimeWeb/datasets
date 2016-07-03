@@ -4,6 +4,11 @@
       "count": 4, 
       "average branching factor": 4
     }, 
+    "tags": [
+      "movies", 
+      "scripts", 
+      "gender"
+    ], 
     "atomics": {
       "count": 15, 
       "nones": 0, 
@@ -23,6 +28,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 617, 
+    "locals": 0, 
+    "size": 36960302
   }
 }

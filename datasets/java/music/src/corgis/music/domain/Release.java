@@ -1,5 +1,6 @@
 package corgis.music.domain;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -15,14 +16,14 @@ import org.json.simple.JSONObject;
  */
 public class Release {
 	
-    private Long id;
+    private Integer id;
     private String name;
     
     
     /*
      * @return 
      */
-    public Long getId() {
+    public Integer getId() {
         return this.id;
     }
     
@@ -53,8 +54,8 @@ public class Release {
 	 * @return 
 	 */
     public Release(JSONObject json_data) {
-        try {
-            this.id = (Long)json_data.get("id");
+        try {// id
+            this.id = new Integer(((Long)json_data.get("id")).intValue());// name
             this.name = (String)json_data.get("name");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Release; a field was missing.");

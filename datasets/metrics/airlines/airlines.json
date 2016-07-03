@@ -4,6 +4,18 @@
       "count": 8, 
       "average branching factor": 3
     }, 
+    "tags": [
+      "airplane", 
+      "airports", 
+      "travel", 
+      "plane", 
+      "air", 
+      "flights", 
+      "delays", 
+      "national", 
+      "united states", 
+      "transportation"
+    ], 
     "atomics": {
       "count": 23, 
       "nones": 0, 
@@ -23,6 +35,8 @@
       "count": 0, 
       "sizes": 0
     }, 
-    "locals": 0
+    "length": 54013, 
+    "locals": 0, 
+    "size": 30157358
   }
 }
