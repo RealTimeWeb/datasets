@@ -30,7 +30,7 @@ public class EarthquakesLibrary {
         
         System.out.println("Testing production GetEarthquakes");
         ArrayList<Earthquake> list_of_earthquake_1_production = earthquakesLibrary.getEarthquakes();
-        System.out.println(list_of_earthquake_1_production.size());
+        
         
         
     }
