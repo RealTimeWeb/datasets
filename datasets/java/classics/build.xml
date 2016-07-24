@@ -52,21 +52,27 @@
 	    <!-- Put everything in ${build} into the classics-${DSTAMP}.jar file -->
 	    <jar jarfile="${dist}/classics-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
+            <fileset file="classics.db" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
+            <manifest><attribute name="Main-Class" value="corgis.classics.ClassicsLibrary" /></manifest>
 		</jar>
 		
 		<!-- Put everything in ${build} and ${docs} into the classics-doc-${DSTAMP}.jar file -->
 		<jar jarfile="${dist}/classics-doc-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
 			<fileset dir="docs" includes="**" />
+            <fileset file="classics.db" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
+            <manifest><attribute name="Main-Class" value="corgis.classics.ClassicsLibrary" /></manifest>
 		</jar>
 		
 		<!-- Put everything in ${build} and ${src} into the classics-src-${DSTAMP}.jar file -->
 		<jar jarfile="${dist}/classics-src-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
 			<fileset dir="src" includes="**" />
+            <fileset file="classics.db" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
+            <manifest><attribute name="Main-Class" value="corgis.classics.ClassicsLibrary" /></manifest>
 		</jar>
 	</target>
 	

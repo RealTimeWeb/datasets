@@ -60,7 +60,6 @@ public class Sentiments {
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Sentiments; a field was missing.");
     		e.printStackTrace();
-    		System.exit(0);;
     	} catch (ClassCastException e) {
     		System.err.println("Could not convert the response to a Sentiments; a field had the wrong structure.");
     		e.printStackTrace();

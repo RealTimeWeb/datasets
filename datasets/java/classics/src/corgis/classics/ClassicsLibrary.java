@@ -108,7 +108,6 @@ public class ClassicsLibrary {
         ArrayList<Book> result = new ArrayList<Book>();
         try {
             while (rs.next()) {
-            	System.out.println("LOOPING");
                 String raw_result = rs.getString(1);
                 Book parsed = null;
                 if (test) {

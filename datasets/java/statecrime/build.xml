@@ -52,21 +52,27 @@
 	    <!-- Put everything in ${build} into the statecrime-${DSTAMP}.jar file -->
 	    <jar jarfile="${dist}/statecrime-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
+            <fileset file="statecrime.db" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
+            <manifest><attribute name="Main-Class" value="corgis.statecrime.StateCrimeLibrary" /></manifest>
 		</jar>
 		
 		<!-- Put everything in ${build} and ${docs} into the statecrime-doc-${DSTAMP}.jar file -->
 		<jar jarfile="${dist}/statecrime-doc-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
 			<fileset dir="docs" includes="**" />
+            <fileset file="statecrime.db" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
+            <manifest><attribute name="Main-Class" value="corgis.statecrime.StateCrimeLibrary" /></manifest>
 		</jar>
 		
 		<!-- Put everything in ${build} and ${src} into the statecrime-src-${DSTAMP}.jar file -->
 		<jar jarfile="${dist}/statecrime-src-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
 			<fileset dir="src" includes="**" />
+            <fileset file="statecrime.db" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
+            <manifest><attribute name="Main-Class" value="corgis.statecrime.StateCrimeLibrary" /></manifest>
 		</jar>
 	</target>
 	

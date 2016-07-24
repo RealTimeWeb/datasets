@@ -125,7 +125,6 @@ public class Difficulty {
 	 */
     public Difficulty(JSONObject json_data) {
         try {// Flesch Reading Ease
-        	System.out.println("Diff:"+json_data);
             this.fleschReadingEase = (Double)json_data.get("Flesch Reading Ease");// Automated Readability Index
             this.automatedReadabilityIndex = (Double)json_data.get("Automated Readability Index");// Coleman Liau Index
             this.colemanLiauIndex = (Double)json_data.get("Coleman Liau Index");// Flesch Kincaid Grade
@@ -138,7 +137,6 @@ public class Difficulty {
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Difficulty; a field was missing.");
     		e.printStackTrace();
-    		System.exit(0);
     	} catch (ClassCastException e) {
     		System.err.println("Could not convert the response to a Difficulty; a field had the wrong structure.");
     		e.printStackTrace();

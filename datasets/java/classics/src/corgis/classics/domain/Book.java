@@ -10,7 +10,7 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.classics.domain.Statistics;
+import corgis.classics.domain.Metrics;
 import corgis.classics.domain.Bibliography;
 import corgis.classics.domain.Metadata;
 
@@ -19,7 +19,7 @@ import corgis.classics.domain.Metadata;
  */
 public class Book {
 	
-    private Statistics statistics;
+    private Metrics metrics;
     private Bibliography bibliography;
     private Metadata metadata;
     
@@ -27,8 +27,8 @@ public class Book {
     /*
      * @return 
      */
-    public Statistics getStatistics() {
-        return this.statistics;
+    public Metrics getMetrics() {
+        return this.metrics;
     }
     
     
@@ -58,7 +58,7 @@ public class Book {
 	 * @return String
 	 */
 	public String toString() {
-		return "Book[" +statistics+", "+bibliography+", "+metadata+"]";
+		return "Book[" +metrics+", "+bibliography+", "+metadata+"]";
 	}
 	
 	/**
@@ -67,8 +67,8 @@ public class Book {
 	 * @return 
 	 */
     public Book(JSONObject json_data) {
-        try {// Statistics
-            this.statistics = new Statistics((JSONObject)json_data.get("Statistics"));// Bibliography
+        try {// Metrics
+            this.metrics = new Metrics((JSONObject)json_data.get("Metrics"));// Bibliography
             this.bibliography = new Bibliography((JSONObject)json_data.get("Bibliography"));// Metadata
             this.metadata = new Metadata((JSONObject)json_data.get("Metadata"));
         } catch (NullPointerException e) {

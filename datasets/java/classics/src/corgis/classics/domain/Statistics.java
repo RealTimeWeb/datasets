@@ -10,25 +10,27 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.classics.domain.Difficulty;
-import corgis.classics.domain.Statistics;
-import corgis.classics.domain.Sentiments;
 
 /**
  * 
  */
 public class Statistics {
 	
-    private Difficulty difficulty;
-    private Statistics statistics;
-    private Sentiments sentiments;
+    private Integer polysyllables;
+    private Double averageLetterPerWord;
+    private Double averageSentenceLength;
+    private Integer characters;
+    private Integer words;
+    private Integer sentences;
+    private Double averageSentencePerWord;
+    private Double syllables;
     
     
     /*
      * @return 
      */
-    public Difficulty getDifficulty() {
-        return this.difficulty;
+    public Integer getPolysyllables() {
+        return this.polysyllables;
     }
     
     
@@ -36,8 +38,8 @@ public class Statistics {
     /*
      * @return 
      */
-    public Statistics getStatistics() {
-        return this.statistics;
+    public Double getAverageLetterPerWord() {
+        return this.averageLetterPerWord;
     }
     
     
@@ -45,8 +47,53 @@ public class Statistics {
     /*
      * @return 
      */
-    public Sentiments getSentiments() {
-        return this.sentiments;
+    public Double getAverageSentenceLength() {
+        return this.averageSentenceLength;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getCharacters() {
+        return this.characters;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getWords() {
+        return this.words;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getSentences() {
+        return this.sentences;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Double getAverageSentencePerWord() {
+        return this.averageSentencePerWord;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Double getSyllables() {
+        return this.syllables;
     }
     
     
@@ -58,7 +105,7 @@ public class Statistics {
 	 * @return String
 	 */
 	public String toString() {
-		return "Statistics[" +difficulty+", "+statistics+", "+sentiments+"]";
+		return "Statistics[" +polysyllables+", "+averageLetterPerWord+", "+averageSentenceLength+", "+characters+", "+words+", "+sentences+", "+averageSentencePerWord+", "+syllables+"]";
 	}
 	
 	/**
@@ -67,11 +114,15 @@ public class Statistics {
 	 * @return 
 	 */
     public Statistics(JSONObject json_data) {
-        try {// Difficulty
-        	System.out.println("STATS:"+json_data);
-            this.difficulty = new Difficulty((JSONObject)json_data.get("Difficulty"));// Statistics
-            this.statistics = new Statistics((JSONObject)json_data.get("Statistics"));// Sentiments
-            this.sentiments = new Sentiments((JSONObject)json_data.get("Sentiments"));
+        try {// Polysyllables
+            this.polysyllables = new Integer(((Long)json_data.get("Polysyllables")).intValue());// Average Letter per Word
+            this.averageLetterPerWord = (Double)json_data.get("Average Letter per Word");// Average Sentence Length
+            this.averageSentenceLength = (Double)json_data.get("Average Sentence Length");// Characters
+            this.characters = new Integer(((Long)json_data.get("Characters")).intValue());// Words
+            this.words = new Integer(((Long)json_data.get("Words")).intValue());// Sentences
+            this.sentences = new Integer(((Long)json_data.get("Sentences")).intValue());// Average Sentence per Word
+            this.averageSentencePerWord = (Double)json_data.get("Average Sentence per Word");// Syllables
+            this.syllables = (Double)json_data.get("Syllables");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Statistics; a field was missing.");
     		e.printStackTrace();
