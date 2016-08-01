@@ -25,6 +25,7 @@ CATEGORIES = {
     'csv': 'raw',
     'json': 'raw',
     'visualizer': 'other',
+    'blockpy': 'other',
     'metrics': 'other'
 }
 

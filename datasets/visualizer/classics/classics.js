@@ -13744,8 +13744,8 @@ classics = [
       12.3, 
       9.4
     ], 
-    "name": "Book.[0].Statistics.Difficulty.Automated Readability Index", 
-    "pretty": "Statistics Difficulty: Automated Readability Index", 
+    "name": "Book.[0].Metrics.Difficulty.Automated Readability Index", 
+    "pretty": "Metrics Difficulty: Automated Readability Index", 
     "index": false
   }, 
   {
@@ -14622,8 +14622,8 @@ classics = [
       13.22, 
       9.86
     ], 
-    "name": "Book.[0].Statistics.Difficulty.Coleman Liau Index", 
-    "pretty": "Statistics Difficulty: Coleman Liau Index", 
+    "name": "Book.[0].Metrics.Difficulty.Coleman Liau Index", 
+    "pretty": "Metrics Difficulty: Coleman Liau Index", 
     "index": false
   }, 
   {
@@ -15500,8 +15500,8 @@ classics = [
       5.56, 
       6.24
     ], 
-    "name": "Book.[0].Statistics.Difficulty.Dale Chall Readability Score", 
-    "pretty": "Statistics Difficulty: Dale Chall Readability Score", 
+    "name": "Book.[0].Metrics.Difficulty.Dale Chall Readability Score", 
+    "pretty": "Metrics Difficulty: Dale Chall Readability Score", 
     "index": false
   }, 
   {
@@ -16378,14 +16378,12 @@ classics = [
       49821, 
       10665
     ], 
-    "name": "Book.[0].Statistics.Difficulty.Difficult Words", 
-    "pretty": "Statistics Difficulty: Difficult Words", 
+    "name": "Book.[0].Metrics.Difficulty.Difficult Words", 
+    "pretty": "Metrics Difficulty: Difficult Words", 
     "index": false
   }, 
   {
-    "comment": "The \"Flesch-Kincaid Grade Level Formula\" presents a score as a U.S. grade level, making it easier to understand. It uses a similar formula to the Flesch Reading Ease measure.", 
-    "index": false, 
-    "name": "Book.[0].Statistics.Difficulty.Flesch Kincaid Grade", 
+    "type": "number", 
     "data": [
       6.0, 
       20.4, 
@@ -17258,13 +17256,12 @@ classics = [
       8.7, 
       7.6
     ], 
-    "pretty": "Statistics Difficulty: Flesch Kincaid Grade", 
-    "type": "number"
+    "name": "Book.[0].Metrics.Difficulty.Flesch Kincaid Grade", 
+    "pretty": "Metrics Difficulty: Flesch Kincaid Grade", 
+    "index": false
   }, 
   {
-    "comment": "The 'Flesch Reading Ease' uses the sentence length (number of words per sentence) and the number of syllables per word in an equation to calculate the reading ease. Texts with a very high Flesch reading Ease score (about 100) are very easy to read, have short sentences and no words of more than two syllables.", 
-    "index": false, 
-    "name": "Book.[0].Statistics.Difficulty.Flesch Reading Ease", 
+    "type": "number", 
     "data": [
       75.2, 
       37.65, 
@@ -18137,8 +18134,9 @@ classics = [
       62.68, 
       71.14
     ], 
-    "pretty": "Statistics Difficulty: Flesch Reading Ease", 
-    "type": "number"
+    "name": "Book.[0].Metrics.Difficulty.Flesch Reading Ease", 
+    "pretty": "Metrics Difficulty: Flesch Reading Ease", 
+    "index": false
   }, 
   {
     "type": "number", 
@@ -19014,8 +19012,8 @@ classics = [
       8.8, 
       8.8
     ], 
-    "name": "Book.[0].Statistics.Difficulty.Gunning Fog", 
-    "pretty": "Statistics Difficulty: Gunning Fog", 
+    "name": "Book.[0].Metrics.Difficulty.Gunning Fog", 
+    "pretty": "Metrics Difficulty: Gunning Fog", 
     "index": false
   }, 
   {
@@ -19892,8 +19890,8 @@ classics = [
       2.0, 
       4.5
     ], 
-    "name": "Book.[0].Statistics.Difficulty.Linear Write Formula", 
-    "pretty": "Statistics Difficulty: Linear Write Formula", 
+    "name": "Book.[0].Metrics.Difficulty.Linear Write Formula", 
+    "pretty": "Metrics Difficulty: Linear Write Formula", 
     "index": false
   }, 
   {
@@ -20770,8 +20768,8 @@ classics = [
       8.8, 
       3.1
     ], 
-    "name": "Book.[0].Statistics.Difficulty.Smog Index", 
-    "pretty": "Statistics Difficulty: Smog Index", 
+    "name": "Book.[0].Metrics.Difficulty.Smog Index", 
+    "pretty": "Metrics Difficulty: Smog Index", 
     "index": false
   }, 
   {
@@ -21648,8 +21646,8 @@ classics = [
       0.11224187416199208, 
       0.059622581728734886
     ], 
-    "name": "Book.[0].Statistics.Sentiments.Polarity", 
-    "pretty": "Statistics Sentiments: Polarity", 
+    "name": "Book.[0].Metrics.Sentiments.Polarity", 
+    "pretty": "Metrics Sentiments: Polarity", 
     "index": false
   }, 
   {
@@ -22526,8 +22524,8 @@ classics = [
       0.4400144316605153, 
       0.4354433298058611
     ], 
-    "name": "Book.[0].Statistics.Sentiments.Subjectivity", 
-    "pretty": "Statistics Sentiments: Subjectivity", 
+    "name": "Book.[0].Metrics.Sentiments.Subjectivity", 
+    "pretty": "Metrics Sentiments: Subjectivity", 
     "index": false
   }, 
   {
@@ -23404,8 +23402,8 @@ classics = [
       5.31, 
       4.73
     ], 
-    "name": "Book.[0].Statistics.Statistics.Average Letter per Word", 
-    "pretty": "Statistics Statistics: Average Letter Per Word", 
+    "name": "Book.[0].Metrics.Statistics.Average Letter per Word", 
+    "pretty": "Metrics Statistics: Average Letter Per Word", 
     "index": false
   }, 
   {
@@ -24282,8 +24280,8 @@ classics = [
       17.0, 
       17.0
     ], 
-    "name": "Book.[0].Statistics.Statistics.Average Sentence Length", 
-    "pretty": "Statistics Statistics: Average Sentence Length", 
+    "name": "Book.[0].Metrics.Statistics.Average Sentence Length", 
+    "pretty": "Metrics Statistics: Average Sentence Length", 
     "index": false
   }, 
   {
@@ -25160,8 +25158,8 @@ classics = [
       0.06, 
       0.06
     ], 
-    "name": "Book.[0].Statistics.Statistics.Average Sentence per Word", 
-    "pretty": "Statistics Statistics: Average Sentence Per Word", 
+    "name": "Book.[0].Metrics.Statistics.Average Sentence per Word", 
+    "pretty": "Metrics Statistics: Average Sentence Per Word", 
     "index": false
   }, 
   {
@@ -26038,8 +26036,8 @@ classics = [
       3883244, 
       451687
     ], 
-    "name": "Book.[0].Statistics.Statistics.Characters", 
-    "pretty": "Statistics Statistics: Characters", 
+    "name": "Book.[0].Metrics.Statistics.Characters", 
+    "pretty": "Metrics Statistics: Characters", 
     "index": false
   }, 
   {
@@ -26916,8 +26914,8 @@ classics = [
       46730, 
       2595
     ], 
-    "name": "Book.[0].Statistics.Statistics.Polysyllables", 
-    "pretty": "Statistics Statistics: Polysyllables", 
+    "name": "Book.[0].Metrics.Statistics.Polysyllables", 
+    "pretty": "Metrics Statistics: Polysyllables", 
     "index": false
   }, 
   {
@@ -27794,8 +27792,8 @@ classics = [
       41950, 
       5580
     ], 
-    "name": "Book.[0].Statistics.Statistics.Sentences", 
-    "pretty": "Statistics Statistics: Sentences", 
+    "name": "Book.[0].Metrics.Statistics.Sentences", 
+    "pretty": "Metrics Statistics: Sentences", 
     "index": false
   }, 
   {
@@ -28672,8 +28670,8 @@ classics = [
       1083170.7, 
       130093.2
     ], 
-    "name": "Book.[0].Statistics.Statistics.Syllables", 
-    "pretty": "Statistics Statistics: Syllables", 
+    "name": "Book.[0].Metrics.Statistics.Syllables", 
+    "pretty": "Metrics Statistics: Syllables", 
     "index": false
   }, 
   {
@@ -29550,8 +29548,8 @@ classics = [
       730715, 
       95496
     ], 
-    "name": "Book.[0].Statistics.Statistics.Words", 
-    "pretty": "Statistics Statistics: Words", 
+    "name": "Book.[0].Metrics.Statistics.Words", 
+    "pretty": "Metrics Statistics: Words", 
     "index": false
   }
 ]

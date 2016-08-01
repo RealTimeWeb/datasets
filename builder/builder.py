@@ -15,6 +15,7 @@ from languages.build_java import build_java
 from languages.build_sql import build_sql
 from languages.build_metrics import build_metrics
 from languages.build_visualizer import build_visualizer
+from languages.build_blockpy import build_blockpy
 from languages.build_index import add_to_index, rebuild_index
 
 try:
@@ -82,6 +83,8 @@ if __name__ == '__main__':
                 files, moves = build_metrics(to_dict(compiled), args.fast)
             elif language_target == "visualizer":
                 files, moves = build_visualizer(to_dict(compiled), args.fast)
+            elif language_target == "blockpy":
+                files, moves = build_blockpy(to_dict(compiled), args.fast)
             else:
                 print("Unknown language target!")
                 break

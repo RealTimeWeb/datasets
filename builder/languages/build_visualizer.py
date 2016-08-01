@@ -108,6 +108,7 @@ def build_metafiles(model):
             }
 
 class JsonLeafNodes(object):    
+    
     def __init__(self, name, data):
         self.result = {}
         self.path = []
@@ -136,7 +137,7 @@ class JsonLeafNodes(object):
             self.walk(value, key)
             self.path.pop()
     def walk_list(self, a_list, parent_name):
-        return        
+        return
         if not a_list:
             return
         self.path.append("[0]")
@@ -178,10 +179,10 @@ def remove_outliers(lodol):
                     bad_keys.add(data['name'])
                     bad_indexes.add(index)
                     evils += 1
-            print(data['name'], mean-4*std, mean+4*std, evils)
+            #print(data['name'], mean-4*std, mean+4*std, evils)
     
-    print("Bad indexes:", len(bad_indexes), "/", len(lodol[0]['data']))
-    print("Contributing keys:", ', '.join(bad_keys))
+    #print("Bad indexes:", len(bad_indexes), "/", len(lodol[0]['data']))
+    #print("Contributing keys:", ', '.join(bad_keys))
     for data in lodol:
         data['data'] = [v for i, v in enumerate(data['data']) if i not in bad_indexes]
         inter = data['name'].split('.', 2)[2]
@@ -214,7 +215,7 @@ def build_locals(model, js_path):
             output_bar_file.write(name+"_bar = ")
             if row_type == "json":
                 data_list = json.load(local_file)
-                data = [JsonLeafNodes(row+'.[0]', item).result for item in data_list]                
+                data = [JsonLeafNodes(row+'.[0]', item).result for item in data_list]
                 data = lod_to_dol(data)
                 bar_data = []
                 remove_outliers(data)

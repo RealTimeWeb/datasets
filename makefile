@@ -8,6 +8,8 @@ racket:
 	python builder/builder.py -l racket specs/$(target).corgis ./datasets
 visualizer:
 	python builder/builder.py -l visualizer specs/$(target).corgis ./datasets
+blockpy:
+	python builder/builder.py -l blockpy specs/$(target).corgis ./datasets
 python:
 	python builder/builder.py -l python specs/$(target).corgis ./datasets
 all:

@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Data Explorer Demo</title>
-    
-    <!-- JQuery -->
-    <script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    
-    <!-- Bootstrap JS -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
-    
+
     <link rel="stylesheet" href="../../_lib/bootstrap-tagsinput.css"></script>
     <link href="../../_lib/multiselect.css" media="screen" rel="stylesheet" type="text/css">
     <script src="../../_lib/jquery.multi-select.js" type="text/javascript"></script>
@@ -28,8 +7,6 @@
     <script src="../../_lib/jquery.quicksearch.js"></script>
     
     <style id='d3-styling'>
-    
-
     body {
       font: 14px sans-serif;
     }
@@ -76,6 +53,7 @@ function captureImage() {
     img.onload = function(){
         // Now that the image has loaded, put the image into a canvas element.
         var canvas = d3.select('body').append('canvas').node();
+        canvas.hide();
         canvas.width = svg_object.attr('width');
         canvas.height = svg_object.attr('height');
         var ctx = canvas.getContext('2d');
@@ -89,7 +67,7 @@ function captureImage() {
         // this is now the base64 encoded version of our PNG! you could optionally 
         // redirect the user to download the PNG by sending them to the url with 
         // `window.location.href= canvasUrl`.
-        img2.src = canvasUrl; 
+        img2.src = canvasUrl;
     }
     // start loading the image.
     img.src = url;
@@ -436,7 +414,7 @@ $(document).ready(function () {
             filter_index = null;
         }
         
-        var left = mainModel.selected.first().data
+        var left = mainModel.selected.first().data;
         var actualData, xs, ys;
         if (chart.id == 'bar') {
             var indexes = $('#select-bar-keys').val();
@@ -479,10 +457,15 @@ $(document).ready(function () {
                 var indices = filter_index_values().data;
                 ys = [];
                 for (var i = 0, length = indices.length; i < length; i = i+1) {
-                    if (filter_value == indices[i]) {
+                    var key_value = indices[i];
+                    if (typeof key_value) {
+                        key_value = key_value.replace(',', '')
+                    }
+                    if (filter_value == key_value) {
                         ys.push(left[i]);
                     }
                 }
+                console.log(ys);
             } else {
                 ys = left;
             }
@@ -493,7 +476,10 @@ $(document).ready(function () {
         
         if (chart.id == 'hist') {
             x.domain([d3.min(ys), d3.max(ys)]);
-            var bins = parseInt(mainModel.settings.bins());
+            var bins = parseInt(mainModel.settings.bins())+1;
+            if (isNaN(bins)) {
+                bins = 10;
+            }
             tempScale = d3.scale.linear().domain([0, bins]).range(d3.extent(ys));
             tickArray = d3.range(bins).map(tempScale).map(function(e) {
                 return e;
@@ -548,7 +534,8 @@ $(document).ready(function () {
         } else if (chart.id == 'bar') {
             bars = canvas.selectAll('.bar')
                             .style('fill', mainModel.settings.color().fill)
-                            .style('outline', '1px solid '+mainModel.settings.color().stroke)
+                            .style('stroke', mainModel.settings.color().stroke)
+                            //.style('outline', '1px solid '+mainModel.settings.color().stroke)
                             .data(actualData);
             bars.exit()
                 .transition()
@@ -561,7 +548,8 @@ $(document).ready(function () {
             bars.enter().append("rect")
                 .attr("class", "bar")
                 .style('fill', mainModel.settings.color().fill)
-                .style('outline', '1px solid '+mainModel.settings.color().stroke)
+                .style('stroke', mainModel.settings.color().stroke)
+                //.style('outline', '1px solid '+mainModel.settings.color().stroke)
                 .attr("y", y(0))
                 .attr("height", height - y(0));
                 
@@ -580,7 +568,8 @@ $(document).ready(function () {
         } else if (chart.id == 'hist') {
             bars = canvas.selectAll('.bar')
                             .style('fill', mainModel.settings.color().fill)
-                            .style('outline', '1px solid '+mainModel.settings.color().stroke)
+                            .style('stroke', mainModel.settings.color().stroke)
+                            //.style('outline', '1px solid '+mainModel.settings.color().stroke)
                             .data(histMapper);
             bars.exit()
                 .transition()
@@ -594,13 +583,15 @@ $(document).ready(function () {
                 .attr("class", "bar")
                 .attr("y", y(0))
                 .style('fill', mainModel.settings.color().fill)
-                .style('outline', '1px solid '+mainModel.settings.color().stroke)
+                .style('stroke', mainModel.settings.color().stroke)
+                //.style('outline', '1px solid '+mainModel.settings.color().stroke)
                 .attr("height", height - y(0));
                 
+            console.log(width, histMapper.length, width/histMapper.length);
             bars.transition()
                 .duration(500)
                 .attr("x", function(d) { return x(d.x); })
-                .attr("width", width/(histMapper.length-1)-1) 
+                .attr("width", width/(histMapper.length))
                 .attr("y", function(d) { return y(d.y); })
                 .attr("height", function(d) { return height - y(d.y); }); 
         }
@@ -687,6 +678,7 @@ $(document).ready(function () {
         d3.selectAll("text.title-text")
             .text(mainModel.settings.title());
     });
+    forceUpdate = changeDataset;
 });
     </script>
     
@@ -849,17 +841,13 @@ $(document).ready(function () {
         This dataset has no indexes, so you cannot use it in a bar chart.
     </div>
     <div class='col-md-6' data-bind="visible: selected.chart().id == 'bar'  && selected.bar_dataset().data.length > 0">
-        <label for="choose-second-bar" data-bind="text: selected.chart().category"></label>
+        <label for="choose-second-bar">Group By</label>
         <select class="form-control vertically-align" id="choose-second-bar"
                     data-bind="options: mainModel.selected.bar_dataset().data,
                                value: selected.category,
                                optionsText: 'pretty'">
         </select>
         <div data-bind="text: bars.length > 0 ? selected.category().comment : ''"></div>
-    </div>
-<!-- Key selector, bar charts -->
-    <div class='col-md-6' data-bind="visible: selected.chart().id == 'bar'  && selected.bar_dataset().data.length > 0">
-        <label for="select-bar-keys-named[]">Group By</label>
         <div data-bind="text: selected.third().comment"></div>
         <select multiple=multiple id='select-bar-keys' name='select-bar-keys-named[]'>
         </select>
@@ -899,6 +887,3 @@ $(document).ready(function () {
 
 </div>
 
-</body>
-
-</html>

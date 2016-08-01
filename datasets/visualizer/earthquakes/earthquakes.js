@@ -88507,7 +88507,7 @@ earthquakes = [
     ], 
     "name": "earthquake.[0].location.state", 
     "pretty": "Location: State", 
-    "index": true
+    "index": false
   }, 
   {
     "type": "number", 
