@@ -1,4 +1,9 @@
 Traceback (most recent call last):
+<<<<<<< HEAD
+  File "C:\Users\Ryan\Documents\2016 Summer\Research\datasets\builder\build.py", line 46, in build_dir
+    output.write(data)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 7933: ordinal not in range(128)
+=======
   File "C:\Users\acbart\Projects\datasets\builder\build.py", line 52, in build_dir
     shutil.copy(src, new_folder)
   File "C:\Python27\lib\shutil.py", line 119, in copy
@@ -6,3 +11,4 @@ Traceback (most recent call last):
   File "C:\Python27\lib\shutil.py", line 82, in copyfile
     with open(src, 'rb') as fsrc:
 IOError: [Errno 2] No such file or directory: 'specs\\kepler/kepler_stellar.html'
+>>>>>>> 6dab6c92c166b851cd6aecdd59c4219f06982eb3
