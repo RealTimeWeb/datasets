@@ -1,0 +1,39 @@
+{
+  "finance": {
+    "dicts": {
+      "count": 25, 
+      "average branching factor": 7
+    }, 
+    "tags": [
+      "finance", 
+      "government", 
+      "expenditure", 
+      "charges", 
+      "money", 
+      "united states", 
+      "us"
+    ], 
+    "atomics": {
+      "count": 151, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 150, 
+      "strings": 1, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 918, 
+      "complex": 1
+    }, 
+    "heights": 5, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 918, 
+    "locals": 0, 
+    "size": 5738653
+  }
+}

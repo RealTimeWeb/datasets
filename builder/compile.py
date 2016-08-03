@@ -294,6 +294,7 @@ class Compiler(object):
             local.name = de_identifier(self.require_field(location, "name", data, "", str))
             location = "{}.{}".format(in_location, clean_identifier(local.name))
             local.row = self.typecheck_field(location, "row", data, local.name, str)
+            local.order = self.typecheck_field(location, "order", data, "Index", str)
             local.file = self.require_field(location, "file", data, "", str)
             local.file = os.path.join(self.path, local.file)
             local.type = local.file.split(".")[-1].lower()
@@ -327,7 +328,7 @@ class Compiler(object):
             argument.name = self.require_field(location, "name", data, "", str)
             location = "{}.{}".format(in_location, clean_identifier(argument.name))
             argument.type = self.require_field(location, "type", data, "", str)
-            argument.default = self.recommend_field(location, "default", data, "", str)
+            argument.default = self.recommend_field(location, "default", data, "", (str, int, float))
             argument.matches = self.typecheck_field(location, "matches", data, "", str)
             argument.description = self.recommend_field(location, "description", 
                             data, "", str)
@@ -418,19 +419,37 @@ class Compiler(object):
         self.package.locals = self.walk_locals(spec)
         self.package.structures_comments = self.walk_structures(spec)
         self.package.structures = {}
+        leaves = set()
         for local in self.package.locals:
             if os.path.exists(local.file):
                 with open(local.file) as json_file:
-                    walked = JsonWalker(local.name, self.package.structures_comments).walk(json.load(json_file), local.row)
+                    walked = JsonWalker(local.name, self.package.structures_comments).walk(json.load(json_file),    local.row)
+                    if walked.empty_list_warnings:
+                        for location in walked.empty_list_warnings:
+                            self.warning("Empty list at {}".format(location))
                     self.package.structures[local.name] = {
                         'lists': walked.lists,
                         'dictionaries': walked.dictionaries,
                     }
+                    leaves.update(walked.leaves)
             else:
                 self.warning('Could not find local data file {}.'.format(local.file))
+        print(leaves)
+        for local in self.package.locals:
+            for index in local.indexes:
+                if index.jsonpath not in leaves:
+                    print("Index {} in {} has unknown jsonpath {}".format(index.name, local.name, index.jsonpath))
+        for comment_path in self.package.structures_comments.keys():
+            if comment_path not in leaves:
+                print("Comment has unknown jsonpath {}".format(comment_path))
         
         # HTTP specs
         if 'http' in spec:
             self.package.https = self.walk_https(spec)
             self.package.lookup_https = {h.name: h for h in self.package.https}
+        
+        if 'questions' in spec:
+            self.package.questions = spec['questions']
+        else:
+            self.package.questions = []
         

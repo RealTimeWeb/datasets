@@ -1,0 +1,41 @@
+{
+  "development": {
+    "dicts": {
+      "count": 6, 
+      "average branching factor": 5
+    }, 
+    "tags": [
+      "world", 
+      "countries", 
+      "development", 
+      "health", 
+      "population", 
+      "urban", 
+      "rural", 
+      "agriculture", 
+      "infrastructure"
+    ], 
+    "atomics": {
+      "count": 25, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 1, 
+      "strings": 1, 
+      "floats": 23
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 6426, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 6426, 
+    "locals": 0, 
+    "size": 6909784
+  }
+}

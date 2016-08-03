@@ -12,7 +12,7 @@ metadata:
 
         citation: http://www.cnn.com/election/primaries/counties/va/Dem
 local:
-  - file: election_results.json
+  - file: election.json
     name: election
     row: result
 interfaces:

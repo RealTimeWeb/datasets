@@ -1,0 +1,36 @@
+{
+  "broadway": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 11
+    }, 
+    "tags": [
+      "broadway", 
+      "musical", 
+      "theatre", 
+      "tickets"
+    ], 
+    "atomics": {
+      "count": 11, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 7, 
+      "strings": 3, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 41750, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 41750, 
+    "locals": 0, 
+    "size": 8457344
+  }
+}

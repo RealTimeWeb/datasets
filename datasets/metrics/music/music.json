@@ -1,0 +1,37 @@
+{
+  "music": {
+    "dicts": {
+      "count": 4, 
+      "average branching factor": 9
+    }, 
+    "tags": [
+      "music", 
+      "songs", 
+      "artists", 
+      "creativity", 
+      "media"
+    ], 
+    "atomics": {
+      "count": 35, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 3, 
+      "strings": 9, 
+      "floats": 23
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 10000, 
+      "complex": 1
+    }, 
+    "heights": 3, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 10000, 
+    "locals": 0, 
+    "size": 9041179
+  }
+}

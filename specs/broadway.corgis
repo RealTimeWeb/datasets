@@ -16,7 +16,7 @@ local:
     row: production
     indexes:
       - name: theatre
-        jsonpath: theatre
+        jsonpath: production.[0].theatre
 interfaces:
   - name: get shows
     returns: list[production]
@@ -33,7 +33,7 @@ interfaces:
     args:
       - name: theatre
         type: str
-        default: '"friedman"'
+        default: friedman
         matches: SELECT DISTINCT theatre FROM broadway
         description: The name of the theatre (e.g., "friedman").
     test:

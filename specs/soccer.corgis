@@ -14,7 +14,7 @@ local:
     name: soccer
     indexes:
       - name: name
-        jsonpath: name
+        jsonpath: soccer.[0].name
 interfaces:
   - name: get games
     description: Returns information about all of the soccer games for a given league.

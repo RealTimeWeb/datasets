@@ -1,0 +1,2397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Finance Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <img class="img-rounded pull-right" src="finance.png" alt="Finance" style="max-width: 128px; max-height: 128px;">
+        
+        <h1>Finance Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+        <span class="text-muted">Version 1, created 11/1/2015</span><br>
+        <span class="text-muted">Tags: finance, government, expenditure, charges, money, united states, us</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_finances_by_state'>get_finances_by_state</a></li>
+        <li><a href='#get_finances'>get_finances</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states. The data contain detail of revenue by source, expenditure by object and function, indebtedness by term, and assets by purpose. This data goes back for almost two decades across every date.
+
+    </p>
+    
+    
+    <p>
+    <i>http://www.census.gov//govs/state/about_the_survey.html</i>
+    </p>
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="finance.py?forcedownload=1" download="finance.py" target="_blank">
+            <strong>finance.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="finance.db?forcedownload=1" download="finance.db" target="_blank">
+            <strong>finance.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 2 functions you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">finance</span>
+<span class="n">a_record</span> <span class="o">=</span> <span class="n">finance</span><span class="o">.</span><span class="n">get_finances_by_state</span><span class="p">(</span><span class="s">&quot;Alaska&quot;</span><span class="p">)</span>
+<span class="n">list_of_record</span> <span class="o">=</span> <span class="n">finance</span><span class="o">.</span><span class="n">get_finances</span><span class="p">()</span>
+</pre></div>
+
+
+
+
+    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">finance</span>
+<span class="c"># These may be slow!</span>
+<span class="n">list_of_record</span> <span class="o">=</span> <span class="n">finance</span><span class="o">.</span><span class="n">get_finances</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_finances_by_state'>finance.get_finances_by_state(state)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Retuns financial data about a single state.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>state</b>: <i>Str</i></h5>
+    <p class="list-group-item-text">The name of the state (e.g., "Alaska").
+    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
+    </p>
+</li>
+
+
+</ul>
+
+</div>
+
+<h4 id='get_finances'>finance.get_finances(test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns financial data about all the states.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-finance'>Explore finance data</button>
+    </div>
+    
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-finance").click(function() {
+        $( "#explore-finance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-finance' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-finance-__0__").click(function() {
+            $( "#explore-finance-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-finance-__0__-Details-Insurance-Trust' title='Dictionary (9 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Insurance Trust Other Securities"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6229427</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Insurance Trust Cash and Deposits"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1718782</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Insurance Trust State and Local Securities Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Insurance Trust Securities Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8112690</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Insurance Trust Federal Agency Securities"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Insurance Trust Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1122612</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Insurance Trust"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1122612</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Insurance Trust Cash and Securities"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>9962332</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Insurance Trust Federal Securities"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1883263</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Insurance-Trust" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Other-Securities").click(function() {
+            $( "#explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Other-Securities" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Cash-and-Deposits").click(function() {
+            $( "#explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Cash-and-Deposits" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-State-and-Local-Securities-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-State-and-Local-Securities-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Securities-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Securities-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Federal-Agency-Securities").click(function() {
+            $( "#explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Federal-Agency-Securities" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust").click(function() {
+            $( "#explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Cash-and-Securities").click(function() {
+            $( "#explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Cash-and-Securities" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Federal-Securities").click(function() {
+            $( "#explore-finance-__0__-Details-Insurance-Trust-Insurance-Trust-Federal-Securities" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Correction' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Correction Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>13529</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Correction NEC Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>13529</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Correction NEC Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>130881</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Correction Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>296108</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Correction Institutions Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>165227</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Correction" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Correction-Correction-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Correction-Correction-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Correction-Correction-NEC-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Correction-Correction-NEC-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Correction-Correction-NEC-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Correction-Correction-NEC-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Correction-Correction-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Correction-Correction-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Correction-Correction-Institutions-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Correction-Correction-Institutions-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Employment' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Unemployment Comp Total Cash and Securities"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>544529</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Employment Security Administration Expenditure Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>37401</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Employee Retirement Total Cash and Securities"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8699175</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Employment Security Administration Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Employee Retirement Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>712514</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Unemployment Comp Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>146857</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Employment" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Employment-Unemployment-Comp-Total-Cash-and-Securities").click(function() {
+            $( "#explore-finance-__0__-Details-Employment-Unemployment-Comp-Total-Cash-and-Securities" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Employment-Employment-Security-Administration-Expenditure-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Employment-Employment-Security-Administration-Expenditure-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Employment-Employee-Retirement-Total-Cash-and-Securities").click(function() {
+            $( "#explore-finance-__0__-Details-Employment-Employee-Retirement-Total-Cash-and-Securities" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Employment-Employment-Security-Administration-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Employment-Employment-Security-Administration-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Employment-Employee-Retirement-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Employment-Employee-Retirement-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Employment-Unemployment-Comp-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Employment-Unemployment-Comp-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"State"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Oklahoma"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Totals"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Totals'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Details"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>NEC - Not Elsewhere Defined</td> </tr>
+            
+            <tr> <td><code>"Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1996</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-State").click(function() {
+            $( "#explore-finance-__0__-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals").click(function() {
+            $( "#explore-finance-__0__-Totals" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details").click(function() {
+            $( "#explore-finance-__0__-Details" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Year").click(function() {
+            $( "#explore-finance-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Natural-Resources-Agriculture' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Agriculture Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>273</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Agriculture Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>67855</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Federal Agriculture Farm Income Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Federal Agriculture Farm Income Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Federal Farm Credit Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Federal Farm Credit Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Natural-Resources-Agriculture" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Agriculture-Agriculture-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Agriculture-Agriculture-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Agriculture-Agriculture-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Agriculture-Agriculture-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Agriculture-Federal-Agriculture-Farm-Income-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Agriculture-Federal-Agriculture-Farm-Income-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Agriculture-Federal-Agriculture-Farm-Income-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Agriculture-Federal-Agriculture-Farm-Income-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Agriculture-Federal-Farm-Credit-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Agriculture-Federal-Farm-Credit-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Agriculture-Federal-Farm-Credit-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Agriculture-Federal-Farm-Credit-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Natural-Resources-Fish-and-Game' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Fish and Game Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>331</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Fish and Game Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>23231</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Natural-Resources-Fish-and-Game" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Fish-and-Game-Fish-and-Game-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Fish-and-Game-Fish-and-Game-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Fish-and-Game-Fish-and-Game-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Fish-and-Game-Fish-and-Game-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Intergovernmental' title='Dictionary (10 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Intergovernmental to Combined and Unallocable"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>75015</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Intergovernmental to Federal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>41125</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Intergovernmental to Municipalities"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Intergovernmental to Counties"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>377518</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Intergovernmental to State"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Intergovernmental to Townships"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Intergovernmental to Special Districts"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>5319</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Intergovernmental Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2536908</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Intergovernmental to Local"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2495783</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Intergovernmental to School Districts"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2037931</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Intergovernmental" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Combined-and-Unallocable").click(function() {
+            $( "#explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Combined-and-Unallocable" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Federal").click(function() {
+            $( "#explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Federal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Municipalities").click(function() {
+            $( "#explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Municipalities" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Counties").click(function() {
+            $( "#explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Counties" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-State").click(function() {
+            $( "#explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Townships").click(function() {
+            $( "#explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Townships" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Special-Districts").click(function() {
+            $( "#explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Special-Districts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Intergovernmental-Intergovernmental-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Intergovernmental-Intergovernmental-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Local").click(function() {
+            $( "#explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-Local" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-School-Districts").click(function() {
+            $( "#explore-finance-__0__-Details-Intergovernmental-Intergovernmental-to-School-Districts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details' title='Dictionary (13 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Education"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Education'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Transportation"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Transportation'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Natural Resources"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Natural-Resources'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Correction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Correction'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Utilities"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Utilities'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Health"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Health'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Public Welfare"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Public-Welfare'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Financial Aid"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Financial-Aid'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Welfare"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Welfare'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Waste"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Waste'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Employment"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Employment'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Intergovernmental'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Insurance Trust"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Insurance-Trust'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education").click(function() {
+            $( "#explore-finance-__0__-Details-Education" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Correction").click(function() {
+            $( "#explore-finance-__0__-Details-Correction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Utilities").click(function() {
+            $( "#explore-finance-__0__-Details-Utilities" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Health").click(function() {
+            $( "#explore-finance-__0__-Details-Health" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Public-Welfare").click(function() {
+            $( "#explore-finance-__0__-Details-Public-Welfare" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Welfare").click(function() {
+            $( "#explore-finance-__0__-Details-Welfare" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Waste").click(function() {
+            $( "#explore-finance-__0__-Details-Waste" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Employment").click(function() {
+            $( "#explore-finance-__0__-Details-Employment" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Insurance-Trust").click(function() {
+            $( "#explore-finance-__0__-Details-Insurance-Trust" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Financial-Aid' title='Dictionary (13 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Federal Agency Securities Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Beginning Long Term Debt Total Outstanding"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Categorical Assistance Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>170160</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Cash Assistance Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>9074</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Categorical Assistance Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>41042</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Cash and Securities Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>14606637</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Assistance and Subsidies"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>206533</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Cash Assistance Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Borrowing Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Sinking Fund Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1379240</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Securities Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8112690</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Bond Fund Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>250936</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Cash and Deposits Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6363087</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Financial-Aid" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Federal-Agency-Securities-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Federal-Agency-Securities-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Beginning-Long-Term-Debt-Total-Outstanding").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Beginning-Long-Term-Debt-Total-Outstanding" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Categorical-Assistance-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Categorical-Assistance-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Cash-Assistance-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Cash-Assistance-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Categorical-Assistance-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Categorical-Assistance-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Cash-and-Securities-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Cash-and-Securities-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Assistance-and-Subsidies").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Assistance-and-Subsidies" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Cash-Assistance-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Cash-Assistance-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Borrowing-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Borrowing-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Sinking-Fund-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Sinking-Fund-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Securities-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Securities-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Bond-Fund-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Bond-Fund-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Financial-Aid-Cash-and-Deposits-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Financial-Aid-Cash-and-Deposits-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Transportation-Highways' title='Dictionary (8 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Regular Highways Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>213859</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Toll Highways Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>82275</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Highways Direct"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>618099</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Highways Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>213859</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Highways Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>831958</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Highways Land and Equipment"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>50890</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Highways Construction Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>408413</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Regular Highways Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>749683</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Transportation-Highways" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Highways-Regular-Highways-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Highways-Regular-Highways-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Highways-Toll-Highways-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Highways-Toll-Highways-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Highways-Highways-Direct").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Highways-Highways-Direct" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Highways-Highways-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Highways-Highways-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Highways-Highways-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Highways-Highways-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Highways-Highways-Land-and-Equipment").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Highways-Highways-Land-and-Equipment" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Highways-Highways-Construction-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Highways-Highways-Construction-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Highways-Regular-Highways-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Highways-Regular-Highways-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Education' title='Dictionary (14 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Education-NEC Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>348</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Education Equipment"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>66084</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Edcation Assistance and Subsidies"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>68341</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Education-NEC Expenditure Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>154591</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Education Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3475725</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Elementary Secondary Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2053367</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Education Equipment and Land"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>69335</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Higher Education-NEC Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1061281</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Education Construction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>63357</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Elementary Secondary Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2038577</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Higher Education-NEC Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Education Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2038925</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Higher Education-Auxilliary Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>206486</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Education Other Current Operation"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1235767</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Education" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Education-NEC-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Education-NEC-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Education-Equipment").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Education-Equipment" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Edcation-Assistance-and-Subsidies").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Edcation-Assistance-and-Subsidies" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Education-NEC-Expenditure-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Education-NEC-Expenditure-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Education-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Education-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Elementary-Secondary-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Elementary-Secondary-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Education-Equipment-and-Land").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Education-Equipment-and-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Higher-Education-NEC-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Higher-Education-NEC-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Education-Construction").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Education-Construction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Elementary-Secondary-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Elementary-Secondary-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Higher-Education-NEC-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Higher-Education-NEC-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Education-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Education-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Higher-Education-Auxilliary-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Higher-Education-Auxilliary-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Education-Education-Other-Current-Operation").click(function() {
+            $( "#explore-finance-__0__-Details-Education-Education-Other-Current-Operation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Utilities' title='Dictionary (9 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Water Utility Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2417</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Gas Utility Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4553</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Utilities Current Operation"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>138479</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Utilities Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>149505</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Utilities Equipment and Land"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>374</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Utilities Construction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>10652</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Utilities Interest Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Transit Utility Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Electric Utility Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>142535</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Utilities" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Utilities-Water-Utility-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Utilities-Water-Utility-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Utilities-Gas-Utility-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Utilities-Gas-Utility-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Utilities-Utilities-Current-Operation").click(function() {
+            $( "#explore-finance-__0__-Details-Utilities-Utilities-Current-Operation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Utilities-Utilities-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Utilities-Utilities-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Utilities-Utilities-Equipment-and-Land").click(function() {
+            $( "#explore-finance-__0__-Details-Utilities-Utilities-Equipment-and-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Utilities-Utilities-Construction").click(function() {
+            $( "#explore-finance-__0__-Details-Utilities-Utilities-Construction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Utilities-Utilities-Interest-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Utilities-Utilities-Interest-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Utilities-Transit-Utility-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Utilities-Transit-Utility-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Utilities-Electric-Utility-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Utilities-Electric-Utility-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Waste' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Sewerage Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>24316</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Solid Waste Management Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>169</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Sewerage Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>23940</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Solid Waste Management Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3937</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Waste" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Waste-Sewerage-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Waste-Sewerage-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Waste-Solid-Waste-Management-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Waste-Solid-Waste-Management-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Waste-Sewerage-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Waste-Sewerage-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Waste-Solid-Waste-Management-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Waste-Solid-Waste-Management-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Totals' title='Dictionary (24 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Insurance trust  revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2206642</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Capital outlay"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>711251</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"State intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Miscellaneous"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>407354</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Charges"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>933593</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Construction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>516787</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>9024966</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"General revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8155980</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Miscellaneous commercial activity"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1968</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Other insurance trust revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Worker's comp revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>295603</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Equipment and land"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>194464</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Unemployment comp revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>206068</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Selective sales tax"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>659669</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Sales tax"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1870060</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"License tax"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>658486</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Federal intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2119474</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"General expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>7752849</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Utility revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>246482</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>10609104</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Tax"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4617688</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Local intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>77871</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2197345</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Employee retirement revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1704971</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Totals" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Insurance-trust--revenue").click(function() {
+            $( "#explore-finance-__0__-Totals-Insurance-trust--revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Capital-outlay").click(function() {
+            $( "#explore-finance-__0__-Totals-Capital-outlay" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-State-intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Totals-State-intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Miscellaneous").click(function() {
+            $( "#explore-finance-__0__-Totals-Miscellaneous" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Charges").click(function() {
+            $( "#explore-finance-__0__-Totals-Charges" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Construction").click(function() {
+            $( "#explore-finance-__0__-Totals-Construction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Totals-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-General-revenue").click(function() {
+            $( "#explore-finance-__0__-Totals-General-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Miscellaneous-commercial-activity").click(function() {
+            $( "#explore-finance-__0__-Totals-Miscellaneous-commercial-activity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Other-insurance-trust-revenue").click(function() {
+            $( "#explore-finance-__0__-Totals-Other-insurance-trust-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Worker_s-comp-revenue").click(function() {
+            $( "#explore-finance-__0__-Totals-Worker_s-comp-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Equipment-and-land").click(function() {
+            $( "#explore-finance-__0__-Totals-Equipment-and-land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Unemployment-comp-revenue").click(function() {
+            $( "#explore-finance-__0__-Totals-Unemployment-comp-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Selective-sales-tax").click(function() {
+            $( "#explore-finance-__0__-Totals-Selective-sales-tax" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Sales-tax").click(function() {
+            $( "#explore-finance-__0__-Totals-Sales-tax" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-License-tax").click(function() {
+            $( "#explore-finance-__0__-Totals-License-tax" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Federal-intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Totals-Federal-intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-General-expenditure").click(function() {
+            $( "#explore-finance-__0__-Totals-General-expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Utility-revenue").click(function() {
+            $( "#explore-finance-__0__-Totals-Utility-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Revenue").click(function() {
+            $( "#explore-finance-__0__-Totals-Revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Tax").click(function() {
+            $( "#explore-finance-__0__-Totals-Tax" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Local-intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Totals-Local-intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Totals-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Totals-Employee-retirement-revenue").click(function() {
+            $( "#explore-finance-__0__-Totals-Employee-retirement-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Welfare' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Welfare Institution Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>45510</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Welfare Vendor Payments Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1115785</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Welfare NEC Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>317854</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Welfare NEC Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>7180</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Welfare" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Welfare-Welfare-Institution-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Welfare-Welfare-Institution-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Welfare-Welfare-Vendor-Payments-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Welfare-Welfare-Vendor-Payments-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Welfare-Welfare-NEC-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Welfare-Welfare-NEC-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Welfare-Welfare-NEC-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Welfare-Welfare-NEC-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Transportation' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Transit Subsidy Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Airports"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Transportation-Airports'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Transit Subsidy Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Highways"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Transportation-Highways'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Water Transport"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Transportation-Water-Transport'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Parking"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Transportation-Parking'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Transportation" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Transit-Subsidy-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Transit-Subsidy-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Airports").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Airports" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Transit-Subsidy-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Transit-Subsidy-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Highways").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Highways" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Water-Transport").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Water-Transport" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Parking").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Parking" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Transportation-Parking' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Parking Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Parking Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Transportation-Parking" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Parking-Parking-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Parking-Parking-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Parking-Parking-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Parking-Parking-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Natural-Resources' title='Dictionary (10 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Fish and Game"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Natural-Resources-Fish-and-Game'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Natural Resources Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>132691</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Natural Resources Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>11113</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Natural Resources NEC Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>35596</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Natural Resources Construction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2393</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Parks"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Natural-Resources-Parks'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Forestry"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Natural-Resources-Forestry'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Natural Resources Direct"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>121578</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Natural Resources Equipment and Land"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>9543</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Agriculture"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Natural-Resources-Agriculture'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Natural-Resources" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Fish-and-Game").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Fish-and-Game" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Natural-Resources-Total").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Natural-Resources-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Natural-Resources-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Natural-Resources-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Natural-Resources-NEC-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Natural-Resources-NEC-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Natural-Resources-Construction").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Natural-Resources-Construction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Parks").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Parks" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Forestry").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Forestry" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Natural-Resources-Direct").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Natural-Resources-Direct" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Natural-Resources-Equipment-and-Land").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Natural-Resources-Equipment-and-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Agriculture").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Agriculture" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Transportation-Water-Transport' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Water Transport Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Water Transport Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>10</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Transportation-Water-Transport" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Water-Transport-Water-Transport-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Water-Transport-Water-Transport-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Water-Transport-Water-Transport-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Water-Transport-Water-Transport-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Natural-Resources-Parks' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Parks Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>49855</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Parks Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4057</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Natural-Resources-Parks" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Parks-Parks-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Parks-Parks-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Parks-Parks-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Parks-Parks-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Natural-Resources-Forestry' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Forestry Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3687</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Forestry Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6009</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Natural-Resources-Forestry" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Forestry-Forestry-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Forestry-Forestry-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Natural-Resources-Forestry-Forestry-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Natural-Resources-Forestry-Forestry-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Public-Welfare' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Public Welfare Equipment and Land"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>9452</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Public Welfare Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>48222</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Public Welfare Other Current Operation"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1450135</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Public Welfare Direct Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1610161</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Public Welfare Construction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>12382</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Public Welfare Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1658383</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Public Welfare Assistance and Subsidies"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>138192</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Public-Welfare" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Equipment-and-Land").click(function() {
+            $( "#explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Equipment-and-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Other-Current-Operation").click(function() {
+            $( "#explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Other-Current-Operation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Direct-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Direct-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Construction").click(function() {
+            $( "#explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Construction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Assistance-and-Subsidies").click(function() {
+            $( "#explore-finance-__0__-Details-Public-Welfare-Public-Welfare-Assistance-and-Subsidies" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Health-Hospitals' title='Dictionary (8 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Own Hospitals Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>282472</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Hospital-Other Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>655</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Hospitals Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>283127</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Hospitals Total Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>655</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Hospitals Total Equipment and land"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>5502</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Hospitals Total Construction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1233</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Hospitals Total Current"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>275737</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Hospital-Other Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>655</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Health-Hospitals" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Health-Hospitals-Own-Hospitals-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Health-Hospitals-Own-Hospitals-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Health-Hospitals-Hospital-Other-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Health-Hospitals-Hospital-Other-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Health-Hospitals-Hospitals-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Health-Hospitals-Hospitals-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Health-Hospitals-Hospitals-Total-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Health-Hospitals-Hospitals-Total-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Health-Hospitals-Hospitals-Total-Equipment-and-land").click(function() {
+            $( "#explore-finance-__0__-Details-Health-Hospitals-Hospitals-Total-Equipment-and-land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Health-Hospitals-Hospitals-Total-Construction").click(function() {
+            $( "#explore-finance-__0__-Details-Health-Hospitals-Hospitals-Total-Construction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Health-Hospitals-Hospitals-Total-Current").click(function() {
+            $( "#explore-finance-__0__-Details-Health-Hospitals-Hospitals-Total-Current" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Health-Hospitals-Hospital-Other-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Health-Hospitals-Hospital-Other-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Transportation-Airports' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Airports Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2311</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Airports Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2469</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Transportation-Airports" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Airports-Airports-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Airports-Airports-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Transportation-Airports-Airports-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Transportation-Airports-Airports-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-finance-__0__-Details-Health' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Health Total Expenditure"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>309846</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Hospitals"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-finance-__0__-Details-Health-Hospitals'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Health Intergovernmental"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>67608</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-finance-__0__-Details-Health" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Health-Health-Total-Expenditure").click(function() {
+            $( "#explore-finance-__0__-Details-Health-Health-Total-Expenditure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Health-Hospitals").click(function() {
+            $( "#explore-finance-__0__-Details-Health-Hospitals" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-finance-__0__-Details-Health-Health-Intergovernmental").click(function() {
+            $( "#explore-finance-__0__-Details-Health-Health-Intergovernmental" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+
+</div>

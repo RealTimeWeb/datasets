@@ -1,0 +1,39 @@
+{
+  "weather": {
+    "dicts": {
+      "count": 4, 
+      "average branching factor": 3
+    }, 
+    "tags": [
+      "weather", 
+      "rain", 
+      "snow", 
+      "sleet", 
+      "fog", 
+      "temperature", 
+      "wind"
+    ], 
+    "atomics": {
+      "count": 11, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 0, 
+      "strings": 4, 
+      "floats": 7
+    }, 
+    "lists": {
+      "count": 2, 
+      "lengths": 36726, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 36726, 
+    "locals": 0, 
+    "size": 11057561
+  }
+}

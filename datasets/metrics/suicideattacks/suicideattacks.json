@@ -1,0 +1,49 @@
+{
+  "suicideattacks": {
+    "dicts": {
+      "count": 8, 
+      "average branching factor": 3
+    }, 
+    "tags": [
+      "global", 
+      "attack", 
+      "damage", 
+      "kill", 
+      "hurt", 
+      "destroy", 
+      "pain", 
+      "suffering", 
+      "terror", 
+      "terrorism", 
+      "religion", 
+      "warfare", 
+      "war", 
+      "car", 
+      "bomb", 
+      "gun", 
+      "shooting"
+    ], 
+    "atomics": {
+      "count": 23, 
+      "nones": 0, 
+      "booleans": 1, 
+      "longs": 0, 
+      "ints": 7, 
+      "strings": 15, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 3, 
+      "lengths": 4616, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 4616, 
+    "locals": 0, 
+    "size": 3021293
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "school": {
+    "dicts": {
+      "count": 15, 
+      "average branching factor": 3
+    }, 
+    "tags": [
+      "school", 
+      "education", 
+      "K-12", 
+      "kindergarten", 
+      "learning", 
+      "teaching"
+    ], 
+    "atomics": {
+      "count": 35, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 24, 
+      "strings": 2, 
+      "floats": 7
+    }, 
+    "lists": {
+      "count": 6, 
+      "lengths": 51, 
+      "complex": 5
+    }, 
+    "heights": 6, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 51, 
+    "locals": 0, 
+    "size": 60995
+  }
+}

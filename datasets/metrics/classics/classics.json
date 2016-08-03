@@ -1,0 +1,48 @@
+{
+  "classics": {
+    "dicts": {
+      "count": 10, 
+      "average branching factor": 4
+    }, 
+    "tags": [
+      "classics", 
+      "books", 
+      "texts", 
+      "text", 
+      "book", 
+      "classic", 
+      "english", 
+      "shakespeare", 
+      "literature", 
+      "novel", 
+      "language", 
+      "composition", 
+      "writing", 
+      "author", 
+      "publication", 
+      "words"
+    ], 
+    "atomics": {
+      "count": 38, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 14, 
+      "strings": 10, 
+      "floats": 14
+    }, 
+    "lists": {
+      "count": 5, 
+      "lengths": 1006, 
+      "complex": 1
+    }, 
+    "heights": 5, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 1006, 
+    "locals": 0, 
+    "size": 1357426
+  }
+}

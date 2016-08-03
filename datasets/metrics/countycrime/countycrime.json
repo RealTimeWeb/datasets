@@ -1,0 +1,42 @@
+{
+  "crime": {
+    "dicts": {
+      "count": 8, 
+      "average branching factor": 3
+    }, 
+    "tags": [
+      "crime", 
+      "burglary", 
+      "larceny", 
+      "motor", 
+      "property", 
+      "violent", 
+      "assault", 
+      "murder", 
+      "rape", 
+      "robbery"
+    ], 
+    "atomics": {
+      "count": 22, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 10, 
+      "strings": 2, 
+      "floats": 10
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 117965, 
+      "complex": 1
+    }, 
+    "heights": 5, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 117965, 
+    "locals": 0, 
+    "size": 53221689
+  }
+}

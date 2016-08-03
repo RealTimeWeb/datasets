@@ -1,0 +1,192 @@
+{
+  "stellartable": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 33
+    }, 
+    "tags": [
+      "kepler", 
+      "space", 
+      "planets", 
+      "aerospace", 
+      "moon", 
+      "sun", 
+      "stellar", 
+      "solar system"
+    ], 
+    "atomics": {
+      "count": 33, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 8, 
+      "strings": 7, 
+      "floats": 18
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 39336, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 39336, 
+    "locals": 0, 
+    "size": 25766635
+  }, 
+  "tce": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 43
+    }, 
+    "tags": [
+      "kepler", 
+      "space", 
+      "planets", 
+      "aerospace", 
+      "moon", 
+      "sun", 
+      "stellar", 
+      "solar system"
+    ], 
+    "atomics": {
+      "count": 43, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 6, 
+      "strings": 5, 
+      "floats": 32
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 16285, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 16285, 
+    "locals": 0, 
+    "size": 16046542
+  }, 
+  "keplernames": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 13
+    }, 
+    "tags": [
+      "kepler", 
+      "space", 
+      "planets", 
+      "aerospace", 
+      "moon", 
+      "sun", 
+      "stellar", 
+      "solar system"
+    ], 
+    "atomics": {
+      "count": 13, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 1, 
+      "strings": 8, 
+      "floats": 4
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 992, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 992, 
+    "locals": 0, 
+    "size": 320602
+  }, 
+  "exoplanets": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 79
+    }, 
+    "tags": [
+      "kepler", 
+      "space", 
+      "planets", 
+      "aerospace", 
+      "moon", 
+      "sun", 
+      "stellar", 
+      "solar system"
+    ], 
+    "atomics": {
+      "count": 79, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 33, 
+      "strings": 7, 
+      "floats": 39
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 1763, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 1763, 
+    "locals": 0, 
+    "size": 2679967
+  }, 
+  "koicumulative": {
+    "dicts": {
+      "count": 1, 
+      "average branching factor": 69
+    }, 
+    "tags": [
+      "kepler", 
+      "space", 
+      "planets", 
+      "aerospace", 
+      "moon", 
+      "sun", 
+      "stellar", 
+      "solar system"
+    ], 
+    "atomics": {
+      "count": 69, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 2, 
+      "strings": 13, 
+      "floats": 54
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 7305, 
+      "complex": 1
+    }, 
+    "heights": 2, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 7305, 
+    "locals": 0, 
+    "size": 11787419
+  }
+}

@@ -75,6 +75,26 @@
     
     <script>
     
+function compare(a,b) {
+  if (a.name < b.name)
+    return -1;
+  else if (a.name > b.name)
+    return 1;
+  else 
+    return 0;
+}
+    
+function getRandomSubarray(arr, size) {
+    var shuffled = arr.slice(0), i = arr.length, temp, index;
+    while (i--) {
+        index = Math.floor((i + 1) * Math.random());
+        temp = shuffled[index];
+        shuffled[index] = shuffled[i];
+        shuffled[i] = temp;
+    }
+    return shuffled.slice(0, size);
+}
+    
 var CHARTS = ko.observableArray([
         {'name': 'Line Plot', 'id': 'line', 'is2d': false, 'left': 'Y-values', 'right': 'Blank'},
         {'name': 'Histogram', 'id': 'hist', 'is2d': false, 'left': 'Values', 'right': 'Blank'},
@@ -96,6 +116,11 @@ var mainModel = {
     
     ])
 };
+
+/*
+mainModel.structures().forEach(function(e, i) {
+    e.data.sort(function(l, r) { return l.pretty > r.pretty ? 1 : -1 });
+});*/
 
 // Here's a custom Knockout binding that makes elements shown/hidden via jQuery's fadeIn()/fadeOut() methods
 // Could be stored in a separate utility library
@@ -165,22 +190,32 @@ $(document).ready(function () {
     function changeDataset() {
         var chart = mainModel.selected.chart();
         var canvas = chart.canvas;
-    
+        
+        getRandomSubarray = function(l, leng) {
+            return l;
+            return l.filter(function(element, index) {
+                return index % (l.length / leng) == 0;
+            });
+        }
+        
+        var left = getRandomSubarray(mainModel.selected.left().data, 100)
         var actualData, ys;
         if (chart.is2d) {
-            actualData = d3.zip(mainModel.selected.left().data,
-                                mainModel.selected.right().data).map(function(element) {
+            var right = mainModel.selected.left().name == mainModel.selected.right().name
+                        ? left
+                        : getRandomSubarray(mainModel.selected.right().data, 100);
+            actualData = d3.zip(left, right).map(function(element) {
                 return {'x': element[0], 'y': element[1]}
             });
         } else {
-            ys = mainModel.selected.left().data;
+            ys = left;
             actualData = ys.map(function(element, index) {
                 return {'x': index, 'y': element}
             });
         }
         
         if (chart.id == 'hist') {
-            x.domain([d3.min(ys), d3.max(ys)+1]);
+            x.domain([d3.min(ys), d3.max(ys)]);
             var histMapper = d3.layout.histogram().bins(x.ticks(20))(ys);
             y.domain([0, d3.max(histMapper, function(d) { return d.y; })]);
         } else {
@@ -302,10 +337,36 @@ $(document).ready(function () {
     
 </head>
 <body>
-<h1>Data Visualizer Demo</h1>
 <div class='container'>
 
+<div class="page-header">
+    
+    <img class="img-rounded pull-right" src="classics.png" alt="Classics" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Visualize Classics</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 4/2/2016</span><br>
+    <span class="text-muted">Tags: classics, books, texts, text, book, classic, english, shakespeare, literature, novel, language, composition, writing, author, publication, words</span><br>
+</div>
+
 <div class='row'>
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural works, to 'encourage the creation and distribution of eBooks'. It was founded in 1971 by Michael S. Hart and is the oldest digital library. This dataset is a collection of the top 1000 most popular books on Project Gutenberg, as determined by downloads. Each book has information about its authorship, publication date, congressional classication, and a few other fields. It also has some simple, computed statistics based on common metrics such as sentiment analysis, Flesch Kincaid Reading level, and average sentence length. 
+
+    </p>
+    
+    
+    <p>
+    <i>https://www.gutenberg.org/ebooks/search/?sort_order=downloads</i>
+    </p>
+    
+</div>
+
+<div class='row'>
+    <h3 id="overview">Visualizer</h3>
     <div class='col-md-2'>
         <div class="form-group">
             <label for="choose-dataset">Dataset: </label>
@@ -319,25 +380,27 @@ $(document).ready(function () {
     <div class='col-md-2'>
         <label for="choose-chart">Chart Type: </label>
         <select class="form-control vertically-align" id="choose-chart"
-                data-bind="options: charts,
+                data-bind="options: charts, 
                            value: selected.chart,
                            optionsText: 'name'">
         </select>
     </div>
-    <div class='col-md-2'>
+</div>
+<div class='row'>
+    <div class='col-md-6'>
         <label for="choose-left" data-bind="text: selected.chart().left">Left: </label>
         <select class="form-control vertically-align" id="choose-left"
-                    data-bind="options: selected.dataset().data,
-                               value: selected.left,
-                               optionsText: 'name'">
+                    data-bind="options: selected.dataset().data, 
+                               value: selected.left, 
+                               optionsText: 'pretty'">
         </select>
     </div>
-    <div class='col-md-2' data-bind="visible: selected.chart().is2d">
+    <div class='col-md-6' data-bind="visible: selected.chart().is2d">
         <label for="choose-right" data-bind="text: selected.chart().right">Right: </label>
         <select class="form-control vertically-align" id="choose-right"
                     data-bind="options: selected.dataset().data,
                                value: selected.right,
-                               optionsText: 'name'">
+                               optionsText: 'pretty'">
         </select>
     </div>
 </div>
@@ -351,6 +414,24 @@ $(document).ready(function () {
          data-bind="fadeVisible: selected.chart().id == 'hist'"></div>
     <div id="data-visualization-scatter" class='data-viz col-md-4'
          data-bind="fadeVisible: selected.chart().id == 'scatter'"></div>
+</div>
+
+<div class='row'>
+    <h3 id="overview">Questions</h3>
+    
+    <p>
+    The following are research questions to explore about this dataset.
+    </p>
+    
+    <ol>
+    
+    <li>What is the distribution of polarity and subjectivity?</li>
+    
+    <li>Is there a correlation between books' difficulty and their popularity?</li>
+    
+    <li>In what century were most of the books published?</li>
+    
+    </ol>
 </div>
 
 </div>

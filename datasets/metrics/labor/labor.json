@@ -1,0 +1,50 @@
+{
+  "labor": {
+    "dicts": {
+      "count": 73, 
+      "average branching factor": 2
+    }, 
+    "tags": [
+      "labor", 
+      "race", 
+      "age", 
+      "sex", 
+      "gender", 
+      "america", 
+      "usa", 
+      "census", 
+      "employed", 
+      "unemployed", 
+      "employability", 
+      "job", 
+      "work", 
+      "civilian", 
+      "black", 
+      "white", 
+      "asian", 
+      "government"
+    ], 
+    "atomics": {
+      "count": 89, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 11, 
+      "strings": 39, 
+      "floats": 39
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 528, 
+      "complex": 1
+    }, 
+    "heights": 6, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 528, 
+    "locals": 0, 
+    "size": 1655873
+  }
+}

@@ -16,6 +16,11 @@ local:
   - file: airlines.json
     name: airlines
     row: airline
+    indexes:
+      - name: airport
+        jsonpath: airlines.[0].airport.code
+      - name: carrier
+        jsonpath: airlines.[0].carrier.code
 interfaces:
   - name: get reports
     returns: list[airline]

@@ -34,7 +34,7 @@ local:
     row: record
     indexes:
       - name: kepid
-        jsonpath: kepid
+        jsonpath: keplernames.[0].kepid
   - file: koi_cumulative.json
     name: koicumulative
     row: koi

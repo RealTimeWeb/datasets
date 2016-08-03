@@ -1,0 +1,43 @@
+{
+  "constructionpermits": {
+    "dicts": {
+      "count": 5, 
+      "average branching factor": 3
+    }, 
+    "tags": [
+      "construction", 
+      "permits", 
+      "us", 
+      "united states", 
+      "america", 
+      "government", 
+      "buildings", 
+      "private", 
+      "units", 
+      "valuation", 
+      "housing"
+    ], 
+    "atomics": {
+      "count": 14, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 9, 
+      "strings": 4, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 2, 
+      "lengths": 139, 
+      "complex": 2
+    }, 
+    "heights": 5, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 139, 
+    "locals": 0, 
+    "size": 3599110
+  }
+}

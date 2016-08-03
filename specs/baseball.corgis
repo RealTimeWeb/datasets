@@ -17,12 +17,12 @@ local:
     name: teams
     indexes:
       - name: name
-        jsonpath: name
+        jsonpath: teams.[0].name
   - file: players.json
     name: players
     indexes:
       - name: name
-        jsonpath: name
+        jsonpath: players.[0].name
 interfaces:
   - name: get player by name
     returns: player

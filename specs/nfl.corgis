@@ -13,14 +13,14 @@ local:
     name: games
     indexes:
       - name: home_team
-        jsonpath: home_team
+        jsonpath: games.[0].home_team
       - name: away_team
-        jsonpath: away_team
+        jsonpath: games.[0].away_team
   - file: players.json
     name: players
     indexes:
       - name: name
-        jsonpath: name
+        jsonpath: players.[0].name
 interfaces:
   - name: get games by home team
     args:

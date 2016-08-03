@@ -17,9 +17,9 @@ local:
     row: music
     indexes:
       - name: title
-        jsonpath: song.title
+        jsonpath: music.[0].song.title
       - name: artist
-        jsonpath: artist.name
+        jsonpath: music.[0].artist.name
 interfaces:
   - name: get song by name
     description: Given the title of a song, returns information about the song.

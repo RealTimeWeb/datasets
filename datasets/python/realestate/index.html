@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Real Estate Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <img class="img-rounded pull-right" src="realestate.png" alt="Real Estate" style="max-width: 128px; max-height: 128px;">
+        
+        <h1>Real Estate Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+        <span class="text-muted">Version 1, created 2/23/2016</span><br>
+        <span class="text-muted">Tags: real, estate, buildings, government, building</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_buildings'>get_buildings</a></li>
+        <li><a href='#get_buildings_by_state'>get_buildings_by_state</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    Real Estate Across the United States (REXUS) is the primary tool used by PBS to track and manage the government's real property assets and to store inventory data, building data, customer data, and lease information. STAR manages aspects of real property space management, including identification of all building space and daily management of 22,000 assignments for all property to its client Federal agencies. This data set contains PBS building inventory that consists of both owned and leased buildings with active and excess status.
+
+    </p>
+    
+    
+    <p>
+    <i>https://catalog.data.gov/dataset/real-estate-across-the-united-states-rexus-inventory-building</i>
+    </p>
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="realestate.py?forcedownload=1" download="realestate.py" target="_blank">
+            <strong>realestate.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="realestate.db?forcedownload=1" download="realestate.db" target="_blank">
+            <strong>realestate.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 2 functions you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">realestate</span>
+<span class="n">list_of_building</span> <span class="o">=</span> <span class="n">realestate</span><span class="o">.</span><span class="n">get_buildings</span><span class="p">()</span>
+<span class="n">list_of_building</span> <span class="o">=</span> <span class="n">realestate</span><span class="o">.</span><span class="n">get_buildings_by_state</span><span class="p">(</span><span class="s">&quot;&#39;VA&#39;&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+
+
+    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">realestate</span>
+<span class="c"># These may be slow!</span>
+<span class="n">list_of_building</span> <span class="o">=</span> <span class="n">realestate</span><span class="o">.</span><span class="n">get_buildings</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_buildings'>realestate.get_buildings(test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns a list of the buildings in the database.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+<h4 id='get_buildings_by_state'>realestate.get_buildings_by_state(state)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns a list of the buildings in the database for a state.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>state</b>: <i>Str</i></h5>
+    <p class="list-group-item-text">The two-letter abbreviation for a state
+    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
+    </p>
+</li>
+
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-realestate'>Explore realestate data</button>
+    </div>
+    
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-realestate").click(function() {
+        $( "#explore-realestate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-realestate' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-realestate-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-realestate" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-realestate-__0__").click(function() {
+            $( "#explore-realestate-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-realestate-__0__-data-disabilities' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"ansi usable"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"97884"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"aba accessible"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Will Conform"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-realestate-__0__-data-disabilities" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-realestate-__0__-data-disabilities-ansi-usable").click(function() {
+            $( "#explore-realestate-__0__-data-disabilities-ansi-usable" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-data-disabilities-aba-accessible").click(function() {
+            $( "#explore-realestate-__0__-data-disabilities-aba-accessible" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-realestate-__0__-data' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"status"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ACTIVE"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"disabilities"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-realestate-__0__-data-disabilities'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"parking spaces"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"29"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"owned or leased"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"OWNED"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"date"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1-Jan-33"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"BUILDING"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"history"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-realestate-__0__-data-history'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-realestate-__0__-data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-realestate-__0__-data-status").click(function() {
+            $( "#explore-realestate-__0__-data-status" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-data-disabilities").click(function() {
+            $( "#explore-realestate-__0__-data-disabilities" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-data-parking-spaces").click(function() {
+            $( "#explore-realestate-__0__-data-parking-spaces" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-data-owned-or-leased").click(function() {
+            $( "#explore-realestate-__0__-data-owned-or-leased" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-data-date").click(function() {
+            $( "#explore-realestate-__0__-data-date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-data-type").click(function() {
+            $( "#explore-realestate-__0__-data-type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-data-history").click(function() {
+            $( "#explore-realestate-__0__-data-history" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-realestate-__0__-location-address' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"city"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"HARTFORD"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"zip"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"61031125"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"county"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"HARTFORD"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"state"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"CT"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"line 1"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"135 HIGH ST"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"line 2"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>" "</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-realestate-__0__-location-address" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-realestate-__0__-location-address-city").click(function() {
+            $( "#explore-realestate-__0__-location-address-city" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-location-address-zip").click(function() {
+            $( "#explore-realestate-__0__-location-address-zip" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-location-address-county").click(function() {
+            $( "#explore-realestate-__0__-location-address-county" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-location-address-state").click(function() {
+            $( "#explore-realestate-__0__-location-address-state" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-location-address-line-1").click(function() {
+            $( "#explore-realestate-__0__-location-address-line-1" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-location-address-line-2").click(function() {
+            $( "#explore-realestate-__0__-location-address-line-2" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-realestate-__0__-data-history' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"status"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"National Register Listed"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Field Not In Use"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-realestate-__0__-data-history" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-realestate-__0__-data-history-status").click(function() {
+            $( "#explore-realestate-__0__-data-history-status" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-data-history-type").click(function() {
+            $( "#explore-realestate-__0__-data-history-type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-realestate-__0__' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-realestate-__0__-data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"location"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-realestate-__0__-location'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-realestate-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-realestate-__0__-data").click(function() {
+            $( "#explore-realestate-__0__-data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-location").click(function() {
+            $( "#explore-realestate-__0__-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-realestate-__0__-location' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"region id"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"congressional district"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"1"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"CT0013"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"address"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-realestate-__0__-location-address'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-realestate-__0__-location" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-realestate-__0__-location-region-id").click(function() {
+            $( "#explore-realestate-__0__-location-region-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-location-congressional-district").click(function() {
+            $( "#explore-realestate-__0__-location-congressional-district" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-location-id").click(function() {
+            $( "#explore-realestate-__0__-location-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-realestate-__0__-location-address").click(function() {
+            $( "#explore-realestate-__0__-location-address" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+
+</div>

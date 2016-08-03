@@ -1,0 +1,37 @@
+{
+  "soccer": {
+    "dicts": {
+      "count": 7, 
+      "average branching factor": 2
+    }, 
+    "tags": [
+      "soccer", 
+      "germany", 
+      "austrian", 
+      "Bundesliga", 
+      "football"
+    ], 
+    "atomics": {
+      "count": 14, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 2, 
+      "strings": 12, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 4, 
+      "lengths": 8, 
+      "complex": 4
+    }, 
+    "heights": 9, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 7, 
+    "locals": 0, 
+    "size": 1617888
+  }
+}

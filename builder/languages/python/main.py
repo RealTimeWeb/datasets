@@ -443,12 +443,15 @@ def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name|
     {% endfor -%}
     """
     {% for arg in interface.args -%}
-    {% if arg.type in ("integer", "float") %}
+    {% if arg.type in ("int", "float") %}
     if not isinstance({{arg.name|snake_case}}, {{ arg.type| to_python_type}}):
         raise DatasetException("Error, the parameter {{ arg.name|snake_case}} must be of type {{ arg.type|to_python_type}}")
     {% endif %}
     {% if arg.matches -%}
     # Match it against recommend values
+    {% if arg.type in ("int", "float") %}
+    potentials = {{arg.name|snake_case}}
+    {% else %}
     potentials = [r[0].lower() for r in _Constants._DATABASE.execute("{{ arg.matches }}").fetchall()]
     if {{arg.name|snake_case}}.lower() not in potentials:
         best_guesses = _difflib.get_close_matches({{arg.name|snake_case}}, potentials)
@@ -456,6 +459,7 @@ def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name|
             raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
         else:
             raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
+    {% endif -%}
     {% endif -%}
     {% endfor -%}
     {% if interface.test -%}

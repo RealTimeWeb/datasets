@@ -1,0 +1,37 @@
+{
+  "airports": {
+    "dicts": {
+      "count": 4, 
+      "average branching factor": 55
+    }, 
+    "tags": [
+      "airplane", 
+      "airports", 
+      "travel", 
+      "plane", 
+      "air"
+    ], 
+    "atomics": {
+      "count": 217, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 0, 
+      "strings": 217, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 3, 
+      "lengths": 678, 
+      "complex": 3
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 678, 
+    "locals": 0, 
+    "size": 5230460
+  }
+}

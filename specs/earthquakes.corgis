@@ -15,6 +15,9 @@ local:
   - file: earthquakes.json
     name: earthquakes
     row: earthquake
+    indexes:
+      - name: state
+        jsonpath: earthquakes.[0].location.state
 interfaces:
   - name: get earthquakes
     description: Returns earthquakes from the dataset.

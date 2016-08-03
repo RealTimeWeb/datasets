@@ -9,8 +9,6 @@ metadata:
         short: Records of AIDS related statistics from several countries.
         overview: >
             The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease.  The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.
-            
-
         citation: http://aidsinfo.unaids.org/
 local:
   - file: aids.json
@@ -18,9 +16,9 @@ local:
     row: report
     indexes:
       - name: country
-        jsonpath: Country
+        jsonpath: aids.[0].Country
       - name: year
-        jsonpath: Year
+        jsonpath: aids.[0].Year
 interfaces:
   - name: get reports
     description: Returns aids reports from the dataset.
@@ -35,9 +33,9 @@ interfaces:
     description: Given a year, returns all the aids reports for that year in the database.
     args:
       - name: year
-        default: '1990'
+        default: 1990
         type: int
-        matches: SELECT DISTINCT report FROM aids
+        matches: SELECT DISTINCT year FROM aids
         description: The year to get reports.
     production:
         sql: SELECT data FROM aids WHERE year=?
@@ -50,15 +48,15 @@ interfaces:
     description: Given a country, returns all the aids reports for that country in the database.
     args:
       - name: country
-        default: 'Afghanistan'
+        default: Afghanistan
         type: str
-        matches: SELECT DISTINCT report FROM aids
+        matches: SELECT DISTINCT country FROM aids
         description: The year to get reports.
     production:
-        sql: SELECT data FROM aids WHERE year=?
+        sql: SELECT data FROM aids WHERE country=?
         post: json()
     test:
-        sql: SELECT data FROM aids WHERE year=? LIMIT {hardware}
+        sql: SELECT data FROM aids WHERE country=? LIMIT {hardware}
         post: json()
     returns: list[report]
 structures:
@@ -69,13 +67,13 @@ structures:
     "aids.[0].Data.People Living with HIV.HIV Prevalence Among Adults": '15-49 Years Old'
     "aids.[0].Data.People Living with HIV.HIV Prevalence Among Young Men": '15-24 Years Old'
     "aids.[0].Data.People Living with HIV.HIV Prevalence Among Young Women": '15-24 Years Old'
-    "aids.[0].New HIV Infections.New HIV Infections Among Adults": '15+ Years Old'
-    "aids.[0].New HIV Infections.New HIV Infections Among Male Adults": '15+ Years Old'
-    "aids.[0].New HIV Infections.New HIV Infections Among Female Adults": '15+ Years Old'
-    "aids.[0].New HIV Infections.New HIV Infections Among Children": '0-14 Years Old'
-    "aids.[0].New HIV Infections.Incidence Rate Among Adults": '15-49 Years Old'
-    "aids.[0].AIDS-Related Deaths.AIDS-Related Deaths Among Adults": '15+ Years Old'
-    "aids.[0].AIDS-Related Deaths.AIDS-Related Deaths Among Male Adults": '15+ Years Old'
-    "aids.[0].AIDS-Related Deaths.AIDS-Related Deaths Among Female Adults": '15+ Years Old'
-    "aids.[0].AIDS-Related Deaths.AIDS-Related Deaths Among Children": '0-14 Years Old'
-    "aids.[0].AIDS-Related Deaths.AIDS Orphans": '0-17 Years Old'
+    "aids.[0].Data.New HIV Infections.New HIV Infections Among Adults": '15+ Years Old'
+    "aids.[0].Data.New HIV Infections.New HIV Infections Among Male Adults": '15+ Years Old'
+    "aids.[0].Data.New HIV Infections.New HIV Infections Among Female Adults": '15+ Years Old'
+    "aids.[0].Data.New HIV Infections.New HIV Infections Among Children": '0-14 Years Old'
+    "aids.[0].Data.New HIV Infections.Incidence Rate Among Adults": '15-49 Years Old'
+    "aids.[0].Data.AIDS-Related Deaths.AIDS-Related Deaths Among Adults": '15+ Years Old'
+    "aids.[0].Data.AIDS-Related Deaths.AIDS-Related Deaths Among Male Adults": '15+ Years Old'
+    "aids.[0].Data.AIDS-Related Deaths.AIDS-Related Deaths Among Female Adults": '15+ Years Old'
+    "aids.[0].Data.AIDS-Related Deaths.AIDS-Related Deaths Among Children": '0-14 Years Old'
+    "aids.[0].Data.AIDS-Related Deaths.AIDS Orphans": '0-17 Years Old'

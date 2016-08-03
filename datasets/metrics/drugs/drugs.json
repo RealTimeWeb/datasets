@@ -1,0 +1,35 @@
+{
+  "drugs": {
+    "dicts": {
+      "count": 2, 
+      "average branching factor": 5
+    }, 
+    "tags": [
+      "drugs", 
+      "substances", 
+      "drug usage"
+    ], 
+    "atomics": {
+      "count": 9, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 6, 
+      "strings": 3, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 2, 
+      "lengths": 51, 
+      "complex": 2
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 22, 
+    "locals": 0, 
+    "size": 123621
+  }
+}

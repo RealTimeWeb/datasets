@@ -1,0 +1,42 @@
+{
+  "airlines": {
+    "dicts": {
+      "count": 8, 
+      "average branching factor": 3
+    }, 
+    "tags": [
+      "airplane", 
+      "airports", 
+      "travel", 
+      "plane", 
+      "air", 
+      "flights", 
+      "delays", 
+      "national", 
+      "united states", 
+      "transportation"
+    ], 
+    "atomics": {
+      "count": 23, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 18, 
+      "strings": 5, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 54013, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 54013, 
+    "locals": 0, 
+    "size": 30157358
+  }
+}

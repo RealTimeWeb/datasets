@@ -1,126 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-  
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Publishers Library (CORGIS Datasets Project)</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous"><link>-->
-    
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-    
-    <style>
-    .highlight  { background: #2B2B2B; color: #E6E1DC}
-    .highlight .hll { background-color: #ffffcc }
-    .highlight .c { color: #BC9458; font-style: italic} /* Comment */
-    .highlight .err { color: #E6E1DC} /* Error */
-    /*.highlight .g { color: #E6E1DC} /* Generic */
-    .highlight .k { color: #CC7833} /* Keyword */
-    /*.highlight .l { color: #E6E1DC} /* Literal */
-    /*.highlight .n { color: #E6E1DC} /* Name */
-    /*.highlight .o { color: #E6E1DC} /* Operator */
-    /*.highlight .x { color: #E6E1DC} /* Other */
-    /*.highlight .p { color: #E6E1DC} /* Punctuation */
-    /*.highlight .cm { color: #BC9458; font-style: italic} /* Comment.Multiline */
-    /*.highlight .cp { color: #CC7833} /* Comment.Preproc */
-    /*.highlight .c1 { color: #BC9458; font-style: italic} /* Comment.Single */
-    /*.highlight .cs { color: #BC9458; font-style: italic} /* Comment.Special */
-    /*.highlight .gd { color: #E6E1DC; background-color: #660000 } /* Generic.Deleted */
-    /*.highlight .ge { color: #E6E1DC} /* Generic.Emph */
-    /*.highlight .gr { color: #FFFFFF; background-color: #990000 } /* Generic.Error */
-    /*.highlight .gh { color: #FFFFFF} /* Generic.Heading */
-    /*.highlight .gi { color: #E6E1DC; background-color: #144212 } /* Generic.Inserted */
-    /*.highlight .go { color: #E6E1DC} /* Generic.Output */
-    /*.highlight .gp { color: #E6E1DC} /* Generic.Prompt */
-    /*.highlight .gs { color: #E6E1DC} /* Generic.Strong */
-    /*.highlight .gu { color: #FFFFFF} /* Generic.Subheading */
-    /*.highlight .gt { color: #E6E1DC} /* Generic.Traceback */
-    /*.highlight .kc { color: #CC7833} /* Keyword.Constant */
-    /*.highlight .kd { color: #CC7833} /* Keyword.Declaration */
-    .highlight .kn { color: #CC7833; font-weight: bold} /* Keyword.Namespace */
-    /*.highlight .kp { color: #CC7833} /* Keyword.Pseudo */
-    /*.highlight .kr { color: #CC7833} /* Keyword.Reserved */
-    /*.highlight .kt { color: #DA4939} /* Keyword.Type */
-    /*.highlight .ld { color: #E6E1DC} /* Literal.Date */
-    /*.highlight .m { color: #A5C261} /* Literal.Number */
-    .highlight .s { color: #A5C261} /* Literal.String */
-    /*.highlight .na { color: #FFC66D} /* Name.Attribute */
-    /*.highlight .nb { color: #E6E1DC} /* Name.Builtin */
-    /*.highlight .nc { color: #E6E1DC} /* Name.Class */
-    /*.highlight .no { color: #6D9CBE} /* Name.Constant */
-    /*.highlight .nd { color: #E6E1DC} /* Name.Decorator */
-    /*.highlight .ni { color: #E6E1DC} /* Name.Entity */
-    /*.highlight .ne { color: #E6E1DC} /* Name.Exception */
-    /*.highlight .nf { color: #FFC66D} /* Name.Function */
-    /*.highlight .nl { color: #E6E1DC} /* Name.Label */
-    /*.highlight .nn { color: #E6E1DC} /* Name.Namespace */
-    /*.highlight .nx { color: #E6E1DC} /* Name.Other */
-    /*.highlight .py { color: #E6E1DC} /* Name.Property */
-    /*.highlight .nt { color: #CC7833} /* Name.Tag */
-    /*.highlight .nv { color: #D0D0FF} /* Name.Variable */
-    /*.highlight .ow { color: #E6E1DC} /* Operator.Word */
-    /*.highlight .w { color: #E6E1DC} /* Text.Whitespace */
-    /*.highlight .mf { color: #A5C261} /* Literal.Number.Float */
-    /*.highlight .mh { color: #A5C261} /* Literal.Number.Hex */
-    /*.highlight .mi { color: #A5C261} /* Literal.Number.Integer */
-    /*.highlight .mo { color: #A5C261} /* Literal.Number.Oct */
-    /*.highlight .sb { color: #A5C261} /* Literal.String.Backtick */
-    /*.highlight .sc { color: #A5C261} /* Literal.String.Char */
-    /*.highlight .sd { color: #A5C261} /* Literal.String.Doc */
-    /*.highlight .s2 { color: #A5C261} /* Literal.String.Double */
-    /*.highlight .se { color: #A5C261} /* Literal.String.Escape */
-    /*.highlight .sh { color: #A5C261} /* Literal.String.Heredoc */
-    /*.highlight .si { color: #A5C261} /* Literal.String.Interpol */
-    /*.highlight .sx { color: #A5C261} /* Literal.String.Other */
-    /*.highlight .sr { color: #A5C261} /* Literal.String.Regex */
-    /*.highlight .s1 { color: #A5C261} /* Literal.String.Single */
-    /*.highlight .ss { color: #A5C261} /* Literal.String.Symbol */
-    /*.highlight .bp { color: #E6E1DC} /* Name.Builtin.Pseudo */
-    /*.highlight .vc { color: #D0D0FF} /* Name.Variable.Class */
-    /*.highlight .vg { color: #D0D0FF} /* Name.Variable.Global */
-    /*.highlight .vi { color: #D0D0FF} /* Name.Variable.Instance */
-    /*.highlight .il { color: #A5C261} /* Literal.Number.Integer.Long */
-    </style>
-    
-    <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
-    $(document).ready(function() {
-        log('load', 'Publishers');
-        function doPoll(){  
-            log('remain', 'Publishers, '+$(document).scrollTop()+", "+$(document).height());
-        }
-        setInterval(doPoll, 5000);
-    });
-    </script>
-
-</head>
-
-<body>
-
-<div class="container">
 
     <div class="page-header">
         
@@ -223,7 +100,356 @@ Returns a list of the books in the database.
 </div>
 
 
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-publishers'>Explore publishers data</button>
+    </div>
     
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-publishers").click(function() {
+        $( "#explore-publishers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-publishers' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-publishers-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-publishers" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-publishers-__0__").click(function() {
+            $( "#explore-publishers-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-publishers-__0__-genre' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"comics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"fiction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>True</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"nonfiction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"foreign language"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"genre fiction"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>True</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"children"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-publishers-__0__-genre" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-publishers-__0__-genre-comics").click(function() {
+            $( "#explore-publishers-__0__-genre-comics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-genre-fiction").click(function() {
+            $( "#explore-publishers-__0__-genre-fiction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-genre-nonfiction").click(function() {
+            $( "#explore-publishers-__0__-genre-nonfiction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-genre-foreign-language").click(function() {
+            $( "#explore-publishers-__0__-genre-foreign-language" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-genre-genre-fiction").click(function() {
+            $( "#explore-publishers-__0__-genre-genre-fiction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-genre-children").click(function() {
+            $( "#explore-publishers-__0__-genre-children" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-publishers-__0__' title='Dictionary (8 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"publisher"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-publishers-__0__-publisher'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"total reviews"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>9604</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sold by"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"HarperCollins Publishers"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"daily"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-publishers-__0__-daily'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sale price"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.88</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sales rank"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"genre"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-publishers-__0__-genre'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"average rating"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.57</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-publishers-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-publishers-__0__-publisher").click(function() {
+            $( "#explore-publishers-__0__-publisher" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-total-reviews").click(function() {
+            $( "#explore-publishers-__0__-total-reviews" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-sold-by").click(function() {
+            $( "#explore-publishers-__0__-sold-by" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-daily").click(function() {
+            $( "#explore-publishers-__0__-daily" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-sale-price").click(function() {
+            $( "#explore-publishers-__0__-sale-price" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-sales-rank").click(function() {
+            $( "#explore-publishers-__0__-sales-rank" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-genre").click(function() {
+            $( "#explore-publishers-__0__-genre" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-average-rating").click(function() {
+            $( "#explore-publishers-__0__-average-rating" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-publishers-__0__-daily' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"publisher revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>20496.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"amazon revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>6832.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"author revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>6832.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"units sold"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>7000</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"gross sales"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>34160.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-publishers-__0__-daily" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-publishers-__0__-daily-publisher-revenue").click(function() {
+            $( "#explore-publishers-__0__-daily-publisher-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-daily-amazon-revenue").click(function() {
+            $( "#explore-publishers-__0__-daily-amazon-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-daily-author-revenue").click(function() {
+            $( "#explore-publishers-__0__-daily-author-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-daily-units-sold").click(function() {
+            $( "#explore-publishers-__0__-daily-units-sold" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-daily-gross-sales").click(function() {
+            $( "#explore-publishers-__0__-daily-gross-sales" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-publishers-__0__-publisher' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"indie"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"small/medium"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"amazon"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"single author"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"big five"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>True</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-publishers-__0__-publisher" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-publishers-__0__-publisher-indie").click(function() {
+            $( "#explore-publishers-__0__-publisher-indie" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-publisher-small_medium").click(function() {
+            $( "#explore-publishers-__0__-publisher-small_medium" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-publisher-amazon").click(function() {
+            $( "#explore-publishers-__0__-publisher-amazon" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-publisher-single-author").click(function() {
+            $( "#explore-publishers-__0__-publisher-single-author" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-publisher-big-five").click(function() {
+            $( "#explore-publishers-__0__-publisher-big-five" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
 
     
-</div>
+

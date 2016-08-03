@@ -18,7 +18,7 @@ local:
     name: slavery
     indexes:
       - name: name
-        jsonpath: slave.name
+        jsonpath: slavery.[0].slave.name
 interfaces:
   - name: get all
     returns: list[slave]

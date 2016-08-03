@@ -1,0 +1,66 @@
+{
+  "players": {
+    "dicts": {
+      "count": 5, 
+      "average branching factor": 5
+    }, 
+    "tags": [
+      "baseball", 
+      "sports"
+    ], 
+    "atomics": {
+      "count": 19, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 13, 
+      "strings": 6, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 5, 
+      "lengths": 18589, 
+      "complex": 3
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 18589, 
+    "locals": 0, 
+    "size": 18151781
+  }, 
+  "teams": {
+    "dicts": {
+      "count": 2, 
+      "average branching factor": 7
+    }, 
+    "tags": [
+      "baseball", 
+      "sports"
+    ], 
+    "atomics": {
+      "count": 13, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 11, 
+      "strings": 2, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 2, 
+      "lengths": 50, 
+      "complex": 2
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 50, 
+    "locals": 0, 
+    "size": 418301
+  }
+}

@@ -127,7 +127,7 @@ def get_finances_by_state(state):
             hardware=_Constants._HARDWARE),
             (state, ))
         data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r))['data'] for r in data]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
         
         data = data[0]
         
@@ -166,7 +166,7 @@ def _test_interfaces():
     # Production test
     print("Production get_finances_by_state")
     start_time = _default_timer()
-    result = get_finances_by_state("'Alaska'")
+    result = get_finances_by_state("Alaska")
     
     _pprint(result)
     

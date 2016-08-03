@@ -1,0 +1,68 @@
+{
+  "businesses": {
+    "dicts": {
+      "count": 3, 
+      "average branching factor": 9
+    }, 
+    "tags": [
+      "yelp", 
+      "businesses", 
+      "restaurants"
+    ], 
+    "atomics": {
+      "count": 25, 
+      "nones": 0, 
+      "booleans": 1, 
+      "longs": 0, 
+      "ints": 5, 
+      "strings": 16, 
+      "floats": 3
+    }, 
+    "lists": {
+      "count": 5, 
+      "lengths": 265, 
+      "complex": 2
+    }, 
+    "heights": 5, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 265, 
+    "locals": 0, 
+    "size": 7699368
+  }, 
+  "users": {
+    "dicts": {
+      "count": 2, 
+      "average branching factor": 5
+    }, 
+    "tags": [
+      "yelp", 
+      "businesses", 
+      "restaurants"
+    ], 
+    "atomics": {
+      "count": 9, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 4, 
+      "strings": 4, 
+      "floats": 1
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 7770, 
+      "complex": 1
+    }, 
+    "heights": 3, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 7770, 
+    "locals": 0, 
+    "size": 1945632
+  }
+}

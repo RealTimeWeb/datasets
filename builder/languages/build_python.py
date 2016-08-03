@@ -23,8 +23,9 @@ except NameError:
     unicode = str
 
 base_directory = os.path.dirname(os.path.realpath(__file__))
-templates = os.path.join(base_directory, 'python/')
-env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader(templates))
+python_templates = os.path.join(base_directory, 'python/')
+templates = os.path.join(base_directory, 'templates/')
+env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader([templates, python_templates]))
 env.filters['camel_case_caps'] = camel_case_caps
 env.filters['camel_case'] = camel_case
 env.filters['snake_case'] = snake_case
@@ -48,15 +49,19 @@ conversion_mapping = { ("string", "integer") : "",
                        ("float", "string") : "str"}
                   
 python_types = {"string": "str",
+                'str': 'str',
                 "float": "float",
                 "integer": "int",
+                'int': 'int',
+                'bool': 'bool',
                 "void": "void",
                 "boolean": "bool",
                 "long": "int"}
 
 def parse_json_path(path, result="json_data"):
     elements = []
-    for keys in path.split("."):
+    # Skip the first two indxes, they're constant
+    for keys in path.split(".")[2:]:
         while keys:
             left, sep, keys = keys.partition("[")
             val, sep, keys = keys.partition("]")
@@ -86,6 +91,12 @@ def is_list(type):
 
 def strip_list(type):
     return type[5:-1]
+    
+def get_base_type(type):
+    if type.startswith('list'):
+        return 'list'
+    else:
+        return type
 
 def create_json_conversion(data, type):
     if is_list(type):
@@ -167,7 +178,7 @@ def to_python_variable(source):
         return "a_{}".format(converted_type)
         
 def sluggify(astr):
-    return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_")
+    return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_").replace("'", "_").replace('"', "_")
     
 EXTENDED_TYPE_INFO = {
     'dict': '<span data-toggle="tooltip" title="Dictionary">dict</span>',
@@ -177,10 +188,11 @@ EXTENDED_TYPE_INFO = {
     'int': '<span data-toggle="tooltip" title="Integer (whole number)">int</span>',
     'float': '<span data-toggle="tooltip" title="Float (decimal number)">float</span>',
     'long': '<span data-toggle="tooltip" title="Long (a very big whole number)">long</span>',
+    'NoneType': '<span data-toggle="tooltip" title="None (nothing, not zero or an empty list, just nothing)">None</span>',
     'bool': '<span data-toggle="tooltip" title="Boolean (True or False)">bool</span>',
 }
 def to_human_readable_type(atype):
-    return EXTENDED_TYPE_INFO[atype]
+    return EXTENDED_TYPE_INFO[get_base_type(atype)]
     
 EXPAND = "<span class='glyphicon glyphicon-new-window' aria-hidden='true'></span>"
 def convert_example_value(data, possible_path=""):
@@ -223,7 +235,7 @@ env.filters['convert_builtin'] = convert_builtin
 env.filters['parse_bark'] = parse_bark
 
 def json_path(path, data):
-    entries = path.split(".")
+    entries = path.split(".")[2:]
     for entry in entries:
         if entry.startswith("["):
             entry = int(entry[1:-1])
@@ -233,7 +245,8 @@ def json_path(path, data):
 def build_metafiles(model):
     name = model['metadata']['name']
     return {
-            'python/' + flat_case(name) + '/' + flat_case(name) + '.html' : env.get_template('main.html').render(**model),
+            'python/' + flat_case(name) + '/' + flat_case(name) + '.html' : env.get_template('main.html').render(standalone=False, **model),
+            'python/' + flat_case(name) + '/index.html' : env.get_template('main.html').render(standalone=True, **model),
             'python/' + flat_case(name) + '/' + flat_case(name) + '_preview.html' : env.get_template('preview.html').render(**model)
             }
     

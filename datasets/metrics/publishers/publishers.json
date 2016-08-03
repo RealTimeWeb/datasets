@@ -1,0 +1,39 @@
+{
+  "publishers": {
+    "dicts": {
+      "count": 4, 
+      "average branching factor": 6
+    }, 
+    "tags": [
+      "publishers", 
+      "amazon", 
+      "books", 
+      "sales", 
+      "genres", 
+      "literature", 
+      "english"
+    ], 
+    "atomics": {
+      "count": 21, 
+      "nones": 0, 
+      "booleans": 11, 
+      "longs": 0, 
+      "ints": 3, 
+      "strings": 1, 
+      "floats": 6
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 27027, 
+      "complex": 1
+    }, 
+    "heights": 3, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 27027, 
+    "locals": 0, 
+    "size": 13746142
+  }
+}

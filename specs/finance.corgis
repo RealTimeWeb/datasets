@@ -14,15 +14,18 @@ local:
   - file: finance.json
     name: finance
     row: record
+    order: Year
     indexes:
       - name: state
-        jsonpath: State
+        jsonpath: finance.[0].State
+      - name: year
+        jsonpath: finance.[0].Year
 interfaces:
   - name: get finances by state
     args:
       - name: state
         type: str
-        default: "'Alaska'"
+        default: 'Alaska'
         matches: SELECT DISTINCT state FROM finance
         description: The name of the state (e.g., "Alaska").
     returns: record

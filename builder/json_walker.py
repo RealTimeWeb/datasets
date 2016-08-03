@@ -7,7 +7,9 @@ class JsonWalker(object):
         self.dictionaries = {}
         self.lists = {}
         self.path = []
+        self.leaves = set()
         self.name = name
+        self.empty_list_warnings = []
         self.comment_dictionary = comment_dictionary
     
     @property
@@ -15,7 +17,13 @@ class JsonWalker(object):
         return ".".join([self.name]+self.path)
         
     def type_check(self, value):
-        return value.__class__.__name__
+        if isinstance(value, list):
+            if value:
+                return 'list[{}]'.format(self.type_check(value[0]))
+            else:
+                return 'list[Unknown]'
+        else:
+            return value.__class__.__name__
         
     def walk(self, chunk, parent_name):
         if isinstance(chunk, dict):
@@ -39,18 +47,21 @@ class JsonWalker(object):
             self.path.pop()
             self.dictionaries[self.json_path]['fields'].append(dictionary)
     def walk_list(self, a_list, parent_name):
-        assert a_list, "Empty list at {path}".format(path=self.json_path)
-        entry_path = self.json_path
-        self.path.append("[0]")
-        first = a_list[0]
-        self.lists[entry_path] = {'type': self.type_check(first), 
-                                  'example': first, 
-                                  'comment': self.comment_dictionary.get(self.json_path, ""), 
-                                  'path': self.json_path}
-        self.walk(first, parent_name)
-        self.path.pop()
+        #assert a_list, "Empty list at {path}".format(path=self.json_path)
+        if a_list:
+            entry_path = self.json_path
+            self.path.append("[0]")
+            first = a_list[0]
+            self.lists[entry_path] = {'type': self.type_check(first), 
+                                      'example': first, 
+                                      'comment': self.comment_dictionary.get(self.json_path, ""), 
+                                      'path': self.json_path}
+            self.walk(first, parent_name)
+            self.path.pop()
+        else:
+            self.empty_list_warnings.append(self.json_path)
     def walk_atomic(self, an_atomic, parent_name):
-        pass
+        self.leaves.add(self.json_path)
 
 DICTIONARIES = set()
 LISTS = set()
