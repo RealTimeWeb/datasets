@@ -192,6 +192,7 @@ def remove_outliers(lodol):
             category, name = inter, inter
         category = category.replace('.', ' ')
         data['pretty'] = category.title() + ": "+name.title()
+        print(data['pretty'])
         if isinstance(data['data'][0], (float, int)):
             data['type'] = 'number'
         else:
@@ -238,13 +239,14 @@ def build_locals(model, js_path):
                             category = ""
                         if category not in indexed_values:
                             indexed_values[category] = {}
+                        print(chunk)
                         for key, value in chunk.items():
                             if not isinstance(value, (int, float)):
                                 continue
                             if key not in indexed_values[category]:
                                 indexed_values[category][key] = []
                             indexed_values[category][key].append(value)
-                    
+                            
                     for category, items in indexed_values.items():
                         category = str(category)
                         for key, values in items.items():
@@ -261,11 +263,13 @@ def build_locals(model, js_path):
                     else:
                         category, name = inter, inter
                     category = category.replace('.', ' ')
+                    
                     bar_data.append({
                         'data': aggregated_values,
                         'name': index_path,
                         'indexes': [k.replace(',', '') for k in indexed_values.keys()],
-                        'best_indexes': [k.replace(',', '') for k, v in sorted([(k, v['count']) for k, v in aggregated_values.values()[0].items()], key=lambda i: -i[1])[:10]],
+                        'best_indexes': [k.replace(',', '') for k, v in sorted([(k, v['count']) 
+                                            for k, v in aggregated_values.values()[0].items()], key=lambda i: -i[1])[:10]],
                         'pretty': category.title() + ": "+name.title()
                     })
                 #sample_down(data)

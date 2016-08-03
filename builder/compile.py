@@ -434,7 +434,6 @@ class Compiler(object):
                     leaves.update(walked.leaves)
             else:
                 self.warning('Could not find local data file {}.'.format(local.file))
-        print(leaves)
         for local in self.package.locals:
             for index in local.indexes:
                 if index.jsonpath not in leaves:
