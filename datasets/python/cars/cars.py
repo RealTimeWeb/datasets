@@ -133,9 +133,6 @@ def get_cars_by_year(year, test=True):
     :type year: int
     """
     
-    if not isinstance(year, int):
-        raise DatasetException("Error, the parameter year must be of type int")
-    
     if _Constants._TEST or test:
         rows = _Constants._DATABASE.execute("SELECT data FROM cars WHERE year=? LIMIT {hardware}".format(
             hardware=_Constants._HARDWARE),
@@ -160,10 +157,11 @@ def get_cars_by_make(make, test=True):
     Returns all the cars of a certain make.
     
     :param make: The make of the cars
-    :type make: Str
+    :type make: str
     """
     
     # Match it against recommend values
+    
     potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT make FROM cars").fetchall()]
     if make.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(make, potentials)
