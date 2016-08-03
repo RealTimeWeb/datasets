@@ -178,7 +178,7 @@ def to_python_variable(source):
         return "a_{}".format(converted_type)
         
 def sluggify(astr):
-    return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_").replace("'", "_").replace('"', "_")
+    return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_").replace("'", "_").replace('"', "_").replace("?", "_")
     
 EXTENDED_TYPE_INFO = {
     'dict': '<span data-toggle="tooltip" title="Dictionary">dict</span>',

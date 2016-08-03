@@ -15,6 +15,9 @@ local:
   - file: county_demographics.json
     name: demographics
     row: report
+    indexes:
+      - name: state
+        jsonpath: demographics.[0].State
 interfaces:
   - name: get all counties
     description: Returns the report for each county from the dataset.

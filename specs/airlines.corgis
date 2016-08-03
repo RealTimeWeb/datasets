@@ -21,6 +21,8 @@ local:
         jsonpath: airlines.[0].airport.code
       - name: carrier
         jsonpath: airlines.[0].carrier.code
+      - name: time
+        jsonpath: airlines.[0].time.label
 interfaces:
   - name: get reports
     returns: list[airline]
