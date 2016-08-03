@@ -7,6 +7,7 @@ class JsonWalker(object):
         self.dictionaries = {}
         self.lists = {}
         self.path = []
+        self.leaves = set()
         self.name = name
         self.empty_list_warnings = []
         self.comment_dictionary = comment_dictionary
@@ -60,7 +61,7 @@ class JsonWalker(object):
         else:
             self.empty_list_warnings.append(self.json_path)
     def walk_atomic(self, an_atomic, parent_name):
-        pass
+        self.leaves.add(self.json_path)
 
 DICTIONARIES = set()
 LISTS = set()

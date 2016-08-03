@@ -2,13 +2,12 @@ from __future__ import print_function
 import json
 import sys, os
 from pprint import pprint
-from itertools import tee
+import subprocess
 try:
     from itertools import izip
 except ImportError:
     izip = zip
 from textwrap import wrap
-from collections import OrderedDict
 from auxiliary import to_dict, camel_case_caps, camel_case
 from auxiliary import snake_case, kebab_case, flat_case, copy_file
 import sqlite3
@@ -143,6 +142,13 @@ def create_xml_conversion(data, type):
         return "{}"
     else:
         return xml_conversion[type]
+        
+def to_java_type_for_queries(source_type, source_name=None, something=None):
+    r = convert_to_java_type(source_type, source_name=None, something=None)
+    if r == 'Integer':
+        return 'Int'
+    else:
+        return r
                     
 def convert_to_java_type(source_type, source_name=None, something=None):
     if source_name is None:
@@ -260,6 +266,7 @@ env.filters['wrap_quotes'] = wrap_quotes
 env.filters['to_human_readable_type'] = to_human_readable_type
 env.filters['convert_example_value'] = convert_example_value
 env.filters['to_java_type'] = convert_to_java_type
+env.filters['to_java_type_for_queries'] = to_java_type_for_queries
 env.filters['to_java_variable'] = to_java_variable
 env.filters['convert_url_parameters'] = convert_url_parameters
 #env.filters['collect_url_parameters'] = collect_url_parameters
@@ -356,6 +363,20 @@ def build_locals(model, database_file):
 def copy_file(filename):
     with open(filename, 'rb') as input:
         return input.read()
+        
+def post_build(model, files, moves, target):
+    print("Building jar")
+    
+    name = model['metadata']['name']
+    path = os.path.join(target, 'java', name)
+    
+    backup_location = os.getcwd()
+    os.chdir(path)
+
+    subprocess.call(["ant"], shell=True)
+    
+    os.chdir(backup_location)
+    return None
 
 def build_java(model, fast):
     name = flat_case(model['metadata']['name'])

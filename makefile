@@ -20,6 +20,8 @@ all_fast:
 	python builder/builder.py -l python --all --fast specs/ ./datasets
 test:
 	python test.py $(target)
+test_java:
+	python tests/java.py $(target)
 python_test:
 	python builder/builder.py -l python specs/$(target).corgis ./datasets
 	python test.py $(target)
@@ -27,3 +29,5 @@ index:
 	python datasets/python/build_index.py
 latex_index:
 	python datasets/metrics/build_latex_index.py
+infer_json:
+	python infer_json.py specs/$(target)/$(target).json

@@ -15,6 +15,13 @@ local:
   - file: weather.json
     name: weather
     row: report
+    indexes:
+      - name: state
+        jsonpath: report.[0].Station's State
+      - name: date
+        jsonpath: report.[0].Date
+      - name: station
+        jsonpath: report.[0].Station
 interfaces:
   - name: get weather
     description: Returns weather reports from the dataset.
@@ -56,7 +63,7 @@ interfaces:
         post: json()
     returns: list[report]
 structures:
-    "weather.[0].Weather Conditions": 'An empty list represents no significant weather to report for that day'
-    "weather.[0].Data.Precipitation": 'Inches'
-    "weather.[0].Data.Temperature": 'Degrees Farenheit'
-    "weather.[0].": 'Miles per Hour'
+    "report.[0].Weather Conditions": 'An empty list represents no significant weather to report for that day'
+    "report.[0].Data.Precipitation": 'Inches'
+    "report.[0].Data.Temperature": 'Degrees Farenheit'
+    "report.[0].": 'Miles per Hour'

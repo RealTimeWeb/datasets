@@ -14,12 +14,12 @@
       "wind"
     ], 
     "atomics": {
-      "count": 12, 
+      "count": 11, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
       "ints": 0, 
-      "strings": 5, 
+      "strings": 4, 
       "floats": 7
     }, 
     "lists": {
@@ -34,6 +34,6 @@
     }, 
     "length": 36726, 
     "locals": 0, 
-    "size": 11585082
+    "size": 11057561
   }
 }

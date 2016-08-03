@@ -215,7 +215,7 @@ def build_locals(model, js_path):
             output_bar_file.write(name+"_bar = ")
             if row_type == "json":
                 data_list = json.load(local_file)
-                data = [JsonLeafNodes(row+'.[0]', item).result for item in data_list]
+                data = [JsonLeafNodes(name+'.[0]', item).result for item in data_list]
                 data = lod_to_dol(data)
                 bar_data = []
                 remove_outliers(data)

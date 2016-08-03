@@ -26,7 +26,7 @@
 	
 	<target name="compile" depends="init" description="Compile the source" >
 	    <!-- Compile the java code from ${src} into ${build} -->
-	    <javac srcdir="${src}" destdir="${bin}" classpathref="classpath"/>
+	    <javac srcdir="${src}" destdir="${bin}" classpathref="classpath" includeantruntime="false"/>
 		<!-- Copy all the non-.java files to ${build} -->
 		<copy todir="bin">
 			<fileset dir="src" excludes="**/*.java" />
@@ -34,10 +34,11 @@
 		<!-- Compile Javadoc -->
 		<javadoc  
 		      use='true' author='true'  version='true'
-		      overview='index.html'  
+		      overview='docs/index.html'  
 		      access='package' 
 		      sourcepath='src'
-		      packagenames='*.*' 
+		      packagenames='*.*'
+              classpathref="classpath"              
 		      destdir='${docs}'
 		      windowtitle='{{ metadata.name  }}: version ${ver}'
 		      noqualifier='java.*:javax.*:com.sun.*'   

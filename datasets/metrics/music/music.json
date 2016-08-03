@@ -18,7 +18,7 @@
       "longs": 0, 
       "ints": 3, 
       "strings": 9, 
-      "floats": 21
+      "floats": 23
     }, 
     "lists": {
       "count": 1, 
@@ -32,6 +32,6 @@
     }, 
     "length": 10000, 
     "locals": 0, 
-    "size": 8803901
+    "size": 9041179
   }
 }

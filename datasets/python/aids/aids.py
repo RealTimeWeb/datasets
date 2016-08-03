@@ -130,17 +130,15 @@ def get_reports_by_year(year, test=True):
     Given a year, returns all the aids reports for that year in the database.
     
     :param year: The year to get reports.
-    :type year: Int
+    :type year: int
     """
     
+    if not isinstance(year, int):
+        raise DatasetException("Error, the parameter year must be of type int")
+    
     # Match it against recommend values
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT year FROM aids").fetchall()]
-    if year.lower() not in potentials:
-        best_guesses = _difflib.get_close_matches(year, potentials)
-        if best_guesses:
-            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
-        else:
-            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
+    
+    potentials = year
     if _Constants._TEST or test:
         rows = _Constants._DATABASE.execute("SELECT data FROM aids WHERE year=? LIMIT {hardware}".format(
             hardware=_Constants._HARDWARE),
@@ -165,10 +163,11 @@ def get_reports_by_country(country, test=True):
     Given a country, returns all the aids reports for that country in the database.
     
     :param country: The year to get reports.
-    :type country: Str
+    :type country: str
     """
     
     # Match it against recommend values
+    
     potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT country FROM aids").fetchall()]
     if country.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(country, potentials)
@@ -177,7 +176,7 @@ def get_reports_by_country(country, test=True):
         else:
             raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
     if _Constants._TEST or test:
-        rows = _Constants._DATABASE.execute("SELECT data FROM aids WHERE year=? LIMIT {hardware}".format(
+        rows = _Constants._DATABASE.execute("SELECT data FROM aids WHERE country=? LIMIT {hardware}".format(
             hardware=_Constants._HARDWARE),
             (country, ))
         data = [r[0] for r in rows]
@@ -186,7 +185,7 @@ def get_reports_by_country(country, test=True):
         return _Auxiliary._byteify(data)
         
     else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM aids WHERE year=?".format(
+        rows = _Constants._DATABASE.execute("SELECT data FROM aids WHERE country=?".format(
             hardware=_Constants._HARDWARE),
             (country, ))
         data = [r[0] for r in rows]
@@ -224,7 +223,7 @@ def _test_interfaces():
     # Production test
     print("Production get_reports_by_year")
     start_time = _default_timer()
-    result = get_reports_by_year("1990", test=False)
+    result = get_reports_by_year(1990, test=False)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -233,7 +232,7 @@ def _test_interfaces():
     # Test test
     print("Test get_reports_by_year")
     start_time = _default_timer()
-    result = get_reports_by_year("1990")
+    result = get_reports_by_year(1990)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))

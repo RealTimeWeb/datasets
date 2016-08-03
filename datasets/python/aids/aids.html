@@ -63,7 +63,7 @@
     
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">aids</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">get_reports</span><span class="p">()</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">get_reports_by_year</span><span class="p">(</span><span class="s">&quot;1990&quot;</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">get_reports_by_year</span><span class="p">(</span><span class="mi">1990</span><span class="p">)</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">get_reports_by_country</span><span class="p">(</span><span class="s">&quot;Afghanistan&quot;</span><span class="p">)</span>
 </pre></div>
 
@@ -75,7 +75,7 @@
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">aids</span>
 <span class="c"># These may be slow!</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">get_reports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">get_reports_by_year</span><span class="p">(</span><span class="s">&quot;1990&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">get_reports_by_year</span><span class="p">(</span><span class="mi">1990</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aids</span><span class="o">.</span><span class="n">get_reports_by_country</span><span class="p">(</span><span class="s">&quot;Afghanistan&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 
@@ -116,7 +116,7 @@ Given a year, returns all the aids reports for that year in the database.
 <ul class="list-group col-md-6 col-md-offset-1">
 
 <li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>year</b>: <i>Int</i></h5>
+    <h5 class="list-group-item-heading"><b>year</b>: <i>int</i></h5>
     <p class="list-group-item-text">The year to get reports.
     <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
     </p>
@@ -144,7 +144,7 @@ Given a country, returns all the aids reports for that country in the database.
 <ul class="list-group col-md-6 col-md-offset-1">
 
 <li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>country</b>: <i>Str</i></h5>
+    <h5 class="list-group-item-heading"><b>country</b>: <i>str</i></h5>
     <p class="list-group-item-text">The year to get reports.
     <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
     </p>

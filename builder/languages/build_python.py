@@ -49,8 +49,11 @@ conversion_mapping = { ("string", "integer") : "",
                        ("float", "string") : "str"}
                   
 python_types = {"string": "str",
+                'str': 'str',
                 "float": "float",
                 "integer": "int",
+                'int': 'int',
+                'bool': 'bool',
                 "void": "void",
                 "boolean": "bool",
                 "long": "int"}

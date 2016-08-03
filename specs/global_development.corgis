@@ -15,6 +15,11 @@ local:
   - file: global_development.json
     name: development
     row: report
+    indexes:
+      - name: country
+        jsonpath: report.[0].Country
+      - name: year
+        jsonpath: report.[0].Year
 interfaces:
   - name: get reports
     description: Returns global development reports from the dataset.

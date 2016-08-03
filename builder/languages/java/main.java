@@ -128,7 +128,7 @@ public class {{ metadata.name | camel_case_caps }}Library {
         }
         {% for arg in interface.args -%}
         try {
-            preparedQuery.set{{ arg.type | to_java_type}}({{ loop.index }}, {{ arg.name | camel_case }});
+            preparedQuery.set{{ arg.type | to_java_type_for_queries}}({{ loop.index }}, {{ arg.name | camel_case }});
         } catch (SQLException e) {
             System.err.println("Could not build prepare argument: {{ arg.name }}");
     		e.printStackTrace();

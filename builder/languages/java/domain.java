@@ -62,8 +62,7 @@ public class {{ dictionary.name | clean_invalid_characters | camel_case_caps }} 
 	
 	/**
 	 * Internal constructor to create a {{ dictionary.name | camel_case_caps }} from a {{ dictionary.format }} representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public {{ dictionary.name | clean_invalid_characters | camel_case_caps }}(JSONObject json_data) {
         try {

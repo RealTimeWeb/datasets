@@ -1,8 +1,8 @@
 {
   "finance": {
     "dicts": {
-      "count": 4, 
-      "average branching factor": 61
+      "count": 25, 
+      "average branching factor": 7
     }, 
     "tags": [
       "finance", 
@@ -14,26 +14,26 @@
       "us"
     ], 
     "atomics": {
-      "count": 241, 
+      "count": 151, 
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 240, 
+      "ints": 150, 
       "strings": 1, 
       "floats": 0
     }, 
     "lists": {
-      "count": 2, 
-      "lengths": 51, 
-      "complex": 2
+      "count": 1, 
+      "lengths": 918, 
+      "complex": 1
     }, 
     "heights": 5, 
     "unions": {
       "count": 0, 
       "sizes": 0
     }, 
-    "length": 51, 
+    "length": 918, 
     "locals": 0, 
-    "size": 8850412
+    "size": 5738653
   }
 }

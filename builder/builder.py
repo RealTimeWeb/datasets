@@ -11,7 +11,7 @@ from build import build_dir
 from languages.build_python import build_python
 from languages.build_racket import build_racket
 from languages.build_csv import build_csv
-from languages.build_java import build_java
+from languages.build_java import build_java, post_build
 from languages.build_sql import build_sql
 from languages.build_metrics import build_metrics
 from languages.build_visualizer import build_visualizer
@@ -69,22 +69,23 @@ if __name__ == '__main__':
                     print("\t\t", error)
             # print("*"*10)
             language_target = args.language.lower()
+            compiled_dict = to_dict(compiled)
             if language_target == "python":
-                files, moves = build_python(to_dict(compiled), args.fast)
+                files, moves = build_python(compiled_dict, args.fast)
             elif language_target == "csv":
-                files, moves = build_csv(to_dict(compiled))
+                files, moves = build_csv(compiled_dict)
             elif language_target == "racket":
-                files, moves = build_racket(to_dict(compiled), args.fast)
+                files, moves = build_racket(compiled_dict, args.fast)
             elif language_target == "java":
-                files, moves = build_java(to_dict(compiled), args.fast)
+                files, moves = build_java(compiled_dict, args.fast)
             elif language_target == "sql":
-                files, moves = build_sql(to_dict(compiled), args.fast)
+                files, moves = build_sql(compiled_dict, args.fast)
             elif language_target == "metrics":
-                files, moves = build_metrics(to_dict(compiled), args.fast)
+                files, moves = build_metrics(compiled_dict, args.fast)
             elif language_target == "visualizer":
-                files, moves = build_visualizer(to_dict(compiled), args.fast)
+                files, moves = build_visualizer(compiled_dict, args.fast)
             elif language_target == "blockpy":
-                files, moves = build_blockpy(to_dict(compiled), args.fast)
+                files, moves = build_blockpy(compiled_dict, args.fast)
             else:
                 print("Unknown language target!")
                 break
@@ -94,6 +95,8 @@ if __name__ == '__main__':
                 for error in build_errors:
                     print("\t\t", error)
             else:
+                if language_target == 'java':
+                    post_build(compiled_dict, files, moves, args.target)
                 add_to_index(args.target, language_target, compiled)
             if args.index:
                 rebuild_index(args.target)
