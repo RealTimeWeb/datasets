@@ -1,4 +1,4 @@
 Traceback (most recent call last):
   File "C:\Users\Ryan\Documents\2016 Summer\Research\datasets\builder\build.py", line 46, in build_dir
     output.write(data)
-UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 8380: ordinal not in range(128)
+UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 7933: ordinal not in range(128)

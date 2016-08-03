@@ -1,0 +1,41 @@
+metadata:
+    version: 1
+    name: Food Access
+    builder: 2
+    author: Ryan Whitcomb
+    datetime: 7/14/2016
+    tags: [counties, states, food, access, availability, supermarket, rural, urban, population, vehicles]
+    description:
+        short: Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.
+        overview: > 
+            From the United States Department of Agriculture's Economic Research Service, the dataset contains information about US county's ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.  Most measures of how individuals and neighborhoods are able to access food are based on the following indicators: 
+                - Accessibility to sources of healthy food, as measured by distance to a store or by the number of stores in an area.
+                - Individual-level resources that may affect accessibility, such as family income or vehicle availability.
+                - Neighborhood-level indicators of resources, such as the average income of the neighborhood and the availability of public transportation.  
+            
+        citation: http://www.ers.usda.gov/data-products/food-access-research-atlas.aspx
+local:
+  - file: foodaccess.json
+    name: foodaccess
+    row: record
+interfaces:
+  - name: get records
+    description: Returns food access records from the dataset.
+    returns: list[record]
+    production:
+        sql: SELECT data FROM foodaccess
+        post: json()
+    test:
+        sql: SELECT data FROM foodaccess LIMIT {hardware}
+        post: json()
+structures:
+    "foodaccess.[0].Low Access Numbers": Numbers are summation of the Census Tracts for each county, distances refer to distance that an individual has to travel to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.
+    "foodaccess.[0].Low Access Numbers.Children": Age 0-17
+    "foodaccess.[0].Low Access Numbers.Seniors": Age 65+
+    "foodaccess.[0].Low Access Numbers.Low Income People": Low income is defined as annual family income at or below 200 percent of the Federal poverty threshold for family size.
+    "foodaccess.[0].Housing Data.Residing in Group Quarters": Group Quarters are dormitories, military bases, assisted living or skilled nursing facilities, and other large institutions.
+    "foodaccess.[0].Housing Data.Urban Housing Percentage": Percentage is number of Census Tracts classified as urban divided by total tracts for the county
+    "foodaccess.[0].Housing Data.Rural Housing Percentage": Percentage is number of Census Tracts classified as rural divided by total tracts for the county
+    "foodaccess.[0].Low Access Percents": Percents are number of Census Tracts with listed classification divided by total tracts for the county
+    "foodaccess.[0].Low Access Percents.Low Income and Low Access": Low income is defined as annual family income at or below 200 percent of the Federal poverty threshold for family size.
+    "foodaccess.[0].Vehicle Access": Housing units without vehicle access and low access as specified distance
