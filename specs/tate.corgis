@@ -17,6 +17,11 @@ local:
   - file: tate.json
     name: tate
     row: art
+    indexes:
+      - name: gender
+        jsonpath: tate.[0].artist.gender
+      - name: creation
+        jsonpath: tate.[0].metadata.creation decade
 interfaces:
   - name: get artwork
     returns: list[art]
@@ -27,3 +32,13 @@ interfaces:
     test:
         sql: SELECT data FROM tate LIMIT {hardware}
         post: json()
+structures:
+    "tate.[0].metadata.creation decade": The 10-year period that this particular art piece was created in. If the creation date was not known, it was replaced with "0".
+    "tate.[0].metadata.creation year": The year that this particular art piece was created in. If the creation date was not known, it was replaced with "0".
+    "tate.[0].metadata.acquisition date": The year that this particular art piece was acquired by the Tate art gallery. If the creation date was not known, it was replaced with "0".
+    "tate.[0].artist.birth.year": The year that the artist was born. If the year is unknown, it was replaced with "0".
+    "tate.[0].artist.death.year": The year that the artist died. If the year is unknown, it was replaced with "0".
+    "tate.[0].artist.gender": The recorded gender of the artist, either "Male", "Female", or a blank string.
+    "tate.[0].dimensions.width": The width of the piece of art, in millimeters. If it is unknown, this was replaced with "0".
+    "tate.[0].dimensions.height": The height of the piece of art, in millimeters. If it is unknown, this was replaced with "0".
+    "tate.[0].dimensions.depth": The depth of the piece of art, in millimeters. If it is unknown, this was replaced with "0".

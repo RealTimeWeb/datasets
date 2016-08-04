@@ -458,7 +458,7 @@ $(document).ready(function () {
                 ys = [];
                 for (var i = 0, length = indices.length; i < length; i = i+1) {
                     var key_value = indices[i];
-                    if (typeof key_value) {
+                    if (typeof key_value === 'string') {
                         key_value = key_value.replace(',', '')
                     }
                     if (filter_value == key_value) {

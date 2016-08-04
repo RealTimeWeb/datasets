@@ -18,6 +18,9 @@ local:
   - file: foodaccess.json
     name: foodaccess
     row: record
+    indexes:
+      - name: state
+        jsonpath: foodaccess.[0].State
 interfaces:
   - name: get records
     description: Returns food access records from the dataset.

@@ -1,0 +1,1 @@
+skyscrapers_bar = []

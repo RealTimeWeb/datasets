@@ -8846,7 +8846,7 @@ earthquakes = [
       "nc72636360", 
       "us10005jkl"
     ], 
-    "name": "earthquake.[0].id", 
+    "name": "earthquakes.[0].id", 
     "pretty": "Id: Id", 
     "index": false
   }, 
@@ -17697,7 +17697,7 @@ earthquakes = [
       187.0, 
       179.0
     ], 
-    "name": "earthquake.[0].impact.gap", 
+    "name": "earthquakes.[0].impact.gap", 
     "pretty": "Impact: Gap", 
     "index": false
   }, 
@@ -26548,7 +26548,7 @@ earthquakes = [
       0.56, 
       4.3
     ], 
-    "name": "earthquake.[0].impact.magnitude", 
+    "name": "earthquakes.[0].impact.magnitude", 
     "pretty": "Impact: Magnitude", 
     "index": false
   }, 
@@ -35399,7 +35399,7 @@ earthquakes = [
       5, 
       284
     ], 
-    "name": "earthquake.[0].impact.significance", 
+    "name": "earthquakes.[0].impact.significance", 
     "pretty": "Impact: Significance", 
     "index": false
   }, 
@@ -44250,7 +44250,7 @@ earthquakes = [
       6.17, 
       10.0
     ], 
-    "name": "earthquake.[0].location.depth", 
+    "name": "earthquakes.[0].location.depth", 
     "pretty": "Location: Depth", 
     "index": false
   }, 
@@ -53101,7 +53101,7 @@ earthquakes = [
       0.06068, 
       1.864
     ], 
-    "name": "earthquake.[0].location.distance", 
+    "name": "earthquakes.[0].location.distance", 
     "pretty": "Location: Distance", 
     "index": false
   }, 
@@ -61952,7 +61952,7 @@ earthquakes = [
       "21km SE of Mammoth Lakes, California", 
       "145km N of Hihifo, Tonga"
     ], 
-    "name": "earthquake.[0].location.full", 
+    "name": "earthquakes.[0].location.full", 
     "pretty": "Location: Full", 
     "index": false
   }, 
@@ -70803,7 +70803,7 @@ earthquakes = [
       37.5223333, 
       -14.6477
     ], 
-    "name": "earthquake.[0].location.latitude", 
+    "name": "earthquakes.[0].location.latitude", 
     "pretty": "Location: Latitude", 
     "index": false
   }, 
@@ -79654,7 +79654,7 @@ earthquakes = [
       -118.7843333, 
       -173.5448
     ], 
-    "name": "earthquake.[0].location.longitude", 
+    "name": "earthquakes.[0].location.longitude", 
     "pretty": "Location: Longitude", 
     "index": false
   }, 
@@ -88505,9 +88505,9 @@ earthquakes = [
       " California", 
       " Tonga"
     ], 
-    "name": "earthquake.[0].location.state", 
+    "name": "earthquakes.[0].location.state", 
     "pretty": "Location: State", 
-    "index": false
+    "index": true
   }, 
   {
     "type": "number", 
@@ -97356,7 +97356,7 @@ earthquakes = [
       16, 
       16
     ], 
-    "name": "earthquake.[0].time.day", 
+    "name": "earthquakes.[0].time.day", 
     "pretty": "Time: Day", 
     "index": false
   }, 
@@ -106207,7 +106207,7 @@ earthquakes = [
       "2016-05-16 10:11:30", 
       "2016-05-16 10:06:09"
     ], 
-    "name": "earthquake.[0].time.full", 
+    "name": "earthquakes.[0].time.full", 
     "pretty": "Time: Full", 
     "index": false
   }, 
@@ -115058,7 +115058,7 @@ earthquakes = [
       10, 
       10
     ], 
-    "name": "earthquake.[0].time.hour", 
+    "name": "earthquakes.[0].time.hour", 
     "pretty": "Time: Hour", 
     "index": false
   }, 
@@ -123909,7 +123909,7 @@ earthquakes = [
       11, 
       6
     ], 
-    "name": "earthquake.[0].time.minute", 
+    "name": "earthquakes.[0].time.minute", 
     "pretty": "Time: Minute", 
     "index": false
   }, 
@@ -132760,7 +132760,7 @@ earthquakes = [
       5, 
       5
     ], 
-    "name": "earthquake.[0].time.month", 
+    "name": "earthquakes.[0].time.month", 
     "pretty": "Time: Month", 
     "index": false
   }, 
@@ -141611,7 +141611,7 @@ earthquakes = [
       30, 
       9
     ], 
-    "name": "earthquake.[0].time.second", 
+    "name": "earthquakes.[0].time.second", 
     "pretty": "Time: Second", 
     "index": false
   }, 
@@ -150462,7 +150462,7 @@ earthquakes = [
       2016, 
       2016
     ], 
-    "name": "earthquake.[0].time.year", 
+    "name": "earthquakes.[0].time.year", 
     "pretty": "Time: Year", 
     "index": false
   }

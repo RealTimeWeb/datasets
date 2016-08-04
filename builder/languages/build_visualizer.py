@@ -171,8 +171,6 @@ def remove_outliers(lodol):
         #print(data['name'])
         #print([e for e in data['data'] if isinstance(e, (str, unicode))])
         if isinstance(data['data'][0], (int, float)):
-            if data['name'] == 'cancer.[0].Year':
-                print(data['data'])
             mean = statistics.mean(data['data'])
             std = statistics.stdev(data['data'])
             evils = 0
@@ -183,7 +181,7 @@ def remove_outliers(lodol):
                     evils += 1
             #print(data['name'], mean-4*std, mean+4*std, evils)
     
-    #print("Bad indexes:", len(bad_indexes), "/", len(lodol[0]['data']))
+    print("Bad indexes:", len(bad_indexes), "/", len(lodol[0]['data']))
     #print("Contributing keys:", ', '.join(bad_keys))
     for data in lodol:
         data['data'] = [v for i, v in enumerate(data['data']) if i not in bad_indexes]
