@@ -140,7 +140,7 @@ Returns all the cars of a certain make.
 <ul class="list-group col-md-6 col-md-offset-1">
 
 <li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>make</b>: <i>Str</i></h5>
+    <h5 class="list-group-item-heading"><b>make</b>: <i>str</i></h5>
     <p class="list-group-item-text">The make of the cars
     <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
     </p>
@@ -203,123 +203,28 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-cars-__0__' title='Dictionary (23 keys)'>
+    <div id='explore-cars-__0__' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Acceleration"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.0</code></td> 
+            <tr> <td><code>"Engine Information"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-cars-__0__-Engine-Information'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"highway_mpg"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>26</code></td> 
+            <tr> <td><code>"Identification"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-cars-__0__-Identification'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Make"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Pontiac"</code></td> 
+            <tr> <td><code>"Dimensions"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-cars-__0__-Dimensions'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Hybrid"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>""</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Base Curb Weight"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Width"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"year"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2004</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"id"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"2004 Pontiac GTO Coupe Pontiac 5.7L 8 Cylinder 6 Speed Manual"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Engine"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Pontiac 5.7L 8 Cylinder"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"fuel"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>""</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"city_mpg"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>16</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Transmission"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"6 Speed Manual"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Length"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Top Speed"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Classification"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Manual transmission"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Engine Type"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"8 Cylinder"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Torque"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Height"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Number Of Forward Gears"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>6</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Horsepower"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Driveline"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>""</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Model Year"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"2004 Pontiac GTO Coupe"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Size"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>5.7</code></td> 
+            <tr> <td><code>"Fuel Information"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-cars-__0__-Fuel-Information'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
         </table>
@@ -331,118 +236,293 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-cars-__0__-Acceleration").click(function() {
-            $( "#explore-cars-__0__-Acceleration" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Engine-Information").click(function() {
+            $( "#explore-cars-__0__-Engine-Information" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-highway_mpg").click(function() {
-            $( "#explore-cars-__0__-highway_mpg" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Identification").click(function() {
+            $( "#explore-cars-__0__-Identification" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Make").click(function() {
-            $( "#explore-cars-__0__-Make" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Dimensions").click(function() {
+            $( "#explore-cars-__0__-Dimensions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Hybrid").click(function() {
-            $( "#explore-cars-__0__-Hybrid" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Fuel-Information").click(function() {
+            $( "#explore-cars-__0__-Fuel-Information" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Base-Curb-Weight").click(function() {
-            $( "#explore-cars-__0__-Base-Curb-Weight" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+    });
+    </script>
+
+    <div id='explore-cars-__0__-Fuel-Information' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Highway mpg"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>25</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"City mph"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>18</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Fuel Type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Gasoline"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cars-__0__-Fuel-Information" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cars-__0__-Fuel-Information-Highway-mpg").click(function() {
+            $( "#explore-cars-__0__-Fuel-Information-Highway-mpg" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Width").click(function() {
-            $( "#explore-cars-__0__-Width" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Fuel-Information-City-mph").click(function() {
+            $( "#explore-cars-__0__-Fuel-Information-City-mph" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-year").click(function() {
-            $( "#explore-cars-__0__-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Fuel-Information-Fuel-Type").click(function() {
+            $( "#explore-cars-__0__-Fuel-Information-Fuel-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-id").click(function() {
-            $( "#explore-cars-__0__-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+    });
+    </script>
+
+    <div id='explore-cars-__0__-Identification' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Make"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Audi"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Model Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"2009 Audi A3"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"ID"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"2009 Audi A3 3.2"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Classification"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Automatic transmission"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2009</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cars-__0__-Identification" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cars-__0__-Identification-Make").click(function() {
+            $( "#explore-cars-__0__-Identification-Make" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Engine").click(function() {
-            $( "#explore-cars-__0__-Engine" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Identification-Model-Year").click(function() {
+            $( "#explore-cars-__0__-Identification-Model-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-fuel").click(function() {
-            $( "#explore-cars-__0__-fuel" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Identification-ID").click(function() {
+            $( "#explore-cars-__0__-Identification-ID" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-city_mpg").click(function() {
-            $( "#explore-cars-__0__-city_mpg" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Identification-Classification").click(function() {
+            $( "#explore-cars-__0__-Identification-Classification" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Transmission").click(function() {
-            $( "#explore-cars-__0__-Transmission" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Identification-Year").click(function() {
+            $( "#explore-cars-__0__-Identification-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Length").click(function() {
-            $( "#explore-cars-__0__-Length" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+    });
+    </script>
+
+    <div id='explore-cars-__0__-Dimensions' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Width"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>202</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Length"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>143</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Height"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>140</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cars-__0__-Dimensions" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cars-__0__-Dimensions-Width").click(function() {
+            $( "#explore-cars-__0__-Dimensions-Width" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Top-Speed").click(function() {
-            $( "#explore-cars-__0__-Top-Speed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Dimensions-Length").click(function() {
+            $( "#explore-cars-__0__-Dimensions-Length" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Classification").click(function() {
-            $( "#explore-cars-__0__-Classification" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Dimensions-Height").click(function() {
+            $( "#explore-cars-__0__-Dimensions-Height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Engine-Type").click(function() {
-            $( "#explore-cars-__0__-Engine-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+    });
+    </script>
+
+    <div id='explore-cars-__0__-Engine-Information' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Transmission"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"6 Speed Automatic Select Shift"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Engine Type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Audi 3.2L 6 cylinder 250hp 236ft-lbs"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Engine Statistics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-cars-__0__-Engine-Information-Engine-Statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Hybrid"</code></td> 
+                 <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
+                 <td><code>False</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Number of Forward Gears"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Driveline"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"All-wheel drive"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cars-__0__-Engine-Information" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cars-__0__-Engine-Information-Transmission").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Transmission" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Torque").click(function() {
-            $( "#explore-cars-__0__-Torque" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Engine-Information-Engine-Type").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Engine-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Height").click(function() {
-            $( "#explore-cars-__0__-Height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Engine-Information-Engine-Statistics").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Engine-Statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Number-Of-Forward-Gears").click(function() {
-            $( "#explore-cars-__0__-Number-Of-Forward-Gears" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Engine-Information-Hybrid").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Hybrid" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Horsepower").click(function() {
-            $( "#explore-cars-__0__-Horsepower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Engine-Information-Number-of-Forward-Gears").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Number-of-Forward-Gears" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Driveline").click(function() {
-            $( "#explore-cars-__0__-Driveline" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Engine-Information-Driveline").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Driveline" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Model-Year").click(function() {
-            $( "#explore-cars-__0__-Model-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+    });
+    </script>
+
+    <div id='explore-cars-__0__-Engine-Information-Engine-Statistics' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Horsepower"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>250</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Torque"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>236</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-cars-__0__-Engine-Information-Engine-Statistics" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-cars-__0__-Engine-Information-Engine-Statistics-Horsepower").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Engine-Statistics-Horsepower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-cars-__0__-Size").click(function() {
-            $( "#explore-cars-__0__-Size" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-cars-__0__-Engine-Information-Engine-Statistics-Torque").click(function() {
+            $( "#explore-cars-__0__-Engine-Information-Engine-Statistics-Torque" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

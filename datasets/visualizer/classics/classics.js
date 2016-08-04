@@ -723,7 +723,7 @@ classics = [
       1839, 
       1809
     ], 
-    "name": "Book.[0].Bibliography.Author.Birth", 
+    "name": "classics.[0].Bibliography.Author.Birth", 
     "pretty": "Bibliography Author: Birth", 
     "index": false
   }, 
@@ -1451,7 +1451,7 @@ classics = [
       1908, 
       1890
     ], 
-    "name": "Book.[0].Bibliography.Author.Death", 
+    "name": "classics.[0].Bibliography.Author.Death", 
     "pretty": "Bibliography Author: Death", 
     "index": false
   }, 
@@ -2329,14 +2329,12 @@ classics = [
       "Kurtz, J. H. (Johann Heinrich)", 
       "Morse, Katharine Duncan"
     ], 
-    "name": "Book.[0].Bibliography.Author.Name", 
+    "name": "classics.[0].Bibliography.Author.Name", 
     "pretty": "Bibliography Author: Name", 
-    "index": true
+    "index": false
   }, 
   {
-    "comment": "The day of the month when the book was published. Notice that missing values have been coded as \"0\".", 
-    "index": false, 
-    "name": "Book.[0].Bibliography.Publication.Day", 
+    "type": "number", 
     "data": [
       1, 
       1, 
@@ -3209,8 +3207,9 @@ classics = [
       17, 
       19
     ], 
+    "name": "classics.[0].Bibliography.Publication.Day", 
     "pretty": "Bibliography Publication: Day", 
-    "type": "number"
+    "index": false
   }, 
   {
     "type": "text", 
@@ -4086,7 +4085,7 @@ classics = [
       "March 17, 2016", 
       "March 19, 2016"
     ], 
-    "name": "Book.[0].Bibliography.Publication.Full Date", 
+    "name": "classics.[0].Bibliography.Publication.Full Date", 
     "pretty": "Bibliography Publication: Full Date", 
     "index": false
   }, 
@@ -4964,7 +4963,7 @@ classics = [
       3, 
       3
     ], 
-    "name": "Book.[0].Bibliography.Publication.Month", 
+    "name": "classics.[0].Bibliography.Publication.Month", 
     "pretty": "Bibliography Publication: Month", 
     "index": false
   }, 
@@ -5842,7 +5841,7 @@ classics = [
       "March", 
       "March"
     ], 
-    "name": "Book.[0].Bibliography.Publication.Month Name", 
+    "name": "classics.[0].Bibliography.Publication.Month Name", 
     "pretty": "Bibliography Publication: Month Name", 
     "index": false
   }, 
@@ -6720,7 +6719,7 @@ classics = [
       2016, 
       2016
     ], 
-    "name": "Book.[0].Bibliography.Publication.Year", 
+    "name": "classics.[0].Bibliography.Publication.Year", 
     "pretty": "Bibliography Publication: Year", 
     "index": false
   }, 
@@ -7598,7 +7597,7 @@ classics = [
       "Church History (Volumes 1-3)", 
       "The Uncensored Letters of a Canteen Girl"
     ], 
-    "name": "Book.[0].Bibliography.Title", 
+    "name": "classics.[0].Bibliography.Title", 
     "pretty": "Bibliography: Title", 
     "index": false
   }, 
@@ -8476,7 +8475,7 @@ classics = [
       "Text", 
       "Text"
     ], 
-    "name": "Book.[0].Bibliography.Type", 
+    "name": "classics.[0].Bibliography.Type", 
     "pretty": "Bibliography: Type", 
     "index": false
   }, 
@@ -9354,7 +9353,7 @@ classics = [
       7, 
       7
     ], 
-    "name": "Book.[0].Metadata.Formats.Total", 
+    "name": "classics.[0].Metadata.Formats.Total", 
     "pretty": "Metadata Formats: Total", 
     "index": false
   }, 
@@ -10232,7 +10231,7 @@ classics = [
       0, 
       0
     ], 
-    "name": "Book.[0].Metadata.Downloads", 
+    "name": "classics.[0].Metadata.Downloads", 
     "pretty": "Metadata: Downloads", 
     "index": false
   }, 
@@ -11110,7 +11109,7 @@ classics = [
       51491, 
       51495
     ], 
-    "name": "Book.[0].Metadata.ID", 
+    "name": "classics.[0].Metadata.ID", 
     "pretty": "Metadata: Id", 
     "index": false
   }, 
@@ -11988,7 +11987,7 @@ classics = [
       1005, 
       1006
     ], 
-    "name": "Book.[0].Metadata.Rank", 
+    "name": "classics.[0].Metadata.Rank", 
     "pretty": "Metadata: Rank", 
     "index": false
   }, 
@@ -12866,7 +12865,7 @@ classics = [
       "https://www.gutenberg.org/ebooks/51491", 
       "https://www.gutenberg.org/ebooks/51495"
     ], 
-    "name": "Book.[0].Metadata.Url", 
+    "name": "classics.[0].Metadata.Url", 
     "pretty": "Metadata: Url", 
     "index": false
   }, 
@@ -13744,7 +13743,7 @@ classics = [
       12.3, 
       9.4
     ], 
-    "name": "Book.[0].Metrics.Difficulty.Automated Readability Index", 
+    "name": "classics.[0].Metrics.Difficulty.Automated Readability Index", 
     "pretty": "Metrics Difficulty: Automated Readability Index", 
     "index": false
   }, 
@@ -14622,7 +14621,7 @@ classics = [
       13.22, 
       9.86
     ], 
-    "name": "Book.[0].Metrics.Difficulty.Coleman Liau Index", 
+    "name": "classics.[0].Metrics.Difficulty.Coleman Liau Index", 
     "pretty": "Metrics Difficulty: Coleman Liau Index", 
     "index": false
   }, 
@@ -15500,7 +15499,7 @@ classics = [
       5.56, 
       6.24
     ], 
-    "name": "Book.[0].Metrics.Difficulty.Dale Chall Readability Score", 
+    "name": "classics.[0].Metrics.Difficulty.Dale Chall Readability Score", 
     "pretty": "Metrics Difficulty: Dale Chall Readability Score", 
     "index": false
   }, 
@@ -16378,7 +16377,7 @@ classics = [
       49821, 
       10665
     ], 
-    "name": "Book.[0].Metrics.Difficulty.Difficult Words", 
+    "name": "classics.[0].Metrics.Difficulty.Difficult Words", 
     "pretty": "Metrics Difficulty: Difficult Words", 
     "index": false
   }, 
@@ -17256,7 +17255,7 @@ classics = [
       8.7, 
       7.6
     ], 
-    "name": "Book.[0].Metrics.Difficulty.Flesch Kincaid Grade", 
+    "name": "classics.[0].Metrics.Difficulty.Flesch Kincaid Grade", 
     "pretty": "Metrics Difficulty: Flesch Kincaid Grade", 
     "index": false
   }, 
@@ -18134,7 +18133,7 @@ classics = [
       62.68, 
       71.14
     ], 
-    "name": "Book.[0].Metrics.Difficulty.Flesch Reading Ease", 
+    "name": "classics.[0].Metrics.Difficulty.Flesch Reading Ease", 
     "pretty": "Metrics Difficulty: Flesch Reading Ease", 
     "index": false
   }, 
@@ -19012,7 +19011,7 @@ classics = [
       8.8, 
       8.8
     ], 
-    "name": "Book.[0].Metrics.Difficulty.Gunning Fog", 
+    "name": "classics.[0].Metrics.Difficulty.Gunning Fog", 
     "pretty": "Metrics Difficulty: Gunning Fog", 
     "index": false
   }, 
@@ -19890,7 +19889,7 @@ classics = [
       2.0, 
       4.5
     ], 
-    "name": "Book.[0].Metrics.Difficulty.Linear Write Formula", 
+    "name": "classics.[0].Metrics.Difficulty.Linear Write Formula", 
     "pretty": "Metrics Difficulty: Linear Write Formula", 
     "index": false
   }, 
@@ -20768,7 +20767,7 @@ classics = [
       8.8, 
       3.1
     ], 
-    "name": "Book.[0].Metrics.Difficulty.Smog Index", 
+    "name": "classics.[0].Metrics.Difficulty.Smog Index", 
     "pretty": "Metrics Difficulty: Smog Index", 
     "index": false
   }, 
@@ -21646,7 +21645,7 @@ classics = [
       0.11224187416199208, 
       0.059622581728734886
     ], 
-    "name": "Book.[0].Metrics.Sentiments.Polarity", 
+    "name": "classics.[0].Metrics.Sentiments.Polarity", 
     "pretty": "Metrics Sentiments: Polarity", 
     "index": false
   }, 
@@ -22524,7 +22523,7 @@ classics = [
       0.4400144316605153, 
       0.4354433298058611
     ], 
-    "name": "Book.[0].Metrics.Sentiments.Subjectivity", 
+    "name": "classics.[0].Metrics.Sentiments.Subjectivity", 
     "pretty": "Metrics Sentiments: Subjectivity", 
     "index": false
   }, 
@@ -23402,7 +23401,7 @@ classics = [
       5.31, 
       4.73
     ], 
-    "name": "Book.[0].Metrics.Statistics.Average Letter per Word", 
+    "name": "classics.[0].Metrics.Statistics.Average Letter per Word", 
     "pretty": "Metrics Statistics: Average Letter Per Word", 
     "index": false
   }, 
@@ -24280,7 +24279,7 @@ classics = [
       17.0, 
       17.0
     ], 
-    "name": "Book.[0].Metrics.Statistics.Average Sentence Length", 
+    "name": "classics.[0].Metrics.Statistics.Average Sentence Length", 
     "pretty": "Metrics Statistics: Average Sentence Length", 
     "index": false
   }, 
@@ -25158,7 +25157,7 @@ classics = [
       0.06, 
       0.06
     ], 
-    "name": "Book.[0].Metrics.Statistics.Average Sentence per Word", 
+    "name": "classics.[0].Metrics.Statistics.Average Sentence per Word", 
     "pretty": "Metrics Statistics: Average Sentence Per Word", 
     "index": false
   }, 
@@ -26036,7 +26035,7 @@ classics = [
       3883244, 
       451687
     ], 
-    "name": "Book.[0].Metrics.Statistics.Characters", 
+    "name": "classics.[0].Metrics.Statistics.Characters", 
     "pretty": "Metrics Statistics: Characters", 
     "index": false
   }, 
@@ -26914,7 +26913,7 @@ classics = [
       46730, 
       2595
     ], 
-    "name": "Book.[0].Metrics.Statistics.Polysyllables", 
+    "name": "classics.[0].Metrics.Statistics.Polysyllables", 
     "pretty": "Metrics Statistics: Polysyllables", 
     "index": false
   }, 
@@ -27792,7 +27791,7 @@ classics = [
       41950, 
       5580
     ], 
-    "name": "Book.[0].Metrics.Statistics.Sentences", 
+    "name": "classics.[0].Metrics.Statistics.Sentences", 
     "pretty": "Metrics Statistics: Sentences", 
     "index": false
   }, 
@@ -28670,7 +28669,7 @@ classics = [
       1083170.7, 
       130093.2
     ], 
-    "name": "Book.[0].Metrics.Statistics.Syllables", 
+    "name": "classics.[0].Metrics.Statistics.Syllables", 
     "pretty": "Metrics Statistics: Syllables", 
     "index": false
   }, 
@@ -29548,7 +29547,7 @@ classics = [
       730715, 
       95496
     ], 
-    "name": "Book.[0].Metrics.Statistics.Words", 
+    "name": "classics.[0].Metrics.Statistics.Words", 
     "pretty": "Metrics Statistics: Words", 
     "index": false
   }
