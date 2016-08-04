@@ -16,7 +16,7 @@ local:
     row: production
     indexes:
       - name: theatre
-        jsonpath: production.[0].theatre
+        jsonpath: broadway.[0].theatre
 interfaces:
   - name: get shows
     returns: list[production]

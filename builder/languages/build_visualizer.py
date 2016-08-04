@@ -171,6 +171,8 @@ def remove_outliers(lodol):
         #print(data['name'])
         #print([e for e in data['data'] if isinstance(e, (str, unicode))])
         if isinstance(data['data'][0], (int, float)):
+            if data['name'] == 'cancer.[0].Year':
+                print(data['data'])
             mean = statistics.mean(data['data'])
             std = statistics.stdev(data['data'])
             evils = 0
@@ -239,7 +241,6 @@ def build_locals(model, js_path):
                             category = ""
                         if category not in indexed_values:
                             indexed_values[category] = {}
-                        print(chunk)
                         for key, value in chunk.items():
                             if not isinstance(value, (int, float)):
                                 continue
