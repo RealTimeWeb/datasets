@@ -17,6 +17,8 @@
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_reports'>get_reports</a></li>
+        <li><a href='#get_reports_by_year'>get_reports_by_year</a></li>
+        <li><a href='#get_reports_by_country'>get_reports_by_country</a></li>
         
         </ol></li>
         
@@ -57,10 +59,12 @@
     
     <h3 id="usage">Usage</h3>
     
-    This library has 1 function you can use.
+    This library has 3 functions you can use.
     
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">globaldevelopment</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">globaldevelopment</span><span class="o">.</span><span class="n">get_reports</span><span class="p">()</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">globaldevelopment</span><span class="o">.</span><span class="n">get_reports_by_year</span><span class="p">(</span><span class="s">&quot;1990&quot;</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">globaldevelopment</span><span class="o">.</span><span class="n">get_reports_by_country</span><span class="p">(</span><span class="s">&quot;&#39;Afghanistan&#39;&quot;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -71,6 +75,8 @@
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">globaldevelopment</span>
 <span class="c"># These may be slow!</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">globaldevelopment</span><span class="o">.</span><span class="n">get_reports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">globaldevelopment</span><span class="o">.</span><span class="n">get_reports_by_year</span><span class="p">(</span><span class="s">&quot;1990&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">globaldevelopment</span><span class="o">.</span><span class="n">get_reports_by_country</span><span class="p">(</span><span class="s">&quot;&#39;Afghanistan&#39;&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 
 
@@ -87,6 +93,62 @@ Returns global development reports from the dataset.
 <br>
 
 <ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+<h4 id='get_reports_by_year'>globaldevelopment.get_reports_by_year(year, test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns global development reports for a specified year.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>year</b>: <i>int</i></h5>
+    <p class="list-group-item-text">The desired year
+    
+    </p>
+</li>
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+<h4 id='get_reports_by_country'>globaldevelopment.get_reports_by_country(country, test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns global development reports for a specified country.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>country</b>: <i>int</i></h5>
+    <p class="list-group-item-text">The desired country
+    
+    </p>
+</li>
 
 
 <li class="list-group-item list-group-item-warning">
@@ -237,96 +299,96 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-development-__0__-Data-Agriculure-and-Rural-Development' title='Dictionary (8 keys)'>
+    <div id='explore-development-__0__-Data-Rural-Development' title='Dictionary (8 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"Arable Land Percent"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>4.87974390527</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Arable Land"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>1.82782057091</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Rural Population"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>5918004.0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Agricultural Land Percent"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>7.3572250979</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Rural Population Growth"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.833711883207</code></td> 
-                 <td></td> </tr>
             
             <tr> <td><code>"Surface Area"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>9984670.0</code></td> 
-                 <td></td> </tr>
+                 <td>Square kilometers</td> </tr>
+            
+            <tr> <td><code>"Arable Land"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1.82782057091</code></td> 
+                 <td>Hectacres per person</td> </tr>
+            
+            <tr> <td><code>"Rural Population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>5918004.0</code></td> 
+                 <td>Percent of total population</td> </tr>
+            
+            <tr> <td><code>"Agricultural Land Percent"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>7.3572250979</code></td> 
+                 <td>Percent of land area</td> </tr>
+            
+            <tr> <td><code>"Rural Population Growth"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.833711883207</code></td> 
+                 <td>Annual Percent</td> </tr>
+            
+            <tr> <td><code>"Arable Land Percent"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.87974390527</code></td> 
+                 <td>Percent of land area</td> </tr>
             
             <tr> <td><code>"Agricultural Land"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>669030.0</code></td> 
-                 <td></td> </tr>
+                 <td>Square kilometers</td> </tr>
             
             <tr> <td><code>"Land Area"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>9093510.0</code></td> 
-                 <td></td> </tr>
+                 <td>Square kilometers</td> </tr>
             
         </table>
     </div>
     <script>
     $(document).ready(function() {
-        $( "#explore-development-__0__-Data-Agriculure-and-Rural-Development" ).dialog({
+        $( "#explore-development-__0__-Data-Rural-Development" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-development-__0__-Data-Agriculure-and-Rural-Development-Arable-Land-Percent").click(function() {
-            $( "#explore-development-__0__-Data-Agriculure-and-Rural-Development-Arable-Land-Percent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Rural-Development-Surface-Area").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Surface-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-development-__0__-Data-Agriculure-and-Rural-Development-Arable-Land").click(function() {
-            $( "#explore-development-__0__-Data-Agriculure-and-Rural-Development-Arable-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Rural-Development-Arable-Land").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Arable-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-development-__0__-Data-Agriculure-and-Rural-Development-Rural-Population").click(function() {
-            $( "#explore-development-__0__-Data-Agriculure-and-Rural-Development-Rural-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Rural-Development-Rural-Population").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Rural-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-development-__0__-Data-Agriculure-and-Rural-Development-Agricultural-Land-Percent").click(function() {
-            $( "#explore-development-__0__-Data-Agriculure-and-Rural-Development-Agricultural-Land-Percent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Rural-Development-Agricultural-Land-Percent").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Agricultural-Land-Percent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-development-__0__-Data-Agriculure-and-Rural-Development-Rural-Population-Growth").click(function() {
-            $( "#explore-development-__0__-Data-Agriculure-and-Rural-Development-Rural-Population-Growth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Rural-Development-Rural-Population-Growth").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Rural-Population-Growth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-development-__0__-Data-Agriculure-and-Rural-Development-Surface-Area").click(function() {
-            $( "#explore-development-__0__-Data-Agriculure-and-Rural-Development-Surface-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Rural-Development-Arable-Land-Percent").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Arable-Land-Percent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-development-__0__-Data-Agriculure-and-Rural-Development-Agricultural-Land").click(function() {
-            $( "#explore-development-__0__-Data-Agriculure-and-Rural-Development-Agricultural-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Rural-Development-Agricultural-Land").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Agricultural-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-development-__0__-Data-Agriculure-and-Rural-Development-Land-Area").click(function() {
-            $( "#explore-development-__0__-Data-Agriculure-and-Rural-Development-Land-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Rural-Development-Land-Area").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development-Land-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -433,11 +495,6 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Agriculure and Rural Development"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-development-__0__-Data-Agriculure-and-Rural-Development'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
-            
             <tr> <td><code>"Infrastructure"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td><a class='dialog-opener' id='btn-explore-development-__0__-Data-Infrastructure'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
@@ -453,6 +510,11 @@ $(document).ready(function() {
                  <td><a class='dialog-opener' id='btn-explore-development-__0__-Data-Urban-Development'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
+            <tr> <td><code>"Rural Development"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-development-__0__-Data-Rural-Development'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
         </table>
     </div>
     <script>
@@ -460,11 +522,6 @@ $(document).ready(function() {
         $( "#explore-development-__0__-Data" ).dialog({
           autoOpen: false,
           width: 600
-        });
-        
-        $("#btn-explore-development-__0__-Data-Agriculure-and-Rural-Development").click(function() {
-            $( "#explore-development-__0__-Data-Agriculure-and-Rural-Development" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
         });
         
         $("#btn-explore-development-__0__-Data-Infrastructure").click(function() {
@@ -482,6 +539,11 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        $("#btn-explore-development-__0__-Data-Rural-Development").click(function() {
+            $( "#explore-development-__0__-Data-Rural-Development" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
     });
     </script>
 
@@ -494,7 +556,7 @@ $(document).ready(function() {
                  <td><code>9595000.0</code></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Mobile Cellular Subscriptions"</code></td> 
+            <tr> <td><code>"Mobile Cellular Subscriptions per 100 People"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>0.0</code></td> 
                  <td></td> </tr>
@@ -504,7 +566,7 @@ $(document).ready(function() {
                  <td><code>39.5623509248</code></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Mobile Cellular Subscriptions per 100 People"</code></td> 
+            <tr> <td><code>"Mobile Cellular Subscriptions"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>0.0</code></td> 
                  <td></td> </tr>
@@ -523,8 +585,8 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions").click(function() {
-            $( "#explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions-per-100-People").click(function() {
+            $( "#explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions-per-100-People" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -533,8 +595,8 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions-per-100-People").click(function() {
-            $( "#explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions-per-100-People" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions").click(function() {
+            $( "#explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

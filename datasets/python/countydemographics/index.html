@@ -87,6 +87,7 @@ County Demographics Library (CORGIS Datasets Project)
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_all_counties'>get_all_counties</a></li>
+        <li><a href='#get_counties_by_state'>get_counties_by_state</a></li>
         
         </ol></li>
         
@@ -127,10 +128,11 @@ County Demographics Library (CORGIS Datasets Project)
     
     <h3 id="usage">Usage</h3>
     
-    This library has 1 function you can use.
+    This library has 2 functions you can use.
     
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">countydemographics</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">countydemographics</span><span class="o">.</span><span class="n">get_all_counties</span><span class="p">()</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">countydemographics</span><span class="o">.</span><span class="n">get_counties_by_state</span><span class="p">(</span><span class="s">&quot;&#39;Virginia&#39;&quot;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -141,6 +143,7 @@ County Demographics Library (CORGIS Datasets Project)
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">countydemographics</span>
 <span class="c"># These may be slow!</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">countydemographics</span><span class="o">.</span><span class="n">get_all_counties</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">countydemographics</span><span class="o">.</span><span class="n">get_counties_by_state</span><span class="p">(</span><span class="s">&quot;&#39;Virginia&#39;&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 
 
@@ -157,6 +160,34 @@ Returns the report for each county from the dataset.
 <br>
 
 <ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+<h4 id='get_counties_by_state'>countydemographics.get_counties_by_state(state, test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns the report for each county in a given state.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>state</b>: <i>str</i></h5>
+    <p class="list-group-item-text">The name of the desired state
+    
+    </p>
+</li>
 
 
 <li class="list-group-item list-group-item-warning">
@@ -229,20 +260,20 @@ $(document).ready(function() {
                  <td><code>8.3</code></td> 
                  <td>percent, 2009-2013</td> </tr>
             
+            <tr> <td><code>"Median Value of Owner-Occupied Units"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>136200</code></td> 
+                 <td>2009-2013</td> </tr>
+            
             <tr> <td><code>"Households"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>20071</code></td> 
                  <td>2009-2013</td> </tr>
             
-            <tr> <td><code>"Median Vale of Owner-Occupied Units"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>136200</code></td> 
-                 <td></td> </tr>
-            
             <tr> <td><code>"Persons per Household"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>2.71</code></td> 
-                 <td></td> </tr>
+                 <td>2009-2013</td> </tr>
             
             <tr> <td><code>"Homeownership Rate"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
@@ -268,13 +299,13 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-demographics-__0__-Housing-Households").click(function() {
-            $( "#explore-demographics-__0__-Housing-Households" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-demographics-__0__-Housing-Median-Value-of-Owner-Occupied-Units").click(function() {
+            $( "#explore-demographics-__0__-Housing-Median-Value-of-Owner-Occupied-Units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-demographics-__0__-Housing-Median-Vale-of-Owner-Occupied-Units").click(function() {
-            $( "#explore-demographics-__0__-Housing-Median-Vale-of-Owner-Occupied-Units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-demographics-__0__-Housing-Households").click(function() {
+            $( "#explore-demographics-__0__-Housing-Households" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -698,7 +729,7 @@ $(document).ready(function() {
             <tr> <td><code>"Persons Below Poverty Level"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>12.1</code></td> 
-                 <td></td> </tr>
+                 <td>percent</td> </tr>
             
         </table>
     </div>
@@ -906,7 +937,7 @@ $(document).ready(function() {
             <tr> <td><code>"Firms"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td><a class='dialog-opener' id='btn-explore-demographics-__0__-Employment-Firms'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
+                 <td>2007</td> </tr>
             
             <tr> <td><code>"Nonemployer Establishments"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 

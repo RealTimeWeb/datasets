@@ -125,6 +125,60 @@ def get_reports(test=True):
         return _Auxiliary._byteify(data)
         
 
+def get_reports_by_year(year, test=True):
+    """
+    Returns global development reports for a specified year.
+    
+    :param year: The desired year
+    :type year: int
+    """
+    
+    if _Constants._TEST or test:
+        rows = _Constants._DATABASE.execute("SELECT data FROM development WHERE year=? LIMIT {hardware}".format(
+            hardware=_Constants._HARDWARE),
+            (year, ))
+        data = [r[0] for r in rows]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
+        
+        return _Auxiliary._byteify(data)
+        
+    else:
+        rows = _Constants._DATABASE.execute("SELECT data FROM development WHERE year=?".format(
+            hardware=_Constants._HARDWARE),
+            (year, ))
+        data = [r[0] for r in rows]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
+        
+        return _Auxiliary._byteify(data)
+        
+
+def get_reports_by_country(country, test=True):
+    """
+    Returns global development reports for a specified country.
+    
+    :param country: The desired country
+    :type country: int
+    """
+    
+    if _Constants._TEST or test:
+        rows = _Constants._DATABASE.execute("SELECT data FROM development WHERE country=? LIMIT {hardware}".format(
+            hardware=_Constants._HARDWARE),
+            (country, ))
+        data = [r[0] for r in rows]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
+        
+        return _Auxiliary._byteify(data)
+        
+    else:
+        rows = _Constants._DATABASE.execute("SELECT data FROM development WHERE country=?".format(
+            hardware=_Constants._HARDWARE),
+            (country, ))
+        data = [r[0] for r in rows]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
+        
+        return _Auxiliary._byteify(data)
+        
+
 ################################################################################
 # Internalized testing code
 ################################################################################
@@ -145,6 +199,44 @@ def _test_interfaces():
     print("Test get_reports")
     start_time = _default_timer()
     result = get_reports()
+    
+    print("{} entries found.".format(len(result)))
+    _pprint(_Auxiliary._guess_schema(result))
+    
+    print("Time taken: {}".format(_default_timer() - start_time))
+    
+    # Production test
+    print("Production get_reports_by_year")
+    start_time = _default_timer()
+    result = get_reports_by_year("1990", test=False)
+    
+    print("{} entries found.".format(len(result)))
+    _pprint(_Auxiliary._guess_schema(result))
+    
+    print("Time taken: {}".format(_default_timer() - start_time))
+    # Test test
+    print("Test get_reports_by_year")
+    start_time = _default_timer()
+    result = get_reports_by_year("1990")
+    
+    print("{} entries found.".format(len(result)))
+    _pprint(_Auxiliary._guess_schema(result))
+    
+    print("Time taken: {}".format(_default_timer() - start_time))
+    
+    # Production test
+    print("Production get_reports_by_country")
+    start_time = _default_timer()
+    result = get_reports_by_country("'Afghanistan'", test=False)
+    
+    print("{} entries found.".format(len(result)))
+    _pprint(_Auxiliary._guess_schema(result))
+    
+    print("Time taken: {}".format(_default_timer() - start_time))
+    # Test test
+    print("Test get_reports_by_country")
+    start_time = _default_timer()
+    result = get_reports_by_country("'Afghanistan'")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))

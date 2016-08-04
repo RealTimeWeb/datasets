@@ -125,6 +125,33 @@ def get_all_counties(test=True):
         return _Auxiliary._byteify(data)
         
 
+def get_counties_by_state(state, test=True):
+    """
+    Returns the report for each county in a given state.
+    
+    :param state: The name of the desired state
+    :type state: str
+    """
+    
+    if _Constants._TEST or test:
+        rows = _Constants._DATABASE.execute("SELECT data FROM demographics WHERE state=? COLLATE NOCASE LIMIT {hardware}".format(
+            hardware=_Constants._HARDWARE),
+            (state, ))
+        data = [r[0] for r in rows]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
+        
+        return _Auxiliary._byteify(data)
+        
+    else:
+        rows = _Constants._DATABASE.execute("SELECT data FROM demographics WHERE state=? COLLATE NOCASE".format(
+            hardware=_Constants._HARDWARE),
+            (state, ))
+        data = [r[0] for r in rows]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
+        
+        return _Auxiliary._byteify(data)
+        
+
 ################################################################################
 # Internalized testing code
 ################################################################################
@@ -145,6 +172,25 @@ def _test_interfaces():
     print("Test get_all_counties")
     start_time = _default_timer()
     result = get_all_counties()
+    
+    print("{} entries found.".format(len(result)))
+    _pprint(_Auxiliary._guess_schema(result))
+    
+    print("Time taken: {}".format(_default_timer() - start_time))
+    
+    # Production test
+    print("Production get_counties_by_state")
+    start_time = _default_timer()
+    result = get_counties_by_state("'Virginia'", test=False)
+    
+    print("{} entries found.".format(len(result)))
+    _pprint(_Auxiliary._guess_schema(result))
+    
+    print("Time taken: {}".format(_default_timer() - start_time))
+    # Test test
+    print("Test get_counties_by_state")
+    start_time = _default_timer()
+    result = get_counties_by_state("'Virginia'")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
