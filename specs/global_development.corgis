@@ -17,9 +17,9 @@ local:
     row: report
     indexes:
       - name: country
-        jsonpath: report.[0].Country
+        jsonpath: development.[0].Country
       - name: year
-        jsonpath: report.[0].Year
+        jsonpath: development.[0].Year
 interfaces:
   - name: get reports
     description: Returns global development reports from the dataset.
@@ -30,18 +30,46 @@ interfaces:
     test:
         sql: SELECT data FROM development LIMIT {hardware}
         post: json()
+  - name: get reports by year
+    args:
+      - name: year
+        type: integer
+        description: The desired year
+        default: '1990'
+    description: Returns global development reports for a specified year.
+    returns: list[report]
+    production:
+        sql: SELECT data FROM development WHERE year=?
+        post: json()
+    test:
+        sql: SELECT data FROM development WHERE year=? LIMIT {hardware}
+        post: json()
+  - name: get reports by country
+    args:
+      - name: country
+        type: integer
+        description: The desired country
+        default: "'Afghanistan'"
+    description: Returns global development reports for a specified country.
+    returns: list[report]
+    production:
+        sql: SELECT data FROM development WHERE country=?
+        post: json()
+    test:
+        sql: SELECT data FROM development WHERE country=? LIMIT {hardware}
+        post: json()
 structures:
     "development.[0].Data.Urban Development.Population Density": People per square kilometer of land area
     "development.[0].Data.Urban Development.Urban Population": Percent of total
     "development.[0].Data.Urban Development.Urban Population Growth": Annual percent
-    "development.[0].Data.Agriculture and Rural Development.Rural Population": Percent of total population
-    "development.[0].Data.Agriculture and Rural Development. Land Area": Square kilometers
-    "development.[0].Data.Agriculture and Rural Development.Rural Population Growth": Annual Percent
-    "development.[0].Data.Agriculture and Rural Development.Arable Land Percent": Percent of land area
-    "development.[0].Data.Agriculture and Rural Development.Surface Area": Square kilometers
-    "development.[0].Data.Agriculture and Rural Development.Agricultural Land Percent": Percent of land area
-    "development.[0].Data.Agriculture and Rural Development. Arable Land": Hectacres per person
-    "development.[0].Data.Agriculture and Rural Development.Agricultural Land": Square kilometers
+    "development.[0].Data.Rural Development.Rural Population": Percent of total population
+    "development.[0].Data.Rural Development.Land Area": Square kilometers
+    "development.[0].Data.Rural Development.Rural Population Growth": Annual Percent
+    "development.[0].Data.Rural Development.Arable Land Percent": Percent of land area
+    "development.[0].Data.Rural Development.Surface Area": Square kilometers
+    "development.[0].Data.Rural Development.Agricultural Land Percent": Percent of land area
+    "development.[0].Data.Rural Development.Arable Land": Hectacres per person
+    "development.[0].Data.Rural Development.Agricultural Land": Square kilometers
     "development.[0].Data.Health.Birth Rate": Crude, per 1000 People
     "development.[0].Data.Health.Death Rate": Crude, per 100 People
     "development.[0].Data.Health.Fertility Rate": Total, Births per woman

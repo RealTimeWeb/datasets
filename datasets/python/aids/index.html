@@ -277,85 +277,39 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-aids-__0__-Data' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"People Living with HIV"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-aids-__0__-Data-People-Living-with-HIV'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"New HIV Infections"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-aids-__0__-Data-New-HIV-Infections'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"AIDS-Related Deaths"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-aids-__0__-Data-AIDS-Related-Deaths'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-aids-__0__-Data" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV").click(function() {
-            $( "#explore-aids-__0__-Data-People-Living-with-HIV" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-aids-__0__-Data-New-HIV-Infections").click(function() {
-            $( "#explore-aids-__0__-Data-New-HIV-Infections" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-aids-__0__-Data-AIDS-Related-Deaths").click(function() {
-            $( "#explore-aids-__0__-Data-AIDS-Related-Deaths" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-    });
-    </script>
-
     <div id='explore-aids-__0__-Data-AIDS-Related-Deaths' title='Dictionary (6 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"AIDS-Related Deaths All Ages"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>341</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"AIDS-Related Deaths Among Male Adults"</code></td> 
+            <tr> <td><code>"Male Adults"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>227</code></td> 
+                 <td>15+ Years Old</td> </tr>
+            
+            <tr> <td><code>"All Ages"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>341</code></td> 
                  <td></td> </tr>
             
             <tr> <td><code>"AIDS Orphans"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>3953</code></td> 
-                 <td></td> </tr>
+                 <td>0-17 Years Old</td> </tr>
             
-            <tr> <td><code>"AIDS-Related Deaths Among Adults"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>312</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"AIDS-Related Deaths Among Female Adults"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>84</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"AIDS-Related Deaths Among Children"</code></td> 
+            <tr> <td><code>"Children"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>30</code></td> 
-                 <td></td> </tr>
+                 <td>0-14 Years Old</td> </tr>
+            
+            <tr> <td><code>"Female Adults"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>84</code></td> 
+                 <td>15+ Years Old</td> </tr>
+            
+            <tr> <td><code>"Adults"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>312</code></td> 
+                 <td>15+ Years Old</td> </tr>
             
         </table>
     </div>
@@ -366,13 +320,13 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-aids-__0__-Data-AIDS-Related-Deaths-AIDS-Related-Deaths-All-Ages").click(function() {
-            $( "#explore-aids-__0__-Data-AIDS-Related-Deaths-AIDS-Related-Deaths-All-Ages" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-aids-__0__-Data-AIDS-Related-Deaths-Male-Adults").click(function() {
+            $( "#explore-aids-__0__-Data-AIDS-Related-Deaths-Male-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-aids-__0__-Data-AIDS-Related-Deaths-AIDS-Related-Deaths-Among-Male-Adults").click(function() {
-            $( "#explore-aids-__0__-Data-AIDS-Related-Deaths-AIDS-Related-Deaths-Among-Male-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-aids-__0__-Data-AIDS-Related-Deaths-All-Ages").click(function() {
+            $( "#explore-aids-__0__-Data-AIDS-Related-Deaths-All-Ages" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -381,114 +335,18 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-aids-__0__-Data-AIDS-Related-Deaths-AIDS-Related-Deaths-Among-Adults").click(function() {
-            $( "#explore-aids-__0__-Data-AIDS-Related-Deaths-AIDS-Related-Deaths-Among-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-aids-__0__-Data-AIDS-Related-Deaths-Children").click(function() {
+            $( "#explore-aids-__0__-Data-AIDS-Related-Deaths-Children" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-aids-__0__-Data-AIDS-Related-Deaths-AIDS-Related-Deaths-Among-Female-Adults").click(function() {
-            $( "#explore-aids-__0__-Data-AIDS-Related-Deaths-AIDS-Related-Deaths-Among-Female-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-aids-__0__-Data-AIDS-Related-Deaths-Female-Adults").click(function() {
+            $( "#explore-aids-__0__-Data-AIDS-Related-Deaths-Female-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-aids-__0__-Data-AIDS-Related-Deaths-AIDS-Related-Deaths-Among-Children").click(function() {
-            $( "#explore-aids-__0__-Data-AIDS-Related-Deaths-AIDS-Related-Deaths-Among-Children" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-    });
-    </script>
-
-    <div id='explore-aids-__0__-Data-People-Living-with-HIV' title='Dictionary (8 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"HIV Prevalence Among Young Women"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.0108</code></td> 
-                 <td>15-24 Years Old</td> </tr>
-            
-            <tr> <td><code>"Children Living with HIV"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>233</code></td> 
-                 <td>0-14 Years Old</td> </tr>
-            
-            <tr> <td><code>"People Living with HIV"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>6931</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Female Adults Living with HIV"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1914</code></td> 
-                 <td>15+ Years Old</td> </tr>
-            
-            <tr> <td><code>"HIV Prevalence Among Young Men"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.0127</code></td> 
-                 <td>15-24 Years Old</td> </tr>
-            
-            <tr> <td><code>"Adults Living with HIV"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>6698</code></td> 
-                 <td>15+ Years Old</td> </tr>
-            
-            <tr> <td><code>"Male Adults Living with HIV"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>4784</code></td> 
-                 <td>15+ Years Old</td> </tr>
-            
-            <tr> <td><code>"HIV Prevalence Among Adults"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.0395</code></td> 
-                 <td>15-49 Years Old</td> </tr>
-            
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-aids-__0__-Data-People-Living-with-HIV" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-HIV-Prevalence-Among-Young-Women").click(function() {
-            $( "#explore-aids-__0__-Data-People-Living-with-HIV-HIV-Prevalence-Among-Young-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-Children-Living-with-HIV").click(function() {
-            $( "#explore-aids-__0__-Data-People-Living-with-HIV-Children-Living-with-HIV" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-People-Living-with-HIV").click(function() {
-            $( "#explore-aids-__0__-Data-People-Living-with-HIV-People-Living-with-HIV" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-Female-Adults-Living-with-HIV").click(function() {
-            $( "#explore-aids-__0__-Data-People-Living-with-HIV-Female-Adults-Living-with-HIV" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-HIV-Prevalence-Among-Young-Men").click(function() {
-            $( "#explore-aids-__0__-Data-People-Living-with-HIV-HIV-Prevalence-Among-Young-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-Adults-Living-with-HIV").click(function() {
-            $( "#explore-aids-__0__-Data-People-Living-with-HIV-Adults-Living-with-HIV" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-Male-Adults-Living-with-HIV").click(function() {
-            $( "#explore-aids-__0__-Data-People-Living-with-HIV-Male-Adults-Living-with-HIV" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-HIV-Prevalence-Among-Adults").click(function() {
-            $( "#explore-aids-__0__-Data-People-Living-with-HIV-HIV-Prevalence-Among-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-aids-__0__-Data-AIDS-Related-Deaths-Adults").click(function() {
+            $( "#explore-aids-__0__-Data-AIDS-Related-Deaths-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -499,35 +357,35 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"New HIV Infections Among Children"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>62</code></td> 
-                 <td></td> </tr>
-            
             <tr> <td><code>"Incidence Rate Among Adults"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>0.0058</code></td> 
-                 <td></td> </tr>
+                 <td>15-49 Years Old</td> </tr>
             
-            <tr> <td><code>"New HIV Infections Among Adults"</code></td> 
+            <tr> <td><code>"Male Adults"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>906</code></td> 
-                 <td></td> </tr>
+                 <td><code>659</code></td> 
+                 <td>15+ Years Old</td> </tr>
             
-            <tr> <td><code>"New HIV Infections All Ages"</code></td> 
+            <tr> <td><code>"All Ages"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>968</code></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"New HIV Infections Among Female Adults"</code></td> 
+            <tr> <td><code>"Children"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>62</code></td> 
+                 <td>0-14 Years Old</td> </tr>
+            
+            <tr> <td><code>"Female Adults"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>247.0</code></td> 
-                 <td></td> </tr>
+                 <td>15+ Years Old</td> </tr>
             
-            <tr> <td><code>"New HIV Infections Among Male Adults"</code></td> 
+            <tr> <td><code>"Adults"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>659</code></td> 
-                 <td></td> </tr>
+                 <td><code>906</code></td> 
+                 <td>15+ Years Old</td> </tr>
             
         </table>
     </div>
@@ -538,33 +396,145 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-aids-__0__-Data-New-HIV-Infections-New-HIV-Infections-Among-Children").click(function() {
-            $( "#explore-aids-__0__-Data-New-HIV-Infections-New-HIV-Infections-Among-Children" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
         $("#btn-explore-aids-__0__-Data-New-HIV-Infections-Incidence-Rate-Among-Adults").click(function() {
             $( "#explore-aids-__0__-Data-New-HIV-Infections-Incidence-Rate-Among-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-aids-__0__-Data-New-HIV-Infections-New-HIV-Infections-Among-Adults").click(function() {
-            $( "#explore-aids-__0__-Data-New-HIV-Infections-New-HIV-Infections-Among-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-aids-__0__-Data-New-HIV-Infections-Male-Adults").click(function() {
+            $( "#explore-aids-__0__-Data-New-HIV-Infections-Male-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-aids-__0__-Data-New-HIV-Infections-New-HIV-Infections-All-Ages").click(function() {
-            $( "#explore-aids-__0__-Data-New-HIV-Infections-New-HIV-Infections-All-Ages" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-aids-__0__-Data-New-HIV-Infections-All-Ages").click(function() {
+            $( "#explore-aids-__0__-Data-New-HIV-Infections-All-Ages" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-aids-__0__-Data-New-HIV-Infections-New-HIV-Infections-Among-Female-Adults").click(function() {
-            $( "#explore-aids-__0__-Data-New-HIV-Infections-New-HIV-Infections-Among-Female-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-aids-__0__-Data-New-HIV-Infections-Children").click(function() {
+            $( "#explore-aids-__0__-Data-New-HIV-Infections-Children" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-aids-__0__-Data-New-HIV-Infections-New-HIV-Infections-Among-Male-Adults").click(function() {
-            $( "#explore-aids-__0__-Data-New-HIV-Infections-New-HIV-Infections-Among-Male-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-aids-__0__-Data-New-HIV-Infections-Female-Adults").click(function() {
+            $( "#explore-aids-__0__-Data-New-HIV-Infections-Female-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-aids-__0__-Data-New-HIV-Infections-Adults").click(function() {
+            $( "#explore-aids-__0__-Data-New-HIV-Infections-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-aids-__0__-Data-People-Living-with-HIV' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Male Adults"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4784</code></td> 
+                 <td>15+ Years Old</td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6931</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Children"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>233</code></td> 
+                 <td>0-14 Years Old</td> </tr>
+            
+            <tr> <td><code>"Female Adults"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1914</code></td> 
+                 <td>15+ Years Old</td> </tr>
+            
+            <tr> <td><code>"Adults"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6698</code></td> 
+                 <td>15+ Years Old</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-aids-__0__-Data-People-Living-with-HIV" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-Male-Adults").click(function() {
+            $( "#explore-aids-__0__-Data-People-Living-with-HIV-Male-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-Total").click(function() {
+            $( "#explore-aids-__0__-Data-People-Living-with-HIV-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-Children").click(function() {
+            $( "#explore-aids-__0__-Data-People-Living-with-HIV-Children" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-Female-Adults").click(function() {
+            $( "#explore-aids-__0__-Data-People-Living-with-HIV-Female-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV-Adults").click(function() {
+            $( "#explore-aids-__0__-Data-People-Living-with-HIV-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-aids-__0__-Data-HIV-Prevalence' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Young Men"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0127</code></td> 
+                 <td>15-24 Years Old</td> </tr>
+            
+            <tr> <td><code>"Adults"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0395</code></td> 
+                 <td>15-49 Years Old</td> </tr>
+            
+            <tr> <td><code>"Young Women"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0108</code></td> 
+                 <td>15-24 Years Old</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-aids-__0__-Data-HIV-Prevalence" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-aids-__0__-Data-HIV-Prevalence-Young-Men").click(function() {
+            $( "#explore-aids-__0__-Data-HIV-Prevalence-Young-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-aids-__0__-Data-HIV-Prevalence-Adults").click(function() {
+            $( "#explore-aids-__0__-Data-HIV-Prevalence-Adults" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-aids-__0__-Data-HIV-Prevalence-Young-Women").click(function() {
+            $( "#explore-aids-__0__-Data-HIV-Prevalence-Young-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -611,6 +581,62 @@ $(document).ready(function() {
         
         $("#btn-explore-aids-__0__-Year").click(function() {
             $( "#explore-aids-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-aids-__0__-Data' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"HIV Prevalence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-aids-__0__-Data-HIV-Prevalence'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"People Living with HIV"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-aids-__0__-Data-People-Living-with-HIV'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"New HIV Infections"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-aids-__0__-Data-New-HIV-Infections'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"AIDS-Related Deaths"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-aids-__0__-Data-AIDS-Related-Deaths'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-aids-__0__-Data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-aids-__0__-Data-HIV-Prevalence").click(function() {
+            $( "#explore-aids-__0__-Data-HIV-Prevalence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-aids-__0__-Data-People-Living-with-HIV").click(function() {
+            $( "#explore-aids-__0__-Data-People-Living-with-HIV" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-aids-__0__-Data-New-HIV-Infections").click(function() {
+            $( "#explore-aids-__0__-Data-New-HIV-Infections" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-aids-__0__-Data-AIDS-Related-Deaths").click(function() {
+            $( "#explore-aids-__0__-Data-AIDS-Related-Deaths" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

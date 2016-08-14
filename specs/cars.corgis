@@ -56,3 +56,6 @@ interfaces:
     test:
         sql: SELECT data FROM cars WHERE make=? COLLATE NOCASE LIMIT {hardware}
         post: json()
+structures:
+    "cars.[0].Engine Information.Engine Statistics.Torque": lb/ft
+    
