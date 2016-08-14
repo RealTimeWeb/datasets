@@ -16,19 +16,10 @@ import org.json.simple.JSONObject;
  */
 public class DateArgued {
 	
-    private Integer month;
     private String full;
-    private Integer day;
     private Integer year;
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getMonth() {
-        return this.month;
-    }
-    
+    private Integer day;
+    private Integer month;
     
     
     /*
@@ -36,6 +27,15 @@ public class DateArgued {
      */
     public String getFull() {
         return this.full;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getYear() {
+        return this.year;
     }
     
     
@@ -52,8 +52,8 @@ public class DateArgued {
     /*
      * @return 
      */
-    public Integer getYear() {
-        return this.year;
+    public Integer getMonth() {
+        return this.month;
     }
     
     
@@ -65,20 +65,19 @@ public class DateArgued {
 	 * @return String
 	 */
 	public String toString() {
-		return "DateArgued[" +month+", "+full+", "+day+", "+year+"]";
+		return "DateArgued[" +full+", "+year+", "+day+", "+month+"]";
 	}
 	
 	/**
 	 * Internal constructor to create a DateArgued from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public DateArgued(JSONObject json_data) {
-        try {// month
-            this.month = new Integer(((Long)json_data.get("month")).intValue());// full
-            this.full = (String)json_data.get("full");// day
-            this.day = new Integer(((Long)json_data.get("day")).intValue());// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());
+        try {// full
+            this.full = (String)json_data.get("full");// year
+            this.year = new Integer(((Long)json_data.get("year")).intValue());// day
+            this.day = new Integer(((Long)json_data.get("day")).intValue());// month
+            this.month = new Integer(((Long)json_data.get("month")).intValue());
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a DateArgued; a field was missing.");
     		e.printStackTrace();

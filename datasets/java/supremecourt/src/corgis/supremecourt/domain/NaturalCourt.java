@@ -82,8 +82,7 @@ public class NaturalCourt {
 	
 	/**
 	 * Internal constructor to create a NaturalCourt from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public NaturalCourt(JSONObject json_data) {
         try {// start

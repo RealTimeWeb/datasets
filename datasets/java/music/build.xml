@@ -26,7 +26,7 @@
 	
 	<target name="compile" depends="init" description="Compile the source" >
 	    <!-- Compile the java code from ${src} into ${build} -->
-	    <javac srcdir="${src}" destdir="${bin}" classpathref="classpath"/>
+	    <javac srcdir="${src}" destdir="${bin}" classpathref="classpath" includeantruntime="false"/>
 		<!-- Copy all the non-.java files to ${build} -->
 		<copy todir="bin">
 			<fileset dir="src" excludes="**/*.java" />
@@ -34,10 +34,11 @@
 		<!-- Compile Javadoc -->
 		<javadoc  
 		      use='true' author='true'  version='true'
-		      overview='index.html'  
+		      overview='docs/index.html'  
 		      access='package' 
 		      sourcepath='src'
-		      packagenames='*.*' 
+		      packagenames='*.*'
+              classpathref="classpath"              
 		      destdir='${docs}'
 		      windowtitle='Music: version ${ver}'
 		      noqualifier='java.*:javax.*:com.sun.*'   
@@ -52,21 +53,27 @@
 	    <!-- Put everything in ${build} into the music-${DSTAMP}.jar file -->
 	    <jar jarfile="${dist}/music-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
+            <fileset file="music.db" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
+            <manifest><attribute name="Main-Class" value="corgis.music.MusicLibrary" /></manifest>
 		</jar>
 		
 		<!-- Put everything in ${build} and ${docs} into the music-doc-${DSTAMP}.jar file -->
 		<jar jarfile="${dist}/music-doc-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
 			<fileset dir="docs" includes="**" />
+            <fileset file="music.db" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
+            <manifest><attribute name="Main-Class" value="corgis.music.MusicLibrary" /></manifest>
 		</jar>
 		
 		<!-- Put everything in ${build} and ${src} into the music-src-${DSTAMP}.jar file -->
 		<jar jarfile="${dist}/music-src-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
 			<fileset dir="src" includes="**" />
+            <fileset file="music.db" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
+            <manifest><attribute name="Main-Class" value="corgis.music.MusicLibrary" /></manifest>
 		</jar>
 	</target>
 	

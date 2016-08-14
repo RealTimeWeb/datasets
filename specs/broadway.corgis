@@ -42,3 +42,10 @@ interfaces:
     production:
         sql: SELECT data FROM broadway WHERE theatre=? COLLATE NOCASE
         post: json()
+structures:
+    "broadway.[0].theatre": The name of the theatre.
+    "broadway.[0].capacity": The percentage of how well the theatre was filled.
+    "broadway.[0].performances": The total number of performances of this showing.
+    "broadway.[0].date": The date of this performance.
+    "broadway.[0].date": The numeric day of the month that this performance took place.
+    

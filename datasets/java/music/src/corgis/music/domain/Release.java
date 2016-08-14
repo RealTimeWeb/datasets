@@ -50,8 +50,7 @@ public class Release {
 	
 	/**
 	 * Internal constructor to create a Release from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Release(JSONObject json_data) {
         try {// id

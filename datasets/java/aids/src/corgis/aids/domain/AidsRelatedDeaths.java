@@ -17,10 +17,15 @@ import org.json.simple.JSONObject;
 public class AidsRelatedDeaths {
 	
     private Integer aidsRelatedDeathsAllAges;
+    // 15+ Years Old
     private Integer aidsRelatedDeathsAmongMaleAdults;
+    // 0-17 Years Old
     private Integer aidsOrphans;
+    // 15+ Years Old
     private Integer aidsRelatedDeathsAmongAdults;
+    // 15+ Years Old
     private Integer aidsRelatedDeathsAmongFemaleAdults;
+    // 0-14 Years Old
     private Integer aidsRelatedDeathsAmongChildren;
     
     

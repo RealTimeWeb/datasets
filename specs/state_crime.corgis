@@ -17,9 +17,9 @@ local:
     row: report
     indexes:
       - name: state
-        jsonpath: report.[0].State
+        jsonpath: crime.[0].State
       - name: year
-        jsonpath: report.[0].Year
+        jsonpath: crime.[0].Year
 interfaces:
   - name: get all crimes
     returns: list[report]
@@ -49,7 +49,7 @@ interfaces:
     description: Given a year, returns all the crime reports for that year in the database.
     args:
       - name: year
-        default: '1984'
+        default: 1984
         type: int
         matches: SELECT DISTINCT department FROM crime
         description: The year to get reports.
@@ -61,4 +61,22 @@ interfaces:
         post: json()
     returns: list[report]
 structures:
-  "crime.[0].Data.Rates": Rates are the number of reported offenses per 100,000 population.
+    "crime.[0].Data.Rates": Rates are the number of reported offenses per 100,000 population.
+    "crime.[0].Data.Rates.Property.All": Rates are the number of reported offenses per 100,000 population. This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.
+    "crime.[0].Data.Rates.Property.Burglary": Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.
+    "crime.[0].Data.Rates.Property.Larceny": Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or theft of personal property.
+    "crime.[0].Data.Rates.Property.Motor": Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where a motor vehicle was stolen.
+    "crime.[0].Data.Rates.Violent.All": Rates are the number of reported offenses per 100,000 population. This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.
+    "crime.[0].Data.Rates.Violent.Assault": Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.
+    "crime.[0].Data.Rates.Violent.Murder": Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.
+    "crime.[0].Data.Rates.Violent.Rape": Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.
+    "crime.[0].Data.Rates.Violent.Robbery": Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.
+    "crime.[0].Data.Totals.Property.All": This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.
+    "crime.[0].Data.Totals.Property.Burglary": This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.
+    "crime.[0].Data.Totals.Property.Larceny": This property reflects the number of burglaries, or theft of personal property.
+    "crime.[0].Data.Totals.Property.Motor": This property reflects the number of crimes where a motor vehicle was stolen.
+    "crime.[0].Data.Totals.Violent.All": This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.
+    "crime.[0].Data.Totals.Violent.Assault": This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.
+    "crime.[0].Data.Totals.Violent.Murder": This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.
+    "crime.[0].Data.Totals.Violent.Rape": This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.
+    "crime.[0].Data.Totals.Violent.Robbery": This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.

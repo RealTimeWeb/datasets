@@ -16,6 +16,7 @@ import org.json.simple.JSONObject;
  */
 public class Formats {
 	
+    // Project Gutenberg makes books available in a wide variety of file formats, including raw text files, HTML web pages, audio books, etc. This field indicates the number of ways that this book is available.
     private Integer total;
     private ArrayList<String> types;
     
@@ -50,14 +51,13 @@ public class Formats {
 	
 	/**
 	 * Internal constructor to create a Formats from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Formats(JSONObject json_data) {
-        try {// Total
-            this.total = new Integer(((Long)json_data.get("Total")).intValue());// Types
+        try {// total
+            this.total = new Integer(((Long)json_data.get("total")).intValue());// types
             this.types = new ArrayList<String>();
-            Iterator<Object> typesIter = ((List<Object>)json_data.get("Types")).iterator();
+            Iterator<Object> typesIter = ((List<Object>)json_data.get("types")).iterator();
             while (typesIter.hasNext()) {
                 this.types.add(new String((String)typesIter.next()));
             }

@@ -14,7 +14,7 @@ var INDEX_VALUES = {
         {% for value in values['data']|unique|sort %}
         [{{ value | tojson }}, {{ value | tojson }}] {{ ',' if not loop.last -}}
         {% endfor %}
-    ]
+    ]{{ ',' if not loop.last -}}
     {% endfor %}
 }
 
@@ -92,3 +92,7 @@ PythonToBlocks.KNOWN_MODULES['{{ library_name }}'] = {
 AbstractInterpreter.MODULES['{{ library_name }}'] = {
     'get': {"type": "List", "empty": false, "component": {"type": 'Num'}}
 };
+
+BlockPyEditor.CATEGORY_MAP['Data - {{ metadata.name }}'] = '<category name="Data - {{ metadata.name }}" colour="50">'+
+                    '<block type="{{ library_name }}_get"><mutation index="(None)" index_value=""></mutation></block>'+
+                '</category>';

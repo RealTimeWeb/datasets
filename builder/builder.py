@@ -25,6 +25,10 @@ except ImportError:
 
 
 if __name__ == '__main__':
+
+    with open('blacklist.txt') as blacklist_file:
+        blacklist = [item.strip() for item in blacklist_file.readlines()]
+    
     parser = argparse.ArgumentParser(description="The main Builder tool")
 
     parser.add_argument('spec', 
@@ -49,6 +53,7 @@ if __name__ == '__main__':
 
     if args.all:
         args.spec = glob.glob(args.spec+'*.corgis')
+        args.spec = [spec for spec in args.spec if spec not in blacklist]
     else:
         args.spec = [args.spec]
 

@@ -90,8 +90,7 @@ public class Genre {
 	
 	/**
 	 * Internal constructor to create a Genre from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Genre(JSONObject json_data) {
         try {// comics

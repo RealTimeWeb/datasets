@@ -15,6 +15,9 @@ local:
   - file: constructionspending.json
     name: constructionspending
     row: spending
+    indexes:
+      - name: year
+        jsonpath: constructionspending.[0].time.year
 interfaces:
   - name: get spending
     description: Returns spending data from every year.

@@ -16,19 +16,10 @@ import org.json.simple.JSONObject;
  */
 public class Id {
 	
-    private String case;
     private String vote;
     private String docket;
+    private String caseData;
     private String caseIssues;
-    
-    
-    /*
-     * @return 
-     */
-    public String getCase() {
-        return this.case;
-    }
-    
     
     
     /*
@@ -52,6 +43,15 @@ public class Id {
     /*
      * @return 
      */
+    public String getCaseData() {
+        return this.caseData;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
     public String getCaseIssues() {
         return this.caseIssues;
     }
@@ -65,19 +65,18 @@ public class Id {
 	 * @return String
 	 */
 	public String toString() {
-		return "Id[" +case+", "+vote+", "+docket+", "+caseIssues+"]";
+		return "Id[" +vote+", "+docket+", "+caseData+", "+caseIssues+"]";
 	}
 	
 	/**
 	 * Internal constructor to create a Id from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Id(JSONObject json_data) {
-        try {// case
-            this.case = (String)json_data.get("case");// vote
+        try {// vote
             this.vote = (String)json_data.get("vote");// docket
-            this.docket = (String)json_data.get("docket");// case issues
+            this.docket = (String)json_data.get("docket");// case data
+            this.caseData = (String)json_data.get("case data");// case issues
             this.caseIssues = (String)json_data.get("case issues");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Id; a field was missing.");

@@ -72,8 +72,7 @@ public class LowerCourt {
 	
 	/**
 	 * Internal constructor to create a LowerCourt from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public LowerCourt(JSONObject json_data) {
         try {// reasons

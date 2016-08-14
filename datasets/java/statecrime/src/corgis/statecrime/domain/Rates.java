@@ -52,8 +52,7 @@ public class Rates {
 	
 	/**
 	 * Internal constructor to create a Rates from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Rates(JSONObject json_data) {
         try {// Violent

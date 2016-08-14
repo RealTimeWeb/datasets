@@ -63,14 +63,13 @@ public class Metrics {
 	
 	/**
 	 * Internal constructor to create a Metrics from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Metrics(JSONObject json_data) {
-        try {// Difficulty
-            this.difficulty = new Difficulty((JSONObject)json_data.get("Difficulty"));// Statistics
-            this.statistics = new Statistics((JSONObject)json_data.get("Statistics"));// Sentiments
-            this.sentiments = new Sentiments((JSONObject)json_data.get("Sentiments"));
+        try {// difficulty
+            this.difficulty = new Difficulty((JSONObject)json_data.get("difficulty"));// statistics
+            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));// sentiments
+            this.sentiments = new Sentiments((JSONObject)json_data.get("sentiments"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Metrics; a field was missing.");
     		e.printStackTrace();

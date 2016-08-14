@@ -61,8 +61,7 @@ public class Report {
 	
 	/**
 	 * Internal constructor to create a Report from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Report(JSONObject json_data) {
         try {// State

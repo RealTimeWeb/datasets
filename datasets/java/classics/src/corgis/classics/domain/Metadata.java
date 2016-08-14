@@ -18,8 +18,11 @@ import corgis.classics.domain.Formats;
 public class Metadata {
 	
     private String url;
+    // The number of times this book has been downloaded from Project Gutenberg, as of the last update (circa Spring 2016).
     private Integer downloads;
+    // Every book on Project Gutenberg has a unique ID number. You can use this number to check the book on project gutenberg (e.g., book 110 is http://www.gutenberg.org/ebooks/110).
     private Integer id;
+    // The rank of this book in comparison to other books on Gutenberg, measured by number of downloads. A lower rank indicatest that that book is more popular.
     private Integer rank;
     private Formats formats;
     
@@ -81,16 +84,15 @@ public class Metadata {
 	
 	/**
 	 * Internal constructor to create a Metadata from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Metadata(JSONObject json_data) {
-        try {// Url
-            this.url = (String)json_data.get("Url");// Downloads
-            this.downloads = new Integer(((Long)json_data.get("Downloads")).intValue());// ID
-            this.id = new Integer(((Long)json_data.get("ID")).intValue());// Rank
-            this.rank = new Integer(((Long)json_data.get("Rank")).intValue());// Formats
-            this.formats = new Formats((JSONObject)json_data.get("Formats"));
+        try {// url
+            this.url = (String)json_data.get("url");// downloads
+            this.downloads = new Integer(((Long)json_data.get("downloads")).intValue());// id
+            this.id = new Integer(((Long)json_data.get("id")).intValue());// rank
+            this.rank = new Integer(((Long)json_data.get("rank")).intValue());// formats
+            this.formats = new Formats((JSONObject)json_data.get("formats"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Metadata; a field was missing.");
     		e.printStackTrace();

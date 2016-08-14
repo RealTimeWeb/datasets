@@ -20,10 +20,10 @@ public class Artist {
     private String terms;
     private String name;
     private Double familiarity;
-    private String longitude;
+    private Double longitude;
     private String id;
     private String location;
-    private String latitude;
+    private Double latitude;
     private String similar;
     private Double hotttnesss;
     
@@ -67,7 +67,7 @@ public class Artist {
     /*
      * @return 
      */
-    public String getLongitude() {
+    public Double getLongitude() {
         return this.longitude;
     }
     
@@ -94,7 +94,7 @@ public class Artist {
     /*
      * @return 
      */
-    public String getLatitude() {
+    public Double getLatitude() {
         return this.latitude;
     }
     
@@ -130,20 +130,18 @@ public class Artist {
 	
 	/**
 	 * Internal constructor to create a Artist from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Artist(JSONObject json_data) {
         try {// terms_freq
-        	System.out.println(json_data);
             this.terms_Freq = (Double)json_data.get("terms_freq");// terms
             this.terms = (String)json_data.get("terms");// name
             this.name = (String)json_data.get("name");// familiarity
             this.familiarity = (Double)json_data.get("familiarity");// longitude
-            this.longitude = (String)json_data.get("longitude");// id
+            this.longitude = (Double)json_data.get("longitude");// id
             this.id = (String)json_data.get("id");// location
             this.location = (String)json_data.get("location");// latitude
-            this.latitude = (String)json_data.get("latitude");// similar
+            this.latitude = (Double)json_data.get("latitude");// similar
             this.similar = (String)json_data.get("similar");// hotttnesss
             this.hotttnesss = (Double)json_data.get("hotttnesss");
         } catch (NullPointerException e) {

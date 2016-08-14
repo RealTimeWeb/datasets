@@ -113,8 +113,7 @@ public class Book {
 	
 	/**
 	 * Internal constructor to create a Book from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Book(JSONObject json_data) {
         try {// publisher

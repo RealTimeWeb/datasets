@@ -2,8 +2,11 @@
 This is a dependency for the download_book.py file.
 
 requires:
-    md.pickle.gz
     rdf-files.tar.zip
+        http://www.gutenberg.org/cache/epub/feeds/rdf-files.tar.bz2
+    
+generates:
+    md.pickle.gz
 '''
 
 from pprint import pprint

@@ -47,11 +47,11 @@ public class StateCrimeLibrary {
         
         
         System.out.println("Testing production GetCrimeByYear");
-        ArrayList<Report> list_of_report_3_production = stateCrimeLibrary.getCrimeByYear("1984", false);
+        ArrayList<Report> list_of_report_3_production = stateCrimeLibrary.getCrimeByYear(1984, false);
         
         
         System.out.println("Testing test GetCrimeByYear");
-        ArrayList<Report> list_of_report_3_test = stateCrimeLibrary.getCrimeByYear("1984", true);
+        ArrayList<Report> list_of_report_3_test = stateCrimeLibrary.getCrimeByYear(1984, true);
         
         
     }
@@ -255,7 +255,7 @@ public class StateCrimeLibrary {
     		e.printStackTrace();
         }
         try {
-            preparedQuery.setInteger(1, year);
+            preparedQuery.setInt(1, year);
         } catch (SQLException e) {
             System.err.println("Could not build prepare argument: year");
     		e.printStackTrace();

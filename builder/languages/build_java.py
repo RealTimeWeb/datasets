@@ -367,7 +367,7 @@ def copy_file(filename):
 def post_build(model, files, moves, target):
     print("Building jar")
     
-    name = model['metadata']['name']
+    name = flat_case(model['metadata']['name'])
     path = os.path.join(target, 'java', name)
     
     backup_location = os.getcwd()

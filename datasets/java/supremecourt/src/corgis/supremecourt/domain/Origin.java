@@ -60,8 +60,7 @@ public class Origin {
 	
 	/**
 	 * Internal constructor to create a Origin from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Origin(JSONObject json_data) {
         try {// state

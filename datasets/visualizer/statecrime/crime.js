@@ -1,6 +1,8 @@
 crime = [
   {
-    "type": "number", 
+    "comment": "Rates are the number of reported offenses per 100,000 population. This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.", 
+    "index": false, 
+    "name": "crime.[0].Data.Rates.Property.All", 
     "data": [
       1035.4, 
       985.5, 
@@ -2648,12 +2650,13 @@ crime = [
       2269.8, 
       2293.8
     ], 
-    "name": "report.[0].Data.Rates.Property.All", 
     "pretty": "Data Rates Property: All", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.", 
+    "index": false, 
+    "name": "crime.[0].Data.Rates.Property.Burglary", 
     "data": [
       355.9, 
       339.3, 
@@ -5301,12 +5304,13 @@ crime = [
       328.5, 
       368.7
     ], 
-    "name": "report.[0].Data.Rates.Property.Burglary", 
     "pretty": "Data Rates Property: Burglary", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or theft of personal property.", 
+    "index": false, 
+    "name": "crime.[0].Data.Rates.Property.Larceny", 
     "data": [
       592.1, 
       569.4, 
@@ -7954,12 +7958,13 @@ crime = [
       1849.5, 
       1823.9
     ], 
-    "name": "report.[0].Data.Rates.Property.Larceny", 
     "pretty": "Data Rates Property: Larceny", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where a motor vehicle was stolen.", 
+    "index": false, 
+    "name": "crime.[0].Data.Rates.Property.Motor", 
     "data": [
       87.3, 
       76.8, 
@@ -10607,12 +10612,13 @@ crime = [
       91.8, 
       101.3
     ], 
-    "name": "report.[0].Data.Rates.Property.Motor", 
     "pretty": "Data Rates Property: Motor", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Rates are the number of reported offenses per 100,000 population. This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.", 
+    "index": false, 
+    "name": "crime.[0].Data.Rates.Violent.All", 
     "data": [
       186.6, 
       168.5, 
@@ -13260,12 +13266,13 @@ crime = [
       219.4, 
       201.4
     ], 
-    "name": "report.[0].Data.Rates.Violent.All", 
     "pretty": "Data Rates Violent: All", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.", 
+    "index": false, 
+    "name": "crime.[0].Data.Rates.Violent.Assault", 
     "data": [
       138.1, 
       128.9, 
@@ -15913,12 +15920,13 @@ crime = [
       178.0, 
       161.7
     ], 
-    "name": "report.[0].Data.Rates.Violent.Assault", 
     "pretty": "Data Rates Violent: Assault", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.", 
+    "index": false, 
+    "name": "crime.[0].Data.Rates.Violent.Murder", 
     "data": [
       12.4, 
       12.9, 
@@ -18566,12 +18574,13 @@ crime = [
       3.2, 
       2.4
     ], 
-    "name": "report.[0].Data.Rates.Violent.Murder", 
     "pretty": "Data Rates Violent: Murder", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.", 
+    "index": false, 
+    "name": "crime.[0].Data.Rates.Violent.Rape", 
     "data": [
       8.6, 
       7.6, 
@@ -21219,12 +21228,13 @@ crime = [
       25.7, 
       26.7
     ], 
-    "name": "report.[0].Data.Rates.Violent.Rape", 
     "pretty": "Data Rates Violent: Rape", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.", 
+    "index": false, 
+    "name": "crime.[0].Data.Rates.Violent.Robbery", 
     "data": [
       27.5, 
       19.1, 
@@ -23872,12 +23882,13 @@ crime = [
       12.5, 
       10.6
     ], 
-    "name": "report.[0].Data.Rates.Violent.Robbery", 
     "pretty": "Data Rates Violent: Robbery", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.", 
+    "index": false, 
+    "name": "crime.[0].Data.Totals.Property.All", 
     "data": [
       33823, 
       32541, 
@@ -26525,12 +26536,13 @@ crime = [
       12878, 
       13222
     ], 
-    "name": "report.[0].Data.Totals.Property.All", 
     "pretty": "Data Totals Property: All", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.", 
+    "index": false, 
+    "name": "crime.[0].Data.Totals.Property.Burglary", 
     "data": [
       11626, 
       11205, 
@@ -29178,12 +29190,13 @@ crime = [
       1864, 
       2125
     ], 
-    "name": "report.[0].Data.Totals.Property.Burglary", 
     "pretty": "Data Totals Property: Burglary", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This property reflects the number of burglaries, or theft of personal property.", 
+    "index": false, 
+    "name": "crime.[0].Data.Totals.Property.Larceny", 
     "data": [
       19344, 
       18801, 
@@ -31831,12 +31844,13 @@ crime = [
       10493, 
       10513
     ], 
-    "name": "report.[0].Data.Totals.Property.Larceny", 
     "pretty": "Data Totals Property: Larceny", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This property reflects the number of crimes where a motor vehicle was stolen.", 
+    "index": false, 
+    "name": "crime.[0].Data.Totals.Property.Motor", 
     "data": [
       2853, 
       2535, 
@@ -34484,12 +34498,13 @@ crime = [
       521, 
       584
     ], 
-    "name": "report.[0].Data.Totals.Property.Motor", 
     "pretty": "Data Totals Property: Motor", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.", 
+    "index": false, 
+    "name": "crime.[0].Data.Totals.Violent.All", 
     "data": [
       6097, 
       5564, 
@@ -37137,12 +37152,13 @@ crime = [
       1245, 
       1161
     ], 
-    "name": "report.[0].Data.Totals.Violent.All", 
     "pretty": "Data Totals Violent: All", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.", 
+    "index": false, 
+    "name": "crime.[0].Data.Totals.Violent.Assault", 
     "data": [
       4512, 
       4255, 
@@ -39790,12 +39806,13 @@ crime = [
       1010, 
       932
     ], 
-    "name": "report.[0].Data.Totals.Violent.Assault", 
     "pretty": "Data Totals Violent: Assault", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.", 
+    "index": false, 
+    "name": "crime.[0].Data.Totals.Violent.Murder", 
     "data": [
       406, 
       427, 
@@ -42443,12 +42460,13 @@ crime = [
       18, 
       14
     ], 
-    "name": "report.[0].Data.Totals.Violent.Murder", 
     "pretty": "Data Totals Violent: Murder", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.", 
+    "index": false, 
+    "name": "crime.[0].Data.Totals.Violent.Rape", 
     "data": [
       281, 
       252, 
@@ -45096,12 +45114,13 @@ crime = [
       146, 
       154
     ], 
-    "name": "report.[0].Data.Totals.Violent.Rape", 
     "pretty": "Data Totals Violent: Rape", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.", 
+    "index": false, 
+    "name": "crime.[0].Data.Totals.Violent.Robbery", 
     "data": [
       898, 
       630, 
@@ -47749,9 +47768,8 @@ crime = [
       71, 
       61
     ], 
-    "name": "report.[0].Data.Totals.Violent.Robbery", 
     "pretty": "Data Totals Violent: Robbery", 
-    "index": false
+    "type": "number"
   }, 
   {
     "type": "number", 
@@ -50402,7 +50420,7 @@ crime = [
       567356, 
       576412
     ], 
-    "name": "report.[0].Data.Population", 
+    "name": "crime.[0].Data.Population", 
     "pretty": "Data: Population", 
     "index": false
   }, 
@@ -53055,7 +53073,7 @@ crime = [
       "Wyoming", 
       "Wyoming"
     ], 
-    "name": "report.[0].State", 
+    "name": "crime.[0].State", 
     "pretty": "State: State", 
     "index": true
   }, 
@@ -55708,7 +55726,7 @@ crime = [
       2011, 
       2012
     ], 
-    "name": "report.[0].Year", 
+    "name": "crime.[0].Year", 
     "pretty": "Year: Year", 
     "index": true
   }

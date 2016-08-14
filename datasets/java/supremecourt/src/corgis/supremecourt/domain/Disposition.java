@@ -50,8 +50,7 @@ public class Disposition {
 	
 	/**
 	 * Internal constructor to create a Disposition from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Disposition(JSONObject json_data) {
         try {// id

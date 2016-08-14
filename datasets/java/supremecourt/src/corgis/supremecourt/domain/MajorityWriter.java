@@ -16,16 +16,16 @@ import org.json.simple.JSONObject;
  */
 public class MajorityWriter {
 	
+    private String longName;
     private Integer id;
-    private String long;
     private String name;
     
     
     /*
      * @return 
      */
-    public Integer getId() {
-        return this.id;
+    public String getLongName() {
+        return this.longName;
     }
     
     
@@ -33,8 +33,8 @@ public class MajorityWriter {
     /*
      * @return 
      */
-    public String getLong() {
-        return this.long;
+    public Integer getId() {
+        return this.id;
     }
     
     
@@ -55,18 +55,17 @@ public class MajorityWriter {
 	 * @return String
 	 */
 	public String toString() {
-		return "MajorityWriter[" +id+", "+long+", "+name+"]";
+		return "MajorityWriter[" +longName+", "+id+", "+name+"]";
 	}
 	
 	/**
 	 * Internal constructor to create a MajorityWriter from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public MajorityWriter(JSONObject json_data) {
-        try {// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());// long
-            this.long = (String)json_data.get("long");// name
+        try {// long name
+            this.longName = (String)json_data.get("long name");// id
+            this.id = new Integer(((Long)json_data.get("id")).intValue());// name
             this.name = (String)json_data.get("name");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a MajorityWriter; a field was missing.");

@@ -150,6 +150,8 @@ def extract_date(full):
         sys.exit(0)
     return month, day, year
         
+vals = set()
+vals2 = set()
 def check_text():
     with open('raw.json') as inputfile:
         data = json.load(inputfile)
@@ -168,10 +170,12 @@ def check_text():
                 print id, title
         record['book']['author'] = record['author']
         author_name = record['book']['author']['name']
-        if record['book']['author']['birth'] is None:
+        vals.add(record['book']['author']['birth'])
+        if record['book']['author']['birth'] == None:
             record['book']['author']['birth'] = 0
-        if record['book']['author']['death'] is None:
+        if record['book']['author']['death'] == None:
             record['book']['author']['death'] = 0
+        vals2.add(record['book']['author']['birth'])
         record['book']['author']['name'] = clean(author_name) if author_name else "Unknown"
         del record['author']
         month, day, year = extract_date(release_date)
@@ -191,3 +195,5 @@ def check_text():
         json.dump(data, output, indent=2)
        
 check_text()
+print(vals)
+print(vals2)

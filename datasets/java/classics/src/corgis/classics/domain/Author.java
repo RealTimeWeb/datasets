@@ -16,8 +16,10 @@ import org.json.simple.JSONObject;
  */
 public class Author {
 	
+    // The recorded year of the author's death. If their death year is unknown, it is replaced with "0".
     private Integer death;
     private String name;
+    // The recorded birth year of the author. If their birth year is unknown, it is replaced with "0".
     private Integer birth;
     
     
@@ -60,14 +62,13 @@ public class Author {
 	
 	/**
 	 * Internal constructor to create a Author from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Author(JSONObject json_data) {
-        try {// Death
-            this.death = new Integer(((Long)json_data.get("Death")).intValue());// Name
-            this.name = (String)json_data.get("Name");// Birth
-            this.birth = new Integer(((Long)json_data.get("Birth")).intValue());
+        try {// death
+            this.death = new Integer(((Long)json_data.get("death")).intValue());// name
+            this.name = (String)json_data.get("name");// birth
+            this.birth = new Integer(((Long)json_data.get("birth")).intValue());
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Author; a field was missing.");
     		e.printStackTrace();

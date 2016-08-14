@@ -260,8 +260,7 @@ public class Song {
 	
 	/**
 	 * Internal constructor to create a Song from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Song(JSONObject json_data) {
         try {// key

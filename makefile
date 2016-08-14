@@ -14,6 +14,8 @@ python:
 	python builder/builder.py -l python specs/$(target).corgis ./datasets
 all:
 	python builder/builder.py -l python -a specs/ ./datasets
+all_java:
+	python builder/builder.py -l java -a specs/ ./datasets
 all_metrics:
 	python builder/builder.py -l metrics -a specs/ ./datasets
 all_fast:

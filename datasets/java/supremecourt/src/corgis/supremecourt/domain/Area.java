@@ -50,8 +50,7 @@ public class Area {
 	
 	/**
 	 * Internal constructor to create a Area from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Area(JSONObject json_data) {
         try {// id

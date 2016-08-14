@@ -76,7 +76,7 @@ public class {{ dictionary.name | clean_invalid_characters | camel_case_caps }} 
                 {%- if field.type | strip_list | is_builtin -%}
                 {{ field.type | strip_list| to_java_type(field.key) }}
                 {%- elif field.type | strip_list -%}
-                Map<String, Object>
+                JSONObject
                 {%- else -%}
                 List<Object>
                 {%- endif -%}

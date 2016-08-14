@@ -63,14 +63,13 @@ public class Book {
 	
 	/**
 	 * Internal constructor to create a Book from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Book(JSONObject json_data) {
-        try {// Metrics
-            this.metrics = new Metrics((JSONObject)json_data.get("Metrics"));// Bibliography
-            this.bibliography = new Bibliography((JSONObject)json_data.get("Bibliography"));// Metadata
-            this.metadata = new Metadata((JSONObject)json_data.get("Metadata"));
+        try {// metrics
+            this.metrics = new Metrics((JSONObject)json_data.get("metrics"));// bibliography
+            this.bibliography = new Bibliography((JSONObject)json_data.get("bibliography"));// metadata
+            this.metadata = new Metadata((JSONObject)json_data.get("metadata"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Book; a field was missing.");
     		e.printStackTrace();

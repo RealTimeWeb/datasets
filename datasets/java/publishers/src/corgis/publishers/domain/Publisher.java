@@ -80,8 +80,7 @@ public class Publisher {
 	
 	/**
 	 * Internal constructor to create a Publisher from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Publisher(JSONObject json_data) {
         try {// indie

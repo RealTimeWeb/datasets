@@ -16,14 +16,16 @@ import org.json.simple.JSONObject;
  */
 public class Statistics {
 	
+    // The number of words that have 3 or more syllables.
     private Integer polysyllables;
-    private Double averageLetterPerWord;
-    private Double averageSentenceLength;
+    // Characters are letters and symbols in a text, not the number of people.
     private Integer characters;
+    private Double averageSentenceLength;
     private Integer words;
     private Integer sentences;
-    private Double averageSentencePerWord;
     private Double syllables;
+    private Double averageSentencePerWord;
+    private Double averageLetterPerWord;
     
     
     /*
@@ -38,8 +40,8 @@ public class Statistics {
     /*
      * @return 
      */
-    public Double getAverageLetterPerWord() {
-        return this.averageLetterPerWord;
+    public Integer getCharacters() {
+        return this.characters;
     }
     
     
@@ -49,15 +51,6 @@ public class Statistics {
      */
     public Double getAverageSentenceLength() {
         return this.averageSentenceLength;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getCharacters() {
-        return this.characters;
     }
     
     
@@ -83,6 +76,15 @@ public class Statistics {
     /*
      * @return 
      */
+    public Double getSyllables() {
+        return this.syllables;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
     public Double getAverageSentencePerWord() {
         return this.averageSentencePerWord;
     }
@@ -92,8 +94,8 @@ public class Statistics {
     /*
      * @return 
      */
-    public Double getSyllables() {
-        return this.syllables;
+    public Double getAverageLetterPerWord() {
+        return this.averageLetterPerWord;
     }
     
     
@@ -105,24 +107,23 @@ public class Statistics {
 	 * @return String
 	 */
 	public String toString() {
-		return "Statistics[" +polysyllables+", "+averageLetterPerWord+", "+averageSentenceLength+", "+characters+", "+words+", "+sentences+", "+averageSentencePerWord+", "+syllables+"]";
+		return "Statistics[" +polysyllables+", "+characters+", "+averageSentenceLength+", "+words+", "+sentences+", "+syllables+", "+averageSentencePerWord+", "+averageLetterPerWord+"]";
 	}
 	
 	/**
 	 * Internal constructor to create a Statistics from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Statistics(JSONObject json_data) {
-        try {// Polysyllables
-            this.polysyllables = new Integer(((Long)json_data.get("Polysyllables")).intValue());// Average Letter per Word
-            this.averageLetterPerWord = (Double)json_data.get("Average Letter per Word");// Average Sentence Length
-            this.averageSentenceLength = (Double)json_data.get("Average Sentence Length");// Characters
-            this.characters = new Integer(((Long)json_data.get("Characters")).intValue());// Words
-            this.words = new Integer(((Long)json_data.get("Words")).intValue());// Sentences
-            this.sentences = new Integer(((Long)json_data.get("Sentences")).intValue());// Average Sentence per Word
-            this.averageSentencePerWord = (Double)json_data.get("Average Sentence per Word");// Syllables
-            this.syllables = (Double)json_data.get("Syllables");
+        try {// polysyllables
+            this.polysyllables = new Integer(((Long)json_data.get("polysyllables")).intValue());// characters
+            this.characters = new Integer(((Long)json_data.get("characters")).intValue());// average sentence length
+            this.averageSentenceLength = (Double)json_data.get("average sentence length");// words
+            this.words = new Integer(((Long)json_data.get("words")).intValue());// sentences
+            this.sentences = new Integer(((Long)json_data.get("sentences")).intValue());// syllables
+            this.syllables = (Double)json_data.get("syllables");// average sentence per word
+            this.averageSentencePerWord = (Double)json_data.get("average sentence per word");// average letter per word
+            this.averageLetterPerWord = (Double)json_data.get("average letter per word");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Statistics; a field was missing.");
     		e.printStackTrace();

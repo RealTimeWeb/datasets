@@ -16,19 +16,10 @@ import org.json.simple.JSONObject;
  */
 public class Start {
 	
-    private Integer month;
     private String full;
-    private Integer day;
     private Integer year;
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getMonth() {
-        return this.month;
-    }
-    
+    private Integer day;
+    private Integer month;
     
     
     /*
@@ -36,6 +27,15 @@ public class Start {
      */
     public String getFull() {
         return this.full;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getYear() {
+        return this.year;
     }
     
     
@@ -52,8 +52,8 @@ public class Start {
     /*
      * @return 
      */
-    public Integer getYear() {
-        return this.year;
+    public Integer getMonth() {
+        return this.month;
     }
     
     
@@ -65,20 +65,19 @@ public class Start {
 	 * @return String
 	 */
 	public String toString() {
-		return "Start[" +month+", "+full+", "+day+", "+year+"]";
+		return "Start[" +full+", "+year+", "+day+", "+month+"]";
 	}
 	
 	/**
 	 * Internal constructor to create a Start from a  representation.
-	 * @param map The raw json data that will be parsed.
-	 * @return 
+	 * @param json_data The raw json data that will be parsed.
 	 */
     public Start(JSONObject json_data) {
-        try {// month
-            this.month = new Integer(((Long)json_data.get("month")).intValue());// full
-            this.full = (String)json_data.get("full");// day
-            this.day = new Integer(((Long)json_data.get("day")).intValue());// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());
+        try {// full
+            this.full = (String)json_data.get("full");// year
+            this.year = new Integer(((Long)json_data.get("year")).intValue());// day
+            this.day = new Integer(((Long)json_data.get("day")).intValue());// month
+            this.month = new Integer(((Long)json_data.get("month")).intValue());
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Start; a field was missing.");
     		e.printStackTrace();

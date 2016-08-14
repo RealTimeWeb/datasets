@@ -16,11 +16,16 @@ import org.json.simple.JSONObject;
  */
 public class NewHivInfections {
 	
+    // 0-14 Years Old
     private Integer newHivInfectionsAmongChildren;
+    // 15-49 Years Old
     private Double incidenceRateAmongAdults;
+    // 15+ Years Old
     private Integer newHivInfectionsAmongAdults;
     private Integer newHivInfectionsAllAges;
+    // 15+ Years Old
     private Double newHivInfectionsAmongFemaleAdults;
+    // 15+ Years Old
     private Integer newHivInfectionsAmongMaleAdults;
     
     

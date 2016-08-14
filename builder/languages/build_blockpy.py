@@ -217,7 +217,6 @@ def shortest_unique_strings(los):
 def build_locals(model, js_path):
     locals = model["locals"]
     model['visualized_datasets'] = {}
-    print("")
     for local in locals:
         name = local["name"]
         file = local["file"]
@@ -228,7 +227,7 @@ def build_locals(model, js_path):
             output_file.write("_IMPORTED_DATASETS['{}'] = ".format(name))
             if row_type == "json":
                 data_list = json.load(local_file)
-                data = [JsonLeafNodes(row+'.[0]', item).result for item in data_list]                
+                data = [JsonLeafNodes(name+'.[0]', item).result for item in data_list]                
                 data = lod_to_dol(data)
                 remove_outliers(data)
                 for row in data:
@@ -236,10 +235,14 @@ def build_locals(model, js_path):
                         row['comment'] = model['structures_comments'][row['name']]
                     is_index = row['name'] in [i['jsonpath'] for i in local['indexes']]
                     row['index'] = is_index
+                    if is_index:
+                        print("Index:", row["name"])
                 key_names = [row['name'] for row in data]
                 short_key_names = shortest_unique_strings(key_names)
                 key_name_map = dict(zip(key_names, short_key_names))
                 indexes = {key_name_map[row['name']]: row for row in data if row['index']}
+                for index_data in indexes.values():
+                    index_data['data'] = [str(val) for val in index_data['data']]
                 data = {key_name_map[row['name']]: row for row in data}
                 #sample_down(data)
                 json.dump(data, output_file, indent=2)

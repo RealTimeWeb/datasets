@@ -147,57 +147,29 @@ $(document).ready(function() {
     
     <div class="row">
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="publishers">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="tate">
       
       <div class="media-left  media-middle">
-        <a href="publishers/publishers.html">
-          <img class="media-object" src="publishers/publishers.png" alt="Publishers" style="max-width: 64px; max-height: 64px;">
+        <a href="tate/tate.html">
+          <img class="media-object" src="tate/tate.png" alt="Tate" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="publishers/publishers.html">
-        <h4 class="media-heading">Publishers</h4>
+        <a href="tate/tate.html">
+        <h4 class="media-heading">Tate</h4>
         </a>
-        From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.
-<br>
-        <i>publishers, amazon, books, sales, genres, literature, english</i>
+        This dataset is about the Tate art collection, with metadata about paintings, drawings, sculptures, and more.<br>
+        <i>artwork, art, sculpture, tate</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "publishers",
-            'body': "From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.",
-            'description': "From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.",
-            'tags': ["publishers", "amazon", "books", "sales", "genres", "literature", "english"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="finance">
-      
-      <div class="media-left  media-middle">
-        <a href="finance/finance.html">
-          <img class="media-object" src="finance/finance.png" alt="Finance" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a href="finance/finance.html">
-        <h4 class="media-heading">Finance</h4>
-        </a>
-        The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states.<br>
-        <i>finance, government, expenditure, charges, money, united states, us</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "finance",
-            'body': "The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states. The data contain detail of revenue by source, expenditure by object and function, indebtedness by term, and assets by purpose. This data goes back for almost two decades across every date.",
-            'description': "The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states.",
-            'tags': ["finance", "government", "expenditure", "charges", "money", "united states", "us"]
+            'name': "tate",
+            'body': "Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art. The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation and performance. This dataset has metadata about many pieces from their collection.",
+            'description': "This dataset is about the Tate art collection, with metadata about paintings, drawings, sculptures, and more.",
+            'tags': ["artwork", "art", "sculpture", "tate"]
         }
     );
     </script>
@@ -224,6 +196,33 @@ $(document).ready(function() {
             'name': "statecrime",
             'body': "From the Unified Crime Reporting Statistics and under the collaboration of the U.S. Department of Justice and the Federal Bureau of Investigation information crime statistics are available for public review. The following data set has information on the crime rates and totals for states across the United States for a wide range of years. The crime reports are divided into two main categories: property and violent crime. Property crime refers to burglary, larceny, and motor related crime while violent crime refers to assault, murder, rape, and robbery.",
             'description': "Records about the crime rates and totals for US states over time.",
+            'tags': ["crime", "burglary", "larceny", "motor", "property", "violent", "assault", "murder", "rape", "robbery"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="countycrime">
+      
+      <div class="media-left  media-middle">
+        <a href="countycrime/countycrime.html">
+          <img class="media-object" src="countycrime/countycrime.png" alt="County Crime" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="countycrime/countycrime.html">
+        <h4 class="media-heading">County Crime</h4>
+        </a>
+        Records about the crime rates and totals for US counties over time.<br>
+        <i>crime, burglary, larceny, motor, property, violent, assault, murder, rape, robbery</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "countycrime",
+            'body': "From the Unified Crime Reporting Statistics and under the collaboration of the U.S. Department of Justice and the Federal Bureau of Investigation information crime statistics are available for public review. The following data set has information on the crime rates and totals for counties across the United States for a wide range of years. The crime reports are divided into two main categories: property and violent crime. Property crime refers to burglary, larceny, and motor related crime while violent crime refers to assault, murder, rape, and robbery.",
+            'description': "Records about the crime rates and totals for US counties over time.",
             'tags': ["crime", "burglary", "larceny", "motor", "property", "violent", "assault", "murder", "rape", "robbery"]
         }
     );
@@ -256,6 +255,60 @@ $(document).ready(function() {
     );
     </script>
     
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="hydropower">
+      
+      <div class="media-left  media-middle">
+        <a href="hydropower/hydropower.html">
+          <img class="media-object" src="hydropower/hydropower.png" alt="Hydropower" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="hydropower/hydropower.html">
+        <h4 class="media-heading">Hydropower</h4>
+        </a>
+        Records about dams in the United States such as location, dimensions, and project information<br>
+        <i>hydropower, dams, lakes, rivers, waterways, irrigation, human consumption, industrial use, aquaculture, navigability, energy, electricity</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "hydropower",
+            'body': "Recent Federal policies and legislation focus on moving the nation towards a cleaner energy economy that includes developing environmentally appropriate renewable energy projects involving solar, wind and waves, geothermal, biofuels, and hydropower. The 2010 Federal Memorandum of Understanding for Hydropower and the Energy Policy Act of 2005 direct the U.S. Department of Reclamation to evaluate development of new hydropower projects at Federally-owned facilities and upgrade or rehabilitate existing hydropower generation facilities, as a contribution to the nation's clean energy goals. The following data describes the facilities currently being operated that contribute to nationwide renewable energy strategies.",
+            'description': "Records about dams in the United States such as location, dimensions, and project information",
+            'tags': ["hydropower", "dams", "lakes", "rivers", "waterways", "irrigation", "human consumption", "industrial use", "aquaculture", "navigability", "energy", "electricity"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="medalofhonor">
+      
+      <div class="media-left  media-middle">
+        <a href="medalofhonor/medalofhonor.html">
+          <img class="media-object" src="medalofhonor/medalofhonor.png" alt="Medal of Honor" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="medalofhonor/medalofhonor.html">
+        <h4 class="media-heading">Medal of Honor</h4>
+        </a>
+        This dataset has records for the awarding of the United States Medal of Honor, one of the military's highest honors.<br>
+        <i>us, usa, united states, military, combat, government, army, airforce, marines, navy, fighting, war, award, medal, honor, glory, death</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "medalofhonor",
+            'body': "This dataset has records for the awarding of the United States Medal of Honor. The Medal of Honor is the United States of America's highest military honor, awarded for personal acts of valor above and beyond the call of duty. The medal is awarded by the President of the United States in the name of the U.S. Congress to U.S. military personnel only. There are three versions of the medal, one for the Army, one for the Navy, and one for the Air Force.[5] Personnel of the Marine Corps and Coast Guard receive the Navy version. The dataset was collected from the official military site, and includes records about how the medal was awarded and characteristics of the recipient. Unfortunately, because of the nature of century-old record keeping, many of the records are incomplete. While a very interesting dataset, it does have some missing data.",
+            'description': "This dataset has records for the awarding of the United States Medal of Honor, one of the military's highest honors.",
+            'tags': ["us", "usa", "united states", "military", "combat", "government", "army", "airforce", "marines", "navy", "fighting", "war", "award", "medal", "honor", "glory", "death"]
+        }
+    );
+    </script>
+    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="music">
       
       <div class="media-left  media-middle">
@@ -283,29 +336,710 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="aids">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="statefragility">
       
       <div class="media-left  media-middle">
-        <a href="aids/aids.html">
-          <img class="media-object" src="aids/aids.png" alt="Aids" style="max-width: 64px; max-height: 64px;">
+        <a href="statefragility/statefragility.html">
+          <img class="media-object" src="statefragility/statefragility.png" alt="State Fragility" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="aids/aids.html">
-        <h4 class="media-heading">Aids</h4>
+        <a href="statefragility/statefragility.html">
+        <h4 class="media-heading">State Fragility</h4>
         </a>
-        Records of AIDS related statistics from several countries.<br>
-        <i>aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un</i>
+        The State Fragility Index scores for countries around the world from 1995 to 2014<br>
+        <i>world, countries, security, politics, economy, society, effectiveness, legitimacy</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "aids",
-            'body': "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease. The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.",
-            'description': "Records of AIDS related statistics from several countries.",
-            'tags': ["aids", "death", "disease", "hiv", "orphans", "health", "countries", "world", "gender", "united nations", "un"]
+            'name': "statefragility",
+            'body': "The Center for Systemic Peace was founded in 1997 to engage in global systems analysis to minimize the effects of political violence in the world as a whole. The following data set shows the state fragility for countries with a population greater than 500,000 in 2013. The State Fragility Index scores countries on two main categories, effectiveness and legitimacy. These are then broken down into four dimensions: Security, Political, Economic, and Social. The State Fragility Index score is the sum of the individual country's effectiveness score and their legitimacy score. Each of these scores are the summation of the four dimensions within the category.",
+            'description': "The State Fragility Index scores for countries around the world from 1995 to 2014",
+            'tags': ["world", "countries", "security", "politics", "economy", "society", "effectiveness", "legitimacy"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+      
+      <div class="media-left  media-middle">
+        <a href="broadway/broadway.html">
+          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="broadway/broadway.html">
+        <h4 class="media-heading">Broadway</h4>
+        </a>
+        This library holds data about Broadway shows, such as tickets sold.<br>
+        <i>broadway, musical, theatre, tickets</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "broadway",
+            'body': "This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry). You can view the data online at http://www.broadwayleague.com/.",
+            'description': "This library holds data about Broadway shows, such as tickets sold.",
+            'tags': ["broadway", "musical", "theatre", "tickets"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="billionaires">
+      
+      <div class="media-left  media-middle">
+        <a href="billionaires/billionaires.html">
+          <img class="media-object" src="billionaires/billionaires.png" alt="Billionaires" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="billionaires/billionaires.html">
+        <h4 class="media-heading">Billionaires</h4>
+        </a>
+        Information about over 2000 billionaires from around the world.
+<br>
+        <i>money, rich, wealthy, people, person, billionaire</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "billionaires",
+            'body': "Researchers have compiled a multi-decade database of the super-rich. Building off the Forbes World's Billionaires lists from 1996-2014, scholars at Peterson Institute for International Economics have added a couple dozen more variables about each billionaire - including whether they were self-made or inherited their wealth. (Roughly half of European billionaires and one-third of U.S. billionaires got a significant financial boost from family, the authors estimate.)",
+            'description': "Information about over 2000 billionaires from around the world.",
+            'tags': ["money", "rich", "wealthy", "people", "person", "billionaire"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="soccer">
+      
+      <div class="media-left  media-middle">
+        <a href="soccer/soccer.html">
+          <img class="media-object" src="soccer/soccer.png" alt="Soccer" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="soccer/soccer.html">
+        <h4 class="media-heading">Soccer</h4>
+        </a>
+        Free open public domain soccer data (football). Leagues include the English Premier League, Deutsche Bundesliga, Spanish Primera Division ("La Liga"), Italian Serie A, and more.
+<br>
+        <i>soccer, germany, austrian, Bundesliga, football</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "soccer",
+            'body': "Free open public domain soccer data (football). Leagues include the English Premier League, Deutsche Bundesliga, Spanish Primera Division (\"La Liga\"), Italian Serie A, and more.",
+            'description': "Free open public domain soccer data (football). Leagues include the English Premier League, Deutsche Bundesliga, Spanish Primera Division (\"La Liga\"), Italian Serie A, and more.",
+            'tags': ["soccer", "germany", "austrian", "Bundesliga", "football"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="earthquakes">
+      
+      <div class="media-left  media-middle">
+        <a href="earthquakes/earthquakes.html">
+          <img class="media-object" src="earthquakes/earthquakes.png" alt="Earthquakes" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="earthquakes/earthquakes.html">
+        <h4 class="media-heading">Earthquakes</h4>
+        </a>
+        Records from different earthquake occurences across the world.<br>
+        <i>earthquakes, nature, disaster, magnitude, richter scale, latitude, longitude</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "earthquakes",
+            'body': "Earthquake records from around the world collected from the United States Geological Survey. Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake. Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included.",
+            'description': "Records from different earthquake occurences across the world.",
+            'tags': ["earthquakes", "nature", "disaster", "magnitude", "richter scale", "latitude", "longitude"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="publishers">
+      
+      <div class="media-left  media-middle">
+        <a href="publishers/publishers.html">
+          <img class="media-object" src="publishers/publishers.png" alt="Publishers" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="publishers/publishers.html">
+        <h4 class="media-heading">Publishers</h4>
+        </a>
+        From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.
+<br>
+        <i>publishers, amazon, books, sales, genres, literature, english</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "publishers",
+            'body': "From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.",
+            'description': "From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.",
+            'tags': ["publishers", "amazon", "books", "sales", "genres", "literature", "english"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="artinstitutemetadata">
+      
+      <div class="media-left  media-middle">
+        <a href="artinstitutemetadata/artinstitutemetadata.html">
+          <img class="media-object" src="artinstitutemetadata/artinstitutemetadata.png" alt="Art Institute Metadata" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="artinstitutemetadata/artinstitutemetadata.html">
+        <h4 class="media-heading">Art Institute Metadata</h4>
+        </a>
+        A data set about the metadata associated with the collection of the Minneapolis Institute of Art.<br>
+        <i>art, fine art, institute, artist, style, medium</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "artinstitutemetadata",
+            'body': "The Minneapolis Institute of Art's mission is to enrich the community by collecting, preserving, and making accessible outstanding works of art from the world\u2019s diverse cultures. The following data contains information about the culture, location, and time period associated with the artist of the work in addition to descriptive information about the work as a whole. Also added in information pertaining directly to information useful to the Minneapolis Institute of Art as it pertains to classification and location within the Institute.",
+            'description': "A data set about the metadata associated with the collection of the Minneapolis Institute of Art.",
+            'tags': ["art", "fine art", "institute", "artist", "style", "medium"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="finance">
+      
+      <div class="media-left  media-middle">
+        <a href="finance/finance.html">
+          <img class="media-object" src="finance/finance.png" alt="Finance" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="finance/finance.html">
+        <h4 class="media-heading">Finance</h4>
+        </a>
+        The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states.<br>
+        <i>finance, government, expenditure, charges, money, united states, us</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "finance",
+            'body': "The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states. The data contain detail of revenue by source, expenditure by object and function, indebtedness by term, and assets by purpose. This data goes back for almost two decades across every date.",
+            'description': "The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states.",
+            'tags': ["finance", "government", "expenditure", "charges", "money", "united states", "us"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drugs">
+      
+      <div class="media-left  media-middle">
+        <a href="drugs/drugs.html">
+          <img class="media-object" src="drugs/drugs.png" alt="Drugs" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="drugs/drugs.html">
+        <h4 class="media-heading">Drugs</h4>
+        </a>
+        This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.<br>
+        <i>drugs, substances, drug usage</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "drugs",
+            'body': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.",
+            'description': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.",
+            'tags': ["drugs", "substances", "drug usage"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="cars">
+      
+      <div class="media-left  media-middle">
+        <a href="cars/cars.html">
+          <img class="media-object" src="cars/cars.png" alt="Cars" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="cars/cars.html">
+        <h4 class="media-heading">Cars</h4>
+        </a>
+        This is a dataset about cars and how much fuel they use.
+<br>
+        <i>cars, vehicles, fuel</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "cars",
+            'body': "This is a dataset about cars and how much fuel they use.",
+            'description': "This is a dataset about cars and how much fuel they use.",
+            'tags': ["cars", "vehicles", "fuel"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="horseracing">
+      
+      <div class="media-left  media-middle">
+        <a href="horseracing/horseracing.html">
+          <img class="media-object" src="horseracing/horseracing.png" alt="Horse Racing" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="horseracing/horseracing.html">
+        <h4 class="media-heading">Horse Racing</h4>
+        </a>
+        Data about horse races at Churchill Downs
+<br>
+        <i>churchill downs, horses, equines, racing, horse racing, gambling</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "horseracing",
+            'body': "Data about horse races at Churchill Downs",
+            'description': "Data about horse races at Churchill Downs",
+            'tags': ["churchill downs", "horses", "equines", "racing", "horse racing", "gambling"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="immigration">
+      
+      <div class="media-left  media-middle">
+        <a href="immigration/immigration.html">
+          <img class="media-object" src="immigration/immigration.png" alt="Immigration" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="immigration/immigration.html">
+        <h4 class="media-heading">Immigration</h4>
+        </a>
+        A dataset about the immigration of foreign nationals to the United States.<br>
+        <i>immigration, naturalization, illegals, permanants, united states, us</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "immigration",
+            'body': "The Yearbook of Immigration Statistics is a compendium of tables that provides data on foreign nationals who, during a fiscal year, were granted lawful permanent residence (i.e., admitted as immigrants or became legal permanent residents), were admitted into the United States on a temporary basis (e.g., tourists, students, or workers), applied for asylum or refugee status, or were naturalized. The Yearbook also presents data on immigration enforcement actions, including alien apprehensions, removals, and returns.",
+            'description': "A dataset about the immigration of foreign nationals to the United States.",
+            'tags': ["immigration", "naturalization", "illegals", "permanants", "united states", "us"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="weather">
+      
+      <div class="media-left  media-middle">
+        <a href="weather/weather.html">
+          <img class="media-object" src="weather/weather.png" alt="Weather" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="weather/weather.html">
+        <h4 class="media-heading">Weather</h4>
+        </a>
+        Weather records through the months of April and June of 2016 across the U.S.<br>
+        <i>weather, rain, snow, sleet, fog, temperature, wind</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "weather",
+            'body': "Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county. This is done through the use of 122 different Weather Forcast Offices throughout the country. These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage. This data set takes the information from these WFO reports for cities across the country through the months of April to June of 2016.",
+            'description': "Weather records through the months of April and June of 2016 across the U.S.",
+            'tags': ["weather", "rain", "snow", "sleet", "fog", "temperature", "wind"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="baseball">
+      
+      <div class="media-left  media-middle">
+        <a href="baseball/baseball.html">
+          <img class="media-object" src="baseball/baseball.png" alt="Baseball" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="baseball/baseball.html">
+        <h4 class="media-heading">Baseball</h4>
+        </a>
+        This database contains pitching, hitting, and fielding statistics for Major League Baseball from 1871 through 2012. It includes data from the two current leagues (American and National), the four other major leagues (American Association, Union Assoc<br>
+        <i>baseball, sports</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "baseball",
+            'body': "This database contains pitching, hitting, and fielding statistics for Major League Baseball from 1871 through 2012. It includes data from the two current leagues (American and National), the four other major leagues (American Association, Union Association, Players League, and Federal League), and the National Association of 1871-1875. This database was created by Sean Lahman, who pioneered the effort to make baseball statistics freely available to the general public. What started as a one man effort in 1994 has grown tremendously, and now a team of researchers have collected their efforts to make this the largest and most accurate source for baseball statistics available anywhere. (See Acknowledgements below for a list of the key contributors to this project.) None of what we have done would have been possible without the pioneering work of Hy Turkin, S.C. Thompson, David Neft, and Pete Palmer (among others). All baseball fans owe a debt of gratitude to the people who have worked so hard to build the tremendous set of data that we have today. Our thanks also to the many members of the Society for American Baseball Research who have helped us over the years. We strongly urge you to support and join their efforts. Please vist their website (www.sabr.org).",
+            'description': "This database contains pitching, hitting, and fielding statistics for Major League Baseball from 1871 through 2012. It includes data from the two current leagues (American and National), the four other major leagues (American Association, Union Assoc",
+            'tags': ["baseball", "sports"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="scripts">
+      
+      <div class="media-left  media-middle">
+        <a href="scripts/scripts.html">
+          <img class="media-object" src="scripts/scripts.png" alt="Scripts" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="scripts/scripts.html">
+        <h4 class="media-heading">Scripts</h4>
+        </a>
+        This dataset is all about the text scripts of over 600 movies.<br>
+        <i>movies, scripts, gender</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "scripts",
+            'body': "This dataset is all about over 600 movies. It was collected and organized by the Cornell Movie Dialogs Corpus. More information about the project is available at the CMDC site (http://www.mpi-sws.org/~cristian/Cornell_Movie-Dialogs_Corpus.html).",
+            'description': "This dataset is all about the text scripts of over 600 movies.",
+            'tags': ["movies", "scripts", "gender"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="retailservices">
+      
+      <div class="media-left  media-middle">
+        <a href="retailservices/retailservices.html">
+          <img class="media-object" src="retailservices/retailservices.png" alt="Retail Services" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="retailservices/retailservices.html">
+        <h4 class="media-heading">Retail Services</h4>
+        </a>
+        Monthly sales, inventories, and inventory/sales ratios for retail trade and food services.<br>
+        <i>retail, services, government, united states, usa, us, trade, food, services</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "retailservices",
+            'body': "The Advance Monthly and Monthly Retail Trade Surveys (MARTS and MRTS), the Annual Retail Trade Survey (ARTS), and the Quarterly E-Commerce Report work together to produce the most comprehensive data available on retail economic activity in the United States. More detailed descriptions of these programs can be found by choosing one of the links to the left. Regular quality control and verification takes place between MARTS, MRTS, and ARTS annually and between these programs and the Economic Census of Retail Trade every five years. Each year when annual data become available, we compare and resolve differences between the data collected on the monthly and annual surveys. We refer to this process as the monthly-to-annual reconciliation. At the same time, we benchmark the monthly estimates using results of the annual survey. ARTS estimates are then benchmarked to data maintained by the Economic Census of Retail Trade. This process of benchmarking retail data over all four programs ensures consistency in our estimates. The Business Expenses Supplement is an addition to the 2007 Annual Retail Trade Survey. Its purpose is to compile statistics on detailed business operating expenses. The United States Code, Title 13, authorizes this program as part of the Economic Census. This coverage was previously part of the predecessor Business Expenses Survey. Detailed expenses are collected every five years.",
+            'description': "Monthly sales, inventories, and inventory/sales ratios for retail trade and food services.",
+            'tags': ["retail", "services", "government", "united states", "usa", "us", "trade", "food", "services"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="airports">
+      
+      <div class="media-left  media-middle">
+        <a href="airports/airports.html">
+          <img class="media-object" src="airports/airports.png" alt="Airports" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="airports/airports.html">
+        <h4 class="media-heading">Airports</h4>
+        </a>
+        All about airports across the world, including features like runway length and geocoordinates.<br>
+        <i>airplane, airports, travel, plane, air</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "airports",
+            'body': "This dataset is all about airports. Additional information, explaining the names of some of the fields, is available: http://www.faa.gov/airports/airport_safety/airportdata_5010/#datadictionaries",
+            'description': "All about airports across the world, including features like runway length and geocoordinates.",
+            'tags': ["airplane", "airports", "travel", "plane", "air"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="johnsongrass">
+      
+      <div class="media-left  media-middle">
+        <a href="johnsongrass/johnsongrass.html">
+          <img class="media-object" src="johnsongrass/johnsongrass.png" alt="Johnson Grass" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="johnsongrass/johnsongrass.html">
+        <h4 class="media-heading">Johnson Grass</h4>
+        </a>
+        This dataset comes from Plant Genome Mapping Laboratory of Virginia Tech. It is about Johnson Grass collected around the region.<br>
+        <i>johnson grass, agriculture</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "johnsongrass",
+            'body': "~500 Johnsongrass genotypes were collected from 70 sites throughout the USA and grown in a common garden in Blacksburg. Height and biomass were recorded at the end of the growing season. The growth of each genotype can be related to the habitat it was collected in, the temperature and precipitation of its homesite, whether it was collected in an agricultural habitat, and which genetic cluster the genotype belongs to. This dataset was created and published by Daniel Z. Atwater, U. Uzay Sezen, Valorie Goff, Wenqian Kong, Andrew H. Paterson and Jacob N. Barney. Their website is at https://weedeco.ppws.vt.edu/.",
+            'description': "This dataset comes from Plant Genome Mapping Laboratory of Virginia Tech. It is about Johnson Grass collected around the region.",
+            'tags': ["johnson grass", "agriculture"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="constructionspending">
+      
+      <div class="media-left  media-middle">
+        <a href="constructionspending/constructionspending.html">
+          <img class="media-object" src="constructionspending/constructionspending.png" alt="Construction Spending" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="constructionspending/constructionspending.html">
+        <h4 class="media-heading">Construction Spending</h4>
+        </a>
+        Estimates of the total dollar value of construction work done in the U.S.<br>
+        <i>construction, spending, us, united states, america, government, buildings, residential, non-residential, private, public</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "constructionspending",
+            'body': "The Value of Construction Put in Place Survey (VIP) provides monthly estimates of the total dollar value of construction work done in the U.S. The United States Code, Title 13, authorizes this program. The survey covers construction work done each month on new structures or improvements to existing structures for private and public sectors. Data estimates include the cost of labor and materials, cost of architectural and engineering work, overhead costs, interest and taxes paid during construction, and contractor's profits. Data collection and estimation activities begin on the first day after the reference month and continue for about three weeks. Reported data and estimates are for activity taking place during the previous calendar month. The survey has been conducted monthly since 1964. Why isn't the 'total construction' the sum of the other categories? It is! the trick is that the 'residential' and \"nonresidential\" categories are supposed to be below the 'total construction' level, and the other categories are below those two categories. This example of the data should make it more clear: http://www.census.gov/construction/c30/pdf/tot.pdf",
+            'description': "Estimates of the total dollar value of construction work done in the U.S.",
+            'tags': ["construction", "spending", "us", "united states", "america", "government", "buildings", "residential", "non-residential", "private", "public"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="suicideattacks">
+      
+      <div class="media-left  media-middle">
+        <a href="suicideattacks/suicideattacks.html">
+          <img class="media-object" src="suicideattacks/suicideattacks.png" alt="Suicide Attacks" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="suicideattacks/suicideattacks.html">
+        <h4 class="media-heading">Suicide Attacks</h4>
+        </a>
+        This dataset has about suicide attacks all over the world for the past three decades.<br>
+        <i>global, attack, damage, kill, hurt, destroy, pain, suffering, terror, terrorism, religion, warfare, war, car, bomb, gun, shooting</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "suicideattacks",
+            'body': "The Chicago Project on Security and Terrorism (CPOST) maintains a searchable database on all suicide attacks from 1982 through September 2015. The database includes information about the location of attacks, the target type, the weapon used, and systematic information on the demographic and general biographical characteristics of suicide attackers. The database expands the breadth of the data available in English using native language sources (e.g., Arabic, Hebrew, Russian, Tamil) that are likely to have the most extensive relevant information. The current CPOST-SAD release contains the universe of suicide attacks from 1982 through September 2015, a total of 4,814 attacks in over 40 countries. The CPOST Suicide Attack Database (CPOST-SAD) contains data on the universe of suicide attacks. For each attack, the database includes information about the geographic location, target classification, and weapon(s) used, as well as systematic information on the demographic and general biographical characteristics of suicide attackers. More information about the coding and methodology is available on the CPOST website below. Note that multiple attackers or targets are collapsed into a single record for simplicity's sake.",
+            'description': "This dataset has about suicide attacks all over the world for the past three decades.",
+            'tags': ["global", "attack", "damage", "kill", "hurt", "destroy", "pain", "suffering", "terror", "terrorism", "religion", "warfare", "war", "car", "bomb", "gun", "shooting"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="nfl">
+      
+      <div class="media-left  media-middle">
+        <a href="nfl/nfl.html">
+          <img class="media-object" src="nfl/nfl.png" alt="NFL" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="nfl/nfl.html">
+        <h4 class="media-heading">NFL</h4>
+        </a>
+        Information about NFL games and players.
+<br>
+        <i>nfl, football, sports, games</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "nfl",
+            'body': "Information about NFL games and players.",
+            'description': "Information about NFL games and players.",
+            'tags': ["nfl", "football", "sports", "games"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="slavery">
+      
+      <div class="media-left  media-middle">
+        <a href="slavery/slavery.html">
+          <img class="media-object" src="slavery/slavery.png" alt="Slavery" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="slavery/slavery.html">
+        <h4 class="media-heading">Slavery</h4>
+        </a>
+        This dataset has financial records of New Orleans slave sales, 1856-1861. There are almost 16,000 sales recorded in this dataset.<br>
+        <i>slavery, slave, slaves, buyer, seller, origin, history, economics</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "slavery",
+            'body': "This dataset has financial records of New Orleans slave sales, 1856-1861. There are almost 16,000 sales recorded in this dataset.",
+            'description': "This dataset has financial records of New Orleans slave sales, 1856-1861. There are almost 16,000 sales recorded in this dataset.",
+            'tags': ["slavery", "slave", "slaves", "buyer", "seller", "origin", "history", "economics"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="airlines">
+      
+      <div class="media-left  media-middle">
+        <a href="airlines/airlines.html">
+          <img class="media-object" src="airlines/airlines.png" alt="Airlines" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="airlines/airlines.html">
+        <h4 class="media-heading">Airlines</h4>
+        </a>
+        Information about flight delays in major aiports since 2003.<br>
+        <i>airplane, airports, travel, plane, air, flights, delays, national, united states, transportation</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "airlines",
+            'body': "This dataset is all about flights in the united states, including information about the number, length, and type of delays. The data is reported for individual months at every major airport for every carrier. Additional information is available: http://www.rita.dot.gov/bts/help/aviation/html/understanding.html",
+            'description': "Information about flight delays in major aiports since 2003.",
+            'tags': ["airplane", "airports", "travel", "plane", "air", "flights", "delays", "national", "united states", "transportation"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drugbank">
+      
+      <div class="media-left  media-middle">
+        <a href="drugbank/drugbank.html">
+          <img class="media-object" src="drugbank/drugbank.png" alt="Drugbank" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="drugbank/drugbank.html">
+        <h4 class="media-heading">Drugbank</h4>
+        </a>
+        The DrugBank database is a cheminformatics resource that combines detailed drug data with comprehensive drug target information.<br>
+        <i>drugs, drug, drugbank, chemistry, biology, biochemistry, proteins</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "drugbank",
+            'body': "The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.",
+            'description': "The DrugBank database is a cheminformatics resource that combines detailed drug data with comprehensive drug target information.",
+            'tags': ["drugs", "drug", "drugbank", "chemistry", "biology", "biochemistry", "proteins"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
+      
+      <div class="media-left  media-middle">
+        <a href="food/food.html">
+          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="food/food.html">
+        <h4 class="media-heading">Food</h4>
+        </a>
+        Statistics for various food items<br>
+        <i>food, vitamins, minerals, health, nutrition</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "food",
+            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
+            'description': "Statistics for various food items",
+            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="foodaccess">
+      
+      <div class="media-left  media-middle">
+        <a href="foodaccess/foodaccess.html">
+          <img class="media-object" src="foodaccess/foodaccess.png" alt="Food Access" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="foodaccess/foodaccess.html">
+        <h4 class="media-heading">Food Access</h4>
+        </a>
+        Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.<br>
+        <i>counties, states, food, access, availability, supermarket, rural, urban, population, vehicles</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "foodaccess",
+            'body': "From the United States Department of Agriculture's Economic Research Service, the dataset contains information about US county's ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food. Most measures of how individuals and neighborhoods are able to access food are based on the following indicators: - Accessibility to sources of healthy food, as measured by distance to a store or by the number of stores in an area. - Individual-level resources that may affect accessibility, such as family income or vehicle availability. - Neighborhood-level indicators of resources, such as the average income of the neighborhood and the availability of public transportation.",
+            'description': "Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.",
+            'tags': ["counties", "states", "food", "access", "availability", "supermarket", "rural", "urban", "population", "vehicles"]
         }
     );
     </script>
@@ -337,29 +1071,490 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="earthquakes">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="constructionpermits">
       
       <div class="media-left  media-middle">
-        <a href="earthquakes/earthquakes.html">
-          <img class="media-object" src="earthquakes/earthquakes.png" alt="Earthquakes" style="max-width: 64px; max-height: 64px;">
+        <a href="constructionpermits/constructionpermits.html">
+          <img class="media-object" src="constructionpermits/constructionpermits.png" alt="Construction Permits" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="earthquakes/earthquakes.html">
-        <h4 class="media-heading">Earthquakes</h4>
+        <a href="constructionpermits/constructionpermits.html">
+        <h4 class="media-heading">Construction Permits</h4>
         </a>
-        Records from different earthquake occurences across the world.<br>
-        <i>earthquakes, nature, disaster, magnitude, richter scale, latitude, longitude</i>
+        This dataset provides data on the number and valuation of new housing units authorized by building permits.<br>
+        <i>construction, permits, us, united states, america, government, buildings, private, units, valuation, housing</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "earthquakes",
-            'body': "Earthquake records from around the world collected from the United States Geological Survey. Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake. Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included.",
-            'description': "Records from different earthquake occurences across the world.",
-            'tags': ["earthquakes", "nature", "disaster", "magnitude", "richter scale", "latitude", "longitude"]
+            'name': "constructionpermits",
+            'body': "This dataset provides data on the number and valuation of new housing units authorized by building permits. Data are available monthly at the national, regional, divisional, and state level. The data are from the Building Permits Survey. The United States Code, Title 13, authorizes this survey, provides for voluntary responses, and provides an exception to confidentiality for public records.",
+            'description': "This dataset provides data on the number and valuation of new housing units authorized by building permits.",
+            'tags': ["construction", "permits", "us", "united states", "america", "government", "buildings", "private", "units", "valuation", "housing"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="skyscrapers">
+      
+      <div class="media-left  media-middle">
+        <a href="skyscrapers/skyscrapers.html">
+          <img class="media-object" src="skyscrapers/skyscrapers.png" alt="Skyscrapers" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="skyscrapers/skyscrapers.html">
+        <h4 class="media-heading">Skyscrapers</h4>
+        </a>
+        Information about tall buildings constructed all over the world.<br>
+        <i>buildings, construction, building, skyscrapers, international, tall, height, tower</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "skyscrapers",
+            'body': "Collected statistics about the tallest buildings all over the world, including the materials used to develop them, the purpose of the buildings, and more.",
+            'description': "Information about tall buildings constructed all over the world.",
+            'tags': ["buildings", "construction", "building", "skyscrapers", "international", "tall", "height", "tower"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="cancer">
+      
+      <div class="media-left  media-middle">
+        <a href="cancer/cancer.html">
+          <img class="media-object" src="cancer/cancer.png" alt="Cancer" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="cancer/cancer.html">
+        <h4 class="media-heading">Cancer</h4>
+        </a>
+        Cancer crude rate totals for different ages, races, genders, and geographical areas across the United States.<br>
+        <i>cancer, death, states, gender, race, population, crude rate</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "cancer",
+            'body': "From the United States Cancer Statistics as part of the U.S. Center for Disease Control, the following data set focuses on the crude rate for all types of cancer reported for different demograpic groups. Significant groupings include age, gender, race and geographical area.",
+            'description': "Cancer crude rate totals for different ages, races, genders, and geographical areas across the United States.",
+            'tags': ["cancer", "death", "states", "gender", "race", "population", "crude rate"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
+      
+      <div class="media-left  media-middle">
+        <a href="health/health.html">
+          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="health/health.html">
+        <h4 class="media-heading">Health</h4>
+        </a>
+        This library holds data about reports of diseases in America.
+<br>
+        <i>health, diseases, infection</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "health",
+            'body': "This library holds data about reports of diseases in America.",
+            'description': "This library holds data about reports of diseases in America.",
+            'tags': ["health", "diseases", "infection"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="hospitals">
+      
+      <div class="media-left  media-middle">
+        <a href="hospitals/hospitals.html">
+          <img class="media-object" src="hospitals/hospitals.png" alt="Hospitals" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="hospitals/hospitals.html">
+        <h4 class="media-heading">Hospitals</h4>
+        </a>
+        Records about the outpatient volume and other information for hospitals across the U.S.<br>
+        <i>hospitals, healthcare, medicare, outpatient, patient, doctor, health</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "hospitals",
+            'body': "Medicare has collected data on many different hospitals throughout the country to allow users to compare the quality of these institutions before using their services. Data includes descriptions of the location of the hospitals, information about the hospitals' emergency services and type of hospital, and outpatient volume for the different wards of the hospitals.",
+            'description': "Records about the outpatient volume and other information for hospitals across the U.S.",
+            'tags': ["hospitals", "healthcare", "medicare", "outpatient", "patient", "doctor", "health"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="energy">
+      
+      <div class="media-left  media-middle">
+        <a href="energy/energy.html">
+          <img class="media-object" src="energy/energy.png" alt="Energy" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="energy/energy.html">
+        <h4 class="media-heading">Energy</h4>
+        </a>
+        United States Government reports on consumption, production, import, and export of various fuel sources.<br>
+        <i>energy, renewable, united states, us, nuclear, fossil fuels, power</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "energy",
+            'body': "United States Government reports on consumption, production, import, and export of various fuel sources. This data comes from the US Energy Information Administration, which has historical data from 1949 to 2014. All numbers are given in Quadrillion BTUs.",
+            'description': "United States Government reports on consumption, production, import, and export of various fuel sources.",
+            'tags': ["energy", "renewable", "united states", "us", "nuclear", "fossil fuels", "power"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="statedemographics">
+      
+      <div class="media-left  media-middle">
+        <a href="statedemographics/statedemographics.html">
+          <img class="media-object" src="statedemographics/statedemographics.png" alt="State Demographics" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="statedemographics/statedemographics.html">
+        <h4 class="media-heading">State Demographics</h4>
+        </a>
+        Demographic information for the states in the United States.<br>
+        <i>demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, states</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "statedemographics",
+            'body': "The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.",
+            'description': "Demographic information for the states in the United States.",
+            'tags': ["demographics", "population", "age", "ethnicity", "race", "language", "education", "foreign", "households", "income", "employment", "unemployment", "sales", "land area", "states"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="books">
+      
+      <div class="media-left  media-middle">
+        <a href="books/books.html">
+          <img class="media-object" src="books/books.png" alt="Books" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="books/books.html">
+        <h4 class="media-heading">Books</h4>
+        </a>
+        Records about different books and different attributes associated with them.<br>
+        <i>books, reading, author, pages, english, language, literature</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "books",
+            'body': "This data set contains information about different books written by different authors pertaining to a variety of genres. Information about the books includes page count, whether it's a paperback, and the price of the book.",
+            'description': "Records about different books and different attributes associated with them.",
+            'tags': ["books", "reading", "author", "pages", "english", "language", "literature"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="businesses">
+      
+      <div class="media-left  media-middle">
+        <a href="businesses/businesses.html">
+          <img class="media-object" src="businesses/businesses.png" alt="Businesses" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="businesses/businesses.html">
+        <h4 class="media-heading">Businesses</h4>
+        </a>
+        Information about businesses around college cities, provided by Yelp.<br>
+        <i>yelp, businesses, restaurants</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "businesses",
+            'body': "Yelp is providing all the data and reviews of the 250 closest businesses for 30 universities for students and academics to explore and research Yelp's dataset includes information for businesses near these 30 schools: Brown University, California Institute of Technology, California Polytechnic State University, Carnegie Mellon University, Columbia University, Cornell University, Georgia Institute of Technology, Harvard University, Harvey Mudd College, Massachusetts Institute of Technology, Princeton University, Purdue University, Rensselaer Polytechnic Institute, Rice University, Stanford University, University of California - Los Angeles, University of California - San Diego, University of California at Berkeley, University of Illinois - Urbana-Champaign, University of Maryland - College Park, University of Massachusetts - Amherst, University of Michigan - Ann Arbor, University of North Carolina - Chapel Hill, University of Pennsylvania, University of Southern California, University of Texas - Austin, University of Washington, University of Waterloo, University of Wisconsin - Madison, and Virginia Tech.",
+            'description': "Information about businesses around college cities, provided by Yelp.",
+            'tags': ["yelp", "businesses", "restaurants"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="election">
+      
+      <div class="media-left  media-middle">
+        <a href="election/election.html">
+          <img class="media-object" src="election/election.png" alt="Election" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="election/election.html">
+        <h4 class="media-heading">Election</h4>
+        </a>
+        A breakdown of how each county voted in the 2016 Presidential primaries.<br>
+        <i>politics, election, votes, counties, candidate</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "election",
+            'body': "Data about the results was collected from CNN's 2016 election center. Each county has the breakdown of how many votes each candidate recieved in that county and what percentage of the total vote from that county that the candidate recieved. The candidate's political party is also represented.",
+            'description': "A breakdown of how each county voted in the 2016 Presidential primaries.",
+            'tags': ["politics", "election", "votes", "counties", "candidate"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="realestate">
+      
+      <div class="media-left  media-middle">
+        <a href="realestate/realestate.html">
+          <img class="media-object" src="realestate/realestate.png" alt="Real Estate" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="realestate/realestate.html">
+        <h4 class="media-heading">Real Estate</h4>
+        </a>
+        Real estate information in the United States, including inventory, building, and customer data.<br>
+        <i>real, estate, buildings, government, building</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "realestate",
+            'body': "Real Estate Across the United States (REXUS) is the primary tool used by PBS to track and manage the government's real property assets and to store inventory data, building data, customer data, and lease information. STAR manages aspects of real property space management, including identification of all building space and daily management of 22,000 assignments for all property to its client Federal agencies. This data set contains PBS building inventory that consists of both owned and leased buildings with active and excess status.",
+            'description': "Real estate information in the United States, including inventory, building, and customer data.",
+            'tags': ["real", "estate", "buildings", "government", "building"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="labor">
+      
+      <div class="media-left  media-middle">
+        <a href="labor/labor.html">
+          <img class="media-object" src="labor/labor.png" alt="Labor" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="labor/labor.html">
+        <h4 class="media-heading">Labor</h4>
+        </a>
+        Employment status of the civilian population by race, sex, and age.
+<br>
+        <i>labor, race, age, sex, gender, america, usa, census, employed, unemployed, employability, job, work, civilian, black, white, asian, government</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "labor",
+            'body': "The Current Population Survey (CPS) is a monthly survey of households conducted by the Bureau of Census for the Bureau of Labor Statistics. It provides a comprehensive body of data on the labor force, employment, unemployment, persons not in the labor force, hours of work, earnings, and other demographic and labor force characteristics.",
+            'description': "Employment status of the civilian population by race, sex, and age.",
+            'tags': ["labor", "race", "age", "sex", "gender", "america", "usa", "census", "employed", "unemployed", "employability", "job", "work", "civilian", "black", "white", "asian", "government"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="aids">
+      
+      <div class="media-left  media-middle">
+        <a href="aids/aids.html">
+          <img class="media-object" src="aids/aids.png" alt="Aids" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="aids/aids.html">
+        <h4 class="media-heading">Aids</h4>
+        </a>
+        Records of AIDS related statistics from several countries.<br>
+        <i>aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "aids",
+            'body': "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease. The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.",
+            'description': "Records of AIDS related statistics from several countries.",
+            'tags': ["aids", "death", "disease", "hiv", "orphans", "health", "countries", "world", "gender", "united nations", "un"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="education">
+      
+      <div class="media-left  media-middle">
+        <a href="education/education.html">
+          <img class="media-object" src="education/education.png" alt="Education" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="education/education.html">
+        <h4 class="media-heading">Education</h4>
+        </a>
+        Information about K-12 education for different states, collected from the US government.<br>
+        <i>school, education, K-12, kindergarten, learning, teaching</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "education",
+            'body': "This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The 'Year' field has records for Preschool, Kindergarten, and grades 1-12.",
+            'description': "Information about K-12 education for different states, collected from the US government.",
+            'tags': ["school", "education", "K-12", "kindergarten", "learning", "teaching"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="globaldevelopment">
+      
+      <div class="media-left  media-middle">
+        <a href="globaldevelopment/globaldevelopment.html">
+          <img class="media-object" src="globaldevelopment/globaldevelopment.png" alt="Global Development" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="globaldevelopment/globaldevelopment.html">
+        <h4 class="media-heading">Global Development</h4>
+        </a>
+        Reports of country's development over time<br>
+        <i>world, countries, development, health, population, urban, rural, agriculture, infrastructure</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "globaldevelopment",
+            'body': "The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank. Included is different data about urban development, agriculture and rural development, health, and infrastructure.",
+            'description': "Reports of country's development over time",
+            'tags': ["world", "countries", "development", "health", "population", "urban", "rural", "agriculture", "infrastructure"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="injuries">
+      
+      <div class="media-left  media-middle">
+        <a href="injuries/injuries.html">
+          <img class="media-object" src="injuries/injuries.png" alt="Injuries" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="injuries/injuries.html">
+        <h4 class="media-heading">Injuries</h4>
+        </a>
+        A sampling of work-related injury and illness data from the US.<br>
+        <i>osha, united states, us, usa, government, health, safety, injury, injuries, hurt, pain, job, work, industry, career, occuptation, safety, hazard, health</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "injuries",
+            'body': "The Occupational Safety and Health Administration (OSHA) collected work-related injury and illness data from employers within specific industry and employment size specifications from 2002 through 2011. This data collection is called the OSHA Data Initiative or ODI. The data provided is used by OSHA to calculate establishment specific injury and illness incidence rates. This searchable database contains a table with the name, address, industry, and associated Total Case Rate (TCR), Days Away, Restricted, and Transfer (DART) case rate, and the Days Away From Work (DAFWII) case rate for the establishments that provided OSHA with valid data for calendar years 2002 through 2011. This data has been sampled down from its original size to 4%. In addition, the original dataset only has data from a small portion of all private sector establishments in the United States (80,000 out of 7.5 million total establishments). Therefore, these data are not representative of all businesses and general conclusions pertaining to all US business should not be overdrawn. Data quality: While OSHA takes multiple steps to ensure the data collected is accurate, problems and errors invariably exist for a small percentage of establishments. OSHA does not believe the data for the establishments with the highest rates on this file are accurate in absolute terms. Efforts were made during the collection cycle to correct submission errors, however some remain unresolved. It would be a mistake to say establishments with the highest rates on this file are the 'most dangerous' or 'worst' establishments in the Nation. Rate Calculation: An incidence rate of injuries and illnesses is computed from the following formula: (Number of injuries and illnesses X 200,000) / Employee hours worked = Incidence rate. The Total Case Rate includes all cases recorded on the OSHA Form 300 (Column G + Column H + Column I + Column J). The Days Away/Restriced/Transfer includes cases recorded in Column H + Column I. The Days Away includes cases recorded in Column H. For further information on injury and illness incidence rates, please visit the Bureau of Labor Statistics' webpage at http://www.bls.gov/iif/osheval.htm State Participation: Not all state plan states participate in the ODI. The following states did not participate in the 2010 ODI (collection of CY 2009 data), establishment data is not available for these states: Alaska; Oregon; Puerto Rico; South Carolina; Washington; Wyoming.",
+            'description': "A sampling of work-related injury and illness data from the US.",
+            'tags': ["osha", "united states", "us", "usa", "government", "health", "safety", "injury", "injuries", "hurt", "pain", "job", "work", "industry", "career", "occuptation", "safety", "hazard", "health"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="grads">
+      
+      <div class="media-left  media-middle">
+        <a href="grads/grads.html">
+          <img class="media-object" src="grads/grads.png" alt="Grads" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="grads/grads.html">
+        <h4 class="media-heading">Grads</h4>
+        </a>
+        This library holds data about employment of new graduates by major.<br>
+        <i>graduation, grads, majors, education, college, university, higher education, jobs, careers</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "grads",
+            'body': "This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series. Included is information about employment numbers, major information, and the earnings of different majors.",
+            'description': "This library holds data about employment of new graduates by major.",
+            'tags': ["graduation", "grads", "majors", "education", "college", "university", "higher education", "jobs", "careers"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="countydemographics">
+      
+      <div class="media-left  media-middle">
+        <a href="countydemographics/countydemographics.html">
+          <img class="media-object" src="countydemographics/countydemographics.png" alt="County Demographics" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="countydemographics/countydemographics.html">
+        <h4 class="media-heading">County Demographics</h4>
+        </a>
+        Demographic information for counties in the United States.<br>
+        <i>demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, counties</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "countydemographics",
+            'body': "The following data set is information obtained about counties in the United States from 2007 through 2014 through the United States Census Bureau. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.",
+            'description': "Demographic information for counties in the United States.",
+            'tags': ["demographics", "population", "age", "ethnicity", "race", "language", "education", "foreign", "households", "income", "employment", "unemployment", "sales", "land area", "counties"]
         }
     );
     </script>
