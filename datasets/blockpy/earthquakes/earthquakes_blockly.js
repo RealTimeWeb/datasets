@@ -1,16 +1,101 @@
 
 
-var INDEXES = [
+var earthquakes_INDEXES = [
     ["(None)", "(None)"],
     
+    ["state", "state"] 
 ];
 
-var INDEX_VALUES = {
+var earthquakes_INDEX_VALUES = {
     "(None)": [],
     
+    "state": [
+        
+        [" Afghanistan", " Afghanistan"] ,
+        [" Alaska", " Alaska"] ,
+        [" Albania", " Albania"] ,
+        [" Algeria", " Algeria"] ,
+        [" Anguilla", " Anguilla"] ,
+        [" Argentina", " Argentina"] ,
+        [" Arizona", " Arizona"] ,
+        [" Arkansas", " Arkansas"] ,
+        [" Azerbaijan", " Azerbaijan"] ,
+        [" British Virgin Islands", " British Virgin Islands"] ,
+        [" Bulgaria", " Bulgaria"] ,
+        [" Burma", " Burma"] ,
+        [" CA", " CA"] ,
+        [" California", " California"] ,
+        [" Canada", " Canada"] ,
+        [" Chile", " Chile"] ,
+        [" China", " China"] ,
+        [" Colombia", " Colombia"] ,
+        [" Connecticut", " Connecticut"] ,
+        [" Costa Rica", " Costa Rica"] ,
+        [" Cyprus", " Cyprus"] ,
+        [" Dominican Republic", " Dominican Republic"] ,
+        [" Ecuador", " Ecuador"] ,
+        [" El Salvador", " El Salvador"] ,
+        [" French Polynesia region", " French Polynesia region"] ,
+        [" Georgia", " Georgia"] ,
+        [" Greece", " Greece"] ,
+        [" Greenland", " Greenland"] ,
+        [" Guadeloupe", " Guadeloupe"] ,
+        [" Guatemala", " Guatemala"] ,
+        [" Hawaii", " Hawaii"] ,
+        [" Honduras", " Honduras"] ,
+        [" Idaho", " Idaho"] ,
+        [" India", " India"] ,
+        [" Indonesia", " Indonesia"] ,
+        [" Iran", " Iran"] ,
+        [" Italy", " Italy"] ,
+        [" Kansas", " Kansas"] ,
+        [" Kazakhstan", " Kazakhstan"] ,
+        [" Kentucky", " Kentucky"] ,
+        [" Kyrgyzstan", " Kyrgyzstan"] ,
+        [" Macedonia", " Macedonia"] ,
+        [" Maine", " Maine"] ,
+        [" Massachusetts", " Massachusetts"] ,
+        [" Mexico", " Mexico"] ,
+        [" Missouri", " Missouri"] ,
+        [" Montana", " Montana"] ,
+        [" MX", " MX"] ,
+        [" Nepal", " Nepal"] ,
+        [" Nevada", " Nevada"] ,
+        [" New Hampshire", " New Hampshire"] ,
+        [" New Jersey", " New Jersey"] ,
+        [" New Mexico", " New Mexico"] ,
+        [" New York", " New York"] ,
+        [" Nicaragua", " Nicaragua"] ,
+        [" NV", " NV"] ,
+        [" Oklahoma", " Oklahoma"] ,
+        [" Oregon", " Oregon"] ,
+        [" Pennsylvania", " Pennsylvania"] ,
+        [" Peru", " Peru"] ,
+        [" Puerto Rico", " Puerto Rico"] ,
+        [" Saint Eustatius and Saba ", " Saint Eustatius and Saba "] ,
+        [" Serbia", " Serbia"] ,
+        [" South Carolina", " South Carolina"] ,
+        [" Tajikistan", " Tajikistan"] ,
+        [" Tennessee", " Tennessee"] ,
+        [" Texas", " Texas"] ,
+        [" Tonga", " Tonga"] ,
+        [" Turkey", " Turkey"] ,
+        [" U.S. Virgin Islands", " U.S. Virgin Islands"] ,
+        [" Utah", " Utah"] ,
+        [" Uzbekistan", " Uzbekistan"] ,
+        [" Venezuela", " Venezuela"] ,
+        [" Wallis and Futuna", " Wallis and Futuna"] ,
+        [" Washington", " Washington"] ,
+        [" Wyoming", " Wyoming"] ,
+        [" Yemen", " Yemen"] ,
+        ["Chagos Archipelago region", "Chagos Archipelago region"] ,
+        ["Off the coast of Oregon", "Off the coast of Oregon"] ,
+        ["Owen Fracture Zone region", "Owen Fracture Zone region"] ,
+        ["South of Panama", "South of Panama"] 
+    ]
 }
 
-var PROPERTIES = [
+var earthquakes_PROPERTIES = [
     ["id", "id"] ,
     ["gap", "gap"] ,
     ["magnitude", "magnitude"] ,
@@ -35,9 +120,9 @@ Blockly.Blocks['earthquakes_get'] = {
     this.setColour(WEATHER_HUE);
     this.appendDummyInput('MAIN')
         .appendField("earthquakes.get")
-        .appendField(new Blockly.FieldDropdown(PROPERTIES), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown(earthquakes_PROPERTIES), "PROPERTY")
         .appendField("filter")
-        .appendField(new Blockly.FieldDropdown(INDEXES, function(option) {
+        .appendField(new Blockly.FieldDropdown(earthquakes_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
                     }), "INDEX")
     this.updateShape_();
@@ -64,12 +149,11 @@ Blockly.Blocks['earthquakes_get'] = {
     }
     this.setFieldValue(index, 'INDEX');
     if (index != undefined && index != '(None)') {
-        inputGroup.appendField(new Blockly.FieldDropdown(INDEX_VALUES[index]), 'INDEX_VALUE')
+        inputGroup.appendField(new Blockly.FieldDropdown(earthquakes_INDEX_VALUES[index]), 'INDEX_VALUE')
         if (index_value != undefined) {
             this.setFieldValue(index_value, 'INDEX_VALUE');
         } else {
-            console.log(INDEX_VALUES[index])
-            this.setFieldValue(INDEX_VALUES[index][0][0], 'INDEX_VALUE');
+            this.setFieldValue(earthquakes_INDEX_VALUES[index][0][0], 'INDEX_VALUE');
         }
     }    
   }
@@ -98,3 +182,7 @@ PythonToBlocks.KNOWN_MODULES['earthquakes'] = {
 AbstractInterpreter.MODULES['earthquakes'] = {
     'get': {"type": "List", "empty": false, "component": {"type": 'Num'}}
 };
+
+BlockPyEditor.CATEGORY_MAP['Data - Earthquakes'] = '<category name="Data - Earthquakes" colour="50">'+
+                    '<block type="earthquakes_get"><mutation index="(None)" index_value=""></mutation></block>'+
+                '</category>';

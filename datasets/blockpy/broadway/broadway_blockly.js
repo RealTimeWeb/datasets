@@ -1,16 +1,85 @@
 
 
-var INDEXES = [
+var broadway_INDEXES = [
     ["(None)", "(None)"],
     
+    ["theatre", "theatre"] 
 ];
 
-var INDEX_VALUES = {
+var broadway_INDEX_VALUES = {
     "(None)": [],
     
+    "theatre": [
+        
+        ["46th Street", "46th Street"] ,
+        ["Al Hirschfeld", "Al Hirschfeld"] ,
+        ["Ambassador", "Ambassador"] ,
+        ["American Airlines", "American Airlines"] ,
+        ["August Wilson", "August Wilson"] ,
+        ["Barrymore", "Barrymore"] ,
+        ["Belasco", "Belasco"] ,
+        ["Biltmore", "Biltmore"] ,
+        ["Biltmore (ne)", "Biltmore (ne)"] ,
+        ["Booth", "Booth"] ,
+        ["Broadhurst", "Broadhurst"] ,
+        ["Broadway", "Broadway"] ,
+        ["Brooks Atkinson", "Brooks Atkinson"] ,
+        ["Cadillac Winter Garden", "Cadillac Winter Garden"] ,
+        ["Circle In The Square", "Circle In The Square"] ,
+        ["Cort", "Cort"] ,
+        ["Criterion", "Criterion"] ,
+        ["Edison", "Edison"] ,
+        ["Ethel Barrymore", "Ethel Barrymore"] ,
+        ["Eugene O'neill", "Eugene O'neill"] ,
+        ["Ford Center", "Ford Center"] ,
+        ["Ford Center (livent)", "Ford Center (livent)"] ,
+        ["Ford Center (tcn)", "Ford Center (tcn)"] ,
+        ["Foxwoods", "Foxwoods"] ,
+        ["Friedman", "Friedman"] ,
+        ["Gershwin", "Gershwin"] ,
+        ["Golden", "Golden"] ,
+        ["Helen Hayes", "Helen Hayes"] ,
+        ["Hellinger", "Hellinger"] ,
+        ["Henry Miller", "Henry Miller"] ,
+        ["Hilton Theatre", "Hilton Theatre"] ,
+        ["Imperial", "Imperial"] ,
+        ["Jacobs", "Jacobs"] ,
+        ["John Golden", "John Golden"] ,
+        ["Kit Kat Klub", "Kit Kat Klub"] ,
+        ["Latin Quarter", "Latin Quarter"] ,
+        ["Lawrence", "Lawrence"] ,
+        ["Longacre", "Longacre"] ,
+        ["Lunt-fontanne", "Lunt-fontanne"] ,
+        ["Lunt-Fontanne", "Lunt-Fontanne"] ,
+        ["Lyceum", "Lyceum"] ,
+        ["Lyric", "Lyric"] ,
+        ["Majestic", "Majestic"] ,
+        ["Marquis", "Marquis"] ,
+        ["Martin Beck", "Martin Beck"] ,
+        ["Minskoff", "Minskoff"] ,
+        ["Music Box", "Music Box"] ,
+        ["Nederlander", "Nederlander"] ,
+        ["Neil Simon", "Neil Simon"] ,
+        ["New Amsterdam", "New Amsterdam"] ,
+        ["Palace", "Palace"] ,
+        ["Plymouth", "Plymouth"] ,
+        ["Richard Rodgers", "Richard Rodgers"] ,
+        ["Ritz", "Ritz"] ,
+        ["Royale", "Royale"] ,
+        ["Schoenfeld", "Schoenfeld"] ,
+        ["Shubert", "Shubert"] ,
+        ["St. James", "St. James"] ,
+        ["Stephen Sondheim", "Stephen Sondheim"] ,
+        ["Studio 54", "Studio 54"] ,
+        ["Studio 54 ('98)", "Studio 54 ('98)"] ,
+        ["Virginia", "Virginia"] ,
+        ["Vivian Beaumont", "Vivian Beaumont"] ,
+        ["Walter Kerr", "Walter Kerr"] ,
+        ["Winter Garden", "Winter Garden"] 
+    ]
 }
 
-var PROPERTIES = [
+var broadway_PROPERTIES = [
     ["attendance", "attendance"] ,
     ["capacity", "capacity"] ,
     ["date", "date"] ,
@@ -29,9 +98,9 @@ Blockly.Blocks['broadway_get'] = {
     this.setColour(WEATHER_HUE);
     this.appendDummyInput('MAIN')
         .appendField("broadway.get")
-        .appendField(new Blockly.FieldDropdown(PROPERTIES), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown(broadway_PROPERTIES), "PROPERTY")
         .appendField("filter")
-        .appendField(new Blockly.FieldDropdown(INDEXES, function(option) {
+        .appendField(new Blockly.FieldDropdown(broadway_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
                     }), "INDEX")
     this.updateShape_();
@@ -58,12 +127,11 @@ Blockly.Blocks['broadway_get'] = {
     }
     this.setFieldValue(index, 'INDEX');
     if (index != undefined && index != '(None)') {
-        inputGroup.appendField(new Blockly.FieldDropdown(INDEX_VALUES[index]), 'INDEX_VALUE')
+        inputGroup.appendField(new Blockly.FieldDropdown(broadway_INDEX_VALUES[index]), 'INDEX_VALUE')
         if (index_value != undefined) {
             this.setFieldValue(index_value, 'INDEX_VALUE');
         } else {
-            console.log(INDEX_VALUES[index])
-            this.setFieldValue(INDEX_VALUES[index][0][0], 'INDEX_VALUE');
+            this.setFieldValue(broadway_INDEX_VALUES[index][0][0], 'INDEX_VALUE');
         }
     }    
   }
@@ -92,3 +160,7 @@ PythonToBlocks.KNOWN_MODULES['broadway'] = {
 AbstractInterpreter.MODULES['broadway'] = {
     'get': {"type": "List", "empty": false, "component": {"type": 'Num'}}
 };
+
+BlockPyEditor.CATEGORY_MAP['Data - Broadway'] = '<category name="Data - Broadway" colour="50">'+
+                    '<block type="broadway_get"><mutation index="(None)" index_value=""></mutation></block>'+
+                '</category>';

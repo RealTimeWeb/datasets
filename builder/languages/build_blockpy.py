@@ -222,7 +222,7 @@ def build_locals(model, js_path):
         file = local["file"]
         row_type = local["type"]
         row = local["row"]
-        json_path = name + "_dataset.js"
+        json_path = flat_case(model['metadata']['name']) + "_dataset.js"
         with open(file, "r") as local_file, open(json_path, 'w') as output_file:
             output_file.write("_IMPORTED_DATASETS['{}'] = ".format(name))
             if row_type == "json":

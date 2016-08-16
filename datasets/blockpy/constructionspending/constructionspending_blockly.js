@@ -1,16 +1,35 @@
 
 
-var INDEXES = [
+var construction_spending_INDEXES = [
     ["(None)", "(None)"],
     
+    ["year", "year"] 
 ];
 
-var INDEX_VALUES = {
+var construction_spending_INDEX_VALUES = {
     "(None)": [],
     
+    "year": [
+        
+        ["2002", "2002"] ,
+        ["2003", "2003"] ,
+        ["2004", "2004"] ,
+        ["2005", "2005"] ,
+        ["2006", "2006"] ,
+        ["2007", "2007"] ,
+        ["2008", "2008"] ,
+        ["2009", "2009"] ,
+        ["2010", "2010"] ,
+        ["2011", "2011"] ,
+        ["2012", "2012"] ,
+        ["2013", "2013"] ,
+        ["2014", "2014"] ,
+        ["2015", "2015"] ,
+        ["2016", "2016"] 
+    ]
 }
 
-var PROPERTIES = [
+var construction_spending_PROPERTIES = [
     ["annual.combined.amusement and recreation", "annual.combined.amusement and recreation"] ,
     ["annual.combined.commercial", "annual.combined.commercial"] ,
     ["annual.combined.communication", "annual.combined.communication"] ,
@@ -137,9 +156,9 @@ Blockly.Blocks['construction_spending_get'] = {
     this.setColour(WEATHER_HUE);
     this.appendDummyInput('MAIN')
         .appendField("construction_spending.get")
-        .appendField(new Blockly.FieldDropdown(PROPERTIES), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown(construction_spending_PROPERTIES), "PROPERTY")
         .appendField("filter")
-        .appendField(new Blockly.FieldDropdown(INDEXES, function(option) {
+        .appendField(new Blockly.FieldDropdown(construction_spending_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
                     }), "INDEX")
     this.updateShape_();
@@ -166,12 +185,11 @@ Blockly.Blocks['construction_spending_get'] = {
     }
     this.setFieldValue(index, 'INDEX');
     if (index != undefined && index != '(None)') {
-        inputGroup.appendField(new Blockly.FieldDropdown(INDEX_VALUES[index]), 'INDEX_VALUE')
+        inputGroup.appendField(new Blockly.FieldDropdown(construction_spending_INDEX_VALUES[index]), 'INDEX_VALUE')
         if (index_value != undefined) {
             this.setFieldValue(index_value, 'INDEX_VALUE');
         } else {
-            console.log(INDEX_VALUES[index])
-            this.setFieldValue(INDEX_VALUES[index][0][0], 'INDEX_VALUE');
+            this.setFieldValue(construction_spending_INDEX_VALUES[index][0][0], 'INDEX_VALUE');
         }
     }    
   }
@@ -200,3 +218,7 @@ PythonToBlocks.KNOWN_MODULES['construction_spending'] = {
 AbstractInterpreter.MODULES['construction_spending'] = {
     'get': {"type": "List", "empty": false, "component": {"type": 'Num'}}
 };
+
+BlockPyEditor.CATEGORY_MAP['Data - Construction Spending'] = '<category name="Data - Construction Spending" colour="50">'+
+                    '<block type="construction_spending_get"><mutation index="(None)" index_value=""></mutation></block>'+
+                '</category>';

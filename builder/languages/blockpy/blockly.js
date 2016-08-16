@@ -1,13 +1,13 @@
 {% set library_name = metadata.name | snake_case %}
 
-var INDEXES = [
+var {{library_name}}_INDEXES = [
     ["(None)", "(None)"],
     {% for index in indexes.keys() %}
     [{{ index | tojson }}, {{ index | tojson }}] {{ ',' if not loop.last -}}
     {% endfor %}
 ];
 
-var INDEX_VALUES = {
+var {{library_name}}_INDEX_VALUES = {
     "(None)": [],
     {% for index, values in indexes.items() %}
     {{ index | tojson }}: [
@@ -18,7 +18,7 @@ var INDEX_VALUES = {
     {% endfor %}
 }
 
-var PROPERTIES = [
+var {{library_name}}_PROPERTIES = [
 {%- for key_name in key_names %}
     [{{ key_name | tojson }}, {{ key_name | tojson }}] {{ ',' if not loop.last -}}
 {% endfor %}
@@ -29,9 +29,9 @@ Blockly.Blocks['{{ library_name }}_get'] = {
     this.setColour(WEATHER_HUE);
     this.appendDummyInput('MAIN')
         .appendField("{{ library_name }}.get")
-        .appendField(new Blockly.FieldDropdown(PROPERTIES), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown({{library_name}}_PROPERTIES), "PROPERTY")
         .appendField("filter")
-        .appendField(new Blockly.FieldDropdown(INDEXES, function(option) {
+        .appendField(new Blockly.FieldDropdown({{library_name}}_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
                     }), "INDEX")
     this.updateShape_();
@@ -58,12 +58,11 @@ Blockly.Blocks['{{ library_name }}_get'] = {
     }
     this.setFieldValue(index, 'INDEX');
     if (index != undefined && index != '(None)') {
-        inputGroup.appendField(new Blockly.FieldDropdown(INDEX_VALUES[index]), 'INDEX_VALUE')
+        inputGroup.appendField(new Blockly.FieldDropdown({{library_name}}_INDEX_VALUES[index]), 'INDEX_VALUE')
         if (index_value != undefined) {
             this.setFieldValue(index_value, 'INDEX_VALUE');
         } else {
-            console.log(INDEX_VALUES[index])
-            this.setFieldValue(INDEX_VALUES[index][0][0], 'INDEX_VALUE');
+            this.setFieldValue({{library_name}}_INDEX_VALUES[index][0][0], 'INDEX_VALUE');
         }
     }    
   }

@@ -87,8 +87,6 @@ Weather Library (CORGIS Datasets Project)
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_weather'>get_weather</a></li>
-        <li><a href='#get_weather_by_day'>get_weather_by_day</a></li>
-        <li><a href='#get_weather_by_city'>get_weather_by_city</a></li>
         
         </ol></li>
         
@@ -129,12 +127,10 @@ Weather Library (CORGIS Datasets Project)
     
     <h3 id="usage">Usage</h3>
     
-    This library has 3 functions you can use.
+    This library has 1 function you can use.
     
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">weather</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather</span><span class="p">()</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather_by_day</span><span class="p">(</span><span class="s">&quot;6-1-16&quot;</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather_by_city</span><span class="p">(</span><span class="s">&quot;Blacksburg&quot;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -145,8 +141,6 @@ Weather Library (CORGIS Datasets Project)
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">weather</span>
 <span class="c"># These may be slow!</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather_by_day</span><span class="p">(</span><span class="s">&quot;6-1-16&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather_by_city</span><span class="p">(</span><span class="s">&quot;Blacksburg&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
 </pre></div>
 
 
@@ -163,62 +157,6 @@ Returns weather reports from the dataset.
 <br>
 
 <ul class="list-group col-md-6 col-md-offset-1">
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='get_weather_by_day'>weather.get_weather_by_day(day, test=True)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Given a day, returns all the weather reports for that day in the database.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>day</b>: <i>Str</i></h5>
-    <p class="list-group-item-text">The day to get reports.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='get_weather_by_city'>weather.get_weather_by_city(city, test=True)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Given a city, returns all the weather reports for that city in the database.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>city</b>: <i>Str</i></h5>
-    <p class="list-group-item-text">The city to get reports.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
 
 
 <li class="list-group-item list-group-item-warning">
@@ -277,122 +215,56 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-weather-__0__' title='Dictionary (6 keys)'>
+    <div id='explore-weather-__0__-Date' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Weather Conditions"</code></td> 
-                 <td><span data-toggle="tooltip" title="List">list</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-weather-__0__-Weather-Conditions'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
-                 <td>An empty list represents no significant weather to report for that day</td> </tr>
-            
-            <tr> <td><code>"City"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Anchorage"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Station's State"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Alaska"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Station"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"ANC"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Date"</code></td> 
+            <tr> <td><code>"Full"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"06-09-2016"</code></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Data"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-weather-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+            <tr> <td><code>"Day"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>9</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2016</code></td> 
                  <td></td> </tr>
             
         </table>
     </div>
     <script>
     $(document).ready(function() {
-        $( "#explore-weather-__0__" ).dialog({
+        $( "#explore-weather-__0__-Date" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-weather-__0__-Weather-Conditions").click(function() {
-            $( "#explore-weather-__0__-Weather-Conditions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-weather-__0__-Date-Full").click(function() {
+            $( "#explore-weather-__0__-Date-Full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-weather-__0__-City").click(function() {
-            $( "#explore-weather-__0__-City" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-weather-__0__-Date-Day").click(function() {
+            $( "#explore-weather-__0__-Date-Day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-weather-__0__-Station_s-State").click(function() {
-            $( "#explore-weather-__0__-Station_s-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-weather-__0__-Date-Month").click(function() {
+            $( "#explore-weather-__0__-Date-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-weather-__0__-Station").click(function() {
-            $( "#explore-weather-__0__-Station" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-weather-__0__-Date").click(function() {
-            $( "#explore-weather-__0__-Date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-weather-__0__-Data").click(function() {
-            $( "#explore-weather-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-    });
-    </script>
-
-    <div id='explore-weather-__0__-Data-Wind' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"High Gust"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>23.0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Avg Wind"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>6.0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"High Wind"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>9.0</code></td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-weather-__0__-Data-Wind" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-weather-__0__-Data-Wind-High-Gust").click(function() {
-            $( "#explore-weather-__0__-Data-Wind-High-Gust" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-weather-__0__-Data-Wind-Avg-Wind").click(function() {
-            $( "#explore-weather-__0__-Data-Wind-Avg-Wind" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-weather-__0__-Data-Wind-High-Wind").click(function() {
-            $( "#explore-weather-__0__-Data-Wind-High-Wind" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-weather-__0__-Date-Year").click(function() {
+            $( "#explore-weather-__0__-Date-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -445,6 +317,108 @@ $(document).ready(function() {
     });
     </script>
 
+    <div id='explore-weather-__0__-Data-Wind' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"High Gust"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>23.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Avg Wind"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>6.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"High Wind"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>9.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-weather-__0__-Data-Wind" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-weather-__0__-Data-Wind-High-Gust").click(function() {
+            $( "#explore-weather-__0__-Data-Wind-High-Gust" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-weather-__0__-Data-Wind-Avg-Wind").click(function() {
+            $( "#explore-weather-__0__-Data-Wind-Avg-Wind" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-weather-__0__-Data-Wind-High-Wind").click(function() {
+            $( "#explore-weather-__0__-Data-Wind-High-Wind" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-weather-__0__' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Weather Conditions"</code></td> 
+                 <td><span data-toggle="tooltip" title="List">list</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-weather-__0__-Weather-Conditions'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td>This is a list of strings. An empty list represents no significant weather to report for that day</td> </tr>
+            
+            <tr> <td><code>"Date"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-weather-__0__-Date'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Station"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-weather-__0__-Station'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-weather-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-weather-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-weather-__0__-Weather-Conditions").click(function() {
+            $( "#explore-weather-__0__-Weather-Conditions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-weather-__0__-Date").click(function() {
+            $( "#explore-weather-__0__-Date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-weather-__0__-Station").click(function() {
+            $( "#explore-weather-__0__-Station" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-weather-__0__-Data").click(function() {
+            $( "#explore-weather-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
     <div id='explore-weather-__0__-Data-Temperature' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
@@ -485,6 +459,62 @@ $(document).ready(function() {
         
         $("#btn-explore-weather-__0__-Data-Temperature-Min-Temp").click(function() {
             $( "#explore-weather-__0__-Data-Temperature-Min-Temp" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-weather-__0__-Station' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"City"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Anchorage"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"State"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Alaska"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Code"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"ANC"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Location"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Anchorage, AK"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-weather-__0__-Station" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-weather-__0__-Station-City").click(function() {
+            $( "#explore-weather-__0__-Station-City" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-weather-__0__-Station-State").click(function() {
+            $( "#explore-weather-__0__-Station-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-weather-__0__-Station-Code").click(function() {
+            $( "#explore-weather-__0__-Station-Code" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-weather-__0__-Station-Location").click(function() {
+            $( "#explore-weather-__0__-Station-Location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

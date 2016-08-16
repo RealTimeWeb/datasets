@@ -172,7 +172,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       "Dec", 
       "Jan"
     ], 
-    "name": "spending.[0].time.month name", 
+    "name": "constructionspending.[0].time.month name", 
     "pretty": "Time: Month Name", 
     "index": false
   }, 
@@ -349,7 +349,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       3592, 
       2958
     ], 
-    "name": "spending.[0].current.combined.transportation", 
+    "name": "constructionspending.[0].current.combined.transportation", 
     "pretty": "Current Combined: Transportation", 
     "index": false
   }, 
@@ -526,7 +526,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       296153, 
       309437
     ], 
-    "name": "spending.[0].annual.public.total construction", 
+    "name": "constructionspending.[0].annual.public.total construction", 
     "pretty": "Annual Public: Total Construction", 
     "index": false
   }, 
@@ -703,7 +703,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       741, 
       656
     ], 
-    "name": "spending.[0].current.public.health care", 
+    "name": "constructionspending.[0].current.public.health care", 
     "pretty": "Current Public: Health Care", 
     "index": false
   }, 
@@ -880,7 +880,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].annual.private.sewage and waste disposal", 
+    "name": "constructionspending.[0].annual.private.sewage and waste disposal", 
     "pretty": "Annual Private: Sewage And Waste Disposal", 
     "index": false
   }, 
@@ -1057,7 +1057,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       12, 
       1
     ], 
-    "name": "spending.[0].time.month", 
+    "name": "constructionspending.[0].time.month", 
     "pretty": "Time: Month", 
     "index": false
   }, 
@@ -1234,7 +1234,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       2195, 
       1395
     ], 
-    "name": "spending.[0].current.private.communication", 
+    "name": "constructionspending.[0].current.private.communication", 
     "pretty": "Current Private: Communication", 
     "index": false
   }, 
@@ -1411,7 +1411,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       6008, 
       5005
     ], 
-    "name": "spending.[0].current.public.highway and street", 
+    "name": "constructionspending.[0].current.public.highway and street", 
     "pretty": "Current Public: Highway And Street", 
     "index": false
   }, 
@@ -1588,7 +1588,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].annual.public.manufacturing", 
+    "name": "constructionspending.[0].annual.public.manufacturing", 
     "pretty": "Annual Public: Manufacturing", 
     "index": false
   }, 
@@ -1765,7 +1765,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       18078, 
       18377
     ], 
-    "name": "spending.[0].annual.private.educational", 
+    "name": "constructionspending.[0].annual.private.educational", 
     "pretty": "Annual Private: Educational", 
     "index": false
   }, 
@@ -1942,7 +1942,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       433108, 
       433164
     ], 
-    "name": "spending.[0].annual.private.residential", 
+    "name": "constructionspending.[0].annual.private.residential", 
     "pretty": "Annual Private: Residential", 
     "index": false
   }, 
@@ -2119,7 +2119,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       1123497, 
       1140841
     ], 
-    "name": "spending.[0].annual.combined.total construction", 
+    "name": "constructionspending.[0].annual.combined.total construction", 
     "pretty": "Annual Combined: Total Construction", 
     "index": false
   }, 
@@ -2296,7 +2296,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       2796, 
       2977
     ], 
-    "name": "spending.[0].annual.public.commercial", 
+    "name": "constructionspending.[0].annual.public.commercial", 
     "pretty": "Annual Public: Commercial", 
     "index": false
   }, 
@@ -2473,7 +2473,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       7015, 
       6217
     ], 
-    "name": "spending.[0].current.private.manufacturing", 
+    "name": "constructionspending.[0].current.private.manufacturing", 
     "pretty": "Current Private: Manufacturing", 
     "index": false
   }, 
@@ -2650,7 +2650,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       78410, 
       81697
     ], 
-    "name": "spending.[0].annual.private.manufacturing", 
+    "name": "constructionspending.[0].annual.private.manufacturing", 
     "pretty": "Annual Private: Manufacturing", 
     "index": false
   }, 
@@ -2827,7 +2827,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       7069, 
       6272
     ], 
-    "name": "spending.[0].current.combined.manufacturing", 
+    "name": "constructionspending.[0].current.combined.manufacturing", 
     "pretty": "Current Combined: Manufacturing", 
     "index": false
   }, 
@@ -3004,7 +3004,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       44631, 
       43503
     ], 
-    "name": "spending.[0].annual.combined.transportation", 
+    "name": "constructionspending.[0].annual.combined.transportation", 
     "pretty": "Annual Combined: Transportation", 
     "index": false
   }, 
@@ -3181,7 +3181,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       12820, 
       12874
     ], 
-    "name": "spending.[0].annual.private.transportation", 
+    "name": "constructionspending.[0].annual.private.transportation", 
     "pretty": "Annual Private: Transportation", 
     "index": false
   }, 
@@ -3358,7 +3358,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       7803, 
       7474
     ], 
-    "name": "spending.[0].annual.public.office", 
+    "name": "constructionspending.[0].annual.public.office", 
     "pretty": "Annual Public: Office", 
     "index": false
   }, 
@@ -3535,7 +3535,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       816, 
       691
     ], 
-    "name": "spending.[0].current.public.amusement and recreation", 
+    "name": "constructionspending.[0].current.public.amusement and recreation", 
     "pretty": "Current Public: Amusement And Recreation", 
     "index": false
   }, 
@@ -3712,7 +3712,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       1083, 
       858
     ], 
-    "name": "spending.[0].current.private.transportation", 
+    "name": "constructionspending.[0].current.private.transportation", 
     "pretty": "Current Private: Transportation", 
     "index": false
   }, 
@@ -3889,7 +3889,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       5462, 
       4758
     ], 
-    "name": "spending.[0].current.combined.commercial", 
+    "name": "constructionspending.[0].current.combined.commercial", 
     "pretty": "Current Combined: Commercial", 
     "index": false
   }, 
@@ -4066,7 +4066,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       10427, 
       10493
     ], 
-    "name": "spending.[0].annual.public.amusement and recreation", 
+    "name": "constructionspending.[0].annual.public.amusement and recreation", 
     "pretty": "Annual Public: Amusement And Recreation", 
     "index": false
   }, 
@@ -4243,7 +4243,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       "Dec2015", 
       "Jan2016"
     ], 
-    "name": "spending.[0].time.period", 
+    "name": "constructionspending.[0].time.period", 
     "pretty": "Time: Period", 
     "index": false
   }, 
@@ -4420,7 +4420,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       4273, 
       3996
     ], 
-    "name": "spending.[0].current.private.office", 
+    "name": "constructionspending.[0].current.private.office", 
     "pretty": "Current Private: Office", 
     "index": false
   }, 
@@ -4597,7 +4597,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].current.private.highway and street", 
+    "name": "constructionspending.[0].current.private.highway and street", 
     "pretty": "Current Private: Highway And Street", 
     "index": false
   }, 
@@ -4774,7 +4774,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       22422, 
       21469
     ], 
-    "name": "spending.[0].annual.private.communication", 
+    "name": "constructionspending.[0].annual.private.communication", 
     "pretty": "Annual Private: Communication", 
     "index": false
   }, 
@@ -4951,7 +4951,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       7340, 
       6923
     ], 
-    "name": "spending.[0].current.combined.power", 
+    "name": "constructionspending.[0].current.combined.power", 
     "pretty": "Current Combined: Power", 
     "index": false
   }, 
@@ -5128,7 +5128,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       641, 
       551
     ], 
-    "name": "spending.[0].current.public.office", 
+    "name": "constructionspending.[0].current.public.office", 
     "pretty": "Current Public: Office", 
     "index": false
   }, 
@@ -5305,7 +5305,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       1383, 
       1321
     ], 
-    "name": "spending.[0].current.private.educational", 
+    "name": "constructionspending.[0].current.private.educational", 
     "pretty": "Current Private: Educational", 
     "index": false
   }, 
@@ -5482,7 +5482,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].current.private.conservation and development", 
+    "name": "constructionspending.[0].current.private.conservation and development", 
     "pretty": "Current Private: Conservation And Development", 
     "index": false
   }, 
@@ -5659,7 +5659,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       69415, 
       66427
     ], 
-    "name": "spending.[0].annual.combined.commercial", 
+    "name": "constructionspending.[0].annual.combined.commercial", 
     "pretty": "Annual Combined: Commercial", 
     "index": false
   }, 
@@ -5836,7 +5836,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].annual.public.religious", 
+    "name": "constructionspending.[0].annual.public.religious", 
     "pretty": "Annual Public: Religious", 
     "index": false
   }, 
@@ -6013,7 +6013,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       86527, 
       77586
     ], 
-    "name": "spending.[0].current.combined.total construction", 
+    "name": "constructionspending.[0].current.combined.total construction", 
     "pretty": "Current Combined: Total Construction", 
     "index": false
   }, 
@@ -6190,7 +6190,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       937, 
       885
     ], 
-    "name": "spending.[0].current.public.water supply", 
+    "name": "constructionspending.[0].current.public.water supply", 
     "pretty": "Current Public: Water Supply", 
     "index": false
   }, 
@@ -6367,7 +6367,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       6612, 
       6253
     ], 
-    "name": "spending.[0].current.private.power", 
+    "name": "constructionspending.[0].current.private.power", 
     "pretty": "Current Private: Power", 
     "index": false
   }, 
@@ -6544,7 +6544,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       54150, 
       48064
     ], 
-    "name": "spending.[0].current.combined.nonresidential", 
+    "name": "constructionspending.[0].current.combined.nonresidential", 
     "pretty": "Current Combined: Nonresidential", 
     "index": false
   }, 
@@ -6721,7 +6721,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       96211, 
       110369
     ], 
-    "name": "spending.[0].annual.public.highway and street", 
+    "name": "constructionspending.[0].annual.public.highway and street", 
     "pretty": "Annual Public: Highway And Street", 
     "index": false
   }, 
@@ -6898,186 +6898,186 @@ _IMPORTED_DATASETS['constructionspending'] = {
       677, 
       632
     ], 
-    "name": "spending.[0].current.public.public safety", 
+    "name": "constructionspending.[0].current.public.public safety", 
     "pretty": "Current Public: Public Safety", 
     "index": false
   }, 
   "year": {
     "type": "number", 
     "data": [
-      2002, 
-      2002, 
-      2002, 
-      2002, 
-      2002, 
-      2002, 
-      2002, 
-      2002, 
-      2002, 
-      2002, 
-      2002, 
-      2002, 
-      2003, 
-      2003, 
-      2003, 
-      2003, 
-      2003, 
-      2003, 
-      2003, 
-      2003, 
-      2003, 
-      2003, 
-      2003, 
-      2003, 
-      2004, 
-      2004, 
-      2004, 
-      2004, 
-      2004, 
-      2004, 
-      2004, 
-      2004, 
-      2004, 
-      2004, 
-      2004, 
-      2004, 
-      2005, 
-      2005, 
-      2005, 
-      2005, 
-      2005, 
-      2005, 
-      2005, 
-      2005, 
-      2005, 
-      2005, 
-      2005, 
-      2005, 
-      2006, 
-      2006, 
-      2006, 
-      2006, 
-      2006, 
-      2006, 
-      2006, 
-      2006, 
-      2006, 
-      2006, 
-      2006, 
-      2006, 
-      2007, 
-      2007, 
-      2007, 
-      2007, 
-      2007, 
-      2007, 
-      2007, 
-      2007, 
-      2007, 
-      2007, 
-      2007, 
-      2007, 
-      2008, 
-      2008, 
-      2008, 
-      2008, 
-      2008, 
-      2008, 
-      2008, 
-      2008, 
-      2008, 
-      2008, 
-      2008, 
-      2008, 
-      2009, 
-      2009, 
-      2009, 
-      2009, 
-      2009, 
-      2009, 
-      2009, 
-      2009, 
-      2009, 
-      2009, 
-      2009, 
-      2009, 
-      2010, 
-      2010, 
-      2010, 
-      2010, 
-      2010, 
-      2010, 
-      2010, 
-      2010, 
-      2010, 
-      2010, 
-      2010, 
-      2010, 
-      2011, 
-      2011, 
-      2011, 
-      2011, 
-      2011, 
-      2011, 
-      2011, 
-      2011, 
-      2011, 
-      2011, 
-      2011, 
-      2011, 
-      2012, 
-      2012, 
-      2012, 
-      2012, 
-      2012, 
-      2012, 
-      2012, 
-      2012, 
-      2012, 
-      2012, 
-      2012, 
-      2012, 
-      2013, 
-      2013, 
-      2013, 
-      2013, 
-      2013, 
-      2013, 
-      2013, 
-      2013, 
-      2013, 
-      2013, 
-      2013, 
-      2013, 
-      2014, 
-      2014, 
-      2014, 
-      2014, 
-      2014, 
-      2014, 
-      2014, 
-      2014, 
-      2014, 
-      2014, 
-      2014, 
-      2014, 
-      2015, 
-      2015, 
-      2015, 
-      2015, 
-      2015, 
-      2015, 
-      2015, 
-      2015, 
-      2015, 
-      2015, 
-      2015, 
-      2015, 
-      2016
+      "2002", 
+      "2002", 
+      "2002", 
+      "2002", 
+      "2002", 
+      "2002", 
+      "2002", 
+      "2002", 
+      "2002", 
+      "2002", 
+      "2002", 
+      "2002", 
+      "2003", 
+      "2003", 
+      "2003", 
+      "2003", 
+      "2003", 
+      "2003", 
+      "2003", 
+      "2003", 
+      "2003", 
+      "2003", 
+      "2003", 
+      "2003", 
+      "2004", 
+      "2004", 
+      "2004", 
+      "2004", 
+      "2004", 
+      "2004", 
+      "2004", 
+      "2004", 
+      "2004", 
+      "2004", 
+      "2004", 
+      "2004", 
+      "2005", 
+      "2005", 
+      "2005", 
+      "2005", 
+      "2005", 
+      "2005", 
+      "2005", 
+      "2005", 
+      "2005", 
+      "2005", 
+      "2005", 
+      "2005", 
+      "2006", 
+      "2006", 
+      "2006", 
+      "2006", 
+      "2006", 
+      "2006", 
+      "2006", 
+      "2006", 
+      "2006", 
+      "2006", 
+      "2006", 
+      "2006", 
+      "2007", 
+      "2007", 
+      "2007", 
+      "2007", 
+      "2007", 
+      "2007", 
+      "2007", 
+      "2007", 
+      "2007", 
+      "2007", 
+      "2007", 
+      "2007", 
+      "2008", 
+      "2008", 
+      "2008", 
+      "2008", 
+      "2008", 
+      "2008", 
+      "2008", 
+      "2008", 
+      "2008", 
+      "2008", 
+      "2008", 
+      "2008", 
+      "2009", 
+      "2009", 
+      "2009", 
+      "2009", 
+      "2009", 
+      "2009", 
+      "2009", 
+      "2009", 
+      "2009", 
+      "2009", 
+      "2009", 
+      "2009", 
+      "2010", 
+      "2010", 
+      "2010", 
+      "2010", 
+      "2010", 
+      "2010", 
+      "2010", 
+      "2010", 
+      "2010", 
+      "2010", 
+      "2010", 
+      "2010", 
+      "2011", 
+      "2011", 
+      "2011", 
+      "2011", 
+      "2011", 
+      "2011", 
+      "2011", 
+      "2011", 
+      "2011", 
+      "2011", 
+      "2011", 
+      "2011", 
+      "2012", 
+      "2012", 
+      "2012", 
+      "2012", 
+      "2012", 
+      "2012", 
+      "2012", 
+      "2012", 
+      "2012", 
+      "2012", 
+      "2012", 
+      "2012", 
+      "2013", 
+      "2013", 
+      "2013", 
+      "2013", 
+      "2013", 
+      "2013", 
+      "2013", 
+      "2013", 
+      "2013", 
+      "2013", 
+      "2013", 
+      "2013", 
+      "2014", 
+      "2014", 
+      "2014", 
+      "2014", 
+      "2014", 
+      "2014", 
+      "2014", 
+      "2014", 
+      "2014", 
+      "2014", 
+      "2014", 
+      "2014", 
+      "2015", 
+      "2015", 
+      "2015", 
+      "2015", 
+      "2015", 
+      "2015", 
+      "2015", 
+      "2015", 
+      "2015", 
+      "2015", 
+      "2015", 
+      "2015", 
+      "2016"
     ], 
-    "name": "spending.[0].time.year", 
+    "name": "constructionspending.[0].time.year", 
     "pretty": "Time: Year", 
-    "index": false
+    "index": true
   }, 
   "annual.public.conservation and development": {
     "type": "number", 
@@ -7252,7 +7252,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       6784, 
       7483
     ], 
-    "name": "spending.[0].annual.public.conservation and development", 
+    "name": "constructionspending.[0].annual.public.conservation and development", 
     "pretty": "Annual Public: Conservation And Development", 
     "index": false
   }, 
@@ -7429,7 +7429,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       20770, 
       20918
     ], 
-    "name": "spending.[0].annual.combined.amusement and recreation", 
+    "name": "constructionspending.[0].annual.combined.amusement and recreation", 
     "pretty": "Annual Combined: Amusement And Recreation", 
     "index": false
   }, 
@@ -7606,7 +7606,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       24385, 
       25353
     ], 
-    "name": "spending.[0].annual.public.sewage and waste disposal", 
+    "name": "constructionspending.[0].annual.public.sewage and waste disposal", 
     "pretty": "Annual Public: Sewage And Waste Disposal", 
     "index": false
   }, 
@@ -7783,7 +7783,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       12374, 
       12624
     ], 
-    "name": "spending.[0].annual.combined.water supply", 
+    "name": "constructionspending.[0].annual.combined.water supply", 
     "pretty": "Annual Combined: Water Supply", 
     "index": false
   }, 
@@ -7960,7 +7960,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].current.public.communication", 
+    "name": "constructionspending.[0].current.public.communication", 
     "pretty": "Current Public: Communication", 
     "index": false
   }, 
@@ -8137,7 +8137,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       10343, 
       10425
     ], 
-    "name": "spending.[0].annual.private.amusement and recreation", 
+    "name": "constructionspending.[0].annual.private.amusement and recreation", 
     "pretty": "Annual Private: Amusement And Recreation", 
     "index": false
   }, 
@@ -8314,7 +8314,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       12275, 
       12426
     ], 
-    "name": "spending.[0].annual.public.water supply", 
+    "name": "constructionspending.[0].annual.public.water supply", 
     "pretty": "Annual Public: Water Supply", 
     "index": false
   }, 
@@ -8491,7 +8491,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       1930, 
       1703
     ], 
-    "name": "spending.[0].current.combined.sewage and waste disposal", 
+    "name": "constructionspending.[0].current.combined.sewage and waste disposal", 
     "pretty": "Current Combined: Sewage And Waste Disposal", 
     "index": false
   }, 
@@ -8668,7 +8668,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       31812, 
       30629
     ], 
-    "name": "spending.[0].annual.public.transportation", 
+    "name": "constructionspending.[0].annual.public.transportation", 
     "pretty": "Annual Public: Transportation", 
     "index": false
   }, 
@@ -8845,7 +8845,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       1913, 
       1688
     ], 
-    "name": "spending.[0].current.public.sewage and waste disposal", 
+    "name": "constructionspending.[0].current.public.sewage and waste disposal", 
     "pretty": "Current Public: Sewage And Waste Disposal", 
     "index": false
   }, 
@@ -9022,7 +9022,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       52013, 
       52435
     ], 
-    "name": "spending.[0].annual.private.office", 
+    "name": "constructionspending.[0].annual.private.office", 
     "pretty": "Annual Private: Office", 
     "index": false
   }, 
@@ -9199,7 +9199,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       21842, 
       23303
     ], 
-    "name": "spending.[0].annual.private.lodging", 
+    "name": "constructionspending.[0].annual.private.lodging", 
     "pretty": "Annual Private: Lodging", 
     "index": false
   }, 
@@ -9376,7 +9376,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       684481, 
       701883
     ], 
-    "name": "spending.[0].annual.combined.nonresidential", 
+    "name": "constructionspending.[0].annual.combined.nonresidential", 
     "pretty": "Annual Combined: Nonresidential", 
     "index": false
   }, 
@@ -9553,7 +9553,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].current.public.religious", 
+    "name": "constructionspending.[0].current.public.religious", 
     "pretty": "Current Public: Religious", 
     "index": false
   }, 
@@ -9730,7 +9730,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       2509, 
       2099
     ], 
-    "name": "spending.[0].current.public.transportation", 
+    "name": "constructionspending.[0].current.public.transportation", 
     "pretty": "Current Public: Transportation", 
     "index": false
   }, 
@@ -9907,7 +9907,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].annual.private.highway and street", 
+    "name": "constructionspending.[0].annual.private.highway and street", 
     "pretty": "Annual Private: Highway And Street", 
     "index": false
   }, 
@@ -10084,7 +10084,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       827345, 
       831405
     ], 
-    "name": "spending.[0].annual.private.total construction", 
+    "name": "constructionspending.[0].annual.private.total construction", 
     "pretty": "Annual Private: Total Construction", 
     "index": false
   }, 
@@ -10261,7 +10261,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       33312, 
       29791
     ], 
-    "name": "spending.[0].current.private.nonresidential", 
+    "name": "constructionspending.[0].current.private.nonresidential", 
     "pretty": "Current Private: Nonresidential", 
     "index": false
   }, 
@@ -10438,7 +10438,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       22576, 
       21635
     ], 
-    "name": "spending.[0].annual.combined.communication", 
+    "name": "constructionspending.[0].annual.combined.communication", 
     "pretty": "Annual Combined: Communication", 
     "index": false
   }, 
@@ -10615,7 +10615,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       2507, 
       2311
     ], 
-    "name": "spending.[0].current.private.health care", 
+    "name": "constructionspending.[0].current.private.health care", 
     "pretty": "Current Private: Health Care", 
     "index": false
   }, 
@@ -10792,7 +10792,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       439017, 
       438958
     ], 
-    "name": "spending.[0].annual.combined.residential", 
+    "name": "constructionspending.[0].annual.combined.residential", 
     "pretty": "Annual Combined: Residential", 
     "index": false
   }, 
@@ -10969,7 +10969,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       5909, 
       5794
     ], 
-    "name": "spending.[0].annual.public.residential", 
+    "name": "constructionspending.[0].annual.public.residential", 
     "pretty": "Annual Public: Residential", 
     "index": false
   }, 
@@ -11146,7 +11146,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       6874, 
       7559
     ], 
-    "name": "spending.[0].annual.combined.conservation and development", 
+    "name": "constructionspending.[0].annual.combined.conservation and development", 
     "pretty": "Annual Combined: Conservation And Development", 
     "index": false
   }, 
@@ -11323,7 +11323,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       691, 
       635
     ], 
-    "name": "spending.[0].current.combined.public safety", 
+    "name": "constructionspending.[0].current.combined.public safety", 
     "pretty": "Current Combined: Public Safety", 
     "index": false
   }, 
@@ -11500,7 +11500,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       22203, 
       23600
     ], 
-    "name": "spending.[0].annual.combined.lodging", 
+    "name": "constructionspending.[0].annual.combined.lodging", 
     "pretty": "Annual Combined: Lodging", 
     "index": false
   }, 
@@ -11677,7 +11677,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].current.private.water supply", 
+    "name": "constructionspending.[0].current.private.water supply", 
     "pretty": "Current Private: Water Supply", 
     "index": false
   }, 
@@ -11854,7 +11854,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       6041, 
       5023
     ], 
-    "name": "spending.[0].current.combined.highway and street", 
+    "name": "constructionspending.[0].current.combined.highway and street", 
     "pretty": "Current Combined: Highway And Street", 
     "index": false
   }, 
@@ -12031,7 +12031,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       79065, 
       82358
     ], 
-    "name": "spending.[0].annual.combined.manufacturing", 
+    "name": "constructionspending.[0].annual.combined.manufacturing", 
     "pretty": "Annual Combined: Manufacturing", 
     "index": false
   }, 
@@ -12208,7 +12208,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].current.public.lodging", 
+    "name": "constructionspending.[0].current.public.lodging", 
     "pretty": "Current Public: Lodging", 
     "index": false
   }, 
@@ -12385,7 +12385,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       8969, 
       8524
     ], 
-    "name": "spending.[0].annual.public.health care", 
+    "name": "constructionspending.[0].annual.public.health care", 
     "pretty": "Annual Public: Health Care", 
     "index": false
   }, 
@@ -12562,7 +12562,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       5234, 
       4546
     ], 
-    "name": "spending.[0].current.private.commercial", 
+    "name": "constructionspending.[0].current.private.commercial", 
     "pretty": "Current Private: Commercial", 
     "index": false
   }, 
@@ -12739,7 +12739,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].annual.public.communication", 
+    "name": "constructionspending.[0].annual.public.communication", 
     "pretty": "Annual Public: Communication", 
     "index": false
   }, 
@@ -12916,7 +12916,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       2208, 
       1409
     ], 
-    "name": "spending.[0].current.combined.communication", 
+    "name": "constructionspending.[0].current.combined.communication", 
     "pretty": "Current Combined: Communication", 
     "index": false
   }, 
@@ -13093,7 +13093,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       96553, 
       110677
     ], 
-    "name": "spending.[0].annual.combined.highway and street", 
+    "name": "constructionspending.[0].annual.combined.highway and street", 
     "pretty": "Annual Combined: Highway And Street", 
     "index": false
   }, 
@@ -13270,7 +13270,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].annual.private.water supply", 
+    "name": "constructionspending.[0].annual.private.water supply", 
     "pretty": "Annual Private: Water Supply", 
     "index": false
   }, 
@@ -13447,7 +13447,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].annual.private.public safety", 
+    "name": "constructionspending.[0].annual.private.public safety", 
     "pretty": "Annual Private: Public Safety", 
     "index": false
   }, 
@@ -13624,7 +13624,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].current.private.public safety", 
+    "name": "constructionspending.[0].current.private.public safety", 
     "pretty": "Current Private: Public Safety", 
     "index": false
   }, 
@@ -13801,7 +13801,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       24598, 
       25583
     ], 
-    "name": "spending.[0].annual.combined.sewage and waste disposal", 
+    "name": "constructionspending.[0].annual.combined.sewage and waste disposal", 
     "pretty": "Annual Combined: Sewage And Waste Disposal", 
     "index": false
   }, 
@@ -13978,7 +13978,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       9286, 
       9748
     ], 
-    "name": "spending.[0].annual.public.power", 
+    "name": "constructionspending.[0].annual.public.power", 
     "pretty": "Annual Public: Power", 
     "index": false
   }, 
@@ -14155,7 +14155,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       30296, 
       30685
     ], 
-    "name": "spending.[0].annual.private.health care", 
+    "name": "constructionspending.[0].annual.private.health care", 
     "pretty": "Annual Private: Health Care", 
     "index": false
   }, 
@@ -14332,7 +14332,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       1853, 
       1789
     ], 
-    "name": "spending.[0].current.private.lodging", 
+    "name": "constructionspending.[0].current.private.lodging", 
     "pretty": "Current Private: Lodging", 
     "index": false
   }, 
@@ -14509,7 +14509,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       255, 
       242
     ], 
-    "name": "spending.[0].current.combined.religious", 
+    "name": "constructionspending.[0].current.combined.religious", 
     "pretty": "Current Combined: Religious", 
     "index": false
   }, 
@@ -14686,7 +14686,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       8399, 
       8276
     ], 
-    "name": "spending.[0].annual.combined.public safety", 
+    "name": "constructionspending.[0].annual.combined.public safety", 
     "pretty": "Annual Combined: Public Safety", 
     "index": false
   }, 
@@ -14863,7 +14863,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       6356, 
       5887
     ], 
-    "name": "spending.[0].current.combined.educational", 
+    "name": "constructionspending.[0].current.combined.educational", 
     "pretty": "Current Combined: Educational", 
     "index": false
   }, 
@@ -15040,7 +15040,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       4914, 
       4547
     ], 
-    "name": "spending.[0].current.combined.office", 
+    "name": "constructionspending.[0].current.combined.office", 
     "pretty": "Current Combined: Office", 
     "index": false
   }, 
@@ -15217,7 +15217,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       39265, 
       39209
     ], 
-    "name": "spending.[0].annual.combined.health care", 
+    "name": "constructionspending.[0].annual.combined.health care", 
     "pretty": "Annual Combined: Health Care", 
     "index": false
   }, 
@@ -15394,7 +15394,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       227, 
       212
     ], 
-    "name": "spending.[0].current.public.commercial", 
+    "name": "constructionspending.[0].current.public.commercial", 
     "pretty": "Current Public: Commercial", 
     "index": false
   }, 
@@ -15571,7 +15571,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       945, 
       899
     ], 
-    "name": "spending.[0].current.combined.water supply", 
+    "name": "constructionspending.[0].current.combined.water supply", 
     "pretty": "Current Combined: Water Supply", 
     "index": false
   }, 
@@ -15748,7 +15748,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       3248, 
       2968
     ], 
-    "name": "spending.[0].current.combined.health care", 
+    "name": "constructionspending.[0].current.combined.health care", 
     "pretty": "Current Combined: Health Care", 
     "index": false
   }, 
@@ -15925,7 +15925,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       3082, 
       3211
     ], 
-    "name": "spending.[0].annual.combined.religious", 
+    "name": "constructionspending.[0].annual.combined.religious", 
     "pretty": "Annual Combined: Religious", 
     "index": false
   }, 
@@ -16102,7 +16102,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       728, 
       670
     ], 
-    "name": "spending.[0].current.public.power", 
+    "name": "constructionspending.[0].current.public.power", 
     "pretty": "Current Public: Power", 
     "index": false
   }, 
@@ -16279,7 +16279,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       4973, 
       4567
     ], 
-    "name": "spending.[0].current.public.educational", 
+    "name": "constructionspending.[0].current.public.educational", 
     "pretty": "Current Public: Educational", 
     "index": false
   }, 
@@ -16456,7 +16456,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       77377, 
       79453
     ], 
-    "name": "spending.[0].annual.private.power", 
+    "name": "constructionspending.[0].annual.private.power", 
     "pretty": "Annual Private: Power", 
     "index": false
   }, 
@@ -16633,7 +16633,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].current.private.sewage and waste disposal", 
+    "name": "constructionspending.[0].current.private.sewage and waste disposal", 
     "pretty": "Current Private: Sewage And Waste Disposal", 
     "index": false
   }, 
@@ -16810,7 +16810,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       32378, 
       29521
     ], 
-    "name": "spending.[0].current.combined.residential", 
+    "name": "constructionspending.[0].current.combined.residential", 
     "pretty": "Current Combined: Residential", 
     "index": false
   }, 
@@ -16987,7 +16987,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       3076, 
       3211
     ], 
-    "name": "spending.[0].annual.private.religious", 
+    "name": "constructionspending.[0].annual.private.religious", 
     "pretty": "Annual Private: Religious", 
     "index": false
   }, 
@@ -17164,7 +17164,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       580, 
       531
     ], 
-    "name": "spending.[0].current.combined.conservation and development", 
+    "name": "constructionspending.[0].current.combined.conservation and development", 
     "pretty": "Current Combined: Conservation And Development", 
     "index": false
   }, 
@@ -17341,7 +17341,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       394237, 
       398241
     ], 
-    "name": "spending.[0].annual.private.nonresidential", 
+    "name": "constructionspending.[0].annual.private.nonresidential", 
     "pretty": "Annual Private: Nonresidential", 
     "index": false
   }, 
@@ -17518,7 +17518,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       59816, 
       59909
     ], 
-    "name": "spending.[0].annual.combined.office", 
+    "name": "constructionspending.[0].annual.combined.office", 
     "pretty": "Annual Combined: Office", 
     "index": false
   }, 
@@ -17695,7 +17695,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       254, 
       242
     ], 
-    "name": "spending.[0].current.private.religious", 
+    "name": "constructionspending.[0].current.private.religious", 
     "pretty": "Current Private: Religious", 
     "index": false
   }, 
@@ -17872,7 +17872,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       168, 
       169
     ], 
-    "name": "spending.[0].time.index", 
+    "name": "constructionspending.[0].time.index", 
     "pretty": "Time: Index", 
     "index": false
   }, 
@@ -18049,7 +18049,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       8203, 
       8225
     ], 
-    "name": "spending.[0].annual.public.public safety", 
+    "name": "constructionspending.[0].annual.public.public safety", 
     "pretty": "Annual Public: Public Safety", 
     "index": false
   }, 
@@ -18226,7 +18226,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].annual.public.lodging", 
+    "name": "constructionspending.[0].annual.public.lodging", 
     "pretty": "Annual Public: Lodging", 
     "index": false
   }, 
@@ -18403,7 +18403,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       20838, 
       18273
     ], 
-    "name": "spending.[0].current.public.nonresidential", 
+    "name": "constructionspending.[0].current.public.nonresidential", 
     "pretty": "Current Public: Nonresidential", 
     "index": false
   }, 
@@ -18580,7 +18580,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       66619, 
       63450
     ], 
-    "name": "spending.[0].annual.private.commercial", 
+    "name": "constructionspending.[0].annual.private.commercial", 
     "pretty": "Annual Private: Commercial", 
     "index": false
   }, 
@@ -18757,7 +18757,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       70118, 
       68819
     ], 
-    "name": "spending.[0].annual.public.educational", 
+    "name": "constructionspending.[0].annual.public.educational", 
     "pretty": "Annual Public: Educational", 
     "index": false
   }, 
@@ -18934,7 +18934,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       86663, 
       89201
     ], 
-    "name": "spending.[0].annual.combined.power", 
+    "name": "constructionspending.[0].annual.combined.power", 
     "pretty": "Annual Combined: Power", 
     "index": false
   }, 
@@ -19111,7 +19111,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       88196, 
       87195
     ], 
-    "name": "spending.[0].annual.combined.educational", 
+    "name": "constructionspending.[0].annual.combined.educational", 
     "pretty": "Annual Combined: Educational", 
     "index": false
   }, 
@@ -19288,7 +19288,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       467, 
       396
     ], 
-    "name": "spending.[0].current.public.residential", 
+    "name": "constructionspending.[0].current.public.residential", 
     "pretty": "Current Public: Residential", 
     "index": false
   }, 
@@ -19465,7 +19465,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       21305, 
       18669
     ], 
-    "name": "spending.[0].current.public.total construction", 
+    "name": "constructionspending.[0].current.public.total construction", 
     "pretty": "Current Public: Total Construction", 
     "index": false
   }, 
@@ -19642,7 +19642,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       65223, 
       58916
     ], 
-    "name": "spending.[0].current.private.total construction", 
+    "name": "constructionspending.[0].current.private.total construction", 
     "pretty": "Current Private: Total Construction", 
     "index": false
   }, 
@@ -19819,7 +19819,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].current.public.manufacturing", 
+    "name": "constructionspending.[0].current.public.manufacturing", 
     "pretty": "Current Public: Manufacturing", 
     "index": false
   }, 
@@ -19996,7 +19996,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       1638, 
       1495
     ], 
-    "name": "spending.[0].current.combined.amusement and recreation", 
+    "name": "constructionspending.[0].current.combined.amusement and recreation", 
     "pretty": "Current Combined: Amusement And Recreation", 
     "index": false
   }, 
@@ -20173,7 +20173,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       31911, 
       29125
     ], 
-    "name": "spending.[0].current.private.residential", 
+    "name": "constructionspending.[0].current.private.residential", 
     "pretty": "Current Private: Residential", 
     "index": false
   }, 
@@ -20350,7 +20350,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       0, 
       0
     ], 
-    "name": "spending.[0].annual.private.conservation and development", 
+    "name": "constructionspending.[0].annual.private.conservation and development", 
     "pretty": "Annual Private: Conservation And Development", 
     "index": false
   }, 
@@ -20527,7 +20527,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       822, 
       805
     ], 
-    "name": "spending.[0].current.private.amusement and recreation", 
+    "name": "constructionspending.[0].current.private.amusement and recreation", 
     "pretty": "Current Private: Amusement And Recreation", 
     "index": false
   }, 
@@ -20704,7 +20704,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       572, 
       525
     ], 
-    "name": "spending.[0].current.public.conservation and development", 
+    "name": "constructionspending.[0].current.public.conservation and development", 
     "pretty": "Current Public: Conservation And Development", 
     "index": false
   }, 
@@ -20881,7 +20881,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       290244, 
       303643
     ], 
-    "name": "spending.[0].annual.public.nonresidential", 
+    "name": "constructionspending.[0].annual.public.nonresidential", 
     "pretty": "Annual Public: Nonresidential", 
     "index": false
   }, 
@@ -21058,7 +21058,7 @@ _IMPORTED_DATASETS['constructionspending'] = {
       1883, 
       1814
     ], 
-    "name": "spending.[0].current.combined.lodging", 
+    "name": "constructionspending.[0].current.combined.lodging", 
     "pretty": "Current Combined: Lodging", 
     "index": false
   }

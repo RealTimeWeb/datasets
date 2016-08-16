@@ -1,15 +1,15 @@
 
 
-var INDEXES = [
+var classics_INDEXES = [
     ["(None)", "(None)"],
     
-    ["Name", "Name"] 
+    ["name", "name"] 
 ];
 
-var INDEX_VALUES = {
+var classics_INDEX_VALUES = {
     "(None)": [],
     
-    "Name": [
+    "name": [
         
         ["Abbott, Edwin Abbott", "Abbott, Edwin Abbott"] ,
         ["Aesop", "Aesop"] ,
@@ -37,15 +37,17 @@ var INDEX_VALUES = {
         ["Baldwin, James", "Baldwin, James"] ,
         ["Balfour, Lady Frances", "Balfour, Lady Frances"] ,
         ["Ballantyne, R. M. (Robert Michael)", "Ballantyne, R. M. (Robert Michael)"] ,
-        ["Balzac, Honor de", "Balzac, Honor de"] ,
+        ["Balzac, Honore de", "Balzac, Honore de"] ,
+        ["Bannerman, Helen", "Bannerman, Helen"] ,
         ["Barnum, P. T. (Phineas Taylor)", "Barnum, P. T. (Phineas Taylor)"] ,
         ["Barr, Stephen", "Barr, Stephen"] ,
         ["Barrie, J. M. (James Matthew)", "Barrie, J. M. (James Matthew)"] ,
         ["Baudelaire, Charles", "Baudelaire, Charles"] ,
         ["Baum, L. Frank (Lyman Frank)", "Baum, L. Frank (Lyman Frank)"] ,
-        ["Bdier, Joseph", "Bdier, Joseph"] ,
         ["Bede, the Venerable, Saint", "Bede, the Venerable, Saint"] ,
+        ["Bedier, Joseph", "Bedier, Joseph"] ,
         ["Beethoven, Ludwig van", "Beethoven, Ludwig van"] ,
+        ["Beeton, Mrs. (Isabella Mary)", "Beeton, Mrs. (Isabella Mary)"] ,
         ["Behn, Aphra", "Behn, Aphra"] ,
         ["Bellamy, Edward", "Bellamy, Edward"] ,
         ["Belloc, Hilaire", "Belloc, Hilaire"] ,
@@ -74,9 +76,9 @@ var INDEX_VALUES = {
         ["Bradford, William", "Bradford, William"] ,
         ["Bradley, A. C. (Andrew Cecil)", "Bradley, A. C. (Andrew Cecil)"] ,
         ["Bridges, Calvin B. (Calvin Blackman)", "Bridges, Calvin B. (Calvin Blackman)"] ,
-        ["Bront, Anne", "Bront, Anne"] ,
-        ["Bront, Charlotte", "Bront, Charlotte"] ,
-        ["Bront, Emily", "Bront, Emily"] ,
+        ["Bronte, Anne", "Bronte, Anne"] ,
+        ["Bronte, Charlotte", "Bronte, Charlotte"] ,
+        ["Bronte, Emily", "Bronte, Emily"] ,
         ["Brooke, L. Leslie (Leonard Leslie)", "Brooke, L. Leslie (Leonard Leslie)"] ,
         ["Browning, Elizabeth Barrett", "Browning, Elizabeth Barrett"] ,
         ["Browning, Robert", "Browning, Robert"] ,
@@ -88,12 +90,12 @@ var INDEX_VALUES = {
         ["Burton, Robert", "Burton, Robert"] ,
         ["Byron, George Gordon Byron, Baron", "Byron, George Gordon Byron, Baron"] ,
         ["Caesar, Julius", "Caesar, Julius"] ,
-        ["Caldern de la Barca, Pedro", "Caldern de la Barca, Pedro"] ,
+        ["Calderon de la Barca, Pedro", "Calderon de la Barca, Pedro"] ,
         ["Cao, Xueqin", "Cao, Xueqin"] ,
         ["Carlyle, Thomas", "Carlyle, Thomas"] ,
         ["Carnegie, Andrew", "Carnegie, Andrew"] ,
         ["Carroll, Lewis", "Carroll, Lewis"] ,
-        ["Casas, Bartolom de las", "Casas, Bartolom de las"] ,
+        ["Casas, Bartolome de las", "Casas, Bartolome de las"] ,
         ["Castle, Egerton", "Castle, Egerton"] ,
         ["Cather, Willa", "Cather, Willa"] ,
         ["Cervantes Saavedra, Miguel de", "Cervantes Saavedra, Miguel de"] ,
@@ -103,8 +105,9 @@ var INDEX_VALUES = {
         ["Chekhov, Anton Pavlovich", "Chekhov, Anton Pavlovich"] ,
         ["Chesterfield, Philip Dormer Stanhope, Earl of", "Chesterfield, Philip Dormer Stanhope, Earl of"] ,
         ["Chesterton, G. K. (Gilbert Keith)", "Chesterton, G. K. (Gilbert Keith)"] ,
+        ["Chopin, Kate", "Chopin, Kate"] ,
+        ["Chretien, de Troyes, active 12th century", "Chretien, de Troyes, active 12th century"] ,
         ["Christie, Agatha", "Christie, Agatha"] ,
-        ["Chrtien, de Troyes, active 12th century", "Chrtien, de Troyes, active 12th century"] ,
         ["Cicero, Marcus Tullius", "Cicero, Marcus Tullius"] ,
         ["Claudianus, Claudius", "Claudianus, Claudius"] ,
         ["Clausewitz, Carl von", "Clausewitz, Carl von"] ,
@@ -119,6 +122,7 @@ var INDEX_VALUES = {
         ["Conrad, Joseph", "Conrad, Joseph"] ,
         ["Cook, James", "Cook, James"] ,
         ["Cook, John R.", "Cook, John R."] ,
+        ["Cooper, James Fenimore", "Cooper, James Fenimore"] ,
         ["Coppel, Alfred", "Coppel, Alfred"] ,
         ["Craig, Austin", "Craig, Austin"] ,
         ["Crane, Stephen", "Crane, Stephen"] ,
@@ -129,11 +133,12 @@ var INDEX_VALUES = {
         ["Dasgupta, Surendranath", "Dasgupta, Surendranath"] ,
         ["Davies, W. H. (William Henry)", "Davies, W. H. (William Henry)"] ,
         ["Davis, Rebecca Harding", "Davis, Rebecca Harding"] ,
-        ["Daz del Castillo, Bernal", "Daz del Castillo, Bernal"] ,
         ["De Quincey, Thomas", "De Quincey, Thomas"] ,
+        ["De Vet, Charles V. (Charles Vincent)", "De Vet, Charles V. (Charles Vincent)"] ,
         ["Defoe, Daniel", "Defoe, Daniel"] ,
         ["Dehan, Richard", "Dehan, Richard"] ,
         ["Dewey, John", "Dewey, John"] ,
+        ["Diaz del Castillo, Bernal", "Diaz del Castillo, Bernal"] ,
         ["Dick, Philip K.", "Dick, Philip K."] ,
         ["Dickens, Charles", "Dickens, Charles"] ,
         ["Dickinson, Emily", "Dickinson, Emily"] ,
@@ -148,7 +153,8 @@ var INDEX_VALUES = {
         ["Dumas, Alexandre", "Dumas, Alexandre"] ,
         ["Dunbar, Paul Laurence", "Dunbar, Paul Laurence"] ,
         ["Duncan, A. W.", "Duncan, A. W."] ,
-        ["Durkheim, mile", "Durkheim, mile"] ,
+        ["Durkheim, Emile", "Durkheim, Emile"] ,
+        ["Edwards, Jonathan", "Edwards, Jonathan"] ,
         ["Einstein, Albert", "Einstein, Albert"] ,
         ["Eliot, George", "Eliot, George"] ,
         ["Eliot, T. S. (Thomas Stearns)", "Eliot, T. S. (Thomas Stearns)"] ,
@@ -158,6 +164,7 @@ var INDEX_VALUES = {
         ["Emerson, Ralph Waldo", "Emerson, Ralph Waldo"] ,
         ["Engels, Friedrich", "Engels, Friedrich"] ,
         ["Ennis, William Duane", "Ennis, William Duane"] ,
+        ["Epictetus", "Epictetus"] ,
         ["Equiano, Olaudah", "Equiano, Olaudah"] ,
         ["Erasmus, Desiderius", "Erasmus, Desiderius"] ,
         ["Esenwein, J. Berg (Joseph Berg)", "Esenwein, J. Berg (Joseph Berg)"] ,
@@ -202,7 +209,8 @@ var INDEX_VALUES = {
         ["Grimm, Wilhelm", "Grimm, Wilhelm"] ,
         ["Grose, Francis", "Grose, Francis"] ,
         ["Grossmith, Weedon", "Grossmith, Weedon"] ,
-        ["Guerber, H. A. (Hlne Adeline)", "Guerber, H. A. (Hlne Adeline)"] ,
+        ["Guerber, H. A. (Helene Adeline)", "Guerber, H. A. (Helene Adeline)"] ,
+        ["Hafiz, 14th cent.", "Hafiz, 14th cent."] ,
         ["Haggard, H. Rider (Henry Rider)", "Haggard, H. Rider (Henry Rider)"] ,
         ["Haggert, W. T.", "Haggert, W. T."] ,
         ["Hall, Jennie", "Hall, Jennie"] ,
@@ -218,13 +226,12 @@ var INDEX_VALUES = {
         ["Hawthorne, Nathaniel", "Hawthorne, Nathaniel"] ,
         ["Hazelton, Harry", "Hazelton, Harry"] ,
         ["Hegel, Georg Wilhelm Friedrich", "Hegel, Georg Wilhelm Friedrich"] ,
+        ["Heloise", "Heloise"] ,
         ["Henry, O.", "Henry, O."] ,
         ["Herodotus", "Herodotus"] ,
         ["Hesiod", "Hesiod"] ,
         ["Hesse, Hermann", "Hesse, Hermann"] ,
-        ["Hfiz, 14th cent.", "Hfiz, 14th cent."] ,
         ["Hill, John A. (John Alexander)", "Hill, John A. (John Alexander)"] ,
-        ["Hlose", "Hlose"] ,
         ["Hobbes, Thomas", "Hobbes, Thomas"] ,
         ["Hodgson, William Hope", "Hodgson, William Hope"] ,
         ["Hoffmann, Heinrich", "Hoffmann, Heinrich"] ,
@@ -237,6 +244,7 @@ var INDEX_VALUES = {
         ["Hoover, Thomas", "Hoover, Thomas"] ,
         ["Hotten, John Camden", "Hotten, John Camden"] ,
         ["Housman, A. E. (Alfred Edward)", "Housman, A. E. (Alfred Edward)"] ,
+        ["Housman, Laurence", "Housman, Laurence"] ,
         ["Hugo, Victor", "Hugo, Victor"] ,
         ["Hume, David", "Hume, David"] ,
         ["Huysmans, J.-K. (Joris-Karl)", "Huysmans, J.-K. (Joris-Karl)"] ,
@@ -255,14 +263,14 @@ var INDEX_VALUES = {
         ["Jermain, Frances", "Jermain, Frances"] ,
         ["Jerome, Jerome K. (Jerome Klapka)", "Jerome, Jerome K. (Jerome Klapka)"] ,
         ["Jewitt, Llewellynn Frederick William", "Jewitt, Llewellynn Frederick William"] ,
-        ["Jimnez, Juan Ramn", "Jimnez, Juan Ramn"] ,
-        ["Jnger, Ernst", "Jnger, Ernst"] ,
+        ["Jimenez, Juan Ramon", "Jimenez, Juan Ramon"] ,
         ["Johnson, James Weldon", "Johnson, James Weldon"] ,
         ["Johnson, Samuel", "Johnson, Samuel"] ,
         ["Jonson, Ben", "Jonson, Ben"] ,
         ["Jordan, William George", "Jordan, William George"] ,
         ["Josephus, Flavius", "Josephus, Flavius"] ,
         ["Joyce, James", "Joyce, James"] ,
+        ["Junger, Ernst", "Junger, Ernst"] ,
         ["Kafka, Franz", "Kafka, Franz"] ,
         ["Kant, Immanuel", "Kant, Immanuel"] ,
         ["Keller, Helen", "Keller, Helen"] ,
@@ -275,7 +283,7 @@ var INDEX_VALUES = {
         ["Knowles, James, Sir", "Knowles, James, Sir"] ,
         ["Kornbluth, C. M. (Cyril M.)", "Kornbluth, C. M. (Cyril M.)"] ,
         ["Kurtz, J. H. (Johann Heinrich)", "Kurtz, J. H. (Johann Heinrich)"] ,
-        ["La Rochefoucauld, Franois duc de", "La Rochefoucauld, Franois duc de"] ,
+        ["La Rochefoucauld, Francois duc de", "La Rochefoucauld, Francois duc de"] ,
         ["Lang, Andrew", "Lang, Andrew"] ,
         ["Lanier, Sidney", "Lanier, Sidney"] ,
         ["Laozi", "Laozi"] ,
@@ -305,12 +313,13 @@ var INDEX_VALUES = {
         ["Loti, Pierre", "Loti, Pierre"] ,
         ["Lovecraft, H. P. (Howard Phillips)", "Lovecraft, H. P. (Howard Phillips)"] ,
         ["Luce, Edmund", "Luce, Edmund"] ,
+        ["Ludwig, Edward W.", "Ludwig, Edward W."] ,
         ["Macadam, Robert K.", "Macadam, Robert K."] ,
         ["MacCulloch, J. A. (John Arnott)", "MacCulloch, J. A. (John Arnott)"] ,
         ["MacDonald, George", "MacDonald, George"] ,
         ["Macfarlane, Wallace", "Macfarlane, Wallace"] ,
         ["Machen, Arthur", "Machen, Arthur"] ,
-        ["Machiavelli, Niccol", "Machiavelli, Niccol"] ,
+        ["Machiavelli, Niccolo", "Machiavelli, Niccolo"] ,
         ["Mackay, Charles", "Mackay, Charles"] ,
         ["Mackay, Helen", "Mackay, Helen"] ,
         ["Mackenzie, Alexander", "Mackenzie, Alexander"] ,
@@ -335,14 +344,14 @@ var INDEX_VALUES = {
         ["Miller, R. DeWitt", "Miller, R. DeWitt"] ,
         ["Milne, A. A. (Alan Alexander)", "Milne, A. A. (Alan Alexander)"] ,
         ["Milton, John", "Milton, John"] ,
-        ["Mller, F. Max (Friedrich Max)", "Mller, F. Max (Friedrich Max)"] ,
-        ["Molire", "Molire"] ,
+        ["Moliere", "Moliere"] ,
         ["Montaigne, Michel de", "Montaigne, Michel de"] ,
         ["Montessori, Maria", "Montessori, Maria"] ,
         ["Montgomery, L. M. (Lucy Maud)", "Montgomery, L. M. (Lucy Maud)"] ,
         ["More, Thomas, Saint", "More, Thomas, Saint"] ,
         ["Morse, Katharine Duncan", "Morse, Katharine Duncan"] ,
         ["Mozart, Wolfgang Amadeus", "Mozart, Wolfgang Amadeus"] ,
+        ["Muller, F. Max (Friedrich Max)", "Muller, F. Max (Friedrich Max)"] ,
         ["Murray, Charles Theodore", "Murray, Charles Theodore"] ,
         ["Nesbit, E. (Edith)", "Nesbit, E. (Edith)"] ,
         ["Neville, Kris", "Neville, Kris"] ,
@@ -350,7 +359,7 @@ var INDEX_VALUES = {
         ["Newton, Isaac, Sir", "Newton, Isaac, Sir"] ,
         ["Nicomedia, Arrian of", "Nicomedia, Arrian of"] ,
         ["Nietzsche, Friedrich Wilhelm", "Nietzsche, Friedrich Wilhelm"] ,
-        ["No Author Available", "No Author Available"] ,
+        ["Nitobe, Inazo", "Nitobe, Inazo"] ,
         ["Noe, Sydney P.", "Noe, Sydney P."] ,
         ["Norris, Frank", "Norris, Frank"] ,
         ["Northup, Solomon", "Northup, Solomon"] ,
@@ -361,11 +370,13 @@ var INDEX_VALUES = {
         ["Ossendowski, Ferdynand Antoni", "Ossendowski, Ferdynand Antoni"] ,
         ["Ouida", "Ouida"] ,
         ["Ovid", "Ovid"] ,
+        ["Oxley, J. Macdonald (James Macdonald)", "Oxley, J. Macdonald (James Macdonald)"] ,
         ["Ozaki, Yei Theodora", "Ozaki, Yei Theodora"] ,
         ["Paine, Thomas", "Paine, Thomas"] ,
         ["Pangborn, Edgar", "Pangborn, Edgar"] ,
+        ["Pankhurst, Emmeline", "Pankhurst, Emmeline"] ,
         ["Pascal, Blaise", "Pascal, Blaise"] ,
-        ["Patajali", "Patajali"] ,
+        ["Patanjali", "Patanjali"] ,
         ["Pearson, Emily Clemens", "Pearson, Emily Clemens"] ,
         ["Percival, Kate", "Percival, Kate"] ,
         ["Perrault, Charles", "Perrault, Charles"] ,
@@ -386,7 +397,8 @@ var INDEX_VALUES = {
         ["Purdom, Tom", "Purdom, Tom"] ,
         ["Pyle, Howard", "Pyle, Howard"] ,
         ["Quattrocchi, Frank", "Quattrocchi, Frank"] ,
-        ["Rabelais, Franois", "Rabelais, Franois"] ,
+        ["Rabelais, Francois", "Rabelais, Francois"] ,
+        ["Racine, Jean", "Racine, Jean"] ,
         ["Radcliffe, Ann Ward", "Radcliffe, Ann Ward"] ,
         ["Rand, Ayn", "Rand, Ayn"] ,
         ["Record, Samuel J. (Samuel James)", "Record, Samuel J. (Samuel James)"] ,
@@ -394,7 +406,7 @@ var INDEX_VALUES = {
         ["Richardson, Samuel", "Richardson, Samuel"] ,
         ["Riis, Jacob A. (Jacob August)", "Riis, Jacob A. (Jacob August)"] ,
         ["Rilke, Rainer Maria", "Rilke, Rainer Maria"] ,
-        ["Rizal, Jos", "Rizal, Jos"] ,
+        ["Rizal, Jose", "Rizal, Jose"] ,
         ["Robinson, Frank M.", "Robinson, Frank M."] ,
         ["Roessler, Erwin W. (Erwin William)", "Roessler, Erwin W. (Erwin William)"] ,
         ["Rolleston, T. W. (Thomas William)", "Rolleston, T. W. (Thomas William)"] ,
@@ -453,6 +465,7 @@ var INDEX_VALUES = {
         ["Stowe, Harriet Beecher", "Stowe, Harriet Beecher"] ,
         ["Stratton, Stephen S. (Stephen Samuel)", "Stratton, Stephen S. (Stephen Samuel)"] ,
         ["Strunk, William", "Strunk, William"] ,
+        ["Stuart, William W.", "Stuart, William W."] ,
         ["Suetonius", "Suetonius"] ,
         ["Sunzi, active 6th century B.C.", "Sunzi, active 6th century B.C."] ,
         ["Swift, Jonathan", "Swift, Jonathan"] ,
@@ -462,6 +475,7 @@ var INDEX_VALUES = {
         ["Talbot, William Henry Fox", "Talbot, William Henry Fox"] ,
         ["Talmage, James E. (James Edward)", "Talmage, James E. (James Edward)"] ,
         ["Tennyson, Alfred Tennyson, Baron", "Tennyson, Alfred Tennyson, Baron"] ,
+        ["Thackeray, William Makepeace", "Thackeray, William Makepeace"] ,
         ["Thomson, J. Arthur (John Arthur)", "Thomson, J. Arthur (John Arthur)"] ,
         ["Thoreau, Henry David", "Thoreau, Henry David"] ,
         ["Thurston, Edgar", "Thurston, Edgar"] ,
@@ -483,6 +497,7 @@ var INDEX_VALUES = {
         ["Van Loon, Hendrik Willem", "Van Loon, Hendrik Willem"] ,
         ["Various", "Various"] ,
         ["Vatsyayana", "Vatsyayana"] ,
+        ["Veblen, Thorstein", "Veblen, Thorstein"] ,
         ["Vereshchagin, Vasilii Vasilevich", "Vereshchagin, Vasilii Vasilevich"] ,
         ["Verne, Jules", "Verne, Jules"] ,
         ["Virgil", "Virgil"] ,
@@ -518,46 +533,46 @@ var INDEX_VALUES = {
         ["Wordsworth, William", "Wordsworth, William"] ,
         ["Wyss, Johann David", "Wyss, Johann David"] ,
         ["Xenophon", "Xenophon"] ,
-        ["Zola, mile", "Zola, mile"] 
+        ["Yogananda, Paramahansa", "Yogananda, Paramahansa"] ,
+        ["Zola, Emile", "Zola, Emile"] 
     ]
-    
 }
 
-var PROPERTIES = [
-    ["Birth", "Birth"] ,
-    ["Death", "Death"] ,
-    ["Name", "Name"] ,
-    ["Day", "Day"] ,
-    ["Full Date", "Full Date"] ,
-    ["Month", "Month"] ,
-    ["Month Name", "Month Name"] ,
-    ["Year", "Year"] ,
-    ["Title", "Title"] ,
-    ["Type", "Type"] ,
-    ["Total", "Total"] ,
-    ["Downloads", "Downloads"] ,
-    ["ID", "ID"] ,
-    ["Rank", "Rank"] ,
-    ["Url", "Url"] ,
-    ["Automated Readability Index", "Automated Readability Index"] ,
-    ["Coleman Liau Index", "Coleman Liau Index"] ,
-    ["Dale Chall Readability Score", "Dale Chall Readability Score"] ,
-    ["Difficult Words", "Difficult Words"] ,
-    ["Flesch Kincaid Grade", "Flesch Kincaid Grade"] ,
-    ["Flesch Reading Ease", "Flesch Reading Ease"] ,
-    ["Gunning Fog", "Gunning Fog"] ,
-    ["Linear Write Formula", "Linear Write Formula"] ,
-    ["Smog Index", "Smog Index"] ,
-    ["Polarity", "Polarity"] ,
-    ["Subjectivity", "Subjectivity"] ,
-    ["Average Letter per Word", "Average Letter per Word"] ,
-    ["Average Sentence Length", "Average Sentence Length"] ,
-    ["Average Sentence per Word", "Average Sentence per Word"] ,
-    ["Characters", "Characters"] ,
-    ["Polysyllables", "Polysyllables"] ,
-    ["Sentences", "Sentences"] ,
-    ["Syllables", "Syllables"] ,
-    ["Words", "Words"] 
+var classics_PROPERTIES = [
+    ["birth", "birth"] ,
+    ["death", "death"] ,
+    ["name", "name"] ,
+    ["day", "day"] ,
+    ["full", "full"] ,
+    ["month", "month"] ,
+    ["month name", "month name"] ,
+    ["year", "year"] ,
+    ["title", "title"] ,
+    ["type", "type"] ,
+    ["total", "total"] ,
+    ["downloads", "downloads"] ,
+    ["id", "id"] ,
+    ["rank", "rank"] ,
+    ["url", "url"] ,
+    ["automated readability index", "automated readability index"] ,
+    ["coleman liau index", "coleman liau index"] ,
+    ["dale chall readability score", "dale chall readability score"] ,
+    ["difficult words", "difficult words"] ,
+    ["flesch kincaid grade", "flesch kincaid grade"] ,
+    ["flesch reading ease", "flesch reading ease"] ,
+    ["gunning fog", "gunning fog"] ,
+    ["linsear write formula", "linsear write formula"] ,
+    ["smog index", "smog index"] ,
+    ["polarity", "polarity"] ,
+    ["subjectivity", "subjectivity"] ,
+    ["average letter per word", "average letter per word"] ,
+    ["average sentence length", "average sentence length"] ,
+    ["average sentence per word", "average sentence per word"] ,
+    ["characters", "characters"] ,
+    ["polysyllables", "polysyllables"] ,
+    ["sentences", "sentences"] ,
+    ["syllables", "syllables"] ,
+    ["words", "words"] 
 ]
 
 Blockly.Blocks['classics_get'] = {
@@ -565,9 +580,9 @@ Blockly.Blocks['classics_get'] = {
     this.setColour(WEATHER_HUE);
     this.appendDummyInput('MAIN')
         .appendField("classics.get")
-        .appendField(new Blockly.FieldDropdown(PROPERTIES), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown(classics_PROPERTIES), "PROPERTY")
         .appendField("filter")
-        .appendField(new Blockly.FieldDropdown(INDEXES, function(option) {
+        .appendField(new Blockly.FieldDropdown(classics_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
                     }), "INDEX")
     this.updateShape_();
@@ -594,12 +609,11 @@ Blockly.Blocks['classics_get'] = {
     }
     this.setFieldValue(index, 'INDEX');
     if (index != undefined && index != '(None)') {
-        inputGroup.appendField(new Blockly.FieldDropdown(INDEX_VALUES[index]), 'INDEX_VALUE')
+        inputGroup.appendField(new Blockly.FieldDropdown(classics_INDEX_VALUES[index]), 'INDEX_VALUE')
         if (index_value != undefined) {
             this.setFieldValue(index_value, 'INDEX_VALUE');
         } else {
-            console.log(INDEX_VALUES[index])
-            this.setFieldValue(INDEX_VALUES[index][0][0], 'INDEX_VALUE');
+            this.setFieldValue(classics_INDEX_VALUES[index][0][0], 'INDEX_VALUE');
         }
     }    
   }
@@ -628,3 +642,7 @@ PythonToBlocks.KNOWN_MODULES['classics'] = {
 AbstractInterpreter.MODULES['classics'] = {
     'get': {"type": "List", "empty": false, "component": {"type": 'Num'}}
 };
+
+BlockPyEditor.CATEGORY_MAP['Data - Classics'] = '<category name="Data - Classics" colour="50">'+
+                    '<block type="classics_get"><mutation index="(None)" index_value=""></mutation></block>'+
+                '</category>';

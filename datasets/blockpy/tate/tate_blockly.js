@@ -1,13 +1,13 @@
 
 
-var INDEXES = [
+var tate_INDEXES = [
     ["(None)", "(None)"],
     
     ["gender", "gender"] ,
     ["creation decade", "creation decade"] 
 ];
 
-var INDEX_VALUES = {
+var tate_INDEX_VALUES = {
     "(None)": [],
     
     "gender": [
@@ -68,7 +68,7 @@ var INDEX_VALUES = {
     ]
 }
 
-var PROPERTIES = [
+var tate_PROPERTIES = [
     ["birth.location", "birth.location"] ,
     ["birth.year", "birth.year"] ,
     ["death.location", "death.location"] ,
@@ -94,9 +94,9 @@ Blockly.Blocks['tate_get'] = {
     this.setColour(WEATHER_HUE);
     this.appendDummyInput('MAIN')
         .appendField("tate.get")
-        .appendField(new Blockly.FieldDropdown(PROPERTIES), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown(tate_PROPERTIES), "PROPERTY")
         .appendField("filter")
-        .appendField(new Blockly.FieldDropdown(INDEXES, function(option) {
+        .appendField(new Blockly.FieldDropdown(tate_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
                     }), "INDEX")
     this.updateShape_();
@@ -123,12 +123,11 @@ Blockly.Blocks['tate_get'] = {
     }
     this.setFieldValue(index, 'INDEX');
     if (index != undefined && index != '(None)') {
-        inputGroup.appendField(new Blockly.FieldDropdown(INDEX_VALUES[index]), 'INDEX_VALUE')
+        inputGroup.appendField(new Blockly.FieldDropdown(tate_INDEX_VALUES[index]), 'INDEX_VALUE')
         if (index_value != undefined) {
             this.setFieldValue(index_value, 'INDEX_VALUE');
         } else {
-            console.log(INDEX_VALUES[index])
-            this.setFieldValue(INDEX_VALUES[index][0][0], 'INDEX_VALUE');
+            this.setFieldValue(tate_INDEX_VALUES[index][0][0], 'INDEX_VALUE');
         }
     }    
   }

@@ -1,16 +1,128 @@
 
 
-var INDEXES = [
+var state_crime_INDEXES = [
     ["(None)", "(None)"],
     
+    ["State", "State"] ,
+    ["Year", "Year"] 
 ];
 
-var INDEX_VALUES = {
+var state_crime_INDEX_VALUES = {
     "(None)": [],
     
+    "State": [
+        
+        ["Alabama", "Alabama"] ,
+        ["Alaska", "Alaska"] ,
+        ["Arizona", "Arizona"] ,
+        ["Arkansas", "Arkansas"] ,
+        ["California", "California"] ,
+        ["Colorado", "Colorado"] ,
+        ["Connecticut", "Connecticut"] ,
+        ["Delaware", "Delaware"] ,
+        ["District of Columbia", "District of Columbia"] ,
+        ["Florida", "Florida"] ,
+        ["Georgia", "Georgia"] ,
+        ["Hawaii", "Hawaii"] ,
+        ["Idaho", "Idaho"] ,
+        ["Illinois", "Illinois"] ,
+        ["Indiana", "Indiana"] ,
+        ["Iowa", "Iowa"] ,
+        ["Kansas", "Kansas"] ,
+        ["Kentucky", "Kentucky"] ,
+        ["Louisiana", "Louisiana"] ,
+        ["Maine", "Maine"] ,
+        ["Maryland", "Maryland"] ,
+        ["Massachusetts", "Massachusetts"] ,
+        ["Michigan", "Michigan"] ,
+        ["Minnesota", "Minnesota"] ,
+        ["Mississippi", "Mississippi"] ,
+        ["Missouri", "Missouri"] ,
+        ["Montana", "Montana"] ,
+        ["Nebraska", "Nebraska"] ,
+        ["Nevada", "Nevada"] ,
+        ["New Hampshire", "New Hampshire"] ,
+        ["New Jersey", "New Jersey"] ,
+        ["New Mexico", "New Mexico"] ,
+        ["New York", "New York"] ,
+        ["North Carolina", "North Carolina"] ,
+        ["North Dakota", "North Dakota"] ,
+        ["Ohio", "Ohio"] ,
+        ["Oklahoma", "Oklahoma"] ,
+        ["Oregon", "Oregon"] ,
+        ["Pennsylvania", "Pennsylvania"] ,
+        ["Rhode Island", "Rhode Island"] ,
+        ["South Carolina", "South Carolina"] ,
+        ["South Dakota", "South Dakota"] ,
+        ["Tennessee", "Tennessee"] ,
+        ["Texas", "Texas"] ,
+        ["Utah", "Utah"] ,
+        ["Vermont", "Vermont"] ,
+        ["Virginia", "Virginia"] ,
+        ["Washington", "Washington"] ,
+        ["West Virginia", "West Virginia"] ,
+        ["Wisconsin", "Wisconsin"] ,
+        ["Wyoming", "Wyoming"] 
+    ],
+    "Year": [
+        
+        ["1960", "1960"] ,
+        ["1961", "1961"] ,
+        ["1962", "1962"] ,
+        ["1963", "1963"] ,
+        ["1964", "1964"] ,
+        ["1965", "1965"] ,
+        ["1966", "1966"] ,
+        ["1967", "1967"] ,
+        ["1968", "1968"] ,
+        ["1969", "1969"] ,
+        ["1970", "1970"] ,
+        ["1971", "1971"] ,
+        ["1972", "1972"] ,
+        ["1973", "1973"] ,
+        ["1974", "1974"] ,
+        ["1975", "1975"] ,
+        ["1976", "1976"] ,
+        ["1977", "1977"] ,
+        ["1978", "1978"] ,
+        ["1979", "1979"] ,
+        ["1980", "1980"] ,
+        ["1981", "1981"] ,
+        ["1982", "1982"] ,
+        ["1983", "1983"] ,
+        ["1984", "1984"] ,
+        ["1985", "1985"] ,
+        ["1986", "1986"] ,
+        ["1987", "1987"] ,
+        ["1988", "1988"] ,
+        ["1989", "1989"] ,
+        ["1990", "1990"] ,
+        ["1991", "1991"] ,
+        ["1992", "1992"] ,
+        ["1993", "1993"] ,
+        ["1994", "1994"] ,
+        ["1995", "1995"] ,
+        ["1996", "1996"] ,
+        ["1997", "1997"] ,
+        ["1998", "1998"] ,
+        ["1999", "1999"] ,
+        ["2000", "2000"] ,
+        ["2001", "2001"] ,
+        ["2002", "2002"] ,
+        ["2003", "2003"] ,
+        ["2004", "2004"] ,
+        ["2005", "2005"] ,
+        ["2006", "2006"] ,
+        ["2007", "2007"] ,
+        ["2008", "2008"] ,
+        ["2009", "2009"] ,
+        ["2010", "2010"] ,
+        ["2011", "2011"] ,
+        ["2012", "2012"] 
+    ]
 }
 
-var PROPERTIES = [
+var state_crime_PROPERTIES = [
     ["Rates.Property.All", "Rates.Property.All"] ,
     ["Rates.Property.Burglary", "Rates.Property.Burglary"] ,
     ["Rates.Property.Larceny", "Rates.Property.Larceny"] ,
@@ -39,9 +151,9 @@ Blockly.Blocks['state_crime_get'] = {
     this.setColour(WEATHER_HUE);
     this.appendDummyInput('MAIN')
         .appendField("state_crime.get")
-        .appendField(new Blockly.FieldDropdown(PROPERTIES), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown(state_crime_PROPERTIES), "PROPERTY")
         .appendField("filter")
-        .appendField(new Blockly.FieldDropdown(INDEXES, function(option) {
+        .appendField(new Blockly.FieldDropdown(state_crime_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
                     }), "INDEX")
     this.updateShape_();
@@ -68,12 +180,11 @@ Blockly.Blocks['state_crime_get'] = {
     }
     this.setFieldValue(index, 'INDEX');
     if (index != undefined && index != '(None)') {
-        inputGroup.appendField(new Blockly.FieldDropdown(INDEX_VALUES[index]), 'INDEX_VALUE')
+        inputGroup.appendField(new Blockly.FieldDropdown(state_crime_INDEX_VALUES[index]), 'INDEX_VALUE')
         if (index_value != undefined) {
             this.setFieldValue(index_value, 'INDEX_VALUE');
         } else {
-            console.log(INDEX_VALUES[index])
-            this.setFieldValue(INDEX_VALUES[index][0][0], 'INDEX_VALUE');
+            this.setFieldValue(state_crime_INDEX_VALUES[index][0][0], 'INDEX_VALUE');
         }
     }    
   }
@@ -102,3 +213,7 @@ PythonToBlocks.KNOWN_MODULES['state_crime'] = {
 AbstractInterpreter.MODULES['state_crime'] = {
     'get': {"type": "List", "empty": false, "component": {"type": 'Num'}}
 };
+
+BlockPyEditor.CATEGORY_MAP['Data - State Crime'] = '<category name="Data - State Crime" colour="50">'+
+                    '<block type="state_crime_get"><mutation index="(None)" index_value=""></mutation></block>'+
+                '</category>';
