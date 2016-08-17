@@ -228,29 +228,56 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="music">
       
       <div class="media-left  media-middle">
-        <a href="health/health.html">
-          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
+        <a href="music/music.html">
+          <img class="media-object" src="music/music.png" alt="Music" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="health/health.html">
-        <h4 class="media-heading">Health</h4>
+        <a href="music/music.html">
+        <h4 class="media-heading">Music</h4>
         </a>
-        <br>
-        <i>health, diseases, infection</i>
+        The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.<br>
+        <i>music, songs, artists, creativity, media</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "health",
-            'body': "This library holds data about reports of diseases in America.",
-            'description': "",
-            'tags': ["health", "diseases", "infection"]
+            'name': "music",
+            'body': "This library comes from the Million Song Dataset, which used a company called the Echo Nest to derive data points about one million popular contemporary songs. The Million Song Dataset is a collaboration between the Echo Nest and LabROSA, a laboratory working towards intelligent machine listening. The project was also funded in part by the National Science Foundation of America (NSF) to provide a large data set to evaluate research related to algorithms on a commercial size while promoting further research into the Music Information Retrieval field. The data contains standard information about the songs such as artist name, title, and year released. Additionally, the data contains more advanced information; for example, the length of the song, how many musical bars long the song is, and how long the fade in to the song was.",
+            'description': "The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.",
+            'tags': ["music", "songs", "artists", "creativity", "media"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+      
+      <div class="media-left  media-middle">
+        <a href="broadway/broadway.html">
+          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="broadway/broadway.html">
+        <h4 class="media-heading">Broadway</h4>
+        </a>
+        This library holds data about Broadway shows, such as tickets sold.<br>
+        <i>broadway, musical, theatre, tickets</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "broadway",
+            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
+            'description': "This library holds data about Broadway shows, such as tickets sold.",
+            'tags': ["broadway", "musical", "theatre", "tickets"]
         }
     );
     </script>
@@ -391,29 +418,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drugs">
       
       <div class="media-left  media-middle">
-        <a href="food/food.html">
-          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
+        <a href="drugs/drugs.html">
+          <img class="media-object" src="drugs/drugs.png" alt="Drugs" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="food/food.html">
-        <h4 class="media-heading">Food</h4>
+        <a href="drugs/drugs.html">
+        <h4 class="media-heading">Drugs</h4>
         </a>
-        Statistics for various food items<br>
-        <i>food, vitamins, minerals, health, nutrition</i>
+        This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.<br>
+        <i>drugs, substances, drug usage</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "food",
-            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
-            'description': "Statistics for various food items",
-            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
+            'name': "drugs",
+            'body': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.",
+            'description': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.",
+            'tags': ["drugs", "substances", "drug usage"]
         }
     );
     </script>
@@ -495,33 +522,6 @@ $(document).ready(function() {
             'body': "Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county. This is done through the use of 122 different Weather Forcast Offices throughout the country. These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage. This data set takes the information from these WFO reports for cities across the country through the months of April to June of 2016.",
             'description': "Weather records through the months of April and June of 2016 across the U.S.",
             'tags': ["weather", "rain", "snow", "sleet", "fog", "temperature", "wind"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="music">
-      
-      <div class="media-left  media-middle">
-        <a href="music/music.html">
-          <img class="media-object" src="music/music.png" alt="Music" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a href="music/music.html">
-        <h4 class="media-heading">Music</h4>
-        </a>
-        The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.<br>
-        <i>music, songs, artists, creativity, media</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "music",
-            'body': "This library comes from the Million Song Dataset, which used a company called the Echo Nest to derive data points about one million popular contemporary songs. The Million Song Dataset is a collaboration between the Echo Nest and LabROSA, a laboratory working towards intelligent machine listening. The project was also funded in part by the National Science Foundation of America (NSF) to provide a large data set to evaluate research related to algorithms on a commercial size while promoting further research into the Music Information Retrieval field. The data contains standard information about the songs such as artist name, title, and year released. Additionally, the data contains more advanced information; for example, the length of the song, how many musical bars long the song is, and how long the fade in to the song was.",
-            'description': "The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.",
-            'tags': ["music", "songs", "artists", "creativity", "media"]
         }
     );
     </script>
@@ -689,29 +689,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drugs">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
       
       <div class="media-left  media-middle">
-        <a href="drugs/drugs.html">
-          <img class="media-object" src="drugs/drugs.png" alt="Drugs" style="max-width: 64px; max-height: 64px;">
+        <a href="food/food.html">
+          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="drugs/drugs.html">
-        <h4 class="media-heading">Drugs</h4>
+        <a href="food/food.html">
+        <h4 class="media-heading">Food</h4>
         </a>
-        This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.<br>
-        <i>drugs, substances, drug usage</i>
+        Statistics for various food items<br>
+        <i>food, vitamins, minerals, health, nutrition</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "drugs",
-            'body': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.",
-            'description': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.",
-            'tags': ["drugs", "substances", "drug usage"]
+            'name': "food",
+            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
+            'description': "Statistics for various food items",
+            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
         }
     );
     </script>
@@ -770,29 +770,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
       
       <div class="media-left  media-middle">
-        <a href="broadway/broadway.html">
-          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        <a href="health/health.html">
+          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="broadway/broadway.html">
-        <h4 class="media-heading">Broadway</h4>
+        <a href="health/health.html">
+        <h4 class="media-heading">Health</h4>
         </a>
-        This library holds data about Broadway shows, such as tickets sold.<br>
-        <i>broadway, musical, theatre, tickets</i>
+        <br>
+        <i>health, diseases, infection</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "broadway",
-            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
-            'description': "This library holds data about Broadway shows, such as tickets sold.",
-            'tags': ["broadway", "musical", "theatre", "tickets"]
+            'name': "health",
+            'body': "This library holds data about reports of diseases in America.",
+            'description': "",
+            'tags': ["health", "diseases", "infection"]
         }
     );
     </script>
@@ -881,36 +881,7 @@ $(document).ready(function() {
     </div>
     
     <div class="row">
-    <hr>
-    
-    <h2>Future Potential Datasets</h2>
-    
-    <p>The datasets listed below have not been fully implemented, but they could be! Feel free to consider them too.</p>
-    
-    <div class='col-md-8 col-md-offset-1'>
-    <ol>
-    <li>Agriculture: Datasets about agricultural statistics in the US (<a href="http://www.ers.usda.gov/data-products.aspx">Link</a>)</li>
-    <li>Cancer: Incidences of different kinds of cancer in the US.</li>
-    <li>Drug spending: Information about how much drugs cost to sell and produce.</li>
-    <li>Food: Information about food regulated by the US.</li>
-    <li>Foreign assistance: Reports of foreign assistance from the US to other countries.</li>
-    <li>Hospitals: Information about hospitals across the US.</li>
-    <li>Hydropower: Information about hydropower dams across the US.</li>
-    <li>Mortgage: HMDA data provide information regarding home mortgage lending activity. The Home Mortgage Disclosure Act (HMDA) was enacted by Congress in 1975 and was implemented by the Federal Reserve Board's Regulation C. On July 21, 2011, the rule-writing authority of Regulation C was transferred to the Consumer Financial Protection Bureau (CFPB). </li>
-    <li>New York Crime: Detailed information about crime reports in New York City.</li>
-    <li>Officer Shootings: Reports about shootings committed by officers, including race.</li>
-    <li>Religious groups: Information about membership in religious groups (<a href="http://www.thearda.com/rcms2010/">Link</a>)</li>
-    <li>State Department per Diem: Information about per diem reported by US State Department employees.</li>
-    <li>University crime: Reported statistics of crime on college campuses.</li>
-    <li>Youth risk: The Youth Risk Behavior Surveillance System (YRBSS) monitors six types of health-risk behaviors that contribute to the leading causes of death and disability among youth and adults, including: Behaviors that contribute to unintentional injuries and violence, Sexual behaviors that contribute to unintended pregnancy and sexually transmitted diseases, including HIV infection, Alcohol and other drug use, Tobacco use, Unhealthy dietary behaviors, Inadequate physical activity. YRBSS also measures the prevalence of obesity and asthma among youth and young adults.<a href="http://www.cdc.gov/healthyyouth/data/yrbs/data.htm">Link</a></li>
-    </ol>
-    </div>
-    
-    </div>
-    <div class="row">
-    
-    <br>
-    
+   
     <p>
         If you still cannot find a good dataset, or you have an idea for a good dataset, feel free to suggest other ideas!
     </p>

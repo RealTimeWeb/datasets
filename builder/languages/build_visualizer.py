@@ -285,7 +285,6 @@ def build_visualizer(model, fast):
     files = {}
     
     icon_file = model['metadata']['icon']
-    
     if os.path.exists(icon_file):
         with open(icon_file, 'rb') as icon_data:
             files[new_folder+name+'.png'] = icon_data.read()
