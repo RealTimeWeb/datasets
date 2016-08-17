@@ -25,3 +25,14 @@ interfaces:
     production:
         sql: SELECT data FROM earthquakes
         post: json()
+structures:
+    "earthquakes.[0].impact.gap": In general, the smaller this number, the more reliable is the calculated horizontal position of the earthquake. Specifically, this means the largest azimuthal gap between azimuthally adjacent stations (in degrees). Earthquake locations in which the azimuthal gap exceeds 180 degrees typically have large location and depth uncertainties. Ranges from 0 to 180.
+    "earthquakes.[0].impact.magnitude": Earthquake magnitude is a measure of the size of an earthquake at its source. It is a logarithmic measure. At the same distance from the earthquake, the amplitude of the seismic waves from which the magnitude is determined are approximately 10 times as large during a magnitude 5 earthquake as during a magnitude 4 earthquake. The total amount of energy released by the earthquake usually goes up by a larger factor; for many commonly used magnitude types, the total energy of an average earthquake goes up by a factor of approximately 32 for each unit increase in magnitude. Typically ranges from -1 (very tiny) to 10 (incredibly powerful).
+    "earthquakes.[0].impact.significance": A number describing how significant the event is. Larger numbers indicate a more significant event. This value is determined on a number of factors, including magnitude, maximum MMI, felt reports, and estimated impact. Ranges from 0 to 1000.
+    "earthquakes.[0].id": A unique name for this earthquake.
+    "earthquakes.[0].time.epoch": A number that represents the time that this earthquake occurred. Epoch's are the number of seconds since a particular date (January 1st, 1970), and are a convenient way to store date/times.
+    "earthquakes.[0].location.state": A best guess for the name of the state (or country, in some cases) that this earthquake was reported in.
+    "earthquakes.[0].location.distance": The rough distance that this earthquake occurred away from the reporting station, measured in degrees between. 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake. In general, this number is between 0.4-7.1.
+    "earthquakes.[0].location.latitude": Decimal degrees latitude (up and down on the globe). Negative values for southern latitudes. Ranges from -90 to 90.
+    "earthquakes.[0].location.longitude": Decimal degrees longitude (east and west on the globe). Negative values for western latitudes. Ranges from -180 to 180.
+    "earthquakes.[0].location.depth": Depth of the event in kilometers.

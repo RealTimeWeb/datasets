@@ -1,1 +1,0 @@
-airports_bar = []

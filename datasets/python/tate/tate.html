@@ -146,29 +146,24 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-tate-__0__-dimensions' title='Dictionary (4 keys)'>
+    <div id='explore-tate-__0__-dimensions' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"units"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>""</code></td> 
-                 <td></td> </tr>
             
             <tr> <td><code>"width"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>0.0</code></td> 
-                 <td></td> </tr>
+                 <td>The width of the piece of art, in millimeters. If it is unknown, this was replaced with "0".</td> </tr>
             
             <tr> <td><code>"depth"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>0.0</code></td> 
-                 <td></td> </tr>
+                 <td>The depth of the piece of art, in millimeters. If it is unknown, this was replaced with "0".</td> </tr>
             
             <tr> <td><code>"height"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>0.0</code></td> 
-                 <td></td> </tr>
+                 <td>The height of the piece of art, in millimeters. If it is unknown, this was replaced with "0".</td> </tr>
             
         </table>
     </div>
@@ -177,11 +172,6 @@ $(document).ready(function() {
         $( "#explore-tate-__0__-dimensions" ).dialog({
           autoOpen: false,
           width: 600
-        });
-        
-        $("#btn-explore-tate-__0__-dimensions-units").click(function() {
-            $( "#explore-tate-__0__-dimensions-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
         });
         
         $("#btn-explore-tate-__0__-dimensions-width").click(function() {
@@ -326,7 +316,7 @@ $(document).ready(function() {
             <tr> <td><code>"year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>0</code></td> 
-                 <td></td> </tr>
+                 <td>The year that the artist died. If the year is unknown, it was replaced with "0".</td> </tr>
             
         </table>
     </div>
@@ -357,7 +347,7 @@ $(document).ready(function() {
             <tr> <td><code>"gender"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"Female"</code></td> 
-                 <td></td> </tr>
+                 <td>The recorded gender of the artist, either "Male", "Female", or a blank string.</td> </tr>
             
             <tr> <td><code>"death"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
@@ -428,7 +418,7 @@ $(document).ready(function() {
             <tr> <td><code>"year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>1930</code></td> 
-                 <td></td> </tr>
+                 <td>The year that the artist was born. If the year is unknown, it was replaced with "0".</td> </tr>
             
         </table>
     </div>
@@ -452,7 +442,7 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-tate-__0__-metadata' title='Dictionary (3 keys)'>
+    <div id='explore-tate-__0__-metadata' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
@@ -464,12 +454,17 @@ $(document).ready(function() {
             <tr> <td><code>"acquisition date"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>2009</code></td> 
-                 <td></td> </tr>
+                 <td>The year that this particular art piece was acquired by the Tate art gallery. If the creation date was not known, it was replaced with "0".</td> </tr>
+            
+            <tr> <td><code>"creation decade"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1970</code></td> 
+                 <td>The 10-year period that this particular art piece was created in. If the creation date was not known, it was replaced with "0".</td> </tr>
             
             <tr> <td><code>"creation year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>1976</code></td> 
-                 <td></td> </tr>
+                 <td>The year that this particular art piece was created in. If the creation date was not known, it was replaced with "0".</td> </tr>
             
         </table>
     </div>
@@ -487,6 +482,11 @@ $(document).ready(function() {
         
         $("#btn-explore-tate-__0__-metadata-acquisition-date").click(function() {
             $( "#explore-tate-__0__-metadata-acquisition-date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-tate-__0__-metadata-creation-decade").click(function() {
+            $( "#explore-tate-__0__-metadata-creation-decade" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

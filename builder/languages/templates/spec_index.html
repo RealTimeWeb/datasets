@@ -86,16 +86,16 @@ $(document).ready(function() {
     
     <div class="row">
     {% for metadata in specs.values() %}
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="{{ metadata.name|flat_case }}">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="{{ metadata.name|snake_case }}">
       {% if metadata.icon %}
       <div class="media-left  media-middle">
-        <a href="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.html">
-          <img class="media-object" src="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.png" alt="{{ metadata.name }}" style="max-width: 64px; max-height: 64px;">
+        <a href="{{ metadata.name|snake_case }}/{{ metadata.name|snake_case }}.html">
+          <img class="media-object" src="{{ metadata.name|snake_case }}/{{ metadata.name|snake_case }}.png" alt="{{ metadata.name }}" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       {% endif %}
       <div class="media-body">
-        <a href="{{ metadata.name|flat_case }}/{{ metadata.name|flat_case }}.html">
+        <a href="{{ metadata.name|snake_case }}/{{ metadata.name|snake_case }}.html">
         <h4 class="media-heading">{{ metadata.name }}</h4>
         </a>
         {{ metadata.short }}<br>
@@ -105,7 +105,7 @@ $(document).ready(function() {
     <script>
     searcher.add(
         {
-            'name': "{{ metadata.name|flat_case }}",
+            'name': "{{ metadata.name|snake_case }}",
             'body': {{ metadata.overview|replace('\n', ' ')|replace('\r',' ')|striptags|trim|tojson|safe }},
             'description': {{ metadata.short|replace('\n', ' ')|striptags|trim|tojson|safe }},
             'tags': {{ metadata.tags|tojson|safe }}

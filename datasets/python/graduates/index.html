@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Graduates Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <img class="img-rounded pull-right" src="graduates.png" alt="Graduates" style="max-width: 128px; max-height: 128px;">
+        
+        <h1>Graduates Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+        <span class="text-muted">Version 1, created 11/1/2015</span><br>
+        <span class="text-muted">Tags: graduation, grads, majors, education, college, university, higher education, jobs, careers</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_majors'>get_majors</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series.  Included is information about employment numbers, major information, and the earnings of different majors.
+
+    </p>
+    
+    
+    <p>
+    <i>http://www.census.gov/acs/www/data_documentation/pums_documentation/ <br> https://github.com/fivethirtyeight/data/tree/master/college-majors</i>
+    </p>
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="graduates.py?forcedownload=1" download="graduates.py" target="_blank">
+            <strong>graduates.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="graduates.db?forcedownload=1" download="graduates.db" target="_blank">
+            <strong>graduates.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 1 function you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">graduates</span>
+<span class="n">list_of_grad_major</span> <span class="o">=</span> <span class="n">graduates</span><span class="o">.</span><span class="n">get_majors</span><span class="p">()</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_majors'>graduates.get_majors()</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns information about all recorded majors.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-graduates'>Explore graduates data</button>
+    </div>
+    
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-graduates").click(function() {
+        $( "#explore-graduates" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-graduates' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-graduates-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-graduates" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-graduates-__0__").click(function() {
+            $( "#explore-graduates-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-graduates-__0__' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Major Information"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-graduates-__0__-Major-Information'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Demographics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-graduates-__0__-Demographics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Employment"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-graduates-__0__-Employment'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Earnings"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-graduates-__0__-Earnings'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-graduates-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-graduates-__0__-Major-Information").click(function() {
+            $( "#explore-graduates-__0__-Major-Information" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Demographics").click(function() {
+            $( "#explore-graduates-__0__-Demographics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Employment").click(function() {
+            $( "#explore-graduates-__0__-Employment" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Earnings").click(function() {
+            $( "#explore-graduates-__0__-Earnings" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-graduates-__0__-Earnings-Earnings-Breakdown' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Median Earnings"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>110000</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"75th Percentile of Earnings"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>125000</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"25th Percentile of Earnings"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>95000</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-graduates-__0__-Earnings-Earnings-Breakdown" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-graduates-__0__-Earnings-Earnings-Breakdown-Median-Earnings").click(function() {
+            $( "#explore-graduates-__0__-Earnings-Earnings-Breakdown-Median-Earnings" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Earnings-Earnings-Breakdown-75th-Percentile-of-Earnings").click(function() {
+            $( "#explore-graduates-__0__-Earnings-Earnings-Breakdown-75th-Percentile-of-Earnings" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Earnings-Earnings-Breakdown-25th-Percentile-of-Earnings").click(function() {
+            $( "#explore-graduates-__0__-Earnings-Earnings-Breakdown-25th-Percentile-of-Earnings" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-graduates-__0__-Demographics' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Men"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2057</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Women as Share of Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.120564344</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Women"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>282</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-graduates-__0__-Demographics" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-graduates-__0__-Demographics-Men").click(function() {
+            $( "#explore-graduates-__0__-Demographics-Men" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Demographics-Women-as-Share-of-Total").click(function() {
+            $( "#explore-graduates-__0__-Demographics-Women-as-Share-of-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Demographics-Women").click(function() {
+            $( "#explore-graduates-__0__-Demographics-Women" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-graduates-__0__-Major-Information' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Major Code"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2419</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Rank by Median Earnings"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Major"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"PETROLEUM ENGINEERING"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total Number in Major"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2339</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Major Category"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Engineering"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-graduates-__0__-Major-Information" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-graduates-__0__-Major-Information-Major-Code").click(function() {
+            $( "#explore-graduates-__0__-Major-Information-Major-Code" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Major-Information-Rank-by-Median-Earnings").click(function() {
+            $( "#explore-graduates-__0__-Major-Information-Rank-by-Median-Earnings" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Major-Information-Major").click(function() {
+            $( "#explore-graduates-__0__-Major-Information-Major" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Major-Information-Total-Number-in-Major").click(function() {
+            $( "#explore-graduates-__0__-Major-Information-Total-Number-in-Major" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Major-Information-Major-Category").click(function() {
+            $( "#explore-graduates-__0__-Major-Information-Major-Category" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-graduates-__0__-Earnings' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Non-College Jobs"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>364</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"College Jobs"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1534</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Earnings Breakdown"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-graduates-__0__-Earnings-Earnings-Breakdown'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Low Wage Jobs"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>193</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-graduates-__0__-Earnings" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-graduates-__0__-Earnings-Non-College-Jobs").click(function() {
+            $( "#explore-graduates-__0__-Earnings-Non-College-Jobs" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Earnings-College-Jobs").click(function() {
+            $( "#explore-graduates-__0__-Earnings-College-Jobs" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Earnings-Earnings-Breakdown").click(function() {
+            $( "#explore-graduates-__0__-Earnings-Earnings-Breakdown" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Earnings-Low-Wage-Jobs").click(function() {
+            $( "#explore-graduates-__0__-Earnings-Low-Wage-Jobs" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-graduates-__0__-Employment' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Part Time"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>270</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Unemployed"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>37</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Unemployment Rate"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.018380527</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Full Time"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1849</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Employed"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1976</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Full Time, Year-Round"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1207</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-graduates-__0__-Employment" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-graduates-__0__-Employment-Part-Time").click(function() {
+            $( "#explore-graduates-__0__-Employment-Part-Time" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Employment-Unemployed").click(function() {
+            $( "#explore-graduates-__0__-Employment-Unemployed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Employment-Unemployment-Rate").click(function() {
+            $( "#explore-graduates-__0__-Employment-Unemployment-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Employment-Full-Time").click(function() {
+            $( "#explore-graduates-__0__-Employment-Full-Time" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Employment-Employed").click(function() {
+            $( "#explore-graduates-__0__-Employment-Employed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-graduates-__0__-Employment-Full-Time,-Year-Round").click(function() {
+            $( "#explore-graduates-__0__-Employment-Full-Time,-Year-Round" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+
+</div>

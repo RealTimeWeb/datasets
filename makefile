@@ -28,7 +28,7 @@ python_test:
 	python builder/builder.py -l python specs/$(target).corgis ./datasets
 	python test.py $(target)
 index:
-	python datasets/python/build_index.py
+	python builder/builder.py -i specs/ ./datasets
 latex_index:
 	python datasets/metrics/build_latex_index.py
 infer_json:

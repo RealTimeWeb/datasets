@@ -191,7 +191,7 @@ class Compiler(object):
             metadata.appendix = self.walk_list("metadata.appendix", "appendix", raw, self.walk_appendix)
         else:
             metadata.appendix = []
-        metadata.icon = os.path.join(self.path, metadata.name.replace(' ', '').lower()+'.png')
+        metadata.icon = os.path.join(self.path, clean_identifier(metadata.name).lower()+'.png')
         metadata.tags = self.recommend_field("metadata", "tags", raw, [], list)
         return metadata
             
@@ -291,7 +291,7 @@ class Compiler(object):
         local = Local()
         location = "{}.{}".format(in_location, name)
         if isinstance(data, dict):
-            local.name = de_identifier(self.require_field(location, "name", data, "", str))
+            local.name = self.require_field(location, "name", data, "", str)
             location = "{}.{}".format(in_location, clean_identifier(local.name))
             local.row = self.typecheck_field(location, "row", data, local.name, str)
             local.order = self.typecheck_field(location, "order", data, "Index", str)
@@ -434,6 +434,7 @@ class Compiler(object):
                     leaves.update(walked.leaves)
             else:
                 self.warning('Could not find local data file {}.'.format(local.file))
+                
         for local in self.package.locals:
             for index in local.indexes:
                 if index.jsonpath not in leaves:

@@ -306,7 +306,7 @@ $(document).ready(function () {
 
     ko.applyBindings(mainModel);
     
-    mainModel.settings.sampling(Math.min(400, mainModel.structures()[0].data.length))
+    mainModel.settings.sampling(Math.min(100, mainModel.structures()[0].data.length))
     
     function changeCategory() {
         $('#select-bar-keys').empty().multiSelect('refresh');
@@ -528,7 +528,7 @@ $(document).ready(function () {
                 ys = [];
                 for (var i = 0, length = indices.length; i < length; i = i+1) {
                     var key_value = indices[i];
-                    if (typeof key_value) {
+                    if (typeof key_value === 'string') {
                         key_value = key_value.replace(',', '')
                     }
                     if (filter_value == key_value) {

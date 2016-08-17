@@ -130,17 +130,15 @@ def get_reports_by_year(year, test=True):
     Given a year, returns all the cancer reports for that year in the database.
     
     :param year: The year to get reports.
-    :type year: Int
+    :type year: int
     """
     
+    if not isinstance(year, int):
+        raise DatasetException("Error, the parameter year must be of type int")
+    
     # Match it against recommend values
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT report FROM cancer").fetchall()]
-    if year.lower() not in potentials:
-        best_guesses = _difflib.get_close_matches(year, potentials)
-        if best_guesses:
-            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
-        else:
-            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
+    
+    potentials = year
     if _Constants._TEST or test:
         rows = _Constants._DATABASE.execute("SELECT data FROM cancer WHERE year=? LIMIT {hardware}".format(
             hardware=_Constants._HARDWARE),
@@ -165,10 +163,11 @@ def get_reports_by_area(area, test=True):
     Given a area, returns all the cancer reports for that area in the database.
     
     :param area: The year to get reports.
-    :type area: Str
+    :type area: str
     """
     
     # Match it against recommend values
+    
     potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT report FROM cancer").fetchall()]
     if area.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(area, potentials)

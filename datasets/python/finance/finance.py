@@ -108,10 +108,11 @@ def get_finances_by_state(state):
     Retuns financial data about a single state.
     
     :param state: The name of the state (e.g., "Alaska").
-    :type state: Str
+    :type state: str
     """
     
     # Match it against recommend values
+    
     potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT state FROM finance").fetchall()]
     if state.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(state, potentials)

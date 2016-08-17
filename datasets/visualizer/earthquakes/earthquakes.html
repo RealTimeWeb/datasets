@@ -236,7 +236,7 @@ $(document).ready(function () {
 
     ko.applyBindings(mainModel);
     
-    mainModel.settings.sampling(Math.min(400, mainModel.structures()[0].data.length))
+    mainModel.settings.sampling(Math.min(100, mainModel.structures()[0].data.length))
     
     function changeCategory() {
         $('#select-bar-keys').empty().multiSelect('refresh');

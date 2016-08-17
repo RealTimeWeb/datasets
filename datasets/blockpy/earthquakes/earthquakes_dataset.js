@@ -1,6 +1,8 @@
 _IMPORTED_DATASETS['earthquakes'] = {
   "distance": {
-    "type": "number", 
+    "comment": "The rough distance that this earthquake occurred away from the reporting station, measured in degrees between. 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake. In general, this number is between 0.4-7.1.", 
+    "index": false, 
+    "name": "earthquakes.[0].location.distance", 
     "data": [
       0.1121, 
       0.07577, 
@@ -8846,9 +8848,8 @@ _IMPORTED_DATASETS['earthquakes'] = {
       0.06068, 
       1.864
     ], 
-    "name": "earthquakes.[0].location.distance", 
     "pretty": "Location: Distance", 
-    "index": false
+    "type": "number"
   }, 
   "time.full": {
     "type": "text", 
@@ -44255,7 +44256,9 @@ _IMPORTED_DATASETS['earthquakes'] = {
     "index": false
   }, 
   "state": {
-    "type": "text", 
+    "comment": "A best guess for the name of the state (or country, in some cases) that this earthquake was reported in.", 
+    "index": true, 
+    "name": "earthquakes.[0].location.state", 
     "data": [
       " CA", 
       " CA", 
@@ -53101,12 +53104,13 @@ _IMPORTED_DATASETS['earthquakes'] = {
       " California", 
       " Tonga"
     ], 
-    "name": "earthquakes.[0].location.state", 
     "pretty": "Location: State", 
-    "index": true
+    "type": "text"
   }, 
   "longitude": {
-    "type": "number", 
+    "comment": "Decimal degrees longitude (east and west on the globe). Negative values for western latitudes. Ranges from -180 to 180.", 
+    "index": false, 
+    "name": "earthquakes.[0].location.longitude", 
     "data": [
       -116.4318333, 
       -116.4408333, 
@@ -61952,12 +61956,13 @@ _IMPORTED_DATASETS['earthquakes'] = {
       -118.7843333, 
       -173.5448
     ], 
-    "name": "earthquakes.[0].location.longitude", 
     "pretty": "Location: Longitude", 
-    "index": false
+    "type": "number"
   }, 
   "gap": {
-    "type": "number", 
+    "comment": "In general, the smaller this number, the more reliable is the calculated horizontal position of the earthquake. Specifically, this means the largest azimuthal gap between azimuthally adjacent stations (in degrees). Earthquake locations in which the azimuthal gap exceeds 180 degrees typically have large location and depth uncertainties. Ranges from 0 to 180.", 
+    "index": false, 
+    "name": "earthquakes.[0].impact.gap", 
     "data": [
       75.0, 
       83.0, 
@@ -70803,12 +70808,13 @@ _IMPORTED_DATASETS['earthquakes'] = {
       187.0, 
       179.0
     ], 
-    "name": "earthquakes.[0].impact.gap", 
     "pretty": "Impact: Gap", 
-    "index": false
+    "type": "number"
   }, 
   "depth": {
-    "type": "number", 
+    "comment": "Depth of the event in kilometers.", 
+    "index": false, 
+    "name": "earthquakes.[0].location.depth", 
     "data": [
       14.68, 
       10.98, 
@@ -79654,12 +79660,13 @@ _IMPORTED_DATASETS['earthquakes'] = {
       6.17, 
       10.0
     ], 
-    "name": "earthquakes.[0].location.depth", 
     "pretty": "Location: Depth", 
-    "index": false
+    "type": "number"
   }, 
   "magnitude": {
-    "type": "number", 
+    "comment": "Earthquake magnitude is a measure of the size of an earthquake at its source. It is a logarithmic measure. At the same distance from the earthquake, the amplitude of the seismic waves from which the magnitude is determined are approximately 10 times as large during a magnitude 5 earthquake as during a magnitude 4 earthquake. The total amount of energy released by the earthquake usually goes up by a larger factor; for many commonly used magnitude types, the total energy of an average earthquake goes up by a factor of approximately 32 for each unit increase in magnitude. Typically ranges from -1 (very tiny) to 10 (incredibly powerful).", 
+    "index": false, 
+    "name": "earthquakes.[0].impact.magnitude", 
     "data": [
       1.04, 
       0.82, 
@@ -88505,9 +88512,8 @@ _IMPORTED_DATASETS['earthquakes'] = {
       0.56, 
       4.3
     ], 
-    "name": "earthquakes.[0].impact.magnitude", 
     "pretty": "Impact: Magnitude", 
-    "index": false
+    "type": "number"
   }, 
   "minute": {
     "type": "number", 
@@ -97361,7 +97367,9 @@ _IMPORTED_DATASETS['earthquakes'] = {
     "index": false
   }, 
   "significance": {
-    "type": "number", 
+    "comment": "A number describing how significant the event is. Larger numbers indicate a more significant event. This value is determined on a number of factors, including magnitude, maximum MMI, felt reports, and estimated impact. Ranges from 0 to 1000.", 
+    "index": false, 
+    "name": "earthquakes.[0].impact.significance", 
     "data": [
       17, 
       10, 
@@ -106207,12 +106215,13 @@ _IMPORTED_DATASETS['earthquakes'] = {
       5, 
       284
     ], 
-    "name": "earthquakes.[0].impact.significance", 
     "pretty": "Impact: Significance", 
-    "index": false
+    "type": "number"
   }, 
   "latitude": {
-    "type": "number", 
+    "comment": "Decimal degrees latitude (up and down on the globe). Negative values for southern latitudes. Ranges from -90 to 90.", 
+    "index": false, 
+    "name": "earthquakes.[0].location.latitude", 
     "data": [
       33.4818333, 
       33.4485, 
@@ -115058,9 +115067,8 @@ _IMPORTED_DATASETS['earthquakes'] = {
       37.5223333, 
       -14.6477
     ], 
-    "name": "earthquakes.[0].location.latitude", 
     "pretty": "Location: Latitude", 
-    "index": false
+    "type": "number"
   }, 
   "location.full": {
     "type": "text", 
@@ -123914,7 +123922,9 @@ _IMPORTED_DATASETS['earthquakes'] = {
     "index": false
   }, 
   "id": {
-    "type": "text", 
+    "comment": "A unique name for this earthquake.", 
+    "index": false, 
+    "name": "earthquakes.[0].id", 
     "data": [
       "ci37387847", 
       "ci37387831", 
@@ -132760,9 +132770,8 @@ _IMPORTED_DATASETS['earthquakes'] = {
       "nc72636360", 
       "us10005jkl"
     ], 
-    "name": "earthquakes.[0].id", 
     "pretty": "Id: Id", 
-    "index": false
+    "type": "text"
   }, 
   "day": {
     "type": "number", 

@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Food Access Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    var user_id = "";
+    if (localStorage.getItem('user_id') !== null) {
+        user_id = localStorage.getItem('user_id');
+    }
+    function log(action, body) {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    }
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header">
+        
+        <h1>Food Access Library</h1>
+        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+        <span class="text-muted">By Ryan Whitcomb</span><br>
+        <span class="text-muted">Version 1, created 7/14/2016</span><br>
+        <span class="text-muted">Tags: counties, states, food, access, availability, supermarket, rural, urban, population, vehicles</span><br>
+    </div>
+    
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_records'>get_records</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    From the United States Department of Agriculture's Economic Research Service, the dataset contains information about US county's ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.  Most measures of how individuals and neighborhoods are able to access food are based on the following indicators: 
+    - Accessibility to sources of healthy food, as measured by distance to a store or by the number of stores in an area.
+    - Individual-level resources that may affect accessibility, such as family income or vehicle availability.
+    - Neighborhood-level indicators of resources, such as the average income of the neighborhood and the availability of public transportation.  
+
+    </p>
+    
+    
+    <p>
+    <i>http://www.ers.usda.gov/data-products/food-access-research-atlas.aspx</i>
+    </p>
+    
+    
+    <h3 id="downloads">Downloads</h3>
+    
+    <p>Download all of the following files.</p>
+    
+    <div class='row'>
+    <div class="well col-md-6 col-md-offset-1">
+    
+    <ol>
+        <li><a href="food_access.py?forcedownload=1" download="food_access.py" target="_blank">
+            <strong>food_access.py </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+        <li><a href="food_access.db?forcedownload=1" download="food_access.db" target="_blank">
+            <strong>food_access.db </strong>
+            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+        </a></li>
+    </ol>
+    </div>
+    </div>
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 1 function you can use.
+    
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">food_access</span>
+<span class="n">list_of_record</span> <span class="o">=</span> <span class="n">food_access</span><span class="o">.</span><span class="n">get_records</span><span class="p">()</span>
+</pre></div>
+
+
+
+
+    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">food_access</span>
+<span class="c"># These may be slow!</span>
+<span class="n">list_of_record</span> <span class="o">=</span> <span class="n">food_access</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_records'>food_access.get_records(test=True)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns food access records from the dataset.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+
+
+<h3 id="structure">Explore Structure</h3>
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-food_access'>Explore food_access data</button>
+    </div>
+    
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-food_access").click(function() {
+        $( "#explore-food_access" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-food_access' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food_access-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food_access" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-food_access-__0__").click(function() {
+            $( "#explore-food_access-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-food_access-__0__-Low-Access-Percents-Low-Access-Only' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"1/2 and 10 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.5</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1 and 20 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.166666666667</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food_access-__0__-Low-Access-Percents-Low-Access-Only" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Percents-Low-Access-Only-1_2-and-10-Miles").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Percents-Low-Access-Only-1_2-and-10-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Percents-Low-Access-Only-1-and-20-Miles").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Percents-Low-Access-Only-1-and-20-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food_access-__0__-Housing-Data' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Total Housing Units"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>9990</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Urban Housing Percentage"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.166666666667</code></td> 
+                 <td>Percentage is number of Census Tracts classified as urban divided by total tracts for the county</td> </tr>
+            
+            <tr> <td><code>"Residing in Group Quarters"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>901.0</code></td> 
+                 <td>Group Quarters are dormitories, military bases, assisted living or skilled nursing facilities, and other large institutions.</td> </tr>
+            
+            <tr> <td><code>"Rural Housing Percentage"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.833333333333</code></td> 
+                 <td>Percentage is number of Census Tracts classified as rural divided by total tracts for the county</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food_access-__0__-Housing-Data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food_access-__0__-Housing-Data-Total-Housing-Units").click(function() {
+            $( "#explore-food_access-__0__-Housing-Data-Total-Housing-Units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Housing-Data-Urban-Housing-Percentage").click(function() {
+            $( "#explore-food_access-__0__-Housing-Data-Urban-Housing-Percentage" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Housing-Data-Residing-in-Group-Quarters").click(function() {
+            $( "#explore-food_access-__0__-Housing-Data-Residing-in-Group-Quarters" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Housing-Data-Rural-Housing-Percentage").click(function() {
+            $( "#explore-food_access-__0__-Housing-Data-Rural-Housing-Percentage" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food_access-__0__-Low-Access-Numbers-Seniors' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"20 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1/2 Mile"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3960.8077309</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1 Mile"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3409.21234164</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"10 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>984.86043463</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food_access-__0__-Low-Access-Numbers-Seniors" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Seniors-20-Miles").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Seniors-20-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Seniors-1_2-Mile").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Seniors-1_2-Mile" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Seniors-1-Mile").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Seniors-1-Mile" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Seniors-10-Miles").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Seniors-10-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food_access-__0__-Low-Access-Numbers-Children' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"20 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1/2 Mile"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>5558.40555915</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1 Mile"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4961.14084519</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"10 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1114.80423993</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food_access-__0__-Low-Access-Numbers-Children" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Children-20-Miles").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Children-20-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Children-1_2-Mile").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Children-1_2-Mile" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Children-1-Mile").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Children-1-Mile" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Children-10-Miles").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Children-10-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food_access-__0__-Low-Access-Numbers-Low-Income-People' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"20 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1/2 Mile"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>10638.2083161</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1 Mile"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>9451.794654</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"10 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>2422.05604577</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food_access-__0__-Low-Access-Numbers-Low-Income-People" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Low-Income-People-20-Miles").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Low-Income-People-20-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Low-Income-People-1_2-Mile").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Low-Income-People-1_2-Mile" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Low-Income-People-1-Mile").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Low-Income-People-1-Mile" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Low-Income-People-10-Miles").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Low-Income-People-10-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food_access-__0__-Low-Access-Numbers' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Seniors"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food_access-__0__-Low-Access-Numbers-Seniors'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>Age 65+</td> </tr>
+            
+            <tr> <td><code>"Low Income People"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food_access-__0__-Low-Access-Numbers-Low-Income-People'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>Low income is defined as annual family income at or below 200 percent of the Federal poverty threshold for family size.</td> </tr>
+            
+            <tr> <td><code>"Children"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food_access-__0__-Low-Access-Numbers-Children'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>Age 0-17</td> </tr>
+            
+            <tr> <td><code>"People"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food_access-__0__-Low-Access-Numbers-People'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food_access-__0__-Low-Access-Numbers" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Seniors").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Seniors" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Low-Income-People").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Low-Income-People" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-Children").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-Children" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-People").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-People" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food_access-__0__-Low-Access-Percents-Low-Income-and-Low-Access' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"1/2 and 10 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.5</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1 and 20 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.166666666667</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food_access-__0__-Low-Access-Percents-Low-Income-and-Low-Access" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Percents-Low-Income-and-Low-Access-1_2-and-10-Miles").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Percents-Low-Income-and-Low-Access-1_2-and-10-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Percents-Low-Income-and-Low-Access-1-and-20-Miles").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Percents-Low-Income-and-Low-Access-1-and-20-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food_access-__0__-Low-Access-Numbers-People' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"20 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1/2 Mile"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>24360.3322494</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1 Mile"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>21510.194817</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"10 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>5176.76934843</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food_access-__0__-Low-Access-Numbers-People" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-People-20-Miles").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-People-20-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-People-1_2-Mile").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-People-1_2-Mile" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-People-1-Mile").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-People-1-Mile" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers-People-10-Miles").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers-People-10-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food_access-__0__-Vehicle-Access' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"20 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1/2 Mile"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>708.347212727</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1 Mile"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>604.389670134</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"10 Miles"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>167.470885381</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food_access-__0__-Vehicle-Access" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food_access-__0__-Vehicle-Access-20-Miles").click(function() {
+            $( "#explore-food_access-__0__-Vehicle-Access-20-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Vehicle-Access-1_2-Mile").click(function() {
+            $( "#explore-food_access-__0__-Vehicle-Access-1_2-Mile" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Vehicle-Access-1-Mile").click(function() {
+            $( "#explore-food_access-__0__-Vehicle-Access-1-Mile" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Vehicle-Access-10-Miles").click(function() {
+            $( "#explore-food_access-__0__-Vehicle-Access-10-Miles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food_access-__0__' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Low Access Numbers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food_access-__0__-Low-Access-Numbers'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>Numbers are summation of the Census Tracts for each county, distances refer to distance that an individual has to travel to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.</td> </tr>
+            
+            <tr> <td><code>"Vehicle Access"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food_access-__0__-Vehicle-Access'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>Housing units without vehicle access and low access as specified distance</td> </tr>
+            
+            <tr> <td><code>"Housing Data"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food_access-__0__-Housing-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"County"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Abbeville"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Low Access Percents"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food_access-__0__-Low-Access-Percents'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>Percents are number of Census Tracts with listed classification divided by total tracts for the county</td> </tr>
+            
+            <tr> <td><code>"State"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"SC"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>25417</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food_access-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Numbers").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Numbers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Vehicle-Access").click(function() {
+            $( "#explore-food_access-__0__-Vehicle-Access" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Housing-Data").click(function() {
+            $( "#explore-food_access-__0__-Housing-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-County").click(function() {
+            $( "#explore-food_access-__0__-County" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Percents").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Percents" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-State").click(function() {
+            $( "#explore-food_access-__0__-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Population").click(function() {
+            $( "#explore-food_access-__0__-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-food_access-__0__-Low-Access-Percents' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Low Income and Low Access"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food_access-__0__-Low-Access-Percents-Low-Income-and-Low-Access'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>Low income is defined as annual family income at or below 200 percent of the Federal poverty threshold for family size.</td> </tr>
+            
+            <tr> <td><code>"Low Access Only"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-food_access-__0__-Low-Access-Percents-Low-Access-Only'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-food_access-__0__-Low-Access-Percents" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Percents-Low-Income-and-Low-Access").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Percents-Low-Income-and-Low-Access" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-food_access-__0__-Low-Access-Percents-Low-Access-Only").click(function() {
+            $( "#explore-food_access-__0__-Low-Access-Percents-Low-Access-Only" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+
+
+</div>

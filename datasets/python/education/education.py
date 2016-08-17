@@ -108,10 +108,11 @@ def get_state(state):
     Returns information about one state. Enrollment data is for Pre-K through 12th grade.
     
     :param state: The state you are interested in.
-    :type state: Str
+    :type state: str
     """
     
     # Match it against recommend values
+    
     potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT state FROM school").fetchall()]
     if state.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(state, potentials)

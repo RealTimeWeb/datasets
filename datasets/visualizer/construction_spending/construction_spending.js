@@ -1,6 +1,8 @@
 construction_spending = [
   {
-    "type": "number", 
+    "comment": "Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.amusement and recreation", 
     "data": [
       17866, 
       18317, 
@@ -172,12 +174,13 @@ construction_spending = [
       20770, 
       20918
     ], 
-    "name": "construction_spending.[0].annual.combined.amusement and recreation", 
     "pretty": "Annual Combined: Amusement And Recreation", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.commercial", 
     "data": [
       68254, 
       65840, 
@@ -349,12 +352,13 @@ construction_spending = [
       69415, 
       66427
     ], 
-    "name": "construction_spending.[0].annual.combined.commercial", 
     "pretty": "Annual Combined: Commercial", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.communication", 
     "data": [
       18873, 
       19943, 
@@ -526,12 +530,13 @@ construction_spending = [
       22576, 
       21635
     ], 
-    "name": "construction_spending.[0].annual.combined.communication", 
     "pretty": "Annual Combined: Communication", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.conservation and development", 
     "data": [
       3603, 
       3712, 
@@ -703,12 +708,13 @@ construction_spending = [
       6874, 
       7559
     ], 
-    "name": "construction_spending.[0].annual.combined.conservation and development", 
     "pretty": "Annual Combined: Conservation And Development", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.educational", 
     "data": [
       72357, 
       74336, 
@@ -880,12 +886,13 @@ construction_spending = [
       88196, 
       87195
     ], 
-    "name": "construction_spending.[0].annual.combined.educational", 
     "pretty": "Annual Combined: Educational", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Health Care includes hospitals, medical buildings, and special care. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.health care", 
     "data": [
       25746, 
       25438, 
@@ -1057,12 +1064,13 @@ construction_spending = [
       39265, 
       39209
     ], 
-    "name": "construction_spending.[0].annual.combined.health care", 
     "pretty": "Annual Combined: Health Care", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.highway and street", 
     "data": [
       62723, 
       61801, 
@@ -1234,12 +1242,13 @@ construction_spending = [
       96553, 
       110677
     ], 
-    "name": "construction_spending.[0].annual.combined.highway and street", 
     "pretty": "Annual Combined: Highway And Street", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.lodging", 
     "data": [
       11862, 
       11058, 
@@ -1411,12 +1420,13 @@ construction_spending = [
       22203, 
       23600
     ], 
-    "name": "construction_spending.[0].annual.combined.lodging", 
     "pretty": "Annual Combined: Lodging", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.manufacturing", 
     "data": [
       28318, 
       25977, 
@@ -1588,12 +1598,13 @@ construction_spending = [
       79065, 
       82358
     ], 
-    "name": "construction_spending.[0].annual.combined.manufacturing", 
     "pretty": "Annual Combined: Manufacturing", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "A categorization including all of the other categories except total and residential. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.nonresidential", 
     "data": [
       475704, 
       470946, 
@@ -1765,12 +1776,13 @@ construction_spending = [
       684481, 
       701883
     ], 
-    "name": "construction_spending.[0].annual.combined.nonresidential", 
     "pretty": "Annual Combined: Nonresidential", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Offices include financial, corporate, television, radio, and even manufacturing site offices. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.office", 
     "data": [
       49140, 
       47728, 
@@ -1942,12 +1954,13 @@ construction_spending = [
       59816, 
       59909
     ], 
-    "name": "construction_spending.[0].annual.combined.office", 
     "pretty": "Annual Combined: Office", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Power includes electric, gas, and oil, and also includes distribution structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.power", 
     "data": [
       46050, 
       44674, 
@@ -2119,12 +2132,13 @@ construction_spending = [
       86663, 
       89201
     ], 
-    "name": "construction_spending.[0].annual.combined.power", 
     "pretty": "Annual Combined: Power", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Public Safety includes correctional centers, police offices, fire and rescue. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.public safety", 
     "data": [
       8468, 
       8818, 
@@ -2296,12 +2310,13 @@ construction_spending = [
       8399, 
       8276
     ], 
-    "name": "construction_spending.[0].annual.combined.public safety", 
     "pretty": "Annual Combined: Public Safety", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.religious", 
     "data": [
       8745, 
       8520, 
@@ -2473,12 +2488,13 @@ construction_spending = [
       3082, 
       3211
     ], 
-    "name": "construction_spending.[0].annual.combined.religious", 
     "pretty": "Annual Combined: Religious", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.residential", 
     "data": [
       382979, 
       391434, 
@@ -2650,12 +2666,13 @@ construction_spending = [
       439017, 
       438958
     ], 
-    "name": "construction_spending.[0].annual.combined.residential", 
     "pretty": "Annual Combined: Residential", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This section includes sewage, dry waste, and waste water plants and line/pump stations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.sewage and waste disposal", 
     "data": [
       16392, 
       17059, 
@@ -2827,12 +2844,13 @@ construction_spending = [
       24598, 
       25583
     ], 
-    "name": "construction_spending.[0].annual.combined.sewage and waste disposal", 
     "pretty": "Annual Combined: Sewage And Waste Disposal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.total construction", 
     "data": [
       858654, 
       862338, 
@@ -3004,12 +3022,13 @@ construction_spending = [
       1123497, 
       1140841
     ], 
-    "name": "construction_spending.[0].annual.combined.total construction", 
     "pretty": "Annual Combined: Total Construction", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Transportation involves all the facilities related to air, land, and water travel. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.transportation", 
     "data": [
       25547, 
       25662, 
@@ -3181,12 +3200,13 @@ construction_spending = [
       44631, 
       43503
     ], 
-    "name": "construction_spending.[0].annual.combined.transportation", 
     "pretty": "Annual Combined: Transportation", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.combined.water supply", 
     "data": [
       11760, 
       12063, 
@@ -3358,12 +3378,13 @@ construction_spending = [
       12374, 
       12624
     ], 
-    "name": "construction_spending.[0].annual.combined.water supply", 
     "pretty": "Annual Combined: Water Supply", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.amusement and recreation", 
     "data": [
       7822, 
       7925, 
@@ -3535,12 +3556,13 @@ construction_spending = [
       10343, 
       10425
     ], 
-    "name": "construction_spending.[0].annual.private.amusement and recreation", 
     "pretty": "Annual Private: Amusement And Recreation", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.commercial", 
     "data": [
       63972, 
       62196, 
@@ -3712,12 +3734,13 @@ construction_spending = [
       66619, 
       63450
     ], 
-    "name": "construction_spending.[0].annual.private.commercial", 
     "pretty": "Annual Private: Commercial", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.communication", 
     "data": [
       18843, 
       19831, 
@@ -3889,12 +3912,13 @@ construction_spending = [
       22422, 
       21469
     ], 
-    "name": "construction_spending.[0].annual.private.communication", 
     "pretty": "Annual Private: Communication", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.conservation and development", 
     "data": [
       0, 
       0, 
@@ -4066,12 +4090,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].annual.private.conservation and development", 
     "pretty": "Annual Private: Conservation And Development", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.educational", 
     "data": [
       13616, 
       13588, 
@@ -4243,12 +4268,13 @@ construction_spending = [
       18078, 
       18377
     ], 
-    "name": "construction_spending.[0].annual.private.educational", 
     "pretty": "Annual Private: Educational", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Health Care includes hospitals, medical buildings, and special care. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.health care", 
     "data": [
       20888, 
       20859, 
@@ -4420,12 +4446,13 @@ construction_spending = [
       30296, 
       30685
     ], 
-    "name": "construction_spending.[0].annual.private.health care", 
     "pretty": "Annual Private: Health Care", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.highway and street", 
     "data": [
       0, 
       0, 
@@ -4597,12 +4624,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].annual.private.highway and street", 
     "pretty": "Annual Private: Highway And Street", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.lodging", 
     "data": [
       11669, 
       10861, 
@@ -4774,12 +4802,13 @@ construction_spending = [
       21842, 
       23303
     ], 
-    "name": "construction_spending.[0].annual.private.lodging", 
     "pretty": "Annual Private: Lodging", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.manufacturing", 
     "data": [
       28116, 
       25816, 
@@ -4951,12 +4980,13 @@ construction_spending = [
       78410, 
       81697
     ], 
-    "name": "construction_spending.[0].annual.private.manufacturing", 
     "pretty": "Annual Private: Manufacturing", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "A categorization including all of the other categories except total and residential. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.nonresidential", 
     "data": [
       263731, 
       256668, 
@@ -5128,12 +5158,13 @@ construction_spending = [
       394237, 
       398241
     ], 
-    "name": "construction_spending.[0].annual.private.nonresidential", 
     "pretty": "Annual Private: Nonresidential", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Offices include financial, corporate, television, radio, and even manufacturing site offices. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.office", 
     "data": [
       40176, 
       38891, 
@@ -5305,12 +5336,13 @@ construction_spending = [
       52013, 
       52435
     ], 
-    "name": "construction_spending.[0].annual.private.office", 
     "pretty": "Annual Private: Office", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Power includes electric, gas, and oil, and also includes distribution structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.power", 
     "data": [
       42407, 
       40693, 
@@ -5482,12 +5514,13 @@ construction_spending = [
       77377, 
       79453
     ], 
-    "name": "construction_spending.[0].annual.private.power", 
     "pretty": "Annual Private: Power", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Public Safety includes correctional centers, police offices, fire and rescue. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.public safety", 
     "data": [
       0, 
       0, 
@@ -5659,12 +5692,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].annual.private.public safety", 
     "pretty": "Annual Private: Public Safety", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.religious", 
     "data": [
       8742, 
       8517, 
@@ -5836,12 +5870,13 @@ construction_spending = [
       3076, 
       3211
     ], 
-    "name": "construction_spending.[0].annual.private.religious", 
     "pretty": "Annual Private: Religious", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.residential", 
     "data": [
       377631, 
       385745, 
@@ -6013,12 +6048,13 @@ construction_spending = [
       433108, 
       433164
     ], 
-    "name": "construction_spending.[0].annual.private.residential", 
     "pretty": "Annual Private: Residential", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This section includes sewage, dry waste, and waste water plants and line/pump stations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.sewage and waste disposal", 
     "data": [
       0, 
       0, 
@@ -6190,12 +6226,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].annual.private.sewage and waste disposal", 
     "pretty": "Annual Private: Sewage And Waste Disposal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.total construction", 
     "data": [
       641333, 
       642371, 
@@ -6367,12 +6404,13 @@ construction_spending = [
       827345, 
       831405
     ], 
-    "name": "construction_spending.[0].annual.private.total construction", 
     "pretty": "Annual Private: Total Construction", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Transportation involves all the facilities related to air, land, and water travel. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.transportation", 
     "data": [
       6512, 
       6437, 
@@ -6544,12 +6582,13 @@ construction_spending = [
       12820, 
       12874
     ], 
-    "name": "construction_spending.[0].annual.private.transportation", 
     "pretty": "Annual Private: Transportation", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.private.water supply", 
     "data": [
       0, 
       0, 
@@ -6721,12 +6760,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].annual.private.water supply", 
     "pretty": "Annual Private: Water Supply", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.amusement and recreation", 
     "data": [
       10044, 
       10392, 
@@ -6898,12 +6938,13 @@ construction_spending = [
       10427, 
       10493
     ], 
-    "name": "construction_spending.[0].annual.public.amusement and recreation", 
     "pretty": "Annual Public: Amusement And Recreation", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.commercial", 
     "data": [
       4282, 
       3644, 
@@ -7075,12 +7116,13 @@ construction_spending = [
       2796, 
       2977
     ], 
-    "name": "construction_spending.[0].annual.public.commercial", 
     "pretty": "Annual Public: Commercial", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.communication", 
     "data": [
       0, 
       0, 
@@ -7252,12 +7294,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].annual.public.communication", 
     "pretty": "Annual Public: Communication", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.conservation and development", 
     "data": [
       3578, 
       3704, 
@@ -7429,12 +7472,13 @@ construction_spending = [
       6784, 
       7483
     ], 
-    "name": "construction_spending.[0].annual.public.conservation and development", 
     "pretty": "Annual Public: Conservation And Development", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.educational", 
     "data": [
       58742, 
       60748, 
@@ -7606,12 +7650,13 @@ construction_spending = [
       70118, 
       68819
     ], 
-    "name": "construction_spending.[0].annual.public.educational", 
     "pretty": "Annual Public: Educational", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Health Care includes hospitals, medical buildings, and special care. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.health care", 
     "data": [
       4859, 
       4579, 
@@ -7783,12 +7828,13 @@ construction_spending = [
       8969, 
       8524
     ], 
-    "name": "construction_spending.[0].annual.public.health care", 
     "pretty": "Annual Public: Health Care", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.highway and street", 
     "data": [
       62553, 
       61664, 
@@ -7960,189 +8006,13 @@ construction_spending = [
       96211, 
       110369
     ], 
-    "name": "construction_spending.[0].annual.public.highway and street", 
     "pretty": "Annual Public: Highway And Street", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
-    "data": [
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0
-    ], 
+    "comment": "Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
     "name": "construction_spending.[0].annual.public.lodging", 
-    "pretty": "Annual Public: Lodging", 
-    "index": false
-  }, 
-  {
-    "type": "number", 
     "data": [
       0, 
       0, 
@@ -8314,12 +8184,191 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].annual.public.manufacturing", 
-    "pretty": "Annual Public: Manufacturing", 
-    "index": false
+    "pretty": "Annual Public: Lodging", 
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.manufacturing", 
+    "data": [
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0
+    ], 
+    "pretty": "Annual Public: Manufacturing", 
+    "type": "number"
+  }, 
+  {
+    "comment": "A categorization including all of the other categories except total and residential. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.nonresidential", 
     "data": [
       211973, 
       214277, 
@@ -8491,12 +8540,13 @@ construction_spending = [
       290244, 
       303643
     ], 
-    "name": "construction_spending.[0].annual.public.nonresidential", 
     "pretty": "Annual Public: Nonresidential", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Offices include financial, corporate, television, radio, and even manufacturing site offices. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.office", 
     "data": [
       8964, 
       8837, 
@@ -8668,12 +8718,13 @@ construction_spending = [
       7803, 
       7474
     ], 
-    "name": "construction_spending.[0].annual.public.office", 
     "pretty": "Annual Public: Office", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Power includes electric, gas, and oil, and also includes distribution structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.power", 
     "data": [
       3643, 
       3981, 
@@ -8845,12 +8896,13 @@ construction_spending = [
       9286, 
       9748
     ], 
-    "name": "construction_spending.[0].annual.public.power", 
     "pretty": "Annual Public: Power", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Public Safety includes correctional centers, police offices, fire and rescue. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.public safety", 
     "data": [
       8356, 
       8667, 
@@ -9022,12 +9074,13 @@ construction_spending = [
       8203, 
       8225
     ], 
-    "name": "construction_spending.[0].annual.public.public safety", 
     "pretty": "Annual Public: Public Safety", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.religious", 
     "data": [
       0, 
       0, 
@@ -9199,12 +9252,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].annual.public.religious", 
     "pretty": "Annual Public: Religious", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.residential", 
     "data": [
       5348, 
       5689, 
@@ -9376,12 +9430,13 @@ construction_spending = [
       5909, 
       5794
     ], 
-    "name": "construction_spending.[0].annual.public.residential", 
     "pretty": "Annual Public: Residential", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This section includes sewage, dry waste, and waste water plants and line/pump stations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.sewage and waste disposal", 
     "data": [
       16077, 
       16645, 
@@ -9553,12 +9608,13 @@ construction_spending = [
       24385, 
       25353
     ], 
-    "name": "construction_spending.[0].annual.public.sewage and waste disposal", 
     "pretty": "Annual Public: Sewage And Waste Disposal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.total construction", 
     "data": [
       217321, 
       219966, 
@@ -9730,12 +9786,13 @@ construction_spending = [
       296153, 
       309437
     ], 
-    "name": "construction_spending.[0].annual.public.total construction", 
     "pretty": "Annual Public: Total Construction", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Transportation involves all the facilities related to air, land, and water travel. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.transportation", 
     "data": [
       19035, 
       19226, 
@@ -9907,12 +9964,13 @@ construction_spending = [
       31812, 
       30629
     ], 
-    "name": "construction_spending.[0].annual.public.transportation", 
     "pretty": "Annual Public: Transportation", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].annual.public.water supply", 
     "data": [
       11412, 
       11717, 
@@ -10084,12 +10142,13 @@ construction_spending = [
       12275, 
       12426
     ], 
-    "name": "construction_spending.[0].annual.public.water supply", 
     "pretty": "Annual Public: Water Supply", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.amusement and recreation", 
     "data": [
       1328, 
       1386, 
@@ -10261,12 +10320,13 @@ construction_spending = [
       1638, 
       1495
     ], 
-    "name": "construction_spending.[0].current.combined.amusement and recreation", 
     "pretty": "Current Combined: Amusement And Recreation", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.commercial", 
     "data": [
       4887, 
       4825, 
@@ -10438,12 +10498,13 @@ construction_spending = [
       5462, 
       4758
     ], 
-    "name": "construction_spending.[0].current.combined.commercial", 
     "pretty": "Current Combined: Commercial", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.communication", 
     "data": [
       1416, 
       1430, 
@@ -10615,12 +10676,13 @@ construction_spending = [
       2208, 
       1409
     ], 
-    "name": "construction_spending.[0].current.combined.communication", 
     "pretty": "Current Combined: Communication", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.conservation and development", 
     "data": [
       271, 
       278, 
@@ -10792,12 +10854,13 @@ construction_spending = [
       580, 
       531
     ], 
-    "name": "construction_spending.[0].current.combined.conservation and development", 
     "pretty": "Current Combined: Conservation And Development", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.educational", 
     "data": [
       5125, 
       5134, 
@@ -10969,12 +11032,13 @@ construction_spending = [
       6356, 
       5887
     ], 
-    "name": "construction_spending.[0].current.combined.educational", 
     "pretty": "Current Combined: Educational", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Health Care includes hospitals, medical buildings, and special care. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.health care", 
     "data": [
       2013, 
       1983, 
@@ -11146,12 +11210,13 @@ construction_spending = [
       3248, 
       2968
     ], 
-    "name": "construction_spending.[0].current.combined.health care", 
     "pretty": "Current Combined: Health Care", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.highway and street", 
     "data": [
       3180, 
       2979, 
@@ -11323,12 +11388,13 @@ construction_spending = [
       6041, 
       5023
     ], 
-    "name": "construction_spending.[0].current.combined.highway and street", 
     "pretty": "Current Combined: Highway And Street", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.lodging", 
     "data": [
       989, 
       922, 
@@ -11500,12 +11566,13 @@ construction_spending = [
       1883, 
       1814
     ], 
-    "name": "construction_spending.[0].current.combined.lodging", 
     "pretty": "Current Combined: Lodging", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.manufacturing", 
     "data": [
       2134, 
       1972, 
@@ -11677,12 +11744,13 @@ construction_spending = [
       7069, 
       6272
     ], 
-    "name": "construction_spending.[0].current.combined.manufacturing", 
     "pretty": "Current Combined: Manufacturing", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "A categorization including all of the other categories except total and residential. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.nonresidential", 
     "data": [
       33545, 
       32868, 
@@ -11854,12 +11922,13 @@ construction_spending = [
       54150, 
       48064
     ], 
-    "name": "construction_spending.[0].current.combined.nonresidential", 
     "pretty": "Current Combined: Nonresidential", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Offices include financial, corporate, television, radio, and even manufacturing site offices. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.office", 
     "data": [
       3763, 
       3595, 
@@ -12031,12 +12100,13 @@ construction_spending = [
       4914, 
       4547
     ], 
-    "name": "construction_spending.[0].current.combined.office", 
     "pretty": "Current Combined: Office", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Power includes electric, gas, and oil, and also includes distribution structures. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.power", 
     "data": [
       3402, 
       3324, 
@@ -12208,12 +12278,13 @@ construction_spending = [
       7340, 
       6923
     ], 
-    "name": "construction_spending.[0].current.combined.power", 
     "pretty": "Current Combined: Power", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Public Safety includes correctional centers, police offices, fire and rescue. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.public safety", 
     "data": [
       647, 
       652, 
@@ -12385,12 +12456,13 @@ construction_spending = [
       691, 
       635
     ], 
-    "name": "construction_spending.[0].current.combined.public safety", 
     "pretty": "Current Combined: Public Safety", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.religious", 
     "data": [
       667, 
       637, 
@@ -12562,12 +12634,13 @@ construction_spending = [
       255, 
       242
     ], 
-    "name": "construction_spending.[0].current.combined.religious", 
     "pretty": "Current Combined: Religious", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.residential", 
     "data": [
       25972, 
       25721, 
@@ -12739,12 +12812,13 @@ construction_spending = [
       32378, 
       29521
     ], 
-    "name": "construction_spending.[0].current.combined.residential", 
     "pretty": "Current Combined: Residential", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This section includes sewage, dry waste, and waste water plants and line/pump stations. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.sewage and waste disposal", 
     "data": [
       1150, 
       1149, 
@@ -12916,12 +12990,13 @@ construction_spending = [
       1930, 
       1703
     ], 
-    "name": "construction_spending.[0].current.combined.sewage and waste disposal", 
     "pretty": "Current Combined: Sewage And Waste Disposal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.total construction", 
     "data": [
       59516, 
       58588, 
@@ -13093,12 +13168,13 @@ construction_spending = [
       86527, 
       77586
     ], 
-    "name": "construction_spending.[0].current.combined.total construction", 
     "pretty": "Current Combined: Total Construction", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Transportation involves all the facilities related to air, land, and water travel. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.transportation", 
     "data": [
       1729, 
       1729, 
@@ -13270,12 +13346,13 @@ construction_spending = [
       3592, 
       2958
     ], 
-    "name": "construction_spending.[0].current.combined.transportation", 
     "pretty": "Current Combined: Transportation", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.combined.water supply", 
     "data": [
       846, 
       873, 
@@ -13447,12 +13524,13 @@ construction_spending = [
       945, 
       899
     ], 
-    "name": "construction_spending.[0].current.combined.water supply", 
     "pretty": "Current Combined: Water Supply", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.amusement and recreation", 
     "data": [
       609, 
       631, 
@@ -13624,12 +13702,13 @@ construction_spending = [
       822, 
       805
     ], 
-    "name": "construction_spending.[0].current.private.amusement and recreation", 
     "pretty": "Current Private: Amusement And Recreation", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.commercial", 
     "data": [
       4588, 
       4557, 
@@ -13801,12 +13880,13 @@ construction_spending = [
       5234, 
       4546
     ], 
-    "name": "construction_spending.[0].current.private.commercial", 
     "pretty": "Current Private: Commercial", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.communication", 
     "data": [
       1414, 
       1421, 
@@ -13978,12 +14058,13 @@ construction_spending = [
       2195, 
       1395
     ], 
-    "name": "construction_spending.[0].current.private.communication", 
     "pretty": "Current Private: Communication", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.conservation and development", 
     "data": [
       0, 
       0, 
@@ -14155,12 +14236,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].current.private.conservation and development", 
     "pretty": "Current Private: Conservation And Development", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.educational", 
     "data": [
       1000, 
       977, 
@@ -14332,12 +14414,13 @@ construction_spending = [
       1383, 
       1321
     ], 
-    "name": "construction_spending.[0].current.private.educational", 
     "pretty": "Current Private: Educational", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Health Care includes hospitals, medical buildings, and special care. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.health care", 
     "data": [
       1629, 
       1629, 
@@ -14509,12 +14592,13 @@ construction_spending = [
       2507, 
       2311
     ], 
-    "name": "construction_spending.[0].current.private.health care", 
     "pretty": "Current Private: Health Care", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.highway and street", 
     "data": [
       0, 
       0, 
@@ -14686,12 +14770,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].current.private.highway and street", 
     "pretty": "Current Private: Highway And Street", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.lodging", 
     "data": [
       972, 
       905, 
@@ -14863,12 +14948,13 @@ construction_spending = [
       1853, 
       1789
     ], 
-    "name": "construction_spending.[0].current.private.lodging", 
     "pretty": "Current Private: Lodging", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.manufacturing", 
     "data": [
       2117, 
       1959, 
@@ -15040,12 +15126,13 @@ construction_spending = [
       7015, 
       6217
     ], 
-    "name": "construction_spending.[0].current.private.manufacturing", 
     "pretty": "Current Private: Manufacturing", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "A categorization including all of the other categories except total and residential. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.nonresidential", 
     "data": [
       19701, 
       19177, 
@@ -15217,12 +15304,13 @@ construction_spending = [
       33312, 
       29791
     ], 
-    "name": "construction_spending.[0].current.private.nonresidential", 
     "pretty": "Current Private: Nonresidential", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Offices include financial, corporate, television, radio, and even manufacturing site offices. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.office", 
     "data": [
       3066, 
       2934, 
@@ -15394,12 +15482,13 @@ construction_spending = [
       4273, 
       3996
     ], 
-    "name": "construction_spending.[0].current.private.office", 
     "pretty": "Current Private: Office", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Power includes electric, gas, and oil, and also includes distribution structures. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.power", 
     "data": [
       3129, 
       3040, 
@@ -15571,12 +15660,13 @@ construction_spending = [
       6612, 
       6253
     ], 
-    "name": "construction_spending.[0].current.private.power", 
     "pretty": "Current Private: Power", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Public Safety includes correctional centers, police offices, fire and rescue. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.public safety", 
     "data": [
       0, 
       0, 
@@ -15748,12 +15838,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].current.private.public safety", 
     "pretty": "Current Private: Public Safety", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.religious", 
     "data": [
       667, 
       637, 
@@ -15925,12 +16016,13 @@ construction_spending = [
       254, 
       242
     ], 
-    "name": "construction_spending.[0].current.private.religious", 
     "pretty": "Current Private: Religious", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.residential", 
     "data": [
       25572, 
       25298, 
@@ -16102,12 +16194,13 @@ construction_spending = [
       31911, 
       29125
     ], 
-    "name": "construction_spending.[0].current.private.residential", 
     "pretty": "Current Private: Residential", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This section includes sewage, dry waste, and waste water plants and line/pump stations. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.sewage and waste disposal", 
     "data": [
       0, 
       0, 
@@ -16279,12 +16372,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].current.private.sewage and waste disposal", 
     "pretty": "Current Private: Sewage And Waste Disposal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.total construction", 
     "data": [
       45273, 
       44475, 
@@ -16456,12 +16550,13 @@ construction_spending = [
       65223, 
       58916
     ], 
-    "name": "construction_spending.[0].current.private.total construction", 
     "pretty": "Current Private: Total Construction", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Transportation involves all the facilities related to air, land, and water travel. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.transportation", 
     "data": [
       444, 
       412, 
@@ -16633,12 +16728,13 @@ construction_spending = [
       1083, 
       858
     ], 
-    "name": "construction_spending.[0].current.private.transportation", 
     "pretty": "Current Private: Transportation", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.private.water supply", 
     "data": [
       0, 
       0, 
@@ -16810,12 +16906,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].current.private.water supply", 
     "pretty": "Current Private: Water Supply", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.amusement and recreation", 
     "data": [
       719, 
       755, 
@@ -16987,12 +17084,13 @@ construction_spending = [
       816, 
       691
     ], 
-    "name": "construction_spending.[0].current.public.amusement and recreation", 
     "pretty": "Current Public: Amusement And Recreation", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.commercial", 
     "data": [
       299, 
       268, 
@@ -17164,12 +17262,13 @@ construction_spending = [
       227, 
       212
     ], 
-    "name": "construction_spending.[0].current.public.commercial", 
     "pretty": "Current Public: Commercial", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.communication", 
     "data": [
       0, 
       0, 
@@ -17341,12 +17440,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].current.public.communication", 
     "pretty": "Current Public: Communication", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.conservation and development", 
     "data": [
       268, 
       277, 
@@ -17518,12 +17618,13 @@ construction_spending = [
       572, 
       525
     ], 
-    "name": "construction_spending.[0].current.public.conservation and development", 
     "pretty": "Current Public: Conservation And Development", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.educational", 
     "data": [
       4126, 
       4157, 
@@ -17695,12 +17796,13 @@ construction_spending = [
       4973, 
       4567
     ], 
-    "name": "construction_spending.[0].current.public.educational", 
     "pretty": "Current Public: Educational", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Health Care includes hospitals, medical buildings, and special care. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.health care", 
     "data": [
       384, 
       353, 
@@ -17872,12 +17974,13 @@ construction_spending = [
       741, 
       656
     ], 
-    "name": "construction_spending.[0].current.public.health care", 
     "pretty": "Current Public: Health Care", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.highway and street", 
     "data": [
       3168, 
       2969, 
@@ -18049,189 +18152,13 @@ construction_spending = [
       6008, 
       5005
     ], 
-    "name": "construction_spending.[0].current.public.highway and street", 
     "pretty": "Current Public: Highway And Street", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
-    "data": [
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0, 
-      0
-    ], 
+    "comment": "Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
     "name": "construction_spending.[0].current.public.lodging", 
-    "pretty": "Current Public: Lodging", 
-    "index": false
-  }, 
-  {
-    "type": "number", 
     "data": [
       0, 
       0, 
@@ -18403,12 +18330,191 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].current.public.manufacturing", 
-    "pretty": "Current Public: Manufacturing", 
-    "index": false
+    "pretty": "Current Public: Lodging", 
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.manufacturing", 
+    "data": [
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0, 
+      0
+    ], 
+    "pretty": "Current Public: Manufacturing", 
+    "type": "number"
+  }, 
+  {
+    "comment": "A categorization including all of the other categories except total and residential. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.nonresidential", 
     "data": [
       13844, 
       13691, 
@@ -18580,12 +18686,13 @@ construction_spending = [
       20838, 
       18273
     ], 
-    "name": "construction_spending.[0].current.public.nonresidential", 
     "pretty": "Current Public: Nonresidential", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Offices include financial, corporate, television, radio, and even manufacturing site offices. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.office", 
     "data": [
       697, 
       661, 
@@ -18757,12 +18864,13 @@ construction_spending = [
       641, 
       551
     ], 
-    "name": "construction_spending.[0].current.public.office", 
     "pretty": "Current Public: Office", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Power includes electric, gas, and oil, and also includes distribution structures. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.power", 
     "data": [
       273, 
       284, 
@@ -18934,12 +19042,13 @@ construction_spending = [
       728, 
       670
     ], 
-    "name": "construction_spending.[0].current.public.power", 
     "pretty": "Current Public: Power", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Public Safety includes correctional centers, police offices, fire and rescue. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.public safety", 
     "data": [
       637, 
       640, 
@@ -19111,12 +19220,13 @@ construction_spending = [
       677, 
       632
     ], 
-    "name": "construction_spending.[0].current.public.public safety", 
     "pretty": "Current Public: Public Safety", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.religious", 
     "data": [
       0, 
       0, 
@@ -19288,12 +19398,13 @@ construction_spending = [
       0, 
       0
     ], 
-    "name": "construction_spending.[0].current.public.religious", 
     "pretty": "Current Public: Religious", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.residential", 
     "data": [
       400, 
       423, 
@@ -19465,12 +19576,13 @@ construction_spending = [
       467, 
       396
     ], 
-    "name": "construction_spending.[0].current.public.residential", 
     "pretty": "Current Public: Residential", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This section includes sewage, dry waste, and waste water plants and line/pump stations. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.sewage and waste disposal", 
     "data": [
       1127, 
       1119, 
@@ -19642,12 +19754,13 @@ construction_spending = [
       1913, 
       1688
     ], 
-    "name": "construction_spending.[0].current.public.sewage and waste disposal", 
     "pretty": "Current Public: Sewage And Waste Disposal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.total construction", 
     "data": [
       14243, 
       14113, 
@@ -19819,12 +19932,13 @@ construction_spending = [
       21305, 
       18669
     ], 
-    "name": "construction_spending.[0].current.public.total construction", 
     "pretty": "Current Public: Total Construction", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Transportation involves all the facilities related to air, land, and water travel. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.transportation", 
     "data": [
       1285, 
       1318, 
@@ -19996,12 +20110,13 @@ construction_spending = [
       2509, 
       2099
     ], 
-    "name": "construction_spending.[0].current.public.transportation", 
     "pretty": "Current Public: Transportation", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.", 
+    "index": false, 
+    "name": "construction_spending.[0].current.public.water supply", 
     "data": [
       826, 
       851, 
@@ -20173,12 +20288,13 @@ construction_spending = [
       937, 
       885
     ], 
-    "name": "construction_spending.[0].current.public.water supply", 
     "pretty": "Current Public: Water Supply", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "A number representing the index of this report. The first report is 0, the second report is 1, etc.", 
+    "index": false, 
+    "name": "construction_spending.[0].time.index", 
     "data": [
       1, 
       2, 
@@ -20350,12 +20466,13 @@ construction_spending = [
       168, 
       169
     ], 
-    "name": "construction_spending.[0].time.index", 
     "pretty": "Time: Index", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The numeric month that this report was made. January is 1, February is 2, etc.", 
+    "index": false, 
+    "name": "construction_spending.[0].time.month", 
     "data": [
       1, 
       2, 
@@ -20527,12 +20644,13 @@ construction_spending = [
       12, 
       1
     ], 
-    "name": "construction_spending.[0].time.month", 
     "pretty": "Time: Month", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "text", 
+    "comment": "The name of the month that this report was made.", 
+    "index": false, 
+    "name": "construction_spending.[0].time.month name", 
     "data": [
       "Jan", 
       "Feb", 
@@ -20704,12 +20822,13 @@ construction_spending = [
       "Dec", 
       "Jan"
     ], 
-    "name": "construction_spending.[0].time.month name", 
     "pretty": "Time: Month Name", 
-    "index": false
+    "type": "text"
   }, 
   {
-    "type": "text", 
+    "comment": "The reporting period that this report made in (e.g., \"\")", 
+    "index": false, 
+    "name": "construction_spending.[0].time.period", 
     "data": [
       "Jan2002", 
       "Feb2002", 
@@ -20881,12 +21000,13 @@ construction_spending = [
       "Dec2015", 
       "Jan2016"
     ], 
-    "name": "construction_spending.[0].time.period", 
     "pretty": "Time: Period", 
-    "index": false
+    "type": "text"
   }, 
   {
-    "type": "number", 
+    "comment": "The year that this report was made in.", 
+    "index": true, 
+    "name": "construction_spending.[0].time.year", 
     "data": [
       2002, 
       2002, 
@@ -21058,8 +21178,7 @@ construction_spending = [
       2015, 
       2016
     ], 
-    "name": "construction_spending.[0].time.year", 
     "pretty": "Time: Year", 
-    "index": true
+    "type": "number"
   }
 ]

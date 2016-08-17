@@ -1,1 +1,0 @@
-billionaires_bar = []

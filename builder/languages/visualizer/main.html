@@ -33,8 +33,8 @@
     
     <!-- Datasets! -->
     {% for local in locals %}
-    <script src='{{ local.name }}.js'></script>
-    <script src='{{ local.name }}_bar.js'></script>
+    <script src='{{ local.name|snake_case }}.js'></script>
+    <script src='{{ local.name|snake_case }}_bar.js'></script>
     {% endfor %}
     
     <script>
@@ -147,12 +147,12 @@ var mainModel = {
     },
     'bars': ko.observableArray([
     {% for local in locals %}
-        {'name': {{ local.name|replace('.', ' ')|tojson }}, 'data': {{ local.name }}_bar}{{ ',' if not loop.last}}
+        {'name': {{ local.name|snake_case|replace('.', ' ')|tojson }}, 'data': {{ local.name|snake_case }}_bar}{{ ',' if not loop.last}}
     {% endfor %}
     ]),
     'structures':  ko.observableArray([
     {% for local in locals %}
-        {'name': {{ local.name|replace('.', ' ')|tojson }}, 'order': {{ local.order|tojson }}, 'data': {{ local.name }}}{{ ',' if not loop.last}}
+        {'name': {{ local.name|snake_case|replace('.', ' ')|tojson }}, 'order': {{ local.order|tojson }}, 'data': {{ local.name|snake_case }}}{{ ',' if not loop.last}}
     {% endfor %}
     ])
 };

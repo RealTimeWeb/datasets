@@ -112,6 +112,7 @@ def get_song_by_name(title):
     """
     
     # Match it against recommend values
+    
     potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT title FROM music").fetchall()]
     if title.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(title, potentials)
@@ -143,6 +144,7 @@ def get_songs_by_artist(artist, test=True):
     """
     
     # Match it against recommend values
+    
     potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT artist FROM music").fetchall()]
     if artist.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(artist, potentials)

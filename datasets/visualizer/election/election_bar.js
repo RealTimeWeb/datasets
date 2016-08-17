@@ -1,1 +1,0 @@
-election_bar = []

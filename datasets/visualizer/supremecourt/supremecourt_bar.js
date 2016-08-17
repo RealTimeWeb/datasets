@@ -1,1 +1,0 @@
-supremecourt_bar = []

@@ -16,7 +16,7 @@ from languages.build_sql import build_sql
 from languages.build_metrics import build_metrics
 from languages.build_visualizer import build_visualizer
 from languages.build_blockpy import build_blockpy
-from languages.build_index import add_to_index, rebuild_index
+from languages.build_index import add_to_index, rebuild_index, reconstruct_index
 
 try:
     from tqdm import tqdm
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="The main Builder tool")
 
     parser.add_argument('spec', 
-                        help='Location of a spec file (or source directory with -a).')
+                        help='Location of a spec file (or source directory with -a and -i).')
     parser.add_argument('-l', '--language', 
                         help='The desired output language bindings. If not present, defaults to all known languages.')
     parser.add_argument('-v', '--validate', 
@@ -44,21 +44,30 @@ if __name__ == '__main__':
     parser.add_argument('-a', '--all',
                         help='Builds all .corgis files in the source directory.',
                         action='store_true')
-    parser.add_argument('-i', '--index',
+    parser.add_argument('-p', '--prevent',
                         help='Prevents rebuilding the index.',
-                        action='store_false')
+                        action='store_true')
+    parser.add_argument('-i', '--index',
+                        help="Rebuilds the index from the filesystem",
+                        action="store_true")
     parser.add_argument('target', help="Build output location.")
 
     args = parser.parse_args()
 
     if args.all:
-        args.spec = glob.glob(args.spec+'*.corgis')
-        args.spec = [spec for spec in args.spec if spec not in blacklist]
+        specs = glob.glob(args.spec+'*.corgis')
+        specs = [spec for spec in specs if spec not in blacklist]
+    elif args.index:
+        specs= []
     else:
-        args.spec = [args.spec]
+        specs = [args.spec]
 
-    for a_spec in tqdm(args.spec):
-        print(a_spec)
+    if args.index:
+        reconstruct_index(args.target, args.spec)
+        if not args.prevent:
+            rebuild_index(args.target)
+        
+    for a_spec in tqdm(specs):
         with open(a_spec, 'r') as specification_file:
             specification = yaml.load(specification_file)
             # pprint(specification)
@@ -103,5 +112,5 @@ if __name__ == '__main__':
                 if language_target == 'java':
                     post_build(compiled_dict, files, moves, args.target)
                 add_to_index(args.target, language_target, compiled)
-            if args.index:
+            if not args.prevent:
                 rebuild_index(args.target)

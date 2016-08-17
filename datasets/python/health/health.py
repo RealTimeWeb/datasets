@@ -108,8 +108,11 @@ def get_reports_by_year(year, test=True):
     Returns information about the status of disease for the given year, from 1928 to 2011.
     
     :param year: A year between 1928 and 2011.
-    :type year: Int
+    :type year: int
     """
+    
+    if not isinstance(year, int):
+        raise DatasetException("Error, the parameter year must be of type int")
     
     if _Constants._TEST or test:
         rows = _Constants._DATABASE.execute("SELECT data FROM health WHERE year=? ORDER BY year, location, disease ASC LIMIT {hardware}".format(
@@ -135,10 +138,11 @@ def get_reports_by_disease(disease, test=True):
     Returns information about the status of disease for the given disease.
     
     :param disease: A disease such as 'HEPATITIS A', 'MEASLES', 'MUMPS', 'PERTUSSIS', 'POLIO', 'RUBELLA', or 'SMALLPOX'.
-    :type disease: Str
+    :type disease: str
     """
     
     # Match it against recommend values
+    
     potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT disease FROM health").fetchall()]
     if disease.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(disease, potentials)
@@ -170,10 +174,11 @@ def get_reports_by_location(location, test=True):
     Returns information about the status of disease for the given location.
     
     :param location: A state such as "Alabama"
-    :type location: Str
+    :type location: str
     """
     
     # Match it against recommend values
+    
     potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT location FROM health").fetchall()]
     if location.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(location, potentials)

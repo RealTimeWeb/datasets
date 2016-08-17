@@ -1,0 +1,366 @@
+
+
+
+
+
+
+<body>
+
+<script>
+var user_id = "";
+if (localStorage.getItem('user_id') !== null) {
+    user_id = localStorage.getItem('user_id');
+}
+function log(action, body) {
+    try {
+        $.post('https://think.cs.vt.edu/blockpy/services/log', {
+                    'user_id': user_id,
+                    'event': 'corgis',
+                    'action': action,
+                    'body': body
+                }, function(data) {
+                    console.log(data);
+                });
+    } catch(err) {console.error(err)};
+}
+
+var searcher = lunr(function() {
+    this.field('name', 10);
+    this.field('tags', 100);
+    this.field('body');
+    this.field('description');
+    
+    this.ref('name');
+});
+$(document).ready(function() {
+    $("#search-bar").on('input propertychange', function() {
+        var needle = $(this).val();
+        if (needle == "") {
+            $(".dataset-card").show();
+        } else {
+            var results = searcher.search(needle);
+            $(".dataset-card").hide();
+            results.forEach(function (data) {
+                $("#"+data.ref).show();
+            });
+        }
+        log('search', needle);
+    });
+    log('load', 'index');
+    function doPoll(){
+        log('remain', 'index, '+$(document).scrollTop()+", "+$(document).height());
+    }
+    setInterval(doPoll, 5000);
+});
+</script>
+
+<div class="container">
+
+    <div class="page-header">
+        <img src='../_images/csv.png' class='pull-left img-responsive' style='max-width:64px; max-height: 64px'>
+        <img src='../_images/corgis-logo-smaller.png' class='pull-right img-responsive'>
+        <h1>Csv Datasets</h1>
+        <p class="lead">The <b>C</b>ollection of <b>R</b>eally <b>G</b>reat, <b>I</b>nteresting, <b>S</b>ituated Datasets</p>
+        <span class="text-muted">By Austin Cory Bart, Ryan Whitcomb, Jason Riddle, Omar Saleem, Dr. Eli Tilevich, Dr. Clifford A. Shaffer, Dr. Dennis Kafura</span><br>
+    </div>
+    
+    <div class='row'>
+    <div class='search-bar'>
+    <form class="form-horizontal">
+      <div class="form-group form-group-lg">
+        <label for="search-bar" class="col-sm-2 control-label">Filter</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="search-bar" placeholder="Keyword or phrase">
+        </div>
+      </div>
+    </form>
+    </div>
+    </div>
+    <hr>
+    
+    <div class="row">
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="publishers">
+      
+      <div class="media-left  media-middle">
+        <a href="publishers/publishers.html">
+          <img class="media-object" src="publishers/publishers.png" alt="Publishers" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="publishers/publishers.html">
+        <h4 class="media-heading">Publishers</h4>
+        </a>
+        <br>
+        <i>publishers, amazon, books, sales, genres, literature, english</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "publishers",
+            'body': "From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.",
+            'description': "",
+            'tags': ["publishers", "amazon", "books", "sales", "genres", "literature", "english"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="finance">
+      
+      <div class="media-left  media-middle">
+        <a href="finance/finance.html">
+          <img class="media-object" src="finance/finance.png" alt="Finance" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="finance/finance.html">
+        <h4 class="media-heading">Finance</h4>
+        </a>
+        The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states.<br>
+        <i>finance, government, expenditure, charges, money, united states, us</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "finance",
+            'body': "The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states. The data contain detail of revenue by source, expenditure by object and function, indebtedness by term, and assets by purpose. This data goes back for almost two decades across every date.",
+            'description': "The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states.",
+            'tags': ["finance", "government", "expenditure", "charges", "money", "united states", "us"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drugs">
+      
+      <div class="media-left  media-middle">
+        <a href="drugs/drugs.html">
+          <img class="media-object" src="drugs/drugs.png" alt="Drugs" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="drugs/drugs.html">
+        <h4 class="media-heading">Drugs</h4>
+        </a>
+        This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.<br>
+        <i>drugs, substances, drug usage</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "drugs",
+            'body': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.",
+            'description': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.",
+            'tags': ["drugs", "substances", "drug usage"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="cars">
+      
+      <div class="media-left  media-middle">
+        <a href="cars/cars.html">
+          <img class="media-object" src="cars/cars.png" alt="Cars" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="cars/cars.html">
+        <h4 class="media-heading">Cars</h4>
+        </a>
+        <br>
+        <i>cars, vehicles, fuel</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "cars",
+            'body': "This is a dataset about cars and how much fuel they use.",
+            'description': "",
+            'tags': ["cars", "vehicles", "fuel"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="energy">
+      
+      <div class="media-left  media-middle">
+        <a href="energy/energy.html">
+          <img class="media-object" src="energy/energy.png" alt="Energy" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="energy/energy.html">
+        <h4 class="media-heading">Energy</h4>
+        </a>
+        United States Government reports on consumption, production, import, and export of various fuel sources.<br>
+        <i>energy, renewable, united states, us, nuclear, fossil fuels, power</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "energy",
+            'body': "United States Government reports on consumption, production, import, and export of various fuel sources. This data comes from the US Energy Information Administration, which has historical data from 1949 to 2014. All numbers are given in Quadrillion BTUs.",
+            'description': "United States Government reports on consumption, production, import, and export of various fuel sources.",
+            'tags': ["energy", "renewable", "united states", "us", "nuclear", "fossil fuels", "power"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
+      
+      <div class="media-left  media-middle">
+        <a href="health/health.html">
+          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="health/health.html">
+        <h4 class="media-heading">Health</h4>
+        </a>
+        <br>
+        <i>health, diseases, infection</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "health",
+            'body': "This library holds data about reports of diseases in America.",
+            'description': "",
+            'tags': ["health", "diseases", "infection"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+      
+      <div class="media-left  media-middle">
+        <a href="broadway/broadway.html">
+          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="broadway/broadway.html">
+        <h4 class="media-heading">Broadway</h4>
+        </a>
+        This library holds data about Broadway shows, such as tickets sold.<br>
+        <i>broadway, musical, theatre, tickets</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "broadway",
+            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
+            'description': "This library holds data about Broadway shows, such as tickets sold.",
+            'tags': ["broadway", "musical", "theatre", "tickets"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="music">
+      
+      <div class="media-left  media-middle">
+        <a href="music/music.html">
+          <img class="media-object" src="music/music.png" alt="Music" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="music/music.html">
+        <h4 class="media-heading">Music</h4>
+        </a>
+        The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.<br>
+        <i>music, songs, artists, creativity, media</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "music",
+            'body': "This library comes from the Million Song Dataset, which used a company called the Echo Nest to derive data points about one million popular contemporary songs. The Million Song Dataset is a collaboration between the Echo Nest and LabROSA, a laboratory working towards intelligent machine listening. The project was also funded in part by the National Science Foundation of America (NSF) to provide a large data set to evaluate research related to algorithms on a commercial size while promoting further research into the Music Information Retrieval field. The data contains standard information about the songs such as artist name, title, and year released. Additionally, the data contains more advanced information; for example, the length of the song, how many musical bars long the song is, and how long the fade in to the song was.",
+            'description': "The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.",
+            'tags': ["music", "songs", "artists", "creativity", "media"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="education">
+      
+      <div class="media-left  media-middle">
+        <a href="education/education.html">
+          <img class="media-object" src="education/education.png" alt="Education" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="education/education.html">
+        <h4 class="media-heading">Education</h4>
+        </a>
+        Information about K-12 education for different states, collected from the US government.<br>
+        <i>school, education, K-12, kindergarten, learning, teaching</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "education",
+            'body': "This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The 'Year' field has records for Preschool, Kindergarten, and grades 1-12.",
+            'description': "Information about K-12 education for different states, collected from the US government.",
+            'tags': ["school", "education", "K-12", "kindergarten", "learning", "teaching"]
+        }
+    );
+    </script>
+    
+    </div>
+    
+    <div class="row">
+    <hr>
+    
+    <h2>Future Potential Datasets</h2>
+    
+    <p>The datasets listed below have not been fully implemented, but they could be! Feel free to consider them too.</p>
+    
+    <div class='col-md-8 col-md-offset-1'>
+    <ol>
+    <li>Agriculture: Datasets about agricultural statistics in the US (<a href="http://www.ers.usda.gov/data-products.aspx">Link</a>)</li>
+    <li>Cancer: Incidences of different kinds of cancer in the US.</li>
+    <li>Drug spending: Information about how much drugs cost to sell and produce.</li>
+    <li>Food: Information about food regulated by the US.</li>
+    <li>Foreign assistance: Reports of foreign assistance from the US to other countries.</li>
+    <li>Hospitals: Information about hospitals across the US.</li>
+    <li>Hydropower: Information about hydropower dams across the US.</li>
+    <li>Mortgage: HMDA data provide information regarding home mortgage lending activity. The Home Mortgage Disclosure Act (HMDA) was enacted by Congress in 1975 and was implemented by the Federal Reserve Board's Regulation C. On July 21, 2011, the rule-writing authority of Regulation C was transferred to the Consumer Financial Protection Bureau (CFPB). </li>
+    <li>New York Crime: Detailed information about crime reports in New York City.</li>
+    <li>Officer Shootings: Reports about shootings committed by officers, including race.</li>
+    <li>Religious groups: Information about membership in religious groups (<a href="http://www.thearda.com/rcms2010/">Link</a>)</li>
+    <li>State Department per Diem: Information about per diem reported by US State Department employees.</li>
+    <li>University crime: Reported statistics of crime on college campuses.</li>
+    <li>Youth risk: The Youth Risk Behavior Surveillance System (YRBSS) monitors six types of health-risk behaviors that contribute to the leading causes of death and disability among youth and adults, including: Behaviors that contribute to unintentional injuries and violence, Sexual behaviors that contribute to unintended pregnancy and sexually transmitted diseases, including HIV infection, Alcohol and other drug use, Tobacco use, Unhealthy dietary behaviors, Inadequate physical activity. YRBSS also measures the prevalence of obesity and asthma among youth and young adults.<a href="http://www.cdc.gov/healthyyouth/data/yrbs/data.htm">Link</a></li>
+    </ol>
+    </div>
+    
+    </div>
+    <div class="row">
+    
+    <br>
+    
+    <p>
+        If you still cannot find a good dataset, or you have an idea for a good dataset, feel free to suggest other ideas!
+    </p>
+    
+    </div>
+    
+</div>
+

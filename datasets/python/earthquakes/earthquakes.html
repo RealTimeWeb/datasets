@@ -136,17 +136,17 @@ $(document).ready(function() {
             <tr> <td><code>"magnitude"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>1.04</code></td> 
-                 <td></td> </tr>
+                 <td>Earthquake magnitude is a measure of the size of an earthquake at its source. It is a logarithmic measure. At the same distance from the earthquake, the amplitude of the seismic waves from which the magnitude is determined are approximately 10 times as large during a magnitude 5 earthquake as during a magnitude 4 earthquake. The total amount of energy released by the earthquake usually goes up by a larger factor; for many commonly used magnitude types, the total energy of an average earthquake goes up by a factor of approximately 32 for each unit increase in magnitude. Typically ranges from -1 (very tiny) to 10 (incredibly powerful).</td> </tr>
             
             <tr> <td><code>"significance"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>17</code></td> 
-                 <td></td> </tr>
+                 <td>A number describing how significant the event is. Larger numbers indicate a more significant event. This value is determined on a number of factors, including magnitude, maximum MMI, felt reports, and estimated impact. Ranges from 0 to 1000.</td> </tr>
             
             <tr> <td><code>"gap"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>75.0</code></td> 
-                 <td></td> </tr>
+                 <td>In general, the smaller this number, the more reliable is the calculated horizontal position of the earthquake. Specifically, this means the largest azimuthal gap between azimuthally adjacent stations (in degrees). Earthquake locations in which the azimuthal gap exceeds 180 degrees typically have large location and depth uncertainties. Ranges from 0 to 180.</td> </tr>
             
         </table>
     </div>
@@ -192,7 +192,7 @@ $(document).ready(function() {
             <tr> <td><code>"epoch"</code></td> 
                  <td><span data-toggle="tooltip" title="Long (a very big whole number)">long</span></td> 
                  <td><code>1465999090330</code></td> 
-                 <td></td> </tr>
+                 <td>A number that represents the time that this earthquake occurred. Epoch's are the number of seconds since a particular date (January 1st, 1970), and are a convenient way to store date/times.</td> </tr>
             
             <tr> <td><code>"month"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -278,7 +278,7 @@ $(document).ready(function() {
             <tr> <td><code>"distance"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>0.1121</code></td> 
-                 <td></td> </tr>
+                 <td>The rough distance that this earthquake occurred away from the reporting station, measured in degrees between. 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake. In general, this number is between 0.4-7.1.</td> </tr>
             
             <tr> <td><code>"full"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -288,22 +288,22 @@ $(document).ready(function() {
             <tr> <td><code>"depth"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>14.68</code></td> 
-                 <td></td> </tr>
+                 <td>Depth of the event in kilometers.</td> </tr>
             
             <tr> <td><code>"longitude"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>-116.4318333</code></td> 
-                 <td></td> </tr>
+                 <td>Decimal degrees longitude (east and west on the globe). Negative values for western latitudes. Ranges from -180 to 180.</td> </tr>
             
             <tr> <td><code>"state"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>" CA"</code></td> 
-                 <td></td> </tr>
+                 <td>A best guess for the name of the state (or country, in some cases) that this earthquake was reported in.</td> </tr>
             
             <tr> <td><code>"latitude"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>33.4818333</code></td> 
-                 <td></td> </tr>
+                 <td>Decimal degrees latitude (up and down on the globe). Negative values for southern latitudes. Ranges from -90 to 90.</td> </tr>
             
         </table>
     </div>
@@ -369,7 +369,7 @@ $(document).ready(function() {
             <tr> <td><code>"id"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"ci37387847"</code></td> 
-                 <td></td> </tr>
+                 <td>A unique name for this earthquake.</td> </tr>
             
         </table>
     </div>

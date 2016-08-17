@@ -108,10 +108,11 @@ def get_surveys(question):
     Given one of the survey questions, returns the associated data from respondents.
     
     :param question: The name of the survey question. Must be one of 'Cocaine Year', 'Alcohol Month', 'Cigarette Use', 'Alcohol Risk', 'Illicit/Alcohol Dependence or Abuse', 'Marijuana New', 'Illicit Dependence', 'Alcohol Dependence', 'Tobacco Use', 'Alcohol Binge', 'Marijuana Risk', 'Alcohol Abuse', 'Marijuana Month', 'Illicit Dependence or Abuse', 'Smoking Risk', 'Illicit Month', 'Alcohol Treatment', 'Nonmarijuana Illicit', 'Pain Relievers', 'Marijuana Year', 'Illicit Treatment', 'Depression'.
-    :type question: Str
+    :type question: str
     """
     
     # Match it against recommend values
+    
     potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT name FROM drugs").fetchall()]
     if question.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(question, potentials)
