@@ -9,14 +9,18 @@ metadata:
         short:
             This library holds data about Broadway shows, such as tickets sold.
         overview: >
-            This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry). You can view the data online at http://www.broadwayleague.com/.
+            This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset 
 local:
   - file: broadway.json
     name: broadway
     row: production
     indexes:
       - name: theatre
-        jsonpath: broadway.[0].theatre
+        jsonpath: broadway.[0].Show.Theatre
+      - name: Year
+        jsonpath: broadway.[0].Date.Year
+      - name: Type
+        jsonpath: broadway.[0].Show.Type
 interfaces:
   - name: get shows
     returns: list[production]
@@ -43,9 +47,15 @@ interfaces:
         sql: SELECT data FROM broadway WHERE theatre=? COLLATE NOCASE
         post: json()
 structures:
-    "broadway.[0].theatre": The name of the theatre.
-    "broadway.[0].capacity": The percentage of how well the theatre was filled.
-    "broadway.[0].performances": The total number of performances of this showing.
-    "broadway.[0].date": The date of this performance.
-    "broadway.[0].date": The numeric day of the month that this performance took place.
-    
+    "broadway.[0].Show.Theatre": The name of the theatre.
+    "broadway.[0].Show.Type": Whether it is a "Musical", "Play", or "Special".
+    "broadway.[0].Show.Name": The name of the production.
+    "broadway.[0].Date.Day": The day of the month that this performance's week ended on.
+    "broadway.[0].Date.Full": The full date representation that this performance's week ended on.
+    "broadway.[0].Date.Month": The numeric month that this performance's week ended in (1 = January, 2 = February, etc.).
+    "broadway.[0].Date.Year": The year that this performance occurred in.
+    "broadway.[0].Statistics.Gross": The "Gross Gross" of this performance, or how much it made in total across the entire week. Measured in dollars.
+    "broadway.[0].Statistics.Gross Potential": The Gross Potential is the maximum amount an engagement can possibly earn based on calculations involving ticket prices, seating capacity, and the number of performances. This number is expressed here as a percentage of what could have been achieved (Gross Gross / Gross Potential). In case the GP could not be calculated, it was replaced with 0%.
+    "broadway.[0].Statistics.Attendance": The total number of people who attended performances over the week.
+    "broadway.[0].Statistics.Performances": The number of performances that occurred this week.
+    "broadway.[0].Statistics.Capacity": The percentage of the theatre that was filled during that week.

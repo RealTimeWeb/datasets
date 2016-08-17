@@ -306,7 +306,7 @@ $(document).ready(function () {
 
     ko.applyBindings(mainModel);
     
-    mainModel.settings.sampling(Math.min(400, mainModel.structures()[0].data.length))
+    mainModel.settings.sampling(Math.min(100, mainModel.structures()[0].data.length))
     
     function changeCategory() {
         $('#select-bar-keys').empty().multiSelect('refresh');
@@ -788,7 +788,7 @@ $(document).ready(function () {
     <h3 id="overview">Overview</h3>
     
     <p>
-    This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry). You can view the data online at http://www.broadwayleague.com/.
+    This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset 
 
     </p>
     

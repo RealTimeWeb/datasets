@@ -41,3 +41,12 @@ for page in xrange(1, 818):
         result.append(dict(zip(headers, row)))
     print page, page/818.0
 json.dump(result, open('broadway2.json', 'w'))
+
+'''
+start_week_date:08/12/1984
+end_week_date:08/09/1987
+show:
+category:
+theatre:
+csrfmiddlewaretoken:AtFKULfpqNcBNj39CoTD5nbYDNaDivgr
+'''
