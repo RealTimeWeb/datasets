@@ -245,18 +245,18 @@ def json_path(path, data):
 def build_metafiles(model):
     name = model['metadata']['name']
     return {
-            'python/' + flat_case(name) + '/' + flat_case(name) + '.html' : env.get_template('main.html').render(standalone=False, **model),
-            'python/' + flat_case(name) + '/index.html' : env.get_template('main.html').render(standalone=True, **model),
-            'python/' + flat_case(name) + '/' + flat_case(name) + '_preview.html' : env.get_template('preview.html').render(**model)
+            'python/' + snake_case(name) + '/' + snake_case(name) + '.html' : env.get_template('main.html').render(standalone=False, **model),
+            'python/' + snake_case(name) + '/index.html' : env.get_template('main.html').render(standalone=True, **model),
+            'python/' + snake_case(name) + '/' + snake_case(name) + '_preview.html' : env.get_template('preview.html').render(**model)
             }
     
 def build_main(model):
     name = model['metadata']['name']
-    return {'python/' + flat_case(name) + '/' + flat_case(name) + '.py' :
+    return {'python/' + snake_case(name) + '/' + snake_case(name) + '.py' :
                 env.get_template('main.py').render(**model)}
                 
 def build_database(model):
-    name = flat_case(model['metadata']['name'])
+    name = snake_case(model['metadata']['name'])
     new_file = name+'.db'
     if os.path.exists(new_file):
         os.remove(new_file)
@@ -268,7 +268,7 @@ def build_locals(model, database_file):
     moves = {}
     
     for local in locals:
-        name = local["name"]
+        name = snake_case(local["name"])
         file = local["file"]
         type = local["type"]
         with open(file, "r") as local_file:
@@ -299,7 +299,7 @@ def build_locals(model, database_file):
                 pass
 
 def build_python(model, fast):
-    name = flat_case(model['metadata']['name'])
+    name = snake_case(model['metadata']['name'])
     new_folder = 'python/' + name + '/'
     
     files = {}

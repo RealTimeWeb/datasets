@@ -1,7 +1,7 @@
 '''
 Hello student. Thank you for downloading a CORGIS library. However, you do not need to open this library. Instead you should use the following:
 
-    import {{ metadata.name|flat_case }}
+    import {{ metadata.name|snake_case }}
     
 If you opened the file because you are curious how this library works, then well done! We hope that you find it a useful learning experience. However, you should know that this code is meant to solve somewhat esoteric pedagogical problems, so it is often not best practices. 
 '''
@@ -35,7 +35,7 @@ class DatasetException(Exception):
     ''' Thrown when there is an error loading the dataset for some reason.'''
     pass
     
-_Constants._DATABASE_NAME = "{{ metadata.name|flat_case }}.db"
+_Constants._DATABASE_NAME = "{{ metadata.name|snake_case }}.db"
 if not _os.access(_Constants._DATABASE_NAME, _os.F_OK):
     raise DatasetException("Error! Could not find a \"{0}\" file. Make sure that there is a \"{0}\" in the same directory as \"{1}.py\"! Spelling is very important here.".format(_Constants._DATABASE_NAME, __name__))
 elif not _os.access(_Constants._DATABASE_NAME, _os.R_OK):

@@ -109,7 +109,7 @@ def get_spending(test=True):
     
     """
     if _Constants._TEST or test:
-        rows = _Constants._DATABASE.execute("SELECT data FROM constructionspending LIMIT {hardware}".format(
+        rows = _Constants._DATABASE.execute("SELECT data FROM construction_spending LIMIT {hardware}".format(
             hardware=_Constants._HARDWARE))
         data = [r[0] for r in rows]
         data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
@@ -117,7 +117,7 @@ def get_spending(test=True):
         return _Auxiliary._byteify(data)
         
     else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM constructionspending".format(
+        rows = _Constants._DATABASE.execute("SELECT data FROM construction_spending".format(
             hardware=_Constants._HARDWARE))
         data = [r[0] for r in rows]
         data = [_Auxiliary._byteify(_json.loads(r)) for r in data]

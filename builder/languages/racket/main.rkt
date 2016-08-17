@@ -8,7 +8,7 @@
 (require net/url)
 (require db)
 
-(define database-name "{{ metadata.name|flat_case }}.db")
+(define database-name "{{ metadata.name|snake_case }}.db")
 (define database (sqlite3-connect #:database database-name))
 (define hardware-limit {{ metadata.hardware }})
 (define test-mode false)

@@ -288,7 +288,7 @@ def build_metafiles(model):
     return {} #root+'index.html': env.get_template('main.html').render(**model)}
                 
 def build_database(model):
-    name = flat_case(model['metadata']['name'])
+    name = snake_case(model['metadata']['name'])
     new_file = name+'.db'
     if os.path.exists(new_file):
         os.remove(new_file)
@@ -402,7 +402,7 @@ def copy_file(filename):
         return input.read()
 
 def build_sql(model, fast):
-    name = flat_case(model['metadata']['name'])
+    name = snake_case(model['metadata']['name'])
     new_folder = 'sql/' + name + '/'
     
     files = {}

@@ -161,10 +161,10 @@ class JsonMetrics(object):
 def build_report(model):
     locals = model["locals"]
     hardware = model['metadata']['hardware']
-    module_name = flat_case(model['metadata']['name'])
+    module_name = snake_case(model['metadata']['name'])
     json_reports = {}
     for local in locals:
-        name = flat_case(local["name"])
+        name = snake_case(local["name"])
         file = local["file"]
         type = local["type"]
         row = local["row"]
@@ -182,7 +182,7 @@ def build_report(model):
         
 
 def build_metrics(model, fast):
-    module_name = flat_case(model['metadata']['name'])    
+    module_name = snake_case(model['metadata']['name'])    
     files = {'metrics/' + module_name + '/' + module_name + '.json': build_report(model)}
     
     return files, {}

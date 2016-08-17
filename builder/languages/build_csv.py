@@ -78,17 +78,17 @@ def _guess_schema(input):
 def build_metafiles(model):
     name = model['metadata']['name']
     return {
-            'python/' + flat_case(name) + '/' + flat_case(name) + '.html' : env.get_template('main.html').render(**model),
-            'python/' + flat_case(name) + '/' + flat_case(name) + '_preview.html' : env.get_template('preview.html').render(**model)
+            'python/' + snake_case(name) + '/' + snake_case(name) + '.html' : env.get_template('main.html').render(**model),
+            'python/' + snake_case(name) + '/' + snake_case(name) + '_preview.html' : env.get_template('preview.html').render(**model)
             }
     
 def build_main(model):
     name = model['metadata']['name']
-    return {'python/' + flat_case(name) + '/' + flat_case(name) + '.py' :
+    return {'python/' + snake_case(name) + '/' + snake_case(name) + '.py' :
                 env.get_template('main.py').render(**model)}
                 
 def build_database(model):
-    name = flat_case(model['metadata']['name'])
+    name = snake_case(model['metadata']['name'])
     new_file = name+'.csv'
     if os.path.exists(new_file):
         os.remove(new_file)
@@ -107,11 +107,11 @@ def write_list_of_dictionaries(filename, data):
 def build_locals(model):
     locals = model["locals"]
     hardware = model['metadata']['hardware']
-    module_name = flat_case(model['metadata']['name'])    
+    module_name = snake_case(model['metadata']['name'])    
     moves = {}
     
     for local in locals:
-        name = flat_case(local["name"])
+        name = snake_case(local["name"])
         new_file = name+'.csv'
         new_small_file = name+'_small.csv'
         file = local["file"]
@@ -137,6 +137,6 @@ def build_csv(model):
     moves = {}
     moves.update(build_locals(model))
     for appendix in model['metadata']['appendix']:
-        moves[appendix['file']] = 'csv/' + flat_case(model['metadata']['name']) + '/'
+        moves[appendix['file']] = 'csv/' + snake_case(model['metadata']['name']) + '/'
     
     return files, moves

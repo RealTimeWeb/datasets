@@ -104,8 +104,8 @@ def json_path(path, data):
 def build_metafiles(model, key_names, indexes):
     name = model['metadata']['name']
     return {
-            'blockpy/' + flat_case(name) + '/' + flat_case(name) + '_skulpt.js' : env.get_template('skulpt.js').render(key_names=key_names, indexes=indexes, **model),
-            'blockpy/' + flat_case(name) + '/' + flat_case(name) + '_blockly.js' : env.get_template('blockly.js').render(key_names=key_names, indexes=indexes,  **model)
+            'blockpy/' + snake_case(name) + '/' + snake_case(name) + '_skulpt.js' : env.get_template('skulpt.js').render(key_names=key_names, indexes=indexes, **model),
+            'blockpy/' + snake_case(name) + '/' + snake_case(name) + '_blockly.js' : env.get_template('blockly.js').render(key_names=key_names, indexes=indexes,  **model)
             }
 
 class JsonLeafNodes(object):    
@@ -222,7 +222,7 @@ def build_locals(model, js_path):
         file = local["file"]
         row_type = local["type"]
         row = local["row"]
-        json_path = flat_case(model['metadata']['name']) + "_dataset.js"
+        json_path = snake_case(model['metadata']['name']) + "_dataset.js"
         with open(file, "r") as local_file, open(json_path, 'w') as output_file:
             output_file.write("_IMPORTED_DATASETS['{}'] = ".format(name))
             if row_type == "json":
@@ -250,7 +250,7 @@ def build_locals(model, js_path):
         yield json_path, short_key_names, indexes
 
 def build_blockpy(model, fast):
-    name = flat_case(model['metadata']['name'])
+    name = snake_case(model['metadata']['name'])
     new_folder = 'blockpy/' + name + '/'
     
     files = {}

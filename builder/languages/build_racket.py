@@ -229,17 +229,17 @@ def json_path(path, data):
 def build_metafiles(model):
     name = model['metadata']['name']
     return {
-            'racket/' + flat_case(name) + '/' + flat_case(name) + '.scrbl' : env.get_template('main.scrbl').render(**model),
-            'racket/' + flat_case(name) + '/' + flat_case(name) + '_preview.html' : env.get_template('preview.html').render(**model)
+            'racket/' + snake_case(name) + '/' + snake_case(name) + '.scrbl' : env.get_template('main.scrbl').render(**model),
+            'racket/' + snake_case(name) + '/' + snake_case(name) + '_preview.html' : env.get_template('preview.html').render(**model)
             }
     
 def build_main(model):
     name = model['metadata']['name']
-    return {'racket/' + flat_case(name) + '/' + flat_case(name) + '.rkt' :
+    return {'racket/' + snake_case(name) + '/' + snake_case(name) + '.rkt' :
                 env.get_template('main.rkt').render(**model)}
                 
 def build_database(model):
-    name = flat_case(model['metadata']['name'])
+    name = snake_case(model['metadata']['name'])
     new_file = name+'.db'
     if os.path.exists(new_file):
         os.remove(new_file)
@@ -282,7 +282,7 @@ def build_locals(model, database_file):
                 pass
 
 def build_racket(model, fast):
-    name = flat_case(model['metadata']['name'])
+    name = snake_case(model['metadata']['name'])
     new_folder = 'racket/' + name + '/'
     
     files = {}

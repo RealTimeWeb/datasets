@@ -103,8 +103,8 @@ def json_path(path, data):
 def build_metafiles(model):
     name = model['metadata']['name']
     return {
-            'visualizer/' + flat_case(name) + '/' + flat_case(name) + '.html' : env.get_template('main.html').render(standalone=False, **model),
-            'visualizer/' + flat_case(name) + '/index.html' : env.get_template('main.html').render(standalone=True, **model)
+            'visualizer/' + snake_case(name) + '/' + snake_case(name) + '.html' : env.get_template('main.html').render(standalone=False, **model),
+            'visualizer/' + snake_case(name) + '/index.html' : env.get_template('main.html').render(standalone=True, **model)
             }
 
 class JsonLeafNodes(object):    
@@ -205,7 +205,7 @@ def build_locals(model, js_path):
     model['visualized_datasets'] = {}
     print("")
     for local in locals:
-        name = local["name"]
+        name = snake_case(local["name"])
         file = local["file"]
         row_type = local["type"]
         row = local["row"]
@@ -279,7 +279,7 @@ def build_locals(model, js_path):
         yield json_bar_path
 
 def build_visualizer(model, fast):
-    name = flat_case(model['metadata']['name'])
+    name = snake_case(model['metadata']['name'])
     new_folder = 'visualizer/' + name + '/'
     
     files = {}

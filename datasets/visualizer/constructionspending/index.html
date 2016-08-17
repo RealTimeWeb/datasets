@@ -96,8 +96,8 @@ Construction Spending Visualizer (CORGIS Datasets Project)
     
     <!-- Datasets! -->
     
-    <script src='constructionspending.js'></script>
-    <script src='constructionspending_bar.js'></script>
+    <script src='construction spending.js'></script>
+    <script src='construction spending_bar.js'></script>
     
     
     <script>
@@ -210,12 +210,12 @@ var mainModel = {
     },
     'bars': ko.observableArray([
     
-        {'name': "constructionspending", 'data': constructionspending_bar}
+        {'name': "construction spending", 'data': construction spending_bar}
     
     ]),
     'structures':  ko.observableArray([
     
-        {'name': "constructionspending", 'order': "Index", 'data': constructionspending}
+        {'name': "construction spending", 'order': "Index", 'data': construction spending}
     
     ])
 };
@@ -306,7 +306,7 @@ $(document).ready(function () {
 
     ko.applyBindings(mainModel);
     
-    mainModel.settings.sampling(Math.min(400, mainModel.structures()[0].data.length))
+    mainModel.settings.sampling(Math.min(100, mainModel.structures()[0].data.length))
     
     function changeCategory() {
         $('#select-bar-keys').empty().multiSelect('refresh');
