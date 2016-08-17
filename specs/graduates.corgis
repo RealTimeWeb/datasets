@@ -1,6 +1,6 @@
 metadata:
     version: 1
-    name: Grads
+    name: Graduates
     builder: 2
     author: Austin Cory Bart <acbart@vt.edu>
     datetime: 11/1/2015
@@ -11,16 +11,15 @@ metadata:
             This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series.  Included is information about employment numbers, major information, and the earnings of different majors.
         citation: http://www.census.gov/acs/www/data_documentation/pums_documentation/ <br> https://github.com/fivethirtyeight/data/tree/master/college-majors
 local:
-  - file: grads.json
-    name: grads
+  - file: graduates.json
+    name: graduates
     row: grad major
 interfaces:
   - name: get majors
     returns: list[grad major]
     description: Returns information about all recorded majors.
     production:
-        sql: SELECT data FROM grads
+        sql: SELECT data FROM graduates
         post: json()
 structures:
-    "slavery.[0].Slave.Age":
-    "grads.[0].Earnings.Earnings Breakdown.Median": Based on full time, year-round workers
+    "graduates.[0].Earnings.Earnings Breakdown.Median": Based on full time, year-round workers

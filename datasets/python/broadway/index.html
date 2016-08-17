@@ -96,7 +96,7 @@ Broadway Library (CORGIS Datasets Project)
     <h3 id="overview">Overview</h3>
     
     <p>
-    This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry). You can view the data online at http://www.broadwayleague.com/.
+    This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset 
 
     </p>
     
@@ -179,7 +179,7 @@ Returns information about all the shows at a given theatre
 <ul class="list-group col-md-6 col-md-offset-1">
 
 <li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>theatre</b>: <i>Str</i></h5>
+    <h5 class="list-group-item-heading"><b>theatre</b>: <i>str</i></h5>
     <p class="list-group-item-text">The name of the theatre (e.g., "friedman").
     <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
     </p>
@@ -242,63 +242,145 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-broadway-__0__' title='Dictionary (11 keys)'>
+    <div id='explore-broadway-__0__-Date' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"gross"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>360507</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"attendance"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>11430</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"capacity"</code></td> 
-                 <td><span data-toggle="tooltip" title="None (nothing, not zero or an empty list, just nothing)">None</span></td> 
-                 <td><code>None</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"theatre"</code></td> 
+            <tr> <td><code>"Full"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Majestic"</code></td> 
-                 <td></td> </tr>
+                 <td><code>"08/26/1990"</code></td> 
+                 <td>The full date representation that this performance's week ended on.</td> </tr>
             
-            <tr> <td><code>"show"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"42ND STREET '80"</code></td> 
-                 <td></td> </tr>
+            <tr> <td><code>"Day"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>26</code></td> 
+                 <td>The day of the month that this performance's week ended on.</td> </tr>
             
-            <tr> <td><code>"performances"</code></td> 
+            <tr> <td><code>"Month"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>8</code></td> 
-                 <td></td> </tr>
+                 <td>The numeric month that this performance's week ended in (1 = January, 2 = February, etc.).</td> </tr>
             
-            <tr> <td><code>"previews"</code></td> 
+            <tr> <td><code>"Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1990</code></td> 
+                 <td>The year that this performance occurred in.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-broadway-__0__-Date" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-broadway-__0__-Date-Full").click(function() {
+            $( "#explore-broadway-__0__-Date-Full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-Date-Day").click(function() {
+            $( "#explore-broadway-__0__-Date-Day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-Date-Month").click(function() {
+            $( "#explore-broadway-__0__-Date-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-Date-Year").click(function() {
+            $( "#explore-broadway-__0__-Date-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-broadway-__0__-Statistics' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Gross"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>134456</code></td> 
+                 <td>The "Gross Gross" of this performance, or how much it made in total across the entire week. Measured in dollars.</td> </tr>
+            
+            <tr> <td><code>"Performances"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8</code></td> 
+                 <td>The number of performances that occurred this week.</td> </tr>
+            
+            <tr> <td><code>"Attendance"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>5500</code></td> 
+                 <td>The total number of people who attended performances over the week.</td> </tr>
+            
+            <tr> <td><code>"Capacity"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>88</code></td> 
+                 <td>The percentage of the theatre that was filled during that week.</td> </tr>
+            
+            <tr> <td><code>"Gross Potential"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>0</code></td> 
+                 <td>The Gross Potential is the maximum amount an engagement can possibly earn based on calculations involving ticket prices, seating capacity, and the number of performances. This number is expressed here as a percentage of what could have been achieved (Gross Gross / Gross Potential). In case the GP could not be calculated, it was replaced with 0%.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-broadway-__0__-Statistics" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-broadway-__0__-Statistics-Gross").click(function() {
+            $( "#explore-broadway-__0__-Statistics-Gross" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-Statistics-Performances").click(function() {
+            $( "#explore-broadway-__0__-Statistics-Performances" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-Statistics-Attendance").click(function() {
+            $( "#explore-broadway-__0__-Statistics-Attendance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-Statistics-Capacity").click(function() {
+            $( "#explore-broadway-__0__-Statistics-Capacity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-Statistics-Gross-Potential").click(function() {
+            $( "#explore-broadway-__0__-Statistics-Gross-Potential" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-broadway-__0__' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Date"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-broadway-__0__-Date'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"year"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1984</code></td> 
+            <tr> <td><code>"Statistics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-broadway-__0__-Statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"date"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"06/10/1984"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"month"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>6</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"day"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>10</code></td> 
+            <tr> <td><code>"Show"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-broadway-__0__-Show'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
         </table>
@@ -310,58 +392,64 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-broadway-__0__-gross").click(function() {
-            $( "#explore-broadway-__0__-gross" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-broadway-__0__-Date").click(function() {
+            $( "#explore-broadway-__0__-Date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-broadway-__0__-attendance").click(function() {
-            $( "#explore-broadway-__0__-attendance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-broadway-__0__-Statistics").click(function() {
+            $( "#explore-broadway-__0__-Statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-broadway-__0__-capacity").click(function() {
-            $( "#explore-broadway-__0__-capacity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-broadway-__0__-Show").click(function() {
+            $( "#explore-broadway-__0__-Show" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-broadway-__0__-theatre").click(function() {
-            $( "#explore-broadway-__0__-theatre" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+    });
+    </script>
+
+    <div id='explore-broadway-__0__-Show' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Type"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Play"</code></td> 
+                 <td>Whether it is a "Musical", "Play", or "Special".</td> </tr>
+            
+            <tr> <td><code>"Name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Tru"</code></td> 
+                 <td>The name of the production.</td> </tr>
+            
+            <tr> <td><code>"Theatre"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Booth"</code></td> 
+                 <td>The name of the theatre.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-broadway-__0__-Show" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-broadway-__0__-Show-Type").click(function() {
+            $( "#explore-broadway-__0__-Show-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-broadway-__0__-show").click(function() {
-            $( "#explore-broadway-__0__-show" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-broadway-__0__-Show-Name").click(function() {
+            $( "#explore-broadway-__0__-Show-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-broadway-__0__-performances").click(function() {
-            $( "#explore-broadway-__0__-performances" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-broadway-__0__-previews").click(function() {
-            $( "#explore-broadway-__0__-previews" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-broadway-__0__-year").click(function() {
-            $( "#explore-broadway-__0__-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-broadway-__0__-date").click(function() {
-            $( "#explore-broadway-__0__-date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-broadway-__0__-month").click(function() {
-            $( "#explore-broadway-__0__-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-broadway-__0__-day").click(function() {
-            $( "#explore-broadway-__0__-day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-broadway-__0__-Show-Theatre").click(function() {
+            $( "#explore-broadway-__0__-Show-Theatre" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         

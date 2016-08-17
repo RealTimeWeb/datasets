@@ -130,10 +130,11 @@ def get_show_by_theatre(theatre, test=True):
     Returns information about all the shows at a given theatre
     
     :param theatre: The name of the theatre (e.g., "friedman").
-    :type theatre: Str
+    :type theatre: str
     """
     
     # Match it against recommend values
+    
     potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT theatre FROM broadway").fetchall()]
     if theatre.lower() not in potentials:
         best_guesses = _difflib.get_close_matches(theatre, potentials)
