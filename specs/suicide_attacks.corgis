@@ -16,15 +16,15 @@ metadata:
         citation: Chicago Project on Security and Terrorism (CPOST). 2015. Suicide Attack Database (December 9, 2015 Release). [Data File]. Retrieved from http://cpostdata.uchicago.edu/
 local:
   - file: suicide_attacks.json
-    name: suicideattacks
+    name: suicide_attacks
     row: attack
 interfaces:
   - name: get attacks
     returns: list[attack]
     description: Returns a list of the attacks in the database.
     production:
-        sql: SELECT data FROM suicideattacks
+        sql: SELECT data FROM suicide_attacks
         post: json()
     test:
-        sql: SELECT data FROM suicideattacks LIMIT {hardware}
+        sql: SELECT data FROM suicide_attacks LIMIT {hardware}
         post: json()

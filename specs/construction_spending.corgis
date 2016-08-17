@@ -12,19 +12,19 @@ metadata:
 
         citation: http://www.census.gov/construction/c30/c30index.html
 local:
-  - file: constructionspending.json
-    name: constructionspending
+  - file: construction_spending.json
+    name: construction_spending
     row: spending
     indexes:
       - name: year
-        jsonpath: constructionspending.[0].time.year
+        jsonpath: construction_spending.[0].time.year
 interfaces:
   - name: get spending
     description: Returns spending data from every year.
     returns: list[spending]
     production:
-        sql: SELECT data FROM constructionspending
+        sql: SELECT data FROM construction_spending
         post: json()
     test:
-        sql: SELECT data FROM constructionspending LIMIT {hardware}
+        sql: SELECT data FROM construction_spending LIMIT {hardware}
         post: json()

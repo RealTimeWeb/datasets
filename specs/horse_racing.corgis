@@ -9,7 +9,7 @@ metadata:
         overview: >
             Data about horse races at Churchill Downs
 local:
-  - file: horseracing.json
+  - file: horse_racing.json
     name: races
     row: race
 interfaces:

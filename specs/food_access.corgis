@@ -15,30 +15,30 @@ metadata:
             
         citation: http://www.ers.usda.gov/data-products/food-access-research-atlas.aspx
 local:
-  - file: foodaccess.json
-    name: foodaccess
+  - file: food_access.json
+    name: food_access
     row: record
     indexes:
       - name: state
-        jsonpath: foodaccess.[0].State
+        jsonpath: food_access.[0].State
 interfaces:
   - name: get records
     description: Returns food access records from the dataset.
     returns: list[record]
     production:
-        sql: SELECT data FROM foodaccess
+        sql: SELECT data FROM food_access
         post: json()
     test:
-        sql: SELECT data FROM foodaccess LIMIT {hardware}
+        sql: SELECT data FROM food_access LIMIT {hardware}
         post: json()
 structures:
-    "foodaccess.[0].Low Access Numbers": Numbers are summation of the Census Tracts for each county, distances refer to distance that an individual has to travel to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.
-    "foodaccess.[0].Low Access Numbers.Children": Age 0-17
-    "foodaccess.[0].Low Access Numbers.Seniors": Age 65+
-    "foodaccess.[0].Low Access Numbers.Low Income People": Low income is defined as annual family income at or below 200 percent of the Federal poverty threshold for family size.
-    "foodaccess.[0].Housing Data.Residing in Group Quarters": Group Quarters are dormitories, military bases, assisted living or skilled nursing facilities, and other large institutions.
-    "foodaccess.[0].Housing Data.Urban Housing Percentage": Percentage is number of Census Tracts classified as urban divided by total tracts for the county
-    "foodaccess.[0].Housing Data.Rural Housing Percentage": Percentage is number of Census Tracts classified as rural divided by total tracts for the county
-    "foodaccess.[0].Low Access Percents": Percents are number of Census Tracts with listed classification divided by total tracts for the county
-    "foodaccess.[0].Low Access Percents.Low Income and Low Access": Low income is defined as annual family income at or below 200 percent of the Federal poverty threshold for family size.
-    "foodaccess.[0].Vehicle Access": Housing units without vehicle access and low access as specified distance
+    "food_access.[0].Low Access Numbers": Numbers are summation of the Census Tracts for each county, distances refer to distance that an individual has to travel to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.
+    "food_access.[0].Low Access Numbers.Children": Age 0-17
+    "food_access.[0].Low Access Numbers.Seniors": Age 65+
+    "food_access.[0].Low Access Numbers.Low Income People": Low income is defined as annual family income at or below 200 percent of the Federal poverty threshold for family size.
+    "food_access.[0].Housing Data.Residing in Group Quarters": Group Quarters are dormitories, military bases, assisted living or skilled nursing facilities, and other large institutions.
+    "food_access.[0].Housing Data.Urban Housing Percentage": Percentage is number of Census Tracts classified as urban divided by total tracts for the county
+    "food_access.[0].Housing Data.Rural Housing Percentage": Percentage is number of Census Tracts classified as rural divided by total tracts for the county
+    "food_access.[0].Low Access Percents": Percents are number of Census Tracts with listed classification divided by total tracts for the county
+    "food_access.[0].Low Access Percents.Low Income and Low Access": Low income is defined as annual family income at or below 200 percent of the Federal poverty threshold for family size.
+    "food_access.[0].Vehicle Access": Housing units without vehicle access and low access as specified distance

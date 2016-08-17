@@ -12,7 +12,7 @@ metadata:
         citation: Obtained from the Minneapolis Institute of Art, specifically from https://github.com/artsmia/collection
 local:
   - file: art_institute_metadata.json
-    name: artdata
+    name: artwork
     row: record
 interfaces:
   - name: get records

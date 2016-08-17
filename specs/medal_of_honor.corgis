@@ -14,15 +14,15 @@ metadata:
         citation: http://www.cmohs.org/
 local:
   - file: medal_of_honor.json
-    name: medalofhonor
+    name: medal_of_honor
     row: awardee
 interfaces:
   - name: get awardees
     returns: list[awardee]
     description: Returns a list of the awardees in the database.
     production:
-        sql: SELECT data FROM medalofhonor
+        sql: SELECT data FROM medal_of_honor
         post: json()
     test:
-        sql: SELECT data FROM medalofhonor LIMIT {hardware}
+        sql: SELECT data FROM medal_of_honor LIMIT {hardware}
         post: json()

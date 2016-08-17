@@ -15,20 +15,20 @@ metadata:
             date: 3/11/2016 at 9:42pm
 local:
   - file: real_estate.json
-    name: realestate
+    name: real_estate
     row: building
     indexes:
       - name: state
-        jsonpath: realestate.[0].location.address.state
+        jsonpath: real_estate.[0].location.address.state
 interfaces:
   - name: get buildings
     returns: list[building]
     description: Returns a list of the buildings in the database.
     production:
-        sql: SELECT data FROM realestate
+        sql: SELECT data FROM real_estate
         post: json()
     test:
-        sql: SELECT data FROM realestate LIMIT {hardware}
+        sql: SELECT data FROM real_estate LIMIT {hardware}
         post: json()
   - name: get buildings by state
     returns: list[building]
@@ -38,7 +38,7 @@ interfaces:
         type: str
         description: The two-letter abbreviation for a state
         default: "'VA'"
-        matches: SELECT DISTINCT state FROM realestate
+        matches: SELECT DISTINCT state FROM real_estate
     production:
-        sql: SELECT data FROM realestate WHERE state=?
+        sql: SELECT data FROM real_estate WHERE state=?
         post: json()

@@ -17,18 +17,18 @@ metadata:
 
         citation: http://www.census.gov/retail/about_the_surveys.html
 local:
-  - file: retailservices.json
-    name: retailservices
+  - file: retail_services.json
+    name: retail_services
     row: report
 interfaces:
   - name: get report
     description: Returns sales, inventory, and ratio data for every month.
     returns: list[report]
     production:
-        sql: SELECT data FROM retailservices
+        sql: SELECT data FROM retail_services
         post: json()
     test:
-        sql: SELECT data FROM retailservices LIMIT {hardware}
+        sql: SELECT data FROM retail_services LIMIT {hardware}
         post: json()
 structures:
-    "retailservices.[0].data": Numbers represent millions of dollars
+    "retail_services.[0].data": Numbers represent millions of dollars

@@ -12,8 +12,8 @@ metadata:
 
         citation: https://www.census.gov/construction/bps/about_the_surveys/
 local:
-  - file: constructionpermits.json
-    name: constructionpermits
+  - file: construction_permits.json
+    name: construction_permits
     row: permit
 interfaces:
   - name: get records

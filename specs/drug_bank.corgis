@@ -1,6 +1,6 @@
 metadata:
     version: 1
-    name: Drugbank
+    name: Drug Bank
     builder: 2
     author: Austin Cory Bart <acbart@vt.edu>
     datetime: 11/2/2015
@@ -12,16 +12,16 @@ metadata:
 
         citation: "Wishart DS, Knox C, Guo AC, Shrivastava S, Hassanali M, Stothard P, Chang Z, Woolsey J. DrugBank: a comprehensive resource for in silico drug discovery and exploration. Nucleic Acids Res. 2006 Jan 1;34(Database issue):D668-72. 16381955"
 local:
-  - file: drugbank.json
-    name: drugbank
+  - file: drug_bank.json
+    name: drug_bank
     row: drug
 interfaces:
   - name: get drugs
     description: Returns data about all the drugs in the database.
     returns: list[drug]
     production:
-        sql: SELECT data FROM drugbank
+        sql: SELECT data FROM drug_bank
         post: json()
     test:
-        sql: SELECT data FROM drugbank LIMIT {hardware}
+        sql: SELECT data FROM drug_bank LIMIT {hardware}
         post: json()
