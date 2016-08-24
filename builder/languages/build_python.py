@@ -3,11 +3,6 @@ from __future__ import print_function
 import json
 import sys, os
 from pprint import pprint
-from itertools import tee
-try:
-    from itertools import izip
-except ImportError:
-    izip = zip
 from textwrap import wrap
 from collections import OrderedDict
 from auxiliary import to_dict, camel_case_caps, camel_case
@@ -31,12 +26,6 @@ env.filters['camel_case'] = camel_case
 env.filters['snake_case'] = snake_case
 env.filters['kebab_case'] = kebab_case
 env.filters['flat_case'] = flat_case
-
-def pairwise(iterable):
-    "s -> (s0,s1), (s1,s2), (s2, s3), ..."
-    a, b = tee(iterable)
-    next(b, None)
-    return izip(a, b)
 
 conversion_mapping = { ("string", "integer") : "",
                        ("string", "float") : "",

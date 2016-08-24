@@ -1,4 +1,4 @@
-package corgis.{{ metadata.name | flat_case }};
+package corgis.{{ metadata.name | snake_case }};
 
 import java.util.HashMap;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import corgis.{{ metadata.name | flat_case }}.domain.*;
+import corgis.{{ metadata.name | snake_case }}.domain.*;
 
 import java.sql.*;
 
@@ -56,7 +56,7 @@ public class {{ metadata.name | camel_case_caps }}Library {
      * Create a connection to the database file in its standard position.
      */
 	public {{ metadata.name | camel_case_caps }}Library() {
-        this.databasePath = "{{ metadata.name | flat_case }}.db";
+        this.databasePath = "{{ metadata.name | snake_case }}.db";
         this.connectToDatabase(this.databasePath);
 	}
 	

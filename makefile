@@ -4,6 +4,10 @@ metrics:
 	python builder/builder.py -l metrics specs/$(target).corgis ./datasets
 sql:
 	python builder/builder.py -l sql specs/$(target).corgis ./datasets
+json:
+	python builder/builder.py -l json specs/$(target).corgis ./datasets
+csv:
+	python builder/builder.py -l csv specs/$(target).corgis ./datasets
 racket:
 	python builder/builder.py -l racket specs/$(target).corgis ./datasets
 visualizer:

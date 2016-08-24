@@ -1,3 +1,4 @@
+{% import 'dataset_page_components.html' as macros %}
 {% if standalone %}{% extends 'layout.html' %}
 
 {% block title %}
@@ -6,17 +7,12 @@
 {% endif -%}
 
 {% block body %}
-    <div class="page-header">
-        {% if metadata.icon %}
-        <img class="img-rounded pull-right" src="{{ metadata.name|snake_case }}.png" alt="{{ metadata.name }}" style="max-width: 128px; max-height: 128px;">
-        {% endif %}
-        <h1>{{ metadata.name }} Library</h1>
-        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
-        <span class="text-muted">By {{metadata.author}}</span><br>
-        <span class="text-muted">Version {{metadata.version}}, created {{ metadata.datetime}}</span><br>
-        <span class="text-muted">Tags: {{ metadata.tags|join(', ')}}</span><br>
-    </div>
     
+    {{ macros.pygments() }}
+
+    {{ macros.header(metadata, "Python") }}
+    
+    <!--
     <h3>Table of Contents</h3>
     <ol>
         <li><a href="#overview">Overview</a></li>
@@ -31,38 +27,13 @@
         <li><a href="#appendix">Appendix</a></li>
         {% endif %}
     </ol>
+    -->
     
-    <h3 id="overview">Overview</h3>
+    {{ macros.overview(metadata) }}
     
-    <p>
-    {{ metadata.description.overview|safe }}
-    </p>
+    {{ macros.downloads([ metadata.name|snake_case + '.py' , metadata.name|snake_case + '.db' ]) }}
     
-    {% if metadata.description.citation|safe %}
-    <p>
-    <i>{{ metadata.description.citation}}</i>
-    </p>
-    {% endif %}
     
-    <h3 id="downloads">Downloads</h3>
-    
-    <p>Download all of the following files.</p>
-    
-    <div class='row'>
-    <div class="well col-md-6 col-md-offset-1">
-    
-    <ol>
-        <li><a href="{{ metadata.name|snake_case }}.py?forcedownload=1" download="{{ metadata.name|snake_case}}.py" target="_blank">
-            <strong>{{ metadata.name|snake_case}}.py </strong>
-            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
-        </a></li>
-        <li><a href="{{ metadata.name|snake_case }}.db?forcedownload=1" download="{{ metadata.name|snake_case}}.db" target="_blank">
-            <strong>{{ metadata.name|snake_case}}.db </strong>
-            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
-        </a></li>
-    </ol>
-    </div>
-    </div>
     
     <h3 id="usage">Usage</h3>
     
@@ -71,7 +42,7 @@
 {% highlight 'python3' %}
 import {{ metadata.name | snake_case }}
 {% for interface in interfaces -%}
-{{ interface.returns|to_python_variable }} = {{ metadata.name | snake_case }}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default|tojson }}{% if not loop.last %}, {%endif %}{% endfor %})
+{{ interface.returns|to_python_variable }} = {{ metadata.name | snake_case }}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default|tojson }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=True{% endif %})
 {% endfor %}
 {% endhighlight %}
 
@@ -92,7 +63,7 @@ import {{ metadata.name | snake_case }}
     <h3 id="documentation">Documentation</h3>
     
 {% for interface in interfaces -%}    
-<h4 id='{{ interface.name | snake_case }}'>{{metadata.name|snake_case}}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=True{% endif %})</h4>
+<h4 id='{{ interface.name | snake_case }}' style='font-family:monospace'    >&nbsp;{{metadata.name|snake_case}}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=True{% endif %})</h4>
 
 <div class='row'>
 <div class='col-md-offset-1'>
@@ -122,99 +93,8 @@ import {{ metadata.name | snake_case }}
 
 {% endfor %}
 
-<h3 id="structure">Explore Structure</h3>
-{% for name, structure in structures.items() %}
-<div class='row'>
-    <div class='col-md-2'>
-        <button class='btn btn-default' id='btn-explore-{{ name }}'>Explore {{ name }} data</button>
-    </div>
-    
-    <br><br><br>
-</div>
+{{ macros.explorer(metadata, structures) }}
 
-<script>
-$(document).ready(function() {
-    $("#btn-explore-{{ name }}").click(function() {
-        $( "#explore-{{ name }}" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
-        $('.ui-dialog :button').blur();
-    });
-});
-</script>
+{{ macros.appendix(metadata) }}    
 
-{% for path, data in structure.lists.items() %}
-    <div id='explore-{{ path|sluggify}}' title='List'>
-        {% if data.comment %}
-        <div><i>Comment: {{ data.comment }}</i></div>
-        {% endif %}
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
-            <tr> <td>0</td> <td>{{ data.type|to_human_readable_type }}</td> 
-                 <td>{{ data.example|convert_example_value("btn-explore-"+data.path|sluggify)}}</td></tr>
-            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-{{ path|sluggify }}" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        $("#btn-explore-{{ data.path|sluggify }}").click(function() {
-            $( "#explore-{{ data.path|sluggify }}" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
-            $('.ui-dialog :button').blur();
-        });
-    });
-    </script>
-{% endfor %}
-
-{% for path, data in structure.dictionaries.items() %}
-    <div id='explore-{{ path|sluggify }}' title='Dictionary ({{ data.fields|length }} keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            {% for field in data.fields %}
-            <tr> <td><code>{{ field.key|wrap_quotes }}</code></td> 
-                 <td>{{ field.type|to_human_readable_type }}</td> 
-                 <td>{{ field.example|convert_example_value("btn-explore-"+field.path|sluggify)}}</td> 
-                 <td>{{ field.comment }}</td> </tr>
-            {% endfor %}
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-{{ path|sluggify }}" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        {% for field in data.fields %}
-        $("#btn-explore-{{ field.path|sluggify }}").click(function() {
-            $( "#explore-{{ field.path|sluggify }}" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        {% endfor %}
-    });
-    </script>
-{% endfor %}
-
-{% endfor %}
-    
-{% if metadata.appendix %}
-    <h3 id="appendix">Appendix</h3>
-    
-    <div class='row'>
-    <div class="well col-md-6 col-md-offset-1">
-    
-    <ol>
-    {% for entry in metadata.appendix %}
-        <li><a href="{{ entry.file }}" target="_blank">
-            <strong>{{ entry.name}} </strong>
-            <span class='glyphicon glyphicon-eye-open' aria-hidden="true"></span>
-            {% if entry.description %}:
-            {{ entry.description }}
-            {% endif %}
-        </a></li>
-    {% endfor %}
-    </ol>
-    </div>
-    </div>
-{% endif %}
 {% endblock %}

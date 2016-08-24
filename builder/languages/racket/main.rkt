@@ -33,25 +33,26 @@
 {% endfor %}
 {% endfor %}
 
+; Define the JSON->Struct mappers
 {%- for name, structure in structures.items() -%}
 {%- for path, data in structure.dictionaries.items() %}
 (define (json->{{data.name | kebab_case}} jdata)
     (make-{{data.name | kebab_case}}
         {% for field in data.fields -%}
-        {% if field.type | is_builtin -%}
+            {% if field.type | is_builtin -%}
         {{ field.key | parse_json_path }}
-        {% else -%}
-        {% if field.type | is_list -%}
+            {% else -%}
+                {% if field.type | is_list -%}
         {%- set inner_type = structure.lists[field.path].type -%}
-        {% if inner_type | is_builtin -%}
+                    {% if inner_type | is_builtin -%}
         {{ field.key | parse_json_path }}
-        {% else -%}
+                    {% else -%}
         (map json->{{ field.key | kebab_case }} {{ field.key | parse_json_path }})
-        {% endif -%}
-        {% else -%}
+                    {% endif -%}
+                {% else -%}
         (json->{{ field.key | kebab_case }} {{ field.key | parse_json_path }})
-        {% endif -%}
-        {% endif -%}
+                {% endif -%}
+            {% endif -%}
         {%- endfor -%}
     ))
 {% endfor %}
@@ -61,7 +62,7 @@
 {% for interface in interfaces %}
 (define ({{ interface.name | kebab_case }} {% for arg in interface.args %}{{arg.name| kebab_case }}{{ ' ' if not loop.last }}{% endfor %}{% if interface.test %}{% if interface.args %} {% endif %}[test #t]{% endif %})
 {%- for arg in interface.args %} 
-    (check-arg '{{ arg.name | kebab_case}} ({{arg.type | convert_to_racket_type | kebab_case}}? {{arg.name | kebab_case}}) '{{arg.type | kebab_case}} {{ loop.index}} {{arg.name | kebab_case}})
+    (check-arg '{{ arg.name | kebab_case}} ({{arg.type | to_racket_type | kebab_case}}? {{arg.name | kebab_case}}) '{{arg.type | kebab_case}} {{ loop.index}} {{arg.name | kebab_case}})
     {% if arg.matches -%}
     ; Ensure a match exists
     (let ([potentials (map string-downcase 

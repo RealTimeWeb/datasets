@@ -1,0 +1,28 @@
+{% import 'dataset_page_components.html' as macros %}
+{% if standalone %}{% extends 'layout.html' %}
+
+{% block title %}
+{{ metadata.name }} CSV Library (CORGIS Datasets Project)
+{% endblock %}
+{% endif -%}
+
+{% block body %}
+
+    {{ macros.header(metadata, 'CSV') }}
+    
+    {{ macros.overview(metadata) }}
+    
+    {{ macros.downloads([ metadata.name|snake_case + '.csv']) }}
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table>
+    </table>
+    
+    
+
+{{ macros.appendix(metadata) }}    
+
+{% endblock %}

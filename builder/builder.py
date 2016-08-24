@@ -11,6 +11,7 @@ from build import build_dir
 from languages.build_python import build_python
 from languages.build_racket import build_racket
 from languages.build_csv import build_csv
+from languages.build_json import build_json
 from languages.build_java import build_java, post_build
 from languages.build_sql import build_sql
 from languages.build_metrics import build_metrics
@@ -88,6 +89,8 @@ if __name__ == '__main__':
                 files, moves = build_python(compiled_dict, args.fast)
             elif language_target == "csv":
                 files, moves = build_csv(compiled_dict)
+            elif language_target == "json":
+                files, moves = build_json(compiled_dict)
             elif language_target == "racket":
                 files, moves = build_racket(compiled_dict, args.fast)
             elif language_target == "java":

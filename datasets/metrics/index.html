@@ -391,29 +391,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drugs">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
       
       <div class="media-left  media-middle">
-        <a href="drugs/drugs.html">
-          <img class="media-object" src="drugs/drugs.png" alt="Drugs" style="max-width: 64px; max-height: 64px;">
+        <a href="food/food.html">
+          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="drugs/drugs.html">
-        <h4 class="media-heading">Drugs</h4>
+        <a href="food/food.html">
+        <h4 class="media-heading">Food</h4>
         </a>
-        This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.<br>
-        <i>drugs, substances, drug usage</i>
+        Statistics for various food items<br>
+        <i>food, vitamins, minerals, health, nutrition</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "drugs",
-            'body': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.",
-            'description': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.",
-            'tags': ["drugs", "substances", "drug usage"]
+            'name': "food",
+            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
+            'description': "Statistics for various food items",
+            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
         }
     );
     </script>
@@ -499,6 +499,33 @@ $(document).ready(function() {
     );
     </script>
     
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="music">
+      
+      <div class="media-left  media-middle">
+        <a href="music/music.html">
+          <img class="media-object" src="music/music.png" alt="Music" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="music/music.html">
+        <h4 class="media-heading">Music</h4>
+        </a>
+        The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.<br>
+        <i>music, songs, artists, creativity, media</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "music",
+            'body': "This library comes from the Million Song Dataset, which used a company called the Echo Nest to derive data points about one million popular contemporary songs. The Million Song Dataset is a collaboration between the Echo Nest and LabROSA, a laboratory working towards intelligent machine listening. The project was also funded in part by the National Science Foundation of America (NSF) to provide a large data set to evaluate research related to algorithms on a commercial size while promoting further research into the Music Information Retrieval field. The data contains standard information about the songs such as artist name, title, and year released. Additionally, the data contains more advanced information; for example, the length of the song, how many musical bars long the song is, and how long the fade in to the song was.",
+            'description': "The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.",
+            'tags': ["music", "songs", "artists", "creativity", "media"]
+        }
+    );
+    </script>
+    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="slavery">
       
       <div class="media-left  media-middle">
@@ -526,29 +553,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="aids">
       
       <div class="media-left  media-middle">
-        <a href="broadway/broadway.html">
-          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        <a href="aids/aids.html">
+          <img class="media-object" src="aids/aids.png" alt="Aids" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="broadway/broadway.html">
-        <h4 class="media-heading">Broadway</h4>
+        <a href="aids/aids.html">
+        <h4 class="media-heading">Aids</h4>
         </a>
-        This library holds data about Broadway shows, such as tickets sold.<br>
-        <i>broadway, musical, theatre, tickets</i>
+        Records of AIDS related statistics from several countries.<br>
+        <i>aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "broadway",
-            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
-            'description': "This library holds data about Broadway shows, such as tickets sold.",
-            'tags': ["broadway", "musical", "theatre", "tickets"]
+            'name': "aids",
+            'body': "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease. The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.",
+            'description': "Records of AIDS related statistics from several countries.",
+            'tags': ["aids", "death", "disease", "hiv", "orphans", "health", "countries", "world", "gender", "united nations", "un"]
         }
     );
     </script>
@@ -577,33 +604,6 @@ $(document).ready(function() {
             'body': "The Current Population Survey (CPS) is a monthly survey of households conducted by the Bureau of Census for the Bureau of Labor Statistics. It provides a comprehensive body of data on the labor force, employment, unemployment, persons not in the labor force, hours of work, earnings, and other demographic and labor force characteristics.",
             'description': "Employment status of the civilian population by race, sex, and age.",
             'tags': ["labor", "race", "age", "sex", "gender", "america", "usa", "census", "employed", "unemployed", "employability", "job", "work", "civilian", "black", "white", "asian", "government"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="education">
-      
-      <div class="media-left  media-middle">
-        <a href="education/education.html">
-          <img class="media-object" src="education/education.png" alt="Education" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a href="education/education.html">
-        <h4 class="media-heading">Education</h4>
-        </a>
-        Information about K-12 education for different states, collected from the US government.<br>
-        <i>school, education, K-12, kindergarten, learning, teaching</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "education",
-            'body': "This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The 'Year' field has records for Preschool, Kindergarten, and grades 1-12.",
-            'description': "Information about K-12 education for different states, collected from the US government.",
-            'tags': ["school", "education", "K-12", "kindergarten", "learning", "teaching"]
         }
     );
     </script>
@@ -689,29 +689,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drugs">
       
       <div class="media-left  media-middle">
-        <a href="food/food.html">
-          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
+        <a href="drugs/drugs.html">
+          <img class="media-object" src="drugs/drugs.png" alt="Drugs" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="food/food.html">
-        <h4 class="media-heading">Food</h4>
+        <a href="drugs/drugs.html">
+        <h4 class="media-heading">Drugs</h4>
         </a>
-        Statistics for various food items<br>
-        <i>food, vitamins, minerals, health, nutrition</i>
+        This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.<br>
+        <i>drugs, substances, drug usage</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "food",
-            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
-            'description': "Statistics for various food items",
-            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
+            'name': "drugs",
+            'body': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.",
+            'description': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.",
+            'tags': ["drugs", "substances", "drug usage"]
         }
     );
     </script>
@@ -770,56 +770,56 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="music">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
       
       <div class="media-left  media-middle">
-        <a href="music/music.html">
-          <img class="media-object" src="music/music.png" alt="Music" style="max-width: 64px; max-height: 64px;">
+        <a href="broadway/broadway.html">
+          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="music/music.html">
-        <h4 class="media-heading">Music</h4>
+        <a href="broadway/broadway.html">
+        <h4 class="media-heading">Broadway</h4>
         </a>
-        The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.<br>
-        <i>music, songs, artists, creativity, media</i>
+        This library holds data about Broadway shows, such as tickets sold.<br>
+        <i>broadway, musical, theatre, tickets</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "music",
-            'body': "This library comes from the Million Song Dataset, which used a company called the Echo Nest to derive data points about one million popular contemporary songs. The Million Song Dataset is a collaboration between the Echo Nest and LabROSA, a laboratory working towards intelligent machine listening. The project was also funded in part by the National Science Foundation of America (NSF) to provide a large data set to evaluate research related to algorithms on a commercial size while promoting further research into the Music Information Retrieval field. The data contains standard information about the songs such as artist name, title, and year released. Additionally, the data contains more advanced information; for example, the length of the song, how many musical bars long the song is, and how long the fade in to the song was.",
-            'description': "The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.",
-            'tags': ["music", "songs", "artists", "creativity", "media"]
+            'name': "broadway",
+            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
+            'description': "This library holds data about Broadway shows, such as tickets sold.",
+            'tags': ["broadway", "musical", "theatre", "tickets"]
         }
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="aids">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="education">
       
       <div class="media-left  media-middle">
-        <a href="aids/aids.html">
-          <img class="media-object" src="aids/aids.png" alt="Aids" style="max-width: 64px; max-height: 64px;">
+        <a href="education/education.html">
+          <img class="media-object" src="education/education.png" alt="Education" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="aids/aids.html">
-        <h4 class="media-heading">Aids</h4>
+        <a href="education/education.html">
+        <h4 class="media-heading">Education</h4>
         </a>
-        Records of AIDS related statistics from several countries.<br>
-        <i>aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un</i>
+        Information about K-12 education for different states, collected from the US government.<br>
+        <i>school, education, K-12, kindergarten, learning, teaching</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "aids",
-            'body': "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease. The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.",
-            'description': "Records of AIDS related statistics from several countries.",
-            'tags': ["aids", "death", "disease", "hiv", "orphans", "health", "countries", "world", "gender", "united nations", "un"]
+            'name': "education",
+            'body': "This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The 'Year' field has records for Preschool, Kindergarten, and grades 1-12.",
+            'description': "Information about K-12 education for different states, collected from the US government.",
+            'tags': ["school", "education", "K-12", "kindergarten", "learning", "teaching"]
         }
     );
     </script>

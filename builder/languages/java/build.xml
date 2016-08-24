@@ -50,30 +50,30 @@
 	    <!-- Create the distribution directory -->
 	    <mkdir dir="${dist}"/>
 
-	    <!-- Put everything in ${build} into the {{ metadata.name | flat_case }}-${DSTAMP}.jar file -->
-	    <jar jarfile="${dist}/{{ metadata.name | flat_case }}-${ver}.jar" basedir="${bin}">
+	    <!-- Put everything in ${build} into the {{ metadata.name | snake_case }}-${DSTAMP}.jar file -->
+	    <jar jarfile="${dist}/{{ metadata.name | snake_case }}-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
-            <fileset file="{{ metadata.name | flat_case }}.db" />
+            <fileset file="{{ metadata.name | snake_case }}.db" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
-            <manifest><attribute name="Main-Class" value="corgis.{{ metadata.name | flat_case }}.{{ metadata.name | camel_case_caps }}Library" /></manifest>
+            <manifest><attribute name="Main-Class" value="corgis.{{ metadata.name | snake_case }}.{{ metadata.name | camel_case_caps }}Library" /></manifest>
 		</jar>
 		
-		<!-- Put everything in ${build} and ${docs} into the {{ metadata.name | flat_case }}-doc-${DSTAMP}.jar file -->
-		<jar jarfile="${dist}/{{ metadata.name | flat_case }}-doc-${ver}.jar" basedir="${bin}">
+		<!-- Put everything in ${build} and ${docs} into the {{ metadata.name | snake_case }}-doc-${DSTAMP}.jar file -->
+		<jar jarfile="${dist}/{{ metadata.name | snake_case }}-doc-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
 			<fileset dir="docs" includes="**" />
-            <fileset file="{{ metadata.name | flat_case }}.db" />
+            <fileset file="{{ metadata.name | snake_case }}.db" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
-            <manifest><attribute name="Main-Class" value="corgis.{{ metadata.name | flat_case }}.{{ metadata.name | camel_case_caps }}Library" /></manifest>
+            <manifest><attribute name="Main-Class" value="corgis.{{ metadata.name | snake_case }}.{{ metadata.name | camel_case_caps }}Library" /></manifest>
 		</jar>
 		
-		<!-- Put everything in ${build} and ${src} into the {{ metadata.name | flat_case }}-src-${DSTAMP}.jar file -->
-		<jar jarfile="${dist}/{{ metadata.name | flat_case }}-src-${ver}.jar" basedir="${bin}">
+		<!-- Put everything in ${build} and ${src} into the {{ metadata.name | snake_case }}-src-${DSTAMP}.jar file -->
+		<jar jarfile="${dist}/{{ metadata.name | snake_case }}-src-${ver}.jar" basedir="${bin}">
 	    	<fileset dir="bin" includes="bin/*.class" />
 			<fileset dir="src" includes="**" />
-            <fileset file="{{ metadata.name | flat_case }}.db" />
+            <fileset file="{{ metadata.name | snake_case }}.db" />
 			<zipgroupfileset dir="libs/" includes="*.jar" />
-            <manifest><attribute name="Main-Class" value="corgis.{{ metadata.name | flat_case }}.{{ metadata.name | camel_case_caps }}Library" /></manifest>
+            <manifest><attribute name="Main-Class" value="corgis.{{ metadata.name | snake_case }}.{{ metadata.name | camel_case_caps }}Library" /></manifest>
 		</jar>
 	</target>
 	

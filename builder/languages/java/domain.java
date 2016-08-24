@@ -1,4 +1,4 @@
-package corgis.{{ metadata.name | flat_case }}.domain;
+package corgis.{{ metadata.name | snake_case }}.domain;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 {% for field in dictionary.fields if not (field.type | is_builtin) and not (field.type | is_list) -%}
-import corgis.{{ metadata.name | flat_case }}.domain.{{field.key | clean_invalid_characters | camel_case_caps}};
+import corgis.{{ metadata.name | snake_case }}.domain.{{field.key | clean_invalid_characters | camel_case_caps}};
 {% endfor %}
 /**
  * {{ dictionary.description }}

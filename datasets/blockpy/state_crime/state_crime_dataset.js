@@ -1,4 +1,4 @@
-_IMPORTED_DATASETS['crime'] = {
+_IMPORTED_DATASETS['state_crime'] = {
   "Rates.Violent.Robbery": {
     "comment": "Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.", 
     "index": false, 

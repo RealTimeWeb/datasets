@@ -17,8 +17,9 @@ import re
 from jinja2 import Environment, FileSystemLoader
 import jinja2_highlight
 base_directory = os.path.dirname(os.path.realpath(__file__))
-templates = os.path.join(base_directory, 'racket/')
-env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader(templates))
+racket_templates = os.path.join(base_directory, 'racket/')
+templates = os.path.join(base_directory, 'templates/')
+env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader([templates, racket_templates]))
 env.filters['camel_case_caps'] = camel_case_caps
 env.filters['camel_case'] = camel_case
 env.filters['snake_case'] = snake_case
@@ -52,7 +53,7 @@ racket_types = {"str": "string",
 
 def parse_json_path(path, result="json_data"):
     elements = []
-    for keys in path.split(".")[2:]:
+    for keys in path.split("."):
         while keys:
             left, sep, keys = keys.partition("[")
             val, sep, keys = keys.partition("]")
@@ -79,7 +80,7 @@ def collect_url_parameters(url):
     return map(str, re.findall("<(.*?)>", url))
     
 def is_list(type):
-    return type == "list"
+    return type.endswith("]") and type.startswith('list[')
 
 def strip_list(type):
     return type[5:-1]
@@ -227,10 +228,12 @@ def json_path(path, data):
     return data
 
 def build_metafiles(model):
-    name = model['metadata']['name']
+    name = snake_case(model['metadata']['name'])
+    root = 'racket/'+name+'/'
     return {
-            'racket/' + snake_case(name) + '/' + snake_case(name) + '.scrbl' : env.get_template('main.scrbl').render(**model),
-            'racket/' + snake_case(name) + '/' + snake_case(name) + '_preview.html' : env.get_template('preview.html').render(**model)
+            root + name + '.scrbl' : env.get_template('main.scrbl').render(**model),
+            root+'index.html' : env.get_template('racket_main.html').render(standalone=True, **model),
+            root+name+'.html' : env.get_template('racket_main.html').render(standalone=False, **model)
             }
     
 def build_main(model):

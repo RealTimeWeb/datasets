@@ -1,0 +1,121 @@
+{% import 'dataset_page_components.html' as macros %}
+{% if standalone %}{% extends 'layout.html' %}
+
+{% block title %}
+{{ metadata.name }} Library (CORGIS Datasets Project)
+{% endblock %}
+{% endif -%}
+
+{% block body %}
+
+    {{ macros.pygments() }}
+
+    {{ macros.header(metadata, "Java") }}
+    
+    <!--
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        {% for interface in interfaces -%}    
+        <li><a href='#{{ interface.name | snake_case }}'>{{ interface.name | snake_case }}</a></li>
+        {% endfor %}
+        </ol></li>
+        {% if metadata.appendix %}
+        <li><a href="#appendix">Appendix</a></li>
+        {% endif %}
+    </ol>
+    -->
+    
+    {{ macros.overview(metadata) }}
+    
+    {{ macros.downloads([ 'dist/%s-doc-%s.jar'|format(metadata.name|snake_case, metadata.version) ,
+                          metadata.name|snake_case + '.db' ]) }}
+    
+    
+    
+    <h3 id="usage">Usage</h3>
+    
+    Begin by adding the above JAR file to your classpath. This library has {{ interfaces|length }} function{{ 's' if interfaces|length > 1 }} you can use.
+    
+{% highlight 'java' %}
+import corgis.{{ metadata.name | snake_case }}.{{ metadata.name | camel_case_caps }}Library;
+
+public class ExampleClass {
+    public static void main(String[] args) {
+        // Get access to the library
+        {{ metadata.name | camel_case_caps }}Library {{ metadata.name | camel_case }}Library = new {{ metadata.name | camel_case_caps }}Library();
+        // Access data inside the library
+        {% for interface in interfaces -%}
+        {% if interface.production -%}
+        {{ interface.returns | to_java_type }} {{ interface.returns | to_java_variable }} = {{ metadata.name|camel_case }}Library.{{ interface.name | camel_case }}({% for arg in interface.args %}{{arg.default|tojson|safe }}{{ ', ' if not loop.last }}{% endfor %}{% if interface.test %}{{ ', ' if interface.args }}false{% endif %});
+        {%- endif %}
+        {%- endfor %}
+    }
+}
+
+{% endhighlight %}
+
+{% if interfaces|rejectattr('test', 'none')|list %}
+
+    Additionally, some of the functions can optionally return Big Data using the last argument (setting it to <code>true</code>). If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+
+{% highlight 'java' %}
+import corgis.{{ metadata.name | snake_case }}.{{ metadata.name | camel_case_caps }}Library;
+
+public class ExampleClass {
+    public static void main(String[] args) {
+        // Get access to the library
+        {{ metadata.name | camel_case_caps }}Library {{ metadata.name | camel_case }}Library = new {{ metadata.name | camel_case_caps }}Library();
+        // Access data inside the library
+        {% for interface in interfaces -%}
+        {% if interface.test -%}
+        {{ interface.returns | to_java_type }} {{ interface.returns | to_java_variable }} = {{ metadata.name|camel_case }}Library.{{ interface.name | camel_case }}({% for arg in interface.args %}{{arg.default|tojson|safe }}{{ ', ' if not loop.last }}{% endfor %}{% if interface.test %}{{ ', ' if interface.args }}true{% endif %});
+        {%- endif %}
+        {%- endfor %}
+    }
+}
+{% endhighlight %}
+
+{% endif %}
+    
+    <h3 id="documentation">Documentation</h3>
+    
+    We provide full <a href="docs/index.html" target="blank">JavaDoc<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a> for this library. Alternatively, you may refer to the below:
+    
+{% for interface in interfaces -%}    
+<h4 id='{{ interface.name | camel_case }}' style='font-family:monospace'    >&nbsp;{{metadata.name|camel_case}}Library.{{ interface.name | camel_case }}({% for arg in interface.args %}{{arg.name| camel_case }}{% if not loop.last %}, {% endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test{% endif %})</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+{{ interface.description }}
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+{% for arg in interface.args %}
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>{{ arg.name|camel_case }}</b>: <i>{{ arg.type|to_java_type }}</i></h5>
+    <p class="list-group-item-text">{{ arg.description }}
+    {% if arg.matches %}<br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.{% endif %}
+    </p>
+</li>
+{% endfor %}
+{% if interface.test %}
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+{% endif %}
+</ul>
+
+</div>
+
+{% endfor %}
+
+{{ macros.appendix(metadata) }}    
+
+{% endblock %}

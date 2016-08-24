@@ -3,11 +3,6 @@ import json
 import sys, os
 from pprint import pprint
 import subprocess
-try:
-    from itertools import izip
-except ImportError:
-    izip = zip
-from textwrap import wrap
 from auxiliary import to_dict, camel_case_caps, camel_case
 from auxiliary import snake_case, kebab_case, flat_case, copy_file
 import sqlite3
@@ -15,8 +10,9 @@ import re
 from jinja2 import Environment, FileSystemLoader
 import jinja2_highlight
 base_directory = os.path.dirname(os.path.realpath(__file__))
-templates = os.path.join(base_directory, 'java/')
-env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader(templates))
+java_templates = os.path.join(base_directory, 'java/')
+templates = os.path.join(base_directory, 'templates/')
+env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader([templates, java_templates]))
 env.filters['camel_case_caps'] = camel_case_caps
 env.filters['camel_case'] = camel_case
 env.filters['snake_case'] = snake_case
@@ -227,6 +223,12 @@ def clean_invalid_characters(astr):
 def sluggify(astr):
     return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_").replace("'", "_")
     
+def get_base_type(type):
+    if type.startswith('list'):
+        return 'list'
+    else:
+        return type
+    
 EXTENDED_TYPE_INFO = {
     'dict': '<span data-toggle="tooltip" title="Dictionary">dict</span>',
     'unicode': '<span data-toggle="tooltip" title="String (text)">str</span>',
@@ -238,7 +240,7 @@ EXTENDED_TYPE_INFO = {
     'bool': '<span data-toggle="tooltip" title="Boolean (True or False)">bool</span>',
 }
 def to_human_readable_type(atype):
-    return EXTENDED_TYPE_INFO[atype]
+    return EXTENDED_TYPE_INFO[get_base_type(atype)]
     
 EXPAND = "<span class='glyphicon glyphicon-new-window' aria-hidden='true'></span>"
 def convert_example_value(data, possible_path=""):
@@ -294,21 +296,24 @@ def json_path(path, data):
     return data
 
 def build_metafiles(model):
-    name = model['metadata']['name']
-    root = 'java/{name}/'.format(name=flat_case(name))
+    name = snake_case(model['metadata']['name'])
+    root = 'java/{name}/'.format(name=name)
     return {root+'.classpath': env.get_template('.classpath').render(**model),
             root+'.project':   env.get_template('.project').render(**model),
-            root+'build.xml':  env.get_template('build.xml').render(**model)}
+            root+'build.xml':  env.get_template('build.xml').render(**model),
+            root+'index.html' : env.get_template('java_main.html').render(standalone=True, **model),
+            root+name+'.html' : env.get_template('java_main.html').render(standalone=False, **model)
+            }
     
 def build_main(model):
     name = model['metadata']['name']
-    root = 'java/{name}/src/corgis/{name}/'.format(name=flat_case(name))
+    root = 'java/{name}/src/corgis/{name}/'.format(name=snake_case(name))
     return {root + camel_case_caps(name) + 'Library.java' :
                 env.get_template('main.java').render(**model)}
                 
 def build_classes(model):
     name = model['metadata']['name']
-    root = 'java/{name}/src/corgis/{name}/domain/'.format(name=flat_case(name))
+    root = 'java/{name}/src/corgis/{name}/domain/'.format(name=snake_case(name))
     files = {}
     template = env.get_template('domain.java')
     for structure_name, structure in model['structures'].items():
@@ -318,7 +323,7 @@ def build_classes(model):
     return files
                 
 def build_database(model):
-    name = flat_case(model['metadata']['name'])
+    name = snake_case(model['metadata']['name'])
     new_file = name+'.db'
     if os.path.exists(new_file):
         os.remove(new_file)
@@ -367,7 +372,7 @@ def copy_file(filename):
 def post_build(model, files, moves, target):
     print("Building jar")
     
-    name = flat_case(model['metadata']['name'])
+    name = snake_case(model['metadata']['name'])
     path = os.path.join(target, 'java', name)
     
     backup_location = os.getcwd()
@@ -379,12 +384,12 @@ def post_build(model, files, moves, target):
     return None
 
 def build_java(model, fast):
-    name = flat_case(model['metadata']['name'])
-    root = 'java/{name}/src/corgis/{name}/'.format(name=flat_case(name))
+    name = snake_case(model['metadata']['name'])
+    root = 'java/{name}/src/corgis/{name}/'.format(name=snake_case(name))
     new_folder = 'java/' + name + '/'
     
-    files = {new_folder+'/libs/sqlite-jdbc-3.8.11.2.jar' :  copy_file(templates+'libs/sqlite-jdbc-3.8.11.2.jar'),
-             new_folder+'/libs/json-simple-1.1.1.jar' :  copy_file(templates+'libs/json-simple-1.1.1.jar')}
+    files = {new_folder+'/libs/sqlite-jdbc-3.8.11.2.jar' :  copy_file(java_templates+'libs/sqlite-jdbc-3.8.11.2.jar'),
+             new_folder+'/libs/json-simple-1.1.1.jar' :  copy_file(java_templates+'libs/json-simple-1.1.1.jar')}
     
     icon_file = model['metadata']['icon']
     

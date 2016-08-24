@@ -216,6 +216,7 @@ def shortest_unique_strings(los):
 
 def build_locals(model, js_path):
     locals = model["locals"]
+    metadata_name = snake_case(model['metadata']['name'])
     model['visualized_datasets'] = {}
     for local in locals:
         name = local["name"]
@@ -224,7 +225,7 @@ def build_locals(model, js_path):
         row = local["row"]
         json_path = snake_case(model['metadata']['name']) + "_dataset.js"
         with open(file, "r") as local_file, open(json_path, 'w') as output_file:
-            output_file.write("_IMPORTED_DATASETS['{}'] = ".format(name))
+            output_file.write("_IMPORTED_DATASETS['{}'] = ".format(metadata_name))
             if row_type == "json":
                 data_list = json.load(local_file)
                 data = [JsonLeafNodes(name+'.[0]', item).result for item in data_list]                
