@@ -24,10 +24,10 @@ weather_bar = [
           "sum": 643.0, 
           "average": 10.898305084745763
         }, 
-        "San Juan PR": {
-          "count": 61, 
-          "sum": 424.0, 
-          "average": 6.950819672131147
+        "Billings MT": {
+          "count": 60, 
+          "sum": 537.0, 
+          "average": 8.95
         }, 
         "New York/Upton NY": {
           "count": 61, 
@@ -56,7 +56,7 @@ weather_bar = [
         }, 
         "Grand Forks ND": {
           "count": 122, 
-          "sum": 1433.4999999999998, 
+          "sum": 1433.499999999999, 
           "average": 11.75
         }, 
         "Cheyenne WY": {
@@ -103,11 +103,6 @@ weather_bar = [
           "count": 61, 
           "sum": 378.0, 
           "average": 6.19672131147541
-        }, 
-        "Grand Rapids MI": {
-          "count": 61, 
-          "sum": 517.0, 
-          "average": 8.475409836065573
         }, 
         "Albany NY": {
           "count": 61, 
@@ -221,7 +216,7 @@ weather_bar = [
         }, 
         "Green Bay WI": {
           "count": 122, 
-          "sum": 1189.4999999999998, 
+          "sum": 1189.5, 
           "average": 9.75
         }, 
         "Peachtree City/Atlanta GA": {
@@ -299,10 +294,10 @@ weather_bar = [
           "sum": 472.0, 
           "average": 7.737704918032787
         }, 
-        "Billings MT": {
-          "count": 60, 
-          "sum": 537.0, 
-          "average": 8.95
+        "Grand Rapids MI": {
+          "count": 61, 
+          "sum": 517.0, 
+          "average": 8.475409836065573
         }, 
         "Los Angeles/Oxnard CA": {
           "count": 60, 
@@ -343,6 +338,11 @@ weather_bar = [
           "count": 120, 
           "sum": 1354.0, 
           "average": 11.283333333333333
+        }, 
+        "San Juan PR": {
+          "count": 61, 
+          "sum": 424.0, 
+          "average": 6.950819672131147
         }, 
         "Riverton WY": {
           "count": 60, 
@@ -561,7 +561,7 @@ weather_bar = [
         }, 
         "Fairbanks AK": {
           "count": 59, 
-          "sum": 186.35294117647058, 
+          "sum": 186.35294117647055, 
           "average": 3.1585244267198402
         }, 
         "Reno NV": {
@@ -616,10 +616,10 @@ weather_bar = [
           "sum": 940, 
           "average": 15.932203389830509
         }, 
-        "San Juan PR": {
-          "count": 61, 
-          "sum": 961, 
-          "average": 15.754098360655737
+        "Billings MT": {
+          "count": 60, 
+          "sum": 939, 
+          "average": 15.65
         }, 
         "New York/Upton NY": {
           "count": 61, 
@@ -692,11 +692,6 @@ weather_bar = [
           "average": 15.754098360655737
         }, 
         "Melbourne FL": {
-          "count": 61, 
-          "sum": 961, 
-          "average": 15.754098360655737
-        }, 
-        "Grand Rapids MI": {
           "count": 61, 
           "sum": 961, 
           "average": 15.754098360655737
@@ -891,10 +886,10 @@ weather_bar = [
           "sum": 961, 
           "average": 15.754098360655737
         }, 
-        "Billings MT": {
-          "count": 60, 
-          "sum": 939, 
-          "average": 15.65
+        "Grand Rapids MI": {
+          "count": 61, 
+          "sum": 961, 
+          "average": 15.754098360655737
         }, 
         "Los Angeles/Oxnard CA": {
           "count": 60, 
@@ -935,6 +930,11 @@ weather_bar = [
           "count": 120, 
           "sum": 1900, 
           "average": 15.833333333333334
+        }, 
+        "San Juan PR": {
+          "count": 61, 
+          "sum": 961, 
+          "average": 15.754098360655737
         }, 
         "Riverton WY": {
           "count": 60, 
@@ -1208,10 +1208,10 @@ weather_bar = [
           "sum": 284, 
           "average": 4.813559322033898
         }, 
-        "San Juan PR": {
-          "count": 61, 
-          "sum": 293, 
-          "average": 4.80327868852459
+        "Billings MT": {
+          "count": 60, 
+          "sum": 288, 
+          "average": 4.8
         }, 
         "New York/Upton NY": {
           "count": 61, 
@@ -1284,11 +1284,6 @@ weather_bar = [
           "average": 4.80327868852459
         }, 
         "Melbourne FL": {
-          "count": 61, 
-          "sum": 293, 
-          "average": 4.80327868852459
-        }, 
-        "Grand Rapids MI": {
           "count": 61, 
           "sum": 293, 
           "average": 4.80327868852459
@@ -1483,10 +1478,10 @@ weather_bar = [
           "sum": 293, 
           "average": 4.80327868852459
         }, 
-        "Billings MT": {
-          "count": 60, 
-          "sum": 288, 
-          "average": 4.8
+        "Grand Rapids MI": {
+          "count": 61, 
+          "sum": 293, 
+          "average": 4.80327868852459
         }, 
         "Los Angeles/Oxnard CA": {
           "count": 60, 
@@ -1527,6 +1522,11 @@ weather_bar = [
           "count": 120, 
           "sum": 576, 
           "average": 4.8
+        }, 
+        "San Juan PR": {
+          "count": 61, 
+          "sum": 293, 
+          "average": 4.80327868852459
         }, 
         "Riverton WY": {
           "count": 60, 
@@ -1800,10 +1800,10 @@ weather_bar = [
           "sum": 1342.0, 
           "average": 22.74576271186441
         }, 
-        "San Juan PR": {
-          "count": 61, 
-          "sum": 1151.0, 
-          "average": 18.868852459016395
+        "Billings MT": {
+          "count": 60, 
+          "sum": 1279.0, 
+          "average": 21.316666666666666
         }, 
         "New York/Upton NY": {
           "count": 61, 
@@ -1879,11 +1879,6 @@ weather_bar = [
           "count": 61, 
           "sum": 1096.0, 
           "average": 17.9672131147541
-        }, 
-        "Grand Rapids MI": {
-          "count": 61, 
-          "sum": 1187.0, 
-          "average": 19.459016393442624
         }, 
         "Albany NY": {
           "count": 61, 
@@ -2075,10 +2070,10 @@ weather_bar = [
           "sum": 1132.0, 
           "average": 18.557377049180328
         }, 
-        "Billings MT": {
-          "count": 60, 
-          "sum": 1279.0, 
-          "average": 21.316666666666666
+        "Grand Rapids MI": {
+          "count": 61, 
+          "sum": 1187.0, 
+          "average": 19.459016393442624
         }, 
         "Los Angeles/Oxnard CA": {
           "count": 60, 
@@ -2119,6 +2114,11 @@ weather_bar = [
           "count": 120, 
           "sum": 2768.0, 
           "average": 23.066666666666666
+        }, 
+        "San Juan PR": {
+          "count": 61, 
+          "sum": 1151.0, 
+          "average": 18.868852459016395
         }, 
         "Riverton WY": {
           "count": 60, 
@@ -2392,9 +2392,9 @@ weather_bar = [
           "sum": 118944, 
           "average": 2016.0
         }, 
-        "San Juan PR": {
-          "count": 61, 
-          "sum": 122976, 
+        "Billings MT": {
+          "count": 60, 
+          "sum": 120960, 
           "average": 2016.0
         }, 
         "New York/Upton NY": {
@@ -2468,11 +2468,6 @@ weather_bar = [
           "average": 2016.0
         }, 
         "Melbourne FL": {
-          "count": 61, 
-          "sum": 122976, 
-          "average": 2016.0
-        }, 
-        "Grand Rapids MI": {
           "count": 61, 
           "sum": 122976, 
           "average": 2016.0
@@ -2667,9 +2662,9 @@ weather_bar = [
           "sum": 122976, 
           "average": 2016.0
         }, 
-        "Billings MT": {
-          "count": 60, 
-          "sum": 120960, 
+        "Grand Rapids MI": {
+          "count": 61, 
+          "sum": 122976, 
           "average": 2016.0
         }, 
         "Los Angeles/Oxnard CA": {
@@ -2710,6 +2705,11 @@ weather_bar = [
         "La Crosse WI": {
           "count": 120, 
           "sum": 241920, 
+          "average": 2016.0
+        }, 
+        "San Juan PR": {
+          "count": 61, 
+          "sum": 122976, 
           "average": 2016.0
         }, 
         "Riverton WY": {
@@ -2984,10 +2984,10 @@ weather_bar = [
           "sum": 3214.0, 
           "average": 54.47457627118644
         }, 
-        "San Juan PR": {
-          "count": 61, 
-          "sum": 4980.0, 
-          "average": 81.63934426229508
+        "Billings MT": {
+          "count": 60, 
+          "sum": 3300.0, 
+          "average": 55.0
         }, 
         "New York/Upton NY": {
           "count": 61, 
@@ -3063,11 +3063,6 @@ weather_bar = [
           "count": 61, 
           "sum": 4586.0, 
           "average": 75.18032786885246
-        }, 
-        "Grand Rapids MI": {
-          "count": 61, 
-          "sum": 3512.0, 
-          "average": 57.57377049180328
         }, 
         "Albany NY": {
           "count": 61, 
@@ -3259,10 +3254,10 @@ weather_bar = [
           "sum": 4228.0, 
           "average": 69.31147540983606
         }, 
-        "Billings MT": {
-          "count": 60, 
-          "sum": 3300.0, 
-          "average": 55.0
+        "Grand Rapids MI": {
+          "count": 61, 
+          "sum": 3512.0, 
+          "average": 57.57377049180328
         }, 
         "Los Angeles/Oxnard CA": {
           "count": 60, 
@@ -3303,6 +3298,11 @@ weather_bar = [
           "count": 120, 
           "sum": 6858.0, 
           "average": 57.15
+        }, 
+        "San Juan PR": {
+          "count": 61, 
+          "sum": 4980.0, 
+          "average": 81.63934426229508
         }, 
         "Riverton WY": {
           "count": 60, 
@@ -3576,10 +3576,10 @@ weather_bar = [
           "sum": 1714.0, 
           "average": 29.050847457627118
         }, 
-        "San Juan PR": {
-          "count": 61, 
-          "sum": 1486.0, 
-          "average": 24.360655737704917
+        "Billings MT": {
+          "count": 60, 
+          "sum": 1636.0, 
+          "average": 27.266666666666666
         }, 
         "New York/Upton NY": {
           "count": 61, 
@@ -3655,11 +3655,6 @@ weather_bar = [
           "count": 61, 
           "sum": 1446.0, 
           "average": 23.704918032786885
-        }, 
-        "Grand Rapids MI": {
-          "count": 61, 
-          "sum": 1521.5, 
-          "average": 24.942622950819672
         }, 
         "Albany NY": {
           "count": 61, 
@@ -3851,10 +3846,10 @@ weather_bar = [
           "sum": 1472.0, 
           "average": 24.131147540983605
         }, 
-        "Billings MT": {
-          "count": 60, 
-          "sum": 1636.0, 
-          "average": 27.266666666666666
+        "Grand Rapids MI": {
+          "count": 61, 
+          "sum": 1521.5, 
+          "average": 24.942622950819672
         }, 
         "Los Angeles/Oxnard CA": {
           "count": 60, 
@@ -3895,6 +3890,11 @@ weather_bar = [
           "count": 120, 
           "sum": 3556.0, 
           "average": 29.633333333333333
+        }, 
+        "San Juan PR": {
+          "count": 61, 
+          "sum": 1486.0, 
+          "average": 24.360655737704917
         }, 
         "Riverton WY": {
           "count": 60, 
@@ -4160,27 +4160,27 @@ weather_bar = [
       "weather.[0].Data.Precipitation": {
         "Tallahassee FL": {
           "count": 61, 
-          "sum": 21.6, 
+          "sum": 21.599999999999994, 
           "average": 0.35409836065573774
         }, 
         "Glasgow MT": {
           "count": 59, 
-          "sum": 6.38, 
+          "sum": 6.380000000000001, 
           "average": 0.10813559322033899
         }, 
-        "San Juan PR": {
-          "count": 61, 
-          "sum": 39.980000000000004, 
-          "average": 0.6554098360655737
+        "Billings MT": {
+          "count": 60, 
+          "sum": 17.629999999999995, 
+          "average": 0.29383333333333334
         }, 
         "New York/Upton NY": {
           "count": 61, 
-          "sum": 24.689999999999998, 
+          "sum": 24.689999999999994, 
           "average": 0.40475409836065573
         }, 
         "Las Vegas NV": {
           "count": 56, 
-          "sum": 0.5399999999999999, 
+          "sum": 0.54, 
           "average": 0.009642857142857144
         }, 
         "San Diego CA": {
@@ -4190,22 +4190,22 @@ weather_bar = [
         }, 
         "Wichita KS": {
           "count": 60, 
-          "sum": 20.84, 
+          "sum": 20.840000000000007, 
           "average": 0.3473333333333333
         }, 
         "Great Falls MT": {
           "count": 61, 
-          "sum": 10.549999999999999, 
+          "sum": 10.55, 
           "average": 0.17295081967213116
         }, 
         "Grand Forks ND": {
           "count": 122, 
-          "sum": 31.62, 
+          "sum": 31.620000000000005, 
           "average": 0.2591803278688525
         }, 
         "Cheyenne WY": {
           "count": 61, 
-          "sum": 16.939999999999998, 
+          "sum": 16.940000000000005, 
           "average": 0.2777049180327869
         }, 
         "Lake Charles LA": {
@@ -4215,17 +4215,17 @@ weather_bar = [
         }, 
         "Rapid City SD": {
           "count": 122, 
-          "sum": 23.44, 
+          "sum": 23.440000000000005, 
           "average": 0.19213114754098362
         }, 
         "Lincoln IL": {
           "count": 61, 
-          "sum": 15.75, 
+          "sum": 15.749999999999998, 
           "average": 0.2581967213114754
         }, 
         "Blacksburg VA": {
           "count": 61, 
-          "sum": 13.189999999999998, 
+          "sum": 13.190000000000001, 
           "average": 0.2162295081967213
         }, 
         "Louisville KY": {
@@ -4235,57 +4235,52 @@ weather_bar = [
         }, 
         "Charleston WV": {
           "count": 61, 
-          "sum": 21.580000000000002, 
+          "sum": 21.580000000000005, 
           "average": 0.35377049180327874
         }, 
         "Salt Lake City UT": {
           "count": 61, 
-          "sum": 8.49, 
+          "sum": 8.489999999999997, 
           "average": 0.13918032786885245
         }, 
         "Melbourne FL": {
           "count": 61, 
-          "sum": 27.789999999999992, 
+          "sum": 27.79, 
           "average": 0.45557377049180325
-        }, 
-        "Grand Rapids MI": {
-          "count": 61, 
-          "sum": 34.449999999999996, 
-          "average": 0.5647540983606558
         }, 
         "Albany NY": {
           "count": 61, 
-          "sum": 29.509999999999998, 
+          "sum": 29.51, 
           "average": 0.4837704918032787
         }, 
         "Greenville-Spartanburg SC": {
           "count": 61, 
-          "sum": 24.129999999999995, 
+          "sum": 24.129999999999992, 
           "average": 0.39557377049180326
         }, 
         "Flagstaff AZ": {
           "count": 58, 
-          "sum": 7.189999999999999, 
+          "sum": 7.1899999999999995, 
           "average": 0.12396551724137932
         }, 
         "Burlington VT": {
           "count": 61, 
-          "sum": 18.32, 
+          "sum": 18.319999999999993, 
           "average": 0.30032786885245905
         }, 
         "Gaylord MI": {
           "count": 61, 
-          "sum": 16.03, 
+          "sum": 16.029999999999998, 
           "average": 0.26278688524590166
         }, 
         "Wakefield VA": {
           "count": 61, 
-          "sum": 30.760000000000012, 
+          "sum": 30.759999999999998, 
           "average": 0.5042622950819672
         }, 
         "Tulsa OK": {
           "count": 61, 
-          "sum": 25.02, 
+          "sum": 25.020000000000003, 
           "average": 0.4101639344262295
         }, 
         "Topeka KS": {
@@ -4300,12 +4295,12 @@ weather_bar = [
         }, 
         "Spokane WA": {
           "count": 60, 
-          "sum": 12.200000000000001, 
+          "sum": 12.199999999999998, 
           "average": 0.2033333333333333
         }, 
         "Amarillo TX": {
           "count": 59, 
-          "sum": 7.47, 
+          "sum": 7.469999999999999, 
           "average": 0.12661016949152543
         }, 
         "San Joaquin Valley/Hanford CA": {
@@ -4315,32 +4310,32 @@ weather_bar = [
         }, 
         "Shreveport LA": {
           "count": 61, 
-          "sum": 18.459999999999997, 
+          "sum": 18.460000000000004, 
           "average": 0.30262295081967217
         }, 
         "Grand Junction CO": {
           "count": 122, 
-          "sum": 47.160000000000004, 
+          "sum": 47.16, 
           "average": 0.3865573770491803
         }, 
         "Kansas City/Pleasant Hill MO": {
           "count": 61, 
-          "sum": 23.939999999999994, 
+          "sum": 23.940000000000005, 
           "average": 0.39245901639344266
         }, 
         "El Paso TX": {
           "count": 60, 
-          "sum": 3.16, 
+          "sum": 3.1599999999999997, 
           "average": 0.05266666666666667
         }, 
         "Des Moines IA": {
           "count": 61, 
-          "sum": 21.080000000000002, 
+          "sum": 21.080000000000005, 
           "average": 0.3455737704918033
         }, 
         "Corpus Christi TX": {
           "count": 61, 
-          "sum": 53.68000000000001, 
+          "sum": 53.679999999999986, 
           "average": 0.88
         }, 
         "Minneapolis/Twin Cities MN": {
@@ -4350,7 +4345,7 @@ weather_bar = [
         }, 
         "Indianapolis IN": {
           "count": 60, 
-          "sum": 16.239999999999995, 
+          "sum": 16.240000000000002, 
           "average": 0.27066666666666667
         }, 
         "Raleigh NC": {
@@ -4360,7 +4355,7 @@ weather_bar = [
         }, 
         "Columbia SC": {
           "count": 61, 
-          "sum": 7.720000000000001, 
+          "sum": 7.719999999999999, 
           "average": 0.12655737704918033
         }, 
         "Green Bay WI": {
@@ -4370,17 +4365,17 @@ weather_bar = [
         }, 
         "Peachtree City/Atlanta GA": {
           "count": 61, 
-          "sum": 35.300000000000004, 
+          "sum": 35.3, 
           "average": 0.578688524590164
         }, 
         "Bismarck ND": {
           "count": 61, 
-          "sum": 13.239999999999998, 
+          "sum": 13.239999999999997, 
           "average": 0.21704918032786885
         }, 
         "Phoenix AZ": {
           "count": 61, 
-          "sum": 0.9, 
+          "sum": 0.9000000000000001, 
           "average": 0.014754098360655738
         }, 
         "Pittsburgh PA": {
@@ -4395,22 +4390,22 @@ weather_bar = [
         }, 
         "Nashville TN": {
           "count": 61, 
-          "sum": 19.320000000000004, 
+          "sum": 19.32, 
           "average": 0.31672131147540983
         }, 
         "Newport/Morehead City NC": {
           "count": 61, 
-          "sum": 41.31, 
+          "sum": 41.31000000000001, 
           "average": 0.6772131147540984
         }, 
         "Tampa FL": {
           "count": 61, 
-          "sum": 22.79, 
+          "sum": 22.790000000000003, 
           "average": 0.3736065573770492
         }, 
         "Milwaukee/Sullivan WI": {
           "count": 122, 
-          "sum": 34.65999999999999, 
+          "sum": 34.66000000000001, 
           "average": 0.2840983606557377
         }, 
         "Albuquerque NM": {
@@ -4420,17 +4415,17 @@ weather_bar = [
         }, 
         "Birmingham AL": {
           "count": 61, 
-          "sum": 17.269999999999996, 
+          "sum": 17.27, 
           "average": 0.2831147540983606
         }, 
         "Fort Worth/Dallas TX": {
           "count": 61, 
-          "sum": 29.790000000000006, 
+          "sum": 29.790000000000003, 
           "average": 0.48836065573770493
         }, 
         "Sacramento CA": {
           "count": 116, 
-          "sum": 15.499999999999998, 
+          "sum": 15.5, 
           "average": 0.1336206896551724
         }, 
         "Goodland KS": {
@@ -4443,10 +4438,10 @@ weather_bar = [
           "sum": 14.550000000000002, 
           "average": 0.2385245901639344
         }, 
-        "Billings MT": {
-          "count": 60, 
-          "sum": 17.63, 
-          "average": 0.29383333333333334
+        "Grand Rapids MI": {
+          "count": 61, 
+          "sum": 34.45, 
+          "average": 0.5647540983606558
         }, 
         "Los Angeles/Oxnard CA": {
           "count": 60, 
@@ -4460,7 +4455,7 @@ weather_bar = [
         }, 
         "Baltimore/Washington VA": {
           "count": 61, 
-          "sum": 18.720000000000002, 
+          "sum": 18.72, 
           "average": 0.30688524590163935
         }, 
         "St. Louis MO": {
@@ -4475,12 +4470,12 @@ weather_bar = [
         }, 
         "Denver/Boulder CO": {
           "count": 60, 
-          "sum": 14.879999999999999, 
+          "sum": 14.879999999999995, 
           "average": 0.24799999999999997
         }, 
         "Anchorage AK": {
           "count": 59, 
-          "sum": 5.469999999999999, 
+          "sum": 5.47, 
           "average": 0.09271186440677966
         }, 
         "La Crosse WI": {
@@ -4488,14 +4483,19 @@ weather_bar = [
           "sum": 28.640000000000004, 
           "average": 0.23866666666666667
         }, 
+        "San Juan PR": {
+          "count": 61, 
+          "sum": 39.98, 
+          "average": 0.6554098360655737
+        }, 
         "Riverton WY": {
           "count": 60, 
-          "sum": 15.939999999999996, 
+          "sum": 15.94, 
           "average": 0.26566666666666666
         }, 
         "Hastings NE": {
           "count": 57, 
-          "sum": 7.13, 
+          "sum": 7.129999999999998, 
           "average": 0.1250877192982456
         }, 
         "Pendleton OR": {
@@ -4505,22 +4505,22 @@ weather_bar = [
         }, 
         "State College PA": {
           "count": 61, 
-          "sum": 15.059999999999999, 
+          "sum": 15.06, 
           "average": 0.24688524590163935
         }, 
         "Medford OR": {
           "count": 60, 
-          "sum": 7.79, 
+          "sum": 7.789999999999998, 
           "average": 0.12983333333333333
         }, 
         "Binghamton NY": {
           "count": 61, 
-          "sum": 14.08, 
+          "sum": 14.080000000000002, 
           "average": 0.23081967213114754
         }, 
         "Miami FL": {
           "count": 61, 
-          "sum": 58.64, 
+          "sum": 58.640000000000015, 
           "average": 0.9613114754098361
         }, 
         "Charleston SC": {
@@ -4530,17 +4530,17 @@ weather_bar = [
         }, 
         "Cleveland OH": {
           "count": 61, 
-          "sum": 5.529999999999999, 
+          "sum": 5.5299999999999985, 
           "average": 0.09065573770491804
         }, 
         "Omaha/Valley NE": {
           "count": 61, 
-          "sum": 26.099999999999998, 
+          "sum": 26.100000000000005, 
           "average": 0.4278688524590164
         }, 
         "Marquette MI": {
           "count": 122, 
-          "sum": 24.820000000000004, 
+          "sum": 24.82000000000001, 
           "average": 0.20344262295081966
         }, 
         "Eureka CA": {
@@ -4550,12 +4550,12 @@ weather_bar = [
         }, 
         "North Platte NE": {
           "count": 61, 
-          "sum": 18.650000000000002, 
+          "sum": 18.650000000000006, 
           "average": 0.30573770491803276
         }, 
         "Pocatello ID": {
           "count": 61, 
-          "sum": 7.2299999999999995, 
+          "sum": 7.229999999999999, 
           "average": 0.11852459016393443
         }, 
         "Tucson AZ": {
@@ -4570,7 +4570,7 @@ weather_bar = [
         }, 
         "Springfield MO": {
           "count": 61, 
-          "sum": 27.549999999999994, 
+          "sum": 27.550000000000008, 
           "average": 0.4516393442622951
         }, 
         "San Francisco Bay Area/Monterey CA": {
@@ -4580,17 +4580,17 @@ weather_bar = [
         }, 
         "Boise ID": {
           "count": 60, 
-          "sum": 5.54, 
+          "sum": 5.539999999999999, 
           "average": 0.09233333333333334
         }, 
         "Northern Indiana IN": {
           "count": 61, 
-          "sum": 27.510000000000005, 
+          "sum": 27.509999999999998, 
           "average": 0.45098360655737707
         }, 
         "Jackson MS": {
           "count": 61, 
-          "sum": 28.66999999999999, 
+          "sum": 28.67, 
           "average": 0.47000000000000003
         }, 
         "Chicago IL": {
@@ -4610,7 +4610,7 @@ weather_bar = [
         }, 
         "Seattle WA": {
           "count": 60, 
-          "sum": 7.9, 
+          "sum": 7.899999999999998, 
           "average": 0.13166666666666668
         }, 
         "Mobile/Pensacola AL": {
@@ -4620,7 +4620,7 @@ weather_bar = [
         }, 
         "New Orleans/Baton Rouge LA": {
           "count": 61, 
-          "sum": 54.349999999999994, 
+          "sum": 54.35, 
           "average": 0.8909836065573771
         }, 
         "Jacksonville FL": {
@@ -4640,7 +4640,7 @@ weather_bar = [
         }, 
         "Detroit/Pontiac MI": {
           "count": 61, 
-          "sum": 18.740000000000002, 
+          "sum": 18.74, 
           "average": 0.30721311475409835
         }, 
         "Dodge City KS": {
@@ -4650,12 +4650,12 @@ weather_bar = [
         }, 
         "Jackson KY": {
           "count": 60, 
-          "sum": 26.48, 
+          "sum": 26.479999999999997, 
           "average": 0.44133333333333336
         }, 
         "Morristown/Knoxville TN": {
           "count": 61, 
-          "sum": 23.610000000000003, 
+          "sum": 23.61, 
           "average": 0.38704918032786884
         }, 
         "Elko NV": {
@@ -4670,17 +4670,17 @@ weather_bar = [
         }, 
         "Wilmington OH": {
           "count": 61, 
-          "sum": 23.47, 
+          "sum": 23.470000000000002, 
           "average": 0.3847540983606557
         }, 
         "Paducah KY": {
           "count": 61, 
-          "sum": 19.229999999999997, 
+          "sum": 19.23, 
           "average": 0.3152459016393443
         }, 
         "Boston MD": {
           "count": 61, 
-          "sum": 19.180000000000003, 
+          "sum": 19.179999999999996, 
           "average": 0.3144262295081967
         }, 
         "Midland/Odessa TX": {
@@ -4690,7 +4690,7 @@ weather_bar = [
         }, 
         "Norman/Oklahoma City OK": {
           "count": 61, 
-          "sum": 37.22000000000001, 
+          "sum": 37.220000000000006, 
           "average": 0.6101639344262295
         }, 
         "Missoula MT": {
@@ -4705,7 +4705,7 @@ weather_bar = [
         }, 
         "Fairbanks AK": {
           "count": 59, 
-          "sum": 4.55, 
+          "sum": 4.549999999999998, 
           "average": 0.0771186440677966
         }, 
         "Reno NV": {
@@ -4715,7 +4715,7 @@ weather_bar = [
         }, 
         "Sioux Falls SD": {
           "count": 183, 
-          "sum": 73.68, 
+          "sum": 73.67999999999998, 
           "average": 0.4026229508196721
         }, 
         "San Angelo TX": {
@@ -4725,7 +4725,7 @@ weather_bar = [
         }, 
         "Gray/Portland ME": {
           "count": 61, 
-          "sum": 15.199999999999996, 
+          "sum": 15.2, 
           "average": 0.24918032786885247
         }, 
         "Aberdeen SD": {
@@ -4735,17 +4735,17 @@ weather_bar = [
         }, 
         "North Little Rock AR": {
           "count": 61, 
-          "sum": 32.28, 
+          "sum": 32.28000000000001, 
           "average": 0.5291803278688525
         }, 
         "Austin/San Antonio TX": {
           "count": 61, 
-          "sum": 45.260000000000005, 
+          "sum": 45.25999999999999, 
           "average": 0.7419672131147541
         }, 
         "Caribou ME": {
           "count": 61, 
-          "sum": 16.400000000000002, 
+          "sum": 16.4, 
           "average": 0.26885245901639343
         }
       }, 
@@ -4760,10 +4760,10 @@ weather_bar = [
           "sum": 2428.0, 
           "average": 41.152542372881356
         }, 
-        "San Juan PR": {
-          "count": 61, 
-          "sum": 4638.0, 
-          "average": 76.0327868852459
+        "Billings MT": {
+          "count": 60, 
+          "sum": 2599.0, 
+          "average": 43.31666666666667
         }, 
         "New York/Upton NY": {
           "count": 61, 
@@ -4839,11 +4839,6 @@ weather_bar = [
           "count": 61, 
           "sum": 3985.0, 
           "average": 65.32786885245902
-        }, 
-        "Grand Rapids MI": {
-          "count": 61, 
-          "sum": 2829.0, 
-          "average": 46.377049180327866
         }, 
         "Albany NY": {
           "count": 61, 
@@ -5035,10 +5030,10 @@ weather_bar = [
           "sum": 3607.0, 
           "average": 59.131147540983605
         }, 
-        "Billings MT": {
-          "count": 60, 
-          "sum": 2599.0, 
-          "average": 43.31666666666667
+        "Grand Rapids MI": {
+          "count": 61, 
+          "sum": 2829.0, 
+          "average": 46.377049180327866
         }, 
         "Los Angeles/Oxnard CA": {
           "count": 60, 
@@ -5079,6 +5074,11 @@ weather_bar = [
           "count": 120, 
           "sum": 5562.0, 
           "average": 46.35
+        }, 
+        "San Juan PR": {
+          "count": 61, 
+          "sum": 4638.0, 
+          "average": 76.0327868852459
         }, 
         "Riverton WY": {
           "count": 60, 
@@ -5352,10 +5352,10 @@ weather_bar = [
           "sum": 3966.0, 
           "average": 67.22033898305085
         }, 
-        "San Juan PR": {
-          "count": 61, 
-          "sum": 5296.0, 
-          "average": 86.81967213114754
+        "Billings MT": {
+          "count": 60, 
+          "sum": 3976.0, 
+          "average": 66.26666666666667
         }, 
         "New York/Upton NY": {
           "count": 61, 
@@ -5431,11 +5431,6 @@ weather_bar = [
           "count": 61, 
           "sum": 5151.0, 
           "average": 84.44262295081967
-        }, 
-        "Grand Rapids MI": {
-          "count": 61, 
-          "sum": 4166.0, 
-          "average": 68.29508196721312
         }, 
         "Albany NY": {
           "count": 61, 
@@ -5627,10 +5622,10 @@ weather_bar = [
           "sum": 4817.0, 
           "average": 78.9672131147541
         }, 
-        "Billings MT": {
-          "count": 60, 
-          "sum": 3976.0, 
-          "average": 66.26666666666667
+        "Grand Rapids MI": {
+          "count": 61, 
+          "sum": 4166.0, 
+          "average": 68.29508196721312
         }, 
         "Los Angeles/Oxnard CA": {
           "count": 60, 
@@ -5671,6 +5666,11 @@ weather_bar = [
           "count": 120, 
           "sum": 8082.0, 
           "average": 67.35
+        }, 
+        "San Juan PR": {
+          "count": 61, 
+          "sum": 5296.0, 
+          "average": 86.81967213114754
         }, 
         "Riverton WY": {
           "count": 60, 
@@ -5940,7 +5940,7 @@ weather_bar = [
       "Des Moines IA", 
       "Fairbanks AK", 
       "Tulsa OK", 
-      "Aberdeen SD", 
+      "Northern Indiana IN", 
       "Rapid City SD", 
       "El Paso TX", 
       "Goodland KS", 
@@ -5953,21 +5953,21 @@ weather_bar = [
       "Brownsville TX", 
       "Wakefield VA", 
       "Hastings NE", 
-      "Morristown/Knoxville TN", 
+      "Minneapolis/Twin Cities MN", 
       "Jackson KY", 
       "New Orleans/Baton Rouge LA", 
       "Spokane WA", 
       "Dodge City KS", 
       "Boise ID", 
       "North Platte NE", 
-      "Grand Junction CO", 
+      "Reno NV", 
       "Medford OR", 
       "Los Angeles/Oxnard CA", 
       "Greenville-Spartanburg SC", 
       "San Francisco Bay Area/Monterey CA", 
       "Shreveport LA", 
-      "Marquette MI", 
-      "Wilmington OH", 
+      "Baltimore/Washington VA", 
+      "Grand Rapids MI", 
       "Pocatello ID", 
       "Riverton WY", 
       "San Joaquin Valley/Hanford CA", 
@@ -5975,17 +5975,17 @@ weather_bar = [
       "Bismarck ND", 
       "Eureka CA", 
       "Huntsville AL", 
-      "Columbia SC", 
+      "Indianapolis IN", 
       "Mobile/Pensacola AL", 
-      "Minneapolis/Twin Cities MN", 
+      "Morristown/Knoxville TN", 
       "Kansas City/Pleasant Hill MO", 
       "Gray/Portland ME", 
       "Boston MD", 
-      "Charleston WV", 
+      "Corpus Christi TX", 
       "Blacksburg VA", 
       "Billings MT", 
       "Memphis TN", 
-      "Reno NV", 
+      "Grand Junction CO", 
       "State College PA", 
       "Milwaukee/Sullivan WI", 
       "Melbourne FL", 
@@ -5993,27 +5993,26 @@ weather_bar = [
       "San Juan PR", 
       "Birmingham AL", 
       "Jackson MS", 
-      "Northern Indiana IN", 
+      "Aberdeen SD", 
       "Seattle WA", 
       "Flagstaff AZ", 
       "Peachtree City/Atlanta GA", 
       "Wilmington NC", 
       "La Crosse WI", 
+      "Charleston WV", 
       "Fort Worth/Dallas TX", 
       "Missoula MT", 
-      "Indianapolis IN", 
+      "Columbia SC", 
       "Sacramento CA", 
       "San Diego CA", 
       "Pittsburgh PA", 
       "Wichita KS", 
       "Gaylord MI", 
       "Green Bay WI", 
-      "Corpus Christi TX", 
       "Louisville KY", 
       "Newport/Morehead City NC", 
       "Phoenix AZ", 
       "Key West FL", 
-      "Houston/Galveston TX", 
       "Davenport/Quad Cities IA", 
       "Portland OR", 
       "Buffalo NY", 
@@ -6027,7 +6026,7 @@ weather_bar = [
       "Glasgow MT", 
       "Tucson AZ", 
       "Raleigh NC", 
-      "Baltimore/Washington VA", 
+      "Houston/Galveston TX", 
       "Springfield MO", 
       "Lubbock TX", 
       "San Angelo TX", 
@@ -6040,7 +6039,7 @@ weather_bar = [
       "Binghamton NY", 
       "Salt Lake City UT", 
       "Anchorage AK", 
-      "Grand Rapids MI", 
+      "Wilmington OH", 
       "Nashville TN", 
       "Miami FL", 
       "Topeka KS", 
@@ -6050,6 +6049,7 @@ weather_bar = [
       "Charleston SC", 
       "Chicago IL", 
       "New York/Upton NY", 
+      "Marquette MI", 
       "Omaha/Valley NE", 
       "Jacksonville FL", 
       "Denver/Boulder CO", 
@@ -6064,17 +6064,17 @@ weather_bar = [
       "06-08-2016", 
       "05-14-2016", 
       "05-05-2016", 
+      "04-19-2016", 
       "06-09-2016", 
       "06-01-2016", 
       "06-03-2016", 
-      "05-20-2016", 
-      "04-25-2016"
+      "04-18-2016"
     ], 
     "data": {
       "weather.[0].Data.Wind.Avg Wind": {
         "05-16-2016": {
           "count": 128, 
-          "sum": 1084.7590132827324, 
+          "sum": 1084.7590132827322, 
           "average": 8.474679791271347
         }, 
         "04-21-2016": {
@@ -6084,12 +6084,12 @@ weather_bar = [
         }, 
         "05-06-2016": {
           "count": 129, 
-          "sum": 1023.7096774193549, 
+          "sum": 1023.7096774193548, 
           "average": 7.935733933483371
         }, 
         "06-08-2016": {
           "count": 129, 
-          "sum": 1013.2960151802656, 
+          "sum": 1013.2960151802657, 
           "average": 7.855007869614462
         }, 
         "05-14-2016": {
@@ -6099,28 +6099,23 @@ weather_bar = [
         }, 
         "05-05-2016": {
           "count": 129, 
-          "sum": 995.3870967741935, 
+          "sum": 995.3870967741934, 
           "average": 7.716179044761191
         }, 
-        "05-23-2016": {
-          "count": 128, 
-          "sum": 1128.4876660341556, 
-          "average": 8.81630989089184
+        "04-19-2016": {
+          "count": 129, 
+          "sum": 819.7813620071684, 
+          "average": 6.354894279125337
         }, 
         "06-09-2016": {
           "count": 129, 
-          "sum": 1051.9715370018976, 
+          "sum": 1051.9715370018973, 
           "average": 8.154818116293779
         }, 
         "06-01-2016": {
           "count": 129, 
           "sum": 892.5673624288426, 
           "average": 6.9191268405336634
-        }, 
-        "04-16-2016": {
-          "count": 128, 
-          "sum": 1267.646953405018, 
-          "average": 9.903491823476703
         }, 
         "04-26-2016": {
           "count": 127, 
@@ -6129,13 +6124,13 @@ weather_bar = [
         }, 
         "06-03-2016": {
           "count": 129, 
-          "sum": 866.9184060721062, 
+          "sum": 866.9184060721063, 
           "average": 6.720297721489196
         }, 
-        "05-22-2016": {
-          "count": 127, 
-          "sum": 1051.812144212524, 
-          "average": 8.281985387500187
+        "04-18-2016": {
+          "count": 129, 
+          "sum": 976.4032258064516, 
+          "average": 7.569017254313578
         }, 
         "04-23-2016": {
           "count": 128, 
@@ -6149,7 +6144,7 @@ weather_bar = [
         }, 
         "05-20-2016": {
           "count": 129, 
-          "sum": 968.46110056926, 
+          "sum": 968.4611005692599, 
           "average": 7.507450392009767
         }, 
         "04-25-2016": {
@@ -6164,7 +6159,7 @@ weather_bar = [
         }, 
         "06-05-2016": {
           "count": 129, 
-          "sum": 897.26944971537, 
+          "sum": 897.2694497153701, 
           "average": 6.955577129576511
         }, 
         "05-07-2016": {
@@ -6172,10 +6167,15 @@ weather_bar = [
           "sum": 1104.032258064516, 
           "average": 8.55838959739935
         }, 
-        "05-28-2016": {
+        "04-12-2016": {
           "count": 129, 
-          "sum": 996.8652751423149, 
-          "average": 7.727637791800891
+          "sum": 1158.1344086021506, 
+          "average": 8.977786113194966
+        }, 
+        "04-13-2016": {
+          "count": 129, 
+          "sum": 1010.5125448028674, 
+          "average": 7.833430579867189
         }, 
         "04-22-2016": {
           "count": 129, 
@@ -6187,10 +6187,10 @@ weather_bar = [
           "sum": 979.4193548387098, 
           "average": 7.711963423926847
         }, 
-        "04-12-2016": {
+        "05-28-2016": {
           "count": 129, 
-          "sum": 1158.1344086021504, 
-          "average": 8.977786113194966
+          "sum": 996.8652751423149, 
+          "average": 7.727637791800891
         }, 
         "05-26-2016": {
           "count": 129, 
@@ -6209,13 +6209,8 @@ weather_bar = [
         }, 
         "05-13-2016": {
           "count": 129, 
-          "sum": 960.7324478178367, 
+          "sum": 960.7324478178368, 
           "average": 7.44753835517703
-        }, 
-        "05-29-2016": {
-          "count": 129, 
-          "sum": 938.5407969639468, 
-          "average": 7.275510053984084
         }, 
         "05-01-2016": {
           "count": 127, 
@@ -6224,42 +6219,42 @@ weather_bar = [
         }, 
         "04-14-2016": {
           "count": 128, 
-          "sum": 933.8906810035843, 
+          "sum": 933.8906810035844, 
           "average": 7.296020945340501
         }, 
         "05-11-2016": {
           "count": 126, 
-          "sum": 1012.3814041745732, 
+          "sum": 1012.381404174573, 
           "average": 8.034773049004547
         }, 
         "05-03-2016": {
           "count": 129, 
-          "sum": 820.741935483871, 
+          "sum": 820.7419354838711, 
           "average": 6.362340585146287
         }, 
         "05-08-2016": {
           "count": 128, 
-          "sum": 1075.3548387096773, 
+          "sum": 1075.3548387096776, 
           "average": 8.401209677419354
         }, 
         "05-12-2016": {
           "count": 128, 
-          "sum": 938.056925996205, 
+          "sum": 938.0569259962049, 
           "average": 7.328569734345351
         }, 
         "05-25-2016": {
           "count": 129, 
-          "sum": 984.3387096774193, 
+          "sum": 984.3387096774194, 
           "average": 7.63053263315829
         }, 
         "05-17-2016": {
           "count": 129, 
-          "sum": 1073.4345351043644, 
+          "sum": 1073.4345351043642, 
           "average": 8.32119794654546
         }, 
         "06-02-2016": {
           "count": 129, 
-          "sum": 869.2428842504744, 
+          "sum": 869.2428842504745, 
           "average": 6.73831693217422
         }, 
         "05-30-2016": {
@@ -6269,7 +6264,7 @@ weather_bar = [
         }, 
         "06-07-2016": {
           "count": 127, 
-          "sum": 1051.620493358634, 
+          "sum": 1051.6204933586337, 
           "average": 8.280476325658533
         }, 
         "05-21-2016": {
@@ -6284,33 +6279,33 @@ weather_bar = [
         }, 
         "06-04-2016": {
           "count": 129, 
-          "sum": 821.593927893738, 
+          "sum": 821.5939278937382, 
           "average": 6.368945177470838
         }, 
-        "04-13-2016": {
+        "05-29-2016": {
           "count": 129, 
-          "sum": 1010.5125448028673, 
-          "average": 7.833430579867189
+          "sum": 938.5407969639468, 
+          "average": 7.275510053984084
         }, 
-        "04-18-2016": {
-          "count": 129, 
-          "sum": 976.4032258064516, 
-          "average": 7.569017254313578
+        "05-22-2016": {
+          "count": 127, 
+          "sum": 1051.812144212524, 
+          "average": 8.281985387500187
         }, 
         "05-31-2016": {
           "count": 129, 
-          "sum": 883.8918406072106, 
+          "sum": 883.8918406072107, 
           "average": 6.85187473338923
         }, 
         "06-06-2016": {
           "count": 127, 
-          "sum": 1036.944971537002, 
+          "sum": 1036.9449715370017, 
           "average": 8.164921035724424
         }, 
-        "04-30-2016": {
-          "count": 129, 
-          "sum": 1041.774193548387, 
-          "average": 8.075768942235559
+        "04-16-2016": {
+          "count": 128, 
+          "sum": 1267.646953405018, 
+          "average": 9.903491823476703
         }, 
         "04-28-2016": {
           "count": 129, 
@@ -6329,7 +6324,7 @@ weather_bar = [
         }, 
         "04-15-2016": {
           "count": 128, 
-          "sum": 1112.2688172043013, 
+          "sum": 1112.2688172043008, 
           "average": 8.689600134408602
         }, 
         "05-10-2016": {
@@ -6342,6 +6337,11 @@ weather_bar = [
           "sum": 1175.8064516129032, 
           "average": 9.185987903225806
         }, 
+        "04-30-2016": {
+          "count": 129, 
+          "sum": 1041.7741935483873, 
+          "average": 8.075768942235559
+        }, 
         "04-17-2016": {
           "count": 127, 
           "sum": 1140.0250896057346, 
@@ -6349,12 +6349,12 @@ weather_bar = [
         }, 
         "05-15-2016": {
           "count": 129, 
-          "sum": 1209.0834914611005, 
+          "sum": 1209.0834914611007, 
           "average": 9.3727402438845
         }, 
         "05-09-2016": {
           "count": 129, 
-          "sum": 1099.0303605313093, 
+          "sum": 1099.030360531309, 
           "average": 8.519615197917126
         }, 
         "04-29-2016": {
@@ -6369,13 +6369,13 @@ weather_bar = [
         }, 
         "05-04-2016": {
           "count": 129, 
-          "sum": 913.0645161290322, 
+          "sum": 913.0645161290324, 
           "average": 7.078019504876219
         }, 
-        "04-19-2016": {
-          "count": 129, 
-          "sum": 819.7813620071685, 
-          "average": 6.354894279125337
+        "05-23-2016": {
+          "count": 128, 
+          "sum": 1128.4876660341556, 
+          "average": 8.81630989089184
         }
       }, 
       "weather.[0].Date.Day": {
@@ -6409,10 +6409,10 @@ weather_bar = [
           "sum": 645, 
           "average": 5.0
         }, 
-        "05-23-2016": {
-          "count": 128, 
-          "sum": 2944, 
-          "average": 23.0
+        "04-19-2016": {
+          "count": 129, 
+          "sum": 2451, 
+          "average": 19.0
         }, 
         "06-09-2016": {
           "count": 129, 
@@ -6424,11 +6424,6 @@ weather_bar = [
           "sum": 129, 
           "average": 1.0
         }, 
-        "04-16-2016": {
-          "count": 128, 
-          "sum": 2048, 
-          "average": 16.0
-        }, 
         "04-26-2016": {
           "count": 127, 
           "sum": 3302, 
@@ -6439,10 +6434,10 @@ weather_bar = [
           "sum": 387, 
           "average": 3.0
         }, 
-        "05-22-2016": {
-          "count": 127, 
-          "sum": 2794, 
-          "average": 22.0
+        "04-18-2016": {
+          "count": 129, 
+          "sum": 2322, 
+          "average": 18.0
         }, 
         "04-23-2016": {
           "count": 128, 
@@ -6479,10 +6474,15 @@ weather_bar = [
           "sum": 903, 
           "average": 7.0
         }, 
-        "05-28-2016": {
+        "04-12-2016": {
           "count": 129, 
-          "sum": 3612, 
-          "average": 28.0
+          "sum": 1548, 
+          "average": 12.0
+        }, 
+        "04-13-2016": {
+          "count": 129, 
+          "sum": 1677, 
+          "average": 13.0
         }, 
         "04-22-2016": {
           "count": 129, 
@@ -6494,10 +6494,10 @@ weather_bar = [
           "sum": 254, 
           "average": 2.0
         }, 
-        "04-12-2016": {
+        "05-28-2016": {
           "count": 129, 
-          "sum": 1548, 
-          "average": 12.0
+          "sum": 3612, 
+          "average": 28.0
         }, 
         "05-26-2016": {
           "count": 129, 
@@ -6518,11 +6518,6 @@ weather_bar = [
           "count": 129, 
           "sum": 1677, 
           "average": 13.0
-        }, 
-        "05-29-2016": {
-          "count": 129, 
-          "sum": 3741, 
-          "average": 29.0
         }, 
         "05-01-2016": {
           "count": 127, 
@@ -6594,15 +6589,15 @@ weather_bar = [
           "sum": 516, 
           "average": 4.0
         }, 
-        "04-13-2016": {
+        "05-29-2016": {
           "count": 129, 
-          "sum": 1677, 
-          "average": 13.0
+          "sum": 3741, 
+          "average": 29.0
         }, 
-        "04-18-2016": {
-          "count": 129, 
-          "sum": 2322, 
-          "average": 18.0
+        "05-22-2016": {
+          "count": 127, 
+          "sum": 2794, 
+          "average": 22.0
         }, 
         "05-31-2016": {
           "count": 129, 
@@ -6614,10 +6609,10 @@ weather_bar = [
           "sum": 762, 
           "average": 6.0
         }, 
-        "04-30-2016": {
-          "count": 129, 
-          "sum": 3870, 
-          "average": 30.0
+        "04-16-2016": {
+          "count": 128, 
+          "sum": 2048, 
+          "average": 16.0
         }, 
         "04-28-2016": {
           "count": 129, 
@@ -6649,6 +6644,11 @@ weather_bar = [
           "sum": 3456, 
           "average": 27.0
         }, 
+        "04-30-2016": {
+          "count": 129, 
+          "sum": 3870, 
+          "average": 30.0
+        }, 
         "04-17-2016": {
           "count": 127, 
           "sum": 2159, 
@@ -6679,10 +6679,10 @@ weather_bar = [
           "sum": 516, 
           "average": 4.0
         }, 
-        "04-19-2016": {
-          "count": 129, 
-          "sum": 2451, 
-          "average": 19.0
+        "05-23-2016": {
+          "count": 128, 
+          "sum": 2944, 
+          "average": 23.0
         }
       }, 
       "weather.[0].Date.Month": {
@@ -6716,10 +6716,10 @@ weather_bar = [
           "sum": 645, 
           "average": 5.0
         }, 
-        "05-23-2016": {
-          "count": 128, 
-          "sum": 640, 
-          "average": 5.0
+        "04-19-2016": {
+          "count": 129, 
+          "sum": 516, 
+          "average": 4.0
         }, 
         "06-09-2016": {
           "count": 129, 
@@ -6731,11 +6731,6 @@ weather_bar = [
           "sum": 774, 
           "average": 6.0
         }, 
-        "04-16-2016": {
-          "count": 128, 
-          "sum": 512, 
-          "average": 4.0
-        }, 
         "04-26-2016": {
           "count": 127, 
           "sum": 508, 
@@ -6746,10 +6741,10 @@ weather_bar = [
           "sum": 774, 
           "average": 6.0
         }, 
-        "05-22-2016": {
-          "count": 127, 
-          "sum": 635, 
-          "average": 5.0
+        "04-18-2016": {
+          "count": 129, 
+          "sum": 516, 
+          "average": 4.0
         }, 
         "04-23-2016": {
           "count": 128, 
@@ -6786,10 +6781,15 @@ weather_bar = [
           "sum": 645, 
           "average": 5.0
         }, 
-        "05-28-2016": {
+        "04-12-2016": {
           "count": 129, 
-          "sum": 645, 
-          "average": 5.0
+          "sum": 516, 
+          "average": 4.0
+        }, 
+        "04-13-2016": {
+          "count": 129, 
+          "sum": 516, 
+          "average": 4.0
         }, 
         "04-22-2016": {
           "count": 129, 
@@ -6801,10 +6801,10 @@ weather_bar = [
           "sum": 635, 
           "average": 5.0
         }, 
-        "04-12-2016": {
+        "05-28-2016": {
           "count": 129, 
-          "sum": 516, 
-          "average": 4.0
+          "sum": 645, 
+          "average": 5.0
         }, 
         "05-26-2016": {
           "count": 129, 
@@ -6822,11 +6822,6 @@ weather_bar = [
           "average": 4.0
         }, 
         "05-13-2016": {
-          "count": 129, 
-          "sum": 645, 
-          "average": 5.0
-        }, 
-        "05-29-2016": {
           "count": 129, 
           "sum": 645, 
           "average": 5.0
@@ -6901,15 +6896,15 @@ weather_bar = [
           "sum": 774, 
           "average": 6.0
         }, 
-        "04-13-2016": {
+        "05-29-2016": {
           "count": 129, 
-          "sum": 516, 
-          "average": 4.0
+          "sum": 645, 
+          "average": 5.0
         }, 
-        "04-18-2016": {
-          "count": 129, 
-          "sum": 516, 
-          "average": 4.0
+        "05-22-2016": {
+          "count": 127, 
+          "sum": 635, 
+          "average": 5.0
         }, 
         "05-31-2016": {
           "count": 129, 
@@ -6921,9 +6916,9 @@ weather_bar = [
           "sum": 762, 
           "average": 6.0
         }, 
-        "04-30-2016": {
-          "count": 129, 
-          "sum": 516, 
+        "04-16-2016": {
+          "count": 128, 
+          "sum": 512, 
           "average": 4.0
         }, 
         "04-28-2016": {
@@ -6956,6 +6951,11 @@ weather_bar = [
           "sum": 512, 
           "average": 4.0
         }, 
+        "04-30-2016": {
+          "count": 129, 
+          "sum": 516, 
+          "average": 4.0
+        }, 
         "04-17-2016": {
           "count": 127, 
           "sum": 508, 
@@ -6986,10 +6986,10 @@ weather_bar = [
           "sum": 645, 
           "average": 5.0
         }, 
-        "04-19-2016": {
-          "count": 129, 
-          "sum": 516, 
-          "average": 4.0
+        "05-23-2016": {
+          "count": 128, 
+          "sum": 640, 
+          "average": 5.0
         }
       }, 
       "weather.[0].Data.Wind.High Wind": {
@@ -7010,12 +7010,12 @@ weather_bar = [
         }, 
         "06-08-2016": {
           "count": 129, 
-          "sum": 2651.677419354839, 
+          "sum": 2651.6774193548385, 
           "average": 20.55563890972743
         }, 
         "05-14-2016": {
           "count": 129, 
-          "sum": 2799.945161290322, 
+          "sum": 2799.9451612903226, 
           "average": 21.705001250312577
         }, 
         "05-05-2016": {
@@ -7023,10 +7023,10 @@ weather_bar = [
           "sum": 2537.1935483870966, 
           "average": 19.668167041760437
         }, 
-        "05-23-2016": {
-          "count": 128, 
-          "sum": 2760.0967741935483, 
-          "average": 21.563256048387096
+        "04-19-2016": {
+          "count": 129, 
+          "sum": 2198.94623655914, 
+          "average": 17.046094857047596
         }, 
         "06-09-2016": {
           "count": 129, 
@@ -7038,11 +7038,6 @@ weather_bar = [
           "sum": 2556.048387096774, 
           "average": 19.814328582145535
         }, 
-        "04-16-2016": {
-          "count": 128, 
-          "sum": 2740.4623655913974, 
-          "average": 21.409862231182796
-        }, 
         "04-26-2016": {
           "count": 127, 
           "sum": 2714.4086021505377, 
@@ -7053,10 +7048,10 @@ weather_bar = [
           "sum": 2372.3709677419356, 
           "average": 18.39047261815454
         }, 
-        "05-22-2016": {
-          "count": 127, 
-          "sum": 2577.435483870968, 
-          "average": 20.29476758953518
+        "04-18-2016": {
+          "count": 129, 
+          "sum": 2369.451612903226, 
+          "average": 18.36784196049012
         }, 
         "04-23-2016": {
           "count": 128, 
@@ -7093,10 +7088,15 @@ weather_bar = [
           "sum": 2678.516129032258, 
           "average": 20.76369092273068
         }, 
-        "05-28-2016": {
+        "04-12-2016": {
           "count": 129, 
-          "sum": 2666.4032258064517, 
-          "average": 20.66979244811203
+          "sum": 2780.483870967742, 
+          "average": 21.55413853463366
+        }, 
+        "04-13-2016": {
+          "count": 129, 
+          "sum": 2505.978494623656, 
+          "average": 19.426189880803534
         }, 
         "04-22-2016": {
           "count": 129, 
@@ -7108,10 +7108,10 @@ weather_bar = [
           "sum": 2366.209677419355, 
           "average": 18.631572263144523
         }, 
-        "04-12-2016": {
+        "05-28-2016": {
           "count": 129, 
-          "sum": 2780.483870967742, 
-          "average": 21.55413853463366
+          "sum": 2666.4032258064517, 
+          "average": 20.66979244811203
         }, 
         "05-26-2016": {
           "count": 129, 
@@ -7133,11 +7133,6 @@ weather_bar = [
           "sum": 2561.483870967742, 
           "average": 19.856464116029006
         }, 
-        "05-29-2016": {
-          "count": 129, 
-          "sum": 2447.064516129032, 
-          "average": 18.969492373093274
-        }, 
         "05-01-2016": {
           "count": 127, 
           "sum": 2645.548387096774, 
@@ -7145,7 +7140,7 @@ weather_bar = [
         }, 
         "04-14-2016": {
           "count": 128, 
-          "sum": 2399.4731182795704, 
+          "sum": 2399.47311827957, 
           "average": 18.74588373655914
         }, 
         "05-11-2016": {
@@ -7208,15 +7203,15 @@ weather_bar = [
           "sum": 2342.032258064516, 
           "average": 18.155288822205552
         }, 
-        "04-13-2016": {
+        "05-29-2016": {
           "count": 129, 
-          "sum": 2505.978494623656, 
-          "average": 19.426189880803534
+          "sum": 2447.064516129032, 
+          "average": 18.969492373093274
         }, 
-        "04-18-2016": {
-          "count": 129, 
-          "sum": 2369.451612903226, 
-          "average": 18.36784196049012
+        "05-22-2016": {
+          "count": 127, 
+          "sum": 2577.435483870968, 
+          "average": 20.29476758953518
         }, 
         "05-31-2016": {
           "count": 129, 
@@ -7225,17 +7220,17 @@ weather_bar = [
         }, 
         "06-06-2016": {
           "count": 127, 
-          "sum": 2663.354838709677, 
+          "sum": 2663.3548387096776, 
           "average": 20.971297942595886
         }, 
-        "04-30-2016": {
-          "count": 129, 
-          "sum": 2515.887096774193, 
-          "average": 19.503000750187546
+        "04-16-2016": {
+          "count": 128, 
+          "sum": 2740.462365591398, 
+          "average": 21.409862231182796
         }, 
         "04-28-2016": {
           "count": 129, 
-          "sum": 2781.564516129032, 
+          "sum": 2781.5645161290327, 
           "average": 21.562515628907228
         }, 
         "05-18-2016": {
@@ -7245,7 +7240,7 @@ weather_bar = [
         }, 
         "04-10-2016": {
           "count": 105, 
-          "sum": 2480.494623655914, 
+          "sum": 2480.4946236559144, 
           "average": 23.623758320532513
         }, 
         "04-15-2016": {
@@ -7263,6 +7258,11 @@ weather_bar = [
           "sum": 2825.4032258064517, 
           "average": 22.073462701612904
         }, 
+        "04-30-2016": {
+          "count": 129, 
+          "sum": 2515.887096774193, 
+          "average": 19.503000750187546
+        }, 
         "04-17-2016": {
           "count": 127, 
           "sum": 2518.956989247312, 
@@ -7270,7 +7270,7 @@ weather_bar = [
         }, 
         "05-15-2016": {
           "count": 129, 
-          "sum": 3008.4064516129033, 
+          "sum": 3008.406451612903, 
           "average": 23.320980245061264
         }, 
         "05-09-2016": {
@@ -7285,7 +7285,7 @@ weather_bar = [
         }, 
         "04-11-2016": {
           "count": 128, 
-          "sum": 2886.989247311828, 
+          "sum": 2886.9892473118284, 
           "average": 22.554603494623656
         }, 
         "05-04-2016": {
@@ -7293,10 +7293,10 @@ weather_bar = [
           "sum": 2386.532258064516, 
           "average": 18.50025006251563
         }, 
-        "04-19-2016": {
-          "count": 129, 
-          "sum": 2198.94623655914, 
-          "average": 17.046094857047596
+        "05-23-2016": {
+          "count": 128, 
+          "sum": 2760.0967741935483, 
+          "average": 21.563256048387096
         }
       }, 
       "weather.[0].Date.Year": {
@@ -7330,9 +7330,9 @@ weather_bar = [
           "sum": 260064, 
           "average": 2016.0
         }, 
-        "05-23-2016": {
-          "count": 128, 
-          "sum": 258048, 
+        "04-19-2016": {
+          "count": 129, 
+          "sum": 260064, 
           "average": 2016.0
         }, 
         "06-09-2016": {
@@ -7345,11 +7345,6 @@ weather_bar = [
           "sum": 260064, 
           "average": 2016.0
         }, 
-        "04-16-2016": {
-          "count": 128, 
-          "sum": 258048, 
-          "average": 2016.0
-        }, 
         "04-26-2016": {
           "count": 127, 
           "sum": 256032, 
@@ -7360,9 +7355,9 @@ weather_bar = [
           "sum": 260064, 
           "average": 2016.0
         }, 
-        "05-22-2016": {
-          "count": 127, 
-          "sum": 256032, 
+        "04-18-2016": {
+          "count": 129, 
+          "sum": 260064, 
           "average": 2016.0
         }, 
         "04-23-2016": {
@@ -7400,7 +7395,12 @@ weather_bar = [
           "sum": 260064, 
           "average": 2016.0
         }, 
-        "05-28-2016": {
+        "04-12-2016": {
+          "count": 129, 
+          "sum": 260064, 
+          "average": 2016.0
+        }, 
+        "04-13-2016": {
           "count": 129, 
           "sum": 260064, 
           "average": 2016.0
@@ -7415,7 +7415,7 @@ weather_bar = [
           "sum": 256032, 
           "average": 2016.0
         }, 
-        "04-12-2016": {
+        "05-28-2016": {
           "count": 129, 
           "sum": 260064, 
           "average": 2016.0
@@ -7436,11 +7436,6 @@ weather_bar = [
           "average": 2016.0
         }, 
         "05-13-2016": {
-          "count": 129, 
-          "sum": 260064, 
-          "average": 2016.0
-        }, 
-        "05-29-2016": {
           "count": 129, 
           "sum": 260064, 
           "average": 2016.0
@@ -7515,14 +7510,14 @@ weather_bar = [
           "sum": 260064, 
           "average": 2016.0
         }, 
-        "04-13-2016": {
+        "05-29-2016": {
           "count": 129, 
           "sum": 260064, 
           "average": 2016.0
         }, 
-        "04-18-2016": {
-          "count": 129, 
-          "sum": 260064, 
+        "05-22-2016": {
+          "count": 127, 
+          "sum": 256032, 
           "average": 2016.0
         }, 
         "05-31-2016": {
@@ -7535,9 +7530,9 @@ weather_bar = [
           "sum": 256032, 
           "average": 2016.0
         }, 
-        "04-30-2016": {
-          "count": 129, 
-          "sum": 260064, 
+        "04-16-2016": {
+          "count": 128, 
+          "sum": 258048, 
           "average": 2016.0
         }, 
         "04-28-2016": {
@@ -7570,6 +7565,11 @@ weather_bar = [
           "sum": 258048, 
           "average": 2016.0
         }, 
+        "04-30-2016": {
+          "count": 129, 
+          "sum": 260064, 
+          "average": 2016.0
+        }, 
         "04-17-2016": {
           "count": 127, 
           "sum": 256032, 
@@ -7600,9 +7600,9 @@ weather_bar = [
           "sum": 260064, 
           "average": 2016.0
         }, 
-        "04-19-2016": {
-          "count": 129, 
-          "sum": 260064, 
+        "05-23-2016": {
+          "count": 128, 
+          "sum": 258048, 
           "average": 2016.0
         }
       }, 
@@ -7637,10 +7637,10 @@ weather_bar = [
           "sum": 7711.0, 
           "average": 59.775193798449614
         }, 
-        "05-23-2016": {
-          "count": 128, 
-          "sum": 8381.0, 
-          "average": 65.4765625
+        "04-19-2016": {
+          "count": 129, 
+          "sum": 7559.0, 
+          "average": 58.5968992248062
         }, 
         "06-09-2016": {
           "count": 129, 
@@ -7652,14 +7652,9 @@ weather_bar = [
           "sum": 9017.0, 
           "average": 69.89922480620154
         }, 
-        "04-16-2016": {
-          "count": 128, 
-          "sum": 7337.0, 
-          "average": 57.3203125
-        }, 
         "04-26-2016": {
           "count": 127, 
-          "sum": 7601.666666666667, 
+          "sum": 7601.666666666666, 
           "average": 59.85564304461943
         }, 
         "06-03-2016": {
@@ -7667,10 +7662,10 @@ weather_bar = [
           "sum": 9118.0, 
           "average": 70.68217054263566
         }, 
-        "05-22-2016": {
-          "count": 127, 
-          "sum": 8270.0, 
-          "average": 65.11811023622047
+        "04-18-2016": {
+          "count": 129, 
+          "sum": 7492.0, 
+          "average": 58.07751937984496
         }, 
         "04-23-2016": {
           "count": 128, 
@@ -7689,7 +7684,7 @@ weather_bar = [
         }, 
         "04-25-2016": {
           "count": 129, 
-          "sum": 7641.333333333333, 
+          "sum": 7641.333333333334, 
           "average": 59.235142118863045
         }, 
         "04-20-2016": {
@@ -7707,10 +7702,15 @@ weather_bar = [
           "sum": 8029.0, 
           "average": 62.24031007751938
         }, 
-        "05-28-2016": {
+        "04-12-2016": {
           "count": 129, 
-          "sum": 8833.5, 
-          "average": 68.47674418604652
+          "sum": 6780.0, 
+          "average": 52.55813953488372
+        }, 
+        "04-13-2016": {
+          "count": 129, 
+          "sum": 6767.0, 
+          "average": 52.457364341085274
         }, 
         "04-22-2016": {
           "count": 129, 
@@ -7722,10 +7722,10 @@ weather_bar = [
           "sum": 7322.0, 
           "average": 57.653543307086615
         }, 
-        "04-12-2016": {
+        "05-28-2016": {
           "count": 129, 
-          "sum": 6780.0, 
-          "average": 52.55813953488372
+          "sum": 8833.5, 
+          "average": 68.47674418604652
         }, 
         "05-26-2016": {
           "count": 129, 
@@ -7746,11 +7746,6 @@ weather_bar = [
           "count": 129, 
           "sum": 8311.0, 
           "average": 64.42635658914729
-        }, 
-        "05-29-2016": {
-          "count": 129, 
-          "sum": 9016.0, 
-          "average": 69.89147286821705
         }, 
         "05-01-2016": {
           "count": 127, 
@@ -7774,7 +7769,7 @@ weather_bar = [
         }, 
         "05-08-2016": {
           "count": 128, 
-          "sum": 7834.333333333333, 
+          "sum": 7834.333333333334, 
           "average": 61.205729166666664
         }, 
         "05-12-2016": {
@@ -7822,15 +7817,15 @@ weather_bar = [
           "sum": 9307.0, 
           "average": 72.14728682170542
         }, 
-        "04-13-2016": {
+        "05-29-2016": {
           "count": 129, 
-          "sum": 6767.0, 
-          "average": 52.457364341085274
+          "sum": 9016.0, 
+          "average": 69.89147286821705
         }, 
-        "04-18-2016": {
-          "count": 129, 
-          "sum": 7492.0, 
-          "average": 58.07751937984496
+        "05-22-2016": {
+          "count": 127, 
+          "sum": 8270.0, 
+          "average": 65.11811023622047
         }, 
         "05-31-2016": {
           "count": 129, 
@@ -7842,10 +7837,10 @@ weather_bar = [
           "sum": 9133.0, 
           "average": 71.91338582677166
         }, 
-        "04-30-2016": {
-          "count": 129, 
-          "sum": 7267.0, 
-          "average": 56.333333333333336
+        "04-16-2016": {
+          "count": 128, 
+          "sum": 7337.0, 
+          "average": 57.3203125
         }, 
         "04-28-2016": {
           "count": 129, 
@@ -7877,6 +7872,11 @@ weather_bar = [
           "sum": 7478.0, 
           "average": 58.421875
         }, 
+        "04-30-2016": {
+          "count": 129, 
+          "sum": 7267.0, 
+          "average": 56.333333333333336
+        }, 
         "04-17-2016": {
           "count": 127, 
           "sum": 7364.0, 
@@ -7889,7 +7889,7 @@ weather_bar = [
         }, 
         "05-09-2016": {
           "count": 129, 
-          "sum": 7894.666666666667, 
+          "sum": 7894.666666666666, 
           "average": 61.19896640826874
         }, 
         "04-29-2016": {
@@ -7907,10 +7907,10 @@ weather_bar = [
           "sum": 7722.0, 
           "average": 59.86046511627907
         }, 
-        "04-19-2016": {
-          "count": 129, 
-          "sum": 7559.0, 
-          "average": 58.5968992248062
+        "05-23-2016": {
+          "count": 128, 
+          "sum": 8381.0, 
+          "average": 65.4765625
         }
       }, 
       "weather.[0].Data.Wind.High Gust": {
@@ -7926,7 +7926,7 @@ weather_bar = [
         }, 
         "05-06-2016": {
           "count": 129, 
-          "sum": 3327.7526881720432, 
+          "sum": 3327.752688172043, 
           "average": 25.796532466449946
         }, 
         "06-08-2016": {
@@ -7936,7 +7936,7 @@ weather_bar = [
         }, 
         "05-14-2016": {
           "count": 129, 
-          "sum": 3686.3425499231953, 
+          "sum": 3686.342549923195, 
           "average": 28.576298836613915
         }, 
         "05-05-2016": {
@@ -7944,25 +7944,20 @@ weather_bar = [
           "sum": 3409.440860215054, 
           "average": 26.429774110194217
         }, 
-        "05-23-2016": {
-          "count": 128, 
-          "sum": 3595.137096774193, 
-          "average": 28.087008568548388
+        "04-19-2016": {
+          "count": 129, 
+          "sum": 2853.1738351254476, 
+          "average": 22.117626628879442
         }, 
         "06-09-2016": {
           "count": 129, 
-          "sum": 3387.2548387096776, 
+          "sum": 3387.254838709677, 
           "average": 26.25778944736184
         }, 
         "06-01-2016": {
           "count": 129, 
           "sum": 3347.493548387097, 
           "average": 25.94956239059765
-        }, 
-        "04-16-2016": {
-          "count": 128, 
-          "sum": 3603.0716845878137, 
-          "average": 28.148997535842295
         }, 
         "04-26-2016": {
           "count": 127, 
@@ -7971,13 +7966,13 @@ weather_bar = [
         }, 
         "06-03-2016": {
           "count": 129, 
-          "sum": 3108.7838709677417, 
+          "sum": 3108.783870967742, 
           "average": 24.09909977494374
         }, 
-        "05-22-2016": {
-          "count": 127, 
-          "sum": 3364.241935483871, 
-          "average": 26.490093980187957
+        "04-18-2016": {
+          "count": 129, 
+          "sum": 3122.3064516129034, 
+          "average": 24.203925981495374
         }, 
         "04-23-2016": {
           "count": 128, 
@@ -8006,18 +8001,23 @@ weather_bar = [
         }, 
         "06-05-2016": {
           "count": 129, 
-          "sum": 3180.607526881721, 
+          "sum": 3180.6075268817203, 
           "average": 24.655872301408685
         }, 
         "05-07-2016": {
           "count": 129, 
-          "sum": 3618.3978494623657, 
+          "sum": 3618.3978494623652, 
           "average": 28.0495957322664
         }, 
-        "05-28-2016": {
+        "04-12-2016": {
           "count": 129, 
-          "sum": 3495.612903225807, 
-          "average": 27.097774443610902
+          "sum": 3639.6021505376348, 
+          "average": 28.21397015920647
+        }, 
+        "04-13-2016": {
+          "count": 129, 
+          "sum": 3268.469534050179, 
+          "average": 25.336973132171934
         }, 
         "04-22-2016": {
           "count": 129, 
@@ -8029,10 +8029,10 @@ weather_bar = [
           "sum": 3067.8387096774195, 
           "average": 24.156210312420626
         }, 
-        "04-12-2016": {
+        "05-28-2016": {
           "count": 129, 
-          "sum": 3639.6021505376343, 
-          "average": 28.21397015920647
+          "sum": 3495.6129032258063, 
+          "average": 27.097774443610902
         }, 
         "05-26-2016": {
           "count": 129, 
@@ -8046,18 +8046,13 @@ weather_bar = [
         }, 
         "04-24-2016": {
           "count": 126, 
-          "sum": 3427.010752688172, 
+          "sum": 3427.0107526881716, 
           "average": 27.198498037207713
         }, 
         "05-13-2016": {
           "count": 129, 
-          "sum": 3306.268817204301, 
+          "sum": 3306.2688172043013, 
           "average": 25.629990831041095
-        }, 
-        "05-29-2016": {
-          "count": 129, 
-          "sum": 3228.724731182796, 
-          "average": 25.02887388513795
         }, 
         "05-01-2016": {
           "count": 127, 
@@ -8066,12 +8061,12 @@ weather_bar = [
         }, 
         "04-14-2016": {
           "count": 128, 
-          "sum": 3147.836917562724, 
+          "sum": 3147.8369175627245, 
           "average": 24.59247591845878
         }, 
         "05-11-2016": {
           "count": 126, 
-          "sum": 3350.6451612903224, 
+          "sum": 3350.645161290323, 
           "average": 26.59242191500256
         }, 
         "05-03-2016": {
@@ -8081,7 +8076,7 @@ weather_bar = [
         }, 
         "05-08-2016": {
           "count": 128, 
-          "sum": 3491.3763440860216, 
+          "sum": 3491.376344086022, 
           "average": 27.276377688172044
         }, 
         "05-12-2016": {
@@ -8096,7 +8091,7 @@ weather_bar = [
         }, 
         "05-17-2016": {
           "count": 129, 
-          "sum": 3368.397081413211, 
+          "sum": 3368.3970814132103, 
           "average": 26.111605282272947
         }, 
         "06-02-2016": {
@@ -8126,22 +8121,22 @@ weather_bar = [
         }, 
         "06-04-2016": {
           "count": 129, 
-          "sum": 3099.195698924731, 
+          "sum": 3099.1956989247315, 
           "average": 24.024772859881637
         }, 
-        "04-13-2016": {
+        "05-29-2016": {
           "count": 129, 
-          "sum": 3268.469534050179, 
-          "average": 25.336973132171934
+          "sum": 3228.7247311827955, 
+          "average": 25.02887388513795
         }, 
-        "04-18-2016": {
-          "count": 129, 
-          "sum": 3122.3064516129034, 
-          "average": 24.203925981495374
+        "05-22-2016": {
+          "count": 127, 
+          "sum": 3364.241935483871, 
+          "average": 26.490093980187957
         }, 
         "05-31-2016": {
           "count": 129, 
-          "sum": 3617.9483870967742, 
+          "sum": 3617.9483870967747, 
           "average": 28.046111527881973
         }, 
         "06-06-2016": {
@@ -8149,10 +8144,10 @@ weather_bar = [
           "sum": 3558.0193548387097, 
           "average": 28.015900431800862
         }, 
-        "04-30-2016": {
-          "count": 129, 
-          "sum": 3222.048387096774, 
-          "average": 24.977119279819956
+        "04-16-2016": {
+          "count": 128, 
+          "sum": 3603.0716845878137, 
+          "average": 28.148997535842295
         }, 
         "04-28-2016": {
           "count": 129, 
@@ -8161,17 +8156,17 @@ weather_bar = [
         }, 
         "05-18-2016": {
           "count": 128, 
-          "sum": 3028.1374807987713, 
+          "sum": 3028.137480798771, 
           "average": 23.6573240687404
         }, 
         "04-10-2016": {
           "count": 105, 
-          "sum": 3236.8673835125446, 
+          "sum": 3236.867383512545, 
           "average": 30.827308414405188
         }, 
         "04-15-2016": {
           "count": 128, 
-          "sum": 3461.704301075269, 
+          "sum": 3461.704301075268, 
           "average": 27.044564852150536
         }, 
         "05-10-2016": {
@@ -8181,22 +8176,27 @@ weather_bar = [
         }, 
         "04-27-2016": {
           "count": 128, 
-          "sum": 3645.112903225807, 
+          "sum": 3645.1129032258063, 
           "average": 28.477444556451612
+        }, 
+        "04-30-2016": {
+          "count": 129, 
+          "sum": 3222.0483870967746, 
+          "average": 24.977119279819956
         }, 
         "04-17-2016": {
           "count": 127, 
-          "sum": 3331.439068100359, 
+          "sum": 3331.4390681003583, 
           "average": 26.231803685829593
         }, 
         "05-15-2016": {
           "count": 129, 
-          "sum": 3919.916282642089, 
+          "sum": 3919.9162826420893, 
           "average": 30.386947927458056
         }, 
         "05-09-2016": {
           "count": 129, 
-          "sum": 3630.3548387096776, 
+          "sum": 3630.354838709677, 
           "average": 28.14228557139285
         }, 
         "04-29-2016": {
@@ -8211,29 +8211,29 @@ weather_bar = [
         }, 
         "05-04-2016": {
           "count": 129, 
-          "sum": 3199.6290322580644, 
+          "sum": 3199.629032258065, 
           "average": 24.803325831457865
         }, 
-        "04-19-2016": {
-          "count": 129, 
-          "sum": 2853.173835125448, 
-          "average": 22.117626628879442
+        "05-23-2016": {
+          "count": 128, 
+          "sum": 3595.1370967741937, 
+          "average": 28.087008568548388
         }
       }, 
       "weather.[0].Data.Precipitation": {
         "05-16-2016": {
           "count": 128, 
-          "sum": 43.75999999999999, 
+          "sum": 43.760000000000005, 
           "average": 0.341875
         }, 
         "04-21-2016": {
           "count": 129, 
-          "sum": 37.940000000000005, 
+          "sum": 37.94, 
           "average": 0.2941085271317829
         }, 
         "05-06-2016": {
           "count": 129, 
-          "sum": 15.029999999999994, 
+          "sum": 15.03, 
           "average": 0.11651162790697675
         }, 
         "06-08-2016": {
@@ -8243,57 +8243,52 @@ weather_bar = [
         }, 
         "05-14-2016": {
           "count": 129, 
-          "sum": 41.639999999999986, 
+          "sum": 41.64000000000001, 
           "average": 0.3227906976744186
         }, 
         "05-05-2016": {
           "count": 129, 
-          "sum": 23.80999999999999, 
+          "sum": 23.81, 
           "average": 0.1845736434108527
         }, 
-        "05-23-2016": {
-          "count": 128, 
-          "sum": 26.98, 
-          "average": 0.21078125
+        "04-19-2016": {
+          "count": 129, 
+          "sum": 38.139999999999986, 
+          "average": 0.29565891472868217
         }, 
         "06-09-2016": {
           "count": 129, 
-          "sum": 26.170000000000005, 
+          "sum": 26.169999999999998, 
           "average": 0.20286821705426356
         }, 
         "06-01-2016": {
           "count": 129, 
-          "sum": 46.45999999999999, 
+          "sum": 46.459999999999965, 
           "average": 0.3601550387596899
-        }, 
-        "04-16-2016": {
-          "count": 128, 
-          "sum": 33.199999999999996, 
-          "average": 0.259375
         }, 
         "04-26-2016": {
           "count": 127, 
-          "sum": 31.599999999999987, 
+          "sum": 31.6, 
           "average": 0.24881889763779527
         }, 
         "06-03-2016": {
           "count": 129, 
-          "sum": 40.459999999999994, 
+          "sum": 40.45999999999998, 
           "average": 0.3136434108527132
         }, 
-        "05-22-2016": {
-          "count": 127, 
-          "sum": 40.83, 
-          "average": 0.32149606299212596
+        "04-18-2016": {
+          "count": 129, 
+          "sum": 38.78, 
+          "average": 0.3006201550387597
         }, 
         "04-23-2016": {
           "count": 128, 
-          "sum": 37.670000000000016, 
+          "sum": 37.66999999999998, 
           "average": 0.294296875
         }, 
         "05-27-2016": {
           "count": 128, 
-          "sum": 64.03, 
+          "sum": 64.02999999999997, 
           "average": 0.500234375
         }, 
         "05-20-2016": {
@@ -8303,12 +8298,12 @@ weather_bar = [
         }, 
         "04-25-2016": {
           "count": 129, 
-          "sum": 23.639999999999997, 
+          "sum": 23.640000000000004, 
           "average": 0.1832558139534884
         }, 
         "04-20-2016": {
           "count": 129, 
-          "sum": 25.789999999999992, 
+          "sum": 25.789999999999996, 
           "average": 0.19992248062015502
         }, 
         "06-05-2016": {
@@ -8318,13 +8313,18 @@ weather_bar = [
         }, 
         "05-07-2016": {
           "count": 129, 
-          "sum": 45.789999999999985, 
+          "sum": 45.79, 
           "average": 0.35496124031007753
         }, 
-        "05-28-2016": {
+        "04-12-2016": {
           "count": 129, 
-          "sum": 44.720000000000006, 
-          "average": 0.3466666666666667
+          "sum": 48.37, 
+          "average": 0.3749612403100775
+        }, 
+        "04-13-2016": {
+          "count": 129, 
+          "sum": 24.49, 
+          "average": 0.18984496124031006
         }, 
         "04-22-2016": {
           "count": 129, 
@@ -8333,92 +8333,87 @@ weather_bar = [
         }, 
         "05-02-2016": {
           "count": 127, 
-          "sum": 66.99000000000001, 
+          "sum": 66.98999999999997, 
           "average": 0.5274803149606299
         }, 
-        "04-12-2016": {
+        "05-28-2016": {
           "count": 129, 
-          "sum": 48.370000000000005, 
-          "average": 0.3749612403100775
+          "sum": 44.72, 
+          "average": 0.3466666666666667
         }, 
         "05-26-2016": {
           "count": 129, 
-          "sum": 35.56999999999999, 
+          "sum": 35.57000000000001, 
           "average": 0.2757364341085271
         }, 
         "05-19-2016": {
           "count": 128, 
-          "sum": 43.27999999999998, 
+          "sum": 43.28, 
           "average": 0.338125
         }, 
         "04-24-2016": {
           "count": 126, 
-          "sum": 28.39, 
+          "sum": 28.39000000000001, 
           "average": 0.22531746031746033
         }, 
         "05-13-2016": {
           "count": 129, 
-          "sum": 33.919999999999995, 
+          "sum": 33.91999999999999, 
           "average": 0.26294573643410857
-        }, 
-        "05-29-2016": {
-          "count": 129, 
-          "sum": 48.360000000000014, 
-          "average": 0.37488372093023253
         }, 
         "05-01-2016": {
           "count": 127, 
-          "sum": 54.12, 
+          "sum": 54.11999999999999, 
           "average": 0.4261417322834645
         }, 
         "04-14-2016": {
           "count": 128, 
-          "sum": 23.49, 
+          "sum": 23.490000000000006, 
           "average": 0.18351562500000002
         }, 
         "05-11-2016": {
           "count": 126, 
-          "sum": 32.63000000000002, 
+          "sum": 32.63000000000001, 
           "average": 0.258968253968254
         }, 
         "05-03-2016": {
           "count": 129, 
-          "sum": 48.05999999999999, 
+          "sum": 48.059999999999995, 
           "average": 0.37255813953488376
         }, 
         "05-08-2016": {
           "count": 128, 
-          "sum": 35.390000000000015, 
+          "sum": 35.39, 
           "average": 0.276484375
         }, 
         "05-12-2016": {
           "count": 128, 
-          "sum": 41.12, 
+          "sum": 41.120000000000005, 
           "average": 0.32125
         }, 
         "05-25-2016": {
           "count": 129, 
-          "sum": 37.47, 
+          "sum": 37.470000000000006, 
           "average": 0.29046511627906973
         }, 
         "05-17-2016": {
           "count": 129, 
-          "sum": 50.71, 
+          "sum": 50.709999999999994, 
           "average": 0.39310077519379844
         }, 
         "06-02-2016": {
           "count": 129, 
-          "sum": 50.39999999999999, 
+          "sum": 50.40000000000001, 
           "average": 0.39069767441860465
         }, 
         "05-30-2016": {
           "count": 129, 
-          "sum": 42.97, 
+          "sum": 42.97000000000001, 
           "average": 0.33310077519379844
         }, 
         "06-07-2016": {
           "count": 127, 
-          "sum": 46.28999999999999, 
+          "sum": 46.29000000000003, 
           "average": 0.36448818897637797
         }, 
         "05-21-2016": {
@@ -8433,42 +8428,42 @@ weather_bar = [
         }, 
         "06-04-2016": {
           "count": 129, 
-          "sum": 46.339999999999996, 
+          "sum": 46.33999999999999, 
           "average": 0.3592248062015504
         }, 
-        "04-13-2016": {
+        "05-29-2016": {
           "count": 129, 
-          "sum": 24.49, 
-          "average": 0.18984496124031006
+          "sum": 48.36000000000003, 
+          "average": 0.37488372093023253
         }, 
-        "04-18-2016": {
-          "count": 129, 
-          "sum": 38.78, 
-          "average": 0.3006201550387597
+        "05-22-2016": {
+          "count": 127, 
+          "sum": 40.830000000000005, 
+          "average": 0.32149606299212596
         }, 
         "05-31-2016": {
           "count": 129, 
-          "sum": 61.019999999999996, 
+          "sum": 61.02, 
           "average": 0.4730232558139535
         }, 
         "06-06-2016": {
           "count": 127, 
-          "sum": 31.92, 
+          "sum": 31.91999999999999, 
           "average": 0.25133858267716536
         }, 
-        "04-30-2016": {
-          "count": 129, 
-          "sum": 52.77999999999999, 
-          "average": 0.4091472868217054
+        "04-16-2016": {
+          "count": 128, 
+          "sum": 33.20000000000001, 
+          "average": 0.259375
         }, 
         "04-28-2016": {
           "count": 129, 
-          "sum": 50.75000000000002, 
+          "sum": 50.75000000000001, 
           "average": 0.39341085271317827
         }, 
         "05-18-2016": {
           "count": 128, 
-          "sum": 37.360000000000014, 
+          "sum": 37.36000000000001, 
           "average": 0.291875
         }, 
         "04-10-2016": {
@@ -8478,12 +8473,12 @@ weather_bar = [
         }, 
         "04-15-2016": {
           "count": 128, 
-          "sum": 13.66, 
+          "sum": 13.659999999999998, 
           "average": 0.10671875
         }, 
         "05-10-2016": {
           "count": 129, 
-          "sum": 53.30000000000001, 
+          "sum": 53.3, 
           "average": 0.4131782945736434
         }, 
         "04-27-2016": {
@@ -8491,40 +8486,45 @@ weather_bar = [
           "sum": 44.60000000000001, 
           "average": 0.3484375
         }, 
+        "04-30-2016": {
+          "count": 129, 
+          "sum": 52.779999999999994, 
+          "average": 0.4091472868217054
+        }, 
         "04-17-2016": {
           "count": 127, 
-          "sum": 58.79000000000001, 
+          "sum": 58.789999999999985, 
           "average": 0.46291338582677166
         }, 
         "05-15-2016": {
           "count": 129, 
-          "sum": 46.2, 
+          "sum": 46.20000000000001, 
           "average": 0.35813953488372097
         }, 
         "05-09-2016": {
           "count": 129, 
-          "sum": 55.18999999999999, 
+          "sum": 55.19000000000002, 
           "average": 0.4278294573643411
         }, 
         "04-29-2016": {
           "count": 129, 
-          "sum": 34.16, 
+          "sum": 34.160000000000025, 
           "average": 0.2648062015503876
         }, 
         "04-11-2016": {
           "count": 128, 
-          "sum": 40.890000000000015, 
+          "sum": 40.89000000000001, 
           "average": 0.319453125
         }, 
         "05-04-2016": {
           "count": 129, 
-          "sum": 29.349999999999994, 
+          "sum": 29.35000000000001, 
           "average": 0.22751937984496126
         }, 
-        "04-19-2016": {
-          "count": 129, 
-          "sum": 38.13999999999999, 
-          "average": 0.29565891472868217
+        "05-23-2016": {
+          "count": 128, 
+          "sum": 26.980000000000004, 
+          "average": 0.21078125
         }
       }, 
       "weather.[0].Data.Temperature.Min Temp": {
@@ -8558,10 +8558,10 @@ weather_bar = [
           "sum": 6207.0, 
           "average": 48.116279069767444
         }, 
-        "05-23-2016": {
-          "count": 128, 
-          "sum": 6878.0, 
-          "average": 53.734375
+        "04-19-2016": {
+          "count": 129, 
+          "sum": 5881.0, 
+          "average": 45.58914728682171
         }, 
         "06-09-2016": {
           "count": 129, 
@@ -8573,11 +8573,6 @@ weather_bar = [
           "sum": 7518.0, 
           "average": 58.27906976744186
         }, 
-        "04-16-2016": {
-          "count": 128, 
-          "sum": 5908.0, 
-          "average": 46.15625
-        }, 
         "04-26-2016": {
           "count": 127, 
           "sum": 6224.0, 
@@ -8588,10 +8583,10 @@ weather_bar = [
           "sum": 7625.0, 
           "average": 59.10852713178294
         }, 
-        "05-22-2016": {
-          "count": 127, 
-          "sum": 6882.0, 
-          "average": 54.188976377952756
+        "04-18-2016": {
+          "count": 129, 
+          "sum": 5869.0, 
+          "average": 45.49612403100775
         }, 
         "04-23-2016": {
           "count": 128, 
@@ -8628,10 +8623,15 @@ weather_bar = [
           "sum": 6313.0, 
           "average": 48.93798449612403
         }, 
-        "05-28-2016": {
+        "04-12-2016": {
           "count": 129, 
-          "sum": 7506.0, 
-          "average": 58.18604651162791
+          "sum": 5424.0, 
+          "average": 42.04651162790697
+        }, 
+        "04-13-2016": {
+          "count": 129, 
+          "sum": 5292.0, 
+          "average": 41.02325581395349
         }, 
         "04-22-2016": {
           "count": 129, 
@@ -8643,10 +8643,10 @@ weather_bar = [
           "sum": 6143.0, 
           "average": 48.37007874015748
         }, 
-        "04-12-2016": {
+        "05-28-2016": {
           "count": 129, 
-          "sum": 5424.0, 
-          "average": 42.04651162790697
+          "sum": 7506.0, 
+          "average": 58.18604651162791
         }, 
         "05-26-2016": {
           "count": 129, 
@@ -8667,11 +8667,6 @@ weather_bar = [
           "count": 129, 
           "sum": 6761.0, 
           "average": 52.41085271317829
-        }, 
-        "05-29-2016": {
-          "count": 129, 
-          "sum": 7569.0, 
-          "average": 58.674418604651166
         }, 
         "05-01-2016": {
           "count": 127, 
@@ -8695,7 +8690,7 @@ weather_bar = [
         }, 
         "05-08-2016": {
           "count": 128, 
-          "sum": 6262.666666666667, 
+          "sum": 6262.666666666666, 
           "average": 48.927083333333336
         }, 
         "05-12-2016": {
@@ -8743,15 +8738,15 @@ weather_bar = [
           "sum": 7795.0, 
           "average": 60.42635658914729
         }, 
-        "04-13-2016": {
+        "05-29-2016": {
           "count": 129, 
-          "sum": 5292.0, 
-          "average": 41.02325581395349
+          "sum": 7569.0, 
+          "average": 58.674418604651166
         }, 
-        "04-18-2016": {
-          "count": 129, 
-          "sum": 5869.0, 
-          "average": 45.49612403100775
+        "05-22-2016": {
+          "count": 127, 
+          "sum": 6882.0, 
+          "average": 54.188976377952756
         }, 
         "05-31-2016": {
           "count": 129, 
@@ -8763,10 +8758,10 @@ weather_bar = [
           "sum": 7677.0, 
           "average": 60.44881889763779
         }, 
-        "04-30-2016": {
-          "count": 129, 
-          "sum": 6168.0, 
-          "average": 47.81395348837209
+        "04-16-2016": {
+          "count": 128, 
+          "sum": 5908.0, 
+          "average": 46.15625
         }, 
         "04-28-2016": {
           "count": 129, 
@@ -8798,6 +8793,11 @@ weather_bar = [
           "sum": 6190.0, 
           "average": 48.359375
         }, 
+        "04-30-2016": {
+          "count": 129, 
+          "sum": 6168.0, 
+          "average": 47.81395348837209
+        }, 
         "04-17-2016": {
           "count": 127, 
           "sum": 5893.0, 
@@ -8810,7 +8810,7 @@ weather_bar = [
         }, 
         "05-09-2016": {
           "count": 129, 
-          "sum": 6365.333333333333, 
+          "sum": 6365.333333333334, 
           "average": 49.343669250645995
         }, 
         "04-29-2016": {
@@ -8828,10 +8828,10 @@ weather_bar = [
           "sum": 6132.0, 
           "average": 47.53488372093023
         }, 
-        "04-19-2016": {
-          "count": 129, 
-          "sum": 5881.0, 
-          "average": 45.58914728682171
+        "05-23-2016": {
+          "count": 128, 
+          "sum": 6878.0, 
+          "average": 53.734375
         }
       }, 
       "weather.[0].Data.Temperature.Max Temp": {
@@ -8865,10 +8865,10 @@ weather_bar = [
           "sum": 9153.0, 
           "average": 70.95348837209302
         }, 
-        "05-23-2016": {
-          "count": 128, 
-          "sum": 9829.0, 
-          "average": 76.7890625
+        "04-19-2016": {
+          "count": 129, 
+          "sum": 9171.0, 
+          "average": 71.09302325581395
         }, 
         "06-09-2016": {
           "count": 129, 
@@ -8880,11 +8880,6 @@ weather_bar = [
           "sum": 10446.0, 
           "average": 80.97674418604652
         }, 
-        "04-16-2016": {
-          "count": 128, 
-          "sum": 8702.0, 
-          "average": 67.984375
-        }, 
         "04-26-2016": {
           "count": 127, 
           "sum": 8918.0, 
@@ -8895,10 +8890,10 @@ weather_bar = [
           "sum": 10553.0, 
           "average": 81.8062015503876
         }, 
-        "05-22-2016": {
-          "count": 127, 
-          "sum": 9589.0, 
-          "average": 75.50393700787401
+        "04-18-2016": {
+          "count": 129, 
+          "sum": 9044.0, 
+          "average": 70.10852713178295
         }, 
         "04-23-2016": {
           "count": 128, 
@@ -8935,10 +8930,15 @@ weather_bar = [
           "sum": 9677.0, 
           "average": 75.01550387596899
         }, 
-        "05-28-2016": {
+        "04-12-2016": {
           "count": 129, 
-          "sum": 10111.0, 
-          "average": 78.37984496124031
+          "sum": 8086.0, 
+          "average": 62.68217054263566
+        }, 
+        "04-13-2016": {
+          "count": 129, 
+          "sum": 8171.0, 
+          "average": 63.34108527131783
         }, 
         "04-22-2016": {
           "count": 129, 
@@ -8950,10 +8950,10 @@ weather_bar = [
           "sum": 8441.0, 
           "average": 66.46456692913385
         }, 
-        "04-12-2016": {
+        "05-28-2016": {
           "count": 129, 
-          "sum": 8086.0, 
-          "average": 62.68217054263566
+          "sum": 10111.0, 
+          "average": 78.37984496124031
         }, 
         "05-26-2016": {
           "count": 129, 
@@ -8974,11 +8974,6 @@ weather_bar = [
           "count": 129, 
           "sum": 9789.0, 
           "average": 75.88372093023256
-        }, 
-        "05-29-2016": {
-          "count": 129, 
-          "sum": 10404.0, 
-          "average": 80.65116279069767
         }, 
         "05-01-2016": {
           "count": 127, 
@@ -9050,15 +9045,15 @@ weather_bar = [
           "sum": 10757.0, 
           "average": 83.3875968992248
         }, 
-        "04-13-2016": {
+        "05-29-2016": {
           "count": 129, 
-          "sum": 8171.0, 
-          "average": 63.34108527131783
+          "sum": 10404.0, 
+          "average": 80.65116279069767
         }, 
-        "04-18-2016": {
-          "count": 129, 
-          "sum": 9044.0, 
-          "average": 70.10852713178295
+        "05-22-2016": {
+          "count": 127, 
+          "sum": 9589.0, 
+          "average": 75.50393700787401
         }, 
         "05-31-2016": {
           "count": 129, 
@@ -9070,10 +9065,10 @@ weather_bar = [
           "sum": 10534.0, 
           "average": 82.94488188976378
         }, 
-        "04-30-2016": {
-          "count": 129, 
-          "sum": 8301.0, 
-          "average": 64.34883720930233
+        "04-16-2016": {
+          "count": 128, 
+          "sum": 8702.0, 
+          "average": 67.984375
         }, 
         "04-28-2016": {
           "count": 129, 
@@ -9105,6 +9100,11 @@ weather_bar = [
           "sum": 8701.0, 
           "average": 67.9765625
         }, 
+        "04-30-2016": {
+          "count": 129, 
+          "sum": 8301.0, 
+          "average": 64.34883720930233
+        }, 
         "04-17-2016": {
           "count": 127, 
           "sum": 8766.0, 
@@ -9135,10 +9135,10 @@ weather_bar = [
           "sum": 9256.0, 
           "average": 71.75193798449612
         }, 
-        "04-19-2016": {
-          "count": 129, 
-          "sum": 9171.0, 
-          "average": 71.09302325581395
+        "05-23-2016": {
+          "count": 128, 
+          "sum": 9829.0, 
+          "average": 76.7890625
         }
       }
     }, 
@@ -9151,13 +9151,13 @@ weather_bar = [
       "06-08-2016", 
       "05-14-2016", 
       "05-05-2016", 
-      "05-23-2016", 
+      "06-02-2016", 
+      "04-19-2016", 
       "06-09-2016", 
       "06-01-2016", 
       "04-26-2016", 
       "06-03-2016", 
-      "05-22-2016", 
-      "04-15-2016", 
+      "04-18-2016", 
       "04-23-2016", 
       "05-27-2016", 
       "05-20-2016", 
@@ -9165,11 +9165,10 @@ weather_bar = [
       "04-20-2016", 
       "06-05-2016", 
       "05-07-2016", 
-      "05-28-2016", 
-      "04-13-2016", 
+      "04-12-2016", 
       "04-22-2016", 
       "05-02-2016", 
-      "04-12-2016", 
+      "05-28-2016", 
       "05-26-2016", 
       "05-19-2016", 
       "04-24-2016", 
@@ -9182,30 +9181,31 @@ weather_bar = [
       "05-12-2016", 
       "05-25-2016", 
       "05-17-2016", 
-      "06-02-2016", 
+      "05-29-2016", 
       "05-30-2016", 
       "06-07-2016", 
       "05-21-2016", 
       "05-24-2016", 
       "06-04-2016", 
-      "05-29-2016", 
-      "04-18-2016", 
+      "04-13-2016", 
+      "05-22-2016", 
       "05-31-2016", 
       "06-06-2016", 
-      "04-30-2016", 
+      "04-16-2016", 
       "04-28-2016", 
       "05-18-2016", 
       "04-10-2016", 
-      "04-16-2016", 
+      "04-15-2016", 
       "05-10-2016", 
       "04-27-2016", 
+      "04-30-2016", 
       "04-17-2016", 
       "05-15-2016", 
       "05-09-2016", 
       "04-29-2016", 
       "04-11-2016", 
       "05-04-2016", 
-      "04-19-2016"
+      "05-23-2016"
     ]
   }
 ]
