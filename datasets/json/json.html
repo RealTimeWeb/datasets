@@ -379,33 +379,6 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="education">
-      
-      <div class="media-left  media-middle">
-        <a href="education/education.html">
-          <img class="media-object" src="education/education.png" alt="Education" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a href="education/education.html">
-        <h4 class="media-heading">Education</h4>
-        </a>
-        Information about K-12 education for different states, collected from the US government.<br>
-        <i>school, education, K-12, kindergarten, learning, teaching</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "education",
-            'body': "This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The 'Year' field has records for Preschool, Kindergarten, and grades 1-12.",
-            'description': "Information about K-12 education for different states, collected from the US government.",
-            'tags': ["school", "education", "K-12", "kindergarten", "learning", "teaching"]
-        }
-    );
-    </script>
-    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="art_institute_metadata">
       
       <div class="media-left  media-middle">
@@ -456,6 +429,33 @@ $(document).ready(function() {
             'body': "The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states. The data contain detail of revenue by source, expenditure by object and function, indebtedness by term, and assets by purpose. This data goes back for almost two decades across every date.",
             'description': "The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states.",
             'tags': ["finance", "government", "expenditure", "charges", "money", "united states", "us"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="state_demographics">
+      
+      <div class="media-left  media-middle">
+        <a href="state_demographics/state_demographics.html">
+          <img class="media-object" src="state_demographics/state_demographics.png" alt="State Demographics" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="state_demographics/state_demographics.html">
+        <h4 class="media-heading">State Demographics</h4>
+        </a>
+        Demographic information for the states in the United States.<br>
+        <i>demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, states</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "state_demographics",
+            'body': "The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.",
+            'description': "Demographic information for the states in the United States.",
+            'tags': ["demographics", "population", "age", "ethnicity", "race", "language", "education", "foreign", "households", "income", "employment", "unemployment", "sales", "land area", "states"]
         }
     );
     </script>
@@ -597,29 +597,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="weather">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="books">
       
       <div class="media-left  media-middle">
-        <a href="weather/weather.html">
-          <img class="media-object" src="weather/weather.png" alt="Weather" style="max-width: 64px; max-height: 64px;">
+        <a href="books/books.html">
+          <img class="media-object" src="books/books.png" alt="Books" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="weather/weather.html">
-        <h4 class="media-heading">Weather</h4>
+        <a href="books/books.html">
+        <h4 class="media-heading">Books</h4>
         </a>
-        Weather records through the months of April and June of 2016 across the U.S.<br>
-        <i>weather, rain, snow, sleet, fog, temperature, wind</i>
+        Records about different books and different attributes associated with them.<br>
+        <i>books, reading, author, pages, english, language, literature</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "weather",
-            'body': "Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county. This is done through the use of 122 different Weather Forcast Offices throughout the country. These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage. This data set takes the information from these WFO reports for cities across the country through the months of April to June of 2016.",
-            'description': "Weather records through the months of April and June of 2016 across the U.S.",
-            'tags': ["weather", "rain", "snow", "sleet", "fog", "temperature", "wind"]
+            'name': "books",
+            'body': "This data set contains information about different books written by different authors pertaining to a variety of genres. Information about the books includes page count, whether it's a paperback, and the price of the book.",
+            'description': "Records about different books and different attributes associated with them.",
+            'tags': ["books", "reading", "author", "pages", "english", "language", "literature"]
         }
     );
     </script>
@@ -651,29 +651,56 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="global_development">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="suicide_attacks">
       
       <div class="media-left  media-middle">
-        <a href="global_development/global_development.html">
-          <img class="media-object" src="global_development/global_development.png" alt="Global Development" style="max-width: 64px; max-height: 64px;">
+        <a href="suicide_attacks/suicide_attacks.html">
+          <img class="media-object" src="suicide_attacks/suicide_attacks.png" alt="Suicide Attacks" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="global_development/global_development.html">
-        <h4 class="media-heading">Global Development</h4>
+        <a href="suicide_attacks/suicide_attacks.html">
+        <h4 class="media-heading">Suicide Attacks</h4>
         </a>
-        Reports of country's development over time<br>
-        <i>world, countries, development, health, population, urban, rural, agriculture, infrastructure</i>
+        This dataset has about suicide attacks all over the world for the past three decades.<br>
+        <i>global, attack, damage, kill, hurt, destroy, pain, suffering, terror, terrorism, religion, warfare, war, car, bomb, gun, shooting</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "global_development",
-            'body': "The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank. Included is different data about urban development, agriculture and rural development, health, and infrastructure.",
-            'description': "Reports of country's development over time",
-            'tags': ["world", "countries", "development", "health", "population", "urban", "rural", "agriculture", "infrastructure"]
+            'name': "suicide_attacks",
+            'body': "The Chicago Project on Security and Terrorism (CPOST) maintains a searchable database on all suicide attacks from 1982 through September 2015. The database includes information about the location of attacks, the target type, the weapon used, and systematic information on the demographic and general biographical characteristics of suicide attackers. The database expands the breadth of the data available in English using native language sources (e.g., Arabic, Hebrew, Russian, Tamil) that are likely to have the most extensive relevant information. The current CPOST-SAD release contains the universe of suicide attacks from 1982 through September 2015, a total of 4,814 attacks in over 40 countries. The CPOST Suicide Attack Database (CPOST-SAD) contains data on the universe of suicide attacks. For each attack, the database includes information about the geographic location, target classification, and weapon(s) used, as well as systematic information on the demographic and general biographical characteristics of suicide attackers. More information about the coding and methodology is available on the CPOST website below. Note that multiple attackers or targets are collapsed into a single record for simplicity's sake.",
+            'description': "This dataset has about suicide attacks all over the world for the past three decades.",
+            'tags': ["global", "attack", "damage", "kill", "hurt", "destroy", "pain", "suffering", "terror", "terrorism", "religion", "warfare", "war", "car", "bomb", "gun", "shooting"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="aids">
+      
+      <div class="media-left  media-middle">
+        <a href="aids/aids.html">
+          <img class="media-object" src="aids/aids.png" alt="Aids" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="aids/aids.html">
+        <h4 class="media-heading">Aids</h4>
+        </a>
+        Records of AIDS related statistics from several countries.<br>
+        <i>aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "aids",
+            'body': "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease. The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.",
+            'description': "Records of AIDS related statistics from several countries.",
+            'tags': ["aids", "death", "disease", "hiv", "orphans", "health", "countries", "world", "gender", "united nations", "un"]
         }
     );
     </script>
@@ -705,29 +732,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="suicide_attacks">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="global_development">
       
       <div class="media-left  media-middle">
-        <a href="suicide_attacks/suicide_attacks.html">
-          <img class="media-object" src="suicide_attacks/suicide_attacks.png" alt="Suicide Attacks" style="max-width: 64px; max-height: 64px;">
+        <a href="global_development/global_development.html">
+          <img class="media-object" src="global_development/global_development.png" alt="Global Development" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="suicide_attacks/suicide_attacks.html">
-        <h4 class="media-heading">Suicide Attacks</h4>
+        <a href="global_development/global_development.html">
+        <h4 class="media-heading">Global Development</h4>
         </a>
-        This dataset has about suicide attacks all over the world for the past three decades.<br>
-        <i>global, attack, damage, kill, hurt, destroy, pain, suffering, terror, terrorism, religion, warfare, war, car, bomb, gun, shooting</i>
+        Reports of country's development over time<br>
+        <i>world, countries, development, health, population, urban, rural, agriculture, infrastructure</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "suicide_attacks",
-            'body': "The Chicago Project on Security and Terrorism (CPOST) maintains a searchable database on all suicide attacks from 1982 through September 2015. The database includes information about the location of attacks, the target type, the weapon used, and systematic information on the demographic and general biographical characteristics of suicide attackers. The database expands the breadth of the data available in English using native language sources (e.g., Arabic, Hebrew, Russian, Tamil) that are likely to have the most extensive relevant information. The current CPOST-SAD release contains the universe of suicide attacks from 1982 through September 2015, a total of 4,814 attacks in over 40 countries. The CPOST Suicide Attack Database (CPOST-SAD) contains data on the universe of suicide attacks. For each attack, the database includes information about the geographic location, target classification, and weapon(s) used, as well as systematic information on the demographic and general biographical characteristics of suicide attackers. More information about the coding and methodology is available on the CPOST website below. Note that multiple attackers or targets are collapsed into a single record for simplicity's sake.",
-            'description': "This dataset has about suicide attacks all over the world for the past three decades.",
-            'tags': ["global", "attack", "damage", "kill", "hurt", "destroy", "pain", "suffering", "terror", "terrorism", "religion", "warfare", "war", "car", "bomb", "gun", "shooting"]
+            'name': "global_development",
+            'body': "The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank. Included is different data about urban development, agriculture and rural development, health, and infrastructure.",
+            'description': "Reports of country's development over time",
+            'tags': ["world", "countries", "development", "health", "population", "urban", "rural", "agriculture", "infrastructure"]
         }
     );
     </script>
@@ -786,56 +813,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
       
       <div class="media-left  media-middle">
-        <a href="food/food.html">
-          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
+        <a href="broadway/broadway.html">
+          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="food/food.html">
-        <h4 class="media-heading">Food</h4>
+        <a href="broadway/broadway.html">
+        <h4 class="media-heading">Broadway</h4>
         </a>
-        Statistics for various food items<br>
-        <i>food, vitamins, minerals, health, nutrition</i>
+        This library holds data about Broadway shows, such as tickets sold.<br>
+        <i>broadway, musical, theatre, tickets</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "food",
-            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
-            'description': "Statistics for various food items",
-            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food_access">
-      
-      <div class="media-left  media-middle">
-        <a href="food_access/food_access.html">
-          <img class="media-object" src="food_access/food_access.png" alt="Food Access" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a href="food_access/food_access.html">
-        <h4 class="media-heading">Food Access</h4>
-        </a>
-        Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.<br>
-        <i>counties, states, food, access, availability, supermarket, rural, urban, population, vehicles</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "food_access",
-            'body': "From the United States Department of Agriculture's Economic Research Service, the dataset contains information about US county's ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food. Most measures of how individuals and neighborhoods are able to access food are based on the following indicators: - Accessibility to sources of healthy food, as measured by distance to a store or by the number of stores in an area. - Individual-level resources that may affect accessibility, such as family income or vehicle availability. - Neighborhood-level indicators of resources, such as the average income of the neighborhood and the availability of public transportation.",
-            'description': "Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.",
-            'tags': ["counties", "states", "food", "access", "availability", "supermarket", "rural", "urban", "population", "vehicles"]
+            'name': "broadway",
+            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
+            'description': "This library holds data about Broadway shows, such as tickets sold.",
+            'tags': ["broadway", "musical", "theatre", "tickets"]
         }
     );
     </script>
@@ -1003,83 +1003,83 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drug_bank">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="injuries">
       
       <div class="media-left  media-middle">
-        <a href="drug_bank/drug_bank.html">
-          <img class="media-object" src="drug_bank/drug_bank.png" alt="Drug Bank" style="max-width: 64px; max-height: 64px;">
+        <a href="injuries/injuries.html">
+          <img class="media-object" src="injuries/injuries.png" alt="Injuries" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="drug_bank/drug_bank.html">
-        <h4 class="media-heading">Drug Bank</h4>
+        <a href="injuries/injuries.html">
+        <h4 class="media-heading">Injuries</h4>
         </a>
-        The DrugBank database is a cheminformatics resource that combines detailed drug data with comprehensive drug target information.<br>
-        <i>drugs, drug, drugbank, chemistry, biology, biochemistry, proteins</i>
+        A sampling of work-related injury and illness data from the US.<br>
+        <i>osha, united states, us, usa, government, health, safety, injury, injuries, hurt, pain, job, work, industry, career, occuptation, safety, hazard, health</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "drug_bank",
-            'body': "The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.",
-            'description': "The DrugBank database is a cheminformatics resource that combines detailed drug data with comprehensive drug target information.",
-            'tags': ["drugs", "drug", "drugbank", "chemistry", "biology", "biochemistry", "proteins"]
+            'name': "injuries",
+            'body': "The Occupational Safety and Health Administration (OSHA) collected work-related injury and illness data from employers within specific industry and employment size specifications from 2002 through 2011. This data collection is called the OSHA Data Initiative or ODI. The data provided is used by OSHA to calculate establishment specific injury and illness incidence rates. This searchable database contains a table with the name, address, industry, and associated Total Case Rate (TCR), Days Away, Restricted, and Transfer (DART) case rate, and the Days Away From Work (DAFWII) case rate for the establishments that provided OSHA with valid data for calendar years 2002 through 2011. This data has been sampled down from its original size to 4%. In addition, the original dataset only has data from a small portion of all private sector establishments in the United States (80,000 out of 7.5 million total establishments). Therefore, these data are not representative of all businesses and general conclusions pertaining to all US business should not be overdrawn. Data quality: While OSHA takes multiple steps to ensure the data collected is accurate, problems and errors invariably exist for a small percentage of establishments. OSHA does not believe the data for the establishments with the highest rates on this file are accurate in absolute terms. Efforts were made during the collection cycle to correct submission errors, however some remain unresolved. It would be a mistake to say establishments with the highest rates on this file are the 'most dangerous' or 'worst' establishments in the Nation. Rate Calculation: An incidence rate of injuries and illnesses is computed from the following formula: (Number of injuries and illnesses X 200,000) / Employee hours worked = Incidence rate. The Total Case Rate includes all cases recorded on the OSHA Form 300 (Column G + Column H + Column I + Column J). The Days Away/Restriced/Transfer includes cases recorded in Column H + Column I. The Days Away includes cases recorded in Column H. For further information on injury and illness incidence rates, please visit the Bureau of Labor Statistics' webpage at http://www.bls.gov/iif/osheval.htm State Participation: Not all state plan states participate in the ODI. The following states did not participate in the 2010 ODI (collection of CY 2009 data), establishment data is not available for these states: Alaska; Oregon; Puerto Rico; South Carolina; Washington; Wyoming.",
+            'description': "A sampling of work-related injury and illness data from the US.",
+            'tags': ["osha", "united states", "us", "usa", "government", "health", "safety", "injury", "injuries", "hurt", "pain", "job", "work", "industry", "career", "occuptation", "safety", "hazard", "health"]
         }
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="state_demographics">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
       
       <div class="media-left  media-middle">
-        <a href="state_demographics/state_demographics.html">
-          <img class="media-object" src="state_demographics/state_demographics.png" alt="State Demographics" style="max-width: 64px; max-height: 64px;">
+        <a href="food/food.html">
+          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="state_demographics/state_demographics.html">
-        <h4 class="media-heading">State Demographics</h4>
+        <a href="food/food.html">
+        <h4 class="media-heading">Food</h4>
         </a>
-        Demographic information for the states in the United States.<br>
-        <i>demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, states</i>
+        Statistics for various food items<br>
+        <i>food, vitamins, minerals, health, nutrition</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "state_demographics",
-            'body': "The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.",
-            'description': "Demographic information for the states in the United States.",
-            'tags': ["demographics", "population", "age", "ethnicity", "race", "language", "education", "foreign", "households", "income", "employment", "unemployment", "sales", "land area", "states"]
+            'name': "food",
+            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
+            'description': "Statistics for various food items",
+            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
         }
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="books">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="weather">
       
       <div class="media-left  media-middle">
-        <a href="books/books.html">
-          <img class="media-object" src="books/books.png" alt="Books" style="max-width: 64px; max-height: 64px;">
+        <a href="weather/weather.html">
+          <img class="media-object" src="weather/weather.png" alt="Weather" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="books/books.html">
-        <h4 class="media-heading">Books</h4>
+        <a href="weather/weather.html">
+        <h4 class="media-heading">Weather</h4>
         </a>
-        Records about different books and different attributes associated with them.<br>
-        <i>books, reading, author, pages, english, language, literature</i>
+        Weather records through the months of April and June of 2016 across the U.S.<br>
+        <i>weather, rain, snow, sleet, fog, temperature, wind</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "books",
-            'body': "This data set contains information about different books written by different authors pertaining to a variety of genres. Information about the books includes page count, whether it's a paperback, and the price of the book.",
-            'description': "Records about different books and different attributes associated with them.",
-            'tags': ["books", "reading", "author", "pages", "english", "language", "literature"]
+            'name': "weather",
+            'body': "Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county. This is done through the use of 122 different Weather Forcast Offices throughout the country. These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage. This data set takes the information from these WFO reports for cities across the country through the months of April to June of 2016.",
+            'description': "Weather records through the months of April and June of 2016 across the U.S.",
+            'tags': ["weather", "rain", "snow", "sleet", "fog", "temperature", "wind"]
         }
     );
     </script>
@@ -1166,56 +1166,56 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food_access">
       
       <div class="media-left  media-middle">
-        <a href="broadway/broadway.html">
-          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        <a href="food_access/food_access.html">
+          <img class="media-object" src="food_access/food_access.png" alt="Food Access" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="broadway/broadway.html">
-        <h4 class="media-heading">Broadway</h4>
+        <a href="food_access/food_access.html">
+        <h4 class="media-heading">Food Access</h4>
         </a>
-        This library holds data about Broadway shows, such as tickets sold.<br>
-        <i>broadway, musical, theatre, tickets</i>
+        Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.<br>
+        <i>counties, states, food, access, availability, supermarket, rural, urban, population, vehicles</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "broadway",
-            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
-            'description': "This library holds data about Broadway shows, such as tickets sold.",
-            'tags': ["broadway", "musical", "theatre", "tickets"]
+            'name': "food_access",
+            'body': "From the United States Department of Agriculture's Economic Research Service, the dataset contains information about US county's ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food. Most measures of how individuals and neighborhoods are able to access food are based on the following indicators: - Accessibility to sources of healthy food, as measured by distance to a store or by the number of stores in an area. - Individual-level resources that may affect accessibility, such as family income or vehicle availability. - Neighborhood-level indicators of resources, such as the average income of the neighborhood and the availability of public transportation.",
+            'description': "Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.",
+            'tags': ["counties", "states", "food", "access", "availability", "supermarket", "rural", "urban", "population", "vehicles"]
         }
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="aids">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="education">
       
       <div class="media-left  media-middle">
-        <a href="aids/aids.html">
-          <img class="media-object" src="aids/aids.png" alt="Aids" style="max-width: 64px; max-height: 64px;">
+        <a href="education/education.html">
+          <img class="media-object" src="education/education.png" alt="Education" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="aids/aids.html">
-        <h4 class="media-heading">Aids</h4>
+        <a href="education/education.html">
+        <h4 class="media-heading">Education</h4>
         </a>
-        Records of AIDS related statistics from several countries.<br>
-        <i>aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un</i>
+        Information about K-12 education for different states, collected from the US government.<br>
+        <i>school, education, K-12, kindergarten, learning, teaching</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "aids",
-            'body': "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease. The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.",
-            'description': "Records of AIDS related statistics from several countries.",
-            'tags': ["aids", "death", "disease", "hiv", "orphans", "health", "countries", "world", "gender", "united nations", "un"]
+            'name': "education",
+            'body': "This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The 'Year' field has records for Preschool, Kindergarten, and grades 1-12.",
+            'description': "Information about K-12 education for different states, collected from the US government.",
+            'tags': ["school", "education", "K-12", "kindergarten", "learning", "teaching"]
         }
     );
     </script>
@@ -1247,29 +1247,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="injuries">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drug_bank">
       
       <div class="media-left  media-middle">
-        <a href="injuries/injuries.html">
-          <img class="media-object" src="injuries/injuries.png" alt="Injuries" style="max-width: 64px; max-height: 64px;">
+        <a href="drug_bank/drug_bank.html">
+          <img class="media-object" src="drug_bank/drug_bank.png" alt="Drug Bank" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="injuries/injuries.html">
-        <h4 class="media-heading">Injuries</h4>
+        <a href="drug_bank/drug_bank.html">
+        <h4 class="media-heading">Drug Bank</h4>
         </a>
-        A sampling of work-related injury and illness data from the US.<br>
-        <i>osha, united states, us, usa, government, health, safety, injury, injuries, hurt, pain, job, work, industry, career, occuptation, safety, hazard, health</i>
+        The DrugBank database is a cheminformatics resource that combines detailed drug data with comprehensive drug target information.<br>
+        <i>drugs, drug, drugbank, chemistry, biology, biochemistry, proteins</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "injuries",
-            'body': "The Occupational Safety and Health Administration (OSHA) collected work-related injury and illness data from employers within specific industry and employment size specifications from 2002 through 2011. This data collection is called the OSHA Data Initiative or ODI. The data provided is used by OSHA to calculate establishment specific injury and illness incidence rates. This searchable database contains a table with the name, address, industry, and associated Total Case Rate (TCR), Days Away, Restricted, and Transfer (DART) case rate, and the Days Away From Work (DAFWII) case rate for the establishments that provided OSHA with valid data for calendar years 2002 through 2011. This data has been sampled down from its original size to 4%. In addition, the original dataset only has data from a small portion of all private sector establishments in the United States (80,000 out of 7.5 million total establishments). Therefore, these data are not representative of all businesses and general conclusions pertaining to all US business should not be overdrawn. Data quality: While OSHA takes multiple steps to ensure the data collected is accurate, problems and errors invariably exist for a small percentage of establishments. OSHA does not believe the data for the establishments with the highest rates on this file are accurate in absolute terms. Efforts were made during the collection cycle to correct submission errors, however some remain unresolved. It would be a mistake to say establishments with the highest rates on this file are the 'most dangerous' or 'worst' establishments in the Nation. Rate Calculation: An incidence rate of injuries and illnesses is computed from the following formula: (Number of injuries and illnesses X 200,000) / Employee hours worked = Incidence rate. The Total Case Rate includes all cases recorded on the OSHA Form 300 (Column G + Column H + Column I + Column J). The Days Away/Restriced/Transfer includes cases recorded in Column H + Column I. The Days Away includes cases recorded in Column H. For further information on injury and illness incidence rates, please visit the Bureau of Labor Statistics' webpage at http://www.bls.gov/iif/osheval.htm State Participation: Not all state plan states participate in the ODI. The following states did not participate in the 2010 ODI (collection of CY 2009 data), establishment data is not available for these states: Alaska; Oregon; Puerto Rico; South Carolina; Washington; Wyoming.",
-            'description': "A sampling of work-related injury and illness data from the US.",
-            'tags': ["osha", "united states", "us", "usa", "government", "health", "safety", "injury", "injuries", "hurt", "pain", "job", "work", "industry", "career", "occuptation", "safety", "hazard", "health"]
+            'name': "drug_bank",
+            'body': "The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.",
+            'description': "The DrugBank database is a cheminformatics resource that combines detailed drug data with comprehensive drug target information.",
+            'tags': ["drugs", "drug", "drugbank", "chemistry", "biology", "biochemistry", "proteins"]
         }
     );
     </script>
