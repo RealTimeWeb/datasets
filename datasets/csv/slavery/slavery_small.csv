@@ -1,0 +1,1001 @@
+Age,Buyer.County of Origin,Buyer.Full Name,Buyer.Origin,Buyer.State of Origin,Date,Discount Rate,Gender,Name,Number of Adult Slaves,Number of Child Slaves,Number of Total Slaves Purchased,Payment Method,Predicted Interest Rate,Price,Prices Listed,Seller.County of Origin,Seller.Full Name,Seller.Origin,Seller.State of Origin,Skin Color
+40.0,Unknown,Maria Hopson,"Unknown, Unknown",Unknown,10/6/1856,0.00602698,M,Shadrack,1,0,1,Cash,0.07477,650.0,1,Unknown,Benjamin Screws,"Unknown, AL",AL,Unknown
+44.0,New Orleans,Peyton N. Reynolds,"New Orleans, LA",LA,10/7/1856,0.00602698,F,Jane,1,0,1,Cash,0.07477,550.0,1,New Orleans,Santiago Galseran,"New Orleans, LA",LA,Negro
+24.0,New Orleans,Heloise Bagneris,"New Orleans, LA",LA,10/1/1856,0.00602698,F,Helen,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Pierre Macou,"New Orleans, LA",LA,Negro
+23.0,Jefferson,Francis Dugue Jr.,"Jefferson, LA",LA,10/8/1856,0.00602698,M,Jeff,1,0,1,Cash,0.07477,1400.0,1,Vanzand,Benjamin Franklin Irby,"Vanzand, TX",TX,Negro
+12.0,New Orleans,Anthony O'Dowd,"New Orleans, LA",LA,10/8/1856,0.00602698,M,John,1,0,1,Cash,0.07477,700.0,1,New Orleans,Richard Condon,"New Orleans, LA",LA,Negro
+25.0,New Orleans,Polly Courcelle,"New Orleans, LA",LA,10/6/1856,0.00602698,F,Louise,1,2,3,Cash,0.07477,600.0,1,New Orleans,Laurent Roger,"New Orleans, LA",LA,Mulatto
+23.0,New Orleans,Henry T. Lownsdale,"New Orleans, LA",LA,10/4/1856,0.00602698,F,Maria,1,0,1,Cash,0.07477,1650.0,1,New Orleans,Rosslynne Cumming Vass,"New Orleans, LA",LA,Mulatto
+50.0,New Orleans,Harriett Falkner,"New Orleans, LA",LA,10/20/1856,0.005790818,M,Frederick,2,0,2,Cash and Credit,0.07174632,1200.0,1,New Orleans,Polly Reason,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Jacob Van Winckle,"New Orleans, LA",LA,11/8/1856,0.00602698,M,Henry/ Ephraim,1,0,1,Cash,0.07477,1225.0,1,New Orleans,Archibald Lilly,"New Orleans, LA",LA,Negro
+26.0,Terrebonne,Francis Olmay Tompkins,"Terrebonne, LA",LA,11/8/1856,0.00602698,M,Henry,1,0,1,Cash,0.07477,1100.0,1,Unknown,George R. Dent,"Unknown, Unknown",Unknown,Griff
+38.0,New Orleans,Virginius H. Rhodes,"New Orleans, LA",LA,11/7/1856,0.006114795,M,Nelson,1,0,1,Credit,0.07589632,950.0,1,Smith,Almazen Huston,"Smith, TX",TX,Negro
+35.0,New Orleans,Benjamin William Hebrard,"New Orleans, LA",LA,10/5/1856,0.005952163,M,James,1,0,1,Cash and Credit,0.07381124,1005.0,1,Jefferson,Theodore Soniat Dufossat,"Jefferson, LA",LA,Negro
+28.0,New Orleans,The New Orleans Gas Light Co. Unknown,"New Orleans, LA",LA,11/11/1856,0.00602698,M,Reuben,1,0,1,Cash,0.07477,1250.0,1,New Orleans,Charles Anthony Miltenberger,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Cephise Piseros,"New Orleans, LA",LA,11/10/1856,0.00602698,M,Pierre,1,0,1,Cash,0.07477,1425.0,1,Pointe Coupee,Lennon Ledoux,"Pointe Coupee, LA",LA,Negro
+19.0,New Orleans,Louis Joseph Frigerio,"New Orleans, LA",LA,11/10/1856,0.00602698,M,Henry,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Cydalise Fortier,"New Orleans, LA",LA,Mulatto
+33.0,New Orleans,Richard Scofield,"New Orleans, LA",LA,11/6/1856,0.00602698,F,Ellen,1,2,3,Cash,0.07477,1200.0,1,New Orleans,Eliza Ashton,"New Orleans, LA",LA,Negro
+25.0,Terrebonne,Francis Olmay Tompkins,"Terrebonne, LA",LA,11/12/1856,0.00602698,M,William,3,0,3,Cash,0.07477,1400.0,3,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+33.0,New Orleans,Micajah Harris Jr.,"New Orleans, LA",LA,11/12/1856,0.00602698,M,Lewis,2,0,2,Cash,0.07477,1500.0,1,Cass,Lafayette L. Guin,"Cass, TX",TX,Negro
+33.0,New Orleans,Susan N. Ross,"New Orleans, LA",LA,10/30/1856,0.006202525,M,George,1,0,1,Credit,0.07702264,800.0,1,New Orleans,Joseph M. Savage,"New Orleans, LA",LA,Griff
+18.0,Unknown,Mary Thayer,"Unknown, Unknown",Unknown,11/14/1856,0.00602698,F,Mary,1,0,1,Cash,0.07477,500.0,1,New Orleans,James Peter Freret,"New Orleans, LA",LA,Negro
+17.0,New Orleans,Thomas A. Stone,"New Orleans, LA",LA,11/15/1856,0.00602698,F,Dealy,1,0,1,Cash,0.07477,700.0,1,New Orleans,John A. Burke,"New Orleans, LA",LA,Griff
+14.0,New Orleans,Henry Pear Buckley,"New Orleans, LA",LA,11/14/1856,0.00602698,M,Henry,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Oscar Liveaudais,"New Orleans, LA",LA,11/18/1856,0.00587886,M,Arthur,1,0,1,Cash and Credit,0.07287264,1000.0,1,New Orleans,Louis Gustave McQueen,"New Orleans, LA",LA,Unknown
+13.0,Unknown,S. Gensler,"Unknown, Unknown",Unknown,10/14/1856,0.00602698,F,Julie,1,0,1,Cash,0.07477,660.0,1,Unknown,Charles Clement Bellenot,"Unknown, Unknown",Unknown,Unknown
+50.0,New Orleans,Alfred Mouchon,"New Orleans, LA",LA,11/18/1856,0.00602698,F,Delilah,1,0,1,Cash,0.07477,150.0,1,New Orleans,Rosa Miller,"New Orleans, LA",LA,Unknown
+34.0,New Orleans,John B. Robertson,"New Orleans, LA",LA,11/14/1856,0.00602698,M,Floyd,1,0,1,Cash,0.07477,1021.33,1,New Orleans,Cornelius Noonan,"New Orleans, LA",LA,Negro
+43.0,New Orleans,Phillip Jason Frederick Woods,"New Orleans, LA",LA,11/14/1856,0.00602698,F,Isabella,1,0,1,Cash,0.07477,150.0,1,New Orleans,Holland McTyeire,"New Orleans, LA",LA,Negro
+48.0,New Orleans,Sarah Potee,"New Orleans, LA",LA,11/17/1856,0.00602698,F,Criddy,1,0,1,Cash,0.07477,230.0,1,New Orleans,John Brohan,"New Orleans, LA",LA,Negro
+23.0,New Orleans,John H. Follett,"New Orleans, LA",LA,11/18/1856,0.00602698,F,Ida,1,0,1,Cash,0.07477,1250.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Griff
+13.0,Calcasieu,Jacob Cole,"Calcasieu, LA",LA,11/15/1856,0.00602698,F,Aline,1,0,1,Cash,0.07477,800.0,1,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,Negro
+23.0,New Orleans,Catherine Pradat,"New Orleans, LA",LA,11/18/1856,0.005790818,F,Isabella,1,0,1,Cash and Credit,0.07174632,975.0,1,New Orleans,Norbert Vignie,"New Orleans, LA",LA,Negro
+23.0,New Orleans,Manuel Elliot,"New Orleans, LA",LA,11/19/1856,0.005790818,F,Rosa,1,0,1,Cash and Credit,0.07174632,1235.0,1,St. Bernard,Antoine Landier,"St. Bernard, LA",LA,Negro
+40.0,New Orleans,Thomas L. Bayne,"New Orleans, LA",LA,11/14/1856,0.00602698,F,Mathilda,1,1,2,Cash,0.07477,1500.0,1,New Orleans,Genevieve Odile Longer,"New Orleans, LA",LA,Negro
+55.0,New Orleans,Louis Caretta,"New Orleans, LA",LA,11/6/1856,0.005790818,F,Ann/ Celeste,1,0,1,Cash and Credit,0.07174632,220.0,1,New Orleans,"Marie, Marthe Millaudon","New Orleans, LA",LA,Unknown
+20.0,New Orleans,John A. Kranz,"New Orleans, LA",LA,11/21/1856,0.005790818,F,Mary Jane,1,1,2,Cash and Credit,0.07174632,1075.0,1,New Orleans,Richard Farrell Harrison,"New Orleans, LA",LA,Mulatto
+19.0,New Orleans,Pierre Ninon Faisans,"New Orleans, LA",LA,11/21/1856,0.005790818,F,Sarah,1,0,1,Cash and Credit,0.07174632,1200.0,1,New Orleans,Thomas Charles Payan,"New Orleans, LA",LA,Mulatto
+22.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,11/22/1856,0.00602698,M,Dudly Green,1,0,1,Cash,0.07477,900.0,1,East Feliciana,James R. Shelton,"East Feliciana, LA",LA,Negro
+37.0,New Orleans,Charles Metye,"New Orleans, LA",LA,11/24/1856,0.00602698,F,Cidalize,1,0,1,Cash,0.07477,900.0,1,New Orleans,Anette Malus,"New Orleans, LA",LA,Negro
+22.0,Orleans,John F. Hughes,"Orleans, LA",LA,11/5/1856,0.00602698,M,Henry,1,0,1,Cash,0.07477,1200.0,1,Herckman,Felix C. McFall,"Herckman, KY",KY,Griff
+30.0,St. Bernard,Maria Morales,"St. Bernard, LA",LA,11/25/1856,0.00602698,F,Mary Ann,1,0,1,Exchange,0.07477,700.0,1,New Orleans,Antonio de Monasterio,"New Orleans, LA",LA,Negro
+14.0,New Orleans,Antonio de Monasterio,"New Orleans, LA",LA,11/25/1856,0.00602698,F,Philomene,1,0,1,Exchange,0.07477,700.0,1,St. Bernard,Maria Morales,"St. Bernard, LA",LA,Negro
+23.0,New Orleans,Truman Cook Holmes,"New Orleans, LA",LA,11/17/1856,0.00602698,M,Moses,1,0,1,Cash,0.07477,1200.0,1,New Orleans,D. G. Hill,"New Orleans, LA",LA,Negro
+27.0,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,11/25/1856,0.00602698,M,Auguste,1,0,1,Cash,0.07477,825.0,1,New Orleans,Numa Lacoste,"New Orleans, LA",LA,Negro
+25.0,St. Louis,John Ruckner White,"St. Louis, MO",MO,11/24/1856,0.00602698,M,Phil,1,0,1,Cash,0.07477,800.0,1,Pointe Coupee,John L. Daniel,"Pointe Coupee, LA",LA,Mulatto
+16.0,New Orleans,Abraham Haber,"New Orleans, LA",LA,11/14/1856,0.00602698,F,Lucy,1,0,1,Cash,0.07477,900.0,1,New Orleans,Thomas Emile Benoit,"New Orleans, LA",LA,Negro
+31.0,New Orleans,Henry Cassidy,"New Orleans, LA",LA,11/22/1856,0.00602698,F,Maria,1,0,1,Cash,0.07477,600.0,1,New Orleans,Henry Weber,"New Orleans, LA",LA,Griff
+13.0,New Orleans,Hippolyte Griffon,"New Orleans, LA",LA,11/18/1856,0.006114795,M,John,1,0,1,Credit,0.07589632,800.0,1,St. Louis,Robert Eager,"St. Louis, MS",MS,Negro
+32.0,New Orleans,Joseph Hoy,"New Orleans, LA",LA,11/26/1856,0.00602698,M,Richard/ Dick,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Tyler C. Boswell,"New Orleans, LA",LA,Negro
+54.0,New Orleans,Augustine Lion,"New Orleans, LA",LA,11/27/1856,0.00602698,F,Azelie,1,0,1,Cash,0.07477,150.0,1,New Orleans,Charles Joseph Daron,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,11/18/1856,0.00602698,F,Louise,1,0,1,Cash,0.07477,900.0,1,New Orleans,Adelaide Aubry,"New Orleans, LA",LA,Negro
+35.0,New Orleans,Rosa Rieux,"New Orleans, LA",LA,10/21/1856,0.00602698,F,Malinda,1,0,1,Cash,0.07477,500.0,1,New Orleans,Seraphin Maspereau,"New Orleans, LA",LA,Negro
+26.0,New Orleans,Puig Mir & Co. Unknown,"New Orleans, LA",LA,11/27/1856,0.006202525,M,Caid,1,0,1,Credit,0.07702264,1800.0,1,New Orleans,"Joseph, Lorenzo Llado, Carbo","New Orleans, LA",LA,Negro
+27.0,New Orleans,Blanche Lallande Ferrier,"New Orleans, LA",LA,11/27/1856,0.00602698,F,Sarah,1,0,1,Cash,0.07477,1150.0,1,New Orleans,William G. Mullan,"New Orleans, LA",LA,Negro
+45.0,New Orleans,Jean Moreau,"New Orleans, LA",LA,11/28/1856,0.00602698,F,Phillis,1,0,1,Cash,0.07477,200.0,1,New Orleans,Leonard Nicolas Jahan,"New Orleans, LA",LA,Negro
+27.0,New Orleans,John Robertson,"New Orleans, LA",LA,11/25/1856,0.00602698,F,Elsey,1,0,1,Cash,0.07477,1000.0,1,Rusk,Newell Tullis,"Rusk, TX",TX,Negro
+15.0,New Orleans,William E. Camp,"New Orleans, LA",LA,11/28/1856,0.00602698,F,Lucy,1,0,1,Cash,0.07477,950.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+41.0,New Orleans,Katy Greene,"New Orleans, LA",LA,11/28/1856,0.00602698,F,Harriet,1,0,1,Cash,0.07477,200.0,1,New Orleans,Joseph Deseameis,"New Orleans, LA",LA,Negro
+45.0,Unknown,Mary Anna McCosky,"Unknown, Unknown",Unknown,12/1/1856,0.00587886,F,Rosalie,1,1,2,Cash and Credit,0.07287264,1275.0,1,New Orleans,Pierre Paul Lobit,"New Orleans, LA",LA,Unknown
+23.0,Assumption,Daniel Morrison,"Assumption, LA",LA,12/2/1856,0.00602698,M,Robert,1,0,1,Exchange,0.07477,1500.0,1,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+22.0,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,12/2/1856,0.00602698,M,Sanford Lucas,1,0,1,Exchange,0.07477,1500.0,1,Assumption,Daniel Morrison,"Assumption, LA",LA,Negro
+16.0,Madison,Thomas Luther Bedford,"Madison, LA",LA,12/7/1856,0.00602698,F,Lucy,1,0,1,Cash,0.07477,1200.0,1,Jefferson,Joseph Holden,"Jefferson, LA",LA,Negro
+20.0,Madison,Thomas Luther Bedford,"Madison, LA",LA,12/2/1856,0.00602698,M,Ezekiel,1,0,1,Cash,0.07477,1300.0,1,New Orleans,Dennis Campbell,"New Orleans, LA",LA,Negro
+21.0,Madison,Thomas Luther Bedford,"Madison, LA",LA,12/2/1856,0.00602698,M,Austin,1,0,1,Cash,0.07477,1350.0,1,Fayette,George R. Harrison,"Fayette, KY",KY,Negro
+20.0,Madison,Thomas Luther Bedford,"Madison, LA",LA,12/3/1856,0.00602698,M,Thomas,1,0,1,Cash,0.07477,1100.0,1,Claiborne,James Smith,"Claiborne, LA",LA,Negro
+24.0,New Orleans,John L. Lancaster,"New Orleans, LA",LA,12/3/1856,0.006114795,F,Margaret,1,0,1,Credit,0.07589632,1150.0,1,New Orleans,Edgar Larue,"New Orleans, LA",LA,Mulatto
+26.0,New Orleans,Louis Shelton,"New Orleans, LA",LA,12/2/1856,0.00602698,M,Frank,1,0,1,Cash,0.07477,995.0,1,New Orleans,George May,"New Orleans, LA",LA,Mulatto
+25.0,New Orleans,Jose Tipura Lopez,"New Orleans, LA",LA,12/2/1856,0.00602698,F,Hester,1,0,1,Cash,0.07477,800.0,1,Unknown,John Matlock,"Unknown, AR",AR,Griff
+37.0,New Orleans,James Foulhouze,"New Orleans, LA",LA,12/4/1856,0.00602698,F,Peggy,1,1,2,Cash,0.07477,1700.0,1,New Orleans,Anne Clothilde. Penne,"New Orleans, LA",LA,Negro
+33.0,New Orleans,Micajah Harris Jr.,"New Orleans, LA",LA,12/3/1856,0.00602698,M,Lewis,2,0,2,Cash,0.07477,1700.0,1,Cass,L. Lafayette ,"Cass, TX",TX,Negro
+30.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,12/5/1856,0.00602698,M,Arthur,1,0,1,Cash,0.07477,900.0,1,New Orleans,Robert W. Estlin,"New Orleans, LA",LA,Negro
+39.0,Unknown,Eliza Noel,"Unknown, Unknown",Unknown,5/15/1837,0.006114795,F,Mary,1,0,1,Credit,0.07589632,300.0,1,New Orleans,Paul Hippolyte Monsseaux,"New Orleans, LA",LA,Negro
+37.0,Jefferson,Dexter G. Hitchcock,"Jefferson, LA",LA,12/3/1856,0.00602698,F,Letty,1,0,1,Cash,0.07477,297.0,1,New Orleans,Joseph L. Copes,"New Orleans, LA",LA,Negro
+47.0,New Orleans,Joseph Benito,"New Orleans, LA",LA,5/15/1837,0.00602698,M,Martin,1,0,1,Cash,0.07477,250.0,1,New Orleans,Louis Joseph Tinchant,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Adolphus Bruenn,"New Orleans, LA",LA,12/5/1856,0.006202525,F,Kitty,1,0,1,Credit,0.07702264,710.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+17.0,New Orleans,Caroline Doyal,"New Orleans, LA",LA,12/7/1856,0.00602698,F,Emma,1,0,1,Cash,0.07477,1400.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+34.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,12/4/1856,0.00602698,M,Jim Hamilton,1,0,1,Cash,0.07477,500.0,1,Jefferson,Edward Gardere,"Jefferson, LA",LA,Negro
+45.0,New Orleans,Heide Meynier,"New Orleans, LA",LA,12/5/1856,0.00602698,M,Weiner,1,0,1,Cash,0.07477,300.0,1,New Orleans,Edmond le Blanc,"New Orleans, LA",LA,Negro
+22.0,New Orleans,Isaac P. Abrams,"New Orleans, LA",LA,12/5/1856,0.005790818,M,Gideon,1,0,1,Cash and Credit,0.07174632,1300.0,1,New Orleans,James Penn Shortridge,"New Orleans, LA",LA,Negro
+21.0,Jefferson,Francois Pierre Volant la Barre,"Jefferson, LA",LA,12/5/1856,0.006202525,M,Isaac,1,0,1,Credit,0.07702264,1250.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+14.0,New Orleans,Samuel Friedlander,"New Orleans, LA",LA,12/8/1856,0.00602698,F,Mary,1,0,1,Cash,0.07477,800.0,1,New Orleans,"John G., Georgianna Harris, Quincy","New Orleans, LA",LA,Mulatto
+23.0,New Orleans,N. S. Torrey & Co. Unknown,"New Orleans, LA",LA,12/8/1856,0.00602698,M,Newton,1,0,1,Cash,0.07477,1000.0,1,Nashville,George Washington Hitchings,"Nashville, TN",TN,Mulatto
+47.0,New Orleans,George W. Parmy,"New Orleans, LA",LA,12/5/1856,0.00602698,M,Henry,1,0,1,Cash,0.07477,300.0,1,New Orleans,Samuel G. Wilson,"New Orleans, LA",LA,Griff
+24.0,New Orleans,Eugene Petitpain,"New Orleans, LA",LA,12/9/1856,0.005790818,M,Pressely,1,0,1,Cash and Credit,0.07174632,745.0,1,St. Landry,Alceshe Roy,"St. Landry, LA",LA,Negro
+18.0,New Orleans,John B. Womack,"New Orleans, LA",LA,12/10/1856,0.00602698,F,Marie Louise,1,0,1,Cash,0.07477,800.0,1,New Orleans,Domingo Fatjo,"New Orleans, LA",LA,Mulatto
+24.0,New Orleans,Alfred Blanc,"New Orleans, LA",LA,12/10/1856,0.00602698,F,Elizabeth,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Felix Ducayet,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Antoine Hernandez,"New Orleans, LA",LA,12/6/1856,0.00602698,F,Pauline,1,0,1,Cash,0.07477,1250.0,1,New Orleans,Enrique Ainz,"New Orleans, LA",LA,Negro
+35.0,New Orleans,H. A. & G. W. Lee Unknown,"New Orleans, LA",LA,12/11/1856,0.00602698,F,Lucinda,1,0,1,Cash,0.07477,800.0,1,New Orleans,John A. Haggerty,"New Orleans, LA",LA,Negro
+13.0,New Orleans,John H. Follett,"New Orleans, LA",LA,12/6/1856,0.00602698,F,Esther,1,0,1,Cash,0.07477,900.0,1,New Orleans,Helen Harrison,"New Orleans, LA",LA,Negro
+20.0,Jefferson,"Gustave, Francois Pierre Volant le Roy, la Barre","Jefferson, LA",LA,12/8/1856,0.00602698,M,Humphry,2,0,2,Cash,0.07477,1450.0,2,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+23.0,New Orleans,Lionel C. Levy,"New Orleans, LA",LA,12/11/1856,0.00602698,F,Lavinia,1,0,1,Cash,0.07477,1050.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,12/12/1856,0.00602698,F,Adeline,2,0,2,Cash,0.07477,2000.0,1,Abbeville,George Ambrose Christopher,"Abbeville, SC",SC,Griff
+32.0,New Orleans,Marie Agathe Abat,"New Orleans, LA",LA,12/8/1856,0.006202525,F,Marcelite,1,0,1,Credit,0.07702264,900.0,1,New Orleans,Josephine Martin,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Octave Hopkins,"New Orleans, LA",LA,12/1/1856,0.00602698,F,Clemence/ Chouchoutto,1,1,2,Cash,0.07477,1000.0,1,New Orleans,Marie Eugenie Mathey,"New Orleans, LA",LA,Negro
+45.0,New Orleans,James Chapman,"New Orleans, LA",LA,12/11/1856,0.00602698,F,Charlotte/ Milly,1,0,1,Cash,0.07477,100.0,1,New Orleans,William Adams,"New Orleans, LA",LA,Negro
+23.0,Carroll,Thomas Evans,"Carroll, LA",LA,12/12/1856,0.00602698,M,Allen,3,1,4,Cash,0.07477,1350.0,3,Montgomery,John F. Johnson,"Montgomery, AL",AL,Negro
+45.0,New Orleans,Frederic Dellondio,"New Orleans, LA",LA,12/12/1856,0.00602698,F,Adelaide,3,0,3,Cash,0.07477,1500.0,1,New Orleans,Francis Joseph Levis,"New Orleans, LA",LA,Griff
+26.0,New Orleans,John Jackson,"New Orleans, LA",LA,12/10/1856,0.00602698,F,Elizabeth,1,0,1,Cash,0.07477,1200.0,1,New Orleans,John Myers,"New Orleans, LA",LA,Griff
+14.0,New Orleans,Joseph Sequi y Gahona,"New Orleans, LA",LA,12/13/1856,0.00602698,M,Joseph,1,0,1,Cash,0.07477,1050.0,1,New Orleans,Wiley J Martin,"New Orleans, LA",LA,Mulatto
+17.0,Catahoula,Lewis Baker Ker,"Catahoula, LA",LA,12/13/1856,0.00602698,M,Willis,2,1,3,Cash,0.07477,1300.0,2,Henry,Barton William Jenkins,"Henry, KY",KY,Negro
+40.0,New Orleans,Nancy Van Ostern,"New Orleans, LA",LA,12/15/1856,0.00602698,M,Ben,1,0,1,Cash,0.07477,500.0,1,New Orleans,Leonard Matthews,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Alfred Shaw,"New Orleans, LA",LA,12/15/1856,0.005746766,M,Amos Geary,1,0,1,Credit,0.07118316,1300.0,1,Unknown,John Ruckner White,"Unknown, MO",MO,Negro
+15.0,New Orleans,Francis Moreno,"New Orleans, LA",LA,12/12/1856,0.00602698,M,Honore,1,0,1,Cash,0.07477,700.0,1,New Orleans,Gaile Desmare,"New Orleans, LA",LA,Negro
+24.0,New Orleans,Dominique Bouligny,"New Orleans, LA",LA,12/11/1856,0.00602698,F,Leah,1,0,1,Cash,0.07477,1275.0,1,New Orleans,Samuel Bell,"New Orleans, LA",LA,Negro
+41.0,New Orleans,Robert Pitkin,"New Orleans, LA",LA,12/8/1856,0.005776137,M,Robert/ Bob,1,0,1,Cash and Credit,0.0715586,500.0,1,Jefferson,David Resolve Godwin,"Jefferson, LA",LA,Griff
+38.0,New Orleans,Augustus Block,"New Orleans, LA",LA,12/13/1856,0.00583485,F,Betty,1,7,8,Cash and Credit,0.07230948,5500.0,1,New Orleans,Mary Ann Smucker,"New Orleans, LA",LA,Griff
+21.0,Jackson,Henry H. Carter,"Jackson, LA",LA,12/12/1856,0.00602698,M,Nat,1,0,1,Cash,0.07477,1275.0,1,Montgomery,John G. Johnson,"Montgomery, AL",AL,Negro
+20.0,Jackson,Henry H. Carter,"Jackson, LA",LA,12/12/1856,0.00602698,F,Mary,1,0,1,Cash,0.07477,1075.0,1,Montgomery,John G. Johnson,"Montgomery, AL",AL,Negro
+26.0,New Orleans,Andrew & Lierau Unknown,"New Orleans, LA",LA,12/15/1856,0.00602698,F,Elizabeth,1,0,1,Cash,0.07477,1200.0,1,New Orleans,John Jackson,"New Orleans, LA",LA,Griff
+15.0,New Orleans,Jose Martinez,"New Orleans, LA",LA,12/15/1856,0.00602698,M,John,1,0,1,Cash,0.07477,860.0,1,New Orleans,Mary Regan,"New Orleans, LA",LA,Negro
+37.0,New Orleans,Elizabeth Leticia Robinson,"New Orleans, LA",LA,12/16/1856,0.00602698,F,Jane,1,0,1,Cash,0.07477,650.0,1,New Orleans,Pierre Amedee de Buys,"New Orleans, LA",LA,Griff
+26.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,12/10/1856,0.00602698,M,Puis,1,0,1,Cash,0.07477,1200.0,1,Grand Gulf,Robert C. Hume,"Grand Gulf, MS",MS,Dark Griff
+41.0,New Orleans,Mary Anna Parent,"New Orleans, LA",LA,12/17/1856,0.00583485,F,Henriette,1,2,3,Cash and Credit,0.07230948,1250.0,1,New Orleans,Jacques Calonjat,"New Orleans, LA",LA,Negro
+17.0,New Orleans,Betty Whitehead Cunningham,"New Orleans, LA",LA,12/15/1856,0.00602698,F,Anna,1,0,1,Cash,0.07477,1250.0,1,New Orleans,John J. Green,"New Orleans, LA",LA,Griff
+13.0,New Orleans,William Henry Crafts,"New Orleans, LA",LA,12/17/1856,0.00602698,F,Oneida,1,0,1,Cash,0.07477,600.0,1,New Orleans,Celeste Dapremont,"New Orleans, LA",LA,Griff
+11.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,12/17/1856,0.00602698,F,Dinah,1,0,1,Cash,0.07477,675.0,1,New Orleans,Pablo Gelpi,"New Orleans, LA",LA,Negro
+38.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,12/19/1856,0.00602698,F,Minerva,1,0,1,Cash,0.07477,400.0,1,St. Tammany,Samuel P. Russ,"St. Tammany, LA",LA,Light Black
+24.0,West Baton Rouge,James Richard Duvall,"West Baton Rouge, LA",LA,12/19/1856,0.00587886,M,Hiram,2,0,2,Credit,0.07287264,1450.0,2,Richmond,Jeremiah Smith,"Richmond, VA",VA,Griff
+30.0,New Orleans,Warren Shelton,"New Orleans, LA",LA,12/12/1856,0.006901355,M,Edmond,7,0,7,Credit,0.0860332,11000.0,1,New Orleans,Daniel Pierre Pautz,"New Orleans, LA",LA,Negro
+15.0,Unknown,Josephine Magagnos,"Unknown, Unknown",Unknown,12/18/1856,0.00602698,F,Clarissa,1,0,1,Cash,0.07477,1050.0,1,New Orleans,Theodore Johnston,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Eliza Huntington,"New Orleans, LA",LA,12/20/1856,0.00602698,M,Carlos,1,0,1,Cash,0.07477,1150.0,1,Polk,Geph P. Ross,"Polk, TX",TX,Negro
+23.0,Ascension,Louisa Doyal,"Ascension, LA",LA,12/20/1856,0.00602698,M,Thomas Jefferson,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Jane McNair Baldwin,"New Orleans, LA",LA,Mulatto
+26.0,New Orleans,Henry Hicke Crocker,"New Orleans, LA",LA,12/10/1856,0.00583485,F,Sarah,1,0,1,Cash and Credit,0.07230948,800.0,1,New Orleans,Cromwell & Taylor Unknown,"New Orleans, LA",LA,Negro
+29.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,12/22/1856,0.00602698,F,Barney,1,0,1,Cash,0.07477,710.0,1,Pensacola,Ezekiel E. Simpson,"Pensacola, FL",FL,Negro
+24.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.00602698,M,Anthony,3,0,3,Cash,0.07477,0.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+25.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.00602698,F,Pauline,1,0,1,Cash,0.07477,775.0,1,New Orleans,"Claude Frederick, Caroline Isabella Haifleigh Avet","New Orleans, LA",LA,Griff
+26.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.00602698,F,Caroline,1,0,1,Cash,0.07477,800.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+16.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.00602698,F,Maria,1,0,1,Cash,0.07477,950.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+26.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.00602698,M,Captain,1,0,1,Cash,0.07477,1050.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+16.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.00602698,F,Helen,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+35.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.00602698,M,Joe,1,0,1,Cash,0.07477,500.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+36.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.00602698,F,Patsy/ Persinelle,1,0,1,Cash,0.07477,1050.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+22.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.005776137,F,Flora Anna,1,0,1,Cash and Credit,0.0715586,750.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+32.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.00602698,F,Mary/ Maria,1,0,1,Cash,0.07477,1250.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+26.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.00602698,M,David Johnson,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+29.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.00602698,M,Barny,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+24.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.00602698,M,Robert,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+29.0,New Orleans,Joseph Francois Avet,"New Orleans, LA",LA,12/22/1856,0.006202525,M,Calvin,1,0,1,Credit,0.07702264,1900.0,1,New Orleans,Claude Frederick Avet,"New Orleans, LA",LA,Negro
+60.0,New Orleans,"Marie Eesor, Lucette Josephine Valerie Wiltz","New Orleans, LA",LA,12/29/1856,0.00602698,F,Samite,2,0,2,Cash,0.07477,200.0,1,New Orleans,Felicite Victorie Wiltz,"New Orleans, LA",LA,Black
+35.0,New Orleans,"Henry Michael, Joseph Hyams, Benjamin","New Orleans, LA",LA,12/27/1856,0.00602698,M,Sanon/ Adams,1,0,1,Cash,0.07477,1205.0,1,St. Bernard,Marie Anne Amelie Lombard,"St. Bernard, LA",LA,Negro
+23.0,New Orleans,William H. Holmes,"New Orleans, LA",LA,12/26/1856,0.00602698,F,Louisa,1,0,1,Cash,0.07477,1200.0,1,Lagrange,George Sherman Eaton,"Lagrange, GA",GA,Dark Griff
+26.0,New Orleans,Ophelia P. Talbert Henning,"New Orleans, LA",LA,12/29/1856,0.005746766,F,Marguerite/ Lanton,1,0,1,Cash and Credit,0.07118316,380.0,1,New Orleans,Philippe Ducloslange,"New Orleans, LA",LA,Mulatto
+22.0,Bowie,Richard Runnels,"Bowie, TX",TX,12/29/1856,0.00602698,F,Ann Sheek,4,0,4,Cash,0.07477,1200.0,4,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+35.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,12/29/1856,0.00602698,F,Helene,1,0,1,Cash,0.07477,450.0,1,New Orleans,Pierre Goulet,"New Orleans, LA",LA,Negro
+26.0,New Orleans,George Heation,"New Orleans, LA",LA,12/27/1856,0.00602698,F,Maria Burgess,2,0,2,"Exchange, Cash",0.07477,1225.0,2,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Unknown
+18.0,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,12/27/1856,0.00602698,F,Maria Ross,1,0,1,"Exchange, Cash",0.07477,1225.0,1,New Orleans,George Heation,"New Orleans, LA",LA,Negro
+49.0,New Orleans,Hippolyte Gilly,"New Orleans, LA",LA,12/27/1856,0.00602698,F,Celie,1,1,2,Cash,0.07477,1000.0,1,New Orleans,Rene Philippe Theard,"New Orleans, LA",LA,Negro
+12.0,New Orleans,William James Ridgill,"New Orleans, LA",LA,12/30/1856,0.00602698,M,Henry,1,0,1,Cash,0.07477,350.0,1,New Orleans,Mary Ann Richardson,"New Orleans, LA",LA,Negro
+43.0,New Orleans,Victoire Azche Smith Mader,"New Orleans, LA",LA,12/8/1856,0.00587886,M,Sam,1,0,1,Cash and Credit,0.07287264,880.0,1,New Orleans,Antoinette Gerin Koch,"New Orleans, LA",LA,Negro
+37.0,Jefferson,Francis Dugue Lumz,"Jefferson, LA",LA,12/18/1856,0.00602698,M,John,1,0,1,Cash,0.07477,700.0,1,New Madrid,Luke Byrne,"New Madrid, MO",MO,Negro
+22.0,New Orleans,"Oscar, Alfred Liveaudais","New Orleans, LA",LA,12/20/1856,0.00602698,M,Eugene,1,0,1,Cash,0.07477,750.0,1,New Orleans,Louise Antoinette Decuir Denis,"New Orleans, LA",LA,Creole Negro
+50.0,New Orleans,Louis Francois Lebon,"New Orleans, LA",LA,12/31/1856,0.00602698,F,Catherine,1,0,1,Cash,0.07477,400.0,1,New Orleans,Jackson McLanathan,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,12/30/1856,0.00602698,M,Stephen,45,0,45,Cash,0.07477,27000.0,1,New Orleans,Joseph A. Barelli,"New Orleans, LA",LA,Unknown
+35.0,New Orleans,Pooley Nicol & Co. Unknown,"New Orleans, LA",LA,12/30/1856,0.006202525,M,Philander,1,0,1,Credit,0.07702264,1000.0,1,New Orleans,James Montgomery Cass,"New Orleans, LA",LA,Negro
+41.0,New Orleans,Lewis Barnett,"New Orleans, LA",LA,12/31/1856,0.0,F,Mary Ann,4,2,6,Credit,0.0,0.0,1,New Orleans,Edward Barnett,"New Orleans, LA",LA,Negro
+24.0,New Orleans,Thomas K. Price,"New Orleans, LA",LA,1/2/1857,0.00602698,M,Westly,1,0,1,Cash,0.07477,1400.0,1,New Orleans,Eliza Harris Warfield,"New Orleans, LA",LA,Negro
+22.0,Lafourche,Charles L. Gaude & Co. Unknown,"Lafourche, LA",LA,1/3/1857,0.00602698,F,Isaac Baptiste,4,0,4,Cash,0.07477,1450.0,4,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+4.0,New Orleans,Aurore Doubrere,"New Orleans, LA",LA,1/3/1857,0.00602698,M,Sylvain,1,0,1,Cash,0.07477,150.0,1,New Orleans,C. Oger,"New Orleans, LA",LA,Mulatto
+34.0,St. John,Lezin Becnel,"St. John, LA",LA,12/24/1856,0.006202525,M,Belizaire,1,0,1,Credit,0.07702264,1200.0,1,New Orleans,C. L. Daunoy Frey,"New Orleans, LA",LA,Negro
+47.0,New Orleans,Felouise Gallantin,"New Orleans, LA",LA,1/5/1857,0.00602698,F,Magdeline,1,0,1,Cash,0.07477,200.0,1,New Orleans,Jules Domingon,"New Orleans, LA",LA,Negro
+14.0,New Orleans,Adolphe Jean Lacroix,"New Orleans, LA",LA,1/5/1857,0.00602698,F,Josephine,1,0,1,Cash,0.07477,650.0,1,New Orleans,Marie Poupin Maufre,"New Orleans, LA",LA,Mulatto
+38.0,New Orleans,David C. McCan,"New Orleans, LA",LA,12/6/1856,0.00602698,F,Rachel,1,0,1,Cash,0.07477,800.0,1,New Orleans,Lucilia Ann O' Reilly Christie,"New Orleans, LA",LA,Negro
+11.0,New Orleans,John B. Womack,"New Orleans, LA",LA,1/6/1857,0.00602698,F,Elizabeth,1,0,1,Cash,0.07477,650.0,1,New Orleans,Joseph Maurice Hugonin,"New Orleans, LA",LA,Negro
+15.0,New Orleans,John B. Womack,"New Orleans, LA",LA,1/6/1857,0.00602698,M,Frank Avery,1,0,1,Cash,0.07477,900.0,1,Biloxi,Pierre Pascal Hugonin,"Biloxi, MS",MS,Negro
+21.0,New Orleans,John B. Womack,"New Orleans, LA",LA,1/6/1857,0.00602698,F,Luzanne,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Louis Jules Hus Desforges,"New Orleans, LA",LA,Griff
+35.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,2/2/1857,0.00602698,F,Margaret,1,0,1,Cash,0.07477,425.0,1,Grand Gulf,Charles H. Pearson,"Grand Gulf, MS",MS,Negro
+55.0,New Orleans,Jean Fisse,"New Orleans, LA",LA,2/2/1857,0.005717386,F,Ann/ Celeste,1,0,1,Cash and Credit,0.07080772,235.0,1,New Orleans,Louis Caretta,"New Orleans, LA",LA,Black
+22.0,New Orleans,Mahala Brockhan Garrison,"New Orleans, LA",LA,1/26/1857,0.00602698,F,Abby,1,0,1,Cash,0.07477,950.0,1,Fairfield,Joseph Kennedy,"Fairfield, SC",SC,Griff
+26.0,New Orleans,Robert Spence,"New Orleans, LA",LA,1/30/1857,0.00602698,F,Marriet,1,0,1,Cash,0.07477,745.0,1,New Orleans,Ellen Noonan Hogan,"New Orleans, LA",LA,Negro
+25.0,New Orleans,Josehine de la Rosa Trigo,"New Orleans, LA",LA,1/30/1857,0.00602698,F,Silia,1,1,2,Cash,0.07477,770.0,1,New Orleans,Josephine Santos de la Rosa,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Frederick Wintz,"New Orleans, LA",LA,1/29/1857,0.00602698,F,Suzanne,1,0,1,Cash,0.07477,1200.0,1,Tuscaloosa,James Fredell Long,"Tuscaloosa, AL",AL,Negro
+11.0,New Orleans,Charles Yates,"New Orleans, LA",LA,2/2/1857,0.00602698,F,Isabella,1,0,1,Cash,0.07477,600.0,1,New Orleans,William Colter,"New Orleans, LA",LA,Negro
+45.0,New Orleans,Suzannah Trevitt Russel,"New Orleans, LA",LA,2/3/1857,0.00602698,F,Ellen,1,0,1,Cash,0.07477,400.0,1,New Orleans,Octave Anfoux,"New Orleans, LA",LA,Negro
+12.0,Carrollton,James G. George,"Carrollton, MS",MS,2/4/1857,0.00602698,M,Alexander Stackey,1,0,1,Cash,0.07477,1150.0,1,New Orleans,Jonathan Means Wilson,"New Orleans, LA",LA,Griff
+35.0,New Orleans,Elie Charles Etienne Choisy,"New Orleans, LA",LA,2/3/1857,0.005790818,M,Henry,2,2,4,Cash and Credit,0.07174632,2500.0,1,New Orleans,Jean Ursin Lavillebeurre,"New Orleans, LA",LA,Griff
+20.0,St. Mary,William Taylor Palfrey Jr.,"St. Mary, LA",LA,2/4/1857,0.00602698,M,Andrew,1,0,1,Cash,0.07477,1275.0,1,New Orleans,Theodore Johnston,"New Orleans, LA",LA,Negro
+18.0,Boure,E. S. Runnels,"Boure, TX",TX,2/4/1857,0.00602698,M,Henry Webb,2,0,2,Cash,0.07477,1400.0,2,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+17.0,New Orleans,Edward Planchard,"New Orleans, LA",LA,1/30/1857,0.00587886,F,Eulalie,1,0,1,Cash and Credit,0.07287264,350.0,1,New Orleans,"Francois, Charles, Michel Amand, Octave Calonge","New Orleans, LA",LA,Griff
+-1.0,Unknown,Elsie Fellows Saul,"Unknown, Unknown",Unknown,3/22/1850,0.00602698,F,Ruth,0,1,1,Cash,0.07477,700.0,1,Unknown,Thomas Henson Saul,"Unknown, Unknown",Unknown,Negro
+25.0,Hancock,Henry Weston,"Hancock, MS",MS,2/5/1857,0.005746766,M,Edmund Baker,2,0,2,Cash and Credit,0.07118316,1500.0,2,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+40.0,New Orleans,Caroline L. Redlish Wade,"New Orleans, LA",LA,1/31/1857,0.00602698,F,Nancy,1,1,2,Cash,0.07477,575.0,1,Jackson,David J. E. Berry,"Jackson, MS",MS,Negro
+28.0,New Orleans,John Armstrong,"New Orleans, LA",LA,2/5/1857,0.006202525,M,Ben,2,0,2,Credit,0.07702264,2725.0,1,Walton,James L. Grant,"Walton, GA",GA,Unknown
+20.0,New Orleans,James Drummond,"New Orleans, LA",LA,1/26/1857,0.00602698,F,Mary,1,0,1,Cash,0.07477,1250.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+23.0,New Orleans,Aaron Parker Cleveland,"New Orleans, LA",LA,2/5/1857,0.00602698,F,Maria,1,0,1,Cash,0.07477,900.0,1,Macon,William Cadenhead,"Macon, AL",AL,Negro
+13.0,New Orleans,Louis Phillippe Braud,"New Orleans, LA",LA,2/6/1857,0.00602698,F,Julie,1,0,1,Cash,0.07477,800.0,1,New Orleans,Samuel Gensler,"New Orleans, LA",LA,Negro
+27.0,New Orleans,William L. Pitts,"New Orleans, LA",LA,1/19/1857,0.00602698,M,Charles,1,0,1,Cash,0.07477,1372.0,1,New Orleans,Charles Rolland,"New Orleans, LA",LA,Negro
+38.0,New Orleans,Charles J. Picton,"New Orleans, LA",LA,12/13/1856,0.00602698,F,Lena,1,0,1,Cash,0.07477,900.0,1,Rapides,Laura Williams Maddox,"Rapides, LA",LA,Negro
+36.0,New Orleans,Lewis Bellow,"New Orleans, LA",LA,12/8/1856,0.00587886,F,Maria,1,1,2,Cash and Credit,0.07287264,1175.0,1,New Orleans,Antoinette Gerin Koch,"New Orleans, LA",LA,Negro
+10.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,2/9/1857,0.00602698,F,Estelle,1,0,1,Cash,0.07477,610.0,1,New Orleans,Josephine Hurd Armor,"New Orleans, LA",LA,Mulatto
+14.0,Unknown,William L. Masson,"Unknown, Unknown",Unknown,2/7/1857,0.00602698,F,Harriet,1,0,1,Cash,0.07477,695.0,1,New Orleans,Josephine Hurd Armor,"New Orleans, LA",LA,Griff
+40.0,Unknown,Meggie S. N. Peppard,"Unknown, Unknown",Unknown,2/9/1857,0.00602698,F,Sarah,1,0,1,Cash,0.07477,400.0,1,New Orleans,Josephine Hurd Armor,"New Orleans, LA",LA,Negro
+31.0,New Orleans,George W. Race,"New Orleans, LA",LA,2/7/1857,0.00602698,M,John,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Miles Judson,"New Orleans, LA",LA,Negro
+27.0,New Orleans,Bernard Kendig,"New Orleans, LA",LA,2/9/1857,0.00602698,M,William,1,0,1,Cash,0.07477,925.0,1,St. Martin,Harvey Hopkin,"St. Martin, LA",LA,Griff
+34.0,New Orleans,Nicholas J. Hoey,"New Orleans, LA",LA,2/9/1857,0.00602698,F,Delphine,1,0,1,Cash,0.07477,450.0,1,New Orleans,James H. Donegan,"New Orleans, LA",LA,Negro
+14.0,New Orleans,Henry Florence,"New Orleans, LA",LA,2/9/1857,0.00602698,M,Lawson,2,0,2,Cash,0.07477,1000.0,1,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,Unknown
+23.0,New Orleans,Rev. William Mc Connell,"New Orleans, LA",LA,2/3/1857,0.00602698,F,Arthemise,1,0,1,Cash,0.07477,800.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Mulatto
+32.0,New Orleans,Thomas Askew,"New Orleans, LA",LA,2/10/1857,0.00602698,F,Esther/ Hester,1,1,2,Cash,0.07477,1000.0,1,New Orleans,Josephine Hurd Armor,"New Orleans, LA",LA,Negro
+25.0,Franklin,John Butler,"Franklin, LA",LA,2/6/1857,0.00602698,M,William,3,3,6,Cash,0.07477,3720.0,1,Laraeca,John R. Fretwell,"Laraeca, TX",TX,Griff
+50.0,Plaquemines,M. Louis Octave Reggio,"Plaquemines, LA",LA,2/9/1857,0.006202525,M,Ephraim,5,0,5,Credit,0.07702264,2100.0,1,New Orleans,Jules Demaziliere Dusuau de la Croix,"New Orleans, LA",LA,Unknown
+17.0,New Orleans,John B. Harrison,"New Orleans, LA",LA,1/29/1857,0.00602698,F,Ann/ Georgianne,1,0,1,Cash,0.07477,750.0,1,New Orleans,Martha Denton Wright,"New Orleans, LA",LA,Negro
+20.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,2/11/1857,0.00602698,F,Lucy,1,2,3,Cash,0.07477,1150.0,1,St. Bernard,Etienne Villavaso,"St. Bernard, LA",LA,Negro
+32.0,New Orleans,Jules Demaziliere Dusuau Delacroix,"New Orleans, LA",LA,1/29/1857,0.00602698,M,Moses,11,1,12,Barter,0.07477,1400.0,11,New Orleans,Charles de Blanc,"New Orleans, LA",LA,Unknown
+16.0,New Orleans,Frederick Bernard Albers,"New Orleans, LA",LA,2/12/1857,0.00602698,F,Betty,1,0,1,Cash,0.07477,1300.0,1,Augusta,Nelson Clement Trowbridge,"Augusta, GA",GA,Griff
+40.0,New Orleans,Marie Amenaide Ducayet Simms,"New Orleans, LA",LA,2/10/1857,0.00587886,F,Eulalie,1,4,5,Credit,0.07287264,2200.0,1,New Orleans,Joseph Edward Guillot,"New Orleans, LA",LA,Mulatto
+11.0,New Orleans,Alfred Ceresol,"New Orleans, LA",LA,2/12/1857,0.00602698,F,Marie,1,0,1,Cash,0.07477,800.0,1,New Orleans,Edouard Ceresol,"New Orleans, LA",LA,Negro
+15.0,New Orleans,Dame Thomassin Ceresol Desdunes,"New Orleans, LA",LA,2/12/1857,0.00602698,F,Philomene,1,0,1,Donation,0.07477,1000.0,1,New Orleans,Edouard Ceresol,"New Orleans, LA",LA,Negro
+26.0,New Orleans,Aimee Gilbert,"New Orleans, LA",LA,2/14/1857,0.00602698,F,Marie/ Marianne,1,3,4,Cash,0.07477,1500.0,1,New Orleans,Thomas Loublet,"New Orleans, LA",LA,Griff
+43.0,Unknown,Francois Grand,"Unknown, Unknown",Unknown,1/22/1857,0.00602698,M,Raymond,1,0,1,Cash,0.07477,3000.0,1,Unknown,Medelace Thomas,"Unknown, Unknown",Unknown,Negro
+23.0,New Orleans,Henry Holmes,"New Orleans, LA",LA,12/13/1856,0.006070898,M,Newton,1,0,1,Credit,0.07533316,950.0,1,New Orleans,N. S. Torrey & Co. Unknown,"New Orleans, LA",LA,Yellow
+28.0,New Orleans,Aaron Parker Cleveland,"New Orleans, LA",LA,2/14/1857,0.00602698,F,Adeline,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Clarrise Martin Materre,"New Orleans, LA",LA,Unknown
+29.0,New Orleans,Campfrancy Unknown,"New Orleans, LA",LA,2/14/1857,0.00602698,F,Francoise,1,1,2,Cash,0.07477,1000.0,1,New Orleans,Solidelle Solet,"New Orleans, LA",LA,Griff
+30.0,New Orleans,William Raphael Miles,"New Orleans, LA",LA,2/14/1857,0.006202525,M,David,17,0,17,Credit,0.07702264,1150.0,17,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+21.0,Tensas,Leonard V. Reeves,"Tensas, LA",LA,2/14/1857,0.006202525,M,Theodore,3,0,3,Credit,0.07702264,4200.0,1,Augusta,Nelson Clement Trowbridge,"Augusta, GA",GA,Dark Griff
+28.0,Iberville,Edward J. Gay,"Iberville, LA",LA,2/9/1857,0.00602698,M,Louis,2,0,2,Cash,0.07477,1000.0,2,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+21.0,St. Mary,William Taylor Palfrey Jr.,"St. Mary, LA",LA,2/16/1857,0.00587886,M,Charles,5,0,5,Credit,0.07287264,1400.0,5,Augusta,Nelson Clement Trowbridge,"Augusta, GA",GA,Negro
+22.0,New Orleans,Cecile Chaudurier,"New Orleans, LA",LA,2/16/1857,0.00602698,F,Leonine,1,0,1,Cash,0.07477,400.0,1,New Orleans,Joseph Henri Bourgeau,"New Orleans, LA",LA,Negro
+41.0,New Orleans,Henry Rodriguez,"New Orleans, LA",LA,2/12/1857,0.00583485,M,Tom,1,0,1,Cash and Credit,0.07230948,550.0,1,Jefferson,Antoine Onesine Degruy,"Jefferson, LA",LA,Unknown
+26.0,New Orleans,New Orleans Gas Light Co. Unknown,"New Orleans, LA",LA,2/16/1857,0.00602698,M,Daniel,1,0,1,Cash,0.07477,1200.0,1,New Orleans,John Caldwell Jr.,"New Orleans, LA",LA,Negro
+45.0,New Orleans,David Resolve Godwin,"New Orleans, LA",LA,2/14/1857,0.00602698,F,Josephine,1,1,2,Cash,0.07477,750.0,1,New Orleans,Angel Martin,"New Orleans, LA",LA,Negro
+38.0,New Orleans,Daniel Blum,"New Orleans, LA",LA,2/17/1857,0.00602698,F,Pharaoh,1,4,5,Cash,0.07477,3515.0,1,New Orleans,David Goodman,"New Orleans, LA",LA,Negro
+12.0,New Orleans,Henry Holmes,"New Orleans, LA",LA,2/5/1857,0.00587886,M,Bazile,1,0,1,Cash and Credit,0.07287264,880.0,1,St. Bernard,Charles Fierville Bienvenu,"St. Bernard, LA",LA,Negro
+30.0,New Orleans,Terrence Firmin Levasseur,"New Orleans, LA",LA,2/5/1857,0.00587886,M,Boucherol,2,0,2,Cash and Credit,0.07287264,1570.0,2,St. Bernard,Charles Fierville Bienvenu,"St. Bernard, LA",LA,Negro
+13.0,New Orleans,John Breen,"New Orleans, LA",LA,2/5/1857,0.00587886,M,Felix,1,0,1,Cash and Credit,0.07287264,890.0,1,St. Bernard,Charles Fierville Bienvenu,"St. Bernard, LA",LA,Negro
+50.0,New Orleans,Cornelius O'Brien,"New Orleans, LA",LA,2/5/1857,0.00602698,F,Doll,1,0,1,Cash,0.07477,350.0,1,St. Bernard,Charles Fierville Bienvenu,"St. Bernard, LA",LA,Negro
+50.0,New Orleans,Louis Castera,"New Orleans, LA",LA,2/5/1857,0.00587886,M,Colas,1,0,1,Cash and Credit,0.07287264,540.0,1,St. Bernard,Charles Fierville Bienvenu,"St. Bernard, LA",LA,Griff
+25.0,Iberville,Austin Hunt,"Iberville, LA",LA,2/28/1857,0.006202525,F,Peggy,1,0,1,Credit,0.07702264,1100.0,1,New Orleans,Thomas C. Matthews,"New Orleans, LA",LA,Mulatto
+32.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,2/28/1857,0.00602698,F,Emmeline Harris,1,0,1,Cash,0.07477,350.0,1,New Orleans,Roselmire Allain,"New Orleans, LA",LA,Negro
+13.0,New Orleans,Francis Bone,"New Orleans, LA",LA,3/2/1857,0.005790818,M,Hippolyte,1,0,1,Cash and Credit,0.07174632,750.0,1,New Orleans,James P. Godefroy,"New Orleans, LA",LA,Mulatto
+13.0,New Orleans,James P. Godefroy,"New Orleans, LA",LA,3/2/1857,0.00602698,M,Hippolyte,1,0,1,Cash,0.07477,700.0,1,New Orleans,Marie Celestine Clemence Godefroy Vignaud,"New Orleans, LA",LA,Unknown
+25.0,West Feliciana,William Polk,"West Feliciana, LA",LA,2/20/1857,0.00602698,M,Edmond,1,0,1,Cash,0.07477,1500.0,1,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,Negro
+19.0,West Feliciana,William Polk,"West Feliciana, LA",LA,2/20/1857,0.00602698,F,Ann,1,0,1,Cash,0.07477,1400.0,1,New Orleans,James White,"New Orleans, LA",LA,Mulatto
+22.0,West Feliciana,William Polk,"West Feliciana, LA",LA,2/20/1857,0.00602698,F,Mary Ann,1,0,1,Cash,0.07477,1175.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+33.0,New Orleans,William W. Loud,"New Orleans, LA",LA,3/2/1857,0.00602698,F,Celia,1,0,1,Cash,0.07477,800.0,1,New Orleans,Etienne Aynaud,"New Orleans, LA",LA,Negro
+50.0,New Orleans,David Mc Cants,"New Orleans, LA",LA,2/28/1857,0.00587886,F,China,1,0,1,Cash and Credit,0.07287264,350.0,1,Tuscaloosa,James Fredell Long,"Tuscaloosa, AL",AL,Negro
+41.0,Huntsville,Thomas Bibb,"Huntsville, AL",AL,3/3/1857,0.00602698,M,Alfred,1,0,1,Cash,0.07477,3000.0,1,New Orleans,Juan Ygnacio de Egana,"New Orleans, LA",LA,Negro
+13.0,New Orleans,Felix Grima,"New Orleans, LA",LA,2/28/1857,0.00602698,F,Adele,1,0,1,Cash,0.07477,800.0,1,New Orleans,Elizabeth Aimee Trepagnier la Branche,"New Orleans, LA",LA,Mulatto
+37.0,Mobile,Lucie Perier Guiron,"Mobile, AL",AL,3/2/1857,0.00602698,F,Estelle,1,0,1,Cash,0.07477,200.0,1,New Orleans,Joseph Prados,"New Orleans, LA",LA,Mulatto
+45.0,New Orleans,Charles Sagory,"New Orleans, LA",LA,2/27/1857,0.00602698,F,Patience,1,0,1,Cash,0.07477,400.0,1,New Orleans,Josephine Mathilde Harang Arata,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Ignatius Szymanski,"New Orleans, LA",LA,2/5/1857,0.00587886,M,Joe,1,0,1,Cash and Credit,0.07287264,1160.0,1,St. Bernard,Charles Fierville Bienvenu,"St. Bernard, LA",LA,Griff
+26.0,New Orleans,Andrew & Lierau Unknown,"New Orleans, LA",LA,2/25/1857,0.00602698,F,Bob,2,0,2,Cash,0.07477,3200.0,1,Caldwell,Thomas R. Bradley,"Caldwell, LA",LA,Negro
+14.0,New Orleans,Benjamin Bland,"New Orleans, LA",LA,3/2/1857,0.00602698,M,Isaac,1,0,1,Cash,0.07477,900.0,1,New Orleans,James A. Gerguson,"New Orleans, LA",LA,Negro
+18.0,Adams,James Surget,"Adams, MS",MS,3/3/1857,0.00602698,F,Milly,1,1,2,Cash,0.07477,1250.0,1,New Orleans,Hanson B. Cresap,"New Orleans, LA",LA,Mulatto
+30.0,New Orleans,Simpson Turner,"New Orleans, LA",LA,3/3/1857,0.00602698,M,George,3,1,4,Cash,0.07477,2500.0,1,New Orleans,Sarah A. Fort Harvey,"New Orleans, LA",LA,Negro
+15.0,New Orleans,Avendua Charles Lafitte,"New Orleans, LA",LA,3/4/1857,0.00587886,F,Odile,1,0,1,Cash and Credit,0.07287264,1000.0,1,New Orleans,Francois Leonlon Immanville de Villiers,"New Orleans, LA",LA,Mulatto
+17.0,New Orleans,Eugene Lasere,"New Orleans, LA",LA,3/4/1857,0.00587886,F,Marie,1,1,2,Cash and Credit,0.07287264,1100.0,1,New Orleans,Charles Francois de Villiers,"New Orleans, LA",LA,Unknown
+25.0,New Orleans,Amanda Melissa Cowand Ames,"New Orleans, LA",LA,3/4/1857,0.00602698,M,Windsor,1,0,1,Cash,0.07477,500.0,1,New Orleans,Jesse Cowand,"New Orleans, LA",LA,Negro
+38.0,New Orleans,Henry Rodriguez,"New Orleans, LA",LA,2/27/1857,0.005820175,M,John Smith,1,0,1,Cash and Credit,0.07212176,1400.0,1,New Orleans,Edgar Montegut,"New Orleans, LA",LA,Negro
+28.0,Bolivar,Lewis G. Gallaway,"Bolivar, MS",MS,3/2/1857,0.006202525,M,Dave,17,0,17,Credit,0.07702264,19915.0,1,New Orleans,John Caldwell Jr.,"New Orleans, LA",LA,Unknown
+36.0,New Orleans,Hugh D. Cochrane,"New Orleans, LA",LA,2/20/1857,0.005746766,F,Mary/ Marie,1,0,1,Cash and Credit,0.07118316,900.0,1,New Orleans,Luico Mitchell Foster,"New Orleans, LA",LA,Negro
+27.0,Rapides,Levi Wilson,"Rapides, LA",LA,3/3/1857,0.00602698,M,Augustus,1,0,1,Cash,0.07477,2000.0,1,Augusta,Nelson Clement Trowbridge,"Augusta, GA",GA,Negro
+48.0,New Orleans,Antoine Carbonel,"New Orleans, LA",LA,2/24/1857,0.00602698,F,Eliza,1,0,1,Cash,0.07477,350.0,1,New Orleans,Maria Wilson,"New Orleans, LA",LA,Negro
+19.0,New Orleans,Francis Alexander Kelman,"New Orleans, LA",LA,2/27/1857,0.00602698,M,Frank,1,0,1,Cash,0.07477,1325.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+18.0,Terrebonne,William Lafayette Schaffer,"Terrebonne, LA",LA,3/3/1857,0.00602698,F,Caroline,1,0,1,Exchange,0.07477,1300.0,1,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+19.0,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,3/3/1857,0.00602698,F,Lydia Ann,1,0,1,Exchange,0.07477,1300.0,1,Terrebonne,William Lafayette Schaffer,"Terrebonne, LA",LA,Negro
+29.0,New Orleans,James Peter Freret,"New Orleans, LA",LA,2/28/1857,0.00602698,M,Harnstead,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Edward Farrelly,"New Orleans, LA",LA,Griff
+19.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,3/4/1857,0.00602698,F,Jane,1,0,1,Cash,0.07477,1200.0,1,Mobile,Edward Begouen,"Mobile, AL",AL,Griff
+27.0,St. Landry,Theophilus C. Littell,"St. Landry, LA",LA,3/4/1857,0.00602698,M,John,1,0,1,Cash,0.07477,1656.0,1,New Orleans,Nathan R. Stratton,"New Orleans, LA",LA,Negro
+32.0,New Orleans,Adele Gajean Berniard,"New Orleans, LA",LA,3/5/1857,0.00587886,F,Rebecky,1,1,2,Cash and Credit,0.07287264,1200.0,1,Iberville,Celeste Trahan Mailles,"Iberville, LA",LA,Black
+42.0,New Orleans,Leon Queyrouse,"New Orleans, LA",LA,1/16/1857,0.00602698,F,Mary,1,0,1,Cash,0.07477,400.0,1,St. Tammany,Nyma Riviere,"St. Tammany, LA",LA,Unknown
+48.0,New Orleans,John B. Womack,"New Orleans, LA",LA,3/5/1857,0.00602698,F,Jane,1,0,1,Cash,0.07477,450.0,1,New Orleans,George O. Sweet,"New Orleans, LA",LA,Negro
+17.0,New Orleans,John B. Womack,"New Orleans, LA",LA,3/4/1857,0.00602698,F,Mary,1,0,1,Cash,0.07477,850.0,1,New Orleans,Andrew Oliver Jackson,"New Orleans, LA",LA,Mulatto
+18.0,Bossier,Abel S. Kannal,"Bossier, LA",LA,2/20/1857,0.00602698,M,Alexander/ Ellick,1,0,1,Cash,0.07477,1400.0,1,New Orleans,Thomas E. Matthews,"New Orleans, LA",LA,Mulatto
+18.0,New Orleans,Micajah Harris Jr.,"New Orleans, LA",LA,3/7/1857,0.00602698,F,Ann,1,1,2,Cash,0.07477,925.0,1,St. Helena,Peter E. Eubank,"St. Helena, LA",LA,Negro
+19.0,Avoyelles,Alenson G. Pearce,"Avoyelles, LA",LA,3/6/1857,0.00602698,F,Lavinia,1,0,1,Cash,0.07477,1110.0,1,New Orleans,Lavinia Celles Dabney,"New Orleans, LA",LA,Negro
+26.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,3/6/1857,0.00602698,F,Eliza,1,1,2,Cash,0.07477,1280.0,1,New Orleans,Lavinia Celles Dabney,"New Orleans, LA",LA,Negro
+31.0,Rapides,Robert S. Tanner,"Rapides, LA",LA,3/7/1857,0.006202525,M,Charles/ Charles Waters,1,0,1,Credit,0.07702264,1350.0,1,New Orleans,Alexander Gordon,"New Orleans, LA",LA,Griff
+33.0,Nashville,William Nichol,"Nashville, TN",TN,3/7/1857,0.00602698,M,Patrick,1,0,1,Cash,0.07477,2100.0,1,New Orleans,Thomas C. Matthews,"New Orleans, LA",LA,Griff
+20.0,Unknown,Richard Power,"Unknown, AR",AR,3/7/1857,0.00602698,F,Sally,1,0,1,Cash,0.07477,1250.0,1,Augusta,Nelson Clement Trowbridge,"Augusta, GA",GA,Negro
+30.0,New Orleans,Adrien Cassard,"New Orleans, LA",LA,2/26/1857,0.00587886,F,Henriette,2,1,3,Cash and Credit,0.07287264,1170.0,2,New Orleans,Jeanne Felicianne Jorda Forneret,"New Orleans, LA",LA,Mulatto
+16.0,St. James,William Peter Welham,"St. James, LA",LA,3/7/1857,0.00602698,F,Rachel,1,0,1,Cash,0.07477,900.0,1,New Orleans,Elvina Roussel Vienne,"New Orleans, LA",LA,Negro
+33.0,New Orleans,Hickok & Peters Unknown,"New Orleans, LA",LA,3/6/1857,0.00602698,F,Nancy,1,0,1,Cash,0.07477,600.0,1,New Orleans,Miles Judson,"New Orleans, LA",LA,Negro
+25.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,3/9/1857,0.00602698,F,Chancy,1,0,1,Cash,0.07477,360.0,1,Madison,George C. Waddill,"Madison, LA",LA,Negro
+34.0,New Orleans,Paul E. Motiner,"New Orleans, LA",LA,3/7/1857,0.00602698,F,Adeline,1,0,1,Cash,0.07477,850.0,1,New Orleans,Robert Spence,"New Orleans, LA",LA,Negro
+12.0,Carroll,James C. Drew,"Carroll, LA",LA,1/10/1857,0.00602698,F,Margaret,1,0,1,Cash,0.07477,750.0,1,Montgomery,Horatio Gates Harbin,"Montgomery, AL",AL,Negro
+19.0,East Baton Rouge,Fergus Peniston,"East Baton Rouge, LA",LA,3/7/1857,0.00602698,M,Joseph/ Tom,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Alexandrine Barbe Rousseve,"New Orleans, LA",LA,Mulatto
+23.0,New Orleans,Jennie Smith Bulton,"New Orleans, LA",LA,3/7/1857,0.00602698,F,Mary,1,0,1,Cash,0.07477,1250.0,1,New Orleans,John Hampden Lewis,"New Orleans, LA",LA,Negro
+23.0,San Antonio,John C. French,"San Antonio, TX",TX,3/3/1857,0.00602698,F,Lena,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Hannah H. Moore,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Gustave Bredow,"New Orleans, LA",LA,3/5/1857,0.00602698,M,Charles,1,0,1,Cash,0.07477,875.0,1,Madison,Patrick H. Hays,"Madison, TX",TX,Negro
+23.0,New Orleans,Gustave Bredow,"New Orleans, LA",LA,3/5/1857,0.00602698,M,Jackson,1,0,1,Cash,0.07477,1300.0,1,New Orleans,John Pasley,"New Orleans, LA",LA,Negro
+23.0,New Orleans,Gustave Bredow,"New Orleans, LA",LA,3/10/1857,0.00602698,M,George,1,0,1,Cash,0.07477,1250.0,1,Hamden,"James, Robert E.  Vaughan, Arrington","Hamden, TX",TX,Negro
+13.0,New Orleans,Gustave Fortier,"New Orleans, LA",LA,2/26/1857,0.00587886,M,Bernard,1,0,1,Cash and Credit,0.07287264,650.0,1,New Orleans,Jeanne Felicianne Jorda Forneret,"New Orleans, LA",LA,Unknown
+25.0,New Orleans,Raymond Arduille,"New Orleans, LA",LA,3/3/1857,0.00602698,F,Lilia,1,1,2,Cash,0.07477,770.0,1,New Orleans,Josephine DelaRosa Trigo,"New Orleans, LA",LA,Unknown
+38.0,New Orleans,Azzo Louis Plough,"New Orleans, LA",LA,3/10/1857,0.00623018,M,Charles,2,6,8,Cash and Credit,0.07737792,6100.0,1,Assumption,Andrew Jackson Johns,"Assumption, LA",LA,Unknown
+10.0,New Orleans,Felide Charbonnet de Gruy,"New Orleans, LA",LA,3/9/1857,0.00602698,F,Nelly,3,0,3,Donation,0.07477,500.0,3,New Orleans,Belouise Amand Charbonnet,"New Orleans, LA",LA,Negro
+14.0,New Orleans,Ernest Puech,"New Orleans, LA",LA,3/10/1857,0.00602698,F,Matilda,1,0,1,Cash,0.07477,800.0,1,New Orleans,Louis Lombard,"New Orleans, LA",LA,Negro
+48.0,New Orleans,Joaquim Viosca,"New Orleans, LA",LA,3/10/1857,0.00602698,F,Rosette,1,0,1,Cash,0.07477,320.0,1,New Orleans,Jerome Merlin,"New Orleans, LA",LA,Mulatto
+31.0,New Orleans,Gustave Pierre Blancand,"New Orleans, LA",LA,3/9/1857,0.00587886,F,Henriette,1,2,3,Cash and Credit,0.07287264,1625.0,1,St. Bernard,Augustine Adele Reaud Ducros,"St. Bernard, LA",LA,Negro
+14.0,New Orleans,Marcelin Gillis,"New Orleans, LA",LA,2/26/1857,0.006202525,F,Cibby,1,0,1,Credit,0.07702264,1100.0,1,New Orleans,Wiley J. Martin,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Marcelin Gillis,"New Orleans, LA",LA,2/2/1857,0.006217138,M,Bill,7,1,8,Credit,0.07721036,1400.0,5,Unknown,John Ruckner White,"Unknown, MO",MO,Negro
+28.0,New Orleans,Edward Nalle,"New Orleans, LA",LA,3/10/1857,0.00602698,M,William Holiday,1,0,1,Cash,0.07477,1050.0,1,New Orleans,Alfred Dahlstwem,"New Orleans, LA",LA,Griff
+37.0,New Orleans,Jean Jacques Montfort,"New Orleans, LA",LA,2/28/1857,0.0,F,Melie,2,2,4,Credit,0.0,0.0,1,New Orleans,Charles Emanuel Lomine,"New Orleans, LA",LA,Negro
+25.0,New Orleans,Adele Arduille,"New Orleans, LA",LA,3/7/1857,0.00602698,F,Lilia,1,1,2,Donation,0.07477,770.0,1,New Orleans,Raymond Arduille,"New Orleans, LA",LA,Negro
+12.0,New Orleans,Samuel Jameson,"New Orleans, LA",LA,3/11/1857,0.00602698,M,William/ Bill,1,0,1,Cash,0.07477,900.0,1,Unknown,Samuel Redick Bridgers,"Unknown, MS",MS,Negro
+33.0,New Orleans,William Mc Cracken,"New Orleans, LA",LA,3/7/1857,0.00602698,F,Ellen,1,2,3,Cash,0.07477,1200.0,1,New Orleans,Richard D. Scofield,"New Orleans, LA",LA,Negro
+15.0,New Orleans,Charles G. Hatcher,"New Orleans, LA",LA,3/4/1857,0.00602698,M,Austin,1,0,1,Cash,0.07477,1000.0,1,Green,Philip B. Minor,"Green, AL",AL,Negro
+22.0,Washington,Michael C. Mixon,"Washington, LA",LA,1/14/1857,0.00602698,F,Jane,1,1,2,Cash,0.07477,1000.0,1,East Baton Rouge,George W. Dearing,"East Baton Rouge, LA",LA,Negro
+25.0,New Orleans,William Glover Austin,"New Orleans, LA",LA,3/11/1857,0.006070898,F,Mary Jane,1,0,1,Credit,0.07533316,575.0,1,New Orleans,Cornelius Bicknell Payne,"New Orleans, LA",LA,Griff
+32.0,New Orleans,Micajah Harris Jr.,"New Orleans, LA",LA,3/13/1857,0.00602698,F,Patsy,1,2,3,Cash,0.07477,2025.0,1,New Orleans,Solomon L. Levy,"New Orleans, LA",LA,Negro
+20.0,Plaquemines,John Doleze,"Plaquemines, LA",LA,2/7/1857,0.00587886,F,Lizzy,1,1,2,Cash and Credit,0.07287264,950.0,1,New Orleans,Pierre Pinaud,"New Orleans, LA",LA,Negro
+38.0,New Orleans,"Julie,  Justine Torres Torres, Deberque","New Orleans, LA",LA,3/6/1857,0.00602698,F,Marie Louise,1,2,3,Cash,0.07477,1900.0,1,New Orleans,Rosalie Torres Decoudreaux,"New Orleans, LA",LA,Negro
+17.0,Franklin,John Williams,"Franklin, LA",LA,3/14/1857,0.006202525,F,Lucy Jane Underwood,1,0,1,Credit,0.07702264,1350.0,1,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+36.0,New Orleans,Lilla Benjamin,"New Orleans, LA",LA,3/14/1857,0.00602698,F,Therese,1,1,2,Donation,0.07477,1100.0,1,New Orleans,Elias Wolf,"New Orleans, LA",LA,Negro
+34.0,Pointe Coupee,Ferdinand L. Claiborne,"Pointe Coupee, LA",LA,2/28/1857,0.00602698,F,Eliza,1,0,1,Cash,0.07477,900.0,1,New Orleans,Cornelius W. Ryans,"New Orleans, LA",LA,Griff
+18.0,New Orleans,Dexter G. Hitchcock,"New Orleans, LA",LA,3/7/1857,0.00602698,M,Matthew,1,0,1,Cash,0.07477,325.0,1,Urbana,David Watson Sowles,"Urbana, OH",OH,Mulatto
+39.0,New Orleans,Jacques Combe,"New Orleans, LA",LA,12/31/1857,0.00602698,F,Mathilda,1,0,1,Cash,0.07477,400.0,1,New Orleans,Felix Jean Forstall,"New Orleans, LA",LA,Negro
+23.0,Unknown,Emma Faber Brown,"Unknown, Unknown",Unknown,3/16/1857,0.00602698,F,Minta,1,0,1,Cash,0.07477,1000.0,1,Franklin,S. W. Greenwell,"Franklin, LA",LA,Negro
+27.0,New Orleans,Micajah Harris Jr.,"New Orleans, LA",LA,3/9/1857,0.00602698,F,Elizabeth,1,0,1,Cash,0.07477,790.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+40.0,New Orleans,David Resolve Godwin,"New Orleans, LA",LA,3/12/1857,0.00602698,F,Susan,1,0,1,Cash,0.07477,400.0,1,New Orleans,Lewis Bellow,"New Orleans, LA",LA,Griff
+19.0,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,3/6/1857,0.00602698,F,Hiacinthe,1,0,1,Cash,0.07477,800.0,1,New Orleans,Belzire Forstall Canonge,"New Orleans, LA",LA,Negro
+12.0,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,3/10/1857,0.00602698,F,Mary,1,0,1,Cash,0.07477,700.0,1,New Orleans,Etienne Villavaso,"New Orleans, LA",LA,Negro
+17.0,Tuscaloosa,James Fredell Long,"Tuscaloosa, AL",AL,3/16/1857,0.00602698,F,Merinda,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Josephine Bundy Font,"New Orleans, LA",LA,Griff
+45.0,New Orleans,Juliet Ann McCarty Palmer,"New Orleans, LA",LA,3/10/1857,0.00602698,F,Nancy,1,0,1,Cash,0.07477,350.0,1,Concordia,Allen Dunbar Ratcliff,"Concordia, LA",LA,Negro
+25.0,St. Landry,Felix Guiberteau,"St. Landry, LA",LA,3/17/1857,0.00602698,M,Nelson Bealle,2,0,2,Cash,0.07477,1450.0,2,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+38.0,New Orleans,Samuel F. Hare,"New Orleans, LA",LA,2/28/1857,0.00602698,F,Mary,1,2,3,Cash,0.07477,1500.0,1,Memphis,Francis H. Williams,"Memphis, TN",TN,Negro
+24.0,Carroll,Thomas Mershon,"Carroll, LA",LA,3/11/1857,0.00602698,M,George,1,0,1,Cash,0.07477,1200.0,1,New Orleans,James R. Peters,"New Orleans, LA",LA,Griff
+13.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,3/17/1857,0.00602698,M,Dave,2,0,2,Cash,0.07477,1600.0,1,Americus,H. H. Brown,"Americus, GA",GA,Negro
+20.0,Carroll,Thomas Mershon,"Carroll, LA",LA,2/11/1857,0.00602698,F,Hannah,1,0,1,Cash,0.07477,1200.0,1,Montgomery,Horatio Gates Harbin,"Montgomery, AL",AL,Dark Griff
+22.0,Avoyelles,James Bowdin,"Avoyelles, LA",LA,1/10/1857,0.00602698,M,John,2,1,3,Cash,0.07477,1300.0,2,Montgomery,Horatio Gates Harbin,"Montgomery, AL",AL,Griff
+28.0,Livingston,Gustave Bredow,"Livingston, LA",LA,3/5/1857,0.00602698,M,Davy,2,1,3,Cash,0.07477,1600.0,2,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+20.0,Livingston,Gustave Bredow,"Livingston, LA",LA,3/7/1857,0.00602698,F,Grace,1,0,1,Cash,0.07477,1200.0,1,New Orleans,John Caldwell Jr.,"New Orleans, LA",LA,Negro
+22.0,Jefferson,Francis Dugue Jr.,"Jefferson, LA",LA,3/10/1857,0.00602698,M,Frank,1,0,1,Cash,0.07477,1275.0,1,Mobile,James A. McIlhany,"Mobile, AL",AL,Mulatto
+22.0,New Orleans,Theodore Buddecke,"New Orleans, LA",LA,3/12/1857,0.00602698,F,Helene,1,0,1,Cash,0.07477,1290.0,1,New Orleans,Octave Morel,"New Orleans, LA",LA,Negro
+43.0,New Orleans,Joaquin Armand Gueringer,"New Orleans, LA",LA,3/16/1857,0.00587886,F,Charlotte,1,0,1,Cash and Credit,0.07287264,1025.0,1,New Orleans,"Michel Joseph, Charles Edouard, Louis Armand Lombard, Forstall, Garidel","New Orleans, LA",LA,Negro
+25.0,Lafourche,Leonard Lasseigne,"Lafourche, LA",LA,3/16/1857,0.00587886,M,Richard,2,0,2,Cash and Credit,0.07287264,2275.0,1,New Orleans,"Michel Joseph, Charles Edward, Louis Armand Lombard, Forstall, Gadriel","New Orleans, LA",LA,Negro
+34.0,New Orleans,"Louis Arthur, Gustave Poincy, Labatier","New Orleans, LA",LA,3/16/1857,0.00587886,M,Auguste,1,0,1,Cash and Credit,0.07287264,700.0,1,New Orleans,"Michel Joseph, Charles Edward, Louis Armand Lombard, Forstall, Gadriel","New Orleans, LA",LA,Negro
+7.0,New Orleans,Pierre Lefebre,"New Orleans, LA",LA,3/10/1857,0.00602698,M,Adolphe,1,0,1,Cash,0.07477,517.0,1,Unknown,Jean Jacques Haydel,"Unknown, Unknown",Unknown,Negro
+19.0,New Orleans,Joseph Simon,"New Orleans, LA",LA,3/18/1857,0.00602698,F,Josephine,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Marie P. Colin,"New Orleans, LA",LA,Mulatto
+28.0,New Orleans,Gavino Ledda,"New Orleans, LA",LA,3/14/1857,0.00587886,M,Jean,1,0,1,Cash and Credit,0.07287264,1000.0,1,New Orleans,Francois Alexandre Bigourdan,"New Orleans, LA",LA,Negro
+40.0,New Orleans,Gustave Valiche,"New Orleans, LA",LA,3/16/1857,0.00587886,F,Julienne,1,1,2,Cash and Credit,0.07287264,1250.0,1,New Orleans,Louis Caretta,"New Orleans, LA",LA,Negro
+14.0,Jefferson,Jean Baptiste Drouet,"Jefferson, LA",LA,3/18/1857,0.00587886,F,Laura,1,0,1,Cash and Credit,0.07287264,960.0,1,New Orleans,Michel Joseph Lombard,"New Orleans, LA",LA,Mulatto
+37.0,New Orleans,David Resolve Godwin,"New Orleans, LA",LA,3/4/1857,0.00602698,F,Leagh,1,0,1,Cash,0.07477,805.0,1,Jefferson,Marie Louise Dusuau Arnoult,"Jefferson, LA",LA,Negro
+20.0,New Orleans,John B. Womack,"New Orleans, LA",LA,3/17/1857,0.00602698,F,Delphie,1,0,1,Cash,0.07477,900.0,1,Plaquemines,Edward Hughes Villere,"Plaquemines, LA",LA,Negro
+28.0,St. Charles,Alberic Duplantier,"St. Charles, LA",LA,3/16/1857,0.00602698,M,Leroy Young,1,0,1,Cash,0.07477,1450.0,1,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+16.0,Ouachita,Robert Dixon,"Ouachita, LA",LA,3/14/1857,0.00587886,F,Elzabeth Broach,1,0,1,Cash and Credit,0.07287264,1356.0,1,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+31.0,New Orleans,E. Reggio,"New Orleans, LA",LA,3/18/1857,0.00602698,F,Elizabeth,1,0,1,Cash,0.07477,1000.0,1,Pensacola,Marie Mestre,"Pensacola, FL",FL,Negro
+11.0,Ascension,Leon Dugas,"Ascension, LA",LA,3/20/1857,0.00602698,F,Hersillia,1,0,1,Cash,0.07477,450.0,1,Ascension,Germain Babin,"Ascension, LA",LA,Mulatto
+27.0,Jefferson,Phillippe Pousargues,"Jefferson, LA",LA,3/20/1857,0.00602698,M,Newton/ Newton Benton,1,0,1,Cash,0.07477,1350.0,1,Unknown,Alexander Gordon,"Unknown, Unknown",Unknown,Unknown
+31.0,New Orleans,Marie Croquin,"New Orleans, LA",LA,3/2/1857,0.00602698,F,Annette,2,3,5,Cash,0.07477,2400.0,1,Pointe Coupee,Joseph Francois Lapice,"Pointe Coupee, LA",LA,Negro
+45.0,New Orleans,Marie Elizabeth Bertrand Sauvage,"New Orleans, LA",LA,3/7/1857,0.00602698,F,Fanny,1,0,1,Cash,0.07477,345.0,1,New Orleans,Joseph Francois Lapice,"New Orleans, LA",LA,Mulatto
+14.0,New Orleans,John B. Womack,"New Orleans, LA",LA,3/7/1857,0.00602698,F,Rosetta,1,0,1,Cash,0.07477,890.0,1,Pointe Coupee,Joseph Francois Lapice,"Pointe Coupee, LA",LA,Negro
+26.0,New Orleans,Cyprien Lorio,"New Orleans, LA",LA,3/18/1857,0.006202525,F,Celine,1,3,4,Credit,0.07702264,1565.0,1,New Orleans,Victoire Hotard Lorio,"New Orleans, LA",LA,Mulatto
+16.0,New Orleans,John M. Sturdevant,"New Orleans, LA",LA,3/25/1857,0.00602698,F,Caroline,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Mary Ellen Williams Benedict,"New Orleans, LA",LA,Negro
+50.0,New Orleans,James E. Sutton,"New Orleans, LA",LA,3/28/1857,0.00602698,F,Sidney,1,0,1,Cash,0.07477,300.0,1,New Orleans,Joseph Omedas,"New Orleans, LA",LA,Negro
+44.0,New Orleans,Francois Adolphe D'Aquin,"New Orleans, LA",LA,3/28/1857,0.00602698,F,Aimee,1,3,4,Cash,0.07477,2000.0,1,Unknown,Antoine Cuille,"Unknown, Unknown",Unknown,Mulatto
+30.0,Tensas,Jane Kempe Girault,"Tensas, LA",LA,3/17/1857,0.00602698,M,Beebe/ Francois,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Joseph William Boyle,"New Orleans, LA",LA,Mulatto
+45.0,New Orleans,Louis Chevalier Jumonville,"New Orleans, LA",LA,3/30/1857,0.00602698,M,Henry,1,0,1,Cash,0.07477,150.0,1,New Orleans,Louis Chevalier Jumonville,"New Orleans, LA",LA,Unknown
+27.0,New Orleans,Josephine Arcadia Fleitas,"New Orleans, LA",LA,3/30/1857,0.00602698,F,Pauline,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Raynal Auguste,"New Orleans, LA",LA,Negro
+42.0,New Orleans,Antonio Costa,"New Orleans, LA",LA,3/30/1857,0.005717386,F,Harriett,1,0,1,Cash and Credit,0.07080772,400.0,1,Unknown,Katy Green,"Unknown, Unknown",Unknown,Negro
+22.0,St. Charles,Mayronne Brothers Unknown,"St. Charles, LA",LA,3/30/1857,0.00602698,M,Aaron,3,0,3,Cash,0.07477,1575.0,3,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+38.0,New Orleans,Hortense Bertus Fermor,"New Orleans, LA",LA,3/24/1857,0.00602698,F,Phoebe,1,0,1,Cash,0.07477,450.0,1,New Orleans,Joseph Aristide Baquie,"New Orleans, LA",LA,Negro
+18.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,3/28/1857,0.00602698,F,Nancy,1,0,1,Cash,0.07477,1100.0,1,Ouachita,James M. Lupo,"Ouachita, LA",LA,Unknown
+12.0,New Orleans,Alfred Kearny,"New Orleans, LA",LA,3/27/1857,0.00602698,F,Lizzy,1,0,1,Cash,0.07477,980.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+50.0,New Orleans,Giovanni Luciana,"New Orleans, LA",LA,2/5/1857,0.00602698,M,Michel,1,0,1,Cash,0.07477,400.0,1,St. Bernard,Charles Fierville Bienvenu,"St. Bernard, LA",LA,Negro
+21.0,Unknown,Juan Ygnacio de Egana,"Unknown, Unknown",Unknown,2/28/1857,0.00587886,M,John,1,0,1,Cash and Credit,0.07287264,1690.0,1,St. Bernard,Charles Fierville Bienvenu,"St. Bernard, LA",LA,Negro
+36.0,New Orleans,Benjamin Rodriguez,"New Orleans, LA",LA,3/25/1857,0.006202525,F,Louisa,1,1,2,Credit,0.07702264,1000.0,1,New Orleans,Eugenie Savage Geytel,"New Orleans, LA",LA,Negro
+12.0,New Orleans,James Powers,"New Orleans, LA",LA,3/25/1857,0.00602698,F,Priscilla,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Robert Spence,"New Orleans, LA",LA,Griff
+24.0,New Orleans,John Pasley,"New Orleans, LA",LA,3/26/1857,0.00602698,M,Peter Morris,1,0,1,Cash,0.07477,1350.0,1,New Orleans,Andre Francois Valls,"New Orleans, LA",LA,Negro
+24.0,New Orleans,Potthorff & Knight Unknown,"New Orleans, LA",LA,3/27/1857,0.006173291,F,Maria,1,1,2,Credit,0.0766472,1450.0,1,New Orleans,Jonathan Means Wilson,"New Orleans, LA",LA,Negro
+40.0,New Orleans,Simon Newburger,"New Orleans, LA",LA,3/25/1857,0.00602698,F,Sophia Aaron,1,0,1,Cash,0.07477,500.0,1,New Orleans,Thomas Fellows,"New Orleans, LA",LA,Negro
+33.0,New Orleans,Tudury & Co. Unknown,"New Orleans, LA",LA,3/3/1857,0.00602698,M,Marcel,1,0,1,Cash,0.07477,1300.0,1,New Orleans,Jean Llambias,"New Orleans, LA",LA,Negro
+25.0,New Orleans,Auguste Ferrier,"New Orleans, LA",LA,3/9/1857,0.00602698,M,John,1,0,1,Cash,0.07477,1400.0,1,East Baton Rouge,Pierre Verbois,"East Baton Rouge, LA",LA,Negro
+28.0,Plaquemines,Celestin Oscande,"Plaquemines, LA",LA,3/28/1857,0.00602698,F,Suzan,1,2,3,Cash,0.07477,1200.0,1,New Orleans,Benjamin Screws,"New Orleans, LA",LA,Negro
+38.0,New Orleans,Emily Sarah Oliver,"New Orleans, LA",LA,3/25/1857,0.00602698,F,Myrthe,1,2,3,Cash,0.07477,1400.0,1,New Orleans,Adele Vitrac,"New Orleans, LA",LA,Negro
+23.0,New Orleans,John Ochiglevich,"New Orleans, LA",LA,3/25/1857,0.00602698,M,Edwin,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Margaret Suzannah McArthur,"New Orleans, LA",LA,Negro
+27.0,Louisville,Joseph Lyman Peynolds,"Louisville, KY",KY,4/2/1857,0.00602698,F,Eliza,2,0,2,Cash,0.07477,2000.0,1,New Orleans,Henry Kerby,"New Orleans, LA",LA,Negro
+40.0,New Orleans,Susanna Dickinson,"New Orleans, LA",LA,3/24/1857,0.00602698,F,Susan,1,0,1,Cash,0.07477,700.0,1,New Orleans,David Resolve Godwin,"New Orleans, LA",LA,Negro
+38.0,New Orleans,David Resolve Godwin,"New Orleans, LA",LA,3/24/1857,0.00602698,F,Sophia,1,0,1,Cash,0.07477,600.0,1,New Orleans,Susana Dickenson,"New Orleans, LA",LA,Negro
+18.0,New Orleans,Mary Ann Williams Benedict,"New Orleans, LA",LA,4/1/1857,0.00602698,F,Ann Eliza,1,0,1,Cash,0.07477,1200.0,1,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+21.0,New Orleans,George Cleveland,"New Orleans, LA",LA,4/1/1857,0.00602698,F,Mary,1,1,2,Cash,0.07477,1150.0,1,New Orleans,James Martin,"New Orleans, LA",LA,Mulatto
+19.0,New Orleans,Charles D. Yancey,"New Orleans, LA",LA,4/3/1857,0.00602698,M,Milton,1,0,1,Cash,0.07477,1300.0,1,Barren,Samuel Shelton Farris,"Barren, KY",KY,Griff
+26.0,New Orleans,D. B. Spencer,"New Orleans, LA",LA,3/31/1857,0.00602698,M,Alick,1,0,1,Cash,0.07477,1400.0,1,Bossier,James W. Vance,"Bossier, LA",LA,Negro
+28.0,New Orleans,Byron M. Pond,"New Orleans, LA",LA,4/3/1857,0.00602698,M,Jim,1,0,1,Cash,0.07477,1200.0,1,New Orleans,John H. Carter,"New Orleans, LA",LA,Negro
+29.0,New Orleans,Milton Reigart,"New Orleans, LA",LA,2/28/1857,0.00602698,F,Henrietta,1,0,1,Cash,0.07477,900.0,1,New Orleans,Jean Dubos,"New Orleans, LA",LA,Griff
+18.0,Natchitoches,Terrence Chaler,"Natchitoches, LA",LA,4/3/1857,0.00602698,F,Fanny,3,0,3,"Exchange, Cash",0.07477,1150.0,3,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+17.0,Richmond,Jeremiah Smith,"Richmond, VA",VA,4/3/1857,0.00602698,F,India,1,0,1,"Exchange, Cash",0.07477,1150.0,1,Natchitoches,Terence Chaler,"Natchitoches, LA",LA,Griff
+22.0,New Orleans,James  Phillips,"New Orleans, LA",LA,3/1/1856,0.00602698,M,Dan,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Adolphe  Boulanger,"New Orleans, LA",LA,Negro
+11.0,New Orleans,Mary Ann Williams,"New Orleans, LA",LA,3/28/1856,0.00602698,M,William Harrison,1,0,1,Cash,0.07477,11.0,1,New Orleans,William B. Phillips,"New Orleans, LA",LA,Negro
+29.0,New Orleans,Francis Masich,"New Orleans, LA",LA,3/28/1856,0.005790818,F,Marthe,1,1,2,Cash and Credit,0.07174632,1300.0,1,New Orleans,Antoine Cuille,"New Orleans, LA",LA,Mulatto
+20.0,St. Charles,Similien Lebranche,"St. Charles, LA",LA,3/28/1856,0.00602698,F,Dianah,1,0,1,Cash,0.07477,1300.0,1,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+32.0,Ascension,John  Chastant,"Ascension, LA",LA,3/24/1856,0.00602698,M,Loquie,1,0,1,Cash,0.07477,1600.0,1,Assumption,Leonel le Blanc,"Assumption, LA",LA,Negro
+30.0,New Orleans,Marie Jeanne Amande Guique,"New Orleans, LA",LA,11/12/1853,0.00602698,F,Marthe,1,0,1,Cash,0.07477,1040.0,1,New Orleans,Louise Caffin,"New Orleans, LA",LA,Negro
+45.0,New Orleans,Orestine Dordal,"New Orleans, LA",LA,3/19/1856,0.00587886,M,Thom,1,0,1,Cash and Credit,0.07287264,500.0,1,New Orleans,"Pierre ""La fleur"" Mallard","New Orleans, LA",LA,Negro
+33.0,New Orleans,Elizabeth Jones,"New Orleans, LA",LA,4/1/1856,0.00602698,F,Hannah,1,1,2,Cash,0.07477,800.0,1,Iberville,Mary Ann Bennett,"Iberville, LA",LA,Negro
+50.0,Ouachita,Charles W. Phillips,"Ouachita, LA",LA,3/28/1856,0.00602698,F,Patsey,6,0,6,Cash,0.07477,300.0,6,Chester,Alexander Q.  Dunovant,"Chester, SC",SC,Negro
+23.0,Assumption,Henry Landry,"Assumption, LA",LA,4/3/1856,0.00602698,F,Caroline Chapman,3,0,3,"Exchange, Cash",0.07477,1200.0,3,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+23.0,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,4/3/1856,0.00602698,M,Dick,2,0,2,"Exchange, Cash",0.07477,1500.0,2,Assumption,Henry Landry,"Assumption, LA",LA,Negro
+21.0,New Orleans,George W. Siger,"New Orleans, LA",LA,4/4/1856,0.00602698,M,John,1,0,1,Cash,0.07477,1100.0,1,Harrison,Montreville J. Hale,"Harrison, TX",TX,Mulatto
+17.0,New Orleans,James Winchester Breedlove,"New Orleans, LA",LA,3/28/1856,0.00602698,F,Coney/ Sally,1,0,1,Cash,0.07477,910.0,1,Baltimore,Catherine J. Hoffman,"Baltimore, MD",MD,Negro
+16.0,Natchitoches,Terrence Chaler,"Natchitoches, LA",LA,4/4/1856,0.00602698,F,India,1,0,1,Cash,0.07477,1150.0,1,Richmond,Jeremiah Smith,"Richmond, VA",VA,Griff
+12.0,New Orleans,Irene Gomez,"New Orleans, LA",LA,4/4/1856,0.006202525,F,Charlotte,1,0,1,Credit,0.07702264,600.0,1,New Orleans,Jonathan Means Wilson,"New Orleans, LA",LA,Griff
+40.0,New Orleans,Ursin Dellande,"New Orleans, LA",LA,4/4/1856,0.00602698,F,Phiby,1,0,1,Cash,0.07477,300.0,1,Unknown,Louise Willemina le Blanc,"Unknown, MS",MS,Negro
+51.0,New Orleans,"Eugene, Pierre Villarceaux Macarty Jr., Macarty","New Orleans, LA",LA,3/31/1856,0.00587886,M,Louis,2,1,3,Cash and Credit,0.07287264,250.0,2,Unknown,Heirs of Theodule Macarty Unknown,"Unknown, Unknown",Unknown,Negro
+19.0,Lafourche,Evariste Lepene,"Lafourche, LA",LA,4/5/1856,0.00602698,M,Charles Henry Poindexter,1,0,1,"Exchange, Cash",0.07477,1400.0,1,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+16.0,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,4/5/1856,0.00602698,M,John,1,0,1,"Exchange, Cash",0.07477,1300.0,1,Lafourche,Evariste Lepene,"Lafourche, LA",LA,Negro
+38.0,New Orleans,Poupone Colin,"New Orleans, LA",LA,4/5/1856,0.00602698,F,Adele,1,3,4,Cash,0.07477,1100.0,1,New Orleans,"Barthelemy, Rose Saison Amand","New Orleans, LA",LA,Negro
+55.0,New Orleans,Auguste Frederick Weber,"New Orleans, LA",LA,3/29/1856,0.00587886,F,Rachael,2,0,2,Cash and Credit,0.07287264,95.0,2,Unknown,Heirs of Theodule Macarty Unknown,"Unknown, Unknown",Unknown,Negro
+19.0,Jefferson,Emanuel Lamiche le Breton Deschapelles,"Jefferson, LA",LA,4/2/1856,0.00602698,F,Frances Sophronia,1,0,1,Cash,0.07477,1400.0,1,New Orleans,Alexander Hagan,"New Orleans, LA",LA,Mulatto
+14.0,New Orleans,Bernard Kendig,"New Orleans, LA",LA,3/21/1856,0.00602698,F,Marie/ Marguerite,1,0,1,Cash,0.07477,800.0,1,New Orleans,Mary Elizabeth  Hale,"New Orleans, LA",LA,Dark Griff
+38.0,Unknown,William Bogs Cook,"Unknown, Unknown",Unknown,3/20/1856,0.00602698,M,Rubin,2,0,2,Cash and Credit,0.07477,900.0,1,New Orleans,Joseph Moorehouse,"New Orleans, LA",LA,Negro
+35.0,New Orleans,Bernard Kendig,"New Orleans, LA",LA,4/8/1856,0.00602698,F,Elsey,1,1,2,Cash,0.07477,1000.0,1,East Baton Rouge,"Ann L., Mary E. A. Kirkland","East Baton Rouge, LA",LA,Negro
+27.0,New Orleans,David Resolve Godwin,"New Orleans, LA",LA,4/5/1856,0.006202525,M,Anthony,1,0,1,Credit,0.07702264,1631.75,1,Clarksville,Henry Rhine,"Clarksville, TX",TX,Negro
+14.0,New Orleans,Sophia Anastasia Neale,"New Orleans, LA",LA,4/8/1856,0.00602698,M,Lemuel,1,0,1,Cash,0.07477,800.0,1,East Baton Rouge,Mary E. A. Kirkland,"East Baton Rouge, LA",LA,Negro
+14.0,New Orleans,Joseph Amat,"New Orleans, LA",LA,4/8/1856,0.00602698,M,Henry Everfield,1,0,1,Donation,0.07477,750.0,1,New Orleans,Jean Amat,"New Orleans, LA",LA,Negro
+27.0,New Orleans,John H. Carter,"New Orleans, LA",LA,3/29/1856,0.00587886,M,Jim,1,0,1,Cash and Credit,0.07287264,1200.0,1,New Orleans,Louisa  Dufour,"New Orleans, LA",LA,Negro
+16.0,New Orleans,Isabelle Mouchon,"New Orleans, LA",LA,3/28/1856,0.00602698,M,Maximilian,1,0,1,Cash,0.07477,666.67,1,New Orleans,Benjamin Mouchon,"New Orleans, LA",LA,Negro
+37.0,New Orleans,Elizabeth Virginie Coignard,"New Orleans, LA",LA,4/7/1856,0.00602698,F,Violette,1,0,1,Cash,0.07477,800.0,1,New Orleans,Pierre Charles Cuvellier,"New Orleans, LA",LA,Negro
+16.0,New Orleans,John Augustin Fryer,"New Orleans, LA",LA,4/8/1856,0.00602698,F,Josephine,2,0,2,Cash,0.07477,1000.0,1,New Orleans,Francoise Louise Eleanor Schoninger,"New Orleans, LA",LA,Mulatto
+40.0,New Orleans,Desiree Montreuil,"New Orleans, LA",LA,4/8/1856,0.00602698,F,Adele,1,1,2,Cash,0.07477,900.0,1,New Orleans,Charlotte Levy,"New Orleans, LA",LA,Mulatto
+44.0,New Orleans,Josephine Delarosa,"New Orleans, LA",LA,4/10/1856,0.00602698,F,Azelie,1,1,2,Cash,0.07477,1250.0,1,New Orleans,Jose  Delarosa,"New Orleans, LA",LA,Mulatto
+23.0,New Orleans,Euphrosine  Sarde,"New Orleans, LA",LA,4/8/1856,0.00602698,F,Rachael Culver,2,0,2,Cash,0.07477,1050.0,2,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+4.0,New Orleans,Catherine Davis,"New Orleans, LA",LA,4/8/1856,0.00602698,M,William,1,0,1,Cash,0.07477,150.0,1,New Orleans,Fanny Palfrey,"New Orleans, LA",LA,Negro
+45.0,New Orleans,Catherine Hazeur,"New Orleans, LA",LA,4/8/1856,0.00602698,F,Henriette,1,0,1,Donation,0.07477,300.0,1,New Orleans,Mathilde  Many,"New Orleans, LA",LA,Negro
+41.0,New Orleans,Nancy  Van Ostern,"New Orleans, LA",LA,4/8/1856,0.00602698,M,Sam,1,0,1,Cash,0.07477,748.0,1,Unknown,"Francois Bizoton (late), Edward, Louis Lambert D'Aquin, Montegut, Bown","Unknown, Unknown",Unknown,Negro
+27.0,New Orleans,Victorine Therese Nancy Vernies,"New Orleans, LA",LA,4/8/1856,0.00623018,M,Adams,2,0,2,Cash and Credit,0.07737792,1275.0,2,Unknown,"Francois Bizoton (late), Edward, Louis Lambert D'Aquin, Montegut, Bown","Unknown, Unknown",Unknown,Negro
+43.0,New Orleans,F. Correge & Co. Unknown,"New Orleans, LA",LA,4/8/1856,0.00623018,M,Antoine,1,0,1,Cash and Credit,0.07737792,1350.0,1,Unknown,"Francois Bizoton (late), Edward, Louis Lambert D'Aquin, Montegut, Bown","Unknown, Unknown",Unknown,Negro
+43.0,New Orleans,Melchior  Michell,"New Orleans, LA",LA,4/8/1856,0.00623018,M,Brown,4,0,4,Cash and Credit,0.07737792,1240.0,4,Unknown,"Francois Bizoton (late), Edward, Louis Lambert D'Aquin, Montegut, Bown","Unknown, Unknown",Unknown,Negro
+39.0,New Orleans,Daniel Phillips,"New Orleans, LA",LA,4/8/1856,0.00623018,M,Charles,1,0,1,Cash and Credit,0.07737792,600.0,1,Unknown,"Francois Bizoton (late), Edward, Louis Lambert D'Aquin, Montegut, Bown","Unknown, Unknown",Unknown,Negro
+32.0,New Orleans,Hippolyte Boyer,"New Orleans, LA",LA,4/8/1856,0.00623018,M,Robert,1,0,1,Cash and Credit,0.07737792,1275.0,1,Unknown,"Francois Bizoton (late), Edward, Louis Lambert D'Aquin, Montegut, Bown","Unknown, Unknown",Unknown,Negro
+48.0,New Orleans,Evelina Dupuny,"New Orleans, LA",LA,4/8/1856,0.00623018,F,Nancy,1,0,1,Cash and Credit,0.07737792,325.0,1,Unknown,"Francois Bizoton (late), Edward, Louis Lambert D'Aquin, Montegut, Bown","Unknown, Unknown",Unknown,Mulatto
+31.0,New Orleans,Hippolyte Boyer,"New Orleans, LA",LA,4/8/1856,0.00623018,M,Andry,1,0,1,Cash and Credit,0.07737792,1540.0,1,Unknown,"Francois Bizoton (late), Edward, Louis Lambert D'Aquin, Montegut, Bown","Unknown, Unknown",Unknown,Negro
+33.0,New Orleans,Sophia Anastasia Napp,"New Orleans, LA",LA,4/8/1856,0.00623018,M,Monroe,3,0,3,Cash and Credit,0.07737792,1325.0,3,Unknown,"Francois Bizoton (late), Edward, Louis Lambert D'Aquin, Montegut, Bown","Unknown, Unknown",Unknown,Negro
+18.0,New Orleans,James C. Egan,"New Orleans, LA",LA,2/13/1856,0.005864192,M,Osaiah,1,0,1,Cash and Credit,0.07268492,1300.0,1,Green,William B. Marshall,"Green, KY",KY,Negro
+35.0,New Orleans,Henry Rodriguez,"New Orleans, LA",LA,4/15/1856,0.00623018,M,Bartlett,10,0,10,Cash and Credit,0.07737792,1214.375,1,New Orleans,Louis Lambert Brown,"New Orleans, LA",LA,Mulatto
+16.0,New Orleans,Leonce Boudousquie,"New Orleans, LA",LA,4/16/1856,0.00602698,M,Theophile,1,0,1,Cash,0.07477,460.0,1,New Orleans,Adolphe  Boudousquie,"New Orleans, LA",LA,Mulatto
+70.0,New Orleans,Alexander Makenzie Buchanan,"New Orleans, LA",LA,4/19/1856,0.00587886,M,Etienne,1,0,1,Cash and Credit,0.07287264,16500.0,1,New Orleans,Seraphin Maspereau,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Dominique Bouligny,"New Orleans, LA",LA,4/17/1856,0.00602698,F,Hester,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Jonathan Means Wilson,"New Orleans, LA",LA,Negro
+12.0,New Orleans,Adelaide Gaye,"New Orleans, LA",LA,4/22/1856,0.00602698,F,Louise,1,0,1,Cash,0.07477,425.0,1,New Orleans,Cecile Paillasset,"New Orleans, LA",LA,Negro
+17.0,New Orleans,Ann Bowsher,"New Orleans, LA",LA,4/22/1856,0.00602698,F,Rachael,1,0,1,Cash,0.07477,990.0,1,Hamilton,Jared C. Dent,"Hamilton, TN",TN,Mulatto
+28.0,New Orleans,Ruggles S. Morse,"New Orleans, LA",LA,4/19/1856,0.00602698,F,Henriette,1,0,1,Cash,0.07477,1000.0,1,St. Martin,Sophia Bienvenu,"St. Martin, LA",LA,Negro
+22.0,New Orleans,Lewis Edward Simonds,"New Orleans, LA",LA,4/12/1856,0.00602698,F,Josephine,1,0,1,Cash,0.07477,500.0,1,New Orleans,William W.  Washburn,"New Orleans, LA",LA,Mulatto
+18.0,New Orleans,James Norton & Co. Unknown,"New Orleans, LA",LA,4/19/1856,0.00602698,M,Bill,1,0,1,Cash,0.07477,1350.0,1,Ringold,James M.  Lee,"Ringold, GA",GA,Quarteroon
+20.0,New Orleans,James  Martin,"New Orleans, LA",LA,4/7/1856,0.006202525,F,Mary,1,0,1,Credit,0.07702264,800.0,1,New Orleans,John Marr Farrelll,"New Orleans, LA",LA,Mulatto
+24.0,New Orleans,Paul  Choppin,"New Orleans, LA",LA,4/19/1856,0.00602698,M,Henry Rideout,19,0,19,Cash,0.07477,1300.0,19,New Orleans,Joseph Menard,"New Orleans, LA",LA,Unknown
+49.0,Unknown,Albert Lyngham,"Unknown, Unknown",Unknown,4/22/1856,0.00602698,F,Felicite,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Edgard Canonge,"New Orleans, LA",LA,Griff
+28.0,New Orleans,Stewart Wilkins Fisk,"New Orleans, LA",LA,4/23/1856,0.006202525,M,George Simmons,1,0,1,Credit,0.07702264,2500.0,1,New Orleans,Alexander Hagan,"New Orleans, LA",LA,Negro
+22.0,New Orleans,Richard H. Chinn,"New Orleans, LA",LA,4/23/1856,0.00602698,M,William,1,0,1,Cash,0.07477,1150.0,1,Charleston,Francis Nipson,"Charleston, SC",SC,Negro
+21.0,New Orleans,Andrew Doyal,"New Orleans, LA",LA,4/22/1856,0.00602698,F,Susannah Burin,1,1,2,Cash,0.07477,1200.0,1,Biloxi,Amelia Predat,"Biloxi, MS",MS,Negro
+40.0,New Orleans,Bernard Kendig,"New Orleans, LA",LA,4/24/1856,0.006202525,M,Bill,2,1,3,Credit,0.07702264,1449.85,1,New Orleans,Michael James Brenan,"New Orleans, LA",LA,Negro
+33.0,New Orleans,Amelia A. Morris,"New Orleans, LA",LA,4/15/1856,0.00602698,F,Elizabeth Wafield,1,0,1,Cash,0.07477,500.0,1,New Orleans,Jared W. Sanders,"New Orleans, LA",LA,Negro
+22.0,New Orleans,Mrs. Thomas McWhan,"New Orleans, LA",LA,4/16/1856,0.00602698,M,David,2,0,2,Cash,0.07477,2860.0,1,New Orleans,Succession of William McLeod Unknown,"New Orleans, LA",LA,Negro
+25.0,New Orleans,Samuel F. Hare,"New Orleans, LA",LA,3/27/1856,0.00602698,M,George Washington,1,0,1,Cash,0.07477,1300.0,1,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,Mulatto
+11.0,Bossier,William D. Vanarsdal,"Bossier, LA",LA,4/18/1856,0.00602698,M,Richard,1,0,1,Cash,0.07477,750.0,1,Halifax,Nathaniel H. Poindexter,"Halifax, VA",VA,Negro
+23.0,New Orleans,Nancy Davenport,"New Orleans, LA",LA,4/23/1856,0.00602698,M,George,1,0,1,Cash,0.07477,1150.0,1,Jefferson,Riley Phillips,"Jefferson, KY",KY,Negro
+32.0,Plaquemines,George Lanaux,"Plaquemines, LA",LA,4/22/1856,0.00602698,F,Celeste,1,3,4,Cash,0.07477,1750.0,1,Unknown,J. J. Tainturier,"Unknown, Unknown",Unknown,Colored
+21.0,New Orleans,Bedelia Ceoffey,"New Orleans, LA",LA,4/24/1856,0.00602698,F,Hannah,1,0,1,Cash,0.07477,1300.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+31.0,New Orleans,Joseph I. Michael,"New Orleans, LA",LA,4/23/1856,0.006202525,F,Milley,1,2,3,Credit,0.07702264,2140.0,1,New Orleans,Richard Harrison Chilton,"New Orleans, LA",LA,Negro
+36.0,New Orleans,Eliza Richmond Rocter,"New Orleans, LA",LA,4/25/1856,0.00602698,M,Phlegine/ Henry,1,0,1,Cash,0.07477,675.0,1,New Orleans,"Jeremiah, Joshua Wingate Lincoln","New Orleans, LA",LA,Negro
+17.0,New Orleans,Nancy Van Ostern,"New Orleans, LA",LA,4/5/1856,0.00602698,F,Terezine,1,0,1,Cash,0.07477,760.0,1,New Orleans,Estelle Elizabeth Garcia,"New Orleans, LA",LA,Negro
+22.0,New Orleans,Caroline Maury,"New Orleans, LA",LA,4/24/1856,0.00602698,F,Mary Jane Johnson,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Jonathan Means Wilson,"New Orleans, LA",LA,Negro
+16.0,New Orleans,Caroline Maury,"New Orleans, LA",LA,4/22/1856,0.00602698,F,Ellen Johnson,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Jonathan Means Wilson,"New Orleans, LA",LA,Negro
+28.0,Tensas,John I. Tyson,"Tensas, LA",LA,4/24/1856,0.00602698,M,Ramon,3,0,3,Cash,0.07477,2000.0,3,Chester,Alexander Q.  Donovant,"Chester, SC",SC,Negro
+17.0,New Orleans,Hubert Nugent,"New Orleans, LA",LA,4/25/1856,0.00602698,F,Victoria,1,0,1,Cash,0.07477,700.0,1,New Orleans,George Noble Morrison,"New Orleans, LA",LA,Negro
+23.0,New Orleans,John Davidson,"New Orleans, LA",LA,4/16/1856,0.00587886,M,Emmerson,2,0,2,Cash and Credit,0.07287264,2375.0,1,New Orleans,Succession of William McLeod Unknown,"New Orleans, LA",LA,Negro
+22.0,New Orleans,Bowman & Clark Unknown,"New Orleans, LA",LA,4/16/1856,0.00587886,M,Jerry,3,0,3,Cash and Credit,0.07287264,4850.0,1,New Orleans,Succession of William McLeod Unknown,"New Orleans, LA",LA,Negro
+19.0,New Orleans,John Lyall,"New Orleans, LA",LA,4/16/1856,0.00587886,M,Shepherd,1,0,1,Cash and Credit,0.07287264,1200.0,1,New Orleans,Succession of William McLeod Unknown,"New Orleans, LA",LA,Negro
+26.0,New Orleans,Thomas M. Converse,"New Orleans, LA",LA,4/16/1856,0.00587886,M,John,1,0,1,Cash and Credit,0.07287264,1675.0,1,New Orleans,Succession of William McLeod Unknown,"New Orleans, LA",LA,Negro
+11.0,Unknown,Jean L. Aubert,"Unknown, Unknown",Unknown,4/22/1856,0.00602698,M,Firmin,1,0,1,Cash,0.07477,590.0,1,Unknown,J. J. Tainturier,"Unknown, Unknown",Unknown,Unknown
+40.0,New Orleans,Medon Leblonde,"New Orleans, LA",LA,4/24/1856,0.00602698,F,Rosette,1,0,1,Cash,0.07477,650.0,1,New Orleans,Pierre Landreaux,"New Orleans, LA",LA,Griff
+26.0,New Orleans,Patrick  Jannin,"New Orleans, LA",LA,4/26/1856,0.006202525,M,Morris,1,0,1,Credit,0.07702264,1498.0,1,Charleston,Francis Nipson,"Charleston, SC",SC,Negro
+23.0,New Orleans,Melchior  Michell,"New Orleans, LA",LA,4/26/1856,0.006202525,F,Louisa,1,0,1,Credit,0.07702264,1177.0,1,New Orleans,Thomas George Mackie,"New Orleans, LA",LA,Negro
+49.0,Pointe Coupee,Zenon Demoruelle,"Pointe Coupee, LA",LA,4/26/1856,0.00602698,F,Lucy,1,0,1,Cash,0.07477,200.0,1,New Orleans,Josephine Solomon,"New Orleans, LA",LA,Negro
+15.0,New Orleans,John W. Bulls,"New Orleans, LA",LA,1/9/1856,0.00602698,F,Rosa,1,0,1,Cash,0.07477,584.15,1,New Orleans,Celina Ross,"New Orleans, LA",LA,Mulatto
+19.5,Lafourche,Fularande Causse,"Lafourche, LA",LA,4/28/1856,0.00602698,M,Terry,1,0,1,Cash,0.07477,1250.0,1,Chester,Alexander Q.  Donovant,"Chester, SC",SC,Mulatto
+40.0,New Orleans,Henry W. Long,"New Orleans, LA",LA,4/26/1856,0.006202525,M,Henry,1,0,1,Credit,0.07702264,749.0,1,New Orleans,Sarah Elizabeth Godwin,"New Orleans, LA",LA,Negro
+17.0,New Orleans,Lucien Charvet,"New Orleans, LA",LA,4/8/1856,0.00602698,F,Jane,1,0,1,Cash,0.07477,915.0,1,New Orleans,Norbert Trepagnier,"New Orleans, LA",LA,Negro
+42.0,Unknown,E. Wiltz,"Unknown, Unknown",Unknown,4/1/1856,0.00602698,F,Nicey/ Anais,4,0,4,Cash,0.07477,490.0,4,Unknown,Aimee Wiltz,"Unknown, Unknown",Unknown,Mulatto
+26.0,Unknown,John S. Thacker,"Unknown, Unknown",Unknown,1/31/1856,0.00602698,F,Louisa,1,1,2,Cash,0.07477,720.0,1,Unknown,James Drummond,"Unknown, Unknown",Unknown,Negro
+26.0,New Orleans,Tony Lafon,"New Orleans, LA",LA,4/29/1856,0.00602698,F,Leah,1,5,6,Cash,0.07477,1000.0,1,New Orleans,Mirbel Joseph le Blanc,"New Orleans, LA",LA,Unknown
+36.0,New Orleans,James Peter Freret,"New Orleans, LA",LA,4/28/1856,0.00602698,F,Henriette,1,0,1,Cash,0.07477,660.0,1,Jefferson,Jerome  Caloo,"Jefferson, LA",LA,Negro
+17.0,New Orleans,Dominique de Castelnau,"New Orleans, LA",LA,4/29/1856,0.00602698,M,Andre/ Edouard,1,0,1,Cash,0.07477,650.0,1,New Orleans,Antoine  Carriere,"New Orleans, LA",LA,Negro
+17.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,2/10/1856,0.00602698,F,Celestine,1,0,1,Cash,0.07477,650.0,1,New Orleans,P. N. Brent,"New Orleans, LA",LA,Negro
+32.0,New Orleans,"Ambrose Grenot, Emile Demie  Lapice","New Orleans, LA",LA,4/25/1856,0.006173291,M,Daniel,1,0,1,Credit,0.0766472,1200.0,1,Unknown,"Louis Armand, Elizabeth Eleanor Lapice Pilee","Unknown, France",France,Negro
+14.0,New Orleans,Chrysostome Lipinsky,"New Orleans, LA",LA,4/29/1856,0.00602698,M,Gustave,1,0,1,Cash,0.07477,600.0,1,New Orleans,Bernard Laborde,"New Orleans, LA",LA,Negro
+25.0,New Orleans,Bernard Kendig,"New Orleans, LA",LA,4/26/1856,0.00602698,M,Henry,1,0,1,Cash,0.07477,795.0,1,New Orleans,John Smith,"New Orleans, LA",LA,Negro
+22.0,New Orleans,Louis  Muh,"New Orleans, LA",LA,4/30/1856,0.00587886,F,Victoire,1,2,3,Cash and Credit,0.07287264,1210.0,1,New Orleans,Marie Madeline Antoinette Dupont de Lorne,"New Orleans, LA",LA,Griff
+16.0,New Orleans,Henry Gabriel Leaumont,"New Orleans, LA",LA,4/30/1856,0.00602698,F,Victorine,1,0,1,Cash,0.07477,900.0,1,New Orleans,Madeline Clemence Muloniere,"New Orleans, LA",LA,Negro
+37.0,New Orleans,Charles DeBlanc,"New Orleans, LA",LA,5/27/1856,0.006202525,M,Louis,2,0,2,Credit,0.07702264,900.0,2,New Orleans,Alexander Bonneval,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Coralie C. Forch,"New Orleans, LA",LA,5/3/1856,0.00602698,F,Rose,1,0,1,Cash,0.07477,850.0,1,St. James,"Josephe Marcel, Anais Gordain Braud","St. James, LA",LA,Negro
+13.0,New Orleans,Frank Roder,"New Orleans, LA",LA,10/1/1856,0.00602698,F,Jane,1,0,1,Cash,0.07477,812.0,1,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,Negro
+15.0,New Orleans,Celeste Rillieux,"New Orleans, LA",LA,10/1/1856,0.006901355,M,Hipployte,3,0,3,Credit,0.0860332,3400.0,1,New Orleans,Jean Baptiste Dusuau,"New Orleans, LA",LA,Mulatto
+37.0,New Orleans,Marie Anaise Dreville,"New Orleans, LA",LA,10/2/1856,0.005790818,F,Rosalie,1,0,1,Cash and Credit,0.07174632,700.0,1,New Orleans,Felicie Dumaine,"New Orleans, LA",LA,Negro
+32.0,New Orleans,Mary Jane White,"New Orleans, LA",LA,10/1/1856,0.00602698,F,Catherine,1,0,1,Cash,0.07477,875.0,1,New Orleans,Marie Jeanne Victoire Dubertrand,"New Orleans, LA",LA,Creole Mulatto
+35.0,New Orleans,Pierre Andre Giamarchi,"New Orleans, LA",LA,10/2/1856,0.005790818,F,Mary/ Louise,1,0,1,Cash and Credit,0.07174632,500.0,1,New Orleans,Claude Dolbeau,"New Orleans, LA",LA,Creole Negro
+30.0,New Orleans,George Glidden,"New Orleans, LA",LA,10/1/1856,0.00602698,M,Green,1,0,1,Cash,0.07477,900.0,1,New Orleans,John  Caldwell Jr.,"New Orleans, LA",LA,Mulatto
+38.0,New Orleans,Cecilia Ann O'Reily,"New Orleans, LA",LA,10/4/1856,0.005732077,F,Rachael,1,0,1,Cash and Credit,0.07099544,800.0,1,New Orleans,George Kyle Hawkins,"New Orleans, LA",LA,Negro
+34.0,New Orleans,Eulalie Chaperon,"New Orleans, LA",LA,10/3/1856,0.0,M,Charles,2,0,2,Credit,0.0,1150.0,1,New Orleans,Augustin Rousseau,"New Orleans, LA",LA,Unknown
+13.0,New Orleans,"Auguste, Pierre Pino, Leveque","New Orleans, LA",LA,10/4/1856,0.00602698,M,Alfred,1,0,1,Cash,0.07477,850.0,1,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,Mulatto
+50.0,New Orleans,Eugenie Savoye  Feytel,"New Orleans, LA",LA,10/7/1856,0.005746766,F,Eny,1,0,1,Credit,0.07118316,500.0,1,New Orleans,Louis Caretta,"New Orleans, LA",LA,Negro
+41.0,New Orleans,Frederick W. Gustine,"New Orleans, LA",LA,10/6/1856,0.00602698,F,Priscilla,1,0,1,Cash,0.07477,600.0,1,New Orleans,Daniel S. Graham,"New Orleans, LA",LA,Negro
+42.0,New Orleans,John Haller,"New Orleans, LA",LA,10/11/1856,0.00602698,F,Mary,1,0,1,Cash,0.07477,500.0,1,New Orleans,Jacob Dreyfous,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,10/9/1856,0.00602698,M,Pinot,1,0,1,Cash,0.07477,800.0,1,New Orleans,Giovanni Nocenti,"New Orleans, LA",LA,Unknown
+28.0,New Orleans,New Orleans Gas Light Co. Unknown,"New Orleans, LA",LA,10/13/1856,0.00602698,M,John,1,0,1,Cash,0.07477,1250.0,1,Victoria,Robert Wilcox Turner,"Victoria, TX",TX,Copper
+19.0,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,10/11/1856,0.00602698,M,Jim,1,0,1,Cash,0.07477,850.0,1,New Orleans,Jean Jacques Isnard,"New Orleans, LA",LA,Mulatto
+12.0,New Orleans,William  Jackson Maynard,"New Orleans, LA",LA,10/9/1856,0.00602698,F,Aline,1,0,1,Cash,0.07477,615.0,1,New Orleans,Irene Piron,"New Orleans, LA",LA,Negro
+35.0,New Orleans,William Barry,"New Orleans, LA",LA,10/4/1856,0.00602698,M,Hayes,1,0,1,Cash,0.07477,750.0,1,New Orleans,Mary Doyle,"New Orleans, LA",LA,Negro
+11.0,New Orleans,Richard Terrell,"New Orleans, LA",LA,10/14/1856,0.00602698,M,Collins,1,0,1,Cash,0.07477,450.0,1,New Orleans,Louis Caretta,"New Orleans, LA",LA,Negro
+25.0,New Orleans,New Orleans Gas Light Co. Unknown,"New Orleans, LA",LA,10/17/1856,0.00602698,M,Charles,1,0,1,Cash,0.07477,1000.0,1,New Orleans,William T. Gillmore,"New Orleans, LA",LA,Negro
+50.0,New Orleans,George W. Sizer,"New Orleans, LA",LA,10/18/1856,0.00602698,F,Betsey Johnson,1,0,1,Cash,0.07477,125.0,1,New Orleans,Jean Pierre Cazeaux,"New Orleans, LA",LA,Negro
+14.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,10/18/1856,0.00602698,M,Henry Everfield,1,0,1,Cash,0.07477,775.0,1,New Orleans,Joseph Amat,"New Orleans, LA",LA,Negro
+15.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,10/15/1856,0.00602698,F,Mathilda,1,0,1,Cash,0.07477,800.0,1,New Orleans,Eliza Ashton,"New Orleans, LA",LA,Negro
+27.0,New Orleans,Alexandrine Noel,"New Orleans, LA",LA,10/16/1856,0.00602698,M,Etienne,1,0,1,Cash,0.07477,800.0,1,New Orleans,Pierre Monet,"New Orleans, LA",LA,Negro
+26.0,St. Charles,Louise Adeline Brown,"St. Charles, LA",LA,10/15/1856,0.00602698,F,Mary/ Barabry,1,1,2,Cash,0.07477,1200.0,1,Bexar,Augustin Toutant,"Bexar, TX",TX,Griff
+30.0,New Orleans,George William Dirmeyer,"New Orleans, LA",LA,10/1/1856,0.005790818,F,Eliza,1,0,1,Cash and Credit,0.07174632,925.0,1,New Orleans,John S. Maunsell,"New Orleans, LA",LA,Unknown
+57.0,New Orleans,Georgette Mouchon Apollon,"New Orleans, LA",LA,10/16/1856,0.00602698,F,Francoise,1,0,1,Cash,0.07477,590.0,1,New Orleans,Paul Mouchon,"New Orleans, LA",LA,Negro
+18.0,New Orleans,Celestine Morel DeGuiramand,"New Orleans, LA",LA,10/20/1856,0.00602698,F,Jane,1,0,1,Cash,0.07477,950.0,1,New Orleans,Lucien Charvet,"New Orleans, LA",LA,Negro
+21.0,New Orleans,E. Reggio,"New Orleans, LA",LA,10/21/1856,0.00602698,F,Delphine,1,0,1,Cash,0.07477,900.0,1,Pensacola,Marianne Dominguez,"Pensacola, FL",FL,Negro
+14.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,10/21/1856,0.00602698,F,Catherine Eudoxie,1,1,2,Cash,0.07477,800.0,1,St. John,Marie Parot,"St. John, LA",LA,Creole
+10.0,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,10/16/1856,0.00602698,F,Delia,1,0,1,Cash,0.07477,475.0,1,New Orleans,Emile Gamet,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Bernard Kock,"New Orleans, LA",LA,10/24/1856,0.00602698,M,James,1,0,1,Cash,0.07477,1300.0,1,New Orleans,Alexander Hagan,"New Orleans, LA",LA,Negro
+32.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,10/23/1856,0.00602698,M,Simon Hanscomb,1,0,1,Cash,0.07477,800.0,1,Assumption,Joseph Martin,"Assumption, LA",LA,Negro
+17.0,New Orleans,John Weber,"New Orleans, LA",LA,10/24/1856,0.00602698,M,James,1,0,1,Cash,0.07477,1150.0,1,New Orleans,Archibald Lilly,"New Orleans, LA",LA,Negro
+14.5,New Orleans,Jean Lafitte,"New Orleans, LA",LA,10/25/1856,0.00602698,F,Josephine,1,0,1,Cash,0.07477,700.0,1,New Orleans,Marie Zulme Blanchett,"New Orleans, LA",LA,Mulatto
+30.0,New Orleans,Marie Fivilette Joffrion,"New Orleans, LA",LA,10/25/1856,0.005820175,F,Catherine Ann,1,1,2,Cash and Credit,0.07212176,1150.0,1,New Orleans,Francoise Desiree Royer,"New Orleans, LA",LA,Negro
+32.0,New Orleans,Anthony O'Dowd,"New Orleans, LA",LA,10/24/1856,0.00602698,F,Elizabeth,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Alexander Duchiron,"New Orleans, LA",LA,Negro
+19.0,New Orleans,Jane Dow Syme,"New Orleans, LA",LA,10/25/1856,0.00602698,F,Josephine,1,1,2,Cash,0.07477,1200.0,1,New Orleans,Louis Caretta,"New Orleans, LA",LA,Griff
+20.0,New Orleans,Louis Joseph Frigerio,"New Orleans, LA",LA,10/28/1856,0.00602698,F,Mary,1,1,2,Cash,0.07477,1000.0,1,New Orleans,Miles Judson,"New Orleans, LA",LA,Negro
+28.0,New Orleans,John McClean,"New Orleans, LA",LA,10/28/1856,0.00602698,F,Eliza,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Oliver Bush Chapin,"New Orleans, LA",LA,Negro
+10.0,New Orleans,Martha Sarah Bettison,"New Orleans, LA",LA,10/28/1856,0.00602698,F,Delia,1,0,1,Cash,0.07477,600.0,1,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,Negro
+39.0,New Orleans,Eugenie Savoye Feytel,"New Orleans, LA",LA,10/28/1856,0.005761452,F,Louisa,1,1,2,Cash and Credit,0.07137088,625.0,1,New Orleans,Louis Caretta,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Samuel Stewart,"New Orleans, LA",LA,10/28/1856,0.00602698,M,James,1,0,1,Cash,0.07477,1600.0,1,Mobile,Frederick Scruggs,"Mobile, AL",AL,Negro
+32.0,New Orleans,Virginia C. Alexander Burke,"New Orleans, LA",LA,10/4/1856,0.00602698,F,Lucretia,1,0,1,Cash,0.07477,789.85,1,New Orleans,John A. Haggerty,"New Orleans, LA",LA,Unknown
+21.0,Jefferson,John Boone Jones,"Jefferson, AR",AR,10/30/1856,0.006275569,M,Bob,8,0,8,Credit,0.07796124,1200.0,8,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+35.0,New Orleans,Harris & Levy Unknown,"New Orleans, LA",LA,10/30/1856,0.00602698,M,Lewis,2,0,2,Cash,0.07477,1000.35,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+30.0,New Orleans,John B. Womack,"New Orleans, LA",LA,10/31/1856,0.00602698,M,Rawley/ Honore,1,0,1,Cash,0.07477,1000.0,1,St. Charles,Jacques Kinler,"St. Charles, LA",LA,Negro
+23.0,New Orleans,Thomas B. Green,"New Orleans, LA",LA,10/31/1856,0.00602698,F,Mary,1,1,2,Cash,0.07477,975.0,1,New Orleans,Christopher Thomason,"New Orleans, LA",LA,Negro
+26.0,New Orleans,William Barry,"New Orleans, LA",LA,10/21/1856,0.00602698,M,William,1,0,1,Cash,0.07477,1150.0,1,New Orleans,Newton Richards,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Hannah Maria Hathaway,"New Orleans, LA",LA,10/30/1856,0.00602698,F,Sophia,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Nathaniel G. Phillips,"New Orleans, LA",LA,Griff
+34.0,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,10/27/1856,0.00602698,F,Anna/ Hannah,1,1,2,Cash,0.07477,800.0,1,New Orleans,Wendolin Doll,"New Orleans, LA",LA,Negro
+19.0,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,10/30/1856,0.00602698,M,Wilson,1,0,1,Cash,0.07477,800.0,1,New Orleans,Edmund Jean Forstall,"New Orleans, LA",LA,Mulatto
+22.0,New Orleans,Robert Spence,"New Orleans, LA",LA,11/3/1856,0.00602698,F,Mathilda,1,0,1,Cash,0.07477,525.0,1,New Orleans,Charles Andrew Gorsuch,"New Orleans, LA",LA,Dark Griff
+18.0,East Pascagoula,Captain John Grant,"East Pascagoula, MS",MS,11/4/1856,0.00602698,F,Mary,1,0,1,Cash,0.07477,1200.0,1,Port Gibson,George Washington Reed,"Port Gibson, MS",MS,Negro
+30.0,New Orleans,Adelaide Aubry,"New Orleans, LA",LA,11/3/1856,0.00602698,F,Louise,1,0,1,Cash,0.07477,700.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+48.0,New Orleans,John F. Wilson,"New Orleans, LA",LA,11/3/1856,0.00602698,M,Sam,1,0,1,Cash,0.07477,700.0,1,New Orleans,E. G. Rogers & Co. Unknown,"New Orleans, LA",LA,Negro
+21.0,New Orleans,William Francis,"New Orleans, LA",LA,11/4/1856,0.006377733,M,Jack,1,0,1,Credit,0.07927528,1450.0,1,New Orleans,Jacob Van Wickle,"New Orleans, LA",LA,Negro
+47.0,New Orleans,Marie Emelie Coiron,"New Orleans, LA",LA,11/6/1856,0.00602698,M,Germain,3,0,3,Cash,0.07477,1800.0,1,New Orleans,Marie Josephine Coiron,"New Orleans, LA",LA,Negro
+10.0,New Orleans,David McCloud,"New Orleans, LA",LA,10/26/1856,0.00602698,M,Etienne,1,0,1,Cash,0.07477,600.0,1,St. Bernard,Philippe Toca,"St. Bernard, LA",LA,Creole Negro
+60.0,New Orleans,Francois Bonnemaison,"New Orleans, LA",LA,11/6/1856,0.00587886,F,Sophie,1,0,1,Cash and Credit,0.07287264,210.0,1,New Orleans,Adele Macarty,"New Orleans, LA",LA,Negro
+36.0,New Orleans,Louis Caretta,"New Orleans, LA",LA,11/6/1856,0.00602698,F,Patsey/ Persinelle,1,0,1,Cash,0.07477,825.0,1,New Orleans,Marcelin Dufour,"New Orleans, LA",LA,Negro
+24.0,New Orleans,Samuel P. Auchmity,"New Orleans, LA",LA,10/25/1856,0.00587886,M,William,1,0,1,Cash and Credit,0.07287264,1240.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+16.0,New Orleans,Tod R. Vaughan,"New Orleans, LA",LA,11/8/1856,0.00602698,M,Sheldon,1,0,1,Cash,0.07477,560.0,1,New Orleans,David Watson Sowles,"New Orleans, LA",LA,Negro
+45.0,New Orleans,Adelaide Vinot,"New Orleans, LA",LA,11/8/1856,0.00602698,F,Maria,1,0,1,Cash,0.07477,125.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+16.5,St. James,Elizabeth Lelita Humphries,"St. James, LA",LA,11/10/1856,0.00602698,F,Marie,1,0,1,Cash,0.07477,1250.0,1,New Orleans,John B. Womack,"New Orleans, LA",LA,Negro
+19.0,New Orleans,Patrick McGin,"New Orleans, LA",LA,11/3/1856,0.006085532,M,Ike/ Isaac,1,0,1,Credit,0.07552088,750.0,1,New Orleans,Richard Barry Gracey,"New Orleans, LA",LA,Mulatto
+18.0,New Orleans,James Alexander Guyther,"New Orleans, LA",LA,10/30/1856,0.00602698,F,Lavinia,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Edward Conery,"New Orleans, LA",LA,Negro
+22.0,New Orleans,Henry Florence,"New Orleans, LA",LA,11/11/1856,0.00602698,F,Louisa,2,0,2,Cash,0.07477,1000.0,1,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,Negro
+26.0,New Orleans,William Randolph,"New Orleans, LA",LA,11/15/1856,0.00602698,M,William,1,0,1,Cash,0.07477,1250.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Griff
+40.0,New Orleans,Henry A. Cabanaiss,"New Orleans, LA",LA,11/15/1856,0.00602698,F,Davis,1,0,1,Cash,0.07477,600.0,1,St. Bernard,Francois Melicourt Bienvenu,"St. Bernard, LA",LA,Negro
+65.0,New Orleans,Bernard Kendig,"New Orleans, LA",LA,11/15/1856,0.00602698,M,Barney,4,2,6,Cash,0.07477,4000.0,1,Madison,Nancy Beeson,"Madison, FL",FL,Griff
+46.0,New Orleans,Melanie Demestre Levistones,"New Orleans, LA",LA,11/17/1856,0.00602698,F,Isabelle/ Elizabeth,7,0,7,Cash,0.07477,600.0,7,New Orleans,Charles Levistones,"New Orleans, LA",LA,Mulatto
+26.0,New Orleans,Elizabeth Madden,"New Orleans, LA",LA,11/13/1856,0.00602698,M,Andrew,1,0,1,Cash,0.07477,1025.0,1,Mobile,Joseph R. Gates,"Mobile, AL",AL,Griff
+11.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,11/17/1856,0.00602698,M,Armand,1,0,1,Cash,0.07477,730.0,1,New Orleans,Felix Robin,"New Orleans, LA",LA,Griff
+28.0,New Orleans,James Chittenden,"New Orleans, LA",LA,11/3/1856,0.00602698,F,Lucinda,1,0,1,Cash,0.07477,1000.0,1,New Orleans,William Whitfield,"New Orleans, LA",LA,Griff
+28.0,Memphis,Lesida le Blanc Rodner,"Memphis, TN",TN,11/15/1856,0.00602698,F,Louisa,1,0,1,Cash,0.07477,900.0,1,New Orleans,Wiley J. Martin,"New Orleans, LA",LA,Negro
+24.0,St. Charles,Brice Similion la Branche,"St. Charles, LA",LA,11/19/1856,0.00587886,M,John Harris,2,0,2,Cash and Credit,0.07287264,1400.0,2,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Dark Negro
+14.0,New Orleans,James A. Ferguson,"New Orleans, LA",LA,11/19/1856,0.00602698,M,Isiah,1,0,1,Cash,0.07477,900.0,1,Jacksonport,Harriet Judson Payne,"Jacksonport, AR",AR,Negro
+16.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,11/1/1856,0.00602698,F,Louisa Edmondia,1,0,1,Cash,0.07477,925.0,1,Jefferson,Paul Theodule Arnoult,"Jefferson, LA",LA,Negro
+26.5,New Orleans,John Myers,"New Orleans, LA",LA,11/21/1856,0.005805498,F,Elizabeth,1,0,1,Cash and Credit,0.07193404,1050.0,1,New Orleans,Matilda St. Claire McIntosh,"New Orleans, LA",LA,Griff
+16.0,New Orleans,John B. Womack,"New Orleans, LA",LA,11/21/1856,0.00602698,F,Georgianna,1,0,1,Cash,0.07477,847.28,1,New Orleans,Daniel Sheean,"New Orleans, LA",LA,Negro
+15.0,New Orleans,John B. Womack,"New Orleans, LA",LA,11/21/1856,0.00602698,F,Rachael,1,0,1,Cash,0.07477,857.25,1,New Orleans,William B. McCutcheon,"New Orleans, LA",LA,Mulatto
+37.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,11/21/1856,0.00602698,M,Joshua,1,0,1,Cash,0.07477,850.0,1,Augusta,Camille E. Girardy,"Augusta, GA",GA,Negro
+19.0,New Orleans,Rachael Kees,"New Orleans, LA",LA,11/21/1856,0.005761452,M,Albert Gilbert,2,0,2,Cash and Credit,0.07137088,1200.0,1,Lafourche,Absalom Kees,"Lafourche, LA",LA,Mulatto
+29.0,New Orleans,Phillip Charbonnet,"New Orleans, LA",LA,11/21/1856,0.00602698,M,Ned,1,0,1,Cash,0.07477,800.0,1,New Orleans,Louis Meyer,"New Orleans, LA",LA,Negro
+14.0,New Orleans,Wiley J. Martin,"New Orleans, LA",LA,11/22/1856,0.00602698,M,Joseph,1,0,1,Cash,0.07477,900.0,1,East Baton Rouge,Joseph Monget,"East Baton Rouge, LA",LA,Mulatto
+17.0,New Orleans,Aimee Gautier,"New Orleans, LA",LA,11/24/1856,0.00602698,F,Maria,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Jerome Towney,"New Orleans, LA",LA,Negro
+22.0,New Orleans,Octave Morel,"New Orleans, LA",LA,11/22/1856,0.005790818,F,Helene,1,0,1,Cash and Credit,0.07174632,1270.0,1,St. Bernard,Antoine Landier,"St. Bernard, LA",LA,Creole Negro
+57.0,New Orleans,"Georgiana, Coralie Jenkins","New Orleans, LA",LA,11/22/1856,0.00602698,F,Ann,1,0,1,Donation,0.07477,250.0,1,New Orleans,Arnote/ Arnote Jones/ Arnaute Luce Unknown,"New Orleans, LA",LA,Negro
+23.0,New Orleans,John Lyall,"New Orleans, LA",LA,11/21/1856,0.005790818,M,Joe,1,0,1,Cash and Credit,0.07174632,1221.0,1,Augusta,Camille E. Girardy,"Augusta, GA",GA,Negro
+52.0,New Orleans,Eliza Lescene,"New Orleans, LA",LA,11/24/1856,0.00602698,F,Sally,1,1,2,Cash,0.07477,1600.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+25.0,New Orleans,Louis St. Marc Darby Jr.,"New Orleans, LA",LA,11/24/1856,0.00602698,F,Annette,1,1,2,Cash,0.07477,1200.0,1,St. Martin,Constance de Blanc,"St. Martin, LA",LA,Negro
+24.0,Jefferson,Jean Baptiste Laiche,"Jefferson, LA",LA,11/24/1856,0.00602698,M,Bazille,1,0,1,Cash,0.07477,918.0,1,New Orleans,Antoine Ferdinand Lemos,"New Orleans, LA",LA,Griff
+35.0,Richmond,Jeremiah Smith,"Richmond, VA",VA,11/24/1856,0.00602698,F,Esther,1,2,3,Cash,0.07477,1600.0,1,New Orleans,Victor Demoruelle,"New Orleans, LA",LA,Negro
+28.0,New Orleans,Antoine Jean Jacques Barus,"New Orleans, LA",LA,11/25/1856,0.00602698,F,Mima Thomas,1,0,1,Cash,0.07477,540.0,1,New Orleans,Dominique Guerin,"New Orleans, LA",LA,Unknown
+26.0,New Orleans,Jose Acebal,"New Orleans, LA",LA,11/24/1856,0.005717386,F,Liddy,1,0,1,Cash and Credit,0.07080772,1200.0,1,New Orleans,Louis Telhiard,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Joseph Henry Ashby,"New Orleans, LA",LA,11/24/1856,0.00602698,M,Perry King,1,0,1,Cash,0.07477,1350.0,1,Tensas,Samuel W. Dorsey,"Tensas, LA",LA,Mulatto
+37.0,New Orleans,J. S. Copes,"New Orleans, LA",LA,11/10/1856,0.00602698,F,Letty,1,0,1,Cash,0.07477,290.0,1,New Orleans, Mr. and Mrs. J. W. Whaling,"New Orleans, LA",LA,Unknown
+33.0,New Orleans,Mary C. Thayer,"New Orleans, LA",LA,11/27/1856,0.005746766,M,Billy,1,0,1,Cash and Credit,0.07118316,750.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+42.0,New Orleans,Jeanette Gassin,"New Orleans, LA",LA,11/28/1856,0.0,F,Aimee,1,3,4,Cash and Credit,0.0,2000.0,1,New Orleans,Pierre Ernest Brulatour,"New Orleans, LA",LA,Mulatto
+27.0,New Orleans,Francois Cazalas,"New Orleans, LA",LA,11/27/1856,0.00602698,F,Rose,1,0,1,Cash,0.07477,600.0,1,New Orleans,Angel Martin,"New Orleans, LA",LA,Negro
+46.0,New Orleans,Antoine Jean Jacques Barus,"New Orleans, LA",LA,11/28/1856,0.00602698,M,Dennis,1,0,1,Cash,0.07477,500.0,1,New Orleans,Henry Pinard,"New Orleans, LA",LA,Negro
+30.0,New Orleans,William L. Porter,"New Orleans, LA",LA,11/22/1856,0.00602698,M,Lewis,1,0,1,Cash,0.07477,1000.0,1,Rusk,Newell Tullis,"Rusk, TX",TX,Negro
+41.0,New Orleans,Jacques Arthur Fortier,"New Orleans, LA",LA,11/27/1856,0.00602698,F,Eliza,1,0,1,Cash,0.07477,700.0,1,New Orleans,Pierre Casimir Blanchin,"New Orleans, LA",LA,Negro
+18.0,Unknown,William W. Wood,"Unknown, LA",LA,11/26/1856,0.00602698,F,Margaret,1,0,1,Cash,0.07477,1000.0,1,Unknown,W. H. Stevens,"Unknown, TX",TX,Mulatto
+18.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,11/26/1856,0.00602698,F,Margaret,1,0,1,Cash,0.07477,1000.0,1,Unknown,William W. Wood,"Unknown, LA",LA,Mulatto
+41.0,New Orleans,Joseph Deseamus,"New Orleans, LA",LA,11/19/1856,0.00602698,F,Harriet,1,0,1,Cash,0.07477,160.0,1,New Orleans,John Bown,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Charles Gayarre,"New Orleans, LA",LA,11/29/1856,0.00602698,F,Susan,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Isaac P. Abrams,"New Orleans, LA",LA,Mulatto
+19.0,New Orleans,Robert Spence,"New Orleans, LA",LA,12/1/1856,0.00602698,F,Mary,1,0,1,Cash,0.07477,905.0,1,New Orleans,John F. Follett,"New Orleans, LA",LA,Negro
+22.0,New Orleans,Robert Spence,"New Orleans, LA",LA,12/1/1856,0.00602698,M,Nelson,1,0,1,Cash,0.07477,775.0,1,New Orleans,John W. Blackman,"New Orleans, LA",LA,Negro
+48.0,New Orleans,Edmond N. Ganucheau,"New Orleans, LA",LA,12/1/1856,0.00602698,M,Hippolyte,1,0,1,Cash,0.07477,300.0,1,New Orleans,Alphonse Ronuald le Breton,"New Orleans, LA",LA,Griff
+35.0,New Orleans,David R. Carroll,"New Orleans, LA",LA,12/3/1856,0.00602698,M,Nelson,1,0,1,Cash,0.07477,675.0,1,New Orleans,James H. Massey,"New Orleans, LA",LA,Negro
+22.0,Madison,Thomas Cutter Bedford,"Madison, LA",LA,12/2/1856,0.00602698,M,Dudley Green,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+29.0,New Orleans,Fayette Byington,"New Orleans, LA",LA,12/2/1856,0.00602698,M,Charles Tibbs,1,0,1,Cash,0.07477,1000.0,1,New Orleans,William A. Collins,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,12/3/1856,0.00602698,M,Frank,1,0,1,Cash,0.07477,650.0,1,New Orleans,Eliza Ann Lane Jones,"New Orleans, LA",LA,Dark Griff
+24.0,New Orleans,Jose Tipura Lopez,"New Orleans, LA",LA,12/1/1856,0.00602698,F,Harriett,1,1,2,Cash,0.07477,1400.0,1,Plaquemines,James B. Williams,"Plaquemines, LA",LA,Griff
+45.0,New Orleans,Mannuel Blasco,"New Orleans, LA",LA,12/2/1856,0.00602698,M,Phillip,1,0,1,Cash,0.07477,1100.0,1,Algiers,John F. Hughes,"Algiers, LA",LA,Negro
+16.0,New Orleans,Lastie Young,"New Orleans, LA",LA,12/3/1856,0.006217138,F,Lear Ann,1,0,1,Credit,0.07721036,1150.0,1,New Orleans,Jonathan Means Wilson,"New Orleans, LA",LA,Negro
+29.0,Madison,William Dorman,"Madison, LA",LA,12/2/1856,0.00602698,F,Rebecca,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Mary Fairshaw Clayton,"New Orleans, LA",LA,Negro
+13.0,Unknown,Helene Pellerin Harrison,"Unknown, Unknown",Unknown,12/5/1856,0.00602698,F,Esther,1,0,1,Cash,0.07477,614.0,1,New Orleans,James Lovie,"New Orleans, LA",LA,Negro
+49.0,New Orleans,John F. Kearny,"New Orleans, LA",LA,12/4/1856,0.00602698,F,Eliza,1,0,1,Cash,0.07477,395.0,1,New Orleans,Anne Eastman Harrison Baker,"New Orleans, LA",LA,Mulatto
+14.0,Tuscaloosa,James Fredell Long,"Tuscaloosa, AL",AL,12/3/1856,0.00602698,M,Jules,1,0,1,Cash,0.07477,750.0,1,New Orleans,Geanne Aimee Andry Varney,"New Orleans, LA",LA,Mulatto
+6.0,New Orleans,Phillip A. Shaw,"New Orleans, LA",LA,12/31/1856,0.00602698,F,Helen,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+21.0,Claiborne,William A. Patterson,"Claiborne, MS",MS,1/7/1857,0.00602698,M,Samuel Jackson,4,0,4,Cash,0.07477,5700.0,1,New Orleans,Walter Lewis Campbell,"New Orleans, LA",LA,Negro
+26.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,1/4/1857,0.00602698,M,Aaron,1,0,1,"Exchange, Cash",0.07477,1000.0,1,Saquina,Elisha North,"Saquina, MS",MS,Negro
+35.0,Saquina,Elisha North,"Saquina, MS",MS,1/4/1857,0.00602698,M,Joe,1,0,1,"Exchange, Cash",0.07477,800.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+4.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,1/7/1857,0.00602698,F,Milley,1,0,1,Cash,0.07477,575.0,1,Jacksonport,Alexander W. Povl,"Jacksonport, AR",AR,Griff
+14.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,12/30/1856,0.00602698,F,Caroline,1,0,1,Cash,0.07477,775.0,1,New Orleans,Charles Rhodes,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Alfred Vienne,"New Orleans, LA",LA,1/5/1857,0.00602698,M,Joe,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Micajah Harris Sr.,"New Orleans, LA",LA,Negro
+19.0,Carroll,Gustav Wilkowski,"Carroll, LA",LA,1/6/1857,0.00602698,F,Frances,1,0,1,Cash,0.07477,1400.0,1,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,Mulatto
+20.0,Carroll,Anderson Michand Waddill,"Carroll, LA",LA,1/4/1857,0.00602698,M,James Jackson,11,0,11,Cash,0.07477,1200.0,11,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+24.0,Lafourche,"Joseph Sewell, Sidney Williams, Britton","Lafourche, LA",LA,1/7/1857,0.00602698,M,Turner,1,0,1,Cash,0.07477,1350.0,1,Wikiman,James Warron Moss,"Wikiman, KY",KY,Negro
+32.0,New Orleans,Aaron Parker Cleveland,"New Orleans, LA",LA,1/6/1857,0.00602698,M,Edmund,5,0,5,Cash,0.07477,6400.0,1,New Orleans,Varnum Sheldon,"New Orleans, LA",LA,Negro
+16.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,1/10/1857,0.00602698,M,Alfred,1,0,1,Cash,0.07477,900.0,1,Pointe Coupee,Lewis Toussiant Rabel,"Pointe Coupee, LA",LA,Negro
+26.0,Lafayette,Francois la Barre,"Lafayette, LA",LA,1/10/1857,0.00602698,F,Gracey,1,2,3,Cash,0.07477,1100.0,1,Orange,Joseph Walker Latta,"Orange, NC",NC,Negro
+11.0,New Orleans,Olivia Luster Oviatt,"New Orleans, LA",LA,1/12/1857,0.00602698,F,Mary,1,0,1,Cash,0.07477,900.0,1,Granville,William Daniel,"Granville, NC",NC,Negro
+45.0,Jefferson,Phillippe Ponsarques,"Jefferson, LA",LA,1/10/1857,0.00602698,M,Erwin,1,0,1,Cash,0.07477,750.0,1,New Orleans,"Martin, Jacques Loye","New Orleans, LA",LA,Negro
+26.0,New Orleans,James Peter Freret,"New Orleans, LA",LA,12/31/1856,0.005790818,F,Mary,1,0,1,Cash and Credit,0.07174632,1400.0,1,New Orleans,Charles Henry Taney,"New Orleans, LA",LA,Mulatto
+24.0,New Orleans,Nathan R. Stratton,"New Orleans, LA",LA,1/9/1857,0.00602698,M,John,1,0,1,Cash,0.07477,1400.0,1,Stotsprings County,Jean Dupas,"Stotsprings County, AR",AR,Negro
+26.0,New Orleans,Hugh Mitchell Hays,"New Orleans, LA",LA,1/9/1857,0.00602698,M,Lemon,2,0,2,Cash,0.07477,1400.0,2,Granville,William Daniel,"Granville, NC",NC,Negro
+35.0,Natchez,Thomas B. Gaillard,"Natchez, MS",MS,1/12/1857,0.00602698,F,Susan,1,0,1,Cash,0.07477,700.0,1,East Baton Rouge,George W. Dearing,"East Baton Rouge, LA",LA,Mulatto
+26.0,New Orleans,Celandia Isabella Churchill Ferguson,"New Orleans, LA",LA,1/13/1857,0.00602698,F,Ann Gardner,1,2,3,Cash,0.07477,1250.0,1,New Orleans,John Lowe,"New Orleans, LA",LA,Negro
+25.0,New Orleans,Joseph Hernandez,"New Orleans, LA",LA,1/14/1857,0.00602698,F,Poline/ Pauline,1,0,1,Cash,0.07477,1050.0,1,New Orleans,Adelaide Aubry,"New Orleans, LA",LA,Griff
+20.0,New Orleans,Louisa Maria Jolles,"New Orleans, LA",LA,1/13/1857,0.00587886,F,Sally,1,0,1,Cash and Credit,0.07287264,900.0,1,New Orleans,Minor children of Emma Catherine Dewees Unknown,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Terrence Firmin Levasseur,"New Orleans, LA",LA,1/13/1857,0.006202525,M,Lingleton,1,0,1,Credit,0.07702264,1480.0,1,New Orleans,Norbert Vignie,"New Orleans, LA",LA,Negro
+18.0,New Orleans,Micajah Harris Jr.,"New Orleans, LA",LA,1/12/1857,0.00602698,F,Mary,1,0,1,Cash,0.07477,800.0,1,St. Tammany,Sarah Ann George Robertson,"St. Tammany, LA",LA,Griff
+36.0,Natchez,Edward Hughes,"Natchez, MS",MS,1/14/1857,0.005732077,F,Hetty,1,4,5,Cash and Credit,0.07099544,3200.0,1,New Orleans,John Pasley,"New Orleans, LA",LA,Negro
+33.0,New Orleans,Sewell T. Taylor,"New Orleans, LA",LA,12/31/1856,0.00602698,M,Arthur,1,0,1,Cash,0.07477,600.0,1,St. Louis,Joseph B. Holland,"St. Louis, MO",MO,Negro
+25.0,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,1/10/1857,0.00602698,F,Victorine,1,0,1,Cash,0.07477,850.0,1,New Orleans,George Washington Dunbar,"New Orleans, LA",LA,Negro
+22.0,Washington,William F. Smith,"Washington, MS",MS,1/16/1857,0.00602698,M,William Fowler,21,0,21,Cash,0.07477,1450.0,21,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+20.0,St. Mary,Francois Octave Darby,"St. Mary, LA",LA,1/15/1857,0.00602698,M,Henry Lester,3,0,3,Cash,0.07477,1433.0,3,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+23.0,Washington,John E. Smith,"Washington, MS",MS,1/16/1857,0.00602698,M,Johnson Herndon,2,0,2,Cash,0.07477,1500.0,2,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+23.0,Concordia,Levi H. DeArmond,"Concordia, LA",LA,1/16/1857,0.00602698,M,Amanuel,2,0,2,Cash,0.07477,1600.0,2,New Orleans,John B. Smith,"New Orleans, LA",LA,Negro
+23.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,1/16/1857,0.00602698,M,Alexander,1,0,1,Cash,0.07477,840.0,1,Milton,J.R. Mims & Co. Unknown,"Milton, FL",FL,Mulatto
+40.0,New Orleans,Lewis Bellow,"New Orleans, LA",LA,1/15/1857,0.00602698,F,Suzan,1,0,1,Cash,0.07477,420.0,1,Concordia,Allen Dunbar Ratcliff,"Concordia, LA",LA,Griff
+26.0,New Orleans,Bernard Kendig,"New Orleans, LA",LA,1/19/1857,0.00602698,M,Nathan,1,0,1,Cash,0.07477,930.0,1,New Orleans,George Allan,"New Orleans, LA",LA,Negro
+19.0,New Orleans,Bernard Kendig,"New Orleans, LA",LA,1/19/1857,0.00602698,F,Julia,1,0,1,Cash,0.07477,1200.0,1,Sumner,William W. Blythe,"Sumner, TN",TN,Griff
+35.0,Unknown,Arraline Brooks,"Unknown, Unknown",Unknown,1/17/1857,0.00602698,F,Aimey,1,0,1,Cash,0.07477,1100.0,1,New Orleans,James Drummond,"New Orleans, LA",LA,Negro
+23.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,1/19/1857,0.00602698,M,Richard,1,0,1,Cash,0.07477,1310.0,1,Camden,"James, R. E. Vaughon, Arrington","Camden, AR",AR,Negro
+45.0,Concordia,Elias J. Hoover,"Concordia, LA",LA,1/17/1857,0.006041622,M,Tony,11,1,12,Credit,0.07495772,10000.0,1,DeSoto,Napoleon G. Ellerbe,"DeSoto, LA",LA,Griff
+40.0,New Orleans,William F. Adams,"New Orleans, LA",LA,1/17/1857,0.00602698,F,Eliza,1,0,1,Cash,0.07477,250.0,1,New Orleans,Emma Beauregard,"New Orleans, LA",LA,Griff
+18.0,Avoyelles,Jean Baptiste Gremillion,"Avoyelles, LA",LA,1/19/1857,0.00587886,F,Martha Ann,1,1,2,Cash and Credit,0.07287264,1250.0,1,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+14.0,Ouachita,William F. Goodrich,"Ouachita, LA",LA,1/16/1857,0.00602698,M,Bob,2,0,2,Cash,0.07477,1050.0,2,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,Negro
+33.0,Ouachita,William F. Goodrich,"Ouachita, LA",LA,1/17/1857,0.00602698,M,Charles,1,0,1,Cash,0.07477,800.0,1,New Orleans,Nicholson & Co. Unknown,"New Orleans, LA",LA,Negro
+15.0,New Orleans,Jacinto Aleix,"New Orleans, LA",LA,1/16/1857,0.00602698,M,John,1,0,1,Cash,0.07477,845.0,1,New Orleans,Benjamin Stille,"New Orleans, LA",LA,Light Mulatto
+10.0,New Orleans,John Graner,"New Orleans, LA",LA,1/19/1857,0.00602698,M,Henry,1,0,1,Cash,0.07477,500.0,1,New Orleans,John Henry Campman,"New Orleans, LA",LA,Griff
+16.0,New Orleans,Louisa Virginia Hall,"New Orleans, LA",LA,1/19/1857,0.00602698,F,Mary Jane,1,0,1,Cash,0.07477,700.0,1,New Orleans,Harriett Phelps,"New Orleans, LA",LA,Negro
+16.0,New Orleans,Aaron Parker Cleveland,"New Orleans, LA",LA,1/16/1857,0.00602698,F,Diana,1,0,1,Cash,0.07477,1100.0,1,Jefferson,Francois Bel,"Jefferson, LA",LA,Negro
+14.0,Ouachita,William F. Goodrich,"Ouachita, LA",LA,1/17/1857,0.00602698,M,Frank,1,0,1,Cash,0.07477,1075.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+28.0,New Orleans,Robert Huggle,"New Orleans, LA",LA,1/19/1857,0.00602698,F,Mary,1,1,2,Cash,0.07477,1300.0,1,New Orleans,Howell P. Ianvier,"New Orleans, LA",LA,Griff
+46.0,New Orleans,Desir Birac,"New Orleans, LA",LA,1/19/1857,0.00602698,F,Betsy,1,1,2,Cash,0.07477,800.0,1,New Orleans,Jean Auguste Lannuette,"New Orleans, LA",LA,Negro
+44.0,New Orleans,Henry Lindamann,"New Orleans, LA",LA,1/20/1857,0.00602698,M,Abraham,1,0,1,Cash,0.07477,600.0,1,New Orleans,Henrietta Seil Lindamann,"New Orleans, LA",LA,Negro
+38.0,New Orleans,Marie Heyobe Bourdette,"New Orleans, LA",LA,1/15/1857,0.00602698,F,Agnes,2,0,2,Cash,0.07477,600.0,2,New Orleans,Joseph Bourdette,"New Orleans, LA",LA,Negro
+51.0,New Orleans,Marie Heyobe Bourdette,"New Orleans, LA",LA,1/15/1857,0.00602698,F,Mary,2,0,2,Cash,0.07477,400.0,2,New Orleans,Joseph Bourdette,"New Orleans, LA",LA,Negro
+44.0,New Orleans,Camilla Palfrey Dameron,"New Orleans, LA",LA,12/31/1856,0.00602698,F,Maria,1,0,1,Cash,0.07477,400.0,1,Unknown,John Egerton,"Unknown, Unknown",Unknown,Mulatto
+23.0,New Orleans,Jean Francois Legier,"New Orleans, LA",LA,12/24/1856,0.005790818,F,Victoire,1,3,4,Cash and Credit,0.07174632,1310.0,1,New Orleans,Louis Muh,"New Orleans, LA",LA,Griff
+16.0,Unknown,Pino & Levesque Unknown,"Unknown, Unknown",Unknown,1/20/1857,0.00602698,M,Ben/ Benjamin,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Philippine Isabelle Gautier,"New Orleans, LA",LA,Negro
+22.0,New Orleans,Julia Ann Sharp,"New Orleans, LA",LA,1/21/1857,0.00602698,F,Susan,1,1,2,Cash,0.07477,1000.0,1,New Orleans,Jesse McCreary,"New Orleans, LA",LA,Negro
+18.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,1/22/1857,0.00602698,M,Emanuel/ Alphonse,1,0,1,Cash,0.07477,1075.0,1,New Orleans,Elizabeth Arsine Delhomme de Bellemar,"New Orleans, LA",LA,Mulatto
+24.0,New Orleans,Joseph Elliot,"New Orleans, LA",LA,1/21/1857,0.00602698,F,Fanny Smith,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+38.0,New Orleans,Stanislas Verret,"New Orleans, LA",LA,1/22/1857,0.00602698,F,Marie/ Mary,1,0,1,Cash,0.07477,450.0,1,New Orleans,Jean Brousse,"New Orleans, LA",LA,Negro
+27.0,New Orleans,Francisco Pizzaro Martinez,"New Orleans, LA",LA,1/22/1857,0.00587886,F,Nancy,1,1,2,Cash and Credit,0.07287264,2000.0,1,New Orleans,Joseph  Villarubia Jr.,"New Orleans, LA",LA,Negro
+19.0,St. Charles,Adolphe Rost Jr.,"St. Charles, LA",LA,1/23/1857,0.00602698,M,James Gross,4,0,4,Cash,0.07477,1500.0,4,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+23.0,Pointe Coupee,Alexis Tircuit,"Pointe Coupee, LA",LA,1/23/1857,0.00602698,M,Matthew,1,0,1,Cash,0.07477,1500.0,1,Richmond,Jeremiah Smith,"Richmond, VA",VA,Griff
+14.0,New Orleans,Clark Mosby & Co. Unknown,"New Orleans, LA",LA,1/24/1857,0.00602698,M,John Loury,1,0,1,Cash,0.07477,200.0,1,Victoria,William C. Vanmeter,"Victoria, TX",TX,Negro
+23.0,Pointe Coupee,Alexis Tircuit,"Pointe Coupee, LA",LA,1/24/1857,0.00602698,M,Ephraim,1,0,1,Cash,0.07477,1500.0,1,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+29.0,New Orleans,John Francis Magale,"New Orleans, LA",LA,1/10/1857,0.00602698,M,Charles,2,0,2,Cash,0.07477,2400.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+36.0,New Orleans,Henry Holmes,"New Orleans, LA",LA,1/24/1857,0.00602698,F,Julia Ann,1,0,1,Cash,0.07477,415.0,1,Lewisbury,Hartnell E. Boswell,"Lewisbury, KY",KY,Griff
+35.0,Isseynenu,"Ambrose, Albert C. Gibson","Isseynenu, MS",MS,1/24/1857,0.00602698,M,Frank,8,4,12,Cash,0.07477,9000.0,1,New Orleans,William Christie,"New Orleans, LA",LA,Unknown
+24.0,Lafourche,"Oscar Alonzo, Susannah Elizabeth Kibbe","Lafourche, LA",LA,1/24/1857,0.00602698,M,James,3,0,3,Cash,0.07477,1250.0,3,St. Landry,Eleodile Lambert Thompson,"St. Landry, LA",LA,Negro
+19.0,New Orleans,Amadeo Landry,"New Orleans, LA",LA,1/24/1857,0.00602698,M,Thornton,1,0,1,Cash,0.07477,1400.0,1,New Orleans,Leonard Fash,"New Orleans, LA",LA,Negro
+42.0,Unknown,Catherine Duplessis Palav,"Unknown, Unknown",Unknown,1/26/1857,0.00602698,F,Agness,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Hippolyte Palav,"New Orleans, LA",LA,Negro
+55.0,New Orleans,Joel C. Wiggins,"New Orleans, LA",LA,1/22/1857,0.00602698,F,Maria,1,0,1,Cash,0.07477,250.0,1,New Orleans,Charles Manson,"New Orleans, LA",LA,Negro
+38.0,New Orleans,Manuel Cauvain,"New Orleans, LA",LA,1/23/1857,0.00602698,M,"Washington ""Pierre""",1,0,1,Cash,0.07477,1200.0,1,New Orleans,Poussonne Colin,"New Orleans, LA",LA,Negro
+36.0,New Orleans,Elizabeth Watt Brown,"New Orleans, LA",LA,1/17/1857,0.00602698,F,Hannah,1,0,1,Cash,0.07477,800.0,1,Granville,William Daniel,"Granville, NC",NC,Negro
+27.0,Holmesville,John T. Lamkin,"Holmesville, MS",MS,1/20/1857,0.00602698,F,Clothilida,1,0,1,Cash,0.07477,725.0,1,New Orleans,Edward Pascal Poupart,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Rodger Vernon,"New Orleans, LA",LA,1/28/1857,0.00602698,M,Nelson,1,0,1,Cash,0.07477,1000.0,1,New Orleans,John McAllister Vernon,"New Orleans, LA",LA,Negro
+19.0,Pointe Coupee,Charles Francois Lefeaux,"Pointe Coupee, LA",LA,1/27/1857,0.00602698,F,Caroline,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Theodore Johnston,"New Orleans, LA",LA,Negro
+37.0,New Orleans,Ivan Ramirez,"New Orleans, LA",LA,1/28/1857,0.00602698,F,Marie Louise,1,2,3,Cash,0.07477,1450.0,1,New Orleans,Emile Dabos,"New Orleans, LA",LA,Negro
+19.0,Ouachita,William F. Govdrich,"Ouachita, LA",LA,1/27/1857,0.00602698,M,Bob,1,0,1,Cash,0.07477,1300.0,1,Aberdeen,Benjamin L. Hatch,"Aberdeen, MS",MS,Mulatto
+40.0,New Orleans,Ruggles S. Morse,"New Orleans, LA",LA,1/21/1857,0.00602698,M,Abraham,1,0,1,Cash,0.07477,950.0,1,New Orleans,Catharine L. Diggs Hanney,"New Orleans, LA",LA,Negro
+19.0,New Orleans,Annetta de la Cruz,"New Orleans, LA",LA,1/4/1857,0.00602698,F,Georgette,1,0,1,Cash,0.07477,900.0,1,New Orleans,Ramon de la Cruz,"New Orleans, LA",LA,Negro
+14.0,New Orleans,Issac Hooper,"New Orleans, LA",LA,1/29/1857,0.00602698,F,Milly,1,0,1,Cash,0.07477,800.0,1,New Orleans,Successors of Eliza Jane Catlett Hooper Unknown,"New Orleans, LA",LA,Negro
+22.0,St. Landry,Offutt Brothers Unknown,"St. Landry, LA",LA,1/30/1857,0.00602698,F,Sarah,1,0,1,Cash,0.07477,1300.0,1,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+37.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,1/27/1857,0.00602698,F,Harriett Moisee,1,0,1,Cash,0.07477,800.0,1,Jefferson,Charles Dussuau,"Jefferson, LA",LA,Griff
+30.0,Montgomery,Horatio Gates Harbin,"Montgomery, AL",AL,1/28/1857,0.00602698,M,Ketty,1,0,1,Cash,0.07477,810.0,1,New Orleans,Edward Schinkel,"New Orleans, LA",LA,Negro
+27.0,New Orleans,William M. Pinckard,"New Orleans, LA",LA,1/30/1857,0.00602698,F,Jane,5,0,5,Cash,0.07477,1150.0,5,Carroll,Samuel Bond,"Carroll, LA",LA,Unknown
+33.0,New Orleans,Antoine Bellegarde Casimir Lacoste,"New Orleans, LA",LA,1/30/1857,0.00602698,F,Cilia,1,0,1,Cash,0.07477,750.0,1,New Orleans,Pierre Lacoste,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Gustave Mouras,"New Orleans, LA",LA,1/31/1857,0.00602698,M,Leon,1,0,1,Cash,0.07477,1150.0,1,New Orleans,Jean Oger,"New Orleans, LA",LA,Griff
+29.0,Mississippi City,Thomas H. Oswald,"Mississippi City, MS",MS,1/31/1857,0.00602698,M,Burke,1,0,1,Cash,0.07477,1300.0,1,Galveston,R. & D. G. Mills Unknown,"Galveston, TX",TX,Dark Griff
+33.0,New Orleans,Augustus H. May,"New Orleans, LA",LA,1/29/1857,0.00602698,M,Martin,1,0,1,Cash,0.07477,1000.0,1,New Orleans,James Edwin Randolph,"New Orleans, LA",LA,Negro
+27.0,St. James,"Florent, Septime Fortier","St. James, LA",LA,1/26/1857,0.00602698,F,Hannah,1,0,1,Cash,0.07477,950.0,1,New Orleans,Luico Mitchell Foster,"New Orleans, LA",LA,Negro
+36.0,New Orleans,Lucien Constant Adams,"New Orleans, LA",LA,1/27/1857,0.00602698,F,Caroline,1,0,1,Cash,0.07477,375.0,1,New Orleans,Paul Boudousquie,"New Orleans, LA",LA,Griff
+36.0,New Orleans,Luico Mitchell Foster,"New Orleans, LA",LA,1/31/1857,0.00602698,F,Mary/ Marie,1,0,1,Cash,0.07477,425.0,1,New Orleans,Jules Bermudez,"New Orleans, LA",LA,Negro
+-1.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,1/15/1857,0.00602698,M,Tom/ Tom Brown,1,0,1,Cash,0.07477,150.0,1,New Orleans,H. McNiel Vance,"New Orleans, LA",LA,Unknown
+27.0,New Orleans,Henry Johnson,"New Orleans, LA",LA,1/27/1857,0.00602698,M,Bob,1,0,1,Cash,0.07477,1400.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Griff
+28.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,2/2/1857,0.00602698,M,Davy,1,0,1,Cash,0.07477,1230.0,1,Rapides,William Bailey,"Rapides, LA",LA,Negro
+19.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,1/31/1857,0.00602698,F,Sarah,1,0,1,Cash,0.07477,1220.0,1,New Orleans,Pierre Ninon Faisans,"New Orleans, LA",LA,Mulatto
+55.0,New Orleans,Edward Chaixnaydre,"New Orleans, LA",LA,12/30/1856,0.00602698,F,Mercelite,1,0,1,Cash,0.07477,100.0,1,New Orleans,Heloise Carel Chaixnaydre,"New Orleans, LA",LA,Negro
+14.0,New Orleans,Edward Coste,"New Orleans, LA",LA,12/31/1856,0.00602698,F,Gertrude,1,0,1,Cash,0.07477,550.0,1,New Orleans,Heloise Carel Chaixnaydre,"New Orleans, LA",LA,Negro
+36.0,New Orleans,Dominigue Dumaine,"New Orleans, LA",LA,12/31/1856,0.00602698,M,Mondesir/ Charles,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Heloise Carel Chaixnaydre,"New Orleans, LA",LA,Negro
+26.0,St. Charles,Pierre Adolphe Rost,"St. Charles, LA",LA,1/31/1857,0.00602698,M,Joe,1,0,1,Cash,0.07477,1300.0,1,Summerfield,John M. Sturdevant,"Summerfield, AL",AL,Negro
+31.0,New Orleans,John Pasley,"New Orleans, LA",LA,1/31/1857,0.00602698,F,Amanda Brown,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Alexander Brother,"New Orleans, LA",LA,Negro
+14.0,New Orleans,Bernard Kendig,"New Orleans, LA",LA,1/31/1857,0.00602698,F,Betsey,1,0,1,Cash,0.07477,870.0,1,New Orleans,Jean Brousse,"New Orleans, LA",LA,Griff
+37.0,Iberville,Urbain Sebastien Haase,"Iberville, LA",LA,2/2/1857,0.005746766,F,Mathilda,1,3,4,Cash and Credit,0.07118316,2300.0,1,New Orleans,Louis Caretta,"New Orleans, LA",LA,Negro
+39.0,New Orleans,"Adolphe, Eugene Elie, Champaignac","New Orleans, LA",LA,1/30/1857,0.00602698,M,Charles,1,0,1,Cash,0.07477,1400.0,1,New Orleans,Adolphe Perrier,"New Orleans, LA",LA,Negro
+28.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,2/3/1857,0.00602698,M,Daniel,1,0,1,Cash,0.07477,900.0,1,Natchez,Truman C. Holmes,"Natchez, MS",MS,Negro
+25.0,New Orleans,Mary Elizabeth Bullitt Jones,"New Orleans, LA",LA,1/26/1857,0.00602698,F,Mary,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Adolphins Hamilton,"New Orleans, LA",LA,Negro
+57.0,New Orleans,John B. Pigniola,"New Orleans, LA",LA,1/30/1857,0.00602698,M,Jacques,2,0,2,Cash,0.07477,465.0,2,Unknown,Josephine Santos de la Rosa,"Unknown, Unknown",Unknown,Unknown
+61.0,Shreveport,Matthew Watson,"Shreveport, LA",LA,2/3/1857,0.006202525,M,Thomas,1,0,1,Credit,0.07702264,200.0,1,New Orleans,Susan L. Pinney Wheeler,"New Orleans, LA",LA,Negro
+21.0,New Orleans,William L. Pitts,"New Orleans, LA",LA,1/31/1857,0.00602698,M,Charles,1,0,1,Cash,0.07477,1005.0,1,Coahoma,Samuel S. Crute,"Coahoma, MS",MS,Mulatto
+24.0,New Orleans,David Resolve Godwin,"New Orleans, LA",LA,2/2/1857,0.00602698,F,Harriett,1,1,2,Cash,0.07477,1100.0,1,New Orleans,Jose Tiburio Lopez,"New Orleans, LA",LA,Griff
+10.0,New Orleans,George O. Sweet,"New Orleans, LA",LA,2/3/1857,0.00602698,F,Martha,1,1,2,Cash,0.07477,1700.0,1,Bexar,Rufas A. Henson,"Bexar, TX",TX,Negro
+13.0,Catahoula,Andrew B. Davis,"Catahoula, LA",LA,1/31/1857,0.00602698,F,Mahaley,1,0,1,Cash,0.07477,1150.0,1,Caldwell,William S. Gunnels,"Caldwell, LA",LA,Mulatto
+30.0,New Orleans,"William, Jacob Davis, Jackson","New Orleans, LA",LA,1/15/1857,0.00602698,F,Hanette,1,0,1,Cash,0.07477,850.0,1,New Orleans,Luico Mitchell Foster,"New Orleans, LA",LA,Negro
+22.0,New Orleans,Charles Joseph Alcide Valetin,"New Orleans, LA",LA,1/31/1857,0.00602698,F,Josephine,1,0,1,Cash,0.07477,700.0,1,St. Charles,Jean Baptiste Heurtin,"St. Charles, LA",LA,Griff
+26.0,Natchitoches,George Washington Gaiennie,"Natchitoches, LA",LA,2/3/1857,0.00602698,M,Caleb,1,0,1,Cash,0.07477,1100.0,1,New Orleans,John Pasley,"New Orleans, LA",LA,Negro
+21.0,Washington,John Lewis Chapman,"Washington, MS",MS,2/5/1857,0.006202525,M,Boston,1,0,1,Credit,0.07702264,1700.0,1,Augusta,Nelson Clement Trowbridge,"Augusta, GA",GA,Griff
+29.0,New Orleans,Louis Hornal Generes,"New Orleans, LA",LA,2/3/1857,0.00602698,F,Celeste,1,1,2,Cash,0.07477,1200.0,1,New Orleans,Jules Tuyes,"New Orleans, LA",LA,Mulatto
+51.0,New Orleans,Thomas Young,"New Orleans, LA",LA,2/5/1857,0.00602698,F,Vina,1,0,1,Cash,0.07477,300.0,1,Unknown,Henry Sumerly Lwasey,"Unknown, Unknown",Unknown,Negro
+17.0,Unknown,Evelina Baker Conner,"Unknown, MS",MS,2/5/1857,0.00602698,M,Jackson,5,0,5,Cash,0.07477,1300.0,5,Columbia,Charles Logan,"Columbia, SC",SC,Negro
+23.0,Iberville,Gideon O. Dupuy,"Iberville, LA",LA,2/7/1857,0.006202525,F,Julia Ann,10,1,11,Credit,0.07702264,1300.0,10,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+27.0,New Orleans,Lewis Goldsmith,"New Orleans, LA",LA,1/31/1857,0.005732077,F,Sarah Smith,1,1,2,Cash and Credit,0.07099544,1800.0,1,New Orleans,Augustus W. Jourdan,"New Orleans, LA",LA,Negro
+36.0,New Orleans,Francis Moreno Jr.,"New Orleans, LA",LA,2/9/1857,0.00602698,M,Jim/ Puis,1,0,1,Cash,0.07477,800.0,1,New Orleans,Evelina Senac Rapier,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Clecta R. Douglas,"New Orleans, LA",LA,2/9/1857,0.00602698,F,Maria,1,0,1,Cash,0.07477,700.0,1,New Orleans,Robert Ellis,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Cordelia Thayer Daniels,"New Orleans, LA",LA,2/10/1857,0.00602698,F,Maria,1,0,1,Donation,0.07477,0.0,1,New Orleans,Clecta R. Douglas,"New Orleans, LA",LA,Negro
+18.0,New Orleans,John S. Wallis,"New Orleans, LA",LA,2/6/1857,0.00602698,M,George Washington Thomas,1,0,1,Cash,0.07477,1125.0,1,New Orleans,Benjamin Screws,"New Orleans, LA",LA,Negro
+14.0,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,1/30/1857,0.00602698,F,Lucy,1,0,1,Cash,0.07477,800.0,1,New Orleans,Frederick Wing,"New Orleans, LA",LA,Negro
+16.0,Iberville,Edward I. Gay,"Iberville, LA",LA,2/7/1857,0.00602698,M,Isaac,1,0,1,Cash,0.07477,1150.0,1,Monroe,James A. Roberts,"Monroe, MS",MS,Negro
+11.0,Madison,George W. Couch,"Madison, LA",LA,2/9/1857,0.00602698,M,Perry,1,0,1,Cash,0.07477,825.0,1,Matagorda,John Plunket,"Matagorda, TX",TX,Griff
+10.0,New Orleans,Lucy Fabj Dolsen,"New Orleans, LA",LA,1/15/1857,0.00602698,F,Sarah,1,0,1,Cash,0.07477,500.0,1,Yazoo,George A. Cox,"Yazoo, MS",MS,Negro
+45.0,Orleans,Samuel Marcy,"Orleans, LA",LA,2/5/1857,0.00602698,M,Phelonise,1,0,1,Cash,0.07477,500.0,1,New Orleans,Heloise Carel Chaixnaydre,"New Orleans, LA",LA,Negro
+12.0,DeSoto,John E. Lewis,"DeSoto, LA",LA,2/9/1857,0.00602698,F,Marguerite,1,0,1,Cash,0.07477,780.0,1,New Orleans,John B. Womack,"New Orleans, LA",LA,Mulatto
+10.0,Old Town Philip,Josiah Stoddard Johnson,"Old Town Philip, AR",AR,2/9/1857,0.00602698,M,Jules,1,0,1,Cash,0.07477,620.0,1,New Orleans,John B. Womack,"New Orleans, LA",LA,Mulatto
+30.0,New Orleans,John H. Van Ailin,"New Orleans, LA",LA,2/10/1857,0.006085532,M,Adam,1,0,1,Credit,0.07552088,1200.0,1,Christian,John C. Whitlock,"Christian, KY",KY,Negro
+18.0,New Orleans,James McIntosh,"New Orleans, LA",LA,2/9/1857,0.00602698,M,Mack,1,0,1,Cash,0.07477,1200.0,1,Columbia,William B. Ross,"Columbia, FL",FL,Negro
+20.0,Carroll,"William, William S. Cloman, Scott","Carroll, LA",LA,1/22/1857,0.00602698,F,Mary Carter,1,0,1,Exchange,0.07477,1200.0,1,New Orleans,Walter Lewis Campbell,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Walter Lewis Campbell,"New Orleans, LA",LA,1/22/1857,0.00602698,F,Charlotte Walker,1,0,1,Exchange,0.07477,1100.0,1,Carroll,"William, William S. Cloman, Scott","Carroll, LA",LA,Negro
+23.0,Catahoula,Jane C. Lovelace Curry,"Catahoula, LA",LA,2/10/1857,0.00602698,M,Daniel,2,0,2,Cash,0.07477,1425.0,2,New Orleans,Theodore Johnston,"New Orleans, LA",LA,Negro
+24.0,New Orleans,John J. F. Spearing,"New Orleans, LA",LA,2/9/1857,0.006202525,F,Mary Ann,1,0,1,Credit,0.07702264,1296.0,1,New Orleans,Henry E. Spearing,"New Orleans, LA",LA,Negro
+20.0,Bolivar,Elias Rees Porter,"Bolivar, MS",MS,2/10/1857,0.00602698,M,Henry,5,0,5,Cash,0.07477,1500.0,5,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+25.0,New Orleans,Samuel Wilson,"New Orleans, LA",LA,2/10/1857,0.00602698,F,Mary Barnes,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Lucy Ann Quinn Hickey,"New Orleans, LA",LA,Negro
+18.0,Caldwell,Paul Bres,"Caldwell, LA",LA,2/10/1857,0.00602698,M,Romer,1,0,1,Cash,0.07477,1450.0,1,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+27.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,2/9/1857,0.00602698,M,Raymond,1,0,1,Cash,0.07477,1200.0,1,Pointe Coupee,Merile Lacour,"Pointe Coupee, LA",LA,Negro
+15.0,New Orleans,George Washington Huntington,"New Orleans, LA",LA,2/6/1857,0.00602698,M,William/ Billy,1,0,1,Cash,0.07477,700.0,1,New Orleans,Catherine Isabella Alpuente de Armas,"New Orleans, LA",LA,Griff
+19.0,New Orleans,Coralie de Reggio,"New Orleans, LA",LA,1/30/1857,0.006202525,F,Florence,3,1,4,Credit,0.07702264,2400.0,1,New Orleans,Jules Desmazilien Dusuan de la Croix,"New Orleans, LA",LA,Negro
+22.0,Pointe Coupee,"Marx, Marx Meyer, Straus","Pointe Coupee, LA",LA,1/28/1857,0.00602698,M,Arthur,2,0,2,Cash,0.07477,1425.0,2,New Orleans,Theodore Johnston,"New Orleans, LA",LA,Griff
+21.0,New Orleans,Christian Theodore Buddecke,"New Orleans, LA",LA,2/5/1857,0.00587886,M,Henry Hall,1,0,1,Cash and Credit,0.07287264,1515.0,1,New Orleans,Cesaire Olivier,"New Orleans, LA",LA,Negro
+36.0,New Orleans,Louis Francois Fazende,"New Orleans, LA",LA,2/7/1857,0.006202525,F,Hannah,1,1,2,Credit,0.07702264,1125.0,1,New Orleans,Henriette Bonnerue Leisy,"New Orleans, LA",LA,Negro
+26.0,Unknown,John Caldwell Jr.,"Unknown, Unknown",Unknown,2/4/1857,0.00602698,M,Joe,1,0,1,Cash,0.07477,740.0,1,Tensas,Alfred Hudson,"Tensas, LA",LA,Negro
+24.0,New Orleans,George L. L. Mayer,"New Orleans, LA",LA,2/11/1857,0.00602698,F,Bella,1,1,2,Cash,0.07477,1250.0,1,New Orleans,Francois Ovide Dupuis,"New Orleans, LA",LA,Griff
+45.0,New Orleans,William Massey,"New Orleans, LA",LA,2/11/1857,0.00602698,M,Peter,1,0,1,Cash,0.07477,500.0,1,London,William Christie,"London, England",England,Mulatto
+32.0,London,William Christie,"London, England",England,2/6/1857,0.00602698,F,Milly,1,3,4,Cash,0.07477,1850.0,1,New Orleans,James Nimick,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Louisa Catherina Jarboe,"New Orleans, LA",LA,12/24/1856,0.00583485,F,Nancy,1,1,2,Cash and Credit,0.07230948,1700.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+15.0,New Orleans,Jules Lavergne,"New Orleans, LA",LA,2/2/1857,0.00602698,M,Noel,1,0,1,Cash,0.07477,850.0,1,New Orleans,Eulalie Moro de Feriet,"New Orleans, LA",LA,Negro
+10.0,New Orleans,Barthelemy Ovide Plauche,"New Orleans, LA",LA,2/10/1857,0.00602698,M,Didier,1,0,1,Cash,0.07477,650.0,1,Unknown,Mathilde Plauche Forstall,"Unknown, Unknown",Unknown,Mulatto
+31.0,New Orleans,Agenor Martin,"New Orleans, LA",LA,2/2/1857,0.00602698,F,Justine,1,0,1,Cash,0.07477,1000.0,1,Jefferson,Francois Gardere,"Jefferson, LA",LA,Mulatto
+19.0,New Orleans,Francois Gueyrfdan,"New Orleans, LA",LA,2/10/1857,0.00602698,F,Louise,2,1,3,Cash,0.07477,1800.0,1,Unknown,Jacques Tiblier,"Unknown, France",France,Mulatto
+21.0,New Orleans,Richard Lloyd,"New Orleans, LA",LA,2/11/1857,0.00602698,M,Clifford,1,0,1,Cash,0.07477,1100.0,1,Harrison,George W. Sully,"Harrison, MS",MS,Negro
+15.0,Orleans,Peter Steel,"Orleans, LA",LA,2/11/1857,0.00602698,F,Katy,1,0,1,Cash,0.07477,1175.0,1,Augusta,Nelson Clement Trowbridge,"Augusta, GA",GA,Negro
+28.0,New Orleans,Sophronia Lee Fearn Putnam,"New Orleans, LA",LA,2/9/1857,0.00602698,F,Martha,1,1,2,Cash,0.07477,1600.0,1,Mobile,Frederick Scruggs,"Mobile, AL",AL,Mulatto
+18.0,New Orleans,Louis Caretta,"New Orleans, LA",LA,2/11/1857,0.00602698,F,Ellen Dorn,1,0,1,Cash,0.07477,800.0,1,New Orleans,John Pemberton,"New Orleans, LA",LA,Negro
+13.0,New Orleans,James Ennis,"New Orleans, LA",LA,2/12/1857,0.00602698,F,Elilza Jane,1,0,1,Cash,0.07477,1000.0,1,Augusta,Nelson Clement Trowbridge,"Augusta, GA",GA,Negro
+19.0,New Orleans,Gustave Mouras,"New Orleans, LA",LA,2/11/1857,0.005761452,M,William,1,0,1,Cash and Credit,0.07137088,1100.0,1,Mobile,Heirs of Augustus J. Regnier Unknown,"Mobile, AL",AL,Negro
+13.0,New Orleans,Gustave Phillippe Marigny,"New Orleans, LA",LA,12/24/1856,0.00602698,F,Julie,1,0,1,Cash,0.07477,880.0,1,St. Bernard,Louis Marcel Bienvenu,"St. Bernard, LA",LA,Negro
+33.0,New Orleans,Hiram Morgan,"New Orleans, LA",LA,2/12/1857,0.00602698,M,Charles,1,0,1,Cash,0.07477,775.0,1,St. Landry,Edward Marcellus Millard,"St. Landry, LA",LA,Negro
+17.0,New Orleans,Betty Whitehead Cunningham,"New Orleans, LA",LA,2/11/1857,0.00602698,F,Rebecca,1,0,1,Cash,0.07477,1225.0,1,New Orleans,David Resolve Godwin,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Anna Duffy McEnany,"New Orleans, LA",LA,2/9/1857,0.005849522,M,Isam/ Isaac,1,0,1,Cash and Credit,0.0724972,1200.0,1,New Orleans,William Barry,"New Orleans, LA",LA,Negro
+55.0,New Orleans,Charlotte Hortense Lacoste Tzymanske,"New Orleans, LA",LA,1/16/1857,0.00587886,M,Marcelin,1,0,1,Cash and Credit,0.07287264,600.0,1,"New Orleans, St.Bernard","Louis, Philogene, Arthur Reggio, Iorda, Iorda","New Orleans, St.Bernard, LA",LA,Negro
+45.0,New Orleans,Joseph Iouet,"New Orleans, LA",LA,1/16/1857,0.00587886,M,Louis,1,0,1,Cash and Credit,0.07287264,560.0,1,"New Orleans, St.Bernard","Louis, Philogene, Arthur Reggio, Iorda, Iorda","New Orleans, St.Bernard, LA",LA,Negro
+46.0,New Orleans,Edward Ceresol,"New Orleans, LA",LA,2/10/1857,0.00602698,F,Catherine,1,5,6,Cash,0.07477,4000.0,1,New Orleans,"Thomasin, Eulalie Rouvent, Ernest, Alfred Ceresol","New Orleans, LA",LA,Unknown
+30.0,Unknown,Shepherd  Brown,"Unknown, Unknown",Unknown,7/11/1856,0.00602698,M,Stephen,2,2,4,Cash,0.07477,1500.0,1,Unknown,Succession of R. W. Powell Unknown,"Unknown, Unknown",Unknown,Bright Mulatto
+-1.0,New Orleans,Leonora C. Dobbin Fryerson,"New Orleans, LA",LA,2/5/1857,0.00602698,M,Calvin,3,0,3,.,0.07477,0.0,1,New Orleans,William J.  Fryerson,"New Orleans, LA",LA,Unknown
+60.0,New Orleans,Felicie Lartigue Goldthwaite,"New Orleans, LA",LA,2/9/1857,0.00602698,F,Suzanne,2,2,4,Cash,0.07477,1500.0,1,New Orleans,Delphine Marmillion Dufilho,"New Orleans, LA",LA,Negro
+16.0,New Orleans,John Gilles Cocks,"New Orleans, LA",LA,2/7/1857,0.00602698,F,Henriette,2,0,2,Cash,0.07477,1650.0,1,New Orleans,Adele Vitrac,"New Orleans, LA",LA,Negro
+20.0,New Orleans,John Francis Magale,"New Orleans, LA",LA,2/11/1857,0.00602698,M,Wade,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Mulatto
+12.0,Tuscaloosa,James Fredell Long,"Tuscaloosa, AL",AL,2/14/1857,0.00602698,M,William,1,0,1,Cash,0.07477,800.0,1,New Orleans,Matilda Nicolas Daunoy,"New Orleans, LA",LA,Mulatto
+30.0,New Orleans,Luico Mitchell Foster,"New Orleans, LA",LA,2/12/1857,0.00602698,F,Mary,1,1,2,Cash,0.07477,1600.0,1,New Orleans,Wiley J. Martin,"New Orleans, LA",LA,Mulatto
+32.0,Starrison,Claiborne H. Bell,"Starrison, MS",MS,1/14/1857,0.00602698,M,Dick,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Charles T. Cryer,"New Orleans, LA",LA,Negro
+45.0,Iberville,Edward J. Gay,"Iberville, LA",LA,2/14/1857,0.00602698,M,Jack,1,0,1,Cash,0.07477,1050.0,1,Abbeville,Augustus W. Moore,"Abbeville, SC",SC,Negro
+20.0,Iberville,Edward J. Gay,"Iberville, LA",LA,2/14/1857,0.00602698,M,Jim,1,0,1,Cash,0.07477,1250.0,1,Nashville,Thomas G. Sanders,"Nashville, TN",TN,Negro
+16.0,Iberville,Edward J. Gay,"Iberville, LA",LA,2/9/1857,0.00602698,M,George,1,0,1,Cash,0.07477,800.0,1,New Orleans,Daniel P. Logan,"New Orleans, LA",LA,Negro
+18.0,Natchitoches,Benjamin Metoyer,"Natchitoches, LA",LA,1/13/1857,0.00602698,F,Ellen Dorn,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Louis Caretta,"New Orleans, LA",LA,Negro
+42.0,New Orleans,Louise Clara Courtault Ducournau,"New Orleans, LA",LA,2/12/1857,0.00602698,F,Suzan,1,0,1,Donation,0.07477,500.0,1,Unknown,"Mrs. Jacques, Mrs. Mercelite Courtault, Cavalier","Unknown, Unknown",Unknown,Negro
+25.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,2/16/1857,0.00602698,M,George,1,0,1,Cash,0.07477,1100.0,1,Harrison,Seth Batson,"Harrison, MS",MS,Negro
+29.0,New Orleans,Thomas William Compton,"New Orleans, LA",LA,2/16/1857,0.00602698,M,Lewis,1,0,1,Cash,0.07477,875.0,1,Harrodsburg,Christopher Jones,"Harrodsburg, KY",KY,Negro
+50.0,New Orleans,Juan Ygnacio de Egana,"New Orleans, LA",LA,2/16/1857,0.006054689,M,Charles,23,1,24,Credit,0.07512528,32533.75,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Unknown
+28.0,New Orleans,Antoine Cyprien Tremoulet,"New Orleans, LA",LA,2/4/1857,0.00602698,M,Gaspard,1,0,1,Cash,0.07477,1500.0,1,St. Bernard,Philogene Jorda,"St. Bernard, LA",LA,Negro
+45.0,New Orleans,James D. Denegre,"New Orleans, LA",LA,2/10/1857,0.00602698,M,Charles,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Louisa Dumartrait Fuselier,"New Orleans, LA",LA,Mulatto
+47.0,New Orleans,Waterman & Brownlee Unknown,"New Orleans, LA",LA,2/13/1857,0.00602698,M,William,1,0,1,Cash,0.07477,275.0,1,New Orleans,Laurent Millalidon,"New Orleans, LA",LA,Negro
+35.0,New Orleans,William Waterman,"New Orleans, LA",LA,2/13/1857,0.00602698,F,Mary,1,0,1,Cash,0.07477,700.0,1,New Orleans,Laurent Millaudon,"New Orleans, LA",LA,Negro
+20.0,Natchitoches,Benjamin Metoyer,"Natchitoches, LA",LA,2/13/1857,0.00602698,M,Stephens,1,0,1,Cash,0.07477,1175.0,1,New Orleans,Laurent Millaudon,"New Orleans, LA",LA,Negro
+14.0,New Orleans,Thomas Noland Davis,"New Orleans, LA",LA,2/13/1857,0.00602698,F,Josephine,1,0,1,Cash,0.07477,875.0,1,New Orleans,Jean A. Lacroise,"New Orleans, LA",LA,Mulatto
+28.0,New Orleans,George Washington Dunbar,"New Orleans, LA",LA,2/17/1857,0.00602698,F,Irma,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Flix McManus,"New Orleans, LA",LA,Negro
+16.0,St. Mary,"Gustave Ambroise, Hermogene Callery, Sigur","St. Mary, LA",LA,2/14/1857,0.00602698,F,Louisa Betts,11,0,11,Cash,0.07477,1300.0,11,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+34.0,New Orleans,Pascal Lefevre,"New Orleans, LA",LA,2/16/1857,0.00602698,F,Daphne,1,0,1,Cash,0.07477,500.0,1,New Orleans,Nicholas John Hoey,"New Orleans, LA",LA,Negro
+13.0,New Orleans,Henry Sauvage,"New Orleans, LA",LA,2/16/1857,0.00602698,F,Thereze,1,0,1,Cash,0.07477,800.0,1,New Orleans,Marie Zulme Blanchet Mahe,"New Orleans, LA",LA,Negro
+35.0,New Orleans,Aaron Parker Cleveland,"New Orleans, LA",LA,2/17/1857,0.006202525,F,Rebecca,1,1,2,Credit,0.07702264,1620.0,1,New Orleans,Eliza Lecense,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Dexter G. Hitchcock,"New Orleans, LA",LA,2/19/1857,0.006202525,F,Leah,1,0,1,Credit,0.07702264,1050.0,1,New Orleans,Duncan McFarland,"New Orleans, LA",LA,Griff
+13.0,New Orleans,Garrett Francis Oldis,"New Orleans, LA",LA,2/19/1857,0.00587886,M,James/ Jim,1,0,1,Cash and Credit,0.07287264,780.0,1,New Orleans,Charles Francois de Villiers,"New Orleans, LA",LA,Unknown
+10.0,New Orleans,Oscar Isnard,"New Orleans, LA",LA,2/19/1857,0.00587886,M,Henry,1,0,1,Cash and Credit,0.07287264,625.0,1,New Orleans,Charles Francois de Villiers,"New Orleans, LA",LA,Unknown
+31.0,New Orleans,Jean Jacques Isnard,"New Orleans, LA",LA,2/7/1857,0.00587886,F,Henriette,2,0,2,Cash and Credit,0.07287264,1487.04,2,New Orleans,Charles Francois de Villiers,"New Orleans, LA",LA,Unknown
+19.0,New Orleans,Louis Caretta,"New Orleans, LA",LA,2/14/1857,0.00602698,F,Eliza,1,0,1,Cash,0.07477,600.0,1,New Orleans,Laurent Millaudon,"New Orleans, LA",LA,Negro
+24.0,Assumption,Phillip Lonsdale Cox,"Assumption, LA",LA,2/9/1857,0.00602698,M,Henry,1,0,1,Cash,0.07477,1750.0,1,New Orleans,David Resolve Godwin,"New Orleans, LA",LA,Negro
+14.0,Natchitoches,Benjamin Metoyer,"Natchitoches, LA",LA,2/14/1857,0.00602698,M,Jack,1,0,1,Cash,0.07477,1000.0,1,Nashville,Bradley & Sanders Unknown,"Nashville, TN",TN,Negro
+16.0,Natchitoches,Benjamin Metoyer,"Natchitoches, LA",LA,2/11/1857,0.00602698,F,Frances,1,0,1,Cash,0.07477,1150.0,1,Nashville,Bradley & Sanders Unknown,"Nashville, TN",TN,Negro
+12.0,New Orleans,Alphonse Gardes,"New Orleans, LA",LA,2/16/1857,0.00602698,F,Cecile,1,0,1,Cash,0.07477,710.0,1,New Orleans,Louis Pierre Demousseaux,"New Orleans, LA",LA,Griff
+19.0,New Orleans,Mary Ann Taylor McCreary,"New Orleans, LA",LA,2/19/1857,0.00602698,F,Rosanna,1,0,1,Donation,0.07477,1000.0,1,New Orleans,Julia Ann Carroll Sharp,"New Orleans, LA",LA,Negro
+32.0,New Orleans,Elisha Harrioson Fairchild,"New Orleans, LA",LA,2/20/1857,0.006070898,F,Elizabeth,1,0,1,Credit,0.07533316,1000.0,1,New Orleans,Anthony O'Dowd,"New Orleans, LA",LA,Negro
+56.0,New Orleans,Jean Pierre Cazeaux,"New Orleans, LA",LA,2/19/1857,0.00602698,M,Alexander,1,0,1,Cash,0.07477,300.0,1,New Orleans,Francois Barthet,"New Orleans, LA",LA,Negro
+48.0,New Orleans,Gabriel Theodule Fazende,"New Orleans, LA",LA,2/12/1857,0.00602698,F,Patsy,1,0,1,Cash,0.07477,225.0,1,New Orleans,Gustave Jumonville de Villiers,"New Orleans, LA",LA,Negro
+22.0,Assumption,"Xavier, Francois Dugas, Robichaux","Assumption, LA",LA,2/20/1857,0.00602698,M,Jim,6,0,6,Cash,0.07477,1500.0,6,New Orleans,Archibald Lilly,"New Orleans, LA",LA,Griff
+23.0,Assumption,"Xavier, Francois Dugas, Robichaux","Assumption, LA",LA,2/20/1857,0.00602698,M,Willis,1,0,1,Cash,0.07477,1400.0,1,Matagorda,Abram Sheppard,"Matagorda, TX",TX,Negro
+24.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,2/20/1857,0.00602698,F,Judy,1,0,1,Cash,0.07477,815.0,1,Jackson,Publius S. Wisdom,"Jackson, AR",AR,Griff
+22.0,New Orleans,William A. Cabaniss,"New Orleans, LA",LA,2/20/1857,0.00602698,F,Sarah,1,0,1,Cash,0.07477,800.0,1,Dallas,John M. Sturdevant,"Dallas, AL",AL,Griff
+18.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,2/21/1857,0.00602698,F,Hannah,1,0,1,Cash,0.07477,1050.0,1,White River,Charles D. Taylor,"White River, AR",AR,Negro
+28.0,Chicot,Frances Minerva Watson Walker,"Chicot, AR",AR,2/21/1857,0.00602698,F,Lucy,1,4,5,Cash,0.07477,2000.0,1,New Orleans,Clotilde Eloise O'Duhigg Sands,"New Orleans, LA",LA,Negro
+14.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,2/21/1857,0.00602698,M,Emile,1,0,1,Cash,0.07477,880.0,1,New Orleans,Michael Lawssade Cavalier,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Thomas C. Porter,"New Orleans, LA",LA,2/19/1857,0.005761452,M,Dudley,1,0,1,Cash and Credit,0.07137088,1100.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+28.0,New Orleans,James Nimick,"New Orleans, LA",LA,2/20/1857,0.00602698,F,Eliza Emerson,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Thomas Murrar,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,2/23/1857,0.00602698,F,Malinda,1,0,1,Cash,0.07477,650.0,1,Taladego,Jesse White,"Taladego, AL",AL,Negro
+45.0,New Orleans,Peter Tierman,"New Orleans, LA",LA,2/20/1857,0.00602698,F,Esther,1,0,1,Cash,0.07477,500.0,1,New Orleans,Christopher   Connell,"New Orleans, LA",LA,Mulatto
+41.0,New Orleans,Patrick Irwin,"New Orleans, LA",LA,2/18/1857,0.00602698,F,Mary,1,0,1,Cash,0.07477,425.0,1,New Orleans,"William H., Mary Ryan, Daley","New Orleans, LA",LA,Negro
+35.0,New Orleans,Patrick Irwin,"New Orleans, LA",LA,2/17/1857,0.00602698,F,Amanthe,1,0,1,Cash,0.07477,400.0,1,New Orleans,William H. Ryan,"New Orleans, LA",LA,Negro
+22.0,Ouachita,Isaac T. Bass,"Ouachita, LA",LA,2/24/1857,0.00602698,M,Lewis,1,0,1,Cash,0.07477,1200.0,1,Montgomery,Henry W. Farley,"Montgomery, AL",AL,Negro
+29.0,Natchitoches,Jean Come Janin,"Natchitoches, LA",LA,2/23/1857,0.00602698,F,Jane/ Thereza,1,2,3,Cash,0.07477,1625.0,1,Orleans,James Peter Thompson,"Orleans, LA",LA,Negro
+48.0,New Orleans,Louis Joseph Frigerio,"New Orleans, LA",LA,2/24/1857,0.00602698,F,Marie,1,0,1,Cash,0.07477,300.0,1,New Orleans,Aspasie Emilie Thounes,"New Orleans, LA",LA,Negro
+34.0,New Orleans,Nicholas Bastanzi,"New Orleans, LA",LA,2/20/1857,0.00602698,F,Daphne,1,0,1,Cash,0.07477,510.0,1,New Orleans,Pasccal Lefebvre,"New Orleans, LA",LA,Negro
+17.0,New Orleans,John B. Womack,"New Orleans, LA",LA,2/24/1857,0.00602698,F,Louise,1,0,1,Cash,0.07477,950.0,1,New Orleans,Joaquin Viosca Jr.,"New Orleans, LA",LA,Negro
+20.0,Assumption,James T. Pugh,"Assumption, LA",LA,2/25/1857,0.00602698,F,Eliza,1,0,1,Cash,0.07477,1350.0,1,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+46.0,New Orleans,Jean Pezant,"New Orleans, LA",LA,2/24/1857,0.00587886,F,Francoise,1,0,1,Cash and Credit,0.07287264,750.0,1,New Orleans,Charles Francois de Villiers,"New Orleans, LA",LA,Mulatto
+25.0,Plaquemines,George Lanaux,"Plaquemines, LA",LA,2/20/1857,0.006290171,M,Auguste,1,0,1,Credit,0.07814896,800.0,1,New Orleans,Adelaide Felicie Fortier,"New Orleans, LA",LA,Negro
+17.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,2/25/1857,0.00602698,F,Esther,1,0,1,Cash,0.07477,1000.0,1,Matagorda,Abraam Sheppherd Jr.,"Matagorda, TX",TX,Negro
+28.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,2/23/1857,0.00602698,F,Jane,1,2,3,Cash,0.07477,1200.0,1,Unknown,Ann Peyton Watson,"Unknown, Unknown",Unknown,Griff
+13.0,New Orleans,Thomas Sunn,"New Orleans, LA",LA,2/25/1857,0.00602698,F,Dorcas,1,0,1,Cash,0.07477,650.0,1,Bexar,John C. Miles,"Bexar, TX",TX,Negro
+17.0,New Orleans,John B. Womack,"New Orleans, LA",LA,2/23/1857,0.00602698,F,Selina,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Louis Antoine Foucher,"New Orleans, LA",LA,Negro
+19.0,New Orleans,William Barry,"New Orleans, LA",LA,1/27/1857,0.00602698,M,Ursin,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Adele Vitrac,"New Orleans, LA",LA,Negro
+28.0,Carroll,Daniel McNeill,"Carroll, LA",LA,2/20/1857,0.00602698,F,Louisa,30,0,30,Cash,0.07477,25300.0,1,New Orleans,Eldridge Loftin,"New Orleans, LA",LA,Unknown
+35.0,New Orleans,William Jackson Pearce,"New Orleans, LA",LA,2/21/1857,0.00602698,F,Margaret,1,0,1,Cash,0.07477,800.0,1,New Orleans,Benjamin Roach,"New Orleans, LA",LA,Negro
+29.0,New Orleans,Wiley J. Martin,"New Orleans, LA",LA,2/25/1857,0.00602698,F,Harriet,1,0,1,Cash,0.07477,800.0,1,New Orleans,William O. Denegre,"New Orleans, LA",LA,Negro
+29.0,New Orleans,Samuel G. Ferguson,"New Orleans, LA",LA,2/25/1857,0.006070898,M,Daniel Emery,1,0,1,Credit,0.07533316,1168.3,1,New Orleans,Sewell T. Taylor,"New Orleans, LA",LA,Negro
+40.0,New Orleans,William Jackson Maynard,"New Orleans, LA",LA,2/25/1857,0.00602698,F,Charlotte,1,0,1,Cash,0.07477,350.0,1,New Orleans,Josephine Bozonier Guesnon,"New Orleans, LA",LA,Negro
+15.0,New Orleans,Lucia Palao,"New Orleans, LA",LA,2/24/1857,0.00602698,F,Ophelia,1,0,1,Cash,0.07477,800.0,1,New Orleans,Charles Emanuel Lomine,"New Orleans, LA",LA,Mulatto
+14.0,New Orleans,Mary Fanner Spearing,"New Orleans, LA",LA,2/9/1857,0.006202525,M,Jim,1,0,1,Credit,0.07702264,936.0,1,New Orleans,Henry E. Spearing,"New Orleans, LA",LA,Negro
+40.0,New Orleans,Joseph M.  Bensadon,"New Orleans, LA",LA,2/25/1857,0.00583485,M,Jordan,1,0,1,Credit,0.07230948,1250.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Mulatto
+30.0,New Orleans,Lionel C. Levy,"New Orleans, LA",LA,2/20/1857,0.00602698,F,Elizabeth,1,0,1,Cash,0.07477,1075.0,1,New Orleans,Frederick William Kirchhoff,"New Orleans, LA",LA,Negro
+19.0,New Orleans,Justin Wolkart,"New Orleans, LA",LA,2/25/1857,0.00602698,M,Hypolite,2,0,2,Cash,0.07477,1850.0,2,New Orleans,Victoire Hotard Lorio,"New Orleans, LA",LA,Mulatto
+21.0,Orleans,Augustin Toutant,"Orleans, LA",LA,2/21/1857,0.00602698,F,Euphrosine,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Marie Emilia Toutant,"New Orleans, LA",LA,Negro
+21.0,Lafourche,Pierre Ernest Lorio,"Lafourche, LA",LA,2/25/1857,0.00587886,F,Pauline,1,1,2,Cash and Credit,0.07287264,1225.0,1,New Orleans,Victoire Hotard Lorio,"New Orleans, LA",LA,Mulatto
+29.0,New Orleans,Rosemond Lorio,"New Orleans, LA",LA,2/25/1857,0.00587886,F,Constance,3,0,3,Cash and Credit,0.07287264,1275.0,3,New Orleans,Victoire Hotard Lorio,"New Orleans, LA",LA,Griff
+39.0,New Orleans,Louise Elodie Pardo Lesseps,"New Orleans, LA",LA,2/24/1857,0.005790818,F,Esther,1,0,1,Cash and Credit,0.07174632,300.0,1,New Orleans,Marie Manette Dejan Padron,"New Orleans, LA",LA,Unknown
+47.0,New Orleans,William Waterman,"New Orleans, LA",LA,2/13/1857,0.00602698,M,William,1,0,1,Cash,0.07477,137.5,1,New Orleans,William Brownlee,"New Orleans, LA",LA,Negro
+27.0,New Orleans,Robert C. Hutchinson,"New Orleans, LA",LA,2/14/1857,0.00602698,F,Philistine,1,0,1,Cash,0.07477,1300.0,1,New Orleans,Clara Claire Tolidano Godwin,"New Orleans, LA",LA,Negro
+39.0,New Orleans,Thereze Rancure Baguie,"New Orleans, LA",LA,2/21/1857,0.00602698,F,Delphine,1,0,1,Cash,0.07477,450.0,1,New Orleans,Felix Robin,"New Orleans, LA",LA,Mulatto
+40.0,New Orleans,Francoise Alexandrine Eliza Crozet Magne,"New Orleans, LA",LA,2/18/1857,0.00602698,F,Melite,4,1,5,Donation,0.07477,2000.0,4,New Orleans,Marie Thereze Malafosse Weisse,"New Orleans, LA",LA,Griff
+21.0,New Orleans,Herman Curtius,"New Orleans, LA",LA,2/27/1857,0.005717386,M,John Meselas,1,0,1,Credit,0.07080772,1300.0,1,New Orleans,George Maurer,"New Orleans, LA",LA,Negro
+23.0,New Orleans,Henry S. Swasey,"New Orleans, LA",LA,2/27/1857,0.00602698,M,John,1,0,1,Cash,0.07477,1150.0,1,New Orleans,John Henry Kellar,"New Orleans, LA",LA,Mulatto
+30.0,New Orleans,Louis Alfred Ducros,"New Orleans, LA",LA,2/25/1857,0.006202525,F,Mary,3,1,4,Credit,0.07702264,1200.0,3,New Orleans,M. Louis Octave Reggio,"New Orleans, LA",LA,Negro
+32.0,New Orleans,David Resolve Godwin,"New Orleans, LA",LA,1/29/1857,0.00602698,M,Richard Shepperd,1,0,1,Cash,0.07477,835.0,1,Unknown,John Henry Brown,"Unknown, Unknown",Unknown,Negro
+40.0,New Orleans,Edward C. Payne,"New Orleans, LA",LA,3/9/1857,0.00583485,M,Henry,1,0,1,Cash and Credit,0.07230948,1200.0,1,New Orleans,May Battaile,"New Orleans, LA",LA,Griff
+19.0,New Orleans,Robert Spence,"New Orleans, LA",LA,3/9/1857,0.00602698,F,Kitty,1,0,1,Cash,0.07477,775.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+24.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,3/13/1857,0.00602698,F,Armantine,1,1,2,Cash,0.07477,1100.0,1,New Orleans,Tibulle Mendez,"New Orleans, LA",LA,Negro
+35.0,New Orleans,Adelaide Brown,"New Orleans, LA",LA,3/9/1857,0.00602698,F,Adele,1,0,1,Cash,0.07477,140.0,1,New Orleans,Suzanne Bosque,"New Orleans, LA",LA,Negro
+40.0,New Orleans,Louis Canetta,"New Orleans, LA",LA,2/26/1857,0.00587886,F,Julienne,1,1,2,Cash and Credit,0.07287264,975.0,1,New Orleans,Jeanne Felicianne Jorda Forneret,"New Orleans, LA",LA,Negro
+60.0,New Orleans,Mary S. Walker,"New Orleans, LA",LA,2/24/1857,0.00602698,M,Andrew,1,0,1,Cash,0.07477,250.0,1,New Orleans,Jean Baptiste Bachine,"New Orleans, LA",LA,Negro
+19.0,Wharton,Bartley Hanchfield,"Wharton, TX",TX,2/18/1857,0.00602698,F,Celianne,1,0,1,Cash,0.07477,945.0,1,New Orleans,Sarah Cecilia Ridney Kewish,"New Orleans, LA",LA,Griff
+36.0,New Orleans,Mary C. Thayer Van Ostern,"New Orleans, LA",LA,3/16/1857,0.00602698,F,Grace,1,0,1,Cash,0.07477,620.0,1,New Orleans,Jane A. Brady Medd,"New Orleans, LA",LA,Negro
+18.0,Columbia,Jacob L. Levy,"Columbia, LA",LA,3/18/1857,0.00602698,F,Adililne,1,0,1,Cash,0.07477,1100.0,1,Baton Rouge,Mary E. Gayle Stuart,"Baton Rouge, LA",LA,Negro
+30.0,New Orleans,Maurice Scooler,"New Orleans, LA",LA,3/17/1857,0.00602698,F,Philis,1,3,4,Cash,0.07477,1800.0,1,New Orleans,Poreponne Colin,"New Orleans, LA",LA,Negro
+18.0,New Orleans,Samuel Jameson,"New Orleans, LA",LA,3/16/1857,0.00602698,M,Caleb,1,0,1,Cash,0.07477,1250.0,1,Jacksonville,Thomas Williams,"Jacksonville, AL",AL,Negro
+20.0,New Orleans,"Auguste, Pierre Pino, Leveque","New Orleans, LA",LA,2/5/1857,0.00587886,M,Moses,1,0,1,Cash and Credit,0.07287264,1600.0,1,St. Bernard,Charles Fierville Bienvenu,"St. Bernard, LA",LA,Negro
+44.0,Orleans,Angeline Fowler,"Orleans, LA",LA,3/18/1857,0.00602698,F,Elvina/ Vina,1,0,1,Cash,0.07477,425.0,1,St. Tammany,Jane E. Fuler,"St. Tammany, LA",LA,Negro
+23.0,Chicot,Charles McDurmott,"Chicot, AR",AR,3/19/1857,0.00602698,F,Angeline,1,0,1,Cash,0.07477,950.0,1,Unknown,Elliott & Company Unknown,"Unknown, Unknown",Unknown,Quarteroon
+16.0,Hempstead,John L. Bouldin,"Hempstead, AR",AR,3/19/1857,0.00602698,F,Julia,1,0,1,Cash,0.07477,1175.0,1,Montgomery,Horatio Gates Harbin,"Montgomery, AL",AL,Negro
+29.0,New Orleans,Paul Drausin Segond,"New Orleans, LA",LA,3/19/1857,0.00602698,M,Thermopyle,1,0,1,Cash,0.07477,1400.0,1,New Orleans,Palmyre Marie Brown Oxnard,"New Orleans, LA",LA,Negro
+18.0,Lafourche,James Caillouet,"Lafourche, LA",LA,3/20/1857,0.00602698,M,Clakon,4,0,4,Cash,0.07477,1500.0,4,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+14.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,3/20/1857,0.00602698,F,Laurette,1,0,1,Cash,0.07477,800.0,1,New Orleans,Louise Hardouin,"New Orleans, LA",LA,Negro
+18.0,Wilkinson,John W. Burruss,"Wilkinson, MS",MS,3/20/1857,0.00602698,M,Dolphin,1,0,1,Cash,0.07477,1250.0,1,West Baton Rouge,David Pipes,"West Baton Rouge, LA",LA,Negro
+13.0,New Orleans,Seraphin Maspereau,"New Orleans, LA",LA,3/21/1857,0.00602698,F,Anna,1,0,1,Cash,0.07477,650.0,1,Unknown,Francoise Palmyre Brouard Duhart,"Unknown, Unknown",Unknown,Mulatto
+60.0,Iberville,Henry Rantiford,"Iberville, LA",LA,3/7/1857,0.006202525,M,Cupid,1,0,1,Credit,0.07702264,250.0,1,New Orleans,Adele Nelder Kerr,"New Orleans, LA",LA,Negro
+21.0,Iberville,Gideon O. Dupuy,"Iberville, LA",LA,3/20/1857,0.00602698,M,Providence,2,0,2,"Exchange, Cash",0.07477,1600.0,2,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+22.0,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,3/20/1857,0.00602698,F,Julia Ann,2,0,2,"Exchange, Cash",0.07477,1300.0,2,Iberville,Gedeon O. Dupuy,"Iberville, LA",LA,Negro
+46.0,New Orleans,Francois Lafitte,"New Orleans, LA",LA,3/19/1857,0.00602698,F,Betsy,1,1,2,Cash,0.07477,400.0,1,New Orleans,Desir Birac,"New Orleans, LA",LA,Mulatto
+40.0,Natchitoches,Jean Adolphe Ducournau,"Natchitoches, LA",LA,3/21/1857,0.00602698,F,Pamela,1,0,1,Cash,0.07477,450.0,1,St. Mary,Philip Patout & Co. Unknown,"St. Mary, LA",LA,Negro
+18.0,Natchitoches,Jean Adolphe Ducournau,"Natchitoches, LA",LA,3/21/1857,0.00602698,F,Nancy,1,0,1,Cash,0.07477,1250.0,1,Maryland,Bernard Moore Campbell,"Maryland, VA",VA,Negro
+22.0,Punica,T. B. Hill,"Punica, MS",MS,3/23/1857,0.00602698,M,Bob,2,0,2,Cash,0.07477,1350.0,2,Choctaw,Jefferson B. Allgood,"Choctaw, AL",AL,Negro
+10.0,Rapides,Charlotte Joetchki Bernstein,"Rapides, LA",LA,3/20/1857,0.00602698,F,Jenny,1,0,1,Cash,0.07477,600.0,1,New Orleans,Robert McRee,"New Orleans, LA",LA,Griff
+20.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,3/16/1857,0.00602698,M,Joe,1,0,1,Cash,0.07477,950.0,1,New Orleans,Pierre Ninon Faisans,"New Orleans, LA",LA,Negro
+26.0,Livingston,Christian Grenes,"Livingston, LA",LA,3/23/1857,0.00602698,F,Mary,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Dark Griff
+18.0,New Orleans,Gustavus Bredow,"New Orleans, LA",LA,3/6/1857,0.00602698,M,Strother,1,0,1,Cash,0.07477,1300.0,1,Galveston,Michael Laugan,"Galveston, TX",TX,Negro
+35.0,New Orleans,George Washington Cox,"New Orleans, LA",LA,3/24/1857,0.00602698,M,William,1,0,1,Cash,0.07477,900.0,1,New Orleans,Aaron Cox,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Sarah Bartlett Saunders,"New Orleans, LA",LA,3/21/1857,0.00602698,M,Nelson,1,0,1,Cash,0.07477,1055.0,1,New Orleans,Sarah E. Melhado Bartlett,"New Orleans, LA",LA,Negro
+20.0,Rapides,Thomas Jefferson Stafford,"Rapides, LA",LA,3/21/1857,0.006202525,F,Charlotte Jenefa,1,0,1,Credit,0.07702264,1404.0,1,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Griff
+38.0,New Orleans,Adolpheus Neuhaus,"New Orleans, LA",LA,3/20/1857,0.00602698,M,Louis,1,0,1,Cash,0.07477,800.0,1,West Baton Rouge,David Pipes,"West Baton Rouge, LA",LA,Negro
+19.0,Pointe Coupee,James Alfred Morgan,"Pointe Coupee, LA",LA,3/16/1857,0.00602698,M,Patrick,2,0,2,Cash,0.07477,3000.0,1,Augusta,Nelson Clement Trowbridge,"Augusta, GA",GA,Unknown
+20.0,Bossier,Benjamin W. Burnham,"Bossier, LA",LA,3/16/1857,0.00602698,M,Willis,1,0,1,Cash,0.07477,900.0,1,New Orleans,Lawrence Predergast,"New Orleans, LA",LA,Negro
+24.0,New Orleans,Juan Ygnacio de Egana,"New Orleans, LA",LA,3/24/1857,0.006377733,M,Lawson Elvy,18,0,18,Credit,0.07927528,1575.0,18,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+21.0,New Orleans,Juan Ygnacio de Egana,"New Orleans, LA",LA,3/24/1857,0.006202525,F,Sarah Jenkins,1,1,2,Credit,0.07702264,1400.0,1,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+32.0,Rapides,Amelie Baillio Compton,"Rapides, LA",LA,3/21/1857,0.006202525,M,John,1,0,1,Credit,0.07702264,1836.0,1,New Orleans,John Gilbert Cocks,"New Orleans, LA",LA,Negro
+22.0,New Orleans,John Lyall,"New Orleans, LA",LA,3/23/1857,0.00602698,M,Louis,1,0,1,Cash,0.07477,1050.0,1,New Orleans,Francois Snaer,"New Orleans, LA",LA,Negro
+24.0,St. Mary,Charles Fleming,"St. Mary, LA",LA,3/26/1857,0.00602698,M,Walker,1,0,1,Cash,0.07477,1400.0,1,Augusta,Nelson Clement Trowbridge,"Augusta, GA",GA,Negro
+19.0,Plaquemines,William Stackhouse,"Plaquemines, LA",LA,3/25/1857,0.00602698,M,Pierre,1,0,1,Cash,0.07477,1250.0,1,New Orleans,Frank Vidal,"New Orleans, LA",LA,Negro
+45.0,New Orleans,Gustave Phillippe Marigny,"New Orleans, LA",LA,3/26/1857,0.00602698,F,Rose,1,0,1,Cash,0.07477,400.0,1,New Orleans,Delphin Bienvenu,"New Orleans, LA",LA,Negro
+32.0,New Orleans,Alfred Vienne,"New Orleans, LA",LA,12/24/1856,0.00587886,M,Ness,2,0,2,Cash and Credit,0.07287264,1250.0,1,St. Bernard,Louis Marcel Bienvenu,"St. Bernard, LA",LA,Negro
+40.0,New Orleans,Alfred Vienne,"New Orleans, LA",LA,3/24/1857,0.00602698,F,Emily,2,0,2,Cash,0.07477,1975.0,1,St. Bernard,Louis Marcel Bienvenu,"St. Bernard, LA",LA,Negro
+33.0,New Orleans,Robert Spence,"New Orleans, LA",LA,3/25/1857,0.00602698,F,Lucrecia,1,0,1,Cash,0.07477,775.0,1,New Orleans,Virginia C. Alexander Burke,"New Orleans, LA",LA,Negro
+11.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,3/28/1857,0.00602698,M,Giffe,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Adolphe Rocquet,"New Orleans, LA",LA,Negro
+45.0,Assumption,Jacques S. Lavinge,"Assumption, LA",LA,3/26/1857,0.00602698,F,Rosette,1,0,1,Cash,0.07477,800.0,1,New Orleans,Pierre Landreaux,"New Orleans, LA",LA,Mulatto
+37.0,New Orleans,Margaret Giffney Haughrey,"New Orleans, LA",LA,3/27/1857,0.006377733,M,Jim,1,0,1,Credit,0.07927528,600.0,1,New Orleans,Philip Rotchford,"New Orleans, LA",LA,Negro
+43.0,New Orleans,Stephen Jones,"New Orleans, LA",LA,3/28/1857,0.00602698,M,Robert,1,0,1,Cash,0.07477,675.0,1,New Orleans,Edward Farrelly,"New Orleans, LA",LA,Negro
+22.0,New Orleans,John H. Reid,"New Orleans, LA",LA,3/27/1857,0.00602698,M,William,1,0,1,Cash,0.07477,1500.0,1,New Orleans,George Chapman,"New Orleans, LA",LA,Negro
+18.0,Unknown,Alfred Ingraham,"Unknown, MS",MS,3/6/1857,0.00602698,F,Nelly,1,0,1,Cash,0.07477,1050.0,1,New Orleans,Charlotte Wilhelmina Verlinger Backhaus-Peper,"New Orleans, LA",LA,Negro
+36.0,New Orleans,John Morris Bach,"New Orleans, LA",LA,3/23/1857,0.00587886,M,Willis,1,0,1,Cash and Credit,0.07287264,605.0,1,St. Bernard,Jules Reggio,"St. Bernard, LA",LA,Negro
+24.0,Iberville,Joesph Elliot,"Iberville, LA",LA,3/5/1857,0.00602698,F,Rosa,1,0,1,Cash,0.07477,1300.0,1,New Orleans,Manuel Elliott,"New Orleans, LA",LA,Negro
+43.0,New Orleans,Wilhelmina Marguerite Albers Woeniger,"New Orleans, LA",LA,3/30/1857,0.00602698,M,Eugine/ Guillermo,1,0,1,Cash,0.07477,212.0,1,New Orleans,Joseph Benito,"New Orleans, LA",LA,Negro
+39.0,Jefferson,Florentin Berthier,"Jefferson, LA",LA,3/5/1857,0.00602698,M,Charles/ Robert,1,0,1,Cash,0.07477,725.0,1,Jefferson,Joseph Wandestrand,"Jefferson, LA",LA,Negro
+28.0,New Orleans,Louis Ferrioe Bouckereau,"New Orleans, LA",LA,3/31/1857,0.00602698,M,Jacques/ Jack,1,0,1,Cash,0.07477,900.0,1,New Orleans,Desiree Landry le Blanc,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Pilcher Goodrich & Co. Unknown,"New Orleans, LA",LA,3/31/1857,0.00602698,M,Augustus,1,0,1,Cash,0.07477,1050.0,1,Vicksburg,William L. Bobb,"Vicksburg, MS",MS,Griff
+60.0,New Orleans,Nelson Dangerfield Saunders,"New Orleans, LA",LA,3/27/1857,0.00602698,M,Louis Congo,1,0,1,Cash,0.07477,250.0,1,New Orleans,Arthur Ambrose Maginnis,"New Orleans, LA",LA,Negro
+38.0,New Orleans,Logan McKnight,"New Orleans, LA",LA,3/27/1857,0.00602698,F,Jane,1,0,1,Cash,0.07477,1200.0,1,New Orleans,William C. Tompkins,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Maximilien Ferdinand Bonzano,"New Orleans, LA",LA,3/27/1857,0.00602698,M,Neron,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Felicia de Buys,"New Orleans, LA",LA,Negro
+26.0,St. Mary,Francois Optat Darby,"St. Mary, LA",LA,3/31/1857,0.00602698,M,Daniel Sapp,3,0,3,"Exchange, Cash",0.07477,1433.0,3,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+20.0,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,3/31/1857,0.00602698,M,Henry Lester,2,0,2,"Exchange, Cash",0.07477,1433.0,2,St. Mary,Francois Optat Darby,"St. Mary, LA",LA,Negro
+37.0,New Orleans,Jean Moreau,"New Orleans, LA",LA,3/30/1857,0.005761452,F,Estelle,1,0,1,Cash and Credit,0.07137088,600.0,1,New Orleans,Claude Dolbeau,"New Orleans, LA",LA,Negro
+41.0,New Orleans,"Jean Bernard, John Cahin Couret, Stevenson","New Orleans, LA",LA,3/28/1857,0.00602698,M,Jim,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Charles E. Whitmore,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Richard Mason Pasteur,"New Orleans, LA",LA,3/30/1857,0.00615867,F,Suzan,1,1,2,Credit,0.07645948,1000.0,1,New Orleans,Mary Suzannah Walker,"New Orleans, LA",LA,Negro
+24.0,New Orleans,Anthony Seiler,"New Orleans, LA",LA,4/1/1857,0.00602698,F,Charlotte,1,0,1,Cash,0.07477,1050.0,1,New Orleans,George Maurer,"New Orleans, LA",LA,Negro
+19.0,New Orleans,Sarah Gaines,"New Orleans, LA",LA,3/30/1857,0.00602698,F,Flora,1,0,1,Cash,0.07477,1050.0,1,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+36.0,New Orleans,Wiley J. Martin,"New Orleans, LA",LA,3/30/1857,0.00602698,F,Sylvie,2,1,3,Cash,0.07477,2200.0,1,New Orleans,Charles L. Gumbel,"New Orleans, LA",LA,Negro
+26.0,New Orleans,August Ferrier,"New Orleans, LA",LA,4/2/1857,0.00602698,M,William,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Samuel P. Auchminty,"New Orleans, LA",LA,Negro
+44.0,New Orleans,Henry H. Lee,"New Orleans, LA",LA,3/31/1857,0.006377733,M,William King,2,3,5,Credit,0.07927528,2000.0,1,Newstead,Stephen Merritt,"Newstead, NY",NY,Negro
+43.0,Jefferson,Francis Dugue Jr.,"Jefferson, LA",LA,3/31/1857,0.00602698,F,Ellen,1,2,3,Cash,0.07477,2850.0,1,New Orleans,Gustavus Bredow Sr.,"New Orleans, LA",LA,Negro
+12.0,New Orleans,Joseph Mathis,"New Orleans, LA",LA,4/4/1857,0.00602698,M,Simon,1,0,1,Cash,0.07477,775.0,1,New Orleans,Christian Lindauer,"New Orleans, LA",LA,Griff
+23.0,Assumption,Vincent Tranquillin Pintado,"Assumption, LA",LA,10/13/1856,0.00602698,F,July Ann,1,0,1,Cash,0.07477,850.0,1,New Orleans,Pierre Bachelot,"New Orleans, LA",LA,Negro
+28.0,New Orleans,Anna Eliza Martin,"New Orleans, LA",LA,10/13/1856,0.005761452,F,Elmira/ Mira,1,0,1,Cash and Credit,0.07137088,1000.0,1,New Orleans,Margaret J. Mallet,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Joseph Elliot,"New Orleans, LA",LA,10/14/1856,0.00602698,M,Michel,1,0,1,Cash,0.07477,1325.0,1,New Orleans,Ovide St. Amand,"New Orleans, LA",LA,Negro
+29.0,New Orleans,Florence Phister,"New Orleans, LA",LA,10/11/1856,0.00602698,M,George,2,0,2,Cash,0.07477,1050.0,2,New Orleans,Jackson McLanathan,"New Orleans, LA",LA,Negro
+27.0,Jefferson,Francis Dugue Jr.,"Jefferson, LA",LA,10/13/1856,0.00602698,M,Dennis,1,0,1,Cash,0.07477,530.0,1,Jefferson,Joseph Holden,"Jefferson, LA",LA,Negro
+31.0,New Orleans,Benjamin Franklin Flanders,"New Orleans, LA",LA,10/17/1856,0.00602698,F,Fanny,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Jacob Kohn,"New Orleans, LA",LA,Mulatto
+19.0,New Orleans,Richard Barry Gracey,"New Orleans, LA",LA,10/20/1856,0.006100165,M,Ike/ Isaac,1,0,1,Credit,0.0757086,650.0,1,San Antonio,Walter S. A. Kirksey,"San Antonio, TX",TX,Negro
+45.0,New Orleans,Jane Hamilton,"New Orleans, LA",LA,10/15/1856,0.00602698,F,Harriet,1,0,1,Cash,0.07477,500.0,1,New Orleans,John Todd,"New Orleans, LA",LA,Griff
+24.0,Plaquemines,Charles Frederick Berens,"Plaquemines, LA",LA,10/18/1856,0.00602698,F,Genera,3,1,4,Cash,0.07477,1200.0,0,Unknown,Ann Haskins McAshan,"Unknown, Unknown",Unknown,Mulatto
+33.0,New Orleans,Benjamin Mouchon,"New Orleans, LA",LA,10/16/1856,0.00602698,M,Antoine,1,0,1,Cash,0.07477,1000.0,1,New Orleans,Paul Mouchon,"New Orleans, LA",LA,Unknown
+14.5,New Orleans,Francois Suzeneau,"New Orleans, LA",LA,10/20/1856,0.006202525,F,Mary Ann,1,0,1,Credit,0.07702264,900.0,1,New Orleans,John Henry,"New Orleans, LA",LA,Unknown
+23.0,New Orleans,Drausin Barthelemy Macarty,"New Orleans, LA",LA,10/21/1856,0.00602698,M,Baptiste,1,0,1,Cash,0.07477,540.0,1,New Orleans,Adele Macarty,"New Orleans, LA",LA,Negro
+20.0,New Orleans,Jacob Dreyfous,"New Orleans, LA",LA,10/21/1856,0.00587886,F,Susanne,1,1,2,Cash and Credit,0.07287264,950.0,1,New Orleans,Adele Macarty,"New Orleans, LA",LA,Negro
+45.0,New Orleans,Angel Martin,"New Orleans, LA",LA,10/21/1856,0.00587886,F,Josephine,1,1,2,Cash and Credit,0.07287264,800.0,1,New Orleans,Adele Macarty,"New Orleans, LA",LA,Negro
+11.0,New Orleans,Cyrille Labiche,"New Orleans, LA",LA,10/21/1856,0.00587886,M,Julian,1,0,1,Cash and Credit,0.07287264,600.0,1,New Orleans,Adele Macarty,"New Orleans, LA",LA,Negro
+25.0,New Orleans,Stephen Jones,"New Orleans, LA",LA,10/21/1856,0.00602698,M,Bill/ William,1,0,1,Cash,0.07477,700.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Manuel Payro,"New Orleans, LA",LA,10/20/1856,0.005790818,M,William,2,3,5,Cash and Credit,0.07174632,2000.0,1,New Orleans,Charles Xavier Lambert,"New Orleans, LA",LA,Negro
+38.0,New Orleans,Francois Gabriel Le Vasseur,"New Orleans, LA",LA,10/20/1856,0.006202525,M,Temp/ Tom,1,0,1,Credit,0.07702264,800.0,1,Dijon,Charles Corlas,"Dijon, France",France,Negro
+16.5,New Orleans,Jules Sere,"New Orleans, LA",LA,10/16/1856,0.00602698,F,Serene/ Serina,1,0,1,Cash,0.07477,1000.0,1,Rapides,Emily M. Terrel,"Rapides, LA",LA,Negro
+25.0,New Orleans,"Jose, Phillip Bestoso, Basart","New Orleans, LA",LA,10/21/1856,0.00602698,F,Rebecca,1,1,2,Cash,0.07477,1375.0,1,New Orleans,Jean Baptiste Fleitas,"New Orleans, LA",LA,Unknown
+20.0,New Orleans,Romina Crocker,"New Orleans, LA",LA,10/18/1856,0.00602698,F,Henrietta,1,1,2,Cash,0.07477,1000.0,1,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,Negro
+37.0,New Orleans,Fanny Soula Aurray,"New Orleans, LA",LA,10/21/1856,0.00602698,F,Mary,1,0,1,Cash,0.07477,800.0,1,New Orleans,Helene Pellerin,"New Orleans, LA",LA,Negro
+14.0,New Orleans,Cyprien Dufour,"New Orleans, LA",LA,10/24/1856,0.00587886,M,John,1,0,1,Cash and Credit,0.07287264,800.0,1,New Orleans,Adele Macarty,"New Orleans, LA",LA,Negro
+41.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,10/22/1856,0.00602698,F,Nancy,1,0,1,Cash,0.07477,140.0,1,New Orleans,Bernard Cohen,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Lewis Neville Shelton,"New Orleans, LA",LA,10/23/1856,0.00602698,F,Louise,1,0,1,Cash,0.07477,500.0,1,New Orleans,Cecile Canellas,"New Orleans, LA",LA,Negro
+25.0,Bolivar,Elias Rees Porter,"Bolivar, MS",MS,10/24/1856,0.00602698,M,William Henry,10,0,10,Cash,0.07477,1450.0,10,Richmond,Jeremiah Smith,"Richmond, VA",VA,Unknown
+43.0,Plaquemines,David Raymond Fox,"Plaquemines, LA",LA,10/24/1856,0.00602698,M,Rubin,1,0,1,Cash,0.07477,900.0,1,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+34.0,Jefferson,Dominique Verges,"Jefferson, LA",LA,10/23/1856,0.00602698,F,Malinda,1,1,2,Cash,0.07477,600.0,1,New Orleans,"Jean Baptiste, Melite Bellome","New Orleans, LA",LA,Mulatto
+19.0,New Orleans,Lavinia Cells Dabney,"New Orleans, LA",LA,10/20/1856,0.00602698,F,Lavinia,1,0,1,Cash,0.07477,1200.0,1,New Orleans,John B. Womack,"New Orleans, LA",LA,Negro
+21.0,Orleans,Hugh O'Donnell,"Orleans, LA",LA,10/25/1856,0.00602698,M,Tom,1,0,1,Cash,0.07477,1375.0,1,Richmond,Jeremiah Smith,"Richmond, VA",VA,Griff
+23.0,New Orleans,John McDonnell,"New Orleans, LA",LA,10/23/1856,0.006202525,M,Henry Gordon,1,0,1,Credit,0.07702264,1500.0,1,New Orleans,Andrew B. James,"New Orleans, LA",LA,Negro
+18.0,New Orleans,Paulding F. Anderson,"New Orleans, LA",LA,10/27/1856,0.005732077,F,Milly,1,1,2,Cash and Credit,0.07099544,1000.0,1,New Orleans,Margaret W. Scott,"New Orleans, LA",LA,Mulatto
+39.0,New Orleans,Louis Caretta,"New Orleans, LA",LA,10/22/1856,0.00602698,F,Louisa,1,1,2,Cash,0.07477,610.0,1,New Orleans,Adelaide Caroline Gentilly,"New Orleans, LA",LA,Negro
+31.0,New Orleans,Mary Ann Hunt,"New Orleans, LA",LA,10/28/1856,0.00602698,F,Virginie,1,0,1,"Exchange, Cash",0.07477,1050.0,1,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,Negro
+22.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,10/28/1856,0.00602698,F,Louise,1,0,1,"Exchange, Cash",0.07477,900.0,1,New Orleans,Mary Ann Hunt,"New Orleans, LA",LA,Negro
+40.0,Jackson,Richard Samuel Bostick,"Jackson, TX",TX,10/28/1856,0.00602698,M,Jack,6,1,7,Cash,0.07477,1000.0,6,Richmond,Jeremiah Smith,"Richmond, VA",VA,Negro
+18.0,New Orleans,John B. Robertson,"New Orleans, LA",LA,10/25/1856,0.00587886,F,Denise,1,0,1,Cash and Credit,0.07287264,1450.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+31.0,Livingston,William Wells,"Livingston, LA",LA,10/29/1856,0.00602698,F,Mary,1,0,1,Cash,0.07477,500.0,1,New Orleans,Charles T. Cryer,"New Orleans, LA",LA,Negro
+25.0,Unknown,John Culbertson,"Unknown, Unknown",Unknown,10/14/1856,0.006054689,F,Marianne,1,0,1,Cash and Credit,0.07512528,350.0,1,New Orleans,Henry Fletcher,"New Orleans, LA",LA,Griff
+44.0,New Orleans,John Alfred Swift,"New Orleans, LA",LA,10/21/1856,0.00587886,F,Rose,1,0,1,Cash and Credit,0.07287264,500.0,1,New Orleans,James Jerome Dalton,"New Orleans, LA",LA,Negro
+25.0,New Orleans,James Peter Freret,"New Orleans, LA",LA,10/25/1856,0.0,M,Johnson,1,0,1,Cash and Credit,0.0,980.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+30.0,New Orleans,Maria Rosanda,"New Orleans, LA",LA,10/31/1856,0.00602698,M,George,1,0,1,Cash,0.07477,100.0,1,New Orleans,Hezekiah Keefer,"New Orleans, LA",LA,Negro
+32.0,New Orleans,James Mimick,"New Orleans, LA",LA,10/31/1856,0.00602698,F,Milly,1,4,5,Cash,0.07477,1810.0,1,Panola,Homer L. Anthony,"Panola, MS",MS,Negro
+17.0,New Orleans,Peter McGin,"New Orleans, LA",LA,10/31/1856,0.00602698,M,Frank,1,0,1,Cash,0.07477,950.0,1,Panola,Homer L. Anthony,"Panola, MS",MS,Negro
+19.0,New Orleans,Will Forordyce Bisbee,"New Orleans, LA",LA,11/1/1856,0.00602698,F,Martha Ann,1,0,1,Cash,0.07477,1200.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Negro
+35.0,New Orleans,John T. Cox,"New Orleans, LA",LA,11/3/1856,0.00602698,F,Ann,1,0,1,Cash,0.07477,700.0,1,New Orleans,Bernard Kendig,"New Orleans, LA",LA,Black
+25.0,New Orleans,John T. Moore,"New Orleans, LA",LA,10/27/1856,0.005732077,M,Biggins,1,0,1,Cash and Credit,0.07099544,1400.0,1,New Orleans,Thomas Jefferson Mulder,"New Orleans, LA",LA,Negro
+7.0,New Orleans,Louis Vella,"New Orleans, LA",LA,10/31/1856,0.00602698,F,Patty,1,0,1,Cash,0.07477,400.0,1,Panola,Homer L. Anthony,"Panola, MS",MS,Negro
+20.0,New Orleans,James Chittenden,"New Orleans, LA",LA,10/31/1856,0.00602698,M,Dudley,1,0,1,Cash,0.07477,990.0,1,Panola,Homer L. Anthony,"Panola, MS",MS,Negro
+24.0,New Orleans,Samuel Bell,"New Orleans, LA",LA,11/4/1856,0.00602698,F,Leah,1,0,1,Cash,0.07477,1225.0,1,New Orleans,George Heation,"New Orleans, LA",LA,Negro
+33.0,New Orleans,Warren Davis,"New Orleans, LA",LA,10/27/1856,0.005790818,F,Ellen Hanson,1,0,1,Cash and Credit,0.07174632,1050.0,1,New Orleans,Milton Job Reigart,"New Orleans, LA",LA,Negro
+17.0,New Orleans,Bernard Kendig,"New Orleans, LA",LA,11/7/1856,0.00602698,M,Alfred,1,0,1,Cash,0.07477,750.0,1,New Orleans,Henri Germain,"New Orleans, LA",LA,Griff
+20.0,New Orleans,A. Lilly,"New Orleans, LA",LA,10/23/1856,0.00602698,M,Henry/ Ephraim,1,0,1,Cash,0.07477,950.0,1,Galveston,John Henry Brown,"Galveston, TX",TX,Negro
+25.0,New Orleans,Jean Aristide Berniard,"New Orleans, LA",LA,11/6/1856,0.00615867,F,Marie Irene,1,0,1,Credit,0.07645948,550.0,1,New Orleans,"Remy, Marcelitte  Cavalier","New Orleans, LA",LA,Mulatto
+12.0,New Orleans,John B. Womack,"New Orleans, LA",LA,12/5/1856,0.00602698,F,Marguerite,1,0,1,Cash,0.07477,650.0,1,New Orleans,Pierre Casimir Blanchin,"New Orleans, LA",LA,Mulatto
+30.0,New Orleans,James M. Hamilton,"New Orleans, LA",LA,12/6/1856,0.00602698,M,Solomon,1,0,1,Cash,0.07477,1300.0,1,Jefferson,William Smith,"Jefferson, LA",LA,Negro
+25.0,New Orleans,Daniel S. Dewes,"New Orleans, LA",LA,12/8/1856,0.00602698,M,Colin,1,0,1,Cash,0.07477,1250.0,1,St. Helena,Jacob B. Strickland,"St. Helena, LA",LA,Negro
+20.0,Plaquemines,Richard Sadler Cubitt,"Plaquemines, LA",LA,12/6/1857,0.00602698,M,John Cunningham,1,0,1,Cash,0.07477,1300.0,1,Baltimore,Bernard Moore Campbell,"Baltimore, MD",MD,Negro
+40.0,New Orleans,Dominique Bouligny,"New Orleans, LA",LA,12/8/1856,0.005790818,F,Louise,1,3,4,Cash and Credit,0.07174632,2400.0,1,New Orleans,Jacobi Lewis,"New Orleans, LA",LA,Griff
+12.0,New Orleans,John Trabue Hatcher,"New Orleans, LA",LA,12/6/1857,0.00602698,M,Edmond,1,0,1,Cash,0.07477,690.0,1,New Orleans,Marie Cecile Daunoy,"New Orleans, LA",LA,Unknown
+24.0,New Orleans,Emily A. Smith Ferriday,"New Orleans, LA",LA,12/6/1857,0.00602698,F,Eliza,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Edwin Morris Rusha,"New Orleans, LA",LA,Yellow
+16.0,New Orleans,Joseph M. Bensadon,"New Orleans, LA",LA,12/9/1856,0.00602698,F,Sarah Jane Long,1,0,1,Cash,0.07477,900.0,1,New Orleans,Henry Smith Hall,"New Orleans, LA",LA,Negro
+14.0,St. James,Samuel Fagot,"St. James, LA",LA,12/9/1856,0.00602698,F,Summerville,1,0,1,Cash,0.07477,1150.0,1,New Orleans,Althee Louise Hewlett,"New Orleans, LA",LA,Negro
+17.0,New Orleans,Paul Emile Theard,"New Orleans, LA",LA,12/8/1856,0.005790818,F,Winny Ann Hartshorn,1,0,1,Cash and Credit,0.07174632,1040.0,1,New Orleans,Alcee Jacques Villere,"New Orleans, LA",LA,Negro
+16.0,New Orleans,Almira L. Phelps,"New Orleans, LA",LA,12/12/1856,0.00602698,F,Elizabeth,1,0,1,Cash,0.07477,775.0,1,New Orleans,Mary L. White Trichell,"New Orleans, LA",LA,Negro
+19.0,Tuscaloosa,James Fredell Long,"Tuscaloosa, AL",AL,12/10/1856,0.00602698,F,Henrietta/ Harriet,1,1,2,Cash,0.07477,950.0,1,New Orleans,Jean Baptiste Fleitas,"New Orleans, LA",LA,Negro
+24.0,New Orleans,Joseph Hernandez,"New Orleans, LA",LA,12/13/1856,0.00602698,F,Celestine,1,0,1,Cash,0.07477,1050.0,1,New Orleans,Caroline Lamarque,"New Orleans, LA",LA,Negro
+15.0,New Orleans,Isaac P. Abrams,"New Orleans, LA",LA,12/9/1856,0.00602698,F,Mary,1,0,1,Cash,0.07477,1600.0,1,Port Gibson,George Washington Reid,"Port Gibson, MS",MS,Mulatto
+34.0,New Orleans,Helene Pellerin Harrison,"New Orleans, LA",LA,12/13/1856,0.00602698,F,Henriette,1,0,1,Cash,0.07477,700.0,1,New Orleans,Albert Henning,"New Orleans, LA",LA,Negro
+18.0,West Baton Rouge,Joseph Alfred Landry,"West Baton Rouge, LA",LA,12/13/1856,0.00602698,F,Henriette,1,0,1,Cash,0.07477,1100.0,1,New Orleans,Elizabeth Desire Etlite Litte de L' Isle,"New Orleans, LA",LA,Negro
+21.0,New Orleans,Henry Smith Hall,"New Orleans, LA",LA,12/15/1856,0.00602698,F,Amarelly,1,0,1,Cash,0.07477,925.0,1,Jefferson,David Resolve Godwin,"Jefferson, LA",LA,Mulatto

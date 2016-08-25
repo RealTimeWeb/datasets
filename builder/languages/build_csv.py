@@ -194,20 +194,20 @@ def build_locals(model):
         name = snake_case(local["name"])
         file = local["file"]
         row_type = local["type"]
-        row = local["row"]
         json_path = snake_case(model['metadata']['name']) + "_dataset.js"
         new_file = name+'.csv'
         new_small_file = name+'_small.csv'
         row_type = local["type"]
+        keys = set()
         with open(file, "r") as local_file:
             if row_type == "json":
                 data_list = json.load(local_file)
                 data = [JsonLeafNodes(name+'.[0]', item).result for item in data_list]
-                key_names = data[0].keys()
+                key_names = set([key for row in data for key in row.keys()])
                 short_key_names = shortest_unique_strings(key_names)
-                key_name_map = dict(zip(key_names, short_key_names))
-                data = [OrderedDict(sorted([(key_name_map[item[0]], kill_unicode(item[1]))
-                                            for item in row.items()]))
+                key_name_map = dict(zip(short_key_names, key_names))
+                data = [OrderedDict(sorted([(short, kill_unicode(row.get(long, '')))
+                                            for short, long in key_name_map.items()]))
                         for row in data]
                 
                 #json_list = [OrderedDict(sorted(flatten_json(_byteify(element), '_').items()))

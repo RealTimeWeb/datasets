@@ -1,0 +1,1001 @@
+Avg Temp,Avg Wind,City,Code,Day,Full,High Gust,High Wind,Location,Max Temp,Min Temp,Month,Precipitation,State,Year
+58.0,6.0,Anchorage,ANC,9,06-09-2016,23.0,9.0,"Anchorage, AK",67.0,48.0,6,0.0,Alaska,2016
+54.0,5.0,Anchorage,ANC,8,06-08-2016,11.5,10.0,"Anchorage, AK",66.0,42.0,6,0.0,Alaska,2016
+0.0,0.0,Anchorage,ANC,7,06-07-2016,0.0,0.0,"Anchorage, AK",0.0,0.0,6,0.0,Alaska,2016
+57.0,12.0,Anchorage,ANC,6,06-06-2016,33.0,21.0,"Anchorage, AK",62.0,51.0,6,0.0,Alaska,2016
+55.0,7.0,Anchorage,ANC,5,06-05-2016,35.0,18.0,"Anchorage, AK",63.0,46.0,6,0.35,Alaska,2016
+57.0,7.0,Anchorage,ANC,4,06-04-2016,31.0,16.0,"Anchorage, AK",62.0,51.0,6,0.23,Alaska,2016
+59.0,13.0,Anchorage,ANC,3,06-03-2016,33.0,20.0,"Anchorage, AK",66.0,52.0,6,0.0,Alaska,2016
+58.0,5.0,Anchorage,ANC,2,06-02-2016,21.0,13.0,"Anchorage, AK",66.0,49.0,6,0.0,Alaska,2016
+55.0,9.0,Anchorage,ANC,1,06-01-2016,36.0,20.0,"Anchorage, AK",65.0,44.0,6,0.0,Alaska,2016
+58.0,14.0,Anchorage,ANC,31,05-31-2016,32.0,20.0,"Anchorage, AK",65.0,51.0,5,0.03,Alaska,2016
+59.0,7.0,Anchorage,ANC,30,05-30-2016,33.0,15.0,"Anchorage, AK",69.0,49.0,5,0.48,Alaska,2016
+59.0,5.0,Anchorage,ANC,29,05-29-2016,31.0,10.0,"Anchorage, AK",69.0,49.0,5,0.0,Alaska,2016
+61.0,3.0,Anchorage,ANC,28,05-28-2016,29.0,9.0,"Anchorage, AK",72.0,50.0,5,0.0,Alaska,2016
+57.0,3.0,Anchorage,ANC,27,05-27-2016,27.0,8.0,"Anchorage, AK",69.0,45.0,5,0.0,Alaska,2016
+54.0,5.0,Anchorage,ANC,26,05-26-2016,25.0,10.0,"Anchorage, AK",64.0,44.0,5,0.0,Alaska,2016
+54.0,7.0,Anchorage,ANC,25,05-25-2016,23.0,16.0,"Anchorage, AK",62.0,45.0,5,0.0,Alaska,2016
+52.0,6.0,Anchorage,ANC,24,05-24-2016,21.0,13.0,"Anchorage, AK",58.0,45.0,5,0.01,Alaska,2016
+49.0,6.0,Anchorage,ANC,23,05-23-2016,31.0,13.0,"Anchorage, AK",55.0,43.0,5,0.01,Alaska,2016
+48.0,5.0,Anchorage,ANC,22,05-22-2016,23.0,14.0,"Anchorage, AK",51.0,44.0,5,0.04,Alaska,2016
+53.0,10.0,Anchorage,ANC,21,05-21-2016,38.0,22.0,"Anchorage, AK",58.0,47.0,5,0.06,Alaska,2016
+52.0,7.0,Anchorage,ANC,20,05-20-2016,35.0,22.0,"Anchorage, AK",61.0,42.0,5,0.0,Alaska,2016
+51.0,4.0,Anchorage,ANC,19,05-19-2016,28.0,13.0,"Anchorage, AK",54.0,48.0,5,0.21,Alaska,2016
+54.0,9.0,Anchorage,ANC,18,05-18-2016,24.0,17.0,"Anchorage, AK",58.0,49.0,5,0.52,Alaska,2016
+55.0,14.0,Anchorage,ANC,17,05-17-2016,41.0,24.0,"Anchorage, AK",64.0,45.0,5,0.45,Alaska,2016
+62.0,8.0,Anchorage,ANC,16,05-16-2016,31.0,16.0,"Anchorage, AK",72.0,51.0,5,0.0,Alaska,2016
+61.0,6.0,Anchorage,ANC,15,05-15-2016,30.0,14.0,"Anchorage, AK",71.0,50.0,5,0.0,Alaska,2016
+57.0,5.0,Anchorage,ANC,14,05-14-2016,30.666666666666668,9.0,"Anchorage, AK",71.0,42.0,5,0.0,Alaska,2016
+56.0,4.0,Anchorage,ANC,13,05-13-2016,31.333333333333332,9.0,"Anchorage, AK",65.0,46.0,5,0.0,Alaska,2016
+53.0,7.0,Anchorage,ANC,12,05-12-2016,32.0,17.0,"Anchorage, AK",59.0,46.0,5,0.01,Alaska,2016
+49.0,8.0,Anchorage,ANC,11,05-11-2016,33.0,15.0,"Anchorage, AK",59.0,38.0,5,0.32,Alaska,2016
+47.0,7.0,Anchorage,ANC,10,05-10-2016,21.0,14.0,"Anchorage, AK",52.0,42.0,5,0.09,Alaska,2016
+44.0,7.0,Anchorage,ANC,9,05-09-2016,32.0,17.0,"Anchorage, AK",50.0,38.0,5,0.08,Alaska,2016
+47.0,7.0,Anchorage,ANC,8,05-08-2016,27.0,13.0,"Anchorage, AK",54.0,40.0,5,0.0,Alaska,2016
+50.0,7.0,Anchorage,ANC,7,05-07-2016,33.0,15.0,"Anchorage, AK",58.0,42.0,5,0.23,Alaska,2016
+41.0,4.0,Anchorage,ANC,6,05-06-2016,34.0,9.0,"Anchorage, AK",48.0,34.0,5,0.46,Alaska,2016
+47.0,10.0,Anchorage,ANC,5,05-05-2016,35.0,17.0,"Anchorage, AK",53.0,40.0,5,0.0,Alaska,2016
+47.0,12.0,Anchorage,ANC,4,05-04-2016,35.0,18.0,"Anchorage, AK",51.0,42.0,5,0.0,Alaska,2016
+44.0,9.0,Anchorage,ANC,3,05-03-2016,35.0,20.0,"Anchorage, AK",53.0,34.0,5,0.2,Alaska,2016
+44.0,6.0,Anchorage,ANC,2,05-02-2016,39.0,14.0,"Anchorage, AK",49.0,39.0,5,0.37,Alaska,2016
+45.0,7.0,Anchorage,ANC,1,05-01-2016,29.0,16.0,"Anchorage, AK",53.0,37.0,5,0.0,Alaska,2016
+45.0,13.0,Anchorage,ANC,30,04-30-2016,33.0,20.0,"Anchorage, AK",49.0,41.0,4,0.0,Alaska,2016
+42.0,5.0,Anchorage,ANC,29,04-29-2016,31.0,14.0,"Anchorage, AK",48.0,35.0,4,0.0,Alaska,2016
+45.0,8.0,Anchorage,ANC,28,04-28-2016,36.0,15.0,"Anchorage, AK",52.0,37.0,4,0.0,Alaska,2016
+45.0,8.0,Anchorage,ANC,27,04-27-2016,32.0,22.0,"Anchorage, AK",52.0,37.0,4,0.3,Alaska,2016
+46.0,5.0,Anchorage,ANC,26,04-26-2016,33.0,15.0,"Anchorage, AK",50.0,41.0,4,0.0,Alaska,2016
+51.0,8.0,Anchorage,ANC,25,04-25-2016,35.0,20.0,"Anchorage, AK",58.0,43.0,4,0.27,Alaska,2016
+46.0,7.0,Anchorage,ANC,24,04-24-2016,40.0,22.0,"Anchorage, AK",55.0,37.0,4,0.0,Alaska,2016
+49.0,4.0,Anchorage,ANC,23,04-23-2016,18.0,10.0,"Anchorage, AK",56.0,42.0,4,0.18,Alaska,2016
+44.0,3.0,Anchorage,ANC,22,04-22-2016,23.0,7.0,"Anchorage, AK",58.0,30.0,4,0.0,Alaska,2016
+45.0,3.0,Anchorage,ANC,21,04-21-2016,28.0,9.0,"Anchorage, AK",54.0,35.0,4,0.32,Alaska,2016
+44.0,11.0,Anchorage,ANC,20,04-20-2016,33.0,17.0,"Anchorage, AK",50.0,38.0,4,0.0,Alaska,2016
+44.0,8.0,Anchorage,ANC,19,04-19-2016,29.0,17.0,"Anchorage, AK",53.0,35.0,4,0.0,Alaska,2016
+42.0,5.0,Anchorage,ANC,18,04-18-2016,31.0,12.0,"Anchorage, AK",53.0,30.0,4,0.0,Alaska,2016
+44.0,10.0,Anchorage,ANC,17,04-17-2016,33.0,20.0,"Anchorage, AK",52.0,36.0,4,0.02,Alaska,2016
+43.0,6.0,Anchorage,ANC,16,04-16-2016,32.0,15.0,"Anchorage, AK",50.0,35.0,4,0.0,Alaska,2016
+44.0,3.0,Anchorage,ANC,15,04-15-2016,36.0,9.0,"Anchorage, AK",54.0,33.0,4,0.0,Alaska,2016
+46.0,8.0,Anchorage,ANC,14,04-14-2016,40.0,14.0,"Anchorage, AK",53.0,39.0,4,0.23,Alaska,2016
+43.0,4.0,Anchorage,ANC,13,04-13-2016,31.0,8.0,"Anchorage, AK",55.0,30.0,4,0.0,Alaska,2016
+41.0,6.0,Anchorage,ANC,12,04-12-2016,22.0,15.0,"Anchorage, AK",50.0,32.0,4,0.0,Alaska,2016
+44.0,12.0,Anchorage,ANC,11,04-11-2016,39.0,23.0,"Anchorage, AK",51.0,36.0,4,0.0,Alaska,2016
+57.0,11.294117647058824,Fairbanks,FAI,9,06-09-2016,26.0,29.0,"Fairbanks, AK",61.0,52.0,6,0.02,Alaska,2016
+56.0,10.941176470588236,Fairbanks,FAI,8,06-08-2016,24.0,29.0,"Fairbanks, AK",66.0,45.0,6,0.01,Alaska,2016
+53.0,10.588235294117647,Fairbanks,FAI,7,06-07-2016,14.0,29.0,"Fairbanks, AK",59.0,46.0,6,0.1,Alaska,2016
+52.0,10.235294117647058,Fairbanks,FAI,6,06-06-2016,29.0,29.0,"Fairbanks, AK",58.0,46.0,6,0.45,Alaska,2016
+57.0,9.882352941176471,Fairbanks,FAI,5,06-05-2016,23.0,29.0,"Fairbanks, AK",70.0,43.0,6,0.0,Alaska,2016
+52.0,9.529411764705882,Fairbanks,FAI,4,06-04-2016,12.0,29.0,"Fairbanks, AK",64.0,40.0,6,0.0,Alaska,2016
+54.0,9.176470588235293,Fairbanks,FAI,3,06-03-2016,17.0,29.0,"Fairbanks, AK",59.0,48.0,6,0.12,Alaska,2016
+61.0,8.823529411764707,Fairbanks,FAI,2,06-02-2016,37.0,29.0,"Fairbanks, AK",75.0,46.0,6,0.01,Alaska,2016
+61.0,8.470588235294118,Fairbanks,FAI,1,06-01-2016,14.0,29.0,"Fairbanks, AK",74.0,47.0,6,0.0,Alaska,2016
+60.0,8.117647058823529,Fairbanks,FAI,31,05-31-2016,17.0,29.0,"Fairbanks, AK",74.0,46.0,5,0.0,Alaska,2016
+59.0,7.764705882352941,Fairbanks,FAI,30,05-30-2016,31.0,29.0,"Fairbanks, AK",67.0,50.0,5,0.0,Alaska,2016
+59.0,7.411764705882352,Fairbanks,FAI,29,05-29-2016,23.0,29.0,"Fairbanks, AK",73.0,45.0,5,0.0,Alaska,2016
+55.0,7.0588235294117645,Fairbanks,FAI,28,05-28-2016,11.0,29.0,"Fairbanks, AK",62.0,47.0,5,0.0,Alaska,2016
+50.0,6.705882352941176,Fairbanks,FAI,27,05-27-2016,14.0,29.0,"Fairbanks, AK",54.0,45.0,5,0.09,Alaska,2016
+50.0,6.352941176470588,Fairbanks,FAI,26,05-26-2016,21.0,29.0,"Fairbanks, AK",57.0,43.0,5,0.01,Alaska,2016
+50.0,6.0,Fairbanks,FAI,25,05-25-2016,34.0,29.0,"Fairbanks, AK",57.0,42.0,5,0.01,Alaska,2016
+50.0,5.647058823529411,Fairbanks,FAI,24,05-24-2016,21.0,29.0,"Fairbanks, AK",56.0,43.0,5,0.04,Alaska,2016
+56.0,5.294117647058823,Fairbanks,FAI,23,05-23-2016,20.0,29.0,"Fairbanks, AK",63.0,48.0,5,0.04,Alaska,2016
+58.0,4.941176470588235,Fairbanks,FAI,22,05-22-2016,28.0,29.0,"Fairbanks, AK",66.0,50.0,5,0.38,Alaska,2016
+59.0,4.588235294117647,Fairbanks,FAI,21,05-21-2016,12.0,29.0,"Fairbanks, AK",66.0,51.0,5,0.45,Alaska,2016
+56.0,4.235294117647058,Fairbanks,FAI,20,05-20-2016,12.0,29.0,"Fairbanks, AK",69.0,42.0,5,0.0,Alaska,2016
+50.0,3.8823529411764692,Fairbanks,FAI,19,05-19-2016,15.0,29.0,"Fairbanks, AK",58.0,42.0,5,0.0,Alaska,2016
+45.0,3.5294117647058822,Fairbanks,FAI,18,05-18-2016,29.0,29.0,"Fairbanks, AK",51.0,38.0,5,0.8,Alaska,2016
+49.0,3.1764705882352935,Fairbanks,FAI,17,05-17-2016,26.0,29.0,"Fairbanks, AK",56.0,41.0,5,0.0,Alaska,2016
+57.0,2.8235294117647047,Fairbanks,FAI,16,05-16-2016,25.0,29.0,"Fairbanks, AK",67.0,47.0,5,0.12,Alaska,2016
+71.0,2.4705882352941178,Fairbanks,FAI,15,05-15-2016,22.0,29.0,"Fairbanks, AK",82.0,59.0,5,0.0,Alaska,2016
+63.0,2.117647058823529,Fairbanks,FAI,14,05-14-2016,18.0,29.0,"Fairbanks, AK",79.0,46.0,5,0.0,Alaska,2016
+61.0,1.7647058823529402,Fairbanks,FAI,13,05-13-2016,15.0,29.0,"Fairbanks, AK",78.0,44.0,5,0.0,Alaska,2016
+56.0,1.4117647058823515,Fairbanks,FAI,12,05-12-2016,20.0,29.0,"Fairbanks, AK",74.0,38.0,5,0.0,Alaska,2016
+51.0,1.0588235294117645,Fairbanks,FAI,11,05-11-2016,20.0,29.0,"Fairbanks, AK",67.0,35.0,5,0.0,Alaska,2016
+50.0,0.7058823529411757,Fairbanks,FAI,10,05-10-2016,20.0,29.0,"Fairbanks, AK",60.0,40.0,5,0.2,Alaska,2016
+50.0,0.352941176470587,Fairbanks,FAI,9,05-09-2016,19.0,29.0,"Fairbanks, AK",64.0,35.0,5,0.0,Alaska,2016
+0.0,0.0,Fairbanks,FAI,8,05-08-2016,0.0,0.0,"Fairbanks, AK",0.0,0.0,5,0.0,Alaska,2016
+53.0,0.0,Fairbanks,FAI,7,05-07-2016,17.0,0.0,"Fairbanks, AK",62.0,43.0,5,0.0,Alaska,2016
+46.0,0.0,Fairbanks,FAI,6,05-06-2016,16.0,0.0,"Fairbanks, AK",60.0,31.0,5,0.0,Alaska,2016
+48.0,0.0,Fairbanks,FAI,5,05-05-2016,27.0,0.0,"Fairbanks, AK",59.0,36.0,5,0.0,Alaska,2016
+49.0,0.0,Fairbanks,FAI,4,05-04-2016,20.0,0.0,"Fairbanks, AK",57.0,40.0,5,0.02,Alaska,2016
+46.0,0.0,Fairbanks,FAI,3,05-03-2016,22.0,0.0,"Fairbanks, AK",58.0,34.0,5,0.42,Alaska,2016
+50.0,0.0,Fairbanks,FAI,2,05-02-2016,21.0,0.0,"Fairbanks, AK",63.0,36.0,5,0.6,Alaska,2016
+45.0,0.0,Fairbanks,FAI,1,05-01-2016,24.0,0.0,"Fairbanks, AK",61.0,29.0,5,0.0,Alaska,2016
+46.0,0.0,Fairbanks,FAI,30,04-30-2016,13.0,0.0,"Fairbanks, AK",60.0,31.0,4,0.0,Alaska,2016
+49.0,0.0,Fairbanks,FAI,29,04-29-2016,18.0,0.0,"Fairbanks, AK",61.0,37.0,4,0.0,Alaska,2016
+51.0,0.0,Fairbanks,FAI,28,04-28-2016,20.0,0.0,"Fairbanks, AK",61.0,40.0,4,0.19,Alaska,2016
+54.0,0.0,Fairbanks,FAI,27,04-27-2016,23.0,0.0,"Fairbanks, AK",66.0,41.0,4,0.1,Alaska,2016
+53.0,0.0,Fairbanks,FAI,26,04-26-2016,24.0,0.0,"Fairbanks, AK",67.0,39.0,4,0.02,Alaska,2016
+48.0,0.0,Fairbanks,FAI,25,04-25-2016,14.0,0.0,"Fairbanks, AK",66.0,30.0,4,0.0,Alaska,2016
+52.0,0.0,Fairbanks,FAI,24,04-24-2016,18.0,0.0,"Fairbanks, AK",66.0,37.0,4,0.0,Alaska,2016
+49.0,0.0,Fairbanks,FAI,23,04-23-2016,24.0,0.0,"Fairbanks, AK",60.0,38.0,4,0.0,Alaska,2016
+49.0,0.0,Fairbanks,FAI,22,04-22-2016,30.0,0.0,"Fairbanks, AK",61.0,36.0,4,0.0,Alaska,2016
+43.0,0.0,Fairbanks,FAI,21,04-21-2016,26.0,0.0,"Fairbanks, AK",60.0,26.0,4,0.0,Alaska,2016
+43.0,0.0,Fairbanks,FAI,20,04-20-2016,30.0,0.0,"Fairbanks, AK",57.0,28.0,4,0.0,Alaska,2016
+42.0,0.0,Fairbanks,FAI,19,04-19-2016,18.0,0.0,"Fairbanks, AK",52.0,31.0,4,0.0,Alaska,2016
+41.0,0.0,Fairbanks,FAI,18,04-18-2016,30.0,0.0,"Fairbanks, AK",55.0,26.0,4,0.22,Alaska,2016
+36.0,0.0,Fairbanks,FAI,17,04-17-2016,14.0,0.0,"Fairbanks, AK",49.0,23.0,4,0.0,Alaska,2016
+40.0,0.0,Fairbanks,FAI,16,04-16-2016,18.0,0.0,"Fairbanks, AK",53.0,27.0,4,0.0,Alaska,2016
+39.0,0.0,Fairbanks,FAI,15,04-15-2016,23.0,0.0,"Fairbanks, AK",47.0,31.0,4,0.0,Alaska,2016
+36.0,0.0,Fairbanks,FAI,14,04-14-2016,20.0,0.0,"Fairbanks, AK",45.0,27.0,4,0.0,Alaska,2016
+41.0,0.0,Fairbanks,FAI,13,04-13-2016,23.0,0.0,"Fairbanks, AK",50.0,31.0,4,0.0,Alaska,2016
+44.0,0.0,Fairbanks,FAI,12,04-12-2016,19.0,0.0,"Fairbanks, AK",55.0,32.0,4,0.13,Alaska,2016
+45.0,0.0,Fairbanks,FAI,11,04-11-2016,15.0,0.0,"Fairbanks, AK",54.0,35.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,9,06-09-2016,0.0,0.0,"Juneau, AK",0.0,0.0,6,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,8,06-08-2016,0.0,0.0,"Juneau, AK",0.0,0.0,6,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,7,06-07-2016,0.0,0.0,"Juneau, AK",0.0,0.0,6,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,6,06-06-2016,0.0,0.0,"Juneau, AK",0.0,0.0,6,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,5,06-05-2016,0.0,0.0,"Juneau, AK",0.0,0.0,6,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,4,06-04-2016,0.0,0.0,"Juneau, AK",0.0,0.0,6,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,3,06-03-2016,0.0,0.0,"Juneau, AK",0.0,0.0,6,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,2,06-02-2016,0.0,0.0,"Juneau, AK",0.0,0.0,6,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,1,06-01-2016,0.0,0.0,"Juneau, AK",0.0,0.0,6,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,31,05-31-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,30,05-30-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,29,05-29-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,28,05-28-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,27,05-27-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,26,05-26-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,25,05-25-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,24,05-24-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,23,05-23-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,22,05-22-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,21,05-21-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,20,05-20-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,19,05-19-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,18,05-18-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,17,05-17-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,16,05-16-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,15,05-15-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,14,05-14-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,13,05-13-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,12,05-12-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,11,05-11-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,10,05-10-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,9,05-09-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,8,05-08-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,7,05-07-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,6,05-06-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,5,05-05-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,4,05-04-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,3,05-03-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,2,05-02-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,1,05-01-2016,0.0,0.0,"Juneau, AK",0.0,0.0,5,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,30,04-30-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,29,04-29-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,28,04-28-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,27,04-27-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,26,04-26-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,25,04-25-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,24,04-24-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,23,04-23-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,22,04-22-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,21,04-21-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,20,04-20-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,19,04-19-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,18,04-18-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,17,04-17-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,16,04-16-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,15,04-15-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,14,04-14-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,13,04-13-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,12,04-12-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+0.0,0.0,Juneau,JNU,11,04-11-2016,0.0,0.0,"Juneau, AK",0.0,0.0,4,0.0,Alaska,2016
+68.0,8.0,Grand Junction,DEN,9,06-09-2016,29.0,22.0,"Grand Junction, CO",83.0,53.0,6,1.79,Colorado,2016
+66.0,8.0,Grand Junction,DEN,8,06-08-2016,45.0,26.0,"Grand Junction, CO",80.0,51.0,6,1.02,Colorado,2016
+70.0,9.0,Grand Junction,DEN,7,06-07-2016,43.0,30.0,"Grand Junction, CO",83.0,56.0,6,0.38,Colorado,2016
+66.0,6.0,Grand Junction,DEN,6,06-06-2016,17.0,14.0,"Grand Junction, CO",82.0,50.0,6,0.0,Colorado,2016
+66.0,6.0,Grand Junction,DEN,5,06-05-2016,19.0,16.0,"Grand Junction, CO",77.0,55.0,6,0.0,Colorado,2016
+68.0,8.0,Grand Junction,DEN,4,06-04-2016,25.0,21.0,"Grand Junction, CO",78.0,58.0,6,0.0,Colorado,2016
+64.0,9.0,Grand Junction,DEN,3,06-03-2016,31.0,24.0,"Grand Junction, CO",79.0,49.0,6,0.0,Colorado,2016
+62.0,8.0,Grand Junction,DEN,2,06-02-2016,25.0,21.0,"Grand Junction, CO",73.0,51.0,6,0.13,Colorado,2016
+57.0,7.0,Grand Junction,DEN,1,06-01-2016,28.0,22.0,"Grand Junction, CO",66.0,47.0,6,0.05,Colorado,2016
+62.0,9.0,Grand Junction,DEN,31,05-31-2016,40.0,33.0,"Grand Junction, CO",78.0,46.0,5,0.01,Colorado,2016
+60.0,9.0,Grand Junction,DEN,30,05-30-2016,47.0,36.0,"Grand Junction, CO",76.0,44.0,5,0.0,Colorado,2016
+58.0,9.0,Grand Junction,DEN,29,05-29-2016,24.0,13.0,"Grand Junction, CO",72.0,43.0,5,1.24,Colorado,2016
+52.0,10.0,Grand Junction,DEN,28,05-28-2016,34.0,25.0,"Grand Junction, CO",58.0,45.0,5,0.23,Colorado,2016
+56.0,8.0,Grand Junction,DEN,27,05-27-2016,27.0,26.0,"Grand Junction, CO",67.0,44.0,5,1.15,Colorado,2016
+59.0,9.0,Grand Junction,DEN,26,05-26-2016,29.0,22.0,"Grand Junction, CO",73.0,45.0,5,0.0,Colorado,2016
+58.0,10.0,Grand Junction,DEN,25,05-25-2016,33.0,24.0,"Grand Junction, CO",73.0,43.0,5,0.04,Colorado,2016
+55.0,12.0,Grand Junction,DEN,24,05-24-2016,38.0,33.0,"Grand Junction, CO",68.0,42.0,5,0.07,Colorado,2016
+62.0,13.0,Grand Junction,DEN,23,05-23-2016,29.0,24.0,"Grand Junction, CO",77.0,47.0,5,0.0,Colorado,2016
+68.0,15.0,Grand Junction,DEN,22,05-22-2016,37.0,30.0,"Grand Junction, CO",83.0,53.0,5,0.0,Colorado,2016
+64.0,13.0,Grand Junction,DEN,21,05-21-2016,32.0,25.0,"Grand Junction, CO",79.0,49.0,5,0.0,Colorado,2016
+58.0,9.0,Grand Junction,DEN,20,05-20-2016,23.0,20.0,"Grand Junction, CO",73.0,43.0,5,0.0,Colorado,2016
+52.0,9.0,Grand Junction,DEN,19,05-19-2016,21.0,17.0,"Grand Junction, CO",66.0,38.0,5,0.0,Colorado,2016
+44.0,6.0,Grand Junction,DEN,18,05-18-2016,16.0,14.0,"Grand Junction, CO",48.0,39.0,5,0.08,Colorado,2016
+44.0,10.0,Grand Junction,DEN,17,05-17-2016,29.0,24.0,"Grand Junction, CO",48.0,39.0,5,0.26,Colorado,2016
+50.0,8.0,Grand Junction,DEN,16,05-16-2016,32.0,26.0,"Grand Junction, CO",59.0,41.0,5,0.01,Colorado,2016
+48.0,12.0,Grand Junction,DEN,15,05-15-2016,31.0,24.0,"Grand Junction, CO",55.0,40.0,5,0.0,Colorado,2016
+59.0,14.0,Grand Junction,DEN,14,05-14-2016,31.0,26.0,"Grand Junction, CO",71.0,46.0,5,0.0,Colorado,2016
+54.0,9.0,Grand Junction,DEN,13,05-13-2016,29.0,24.0,"Grand Junction, CO",71.0,37.0,5,0.0,Colorado,2016
+50.0,9.0,Grand Junction,DEN,12,05-12-2016,30.0,22.0,"Grand Junction, CO",61.0,38.0,5,0.05,Colorado,2016
+54.0,10.0,Grand Junction,DEN,11,05-11-2016,33.0,29.0,"Grand Junction, CO",65.0,43.0,5,0.36,Colorado,2016
+54.0,8.0,Grand Junction,DEN,10,05-10-2016,30.0,23.0,"Grand Junction, CO",67.0,41.0,5,2.34,Colorado,2016
+49.0,9.0,Grand Junction,DEN,9,05-09-2016,47.0,39.0,"Grand Junction, CO",65.0,32.0,5,2.02,Colorado,2016
+45.0,14.0,Grand Junction,DEN,8,05-08-2016,33.0,33.0,"Grand Junction, CO",55.0,35.0,5,0.02,Colorado,2016
+65.0,10.0,Grand Junction,DEN,7,05-07-2016,33.0,26.0,"Grand Junction, CO",80.0,50.0,5,3.27,Colorado,2016
+62.0,10.0,Grand Junction,DEN,6,05-06-2016,26.0,21.0,"Grand Junction, CO",79.0,44.0,5,0.0,Colorado,2016
+59.0,9.0,Grand Junction,DEN,5,05-05-2016,19.0,16.0,"Grand Junction, CO",74.0,44.0,5,0.0,Colorado,2016
+53.0,11.0,Grand Junction,DEN,4,05-04-2016,32.0,26.0,"Grand Junction, CO",66.0,40.0,5,0.0,Colorado,2016
+44.0,5.0,Grand Junction,DEN,3,05-03-2016,20.0,13.0,"Grand Junction, CO",59.0,28.0,5,0.0,Colorado,2016
+37.0,9.0,Grand Junction,DEN,2,05-02-2016,25.0,22.0,"Grand Junction, CO",42.0,32.0,5,0.05,Colorado,2016
+33.0,15.0,Grand Junction,DEN,1,05-01-2016,31.0,25.0,"Grand Junction, CO",35.0,31.0,5,0.15,Colorado,2016
+34.0,6.0,Grand Junction,DEN,30,04-30-2016,16.0,14.0,"Grand Junction, CO",36.0,31.0,4,0.73,Colorado,2016
+38.0,10.0,Grand Junction,DEN,29,04-29-2016,19.0,16.0,"Grand Junction, CO",40.0,35.0,4,0.02,Colorado,2016
+41.0,9.0,Grand Junction,DEN,28,04-28-2016,24.0,20.0,"Grand Junction, CO",54.0,27.0,4,1.6,Colorado,2016
+43.0,12.0,Grand Junction,DEN,27,04-27-2016,31.0,25.0,"Grand Junction, CO",53.0,33.0,4,3.04,Colorado,2016
+55.0,16.0,Grand Junction,DEN,26,04-26-2016,44.0,36.0,"Grand Junction, CO",72.0,38.0,4,0.02,Colorado,2016
+53.0,13.0,Grand Junction,DEN,25,04-25-2016,40.0,31.0,"Grand Junction, CO",67.0,39.0,4,0.0,Colorado,2016
+63.0,21.0,Grand Junction,DEN,24,04-24-2016,43.0,35.0,"Grand Junction, CO",77.0,49.0,4,0.0,Colorado,2016
+58.0,9.0,Grand Junction,DEN,23,04-23-2016,27.0,22.0,"Grand Junction, CO",77.0,39.0,4,0.0,Colorado,2016
+51.0,7.0,Grand Junction,DEN,22,04-22-2016,19.0,16.0,"Grand Junction, CO",64.0,37.0,4,0.0,Colorado,2016
+44.0,6.0,Grand Junction,DEN,21,04-21-2016,17.0,13.0,"Grand Junction, CO",55.0,32.0,4,0.95,Colorado,2016
+38.0,8.0,Grand Junction,DEN,20,04-20-2016,22.0,20.0,"Grand Junction, CO",44.0,31.0,4,0.11,Colorado,2016
+34.0,8.0,Grand Junction,DEN,19,04-19-2016,19.0,17.0,"Grand Junction, CO",39.0,29.0,4,0.0,Colorado,2016
+33.0,13.0,Grand Junction,DEN,18,04-18-2016,34.0,29.0,"Grand Junction, CO",36.0,30.0,4,0.06,Colorado,2016
+33.0,19.0,Grand Junction,DEN,17,04-17-2016,40.0,33.0,"Grand Junction, CO",34.0,31.0,4,1.19,Colorado,2016
+44.0,13.0,Grand Junction,DEN,16,04-16-2016,38.0,32.0,"Grand Junction, CO",54.0,34.0,4,0.14,Colorado,2016
+62.0,12.0,Grand Junction,DEN,15,04-15-2016,50.0,30.0,"Grand Junction, CO",77.0,47.0,4,0.0,Colorado,2016
+57.0,9.0,Grand Junction,DEN,14,04-14-2016,28.0,23.0,"Grand Junction, CO",72.0,41.0,4,0.0,Colorado,2016
+54.0,8.0,Grand Junction,DEN,13,04-13-2016,44.0,35.0,"Grand Junction, CO",71.0,36.0,4,0.01,Colorado,2016
+49.0,5.0,Grand Junction,DEN,12,04-12-2016,22.0,17.0,"Grand Junction, CO",60.0,38.0,4,0.0,Colorado,2016
+53.0,10.0,Grand Junction,DEN,11,04-11-2016,30.0,26.0,"Grand Junction, CO",68.0,38.0,4,0.13,Colorado,2016
+56.0,8.0,Grand Junction,DEN,10,04-10-2016,40.0,32.0,"Grand Junction, CO",72.0,39.0,4,0.86,Colorado,2016
+73.0,8.0,Denver/Boulder,AKO,9,06-09-2016,27.0,22.0,"Denver/Boulder, CO",88.0,57.0,6,0.04,Colorado,2016
+69.0,8.0,Denver/Boulder,AKO,8,06-08-2016,30.0,23.0,"Denver/Boulder, CO",83.0,54.0,6,0.0,Colorado,2016
+70.0,8.0,Denver/Boulder,AKO,7,06-07-2016,30.0,21.0,"Denver/Boulder, CO",82.0,57.0,6,0.0,Colorado,2016
+68.0,8.0,Denver/Boulder,AKO,6,06-06-2016,19.0,16.0,"Denver/Boulder, CO",82.0,53.0,6,0.0,Colorado,2016
+65.0,8.0,Denver/Boulder,AKO,5,06-05-2016,30.0,24.0,"Denver/Boulder, CO",77.0,52.0,6,0.0,Colorado,2016
+67.0,8.0,Denver/Boulder,AKO,4,06-04-2016,32.0,24.0,"Denver/Boulder, CO",77.0,56.0,6,0.0,Colorado,2016
+66.0,8.0,Denver/Boulder,AKO,3,06-03-2016,37.0,30.0,"Denver/Boulder, CO",80.0,51.0,6,0.54,Colorado,2016
+60.0,8.0,Denver/Boulder,AKO,2,06-02-2016,24.0,18.0,"Denver/Boulder, CO",73.0,47.0,6,0.72,Colorado,2016
+57.0,8.0,Denver/Boulder,AKO,1,06-01-2016,29.0,24.0,"Denver/Boulder, CO",67.0,46.0,6,0.01,Colorado,2016
+65.0,8.0,Denver/Boulder,AKO,31,05-31-2016,40.0,32.0,"Denver/Boulder, CO",80.0,49.0,5,0.09,Colorado,2016
+62.0,8.0,Denver/Boulder,AKO,30,05-30-2016,26.0,20.0,"Denver/Boulder, CO",79.0,44.0,5,0.0,Colorado,2016
+57.0,8.0,Denver/Boulder,AKO,29,05-29-2016,45.0,29.0,"Denver/Boulder, CO",73.0,41.0,5,1.71,Colorado,2016
+52.0,8.0,Denver/Boulder,AKO,28,05-28-2016,40.0,33.0,"Denver/Boulder, CO",60.0,44.0,5,0.99,Colorado,2016
+60.0,8.0,Denver/Boulder,AKO,27,05-27-2016,42.0,38.0,"Denver/Boulder, CO",72.0,47.0,5,0.68,Colorado,2016
+63.0,8.0,Denver/Boulder,AKO,26,05-26-2016,29.0,25.0,"Denver/Boulder, CO",74.0,51.0,5,1.7,Colorado,2016
+61.0,8.0,Denver/Boulder,AKO,25,05-25-2016,61.0,48.0,"Denver/Boulder, CO",74.0,47.0,5,0.11,Colorado,2016
+59.0,8.0,Denver/Boulder,AKO,24,05-24-2016,50.0,33.0,"Denver/Boulder, CO",73.0,45.0,5,0.18,Colorado,2016
+66.0,8.0,Denver/Boulder,AKO,23,05-23-2016,49.0,41.0,"Denver/Boulder, CO",84.0,47.0,5,0.0,Colorado,2016
+68.0,8.0,Denver/Boulder,AKO,22,05-22-2016,44.0,35.0,"Denver/Boulder, CO",80.0,56.0,5,0.0,Colorado,2016
+61.0,8.0,Denver/Boulder,AKO,21,05-21-2016,36.0,28.0,"Denver/Boulder, CO",76.0,46.0,5,0.0,Colorado,2016
+57.0,8.0,Denver/Boulder,AKO,20,05-20-2016,41.0,24.0,"Denver/Boulder, CO",72.0,41.0,5,0.0,Colorado,2016
+50.0,8.0,Denver/Boulder,AKO,19,05-19-2016,31.0,25.0,"Denver/Boulder, CO",61.0,39.0,5,0.0,Colorado,2016
+45.0,8.0,Denver/Boulder,AKO,18,05-18-2016,18.0,14.0,"Denver/Boulder, CO",50.0,39.0,5,0.07,Colorado,2016
+41.0,8.0,Denver/Boulder,AKO,17,05-17-2016,29.0,23.0,"Denver/Boulder, CO",42.0,39.0,5,0.31,Colorado,2016
+48.0,8.0,Denver/Boulder,AKO,16,05-16-2016,35.0,29.0,"Denver/Boulder, CO",56.0,40.0,5,0.98,Colorado,2016
+45.0,8.0,Denver/Boulder,AKO,15,05-15-2016,30.0,23.0,"Denver/Boulder, CO",52.0,37.0,5,0.0,Colorado,2016
+51.0,8.0,Denver/Boulder,AKO,14,05-14-2016,41.0,33.0,"Denver/Boulder, CO",58.0,44.0,5,0.0,Colorado,2016
+54.0,8.0,Denver/Boulder,AKO,13,05-13-2016,20.0,16.0,"Denver/Boulder, CO",69.0,38.0,5,0.0,Colorado,2016
+48.0,8.0,Denver/Boulder,AKO,12,05-12-2016,23.0,18.0,"Denver/Boulder, CO",62.0,34.0,5,0.0,Colorado,2016
+50.0,8.0,Denver/Boulder,AKO,11,05-11-2016,32.0,23.0,"Denver/Boulder, CO",60.0,40.0,5,0.14,Colorado,2016
+53.0,8.0,Denver/Boulder,AKO,10,05-10-2016,27.0,22.0,"Denver/Boulder, CO",67.0,39.0,5,0.01,Colorado,2016
+52.0,8.0,Denver/Boulder,AKO,9,05-09-2016,37.0,31.0,"Denver/Boulder, CO",63.0,40.0,5,0.18,Colorado,2016
+56.0,8.0,Denver/Boulder,AKO,8,05-08-2016,52.0,43.0,"Denver/Boulder, CO",71.0,40.0,5,0.33,Colorado,2016
+65.0,8.0,Denver/Boulder,AKO,7,05-07-2016,31.0,23.0,"Denver/Boulder, CO",85.0,45.0,5,0.0,Colorado,2016
+66.0,8.0,Denver/Boulder,AKO,6,05-06-2016,30.0,23.0,"Denver/Boulder, CO",81.0,50.0,5,0.0,Colorado,2016
+57.0,8.0,Denver/Boulder,AKO,5,05-05-2016,21.0,18.0,"Denver/Boulder, CO",73.0,41.0,5,0.0,Colorado,2016
+52.0,8.0,Denver/Boulder,AKO,4,05-04-2016,34.0,25.0,"Denver/Boulder, CO",68.0,36.0,5,0.0,Colorado,2016
+43.0,8.0,Denver/Boulder,AKO,3,05-03-2016,33.0,28.0,"Denver/Boulder, CO",58.0,28.0,5,1.0,Colorado,2016
+35.0,8.0,Denver/Boulder,AKO,2,05-02-2016,33.0,26.0,"Denver/Boulder, CO",41.0,29.0,5,0.02,Colorado,2016
+32.0,8.0,Denver/Boulder,AKO,1,05-01-2016,37.0,30.0,"Denver/Boulder, CO",33.0,30.0,5,0.88,Colorado,2016
+34.0,8.0,Denver/Boulder,AKO,30,04-30-2016,18.0,15.0,"Denver/Boulder, CO",37.0,30.0,4,0.58,Colorado,2016
+33.0,8.0,Denver/Boulder,AKO,29,04-29-2016,17.0,15.0,"Denver/Boulder, CO",39.0,26.0,4,0.06,Colorado,2016
+42.0,8.0,Denver/Boulder,AKO,28,04-28-2016,48.0,38.0,"Denver/Boulder, CO",55.0,28.0,4,0.0,Colorado,2016
+47.0,8.0,Denver/Boulder,AKO,27,04-27-2016,31.0,26.0,"Denver/Boulder, CO",59.0,34.0,4,0.0,Colorado,2016
+52.0,8.0,Denver/Boulder,AKO,26,04-26-2016,37.0,31.0,"Denver/Boulder, CO",70.0,34.0,4,0.95,Colorado,2016
+50.0,8.0,Denver/Boulder,AKO,25,04-25-2016,33.0,26.0,"Denver/Boulder, CO",65.0,35.0,4,0.0,Colorado,2016
+62.0,8.0,Denver/Boulder,AKO,24,04-24-2016,44.0,38.0,"Denver/Boulder, CO",79.0,44.0,4,0.0,Colorado,2016
+61.0,8.0,Denver/Boulder,AKO,23,04-23-2016,34.0,23.0,"Denver/Boulder, CO",78.0,44.0,4,0.0,Colorado,2016
+49.0,8.0,Denver/Boulder,AKO,22,04-22-2016,25.0,18.0,"Denver/Boulder, CO",66.0,32.0,4,0.0,Colorado,2016
+46.0,8.0,Denver/Boulder,AKO,21,04-21-2016,34.0,23.0,"Denver/Boulder, CO",56.0,35.0,4,0.02,Colorado,2016
+39.0,8.0,Denver/Boulder,AKO,20,04-20-2016,19.0,15.0,"Denver/Boulder, CO",47.0,30.0,4,1.14,Colorado,2016
+38.0,8.0,Denver/Boulder,AKO,19,04-19-2016,22.0,17.0,"Denver/Boulder, CO",44.0,31.0,4,0.0,Colorado,2016
+34.0,8.0,Denver/Boulder,AKO,18,04-18-2016,30.0,25.0,"Denver/Boulder, CO",37.0,31.0,4,0.18,Colorado,2016
+35.0,8.0,Denver/Boulder,AKO,17,04-17-2016,43.0,36.0,"Denver/Boulder, CO",38.0,32.0,4,0.79,Colorado,2016
+46.0,8.0,Denver/Boulder,AKO,16,04-16-2016,40.0,35.0,"Denver/Boulder, CO",55.0,37.0,4,0.43,Colorado,2016
+64.0,8.0,Denver/Boulder,AKO,15,04-15-2016,43.0,33.0,"Denver/Boulder, CO",79.0,49.0,4,0.0,Colorado,2016
+59.0,8.0,Denver/Boulder,AKO,14,04-14-2016,25.0,21.0,"Denver/Boulder, CO",74.0,43.0,4,0.0,Colorado,2016
+55.0,8.0,Denver/Boulder,AKO,13,04-13-2016,38.0,28.0,"Denver/Boulder, CO",73.0,36.0,4,0.04,Colorado,2016
+48.0,8.0,Denver/Boulder,AKO,12,04-12-2016,26.0,21.0,"Denver/Boulder, CO",56.0,39.0,4,0.0,Colorado,2016
+53.0,8.0,Denver/Boulder,AKO,11,04-11-2016,35.0,30.0,"Denver/Boulder, CO",66.0,40.0,4,0.0,Colorado,2016
+74.0,6.0,Salt Lake City,GJT,9,06-09-2016,30.0,24.0,"Salt Lake City, UT",91.0,56.0,6,0.01,Utah,2016
+77.0,9.0,Salt Lake City,GJT,8,06-08-2016,35.0,28.0,"Salt Lake City, UT",93.0,60.0,6,0.45,Utah,2016
+78.0,12.0,Salt Lake City,GJT,7,06-07-2016,56.0,44.0,"Salt Lake City, UT",94.0,62.0,6,0.63,Utah,2016
+75.0,6.0,Salt Lake City,GJT,6,06-06-2016,23.0,16.0,"Salt Lake City, UT",94.0,55.0,6,0.0,Utah,2016
+76.0,7.0,Salt Lake City,GJT,5,06-05-2016,22.0,16.0,"Salt Lake City, UT",90.0,62.0,6,0.0,Utah,2016
+71.0,7.0,Salt Lake City,GJT,4,06-04-2016,22.0,17.0,"Salt Lake City, UT",89.0,52.0,6,0.0,Utah,2016
+70.0,5.0,Salt Lake City,GJT,3,06-03-2016,19.0,15.0,"Salt Lake City, UT",88.0,52.0,6,0.0,Utah,2016
+67.0,7.0,Salt Lake City,GJT,2,06-02-2016,23.0,18.0,"Salt Lake City, UT",85.0,48.0,6,0.0,Utah,2016
+66.0,8.0,Salt Lake City,GJT,1,06-01-2016,32.0,23.0,"Salt Lake City, UT",83.0,48.0,6,0.0,Utah,2016
+64.0,6.0,Salt Lake City,GJT,31,05-31-2016,37.0,32.0,"Salt Lake City, UT",82.0,46.0,5,0.0,Utah,2016
+65.0,8.0,Salt Lake City,GJT,30,05-30-2016,36.0,29.0,"Salt Lake City, UT",81.0,48.0,5,0.0,Utah,2016
+60.0,5.0,Salt Lake City,GJT,29,05-29-2016,27.0,20.0,"Salt Lake City, UT",77.0,43.0,5,0.0,Utah,2016
+59.0,8.0,Salt Lake City,GJT,28,05-28-2016,31.0,26.0,"Salt Lake City, UT",70.0,47.0,5,0.06,Utah,2016
+59.0,7.0,Salt Lake City,GJT,27,05-27-2016,36.0,31.0,"Salt Lake City, UT",73.0,44.0,5,0.52,Utah,2016
+61.0,6.0,Salt Lake City,GJT,26,05-26-2016,26.0,16.0,"Salt Lake City, UT",74.0,48.0,5,0.0,Utah,2016
+63.0,13.0,Salt Lake City,GJT,25,05-25-2016,43.0,32.0,"Salt Lake City, UT",78.0,48.0,5,0.0,Utah,2016
+57.0,6.0,Salt Lake City,GJT,24,05-24-2016,22.0,16.0,"Salt Lake City, UT",74.0,40.0,5,0.0,Utah,2016
+56.0,8.0,Salt Lake City,GJT,23,05-23-2016,31.0,24.0,"Salt Lake City, UT",70.0,42.0,5,0.52,Utah,2016
+68.0,12.0,Salt Lake City,GJT,22,05-22-2016,35.0,26.0,"Salt Lake City, UT",80.0,56.0,5,0.0,Utah,2016
+69.0,14.0,Salt Lake City,GJT,21,05-21-2016,36.0,30.0,"Salt Lake City, UT",79.0,59.0,5,0.0,Utah,2016
+60.0,8.0,Salt Lake City,GJT,20,05-20-2016,29.0,22.0,"Salt Lake City, UT",74.0,45.0,5,0.0,Utah,2016
+57.0,6.0,Salt Lake City,GJT,19,05-19-2016,32.0,28.0,"Salt Lake City, UT",71.0,42.0,5,0.0,Utah,2016
+54.0,8.0,Salt Lake City,GJT,18,05-18-2016,23.0,18.0,"Salt Lake City, UT",65.0,42.0,5,0.71,Utah,2016
+56.0,7.0,Salt Lake City,GJT,17,05-17-2016,24.0,21.0,"Salt Lake City, UT",65.0,46.0,5,0.06,Utah,2016
+65.0,9.0,Salt Lake City,GJT,16,05-16-2016,37.0,29.0,"Salt Lake City, UT",75.0,54.0,5,0.09,Utah,2016
+68.0,8.0,Salt Lake City,GJT,15,05-15-2016,23.0,18.0,"Salt Lake City, UT",85.0,51.0,5,0.0,Utah,2016
+62.0,7.0,Salt Lake City,GJT,14,05-14-2016,21.0,17.0,"Salt Lake City, UT",81.0,43.0,5,0.0,Utah,2016
+55.0,6.0,Salt Lake City,GJT,13,05-13-2016,18.0,15.0,"Salt Lake City, UT",72.0,38.0,5,0.0,Utah,2016
+49.0,6.0,Salt Lake City,GJT,12,05-12-2016,23.0,18.0,"Salt Lake City, UT",64.0,34.0,5,0.0,Utah,2016
+54.0,7.0,Salt Lake City,GJT,11,05-11-2016,29.0,23.0,"Salt Lake City, UT",66.0,41.0,5,0.09,Utah,2016
+57.0,6.0,Salt Lake City,GJT,10,05-10-2016,29.0,21.0,"Salt Lake City, UT",68.0,45.0,5,0.2,Utah,2016
+51.0,9.0,Salt Lake City,GJT,9,05-09-2016,25.0,22.0,"Salt Lake City, UT",61.0,41.0,5,0.21,Utah,2016
+50.0,8.0,Salt Lake City,GJT,8,05-08-2016,24.0,18.0,"Salt Lake City, UT",57.0,43.0,5,0.18,Utah,2016
+65.0,11.0,Salt Lake City,GJT,7,05-07-2016,44.0,31.0,"Salt Lake City, UT",79.0,50.0,5,0.02,Utah,2016
+67.0,10.0,Salt Lake City,GJT,6,05-06-2016,23.0,20.0,"Salt Lake City, UT",84.0,49.0,5,0.0,Utah,2016
+61.0,7.0,Salt Lake City,GJT,5,05-05-2016,20.0,16.0,"Salt Lake City, UT",77.0,45.0,5,0.0,Utah,2016
+55.0,4.0,Salt Lake City,GJT,4,05-04-2016,16.0,13.0,"Salt Lake City, UT",73.0,36.0,5,0.0,Utah,2016
+54.0,7.0,Salt Lake City,GJT,3,05-03-2016,24.0,18.0,"Salt Lake City, UT",65.0,42.0,5,0.0,Utah,2016
+49.0,8.0,Salt Lake City,GJT,2,05-02-2016,24.0,21.0,"Salt Lake City, UT",60.0,37.0,5,0.41,Utah,2016
+47.0,6.0,Salt Lake City,GJT,1,05-01-2016,20.0,17.0,"Salt Lake City, UT",54.0,39.0,5,0.0,Utah,2016
+48.0,9.0,Salt Lake City,GJT,30,04-30-2016,28.0,22.0,"Salt Lake City, UT",58.0,37.0,4,0.07,Utah,2016
+48.0,6.0,Salt Lake City,GJT,29,04-29-2016,21.0,18.0,"Salt Lake City, UT",55.0,40.0,4,0.51,Utah,2016
+48.0,6.0,Salt Lake City,GJT,28,04-28-2016,19.0,16.0,"Salt Lake City, UT",60.0,35.0,4,0.86,Utah,2016
+43.0,5.0,Salt Lake City,GJT,27,04-27-2016,25.0,22.0,"Salt Lake City, UT",46.0,39.0,4,0.28,Utah,2016
+53.0,12.0,Salt Lake City,GJT,26,04-26-2016,43.0,33.0,"Salt Lake City, UT",67.0,39.0,4,0.01,Utah,2016
+55.0,8.0,Salt Lake City,GJT,25,04-25-2016,29.0,24.0,"Salt Lake City, UT",67.0,42.0,4,0.0,Utah,2016
+59.0,19.0,Salt Lake City,GJT,24,04-24-2016,59.0,45.0,"Salt Lake City, UT",73.0,45.0,4,0.0,Utah,2016
+63.0,13.0,Salt Lake City,GJT,23,04-23-2016,39.0,30.0,"Salt Lake City, UT",80.0,46.0,4,0.0,Utah,2016
+57.0,8.0,Salt Lake City,GJT,22,04-22-2016,22.0,18.0,"Salt Lake City, UT",74.0,40.0,4,0.0,Utah,2016
+54.0,5.0,Salt Lake City,GJT,21,04-21-2016,20.0,13.0,"Salt Lake City, UT",66.0,41.0,4,0.66,Utah,2016
+43.0,5.0,Salt Lake City,GJT,20,04-20-2016,20.0,18.0,"Salt Lake City, UT",55.0,30.0,4,0.02,Utah,2016
+42.0,4.0,Salt Lake City,GJT,19,04-19-2016,25.0,22.0,"Salt Lake City, UT",51.0,32.0,4,0.17,Utah,2016
+42.0,7.0,Salt Lake City,GJT,18,04-18-2016,27.0,18.0,"Salt Lake City, UT",50.0,34.0,4,0.74,Utah,2016
+43.0,10.0,Salt Lake City,GJT,17,04-17-2016,34.0,28.0,"Salt Lake City, UT",47.0,38.0,4,0.45,Utah,2016
+42.0,6.0,Salt Lake City,GJT,16,04-16-2016,20.0,15.0,"Salt Lake City, UT",46.0,38.0,4,0.23,Utah,2016
+58.0,12.0,Salt Lake City,GJT,15,04-15-2016,51.0,44.0,"Salt Lake City, UT",71.0,44.0,4,0.01,Utah,2016
+56.0,7.0,Salt Lake City,GJT,14,04-14-2016,18.0,15.0,"Salt Lake City, UT",71.0,41.0,4,0.0,Utah,2016
+56.0,9.0,Salt Lake City,GJT,13,04-13-2016,27.0,22.0,"Salt Lake City, UT",69.0,43.0,4,0.0,Utah,2016
+53.0,5.0,Salt Lake City,GJT,12,04-12-2016,24.0,20.0,"Salt Lake City, UT",68.0,38.0,4,0.0,Utah,2016
+55.0,6.0,Salt Lake City,GJT,11,04-11-2016,20.0,16.0,"Salt Lake City, UT",64.0,45.0,4,0.05,Utah,2016
+54.0,5.0,Salt Lake City,GJT,10,04-10-2016,33.0,25.0,"Salt Lake City, UT",62.0,46.0,4,0.27,Utah,2016
+68.0,8.0,Grand Junction,DEN,9,06-09-2016,29.0,22.0,"Grand Junction, CO",83.0,53.0,6,1.79,Colorado,2016
+66.0,8.0,Grand Junction,DEN,8,06-08-2016,45.0,26.0,"Grand Junction, CO",80.0,51.0,6,1.02,Colorado,2016
+70.0,9.0,Grand Junction,DEN,7,06-07-2016,43.0,30.0,"Grand Junction, CO",83.0,56.0,6,0.38,Colorado,2016
+66.0,6.0,Grand Junction,DEN,6,06-06-2016,17.0,14.0,"Grand Junction, CO",82.0,50.0,6,0.0,Colorado,2016
+66.0,6.0,Grand Junction,DEN,5,06-05-2016,19.0,16.0,"Grand Junction, CO",77.0,55.0,6,0.0,Colorado,2016
+68.0,8.0,Grand Junction,DEN,4,06-04-2016,25.0,21.0,"Grand Junction, CO",78.0,58.0,6,0.0,Colorado,2016
+64.0,9.0,Grand Junction,DEN,3,06-03-2016,31.0,24.0,"Grand Junction, CO",79.0,49.0,6,0.0,Colorado,2016
+62.0,8.0,Grand Junction,DEN,2,06-02-2016,25.0,21.0,"Grand Junction, CO",73.0,51.0,6,0.13,Colorado,2016
+57.0,7.0,Grand Junction,DEN,1,06-01-2016,28.0,22.0,"Grand Junction, CO",66.0,47.0,6,0.05,Colorado,2016
+62.0,9.0,Grand Junction,DEN,31,05-31-2016,40.0,33.0,"Grand Junction, CO",78.0,46.0,5,0.01,Colorado,2016
+60.0,9.0,Grand Junction,DEN,30,05-30-2016,47.0,36.0,"Grand Junction, CO",76.0,44.0,5,0.0,Colorado,2016
+58.0,9.0,Grand Junction,DEN,29,05-29-2016,24.0,13.0,"Grand Junction, CO",72.0,43.0,5,1.24,Colorado,2016
+52.0,10.0,Grand Junction,DEN,28,05-28-2016,34.0,25.0,"Grand Junction, CO",58.0,45.0,5,0.23,Colorado,2016
+56.0,8.0,Grand Junction,DEN,27,05-27-2016,27.0,26.0,"Grand Junction, CO",67.0,44.0,5,1.15,Colorado,2016
+59.0,9.0,Grand Junction,DEN,26,05-26-2016,29.0,22.0,"Grand Junction, CO",73.0,45.0,5,0.0,Colorado,2016
+58.0,10.0,Grand Junction,DEN,25,05-25-2016,33.0,24.0,"Grand Junction, CO",73.0,43.0,5,0.04,Colorado,2016
+55.0,12.0,Grand Junction,DEN,24,05-24-2016,38.0,33.0,"Grand Junction, CO",68.0,42.0,5,0.07,Colorado,2016
+62.0,13.0,Grand Junction,DEN,23,05-23-2016,29.0,24.0,"Grand Junction, CO",77.0,47.0,5,0.0,Colorado,2016
+68.0,15.0,Grand Junction,DEN,22,05-22-2016,37.0,30.0,"Grand Junction, CO",83.0,53.0,5,0.0,Colorado,2016
+64.0,13.0,Grand Junction,DEN,21,05-21-2016,32.0,25.0,"Grand Junction, CO",79.0,49.0,5,0.0,Colorado,2016
+58.0,9.0,Grand Junction,DEN,20,05-20-2016,23.0,20.0,"Grand Junction, CO",73.0,43.0,5,0.0,Colorado,2016
+52.0,9.0,Grand Junction,DEN,19,05-19-2016,21.0,17.0,"Grand Junction, CO",66.0,38.0,5,0.0,Colorado,2016
+44.0,6.0,Grand Junction,DEN,18,05-18-2016,16.0,14.0,"Grand Junction, CO",48.0,39.0,5,0.08,Colorado,2016
+44.0,10.0,Grand Junction,DEN,17,05-17-2016,29.0,24.0,"Grand Junction, CO",48.0,39.0,5,0.26,Colorado,2016
+50.0,8.0,Grand Junction,DEN,16,05-16-2016,32.0,26.0,"Grand Junction, CO",59.0,41.0,5,0.01,Colorado,2016
+48.0,12.0,Grand Junction,DEN,15,05-15-2016,31.0,24.0,"Grand Junction, CO",55.0,40.0,5,0.0,Colorado,2016
+59.0,14.0,Grand Junction,DEN,14,05-14-2016,31.0,26.0,"Grand Junction, CO",71.0,46.0,5,0.0,Colorado,2016
+54.0,9.0,Grand Junction,DEN,13,05-13-2016,29.0,24.0,"Grand Junction, CO",71.0,37.0,5,0.0,Colorado,2016
+50.0,9.0,Grand Junction,DEN,12,05-12-2016,30.0,22.0,"Grand Junction, CO",61.0,38.0,5,0.05,Colorado,2016
+54.0,10.0,Grand Junction,DEN,11,05-11-2016,33.0,29.0,"Grand Junction, CO",65.0,43.0,5,0.36,Colorado,2016
+54.0,8.0,Grand Junction,DEN,10,05-10-2016,30.0,23.0,"Grand Junction, CO",67.0,41.0,5,2.34,Colorado,2016
+49.0,9.0,Grand Junction,DEN,9,05-09-2016,47.0,39.0,"Grand Junction, CO",65.0,32.0,5,2.02,Colorado,2016
+45.0,14.0,Grand Junction,DEN,8,05-08-2016,33.0,33.0,"Grand Junction, CO",55.0,35.0,5,0.02,Colorado,2016
+65.0,10.0,Grand Junction,DEN,7,05-07-2016,33.0,26.0,"Grand Junction, CO",80.0,50.0,5,3.27,Colorado,2016
+62.0,10.0,Grand Junction,DEN,6,05-06-2016,26.0,21.0,"Grand Junction, CO",79.0,44.0,5,0.0,Colorado,2016
+59.0,9.0,Grand Junction,DEN,5,05-05-2016,19.0,16.0,"Grand Junction, CO",74.0,44.0,5,0.0,Colorado,2016
+53.0,11.0,Grand Junction,DEN,4,05-04-2016,32.0,26.0,"Grand Junction, CO",66.0,40.0,5,0.0,Colorado,2016
+44.0,5.0,Grand Junction,DEN,3,05-03-2016,20.0,13.0,"Grand Junction, CO",59.0,28.0,5,0.0,Colorado,2016
+37.0,9.0,Grand Junction,DEN,2,05-02-2016,25.0,22.0,"Grand Junction, CO",42.0,32.0,5,0.05,Colorado,2016
+33.0,15.0,Grand Junction,DEN,1,05-01-2016,31.0,25.0,"Grand Junction, CO",35.0,31.0,5,0.15,Colorado,2016
+34.0,6.0,Grand Junction,DEN,30,04-30-2016,16.0,14.0,"Grand Junction, CO",36.0,31.0,4,0.73,Colorado,2016
+38.0,10.0,Grand Junction,DEN,29,04-29-2016,19.0,16.0,"Grand Junction, CO",40.0,35.0,4,0.02,Colorado,2016
+41.0,9.0,Grand Junction,DEN,28,04-28-2016,24.0,20.0,"Grand Junction, CO",54.0,27.0,4,1.6,Colorado,2016
+43.0,12.0,Grand Junction,DEN,27,04-27-2016,31.0,25.0,"Grand Junction, CO",53.0,33.0,4,3.04,Colorado,2016
+55.0,16.0,Grand Junction,DEN,26,04-26-2016,44.0,36.0,"Grand Junction, CO",72.0,38.0,4,0.02,Colorado,2016
+53.0,13.0,Grand Junction,DEN,25,04-25-2016,40.0,31.0,"Grand Junction, CO",67.0,39.0,4,0.0,Colorado,2016
+63.0,21.0,Grand Junction,DEN,24,04-24-2016,43.0,35.0,"Grand Junction, CO",77.0,49.0,4,0.0,Colorado,2016
+58.0,9.0,Grand Junction,DEN,23,04-23-2016,27.0,22.0,"Grand Junction, CO",77.0,39.0,4,0.0,Colorado,2016
+51.0,7.0,Grand Junction,DEN,22,04-22-2016,19.0,16.0,"Grand Junction, CO",64.0,37.0,4,0.0,Colorado,2016
+44.0,6.0,Grand Junction,DEN,21,04-21-2016,17.0,13.0,"Grand Junction, CO",55.0,32.0,4,0.95,Colorado,2016
+38.0,8.0,Grand Junction,DEN,20,04-20-2016,22.0,20.0,"Grand Junction, CO",44.0,31.0,4,0.11,Colorado,2016
+34.0,8.0,Grand Junction,DEN,19,04-19-2016,19.0,17.0,"Grand Junction, CO",39.0,29.0,4,0.0,Colorado,2016
+33.0,13.0,Grand Junction,DEN,18,04-18-2016,34.0,29.0,"Grand Junction, CO",36.0,30.0,4,0.06,Colorado,2016
+33.0,19.0,Grand Junction,DEN,17,04-17-2016,40.0,33.0,"Grand Junction, CO",34.0,31.0,4,1.19,Colorado,2016
+44.0,13.0,Grand Junction,DEN,16,04-16-2016,38.0,32.0,"Grand Junction, CO",54.0,34.0,4,0.14,Colorado,2016
+62.0,12.0,Grand Junction,DEN,15,04-15-2016,50.0,30.0,"Grand Junction, CO",77.0,47.0,4,0.0,Colorado,2016
+57.0,9.0,Grand Junction,DEN,14,04-14-2016,28.0,23.0,"Grand Junction, CO",72.0,41.0,4,0.0,Colorado,2016
+54.0,8.0,Grand Junction,DEN,13,04-13-2016,44.0,35.0,"Grand Junction, CO",71.0,36.0,4,0.01,Colorado,2016
+49.0,5.0,Grand Junction,DEN,12,04-12-2016,22.0,17.0,"Grand Junction, CO",60.0,38.0,4,0.0,Colorado,2016
+53.0,10.0,Grand Junction,DEN,11,04-11-2016,30.0,26.0,"Grand Junction, CO",68.0,38.0,4,0.13,Colorado,2016
+56.0,8.0,Grand Junction,DEN,10,04-10-2016,40.0,32.0,"Grand Junction, CO",72.0,39.0,4,0.86,Colorado,2016
+62.0,7.0,Pueblo,ALS,9,06-09-2016,38.0,30.0,"Pueblo, CO",81.0,43.0,6,0.71,Colorado,2016
+64.0,7.0,Pueblo,ALS,8,06-08-2016,27.0,21.0,"Pueblo, CO",85.0,42.0,6,0.0,Colorado,2016
+61.0,6.0,Pueblo,ALS,7,06-07-2016,43.0,35.0,"Pueblo, CO",80.0,42.0,6,0.0,Colorado,2016
+63.0,8.0,Pueblo,ALS,6,06-06-2016,32.0,25.0,"Pueblo, CO",81.0,45.0,6,0.8,Colorado,2016
+63.0,6.0,Pueblo,ALS,5,06-05-2016,26.0,18.0,"Pueblo, CO",82.0,43.0,6,0.0,Colorado,2016
+61.0,6.0,Pueblo,ALS,4,06-04-2016,30.0,22.0,"Pueblo, CO",82.0,39.0,6,0.0,Colorado,2016
+60.0,6.0,Pueblo,ALS,3,06-03-2016,25.0,20.0,"Pueblo, CO",79.0,41.0,6,0.0,Colorado,2016
+60.0,10.0,Pueblo,ALS,2,06-02-2016,33.0,26.0,"Pueblo, CO",72.0,48.0,6,0.16,Colorado,2016
+55.0,8.0,Pueblo,ALS,1,06-01-2016,30.0,23.0,"Pueblo, CO",74.0,36.0,6,0.33,Colorado,2016
+56.0,7.0,Pueblo,ALS,31,05-31-2016,38.0,32.0,"Pueblo, CO",75.0,37.0,5,0.0,Colorado,2016
+54.0,6.0,Pueblo,ALS,30,05-30-2016,32.0,24.0,"Pueblo, CO",70.0,37.0,5,0.0,Colorado,2016
+49.0,5.0,Pueblo,ALS,29,05-29-2016,40.0,31.0,"Pueblo, CO",66.0,31.0,5,0.0,Colorado,2016
+49.0,6.0,Pueblo,ALS,28,05-28-2016,27.0,22.0,"Pueblo, CO",61.0,36.0,5,0.53,Colorado,2016
+49.0,8.0,Pueblo,ALS,27,05-27-2016,39.0,30.0,"Pueblo, CO",64.0,33.0,5,0.86,Colorado,2016
+53.0,9.0,Pueblo,ALS,26,05-26-2016,32.0,24.0,"Pueblo, CO",71.0,35.0,5,0.0,Colorado,2016
+54.0,13.0,Pueblo,ALS,25,05-25-2016,37.0,31.0,"Pueblo, CO",73.0,34.0,5,0.0,Colorado,2016
+53.0,12.0,Pueblo,ALS,24,05-24-2016,40.0,28.0,"Pueblo, CO",70.0,36.0,5,0.0,Colorado,2016
+57.0,15.0,Pueblo,ALS,23,05-23-2016,40.0,32.0,"Pueblo, CO",72.0,41.0,5,0.0,Colorado,2016
+55.0,13.0,Pueblo,ALS,22,05-22-2016,37.0,28.0,"Pueblo, CO",76.0,34.0,5,0.0,Colorado,2016
+53.0,8.0,Pueblo,ALS,21,05-21-2016,31.0,18.0,"Pueblo, CO",72.0,34.0,5,0.0,Colorado,2016
+53.0,6.0,Pueblo,ALS,20,05-20-2016,30.0,21.0,"Pueblo, CO",65.0,40.0,5,0.0,Colorado,2016
+49.0,6.0,Pueblo,ALS,19,05-19-2016,24.0,20.0,"Pueblo, CO",58.0,40.0,5,0.14,Colorado,2016
+49.0,9.0,Pueblo,ALS,18,05-18-2016,34.0,26.0,"Pueblo, CO",60.0,37.0,5,0.23,Colorado,2016
+47.0,9.0,Pueblo,ALS,17,05-17-2016,51.0,41.0,"Pueblo, CO",61.0,32.0,5,0.01,Colorado,2016
+54.0,11.0,Pueblo,ALS,16,05-16-2016,44.0,35.0,"Pueblo, CO",68.0,39.0,5,0.03,Colorado,2016
+55.0,8.0,Pueblo,ALS,15,05-15-2016,46.0,28.0,"Pueblo, CO",77.0,32.0,5,0.0,Colorado,2016
+52.0,5.0,Pueblo,ALS,14,05-14-2016,27.0,21.0,"Pueblo, CO",75.0,28.0,5,0.0,Colorado,2016
+48.0,3.0,Pueblo,ALS,13,05-13-2016,19.0,14.0,"Pueblo, CO",69.0,26.0,5,0.0,Colorado,2016
+45.0,8.0,Pueblo,ALS,12,05-12-2016,42.0,30.0,"Pueblo, CO",57.0,33.0,5,0.06,Colorado,2016
+54.0,11.0,Pueblo,ALS,11,05-11-2016,51.0,37.0,"Pueblo, CO",70.0,38.0,5,0.04,Colorado,2016
+54.0,12.0,Pueblo,ALS,10,05-10-2016,38.0,31.0,"Pueblo, CO",68.0,39.0,5,0.0,Colorado,2016
+40.0,9.0,Pueblo,ALS,9,05-09-2016,39.0,31.0,"Pueblo, CO",55.0,25.0,5,0.56,Colorado,2016
+46.0,16.0,Pueblo,ALS,8,05-08-2016,44.0,35.0,"Pueblo, CO",61.0,31.0,5,0.0,Colorado,2016
+59.0,14.0,Pueblo,ALS,7,05-07-2016,50.0,38.0,"Pueblo, CO",77.0,40.0,5,0.71,Colorado,2016
+53.0,5.0,Pueblo,ALS,6,05-06-2016,19.0,14.0,"Pueblo, CO",73.0,33.0,5,0.0,Colorado,2016
+50.0,4.0,Pueblo,ALS,5,05-05-2016,17.0,14.0,"Pueblo, CO",70.0,29.0,5,0.0,Colorado,2016
+45.0,5.0,Pueblo,ALS,4,05-04-2016,21.0,16.0,"Pueblo, CO",64.0,26.0,5,0.0,Colorado,2016
+44.0,6.0,Pueblo,ALS,3,05-03-2016,23.0,20.0,"Pueblo, CO",56.0,32.0,5,0.44,Colorado,2016
+37.0,11.0,Pueblo,ALS,2,05-02-2016,30.0,25.0,"Pueblo, CO",45.0,28.0,5,0.08,Colorado,2016
+43.0,6.0,Pueblo,ALS,1,05-01-2016,26.0,22.0,"Pueblo, CO",53.0,32.0,5,0.04,Colorado,2016
+35.0,6.0,Pueblo,ALS,30,04-30-2016,29.0,21.0,"Pueblo, CO",39.0,31.0,4,0.36,Colorado,2016
+48.0,13.0,Pueblo,ALS,29,04-29-2016,40.0,32.0,"Pueblo, CO",59.0,36.0,4,0.06,Colorado,2016
+41.0,6.0,Pueblo,ALS,28,04-28-2016,27.0,23.0,"Pueblo, CO",59.0,22.0,4,0.0,Colorado,2016
+40.0,8.0,Pueblo,ALS,27,04-27-2016,36.0,28.0,"Pueblo, CO",52.0,28.0,4,0.24,Colorado,2016
+48.0,15.0,Pueblo,ALS,26,04-26-2016,51.0,39.0,"Pueblo, CO",65.0,31.0,4,0.3,Colorado,2016
+46.0,8.0,Pueblo,ALS,25,04-25-2016,36.0,25.0,"Pueblo, CO",66.0,25.0,4,0.0,Colorado,2016
+54.0,16.0,Pueblo,ALS,24,04-24-2016,56.0,39.0,"Pueblo, CO",70.0,37.0,4,0.64,Colorado,2016
+50.0,7.0,Pueblo,ALS,23,04-23-2016,32.0,22.0,"Pueblo, CO",70.0,30.0,4,0.0,Colorado,2016
+44.0,3.0,Pueblo,ALS,22,04-22-2016,16.0,14.0,"Pueblo, CO",63.0,24.0,4,0.0,Colorado,2016
+39.0,4.0,Pueblo,ALS,21,04-21-2016,22.0,16.0,"Pueblo, CO",53.0,25.0,4,0.01,Colorado,2016
+34.0,5.0,Pueblo,ALS,20,04-20-2016,22.0,16.0,"Pueblo, CO",45.0,22.0,4,0.0,Colorado,2016
+32.0,3.0,Pueblo,ALS,19,04-19-2016,20.0,15.0,"Pueblo, CO",37.0,27.0,4,0.29,Colorado,2016
+27.0,5.0,Pueblo,ALS,18,04-18-2016,15.0,12.0,"Pueblo, CO",42.0,12.0,4,0.32,Colorado,2016
+29.0,12.0,Pueblo,ALS,17,04-17-2016,34.0,24.0,"Pueblo, CO",37.0,21.0,4,0.65,Colorado,2016
+49.0,13.0,Pueblo,ALS,16,04-16-2016,50.0,41.0,"Pueblo, CO",62.0,35.0,4,0.02,Colorado,2016
+48.0,12.0,Pueblo,ALS,15,04-15-2016,45.0,33.0,"Pueblo, CO",68.0,28.0,4,0.0,Colorado,2016
+45.0,5.0,Pueblo,ALS,14,04-14-2016,34.0,25.0,"Pueblo, CO",65.0,25.0,4,0.0,Colorado,2016
+43.0,7.0,Pueblo,ALS,13,04-13-2016,34.0,29.0,"Pueblo, CO",60.0,26.0,4,0.66,Colorado,2016
+47.0,7.0,Pueblo,ALS,12,04-12-2016,27.0,21.0,"Pueblo, CO",60.0,33.0,4,0.22,Colorado,2016
+48.0,7.0,Pueblo,ALS,11,04-11-2016,34.0,26.0,"Pueblo, CO",66.0,30.0,4,0.0,Colorado,2016
+48.0,10.0,Pueblo,ALS,10,04-10-2016,40.0,32.0,"Pueblo, CO",65.0,31.0,4,0.0,Colorado,2016
+71.0,8.0,Goodland,PUB,9,06-09-2016,44.0,33.0,"Goodland, KS",90.0,52.0,6,1.13,Kansas,2016
+72.0,8.0,Goodland,PUB,8,06-08-2016,39.0,31.0,"Goodland, KS",89.0,54.0,6,0.02,Kansas,2016
+73.0,8.0,Goodland,PUB,7,06-07-2016,34.0,28.0,"Goodland, KS",89.0,56.0,6,0.88,Kansas,2016
+71.0,5.0,Goodland,PUB,6,06-06-2016,20.0,16.0,"Goodland, KS",87.0,54.0,6,0.0,Kansas,2016
+70.0,5.0,Goodland,PUB,5,06-05-2016,18.0,15.0,"Goodland, KS",83.0,57.0,6,0.0,Kansas,2016
+70.0,7.0,Goodland,PUB,4,06-04-2016,23.0,20.0,"Goodland, KS",86.0,53.0,6,0.0,Kansas,2016
+68.0,5.0,Goodland,PUB,3,06-03-2016,21.0,16.0,"Goodland, KS",83.0,53.0,6,0.0,Kansas,2016
+64.0,7.0,Goodland,PUB,2,06-02-2016,21.0,17.0,"Goodland, KS",73.0,54.0,6,0.02,Kansas,2016
+63.0,12.0,Goodland,PUB,1,06-01-2016,38.0,32.0,"Goodland, KS",75.0,50.0,6,1.01,Kansas,2016
+67.0,7.0,Goodland,PUB,31,05-31-2016,40.0,32.0,"Goodland, KS",85.0,48.0,5,1.38,Kansas,2016
+64.0,7.0,Goodland,PUB,30,05-30-2016,46.0,33.0,"Goodland, KS",80.0,48.0,5,1.2,Kansas,2016
+60.0,6.0,Goodland,PUB,29,05-29-2016,49.0,26.0,"Goodland, KS",77.0,43.0,5,0.2,Kansas,2016
+58.0,13.0,Goodland,PUB,28,05-28-2016,47.0,38.0,"Goodland, KS",67.0,48.0,5,0.76,Kansas,2016
+63.0,9.0,Goodland,PUB,27,05-27-2016,48.0,40.0,"Goodland, KS",75.0,51.0,5,0.01,Kansas,2016
+67.0,8.0,Goodland,PUB,26,05-26-2016,29.0,23.0,"Goodland, KS",84.0,49.0,5,0.0,Kansas,2016
+69.0,9.0,Goodland,PUB,25,05-25-2016,28.0,22.0,"Goodland, KS",85.0,52.0,5,0.0,Kansas,2016
+64.0,10.0,Goodland,PUB,24,05-24-2016,26.0,21.0,"Goodland, KS",80.0,47.0,5,0.0,Kansas,2016
+74.0,15.0,Goodland,PUB,23,05-23-2016,42.0,31.0,"Goodland, KS",88.0,59.0,5,0.0,Kansas,2016
+73.0,11.0,Goodland,PUB,22,05-22-2016,36.0,28.0,"Goodland, KS",91.0,55.0,5,0.0,Kansas,2016
+67.0,6.0,Goodland,PUB,21,05-21-2016,24.0,20.0,"Goodland, KS",87.0,47.0,5,0.0,Kansas,2016
+59.0,6.0,Goodland,PUB,20,05-20-2016,19.0,16.0,"Goodland, KS",76.0,41.0,5,0.0,Kansas,2016
+56.0,7.0,Goodland,PUB,19,05-19-2016,22.0,18.0,"Goodland, KS",66.0,45.0,5,0.0,Kansas,2016
+50.0,6.0,Goodland,PUB,18,05-18-2016,18.0,14.0,"Goodland, KS",55.0,44.0,5,0.01,Kansas,2016
+55.0,8.0,Goodland,PUB,17,05-17-2016,24.0,20.0,"Goodland, KS",63.0,47.0,5,0.76,Kansas,2016
+57.0,7.0,Goodland,PUB,16,05-16-2016,32.0,26.0,"Goodland, KS",68.0,46.0,5,2.31,Kansas,2016
+59.0,13.0,Goodland,PUB,15,05-15-2016,28.0,24.0,"Goodland, KS",69.0,48.0,5,0.0,Kansas,2016
+65.0,9.0,Goodland,PUB,14,05-14-2016,39.0,32.0,"Goodland, KS",85.0,45.0,5,0.0,Kansas,2016
+62.0,8.0,Goodland,PUB,13,05-13-2016,26.0,20.0,"Goodland, KS",77.0,47.0,5,0.0,Kansas,2016
+57.0,8.0,Goodland,PUB,12,05-12-2016,31.0,25.0,"Goodland, KS",68.0,46.0,5,1.09,Kansas,2016
+63.0,6.0,Goodland,PUB,11,05-11-2016,40.0,25.0,"Goodland, KS",81.0,44.0,5,0.01,Kansas,2016
+62.0,6.0,Goodland,PUB,10,05-10-2016,32.0,23.0,"Goodland, KS",77.0,46.0,5,0.0,Kansas,2016
+57.0,9.0,Goodland,PUB,9,05-09-2016,31.0,25.0,"Goodland, KS",73.0,40.0,5,0.0,Kansas,2016
+65.0,14.0,Goodland,PUB,8,05-08-2016,44.0,36.0,"Goodland, KS",81.0,48.0,5,0.0,Kansas,2016
+68.0,11.0,Goodland,PUB,7,05-07-2016,46.0,38.0,"Goodland, KS",88.0,47.0,5,0.0,Kansas,2016
+65.0,7.0,Goodland,PUB,6,05-06-2016,22.0,17.0,"Goodland, KS",85.0,45.0,5,0.0,Kansas,2016
+60.0,8.0,Goodland,PUB,5,05-05-2016,23.0,18.0,"Goodland, KS",80.0,40.0,5,0.0,Kansas,2016
+56.0,11.0,Goodland,PUB,4,05-04-2016,34.0,25.0,"Goodland, KS",73.0,39.0,5,0.0,Kansas,2016
+48.0,4.0,Goodland,PUB,3,05-03-2016,15.0,12.0,"Goodland, KS",63.0,32.0,5,0.0,Kansas,2016
+42.0,11.0,Goodland,PUB,2,05-02-2016,33.0,25.0,"Goodland, KS",47.0,37.0,5,1.02,Kansas,2016
+42.0,13.0,Goodland,PUB,1,05-01-2016,36.0,30.0,"Goodland, KS",48.0,36.0,5,0.0,Kansas,2016
+38.0,3.0,Goodland,PUB,30,04-30-2016,19.0,16.0,"Goodland, KS",42.0,34.0,4,1.09,Kansas,2016
+45.0,8.0,Goodland,PUB,29,04-29-2016,21.0,17.0,"Goodland, KS",50.0,39.0,4,0.17,Kansas,2016
+50.0,9.0,Goodland,PUB,28,04-28-2016,28.0,22.0,"Goodland, KS",64.0,35.0,4,0.91,Kansas,2016
+55.0,14.0,Goodland,PUB,27,04-27-2016,38.0,32.0,"Goodland, KS",66.0,43.0,4,0.0,Kansas,2016
+60.0,11.0,Goodland,PUB,26,04-26-2016,36.0,29.0,"Goodland, KS",80.0,39.0,4,0.0,Kansas,2016
+63.0,14.0,Goodland,PUB,25,04-25-2016,45.0,32.0,"Goodland, KS",78.0,47.0,4,0.0,Kansas,2016
+65.0,9.0,Goodland,PUB,24,04-24-2016,50.0,37.0,"Goodland, KS",84.0,46.0,4,0.0,Kansas,2016
+61.0,6.0,Goodland,PUB,23,04-23-2016,33.0,24.0,"Goodland, KS",83.0,38.0,4,1.44,Kansas,2016
+55.0,6.0,Goodland,PUB,22,04-22-2016,17.0,14.0,"Goodland, KS",72.0,38.0,4,0.0,Kansas,2016
+51.0,5.0,Goodland,PUB,21,04-21-2016,42.0,32.0,"Goodland, KS",66.0,35.0,4,0.01,Kansas,2016
+47.0,4.0,Goodland,PUB,20,04-20-2016,13.0,9.0,"Goodland, KS",56.0,37.0,4,0.02,Kansas,2016
+42.0,3.0,Goodland,PUB,19,04-19-2016,14.0,12.0,"Goodland, KS",47.0,36.0,4,0.2,Kansas,2016
+44.0,15.0,Goodland,PUB,18,04-18-2016,33.0,26.0,"Goodland, KS",49.0,38.0,4,0.0,Kansas,2016
+40.0,23.0,Goodland,PUB,17,04-17-2016,63.0,55.0,"Goodland, KS",45.0,35.0,4,0.74,Kansas,2016
+57.0,18.0,Goodland,PUB,16,04-16-2016,49.0,41.0,"Goodland, KS",70.0,44.0,4,0.2,Kansas,2016
+64.0,8.0,Goodland,PUB,15,04-15-2016,29.0,24.0,"Goodland, KS",83.0,44.0,4,0.0,Kansas,2016
+59.0,6.0,Goodland,PUB,14,04-14-2016,16.0,13.0,"Goodland, KS",76.0,41.0,4,0.0,Kansas,2016
+54.0,6.0,Goodland,PUB,13,04-13-2016,23.0,20.0,"Goodland, KS",71.0,37.0,4,0.0,Kansas,2016
+47.0,6.0,Goodland,PUB,12,04-12-2016,20.0,17.0,"Goodland, KS",55.0,39.0,4,0.31,Kansas,2016
+63.0,13.0,Goodland,PUB,11,04-11-2016,37.0,30.0,"Goodland, KS",78.0,47.0,4,0.23,Kansas,2016
+58.0,11.0,Goodland,PUB,10,04-10-2016,41.0,36.0,"Goodland, KS",81.0,35.0,4,0.0,Kansas,2016
+61.0,7.0,Milwaukee/Sullivan,ORD,9,06-09-2016,18.0,15.0,"Milwaukee/Sullivan, WI",70.0,52.0,6,0.0,Wisconsin,2016
+59.0,10.0,Milwaukee/Sullivan,ORD,8,06-08-2016,22.0,17.0,"Milwaukee/Sullivan, WI",67.0,51.0,6,0.0,Wisconsin,2016
+71.0,12.0,Milwaukee/Sullivan,ORD,7,06-07-2016,35.0,26.0,"Milwaukee/Sullivan, WI",82.0,59.0,6,0.0,Wisconsin,2016
+70.0,12.0,Milwaukee/Sullivan,ORD,6,06-06-2016,33.0,23.0,"Milwaukee/Sullivan, WI",79.0,61.0,6,0.05,Wisconsin,2016
+67.0,7.0,Milwaukee/Sullivan,ORD,5,06-05-2016,19.0,15.0,"Milwaukee/Sullivan, WI",72.0,62.0,6,0.41,Wisconsin,2016
+70.0,3.0,Milwaukee/Sullivan,ORD,4,06-04-2016,15.0,12.0,"Milwaukee/Sullivan, WI",84.0,55.0,6,0.0,Wisconsin,2016
+68.0,7.0,Milwaukee/Sullivan,ORD,3,06-03-2016,23.0,17.0,"Milwaukee/Sullivan, WI",79.0,57.0,6,0.0,Wisconsin,2016
+71.0,6.0,Milwaukee/Sullivan,ORD,2,06-02-2016,18.0,14.0,"Milwaukee/Sullivan, WI",79.0,62.0,6,0.42,Wisconsin,2016
+73.0,8.0,Milwaukee/Sullivan,ORD,1,06-01-2016,38.0,29.0,"Milwaukee/Sullivan, WI",83.0,63.0,6,0.56,Wisconsin,2016
+75.0,6.0,Milwaukee/Sullivan,ORD,31,05-31-2016,22.0,16.0,"Milwaukee/Sullivan, WI",87.0,63.0,5,0.0,Wisconsin,2016
+71.0,10.0,Milwaukee/Sullivan,ORD,30,05-30-2016,27.0,22.0,"Milwaukee/Sullivan, WI",79.0,63.0,5,0.0,Wisconsin,2016
+73.0,14.0,Milwaukee/Sullivan,ORD,29,05-29-2016,33.0,24.0,"Milwaukee/Sullivan, WI",81.0,64.0,5,0.13,Wisconsin,2016
+74.0,11.0,Milwaukee/Sullivan,ORD,28,05-28-2016,38.0,28.0,"Milwaukee/Sullivan, WI",81.0,66.0,5,0.13,Wisconsin,2016
+73.0,8.0,Milwaukee/Sullivan,ORD,27,05-27-2016,22.0,16.0,"Milwaukee/Sullivan, WI",83.0,62.0,5,0.0,Wisconsin,2016
+75.0,9.0,Milwaukee/Sullivan,ORD,26,05-26-2016,39.0,32.0,"Milwaukee/Sullivan, WI",86.0,64.0,5,0.95,Wisconsin,2016
+73.0,10.0,Milwaukee/Sullivan,ORD,25,05-25-2016,28.0,22.0,"Milwaukee/Sullivan, WI",86.0,60.0,5,0.0,Wisconsin,2016
+65.0,6.0,Milwaukee/Sullivan,ORD,24,05-24-2016,21.0,18.0,"Milwaukee/Sullivan, WI",81.0,48.0,5,0.0,Wisconsin,2016
+65.0,8.0,Milwaukee/Sullivan,ORD,23,05-23-2016,20.0,14.0,"Milwaukee/Sullivan, WI",77.0,53.0,5,0.0,Wisconsin,2016
+64.0,8.0,Milwaukee/Sullivan,ORD,22,05-22-2016,25.0,21.0,"Milwaukee/Sullivan, WI",75.0,53.0,5,0.0,Wisconsin,2016
+56.0,7.0,Milwaukee/Sullivan,ORD,21,05-21-2016,20.0,15.0,"Milwaukee/Sullivan, WI",68.0,44.0,5,0.0,Wisconsin,2016
+54.0,5.0,Milwaukee/Sullivan,ORD,20,05-20-2016,16.0,14.0,"Milwaukee/Sullivan, WI",69.0,39.0,5,0.0,Wisconsin,2016
+53.0,6.0,Milwaukee/Sullivan,ORD,19,05-19-2016,19.0,15.0,"Milwaukee/Sullivan, WI",65.0,41.0,5,0.0,Wisconsin,2016
+51.0,9.0,Milwaukee/Sullivan,ORD,18,05-18-2016,23.0,20.0,"Milwaukee/Sullivan, WI",57.0,44.0,5,1.38,Wisconsin,2016
+58.0,13.0,Milwaukee/Sullivan,ORD,17,05-17-2016,29.0,23.0,"Milwaukee/Sullivan, WI",70.0,46.0,5,1.38,Wisconsin,2016
+45.0,9.0,Milwaukee/Sullivan,ORD,16,05-16-2016,31.0,22.0,"Milwaukee/Sullivan, WI",55.0,35.0,5,0.0,Wisconsin,2016
+44.0,13.0,Milwaukee/Sullivan,ORD,15,05-15-2016,30.0,24.0,"Milwaukee/Sullivan, WI",47.0,41.0,5,0.0,Wisconsin,2016
+55.0,10.0,Milwaukee/Sullivan,ORD,14,05-14-2016,37.0,29.0,"Milwaukee/Sullivan, WI",66.0,43.0,5,0.68,Wisconsin,2016
+62.0,10.0,Milwaukee/Sullivan,ORD,13,05-13-2016,30.0,23.0,"Milwaukee/Sullivan, WI",70.0,53.0,5,0.48,Wisconsin,2016
+60.0,6.0,Milwaukee/Sullivan,ORD,12,05-12-2016,16.0,13.0,"Milwaukee/Sullivan, WI",69.0,51.0,5,0.19,Wisconsin,2016
+57.0,9.0,Milwaukee/Sullivan,ORD,11,05-11-2016,25.0,21.0,"Milwaukee/Sullivan, WI",63.0,51.0,5,0.8,Wisconsin,2016
+54.0,13.0,Milwaukee/Sullivan,ORD,10,05-10-2016,30.0,25.0,"Milwaukee/Sullivan, WI",58.0,50.0,5,0.59,Wisconsin,2016
+56.0,5.0,Milwaukee/Sullivan,ORD,9,05-09-2016,18.0,14.0,"Milwaukee/Sullivan, WI",71.0,41.0,5,0.0,Wisconsin,2016
+57.0,12.0,Milwaukee/Sullivan,ORD,8,05-08-2016,41.0,32.0,"Milwaukee/Sullivan, WI",70.0,44.0,5,0.02,Wisconsin,2016
+62.0,7.0,Milwaukee/Sullivan,ORD,7,05-07-2016,21.0,16.0,"Milwaukee/Sullivan, WI",82.0,42.0,5,1.41,Wisconsin,2016
+51.0,9.0,Milwaukee/Sullivan,ORD,6,05-06-2016,29.0,22.0,"Milwaukee/Sullivan, WI",61.0,41.0,5,0.0,Wisconsin,2016
+50.0,13.0,Milwaukee/Sullivan,ORD,5,05-05-2016,39.0,29.0,"Milwaukee/Sullivan, WI",57.0,42.0,5,0.4,Wisconsin,2016
+54.0,9.0,Milwaukee/Sullivan,ORD,4,05-04-2016,25.0,18.0,"Milwaukee/Sullivan, WI",67.0,40.0,5,1.59,Wisconsin,2016
+51.0,10.0,Milwaukee/Sullivan,ORD,3,05-03-2016,24.0,18.0,"Milwaukee/Sullivan, WI",59.0,42.0,5,0.0,Wisconsin,2016
+46.0,12.0,Milwaukee/Sullivan,ORD,2,05-02-2016,30.0,17.0,"Milwaukee/Sullivan, WI",49.0,42.0,5,0.51,Wisconsin,2016
+46.0,13.0,Milwaukee/Sullivan,ORD,1,05-01-2016,30.0,23.0,"Milwaukee/Sullivan, WI",48.0,43.0,5,0.61,Wisconsin,2016
+46.0,9.0,Milwaukee/Sullivan,ORD,30,04-30-2016,22.0,17.0,"Milwaukee/Sullivan, WI",51.0,41.0,4,0.01,Wisconsin,2016
+46.0,10.0,Milwaukee/Sullivan,ORD,29,04-29-2016,28.0,22.0,"Milwaukee/Sullivan, WI",50.0,42.0,4,0.45,Wisconsin,2016
+45.0,14.0,Milwaukee/Sullivan,ORD,28,04-28-2016,28.0,23.0,"Milwaukee/Sullivan, WI",49.0,41.0,4,0.47,Wisconsin,2016
+55.0,13.0,Milwaukee/Sullivan,ORD,27,04-27-2016,29.0,23.0,"Milwaukee/Sullivan, WI",68.0,42.0,4,0.0,Wisconsin,2016
+71.0,12.0,Milwaukee/Sullivan,ORD,26,04-26-2016,35.0,25.0,"Milwaukee/Sullivan, WI",83.0,58.0,4,0.08,Wisconsin,2016
+60.0,8.0,Milwaukee/Sullivan,ORD,25,04-25-2016,24.0,18.0,"Milwaukee/Sullivan, WI",78.0,41.0,4,0.0,Wisconsin,2016
+49.0,7.0,Milwaukee/Sullivan,ORD,24,04-24-2016,21.0,13.0,"Milwaukee/Sullivan, WI",60.0,38.0,4,0.0,Wisconsin,2016
+48.0,11.0,Milwaukee/Sullivan,ORD,23,04-23-2016,30.0,25.0,"Milwaukee/Sullivan, WI",54.0,41.0,4,1.55,Wisconsin,2016
+60.0,7.0,Milwaukee/Sullivan,ORD,22,04-22-2016,36.0,30.0,"Milwaukee/Sullivan, WI",70.0,50.0,4,0.01,Wisconsin,2016
+61.0,9.0,Milwaukee/Sullivan,ORD,21,04-21-2016,23.0,18.0,"Milwaukee/Sullivan, WI",71.0,51.0,4,0.48,Wisconsin,2016
+52.0,11.0,Milwaukee/Sullivan,ORD,20,04-20-2016,24.0,21.0,"Milwaukee/Sullivan, WI",57.0,46.0,4,0.0,Wisconsin,2016
+66.0,4.0,Milwaukee/Sullivan,ORD,19,04-19-2016,18.0,15.0,"Milwaukee/Sullivan, WI",83.0,49.0,4,0.0,Wisconsin,2016
+62.0,5.0,Milwaukee/Sullivan,ORD,18,04-18-2016,21.0,18.0,"Milwaukee/Sullivan, WI",79.0,45.0,4,0.0,Wisconsin,2016
+59.0,6.0,Milwaukee/Sullivan,ORD,17,04-17-2016,19.0,15.0,"Milwaukee/Sullivan, WI",76.0,41.0,4,0.0,Wisconsin,2016
+55.0,7.0,Milwaukee/Sullivan,ORD,16,04-16-2016,16.0,14.0,"Milwaukee/Sullivan, WI",68.0,42.0,4,0.0,Wisconsin,2016
+49.0,8.0,Milwaukee/Sullivan,ORD,15,04-15-2016,19.0,16.0,"Milwaukee/Sullivan, WI",61.0,37.0,4,0.0,Wisconsin,2016
+45.0,7.0,Milwaukee/Sullivan,ORD,14,04-14-2016,21.0,17.0,"Milwaukee/Sullivan, WI",56.0,34.0,4,0.0,Wisconsin,2016
+39.0,8.0,Milwaukee/Sullivan,ORD,13,04-13-2016,19.0,15.0,"Milwaukee/Sullivan, WI",47.0,30.0,4,0.0,Wisconsin,2016
+44.0,12.0,Milwaukee/Sullivan,ORD,12,04-12-2016,35.0,24.0,"Milwaukee/Sullivan, WI",51.0,36.0,4,0.0,Wisconsin,2016
+42.0,14.0,Milwaukee/Sullivan,ORD,11,04-11-2016,37.0,25.0,"Milwaukee/Sullivan, WI",50.0,33.0,4,0.1,Wisconsin,2016
+30.0,12.0,Milwaukee/Sullivan,ORD,10,04-10-2016,27.0,22.0,"Milwaukee/Sullivan, WI",38.0,22.0,4,1.49,Wisconsin,2016
+64.0,6.0,Chicago,ARR,9,06-09-2016,23.0,14.0,"Chicago, IL",78.0,49.0,6,0.0,Illinois,2016
+61.0,9.0,Chicago,ARR,8,06-08-2016,24.0,20.0,"Chicago, IL",71.0,51.0,6,0.0,Illinois,2016
+71.0,11.0,Chicago,ARR,7,06-07-2016,40.0,31.0,"Chicago, IL",84.0,57.0,6,0.0,Illinois,2016
+71.0,12.0,Chicago,ARR,6,06-06-2016,32.0,25.0,"Chicago, IL",80.0,61.0,6,0.11,Illinois,2016
+69.0,6.0,Chicago,ARR,5,06-05-2016,23.0,20.0,"Chicago, IL",76.0,62.0,6,0.34,Illinois,2016
+70.0,4.0,Chicago,ARR,4,06-04-2016,16.0,12.0,"Chicago, IL",85.0,55.0,6,0.0,Illinois,2016
+68.0,6.0,Chicago,ARR,3,06-03-2016,23.0,16.0,"Chicago, IL",80.0,55.0,6,0.0,Illinois,2016
+71.0,5.0,Chicago,ARR,2,06-02-2016,19.0,16.0,"Chicago, IL",80.0,62.0,6,0.06,Illinois,2016
+74.0,8.0,Chicago,ARR,1,06-01-2016,30.0,25.0,"Chicago, IL",84.0,63.0,6,0.33,Illinois,2016
+74.0,5.0,Chicago,ARR,31,05-31-2016,22.0,20.0,"Chicago, IL",88.0,60.0,5,0.0,Illinois,2016
+72.0,10.0,Chicago,ARR,30,05-30-2016,26.0,22.0,"Chicago, IL",80.0,63.0,5,0.0,Illinois,2016
+75.0,15.0,Chicago,ARR,29,05-29-2016,34.0,28.0,"Chicago, IL",85.0,65.0,5,0.44,Illinois,2016
+75.0,11.0,Chicago,ARR,28,05-28-2016,32.0,25.0,"Chicago, IL",82.0,67.0,5,0.06,Illinois,2016
+75.0,6.0,Chicago,ARR,27,05-27-2016,25.0,18.0,"Chicago, IL",85.0,65.0,5,0.01,Illinois,2016
+77.0,7.0,Chicago,ARR,26,05-26-2016,49.0,37.0,"Chicago, IL",90.0,63.0,5,2.04,Illinois,2016
+72.0,9.0,Chicago,ARR,25,05-25-2016,25.0,20.0,"Chicago, IL",88.0,55.0,5,0.0,Illinois,2016
+67.0,6.0,Chicago,ARR,24,05-24-2016,23.0,17.0,"Chicago, IL",85.0,48.0,5,0.0,Illinois,2016
+65.0,7.0,Chicago,ARR,23,05-23-2016,20.0,17.0,"Chicago, IL",83.0,47.0,5,0.0,Illinois,2016
+65.0,7.0,Chicago,ARR,22,05-22-2016,20.0,16.0,"Chicago, IL",78.0,51.0,5,0.0,Illinois,2016
+60.0,7.0,Chicago,ARR,21,05-21-2016,22.0,17.0,"Chicago, IL",72.0,47.0,5,0.0,Illinois,2016
+57.0,4.0,Chicago,ARR,20,05-20-2016,17.0,14.0,"Chicago, IL",73.0,40.0,5,0.0,Illinois,2016
+54.0,5.0,Chicago,ARR,19,05-19-2016,21.0,18.0,"Chicago, IL",70.0,37.0,5,0.0,Illinois,2016
+53.0,8.0,Chicago,ARR,18,05-18-2016,23.0,17.0,"Chicago, IL",63.0,42.0,5,0.0,Illinois,2016
+56.0,10.0,Chicago,ARR,17,05-17-2016,26.0,20.0,"Chicago, IL",70.0,42.0,5,0.0,Illinois,2016
+45.0,9.0,Chicago,ARR,16,05-16-2016,27.0,23.0,"Chicago, IL",57.0,33.0,5,0.0,Illinois,2016
+45.0,15.0,Chicago,ARR,15,05-15-2016,36.0,30.0,"Chicago, IL",50.0,40.0,5,0.0,Illinois,2016
+56.0,11.0,Chicago,ARR,14,05-14-2016,40.0,32.0,"Chicago, IL",66.0,45.0,5,0.53,Illinois,2016
+62.0,13.0,Chicago,ARR,13,05-13-2016,32.0,26.0,"Chicago, IL",70.0,53.0,5,0.46,Illinois,2016
+66.0,7.0,Chicago,ARR,12,05-12-2016,23.0,20.0,"Chicago, IL",75.0,57.0,5,0.96,Illinois,2016
+64.0,9.0,Chicago,ARR,11,05-11-2016,24.0,18.0,"Chicago, IL",71.0,56.0,5,0.8,Illinois,2016
+56.0,14.0,Chicago,ARR,10,05-10-2016,31.0,25.0,"Chicago, IL",60.0,52.0,5,0.44,Illinois,2016
+54.0,5.0,Chicago,ARR,9,05-09-2016,17.0,14.0,"Chicago, IL",67.0,40.0,5,0.0,Illinois,2016
+56.0,9.0,Chicago,ARR,8,05-08-2016,29.0,24.0,"Chicago, IL",69.0,42.0,5,0.04,Illinois,2016
+62.0,7.0,Chicago,ARR,7,05-07-2016,29.0,23.0,"Chicago, IL",83.0,40.0,5,0.0,Illinois,2016
+52.0,8.0,Chicago,ARR,6,05-06-2016,20.0,16.0,"Chicago, IL",66.0,38.0,5,0.0,Illinois,2016
+48.0,14.0,Chicago,ARR,5,05-05-2016,43.0,32.0,"Chicago, IL",57.0,38.0,5,0.17,Illinois,2016
+52.0,9.0,Chicago,ARR,4,05-04-2016,29.0,23.0,"Chicago, IL",68.0,36.0,5,0.12,Illinois,2016
+50.0,10.0,Chicago,ARR,3,05-03-2016,28.0,23.0,"Chicago, IL",62.0,38.0,5,0.0,Illinois,2016
+49.0,11.0,Chicago,ARR,2,05-02-2016,25.0,20.0,"Chicago, IL",52.0,46.0,5,0.41,Illinois,2016
+48.0,15.0,Chicago,ARR,1,05-01-2016,31.0,26.0,"Chicago, IL",51.0,44.0,5,0.69,Illinois,2016
+46.0,7.0,Chicago,ARR,30,04-30-2016,18.0,15.0,"Chicago, IL",49.0,43.0,4,0.0,Illinois,2016
+49.0,10.0,Chicago,ARR,29,04-29-2016,26.0,22.0,"Chicago, IL",54.0,44.0,4,0.11,Illinois,2016
+47.0,16.0,Chicago,ARR,28,04-28-2016,33.0,25.0,"Chicago, IL",51.0,43.0,4,0.46,Illinois,2016
+54.0,13.0,Chicago,ARR,27,04-27-2016,29.0,23.0,"Chicago, IL",62.0,45.0,4,0.0,Illinois,2016
+70.0,12.0,Chicago,ARR,26,04-26-2016,32.0,24.0,"Chicago, IL",83.0,57.0,4,0.0,Illinois,2016
+61.0,10.0,Chicago,ARR,25,04-25-2016,26.0,20.0,"Chicago, IL",79.0,43.0,4,0.0,Illinois,2016
+51.0,7.0,Chicago,ARR,24,04-24-2016,18.0,14.0,"Chicago, IL",67.0,35.0,4,0.0,Illinois,2016
+52.0,9.0,Chicago,ARR,23,04-23-2016,24.0,20.0,"Chicago, IL",61.0,42.0,4,0.0,Illinois,2016
+59.0,6.0,Chicago,ARR,22,04-22-2016,37.0,31.0,"Chicago, IL",71.0,47.0,4,0.1,Illinois,2016
+60.0,11.0,Chicago,ARR,21,04-21-2016,26.0,21.0,"Chicago, IL",71.0,48.0,4,0.27,Illinois,2016
+58.0,12.0,Chicago,ARR,20,04-20-2016,28.0,23.0,"Chicago, IL",64.0,52.0,4,0.0,Illinois,2016
+65.0,3.0,Chicago,ARR,19,04-19-2016,20.0,16.0,"Chicago, IL",83.0,46.0,4,0.0,Illinois,2016
+62.0,5.0,Chicago,ARR,18,04-18-2016,18.0,15.0,"Chicago, IL",82.0,42.0,4,0.0,Illinois,2016
+62.0,8.0,Chicago,ARR,17,04-17-2016,22.0,17.0,"Chicago, IL",80.0,44.0,4,0.0,Illinois,2016
+57.0,9.0,Chicago,ARR,16,04-16-2016,21.0,16.0,"Chicago, IL",74.0,40.0,4,0.0,Illinois,2016
+52.0,8.0,Chicago,ARR,15,04-15-2016,21.0,16.0,"Chicago, IL",67.0,37.0,4,0.0,Illinois,2016
+47.0,8.0,Chicago,ARR,14,04-14-2016,28.0,17.0,"Chicago, IL",61.0,32.0,4,0.0,Illinois,2016
+38.0,5.0,Chicago,ARR,13,04-13-2016,19.0,16.0,"Chicago, IL",52.0,24.0,4,0.0,Illinois,2016
+40.0,13.0,Chicago,ARR,12,04-12-2016,34.0,26.0,"Chicago, IL",51.0,29.0,4,0.0,Illinois,2016
+43.0,13.0,Chicago,ARR,11,04-11-2016,33.0,26.0,"Chicago, IL",51.0,34.0,4,0.14,Illinois,2016
+32.0,10.0,Chicago,ARR,10,04-10-2016,29.0,24.0,"Chicago, IL",40.0,23.0,4,1.67,Illinois,2016
+63.0,12.0,Davenport/Quad Cities,LOT,9,06-09-2016,39.0,25.0,"Davenport/Quad Cities, IA",76.0,50.0,6,0.0,Iowa,2016
+62.0,12.0,Davenport/Quad Cities,LOT,8,06-08-2016,39.0,25.0,"Davenport/Quad Cities, IA",70.0,53.0,6,0.0,Iowa,2016
+71.0,12.0,Davenport/Quad Cities,LOT,7,06-07-2016,39.0,25.0,"Davenport/Quad Cities, IA",83.0,58.0,6,0.0,Iowa,2016
+70.0,12.0,Davenport/Quad Cities,LOT,6,06-06-2016,39.0,25.0,"Davenport/Quad Cities, IA",79.0,61.0,6,0.11,Iowa,2016
+67.0,12.0,Davenport/Quad Cities,LOT,5,06-05-2016,39.0,25.0,"Davenport/Quad Cities, IA",72.0,62.0,6,0.05,Iowa,2016
+70.0,12.0,Davenport/Quad Cities,LOT,4,06-04-2016,39.0,25.0,"Davenport/Quad Cities, IA",83.0,57.0,6,0.0,Iowa,2016
+69.0,12.0,Davenport/Quad Cities,LOT,3,06-03-2016,39.0,25.0,"Davenport/Quad Cities, IA",80.0,58.0,6,0.0,Iowa,2016
+72.0,12.0,Davenport/Quad Cities,LOT,2,06-02-2016,39.0,25.0,"Davenport/Quad Cities, IA",80.0,64.0,6,0.28,Iowa,2016
+77.0,12.0,Davenport/Quad Cities,LOT,1,06-01-2016,39.0,25.0,"Davenport/Quad Cities, IA",88.0,65.0,6,0.52,Iowa,2016
+74.0,12.0,Davenport/Quad Cities,LOT,31,05-31-2016,39.0,25.0,"Davenport/Quad Cities, IA",87.0,60.0,5,0.0,Iowa,2016
+72.0,12.0,Davenport/Quad Cities,LOT,30,05-30-2016,39.0,25.0,"Davenport/Quad Cities, IA",81.0,63.0,5,0.67,Iowa,2016
+75.0,12.0,Davenport/Quad Cities,LOT,29,05-29-2016,39.0,25.0,"Davenport/Quad Cities, IA",83.0,66.0,5,0.03,Iowa,2016
+74.0,12.0,Davenport/Quad Cities,LOT,28,05-28-2016,39.0,25.0,"Davenport/Quad Cities, IA",82.0,66.0,5,0.15,Iowa,2016
+77.0,12.0,Davenport/Quad Cities,LOT,27,05-27-2016,39.0,25.0,"Davenport/Quad Cities, IA",86.0,67.0,5,0.01,Iowa,2016
+77.0,12.0,Davenport/Quad Cities,LOT,26,05-26-2016,39.0,25.0,"Davenport/Quad Cities, IA",89.0,65.0,5,0.2,Iowa,2016
+73.0,12.0,Davenport/Quad Cities,LOT,25,05-25-2016,39.0,25.0,"Davenport/Quad Cities, IA",87.0,58.0,5,0.0,Iowa,2016
+67.0,12.0,Davenport/Quad Cities,LOT,24,05-24-2016,39.0,25.0,"Davenport/Quad Cities, IA",83.0,51.0,5,0.0,Iowa,2016
+64.0,12.0,Davenport/Quad Cities,LOT,23,05-23-2016,39.0,25.0,"Davenport/Quad Cities, IA",79.0,49.0,5,0.0,Iowa,2016
+63.0,12.0,Davenport/Quad Cities,LOT,22,05-22-2016,39.0,25.0,"Davenport/Quad Cities, IA",74.0,52.0,5,0.0,Iowa,2016
+59.0,12.0,Davenport/Quad Cities,LOT,21,05-21-2016,39.0,25.0,"Davenport/Quad Cities, IA",68.0,50.0,5,0.0,Iowa,2016
+55.0,12.0,Davenport/Quad Cities,LOT,20,05-20-2016,39.0,25.0,"Davenport/Quad Cities, IA",70.0,40.0,5,0.0,Iowa,2016
+53.0,12.0,Davenport/Quad Cities,LOT,19,05-19-2016,39.0,25.0,"Davenport/Quad Cities, IA",66.0,40.0,5,0.0,Iowa,2016
+53.0,12.0,Davenport/Quad Cities,LOT,18,05-18-2016,39.0,25.0,"Davenport/Quad Cities, IA",59.0,46.0,5,0.74,Iowa,2016
+55.0,12.0,Davenport/Quad Cities,LOT,17,05-17-2016,39.0,25.0,"Davenport/Quad Cities, IA",68.0,41.0,5,0.0,Iowa,2016
+46.0,12.0,Davenport/Quad Cities,LOT,16,05-16-2016,39.0,25.0,"Davenport/Quad Cities, IA",56.0,35.0,5,0.0,Iowa,2016
+45.0,12.0,Davenport/Quad Cities,LOT,15,05-15-2016,39.0,25.0,"Davenport/Quad Cities, IA",49.0,41.0,5,0.69,Iowa,2016
+55.0,12.0,Davenport/Quad Cities,LOT,14,05-14-2016,39.0,25.0,"Davenport/Quad Cities, IA",66.0,44.0,5,0.41,Iowa,2016
+62.0,12.0,Davenport/Quad Cities,LOT,13,05-13-2016,39.0,25.0,"Davenport/Quad Cities, IA",70.0,53.0,5,0.05,Iowa,2016
+66.0,12.0,Davenport/Quad Cities,LOT,12,05-12-2016,39.0,25.0,"Davenport/Quad Cities, IA",74.0,57.0,5,0.06,Iowa,2016
+62.0,12.0,Davenport/Quad Cities,LOT,11,05-11-2016,39.0,25.0,"Davenport/Quad Cities, IA",70.0,54.0,5,0.81,Iowa,2016
+55.0,12.0,Davenport/Quad Cities,LOT,10,05-10-2016,39.0,25.0,"Davenport/Quad Cities, IA",58.0,51.0,5,0.72,Iowa,2016
+53.0,12.0,Davenport/Quad Cities,LOT,9,05-09-2016,39.0,25.0,"Davenport/Quad Cities, IA",65.0,41.0,5,0.0,Iowa,2016
+57.0,12.0,Davenport/Quad Cities,LOT,8,05-08-2016,39.0,25.0,"Davenport/Quad Cities, IA",67.0,46.0,5,0.04,Iowa,2016
+62.0,12.0,Davenport/Quad Cities,LOT,7,05-07-2016,39.0,25.0,"Davenport/Quad Cities, IA",82.0,42.0,5,1.74,Iowa,2016
+54.0,12.0,Davenport/Quad Cities,LOT,6,05-06-2016,39.0,25.0,"Davenport/Quad Cities, IA",66.0,41.0,5,0.0,Iowa,2016
+48.0,12.0,Davenport/Quad Cities,LOT,5,05-05-2016,39.0,25.0,"Davenport/Quad Cities, IA",53.0,42.0,5,0.2,Iowa,2016
+53.0,12.0,Davenport/Quad Cities,LOT,4,05-04-2016,39.0,25.0,"Davenport/Quad Cities, IA",67.0,38.0,5,0.02,Iowa,2016
+50.0,12.0,Davenport/Quad Cities,LOT,3,05-03-2016,39.0,25.0,"Davenport/Quad Cities, IA",59.0,41.0,5,0.62,Iowa,2016
+48.0,12.0,Davenport/Quad Cities,LOT,2,05-02-2016,39.0,25.0,"Davenport/Quad Cities, IA",51.0,44.0,5,0.31,Iowa,2016
+46.0,12.0,Davenport/Quad Cities,LOT,1,05-01-2016,39.0,25.0,"Davenport/Quad Cities, IA",49.0,43.0,5,0.69,Iowa,2016
+48.0,12.0,Davenport/Quad Cities,LOT,30,04-30-2016,39.0,25.0,"Davenport/Quad Cities, IA",53.0,43.0,4,0.01,Iowa,2016
+49.0,12.0,Davenport/Quad Cities,LOT,29,04-29-2016,39.0,25.0,"Davenport/Quad Cities, IA",53.0,44.0,4,0.06,Iowa,2016
+46.0,12.0,Davenport/Quad Cities,LOT,28,04-28-2016,39.0,25.0,"Davenport/Quad Cities, IA",49.0,42.0,4,0.74,Iowa,2016
+56.0,12.0,Davenport/Quad Cities,LOT,27,04-27-2016,39.0,25.0,"Davenport/Quad Cities, IA",68.0,43.0,4,0.0,Iowa,2016
+71.0,12.0,Davenport/Quad Cities,LOT,26,04-26-2016,39.0,25.0,"Davenport/Quad Cities, IA",82.0,59.0,4,0.0,Iowa,2016
+62.0,12.0,Davenport/Quad Cities,LOT,25,04-25-2016,39.0,25.0,"Davenport/Quad Cities, IA",79.0,45.0,4,0.0,Iowa,2016
+52.0,12.0,Davenport/Quad Cities,LOT,24,04-24-2016,39.0,25.0,"Davenport/Quad Cities, IA",66.0,38.0,4,0.0,Iowa,2016
+50.0,12.0,Davenport/Quad Cities,LOT,23,04-23-2016,39.0,25.0,"Davenport/Quad Cities, IA",58.0,41.0,4,0.0,Iowa,2016
+61.0,12.0,Davenport/Quad Cities,LOT,22,04-22-2016,39.0,25.0,"Davenport/Quad Cities, IA",69.0,52.0,4,0.1,Iowa,2016
+62.0,12.0,Davenport/Quad Cities,LOT,21,04-21-2016,39.0,25.0,"Davenport/Quad Cities, IA",71.0,53.0,4,0.42,Iowa,2016
+57.0,12.0,Davenport/Quad Cities,LOT,20,04-20-2016,39.0,25.0,"Davenport/Quad Cities, IA",64.0,49.0,4,0.0,Iowa,2016
+68.0,12.0,Davenport/Quad Cities,LOT,19,04-19-2016,39.0,25.0,"Davenport/Quad Cities, IA",82.0,54.0,4,0.0,Iowa,2016
+67.0,12.0,Davenport/Quad Cities,LOT,18,04-18-2016,39.0,25.0,"Davenport/Quad Cities, IA",81.0,53.0,4,0.0,Iowa,2016
+65.0,12.0,Davenport/Quad Cities,LOT,17,04-17-2016,39.0,25.0,"Davenport/Quad Cities, IA",80.0,49.0,4,0.0,Iowa,2016
+59.0,12.0,Davenport/Quad Cities,LOT,16,04-16-2016,39.0,25.0,"Davenport/Quad Cities, IA",73.0,44.0,4,0.0,Iowa,2016
+52.0,12.0,Davenport/Quad Cities,LOT,15,04-15-2016,39.0,25.0,"Davenport/Quad Cities, IA",65.0,39.0,4,0.0,Iowa,2016
+47.0,12.0,Davenport/Quad Cities,LOT,14,04-14-2016,39.0,25.0,"Davenport/Quad Cities, IA",59.0,34.0,4,0.0,Iowa,2016
+41.0,12.0,Davenport/Quad Cities,LOT,13,04-13-2016,39.0,25.0,"Davenport/Quad Cities, IA",51.0,30.0,4,0.0,Iowa,2016
+43.0,12.0,Davenport/Quad Cities,LOT,12,04-12-2016,39.0,25.0,"Davenport/Quad Cities, IA",51.0,35.0,4,1.48,Iowa,2016
+41.0,12.0,Davenport/Quad Cities,LOT,11,04-11-2016,39.0,25.0,"Davenport/Quad Cities, IA",50.0,32.0,4,0.19,Iowa,2016
+31.0,12.0,Davenport/Quad Cities,LOT,10,04-10-2016,39.0,25.0,"Davenport/Quad Cities, IA",40.0,22.0,4,1.09,Iowa,2016
+66.0,2.0,Lincoln,PIA,9,06-09-2016,16.0,10.0,"Lincoln, IL",81.0,50.0,6,0.0,Illinois,2016
+66.0,6.0,Lincoln,PIA,8,06-08-2016,23.0,15.0,"Lincoln, IL",76.0,55.0,6,0.0,Illinois,2016
+74.0,10.0,Lincoln,PIA,7,06-07-2016,40.0,28.0,"Lincoln, IL",86.0,62.0,6,0.0,Illinois,2016
+72.0,9.0,Lincoln,PIA,6,06-06-2016,26.0,20.0,"Lincoln, IL",82.0,61.0,6,0.0,Illinois,2016
+74.0,6.0,Lincoln,PIA,5,06-05-2016,19.0,14.0,"Lincoln, IL",82.0,66.0,6,0.01,Illinois,2016
+71.0,5.0,Lincoln,PIA,4,06-04-2016,16.0,13.0,"Lincoln, IL",84.0,57.0,6,0.0,Illinois,2016
+71.0,2.0,Lincoln,PIA,3,06-03-2016,19.0,13.0,"Lincoln, IL",83.0,58.0,6,0.0,Illinois,2016
+74.0,4.0,Lincoln,PIA,2,06-02-2016,16.0,12.0,"Lincoln, IL",83.0,64.0,6,0.31,Illinois,2016
+73.0,4.0,Lincoln,PIA,1,06-01-2016,28.0,23.0,"Lincoln, IL",80.0,66.0,6,0.04,Illinois,2016
+76.0,3.0,Lincoln,PIA,31,05-31-2016,20.0,14.0,"Lincoln, IL",90.0,62.0,5,0.0,Illinois,2016
+73.0,6.0,Lincoln,PIA,30,05-30-2016,22.0,17.0,"Lincoln, IL",83.0,62.0,5,0.0,Illinois,2016
+75.0,15.0,Lincoln,PIA,29,05-29-2016,33.0,29.0,"Lincoln, IL",85.0,65.0,5,0.04,Illinois,2016
+73.0,12.0,Lincoln,PIA,28,05-28-2016,31.0,24.0,"Lincoln, IL",80.0,66.0,5,0.07,Illinois,2016
+76.0,7.0,Lincoln,PIA,27,05-27-2016,21.0,17.0,"Lincoln, IL",85.0,66.0,5,0.15,Illinois,2016
+75.0,10.0,Lincoln,PIA,26,05-26-2016,31.0,24.0,"Lincoln, IL",86.0,64.0,5,0.0,Illinois,2016
+73.0,7.0,Lincoln,PIA,25,05-25-2016,24.0,17.0,"Lincoln, IL",86.0,59.0,5,0.0,Illinois,2016
+69.0,5.0,Lincoln,PIA,24,05-24-2016,22.0,17.0,"Lincoln, IL",85.0,53.0,5,0.0,Illinois,2016
+68.0,3.0,Lincoln,PIA,23,05-23-2016,15.0,10.0,"Lincoln, IL",85.0,51.0,5,0.0,Illinois,2016
+66.0,4.0,Lincoln,PIA,22,05-22-2016,21.0,14.0,"Lincoln, IL",79.0,52.0,5,0.0,Illinois,2016
+63.0,7.0,Lincoln,PIA,21,05-21-2016,22.0,17.0,"Lincoln, IL",71.0,54.0,5,0.0,Illinois,2016
+60.0,5.0,Lincoln,PIA,20,05-20-2016,23.0,13.0,"Lincoln, IL",73.0,46.0,5,0.0,Illinois,2016
+56.0,3.0,Lincoln,PIA,19,05-19-2016,17.0,12.0,"Lincoln, IL",68.0,43.0,5,0.0,Illinois,2016
+54.0,2.0,Lincoln,PIA,18,05-18-2016,12.0,9.0,"Lincoln, IL",61.0,47.0,5,1.39,Illinois,2016
+53.0,6.0,Lincoln,PIA,17,05-17-2016,25.0,21.0,"Lincoln, IL",64.0,42.0,5,0.04,Illinois,2016
+51.0,6.0,Lincoln,PIA,16,05-16-2016,24.0,16.0,"Lincoln, IL",61.0,41.0,5,0.0,Illinois,2016
+48.0,11.0,Lincoln,PIA,15,05-15-2016,32.0,21.0,"Lincoln, IL",55.0,41.0,5,0.0,Illinois,2016
+58.0,8.0,Lincoln,PIA,14,05-14-2016,39.0,26.0,"Lincoln, IL",71.0,44.0,5,0.54,Illinois,2016
+61.0,9.0,Lincoln,PIA,13,05-13-2016,31.0,21.0,"Lincoln, IL",70.0,52.0,5,1.33,Illinois,2016
+68.0,5.0,Lincoln,PIA,12,05-12-2016,24.0,17.0,"Lincoln, IL",77.0,59.0,5,0.31,Illinois,2016
+67.0,6.0,Lincoln,PIA,11,05-11-2016,23.0,18.0,"Lincoln, IL",74.0,60.0,5,0.48,Illinois,2016
+61.0,9.0,Lincoln,PIA,10,05-10-2016,24.0,17.0,"Lincoln, IL",66.0,56.0,5,0.58,Illinois,2016
+60.0,5.0,Lincoln,PIA,9,05-09-2016,19.0,14.0,"Lincoln, IL",68.0,52.0,5,0.38,Illinois,2016
+66.0,7.0,Lincoln,PIA,8,05-08-2016,25.0,18.0,"Lincoln, IL",76.0,55.0,5,0.03,Illinois,2016
+63.0,5.0,Lincoln,PIA,7,05-07-2016,23.0,16.0,"Lincoln, IL",83.0,43.0,5,0.0,Illinois,2016
+55.0,6.0,Lincoln,PIA,6,05-06-2016,21.0,14.0,"Lincoln, IL",68.0,41.0,5,0.0,Illinois,2016
+55.0,8.0,Lincoln,PIA,5,05-05-2016,29.0,17.0,"Lincoln, IL",63.0,47.0,5,0.2,Illinois,2016
+55.0,6.0,Lincoln,PIA,4,05-04-2016,23.0,20.0,"Lincoln, IL",69.0,41.0,5,0.0,Illinois,2016
+53.0,4.0,Lincoln,PIA,3,05-03-2016,19.0,14.0,"Lincoln, IL",59.0,47.0,5,0.0,Illinois,2016
+52.0,6.0,Lincoln,PIA,2,05-02-2016,16.0,13.0,"Lincoln, IL",55.0,48.0,5,1.97,Illinois,2016
+52.0,13.0,Lincoln,PIA,1,05-01-2016,24.0,20.0,"Lincoln, IL",56.0,47.0,5,0.8,Illinois,2016
+52.0,8.0,Lincoln,PIA,30,04-30-2016,28.0,22.0,"Lincoln, IL",55.0,48.0,4,0.0,Illinois,2016
+56.0,5.0,Lincoln,PIA,29,04-29-2016,28.0,22.0,"Lincoln, IL",63.0,49.0,4,0.09,Illinois,2016
+53.0,14.0,Lincoln,PIA,28,04-28-2016,37.0,26.0,"Lincoln, IL",58.0,48.0,4,1.01,Illinois,2016
+60.0,10.0,Lincoln,PIA,27,04-27-2016,33.0,25.0,"Lincoln, IL",72.0,48.0,4,1.71,Illinois,2016
+73.0,13.0,Lincoln,PIA,26,04-26-2016,32.0,25.0,"Lincoln, IL",84.0,61.0,4,0.0,Illinois,2016
+66.0,11.0,Lincoln,PIA,25,04-25-2016,29.0,21.0,"Lincoln, IL",81.0,50.0,4,0.0,Illinois,2016
+55.0,5.0,Lincoln,PIA,24,04-24-2016,19.0,14.0,"Lincoln, IL",69.0,41.0,4,0.0,Illinois,2016
+56.0,5.0,Lincoln,PIA,23,04-23-2016,21.0,15.0,"Lincoln, IL",63.0,48.0,4,0.0,Illinois,2016
+60.0,5.0,Lincoln,PIA,22,04-22-2016,31.0,25.0,"Lincoln, IL",70.0,49.0,4,0.13,Illinois,2016
+62.0,8.0,Lincoln,PIA,21,04-21-2016,26.0,20.0,"Lincoln, IL",69.0,55.0,4,0.03,Illinois,2016
+67.0,6.0,Lincoln,PIA,20,04-20-2016,20.0,15.0,"Lincoln, IL",78.0,56.0,4,1.88,Illinois,2016
+68.0,6.0,Lincoln,PIA,19,04-19-2016,24.0,18.0,"Lincoln, IL",82.0,54.0,4,0.0,Illinois,2016
+67.0,6.0,Lincoln,PIA,18,04-18-2016,25.0,18.0,"Lincoln, IL",82.0,51.0,4,0.0,Illinois,2016
+67.0,7.0,Lincoln,PIA,17,04-17-2016,24.0,17.0,"Lincoln, IL",81.0,52.0,4,0.0,Illinois,2016
+62.0,8.0,Lincoln,PIA,16,04-16-2016,23.0,17.0,"Lincoln, IL",77.0,46.0,4,0.0,Illinois,2016
+56.0,8.0,Lincoln,PIA,15,04-15-2016,22.0,16.0,"Lincoln, IL",70.0,42.0,4,0.0,Illinois,2016
+50.0,6.0,Lincoln,PIA,14,04-14-2016,22.0,16.0,"Lincoln, IL",63.0,36.0,4,0.0,Illinois,2016
+44.0,4.0,Lincoln,PIA,13,04-13-2016,19.0,10.0,"Lincoln, IL",56.0,31.0,4,0.0,Illinois,2016
+45.0,9.0,Lincoln,PIA,12,04-12-2016,26.0,20.0,"Lincoln, IL",53.0,37.0,4,2.05,Illinois,2016
+45.0,11.0,Lincoln,PIA,11,04-11-2016,32.0,23.0,"Lincoln, IL",52.0,38.0,4,0.17,Illinois,2016
+35.0,8.0,Lincoln,PIA,10,04-10-2016,28.0,20.0,"Lincoln, IL",44.0,25.0,4,0.01,Illinois,2016
+64.0,6.0,Indianapolis,IND,9,06-09-2016,22.0,16.0,"Indianapolis, IN",76.0,51.0,6,0.0,Indiana,2016
+66.0,10.0,Indianapolis,IND,8,06-08-2016,29.0,21.0,"Indianapolis, IN",74.0,57.0,6,0.0,Indiana,2016
+72.0,13.0,Indianapolis,IND,7,06-07-2016,36.0,29.0,"Indianapolis, IN",84.0,60.0,6,0.0,Indiana,2016
+71.0,13.0,Indianapolis,IND,6,06-06-2016,35.0,28.0,"Indianapolis, IN",77.0,65.0,6,0.0,Indiana,2016
+69.0,7.0,Indianapolis,IND,5,06-05-2016,27.0,24.0,"Indianapolis, IN",73.0,64.0,6,0.6,Indiana,2016
+72.0,5.0,Indianapolis,IND,4,06-04-2016,14.0,10.0,"Indianapolis, IN",82.0,62.0,6,0.0,Indiana,2016
+75.0,6.0,Indianapolis,IND,3,06-03-2016,16.0,13.0,"Indianapolis, IN",84.0,65.0,6,0.0,Indiana,2016
+76.0,4.0,Indianapolis,IND,2,06-02-2016,31.0,23.0,"Indianapolis, IN",84.0,67.0,6,0.25,Indiana,2016
+76.0,5.0,Indianapolis,IND,1,06-01-2016,21.0,16.0,"Indianapolis, IN",87.0,65.0,6,0.0,Indiana,2016
+74.0,4.0,Indianapolis,IND,31,05-31-2016,14.0,12.0,"Indianapolis, IN",86.0,61.0,5,0.0,Indiana,2016
+77.0,8.0,Indianapolis,IND,30,05-30-2016,22.0,17.0,"Indianapolis, IN",85.0,68.0,5,2.19,Indiana,2016
+77.0,12.0,Indianapolis,IND,29,05-29-2016,29.0,24.0,"Indianapolis, IN",83.0,71.0,5,1.5,Indiana,2016
+75.0,10.0,Indianapolis,IND,28,05-28-2016,29.0,23.0,"Indianapolis, IN",85.0,65.0,5,0.0,Indiana,2016
+71.0,9.0,Indianapolis,IND,27,05-27-2016,25.0,21.0,"Indianapolis, IN",77.0,65.0,5,0.23,Indiana,2016
+75.0,11.0,Indianapolis,IND,26,05-26-2016,26.0,22.0,"Indianapolis, IN",84.0,65.0,5,0.0,Indiana,2016
+68.0,6.0,Indianapolis,IND,25,05-25-2016,21.0,17.0,"Indianapolis, IN",82.0,54.0,5,0.0,Indiana,2016
+64.0,5.0,Indianapolis,IND,24,05-24-2016,17.0,13.0,"Indianapolis, IN",78.0,50.0,5,0.0,Indiana,2016
+64.0,10.0,Indianapolis,IND,23,05-23-2016,30.0,23.0,"Indianapolis, IN",81.0,47.0,5,0.0,Indiana,2016
+64.0,10.0,Indianapolis,IND,22,05-22-2016,24.0,21.0,"Indianapolis, IN",73.0,55.0,5,0.21,Indiana,2016
+63.0,9.0,Indianapolis,IND,21,05-21-2016,22.0,16.0,"Indianapolis, IN",68.0,57.0,5,0.09,Indiana,2016
+58.0,6.0,Indianapolis,IND,20,05-20-2016,22.0,18.0,"Indianapolis, IN",71.0,45.0,5,0.0,Indiana,2016
+61.0,9.0,Indianapolis,IND,19,05-19-2016,22.0,16.0,"Indianapolis, IN",69.0,52.0,5,2.36,Indiana,2016
+54.0,5.0,Indianapolis,IND,18,05-18-2016,18.0,14.0,"Indianapolis, IN",57.0,50.0,5,0.12,Indiana,2016
+49.0,7.0,Indianapolis,IND,17,05-17-2016,24.0,13.0,"Indianapolis, IN",62.0,36.0,5,0.0,Indiana,2016
+49.0,10.0,Indianapolis,IND,16,05-16-2016,30.0,24.0,"Indianapolis, IN",58.0,39.0,5,0.0,Indiana,2016
+49.0,15.0,Indianapolis,IND,15,05-15-2016,37.0,29.0,"Indianapolis, IN",56.0,41.0,5,0.25,Indiana,2016
+59.0,10.0,Indianapolis,IND,14,05-14-2016,25.0,20.0,"Indianapolis, IN",68.0,49.0,5,0.07,Indiana,2016
+66.0,10.0,Indianapolis,IND,13,05-13-2016,25.0,22.0,"Indianapolis, IN",75.0,56.0,5,0.32,Indiana,2016
+72.0,3.0,Indianapolis,IND,12,05-12-2016,32.0,25.0,"Indianapolis, IN",82.0,61.0,5,0.11,Indiana,2016
+66.0,11.0,Indianapolis,IND,11,05-11-2016,26.0,20.0,"Indianapolis, IN",72.0,59.0,5,0.11,Indiana,2016
+57.0,11.0,Indianapolis,IND,10,05-10-2016,20.0,16.0,"Indianapolis, IN",62.0,52.0,5,0.37,Indiana,2016
+52.0,5.0,Indianapolis,IND,9,05-09-2016,17.0,12.0,"Indianapolis, IN",61.0,43.0,5,0.17,Indiana,2016
+62.0,11.0,Indianapolis,IND,8,05-08-2016,35.0,26.0,"Indianapolis, IN",74.0,50.0,5,0.02,Indiana,2016
+58.0,7.0,Indianapolis,IND,7,05-07-2016,20.0,16.0,"Indianapolis, IN",72.0,43.0,5,0.0,Indiana,2016
+52.0,13.0,Indianapolis,IND,6,05-06-2016,30.0,18.0,"Indianapolis, IN",63.0,41.0,5,0.02,Indiana,2016
+50.0,14.0,Indianapolis,IND,5,05-05-2016,33.0,28.0,"Indianapolis, IN",57.0,43.0,5,0.08,Indiana,2016
+57.0,7.0,Indianapolis,IND,4,05-04-2016,18.0,14.0,"Indianapolis, IN",63.0,50.0,5,0.28,Indiana,2016
+55.0,8.0,Indianapolis,IND,3,05-03-2016,46.0,29.5,"Indianapolis, IN",59.0,51.0,5,0.08,Indiana,2016
+66.0,5.0,Indianapolis,IND,2,05-02-2016,74.0,45.0,"Indianapolis, IN",77.0,55.0,5,1.21,Indiana,2016
+57.0,11.0,Indianapolis,IND,1,05-01-2016,28.0,23.0,"Indianapolis, IN",63.0,50.0,5,0.93,Indiana,2016
+57.0,7.0,Indianapolis,IND,30,04-30-2016,23.0,17.0,"Indianapolis, IN",64.0,49.0,4,0.0,Indiana,2016
+63.0,9.0,Indianapolis,IND,29,04-29-2016,31.0,25.0,"Indianapolis, IN",75.0,51.0,4,0.69,Indiana,2016
+55.0,12.0,Indianapolis,IND,28,04-28-2016,22.0,18.0,"Indianapolis, IN",61.0,49.0,4,0.35,Indiana,2016
+71.0,11.0,Indianapolis,IND,27,04-27-2016,32.0,24.0,"Indianapolis, IN",82.0,60.0,4,0.19,Indiana,2016
+68.0,13.0,Indianapolis,IND,26,04-26-2016,35.0,29.0,"Indianapolis, IN",79.0,57.0,4,0.0,Indiana,2016
+61.0,8.0,Indianapolis,IND,25,04-25-2016,22.0,14.0,"Indianapolis, IN",76.0,46.0,4,0.0,Indiana,2016
+58.0,6.0,Indianapolis,IND,24,04-24-2016,15.0,13.0,"Indianapolis, IN",66.0,49.0,4,0.0,Indiana,2016
+59.0,8.0,Indianapolis,IND,23,04-23-2016,28.0,21.0,"Indianapolis, IN",67.0,50.0,4,0.37,Indiana,2016
+61.0,8.0,Indianapolis,IND,22,04-22-2016,32.0,24.0,"Indianapolis, IN",68.0,54.0,4,1.41,Indiana,2016
+67.0,9.0,Indianapolis,IND,21,04-21-2016,24.0,18.0,"Indianapolis, IN",80.0,53.0,4,0.01,Indiana,2016
+68.0,4.0,Indianapolis,IND,20,04-20-2016,22.0,17.0,"Indianapolis, IN",81.0,55.0,4,0.0,Indiana,2016
+68.0,4.0,Indianapolis,IND,19,04-19-2016,16.0,10.0,"Indianapolis, IN",83.0,52.0,4,0.0,Indiana,2016
+66.0,4.0,Indianapolis,IND,18,04-18-2016,15.0,12.0,"Indianapolis, IN",80.0,51.0,4,0.0,Indiana,2016
+64.0,6.0,Indianapolis,IND,17,04-17-2016,19.0,15.0,"Indianapolis, IN",77.0,51.0,4,0.0,Indiana,2016
+59.0,6.0,Indianapolis,IND,16,04-16-2016,26.0,13.0,"Indianapolis, IN",75.0,42.0,4,0.0,Indiana,2016
+53.0,11.0,Indianapolis,IND,15,04-15-2016,26.0,18.0,"Indianapolis, IN",67.0,39.0,4,0.0,Indiana,2016
+48.0,9.0,Indianapolis,IND,14,04-14-2016,18.0,16.0,"Indianapolis, IN",59.0,37.0,4,0.0,Indiana,2016
+43.0,7.0,Indianapolis,IND,13,04-13-2016,22.0,17.0,"Indianapolis, IN",53.0,32.0,4,0.0,Indiana,2016
+46.0,11.0,Indianapolis,IND,12,04-12-2016,25.0,21.0,"Indianapolis, IN",55.0,36.0,4,1.07,Indiana,2016
+47.0,14.0,Indianapolis,IND,11,04-11-2016,42.0,35.0,"Indianapolis, IN",63.0,30.0,4,0.53,Indiana,2016
+34.0,12.0,Indianapolis,IND,10,04-10-2016,35.0,25.0,"Indianapolis, IN",41.0,27.0,4,1.26,Indiana,2016
+60.0,6.0,Northern Indiana,FWA,9,06-09-2016,25.0,21.0,"Northern Indiana, IN",73.0,47.0,6,2.08,Indiana,2016
+61.0,9.0,Northern Indiana,FWA,8,06-08-2016,28.0,20.0,"Northern Indiana, IN",66.0,55.0,6,0.0,Indiana,2016
+71.0,9.0,Northern Indiana,FWA,7,06-07-2016,30.0,20.0,"Northern Indiana, IN",82.0,60.0,6,0.17,Indiana,2016
+70.0,13.0,Northern Indiana,FWA,6,06-06-2016,33.0,28.0,"Northern Indiana, IN",76.0,64.0,6,0.0,Indiana,2016
+69.0,6.0,Northern Indiana,FWA,5,06-05-2016,22.0,17.0,"Northern Indiana, IN",73.0,64.0,6,1.7,Indiana,2016
+70.0,3.0,Northern Indiana,FWA,4,06-04-2016,15.0,10.0,"Northern Indiana, IN",85.0,54.0,6,0.0,Indiana,2016
+75.0,6.0,Northern Indiana,FWA,3,06-03-2016,23.0,18.0,"Northern Indiana, IN",86.0,63.0,6,0.0,Indiana,2016
+74.0,6.0,Northern Indiana,FWA,2,06-02-2016,19.0,15.0,"Northern Indiana, IN",86.0,62.0,6,2.82,Indiana,2016
+73.0,7.0,Northern Indiana,FWA,1,06-01-2016,27.0,20.0,"Northern Indiana, IN",86.0,59.0,6,0.0,Indiana,2016
+73.0,6.0,Northern Indiana,FWA,31,05-31-2016,24.0,18.0,"Northern Indiana, IN",88.0,58.0,5,0.0,Indiana,2016
+77.0,11.0,Northern Indiana,FWA,30,05-30-2016,35.0,24.0,"Northern Indiana, IN",89.0,65.0,5,0.0,Indiana,2016
+79.0,12.0,Northern Indiana,FWA,29,05-29-2016,33.0,25.0,"Northern Indiana, IN",88.0,69.0,5,0.99,Indiana,2016
+76.0,10.0,Northern Indiana,FWA,28,05-28-2016,26.0,22.0,"Northern Indiana, IN",88.0,63.0,5,1.72,Indiana,2016
+74.0,10.0,Northern Indiana,FWA,27,05-27-2016,26.0,21.0,"Northern Indiana, IN",82.0,65.0,5,0.0,Indiana,2016
+73.0,9.0,Northern Indiana,FWA,26,05-26-2016,28.0,18.0,"Northern Indiana, IN",85.0,61.0,5,3.46,Indiana,2016
+67.0,7.0,Northern Indiana,FWA,25,05-25-2016,20.0,16.0,"Northern Indiana, IN",84.0,49.0,5,0.0,Indiana,2016
+61.0,1.0,Northern Indiana,FWA,24,05-24-2016,14.0,10.0,"Northern Indiana, IN",78.0,43.0,5,0.0,Indiana,2016
+65.0,9.0,Northern Indiana,FWA,23,05-23-2016,25.0,20.0,"Northern Indiana, IN",77.0,53.0,5,0.0,Indiana,2016
+65.0,8.0,Northern Indiana,FWA,22,05-22-2016,20.0,15.0,"Northern Indiana, IN",76.0,53.0,5,0.04,Indiana,2016
+59.0,10.0,Northern Indiana,FWA,21,05-21-2016,25.0,20.0,"Northern Indiana, IN",70.0,47.0,5,0.0,Indiana,2016
+56.0,2.0,Northern Indiana,FWA,20,05-20-2016,14.0,8.0,"Northern Indiana, IN",71.0,41.0,5,0.0,Indiana,2016
+57.0,7.0,Northern Indiana,FWA,19,05-19-2016,23.0,17.0,"Northern Indiana, IN",66.0,47.0,5,0.02,Indiana,2016
+57.0,4.0,Northern Indiana,FWA,18,05-18-2016,17.0,14.0,"Northern Indiana, IN",63.0,51.0,5,0.01,Indiana,2016
+50.0,12.0,Northern Indiana,FWA,17,05-17-2016,25.0,20.0,"Northern Indiana, IN",66.0,34.0,5,0.0,Indiana,2016
+44.0,11.0,Northern Indiana,FWA,16,05-16-2016,31.0,18.0,"Northern Indiana, IN",52.0,36.0,5,0.0,Indiana,2016
+50.0,14.0,Northern Indiana,FWA,15,05-15-2016,53.0,22.0,"Northern Indiana, IN",58.0,42.0,5,0.15,Indiana,2016
+59.0,12.0,Northern Indiana,FWA,14,05-14-2016,24.0,17.0,"Northern Indiana, IN",67.0,50.0,5,0.02,Indiana,2016
+67.0,8.0,Northern Indiana,FWA,13,05-13-2016,27.0,14.0,"Northern Indiana, IN",75.0,58.0,5,0.68,Indiana,2016
+64.0,5.0,Northern Indiana,FWA,12,05-12-2016,12.0,12.0,"Northern Indiana, IN",74.0,54.0,5,2.15,Indiana,2016
+61.0,10.0,Northern Indiana,FWA,11,05-11-2016,33.0,25.0,"Northern Indiana, IN",71.0,50.0,5,2.49,Indiana,2016
+50.0,8.0,Northern Indiana,FWA,10,05-10-2016,24.0,18.0,"Northern Indiana, IN",54.0,45.0,5,0.33,Indiana,2016
+53.0,6.0,Northern Indiana,FWA,9,05-09-2016,26.0,17.0,"Northern Indiana, IN",68.0,38.0,5,0.0,Indiana,2016
+62.0,12.0,Northern Indiana,FWA,8,05-08-2016,32.0,25.0,"Northern Indiana, IN",76.0,48.0,5,0.01,Indiana,2016
+57.0,6.0,Northern Indiana,FWA,7,05-07-2016,18.0,14.0,"Northern Indiana, IN",71.0,42.0,5,0.0,Indiana,2016
+53.0,11.0,Northern Indiana,FWA,6,05-06-2016,25.0,18.0,"Northern Indiana, IN",67.0,39.0,5,1.82,Indiana,2016
+46.0,12.0,Northern Indiana,FWA,5,05-05-2016,35.0,28.0,"Northern Indiana, IN",53.0,39.0,5,0.11,Indiana,2016
+56.0,6.0,Northern Indiana,FWA,4,05-04-2016,14.0,12.0,"Northern Indiana, IN",63.0,49.0,5,0.77,Indiana,2016
+51.0,7.0,Northern Indiana,FWA,3,05-03-2016,19.0,15.0,"Northern Indiana, IN",54.0,48.0,5,0.01,Indiana,2016
+56.0,7.0,Northern Indiana,FWA,2,05-02-2016,27.0,21.0,"Northern Indiana, IN",63.0,49.0,5,0.26,Indiana,2016
+47.0,11.0,Northern Indiana,FWA,1,05-01-2016,24.0,20.0,"Northern Indiana, IN",51.0,42.0,5,0.44,Indiana,2016
+50.0,3.0,Northern Indiana,FWA,30,04-30-2016,17.0,14.0,"Northern Indiana, IN",54.0,45.0,4,1.12,Indiana,2016
+48.0,12.0,Northern Indiana,FWA,29,04-29-2016,31.0,26.0,"Northern Indiana, IN",54.0,42.0,4,0.76,Indiana,2016
+52.0,16.0,Northern Indiana,FWA,28,04-28-2016,34.0,30.0,"Northern Indiana, IN",60.0,43.0,4,0.05,Indiana,2016
+63.0,12.0,Northern Indiana,FWA,27,04-27-2016,26.0,22.0,"Northern Indiana, IN",77.0,48.0,4,1.24,Indiana,2016
+65.0,11.0,Northern Indiana,FWA,26,04-26-2016,34.0,26.0,"Northern Indiana, IN",80.0,50.0,4,0.0,Indiana,2016
+56.0,6.0,Northern Indiana,FWA,25,04-25-2016,22.0,15.0,"Northern Indiana, IN",74.0,38.0,4,0.0,Indiana,2016
+54.0,8.0,Northern Indiana,FWA,24,04-24-2016,18.0,14.0,"Northern Indiana, IN",61.0,46.0,4,0.0,Indiana,2016
+58.0,7.0,Northern Indiana,FWA,23,04-23-2016,22.0,18.0,"Northern Indiana, IN",63.0,52.0,4,0.08,Indiana,2016
+60.0,8.0,Northern Indiana,FWA,22,04-22-2016,31.0,26.0,"Northern Indiana, IN",69.0,51.0,4,0.22,Indiana,2016
+62.0,13.0,Northern Indiana,FWA,21,04-21-2016,25.0,20.0,"Northern Indiana, IN",75.0,48.0,4,1.44,Indiana,2016
+61.0,12.0,Northern Indiana,FWA,20,04-20-2016,26.0,22.0,"Northern Indiana, IN",69.0,52.0,4,0.0,Indiana,2016
+65.0,2.0,Northern Indiana,FWA,19,04-19-2016,14.0,12.0,"Northern Indiana, IN",82.0,47.0,4,0.0,Indiana,2016
+62.0,4.0,Northern Indiana,FWA,18,04-18-2016,12.0,9.0,"Northern Indiana, IN",79.0,45.0,4,0.0,Indiana,2016
+58.0,8.0,Northern Indiana,FWA,17,04-17-2016,19.0,15.0,"Northern Indiana, IN",76.0,40.0,4,0.0,Indiana,2016
+53.0,9.0,Northern Indiana,FWA,16,04-16-2016,19.0,16.0,"Northern Indiana, IN",71.0,35.0,4,0.0,Indiana,2016
+46.0,11.0,Northern Indiana,FWA,15,04-15-2016,23.0,18.0,"Northern Indiana, IN",61.0,31.0,4,0.0,Indiana,2016
+43.0,8.0,Northern Indiana,FWA,14,04-14-2016,24.0,17.0,"Northern Indiana, IN",56.0,30.0,4,0.0,Indiana,2016
+41.0,5.0,Northern Indiana,FWA,13,04-13-2016,24.0,15.0,"Northern Indiana, IN",51.0,31.0,4,0.0,Indiana,2016
+45.0,11.0,Northern Indiana,FWA,12,04-12-2016,28.0,23.0,"Northern Indiana, IN",55.0,35.0,4,0.1,Indiana,2016
+41.0,12.0,Northern Indiana,FWA,11,04-11-2016,30.0,25.0,"Northern Indiana, IN",52.0,29.0,4,0.22,Indiana,2016
+31.0,11.0,Northern Indiana,FWA,10,04-10-2016,37.0,28.0,"Northern Indiana, IN",37.0,25.0,4,0.03,Indiana,2016
+72.0,8.0,Des Moines,DSM,9,06-09-2016,23.0,17.0,"Des Moines, IA",84.0,59.0,6,0.0,Iowa,2016
+67.0,6.0,Des Moines,DSM,8,06-08-2016,21.0,15.0,"Des Moines, IA",77.0,57.0,6,0.0,Iowa,2016
+73.0,13.0,Des Moines,DSM,7,06-07-2016,38.0,30.0,"Des Moines, IA",85.0,60.0,6,0.0,Iowa,2016
+73.0,11.0,Des Moines,DSM,6,06-06-2016,26.0,22.0,"Des Moines, IA",87.0,59.0,6,0.0,Iowa,2016
+72.0,11.0,Des Moines,DSM,5,06-05-2016,33.0,28.0,"Des Moines, IA",82.0,61.0,6,0.0,Iowa,2016
+74.0,11.0,Des Moines,DSM,4,06-04-2016,29.0,23.0,"Des Moines, IA",85.0,63.0,6,0.07,Iowa,2016
+69.0,5.0,Des Moines,DSM,3,06-03-2016,16.0,12.0,"Des Moines, IA",82.0,56.0,6,0.0,Iowa,2016
+69.0,7.0,Des Moines,DSM,2,06-02-2016,23.0,16.0,"Des Moines, IA",79.0,59.0,6,0.0,Iowa,2016
+73.0,8.0,Des Moines,DSM,1,06-01-2016,29.0,23.0,"Des Moines, IA",81.0,64.0,6,0.66,Iowa,2016
+77.0,8.0,Des Moines,DSM,31,05-31-2016,31.0,25.0,"Des Moines, IA",88.0,65.0,5,0.0,Iowa,2016
+71.0,6.0,Des Moines,DSM,30,05-30-2016,21.0,17.0,"Des Moines, IA",84.0,58.0,5,0.0,Iowa,2016
+69.0,9.0,Des Moines,DSM,29,05-29-2016,27.0,22.0,"Des Moines, IA",75.0,62.0,5,0.6,Iowa,2016
+70.0,5.0,Des Moines,DSM,28,05-28-2016,34.0,13.0,"Des Moines, IA",77.0,63.0,5,0.21,Iowa,2016
+72.0,8.0,Des Moines,DSM,27,05-27-2016,40.0,33.0,"Des Moines, IA",82.0,62.0,5,1.19,Iowa,2016
+73.0,7.0,Des Moines,DSM,26,05-26-2016,24.0,20.0,"Des Moines, IA",80.0,65.0,5,0.37,Iowa,2016
+74.0,5.0,Des Moines,DSM,25,05-25-2016,20.0,15.0,"Des Moines, IA",84.0,63.0,5,0.12,Iowa,2016
+70.0,10.0,Des Moines,DSM,24,05-24-2016,30.0,24.0,"Des Moines, IA",79.0,61.0,5,1.58,Iowa,2016
+66.0,10.0,Des Moines,DSM,23,05-23-2016,29.0,22.0,"Des Moines, IA",82.0,50.0,5,0.0,Iowa,2016
+63.0,4.0,Des Moines,DSM,22,05-22-2016,14.0,10.0,"Des Moines, IA",77.0,48.0,5,0.0,Iowa,2016
+64.0,7.0,Des Moines,DSM,21,05-21-2016,23.0,18.0,"Des Moines, IA",72.0,55.0,5,0.0,Iowa,2016
+61.0,7.0,Des Moines,DSM,20,05-20-2016,23.0,16.0,"Des Moines, IA",72.0,50.0,5,0.0,Iowa,2016
+57.0,4.0,Des Moines,DSM,19,05-19-2016,16.0,10.0,"Des Moines, IA",70.0,44.0,5,0.0,Iowa,2016
+56.0,3.0,Des Moines,DSM,18,05-18-2016,17.0,14.0,"Des Moines, IA",68.0,43.0,5,0.06,Iowa,2016
+55.0,6.0,Des Moines,DSM,17,05-17-2016,20.0,16.0,"Des Moines, IA",61.0,49.0,5,0.0,Iowa,2016
+54.0,5.0,Des Moines,DSM,16,05-16-2016,20.0,14.0,"Des Moines, IA",68.0,40.0,5,0.0,Iowa,2016
+50.0,15.0,Des Moines,DSM,15,05-15-2016,38.0,29.0,"Des Moines, IA",59.0,40.0,5,1.67,Iowa,2016
+58.0,10.0,Des Moines,DSM,14,05-14-2016,36.0,29.0,"Des Moines, IA",71.0,44.0,5,0.15,Iowa,2016
+59.0,12.0,Des Moines,DSM,13,05-13-2016,36.0,30.0,"Des Moines, IA",67.0,50.0,5,0.0,Iowa,2016
+64.0,7.0,Des Moines,DSM,12,05-12-2016,27.0,20.0,"Des Moines, IA",73.0,54.0,5,0.34,Iowa,2016
+69.0,6.0,Des Moines,DSM,11,05-11-2016,21.0,14.0,"Des Moines, IA",77.0,61.0,5,2.83,Iowa,2016
+62.0,11.0,Des Moines,DSM,10,05-10-2016,24.0,17.0,"Des Moines, IA",66.0,58.0,5,0.33,Iowa,2016
+64.0,10.0,Des Moines,DSM,9,05-09-2016,26.0,21.0,"Des Moines, IA",70.0,58.0,5,0.0,Iowa,2016
+66.0,7.0,Des Moines,DSM,8,05-08-2016,23.0,18.0,"Des Moines, IA",73.0,59.0,5,0.01,Iowa,2016
+69.0,10.0,Des Moines,DSM,7,05-07-2016,30.0,24.0,"Des Moines, IA",86.0,51.0,5,0.0,Iowa,2016
+58.0,3.0,Des Moines,DSM,6,05-06-2016,11.0,8.0,"Des Moines, IA",72.0,44.0,5,0.0,Iowa,2016
+59.0,12.0,Des Moines,DSM,5,05-05-2016,30.0,24.0,"Des Moines, IA",68.0,50.0,5,0.0,Iowa,2016
+57.0,8.0,Des Moines,DSM,4,05-04-2016,29.0,22.0,"Des Moines, IA",70.0,44.0,5,1.62,Iowa,2016
+53.0,4.0,Des Moines,DSM,3,05-03-2016,18.0,15.0,"Des Moines, IA",65.0,41.0,5,1.74,Iowa,2016
+48.0,8.0,Des Moines,DSM,2,05-02-2016,22.0,17.0,"Des Moines, IA",51.0,45.0,5,0.08,Iowa,2016
+48.0,14.0,Des Moines,DSM,1,05-01-2016,30.0,22.0,"Des Moines, IA",51.0,45.0,5,0.88,Iowa,2016
+49.0,10.0,Des Moines,DSM,30,04-30-2016,25.0,17.0,"Des Moines, IA",51.0,46.0,4,1.71,Iowa,2016
+53.0,8.0,Des Moines,DSM,29,04-29-2016,28.0,23.0,"Des Moines, IA",60.0,46.0,4,0.01,Iowa,2016
+50.0,13.0,Des Moines,DSM,28,04-28-2016,37.0,30.0,"Des Moines, IA",54.0,45.0,4,0.88,Iowa,2016
+62.0,10.0,Des Moines,DSM,27,04-27-2016,28.0,23.0,"Des Moines, IA",71.0,53.0,4,0.05,Iowa,2016
+68.0,13.0,Des Moines,DSM,26,04-26-2016,29.0,24.0,"Des Moines, IA",76.0,59.0,4,1.79,Iowa,2016
+70.0,15.0,Des Moines,DSM,25,04-25-2016,41.0,35.0,"Des Moines, IA",81.0,58.0,4,0.07,Iowa,2016
+60.0,11.0,Des Moines,DSM,24,04-24-2016,29.0,23.0,"Des Moines, IA",75.0,45.0,4,0.0,Iowa,2016
+56.0,7.0,Des Moines,DSM,23,04-23-2016,20.0,16.0,"Des Moines, IA",61.0,51.0,4,0.0,Iowa,2016
+59.0,7.0,Des Moines,DSM,22,04-22-2016,23.0,17.0,"Des Moines, IA",69.0,49.0,4,0.11,Iowa,2016
+58.0,12.0,Des Moines,DSM,21,04-21-2016,30.0,24.0,"Des Moines, IA",65.0,51.0,4,0.5,Iowa,2016
+57.0,6.0,Des Moines,DSM,20,04-20-2016,15.0,14.0,"Des Moines, IA",65.0,49.0,4,1.29,Iowa,2016
+67.0,10.0,Des Moines,DSM,19,04-19-2016,28.0,22.0,"Des Moines, IA",76.0,58.0,4,0.14,Iowa,2016
+70.0,12.0,Des Moines,DSM,18,04-18-2016,29.0,21.0,"Des Moines, IA",80.0,60.0,4,0.0,Iowa,2016
+69.0,15.0,Des Moines,DSM,17,04-17-2016,37.0,29.0,"Des Moines, IA",80.0,58.0,4,0.0,Iowa,2016
+65.0,14.0,Des Moines,DSM,16,04-16-2016,32.0,25.0,"Des Moines, IA",78.0,51.0,4,0.0,Iowa,2016
+61.0,11.0,Des Moines,DSM,15,04-15-2016,26.0,22.0,"Des Moines, IA",74.0,47.0,4,0.0,Iowa,2016
+56.0,12.0,Des Moines,DSM,14,04-14-2016,26.0,20.0,"Des Moines, IA",72.0,40.0,4,0.0,Iowa,2016
+46.0,7.0,Des Moines,DSM,13,04-13-2016,22.0,18.0,"Des Moines, IA",61.0,30.0,4,0.0,Iowa,2016
+44.0,13.0,Des Moines,DSM,12,04-12-2016,36.0,29.0,"Des Moines, IA",52.0,36.0,4,0.0,Iowa,2016
+56.0,10.0,Des Moines,DSM,11,04-11-2016,26.0,23.0,"Des Moines, IA",67.0,45.0,4,0.02,Iowa,2016
+38.0,12.0,Des Moines,DSM,10,04-10-2016,31.0,25.0,"Des Moines, IA",51.0,25.0,4,0.0,Iowa,2016
+77.0,15.0,Dodge City,DGC,9,06-09-2016,34.0,26.0,"Dodge City, KS",92.0,62.0,6,0.0,Kansas,2016
+72.0,9.0,Dodge City,DGC,8,06-08-2016,23.0,18.0,"Dodge City, KS",86.0,58.0,6,0.0,Kansas,2016
+72.0,7.0,Dodge City,DGC,7,06-07-2016,19.0,16.0,"Dodge City, KS",88.0,56.0,6,0.06,Kansas,2016
+67.0,5.0,Dodge City,DGC,6,06-06-2016,19.0,15.0,"Dodge City, KS",84.0,50.0,6,0.0,Kansas,2016
+70.0,11.0,Dodge City,DGC,5,06-05-2016,31.0,25.0,"Dodge City, KS",82.0,57.0,6,0.0,Kansas,2016
+69.0,7.0,Dodge City,DGC,4,06-04-2016,21.0,17.0,"Dodge City, KS",83.0,54.0,6,2.89,Kansas,2016
+66.0,8.0,Dodge City,DGC,3,06-03-2016,22.0,16.0,"Dodge City, KS",79.0,52.0,6,0.0,Kansas,2016
+64.0,7.0,Dodge City,DGC,2,06-02-2016,21.0,17.0,"Dodge City, KS",74.0,53.0,6,0.0,Kansas,2016
+64.0,10.0,Dodge City,DGC,1,06-01-2016,53.0,45.0,"Dodge City, KS",73.0,54.0,6,0.81,Kansas,2016
+67.0,12.0,Dodge City,DGC,31,05-31-2016,40.0,32.0,"Dodge City, KS",82.0,52.0,5,0.0,Kansas,2016
+69.0,11.0,Dodge City,DGC,30,05-30-2016,33.0,26.0,"Dodge City, KS",81.0,56.0,5,3.45,Kansas,2016
+64.0,8.0,Dodge City,DGC,29,05-29-2016,22.0,17.0,"Dodge City, KS",79.0,49.0,5,0.0,Kansas,2016
+65.0,10.0,Dodge City,DGC,28,05-28-2016,31.0,23.0,"Dodge City, KS",75.0,55.0,5,0.01,Kansas,2016
+70.0,12.0,Dodge City,DGC,27,05-27-2016,39.0,30.0,"Dodge City, KS",82.0,58.0,5,0.14,Kansas,2016
+74.0,10.0,Dodge City,DGC,26,05-26-2016,27.0,20.0,"Dodge City, KS",85.0,63.0,5,0.0,Kansas,2016
+73.0,16.0,Dodge City,DGC,25,05-25-2016,55.0,45.0,"Dodge City, KS",83.0,63.0,5,1.13,Kansas,2016
+70.0,13.0,Dodge City,DGC,24,05-24-2016,36.0,26.0,"Dodge City, KS",81.0,58.0,5,0.0,Kansas,2016
+72.0,23.0,Dodge City,DGC,23,05-23-2016,45.0,36.0,"Dodge City, KS",79.0,64.0,5,0.02,Kansas,2016
+67.0,20.0,Dodge City,DGC,22,05-22-2016,37.0,29.0,"Dodge City, KS",76.0,57.0,5,0.0,Kansas,2016
+58.0,12.0,Dodge City,DGC,21,05-21-2016,24.0,20.0,"Dodge City, KS",65.0,51.0,5,1.85,Kansas,2016
+52.0,11.0,Dodge City,DGC,20,05-20-2016,22.0,18.0,"Dodge City, KS",57.0,46.0,5,0.0,Kansas,2016
+52.0,7.0,Dodge City,DGC,19,05-19-2016,19.0,15.0,"Dodge City, KS",65.0,38.0,5,0.0,Kansas,2016
+53.0,15.0,Dodge City,DGC,18,05-18-2016,32.0,28.0,"Dodge City, KS",60.0,45.0,5,0.03,Kansas,2016
+54.0,13.0,Dodge City,DGC,17,05-17-2016,34.0,30.0,"Dodge City, KS",61.0,46.0,5,0.26,Kansas,2016
+54.0,10.0,Dodge City,DGC,16,05-16-2016,29.0,23.0,"Dodge City, KS",61.0,47.0,5,2.04,Kansas,2016
+48.0,10.0,Dodge City,DGC,15,05-15-2016,31.0,25.0,"Dodge City, KS",58.0,37.0,5,0.0,Kansas,2016
+63.0,18.0,Dodge City,DGC,14,05-14-2016,42.0,32.0,"Dodge City, KS",82.0,44.0,5,0.0,Kansas,2016
+58.0,7.0,Dodge City,DGC,13,05-13-2016,20.0,15.0,"Dodge City, KS",73.0,42.0,5,0.0,Kansas,2016

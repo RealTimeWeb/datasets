@@ -20,6 +20,10 @@ all:
 	python builder/builder.py -l python -a specs/ ./datasets
 all_java:
 	python builder/builder.py -l java -a specs/ ./datasets
+all_csv:
+	python builder/builder.py -l csv -a specs/ ./datasets
+all_json:
+	python builder/builder.py -l json -a specs/ ./datasets
 all_metrics:
 	python builder/builder.py -l metrics -a specs/ ./datasets
 all_fast:

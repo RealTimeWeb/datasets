@@ -1,0 +1,1001 @@
+age,category,citizenship,company.name,company.type,country code,founded,from emerging,gdp,gender,industry,inherited,name,rank,region,relationship,sector,was founder,was political,wealth.type,worth in billions,year
+-1,Financial,Saudi Arabia,Rolaco Trading and Contracting Company,new,SAU,1968,True,158000000000.0,male,Money Management,True,Abdul Aziz Al-Sulaiman,404,Middle East/North Africa,founder,construction,True,False,self-made finance,1.0,1996
+34,Financial,United States,Fidelity Investments,new,USA,1946,True,8100000000000.0,female,Money Management,True,Abigail Johnson,145,North America,relation,investment banking,True,False,inherited,2.5,1996
+59,Non-Traded Sectors,Brazil,Companhia Brasileira de Distribui?ao,new,BRA,1948,True,854000000000.0,male,"Retail, Restaurant",True,Abilio dos Santos Diniz,322,Latin America,relation,retail,True,False,inherited,1.2,1996
+61,New Sectors,Germany,Ratiopharm,new,DEU,1881,True,2500000000000.0,male,Technology-Medical,True,Adolf Merckle,388,Europe,relation,pharmaceuticals,True,False,inherited,1.0,1996
+-1,Financial,Hong Kong,Swire,new,HKG,1816,True,160000000000.0,male,Money Management,True,Adrian and John Swire,162,East Asia,relation,trading company,True,False,inherited,2.2,1996
+-1,Traded Sectors,Bahrain,YBA Kanoo,new,BHR,1890,True,6100000000.0,male,Consumer,True,Ahmed Ali Kanoo,383,Middle East/North Africa,relation,shipping,True,True,inherited,1.0,1996
+-1,New Sectors,Japan,Otsuka Holdings,new,JPN,1921,True,4710000000000.0,male,Technology-Medical,True,Akihiko Otsuka,164,East Asia,relation,pharmaceuticals,True,False,inherited,2.2,1996
+-1,Traded Sectors,Japan,Sony,new,JPN,1946,True,4710000000000.0,male,Consumer,True,Akio Morita,156,East Asia,founder,technology,True,False,founder non-finance,2.3,1996
+66,Financial,Japan,Mori Building,new,JPN,1959,True,4710000000000.0,male,Real Estate,True,Akira Mori,60,East Asia,relation,construction,True,False,inherited,3.9,1996
+-1,Traded Sectors,France,Chanel,new,FRA,1909,True,1610000000000.0,male,Consumer,True,Alain Wertheimer,187,Europe,relation,luxury goods,True,False,inherited,2.0,1996
+12,Financial,Germany,von Thurn and Taxis family,new,DEU,1615,True,2500000000000.0,male,Money Management,True,Albert von Thurn und Taxis,258,Europe,relation,"postal service, beverages",True,False,inherited,1.5,1996
+63,Resource Related,Mexico,Penoles,privatization,MEX,1960,True,397000000000.0,male,Mining and metals,True,Alberto Bailleres Gonzalez,225,Latin America,relation,mining,True,False,inherited,1.8,1996
+-1,Non-Traded Sectors,Mexico,Groupo IUSA,new,MEX,1939,True,397000000000.0,male,Media,True,Alejo Peralta,136,Latin America,relation,construction,True,False,inherited,2.5,1996
+-1,Financial,Mexico,Pulsar International,new,MEX,1981,True,397000000000.0,male,Money Management,True,Alfonso Romo Garza,282,Latin America,founder,agriculture,True,False,self-made finance,1.4,1996
+-1,Traded Sectors,Netherlands,Heineken International,new,NLD,1864,True,443000000000.0,female,Consumer,True,Alfred Heineken,122,Europe,relation,beer,True,False,inherited,2.6,1996
+-1,0,United States,MBNA,subsidiary,USA,1982,True,8100000000000.0,male,Other,True,Alfred Lerner,294,North America,chairman,credit cards,True,False,executive,1.4,1996
+-1,Financial,Germany,?Sal. Oppenheim,new,DEU,1789,True,2500000000000.0,male,Money Management,True,Alfred von Oppenheim,190,Europe,relation,banking,True,False,inherited,2.0,1996
+47,Non-Traded Sectors,United States,Walmart, new,USA,1962,True,8100000000000.0,female,"Retail, Restaurant",True,Alice Walton,41,North America,relation,retail,True,False,inherited,4.7,1996
+-1,Non-Traded Sectors,Spain,Construcciones y Contratas,aquired,ESP,1952,True,641000000000.0,female,Constrution,True,Alicia and Esther Koplowitz,405,Europe,relation,construction,True,False,inherited,1.0,1996
+-1,Traded Sectors,Ecuador,Exportadora Bananera Noboa,new,ECU,1946,True,25200000000.0,male,Consumer,True,Alvaro Noboa,325,Latin America,relation,banannas,True,False,inherited,1.2,1996
+59,Non-Traded Sectors,United States,Continental Cablevision,new,USA,1964,True,8100000000000.0,male,Media,True,Amos Hosetter Jr,319,North America,founder,media,True,False,founder non-finance,1.3,1996
+-1,Resource Related,Peru,Grupo Prescia (now Pandora Group),new,PER,1889,True,53975906967.0,female,Mining and metals,True,Ana Maria Brescia Cafferata,401,Latin America,relation,"mining, banking",True,False,inherited,1.0,1996
+82,Resource Related,Chile,Angelini Group,new,CHL,1955,True,75800000000.0,male,Energy,True,Anacleto Angelini,150,Latin America,founder,mining,True,False,privatized and resources,2.3,1996
+57,Non-Traded Sectors,Malaysia,Usaha Tegas Sdn Bhd,new,MYS,1984,True,101000000000.0,male,Media,True,Ananda Krishnan,265,East Asia,founder,real estate,True,False,founder non-finance,1.5,1996
+-1,Financial,Philippines,Filinvest Development Corporation,new,PHL,1955,True,82848194406.0,male,Real Estate,True,Andrew Gotianun,149,East Asia,founder,real estate,True,False,self-made finance,2.4,1996
+69,Resource Related,Chile,Antofagasta,aquired,CHL,1888,True,75800000000.0,male,Mining and metals,True,Andronico Luksic,161,Latin America,founder,copper,True,False,privatized and resources,2.2,1996
+76,Non-Traded Sectors,United States,Cox Enterprises,aquired,USA,1898,True,8100000000000.0,female,Media,True,Anne Cox Chambers,58,North America,relation,media,True,False,inherited,4.0,1996
+75,Non-Traded Sectors,Germany,Westdeutsche Allgemeine Zeitung,new,DEU,1948,True,2500000000000.0,female,Media,True,Anneliese Brost,173,Europe,founder,media,True,False,founder non-finance,2.1,1996
+-1,Traded Sectors,South Africa,Rembrandt Group,new,ZAF,1940,True,148000000000.0,male,Consumer,True,Anton Rupert,250,Sub-Saharan Africa,relation,tobacco/luxury brands,True,False,inherited,1.6,1996
+-1,Traded Sectors,Brazil,Votorantim Group,new,BRA,1919,True,854000000000.0,male,Non-consumer industrial,True,Antonio Ermirio de Moraes,31,Latin America,relation,"metals, paper, cement",True,False,inherited,5.1,1996
+65,Financial,Germany,"Allianz, Merk Finck & Co",new,DEU,1890,True,2500000000000.0,male,Money Management,True,August von Finck,88,Europe,relation,banking/insurance,True,False,inherited,3.1,1996
+-1,Traded Sectors,Mexico,,,MEX,0,True,397000000000.0,,Non-consumer industrial,True,Autrey family,400,Latin America,,,True,False,,1.0,1996
+-1,Financial,Turkey,Dogus Holding,new,TUR,1951,True,181000000000.0,male,Money Management,True,Ayhan Sahenk,288,Middle East/North Africa,founder,construction,True,False,self-made finance,1.4,1996
+-1,Non-Traded Sectors,Germany,Edmond de Rothschild Group,new,DEU,1953,True,2500000000000.0,male,Constrution,True,Baldwin and Nikolaus Knauf,302,Europe,relation,banking,True,False,inherited,1.3,1996
+-1,Financial,Thailand,Kasikornbank,new,THA,1945,True,182000000000.0,male,Money Management,True,Banyong Lamsam,143,East Asia,relation,banking,True,False,inherited,2.5,1996
+72,Non-Traded Sectors,United States,Cox Enterprises,aquired,USA,1898,True,8100000000000.0,female,Media,True,Barbara Cox Anthony,57,North America,relation,media,True,False,inherited,4.0,1996
+59,New Sectors,United States,Johnson & Johnson,new,USA,1886,True,8100000000000.0,female,Technology-Medical,True,Barbara Piasecka Johnson,335,North America,relation,medical supplies,True,False,inherited,1.2,1996
+-1,Traded Sectors,Switzerland,TBG (Thyssen-Bornemisza Group) Holdings,new,CHE,1926,True,330000000000.0,male,Non-consumer industrial,True,Baron Hans Heinrich Thyssen-Bornemisza,365,Europe,relation,steel,True,False,inherited,1.1,1996
+-1,Traded Sectors,Argentina,Cerveza Quilmes,new,ARG,1888,True,272000000000.0,,Consumer,True,Bemberg family,348,Latin America,relation,beverages,True,False,inherited,1.1,1996
+63,Traded Sectors,United States,Campbell Soup,aquired,USA,1869,True,8100000000000.0,male,Consumer,True,Bennett Dorrance,228,North America,relation,soup,True,False,inherited,1.8,1996
+-1,Financial,Mexico,Grupo ALFA,new,MEX,1890,True,397000000000.0,male,Diversified financial,True,Bernardo Garza Sada,266,Latin America,relation,aluminum,True,False,inherited,1.5,1996
+40,New Sectors,United States,Microsoft,new,USA,1975,True,8100000000000.0,male,Technology-Computer,True,Bill Gates,1,North America,founder, Software,True,False,founder non-finance,18.5,1996
+-1,New Sectors,Germany,Poehringer Ingelheim,new,DEU,1885,True,2500000000000.0,,Technology-Medical,True,Boehringer family,51,Europe,relation,pharmaceuticals,True,False,inherited,4.1,1996
+-1,Non-Traded Sectors,Thailand,Total Access Communications,new,THA,1989,True,182000000000.0,male,Media,True,Boonchai Bencharongkul,236,East Asia,chairman,telecomm,True,False,executive,1.7,1996
+-1,Financial,Thailand,,,THA,0,True,182000000000.0,male,Real Estate,True,Boonsong Asavabhokhin,408,East Asia,,,True,False,,1.0,1996
+-1,Non-Traded Sectors,Netherlands,C&A,new,NLD,1841,True,443000000000.0,,"Retail, Restaurant",True,Brenninkmeijer family,63,Europe,relation,retail,True,False,inherited,3.8,1996
+76,0,United States,American Financial Group,new,USA,1959,True,8100000000000.0,male,0,True,Carl Lindner Jr,379,North America,founder,banking,True,False,founder non-finance,1.1,1996
+80,Financial,United States,Marquette Bank,aquired,USA,1920,True,8100000000000.0,male,Money Management,True,Carl Pohlad,423,North America,owner,banking,True,False,self-made finance,1.0,1996
+-1,Traded Sectors,Colombia,Organizacion Ardila Lulle,aquired,COL,1904,True,97200000000.0,male,Consumer,True,Carlos Ardila Lulle,298,Latin America,relation,soft drinks,True,False,inherited,1.3,1996
+56,Non-Traded Sectors,Mexico,Telmex,privatization,MEX,1990,True,397000000000.0,male,Media,True,Carlos Slim Helu,18,Latin America,founder, Communications,True,False,privatized and resources,6.1,1996
+-1,Non-Traded Sectors,Thailand,Italian-Thai development,new,THA,1958,True,182000000000.0,male,Constrution,True,Chaijudh Karnasuta,212,East Asia,founder,construction,True,True,privatized and resources,1.9,1996
+69,0,Taiwan,Evergreen Group,new,Taiwan,1961,True,0.0,male,Other,True,Chang Yung Fa,366,East Asia,founder,shipping,True,False,founder non-finance,1.1,1996
+-1,Traded Sectors,Hong Kong,,new,HKG,1960,True,160000000000.0,male,Consumer,True,Chao Kuang-Piu,391,East Asia,founder,wool,True,False,founder non-finance,1.0,1996
+64,Traded Sectors,Canada,Seagrams,new,CAN,1857,True,627000000000.0,male,Consumer,True,Charles Bronfman,117,North America,relation,liquor,True,False,inherited,2.6,1996
+74,Resource Related,United States,Gates Rubber Company,aquired,USA,1911,True,8100000000000.0,male,Mining and metals,True,Charles Gates Jr,381,North America,relation,tires,True,False,inherited,1.1,1996
+60,Resource Related,United States,Koch industries,new,USA,1940,True,8100000000000.0,male,Energy,True,Charles Koch,202,North America,relation,  Oil refining,True,False,inherited,2.0,1996
+58,Financial,United States,Charles Schwab Corporation,new,USA,1971,True,8100000000000.0,male,Money Management,True,Charles Schwab,377,North America,founder,brokerage/banking,True,False,self-made finance,1.1,1996
+35,Traded Sectors,United States,Campbell Soup,aquired,USA,1869,True,8100000000000.0,female,Consumer,True,Charlotte Colket Weber,369,North America,relation,soup,True,False,inherited,1.1,1996
+-1,Financial,Thailand,Bangkok Bank,new,THA,1944,True,182000000000.0,male,Money Management,True,Chatri Sophonpanich,92,East Asia,relation,banking,True,False,inherited,3.1,1996
+73,Financial,Hong Kong,Nan Fung Textiles,new,HKG,1954,True,160000000000.0,male,Real Estate,True,Chen Din Hwa,304,East Asia,founder,cotton yarn,True,False,self-made finance,1.3,1996
+70,Financial,Hong Kong,Chow Tai Fook Enterprises,new,HKG,1929,True,160000000000.0,male,Real Estate,True,Cheng Yu-tung,24,East Asia,relation,real estate,True,False,inherited,5.5,1996
+-1,Financial,South Korea,SK Group,aquired,KOR,1953,True,603000000000.0,male,Diversified financial,True,Chey Jong-hyon,110,East Asia,founder,textiles,True,False,self-made finance,2.8,1996
+-1,Financial,South Korea,Hyundai Group,new,KOR,1946,True,603000000000.0,male,Diversified financial,True,Chung Ju-yung,20,East Asia,founder,cars,True,False,self-made finance,5.9,1996
+-1,Financial,Indonesia,Ciputra Development,new,IDN,1961,True,227000000000.0,male,Real Estate,True,Ciputra,152,East Asia,founder,real estate,True,False,self-made finance,2.3,1996
+-1,Non-Traded Sectors,Germany,Sirosa,,DEU,0,True,2500000000000.0,,"Retail, Restaurant",True,Conle famle,328,Europe,,real estate,True,False,,1.2,1996
+46,Non-Traded Sectors,United States,McCaw Cellular,new,USA,1987,True,8100000000000.0,male,Media,True,Craig McCaw,317,North America,founder,cell phones,True,False,founder non-finance,1.3,1996
+69,New Sectors,Germany,BASF/Boehringer Mannheim/DePuy,new,DEU,1865,True,2500000000000.0,male,Technology-Medical,True,Curt Engelhorn,68,Europe,relation,pharmaceuticals,True,False,inherited,3.6,1996
+-1,Non-Traded Sectors,United States,Carlson,new,USA,1938,True,8100000000000.0,male,"Retail, Restaurant",True,Curtis LeRoy Carlson,376,North America,founder,hospitality,True,False,founder non-finance,1.1,1996
+24,Financial,United States,Ziff Davis Inc,new,USA,1927,True,8100000000000.0,male,Hedge funds,True,Daniel Ziff,419,North America,relation,publishing,True,False,inherited,1.0,1996
+55,New Sectors,United States,PeopleSoft,new,USA,1987,True,8100000000000.0,male,Technology-Computer,True,David Duffield,342,North America,founder,software,True,False,founder non-finance,1.2,1996
+53,Non-Traded Sectors,United States,Asylum Records/Geffen Records/Dreamworks,new,USA,1970,True,8100000000000.0,male,Media,True,David Geffen,215,North America,founder,entertainment,True,False,founder non-finance,1.9,1996
+55,Resource Related,United States,Koch industries,new,USA,1940,True,8100000000000.0,male,Energy,True,David Koch,203,North America,relation, Oil refining,True,False,inherited,2.0,1996
+80,Resource Related,United States,Standard Oil,new,USA,1870,True,8100000000000.0,male,Energy,True,David Rockefeller,295,North America,relation,oil,True,False,inherited,1.4,1996
+55,Non-Traded Sectors,United Kingdom,Sainsbury's,new,GBR,1869,True,1310000000000.0,male,"Retail, Restaurant",True,David Sainsbury,52,Europe,relation,groceries,True,False,inherited,4.1,1996
+70,Non-Traded Sectors,Japan,McDonald's Japan,franchise,JPN,1971,True,4710000000000.0,male,"Retail, Restaurant",True,Den Fujita,308,East Asia,founder,restaurants,True,False,founder non-finance,1.3,1996
+-1,Non-Traded Sectors,France,Carrefour,new,FRA,1960,True,1610000000000.0,male,"Retail, Restaurant",True,Denis Defforey,78,Europe,founder,groceries,True,False,founder non-finance,3.3,1996
+61,Non-Traded Sectors,United States,Washington Companies,new,USA,1964,True,8100000000000.0,male,Constrution,True,Dennis Washington,337,North America,founder,construction,True,False,founder non-finance,1.2,1996
+56,Traded Sectors,Thailand,Charoen Pokphand (CP Group),new,THA,1921,True,182000000000.0,male,Consumer,True,Dhanin Chearavanont,50,East Asia,relation,retail,True,False,inherited,4.2,1996
+-1,Traded Sectors,India,Reliance,new,IND,1966,True,400000000000.0,male,Consumer,True,Dhirubhai Ambani,353,South Asia,founder,textiles,True,False,founder non-finance,1.1,1996
+-1,Non-Traded Sectors,Germany,Schwarz Group,new,DEU,1930,True,2500000000000.0,male,"Retail, Restaurant",True,Dieter Schwarz,151,Europe,relation,groceries,True,False,inherited,2.3,1996
+55,New Sectors,Germany,SAP AG,new,DEU,1972,True,2500000000000.0,male,Technology-Computer,True,Dietmar Hopp,112,Europe,founder,software,True,False,founder non-finance,2.7,1996
+-1,Non-Traded Sectors,Brazil,Camargo Correa Group,new,BRA,1939,True,854000000000.0,female,Constrution,True,Dirce Navarro Camargo,186,Latin America,relation,construction,True,False,inherited,2.0,1996
+31,Financial,United States,Ziff Davis Inc,new,USA,1928,True,8100000000000.0,male,Hedge funds,True,Dirk Ziff,417,North America,relation,publishing,True,False,inherited,1.0,1996
+-1,Financial,Indonesia,Salim Group,new,IDN,1952,True,227000000000.0,male,Diversified financial,True,Djuhar Sutanto,192,East Asia,founder,consumer goods,True,False,self-made finance,2.0,1996
+63,Financial,United States,Irvine Company,aquired,USA,1864,True,8100000000000.0,male,Real Estate,True,Donald Bren,205,North America,owner,real estate,True,False,self-made finance,2.0,1996
+67,Non-Traded Sectors,United States,The Gap,new,USA,1969,True,8100000000000.0,male,"Retail, Restaurant",True,Donald Fisher,340,North America,founder,clothing ,True,False,founder non-finance,1.2,1996
+67,Non-Traded Sectors,United States,Hallmark Cards,new,USA,1910,True,8100000000000.0,male,"Retail, Restaurant",True,Donald Hall,313,North America,relation,greeting cards,True,False,inherited,1.3,1996
+66,Non-Traded Sectors,United States,Advance Publications,new,USA,1909,True,8100000000000.0,male,Media,True,Donald Newhouse,48,North America,relation,media,True,False,inherited,4.5,1996
+65,Traded Sectors,United States,The Gap,new,USA,1969,True,8100000000000.0,female,Consumer,True,Doris Fisher,341,North America,founder,clothing ,True,False,founder non-finance,1.2,1996
+-1,Traded Sectors,United States,Campbell Soup,aquired,USA,1869,True,8100000000000.0,female,Consumer,True,Dorrance Hill Hamilton,318,North America,relation,soup,True,False,inherited,1.3,1996
+67,Traded Sectors,United States,Seagrams,new,USA,1857,True,8100000000000.0,male,Consumer,True,Edgar Bronfman,116,North America,relation,liquor,True,False,inherited,2.7,1996
+-1,Financial,Lebanon,Banco Safra (now Saftra Group),new,LBN,1955,True,13690217121.0,male,Money Management,True,Edmond Safra,223,Middle East/North Africa,founder,banking,True,False,self-made finance,1.8,1996
+65,Financial,United States,Fidelity Investments,new,USA,1946,True,8100000000000.0,male,Money Management,True,Edward Johnson,312,North America,relation,investment banking,True,False,inherited,1.3,1996
+53,Financial,Japan,,,JPN,0,True,4710000000000.0,male,Real Estate,True,Eitaro Itoyama,155,East Asia,,golf courses,True,False,self-made finance,2.3,1996
+-1,Financial,Indonesia,Sinar Mas Group,new,IDN,1962,True,227000000000.0,male,Diversified financial,True,Eka Tjipta Widjaja,32,East Asia,founder,banking,True,False,self-made finance,5.1,1996
+62,Financial,United States,"Kaufman and Broad, SunAmerica",new/aquired,USA,1957,True,8100000000000.0,male,Money Management,True,Eli Broad,378,North America,founder,construction/insurance,True,False,self-made finance,1.1,1996
+50,Traded Sectors,Chile,CMPC,new,CHL,1920,True,75800000000.0,male,Consumer,True,Eliodoro Matte,230,Latin America,relation,timber and paper,True,False,inherited,1.7,1996
+28,Non-Traded Sectors,Mexico,Grupo Televisa,new,MEX,1955,True,397000000000.0,male,Media,True,Emilio Azcarraga Jean,195,Latin America,relation,media,True,False,inherited,2.0,1996
+61,Financial,Spain,Grupo Santander,new,ESP,1857,True,641000000000.0,male,Money Management,True,Emilio Botin,199,Europe,relation,banking,True,False,inherited,2.0,1996
+-1,Financial,Switzerland,Andre & Cie,new,CHE,1877,True,330000000000.0,male,Money Management,True,Eric Andre,407,Europe,relation,grain,True,False,inherited,1.0,1996
+63,Non-Traded Sectors,Germany,Tenglemann Group,new,DEU,1867,True,2500000000000.0,male,"Retail, Restaurant",True,Erivan Haub,74,Europe,relation,retail,True,False,inherited,3.4,1996
+30,New Sectors,Switzerland,Serono,new,CHE,1906,True,330000000000.0,male,Technology-Medical,True,Ernesto Bertarelli,142,Europe,relation,pharmaceuticals,True,False,inherited,2.5,1996
+-1,Financial,Taiwan,Shin Kong Financial,new,Taiwan,1945,True,0.0,male,Hedge funds,True,Eugene Wu,115,East Asia,relation,finance ,True,False,inherited,2.7,1996
+-1,0,Mexico,Femsa,new,MEX,1890,True,397000000000.0,male,0,True,Eugenio Garza Lagnera,361,Latin America,relation,beverages,True,False,inherited,1.1,1996
+-1,Financial,Philippines,Jumex,new,PHL,1961,True,82848194406.0,male,Diversified financial,True,Eugenio Lopez,402,East Asia,owner,drinks,True,False,self-made finance,1.0,1996
+-1,Non-Traded Sectors,United States,Levi Strauss & co,new,USA,1853,True,8100000000000.0,female,"Retail, Restaurant",True,Evelyn Danzig Haas,370,North America,relation,jeans,True,False,inherited,1.1,1996
+67,Financial,United States,Fayez Sarofim & Co,new,USA,1958,True,8100000000000.0,male,Money Management,True,Fayez Sarofim,343,North America,relation,money management,True,False,self-made finance,1.2,1996
+-1,Traded Sectors,Hong Kong,Sino Group,new,HKG,1970,True,160000000000.0,male,Consumer,True,Fong Teng,28,East Asia,relation,real estate,True,False,inherited,5.2,1996
+64,Traded Sectors,United States,"Mars, Incorperated",new,USA,1911,True,8100000000000.0,male,Consumer,True,Forrest Mars Jr,103,North America,relation,candy,True,False,inherited,3.0,1996
+-1,Traded Sectors,United States,"Mars, Incorperated",new,USA,1911,True,8100000000000.0,male,Consumer,True,Forrest Mars Sr,102,North America,relation,candy,True,False,inherited,3.0,1996
+-1,Non-Traded Sectors,United States,Levi Strauss & co,new,USA,1853,True,8100000000000.0,female,"Retail, Restaurant",True,Frances Koshland Geballe,332,North America,relation,jeans,True,False,inherited,1.2,1996
+-1,Traded Sectors,United States,Swagelok Company,new,USA,1947,True,8100000000000.0,male,Non-consumer industrial,True,Fred Lennon,415,North America,founder,manufacturing,True,False,founder non-finance,1.0,1996
+-1,Traded Sectors,Germany,Freudenberg Group,new,DEU,1849,True,2500000000000.0,,Consumer,True,Freudenberg family,260,Europe,,cleaning supplies,True,False,inherited,1.5,1996
+69,Financial,Germany,Friedrich Flick Industrial Holding,new,DEU,1919,True,2500000000000.0,male,Money Management,True,Friedrich Flick,45,Europe,relation,coal,True,False,inherited,4.5,1996
+71,Financial,Japan,Iwasaki Sangyo Group,new,JPN,1923,True,4710000000000.0,male,Real Estate,True,Fukuzo Iwasaki,55,East Asia,relation,real estate,True,False,inherited,4.0,1996
+-1,Non-Traded Sectors,Germany,,,DEU,0,True,2500000000000.0,,Media,True,Funke family,174,Europe,,,True,False,,2.1,1996
+55,Non-Traded Sectors,Canada,George Weston Limited,new,CAN,1882,True,627000000000.0,male,"Retail, Restaurant",True,Galen Weston,350,North America,relation,food distribution,True,False,inherited,1.1,1996
+-1,Traded Sectors,United Kingdom,George Weston Limited,new,GBR,1882,True,1310000000000.0,male,Consumer,True,Garry Weston,82,Europe,relation,,True,False,inherited,3.3,1996
+51,Non-Traded Sectors,United States,Lucasfilm,new,USA,1971,True,8100000000000.0,male,Media,True,George Lucas,201,North America,founder,Star Wars,True,False,founder non-finance,2.0,1996
+65,Financial,United States,Soros Fund Management,new,USA,1969,True,8100000000000.0,male,Hedge funds,True,George Soros,144,North America,founder,hedge funds,True,False,self-made finance,2.5,1996
+-1,Financial,Philippines,Metropolitan Bank and Trust Company,new,PHL,1962,True,82848194406.0,male,Money Management,True,George Ty,124,East Asia,founder,banking,True,False,self-made finance,2.6,1996
+-1,Financial,Hong Kong,Chyau Fwu Corp,new,HKG,1950,True,160000000000.0,male,Real Estate,True,George Wong,352,East Asia,relation,real estate,True,False,inherited,1.1,1996
+44,Financial,United Kingdom,Grosvenor Group,new,GBR,1677,True,1310000000000.0,male,Real Estate,True,Gerald Cavendish Grosvenor,251,Europe,relation,real estate,True,False,inherited,1.6,1996
+63,Financial,France,Louis Dreyfus Group,new,FRA,1851,True,1610000000000.0,male,Money Management,True,Gerard Louis-Dreyfus,386,Europe,relation,energy,True,False,inherited,1.0,1996
+-1,Non-Traded Sectors,France,Auchan,new,FRA,1961,True,1610000000000.0,male,"Retail, Restaurant",True,Gerard Mulliez,21,Europe,founder,retail,True,False,founder non-finance,5.7,1996
+-1,Traded Sectors,Italy,Fiat,new,ITA,1899,True,1310000000000.0,male,Consumer,True,Gianni Agnelli,109,Europe,relation,cars,True,False,inherited,2.8,1996
+45,Resource Related,United States,Getty ,new,USA,1904,True,8100000000000.0,male,Energy,True,Gordon Getty,237,North America,relation,oil,True,False,inherited,1.7,1996
+67,New Sectors,United States,Intel ,new,USA,1968,True,8100000000000.0,male,Technology-Computer,True,Gordon Moore,64,North America,founder,technology,True,False,founder non-finance,3.7,1996
+-1,Financial,Japan,,,JPN,0,True,4710000000000.0,male,Real Estate,True,Goroemon Yoshimoto,132,East Asia,,,True,False,,2.5,1996
+-1,Financial,Greece,Fitzwilton,,GRC,0,True,147000000000.0,,Money Management,True,Goulandris family,231,Europe,,shipping,True,False,inherited,1.7,1996
+61,Traded Sectors,Argentina,Petrolera Perez Companc,new,ARG,1968,True,272000000000.0,male,Consumer,True,Gregorio Perez Companc,67,Latin America,relation,oil,True,False,inherited,3.6,1996
+55,Traded Sectors,Germany,Maxingvest AG,new,DEU,1949,True,2500000000000.0,male,Consumer,True,Gunter Herz,113,Europe,relation,coffee,True,False,inherited,2.7,1996
+50,Non-Traded Sectors,Venezuela,Cisneros Group,new,VEN,1929,True,68258588863.0,male,Media,True,Gustavo Cisneros,382,Latin America,relation,media,True,False,inherited,1.1,1996
+58,Financial,United States,Waste Management,new,USA,1968,True,8100000000000.0,male,0,True,H Wayne Huizenga,291,North America,founder,waste management,True,False,self-made finance,1.4,1996
+-1,Financial,Malaysia,Renong,,MYS,0,True,101000000000.0,male,Diversified financial,True,Halim Saad,397,East Asia,Chairman and Chief Executive Officer,,True,True,privatized and resources,1.0,1996
+-1,Financial,Germany,Franz Haniel & Cie,new,DEU,1756,True,2500000000000.0,,Diversified financial,True,Haniel family,12,Europe,,,True,False,inherited,8.1,1996
+-1,Traded Sectors,Sweden,Tetra Pak,new,SWE,1951,True,288000000000.0,male,Consumer,True,Hans and Gad Rausing,10,Europe,relation,food packaging,True,False,inherited,9.0,1996
+56,New Sectors,Germany,SAP AG,new,DEU,1972,True,2500000000000.0,male,Technology-Computer,True,Hans-Werner Hector,300,Europe,founder,software,True,False,founder non-finance,1.3,1996
+-1,Financial,United States,Helmsley hotels,aquired,USA,1938,True,8100000000000.0,male,Real Estate,True,Harry Brakemann Helmsley,239,North America,founder,real estate,True,False,self-made finance,1.7,1996
+52,New Sectors,Germany,SAP AG,new,DEU,1972,True,2500000000000.0,male,Technology-Computer,True,Hasso Plattner,219,Europe,founder,software,True,False,founder non-finance,1.8,1996
+76,Traded Sectors,United States,Walmart, new,USA,1962,True,8100000000000.0,female,Consumer,True,Helen Walton,40,North America,relation,retail,True,False,inherited,4.7,1996
+-1,Traded Sectors,Germany,Henkel AG,new,DEU,1876,True,2500000000000.0,,Non-consumer industrial,True,Henkel family,43,Europe,,chemicals,True,False,inherited,4.6,1996
+-1,Financial,Switzerland,Andre & Cie,new,CHE,1877,True,330000000000.0,male,Money Management,True,Henri Andre,406,Europe,relation,grain,True,False,inherited,1.0,1996
+72,Financial,Hong Kong,Sociedade de Turismo e Divers?es de Macau,new,HKG,1962,True,160000000000.0,male,Real Estate,True,Henry Fok,131,East Asia,investor,casinos,True,False,self-made finance,2.5,1996
+77,Financial,United States,Pittsburgh Coke & Chemical,new,USA,1942,True,8100000000000.0,male,Money Management,True,Henry Hillman,126,North America,relation,coal,True,False,inherited,2.6,1996
+-1,New Sectors,United States,Electronic Data Systems,new,USA,1962,True,8100000000000.0,male,Technology-Computer,True,Henry Ross Perot Sr,83,North America,founder,data processing,True,False,founder non-finance,3.3,1996
+71,Non-Traded Sectors,Philippines,SM Malls,new,PHL,1960,True,82848194406.0,male,"Retail, Restaurant",True,Henry Sy,197,East Asia,founder,retail,True,False,founder non-finance,2.0,1996
+-1,Financial,Japan,,,JPN,0,True,4710000000000.0,male,Real Estate,True,Hiroshi Takei,309,East Asia,,,True,False,,1.3,1996
+68,New Sectors,Japan,Nintendo,new,JPN,1889,True,4710000000000.0,male,Technology-Computer,True,Hiroshi Yamauchi,280,East Asia,relation,video games,True,False,inherited,1.4,1996
+-1,Non-Traded Sectors,Japan,Daiwan Can,new,JPN,1950,True,4710000000000.0,male,"Retail, Restaurant",True,Hisakazu Yamaguchi,147,East Asia,relation,cans,True,False,inherited,2.4,1996
+35,Traded Sectors,United States,Campbell Soup,aquired,USA,1869,True,8100000000000.0,female,Consumer,True,Hope Hill Van Beuren,368,North America,relation,soup,True,False,inherited,1.1,1996
+-1,Traded Sectors,Taiwan,Chinfon Group,new,Taiwan,1903,True,0.0,male,Consumer,True,Huang Shi-hui,226,East Asia,relation,automobiles,True,False,inherited,1.8,1996
+82,Non-Traded Sectors,Germany,Mann Mobilia,new,DEU,1938,True,2500000000000.0,male,"Retail, Restaurant",True,Hugo Mann,220,Europe,founder,furniture,True,False,founder non-finance,1.8,1996
+69,Non-Traded Sectors,Sweden,IKEA,new,SWE,1943,True,288000000000.0,male,"Retail, Restaurant",True,Ingvar Kamprad,234,Europe,founder,furniture,True,False,founder non-finance,1.7,1996
+72,Financial,Mexico,Groupo Casa Saba,aquired,MEX,1892,True,397000000000.0,male,Diversified financial,True,Isaac Saba Raffoul,363,Latin America,founder,pharmaceuticals,True,False,self-made finance,1.1,1996
+-1,Traded Sectors,Japan,,,JPN,0,True,4710000000000.0,,Consumer,True,Isono family,356,East Asia,,,True,False,,1.1,1996
+-1,Non-Traded Sectors,United States,Enterprise,new,USA,1957,True,8100000000000.0,male,"Retail, Restaurant",True,Jack Taylor,421,North America,founder,rental cars,True,False,founder non-finance,1.0,1996
+-1,Traded Sectors,United States,"Mars, Incorperated",new,USA,1911,True,8100000000000.0,female,Consumer,True,Jacqueline Mars,99,North America,relation,candy,True,False,inherited,3.0,1996
+-1,Financial,France,Laboratories Servier,new,FRA,1954,True,1610000000000.0,male,Diversified financial,True,Jacques Servier,188,Europe,founder,pharmaceuticals,True,False,self-made finance,2.0,1996
+-1,Financial,Philippines,Ayala Corporation,new,PHL,1834,True,82848194406.0,male,Money Management,True,Jaime Augusto Zobel de Ayala,123,East Asia,relation,construcion,True,False,inherited,2.6,1996
+-1,Traded Sectors,Chile,,,CHL,0,True,75800000000.0,male,Consumer,True,Jaime Said Demarfa,297,Latin America,,,True,False,executive,1.3,1996
+-1,Resource Related,Canada,J.D. Irving,new,CAN,1882,True,627000000000.0,male,Energy,True,James Arthur and John Irving,70,North America,relation,timber,True,False,inherited,3.5,1996
+71,Financial,United States,Cargill,new,USA,1865,True,8100000000000.0,male,Money Management,True,James Cargill,274,North America,relation,food processing/commodities,True,False,inherited,1.5,1996
+53,New Sectors,United States,SAS institute,new,USA,1976,True,8100000000000.0,male,Technology-Computer,True,James Goodnight,207,North America,founder,software,True,False,founder non-finance,2.0,1996
+46,Traded Sectors,United States,"Oakley, Inc",new,USA,1975,True,8100000000000.0,male,Consumer,True,James Jannard,410,North America,founder,apparel and eyewear,True,False,founder non-finance,1.0,1996
+77,Non-Traded Sectors,United States,JM Family Enterprises,new,USA,1968,True,8100000000000.0,male,"Retail, Restaurant",True,James Moran,420,North America,founder,auto dealerships,True,False,founder non-finance,1.0,1996
+74,Financial,United States,Sorenson Companies,new,USA,1977,True,8100000000000.0,male,Real Estate,True,James Sorenson,290,North America,founder,real estate,True,False,self-made finance,1.4,1996
+-1,Financial,Kuwait,Kharafi Group,new,KWT,1956,True,31492936826.0,male,Money Management,True,Jassim Al-Kharafi,95,Middle East/North Africa,relation,diversified investments,True,False,inherited,3.0,1996
+-1,Financial,United States,Hyatt,aquired,USA,1957,True,8100000000000.0,male,Real Estate,True,Jay and Arthur Pritzker,100,North America,relation,hotels,True,False,inherited,3.0,1996
+71,Traded Sectors,United States,Amway,new,USA,1959,True,8100000000000.0,male,Consumer,True,Jay Van Andel,87,North America,founder,consumer goods,True,False,founder non-finance,3.2,1996
+57,Traded Sectors,France,Hermes,new,FRA,1837,True,1610000000000.0,male,Consumer,True,Jean-Louis Dumas,111,Europe,relation,luxury fashion,True,False,inherited,2.7,1996
+-1,Financial,Taiwan,Koos Group,new,Taiwan,1930,True,0.0,male,Money Management,True,Jeffrey Koo Sr,179,East Asia,relation,,True,False,inherited,2.1,1996
+70,Non-Traded Sectors,Mexico,Aurrera,new,MEX,1958,True,397000000000.0,male,"Retail, Restaurant",True,Jeronimo Arango,398,Latin America,founder,supermarkets,True,False,founder non-finance,1.0,1996
+48,Non-Traded Sectors,United States,Walmart, new,USA,1962,True,8100000000000.0,male,"Retail, Restaurant",True,Jim Walton,39,North America,relation,retail,True,False,inherited,4.8,1996
+-1,Non-Traded Sectors,United States,McDonald's,new,USA,1940,True,8100000000000.0,female,"Retail, Restaurant",True,Joan Kroc,240,North America,relation,restaurants,True,False,inherited,1.7,1996
+68,Traded Sectors,Germany,BMW,new,DEU,1916,True,2500000000000.0,female,Consumer,True,Johanna Quandt,11,Europe,relation,cars,True,False,inherited,8.1,1996
+79,New Sectors,United States,Boston Scientific,new,USA,1979,True,8100000000000.0,male,Technology-Medical,True,John Abele,273,North America,founder,medical devices,True,False,founder non-finance,1.5,1996
+52,Traded Sectors,Ireland,Campbell Soup,aquired,IRL,1869,True,75700000000.0,male,Consumer,True,John Dorrance,232,Europe,relation,soup,True,False,inherited,1.7,1996
+-1,Financial,Philippines,JG Summit Holdings,new,PHL,1957,True,82848194406.0,male,Diversified financial,True,John Gokongwei,196,East Asia,founder,manufacturing,True,False,self-made finance,2.0,1996
+-1,Non-Traded Sectors,Germany,,,DEU,0,True,2500000000000.0,male,Media,True,John Jahr,259,Europe,,media,True,False,inherited,1.5,1996
+81,Non-Traded Sectors,United States,Metropolitan Broadcasting Corporation,new,USA,1956,True,8100000000000.0,male,Media,True,John Kluge,15,North America,chairman,media,True,False,executive,7.2,1996
+-1,Financial,Greece,EFG International,new,GRC,1938,True,147000000000.0,male,Money Management,True,John Latsis,120,Europe,relation,shipping,True,False,inherited,2.6,1996
+59,Traded Sectors,United States,"Mars, Incorperated",new,USA,1911,True,8100000000000.0,male,Consumer,True,John Mars,98,North America,relation,candy,True,False,inherited,3.0,1996
+54,New Sectors,United States,SAS institute,new,USA,1976,True,8100000000000.0,male,Technology-Computer,True,John Sall,409,North America,founder,software,True,False,founder non-finance,1.0,1996
+87,Traded Sectors,United States,J.R. Simplot Company,new,USA,1929,True,8100000000000.0,male,Consumer,True,John Simplot,217,North America,founder,agricultural products,True,False,founder non-finance,1.9,1996
+57,Resource Related,Netherlands,BCD Holdings,new,NLD,1975,True,443000000000.0,male,Energy,True,John van Vlissingen,137,Europe,founder,travel company,True,False,privatized and resources,2.5,1996
+50,Traded Sectors,United States,Walmart, new,USA,1962,True,8100000000000.0,male,Consumer,True,John Walton,38,North America,relation, retail,True,False,inherited,4.8,1996
+58,Traded Sectors,United States,Huntsman chemical,new,USA,1982,True,8100000000000.0,male,Non-consumer industrial,True,Jon Huntsman,146,North America,founder,chemicals,True,False,founder non-finance,2.5,1996
+-1,Resource Related,Mexico,Grupo Mexico,privatized,MEX,1990,True,397000000000.0,male,Mining and metals,True,Jorge Larrea,283,Latin America,owner,copper,True,False,privatized and resources,1.4,1996
+-1,Finance,Chile,,,CHL,0,True,75800000000.0,male,banking,True,Jose Said Saffie,296,Latin America,,,True,False,self-made finance,1.3,1996
+-1,Non-Traded Sectors,United States,Levi Strauss & co,new,USA,1853,True,8100000000000.0,female,"Retail, Restaurant",True,Josephine Haas,333,North America,relation,jeans,True,False,inherited,1.2,1996
+-1,Financial,Spain,Acciona Trasmediterranea,new,ESP,1916,True,641000000000.0,male,Diversified financial,True,Juan and Carlos March,364,Europe,relation,shipping,True,False,inherited,1.1,1996
+-1,Financial,Saudi Arabia,Juffali Group,new,SAU,1946,True,158000000000.0,,Diversified financial,True,Juffali family,267,Middle East/North Africa,,electricity,True,False,inherited,1.5,1996
+60,Financial,Brazil,Banco Bozano Simonsen,new,BRA,1960,True,854000000000.0,male,Money Management,True,Julio Bozano,127,Latin America,founder,banking,True,False,self-made finance,2.5,1996
+72,Traded Sectors,Colombia,Santo Domingo Group,aquired,COL,1889,True,97200000000.0,male,Consumer,True,Julio Mario Santo Domingo,299,Latin America,founder,beer,True,False,founder non-finance,1.3,1996
+-1,Traded Sectors,Japan,,,JPN,0,True,4710000000000.0,,Non-consumer industrial,True,Junichi Murata,396,East Asia,,,True,False,,1.0,1996
+-1,Resource Related,Japan,Bridgestone Corp,new,JPN,1931,True,4710000000000.0,male,Mining and metals,True,Kanichiro Ishibashi,148,East Asia,relation,tires,True,False,inherited,2.4,1996
+-1,Traded Sectors,Germany,Diehl Stiftung,new,DEU,1902,True,2500000000000.0,male,Non-consumer industrial,True,Karl Diehl,256,Europe,relation,armaments,True,False,inherited,1.5,1996
+72,Non-Traded Sectors,Germany,Massa,new,DEU,1965,True,2500000000000.0,male,"Retail, Restaurant",True,Karl-Heinz Kipp,107,Europe,founder,retail,True,False,founder non-finance,2.8,1996
+-1,Non-Traded Sectors,United States,Albertsons,new,USA,1939,True,8100000000000.0,female,"Retail, Restaurant",True,Kathryn McCurry Albertson,338,North America,relation,groceries,True,False,inherited,1.2,1996
+-1,New Sectors,Japan,Kyocera,new,JPN,1959,True,4710000000000.0,male,Technology-Computer,True,Kazuo Inamori,355,East Asia,founder,electronics,True,False,founder non-finance,1.1,1996
+-1,Financial,Japan,Nichiei,new,JPN,1963,True,4710000000000.0,male,Money Management,True,Kazuo Matsuda,165,East Asia,founder,small-company lending,True,False,self-made finance,2.2,1996
+-1,Traded Sectors,Japan,Suntory,new,JPN,1899,True,4710000000000.0,male,Consumer,True,Keizo Saji,84,East Asia,relation,brewery,True,False,inherited,3.2,1996
+-1,Traded Sectors,Japan,Mabuchi Motor Company,new,JPN,1946,True,4710000000000.0,male,Non-consumer industrial,True,Kenichi Mabuchi,354,East Asia,founder,electric motors,True,False,founder non-finance,1.1,1996
+-1,Traded Sectors,Japan,Heiwa,new,JPN,1946,True,4710000000000.0,male,Consumer,True,Kenkichi Nakajima,248,East Asia,founder,pachinko,True,False,founder non-finance,1.6,1996
+72,Non-Traded Sectors,Canada,Thomson Corporation (now Thomson Reuters),acquired,CAN,1934,True,627000000000.0,male,Media,True,Kenneth Thomson,14,North America,relation,media,True,False,inherited,7.4,1996
+48,Non-Traded Sectors,United States,Excel Communications,new,USA,1988,True,8100000000000.0,male,Media,True,Kenneth Troutt,292,North America,founder,telecomm,True,False,founder non-finance,1.4,1996
+-1,Non-Traded Sectors,United States,Teletech,new,USA,1982,True,8100000000000.0,male,Media,True,Kenneth Tuchman,411,North America,founder,outsourcing,True,False,founder non-finance,1.0,1996
+48,Financial,Japan,SFCG,new,JPN,1978,True,4710000000000.0,male,Money Management,True,Kenshin Oshima,262,East Asia,president,banking,True,False,self-made finance,1.5,1996
+58,Non-Traded Sectors,Australia,Consolidated Press Holdings Limited,aquired,AUS,1936,True,401000000000.0,male,Media,True,Kerry Packer,218,North America,relation,media,True,False,inherited,1.8,1996
+79,Financial,Singapore,Malayan Banking,new,SGP,1960,True,96400967339.0,male,Real Estate,True,Khoo Teck Puat,97,East Asia,founder,banking,True,False,self-made finance,3.0,1996
+-1,Financial,South Korea,,,KOR,0,True,603000000000.0,,Diversified financial,True,Kim Suk-won,359,East Asia,,,True,False,,1.1,1996
+-1,Financial,South Korea,Daewoo Group,new,KOR,1967,True,603000000000.0,male,Diversified financial,True,Kim Woo-choong,157,East Asia,founder,textiles,True,True,privatized and resources,2.3,1996
+78,Financial,United States,MGM Grand,aquired,USA,1924,True,8100000000000.0,male,Real Estate,True,Kirk Kerkorian,76,North America,investor,real estate,True,False,self-made finance,3.4,1996
+48,Traded Sectors,Denmark,Lego,new,DNK,1949,True,188000000000.0,male,Consumer,True,Kjeld Kirk Kristiansen,158,Europe,relation,toys,True,False,inherited,2.3,1996
+-1,Traded Sectors,Switzerland,Jacobs Suchard AG,new,CHE,1895,True,330000000000.0,male,Consumer,True,Klaus Jacobs,286,Europe,relation,chocolate and coffee,True,False,inherited,1.4,1996
+55,New Sectors,Germany,SAP AG,new,DEU,1972,True,2500000000000.0,male,Technology-Computer,True,Klaus Tschira,245,Europe,founder,software,True,False,founder non-finance,1.6,1996
+-1,Financial,South Korea,LG Group,new,KOR,1947,True,603000000000.0,male,Diversified financial,True,Koo Cha-kyung,105,East Asia,relation,electronics,True,False,inherited,2.9,1996
+49,Non-Traded Sectors,Thailand,Bank of Ayudhya/Bangkok Broadcasting and Television Company,new,THA,1945,True,182000000000.0,male,Media,True,Krit Ratanarak,287,East Asia,relation,"banking, media",True,True,inherited,1.4,1996
+28,Resource Related,India,Aditya Birla Group,new,IND,1857,True,400000000000.0,male,Mining and metals,True,Kumar Birla,175,South Asia,relation,cement,True,False,inherited,2.1,1996
+-1,Non-Traded Sectors,Japan,Sankyo,new,JPN,1950,True,4710000000000.0,male,"Retail, Restaurant",True,Kunio Busujima,249,East Asia,founder,pachinko gaming machines,True,False,founder non-finance,1.6,1996
+55,Financial,Singapore,Hong Leong Group,new,SGP,1948,True,96400967339.0,male,Diversified financial,True,Kwek Leng Beng,23,East Asia,relation,banking,True,False,inherited,5.7,1996
+55,Financial,Japan,Acom,new,JPN,1948,True,4710000000000.0,male,Money Management,True,Kyosuke Kinoshita,91,East Asia,relation,consumer loans,True,False,inherited,3.1,1996
+45,Resource Related,India,ArcelorMittal,new,IND,1989,True,400000000000.0,male,Energy,True,Lakshmi Mittal,261,South Asia,founder,steel,True,False,inherited,1.5,1996
+-1,Financial,Brazil,SulAmerica Seguros,new,BRA,1895,True,854000000000.0,,Hedge funds,True,Larragoiti family,384,Latin America,,insurance,True,False,inherited,1.0,1996
+51,New Sectors,United States,Oracle, new,USA,1977,True,8100000000000.0,male,Technology-Computer,True,Larry Ellison,19,North America,founder, software,True,False,founder non-finance,6.0,1996
+85,Resource Related,United States,Standard Oil,new,USA,1870,True,8100000000000.0,male,Mining and metals,True,Laurance Rockefeller,413,North America,relation,oil,True,False,inherited,1.0,1996
+-1,Traded Sectors,United States,Loews Corporation,new,USA,1946,True,8100000000000.0,male,Consumer,True,Laurence Tisch,209,North America,founder,retail,True,False,founder non-finance,2.0,1996
+39,Resource Related,United States,Sid Richardson Gasoline Co,new,USA,1919,True,8100000000000.0,male,Energy,True,Lee Bass,169,North America,relation,oil,True,False,inherited,2.2,1996
+-1,Financial,Hong Kong,Hysan Development,new,HKG,1920,True,160000000000.0,male,Real Estate,True,Lee Hon Chiu,221,East Asia,relation,real estate,True,False,inherited,1.8,1996
+-1,New Sectors,South Korea,Samsung,new,KOR,1938,True,603000000000.0,male,Technology-Computer,True,Lee Kun-Hee,37,East Asia,relation,electronics,True,False,inherited,4.9,1996
+71,Financial,Singapore,Oversea-Chinese Banking Corporation,new,SGP,1919,True,96400967339.0,male,Money Management,True,Lee Seng Wee,178,East Asia,chairman,banking,True,False,inherited,2.1,1996
+68,Financial,Hong Kong,Henderson Land Development,new,HKG,1976,True,160000000000.0,male,Real Estate,True,Lee Shau Kee,4,East Asia,founder/chairman,real estate,True,False,self-made finance,12.7,1996
+-1,Non-Traded Sectors,Germany,,,DEU,0,True,2500000000000.0,,"Retail, Restaurant",True,Leibbrand family,326,Europe,,,True,False,,1.2,1996
+-1,Financial,Greece,Efploia Shipping,new,GRC,1860,True,147000000000.0,,Money Management,True,Lemos family,94,Europe,,shipping,True,False,inherited,3.0,1996
+-1,Non-Traded Sectors,Germany,Kirch Group,new,DEU,1956,True,2500000000000.0,male,Media,True,Leo Kirch,118,Europe,founder,media,True,False,founder non-finance,2.6,1996
+-1,Traded Sectors,Brazil,Suzano Papel e Celulose,new,BRA,1939,True,854000000000.0,male,Consumer,True,Leon Feffer,349,Latin America,founder,paper,True,False,founder non-finance,1.1,1996
+62,Traded Sectors,United States,Est?Lauder,new,USA,1946,True,8100000000000.0,male,Consumer,True,Leonard Lauder,181,North America,relation,makeup,True,False,inherited,2.1,1996
+60,Traded Sectors,Italy,?Luxottica,new,ITA,1961,True,1310000000000.0,male,Consumer,True,Leonardo Del Vecchio,153,Europe,founder,glasses,True,False,founder non-finance,2.3,1996
+44,Traded Sectors,United States,Limited Brands,new,USA,1963,True,8100000000000.0,male,Consumer,True,Leslie Wexner,316,North America,founder,clothing,True,False,founder non-finance,1.3,1996
+70,Financial,United States,General Dynamics,new,USA,1919,True,8100000000000.0,male,Money Management,True,Lester Crown,204,North America,relation,aerospace and defense,True,False,inherited,2.0,1996
+67,Financial,Hong Kong,Cheung king,new,HKG,1971,True,160000000000.0,male,Real Estate,True,Li Ka-shing,7,East Asia,founder,real estate,True,False,self-made finance,10.6,1996
+-1,Financial,Indonesia,Salim Group,new,IDN,1952,True,227000000000.0,male,Diversified financial,True,Liem Sioe Liong,46,East Asia,founder,consumer goods,True,False,self-made finance,4.5,1996
+73,Traded Sectors,France,L'Oreal,new,FRA,1909,True,1610000000000.0,female,Consumer,True,Liliane Bettencourt,33,Europe,relation,cosmetics,True,False,inherited,5.0,1996
+78,Financial,Malaysia,Genting Highlands,new,MYS,1965,True,101000000000.0,male,Diversified financial,True,Lim Goh Tong,114,East Asia,founder,casinos,True,False,self-made finance,2.7,1996
+-1,Financial,Hong Kong,Great Eagle Holdings,new,HKG,1963,True,160000000000.0,male,Real Estate,True,Lo Ying Shek,246,East Asia,founder,real estate,True,False,self-made finance,1.6,1996
+30,Traded Sectors,Venezuela,Empresas Polar,new,VEN,1941,True,68258588863.0,male,Consumer,True,Lorenzo Mendoza,320,Latin America,relation,beer,True,False,inherited,1.3,1996
+-1,Traded Sectors,Italy,Martini & Rossi,new,ITA,1863,True,1310000000000.0,male,Consumer,True,Lorenzo Rossi di Montelera,222,Europe,relation,beverages,True,False,inherited,1.8,1996
+51,Non-Traded Sectors,Mexico,Cemex,new,MEX,1906,True,397000000000.0,male,Constrution,True,Lorenzo Zambrano,330,Latin America,relation,cement,True,False,inherited,1.2,1996
+60,Traded Sectors,Italy,Benetton Group,new,ITA,1965,True,1310000000000.0,male,Consumer,True,Luciano Benetton,194,Europe,founder,fashion,True,False,founder non-finance,2.0,1996
+61,Financial,Philippines,Asia Brewery,new,PHL,1982,True,82848194406.0,male,Money Management,True,Lucio Tan,166,East Asia,founder,beverages,True,False,self-made finance,2.2,1996
+63,Financial,Colombia,"Grupo Aval Acciones y Valores, SA",aquired,COL,1971,True,97200000000.0,male,Money Management,True,Luis Carlos Sarmiento Angulo,242,Latin America,founder,banking,True,False,self-made finance,1.6,1996
+-1,Non-Traded Sectors,Brazil,Algar Group,new,BRA,1929,True,854000000000.0,male,Media,True,Luiz Alberto Garcia,323,Latin America,relation,media,True,False,inherited,1.2,1996
+52,Non-Traded Sectors,Germany,Quelle Versand,new,DEU,1927,True,2500000000000.0,female,"Retail, Restaurant",True,Madeleine Schickedanz,62,Europe,relation,retail,True,False,inherited,3.8,1996
+82,Financial,Denmark,Maersk Group,new,DNK,1905,True,188000000000.0,male,Diversified financial,True,Maersk McKinney Moller,140,Europe,relation,shipping,True,False,inherited,2.5,1996
+-1,Financial,Philippines,C&P Homes,new,PHL,1975,True,82848194406.0,male,Real Estate,True,Manuel Villar,198,East Asia,founder,real estate,True,False,self-made finance,2.0,1996
+76,Financial,United States,Cargill,new,USA,1865,True,8100000000000.0,female,Diversified financial,True,Margaret Cargill,275,North America,relation,food processing/commodities,True,False,inherited,1.5,1996
+32,Traded Sectors,Mexico,Grupo Modelo,new,MEX,1925,True,397000000000.0,female,Consumer,True,Maria Asuncion Aramburuzabala,284,Latin America,relation,beer,True,False,inherited,1.4,1996
+60,Non-Traded Sectors,United States,Ingram Industries,new,USA,1946,True,8100000000000.0,female,"Retail, Restaurant",True,Martha Ingram,206,North America,relation,transportation,True,False,inherited,2.0,1996
+-1,Financial,Switzerland,BZ Bank,new,CHE,1985,True,330000000000.0,male,Money Management,True,Martin Ebner,269,Europe,founder,banking,True,False,self-made finance,1.5,1996
+-1,Non-Traded Sectors,Liechtenstein,Hilti,new,LIE,1941,True,2504012993.0,male,Constrution,True,Martin Hilti,263,Europe,founder,tools,True,False,founder non-finance,1.5,1996
+70,Resource Related,United States,Davis Petroleum,new,USA,1945,True,8100000000000.0,male,Energy,True,Marvin Davis,168,North America,relation,oil,True,False,inherited,2.2,1996
+46,Traded Sectors,United States,Campbell Soup,aquired,USA,1869,True,8100000000000.0,female,Consumer,True,Mary Alice Dorrance Malone,214,North America,relation,soup,True,False,inherited,1.9,1996
+-1,New Sectors,Japan,Square,subsidiary,JPN,1983,True,4710000000000.0,male,Technology-Computer,True,Masafumi Miyamoto,310,East Asia,founder,video games,True,False,founder non-finance,1.3,1996
+-1,Non-Traded Sectors,Japan,,,JPN,0,True,4710000000000.0,male,Media,True,Masahiro Ohga,176,East Asia,,,True,False,,2.1,1996
+-1,Financial,Japan,Sanyo Shinpan,new,JPN,1946,True,4710000000000.0,male,Money Management,True,Masakazu Shiiki,329,East Asia,founder,finace,True,False,self-made finance,1.2,1996
+-1,Financial,Japan,Kyo-Ya Company,new,JPN,1960,True,4710000000000.0,male,Real Estate,True,Masakuni Osano,233,East Asia,president,real estate,True,False,self-made finance,1.7,1996
+71,Non-Traded Sectors,Japan,Ito-Yokado,new,JPN,1961,True,4710000000000.0,male,"Retail, Restaurant",True,Masatoshi Ito,54,East Asia,founder,retail,True,False,founder non-finance,4.0,1996
+38,Non-Traded Sectors,Japan,Softbank,new,JPN,1981,True,4710000000000.0,male,Media,True,Masayoshi Son,44,East Asia,founder/CEO,technology,True,False,founder non-finance,4.6,1996
+70,Financial,United States,AIG,new,USA,1919,True,8100000000000.0,male,Money Management,True,Maurice Greenberg,293,North America,Chairman and Chief Executive Officer,insurance,True,False,self-made finance,1.4,1996
+-1,New Sectors,Germany,Merck,aquired,DEU,1668,True,2500000000000.0,,Technology-Medical,True,Merck family,34,Europe,,pharmaceuticals,True,False,inherited,5.0,1996
+-1,Non-Traded Sectors,Germany,Metro AG,new,DEU,1923,True,2500000000000.0,male,"Retail, Restaurant",True,Michael and Rainer Schmidt-Ruthenbeck,89,Europe,relation,retail,True,False,inherited,3.1,1996
+53,Non-Traded Sectors,United States,Bloomberg, new,USA,1981,True,8100000000000.0,male,Media,True,Michael Bloomberg,412,North America,founder, finance,True,False,founder non-finance,1.0,1996
+-1,Trucking,Canada,Laidlaw Transport,aquired,CAN,1924,True,627000000000.0,male,services,True,Michael DeGroote,324,North America,owner,trucking,True,False,founder non-finance,1.2,1996
+31,New Sectors,United States,Dell,new,USA,1984,True,8100000000000.0,male,Technology-Computer,True,Michael Dell,374,North America,founder,technology,True,False,founder non-finance,1.1,1996
+55,Financial,Hong Kong,CLP Holdings,new,HKG,1890,True,160000000000.0,male,Money Management,True,Michael Kadoorie,130,East Asia,relation,utilities,True,False,inherited,2.5,1996
+52,Non-Traded Sectors,Germany,Otto Group,new,DEU,1950,True,2500000000000.0,male,"Retail, Restaurant",True,Michael Otto,27,Europe,relation,mail order retail,True,False,inherited,5.2,1996
+-1,Financial,France,Lazard,new,FRA,1848,True,1610000000000.0,male,Money Management,True,Michel David-Weill,276,Europe,relation,banking,True,False,inherited,1.4,1996
+-1,Traded Sectors,United States,Continental Grain Company,new,USA,1813,True,8100000000000.0,male,Consumer,True,Michel Fribourg,184,North America,relation,comodities,True,False,inherited,2.1,1996
+69,Traded Sectors,Italy,Ferrero spa,new,ITA,1946,True,1310000000000.0,male,Consumer,True,Michele Ferrero,154,Europe,relation,chocolates,True,False,executive,2.3,1996
+46,Non-Traded Sectors,United States,Carnival Corporation,new,USA,1972,True,8100000000000.0,male,"Retail, Restaurant",True,Micky Arison,241,North America,relation,cruises,True,False,inherited,1.7,1996
+-1,Financial,Indonesia,Lippo Group,new,IDN,1948,True,227000000000.0,male,Real Estate,True,Mochtar Riady,306,East Asia,founder,banking,True,False,self-made finance,1.3,1996
+-1,Financial,Saudi Arabia,National Comercial bank of Saudi Arabia,new,SAU,1953,True,158000000000.0,male,Money Management,True,Mohamed Salim Bin Mahfouz,36,Middle East/North Africa,relation,banking,True,True,inherited,5.0,1996
+-1,Non-Traded Sectors,Saudi Arabia,Abdul Latif Jameel Co. Ltd,new,SAU,1945,True,158000000000.0,male,"Retail, Restaurant",True,Mohammed Jameel,139,Middle East/North Africa,relation,auto dealerships,True,False,inherited,2.5,1996
+-1,Non-Traded Sectors,United Kingdom,Littlewoods,new,GBR,1932,True,1310000000000.0,,"Retail, Restaurant",True,Moores family,227,Europe,,retail,True,False,inherited,1.8,1996
+65,Financial,Turkey,Koc Holding,new,TUR,1926,True,181000000000.0,male,Money Management,True,Mustafa Rahmi Koc,56,Middle East/North Africa,relation,"energy, retail, manufacturing",True,False,inherited,4.0,1996
+-1,Financial,United Kingdom,?N M Rothschild & Sons,new,GBR,1811,True,1310000000000.0,male,Money Management,True,Nathaniel Rothschild,387,Europe,relation,banking,True,False,inherited,1.0,1996
+50,Resource Related,South Africa,De Beers,new ,ZAF,1888,True,148000000000.0,male,Mining and metals,True,Nicky Oppenheimer,141,Sub-Saharan Africa,relation,diamonds,True,False,inherited,2.5,1996
+-1,Financial,Hong Kong,Chinachem Group,new,HKG,1960,True,160000000000.0,female,Real Estate,True,Nina Wang,80,East Asia,relation,chemicals,True,False,inherited,3.3,1996
+-1,Non-Traded Sectors,Brazil,Odebrecht Group,new,BRA,1944,True,854000000000.0,male,Constrution,True,Norberto Odebrecht,385,Latin America,founder,construction,True,False,founder non-finance,1.0,1996
+-1,New Sectors,Switzerland,F. Hoffmann-La Roche,new,CHE,1896,True,330000000000.0,,Technology-Medical,True,Oeri Hoffman and Sacher,3,Europe,,pharmaceuticals,True,False,inherited,13.1,1996
+-1,Financial,Japan,,,JPN,0,True,4710000000000.0,,Real Estate,True,Otani Family,394,East Asia,,,True,False,,1.0,1996
+72,Non-Traded Sectors,Germany,Metro AG,new,DEU,1963,True,2500000000000.0,male,"Retail, Restaurant",True,Otto Beisheim,61,Europe,founder,groceries,True,False,founder non-finance,3.8,1996
+43,New Sectors,United States,Microsoft,new,USA,1975,True,8100000000000.0,male,Technology-Computer,True,Paul Allen,13,North America,founder,technology,True,False,founder non-finance,7.5,1996
+-1,0,United States,Mellon Bank,new,USA,1869,True,8100000000000.0,male,Other,True,Paul Mellon,344,North America,relation,banking,True,False,inherited,1.2,1996
+-1,Non-Traded Sectors,France,Promodes,new,FRA,1961,True,1610000000000.0,male,"Retail, Restaurant",True,Paul-Louis Halley,243,Europe,relation,retail,True,False,executive,1.6,1996
+-1,Non-Traded Sectors,United States,Levi Strauss & co,new,USA,1853,True,8100000000000.0,male,"Retail, Restaurant",True,Peter Haas Jr,347,North America,relation,jeans,True,False,inherited,1.2,1996
+-1,Non-Traded Sectors,United States,Levi Strauss & co,new,USA,1853,True,8100000000000.0,male,"Retail, Restaurant",True,Peter Haas Sr,93,North America,relation,jeans,True,False,inherited,3.1,1996
+-1,Non-Traded Sectors,Greece,Ceres Hellenic,new,GRC,1949,True,147000000000.0,male,"Retail, Restaurant",True,Peter Livanos,129,Europe,relation,shipping,True,False,inherited,2.5,1996
+55,New Sectors,United States,Boston Scientific,new,USA,1979,True,8100000000000.0,male,Technology-Medical,True,Peter Nicholas,253,North America,founder,medical devices,True,False,founder non-finance,1.6,1996
+50,Financial,Hong Kong,Worldwide Shipping Group,new,HKG,1955,True,160000000000.0,male,Real Estate,True,Peter Woo,191,East Asia,relation,real estate,True,False,inherited,2.0,1996
+-1,Traded Sectors,France,Peugeot,new,FRA,1810,True,1610000000000.0,,Consumer,True,Peugeot family,255,Europe,,cars,True,False,inherited,1.5,1996
+56,Financial,United States,Circle A Drilling,aquired,USA,1961,True,8100000000000.0,male,Money Management,True,Philip Anschutz,167,North America,investor,"oil, railroad, investments",True,False,self-made finance,2.2,1996
+58,Traded Sectors,United States,Nike,new,USA,1964,True,8100000000000.0,male,Consumer,True,Philip Knight,26,North America,founder,apparel,True,False,founder non-finance,5.3,1996
+42,0,Greece,Niarchos Ltd,new,GRC,1952,True,147000000000.0,male,Other,True,Philip Niarchos,71,Europe,relation,shipping,True,False,inherited,3.5,1996
+-1,Non-Traded Sectors,France,Cora,new,FRA,1975,True,1610000000000.0,male,"Retail, Restaurant",True,Philippe Bouriez,171,Europe,founder,retail,True,False,founder non-finance,2.1,1996
+-1,New Sectors,Switzerland,AxialPar,new,CHE,2001,True,330000000000.0,male,Technology-Medical,True,Pierre Landolt,47,Europe,founder,venture capitalist,True,False,founder non-finance,4.5,1996
+-1,Traded Sectors,Thailand,Boon Rawd Brewery,new,THA,1933,True,182000000000.0,male,Consumer,True,Piya Bhirombhakdi,235,East Asia,relation,beer,True,False,inherited,1.7,1996
+-1,0,Germany,Porsche,new,DEU,1931,True,2500000000000.0,,0,True,Porsche family,128,Europe,,cars,True,False,inherited,2.5,1996
+-1,Traded Sectors,Thailand,Thai Petrochemical Industry,new,THA,1978,True,182000000000.0,male,Non-consumer industrial,True,Prachai Leophairatana,272,East Asia,founder,petrochemicals,True,True,inherited,1.5,1996
+-1,Resource Related,Indonesia,Barito Pacific,new,IDN,1977,True,227000000000.0,male,Mining and metals,True,Prajogo Pangestu,163,East Asia,founder,petrochemicals,True,False,privatized and resources,2.2,1996
+69,Traded Sectors,United States,Loews Corporation,new,USA,1946,True,8100000000000.0,male,Consumer,True,Preston Tisch,210,North America,founder,retail,True,False,founder non-finance,2.0,1996
+-1,Traded Sectors,Indonesia,Sampoerna,new,IDN,1913,True,227000000000.0,male,Consumer,True,Putera Sampoerna,108,East Asia,relation,cigarette,True,False,inherited,2.8,1996
+55,Financial,Malaysia,Hong Leong Financial Group,new,MYS,1963,True,101000000000.0,male,Money Management,True,Quek Leng Chan,81,East Asia,founder,financial services,True,False,self-made finance,3.3,1996
+55,Financial,Indonesia,Djarum,new,IDN,1951,True,227000000000.0,male,Money Management,True,R Budi Hartono,247,East Asia,relation,tobacco,True,False,self-made finance,1.6,1996
+52,Non-Traded Sectors,Lebanon,Saudi Oger,aquired,LBN,1978,True,13690217121.0,male,Constrution,True,Rafik Al-Hariri,135,Middle East/North Africa,founder,construction,True,True,privatized and resources,2.5,1996
+57,Traded Sectors,United States,Ralph Lauren,new,USA,1967,True,8100000000000.0,male,Consumer,True,Ralph Lauren,314,North America,founder,clothing,True,False,founder non-finance,1.3,1996
+-1,Non-Traded Sectors,United States,Hearst Corporation,new,USA,1887,True,8100000000000.0,male,Media,True,Randolph Hearst,414,North America,relation,media,True,False,inherited,1.0,1996
+53,Resource Related,United States,Hunt Oil. Co,new,USA,1934,True,8100000000000.0,male,Energy,True,Ray Hunt,208,North America,relation,oil,True,False,inherited,2.0,1996
+-1,Resource Related,United States,Tana Exploration Company,new,USA,1980,True,8100000000000.0,male,Energy,True,Reese Rowling,375,North America,founder,oil,True,False,privatized and resources,1.1,1996
+-1,0,Germany,Benckiser,aquired,DEU,1923,True,2500000000000.0,,0,True,Reimann family,327,Europe,,consumer goods,True,False,inherited,1.2,1996
+74,Non-Traded Sectors,Germany,Bertelsmann,new,DEU,1835,True,2500000000000.0,male,Media,True,Reinhard Mohn,301,Europe,relation,publishing,True,False,inherited,1.3,1996
+60,Traded Sectors,Germany,Adolf Wurth Group,new,DEU,1945,True,2500000000000.0,male,Non-consumer industrial,True,Reinhold Wuerth,303,Europe,relation,screws,True,False,executive,1.3,1996
+-1,Non-Traded Sectors,Japan,Takenaka,new,JPN,1610,True,4710000000000.0,male,Constrution,True,Renichi Takenaka,357,East Asia,relation,construction,True,False,inherited,1.1,1996
+40,Non-Traded Sectors,Mexico,Grupo Salinas/Group Elektra,new,MEX,1906,True,397000000000.0,male,"Retail, Restaurant",True,Ricardo Salinas Pliego,399,Latin America,relation,telecommunications,True,False,inherited,1.0,1996
+45,Non-Traded Sectors,United Kingdom,Virgin Group,new,GBR,1972,True,1310000000000.0,male,Media,True,Richard Branson,289,Europe,founder,media,True,False,founder non-finance,1.4,1996
+70,Traded Sectors,United States,Amway,new,USA,1959,True,8100000000000.0,male,Consumer,True,Richard DeVos,86,North America,founder,consumer goods,True,False,founder non-finance,3.2,1996
+-1,Financial,United States,Goldman Insurance and Risk Management,new,USA,1950,True,8100000000000.0,male,Hedge funds,True,Richard Goldman,334,North America,founder,insurance,True,False,self-made finance,1.2,1996
+51,Financial,United States,ENSCO International,new,USA,1986,True,8100000000000.0,male,Real Estate,True,Richard Rainwater,373,North America,founder,hedge funds,True,False,self-made finance,1.1,1996
+43,Non-Traded Sectors,United States,Bechtel Corporation,new,USA,1898,True,8100000000000.0,male,Constrution,True,Riley Bechtel,252,North America,relation and chairman,construction,True,False,inherited,1.6,1996
+-1,Financial,Japan,Meiko Group,,JPN,1949,True,4710000000000.0,male,Real Estate,True,Rinji Shino,133,East Asia,,real estate,True,False,,2.5,1996
+-1,Financial,Hong Kong,Sino Group,new,HKG,1970,True,160000000000.0,male,Real Estate,True,Robert and Ten Fong Ng,29,East Asia,relation,real estate,True,False,inherited,5.2,1996
+48,Resource Related,United States,Sid Richardson Gasoline Co,new,USA,1919,True,8100000000000.0,male,Energy,True,Robert Bass,160,North America,relation,oil,True,False,inherited,2.3,1996
+68,Traded Sectors,Germany,Robert Bosch GmbH,new,DEU,1886,True,2500000000000.0,male,Consumer,True,Robert Bosch Jr,278,Europe,relation,auto engines,True,False,inherited,1.4,1996
+73,Non-Traded Sectors,United States,Motorola,new,USA,1928,True,8100000000000.0,male,Media,True,Robert Galvin,339,North America,relation,telecommunications,True,False,inherited,1.2,1996
+-1,Non-Traded Sectors,United States,Levi Strauss & co,new,USA,1853,True,8100000000000.0,male,"Retail, Restaurant",True,Robert Haas,367,North America,relation,jeans,True,False,inherited,1.1,1996
+73,Financial,Malaysia,Tana Exploration Company,new,MYS,1980,True,101000000000.0,male,Money Management,True,Robert Kuok,22,East Asia,relation,oil,True,False,self-made finance,5.7,1996
+69,Financial,United States,Hyatt,aquired,USA,1957,True,8100000000000.0,male,Real Estate,True,Robert Pritzker,101,North America,relation,hotels,True,False,inherited,3.0,1996
+21,Financial,United States,Ziff Davis Inc,new,USA,1928,True,8100000000000.0,male,Hedge funds,True,Robert Ziff,418,North America,relation,publishing,True,False,inherited,1.0,1996
+-1,Non-Traded Sectors,Brazil,Andrade Gutierrez,new,BRA,1948,True,854000000000.0,male,Constrution,True,Roberto and Gabriel Andrade,321,Latin America,founder,construction,True,False,founder non-finance,1.2,1996
+49,Financial,Mexico,Maseca,new,MEX,1948,True,397000000000.0,male,Money Management,True,Roberto Gonzalez Barrera,362,Latin America,founder,tortillas,True,True,self-made finance,1.1,1996
+-1,Non-Traded Sectors,Brazil,Globo Organizations,new,BRA,1925,True,854000000000.0,male,Media,True,Roberto Marinho,170,Latin America,relation,media,True,False,inherited,2.1,1996
+-1,Financial,Argentina,Techint,new,ARG,1945,True,272000000000.0,male,Diversified financial,True,Roberto Rocca,185,Latin America,Chairman and Chief Executive Officer,steel,True,False,self-made finance,2.0,1996
+-1,Traded Sectors,Germany,Rochling Group,new,DEU,1822,True,2500000000000.0,,Non-consumer industrial,True,Rochling family,244,Europe,,coal,True,False,inherited,1.6,1996
+41,Financial,Germany,Gerling Konzern,new,DEU,1904,True,2500000000000.0,male,Hedge funds,True,Rolf Gerling,79,Europe,relation,insurance,True,False,inherited,3.3,1996
+59,Traded Sectors,United States,Est?Lauder,new,USA,1946,True,8100000000000.0,male,Consumer,True,Ronald Lauder,182,North America,relation,makeup,True,False,inherited,2.1,1996
+53,Financial,United States,MacAnderws and Forbes Holdings,aquired,USA,1980,True,8100000000000.0,male,Private equity/leveraged buyout,True,Ronald Perelman,59,North America,founder,holding company,True,False,self-made finance,4.0,1996
+-1,Traded Sectors,Germany,Oetker-Gruppe,new,DEU,1891,True,2500000000000.0,male,Consumer,True,Rudolf Oetker,104,Europe,relation,food,True,False,inherited,2.9,1996
+-1,Financial,Hong Kong,Shaw Brothers Studio,new,HKG,1957,True,160000000000.0,male,Real Estate,True,Run Run Shaw,351,East Asia,founder,media,True,False,self-made finance,1.1,1996
+65,Non-Traded Sectors,United States,News Limited,new,USA,1923,True,8100000000000.0,male,Media,True,Rupert Murdoch,85,North America,relation,media,True,False,inherited,3.2,1996
+69,Financial,Japan,Promise Consumer Finance,new,JPN,1962,True,4710000000000.0,male,Money Management,True,Ryoichi Jinnai,177,East Asia,founder,finance,True,False,self-made finance,2.1,1996
+-1,0,Japan,,,JPN,0,True,4710000000000.0,,Other,True,Ryusuke Kimura,358,East Asia,,,True,False,,1.1,1996
+52,Non-Traded Sectors,United States,Walmart, new,USA,1962,True,8100000000000.0,male,"Retail, Restaurant",True,S Robson Walton,42,North America,relation,retail,True,False,inherited,4.7,1996
+63,Traded Sectors,Turkey,Sabanci Holdings,new,TUR,1926,True,181000000000.0,male,Consumer,True,Sakip Sabanci,73,Middle East/North Africa,relation,textiles,True,False,inherited,3.5,1996
+54,Financial,Saudi Arabia,Dallah al Baraka Group,new,SAU,1969,True,158000000000.0,male,Money Management,True,Saleh Kamel,403,Middle East/North Africa,founder,airport maintenance,True,False,self-made finance,1.0,1996
+54,Financial,United States,Equity Group Investments,new,USA,1968,True,8100000000000.0,male,Real Estate,True,Sam Zell,346,North America,founder,real estate,True,False,self-made finance,1.2,1996
+-1,Traded Sectors,Israel,Zodiac Maritime Agencies,new,ISR,1950,True,109000000000.0,male,Consumer,True,Sammy Ofer,393,Middle East/North Africa,relation,shipping,True,False,inherited,1.0,1996
+67,Traded Sectors,United States,S. C. Johnson & Son,new,USA,1886,True,8100000000000.0,male,Consumer,True,Samuel Johnson,125,North America,relation,cleaning supplies,True,False,inherited,2.6,1996
+-1,Financial,United States,LeFrack ,new,USA,1905,True,8100000000000.0,male,Real Estate,True,Samuel LeFrak,315,North America,relation,real estate,True,False,inherited,1.3,1996
+68,Non-Traded Sectors,United States,Advance Publications,new,USA,1909,True,8100000000000.0,male,Media,True,Samuel Newhouse,49,North America,relation,media,True,False,inherited,4.5,1996
+71,0,France,Dassault Group,new,FRA,1914,True,1610000000000.0,male,Other,True,Serge Dassault,277,Europe,relation,aviation,True,False,inherited,1.4,1996
+68,0,Switzerland,Globus,new,CHE,1928,True,330000000000.0,male,Other,True,Sergio Mantegazza,270,Europe,relation,travel company,True,False,inherited,1.5,1996
+-1,New Sectors,France,Schlumberger Well Services,new,FRA,1926,True,1610000000000.0,,Technology-Medical,True,Seydoux/Schlumberger families,53,Europe,,oilfield services,True,False,inherited,4.0,1996
+-1,Financial,Saudi Arabia,Al Rajhi bank,new,SAU,1957,True,158000000000.0,male,Money Management,True,Sheikh Saleh Bin Abdul Aziz Al-rajhi,138,Middle East/North Africa,founder,Banking,True,False,self-made finance,2.5,1996
+-1,Traded Sectors,Taiwan,Chi Mei Corporation,new,Taiwan,1960,True,0.0,male,Non-consumer industrial,True,Shi Wen-long,271,East Asia,founder,plastics,True,False,founder non-finance,1.5,1996
+-1,Traded Sectors,South Korea,,,KOR,0,True,603000000000.0,,Consumer,True,Shin Kyuk-Ho,69,East Asia,,,True,False,,3.6,1996
+-1,Traded Sectors,Japan,Toyota Motors,new,JPN,1937,True,4710000000000.0,male,Consumer,True,Shoichiro Toyoda,395,East Asia,relation,cars,True,False,inherited,1.0,1996
+-1,New Sectors,Japan,Taisho Pharmaceutical,new,JPN,1912,True,4710000000000.0,male,Technology-Medical,True,Shoji Uehara,211,East Asia,relation,pharmaceuticals,True,False,inherited,1.9,1996
+-1,Financial,Israel,Israel Corporation,state owned enterprise,ISR,1968,True,109000000000.0,male,Diversified financial,True,Shoul Eisenberg,392,Middle East/North Africa,founder,fertalizers,True,False,privatized and resources,1.0,1996
+53,Resource Related,United States,Sid Richardson Gasoline Co,new,USA,1919,True,8100000000000.0,male,Energy,True,Sid Bass,213,North America,relation,oil,True,False,inherited,1.9,1996
+59,Non-Traded Sectors,Italy,Fininvest,new,ITA,1978,True,1310000000000.0,male,Media,True,Silvio Berlusconi,35,Europe,founder,media,True,False,privatized and resources,5.0,1996
+-1,Traded Sectors,Germany,,,DEU,0,True,2500000000000.0,,Consumer,True,Simon family,257,Europe,,,True,False,,1.5,1996
+-1,Traded Sectors,Indonesia,Gajah Tunggal,new,IDN,1951,True,227000000000.0,male,Consumer,True,Sjamsul Nursalim,305,East Asia,owner,tires,True,False,,1.3,1996
+50,0,Japan,Benesse Corporation,new,JPN,1955,True,4710000000000.0,male,Other,True,Soichiro Fukutake,311,East Asia,relation,publishing,True,False,inherited,1.3,1996
+74,Financial,Hong Kong,Sociedade de Turismo e Divers?es de Macau,new,HKG,1962,True,160000000000.0,male,Real Estate,True,Stanley Ho,90,East Asia,founder,casinos,True,False,self-made finance,3.1,1996
+62,Non-Traded Sectors,United States,Hubbard Broadcasting Inc,new,USA,1925,True,8100000000000.0,male,Media,True,Stanley Hubbard,229,North America,owner,media,True,False,executive,1.8,1996
+48,Traded Sectors,Sweden, H&M, new,SWE,1947,True,288000000000.0,male,Consumer,True,Stefan Persson,285,Europe,relation, fashion,True,False,inherited,1.4,1996
+34,Financial,Germany,Schorghuber Group,new,DEU,1954,True,2500000000000.0,male,Real Estate,True,Stefan Schoerghuber,172,Europe,relation,real estate,True,False,inherited,2.1,1996
+48,Financial,Switzerland,Holcim,new,CHE,1912,True,330000000000.0,male,Money Management,True,Stephan Schmidheiny,159,Europe,relation,construction,True,False,inherited,2.3,1996
+70,Non-Traded Sectors,United States,Bechtel Corporation,new,USA,1898,True,8100000000000.0,male,Constrution,True,Stephen Bechtel,254,North America,relation,construction,True,False,inherited,1.6,1996
+39,New Sectors,United States,Microsoft,new,USA,1975,True,8100000000000.0,male,Technology-Computer,True,Steven Ballmer,66,North America,CEO,technology,True,False,executive,3.7,1996
+49,Non-Traded Sectors,United States,DreamWorks,new,USA,1994,True,8100000000000.0,male,Media,True,Steven Spielberg,422,North America,founder,movies,True,False,founder non-finance,1.0,1996
+-1,Traded Sectors,Germany,,,DEU,0,True,2500000000000.0,,Consumer,True,Strwher family,389,Europe,,,True,False,,1.0,1996
+-1,Financial,Saudi Arabia,General Contracting Company,new,SAU,1947,True,158000000000.0,male,Diversified financial,True,Suliman Olayan,96,Middle East/North Africa,founder,oil infrastructure,True,False,self-made finance,3.0,1996
+72,Non-Traded Sectors,United States,National Amusements,new,USA,1936,True,8100000000000.0,male,Media,True,Sumner Redstone,77,North America,relation,media,True,False,inherited,3.4,1996
+63,Traded Sectors,United States,Berkshire Hathaway,new,USA,1962,True,8100000000000.0,female,Consumer,True,Susan Thompson Buffett,345,North America,relation, Finance,True,False,inherited,1.2,1996
+49,Traded Sectors,Japan,YKK,new,JPN,1934,True,4710000000000.0,male,Consumer,True,Tadahiro Yoshida,307,East Asia,relation,zippers,True,False,inherited,1.3,1996
+-1,Non-Traded Sectors,Malaysia,Malaysia Airlines,state owned enterprise,MYS,1937,True,101000000000.0,male,Media,True,Tajudin Ramli,281,East Asia,Chairman and Chief Executive Officer,airplanes,True,False,privatized and resources,1.4,1996
+50,New Sectors,Japan,Keyence,new,JPN,1974,True,4710000000000.0,male,Technology-Computer,True,Takemitsu Takizaki,279,East Asia,founder,technology,True,False,founder non-finance,1.4,1996
+-1,Financial,Philippines,Asiaworld Internationale Group,new,PHL,1972,True,82848194406.0,male,Real Estate,True,Tan Yu,16,East Asia,founder,real estate,True,False,self-made finance,7.0,1996
+-1,Non-Traded Sectors,United States,APAC Customer Services,new,USA,1973,True,8100000000000.0,male,Media,True,Ted Schwartz,371,North America,founder,outsourcing,True,False,founder non-finance,1.1,1996
+57,Non-Traded Sectors,United States,CNN,aquired,USA,1970,True,8100000000000.0,male,Media,True,Ted Turner,183,North America,founder,media,True,False,founder non-finance,2.1,1996
+56,Financial,Malaysia,Public Bank,new,MYS,1966,True,101000000000.0,male,Money Management,True,Teh Hong Piow,224,East Asia,founder,banking,True,False,self-made finance,1.8,1996
+-1,Financial,Thailand,Advanced Info Service,new,THA,1986,True,182000000000.0,male,Real Estate,True,Thaksin Shinawatra,180,East Asia,founder,mobile phones,True,True,privatized and resources,2.1,1996
+-1,Non-Traded Sectors,Germany,Aldi Nord,new,DEU,1913,True,2500000000000.0,male,"Retail, Restaurant",True,Theo and Karl Albrecht,9,Europe,Relation,groceries,True,False,inherited,9.0,1996
+-1,Non-Traded Sectors,Israel,Carnival Corporation,new,ISR,1972,True,109000000000.0,female,"Retail, Restaurant",True,Theodore Arison,193,Middle East/North Africa,relation,banking,True,False,inherited,2.0,1996
+33,New Sectors,United States,Gateway,new,USA,1985,True,8100000000000.0,male,Technology-Computer,True,Theodore Waitt,238,North America,founder,computers,True,False,founder non-finance,1.7,1996
+57,New Sectors,United States,Hostpital Corporation of America,new,USA,1968,True,8100000000000.0,male,Technology-Medical,True,Thomas Frist,380,North America,founder/relation,hospitals,True,False,founder non-finance,1.1,1996
+50,Non-Traded Sectors,Switzerland,Holcim,new,CHE,1912,True,330000000000.0,male,Constrution,True,Thomas Schmidheiny,200,Europe,relation,cement,True,False,inherited,2.0,1996
+60,Resource Related,Malaysia,Rimbunan Hijau Group,new,MYS,1976,True,101000000000.0,male,Mining and metals,True,Tiong Hiew King,75,East Asia,founder,timber,True,False,privatized and resources,3.4,1996
+71,Financial,Taiwan,Lin Yuan Group,new,Taiwan,1962,True,0.0,male,Hedge funds,True,Tsai Wan-lin,5,East Asia,founder,banking and insurance,True,False,self-made finance,12.2,1996
+-1,Traded Sectors,France,Verspieren,new,FRA,1880,True,1610000000000.0,,Non-consumer industrial,True,Verspieren family,189,Europe,,insurance,True,False,inherited,2.0,1996
+-1,Traded Sectors,Germany,Siemens,new,DEU,1847,True,2500000000000.0,,Non-consumer industrial,True,Von Siemens family,119,Europe,,industrial automation,True,False,inherited,2.6,1996
+-1,Non-Traded Sectors,United States,Philadelphia Inquirer,aquired,USA,1936,True,8100000000000.0,male,Media,True,Walter Annenberg,65,North America,relation,media,True,False,inherited,3.7,1996
+85,New Sectors,Switzerland,Automation Center,new,CHE,1957,True,330000000000.0,male,Technology-Computer,True,Walter Haefner,25,Europe,founder,computer services,True,False,founder non-finance,5.5,1996
+-1,Financial,Hong Kong,Sun Hung Kai Properties,new,HKG,1963,True,160000000000.0,male,Real Estate,True,Walter Thomas and Raymond Kwok,6,East Asia,Relation,real estate,True,False,inherited,11.2,1996
+79,Traded Sectors,Taiwan,Formosa Plastics,new,Taiwan,1954,True,0.0,male,Consumer,True,Wang Yue-che,72,East Asia,founder,petrochemicals,True,False,founder non-finance,3.5,1996
+65,Traded Sectors,United States,Berkshire Hathaway,new,USA,1962,True,8100000000000.0,male,Consumer,True,Warren Buffett,2,North America,founder, Finance,True,False,founder non-finance,15.0,1996
+67,Financial,Singapore,United Overseas Bank,new,SGP,1935,True,96400967339.0,male,Money Management,True,Wee Cho Yaw,331,East Asia,relation,banking,True,False,inherited,1.2,1996
+-1,Non-Traded Sectors,Germany,Wilh. Werhahn KG,new,DEU,1844,True,2500000000000.0,,Constrution,True,Werhahn family,390,Europe,,building materials,True,False,inherited,1.0,1996
+-1,Non-Traded Sectors,Switzerland,Liebherr,new,CHE,1949,True,330000000000.0,married couple,Constrution,True,Willi and Isolde Liebherr,268,Europe,relation,construction,True,False,inherited,1.5,1996
+73,Traded Sectors,United States,Guardian Industries,new,USA,1932,True,8100000000000.0,male,Non-consumer industrial,True,William Davidson,336,North America,relation,glass,True,False,executive,1.2,1996
+-1,Traded Sectors,United States,Ford Motor Company,new,USA,1903,True,8100000000000.0,male,Consumer,True,William Ford,372,North America,relation,automobiles,True,False,inherited,1.1,1996
+-1,New Sectors,United States,Hewlett-Packard,new,USA,1939,True,8100000000000.0,male,Technology-Computer,True,William Hewlett,106,North America,founder,printers,True,False,founder non-finance,2.9,1996
+32,Traded Sectors,United States,Wm Wrigley Jr. Company,new,USA,1891,True,8100000000000.0,male,Consumer,True,William Wrigley,216,North America,relation,gum,True,False,inherited,1.9,1996
+47,Resource Related,United States,Standard Oil,new,USA,1870,True,8100000000000.0,male,Energy,True,Winthrop Rockefeller,416,North America,relation,oil,True,False,inherited,1.0,1996
+-1,Traded Sectors,Indonesia,Gudang Garam,new,IDN,1958,True,227000000000.0,,Consumer,True,Wonowidjojo family,17,East Asia,,cigarettes,True,False,inherited,6.7,1996
+-1,Traded Sectors,Malaysia,DRB-HICOM Group,state owned enterprise,MYS,1980,True,101000000000.0,male,Consumer,True,Yahaya Ahmad,360,East Asia,Chairman and Chief Executive Officer,cars,True,False,privatized and resources,1.1,1996
+66,Financial,Japan,Takefuji,new,JPN,0,True,4710000000000.0,male,Money Management,True,Yasuo Takei,30,East Asia,founder,finance,True,False,self-made finance,5.2,1996
+-1,Non-Traded Sectors,Japan,Pasona Inc,new,JPN,1976,True,4710000000000.0,male,"Retail, Restaurant",True,Yasuyuki Nambu,134,East Asia,founder,staffing services,True,False,founder non-finance,2.5,1996
+-1,Resource Related,Malaysia,Samling Strategic Corp,new,MYS,1963,True,101000000000.0,male,Mining and metals,True,Yaw Teck-seng,121,East Asia,founder,logging,True,False,privatized and resources,2.6,1996
+-1,0,Malaysia,YTL Corporation,new,MYS,1955,True,101000000000.0,male,0,True,Yeoh Tiong Lay,264,East Asia,founder,"construction, utilities",True,False,founder non-finance,1.5,1996
+61,Financial,Japan,Seibu Corporation,aquired,JPN,1894,True,4710000000000.0,male,Real Estate,True,Yoshiaki Tsutsumi,8,East Asia,relation,real estate,True,False,inherited,9.2,1996
+70,Non-Traded Sectors,United States,Univision,aquired,USA,1955,True,10600000000000.0,male,Media,True,A Jerrold Perenchio,151,North America,former chairman and CEO,media,True,False,executive,3.0,2001
+-1,Traded Sectors,Saudi Arabia,Jeraisy Group,new,SAU,1956,True,183000000000.0,male,Consumer,True,Abdul Al Rahman  Al Jeraisy,336,Middle East/North Africa,founder,industrial goods,True,False,founder non-finance,1.5,2001
+47,Financial,United Arab Emirates,Al-Ghurair Group,new,ARE,1960,True,103000000000.0,male,Money Management,True,Abdul Aziz Al Ghurair,251,Middle East/North Africa,relation,industrial goods,True,False,inherited,1.9,2001
+-1,Financial,Saudi Arabia,Al Rajhi bank,new,SAU,1957,True,183000000000.0,male,Money Management,True,Abdullah Al Rajhi,222,Middle East/North Africa,founder,Banking,True,False,self-made finance,2.1,2001
+39,Financial,United States,Fidelity Investments,new,USA,1946,True,10600000000000.0,female,Money Management,True,Abigail Johnson,30,North America,relation,investment banking,True,False,inherited,9.1,2001
+64,Non-Traded Sectors,Brazil,Companhia Brasileira de Distribui?ao,new,BRA,1948,True,560000000000.0,male,"Retail, Restaurant",True,Abilio dos Santos Diniz,312,Latin America,relation,retail,True,False,inherited,1.6,2001
+74,Traded Sectors,Italy,MaxMara,new,ITA,1951,True,1160000000000.0,male,Consumer,True,Achille Maramotti,222,Europe,founder,fashion,True,False,founder non-finance,2.1,2001
+66,New Sectors,Germany,Ratiopharm,new,DEU,1881,True,1950000000000.0,male,Technology-Medical,True,Adolf Merckle,222,Europe,relation,pharmaceuticals,True,False,inherited,2.1,2001
+70,Financial,United Kingdom,Swire,new,GBR,1816,True,1530000000000.0,male,Diversified financial,True,Adrian Swire,222,Europe,relation,trading company,True,False,inherited,2.1,2001
+-1,New Sectors,Japan,Otsuka Holdings,new,JPN,1921,True,4160000000000.0,male,Technology-Medical,True,Akihiko Otsuka,251,East Asia,relation,pharmaceuticals,True,False,inherited,1.9,2001
+66,Financial,Japan,Mori Building,new,JPN,1959,True,4160000000000.0,male,Real Estate,True,Akira Mori,130,East Asia,relation,construction,True,False,inherited,3.3,2001
+-1,Traded Sectors,France,Chanel,new,FRA,1909,True,1380000000000.0,male,Consumer,True,Alain Wertheimer,70,Europe,relation,luxury goods,True,False,inherited,5.0,2001
+71,Non-Traded Sectors,United States,Cablevision Industries,new,USA,1956,True,10600000000000.0,male,Media,True,Alan Gerry,182,North America,founder,media,True,False,founder non-finance,2.5,2001
+75,Financial,Belgium,Groupe Bruxelles Lambert,aquired,BEL,1956,True,237000000000.0,male,Money Management,True,Albert Frere,490,Europe,founder,steel/banking,True,False,self-made finance,1.0,2001
+83,0,United States,FlightSafety International,new,USA,1951,True,10600000000000.0,male,Other,True,Albert Ueltschi,452,North America,founder,commercial pilot training,True,False,founder non-finance,1.1,2001
+68,Resource Related,Mexico,Penoles,privatization,MEX,1960,True,725000000000.0,male,Mining and metals,True,Alberto Bailleres Gonzalez,251,Latin America,relation,mining,True,False,inherited,1.9,2001
+-1,Financial,United States,Amerindo Investment Advisors,new,USA,1980,True,10600000000000.0,male,Money Management,True,Alberto Vilar,490,North America,founder,investment banking,True,False,self-made finance,1.0,2001
+-1,Traded Sectors,Netherlands,Heineken International,new,NLD,1864,True,426000000000.0,male,Consumer,True,Alfred Heineken,98,Europe,relation,beer,True,False,inherited,4.0,2001
+-1,0,United States,MBNA,subsidiary,USA,1982,True,10600000000000.0,male,Other,True,Alfred Lerner,69,North America,chairman,credit cards,True,False,executive,5.1,2001
+57,Financial,Mexico,Banamex,aquired,MEX,1884,True,725000000000.0,male,Money Management,True,Alfredo Harp Helu,387,Latin America,owner,banking,True,False,self-made finance,1.3,2001
+52,Non-Traded Sectors,United States,Walmart, new,USA,1962,True,10600000000000.0,female,"Retail, Restaurant",True,Alice Walton,10,North America,relation,retail,True,False,inherited,18.5,2001
+48,Non-Traded Sectors,Spain,Construcciones y Contratas,aquired,ESP,1952,True,626000000000.0,female,Constrution,True,Alicia Koplowitz,490,Europe,relation,construction,True,False,inherited,1.0,2001
+80,Financial,Brazil,Banco Real,new,BRA,1925,True,560000000000.0,male,Money Management,True,Aloysio de Andrade Faria,167,Latin America,relation,banking,True,False,inherited,2.8,2001
+-1,Non-Traded Sectors,Argentina,Loma Negra,new,ARG,1926,True,269000000000.0,female,Constrution,True,Amalia Lacroze de Fortabat,490,Latin America,relation,cement,True,False,inherited,1.0,2001
+65,Traded Sectors,Spain,Zara,new,ESP,1975,True,626000000000.0,male,Consumer,True,Amancio Ortega,43,Europe,founder,Fashion,True,False,founder non-finance,6.6,2001
+64,Non-Traded Sectors,United States,Continental Cablevision,new,USA,1964,True,10600000000000.0,male,Media,True,Amos Hosetter Jr,130,North America,founder,media,True,False,founder non-finance,3.3,2001
+62,Non-Traded Sectors,Malaysia,Usaha Tegas Sdn Bhd,new,MYS,1984,True,92783947368.0,male,Media,True,Ananda Krishnan,490,East Asia,founder,real estate,True,False,founder non-finance,1.0,2001
+-1,New Sectors,Switzerland,Kudelski Group,new,CHE,1951,True,279000000000.0,male,Technology-Computer,True,Andre Kudelski,292,Europe,relation,software,True,False,inherited,1.7,2001
+-1,New Sectors,United States,Monster Worldwide,new,USA,1967,True,10600000000000.0,male,Technology-Computer,True,Andrew McKelvey,312,North America,founder,advertising,True,False,founder non-finance,1.6,2001
+74,Resource Related,Chile,Antofagasta,aquired,CHL,1888,True,72300000000.0,male,Mining and metals,True,Andronico Luksic,387,Latin America,founder,copper,True,False,privatized and resources,1.3,2001
+-1,Traded Sectors,United States,Walmart, new,USA,1962,True,10600000000000.0,female,Consumer,True,Ann Kroenke,124,North America,relation,retail,True,False,inherited,3.4,2001
+81,Non-Traded Sectors,United States,Cox Enterprises,aquired,USA,1898,True,10600000000000.0,female,Media,True,Anne Cox Chambers,21,North America,relation,media,True,False,inherited,11.7,2001
+55,Non-Traded Sectors,United Kingdom,JCB,new,GBR,1945,True,1530000000000.0,male,Constrution,True,Anthony Bamford,387,Europe,relation,"heavy equiptment (excavators, backhoes and tractors)",True,False,inherited,1.3,2001
+64,Non-Traded Sectors,Ireland,Independent News & Media,new,IRL,1904,True,109000000000.0,male,Media,True,Anthony O'Reilly,421,Europe,chairman,media,True,False,executive,1.2,2001
+57,Financial,Sweden,Axel Johnson Group,new,SWE,1873,True,240000000000.0,female,Money Management,True,Antonia Johnson,490,Europe,relation,trade investment,True,False,inherited,1.0,2001
+82,Financial,Portugal,Maceira Liz,new,PRT,1923,True,122000000000.0,male,Money Management,True,Antonio Champalimaud,234,Europe,relation,cement,True,False,inherited,2.0,2001
+-1,Traded Sectors,Brazil,Votorantim Group,new,BRA,1919,True,560000000000.0,male,Non-consumer industrial,True,Antonio Ermirio de Moraes,116,Latin America,relation,"metals, paper, cement",True,False,inherited,3.5,2001
+71,Resource Related,United States,Sierra Pacific Industries,new,USA,1949,True,10600000000000.0,male,Mining and metals,True,Archie Aldis Emmerson,421,North America,founder,"lumber, real estate",True,False,privatized and resources,1.2,2001
+58,Non-Traded Sectors,United States,Home Depot,new,USA,1979,True,10600000000000.0,male,"Retail, Restaurant",True,Arthur Blank,251,North America,founder,retail,True,False,founder non-finance,1.9,2001
+74,Financial,United States,Davis & Rock,new,USA,1961,True,10600000000000.0,male,Venture Capital,True,Arthur Rock,452,North America,founder,venture capitalist,True,False,self-made finance,1.1,2001
+58,Financial,United States,A.L. Williams & Associates,new,USA,1977,True,10600000000000.0,male,Hedge funds,True,Arthur Williams Jr,387,North America,founder,life insurance ,True,False,self-made finance,1.3,2001
+54,Financial,United States,Outdoor Systems,new,USA,1947,True,10600000000000.0,male,Real Estate,True,Arturo Moreno,387,North America,CEO,advertising,True,False,self-made finance,1.3,2001
+70,Financial,Germany,"Allianz, Merk Finck & Co",new,DEU,1890,True,1950000000000.0,male,Money Management,True,August von Finck,70,Europe,relation,banking/insurance,True,False,inherited,5.0,2001
+-1,Financial,Turkey,Dogus Holding,new,TUR,1951,True,196000000000.0,male,Money Management,True,Ayhan Sahenk,234,Middle East/North Africa,founder,construction,True,False,self-made finance,2.0,2001
+55,New Sectors,India,Wipro Limited,new,IND,1945,True,494000000000.0,male,Technology-Computer,True,Azim Premji,42,South Asia,relation,software,True,False,inherited,6.9,2001
+59,Financial,United States,Carlson Inc,new,USA,1938,True,10600000000000.0,female,Real Estate,True,Barbara Carlson Gage,363,North America,relation,hospitality,True,False,inherited,1.4,2001
+77,Non-Traded Sectors,United States,Cox Enterprises,aquired,USA,1898,True,10600000000000.0,female,Media,True,Barbara Cox Anthony,21,North America,relation,media,True,False,inherited,11.7,2001
+64,New Sectors,United States,Johnson & Johnson,new,USA,1886,True,10600000000000.0,female,Technology-Medical,True,Barbara Piasecka Johnson,209,North America,relation,medical supplies,True,False,inherited,2.2,2001
+59,New Sectors,United States,IAC ,new,USA,1986,True,10600000000000.0,male,Technology-Computer,True,Barry Diller,490,North America,Chairman and Chief Executive Officer,media,True,False,executive,1.0,2001
+51,New Sectors,Taiwan,Quanta Computer,new,Taiwan,1988,True,0.0,male,Technology-Computer,True,Barry Lam,452,East Asia,founder,laptops,True,False,founder non-finance,1.1,2001
+59,Non-Traded Sectors,Portugal,Sonae SGPS,aquired,PRT,1959,True,122000000000.0,male,"Retail, Restaurant",True,Belmiro de Azevedo,490,Europe,chairman,retail,True,False,executive,1.0,2001
+-1,Financial,Switzerland,Edmond de Rothschild Group,new,CHE,1953,True,279000000000.0,male,Money Management,True,Benjamin de Rothschild,490,Europe,relation,banking,True,False,inherited,1.0,2001
+58,Traded Sectors,United States,Campbell Soup,aquired,USA,1869,True,10600000000000.0,male,Consumer,True,Bennett Dorrance,336,North America,relation,soup,True,False,inherited,1.5,2001
+52,Traded Sectors,France,LVMH,acquired,FRA,1981,True,1380000000000.0,male,Consumer,True,Bernard Arnault,26,Europe,founder,luxury goods,True,False,founder non-finance,10.7,2001
+70,0,United Kingdom,Formula One Group,aquired,GBR,1974,True,1530000000000.0,male,Other,True,Bernard Ecclestone,182,Europe,investor and  CEO,racing,True,False,executive,2.5,2001
+71,Non-Traded Sectors,United States,Home Depot,new,USA,1979,True,10600000000000.0,male,"Retail, Restaurant",True,Bernard Marcus,130,North America,founder,home improvement retail,True,False,founder non-finance,3.3,2001
+59,New Sectors,Canada,Empire Laboratories,new,CAN,1959,True,733000000000.0,male,Technology-Medical,True,Bernard Sherman,209,North America,relation,pharmaceuticals,True,False,inherited,2.2,2001
+45,New Sectors,United States,Microsoft,new,USA,1975,True,10600000000000.0,male,Technology-Computer,True,Bill Gates,1,North America,founder, Software,True,False,founder non-finance,58.7,2001
+73,Financial,United States,Red McCombs Automotive Group,new,USA,1958,True,10600000000000.0,male,Real Estate,True,Billy Joe McCombs,336,North America,founder,"auto sales, energy",True,False,self-made finance,1.5,2001
+59,Non-Traded Sectors,United States,Paychex,new,USA,1971,True,10600000000000.0,male,"Retail, Restaurant",True,Blase Golisano,272,North America,founder,payroll processing,True,False,founder non-finance,1.8,2001
+67,Non-Traded Sectors,United States,Public Storage,new,USA,1972,True,10600000000000.0,male,"Retail, Restaurant",True,Bradley Hughes,387,North America,founder,self-storage,True,False,founder non-finance,1.3,2001
+-1,Non-Traded Sectors,United States,Comcast,new,USA,1969,True,10600000000000.0,male,Media,True,Brian Roberts,421,North America,relation,media,True,False,inherited,1.2,2001
+55,Financial,United States,Caxton Associates,new,USA,1983,True,10600000000000.0,male,Hedge funds,True,Bruce Kovner,490,North America,founder,commodities trading,True,False,self-made finance,1.0,2001
+-1,Non-Traded Sectors,United States,McCaw Cellular,new,USA,1987,True,10600000000000.0,male,Media,True,Bruce McCaw,452,North America,founder,cell phones,True,False,founder non-finance,1.1,2001
+68,Financial,United Kingdom,Schroders,new,GBR,1800,True,1530000000000.0,male,Money Management,True,Bruno Schroder,174,Europe,relation,banking,True,False,inherited,2.7,2001
+-1,Traded Sectors,Italy,Parmalat,new,ITA,1961,True,1160000000000.0,male,Consumer,True,Calisto Tanzi,387,Europe,founder,dairy,True,False,founder non-finance,1.3,2001
+63,Financial,United States,Berg and Berg,aquired,USA,1965,True,10600000000000.0,male,Real Estate,True,Carl Berg,336,North America,owner,real estate,True,False,self-made finance,1.5,2001
+65,Financial,United States,Icahn Enterprises,new,USA,1968,True,10600000000000.0,male,Private equity/leveraged buyout,True,Carl Icahn,109,North America,founder,investment (via holding company),True,False,self-made finance,3.7,2001
+85,Financial,United States,Marquette Bank,aquired,USA,1920,True,10600000000000.0,male,Money Management,True,Carl Pohlad,272,North America,owner,banking,True,False,self-made finance,1.8,2001
+-1,Non-Traded Sectors,Italy,CIR Group,aquired,ITA,1976,True,1160000000000.0,male,Media,True,Carlo De Benedetti,387,Europe,relation,media,True,False,inherited,1.3,2001
+49,Non-Traded Sectors,Mexico,Groupo IUSA,new,MEX,1939,True,725000000000.0,male,Media,True,Carlos Peralta,336,Latin America,relation,construction,True,False,inherited,1.5,2001
+61,Non-Traded Sectors,Mexico,Telmex,privatization,MEX,1990,True,725000000000.0,male,Media,True,Carlos Slim Helu,25,Latin America,founder, Communications,True,False,privatized and resources,10.8,2001
+69,Traded Sectors,Canada,Seagrams,new,CAN,1857,True,733000000000.0,male,Consumer,True,Charles Bronfman,124,North America,relation,liquor,True,False,inherited,3.4,2001
+62,Non-Traded Sectors,United States,H-E-B supermarket,new,USA,1905,True,10600000000000.0,male,"Retail, Restaurant",True,Charles Butt,272,North America,relation,groceries,True,False,inherited,1.8,2001
+74,Non-Traded Sectors,United States,Cablevision and HBO,new,USA,1972,True,10600000000000.0,male,Media,True,Charles Dolan,167,North America,founder,media,True,False,founder non-finance,2.8,2001
+48,Non-Traded Sectors,United States,dish networtk,new,USA,1980,True,10600000000000.0,male,Media,True,Charles Ergen,35,North America,founder,media,True,False,founder non-finance,8.8,2001
+68,Financial,United States,Franklin Resources,new,USA,1947,True,10600000000000.0,male,Money Management,True,Charles Johnson,222,North America,relation,mutal funds,True,False,inherited,2.1,2001
+65,Resource Related,United States,Koch industries,new,USA,1940,True,10600000000000.0,male,Energy,True,Charles Koch,138,North America,relation,  Oil refining,True,False,inherited,3.2,2001
+76,Traded Sectors,United States,Berkshire Hathaway,new,USA,1962,True,10600000000000.0,male,Consumer,True,Charles Munger,387,North America,vice-chairman, Finance,True,False,executive,1.3,2001
+63,Financial,United States,Charles Schwab Corporation,new,USA,1971,True,10600000000000.0,male,Money Management,True,Charles Schwab,47,North America,founder,brokerage/banking,True,False,self-made finance,6.3,2001
+53,New Sectors,United States,Microsoft,new,USA,1975,True,10600000000000.0,male,Technology-Computer,True,Charles Simonyi,490,North America,head of Microsoft's application software group,software,True,False,executive,1.0,2001
+50,Traded Sectors,United States,Campbell Soup,aquired,USA,1869,True,10600000000000.0,female,Consumer,True,Charlotte Colket Weber,452,North America,relation,soup,True,False,inherited,1.1,2001
+78,Financial,Hong Kong,Nan Fung Textiles,new,HKG,1954,True,169000000000.0,male,Real Estate,True,Chen Din Hwa,312,East Asia,founder,cotton yarn,True,False,self-made finance,1.6,2001
+75,Financial,Hong Kong,Chow Tai Fook Enterprises,new,HKG,1929,True,169000000000.0,male,Real Estate,True,Cheng Yu-tung,174,East Asia,relation,real estate,True,False,inherited,2.7,2001
+40,Traded Sectors,South Korea,SK Corporation,new,KOR,1958,True,533000000000.0,male,Consumer,True,Chey Tae-Won,490,East Asia,chariman,"petrochemicals, textiles",True,False,inherited,1.0,2001
+-1,Traded Sectors,Switzerland,EMS-Chemie,new,CHE,1936,True,279000000000.0,male,Non-consumer industrial,True,Christoph Blocher,336,Europe,Chairman and Chief Executive Officer,chemicals,True,False,executive,1.5,2001
+58,Traded Sectors,United States,Pace Foods,new,USA,1947,True,10600000000000.0,male,Consumer,True,Christopher Goldsbury,452,North America,relation,salsa,True,False,inherited,1.1,2001
+60,Traded Sectors,United States,Iams,new,USA,1946,True,10600000000000.0,male,Consumer,True,Clayton Mathile,292,North America,former CEO,pet food,True,False,executive,1.7,2001
+68,Financial,United States,Bank of North Carolina,new,USA,1991,True,10600000000000.0,male,Money Management,True,Clemmie Spangler Jr,292,North America,relation,banking,True,False,inherited,1.7,2001
+51,Non-Traded Sectors,United States,McCaw Cellular,new,USA,1987,True,10600000000000.0,male,Media,True,Craig McCaw,116,North America,founder,cell phones,True,False,founder non-finance,3.5,2001
+74,New Sectors,Germany,BASF/Boehringer Mannheim/DePuy,new,DEU,1865,True,1950000000000.0,male,Technology-Medical,True,Curt Engelhorn,60,Europe,relation,pharmaceuticals,True,False,inherited,5.4,2001
+-1,Traded Sectors,United States,Slim-Fast,new,USA,1940,True,10600000000000.0,male,Consumer,True,Daniel Abraham,272,North America,founder,beverages,True,False,founder non-finance,1.8,2001
+29,Financial,United States,Ziff Davis Inc,new,USA,1927,True,10600000000000.0,male,Hedge funds,True,Daniel Ziff,421,North America,relation,publishing,True,False,inherited,1.2,2001
+-1,Non-Traded Sectors,Thailand,ADIDAS,new,THA,1924,True,116000000000.0,male,Media,True,David Bromilow,421,East Asia,investor ,clothing ,True,False,executive,1.2,2001
+60,New Sectors,United States,PeopleSoft,new,USA,1987,True,10600000000000.0,male,Technology-Computer,True,David Duffield,209,North America,founder,software,True,False,founder non-finance,2.2,2001
+34,New Sectors,United States,Yahoo!,new,USA,1994,True,10600000000000.0,male,Technology-Computer,True,David Filo,490,North America,founder,software,True,False,founder non-finance,1.0,2001
+58,Non-Traded Sectors,United States,Asylum Records/Geffen Records/Dreamworks,new,USA,1970,True,10600000000000.0,male,Media,True,David Geffen,124,North America,founder,entertainment,True,False,founder non-finance,3.4,2001
+60,Resource Related,United States,Koch industries,new,USA,1940,True,10600000000000.0,male,Energy,True,David Koch,138,North America,relation, Oil refining,True,False,inherited,3.2,2001
+77,Traded Sectors,United States,Dole Food Company,aquired,USA,1851,True,10600000000000.0,male,Consumer,True,David Murdock,452,North America,Chairman and Chief Executive Officer,food,True,False,executive,1.1,2001
+85,Resource Related,United States,Standard Oil,new,USA,1870,True,10600000000000.0,male,Energy,True,David Rockefeller,182,North America,relation,oil,True,False,inherited,2.5,2001
+77,Financial,United States,Whiteco Industries,new,USA,1935,True,10600000000000.0,male,Real Estate,True,Dean White,490,North America,relation,advertising,True,False,inherited,1.0,2001
+75,Non-Traded Sectors,Japan,McDonald's Japan,franchise,JPN,1971,True,4160000000000.0,male,"Retail, Restaurant",True,Den Fujita,179,East Asia,founder,restaurants,True,False,founder non-finance,2.6,2001
+-1,Resource Related,United States,AES Corporation,new,USA,1981,True,10600000000000.0,male,Other,True,Dennis Bakke,312,North America,founder,energy,True,False,founder non-finance,1.6,2001
+66,Non-Traded Sectors,United States,Washington Companies,new,USA,1964,True,10600000000000.0,male,Constrution,True,Dennis Washington,312,North America,founder,construction,True,False,founder non-finance,1.6,2001
+-1,Traded Sectors,India,Reliance,new,IND,1966,True,494000000000.0,male,Consumer,True,Dhirubhai Ambani,124,South Asia,founder,textiles,True,False,founder non-finance,3.4,2001
+56,Resource Related,France,Schlumberger,new,FRA,1920,True,1380000000000.0,male,Energy,True,Didier Primat,312,Europe,relation,oil field services,True,False,inherited,1.6,2001
+59,Non-Traded Sectors,Germany,Holtzbrinck,new,DEU,1948,True,1950000000000.0,male,Media,True,Dieter von Holtzbrinck,79,Europe,relation,media,True,False,inherited,4.6,2001
+60,New Sectors,Germany,SAP AG,new,DEU,1972,True,1950000000000.0,male,Technology-Computer,True,Dietmar Hopp,162,Europe,founder,software,True,False,founder non-finance,2.9,2001
+36,Financial,United States,Ziff Davis Inc,new,USA,1928,True,10600000000000.0,male,Hedge funds,True,Dirk Ziff,421,North America,relation,publishing,True,False,inherited,1.2,2001
+68,Financial,United States,Irvine Company,aquired,USA,1864,True,10600000000000.0,male,Real Estate,True,Donald Bren,98,North America,owner,real estate,True,False,self-made finance,4.0,2001
+72,Non-Traded Sectors,United States,The Gap,new,USA,1969,True,10600000000000.0,male,"Retail, Restaurant",True,Donald Fisher,138,North America,founder,clothing ,True,False,founder non-finance,3.2,2001
+72,Non-Traded Sectors,United States,Hallmark Cards,new,USA,1910,True,10600000000000.0,male,"Retail, Restaurant",True,Donald Hall,272,North America,relation,greeting cards,True,False,inherited,1.8,2001
+71,Non-Traded Sectors,United States,Advance Publications,new,USA,1909,True,10600000000000.0,male,Media,True,Donald Newhouse,70,North America,relation,media,True,False,inherited,5.0,2001
+65,0,United States,Schneider National,new,USA,1935,True,10600000000000.0,male,Other,True,Donald Schneider,490,North America,relation,trucking,True,False,inherited,1.0,2001
+-1,Financial,United States,Peter Kiewit Sons,new,USA,1884,True,10600000000000.0,male,Money Management,True,Donald Sturm,387,North America,owner,investments,True,False,self-made finance,1.3,2001
+55,Financial,United States,The Trump Organization,new,USA,1920,True,10600000000000.0,male,Real Estate,True,Donald Trump,292,North America,relation,real estate,True,False,inherited,1.7,2001
+70,Traded Sectors,United States,The Gap,new,USA,1969,True,10600000000000.0,female,Consumer,True,Doris Fisher,138,North America,founder,clothing ,True,False,founder non-finance,3.2,2001
+-1,Traded Sectors,United States,Campbell Soup,aquired,USA,1869,True,10600000000000.0,female,Consumer,True,Dorrance Hill Hamilton,490,North America,relation,soup,True,False,inherited,1.0,2001
+72,Traded Sectors,United States,Seagrams,new,USA,1857,True,10600000000000.0,male,Consumer,True,Edgar Bronfman,130,North America,relation,liquor,True,False,inherited,3.3,2001
+-1,Resource Related,United States,Utah Contstruction Company,new,USA,1900,True,10600000000000.0,male,Mining and metals,True,Edmund Wattis Littlefield,222,North America,relation,construction,True,False,inherited,2.1,2001
+56,Resource Related,United States,Sid Richardson Gasoline Co,new,USA,1919,True,10600000000000.0,male,Energy,True,Edward Bass,421,North America,relation,oil,True,False,inherited,1.2,2001
+-1,Non-Traded Sectors,United States,Gaylord Entertainment Company,new,USA,1975,True,10600000000000.0,male,Media,True,Edward Gaylord,234,North America,founder,media,True,False,founder non-finance,2.0,2001
+70,Financial,United States,Fidelity Investments,new,USA,1946,True,10600000000000.0,male,Money Management,True,Edward Johnson,79,North America,relation,investment banking,True,False,inherited,4.6,2001
+67,Non-Traded Sectors,Canada,Rogers Communications,new,CAN,1962,True,733000000000.0,male,Media,True,Edward Rogers,452,North America,founder,media,True,False,founder non-finance,1.1,2001
+58,Financial,Japan,,,JPN,0,True,4160000000000.0,male,Real Estate,True,Eitaro Itoyama,130,East Asia,,golf courses,True,False,self-made finance,3.3,2001
+67,Financial,United States,"Kaufman and Broad, SunAmerica",new/aquired,USA,1957,True,10600000000000.0,male,Money Management,True,Eli Broad,53,North America,founder,construction/insurance,True,False,self-made finance,5.8,2001
+55,Traded Sectors,Chile,CMPC,new,CHL,1920,True,72300000000.0,male,Consumer,True,Eliodoro Matte,387,Latin America,relation,timber and paper,True,False,inherited,1.3,2001
+33,Non-Traded Sectors,Mexico,Grupo Televisa,new,MEX,1955,True,725000000000.0,male,Media,True,Emilio Azcarraga Jean,151,Latin America,relation,media,True,False,inherited,3.0,2001
+66,Financial,Spain,Grupo Santander,new,ESP,1857,True,626000000000.0,male,Money Management,True,Emilio Botin,363,Europe,relation,banking,True,False,inherited,1.4,2001
+60,Financial,Italy,Mediolanum SpA,new,ITA,1982,True,1160000000000.0,male,Hedge funds,True,Ennio Doris,146,Europe,founder,asset management,True,False,self-made finance,3.1,2001
+-1,Traded Sectors,Spain,Chupa Chups,aquired,ESP,1958,True,626000000000.0,male,Consumer,True,Enric Bernat,336,Europe,founder,confectionary,True,False,founder non-finance,1.5,2001
+68,Non-Traded Sectors,Germany,Tenglemann Group,new,DEU,1867,True,1950000000000.0,male,"Retail, Restaurant",True,Erivan Haub,98,Europe,relation,retail,True,False,inherited,4.0,2001
+84,New Sectors,Bermuda,AIG,new,BMU,1919,True,3680000000.0,male,Technology-Medical,True,Ernest Stempel,222,0,chairman,insurance,True,False,executive,2.1,2001
+-1,Non-Traded Sectors,Argentina,Grupo Clarin,new,ARG,1945,True,269000000000.0,female,Media,True,Ernestina Herrera de Noble,490,Latin America,relation,media,True,False,inherited,1.0,2001
+35,New Sectors,Switzerland,Serono,new,CHE,1906,True,279000000000.0,male,Technology-Medical,True,Ernesto Bertarelli,27,Europe,relation,pharmaceuticals,True,False,inherited,10.5,2001
+50,Non-Traded Sectors,Spain,Construcciones y Contratas,aquired,ESP,1952,True,626000000000.0,female,Constrution,True,Esther Koplowitz,490,Europe,relation,construction,True,False,inherited,1.0,2001
+-1,0,Canada,Biovail Corporation,new,CAN,1989,True,733000000000.0,male,Other,True,Eugene Melnyk,292,North America,founder,pharmaceuticals,True,False,founder non-finance,1.7,2001
+-1,0,Mexico,Femsa,new,MEX,1890,True,725000000000.0,male,0,True,Eugenio Garza Lagnera,182,Latin America,relation,beverages,True,False,inherited,2.5,2001
+72,Financial,United States,Fayez Sarofim & Co,new,USA,1958,True,10600000000000.0,male,Money Management,True,Fayez Sarofim,234,North America,relation,money management,True,False,self-made finance,2.0,2001
+69,Traded Sectors,United States,"Mars, Incorperated",new,USA,1911,True,10600000000000.0,male,Consumer,True,Forrest Mars Jr,31,North America,relation,candy,True,False,inherited,9.0,2001
+54,Non-Traded Sectors,Italy,Caltagirone Holdings,aquired,ITA,1947,True,1160000000000.0,male,Constrution,True,Francesco Gaetano Caltagirone,452,Europe,owner,cement,True,False,executive,1.1,2001
+-1,Financial,Italy,e.Biscom-Fastweb,new,ITA,1999,True,1160000000000.0,male,Money Management,True,Francesco Micheli,387,Europe,chairman,new technology,True,False,self-made finance,1.3,2001
+64,Non-Traded Sectors,France,"Pinault-Printemps-Redoute (PPR), now known as Kering",new,FRA,1963,True,1380000000000.0,male,"Retail, Restaurant",True,Francois Pinault,47,Europe,founder,apparel,True,False,founder non-finance,6.3,2001
+74,Non-Traded Sectors,United States,The Weather Channel,new,USA,1982,True,10600000000000.0,male,Media,True,Frank Batten,336,North America,founder,media,True,False,founder non-finance,1.5,2001
+-1,New Sectors,United States,Finisar,new,USA,1988,True,10600000000000.0,male,Technology-Computer,True,Frank Levinson,490,North America,founder,data storage,True,False,founder non-finance,1.0,2001
+70,Financial,Australia,Westfield Group,new,AUS,1960,True,379000000000.0,male,Real Estate,True,Frank Lowy,209,North America,founder,shopping centers,True,False,self-made finance,2.2,2001
+78,Financial,United States,Berkshire Hathaway,new,USA,1962,True,10600000000000.0,male,Money Management,True,Franklin Booth,363,North America,investor , Finance,True,False,self-made finance,1.4,2001
+48,Non-Traded Sectors,United States,Marshall Field and Company,new,USA,1865,True,10600000000000.0,male,"Retail, Restaurant",True,Frederick Field,421,North America,relation,retail,True,False,inherited,1.2,2001
+74,Financial,Germany,Friedrich Flick Industrial Holding,new,DEU,1919,True,1950000000000.0,male,Money Management,True,Friedrich Flick,64,Europe,relation,coal,True,False,inherited,5.3,2001
+76,Financial,Japan,Iwasaki Sangyo Group,new,JPN,1923,True,4160000000000.0,male,Real Estate,True,Fukuzo Iwasaki,95,East Asia,relation,real estate,True,False,inherited,4.2,2001
+66,Non-Traded Sectors,Spain,Melia Hotels International,new,ESP,1956,True,626000000000.0,male,"Retail, Restaurant",True,Gabriel Escarrer,490,Europe,founder,hotels,True,False,founder non-finance,1.0,2001
+60,Non-Traded Sectors,Canada,George Weston Limited,new,CAN,1882,True,733000000000.0,male,"Retail, Restaurant",True,Galen Weston,98,North America,relation,food distribution,True,False,inherited,4.0,2001
+47,Non-Traded Sectors,United States,TCI,new,USA,1968,True,10600000000000.0,male,Media,True,Gary Magness,312,North America,relation,cable,True,False,inherited,1.6,2001
+-1,Financial,United States,Global Crossing limited,new,USA,1997,True,10600000000000.0,male,Money Management,True,Gary Winnick,234,North America,founder,fiber optic cables,True,False,self-made finance,2.0,2001
+-1,Traded Sectors,Switzerland,TBG (Thyssen-Bornemisza Group) Holdings,new,CHE,1926,True,279000000000.0,male,Non-consumer industrial,True,Georg Thyssen-Bornemisza,234,Europe,relation,steel,True,False,inherited,2.0,2001
+58,Resource Related,United States,Kaiser-Francis Oil Company,new,USA,1940,True,10600000000000.0,male,Energy,True,George Kaiser,198,North America,relation,oil,True,False,inherited,2.3,2001
+64,Financial,United States,"Vision Cable, Metro Mobile, Southern Union",new,USA,1972,True,10600000000000.0,male,Money Management,True,George Lindemann,363,North America,Chairman and Chief Executive Officer,"media, pipelines",True,False,self-made finance,1.4,2001
+56,Non-Traded Sectors,United States,Lucasfilm,new,USA,1971,True,10600000000000.0,male,Media,True,George Lucas,151,North America,founder,Star Wars,True,False,founder non-finance,3.0,2001
+81,Resource Related,United States,Mitchell Energy and Development Co,new,USA,1946,True,10600000000000.0,male,Energy,True,George Mitchell,312,North America,founder,shale,True,False,privatized and resources,1.6,2001
+56,Financial,United States,Kohlberg Kravis Roberts,new,USA,1969,True,10600000000000.0,male,Private equity/leveraged buyout,True,George Roberts,336,North America,founder,leveraged buyouts,True,False,self-made finance,1.5,2001
+70,Financial,United States,Soros Fund Management,new,USA,1969,True,10600000000000.0,male,Hedge funds,True,George Soros,50,North America,founder,hedge funds,True,False,self-made finance,6.0,2001
+-1,Financial,Singapore,Overseas Chinese Union Bank,new,SGP,1949,True,89285087395.0,male,Money Management,True,George Ying Chow Lien,490,East Asia,founder,banking,True,False,self-made finance,1.0,2001
+-1,Financial,United Kingdom,Cadogan Estates,new,GBR,1712,True,1530000000000.0,male,Real Estate,True,Gerald Cadogan,490,Europe,relation,real estate,True,False,inherited,1.0,2001
+49,Financial,United Kingdom,Grosvenor Group,new,GBR,1677,True,1530000000000.0,male,Real Estate,True,Gerald Cavendish Grosvenor,45,Europe,relation,real estate,True,False,inherited,6.5,2001
+68,Financial,France,Louis Dreyfus Group,new,FRA,1851,True,1380000000000.0,male,Money Management,True,Gerard Louis-Dreyfus,124,Europe,relation,energy,True,False,inherited,3.4,2001
+-1,Non-Traded Sectors,Canada,EXFO,new,CAN,1985,True,733000000000.0,male,Media,True,Germain Lamonde,387,North America,founder,service assurance instruments,True,False,founder non-finance,1.3,2001
+47,Resource Related,Mexico,Grupo Mexio,new,MEX,1978,True,725000000000.0,male,Mining and metals,True,German Larrea Mota Velasco,490,Latin America,founder,copper,True,False,privatized and resources,1.0,2001
+-1,Traded Sectors,Italy,Fiat,new,ITA,1899,True,1160000000000.0,male,Consumer,True,Gianni Agnelli,146,Europe,relation,cars,True,False,inherited,3.1,2001
+33,New Sectors,Israel,Check Point,new,ISR,1993,True,130000000000.0,male,Technology-Computer,True,Gil Shwed,312,Middle East/North Africa,founder,software,True,False,founder non-finance,1.6,2001
+66,Traded Sectors,Italy,Armani,new,ITA,1975,True,1160000000000.0,male,Consumer,True,Giorgio Armani,292,Europe,founder,luxury goods,True,False,founder non-finance,1.7,2001
+59,Non-Traded Sectors,United States,Taylor Corporation,aquired,USA,1975,True,10600000000000.0,male,Media,True,Glen Taylor,251,North America,founder,printing and electronics,True,False,founder non-finance,1.9,2001
+-1,Financial,Germany,von Thurn and Taxis family,new,DEU,1615,True,1950000000000.0,female,Money Management,True,Gloria von Thurn und Taxis,363,Europe,relation,"postal service, beverages",True,False,inherited,1.4,2001
+60,Resource Related,United States,Getty ,new,USA,1904,True,10600000000000.0,male,Energy,True,Gordon Getty,198,North America,relation,oil,True,False,inherited,2.3,2001
+72,New Sectors,United States,Intel ,new,USA,1968,True,10600000000000.0,male,Technology-Computer,True,Gordon Moore,60,North America,founder,technology,True,False,founder non-finance,5.4,2001
+66,Traded Sectors,Argentina,Petrolera Perez Companc,new,ARG,1968,True,269000000000.0,male,Consumer,True,Gregorio Perez Companc,292,Latin America,relation,oil,True,False,inherited,1.7,2001
+60,Traded Sectors,Germany,Maxingvest AG,new,DEU,1949,True,1950000000000.0,male,Consumer,True,Gunter Herz,76,Europe,relation,coffee,True,False,inherited,4.8,2001
+55,Non-Traded Sectors,Venezuela,Cisneros Group,new,VEN,1929,True,123000000000.0,male,Media,True,Gustavo Cisneros,64,Latin America,relation,media,True,False,inherited,5.3,2001
+63,Financial,United States,Waste Management,new,USA,1968,True,10600000000000.0,male,0,True,H Wayne Huizenga,209,North America,founder,waste management,True,False,self-made finance,2.2,2001
+56,Non-Traded Sectors,United States,Saban Entertainment,new,USA,1988,True,10600000000000.0,male,Media,True,Haim Saban,387,North America,founder,media,True,False,founder non-finance,1.3,2001
+74,Traded Sectors,Sweden,Tetra Pak,new,SWE,1951,True,240000000000.0,male,Consumer,True,Hans Rausing,40,Europe,relation,food packaging,True,False,inherited,7.7,2001
+61,New Sectors,Germany,SAP AG,new,DEU,1972,True,1950000000000.0,male,Technology-Computer,True,Hans-Werner Hector,387,Europe,founder,software,True,False,founder non-finance,1.3,2001
+-1,Non-Traded Sectors,United States,Lenfest Communications,new,USA,1974,True,10600000000000.0,male,Media,True,Harold Lenfest,421,North America,founder,media,True,False,founder non-finance,1.2,2001
+69,Financial,United States,,,USA,1974,True,10600000000000.0,male,Money Management,True,Harold Simmons,336,North America,investor ,leveraged buyouts,True,False,self-made finance,1.5,2001
+73,Traded Sectors,Canada,McCain Foods Limited,new,CAN,1956,True,733000000000.0,male,Consumer,True,Harrison McCain,452,North America,founder,food,True,False,founder non-finance,1.1,2001
+57,New Sectors,Germany,SAP AG,new,DEU,1972,True,1950000000000.0,male,Technology-Computer,True,Hasso Plattner,60,Europe,founder,software,True,False,founder non-finance,5.4,2001
+81,Traded Sectors,United States,Walmart, new,USA,1962,True,10600000000000.0,female,Consumer,True,Helen Walton,10,North America,relation,retail,True,False,inherited,18.5,2001
+77,Financial,Hong Kong,Sociedade de Turismo e Divers?es de Macau,new,HKG,1962,True,169000000000.0,male,Real Estate,True,Henry Fok,452,East Asia,investor,casinos,True,False,self-made finance,1.1,2001
+82,Financial,United States,Pittsburgh Coke & Chemical,new,USA,1942,True,10600000000000.0,male,Money Management,True,Henry Hillman,151,North America,relation,coal,True,False,inherited,3.0,2001
+57,Financial,United States,Kohlberg Kravis Roberts,new,USA,1976,True,10600000000000.0,male,Private equity/leveraged buyout,True,Henry Kravis,336,North America,founder,leveraged buyouts,True,False,self-made finance,1.5,2001
+39,New Sectors,United States,Broadcom Corporation,new,USA,1991,True,10600000000000.0,male,Technology-Computer,True,Henry Nicholas,194,North America,founder,semiconductors,True,False,founder non-finance,2.4,2001
+-1,New Sectors,United States,Electronic Data Systems,new,USA,1962,True,10600000000000.0,male,Technology-Computer,True,Henry Ross Perot Sr,104,North America,founder,data processing,True,False,founder non-finance,3.8,2001
+46,New Sectors,United States,Broadcom Corporation,new,USA,1991,True,10600000000000.0,male,Technology-Computer,True,Henry Samueli,198,North America,founder,semiconductors,True,False,founder non-finance,2.3,2001
+76,Non-Traded Sectors,Philippines,SM Malls,new,PHL,1960,True,76261998621.0,male,"Retail, Restaurant",True,Henry Sy,387,East Asia,founder,retail,True,False,founder non-finance,1.3,2001
+-1,Non-Traded Sectors,United States,Gemstar-TV Guide International,new,USA,1986,True,10600000000000.0,male,Media,True,Henry Yuen,336,North America,founder,media,True,False,founder non-finance,1.5,2001
+61,Financial,United States,Allen & Company,new,USA,1922,True,10600000000000.0,male,Money Management,True,Herbert Allen,272,North America,relation,investment banking,True,False,inherited,1.8,2001
+73,Non-Traded Sectors,United States,BHC Communications,new,USA,1977,True,10600000000000.0,male,Media,True,Herbert Siegel,421,North America,Chairman and Chief Executive Officer,television,True,False,executive,1.2,2001
+73,New Sectors,Japan,Nintendo,new,JPN,1889,True,4160000000000.0,male,Technology-Computer,True,Hiroshi Yamauchi,162,East Asia,relation,video games,True,False,inherited,2.9,2001
+55,Traded Sectors,United States,Campbell Soup,aquired,USA,1869,True,10600000000000.0,female,Consumer,True,Hope Hill Van Beuren,490,North America,relation,soup,True,False,inherited,1.0,2001
+61,Non-Traded Sectors,Germany,Hubert Burda Media,new,DEU,1898,True,1950000000000.0,male,Media,True,Hubert Burda,234,Europe,relation,media,True,False,inherited,2.0,2001
+87,Non-Traded Sectors,Germany,Mann Mobilia,new,DEU,1938,True,1950000000000.0,male,"Retail, Restaurant",True,Hugo Mann,234,Europe,founder,furniture,True,False,founder non-finance,2.0,2001
+-1,New Sectors,Japan,Kyorin Pharmaceutical,new,JPN,1923,True,4160000000000.0,male,Technology-Medical,True,Ikuo Ogihara,452,East Asia,president,pharmaceuticals,True,False,,1.1,2001
+74,Non-Traded Sectors,Sweden,IKEA,new,SWE,1943,True,240000000000.0,male,"Retail, Restaurant",True,Ingvar Kamprad,17,Europe,founder,furniture,True,False,founder non-finance,13.0,2001
+67,New Sectors,United States,Qualcomm,new,USA,1985,True,10600000000000.0,male,Technology-Computer,True,Irwin Jacobs,272,North America,founder,software,True,False,founder non-finance,1.8,2001
+77,Financial,Mexico,Groupo Casa Saba,aquired,MEX,1892,True,725000000000.0,male,Diversified financial,True,Isaac Saba Raffoul,387,Latin America,founder,pharmaceuticals,True,False,self-made finance,1.3,2001
+59,Financial,United States,TD Ameritrade,new,USA,1975,True,10600000000000.0,male,Money Management,True,J Joseph Ricketts,452,North America,founder,banking,True,False,self-made finance,1.1,2001
+-1,Non-Traded Sectors,United States,Enterprise,new,USA,1957,True,10600000000000.0,male,"Retail, Restaurant",True,Jack Taylor,167,North America,founder,rental cars,True,False,founder non-finance,2.8,2001
+77,Financial,United States,Stephens Group,new,USA,1946,True,10600000000000.0,male,Diversified financial,True,Jackson Stephens,312,North America,founder,media,True,False,self-made finance,1.6,2001
+-1,New Sectors,Israel,Medinol,new,ISR,1992,True,130000000000.0,married couple,Technology-Medical,True,Jacob and Yehudith Richter,490,Middle East/North Africa,founder,pharmaceuticals,True,False,founder non-finance,1.0,2001
+-1,Traded Sectors,United States,"Mars, Incorperated",new,USA,1911,True,10600000000000.0,female,Consumer,True,Jacqueline Mars,31,North America,relation,candy,True,False,inherited,9.0,2001
+-1,Financial,France,Laboratories Servier,new,FRA,1954,True,1380000000000.0,male,Diversified financial,True,Jacques Servier,490,Europe,founder,pharmaceuticals,True,False,self-made finance,1.0,2001
+-1,Financial,Philippines,Ayala Corporation,new,PHL,1834,True,76261998621.0,male,Money Management,True,Jaime Augusto Zobel de Ayala,421,East Asia,relation,construcion,True,False,inherited,1.2,2001
+-1,Resource Related,Canada,J.D. Irving,new,CAN,1882,True,733000000000.0,male,Energy,True,James Arthur and John Irving,90,North America,relation,timber,True,False,inherited,4.4,2001
+56,0,United States,NASCAR,new,USA,1947,True,10600000000000.0,male,Other,True,James France,490,North America,relation,sports,True,False,inherited,1.0,2001
+58,New Sectors,United States,SAS institute,new,USA,1976,True,10600000000000.0,male,Technology-Computer,True,James Goodnight,54,North America,founder,software,True,False,founder non-finance,5.7,2001
+51,Traded Sectors,United States,"Oakley, Inc",new,USA,1975,True,10600000000000.0,male,Consumer,True,James Jannard,292,North America,founder,apparel and eyewear,True,False,founder non-finance,1.7,2001
+65,New Sectors,United States,Amkor,new,USA,1969,True,10600000000000.0,male,Technology-Computer,True,James Kim,209,North America,founder,semiconductors,True,False,founder non-finance,2.2,2001
+82,Non-Traded Sectors,United States,JM Family Enterprises,new,USA,1968,True,10600000000000.0,male,"Retail, Restaurant",True,James Moran,387,North America,founder,auto dealerships,True,False,founder non-finance,1.3,2001
+79,Financial,United States,Sorenson Companies,new,USA,1977,True,10600000000000.0,male,Real Estate,True,James Sorenson,124,North America,founder,real estate,True,False,self-made finance,3.4,2001
+76,Traded Sectors,United States,Amway,new,USA,1959,True,10600000000000.0,male,Consumer,True,Jay Van Andel,363,North America,founder,consumer goods,True,False,founder non-finance,1.4,2001
+73,Non-Traded Sectors,Canada,Jean Coutu Group,new,CAN,1969,True,733000000000.0,male,"Retail, Restaurant",True,Jean Coutu,452,North America,founder,retail,True,False,founder non-finance,1.1,2001
+63,Non-Traded Sectors,France,JCDecaux,new,FRA,1964,True,1380000000000.0,male,Media,True,Jean-Claude Decaux,209,Europe,founder,advertising,True,False,founder non-finance,2.2,2001
+62,Traded Sectors,France,Hermes,new,FRA,1837,True,1380000000000.0,male,Consumer,True,Jean-Louis Dumas,312,Europe,relation,luxury fashion,True,False,inherited,1.6,2001
+37,Non-Traded Sectors,United States,Amazon, new,USA,1994,True,10600000000000.0,male,"Retail, Restaurant",True,Jeffrey Bezos,234,North America,founder, technology,True,False,founder non-finance,2.0,2001
+36,New Sectors,Canada,Ebay,new,CAN,1995,True,733000000000.0,male,Technology-Computer,True,Jeffrey Skoll,174,North America,president,e-commerce,True,False,executive,2.7,2001
+75,Financial,United States,Kohberg Kravis Roberts & Co,new,USA,1976,True,10600000000000.0,male,Private equity/leveraged buyout,True,Jerome Kohlberg,490,North America,founder,private equity,True,False,self-made finance,1.0,2001
+75,Non-Traded Sectors,Mexico,Aurrera,new,MEX,1958,True,725000000000.0,male,"Retail, Restaurant",True,Jeronimo Arango,272,Latin America,founder,supermarkets,True,False,founder non-finance,1.8,2001
+32,New Sectors,United States,Yahoo!,new,USA,1994,True,10600000000000.0,male,Technology-Computer,True,Jerry Yang,490,North America,founder,software,True,False,founder non-finance,1.0,2001
+71,Traded Sectors,United States,Kendall-Jackson,new,USA,1982,True,10600000000000.0,male,Consumer,True,Jess Jackson,292,North America,founder,wine,True,False,founder non-finance,1.7,2001
+72,Financial,Canada,Jim Pattison Group,new,CAN,1961,True,733000000000.0,male,Money Management,True,Jim Pattison,251,North America,founder CEO owner,autos,True,False,self-made finance,1.9,2001
+53,Non-Traded Sectors,United States,Walmart, new,USA,1962,True,10600000000000.0,male,"Retail, Restaurant",True,Jim Walton,7,North America,relation,retail,True,False,inherited,18.8,2001
+-1,Non-Traded Sectors,United States,McDonald's,new,USA,1940,True,10600000000000.0,female,"Retail, Restaurant",True,Joan Kroc,182,North America,relation,restaurants,True,False,inherited,2.5,2001
+50,Traded Sectors,South Africa,Rembrandt Group,new,ZAF,1940,True,122000000000.0,male,Consumer,True,Johann Rupert,387,Sub-Saharan Africa,relation,tobacco/luxury brands,True,False,inherited,1.3,2001
+73,Traded Sectors,Germany,BMW,new,DEU,1916,True,1950000000000.0,female,Consumer,True,Johanna Quandt,12,Europe,relation,cars,True,False,inherited,17.8,2001
+69,New Sectors,United States,Boston Scientific,new,USA,1979,True,10600000000000.0,male,Technology-Medical,True,John Abele,452,North America,founder,medical devices,True,False,founder non-finance,1.1,2001
+63,Financial,United States,,new,USA,1960,True,10600000000000.0,male,Real Estate,True,John Arrillaga,292,North America,founder,real estate,True,False,self-made finance,1.7,2001
+50,Financial,United States,Kleinter Perkins Caufield & Byers,new,USA,1972,True,10600000000000.0,male,Venture Capital,True,John Doerr,490,North America,employee,venture capitalist,True,False,self-made finance,1.0,2001
+57,Traded Sectors,Ireland,Campbell Soup,aquired,IRL,1869,True,109000000000.0,male,Consumer,True,John Dorrance,222,Europe,relation,soup,True,False,inherited,2.1,2001
+39,Traded Sectors,United States,The Gap,new,USA,1969,True,10600000000000.0,male,Consumer,True,John Fisher,272,North America,relation,clothing ,True,False,inherited,1.8,2001
+56,Non-Traded Sectors,Norway,Frontline Ltd.,aquired,NOR,1985,True,174000000000.0,male,Media,True,John Fredriksen,421,Europe,founder,oil tankers,True,False,founder non-finance,1.2,2001
+57,Non-Traded Sectors,United Kingdom,Matalan,new,GBR,1985,True,1530000000000.0,male,"Retail, Restaurant",True,John Hargreaves,251,Europe,founder,retail,True,False,founder non-finance,1.9,2001
+-1,Non-Traded Sectors,Germany,,,DEU,0,True,1950000000000.0,male,Media,True,John Jahr,251,Europe,,media,True,False,inherited,1.9,2001
+86,Non-Traded Sectors,United States,Metropolitan Broadcasting Corporation,new,USA,1956,True,10600000000000.0,male,Media,True,John Kluge,24,North America,chairman,media,True,False,executive,10.9,2001
+-1,New Sectors,United States,Molex Incorporated,new,USA,1938,True,10600000000000.0,male,Technology-Computer,True,John Krehbiel Jr,421,North America,co-chairman,electronic interconnectors,True,False,executive,1.2,2001
+60,Non-Traded Sectors,United States,Tele-Communications Inc,merger,USA,1968,True,10600000000000.0,male,Media,True,John Malone,182,North America,CEO,telecommunications,True,False,executive,2.5,2001
+65,Financial,United States,Marriot,new,USA,1927,True,10600000000000.0,male,Real Estate,True,John Marriott Jr,421,North America,relation,hotels,True,False,inherited,1.2,2001
+64,Traded Sectors,United States,"Mars, Incorperated",new,USA,1911,True,10600000000000.0,male,Consumer,True,John Mars,31,North America,relation,candy,True,False,inherited,9.0,2001
+50,Non-Traded Sectors,United States,McCaw Cellular,new,USA,1987,True,10600000000000.0,male,Media,True,John McCaw,452,North America,relation,cell phones,True,False,executive,1.1,2001
+61,Non-Traded Sectors,United States,Menards,new,USA,1972,True,10600000000000.0,male,"Retail, Restaurant",True,John Menard,234,North America,founder,hardware stores,True,False,founder non-finance,2.0,2001
+67,New Sectors,United States,Cisco Systems,new,USA,1984,True,10600000000000.0,male,Technology-Computer,True,John Morgridge,234,North America,ceo,software,True,False,executive,2.0,2001
+54,New Sectors,United States,SAS institute,new,USA,1976,True,10600000000000.0,male,Technology-Computer,True,John Sall,167,North America,founder,software,True,False,founder non-finance,2.8,2001
+92,Traded Sectors,United States,J.R. Simplot Company,new,USA,1929,True,10600000000000.0,male,Consumer,True,John Simplot,115,North America,founder,agricultural products,True,False,founder non-finance,3.6,2001
+61,Financial,United States,Sobrato Organization,new,USA,1979,True,10600000000000.0,male,Real Estate,True,John Sobrato,336,North America,founder,real estate,True,False,self-made finance,1.5,2001
+-1,Resource Related,New Zealand,Todd Energy,new,NZL,1929,True,53872593337.0,male,Energy,True,John Todd,490,North America,relation,oil,True,False,inherited,1.0,2001
+62,Resource Related,Netherlands,BCD Holdings,new,NLD,1975,True,426000000000.0,male,Energy,True,John van Vlissingen,363,Europe,founder,travel company,True,False,privatized and resources,1.4,2001
+55,Traded Sectors,United States,Walmart, new,USA,1962,True,10600000000000.0,male,Consumer,True,John Walton,8,North America,relation, retail,True,False,inherited,18.7,2001
+63,Traded Sectors,United States,Huntsman chemical,new,USA,1982,True,10600000000000.0,male,Non-consumer industrial,True,Jon Huntsman,104,North America,founder,chemicals,True,False,founder non-finance,3.8,2001
+42,New Sectors,United States,Stryker Corporation,new,USA,1941,True,10600000000000.0,male,Technology-Medical,True,Jon Stryker,421,North America,relation,medical supplies,True,False,inherited,1.2,2001
+-1,Financial,Brazil,Banco Safra (now Saftra Group),new,BRA,1955,True,560000000000.0,male,Money Management,True,Joseph and Moise Safra,162,Latin America,founder,banking,True,False,self-made finance,2.9,2001
+75,0,United States,,,USA,1987,True,10600000000000.0,male,Other,True,Joseph Jamail Jr,421,North America,lawer,lawsuits,True,False,executive,1.2,2001
+-1,Financial,Spain,Acciona Trasmediterranea,new,ESP,1916,True,626000000000.0,male,Diversified financial,True,Juan and Carlos March,272,Europe,relation,shipping,True,False,inherited,1.8,2001
+69,Financial,United States,Tiger Management Corp,new,USA,1980,True,10600000000000.0,male,Hedge funds,True,Julian Robertson,490,North America,founder,hedge funds,True,False,self-made finance,1.0,2001
+65,Financial,Brazil,Banco Bozano Simonsen,new,BRA,1960,True,560000000000.0,male,Money Management,True,Julio Bozano,272,Latin America,founder,banking,True,False,self-made finance,1.8,2001
+-1,New Sectors,Japan,Konami,new,JPN,1969,True,4160000000000.0,male,Technology-Computer,True,Kagemasa Kozuki,452,East Asia,founder,video games,True,False,founder non-finance,1.1,2001
+77,Non-Traded Sectors,Germany,Massa,new,DEU,1965,True,1950000000000.0,male,"Retail, Restaurant",True,Karl-Heinz Kipp,138,Europe,founder,retail,True,False,founder non-finance,3.2,2001
+58,Financial,Japan,Wynn Resorts,new,JPN,1973,True,4160000000000.0,male,Real Estate,True,Kazuo Okada,116,East Asia,founder,casinos,True,False,self-made finance,3.5,2001
+-1,Non-Traded Sectors,United States,McCaw Cellular,new,USA,1987,True,10600000000000.0,male,Media,True,Keith McCaw,452,North America,relation,cell phones,True,False,executive,1.1,2001
+66,Financial,Turkey,,new,TUR,1956,True,196000000000.0,male,Diversified financial,True,Kemal Uzan,312,Middle East/North Africa,founder,construction,True,True,privatized and resources,1.6,2001
+48,Traded Sectors,Japan,Mabuchi Motor Company,new,JPN,1946,True,4160000000000.0,male,Non-consumer industrial,True,Kenichi Mabuchi,272,East Asia,founder,electric motors,True,False,founder non-finance,1.8,2001
+-1,Traded Sectors,Japan,Heiwa,new,JPN,1946,True,4160000000000.0,male,Consumer,True,Kenkichi Nakajima,452,East Asia,founder,pachinko,True,False,founder non-finance,1.1,2001
+65,Financial,United States,Home Depot,new,USA,1979,True,10600000000000.0,male,Money Management,True,Kenneth Langone,387,North America,founder,home improvement retail,True,False,self-made finance,1.3,2001
+69,Non-Traded Sectors,United Kingdom,Morrisons,new,GBR,1899,True,1530000000000.0,male,"Retail, Restaurant",True,Kenneth Morrison,292,Europe,relation,supermarkets,True,False,inherited,1.7,2001
+77,Non-Traded Sectors,Canada,Thomson Corporation (now Thomson Reuters),acquired,CAN,1934,True,733000000000.0,male,Media,True,Kenneth Thomson,14,North America,relation,media,True,False,inherited,16.4,2001
+53,Non-Traded Sectors,United States,Excel Communications,new,USA,1988,True,10600000000000.0,male,Media,True,Kenneth Troutt,336,North America,founder,telecomm,True,False,founder non-finance,1.5,2001
+63,Non-Traded Sectors,Australia,Consolidated Press Holdings Limited,aquired,AUS,1936,True,379000000000.0,male,Media,True,Kerry Packer,182,North America,relation,media,True,False,inherited,2.5,2001
+54,Financial,Saudi Arabia,National Comercial bank of Saudi Arabia,new,SAU,1953,True,183000000000.0,male,Money Management,True,Khalid Bin Mahfouz,251,Middle East/North Africa,relation,banking,True,True,inherited,1.9,2001
+84,Financial,Singapore,Malayan Banking,new,SGP,1960,True,89285087395.0,male,Real Estate,True,Khoo Teck Puat,151,East Asia,founder,banking,True,False,self-made finance,3.0,2001
+-1,Non-Traded Sectors,United States,TeleCommunications Inc,new,USA,1968,True,10600000000000.0,male,Media,True,Kim Magness,336,North America,relation,telecommunications,True,False,inherited,1.5,2001
+83,Financial,United States,MGM Grand,aquired,USA,1924,True,10600000000000.0,male,Real Estate,True,Kirk Kerkorian,46,North America,investor,real estate,True,False,self-made finance,6.4,2001
+-1,Traded Sectors,Sweden,Tetra Pak,new,SWE,1951,True,240000000000.0,female,Consumer,True,Kirsten Rausing,31,Europe,relation,food packaging,True,False,inherited,9.0,2001
+53,Traded Sectors,Denmark,Lego,new,DNK,1949,True,165000000000.0,male,Consumer,True,Kjeld Kirk Kristiansen,251,Europe,relation,toys,True,False,inherited,1.9,2001
+-1,Traded Sectors,Switzerland,Jacobs Suchard AG,new,CHE,1895,True,279000000000.0,male,Consumer,True,Klaus Jacobs,167,Europe,relation,chocolate and coffee,True,False,inherited,2.8,2001
+60,New Sectors,Germany,SAP AG,new,DEU,1972,True,1950000000000.0,male,Technology-Computer,True,Klaus Tschira,179,Europe,founder,software,True,False,founder non-finance,2.6,2001
+-1,Financial,Taiwan,Koos group,new ,Taiwan,1940,True,0.0,male,Diversified financial,True,Koo Chen-fu,363,East Asia,founder,financial services,True,False,self-made finance,1.4,2001
+33,Resource Related,India,Aditya Birla Group,new,IND,1857,True,494000000000.0,male,Mining and metals,True,Kumar Birla,292,South Asia,relation,cement,True,False,inherited,1.7,2001
+33,Non-Traded Sectors,Japan,Sankyo,new,JPN,1950,True,4160000000000.0,male,"Retail, Restaurant",True,Kunio Busujima,421,East Asia,founder,pachinko gaming machines,True,False,founder non-finance,1.2,2001
+60,Financial,Singapore,Hong Leong Group,new,SGP,1948,True,89285087395.0,male,Diversified financial,True,Kwek Leng Beng,312,East Asia,relation,banking,True,False,inherited,1.6,2001
+60,Financial,Japan,Acom,new,JPN,1948,True,4160000000000.0,male,Money Management,True,Kyosuke Kinoshita,55,East Asia,relation,consumer loans,True,False,inherited,5.6,2001
+50,Resource Related,United Kingdom,ArcelorMittal,new,GBR,1989,True,1530000000000.0,male,Energy,True,Lakshmi Mittal,272,Europe,founder,steel,True,False,inherited,1.8,2001
+56,New Sectors,United States,Oracle, new,USA,1977,True,10600000000000.0,male,Technology-Computer,True,Larry Ellison,4,North America,founder, software,True,False,founder non-finance,26.0,2001
+90,Resource Related,United States,Standard Oil,new,USA,1870,True,10600000000000.0,male,Mining and metals,True,Laurance Rockefeller,336,North America,relation,oil,True,False,inherited,1.5,2001
+-1,Traded Sectors,United States,Loews Corporation,new,USA,1946,True,10600000000000.0,male,Consumer,True,Laurence Tisch,194,North America,founder,retail,True,False,founder non-finance,2.4,2001
+-1,Non-Traded Sectors,United States,UVSG,aquired,USA,1975,True,10600000000000.0,male,Media,True,Lawrence Flinn Jr,292,North America,investor ,media,True,False,executive,1.7,2001
+44,Resource Related,United States,Sid Richardson Gasoline Co,new,USA,1919,True,10600000000000.0,male,Energy,True,Lee Bass,92,North America,relation,oil,True,False,inherited,4.3,2001
+-1,Financial,Hong Kong,Hysan Development,new,HKG,1920,True,169000000000.0,male,Real Estate,True,Lee Hon Chiu,490,East Asia,relation,real estate,True,False,inherited,1.0,2001
+59,New Sectors,South Korea,Samsung,new,KOR,1938,True,533000000000.0,male,Technology-Computer,True,Lee Kun-Hee,312,East Asia,relation,electronics,True,False,inherited,1.6,2001
+76,Financial,Singapore,Oversea-Chinese Banking Corporation,new,SGP,1919,True,89285087395.0,male,Money Management,True,Lee Seng Wee,421,East Asia,chairman,banking,True,False,inherited,1.2,2001
+73,Financial,Hong Kong,Henderson Land Development,new,HKG,1976,True,169000000000.0,male,Real Estate,True,Lee Shau Kee,52,East Asia,founder/chairman,real estate,True,False,self-made finance,5.9,2001
+-1,Non-Traded Sectors,Germany,Kirch Group,new,DEU,1956,True,1950000000000.0,male,Media,True,Leo Kirch,20,Europe,founder,media,True,False,founder non-finance,12.0,2001
+81,Financial,United States,Helmsley hotels,aquired,USA,1938,True,10600000000000.0,female,Real Estate,True,Leona Helmsley,251,North America,investor ,real estate,True,False,self-made finance,1.9,2001
+67,Traded Sectors,United States,Est?Lauder,new,USA,1946,True,10600000000000.0,male,Consumer,True,Leonard Lauder,104,North America,relation,makeup,True,False,inherited,3.8,2001
+62,Financial,United States,Hartz Group,new,USA,1932,True,10600000000000.0,male,Real Estate,True,Leonard Stern,194,North America,relation,"pet supplies, real estate",True,False,inherited,2.4,2001
+65,Traded Sectors,Italy,?Luxottica,new,ITA,1961,True,1160000000000.0,male,Consumer,True,Leonardo Del Vecchio,43,Europe,founder,glasses,True,False,founder non-finance,6.6,2001
+81,Traded Sectors,United States,ILFC,new,USA,1973,True,10600000000000.0,male,Consumer,True,Leslie Gonda,272,North America,founder,aircraft leasing,True,False,founder non-finance,1.8,2001
+59,Traded Sectors,United States,Limited Brands,new,USA,1963,True,10600000000000.0,male,Consumer,True,Leslie Wexner,162,North America,founder,clothing,True,False,founder non-finance,2.9,2001
+75,Financial,United States,General Dynamics,new,USA,1919,True,10600000000000.0,male,Money Management,True,Lester Crown,146,North America,relation,aerospace and defense,True,False,inherited,3.1,2001
+72,Financial,Hong Kong,Cheung king,new,HKG,1971,True,169000000000.0,male,Real Estate,True,Li Ka-shing,18,East Asia,founder,real estate,True,False,self-made finance,12.6,2001
+78,Traded Sectors,France,L'Oreal,new,FRA,1909,True,1380000000000.0,female,Consumer,True,Liliane Bettencourt,15,Europe,relation,cosmetics,True,False,inherited,15.6,2001
+35,Traded Sectors,Venezuela,Empresas Polar,new,VEN,1941,True,123000000000.0,male,Consumer,True,Lorenzo Mendoza,82,Latin America,relation,beer,True,False,inherited,4.5,2001
+56,Non-Traded Sectors,Mexico,Cemex,new,MEX,1906,True,725000000000.0,male,Constrution,True,Lorenzo Zambrano,162,Latin America,relation,cement,True,False,inherited,2.9,2001
+52,Traded Sectors,United States,ILFC,new,USA,1973,True,10600000000000.0,male,Consumer,True,Louis Gonda,222,North America,founder,aircraft leasing,True,False,founder non-finance,2.1,2001
+-1,Non-Traded Sectors,United States,Clear Channel Communications,new,USA,1972,True,10600000000000.0,male,Media,True,Lowry Mays,251,North America,founder,media,True,False,founder non-finance,1.9,2001
+65,Traded Sectors,Italy,Benetton Group,new,ITA,1965,True,1160000000000.0,male,Consumer,True,Luciano Benetton,57,Europe,founder,fashion,True,False,founder non-finance,5.5,2001
+66,Financial,Philippines,Asia Brewery,new,PHL,1982,True,76261998621.0,male,Money Management,True,Lucio Tan,421,East Asia,founder,beverages,True,True,privatized and resources,1.2,2001
+68,Financial,Colombia,"Grupo Aval Acciones y Valores, SA",aquired,COL,1971,True,98200000000.0,male,Money Management,True,Luis Carlos Sarmiento Angulo,336,Latin America,founder,banking,True,False,self-made finance,1.5,2001
+87,Financial,Denmark,Maersk Group,new,DNK,1905,True,165000000000.0,male,Diversified financial,True,Maersk McKinney Moller,209,Europe,relation,shipping,True,False,inherited,2.2,2001
+-1,Traded Sectors,United States,First Allied Corporation,new,USA,1984,True,10600000000000.0,male,Consumer,True,Malcolm Green Chace III,490,North America,founder,"investments/real estate, sports teams",True,False,founder non-finance,1.0,2001
+66,Financial,Switzerland,Glencore,new,CHE,1974,True,279000000000.0,male,Hedge funds,True,Marc Rich,421,Europe,founder,oil,True,False,self-made finance,1.2,2001
+-1,Traded Sectors,Italy,Pirelli Group,new,ITA,1872,True,1160000000000.0,male,Consumer,True,Marco Tronchetti Provera,452,Europe,Chairman and Chief Executive Officer,tires,True,False,executive,1.1,2001
+77,0,United States,Harbart Corporation,new,USA,1993,True,10600000000000.0,female,Other,True,Marguerite Harbert,421,North America,relation,construction,True,False,inherited,1.2,2001
+37,Traded Sectors,Mexico,Grupo Modelo,new,MEX,1925,True,725000000000.0,female,Consumer,True,Maria Asuncion Aramburuzabala,272,Latin America,relation,beer,True,False,inherited,1.8,2001
+62,Financial,United States,Carlson Inc,new,USA,1938,True,10600000000000.0,female,Real Estate,True,Marilyn Carlson Nelson,363,North America,relation,hospitality,True,False,inherited,1.4,2001
+35,New Sectors,Israel,Check Point,new,ISR,1993,True,130000000000.0,male,Technology-Computer,True,Marius Nacht,336,Middle East/North Africa,founder,software,True,False,founder non-finance,1.5,2001
+40,Non-Traded Sectors,United States,Broadcast.com,new,USA,1995,True,10600000000000.0,male,Media,True,Mark Cuban,363,North America,founder,web broadcasting,True,False,founder non-finance,1.4,2001
+-1,Non-Traded Sectors,United Kingdom,Regus,new,GBR,1989,True,1530000000000.0,male,"Retail, Restaurant",True,Mark Dixon,490,Europe,founder,business centers,True,False,founder non-finance,1.0,2001
+65,Non-Traded Sectors,United States,Ingram Industries,new,USA,1946,True,10600000000000.0,female,"Retail, Restaurant",True,Martha Ingram,209,North America,relation,transportation,True,False,inherited,2.2,2001
+49,Non-Traded Sectors,France,Bouygues S.A.,new,FRA,1952,True,1380000000000.0,male,Media,True,Martin Bouygues,198,Europe,relation,construction,True,False,inherited,2.3,2001
+-1,Financial,Switzerland,BZ Bank,new,CHE,1985,True,279000000000.0,male,Money Management,True,Martin Ebner,130,Europe,founder,banking,True,False,self-made finance,3.3,2001
+75,Resource Related,United States,Davis Petroleum,new,USA,1945,True,10600000000000.0,male,Energy,True,Marvin Davis,82,North America,relation,oil,True,False,inherited,4.5,2001
+51,Traded Sectors,United States,Campbell Soup,aquired,USA,1869,True,10600000000000.0,female,Consumer,True,Mary Alice Dorrance Malone,272,North America,relation,soup,True,False,inherited,1.8,2001
+72,Non-Traded Sectors,United States,PanAmSat,new,USA,1984,True,10600000000000.0,female,Media,True,Mary Anselmo,452,North America,relation,satallite communications,True,False,inherited,1.1,2001
+-1,Non-Traded Sectors,Japan,Sony,new,JPN,1947,True,4160000000000.0,male,Media,True,Masao Morita,251,East Asia,relation,electronics,True,False,inherited,1.9,2001
+76,Non-Traded Sectors,Japan,Ito-Yokado,new,JPN,1961,True,4160000000000.0,male,"Retail, Restaurant",True,Masatoshi Ito,82,East Asia,founder,retail,True,False,founder non-finance,4.5,2001
+43,Non-Traded Sectors,Japan,Softbank,new,JPN,1981,True,4160000000000.0,male,Media,True,Masayoshi Son,55,East Asia,founder/CEO,technology,True,False,founder non-finance,5.6,2001
+75,Financial,United States,AIG,new,USA,1919,True,10600000000000.0,male,Money Management,True,Maurice Greenberg,92,North America,Chairman and Chief Executive Officer,insurance,True,False,self-made finance,4.3,2001
+56,Non-Traded Sectors,Turkey,Cukurova Holding,new,TUR,1923,True,196000000000.0,male,Media,True,Mehmet Karamehmet,109,Middle East/North Africa,chairman,"textiles, industrial goods, media",True,False,executive,3.7,2001
+-1,Non-Traded Sectors,Germany,Metro AG,new,DEU,1923,True,1950000000000.0,male,"Retail, Restaurant",True,Michael and Rainer Schmidt-Ruthenbeck,182,Europe,relation,retail,True,False,inherited,2.5,2001
+-1,Non-Traded Sectors,United States,Tellabs,new,USA,1975,True,10600000000000.0,male,Media,True,Michael Birck,312,North America,founder,telecom,True,False,founder non-finance,1.6,2001
+58,Non-Traded Sectors,United States,Bloomberg, new,USA,1981,True,10600000000000.0,male,Media,True,Michael Bloomberg,82,North America,founder, finance,True,False,founder non-finance,4.5,2001
+36,New Sectors,United States,Dell,new,USA,1984,True,10600000000000.0,male,Technology-Computer,True,Michael Dell,27,North America,founder,technology,True,False,founder non-finance,10.5,2001
+54,Non-Traded Sectors,Liechtenstein,,,LIE,0,True,2491800559.0,male,Constrution,True,Michael Hilti,363,Europe,,,True,False,executive,1.4,2001
+47,New Sectors,United States,CDW Corporation,new,USA,1984,True,10600000000000.0,male,Technology-Computer,True,Michael Krasny,251,North America,founder,retail,True,False,founder non-finance,1.9,2001
+50,Financial,Canada,Otto Group,new,CAN,1950,True,733000000000.0,male,Hedge funds,True,Michael Lee-Chin,490,North America,relation,mail order retail,True,False,inherited,1.0,2001
+57,Non-Traded Sectors,Germany,Metro AG,new,DEU,1923,True,1950000000000.0,male,"Retail, Restaurant",True,Michael Otto,70,Europe,relation,retail,True,False,inherited,5.0,2001
+74,Traded Sectors,Italy,Ferrero spa,new,ITA,1946,True,1160000000000.0,male,Consumer,True,Michele Ferrero,292,Europe,relation,chocolates,True,False,executive,1.7,2001
+51,Non-Traded Sectors,United States,Carnival Corporation,new,USA,1972,True,10600000000000.0,male,"Retail, Restaurant",True,Micky Arison,96,North America,relation,cruises,True,False,inherited,4.1,2001
+36,Resource Related,Russia,Alfa Group,new,RUS,1989,True,307000000000.0,male,Energy,True,Mikhail Fridman,387,Europe,founder,investment banking,True,False,privatized and resources,1.3,2001
+37,Resource Related,Russia,Yukos,privatization,RUS,1993,True,307000000000.0,male,Energy,True,Mikhail Khodorkovsky,194,Europe,Chairman and Chief Executive Officer,oil,True,False,privatized and resources,2.4,2001
+44,New Sectors,United States,Danaher,new,USA,1979,True,10600000000000.0,male,Technology-Medical,True,Mitchell Rales,336,North America,founder,venture capitalist,True,False,founder non-finance,1.5,2001
+51,Traded Sectors,Italy,Prada,new,ITA,1913,True,1160000000000.0,female,Consumer,True,Miuccia Prada,363,Europe,relation,luxury goods,True,False,inherited,1.4,2001
+-1,Non-Traded Sectors,Saudi Arabia,Abdul Latif Jameel Co. Ltd,new,SAU,1945,True,183000000000.0,male,"Retail, Restaurant",True,Mohammed Jameel,151,Middle East/North Africa,relation,auto dealerships,True,False,inherited,3.0,2001
+63,Financial,United States,Boston Properties,new,USA,1970,True,10600000000000.0,male,Real Estate,True,Mortimer Zuckerman,421,North America,founder,real estate,True,False,self-made finance,1.2,2001
+70,Financial,Turkey,Koc Holding,new,TUR,1926,True,196000000000.0,male,Money Management,True,Mustafa Rahmi Koc,182,Middle East/North Africa,relation,"energy, retail, manufacturing",True,False,inherited,2.5,2001
+49,Non-Traded Sectors,United States,Walmart, new,USA,1962,True,10600000000000.0,female,"Retail, Restaurant",True,Nancy Walton Laurie,209,North America,relation, retail,True,False,inherited,2.2,2001
+57,Non-Traded Sectors,Kuwait,Kharafi Group,new,KWT,1956,True,34890773880.0,male,Constrution,True,Nasser Al-Kharafi,50,Middle East/North Africa,relation,construction,True,False,inherited,6.0,2001
+72,Financial,Singapore,Far East Organization,new,SGP,1962,True,89285087395.0,male,Real Estate,True,Ng Teng Fong,116,East Asia,founder,real estate,True,False,self-made finance,3.5,2001
+55,Resource Related,South Africa,De Beers,new ,ZAF,1888,True,122000000000.0,male,Mining and metals,True,Nicky Oppenheimer,82,Sub-Saharan Africa,relation,diamonds,True,False,inherited,4.5,2001
+72,Traded Sectors,Switzerland,Swatch Group,merger,CHE,1986,True,279000000000.0,male,Consumer,True,Nicolas Hayek,116,Europe,founder,watches,True,False,founder non-finance,3.5,2001
+-1,Financial,Hong Kong,Chinachem Group,new,HKG,1960,True,169000000000.0,female,Real Estate,True,Nina Wang,109,East Asia,relation,chemicals,True,False,inherited,3.7,2001
+55,Traded Sectors,Japan,Suntory,new,JPN,1899,True,4160000000000.0,male,Consumer,True,Nobutada Saji,40,East Asia,relation,brewery,True,False,inherited,7.7,2001
+-1,Non-Traded Sectors,United States,Gateway,new,USA,1985,True,10600000000000.0,male,Media,True,Norman Waitt,490,North America,founder,computers,True,False,founder non-finance,1.0,2001
+71,Non-Traded Sectors,Egypt,Orascom,new,EGY,1950,True,97600000000.0,male,Constrution,True,Onsi Sawiris,490,Middle East/North Africa,founder,construction,True,False,founder non-finance,1.0,2001
+77,Non-Traded Sectors,Germany,Metro AG,new,DEU,1963,True,1950000000000.0,male,"Retail, Restaurant",True,Otto Beisheim,182,Europe,founder,groceries,True,False,founder non-finance,2.5,2001
+-1,Traded Sectors,Italy,Bulgari,new,ITA,1884,True,1160000000000.0,male,Consumer,True,Paolo Bulgari,251,Europe,relation,luxury goods,True,False,inherited,1.9,2001
+-1,0,United States,,,USA,0,True,10600000000000.0,female,Other,True,Patricia Short,452,North America,,,True,False,,1.1,2001
+-1,0,France,Hermes,new,FRA,1837,True,1380000000000.0,male,Other,True,Patrick Guerrand,387,Europe,relation,luxury fashion,True,False,inherited,1.3,2001
+63,New Sectors,United States,International Data Goup,new,USA,1964,True,10600000000000.0,male,Technology-Computer,True,Patrick McGovern,234,North America,founder,technology publishing,True,False,founder non-finance,2.0,2001
+63,Financial,United States,Aon Corporation,new,USA,1982,True,10600000000000.0,male,Hedge funds,True,Patrick Ryan,452,North America,founder,risk management,True,False,self-made finance,1.1,2001
+50,Traded Sectors,Hong Kong,Johnson Electric,new,HKG,1959,True,169000000000.0,male,Consumer,True,Patrick Wang,96,East Asia,relation,automotive parts,True,False,inherited,4.1,2001
+48,New Sectors,United States,Microsoft,new,USA,1975,True,10600000000000.0,male,Technology-Computer,True,Paul Allen,3,North America,founder,technology,True,False,founder non-finance,30.4,2001
+-1,Non-Traded Sectors,France,Promodes,new,FRA,1961,True,1380000000000.0,male,"Retail, Restaurant",True,Paul-Louis Halley,60,Europe,relation,retail,True,False,executive,5.4,2001
+86,Resource Related,United States,Bass Brothers Enterprises,new,USA,1960,True,10600000000000.0,male,Energy,True,Perry Bass,312,North America,relation,oil,True,False,inherited,1.6,2001
+58,Financial,United States,"Spear, Leeds & Kellogg",new,USA,1931,True,10600000000000.0,male,Money Management,True,Peter Kellogg,234,North America,relation,investment banking,True,False,inherited,2.0,2001
+60,New Sectors,United States,Boston Scientific,new,USA,1979,True,10600000000000.0,male,Technology-Medical,True,Peter Nicholas,421,North America,founder,medical devices,True,False,founder non-finance,1.2,2001
+55,Financial,Hong Kong,Worldwide Shipping Group,new,HKG,1955,True,169000000000.0,male,Real Estate,True,Peter Woo,452,East Asia,relation,real estate,True,False,inherited,1.1,2001
+61,Financial,United States,Circle A Drilling,aquired,USA,1961,True,10600000000000.0,male,Money Management,True,Philip Anschutz,16,North America,investor,"oil, railroad, investments",True,False,self-made finance,15.3,2001
+63,Traded Sectors,United States,Nike,new,USA,1964,True,10600000000000.0,male,Consumer,True,Philip Knight,92,North America,founder,apparel,True,False,founder non-finance,4.3,2001
+65,Non-Traded Sectors,France,Adecco,aquired,FRA,1996,True,1380000000000.0,male,"Retail, Restaurant",True,Philippe Foriel-Destezet,138,Europe,owner,HR consulting,True,False,executive,3.2,2001
+-1,Resource Related,United States,Standard Oil,new,USA,1870,True,10600000000000.0,male,Energy,True,Pierce Marshall,387,North America,relation,oil,True,False,inherited,1.3,2001
+71,Non-Traded Sectors,France,Sodexo,new,FRA,1960,True,1380000000000.0,male,"Retail, Restaurant",True,Pierre Bellon,363,Europe,founder,catering,True,False,founder non-finance,1.4,2001
+-1,New Sectors,Switzerland,AxialPar,new,CHE,2001,True,279000000000.0,male,Technology-Medical,True,Pierre Landolt,49,Europe,founder,venture capitalist,True,False,founder non-finance,6.1,2001
+33,New Sectors,United States,Ebay,new,USA,1995,True,10600000000000.0,male,Technology-Computer,True,Pierre Omidyar,82,North America,founder and chairman,e-commerce,True,False,founder non-finance,4.5,2001
+65,Resource Related,Switzerland,Glencore,new,CHE,1974,True,279000000000.0,male,Energy,True,Pincus Green,490,Europe,founder,oil,True,False,privatized and resources,1.0,2001
+74,Traded Sectors,United States,Loews Corporation,new,USA,1946,True,10600000000000.0,male,Consumer,True,Preston Tisch,138,North America,founder,retail,True,False,founder non-finance,3.2,2001
+44,Financial,Saudi Arabia,Kingdom Holding Company,new,SAU,1980,True,183000000000.0,male,Money Management,True,Prince Alwaleed Bin Talal Alsaud,6,Middle East/North Africa,founder,construction/real estate/banking,True,True,privatized and resources,20.0,2001
+-1,Traded Sectors,Indonesia,Sampoerna,new,IDN,1913,True,160000000000.0,male,Consumer,True,Putera Sampoerna,387,East Asia,relation,cigarette,True,False,inherited,1.3,2001
+60,Financial,Malaysia,Hong Leong Financial Group,new,MYS,1963,True,92783947368.0,male,Money Management,True,Quek Leng Chan,452,East Asia,founder,financial services,True,False,self-made finance,1.1,2001
+53,Traded Sectors,Indonesia,Gudang Garam,new,IDN,1958,True,160000000000.0,male,Consumer,True,Rachman Halim,292,East Asia,relation,cigarette,True,False,inherited,1.7,2001
+80,Non-Traded Sectors,Spain,Ferrovial,new,ESP,1952,True,626000000000.0,male,Constrution,True,Rafael del Pino,363,Europe,relation,construction,True,False,inherited,1.4,2001
+57,Non-Traded Sectors,Lebanon,Saudi Oger,aquired,LBN,1978,True,17649751244.0,male,Constrution,True,Rafik Al-Hariri,146,Middle East/North Africa,founder,construction,True,True,privatized and resources,3.1,2001
+62,Traded Sectors,United States,Ralph Lauren,new,USA,1967,True,10600000000000.0,male,Consumer,True,Ralph Lauren,198,North America,founder,clothing,True,False,founder non-finance,2.3,2001
+58,Resource Related,United States,Hunt Oil. Co,new,USA,1934,True,10600000000000.0,male,Energy,True,Ray Hunt,198,North America,relation,oil,True,False,inherited,2.3,2001
+79,Non-Traded Sectors,Germany,Bertelsmann,new,DEU,1835,True,1950000000000.0,male,Media,True,Reinhard Mohn,82,Europe,relation,publishing,True,False,inherited,4.5,2001
+-1,Traded Sectors,Germany,Adolf Wurth Group,new,DEU,1945,True,1950000000000.0,male,Non-consumer industrial,True,Reinhold Wuerth,116,Europe,relation,screws,True,False,executive,3.5,2001
+-1,Resource Related,Russia,Gazprom,state owned enterprise,RUS,1989,True,307000000000.0,male,Energy,True,Rem Viakhirev,336,Europe,CEO,natural gas,True,True,privatized and resources,1.5,2001
+-1,New Sectors,Italy,Tiscali,new,ITA,1988,True,1160000000000.0,male,Technology-Computer,True,Renato Soru,421,Europe,founder,internet service company,True,False,founder non-finance,1.2,2001
+45,Non-Traded Sectors,Mexico,Grupo Salinas/Group Elektra,new,MEX,1906,True,725000000000.0,male,"Retail, Restaurant",True,Ricardo Salinas Pliego,151,Latin America,relation,telecommunications,True,False,inherited,3.0,2001
+50,Non-Traded Sectors,United Kingdom,Virgin Group,new,GBR,1972,True,1530000000000.0,male,Media,True,Richard Branson,272,Europe,founder,media,True,False,founder non-finance,1.8,2001
+75,Traded Sectors,United States,Amway,new,USA,1959,True,10600000000000.0,male,Consumer,True,Richard DeVos,312,North America,founder,consumer goods,True,False,founder non-finance,1.6,2001
+65,New Sectors,United States,EMC Corporation,new,USA,1979,True,10600000000000.0,male,Technology-Computer,True,Richard Egan,234,North America,founder,data storage,True,False,founder non-finance,2.0,2001
+66,Non-Traded Sectors,United States,Cintas Corporation,new,USA,1968,True,10600000000000.0,male,"Retail, Restaurant",True,Richard Farmer,272,North America,founder,uniforms,True,False,founder non-finance,1.8,2001
+-1,Financial,United States,Goldman Insurance and Risk Management,new,USA,1950,True,10600000000000.0,male,Hedge funds,True,Richard Goldman,336,North America,founder,insurance,True,False,self-made finance,1.5,2001
+54,Traded Sectors,United States,Kinder Morgan Energy Partners,new,USA,1997,True,10600000000000.0,male,Non-consumer industrial,True,Richard Kinder,336,North America,founder,energy,True,False,founder non-finance,1.5,2001
+34,Non-Traded Sectors,Hong Kong,Cheung king,new,HKG,1971,True,169000000000.0,male,Media,True,Richard Li,234,East Asia,relation,real estate,True,False,inherited,2.0,2001
+62,Financial,United States,Marriot,new,USA,1927,True,10600000000000.0,male,Real Estate,True,Richard Marriott,336,North America,relation,hotels,True,False,inherited,1.5,2001
+60,Financial,United States,,new,USA,1960,True,10600000000000.0,male,Real Estate,True,Richard Peery,292,North America,founder,real estate,True,False,self-made finance,1.7,2001
+66,Traded Sectors,Australia,Visy Industries,new,AUS,1948,True,379000000000.0,male,Consumer,True,Richard Pratt,387,North America,relation,paper,True,False,inherited,1.3,2001
+56,Financial,United States,ENSCO International,new,USA,1986,True,10600000000000.0,male,Real Estate,True,Richard Rainwater,251,North America,founder,hedge funds,True,False,self-made finance,1.9,2001
+-1,Financial,United States,Mellon,new,USA,1869,True,10600000000000.0,male,Money Management,True,Richard Scaife,421,North America,relation,"banking, oil, aluminum",True,False,inherited,1.2,2001
+60,Non-Traded Sectors,United States,Best Buy,new,USA,1966,True,10600000000000.0,male,"Retail, Restaurant",True,Richard Schulze,198,North America,founder,retail,True,False,founder non-finance,2.3,2001
+48,Non-Traded Sectors,United States,Bechtel Corporation,new,USA,1898,True,10600000000000.0,male,Constrution,True,Riley Bechtel,151,North America,relation and chairman,construction,True,False,inherited,3.0,2001
+53,Resource Related,United States,Sid Richardson Gasoline Co,new,USA,1919,True,10600000000000.0,male,Energy,True,Robert Bass,151,North America,relation,oil,True,False,inherited,3.0,2001
+73,Traded Sectors,Germany,Robert Bosch GmbH,new,DEU,1886,True,1950000000000.0,male,Consumer,True,Robert Bosch Jr,198,Europe,relation,auto engines,True,False,inherited,2.3,2001
+-1,Financial,United States,ClubCorp,new,USA,1957,True,10600000000000.0,male,Real Estate,True,Robert Dedman,452,North America,founder,golf courses,True,False,self-made finance,1.1,2001
+47,Traded Sectors,United States,The Gap,new,USA,1969,True,10600000000000.0,male,Consumer,True,Robert Fisher,251,North America,relation,clothing ,True,False,inherited,1.9,2001
+54,0,United States,Black Entertainment Television,new,USA,1980,True,10600000000000.0,male,0,True,Robert Johnson,312,North America,founder,media,True,False,founder non-finance,1.6,2001
+78,Financial,Malaysia,Shangri-La Hotels,new,MYS,1971,True,92783947368.0,male,Money Management,True,Robert Kuok,109,East Asia,founder,hotels,True,False,self-made finance,3.7,2001
+64,Non-Traded Sectors,United States,McLane Company,new,USA,1894,True,10600000000000.0,male,"Retail, Restaurant",True,Robert McLane,452,North America,relation,groceries,True,False,inherited,1.1,2001
+60,Resource Related,United States,Cogen Technologies,new,USA,1983,True,10600000000000.0,male,Energy,True,Robert McNair,363,North America,founder,cogeneration,True,False,privatized and resources,1.4,2001
+79,0,United States,,new,USA,1912,True,10600000000000.0,male,0,True,Robert Naify,234,North America,relation,movie theatres,True,False,inherited,2.0,2001
+74,Financial,United States,Hyatt,aquired,USA,1957,True,10600000000000.0,male,Real Estate,True,Robert Pritzker,57,North America,founder,hotels,True,False,self-made finance,5.5,2001
+87,Traded Sectors,United States,Rich Products,new,USA,1945,True,10600000000000.0,male,Consumer,True,Robert Rich Sr,292,North America,founder,food processing,True,False,founder non-finance,1.7,2001
+47,Financial,United States,Tana Exploration Company,new,USA,1980,True,10600000000000.0,male,Money Management,True,Robert Rowling,182,North America,relation,oil,True,False,self-made finance,2.5,2001
+31,Financial,United States,Ziff Davis Inc,new,USA,1928,True,10600000000000.0,male,Hedge funds,True,Robert Ziff,421,North America,relation,publishing,True,False,inherited,1.2,2001
+-1,Financial,Mexico,Banamex,aquired,MEX,1884,True,725000000000.0,male,Money Management,True,Roberto Hernandez Ramirez,387,Latin America,former CEO,banking,True,False,self-made finance,1.3,2001
+-1,Non-Traded Sectors,Brazil,Globo Organizations,new,BRA,1925,True,560000000000.0,male,Media,True,Roberto Marinho,336,Latin America,relation,media,True,False,inherited,1.5,2001
+-1,Financial,Argentina,Techint,new,ARG,1945,True,269000000000.0,male,Diversified financial,True,Roberto Rocca,312,Latin America,Chairman and Chief Executive Officer,steel,True,False,self-made finance,1.6,2001
+-1,Resource Related,United States,AES,new,USA,1981,True,10600000000000.0,male,Energy,True,Roger Sant,292,North America,founder,energy,True,False,privatized and resources,1.7,2001
+46,Financial,Germany,Gerling Konzern,new,DEU,1904,True,1950000000000.0,male,Hedge funds,True,Rolf Gerling,78,Europe,relation,insurance,True,False,inherited,4.7,2001
+34,Resource Related,Russia,Millhouse LLC,new,RUS,1988,True,307000000000.0,male,Energy,True,Roman Abramovich,363,Europe,founder,private investment company,True,True,privatized and resources,1.4,2001
+-1,Non-Traded Sectors,Canada,Mancal Group,new,CAN,1914,True,733000000000.0,male,Constrution,True,Ron and Fred Mannix,421,North America,relation,oil,True,False,inherited,1.2,2001
+48,Non-Traded Sectors,United States,Yucaipa Companies,new,USA,1986,True,10600000000000.0,male,"Retail, Restaurant",True,Ronald Burkle,272,North America,founder,private equity,True,False,founder non-finance,1.8,2001
+59,Traded Sectors,United States,Est?Lauder,new,USA,1946,True,10600000000000.0,male,Consumer,True,Ronald Lauder,138,North America,relation,makeup,True,False,inherited,3.2,2001
+58,Financial,United States,MacAnderws and Forbes Holdings,aquired,USA,1980,True,10600000000000.0,male,Private equity/leveraged buyout,True,Ronald Perelman,130,North America,founder,holding company,True,False,self-made finance,3.3,2001
+46,New Sectors,United States,Stryker Corporation,new,USA,1941,True,10600000000000.0,female,Technology-Medical,True,Ronda Stryker,452,North America,relation,medical supplies,True,False,inherited,1.1,2001
+-1,Financial,China,China International Trust and Investment Corp,new,CHN,1978,True,1330000000000.0,male,Money Management,True,Rong Yiren,387,East Asia,founder,investment,True,True,privatized and resources,1.3,2001
+71,Non-Traded Sectors,United States,Disney,new,USA,1923,True,10600000000000.0,male,Media,True,Roy Disney,452,North America,relation,entertainment,True,False,inherited,1.1,2001
+-1,Traded Sectors,Germany,Oetker-Gruppe,new,DEU,1891,True,1950000000000.0,male,Consumer,True,Rudolf Oetker,90,Europe,relation,food,True,False,inherited,4.4,2001
+60,Financial,United States,Franklin Resources,new,USA,1947,True,10600000000000.0,male,Money Management,True,Rupert Johnson,292,North America,relation,mutal funds,True,False,inherited,1.7,2001
+70,Non-Traded Sectors,United States,News Limited,new,USA,1923,True,10600000000000.0,male,Media,True,Rupert Murdoch,39,North America,relation,media,True,False,inherited,7.8,2001
+74,Financial,Japan,Promise Consumer Finance,new,JPN,1962,True,4160000000000.0,male,Money Management,True,Ryoichi Jinnai,130,East Asia,founder,finance,True,False,self-made finance,3.3,2001
+57,Non-Traded Sectors,United States,Walmart, new,USA,1962,True,10600000000000.0,male,"Retail, Restaurant",True,S Robson Walton,9,North America,relation,retail,True,False,inherited,18.6,2001
+68,Traded Sectors,Turkey,Sabanci Holdings,new,TUR,1926,True,196000000000.0,male,Consumer,True,Sakip Sabanci,116,Middle East/North Africa,relation,textiles,True,False,inherited,3.5,2001
+89,Financial,Saudi Arabia,Al-Rajhi Bank,new,SAU,1957,True,183000000000.0,male,Money Management,True,Saleh Al Rajhi,387,Middle East/North Africa,founder,banking,True,False,self-made finance,1.3,2001
+59,Financial,Saudi Arabia,Dallah al Baraka Group,new,SAU,1969,True,183000000000.0,male,Money Management,True,Saleh Kamel,151,Middle East/North Africa,founder,airport maintenance,True,False,self-made finance,3.0,2001
+59,Financial,United States,Equity Group Investments,new,USA,1968,True,10600000000000.0,male,Real Estate,True,Sam Zell,251,North America,founder,real estate,True,False,self-made finance,1.9,2001
+-1,Traded Sectors,Israel,Zodiac Maritime Agencies,new,ISR,1950,True,130000000000.0,male,Consumer,True,Sammy Ofer,222,Middle East/North Africa,relation,shipping,True,False,inherited,2.1,2001
+72,Traded Sectors,United States,S. C. Johnson & Son,new,USA,1886,True,10600000000000.0,male,Consumer,True,Samuel Johnson,82,North America,relation,cleaning supplies,True,False,inherited,4.5,2001
+-1,Financial,United States,LeFrack ,new,USA,1905,True,10600000000000.0,male,Real Estate,True,Samuel LeFrak,174,North America,relation,real estate,True,False,inherited,2.7,2001
+73,Non-Traded Sectors,United States,Advance Publications,new,USA,1909,True,10600000000000.0,male,Media,True,Samuel Newhouse,70,North America,relation,media,True,False,inherited,5.0,2001
+68,Financial,United States,"Cogan, Berlind, Weill & Levitt",new,USA,1960,True,10600000000000.0,male,Money Management,True,Sanford Weill,312,North America,founder,stock broker,True,False,self-made finance,1.6,2001
+-1,Financial,United States,i2 Technologies,new,USA,1988,True,10600000000000.0,male,Money Management,True,Sanjiv Sidhu,109,North America,founder,software,True,False,self-made finance,3.7,2001
+-1,New Sectors,United States,Juniper Networks,new,USA,1996,True,10600000000000.0,male,Technology-Computer,True,Scott Kriens,490,North America,CEO,networking equipment,True,False,executive,1.0,2001
+-1,New Sectors,United States,Sun Microsystems,new,USA,1982,True,10600000000000.0,male,Technology-Computer,True,Scott McNealy,292,North America,founder,microchips,True,False,founder non-finance,1.7,2001
+76,0,France,Dassault Group,new,FRA,1914,True,1380000000000.0,male,Other,True,Serge Dassault,75,Europe,relation,aviation,True,False,inherited,4.9,2001
+73,0,Switzerland,Globus,new,CHE,1928,True,279000000000.0,male,Other,True,Sergio Mantegazza,222,Europe,relation,travel company,True,False,inherited,2.1,2001
+43,Non-Traded Sectors,Israel,Carnival Corporation,new,ISR,1972,True,130000000000.0,female,"Retail, Restaurant",True,Shari Arison,109,Middle East/North Africa,relation,banking,True,False,inherited,3.7,2001
+67,Financial,United States,Las Vegas Sands, acquired,USA,1988,True,10600000000000.0,male,Real Estate,True,Sheldon Adelson,490,North America,founder, casinos,True,False,self-made finance,1.0,2001
+55,New Sectors,India,HCL,new,IND,1976,True,494000000000.0,male,Technology-Computer,True,Shiv Nadar,209,South Asia,founder,technology,True,False,founder non-finance,2.2,2001
+-1,New Sectors,Japan,Taisho Pharmaceutical,new,JPN,1912,True,4160000000000.0,male,Technology-Medical,True,Shoji Uehara,490,East Asia,relation,pharmaceuticals,True,False,inherited,1.0,2001
+58,Resource Related,United States,Sid Richardson Gasoline Co,new,USA,1919,True,10600000000000.0,male,Energy,True,Sid Bass,104,North America,relation,oil,True,False,inherited,3.8,2001
+73,Traded Sectors,United States,Jones Apparel Group,new,USA,1970,True,10600000000000.0,male,Consumer,True,Sidney Kimmel,452,North America,founder,apparel,True,False,founder non-finance,1.1,2001
+64,Non-Traded Sectors,Italy,Fininvest,new,ITA,1978,True,1160000000000.0,male,Media,True,Silvio Berlusconi,29,Europe,founder,media,True,False,privatized and resources,10.3,2001
+42,Non-Traded Sectors,Italy,Fastweb,new,ITA,1999,True,1160000000000.0,male,Media,True,Silvio Scaglia,387,Europe,founder,telecommunications,True,False,founder non-finance,1.3,2001
+-1,New Sectors,Greece,Intracom,neew,GRC,1977,True,136000000000.0,male,Technology-Computer,True,Socrates Kokkalis,421,Europe,CEO,software,True,True,privatized and resources,1.2,2001
+55,0,Japan,Benesse Corporation,new,JPN,1955,True,4160000000000.0,male,Other,True,Soichiro Fukutake,363,East Asia,relation,publishing,True,False,inherited,1.4,2001
+54,Financial,Greece,EFG International,new,GRC,1938,True,136000000000.0,male,Money Management,True,Spiro Latsis,79,Europe,relation,shipping,True,False,inherited,4.6,2001
+47,Financial,United States,Duquesne Capital,new,USA,1981,True,10600000000000.0,male,Hedge funds,True,Stanley Druckenmiller,363,North America,founder,hedge funds,True,False,self-made finance,1.4,2001
+79,Financial,Hong Kong,Sociedade de Turismo e Divers?es de Macau,new,HKG,1962,True,169000000000.0,male,Real Estate,True,Stanley Ho,452,East Asia,founder,casinos,True,False,self-made finance,1.1,2001
+67,Non-Traded Sectors,United States,Hubbard Broadcasting Inc,new,USA,1925,True,10600000000000.0,male,Media,True,Stanley Hubbard,312,North America,owner,media,True,False,executive,1.6,2001
+53,Traded Sectors,Sweden, H&M, new,SWE,1947,True,240000000000.0,male,Consumer,True,Stefan Persson,64,Europe,relation, fashion,True,False,inherited,5.3,2001
+-1,Financial,Germany,Schorghuber Group,new,DEU,1954,True,1950000000000.0,male,Real Estate,True,Stefan Schoerghuber,251,Europe,relation,real estate,True,False,inherited,1.9,2001
+44,Non-Traded Sectors,Norway,RIMI,new,NOR,1977,True,174000000000.0,male,"Retail, Restaurant",True,Stein Erik Hagen,363,Europe,founder,groceries,True,False,founder non-finance,1.4,2001
+-1,Non-Traded Sectors,Greece,Easy Jet,new,GRC,1995,True,136000000000.0,male,"Retail, Restaurant",True,Stelios Haji-Ioannou,336,Europe,founder,airline,True,False,founder non-finance,1.5,2001
+53,Financial,Switzerland,Holcim,new,CHE,1912,True,279000000000.0,male,Money Management,True,Stephan Schmidheiny,116,Europe,relation,construction,True,False,inherited,3.5,2001
+75,Non-Traded Sectors,United States,Bechtel Corporation,new,USA,1898,True,10600000000000.0,male,Constrution,True,Stephen Bechtel,151,North America,relation,construction,True,False,inherited,3.0,2001
+49,New Sectors,United States,AOL,new,USA,1985,True,10600000000000.0,male,Technology-Computer,True,Stephen Case,363,North America,Chairman and Chief Executive Officer,internet company,True,False,executive,1.4,2001
+44,New Sectors,United States,Microsoft,new,USA,1975,True,10600000000000.0,male,Technology-Computer,True,Steven Ballmer,13,North America,CEO,technology,True,False,executive,16.6,2001
+46,New Sectors,United States,Apple,new,USA,1976,True,10600000000000.0,male,Technology-Computer,True,Steven Jobs,387,North America,founder,technology,True,False,founder non-finance,1.3,2001
+48,New Sectors,United States,Danaher,new,USA,1979,True,10600000000000.0,male,Technology-Medical,True,Steven Rales,336,North America,founder,venture capitalist,True,False,founder non-finance,1.5,2001
+54,Non-Traded Sectors,United States,DreamWorks,new,USA,1994,True,10600000000000.0,male,Media,True,Steven Spielberg,222,North America,founder,movies,True,False,founder non-finance,2.1,2001
+55,0,United States,International Lease Finance Corporation,new,USA,1973,True,10600000000000.0,male,Other,True,Steven Udvar-Hazy,167,North America,founder,aircraft leasing,True,False,founder non-finance,2.8,2001
+-1,Financial,Saudi Arabia,General Contracting Company,new,SAU,1947,True,183000000000.0,male,Diversified financial,True,Suliman Olayan,38,Middle East/North Africa,founder,oil infrastructure,True,False,self-made finance,8.0,2001
+77,Non-Traded Sectors,United States,National Amusements,new,USA,1936,True,10600000000000.0,male,Media,True,Sumner Redstone,18,North America,relation,media,True,False,inherited,12.6,2001
+68,Traded Sectors,United States,Berkshire Hathaway,new,USA,1962,True,10600000000000.0,female,Consumer,True,Susan Thompson Buffett,198,North America,relation, Finance,True,False,inherited,2.3,2001
+-1,Traded Sectors,United States,Matrix,new,USA,1980,True,10600000000000.0,female,Consumer,True,Sydell Miller,421,North America,founder,hair care products,True,False,founder non-finance,1.2,2001
+54,Traded Sectors,Japan,YKK,new,JPN,1934,True,4160000000000.0,male,Consumer,True,Tadahiro Yoshida,209,East Asia,relation,zippers,True,False,inherited,2.2,2001
+52,Non-Traded Sectors,Japan,Fast Retailing/Uniqlo,new,JPN,1963,True,4160000000000.0,male,"Retail, Restaurant",True,Tadashi Yanai,76,East Asia,founder,apparel,True,False,founder non-finance,4.8,2001
+55,New Sectors,Japan,Keyence,new,JPN,1974,True,4160000000000.0,male,Technology-Computer,True,Takemitsu Takizaki,182,East Asia,founder,technology,True,False,founder non-finance,2.5,2001
+62,Non-Traded Sectors,United States,CNN,aquired,USA,1970,True,10600000000000.0,male,Media,True,Ted Turner,35,North America,founder,media,True,False,founder non-finance,8.8,2001
+-1,New Sectors,Canada,Mitel,new,CAN,1972,True,733000000000.0,male,Technology-Computer,True,Terence Matthews,251,North America,founder,technology consulting,True,False,founder non-finance,1.9,2001
+-1,New Sectors,Taiwan,Foxconn,new,Taiwan,1974,True,0.0,male,Technology-Computer,True,Terry Gou,198,East Asia,founder,technology,True,False,founder non-finance,2.3,2001
+74,New Sectors,Japan,Funai Electric,new,JPN,1961,True,4160000000000.0,male,Technology-Computer,True,Tetsuro Funai,312,East Asia,founder,electronics,True,False,founder non-finance,1.6,2001
+-1,Financial,Thailand,Advanced Info Service,new,THA,1986,True,116000000000.0,male,Real Estate,True,Thaksin Shinawatra,421,East Asia,founder,mobile phones,True,True,privatized and resources,1.2,2001
+-1,Non-Traded Sectors,Germany,Aldi,new,DEU,1913,True,1950000000000.0,male,"Retail, Restaurant",True,Theo and Karl Albrecht,5,Europe,founder,groceries,True,False,founder non-finance,25.0,2001
+38,New Sectors,United States,Gateway,new,USA,1985,True,10600000000000.0,male,Technology-Computer,True,Theodore Waitt,234,North America,founder,computers,True,False,founder non-finance,2.0,2001
+64,Financial,United States,Janus Capital Group,new,USA,1969,True,10600000000000.0,male,Money Management,True,Thomas Bailey,490,North America,founder,mutual funds,True,False,self-made finance,1.0,2001
+68,Financial,United States,The Flatley Co,new,USA,1958,True,10600000000000.0,male,Real Estate,True,Thomas Flatley,452,North America,founder,real estate,True,False,self-made finance,1.1,2001
+62,New Sectors,United States,Hostpital Corporation of America,new,USA,1968,True,10600000000000.0,male,Technology-Medical,True,Thomas Frist,363,North America,founder/relation,hospitals,True,False,founder non-finance,1.4,2001
+50,Financial,United States,Hyatt,aquired,USA,1957,True,10600000000000.0,male,Real Estate,True,Thomas Pritzker,57,North America,relation,hotels,True,False,inherited,5.5,2001
+55,Non-Traded Sectors,Switzerland,Holcim,new,CHE,1912,True,279000000000.0,male,Constrution,True,Thomas Schmidheiny,179,Europe,relation,cement,True,False,inherited,2.6,2001
+48,New Sectors,United States,Siebel Systems,new,USA,1993,True,10600000000000.0,male,Technology-Computer,True,Thomas Siebel,209,North America,founder,software,True,False,founder non-finance,2.2,2001
+65,Resource Related,Malaysia,Rimbunan Hijau Group,new,MYS,1976,True,92783947368.0,male,Mining and metals,True,Tiong Hiew King,336,East Asia,founder,timber,True,False,privatized and resources,1.5,2001
+58,Non-Traded Sectors,Japan,Takenaka Corporation,new,JPN,1610,True,4160000000000.0,male,Constrution,True,Toichi Takenaka,490,East Asia,relation,construction,True,False,inherited,1.0,2001
+36,Financial,United States,Platinum Equity,new,USA,1995,True,10600000000000.0,male,Private equity/leveraged buyout,True,Tom Gores,490,North America,founder,private equity,True,False,self-made finance,1.0,2001
+76,Financial,Taiwan,Lin Yuan Group,new,Taiwan,1962,True,0.0,male,Hedge funds,True,Tsai Wan-lin,104,East Asia,founder,banking and insurance,True,False,self-made finance,3.8,2001
+57,Traded Sectors,United States,Ty Inc.,new,USA,1986,True,10600000000000.0,male,Consumer,True,Ty Warner,98,North America,founder,toys,True,False,founder non-finance,4.0,2001
+50,Resource Related,Russia,Lukoil,new,RUS,1990,True,307000000000.0,male,Energy,True,Vagit Alekperov,387,Europe,founder,oil,True,True,privatized and resources,1.3,2001
+56,Non-Traded Sectors,Hong Kong,Li & Fung Group,new,HKG,1906,True,169000000000.0,male,"Retail, Restaurant",True,Victor Fung,452,East Asia,relation,supply chain,True,False,inherited,1.1,2001
+-1,Resource Related,Russia,Gazprom,state owned enterprise,RUS,1989,True,307000000000.0,male,Energy,True,Viktor Chernomyrdin,452,Europe,founder,natural gas,True,True,privatized and resources,1.1,2001
+-1,New Sectors,United States,Patrol Software North America,new,USA,1992,True,10600000000000.0,male,Technology-Computer,True,Vincent Smith,387,North America,founder,software,True,False,founder non-finance,1.3,2001
+46,Financial,United States,Sun Microsystems,new,USA,1982,True,10600000000000.0,male,Venture Capital,True,Vinod Khosla,490,North America,founder,software,True,False,self-made finance,1.0,2001
+-1,Non-Traded Sectors,United Kingdom,Associated Newspapers,new,GBR,1896,True,1530000000000.0,male,Media,True,Viscount Rothermere,452,Europe,relation,media,True,False,inherited,1.1,2001
+49,Resource Related,Russia,Surgutneftegaz,privatization,RUS,1993,True,307000000000.0,male,Energy,True,Vladimir Bogdanov,312,Europe,president,oil,True,False,privatized and resources,1.6,2001
+40,Resource Related,Russia,Interros,new,RUS,1991,True,307000000000.0,male,Mining and metals,True,Vladimir Potanin,272,Europe,founder,private investment company,True,False,privatized and resources,1.8,2001
+71,Traded Sectors,Canada,McCain Foods Limited,new,CAN,1956,True,733000000000.0,male,Consumer,True,Wallace McCain,387,North America,founder,food,True,False,founder non-finance,1.3,2001
+-1,Non-Traded Sectors,United States,Philadelphia Inquirer,aquired,USA,1936,True,10600000000000.0,male,Media,True,Walter Annenberg,98,North America,relation,media,True,False,inherited,4.0,2001
+90,New Sectors,Switzerland,Automation Center,new,CHE,1957,True,279000000000.0,male,Technology-Computer,True,Walter Haefner,64,Europe,founder,computer services,True,False,founder non-finance,5.3,2001
+69,Non-Traded Sectors,United States,Piewit Corporation,new,USA,1884,True,10600000000000.0,male,Constrution,True,Walter Scott Jr,452,North America,former CEO,construction,True,False,executive,1.1,2001
+-1,Financial,Hong Kong,Sun Hung Kai Properties,new,HKG,1963,True,169000000000.0,male,Real Estate,True,Walter Thomas and Raymond Kwok,23,East Asia,Relation,real estate,True,False,inherited,11.5,2001
+84,Traded Sectors,Taiwan,Formosa Plastics,new,Taiwan,1954,True,0.0,male,Consumer,True,Wang Yue-che,174,East Asia,founder,petrochemicals,True,False,founder non-finance,2.7,2001
+70,Traded Sectors,United States,Berkshire Hathaway,new,USA,1962,True,10600000000000.0,male,Consumer,True,Warren Buffett,2,North America,founder, Finance,True,False,founder non-finance,32.3,2001
+72,Financial,Singapore,United Overseas Bank,new,SGP,1935,True,89285087395.0,male,Money Management,True,Wee Cho Yaw,490,East Asia,relation,banking,True,False,inherited,1.0,2001
+-1,Non-Traded Sectors,Switzerland,Liebherr,new,CHE,1949,True,279000000000.0,married couple,Constrution,True,Willi and Isolde Liebherr,363,Europe,relation,construction,True,False,inherited,1.4,2001
+69,New Sectors,United States,Cook Group,new,USA,1963,True,10600000000000.0,male,Technology-Medical,True,William Cook,452,North America,founder,medical technology,True,False,founder non-finance,1.1,2001
+78,Traded Sectors,United States,Guardian Industries,new,USA,1932,True,10600000000000.0,male,Non-consumer industrial,True,William Davidson,198,North America,relation,glass,True,False,executive,2.3,2001
+-1,Traded Sectors,United States,Ford Motor Company,new,USA,1903,True,10600000000000.0,male,Consumer,True,William Ford,363,North America,relation,automobiles,True,False,inherited,1.4,2001
+68,0,United States,NASCAR,new,USA,1947,True,10600000000000.0,male,Other,True,William France Jr,490,North America,relation,sports,True,False,inherited,1.0,2001
+53,Traded Sectors,Hong Kong,Li & Fung Group,new,HKG,1906,True,169000000000.0,male,Consumer,True,William Fung,452,East Asia,relation,supply chain,True,False,inherited,1.1,2001
+51,Non-Traded Sectors,United States,Hearst Corporation,new,USA,1887,True,10600000000000.0,male,Media,True,William Hearst III,490,North America,relation,media,True,False,inherited,1.0,2001
+57,Non-Traded Sectors,United States,Khol's,new,USA,1962,True,10600000000000.0,male,"Retail, Restaurant",True,William Kellogg,363,North America,CEO,retail,True,False,executive,1.4,2001
+-1,Non-Traded Sectors,United States,Outdoor Systems,new,USA,1947,True,10600000000000.0,male,Constrution,True,William Levine,387,North America,founder,advertising,True,False,founder non-finance,1.3,2001
+45,New Sectors,United States,Jabil Circuit,new,USA,1966,True,10600000000000.0,male,Technology-Computer,True,William Morean,312,North America,founder,computer parts,True,False,founder non-finance,1.6,2001
+37,Traded Sectors,United States,Wm Wrigley Jr. Company,new,USA,1891,True,10600000000000.0,male,Consumer,True,William Wrigley,146,North America,relation,gum,True,False,inherited,3.1,2001
+52,Resource Related,United States,Standard Oil,new,USA,1870,True,10600000000000.0,male,Energy,True,Winthrop Rockefeller,421,North America,relation,oil,True,False,inherited,1.2,2001
+71,Financial,Japan,Takefuji,new,JPN,0,True,4160000000000.0,male,Money Management,True,Yasuo Takei,37,East Asia,founder,finance,True,False,self-made finance,8.3,2001
+-1,Non-Traded Sectors,Japan,Pasona Inc,new,JPN,1976,True,4160000000000.0,male,"Retail, Restaurant",True,Yasuyuki Nambu,251,East Asia,founder,staffing services,True,False,founder non-finance,1.9,2001
+66,Financial,Japan,Seibu Corporation,aquired,JPN,1894,True,4160000000000.0,male,Real Estate,True,Yoshiaki Tsutsumi,167,East Asia,relation,real estate,True,False,inherited,2.8,2001
+53,Financial,Japan,Aiful,new,JPN,1967,True,4160000000000.0,male,Money Management,True,Yoshitaka Fukuda,68,East Asia,founder,finance,True,False,self-made finance,5.2,2001
+83,Non-Traded Sectors,United States,Univision,aquired,USA,1955,True,0.0,male,Media,True,A. Jerrold Perenchio,663,North America,former chairman and CEO,media,True,False,executive,2.6,2014
+-1,Non-Traded Sectors,United Arab Emirates,Al-Futtaim Group,new,ARE,1930,True,0.0,male,"Retail, Restaurant",True,Abdulla Al Futtaim,687,Middle East/North Africa,relation,trading,True,False,inherited,2.5,2014
+-1,Financial,United Arab Emirates,Al-Ghurair Group,new,ARE,1960,True,0.0,male,Diversified financial,True,Abdulla bin Ahmad Al Ghurair,305,Middle East/North Africa,relation,industrial goods,True,False,inherited,4.8,2014
+-1,Financial,Saudi Arabia,Al Rajhi bank,new,SAU,1957,True,0.0,male,Money Management,True,Abdullah Al Rajhi,731,Middle East/North Africa,founder,Banking,True,False,self-made finance,2.4,2014
+54,Traded Sectors,Nigeria,BUA Group,new,NGA,1988,True,0.0,male,Consumer,True,Abdulsamad Rabiu,1372,Sub-Saharan Africa,founder,"sugar, flour, cement",True,False,founder non-finance,1.2,2014
+52,Financial,United States,Fidelity Investments,new,USA,1946,True,0.0,female,Money Management,True,Abigail Johnson,50,North America,relation,investment banking,True,False,inherited,17.3,2014
+77,Non-Traded Sectors,Brazil,Companhia Brasileira de Distribui?ao,new,BRA,1948,True,0.0,male,"Retail, Restaurant",True,Abilio dos Santos Diniz,609,Latin America,relation,retail,True,False,inherited,2.8,2014
+83,Traded Sectors,Indonesia,Trakindo Utama,new,IDN,1980,True,0.0,male,Non-consumer industrial,True,Achmad Hamami,1092,East Asia,founder,heavy equipment,True,False,founder non-finance,1.6,2014
+71,Traded Sectors,India,Godrej Group,new,IND,1897,True,0.0,male,Consumer,True,Adi Godrej,446,South Asia,relation,security,True,False,inherited,3.5,2014
+44,Traded Sectors,United States,Est?Lauder,new,USA,1946,True,0.0,female,Consumer,True,Aerin Lauder Zinterhofer,1465,North America,relation,makeup,True,False,inherited,1.1,2014
+56,Resource Related,Turkey,Calik Holding,new,TUR,1981,True,0.0,male,Energy,True,Ahmet Calik,1465,Middle East/North Africa,relation,textiles,True,False,privatized and resources,1.1,2014
+69,Financial,Turkey,Zorlu Holding,new,TUR,1953,True,0.0,male,Diversified financial,True,Ahmet Nazif Zorlu,1372,Middle East/North Africa,founder,textiles,True,False,self-made finance,1.2,2014
+63,Traded Sectors,Turkey,Yildiz Holding,new,TUR,1944,True,0.0,female,Consumer,True,Ahsen Ozokur,1143,Middle East/North Africa,relation,food products,True,False,inherited,1.6,2014
+51,Resource Related,Russia,TAIF Group,new,RUS,1995,True,0.0,male,Energy,True,Airat Shaimiev,1465,Europe,owner,oil,True,False,privatized and resources,1.1,2014
+53,Resource Related,India,Indusgas,new,IND,1998,True,0.0,male,Energy,True,Ajay Kalsi,973,South Asia,founder,gas,True,False,privatized and resources,1.9,2014
+58,New Sectors,India,Piramel,aquired,IND,1984,True,0.0,male,Technology-Medical,True,Ajay Piramal,1203,South Asia,founder,pharmaceuticals,True,False,founder non-finance,1.5,2014
+70,Non-Traded Sectors,Japan,Nitori,new,JPN,1967,True,0.0,male,"Retail, Restaurant",True,Akio Nitori,1284,East Asia,founder,home furnishings,True,False,founder non-finance,1.3,2014
+77,Financial,Japan,Mori Building,new,JPN,1959,True,0.0,male,Real Estate,True,Akira Mori,354,East Asia,relation,construction,True,False,inherited,4.2,2014
+64,Non-Traded Sectors,Canada,Alimentation Couche-Tard,new,CAN,1980,True,0.0,male,"Retail, Restaurant",True,Alain Bouchard,1036,North America,founder,retail,True,False,founder non-finance,1.8,2014
+76,New Sectors,France,Institut Merieux,new,FRA,1897,True,0.0,male,Technology-Medical,True,Alain Merieux,396,Europe,relation,pharmaceuticals,True,False,inherited,3.8,2014
+66,Financial,France,Altarea Cogedim,new,FRA,1994,True,0.0,male,Real Estate,True,Alain Taravella,1284,Europe,founder,real estate,True,False,self-made finance,1.3,2014
+65,Traded Sectors,France,Chanel,new,FRA,1909,True,0.0,male,Consumer,True,Alain Wertheimer,141,Europe,relation,luxury goods,True,False,inherited,9.0,2014
+84,Non-Traded Sectors,United States,Cablevision Industries,new,USA,1956,True,0.0,male,Media,True,Alan Gerry,1210,North America,founder,media,True,False,founder non-finance,1.4,2014
+50,Financial,United Kingdom,Brevan Howard Asset Management,new,GBR,2002,True,0.0,male,Hedge funds,True,Alan Howard,1092,Europe,founder,hedge funds,True,False,self-made finance,1.6,2014
+61,Non-Traded Sectors,Australia,AHL,new,AUS,1913,True,0.0,male,Media,True,Alan Rydge,1540,North America,relation,entertainment,True,False,inherited,1.1,2014
+68,Non-Traded Sectors,Belgium,Blokker Holding,new,BEL,1896,True,0.0,male,"Retail, Restaurant",True,Albert Blokker,1210,Europe,relation,retail,True,False,inherited,1.4,2014
+88,Financial,Belgium,Groupe Bruxelles Lambert,aquired,BEL,1956,True,0.0,male,Diversified financial,True,Albert Frere,295,Europe,founder,steel/banking,True,False,self-made finance,4.9,2014
+59,Resource Related,Russia,TAIF Group,new,RUS,1995,True,0.0,male,Energy,True,Albert Shigaboutdinov,1465,Europe,owner,oil,True,False,privatized and resources,1.1,2014
+30,Financial,Germany,von Thurn and Taxis family,new,DEU,1615,True,0.0,male,Diversified financial,True,Albert von Thurn und Taxis,1092,Europe,relation,"postal service, beverages",True,False,inherited,1.6,2014
+70,Financial,Hong Kong,Emperor Group,new,HKG,1964,True,0.0,male,Real Estate,True,Albert Yeung,1465,East Asia,founder,watch retail,True,False,self-made finance,1.1,2014
+71,Financial,Spain,Construcciones y Contratas,aquired,ESP,1952,True,0.0,male,Diversified financial,True,Alberto Alcocer,1565,Europe,owner,construction,True,False,self-made finance,1.0,2014
+82,Resource Related,Mexico,Penoles,privatization,MEX,1960,True,0.0,male,Mining and metals,True,Alberto Bailleres Gonzalez,90,Latin America,relation,mining,True,False,inherited,12.4,2014
+73,Traded Sectors,Italy,Brembo SpA,new,ITA,1961,True,0.0,male,Consumer,True,Alberto Bombassei,1372,Europe,relation,braking systems,True,False,executive,1.2,2014
+68,Financial,Spain,Construcciones y Contratas,aquired,ESP,1952,True,0.0,male,Diversified financial,True,Alberto Cortina,1210,Europe,owner,construction,True,False,self-made finance,1.4,2014
+56,New Sectors,Argentina,Laboratorios Roemmers,new,ARG,1921,True,0.0,male,Technology-Medical,True,Alberto Roemmers,1372,Latin America,relation,pharmaceuticals,True,False,inherited,1.2,2014
+60,Financial,United States,The Gores Group,new,USA,1987,True,0.0,male,Private equity/leveraged buyout,True,Alec Gores,869,North America,founder,private equity,True,False,self-made finance,2.0,2014
+37,Traded Sectors,Colombia,Santo Domingo Group,aquired,COL,1889,True,0.0,male,Consumer,True,Alejandro Santo Domingo Davila,102,Latin America,relation,beer,True,False,inherited,11.1,2014
+46,Resource Related,United Kingdom,Glencore Xstrata,new,GBR,1974,True,0.0,male,Mining and metals,True,Alex Beard,925,Europe,leadership,mining,True,False,privatized and resources,2.0,2014
+55,Resource Related,Russia,EvrazHolding,aquired,RUS,1992,True,0.0,male,Non-consumer industrial,True,Alexander Abramov,396,Europe,Chairman,steel ,True,False,privatized and resources,3.8,2014

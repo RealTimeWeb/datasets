@@ -1,7 +1,8 @@
-drugs
-_slavery
-johnsongrass
-slavery_old
-airports
-baseball
-books
+drugs.corgis
+_slavery.corgis
+johnsongrass.corgis
+slavery_old.corgis
+airports.corgis
+baseball.corgis
+books.corgis
+drug_bank.corgis

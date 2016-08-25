@@ -1,0 +1,1001 @@
+Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude CI Lower,Crude CI Upper,Crude Rate,Event Type,Population,Race,Sex,Year
+160.6,170.5,165.5,Alabama,4366,184.8,196.1,190.4,Mortality,2293259,All Races,Female,1999
+361.1,376.1,368.6,Alabama,9452,402.2,418.8,410.5,Incidence,2302835,All Races,Female,2000
+160.8,170.6,165.7,Alabama,4425,186.5,197.9,192.2,Mortality,2302835,All Races,Female,2000
+376.4,391.6,384.0,Alabama,9938,421.9,438.9,430.3,Incidence,2309496,All Races,Female,2001
+164.7,174.7,169.7,Alabama,4550,191.3,202.8,197.0,Mortality,2309496,All Races,Female,2001
+381.5,396.8,389.1,Alabama,10133,429.3,446.4,437.8,Incidence,2314370,All Races,Female,2002
+158.3,168.0,163.1,Alabama,4407,184.8,196.1,190.4,Mortality,2314370,All Races,Female,2002
+357.4,372.1,364.7,Alabama,9592,404.5,421.1,412.7,Incidence,2324069,All Races,Female,2003
+158.9,168.6,163.7,Alabama,4472,186.8,198.1,192.4,Mortality,2324069,All Races,Female,2003
+376.8,391.9,384.3,Alabama,10221,428.8,445.8,437.2,Incidence,2337857,All Races,Female,2004
+158.9,168.5,163.6,Alabama,4498,186.8,198.1,192.4,Mortality,2337857,All Races,Female,2004
+381.1,396.2,388.6,Alabama,10489,437.0,454.1,445.5,Incidence,2354514,All Races,Female,2005
+160.2,169.8,165.0,Alabama,4599,189.7,201.1,195.3,Mortality,2354514,All Races,Female,2005
+377.1,392.0,384.5,Alabama,10545,433.7,450.6,442.0,Incidence,2385480,All Races,Female,2006
+153.9,163.3,158.6,Alabama,4490,182.8,193.8,188.2,Mortality,2385480,All Races,Female,2006
+386.7,401.7,394.2,Alabama,10957,446.7,463.8,455.2,Incidence,2407275,All Races,Female,2007
+151.8,161.1,156.4,Alabama,4492,181.2,192.1,186.6,Mortality,2407275,All Races,Female,2007
+393.2,399.8,396.5,Alabama,57019,462.7,470.4,466.5,Incidence,12222298,All Races,Female,2007-2011
+154.4,158.5,156.4,Alabama,22892,186.2,191.1,188.7,Mortality,12134084,All Races,Female,2007-2011
+399.8,414.8,407.2,Alabama,11583,468.0,485.4,476.6,Incidence,2430257,All Races,Female,2008
+152.3,161.4,156.8,Alabama,4618,184.6,195.6,190.0,Mortality,2430257,All Races,Female,2008
+393.8,408.7,401.2,Alabama,11530,462.4,479.6,471.0,Incidence,2448159,All Races,Female,2009
+152.7,161.9,157.3,Alabama,4668,185.2,196.2,190.7,Mortality,2448159,All Races,Female,2009
+387.6,402.3,394.9,Alabama,11549,460.4,477.6,469.0,Incidence,2462708,All Races,Female,2010
+148.8,157.7,153.2,Alabama,4624,182.4,193.2,187.7,Mortality,2462913,All Races,Female,2010
+377.9,392.4,385.1,Alabama,11400,452.4,469.3,460.8,Incidence,2473899,All Races,Female,2011
+148.8,157.7,153.2,Alabama,4624,182.4,193.2,187.7,Mortality,2462913,All Races,Female,2011
+275.0,290.9,282.9,Alabama,5140,234.0,247.2,240.5,Mortality,2136882,All Races,Male,1999
+521.4,542.3,531.7,Alabama,10371,473.3,491.9,482.5,Incidence,2149338,All Races,Male,2000
+283.9,300.0,291.8,Alabama,5382,243.8,257.2,250.4,Mortality,2149338,All Races,Male,2000
+549.5,570.8,560.1,Alabama,11112,505.4,524.6,514.9,Incidence,2158138,All Races,Male,2001
+275.0,290.8,282.8,Alabama,5251,236.8,250.0,243.3,Mortality,2158138,All Races,Male,2001
+545.1,566.2,555.6,Alabama,11250,509.9,529.1,519.5,Incidence,2165719,All Races,Male,2002
+272.6,288.2,280.3,Alabama,5291,237.8,251.0,244.3,Mortality,2165719,All Races,Male,2002
+536.2,557.0,546.5,Alabama,11196,504.2,523.3,513.7,Incidence,2179422,All Races,Male,2003
+268.9,284.2,276.5,Alabama,5340,238.5,251.7,245.0,Mortality,2179422,All Races,Male,2003
+561.7,582.8,572.2,Alabama,12000,537.5,557.1,547.2,Incidence,2192872,All Races,Male,2004
+261.3,276.4,268.8,Alabama,5258,233.3,246.3,239.8,Mortality,2192872,All Races,Male,2004
+556.0,576.7,566.3,Alabama,12154,539.9,559.5,549.6,Incidence,2211403,All Races,Male,2005
+258.6,273.4,265.9,Alabama,5314,233.9,246.8,240.3,Mortality,2211403,All Races,Male,2005
+564.3,584.8,574.4,Alabama,12765,559.1,578.9,569.0,Incidence,2243501,All Races,Male,2006
+255.5,270.0,262.7,Alabama,5409,234.7,247.6,241.1,Mortality,2243501,All Races,Male,2006
+570.9,591.3,581.1,Alabama,13199,572.7,592.6,582.6,Incidence,2265565,All Races,Male,2007
+254.8,269.1,261.8,Alabama,5533,237.8,250.7,244.2,Mortality,2265565,All Races,Male,2007
+564.4,573.2,568.8,Alabama,67396,580.9,589.7,585.3,Incidence,11515137,All Races,Male,2007-2011
+252.3,258.5,255.4,Alabama,27699,239.5,245.2,242.4,Mortality,11429282,All Races,Male,2007-2011
+579.9,600.3,590.1,Alabama,13671,587.5,607.6,597.5,Incidence,2287949,All Races,Male,2008
+248.6,262.5,255.5,Alabama,5564,236.8,249.7,243.2,Mortality,2287949,All Races,Male,2008
+568.2,588.2,578.1,Alabama,13659,581.5,601.4,591.4,Incidence,2309779,All Races,Male,2009
+246.3,260.0,253.1,Alabama,5621,237.0,249.8,243.4,Mortality,2309779,All Races,Male,2009
+545.5,564.8,555.1,Alabama,13499,571.6,591.2,581.3,Incidence,2322054,All Races,Male,2010
+238.3,251.6,244.9,Alabama,5572,233.7,246.3,239.9,Mortality,2322488,All Races,Male,2010
+532.3,551.3,541.7,Alabama,13368,564.1,583.6,573.8,Incidence,2329790,All Races,Male,2011
+238.3,251.6,244.9,Alabama,5572,233.7,246.3,239.9,Mortality,2322488,All Races,Male,2011
+206.5,215.1,210.8,Alabama,9506,210.3,218.9,214.6,Mortality,4430141,All Races,Male and Female,1999
+426.2,438.3,432.2,Alabama,19823,439.1,451.5,445.2,Incidence,4452173,All Races,Male and Female,2000
+210.4,219.0,214.7,Alabama,9807,215.9,224.7,220.3,Mortality,4452173,All Races,Male and Female,2000
+447.7,460.0,453.9,Alabama,21050,464.8,477.6,471.2,Incidence,4467634,All Races,Male and Female,2001
+208.6,217.0,212.8,Alabama,9801,215.1,223.8,219.4,Mortality,4467634,All Races,Male and Female,2001
+449.3,461.6,455.4,Alabama,21383,470.9,483.7,477.3,Incidence,4480089,All Races,Male and Female,2002
+204.3,212.6,208.4,Alabama,9698,212.2,220.8,216.5,Mortality,4480089,All Races,Male and Female,2002
+431.0,443.0,437.0,Alabama,20788,455.3,467.9,461.6,Incidence,4503491,All Races,Male and Female,2003
+204.1,212.4,208.3,Alabama,9812,213.6,222.2,217.9,Mortality,4503491,All Races,Male and Female,2003
+454.0,466.1,460.0,Alabama,22221,484.0,496.9,490.5,Incidence,4530729,All Races,Male and Female,2004
+200.5,208.7,204.6,Alabama,9756,211.1,219.6,215.3,Mortality,4530729,All Races,Male and Female,2004
+455.2,467.3,461.2,Alabama,22643,489.5,502.4,495.9,Incidence,4565917,All Races,Male and Female,2005
+200.7,208.8,204.7,Alabama,9913,212.9,221.4,217.1,Mortality,4565917,All Races,Male and Female,2005
+457.9,469.9,463.9,Alabama,23310,497.1,510.1,503.6,Incidence,4628981,All Races,Male and Female,2006
+195.8,203.8,199.8,Alabama,9899,209.7,218.1,213.8,Mortality,4628981,All Races,Male and Female,2006
+466.3,478.3,472.3,Alabama,24156,510.4,523.5,516.9,Incidence,4672840,All Races,Male and Female,2007
+194.6,202.5,198.5,Alabama,10025,210.4,218.8,214.5,Mortality,4672840,All Races,Male and Female,2007
+465.9,471.2,468.5,Alabama,124415,521.2,527.1,524.1,Incidence,23737435,All Races,Male and Female,2007-2011
+194.7,198.2,196.4,Alabama,50591,212.8,216.6,214.7,Mortality,23563366,All Races,Male and Female,2007-2011
+477.8,489.8,483.8,Alabama,25254,528.7,541.9,535.2,Incidence,4718206,All Races,Male and Female,2008
+193.4,201.2,197.3,Alabama,10182,211.6,220.0,215.8,Mortality,4718206,All Races,Male and Female,2008
+469.1,481.0,475.0,Alabama,25189,522.9,536.0,529.4,Incidence,4757938,All Races,Male and Female,2009
+192.5,200.1,196.3,Alabama,10289,212.1,220.5,216.2,Mortality,4757938,All Races,Male and Female,2009
+456.5,468.1,462.3,Alabama,25048,517.0,530.0,523.5,Incidence,4784762,All Races,Male and Female,2010
+187.0,194.5,190.7,Alabama,10196,208.9,217.2,213.1,Mortality,4785401,All Races,Male and Female,2010
+444.6,456.0,450.3,Alabama,24768,509.2,522.1,515.6,Incidence,4803689,All Races,Male and Female,2011
+187.0,194.5,190.7,Alabama,10196,208.9,217.2,213.1,Mortality,4785401,All Races,Male and Female,2011
+167.5,190.2,178.6,Alabama,984,148.1,168.0,157.8,Mortality,623475,Black,Female,1999
+319.1,349.9,334.2,Alabama,1848,281.3,308.3,294.5,Incidence,627439,Black,Female,2000
+164.0,186.3,174.9,Alabama,977,146.1,165.8,155.7,Mortality,627439,Black,Female,2000
+336.9,368.3,352.4,Alabama,1970,298.6,326.4,312.3,Incidence,630901,Black,Female,2001
+180.9,204.1,192.3,Alabama,1077,160.7,181.2,170.7,Mortality,630901,Black,Female,2001
+335.8,367.0,351.1,Alabama,1979,298.8,326.5,312.5,Incidence,633374,Black,Female,2002
+168.6,191.0,179.6,Alabama,1011,149.9,169.8,159.6,Mortality,633374,Black,Female,2002
+337.7,368.7,353.0,Alabama,2023,304.0,331.8,317.6,Incidence,636876,Black,Female,2003
+168.3,190.6,179.2,Alabama,1018,150.2,170.0,159.8,Mortality,636876,Black,Female,2003
+352.9,384.4,368.4,Alabama,2141,319.6,348.0,333.6,Incidence,641873,Black,Female,2004
+167.2,189.4,178.0,Alabama,1016,148.7,168.3,158.3,Mortality,641873,Black,Female,2004
+361.0,392.6,376.6,Alabama,2227,330.0,358.7,344.1,Incidence,647132,Black,Female,2005
+165.9,187.7,176.6,Alabama,1032,149.9,169.5,159.5,Mortality,647132,Black,Female,2005
+339.0,369.4,354.0,Alabama,2147,312.8,340.6,326.5,Incidence,657654,Black,Female,2006
+157.2,178.3,167.5,Alabama,1004,143.4,162.4,152.7,Mortality,657654,Black,Female,2006
+354.4,385.0,369.5,Alabama,2293,330.9,359.3,344.9,Incidence,664831,Black,Female,2007
+166.7,188.2,177.2,Alabama,1076,152.3,171.8,161.8,Mortality,664831,Black,Female,2007
+370.7,384.4,377.5,Alabama,12174,352.7,365.5,359.0,Incidence,3390753,Black,Female,2007-2011
+165.9,175.2,170.5,Alabama,5294,153.4,161.9,157.6,Mortality,3358838,Black,Female,2007-2011
+368.5,399.5,383.7,Alabama,2435,347.5,376.4,361.8,Incidence,673102,Black,Female,2008
+162.8,183.9,173.1,Alabama,1079,150.9,170.2,160.3,Mortality,673102,Black,Female,2008
+366.1,396.8,381.2,Alabama,2460,348.3,377.1,362.5,Incidence,678586,Black,Female,2009
+160.7,181.6,171.0,Alabama,1073,148.8,167.9,158.1,Mortality,678586,Black,Female,2009
+363.4,393.9,378.4,Alabama,2484,348.8,377.5,362.9,Incidence,684469,Black,Female,2010
+154.6,174.8,164.5,Alabama,1062,145.9,164.7,155.1,Mortality,684665,Black,Female,2010
+359.7,389.8,374.5,Alabama,2502,348.7,377.2,362.7,Incidence,689765,Black,Female,2011
+154.6,174.8,164.5,Alabama,1062,145.9,164.7,155.1,Mortality,684665,Black,Female,2011
+341.1,382.6,361.5,Alabama,1219,213.6,239.1,226.1,Mortality,539198,Black,Male,1999
+542.0,592.1,566.7,Alabama,2062,363.4,396.4,379.6,Incidence,543178,Black,Male,2000
+342.4,383.9,362.8,Alabama,1235,214.9,240.4,227.4,Mortality,543178,Black,Male,2000
+582.6,634.5,608.2,Alabama,2235,392.1,426.2,408.9,Incidence,546578,Black,Male,2001
+350.6,392.7,371.2,Alabama,1276,220.8,246.6,233.5,Mortality,546578,Black,Male,2001
+591.2,643.3,616.9,Alabama,2310,403.6,438.1,420.6,Incidence,549217,Black,Male,2002
+334.2,375.5,354.5,Alabama,1223,210.4,235.5,222.7,Mortality,549217,Black,Male,2002
+561.6,612.3,586.6,Alabama,2235,387.4,421.0,403.9,Incidence,553307,Black,Male,2003
+326.4,367.2,346.4,Alabama,1220,208.3,233.2,220.5,Mortality,553307,Black,Male,2003
+619.1,672.2,645.3,Alabama,2507,432.4,467.8,449.8,Incidence,557319,Black,Male,2004
+319.0,359.7,339.0,Alabama,1187,201.0,225.5,213.0,Mortality,557319,Black,Male,2004
+619.6,671.8,645.4,Alabama,2612,446.4,482.2,464.0,Incidence,562888,Black,Male,2005
+322.4,362.8,342.2,Alabama,1235,207.3,232.0,219.4,Mortality,562888,Black,Male,2005
+598.5,649.0,623.4,Alabama,2623,440.5,475.7,457.9,Incidence,572880,Black,Male,2006
+305.8,344.6,324.8,Alabama,1221,201.3,225.4,213.1,Mortality,572880,Black,Male,2006
+597.3,647.3,621.9,Alabama,2692,447.5,482.8,464.9,Incidence,579036,Black,Male,2007
+314.4,353.5,333.5,Alabama,1278,208.8,233.2,220.7,Mortality,579036,Black,Male,2007
+595.7,617.2,606.4,Alabama,13981,464.8,480.5,472.6,Incidence,2958467,Black,Male,2007-2011
+306.0,322.8,314.3,Alabama,6229,207.4,218.0,212.7,Mortality,2929130,Black,Male,2007-2011
+619.9,670.4,644.8,Alabama,2866,471.3,507.3,489.0,Incidence,586075,Black,Male,2008
+295.7,333.3,314.1,Alabama,1244,200.6,224.4,212.3,Mortality,586075,Black,Male,2008
+601.9,650.9,626.1,Alabama,2880,468.4,504.0,485.9,Incidence,592661,Black,Male,2009
+296.9,334.3,315.3,Alabama,1277,203.8,227.6,215.5,Mortality,592661,Black,Male,2009
+557.3,603.7,580.1,Alabama,2790,449.2,484.0,466.4,Incidence,598247,Black,Male,2010
+269.3,304.4,286.5,Alabama,1209,190.8,213.7,202.0,Mortality,598478,Black,Male,2010
+540.8,586.3,563.2,Alabama,2753,440.1,474.4,457.0,Incidence,602448,Black,Male,2011
+269.3,304.4,286.5,Alabama,1209,190.8,213.7,202.0,Mortality,598478,Black,Male,2011
+236.1,256.9,246.3,Alabama,2203,181.6,197.6,189.5,Mortality,1162673,Black,Male and Female,1999
+409.8,436.5,423.0,Alabama,3910,323.6,344.6,334.0,Incidence,1170617,Black,Male and Female,2000
+233.6,254.1,243.7,Alabama,2212,181.2,197.0,189.0,Mortality,1170617,Black,Male and Female,2000
+435.6,463.0,449.1,Alabama,4205,346.4,368.1,357.1,Incidence,1177479,Black,Male and Female,2001
+246.9,267.9,257.2,Alabama,2353,191.8,208.1,199.8,Mortality,1177479,Black,Male and Female,2001
+439.3,466.6,452.8,Alabama,4289,351.9,373.7,362.7,Incidence,1182591,Black,Male and Female,2002
+232.5,252.8,242.5,Alabama,2234,181.2,196.9,188.9,Mortality,1182591,Black,Male and Female,2002
+427.7,454.5,441.0,Alabama,4258,347.1,368.7,357.8,Incidence,1190183,Black,Male and Female,2003
+230.8,251.0,240.7,Alabama,2238,180.3,196.0,188.0,Mortality,1190183,Black,Male and Female,2003
+460.2,487.8,473.9,Alabama,4648,376.5,398.9,387.6,Incidence,1199192,Black,Male and Female,2004
+226.0,246.0,235.9,Alabama,2203,176.1,191.5,183.7,Mortality,1199192,Black,Male and Female,2004
+467.7,495.3,481.3,Alabama,4839,388.7,411.3,399.9,Incidence,1210020,Black,Male and Female,2005
+226.4,246.1,236.1,Alabama,2267,179.7,195.2,187.4,Mortality,1210020,Black,Male and Female,2005
+447.0,473.7,460.2,Alabama,4770,376.7,398.8,387.6,Incidence,1230534,Black,Male and Female,2006
+215.9,235.0,225.3,Alabama,2225,173.4,188.5,180.8,Mortality,1230534,Black,Male and Female,2006
+455.4,482.0,468.5,Alabama,4985,389.7,412.0,400.8,Incidence,1243867,Black,Male and Female,2007
+224.6,243.9,234.1,Alabama,2354,181.7,197.1,189.2,Mortality,1243867,Black,Male and Female,2007
+462.2,473.9,468.0,Alabama,26155,407.0,417.0,411.9,Incidence,6349220,Black,Male and Female,2007-2011
+219.2,227.5,223.3,Alabama,11523,179.9,186.6,183.3,Mortality,6287968,Black,Male and Female,2007-2011
+473.7,500.6,487.0,Alabama,5301,409.7,432.5,421.0,Incidence,1259177,Black,Male and Female,2008
+215.8,234.6,225.0,Alabama,2323,177.1,192.1,184.5,Mortality,1259177,Black,Male and Female,2008
+465.8,492.3,478.9,Alabama,5340,408.9,431.5,420.1,Incidence,1271247,Black,Male and Female,2009
+214.6,233.2,223.7,Alabama,2350,177.5,192.5,184.9,Mortality,1271247,Black,Male and Female,2009
+446.0,471.6,458.7,Alabama,5274,400.1,422.4,411.2,Incidence,1282716,Black,Male and Female,2010
+200.8,218.7,209.6,Alabama,2271,169.8,184.4,177.0,Mortality,1283143,Black,Male and Female,2010
+436.1,461.2,448.5,Alabama,5255,395.7,417.8,406.7,Incidence,1292213,Black,Male and Female,2011
+200.8,218.7,209.6,Alabama,2271,169.8,184.4,177.0,Mortality,1283143,Black,Male and Female,2011
+0,0,0,Alabama,0,0,0,0,Mortality,28101,Hispanic,Female,1999
+106.5,228.2,159.5,Alabama,32,66.0,136.3,96.5,Incidence,33147,Hispanic,Female,2000
+0,0,0,Alabama,0,0,0,0,Mortality,33147,Hispanic,Female,2000
+145.8,284.1,207.3,Alabama,42,81.7,153.3,113.4,Incidence,37034,Hispanic,Female,2001
+0,0,0,Alabama,0,0,0,0,Mortality,37034,Hispanic,Female,2001
+197.1,354.2,268.1,Alabama,52,95.2,167.1,127.4,Incidence,40803,Hispanic,Female,2002
+0,0,0,Alabama,0,0,0,0,Mortality,40803,Hispanic,Female,2002
+105.1,209.8,151.2,Alabama,41,65.5,123.8,91.3,Incidence,44927,Hispanic,Female,2003
+0,0,0,Alabama,0,0,0,0,Mortality,44927,Hispanic,Female,2003
+146.4,272.0,202.7,Alabama,50,75.1,133.5,101.2,Incidence,49391,Hispanic,Female,2004
+0,0,0,Alabama,0,0,0,0,Mortality,49391,Hispanic,Female,2004
+163.9,295.5,223.4,Alabama,54,74.2,128.9,98.8,Incidence,54647,Hispanic,Female,2005
+0,0,0,Alabama,0,0,0,0,Mortality,54647,Hispanic,Female,2005
+151.3,272.7,206.1,Alabama,58,73.0,124.2,96.1,Incidence,60364,Hispanic,Female,2006
+0,0,0,Alabama,0,0,0,0,Mortality,60364,Hispanic,Female,2006
+149.0,268.5,203.1,Alabama,61,70.3,118.0,91.9,Incidence,66377,Hispanic,Female,2007
+47.2,124.2,79.8,Alabama,22,20.8,50.2,33.1,Mortality,66377,Hispanic,Female,2007
+188.4,237.2,211.9,Alabama,389,91.5,111.9,101.3,Incidence,384119,Hispanic,Female,2007-2011
+42.3,70.2,55.1,Alabama,73,15.9,25.6,20.3,Mortality,359043,Hispanic,Female,2007-2011
+203.6,326.9,260.3,Alabama,94,105.1,159.2,130.1,Incidence,72259,Hispanic,Female,2008
+0,0,0,Alabama,0,0,0,0,Mortality,72259,Hispanic,Female,2008
+139.8,245.9,187.9,Alabama,69,69.1,112.3,88.8,Incidence,77734,Hispanic,Female,2009
+0,0,0,Alabama,0,0,0,0,Mortality,77734,Hispanic,Female,2009
+140.8,242.1,186.9,Alabama,71,67.4,108.9,86.3,Incidence,82236,Hispanic,Female,2010
+31.3,94.4,57.5,Alabama,17,12.0,33.1,20.7,Mortality,82309,Hispanic,Female,2010
+174.5,278.7,222.5,Alabama,94,88.8,134.5,109.9,Incidence,85513,Hispanic,Female,2011
+31.3,94.4,57.5,Alabama,17,12.0,33.1,20.7,Mortality,82309,Hispanic,Female,2011
+0,0,0,Alabama,0,0,0,0,Mortality,37082,Hispanic,Male,1999
+177.1,352.2,254.9,Alabama,43,70.9,132.0,98.0,Incidence,43869,Hispanic,Male,2000
+0,0,0,Alabama,0,0,0,0,Mortality,43869,Hispanic,Male,2000
+165.6,338.0,242.1,Alabama,41,60.4,114.2,84.2,Incidence,48688,Hispanic,Male,2001
+0,0,0,Alabama,0,0,0,0,Mortality,48688,Hispanic,Male,2001
+143.2,286.5,206.6,Alabama,48,66.3,119.2,89.9,Incidence,53376,Hispanic,Male,2002
+0,0,0,Alabama,0,0,0,0,Mortality,53376,Hispanic,Male,2002
+123.5,258.2,182.8,Alabama,41,50.3,95.0,70.0,Incidence,58545,Hispanic,Male,2003
+0,0,0,Alabama,0,0,0,0,Mortality,58545,Hispanic,Male,2003
+226.5,404.6,307.4,Alabama,69,84.0,136.7,108.0,Incidence,63893,Hispanic,Male,2004
+0,0,0,Alabama,0,0,0,0,Mortality,63893,Hispanic,Male,2004
+224.4,396.2,302.6,Alabama,71,78.8,127.3,100.9,Incidence,70344,Hispanic,Male,2005
+46.4,146.8,87.9,Alabama,18,15.2,40.4,25.6,Mortality,70344,Hispanic,Male,2005
+201.8,369.1,277.7,Alabama,66,65.9,108.4,85.2,Incidence,77478,Hispanic,Male,2006
+0,0,0,Alabama,0,0,0,0,Mortality,77478,Hispanic,Male,2006
+162.0,296.5,222.8,Alabama,69,63.7,103.6,81.9,Incidence,84275,Hispanic,Male,2007
+0,0,0,Alabama,0,0,0,0,Mortality,84275,Hispanic,Male,2007
+213.7,272.6,242.0,Alabama,405,75.6,92.0,83.5,Incidence,485102,Hispanic,Male,2007-2011
+66.0,106.5,84.8,Alabama,97,17.2,25.9,21.3,Mortality,456381,Hispanic,Male,2007-2011
+256.1,430.2,336.2,Alabama,87,76.2,117.3,95.1,Incidence,91450,Hispanic,Male,2008
+67.7,172.5,112.8,Alabama,27,19.5,43.0,29.5,Mortality,91450,Hispanic,Male,2008
+168.7,300.3,228.5,Alabama,69,54.3,88.4,69.8,Incidence,98784,Hispanic,Male,2009
+61.2,166.0,106.0,Alabama,23,14.8,34.9,23.3,Mortality,98784,Hispanic,Male,2009
+172.1,295.1,228.3,Alabama,93,72.0,109.2,89.2,Incidence,104292,Hispanic,Male,2010
+51.3,138.9,88.6,Alabama,23,14.0,33.1,22.0,Mortality,104394,Hispanic,Male,2010
+158.2,268.9,208.8,Alabama,87,65.6,101.0,81.8,Incidence,106301,Hispanic,Male,2011
+51.3,138.9,88.6,Alabama,23,14.0,33.1,22.0,Mortality,104394,Hispanic,Male,2011
+43.3,128.2,78.7,Alabama,17,15.2,41.8,26.1,Mortality,65183,Hispanic,Male and Female,1999
+153.0,253.2,198.9,Alabama,75,76.6,122.1,97.4,Incidence,77016,Hispanic,Male and Female,2000
+0,0,0,Alabama,0,0,0,0,Mortality,77016,Hispanic,Male and Female,2000
+168.9,274.3,217.4,Alabama,83,77.1,120.0,96.8,Incidence,85722,Hispanic,Male and Female,2001
+38.6,105.9,67.1,Alabama,18,12.4,33.2,21.0,Mortality,85722,Hispanic,Male and Female,2001
+189.0,293.3,237.4,Alabama,100,86.4,129.1,106.2,Incidence,94179,Hispanic,Male and Female,2002
+48.6,117.8,78.5,Alabama,23,15.5,36.6,24.4,Mortality,94179,Hispanic,Male and Female,2002
+125.4,206.8,162.7,Alabama,82,63.0,98.4,79.2,Incidence,103472,Hispanic,Male and Female,2003
+23.1,67.0,41.3,Alabama,17,9.6,26.3,16.4,Mortality,103472,Hispanic,Male and Female,2003
+200.8,304.4,249.1,Alabama,119,87.0,125.7,105.0,Incidence,113284,Hispanic,Male and Female,2004
+35.4,90.7,59.1,Alabama,24,13.6,31.5,21.2,Mortality,113284,Hispanic,Male and Female,2004
+209.3,313.4,258.0,Alabama,125,83.2,119.2,100.0,Incidence,124991,Hispanic,Male and Female,2005
+42.4,97.4,66.3,Alabama,31,16.9,35.2,24.8,Mortality,124991,Hispanic,Male and Female,2005
+189.9,287.7,235.5,Alabama,124,74.8,107.3,90.0,Incidence,137842,Hispanic,Male and Female,2006
+23.7,67.1,41.9,Alabama,18,7.7,20.6,13.1,Mortality,137842,Hispanic,Male and Female,2006
+171.2,259.7,212.4,Alabama,130,72.1,102.5,86.3,Incidence,150652,Hispanic,Male and Female,2007
+41.2,92.7,63.7,Alabama,33,15.1,30.8,21.9,Mortality,150652,Hispanic,Male and Female,2007
+205.3,242.7,223.5,Alabama,794,85.1,97.9,91.3,Incidence,869221,Hispanic,Male and Female,2007-2011
+56.9,80.1,67.9,Alabama,170,17.8,24.2,20.8,Mortality,815424,Hispanic,Male and Female,2007-2011
+237.3,337.3,284.5,Alabama,181,95.0,127.9,110.6,Incidence,163709,Hispanic,Male and Female,2008
+57.8,115.8,83.7,Alabama,42,18.5,34.7,25.7,Mortality,163709,Hispanic,Male and Female,2008
+167.9,251.6,207.0,Alabama,138,65.7,92.4,78.2,Incidence,176518,Hispanic,Male and Female,2009
+50.1,105.9,74.9,Alabama,37,14.8,28.9,21.0,Mortality,176518,Hispanic,Male and Female,2009
+170.1,248.1,206.7,Alabama,164,75.0,102.5,87.9,Incidence,186528,Hispanic,Male and Female,2010
+48.9,100.7,72.0,Alabama,40,15.3,29.2,21.4,Mortality,186703,Hispanic,Male and Female,2010
+177.8,252.2,212.8,Alabama,181,81.1,109.2,94.4,Incidence,191814,Hispanic,Male and Female,2011
+48.9,100.7,72.0,Alabama,40,15.3,29.2,21.4,Mortality,186703,Hispanic,Male and Female,2011
+156.6,167.6,162.0,Alabama,3373,198.7,212.6,205.6,Mortality,1640665,White,Female,1999
+365.1,382.3,373.6,Alabama,7441,442.5,463.1,452.7,Incidence,1643761,White,Female,2000
+157.8,168.9,163.3,Alabama,3438,202.2,216.3,209.2,Mortality,1643761,White,Female,2000
+384.4,402.0,393.1,Alabama,7884,468.6,489.8,479.1,Incidence,1645541,White,Female,2001
+158.6,169.6,164.0,Alabama,3460,203.3,217.4,210.3,Mortality,1645541,White,Female,2001
+391.6,409.3,400.4,Alabama,8058,478.8,500.2,489.4,Incidence,1646445,White,Female,2002
+153.9,164.7,159.2,Alabama,3382,198.5,212.5,205.4,Mortality,1646445,White,Female,2002
+359.1,376.0,367.5,Alabama,7468,442.2,462.7,452.4,Incidence,1650890,White,Female,2003
+154.6,165.5,160.0,Alabama,3435,201.2,215.1,208.1,Mortality,1650890,White,Female,2003
+382.1,399.5,390.7,Alabama,8002,472.2,493.5,482.8,Incidence,1657539,White,Female,2004
+155.4,166.2,160.7,Alabama,3464,202.1,216.1,209.0,Mortality,1657539,White,Female,2004
+384.1,401.5,392.7,Alabama,8143,478.0,499.2,488.5,Incidence,1666877,White,Female,2005
+156.6,167.4,161.9,Alabama,3544,205.7,219.7,212.6,Mortality,1666877,White,Female,2005
+385.6,402.9,394.1,Alabama,8276,480.6,501.8,491.1,Incidence,1685050,White,Female,2006
+150.9,161.5,156.1,Alabama,3460,198.5,212.3,205.3,Mortality,1685050,White,Female,2006
+393.0,410.4,401.6,Alabama,8531,491.9,513.3,502.6,Incidence,1697518,White,Female,2007
+146.7,157.1,151.8,Alabama,3403,193.8,207.3,200.5,Mortality,1697518,White,Female,2007
+398.1,405.8,401.9,Alabama,44031,508.1,517.6,512.8,Incidence,8585884,White,Female,2007-2011
+150.8,155.4,153.1,Alabama,17485,201.7,207.8,204.7,Mortality,8539689,White,Female,2007-2011
+403.8,421.3,412.5,Alabama,8961,513.2,535.0,524.0,Incidence,1710122,White,Female,2008
+148.0,158.3,153.1,Alabama,3516,198.9,212.5,205.6,Mortality,1710122,White,Female,2008
+399.1,416.5,407.7,Alabama,8931,508.5,530.1,519.2,Incidence,1720115,White,Female,2009
+148.9,159.2,154.0,Alabama,3570,200.8,214.5,207.5,Mortality,1720115,White,Female,2009
+391.7,408.8,400.2,Alabama,8904,505.0,526.4,515.6,Incidence,1726861,White,Female,2010
+145.4,155.6,150.4,Alabama,3536,198.1,211.6,204.8,Mortality,1726884,White,Female,2010
+379.6,396.4,387.9,Alabama,8704,492.2,513.4,502.8,Incidence,1731268,White,Female,2011
+145.4,155.6,150.4,Alabama,3536,198.1,211.6,204.8,Mortality,1726884,White,Female,2011
+258.3,275.6,266.8,Alabama,3912,241.3,257.0,249.1,Mortality,1570643,White,Male,1999
+504.7,527.7,516.1,Alabama,8097,502.6,525.1,513.7,Incidence,1576095,White,Male,2000
+268.7,286.2,277.3,Alabama,4137,254.5,270.6,262.5,Mortality,1576095,White,Male,2000
+537.2,560.7,548.8,Alabama,8785,544.4,567.7,556.0,Incidence,1580087,White,Male,2001
+255.3,272.3,263.7,Alabama,3961,242.9,258.6,250.7,Mortality,1580087,White,Male,2001
+532.2,555.5,543.8,Alabama,8873,548.8,572.2,560.4,Incidence,1583267,White,Male,2002
+256.0,272.9,264.3,Alabama,4053,248.2,264.0,256.0,Mortality,1583267,White,Male,2002
+524.1,547.1,535.5,Alabama,8825,543.2,566.4,554.7,Incidence,1590946,White,Male,2003
+253.3,269.9,261.5,Alabama,4102,250.0,265.8,257.8,Mortality,1590946,White,Male,2003
+545.4,568.5,556.8,Alabama,9396,576.1,599.9,587.9,Incidence,1598272,White,Male,2004
+247.1,263.4,255.2,Alabama,4057,246.1,261.8,253.8,Mortality,1598272,White,Male,2004
+535.2,557.9,546.4,Alabama,9392,571.9,595.6,583.7,Incidence,1609163,White,Male,2005
+243.2,259.1,251.1,Alabama,4067,245.0,260.6,252.7,Mortality,1609163,White,Male,2005
+552.6,575.2,563.8,Alabama,10013,602.6,626.8,614.6,Incidence,1629110,White,Male,2006
+243.0,258.7,250.7,Alabama,4170,248.3,263.9,256.0,Mortality,1629110,White,Male,2006
+557.0,579.5,568.2,Alabama,10301,614.9,639.1,626.9,Incidence,1643115,White,Male,2007
+240.6,256.0,248.2,Alabama,4242,250.5,266.1,258.2,Mortality,1643115,White,Male,2007
+546.9,556.6,551.7,Alabama,51910,618.6,629.4,624.0,Incidence,8319320,White,Male,2007-2011
+240.8,247.6,244.2,Alabama,21371,254.9,261.8,258.4,Mortality,8271927,White,Male,2007-2011
+559.2,581.6,570.3,Alabama,10525,623.3,647.7,635.4,Incidence,1656414,White,Male,2008
+237.0,252.1,244.5,Alabama,4294,251.5,267.1,259.2,Mortality,1656414,White,Male,2008
+546.4,568.4,557.3,Alabama,10452,614.3,638.3,626.2,Incidence,1669087,White,Male,2009
+234.0,248.9,241.4,Alabama,4329,251.7,267.2,259.4,Mortality,1669087,White,Male,2009
+530.9,552.4,541.6,Alabama,10408,609.8,633.8,621.7,Incidence,1674032,White,Male,2010
+229.6,244.2,236.8,Alabama,4336,251.3,266.8,259.0,Mortality,1674201,White,Male,2010
+513.1,534.0,523.4,Alabama,10224,598.0,621.7,609.8,Incidence,1676672,White,Male,2011
+229.6,244.2,236.8,Alabama,4336,251.3,266.8,259.0,Mortality,1674201,White,Male,2011
+198.1,207.5,202.7,Alabama,7285,221.7,232.1,226.9,Mortality,3211308,White,Male and Female,1999
+421.9,435.5,428.7,Alabama,15538,475.0,490.2,482.6,Incidence,3219856,White,Male and Female,2000
+203.6,213.0,208.2,Alabama,7575,230.0,240.6,235.3,Mortality,3219856,White,Male and Female,2000
+448.2,462.1,455.1,Alabama,16669,509.0,524.7,516.8,Incidence,3225628,White,Male and Female,2001
+197.8,207.1,202.4,Alabama,7421,224.9,235.4,230.1,Mortality,3225628,White,Male and Female,2001
+450.4,464.3,457.3,Alabama,16931,516.4,532.2,524.2,Incidence,3229712,White,Male and Female,2002
+196.0,205.2,200.6,Alabama,7435,225.0,235.5,230.2,Mortality,3229712,White,Male and Female,2002
+428.1,441.5,434.7,Alabama,16293,494.9,510.4,502.6,Incidence,3241836,White,Male and Female,2003
+196.2,205.3,200.7,Alabama,7537,227.3,237.8,232.5,Mortality,3241836,White,Male and Female,2003
+451.2,465.0,458.1,Alabama,17398,526.5,542.4,534.4,Incidence,3255811,White,Male and Female,2004
+193.7,202.7,198.1,Alabama,7521,225.8,236.3,231.0,Mortality,3255811,White,Male and Female,2004
+448.9,462.6,455.7,Alabama,17535,527.4,543.2,535.2,Incidence,3276040,White,Male and Female,2005
+193.3,202.3,197.8,Alabama,7611,227.1,237.6,232.3,Mortality,3276040,White,Male and Female,2005
+458.7,472.4,465.5,Alabama,18289,543.9,559.9,551.8,Incidence,3314160,White,Male and Female,2006
+189.7,198.5,194.1,Alabama,7630,225.1,235.4,230.2,Mortality,3314160,White,Male and Female,2006
+465.1,478.7,471.9,Alabama,18832,555.7,571.8,563.7,Incidence,3340633,White,Male and Female,2007
+186.8,195.5,191.1,Alabama,7645,223.7,234.0,228.8,Mortality,3340633,White,Male and Female,2007
+461.9,467.9,464.9,Alabama,95941,563.9,571.1,567.5,Incidence,16905204,White,Male and Female,2007-2011
+188.8,192.6,190.7,Alabama,38856,228.8,233.4,231.1,Mortality,16811616,White,Male and Female,2007-2011
+472.1,485.8,478.9,Alabama,19486,570.7,587.0,578.8,Incidence,3366536,White,Male and Female,2008
+187.3,195.9,191.5,Alabama,7810,226.9,237.2,232.0,Mortality,3366536,White,Male and Female,2008
+463.2,476.7,469.9,Alabama,19383,563.9,580.0,571.9,Incidence,3389202,White,Male and Female,2009
+186.2,194.8,190.5,Alabama,7899,228.0,238.3,233.1,Mortality,3389202,White,Male and Female,2009
+453.4,466.7,460.0,Alabama,19312,559.9,575.9,567.9,Incidence,3400893,White,Male and Female,2010
+182.4,190.7,186.5,Alabama,7872,226.4,236.6,231.5,Mortality,3401085,White,Male and Female,2010
+438.2,451.1,444.6,Alabama,18928,547.5,563.4,555.4,Incidence,3407940,White,Male and Female,2011
+182.4,190.7,186.5,Alabama,7872,226.4,236.6,231.5,Mortality,3401085,White,Male and Female,2011
+425.5,488.9,456.4,Alaska,941,292.7,333.0,312.3,Incidence,301266,All Races,Female,1999
+148.5,190.0,168.4,Alaska,295,87.1,109.8,97.9,Mortality,301266,All Races,Female,1999
+431.3,493.4,461.6,Alaska,982,303.9,344.8,323.9,Incidence,303213,All Races,Female,2000
+163.0,205.2,183.3,Alaska,331,97.7,121.6,109.2,Mortality,303213,All Races,Female,2000
+419.3,478.6,448.2,Alaska,1016,312.4,353.6,332.5,Incidence,305579,All Races,Female,2001
+149.3,188.9,168.4,Alaska,315,92.0,115.1,103.1,Mortality,305579,All Races,Female,2001
+391.9,448.0,419.3,Alaska,986,298.9,339.0,318.4,Incidence,309633,All Races,Female,2002
+141.3,178.8,159.3,Alaska,317,91.4,114.3,102.4,Mortality,309633,All Races,Female,2002
+404.6,460.9,432.1,Alaska,1045,313.9,354.7,333.8,Incidence,313034,All Races,Female,2003
+140.3,177.1,158.0,Alaska,322,91.9,114.7,102.9,Mortality,313034,All Races,Female,2003
+418.2,474.3,445.7,Alaska,1116,330.9,372.4,351.2,Incidence,317807,All Races,Female,2004
+135.5,171.3,152.7,Alaska,317,89.1,111.4,99.7,Mortality,317807,All Races,Female,2004
+428.4,484.8,456.0,Alaska,1148,337.3,379.0,357.7,Incidence,320920,All Races,Female,2005
+130.3,164.1,146.6,Alaska,328,91.4,113.9,102.2,Mortality,320920,All Races,Female,2005
+422.2,476.9,449.0,Alaska,1192,346.1,388.1,366.6,Incidence,325121,All Races,Female,2006
+150.9,186.9,168.3,Alaska,381,105.7,129.6,117.2,Mortality,325121,All Races,Female,2006
+406.9,459.8,432.8,Alaska,1181,340.7,382.2,361.0,Incidence,327138,All Races,Female,2007
+145.8,180.6,162.5,Alaska,383,105.6,129.4,117.1,Mortality,327138,All Races,Female,2007
+413.0,435.5,424.1,Alaska,6221,360.3,378.7,369.4,Incidence,1684131,All Races,Female,2007-2011
+153.5,168.7,161.0,Alaska,1958,112.7,123.2,117.9,Mortality,1661250,All Races,Female,2007-2011
+419.6,472.0,445.2,Alaska,1272,365.2,408.0,386.1,Incidence,329412,All Races,Female,2008
+142.9,176.6,159.1,Alaska,397,109.0,133.0,120.5,Mortality,329412,All Races,Female,2008
+390.2,440.3,414.7,Alaska,1215,340.5,381.4,360.5,Incidence,337002,All Races,Female,2009
+149.9,184.4,166.5,Alaska,404,108.5,132.2,119.9,Mortality,337002,All Races,Female,2009
+396.5,445.8,420.6,Alaska,1289,356.0,397.4,376.3,Incidence,342540,All Races,Female,2010
+134.4,166.2,149.7,Alaska,393,103.7,126.6,114.7,Mortality,342577,All Races,Female,2010
+386.1,434.4,409.8,Alaska,1264,343.4,383.8,363.2,Incidence,348039,All Races,Female,2011
+134.4,166.2,149.7,Alaska,393,103.7,126.6,114.7,Mortality,342577,All Races,Female,2011
+527.8,608.8,567.4,Alaska,1026,298.0,337.2,317.1,Incidence,323513,All Races,Male,1999
+201.0,258.9,228.8,Alaska,338,93.6,116.2,104.5,Mortality,323513,All Races,Male,1999
+549.1,631.4,589.3,Alaska,1072,310.6,350.5,330.1,Incidence,324750,All Races,Male,2000
+218.0,276.7,246.2,Alaska,373,103.5,127.1,114.9,Mortality,324750,All Races,Male,2000
+565.5,646.1,604.9,Alaska,1172,337.0,378.2,357.2,Incidence,328135,All Races,Male,2001
+209.1,265.0,236.0,Alaska,374,102.7,126.1,114.0,Mortality,328135,All Races,Male,2001
+567.1,645.3,605.4,Alaska,1253,356.0,398.1,376.6,Incidence,332704,All Races,Male,2002
+210.3,265.4,236.9,Alaska,398,108.2,132.0,119.6,Mortality,332704,All Races,Male,2002
+536.1,611.3,572.9,Alaska,1219,343.3,384.5,363.5,Incidence,335380,All Races,Male,2003
+208.7,261.8,234.3,Alaska,413,111.6,135.6,123.1,Mortality,335380,All Races,Male,2003
+556.1,629.8,592.2,Alaska,1317,365.1,407.1,385.7,Incidence,341479,All Races,Male,2004
+203.8,255.0,228.5,Alaska,411,109.0,132.6,120.4,Mortality,341479,All Races,Male,2004
+480.5,547.0,513.0,Alaska,1222,333.6,373.5,353.2,Incidence,346026,All Races,Male,2005
+188.4,237.0,211.8,Alaska,404,105.6,128.7,116.8,Mortality,346026,All Races,Male,2005
+503.8,571.5,536.9,Alaska,1304,352.4,393.2,372.4,Incidence,350181,All Races,Male,2006
+175.3,219.8,196.7,Alaska,409,105.8,128.7,116.8,Mortality,350181,All Races,Male,2006
+493.2,558.9,525.4,Alaska,1334,357.7,398.6,377.7,Incidence,353162,All Races,Male,2007
+193.8,240.3,216.2,Alaska,456,117.5,141.5,129.1,Mortality,353162,All Races,Male,2007
+487.9,515.1,501.4,Alaska,6986,374.8,392.9,383.8,Incidence,1820425,All Races,Male,2007-2011
+200.8,220.5,210.5,Alaska,2317,123.9,134.5,129.1,Mortality,1794848,All Races,Male,2007-2011
+494.5,558.2,525.7,Alaska,1398,370.3,411.5,390.5,Incidence,358043,All Races,Male,2008
+192.5,237.1,214.0,Alaska,470,119.7,143.7,131.3,Mortality,358043,All Races,Male,2008
+487.4,550.1,518.1,Alaska,1431,375.2,416.5,395.4,Incidence,361893,All Races,Male,2009
+190.5,234.0,211.6,Alaska,491,123.9,148.2,135.7,Mortality,361893,All Races,Male,2009
+477.5,537.8,507.0,Alaska,1455,371.8,412.3,391.6,Incidence,371506,All Races,Male,2010
+192.3,235.5,213.2,Alaska,491,120.7,144.4,132.1,Mortality,371569,All Races,Male,2010
+415.1,469.0,441.5,Alaska,1368,345.0,383.8,364.0,Incidence,375821,All Races,Male,2011
+192.3,235.5,213.2,Alaska,491,120.7,144.4,132.1,Mortality,371569,All Races,Male,2011
+481.5,531.5,506.1,Alaska,1967,301.1,329.1,314.8,Incidence,624779,All Races,Male and Female,1999
+177.5,211.1,193.8,Alaska,633,93.6,109.5,101.3,Mortality,624779,All Races,Male and Female,1999
+490.9,540.2,515.1,Alaska,2054,313.1,341.5,327.1,Incidence,627963,All Races,Male and Female,2000
+192.3,226.2,208.8,Alaska,704,104.0,120.7,112.1,Mortality,627963,All Races,Male and Female,2000
+493.1,540.8,516.6,Alaska,2188,330.9,360.0,345.3,Incidence,633714,All Races,Male and Female,2001
+181.0,213.2,196.7,Alaska,689,100.8,117.2,108.7,Mortality,633714,All Races,Male and Female,2001
+480.3,526.2,502.9,Alaska,2239,334.3,363.3,348.6,Incidence,642337,All Races,Male and Female,2002
+177.1,208.2,192.3,Alaska,715,103.3,119.8,111.3,Mortality,642337,All Races,Male and Female,2002
+472.0,516.9,494.1,Alaska,2264,334.9,363.8,349.2,Incidence,648414,All Races,Male and Female,2003
+175.5,205.7,190.2,Alaska,735,105.3,121.9,113.4,Mortality,648414,All Races,Male and Female,2003
+489.7,534.3,511.7,Alaska,2433,354.5,384.0,369.0,Incidence,659286,All Races,Male and Female,2004
+171.5,201.0,185.9,Alaska,728,102.5,118.7,110.4,Mortality,659286,All Races,Male and Female,2004
+460.2,502.6,481.1,Alaska,2370,341.2,370.0,355.4,Incidence,666946,All Races,Male and Female,2005
+159.8,187.4,173.3,Alaska,732,101.9,118.0,109.8,Mortality,666946,All Races,Male and Female,2005
+465.5,507.5,486.2,Alaska,2496,355.3,384.4,369.6,Incidence,675302,All Races,Male and Female,2006
+166.3,193.7,179.7,Alaska,790,109.0,125.4,117.0,Mortality,675302,All Races,Male and Female,2006
+451.9,492.5,471.9,Alaska,2515,355.4,384.4,369.7,Incidence,680300,All Races,Male and Female,2007
+171.8,199.4,185.2,Alaska,839,115.1,132.0,123.3,Mortality,680300,All Races,Male and Female,2007
+448.9,466.1,457.5,Alaska,13207,370.5,383.3,376.9,Incidence,3504556,All Races,Male and Female,2007-2011
+176.6,188.5,182.5,Alaska,4275,120.0,127.5,123.7,Mortality,3456098,All Races,Male and Female,2007-2011
+459.8,499.8,479.5,Alaska,2670,373.8,403.4,388.4,Incidence,687455,All Races,Male and Female,2008
+170.1,196.9,183.2,Alaska,867,117.9,134.8,126.1,Mortality,687455,All Races,Male and Female,2008
+441.5,480.3,460.6,Alaska,2646,364.3,393.3,378.6,Incidence,698895,All Races,Male and Female,2009
+173.4,200.2,186.5,Alaska,895,119.8,136.7,128.1,Mortality,698895,All Races,Male and Female,2009
+439.1,476.9,457.8,Alaska,2744,370.0,398.9,384.3,Incidence,714046,All Races,Male and Female,2010
+165.4,191.0,177.9,Alaska,884,115.8,132.2,123.8,Mortality,714146,All Races,Male and Female,2010
+405.6,441.1,423.1,Alaska,2632,349.8,377.8,363.6,Incidence,723860,All Races,Male and Female,2011
+165.4,191.0,177.9,Alaska,884,115.8,132.2,123.8,Mortality,714146,All Races,Male and Female,2011
+227.6,664.8,409.7,Alaska,22,108.5,262.1,173.1,Incidence,12710,Black,Female,1999
+0,0,0,Alaska,0,0,0,0,Mortality,12710,Black,Female,1999
+125.1,410.0,238.9,Alaska,16,71.9,204.1,125.7,Incidence,12728,Black,Female,2000
+0,0,0,Alaska,0,0,0,0,Mortality,12728,Black,Female,2000
+287.5,736.4,479.2,Alaska,27,137.9,304.4,209.2,Incidence,12905,Black,Female,2001
+0,0,0,Alaska,0,0,0,0,Mortality,12905,Black,Female,2001
+256.9,634.4,418.0,Alaska,27,133.9,295.7,203.2,Incidence,13286,Black,Female,2002
+0,0,0,Alaska,0,0,0,0,Mortality,13286,Black,Female,2002
+238.9,596.9,391.2,Alaska,26,126.6,283.9,193.8,Incidence,13418,Black,Female,2003
+0,0,0,Alaska,0,0,0,0,Mortality,13418,Black,Female,2003
+229.7,525.9,356.0,Alaska,29,143.7,308.1,214.5,Incidence,13519,Black,Female,2004
+0,0,0,Alaska,0,0,0,0,Mortality,13519,Black,Female,2004
+213.5,543.4,353.6,Alaska,23,108.8,257.5,171.6,Incidence,13402,Black,Female,2005
+0,0,0,Alaska,0,0,0,0,Mortality,13402,Black,Female,2005
+136.0,394.4,242.2,Alaska,18,78.4,209.0,132.2,Incidence,13612,Black,Female,2006
+0,0,0,Alaska,0,0,0,0,Mortality,13612,Black,Female,2006
+261.8,604.2,409.8,Alaska,30,147.4,311.8,218.4,Incidence,13735,Black,Female,2007
+0,0,0,Alaska,0,0,0,0,Mortality,13735,Black,Female,2007
+291.6,422.5,353.0,Alaska,141,166.2,232.8,197.4,Incidence,71429,Black,Female,2007-2011
+97.3,194.1,140.5,Alaska,40,40.8,77.9,57.2,Mortality,69958,Black,Female,2007-2011
+232.3,572.5,378.3,Alaska,27,129.2,285.3,196.1,Incidence,13771,Black,Female,2008
+0,0,0,Alaska,0,0,0,0,Mortality,13771,Black,Female,2008
+204.2,492.6,327.7,Alaska,27,124.4,274.7,188.8,Incidence,14302,Black,Female,2009
+0,0,0,Alaska,0,0,0,0,Mortality,14302,Black,Female,2009
+288.8,617.0,432.5,Alaska,34,162.1,327.0,234.0,Incidence,14529,Black,Female,2010
+0,0,0,Alaska,0,0,0,0,Mortality,14538,Black,Female,2010
+148.8,368.8,241.8,Alaska,23,96.6,228.7,152.4,Incidence,15092,Black,Female,2011
+0,0,0,Alaska,0,0,0,0,Mortality,14538,Black,Female,2011
+523.3,1375.8,887.4,Alaska,32,157.5,325.0,230.2,Incidence,13900,Black,Male,1999
+0,0,0,Alaska,0,0,0,0,Mortality,13900,Black,Male,1999
+478.6,1059.6,730.3,Alaska,35,174.4,348.2,250.4,Incidence,13979,Black,Male,2000
+0,0,0,Alaska,0,0,0,0,Mortality,13979,Black,Male,2000
+460.2,989.8,689.6,Alaska,37,180.4,353.1,256.2,Incidence,14442,Black,Male,2001
+202.0,645.8,382.4,Alaska,17,68.6,188.5,117.7,Mortality,14442,Black,Male,2001
+333.9,733.1,503.7,Alaska,36,169.6,335.1,242.1,Incidence,14871,Black,Male,2002
+0,0,0,Alaska,0,0,0,0,Mortality,14871,Black,Male,2002
+324.3,772.6,515.2,Alaska,31,142.5,297.8,209.8,Incidence,14778,Black,Male,2003
+0,0,0,Alaska,0,0,0,0,Mortality,14778,Black,Male,2003
+553.1,1175.5,828.6,Alaska,41,194.3,367.3,270.7,Incidence,15144,Black,Male,2004
+0,0,0,Alaska,0,0,0,0,Mortality,15144,Black,Male,2004
+336.4,705.4,496.8,Alaska,40,185.9,354.4,260.3,Incidence,15369,Black,Male,2005
+156.6,562.4,321.9,Alaska,17,64.4,177.1,110.6,Mortality,15369,Black,Male,2005
+287.8,700.1,464.4,Alaska,33,146.9,299.7,213.4,Incidence,15466,Black,Male,2006
+0,0,0,Alaska,0,0,0,0,Mortality,15466,Black,Male,2006
+345.8,804.0,544.6,Alaska,37,164.3,321.6,233.3,Incidence,15857,Black,Male,2007
+173.9,591.6,345.6,Alaska,17,62.5,171.7,107.2,Mortality,15857,Black,Male,2007
+481.2,677.6,574.0,Alaska,219,229.0,299.8,262.6,Incidence,83381,Black,Male,2007-2011
+183.7,339.1,254.3,Alaska,63,59.7,99.4,77.7,Mortality,81105,Black,Male,2007-2011
+360.9,822.8,561.4,Alaska,42,185.7,348.2,257.6,Incidence,16304,Black,Male,2008
+187.7,617.1,364.8,Alaska,18,65.4,174.5,110.4,Mortality,16304,Black,Male,2008
+417.2,910.6,634.1,Alaska,44,196.5,363.0,270.4,Incidence,16271,Black,Male,2009
+0,0,0,Alaska,0,0,0,0,Mortality,16271,Black,Male,2009
+551.2,1070.4,783.8,Alaska,59,261.3,442.7,343.2,Incidence,17191,Black,Male,2010
+0,0,0,Alaska,0,0,0,0,Mortality,17207,Black,Male,2010
+227.8,536.7,360.5,Alaska,37,146.7,287.2,208.4,Incidence,17758,Black,Male,2011
+0,0,0,Alaska,0,0,0,0,Mortality,17207,Black,Male,2011
+425.9,808.9,597.9,Alaska,54,152.4,264.8,202.9,Incidence,26610,Black,Male and Female,1999
+0,0,0,Alaska,0,0,0,0,Mortality,26610,Black,Male and Female,1999
+338.8,648.5,477.1,Alaska,51,142.2,251.1,191.0,Incidence,26707,Black,Male and Female,2000
+133.2,361.7,229.4,Alaska,21,48.7,120.2,78.6,Mortality,26707,Black,Male and Female,2000
+428.4,767.7,582.1,Alaska,64,180.2,298.9,234.0,Incidence,27347,Black,Male and Female,2001
+126.9,353.3,222.3,Alaska,21,47.5,117.4,76.8,Mortality,27347,Black,Male and Female,2001
+350.8,632.1,477.6,Alaska,63,171.9,286.3,223.7,Incidence,28157,Black,Male and Female,2002
+138.4,370.4,237.0,Alaska,22,49.0,118.3,78.1,Mortality,28157,Black,Male and Female,2002
+323.9,602.3,448.9,Alaska,57,153.1,261.9,202.2,Incidence,28196,Black,Male and Female,2003
+101.6,305.5,186.5,Alaska,16,32.4,92.2,56.7,Mortality,28196,Black,Male and Female,2003
+416.7,726.6,557.7,Alaska,70,190.4,308.6,244.2,Incidence,28663,Black,Male and Female,2004
+98.5,312.8,187.6,Alaska,16,31.9,90.6,55.8,Mortality,28663,Black,Male and Female,2004
+322.6,570.4,434.6,Alaska,63,168.3,280.2,219.0,Incidence,28771,Black,Male and Female,2005
+118.8,309.8,200.0,Alaska,26,59.0,132.4,90.4,Mortality,28771,Black,Male and Female,2005
+245.5,471.5,346.2,Alaska,51,130.6,230.6,175.4,Incidence,29078,Black,Male and Female,2006
+0,0,0,Alaska,0,0,0,0,Mortality,29078,Black,Male and Female,2006
+346.4,619.5,470.2,Alaska,67,175.5,287.5,226.4,Incidence,29592,Black,Male and Female,2007
+142.3,359.7,235.9,Alaska,25,54.7,124.7,84.5,Mortality,29592,Black,Male and Female,2007
+400.5,511.2,453.6,Alaska,360,209.1,257.8,232.5,Incidence,154810,Black,Male and Female,2007-2011
+150.2,234.2,189.4,Alaska,103,55.7,82.7,68.2,Mortality,151063,Black,Male and Female,2007-2011
+350.3,625.9,475.4,Alaska,69,178.5,290.4,229.4,Incidence,30075,Black,Male and Female,2008
+168.2,396.8,267.8,Alaska,28,61.9,134.6,93.1,Mortality,30075,Black,Male and Female,2008
+347.0,608.8,466.2,Alaska,71,181.4,292.9,232.2,Incidence,30573,Black,Male and Female,2009
+0,0,0,Alaska,0,0,0,0,Mortality,30573,Black,Male and Female,2009
+458.8,742.2,589.5,Alaska,93,236.6,359.2,293.2,Incidence,31720,Black,Male and Female,2010
+153.0,362.5,244.2,Alaska,28,58.6,127.5,88.2,Mortality,31745,Black,Male and Female,2010
+216.2,390.5,294.5,Alaska,60,139.4,235.1,182.6,Incidence,32850,Black,Male and Female,2011
+153.0,362.5,244.2,Alaska,28,58.6,127.5,88.2,Mortality,31745,Black,Male and Female,2011
+351.6,1337.6,752.2,Alaska,21,111.4,275.2,180.0,Incidence,11664,Hispanic,Female,1999
+0,0,0,Alaska,0,0,0,0,Mortality,11664,Hispanic,Female,1999
+147.5,541.0,303.3,Alaska,17,78.3,215.3,134.5,Incidence,12643,Hispanic,Female,2000
+0,0,0,Alaska,0,0,0,0,Mortality,12643,Hispanic,Female,2000
+372.4,983.0,633.5,Alaska,28,137.3,298.7,206.7,Incidence,13547,Hispanic,Female,2001
+0,0,0,Alaska,0,0,0,0,Mortality,13547,Hispanic,Female,2001
+138.5,472.5,272.2,Alaska,18,73.8,196.8,124.5,Incidence,14458,Hispanic,Female,2002
+0,0,0,Alaska,0,0,0,0,Mortality,14458,Hispanic,Female,2002
+0,0,0,Alaska,0,0,0,0,Incidence,15227,Hispanic,Female,2003
+0,0,0,Alaska,0,0,0,0,Mortality,15227,Hispanic,Female,2003
+204.2,558.2,351.9,Alaska,27,111.6,246.5,169.4,Incidence,15937,Hispanic,Female,2004
+0,0,0,Alaska,0,0,0,0,Mortality,15937,Hispanic,Female,2004
+308.2,791.4,515.7,Alaska,31,126.9,265.1,186.7,Incidence,16600,Hispanic,Female,2005
+0,0,0,Alaska,0,0,0,0,Mortality,16600,Hispanic,Female,2005
+233.9,628.4,401.4,Alaska,27,104.0,229.7,157.9,Incidence,17102,Hispanic,Female,2006
+0,0,0,Alaska,0,0,0,0,Mortality,17102,Hispanic,Female,2006
+261.3,648.8,427.7,Alaska,31,119.9,250.5,176.5,Incidence,17568,Hispanic,Female,2007
+0,0,0,Alaska,0,0,0,0,Mortality,17568,Hispanic,Female,2007
+224.9,337.3,277.2,Alaska,144,129.5,180.8,153.6,Incidence,93775,Hispanic,Female,2007-2011
+40.3,114.5,71.6,Alaska,21,14.3,35.4,23.2,Mortality,90697,Hispanic,Female,2007-2011
+234.3,552.8,370.9,Alaska,34,131.1,264.5,189.3,Incidence,17962,Hispanic,Female,2008
+0,0,0,Alaska,0,0,0,0,Mortality,17962,Hispanic,Female,2008
+82.5,253.1,149.8,Alaska,19,61.0,158.2,101.3,Incidence,18761,Hispanic,Female,2009
+0,0,0,Alaska,0,0,0,0,Mortality,18761,Hispanic,Female,2009
+110.9,286.7,183.0,Alaska,24,79.7,185.2,124.4,Incidence,19286,Hispanic,Female,2010
+0,0,0,Alaska,0,0,0,0,Mortality,19304,Hispanic,Female,2010
+187.8,416.7,286.6,Alaska,36,124.8,246.8,178.2,Incidence,20198,Hispanic,Female,2011
+0,0,0,Alaska,0,0,0,0,Mortality,19304,Hispanic,Female,2011
+407.5,1358.7,788.3,Alaska,21,105.4,260.3,170.3,Incidence,12333,Hispanic,Male,1999
+0,0,0,Alaska,0,0,0,0,Mortality,12333,Hispanic,Male,1999
+0,0,0,Alaska,0,0,0,0,Incidence,13320,Hispanic,Male,2000
+0,0,0,Alaska,0,0,0,0,Mortality,13320,Hispanic,Male,2000
+306.3,1058.0,608.0,Alaska,24,106.5,247.3,166.2,Incidence,14442,Hispanic,Male,2001
+0,0,0,Alaska,0,0,0,0,Mortality,14442,Hispanic,Male,2001
+181.2,761.4,407.0,Alaska,17,64.0,175.8,109.8,Incidence,15485,Hispanic,Male,2002
+0,0,0,Alaska,0,0,0,0,Mortality,15485,Hispanic,Male,2002
+219.6,1137.6,576.0,Alaska,21,80.3,198.3,129.7,Incidence,16190,Hispanic,Male,2003
+0,0,0,Alaska,0,0,0,0,Mortality,16190,Hispanic,Male,2003
+133.3,510.5,273.4,Alaska,20,72.1,182.3,118.0,Incidence,16942,Hispanic,Male,2004
+0,0,0,Alaska,0,0,0,0,Mortality,16942,Hispanic,Male,2004
+169.3,570.8,327.8,Alaska,18,59.9,159.6,101.0,Incidence,17822,Hispanic,Male,2005
+0,0,0,Alaska,0,0,0,0,Mortality,17822,Hispanic,Male,2005
+227.8,820.9,469.5,Alaska,24,83.6,194.0,130.4,Incidence,18403,Hispanic,Male,2006
+0,0,0,Alaska,0,0,0,0,Mortality,18403,Hispanic,Male,2006
+285.5,721.4,468.7,Alaska,31,112.9,235.8,166.1,Incidence,18661,Hispanic,Male,2007
+0,0,0,Alaska,0,0,0,0,Mortality,18661,Hispanic,Male,2007
+263.1,421.1,336.1,Alaska,127,106.6,152.2,127.9,Incidence,99301,Hispanic,Male,2007-2011
+72.1,179.5,118.2,Alaska,33,23.6,48.2,34.3,Mortality,96119,Hispanic,Male,2007-2011
+208.9,620.5,379.0,Alaska,24,79.7,185.1,124.4,Incidence,19294,Hispanic,Male,2008
+0,0,0,Alaska,0,0,0,0,Mortality,19294,Hispanic,Male,2008
+145.0,439.2,262.2,Alaska,23,74.9,177.2,118.1,Incidence,19471,Hispanic,Male,2009
+0,0,0,Alaska,0,0,0,0,Mortality,19471,Hispanic,Male,2009
+192.9,613.7,366.5,Alaska,28,91.8,199.6,138.1,Incidence,20278,Hispanic,Male,2010
+0,0,0,Alaska,0,0,0,0,Mortality,20290,Hispanic,Male,2010
+131.8,431.2,253.9,Alaska,21,60.2,148.6,97.2,Incidence,21597,Hispanic,Male,2011
+0,0,0,Alaska,0,0,0,0,Mortality,20290,Hispanic,Male,2011
+464.9,1080.0,732.8,Alaska,42,126.1,236.6,175.0,Incidence,23997,Hispanic,Male and Female,1999
+0,0,0,Alaska,0,0,0,0,Mortality,23997,Hispanic,Male and Female,1999
+203.3,569.4,357.7,Alaska,0,74.8,160.4,111.7,Incidence,25963,Hispanic,Male and Female,2000
+0,0,0,Alaska,0,0,0,0,Mortality,25963,Hispanic,Male and Female,2000
+427.9,897.2,636.3,Alaska,52,138.8,243.6,185.8,Incidence,27989,Hispanic,Male and Female,2001
+0,0,0,Alaska,0,0,0,0,Mortality,27989,Hispanic,Male and Female,2001
+198.3,504.6,329.4,Alaska,35,81.4,162.6,116.9,Incidence,29943,Hispanic,Male and Female,2002
+90.7,371.1,202.9,Alaska,16,30.5,86.8,53.4,Mortality,29943,Hispanic,Male and Female,2002
+137.2,400.0,247.1,Alaska,0,61.8,132.6,92.3,Incidence,31417,Hispanic,Male and Female,2003
+0,0,0,Alaska,0,0,0,0,Mortality,31417,Hispanic,Male and Female,2003
+209.2,471.0,322.7,Alaska,47,105.0,190.1,142.9,Incidence,32879,Hispanic,Male and Female,2004
+0,0,0,Alaska,0,0,0,0,Mortality,32879,Hispanic,Male and Female,2004
+298.2,637.5,448.4,Alaska,49,105.3,188.2,142.4,Incidence,34422,Hispanic,Male and Female,2005
+0,0,0,Alaska,0,0,0,0,Mortality,34422,Hispanic,Male and Female,2005
+279.7,580.2,413.2,Alaska,51,107.0,188.9,143.6,Incidence,35505,Hispanic,Male and Female,2006
+0,0,0,Alaska,0,0,0,0,Mortality,35505,Hispanic,Male and Female,2006
+329.4,637.4,467.6,Alaska,62,131.2,219.4,171.1,Incidence,36229,Hispanic,Male and Female,2007
+0,0,0,Alaska,0,0,0,0,Mortality,36229,Hispanic,Male and Female,2007
+258.2,350.8,302.1,Alaska,271,124.1,158.1,140.4,Incidence,193076,Hispanic,Male and Female,2007-2011
+66.6,131.4,95.7,Alaska,54,21.7,37.7,28.9,Mortality,186816,Hispanic,Male and Female,2007-2011
+257.2,505.7,368.0,Alaska,58,118.2,201.3,155.7,Incidence,37256,Hispanic,Male and Female,2008
+0,0,0,Alaska,0,0,0,0,Mortality,37256,Hispanic,Male and Female,2008
+133.8,288.1,200.4,Alaska,42,79.2,148.5,109.9,Incidence,38232,Hispanic,Male and Female,2009
+0,0,0,Alaska,0,0,0,0,Mortality,38232,Hispanic,Male and Female,2009
+175.0,353.8,253.8,Alaska,52,98.2,172.4,131.4,Incidence,39564,Hispanic,Male and Female,2010
+0,0,0,Alaska,0,0,0,0,Mortality,39594,Hispanic,Male and Female,2010
+185.5,364.6,265.2,Alaska,57,103.3,176.7,136.4,Incidence,41795,Hispanic,Male and Female,2011
+0,0,0,Alaska,0,0,0,0,Mortality,39594,Hispanic,Male and Female,2011
+422.9,496.4,458.6,Alaska,714,301.1,349.2,324.5,Incidence,220036,White,Female,1999
+149.1,197.6,172.2,Alaska,227,90.2,117.5,103.2,Mortality,220036,White,Female,1999
+432.0,504.4,467.2,Alaska,748,316.2,365.5,340.2,Incidence,219884,White,Female,2000
+163.5,212.7,187.0,Alaska,255,102.2,131.1,116.0,Mortality,219884,White,Female,2000
+414.1,482.5,447.3,Alaska,766,322.8,372.4,346.9,Incidence,220808,White,Female,2001
+152.3,199.1,174.7,Alaska,242,96.2,124.3,109.6,Mortality,220808,White,Female,2001
+371.0,433.9,401.6,Alaska,727,302.8,350.6,326.0,Incidence,222980,White,Female,2002
+131.3,173.2,151.3,Alaska,233,91.5,118.8,104.5,Mortality,222980,White,Female,2002
+386.7,450.4,417.7,Alaska,770,318.9,367.7,342.7,Incidence,224714,White,Female,2003
+129.6,171.0,149.3,Alaska,228,88.7,115.5,101.5,Mortality,224714,White,Female,2003
+393.4,456.6,424.2,Alaska,808,330.7,380.1,354.8,Incidence,227747,White,Female,2004
+125.4,165.6,144.6,Alaska,226,86.7,113.0,99.2,Mortality,227747,White,Female,2004
+422.6,488.0,454.4,Alaska,856,348.7,399.1,373.3,Incidence,229332,White,Female,2005
+127.9,167.3,146.7,Alaska,243,93.1,120.2,106.0,Mortality,229332,White,Female,2005
+416.1,479.5,447.0,Alaska,891,359.4,410.3,384.2,Incidence,231903,White,Female,2006
+147.9,189.6,167.9,Alaska,285,109.0,138.0,122.9,Mortality,231903,White,Female,2006
+386.5,446.7,415.8,Alaska,858,344.4,394.2,368.7,Incidence,232706,White,Female,2007
+129.7,168.1,148.0,Alaska,266,101.0,128.9,114.3,Mortality,232706,White,Female,2007
+402.4,428.2,415.2,Alaska,4570,373.0,395.4,384.1,Incidence,1189805,White,Female,2007-2011
+146.7,164.0,155.2,Alaska,1413,113.8,126.4,120.0,Mortality,1177384,White,Female,2007-2011
+424.2,485.9,454.3,Alaska,972,390.4,443.2,416.2,Incidence,233554,White,Female,2008
+137.9,176.7,156.4,Alaska,292,111.1,140.2,125.0,Mortality,233554,White,Female,2008
+365.2,421.9,392.8,Alaska,862,338.5,387.3,362.3,Incidence,237925,White,Female,2009
+144.1,183.8,163.1,Alaska,297,111.0,139.9,124.8,Mortality,237925,White,Female,2009
+383.2,440.2,411.0,Alaska,939,364.8,415.0,389.3,Incidence,241226,White,Female,2010
+124.6,160.9,142.0,Alaska,273,100.1,127.4,113.1,Mortality,241296,White,Female,2010
+376.9,432.6,404.1,Alaska,939,360.0,409.6,384.2,Incidence,244394,White,Female,2011
+124.6,160.9,142.0,Alaska,273,100.1,127.4,113.1,Mortality,241296,White,Female,2011
+515.7,606.6,559.9,Alaska,812,312.8,359.4,335.5,Incidence,242016,White,Male,1999
+191.0,255.0,221.5,Alaska,261,95.2,121.8,107.8,Mortality,242016,White,Male,1999
+563.9,659.0,610.2,Alaska,871,337.5,385.9,361.1,Incidence,241212,White,Male,2000
+210.5,277.5,242.6,Alaska,284,104.4,132.3,117.7,Mortality,241212,White,Male,2000
+576.2,669.4,621.6,Alaska,947,365.3,415.3,389.7,Incidence,243010,White,Male,2001
+184.6,244.4,213.2,Alaska,267,97.1,123.9,109.9,Mortality,243010,White,Male,2001
+584.8,675.4,629.0,Alaska,1018,389.2,440.5,414.3,Incidence,245728,White,Male,2002
+201.4,264.7,231.7,Alaska,293,106.0,133.7,119.2,Mortality,245728,White,Male,2002
+526.8,611.0,567.9,Alaska,967,367.5,417.3,391.8,Incidence,246827,White,Male,2003
+206.5,266.7,235.4,Alaska,330,119.7,148.9,133.7,Mortality,246827,White,Male,2003
+555.3,638.7,596.0,Alaska,1053,395.0,446.1,420.0,Incidence,250719,White,Male,2004
+185.6,240.3,211.8,Alaska,310,110.3,138.2,123.6,Mortality,250719,White,Male,2004
+467.2,541.5,503.4,Alaska,948,350.7,398.8,374.2,Incidence,253360,White,Male,2005
+171.3,224.3,196.7,Alaska,293,102.8,129.7,115.6,Mortality,253360,White,Male,2005
+503.9,580.4,541.2,Alaska,1048,384.9,434.8,409.3,Incidence,256051,White,Male,2006
+163.4,212.5,186.9,Alaska,307,106.9,134.1,119.9,Mortality,256051,White,Male,2006
+489.8,563.5,525.8,Alaska,1066,389.2,439.2,413.6,Incidence,257707,White,Male,2007
+179.3,230.5,203.8,Alaska,339,117.9,146.3,131.5,Mortality,257707,White,Male,2007
+481.4,511.8,496.5,Alaska,5489,405.2,427.3,416.2,Incidence,1318899,White,Male,2007-2011
+191.9,213.8,202.6,Alaska,1752,128.1,140.7,134.3,Mortality,1304603,White,Male,2007-2011
+494.9,567.2,530.2,Alaska,1113,402.7,453.3,427.4,Incidence,260411,White,Male,2008
+185.3,235.5,209.4,Alaska,359,124.0,152.9,137.9,Mortality,260411,White,Male,2008
+480.3,550.2,514.4,Alaska,1138,409.6,460.4,434.4,Incidence,261942,White,Male,2009
+186.7,235.7,210.2,Alaska,378,130.1,159.6,144.3,Mortality,261942,White,Male,2009
+458.2,525.1,490.9,Alaska,1119,392.8,442.1,416.9,Incidence,268416,White,Male,2010
+179.3,226.9,202.2,Alaska,369,123.8,152.2,137.4,Mortality,268492,White,Male,2010
+403.9,464.4,433.4,Alaska,1053,366.2,413.6,389.4,Incidence,270423,White,Male,2011
+179.3,226.9,202.2,Alaska,369,123.8,152.2,137.4,Mortality,268492,White,Male,2011
+477.4,534.3,505.3,Alaska,1526,313.9,347.3,330.3,Incidence,462052,White,Male and Female,1999
+175.4,213.8,194.0,Alaska,488,96.5,115.4,105.6,Mortality,462052,White,Male and Female,1999
+501.3,558.6,529.4,Alaska,1619,334.2,368.6,351.1,Incidence,461096,White,Male and Female,2000
+189.9,228.8,208.7,Alaska,539,107.2,127.2,116.9,Mortality,461096,White,Male and Female,2000
+497.8,552.8,524.8,Alaska,1713,352.0,387.2,369.3,Incidence,463818,White,Male and Female,2001
+172.8,209.1,190.4,Alaska,509,100.4,119.7,109.7,Mortality,463818,White,Male and Female,2001
+480.2,532.7,506.0,Alaska,1745,355.0,390.2,372.3,Incidence,468708,White,Male and Female,2002
+167.3,202.2,184.2,Alaska,526,102.8,122.2,112.2,Mortality,468708,White,Male and Female,2002
+461.6,512.3,486.5,Alaska,1737,351.2,386.1,368.4,Incidence,471541,White,Male and Female,2003
+170.3,204.4,186.8,Alaska,558,108.7,128.6,118.3,Mortality,471541,White,Male and Female,2003
+480.9,531.7,505.9,Alaska,1861,371.5,407.0,389.0,Incidence,478466,White,Male and Female,2004
+159.8,192.3,175.6,Alaska,536,102.7,121.9,112.0,Mortality,478466,White,Male and Female,2004
+453.4,501.9,477.2,Alaska,1804,356.7,391.4,373.7,Incidence,482692,White,Male and Female,2005
+152.4,183.5,167.5,Alaska,536,101.8,120.9,111.0,Mortality,482692,White,Male and Female,2005
+465.9,514.2,489.6,Alaska,1939,379.9,415.5,397.4,Incidence,487954,White,Male and Female,2006
+160.0,190.9,175.0,Alaska,592,111.7,131.5,121.3,Mortality,487954,White,Male and Female,2006
+443.1,489.1,465.7,Alaska,1924,375.0,410.3,392.3,Incidence,490413,White,Male and Female,2007
+157.6,187.9,172.3,Alaska,605,113.7,133.6,123.4,Mortality,490413,White,Male and Female,2007
+442.6,462.1,452.2,Alaska,10059,393.2,408.9,401.0,Incidence,2508704,White,Male and Female,2007-2011
+169.4,182.8,176.0,Alaska,3165,123.1,132.0,127.5,Mortality,2481987,White,Male and Female,2007-2011
+464.7,511.0,487.4,Alaska,2085,404.2,440.6,422.1,Incidence,493965,White,Male and Female,2008
+164.5,194.9,179.3,Alaska,651,121.9,142.3,131.8,Mortality,493965,White,Male and Female,2008
+429.1,473.0,450.7,Alaska,2000,382.8,418.0,400.1,Incidence,499867,White,Male and Female,2009
+169.5,199.9,184.3,Alaska,675,125.0,145.6,135.0,Mortality,499867,White,Male and Female,2009
+426.1,469.0,447.2,Alaska,2058,386.6,421.6,403.8,Incidence,509642,White,Male and Female,2010
+155.6,184.5,169.6,Alaska,642,116.4,136.1,125.9,Mortality,509788,White,Male and Female,2010
+396.8,437.2,416.6,Alaska,1992,370.1,404.3,386.9,Incidence,514817,White,Male and Female,2011
+155.6,184.5,169.6,Alaska,642,116.4,136.1,125.9,Mortality,509788,White,Male and Female,2011
+366.4,381.1,373.7,Arizona,10010,389.7,405.4,397.5,Incidence,2518299,All Races,Female,1999
+147.6,156.8,152.2,Arizona,4197,161.7,171.8,166.7,Mortality,2518299,All Races,Female,1999
+373.4,388.0,380.7,Arizona,10477,397.6,413.2,405.4,Incidence,2584579,All Races,Female,2000
+146.3,155.4,150.8,Arizona,4274,160.4,170.4,165.4,Mortality,2584579,All Races,Female,2000
+385.6,400.3,392.9,Arizona,11080,411.7,427.3,419.4,Incidence,2641676,All Races,Female,2001
+147.5,156.5,152.0,Arizona,4407,161.9,171.8,166.8,Mortality,2641676,All Races,Female,2001
+375.6,389.9,382.7,Arizona,11104,403.0,418.3,410.6,Incidence,2704217,All Races,Female,2002
+139.0,147.6,143.2,Arizona,4265,153.0,162.5,157.7,Mortality,2704217,All Races,Female,2002
+361.2,375.0,368.1,Arizona,10963,389.2,404.1,396.6,Incidence,2764077,All Races,Female,2003
+141.0,149.6,145.2,Arizona,4447,156.2,165.7,160.9,Mortality,2764077,All Races,Female,2003
+368.7,382.5,375.6,Arizona,11516,398.7,413.6,406.1,Incidence,2835606,All Races,Female,2004
+137.2,145.5,141.3,Arizona,4452,152.4,161.7,157.0,Mortality,2835606,All Races,Female,2004
+356.5,369.8,363.1,Arizona,11579,387.9,402.3,395.1,Incidence,2930811,All Races,Female,2005
+135.1,143.3,139.1,Arizona,4559,151.1,160.1,155.6,Mortality,2930811,All Races,Female,2005
+361.0,374.2,367.6,Arizona,12102,392.8,407.1,399.9,Incidence,3026134,All Races,Female,2006
+132.3,140.2,136.2,Arizona,4607,147.9,156.7,152.2,Mortality,3026134,All Races,Female,2006
+367.7,380.9,374.3,Arizona,12693,402.7,417.0,409.8,Incidence,3096998,All Races,Female,2007
+130.4,138.2,134.2,Arizona,4676,146.7,155.4,151.0,Mortality,3096998,All Races,Female,2007
+370.6,376.4,373.5,Arizona,66619,415.3,421.6,418.5,Incidence,15920312,All Races,Female,2007-2011
+130.0,133.4,131.7,Arizona,23608,148.5,152.3,150.4,Mortality,15694948,All Races,Female,2007-2011
+370.2,383.2,376.7,Arizona,13090,407.8,422.0,414.9,Incidence,3155278,All Races,Female,2008
+125.4,132.9,129.1,Arizona,4644,143.0,151.5,147.2,Mortality,3155278,All Races,Female,2008
+379.0,392.1,385.5,Arizona,13756,424.1,438.5,431.2,Incidence,3189908,All Races,Female,2009
+126.4,133.9,130.1,Arizona,4775,145.5,154.0,149.7,Mortality,3189908,All Races,Female,2009
+357.4,370.0,363.6,Arizona,13291,405.0,419.1,412.0,Incidence,3225809,All Races,Female,2010
+125.5,132.9,129.2,Arizona,4906,147.8,156.4,152.0,Mortality,3226630,All Races,Female,2010
+361.8,374.4,368.1,Arizona,13789,416.9,431.1,424.0,Incidence,3252319,All Races,Female,2011
+125.5,132.9,129.2,Arizona,4906,147.8,156.4,152.0,Mortality,3226630,All Races,Female,2011
+476.8,495.1,485.9,Arizona,11164,437.3,453.9,445.6,Incidence,2505524,All Races,Male,1999
+211.9,224.5,218.1,Arizona,4809,186.5,197.4,191.9,Mortality,2505524,All Races,Male,1999
+475.7,493.7,484.6,Arizona,11453,436.5,452.8,444.6,Incidence,2576007,All Races,Male,2000
+205.4,217.6,211.4,Arizona,4799,181.1,191.6,186.3,Mortality,2576007,All Races,Male,2000
+487.0,504.9,495.9,Arizona,12056,449.9,466.3,458.1,Incidence,2631801,All Races,Male,2001
+198.1,210.0,204.0,Arizona,4735,174.8,185.1,179.9,Mortality,2631801,All Races,Male,2001
+478.7,496.3,487.5,Arizona,12168,444.0,460.1,452.0,Incidence,2692038,All Races,Male,2002
+207.4,219.4,213.4,Arizona,5094,184.1,194.5,189.2,Mortality,2692038,All Races,Male,2002
+480.4,497.7,489.0,Arizona,12607,451.1,467.1,459.1,Incidence,2746287,All Races,Male,2003
+204.7,216.4,210.5,Arizona,5178,183.4,193.8,188.5,Mortality,2746287,All Races,Male,2003
+462.8,479.4,471.0,Arizona,12589,439.2,454.8,446.9,Incidence,2816798,All Races,Male,2004
+197.1,208.4,202.7,Arizona,5166,178.4,188.5,183.4,Mortality,2816798,All Races,Male,2004
+456.2,472.4,464.2,Arizona,12956,437.9,453.2,445.5,Incidence,2908266,All Races,Male,2005
+192.1,203.0,197.5,Arizona,5261,176.0,185.9,180.9,Mortality,2908266,All Races,Male,2005
+459.9,475.9,467.8,Arizona,13551,443.7,458.9,451.2,Incidence,3003007,All Races,Male,2006
+186.8,197.3,192.0,Arizona,5311,172.1,181.7,176.9,Mortality,3003007,All Races,Male,2006
+463.3,479.0,471.1,Arizona,14155,453.4,468.6,461.0,Incidence,3070683,All Races,Male,2007
+186.0,196.3,191.1,Arizona,5457,173.0,182.5,177.7,Mortality,3070683,All Races,Male,2007
+429.5,436.1,432.8,Arizona,68986,434.8,441.3,438.0,Incidence,15749010,All Races,Male,2007-2011
+183.7,188.2,186.0,Arizona,27473,174.7,178.9,176.8,Mortality,15538548,All Races,Male,2007-2011
+430.9,445.9,438.3,Arizona,13493,424.5,439.1,431.8,Incidence,3125084,All Races,Male,2008
+179.1,189.0,184.0,Arizona,5437,169.4,178.7,174.0,Mortality,3125084,All Races,Male,2008
+436.9,451.7,444.2,Arizona,14160,441.7,456.5,449.1,Incidence,3153246,All Races,Male,2009
+176.0,185.7,180.8,Arizona,5496,169.7,179.0,174.3,Mortality,3153246,All Races,Male,2009
+401.2,415.2,408.2,Arizona,13401,413.7,427.9,420.8,Incidence,3185001,All Races,Male,2010
+178.2,187.9,183.0,Arizona,5772,176.5,185.9,181.1,Mortality,3186528,All Races,Male,2010
+400.6,414.5,407.5,Arizona,13777,421.4,435.7,428.5,Incidence,3214996,All Races,Male,2011
+178.2,187.9,183.0,Arizona,5772,176.5,185.9,181.1,Mortality,3186528,All Races,Male,2011
+415.4,426.8,421.0,Arizona,21174,415.8,427.2,421.5,Incidence,5023823,All Races,Male and Female,1999
+176.1,183.6,179.8,Arizona,9006,175.6,183.0,179.3,Mortality,5023823,All Races,Male and Female,1999
+419.5,430.8,425.2,Arizona,21930,419.3,430.6,425.0,Incidence,5160586,All Races,Male and Female,2000
+173.0,180.3,176.6,Arizona,9073,172.2,179.5,175.8,Mortality,5160586,All Races,Male and Female,2000
+431.2,442.5,436.8,Arizona,23136,433.1,444.4,438.7,Incidence,5273477,All Races,Male and Female,2001
+170.1,177.2,173.6,Arizona,9142,169.8,176.9,173.4,Mortality,5273477,All Races,Male and Female,2001
+421.9,433.0,427.4,Arizona,23272,425.7,436.8,431.3,Incidence,5396255,All Races,Male and Female,2002
+169.6,176.6,173.1,Arizona,9359,169.9,177.0,173.4,Mortality,5396255,All Races,Male and Female,2002
+415.1,425.9,420.4,Arizona,23570,422.3,433.2,427.7,Incidence,5510364,All Races,Male and Female,2003
+169.5,176.4,172.9,Arizona,9625,171.2,178.2,174.7,Mortality,5510364,All Races,Male and Female,2003
+411.2,421.8,416.5,Arizona,24105,421.1,431.9,426.5,Incidence,5652404,All Races,Male and Female,2004
+164.0,170.7,167.4,Arizona,9618,166.8,173.6,170.2,Mortality,5652404,All Races,Male and Female,2004
+402.1,412.4,407.2,Arizona,24535,414.9,425.5,420.2,Incidence,5839077,All Races,Male and Female,2005
+161.0,167.5,164.2,Arizona,9820,164.9,171.5,168.2,Mortality,5839077,All Races,Male and Female,2005
+406.0,416.2,411.1,Arizona,25653,420.3,430.7,425.5,Incidence,6029141,All Races,Male and Female,2006
+156.9,163.2,160.0,Arizona,9918,161.3,167.8,164.5,Mortality,6029141,All Races,Male and Female,2006
+411.5,421.5,416.5,Arizona,26848,430.1,440.5,435.3,Incidence,6167681,All Races,Male and Female,2007
+155.7,161.9,158.8,Arizona,10133,161.1,167.5,164.3,Mortality,6167681,All Races,Male and Female,2007
+396.3,400.6,398.4,Arizona,135605,425.9,430.5,428.2,Incidence,31669322,All Races,Male and Female,2007-2011
+153.8,156.6,155.2,Arizona,51081,162.1,165.0,163.5,Mortality,31233496,All Races,Male and Female,2007-2011
+397.7,407.5,402.6,Arizona,26583,418.2,428.4,423.3,Incidence,6280362,All Races,Male and Female,2008
+150.2,156.2,153.2,Arizona,10081,157.4,163.7,160.5,Mortality,6280362,All Races,Male and Female,2008
+405.3,415.0,410.1,Arizona,27916,434.9,445.3,440.1,Incidence,6343154,All Races,Male and Female,2009
+149.0,155.0,152.0,Arizona,10271,158.8,165.1,161.9,Mortality,6343154,All Races,Male and Female,2009
+377.2,386.5,381.9,Arizona,26692,411.4,421.4,416.4,Incidence,6410810,All Races,Male and Female,2010
+149.8,155.7,152.7,Arizona,10678,163.4,169.7,166.5,Mortality,6413158,All Races,Male and Female,2010
+379.3,388.5,383.9,Arizona,27566,421.2,431.3,426.2,Incidence,6467315,All Races,Male and Female,2011
+149.8,155.7,152.7,Arizona,10678,163.4,169.7,166.5,Mortality,6413158,All Races,Male and Female,2011
+254.4,351.7,300.4,Arizona,162,162.5,222.5,190.8,Incidence,84913,Black,Female,1999
+125.6,198.2,159.1,Arizona,81,75.8,118.6,95.4,Mortality,84913,Black,Female,1999
+280.0,378.1,326.6,Arizona,187,182.7,244.7,212.1,Incidence,88186,Black,Female,2000
+138.6,213.7,173.5,Arizona,89,81.0,124.2,100.9,Mortality,88186,Black,Female,2000
+303.1,401.9,350.1,Arizona,212,199.0,261.7,228.8,Incidence,92677,Black,Female,2001
+148.6,222.2,182.9,Arizona,104,91.7,136.0,112.2,Mortality,92677,Black,Female,2001
+258.3,349.1,301.4,Arizona,186,164.4,220.3,190.9,Incidence,97457,Black,Female,2002
+131.1,200.2,163.2,Arizona,94,77.9,118.0,96.5,Mortality,97457,Black,Female,2002
+289.2,381.2,333.0,Arizona,223,190.0,248.1,217.6,Incidence,102472,Black,Female,2003
+158.0,232.3,192.8,Arizona,114,91.8,133.6,111.2,Mortality,102472,Black,Female,2003
+307.9,400.0,351.9,Arizona,248,200.8,258.6,228.3,Incidence,108612,Black,Female,2004
+144.9,212.9,176.8,Arizona,114,86.6,126.1,105.0,Mortality,108612,Black,Female,2004
+300.0,387.6,341.9,Arizona,260,197.0,252.2,223.4,Incidence,116409,Black,Female,2005
+132.6,195.6,162.1,Arizona,113,80.0,116.7,97.1,Mortality,116409,Black,Female,2005
+320.2,406.2,361.5,Arizona,304,215.7,270.9,242.1,Incidence,125561,Black,Female,2006
+106.2,160.4,131.4,Arizona,101,65.5,97.7,80.4,Mortality,125561,Black,Female,2006
+322.5,405.8,362.5,Arizona,327,219.1,272.9,244.9,Incidence,133527,Black,Female,2007
+118.8,173.9,144.6,Arizona,120,74.5,107.5,89.9,Mortality,133527,Black,Female,2007
+318.4,351.8,334.8,Arizona,1703,221.8,244.0,232.7,Incidence,731784,Black,Female,2007-2011
+130.7,154.2,142.1,Arizona,624,82.2,96.3,89.0,Mortality,700745,Black,Female,2007-2011
+278.1,353.5,314.3,Arizona,302,190.3,239.3,213.7,Incidence,141288,Black,Female,2008
+118.3,170.4,142.8,Arizona,131,77.5,110.0,92.7,Mortality,141288,Black,Female,2008
+308.0,384.7,344.9,Arizona,348,211.2,261.4,235.3,Incidence,147897,Black,Female,2009
+122.6,175.6,147.5,Arizona,133,75.3,106.6,89.9,Mortality,147897,Black,Female,2009
+256.5,323.4,288.6,Arizona,320,187.5,234.2,209.9,Incidence,152449,Black,Female,2010
+118.5,168.7,142.1,Arizona,139,76.6,107.6,91.2,Mortality,152472,Black,Female,2010
+329.3,404.5,365.5,Arizona,406,234.6,285.7,259.2,Incidence,156623,Black,Female,2011
+118.5,168.7,142.1,Arizona,139,76.6,107.6,91.2,Mortality,152472,Black,Female,2011
+534.6,700.8,614.0,Arizona,268,255.5,325.8,289.1,Incidence,92706,Black,Male,1999
+248.7,375.1,307.8,Arizona,118,105.4,152.4,127.3,Mortality,92706,Black,Male,1999
+451.5,594.6,519.8,Arizona,249,226.6,291.7,257.6,Incidence,96657,Black,Male,2000
+228.4,343.5,282.3,Arizona,115,98.2,142.8,119.0,Mortality,96657,Black,Male,2000
+463.9,611.0,534.2,Arizona,255,221.3,284.0,251.2,Incidence,101524,Black,Male,2001
+193.7,299.0,242.8,Arizona,105,84.6,125.2,103.4,Mortality,101524,Black,Male,2001
+407.2,533.5,467.5,Arizona,259,214.0,274.1,242.7,Incidence,106719,Black,Male,2002
+220.4,327.3,270.5,Arizona,127,99.2,141.6,119.0,Mortality,106719,Black,Male,2002
+379.8,504.9,439.4,Arizona,251,198.1,254.7,225.1,Incidence,111521,Black,Male,2003
+189.9,291.0,237.1,Arizona,110,81.1,118.9,98.6,Mortality,111521,Black,Male,2003
+455.2,586.5,518.1,Arizona,306,230.4,289.2,258.6,Incidence,118344,Black,Male,2004
+203.2,307.9,252.2,Arizona,119,83.3,120.3,100.6,Mortality,118344,Black,Male,2004
+363.8,473.1,416.1,Arizona,284,198.9,251.9,224.2,Incidence,126665,Black,Male,2005
+170.8,257.0,211.1,Arizona,126,82.9,118.4,99.5,Mortality,126665,Black,Male,2005
+368.7,476.2,420.2,Arizona,305,198.9,249.8,223.3,Incidence,136589,Black,Male,2006
+174.9,258.5,214.1,Arizona,134,82.2,116.2,98.1,Mortality,136589,Black,Male,2006
+430.0,542.6,484.1,Arizona,378,235.1,288.3,260.7,Incidence,145010,Black,Male,2007
+195.0,282.3,236.1,Arizona,155,90.7,125.1,106.9,Mortality,145010,Black,Male,2007
+403.0,446.6,424.5,Arizona,1909,230.2,251.9,240.9,Incidence,792508,Black,Male,2007-2011
+198.4,234.0,215.7,Arizona,743,90.9,105.1,97.8,Mortality,759925,Black,Male,2007-2011
+373.5,474.5,422.0,Arizona,357,209.3,258.3,232.8,Incidence,153329,Black,Male,2008
+157.3,230.6,191.7,Arizona,139,76.2,107.0,90.7,Mortality,153329,Black,Male,2008
+390.7,491.7,439.3,Arizona,386,217.6,266.4,241.1,Incidence,160123,Black,Male,2009
+169.9,249.4,207.3,Arizona,137,71.8,101.1,85.6,Mortality,160123,Black,Male,2009
+348.0,436.5,390.6,Arizona,389,213.2,260.7,236.0,Incidence,164812,Black,Male,2010
+192.0,269.2,228.5,Arizona,178,92.7,125.0,108.0,Mortality,164874,Black,Male,2010
+354.7,445.2,398.2,Arizona,399,213.2,260.1,235.8,Incidence,169234,Black,Male,2011
+192.0,269.2,228.5,Arizona,178,92.7,125.0,108.0,Mortality,164874,Black,Male,2011
+390.5,477.9,432.7,Arizona,430,219.7,266.1,242.1,Incidence,177619,Black,Male and Female,1999
+186.4,250.7,216.9,Arizona,199,97.0,128.7,112.0,Mortality,177619,Black,Male and Female,1999
+371.1,453.0,410.7,Arizona,436,214.3,259.1,235.9,Incidence,184843,Black,Male and Female,2000
+186.9,249.9,216.9,Arizona,204,95.7,126.6,110.4,Mortality,184843,Black,Male and Female,2000
+385.9,468.5,425.9,Arizona,467,219.2,263.3,240.5,Incidence,194201,Black,Male and Female,2001
+176.1,235.3,204.3,Arizona,209,93.5,123.2,107.6,Mortality,194201,Black,Male and Female,2001
+342.3,417.3,378.6,Arizona,445,198.2,239.2,217.9,Incidence,204176,Black,Male and Female,2002
+179.3,237.5,207.0,Arizona,221,94.4,123.5,108.2,Mortality,204176,Black,Male and Female,2002
+339.5,412.1,374.6,Arizona,474,202.0,242.4,221.5,Incidence,213993,Black,Male and Female,2003
+180.1,238.3,207.9,Arizona,224,91.4,119.3,104.7,Mortality,213993,Black,Male and Female,2003
+386.3,461.9,423.0,Arizona,554,224.2,265.3,244.1,Incidence,226956,Black,Male and Female,2004
+175.7,231.5,202.4,Arizona,233,89.9,116.7,102.7,Mortality,226956,Black,Male and Female,2004
+343.5,411.6,376.5,Arizona,544,205.4,243.4,223.8,Incidence,243074,Black,Male and Female,2005
+158.6,208.8,182.6,Arizona,239,86.3,111.6,98.3,Mortality,243074,Black,Male and Female,2005
+351.7,417.7,383.7,Arizona,609,214.2,251.5,232.3,Incidence,262150,Black,Male and Female,2006
+143.7,189.5,165.6,Arizona,235,78.5,101.9,89.6,Mortality,262150,Black,Male and Female,2006
+380.1,446.2,412.3,Arizona,705,234.8,272.5,253.1,Incidence,278537,Black,Male and Female,2007
+158.6,205.3,181.0,Arizona,275,87.4,111.1,98.7,Mortality,278537,Black,Male and Female,2007
+360.1,386.5,373.1,Arizona,3612,229.3,244.8,237.0,Incidence,1524292,Black,Male and Female,2007-2011
+162.1,181.8,171.7,Arizona,1367,88.7,98.7,93.6,Mortality,1460670,Black,Male and Female,2007-2011
+333.5,393.9,362.9,Arizona,659,206.9,241.4,223.7,Incidence,294617,Black,Male and Female,2008
+143.2,185.9,163.6,Arizona,270,81.0,103.3,91.6,Mortality,294617,Black,Male and Female,2008
+355.1,415.4,384.4,Arizona,734,221.4,256.2,238.3,Incidence,308020,Black,Male and Female,2009
+147.4,190.7,168.1,Arizona,270,77.5,98.8,87.7,Mortality,308020,Black,Male and Female,2009
+309.4,363.0,335.5,Arizona,709,207.3,240.5,223.5,Incidence,317261,Black,Male and Female,2010
+158.3,201.1,178.9,Arizona,317,89.2,111.5,99.9,Mortality,317346,Black,Male and Female,2010
+348.9,405.4,376.4,Arizona,805,230.3,264.7,247.0,Incidence,325857,Black,Male and Female,2011
+158.3,201.1,178.9,Arizona,317,89.2,111.5,99.9,Mortality,317346,Black,Male and Female,2011
+278.6,318.9,298.3,Arizona,967,151.6,172.2,161.6,Incidence,598243,Hispanic,Female,1999
+108.3,136.0,121.7,Arizona,335,50.2,62.3,56.0,Mortality,598243,Hispanic,Female,1999
+299.9,341.3,320.2,Arizona,1060,157.5,177.8,167.4,Incidence,633045,Hispanic,Female,2000
+115.9,143.9,129.4,Arizona,370,52.6,64.7,58.4,Mortality,633045,Hispanic,Female,2000
+296.2,335.7,315.5,Arizona,1149,163.6,183.8,173.5,Incidence,662273,Hispanic,Female,2001
+113.1,140.1,126.1,Arizona,382,52.0,63.8,57.7,Mortality,662273,Hispanic,Female,2001
+304.1,343.5,323.4,Arizona,1198,163.2,183.0,172.9,Incidence,692975,Hispanic,Female,2002
+103.8,128.9,115.9,Arizona,376,48.9,60.0,54.3,Mortality,692975,Hispanic,Female,2002
+298.9,336.8,317.5,Arizona,1253,164.1,183.5,173.6,Incidence,721868,Hispanic,Female,2003
+121.8,148.2,134.6,Arizona,450,56.7,68.4,62.3,Mortality,721868,Hispanic,Female,2003
+294.2,330.2,311.8,Arizona,1330,167.2,186.3,176.6,Incidence,753285,Hispanic,Female,2004
+100.7,123.8,111.8,Arizona,414,49.8,60.5,55.0,Mortality,753285,Hispanic,Female,2004
+293.5,328.5,310.7,Arizona,1404,167.8,186.5,177.0,Incidence,793396,Hispanic,Female,2005
+105.2,128.2,116.4,Arizona,441,50.5,61.0,55.6,Mortality,793396,Hispanic,Female,2005
+288.0,321.3,304.4,Arizona,1477,167.6,185.7,176.5,Incidence,836893,Hispanic,Female,2006
+88.8,109.2,98.6,Arizona,406,43.9,53.5,48.5,Mortality,836893,Hispanic,Female,2006
+301.4,334.2,317.5,Arizona,1638,178.3,196.5,187.2,Incidence,874791,Hispanic,Female,2007
+98.1,118.7,108.1,Arizona,480,50.1,60.0,54.9,Mortality,874791,Hispanic,Female,2007
+289.7,303.1,296.4,Arizona,8495,180.1,187.9,184.0,Incidence,4617796,Hispanic,Female,2007-2011
+101.6,110.5,106.0,Arizona,2447,52.3,56.7,54.5,Mortality,4493720,Hispanic,Female,2007-2011
+297.7,329.6,313.4,Arizona,1700,178.9,196.8,187.7,Incidence,905674,Hispanic,Female,2008
+96.3,116.3,106.0,Arizona,483,48.7,58.3,53.3,Mortality,905674,Hispanic,Female,2008
+278.5,308.5,293.2,Arizona,1670,171.6,189.0,180.2,Incidence,926878,Hispanic,Female,2009
+96.6,116.0,106.0,Arizona,516,51.0,60.7,55.7,Mortality,926878,Hispanic,Female,2009
+257.0,284.7,270.6,Arizona,1652,165.8,182.7,174.1,Incidence,948751,Hispanic,Female,2010
+100.5,119.7,109.8,Arizona,562,54.4,64.3,59.2,Mortality,949484,Hispanic,Female,2010
+278.0,306.3,291.9,Arizona,1835,182.2,199.7,190.8,Incidence,961702,Hispanic,Female,2011
+100.5,119.7,109.8,Arizona,562,54.4,64.3,59.2,Mortality,949484,Hispanic,Female,2011
+364.5,421.6,392.4,Arizona,946,139.1,158.2,148.4,Incidence,637473,Hispanic,Male,1999
+162.9,205.2,183.3,Arizona,373,52.7,64.8,58.5,Mortality,637473,Hispanic,Male,1999
+381.7,439.0,409.7,Arizona,1027,142.7,161.4,151.8,Incidence,676344,Hispanic,Male,2000
+184.7,228.6,205.9,Arizona,432,58.0,70.2,63.9,Mortality,676344,Hispanic,Male,2000
+400.7,458.2,428.8,Arizona,1120,149.8,168.5,158.9,Incidence,704643,Hispanic,Male,2001
+174.4,215.9,194.4,Arizona,433,55.8,67.5,61.4,Mortality,704643,Hispanic,Male,2001
+393.8,448.5,420.6,Arizona,1195,153.8,172.4,162.9,Incidence,733462,Hispanic,Male,2002
+186.5,228.3,206.7,Arizona,487,60.6,72.6,66.4,Mortality,733462,Hispanic,Male,2002
+399.8,452.9,425.8,Arizona,1262,157.2,175.7,166.3,Incidence,759040,Hispanic,Male,2003
+179.6,218.8,198.6,Arizona,503,60.6,72.3,66.3,Mortality,759040,Hispanic,Male,2003
+381.0,432.1,406.0,Arizona,1254,150.5,168.3,159.2,Incidence,787721,Hispanic,Male,2004
+180.5,219.4,199.4,Arizona,508,59.0,70.3,64.5,Mortality,787721,Hispanic,Male,2004
+356.3,402.6,379.0,Arizona,1301,149.3,166.5,157.7,Incidence,824943,Hispanic,Male,2005
+174.2,210.6,191.9,Arizona,522,58.0,68.9,63.3,Mortality,824943,Hispanic,Male,2005
+377.3,423.8,400.1,Arizona,1447,158.8,176.1,167.3,Incidence,865070,Hispanic,Male,2006
+146.8,178.5,162.2,Arizona,493,52.1,62.2,57.0,Mortality,865070,Hispanic,Male,2006
+362.0,405.7,383.4,Arizona,1519,160.6,177.7,169.0,Incidence,898854,Hispanic,Male,2007
+154.0,185.3,169.2,Arizona,564,57.7,68.1,62.7,Mortality,898854,Hispanic,Male,2007
+331.9,349.0,340.4,Arizona,7659,159.5,166.8,163.1,Incidence,4694470,Hispanic,Male,2007-2011
+155.4,168.6,161.9,Arizona,2861,60.1,64.7,62.4,Mortality,4587440,Hispanic,Male,2007-2011
+329.2,369.5,349.0,Arizona,1464,150.2,166.6,158.2,Incidence,925192,Hispanic,Male,2008
+153.0,183.0,167.6,Arizona,593,59.0,69.5,64.1,Mortality,925192,Hispanic,Male,2008
+333.9,372.4,352.8,Arizona,1618,163.9,180.7,172.1,Incidence,939942,Hispanic,Male,2009
+149.5,178.0,163.4,Arizona,619,60.8,71.3,65.9,Mortality,939942,Hispanic,Male,2009
+277.9,312.0,294.6,Arizona,1431,141.9,157.4,149.5,Incidence,957200,Hispanic,Male,2010
+136.1,162.9,149.1,Arizona,592,56.9,67.0,61.8,Mortality,958382,Hispanic,Male,2010
+314.1,350.0,331.7,Arizona,1627,159.1,175.5,167.2,Incidence,973282,Hispanic,Male,2011
+136.1,162.9,149.1,Arizona,592,56.9,67.0,61.8,Mortality,958382,Hispanic,Male,2011
+318.2,351.0,334.3,Arizona,1913,147.9,161.9,154.8,Incidence,1235716,Hispanic,Male and Female,1999
+135.2,158.7,146.6,Arizona,708,53.2,61.7,57.3,Mortality,1235716,Hispanic,Male and Female,1999
+338.4,371.9,354.9,Arizona,2087,152.6,166.4,159.4,Incidence,1309389,Hispanic,Male and Female,2000
+148.8,173.0,160.6,Arizona,802,57.1,65.6,61.2,Mortality,1309389,Hispanic,Male and Female,2000
+342.9,375.5,359.0,Arizona,2269,159.2,173.0,166.0,Incidence,1366916,Hispanic,Male and Female,2001
+142.9,165.9,154.1,Arizona,815,55.6,63.9,59.6,Mortality,1366916,Hispanic,Male and Female,2001
+346.4,378.4,362.2,Arizona,2393,161.1,174.6,167.8,Incidence,1426437,Hispanic,Male and Female,2002
+142.2,164.5,153.1,Arizona,863,56.5,64.7,60.5,Mortality,1426437,Hispanic,Male and Female,2002
+346.3,377.3,361.6,Arizona,2515,163.3,176.6,169.8,Incidence,1480908,Hispanic,Male and Female,2003
+150.0,172.1,160.8,Arizona,953,60.3,68.6,64.4,Mortality,1480908,Hispanic,Male and Female,2003
+332.9,362.4,347.4,Arizona,2584,161.3,174.3,167.7,Incidence,1541006,Hispanic,Male and Female,2004
+136.8,157.4,146.9,Arizona,922,56.0,63.8,59.8,Mortality,1541006,Hispanic,Male and Female,2004
+323.5,351.4,337.3,Arizona,2705,160.9,173.6,167.1,Incidence,1618339,Hispanic,Male and Female,2005
+137.4,157.4,147.1,Arizona,963,55.8,63.4,59.5,Mortality,1618339,Hispanic,Male and Female,2005
+329.1,356.3,342.5,Arizona,2924,165.6,178.1,171.8,Incidence,1701963,Hispanic,Male and Female,2006
+116.5,134.1,125.1,Arizona,899,49.4,56.4,52.8,Mortality,1701963,Hispanic,Male and Female,2006
+329.8,355.9,342.6,Arizona,3157,171.8,184.3,178.0,Incidence,1773645,Hispanic,Male and Female,2007
+125.0,142.5,133.6,Arizona,1044,55.3,62.5,58.9,Mortality,1773645,Hispanic,Male and Female,2007
+307.9,318.4,313.1,Arizona,16154,170.8,176.2,173.5,Incidence,9312266,Hispanic,Male and Female,2007-2011
+125.8,133.3,129.5,Arizona,5308,56.9,60.0,58.5,Mortality,9081160,Hispanic,Male and Female,2007-2011
+313.8,338.6,326.1,Arizona,3164,166.8,178.9,172.8,Incidence,1830866,Hispanic,Male and Female,2008
+124.1,141.1,132.4,Arizona,1076,55.3,62.4,58.8,Mortality,1830866,Hispanic,Male and Female,2008
+306.4,330.0,318.0,Arizona,3288,170.2,182.3,176.1,Incidence,1866820,Hispanic,Male and Female,2009
+122.6,139.0,130.6,Arizona,1135,57.3,64.4,60.8,Mortality,1866820,Hispanic,Male and Female,2009
+268.4,289.7,278.9,Arizona,3083,156.1,167.6,161.8,Incidence,1905951,Hispanic,Male and Female,2010
+118.2,133.8,125.8,Arizona,1154,57.0,64.1,60.5,Mortality,1907866,Hispanic,Male and Female,2010
+295.7,317.8,306.6,Arizona,3462,173.0,185.0,178.9,Incidence,1934984,Hispanic,Male and Female,2011
+118.2,133.8,125.8,Arizona,1154,57.0,64.1,60.5,Mortality,1907866,Hispanic,Male and Female,2011
+372.8,388.2,380.4,Arizona,9502,416.6,433.7,425.1,Incidence,2235195,White,Female,1999
+149.3,158.9,154.1,Arizona,4006,173.7,184.9,179.2,Mortality,2235195,White,Female,1999
+379.1,394.5,386.7,Arizona,9917,424.1,441.2,432.6,Incidence,2292305,White,Female,2000
+147.4,156.8,152.0,Arizona,4058,171.6,182.6,177.0,Mortality,2292305,White,Female,2000
+390.7,406.1,398.3,Arizona,10442,438.0,455.2,446.6,Incidence,2338263,White,Female,2001
+147.8,157.1,152.4,Arizona,4156,172.4,183.2,177.7,Mortality,2338263,White,Female,2001
+381.4,396.4,388.8,Arizona,10467,430.0,446.8,438.3,Incidence,2387929,White,Female,2002
+139.9,148.8,144.3,Arizona,4033,163.7,174.2,168.9,Mortality,2387929,White,Female,2002
+361.8,376.3,369.0,Arizona,10186,410.3,426.6,418.4,Incidence,2434530,White,Female,2003
+140.8,149.7,145.2,Arizona,4172,166.2,176.6,171.4,Mortality,2434530,White,Female,2003
+372.0,386.5,379.2,Arizona,10739,423.0,439.4,431.1,Incidence,2490861,White,Female,2004
+137.6,146.3,141.9,Arizona,4177,162.6,172.9,167.7,Mortality,2490861,White,Female,2004
+360.3,374.3,367.2,Arizona,10790,412.7,428.6,420.6,Incidence,2565676,White,Female,2005
+137.3,145.8,141.5,Arizona,4323,163.5,173.6,168.5,Mortality,2565676,White,Female,2005
+362.4,376.2,369.2,Arizona,11171,415.7,431.4,423.5,Incidence,2637738,White,Female,2006
+134.9,143.2,139.0,Arizona,4379,161.1,171.0,166.0,Mortality,2637738,White,Female,2006
+371.9,385.9,378.9,Arizona,11753,429.2,445.1,437.1,Incidence,2688894,White,Female,2007
+131.7,139.8,135.7,Arizona,4390,158.5,168.2,163.3,Mortality,2688894,White,Female,2007
+374.2,380.3,377.3,Arizona,61198,442.2,449.3,445.8,Incidence,13728772,White,Female,2007-2011
+131.8,135.3,133.5,Arizona,22172,161.1,165.5,163.3,Mortality,13578378,White,Female,2007-2011
+374.0,387.8,380.9,Arizona,12074,434.6,450.4,442.5,Incidence,2728728,White,Female,2008
+126.8,134.7,130.7,Arizona,4353,154.8,164.3,159.5,Mortality,2728728,White,Female,2008
+379.7,393.5,386.6,Arizona,12540,448.2,464.2,456.2,Incidence,2748928,White,Female,2009
+127.5,135.4,131.4,Arizona,4454,157.3,166.9,162.0,Mortality,2748928,White,Female,2009
+361.6,375.0,368.3,Arizona,12210,432.5,448.2,440.3,Incidence,2773148,White,Female,2010
+127.4,135.2,131.3,Arizona,4596,160.9,170.5,165.7,Mortality,2774090,White,Female,2010
+365.8,379.2,372.5,Arizona,12621,444.7,460.5,452.5,Incidence,2789074,White,Female,2011
+127.4,135.2,131.3,Arizona,4596,160.9,170.5,165.7,Mortality,2774090,White,Female,2011
+478.7,497.6,488.0,Arizona,10564,465.7,483.8,474.7,Incidence,2225387,White,Male,1999
+213.2,226.2,219.6,Arizona,4589,200.3,212.3,206.2,Mortality,2225387,White,Male,1999
+477.7,496.3,486.9,Arizona,10812,464.0,481.8,472.8,Incidence,2286610,White,Male,2000
+206.8,219.4,213.0,Arizona,4572,194.2,205.8,199.9,Mortality,2286610,White,Male,2000
+489.0,507.6,498.2,Arizona,11371,478.9,496.9,487.8,Incidence,2331036,White,Male,2001
+199.1,211.4,205.2,Arizona,4495,187.2,198.6,192.8,Mortality,2331036,White,Male,2001
+482.3,500.5,491.3,Arizona,11490,474.3,492.0,483.1,Incidence,2378350,White,Male,2002
+209.6,222.0,215.7,Arizona,4859,198.6,210.1,204.3,Mortality,2378350,White,Male,2002
+477.0,494.8,485.8,Arizona,11731,476.0,493.6,484.8,Incidence,2419988,White,Male,2003
+207.4,219.5,213.4,Arizona,4950,198.9,210.3,204.5,Mortality,2419988,White,Male,2003
+462.0,479.2,470.5,Arizona,11751,466.3,483.5,474.8,Incidence,2474943,White,Male,2004
+199.1,210.7,204.9,Arizona,4919,193.2,204.4,198.8,Mortality,2474943,White,Male,2004
+448.2,464.8,456.5,Arizona,11873,457.9,474.7,466.3,Incidence,2546316,White,Male,2005
+193.9,205.1,199.4,Arizona,4998,190.9,201.8,196.3,Mortality,2546316,White,Male,2005
+457.8,474.3,466.0,Arizona,12547,471.0,487.8,479.3,Incidence,2617740,White,Male,2006
+189.8,200.7,195.2,Arizona,5068,188.3,199.0,193.6,Mortality,2617740,White,Male,2006
+459.3,475.5,467.3,Arizona,13012,479.8,496.6,488.2,Incidence,2665511,White,Male,2007
+187.5,198.2,192.8,Arizona,5150,188.0,198.6,193.2,Mortality,2665511,White,Male,2007
+427.6,434.4,431.0,Arizona,63324,463.0,470.2,466.6,Incidence,13571975,White,Male,2007-2011
+185.6,190.2,187.9,Arizona,25916,190.5,195.2,192.9,Mortality,13436459,White,Male,2007-2011
+428.8,444.4,436.6,Arizona,12417,451.6,467.8,459.7,Incidence,2701226,White,Male,2008
+180.6,190.9,185.7,Arizona,5118,184.3,194.7,189.5,Mortality,2701226,White,Male,2008
+431.9,447.3,439.5,Arizona,12906,467.2,483.6,475.3,Incidence,2715119,White,Male,2009
+177.9,188.0,182.9,Arizona,5183,185.7,196.2,190.9,Mortality,2715119,White,Male,2009
+399.3,413.9,406.6,Arizona,12267,440.6,456.5,448.5,Incidence,2735334,White,Male,2010
+179.2,189.2,184.1,Arizona,5397,192.0,202.5,197.2,Mortality,2736863,White,Male,2010
+402.7,417.2,409.9,Arizona,12722,453.8,469.9,461.8,Incidence,2754785,White,Male,2011
+179.2,189.2,184.1,Arizona,5397,192.0,202.5,197.2,Mortality,2736863,White,Male,2011
+419.8,431.6,425.7,Arizona,20066,443.6,456.1,449.9,Incidence,4460582,White,Male and Female,1999
+177.8,185.6,181.7,Arizona,8595,188.6,196.8,192.7,Mortality,4460582,White,Male and Female,1999
+423.7,435.5,429.6,Arizona,20729,446.6,458.9,452.7,Incidence,4578915,White,Male and Female,2000
+174.3,181.8,178.0,Arizona,8630,184.5,192.5,188.5,Mortality,4578915,White,Male and Female,2000
+435.0,446.8,440.8,Arizona,21813,461.0,473.4,467.2,Incidence,4669299,White,Male and Female,2001
+170.7,178.1,174.4,Arizona,8651,181.4,189.2,185.3,Mortality,4669299,White,Male and Female,2001
+426.8,438.3,432.5,Arizona,21957,454.6,466.8,460.7,Incidence,4766279,White,Male and Female,2002
+171.2,178.5,174.8,Arizona,8892,182.7,190.5,186.6,Mortality,4766279,White,Male and Female,2002
+414.2,425.4,419.8,Arizona,21917,445.5,457.5,451.5,Incidence,4854518,White,Male and Female,2003
+170.8,178.0,174.4,Arizona,9122,184.1,191.8,187.9,Mortality,4854518,White,Male and Female,2003
+412.9,423.9,418.4,Arizona,22490,447.0,458.9,452.9,Incidence,4965804,White,Male and Female,2004
+165.3,172.3,168.8,Arizona,9096,179.4,187.0,183.2,Mortality,4965804,White,Male and Female,2004
+400.6,411.3,405.9,Arizona,22663,437.6,449.1,443.3,Incidence,5111992,White,Male and Female,2005
+163.1,169.9,166.4,Arizona,9321,178.7,186.1,182.3,Mortality,5111992,White,Male and Female,2005
+406.1,416.7,411.4,Arizona,23718,445.6,457.1,451.3,Incidence,5255478,White,Male and Female,2006
+159.9,166.5,163.2,Arizona,9447,176.1,183.4,179.8,Mortality,5255478,White,Male and Female,2006
+412.1,422.6,417.3,Arizona,24765,456.8,468.3,462.5,Incidence,5354405,White,Male and Female,2007
+157.2,163.7,160.5,Arizona,9540,174.6,181.8,178.2,Mortality,5354405,White,Male and Female,2007
+397.5,402.0,399.7,Arizona,124522,453.6,458.7,456.1,Incidence,27300747,White,Male and Female,2007-2011
+155.8,158.6,157.2,Arizona,48088,176.4,179.6,178.0,Mortality,27014837,White,Male and Female,2007-2011
+399.1,409.3,404.2,Arizona,24491,445.4,456.7,451.0,Incidence,5429954,White,Male and Female,2008
+151.8,158.1,154.9,Arizona,9471,170.9,178.0,174.4,Mortality,5429954,White,Male and Female,2008
+403.5,413.7,408.6,Arizona,25446,460.0,471.5,465.7,Incidence,5464047,White,Male and Female,2009
+150.7,156.9,153.7,Arizona,9637,172.9,179.9,176.4,Mortality,5464047,White,Male and Female,2009
+378.8,388.6,383.6,Arizona,24477,438.8,450.0,444.4,Incidence,5508482,White,Male and Female,2010
+151.4,157.6,154.5,Arizona,9993,177.8,184.9,181.3,Mortality,5510953,White,Male and Female,2010
+382.6,392.3,387.4,Arizona,25343,451.5,462.8,457.1,Incidence,5543859,White,Male and Female,2011
+151.4,157.6,154.5,Arizona,9993,177.8,184.9,181.3,Mortality,5510953,White,Male and Female,2011
+162.2,175.0,168.5,Arkansas,2777,196.7,212.0,204.3,Mortality,1359445,All Races,Female,1999
+161.5,174.2,167.8,Arkansas,2785,195.7,210.8,203.1,Mortality,1371015,All Races,Female,2000
+382.7,402.5,392.5,Arkansas,6201,439.2,461.7,450.4,Incidence,1376845,All Races,Female,2001
+159.5,172.1,165.7,Arkansas,2758,192.9,207.9,200.3,Mortality,1376845,All Races,Female,2001

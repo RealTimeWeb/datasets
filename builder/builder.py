@@ -1,5 +1,6 @@
 from __future__ import print_function
 
+import os
 import argparse
 import yaml
 import glob
@@ -57,7 +58,7 @@ if __name__ == '__main__':
 
     if args.all:
         specs = glob.glob(args.spec+'*.corgis')
-        specs = [spec for spec in specs if spec not in blacklist]
+        specs = [spec for spec in specs if os.path.basename(spec) not in blacklist]
     elif args.index:
         specs= []
     else:

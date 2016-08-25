@@ -87,7 +87,7 @@ for row in weather_data:
     del row['City']
     del row["Station's State"]
 
-weather_data = [row for row in weather_data if row['Station']['Code'] not in KILL_STATIONS]
+weather_data = [row for row in reversed(weather_data) if row['Station']['Code'] not in KILL_STATIONS]
 
 with open('weather.json','w') as new_file:
     json.dump(weather_data, new_file)
