@@ -16,6 +16,11 @@
 ; Provide the external structs
 (provide
     (struct-out car)
+    (struct-out fuel-information)
+    (struct-out identification)
+    (struct-out dimensions)
+    (struct-out engine-information)
+    (struct-out engine-statistics)
     get-cars
     get-cars-by-year
     get-cars-by-make
@@ -23,35 +28,72 @@
 
 ; Define the structs
 (define-struct car
-    (acceleration highway-mpg make hybrid base-curb-weight width year id engine fuel city-mpg transmission length top-speed classification engine-type torque height number-of-forward-gears horsepower driveline model-year size))
+    (engine-information identification dimensions fuel-information))
+
+(define-struct fuel-information
+    (highway-mpg city-mph fuel-type))
+
+(define-struct identification
+    (make model-year id classification year))
+
+(define-struct dimensions
+    (width length height))
+
+(define-struct engine-information
+    (transmission engine-type engine-statistics hybrid number-of-forward-gears driveline))
+
+(define-struct engine-statistics
+    (horsepower torque))
 
 
+
+; Define the JSON->Struct mappers
 (define (json->car jdata)
     (make-car
-        (hash-ref jdata (string->symbol "Acceleration"))
-        (hash-ref jdata (string->symbol "highway_mpg"))
+        (json->engine-information (hash-ref jdata (string->symbol "Engine Information")))
+                (json->identification (hash-ref jdata (string->symbol "Identification")))
+                (json->dimensions (hash-ref jdata (string->symbol "Dimensions")))
+                (json->fuel-information (hash-ref jdata (string->symbol "Fuel Information")))
+                ))
+
+(define (json->fuel-information jdata)
+    (make-fuel-information
+        (hash-ref jdata (string->symbol "Highway mpg"))
+            (hash-ref jdata (string->symbol "City mph"))
+            (hash-ref jdata (string->symbol "Fuel Type"))
+            ))
+
+(define (json->identification jdata)
+    (make-identification
         (hash-ref jdata (string->symbol "Make"))
-        (hash-ref jdata (string->symbol "Hybrid"))
-        (hash-ref jdata (string->symbol "Base Curb Weight"))
+            (hash-ref jdata (string->symbol "Model Year"))
+            (hash-ref jdata (string->symbol "ID"))
+            (hash-ref jdata (string->symbol "Classification"))
+            (hash-ref jdata (string->symbol "Year"))
+            ))
+
+(define (json->dimensions jdata)
+    (make-dimensions
         (hash-ref jdata (string->symbol "Width"))
-        (hash-ref jdata (string->symbol "year"))
-        (hash-ref jdata (string->symbol "id"))
-        (hash-ref jdata (string->symbol "Engine"))
-        (hash-ref jdata (string->symbol "fuel"))
-        (hash-ref jdata (string->symbol "city_mpg"))
+            (hash-ref jdata (string->symbol "Length"))
+            (hash-ref jdata (string->symbol "Height"))
+            ))
+
+(define (json->engine-information jdata)
+    (make-engine-information
         (hash-ref jdata (string->symbol "Transmission"))
-        (hash-ref jdata (string->symbol "Length"))
-        (hash-ref jdata (string->symbol "Top Speed"))
-        (hash-ref jdata (string->symbol "Classification"))
-        (hash-ref jdata (string->symbol "Engine Type"))
-        (hash-ref jdata (string->symbol "Torque"))
-        (hash-ref jdata (string->symbol "Height"))
-        (hash-ref jdata (string->symbol "Number Of Forward Gears"))
+            (hash-ref jdata (string->symbol "Engine Type"))
+            (json->engine-statistics (hash-ref jdata (string->symbol "Engine Statistics")))
+                (hash-ref jdata (string->symbol "Hybrid"))
+            (hash-ref jdata (string->symbol "Number of Forward Gears"))
+            (hash-ref jdata (string->symbol "Driveline"))
+            ))
+
+(define (json->engine-statistics jdata)
+    (make-engine-statistics
         (hash-ref jdata (string->symbol "Horsepower"))
-        (hash-ref jdata (string->symbol "Driveline"))
-        (hash-ref jdata (string->symbol "Model Year"))
-        (hash-ref jdata (string->symbol "Size"))
-        ))
+            (hash-ref jdata (string->symbol "Torque"))
+            ))
 
 
 
@@ -95,7 +137,7 @@
 )
 
 (define (get-cars-by-make make [test #t]) 
-    (check-arg 'make (str? make) 'str 1 make)
+    (check-arg 'make (string? make) 'str 1 make)
     ; Ensure a match exists
     (let ([potentials (map string-downcase 
                            (query-list database "SELECT DISTINCT make FROM cars"))]
