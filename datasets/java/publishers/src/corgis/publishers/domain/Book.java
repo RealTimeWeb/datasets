@@ -11,29 +11,28 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import corgis.publishers.domain.Publisher;
+import corgis.publishers.domain.Statistics;
 import corgis.publishers.domain.Daily;
-import corgis.publishers.domain.Genre;
 
 /**
  * 
  */
 public class Book {
 	
+    // The genre of the book, either "fiction", "non-fiction", "genre fiction", "childrens", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.
+    private String genre;
     private Publisher publisher;
-    private Integer totalReviews;
+    // The actual company that sold this book, as oppposed to the company that published it.
     private String soldBy;
+    private Statistics statistics;
     private Daily daily;
-    private Double salePrice;
-    private Integer salesRank;
-    private Genre genre;
-    private Double averageRating;
     
     
     /*
      * @return 
      */
-    public Publisher getPublisher() {
-        return this.publisher;
+    public String getGenre() {
+        return this.genre;
     }
     
     
@@ -41,8 +40,8 @@ public class Book {
     /*
      * @return 
      */
-    public Integer getTotalReviews() {
-        return this.totalReviews;
+    public Publisher getPublisher() {
+        return this.publisher;
     }
     
     
@@ -59,44 +58,17 @@ public class Book {
     /*
      * @return 
      */
+    public Statistics getStatistics() {
+        return this.statistics;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
     public Daily getDaily() {
         return this.daily;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getSalePrice() {
-        return this.salePrice;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getSalesRank() {
-        return this.salesRank;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Genre getGenre() {
-        return this.genre;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getAverageRating() {
-        return this.averageRating;
     }
     
     
@@ -108,7 +80,7 @@ public class Book {
 	 * @return String
 	 */
 	public String toString() {
-		return "Book[" +publisher+", "+totalReviews+", "+soldBy+", "+daily+", "+salePrice+", "+salesRank+", "+genre+", "+averageRating+"]";
+		return "Book[" +genre+", "+publisher+", "+soldBy+", "+statistics+", "+daily+"]";
 	}
 	
 	/**
@@ -116,15 +88,12 @@ public class Book {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Book(JSONObject json_data) {
-        try {// publisher
-            this.publisher = new Publisher((JSONObject)json_data.get("publisher"));// total reviews
-            this.totalReviews = new Integer(((Long)json_data.get("total reviews")).intValue());// sold by
-            this.soldBy = (String)json_data.get("sold by");// daily
-            this.daily = new Daily((JSONObject)json_data.get("daily"));// sale price
-            this.salePrice = (Double)json_data.get("sale price");// sales rank
-            this.salesRank = new Integer(((Long)json_data.get("sales rank")).intValue());// genre
-            this.genre = new Genre((JSONObject)json_data.get("genre"));// average rating
-            this.averageRating = (Double)json_data.get("average rating");
+        try {// genre
+            this.genre = (String)json_data.get("genre");// publisher
+            this.publisher = new Publisher((JSONObject)json_data.get("publisher"));// sold by
+            this.soldBy = (String)json_data.get("sold by");// statistics
+            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));// daily
+            this.daily = new Daily((JSONObject)json_data.get("daily"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Book; a field was missing.");
     		e.printStackTrace();

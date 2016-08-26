@@ -215,7 +215,7 @@ var mainModel = {
     ]),
     'structures':  ko.observableArray([
     
-        {'name': "publishers", 'order': "Index", 'data': publishers}
+        {'name': "publishers", 'order': "Book Rank", 'data': publishers}
     
     ])
 };
@@ -767,6 +767,10 @@ $(document).ready(function () {
     <span class="text-muted">Tags: publishers, amazon, books, sales, genres, literature, english</span><br>
 </div>
 
+<div class='row hide-on-load'>
+    Please be patient while the page loads! This can take a little the first time.
+</div>
+
 <div class='modal fade' id="capture-dialog" style='display:none'>
     <div class='modal-dialog' style='width:750px'>
         <div class='modal-content' id='modal-message' >
@@ -788,7 +792,7 @@ $(document).ready(function () {
     <h3 id="overview">Overview</h3>
     
     <p>
-    From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.
+    From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking.
 
     </p>
     

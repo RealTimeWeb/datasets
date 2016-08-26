@@ -16,10 +16,15 @@ import org.json.simple.JSONObject;
  */
 public class Daily {
 	
+    // The amount of money that the publisher made per day on this book, in dollars.
     private Double publisherRevenue;
+    // The amount of money that Amazon made per day on this book, in dollars.
     private Double amazonRevenue;
+    // The amount of money that the author made per day on this book, in dollars.
     private Double authorRevenue;
+    // The number of books sold per day.
     private Integer unitsSold;
+    // The total amount of money that was made per day on this book, in dollars.
     private Double grossSales;
     
     

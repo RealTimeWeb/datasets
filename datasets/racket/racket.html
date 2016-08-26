@@ -134,30 +134,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="music">
       
       <div class="media-left  media-middle">
-        <a href="health/health.html">
-          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
+        <a href="music/music.html">
+          <img class="media-object" src="music/music.png" alt="Music" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="health/health.html">
-        <h4 class="media-heading">Health</h4>
+        <a href="music/music.html">
+        <h4 class="media-heading">Music</h4>
         </a>
-        This library holds data about reports of diseases in America.
-<br>
-        <i>health, diseases, infection</i>
+        The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.<br>
+        <i>music, songs, artists, creativity, media</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "health",
-            'body': "This library holds data about reports of diseases in America.",
-            'description': "This library holds data about reports of diseases in America.",
-            'tags': ["health", "diseases", "infection"]
+            'name': "music",
+            'body': "This library comes from the Million Song Dataset, which used a company called the Echo Nest to derive data points about one million popular contemporary songs. The Million Song Dataset is a collaboration between the Echo Nest and LabROSA, a laboratory working towards intelligent machine listening. The project was also funded in part by the National Science Foundation of America (NSF) to provide a large data set to evaluate research related to algorithms on a commercial size while promoting further research into the Music Information Retrieval field. The data contains standard information about the songs such as artist name, title, and year released. Additionally, the data contains more advanced information; for example, the length of the song, how many musical bars long the song is, and how long the fade in to the song was.",
+            'description': "The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.",
+            'tags': ["music", "songs", "artists", "creativity", "media"]
         }
     );
     </script>
@@ -213,6 +212,34 @@ $(document).ready(function() {
             'body': "Earthquake records from around the world collected from the United States Geological Survey. Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake. Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included.",
             'description': "Records from different earthquake occurences across the world.",
             'tags': ["earthquakes", "nature", "disaster", "magnitude", "richter scale", "latitude", "longitude"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="publishers">
+      
+      <div class="media-left  media-middle">
+        <a href="publishers/publishers.html">
+          <img class="media-object" src="publishers/publishers.png" alt="Publishers" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="publishers/publishers.html">
+        <h4 class="media-heading">Publishers</h4>
+        </a>
+        E-book sales on Amazon, including daily and total earnings for 54,000 titles.
+<br>
+        <i>publishers, amazon, books, sales, genres, literature, english</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "publishers",
+            'body': "From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking.",
+            'description': "E-book sales on Amazon, including daily and total earnings for 54,000 titles.",
+            'tags': ["publishers", "amazon", "books", "sales", "genres", "literature", "english"]
         }
     );
     </script>
@@ -380,33 +407,6 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="music">
-      
-      <div class="media-left  media-middle">
-        <a href="music/music.html">
-          <img class="media-object" src="music/music.png" alt="Music" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a href="music/music.html">
-        <h4 class="media-heading">Music</h4>
-        </a>
-        The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.<br>
-        <i>music, songs, artists, creativity, media</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "music",
-            'body': "This library comes from the Million Song Dataset, which used a company called the Echo Nest to derive data points about one million popular contemporary songs. The Million Song Dataset is a collaboration between the Echo Nest and LabROSA, a laboratory working towards intelligent machine listening. The project was also funded in part by the National Science Foundation of America (NSF) to provide a large data set to evaluate research related to algorithms on a commercial size while promoting further research into the Music Information Retrieval field. The data contains standard information about the songs such as artist name, title, and year released. Additionally, the data contains more advanced information; for example, the length of the song, how many musical bars long the song is, and how long the fade in to the song was.",
-            'description': "The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.",
-            'tags': ["music", "songs", "artists", "creativity", "media"]
-        }
-    );
-    </script>
-    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="construction_spending">
       
       <div class="media-left  media-middle">
@@ -565,6 +565,34 @@ $(document).ready(function() {
             'body': "From the United States Cancer Statistics as part of the U.S. Center for Disease Control, the following data set focuses on the crude rate for all types of cancer reported for different demograpic groups. Significant groupings include age, gender, race and geographical area.",
             'description': "Cancer crude rate totals for different ages, races, genders, and geographical areas across the United States.",
             'tags': ["cancer", "death", "states", "gender", "race", "population", "crude rate"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
+      
+      <div class="media-left  media-middle">
+        <a href="health/health.html">
+          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="health/health.html">
+        <h4 class="media-heading">Health</h4>
+        </a>
+        This library holds data about reports of diseases in America.
+<br>
+        <i>health, diseases, infection</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "health",
+            'body': "This library holds data about reports of diseases in America.",
+            'description': "This library holds data about reports of diseases in America.",
+            'tags': ["health", "diseases", "infection"]
         }
     );
     </script>

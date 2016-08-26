@@ -16,18 +16,17 @@ import org.json.simple.JSONObject;
  */
 public class Publisher {
 	
-    private Boolean indie;
-    private Boolean smallMedium;
-    private Boolean amazon;
-    private Boolean singleAuthor;
-    private Boolean bigFive;
+    // The type, or size, of the publisher (e.g, "indie", "small", "big five", etc.)
+    private String type;
+    // The name of the publisher.
+    private String name;
     
     
     /*
      * @return 
      */
-    public Boolean getIndie() {
-        return this.indie;
+    public String getType() {
+        return this.type;
     }
     
     
@@ -35,35 +34,8 @@ public class Publisher {
     /*
      * @return 
      */
-    public Boolean getSmallMedium() {
-        return this.smallMedium;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Boolean getAmazon() {
-        return this.amazon;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Boolean getSingleAuthor() {
-        return this.singleAuthor;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Boolean getBigFive() {
-        return this.bigFive;
+    public String getName() {
+        return this.name;
     }
     
     
@@ -75,7 +47,7 @@ public class Publisher {
 	 * @return String
 	 */
 	public String toString() {
-		return "Publisher[" +indie+", "+smallMedium+", "+amazon+", "+singleAuthor+", "+bigFive+"]";
+		return "Publisher[" +type+", "+name+"]";
 	}
 	
 	/**
@@ -83,12 +55,9 @@ public class Publisher {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Publisher(JSONObject json_data) {
-        try {// indie
-            this.indie = (Boolean)json_data.get("indie");// small/medium
-            this.smallMedium = (Boolean)json_data.get("small/medium");// amazon
-            this.amazon = (Boolean)json_data.get("amazon");// single author
-            this.singleAuthor = (Boolean)json_data.get("single author");// big five
-            this.bigFive = (Boolean)json_data.get("big five");
+        try {// type
+            this.type = (String)json_data.get("type");// name
+            this.name = (String)json_data.get("name");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Publisher; a field was missing.");
     		e.printStackTrace();

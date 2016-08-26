@@ -7,12 +7,22 @@ metadata:
     tags: [publishers, amazon, books, sales, genres, literature, english]
     description:
         overview: >
-            From a newspaper article about analyzing amazon book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author.
+            From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking.
+        short: >
+            E-book sales on Amazon, including daily and total earnings for 54,000 titles.
         citation: http://authorearnings.com/report/september-2015-author-earnings-report/
 local:
   - file: publishers.json
     name: publishers
     row: book
+    order: Book Rank
+    indexes:
+      - name: publisher
+        jsonpath: publishers.[0].publisher.name
+      - name: genre
+        jsonpath: publishers.[0].publisher.type
+      - name: type
+        jsonpath: publishers.[0].genre
 interfaces:
   - name: get books
     returns: list[book]
@@ -23,3 +33,17 @@ interfaces:
     test:
         sql: SELECT data FROM publishers LIMIT {hardware}
         post: json()
+structures:
+    "publishers.[0].daily.amazon revenue": The amount of money that Amazon made per day on this book, in dollars.
+    "publishers.[0].daily.author revenue": The amount of money that the author made per day on this book, in dollars.
+    "publishers.[0].daily.publisher revenue": The amount of money that the publisher made per day on this book, in dollars.
+    "publishers.[0].daily.gross sales": The total amount of money that was made per day on this book, in dollars.
+    "publishers.[0].daily.units sold": The number of books sold per day.
+    "publishers.[0].genre": The genre of the book, either "fiction", "non-fiction", "genre fiction", "childrens", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.
+    "publishers.[0].publisher.name": The name of the publisher.
+    "publishers.[0].publisher.type": The type, or size, of the publisher (e.g, "indie", "small", "big five", etc.)
+    "publishers.[0].sold by": The actual company that sold this book, as oppposed to the company that published it.
+    "publishers.[0].statistics.sales rank": The ranking of this book, compared to other books. A higher rank indicates a more popular book.
+    "publishers.[0].statistics.sale price": The cost of this book on Amazon, in dollars.
+    "publishers.[0].statistics.average rating": The average rating of this book, on a five-point scale, as determined by customers.
+    "publishers.[0].statistics.total reviews": The number of people who have reviewed this book.

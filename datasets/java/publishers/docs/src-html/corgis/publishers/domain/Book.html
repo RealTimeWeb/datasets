@@ -19,129 +19,98 @@
 <span class="sourceLineNo">011</span>import org.json.simple.JSONObject;<a name="line.11"></a>
 <span class="sourceLineNo">012</span><a name="line.12"></a>
 <span class="sourceLineNo">013</span>import corgis.publishers.domain.Publisher;<a name="line.13"></a>
-<span class="sourceLineNo">014</span>import corgis.publishers.domain.Daily;<a name="line.14"></a>
-<span class="sourceLineNo">015</span>import corgis.publishers.domain.Genre;<a name="line.15"></a>
+<span class="sourceLineNo">014</span>import corgis.publishers.domain.Statistics;<a name="line.14"></a>
+<span class="sourceLineNo">015</span>import corgis.publishers.domain.Daily;<a name="line.15"></a>
 <span class="sourceLineNo">016</span><a name="line.16"></a>
 <span class="sourceLineNo">017</span>/**<a name="line.17"></a>
 <span class="sourceLineNo">018</span> * <a name="line.18"></a>
 <span class="sourceLineNo">019</span> */<a name="line.19"></a>
 <span class="sourceLineNo">020</span>public class Book {<a name="line.20"></a>
 <span class="sourceLineNo">021</span>        <a name="line.21"></a>
-<span class="sourceLineNo">022</span>    private Publisher publisher;<a name="line.22"></a>
-<span class="sourceLineNo">023</span>    private Integer totalReviews;<a name="line.23"></a>
-<span class="sourceLineNo">024</span>    private String soldBy;<a name="line.24"></a>
-<span class="sourceLineNo">025</span>    private Daily daily;<a name="line.25"></a>
-<span class="sourceLineNo">026</span>    private Double salePrice;<a name="line.26"></a>
-<span class="sourceLineNo">027</span>    private Integer salesRank;<a name="line.27"></a>
-<span class="sourceLineNo">028</span>    private Genre genre;<a name="line.28"></a>
-<span class="sourceLineNo">029</span>    private Double averageRating;<a name="line.29"></a>
+<span class="sourceLineNo">022</span>    // The genre of the book, either "fiction", "non-fiction", "genre fiction", "childrens", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.<a name="line.22"></a>
+<span class="sourceLineNo">023</span>    private String genre;<a name="line.23"></a>
+<span class="sourceLineNo">024</span>    private Publisher publisher;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>    // The actual company that sold this book, as oppposed to the company that published it.<a name="line.25"></a>
+<span class="sourceLineNo">026</span>    private String soldBy;<a name="line.26"></a>
+<span class="sourceLineNo">027</span>    private Statistics statistics;<a name="line.27"></a>
+<span class="sourceLineNo">028</span>    private Daily daily;<a name="line.28"></a>
+<span class="sourceLineNo">029</span>    <a name="line.29"></a>
 <span class="sourceLineNo">030</span>    <a name="line.30"></a>
-<span class="sourceLineNo">031</span>    <a name="line.31"></a>
-<span class="sourceLineNo">032</span>    /*<a name="line.32"></a>
-<span class="sourceLineNo">033</span>     * @return <a name="line.33"></a>
-<span class="sourceLineNo">034</span>     */<a name="line.34"></a>
-<span class="sourceLineNo">035</span>    public Publisher getPublisher() {<a name="line.35"></a>
-<span class="sourceLineNo">036</span>        return this.publisher;<a name="line.36"></a>
-<span class="sourceLineNo">037</span>    }<a name="line.37"></a>
+<span class="sourceLineNo">031</span>    /*<a name="line.31"></a>
+<span class="sourceLineNo">032</span>     * @return <a name="line.32"></a>
+<span class="sourceLineNo">033</span>     */<a name="line.33"></a>
+<span class="sourceLineNo">034</span>    public String getGenre() {<a name="line.34"></a>
+<span class="sourceLineNo">035</span>        return this.genre;<a name="line.35"></a>
+<span class="sourceLineNo">036</span>    }<a name="line.36"></a>
+<span class="sourceLineNo">037</span>    <a name="line.37"></a>
 <span class="sourceLineNo">038</span>    <a name="line.38"></a>
 <span class="sourceLineNo">039</span>    <a name="line.39"></a>
-<span class="sourceLineNo">040</span>    <a name="line.40"></a>
-<span class="sourceLineNo">041</span>    /*<a name="line.41"></a>
-<span class="sourceLineNo">042</span>     * @return <a name="line.42"></a>
-<span class="sourceLineNo">043</span>     */<a name="line.43"></a>
-<span class="sourceLineNo">044</span>    public Integer getTotalReviews() {<a name="line.44"></a>
-<span class="sourceLineNo">045</span>        return this.totalReviews;<a name="line.45"></a>
-<span class="sourceLineNo">046</span>    }<a name="line.46"></a>
+<span class="sourceLineNo">040</span>    /*<a name="line.40"></a>
+<span class="sourceLineNo">041</span>     * @return <a name="line.41"></a>
+<span class="sourceLineNo">042</span>     */<a name="line.42"></a>
+<span class="sourceLineNo">043</span>    public Publisher getPublisher() {<a name="line.43"></a>
+<span class="sourceLineNo">044</span>        return this.publisher;<a name="line.44"></a>
+<span class="sourceLineNo">045</span>    }<a name="line.45"></a>
+<span class="sourceLineNo">046</span>    <a name="line.46"></a>
 <span class="sourceLineNo">047</span>    <a name="line.47"></a>
 <span class="sourceLineNo">048</span>    <a name="line.48"></a>
-<span class="sourceLineNo">049</span>    <a name="line.49"></a>
-<span class="sourceLineNo">050</span>    /*<a name="line.50"></a>
-<span class="sourceLineNo">051</span>     * @return <a name="line.51"></a>
-<span class="sourceLineNo">052</span>     */<a name="line.52"></a>
-<span class="sourceLineNo">053</span>    public String getSoldBy() {<a name="line.53"></a>
-<span class="sourceLineNo">054</span>        return this.soldBy;<a name="line.54"></a>
-<span class="sourceLineNo">055</span>    }<a name="line.55"></a>
+<span class="sourceLineNo">049</span>    /*<a name="line.49"></a>
+<span class="sourceLineNo">050</span>     * @return <a name="line.50"></a>
+<span class="sourceLineNo">051</span>     */<a name="line.51"></a>
+<span class="sourceLineNo">052</span>    public String getSoldBy() {<a name="line.52"></a>
+<span class="sourceLineNo">053</span>        return this.soldBy;<a name="line.53"></a>
+<span class="sourceLineNo">054</span>    }<a name="line.54"></a>
+<span class="sourceLineNo">055</span>    <a name="line.55"></a>
 <span class="sourceLineNo">056</span>    <a name="line.56"></a>
 <span class="sourceLineNo">057</span>    <a name="line.57"></a>
-<span class="sourceLineNo">058</span>    <a name="line.58"></a>
-<span class="sourceLineNo">059</span>    /*<a name="line.59"></a>
-<span class="sourceLineNo">060</span>     * @return <a name="line.60"></a>
-<span class="sourceLineNo">061</span>     */<a name="line.61"></a>
-<span class="sourceLineNo">062</span>    public Daily getDaily() {<a name="line.62"></a>
-<span class="sourceLineNo">063</span>        return this.daily;<a name="line.63"></a>
-<span class="sourceLineNo">064</span>    }<a name="line.64"></a>
+<span class="sourceLineNo">058</span>    /*<a name="line.58"></a>
+<span class="sourceLineNo">059</span>     * @return <a name="line.59"></a>
+<span class="sourceLineNo">060</span>     */<a name="line.60"></a>
+<span class="sourceLineNo">061</span>    public Statistics getStatistics() {<a name="line.61"></a>
+<span class="sourceLineNo">062</span>        return this.statistics;<a name="line.62"></a>
+<span class="sourceLineNo">063</span>    }<a name="line.63"></a>
+<span class="sourceLineNo">064</span>    <a name="line.64"></a>
 <span class="sourceLineNo">065</span>    <a name="line.65"></a>
 <span class="sourceLineNo">066</span>    <a name="line.66"></a>
-<span class="sourceLineNo">067</span>    <a name="line.67"></a>
-<span class="sourceLineNo">068</span>    /*<a name="line.68"></a>
-<span class="sourceLineNo">069</span>     * @return <a name="line.69"></a>
-<span class="sourceLineNo">070</span>     */<a name="line.70"></a>
-<span class="sourceLineNo">071</span>    public Double getSalePrice() {<a name="line.71"></a>
-<span class="sourceLineNo">072</span>        return this.salePrice;<a name="line.72"></a>
-<span class="sourceLineNo">073</span>    }<a name="line.73"></a>
+<span class="sourceLineNo">067</span>    /*<a name="line.67"></a>
+<span class="sourceLineNo">068</span>     * @return <a name="line.68"></a>
+<span class="sourceLineNo">069</span>     */<a name="line.69"></a>
+<span class="sourceLineNo">070</span>    public Daily getDaily() {<a name="line.70"></a>
+<span class="sourceLineNo">071</span>        return this.daily;<a name="line.71"></a>
+<span class="sourceLineNo">072</span>    }<a name="line.72"></a>
+<span class="sourceLineNo">073</span>    <a name="line.73"></a>
 <span class="sourceLineNo">074</span>    <a name="line.74"></a>
 <span class="sourceLineNo">075</span>    <a name="line.75"></a>
-<span class="sourceLineNo">076</span>    <a name="line.76"></a>
-<span class="sourceLineNo">077</span>    /*<a name="line.77"></a>
-<span class="sourceLineNo">078</span>     * @return <a name="line.78"></a>
-<span class="sourceLineNo">079</span>     */<a name="line.79"></a>
-<span class="sourceLineNo">080</span>    public Integer getSalesRank() {<a name="line.80"></a>
-<span class="sourceLineNo">081</span>        return this.salesRank;<a name="line.81"></a>
-<span class="sourceLineNo">082</span>    }<a name="line.82"></a>
-<span class="sourceLineNo">083</span>    <a name="line.83"></a>
-<span class="sourceLineNo">084</span>    <a name="line.84"></a>
-<span class="sourceLineNo">085</span>    <a name="line.85"></a>
-<span class="sourceLineNo">086</span>    /*<a name="line.86"></a>
-<span class="sourceLineNo">087</span>     * @return <a name="line.87"></a>
-<span class="sourceLineNo">088</span>     */<a name="line.88"></a>
-<span class="sourceLineNo">089</span>    public Genre getGenre() {<a name="line.89"></a>
-<span class="sourceLineNo">090</span>        return this.genre;<a name="line.90"></a>
-<span class="sourceLineNo">091</span>    }<a name="line.91"></a>
-<span class="sourceLineNo">092</span>    <a name="line.92"></a>
-<span class="sourceLineNo">093</span>    <a name="line.93"></a>
-<span class="sourceLineNo">094</span>    <a name="line.94"></a>
-<span class="sourceLineNo">095</span>    /*<a name="line.95"></a>
-<span class="sourceLineNo">096</span>     * @return <a name="line.96"></a>
-<span class="sourceLineNo">097</span>     */<a name="line.97"></a>
-<span class="sourceLineNo">098</span>    public Double getAverageRating() {<a name="line.98"></a>
-<span class="sourceLineNo">099</span>        return this.averageRating;<a name="line.99"></a>
-<span class="sourceLineNo">100</span>    }<a name="line.100"></a>
-<span class="sourceLineNo">101</span>    <a name="line.101"></a>
-<span class="sourceLineNo">102</span>    <a name="line.102"></a>
-<span class="sourceLineNo">103</span>    <a name="line.103"></a>
-<span class="sourceLineNo">104</span>        <a name="line.104"></a>
-<span class="sourceLineNo">105</span>        /**<a name="line.105"></a>
-<span class="sourceLineNo">106</span>         * Creates a string based representation of this Book.<a name="line.106"></a>
-<span class="sourceLineNo">107</span>        <a name="line.107"></a>
-<span class="sourceLineNo">108</span>         * @return String<a name="line.108"></a>
-<span class="sourceLineNo">109</span>         */<a name="line.109"></a>
-<span class="sourceLineNo">110</span>        public String toString() {<a name="line.110"></a>
-<span class="sourceLineNo">111</span>                return "Book[" +publisher+", "+totalReviews+", "+soldBy+", "+daily+", "+salePrice+", "+salesRank+", "+genre+", "+averageRating+"]";<a name="line.111"></a>
-<span class="sourceLineNo">112</span>        }<a name="line.112"></a>
-<span class="sourceLineNo">113</span>        <a name="line.113"></a>
-<span class="sourceLineNo">114</span>        /**<a name="line.114"></a>
-<span class="sourceLineNo">115</span>         * Internal constructor to create a Book from a  representation.<a name="line.115"></a>
-<span class="sourceLineNo">116</span>         * @param json_data The raw json data that will be parsed.<a name="line.116"></a>
-<span class="sourceLineNo">117</span>         */<a name="line.117"></a>
-<span class="sourceLineNo">118</span>    public Book(JSONObject json_data) {<a name="line.118"></a>
-<span class="sourceLineNo">119</span>        try {// publisher<a name="line.119"></a>
-<span class="sourceLineNo">120</span>            this.publisher = new Publisher((JSONObject)json_data.get("publisher"));// total reviews<a name="line.120"></a>
-<span class="sourceLineNo">121</span>            this.totalReviews = new Integer(((Long)json_data.get("total reviews")).intValue());// sold by<a name="line.121"></a>
-<span class="sourceLineNo">122</span>            this.soldBy = (String)json_data.get("sold by");// daily<a name="line.122"></a>
-<span class="sourceLineNo">123</span>            this.daily = new Daily((JSONObject)json_data.get("daily"));// sale price<a name="line.123"></a>
-<span class="sourceLineNo">124</span>            this.salePrice = (Double)json_data.get("sale price");// sales rank<a name="line.124"></a>
-<span class="sourceLineNo">125</span>            this.salesRank = new Integer(((Long)json_data.get("sales rank")).intValue());// genre<a name="line.125"></a>
-<span class="sourceLineNo">126</span>            this.genre = new Genre((JSONObject)json_data.get("genre"));// average rating<a name="line.126"></a>
-<span class="sourceLineNo">127</span>            this.averageRating = (Double)json_data.get("average rating");<a name="line.127"></a>
-<span class="sourceLineNo">128</span>        } catch (NullPointerException e) {<a name="line.128"></a>
-<span class="sourceLineNo">129</span>                System.err.println("Could not convert the response to a Book; a field was missing.");<a name="line.129"></a>
-<span class="sourceLineNo">130</span>                e.printStackTrace();<a name="line.130"></a>
-<span class="sourceLineNo">131</span>        } catch (ClassCastException e) {<a name="line.131"></a>
-<span class="sourceLineNo">132</span>                System.err.println("Could not convert the response to a Book; a field had the wrong structure.");<a name="line.132"></a>
-<span class="sourceLineNo">133</span>                e.printStackTrace();<a name="line.133"></a>
-<span class="sourceLineNo">134</span>        }<a name="line.134"></a>
-<span class="sourceLineNo">135</span>        }       <a name="line.135"></a>
-<span class="sourceLineNo">136</span>}<a name="line.136"></a>
+<span class="sourceLineNo">076</span>        <a name="line.76"></a>
+<span class="sourceLineNo">077</span>        /**<a name="line.77"></a>
+<span class="sourceLineNo">078</span>         * Creates a string based representation of this Book.<a name="line.78"></a>
+<span class="sourceLineNo">079</span>        <a name="line.79"></a>
+<span class="sourceLineNo">080</span>         * @return String<a name="line.80"></a>
+<span class="sourceLineNo">081</span>         */<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        public String toString() {<a name="line.82"></a>
+<span class="sourceLineNo">083</span>                return "Book[" +genre+", "+publisher+", "+soldBy+", "+statistics+", "+daily+"]";<a name="line.83"></a>
+<span class="sourceLineNo">084</span>        }<a name="line.84"></a>
+<span class="sourceLineNo">085</span>        <a name="line.85"></a>
+<span class="sourceLineNo">086</span>        /**<a name="line.86"></a>
+<span class="sourceLineNo">087</span>         * Internal constructor to create a Book from a  representation.<a name="line.87"></a>
+<span class="sourceLineNo">088</span>         * @param json_data The raw json data that will be parsed.<a name="line.88"></a>
+<span class="sourceLineNo">089</span>         */<a name="line.89"></a>
+<span class="sourceLineNo">090</span>    public Book(JSONObject json_data) {<a name="line.90"></a>
+<span class="sourceLineNo">091</span>        try {// genre<a name="line.91"></a>
+<span class="sourceLineNo">092</span>            this.genre = (String)json_data.get("genre");// publisher<a name="line.92"></a>
+<span class="sourceLineNo">093</span>            this.publisher = new Publisher((JSONObject)json_data.get("publisher"));// sold by<a name="line.93"></a>
+<span class="sourceLineNo">094</span>            this.soldBy = (String)json_data.get("sold by");// statistics<a name="line.94"></a>
+<span class="sourceLineNo">095</span>            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));// daily<a name="line.95"></a>
+<span class="sourceLineNo">096</span>            this.daily = new Daily((JSONObject)json_data.get("daily"));<a name="line.96"></a>
+<span class="sourceLineNo">097</span>        } catch (NullPointerException e) {<a name="line.97"></a>
+<span class="sourceLineNo">098</span>                System.err.println("Could not convert the response to a Book; a field was missing.");<a name="line.98"></a>
+<span class="sourceLineNo">099</span>                e.printStackTrace();<a name="line.99"></a>
+<span class="sourceLineNo">100</span>        } catch (ClassCastException e) {<a name="line.100"></a>
+<span class="sourceLineNo">101</span>                System.err.println("Could not convert the response to a Book; a field had the wrong structure.");<a name="line.101"></a>
+<span class="sourceLineNo">102</span>                e.printStackTrace();<a name="line.102"></a>
+<span class="sourceLineNo">103</span>        }<a name="line.103"></a>
+<span class="sourceLineNo">104</span>        }       <a name="line.104"></a>
+<span class="sourceLineNo">105</span>}<a name="line.105"></a>
 
 
 
