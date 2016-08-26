@@ -21,7 +21,7 @@ for quake in reports['earthquakes']:
     if quake['magnitude'] > 0:
         new_reports.append({
             'location': {
-                'state': state,
+                'name': state,
                 'full': quake['location_description'],
                 'latitude': quake['location']['latitude'],
                 'longitude': quake['location']['longitude'],
@@ -47,4 +47,4 @@ for quake in reports['earthquakes']:
         })
 
 with open('earthquakes.json', 'w') as output:
-    json.dump(new_reports, output)
+    json.dump(list(reversed(new_reports)), output)

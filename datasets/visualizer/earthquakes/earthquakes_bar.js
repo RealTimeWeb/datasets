@@ -1,5046 +1,5486 @@
 earthquakes_bar = [
   {
     "best_indexes": [
-      " CA", 
-      " Alaska", 
-      " California", 
-      " Nevada", 
-      " Washington", 
-      " Montana", 
-      " Hawaii", 
-      " Puerto Rico", 
-      " Oregon", 
-      " British Virgin Islands"
+      "California", 
+      "Alaska", 
+      "Nevada", 
+      "Hawaii", 
+      "Washington", 
+      "Puerto Rico", 
+      "British Virgin Islands", 
+      "Montana", 
+      "Oregon", 
+      "Oklahoma"
     ], 
     "data": {
       "earthquakes.[0].impact.gap": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": 5035.0, 
-          "average": 53.56382978723404
+        "Canada": {
+          "count": 57, 
+          "sum": 7209.199881344002, 
+          "average": 126.47719090077199
         }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 625.0, 
-          "average": 125.0
-        }, 
-        " Algeria": {
-          "count": 4, 
-          "sum": 334.0, 
-          "average": 83.5
-        }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": 2523.0, 
-          "average": 105.125
-        }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": 222.0, 
-          "average": 55.5
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": 1054.03, 
-          "average": 175.67166666666665
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": 7330.91, 
-          "average": 120.1788524590164
-        }, 
-        " Cyprus": {
-          "count": 2, 
-          "sum": 175.0, 
-          "average": 87.5
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": 26195.12, 
-          "average": 176.99405405405406
-        }, 
-        " Wallis and Futuna": {
+        "East Timor": {
           "count": 1, 
-          "sum": 117.0, 
-          "average": 117.0
+          "sum": 140.0, 
+          "average": 140.0
         }, 
-        " Guatemala": {
-          "count": 8, 
-          "sum": 1181.0, 
-          "average": 147.625
+        "Wyoming": {
+          "count": 37, 
+          "sum": 5391.0, 
+          "average": 145.7027027027027
         }, 
-        " New York": {
+        "Illinois": {
           "count": 3, 
-          "sum": 386.0, 
-          "average": 128.66666666666666
+          "sum": 165.0, 
+          "average": 55.0
         }, 
-        "Owen Fracture Zone region": {
+        "Argentina": {
+          "count": 8, 
+          "sum": 485.0, 
+          "average": 60.625
+        }, 
+        "Bolivia": {
+          "count": 3, 
+          "sum": 167.0, 
+          "average": 55.666666666666664
+        }, 
+        "North of Svalbard": {
           "count": 1, 
-          "sum": 76.0, 
-          "average": 76.0
+          "sum": 32.0, 
+          "average": 32.0
         }, 
-        " Connecticut": {
+        "Texas": {
+          "count": 1, 
+          "sum": 54.0, 
+          "average": 54.0
+        }, 
+        "Kansas": {
+          "count": 21, 
+          "sum": 2112.0, 
+          "average": 100.57142857142857
+        }, 
+        "Chagos Archipelago region": {
+          "count": 1, 
+          "sum": 67.0, 
+          "average": 67.0
+        }, 
+        "Guatemala": {
+          "count": 6, 
+          "sum": 943.0, 
+          "average": 157.16666666666666
+        }, 
+        "West Virginia": {
+          "count": 1, 
+          "sum": 54.0, 
+          "average": 54.0
+        }, 
+        "Oklahoma": {
+          "count": 65, 
+          "sum": 3445.0, 
+          "average": 53.0
+        }, 
+        "Alaska": {
+          "count": 2148, 
+          "sum": 139967.18928726413, 
+          "average": 65.1616337463986
+        }, 
+        "Christmas Island": {
+          "count": 1, 
+          "sum": 57.0, 
+          "average": 57.0
+        }, 
+        "Greenland Sea": {
           "count": 1, 
           "sum": 81.0, 
           "average": 81.0
         }, 
-        " Massachusetts": {
+        "Missouri": {
+          "count": 12, 
+          "sum": 727.0, 
+          "average": 60.583333333333336
+        }, 
+        "New Zealand": {
+          "count": 13, 
+          "sum": 1818.0, 
+          "average": 139.84615384615384
+        }, 
+        "Pakistan": {
           "count": 1, 
-          "sum": 158.0, 
-          "average": 158.0
+          "sum": 143.0, 
+          "average": 143.0
         }, 
-        " China": {
+        "Ascension Island region": {
+          "count": 1, 
+          "sum": 62.0, 
+          "average": 62.0
+        }, 
+        "New Jersey": {
+          "count": 3, 
+          "sum": 282.0, 
+          "average": 94.0
+        }, 
+        "Washington": {
+          "count": 171, 
+          "sum": 26039.0, 
+          "average": 152.2748538011696
+        }, 
+        "Azerbaijan": {
+          "count": 1, 
+          "sum": 37.0, 
+          "average": 37.0
+        }, 
+        "Off the coast of Oregon": {
+          "count": 2, 
+          "sum": 479.0, 
+          "average": 239.5
+        }, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 780.0, 
+          "average": 65.0
+        }, 
+        "Turkey": {
+          "count": 2, 
+          "sum": 105.0, 
+          "average": 52.5
+        }, 
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 835.0, 
+          "average": 83.5
+        }, 
+        "Kiribati region": {
+          "count": 1, 
+          "sum": 123.0, 
+          "average": 123.0
+        }, 
+        "South of Panama": {
+          "count": 1, 
+          "sum": 157.0, 
+          "average": 157.0
+        }, 
+        "South of the Fiji Islands": {
+          "count": 1, 
+          "sum": 180.0, 
+          "average": 180.0
+        }, 
+        "Peru": {
+          "count": 13, 
+          "sum": 1491.0, 
+          "average": 114.6923076923077
+        }, 
+        "Arizona": {
+          "count": 3, 
+          "sum": 645.77, 
+          "average": 215.25666666666666
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": 13357.440000000004, 
+          "average": 164.90666666666667
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": 12329.0, 
+          "average": 128.42708333333334
+        }, 
+        "China": {
           "count": 7, 
-          "sum": 650.0, 
-          "average": 92.85714285714286
+          "sum": 562.0, 
+          "average": 80.28571428571429
         }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": 18516.4, 
-          "average": 243.63684210526318
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": 7136.600000000001, 
+          "average": 230.21290322580646
         }, 
-        " Montana": {
-          "count": 213, 
-          "sum": 31137.0, 
-          "average": 146.18309859154928
-        }, 
-        " Kazakhstan": {
+        "Ukraine": {
           "count": 1, 
           "sum": 43.0, 
           "average": 43.0
         }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": 24347.0, 
-          "average": 118.18932038834951
-        }, 
-        " Tonga": {
-          "count": 8, 
-          "sum": 797.0, 
-          "average": 99.625
-        }, 
-        " Kyrgyzstan": {
-          "count": 1, 
-          "sum": 51.0, 
-          "average": 51.0
-        }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": 3222.0, 
-          "average": 179.0
-        }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": 993.0, 
-          "average": 141.85714285714286
-        }, 
-        " MX": {
-          "count": 22, 
-          "sum": 4040.0, 
-          "average": 183.63636363636363
-        }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": 47845.79664163211, 
-          "average": 19.9523755803303
-        }, 
-        " Macedonia": {
-          "count": 3, 
-          "sum": 92.0, 
-          "average": 30.666666666666668
-        }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": 4433.200000000001, 
-          "average": 221.66
-        }, 
-        " Costa Rica": {
+        "India": {
           "count": 2, 
-          "sum": 342.0, 
-          "average": 171.0
+          "sum": 226.0, 
+          "average": 113.0
         }, 
-        "Chagos Archipelago region": {
+        "Tonga": {
+          "count": 12, 
+          "sum": 952.0, 
+          "average": 79.33333333333333
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": 4576.0, 
+          "average": 91.52
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": 31068.0, 
+          "average": 317.0204081632653
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
           "count": 1, 
-          "sum": 197.0, 
-          "average": 197.0
+          "sum": 68.0, 
+          "average": 68.0
         }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": 3310.0, 
-          "average": 114.13793103448276
-        }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": 139.0, 
-          "average": 69.5
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": 45705.59999999998, 
-          "average": 321.8704225352113
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": 894.0, 
-          "average": 63.857142857142854
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": 168.0, 
-          "average": 84.0
-        }, 
-        " Yemen": {
-          "count": 1, 
-          "sum": 90.0, 
-          "average": 90.0
-        }, 
-        " Guadeloupe": {
+        "Ohio": {
           "count": 1, 
           "sum": 88.0, 
           "average": 88.0
         }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": 1011.0, 
-          "average": 101.1
+        "Panama": {
+          "count": 3, 
+          "sum": 360.0, 
+          "average": 120.0
         }, 
-        " Bulgaria": {
+        "Russia": {
           "count": 1, 
-          "sum": 35.0, 
-          "average": 35.0
+          "sum": 108.0, 
+          "average": 108.0
         }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": 2949.0, 
-          "average": 89.36363636363636
+        "Portugal": {
+          "count": 3, 
+          "sum": 286.0, 
+          "average": 95.33333333333333
         }, 
-        " Greenland": {
+        "Nicaragua": {
+          "count": 4, 
+          "sum": 571.0, 
+          "average": 142.75
+        }, 
+        "North Carolina": {
           "count": 1, 
-          "sum": 176.0, 
-          "average": 176.0
+          "sum": 168.0, 
+          "average": 168.0
         }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 200.0, 
-          "average": 100.0
+        "Northern California": {
+          "count": 3, 
+          "sum": 331.0, 
+          "average": 110.33333333333333
         }, 
-        " Honduras": {
-          "count": 1, 
-          "sum": 55.0, 
-          "average": 55.0
-        }, 
-        " French Polynesia region": {
-          "count": 1, 
-          "sum": 137.0, 
-          "average": 137.0
-        }, 
-        " Canada": {
-          "count": 50, 
-          "sum": 6884.999984160001, 
-          "average": 137.69999968320002
-        }, 
-        " Albania": {
-          "count": 1, 
-          "sum": 44.0, 
-          "average": 44.0
-        }, 
-        " Azerbaijan": {
-          "count": 1, 
-          "sum": 133.0, 
-          "average": 133.0
-        }, 
-        " Washington": {
-          "count": 242, 
-          "sum": 38275.0, 
-          "average": 158.1611570247934
-        }, 
-        " El Salvador": {
+        "Japan": {
           "count": 9, 
-          "sum": 1172.0, 
-          "average": 130.22222222222223
+          "sum": 732.0, 
+          "average": 81.33333333333333
         }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": 35629.19999999998, 
-          "average": 239.12214765100669
+        "Northwest of Australia": {
+          "count": 1, 
+          "sum": 166.0, 
+          "average": 166.0
         }, 
-        " Uzbekistan": {
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": 10080.000000000002, 
+          "average": 265.2631578947368
+        }, 
+        "Virgin Islands region": {
+          "count": 1, 
+          "sum": 280.8, 
+          "average": 280.8
+        }, 
+        "Costa Rica": {
+          "count": 4, 
+          "sum": 475.0, 
+          "average": 118.75
+        }, 
+        "Arkansas": {
+          "count": 3, 
+          "sum": 275.0, 
+          "average": 91.66666666666667
+        }, 
+        "Italy": {
+          "count": 12, 
+          "sum": 667.0, 
+          "average": 55.583333333333336
+        }, 
+        "Ecuador": {
+          "count": 2, 
+          "sum": 336.0, 
+          "average": 168.0
+        }, 
+        "Australia": {
+          "count": 1, 
+          "sum": 51.0, 
+          "average": 51.0
+        }, 
+        "Iran": {
+          "count": 3, 
+          "sum": 217.0, 
+          "average": 72.33333333333333
+        }, 
+        "El Salvador": {
+          "count": 2, 
+          "sum": 245.0, 
+          "average": 122.5
+        }, 
+        "California": {
+          "count": 3607, 
+          "sum": 397557.04, 
+          "average": 110.2181979484336
+        }, 
+        "Chile": {
+          "count": 31, 
+          "sum": 2654.0, 
+          "average": 85.61290322580645
+        }, 
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": 37857.599999999984, 
+          "average": 242.67692307692306
+        }, 
+        "Georgia": {
+          "count": 1, 
+          "sum": 56.0, 
+          "average": 56.0
+        }, 
+        "Pennsylvania": {
+          "count": 1, 
+          "sum": 84.0, 
+          "average": 84.0
+        }, 
+        "Poland": {
+          "count": 1, 
+          "sum": 39.0, 
+          "average": 39.0
+        }, 
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": 60.0, 
+          "average": 60.0
+        }, 
+        "Colorado": {
+          "count": 8, 
+          "sum": 651.0, 
+          "average": 81.375
+        }, 
+        "Uzbekistan": {
+          "count": 1, 
+          "sum": 50.0, 
+          "average": 50.0
+        }, 
+        "New York": {
           "count": 1, 
           "sum": 72.0, 
           "average": 72.0
         }, 
-        " Saint Eustatius and Saba ": {
-          "count": 1, 
-          "sum": 345.6, 
-          "average": 345.6
-        }, 
-        " Georgia": {
+        "Colombia": {
           "count": 2, 
-          "sum": 231.0, 
-          "average": 115.5
+          "sum": 128.0, 
+          "average": 64.0
         }, 
-        " New Jersey": {
+        "Taiwan": {
           "count": 1, 
-          "sum": 89.0, 
-          "average": 89.0
+          "sum": 130.0, 
+          "average": 130.0
         }, 
-        " Greece": {
+        "Nevada": {
+          "count": 712, 
+          "sum": 127863.48, 
+          "average": 179.58353932584268
+        }, 
+        "Cyprus": {
+          "count": 1, 
+          "sum": 138.0, 
+          "average": 138.0
+        }, 
+        "Palau": {
+          "count": 1, 
+          "sum": 82.0, 
+          "average": 82.0
+        }, 
+        "Anguilla": {
+          "count": 1, 
+          "sum": 352.8, 
+          "average": 352.8
+        }, 
+        "Venezuela": {
+          "count": 2, 
+          "sum": 144.0, 
+          "average": 72.0
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": 2684.0, 
+          "average": 149.11111111111111
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": 6277.17, 
+          "average": 112.09232142857142
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": 148.0, 
+          "average": 148.0
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": 115.0, 
+          "average": 115.0
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": 169.0, 
+          "average": 169.0
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 1053.0, 
+          "average": 105.3
+        }, 
+        "Kyrgyzstan": {
           "count": 9, 
-          "sum": 541.0, 
-          "average": 60.111111111111114
+          "sum": 789.0, 
+          "average": 87.66666666666667
         }, 
-        " New Hampshire": {
+        "Hawaii": {
+          "count": 225, 
+          "sum": 26819.0, 
+          "average": 119.19555555555556
+        }, 
+        "Syria": {
           "count": 1, 
-          "sum": 103.0, 
-          "average": 103.0
+          "sum": 93.0, 
+          "average": 93.0
         }, 
-        " South Carolina": {
-          "count": 1, 
-          "sum": 104.0, 
-          "average": 104.0
-        }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": 102159.46999999993, 
-          "average": 149.35595029239767
-        }, 
-        " India": {
-          "count": 5, 
-          "sum": 683.0, 
-          "average": 136.6
-        }, 
-        " Tajikistan": {
+        "Burma": {
           "count": 2, 
-          "sum": 182.0, 
-          "average": 91.0
+          "sum": 88.0, 
+          "average": 44.0
         }, 
-        " Maine": {
+        "Mexico": {
+          "count": 42, 
+          "sum": 7154.0, 
+          "average": 170.33333333333334
+        }, 
+        "Tennessee": {
+          "count": 20, 
+          "sum": 1518.0, 
+          "average": 75.9
+        }, 
+        "Greece": {
           "count": 2, 
-          "sum": 194.0, 
-          "average": 97.0
-        }, 
-        " NV": {
-          "count": 2, 
-          "sum": 343.0, 
-          "average": 171.5
-        }, 
-        " Turkey": {
-          "count": 3, 
-          "sum": 123.0, 
+          "sum": 82.0, 
           "average": 41.0
-        }, 
-        " Serbia": {
-          "count": 1, 
-          "sum": 30.0, 
-          "average": 30.0
-        }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": 6102.0, 
-          "average": 169.5
-        }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 833.0, 
-          "average": 92.55555555555556
-        }, 
-        " Italy": {
-          "count": 2, 
-          "sum": 61.0, 
-          "average": 30.5
-        }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 161.0, 
-          "average": 80.5
-        }, 
-        " CA": {
-          "count": 2419, 
-          "sum": 239279.0, 
-          "average": 98.91649441918148
-        }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": 205.0, 
-          "average": 102.5
-        }, 
-        "Off the coast of Oregon": {
-          "count": 1, 
-          "sum": 170.0, 
-          "average": 170.0
-        }, 
-        " Argentina": {
-          "count": 6, 
-          "sum": 320.0, 
-          "average": 53.333333333333336
-        }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": 780.0, 
-          "average": 111.42857142857143
-        }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": 466.0, 
-          "average": 93.2
-        }, 
-        " Peru": {
-          "count": 7, 
-          "sum": 860.0, 
-          "average": 122.85714285714286
-        }, 
-        " Chile": {
-          "count": 13, 
-          "sum": 441.0, 
-          "average": 33.92307692307692
-        }, 
-        " Pennsylvania": {
-          "count": 1, 
-          "sum": 40.0, 
-          "average": 40.0
-        }, 
-        " Anguilla": {
-          "count": 1, 
-          "sum": 345.6, 
-          "average": 345.6
-        }, 
-        " Venezuela": {
-          "count": 1, 
-          "sum": 36.0, 
-          "average": 36.0
-        }, 
-        " Texas": {
-          "count": 1, 
-          "sum": 90.0, 
-          "average": 90.0
-        }, 
-        " California": {
-          "count": 1577, 
-          "sum": 175541.8600000001, 
-          "average": 111.31379835129992
         }
       }, 
       "earthquakes.[0].time.second": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": 2648, 
-          "average": 28.170212765957448
+        "Canada": {
+          "count": 57, 
+          "sum": 1645, 
+          "average": 28.859649122807017
         }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 67, 
-          "average": 13.4
-        }, 
-        " Algeria": {
-          "count": 4, 
-          "sum": 112, 
-          "average": 28.0
-        }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": 729, 
-          "average": 30.375
-        }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": 148, 
-          "average": 37.0
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": 189, 
-          "average": 31.5
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": 1795, 
-          "average": 29.42622950819672
-        }, 
-        " Cyprus": {
-          "count": 2, 
-          "sum": 85, 
-          "average": 42.5
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": 4233, 
-          "average": 28.60135135135135
-        }, 
-        " Wallis and Futuna": {
+        "East Timor": {
           "count": 1, 
-          "sum": 39, 
-          "average": 39.0
+          "sum": 35, 
+          "average": 35.0
         }, 
-        " Guatemala": {
-          "count": 8, 
-          "sum": 196, 
-          "average": 24.5
+        "Wyoming": {
+          "count": 37, 
+          "sum": 1148, 
+          "average": 31.027027027027028
         }, 
-        " New York": {
+        "Illinois": {
           "count": 3, 
-          "sum": 114, 
-          "average": 38.0
+          "sum": 113, 
+          "average": 37.666666666666664
         }, 
-        "Owen Fracture Zone region": {
+        "Argentina": {
+          "count": 8, 
+          "sum": 222, 
+          "average": 27.75
+        }, 
+        "Bolivia": {
+          "count": 3, 
+          "sum": 68, 
+          "average": 22.666666666666668
+        }, 
+        "North of Svalbard": {
           "count": 1, 
-          "sum": 29, 
-          "average": 29.0
+          "sum": 31, 
+          "average": 31.0
         }, 
-        " Connecticut": {
-          "count": 1, 
-          "sum": 11, 
-          "average": 11.0
-        }, 
-        " Massachusetts": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " China": {
-          "count": 7, 
-          "sum": 175, 
-          "average": 25.0
-        }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": 2104, 
-          "average": 27.68421052631579
-        }, 
-        " Montana": {
-          "count": 213, 
-          "sum": 6639, 
-          "average": 31.169014084507044
-        }, 
-        " Kazakhstan": {
+        "Texas": {
           "count": 1, 
           "sum": 36, 
           "average": 36.0
         }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": 6090, 
-          "average": 29.563106796116504
-        }, 
-        " Tonga": {
-          "count": 8, 
-          "sum": 292, 
-          "average": 36.5
-        }, 
-        " Kyrgyzstan": {
-          "count": 1, 
-          "sum": 12, 
-          "average": 12.0
-        }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": 525, 
-          "average": 29.166666666666668
-        }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": 197, 
-          "average": 28.142857142857142
-        }, 
-        " MX": {
-          "count": 22, 
-          "sum": 717, 
-          "average": 32.59090909090909
-        }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": 68542, 
-          "average": 28.58298582151793
-        }, 
-        " Macedonia": {
-          "count": 3, 
-          "sum": 77, 
-          "average": 25.666666666666668
-        }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": 520, 
+        "Kansas": {
+          "count": 21, 
+          "sum": 546, 
           "average": 26.0
-        }, 
-        " Costa Rica": {
-          "count": 2, 
-          "sum": 81, 
-          "average": 40.5
         }, 
         "Chagos Archipelago region": {
           "count": 1, 
-          "sum": 56, 
-          "average": 56.0
+          "sum": 45, 
+          "average": 45.0
         }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": 999, 
-          "average": 34.44827586206897
+        "Guatemala": {
+          "count": 6, 
+          "sum": 184, 
+          "average": 30.666666666666668
         }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": 39, 
-          "average": 19.5
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": 4184, 
-          "average": 29.464788732394368
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": 454, 
-          "average": 32.42857142857143
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": 32, 
-          "average": 16.0
-        }, 
-        " Yemen": {
+        "West Virginia": {
           "count": 1, 
-          "sum": 28, 
-          "average": 28.0
+          "sum": 14, 
+          "average": 14.0
         }, 
-        " Guadeloupe": {
+        "Oklahoma": {
+          "count": 65, 
+          "sum": 1889, 
+          "average": 29.06153846153846
+        }, 
+        "Alaska": {
+          "count": 2148, 
+          "sum": 63630, 
+          "average": 29.622905027932962
+        }, 
+        "Christmas Island": {
           "count": 1, 
-          "sum": 56, 
-          "average": 56.0
+          "sum": 10, 
+          "average": 10.0
         }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": 254, 
-          "average": 25.4
-        }, 
-        " Bulgaria": {
+        "Greenland Sea": {
           "count": 1, 
-          "sum": 32, 
-          "average": 32.0
+          "sum": 34, 
+          "average": 34.0
         }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": 926, 
-          "average": 28.060606060606062
+        "Missouri": {
+          "count": 12, 
+          "sum": 364, 
+          "average": 30.333333333333332
         }, 
-        " Greenland": {
-          "count": 1, 
-          "sum": 8, 
-          "average": 8.0
+        "New Zealand": {
+          "count": 13, 
+          "sum": 315, 
+          "average": 24.23076923076923
         }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 63, 
-          "average": 31.5
-        }, 
-        " Honduras": {
-          "count": 1, 
-          "sum": 20, 
-          "average": 20.0
-        }, 
-        " French Polynesia region": {
-          "count": 1, 
-          "sum": 38, 
-          "average": 38.0
-        }, 
-        " Canada": {
-          "count": 50, 
-          "sum": 1572, 
-          "average": 31.44
-        }, 
-        " Albania": {
-          "count": 1, 
-          "sum": 44, 
-          "average": 44.0
-        }, 
-        " Azerbaijan": {
-          "count": 1, 
-          "sum": 37, 
-          "average": 37.0
-        }, 
-        " Washington": {
-          "count": 242, 
-          "sum": 7491, 
-          "average": 30.954545454545453
-        }, 
-        " El Salvador": {
-          "count": 9, 
-          "sum": 274, 
-          "average": 30.444444444444443
-        }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": 4291, 
-          "average": 28.798657718120804
-        }, 
-        " Uzbekistan": {
-          "count": 1, 
-          "sum": 8, 
-          "average": 8.0
-        }, 
-        " Saint Eustatius and Saba ": {
-          "count": 1, 
-          "sum": 50, 
-          "average": 50.0
-        }, 
-        " Georgia": {
-          "count": 2, 
-          "sum": 94, 
-          "average": 47.0
-        }, 
-        " New Jersey": {
-          "count": 1, 
-          "sum": 43, 
-          "average": 43.0
-        }, 
-        " Greece": {
-          "count": 9, 
-          "sum": 233, 
-          "average": 25.88888888888889
-        }, 
-        " New Hampshire": {
+        "Pakistan": {
           "count": 1, 
           "sum": 19, 
           "average": 19.0
         }, 
-        " South Carolina": {
+        "Ascension Island region": {
           "count": 1, 
-          "sum": 48, 
-          "average": 48.0
+          "sum": 6, 
+          "average": 6.0
         }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": 20754, 
-          "average": 30.342105263157894
-        }, 
-        " India": {
-          "count": 5, 
-          "sum": 94, 
-          "average": 18.8
-        }, 
-        " Tajikistan": {
-          "count": 2, 
-          "sum": 21, 
-          "average": 10.5
-        }, 
-        " Maine": {
-          "count": 2, 
-          "sum": 50, 
-          "average": 25.0
-        }, 
-        " NV": {
-          "count": 2, 
-          "sum": 109, 
-          "average": 54.5
-        }, 
-        " Turkey": {
+        "New Jersey": {
           "count": 3, 
-          "sum": 69, 
-          "average": 23.0
+          "sum": 88, 
+          "average": 29.333333333333332
         }, 
-        " Serbia": {
+        "Washington": {
+          "count": 171, 
+          "sum": 5022, 
+          "average": 29.36842105263158
+        }, 
+        "Azerbaijan": {
           "count": 1, 
-          "sum": 43, 
-          "average": 43.0
-        }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": 1216, 
-          "average": 33.77777777777778
-        }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 271, 
-          "average": 30.11111111111111
-        }, 
-        " Italy": {
-          "count": 2, 
-          "sum": 49, 
-          "average": 24.5
-        }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 63, 
-          "average": 31.5
-        }, 
-        " CA": {
-          "count": 2419, 
-          "sum": 70985, 
-          "average": 29.34477056634973
-        }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": 68, 
+          "sum": 34, 
           "average": 34.0
         }, 
         "Off the coast of Oregon": {
+          "count": 2, 
+          "sum": 67, 
+          "average": 33.5
+        }, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 377, 
+          "average": 31.416666666666668
+        }, 
+        "Turkey": {
+          "count": 2, 
+          "sum": 59, 
+          "average": 29.5
+        }, 
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 231, 
+          "average": 23.1
+        }, 
+        "Kiribati region": {
           "count": 1, 
-          "sum": 5, 
-          "average": 5.0
+          "sum": 24, 
+          "average": 24.0
         }, 
-        " Argentina": {
-          "count": 6, 
-          "sum": 239, 
-          "average": 39.833333333333336
-        }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": 182, 
-          "average": 26.0
-        }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": 177, 
-          "average": 35.4
-        }, 
-        " Peru": {
-          "count": 7, 
-          "sum": 192, 
-          "average": 27.428571428571427
-        }, 
-        " Chile": {
-          "count": 13, 
-          "sum": 319, 
-          "average": 24.53846153846154
-        }, 
-        " Pennsylvania": {
+        "South of Panama": {
           "count": 1, 
-          "sum": 36, 
-          "average": 36.0
+          "sum": 3, 
+          "average": 3.0
         }, 
-        " Anguilla": {
-          "count": 1, 
-          "sum": 25, 
-          "average": 25.0
-        }, 
-        " Venezuela": {
+        "South of the Fiji Islands": {
           "count": 1, 
           "sum": 54, 
           "average": 54.0
         }, 
-        " Texas": {
+        "Peru": {
+          "count": 13, 
+          "sum": 278, 
+          "average": 21.384615384615383
+        }, 
+        "Arizona": {
+          "count": 3, 
+          "sum": 133, 
+          "average": 44.333333333333336
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": 2539, 
+          "average": 31.34567901234568
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": 2563, 
+          "average": 26.697916666666668
+        }, 
+        "China": {
+          "count": 7, 
+          "sum": 273, 
+          "average": 39.0
+        }, 
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": 916, 
+          "average": 29.548387096774192
+        }, 
+        "Ukraine": {
+          "count": 1, 
+          "sum": 5, 
+          "average": 5.0
+        }, 
+        "India": {
+          "count": 2, 
+          "sum": 46, 
+          "average": 23.0
+        }, 
+        "Tonga": {
+          "count": 12, 
+          "sum": 327, 
+          "average": 27.25
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": 1558, 
+          "average": 31.16
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": 3138, 
+          "average": 32.02040816326531
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
+          "count": 1, 
+          "sum": 28, 
+          "average": 28.0
+        }, 
+        "Ohio": {
+          "count": 1, 
+          "sum": 29, 
+          "average": 29.0
+        }, 
+        "Panama": {
+          "count": 3, 
+          "sum": 96, 
+          "average": 32.0
+        }, 
+        "Russia": {
+          "count": 1, 
+          "sum": 17, 
+          "average": 17.0
+        }, 
+        "Portugal": {
+          "count": 3, 
+          "sum": 117, 
+          "average": 39.0
+        }, 
+        "Nicaragua": {
+          "count": 4, 
+          "sum": 64, 
+          "average": 16.0
+        }, 
+        "North Carolina": {
+          "count": 1, 
+          "sum": 0, 
+          "average": 0.0
+        }, 
+        "Northern California": {
+          "count": 3, 
+          "sum": 111, 
+          "average": 37.0
+        }, 
+        "Japan": {
+          "count": 9, 
+          "sum": 304, 
+          "average": 33.77777777777778
+        }, 
+        "Northwest of Australia": {
+          "count": 1, 
+          "sum": 49, 
+          "average": 49.0
+        }, 
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": 1137, 
+          "average": 29.92105263157895
+        }, 
+        "Virgin Islands region": {
+          "count": 1, 
+          "sum": 26, 
+          "average": 26.0
+        }, 
+        "Costa Rica": {
+          "count": 4, 
+          "sum": 143, 
+          "average": 35.75
+        }, 
+        "Arkansas": {
+          "count": 3, 
+          "sum": 127, 
+          "average": 42.333333333333336
+        }, 
+        "Italy": {
+          "count": 12, 
+          "sum": 313, 
+          "average": 26.083333333333332
+        }, 
+        "Ecuador": {
+          "count": 2, 
+          "sum": 59, 
+          "average": 29.5
+        }, 
+        "Australia": {
+          "count": 1, 
+          "sum": 34, 
+          "average": 34.0
+        }, 
+        "Iran": {
+          "count": 3, 
+          "sum": 54, 
+          "average": 18.0
+        }, 
+        "El Salvador": {
+          "count": 2, 
+          "sum": 7, 
+          "average": 3.5
+        }, 
+        "California": {
+          "count": 3607, 
+          "sum": 105557, 
+          "average": 29.26448572220682
+        }, 
+        "Chile": {
+          "count": 31, 
+          "sum": 878, 
+          "average": 28.322580645161292
+        }, 
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": 4823, 
+          "average": 30.916666666666668
+        }, 
+        "Georgia": {
+          "count": 1, 
+          "sum": 15, 
+          "average": 15.0
+        }, 
+        "Pennsylvania": {
+          "count": 1, 
+          "sum": 45, 
+          "average": 45.0
+        }, 
+        "Poland": {
+          "count": 1, 
+          "sum": 38, 
+          "average": 38.0
+        }, 
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": 26, 
+          "average": 26.0
+        }, 
+        "Colorado": {
+          "count": 8, 
+          "sum": 156, 
+          "average": 19.5
+        }, 
+        "Uzbekistan": {
+          "count": 1, 
+          "sum": 29, 
+          "average": 29.0
+        }, 
+        "New York": {
+          "count": 1, 
+          "sum": 23, 
+          "average": 23.0
+        }, 
+        "Colombia": {
+          "count": 2, 
+          "sum": 57, 
+          "average": 28.5
+        }, 
+        "Taiwan": {
+          "count": 1, 
+          "sum": 14, 
+          "average": 14.0
+        }, 
+        "Nevada": {
+          "count": 712, 
+          "sum": 20228, 
+          "average": 28.410112359550563
+        }, 
+        "Cyprus": {
+          "count": 1, 
+          "sum": 18, 
+          "average": 18.0
+        }, 
+        "Palau": {
           "count": 1, 
           "sum": 13, 
           "average": 13.0
         }, 
-        " California": {
-          "count": 1577, 
-          "sum": 46491, 
-          "average": 29.480659480025366
+        "Anguilla": {
+          "count": 1, 
+          "sum": 44, 
+          "average": 44.0
+        }, 
+        "Venezuela": {
+          "count": 2, 
+          "sum": 38, 
+          "average": 19.0
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": 594, 
+          "average": 33.0
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": 1813, 
+          "average": 32.375
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": 30, 
+          "average": 30.0
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": 39, 
+          "average": 39.0
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": 33, 
+          "average": 33.0
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 231, 
+          "average": 23.1
+        }, 
+        "Kyrgyzstan": {
+          "count": 9, 
+          "sum": 206, 
+          "average": 22.88888888888889
+        }, 
+        "Hawaii": {
+          "count": 225, 
+          "sum": 6484, 
+          "average": 28.817777777777778
+        }, 
+        "Syria": {
+          "count": 1, 
+          "sum": 34, 
+          "average": 34.0
+        }, 
+        "Burma": {
+          "count": 2, 
+          "sum": 36, 
+          "average": 18.0
+        }, 
+        "Mexico": {
+          "count": 42, 
+          "sum": 1263, 
+          "average": 30.071428571428573
+        }, 
+        "Tennessee": {
+          "count": 20, 
+          "sum": 664, 
+          "average": 33.2
+        }, 
+        "Greece": {
+          "count": 2, 
+          "sum": 22, 
+          "average": 11.0
         }
       }, 
       "earthquakes.[0].impact.magnitude": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": 261.89999999999975, 
-          "average": 2.786170212765957
+        "Canada": {
+          "count": 57, 
+          "sum": 99.96, 
+          "average": 1.7536842105263157
         }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 22.000000000000004, 
-          "average": 4.4
-        }, 
-        " Algeria": {
-          "count": 4, 
-          "sum": 17.3, 
-          "average": 4.325
-        }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": 55.85000000000001, 
-          "average": 2.3270833333333334
-        }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": 17.5, 
-          "average": 4.375
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": 7.13, 
-          "average": 1.1883333333333332
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": 86.48, 
-          "average": 1.417704918032787
-        }, 
-        " Cyprus": {
-          "count": 2, 
-          "sum": 8.3, 
-          "average": 4.15
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": 189.80999999999997, 
-          "average": 1.2825
-        }, 
-        " Wallis and Futuna": {
+        "East Timor": {
           "count": 1, 
-          "sum": 4.8, 
-          "average": 4.8
+          "sum": 4.5, 
+          "average": 4.5
         }, 
-        " Guatemala": {
-          "count": 8, 
-          "sum": 35.2, 
-          "average": 4.4
+        "Wyoming": {
+          "count": 37, 
+          "sum": 46.29999999999999, 
+          "average": 1.2513513513513512
         }, 
-        " New York": {
+        "Illinois": {
           "count": 3, 
-          "sum": 4.1, 
-          "average": 1.3666666666666665
+          "sum": 7.289999999999999, 
+          "average": 2.43
         }, 
-        "Owen Fracture Zone region": {
-          "count": 1, 
-          "sum": 4.6, 
-          "average": 4.6
-        }, 
-        " Connecticut": {
-          "count": 1, 
-          "sum": 1.4, 
-          "average": 1.4
-        }, 
-        " Massachusetts": {
-          "count": 1, 
-          "sum": 2.2, 
-          "average": 2.2
-        }, 
-        " China": {
-          "count": 7, 
-          "sum": 31.4, 
-          "average": 4.485714285714286
-        }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": 158.10000000000002, 
-          "average": 2.080263157894737
-        }, 
-        " Montana": {
-          "count": 213, 
-          "sum": 139.67999999999998, 
-          "average": 0.655774647887324
-        }, 
-        " Kazakhstan": {
-          "count": 1, 
-          "sum": 4.6, 
-          "average": 4.6
-        }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": 352.3300000000001, 
-          "average": 1.7103398058252426
-        }, 
-        " Tonga": {
+        "Argentina": {
           "count": 8, 
-          "sum": 36.4, 
-          "average": 4.55
+          "sum": 34.800000000000004, 
+          "average": 4.35
         }, 
-        " Kyrgyzstan": {
-          "count": 1, 
-          "sum": 4.3, 
+        "Bolivia": {
+          "count": 3, 
+          "sum": 12.9, 
           "average": 4.3
         }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": 79.39999999999999, 
-          "average": 4.411111111111111
+        "North of Svalbard": {
+          "count": 1, 
+          "sum": 5.0, 
+          "average": 5.0
         }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": 31.800000000000004, 
-          "average": 4.542857142857143
+        "Texas": {
+          "count": 1, 
+          "sum": 2.5, 
+          "average": 2.5
         }, 
-        " MX": {
-          "count": 22, 
-          "sum": 41.06, 
-          "average": 1.8663636363636364
-        }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": 3600.399999999993, 
-          "average": 1.501417848206839
-        }, 
-        " Macedonia": {
-          "count": 3, 
-          "sum": 13.7, 
-          "average": 4.566666666666666
-        }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": 69.4, 
-          "average": 3.47
-        }, 
-        " Costa Rica": {
-          "count": 2, 
-          "sum": 8.8, 
-          "average": 4.4
+        "Kansas": {
+          "count": 21, 
+          "sum": 47.489999999999995, 
+          "average": 2.2614285714285716
         }, 
         "Chagos Archipelago region": {
           "count": 1, 
           "sum": 4.4, 
           "average": 4.4
         }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": 46.2, 
-          "average": 1.5931034482758621
+        "Guatemala": {
+          "count": 6, 
+          "sum": 26.300000000000004, 
+          "average": 4.383333333333334
         }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": 6.300000000000001, 
-          "average": 3.1500000000000004
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": 352.5, 
-          "average": 2.482394366197183
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": 26.66, 
-          "average": 1.9042857142857144
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": 9.2, 
-          "average": 4.6
-        }, 
-        " Yemen": {
+        "West Virginia": {
           "count": 1, 
-          "sum": 4.9, 
-          "average": 4.9
+          "sum": 2.31, 
+          "average": 2.31
         }, 
-        " Guadeloupe": {
-          "count": 1, 
-          "sum": 4.3, 
-          "average": 4.3
+        "Oklahoma": {
+          "count": 65, 
+          "sum": 188.79999999999993, 
+          "average": 2.9046153846153846
         }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": 43.60000000000001, 
-          "average": 4.36
+        "Alaska": {
+          "count": 2148, 
+          "sum": 3286.0000000000027, 
+          "average": 1.5297951582867784
         }, 
-        " Bulgaria": {
-          "count": 1, 
-          "sum": 4.3, 
-          "average": 4.3
-        }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": 54.32, 
-          "average": 1.646060606060606
-        }, 
-        " Greenland": {
-          "count": 1, 
-          "sum": 4.0, 
-          "average": 4.0
-        }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 8.8, 
-          "average": 4.4
-        }, 
-        " Honduras": {
-          "count": 1, 
-          "sum": 4.7, 
-          "average": 4.7
-        }, 
-        " French Polynesia region": {
-          "count": 1, 
-          "sum": 4.5, 
-          "average": 4.5
-        }, 
-        " Canada": {
-          "count": 50, 
-          "sum": 82.55, 
-          "average": 1.651
-        }, 
-        " Albania": {
-          "count": 1, 
-          "sum": 4.3, 
-          "average": 4.3
-        }, 
-        " Azerbaijan": {
-          "count": 1, 
-          "sum": 4.0, 
-          "average": 4.0
-        }, 
-        " Washington": {
-          "count": 242, 
-          "sum": 206.51000000000005, 
-          "average": 0.8533471074380165
-        }, 
-        " El Salvador": {
-          "count": 9, 
-          "sum": 39.8, 
-          "average": 4.422222222222222
-        }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": 366.5000000000002, 
-          "average": 2.459731543624161
-        }, 
-        " Uzbekistan": {
-          "count": 1, 
-          "sum": 4.3, 
-          "average": 4.3
-        }, 
-        " Saint Eustatius and Saba ": {
-          "count": 1, 
-          "sum": 3.5, 
-          "average": 3.5
-        }, 
-        " Georgia": {
-          "count": 2, 
-          "sum": 4.75, 
-          "average": 2.375
-        }, 
-        " New Jersey": {
-          "count": 1, 
-          "sum": 0.78, 
-          "average": 0.78
-        }, 
-        " Greece": {
-          "count": 9, 
-          "sum": 38.1, 
-          "average": 4.233333333333333
-        }, 
-        " New Hampshire": {
-          "count": 1, 
-          "sum": 2.0, 
-          "average": 2.0
-        }, 
-        " South Carolina": {
-          "count": 1, 
-          "sum": 1.82, 
-          "average": 1.82
-        }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": 401.80000000000047, 
-          "average": 0.5874269005847953
-        }, 
-        " India": {
-          "count": 5, 
-          "sum": 21.699999999999996, 
-          "average": 4.34
-        }, 
-        " Tajikistan": {
-          "count": 2, 
-          "sum": 9.1, 
-          "average": 4.55
-        }, 
-        " Maine": {
-          "count": 2, 
-          "sum": 2.9000000000000004, 
-          "average": 1.4500000000000002
-        }, 
-        " NV": {
-          "count": 2, 
-          "sum": 2.19, 
-          "average": 1.095
-        }, 
-        " Turkey": {
-          "count": 3, 
-          "sum": 12.5, 
-          "average": 4.166666666666667
-        }, 
-        " Serbia": {
-          "count": 1, 
-          "sum": 4.3, 
-          "average": 4.3
-        }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": 39.54999999999999, 
-          "average": 1.098611111111111
-        }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 39.2, 
-          "average": 4.355555555555556
-        }, 
-        " Italy": {
-          "count": 2, 
-          "sum": 8.7, 
-          "average": 4.35
-        }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 9.0, 
-          "average": 4.5
-        }, 
-        " CA": {
-          "count": 2419, 
-          "sum": 2181.2700000000004, 
-          "average": 0.9017238528317486
-        }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": 5.2, 
-          "average": 2.6
-        }, 
-        "Off the coast of Oregon": {
+        "Christmas Island": {
           "count": 1, 
           "sum": 5.0, 
           "average": 5.0
         }, 
-        " Argentina": {
-          "count": 6, 
-          "sum": 26.099999999999998, 
-          "average": 4.3500000000000005
-        }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": 32.099999999999994, 
-          "average": 4.585714285714286
-        }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": 8.440000000000001, 
-          "average": 1.688
-        }, 
-        " Peru": {
-          "count": 7, 
-          "sum": 31.799999999999997, 
-          "average": 4.542857142857143
-        }, 
-        " Chile": {
-          "count": 13, 
-          "sum": 57.50000000000001, 
-          "average": 4.423076923076923
-        }, 
-        " Pennsylvania": {
-          "count": 1, 
-          "sum": 1.58, 
-          "average": 1.58
-        }, 
-        " Anguilla": {
-          "count": 1, 
-          "sum": 3.1, 
-          "average": 3.1
-        }, 
-        " Venezuela": {
+        "Greenland Sea": {
           "count": 1, 
           "sum": 4.5, 
           "average": 4.5
         }, 
-        " Texas": {
-          "count": 1, 
-          "sum": 2.6, 
-          "average": 2.6
+        "Missouri": {
+          "count": 12, 
+          "sum": 20.469999999999995, 
+          "average": 1.7058333333333333
         }, 
-        " California": {
-          "count": 1577, 
-          "sum": 1465.2399999999982, 
-          "average": 0.9291312618896639
+        "New Zealand": {
+          "count": 13, 
+          "sum": 61.699999999999996, 
+          "average": 4.746153846153846
+        }, 
+        "Pakistan": {
+          "count": 1, 
+          "sum": 4.4, 
+          "average": 4.4
+        }, 
+        "Ascension Island region": {
+          "count": 1, 
+          "sum": 4.7, 
+          "average": 4.7
+        }, 
+        "New Jersey": {
+          "count": 3, 
+          "sum": 2.33, 
+          "average": 0.7766666666666667
+        }, 
+        "Washington": {
+          "count": 171, 
+          "sum": 176.2199999999999, 
+          "average": 1.0305263157894737
+        }, 
+        "Azerbaijan": {
+          "count": 1, 
+          "sum": 5.0, 
+          "average": 5.0
+        }, 
+        "Off the coast of Oregon": {
+          "count": 2, 
+          "sum": 7.199999999999999, 
+          "average": 3.5999999999999996
+        }, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 53.80000000000001, 
+          "average": 4.483333333333333
+        }, 
+        "Turkey": {
+          "count": 2, 
+          "sum": 8.0, 
+          "average": 4.0
+        }, 
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 43.6, 
+          "average": 4.36
+        }, 
+        "Kiribati region": {
+          "count": 1, 
+          "sum": 4.6, 
+          "average": 4.6
+        }, 
+        "South of Panama": {
+          "count": 1, 
+          "sum": 4.6, 
+          "average": 4.6
+        }, 
+        "South of the Fiji Islands": {
+          "count": 1, 
+          "sum": 4.4, 
+          "average": 4.4
+        }, 
+        "Peru": {
+          "count": 13, 
+          "sum": 58.300000000000004, 
+          "average": 4.484615384615385
+        }, 
+        "Arizona": {
+          "count": 3, 
+          "sum": 4.39, 
+          "average": 1.4633333333333332
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": 107.23000000000002, 
+          "average": 1.3238271604938272
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": 91.19000000000001, 
+          "average": 0.9498958333333333
+        }, 
+        "China": {
+          "count": 7, 
+          "sum": 31.900000000000002, 
+          "average": 4.557142857142858
+        }, 
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": 97.70000000000002, 
+          "average": 3.1516129032258067
+        }, 
+        "Ukraine": {
+          "count": 1, 
+          "sum": 4.8, 
+          "average": 4.8
+        }, 
+        "India": {
+          "count": 2, 
+          "sum": 9.3, 
+          "average": 4.65
+        }, 
+        "Tonga": {
+          "count": 12, 
+          "sum": 57.6, 
+          "average": 4.8
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": 231.70000000000002, 
+          "average": 4.6339999999999995
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": 230.09999999999994, 
+          "average": 2.3479591836734692
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
+          "count": 1, 
+          "sum": 4.7, 
+          "average": 4.7
+        }, 
+        "Ohio": {
+          "count": 1, 
+          "sum": 1.98, 
+          "average": 1.98
+        }, 
+        "Panama": {
+          "count": 3, 
+          "sum": 13.399999999999999, 
+          "average": 4.466666666666666
+        }, 
+        "Russia": {
+          "count": 1, 
+          "sum": 4.6, 
+          "average": 4.6
+        }, 
+        "Portugal": {
+          "count": 3, 
+          "sum": 12.999999999999998, 
+          "average": 4.333333333333333
+        }, 
+        "Nicaragua": {
+          "count": 4, 
+          "sum": 18.5, 
+          "average": 4.625
+        }, 
+        "North Carolina": {
+          "count": 1, 
+          "sum": 1.92, 
+          "average": 1.92
+        }, 
+        "Northern California": {
+          "count": 3, 
+          "sum": 2.45, 
+          "average": 0.8166666666666668
+        }, 
+        "Japan": {
+          "count": 9, 
+          "sum": 41.599999999999994, 
+          "average": 4.622222222222223
+        }, 
+        "Northwest of Australia": {
+          "count": 1, 
+          "sum": 4.1, 
+          "average": 4.1
+        }, 
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": 84.49999999999999, 
+          "average": 2.223684210526316
+        }, 
+        "Virgin Islands region": {
+          "count": 1, 
+          "sum": 1.8, 
+          "average": 1.8
+        }, 
+        "Costa Rica": {
+          "count": 4, 
+          "sum": 17.7, 
+          "average": 4.425
+        }, 
+        "Arkansas": {
+          "count": 3, 
+          "sum": 6.66, 
+          "average": 2.22
+        }, 
+        "Italy": {
+          "count": 12, 
+          "sum": 52.6, 
+          "average": 4.383333333333334
+        }, 
+        "Ecuador": {
+          "count": 2, 
+          "sum": 8.5, 
+          "average": 4.25
+        }, 
+        "Australia": {
+          "count": 1, 
+          "sum": 4.2, 
+          "average": 4.2
+        }, 
+        "Iran": {
+          "count": 3, 
+          "sum": 13.299999999999999, 
+          "average": 4.433333333333333
+        }, 
+        "El Salvador": {
+          "count": 2, 
+          "sum": 9.399999999999999, 
+          "average": 4.699999999999999
+        }, 
+        "California": {
+          "count": 3607, 
+          "sum": 3628.920000000008, 
+          "average": 1.0060770723593013
+        }, 
+        "Chile": {
+          "count": 31, 
+          "sum": 139.49999999999997, 
+          "average": 4.5
+        }, 
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": 385.99999999999983, 
+          "average": 2.4743589743589745
+        }, 
+        "Georgia": {
+          "count": 1, 
+          "sum": 4.2, 
+          "average": 4.2
+        }, 
+        "Pennsylvania": {
+          "count": 1, 
+          "sum": 1.37, 
+          "average": 1.37
+        }, 
+        "Poland": {
+          "count": 1, 
+          "sum": 4.2, 
+          "average": 4.2
+        }, 
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": 4.9, 
+          "average": 4.9
+        }, 
+        "Colorado": {
+          "count": 8, 
+          "sum": 19.4, 
+          "average": 2.425
+        }, 
+        "Uzbekistan": {
+          "count": 1, 
+          "sum": 4.6, 
+          "average": 4.6
+        }, 
+        "New York": {
+          "count": 1, 
+          "sum": 1.48, 
+          "average": 1.48
+        }, 
+        "Colombia": {
+          "count": 2, 
+          "sum": 8.899999999999999, 
+          "average": 4.449999999999999
+        }, 
+        "Taiwan": {
+          "count": 1, 
+          "sum": 4.2, 
+          "average": 4.2
+        }, 
+        "Nevada": {
+          "count": 712, 
+          "sum": 496.6400000000006, 
+          "average": 0.6975280898876405
+        }, 
+        "Cyprus": {
+          "count": 1, 
+          "sum": 4.1, 
+          "average": 4.1
+        }, 
+        "Palau": {
+          "count": 1, 
+          "sum": 5.3, 
+          "average": 5.3
+        }, 
+        "Anguilla": {
+          "count": 1, 
+          "sum": 2.4, 
+          "average": 2.4
+        }, 
+        "Venezuela": {
+          "count": 2, 
+          "sum": 9.0, 
+          "average": 4.5
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": 27.930000000000003, 
+          "average": 1.5516666666666667
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": 71.59, 
+          "average": 1.278392857142857
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": 1.94, 
+          "average": 1.94
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": 1.5, 
+          "average": 1.5
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": 4.6, 
+          "average": 4.6
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 45.699999999999996, 
+          "average": 4.57
+        }, 
+        "Kyrgyzstan": {
+          "count": 9, 
+          "sum": 39.8, 
+          "average": 4.422222222222222
+        }, 
+        "Hawaii": {
+          "count": 225, 
+          "sum": 375.2099999999998, 
+          "average": 1.6676
+        }, 
+        "Syria": {
+          "count": 1, 
+          "sum": 4.4, 
+          "average": 4.4
+        }, 
+        "Burma": {
+          "count": 2, 
+          "sum": 10.100000000000001, 
+          "average": 5.050000000000001
+        }, 
+        "Mexico": {
+          "count": 42, 
+          "sum": 111.45, 
+          "average": 2.6535714285714285
+        }, 
+        "Tennessee": {
+          "count": 20, 
+          "sum": 36.24, 
+          "average": 1.812
+        }, 
+        "Greece": {
+          "count": 2, 
+          "sum": 9.4, 
+          "average": 4.7
         }
       }, 
       "earthquakes.[0].time.day": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": 1500, 
-          "average": 15.957446808510639
+        "Canada": {
+          "count": 57, 
+          "sum": 937, 
+          "average": 16.43859649122807
         }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 93, 
-          "average": 18.6
-        }, 
-        " Algeria": {
-          "count": 4, 
-          "sum": 100, 
-          "average": 25.0
-        }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": 435, 
-          "average": 18.125
-        }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": 86, 
-          "average": 21.5
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": 106, 
-          "average": 17.666666666666668
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": 832, 
-          "average": 13.639344262295081
-        }, 
-        " Cyprus": {
-          "count": 2, 
-          "sum": 9, 
-          "average": 4.5
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": 2379, 
-          "average": 16.074324324324323
-        }, 
-        " Wallis and Futuna": {
+        "East Timor": {
           "count": 1, 
-          "sum": 10, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Wyoming": {
+          "count": 37, 
+          "sum": 685, 
+          "average": 18.513513513513512
+        }, 
+        "Illinois": {
+          "count": 3, 
+          "sum": 30, 
           "average": 10.0
         }, 
-        " Guatemala": {
+        "Argentina": {
           "count": 8, 
-          "sum": 113, 
-          "average": 14.125
+          "sum": 121, 
+          "average": 15.125
         }, 
-        " New York": {
+        "Bolivia": {
           "count": 3, 
-          "sum": 44, 
-          "average": 14.666666666666666
-        }, 
-        "Owen Fracture Zone region": {
-          "count": 1, 
-          "sum": 2, 
-          "average": 2.0
-        }, 
-        " Connecticut": {
-          "count": 1, 
-          "sum": 13, 
-          "average": 13.0
-        }, 
-        " Massachusetts": {
-          "count": 1, 
-          "sum": 31, 
-          "average": 31.0
-        }, 
-        " China": {
-          "count": 7, 
-          "sum": 141, 
-          "average": 20.142857142857142
-        }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": 1362, 
-          "average": 17.92105263157895
-        }, 
-        " Montana": {
-          "count": 213, 
-          "sum": 3118, 
-          "average": 14.63849765258216
-        }, 
-        " Kazakhstan": {
-          "count": 1, 
-          "sum": 28, 
-          "average": 28.0
-        }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": 3668, 
-          "average": 17.805825242718445
-        }, 
-        " Tonga": {
-          "count": 8, 
-          "sum": 144, 
-          "average": 18.0
-        }, 
-        " Kyrgyzstan": {
-          "count": 1, 
-          "sum": 25, 
-          "average": 25.0
-        }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": 181, 
-          "average": 10.055555555555555
-        }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": 85, 
-          "average": 12.142857142857142
-        }, 
-        " MX": {
-          "count": 22, 
-          "sum": 409, 
-          "average": 18.59090909090909
-        }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": 38968, 
-          "average": 16.25020850708924
-        }, 
-        " Macedonia": {
-          "count": 3, 
-          "sum": 63, 
-          "average": 21.0
-        }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": 393, 
-          "average": 19.65
-        }, 
-        " Costa Rica": {
-          "count": 2, 
-          "sum": 36, 
-          "average": 18.0
-        }, 
-        "Chagos Archipelago region": {
-          "count": 1, 
-          "sum": 17, 
-          "average": 17.0
-        }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": 511, 
-          "average": 17.620689655172413
-        }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": 38, 
-          "average": 19.0
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": 2751, 
-          "average": 19.37323943661972
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": 255, 
-          "average": 18.214285714285715
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": 19, 
-          "average": 9.5
-        }, 
-        " Yemen": {
-          "count": 1, 
-          "sum": 24, 
-          "average": 24.0
-        }, 
-        " Guadeloupe": {
-          "count": 1, 
-          "sum": 12, 
-          "average": 12.0
-        }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": 166, 
-          "average": 16.6
-        }, 
-        " Bulgaria": {
-          "count": 1, 
-          "sum": 22, 
-          "average": 22.0
-        }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": 431, 
-          "average": 13.06060606060606
-        }, 
-        " Greenland": {
-          "count": 1, 
-          "sum": 20, 
-          "average": 20.0
-        }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 40, 
-          "average": 20.0
-        }, 
-        " Honduras": {
-          "count": 1, 
-          "sum": 9, 
-          "average": 9.0
-        }, 
-        " French Polynesia region": {
-          "count": 1, 
-          "sum": 29, 
-          "average": 29.0
-        }, 
-        " Canada": {
-          "count": 50, 
-          "sum": 827, 
-          "average": 16.54
-        }, 
-        " Albania": {
-          "count": 1, 
-          "sum": 20, 
-          "average": 20.0
-        }, 
-        " Azerbaijan": {
-          "count": 1, 
-          "sum": 12, 
-          "average": 12.0
-        }, 
-        " Washington": {
-          "count": 242, 
-          "sum": 4046, 
-          "average": 16.71900826446281
-        }, 
-        " El Salvador": {
-          "count": 9, 
-          "sum": 140, 
-          "average": 15.555555555555555
-        }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": 2186, 
-          "average": 14.671140939597315
-        }, 
-        " Uzbekistan": {
-          "count": 1, 
-          "sum": 2, 
-          "average": 2.0
-        }, 
-        " Saint Eustatius and Saba ": {
-          "count": 1, 
-          "sum": 31, 
-          "average": 31.0
-        }, 
-        " Georgia": {
-          "count": 2, 
-          "sum": 12, 
-          "average": 6.0
-        }, 
-        " New Jersey": {
-          "count": 1, 
-          "sum": 27, 
-          "average": 27.0
-        }, 
-        " Greece": {
-          "count": 9, 
-          "sum": 173, 
-          "average": 19.22222222222222
-        }, 
-        " New Hampshire": {
-          "count": 1, 
-          "sum": 31, 
-          "average": 31.0
-        }, 
-        " South Carolina": {
-          "count": 1, 
           "sum": 7, 
-          "average": 7.0
+          "average": 2.3333333333333335
         }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": 10624, 
-          "average": 15.532163742690058
-        }, 
-        " India": {
-          "count": 5, 
-          "sum": 105, 
-          "average": 21.0
-        }, 
-        " Tajikistan": {
-          "count": 2, 
-          "sum": 16, 
-          "average": 8.0
-        }, 
-        " Maine": {
-          "count": 2, 
-          "sum": 38, 
-          "average": 19.0
-        }, 
-        " NV": {
-          "count": 2, 
-          "sum": 50, 
-          "average": 25.0
-        }, 
-        " Turkey": {
-          "count": 3, 
-          "sum": 22, 
-          "average": 7.333333333333333
-        }, 
-        " Serbia": {
+        "North of Svalbard": {
           "count": 1, 
-          "sum": 8, 
-          "average": 8.0
+          "sum": 12, 
+          "average": 12.0
         }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": 503, 
-          "average": 13.972222222222221
-        }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 130, 
-          "average": 14.444444444444445
-        }, 
-        " Italy": {
-          "count": 2, 
-          "sum": 55, 
-          "average": 27.5
-        }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 51, 
-          "average": 25.5
-        }, 
-        " CA": {
-          "count": 2419, 
-          "sum": 32497, 
-          "average": 13.434063662670525
-        }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": 34, 
-          "average": 17.0
-        }, 
-        "Off the coast of Oregon": {
+        "Texas": {
           "count": 1, 
-          "sum": 20, 
-          "average": 20.0
+          "sum": 12, 
+          "average": 12.0
         }, 
-        " Argentina": {
-          "count": 6, 
-          "sum": 99, 
-          "average": 16.5
-        }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": 106, 
-          "average": 15.142857142857142
-        }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": 78, 
-          "average": 15.6
-        }, 
-        " Peru": {
-          "count": 7, 
-          "sum": 47, 
-          "average": 6.714285714285714
-        }, 
-        " Chile": {
-          "count": 13, 
-          "sum": 241, 
-          "average": 18.53846153846154
-        }, 
-        " Pennsylvania": {
-          "count": 1, 
-          "sum": 22, 
-          "average": 22.0
-        }, 
-        " Anguilla": {
-          "count": 1, 
-          "sum": 11, 
-          "average": 11.0
-        }, 
-        " Venezuela": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        " Texas": {
-          "count": 1, 
-          "sum": 29, 
-          "average": 29.0
-        }, 
-        " California": {
-          "count": 1577, 
-          "sum": 24553, 
-          "average": 15.569435637285986
-        }
-      }, 
-      "earthquakes.[0].location.latitude": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": 3401.657400000002, 
-          "average": 36.187844680851065
-        }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 150.5086, 
-          "average": 30.10172
-        }, 
-        " Algeria": {
-          "count": 4, 
-          "sum": 145.5526, 
-          "average": 36.388149999999996
-        }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": 891.7473332, 
-          "average": 37.156138883333334
-        }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": 26.379599999999996, 
-          "average": 6.5949
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": 222.29560009999997, 
-          "average": 37.049266683333336
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": 2380.0536997, 
-          "average": 39.01727376557377
-        }, 
-        " Cyprus": {
-          "count": 2, 
-          "sum": 70.7158, 
-          "average": 35.3579
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": 6483.7710666999965, 
-          "average": 43.80926396418919
-        }, 
-        " Wallis and Futuna": {
-          "count": 1, 
-          "sum": -16.7641, 
-          "average": -16.7641
-        }, 
-        " Guatemala": {
-          "count": 8, 
-          "sum": 112.1297, 
-          "average": 14.0162125
-        }, 
-        " New York": {
-          "count": 3, 
-          "sum": 132.6298333, 
-          "average": 44.209944433333334
-        }, 
-        "Owen Fracture Zone region": {
-          "count": 1, 
-          "sum": 12.7685, 
-          "average": 12.7685
-        }, 
-        " Connecticut": {
-          "count": 1, 
-          "sum": 41.1528, 
-          "average": 41.1528
-        }, 
-        " Massachusetts": {
-          "count": 1, 
-          "sum": 42.7566, 
-          "average": 42.7566
-        }, 
-        " China": {
-          "count": 7, 
-          "sum": 217.21189999999999, 
-          "average": 31.030271428571428
-        }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": 1408.0593, 
-          "average": 18.527096052631578
-        }, 
-        " Montana": {
-          "count": 213, 
-          "sum": 9793.168166, 
-          "average": 45.97731533333333
-        }, 
-        " Kazakhstan": {
-          "count": 1, 
-          "sum": 41.1097, 
-          "average": 41.1097
-        }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": 3998.2847622000013, 
-          "average": 19.40914933106796
-        }, 
-        " Tonga": {
-          "count": 8, 
-          "sum": -139.1241, 
-          "average": -17.3905125
-        }, 
-        " Kyrgyzstan": {
-          "count": 1, 
-          "sum": 41.1336, 
-          "average": 41.1336
-        }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": 310.23319999999995, 
-          "average": 17.23517777777778
-        }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": -14.2162, 
-          "average": -2.030885714285714
-        }, 
-        " MX": {
-          "count": 22, 
-          "sum": 715.6548346, 
-          "average": 32.529765209090904
-        }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": 145002.8963000001, 
-          "average": 60.46826367806505
-        }, 
-        " Macedonia": {
-          "count": 3, 
-          "sum": 123.71509999999999, 
-          "average": 41.23836666666667
-        }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": 375.339, 
-          "average": 18.76695
-        }, 
-        " Costa Rica": {
-          "count": 2, 
-          "sum": 17.902700000000003, 
-          "average": 8.951350000000001
+        "Kansas": {
+          "count": 21, 
+          "sum": 324, 
+          "average": 15.428571428571429
         }, 
         "Chagos Archipelago region": {
-          "count": 1, 
-          "sum": -4.8307, 
-          "average": -4.8307
-        }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": 1279.1353333000002, 
-          "average": 44.108114941379306
-        }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": 68.90180000000001, 
-          "average": 34.450900000000004
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": 2697.316699999999, 
-          "average": 18.995188028169014
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": 510.1786667, 
-          "average": 36.44133333571428
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": 9.4252, 
-          "average": 4.7126
-        }, 
-        " Yemen": {
-          "count": 1, 
-          "sum": 14.0889, 
-          "average": 14.0889
-        }, 
-        " Guadeloupe": {
-          "count": 1, 
-          "sum": 16.8041, 
-          "average": 16.8041
-        }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": 123.9161, 
-          "average": 12.39161
-        }, 
-        " Bulgaria": {
-          "count": 1, 
-          "sum": 41.6575, 
-          "average": 41.6575
-        }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": 1192.5918334, 
-          "average": 36.139146466666666
-        }, 
-        " Greenland": {
-          "count": 1, 
-          "sum": 81.3429, 
-          "average": 81.3429
-        }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 46.671099999999996, 
-          "average": 23.335549999999998
-        }, 
-        " Honduras": {
-          "count": 1, 
-          "sum": 16.3339, 
-          "average": 16.3339
-        }, 
-        " French Polynesia region": {
-          "count": 1, 
-          "sum": -13.3515, 
-          "average": -13.3515
-        }, 
-        " Canada": {
-          "count": 50, 
-          "sum": 2669.0829331000004, 
-          "average": 53.381658662
-        }, 
-        " Albania": {
-          "count": 1, 
-          "sum": 40.2356, 
-          "average": 40.2356
-        }, 
-        " Azerbaijan": {
-          "count": 1, 
-          "sum": 38.6939, 
-          "average": 38.6939
-        }, 
-        " Washington": {
-          "count": 242, 
-          "sum": 11369.433666500003, 
-          "average": 46.98113085330578
-        }, 
-        " El Salvador": {
-          "count": 9, 
-          "sum": 114.6934, 
-          "average": 12.74371111111111
-        }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": 2764.0200000000004, 
-          "average": 18.55046979865772
-        }, 
-        " Uzbekistan": {
-          "count": 1, 
-          "sum": 40.5421, 
-          "average": 40.5421
-        }, 
-        " Saint Eustatius and Saba ": {
-          "count": 1, 
-          "sum": 18.4563, 
-          "average": 18.4563
-        }, 
-        " Georgia": {
-          "count": 2, 
-          "sum": 69.02083329999999, 
-          "average": 34.510416649999996
-        }, 
-        " New Jersey": {
-          "count": 1, 
-          "sum": 41.042, 
-          "average": 41.042
-        }, 
-        " Greece": {
-          "count": 9, 
-          "sum": 336.10890000000006, 
-          "average": 37.34543333333333
-        }, 
-        " New Hampshire": {
-          "count": 1, 
-          "sum": 44.1883, 
-          "average": 44.1883
-        }, 
-        " South Carolina": {
-          "count": 1, 
-          "sum": 33.0436667, 
-          "average": 33.0436667
-        }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": 26205.860000000008, 
-          "average": 38.312660818713454
-        }, 
-        " India": {
-          "count": 5, 
-          "sum": 147.53799999999998, 
-          "average": 29.507600000000004
-        }, 
-        " Tajikistan": {
-          "count": 2, 
-          "sum": 75.5128, 
-          "average": 37.7564
-        }, 
-        " Maine": {
-          "count": 2, 
-          "sum": 91.4764, 
-          "average": 45.7382
-        }, 
-        " NV": {
-          "count": 2, 
-          "sum": 73.3163333, 
-          "average": 36.65816665
-        }, 
-        " Turkey": {
-          "count": 3, 
-          "sum": 117.9075, 
-          "average": 39.3025
-        }, 
-        " Serbia": {
-          "count": 1, 
-          "sum": 44.4803, 
-          "average": 44.4803
-        }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": 1585.1444998000002, 
-          "average": 44.03179166111111
-        }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 324.84380000000004, 
-          "average": 36.09375555555555
-        }, 
-        " Italy": {
-          "count": 2, 
-          "sum": 79.57390000000001, 
-          "average": 39.786950000000004
-        }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 55.7534, 
-          "average": 27.8767
-        }, 
-        " CA": {
-          "count": 2419, 
-          "sum": 81642.58900029994, 
-          "average": 33.750553534642414
-        }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": 73.7286667, 
-          "average": 36.86433335
-        }, 
-        "Off the coast of Oregon": {
-          "count": 1, 
-          "sum": 43.8407, 
-          "average": 43.8407
-        }, 
-        " Argentina": {
-          "count": 6, 
-          "sum": -153.11759999999998, 
-          "average": -25.5196
-        }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": -0.4025000000000002, 
-          "average": -0.05750000000000001
-        }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": 177.3390001, 
-          "average": 35.467800020000006
-        }, 
-        " Peru": {
-          "count": 7, 
-          "sum": -84.90929999999999, 
-          "average": -12.129900000000001
-        }, 
-        " Chile": {
-          "count": 13, 
-          "sum": -277.3387, 
-          "average": -21.333746153846157
-        }, 
-        " Pennsylvania": {
-          "count": 1, 
-          "sum": 41.5486667, 
-          "average": 41.5486667
-        }, 
-        " Anguilla": {
-          "count": 1, 
-          "sum": 19.0079, 
-          "average": 19.0079
-        }, 
-        " Venezuela": {
-          "count": 1, 
-          "sum": 8.7111, 
-          "average": 8.7111
-        }, 
-        " Texas": {
-          "count": 1, 
-          "sum": 32.8935, 
-          "average": 32.8935
-        }, 
-        " California": {
-          "count": 1577, 
-          "sum": 60494.167109900045, 
-          "average": 38.36028351927711
-        }
-      }, 
-      "earthquakes.[0].impact.significance": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": 11491, 
-          "average": 122.24468085106383
-        }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 1495, 
-          "average": 299.0
-        }, 
-        " Algeria": {
-          "count": 4, 
-          "sum": 1156, 
-          "average": 289.0
-        }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": 2086, 
-          "average": 86.91666666666667
-        }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": 1179, 
-          "average": 294.75
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": 152, 
-          "average": 25.333333333333332
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": 2234, 
-          "average": 36.622950819672134
-        }, 
-        " Cyprus": {
-          "count": 2, 
-          "sum": 530, 
-          "average": 265.0
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": 4777, 
-          "average": 32.277027027027025
-        }, 
-        " Wallis and Futuna": {
-          "count": 1, 
-          "sum": 354, 
-          "average": 354.0
-        }, 
-        " Guatemala": {
-          "count": 8, 
-          "sum": 2396, 
-          "average": 299.5
-        }, 
-        " New York": {
-          "count": 3, 
-          "sum": 116, 
-          "average": 38.666666666666664
-        }, 
-        "Owen Fracture Zone region": {
-          "count": 1, 
-          "sum": 326, 
-          "average": 326.0
-        }, 
-        " Connecticut": {
           "count": 1, 
           "sum": 30, 
           "average": 30.0
         }, 
-        " Massachusetts": {
+        "Guatemala": {
+          "count": 6, 
+          "sum": 116, 
+          "average": 19.333333333333332
+        }, 
+        "West Virginia": {
           "count": 1, 
-          "sum": 74, 
-          "average": 74.0
+          "sum": 6, 
+          "average": 6.0
         }, 
-        " China": {
-          "count": 7, 
-          "sum": 2177, 
-          "average": 311.0
+        "Oklahoma": {
+          "count": 65, 
+          "sum": 952, 
+          "average": 14.646153846153846
         }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": 5371, 
-          "average": 70.67105263157895
+        "Alaska": {
+          "count": 2148, 
+          "sum": 31972, 
+          "average": 14.884543761638733
         }, 
-        " Montana": {
-          "count": 213, 
-          "sum": 3634, 
-          "average": 17.061032863849764
-        }, 
-        " Kazakhstan": {
+        "Christmas Island": {
           "count": 1, 
-          "sum": 326, 
-          "average": 326.0
+          "sum": 29, 
+          "average": 29.0
         }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": 10472, 
-          "average": 50.83495145631068
-        }, 
-        " Tonga": {
-          "count": 8, 
-          "sum": 2555, 
-          "average": 319.375
-        }, 
-        " Kyrgyzstan": {
+        "Greenland Sea": {
           "count": 1, 
-          "sum": 284, 
-          "average": 284.0
+          "sum": 18, 
+          "average": 18.0
         }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": 5402, 
-          "average": 300.1111111111111
+        "Missouri": {
+          "count": 12, 
+          "sum": 140, 
+          "average": 11.666666666666666
         }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": 2231, 
-          "average": 318.7142857142857
+        "New Zealand": {
+          "count": 13, 
+          "sum": 192, 
+          "average": 14.76923076923077
         }, 
-        " MX": {
-          "count": 22, 
-          "sum": 1269, 
-          "average": 57.68181818181818
+        "Pakistan": {
+          "count": 1, 
+          "sum": 17, 
+          "average": 17.0
         }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": 101127, 
-          "average": 42.17139282735613
+        "Ascension Island region": {
+          "count": 1, 
+          "sum": 31, 
+          "average": 31.0
         }, 
-        " Macedonia": {
+        "New Jersey": {
           "count": 3, 
-          "sum": 969, 
-          "average": 323.0
+          "sum": 46, 
+          "average": 15.333333333333334
         }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": 3826, 
-          "average": 191.3
+        "Washington": {
+          "count": 171, 
+          "sum": 2872, 
+          "average": 16.795321637426902
         }, 
-        " Costa Rica": {
+        "Azerbaijan": {
+          "count": 1, 
+          "sum": 1, 
+          "average": 1.0
+        }, 
+        "Off the coast of Oregon": {
           "count": 2, 
-          "sum": 598, 
-          "average": 299.0
+          "sum": 15, 
+          "average": 7.5
+        }, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 139, 
+          "average": 11.583333333333334
+        }, 
+        "Turkey": {
+          "count": 2, 
+          "sum": 18, 
+          "average": 9.0
+        }, 
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 127, 
+          "average": 12.7
+        }, 
+        "Kiribati region": {
+          "count": 1, 
+          "sum": 1, 
+          "average": 1.0
+        }, 
+        "South of Panama": {
+          "count": 1, 
+          "sum": 9, 
+          "average": 9.0
+        }, 
+        "South of the Fiji Islands": {
+          "count": 1, 
+          "sum": 29, 
+          "average": 29.0
+        }, 
+        "Peru": {
+          "count": 13, 
+          "sum": 182, 
+          "average": 14.0
+        }, 
+        "Arizona": {
+          "count": 3, 
+          "sum": 50, 
+          "average": 16.666666666666668
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": 1235, 
+          "average": 15.246913580246913
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": 1363, 
+          "average": 14.197916666666666
+        }, 
+        "China": {
+          "count": 7, 
+          "sum": 123, 
+          "average": 17.571428571428573
+        }, 
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": 476, 
+          "average": 15.35483870967742
+        }, 
+        "Ukraine": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "India": {
+          "count": 2, 
+          "sum": 12, 
+          "average": 6.0
+        }, 
+        "Tonga": {
+          "count": 12, 
+          "sum": 168, 
+          "average": 14.0
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": 729, 
+          "average": 14.58
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": 1826, 
+          "average": 18.632653061224488
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
+          "count": 1, 
+          "sum": 11, 
+          "average": 11.0
+        }, 
+        "Ohio": {
+          "count": 1, 
+          "sum": 3, 
+          "average": 3.0
+        }, 
+        "Panama": {
+          "count": 3, 
+          "sum": 53, 
+          "average": 17.666666666666668
+        }, 
+        "Russia": {
+          "count": 1, 
+          "sum": 9, 
+          "average": 9.0
+        }, 
+        "Portugal": {
+          "count": 3, 
+          "sum": 62, 
+          "average": 20.666666666666668
+        }, 
+        "Nicaragua": {
+          "count": 4, 
+          "sum": 28, 
+          "average": 7.0
+        }, 
+        "North Carolina": {
+          "count": 1, 
+          "sum": 11, 
+          "average": 11.0
+        }, 
+        "Northern California": {
+          "count": 3, 
+          "sum": 90, 
+          "average": 30.0
+        }, 
+        "Japan": {
+          "count": 9, 
+          "sum": 168, 
+          "average": 18.666666666666668
+        }, 
+        "Northwest of Australia": {
+          "count": 1, 
+          "sum": 31, 
+          "average": 31.0
+        }, 
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": 600, 
+          "average": 15.789473684210526
+        }, 
+        "Virgin Islands region": {
+          "count": 1, 
+          "sum": 30, 
+          "average": 30.0
+        }, 
+        "Costa Rica": {
+          "count": 4, 
+          "sum": 58, 
+          "average": 14.5
+        }, 
+        "Arkansas": {
+          "count": 3, 
+          "sum": 60, 
+          "average": 20.0
+        }, 
+        "Italy": {
+          "count": 12, 
+          "sum": 290, 
+          "average": 24.166666666666668
+        }, 
+        "Ecuador": {
+          "count": 2, 
+          "sum": 32, 
+          "average": 16.0
+        }, 
+        "Australia": {
+          "count": 1, 
+          "sum": 6, 
+          "average": 6.0
+        }, 
+        "Iran": {
+          "count": 3, 
+          "sum": 50, 
+          "average": 16.666666666666668
+        }, 
+        "El Salvador": {
+          "count": 2, 
+          "sum": 23, 
+          "average": 11.5
+        }, 
+        "California": {
+          "count": 3607, 
+          "sum": 54024, 
+          "average": 14.977543665095647
+        }, 
+        "Chile": {
+          "count": 31, 
+          "sum": 465, 
+          "average": 15.0
+        }, 
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": 2354, 
+          "average": 15.08974358974359
+        }, 
+        "Georgia": {
+          "count": 1, 
+          "sum": 28, 
+          "average": 28.0
+        }, 
+        "Pennsylvania": {
+          "count": 1, 
+          "sum": 22, 
+          "average": 22.0
+        }, 
+        "Poland": {
+          "count": 1, 
+          "sum": 30, 
+          "average": 30.0
+        }, 
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": 31, 
+          "average": 31.0
+        }, 
+        "Colorado": {
+          "count": 8, 
+          "sum": 157, 
+          "average": 19.625
+        }, 
+        "Uzbekistan": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "New York": {
+          "count": 1, 
+          "sum": 20, 
+          "average": 20.0
+        }, 
+        "Colombia": {
+          "count": 2, 
+          "sum": 20, 
+          "average": 10.0
+        }, 
+        "Taiwan": {
+          "count": 1, 
+          "sum": 22, 
+          "average": 22.0
+        }, 
+        "Nevada": {
+          "count": 712, 
+          "sum": 9123, 
+          "average": 12.813202247191011
+        }, 
+        "Cyprus": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Palau": {
+          "count": 1, 
+          "sum": 6, 
+          "average": 6.0
+        }, 
+        "Anguilla": {
+          "count": 1, 
+          "sum": 28, 
+          "average": 28.0
+        }, 
+        "Venezuela": {
+          "count": 2, 
+          "sum": 19, 
+          "average": 9.5
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": 290, 
+          "average": 16.11111111111111
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": 845, 
+          "average": 15.089285714285714
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": 6, 
+          "average": 6.0
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": 18, 
+          "average": 18.0
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": 2, 
+          "average": 2.0
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 189, 
+          "average": 18.9
+        }, 
+        "Kyrgyzstan": {
+          "count": 9, 
+          "sum": 96, 
+          "average": 10.666666666666666
+        }, 
+        "Hawaii": {
+          "count": 225, 
+          "sum": 3862, 
+          "average": 17.164444444444445
+        }, 
+        "Syria": {
+          "count": 1, 
+          "sum": 28, 
+          "average": 28.0
+        }, 
+        "Burma": {
+          "count": 2, 
+          "sum": 28, 
+          "average": 14.0
+        }, 
+        "Mexico": {
+          "count": 42, 
+          "sum": 565, 
+          "average": 13.452380952380953
+        }, 
+        "Tennessee": {
+          "count": 20, 
+          "sum": 404, 
+          "average": 20.2
+        }, 
+        "Greece": {
+          "count": 2, 
+          "sum": 36, 
+          "average": 18.0
+        }
+      }, 
+      "earthquakes.[0].location.latitude": {
+        "Canada": {
+          "count": 57, 
+          "sum": 3122.7053334000007, 
+          "average": 54.78430409473685
+        }, 
+        "East Timor": {
+          "count": 1, 
+          "sum": -8.1125, 
+          "average": -8.1125
+        }, 
+        "Wyoming": {
+          "count": 37, 
+          "sum": 1636.5151667, 
+          "average": 44.23013964054054
+        }, 
+        "Illinois": {
+          "count": 3, 
+          "sum": 114.92283330000001, 
+          "average": 38.3076111
+        }, 
+        "Argentina": {
+          "count": 8, 
+          "sum": -192.90939999999998, 
+          "average": -24.113675
+        }, 
+        "Bolivia": {
+          "count": 3, 
+          "sum": -63.5775, 
+          "average": -21.1925
+        }, 
+        "North of Svalbard": {
+          "count": 1, 
+          "sum": 84.0291, 
+          "average": 84.0291
+        }, 
+        "Texas": {
+          "count": 1, 
+          "sum": 32.9724, 
+          "average": 32.9724
+        }, 
+        "Kansas": {
+          "count": 21, 
+          "sum": 781.4806000999998, 
+          "average": 37.213361909523805
+        }, 
+        "Chagos Archipelago region": {
+          "count": 1, 
+          "sum": -7.4679, 
+          "average": -7.4679
+        }, 
+        "Guatemala": {
+          "count": 6, 
+          "sum": 85.2581, 
+          "average": 14.209683333333333
+        }, 
+        "West Virginia": {
+          "count": 1, 
+          "sum": 37.863, 
+          "average": 37.863
+        }, 
+        "Oklahoma": {
+          "count": 65, 
+          "sum": 2356.2522999999997, 
+          "average": 36.25003538461539
+        }, 
+        "Alaska": {
+          "count": 2148, 
+          "sum": 130631.6688, 
+          "average": 60.81548826815642
+        }, 
+        "Christmas Island": {
+          "count": 1, 
+          "sum": -9.5253, 
+          "average": -9.5253
+        }, 
+        "Greenland Sea": {
+          "count": 1, 
+          "sum": 73.2809, 
+          "average": 73.2809
+        }, 
+        "Missouri": {
+          "count": 12, 
+          "sum": 436.8173335, 
+          "average": 36.40144445833334
+        }, 
+        "New Zealand": {
+          "count": 13, 
+          "sum": -379.40260000000006, 
+          "average": -29.184815384615383
+        }, 
+        "Pakistan": {
+          "count": 1, 
+          "sum": 30.5023, 
+          "average": 30.5023
+        }, 
+        "Ascension Island region": {
+          "count": 1, 
+          "sum": -11.1678, 
+          "average": -11.1678
+        }, 
+        "New Jersey": {
+          "count": 3, 
+          "sum": 122.9071666, 
+          "average": 40.96905553333334
+        }, 
+        "Washington": {
+          "count": 171, 
+          "sum": 8036.296333099998, 
+          "average": 46.99588498888889
+        }, 
+        "Azerbaijan": {
+          "count": 1, 
+          "sum": 39.9542, 
+          "average": 39.9542
+        }, 
+        "Off the coast of Oregon": {
+          "count": 2, 
+          "sum": 88.20439999999999, 
+          "average": 44.102199999999996
+        }, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 462.4169, 
+          "average": 38.53474166666667
+        }, 
+        "Turkey": {
+          "count": 2, 
+          "sum": 78.9626, 
+          "average": 39.4813
+        }, 
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 362.23539999999997, 
+          "average": 36.22354
+        }, 
+        "Kiribati region": {
+          "count": 1, 
+          "sum": -4.4721, 
+          "average": -4.4721
+        }, 
+        "South of Panama": {
+          "count": 1, 
+          "sum": 4.9249, 
+          "average": 4.9249
+        }, 
+        "South of the Fiji Islands": {
+          "count": 1, 
+          "sum": -26.1033, 
+          "average": -26.1033
+        }, 
+        "Peru": {
+          "count": 13, 
+          "sum": -158.1727, 
+          "average": -12.167130769230768
+        }, 
+        "Arizona": {
+          "count": 3, 
+          "sum": 109.9481667, 
+          "average": 36.6493889
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": 3507.939666800001, 
+          "average": 43.307897120987654
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": 4394.823999799999, 
+          "average": 45.77941666458333
+        }, 
+        "China": {
+          "count": 7, 
+          "sum": 216.4721, 
+          "average": 30.924585714285715
+        }, 
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": 573.7882, 
+          "average": 18.509296774193547
+        }, 
+        "Ukraine": {
+          "count": 1, 
+          "sum": 47.085, 
+          "average": 47.085
+        }, 
+        "India": {
+          "count": 2, 
+          "sum": 39.0452, 
+          "average": 19.5226
+        }, 
+        "Tonga": {
+          "count": 12, 
+          "sum": -229.6868, 
+          "average": -19.14056666666667
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": -168.20980000000003, 
+          "average": -3.364196
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": 1862.8984, 
+          "average": 19.009167346938774
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
+          "count": 1, 
+          "sum": 36.5778, 
+          "average": 36.5778
+        }, 
+        "Ohio": {
+          "count": 1, 
+          "sum": 40.046, 
+          "average": 40.046
+        }, 
+        "Panama": {
+          "count": 3, 
+          "sum": 23.0671, 
+          "average": 7.689033333333334
+        }, 
+        "Russia": {
+          "count": 1, 
+          "sum": 50.5742, 
+          "average": 50.5742
+        }, 
+        "Portugal": {
+          "count": 3, 
+          "sum": 112.51259999999999, 
+          "average": 37.5042
+        }, 
+        "Nicaragua": {
+          "count": 4, 
+          "sum": 46.4595, 
+          "average": 11.614875
+        }, 
+        "North Carolina": {
+          "count": 1, 
+          "sum": 35.3975, 
+          "average": 35.3975
+        }, 
+        "Northern California": {
+          "count": 3, 
+          "sum": 116.4758339, 
+          "average": 38.82527796666667
+        }, 
+        "Japan": {
+          "count": 9, 
+          "sum": 253.58339999999998, 
+          "average": 28.175933333333333
+        }, 
+        "Northwest of Australia": {
+          "count": 1, 
+          "sum": -19.1824, 
+          "average": -19.1824
+        }, 
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": 713.7280000000002, 
+          "average": 18.78231578947368
+        }, 
+        "Virgin Islands region": {
+          "count": 1, 
+          "sum": 18.6072, 
+          "average": 18.6072
+        }, 
+        "Costa Rica": {
+          "count": 4, 
+          "sum": 37.6816, 
+          "average": 9.4204
+        }, 
+        "Arkansas": {
+          "count": 3, 
+          "sum": 107.1091667, 
+          "average": 35.70305556666667
+        }, 
+        "Italy": {
+          "count": 12, 
+          "sum": 514.8606, 
+          "average": 42.905049999999996
+        }, 
+        "Ecuador": {
+          "count": 2, 
+          "sum": -2.0978, 
+          "average": -1.0489
+        }, 
+        "Australia": {
+          "count": 1, 
+          "sum": -25.5173, 
+          "average": -25.5173
+        }, 
+        "Iran": {
+          "count": 3, 
+          "sum": 85.6562, 
+          "average": 28.552066666666665
+        }, 
+        "El Salvador": {
+          "count": 2, 
+          "sum": 26.6637, 
+          "average": 13.33185
+        }, 
+        "California": {
+          "count": 3607, 
+          "sum": 131930.23915319995, 
+          "average": 36.576168326365405
+        }, 
+        "Chile": {
+          "count": 31, 
+          "sum": -800.9703000000001, 
+          "average": -25.837751612903226
+        }, 
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": 2891.840599999998, 
+          "average": 18.537439743589744
+        }, 
+        "Georgia": {
+          "count": 1, 
+          "sum": 42.9566, 
+          "average": 42.9566
+        }, 
+        "Pennsylvania": {
+          "count": 1, 
+          "sum": 41.7358333, 
+          "average": 41.7358333
+        }, 
+        "Poland": {
+          "count": 1, 
+          "sum": 51.5648, 
+          "average": 51.5648
+        }, 
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": -20.1559, 
+          "average": -20.1559
+        }, 
+        "Colorado": {
+          "count": 8, 
+          "sum": 312.27459999999996, 
+          "average": 39.034324999999995
+        }, 
+        "Uzbekistan": {
+          "count": 1, 
+          "sum": 39.9451, 
+          "average": 39.9451
+        }, 
+        "New York": {
+          "count": 1, 
+          "sum": 43.5658333, 
+          "average": 43.5658333
+        }, 
+        "Colombia": {
+          "count": 2, 
+          "sum": 13.7243, 
+          "average": 6.86215
+        }, 
+        "Taiwan": {
+          "count": 1, 
+          "sum": 22.9839, 
+          "average": 22.9839
+        }, 
+        "Nevada": {
+          "count": 712, 
+          "sum": 27247.279733399973, 
+          "average": 38.26865131095506
+        }, 
+        "Cyprus": {
+          "count": 1, 
+          "sum": 35.2351, 
+          "average": 35.2351
+        }, 
+        "Palau": {
+          "count": 1, 
+          "sum": 4.7416, 
+          "average": 4.7416
+        }, 
+        "Anguilla": {
+          "count": 1, 
+          "sum": 18.4358, 
+          "average": 18.4358
+        }, 
+        "Venezuela": {
+          "count": 2, 
+          "sum": 19.4217, 
+          "average": 9.71085
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": 799.0324999, 
+          "average": 44.390694438888886
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": 2196.0214998, 
+          "average": 39.21466963928572
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": 36.6143333, 
+          "average": 36.6143333
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": 43.1374, 
+          "average": 43.1374
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": 15.1183, 
+          "average": 15.1183
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 73.6296, 
+          "average": 7.362959999999999
+        }, 
+        "Kyrgyzstan": {
+          "count": 9, 
+          "sum": 357.24620000000004, 
+          "average": 39.69402222222222
+        }, 
+        "Hawaii": {
+          "count": 225, 
+          "sum": 4358.883703199999, 
+          "average": 19.372816458666666
+        }, 
+        "Syria": {
+          "count": 1, 
+          "sum": 35.2862, 
+          "average": 35.2862
+        }, 
+        "Burma": {
+          "count": 2, 
+          "sum": 42.8031, 
+          "average": 21.40155
+        }, 
+        "Mexico": {
+          "count": 42, 
+          "sum": 1197.4777668, 
+          "average": 28.5113754
+        }, 
+        "Tennessee": {
+          "count": 20, 
+          "sum": 719.8044999, 
+          "average": 35.990224995
+        }, 
+        "Greece": {
+          "count": 2, 
+          "sum": 75.7698, 
+          "average": 37.8849
+        }
+      }, 
+      "earthquakes.[0].impact.significance": {
+        "Canada": {
+          "count": 57, 
+          "sum": 3084, 
+          "average": 54.10526315789474
+        }, 
+        "East Timor": {
+          "count": 1, 
+          "sum": 312, 
+          "average": 312.0
+        }, 
+        "Wyoming": {
+          "count": 37, 
+          "sum": 1009, 
+          "average": 27.27027027027027
+        }, 
+        "Illinois": {
+          "count": 3, 
+          "sum": 274, 
+          "average": 91.33333333333333
+        }, 
+        "Argentina": {
+          "count": 8, 
+          "sum": 2339, 
+          "average": 292.375
+        }, 
+        "Bolivia": {
+          "count": 3, 
+          "sum": 853, 
+          "average": 284.3333333333333
+        }, 
+        "North of Svalbard": {
+          "count": 1, 
+          "sum": 385, 
+          "average": 385.0
+        }, 
+        "Texas": {
+          "count": 1, 
+          "sum": 97, 
+          "average": 97.0
+        }, 
+        "Kansas": {
+          "count": 21, 
+          "sum": 1734, 
+          "average": 82.57142857142857
         }, 
         "Chagos Archipelago region": {
           "count": 1, 
           "sum": 298, 
           "average": 298.0
         }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": 1232, 
-          "average": 42.48275862068966
+        "Guatemala": {
+          "count": 6, 
+          "sum": 1786, 
+          "average": 297.6666666666667
         }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": 306, 
-          "average": 153.0
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": 13953, 
-          "average": 98.2605633802817
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": 814, 
-          "average": 58.142857142857146
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": 652, 
-          "average": 326.0
-        }, 
-        " Yemen": {
+        "West Virginia": {
           "count": 1, 
-          "sum": 370, 
-          "average": 370.0
+          "sum": 82, 
+          "average": 82.0
         }, 
-        " Guadeloupe": {
-          "count": 1, 
-          "sum": 284, 
-          "average": 284.0
+        "Oklahoma": {
+          "count": 65, 
+          "sum": 8830, 
+          "average": 135.84615384615384
         }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": 2990, 
-          "average": 299.0
+        "Alaska": {
+          "count": 2148, 
+          "sum": 90628, 
+          "average": 42.191806331471135
         }, 
-        " Bulgaria": {
-          "count": 1, 
-          "sum": 285, 
-          "average": 285.0
-        }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": 1511, 
-          "average": 45.78787878787879
-        }, 
-        " Greenland": {
-          "count": 1, 
-          "sum": 246, 
-          "average": 246.0
-        }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 600, 
-          "average": 300.0
-        }, 
-        " Honduras": {
-          "count": 1, 
-          "sum": 340, 
-          "average": 340.0
-        }, 
-        " French Polynesia region": {
-          "count": 1, 
-          "sum": 312, 
-          "average": 312.0
-        }, 
-        " Canada": {
-          "count": 50, 
-          "sum": 2390, 
-          "average": 47.8
-        }, 
-        " Albania": {
-          "count": 1, 
-          "sum": 285, 
-          "average": 285.0
-        }, 
-        " Azerbaijan": {
-          "count": 1, 
-          "sum": 246, 
-          "average": 246.0
-        }, 
-        " Washington": {
-          "count": 242, 
-          "sum": 3996, 
-          "average": 16.512396694214875
-        }, 
-        " El Salvador": {
-          "count": 9, 
-          "sum": 2716, 
-          "average": 301.77777777777777
-        }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": 14631, 
-          "average": 98.19463087248322
-        }, 
-        " Uzbekistan": {
-          "count": 1, 
-          "sum": 284, 
-          "average": 284.0
-        }, 
-        " Saint Eustatius and Saba ": {
-          "count": 1, 
-          "sum": 188, 
-          "average": 188.0
-        }, 
-        " Georgia": {
-          "count": 2, 
-          "sum": 174, 
-          "average": 87.0
-        }, 
-        " New Jersey": {
-          "count": 1, 
-          "sum": 9, 
-          "average": 9.0
-        }, 
-        " Greece": {
-          "count": 9, 
-          "sum": 2492, 
-          "average": 276.8888888888889
-        }, 
-        " New Hampshire": {
-          "count": 1, 
-          "sum": 62, 
-          "average": 62.0
-        }, 
-        " South Carolina": {
-          "count": 1, 
-          "sum": 51, 
-          "average": 51.0
-        }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": 9174, 
-          "average": 13.412280701754385
-        }, 
-        " India": {
-          "count": 5, 
-          "sum": 1454, 
-          "average": 290.8
-        }, 
-        " Tajikistan": {
-          "count": 2, 
-          "sum": 638, 
-          "average": 319.0
-        }, 
-        " Maine": {
-          "count": 2, 
-          "sum": 69, 
-          "average": 34.5
-        }, 
-        " NV": {
-          "count": 2, 
-          "sum": 37, 
-          "average": 18.5
-        }, 
-        " Turkey": {
-          "count": 3, 
-          "sum": 804, 
-          "average": 268.0
-        }, 
-        " Serbia": {
-          "count": 1, 
-          "sum": 284, 
-          "average": 284.0
-        }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": 808, 
-          "average": 22.444444444444443
-        }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 2641, 
-          "average": 293.44444444444446
-        }, 
-        " Italy": {
-          "count": 2, 
-          "sum": 585, 
-          "average": 292.5
-        }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 632, 
-          "average": 316.0
-        }, 
-        " CA": {
-          "count": 2419, 
-          "sum": 41309, 
-          "average": 17.07689127738735
-        }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": 209, 
-          "average": 104.5
-        }, 
-        "Off the coast of Oregon": {
+        "Christmas Island": {
           "count": 1, 
           "sum": 385, 
           "average": 385.0
         }, 
-        " Argentina": {
-          "count": 6, 
-          "sum": 1751, 
-          "average": 291.8333333333333
-        }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": 2270, 
-          "average": 324.2857142857143
-        }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": 222, 
-          "average": 44.4
-        }, 
-        " Peru": {
-          "count": 7, 
-          "sum": 2231, 
-          "average": 318.7142857142857
-        }, 
-        " Chile": {
-          "count": 13, 
-          "sum": 3933, 
-          "average": 302.53846153846155
-        }, 
-        " Pennsylvania": {
-          "count": 1, 
-          "sum": 38, 
-          "average": 38.0
-        }, 
-        " Anguilla": {
-          "count": 1, 
-          "sum": 148, 
-          "average": 148.0
-        }, 
-        " Venezuela": {
+        "Greenland Sea": {
           "count": 1, 
           "sum": 312, 
           "average": 312.0
         }, 
-        " Texas": {
+        "Missouri": {
+          "count": 12, 
+          "sum": 584, 
+          "average": 48.666666666666664
+        }, 
+        "New Zealand": {
+          "count": 13, 
+          "sum": 4517, 
+          "average": 347.46153846153845
+        }, 
+        "Pakistan": {
           "count": 1, 
-          "sum": 104, 
-          "average": 104.0
+          "sum": 298, 
+          "average": 298.0
         }, 
-        " California": {
-          "count": 1577, 
-          "sum": 29610, 
-          "average": 18.77615726062143
-        }
-      }, 
-      "earthquakes.[0].time.hour": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": 1251, 
-          "average": 13.308510638297872
+        "Ascension Island region": {
+          "count": 1, 
+          "sum": 340, 
+          "average": 340.0
         }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 58, 
-          "average": 11.6
+        "New Jersey": {
+          "count": 3, 
+          "sum": 29, 
+          "average": 9.666666666666666
         }, 
-        " Algeria": {
-          "count": 4, 
-          "sum": 52, 
-          "average": 13.0
+        "Washington": {
+          "count": 171, 
+          "sum": 3730, 
+          "average": 21.81286549707602
         }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": 257, 
-          "average": 10.708333333333334
+        "Azerbaijan": {
+          "count": 1, 
+          "sum": 386, 
+          "average": 386.0
         }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": 63, 
-          "average": 15.75
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": 70, 
-          "average": 11.666666666666666
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": 748, 
-          "average": 12.262295081967213
-        }, 
-        " Cyprus": {
+        "Off the coast of Oregon": {
           "count": 2, 
+          "sum": 403, 
+          "average": 201.5
+        }, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 3721, 
+          "average": 310.0833333333333
+        }, 
+        "Turkey": {
+          "count": 2, 
+          "sum": 492, 
+          "average": 246.0
+        }, 
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 2934, 
+          "average": 293.4
+        }, 
+        "Kiribati region": {
+          "count": 1, 
+          "sum": 326, 
+          "average": 326.0
+        }, 
+        "South of Panama": {
+          "count": 1, 
+          "sum": 326, 
+          "average": 326.0
+        }, 
+        "South of the Fiji Islands": {
+          "count": 1, 
+          "sum": 298, 
+          "average": 298.0
+        }, 
+        "Peru": {
+          "count": 13, 
+          "sum": 4047, 
+          "average": 311.3076923076923
+        }, 
+        "Arizona": {
+          "count": 3, 
+          "sum": 108, 
+          "average": 36.0
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": 2506, 
+          "average": 30.938271604938272
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": 1795, 
+          "average": 18.697916666666668
+        }, 
+        "China": {
+          "count": 7, 
+          "sum": 2263, 
+          "average": 323.2857142857143
+        }, 
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": 4813, 
+          "average": 155.25806451612902
+        }, 
+        "Ukraine": {
+          "count": 1, 
+          "sum": 360, 
+          "average": 360.0
+        }, 
+        "India": {
+          "count": 2, 
+          "sum": 666, 
+          "average": 333.0
+        }, 
+        "Tonga": {
+          "count": 12, 
+          "sum": 4258, 
+          "average": 354.8333333333333
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": 16592, 
+          "average": 331.84
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": 8519, 
+          "average": 86.92857142857143
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
+          "count": 1, 
+          "sum": 340, 
+          "average": 340.0
+        }, 
+        "Ohio": {
+          "count": 1, 
+          "sum": 60, 
+          "average": 60.0
+        }, 
+        "Panama": {
+          "count": 3, 
+          "sum": 927, 
+          "average": 309.0
+        }, 
+        "Russia": {
+          "count": 1, 
+          "sum": 326, 
+          "average": 326.0
+        }, 
+        "Portugal": {
+          "count": 3, 
+          "sum": 872, 
+          "average": 290.6666666666667
+        }, 
+        "Nicaragua": {
+          "count": 4, 
+          "sum": 1318, 
+          "average": 329.5
+        }, 
+        "North Carolina": {
+          "count": 1, 
+          "sum": 57, 
+          "average": 57.0
+        }, 
+        "Northern California": {
+          "count": 3, 
           "sum": 33, 
-          "average": 16.5
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": 1649, 
-          "average": 11.141891891891891
-        }, 
-        " Wallis and Futuna": {
-          "count": 1, 
-          "sum": 15, 
-          "average": 15.0
-        }, 
-        " Guatemala": {
-          "count": 8, 
-          "sum": 76, 
-          "average": 9.5
-        }, 
-        " New York": {
-          "count": 3, 
-          "sum": 46, 
-          "average": 15.333333333333334
-        }, 
-        "Owen Fracture Zone region": {
-          "count": 1, 
-          "sum": 18, 
-          "average": 18.0
-        }, 
-        " Connecticut": {
-          "count": 1, 
-          "sum": 10, 
-          "average": 10.0
-        }, 
-        " Massachusetts": {
-          "count": 1, 
-          "sum": 22, 
-          "average": 22.0
-        }, 
-        " China": {
-          "count": 7, 
-          "sum": 101, 
-          "average": 14.428571428571429
-        }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": 973, 
-          "average": 12.802631578947368
-        }, 
-        " Montana": {
-          "count": 213, 
-          "sum": 2526, 
-          "average": 11.859154929577464
-        }, 
-        " Kazakhstan": {
-          "count": 1, 
-          "sum": 15, 
-          "average": 15.0
-        }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": 2387, 
-          "average": 11.587378640776699
-        }, 
-        " Tonga": {
-          "count": 8, 
-          "sum": 100, 
-          "average": 12.5
-        }, 
-        " Kyrgyzstan": {
-          "count": 1, 
-          "sum": 20, 
-          "average": 20.0
-        }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": 215, 
-          "average": 11.944444444444445
-        }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": 79, 
-          "average": 11.285714285714286
-        }, 
-        " MX": {
-          "count": 22, 
-          "sum": 272, 
-          "average": 12.363636363636363
-        }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": 27866, 
-          "average": 11.620517097581319
-        }, 
-        " Macedonia": {
-          "count": 3, 
-          "sum": 37, 
-          "average": 12.333333333333334
-        }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": 289, 
-          "average": 14.45
-        }, 
-        " Costa Rica": {
-          "count": 2, 
-          "sum": 19, 
-          "average": 9.5
-        }, 
-        "Chagos Archipelago region": {
-          "count": 1, 
-          "sum": 11, 
           "average": 11.0
         }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": 314, 
-          "average": 10.827586206896552
-        }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": 28, 
-          "average": 14.0
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": 1193, 
-          "average": 8.401408450704226
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": 180, 
-          "average": 12.857142857142858
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": 29, 
-          "average": 14.5
-        }, 
-        " Yemen": {
-          "count": 1, 
-          "sum": 13, 
-          "average": 13.0
-        }, 
-        " Guadeloupe": {
-          "count": 1, 
-          "sum": 4, 
-          "average": 4.0
-        }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": 143, 
-          "average": 14.3
-        }, 
-        " Bulgaria": {
-          "count": 1, 
-          "sum": 4, 
-          "average": 4.0
-        }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": 361, 
-          "average": 10.93939393939394
-        }, 
-        " Greenland": {
-          "count": 1, 
-          "sum": 20, 
-          "average": 20.0
-        }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 36, 
-          "average": 18.0
-        }, 
-        " Honduras": {
-          "count": 1, 
-          "sum": 23, 
-          "average": 23.0
-        }, 
-        " French Polynesia region": {
-          "count": 1, 
-          "sum": 11, 
-          "average": 11.0
-        }, 
-        " Canada": {
-          "count": 50, 
-          "sum": 734, 
-          "average": 14.68
-        }, 
-        " Albania": {
-          "count": 1, 
-          "sum": 15, 
-          "average": 15.0
-        }, 
-        " Azerbaijan": {
-          "count": 1, 
-          "sum": 12, 
-          "average": 12.0
-        }, 
-        " Washington": {
-          "count": 242, 
-          "sum": 2761, 
-          "average": 11.409090909090908
-        }, 
-        " El Salvador": {
+        "Japan": {
           "count": 9, 
-          "sum": 110, 
-          "average": 12.222222222222221
+          "sum": 2968, 
+          "average": 329.77777777777777
         }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": 1536, 
-          "average": 10.308724832214764
-        }, 
-        " Uzbekistan": {
+        "Northwest of Australia": {
           "count": 1, 
-          "sum": 15, 
-          "average": 15.0
+          "sum": 259, 
+          "average": 259.0
         }, 
-        " Saint Eustatius and Saba ": {
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": 3002, 
+          "average": 79.0
+        }, 
+        "Virgin Islands region": {
           "count": 1, 
-          "sum": 15, 
-          "average": 15.0
-        }, 
-        " Georgia": {
-          "count": 2, 
-          "sum": 41, 
-          "average": 20.5
-        }, 
-        " New Jersey": {
-          "count": 1, 
-          "sum": 12, 
-          "average": 12.0
-        }, 
-        " Greece": {
-          "count": 9, 
-          "sum": 122, 
-          "average": 13.555555555555555
-        }, 
-        " New Hampshire": {
-          "count": 1, 
-          "sum": 11, 
-          "average": 11.0
-        }, 
-        " South Carolina": {
-          "count": 1, 
-          "sum": 3, 
-          "average": 3.0
-        }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": 7298, 
-          "average": 10.669590643274853
-        }, 
-        " India": {
-          "count": 5, 
           "sum": 50, 
-          "average": 10.0
+          "average": 50.0
         }, 
-        " Tajikistan": {
-          "count": 2, 
-          "sum": 19, 
-          "average": 9.5
-        }, 
-        " Maine": {
-          "count": 2, 
-          "sum": 5, 
-          "average": 2.5
-        }, 
-        " NV": {
-          "count": 2, 
-          "sum": 28, 
-          "average": 14.0
-        }, 
-        " Turkey": {
-          "count": 3, 
-          "sum": 30, 
-          "average": 10.0
-        }, 
-        " Serbia": {
-          "count": 1, 
-          "sum": 22, 
-          "average": 22.0
-        }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": 477, 
-          "average": 13.25
-        }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 125, 
-          "average": 13.88888888888889
-        }, 
-        " Italy": {
-          "count": 2, 
-          "sum": 34, 
-          "average": 17.0
-        }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 20, 
-          "average": 10.0
-        }, 
-        " CA": {
-          "count": 2419, 
-          "sum": 26110, 
-          "average": 10.79371641174039
-        }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": 39, 
-          "average": 19.5
-        }, 
-        "Off the coast of Oregon": {
-          "count": 1, 
-          "sum": 3, 
-          "average": 3.0
-        }, 
-        " Argentina": {
-          "count": 6, 
-          "sum": 102, 
-          "average": 17.0
-        }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": 72, 
-          "average": 10.285714285714286
-        }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": 37, 
-          "average": 7.4
-        }, 
-        " Peru": {
-          "count": 7, 
-          "sum": 53, 
-          "average": 7.571428571428571
-        }, 
-        " Chile": {
-          "count": 13, 
-          "sum": 204, 
-          "average": 15.692307692307692
-        }, 
-        " Pennsylvania": {
-          "count": 1, 
-          "sum": 0, 
-          "average": 0.0
-        }, 
-        " Anguilla": {
-          "count": 1, 
-          "sum": 3, 
-          "average": 3.0
-        }, 
-        " Venezuela": {
-          "count": 1, 
-          "sum": 14, 
-          "average": 14.0
-        }, 
-        " Texas": {
-          "count": 1, 
-          "sum": 7, 
-          "average": 7.0
-        }, 
-        " California": {
-          "count": 1577, 
-          "sum": 17822, 
-          "average": 11.301204819277109
-        }
-      }, 
-      "earthquakes.[0].time.month": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": 511, 
-          "average": 5.4361702127659575
-        }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 26, 
-          "average": 5.2
-        }, 
-        " Algeria": {
+        "Costa Rica": {
           "count": 4, 
-          "sum": 21, 
-          "average": 5.25
+          "sum": 1218, 
+          "average": 304.5
         }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": 128, 
-          "average": 5.333333333333333
-        }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": 21, 
-          "average": 5.25
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": 32, 
-          "average": 5.333333333333333
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": 342, 
-          "average": 5.60655737704918
-        }, 
-        " Cyprus": {
-          "count": 2, 
-          "sum": 12, 
-          "average": 6.0
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": 783, 
-          "average": 5.29054054054054
-        }, 
-        " Wallis and Futuna": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        " Guatemala": {
-          "count": 8, 
-          "sum": 45, 
-          "average": 5.625
-        }, 
-        " New York": {
+        "Arkansas": {
           "count": 3, 
-          "sum": 16, 
-          "average": 5.333333333333333
+          "sum": 260, 
+          "average": 86.66666666666667
         }, 
-        "Owen Fracture Zone region": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
+        "Italy": {
+          "count": 12, 
+          "sum": 3592, 
+          "average": 299.3333333333333
         }, 
-        " Connecticut": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        " Massachusetts": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " China": {
-          "count": 7, 
-          "sum": 35, 
-          "average": 5.0
-        }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": 412, 
-          "average": 5.421052631578948
-        }, 
-        " Montana": {
-          "count": 213, 
-          "sum": 1184, 
-          "average": 5.55868544600939
-        }, 
-        " Kazakhstan": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": 1110, 
-          "average": 5.388349514563107
-        }, 
-        " Tonga": {
-          "count": 8, 
-          "sum": 42, 
-          "average": 5.25
-        }, 
-        " Kyrgyzstan": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": 102, 
-          "average": 5.666666666666667
-        }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": 39, 
-          "average": 5.571428571428571
-        }, 
-        " MX": {
-          "count": 22, 
-          "sum": 117, 
-          "average": 5.318181818181818
-        }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": 13047, 
-          "average": 5.440783986655546
-        }, 
-        " Macedonia": {
-          "count": 3, 
-          "sum": 15, 
-          "average": 5.0
-        }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": 104, 
-          "average": 5.2
-        }, 
-        " Costa Rica": {
+        "Ecuador": {
           "count": 2, 
-          "sum": 11, 
-          "average": 5.5
+          "sum": 593, 
+          "average": 296.5
         }, 
-        "Chagos Archipelago region": {
+        "Australia": {
           "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": 158, 
-          "average": 5.448275862068965
-        }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": 10, 
-          "average": 5.0
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": 752, 
-          "average": 5.295774647887324
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": 76, 
-          "average": 5.428571428571429
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": 12, 
-          "average": 6.0
-        }, 
-        " Yemen": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " Guadeloupe": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": 56, 
-          "average": 5.6
-        }, 
-        " Bulgaria": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": 186, 
-          "average": 5.636363636363637
-        }, 
-        " Greenland": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 10, 
-          "average": 5.0
-        }, 
-        " Honduras": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        " French Polynesia region": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " Canada": {
-          "count": 50, 
           "sum": 271, 
-          "average": 5.42
+          "average": 271.0
         }, 
-        " Albania": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " Azerbaijan": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        " Washington": {
-          "count": 242, 
-          "sum": 1314, 
-          "average": 5.429752066115703
-        }, 
-        " El Salvador": {
-          "count": 9, 
-          "sum": 50, 
-          "average": 5.555555555555555
-        }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": 826, 
-          "average": 5.543624161073826
-        }, 
-        " Uzbekistan": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        " Saint Eustatius and Saba ": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " Georgia": {
-          "count": 2, 
-          "sum": 12, 
-          "average": 6.0
-        }, 
-        " New Jersey": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " Greece": {
-          "count": 9, 
-          "sum": 47, 
-          "average": 5.222222222222222
-        }, 
-        " New Hampshire": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " South Carolina": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": 3761, 
-          "average": 5.498538011695906
-        }, 
-        " India": {
-          "count": 5, 
-          "sum": 26, 
-          "average": 5.2
-        }, 
-        " Tajikistan": {
-          "count": 2, 
-          "sum": 12, 
-          "average": 6.0
-        }, 
-        " Maine": {
-          "count": 2, 
-          "sum": 10, 
-          "average": 5.0
-        }, 
-        " NV": {
-          "count": 2, 
-          "sum": 10, 
-          "average": 5.0
-        }, 
-        " Turkey": {
+        "Iran": {
           "count": 3, 
-          "sum": 18, 
-          "average": 6.0
+          "sum": 911, 
+          "average": 303.6666666666667
         }, 
-        " Serbia": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": 202, 
-          "average": 5.611111111111111
-        }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 50, 
-          "average": 5.555555555555555
-        }, 
-        " Italy": {
+        "El Salvador": {
           "count": 2, 
-          "sum": 10, 
-          "average": 5.0
+          "sum": 680, 
+          "average": 340.0
         }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 10, 
-          "average": 5.0
+        "California": {
+          "count": 3607, 
+          "sum": 76034, 
+          "average": 21.079567507624063
         }, 
-        " CA": {
-          "count": 2419, 
-          "sum": 13905, 
-          "average": 5.748243075651096
+        "Chile": {
+          "count": 31, 
+          "sum": 9723, 
+          "average": 313.64516129032256
         }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": 10, 
-          "average": 5.0
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": 15213, 
+          "average": 97.51923076923077
         }, 
-        "Off the coast of Oregon": {
+        "Georgia": {
           "count": 1, 
-          "sum": 5, 
-          "average": 5.0
+          "sum": 271, 
+          "average": 271.0
         }, 
-        " Argentina": {
-          "count": 6, 
-          "sum": 32, 
-          "average": 5.333333333333333
-        }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": 38, 
-          "average": 5.428571428571429
-        }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": 27, 
-          "average": 5.4
-        }, 
-        " Peru": {
-          "count": 7, 
-          "sum": 42, 
-          "average": 6.0
-        }, 
-        " Chile": {
-          "count": 13, 
-          "sum": 69, 
-          "average": 5.3076923076923075
-        }, 
-        " Pennsylvania": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " Anguilla": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        " Venezuela": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        " Texas": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        " California": {
-          "count": 1577, 
-          "sum": 8659, 
-          "average": 5.490805326569435
-        }
-      }, 
-      "earthquakes.[0].location.distance": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": 7.845999999999997, 
-          "average": 0.08346808510638298
-        }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 16.761, 
-          "average": 3.3522
-        }, 
-        " Algeria": {
-          "count": 4, 
-          "sum": 14.93, 
-          "average": 3.7325
-        }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": 1.6977699999999998, 
-          "average": 0.07074041666666667
-        }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": 6.128, 
-          "average": 1.532
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": 2.0183999999999997, 
-          "average": 0.33640000000000003
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": 8.592852999999998, 
-          "average": 0.1408664426229508
-        }, 
-        " Cyprus": {
-          "count": 2, 
-          "sum": 3.0229999999999997, 
-          "average": 1.5114999999999998
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": 18.463525999999998, 
-          "average": 0.12475355405405404
-        }, 
-        " Wallis and Futuna": {
-          "count": 1, 
-          "sum": 4.566, 
-          "average": 4.566
-        }, 
-        " Guatemala": {
-          "count": 8, 
-          "sum": 7.07, 
-          "average": 0.88375
-        }, 
-        " New York": {
-          "count": 3, 
-          "sum": 0.6591, 
-          "average": 0.2197
-        }, 
-        "Owen Fracture Zone region": {
-          "count": 1, 
-          "sum": 3.937, 
-          "average": 3.937
-        }, 
-        " Connecticut": {
-          "count": 1, 
-          "sum": 0.201, 
-          "average": 0.201
-        }, 
-        " Massachusetts": {
-          "count": 1, 
-          "sum": 0.947, 
-          "average": 0.947
-        }, 
-        " China": {
-          "count": 7, 
-          "sum": 20.641000000000002, 
-          "average": 2.9487142857142854
-        }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": 28.971305700000002, 
-          "average": 0.3812013907894737
-        }, 
-        " Montana": {
-          "count": 213, 
-          "sum": 26.838601000000022, 
-          "average": 0.12600282159624412
-        }, 
-        " Kazakhstan": {
-          "count": 1, 
-          "sum": 0.912, 
-          "average": 0.912
-        }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": 9.709392, 
-          "average": 0.04713297087378641
-        }, 
-        " Tonga": {
-          "count": 8, 
-          "sum": 26.027999999999995, 
-          "average": 3.2535000000000003
-        }, 
-        " Kyrgyzstan": {
-          "count": 1, 
-          "sum": 2.173, 
-          "average": 2.173
-        }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": 46.407, 
-          "average": 2.5781666666666663
-        }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": 16.416999999999998, 
-          "average": 2.345285714285714
-        }, 
-        " MX": {
-          "count": 22, 
-          "sum": 3.79813, 
-          "average": 0.17264227272727273
-        }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": 35.35991733, 
-          "average": 0.014745586876563804
-        }, 
-        " Macedonia": {
-          "count": 3, 
-          "sum": 1.6179999999999999, 
-          "average": 0.5393333333333333
-        }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": 18.578729889999998, 
-          "average": 0.9289364944999999
-        }, 
-        " Costa Rica": {
-          "count": 2, 
-          "sum": 0.506, 
-          "average": 0.253
-        }, 
-        "Chagos Archipelago region": {
-          "count": 1, 
-          "sum": 4.161, 
-          "average": 4.161
-        }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": 10.8124, 
-          "average": 0.37284137931034483
-        }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": 0.906, 
-          "average": 0.453
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": 104.15696223999998, 
-          "average": 0.7334997340845071
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": 0.7867500000000001, 
-          "average": 0.05619642857142857
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": 7.684, 
-          "average": 3.842
-        }, 
-        " Yemen": {
-          "count": 1, 
-          "sum": 3.511, 
-          "average": 3.511
-        }, 
-        " Guadeloupe": {
-          "count": 1, 
-          "sum": 0.498, 
-          "average": 0.498
-        }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": 3.8979999999999997, 
-          "average": 0.38980000000000004
-        }, 
-        " Bulgaria": {
-          "count": 1, 
-          "sum": 0.959, 
-          "average": 0.959
-        }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": 1.5903840000000002, 
-          "average": 0.048193454545454546
-        }, 
-        " Greenland": {
-          "count": 1, 
-          "sum": 3.503, 
-          "average": 3.503
-        }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 6.343, 
-          "average": 3.1715
-        }, 
-        " Honduras": {
-          "count": 1, 
-          "sum": 2.264, 
-          "average": 2.264
-        }, 
-        " French Polynesia region": {
-          "count": 1, 
-          "sum": 4.992, 
-          "average": 4.992
-        }, 
-        " Canada": {
-          "count": 50, 
-          "sum": 14.640940000000004, 
-          "average": 0.2928188
-        }, 
-        " Albania": {
-          "count": 1, 
-          "sum": 0.28, 
-          "average": 0.28
-        }, 
-        " Azerbaijan": {
-          "count": 1, 
-          "sum": 3.896, 
-          "average": 3.896
-        }, 
-        " Washington": {
-          "count": 242, 
-          "sum": 20.67276909999999, 
-          "average": 0.08542466570247934
-        }, 
-        " El Salvador": {
-          "count": 9, 
-          "sum": 8.908, 
-          "average": 0.9897777777777778
-        }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": 57.48319499999999, 
-          "average": 0.38579325503355705
-        }, 
-        " Uzbekistan": {
-          "count": 1, 
-          "sum": 0.739, 
-          "average": 0.739
-        }, 
-        " Saint Eustatius and Saba ": {
-          "count": 1, 
-          "sum": 0.76716125, 
-          "average": 0.76716125
-        }, 
-        " Georgia": {
-          "count": 2, 
-          "sum": 0.2108, 
-          "average": 0.1054
-        }, 
-        " New Jersey": {
-          "count": 1, 
-          "sum": 0.1413, 
-          "average": 0.1413
-        }, 
-        " Greece": {
-          "count": 9, 
-          "sum": 9.029, 
-          "average": 1.0032222222222222
-        }, 
-        " New Hampshire": {
-          "count": 1, 
-          "sum": 0.111, 
-          "average": 0.111
-        }, 
-        " South Carolina": {
-          "count": 1, 
-          "sum": 0.06319, 
-          "average": 0.06319
-        }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": 116.7243495800002, 
-          "average": 0.17064963388888887
-        }, 
-        " India": {
-          "count": 5, 
-          "sum": 18.357, 
-          "average": 3.6713999999999998
-        }, 
-        " Tajikistan": {
-          "count": 2, 
-          "sum": 0.92, 
-          "average": 0.46
-        }, 
-        " Maine": {
-          "count": 2, 
-          "sum": 0.19, 
-          "average": 0.095
-        }, 
-        " NV": {
-          "count": 2, 
-          "sum": 0.4257, 
-          "average": 0.21285
-        }, 
-        " Turkey": {
-          "count": 3, 
-          "sum": 3.4269999999999996, 
-          "average": 1.1423333333333334
-        }, 
-        " Serbia": {
-          "count": 1, 
-          "sum": 1.241, 
-          "average": 1.241
-        }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": 3.8668899999999997, 
-          "average": 0.1074136111111111
-        }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 8.173, 
-          "average": 0.9081111111111111
-        }, 
-        " Italy": {
-          "count": 2, 
-          "sum": 0.167, 
-          "average": 0.0835
-        }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 0.525, 
-          "average": 0.2625
-        }, 
-        " CA": {
-          "count": 2419, 
-          "sum": 186.2287269999998, 
-          "average": 0.07698583174865646
-        }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": 0.3777, 
-          "average": 0.18885
-        }, 
-        "Off the coast of Oregon": {
-          "count": 1, 
-          "sum": 3.096, 
-          "average": 3.096
-        }, 
-        " Argentina": {
-          "count": 6, 
-          "sum": 10.936, 
-          "average": 1.8226666666666667
-        }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": 13.439, 
-          "average": 1.919857142857143
-        }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": 0.37122, 
-          "average": 0.074244
-        }, 
-        " Peru": {
-          "count": 7, 
-          "sum": 21.293, 
-          "average": 3.041857142857143
-        }, 
-        " Chile": {
-          "count": 13, 
-          "sum": 5.897, 
-          "average": 0.45361538461538464
-        }, 
-        " Pennsylvania": {
-          "count": 1, 
-          "sum": 0.26, 
-          "average": 0.26
-        }, 
-        " Anguilla": {
-          "count": 1, 
-          "sum": 1.27201444, 
-          "average": 1.27201444
-        }, 
-        " Venezuela": {
-          "count": 1, 
-          "sum": 0.215, 
-          "average": 0.215
-        }, 
-        " Texas": {
-          "count": 1, 
-          "sum": 1.064, 
-          "average": 1.064
-        }, 
-        " California": {
-          "count": 1577, 
-          "sum": 76.56403180000004, 
-          "average": 0.04855043233988585
-        }
-      }, 
-      "earthquakes.[0].time.minute": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": 3226, 
-          "average": 34.319148936170215
-        }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 186, 
-          "average": 37.2
-        }, 
-        " Algeria": {
-          "count": 4, 
-          "sum": 121, 
-          "average": 30.25
-        }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": 755, 
-          "average": 31.458333333333332
-        }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": 181, 
-          "average": 45.25
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": 64, 
-          "average": 10.666666666666666
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": 1406, 
-          "average": 23.049180327868854
-        }, 
-        " Cyprus": {
-          "count": 2, 
-          "sum": 31, 
-          "average": 15.5
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": 4359, 
-          "average": 29.4527027027027
-        }, 
-        " Wallis and Futuna": {
-          "count": 1, 
-          "sum": 24, 
-          "average": 24.0
-        }, 
-        " Guatemala": {
-          "count": 8, 
-          "sum": 275, 
-          "average": 34.375
-        }, 
-        " New York": {
-          "count": 3, 
-          "sum": 48, 
-          "average": 16.0
-        }, 
-        "Owen Fracture Zone region": {
-          "count": 1, 
-          "sum": 41, 
-          "average": 41.0
-        }, 
-        " Connecticut": {
-          "count": 1, 
-          "sum": 12, 
-          "average": 12.0
-        }, 
-        " Massachusetts": {
+        "Pennsylvania": {
           "count": 1, 
           "sum": 29, 
           "average": 29.0
         }, 
-        " China": {
-          "count": 7, 
-          "sum": 274, 
-          "average": 39.142857142857146
-        }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": 2403, 
-          "average": 31.61842105263158
-        }, 
-        " Montana": {
-          "count": 213, 
-          "sum": 6073, 
-          "average": 28.511737089201876
-        }, 
-        " Kazakhstan": {
+        "Poland": {
           "count": 1, 
-          "sum": 10, 
-          "average": 10.0
+          "sum": 271, 
+          "average": 271.0
         }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": 5339, 
-          "average": 25.91747572815534
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": 369, 
+          "average": 369.0
         }, 
-        " Tonga": {
+        "Colorado": {
           "count": 8, 
-          "sum": 193, 
-          "average": 24.125
+          "sum": 798, 
+          "average": 99.75
         }, 
-        " Kyrgyzstan": {
+        "Uzbekistan": {
           "count": 1, 
-          "sum": 30, 
-          "average": 30.0
+          "sum": 326, 
+          "average": 326.0
         }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": 522, 
-          "average": 29.0
-        }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": 186, 
-          "average": 26.571428571428573
-        }, 
-        " MX": {
-          "count": 22, 
-          "sum": 625, 
-          "average": 28.40909090909091
-        }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": 69688, 
-          "average": 29.060884070058382
-        }, 
-        " Macedonia": {
-          "count": 3, 
-          "sum": 90, 
-          "average": 30.0
-        }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": 537, 
-          "average": 26.85
-        }, 
-        " Costa Rica": {
-          "count": 2, 
-          "sum": 32, 
-          "average": 16.0
-        }, 
-        "Chagos Archipelago region": {
-          "count": 1, 
-          "sum": 3, 
-          "average": 3.0
-        }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": 1033, 
-          "average": 35.62068965517241
-        }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": 63, 
-          "average": 31.5
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": 4189, 
-          "average": 29.5
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": 480, 
-          "average": 34.285714285714285
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": 75, 
-          "average": 37.5
-        }, 
-        " Yemen": {
-          "count": 1, 
-          "sum": 43, 
-          "average": 43.0
-        }, 
-        " Guadeloupe": {
-          "count": 1, 
-          "sum": 56, 
-          "average": 56.0
-        }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": 312, 
-          "average": 31.2
-        }, 
-        " Bulgaria": {
-          "count": 1, 
-          "sum": 58, 
-          "average": 58.0
-        }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": 840, 
-          "average": 25.454545454545453
-        }, 
-        " Greenland": {
-          "count": 1, 
-          "sum": 23, 
-          "average": 23.0
-        }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 67, 
-          "average": 33.5
-        }, 
-        " Honduras": {
+        "New York": {
           "count": 1, 
           "sum": 34, 
           "average": 34.0
         }, 
-        " French Polynesia region": {
+        "Colombia": {
+          "count": 2, 
+          "sum": 610, 
+          "average": 305.0
+        }, 
+        "Taiwan": {
           "count": 1, 
-          "sum": 15, 
-          "average": 15.0
+          "sum": 271, 
+          "average": 271.0
         }, 
-        " Canada": {
-          "count": 50, 
-          "sum": 1078, 
-          "average": 21.56
+        "Nevada": {
+          "count": 712, 
+          "sum": 8404, 
+          "average": 11.803370786516854
         }, 
-        " Albania": {
+        "Cyprus": {
           "count": 1, 
-          "sum": 49, 
-          "average": 49.0
+          "sum": 259, 
+          "average": 259.0
         }, 
-        " Azerbaijan": {
+        "Palau": {
           "count": 1, 
-          "sum": 48, 
-          "average": 48.0
+          "sum": 432, 
+          "average": 432.0
         }, 
-        " Washington": {
-          "count": 242, 
-          "sum": 7141, 
-          "average": 29.50826446280992
+        "Anguilla": {
+          "count": 1, 
+          "sum": 89, 
+          "average": 89.0
         }, 
-        " El Salvador": {
+        "Venezuela": {
+          "count": 2, 
+          "sum": 627, 
+          "average": 313.5
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": 765, 
+          "average": 42.5
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": 1581, 
+          "average": 28.232142857142858
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": 58, 
+          "average": 58.0
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": 35, 
+          "average": 35.0
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": 326, 
+          "average": 326.0
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 3226, 
+          "average": 322.6
+        }, 
+        "Kyrgyzstan": {
           "count": 9, 
-          "sum": 308, 
-          "average": 34.22222222222222
+          "sum": 2710, 
+          "average": 301.1111111111111
         }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": 4643, 
-          "average": 31.161073825503355
+        "Hawaii": {
+          "count": 225, 
+          "sum": 11182, 
+          "average": 49.69777777777778
         }, 
-        " Uzbekistan": {
+        "Syria": {
           "count": 1, 
-          "sum": 17, 
-          "average": 17.0
+          "sum": 298, 
+          "average": 298.0
         }, 
-        " Saint Eustatius and Saba ": {
-          "count": 1, 
-          "sum": 38, 
-          "average": 38.0
-        }, 
-        " Georgia": {
+        "Burma": {
           "count": 2, 
-          "sum": 53, 
-          "average": 26.5
+          "sum": 788, 
+          "average": 394.0
         }, 
-        " New Jersey": {
-          "count": 1, 
-          "sum": 48, 
-          "average": 48.0
+        "Mexico": {
+          "count": 42, 
+          "sum": 5650, 
+          "average": 134.52380952380952
         }, 
-        " Greece": {
-          "count": 9, 
-          "sum": 105, 
-          "average": 11.666666666666666
+        "Tennessee": {
+          "count": 20, 
+          "sum": 1058, 
+          "average": 52.9
         }, 
-        " New Hampshire": {
-          "count": 1, 
-          "sum": 54, 
-          "average": 54.0
-        }, 
-        " South Carolina": {
-          "count": 1, 
-          "sum": 31, 
-          "average": 31.0
-        }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": 20264, 
-          "average": 29.625730994152047
-        }, 
-        " India": {
-          "count": 5, 
-          "sum": 44, 
-          "average": 8.8
-        }, 
-        " Tajikistan": {
+        "Greece": {
           "count": 2, 
-          "sum": 37, 
-          "average": 18.5
+          "sum": 688, 
+          "average": 344.0
+        }
+      }, 
+      "earthquakes.[0].time.hour": {
+        "Canada": {
+          "count": 57, 
+          "sum": 870, 
+          "average": 15.263157894736842
         }, 
-        " Maine": {
-          "count": 2, 
-          "sum": 77, 
-          "average": 38.5
+        "East Timor": {
+          "count": 1, 
+          "sum": 23, 
+          "average": 23.0
         }, 
-        " NV": {
-          "count": 2, 
-          "sum": 73, 
-          "average": 36.5
+        "Wyoming": {
+          "count": 37, 
+          "sum": 475, 
+          "average": 12.837837837837839
         }, 
-        " Turkey": {
+        "Illinois": {
           "count": 3, 
-          "sum": 92, 
-          "average": 30.666666666666668
+          "sum": 30, 
+          "average": 10.0
         }, 
-        " Serbia": {
+        "Argentina": {
+          "count": 8, 
+          "sum": 87, 
+          "average": 10.875
+        }, 
+        "Bolivia": {
+          "count": 3, 
+          "sum": 44, 
+          "average": 14.666666666666666
+        }, 
+        "North of Svalbard": {
+          "count": 1, 
+          "sum": 16, 
+          "average": 16.0
+        }, 
+        "Texas": {
+          "count": 1, 
+          "sum": 22, 
+          "average": 22.0
+        }, 
+        "Kansas": {
+          "count": 21, 
+          "sum": 201, 
+          "average": 9.571428571428571
+        }, 
+        "Chagos Archipelago region": {
+          "count": 1, 
+          "sum": 16, 
+          "average": 16.0
+        }, 
+        "Guatemala": {
+          "count": 6, 
+          "sum": 53, 
+          "average": 8.833333333333334
+        }, 
+        "West Virginia": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Oklahoma": {
+          "count": 65, 
+          "sum": 826, 
+          "average": 12.707692307692307
+        }, 
+        "Alaska": {
+          "count": 2148, 
+          "sum": 24387, 
+          "average": 11.353351955307263
+        }, 
+        "Christmas Island": {
           "count": 1, 
           "sum": 5, 
           "average": 5.0
         }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": 1042, 
-          "average": 28.944444444444443
+        "Greenland Sea": {
+          "count": 1, 
+          "sum": 3, 
+          "average": 3.0
         }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 293, 
-          "average": 32.55555555555556
+        "Missouri": {
+          "count": 12, 
+          "sum": 157, 
+          "average": 13.083333333333334
         }, 
-        " Italy": {
-          "count": 2, 
-          "sum": 34, 
-          "average": 17.0
+        "New Zealand": {
+          "count": 13, 
+          "sum": 137, 
+          "average": 10.538461538461538
         }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 48, 
-          "average": 24.0
+        "Pakistan": {
+          "count": 1, 
+          "sum": 18, 
+          "average": 18.0
         }, 
-        " CA": {
-          "count": 2419, 
-          "sum": 69850, 
-          "average": 28.875568416701118
+        "Ascension Island region": {
+          "count": 1, 
+          "sum": 23, 
+          "average": 23.0
         }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": 35, 
-          "average": 17.5
+        "New Jersey": {
+          "count": 3, 
+          "sum": 64, 
+          "average": 21.333333333333332
+        }, 
+        "Washington": {
+          "count": 171, 
+          "sum": 2147, 
+          "average": 12.555555555555555
+        }, 
+        "Azerbaijan": {
+          "count": 1, 
+          "sum": 0, 
+          "average": 0.0
         }, 
         "Off the coast of Oregon": {
+          "count": 2, 
+          "sum": 41, 
+          "average": 20.5
+        }, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 174, 
+          "average": 14.5
+        }, 
+        "Turkey": {
+          "count": 2, 
+          "sum": 36, 
+          "average": 18.0
+        }, 
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 134, 
+          "average": 13.4
+        }, 
+        "Kiribati region": {
           "count": 1, 
-          "sum": 1, 
-          "average": 1.0
+          "sum": 9, 
+          "average": 9.0
         }, 
-        " Argentina": {
-          "count": 6, 
-          "sum": 234, 
-          "average": 39.0
+        "South of Panama": {
+          "count": 1, 
+          "sum": 9, 
+          "average": 9.0
         }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": 141, 
-          "average": 20.142857142857142
+        "South of the Fiji Islands": {
+          "count": 1, 
+          "sum": 20, 
+          "average": 20.0
         }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": 88, 
-          "average": 17.6
-        }, 
-        " Peru": {
-          "count": 7, 
-          "sum": 221, 
-          "average": 31.571428571428573
-        }, 
-        " Chile": {
+        "Peru": {
           "count": 13, 
-          "sum": 350, 
-          "average": 26.923076923076923
+          "sum": 156, 
+          "average": 12.0
         }, 
-        " Pennsylvania": {
+        "Arizona": {
+          "count": 3, 
+          "sum": 37, 
+          "average": 12.333333333333334
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": 984, 
+          "average": 12.148148148148149
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": 1168, 
+          "average": 12.166666666666666
+        }, 
+        "China": {
+          "count": 7, 
+          "sum": 71, 
+          "average": 10.142857142857142
+        }, 
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": 353, 
+          "average": 11.387096774193548
+        }, 
+        "Ukraine": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "India": {
+          "count": 2, 
+          "sum": 15, 
+          "average": 7.5
+        }, 
+        "Tonga": {
+          "count": 12, 
+          "sum": 151, 
+          "average": 12.583333333333334
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": 597, 
+          "average": 11.94
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": 1061, 
+          "average": 10.826530612244898
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
+          "count": 1, 
+          "sum": 5, 
+          "average": 5.0
+        }, 
+        "Ohio": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Panama": {
+          "count": 3, 
+          "sum": 32, 
+          "average": 10.666666666666666
+        }, 
+        "Russia": {
+          "count": 1, 
+          "sum": 3, 
+          "average": 3.0
+        }, 
+        "Portugal": {
+          "count": 3, 
+          "sum": 58, 
+          "average": 19.333333333333332
+        }, 
+        "Nicaragua": {
+          "count": 4, 
+          "sum": 38, 
+          "average": 9.5
+        }, 
+        "North Carolina": {
+          "count": 1, 
+          "sum": 18, 
+          "average": 18.0
+        }, 
+        "Northern California": {
+          "count": 3, 
+          "sum": 65, 
+          "average": 21.666666666666668
+        }, 
+        "Japan": {
+          "count": 9, 
+          "sum": 113, 
+          "average": 12.555555555555555
+        }, 
+        "Northwest of Australia": {
+          "count": 1, 
+          "sum": 9, 
+          "average": 9.0
+        }, 
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": 473, 
+          "average": 12.447368421052632
+        }, 
+        "Virgin Islands region": {
+          "count": 1, 
+          "sum": 19, 
+          "average": 19.0
+        }, 
+        "Costa Rica": {
+          "count": 4, 
+          "sum": 25, 
+          "average": 6.25
+        }, 
+        "Arkansas": {
+          "count": 3, 
+          "sum": 56, 
+          "average": 18.666666666666668
+        }, 
+        "Italy": {
+          "count": 12, 
+          "sum": 196, 
+          "average": 16.333333333333332
+        }, 
+        "Ecuador": {
+          "count": 2, 
+          "sum": 8, 
+          "average": 4.0
+        }, 
+        "Australia": {
+          "count": 1, 
+          "sum": 17, 
+          "average": 17.0
+        }, 
+        "Iran": {
+          "count": 3, 
+          "sum": 31, 
+          "average": 10.333333333333334
+        }, 
+        "El Salvador": {
+          "count": 2, 
+          "sum": 11, 
+          "average": 5.5
+        }, 
+        "California": {
+          "count": 3607, 
+          "sum": 40060, 
+          "average": 11.10618242306626
+        }, 
+        "Chile": {
+          "count": 31, 
+          "sum": 324, 
+          "average": 10.451612903225806
+        }, 
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": 1679, 
+          "average": 10.762820512820513
+        }, 
+        "Georgia": {
+          "count": 1, 
+          "sum": 2, 
+          "average": 2.0
+        }, 
+        "Pennsylvania": {
+          "count": 1, 
+          "sum": 2, 
+          "average": 2.0
+        }, 
+        "Poland": {
+          "count": 1, 
+          "sum": 15, 
+          "average": 15.0
+        }, 
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": 17, 
+          "average": 17.0
+        }, 
+        "Colorado": {
+          "count": 8, 
+          "sum": 67, 
+          "average": 8.375
+        }, 
+        "Uzbekistan": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "New York": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Colombia": {
+          "count": 2, 
+          "sum": 9, 
+          "average": 4.5
+        }, 
+        "Taiwan": {
+          "count": 1, 
+          "sum": 15, 
+          "average": 15.0
+        }, 
+        "Nevada": {
+          "count": 712, 
+          "sum": 7697, 
+          "average": 10.810393258426966
+        }, 
+        "Cyprus": {
+          "count": 1, 
+          "sum": 12, 
+          "average": 12.0
+        }, 
+        "Palau": {
+          "count": 1, 
+          "sum": 0, 
+          "average": 0.0
+        }, 
+        "Anguilla": {
+          "count": 1, 
+          "sum": 23, 
+          "average": 23.0
+        }, 
+        "Venezuela": {
+          "count": 2, 
+          "sum": 27, 
+          "average": 13.5
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": 258, 
+          "average": 14.333333333333334
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": 562, 
+          "average": 10.035714285714286
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": 21, 
+          "average": 21.0
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": 3, 
+          "average": 3.0
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 125, 
+          "average": 12.5
+        }, 
+        "Kyrgyzstan": {
+          "count": 9, 
+          "sum": 115, 
+          "average": 12.777777777777779
+        }, 
+        "Hawaii": {
+          "count": 225, 
+          "sum": 2615, 
+          "average": 11.622222222222222
+        }, 
+        "Syria": {
+          "count": 1, 
+          "sum": 12, 
+          "average": 12.0
+        }, 
+        "Burma": {
+          "count": 2, 
+          "sum": 6, 
+          "average": 3.0
+        }, 
+        "Mexico": {
+          "count": 42, 
+          "sum": 435, 
+          "average": 10.357142857142858
+        }, 
+        "Tennessee": {
+          "count": 20, 
+          "sum": 279, 
+          "average": 13.95
+        }, 
+        "Greece": {
+          "count": 2, 
+          "sum": 14, 
+          "average": 7.0
+        }
+      }, 
+      "earthquakes.[0].time.month": {
+        "Canada": {
+          "count": 57, 
+          "sum": 444, 
+          "average": 7.7894736842105265
+        }, 
+        "East Timor": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Wyoming": {
+          "count": 37, 
+          "sum": 280, 
+          "average": 7.5675675675675675
+        }, 
+        "Illinois": {
+          "count": 3, 
+          "sum": 24, 
+          "average": 8.0
+        }, 
+        "Argentina": {
+          "count": 8, 
+          "sum": 62, 
+          "average": 7.75
+        }, 
+        "Bolivia": {
+          "count": 3, 
+          "sum": 24, 
+          "average": 8.0
+        }, 
+        "North of Svalbard": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Texas": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Kansas": {
+          "count": 21, 
+          "sum": 166, 
+          "average": 7.904761904761905
+        }, 
+        "Chagos Archipelago region": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Guatemala": {
+          "count": 6, 
+          "sum": 46, 
+          "average": 7.666666666666667
+        }, 
+        "West Virginia": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Oklahoma": {
+          "count": 65, 
+          "sum": 512, 
+          "average": 7.876923076923077
+        }, 
+        "Alaska": {
+          "count": 2148, 
+          "sum": 16695, 
+          "average": 7.772346368715084
+        }, 
+        "Christmas Island": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Greenland Sea": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Missouri": {
+          "count": 12, 
+          "sum": 96, 
+          "average": 8.0
+        }, 
+        "New Zealand": {
+          "count": 13, 
+          "sum": 102, 
+          "average": 7.846153846153846
+        }, 
+        "Pakistan": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Ascension Island region": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "New Jersey": {
+          "count": 3, 
+          "sum": 23, 
+          "average": 7.666666666666667
+        }, 
+        "Washington": {
+          "count": 171, 
+          "sum": 1331, 
+          "average": 7.783625730994152
+        }, 
+        "Azerbaijan": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Off the coast of Oregon": {
+          "count": 2, 
+          "sum": 16, 
+          "average": 8.0
+        }, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 95, 
+          "average": 7.916666666666667
+        }, 
+        "Turkey": {
+          "count": 2, 
+          "sum": 16, 
+          "average": 8.0
+        }, 
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 78, 
+          "average": 7.8
+        }, 
+        "Kiribati region": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "South of Panama": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "South of the Fiji Islands": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Peru": {
+          "count": 13, 
+          "sum": 102, 
+          "average": 7.846153846153846
+        }, 
+        "Arizona": {
+          "count": 3, 
+          "sum": 24, 
+          "average": 8.0
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": 633, 
+          "average": 7.814814814814815
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": 753, 
+          "average": 7.84375
+        }, 
+        "China": {
+          "count": 7, 
+          "sum": 53, 
+          "average": 7.571428571428571
+        }, 
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": 244, 
+          "average": 7.870967741935484
+        }, 
+        "Ukraine": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "India": {
+          "count": 2, 
+          "sum": 16, 
+          "average": 8.0
+        }, 
+        "Tonga": {
+          "count": 12, 
+          "sum": 94, 
+          "average": 7.833333333333333
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": 391, 
+          "average": 7.82
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": 772, 
+          "average": 7.877551020408164
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Ohio": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Panama": {
+          "count": 3, 
+          "sum": 23, 
+          "average": 7.666666666666667
+        }, 
+        "Russia": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Portugal": {
+          "count": 3, 
+          "sum": 23, 
+          "average": 7.666666666666667
+        }, 
+        "Nicaragua": {
+          "count": 4, 
+          "sum": 32, 
+          "average": 8.0
+        }, 
+        "North Carolina": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Northern California": {
+          "count": 3, 
+          "sum": 21, 
+          "average": 7.0
+        }, 
+        "Japan": {
+          "count": 9, 
+          "sum": 70, 
+          "average": 7.777777777777778
+        }, 
+        "Northwest of Australia": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": 298, 
+          "average": 7.842105263157895
+        }, 
+        "Virgin Islands region": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Costa Rica": {
+          "count": 4, 
+          "sum": 32, 
+          "average": 8.0
+        }, 
+        "Arkansas": {
+          "count": 3, 
+          "sum": 23, 
+          "average": 7.666666666666667
+        }, 
+        "Italy": {
+          "count": 12, 
+          "sum": 95, 
+          "average": 7.916666666666667
+        }, 
+        "Ecuador": {
+          "count": 2, 
+          "sum": 16, 
+          "average": 8.0
+        }, 
+        "Australia": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Iran": {
+          "count": 3, 
+          "sum": 23, 
+          "average": 7.666666666666667
+        }, 
+        "El Salvador": {
+          "count": 2, 
+          "sum": 16, 
+          "average": 8.0
+        }, 
+        "California": {
+          "count": 3607, 
+          "sum": 28298, 
+          "average": 7.845300803992237
+        }, 
+        "Chile": {
+          "count": 31, 
+          "sum": 243, 
+          "average": 7.838709677419355
+        }, 
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": 1222, 
+          "average": 7.833333333333333
+        }, 
+        "Georgia": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Pennsylvania": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Poland": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Colorado": {
+          "count": 8, 
+          "sum": 64, 
+          "average": 8.0
+        }, 
+        "Uzbekistan": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "New York": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Colombia": {
+          "count": 2, 
+          "sum": 16, 
+          "average": 8.0
+        }, 
+        "Taiwan": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Nevada": {
+          "count": 712, 
+          "sum": 5617, 
+          "average": 7.889044943820225
+        }, 
+        "Cyprus": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Palau": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Anguilla": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Venezuela": {
+          "count": 2, 
+          "sum": 16, 
+          "average": 8.0
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": 137, 
+          "average": 7.611111111111111
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": 442, 
+          "average": 7.892857142857143
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 76, 
+          "average": 7.6
+        }, 
+        "Kyrgyzstan": {
+          "count": 9, 
+          "sum": 71, 
+          "average": 7.888888888888889
+        }, 
+        "Hawaii": {
+          "count": 225, 
+          "sum": 1759, 
+          "average": 7.817777777777778
+        }, 
+        "Syria": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Burma": {
+          "count": 2, 
+          "sum": 15, 
+          "average": 7.5
+        }, 
+        "Mexico": {
+          "count": 42, 
+          "sum": 332, 
+          "average": 7.904761904761905
+        }, 
+        "Tennessee": {
+          "count": 20, 
+          "sum": 152, 
+          "average": 7.6
+        }, 
+        "Greece": {
+          "count": 2, 
+          "sum": 15, 
+          "average": 7.5
+        }
+      }, 
+      "earthquakes.[0].location.distance": {
+        "Canada": {
+          "count": 57, 
+          "sum": 14.411426609999998, 
+          "average": 0.25283204578947366
+        }, 
+        "East Timor": {
+          "count": 1, 
+          "sum": 3.7, 
+          "average": 3.7
+        }, 
+        "Wyoming": {
+          "count": 37, 
+          "sum": 4.278199999999999, 
+          "average": 0.11562702702702703
+        }, 
+        "Illinois": {
+          "count": 3, 
+          "sum": 0.51161, 
+          "average": 0.17053666666666667
+        }, 
+        "Argentina": {
+          "count": 8, 
+          "sum": 10.290000000000001, 
+          "average": 1.28625
+        }, 
+        "Bolivia": {
+          "count": 3, 
+          "sum": 5.575, 
+          "average": 1.8583333333333334
+        }, 
+        "North of Svalbard": {
+          "count": 1, 
+          "sum": 5.502, 
+          "average": 5.502
+        }, 
+        "Texas": {
+          "count": 1, 
+          "sum": 1.014, 
+          "average": 1.014
+        }, 
+        "Kansas": {
+          "count": 21, 
+          "sum": 2.34065, 
+          "average": 0.11145952380952381
+        }, 
+        "Chagos Archipelago region": {
+          "count": 1, 
+          "sum": 3.987, 
+          "average": 3.987
+        }, 
+        "Guatemala": {
+          "count": 6, 
+          "sum": 3.8850000000000002, 
+          "average": 0.6475000000000001
+        }, 
+        "West Virginia": {
+          "count": 1, 
+          "sum": 0.4873, 
+          "average": 0.4873
+        }, 
+        "Oklahoma": {
+          "count": 65, 
+          "sum": 5.081999999999998, 
+          "average": 0.07818461538461538
+        }, 
+        "Alaska": {
+          "count": 2148, 
+          "sum": 178.37278865999988, 
+          "average": 0.0830413355027933
+        }, 
+        "Christmas Island": {
+          "count": 1, 
+          "sum": 1.639, 
+          "average": 1.639
+        }, 
+        "Greenland Sea": {
+          "count": 1, 
+          "sum": 5.497, 
+          "average": 5.497
+        }, 
+        "Missouri": {
+          "count": 12, 
+          "sum": 0.47831, 
+          "average": 0.03985916666666667
+        }, 
+        "New Zealand": {
+          "count": 13, 
+          "sum": 27.653000000000002, 
+          "average": 2.127153846153846
+        }, 
+        "Pakistan": {
+          "count": 1, 
+          "sum": 5.248, 
+          "average": 5.248
+        }, 
+        "Ascension Island region": {
+          "count": 1, 
+          "sum": 2.742, 
+          "average": 2.742
+        }, 
+        "New Jersey": {
+          "count": 3, 
+          "sum": 0.4367, 
+          "average": 0.14556666666666665
+        }, 
+        "Washington": {
+          "count": 171, 
+          "sum": 16.938033200000003, 
+          "average": 0.09905282573099415
+        }, 
+        "Azerbaijan": {
+          "count": 1, 
+          "sum": 2.49, 
+          "average": 2.49
+        }, 
+        "Off the coast of Oregon": {
+          "count": 2, 
+          "sum": 7.776, 
+          "average": 3.888
+        }, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 12.332, 
+          "average": 1.0276666666666667
+        }, 
+        "Turkey": {
+          "count": 2, 
+          "sum": 2.324, 
+          "average": 1.162
+        }, 
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 13.145, 
+          "average": 1.3145
+        }, 
+        "Kiribati region": {
+          "count": 1, 
+          "sum": 2.825, 
+          "average": 2.825
+        }, 
+        "South of Panama": {
+          "count": 1, 
+          "sum": 3.628, 
+          "average": 3.628
+        }, 
+        "South of the Fiji Islands": {
+          "count": 1, 
+          "sum": 3.165, 
+          "average": 3.165
+        }, 
+        "Peru": {
+          "count": 13, 
+          "sum": 27.41, 
+          "average": 2.1084615384615386
+        }, 
+        "Arizona": {
+          "count": 3, 
+          "sum": 1.3597, 
+          "average": 0.4532333333333333
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": 13.20433, 
+          "average": 0.16301641975308642
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": 16.127675, 
+          "average": 0.16799661458333334
+        }, 
+        "China": {
+          "count": 7, 
+          "sum": 23.731, 
+          "average": 3.3901428571428576
+        }, 
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": 19.869933259999996, 
+          "average": 0.6409655890322581
+        }, 
+        "Ukraine": {
+          "count": 1, 
+          "sum": 4.794, 
+          "average": 4.794
+        }, 
+        "India": {
+          "count": 2, 
+          "sum": 7.970000000000001, 
+          "average": 3.9850000000000003
+        }, 
+        "Tonga": {
+          "count": 12, 
+          "sum": 52.76, 
+          "average": 4.3966666666666665
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": 127.30399999999997, 
+          "average": 2.54608
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": 66.06210595, 
+          "average": 0.6741031219387755
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
+          "count": 1, 
+          "sum": 3.069, 
+          "average": 3.069
+        }, 
+        "Ohio": {
+          "count": 1, 
+          "sum": 0.2046, 
+          "average": 0.2046
+        }, 
+        "Panama": {
+          "count": 3, 
+          "sum": 5.6530000000000005, 
+          "average": 1.8843333333333334
+        }, 
+        "Russia": {
+          "count": 1, 
+          "sum": 3.405, 
+          "average": 3.405
+        }, 
+        "Portugal": {
+          "count": 3, 
+          "sum": 4.865, 
+          "average": 1.6216666666666668
+        }, 
+        "Nicaragua": {
+          "count": 4, 
+          "sum": 2.985, 
+          "average": 0.74625
+        }, 
+        "North Carolina": {
+          "count": 1, 
+          "sum": 0.3088, 
+          "average": 0.3088
+        }, 
+        "Northern California": {
+          "count": 3, 
+          "sum": 0.030744, 
+          "average": 0.010248
+        }, 
+        "Japan": {
+          "count": 9, 
+          "sum": 13.357000000000001, 
+          "average": 1.484111111111111
+        }, 
+        "Northwest of Australia": {
+          "count": 1, 
+          "sum": 4.138, 
+          "average": 4.138
+        }, 
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": 18.722687159999996, 
+          "average": 0.49270229368421053
+        }, 
+        "Virgin Islands region": {
+          "count": 1, 
+          "sum": 0.19313779, 
+          "average": 0.19313779
+        }, 
+        "Costa Rica": {
+          "count": 4, 
+          "sum": 1.431, 
+          "average": 0.35775
+        }, 
+        "Arkansas": {
+          "count": 3, 
+          "sum": 0.56365, 
+          "average": 0.18788333333333332
+        }, 
+        "Italy": {
+          "count": 12, 
+          "sum": 2.9099999999999997, 
+          "average": 0.24250000000000002
+        }, 
+        "Ecuador": {
+          "count": 2, 
+          "sum": 1.637, 
+          "average": 0.8185
+        }, 
+        "Australia": {
+          "count": 1, 
+          "sum": 4.16, 
+          "average": 4.16
+        }, 
+        "Iran": {
+          "count": 3, 
+          "sum": 6.204000000000001, 
+          "average": 2.068
+        }, 
+        "El Salvador": {
+          "count": 2, 
+          "sum": 1.798, 
+          "average": 0.899
+        }, 
+        "California": {
+          "count": 3607, 
+          "sum": 216.8418960999995, 
+          "average": 0.060116965927363465
+        }, 
+        "Chile": {
+          "count": 31, 
+          "sum": 15.993999999999996, 
+          "average": 0.5159354838709678
+        }, 
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": 66.61636648000001, 
+          "average": 0.42702799025641025
+        }, 
+        "Georgia": {
+          "count": 1, 
+          "sum": 1.639, 
+          "average": 1.639
+        }, 
+        "Pennsylvania": {
+          "count": 1, 
+          "sum": 0.4016, 
+          "average": 0.4016
+        }, 
+        "Poland": {
+          "count": 1, 
+          "sum": 1.988, 
+          "average": 1.988
+        }, 
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": 3.7, 
+          "average": 3.7
+        }, 
+        "Colorado": {
+          "count": 8, 
+          "sum": 2.618, 
+          "average": 0.32725
+        }, 
+        "Uzbekistan": {
+          "count": 1, 
+          "sum": 1.794, 
+          "average": 1.794
+        }, 
+        "New York": {
+          "count": 1, 
+          "sum": 0.3384, 
+          "average": 0.3384
+        }, 
+        "Colombia": {
+          "count": 2, 
+          "sum": 5.154999999999999, 
+          "average": 2.5774999999999997
+        }, 
+        "Taiwan": {
+          "count": 1, 
+          "sum": 0.195, 
+          "average": 0.195
+        }, 
+        "Nevada": {
+          "count": 712, 
+          "sum": 149.47609999999997, 
+          "average": 0.20993834269662923
+        }, 
+        "Cyprus": {
+          "count": 1, 
+          "sum": 1.43, 
+          "average": 1.43
+        }, 
+        "Palau": {
+          "count": 1, 
+          "sum": 6.458, 
+          "average": 6.458
+        }, 
+        "Anguilla": {
+          "count": 1, 
+          "sum": 0.89023045, 
+          "average": 0.89023045
+        }, 
+        "Venezuela": {
+          "count": 2, 
+          "sum": 1.703, 
+          "average": 0.8515
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": 5.603389999999999, 
+          "average": 0.31129944444444446
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": 8.239695000000001, 
+          "average": 0.1471374107142857
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": 0.27, 
+          "average": 0.27
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": 0.595, 
+          "average": 0.595
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": 0.565, 
+          "average": 0.565
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 18.772000000000002, 
+          "average": 1.8771999999999998
+        }, 
+        "Kyrgyzstan": {
+          "count": 9, 
+          "sum": 17.285999999999998, 
+          "average": 1.9206666666666667
+        }, 
+        "Hawaii": {
+          "count": 225, 
+          "sum": 12.708522, 
+          "average": 0.05648232
+        }, 
+        "Syria": {
+          "count": 1, 
+          "sum": 4.022, 
+          "average": 4.022
+        }, 
+        "Burma": {
+          "count": 2, 
+          "sum": 2.747, 
+          "average": 1.3735
+        }, 
+        "Mexico": {
+          "count": 42, 
+          "sum": 23.850289999999998, 
+          "average": 0.5678640476190476
+        }, 
+        "Tennessee": {
+          "count": 20, 
+          "sum": 1.64325, 
+          "average": 0.0821625
+        }, 
+        "Greece": {
+          "count": 2, 
+          "sum": 1.546, 
+          "average": 0.773
+        }
+      }, 
+      "earthquakes.[0].time.minute": {
+        "Canada": {
+          "count": 57, 
+          "sum": 1384, 
+          "average": 24.280701754385966
+        }, 
+        "East Timor": {
+          "count": 1, 
+          "sum": 44, 
+          "average": 44.0
+        }, 
+        "Wyoming": {
+          "count": 37, 
+          "sum": 1097, 
+          "average": 29.64864864864865
+        }, 
+        "Illinois": {
+          "count": 3, 
+          "sum": 37, 
+          "average": 12.333333333333334
+        }, 
+        "Argentina": {
+          "count": 8, 
+          "sum": 215, 
+          "average": 26.875
+        }, 
+        "Bolivia": {
+          "count": 3, 
+          "sum": 68, 
+          "average": 22.666666666666668
+        }, 
+        "North of Svalbard": {
           "count": 1, 
           "sum": 47, 
           "average": 47.0
         }, 
-        " Anguilla": {
+        "Texas": {
+          "count": 1, 
+          "sum": 21, 
+          "average": 21.0
+        }, 
+        "Kansas": {
+          "count": 21, 
+          "sum": 606, 
+          "average": 28.857142857142858
+        }, 
+        "Chagos Archipelago region": {
+          "count": 1, 
+          "sum": 5, 
+          "average": 5.0
+        }, 
+        "Guatemala": {
+          "count": 6, 
+          "sum": 210, 
+          "average": 35.0
+        }, 
+        "West Virginia": {
+          "count": 1, 
+          "sum": 39, 
+          "average": 39.0
+        }, 
+        "Oklahoma": {
+          "count": 65, 
+          "sum": 1996, 
+          "average": 30.70769230769231
+        }, 
+        "Alaska": {
+          "count": 2148, 
+          "sum": 63454, 
+          "average": 29.54096834264432
+        }, 
+        "Christmas Island": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Greenland Sea": {
+          "count": 1, 
+          "sum": 32, 
+          "average": 32.0
+        }, 
+        "Missouri": {
+          "count": 12, 
+          "sum": 382, 
+          "average": 31.833333333333332
+        }, 
+        "New Zealand": {
+          "count": 13, 
+          "sum": 371, 
+          "average": 28.53846153846154
+        }, 
+        "Pakistan": {
+          "count": 1, 
+          "sum": 58, 
+          "average": 58.0
+        }, 
+        "Ascension Island region": {
+          "count": 1, 
+          "sum": 55, 
+          "average": 55.0
+        }, 
+        "New Jersey": {
+          "count": 3, 
+          "sum": 68, 
+          "average": 22.666666666666668
+        }, 
+        "Washington": {
+          "count": 171, 
+          "sum": 4923, 
+          "average": 28.789473684210527
+        }, 
+        "Azerbaijan": {
           "count": 1, 
           "sum": 46, 
           "average": 46.0
         }, 
-        " Venezuela": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
+        "Off the coast of Oregon": {
+          "count": 2, 
+          "sum": 72, 
+          "average": 36.0
         }, 
-        " Texas": {
-          "count": 1, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 331, 
+          "average": 27.583333333333332
+        }, 
+        "Turkey": {
+          "count": 2, 
           "sum": 37, 
-          "average": 37.0
+          "average": 18.5
         }, 
-        " California": {
-          "count": 1577, 
-          "sum": 46134, 
-          "average": 29.25428027901078
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 358, 
+          "average": 35.8
+        }, 
+        "Kiribati region": {
+          "count": 1, 
+          "sum": 46, 
+          "average": 46.0
+        }, 
+        "South of Panama": {
+          "count": 1, 
+          "sum": 21, 
+          "average": 21.0
+        }, 
+        "South of the Fiji Islands": {
+          "count": 1, 
+          "sum": 40, 
+          "average": 40.0
+        }, 
+        "Peru": {
+          "count": 13, 
+          "sum": 366, 
+          "average": 28.153846153846153
+        }, 
+        "Arizona": {
+          "count": 3, 
+          "sum": 65, 
+          "average": 21.666666666666668
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": 2134, 
+          "average": 26.34567901234568
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": 2915, 
+          "average": 30.364583333333332
+        }, 
+        "China": {
+          "count": 7, 
+          "sum": 157, 
+          "average": 22.428571428571427
+        }, 
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": 999, 
+          "average": 32.225806451612904
+        }, 
+        "Ukraine": {
+          "count": 1, 
+          "sum": 15, 
+          "average": 15.0
+        }, 
+        "India": {
+          "count": 2, 
+          "sum": 93, 
+          "average": 46.5
+        }, 
+        "Tonga": {
+          "count": 12, 
+          "sum": 415, 
+          "average": 34.583333333333336
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": 1524, 
+          "average": 30.48
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": 2787, 
+          "average": 28.43877551020408
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
+          "count": 1, 
+          "sum": 24, 
+          "average": 24.0
+        }, 
+        "Ohio": {
+          "count": 1, 
+          "sum": 50, 
+          "average": 50.0
+        }, 
+        "Panama": {
+          "count": 3, 
+          "sum": 94, 
+          "average": 31.333333333333332
+        }, 
+        "Russia": {
+          "count": 1, 
+          "sum": 54, 
+          "average": 54.0
+        }, 
+        "Portugal": {
+          "count": 3, 
+          "sum": 85, 
+          "average": 28.333333333333332
+        }, 
+        "Nicaragua": {
+          "count": 4, 
+          "sum": 149, 
+          "average": 37.25
+        }, 
+        "North Carolina": {
+          "count": 1, 
+          "sum": 14, 
+          "average": 14.0
+        }, 
+        "Northern California": {
+          "count": 3, 
+          "sum": 105, 
+          "average": 35.0
+        }, 
+        "Japan": {
+          "count": 9, 
+          "sum": 190, 
+          "average": 21.11111111111111
+        }, 
+        "Northwest of Australia": {
+          "count": 1, 
+          "sum": 45, 
+          "average": 45.0
+        }, 
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": 1040, 
+          "average": 27.36842105263158
+        }, 
+        "Virgin Islands region": {
+          "count": 1, 
+          "sum": 26, 
+          "average": 26.0
+        }, 
+        "Costa Rica": {
+          "count": 4, 
+          "sum": 73, 
+          "average": 18.25
+        }, 
+        "Arkansas": {
+          "count": 3, 
+          "sum": 39, 
+          "average": 13.0
+        }, 
+        "Italy": {
+          "count": 12, 
+          "sum": 377, 
+          "average": 31.416666666666668
+        }, 
+        "Ecuador": {
+          "count": 2, 
+          "sum": 77, 
+          "average": 38.5
+        }, 
+        "Australia": {
+          "count": 1, 
+          "sum": 16, 
+          "average": 16.0
+        }, 
+        "Iran": {
+          "count": 3, 
+          "sum": 81, 
+          "average": 27.0
+        }, 
+        "El Salvador": {
+          "count": 2, 
+          "sum": 39, 
+          "average": 19.5
+        }, 
+        "California": {
+          "count": 3607, 
+          "sum": 106000, 
+          "average": 29.38730246742445
+        }, 
+        "Chile": {
+          "count": 31, 
+          "sum": 915, 
+          "average": 29.516129032258064
+        }, 
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": 4357, 
+          "average": 27.92948717948718
+        }, 
+        "Georgia": {
+          "count": 1, 
+          "sum": 5, 
+          "average": 5.0
+        }, 
+        "Pennsylvania": {
+          "count": 1, 
+          "sum": 15, 
+          "average": 15.0
+        }, 
+        "Poland": {
+          "count": 1, 
+          "sum": 10, 
+          "average": 10.0
+        }, 
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": 14, 
+          "average": 14.0
+        }, 
+        "Colorado": {
+          "count": 8, 
+          "sum": 218, 
+          "average": 27.25
+        }, 
+        "Uzbekistan": {
+          "count": 1, 
+          "sum": 50, 
+          "average": 50.0
+        }, 
+        "New York": {
+          "count": 1, 
+          "sum": 50, 
+          "average": 50.0
+        }, 
+        "Colombia": {
+          "count": 2, 
+          "sum": 49, 
+          "average": 24.5
+        }, 
+        "Taiwan": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Nevada": {
+          "count": 712, 
+          "sum": 20713, 
+          "average": 29.09129213483146
+        }, 
+        "Cyprus": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Palau": {
+          "count": 1, 
+          "sum": 19, 
+          "average": 19.0
+        }, 
+        "Anguilla": {
+          "count": 1, 
+          "sum": 13, 
+          "average": 13.0
+        }, 
+        "Venezuela": {
+          "count": 2, 
+          "sum": 50, 
+          "average": 25.0
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": 533, 
+          "average": 29.61111111111111
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": 1770, 
+          "average": 31.607142857142858
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": 34, 
+          "average": 34.0
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": 16, 
+          "average": 16.0
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": 58, 
+          "average": 58.0
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 252, 
+          "average": 25.2
+        }, 
+        "Kyrgyzstan": {
+          "count": 9, 
+          "sum": 157, 
+          "average": 17.444444444444443
+        }, 
+        "Hawaii": {
+          "count": 225, 
+          "sum": 6878, 
+          "average": 30.56888888888889
+        }, 
+        "Syria": {
+          "count": 1, 
+          "sum": 13, 
+          "average": 13.0
+        }, 
+        "Burma": {
+          "count": 2, 
+          "sum": 21, 
+          "average": 10.5
+        }, 
+        "Mexico": {
+          "count": 42, 
+          "sum": 1116, 
+          "average": 26.571428571428573
+        }, 
+        "Tennessee": {
+          "count": 20, 
+          "sum": 624, 
+          "average": 31.2
+        }, 
+        "Greece": {
+          "count": 2, 
+          "sum": 43, 
+          "average": 21.5
         }
       }, 
       "earthquakes.[0].location.depth": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": 533.5210000000001, 
-          "average": 5.675755319148935
+        "Canada": {
+          "count": 57, 
+          "sum": 305.6000000000001, 
+          "average": 5.3614035087719305
         }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 201.55, 
-          "average": 40.31
-        }, 
-        " Algeria": {
-          "count": 4, 
-          "sum": 48.86, 
-          "average": 12.215
-        }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": 123.98699999999998, 
-          "average": 5.166125
-        }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": 472.39000000000004, 
-          "average": 118.09750000000001
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": 54.79, 
-          "average": 9.131666666666666
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": 390.1300000000001, 
-          "average": 6.395573770491803
-        }, 
-        " Cyprus": {
-          "count": 2, 
-          "sum": 50.08, 
-          "average": 25.04
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": 814.4300000000002, 
-          "average": 5.502905405405405
-        }, 
-        " Wallis and Futuna": {
+        "East Timor": {
           "count": 1, 
-          "sum": 10.0, 
-          "average": 10.0
+          "sum": 112.79, 
+          "average": 112.79
         }, 
-        " Guatemala": {
+        "Wyoming": {
+          "count": 37, 
+          "sum": 255.95, 
+          "average": 6.917567567567567
+        }, 
+        "Illinois": {
+          "count": 3, 
+          "sum": 50.32, 
+          "average": 16.773333333333333
+        }, 
+        "Argentina": {
           "count": 8, 
-          "sum": 352.51, 
-          "average": 44.06375
+          "sum": 1566.1200000000001, 
+          "average": 195.765
         }, 
-        " New York": {
+        "Bolivia": {
           "count": 3, 
-          "sum": 12.26, 
-          "average": 4.086666666666667
+          "sum": 612.24, 
+          "average": 204.08
         }, 
-        "Owen Fracture Zone region": {
+        "North of Svalbard": {
           "count": 1, 
-          "sum": 10.0, 
-          "average": 10.0
+          "sum": 3.59, 
+          "average": 3.59
         }, 
-        " Connecticut": {
-          "count": 1, 
-          "sum": 2.51, 
-          "average": 2.51
-        }, 
-        " Massachusetts": {
-          "count": 1, 
-          "sum": 10.14, 
-          "average": 10.14
-        }, 
-        " China": {
-          "count": 7, 
-          "sum": 83.08, 
-          "average": 11.868571428571428
-        }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": 1763.57, 
-          "average": 23.20486842105263
-        }, 
-        " Montana": {
-          "count": 213, 
-          "sum": 1465.9099999999994, 
-          "average": 6.882206572769953
-        }, 
-        " Kazakhstan": {
-          "count": 1, 
-          "sum": 10.6, 
-          "average": 10.6
-        }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": 2449.091999999999, 
-          "average": 11.888796116504855
-        }, 
-        " Tonga": {
-          "count": 8, 
-          "sum": 655.0499999999998, 
-          "average": 81.88125
-        }, 
-        " Kyrgyzstan": {
-          "count": 1, 
-          "sum": 35.62, 
-          "average": 35.62
-        }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": 770.42, 
-          "average": 42.80111111111111
-        }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": 445.03, 
-          "average": 63.575714285714284
-        }, 
-        " MX": {
-          "count": 22, 
-          "sum": 174.33, 
-          "average": 7.92409090909091
-        }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": 99970.36000000007, 
-          "average": 41.68905754795663
-        }, 
-        " Macedonia": {
-          "count": 3, 
-          "sum": 52.290000000000006, 
-          "average": 17.43
-        }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": 1601.97, 
-          "average": 80.0985
-        }, 
-        " Costa Rica": {
-          "count": 2, 
-          "sum": 57.35, 
-          "average": 28.675
-        }, 
-        "Chagos Archipelago region": {
-          "count": 1, 
-          "sum": 10.0, 
-          "average": 10.0
-        }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": 147.21, 
-          "average": 5.076206896551724
-        }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": 7.67, 
-          "average": 3.835
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": 6052.0, 
-          "average": 42.61971830985915
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": 124.32000000000001, 
-          "average": 8.88
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": 20.0, 
-          "average": 10.0
-        }, 
-        " Yemen": {
-          "count": 1, 
-          "sum": 10.0, 
-          "average": 10.0
-        }, 
-        " Guadeloupe": {
-          "count": 1, 
-          "sum": 31.83, 
-          "average": 31.83
-        }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": 213.54, 
-          "average": 21.354
-        }, 
-        " Bulgaria": {
-          "count": 1, 
-          "sum": 10.0, 
-          "average": 10.0
-        }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": 287.80999999999995, 
-          "average": 8.72151515151515
-        }, 
-        " Greenland": {
-          "count": 1, 
-          "sum": 10.0, 
-          "average": 10.0
-        }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 126.17, 
-          "average": 63.085
-        }, 
-        " Honduras": {
-          "count": 1, 
-          "sum": 10.0, 
-          "average": 10.0
-        }, 
-        " French Polynesia region": {
-          "count": 1, 
-          "sum": 10.0, 
-          "average": 10.0
-        }, 
-        " Canada": {
-          "count": 50, 
-          "sum": 265.5, 
-          "average": 5.31
-        }, 
-        " Albania": {
-          "count": 1, 
-          "sum": 13.9, 
-          "average": 13.9
-        }, 
-        " Azerbaijan": {
-          "count": 1, 
-          "sum": 10.0, 
-          "average": 10.0
-        }, 
-        " Washington": {
-          "count": 242, 
-          "sum": 2136.690000000001, 
-          "average": 8.829297520661157
-        }, 
-        " El Salvador": {
-          "count": 9, 
-          "sum": 356.11, 
-          "average": 39.56777777777778
-        }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": 5129.0, 
-          "average": 34.422818791946305
-        }, 
-        " Uzbekistan": {
-          "count": 1, 
-          "sum": 22.79, 
-          "average": 22.79
-        }, 
-        " Saint Eustatius and Saba ": {
-          "count": 1, 
-          "sum": 171.0, 
-          "average": 171.0
-        }, 
-        " Georgia": {
-          "count": 2, 
-          "sum": 19.86, 
-          "average": 9.93
-        }, 
-        " New Jersey": {
-          "count": 1, 
-          "sum": 2.93, 
-          "average": 2.93
-        }, 
-        " Greece": {
-          "count": 9, 
-          "sum": 141.58, 
-          "average": 15.731111111111112
-        }, 
-        " New Hampshire": {
-          "count": 1, 
-          "sum": 5.4, 
-          "average": 5.4
-        }, 
-        " South Carolina": {
-          "count": 1, 
-          "sum": 6.41, 
-          "average": 6.41
-        }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": 4421.040000000001, 
-          "average": 6.463508771929824
-        }, 
-        " India": {
-          "count": 5, 
-          "sum": 338.65, 
-          "average": 67.72999999999999
-        }, 
-        " Tajikistan": {
-          "count": 2, 
-          "sum": 123.76, 
-          "average": 61.88
-        }, 
-        " Maine": {
-          "count": 2, 
-          "sum": 4.98, 
-          "average": 2.49
-        }, 
-        " NV": {
-          "count": 2, 
-          "sum": 12.489999999999998, 
-          "average": 6.244999999999999
-        }, 
-        " Turkey": {
-          "count": 3, 
-          "sum": 48.629999999999995, 
-          "average": 16.209999999999997
-        }, 
-        " Serbia": {
-          "count": 1, 
-          "sum": 16.99, 
-          "average": 16.99
-        }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": 217.48, 
-          "average": 6.04111111111111
-        }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 989.25, 
-          "average": 109.91666666666667
-        }, 
-        " Italy": {
-          "count": 2, 
-          "sum": 27.58, 
-          "average": 13.79
-        }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 20.0, 
-          "average": 10.0
-        }, 
-        " CA": {
-          "count": 2419, 
-          "sum": 24074.179999999982, 
-          "average": 9.952120711037619
-        }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": 13.3, 
-          "average": 6.65
-        }, 
-        "Off the coast of Oregon": {
-          "count": 1, 
-          "sum": 10.0, 
-          "average": 10.0
-        }, 
-        " Argentina": {
-          "count": 6, 
-          "sum": 799.73, 
-          "average": 133.28833333333333
-        }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": 208.51, 
-          "average": 29.787142857142857
-        }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": 61.03999999999999, 
-          "average": 12.208
-        }, 
-        " Peru": {
-          "count": 7, 
-          "sum": 555.49, 
-          "average": 79.35571428571428
-        }, 
-        " Chile": {
-          "count": 13, 
-          "sum": 1392.4300000000003, 
-          "average": 107.11
-        }, 
-        " Pennsylvania": {
+        "Texas": {
           "count": 1, 
           "sum": 5.0, 
           "average": 5.0
         }, 
-        " Anguilla": {
-          "count": 1, 
-          "sum": 129.0, 
-          "average": 129.0
+        "Kansas": {
+          "count": 21, 
+          "sum": 111.13, 
+          "average": 5.291904761904762
         }, 
-        " Venezuela": {
+        "Chagos Archipelago region": {
           "count": 1, 
           "sum": 10.0, 
           "average": 10.0
         }, 
-        " Texas": {
-          "count": 1, 
-          "sum": 2.22, 
-          "average": 2.22
+        "Guatemala": {
+          "count": 6, 
+          "sum": 468.21999999999997, 
+          "average": 78.03666666666666
         }, 
-        " California": {
-          "count": 1577, 
-          "sum": 7018.989999999997, 
-          "average": 4.450849714648066
+        "West Virginia": {
+          "count": 1, 
+          "sum": 3.97, 
+          "average": 3.97
+        }, 
+        "Oklahoma": {
+          "count": 65, 
+          "sum": 374.362, 
+          "average": 5.759415384615385
+        }, 
+        "Alaska": {
+          "count": 2148, 
+          "sum": 77928.49000000002, 
+          "average": 36.27955772811918
+        }, 
+        "Christmas Island": {
+          "count": 1, 
+          "sum": 10.0, 
+          "average": 10.0
+        }, 
+        "Greenland Sea": {
+          "count": 1, 
+          "sum": 10.0, 
+          "average": 10.0
+        }, 
+        "Missouri": {
+          "count": 12, 
+          "sum": 89.44, 
+          "average": 7.453333333333333
+        }, 
+        "New Zealand": {
+          "count": 13, 
+          "sum": 622.53, 
+          "average": 47.886923076923075
+        }, 
+        "Pakistan": {
+          "count": 1, 
+          "sum": 10.0, 
+          "average": 10.0
+        }, 
+        "Ascension Island region": {
+          "count": 1, 
+          "sum": 10.0, 
+          "average": 10.0
+        }, 
+        "New Jersey": {
+          "count": 3, 
+          "sum": 11.940000000000001, 
+          "average": 3.9800000000000004
+        }, 
+        "Washington": {
+          "count": 171, 
+          "sum": 1393.9800000000005, 
+          "average": 8.151929824561403
+        }, 
+        "Azerbaijan": {
+          "count": 1, 
+          "sum": 16.0, 
+          "average": 16.0
+        }, 
+        "Off the coast of Oregon": {
+          "count": 2, 
+          "sum": 20.0, 
+          "average": 10.0
+        }, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 661.6500000000001, 
+          "average": 55.137499999999996
+        }, 
+        "Turkey": {
+          "count": 2, 
+          "sum": 21.880000000000003, 
+          "average": 10.940000000000001
+        }, 
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 1378.89, 
+          "average": 137.889
+        }, 
+        "Kiribati region": {
+          "count": 1, 
+          "sum": 10.0, 
+          "average": 10.0
+        }, 
+        "South of Panama": {
+          "count": 1, 
+          "sum": 4.34, 
+          "average": 4.34
+        }, 
+        "South of the Fiji Islands": {
+          "count": 1, 
+          "sum": 163.57, 
+          "average": 163.57
+        }, 
+        "Peru": {
+          "count": 13, 
+          "sum": 819.07, 
+          "average": 63.00538461538462
+        }, 
+        "Arizona": {
+          "count": 3, 
+          "sum": 22.91, 
+          "average": 7.636666666666667
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": 459.98, 
+          "average": 5.678765432098766
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": 503.0300000000001, 
+          "average": 5.239895833333333
+        }, 
+        "China": {
+          "count": 7, 
+          "sum": 174.65, 
+          "average": 24.95
+        }, 
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": 2327.91, 
+          "average": 75.09387096774194
+        }, 
+        "Ukraine": {
+          "count": 1, 
+          "sum": 10.0, 
+          "average": 10.0
+        }, 
+        "India": {
+          "count": 2, 
+          "sum": 86.87, 
+          "average": 43.435
+        }, 
+        "Tonga": {
+          "count": 12, 
+          "sum": 660.62, 
+          "average": 55.05166666666667
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": 3934.31, 
+          "average": 78.6862
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": 3604.0, 
+          "average": 36.775510204081634
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
+          "count": 1, 
+          "sum": 10.0, 
+          "average": 10.0
+        }, 
+        "Ohio": {
+          "count": 1, 
+          "sum": 1.0, 
+          "average": 1.0
+        }, 
+        "Panama": {
+          "count": 3, 
+          "sum": 67.8, 
+          "average": 22.599999999999998
+        }, 
+        "Russia": {
+          "count": 1, 
+          "sum": 50.37, 
+          "average": 50.37
+        }, 
+        "Portugal": {
+          "count": 3, 
+          "sum": 39.66, 
+          "average": 13.219999999999999
+        }, 
+        "Nicaragua": {
+          "count": 4, 
+          "sum": 245.05, 
+          "average": 61.2625
+        }, 
+        "North Carolina": {
+          "count": 1, 
+          "sum": 0.62, 
+          "average": 0.62
+        }, 
+        "Northern California": {
+          "count": 3, 
+          "sum": 8.469999999999999, 
+          "average": 2.8233333333333337
+        }, 
+        "Japan": {
+          "count": 9, 
+          "sum": 421.35, 
+          "average": 46.81666666666666
+        }, 
+        "Northwest of Australia": {
+          "count": 1, 
+          "sum": 10.0, 
+          "average": 10.0
+        }, 
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": 1687.0, 
+          "average": 44.39473684210526
+        }, 
+        "Virgin Islands region": {
+          "count": 1, 
+          "sum": 11.0, 
+          "average": 11.0
+        }, 
+        "Costa Rica": {
+          "count": 4, 
+          "sum": 78.84, 
+          "average": 19.71
+        }, 
+        "Arkansas": {
+          "count": 3, 
+          "sum": 20.9, 
+          "average": 6.966666666666666
+        }, 
+        "Italy": {
+          "count": 12, 
+          "sum": 113.11, 
+          "average": 9.425833333333333
+        }, 
+        "Ecuador": {
+          "count": 2, 
+          "sum": 52.709999999999994, 
+          "average": 26.354999999999997
+        }, 
+        "Australia": {
+          "count": 1, 
+          "sum": 10.0, 
+          "average": 10.0
+        }, 
+        "Iran": {
+          "count": 3, 
+          "sum": 56.96, 
+          "average": 18.986666666666668
+        }, 
+        "El Salvador": {
+          "count": 2, 
+          "sum": 187.91, 
+          "average": 93.955
+        }, 
+        "California": {
+          "count": 3607, 
+          "sum": 22183.38999999995, 
+          "average": 6.150094261158857
+        }, 
+        "Chile": {
+          "count": 31, 
+          "sum": 1969.6299999999999, 
+          "average": 63.53645161290323
+        }, 
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": 4344.0, 
+          "average": 27.846153846153847
+        }, 
+        "Georgia": {
+          "count": 1, 
+          "sum": 10.0, 
+          "average": 10.0
+        }, 
+        "Pennsylvania": {
+          "count": 1, 
+          "sum": 7.82, 
+          "average": 7.82
+        }, 
+        "Poland": {
+          "count": 1, 
+          "sum": 13.53, 
+          "average": 13.53
+        }, 
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": 10.0, 
+          "average": 10.0
+        }, 
+        "Colorado": {
+          "count": 8, 
+          "sum": 34.93, 
+          "average": 4.36625
+        }, 
+        "Uzbekistan": {
+          "count": 1, 
+          "sum": 16.23, 
+          "average": 16.23
+        }, 
+        "New York": {
+          "count": 1, 
+          "sum": 5.0, 
+          "average": 5.0
+        }, 
+        "Colombia": {
+          "count": 2, 
+          "sum": 187.26, 
+          "average": 93.63
+        }, 
+        "Taiwan": {
+          "count": 1, 
+          "sum": 10.0, 
+          "average": 10.0
+        }, 
+        "Nevada": {
+          "count": 712, 
+          "sum": 6138.410000000006, 
+          "average": 8.621362359550561
+        }, 
+        "Cyprus": {
+          "count": 1, 
+          "sum": 41.83, 
+          "average": 41.83
+        }, 
+        "Palau": {
+          "count": 1, 
+          "sum": 12.08, 
+          "average": 12.08
+        }, 
+        "Anguilla": {
+          "count": 1, 
+          "sum": 7.0, 
+          "average": 7.0
+        }, 
+        "Venezuela": {
+          "count": 2, 
+          "sum": 104.03, 
+          "average": 52.015
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": 116.08, 
+          "average": 6.448888888888889
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": 394.07, 
+          "average": 7.036964285714285
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": 17.17, 
+          "average": 17.17
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": 4.83, 
+          "average": 4.83
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": 39.07, 
+          "average": 39.07
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 820.37, 
+          "average": 82.037
+        }, 
+        "Kyrgyzstan": {
+          "count": 9, 
+          "sum": 250.85999999999999, 
+          "average": 27.87333333333333
+        }, 
+        "Hawaii": {
+          "count": 225, 
+          "sum": 3006.9720000000016, 
+          "average": 13.364320000000001
+        }, 
+        "Syria": {
+          "count": 1, 
+          "sum": 27.88, 
+          "average": 27.88
+        }, 
+        "Burma": {
+          "count": 2, 
+          "sum": 225.84, 
+          "average": 112.92
+        }, 
+        "Mexico": {
+          "count": 42, 
+          "sum": 840.59, 
+          "average": 20.01404761904762
+        }, 
+        "Tennessee": {
+          "count": 20, 
+          "sum": 234.65000000000003, 
+          "average": 11.7325
+        }, 
+        "Greece": {
+          "count": 2, 
+          "sum": 20.79, 
+          "average": 10.395
         }
       }, 
       "earthquakes.[0].location.longitude": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": -9179.750899999995, 
-          "average": -97.6569244680851
+        "Canada": {
+          "count": 57, 
+          "sum": -7175.262899900002, 
+          "average": -125.8818052614035
         }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 289.0719, 
-          "average": 57.81438000000001
-        }, 
-        " Algeria": {
-          "count": 4, 
-          "sum": 13.8761, 
-          "average": 3.4690250000000002
-        }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": -2349.8084999999996, 
-          "average": -97.9086875
-        }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": -296.8804, 
-          "average": -74.2201
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": -680.0471332999999, 
-          "average": -113.34118888333334
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": -6842.538366699999, 
-          "average": -112.17276010983606
-        }, 
-        " Cyprus": {
-          "count": 2, 
-          "sum": 63.103, 
-          "average": 31.5515
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": -17917.4094339, 
-          "average": -121.06357725608109
-        }, 
-        " Wallis and Futuna": {
+        "East Timor": {
           "count": 1, 
-          "sum": -177.2785, 
-          "average": -177.2785
+          "sum": 127.6288, 
+          "average": 127.6288
         }, 
-        " Guatemala": {
-          "count": 8, 
-          "sum": -733.4188, 
-          "average": -91.67735
+        "Wyoming": {
+          "count": 37, 
+          "sum": -4094.2868332999997, 
+          "average": -110.65640090000001
         }, 
-        " New York": {
+        "Illinois": {
           "count": 3, 
-          "sum": -225.02483339999998, 
-          "average": -75.0082778
+          "sum": -264.4356667, 
+          "average": -88.14522223333334
         }, 
-        "Owen Fracture Zone region": {
-          "count": 1, 
-          "sum": 58.0131, 
-          "average": 58.0131
-        }, 
-        " Connecticut": {
-          "count": 1, 
-          "sum": -73.5941, 
-          "average": -73.5941
-        }, 
-        " Massachusetts": {
-          "count": 1, 
-          "sum": -70.0221, 
-          "average": -70.0221
-        }, 
-        " China": {
-          "count": 7, 
-          "sum": 624.1795, 
-          "average": 89.1685
-        }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": -4938.859599999999, 
-          "average": -64.9849947368421
-        }, 
-        " Montana": {
-          "count": 213, 
-          "sum": -23939.459166599987, 
-          "average": -112.39182707323944
-        }, 
-        " Kazakhstan": {
-          "count": 1, 
-          "sum": 68.1214, 
-          "average": 68.1214
-        }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": -32019.61551579998, 
-          "average": -155.43502677572815
-        }, 
-        " Tonga": {
+        "Argentina": {
           "count": 8, 
-          "sum": -1390.4873, 
-          "average": -173.8109125
+          "sum": -537.832, 
+          "average": -67.229
         }, 
-        " Kyrgyzstan": {
-          "count": 1, 
-          "sum": 72.3918, 
-          "average": 72.3918
-        }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": -1812.9076000000002, 
-          "average": -100.7170888888889
-        }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": 700.2787999999999, 
-          "average": 100.03982857142857
-        }, 
-        " MX": {
-          "count": 22, 
-          "sum": -2538.0831684, 
-          "average": -115.36741674545455
-        }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": -365553.7003000003, 
-          "average": -152.44107602168475
-        }, 
-        " Macedonia": {
+        "Bolivia": {
           "count": 3, 
-          "sum": 63.0135, 
-          "average": 21.0045
+          "sum": -201.4092, 
+          "average": -67.1364
         }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": -1374.7646, 
-          "average": -68.73823
+        "North of Svalbard": {
+          "count": 1, 
+          "sum": -1.7562, 
+          "average": -1.7562
         }, 
-        " Costa Rica": {
-          "count": 2, 
-          "sum": -167.2804, 
-          "average": -83.6402
+        "Texas": {
+          "count": 1, 
+          "sum": -100.7741, 
+          "average": -100.7741
+        }, 
+        "Kansas": {
+          "count": 21, 
+          "sum": -2051.9206001999996, 
+          "average": -97.71050477142857
         }, 
         "Chagos Archipelago region": {
           "count": 1, 
-          "sum": 69.1562, 
-          "average": 69.1562
+          "sum": 68.4318, 
+          "average": 68.4318
         }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": -3296.1931666, 
-          "average": -113.66183333103449
+        "Guatemala": {
+          "count": 6, 
+          "sum": -549.0475, 
+          "average": -91.50791666666667
         }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": -209.64409999999998, 
-          "average": -104.82204999999999
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": -9171.998900000002, 
-          "average": -64.59154154929578
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": -1254.5513334, 
-          "average": -89.61080952857142
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": -165.28820000000002, 
-          "average": -82.64410000000001
-        }, 
-        " Yemen": {
+        "West Virginia": {
           "count": 1, 
-          "sum": 45.3292, 
-          "average": 45.3292
+          "sum": -82.1288333, 
+          "average": -82.1288333
         }, 
-        " Guadeloupe": {
+        "Oklahoma": {
+          "count": 65, 
+          "sum": -6353.419400000002, 
+          "average": -97.74491384615385
+        }, 
+        "Alaska": {
+          "count": 2148, 
+          "sum": -327438.9825999998, 
+          "average": -152.4390049348231
+        }, 
+        "Christmas Island": {
           "count": 1, 
-          "sum": -60.9641, 
-          "average": -60.9641
+          "sum": 107.0091, 
+          "average": 107.0091
         }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": -868.8773, 
-          "average": -86.88773
-        }, 
-        " Bulgaria": {
+        "Greenland Sea": {
           "count": 1, 
-          "sum": 23.2547, 
-          "average": 23.2547
+          "sum": 6.3606, 
+          "average": 6.3606
         }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": -2916.488833400001, 
-          "average": -88.3784494969697
+        "Missouri": {
+          "count": 12, 
+          "sum": -1075.4909999, 
+          "average": -89.62424999166666
         }, 
-        " Greenland": {
+        "New Zealand": {
+          "count": 13, 
+          "sum": -2300.8885, 
+          "average": -176.99142307692307
+        }, 
+        "Pakistan": {
           "count": 1, 
-          "sum": -2.7617, 
-          "average": -2.7617
+          "sum": 66.435, 
+          "average": 66.435
         }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 188.4971, 
-          "average": 94.24855
-        }, 
-        " Honduras": {
+        "Ascension Island region": {
           "count": 1, 
-          "sum": -87.1977, 
-          "average": -87.1977
+          "sum": -12.975, 
+          "average": -12.975
         }, 
-        " French Polynesia region": {
-          "count": 1, 
-          "sum": -142.4152, 
-          "average": -142.4152
-        }, 
-        " Canada": {
-          "count": 50, 
-          "sum": -6246.112699900003, 
-          "average": -124.922253998
-        }, 
-        " Albania": {
-          "count": 1, 
-          "sum": 19.7003, 
-          "average": 19.7003
-        }, 
-        " Azerbaijan": {
-          "count": 1, 
-          "sum": 49.4097, 
-          "average": 49.4097
-        }, 
-        " Washington": {
-          "count": 242, 
-          "sum": -29435.465333600016, 
-          "average": -121.63415427107438
-        }, 
-        " El Salvador": {
-          "count": 9, 
-          "sum": -801.9427000000001, 
-          "average": -89.10474444444445
-        }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": -9935.607600000007, 
-          "average": -66.68193020134228
-        }, 
-        " Uzbekistan": {
-          "count": 1, 
-          "sum": 71.5497, 
-          "average": 71.5497
-        }, 
-        " Saint Eustatius and Saba ": {
-          "count": 1, 
-          "sum": -63.9748, 
-          "average": -63.9748
-        }, 
-        " Georgia": {
-          "count": 2, 
-          "sum": -170.9768333, 
-          "average": -85.48841665
-        }, 
-        " New Jersey": {
-          "count": 1, 
-          "sum": -74.3525, 
-          "average": -74.3525
-        }, 
-        " Greece": {
-          "count": 9, 
-          "sum": 207.971, 
-          "average": 23.10788888888889
-        }, 
-        " New Hampshire": {
-          "count": 1, 
-          "sum": -71.7883, 
-          "average": -71.7883
-        }, 
-        " South Carolina": {
-          "count": 1, 
-          "sum": -80.1855, 
-          "average": -80.1855
-        }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": -80433.51779999999, 
-          "average": -117.59286228070175
-        }, 
-        " India": {
-          "count": 5, 
-          "sum": 435.6797, 
-          "average": 87.13593999999999
-        }, 
-        " Tajikistan": {
-          "count": 2, 
-          "sum": 144.33089999999999, 
-          "average": 72.16544999999999
-        }, 
-        " Maine": {
-          "count": 2, 
-          "sum": -137.9521, 
-          "average": -68.97605
-        }, 
-        " NV": {
-          "count": 2, 
-          "sum": -233.6071667, 
-          "average": -116.80358335
-        }, 
-        " Turkey": {
+        "New Jersey": {
           "count": 3, 
-          "sum": 96.6228, 
-          "average": 32.2076
+          "sum": -222.812, 
+          "average": -74.27066666666667
         }, 
-        " Serbia": {
+        "Washington": {
+          "count": 171, 
+          "sum": -20860.561999899997, 
+          "average": -121.99159064269007
+        }, 
+        "Azerbaijan": {
           "count": 1, 
-          "sum": 21.6365, 
-          "average": 21.6365
-        }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": -3980.9614999000005, 
-          "average": -110.58226388611111
-        }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 634.1279, 
-          "average": 70.45865555555555
-        }, 
-        " Italy": {
-          "count": 2, 
-          "sum": 27.6942, 
-          "average": 13.8471
-        }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 170.5084, 
-          "average": 85.2542
-        }, 
-        " CA": {
-          "count": 2419, 
-          "sum": -282362.55850279995, 
-          "average": -116.72697747118644
-        }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": -178.25400000000002, 
-          "average": -89.12700000000001
+          "sum": 47.976, 
+          "average": 47.976
         }, 
         "Off the coast of Oregon": {
+          "count": 2, 
+          "sum": -258.871, 
+          "average": -129.4355
+        }, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 865.8414, 
+          "average": 72.15345
+        }, 
+        "Turkey": {
+          "count": 2, 
+          "sum": 71.32900000000001, 
+          "average": 35.664500000000004
+        }, 
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 703.3675000000001, 
+          "average": 70.33675000000001
+        }, 
+        "Kiribati region": {
           "count": 1, 
-          "sum": -128.368, 
-          "average": -128.368
+          "sum": -169.447, 
+          "average": -169.447
         }, 
-        " Argentina": {
-          "count": 6, 
-          "sum": -400.7246, 
-          "average": -66.78743333333334
+        "South of Panama": {
+          "count": 1, 
+          "sum": -82.7098, 
+          "average": -82.7098
         }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": -559.7706, 
-          "average": -79.96722857142858
+        "South of the Fiji Islands": {
+          "count": 1, 
+          "sum": -177.3974, 
+          "average": -177.3974
         }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": -457.53149999999994, 
-          "average": -91.5063
-        }, 
-        " Peru": {
-          "count": 7, 
-          "sum": -518.9885999999999, 
-          "average": -74.14122857142857
-        }, 
-        " Chile": {
+        "Peru": {
           "count": 13, 
-          "sum": -899.0487, 
-          "average": -69.15759230769231
+          "sum": -981.763, 
+          "average": -75.52023076923078
         }, 
-        " Pennsylvania": {
+        "Arizona": {
+          "count": 3, 
+          "sum": -340.63056670000003, 
+          "average": -113.54352223333335
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": -9783.788933500002, 
+          "average": -120.78751769753086
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": -10767.8599998, 
+          "average": -112.16520833124999
+        }, 
+        "China": {
+          "count": 7, 
+          "sum": 642.6296, 
+          "average": 91.80422857142857
+        }, 
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": -2120.1845000000003, 
+          "average": -68.39304838709677
+        }, 
+        "Ukraine": {
           "count": 1, 
-          "sum": -76.6166667, 
-          "average": -76.6166667
+          "sum": 37.5175, 
+          "average": 37.5175
         }, 
-        " Anguilla": {
+        "India": {
+          "count": 2, 
+          "sum": 170.7047, 
+          "average": 85.35235
+        }, 
+        "Tonga": {
+          "count": 12, 
+          "sum": -2093.4966, 
+          "average": -174.45805
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": 5999.226500000002, 
+          "average": 119.98452999999999
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": -6327.983400000004, 
+          "average": -64.57125918367348
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
           "count": 1, 
-          "sum": -63.6318, 
-          "average": -63.6318
+          "sum": -12.5912, 
+          "average": -12.5912
         }, 
-        " Venezuela": {
+        "Ohio": {
           "count": 1, 
-          "sum": -70.7663, 
-          "average": -70.7663
+          "sum": -81.2456667, 
+          "average": -81.2456667
         }, 
-        " Texas": {
+        "Panama": {
+          "count": 3, 
+          "sum": -242.5421, 
+          "average": -80.84736666666667
+        }, 
+        "Russia": {
           "count": 1, 
-          "sum": -100.8648, 
-          "average": -100.8648
+          "sum": 85.5042, 
+          "average": 85.5042
         }, 
-        " California": {
-          "count": 1577, 
-          "sum": -191815.40390569993, 
-          "average": -121.63310330101457
+        "Portugal": {
+          "count": 3, 
+          "sum": -48.6004, 
+          "average": -16.200133333333333
+        }, 
+        "Nicaragua": {
+          "count": 4, 
+          "sum": -346.8818, 
+          "average": -86.72045
+        }, 
+        "North Carolina": {
+          "count": 1, 
+          "sum": -83.3211667, 
+          "average": -83.3211667
+        }, 
+        "Northern California": {
+          "count": 3, 
+          "sum": -368.4985047, 
+          "average": -122.83283490000001
+        }, 
+        "Japan": {
+          "count": 9, 
+          "sum": 1160.1791999999998, 
+          "average": 128.9088
+        }, 
+        "Northwest of Australia": {
+          "count": 1, 
+          "sum": 111.7783, 
+          "average": 111.7783
+        }, 
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": -2470.3512000000005, 
+          "average": -65.00924210526316
+        }, 
+        "Virgin Islands region": {
+          "count": 1, 
+          "sum": -64.657, 
+          "average": -64.657
+        }, 
+        "Costa Rica": {
+          "count": 4, 
+          "sum": -334.63649999999996, 
+          "average": -83.659125
+        }, 
+        "Arkansas": {
+          "count": 3, 
+          "sum": -273.2516667, 
+          "average": -91.08388889999999
+        }, 
+        "Italy": {
+          "count": 12, 
+          "sum": 151.87300000000002, 
+          "average": 12.656083333333335
+        }, 
+        "Ecuador": {
+          "count": 2, 
+          "sum": -158.565, 
+          "average": -79.2825
+        }, 
+        "Australia": {
+          "count": 1, 
+          "sum": 129.8064, 
+          "average": 129.8064
+        }, 
+        "Iran": {
+          "count": 3, 
+          "sum": 159.0442, 
+          "average": 53.01473333333333
+        }, 
+        "El Salvador": {
+          "count": 2, 
+          "sum": -178.7767, 
+          "average": -89.38835
+        }, 
+        "California": {
+          "count": 3607, 
+          "sum": -430058.9032437994, 
+          "average": -119.22897234372054
+        }, 
+        "Chile": {
+          "count": 31, 
+          "sum": -2184.7909999999997, 
+          "average": -70.47712903225808
+        }, 
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": -10395.823200000008, 
+          "average": -66.6398923076923
+        }, 
+        "Georgia": {
+          "count": 1, 
+          "sum": 40.8998, 
+          "average": 40.8998
+        }, 
+        "Pennsylvania": {
+          "count": 1, 
+          "sum": -77.196, 
+          "average": -77.196
+        }, 
+        "Poland": {
+          "count": 1, 
+          "sum": 16.184, 
+          "average": 16.184
+        }, 
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": 67.2808, 
+          "average": 67.2808
+        }, 
+        "Colorado": {
+          "count": 8, 
+          "sum": -836.1494, 
+          "average": -104.518675
+        }, 
+        "Uzbekistan": {
+          "count": 1, 
+          "sum": 67.5467, 
+          "average": 67.5467
+        }, 
+        "New York": {
+          "count": 1, 
+          "sum": -76.6178333, 
+          "average": -76.6178333
+        }, 
+        "Colombia": {
+          "count": 2, 
+          "sum": -149.21800000000002, 
+          "average": -74.60900000000001
+        }, 
+        "Taiwan": {
+          "count": 1, 
+          "sum": 120.9679, 
+          "average": 120.9679
+        }, 
+        "Nevada": {
+          "count": 712, 
+          "sum": -84108.93613339997, 
+          "average": -118.1305282772472
+        }, 
+        "Cyprus": {
+          "count": 1, 
+          "sum": 31.6188, 
+          "average": 31.6188
+        }, 
+        "Palau": {
+          "count": 1, 
+          "sum": 132.4888, 
+          "average": 132.4888
+        }, 
+        "Anguilla": {
+          "count": 1, 
+          "sum": -63.678, 
+          "average": -63.678
+        }, 
+        "Venezuela": {
+          "count": 2, 
+          "sum": -132.8653, 
+          "average": -66.43265
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": -2043.2956332999997, 
+          "average": -113.51642407222222
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": -6278.0084668, 
+          "average": -112.10729405
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": -83.0436667, 
+          "average": -83.0436667
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": -71.7396, 
+          "average": -71.7396
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": -60.4098, 
+          "average": -60.4098
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 1257.8325999999997, 
+          "average": 125.78326
+        }, 
+        "Kyrgyzstan": {
+          "count": 9, 
+          "sum": 660.0754, 
+          "average": 73.34171111111111
+        }, 
+        "Hawaii": {
+          "count": 225, 
+          "sum": -34966.09786429998, 
+          "average": -155.40487939688887
+        }, 
+        "Syria": {
+          "count": 1, 
+          "sum": 39.0889, 
+          "average": 39.0889
+        }, 
+        "Burma": {
+          "count": 2, 
+          "sum": 189.51280000000003, 
+          "average": 94.75640000000001
+        }, 
+        "Mexico": {
+          "count": 42, 
+          "sum": -4653.581766499999, 
+          "average": -110.79956586904763
+        }, 
+        "Tennessee": {
+          "count": 20, 
+          "sum": -1755.2599998, 
+          "average": -87.76299999
+        }, 
+        "Greece": {
+          "count": 2, 
+          "sum": 46.0807, 
+          "average": 23.04035
         }
       }, 
       "earthquakes.[0].time.year": {
-        " Oklahoma": {
-          "count": 94, 
-          "sum": 189504, 
+        "Canada": {
+          "count": 57, 
+          "sum": 114912, 
           "average": 2016.0
         }, 
-        " Iran": {
-          "count": 5, 
-          "sum": 10080, 
-          "average": 2016.0
-        }, 
-        " Algeria": {
-          "count": 4, 
-          "sum": 8064, 
-          "average": 2016.0
-        }, 
-        " Kansas": {
-          "count": 24, 
-          "sum": 48384, 
-          "average": 2016.0
-        }, 
-        " Colombia": {
-          "count": 4, 
-          "sum": 8064, 
-          "average": 2016.0
-        }, 
-        " Arizona": {
-          "count": 6, 
-          "sum": 12096, 
-          "average": 2016.0
-        }, 
-        " Utah": {
-          "count": 61, 
-          "sum": 122976, 
-          "average": 2016.0
-        }, 
-        " Cyprus": {
-          "count": 2, 
-          "sum": 4032, 
-          "average": 2016.0
-        }, 
-        " Oregon": {
-          "count": 148, 
-          "sum": 298368, 
-          "average": 2016.0
-        }, 
-        " Wallis and Futuna": {
+        "East Timor": {
           "count": 1, 
           "sum": 2016, 
           "average": 2016.0
         }, 
-        " Guatemala": {
-          "count": 8, 
-          "sum": 16128, 
+        "Wyoming": {
+          "count": 37, 
+          "sum": 74592, 
           "average": 2016.0
         }, 
-        " New York": {
+        "Illinois": {
           "count": 3, 
           "sum": 6048, 
           "average": 2016.0
         }, 
-        "Owen Fracture Zone region": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Connecticut": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Massachusetts": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " China": {
-          "count": 7, 
-          "sum": 14112, 
-          "average": 2016.0
-        }, 
-        " U.S. Virgin Islands": {
-          "count": 76, 
-          "sum": 153216, 
-          "average": 2016.0
-        }, 
-        " Montana": {
-          "count": 213, 
-          "sum": 429408, 
-          "average": 2016.0
-        }, 
-        " Kazakhstan": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Hawaii": {
-          "count": 206, 
-          "sum": 415296, 
-          "average": 2016.0
-        }, 
-        " Tonga": {
+        "Argentina": {
           "count": 8, 
           "sum": 16128, 
           "average": 2016.0
         }, 
-        " Kyrgyzstan": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Mexico": {
-          "count": 18, 
-          "sum": 36288, 
-          "average": 2016.0
-        }, 
-        " Indonesia": {
-          "count": 7, 
-          "sum": 14112, 
-          "average": 2016.0
-        }, 
-        " MX": {
-          "count": 22, 
-          "sum": 44352, 
-          "average": 2016.0
-        }, 
-        " Alaska": {
-          "count": 2398, 
-          "sum": 4834368, 
-          "average": 2016.0
-        }, 
-        " Macedonia": {
+        "Bolivia": {
           "count": 3, 
           "sum": 6048, 
           "average": 2016.0
         }, 
-        " Dominican Republic": {
-          "count": 20, 
-          "sum": 40320, 
+        "North of Svalbard": {
+          "count": 1, 
+          "sum": 2016, 
           "average": 2016.0
         }, 
-        " Costa Rica": {
-          "count": 2, 
-          "sum": 4032, 
+        "Texas": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Kansas": {
+          "count": 21, 
+          "sum": 42336, 
           "average": 2016.0
         }, 
         "Chagos Archipelago region": {
@@ -5048,347 +5488,501 @@ earthquakes_bar = [
           "sum": 2016, 
           "average": 2016.0
         }, 
-        " Idaho": {
-          "count": 29, 
-          "sum": 58464, 
-          "average": 2016.0
-        }, 
-        " New Mexico": {
-          "count": 2, 
-          "sum": 4032, 
-          "average": 2016.0
-        }, 
-        " British Virgin Islands": {
-          "count": 142, 
-          "sum": 286272, 
-          "average": 2016.0
-        }, 
-        " Missouri": {
-          "count": 14, 
-          "sum": 28224, 
-          "average": 2016.0
-        }, 
-        "South of Panama": {
-          "count": 2, 
-          "sum": 4032, 
-          "average": 2016.0
-        }, 
-        " Yemen": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Guadeloupe": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Nicaragua": {
-          "count": 10, 
-          "sum": 20160, 
-          "average": 2016.0
-        }, 
-        " Bulgaria": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Tennessee": {
-          "count": 33, 
-          "sum": 66528, 
-          "average": 2016.0
-        }, 
-        " Greenland": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Burma": {
-          "count": 2, 
-          "sum": 4032, 
-          "average": 2016.0
-        }, 
-        " Honduras": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " French Polynesia region": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Canada": {
-          "count": 50, 
-          "sum": 100800, 
-          "average": 2016.0
-        }, 
-        " Albania": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Azerbaijan": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Washington": {
-          "count": 242, 
-          "sum": 487872, 
-          "average": 2016.0
-        }, 
-        " El Salvador": {
-          "count": 9, 
-          "sum": 18144, 
-          "average": 2016.0
-        }, 
-        " Puerto Rico": {
-          "count": 149, 
-          "sum": 300384, 
-          "average": 2016.0
-        }, 
-        " Uzbekistan": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Saint Eustatius and Saba ": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Georgia": {
-          "count": 2, 
-          "sum": 4032, 
-          "average": 2016.0
-        }, 
-        " New Jersey": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Greece": {
-          "count": 9, 
-          "sum": 18144, 
-          "average": 2016.0
-        }, 
-        " New Hampshire": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " South Carolina": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Nevada": {
-          "count": 684, 
-          "sum": 1378944, 
-          "average": 2016.0
-        }, 
-        " India": {
-          "count": 5, 
-          "sum": 10080, 
-          "average": 2016.0
-        }, 
-        " Tajikistan": {
-          "count": 2, 
-          "sum": 4032, 
-          "average": 2016.0
-        }, 
-        " Maine": {
-          "count": 2, 
-          "sum": 4032, 
-          "average": 2016.0
-        }, 
-        " NV": {
-          "count": 2, 
-          "sum": 4032, 
-          "average": 2016.0
-        }, 
-        " Turkey": {
-          "count": 3, 
-          "sum": 6048, 
-          "average": 2016.0
-        }, 
-        " Serbia": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Wyoming": {
-          "count": 36, 
-          "sum": 72576, 
-          "average": 2016.0
-        }, 
-        " Afghanistan": {
-          "count": 9, 
-          "sum": 18144, 
-          "average": 2016.0
-        }, 
-        " Italy": {
-          "count": 2, 
-          "sum": 4032, 
-          "average": 2016.0
-        }, 
-        " Nepal": {
-          "count": 2, 
-          "sum": 4032, 
-          "average": 2016.0
-        }, 
-        " CA": {
-          "count": 2419, 
-          "sum": 4876704, 
-          "average": 2016.0
-        }, 
-        " Kentucky": {
-          "count": 2, 
-          "sum": 4032, 
-          "average": 2016.0
-        }, 
-        "Off the coast of Oregon": {
-          "count": 1, 
-          "sum": 2016, 
-          "average": 2016.0
-        }, 
-        " Argentina": {
+        "Guatemala": {
           "count": 6, 
           "sum": 12096, 
           "average": 2016.0
         }, 
-        " Ecuador": {
-          "count": 7, 
-          "sum": 14112, 
+        "West Virginia": {
+          "count": 1, 
+          "sum": 2016, 
           "average": 2016.0
         }, 
-        " Arkansas": {
-          "count": 5, 
-          "sum": 10080, 
+        "Oklahoma": {
+          "count": 65, 
+          "sum": 131040, 
           "average": 2016.0
         }, 
-        " Peru": {
-          "count": 7, 
-          "sum": 14112, 
+        "Alaska": {
+          "count": 2148, 
+          "sum": 4330368, 
           "average": 2016.0
         }, 
-        " Chile": {
+        "Christmas Island": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Greenland Sea": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Missouri": {
+          "count": 12, 
+          "sum": 24192, 
+          "average": 2016.0
+        }, 
+        "New Zealand": {
           "count": 13, 
           "sum": 26208, 
           "average": 2016.0
         }, 
-        " Pennsylvania": {
+        "Pakistan": {
           "count": 1, 
           "sum": 2016, 
           "average": 2016.0
         }, 
-        " Anguilla": {
+        "Ascension Island region": {
           "count": 1, 
           "sum": 2016, 
           "average": 2016.0
         }, 
-        " Venezuela": {
+        "New Jersey": {
+          "count": 3, 
+          "sum": 6048, 
+          "average": 2016.0
+        }, 
+        "Washington": {
+          "count": 171, 
+          "sum": 344736, 
+          "average": 2016.0
+        }, 
+        "Azerbaijan": {
           "count": 1, 
           "sum": 2016, 
           "average": 2016.0
         }, 
-        " Texas": {
+        "Off the coast of Oregon": {
+          "count": 2, 
+          "sum": 4032, 
+          "average": 2016.0
+        }, 
+        "Tajikistan": {
+          "count": 12, 
+          "sum": 24192, 
+          "average": 2016.0
+        }, 
+        "Turkey": {
+          "count": 2, 
+          "sum": 4032, 
+          "average": 2016.0
+        }, 
+        "Afghanistan": {
+          "count": 10, 
+          "sum": 20160, 
+          "average": 2016.0
+        }, 
+        "Kiribati region": {
           "count": 1, 
           "sum": 2016, 
           "average": 2016.0
         }, 
-        " California": {
-          "count": 1577, 
-          "sum": 3179232, 
+        "South of Panama": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "South of the Fiji Islands": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Peru": {
+          "count": 13, 
+          "sum": 26208, 
+          "average": 2016.0
+        }, 
+        "Arizona": {
+          "count": 3, 
+          "sum": 6048, 
+          "average": 2016.0
+        }, 
+        "Oregon": {
+          "count": 81, 
+          "sum": 163296, 
+          "average": 2016.0
+        }, 
+        "Montana": {
+          "count": 96, 
+          "sum": 193536, 
+          "average": 2016.0
+        }, 
+        "China": {
+          "count": 7, 
+          "sum": 14112, 
+          "average": 2016.0
+        }, 
+        "Dominican Republic": {
+          "count": 31, 
+          "sum": 62496, 
+          "average": 2016.0
+        }, 
+        "Ukraine": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "India": {
+          "count": 2, 
+          "sum": 4032, 
+          "average": 2016.0
+        }, 
+        "Tonga": {
+          "count": 12, 
+          "sum": 24192, 
+          "average": 2016.0
+        }, 
+        "Indonesia": {
+          "count": 50, 
+          "sum": 100800, 
+          "average": 2016.0
+        }, 
+        "British Virgin Islands": {
+          "count": 98, 
+          "sum": 197568, 
+          "average": 2016.0
+        }, 
+        "Azores-Cape St. Vincent Ridge": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Ohio": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Panama": {
+          "count": 3, 
+          "sum": 6048, 
+          "average": 2016.0
+        }, 
+        "Russia": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Portugal": {
+          "count": 3, 
+          "sum": 6048, 
+          "average": 2016.0
+        }, 
+        "Nicaragua": {
+          "count": 4, 
+          "sum": 8064, 
+          "average": 2016.0
+        }, 
+        "North Carolina": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Northern California": {
+          "count": 3, 
+          "sum": 6048, 
+          "average": 2016.0
+        }, 
+        "Japan": {
+          "count": 9, 
+          "sum": 18144, 
+          "average": 2016.0
+        }, 
+        "Northwest of Australia": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "U.S. Virgin Islands": {
+          "count": 38, 
+          "sum": 76608, 
+          "average": 2016.0
+        }, 
+        "Virgin Islands region": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Costa Rica": {
+          "count": 4, 
+          "sum": 8064, 
+          "average": 2016.0
+        }, 
+        "Arkansas": {
+          "count": 3, 
+          "sum": 6048, 
+          "average": 2016.0
+        }, 
+        "Italy": {
+          "count": 12, 
+          "sum": 24192, 
+          "average": 2016.0
+        }, 
+        "Ecuador": {
+          "count": 2, 
+          "sum": 4032, 
+          "average": 2016.0
+        }, 
+        "Australia": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Iran": {
+          "count": 3, 
+          "sum": 6048, 
+          "average": 2016.0
+        }, 
+        "El Salvador": {
+          "count": 2, 
+          "sum": 4032, 
+          "average": 2016.0
+        }, 
+        "California": {
+          "count": 3607, 
+          "sum": 7271712, 
+          "average": 2016.0
+        }, 
+        "Chile": {
+          "count": 31, 
+          "sum": 62496, 
+          "average": 2016.0
+        }, 
+        "Puerto Rico": {
+          "count": 156, 
+          "sum": 314496, 
+          "average": 2016.0
+        }, 
+        "Georgia": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Pennsylvania": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Poland": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Mid-Indian Ridge": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Colorado": {
+          "count": 8, 
+          "sum": 16128, 
+          "average": 2016.0
+        }, 
+        "Uzbekistan": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "New York": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Colombia": {
+          "count": 2, 
+          "sum": 4032, 
+          "average": 2016.0
+        }, 
+        "Taiwan": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Nevada": {
+          "count": 712, 
+          "sum": 1435392, 
+          "average": 2016.0
+        }, 
+        "Cyprus": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Palau": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Anguilla": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Venezuela": {
+          "count": 2, 
+          "sum": 4032, 
+          "average": 2016.0
+        }, 
+        "Idaho": {
+          "count": 18, 
+          "sum": 36288, 
+          "average": 2016.0
+        }, 
+        "Utah": {
+          "count": 56, 
+          "sum": 112896, 
+          "average": 2016.0
+        }, 
+        "Virginia": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "New Hampshire": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Martinique": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Philippines": {
+          "count": 10, 
+          "sum": 20160, 
+          "average": 2016.0
+        }, 
+        "Kyrgyzstan": {
+          "count": 9, 
+          "sum": 18144, 
+          "average": 2016.0
+        }, 
+        "Hawaii": {
+          "count": 225, 
+          "sum": 453600, 
+          "average": 2016.0
+        }, 
+        "Syria": {
+          "count": 1, 
+          "sum": 2016, 
+          "average": 2016.0
+        }, 
+        "Burma": {
+          "count": 2, 
+          "sum": 4032, 
+          "average": 2016.0
+        }, 
+        "Mexico": {
+          "count": 42, 
+          "sum": 84672, 
+          "average": 2016.0
+        }, 
+        "Tennessee": {
+          "count": 20, 
+          "sum": 40320, 
+          "average": 2016.0
+        }, 
+        "Greece": {
+          "count": 2, 
+          "sum": 4032, 
           "average": 2016.0
         }
       }
     }, 
-    "name": "earthquakes.[0].location.state", 
-    "pretty": "Location: State", 
+    "name": "earthquakes.[0].location.name", 
+    "pretty": "Location: Name", 
     "indexes": [
-      " Connecticut", 
-      " CA", 
-      " Iran", 
-      " Alaska", 
-      " Kansas", 
-      " New Hampshire", 
-      " Arizona", 
-      " Utah", 
-      " Oregon", 
-      " Algeria", 
-      " Guatemala", 
-      " New York", 
-      " Costa Rica", 
-      " California", 
-      " Massachusetts", 
-      " China", 
-      " U.S. Virgin Islands", 
-      " Montana", 
-      " Kazakhstan", 
-      " Tonga", 
-      " Kyrgyzstan", 
-      " Tajikistan", 
-      " French Polynesia region", 
-      " Indonesia", 
-      " MX", 
-      " Hawaii", 
-      " Macedonia", 
-      "South of Panama", 
-      " Kentucky", 
+      "Canada", 
+      "East Timor", 
+      "Wyoming", 
+      "Illinois", 
+      "Argentina", 
+      "Bolivia", 
+      "North of Svalbard", 
+      "Texas", 
+      "Northwest of Australia", 
       "Chagos Archipelago region", 
-      " El Salvador", 
-      " New Mexico", 
-      " British Virgin Islands", 
-      " Missouri", 
-      " New Jersey", 
-      " Yemen", 
-      " Guadeloupe", 
-      " NV", 
-      " Turkey", 
-      " Bulgaria", 
-      " Greenland", 
-      "Owen Fracture Zone region", 
-      " Burma", 
-      " Honduras", 
-      " Mexico", 
-      " Canada", 
-      " Azerbaijan", 
-      " Peru", 
-      " Albania", 
-      " Washington", 
-      " India", 
-      " Puerto Rico", 
-      " Uzbekistan", 
-      " Saint Eustatius and Saba ", 
-      " Georgia", 
-      " Greece", 
-      " Colombia", 
-      " South Carolina", 
-      " Nevada", 
-      " Dominican Republic", 
-      " Cyprus", 
-      " Maine", 
-      " Nicaragua", 
-      " Tennessee", 
-      " Serbia", 
-      " Wyoming", 
-      " Afghanistan", 
-      " Italy", 
-      " Nepal", 
-      " Oklahoma", 
-      " Anguilla", 
+      "Guatemala", 
+      "West Virginia", 
+      "Panama", 
+      "Alaska", 
+      "Christmas Island", 
+      "Greenland Sea", 
+      "Missouri", 
+      "New Zealand", 
+      "Pakistan", 
+      "Ascension Island region", 
+      "New Jersey", 
+      "Virgin Islands region", 
+      "India", 
+      "Azerbaijan", 
       "Off the coast of Oregon", 
-      " Texas", 
-      " Ecuador", 
-      " Arkansas", 
-      " Pennsylvania", 
-      " Argentina", 
-      " Wallis and Futuna", 
-      " Venezuela", 
-      " Idaho", 
-      " Chile"
+      "Tajikistan", 
+      "Turkey", 
+      "Afghanistan", 
+      "Kiribati region", 
+      "South of Panama", 
+      "South of the Fiji Islands", 
+      "Peru", 
+      "Arizona", 
+      "Oregon", 
+      "Montana", 
+      "China", 
+      "Dominican Republic", 
+      "Ukraine", 
+      "Tonga", 
+      "Indonesia", 
+      "Washington", 
+      "British Virgin Islands", 
+      "Azores-Cape St. Vincent Ridge", 
+      "Ohio", 
+      "Russia", 
+      "Portugal", 
+      "Cyprus", 
+      "North Carolina", 
+      "Northern California", 
+      "Japan", 
+      "Kansas", 
+      "U.S. Virgin Islands", 
+      "Oklahoma", 
+      "Costa Rica", 
+      "Arkansas", 
+      "Palau", 
+      "Ecuador", 
+      "Australia", 
+      "Iran", 
+      "El Salvador", 
+      "California", 
+      "Chile", 
+      "Puerto Rico", 
+      "Georgia", 
+      "Pennsylvania", 
+      "Philippines", 
+      "Mid-Indian Ridge", 
+      "Colorado", 
+      "Uzbekistan", 
+      "New York", 
+      "Colombia", 
+      "Taiwan", 
+      "Nevada", 
+      "Nicaragua", 
+      "Italy", 
+      "Anguilla", 
+      "Venezuela", 
+      "Idaho", 
+      "Utah", 
+      "Virginia", 
+      "New Hampshire", 
+      "Martinique", 
+      "Poland", 
+      "Kyrgyzstan", 
+      "Hawaii", 
+      "Syria", 
+      "Burma", 
+      "Mexico", 
+      "Tennessee", 
+      "Greece"
     ]
   }
 ]

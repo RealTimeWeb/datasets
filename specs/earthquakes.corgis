@@ -8,7 +8,7 @@ metadata:
     description:
         short: Records from different earthquake occurences across the world.
         overview: >
-            Earthquake records from around the world collected from the United States Geological Survey.  Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake.  Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included.
+            Earthquake records from around the world collected from the United States Geological Survey.  Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake.  Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included. The earthquakes collected are from the past month.
 
         citation: http://earthquake.usgs.gov/earthquakes/
 local:
@@ -16,8 +16,8 @@ local:
     name: earthquakes
     row: earthquake
     indexes:
-      - name: state
-        jsonpath: earthquakes.[0].location.state
+      - name: location
+        jsonpath: earthquakes.[0].location.name
 interfaces:
   - name: get earthquakes
     description: Returns earthquakes from the dataset.
@@ -31,7 +31,7 @@ structures:
     "earthquakes.[0].impact.significance": A number describing how significant the event is. Larger numbers indicate a more significant event. This value is determined on a number of factors, including magnitude, maximum MMI, felt reports, and estimated impact. Ranges from 0 to 1000.
     "earthquakes.[0].id": A unique name for this earthquake.
     "earthquakes.[0].time.epoch": A number that represents the time that this earthquake occurred. Epoch's are the number of seconds since a particular date (January 1st, 1970), and are a convenient way to store date/times.
-    "earthquakes.[0].location.state": A best guess for the name of the state (or country, in some cases) that this earthquake was reported in.
+    "earthquakes.[0].location.name": A best guess for the name of the state (or country, in some cases) that this earthquake was reported in.
     "earthquakes.[0].location.distance": The rough distance that this earthquake occurred away from the reporting station, measured in degrees between. 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake. In general, this number is between 0.4-7.1.
     "earthquakes.[0].location.latitude": Decimal degrees latitude (up and down on the globe). Negative values for southern latitudes. Ranges from -90 to 90.
     "earthquakes.[0].location.longitude": Decimal degrees longitude (east and west on the globe). Negative values for western latitudes. Ranges from -180 to 180.
