@@ -91,6 +91,15 @@ State Demographics Visualizer (CORGIS Datasets Project)
         height: 100%;
         position: absolute;
     }
+    
+    #download-image:focus, #download-image:hover {
+        text-decoration: none;
+    }
+    
+    #download-image:focus img, #download-image:hover img {
+        border: 1px solid lightblue;
+        opacity: .75;
+    }
 
     </style>
     
@@ -103,6 +112,13 @@ State Demographics Visualizer (CORGIS Datasets Project)
     <script>
     
 var doctype = '<?xml version="1.0" standalone="no"?>' + '<' + '!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">';
+
+// Generates a URL-friendly "slug" from a provided string.
+// For example: "This Is Great!!!" transforms into "this-is-great"
+// https://gist.github.com/bentruyman/1211400
+function generateSafeFilename(value) {
+  return value.toLowerCase().replace(/[^a-z0-9-]/g, '').replace(/\s+/g, '_').slice(0, 40);
+};
 
 function captureImage() {
     var selector = d3.select("#data-visualization-"+mainModel.selected.chart().id+" svg");
@@ -117,27 +133,34 @@ function captureImage() {
         .attr('width', svg_object.attr('width'))
         .attr('height', svg_object.attr('height'))
         .node();
-    $('#capture-dialog .modal-dialog')
+    /*$('#capture-dialog .modal-body')
         .width(30+parseInt(svg_object.attr('width')))
-        .height(100+parseInt(svg_object.attr('height')));
+        .height(100+parseInt(svg_object.attr('height')));*/
+    $('#capture-dialog .modal-body').height(100+parseInt(svg_object.attr('height')));
+    $('#capture-dialog .modal-dialog').width(30+parseInt(svg_object.attr('width')))
     img.onload = function(){
         // Now that the image has loaded, put the image into a canvas element.
-        var canvas = d3.select('body').append('canvas').node();
-        canvas.hide();
+        var canvas = document.createElement('canvas');
         canvas.width = svg_object.attr('width');
         canvas.height = svg_object.attr('height');
         var ctx = canvas.getContext('2d');
         ctx.drawImage(img, 0, 0);
         var canvasUrl = canvas.toDataURL("image/png");
+        img.onload = null;
+        img.setAttribute('src', canvasUrl);
+        $("#download-image")
+            .attr("href", canvasUrl)
+            .attr("download", generateSafeFilename(mainModel.settings.title())+".png");
+        /*
         var img2 = d3.select('#capture-dialog .modal-body img')
             .attr('width', svg_object.attr('width'))
             .attr('height', svg_object.attr('height'))
             .node();
-        img2.onload = function() {};
         // this is now the base64 encoded version of our PNG! you could optionally 
         // redirect the user to download the PNG by sending them to the url with 
-        // `window.location.href= canvasUrl`.
+        // ``.
         img2.src = canvasUrl;
+        */
     }
     // start loading the image.
     img.src = url;
@@ -758,11 +781,17 @@ $(document).ready(function () {
 
 <div class="page-header">
     
+    <img class="img-rounded pull-right" src="state_demographics.png" alt="State Demographics" style="max-width: 128px; max-height: 128px;">
+    
     <h1>Visualize State Demographics</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
     <span class="text-muted">By Ryan Whitcomb</span><br>
     <span class="text-muted">Version 1, created 6/1/2016</span><br>
     <span class="text-muted">Tags: demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, states</span><br>
+</div>
+
+<div class='row hide-on-load'>
+    Please be patient while the page loads! This can take a little the first time.
 </div>
 
 <div class='modal fade' id="capture-dialog" style='display:none'>
@@ -773,7 +802,10 @@ $(document).ready(function () {
                 <h4 class='modal-title'>Capture Dialog</h4>
             </div>
             <div class='modal-body' style='width:100%; height:400px; white-space:pre-wrap'>
+            Click the image below in order to save it.
+            <a id="download-image" href="" download="">
             <img />
+            </a>
             </div>
             <!--<div class='modal-footer'>
                 <button type='button' class='btn btn-white' data-dismiss='modal'>Close</button>
@@ -928,7 +960,7 @@ $(document).ready(function () {
 <hr>
 <span data-bind=""></span>
 
-<div class='row' style='height: 400px'>
+<div class='row' style='height: 400px' id='graph-area'>
     <div id="data-visualization-line" class='data-viz col-md-4'
          data-bind="fadeVisible: selected.chart().id == 'line'"></div>
     <div id="data-visualization-xy" class='data-viz col-md-4'
@@ -941,17 +973,7 @@ $(document).ready(function () {
          data-bind="fadeVisible: selected.chart().id == 'bar'"></div>
 </div>
 
-<div class='row'>
-    <h3 id="overview">Questions</h3>
-    
-    <p>
-    The following are research questions to explore about this dataset.
-    </p>
-    
-    <ol>
-    
-    </ol>
-</div>
+
 
 </div>
 
