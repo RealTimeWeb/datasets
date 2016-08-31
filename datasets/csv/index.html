@@ -36,20 +36,6 @@
 
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -74,22 +60,6 @@
 <body>
 
 <script>
-var user_id = "";
-if (localStorage.getItem('user_id') !== null) {
-    user_id = localStorage.getItem('user_id');
-}
-function log(action, body) {
-    try {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    } catch(err) {console.error(err)};
-}
 
 var searcher = lunr(function() {
     this.field('name', 10);
@@ -363,6 +333,33 @@ $(document).ready(function() {
     );
     </script>
     
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+      
+      <div class="media-left  media-middle">
+        <a href="broadway/broadway.html">
+          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="broadway/broadway.html">
+        <h4 class="media-heading">Broadway</h4>
+        </a>
+        This library holds data about Broadway shows, such as tickets sold.<br>
+        <i>broadway, musical, theatre, tickets</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "broadway",
+            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
+            'description': "This library holds data about Broadway shows, such as tickets sold.",
+            'tags': ["broadway", "musical", "theatre", "tickets"]
+        }
+    );
+    </script>
+    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="billionaires">
       
       <div class="media-left  media-middle">
@@ -411,7 +408,7 @@ $(document).ready(function() {
     searcher.add(
         {
             'name': "earthquakes",
-            'body': "Earthquake records from around the world collected from the United States Geological Survey. Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake. Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included.",
+            'body': "Earthquake records from around the world collected from the United States Geological Survey. Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake. Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included. The earthquakes collected are from the past month.",
             'description': "Records from different earthquake occurences across the world.",
             'tags': ["earthquakes", "nature", "disaster", "magnitude", "richter scale", "latitude", "longitude"]
         }
@@ -500,33 +497,6 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="state_demographics">
-      
-      <div class="media-left  media-middle">
-        <a href="state_demographics/state_demographics.html">
-          <img class="media-object" src="state_demographics/state_demographics.png" alt="State Demographics" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a href="state_demographics/state_demographics.html">
-        <h4 class="media-heading">State Demographics</h4>
-        </a>
-        Demographic information for the states in the United States.<br>
-        <i>demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, states</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "state_demographics",
-            'body': "The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.",
-            'description': "Demographic information for the states in the United States.",
-            'tags': ["demographics", "population", "age", "ethnicity", "race", "language", "education", "foreign", "households", "income", "employment", "unemployment", "sales", "land area", "states"]
-        }
-    );
-    </script>
-    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="drugs">
       
       <div class="media-left  media-middle">
@@ -566,8 +536,7 @@ $(document).ready(function() {
         <a href="cars/cars.html">
         <h4 class="media-heading">Cars</h4>
         </a>
-        This is a dataset about cars and how much fuel they use.
-<br>
+        <br>
         <i>cars, vehicles, fuel</i>
       </div>
     </div>
@@ -576,7 +545,7 @@ $(document).ready(function() {
         {
             'name': "cars",
             'body': "This is a dataset about cars and how much fuel they use.",
-            'description': "This is a dataset about cars and how much fuel they use.",
+            'description': "",
             'tags': ["cars", "vehicles", "fuel"]
         }
     );
@@ -594,8 +563,7 @@ $(document).ready(function() {
         <a href="horse_racing/horse_racing.html">
         <h4 class="media-heading">Horse Racing</h4>
         </a>
-        Data about horse races at Churchill Downs
-<br>
+        <br>
         <i>churchill downs, horses, equines, racing, horse racing, gambling</i>
       </div>
     </div>
@@ -604,7 +572,7 @@ $(document).ready(function() {
         {
             'name': "horse_racing",
             'body': "Data about horse races at Churchill Downs",
-            'description': "Data about horse races at Churchill Downs",
+            'description': "",
             'tags': ["churchill downs", "horses", "equines", "racing", "horse racing", "gambling"]
         }
     );
@@ -718,60 +686,6 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="suicide_attacks">
-      
-      <div class="media-left  media-middle">
-        <a href="suicide_attacks/suicide_attacks.html">
-          <img class="media-object" src="suicide_attacks/suicide_attacks.png" alt="Suicide Attacks" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a href="suicide_attacks/suicide_attacks.html">
-        <h4 class="media-heading">Suicide Attacks</h4>
-        </a>
-        This dataset has about suicide attacks all over the world for the past three decades.<br>
-        <i>global, attack, damage, kill, hurt, destroy, pain, suffering, terror, terrorism, religion, warfare, war, car, bomb, gun, shooting</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "suicide_attacks",
-            'body': "The Chicago Project on Security and Terrorism (CPOST) maintains a searchable database on all suicide attacks from 1982 through September 2015. The database includes information about the location of attacks, the target type, the weapon used, and systematic information on the demographic and general biographical characteristics of suicide attackers. The database expands the breadth of the data available in English using native language sources (e.g., Arabic, Hebrew, Russian, Tamil) that are likely to have the most extensive relevant information. The current CPOST-SAD release contains the universe of suicide attacks from 1982 through September 2015, a total of 4,814 attacks in over 40 countries. The CPOST Suicide Attack Database (CPOST-SAD) contains data on the universe of suicide attacks. For each attack, the database includes information about the geographic location, target classification, and weapon(s) used, as well as systematic information on the demographic and general biographical characteristics of suicide attackers. More information about the coding and methodology is available on the CPOST website below. Note that multiple attackers or targets are collapsed into a single record for simplicity's sake.",
-            'description': "This dataset has about suicide attacks all over the world for the past three decades.",
-            'tags': ["global", "attack", "damage", "kill", "hurt", "destroy", "pain", "suffering", "terror", "terrorism", "religion", "warfare", "war", "car", "bomb", "gun", "shooting"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="aids">
-      
-      <div class="media-left  media-middle">
-        <a href="aids/aids.html">
-          <img class="media-object" src="aids/aids.png" alt="Aids" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a href="aids/aids.html">
-        <h4 class="media-heading">Aids</h4>
-        </a>
-        Records of AIDS related statistics from several countries.<br>
-        <i>aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "aids",
-            'body': "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease. The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.",
-            'description': "Records of AIDS related statistics from several countries.",
-            'tags': ["aids", "death", "disease", "hiv", "orphans", "health", "countries", "world", "gender", "united nations", "un"]
-        }
-    );
-    </script>
-    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="construction_spending">
       
       <div class="media-left  media-middle">
@@ -799,29 +713,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="global_development">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="suicide_attacks">
       
       <div class="media-left  media-middle">
-        <a href="global_development/global_development.html">
-          <img class="media-object" src="global_development/global_development.png" alt="Global Development" style="max-width: 64px; max-height: 64px;">
+        <a href="suicide_attacks/suicide_attacks.html">
+          <img class="media-object" src="suicide_attacks/suicide_attacks.png" alt="Suicide Attacks" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="global_development/global_development.html">
-        <h4 class="media-heading">Global Development</h4>
+        <a href="suicide_attacks/suicide_attacks.html">
+        <h4 class="media-heading">Suicide Attacks</h4>
         </a>
-        Reports of country's development over time<br>
-        <i>world, countries, development, health, population, urban, rural, agriculture, infrastructure</i>
+        This dataset has about suicide attacks all over the world for the past three decades.<br>
+        <i>global, attack, damage, kill, hurt, destroy, pain, suffering, terror, terrorism, religion, warfare, war, car, bomb, gun, shooting</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "global_development",
-            'body': "The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank. Included is different data about urban development, agriculture and rural development, health, and infrastructure.",
-            'description': "Reports of country's development over time",
-            'tags': ["world", "countries", "development", "health", "population", "urban", "rural", "agriculture", "infrastructure"]
+            'name': "suicide_attacks",
+            'body': "The Chicago Project on Security and Terrorism (CPOST) maintains a searchable database on all suicide attacks from 1982 through September 2015. The database includes information about the location of attacks, the target type, the weapon used, and systematic information on the demographic and general biographical characteristics of suicide attackers. The database expands the breadth of the data available in English using native language sources (e.g., Arabic, Hebrew, Russian, Tamil) that are likely to have the most extensive relevant information. The current CPOST-SAD release contains the universe of suicide attacks from 1982 through September 2015, a total of 4,814 attacks in over 40 countries. The CPOST Suicide Attack Database (CPOST-SAD) contains data on the universe of suicide attacks. For each attack, the database includes information about the geographic location, target classification, and weapon(s) used, as well as systematic information on the demographic and general biographical characteristics of suicide attackers. More information about the coding and methodology is available on the CPOST website below. Note that multiple attackers or targets are collapsed into a single record for simplicity's sake.",
+            'description': "This dataset has about suicide attacks all over the world for the past three decades.",
+            'tags': ["global", "attack", "damage", "kill", "hurt", "destroy", "pain", "suffering", "terror", "terrorism", "religion", "warfare", "war", "car", "bomb", "gun", "shooting"]
         }
     );
     </script>
@@ -880,29 +794,83 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
       
       <div class="media-left  media-middle">
-        <a href="broadway/broadway.html">
-          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        <a href="food/food.html">
+          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="broadway/broadway.html">
-        <h4 class="media-heading">Broadway</h4>
+        <a href="food/food.html">
+        <h4 class="media-heading">Food</h4>
         </a>
-        This library holds data about Broadway shows, such as tickets sold.<br>
-        <i>broadway, musical, theatre, tickets</i>
+        Statistics for various food items<br>
+        <i>food, vitamins, minerals, health, nutrition</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "broadway",
-            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
-            'description': "This library holds data about Broadway shows, such as tickets sold.",
-            'tags': ["broadway", "musical", "theatre", "tickets"]
+            'name': "food",
+            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
+            'description': "Statistics for various food items",
+            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food_access">
+      
+      <div class="media-left  media-middle">
+        <a href="food_access/food_access.html">
+          <img class="media-object" src="food_access/food_access.png" alt="Food Access" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="food_access/food_access.html">
+        <h4 class="media-heading">Food Access</h4>
+        </a>
+        Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.<br>
+        <i>counties, states, food, access, availability, supermarket, rural, urban, population, vehicles</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "food_access",
+            'body': "From the United States Department of Agriculture's Economic Research Service, the dataset contains information about US county's ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food. Most measures of how individuals and neighborhoods are able to access food are based on the following indicators: - Accessibility to sources of healthy food, as measured by distance to a store or by the number of stores in an area. - Individual-level resources that may affect accessibility, such as family income or vehicle availability. - Neighborhood-level indicators of resources, such as the average income of the neighborhood and the availability of public transportation.",
+            'description': "Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.",
+            'tags': ["counties", "states", "food", "access", "availability", "supermarket", "rural", "urban", "population", "vehicles"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="aids">
+      
+      <div class="media-left  media-middle">
+        <a href="aids/aids.html">
+          <img class="media-object" src="aids/aids.png" alt="Aids" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a href="aids/aids.html">
+        <h4 class="media-heading">Aids</h4>
+        </a>
+        Records of AIDS related statistics from several countries.<br>
+        <i>aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "aids",
+            'body': "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease. The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.",
+            'description': "Records of AIDS related statistics from several countries.",
+            'tags': ["aids", "death", "disease", "hiv", "orphans", "health", "countries", "world", "gender", "united nations", "un"]
         }
     );
     </script>
@@ -1015,30 +983,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="hospitals">
       
       <div class="media-left  media-middle">
-        <a href="health/health.html">
-          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
+        <a href="hospitals/hospitals.html">
+          <img class="media-object" src="hospitals/hospitals.png" alt="Hospitals" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="health/health.html">
-        <h4 class="media-heading">Health</h4>
+        <a href="hospitals/hospitals.html">
+        <h4 class="media-heading">Hospitals</h4>
         </a>
-        This library holds data about reports of diseases in America.
-<br>
-        <i>health, diseases, infection</i>
+        Records about the outpatient volume and other information for hospitals across the U.S.<br>
+        <i>hospitals, healthcare, medicare, outpatient, patient, doctor, health</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "health",
-            'body': "This library holds data about reports of diseases in America.",
-            'description': "This library holds data about reports of diseases in America.",
-            'tags': ["health", "diseases", "infection"]
+            'name': "hospitals",
+            'body': "Medicare has collected data on many different hospitals throughout the country to allow users to compare the quality of these institutions before using their services. Data includes descriptions of the location of the hospitals, information about the hospitals' emergency services and type of hospital, and outpatient volume for the different wards of the hospitals.",
+            'description': "Records about the outpatient volume and other information for hospitals across the U.S.",
+            'tags': ["hospitals", "healthcare", "medicare", "outpatient", "patient", "doctor", "health"]
         }
     );
     </script>
@@ -1070,29 +1037,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="state_demographics">
       
       <div class="media-left  media-middle">
-        <a href="food/food.html">
-          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
+        <a href="state_demographics/state_demographics.html">
+          <img class="media-object" src="state_demographics/state_demographics.png" alt="State Demographics" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="food/food.html">
-        <h4 class="media-heading">Food</h4>
+        <a href="state_demographics/state_demographics.html">
+        <h4 class="media-heading">State Demographics</h4>
         </a>
-        Statistics for various food items<br>
-        <i>food, vitamins, minerals, health, nutrition</i>
+        Demographic information for the states in the United States.<br>
+        <i>demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, states</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "food",
-            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
-            'description': "Statistics for various food items",
-            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
+            'name': "state_demographics",
+            'body': "The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.",
+            'description': "Demographic information for the states in the United States.",
+            'tags': ["demographics", "population", "age", "ethnicity", "race", "language", "education", "foreign", "households", "income", "employment", "unemployment", "sales", "land area", "states"]
         }
     );
     </script>
@@ -1206,29 +1173,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food_access">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
       
       <div class="media-left  media-middle">
-        <a href="food_access/food_access.html">
-          <img class="media-object" src="food_access/food_access.png" alt="Food Access" style="max-width: 64px; max-height: 64px;">
+        <a href="health/health.html">
+          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="food_access/food_access.html">
-        <h4 class="media-heading">Food Access</h4>
+        <a href="health/health.html">
+        <h4 class="media-heading">Health</h4>
         </a>
-        Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.<br>
-        <i>counties, states, food, access, availability, supermarket, rural, urban, population, vehicles</i>
+        <br>
+        <i>health, diseases, infection</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "food_access",
-            'body': "From the United States Department of Agriculture's Economic Research Service, the dataset contains information about US county's ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food. Most measures of how individuals and neighborhoods are able to access food are based on the following indicators: - Accessibility to sources of healthy food, as measured by distance to a store or by the number of stores in an area. - Individual-level resources that may affect accessibility, such as family income or vehicle availability. - Neighborhood-level indicators of resources, such as the average income of the neighborhood and the availability of public transportation.",
-            'description': "Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.",
-            'tags': ["counties", "states", "food", "access", "availability", "supermarket", "rural", "urban", "population", "vehicles"]
+            'name': "health",
+            'body': "This library holds data about reports of diseases in America.",
+            'description': "",
+            'tags': ["health", "diseases", "infection"]
         }
     );
     </script>
@@ -1260,29 +1227,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="hospitals">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="global_development">
       
       <div class="media-left  media-middle">
-        <a href="hospitals/hospitals.html">
-          <img class="media-object" src="hospitals/hospitals.png" alt="Hospitals" style="max-width: 64px; max-height: 64px;">
+        <a href="global_development/global_development.html">
+          <img class="media-object" src="global_development/global_development.png" alt="Global Development" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a href="hospitals/hospitals.html">
-        <h4 class="media-heading">Hospitals</h4>
+        <a href="global_development/global_development.html">
+        <h4 class="media-heading">Global Development</h4>
         </a>
-        Records about the outpatient volume and other information for hospitals across the U.S.<br>
-        <i>hospitals, healthcare, medicare, outpatient, patient, doctor, health</i>
+        Reports of country's development over time<br>
+        <i>world, countries, development, health, population, urban, rural, agriculture, infrastructure</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "hospitals",
-            'body': "Medicare has collected data on many different hospitals throughout the country to allow users to compare the quality of these institutions before using their services. Data includes descriptions of the location of the hospitals, information about the hospitals' emergency services and type of hospital, and outpatient volume for the different wards of the hospitals.",
-            'description': "Records about the outpatient volume and other information for hospitals across the U.S.",
-            'tags': ["hospitals", "healthcare", "medicare", "outpatient", "patient", "doctor", "health"]
+            'name': "global_development",
+            'body': "The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank. Included is different data about urban development, agriculture and rural development, health, and infrastructure.",
+            'description': "Reports of country's development over time",
+            'tags': ["world", "countries", "development", "health", "population", "urban", "rural", "agriculture", "infrastructure"]
         }
     );
     </script>

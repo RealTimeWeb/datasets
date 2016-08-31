@@ -48,6 +48,10 @@
     
     <script>
     
+if (log === undefined) {
+    log = function(action, body) {};
+}
+    
 var doctype = '<?xml version="1.0" standalone="no"?>' + '<' + '!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">';
 
 // Generates a URL-friendly "slug" from a provided string.
@@ -88,6 +92,7 @@ function captureImage() {
         $("#download-image")
             .attr("href", canvasUrl)
             .attr("download", generateSafeFilename(mainModel.settings.title())+".png");
+        log('save', 'canvasUrl');
         /*
         var img2 = d3.select('#capture-dialog .modal-body img')
             .attr('width', svg_object.attr('width'))
