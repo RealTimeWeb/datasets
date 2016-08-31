@@ -73,13 +73,13 @@ $(document).ready(function() {
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="{{ metadata.name|snake_case }}">
       {% if metadata.icon %}
       <div class="media-left  media-middle">
-        <a href="{{ metadata.name|snake_case }}/{{ metadata.name|snake_case }}.html">
+        <a target="_blank" href="{{ metadata.name|snake_case }}/{{ metadata.name|snake_case }}.html">
           <img class="media-object" src="{{ metadata.name|snake_case }}/{{ metadata.name|snake_case }}.png" alt="{{ metadata.name }}" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       {% endif %}
       <div class="media-body">
-        <a href="{{ metadata.name|snake_case }}/{{ metadata.name|snake_case }}.html">
+        <a target="_blank" href="{{ metadata.name|snake_case }}/{{ metadata.name|snake_case }}.html">
         <h4 class="media-heading">{{ metadata.name }}</h4>
         </a>
         {{ metadata.short }}<br>

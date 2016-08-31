@@ -20,12 +20,12 @@
     {% if index[language].category == category %}
     <div class="well col-md-offset-1 col-md-3 media">
         <div class="media-left  media-middle">
-            <a target="_blank" href="{{ language.lower() }}/index.html">
+            <a href="{{ language.lower() }}/index.html">
                 <img class="media-object" src="_images/{{ language.lower() }}.png" alt="{{ language }}" style="max-width: 64px; max-height: 64px;">
             </a>
         </div>
         <div class="media-body">
-            <a target="_blank" href="{{ language.lower() }}/index.html">
+            <a href="{{ language.lower() }}/index.html">
                 <h4 class="media-heading">{{ language.title() }}</h4>
             </a>
             {{ index[language.lower()].datasets|length }} Libraries
