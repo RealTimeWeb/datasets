@@ -5,6 +5,16 @@
 {% endblock %}
 {% endif -%}
 
+{% block extrahead %}
+
+<script>
+if (typeof log === 'undefined') {
+    log = function(action, body) {};
+}
+</script>
+
+{% endblock %}
+
 {% block body %}
     <link rel="stylesheet" href="../../_lib/bootstrap-tagsinput.css"></script>
     <link href="../../_lib/multiselect.css" media="screen" rel="stylesheet" type="text/css">
@@ -48,10 +58,6 @@
     
     <script>
     
-if (log === undefined) {
-    log = function(action, body) {};
-}
-    
 var doctype = '<?xml version="1.0" standalone="no"?>' + '<' + '!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">';
 
 // Generates a URL-friendly "slug" from a provided string.
@@ -66,7 +72,7 @@ function captureImage() {
     // serialize our SVG XML to a string.
     var source = (new XMLSerializer()).serializeToString(selector.node());
     // create a file blob of our SVG.
-    var blob = new Blob([ doctype + source], { type: 'image/svg+xml;charset=utf-8' });
+    var blob = new Blob([ doctype + source], { type: 'image/svg+xml' });
     var url = window.URL.createObjectURL(blob);
     // Put the svg into an image tag so that the Canvas element can read it in.
     var svg_object = selector;
@@ -180,7 +186,7 @@ var mainModel = {
     ]),
     'structures':  ko.observableArray([
     {% for local in locals %}
-        {'name': {{ local.name|snake_case|replace('.', ' ')|tojson }}, 'order': {{ local.order|tojson }}, 'data': {{ local.name|snake_case }}}{{ ',' if not loop.last}}
+        {'name': {{ local.name|snake_case|replace('.', ' ')|tojson }}, 'row': {{ local.row|tojson }}, 'order': {{ local.order|tojson }}, 'data': {{ local.name|snake_case }}}{{ ',' if not loop.last}}
     {% endfor %}
     ])
 };
@@ -637,7 +643,7 @@ $(document).ready(function () {
                   (mainModel.selected.dataset().order) : 
                   mainModel.selected.first().pretty;
         var y_axis_label = mainModel.selected.chart().id == 'hist' ? 
-                  'Frequency': 
+                  'Number of '+mainModel.selected.dataset().row+"s": 
                   mainModel.selected.chart().id == 'line' || mainModel.selected.chart().id == 'bar' ? 
                   mainModel.selected.first().pretty :
                   mainModel.selected.second().pretty;

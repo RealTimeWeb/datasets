@@ -280,29 +280,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food_access">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="broadway/broadway.html">
-          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="food_access/food_access.html">
+          <img class="media-object" src="food_access/food_access.png" alt="Food Access" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="broadway/broadway.html">
-        <h4 class="media-heading">Broadway</h4>
+        <a target="_blank" href="food_access/food_access.html">
+        <h4 class="media-heading">Food Access</h4>
         </a>
-        This library holds data about Broadway shows, such as tickets sold.<br>
-        <i>broadway, musical, theatre, tickets</i>
+        Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.<br>
+        <i>counties, states, food, access, availability, supermarket, rural, urban, population, vehicles</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "broadway",
-            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
-            'description': "This library holds data about Broadway shows, such as tickets sold.",
-            'tags': ["broadway", "musical", "theatre", "tickets"]
+            'name': "food_access",
+            'body': "From the United States Department of Agriculture's Economic Research Service, the dataset contains information about US county's ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food. Most measures of how individuals and neighborhoods are able to access food are based on the following indicators: - Accessibility to sources of healthy food, as measured by distance to a store or by the number of stores in an area. - Individual-level resources that may affect accessibility, such as family income or vehicle availability. - Neighborhood-level indicators of resources, such as the average income of the neighborhood and the availability of public transportation.",
+            'description': "Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.",
+            'tags': ["counties", "states", "food", "access", "availability", "supermarket", "rural", "urban", "population", "vehicles"]
         }
     );
     </script>
@@ -444,6 +444,33 @@ $(document).ready(function() {
     );
     </script>
     
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="state_demographics">
+      
+      <div class="media-left  media-middle">
+        <a target="_blank" href="state_demographics/state_demographics.html">
+          <img class="media-object" src="state_demographics/state_demographics.png" alt="State Demographics" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a target="_blank" href="state_demographics/state_demographics.html">
+        <h4 class="media-heading">State Demographics</h4>
+        </a>
+        Demographic information for the states in the United States.<br>
+        <i>demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, states</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "state_demographics",
+            'body': "The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.",
+            'description': "Demographic information for the states in the United States.",
+            'tags': ["demographics", "population", "age", "ethnicity", "race", "language", "education", "foreign", "households", "income", "employment", "unemployment", "sales", "land area", "states"]
+        }
+    );
+    </script>
+    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="drugs">
       
       <div class="media-left  media-middle">
@@ -579,29 +606,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="books">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="weather">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="books/books.html">
-          <img class="media-object" src="books/books.png" alt="Books" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="weather/weather.html">
+          <img class="media-object" src="weather/weather.png" alt="Weather" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="books/books.html">
-        <h4 class="media-heading">Books</h4>
+        <a target="_blank" href="weather/weather.html">
+        <h4 class="media-heading">Weather</h4>
         </a>
-        Records about different books and different attributes associated with them.<br>
-        <i>books, reading, author, pages, english, language, literature</i>
+        Weather records through the months of April and June of 2016 across the U.S.<br>
+        <i>weather, rain, snow, sleet, fog, temperature, wind</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "books",
-            'body': "This data set contains information about different books written by different authors pertaining to a variety of genres. Information about the books includes page count, whether it's a paperback, and the price of the book.",
-            'description': "Records about different books and different attributes associated with them.",
-            'tags': ["books", "reading", "author", "pages", "english", "language", "literature"]
+            'name': "weather",
+            'body': "Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county. This is done through the use of 122 different Weather Forcast Offices throughout the country. These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage. This data set takes the information from these WFO reports for cities across the country through the months of April to June of 2016.",
+            'description': "Weather records through the months of April and June of 2016 across the U.S.",
+            'tags': ["weather", "rain", "snow", "sleet", "fog", "temperature", "wind"]
         }
     );
     </script>
@@ -741,83 +768,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="food/food.html">
-          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="broadway/broadway.html">
+          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="food/food.html">
-        <h4 class="media-heading">Food</h4>
+        <a target="_blank" href="broadway/broadway.html">
+        <h4 class="media-heading">Broadway</h4>
         </a>
-        Statistics for various food items<br>
-        <i>food, vitamins, minerals, health, nutrition</i>
+        This library holds data about Broadway shows, such as tickets sold.<br>
+        <i>broadway, musical, theatre, tickets</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "food",
-            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
-            'description': "Statistics for various food items",
-            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food_access">
-      
-      <div class="media-left  media-middle">
-        <a target="_blank" href="food_access/food_access.html">
-          <img class="media-object" src="food_access/food_access.png" alt="Food Access" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a target="_blank" href="food_access/food_access.html">
-        <h4 class="media-heading">Food Access</h4>
-        </a>
-        Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.<br>
-        <i>counties, states, food, access, availability, supermarket, rural, urban, population, vehicles</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "food_access",
-            'body': "From the United States Department of Agriculture's Economic Research Service, the dataset contains information about US county's ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food. Most measures of how individuals and neighborhoods are able to access food are based on the following indicators: - Accessibility to sources of healthy food, as measured by distance to a store or by the number of stores in an area. - Individual-level resources that may affect accessibility, such as family income or vehicle availability. - Neighborhood-level indicators of resources, such as the average income of the neighborhood and the availability of public transportation.",
-            'description': "Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.",
-            'tags': ["counties", "states", "food", "access", "availability", "supermarket", "rural", "urban", "population", "vehicles"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="aids">
-      
-      <div class="media-left  media-middle">
-        <a target="_blank" href="aids/aids.html">
-          <img class="media-object" src="aids/aids.png" alt="Aids" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a target="_blank" href="aids/aids.html">
-        <h4 class="media-heading">Aids</h4>
-        </a>
-        Records of AIDS related statistics from several countries.<br>
-        <i>aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "aids",
-            'body': "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease. The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.",
-            'description': "Records of AIDS related statistics from several countries.",
-            'tags': ["aids", "death", "disease", "hiv", "orphans", "health", "countries", "world", "gender", "united nations", "un"]
+            'name': "broadway",
+            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
+            'description': "This library holds data about Broadway shows, such as tickets sold.",
+            'tags': ["broadway", "musical", "theatre", "tickets"]
         }
     );
     </script>
@@ -930,6 +903,33 @@ $(document).ready(function() {
     );
     </script>
     
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
+      
+      <div class="media-left  media-middle">
+        <a target="_blank" href="health/health.html">
+          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a target="_blank" href="health/health.html">
+        <h4 class="media-heading">Health</h4>
+        </a>
+        <br>
+        <i>health, diseases, infection</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "health",
+            'body': "This library holds data about reports of diseases in America.",
+            'description': "",
+            'tags': ["health", "diseases", "infection"]
+        }
+    );
+    </script>
+    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="hospitals">
       
       <div class="media-left  media-middle">
@@ -984,56 +984,56 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="state_demographics">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="state_demographics/state_demographics.html">
-          <img class="media-object" src="state_demographics/state_demographics.png" alt="State Demographics" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="food/food.html">
+          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="state_demographics/state_demographics.html">
-        <h4 class="media-heading">State Demographics</h4>
+        <a target="_blank" href="food/food.html">
+        <h4 class="media-heading">Food</h4>
         </a>
-        Demographic information for the states in the United States.<br>
-        <i>demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, states</i>
+        Statistics for various food items<br>
+        <i>food, vitamins, minerals, health, nutrition</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "state_demographics",
-            'body': "The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.",
-            'description': "Demographic information for the states in the United States.",
-            'tags': ["demographics", "population", "age", "ethnicity", "race", "language", "education", "foreign", "households", "income", "employment", "unemployment", "sales", "land area", "states"]
+            'name': "food",
+            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
+            'description': "Statistics for various food items",
+            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
         }
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="weather">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="books">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="weather/weather.html">
-          <img class="media-object" src="weather/weather.png" alt="Weather" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="books/books.html">
+          <img class="media-object" src="books/books.png" alt="Books" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="weather/weather.html">
-        <h4 class="media-heading">Weather</h4>
+        <a target="_blank" href="books/books.html">
+        <h4 class="media-heading">Books</h4>
         </a>
-        Weather records through the months of April and June of 2016 across the U.S.<br>
-        <i>weather, rain, snow, sleet, fog, temperature, wind</i>
+        Records about different books and different attributes associated with them.<br>
+        <i>books, reading, author, pages, english, language, literature</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "weather",
-            'body': "Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county. This is done through the use of 122 different Weather Forcast Offices throughout the country. These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage. This data set takes the information from these WFO reports for cities across the country through the months of April to June of 2016.",
-            'description': "Weather records through the months of April and June of 2016 across the U.S.",
-            'tags': ["weather", "rain", "snow", "sleet", "fog", "temperature", "wind"]
+            'name': "books",
+            'body': "This data set contains information about different books written by different authors pertaining to a variety of genres. Information about the books includes page count, whether it's a paperback, and the price of the book.",
+            'description': "Records about different books and different attributes associated with them.",
+            'tags': ["books", "reading", "author", "pages", "english", "language", "literature"]
         }
     );
     </script>
@@ -1120,29 +1120,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="aids">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="health/health.html">
-          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="aids/aids.html">
+          <img class="media-object" src="aids/aids.png" alt="Aids" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="health/health.html">
-        <h4 class="media-heading">Health</h4>
+        <a target="_blank" href="aids/aids.html">
+        <h4 class="media-heading">Aids</h4>
         </a>
-        <br>
-        <i>health, diseases, infection</i>
+        Records of AIDS related statistics from several countries.<br>
+        <i>aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "health",
-            'body': "This library holds data about reports of diseases in America.",
-            'description': "",
-            'tags': ["health", "diseases", "infection"]
+            'name': "aids",
+            'body': "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease. The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.",
+            'description': "Records of AIDS related statistics from several countries.",
+            'tags': ["aids", "death", "disease", "hiv", "orphans", "health", "countries", "world", "gender", "united nations", "un"]
         }
     );
     </script>

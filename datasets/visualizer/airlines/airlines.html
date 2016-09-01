@@ -1,4 +1,14 @@
 
+
+<script>
+if (typeof log === 'undefined') {
+    log = function(action, body) {};
+}
+</script>
+
+
+
+
     <link rel="stylesheet" href="../../_lib/bootstrap-tagsinput.css"></script>
     <link href="../../_lib/multiselect.css" media="screen" rel="stylesheet" type="text/css">
     <script src="../../_lib/jquery.multi-select.js" type="text/javascript"></script>
@@ -55,7 +65,7 @@ function captureImage() {
     // serialize our SVG XML to a string.
     var source = (new XMLSerializer()).serializeToString(selector.node());
     // create a file blob of our SVG.
-    var blob = new Blob([ doctype + source], { type: 'image/svg+xml;charset=utf-8' });
+    var blob = new Blob([ doctype + source], { type: 'image/svg+xml' });
     var url = window.URL.createObjectURL(blob);
     // Put the svg into an image tag so that the Canvas element can read it in.
     var svg_object = selector;
@@ -81,6 +91,7 @@ function captureImage() {
         $("#download-image")
             .attr("href", canvasUrl)
             .attr("download", generateSafeFilename(mainModel.settings.title())+".png");
+        log('save', 'canvasUrl');
         /*
         var img2 = d3.select('#capture-dialog .modal-body img')
             .attr('width', svg_object.attr('width'))
@@ -168,7 +179,7 @@ var mainModel = {
     ]),
     'structures':  ko.observableArray([
     
-        {'name': "airlines", 'order': "Index", 'data': airlines}
+        {'name': "airlines", 'row': "airline", 'order': "Index", 'data': airlines}
     
     ])
 };
@@ -625,7 +636,7 @@ $(document).ready(function () {
                   (mainModel.selected.dataset().order) : 
                   mainModel.selected.first().pretty;
         var y_axis_label = mainModel.selected.chart().id == 'hist' ? 
-                  'Frequency': 
+                  'Number of '+mainModel.selected.dataset().row: 
                   mainModel.selected.chart().id == 'line' || mainModel.selected.chart().id == 'bar' ? 
                   mainModel.selected.first().pretty :
                   mainModel.selected.second().pretty;
