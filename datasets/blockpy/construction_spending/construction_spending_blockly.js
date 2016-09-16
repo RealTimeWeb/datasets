@@ -216,7 +216,7 @@ PythonToBlocks.KNOWN_MODULES['construction_spending'] = {
 };
 
 AbstractInterpreter.MODULES['construction_spending'] = {
-    'get': {"type": "List", "empty": false, "component": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Construction Spending'] = '<category name="Data - Construction Spending" colour="50">'+

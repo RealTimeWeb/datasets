@@ -1,4 +1,4 @@
-_IMPORTED_DATASETS['development'] = {
+_IMPORTED_DATASETS['global_development'] = {
   "Life Expectancy at Birth, Total": {
     "comment": "Years", 
     "index": false, 

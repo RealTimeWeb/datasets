@@ -11,6 +11,7 @@ try:
     unicode
 except NameError:
     unicode = str
+xrange = range
 from collections import OrderedDict, defaultdict
 from auxiliary import to_dict, camel_case_caps, camel_case
 from auxiliary import snake_case, kebab_case, flat_case
@@ -166,6 +167,7 @@ def remove_outliers(lodol):
     bad_indexes = set()
     bad_keys = set()
     DEVIATIONS = 4
+    MAX_LENGTH = 10000
     
     for data in lodol:
         #print(data['name'])
@@ -180,8 +182,23 @@ def remove_outliers(lodol):
                     bad_indexes.add(index)
                     evils += 1
             print(data['name'], mean-4*std, mean+4*std, evils)
-    
-    print("Bad indexes:", len(bad_indexes), "/", len(lodol[0]['data']))
+            
+    total_indexes = len(lodol[0]['data'])
+    reduced_indexes = total_indexes - len(bad_indexes)
+    print("Bad indexes:", len(bad_indexes), "/", total_indexes)
+    '''
+    I have a list of numbers Z from 0 to N
+    I have a list of J numbers (where J < N) randomly distributed throughout Z
+    I wish to remove K numbers from Z, without drawing from any number in J
+    '''
+    if reduced_indexes > MAX_LENGTH:
+        stride = total_indexes / MAX_LENGTH
+        for an_index in xrange(0, total_indexes, stride):
+            keep_index = random.randint(0, stride-1)
+            for offset in xrange(0, stride):
+                if keep_index != offset:
+                    bad_indexes.add(min(total_indexes, an_index+offset))
+    print("Trimmed indexes:", len(bad_indexes), "/", total_indexes)
     print("Contributing keys:", ', '.join(bad_keys))
     for data in lodol:
         data['data'] = [v for i, v in enumerate(data['data']) if i not in bad_indexes]
@@ -248,6 +265,7 @@ def build_locals(model, js_path):
                 #sample_down(data)
                 json.dump(data, output_file, indent=2)
                 #model['visualized_datasets'][name] = data.keys()
+            print("File sizes:", "{}mb".format(os.stat(json_path).st_size / 1024 / 1024))
         yield json_path, short_key_names, indexes
 
 def build_blockpy(model, fast):

@@ -280,7 +280,7 @@ PythonToBlocks.KNOWN_MODULES['weather'] = {
 };
 
 AbstractInterpreter.MODULES['weather'] = {
-    'get': {"type": "List", "empty": false, "component": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Weather'] = '<category name="Data - Weather" colour="50">'+

@@ -154,7 +154,7 @@ PythonToBlocks.KNOWN_MODULES['tate'] = {
 };
 
 AbstractInterpreter.MODULES['tate'] = {
-    'get': {"type": "List", "empty": false, "component": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Tate'] = '<category name="Data - Tate" colour="50">'+

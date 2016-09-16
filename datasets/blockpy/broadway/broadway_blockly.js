@@ -78,7 +78,6 @@ var broadway_INDEX_VALUES = {
     ],
     "Year": [
         
-        ["1990", "1990"] ,
         ["1991", "1991"] ,
         ["1992", "1992"] ,
         ["1993", "1993"] ,
@@ -188,7 +187,7 @@ PythonToBlocks.KNOWN_MODULES['broadway'] = {
 };
 
 AbstractInterpreter.MODULES['broadway'] = {
-    'get': {"type": "List", "empty": false, "component": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Broadway'] = '<category name="Data - Broadway" colour="50">'+

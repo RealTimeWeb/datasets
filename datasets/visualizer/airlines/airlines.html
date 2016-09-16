@@ -636,7 +636,7 @@ $(document).ready(function () {
                   (mainModel.selected.dataset().order) : 
                   mainModel.selected.first().pretty;
         var y_axis_label = mainModel.selected.chart().id == 'hist' ? 
-                  'Number of '+mainModel.selected.dataset().row: 
+                  'Number of '+mainModel.selected.dataset().row+"s": 
                   mainModel.selected.chart().id == 'line' || mainModel.selected.chart().id == 'bar' ? 
                   mainModel.selected.first().pretty :
                   mainModel.selected.second().pretty;

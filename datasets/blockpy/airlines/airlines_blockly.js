@@ -320,7 +320,7 @@ PythonToBlocks.KNOWN_MODULES['airlines'] = {
 };
 
 AbstractInterpreter.MODULES['airlines'] = {
-    'get': {"type": "List", "empty": false, "component": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Airlines'] = '<category name="Data - Airlines" colour="50">'+
