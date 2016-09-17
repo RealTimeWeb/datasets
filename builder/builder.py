@@ -62,7 +62,7 @@ if __name__ == '__main__':
     elif args.index:
         specs= []
     else:
-        specs = [args.spec]
+        specs = args.spec.split(",")
 
     if args.index:
         reconstruct_index(args.target, args.spec)

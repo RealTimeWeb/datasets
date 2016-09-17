@@ -1,0 +1,76 @@
+{% import 'dataset_page_components.html' as macros %}
+{% if standalone %}{% extends 'layout.html' %}
+
+{% block title %}
+{{ metadata.name }} Library (CORGIS Datasets Project)
+{% endblock %}
+{% endif -%}
+
+{% block body %}
+    
+    {{ macros.pygments() }}
+
+    {{ macros.header(metadata, "Blockpy") }}
+    
+    <!--
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        {% for interface in interfaces -%}    
+        <li><a href='#{{ interface.name | snake_case }}'>{{ interface.name | snake_case }}</a></li>
+        {% endfor %}
+        </ol></li>
+        {% if metadata.appendix %}
+        <li><a href="#appendix">Appendix</a></li>
+        {% endif %}
+    </ol>
+    -->
+    
+    {{ macros.overview(metadata) }}
+    
+    <h3 id="usage">Key Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    {% for item_list in full_key_descriptions %}
+    {% for item in item_list %}
+    <tr>
+        <td>{{ item['short'] }}</td>
+        <td>{{ item['example']|to_human_readable_type }}</td> 
+        <td>{{ item['comment'] }}</td>
+        <td>{{ item['example']|convert_example_value}}</td>
+    </tr>
+    {% endfor %}
+    {% endfor %}
+    </table>
+    
+    <br><br>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    {% for index, v in indexes.items() %}
+    <tr>
+        <td>{{ index }}</td>
+        <td>{{ v['data'][0]|to_human_readable_type }}</td> 
+        <td>{{ v.comment }}</td>
+        <td>{{ v['data'][0]|convert_example_value }}</td> 
+    </tr>
+    {% endfor %}
+    </table>
+
+{{ macros.appendix(metadata) }}    
+
+{% endblock %}

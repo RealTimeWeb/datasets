@@ -211,7 +211,7 @@ PythonToBlocks.KNOWN_MODULES['state_crime'] = {
 };
 
 AbstractInterpreter.MODULES['state_crime'] = {
-    'get': {"type": "List", "empty": false, "component": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - State Crime'] = '<category name="Data - State Crime" colour="50">'+

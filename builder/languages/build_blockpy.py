@@ -55,6 +55,12 @@ def is_list(type):
 
 def strip_list(type):
     return type[5:-1]
+    
+def get_base_type(type):
+    if type.startswith('list'):
+        return 'list'
+    else:
+        return type
         
 def parse_bark(commands):
     commands = commands.split("|")
@@ -84,6 +90,54 @@ def to_python_variable(source):
         return "list_of_{}".format(converted_type)
     else: # otherwise just return it normally
         return "a_{}".format(converted_type)
+        
+def sluggify(astr):
+    return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_").replace("'", "_")
+    
+EXTENDED_TYPE_INFO = {
+    'dict': '<span data-toggle="tooltip" title="Dictionary">dict</span>',
+    'unicode': '<span data-toggle="tooltip" title="String (text)">str</span>',
+    'list': '<span data-toggle="tooltip" title="List">list</span>',
+    'str': '<span data-toggle="tooltip" title="String (text)">str</span>',
+    'int': '<span data-toggle="tooltip" title="Integer (whole number)">int</span>',
+    'float': '<span data-toggle="tooltip" title="Float (decimal number)">float</span>',
+    'long': '<span data-toggle="tooltip" title="Long (a very big whole number)">long</span>',
+    'NoneType': '<span data-toggle="tooltip" title="None (nothing, not zero or an empty list, just nothing)">None</span>',
+    'bool': '<span data-toggle="tooltip" title="Boolean (True or False)">bool</span>',
+}
+def to_human_readable_type(a_value):
+    if isinstance(a_value, int):
+        return '<code>int</code> (Integer number)'
+    elif isinstance(a_value, float):
+        return '<code>float</code> (Decimal number)'
+    elif isinstance(a_value, (str, unicode)):
+        return '<code>str</code> (Text)'
+    elif isinstance(a_value, bool):
+        return '<code>bool</code> (True/False)'
+    elif isinstance(a_value, long):
+        return '<code>long</code> (Big numbers)'
+    else:
+        return '<code>'+str(type(a_value))+'</code>'
+    
+EXPAND = "<span class='glyphicon glyphicon-new-window' aria-hidden='true'></span>"
+def convert_example_value(data, possible_path=""):
+    if isinstance(data, dict):
+        return "<a class='dialog-opener' id='{possible_path}'>{{ {E} }}</a>".format(possible_path=possible_path, E=EXPAND)
+    elif isinstance(data, list):
+        return "<a class='dialog-opener' id='{possible_path}'>[ {E} ]</a>".format(possible_path=possible_path, E=EXPAND)
+    elif isinstance(data, str) or isinstance(data, unicode):
+        return "<code>{data}</code>".format(data=wrap_quotes(data))
+    else:
+        return "<code>{data}</code>".format(data=data)
+        
+def wrap_quotes(data):
+    if '"' not in data:
+        pretty = '"{data}"'.format(data=data)
+    elif "'" not in data:
+        pretty = "'{data}'".format(data=data)
+    else:
+        pretty = '"{data}"'.format(data=data.replace('"', '\"'))
+    return pretty
 
 env.filters['tojson'] = json.dumps
 env.filters['to_python_variable'] = to_python_variable
@@ -93,6 +147,10 @@ env.filters['strip_list'] = strip_list
 env.filters['parse_json_path'] = parse_json_path
 env.filters['parse_bark'] = parse_bark
 env.filters['unique'] = set
+env.filters['sluggify'] = sluggify
+env.filters['to_human_readable_type'] = to_human_readable_type
+env.filters['convert_example_value'] = convert_example_value
+env.filters['wrap_quotes'] = wrap_quotes
 
 def json_path(path, data):
     entries = path.split(".")
@@ -102,11 +160,14 @@ def json_path(path, data):
         data = data[entry]
     return data
 
-def build_metafiles(model, key_names, indexes):
-    name = model['metadata']['name']
+def build_metafiles(model, key_names, indexes, full_key_descriptions):
+    name = snake_case(model['metadata']['name'])
+    root = 'blockpy/' + name + '/'
     return {
-            'blockpy/' + snake_case(name) + '/' + snake_case(name) + '_skulpt.js' : env.get_template('skulpt.js').render(key_names=key_names, indexes=indexes, **model),
-            'blockpy/' + snake_case(name) + '/' + snake_case(name) + '_blockly.js' : env.get_template('blockly.js').render(key_names=key_names, indexes=indexes,  **model)
+            root+'index.html' : env.get_template('blockpy_main.html').render(key_names=key_names, indexes=indexes, full_key_descriptions=full_key_descriptions, standalone=True, **model),
+            root+name+'.html' : env.get_template('blockpy_main.html').render(key_names=key_names, indexes=indexes, full_key_descriptions=full_key_descriptions, standalone=False, **model),
+            root + name + '_skulpt.js' : env.get_template('skulpt.js').render(key_names=key_names, indexes=indexes, **model),
+            root + name + '_blockly.js' : env.get_template('blockly.js').render(key_names=key_names, indexes=indexes,  **model)
             }
 
 class JsonLeafNodes(object):    
@@ -258,6 +319,13 @@ def build_locals(model, js_path):
                 key_names = [row['name'] for row in data]
                 short_key_names = shortest_unique_strings(key_names)
                 key_name_map = dict(zip(key_names, short_key_names))
+                full_key_descriptions = [
+                    {'name': row['name'], 
+                     'short': key_name_map[row['name']],
+                     'type': row['type'],
+                     'comment': row.get('comment', ''),
+                     'example': row['data'][0]}
+                    for row in data]
                 indexes = {key_name_map[row['name']]: row for row in data if row['index']}
                 for index_data in indexes.values():
                     index_data['data'] = [str(val) for val in index_data['data']]
@@ -266,7 +334,7 @@ def build_locals(model, js_path):
                 json.dump(data, output_file, indent=2)
                 #model['visualized_datasets'][name] = data.keys()
             print("File sizes:", "{}mb".format(os.stat(json_path).st_size / 1024 / 1024))
-        yield json_path, short_key_names, indexes
+        yield json_path, short_key_names, indexes, full_key_descriptions
 
 def build_blockpy(model, fast):
     name = snake_case(model['metadata']['name'])
@@ -286,8 +354,9 @@ def build_blockpy(model, fast):
     moves = {f: new_folder for f in first_items(results)}
     key_names = [k for s in results for k in s[1]]
     indexes = {k:v for s in results for k, v in s[2].items()}
+    full_key_descriptions = [i[3] for i in results]
         
-    files.update(build_metafiles(model, key_names, indexes))
+    files.update(build_metafiles(model, key_names, indexes, full_key_descriptions))
     
     return files, moves
     
