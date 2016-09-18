@@ -255,6 +255,33 @@ $(document).ready(function() {
     );
     </script>
     
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="classics">
+      
+      <div class="media-left  media-middle">
+        <a target="_blank" href="classics/classics.html">
+          <img class="media-object" src="classics/classics.png" alt="Classics" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a target="_blank" href="classics/classics.html">
+        <h4 class="media-heading">Classics</h4>
+        </a>
+        Records and computed statistics about the top 1000 books on Project Gutenberg.<br>
+        <i>classics, books, texts, text, book, classic, english, shakespeare, literature, novel, language, composition, writing, author, publication, words</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "classics",
+            'body': "Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural works, to 'encourage the creation and distribution of eBooks'. It was founded in 1971 by Michael S. Hart and is the oldest digital library. This dataset is a collection of the top 1000 most popular books on Project Gutenberg, as determined by downloads. Each book has information about its authorship, publication date, congressional classication, and a few other fields. It also has some simple, computed statistics based on common metrics such as sentiment analysis, Flesch Kincaid Reading level, and average sentence length.",
+            'description': "Records and computed statistics about the top 1000 books on Project Gutenberg.",
+            'tags': ["classics", "books", "texts", "text", "book", "classic", "english", "shakespeare", "literature", "novel", "language", "composition", "writing", "author", "publication", "words"]
+        }
+    );
+    </script>
+    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="finance">
       
       <div class="media-left  media-middle">
@@ -390,56 +417,84 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="aids">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="aids/aids.html">
-          <img class="media-object" src="aids/aids.png" alt="Aids" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="broadway/broadway.html">
+          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="aids/aids.html">
-        <h4 class="media-heading">Aids</h4>
+        <a target="_blank" href="broadway/broadway.html">
+        <h4 class="media-heading">Broadway</h4>
         </a>
-        Records of AIDS related statistics from several countries.<br>
-        <i>aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un</i>
+        This library holds data about Broadway shows, such as tickets sold.<br>
+        <i>broadway, musical, theatre, tickets</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "aids",
-            'body': "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease. The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.",
-            'description': "Records of AIDS related statistics from several countries.",
-            'tags': ["aids", "death", "disease", "hiv", "orphans", "health", "countries", "world", "gender", "united nations", "un"]
+            'name': "broadway",
+            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
+            'description': "This library holds data about Broadway shows, such as tickets sold.",
+            'tags': ["broadway", "musical", "theatre", "tickets"]
         }
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="classics">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="labor">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="classics/classics.html">
-          <img class="media-object" src="classics/classics.png" alt="Classics" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="labor/labor.html">
+          <img class="media-object" src="labor/labor.png" alt="Labor" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="classics/classics.html">
-        <h4 class="media-heading">Classics</h4>
+        <a target="_blank" href="labor/labor.html">
+        <h4 class="media-heading">Labor</h4>
         </a>
-        Records and computed statistics about the top 1000 books on Project Gutenberg.<br>
-        <i>classics, books, texts, text, book, classic, english, shakespeare, literature, novel, language, composition, writing, author, publication, words</i>
+        Employment status of the civilian population by race, sex, and age.
+<br>
+        <i>labor, race, age, sex, gender, america, usa, census, employed, unemployed, employability, job, work, civilian, black, white, asian, government</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "classics",
-            'body': "Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural works, to 'encourage the creation and distribution of eBooks'. It was founded in 1971 by Michael S. Hart and is the oldest digital library. This dataset is a collection of the top 1000 most popular books on Project Gutenberg, as determined by downloads. Each book has information about its authorship, publication date, congressional classication, and a few other fields. It also has some simple, computed statistics based on common metrics such as sentiment analysis, Flesch Kincaid Reading level, and average sentence length.",
-            'description': "Records and computed statistics about the top 1000 books on Project Gutenberg.",
-            'tags': ["classics", "books", "texts", "text", "book", "classic", "english", "shakespeare", "literature", "novel", "language", "composition", "writing", "author", "publication", "words"]
+            'name': "labor",
+            'body': "The Current Population Survey (CPS) is a monthly survey of households conducted by the Bureau of Census for the Bureau of Labor Statistics. It provides a comprehensive body of data on the labor force, employment, unemployment, persons not in the labor force, hours of work, earnings, and other demographic and labor force characteristics.",
+            'description': "Employment status of the civilian population by race, sex, and age.",
+            'tags': ["labor", "race", "age", "sex", "gender", "america", "usa", "census", "employed", "unemployed", "employability", "job", "work", "civilian", "black", "white", "asian", "government"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="education">
+      
+      <div class="media-left  media-middle">
+        <a target="_blank" href="education/education.html">
+          <img class="media-object" src="education/education.png" alt="Education" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a target="_blank" href="education/education.html">
+        <h4 class="media-heading">Education</h4>
+        </a>
+        Information about K-12 education for different states, collected from the US government.<br>
+        <i>school, education, K-12, kindergarten, learning, teaching</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "education",
+            'body': "This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The 'Year' field has records for Preschool, Kindergarten, and grades 1-12.",
+            'description': "Information about K-12 education for different states, collected from the US government.",
+            'tags': ["school", "education", "K-12", "kindergarten", "learning", "teaching"]
         }
     );
     </script>
@@ -494,33 +549,6 @@ $(document).ready(function() {
             'body': "From the United States Cancer Statistics as part of the U.S. Center for Disease Control, the following data set focuses on the crude rate for all types of cancer reported for different demograpic groups. Significant groupings include age, gender, race and geographical area.",
             'description': "Cancer crude rate totals for different ages, races, genders, and geographical areas across the United States.",
             'tags': ["cancer", "death", "states", "gender", "race", "population", "crude rate"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
-      
-      <div class="media-left  media-middle">
-        <a target="_blank" href="health/health.html">
-          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a target="_blank" href="health/health.html">
-        <h4 class="media-heading">Health</h4>
-        </a>
-        <br>
-        <i>health, diseases, infection</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "health",
-            'body': "This library holds data about reports of diseases in America.",
-            'description': "",
-            'tags': ["health", "diseases", "infection"]
         }
     );
     </script>
@@ -633,84 +661,56 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="labor">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="labor/labor.html">
-          <img class="media-object" src="labor/labor.png" alt="Labor" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="health/health.html">
+          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="labor/labor.html">
-        <h4 class="media-heading">Labor</h4>
+        <a target="_blank" href="health/health.html">
+        <h4 class="media-heading">Health</h4>
         </a>
-        Employment status of the civilian population by race, sex, and age.
-<br>
-        <i>labor, race, age, sex, gender, america, usa, census, employed, unemployed, employability, job, work, civilian, black, white, asian, government</i>
+        <br>
+        <i>health, diseases, infection</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "labor",
-            'body': "The Current Population Survey (CPS) is a monthly survey of households conducted by the Bureau of Census for the Bureau of Labor Statistics. It provides a comprehensive body of data on the labor force, employment, unemployment, persons not in the labor force, hours of work, earnings, and other demographic and labor force characteristics.",
-            'description': "Employment status of the civilian population by race, sex, and age.",
-            'tags': ["labor", "race", "age", "sex", "gender", "america", "usa", "census", "employed", "unemployed", "employability", "job", "work", "civilian", "black", "white", "asian", "government"]
+            'name': "health",
+            'body': "This library holds data about reports of diseases in America.",
+            'description': "",
+            'tags': ["health", "diseases", "infection"]
         }
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="aids">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="broadway/broadway.html">
-          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="aids/aids.html">
+          <img class="media-object" src="aids/aids.png" alt="Aids" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="broadway/broadway.html">
-        <h4 class="media-heading">Broadway</h4>
+        <a target="_blank" href="aids/aids.html">
+        <h4 class="media-heading">Aids</h4>
         </a>
-        This library holds data about Broadway shows, such as tickets sold.<br>
-        <i>broadway, musical, theatre, tickets</i>
+        Records of AIDS related statistics from several countries.<br>
+        <i>aids, death, disease, hiv, orphans, health, countries, world, gender, united nations, un</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "broadway",
-            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
-            'description': "This library holds data about Broadway shows, such as tickets sold.",
-            'tags': ["broadway", "musical", "theatre", "tickets"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="education">
-      
-      <div class="media-left  media-middle">
-        <a target="_blank" href="education/education.html">
-          <img class="media-object" src="education/education.png" alt="Education" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a target="_blank" href="education/education.html">
-        <h4 class="media-heading">Education</h4>
-        </a>
-        Information about K-12 education for different states, collected from the US government.<br>
-        <i>school, education, K-12, kindergarten, learning, teaching</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "education",
-            'body': "This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The 'Year' field has records for Preschool, Kindergarten, and grades 1-12.",
-            'description': "Information about K-12 education for different states, collected from the US government.",
-            'tags': ["school", "education", "K-12", "kindergarten", "learning", "teaching"]
+            'name': "aids",
+            'body': "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease. The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.",
+            'description': "Records of AIDS related statistics from several countries.",
+            'tags': ["aids", "death", "disease", "hiv", "orphans", "health", "countries", "world", "gender", "united nations", "un"]
         }
     );
     </script>

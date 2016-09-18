@@ -6,6 +6,7 @@ metadata:
     datetime: 11/3/2015
     tags: [cars, vehicles, fuel]
     description:
+        short: This is a dataset about cars and how much fuel they use.
         overview: >
             This is a dataset about cars and how much fuel they use.
 local:

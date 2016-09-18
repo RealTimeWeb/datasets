@@ -226,29 +226,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="music">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="health/health.html">
-          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="music/music.html">
+          <img class="media-object" src="music/music.png" alt="Music" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="health/health.html">
-        <h4 class="media-heading">Health</h4>
+        <a target="_blank" href="music/music.html">
+        <h4 class="media-heading">Music</h4>
         </a>
-        <br>
-        <i>health, diseases, infection</i>
+        The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.<br>
+        <i>music, songs, artists, creativity, media</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "health",
-            'body': "This library holds data about reports of diseases in America.",
-            'description': "",
-            'tags': ["health", "diseases", "infection"]
+            'name': "music",
+            'body': "This library comes from the Million Song Dataset, which used a company called the Echo Nest to derive data points about one million popular contemporary songs. The Million Song Dataset is a collaboration between the Echo Nest and LabROSA, a laboratory working towards intelligent machine listening. The project was also funded in part by the National Science Foundation of America (NSF) to provide a large data set to evaluate research related to algorithms on a commercial size while promoting further research into the Music Information Retrieval field. The data contains standard information about the songs such as artist name, title, and year released. Additionally, the data contains more advanced information; for example, the length of the song, how many musical bars long the song is, and how long the fade in to the song was.",
+            'description': "The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.",
+            'tags': ["music", "songs", "artists", "creativity", "media"]
         }
     );
     </script>
@@ -417,29 +417,56 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="state_demographics">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="food/food.html">
-          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="state_demographics/state_demographics.html">
+          <img class="media-object" src="state_demographics/state_demographics.png" alt="State Demographics" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="food/food.html">
-        <h4 class="media-heading">Food</h4>
+        <a target="_blank" href="state_demographics/state_demographics.html">
+        <h4 class="media-heading">State Demographics</h4>
         </a>
-        Statistics for various food items<br>
-        <i>food, vitamins, minerals, health, nutrition</i>
+        Demographic information for the states in the United States.<br>
+        <i>demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, states</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "food",
-            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
-            'description': "Statistics for various food items",
-            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
+            'name': "state_demographics",
+            'body': "The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.",
+            'description': "Demographic information for the states in the United States.",
+            'tags': ["demographics", "population", "age", "ethnicity", "race", "language", "education", "foreign", "households", "income", "employment", "unemployment", "sales", "land area", "states"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drugs">
+      
+      <div class="media-left  media-middle">
+        <a target="_blank" href="drugs/drugs.html">
+          <img class="media-object" src="drugs/drugs.png" alt="Drugs" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a target="_blank" href="drugs/drugs.html">
+        <h4 class="media-heading">Drugs</h4>
+        </a>
+        This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.<br>
+        <i>drugs, substances, drug usage</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "drugs",
+            'body': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.",
+            'description': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.",
+            'tags': ["drugs", "substances", "drug usage"]
         }
     );
     </script>
@@ -579,56 +606,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drugs">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="global_development">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="drugs/drugs.html">
-          <img class="media-object" src="drugs/drugs.png" alt="Drugs" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="global_development/global_development.html">
+          <img class="media-object" src="global_development/global_development.png" alt="Global Development" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="drugs/drugs.html">
-        <h4 class="media-heading">Drugs</h4>
+        <a target="_blank" href="global_development/global_development.html">
+        <h4 class="media-heading">Global Development</h4>
         </a>
-        This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.<br>
-        <i>drugs, substances, drug usage</i>
+        Reports of country's development over time<br>
+        <i>world, countries, development, health, population, urban, rural, agriculture, infrastructure</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "drugs",
-            'body': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.",
-            'description': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.",
-            'tags': ["drugs", "substances", "drug usage"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="music">
-      
-      <div class="media-left  media-middle">
-        <a target="_blank" href="music/music.html">
-          <img class="media-object" src="music/music.png" alt="Music" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a target="_blank" href="music/music.html">
-        <h4 class="media-heading">Music</h4>
-        </a>
-        The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.<br>
-        <i>music, songs, artists, creativity, media</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "music",
-            'body': "This library comes from the Million Song Dataset, which used a company called the Echo Nest to derive data points about one million popular contemporary songs. The Million Song Dataset is a collaboration between the Echo Nest and LabROSA, a laboratory working towards intelligent machine listening. The project was also funded in part by the National Science Foundation of America (NSF) to provide a large data set to evaluate research related to algorithms on a commercial size while promoting further research into the Music Information Retrieval field. The data contains standard information about the songs such as artist name, title, and year released. Additionally, the data contains more advanced information; for example, the length of the song, how many musical bars long the song is, and how long the fade in to the song was.",
-            'description': "The Music library is a compilation of over one million contemporary songs and information about their audio features and metadata.",
-            'tags': ["music", "songs", "artists", "creativity", "media"]
+            'name': "global_development",
+            'body': "The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank. Included is different data about urban development, agriculture and rural development, health, and infrastructure.",
+            'description': "Reports of country's development over time",
+            'tags': ["world", "countries", "development", "health", "population", "urban", "rural", "agriculture", "infrastructure"]
         }
     );
     </script>
@@ -768,29 +768,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food_access">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="broadway/broadway.html">
-          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="food_access/food_access.html">
+          <img class="media-object" src="food_access/food_access.png" alt="Food Access" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="broadway/broadway.html">
-        <h4 class="media-heading">Broadway</h4>
+        <a target="_blank" href="food_access/food_access.html">
+        <h4 class="media-heading">Food Access</h4>
         </a>
-        This library holds data about Broadway shows, such as tickets sold.<br>
-        <i>broadway, musical, theatre, tickets</i>
+        Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.<br>
+        <i>counties, states, food, access, availability, supermarket, rural, urban, population, vehicles</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "broadway",
-            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
-            'description': "This library holds data about Broadway shows, such as tickets sold.",
-            'tags': ["broadway", "musical", "theatre", "tickets"]
+            'name': "food_access",
+            'body': "From the United States Department of Agriculture's Economic Research Service, the dataset contains information about US county's ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food. Most measures of how individuals and neighborhoods are able to access food are based on the following indicators: - Accessibility to sources of healthy food, as measured by distance to a store or by the number of stores in an area. - Individual-level resources that may affect accessibility, such as family income or vehicle availability. - Neighborhood-level indicators of resources, such as the average income of the neighborhood and the availability of public transportation.",
+            'description': "Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.",
+            'tags': ["counties", "states", "food", "access", "availability", "supermarket", "rural", "urban", "population", "vehicles"]
         }
     );
     </script>
@@ -903,29 +903,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="hospitals">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="health">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="hospitals/hospitals.html">
-          <img class="media-object" src="hospitals/hospitals.png" alt="Hospitals" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="health/health.html">
+          <img class="media-object" src="health/health.png" alt="Health" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="hospitals/hospitals.html">
-        <h4 class="media-heading">Hospitals</h4>
+        <a target="_blank" href="health/health.html">
+        <h4 class="media-heading">Health</h4>
         </a>
-        Records about the outpatient volume and other information for hospitals across the U.S.<br>
-        <i>hospitals, healthcare, medicare, outpatient, patient, doctor, health</i>
+        <br>
+        <i>health, diseases, infection</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "hospitals",
-            'body': "Medicare has collected data on many different hospitals throughout the country to allow users to compare the quality of these institutions before using their services. Data includes descriptions of the location of the hospitals, information about the hospitals' emergency services and type of hospital, and outpatient volume for the different wards of the hospitals.",
-            'description': "Records about the outpatient volume and other information for hospitals across the U.S.",
-            'tags': ["hospitals", "healthcare", "medicare", "outpatient", "patient", "doctor", "health"]
+            'name': "health",
+            'body': "This library holds data about reports of diseases in America.",
+            'description': "",
+            'tags': ["health", "diseases", "infection"]
         }
     );
     </script>
@@ -957,56 +957,56 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drug_bank">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="injuries">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="drug_bank/drug_bank.html">
-          <img class="media-object" src="drug_bank/drug_bank.png" alt="Drug Bank" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="injuries/injuries.html">
+          <img class="media-object" src="injuries/injuries.png" alt="Injuries" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="drug_bank/drug_bank.html">
-        <h4 class="media-heading">Drug Bank</h4>
+        <a target="_blank" href="injuries/injuries.html">
+        <h4 class="media-heading">Injuries</h4>
         </a>
-        The DrugBank database is a cheminformatics resource that combines detailed drug data with comprehensive drug target information.<br>
-        <i>drugs, drug, drugbank, chemistry, biology, biochemistry, proteins</i>
+        A sampling of work-related injury and illness data from the US.<br>
+        <i>osha, united states, us, usa, government, health, safety, injury, injuries, hurt, pain, job, work, industry, career, occuptation, safety, hazard, health</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "drug_bank",
-            'body': "The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.",
-            'description': "The DrugBank database is a cheminformatics resource that combines detailed drug data with comprehensive drug target information.",
-            'tags': ["drugs", "drug", "drugbank", "chemistry", "biology", "biochemistry", "proteins"]
+            'name': "injuries",
+            'body': "The Occupational Safety and Health Administration (OSHA) collected work-related injury and illness data from employers within specific industry and employment size specifications from 2002 through 2011. This data collection is called the OSHA Data Initiative or ODI. The data provided is used by OSHA to calculate establishment specific injury and illness incidence rates. This searchable database contains a table with the name, address, industry, and associated Total Case Rate (TCR), Days Away, Restricted, and Transfer (DART) case rate, and the Days Away From Work (DAFWII) case rate for the establishments that provided OSHA with valid data for calendar years 2002 through 2011. This data has been sampled down from its original size to 4%. In addition, the original dataset only has data from a small portion of all private sector establishments in the United States (80,000 out of 7.5 million total establishments). Therefore, these data are not representative of all businesses and general conclusions pertaining to all US business should not be overdrawn. Data quality: While OSHA takes multiple steps to ensure the data collected is accurate, problems and errors invariably exist for a small percentage of establishments. OSHA does not believe the data for the establishments with the highest rates on this file are accurate in absolute terms. Efforts were made during the collection cycle to correct submission errors, however some remain unresolved. It would be a mistake to say establishments with the highest rates on this file are the 'most dangerous' or 'worst' establishments in the Nation. Rate Calculation: An incidence rate of injuries and illnesses is computed from the following formula: (Number of injuries and illnesses X 200,000) / Employee hours worked = Incidence rate. The Total Case Rate includes all cases recorded on the OSHA Form 300 (Column G + Column H + Column I + Column J). The Days Away/Restriced/Transfer includes cases recorded in Column H + Column I. The Days Away includes cases recorded in Column H. For further information on injury and illness incidence rates, please visit the Bureau of Labor Statistics' webpage at http://www.bls.gov/iif/osheval.htm State Participation: Not all state plan states participate in the ODI. The following states did not participate in the 2010 ODI (collection of CY 2009 data), establishment data is not available for these states: Alaska; Oregon; Puerto Rico; South Carolina; Washington; Wyoming.",
+            'description': "A sampling of work-related injury and illness data from the US.",
+            'tags': ["osha", "united states", "us", "usa", "government", "health", "safety", "injury", "injuries", "hurt", "pain", "job", "work", "industry", "career", "occuptation", "safety", "hazard", "health"]
         }
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="state_demographics">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="state_demographics/state_demographics.html">
-          <img class="media-object" src="state_demographics/state_demographics.png" alt="State Demographics" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="food/food.html">
+          <img class="media-object" src="food/food.png" alt="Food" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="state_demographics/state_demographics.html">
-        <h4 class="media-heading">State Demographics</h4>
+        <a target="_blank" href="food/food.html">
+        <h4 class="media-heading">Food</h4>
         </a>
-        Demographic information for the states in the United States.<br>
-        <i>demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, states</i>
+        Statistics for various food items<br>
+        <i>food, vitamins, minerals, health, nutrition</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "state_demographics",
-            'body': "The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.",
-            'description': "Demographic information for the states in the United States.",
-            'tags': ["demographics", "population", "age", "ethnicity", "race", "language", "education", "foreign", "households", "income", "employment", "unemployment", "sales", "land area", "states"]
+            'name': "food",
+            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
+            'description': "Statistics for various food items",
+            'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
         }
     );
     </script>
@@ -1120,29 +1120,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="food_access">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="food_access/food_access.html">
-          <img class="media-object" src="food_access/food_access.png" alt="Food Access" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="broadway/broadway.html">
+          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="food_access/food_access.html">
-        <h4 class="media-heading">Food Access</h4>
+        <a target="_blank" href="broadway/broadway.html">
+        <h4 class="media-heading">Broadway</h4>
         </a>
-        Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.<br>
-        <i>counties, states, food, access, availability, supermarket, rural, urban, population, vehicles</i>
+        This library holds data about Broadway shows, such as tickets sold.<br>
+        <i>broadway, musical, theatre, tickets</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "food_access",
-            'body': "From the United States Department of Agriculture's Economic Research Service, the dataset contains information about US county's ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food. Most measures of how individuals and neighborhoods are able to access food are based on the following indicators: - Accessibility to sources of healthy food, as measured by distance to a store or by the number of stores in an area. - Individual-level resources that may affect accessibility, such as family income or vehicle availability. - Neighborhood-level indicators of resources, such as the average income of the neighborhood and the availability of public transportation.",
-            'description': "Data about counties ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.",
-            'tags': ["counties", "states", "food", "access", "availability", "supermarket", "rural", "urban", "population", "vehicles"]
+            'name': "broadway",
+            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
+            'description': "This library holds data about Broadway shows, such as tickets sold.",
+            'tags': ["broadway", "musical", "theatre", "tickets"]
         }
     );
     </script>
@@ -1174,56 +1174,56 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="global_development">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="hospitals">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="global_development/global_development.html">
-          <img class="media-object" src="global_development/global_development.png" alt="Global Development" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="hospitals/hospitals.html">
+          <img class="media-object" src="hospitals/hospitals.png" alt="Hospitals" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="global_development/global_development.html">
-        <h4 class="media-heading">Global Development</h4>
+        <a target="_blank" href="hospitals/hospitals.html">
+        <h4 class="media-heading">Hospitals</h4>
         </a>
-        Reports of country's development over time<br>
-        <i>world, countries, development, health, population, urban, rural, agriculture, infrastructure</i>
+        Records about the outpatient volume and other information for hospitals across the U.S.<br>
+        <i>hospitals, healthcare, medicare, outpatient, patient, doctor, health</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "global_development",
-            'body': "The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank. Included is different data about urban development, agriculture and rural development, health, and infrastructure.",
-            'description': "Reports of country's development over time",
-            'tags': ["world", "countries", "development", "health", "population", "urban", "rural", "agriculture", "infrastructure"]
+            'name': "hospitals",
+            'body': "Medicare has collected data on many different hospitals throughout the country to allow users to compare the quality of these institutions before using their services. Data includes descriptions of the location of the hospitals, information about the hospitals' emergency services and type of hospital, and outpatient volume for the different wards of the hospitals.",
+            'description': "Records about the outpatient volume and other information for hospitals across the U.S.",
+            'tags': ["hospitals", "healthcare", "medicare", "outpatient", "patient", "doctor", "health"]
         }
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="injuries">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="drug_bank">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="injuries/injuries.html">
-          <img class="media-object" src="injuries/injuries.png" alt="Injuries" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="drug_bank/drug_bank.html">
+          <img class="media-object" src="drug_bank/drug_bank.png" alt="Drug Bank" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="injuries/injuries.html">
-        <h4 class="media-heading">Injuries</h4>
+        <a target="_blank" href="drug_bank/drug_bank.html">
+        <h4 class="media-heading">Drug Bank</h4>
         </a>
-        A sampling of work-related injury and illness data from the US.<br>
-        <i>osha, united states, us, usa, government, health, safety, injury, injuries, hurt, pain, job, work, industry, career, occuptation, safety, hazard, health</i>
+        The DrugBank database is a cheminformatics resource that combines detailed drug data with comprehensive drug target information.<br>
+        <i>drugs, drug, drugbank, chemistry, biology, biochemistry, proteins</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "injuries",
-            'body': "The Occupational Safety and Health Administration (OSHA) collected work-related injury and illness data from employers within specific industry and employment size specifications from 2002 through 2011. This data collection is called the OSHA Data Initiative or ODI. The data provided is used by OSHA to calculate establishment specific injury and illness incidence rates. This searchable database contains a table with the name, address, industry, and associated Total Case Rate (TCR), Days Away, Restricted, and Transfer (DART) case rate, and the Days Away From Work (DAFWII) case rate for the establishments that provided OSHA with valid data for calendar years 2002 through 2011. This data has been sampled down from its original size to 4%. In addition, the original dataset only has data from a small portion of all private sector establishments in the United States (80,000 out of 7.5 million total establishments). Therefore, these data are not representative of all businesses and general conclusions pertaining to all US business should not be overdrawn. Data quality: While OSHA takes multiple steps to ensure the data collected is accurate, problems and errors invariably exist for a small percentage of establishments. OSHA does not believe the data for the establishments with the highest rates on this file are accurate in absolute terms. Efforts were made during the collection cycle to correct submission errors, however some remain unresolved. It would be a mistake to say establishments with the highest rates on this file are the 'most dangerous' or 'worst' establishments in the Nation. Rate Calculation: An incidence rate of injuries and illnesses is computed from the following formula: (Number of injuries and illnesses X 200,000) / Employee hours worked = Incidence rate. The Total Case Rate includes all cases recorded on the OSHA Form 300 (Column G + Column H + Column I + Column J). The Days Away/Restriced/Transfer includes cases recorded in Column H + Column I. The Days Away includes cases recorded in Column H. For further information on injury and illness incidence rates, please visit the Bureau of Labor Statistics' webpage at http://www.bls.gov/iif/osheval.htm State Participation: Not all state plan states participate in the ODI. The following states did not participate in the 2010 ODI (collection of CY 2009 data), establishment data is not available for these states: Alaska; Oregon; Puerto Rico; South Carolina; Washington; Wyoming.",
-            'description': "A sampling of work-related injury and illness data from the US.",
-            'tags': ["osha", "united states", "us", "usa", "government", "health", "safety", "injury", "injuries", "hurt", "pain", "job", "work", "industry", "career", "occuptation", "safety", "hazard", "health"]
+            'name': "drug_bank",
+            'body': "The DrugBank database is a unique bioinformatics and cheminformatics resource that combines detailed drug (i.e. chemical, pharmacological and pharmaceutical) data with comprehensive drug target (i.e. sequence, structure, and pathway) information.",
+            'description': "The DrugBank database is a cheminformatics resource that combines detailed drug data with comprehensive drug target information.",
+            'tags': ["drugs", "drug", "drugbank", "chemistry", "biology", "biochemistry", "proteins"]
         }
     );
     </script>

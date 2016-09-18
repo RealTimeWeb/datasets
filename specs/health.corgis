@@ -6,6 +6,7 @@ metadata:
     datetime: 11/1/2015
     tags: [health, diseases, infection]
     description:
+        short: This library holds data about reports of diseases in America.
         overview: >
             This library holds data about reports of diseases in America.
 local:

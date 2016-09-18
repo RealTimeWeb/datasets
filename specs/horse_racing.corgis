@@ -6,8 +6,9 @@ metadata:
     datetime: 11/10/2015
     tags: [churchill downs, horses, equines, racing, horse racing, gambling]
     description:
+        short: Data about horse races at Churchill Downs.
         overview: >
-            Data about horse races at Churchill Downs
+            Data about horse races at Churchill Downs.
 local:
   - file: horse_racing.json
     name: races
