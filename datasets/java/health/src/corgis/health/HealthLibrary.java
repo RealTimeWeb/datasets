@@ -15,7 +15,7 @@ import corgis.health.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'This library holds data about reports of diseases in America.\n', 'short': 'This library holds data about reports of diseases in America.\n'}
+ * {'overview': 'This library holds data about reports of diseases in America.\n', 'short': 'This library holds data about reports of diseases in America.'}
  */
 public class HealthLibrary {
     private String databasePath;
@@ -29,11 +29,11 @@ public class HealthLibrary {
         
         
         System.out.println("Testing production GetReportsByYear");
-        ArrayList<Report> list_of_report_1_production = healthLibrary.getReportsByYear("1990", false);
+        ArrayList<Report> list_of_report_1_production = healthLibrary.getReportsByYear(1990, false);
         
         
         System.out.println("Testing test GetReportsByYear");
-        ArrayList<Report> list_of_report_1_test = healthLibrary.getReportsByYear("1990", true);
+        ArrayList<Report> list_of_report_1_test = healthLibrary.getReportsByYear(1990, true);
         
         
         
@@ -146,10 +146,10 @@ public class HealthLibrary {
                 String raw_result = rs.getString(1);
                 Report parsed = null;
                 if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
@@ -218,10 +218,10 @@ public class HealthLibrary {
                 String raw_result = rs.getString(1);
                 Report parsed = null;
                 if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
@@ -290,10 +290,10 @@ public class HealthLibrary {
                 String raw_result = rs.getString(1);
                 Report parsed = null;
                 if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
@@ -354,10 +354,10 @@ public class HealthLibrary {
                 String raw_result = rs.getString(1);
                 Report parsed = null;
                 if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

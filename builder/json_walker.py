@@ -11,6 +11,8 @@ class JsonWalker(object):
         self.name = name
         self.empty_list_warnings = []
         self.comment_dictionary = comment_dictionary
+        self.untyped_lists = []
+        self.unchecked_lists = set()
     
     @property
     def json_path(self):
@@ -26,6 +28,7 @@ class JsonWalker(object):
             return value.__class__.__name__
         
     def walk(self, chunk, parent_name):
+        #print(self.json_path)
         if isinstance(chunk, dict):
             self.walk_dict(chunk, parent_name)
         elif isinstance(chunk, list):
@@ -50,16 +53,23 @@ class JsonWalker(object):
         #assert a_list, "Empty list at {path}".format(path=self.json_path)
         if a_list:
             entry_path = self.json_path
-            self.path.append("[0]")
-            first = a_list[0]
-            self.lists[entry_path] = {'type': self.type_check(first), 
-                                      'example': first, 
-                                      'comment': self.comment_dictionary.get(self.json_path, ""), 
-                                      'path': self.json_path}
-            self.walk(first, parent_name)
-            self.path.pop()
+            for first in a_list:
+                self.path.append("[0]")
+                first_type = self.type_check(first)
+                if first_type != "list[Unknown]" and entry_path in self.unchecked_lists:
+                    self.unchecked_lists.remove(entry_path)
+                comment = self.comment_dictionary.get(self.json_path, "")            
+                self.lists[entry_path] = {'type': first_type, 
+                                          'example': first, 
+                                          'comment': comment, 
+                                          'path': self.json_path}
+                self.walk(first, parent_name)
+                self.path.pop()
+                if not self.unchecked_lists:
+                    break
         else:
-            self.empty_list_warnings.append(self.json_path)
+            #self.empty_list_warnings.append(self.json_path)
+            self.unchecked_lists.add(self.json_path)
     def walk_atomic(self, an_atomic, parent_name):
         self.leaves.add(self.json_path)
 

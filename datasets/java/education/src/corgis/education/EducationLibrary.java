@@ -115,7 +115,7 @@ public class EducationLibrary {
                 if (test) {
                     
                 } else {
-                    parsed = new StateRecord((JSONObject)this.parser.parse(raw_result).get("data"));
+                    parsed = new StateRecord((JSONObject)((JSONObject)this.parser.parse(raw_result)).get("data"));
                     
                 }
                 
@@ -170,7 +170,7 @@ public class EducationLibrary {
                 if (test) {
                     
                 } else {
-                    parsed = new StateRecord((JSONObject)this.parser.parse(raw_result));
+                    parsed = new StateRecord(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

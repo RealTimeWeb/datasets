@@ -16,24 +16,24 @@ import org.json.simple.JSONObject;
  */
 public class AidsRelatedDeaths {
 	
-    private Integer aidsRelatedDeathsAllAges;
     // 15+ Years Old
-    private Integer aidsRelatedDeathsAmongMaleAdults;
+    private Integer maleAdults;
+    private Integer allAges;
     // 0-17 Years Old
     private Integer aidsOrphans;
-    // 15+ Years Old
-    private Integer aidsRelatedDeathsAmongAdults;
-    // 15+ Years Old
-    private Integer aidsRelatedDeathsAmongFemaleAdults;
     // 0-14 Years Old
-    private Integer aidsRelatedDeathsAmongChildren;
+    private Integer children;
+    // 15+ Years Old
+    private Integer femaleAdults;
+    // 15+ Years Old
+    private Integer adults;
     
     
     /*
      * @return 
      */
-    public Integer getAidsRelatedDeathsAllAges() {
-        return this.aidsRelatedDeathsAllAges;
+    public Integer getMaleAdults() {
+        return this.maleAdults;
     }
     
     
@@ -41,8 +41,8 @@ public class AidsRelatedDeaths {
     /*
      * @return 
      */
-    public Integer getAidsRelatedDeathsAmongMaleAdults() {
-        return this.aidsRelatedDeathsAmongMaleAdults;
+    public Integer getAllAges() {
+        return this.allAges;
     }
     
     
@@ -59,8 +59,8 @@ public class AidsRelatedDeaths {
     /*
      * @return 
      */
-    public Integer getAidsRelatedDeathsAmongAdults() {
-        return this.aidsRelatedDeathsAmongAdults;
+    public Integer getChildren() {
+        return this.children;
     }
     
     
@@ -68,8 +68,8 @@ public class AidsRelatedDeaths {
     /*
      * @return 
      */
-    public Integer getAidsRelatedDeathsAmongFemaleAdults() {
-        return this.aidsRelatedDeathsAmongFemaleAdults;
+    public Integer getFemaleAdults() {
+        return this.femaleAdults;
     }
     
     
@@ -77,8 +77,8 @@ public class AidsRelatedDeaths {
     /*
      * @return 
      */
-    public Integer getAidsRelatedDeathsAmongChildren() {
-        return this.aidsRelatedDeathsAmongChildren;
+    public Integer getAdults() {
+        return this.adults;
     }
     
     
@@ -90,7 +90,7 @@ public class AidsRelatedDeaths {
 	 * @return String
 	 */
 	public String toString() {
-		return "Aids-RelatedDeaths[" +aidsRelatedDeathsAllAges+", "+aidsRelatedDeathsAmongMaleAdults+", "+aidsOrphans+", "+aidsRelatedDeathsAmongAdults+", "+aidsRelatedDeathsAmongFemaleAdults+", "+aidsRelatedDeathsAmongChildren+"]";
+		return "Aids-RelatedDeaths[" +maleAdults+", "+allAges+", "+aidsOrphans+", "+children+", "+femaleAdults+", "+adults+"]";
 	}
 	
 	/**
@@ -98,13 +98,13 @@ public class AidsRelatedDeaths {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public AidsRelatedDeaths(JSONObject json_data) {
-        try {// AIDS-Related Deaths All Ages
-            this.aidsRelatedDeathsAllAges = new Integer(((Long)json_data.get("AIDS-Related Deaths All Ages")).intValue());// AIDS-Related Deaths Among Male Adults
-            this.aidsRelatedDeathsAmongMaleAdults = new Integer(((Long)json_data.get("AIDS-Related Deaths Among Male Adults")).intValue());// AIDS Orphans
-            this.aidsOrphans = new Integer(((Long)json_data.get("AIDS Orphans")).intValue());// AIDS-Related Deaths Among Adults
-            this.aidsRelatedDeathsAmongAdults = new Integer(((Long)json_data.get("AIDS-Related Deaths Among Adults")).intValue());// AIDS-Related Deaths Among Female Adults
-            this.aidsRelatedDeathsAmongFemaleAdults = new Integer(((Long)json_data.get("AIDS-Related Deaths Among Female Adults")).intValue());// AIDS-Related Deaths Among Children
-            this.aidsRelatedDeathsAmongChildren = new Integer(((Long)json_data.get("AIDS-Related Deaths Among Children")).intValue());
+        try {// Male Adults
+            this.maleAdults = new Integer(((Long)json_data.get("Male Adults")).intValue());// All Ages
+            this.allAges = new Integer(((Long)json_data.get("All Ages")).intValue());// AIDS Orphans
+            this.aidsOrphans = new Integer(((Long)json_data.get("AIDS Orphans")).intValue());// Children
+            this.children = new Integer(((Long)json_data.get("Children")).intValue());// Female Adults
+            this.femaleAdults = new Integer(((Long)json_data.get("Female Adults")).intValue());// Adults
+            this.adults = new Integer(((Long)json_data.get("Adults")).intValue());
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Aids-RelatedDeaths; a field was missing.");
     		e.printStackTrace();

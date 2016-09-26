@@ -111,10 +111,10 @@ public class SkyscrapersLibrary {
                 String raw_result = rs.getString(1);
                 Skyscraper parsed = null;
                 if (test) {
-                    parsed = new Skyscraper((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Skyscraper(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Skyscraper((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Skyscraper(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

@@ -18,7 +18,9 @@ import corgis.weather.domain.Wind;
  */
 public class Data {
 	
+    // Inches
     private Double precipitation;
+    // Degrees Farenheit
     private Temperature temperature;
     private Wind wind;
     

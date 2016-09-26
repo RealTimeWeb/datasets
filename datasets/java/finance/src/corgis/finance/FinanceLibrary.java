@@ -118,7 +118,7 @@ public class FinanceLibrary {
                 if (test) {
                     
                 } else {
-                    parsed = new Record((JSONObject)this.parser.parse(raw_result).get("data"));
+                    parsed = new Record((JSONObject)((JSONObject)this.parser.parse(raw_result)).get("data"));
                     
                 }
                 
@@ -179,10 +179,10 @@ public class FinanceLibrary {
                 String raw_result = rs.getString(1);
                 Record parsed = null;
                 if (test) {
-                    parsed = new Record((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Record(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Record((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Record(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

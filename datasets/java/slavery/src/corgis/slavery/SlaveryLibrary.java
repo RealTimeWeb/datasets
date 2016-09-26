@@ -29,11 +29,11 @@ public class SlaveryLibrary {
         
         
         System.out.println("Testing production GetTransaction");
-        ArrayList<TracsactionRecord> list_of_tracsaction_record_1_production = slaveryLibrary.getTransaction(false);
+        ArrayList<TransactionRecord> list_of_transaction_record_1_production = slaveryLibrary.getTransaction(false);
         
         
         System.out.println("Testing test GetTransaction");
-        ArrayList<TracsactionRecord> list_of_tracsaction_record_1_test = slaveryLibrary.getTransaction(true);
+        ArrayList<TransactionRecord> list_of_transaction_record_1_test = slaveryLibrary.getTransaction(true);
         
         
     }
@@ -71,9 +71,9 @@ public class SlaveryLibrary {
     /**
      * Returns a list of the transactions in the database.
     
-     * @return a list[tracsaction record]
+     * @return a list[transaction record]
      */
-	public ArrayList<TracsactionRecord> getTransaction() {
+	public ArrayList<TransactionRecord> getTransaction() {
         return this.getTransaction(true);
     }
     
@@ -81,9 +81,9 @@ public class SlaveryLibrary {
     /**
      * Returns a list of the transactions in the database.
     
-     * @return a list[tracsaction record]
+     * @return a list[transaction record]
      */
-	public ArrayList<TracsactionRecord> getTransaction(boolean test) {
+	public ArrayList<TransactionRecord> getTransaction(boolean test) {
         String query;
         if (test) {
             query = String.format("SELECT data FROM slavery LIMIT %d", this.HARDWARE);
@@ -105,16 +105,16 @@ public class SlaveryLibrary {
     		e.printStackTrace();
         }
         
-        ArrayList<TracsactionRecord> result = new ArrayList<TracsactionRecord>();
+        ArrayList<TransactionRecord> result = new ArrayList<TransactionRecord>();
         try {
             while (rs.next()) {
                 String raw_result = rs.getString(1);
-                TracsactionRecord parsed = null;
+                TransactionRecord parsed = null;
                 if (test) {
-                    parsed = new TransactionRecord((JSONObject)this.parser.parse(raw_result));
+                    parsed = new TransactionRecord(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new TransactionRecord((JSONObject)this.parser.parse(raw_result));
+                    parsed = new TransactionRecord(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

@@ -114,7 +114,7 @@ public class Skyscraper {
             this.material = (String)json_data.get("material");// purposes
             this.purposes = new Purposes((JSONObject)json_data.get("purposes"));// location
             this.location = new Location((JSONObject)json_data.get("location"));// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());
+            this.id = new Integer(((Double)json_data.get("id")).intValue());
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Skyscraper; a field was missing.");
     		e.printStackTrace();

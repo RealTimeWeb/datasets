@@ -198,9 +198,9 @@ def parse_bark(commands):
         command_name = components[0][0]
         args = components[0][1].split(",")
         if command_name == "json":
-            result = "(JSONObject)this.parser.parse({})".format(result)
+            result = "((JSONObject)this.parser.parse({}))".format(result)
         elif command_name == "jsonpath":
-            result = parse_json_path(args[0], result)
+            result = "(JSONObject)"+parse_json_path(args[0], result)
         elif command_name == "geocode":
             result = "{}, {} = _CACHE.geocode({})".format(args[1], args[2], args[0])
     return result

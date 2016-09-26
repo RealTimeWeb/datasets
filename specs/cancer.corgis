@@ -35,7 +35,7 @@ interfaces:
     description: Given a year, returns all the cancer reports for that year in the database.
     args:
       - name: year
-        default: '1999'
+        default: 1999
         type: int
         matches: SELECT DISTINCT report FROM cancer
         description: The year to get reports.

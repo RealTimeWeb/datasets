@@ -23,7 +23,7 @@
 <span class="sourceLineNo">015</span>import java.sql.*;<a name="line.15"></a>
 <span class="sourceLineNo">016</span><a name="line.16"></a>
 <span class="sourceLineNo">017</span>/**<a name="line.17"></a>
-<span class="sourceLineNo">018</span> * {'overview': 'This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry). You can view the data online at http://www.broadwayleague.com/.\n', 'short': 'This library holds data about Broadway shows, such as tickets sold.'}<a name="line.18"></a>
+<span class="sourceLineNo">018</span> * {'overview': 'This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset \n', 'short': 'This library holds data about Broadway shows, such as tickets sold.'}<a name="line.18"></a>
 <span class="sourceLineNo">019</span> */<a name="line.19"></a>
 <span class="sourceLineNo">020</span>public class BroadwayLibrary {<a name="line.20"></a>
 <span class="sourceLineNo">021</span>    private String databasePath;<a name="line.21"></a>
@@ -128,10 +128,10 @@
 <span class="sourceLineNo">120</span>                String raw_result = rs.getString(1);<a name="line.120"></a>
 <span class="sourceLineNo">121</span>                Production parsed = null;<a name="line.121"></a>
 <span class="sourceLineNo">122</span>                if (test) {<a name="line.122"></a>
-<span class="sourceLineNo">123</span>                    parsed = new Production((JSONObject)this.parser.parse(raw_result));<a name="line.123"></a>
+<span class="sourceLineNo">123</span>                    parsed = new Production(((JSONObject)this.parser.parse(raw_result)));<a name="line.123"></a>
 <span class="sourceLineNo">124</span>                    <a name="line.124"></a>
 <span class="sourceLineNo">125</span>                } else {<a name="line.125"></a>
-<span class="sourceLineNo">126</span>                    parsed = new Production((JSONObject)this.parser.parse(raw_result));<a name="line.126"></a>
+<span class="sourceLineNo">126</span>                    parsed = new Production(((JSONObject)this.parser.parse(raw_result)));<a name="line.126"></a>
 <span class="sourceLineNo">127</span>                    <a name="line.127"></a>
 <span class="sourceLineNo">128</span>                }<a name="line.128"></a>
 <span class="sourceLineNo">129</span>                <a name="line.129"></a>
@@ -200,10 +200,10 @@
 <span class="sourceLineNo">192</span>                String raw_result = rs.getString(1);<a name="line.192"></a>
 <span class="sourceLineNo">193</span>                Production parsed = null;<a name="line.193"></a>
 <span class="sourceLineNo">194</span>                if (test) {<a name="line.194"></a>
-<span class="sourceLineNo">195</span>                    parsed = new Production((JSONObject)this.parser.parse(raw_result));<a name="line.195"></a>
+<span class="sourceLineNo">195</span>                    parsed = new Production(((JSONObject)this.parser.parse(raw_result)));<a name="line.195"></a>
 <span class="sourceLineNo">196</span>                    <a name="line.196"></a>
 <span class="sourceLineNo">197</span>                } else {<a name="line.197"></a>
-<span class="sourceLineNo">198</span>                    parsed = new Production((JSONObject)this.parser.parse(raw_result));<a name="line.198"></a>
+<span class="sourceLineNo">198</span>                    parsed = new Production(((JSONObject)this.parser.parse(raw_result)));<a name="line.198"></a>
 <span class="sourceLineNo">199</span>                    <a name="line.199"></a>
 <span class="sourceLineNo">200</span>                }<a name="line.200"></a>
 <span class="sourceLineNo">201</span>                <a name="line.201"></a>

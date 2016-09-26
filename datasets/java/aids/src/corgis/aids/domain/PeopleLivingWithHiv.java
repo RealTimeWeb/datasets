@@ -16,28 +16,22 @@ import org.json.simple.JSONObject;
  */
 public class PeopleLivingWithHiv {
 	
-    // 15-24 Years Old
-    private Double hivPrevalenceAmongYoungWomen;
+    // 15+ Years Old
+    private Integer maleAdults;
+    private Integer total;
     // 0-14 Years Old
-    private Integer childrenLivingWithHiv;
-    private Integer peopleLivingWithHiv;
+    private Integer children;
     // 15+ Years Old
-    private Integer femaleAdultsLivingWithHiv;
-    // 15-24 Years Old
-    private Double hivPrevalenceAmongYoungMen;
+    private Integer femaleAdults;
     // 15+ Years Old
-    private Integer adultsLivingWithHiv;
-    // 15+ Years Old
-    private Integer maleAdultsLivingWithHiv;
-    // 15-49 Years Old
-    private Double hivPrevalenceAmongAdults;
+    private Integer adults;
     
     
     /*
      * @return 
      */
-    public Double getHivPrevalenceAmongYoungWomen() {
-        return this.hivPrevalenceAmongYoungWomen;
+    public Integer getMaleAdults() {
+        return this.maleAdults;
     }
     
     
@@ -45,8 +39,8 @@ public class PeopleLivingWithHiv {
     /*
      * @return 
      */
-    public Integer getChildrenLivingWithHiv() {
-        return this.childrenLivingWithHiv;
+    public Integer getTotal() {
+        return this.total;
     }
     
     
@@ -54,8 +48,8 @@ public class PeopleLivingWithHiv {
     /*
      * @return 
      */
-    public Integer getPeopleLivingWithHiv() {
-        return this.peopleLivingWithHiv;
+    public Integer getChildren() {
+        return this.children;
     }
     
     
@@ -63,8 +57,8 @@ public class PeopleLivingWithHiv {
     /*
      * @return 
      */
-    public Integer getFemaleAdultsLivingWithHiv() {
-        return this.femaleAdultsLivingWithHiv;
+    public Integer getFemaleAdults() {
+        return this.femaleAdults;
     }
     
     
@@ -72,35 +66,8 @@ public class PeopleLivingWithHiv {
     /*
      * @return 
      */
-    public Double getHivPrevalenceAmongYoungMen() {
-        return this.hivPrevalenceAmongYoungMen;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getAdultsLivingWithHiv() {
-        return this.adultsLivingWithHiv;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getMaleAdultsLivingWithHiv() {
-        return this.maleAdultsLivingWithHiv;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getHivPrevalenceAmongAdults() {
-        return this.hivPrevalenceAmongAdults;
+    public Integer getAdults() {
+        return this.adults;
     }
     
     
@@ -112,7 +79,7 @@ public class PeopleLivingWithHiv {
 	 * @return String
 	 */
 	public String toString() {
-		return "PeopleLivingWithHiv[" +hivPrevalenceAmongYoungWomen+", "+childrenLivingWithHiv+", "+peopleLivingWithHiv+", "+femaleAdultsLivingWithHiv+", "+hivPrevalenceAmongYoungMen+", "+adultsLivingWithHiv+", "+maleAdultsLivingWithHiv+", "+hivPrevalenceAmongAdults+"]";
+		return "PeopleLivingWithHiv[" +maleAdults+", "+total+", "+children+", "+femaleAdults+", "+adults+"]";
 	}
 	
 	/**
@@ -120,15 +87,12 @@ public class PeopleLivingWithHiv {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public PeopleLivingWithHiv(JSONObject json_data) {
-        try {// HIV Prevalence Among Young Women
-            this.hivPrevalenceAmongYoungWomen = (Double)json_data.get("HIV Prevalence Among Young Women");// Children Living with HIV
-            this.childrenLivingWithHiv = new Integer(((Long)json_data.get("Children Living with HIV")).intValue());// People Living with HIV
-            this.peopleLivingWithHiv = new Integer(((Long)json_data.get("People Living with HIV")).intValue());// Female Adults Living with HIV
-            this.femaleAdultsLivingWithHiv = new Integer(((Long)json_data.get("Female Adults Living with HIV")).intValue());// HIV Prevalence Among Young Men
-            this.hivPrevalenceAmongYoungMen = (Double)json_data.get("HIV Prevalence Among Young Men");// Adults Living with HIV
-            this.adultsLivingWithHiv = new Integer(((Long)json_data.get("Adults Living with HIV")).intValue());// Male Adults Living with HIV
-            this.maleAdultsLivingWithHiv = new Integer(((Long)json_data.get("Male Adults Living with HIV")).intValue());// HIV Prevalence Among Adults
-            this.hivPrevalenceAmongAdults = (Double)json_data.get("HIV Prevalence Among Adults");
+        try {// Male Adults
+            this.maleAdults = new Integer(((Long)json_data.get("Male Adults")).intValue());// Total
+            this.total = new Integer(((Long)json_data.get("Total")).intValue());// Children
+            this.children = new Integer(((Long)json_data.get("Children")).intValue());// Female Adults
+            this.femaleAdults = new Integer(((Long)json_data.get("Female Adults")).intValue());// Adults
+            this.adults = new Integer(((Long)json_data.get("Adults")).intValue());
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a PeopleLivingWithHiv; a field was missing.");
     		e.printStackTrace();

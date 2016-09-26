@@ -55,7 +55,7 @@ public class Completed {
     public Completed(JSONObject json_data) {
         try {// is completed
             this.isCompleted = (Boolean)json_data.get("is completed");// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());
+            this.year = new Integer(((Double)json_data.get("year")).intValue());
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Completed; a field was missing.");
     		e.printStackTrace();

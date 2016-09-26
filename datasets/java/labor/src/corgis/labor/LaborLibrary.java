@@ -102,7 +102,7 @@ public class LaborLibrary {
                 if (test) {
                     
                 } else {
-                    parsed = new Result((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Result(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

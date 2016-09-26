@@ -111,10 +111,10 @@ public class ElectionLibrary {
                 String raw_result = rs.getString(1);
                 Result parsed = null;
                 if (test) {
-                    parsed = new Result((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Result(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Result((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Result(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

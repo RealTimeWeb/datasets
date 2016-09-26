@@ -38,11 +38,11 @@ public class CancerLibrary {
         
         
         System.out.println("Testing production GetReportsByYear");
-        ArrayList<Report> list_of_report_2_production = cancerLibrary.getReportsByYear("1999", false);
+        ArrayList<Report> list_of_report_2_production = cancerLibrary.getReportsByYear(1999, false);
         
         
         System.out.println("Testing test GetReportsByYear");
-        ArrayList<Report> list_of_report_2_test = cancerLibrary.getReportsByYear("1999", true);
+        ArrayList<Report> list_of_report_2_test = cancerLibrary.getReportsByYear(1999, true);
         
         
         

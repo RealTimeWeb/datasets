@@ -36,24 +36,6 @@ public class WeatherLibrary {
         ArrayList<Report> list_of_report_1_test = weatherLibrary.getWeather(true);
         
         
-        
-        System.out.println("Testing production GetWeatherByDay");
-        ArrayList<Report> list_of_report_2_production = weatherLibrary.getWeatherByDay("6-1-16", false);
-        
-        
-        System.out.println("Testing test GetWeatherByDay");
-        ArrayList<Report> list_of_report_2_test = weatherLibrary.getWeatherByDay("6-1-16", true);
-        
-        
-        
-        System.out.println("Testing production GetWeatherByCity");
-        ArrayList<Report> list_of_report_3_production = weatherLibrary.getWeatherByCity("Blacksburg", false);
-        
-        
-        System.out.println("Testing test GetWeatherByCity");
-        ArrayList<Report> list_of_report_3_test = weatherLibrary.getWeatherByCity("Blacksburg", true);
-        
-        
     }
     
     private void connectToDatabase(String databasePath) {
@@ -129,10 +111,10 @@ public class WeatherLibrary {
                 String raw_result = rs.getString(1);
                 Report parsed = null;
                 if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
@@ -144,150 +126,6 @@ public class WeatherLibrary {
     		e.printStackTrace();
         } catch (ParseException e) {
             System.err.println("Could not convert the response from getWeather; a parser error occurred.");
-    		e.printStackTrace();
-        }
-        return result;
-	}
-    
-    
-    /**
-     * Given a day, returns all the weather reports for that day in the database.
-    
-     * @param day The day to get reports.
-     * @return a list[report]
-     */
-	public ArrayList<Report> getWeatherByDay(String day) {
-        return this.getWeatherByDay(day, true);
-    }
-    
-    
-    /**
-     * Given a day, returns all the weather reports for that day in the database.
-    
-     * @param day The day to get reports.
-     * @return a list[report]
-     */
-	public ArrayList<Report> getWeatherByDay(String day, boolean test) {
-        String query;
-        if (test) {
-            query = String.format("SELECT data FROM weather WHERE year=? LIMIT %d", this.HARDWARE);
-        } else {
-            query = "SELECT data FROM weather WHERE year=?";
-        }
-        PreparedStatement preparedQuery = null;
-        ResultSet rs = null;
-        try {
-            preparedQuery = this.connection.prepareStatement(query);
-        } catch (SQLException e) {
-            System.err.println("Could not build SQL query for local database.");
-    		e.printStackTrace();
-        }
-        try {
-            preparedQuery.setString(1, day);
-        } catch (SQLException e) {
-            System.err.println("Could not build prepare argument: day");
-    		e.printStackTrace();
-        }
-        try {
-            rs = preparedQuery.executeQuery();
-        } catch (SQLException e) {
-            System.err.println("Could not execute query.");
-    		e.printStackTrace();
-        }
-        
-        ArrayList<Report> result = new ArrayList<Report>();
-        try {
-            while (rs.next()) {
-                String raw_result = rs.getString(1);
-                Report parsed = null;
-                if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
-                    
-                } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
-                    
-                }
-                
-                result.add(parsed);
-                
-            }
-        } catch (SQLException e) {
-            System.err.println("Could not iterate through query.");
-    		e.printStackTrace();
-        } catch (ParseException e) {
-            System.err.println("Could not convert the response from getWeatherByDay; a parser error occurred.");
-    		e.printStackTrace();
-        }
-        return result;
-	}
-    
-    
-    /**
-     * Given a city, returns all the weather reports for that city in the database.
-    
-     * @param city The city to get reports.
-     * @return a list[report]
-     */
-	public ArrayList<Report> getWeatherByCity(String city) {
-        return this.getWeatherByCity(city, true);
-    }
-    
-    
-    /**
-     * Given a city, returns all the weather reports for that city in the database.
-    
-     * @param city The city to get reports.
-     * @return a list[report]
-     */
-	public ArrayList<Report> getWeatherByCity(String city, boolean test) {
-        String query;
-        if (test) {
-            query = String.format("SELECT data FROM weather WHERE year=? LIMIT %d", this.HARDWARE);
-        } else {
-            query = "SELECT data FROM weather WHERE year=?";
-        }
-        PreparedStatement preparedQuery = null;
-        ResultSet rs = null;
-        try {
-            preparedQuery = this.connection.prepareStatement(query);
-        } catch (SQLException e) {
-            System.err.println("Could not build SQL query for local database.");
-    		e.printStackTrace();
-        }
-        try {
-            preparedQuery.setString(1, city);
-        } catch (SQLException e) {
-            System.err.println("Could not build prepare argument: city");
-    		e.printStackTrace();
-        }
-        try {
-            rs = preparedQuery.executeQuery();
-        } catch (SQLException e) {
-            System.err.println("Could not execute query.");
-    		e.printStackTrace();
-        }
-        
-        ArrayList<Report> result = new ArrayList<Report>();
-        try {
-            while (rs.next()) {
-                String raw_result = rs.getString(1);
-                Report parsed = null;
-                if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
-                    
-                } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
-                    
-                }
-                
-                result.add(parsed);
-                
-            }
-        } catch (SQLException e) {
-            System.err.println("Could not iterate through query.");
-    		e.printStackTrace();
-        } catch (ParseException e) {
-            System.err.println("Could not convert the response from getWeatherByCity; a parser error occurred.");
     		e.printStackTrace();
         }
         return result;

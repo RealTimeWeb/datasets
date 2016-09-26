@@ -28,7 +28,7 @@ interfaces:
       - name: year
         type: int
         description: A year between 1928 and 2011.
-        default: "1990"
+        default: 1990
     test:
         sql: SELECT data FROM health WHERE year=? ORDER BY year, location, disease ASC LIMIT {hardware}
         post: json()

@@ -82,9 +82,9 @@
 <span class="sourceLineNo">074</span>         */<a name="line.74"></a>
 <span class="sourceLineNo">075</span>    public Statistics(JSONObject json_data) {<a name="line.75"></a>
 <span class="sourceLineNo">076</span>        try {// number of purposes<a name="line.76"></a>
-<span class="sourceLineNo">077</span>            this.numberOfPurposes = new Integer(((Long)json_data.get("number of purposes")).intValue());// floors above<a name="line.77"></a>
-<span class="sourceLineNo">078</span>            this.floorsAbove = new Integer(((Long)json_data.get("floors above")).intValue());// rank<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.rank = new Integer(((Long)json_data.get("rank")).intValue());// height<a name="line.79"></a>
+<span class="sourceLineNo">077</span>            this.numberOfPurposes = new Integer(((Double)json_data.get("number of purposes")).intValue());// floors above<a name="line.77"></a>
+<span class="sourceLineNo">078</span>            this.floorsAbove = new Integer(((Double)json_data.get("floors above")).intValue());// rank<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            this.rank = new Integer(((Double)json_data.get("rank")).intValue());// height<a name="line.79"></a>
 <span class="sourceLineNo">080</span>            this.height = (Double)json_data.get("height");<a name="line.80"></a>
 <span class="sourceLineNo">081</span>        } catch (NullPointerException e) {<a name="line.81"></a>
 <span class="sourceLineNo">082</span>                System.err.println("Could not convert the response to a Statistics; a field was missing.");<a name="line.82"></a>

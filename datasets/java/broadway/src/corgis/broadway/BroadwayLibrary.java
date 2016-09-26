@@ -15,7 +15,7 @@ import corgis.broadway.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'This library holds data about Broadway shows, made available by the Broadway League (the national trade association for the Broadway industry). You can view the data online at http://www.broadwayleague.com/.\n', 'short': 'This library holds data about Broadway shows, such as tickets sold.'}
+ * {'overview': 'This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset \n', 'short': 'This library holds data about Broadway shows, such as tickets sold.'}
  */
 public class BroadwayLibrary {
     private String databasePath;
@@ -120,10 +120,10 @@ public class BroadwayLibrary {
                 String raw_result = rs.getString(1);
                 Production parsed = null;
                 if (test) {
-                    parsed = new Production((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Production(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Production((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Production(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
@@ -192,10 +192,10 @@ public class BroadwayLibrary {
                 String raw_result = rs.getString(1);
                 Production parsed = null;
                 if (test) {
-                    parsed = new Production((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Production(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Production((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Production(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

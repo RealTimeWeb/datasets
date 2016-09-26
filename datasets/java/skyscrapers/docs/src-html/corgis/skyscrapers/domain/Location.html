@@ -103,11 +103,11 @@
 <span class="sourceLineNo">095</span>    public Location(JSONObject json_data) {<a name="line.95"></a>
 <span class="sourceLineNo">096</span>        try {// city<a name="line.96"></a>
 <span class="sourceLineNo">097</span>            this.city = (String)json_data.get("city");// city_id<a name="line.97"></a>
-<span class="sourceLineNo">098</span>            this.city_Id = new Integer(((Long)json_data.get("city_id")).intValue());// country<a name="line.98"></a>
+<span class="sourceLineNo">098</span>            this.city_Id = new Integer(((Double)json_data.get("city_id")).intValue());// country<a name="line.98"></a>
 <span class="sourceLineNo">099</span>            this.country = (String)json_data.get("country");// country id<a name="line.99"></a>
-<span class="sourceLineNo">100</span>            this.countryId = new Integer(((Long)json_data.get("country id")).intValue());// longitude<a name="line.100"></a>
-<span class="sourceLineNo">101</span>            this.longitude = new Integer(((Long)json_data.get("longitude")).intValue());// latitude<a name="line.101"></a>
-<span class="sourceLineNo">102</span>            this.latitude = new Integer(((Long)json_data.get("latitude")).intValue());<a name="line.102"></a>
+<span class="sourceLineNo">100</span>            this.countryId = new Integer(((Double)json_data.get("country id")).intValue());// longitude<a name="line.100"></a>
+<span class="sourceLineNo">101</span>            this.longitude = new Integer(((Double)json_data.get("longitude")).intValue());// latitude<a name="line.101"></a>
+<span class="sourceLineNo">102</span>            this.latitude = new Integer(((Double)json_data.get("latitude")).intValue());<a name="line.102"></a>
 <span class="sourceLineNo">103</span>        } catch (NullPointerException e) {<a name="line.103"></a>
 <span class="sourceLineNo">104</span>                System.err.println("Could not convert the response to a Location; a field was missing.");<a name="line.104"></a>
 <span class="sourceLineNo">105</span>                e.printStackTrace();<a name="line.105"></a>

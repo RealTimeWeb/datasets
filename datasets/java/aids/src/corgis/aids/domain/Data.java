@@ -10,6 +10,7 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import corgis.aids.domain.HivPrevalence;
 import corgis.aids.domain.PeopleLivingWithHiv;
 import corgis.aids.domain.NewHivInfections;
 import corgis.aids.domain.AidsRelatedDeaths;
@@ -19,9 +20,19 @@ import corgis.aids.domain.AidsRelatedDeaths;
  */
 public class Data {
 	
+    private HivPrevalence hivPrevalence;
     private PeopleLivingWithHiv peopleLivingWithHiv;
     private NewHivInfections newHivInfections;
     private AidsRelatedDeaths aidsRelatedDeaths;
+    
+    
+    /*
+     * @return 
+     */
+    public HivPrevalence getHivPrevalence() {
+        return this.hivPrevalence;
+    }
+    
     
     
     /*
@@ -58,7 +69,7 @@ public class Data {
 	 * @return String
 	 */
 	public String toString() {
-		return "Data[" +peopleLivingWithHiv+", "+newHivInfections+", "+aidsRelatedDeaths+"]";
+		return "Data[" +hivPrevalence+", "+peopleLivingWithHiv+", "+newHivInfections+", "+aidsRelatedDeaths+"]";
 	}
 	
 	/**
@@ -66,7 +77,8 @@ public class Data {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Data(JSONObject json_data) {
-        try {// People Living with HIV
+        try {// HIV Prevalence
+            this.hivPrevalence = new HivPrevalence((JSONObject)json_data.get("HIV Prevalence"));// People Living with HIV
             this.peopleLivingWithHiv = new PeopleLivingWithHiv((JSONObject)json_data.get("People Living with HIV"));// New HIV Infections
             this.newHivInfections = new NewHivInfections((JSONObject)json_data.get("New HIV Infections"));// AIDS-Related Deaths
             this.aidsRelatedDeaths = new AidsRelatedDeaths((JSONObject)json_data.get("AIDS-Related Deaths"));

@@ -16,26 +16,17 @@ import org.json.simple.JSONObject;
  */
 public class NewHivInfections {
 	
-    // 0-14 Years Old
-    private Integer newHivInfectionsAmongChildren;
     // 15-49 Years Old
     private Double incidenceRateAmongAdults;
     // 15+ Years Old
-    private Integer newHivInfectionsAmongAdults;
-    private Integer newHivInfectionsAllAges;
+    private Integer maleAdults;
+    private Integer allAges;
+    // 0-14 Years Old
+    private Integer children;
     // 15+ Years Old
-    private Double newHivInfectionsAmongFemaleAdults;
+    private Double femaleAdults;
     // 15+ Years Old
-    private Integer newHivInfectionsAmongMaleAdults;
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getNewHivInfectionsAmongChildren() {
-        return this.newHivInfectionsAmongChildren;
-    }
-    
+    private Integer adults;
     
     
     /*
@@ -50,8 +41,8 @@ public class NewHivInfections {
     /*
      * @return 
      */
-    public Integer getNewHivInfectionsAmongAdults() {
-        return this.newHivInfectionsAmongAdults;
+    public Integer getMaleAdults() {
+        return this.maleAdults;
     }
     
     
@@ -59,8 +50,8 @@ public class NewHivInfections {
     /*
      * @return 
      */
-    public Integer getNewHivInfectionsAllAges() {
-        return this.newHivInfectionsAllAges;
+    public Integer getAllAges() {
+        return this.allAges;
     }
     
     
@@ -68,8 +59,8 @@ public class NewHivInfections {
     /*
      * @return 
      */
-    public Double getNewHivInfectionsAmongFemaleAdults() {
-        return this.newHivInfectionsAmongFemaleAdults;
+    public Integer getChildren() {
+        return this.children;
     }
     
     
@@ -77,8 +68,17 @@ public class NewHivInfections {
     /*
      * @return 
      */
-    public Integer getNewHivInfectionsAmongMaleAdults() {
-        return this.newHivInfectionsAmongMaleAdults;
+    public Double getFemaleAdults() {
+        return this.femaleAdults;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getAdults() {
+        return this.adults;
     }
     
     
@@ -90,7 +90,7 @@ public class NewHivInfections {
 	 * @return String
 	 */
 	public String toString() {
-		return "NewHivInfections[" +newHivInfectionsAmongChildren+", "+incidenceRateAmongAdults+", "+newHivInfectionsAmongAdults+", "+newHivInfectionsAllAges+", "+newHivInfectionsAmongFemaleAdults+", "+newHivInfectionsAmongMaleAdults+"]";
+		return "NewHivInfections[" +incidenceRateAmongAdults+", "+maleAdults+", "+allAges+", "+children+", "+femaleAdults+", "+adults+"]";
 	}
 	
 	/**
@@ -98,13 +98,13 @@ public class NewHivInfections {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public NewHivInfections(JSONObject json_data) {
-        try {// New HIV Infections Among Children
-            this.newHivInfectionsAmongChildren = new Integer(((Long)json_data.get("New HIV Infections Among Children")).intValue());// Incidence Rate Among Adults
-            this.incidenceRateAmongAdults = (Double)json_data.get("Incidence Rate Among Adults");// New HIV Infections Among Adults
-            this.newHivInfectionsAmongAdults = new Integer(((Long)json_data.get("New HIV Infections Among Adults")).intValue());// New HIV Infections All Ages
-            this.newHivInfectionsAllAges = new Integer(((Long)json_data.get("New HIV Infections All Ages")).intValue());// New HIV Infections Among Female Adults
-            this.newHivInfectionsAmongFemaleAdults = (Double)json_data.get("New HIV Infections Among Female Adults");// New HIV Infections Among Male Adults
-            this.newHivInfectionsAmongMaleAdults = new Integer(((Long)json_data.get("New HIV Infections Among Male Adults")).intValue());
+        try {// Incidence Rate Among Adults
+            this.incidenceRateAmongAdults = (Double)json_data.get("Incidence Rate Among Adults");// Male Adults
+            this.maleAdults = new Integer(((Long)json_data.get("Male Adults")).intValue());// All Ages
+            this.allAges = new Integer(((Long)json_data.get("All Ages")).intValue());// Children
+            this.children = new Integer(((Long)json_data.get("Children")).intValue());// Female Adults
+            this.femaleAdults = (Double)json_data.get("Female Adults");// Adults
+            this.adults = new Integer(((Long)json_data.get("Adults")).intValue());
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a NewHivInfections; a field was missing.");
     		e.printStackTrace();

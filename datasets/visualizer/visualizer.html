@@ -64,30 +64,83 @@ $(document).ready(function() {
     
     <div class="row">
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="publishers">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="airlines">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="publishers/publishers.html">
-          <img class="media-object" src="publishers/publishers.png" alt="Publishers" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="airlines/airlines.html">
+          <img class="media-object" src="airlines/airlines.png" alt="Airlines" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="publishers/publishers.html">
-        <h4 class="media-heading">Publishers</h4>
+        <a target="_blank" href="airlines/airlines.html">
+        <h4 class="media-heading">Airlines</h4>
         </a>
-        E-book sales on Amazon, including daily and total earnings for 54,000 titles.
-<br>
-        <i>publishers, amazon, books, sales, genres, literature, english</i>
+        Information about flight delays in major aiports since 2003.<br>
+        <i>airplane, airports, travel, plane, air, flights, delays, national, united states, transportation</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "publishers",
-            'body': "From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking.",
-            'description': "E-book sales on Amazon, including daily and total earnings for 54,000 titles.",
-            'tags': ["publishers", "amazon", "books", "sales", "genres", "literature", "english"]
+            'name': "airlines",
+            'body': "This dataset is all about flights in the united states, including information about the number, length, and type of delays. The data is reported for individual months at every major airport for every carrier. Additional information is available: http://www.rita.dot.gov/bts/help/aviation/html/understanding.html",
+            'description': "Information about flight delays in major aiports since 2003.",
+            'tags': ["airplane", "airports", "travel", "plane", "air", "flights", "delays", "national", "united states", "transportation"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
+      
+      <div class="media-left  media-middle">
+        <a target="_blank" href="broadway/broadway.html">
+          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a target="_blank" href="broadway/broadway.html">
+        <h4 class="media-heading">Broadway</h4>
+        </a>
+        This library holds data about Broadway shows, such as tickets sold.<br>
+        <i>broadway, musical, theatre, tickets</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "broadway",
+            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
+            'description': "This library holds data about Broadway shows, such as tickets sold.",
+            'tags': ["broadway", "musical", "theatre", "tickets"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="classics">
+      
+      <div class="media-left  media-middle">
+        <a target="_blank" href="classics/classics.html">
+          <img class="media-object" src="classics/classics.png" alt="Classics" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a target="_blank" href="classics/classics.html">
+        <h4 class="media-heading">Classics</h4>
+        </a>
+        Records and computed statistics about the top 1000 books on Project Gutenberg.<br>
+        <i>classics, books, texts, text, book, classic, english, shakespeare, literature, novel, language, composition, writing, author, publication, words</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "classics",
+            'body': "Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural works, to 'encourage the creation and distribution of eBooks'. It was founded in 1971 by Michael S. Hart and is the oldest digital library. This dataset is a collection of the top 1000 most popular books on Project Gutenberg, as determined by downloads. Each book has information about its authorship, publication date, congressional classication, and a few other fields. It also has some simple, computed statistics based on common metrics such as sentiment analysis, Flesch Kincaid Reading level, and average sentence length.",
+            'description': "Records and computed statistics about the top 1000 books on Project Gutenberg.",
+            'tags': ["classics", "books", "texts", "text", "book", "classic", "english", "shakespeare", "literature", "novel", "language", "composition", "writing", "author", "publication", "words"]
         }
     );
     </script>
@@ -119,29 +172,29 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="state_crime">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="earthquakes">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="state_crime/state_crime.html">
-          <img class="media-object" src="state_crime/state_crime.png" alt="State Crime" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="earthquakes/earthquakes.html">
+          <img class="media-object" src="earthquakes/earthquakes.png" alt="Earthquakes" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="state_crime/state_crime.html">
-        <h4 class="media-heading">State Crime</h4>
+        <a target="_blank" href="earthquakes/earthquakes.html">
+        <h4 class="media-heading">Earthquakes</h4>
         </a>
-        Records about the crime rates and totals for US states over time.<br>
-        <i>crime, burglary, larceny, motor, property, violent, assault, murder, rape, robbery</i>
+        Records from different earthquake occurences across the world.<br>
+        <i>earthquakes, nature, disaster, magnitude, richter scale, latitude, longitude</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "state_crime",
-            'body': "From the Unified Crime Reporting Statistics and under the collaboration of the U.S. Department of Justice and the Federal Bureau of Investigation information crime statistics are available for public review. The following data set has information on the crime rates and totals for states across the United States for a wide range of years. The crime reports are divided into two main categories: property and violent crime. Property crime refers to burglary, larceny, and motor related crime while violent crime refers to assault, murder, rape, and robbery.",
-            'description': "Records about the crime rates and totals for US states over time.",
-            'tags': ["crime", "burglary", "larceny", "motor", "property", "violent", "assault", "murder", "rape", "robbery"]
+            'name': "earthquakes",
+            'body': "Earthquake records from around the world collected from the United States Geological Survey. Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake. Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included. The earthquakes collected are from the past month.",
+            'description': "Records from different earthquake occurences across the world.",
+            'tags': ["earthquakes", "nature", "disaster", "magnitude", "richter scale", "latitude", "longitude"]
         }
     );
     </script>
@@ -173,29 +226,57 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="airlines">
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="publishers">
       
       <div class="media-left  media-middle">
-        <a target="_blank" href="airlines/airlines.html">
-          <img class="media-object" src="airlines/airlines.png" alt="Airlines" style="max-width: 64px; max-height: 64px;">
+        <a target="_blank" href="publishers/publishers.html">
+          <img class="media-object" src="publishers/publishers.png" alt="Publishers" style="max-width: 64px; max-height: 64px;">
         </a>
       </div>
       
       <div class="media-body">
-        <a target="_blank" href="airlines/airlines.html">
-        <h4 class="media-heading">Airlines</h4>
+        <a target="_blank" href="publishers/publishers.html">
+        <h4 class="media-heading">Publishers</h4>
         </a>
-        Information about flight delays in major aiports since 2003.<br>
-        <i>airplane, airports, travel, plane, air, flights, delays, national, united states, transportation</i>
+        E-book sales on Amazon, including daily and total earnings for 54,000 titles.
+<br>
+        <i>publishers, amazon, books, sales, genres, literature, english</i>
       </div>
     </div>
     <script>
     searcher.add(
         {
-            'name': "airlines",
-            'body': "This dataset is all about flights in the united states, including information about the number, length, and type of delays. The data is reported for individual months at every major airport for every carrier. Additional information is available: http://www.rita.dot.gov/bts/help/aviation/html/understanding.html",
-            'description': "Information about flight delays in major aiports since 2003.",
-            'tags': ["airplane", "airports", "travel", "plane", "air", "flights", "delays", "national", "united states", "transportation"]
+            'name': "publishers",
+            'body': "From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking.",
+            'description': "E-book sales on Amazon, including daily and total earnings for 54,000 titles.",
+            'tags': ["publishers", "amazon", "books", "sales", "genres", "literature", "english"]
+        }
+    );
+    </script>
+    
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="state_crime">
+      
+      <div class="media-left  media-middle">
+        <a target="_blank" href="state_crime/state_crime.html">
+          <img class="media-object" src="state_crime/state_crime.png" alt="State Crime" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a target="_blank" href="state_crime/state_crime.html">
+        <h4 class="media-heading">State Crime</h4>
+        </a>
+        Records about the crime rates and totals for US states over time.<br>
+        <i>crime, burglary, larceny, motor, property, violent, assault, murder, rape, robbery</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "state_crime",
+            'body': "From the Unified Crime Reporting Statistics and under the collaboration of the U.S. Department of Justice and the Federal Bureau of Investigation information crime statistics are available for public review. The following data set has information on the crime rates and totals for states across the United States for a wide range of years. The crime reports are divided into two main categories: property and violent crime. Property crime refers to burglary, larceny, and motor related crime while violent crime refers to assault, murder, rape, and robbery.",
+            'description': "Records about the crime rates and totals for US states over time.",
+            'tags': ["crime", "burglary", "larceny", "motor", "property", "violent", "assault", "murder", "rape", "robbery"]
         }
     );
     </script>
@@ -277,87 +358,6 @@ $(document).ready(function() {
             'body': "Under the National Oceanic and Atmpospheric Administration, the National Weather Service provides daily weather reports for cities across the county. This is done through the use of 122 different Weather Forcast Offices throughout the country. These WFOs are responsible for the daily weather reports for serveral cities throughout their region of coverage. This data set takes the information from these WFO reports for cities across the country through the months of April to June of 2016.",
             'description': "Weather records through the months of April and June of 2016 across the U.S.",
             'tags': ["weather", "rain", "snow", "sleet", "fog", "temperature", "wind"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="broadway">
-      
-      <div class="media-left  media-middle">
-        <a target="_blank" href="broadway/broadway.html">
-          <img class="media-object" src="broadway/broadway.png" alt="Broadway" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a target="_blank" href="broadway/broadway.html">
-        <h4 class="media-heading">Broadway</h4>
-        </a>
-        This library holds data about Broadway shows, such as tickets sold.<br>
-        <i>broadway, musical, theatre, tickets</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "broadway",
-            'body': "This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset",
-            'description': "This library holds data about Broadway shows, such as tickets sold.",
-            'tags': ["broadway", "musical", "theatre", "tickets"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="classics">
-      
-      <div class="media-left  media-middle">
-        <a target="_blank" href="classics/classics.html">
-          <img class="media-object" src="classics/classics.png" alt="Classics" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a target="_blank" href="classics/classics.html">
-        <h4 class="media-heading">Classics</h4>
-        </a>
-        Records and computed statistics about the top 1000 books on Project Gutenberg.<br>
-        <i>classics, books, texts, text, book, classic, english, shakespeare, literature, novel, language, composition, writing, author, publication, words</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "classics",
-            'body': "Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural works, to 'encourage the creation and distribution of eBooks'. It was founded in 1971 by Michael S. Hart and is the oldest digital library. This dataset is a collection of the top 1000 most popular books on Project Gutenberg, as determined by downloads. Each book has information about its authorship, publication date, congressional classication, and a few other fields. It also has some simple, computed statistics based on common metrics such as sentiment analysis, Flesch Kincaid Reading level, and average sentence length.",
-            'description': "Records and computed statistics about the top 1000 books on Project Gutenberg.",
-            'tags': ["classics", "books", "texts", "text", "book", "classic", "english", "shakespeare", "literature", "novel", "language", "composition", "writing", "author", "publication", "words"]
-        }
-    );
-    </script>
-    
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="earthquakes">
-      
-      <div class="media-left  media-middle">
-        <a target="_blank" href="earthquakes/earthquakes.html">
-          <img class="media-object" src="earthquakes/earthquakes.png" alt="Earthquakes" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a target="_blank" href="earthquakes/earthquakes.html">
-        <h4 class="media-heading">Earthquakes</h4>
-        </a>
-        Records from different earthquake occurences across the world.<br>
-        <i>earthquakes, nature, disaster, magnitude, richter scale, latitude, longitude</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "earthquakes",
-            'body': "Earthquake records from around the world collected from the United States Geological Survey. Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake. Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included. The earthquakes collected are from the past month.",
-            'description': "Records from different earthquake occurences across the world.",
-            'tags': ["earthquakes", "nature", "disaster", "magnitude", "richter scale", "latitude", "longitude"]
         }
     );
     </script>

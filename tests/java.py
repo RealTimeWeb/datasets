@@ -17,9 +17,9 @@ total_datasets = 0
 for dataset in datasets:
     if not os.path.isdir(dataset):
         continue
-    jar_folder = os.path.join(dataset, 'dist')
+    jar_folder = '/'.join([dataset, 'dist'])
     jar_file = sorted(os.listdir(jar_folder))[0]
-    jar_file = os.path.join(jar_folder, jar_file)
+    jar_file = '/'.join(['dist', jar_file])
     os.chdir(dataset)
     subprocess.call(["java", "-jar", jar_file])
     os.chdir('..')
