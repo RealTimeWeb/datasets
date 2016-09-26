@@ -37,6 +37,8 @@ test_java:
 python_test:
 	python builder/builder.py -l python specs/$(target).corgis ./datasets
 	python test.py $(target)
+test_racket:
+	python tests/test_racket.py $(target)
 index:
 	python builder/builder.py -i specs/ ./datasets
 latex_index:
