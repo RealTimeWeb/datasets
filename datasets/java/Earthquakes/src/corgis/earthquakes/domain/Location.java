@@ -16,11 +16,16 @@ import org.json.simple.JSONObject;
  */
 public class Location {
 	
+    // The rough distance that this earthquake occurred away from the reporting station, measured in degrees between. 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake. In general, this number is between 0.4-7.1.
     private Double distance;
     private String full;
-    private Double depth;
+    // A best guess for the name of the state (or country, in some cases) that this earthquake was reported in.
+    private String name;
+    // Decimal degrees longitude (east and west on the globe). Negative values for western latitudes. Ranges from -180 to 180.
     private Double longitude;
-    private String state;
+    // Depth of the event in kilometers.
+    private Double depth;
+    // Decimal degrees latitude (up and down on the globe). Negative values for southern latitudes. Ranges from -90 to 90.
     private Double latitude;
     
     
@@ -45,8 +50,8 @@ public class Location {
     /*
      * @return 
      */
-    public Double getDepth() {
-        return this.depth;
+    public String getName() {
+        return this.name;
     }
     
     
@@ -63,8 +68,8 @@ public class Location {
     /*
      * @return 
      */
-    public String getState() {
-        return this.state;
+    public Double getDepth() {
+        return this.depth;
     }
     
     
@@ -85,7 +90,7 @@ public class Location {
 	 * @return String
 	 */
 	public String toString() {
-		return "Location[" +distance+", "+full+", "+depth+", "+longitude+", "+state+", "+latitude+"]";
+		return "Location[" +distance+", "+full+", "+name+", "+longitude+", "+depth+", "+latitude+"]";
 	}
 	
 	/**
@@ -95,10 +100,10 @@ public class Location {
     public Location(JSONObject json_data) {
         try {// distance
             this.distance = (Double)json_data.get("distance");// full
-            this.full = (String)json_data.get("full");// depth
-            this.depth = (Double)json_data.get("depth");// longitude
-            this.longitude = (Double)json_data.get("longitude");// state
-            this.state = (String)json_data.get("state");// latitude
+            this.full = (String)json_data.get("full");// name
+            this.name = (String)json_data.get("name");// longitude
+            this.longitude = (Double)json_data.get("longitude");// depth
+            this.depth = (Double)json_data.get("depth");// latitude
             this.latitude = (Double)json_data.get("latitude");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Location; a field was missing.");

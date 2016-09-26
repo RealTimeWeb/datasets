@@ -18,9 +18,10 @@ public class Time {
 	
     private String full;
     private Integer hour;
-    private Long epoch;
-    private Integer month;
     private Integer second;
+    private Integer month;
+    // A number that represents the time that this earthquake occurred. Epoch's are the number of seconds since a particular date (January 1st, 1970), and are a convenient way to store date/times.
+    private Long epoch;
     private Integer year;
     private Integer day;
     private Integer minute;
@@ -47,8 +48,8 @@ public class Time {
     /*
      * @return 
      */
-    public Long getEpoch() {
-        return this.epoch;
+    public Integer getSecond() {
+        return this.second;
     }
     
     
@@ -65,8 +66,8 @@ public class Time {
     /*
      * @return 
      */
-    public Integer getSecond() {
-        return this.second;
+    public Long getEpoch() {
+        return this.epoch;
     }
     
     
@@ -105,7 +106,7 @@ public class Time {
 	 * @return String
 	 */
 	public String toString() {
-		return "Time[" +full+", "+hour+", "+epoch+", "+month+", "+second+", "+year+", "+day+", "+minute+"]";
+		return "Time[" +full+", "+hour+", "+second+", "+month+", "+epoch+", "+year+", "+day+", "+minute+"]";
 	}
 	
 	/**
@@ -115,10 +116,10 @@ public class Time {
     public Time(JSONObject json_data) {
         try {// full
             this.full = (String)json_data.get("full");// hour
-            this.hour = new Integer(((Long)json_data.get("hour")).intValue());// epoch
-            this.epoch = (Long)json_data.get("epoch");// month
-            this.month = new Integer(((Long)json_data.get("month")).intValue());// second
-            this.second = new Integer(((Long)json_data.get("second")).intValue());// year
+            this.hour = new Integer(((Long)json_data.get("hour")).intValue());// second
+            this.second = new Integer(((Long)json_data.get("second")).intValue());// month
+            this.month = new Integer(((Long)json_data.get("month")).intValue());// epoch
+            this.epoch = (Long)json_data.get("epoch");// year
             this.year = new Integer(((Long)json_data.get("year")).intValue());// day
             this.day = new Integer(((Long)json_data.get("day")).intValue());// minute
             this.minute = new Integer(((Long)json_data.get("minute")).intValue());

@@ -11,8 +11,8 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import corgis.earthquakes.domain.Impact;
-import corgis.earthquakes.domain.Time;
 import corgis.earthquakes.domain.Location;
+import corgis.earthquakes.domain.Time;
 
 /**
  * 
@@ -20,9 +20,10 @@ import corgis.earthquakes.domain.Location;
 public class Earthquake {
 	
     private Impact impact;
-    private Time time;
-    private Location location;
+    // A unique name for this earthquake.
     private String id;
+    private Location location;
+    private Time time;
     
     
     /*
@@ -37,8 +38,8 @@ public class Earthquake {
     /*
      * @return 
      */
-    public Time getTime() {
-        return this.time;
+    public String getId() {
+        return this.id;
     }
     
     
@@ -55,8 +56,8 @@ public class Earthquake {
     /*
      * @return 
      */
-    public String getId() {
-        return this.id;
+    public Time getTime() {
+        return this.time;
     }
     
     
@@ -68,7 +69,7 @@ public class Earthquake {
 	 * @return String
 	 */
 	public String toString() {
-		return "Earthquake[" +impact+", "+time+", "+location+", "+id+"]";
+		return "Earthquake[" +impact+", "+id+", "+location+", "+time+"]";
 	}
 	
 	/**
@@ -77,10 +78,10 @@ public class Earthquake {
 	 */
     public Earthquake(JSONObject json_data) {
         try {// impact
-            this.impact = new Impact((JSONObject)json_data.get("impact"));// time
-            this.time = new Time((JSONObject)json_data.get("time"));// location
-            this.location = new Location((JSONObject)json_data.get("location"));// id
-            this.id = (String)json_data.get("id");
+            this.impact = new Impact((JSONObject)json_data.get("impact"));// id
+            this.id = (String)json_data.get("id");// location
+            this.location = new Location((JSONObject)json_data.get("location"));// time
+            this.time = new Time((JSONObject)json_data.get("time"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Earthquake; a field was missing.");
     		e.printStackTrace();

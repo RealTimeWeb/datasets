@@ -23,7 +23,7 @@
 <span class="sourceLineNo">015</span>import java.sql.*;<a name="line.15"></a>
 <span class="sourceLineNo">016</span><a name="line.16"></a>
 <span class="sourceLineNo">017</span>/**<a name="line.17"></a>
-<span class="sourceLineNo">018</span> * {'overview': "Earthquake records from around the world collected from the United States Geological Survey.  Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake.  Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included.\n", 'short': 'Records from different earthquake occurences across the world.', 'citation': 'http://earthquake.usgs.gov/earthquakes/'}<a name="line.18"></a>
+<span class="sourceLineNo">018</span> * {'overview': "Earthquake records from around the world collected from the United States Geological Survey.  Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake.  Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included. The earthquakes collected are from the past month.\n", 'short': 'Records from different earthquake occurences across the world.', 'citation': 'http://earthquake.usgs.gov/earthquakes/'}<a name="line.18"></a>
 <span class="sourceLineNo">019</span> */<a name="line.19"></a>
 <span class="sourceLineNo">020</span>public class EarthquakesLibrary {<a name="line.20"></a>
 <span class="sourceLineNo">021</span>    private String databasePath;<a name="line.21"></a>
@@ -110,7 +110,7 @@
 <span class="sourceLineNo">102</span>                if (test) {<a name="line.102"></a>
 <span class="sourceLineNo">103</span>                    <a name="line.103"></a>
 <span class="sourceLineNo">104</span>                } else {<a name="line.104"></a>
-<span class="sourceLineNo">105</span>                    parsed = new Earthquake((JSONObject)this.parser.parse(raw_result));<a name="line.105"></a>
+<span class="sourceLineNo">105</span>                    parsed = new Earthquake(((JSONObject)this.parser.parse(raw_result)));<a name="line.105"></a>
 <span class="sourceLineNo">106</span>                    <a name="line.106"></a>
 <span class="sourceLineNo">107</span>                }<a name="line.107"></a>
 <span class="sourceLineNo">108</span>                <a name="line.108"></a>
