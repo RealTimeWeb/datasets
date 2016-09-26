@@ -49,7 +49,7 @@ interfaces:
     description: Given a year, returns all the crime reports for that year in the database.
     args:
       - name: year
-        default: '1984'
+        default: 1984
         type: int
         matches: SELECT DISTINCT department FROM crime
         description: The year to get reports.

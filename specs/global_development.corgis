@@ -35,7 +35,7 @@ interfaces:
       - name: year
         type: integer
         description: The desired year
-        default: '1990'
+        default: 1990
     description: Returns global development reports for a specified year.
     returns: list[report]
     production:
@@ -47,9 +47,9 @@ interfaces:
   - name: get reports by country
     args:
       - name: country
-        type: integer
+        type: string
         description: The desired country
-        default: "'Afghanistan'"
+        default: "Afghanistan"
     description: Returns global development reports for a specified country.
     returns: list[report]
     production:

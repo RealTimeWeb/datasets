@@ -218,7 +218,11 @@ def to_java_variable(source):
         return "a_{}".format(converted_type)
         
 def clean_invalid_characters(astr):
-    return astr.replace("'", '').replace('.', " ").replace('"', '').replace('#', 'number').replace('-', ' ').replace('?', '').replace('1', 'one').replace('2', 'two').replace('3', 'three').replace('4', 'four').replace('5', 'five').replace('6', 'six').replace('7', 'seven').replace('8', 'eight').replace('9', 'nine').replace('0', 'zero').replace('/', ' ')
+    if astr == "private":
+        return "private_"
+    elif astr == "public":
+        return "public_"
+    return astr.replace("'", '').replace('.', " ").replace('"', '').replace('#', 'number').replace('-', ' ').replace('?', '').replace('1', 'one').replace('2', 'two').replace('3', 'three').replace('4', 'four').replace('5', 'five').replace('6', 'six').replace('7', 'seven').replace('8', 'eight').replace('9', 'nine').replace('0', 'zero').replace('/', ' ').replace("+", "plus").replace(",", " ").replace("(", " ").replace(")", " ")
         
 def sluggify(astr):
     return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_").replace("'", "_")
