@@ -17,6 +17,7 @@ import org.json.simple.JSONObject;
 public class EngineStatistics {
 	
     private Integer horsepower;
+    // lb/ft
     private Integer torque;
     
     

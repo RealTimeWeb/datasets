@@ -15,7 +15,7 @@ import corgis.cars.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'This is a dataset about cars and how much fuel they use.\n', 'short': 'This is a dataset about cars and how much fuel they use.\n'}
+ * {'overview': 'This is a dataset about cars and how much fuel they use.\n', 'short': 'This is a dataset about cars and how much fuel they use.'}
  */
 public class CarsLibrary {
     private String databasePath;
@@ -129,10 +129,10 @@ public class CarsLibrary {
                 String raw_result = rs.getString(1);
                 Car parsed = null;
                 if (test) {
-                    parsed = new Car((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Car(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Car((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Car(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
@@ -201,10 +201,10 @@ public class CarsLibrary {
                 String raw_result = rs.getString(1);
                 Car parsed = null;
                 if (test) {
-                    parsed = new Car((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Car(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Car((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Car(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
@@ -273,10 +273,10 @@ public class CarsLibrary {
                 String raw_result = rs.getString(1);
                 Car parsed = null;
                 if (test) {
-                    parsed = new Car((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Car(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Car((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Car(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

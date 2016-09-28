@@ -15,7 +15,7 @@ import corgis.{{ metadata.name | snake_case }}.domain.*;
 import java.sql.*;
 
 /**
- * {{ metadata.description }}
+ * {{ metadata.description.overview }}
  */
 public class {{ metadata.name | camel_case_caps }}Library {
     {% if metadata.comment %}

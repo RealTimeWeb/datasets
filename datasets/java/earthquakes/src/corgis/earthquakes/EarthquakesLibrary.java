@@ -15,7 +15,8 @@ import corgis.earthquakes.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': "Earthquake records from around the world collected from the United States Geological Survey.  Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake.  Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included. The earthquakes collected are from the past month.\n", 'short': 'Records from different earthquake occurences across the world.', 'citation': 'http://earthquake.usgs.gov/earthquakes/'}
+ * Earthquake records from around the world collected from the United States Geological Survey.  Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake.  Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included. The earthquakes collected are from the past month.
+
  */
 public class EarthquakesLibrary {
     private String databasePath;
