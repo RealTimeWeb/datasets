@@ -15,7 +15,8 @@ import corgis.hydropower.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': "Recent Federal policies and legislation focus on moving the nation towards a cleaner energy economy that includes developing environmentally appropriate renewable energy projects involving solar, wind and waves, geothermal, biofuels, and hydropower.  The 2010 Federal Memorandum of Understanding for Hydropower and the Energy Policy Act of 2005 direct the U.S. Department of Reclamation to evaluate development of new hydropower projects at Federally-owned facilities and upgrade or rehabilitate existing hydropower generation facilities, as a contribution to the nation's clean energy goals.  The following data describes the facilities currently being operated that contribute to nationwide renewable energy strategies.\n", 'short': 'Records about dams in the United States such as location, dimensions, and project information', 'citation': 'http://www.usbr.gov/power/AssessmentReport/'}
+ * Recent Federal policies and legislation focus on moving the nation towards a cleaner energy economy that includes developing environmentally appropriate renewable energy projects involving solar, wind and waves, geothermal, biofuels, and hydropower.  The 2010 Federal Memorandum of Understanding for Hydropower and the Energy Policy Act of 2005 direct the U.S. Department of Reclamation to evaluate development of new hydropower projects at Federally-owned facilities and upgrade or rehabilitate existing hydropower generation facilities, as a contribution to the nation's clean energy goals.  The following data describes the facilities currently being operated that contribute to nationwide renewable energy strategies.
+
  */
 public class HydropowerLibrary {
     private String databasePath;
@@ -102,7 +103,7 @@ public class HydropowerLibrary {
                 if (test) {
                     
                 } else {
-                    parsed = new Dam((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Dam(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

@@ -15,7 +15,8 @@ import corgis.labor.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'The Current Population Survey (CPS) is a monthly survey of households conducted by the Bureau of Census for the Bureau of Labor Statistics. It provides a comprehensive body of data on the labor force, employment, unemployment, persons not in the labor force, hours of work, earnings, and other demographic and labor force characteristics.\n', 'short': 'Employment status of the civilian population by race, sex, and age.\n', 'citation': 'http://www.bls.gov/cps/home.htm'}
+ * The Current Population Survey (CPS) is a monthly survey of households conducted by the Bureau of Census for the Bureau of Labor Statistics. It provides a comprehensive body of data on the labor force, employment, unemployment, persons not in the labor force, hours of work, earnings, and other demographic and labor force characteristics.
+
  */
 public class LaborLibrary {
     private String databasePath;

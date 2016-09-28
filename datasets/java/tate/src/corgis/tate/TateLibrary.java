@@ -15,7 +15,9 @@ import corgis.tate.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art. The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation and performance.\nThis dataset has metadata about many pieces from their collection.\n', 'short': 'This dataset is about the Tate art collection, with metadata about paintings, drawings, sculptures, and more.', 'citation': 'http://www.tate.org.uk/about/our-work/collection/about-the-collection'}
+ * Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art. The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation and performance.
+This dataset has metadata about many pieces from their collection.
+
  */
 public class TateLibrary {
     private String databasePath;
@@ -111,10 +113,10 @@ public class TateLibrary {
                 String raw_result = rs.getString(1);
                 Art parsed = null;
                 if (test) {
-                    parsed = new Art((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Art(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Art((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Art(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

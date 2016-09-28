@@ -15,7 +15,8 @@ import corgis.billionaires.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': "Researchers have compiled a multi-decade database of the super-rich. Building off the Forbes World's Billionaires lists from 1996-2014, scholars at Peterson Institute for International Economics have added a couple dozen more variables about each billionaire - including whether they were self-made or inherited their wealth. (Roughly half of European billionaires and one-third of U.S. billionaires got a significant financial boost from family, the authors estimate.)\n", 'short': 'Information about over 2000 billionaires from around the world.\n', 'citation': 'http://www.iie.com/publications/interstitial.cfm?ResearchID=2917'}
+ * Researchers have compiled a multi-decade database of the super-rich. Building off the Forbes World's Billionaires lists from 1996-2014, scholars at Peterson Institute for International Economics have added a couple dozen more variables about each billionaire - including whether they were self-made or inherited their wealth. (Roughly half of European billionaires and one-third of U.S. billionaires got a significant financial boost from family, the authors estimate.)
+
  */
 public class BillionairesLibrary {
     private String databasePath;
@@ -102,7 +103,7 @@ public class BillionairesLibrary {
                 if (test) {
                     
                 } else {
-                    parsed = new Billionaires((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Billionaire(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

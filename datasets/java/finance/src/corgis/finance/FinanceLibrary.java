@@ -15,7 +15,8 @@ import corgis.finance.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states. The data contain detail of revenue by source, expenditure by object and function, indebtedness by term, and assets by purpose. This data goes back for almost two decades across every date.\n', 'short': 'The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states.', 'citation': 'http://www.census.gov//govs/state/about_the_survey.html'}
+ * The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states. The data contain detail of revenue by source, expenditure by object and function, indebtedness by term, and assets by purpose. This data goes back for almost two decades across every date.
+
  */
 public class FinanceLibrary {
     private String databasePath;

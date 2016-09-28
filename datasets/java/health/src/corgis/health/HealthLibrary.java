@@ -15,7 +15,8 @@ import corgis.health.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'This library holds data about reports of diseases in America.\n', 'short': 'This library holds data about reports of diseases in America.'}
+ * This library holds data about reports of diseases in America.
+
  */
 public class HealthLibrary {
     private String databasePath;

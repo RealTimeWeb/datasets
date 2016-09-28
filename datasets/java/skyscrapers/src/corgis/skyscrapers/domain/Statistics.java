@@ -74,9 +74,9 @@ public class Statistics {
 	 */
     public Statistics(JSONObject json_data) {
         try {// number of purposes
-            this.numberOfPurposes = new Integer(((Double)json_data.get("number of purposes")).intValue());// floors above
-            this.floorsAbove = new Integer(((Double)json_data.get("floors above")).intValue());// rank
-            this.rank = new Integer(((Double)json_data.get("rank")).intValue());// height
+            this.numberOfPurposes = new Integer(((Long)json_data.get("number of purposes")).intValue());// floors above
+            this.floorsAbove = new Integer(((Long)json_data.get("floors above")).intValue());// rank
+            this.rank = new Integer(((Long)json_data.get("rank")).intValue());// height
             this.height = (Double)json_data.get("height");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Statistics; a field was missing.");

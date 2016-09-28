@@ -15,7 +15,9 @@ import corgis.airlines.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'This dataset is all about flights in the united states, including information about the number, length, and type of delays. The data is reported for individual months at every major airport for every carrier.\nAdditional information is available: <a href="http://www.rita.dot.gov/bts/help/aviation/html/understanding.html">http://www.rita.dot.gov/bts/help/aviation/html/understanding.html</a>\n', 'short': 'Information about flight delays in major aiports since 2003.'}
+ * This dataset is all about flights in the united states, including information about the number, length, and type of delays. The data is reported for individual months at every major airport for every carrier.
+Additional information is available: <a href="http://www.rita.dot.gov/bts/help/aviation/html/understanding.html">http://www.rita.dot.gov/bts/help/aviation/html/understanding.html</a>
+
  */
 public class AirlinesLibrary {
     private String databasePath;
@@ -111,10 +113,10 @@ public class AirlinesLibrary {
                 String raw_result = rs.getString(1);
                 Airline parsed = null;
                 if (test) {
-                    parsed = new Airline((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Airline(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Airline((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Airline(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

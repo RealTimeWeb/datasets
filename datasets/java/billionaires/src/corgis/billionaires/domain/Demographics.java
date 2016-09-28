@@ -17,6 +17,7 @@ import org.json.simple.JSONObject;
 public class Demographics {
 	
     private String gender;
+    // Ages that are represented as -1 stand for ages that were not available in the data that was collected.
     private Integer age;
     
     

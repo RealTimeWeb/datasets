@@ -15,7 +15,8 @@ import corgis.classics.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': "Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural works, to 'encourage the creation and distribution of eBooks'. It was founded in 1971 by Michael S. Hart and is the oldest digital library. This dataset is a collection of the top 1000 most popular books on Project Gutenberg, as determined by downloads. Each book has information about its authorship, publication date, congressional classication, and a few other fields. It also has some simple, computed statistics based on common metrics such as sentiment analysis, Flesch Kincaid Reading level, and average sentence length. \n", 'short': 'Records and computed statistics about the top 1000 books on Project Gutenberg.', 'citation': 'https://www.gutenberg.org/ebooks/search/?sort_order=downloads'}
+ * Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural works, to 'encourage the creation and distribution of eBooks'. It was founded in 1971 by Michael S. Hart and is the oldest digital library. This dataset is a collection of the top 1000 most popular books on Project Gutenberg, as determined by downloads. Each book has information about its authorship, publication date, congressional classication, and a few other fields. It also has some simple, computed statistics based on common metrics such as sentiment analysis, Flesch Kincaid Reading level, and average sentence length. 
+
  */
 public class ClassicsLibrary {
     private String databasePath;
@@ -111,10 +112,10 @@ public class ClassicsLibrary {
                 String raw_result = rs.getString(1);
                 Book parsed = null;
                 if (test) {
-                    parsed = new Book((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Book(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Book((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Book(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

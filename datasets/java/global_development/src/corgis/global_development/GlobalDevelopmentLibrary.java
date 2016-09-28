@@ -15,7 +15,8 @@ import corgis.global_development.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank.  Included is different data about urban development, agriculture and rural development, health, and infrastructure.       \n', 'short': "Reports of country's development over time", 'citation': 'https://ndb.nal.usda.gov/'}
+ * The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank.  Included is different data about urban development, agriculture and rural development, health, and infrastructure.       
+
  */
 public class GlobalDevelopmentLibrary {
     private String databasePath;

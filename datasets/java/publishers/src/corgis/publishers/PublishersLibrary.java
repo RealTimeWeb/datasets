@@ -15,7 +15,8 @@ import corgis.publishers.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': "From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking.\n", 'short': 'E-book sales on Amazon, including daily and total earnings for 54,000 titles.\n', 'citation': 'http://authorearnings.com/report/september-2015-author-earnings-report/'}
+ * From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking.
+
  */
 public class PublishersLibrary {
     private String databasePath;
@@ -111,10 +112,10 @@ public class PublishersLibrary {
                 String raw_result = rs.getString(1);
                 Book parsed = null;
                 if (test) {
-                    parsed = new Book((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Book(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Book((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Book(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

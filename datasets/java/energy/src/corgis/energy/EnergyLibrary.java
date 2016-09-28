@@ -15,7 +15,9 @@ import corgis.energy.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'United States Government reports on consumption, production, import, and export of various fuel sources.\nThis data comes from the US Energy Information Administration, which has historical data from 1949 to 2014. All numbers are given in Quadrillion BTUs. \n', 'short': 'United States Government reports on consumption, production, import, and export of various fuel sources.', 'citation': 'http://www.eia.gov/tools/faqs/'}
+ * United States Government reports on consumption, production, import, and export of various fuel sources.
+This data comes from the US Energy Information Administration, which has historical data from 1949 to 2014. All numbers are given in Quadrillion BTUs. 
+
  */
 public class EnergyLibrary {
     private String databasePath;
@@ -102,7 +104,7 @@ public class EnergyLibrary {
                 if (test) {
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

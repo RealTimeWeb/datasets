@@ -15,7 +15,8 @@ import corgis.cars.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'This is a dataset about cars and how much fuel they use.\n', 'short': 'This is a dataset about cars and how much fuel they use.'}
+ * This is a dataset about cars and how much fuel they use.
+
  */
 public class CarsLibrary {
     private String databasePath;

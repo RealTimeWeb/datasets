@@ -15,7 +15,8 @@ import corgis.immigration.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'The Yearbook of Immigration Statistics is a compendium of tables that provides data on foreign nationals who, during a fiscal year, were granted lawful permanent residence (i.e., admitted as immigrants or became legal permanent residents), were admitted into the United States on a temporary basis (e.g., tourists, students, or workers), applied for asylum or refugee status, or were naturalized. The Yearbook also presents data on immigration enforcement actions, including alien apprehensions, removals, and returns.\n', 'short': 'A dataset about the immigration of foreign nationals to the United States.', 'citation': 'http://www.dhs.gov/yearbook-immigration-statistics'}
+ * The Yearbook of Immigration Statistics is a compendium of tables that provides data on foreign nationals who, during a fiscal year, were granted lawful permanent residence (i.e., admitted as immigrants or became legal permanent residents), were admitted into the United States on a temporary basis (e.g., tourists, students, or workers), applied for asylum or refugee status, or were naturalized. The Yearbook also presents data on immigration enforcement actions, including alien apprehensions, removals, and returns.
+
  */
 public class ImmigrationLibrary {
     private String databasePath;
@@ -102,7 +103,7 @@ public class ImmigrationLibrary {
                 if (test) {
                     
                 } else {
-                    parsed = new Record((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Record(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

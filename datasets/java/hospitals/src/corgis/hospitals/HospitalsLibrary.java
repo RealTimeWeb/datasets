@@ -15,7 +15,8 @@ import corgis.hospitals.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': "Medicare has collected data on many different hospitals throughout the country to allow users to compare the quality of these institutions before using their services.  Data includes descriptions of the location of the hospitals, information about the hospitals' emergency services and type of hospital, and outpatient volume for the different wards of the hospitals.\n", 'short': 'Records about the outpatient volume and other information for hospitals across the U.S.', 'citation': 'https://data.medicare.gov/data/hospital-compare'}
+ * Medicare has collected data on many different hospitals throughout the country to allow users to compare the quality of these institutions before using their services.  Data includes descriptions of the location of the hospitals, information about the hospitals' emergency services and type of hospital, and outpatient volume for the different wards of the hospitals.
+
  */
 public class HospitalsLibrary {
     private String databasePath;
@@ -111,10 +112,10 @@ public class HospitalsLibrary {
                 String raw_result = rs.getString(1);
                 Hospital parsed = null;
                 if (test) {
-                    parsed = new Hospital((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Hospital(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Hospital((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Hospital(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

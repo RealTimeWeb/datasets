@@ -15,7 +15,8 @@ import corgis.aids.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease.  The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.\n', 'short': 'Records of AIDS related statistics from several countries.', 'citation': 'http://aidsinfo.unaids.org/'}
+ * The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease.  The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.
+
  */
 public class AidsLibrary {
     private String databasePath;
@@ -129,10 +130,10 @@ public class AidsLibrary {
                 String raw_result = rs.getString(1);
                 Report parsed = null;
                 if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
@@ -201,10 +202,10 @@ public class AidsLibrary {
                 String raw_result = rs.getString(1);
                 Report parsed = null;
                 if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
@@ -273,10 +274,10 @@ public class AidsLibrary {
                 String raw_result = rs.getString(1);
                 Report parsed = null;
                 if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

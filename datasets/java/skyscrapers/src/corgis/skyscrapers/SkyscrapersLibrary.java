@@ -15,7 +15,8 @@ import corgis.skyscrapers.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'Collected statistics about the tallest buildings all over the world, including the materials used to develop them, the purpose of the buildings, and more.\n', 'short': 'Information about tall buildings constructed all over the world.', 'citation': 'http://www.skyscrapercenter.com/'}
+ * Collected statistics about the tallest buildings all over the world, including the materials used to develop them, the purpose of the buildings, and more.
+
  */
 public class SkyscrapersLibrary {
     private String databasePath;

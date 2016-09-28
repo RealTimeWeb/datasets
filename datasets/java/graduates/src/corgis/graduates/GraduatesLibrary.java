@@ -15,7 +15,8 @@ import corgis.graduates.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': "This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series.  Included is information about employment numbers, major information, and the earnings of different majors.\n", 'short': 'This library holds data about employment of new graduates by major.', 'citation': 'http://www.census.gov/acs/www/data_documentation/pums_documentation/ <br> https://github.com/fivethirtyeight/data/tree/master/college-majors'}
+ * This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series.  Included is information about employment numbers, major information, and the earnings of different majors.
+
  */
 public class GraduatesLibrary {
     private String databasePath;

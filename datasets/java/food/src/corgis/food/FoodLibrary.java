@@ -15,7 +15,8 @@ import corgis.food.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': "The following data comes from the United States Department of Agriculture's Food Composition Database.  It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages.  The food covered spans a large variety of foods from butter to Campbell's soup.            \n", 'short': 'Statistics for various food items', 'citation': 'https://ndb.nal.usda.gov/'}
+ * The following data comes from the United States Department of Agriculture's Food Composition Database.  It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages.  The food covered spans a large variety of foods from butter to Campbell's soup.            
+
  */
 public class FoodLibrary {
     private String databasePath;
@@ -111,10 +112,10 @@ public class FoodLibrary {
                 String raw_result = rs.getString(1);
                 Report parsed = null;
                 if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

@@ -15,7 +15,8 @@ import corgis.state_demographics.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau.  Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.\n', 'short': 'Demographic information for the states in the United States.', 'citation': 'http://www.census.gov/quickfacts/table/PST045215/00'}
+ * The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau.  Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.
+
  */
 public class StateDemographicsLibrary {
     private String databasePath;

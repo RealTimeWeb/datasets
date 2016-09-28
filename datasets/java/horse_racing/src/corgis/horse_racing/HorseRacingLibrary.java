@@ -15,7 +15,8 @@ import corgis.horse_racing.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'Data about horse races at Churchill Downs.\n', 'short': 'Data about horse races at Churchill Downs.'}
+ * Data about horse races at Churchill Downs.
+
  */
 public class HorseRacingLibrary {
     private String databasePath;

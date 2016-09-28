@@ -15,7 +15,8 @@ import corgis.cancer.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': 'From the United States Cancer Statistics as part of the U.S. Center for Disease Control, the following data set focuses on the crude rate for all types of cancer reported for different demograpic groups.  Significant groupings include age, gender, race and geographical area.\n', 'short': 'Cancer crude rate totals for different ages, races, genders, and geographical areas across the United States.', 'citation': 'http://www.cdc.gov/cancer/npcr/uscs/download_data.htm'}
+ * From the United States Cancer Statistics as part of the U.S. Center for Disease Control, the following data set focuses on the crude rate for all types of cancer reported for different demograpic groups.  Significant groupings include age, gender, race and geographical area.
+
  */
 public class CancerLibrary {
     private String databasePath;
@@ -129,10 +130,10 @@ public class CancerLibrary {
                 String raw_result = rs.getString(1);
                 Report parsed = null;
                 if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
@@ -201,10 +202,10 @@ public class CancerLibrary {
                 String raw_result = rs.getString(1);
                 Report parsed = null;
                 if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
@@ -273,10 +274,10 @@ public class CancerLibrary {
                 String raw_result = rs.getString(1);
                 Report parsed = null;
                 if (test) {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Report((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
