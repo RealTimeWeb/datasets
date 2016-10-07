@@ -64,15 +64,17 @@ public class Age {
 	 */
     public Age(JSONObject json_data) {
         try {// Age Adjusted Rate
-            this.ageAdjustedRate = (Double)json_data.get("Age Adjusted Rate");// Age Adjusted CI Lower
-            this.ageAdjustedCiLower = (Double)json_data.get("Age Adjusted CI Lower");// Age Adjusted CI Upper
-            this.ageAdjustedCiUpper = (Double)json_data.get("Age Adjusted CI Upper");
+        	this.ageAdjustedRate = ((Number)json_data.get("Age Adjusted Rate")).doubleValue();// Age Adjusted CI Lower
+            this.ageAdjustedCiLower = ((Number)json_data.get("Age Adjusted CI Lower")).doubleValue();// Age Adjusted CI Upper
+            this.ageAdjustedCiUpper = ((Number)json_data.get("Age Adjusted CI Upper")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Age; a field was missing.");
     		e.printStackTrace();
+    		System.exit(0);
     	} catch (ClassCastException e) {
     		System.err.println("Could not convert the response to a Age; a field had the wrong structure.");
     		e.printStackTrace();
+    		System.exit(0);
         }
 	}	
 }

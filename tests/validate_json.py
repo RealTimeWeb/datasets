@@ -22,7 +22,7 @@ def deep_type(data, optional_type=""):
     else:
         return data.__class__.__name__
         
-def guess_schema(key, input):
+def find_conflicts(key, input):
     if isinstance(input, dict):
         DEFINITIONS.add(
             tuple(
@@ -44,7 +44,7 @@ def guess_schema(key, input):
         return deep_type(input)
 
 if __name__ == '__main__':
-    pprint(guess_schema(sys.argv[1].split('.')[-2], json.load(open(sys.argv[1]))))
+    pprint(find_conflicts(sys.argv[1].split('.')[-2], json.load(open(sys.argv[1]))))
     '''
     print "structures:"
     for label, fields in DEFINITIONS:

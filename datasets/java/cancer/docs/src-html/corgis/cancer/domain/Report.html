@@ -27,9 +27,9 @@
 <span class="sourceLineNo">019</span>public class Report {<a name="line.19"></a>
 <span class="sourceLineNo">020</span>        <a name="line.20"></a>
 <span class="sourceLineNo">021</span>    private Age age;<a name="line.21"></a>
-<span class="sourceLineNo">022</span>    private String area;<a name="line.22"></a>
+<span class="sourceLineNo">022</span>    private Integer year;<a name="line.22"></a>
 <span class="sourceLineNo">023</span>    private Data data;<a name="line.23"></a>
-<span class="sourceLineNo">024</span>    private Integer year;<a name="line.24"></a>
+<span class="sourceLineNo">024</span>    private String area;<a name="line.24"></a>
 <span class="sourceLineNo">025</span>    <a name="line.25"></a>
 <span class="sourceLineNo">026</span>    <a name="line.26"></a>
 <span class="sourceLineNo">027</span>    /*<a name="line.27"></a>
@@ -44,8 +44,8 @@
 <span class="sourceLineNo">036</span>    /*<a name="line.36"></a>
 <span class="sourceLineNo">037</span>     * @return <a name="line.37"></a>
 <span class="sourceLineNo">038</span>     */<a name="line.38"></a>
-<span class="sourceLineNo">039</span>    public String getArea() {<a name="line.39"></a>
-<span class="sourceLineNo">040</span>        return this.area;<a name="line.40"></a>
+<span class="sourceLineNo">039</span>    public Integer getYear() {<a name="line.39"></a>
+<span class="sourceLineNo">040</span>        return this.year;<a name="line.40"></a>
 <span class="sourceLineNo">041</span>    }<a name="line.41"></a>
 <span class="sourceLineNo">042</span>    <a name="line.42"></a>
 <span class="sourceLineNo">043</span>    <a name="line.43"></a>
@@ -62,8 +62,8 @@
 <span class="sourceLineNo">054</span>    /*<a name="line.54"></a>
 <span class="sourceLineNo">055</span>     * @return <a name="line.55"></a>
 <span class="sourceLineNo">056</span>     */<a name="line.56"></a>
-<span class="sourceLineNo">057</span>    public Integer getYear() {<a name="line.57"></a>
-<span class="sourceLineNo">058</span>        return this.year;<a name="line.58"></a>
+<span class="sourceLineNo">057</span>    public String getArea() {<a name="line.57"></a>
+<span class="sourceLineNo">058</span>        return this.area;<a name="line.58"></a>
 <span class="sourceLineNo">059</span>    }<a name="line.59"></a>
 <span class="sourceLineNo">060</span>    <a name="line.60"></a>
 <span class="sourceLineNo">061</span>    <a name="line.61"></a>
@@ -75,7 +75,7 @@
 <span class="sourceLineNo">067</span>         * @return String<a name="line.67"></a>
 <span class="sourceLineNo">068</span>         */<a name="line.68"></a>
 <span class="sourceLineNo">069</span>        public String toString() {<a name="line.69"></a>
-<span class="sourceLineNo">070</span>                return "Report[" +age+", "+area+", "+data+", "+year+"]";<a name="line.70"></a>
+<span class="sourceLineNo">070</span>                return "Report[" +age+", "+year+", "+data+", "+area+"]";<a name="line.70"></a>
 <span class="sourceLineNo">071</span>        }<a name="line.71"></a>
 <span class="sourceLineNo">072</span>        <a name="line.72"></a>
 <span class="sourceLineNo">073</span>        /**<a name="line.73"></a>
@@ -84,10 +84,10 @@
 <span class="sourceLineNo">076</span>         */<a name="line.76"></a>
 <span class="sourceLineNo">077</span>    public Report(JSONObject json_data) {<a name="line.77"></a>
 <span class="sourceLineNo">078</span>        try {// Age<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.age = new Age((JSONObject)json_data.get("Age"));// Area<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.area = (String)json_data.get("Area");// Data<a name="line.80"></a>
-<span class="sourceLineNo">081</span>            this.data = new Data((JSONObject)json_data.get("Data"));// Year<a name="line.81"></a>
-<span class="sourceLineNo">082</span>            this.year = new Integer(((Long)json_data.get("Year")).intValue());<a name="line.82"></a>
+<span class="sourceLineNo">079</span>            this.age = new Age((JSONObject)json_data.get("Age"));// Year<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            this.year = new Integer(((Long)json_data.get("Year")).intValue());// Data<a name="line.80"></a>
+<span class="sourceLineNo">081</span>            this.data = new Data((JSONObject)json_data.get("Data"));// Area<a name="line.81"></a>
+<span class="sourceLineNo">082</span>            this.area = (String)json_data.get("Area");<a name="line.82"></a>
 <span class="sourceLineNo">083</span>        } catch (NullPointerException e) {<a name="line.83"></a>
 <span class="sourceLineNo">084</span>                System.err.println("Could not convert the response to a Report; a field was missing.");<a name="line.84"></a>
 <span class="sourceLineNo">085</span>                e.printStackTrace();<a name="line.85"></a>

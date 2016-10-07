@@ -19,9 +19,9 @@ import corgis.cancer.domain.Data;
 public class Report {
 	
     private Age age;
-    private String area;
-    private Data data;
     private Integer year;
+    private Data data;
+    private String area;
     
     
     /*
@@ -36,8 +36,8 @@ public class Report {
     /*
      * @return 
      */
-    public String getArea() {
-        return this.area;
+    public Integer getYear() {
+        return this.year;
     }
     
     
@@ -54,8 +54,8 @@ public class Report {
     /*
      * @return 
      */
-    public Integer getYear() {
-        return this.year;
+    public String getArea() {
+        return this.area;
     }
     
     
@@ -67,7 +67,7 @@ public class Report {
 	 * @return String
 	 */
 	public String toString() {
-		return "Report[" +age+", "+area+", "+data+", "+year+"]";
+		return "Report[" +age+", "+year+", "+data+", "+area+"]";
 	}
 	
 	/**
@@ -76,10 +76,10 @@ public class Report {
 	 */
     public Report(JSONObject json_data) {
         try {// Age
-            this.age = new Age((JSONObject)json_data.get("Age"));// Area
-            this.area = (String)json_data.get("Area");// Data
-            this.data = new Data((JSONObject)json_data.get("Data"));// Year
-            this.year = new Integer(((Long)json_data.get("Year")).intValue());
+            this.age = new Age((JSONObject)json_data.get("Age"));// Year
+            this.year = new Integer(((Long)json_data.get("Year")).intValue());// Data
+            this.data = new Data((JSONObject)json_data.get("Data"));// Area
+            this.area = (String)json_data.get("Area");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Report; a field was missing.");
     		e.printStackTrace();

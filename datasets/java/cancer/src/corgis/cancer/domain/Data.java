@@ -114,7 +114,7 @@ public class Data {
 	 */
     public Data(JSONObject json_data) {
         try {// Count
-            this.count = new Integer(((Long)json_data.get("Count")).intValue());// Crude Rate
+            this.count = ((Number)json_data.get("Count")).intValue();// Crude Rate
             this.crudeRate = (Double)json_data.get("Crude Rate");// Crude CI Upper
             this.crudeCiUpper = (Double)json_data.get("Crude CI Upper");// Crude CI Lower
             this.crudeCiLower = (Double)json_data.get("Crude CI Lower");// Sex

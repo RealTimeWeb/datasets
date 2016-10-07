@@ -15,6 +15,13 @@ try:
 except NameError:
     unicode = str
     
+SIMPLE_TYPE_MAP = {
+                   unicode: 'text',
+                   int: 'number',
+                   float: 'number',
+                   bool: 'bool'
+                   }
+    
 def average(a_list):
     return sum(a_list) / len(a_list) if a_list else 0
     
@@ -85,6 +92,7 @@ class JsonMetrics(object):
             }
         }
         self.walk(data, parent_name)
+        self.union_walk(data, parent_name)
         self.countUnions()
         self.aggregateLists()
         
@@ -119,10 +127,12 @@ class JsonMetrics(object):
             self.walk(value, parent_name)
             self.path.pop()
     def walk_atomic(self, an_atomic, parent_name):
-        self.union_types[self.json_path].add(type(an_atomic))
+        #self.union_types[self.json_path].add(type(an_atomic))
         self.report['heights'].append(len(self.path))
         self.report['atomics']['count'] += 1
+
     def countUnions(self):
+        self.report['unions']['keys'] = {k: list(map(str, v)) for k,v in self.union_types.items() if len(v) > 1}
         for types in self.union_types.values():
             if len(types) > 1:
                 self.report['unions']['count'] += 1
@@ -158,6 +168,29 @@ class JsonMetrics(object):
             self.report['unions']['sizes'] = max(self.report['unions']['sizes'])
         else:
             self.report['unions']['sizes'] = 0
+
+    def union_walk(self, chunk, parent_name):
+        if isinstance(chunk, dict):
+            self.union_walk_dict(chunk, parent_name)
+        elif isinstance(chunk, list):
+            self.union_walk_list(chunk, parent_name)
+        else:
+            self.union_walk_atomic(chunk, parent_name)
+        return self
+        
+    def union_walk_dict(self, a_dict, parent_name):
+        for key, value in a_dict.items():
+            self.path.append(key)
+            self.union_walk(value, key)
+            self.path.pop()
+    def union_walk_list(self, a_list, parent_name):
+        self.path.append("[0]")
+        for value in a_list:
+            self.union_walk(value, parent_name)
+        self.path.pop()
+            
+    def union_walk_atomic(self, an_atomic, parent_name):
+        self.union_types[self.json_path].add(SIMPLE_TYPE_MAP[type(an_atomic)])
 
 def build_report(model):
     locals = model["locals"]
