@@ -8,6 +8,7 @@ except ImportError:
     izip = zip
 from auxiliary import flat_case
 from collections import OrderedDict, defaultdict
+from auxiliary import snake_case, kebab_case, flat_case, copy_file
 
 try:
     unicode

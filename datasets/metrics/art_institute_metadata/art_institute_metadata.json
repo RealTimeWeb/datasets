@@ -1,0 +1,38 @@
+{
+  "artwork": {
+    "dicts": {
+      "count": 4, 
+      "average branching factor": 5
+    }, 
+    "tags": [
+      "art", 
+      "fine art", 
+      "institute", 
+      "artist", 
+      "style", 
+      "medium"
+    ], 
+    "atomics": {
+      "count": 20, 
+      "nones": 0, 
+      "booleans": 0, 
+      "longs": 0, 
+      "ints": 0, 
+      "strings": 20, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 48576, 
+      "complex": 1
+    }, 
+    "heights": 3, 
+    "unions": {
+      "count": 0, 
+      "sizes": 0
+    }, 
+    "length": 48576, 
+    "locals": 0, 
+    "size": 43556336
+  }
+}

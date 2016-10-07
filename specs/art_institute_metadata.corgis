@@ -19,8 +19,8 @@ interfaces:
     description: Returns art data records from the dataset.
     returns: list[record]
     production:
-        sql: SELECT data FROM artdata
+        sql: SELECT data FROM artwork
         post: json()
     test:
-        sql: SELECT data FROM artdata LIMIT {hardware}
+        sql: SELECT data FROM artwork LIMIT {hardware}
         post: json()

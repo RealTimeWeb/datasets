@@ -10,22 +10,23 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.horse_racing.domain.Data;
+import corgis.horse_racing.domain.Date;
+import corgis.horse_racing.domain.Races;
 
 /**
  * 
  */
 public class Race {
 	
-    private Data data;
-    private String year;
+    private Date date;
+    private Races races;
     
     
     /*
      * @return 
      */
-    public Data getData() {
-        return this.data;
+    public Date getDate() {
+        return this.date;
     }
     
     
@@ -33,8 +34,8 @@ public class Race {
     /*
      * @return 
      */
-    public String getYear() {
-        return this.year;
+    public Races getRaces() {
+        return this.races;
     }
     
     
@@ -46,7 +47,7 @@ public class Race {
 	 * @return String
 	 */
 	public String toString() {
-		return "Race[" +data+", "+year+"]";
+		return "Race[" +date+", "+races+"]";
 	}
 	
 	/**
@@ -54,9 +55,9 @@ public class Race {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Race(JSONObject json_data) {
-        try {// data
-            this.data = new Data((JSONObject)json_data.get("data"));// year
-            this.year = (String)json_data.get("year");
+        try {// date
+            this.date = new Date((JSONObject)json_data.get("date"));// races
+            this.races = new Races((JSONObject)json_data.get("races"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Race; a field was missing.");
     		e.printStackTrace();
