@@ -15,9 +15,10 @@
     "atomics": {
       "count": 35, 
       "nones": 0, 
-      "booleans": 0, 
-      "longs": 0, 
       "ints": 24, 
+      "booleans": 0, 
+      "longs": 2, 
+      "unknown": 0, 
       "strings": 2, 
       "floats": 7
     }, 
@@ -28,8 +29,34 @@
     }, 
     "heights": 6, 
     "unions": {
-      "count": 0, 
-      "sizes": 0
+      "count": 6, 
+      "keys": {
+        "state record.[0].data.score.science.[0].scale score": [
+          "text", 
+          "number"
+        ], 
+        "state record.[0].data.score.writing.[0].scale score": [
+          "text", 
+          "number"
+        ], 
+        "state record.[0].data.attendance.average student rate": [
+          "none", 
+          "number"
+        ], 
+        "state record.[0].data.attendance.average minutes": [
+          "none", 
+          "number"
+        ], 
+        "state record.[0].data.attendance.average teacher rate": [
+          "none", 
+          "number"
+        ], 
+        "state record.[0].data.enrollment.students.other.ungraded students": [
+          "text", 
+          "number"
+        ]
+      }, 
+      "sizes": 2
     }, 
     "length": 51, 
     "locals": 0, 

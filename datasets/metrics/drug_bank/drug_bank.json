@@ -1,0 +1,41 @@
+{
+  "drug_bank": {
+    "dicts": {
+      "count": 3, 
+      "average branching factor": 9
+    }, 
+    "tags": [
+      "drugs", 
+      "drug", 
+      "drugbank", 
+      "chemistry", 
+      "biology", 
+      "biochemistry", 
+      "proteins"
+    ], 
+    "atomics": {
+      "count": 26, 
+      "nones": 0, 
+      "ints": 4, 
+      "booleans": 0, 
+      "longs": 0, 
+      "unknown": 0, 
+      "strings": 18, 
+      "floats": 4
+    }, 
+    "lists": {
+      "count": 7, 
+      "lengths": 7759, 
+      "complex": 2
+    }, 
+    "heights": 5, 
+    "unions": {
+      "count": 0, 
+      "keys": {}, 
+      "sizes": 0
+    }, 
+    "length": 7759, 
+    "locals": 0, 
+    "size": 8427304
+  }
+}

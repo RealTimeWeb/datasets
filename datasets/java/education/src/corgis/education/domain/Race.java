@@ -94,12 +94,12 @@ public class Race {
 	 */
     public Race(JSONObject json_data) {
         try {// biracial
-            this.biracial = new Integer(((Long)json_data.get("biracial")).intValue());// hispanic
-            this.hispanic = new Integer(((Long)json_data.get("hispanic")).intValue());// black
-            this.black = new Integer(((Long)json_data.get("black")).intValue());// asian
-            this.asian = new Integer(((Long)json_data.get("asian")).intValue());// white
-            this.white = new Integer(((Long)json_data.get("white")).intValue());// native american
-            this.nativeAmerican = new Integer(((Long)json_data.get("native american")).intValue());
+            this.biracial = ((Number)json_data.get("biracial")).intValue();// hispanic
+            this.hispanic = ((Number)json_data.get("hispanic")).intValue();// black
+            this.black = ((Number)json_data.get("black")).intValue();// asian
+            this.asian = ((Number)json_data.get("asian")).intValue();// white
+            this.white = ((Number)json_data.get("white")).intValue();// native american
+            this.nativeAmerican = ((Number)json_data.get("native american")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Race; a field was missing.");
     		e.printStackTrace();

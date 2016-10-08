@@ -97,7 +97,7 @@
 <span class="sourceLineNo">089</span>    public Students(JSONObject json_data) {<a name="line.89"></a>
 <span class="sourceLineNo">090</span>        try {// gender<a name="line.90"></a>
 <span class="sourceLineNo">091</span>            this.gender = new Gender((JSONObject)json_data.get("gender"));// all<a name="line.91"></a>
-<span class="sourceLineNo">092</span>            this.all = new Integer(((Long)json_data.get("all")).intValue());// race<a name="line.92"></a>
+<span class="sourceLineNo">092</span>            this.all = ((Number)json_data.get("all")).intValue();// race<a name="line.92"></a>
 <span class="sourceLineNo">093</span>            this.race = new Race((JSONObject)json_data.get("race"));// other<a name="line.93"></a>
 <span class="sourceLineNo">094</span>            this.other = new Other((JSONObject)json_data.get("other"));// year<a name="line.94"></a>
 <span class="sourceLineNo">095</span>            this.year = new ArrayList&lt;Integer&gt;();<a name="line.95"></a>

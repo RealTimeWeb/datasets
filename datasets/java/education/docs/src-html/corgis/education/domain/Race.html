@@ -102,12 +102,12 @@
 <span class="sourceLineNo">094</span>         */<a name="line.94"></a>
 <span class="sourceLineNo">095</span>    public Race(JSONObject json_data) {<a name="line.95"></a>
 <span class="sourceLineNo">096</span>        try {// biracial<a name="line.96"></a>
-<span class="sourceLineNo">097</span>            this.biracial = new Integer(((Long)json_data.get("biracial")).intValue());// hispanic<a name="line.97"></a>
-<span class="sourceLineNo">098</span>            this.hispanic = new Integer(((Long)json_data.get("hispanic")).intValue());// black<a name="line.98"></a>
-<span class="sourceLineNo">099</span>            this.black = new Integer(((Long)json_data.get("black")).intValue());// asian<a name="line.99"></a>
-<span class="sourceLineNo">100</span>            this.asian = new Integer(((Long)json_data.get("asian")).intValue());// white<a name="line.100"></a>
-<span class="sourceLineNo">101</span>            this.white = new Integer(((Long)json_data.get("white")).intValue());// native american<a name="line.101"></a>
-<span class="sourceLineNo">102</span>            this.nativeAmerican = new Integer(((Long)json_data.get("native american")).intValue());<a name="line.102"></a>
+<span class="sourceLineNo">097</span>            this.biracial = ((Number)json_data.get("biracial")).intValue();// hispanic<a name="line.97"></a>
+<span class="sourceLineNo">098</span>            this.hispanic = ((Number)json_data.get("hispanic")).intValue();// black<a name="line.98"></a>
+<span class="sourceLineNo">099</span>            this.black = ((Number)json_data.get("black")).intValue();// asian<a name="line.99"></a>
+<span class="sourceLineNo">100</span>            this.asian = ((Number)json_data.get("asian")).intValue();// white<a name="line.100"></a>
+<span class="sourceLineNo">101</span>            this.white = ((Number)json_data.get("white")).intValue();// native american<a name="line.101"></a>
+<span class="sourceLineNo">102</span>            this.nativeAmerican = ((Number)json_data.get("native american")).intValue();<a name="line.102"></a>
 <span class="sourceLineNo">103</span>        } catch (NullPointerException e) {<a name="line.103"></a>
 <span class="sourceLineNo">104</span>                System.err.println("Could not convert the response to a Race; a field was missing.");<a name="line.104"></a>
 <span class="sourceLineNo">105</span>                e.printStackTrace();<a name="line.105"></a>

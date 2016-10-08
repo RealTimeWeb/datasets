@@ -14,13 +14,18 @@ try:
     unicode
 except NameError:
     unicode = str
+try:
+    long
+except NameError:
+    long = int
     
 SIMPLE_TYPE_MAP = {
                    unicode: 'text',
                    int: 'number',
                    long: 'number',
                    float: 'number',
-                   bool: 'bool'
+                   bool: 'bool',
+                   type(None): 'none'
                    }
     
 def average(a_list):
@@ -89,11 +94,11 @@ class JsonMetrics(object):
                 'longs': 0,
                 'nones': 0,
                 'booleans': 0,
+                'unknown': 0,
                 'count': 0
             }
         }
         self.walk(data, parent_name)
-        self.union_types = defaultdict(set)
         self.union_walk(data, parent_name)
         self.countUnions()
         self.aggregateLists()
@@ -129,9 +134,25 @@ class JsonMetrics(object):
             self.walk(value, parent_name)
             self.path.pop()
     def walk_atomic(self, an_atomic, parent_name):
-        self.union_types[self.json_path].add(type(an_atomic))
+        #self.union_types[self.json_path].add(type(an_atomic))
         self.report['heights'].append(len(self.path))
         self.report['atomics']['count'] += 1
+        if type(an_atomic) == int:
+            self.report['atomics']['ints'] += 1
+        elif type(an_atomic) == float:
+            self.report['atomics']['floats'] += 1
+        elif type(an_atomic) == long:
+            self.report['atomics']['longs'] += 1
+        elif type(an_atomic) == str:
+            self.report['atomics']['strings'] += 1
+        elif type(an_atomic) == unicode:
+            self.report['atomics']['strings'] += 1
+        elif type(an_atomic) is None:
+            self.report['atomics']['nones'] += 1
+        elif type(an_atomic) == bool:
+            self.report['atomics']['booleans'] += 1
+        else:
+            self.report['atomics']['unknown'] += 1
 
     def countUnions(self):
         self.report['unions']['keys'] = {k: list(map(str, v)) for k,v in self.union_types.items() if len(v) > 1}
@@ -139,19 +160,6 @@ class JsonMetrics(object):
             if len(types) > 1:
                 self.report['unions']['count'] += 1
                 self.report['unions']['sizes'].append(len(types))
-            for an_atomic in types:
-                if an_atomic == int:
-                    self.report['atomics']['ints'] += 1
-                elif an_atomic == float:
-                    self.report['atomics']['floats'] += 1
-                elif an_atomic == str:
-                    self.report['atomics']['strings'] += 1
-                elif an_atomic == unicode:
-                    self.report['atomics']['strings'] += 1
-                elif an_atomic is None:
-                    self.report['atomics']['nones'] += 1
-                elif an_atomic == bool:
-                    self.report['atomics']['booleans'] += 1
     def aggregateLists(self):
         if self.report['heights']:
             self.report['heights'] = max(self.report['heights'])

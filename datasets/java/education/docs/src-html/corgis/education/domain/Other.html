@@ -92,11 +92,11 @@
 <span class="sourceLineNo">084</span>         */<a name="line.84"></a>
 <span class="sourceLineNo">085</span>    public Other(JSONObject json_data) {<a name="line.85"></a>
 <span class="sourceLineNo">086</span>        try {// individualized education program<a name="line.86"></a>
-<span class="sourceLineNo">087</span>            this.individualizedEducationProgram = new Integer(((Long)json_data.get("individualized education program")).intValue());// free lunch eligible<a name="line.87"></a>
-<span class="sourceLineNo">088</span>            this.freeLunchEligible = new Integer(((Long)json_data.get("free lunch eligible")).intValue());// ungraded students<a name="line.88"></a>
+<span class="sourceLineNo">087</span>            this.individualizedEducationProgram = ((Number)json_data.get("individualized education program")).intValue();// free lunch eligible<a name="line.87"></a>
+<span class="sourceLineNo">088</span>            this.freeLunchEligible = ((Number)json_data.get("free lunch eligible")).intValue();// ungraded students<a name="line.88"></a>
 <span class="sourceLineNo">089</span>            this.ungradedStudents = (String)json_data.get("ungraded students");// lep/ell students<a name="line.89"></a>
-<span class="sourceLineNo">090</span>            this.lepEllStudents = new Integer(((Long)json_data.get("lep/ell students")).intValue());// reduced-price lunch eligible<a name="line.90"></a>
-<span class="sourceLineNo">091</span>            this.reducedPriceLunchEligible = new Integer(((Long)json_data.get("reduced-price lunch eligible")).intValue());<a name="line.91"></a>
+<span class="sourceLineNo">090</span>            this.lepEllStudents = ((Number)json_data.get("lep/ell students")).intValue();// reduced-price lunch eligible<a name="line.90"></a>
+<span class="sourceLineNo">091</span>            this.reducedPriceLunchEligible = ((Number)json_data.get("reduced-price lunch eligible")).intValue();<a name="line.91"></a>
 <span class="sourceLineNo">092</span>        } catch (NullPointerException e) {<a name="line.92"></a>
 <span class="sourceLineNo">093</span>                System.err.println("Could not convert the response to a Other; a field was missing.");<a name="line.93"></a>
 <span class="sourceLineNo">094</span>                e.printStackTrace();<a name="line.94"></a>

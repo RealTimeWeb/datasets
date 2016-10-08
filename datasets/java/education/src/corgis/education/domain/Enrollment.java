@@ -85,11 +85,11 @@ public class Enrollment {
 	 */
     public Enrollment(JSONObject json_data) {
         try {// schools
-            this.schools = new Integer(((Long)json_data.get("schools")).intValue());// students
+            this.schools = ((Number)json_data.get("schools")).intValue();// students
             this.students = new Students((JSONObject)json_data.get("students"));// student teacher ratio
-            this.studentTeacherRatio = (Double)json_data.get("student teacher ratio");// teachers
-            this.teachers = (Double)json_data.get("teachers");// staff
-            this.staff = (Double)json_data.get("staff");
+            this.studentTeacherRatio = ((Number)json_data.get("student teacher ratio")).doubleValue();// teachers
+            this.teachers = ((Number)json_data.get("teachers")).doubleValue();// staff
+            this.staff = ((Number)json_data.get("staff")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Enrollment; a field was missing.");
     		e.printStackTrace();

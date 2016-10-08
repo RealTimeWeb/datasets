@@ -54,8 +54,8 @@ public class Writing {
 	 */
     public Writing(JSONObject json_data) {
         try {// grade
-            this.grade = new Integer(((Long)json_data.get("grade")).intValue());// scale score
-            this.scaleScore = new Integer(((Long)json_data.get("scale score")).intValue());
+            this.grade = ((Number)json_data.get("grade")).intValue();// scale score
+            this.scaleScore = ((Number)json_data.get("scale score")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Writing; a field was missing.");
     		e.printStackTrace();
