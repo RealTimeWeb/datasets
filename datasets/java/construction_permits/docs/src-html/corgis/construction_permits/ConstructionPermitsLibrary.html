@@ -95,9 +95,9 @@
 <span class="sourceLineNo">087</span>        public ArrayList&lt;Permit&gt; getRecords(boolean test) {<a name="line.87"></a>
 <span class="sourceLineNo">088</span>        String query;<a name="line.88"></a>
 <span class="sourceLineNo">089</span>        if (test) {<a name="line.89"></a>
-<span class="sourceLineNo">090</span>            query = String.format("SELECT data FROM constructionpermits LIMIT %d", this.HARDWARE);<a name="line.90"></a>
+<span class="sourceLineNo">090</span>            query = String.format("SELECT data FROM construction_permits LIMIT %d", this.HARDWARE);<a name="line.90"></a>
 <span class="sourceLineNo">091</span>        } else {<a name="line.91"></a>
-<span class="sourceLineNo">092</span>            query = "SELECT data FROM constructionpermits";<a name="line.92"></a>
+<span class="sourceLineNo">092</span>            query = "SELECT data FROM construction_permits";<a name="line.92"></a>
 <span class="sourceLineNo">093</span>        }<a name="line.93"></a>
 <span class="sourceLineNo">094</span>        PreparedStatement preparedQuery = null;<a name="line.94"></a>
 <span class="sourceLineNo">095</span>        ResultSet rs = null;<a name="line.95"></a>

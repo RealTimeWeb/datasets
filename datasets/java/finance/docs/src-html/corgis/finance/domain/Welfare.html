@@ -82,10 +82,10 @@
 <span class="sourceLineNo">074</span>         */<a name="line.74"></a>
 <span class="sourceLineNo">075</span>    public Welfare(JSONObject json_data) {<a name="line.75"></a>
 <span class="sourceLineNo">076</span>        try {// Welfare Institution Total Expenditure<a name="line.76"></a>
-<span class="sourceLineNo">077</span>            this.welfareInstitutionTotalExpenditure = new Integer(((Long)json_data.get("Welfare Institution Total Expenditure")).intValue());// Welfare Vendor Payments Total<a name="line.77"></a>
-<span class="sourceLineNo">078</span>            this.welfareVendorPaymentsTotal = new Integer(((Long)json_data.get("Welfare Vendor Payments Total")).intValue());// Welfare NEC Total Expenditure<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.welfareNecTotalExpenditure = new Integer(((Long)json_data.get("Welfare NEC Total Expenditure")).intValue());// Welfare NEC Intergovernmental<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.welfareNecIntergovernmental = new Integer(((Long)json_data.get("Welfare NEC Intergovernmental")).intValue());<a name="line.80"></a>
+<span class="sourceLineNo">077</span>            this.welfareInstitutionTotalExpenditure = ((Number)json_data.get("Welfare Institution Total Expenditure")).intValue();// Welfare Vendor Payments Total<a name="line.77"></a>
+<span class="sourceLineNo">078</span>            this.welfareVendorPaymentsTotal = ((Number)json_data.get("Welfare Vendor Payments Total")).intValue();// Welfare NEC Total Expenditure<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            this.welfareNecTotalExpenditure = ((Number)json_data.get("Welfare NEC Total Expenditure")).intValue();// Welfare NEC Intergovernmental<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            this.welfareNecIntergovernmental = ((Number)json_data.get("Welfare NEC Intergovernmental")).intValue();<a name="line.80"></a>
 <span class="sourceLineNo">081</span>        } catch (NullPointerException e) {<a name="line.81"></a>
 <span class="sourceLineNo">082</span>                System.err.println("Could not convert the response to a Welfare; a field was missing.");<a name="line.82"></a>
 <span class="sourceLineNo">083</span>                e.printStackTrace();<a name="line.83"></a>

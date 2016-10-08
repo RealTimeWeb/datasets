@@ -18,8 +18,8 @@
       "nones": 0, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 150, 
-      "strings": 1, 
+      "ints": 0, 
+      "strings": 0, 
       "floats": 0
     }, 
     "lists": {
@@ -30,6 +30,7 @@
     "heights": 5, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 918, 

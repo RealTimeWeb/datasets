@@ -82,10 +82,10 @@
 <span class="sourceLineNo">074</span>         */<a name="line.74"></a>
 <span class="sourceLineNo">075</span>    public Waste(JSONObject json_data) {<a name="line.75"></a>
 <span class="sourceLineNo">076</span>        try {// Sewerage Total Expenditure<a name="line.76"></a>
-<span class="sourceLineNo">077</span>            this.sewerageTotalExpenditure = new Integer(((Long)json_data.get("Sewerage Total Expenditure")).intValue());// Solid Waste Management Intergovernmental<a name="line.77"></a>
-<span class="sourceLineNo">078</span>            this.solidWasteManagementIntergovernmental = new Integer(((Long)json_data.get("Solid Waste Management Intergovernmental")).intValue());// Sewerage Intergovernmental<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.sewerageIntergovernmental = new Integer(((Long)json_data.get("Sewerage Intergovernmental")).intValue());// Solid Waste Management Total Expenditure<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.solidWasteManagementTotalExpenditure = new Integer(((Long)json_data.get("Solid Waste Management Total Expenditure")).intValue());<a name="line.80"></a>
+<span class="sourceLineNo">077</span>            this.sewerageTotalExpenditure = ((Number)json_data.get("Sewerage Total Expenditure")).intValue();// Solid Waste Management Intergovernmental<a name="line.77"></a>
+<span class="sourceLineNo">078</span>            this.solidWasteManagementIntergovernmental = ((Number)json_data.get("Solid Waste Management Intergovernmental")).intValue();// Sewerage Intergovernmental<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            this.sewerageIntergovernmental = ((Number)json_data.get("Sewerage Intergovernmental")).intValue();// Solid Waste Management Total Expenditure<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            this.solidWasteManagementTotalExpenditure = ((Number)json_data.get("Solid Waste Management Total Expenditure")).intValue();<a name="line.80"></a>
 <span class="sourceLineNo">081</span>        } catch (NullPointerException e) {<a name="line.81"></a>
 <span class="sourceLineNo">082</span>                System.err.println("Could not convert the response to a Waste; a field was missing.");<a name="line.82"></a>
 <span class="sourceLineNo">083</span>                e.printStackTrace();<a name="line.83"></a>

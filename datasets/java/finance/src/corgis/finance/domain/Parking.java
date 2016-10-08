@@ -54,8 +54,8 @@ public class Parking {
 	 */
     public Parking(JSONObject json_data) {
         try {// Parking Total
-            this.parkingTotal = new Integer(((Long)json_data.get("Parking Total")).intValue());// Parking Intergovernmental
-            this.parkingIntergovernmental = new Integer(((Long)json_data.get("Parking Intergovernmental")).intValue());
+            this.parkingTotal = ((Number)json_data.get("Parking Total")).intValue();// Parking Intergovernmental
+            this.parkingIntergovernmental = ((Number)json_data.get("Parking Intergovernmental")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Parking; a field was missing.");
     		e.printStackTrace();

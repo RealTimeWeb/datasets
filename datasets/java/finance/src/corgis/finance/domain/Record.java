@@ -80,7 +80,7 @@ public class Record {
             this.state = (String)json_data.get("State");// Totals
             this.totals = new Totals((JSONObject)json_data.get("Totals"));// Details
             this.details = new Details((JSONObject)json_data.get("Details"));// Year
-            this.year = new Integer(((Long)json_data.get("Year")).intValue());
+            this.year = ((Number)json_data.get("Year")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Record; a field was missing.");
     		e.printStackTrace();

@@ -164,19 +164,19 @@ public class FinancialAid {
 	 */
     public FinancialAid(JSONObject json_data) {
         try {// Federal Agency Securities Total
-            this.federalAgencySecuritiesTotal = new Integer(((Long)json_data.get("Federal Agency Securities Total")).intValue());// Beginning Long Term Debt Total Outstanding
-            this.beginningLongTermDebtTotalOutstanding = new Integer(((Long)json_data.get("Beginning Long Term Debt Total Outstanding")).intValue());// Categorical Assistance Total Expenditure
-            this.categoricalAssistanceTotalExpenditure = new Integer(((Long)json_data.get("Categorical Assistance Total Expenditure")).intValue());// Cash Assistance Total Expenditure
-            this.cashAssistanceTotalExpenditure = new Integer(((Long)json_data.get("Cash Assistance Total Expenditure")).intValue());// Categorical Assistance Intergovernmental
-            this.categoricalAssistanceIntergovernmental = new Integer(((Long)json_data.get("Categorical Assistance Intergovernmental")).intValue());// Cash and Securities Total
-            this.cashAndSecuritiesTotal = new Integer(((Long)json_data.get("Cash and Securities Total")).intValue());// Assistance and Subsidies
-            this.assistanceAndSubsidies = new Integer(((Long)json_data.get("Assistance and Subsidies")).intValue());// Cash Assistance Intergovernmental
-            this.cashAssistanceIntergovernmental = new Integer(((Long)json_data.get("Cash Assistance Intergovernmental")).intValue());// Borrowing Total
-            this.borrowingTotal = new Integer(((Long)json_data.get("Borrowing Total")).intValue());// Sinking Fund Total
-            this.sinkingFundTotal = new Integer(((Long)json_data.get("Sinking Fund Total")).intValue());// Securities Total
-            this.securitiesTotal = new Integer(((Long)json_data.get("Securities Total")).intValue());// Bond Fund Total
-            this.bondFundTotal = new Integer(((Long)json_data.get("Bond Fund Total")).intValue());// Cash and Deposits Total
-            this.cashAndDepositsTotal = new Integer(((Long)json_data.get("Cash and Deposits Total")).intValue());
+            this.federalAgencySecuritiesTotal = ((Number)json_data.get("Federal Agency Securities Total")).intValue();// Beginning Long Term Debt Total Outstanding
+            this.beginningLongTermDebtTotalOutstanding = ((Number)json_data.get("Beginning Long Term Debt Total Outstanding")).intValue();// Categorical Assistance Total Expenditure
+            this.categoricalAssistanceTotalExpenditure = ((Number)json_data.get("Categorical Assistance Total Expenditure")).intValue();// Cash Assistance Total Expenditure
+            this.cashAssistanceTotalExpenditure = ((Number)json_data.get("Cash Assistance Total Expenditure")).intValue();// Categorical Assistance Intergovernmental
+            this.categoricalAssistanceIntergovernmental = ((Number)json_data.get("Categorical Assistance Intergovernmental")).intValue();// Cash and Securities Total
+            this.cashAndSecuritiesTotal = ((Number)json_data.get("Cash and Securities Total")).intValue();// Assistance and Subsidies
+            this.assistanceAndSubsidies = ((Number)json_data.get("Assistance and Subsidies")).intValue();// Cash Assistance Intergovernmental
+            this.cashAssistanceIntergovernmental = ((Number)json_data.get("Cash Assistance Intergovernmental")).intValue();// Borrowing Total
+            this.borrowingTotal = ((Number)json_data.get("Borrowing Total")).intValue();// Sinking Fund Total
+            this.sinkingFundTotal = ((Number)json_data.get("Sinking Fund Total")).intValue();// Securities Total
+            this.securitiesTotal = ((Number)json_data.get("Securities Total")).intValue();// Bond Fund Total
+            this.bondFundTotal = ((Number)json_data.get("Bond Fund Total")).intValue();// Cash and Deposits Total
+            this.cashAndDepositsTotal = ((Number)json_data.get("Cash and Deposits Total")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a FinancialAid; a field was missing.");
     		e.printStackTrace();

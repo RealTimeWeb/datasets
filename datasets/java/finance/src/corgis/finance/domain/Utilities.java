@@ -124,15 +124,15 @@ public class Utilities {
 	 */
     public Utilities(JSONObject json_data) {
         try {// Water Utility Total Expenditure
-            this.waterUtilityTotalExpenditure = new Integer(((Long)json_data.get("Water Utility Total Expenditure")).intValue());// Gas Utility Total Expenditure
-            this.gasUtilityTotalExpenditure = new Integer(((Long)json_data.get("Gas Utility Total Expenditure")).intValue());// Utilities Current Operation
-            this.utilitiesCurrentOperation = new Integer(((Long)json_data.get("Utilities Current Operation")).intValue());// Utilities Total Expenditure
-            this.utilitiesTotalExpenditure = new Integer(((Long)json_data.get("Utilities Total Expenditure")).intValue());// Utilities Equipment and Land
-            this.utilitiesEquipmentAndLand = new Integer(((Long)json_data.get("Utilities Equipment and Land")).intValue());// Utilities Construction
-            this.utilitiesConstruction = new Integer(((Long)json_data.get("Utilities Construction")).intValue());// Utilities Interest Total
-            this.utilitiesInterestTotal = new Integer(((Long)json_data.get("Utilities Interest Total")).intValue());// Transit Utility Total Expenditure
-            this.transitUtilityTotalExpenditure = new Integer(((Long)json_data.get("Transit Utility Total Expenditure")).intValue());// Electric Utility Total Expenditure
-            this.electricUtilityTotalExpenditure = new Integer(((Long)json_data.get("Electric Utility Total Expenditure")).intValue());
+            this.waterUtilityTotalExpenditure = ((Number)json_data.get("Water Utility Total Expenditure")).intValue();// Gas Utility Total Expenditure
+            this.gasUtilityTotalExpenditure = ((Number)json_data.get("Gas Utility Total Expenditure")).intValue();// Utilities Current Operation
+            this.utilitiesCurrentOperation = ((Number)json_data.get("Utilities Current Operation")).intValue();// Utilities Total Expenditure
+            this.utilitiesTotalExpenditure = ((Number)json_data.get("Utilities Total Expenditure")).intValue();// Utilities Equipment and Land
+            this.utilitiesEquipmentAndLand = ((Number)json_data.get("Utilities Equipment and Land")).intValue();// Utilities Construction
+            this.utilitiesConstruction = ((Number)json_data.get("Utilities Construction")).intValue();// Utilities Interest Total
+            this.utilitiesInterestTotal = ((Number)json_data.get("Utilities Interest Total")).intValue();// Transit Utility Total Expenditure
+            this.transitUtilityTotalExpenditure = ((Number)json_data.get("Transit Utility Total Expenditure")).intValue();// Electric Utility Total Expenditure
+            this.electricUtilityTotalExpenditure = ((Number)json_data.get("Electric Utility Total Expenditure")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Utilities; a field was missing.");
     		e.printStackTrace();

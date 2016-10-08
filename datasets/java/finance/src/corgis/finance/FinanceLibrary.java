@@ -29,18 +29,12 @@ public class FinanceLibrary {
         FinanceLibrary financeLibrary = new FinanceLibrary();
         
         
-        System.out.println("Testing production GetFinancesByState");
-        Record a_record_1_production = financeLibrary.getFinancesByState("Alaska");
-        
-        
-        
-        
         System.out.println("Testing production GetFinances");
-        ArrayList<Record> list_of_record_2_production = financeLibrary.getFinances(false);
+        ArrayList<Record> list_of_record_1_production = financeLibrary.getFinances(false);
         
         
         System.out.println("Testing test GetFinances");
-        ArrayList<Record> list_of_record_2_test = financeLibrary.getFinances(true);
+        ArrayList<Record> list_of_record_1_test = financeLibrary.getFinances(true);
         
         
     }
@@ -73,68 +67,6 @@ public class FinanceLibrary {
         this.connectToDatabase(this.databasePath);
 	}
     
-    
-    
-    
-    /**
-     * Retuns financial data about a single state.
-    
-     * @param state The name of the state (e.g., "Alaska").
-     * @return a record
-     */
-	public Record getFinancesByState(String state) {
-        String query;
-        boolean test = false;
-        if (test) {
-            query = String.format("", this.HARDWARE);
-        } else {
-            query = "SELECT data FROM finance WHERE state=?";
-        }
-        PreparedStatement preparedQuery = null;
-        ResultSet rs = null;
-        try {
-            preparedQuery = this.connection.prepareStatement(query);
-        } catch (SQLException e) {
-            System.err.println("Could not build SQL query for local database.");
-    		e.printStackTrace();
-        }
-        try {
-            preparedQuery.setString(1, state);
-        } catch (SQLException e) {
-            System.err.println("Could not build prepare argument: state");
-    		e.printStackTrace();
-        }
-        try {
-            rs = preparedQuery.executeQuery();
-        } catch (SQLException e) {
-            System.err.println("Could not execute query.");
-    		e.printStackTrace();
-        }
-        
-        Record result = null;
-        try {
-            while (rs.next()) {
-                String raw_result = rs.getString(1);
-                Record parsed = null;
-                if (test) {
-                    
-                } else {
-                    parsed = new Record((JSONObject)((JSONObject)this.parser.parse(raw_result)).get("data"));
-                    
-                }
-                
-                result = parsed;
-                
-            }
-        } catch (SQLException e) {
-            System.err.println("Could not iterate through query.");
-    		e.printStackTrace();
-        } catch (ParseException e) {
-            System.err.println("Could not convert the response from getFinancesByState; a parser error occurred.");
-    		e.printStackTrace();
-        }
-        return result;
-	}
     
     
     /**

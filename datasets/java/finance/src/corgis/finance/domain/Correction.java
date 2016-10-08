@@ -84,11 +84,11 @@ public class Correction {
 	 */
     public Correction(JSONObject json_data) {
         try {// Correction Intergovernmental
-            this.correctionIntergovernmental = new Integer(((Long)json_data.get("Correction Intergovernmental")).intValue());// Correction NEC Intergovernmental
-            this.correctionNecIntergovernmental = new Integer(((Long)json_data.get("Correction NEC Intergovernmental")).intValue());// Correction NEC Total
-            this.correctionNecTotal = new Integer(((Long)json_data.get("Correction NEC Total")).intValue());// Correction Total
-            this.correctionTotal = new Integer(((Long)json_data.get("Correction Total")).intValue());// Correction Institutions Total
-            this.correctionInstitutionsTotal = new Integer(((Long)json_data.get("Correction Institutions Total")).intValue());
+            this.correctionIntergovernmental = ((Number)json_data.get("Correction Intergovernmental")).intValue();// Correction NEC Intergovernmental
+            this.correctionNecIntergovernmental = ((Number)json_data.get("Correction NEC Intergovernmental")).intValue();// Correction NEC Total
+            this.correctionNecTotal = ((Number)json_data.get("Correction NEC Total")).intValue();// Correction Total
+            this.correctionTotal = ((Number)json_data.get("Correction Total")).intValue();// Correction Institutions Total
+            this.correctionInstitutionsTotal = ((Number)json_data.get("Correction Institutions Total")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Correction; a field was missing.");
     		e.printStackTrace();

@@ -134,16 +134,16 @@ public class Intergovernmental {
 	 */
     public Intergovernmental(JSONObject json_data) {
         try {// Intergovernmental to Combined and Unallocable
-            this.intergovernmentalToCombinedAndUnallocable = new Integer(((Long)json_data.get("Intergovernmental to Combined and Unallocable")).intValue());// Intergovernmental to Federal
-            this.intergovernmentalToFederal = new Integer(((Long)json_data.get("Intergovernmental to Federal")).intValue());// Intergovernmental to Municipalities
-            this.intergovernmentalToMunicipalities = new Integer(((Long)json_data.get("Intergovernmental to Municipalities")).intValue());// Intergovernmental to Counties
-            this.intergovernmentalToCounties = new Integer(((Long)json_data.get("Intergovernmental to Counties")).intValue());// Intergovernmental to State
-            this.intergovernmentalToState = new Integer(((Long)json_data.get("Intergovernmental to State")).intValue());// Intergovernmental to Townships
-            this.intergovernmentalToTownships = new Integer(((Long)json_data.get("Intergovernmental to Townships")).intValue());// Intergovernmental to Special Districts
-            this.intergovernmentalToSpecialDistricts = new Integer(((Long)json_data.get("Intergovernmental to Special Districts")).intValue());// Intergovernmental Expenditure
-            this.intergovernmentalExpenditure = new Integer(((Long)json_data.get("Intergovernmental Expenditure")).intValue());// Intergovernmental to Local
-            this.intergovernmentalToLocal = new Integer(((Long)json_data.get("Intergovernmental to Local")).intValue());// Intergovernmental to School Districts
-            this.intergovernmentalToSchoolDistricts = new Integer(((Long)json_data.get("Intergovernmental to School Districts")).intValue());
+            this.intergovernmentalToCombinedAndUnallocable = ((Number)json_data.get("Intergovernmental to Combined and Unallocable")).intValue();// Intergovernmental to Federal
+            this.intergovernmentalToFederal = ((Number)json_data.get("Intergovernmental to Federal")).intValue();// Intergovernmental to Municipalities
+            this.intergovernmentalToMunicipalities = ((Number)json_data.get("Intergovernmental to Municipalities")).intValue();// Intergovernmental to Counties
+            this.intergovernmentalToCounties = ((Number)json_data.get("Intergovernmental to Counties")).intValue();// Intergovernmental to State
+            this.intergovernmentalToState = ((Number)json_data.get("Intergovernmental to State")).intValue();// Intergovernmental to Townships
+            this.intergovernmentalToTownships = ((Number)json_data.get("Intergovernmental to Townships")).intValue();// Intergovernmental to Special Districts
+            this.intergovernmentalToSpecialDistricts = ((Number)json_data.get("Intergovernmental to Special Districts")).intValue();// Intergovernmental Expenditure
+            this.intergovernmentalExpenditure = ((Number)json_data.get("Intergovernmental Expenditure")).intValue();// Intergovernmental to Local
+            this.intergovernmentalToLocal = ((Number)json_data.get("Intergovernmental to Local")).intValue();// Intergovernmental to School Districts
+            this.intergovernmentalToSchoolDistricts = ((Number)json_data.get("Intergovernmental to School Districts")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Intergovernmental; a field was missing.");
     		e.printStackTrace();

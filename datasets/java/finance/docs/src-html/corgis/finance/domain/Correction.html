@@ -92,11 +92,11 @@
 <span class="sourceLineNo">084</span>         */<a name="line.84"></a>
 <span class="sourceLineNo">085</span>    public Correction(JSONObject json_data) {<a name="line.85"></a>
 <span class="sourceLineNo">086</span>        try {// Correction Intergovernmental<a name="line.86"></a>
-<span class="sourceLineNo">087</span>            this.correctionIntergovernmental = new Integer(((Long)json_data.get("Correction Intergovernmental")).intValue());// Correction NEC Intergovernmental<a name="line.87"></a>
-<span class="sourceLineNo">088</span>            this.correctionNecIntergovernmental = new Integer(((Long)json_data.get("Correction NEC Intergovernmental")).intValue());// Correction NEC Total<a name="line.88"></a>
-<span class="sourceLineNo">089</span>            this.correctionNecTotal = new Integer(((Long)json_data.get("Correction NEC Total")).intValue());// Correction Total<a name="line.89"></a>
-<span class="sourceLineNo">090</span>            this.correctionTotal = new Integer(((Long)json_data.get("Correction Total")).intValue());// Correction Institutions Total<a name="line.90"></a>
-<span class="sourceLineNo">091</span>            this.correctionInstitutionsTotal = new Integer(((Long)json_data.get("Correction Institutions Total")).intValue());<a name="line.91"></a>
+<span class="sourceLineNo">087</span>            this.correctionIntergovernmental = ((Number)json_data.get("Correction Intergovernmental")).intValue();// Correction NEC Intergovernmental<a name="line.87"></a>
+<span class="sourceLineNo">088</span>            this.correctionNecIntergovernmental = ((Number)json_data.get("Correction NEC Intergovernmental")).intValue();// Correction NEC Total<a name="line.88"></a>
+<span class="sourceLineNo">089</span>            this.correctionNecTotal = ((Number)json_data.get("Correction NEC Total")).intValue();// Correction Total<a name="line.89"></a>
+<span class="sourceLineNo">090</span>            this.correctionTotal = ((Number)json_data.get("Correction Total")).intValue();// Correction Institutions Total<a name="line.90"></a>
+<span class="sourceLineNo">091</span>            this.correctionInstitutionsTotal = ((Number)json_data.get("Correction Institutions Total")).intValue();<a name="line.91"></a>
 <span class="sourceLineNo">092</span>        } catch (NullPointerException e) {<a name="line.92"></a>
 <span class="sourceLineNo">093</span>                System.err.println("Could not convert the response to a Correction; a field was missing.");<a name="line.93"></a>
 <span class="sourceLineNo">094</span>                e.printStackTrace();<a name="line.94"></a>

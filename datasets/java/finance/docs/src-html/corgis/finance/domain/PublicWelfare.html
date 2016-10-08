@@ -112,13 +112,13 @@
 <span class="sourceLineNo">104</span>         */<a name="line.104"></a>
 <span class="sourceLineNo">105</span>    public PublicWelfare(JSONObject json_data) {<a name="line.105"></a>
 <span class="sourceLineNo">106</span>        try {// Public Welfare Equipment and Land<a name="line.106"></a>
-<span class="sourceLineNo">107</span>            this.publicWelfareEquipmentAndLand = new Integer(((Long)json_data.get("Public Welfare Equipment and Land")).intValue());// Public Welfare Intergovernmental<a name="line.107"></a>
-<span class="sourceLineNo">108</span>            this.publicWelfareIntergovernmental = new Integer(((Long)json_data.get("Public Welfare Intergovernmental")).intValue());// Public Welfare Other Current Operation<a name="line.108"></a>
-<span class="sourceLineNo">109</span>            this.publicWelfareOtherCurrentOperation = new Integer(((Long)json_data.get("Public Welfare Other Current Operation")).intValue());// Public Welfare Direct Expenditure<a name="line.109"></a>
-<span class="sourceLineNo">110</span>            this.publicWelfareDirectExpenditure = new Integer(((Long)json_data.get("Public Welfare Direct Expenditure")).intValue());// Public Welfare Construction<a name="line.110"></a>
-<span class="sourceLineNo">111</span>            this.publicWelfareConstruction = new Integer(((Long)json_data.get("Public Welfare Construction")).intValue());// Public Welfare Total Expenditure<a name="line.111"></a>
-<span class="sourceLineNo">112</span>            this.publicWelfareTotalExpenditure = new Integer(((Long)json_data.get("Public Welfare Total Expenditure")).intValue());// Public Welfare Assistance and Subsidies<a name="line.112"></a>
-<span class="sourceLineNo">113</span>            this.publicWelfareAssistanceAndSubsidies = new Integer(((Long)json_data.get("Public Welfare Assistance and Subsidies")).intValue());<a name="line.113"></a>
+<span class="sourceLineNo">107</span>            this.publicWelfareEquipmentAndLand = ((Number)json_data.get("Public Welfare Equipment and Land")).intValue();// Public Welfare Intergovernmental<a name="line.107"></a>
+<span class="sourceLineNo">108</span>            this.publicWelfareIntergovernmental = ((Number)json_data.get("Public Welfare Intergovernmental")).intValue();// Public Welfare Other Current Operation<a name="line.108"></a>
+<span class="sourceLineNo">109</span>            this.publicWelfareOtherCurrentOperation = ((Number)json_data.get("Public Welfare Other Current Operation")).intValue();// Public Welfare Direct Expenditure<a name="line.109"></a>
+<span class="sourceLineNo">110</span>            this.publicWelfareDirectExpenditure = ((Number)json_data.get("Public Welfare Direct Expenditure")).intValue();// Public Welfare Construction<a name="line.110"></a>
+<span class="sourceLineNo">111</span>            this.publicWelfareConstruction = ((Number)json_data.get("Public Welfare Construction")).intValue();// Public Welfare Total Expenditure<a name="line.111"></a>
+<span class="sourceLineNo">112</span>            this.publicWelfareTotalExpenditure = ((Number)json_data.get("Public Welfare Total Expenditure")).intValue();// Public Welfare Assistance and Subsidies<a name="line.112"></a>
+<span class="sourceLineNo">113</span>            this.publicWelfareAssistanceAndSubsidies = ((Number)json_data.get("Public Welfare Assistance and Subsidies")).intValue();<a name="line.113"></a>
 <span class="sourceLineNo">114</span>        } catch (NullPointerException e) {<a name="line.114"></a>
 <span class="sourceLineNo">115</span>                System.err.println("Could not convert the response to a PublicWelfare; a field was missing.");<a name="line.115"></a>
 <span class="sourceLineNo">116</span>                e.printStackTrace();<a name="line.116"></a>

@@ -132,15 +132,15 @@
 <span class="sourceLineNo">124</span>         */<a name="line.124"></a>
 <span class="sourceLineNo">125</span>    public InsuranceTrust(JSONObject json_data) {<a name="line.125"></a>
 <span class="sourceLineNo">126</span>        try {// Insurance Trust Other Securities<a name="line.126"></a>
-<span class="sourceLineNo">127</span>            this.insuranceTrustOtherSecurities = new Integer(((Long)json_data.get("Insurance Trust Other Securities")).intValue());// Insurance Trust Cash and Deposits<a name="line.127"></a>
-<span class="sourceLineNo">128</span>            this.insuranceTrustCashAndDeposits = new Integer(((Long)json_data.get("Insurance Trust Cash and Deposits")).intValue());// Insurance Trust State and Local Securities Total<a name="line.128"></a>
-<span class="sourceLineNo">129</span>            this.insuranceTrustStateAndLocalSecuritiesTotal = new Integer(((Long)json_data.get("Insurance Trust State and Local Securities Total")).intValue());// Insurance Trust Securities Total<a name="line.129"></a>
-<span class="sourceLineNo">130</span>            this.insuranceTrustSecuritiesTotal = new Integer(((Long)json_data.get("Insurance Trust Securities Total")).intValue());// Insurance Trust Federal Agency Securities<a name="line.130"></a>
-<span class="sourceLineNo">131</span>            this.insuranceTrustFederalAgencySecurities = new Integer(((Long)json_data.get("Insurance Trust Federal Agency Securities")).intValue());// Insurance Trust Total Expenditure<a name="line.131"></a>
-<span class="sourceLineNo">132</span>            this.insuranceTrustTotalExpenditure = new Integer(((Long)json_data.get("Insurance Trust Total Expenditure")).intValue());// Insurance Trust<a name="line.132"></a>
-<span class="sourceLineNo">133</span>            this.insuranceTrust = new Integer(((Long)json_data.get("Insurance Trust")).intValue());// Insurance Trust Cash and Securities<a name="line.133"></a>
-<span class="sourceLineNo">134</span>            this.insuranceTrustCashAndSecurities = new Integer(((Long)json_data.get("Insurance Trust Cash and Securities")).intValue());// Insurance Trust Federal Securities<a name="line.134"></a>
-<span class="sourceLineNo">135</span>            this.insuranceTrustFederalSecurities = new Integer(((Long)json_data.get("Insurance Trust Federal Securities")).intValue());<a name="line.135"></a>
+<span class="sourceLineNo">127</span>            this.insuranceTrustOtherSecurities = ((Number)json_data.get("Insurance Trust Other Securities")).intValue();// Insurance Trust Cash and Deposits<a name="line.127"></a>
+<span class="sourceLineNo">128</span>            this.insuranceTrustCashAndDeposits = ((Number)json_data.get("Insurance Trust Cash and Deposits")).intValue();// Insurance Trust State and Local Securities Total<a name="line.128"></a>
+<span class="sourceLineNo">129</span>            this.insuranceTrustStateAndLocalSecuritiesTotal = ((Number)json_data.get("Insurance Trust State and Local Securities Total")).intValue();// Insurance Trust Securities Total<a name="line.129"></a>
+<span class="sourceLineNo">130</span>            this.insuranceTrustSecuritiesTotal = ((Number)json_data.get("Insurance Trust Securities Total")).intValue();// Insurance Trust Federal Agency Securities<a name="line.130"></a>
+<span class="sourceLineNo">131</span>            this.insuranceTrustFederalAgencySecurities = ((Number)json_data.get("Insurance Trust Federal Agency Securities")).intValue();// Insurance Trust Total Expenditure<a name="line.131"></a>
+<span class="sourceLineNo">132</span>            this.insuranceTrustTotalExpenditure = ((Number)json_data.get("Insurance Trust Total Expenditure")).intValue();// Insurance Trust<a name="line.132"></a>
+<span class="sourceLineNo">133</span>            this.insuranceTrust = ((Number)json_data.get("Insurance Trust")).intValue();// Insurance Trust Cash and Securities<a name="line.133"></a>
+<span class="sourceLineNo">134</span>            this.insuranceTrustCashAndSecurities = ((Number)json_data.get("Insurance Trust Cash and Securities")).intValue();// Insurance Trust Federal Securities<a name="line.134"></a>
+<span class="sourceLineNo">135</span>            this.insuranceTrustFederalSecurities = ((Number)json_data.get("Insurance Trust Federal Securities")).intValue();<a name="line.135"></a>
 <span class="sourceLineNo">136</span>        } catch (NullPointerException e) {<a name="line.136"></a>
 <span class="sourceLineNo">137</span>                System.err.println("Could not convert the response to a InsuranceTrust; a field was missing.");<a name="line.137"></a>
 <span class="sourceLineNo">138</span>                e.printStackTrace();<a name="line.138"></a>

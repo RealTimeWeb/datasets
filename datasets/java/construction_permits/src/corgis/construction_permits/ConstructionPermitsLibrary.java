@@ -87,9 +87,9 @@ public class ConstructionPermitsLibrary {
 	public ArrayList<Permit> getRecords(boolean test) {
         String query;
         if (test) {
-            query = String.format("SELECT data FROM constructionpermits LIMIT %d", this.HARDWARE);
+            query = String.format("SELECT data FROM construction_permits LIMIT %d", this.HARDWARE);
         } else {
-            query = "SELECT data FROM constructionpermits";
+            query = "SELECT data FROM construction_permits";
         }
         PreparedStatement preparedQuery = null;
         ResultSet rs = null;

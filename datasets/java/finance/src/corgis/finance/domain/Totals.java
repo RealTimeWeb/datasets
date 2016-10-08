@@ -274,30 +274,30 @@ public class Totals {
 	 */
     public Totals(JSONObject json_data) {
         try {// Insurance trust  revenue
-            this.insuranceTrustRevenue = new Integer(((Long)json_data.get("Insurance trust  revenue")).intValue());// Capital outlay
-            this.capitalOutlay = new Integer(((Long)json_data.get("Capital outlay")).intValue());// State intergovernmental
-            this.stateIntergovernmental = new Integer(((Long)json_data.get("State intergovernmental")).intValue());// Miscellaneous
-            this.miscellaneous = new Integer(((Long)json_data.get("Miscellaneous")).intValue());// Charges
-            this.charges = new Integer(((Long)json_data.get("Charges")).intValue());// Construction
-            this.construction = new Integer(((Long)json_data.get("Construction")).intValue());// Expenditure
-            this.expenditure = new Integer(((Long)json_data.get("Expenditure")).intValue());// General revenue
-            this.generalRevenue = new Integer(((Long)json_data.get("General revenue")).intValue());// Miscellaneous commercial activity
-            this.miscellaneousCommercialActivity = new Integer(((Long)json_data.get("Miscellaneous commercial activity")).intValue());// Other insurance trust revenue
-            this.otherInsuranceTrustRevenue = new Integer(((Long)json_data.get("Other insurance trust revenue")).intValue());// Worker's comp revenue
-            this.workersCompRevenue = new Integer(((Long)json_data.get("Worker's comp revenue")).intValue());// Equipment and land
-            this.equipmentAndLand = new Integer(((Long)json_data.get("Equipment and land")).intValue());// Unemployment comp revenue
-            this.unemploymentCompRevenue = new Integer(((Long)json_data.get("Unemployment comp revenue")).intValue());// Selective sales tax
-            this.selectiveSalesTax = new Integer(((Long)json_data.get("Selective sales tax")).intValue());// Sales tax
-            this.salesTax = new Integer(((Long)json_data.get("Sales tax")).intValue());// License tax
-            this.licenseTax = new Integer(((Long)json_data.get("License tax")).intValue());// Federal intergovernmental
-            this.federalIntergovernmental = new Integer(((Long)json_data.get("Federal intergovernmental")).intValue());// General expenditure
-            this.generalExpenditure = new Integer(((Long)json_data.get("General expenditure")).intValue());// Utility revenue
-            this.utilityRevenue = new Integer(((Long)json_data.get("Utility revenue")).intValue());// Revenue
-            this.revenue = new Integer(((Long)json_data.get("Revenue")).intValue());// Tax
-            this.tax = new Integer(((Long)json_data.get("Tax")).intValue());// Local intergovernmental
-            this.localIntergovernmental = new Integer(((Long)json_data.get("Local intergovernmental")).intValue());// Intergovernmental
-            this.intergovernmental = new Integer(((Long)json_data.get("Intergovernmental")).intValue());// Employee retirement revenue
-            this.employeeRetirementRevenue = new Integer(((Long)json_data.get("Employee retirement revenue")).intValue());
+            this.insuranceTrustRevenue = ((Number)json_data.get("Insurance trust  revenue")).intValue();// Capital outlay
+            this.capitalOutlay = ((Number)json_data.get("Capital outlay")).intValue();// State intergovernmental
+            this.stateIntergovernmental = ((Number)json_data.get("State intergovernmental")).intValue();// Miscellaneous
+            this.miscellaneous = ((Number)json_data.get("Miscellaneous")).intValue();// Charges
+            this.charges = ((Number)json_data.get("Charges")).intValue();// Construction
+            this.construction = ((Number)json_data.get("Construction")).intValue();// Expenditure
+            this.expenditure = ((Number)json_data.get("Expenditure")).intValue();// General revenue
+            this.generalRevenue = ((Number)json_data.get("General revenue")).intValue();// Miscellaneous commercial activity
+            this.miscellaneousCommercialActivity = ((Number)json_data.get("Miscellaneous commercial activity")).intValue();// Other insurance trust revenue
+            this.otherInsuranceTrustRevenue = ((Number)json_data.get("Other insurance trust revenue")).intValue();// Worker's comp revenue
+            this.workersCompRevenue = ((Number)json_data.get("Worker's comp revenue")).intValue();// Equipment and land
+            this.equipmentAndLand = ((Number)json_data.get("Equipment and land")).intValue();// Unemployment comp revenue
+            this.unemploymentCompRevenue = ((Number)json_data.get("Unemployment comp revenue")).intValue();// Selective sales tax
+            this.selectiveSalesTax = ((Number)json_data.get("Selective sales tax")).intValue();// Sales tax
+            this.salesTax = ((Number)json_data.get("Sales tax")).intValue();// License tax
+            this.licenseTax = ((Number)json_data.get("License tax")).intValue();// Federal intergovernmental
+            this.federalIntergovernmental = ((Number)json_data.get("Federal intergovernmental")).intValue();// General expenditure
+            this.generalExpenditure = ((Number)json_data.get("General expenditure")).intValue();// Utility revenue
+            this.utilityRevenue = ((Number)json_data.get("Utility revenue")).intValue();// Revenue
+            this.revenue = ((Number)json_data.get("Revenue")).intValue();// Tax
+            this.tax = ((Number)json_data.get("Tax")).intValue();// Local intergovernmental
+            this.localIntergovernmental = ((Number)json_data.get("Local intergovernmental")).intValue();// Intergovernmental
+            this.intergovernmental = ((Number)json_data.get("Intergovernmental")).intValue();// Employee retirement revenue
+            this.employeeRetirementRevenue = ((Number)json_data.get("Employee retirement revenue")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Totals; a field was missing.");
     		e.printStackTrace();

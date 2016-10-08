@@ -74,10 +74,10 @@ public class Waste {
 	 */
     public Waste(JSONObject json_data) {
         try {// Sewerage Total Expenditure
-            this.sewerageTotalExpenditure = new Integer(((Long)json_data.get("Sewerage Total Expenditure")).intValue());// Solid Waste Management Intergovernmental
-            this.solidWasteManagementIntergovernmental = new Integer(((Long)json_data.get("Solid Waste Management Intergovernmental")).intValue());// Sewerage Intergovernmental
-            this.sewerageIntergovernmental = new Integer(((Long)json_data.get("Sewerage Intergovernmental")).intValue());// Solid Waste Management Total Expenditure
-            this.solidWasteManagementTotalExpenditure = new Integer(((Long)json_data.get("Solid Waste Management Total Expenditure")).intValue());
+            this.sewerageTotalExpenditure = ((Number)json_data.get("Sewerage Total Expenditure")).intValue();// Solid Waste Management Intergovernmental
+            this.solidWasteManagementIntergovernmental = ((Number)json_data.get("Solid Waste Management Intergovernmental")).intValue();// Sewerage Intergovernmental
+            this.sewerageIntergovernmental = ((Number)json_data.get("Sewerage Intergovernmental")).intValue();// Solid Waste Management Total Expenditure
+            this.solidWasteManagementTotalExpenditure = ((Number)json_data.get("Solid Waste Management Total Expenditure")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Waste; a field was missing.");
     		e.printStackTrace();

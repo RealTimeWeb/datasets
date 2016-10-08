@@ -282,30 +282,30 @@
 <span class="sourceLineNo">274</span>         */<a name="line.274"></a>
 <span class="sourceLineNo">275</span>    public Totals(JSONObject json_data) {<a name="line.275"></a>
 <span class="sourceLineNo">276</span>        try {// Insurance trust  revenue<a name="line.276"></a>
-<span class="sourceLineNo">277</span>            this.insuranceTrustRevenue = new Integer(((Long)json_data.get("Insurance trust  revenue")).intValue());// Capital outlay<a name="line.277"></a>
-<span class="sourceLineNo">278</span>            this.capitalOutlay = new Integer(((Long)json_data.get("Capital outlay")).intValue());// State intergovernmental<a name="line.278"></a>
-<span class="sourceLineNo">279</span>            this.stateIntergovernmental = new Integer(((Long)json_data.get("State intergovernmental")).intValue());// Miscellaneous<a name="line.279"></a>
-<span class="sourceLineNo">280</span>            this.miscellaneous = new Integer(((Long)json_data.get("Miscellaneous")).intValue());// Charges<a name="line.280"></a>
-<span class="sourceLineNo">281</span>            this.charges = new Integer(((Long)json_data.get("Charges")).intValue());// Construction<a name="line.281"></a>
-<span class="sourceLineNo">282</span>            this.construction = new Integer(((Long)json_data.get("Construction")).intValue());// Expenditure<a name="line.282"></a>
-<span class="sourceLineNo">283</span>            this.expenditure = new Integer(((Long)json_data.get("Expenditure")).intValue());// General revenue<a name="line.283"></a>
-<span class="sourceLineNo">284</span>            this.generalRevenue = new Integer(((Long)json_data.get("General revenue")).intValue());// Miscellaneous commercial activity<a name="line.284"></a>
-<span class="sourceLineNo">285</span>            this.miscellaneousCommercialActivity = new Integer(((Long)json_data.get("Miscellaneous commercial activity")).intValue());// Other insurance trust revenue<a name="line.285"></a>
-<span class="sourceLineNo">286</span>            this.otherInsuranceTrustRevenue = new Integer(((Long)json_data.get("Other insurance trust revenue")).intValue());// Worker's comp revenue<a name="line.286"></a>
-<span class="sourceLineNo">287</span>            this.workersCompRevenue = new Integer(((Long)json_data.get("Worker's comp revenue")).intValue());// Equipment and land<a name="line.287"></a>
-<span class="sourceLineNo">288</span>            this.equipmentAndLand = new Integer(((Long)json_data.get("Equipment and land")).intValue());// Unemployment comp revenue<a name="line.288"></a>
-<span class="sourceLineNo">289</span>            this.unemploymentCompRevenue = new Integer(((Long)json_data.get("Unemployment comp revenue")).intValue());// Selective sales tax<a name="line.289"></a>
-<span class="sourceLineNo">290</span>            this.selectiveSalesTax = new Integer(((Long)json_data.get("Selective sales tax")).intValue());// Sales tax<a name="line.290"></a>
-<span class="sourceLineNo">291</span>            this.salesTax = new Integer(((Long)json_data.get("Sales tax")).intValue());// License tax<a name="line.291"></a>
-<span class="sourceLineNo">292</span>            this.licenseTax = new Integer(((Long)json_data.get("License tax")).intValue());// Federal intergovernmental<a name="line.292"></a>
-<span class="sourceLineNo">293</span>            this.federalIntergovernmental = new Integer(((Long)json_data.get("Federal intergovernmental")).intValue());// General expenditure<a name="line.293"></a>
-<span class="sourceLineNo">294</span>            this.generalExpenditure = new Integer(((Long)json_data.get("General expenditure")).intValue());// Utility revenue<a name="line.294"></a>
-<span class="sourceLineNo">295</span>            this.utilityRevenue = new Integer(((Long)json_data.get("Utility revenue")).intValue());// Revenue<a name="line.295"></a>
-<span class="sourceLineNo">296</span>            this.revenue = new Integer(((Long)json_data.get("Revenue")).intValue());// Tax<a name="line.296"></a>
-<span class="sourceLineNo">297</span>            this.tax = new Integer(((Long)json_data.get("Tax")).intValue());// Local intergovernmental<a name="line.297"></a>
-<span class="sourceLineNo">298</span>            this.localIntergovernmental = new Integer(((Long)json_data.get("Local intergovernmental")).intValue());// Intergovernmental<a name="line.298"></a>
-<span class="sourceLineNo">299</span>            this.intergovernmental = new Integer(((Long)json_data.get("Intergovernmental")).intValue());// Employee retirement revenue<a name="line.299"></a>
-<span class="sourceLineNo">300</span>            this.employeeRetirementRevenue = new Integer(((Long)json_data.get("Employee retirement revenue")).intValue());<a name="line.300"></a>
+<span class="sourceLineNo">277</span>            this.insuranceTrustRevenue = ((Number)json_data.get("Insurance trust  revenue")).intValue();// Capital outlay<a name="line.277"></a>
+<span class="sourceLineNo">278</span>            this.capitalOutlay = ((Number)json_data.get("Capital outlay")).intValue();// State intergovernmental<a name="line.278"></a>
+<span class="sourceLineNo">279</span>            this.stateIntergovernmental = ((Number)json_data.get("State intergovernmental")).intValue();// Miscellaneous<a name="line.279"></a>
+<span class="sourceLineNo">280</span>            this.miscellaneous = ((Number)json_data.get("Miscellaneous")).intValue();// Charges<a name="line.280"></a>
+<span class="sourceLineNo">281</span>            this.charges = ((Number)json_data.get("Charges")).intValue();// Construction<a name="line.281"></a>
+<span class="sourceLineNo">282</span>            this.construction = ((Number)json_data.get("Construction")).intValue();// Expenditure<a name="line.282"></a>
+<span class="sourceLineNo">283</span>            this.expenditure = ((Number)json_data.get("Expenditure")).intValue();// General revenue<a name="line.283"></a>
+<span class="sourceLineNo">284</span>            this.generalRevenue = ((Number)json_data.get("General revenue")).intValue();// Miscellaneous commercial activity<a name="line.284"></a>
+<span class="sourceLineNo">285</span>            this.miscellaneousCommercialActivity = ((Number)json_data.get("Miscellaneous commercial activity")).intValue();// Other insurance trust revenue<a name="line.285"></a>
+<span class="sourceLineNo">286</span>            this.otherInsuranceTrustRevenue = ((Number)json_data.get("Other insurance trust revenue")).intValue();// Worker's comp revenue<a name="line.286"></a>
+<span class="sourceLineNo">287</span>            this.workersCompRevenue = ((Number)json_data.get("Worker's comp revenue")).intValue();// Equipment and land<a name="line.287"></a>
+<span class="sourceLineNo">288</span>            this.equipmentAndLand = ((Number)json_data.get("Equipment and land")).intValue();// Unemployment comp revenue<a name="line.288"></a>
+<span class="sourceLineNo">289</span>            this.unemploymentCompRevenue = ((Number)json_data.get("Unemployment comp revenue")).intValue();// Selective sales tax<a name="line.289"></a>
+<span class="sourceLineNo">290</span>            this.selectiveSalesTax = ((Number)json_data.get("Selective sales tax")).intValue();// Sales tax<a name="line.290"></a>
+<span class="sourceLineNo">291</span>            this.salesTax = ((Number)json_data.get("Sales tax")).intValue();// License tax<a name="line.291"></a>
+<span class="sourceLineNo">292</span>            this.licenseTax = ((Number)json_data.get("License tax")).intValue();// Federal intergovernmental<a name="line.292"></a>
+<span class="sourceLineNo">293</span>            this.federalIntergovernmental = ((Number)json_data.get("Federal intergovernmental")).intValue();// General expenditure<a name="line.293"></a>
+<span class="sourceLineNo">294</span>            this.generalExpenditure = ((Number)json_data.get("General expenditure")).intValue();// Utility revenue<a name="line.294"></a>
+<span class="sourceLineNo">295</span>            this.utilityRevenue = ((Number)json_data.get("Utility revenue")).intValue();// Revenue<a name="line.295"></a>
+<span class="sourceLineNo">296</span>            this.revenue = ((Number)json_data.get("Revenue")).intValue();// Tax<a name="line.296"></a>
+<span class="sourceLineNo">297</span>            this.tax = ((Number)json_data.get("Tax")).intValue();// Local intergovernmental<a name="line.297"></a>
+<span class="sourceLineNo">298</span>            this.localIntergovernmental = ((Number)json_data.get("Local intergovernmental")).intValue();// Intergovernmental<a name="line.298"></a>
+<span class="sourceLineNo">299</span>            this.intergovernmental = ((Number)json_data.get("Intergovernmental")).intValue();// Employee retirement revenue<a name="line.299"></a>
+<span class="sourceLineNo">300</span>            this.employeeRetirementRevenue = ((Number)json_data.get("Employee retirement revenue")).intValue();<a name="line.300"></a>
 <span class="sourceLineNo">301</span>        } catch (NullPointerException e) {<a name="line.301"></a>
 <span class="sourceLineNo">302</span>                System.err.println("Could not convert the response to a Totals; a field was missing.");<a name="line.302"></a>
 <span class="sourceLineNo">303</span>                e.printStackTrace();<a name="line.303"></a>

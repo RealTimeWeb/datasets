@@ -74,10 +74,10 @@ public class Welfare {
 	 */
     public Welfare(JSONObject json_data) {
         try {// Welfare Institution Total Expenditure
-            this.welfareInstitutionTotalExpenditure = new Integer(((Long)json_data.get("Welfare Institution Total Expenditure")).intValue());// Welfare Vendor Payments Total
-            this.welfareVendorPaymentsTotal = new Integer(((Long)json_data.get("Welfare Vendor Payments Total")).intValue());// Welfare NEC Total Expenditure
-            this.welfareNecTotalExpenditure = new Integer(((Long)json_data.get("Welfare NEC Total Expenditure")).intValue());// Welfare NEC Intergovernmental
-            this.welfareNecIntergovernmental = new Integer(((Long)json_data.get("Welfare NEC Intergovernmental")).intValue());
+            this.welfareInstitutionTotalExpenditure = ((Number)json_data.get("Welfare Institution Total Expenditure")).intValue();// Welfare Vendor Payments Total
+            this.welfareVendorPaymentsTotal = ((Number)json_data.get("Welfare Vendor Payments Total")).intValue();// Welfare NEC Total Expenditure
+            this.welfareNecTotalExpenditure = ((Number)json_data.get("Welfare NEC Total Expenditure")).intValue();// Welfare NEC Intergovernmental
+            this.welfareNecIntergovernmental = ((Number)json_data.get("Welfare NEC Intergovernmental")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Welfare; a field was missing.");
     		e.printStackTrace();

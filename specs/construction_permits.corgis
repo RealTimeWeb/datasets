@@ -20,8 +20,8 @@ interfaces:
     description: Returns permit data from every year.
     returns: list[permit]
     production:
-        sql: SELECT data FROM constructionpermits
+        sql: SELECT data FROM construction_permits
         post: json()
     test:
-        sql: SELECT data FROM constructionpermits LIMIT {hardware}
+        sql: SELECT data FROM construction_permits LIMIT {hardware}
         post: json()

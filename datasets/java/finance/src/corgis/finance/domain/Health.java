@@ -65,9 +65,9 @@ public class Health {
 	 */
     public Health(JSONObject json_data) {
         try {// Health Total Expenditure
-            this.healthTotalExpenditure = new Integer(((Long)json_data.get("Health Total Expenditure")).intValue());// Hospitals
+            this.healthTotalExpenditure = ((Number)json_data.get("Health Total Expenditure")).intValue();// Hospitals
             this.hospitals = new Hospitals((JSONObject)json_data.get("Hospitals"));// Health Intergovernmental
-            this.healthIntergovernmental = new Integer(((Long)json_data.get("Health Intergovernmental")).intValue());
+            this.healthIntergovernmental = ((Number)json_data.get("Health Intergovernmental")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Health; a field was missing.");
     		e.printStackTrace();

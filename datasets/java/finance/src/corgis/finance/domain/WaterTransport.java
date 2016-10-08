@@ -54,8 +54,8 @@ public class WaterTransport {
 	 */
     public WaterTransport(JSONObject json_data) {
         try {// Water Transport Intergovernmental
-            this.waterTransportIntergovernmental = new Integer(((Long)json_data.get("Water Transport Intergovernmental")).intValue());// Water Transport Total Expenditure
-            this.waterTransportTotalExpenditure = new Integer(((Long)json_data.get("Water Transport Total Expenditure")).intValue());
+            this.waterTransportIntergovernmental = ((Number)json_data.get("Water Transport Intergovernmental")).intValue();// Water Transport Total Expenditure
+            this.waterTransportTotalExpenditure = ((Number)json_data.get("Water Transport Total Expenditure")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a WaterTransport; a field was missing.");
     		e.printStackTrace();

@@ -104,13 +104,13 @@ public class PublicWelfare {
 	 */
     public PublicWelfare(JSONObject json_data) {
         try {// Public Welfare Equipment and Land
-            this.publicWelfareEquipmentAndLand = new Integer(((Long)json_data.get("Public Welfare Equipment and Land")).intValue());// Public Welfare Intergovernmental
-            this.publicWelfareIntergovernmental = new Integer(((Long)json_data.get("Public Welfare Intergovernmental")).intValue());// Public Welfare Other Current Operation
-            this.publicWelfareOtherCurrentOperation = new Integer(((Long)json_data.get("Public Welfare Other Current Operation")).intValue());// Public Welfare Direct Expenditure
-            this.publicWelfareDirectExpenditure = new Integer(((Long)json_data.get("Public Welfare Direct Expenditure")).intValue());// Public Welfare Construction
-            this.publicWelfareConstruction = new Integer(((Long)json_data.get("Public Welfare Construction")).intValue());// Public Welfare Total Expenditure
-            this.publicWelfareTotalExpenditure = new Integer(((Long)json_data.get("Public Welfare Total Expenditure")).intValue());// Public Welfare Assistance and Subsidies
-            this.publicWelfareAssistanceAndSubsidies = new Integer(((Long)json_data.get("Public Welfare Assistance and Subsidies")).intValue());
+            this.publicWelfareEquipmentAndLand = ((Number)json_data.get("Public Welfare Equipment and Land")).intValue();// Public Welfare Intergovernmental
+            this.publicWelfareIntergovernmental = ((Number)json_data.get("Public Welfare Intergovernmental")).intValue();// Public Welfare Other Current Operation
+            this.publicWelfareOtherCurrentOperation = ((Number)json_data.get("Public Welfare Other Current Operation")).intValue();// Public Welfare Direct Expenditure
+            this.publicWelfareDirectExpenditure = ((Number)json_data.get("Public Welfare Direct Expenditure")).intValue();// Public Welfare Construction
+            this.publicWelfareConstruction = ((Number)json_data.get("Public Welfare Construction")).intValue();// Public Welfare Total Expenditure
+            this.publicWelfareTotalExpenditure = ((Number)json_data.get("Public Welfare Total Expenditure")).intValue();// Public Welfare Assistance and Subsidies
+            this.publicWelfareAssistanceAndSubsidies = ((Number)json_data.get("Public Welfare Assistance and Subsidies")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a PublicWelfare; a field was missing.");
     		e.printStackTrace();

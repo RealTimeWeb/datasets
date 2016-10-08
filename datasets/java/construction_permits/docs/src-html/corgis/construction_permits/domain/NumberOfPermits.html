@@ -82,10 +82,10 @@
 <span class="sourceLineNo">074</span>         */<a name="line.74"></a>
 <span class="sourceLineNo">075</span>    public NumberOfPermits(JSONObject json_data) {<a name="line.75"></a>
 <span class="sourceLineNo">076</span>        try {// 2 units<a name="line.76"></a>
-<span class="sourceLineNo">077</span>            this.twoUnits = new Integer(((Long)json_data.get("2 units")).intValue());// 5+ units<a name="line.77"></a>
-<span class="sourceLineNo">078</span>            this.fiveplusUnits = new Integer(((Long)json_data.get("5+ units")).intValue());// 3-4 units<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.threeFourUnits = new Integer(((Long)json_data.get("3-4 units")).intValue());// 1 unit<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.oneUnit = new Integer(((Long)json_data.get("1 unit")).intValue());<a name="line.80"></a>
+<span class="sourceLineNo">077</span>            this.twoUnits = ((Number)json_data.get("2 units")).intValue();// 5+ units<a name="line.77"></a>
+<span class="sourceLineNo">078</span>            this.fiveplusUnits = ((Number)json_data.get("5+ units")).intValue();// 3-4 units<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            this.threeFourUnits = ((Number)json_data.get("3-4 units")).intValue();// 1 unit<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            this.oneUnit = ((Number)json_data.get("1 unit")).intValue();<a name="line.80"></a>
 <span class="sourceLineNo">081</span>        } catch (NullPointerException e) {<a name="line.81"></a>
 <span class="sourceLineNo">082</span>                System.err.println("Could not convert the response to a #OfPermits; a field was missing.");<a name="line.82"></a>
 <span class="sourceLineNo">083</span>                e.printStackTrace();<a name="line.83"></a>

@@ -18,6 +18,7 @@ except NameError:
 SIMPLE_TYPE_MAP = {
                    unicode: 'text',
                    int: 'number',
+                   long: 'number',
                    float: 'number',
                    bool: 'bool'
                    }
@@ -92,6 +93,7 @@ class JsonMetrics(object):
             }
         }
         self.walk(data, parent_name)
+        self.union_types = defaultdict(set)
         self.union_walk(data, parent_name)
         self.countUnions()
         self.aggregateLists()
@@ -127,7 +129,7 @@ class JsonMetrics(object):
             self.walk(value, parent_name)
             self.path.pop()
     def walk_atomic(self, an_atomic, parent_name):
-        #self.union_types[self.json_path].add(type(an_atomic))
+        self.union_types[self.json_path].add(type(an_atomic))
         self.report['heights'].append(len(self.path))
         self.report['atomics']['count'] += 1
 

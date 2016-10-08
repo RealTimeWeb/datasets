@@ -122,14 +122,14 @@
 <span class="sourceLineNo">114</span>         */<a name="line.114"></a>
 <span class="sourceLineNo">115</span>    public Hospitals(JSONObject json_data) {<a name="line.115"></a>
 <span class="sourceLineNo">116</span>        try {// Own Hospitals Total Expenditure<a name="line.116"></a>
-<span class="sourceLineNo">117</span>            this.ownHospitalsTotalExpenditure = new Integer(((Long)json_data.get("Own Hospitals Total Expenditure")).intValue());// Hospital-Other Total Expenditure<a name="line.117"></a>
-<span class="sourceLineNo">118</span>            this.hospitalOtherTotalExpenditure = new Integer(((Long)json_data.get("Hospital-Other Total Expenditure")).intValue());// Hospitals Total Expenditure<a name="line.118"></a>
-<span class="sourceLineNo">119</span>            this.hospitalsTotalExpenditure = new Integer(((Long)json_data.get("Hospitals Total Expenditure")).intValue());// Hospitals Total Intergovernmental<a name="line.119"></a>
-<span class="sourceLineNo">120</span>            this.hospitalsTotalIntergovernmental = new Integer(((Long)json_data.get("Hospitals Total Intergovernmental")).intValue());// Hospitals Total Equipment and land<a name="line.120"></a>
-<span class="sourceLineNo">121</span>            this.hospitalsTotalEquipmentAndLand = new Integer(((Long)json_data.get("Hospitals Total Equipment and land")).intValue());// Hospitals Total Construction<a name="line.121"></a>
-<span class="sourceLineNo">122</span>            this.hospitalsTotalConstruction = new Integer(((Long)json_data.get("Hospitals Total Construction")).intValue());// Hospitals Total Current<a name="line.122"></a>
-<span class="sourceLineNo">123</span>            this.hospitalsTotalCurrent = new Integer(((Long)json_data.get("Hospitals Total Current")).intValue());// Hospital-Other Intergovernmental<a name="line.123"></a>
-<span class="sourceLineNo">124</span>            this.hospitalOtherIntergovernmental = new Integer(((Long)json_data.get("Hospital-Other Intergovernmental")).intValue());<a name="line.124"></a>
+<span class="sourceLineNo">117</span>            this.ownHospitalsTotalExpenditure = ((Number)json_data.get("Own Hospitals Total Expenditure")).intValue();// Hospital-Other Total Expenditure<a name="line.117"></a>
+<span class="sourceLineNo">118</span>            this.hospitalOtherTotalExpenditure = ((Number)json_data.get("Hospital-Other Total Expenditure")).intValue();// Hospitals Total Expenditure<a name="line.118"></a>
+<span class="sourceLineNo">119</span>            this.hospitalsTotalExpenditure = ((Number)json_data.get("Hospitals Total Expenditure")).intValue();// Hospitals Total Intergovernmental<a name="line.119"></a>
+<span class="sourceLineNo">120</span>            this.hospitalsTotalIntergovernmental = ((Number)json_data.get("Hospitals Total Intergovernmental")).intValue();// Hospitals Total Equipment and land<a name="line.120"></a>
+<span class="sourceLineNo">121</span>            this.hospitalsTotalEquipmentAndLand = ((Number)json_data.get("Hospitals Total Equipment and land")).intValue();// Hospitals Total Construction<a name="line.121"></a>
+<span class="sourceLineNo">122</span>            this.hospitalsTotalConstruction = ((Number)json_data.get("Hospitals Total Construction")).intValue();// Hospitals Total Current<a name="line.122"></a>
+<span class="sourceLineNo">123</span>            this.hospitalsTotalCurrent = ((Number)json_data.get("Hospitals Total Current")).intValue();// Hospital-Other Intergovernmental<a name="line.123"></a>
+<span class="sourceLineNo">124</span>            this.hospitalOtherIntergovernmental = ((Number)json_data.get("Hospital-Other Intergovernmental")).intValue();<a name="line.124"></a>
 <span class="sourceLineNo">125</span>        } catch (NullPointerException e) {<a name="line.125"></a>
 <span class="sourceLineNo">126</span>                System.err.println("Could not convert the response to a Hospitals; a field was missing.");<a name="line.126"></a>
 <span class="sourceLineNo">127</span>                e.printStackTrace();<a name="line.127"></a>

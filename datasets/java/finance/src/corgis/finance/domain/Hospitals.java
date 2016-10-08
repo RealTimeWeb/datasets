@@ -114,14 +114,14 @@ public class Hospitals {
 	 */
     public Hospitals(JSONObject json_data) {
         try {// Own Hospitals Total Expenditure
-            this.ownHospitalsTotalExpenditure = new Integer(((Long)json_data.get("Own Hospitals Total Expenditure")).intValue());// Hospital-Other Total Expenditure
-            this.hospitalOtherTotalExpenditure = new Integer(((Long)json_data.get("Hospital-Other Total Expenditure")).intValue());// Hospitals Total Expenditure
-            this.hospitalsTotalExpenditure = new Integer(((Long)json_data.get("Hospitals Total Expenditure")).intValue());// Hospitals Total Intergovernmental
-            this.hospitalsTotalIntergovernmental = new Integer(((Long)json_data.get("Hospitals Total Intergovernmental")).intValue());// Hospitals Total Equipment and land
-            this.hospitalsTotalEquipmentAndLand = new Integer(((Long)json_data.get("Hospitals Total Equipment and land")).intValue());// Hospitals Total Construction
-            this.hospitalsTotalConstruction = new Integer(((Long)json_data.get("Hospitals Total Construction")).intValue());// Hospitals Total Current
-            this.hospitalsTotalCurrent = new Integer(((Long)json_data.get("Hospitals Total Current")).intValue());// Hospital-Other Intergovernmental
-            this.hospitalOtherIntergovernmental = new Integer(((Long)json_data.get("Hospital-Other Intergovernmental")).intValue());
+            this.ownHospitalsTotalExpenditure = ((Number)json_data.get("Own Hospitals Total Expenditure")).intValue();// Hospital-Other Total Expenditure
+            this.hospitalOtherTotalExpenditure = ((Number)json_data.get("Hospital-Other Total Expenditure")).intValue();// Hospitals Total Expenditure
+            this.hospitalsTotalExpenditure = ((Number)json_data.get("Hospitals Total Expenditure")).intValue();// Hospitals Total Intergovernmental
+            this.hospitalsTotalIntergovernmental = ((Number)json_data.get("Hospitals Total Intergovernmental")).intValue();// Hospitals Total Equipment and land
+            this.hospitalsTotalEquipmentAndLand = ((Number)json_data.get("Hospitals Total Equipment and land")).intValue();// Hospitals Total Construction
+            this.hospitalsTotalConstruction = ((Number)json_data.get("Hospitals Total Construction")).intValue();// Hospitals Total Current
+            this.hospitalsTotalCurrent = ((Number)json_data.get("Hospitals Total Current")).intValue();// Hospital-Other Intergovernmental
+            this.hospitalOtherIntergovernmental = ((Number)json_data.get("Hospital-Other Intergovernmental")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Hospitals; a field was missing.");
     		e.printStackTrace();

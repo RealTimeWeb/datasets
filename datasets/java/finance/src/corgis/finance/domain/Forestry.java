@@ -54,8 +54,8 @@ public class Forestry {
 	 */
     public Forestry(JSONObject json_data) {
         try {// Forestry Intergovernmental
-            this.forestryIntergovernmental = new Integer(((Long)json_data.get("Forestry Intergovernmental")).intValue());// Forestry Total Expenditure
-            this.forestryTotalExpenditure = new Integer(((Long)json_data.get("Forestry Total Expenditure")).intValue());
+            this.forestryIntergovernmental = ((Number)json_data.get("Forestry Intergovernmental")).intValue();// Forestry Total Expenditure
+            this.forestryTotalExpenditure = ((Number)json_data.get("Forestry Total Expenditure")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Forestry; a field was missing.");
     		e.printStackTrace();

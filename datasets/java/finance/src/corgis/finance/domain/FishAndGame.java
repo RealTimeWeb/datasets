@@ -54,8 +54,8 @@ public class FishAndGame {
 	 */
     public FishAndGame(JSONObject json_data) {
         try {// Fish and Game Intergovernmental
-            this.fishAndGameIntergovernmental = new Integer(((Long)json_data.get("Fish and Game Intergovernmental")).intValue());// Fish and Game Total Expenditure
-            this.fishAndGameTotalExpenditure = new Integer(((Long)json_data.get("Fish and Game Total Expenditure")).intValue());
+            this.fishAndGameIntergovernmental = ((Number)json_data.get("Fish and Game Intergovernmental")).intValue();// Fish and Game Total Expenditure
+            this.fishAndGameTotalExpenditure = ((Number)json_data.get("Fish and Game Total Expenditure")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a FishAndGame; a field was missing.");
     		e.printStackTrace();
