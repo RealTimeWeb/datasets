@@ -85,7 +85,7 @@
 <span class="sourceLineNo">077</span>    public Report(JSONObject json_data) {<a name="line.77"></a>
 <span class="sourceLineNo">078</span>        try {// Age<a name="line.78"></a>
 <span class="sourceLineNo">079</span>            this.age = new Age((JSONObject)json_data.get("Age"));// Year<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.year = new Integer(((Long)json_data.get("Year")).intValue());// Data<a name="line.80"></a>
+<span class="sourceLineNo">080</span>            this.year = ((Number)json_data.get("Year")).intValue();// Data<a name="line.80"></a>
 <span class="sourceLineNo">081</span>            this.data = new Data((JSONObject)json_data.get("Data"));// Area<a name="line.81"></a>
 <span class="sourceLineNo">082</span>            this.area = (String)json_data.get("Area");<a name="line.82"></a>
 <span class="sourceLineNo">083</span>        } catch (NullPointerException e) {<a name="line.83"></a>

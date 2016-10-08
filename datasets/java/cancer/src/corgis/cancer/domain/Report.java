@@ -77,7 +77,7 @@ public class Report {
     public Report(JSONObject json_data) {
         try {// Age
             this.age = new Age((JSONObject)json_data.get("Age"));// Year
-            this.year = new Integer(((Long)json_data.get("Year")).intValue());// Data
+            this.year = ((Number)json_data.get("Year")).intValue();// Data
             this.data = new Data((JSONObject)json_data.get("Data"));// Area
             this.area = (String)json_data.get("Area");
         } catch (NullPointerException e) {
