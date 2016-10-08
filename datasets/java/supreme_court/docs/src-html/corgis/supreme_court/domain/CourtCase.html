@@ -19,16 +19,16 @@
 <span class="sourceLineNo">011</span>import org.json.simple.JSONObject;<a name="line.11"></a>
 <span class="sourceLineNo">012</span><a name="line.12"></a>
 <span class="sourceLineNo">013</span>import corgis.supreme_court.domain.Origin;<a name="line.13"></a>
-<span class="sourceLineNo">014</span>import corgis.supreme_court.domain.LowerCourt;<a name="line.14"></a>
-<span class="sourceLineNo">015</span>import corgis.supreme_court.domain.Decision;<a name="line.15"></a>
-<span class="sourceLineNo">016</span>import corgis.supreme_court.domain.Citation;<a name="line.16"></a>
-<span class="sourceLineNo">017</span>import corgis.supreme_court.domain.NaturalCourt;<a name="line.17"></a>
-<span class="sourceLineNo">018</span>import corgis.supreme_court.domain.Source;<a name="line.18"></a>
-<span class="sourceLineNo">019</span>import corgis.supreme_court.domain.Arguments;<a name="line.19"></a>
-<span class="sourceLineNo">020</span>import corgis.supreme_court.domain.Voting;<a name="line.20"></a>
-<span class="sourceLineNo">021</span>import corgis.supreme_court.domain.Issue;<a name="line.21"></a>
-<span class="sourceLineNo">022</span>import corgis.supreme_court.domain.Id;<a name="line.22"></a>
-<span class="sourceLineNo">023</span>import corgis.supreme_court.domain.Laws;<a name="line.23"></a>
+<span class="sourceLineNo">014</span>import corgis.supreme_court.domain.Voting;<a name="line.14"></a>
+<span class="sourceLineNo">015</span>import corgis.supreme_court.domain.LowerCourt;<a name="line.15"></a>
+<span class="sourceLineNo">016</span>import corgis.supreme_court.domain.Laws;<a name="line.16"></a>
+<span class="sourceLineNo">017</span>import corgis.supreme_court.domain.Issue;<a name="line.17"></a>
+<span class="sourceLineNo">018</span>import corgis.supreme_court.domain.Decision;<a name="line.18"></a>
+<span class="sourceLineNo">019</span>import corgis.supreme_court.domain.Citation;<a name="line.19"></a>
+<span class="sourceLineNo">020</span>import corgis.supreme_court.domain.NaturalCourt;<a name="line.20"></a>
+<span class="sourceLineNo">021</span>import corgis.supreme_court.domain.Source;<a name="line.21"></a>
+<span class="sourceLineNo">022</span>import corgis.supreme_court.domain.Arguments;<a name="line.22"></a>
+<span class="sourceLineNo">023</span>import corgis.supreme_court.domain.Id;<a name="line.23"></a>
 <span class="sourceLineNo">024</span><a name="line.24"></a>
 <span class="sourceLineNo">025</span>/**<a name="line.25"></a>
 <span class="sourceLineNo">026</span> * <a name="line.26"></a>
@@ -36,19 +36,19 @@
 <span class="sourceLineNo">028</span>public class CourtCase {<a name="line.28"></a>
 <span class="sourceLineNo">029</span>        <a name="line.29"></a>
 <span class="sourceLineNo">030</span>    private Origin origin;<a name="line.30"></a>
-<span class="sourceLineNo">031</span>    private LowerCourt lowerCourt;<a name="line.31"></a>
-<span class="sourceLineNo">032</span>    private String name;<a name="line.32"></a>
-<span class="sourceLineNo">033</span>    private Boolean threeJudgeDc;<a name="line.33"></a>
-<span class="sourceLineNo">034</span>    private Integer docket;<a name="line.34"></a>
+<span class="sourceLineNo">031</span>    private Voting voting;<a name="line.31"></a>
+<span class="sourceLineNo">032</span>    private LowerCourt lowerCourt;<a name="line.32"></a>
+<span class="sourceLineNo">033</span>    private Laws laws;<a name="line.33"></a>
+<span class="sourceLineNo">034</span>    private Issue issue;<a name="line.34"></a>
 <span class="sourceLineNo">035</span>    private Decision decision;<a name="line.35"></a>
 <span class="sourceLineNo">036</span>    private Citation citation;<a name="line.36"></a>
 <span class="sourceLineNo">037</span>    private NaturalCourt naturalCourt;<a name="line.37"></a>
 <span class="sourceLineNo">038</span>    private Source source;<a name="line.38"></a>
 <span class="sourceLineNo">039</span>    private Arguments arguments;<a name="line.39"></a>
-<span class="sourceLineNo">040</span>    private Voting voting;<a name="line.40"></a>
-<span class="sourceLineNo">041</span>    private Issue issue;<a name="line.41"></a>
+<span class="sourceLineNo">040</span>    private Boolean threeJudgeDc;<a name="line.40"></a>
+<span class="sourceLineNo">041</span>    private Integer docket;<a name="line.41"></a>
 <span class="sourceLineNo">042</span>    private Id id;<a name="line.42"></a>
-<span class="sourceLineNo">043</span>    private Laws laws;<a name="line.43"></a>
+<span class="sourceLineNo">043</span>    private String name;<a name="line.43"></a>
 <span class="sourceLineNo">044</span>    <a name="line.44"></a>
 <span class="sourceLineNo">045</span>    <a name="line.45"></a>
 <span class="sourceLineNo">046</span>    /*<a name="line.46"></a>
@@ -63,8 +63,8 @@
 <span class="sourceLineNo">055</span>    /*<a name="line.55"></a>
 <span class="sourceLineNo">056</span>     * @return <a name="line.56"></a>
 <span class="sourceLineNo">057</span>     */<a name="line.57"></a>
-<span class="sourceLineNo">058</span>    public LowerCourt getLowerCourt() {<a name="line.58"></a>
-<span class="sourceLineNo">059</span>        return this.lowerCourt;<a name="line.59"></a>
+<span class="sourceLineNo">058</span>    public Voting getVoting() {<a name="line.58"></a>
+<span class="sourceLineNo">059</span>        return this.voting;<a name="line.59"></a>
 <span class="sourceLineNo">060</span>    }<a name="line.60"></a>
 <span class="sourceLineNo">061</span>    <a name="line.61"></a>
 <span class="sourceLineNo">062</span>    <a name="line.62"></a>
@@ -72,8 +72,8 @@
 <span class="sourceLineNo">064</span>    /*<a name="line.64"></a>
 <span class="sourceLineNo">065</span>     * @return <a name="line.65"></a>
 <span class="sourceLineNo">066</span>     */<a name="line.66"></a>
-<span class="sourceLineNo">067</span>    public String getName() {<a name="line.67"></a>
-<span class="sourceLineNo">068</span>        return this.name;<a name="line.68"></a>
+<span class="sourceLineNo">067</span>    public LowerCourt getLowerCourt() {<a name="line.67"></a>
+<span class="sourceLineNo">068</span>        return this.lowerCourt;<a name="line.68"></a>
 <span class="sourceLineNo">069</span>    }<a name="line.69"></a>
 <span class="sourceLineNo">070</span>    <a name="line.70"></a>
 <span class="sourceLineNo">071</span>    <a name="line.71"></a>
@@ -81,8 +81,8 @@
 <span class="sourceLineNo">073</span>    /*<a name="line.73"></a>
 <span class="sourceLineNo">074</span>     * @return <a name="line.74"></a>
 <span class="sourceLineNo">075</span>     */<a name="line.75"></a>
-<span class="sourceLineNo">076</span>    public Boolean getThreeJudgeDc() {<a name="line.76"></a>
-<span class="sourceLineNo">077</span>        return this.threeJudgeDc;<a name="line.77"></a>
+<span class="sourceLineNo">076</span>    public Laws getLaws() {<a name="line.76"></a>
+<span class="sourceLineNo">077</span>        return this.laws;<a name="line.77"></a>
 <span class="sourceLineNo">078</span>    }<a name="line.78"></a>
 <span class="sourceLineNo">079</span>    <a name="line.79"></a>
 <span class="sourceLineNo">080</span>    <a name="line.80"></a>
@@ -90,8 +90,8 @@
 <span class="sourceLineNo">082</span>    /*<a name="line.82"></a>
 <span class="sourceLineNo">083</span>     * @return <a name="line.83"></a>
 <span class="sourceLineNo">084</span>     */<a name="line.84"></a>
-<span class="sourceLineNo">085</span>    public Integer getDocket() {<a name="line.85"></a>
-<span class="sourceLineNo">086</span>        return this.docket;<a name="line.86"></a>
+<span class="sourceLineNo">085</span>    public Issue getIssue() {<a name="line.85"></a>
+<span class="sourceLineNo">086</span>        return this.issue;<a name="line.86"></a>
 <span class="sourceLineNo">087</span>    }<a name="line.87"></a>
 <span class="sourceLineNo">088</span>    <a name="line.88"></a>
 <span class="sourceLineNo">089</span>    <a name="line.89"></a>
@@ -144,8 +144,8 @@
 <span class="sourceLineNo">136</span>    /*<a name="line.136"></a>
 <span class="sourceLineNo">137</span>     * @return <a name="line.137"></a>
 <span class="sourceLineNo">138</span>     */<a name="line.138"></a>
-<span class="sourceLineNo">139</span>    public Voting getVoting() {<a name="line.139"></a>
-<span class="sourceLineNo">140</span>        return this.voting;<a name="line.140"></a>
+<span class="sourceLineNo">139</span>    public Boolean getThreeJudgeDc() {<a name="line.139"></a>
+<span class="sourceLineNo">140</span>        return this.threeJudgeDc;<a name="line.140"></a>
 <span class="sourceLineNo">141</span>    }<a name="line.141"></a>
 <span class="sourceLineNo">142</span>    <a name="line.142"></a>
 <span class="sourceLineNo">143</span>    <a name="line.143"></a>
@@ -153,8 +153,8 @@
 <span class="sourceLineNo">145</span>    /*<a name="line.145"></a>
 <span class="sourceLineNo">146</span>     * @return <a name="line.146"></a>
 <span class="sourceLineNo">147</span>     */<a name="line.147"></a>
-<span class="sourceLineNo">148</span>    public Issue getIssue() {<a name="line.148"></a>
-<span class="sourceLineNo">149</span>        return this.issue;<a name="line.149"></a>
+<span class="sourceLineNo">148</span>    public Integer getDocket() {<a name="line.148"></a>
+<span class="sourceLineNo">149</span>        return this.docket;<a name="line.149"></a>
 <span class="sourceLineNo">150</span>    }<a name="line.150"></a>
 <span class="sourceLineNo">151</span>    <a name="line.151"></a>
 <span class="sourceLineNo">152</span>    <a name="line.152"></a>
@@ -171,8 +171,8 @@
 <span class="sourceLineNo">163</span>    /*<a name="line.163"></a>
 <span class="sourceLineNo">164</span>     * @return <a name="line.164"></a>
 <span class="sourceLineNo">165</span>     */<a name="line.165"></a>
-<span class="sourceLineNo">166</span>    public Laws getLaws() {<a name="line.166"></a>
-<span class="sourceLineNo">167</span>        return this.laws;<a name="line.167"></a>
+<span class="sourceLineNo">166</span>    public String getName() {<a name="line.166"></a>
+<span class="sourceLineNo">167</span>        return this.name;<a name="line.167"></a>
 <span class="sourceLineNo">168</span>    }<a name="line.168"></a>
 <span class="sourceLineNo">169</span>    <a name="line.169"></a>
 <span class="sourceLineNo">170</span>    <a name="line.170"></a>
@@ -184,7 +184,7 @@
 <span class="sourceLineNo">176</span>         * @return String<a name="line.176"></a>
 <span class="sourceLineNo">177</span>         */<a name="line.177"></a>
 <span class="sourceLineNo">178</span>        public String toString() {<a name="line.178"></a>
-<span class="sourceLineNo">179</span>                return "CourtCase[" +origin+", "+lowerCourt+", "+name+", "+threeJudgeDc+", "+docket+", "+decision+", "+citation+", "+naturalCourt+", "+source+", "+arguments+", "+voting+", "+issue+", "+id+", "+laws+"]";<a name="line.179"></a>
+<span class="sourceLineNo">179</span>                return "CourtCase[" +origin+", "+voting+", "+lowerCourt+", "+laws+", "+issue+", "+decision+", "+citation+", "+naturalCourt+", "+source+", "+arguments+", "+threeJudgeDc+", "+docket+", "+id+", "+name+"]";<a name="line.179"></a>
 <span class="sourceLineNo">180</span>        }<a name="line.180"></a>
 <span class="sourceLineNo">181</span>        <a name="line.181"></a>
 <span class="sourceLineNo">182</span>        /**<a name="line.182"></a>
@@ -193,20 +193,20 @@
 <span class="sourceLineNo">185</span>         */<a name="line.185"></a>
 <span class="sourceLineNo">186</span>    public CourtCase(JSONObject json_data) {<a name="line.186"></a>
 <span class="sourceLineNo">187</span>        try {// origin<a name="line.187"></a>
-<span class="sourceLineNo">188</span>            this.origin = new Origin((JSONObject)json_data.get("origin"));// lower court<a name="line.188"></a>
-<span class="sourceLineNo">189</span>            this.lowerCourt = new LowerCourt((JSONObject)json_data.get("lower court"));// name<a name="line.189"></a>
-<span class="sourceLineNo">190</span>            this.name = (String)json_data.get("name");// 3 judge dc?<a name="line.190"></a>
-<span class="sourceLineNo">191</span>            this.threeJudgeDc = (Boolean)json_data.get("3 judge dc?");// docket<a name="line.191"></a>
-<span class="sourceLineNo">192</span>            this.docket = new Integer(((Long)json_data.get("docket")).intValue());// decision<a name="line.192"></a>
+<span class="sourceLineNo">188</span>            this.origin = new Origin((JSONObject)json_data.get("origin"));// voting<a name="line.188"></a>
+<span class="sourceLineNo">189</span>            this.voting = new Voting((JSONObject)json_data.get("voting"));// lower court<a name="line.189"></a>
+<span class="sourceLineNo">190</span>            this.lowerCourt = new LowerCourt((JSONObject)json_data.get("lower court"));// laws<a name="line.190"></a>
+<span class="sourceLineNo">191</span>            this.laws = new Laws((JSONObject)json_data.get("laws"));// issue<a name="line.191"></a>
+<span class="sourceLineNo">192</span>            this.issue = new Issue((JSONObject)json_data.get("issue"));// decision<a name="line.192"></a>
 <span class="sourceLineNo">193</span>            this.decision = new Decision((JSONObject)json_data.get("decision"));// citation<a name="line.193"></a>
 <span class="sourceLineNo">194</span>            this.citation = new Citation((JSONObject)json_data.get("citation"));// natural court<a name="line.194"></a>
 <span class="sourceLineNo">195</span>            this.naturalCourt = new NaturalCourt((JSONObject)json_data.get("natural court"));// source<a name="line.195"></a>
 <span class="sourceLineNo">196</span>            this.source = new Source((JSONObject)json_data.get("source"));// arguments<a name="line.196"></a>
-<span class="sourceLineNo">197</span>            this.arguments = new Arguments((JSONObject)json_data.get("arguments"));// voting<a name="line.197"></a>
-<span class="sourceLineNo">198</span>            this.voting = new Voting((JSONObject)json_data.get("voting"));// issue<a name="line.198"></a>
-<span class="sourceLineNo">199</span>            this.issue = new Issue((JSONObject)json_data.get("issue"));// id<a name="line.199"></a>
-<span class="sourceLineNo">200</span>            this.id = new Id((JSONObject)json_data.get("id"));// laws<a name="line.200"></a>
-<span class="sourceLineNo">201</span>            this.laws = new Laws((JSONObject)json_data.get("laws"));<a name="line.201"></a>
+<span class="sourceLineNo">197</span>            this.arguments = new Arguments((JSONObject)json_data.get("arguments"));// 3 judge dc?<a name="line.197"></a>
+<span class="sourceLineNo">198</span>            this.threeJudgeDc = (Boolean)json_data.get("3 judge dc?");// docket<a name="line.198"></a>
+<span class="sourceLineNo">199</span>            this.docket = ((Number)json_data.get("docket")).intValue();// id<a name="line.199"></a>
+<span class="sourceLineNo">200</span>            this.id = new Id((JSONObject)json_data.get("id"));// name<a name="line.200"></a>
+<span class="sourceLineNo">201</span>            this.name = (String)json_data.get("name");<a name="line.201"></a>
 <span class="sourceLineNo">202</span>        } catch (NullPointerException e) {<a name="line.202"></a>
 <span class="sourceLineNo">203</span>                System.err.println("Could not convert the response to a CourtCase; a field was missing.");<a name="line.203"></a>
 <span class="sourceLineNo">204</span>                e.printStackTrace();<a name="line.204"></a>

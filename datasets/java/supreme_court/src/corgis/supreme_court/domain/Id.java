@@ -16,10 +16,19 @@ import org.json.simple.JSONObject;
  */
 public class Id {
 	
+    private String case_;
     private String vote;
     private String docket;
-    private String caseData;
     private String caseIssues;
+    
+    
+    /*
+     * @return 
+     */
+    public String getCase_() {
+        return this.case_;
+    }
+    
     
     
     /*
@@ -43,15 +52,6 @@ public class Id {
     /*
      * @return 
      */
-    public String getCaseData() {
-        return this.caseData;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
     public String getCaseIssues() {
         return this.caseIssues;
     }
@@ -65,7 +65,7 @@ public class Id {
 	 * @return String
 	 */
 	public String toString() {
-		return "Id[" +vote+", "+docket+", "+caseData+", "+caseIssues+"]";
+		return "Id[" +case_+", "+vote+", "+docket+", "+caseIssues+"]";
 	}
 	
 	/**
@@ -73,10 +73,10 @@ public class Id {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Id(JSONObject json_data) {
-        try {// vote
+        try {// case
+            this.case_ = (String)json_data.get("case");// vote
             this.vote = (String)json_data.get("vote");// docket
-            this.docket = (String)json_data.get("docket");// case data
-            this.caseData = (String)json_data.get("case data");// case issues
+            this.docket = (String)json_data.get("docket");// case issues
             this.caseIssues = (String)json_data.get("case issues");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Id; a field was missing.");

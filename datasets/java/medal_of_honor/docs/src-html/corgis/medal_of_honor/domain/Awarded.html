@@ -106,7 +106,7 @@
 <span class="sourceLineNo">098</span>        try {// issued<a name="line.98"></a>
 <span class="sourceLineNo">099</span>            this.issued = (String)json_data.get("issued");// citation<a name="line.99"></a>
 <span class="sourceLineNo">100</span>            this.citation = (String)json_data.get("citation");// g.o. number<a name="line.100"></a>
-<span class="sourceLineNo">101</span>            this.gONumber = new Integer(((Long)((JSONObject) ((JSONObject) json_data.get("g")).get("o")).get(" number")).intValue());// accredited to<a name="line.101"></a>
+<span class="sourceLineNo">101</span>            this.gONumber = ((Number)((JSONObject) ((JSONObject) json_data.get("g")).get("o")).get(" number")).intValue();// accredited to<a name="line.101"></a>
 <span class="sourceLineNo">102</span>            this.accreditedTo = (String)json_data.get("accredited to");// location<a name="line.102"></a>
 <span class="sourceLineNo">103</span>            this.location = new Location((JSONObject)json_data.get("location"));// date<a name="line.103"></a>
 <span class="sourceLineNo">104</span>            this.date = new Date((JSONObject)json_data.get("date"));<a name="line.104"></a>

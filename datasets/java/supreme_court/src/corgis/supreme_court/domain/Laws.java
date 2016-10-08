@@ -55,7 +55,7 @@ public class Laws {
     public Laws(JSONObject json_data) {
         try {// type
             this.type = (String)json_data.get("type");// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());
+            this.id = ((Number)json_data.get("id")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Laws; a field was missing.");
     		e.printStackTrace();

@@ -25,6 +25,8 @@ SIMPLE_TYPE_MAP = {
                    long: 'number',
                    float: 'number',
                    bool: 'bool',
+                   list: 'list',
+                   dict: 'dict',
                    type(None): 'none'
                    }
     
@@ -70,6 +72,7 @@ class JsonMetrics(object):
         self.path = []
         self.name = parent_name
         self.union_types = defaultdict(set)
+        self.dict_keys = {}
         self.structures = structures
         self.report = {
             'locals': 0,
@@ -82,6 +85,7 @@ class JsonMetrics(object):
             'dicts': {
                 'count': 0,
                 'widths': [],
+                'inconsistent': {}
             },
             'unions': {
                 'count': 0,
@@ -189,11 +193,30 @@ class JsonMetrics(object):
         return self
         
     def union_walk_dict(self, a_dict, parent_name):
+        self.union_types[self.json_path].add(SIMPLE_TYPE_MAP[dict])
+        new_keys = set(a_dict.keys())
+        if parent_name in self.dict_keys:
+            old_keys = self.dict_keys[parent_name]
+            for old_key in old_keys:
+                if old_key not in new_keys:
+                    self.path.append(old_key)
+                    self.report['dicts']['inconsistent'][parent_name] = self.json_path
+                    self.path.pop()
+            for new_key in new_keys:
+                if new_key not in old_keys:
+                    self.path.append(old_key)
+                    self.report['dicts']['inconsistent'][parent_name] = self.json_path
+                    self.path.pop()
+            self.dict_keys[parent_name].update(new_keys)
+        else:
+            self.dict_keys[parent_name] = new_keys
+
         for key, value in a_dict.items():
             self.path.append(key)
             self.union_walk(value, key)
             self.path.pop()
     def union_walk_list(self, a_list, parent_name):
+        self.union_types[self.json_path].add(SIMPLE_TYPE_MAP[list])
         self.path.append("[0]")
         for value in a_list:
             self.union_walk(value, parent_name)

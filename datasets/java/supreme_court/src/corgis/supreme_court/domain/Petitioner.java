@@ -65,7 +65,7 @@ public class Petitioner {
     public Petitioner(JSONObject json_data) {
         try {// state
             this.state = (String)json_data.get("state");// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());// entity
+            this.id = ((Number)json_data.get("id")).intValue();// entity
             this.entity = (String)json_data.get("entity");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Petitioner; a field was missing.");

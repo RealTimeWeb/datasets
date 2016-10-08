@@ -98,7 +98,7 @@ public class Awarded {
         try {// issued
             this.issued = (String)json_data.get("issued");// citation
             this.citation = (String)json_data.get("citation");// g.o. number
-            this.gONumber = new Integer(((Long)((JSONObject) ((JSONObject) json_data.get("g")).get("o")).get(" number")).intValue());// accredited to
+            this.gONumber = ((Number)((JSONObject) ((JSONObject) json_data.get("g")).get("o")).get(" number")).intValue();// accredited to
             this.accreditedTo = (String)json_data.get("accredited to");// location
             this.location = new Location((JSONObject)json_data.get("location"));// date
             this.date = new Date((JSONObject)json_data.get("date"));

@@ -54,7 +54,7 @@ public class AuthorityOne {
 	 */
     public AuthorityOne(JSONObject json_data) {
         try {// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());// authority
+            this.id = ((Number)json_data.get("id")).intValue();// authority
             this.authority = (String)json_data.get("authority");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Authority1; a field was missing.");

@@ -1,0 +1,49 @@
+{
+  "supreme_court": {
+    "dicts": {
+      "count": 23, 
+      "inconsistent": {}, 
+      "average branching factor": 4
+    }, 
+    "tags": [
+      "us", 
+      "usa", 
+      "united states", 
+      "government", 
+      "law", 
+      "legal", 
+      "court", 
+      "case", 
+      "supreme", 
+      "judge", 
+      "barrister", 
+      "lawyer", 
+      "federal", 
+      "national"
+    ], 
+    "atomics": {
+      "count": 80, 
+      "nones": 0, 
+      "ints": 30, 
+      "booleans": 7, 
+      "longs": 0, 
+      "unknown": 0, 
+      "strings": 43, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 8631, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "keys": {}, 
+      "sizes": 0
+    }, 
+    "length": 8631, 
+    "locals": 0, 
+    "size": 19503795
+  }
+}

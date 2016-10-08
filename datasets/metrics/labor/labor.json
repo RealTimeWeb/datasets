@@ -2,6 +2,10 @@
   "labor": {
     "dicts": {
       "count": 73, 
+      "inconsistent": {
+        "White": "result.[0].data.Civilian noninstitutional population.White.Women", 
+        "Black or African American": "result.[0].data.Civilian noninstitutional population.Black or African American.Women"
+      }, 
       "average branching factor": 2
     }, 
     "tags": [
@@ -27,9 +31,10 @@
     "atomics": {
       "count": 89, 
       "nones": 0, 
+      "ints": 11, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 11, 
+      "unknown": 0, 
       "strings": 39, 
       "floats": 39
     }, 
@@ -41,6 +46,7 @@
     "heights": 6, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 528, 

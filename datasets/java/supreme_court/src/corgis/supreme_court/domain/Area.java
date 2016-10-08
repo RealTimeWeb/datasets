@@ -54,7 +54,7 @@ public class Area {
 	 */
     public Area(JSONObject json_data) {
         try {// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());// area
+            this.id = ((Number)json_data.get("id")).intValue();// area
             this.area = (String)json_data.get("area");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Area; a field was missing.");

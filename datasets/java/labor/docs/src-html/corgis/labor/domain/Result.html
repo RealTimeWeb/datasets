@@ -73,9 +73,9 @@
 <span class="sourceLineNo">065</span>         */<a name="line.65"></a>
 <span class="sourceLineNo">066</span>    public Result(JSONObject json_data) {<a name="line.66"></a>
 <span class="sourceLineNo">067</span>        try {// year<a name="line.67"></a>
-<span class="sourceLineNo">068</span>            this.year = new Integer(((Long)json_data.get("year")).intValue());// data<a name="line.68"></a>
+<span class="sourceLineNo">068</span>            this.year = ((Number)json_data.get("year")).intValue();// data<a name="line.68"></a>
 <span class="sourceLineNo">069</span>            this.data = new Data((JSONObject)json_data.get("data"));// month<a name="line.69"></a>
-<span class="sourceLineNo">070</span>            this.month = new Integer(((Long)json_data.get("month")).intValue());<a name="line.70"></a>
+<span class="sourceLineNo">070</span>            this.month = ((Number)json_data.get("month")).intValue();<a name="line.70"></a>
 <span class="sourceLineNo">071</span>        } catch (NullPointerException e) {<a name="line.71"></a>
 <span class="sourceLineNo">072</span>                System.err.println("Could not convert the response to a Result; a field was missing.");<a name="line.72"></a>
 <span class="sourceLineNo">073</span>                e.printStackTrace();<a name="line.73"></a>

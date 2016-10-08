@@ -55,7 +55,7 @@ public class Reasons {
     public Reasons(JSONObject json_data) {
         try {// reason
             this.reason = (String)json_data.get("reason");// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());
+            this.id = ((Number)json_data.get("id")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Reasons; a field was missing.");
     		e.printStackTrace();

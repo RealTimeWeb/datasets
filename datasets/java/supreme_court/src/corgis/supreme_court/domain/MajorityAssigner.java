@@ -65,7 +65,7 @@ public class MajorityAssigner {
     public MajorityAssigner(JSONObject json_data) {
         try {// long name
             this.longName = (String)json_data.get("long name");// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());// name
+            this.id = ((Number)json_data.get("id")).intValue();// name
             this.name = (String)json_data.get("name");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a MajorityAssigner; a field was missing.");
