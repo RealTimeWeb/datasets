@@ -33,7 +33,7 @@ interfaces:
       - name: year
         type: integer
         description: The year as an integer, between 1921 and 2013.
-        default: '2001'
+        default: 2001
     returns: list[car]
     description: Returns all the cars for a given year.
     production:
@@ -49,7 +49,7 @@ interfaces:
       - name: make
         type: str
         description: The make of the cars
-        default: "'Pontiac'"
+        default: "Pontiac"
         matches: SELECT DISTINCT make FROM cars
     production:
         sql: SELECT data FROM cars WHERE make=? COLLATE NOCASE

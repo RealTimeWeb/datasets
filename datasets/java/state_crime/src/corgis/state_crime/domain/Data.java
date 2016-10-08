@@ -67,7 +67,7 @@ public class Data {
 	 */
     public Data(JSONObject json_data) {
         try {// Population
-            this.population = new Integer(((Long)json_data.get("Population")).intValue());// Rates
+            this.population = ((Number)json_data.get("Population")).intValue();// Rates
             this.rates = new Rates((JSONObject)json_data.get("Rates"));// Totals
             this.totals = new Totals((JSONObject)json_data.get("Totals"));
         } catch (NullPointerException e) {

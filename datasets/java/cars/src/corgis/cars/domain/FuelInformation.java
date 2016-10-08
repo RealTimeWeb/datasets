@@ -64,8 +64,8 @@ public class FuelInformation {
 	 */
     public FuelInformation(JSONObject json_data) {
         try {// Highway mpg
-            this.highwayMpg = new Integer(((Long)json_data.get("Highway mpg")).intValue());// City mph
-            this.cityMph = new Integer(((Long)json_data.get("City mph")).intValue());// Fuel Type
+            this.highwayMpg = ((Number)json_data.get("Highway mpg")).intValue();// City mph
+            this.cityMph = ((Number)json_data.get("City mph")).intValue();// Fuel Type
             this.fuelType = (String)json_data.get("Fuel Type");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a FuelInformation; a field was missing.");

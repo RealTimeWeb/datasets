@@ -84,11 +84,11 @@ public class Violent {
 	 */
     public Violent(JSONObject json_data) {
         try {// All
-            this.all = (Double)json_data.get("All");// Murder
-            this.murder = (Double)json_data.get("Murder");// Rape
-            this.rape = (Double)json_data.get("Rape");// Robbery
-            this.robbery = (Double)json_data.get("Robbery");// Assault
-            this.assault = (Double)json_data.get("Assault");
+            this.all = ((Number)json_data.get("All")).doubleValue();// Murder
+            this.murder = ((Number)json_data.get("Murder")).doubleValue();// Rape
+            this.rape = ((Number)json_data.get("Rape")).doubleValue();// Robbery
+            this.robbery = ((Number)json_data.get("Robbery")).doubleValue();// Assault
+            this.assault = ((Number)json_data.get("Assault")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Violent; a field was missing.");
     		e.printStackTrace();

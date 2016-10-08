@@ -55,8 +55,8 @@ public class EngineStatistics {
 	 */
     public EngineStatistics(JSONObject json_data) {
         try {// Horsepower
-            this.horsepower = new Integer(((Long)json_data.get("Horsepower")).intValue());// Torque
-            this.torque = new Integer(((Long)json_data.get("Torque")).intValue());
+            this.horsepower = ((Number)json_data.get("Horsepower")).intValue();// Torque
+            this.torque = ((Number)json_data.get("Torque")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a EngineStatistics; a field was missing.");
     		e.printStackTrace();

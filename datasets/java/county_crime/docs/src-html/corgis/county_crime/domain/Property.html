@@ -82,10 +82,10 @@
 <span class="sourceLineNo">074</span>         */<a name="line.74"></a>
 <span class="sourceLineNo">075</span>    public Property(JSONObject json_data) {<a name="line.75"></a>
 <span class="sourceLineNo">076</span>        try {// Burglary<a name="line.76"></a>
-<span class="sourceLineNo">077</span>            this.burglary = new Integer(((Long)json_data.get("Burglary")).intValue());// Larceny<a name="line.77"></a>
-<span class="sourceLineNo">078</span>            this.larceny = new Integer(((Long)json_data.get("Larceny")).intValue());// All<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.all = new Integer(((Long)json_data.get("All")).intValue());// Motor<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.motor = (Double)json_data.get("Motor");<a name="line.80"></a>
+<span class="sourceLineNo">077</span>            this.burglary = ((Number)json_data.get("Burglary")).intValue();// Larceny<a name="line.77"></a>
+<span class="sourceLineNo">078</span>            this.larceny = ((Number)json_data.get("Larceny")).intValue();// All<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            this.all = ((Number)json_data.get("All")).intValue();// Motor<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            this.motor = ((Number)json_data.get("Motor")).doubleValue();<a name="line.80"></a>
 <span class="sourceLineNo">081</span>        } catch (NullPointerException e) {<a name="line.81"></a>
 <span class="sourceLineNo">082</span>                System.err.println("Could not convert the response to a Property; a field was missing.");<a name="line.82"></a>
 <span class="sourceLineNo">083</span>                e.printStackTrace();<a name="line.83"></a>

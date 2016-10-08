@@ -88,7 +88,7 @@ public class Identification {
             this.modelYear = (String)json_data.get("Model Year");// ID
             this.id = (String)json_data.get("ID");// Classification
             this.classification = (String)json_data.get("Classification");// Year
-            this.year = new Integer(((Long)json_data.get("Year")).intValue());
+            this.year = ((Number)json_data.get("Year")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Identification; a field was missing.");
     		e.printStackTrace();

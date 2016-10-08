@@ -67,7 +67,7 @@ public class Report {
         try {// State
             this.state = (String)json_data.get("State");// Data
             this.data = new Data((JSONObject)json_data.get("Data"));// Year
-            this.year = new Integer(((Long)json_data.get("Year")).intValue());
+            this.year = ((Number)json_data.get("Year")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Report; a field was missing.");
     		e.printStackTrace();

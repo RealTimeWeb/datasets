@@ -39,20 +39,20 @@ public class CarsLibrary {
         
         
         System.out.println("Testing production GetCarsByYear");
-        ArrayList<Car> list_of_car_2_production = carsLibrary.getCarsByYear("2001", false);
+        ArrayList<Car> list_of_car_2_production = carsLibrary.getCarsByYear(2001, false);
         
         
         System.out.println("Testing test GetCarsByYear");
-        ArrayList<Car> list_of_car_2_test = carsLibrary.getCarsByYear("2001", true);
+        ArrayList<Car> list_of_car_2_test = carsLibrary.getCarsByYear(2001, true);
         
         
         
         System.out.println("Testing production GetCarsByMake");
-        ArrayList<Car> list_of_car_3_production = carsLibrary.getCarsByMake("'Pontiac'", false);
+        ArrayList<Car> list_of_car_3_production = carsLibrary.getCarsByMake("Pontiac", false);
         
         
         System.out.println("Testing test GetCarsByMake");
-        ArrayList<Car> list_of_car_3_test = carsLibrary.getCarsByMake("'Pontiac'", true);
+        ArrayList<Car> list_of_car_3_test = carsLibrary.getCarsByMake("Pontiac", true);
         
         
     }
