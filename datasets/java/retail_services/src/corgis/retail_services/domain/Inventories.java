@@ -17,12 +17,10 @@ import org.json.simple.JSONObject;
 public class Inventories {
 	
     private Integer floorCoveringStores;
-    private Integer automotivePartsAccAndTireStores;
-    private Integer departmentStoresExclLD;
+    private Integer groceryStores;
     private Integer limitedServiceEatingPlaces;
-    private Integer giftNoveltyAndSouvenirStores;
-    private Integer buildingMatAndGardenEquipAndSuppliesDealers;
-    private Integer furnitureAndHomeFurnishingsStores;
+    private Integer shoeStores;
+    private Integer healthAndPersonalCareStores;
     private Integer miscellaneousStoreRetailers;
     private Integer sportingGoodsStores;
     private Integer familyClothingStores;
@@ -34,53 +32,54 @@ public class Inventories {
     private Integer foodAndBeverageStores;
     private Integer mensClothingStores;
     private Integer sportingGoodsHobbyBookAndMusicStores;
+    private Integer usedMerchandiseStores;
     private Integer furnitureHomeFurnElectronicsAndApplianceStores;
     private Integer gasolineStations;
     private Integer otherClothingStores;
     private Integer officeSuppliesStationeryAndGiftStores;
-    private Integer officeSuppliesAndStationeryStores;
+    private Integer discountDepartmentStores;
+    private Integer buildingSuppliesDealers;
+    private Integer automotivePartsAndTireStores;
     private Integer generalMerchandiseStores;
     private Integer motorVehicleAndPartsDealers;
+    private Integer allOtherMerchandiseStores;
     private Integer newCarDealers;
-    private Integer departmentStoresExclDiscountDepartmentStores;
-    private Integer radioTVAndOtherElectStores;
-    private Integer departmentStoresInclLD;
-    private Integer warehouseClubsAndSuperstores;
-    private Integer electronicsAndApplianceStores;
-    private Integer foodServicesAndDrinkingPlaces;
-    private Integer healthAndPersonalCareStores;
-    private Integer pharmaciesAndDrugStores;
     private Integer householdApplianceStores;
-    private Integer retailTrade;
+    private Integer electronicsAndApplianceStores;
+    private Integer nonLeasedDepartmentStores;
+    private Integer furnitureAndHomeFurnishingsStores;
+    private Integer allDepartmentStores;
+    private Integer pharmaciesAndDrugStores;
+    private Integer radioTvAndElectronicsStores;
+    private Integer foodServicesAndDrinkingPlaces;
+    private Integer appliancesAndOtherElectronicsStores;
     private Integer beerWineAndLiquorStores;
     private Integer fuelDealers;
-    private Integer shoeStores;
-    private Integer allOtherGenMerchandiseStores;
+    private Integer officeSuppliesAndStationeryStores;
+    private Integer automobileDealers;
     private Integer retailTradeExAuto;
-    private Integer clothingAndClothingAccessStores;
+    private Integer giftNoveltyAndSouvenirStores;
     private Integer retailTradeAndFoodServicesExAuto;
+    private Integer retailTrade;
+    private Integer buildingMaterialsAndGardenSuppliesDealers;
     private Integer supermarketsAndOtherGroceryExceptConvenienceStores;
     private Integer bookStores;
-    private Integer buildingMatAndSuppliesDealers;
-    private Integer applTvAndOtherElectStores;
     private Integer furnitureStores;
     private Integer gafo;
     private Integer electronicShoppingAndMailOrderHouses;
     private Integer clothingStores;
     private Integer usedCarDealers;
-    private Integer automobileDealers;
-    private Integer usedMerchandiseStores;
-    private Integer hobbyToyAndGameStores;
     private Integer fullServiceRestaurants;
-    private Integer discountDeptStores;
+    private Integer warehouseClubsAndSuperstores;
+    private Integer hobbyToyAndGameStores;
+    private Integer nonstoreRetailers;
     private Integer allOtherHomeFurnishingsStores;
     private Integer retailTradeAndFoodServices;
     private Integer paintAndWallpaperStores;
     private Integer womensClothingStores;
-    private Integer groceryStores;
-    private Integer nonstoreRetailers;
-    private Integer jewelryStores;
     private Integer computerAndSoftwareStores;
+    private Integer jewelryStores;
+    private Integer nonDiscountDepartmentStores;
     
     
     /*
@@ -95,17 +94,8 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getAutomotivePartsAccAndTireStores() {
-        return this.automotivePartsAccAndTireStores;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getDepartmentStoresExclLD() {
-        return this.departmentStoresExclLD;
+    public Integer getGroceryStores() {
+        return this.groceryStores;
     }
     
     
@@ -122,8 +112,8 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getGiftNoveltyAndSouvenirStores() {
-        return this.giftNoveltyAndSouvenirStores;
+    public Integer getShoeStores() {
+        return this.shoeStores;
     }
     
     
@@ -131,17 +121,8 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getBuildingMatAndGardenEquipAndSuppliesDealers() {
-        return this.buildingMatAndGardenEquipAndSuppliesDealers;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getFurnitureAndHomeFurnishingsStores() {
-        return this.furnitureAndHomeFurnishingsStores;
+    public Integer getHealthAndPersonalCareStores() {
+        return this.healthAndPersonalCareStores;
     }
     
     
@@ -248,6 +229,15 @@ public class Inventories {
     /*
      * @return 
      */
+    public Integer getUsedMerchandiseStores() {
+        return this.usedMerchandiseStores;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
     public Integer getFurnitureHomeFurnElectronicsAndApplianceStores() {
         return this.furnitureHomeFurnElectronicsAndApplianceStores;
     }
@@ -284,8 +274,26 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getOfficeSuppliesAndStationeryStores() {
-        return this.officeSuppliesAndStationeryStores;
+    public Integer getDiscountDepartmentStores() {
+        return this.discountDepartmentStores;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getBuildingSuppliesDealers() {
+        return this.buildingSuppliesDealers;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getAutomotivePartsAndTireStores() {
+        return this.automotivePartsAndTireStores;
     }
     
     
@@ -311,80 +319,17 @@ public class Inventories {
     /*
      * @return 
      */
+    public Integer getAllOtherMerchandiseStores() {
+        return this.allOtherMerchandiseStores;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
     public Integer getNewCarDealers() {
         return this.newCarDealers;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getDepartmentStoresExclDiscountDepartmentStores() {
-        return this.departmentStoresExclDiscountDepartmentStores;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getRadioTVAndOtherElectStores() {
-        return this.radioTVAndOtherElectStores;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getDepartmentStoresInclLD() {
-        return this.departmentStoresInclLD;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getWarehouseClubsAndSuperstores() {
-        return this.warehouseClubsAndSuperstores;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getElectronicsAndApplianceStores() {
-        return this.electronicsAndApplianceStores;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getFoodServicesAndDrinkingPlaces() {
-        return this.foodServicesAndDrinkingPlaces;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getHealthAndPersonalCareStores() {
-        return this.healthAndPersonalCareStores;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getPharmaciesAndDrugStores() {
-        return this.pharmaciesAndDrugStores;
     }
     
     
@@ -401,8 +346,71 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getRetailTrade() {
-        return this.retailTrade;
+    public Integer getElectronicsAndApplianceStores() {
+        return this.electronicsAndApplianceStores;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getNonLeasedDepartmentStores() {
+        return this.nonLeasedDepartmentStores;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getFurnitureAndHomeFurnishingsStores() {
+        return this.furnitureAndHomeFurnishingsStores;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getAllDepartmentStores() {
+        return this.allDepartmentStores;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getPharmaciesAndDrugStores() {
+        return this.pharmaciesAndDrugStores;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getRadioTvAndElectronicsStores() {
+        return this.radioTvAndElectronicsStores;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getFoodServicesAndDrinkingPlaces() {
+        return this.foodServicesAndDrinkingPlaces;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getAppliancesAndOtherElectronicsStores() {
+        return this.appliancesAndOtherElectronicsStores;
     }
     
     
@@ -428,8 +436,8 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getShoeStores() {
-        return this.shoeStores;
+    public Integer getOfficeSuppliesAndStationeryStores() {
+        return this.officeSuppliesAndStationeryStores;
     }
     
     
@@ -437,8 +445,8 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getAllOtherGenMerchandiseStores() {
-        return this.allOtherGenMerchandiseStores;
+    public Integer getAutomobileDealers() {
+        return this.automobileDealers;
     }
     
     
@@ -455,8 +463,8 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getClothingAndClothingAccessStores() {
-        return this.clothingAndClothingAccessStores;
+    public Integer getGiftNoveltyAndSouvenirStores() {
+        return this.giftNoveltyAndSouvenirStores;
     }
     
     
@@ -466,6 +474,24 @@ public class Inventories {
      */
     public Integer getRetailTradeAndFoodServicesExAuto() {
         return this.retailTradeAndFoodServicesExAuto;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getRetailTrade() {
+        return this.retailTrade;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getBuildingMaterialsAndGardenSuppliesDealers() {
+        return this.buildingMaterialsAndGardenSuppliesDealers;
     }
     
     
@@ -484,24 +510,6 @@ public class Inventories {
      */
     public Integer getBookStores() {
         return this.bookStores;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getBuildingMatAndSuppliesDealers() {
-        return this.buildingMatAndSuppliesDealers;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getApplTvAndOtherElectStores() {
-        return this.applTvAndOtherElectStores;
     }
     
     
@@ -554,8 +562,8 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getAutomobileDealers() {
-        return this.automobileDealers;
+    public Integer getFullServiceRestaurants() {
+        return this.fullServiceRestaurants;
     }
     
     
@@ -563,8 +571,8 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getUsedMerchandiseStores() {
-        return this.usedMerchandiseStores;
+    public Integer getWarehouseClubsAndSuperstores() {
+        return this.warehouseClubsAndSuperstores;
     }
     
     
@@ -581,17 +589,8 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getFullServiceRestaurants() {
-        return this.fullServiceRestaurants;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getDiscountDeptStores() {
-        return this.discountDeptStores;
+    public Integer getNonstoreRetailers() {
+        return this.nonstoreRetailers;
     }
     
     
@@ -635,17 +634,8 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getGroceryStores() {
-        return this.groceryStores;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getNonstoreRetailers() {
-        return this.nonstoreRetailers;
+    public Integer getComputerAndSoftwareStores() {
+        return this.computerAndSoftwareStores;
     }
     
     
@@ -662,8 +652,8 @@ public class Inventories {
     /*
      * @return 
      */
-    public Integer getComputerAndSoftwareStores() {
-        return this.computerAndSoftwareStores;
+    public Integer getNonDiscountDepartmentStores() {
+        return this.nonDiscountDepartmentStores;
     }
     
     
@@ -675,7 +665,7 @@ public class Inventories {
 	 * @return String
 	 */
 	public String toString() {
-		return "Inventories[" +floorCoveringStores+", "+automotivePartsAccAndTireStores+", "+departmentStoresExclLD+", "+limitedServiceEatingPlaces+", "+giftNoveltyAndSouvenirStores+", "+buildingMatAndGardenEquipAndSuppliesDealers+", "+furnitureAndHomeFurnishingsStores+", "+miscellaneousStoreRetailers+", "+sportingGoodsStores+", "+familyClothingStores+", "+drinkingPlaces+", "+otherGeneralMerchandiseStores+", "+homeFurnishingsStores+", "+hardwareStores+", "+autoAndOtherMotorVehicles+", "+foodAndBeverageStores+", "+mensClothingStores+", "+sportingGoodsHobbyBookAndMusicStores+", "+furnitureHomeFurnElectronicsAndApplianceStores+", "+gasolineStations+", "+otherClothingStores+", "+officeSuppliesStationeryAndGiftStores+", "+officeSuppliesAndStationeryStores+", "+generalMerchandiseStores+", "+motorVehicleAndPartsDealers+", "+newCarDealers+", "+departmentStoresExclDiscountDepartmentStores+", "+radioTVAndOtherElectStores+", "+departmentStoresInclLD+", "+warehouseClubsAndSuperstores+", "+electronicsAndApplianceStores+", "+foodServicesAndDrinkingPlaces+", "+healthAndPersonalCareStores+", "+pharmaciesAndDrugStores+", "+householdApplianceStores+", "+retailTrade+", "+beerWineAndLiquorStores+", "+fuelDealers+", "+shoeStores+", "+allOtherGenMerchandiseStores+", "+retailTradeExAuto+", "+clothingAndClothingAccessStores+", "+retailTradeAndFoodServicesExAuto+", "+supermarketsAndOtherGroceryExceptConvenienceStores+", "+bookStores+", "+buildingMatAndSuppliesDealers+", "+applTvAndOtherElectStores+", "+furnitureStores+", "+gafo+", "+electronicShoppingAndMailOrderHouses+", "+clothingStores+", "+usedCarDealers+", "+automobileDealers+", "+usedMerchandiseStores+", "+hobbyToyAndGameStores+", "+fullServiceRestaurants+", "+discountDeptStores+", "+allOtherHomeFurnishingsStores+", "+retailTradeAndFoodServices+", "+paintAndWallpaperStores+", "+womensClothingStores+", "+groceryStores+", "+nonstoreRetailers+", "+jewelryStores+", "+computerAndSoftwareStores+"]";
+		return "Inventories[" +floorCoveringStores+", "+groceryStores+", "+limitedServiceEatingPlaces+", "+shoeStores+", "+healthAndPersonalCareStores+", "+miscellaneousStoreRetailers+", "+sportingGoodsStores+", "+familyClothingStores+", "+drinkingPlaces+", "+otherGeneralMerchandiseStores+", "+homeFurnishingsStores+", "+hardwareStores+", "+autoAndOtherMotorVehicles+", "+foodAndBeverageStores+", "+mensClothingStores+", "+sportingGoodsHobbyBookAndMusicStores+", "+usedMerchandiseStores+", "+furnitureHomeFurnElectronicsAndApplianceStores+", "+gasolineStations+", "+otherClothingStores+", "+officeSuppliesStationeryAndGiftStores+", "+discountDepartmentStores+", "+buildingSuppliesDealers+", "+automotivePartsAndTireStores+", "+generalMerchandiseStores+", "+motorVehicleAndPartsDealers+", "+allOtherMerchandiseStores+", "+newCarDealers+", "+householdApplianceStores+", "+electronicsAndApplianceStores+", "+nonLeasedDepartmentStores+", "+furnitureAndHomeFurnishingsStores+", "+allDepartmentStores+", "+pharmaciesAndDrugStores+", "+radioTvAndElectronicsStores+", "+foodServicesAndDrinkingPlaces+", "+appliancesAndOtherElectronicsStores+", "+beerWineAndLiquorStores+", "+fuelDealers+", "+officeSuppliesAndStationeryStores+", "+automobileDealers+", "+retailTradeExAuto+", "+giftNoveltyAndSouvenirStores+", "+retailTradeAndFoodServicesExAuto+", "+retailTrade+", "+buildingMaterialsAndGardenSuppliesDealers+", "+supermarketsAndOtherGroceryExceptConvenienceStores+", "+bookStores+", "+furnitureStores+", "+gafo+", "+electronicShoppingAndMailOrderHouses+", "+clothingStores+", "+usedCarDealers+", "+fullServiceRestaurants+", "+warehouseClubsAndSuperstores+", "+hobbyToyAndGameStores+", "+nonstoreRetailers+", "+allOtherHomeFurnishingsStores+", "+retailTradeAndFoodServices+", "+paintAndWallpaperStores+", "+womensClothingStores+", "+computerAndSoftwareStores+", "+jewelryStores+", "+nonDiscountDepartmentStores+"]";
 	}
 	
 	/**
@@ -684,13 +674,11 @@ public class Inventories {
 	 */
     public Inventories(JSONObject json_data) {
         try {// floor covering stores
-            this.floorCoveringStores = ((Number)json_data.get("floor covering stores")).intValue();// automotive parts, acc., and tire stores
-            this.automotivePartsAccAndTireStores = ((Number)((JSONObject) json_data.get("automotive parts, acc")).get(", and tire stores")).intValue();// department stores (excl. l.d.)
-            this.departmentStoresExclLD = ((Number)((JSONObject) ((JSONObject) ((JSONObject) json_data.get("department stores (excl")).get(" l")).get("d")).get(")")).intValue();// limited service eating places
-            this.limitedServiceEatingPlaces = ((Number)json_data.get("limited service eating places")).intValue();// gift, novelty, and souvenir stores
-            this.giftNoveltyAndSouvenirStores = ((Number)json_data.get("gift, novelty, and souvenir stores")).intValue();// building mat. and garden equip. and supplies dealers
-            this.buildingMatAndGardenEquipAndSuppliesDealers = ((Number)((JSONObject) ((JSONObject) json_data.get("building mat")).get(" and garden equip")).get(" and supplies dealers")).intValue();// furniture and home furnishings stores
-            this.furnitureAndHomeFurnishingsStores = ((Number)json_data.get("furniture and home furnishings stores")).intValue();// miscellaneous store retailers
+            this.floorCoveringStores = ((Number)json_data.get("floor covering stores")).intValue();// grocery stores
+            this.groceryStores = ((Number)json_data.get("grocery stores")).intValue();// limited service eating places
+            this.limitedServiceEatingPlaces = ((Number)json_data.get("limited service eating places")).intValue();// shoe stores
+            this.shoeStores = ((Number)json_data.get("shoe stores")).intValue();// health and personal care stores
+            this.healthAndPersonalCareStores = ((Number)json_data.get("health and personal care stores")).intValue();// miscellaneous store retailers
             this.miscellaneousStoreRetailers = ((Number)json_data.get("miscellaneous store retailers")).intValue();// sporting goods stores
             this.sportingGoodsStores = ((Number)json_data.get("sporting goods stores")).intValue();// family clothing stores
             this.familyClothingStores = ((Number)json_data.get("family clothing stores")).intValue();// drinking places
@@ -701,54 +689,55 @@ public class Inventories {
             this.autoAndOtherMotorVehicles = ((Number)json_data.get("auto and other motor vehicles")).intValue();// food and beverage stores
             this.foodAndBeverageStores = ((Number)json_data.get("food and beverage stores")).intValue();// men's clothing stores
             this.mensClothingStores = ((Number)json_data.get("men's clothing stores")).intValue();// sporting goods, hobby, book, and music stores
-            this.sportingGoodsHobbyBookAndMusicStores = ((Number)json_data.get("sporting goods, hobby, book, and music stores")).intValue();// furniture, home furn, electronics, and appliance stores
+            this.sportingGoodsHobbyBookAndMusicStores = ((Number)json_data.get("sporting goods, hobby, book, and music stores")).intValue();// used merchandise stores
+            this.usedMerchandiseStores = ((Number)json_data.get("used merchandise stores")).intValue();// furniture, home furn, electronics, and appliance stores
             this.furnitureHomeFurnElectronicsAndApplianceStores = ((Number)json_data.get("furniture, home furn, electronics, and appliance stores")).intValue();// gasoline stations
             this.gasolineStations = ((Number)json_data.get("gasoline stations")).intValue();// other clothing stores
             this.otherClothingStores = ((Number)json_data.get("other clothing stores")).intValue();// office supplies, stationery, and gift stores
-            this.officeSuppliesStationeryAndGiftStores = ((Number)json_data.get("office supplies, stationery, and gift stores")).intValue();// office supplies and stationery stores
-            this.officeSuppliesAndStationeryStores = ((Number)json_data.get("office supplies and stationery stores")).intValue();// general merchandise stores
+            this.officeSuppliesStationeryAndGiftStores = ((Number)json_data.get("office supplies, stationery, and gift stores")).intValue();// discount department stores
+            this.discountDepartmentStores = ((Number)json_data.get("discount department stores")).intValue();// building supplies dealers
+            this.buildingSuppliesDealers = ((Number)json_data.get("building supplies dealers")).intValue();// automotive parts and tire stores
+            this.automotivePartsAndTireStores = ((Number)json_data.get("automotive parts and tire stores")).intValue();// general merchandise stores
             this.generalMerchandiseStores = ((Number)json_data.get("general merchandise stores")).intValue();// motor vehicle and parts dealers
-            this.motorVehicleAndPartsDealers = ((Number)json_data.get("motor vehicle and parts dealers")).intValue();// new car dealers
-            this.newCarDealers = ((Number)json_data.get("new car dealers")).intValue();// department stores (excl. discount department stores)
-            this.departmentStoresExclDiscountDepartmentStores = ((Number)((JSONObject) json_data.get("department stores (excl")).get(" discount department stores)")).intValue();// radio, t.v., and other elect. stores
-            this.radioTVAndOtherElectStores = ((Number)((JSONObject) ((JSONObject) ((JSONObject) json_data.get("radio, t")).get("v")).get(", and other elect")).get(" stores")).intValue();// department stores (incl. l.d.)
-            this.departmentStoresInclLD = ((Number)((JSONObject) ((JSONObject) ((JSONObject) json_data.get("department stores (incl")).get(" l")).get("d")).get(")")).intValue();// warehouse clubs and superstores
-            this.warehouseClubsAndSuperstores = ((Number)json_data.get("warehouse clubs and superstores")).intValue();// electronics and appliance stores
-            this.electronicsAndApplianceStores = ((Number)json_data.get("electronics and appliance stores")).intValue();// food services and drinking places
-            this.foodServicesAndDrinkingPlaces = ((Number)json_data.get("food services and drinking places")).intValue();// health and personal care stores
-            this.healthAndPersonalCareStores = ((Number)json_data.get("health and personal care stores")).intValue();// pharmacies and drug stores
-            this.pharmaciesAndDrugStores = ((Number)json_data.get("pharmacies and drug stores")).intValue();// household appliance stores
-            this.householdApplianceStores = ((Number)json_data.get("household appliance stores")).intValue();// retail trade
-            this.retailTrade = ((Number)json_data.get("retail trade")).intValue();// beer, wine, and liquor stores
+            this.motorVehicleAndPartsDealers = ((Number)json_data.get("motor vehicle and parts dealers")).intValue();// all other merchandise stores
+            this.allOtherMerchandiseStores = ((Number)json_data.get("all other merchandise stores")).intValue();// new car dealers
+            this.newCarDealers = ((Number)json_data.get("new car dealers")).intValue();// household appliance stores
+            this.householdApplianceStores = ((Number)json_data.get("household appliance stores")).intValue();// electronics and appliance stores
+            this.electronicsAndApplianceStores = ((Number)json_data.get("electronics and appliance stores")).intValue();// non-leased department stores
+            this.nonLeasedDepartmentStores = ((Number)json_data.get("non-leased department stores")).intValue();// furniture and home furnishings stores
+            this.furnitureAndHomeFurnishingsStores = ((Number)json_data.get("furniture and home furnishings stores")).intValue();// all department stores
+            this.allDepartmentStores = ((Number)json_data.get("all department stores")).intValue();// pharmacies and drug stores
+            this.pharmaciesAndDrugStores = ((Number)json_data.get("pharmacies and drug stores")).intValue();// radio, TV, and electronics stores
+            this.radioTvAndElectronicsStores = ((Number)json_data.get("radio, TV, and electronics stores")).intValue();// food services and drinking places
+            this.foodServicesAndDrinkingPlaces = ((Number)json_data.get("food services and drinking places")).intValue();// appliances and other electronics stores
+            this.appliancesAndOtherElectronicsStores = ((Number)json_data.get("appliances and other electronics stores")).intValue();// beer, wine, and liquor stores
             this.beerWineAndLiquorStores = ((Number)json_data.get("beer, wine, and liquor stores")).intValue();// fuel dealers
-            this.fuelDealers = ((Number)json_data.get("fuel dealers")).intValue();// shoe stores
-            this.shoeStores = ((Number)json_data.get("shoe stores")).intValue();// all other gen. merchandise stores
-            this.allOtherGenMerchandiseStores = ((Number)((JSONObject) json_data.get("all other gen")).get(" merchandise stores")).intValue();// retail trade, ex auto
-            this.retailTradeExAuto = ((Number)json_data.get("retail trade, ex auto")).intValue();// clothing and clothing access. stores
-            this.clothingAndClothingAccessStores = ((Number)((JSONObject) json_data.get("clothing and clothing access")).get(" stores")).intValue();// retail trade and food services, ex auto
-            this.retailTradeAndFoodServicesExAuto = ((Number)json_data.get("retail trade and food services, ex auto")).intValue();// supermarkets and other grocery (except convenience) stores
+            this.fuelDealers = ((Number)json_data.get("fuel dealers")).intValue();// office supplies and stationery stores
+            this.officeSuppliesAndStationeryStores = ((Number)json_data.get("office supplies and stationery stores")).intValue();// automobile dealers
+            this.automobileDealers = ((Number)json_data.get("automobile dealers")).intValue();// retail trade, ex auto
+            this.retailTradeExAuto = ((Number)json_data.get("retail trade, ex auto")).intValue();// gift, novelty, and souvenir stores
+            this.giftNoveltyAndSouvenirStores = ((Number)json_data.get("gift, novelty, and souvenir stores")).intValue();// retail trade and food services, ex auto
+            this.retailTradeAndFoodServicesExAuto = ((Number)json_data.get("retail trade and food services, ex auto")).intValue();// retail trade
+            this.retailTrade = ((Number)json_data.get("retail trade")).intValue();// building materials and garden supplies dealers
+            this.buildingMaterialsAndGardenSuppliesDealers = ((Number)json_data.get("building materials and garden supplies dealers")).intValue();// supermarkets and other grocery (except convenience) stores
             this.supermarketsAndOtherGroceryExceptConvenienceStores = ((Number)json_data.get("supermarkets and other grocery (except convenience) stores")).intValue();// book stores
-            this.bookStores = ((Number)json_data.get("book stores")).intValue();// building mat. and supplies dealers
-            this.buildingMatAndSuppliesDealers = ((Number)((JSONObject) json_data.get("building mat")).get(" and supplies dealers")).intValue();// appl., tv, and other elect. stores
-            this.applTvAndOtherElectStores = ((Number)((JSONObject) ((JSONObject) json_data.get("appl")).get(", tv, and other elect")).get(" stores")).intValue();// furniture stores
+            this.bookStores = ((Number)json_data.get("book stores")).intValue();// furniture stores
             this.furnitureStores = ((Number)json_data.get("furniture stores")).intValue();// gafo
             this.gafo = ((Number)json_data.get("gafo")).intValue();// electronic shopping and mail-order houses
             this.electronicShoppingAndMailOrderHouses = ((Number)json_data.get("electronic shopping and mail-order houses")).intValue();// clothing stores
             this.clothingStores = ((Number)json_data.get("clothing stores")).intValue();// used car dealers
-            this.usedCarDealers = ((Number)json_data.get("used car dealers")).intValue();// automobile dealers
-            this.automobileDealers = ((Number)json_data.get("automobile dealers")).intValue();// used merchandise stores
-            this.usedMerchandiseStores = ((Number)json_data.get("used merchandise stores")).intValue();// hobby, toy, and game stores
-            this.hobbyToyAndGameStores = ((Number)json_data.get("hobby, toy, and game stores")).intValue();// full service restaurants
-            this.fullServiceRestaurants = ((Number)json_data.get("full service restaurants")).intValue();// discount dept. stores
-            this.discountDeptStores = ((Number)((JSONObject) json_data.get("discount dept")).get(" stores")).intValue();// all other home furnishings stores
+            this.usedCarDealers = ((Number)json_data.get("used car dealers")).intValue();// full service restaurants
+            this.fullServiceRestaurants = ((Number)json_data.get("full service restaurants")).intValue();// warehouse clubs and superstores
+            this.warehouseClubsAndSuperstores = ((Number)json_data.get("warehouse clubs and superstores")).intValue();// hobby, toy, and game stores
+            this.hobbyToyAndGameStores = ((Number)json_data.get("hobby, toy, and game stores")).intValue();// nonstore retailers
+            this.nonstoreRetailers = ((Number)json_data.get("nonstore retailers")).intValue();// all other home furnishings stores
             this.allOtherHomeFurnishingsStores = ((Number)json_data.get("all other home furnishings stores")).intValue();// retail trade and food services
             this.retailTradeAndFoodServices = ((Number)json_data.get("retail trade and food services")).intValue();// paint and wallpaper stores
             this.paintAndWallpaperStores = ((Number)json_data.get("paint and wallpaper stores")).intValue();// women's clothing stores
-            this.womensClothingStores = ((Number)json_data.get("women's clothing stores")).intValue();// grocery stores
-            this.groceryStores = ((Number)json_data.get("grocery stores")).intValue();// nonstore retailers
-            this.nonstoreRetailers = ((Number)json_data.get("nonstore retailers")).intValue();// jewelry stores
-            this.jewelryStores = ((Number)json_data.get("jewelry stores")).intValue();// computer and software stores
-            this.computerAndSoftwareStores = ((Number)json_data.get("computer and software stores")).intValue();
+            this.womensClothingStores = ((Number)json_data.get("women's clothing stores")).intValue();// computer and software stores
+            this.computerAndSoftwareStores = ((Number)json_data.get("computer and software stores")).intValue();// jewelry stores
+            this.jewelryStores = ((Number)json_data.get("jewelry stores")).intValue();// non-discount department stores
+            this.nonDiscountDepartmentStores = ((Number)json_data.get("non-discount department stores")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Inventories; a field was missing.");
     		e.printStackTrace();

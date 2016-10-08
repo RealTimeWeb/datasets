@@ -16,9 +16,19 @@ import org.json.simple.JSONObject;
  */
 public class Date {
 	
+    private String full;
     private Integer year;
     private Integer day;
     private Integer month;
+    
+    
+    /*
+     * @return 
+     */
+    public String getFull() {
+        return this.full;
+    }
+    
     
     
     /*
@@ -55,7 +65,7 @@ public class Date {
 	 * @return String
 	 */
 	public String toString() {
-		return "Date[" +year+", "+day+", "+month+"]";
+		return "Date[" +full+", "+year+", "+day+", "+month+"]";
 	}
 	
 	/**
@@ -63,7 +73,8 @@ public class Date {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Date(JSONObject json_data) {
-        try {// year
+        try {// full
+            this.full = (String)json_data.get("full");// year
             this.year = ((Number)json_data.get("year")).intValue();// day
             this.day = ((Number)json_data.get("day")).intValue();// month
             this.month = ((Number)json_data.get("month")).intValue();
