@@ -2,6 +2,7 @@
   "finance": {
     "dicts": {
       "count": 25, 
+      "inconsistent": {}, 
       "average branching factor": 7
     }, 
     "tags": [
@@ -16,10 +17,11 @@
     "atomics": {
       "count": 151, 
       "nones": 0, 
+      "ints": 150, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 0, 
-      "strings": 0, 
+      "unknown": 0, 
+      "strings": 1, 
       "floats": 0
     }, 
     "lists": {
