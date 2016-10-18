@@ -16,15 +16,15 @@ import org.json.simple.JSONObject;
  */
 public class Location {
 	
-    private Double latitude;
+    private Integer latitude;
     private String name;
-    private Double longitude;
+    private Integer longitude;
     
     
     /*
      * @return 
      */
-    public Double getLatitude() {
+    public Integer getLatitude() {
         return this.latitude;
     }
     
@@ -42,7 +42,7 @@ public class Location {
     /*
      * @return 
      */
-    public Double getLongitude() {
+    public Integer getLongitude() {
         return this.longitude;
     }
     
@@ -64,9 +64,9 @@ public class Location {
 	 */
     public Location(JSONObject json_data) {
         try {// latitude
-            this.latitude = (Double)json_data.get("latitude");// name
+            this.latitude = ((Number)json_data.get("latitude")).intValue();// name
             this.name = (String)json_data.get("name");// longitude
-            this.longitude = (Double)json_data.get("longitude");
+            this.longitude = ((Number)json_data.get("longitude")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Location; a field was missing.");
     		e.printStackTrace();

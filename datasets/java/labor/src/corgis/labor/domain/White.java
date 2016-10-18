@@ -44,7 +44,7 @@ public class White {
 	 */
     public White(JSONObject json_data) {
         try {// All
-            this.all = new Integer(((Long)json_data.get("All")).intValue());
+            this.all = ((Number)json_data.get("All")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a White; a field was missing.");
     		e.printStackTrace();

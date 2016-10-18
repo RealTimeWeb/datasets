@@ -124,15 +124,15 @@ public class InsuranceTrust {
 	 */
     public InsuranceTrust(JSONObject json_data) {
         try {// Insurance Trust Other Securities
-            this.insuranceTrustOtherSecurities = new Integer(((Long)json_data.get("Insurance Trust Other Securities")).intValue());// Insurance Trust Cash and Deposits
-            this.insuranceTrustCashAndDeposits = new Integer(((Long)json_data.get("Insurance Trust Cash and Deposits")).intValue());// Insurance Trust State and Local Securities Total
-            this.insuranceTrustStateAndLocalSecuritiesTotal = new Integer(((Long)json_data.get("Insurance Trust State and Local Securities Total")).intValue());// Insurance Trust Securities Total
-            this.insuranceTrustSecuritiesTotal = new Integer(((Long)json_data.get("Insurance Trust Securities Total")).intValue());// Insurance Trust Federal Agency Securities
-            this.insuranceTrustFederalAgencySecurities = new Integer(((Long)json_data.get("Insurance Trust Federal Agency Securities")).intValue());// Insurance Trust Total Expenditure
-            this.insuranceTrustTotalExpenditure = new Integer(((Long)json_data.get("Insurance Trust Total Expenditure")).intValue());// Insurance Trust
-            this.insuranceTrust = new Integer(((Long)json_data.get("Insurance Trust")).intValue());// Insurance Trust Cash and Securities
-            this.insuranceTrustCashAndSecurities = new Integer(((Long)json_data.get("Insurance Trust Cash and Securities")).intValue());// Insurance Trust Federal Securities
-            this.insuranceTrustFederalSecurities = new Integer(((Long)json_data.get("Insurance Trust Federal Securities")).intValue());
+            this.insuranceTrustOtherSecurities = ((Number)json_data.get("Insurance Trust Other Securities")).intValue();// Insurance Trust Cash and Deposits
+            this.insuranceTrustCashAndDeposits = ((Number)json_data.get("Insurance Trust Cash and Deposits")).intValue();// Insurance Trust State and Local Securities Total
+            this.insuranceTrustStateAndLocalSecuritiesTotal = ((Number)json_data.get("Insurance Trust State and Local Securities Total")).intValue();// Insurance Trust Securities Total
+            this.insuranceTrustSecuritiesTotal = ((Number)json_data.get("Insurance Trust Securities Total")).intValue();// Insurance Trust Federal Agency Securities
+            this.insuranceTrustFederalAgencySecurities = ((Number)json_data.get("Insurance Trust Federal Agency Securities")).intValue();// Insurance Trust Total Expenditure
+            this.insuranceTrustTotalExpenditure = ((Number)json_data.get("Insurance Trust Total Expenditure")).intValue();// Insurance Trust
+            this.insuranceTrust = ((Number)json_data.get("Insurance Trust")).intValue();// Insurance Trust Cash and Securities
+            this.insuranceTrustCashAndSecurities = ((Number)json_data.get("Insurance Trust Cash and Securities")).intValue();// Insurance Trust Federal Securities
+            this.insuranceTrustFederalSecurities = ((Number)json_data.get("Insurance Trust Federal Securities")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a InsuranceTrust; a field was missing.");
     		e.printStackTrace();

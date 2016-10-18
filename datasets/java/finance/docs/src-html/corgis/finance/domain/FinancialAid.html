@@ -172,19 +172,19 @@
 <span class="sourceLineNo">164</span>         */<a name="line.164"></a>
 <span class="sourceLineNo">165</span>    public FinancialAid(JSONObject json_data) {<a name="line.165"></a>
 <span class="sourceLineNo">166</span>        try {// Federal Agency Securities Total<a name="line.166"></a>
-<span class="sourceLineNo">167</span>            this.federalAgencySecuritiesTotal = new Integer(((Long)json_data.get("Federal Agency Securities Total")).intValue());// Beginning Long Term Debt Total Outstanding<a name="line.167"></a>
-<span class="sourceLineNo">168</span>            this.beginningLongTermDebtTotalOutstanding = new Integer(((Long)json_data.get("Beginning Long Term Debt Total Outstanding")).intValue());// Categorical Assistance Total Expenditure<a name="line.168"></a>
-<span class="sourceLineNo">169</span>            this.categoricalAssistanceTotalExpenditure = new Integer(((Long)json_data.get("Categorical Assistance Total Expenditure")).intValue());// Cash Assistance Total Expenditure<a name="line.169"></a>
-<span class="sourceLineNo">170</span>            this.cashAssistanceTotalExpenditure = new Integer(((Long)json_data.get("Cash Assistance Total Expenditure")).intValue());// Categorical Assistance Intergovernmental<a name="line.170"></a>
-<span class="sourceLineNo">171</span>            this.categoricalAssistanceIntergovernmental = new Integer(((Long)json_data.get("Categorical Assistance Intergovernmental")).intValue());// Cash and Securities Total<a name="line.171"></a>
-<span class="sourceLineNo">172</span>            this.cashAndSecuritiesTotal = new Integer(((Long)json_data.get("Cash and Securities Total")).intValue());// Assistance and Subsidies<a name="line.172"></a>
-<span class="sourceLineNo">173</span>            this.assistanceAndSubsidies = new Integer(((Long)json_data.get("Assistance and Subsidies")).intValue());// Cash Assistance Intergovernmental<a name="line.173"></a>
-<span class="sourceLineNo">174</span>            this.cashAssistanceIntergovernmental = new Integer(((Long)json_data.get("Cash Assistance Intergovernmental")).intValue());// Borrowing Total<a name="line.174"></a>
-<span class="sourceLineNo">175</span>            this.borrowingTotal = new Integer(((Long)json_data.get("Borrowing Total")).intValue());// Sinking Fund Total<a name="line.175"></a>
-<span class="sourceLineNo">176</span>            this.sinkingFundTotal = new Integer(((Long)json_data.get("Sinking Fund Total")).intValue());// Securities Total<a name="line.176"></a>
-<span class="sourceLineNo">177</span>            this.securitiesTotal = new Integer(((Long)json_data.get("Securities Total")).intValue());// Bond Fund Total<a name="line.177"></a>
-<span class="sourceLineNo">178</span>            this.bondFundTotal = new Integer(((Long)json_data.get("Bond Fund Total")).intValue());// Cash and Deposits Total<a name="line.178"></a>
-<span class="sourceLineNo">179</span>            this.cashAndDepositsTotal = new Integer(((Long)json_data.get("Cash and Deposits Total")).intValue());<a name="line.179"></a>
+<span class="sourceLineNo">167</span>            this.federalAgencySecuritiesTotal = ((Number)json_data.get("Federal Agency Securities Total")).intValue();// Beginning Long Term Debt Total Outstanding<a name="line.167"></a>
+<span class="sourceLineNo">168</span>            this.beginningLongTermDebtTotalOutstanding = ((Number)json_data.get("Beginning Long Term Debt Total Outstanding")).intValue();// Categorical Assistance Total Expenditure<a name="line.168"></a>
+<span class="sourceLineNo">169</span>            this.categoricalAssistanceTotalExpenditure = ((Number)json_data.get("Categorical Assistance Total Expenditure")).intValue();// Cash Assistance Total Expenditure<a name="line.169"></a>
+<span class="sourceLineNo">170</span>            this.cashAssistanceTotalExpenditure = ((Number)json_data.get("Cash Assistance Total Expenditure")).intValue();// Categorical Assistance Intergovernmental<a name="line.170"></a>
+<span class="sourceLineNo">171</span>            this.categoricalAssistanceIntergovernmental = ((Number)json_data.get("Categorical Assistance Intergovernmental")).intValue();// Cash and Securities Total<a name="line.171"></a>
+<span class="sourceLineNo">172</span>            this.cashAndSecuritiesTotal = ((Number)json_data.get("Cash and Securities Total")).intValue();// Assistance and Subsidies<a name="line.172"></a>
+<span class="sourceLineNo">173</span>            this.assistanceAndSubsidies = ((Number)json_data.get("Assistance and Subsidies")).intValue();// Cash Assistance Intergovernmental<a name="line.173"></a>
+<span class="sourceLineNo">174</span>            this.cashAssistanceIntergovernmental = ((Number)json_data.get("Cash Assistance Intergovernmental")).intValue();// Borrowing Total<a name="line.174"></a>
+<span class="sourceLineNo">175</span>            this.borrowingTotal = ((Number)json_data.get("Borrowing Total")).intValue();// Sinking Fund Total<a name="line.175"></a>
+<span class="sourceLineNo">176</span>            this.sinkingFundTotal = ((Number)json_data.get("Sinking Fund Total")).intValue();// Securities Total<a name="line.176"></a>
+<span class="sourceLineNo">177</span>            this.securitiesTotal = ((Number)json_data.get("Securities Total")).intValue();// Bond Fund Total<a name="line.177"></a>
+<span class="sourceLineNo">178</span>            this.bondFundTotal = ((Number)json_data.get("Bond Fund Total")).intValue();// Cash and Deposits Total<a name="line.178"></a>
+<span class="sourceLineNo">179</span>            this.cashAndDepositsTotal = ((Number)json_data.get("Cash and Deposits Total")).intValue();<a name="line.179"></a>
 <span class="sourceLineNo">180</span>        } catch (NullPointerException e) {<a name="line.180"></a>
 <span class="sourceLineNo">181</span>                System.err.println("Could not convert the response to a FinancialAid; a field was missing.");<a name="line.181"></a>
 <span class="sourceLineNo">182</span>                e.printStackTrace();<a name="line.182"></a>

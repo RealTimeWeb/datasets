@@ -10,7 +10,6 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.supreme_court.domain.Area;
 
 /**
  * 
@@ -19,7 +18,7 @@ public class Issue {
 	
     private String text;
     private Integer id;
-    private Area area;
+    private String area;
     
     
     /*
@@ -43,7 +42,7 @@ public class Issue {
     /*
      * @return 
      */
-    public Area getArea() {
+    public String getArea() {
         return this.area;
     }
     
@@ -66,8 +65,8 @@ public class Issue {
     public Issue(JSONObject json_data) {
         try {// text
             this.text = (String)json_data.get("text");// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());// area
-            this.area = new Area((JSONObject)json_data.get("area"));
+            this.id = ((Number)json_data.get("id")).intValue();// area
+            this.area = (String)json_data.get("area");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Issue; a field was missing.");
     		e.printStackTrace();

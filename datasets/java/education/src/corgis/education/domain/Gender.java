@@ -54,8 +54,8 @@ public class Gender {
 	 */
     public Gender(JSONObject json_data) {
         try {// male
-            this.male = new Integer(((Long)json_data.get("male")).intValue());// female
-            this.female = new Integer(((Long)json_data.get("female")).intValue());
+            this.male = ((Number)json_data.get("male")).intValue();// female
+            this.female = ((Number)json_data.get("female")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Gender; a field was missing.");
     		e.printStackTrace();

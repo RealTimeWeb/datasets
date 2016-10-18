@@ -28,17 +28,17 @@ conversion_mapping = { ("string", "integer") : "Integer.parseInt",
                        ("long", "string") : "Long.toString",
                        ("float", "string") : "Double.toString",
                        ("boolean", "string") : "Boolean.toString"}
-                       
-json_conversion = { "int" : "(Integer)",
-                    "integer" : "(Integer)",
-                    "float" : "(Double)",
-                    "boolean" : "(Boolean)",
+                     
+number_conversion = { "int": "((Number){}).intValue()",
+                      "integer": "((Number){}).intValue()",
+                      "float": "((Number){}).doubleValue()",
+                      "long": "((Number){}).longValue()"}
+json_conversion = { "boolean" : "(Boolean)",
                     "bool" : "(Boolean)",
                     "string": "(String)",
                     "str": "(String)",
                     "unicode": "(String)",
-                    "NoneType": "(String)",
-                    "long" : "(Long)"}
+                    "NoneType": "(String)"}
                      
 java_type_names = { "string" : "String",
                     "str": "String",
@@ -115,8 +115,8 @@ def create_json_conversion(data, type, key):
         was_list = True
         type = strip_list(type)
     # Because simplejson is weird and Java is type heavy
-    if type in ('int', 'integer'):
-        return "new Integer(((Long){}).intValue())".format(data)
+    if type in number_conversion:
+        return number_conversion[type].format(data)
     elif type in json_conversion:
         return "{}{}".format(json_conversion[type], data)
     elif was_list:
@@ -173,12 +173,6 @@ def enforce_json_array(root, post):
         return root + "Array()"
     else:
         return root + "()"
-        
-def convert_to_string(source, type):
-    if type in racket_conversions:
-        return "({} {})".format(racket_conversions[type], source)
-    else:
-        return source
 
 def requests_verb(verb):
     if verb == "get":
@@ -222,6 +216,8 @@ def clean_invalid_characters(astr):
         return "private_"
     elif astr == "public":
         return "public_"
+    elif astr == "case":
+        return "case_"
     return astr.replace("'", '').replace('.', " ").replace('"', '').replace('#', 'number').replace('-', ' ').replace('?', '').replace('1', 'one').replace('2', 'two').replace('3', 'three').replace('4', 'four').replace('5', 'five').replace('6', 'six').replace('7', 'seven').replace('8', 'eight').replace('9', 'nine').replace('0', 'zero').replace('/', ' ').replace("+", "plus").replace(",", " ").replace("(", " ").replace(")", " ")
         
 def sluggify(astr):
@@ -281,7 +277,6 @@ env.filters['is_list'] = is_list
 env.filters['strip_list'] = strip_list
 env.filters['parse_json_path'] = parse_json_path
 env.filters['parse_json_path_all'] = parse_json_path_all
-env.filters['convert_to_string'] = convert_to_string
 env.filters['requests_verb'] = requests_verb
 env.filters['create_json_conversion'] = create_json_conversion
 env.filters['create_xml_conversion'] = create_xml_conversion

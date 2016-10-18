@@ -102,12 +102,12 @@
 <span class="sourceLineNo">094</span>         */<a name="line.94"></a>
 <span class="sourceLineNo">095</span>    public Employment(JSONObject json_data) {<a name="line.95"></a>
 <span class="sourceLineNo">096</span>        try {// Unemployment Comp Total Cash and Securities<a name="line.96"></a>
-<span class="sourceLineNo">097</span>            this.unemploymentCompTotalCashAndSecurities = new Integer(((Long)json_data.get("Unemployment Comp Total Cash and Securities")).intValue());// Employment Security Administration Expenditure Total<a name="line.97"></a>
-<span class="sourceLineNo">098</span>            this.employmentSecurityAdministrationExpenditureTotal = new Integer(((Long)json_data.get("Employment Security Administration Expenditure Total")).intValue());// Employee Retirement Total Cash and Securities<a name="line.98"></a>
-<span class="sourceLineNo">099</span>            this.employeeRetirementTotalCashAndSecurities = new Integer(((Long)json_data.get("Employee Retirement Total Cash and Securities")).intValue());// Employment Security Administration Intergovernmental<a name="line.99"></a>
-<span class="sourceLineNo">100</span>            this.employmentSecurityAdministrationIntergovernmental = new Integer(((Long)json_data.get("Employment Security Administration Intergovernmental")).intValue());// Employee Retirement Total Expenditure<a name="line.100"></a>
-<span class="sourceLineNo">101</span>            this.employeeRetirementTotalExpenditure = new Integer(((Long)json_data.get("Employee Retirement Total Expenditure")).intValue());// Unemployment Comp Total Expenditure<a name="line.101"></a>
-<span class="sourceLineNo">102</span>            this.unemploymentCompTotalExpenditure = new Integer(((Long)json_data.get("Unemployment Comp Total Expenditure")).intValue());<a name="line.102"></a>
+<span class="sourceLineNo">097</span>            this.unemploymentCompTotalCashAndSecurities = ((Number)json_data.get("Unemployment Comp Total Cash and Securities")).intValue();// Employment Security Administration Expenditure Total<a name="line.97"></a>
+<span class="sourceLineNo">098</span>            this.employmentSecurityAdministrationExpenditureTotal = ((Number)json_data.get("Employment Security Administration Expenditure Total")).intValue();// Employee Retirement Total Cash and Securities<a name="line.98"></a>
+<span class="sourceLineNo">099</span>            this.employeeRetirementTotalCashAndSecurities = ((Number)json_data.get("Employee Retirement Total Cash and Securities")).intValue();// Employment Security Administration Intergovernmental<a name="line.99"></a>
+<span class="sourceLineNo">100</span>            this.employmentSecurityAdministrationIntergovernmental = ((Number)json_data.get("Employment Security Administration Intergovernmental")).intValue();// Employee Retirement Total Expenditure<a name="line.100"></a>
+<span class="sourceLineNo">101</span>            this.employeeRetirementTotalExpenditure = ((Number)json_data.get("Employee Retirement Total Expenditure")).intValue();// Unemployment Comp Total Expenditure<a name="line.101"></a>
+<span class="sourceLineNo">102</span>            this.unemploymentCompTotalExpenditure = ((Number)json_data.get("Unemployment Comp Total Expenditure")).intValue();<a name="line.102"></a>
 <span class="sourceLineNo">103</span>        } catch (NullPointerException e) {<a name="line.103"></a>
 <span class="sourceLineNo">104</span>                System.err.println("Could not convert the response to a Employment; a field was missing.");<a name="line.104"></a>
 <span class="sourceLineNo">105</span>                e.printStackTrace();<a name="line.105"></a>

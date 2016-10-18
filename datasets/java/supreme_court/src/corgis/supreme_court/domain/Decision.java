@@ -10,10 +10,8 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.supreme_court.domain.Jurisdiction;
-import corgis.supreme_court.domain.AuthorityOne;
+import corgis.supreme_court.domain.Case_;
 import corgis.supreme_court.domain.AdminAction;
-import corgis.supreme_court.domain.CaseData;
 import corgis.supreme_court.domain.Date;
 
 /**
@@ -22,14 +20,14 @@ import corgis.supreme_court.domain.Date;
 public class Decision {
 	
     private Boolean precedentAltered;
+    private Case_ case_;
     private String direction;
-    private Jurisdiction jurisdiction;
-    private AuthorityOne authorityOne;
+    private String unconstitutional;
+    private String authorityOne;
     private String authorityTwo;
     private AdminAction adminAction;
-    private String unconstitutional;
+    private String jurisdiction;
     private Integer term;
-    private CaseData caseData;
     private Date date;
     private String winningParty;
     private String type;
@@ -48,6 +46,15 @@ public class Decision {
     /*
      * @return 
      */
+    public Case_ getCase_() {
+        return this.case_;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
     public String getDirection() {
         return this.direction;
     }
@@ -57,8 +64,8 @@ public class Decision {
     /*
      * @return 
      */
-    public Jurisdiction getJurisdiction() {
-        return this.jurisdiction;
+    public String getUnconstitutional() {
+        return this.unconstitutional;
     }
     
     
@@ -66,7 +73,7 @@ public class Decision {
     /*
      * @return 
      */
-    public AuthorityOne getAuthorityOne() {
+    public String getAuthorityOne() {
         return this.authorityOne;
     }
     
@@ -93,8 +100,8 @@ public class Decision {
     /*
      * @return 
      */
-    public String getUnconstitutional() {
-        return this.unconstitutional;
+    public String getJurisdiction() {
+        return this.jurisdiction;
     }
     
     
@@ -104,15 +111,6 @@ public class Decision {
      */
     public Integer getTerm() {
         return this.term;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public CaseData getCaseData() {
-        return this.caseData;
     }
     
     
@@ -160,7 +158,7 @@ public class Decision {
 	 * @return String
 	 */
 	public String toString() {
-		return "Decision[" +precedentAltered+", "+direction+", "+jurisdiction+", "+authorityOne+", "+authorityTwo+", "+adminAction+", "+unconstitutional+", "+term+", "+caseData+", "+date+", "+winningParty+", "+type+", "+dissentAgrees+"]";
+		return "Decision[" +precedentAltered+", "+case_+", "+direction+", "+unconstitutional+", "+authorityOne+", "+authorityTwo+", "+adminAction+", "+jurisdiction+", "+term+", "+date+", "+winningParty+", "+type+", "+dissentAgrees+"]";
 	}
 	
 	/**
@@ -169,15 +167,15 @@ public class Decision {
 	 */
     public Decision(JSONObject json_data) {
         try {// precedent altered?
-            this.precedentAltered = (Boolean)json_data.get("precedent altered?");// direction
-            this.direction = (String)json_data.get("direction");// jurisdiction
-            this.jurisdiction = new Jurisdiction((JSONObject)json_data.get("jurisdiction"));// authority 1
-            this.authorityOne = new AuthorityOne((JSONObject)json_data.get("authority 1"));// authority 2
+            this.precedentAltered = (Boolean)json_data.get("precedent altered?");// case
+            this.case_ = new Case_((JSONObject)json_data.get("case"));// direction
+            this.direction = (String)json_data.get("direction");// unconstitutional
+            this.unconstitutional = (String)json_data.get("unconstitutional");// authority 1
+            this.authorityOne = (String)json_data.get("authority 1");// authority 2
             this.authorityTwo = (String)json_data.get("authority 2");// admin action
-            this.adminAction = new AdminAction((JSONObject)json_data.get("admin action"));// unconstitutional
-            this.unconstitutional = (String)json_data.get("unconstitutional");// term
-            this.term = new Integer(((Long)json_data.get("term")).intValue());// case data
-            this.caseData = new CaseData((JSONObject)json_data.get("case data"));// date
+            this.adminAction = new AdminAction((JSONObject)json_data.get("admin action"));// jurisdiction
+            this.jurisdiction = (String)json_data.get("jurisdiction");// term
+            this.term = ((Number)json_data.get("term")).intValue();// date
             this.date = new Date((JSONObject)json_data.get("date"));// winning party
             this.winningParty = (String)json_data.get("winning party");// type
             this.type = (String)json_data.get("type");// dissent agrees

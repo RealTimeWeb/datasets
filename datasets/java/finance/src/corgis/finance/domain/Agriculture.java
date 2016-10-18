@@ -94,12 +94,12 @@ public class Agriculture {
 	 */
     public Agriculture(JSONObject json_data) {
         try {// Agriculture Intergovernmental
-            this.agricultureIntergovernmental = new Integer(((Long)json_data.get("Agriculture Intergovernmental")).intValue());// Agriculture Total Expenditure
-            this.agricultureTotalExpenditure = new Integer(((Long)json_data.get("Agriculture Total Expenditure")).intValue());// Federal Agriculture Farm Income Intergovernmental
-            this.federalAgricultureFarmIncomeIntergovernmental = new Integer(((Long)json_data.get("Federal Agriculture Farm Income Intergovernmental")).intValue());// Federal Agriculture Farm Income Total
-            this.federalAgricultureFarmIncomeTotal = new Integer(((Long)json_data.get("Federal Agriculture Farm Income Total")).intValue());// Federal Farm Credit Total
-            this.federalFarmCreditTotal = new Integer(((Long)json_data.get("Federal Farm Credit Total")).intValue());// Federal Farm Credit Intergovernmental
-            this.federalFarmCreditIntergovernmental = new Integer(((Long)json_data.get("Federal Farm Credit Intergovernmental")).intValue());
+            this.agricultureIntergovernmental = ((Number)json_data.get("Agriculture Intergovernmental")).intValue();// Agriculture Total Expenditure
+            this.agricultureTotalExpenditure = ((Number)json_data.get("Agriculture Total Expenditure")).intValue();// Federal Agriculture Farm Income Intergovernmental
+            this.federalAgricultureFarmIncomeIntergovernmental = ((Number)json_data.get("Federal Agriculture Farm Income Intergovernmental")).intValue();// Federal Agriculture Farm Income Total
+            this.federalAgricultureFarmIncomeTotal = ((Number)json_data.get("Federal Agriculture Farm Income Total")).intValue();// Federal Farm Credit Total
+            this.federalFarmCreditTotal = ((Number)json_data.get("Federal Farm Credit Total")).intValue();// Federal Farm Credit Intergovernmental
+            this.federalFarmCreditIntergovernmental = ((Number)json_data.get("Federal Farm Credit Intergovernmental")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Agriculture; a field was missing.");
     		e.printStackTrace();

@@ -55,7 +55,7 @@ public class Women {
     public Women(JSONObject json_data) {
         try {// units
             this.units = (String)json_data.get("units");// value
-            this.value = (Double)json_data.get("value");
+            this.value = ((Number)json_data.get("value")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Women; a field was missing.");
     		e.printStackTrace();

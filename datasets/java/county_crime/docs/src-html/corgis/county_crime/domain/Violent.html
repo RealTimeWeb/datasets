@@ -92,11 +92,11 @@
 <span class="sourceLineNo">084</span>         */<a name="line.84"></a>
 <span class="sourceLineNo">085</span>    public Violent(JSONObject json_data) {<a name="line.85"></a>
 <span class="sourceLineNo">086</span>        try {// All<a name="line.86"></a>
-<span class="sourceLineNo">087</span>            this.all = (Double)json_data.get("All");// Murder<a name="line.87"></a>
-<span class="sourceLineNo">088</span>            this.murder = (Double)json_data.get("Murder");// Rape<a name="line.88"></a>
-<span class="sourceLineNo">089</span>            this.rape = (Double)json_data.get("Rape");// Robbery<a name="line.89"></a>
-<span class="sourceLineNo">090</span>            this.robbery = (Double)json_data.get("Robbery");// Assault<a name="line.90"></a>
-<span class="sourceLineNo">091</span>            this.assault = (Double)json_data.get("Assault");<a name="line.91"></a>
+<span class="sourceLineNo">087</span>            this.all = ((Number)json_data.get("All")).doubleValue();// Murder<a name="line.87"></a>
+<span class="sourceLineNo">088</span>            this.murder = ((Number)json_data.get("Murder")).doubleValue();// Rape<a name="line.88"></a>
+<span class="sourceLineNo">089</span>            this.rape = ((Number)json_data.get("Rape")).doubleValue();// Robbery<a name="line.89"></a>
+<span class="sourceLineNo">090</span>            this.robbery = ((Number)json_data.get("Robbery")).doubleValue();// Assault<a name="line.90"></a>
+<span class="sourceLineNo">091</span>            this.assault = ((Number)json_data.get("Assault")).doubleValue();<a name="line.91"></a>
 <span class="sourceLineNo">092</span>        } catch (NullPointerException e) {<a name="line.92"></a>
 <span class="sourceLineNo">093</span>                System.err.println("Could not convert the response to a Violent; a field was missing.");<a name="line.93"></a>
 <span class="sourceLineNo">094</span>                e.printStackTrace();<a name="line.94"></a>

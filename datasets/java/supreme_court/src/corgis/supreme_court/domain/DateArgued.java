@@ -16,17 +16,17 @@ import org.json.simple.JSONObject;
  */
 public class DateArgued {
 	
-    private String full;
-    private Integer year;
-    private Integer day;
     private Integer month;
+    private String full;
+    private Integer day;
+    private Integer year;
     
     
     /*
      * @return 
      */
-    public String getFull() {
-        return this.full;
+    public Integer getMonth() {
+        return this.month;
     }
     
     
@@ -34,8 +34,8 @@ public class DateArgued {
     /*
      * @return 
      */
-    public Integer getYear() {
-        return this.year;
+    public String getFull() {
+        return this.full;
     }
     
     
@@ -52,8 +52,8 @@ public class DateArgued {
     /*
      * @return 
      */
-    public Integer getMonth() {
-        return this.month;
+    public Integer getYear() {
+        return this.year;
     }
     
     
@@ -65,7 +65,7 @@ public class DateArgued {
 	 * @return String
 	 */
 	public String toString() {
-		return "DateArgued[" +full+", "+year+", "+day+", "+month+"]";
+		return "DateArgued[" +month+", "+full+", "+day+", "+year+"]";
 	}
 	
 	/**
@@ -73,11 +73,11 @@ public class DateArgued {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public DateArgued(JSONObject json_data) {
-        try {// full
-            this.full = (String)json_data.get("full");// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());// day
-            this.day = new Integer(((Long)json_data.get("day")).intValue());// month
-            this.month = new Integer(((Long)json_data.get("month")).intValue());
+        try {// month
+            this.month = ((Number)json_data.get("month")).intValue();// full
+            this.full = (String)json_data.get("full");// day
+            this.day = ((Number)json_data.get("day")).intValue();// year
+            this.year = ((Number)json_data.get("year")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a DateArgued; a field was missing.");
     		e.printStackTrace();

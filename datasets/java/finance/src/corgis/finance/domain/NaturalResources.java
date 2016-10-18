@@ -139,14 +139,14 @@ public class NaturalResources {
     public NaturalResources(JSONObject json_data) {
         try {// Fish and Game
             this.fishAndGame = new FishAndGame((JSONObject)json_data.get("Fish and Game"));// Natural Resources Total
-            this.naturalResourcesTotal = new Integer(((Long)json_data.get("Natural Resources Total")).intValue());// Natural Resources Intergovernmental
-            this.naturalResourcesIntergovernmental = new Integer(((Long)json_data.get("Natural Resources Intergovernmental")).intValue());// Natural Resources NEC Total Expenditure
-            this.naturalResourcesNecTotalExpenditure = new Integer(((Long)json_data.get("Natural Resources NEC Total Expenditure")).intValue());// Natural Resources Construction
-            this.naturalResourcesConstruction = new Integer(((Long)json_data.get("Natural Resources Construction")).intValue());// Parks
+            this.naturalResourcesTotal = ((Number)json_data.get("Natural Resources Total")).intValue();// Natural Resources Intergovernmental
+            this.naturalResourcesIntergovernmental = ((Number)json_data.get("Natural Resources Intergovernmental")).intValue();// Natural Resources NEC Total Expenditure
+            this.naturalResourcesNecTotalExpenditure = ((Number)json_data.get("Natural Resources NEC Total Expenditure")).intValue();// Natural Resources Construction
+            this.naturalResourcesConstruction = ((Number)json_data.get("Natural Resources Construction")).intValue();// Parks
             this.parks = new Parks((JSONObject)json_data.get("Parks"));// Forestry
             this.forestry = new Forestry((JSONObject)json_data.get("Forestry"));// Natural Resources Direct
-            this.naturalResourcesDirect = new Integer(((Long)json_data.get("Natural Resources Direct")).intValue());// Natural Resources Equipment and Land
-            this.naturalResourcesEquipmentAndLand = new Integer(((Long)json_data.get("Natural Resources Equipment and Land")).intValue());// Agriculture
+            this.naturalResourcesDirect = ((Number)json_data.get("Natural Resources Direct")).intValue();// Natural Resources Equipment and Land
+            this.naturalResourcesEquipmentAndLand = ((Number)json_data.get("Natural Resources Equipment and Land")).intValue();// Agriculture
             this.agriculture = new Agriculture((JSONObject)json_data.get("Agriculture"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a NaturalResources; a field was missing.");

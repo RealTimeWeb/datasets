@@ -84,11 +84,11 @@ public class Other {
 	 */
     public Other(JSONObject json_data) {
         try {// individualized education program
-            this.individualizedEducationProgram = new Integer(((Long)json_data.get("individualized education program")).intValue());// free lunch eligible
-            this.freeLunchEligible = new Integer(((Long)json_data.get("free lunch eligible")).intValue());// ungraded students
+            this.individualizedEducationProgram = ((Number)json_data.get("individualized education program")).intValue();// free lunch eligible
+            this.freeLunchEligible = ((Number)json_data.get("free lunch eligible")).intValue();// ungraded students
             this.ungradedStudents = (String)json_data.get("ungraded students");// lep/ell students
-            this.lepEllStudents = new Integer(((Long)json_data.get("lep/ell students")).intValue());// reduced-price lunch eligible
-            this.reducedPriceLunchEligible = new Integer(((Long)json_data.get("reduced-price lunch eligible")).intValue());
+            this.lepEllStudents = ((Number)json_data.get("lep/ell students")).intValue();// reduced-price lunch eligible
+            this.reducedPriceLunchEligible = ((Number)json_data.get("reduced-price lunch eligible")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Other; a field was missing.");
     		e.printStackTrace();

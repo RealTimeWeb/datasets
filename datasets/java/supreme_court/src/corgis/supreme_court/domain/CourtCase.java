@@ -11,16 +11,16 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import corgis.supreme_court.domain.Origin;
+import corgis.supreme_court.domain.Voting;
 import corgis.supreme_court.domain.LowerCourt;
+import corgis.supreme_court.domain.Laws;
+import corgis.supreme_court.domain.Issue;
 import corgis.supreme_court.domain.Decision;
 import corgis.supreme_court.domain.Citation;
 import corgis.supreme_court.domain.NaturalCourt;
 import corgis.supreme_court.domain.Source;
 import corgis.supreme_court.domain.Arguments;
-import corgis.supreme_court.domain.Voting;
-import corgis.supreme_court.domain.Issue;
 import corgis.supreme_court.domain.Id;
-import corgis.supreme_court.domain.Laws;
 
 /**
  * 
@@ -28,19 +28,19 @@ import corgis.supreme_court.domain.Laws;
 public class CourtCase {
 	
     private Origin origin;
+    private Voting voting;
     private LowerCourt lowerCourt;
-    private String name;
-    private Boolean threeJudgeDc;
-    private Integer docket;
+    private Laws laws;
+    private Issue issue;
     private Decision decision;
     private Citation citation;
     private NaturalCourt naturalCourt;
     private Source source;
     private Arguments arguments;
-    private Voting voting;
-    private Issue issue;
+    private Boolean threeJudgeDc;
+    private Integer docket;
     private Id id;
-    private Laws laws;
+    private String name;
     
     
     /*
@@ -48,6 +48,15 @@ public class CourtCase {
      */
     public Origin getOrigin() {
         return this.origin;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Voting getVoting() {
+        return this.voting;
     }
     
     
@@ -64,8 +73,8 @@ public class CourtCase {
     /*
      * @return 
      */
-    public String getName() {
-        return this.name;
+    public Laws getLaws() {
+        return this.laws;
     }
     
     
@@ -73,17 +82,8 @@ public class CourtCase {
     /*
      * @return 
      */
-    public Boolean getThreeJudgeDc() {
-        return this.threeJudgeDc;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getDocket() {
-        return this.docket;
+    public Issue getIssue() {
+        return this.issue;
     }
     
     
@@ -136,8 +136,8 @@ public class CourtCase {
     /*
      * @return 
      */
-    public Voting getVoting() {
-        return this.voting;
+    public Boolean getThreeJudgeDc() {
+        return this.threeJudgeDc;
     }
     
     
@@ -145,8 +145,8 @@ public class CourtCase {
     /*
      * @return 
      */
-    public Issue getIssue() {
-        return this.issue;
+    public Integer getDocket() {
+        return this.docket;
     }
     
     
@@ -163,8 +163,8 @@ public class CourtCase {
     /*
      * @return 
      */
-    public Laws getLaws() {
-        return this.laws;
+    public String getName() {
+        return this.name;
     }
     
     
@@ -176,7 +176,7 @@ public class CourtCase {
 	 * @return String
 	 */
 	public String toString() {
-		return "CourtCase[" +origin+", "+lowerCourt+", "+name+", "+threeJudgeDc+", "+docket+", "+decision+", "+citation+", "+naturalCourt+", "+source+", "+arguments+", "+voting+", "+issue+", "+id+", "+laws+"]";
+		return "CourtCase[" +origin+", "+voting+", "+lowerCourt+", "+laws+", "+issue+", "+decision+", "+citation+", "+naturalCourt+", "+source+", "+arguments+", "+threeJudgeDc+", "+docket+", "+id+", "+name+"]";
 	}
 	
 	/**
@@ -185,20 +185,20 @@ public class CourtCase {
 	 */
     public CourtCase(JSONObject json_data) {
         try {// origin
-            this.origin = new Origin((JSONObject)json_data.get("origin"));// lower court
-            this.lowerCourt = new LowerCourt((JSONObject)json_data.get("lower court"));// name
-            this.name = (String)json_data.get("name");// 3 judge dc?
-            this.threeJudgeDc = (Boolean)json_data.get("3 judge dc?");// docket
-            this.docket = new Integer(((Long)json_data.get("docket")).intValue());// decision
+            this.origin = new Origin((JSONObject)json_data.get("origin"));// voting
+            this.voting = new Voting((JSONObject)json_data.get("voting"));// lower court
+            this.lowerCourt = new LowerCourt((JSONObject)json_data.get("lower court"));// laws
+            this.laws = new Laws((JSONObject)json_data.get("laws"));// issue
+            this.issue = new Issue((JSONObject)json_data.get("issue"));// decision
             this.decision = new Decision((JSONObject)json_data.get("decision"));// citation
             this.citation = new Citation((JSONObject)json_data.get("citation"));// natural court
             this.naturalCourt = new NaturalCourt((JSONObject)json_data.get("natural court"));// source
             this.source = new Source((JSONObject)json_data.get("source"));// arguments
-            this.arguments = new Arguments((JSONObject)json_data.get("arguments"));// voting
-            this.voting = new Voting((JSONObject)json_data.get("voting"));// issue
-            this.issue = new Issue((JSONObject)json_data.get("issue"));// id
-            this.id = new Id((JSONObject)json_data.get("id"));// laws
-            this.laws = new Laws((JSONObject)json_data.get("laws"));
+            this.arguments = new Arguments((JSONObject)json_data.get("arguments"));// 3 judge dc?
+            this.threeJudgeDc = (Boolean)json_data.get("3 judge dc?");// docket
+            this.docket = ((Number)json_data.get("docket")).intValue();// id
+            this.id = new Id((JSONObject)json_data.get("id"));// name
+            this.name = (String)json_data.get("name");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a CourtCase; a field was missing.");
     		e.printStackTrace();

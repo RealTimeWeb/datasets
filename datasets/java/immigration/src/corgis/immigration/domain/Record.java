@@ -10,26 +10,23 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.immigration.domain.Illegals;
-import corgis.immigration.domain.Naturalizations;
-import corgis.immigration.domain.Permanants;
+import corgis.immigration.domain.Data;
 
 /**
  * 
  */
 public class Record {
 	
-    private Illegals illegals;
-    private Naturalizations naturalizations;
-    private Permanants permanants;
+    private String country;
+    private Data data;
     private Integer year;
     
     
     /*
      * @return 
      */
-    public Illegals getIllegals() {
-        return this.illegals;
+    public String getCountry() {
+        return this.country;
     }
     
     
@@ -37,17 +34,8 @@ public class Record {
     /*
      * @return 
      */
-    public Naturalizations getNaturalizations() {
-        return this.naturalizations;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Permanants getPermanants() {
-        return this.permanants;
+    public Data getData() {
+        return this.data;
     }
     
     
@@ -68,7 +56,7 @@ public class Record {
 	 * @return String
 	 */
 	public String toString() {
-		return "Record[" +illegals+", "+naturalizations+", "+permanants+", "+year+"]";
+		return "Record[" +country+", "+data+", "+year+"]";
 	}
 	
 	/**
@@ -76,11 +64,10 @@ public class Record {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Record(JSONObject json_data) {
-        try {// illegals
-            this.illegals = new Illegals((JSONObject)json_data.get("illegals"));// naturalizations
-            this.naturalizations = new Naturalizations((JSONObject)json_data.get("naturalizations"));// permanants
-            this.permanants = new Permanants((JSONObject)json_data.get("permanants"));// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());
+        try {// Country
+            this.country = (String)json_data.get("Country");// Data
+            this.data = new Data((JSONObject)json_data.get("Data"));// Year
+            this.year = ((Number)json_data.get("Year")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Record; a field was missing.");
     		e.printStackTrace();

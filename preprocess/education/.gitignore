@@ -1,6 +1,11 @@
 *.csv
 *.json
+<<<<<<< HEAD
 *.txt
 *.pdf
 *.zip
 pdfs/*.pdf
+=======
+*.zip
+*.txt
+>>>>>>> c27d88ce342cf52e52e4d50f9c9a211afb8300b9

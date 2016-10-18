@@ -54,7 +54,7 @@ public class Jurisdiction {
 	 */
     public Jurisdiction(JSONObject json_data) {
         try {// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());// manner
+            this.id = ((Number)json_data.get("id")).intValue();// manner
             this.manner = (String)json_data.get("manner");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Jurisdiction; a field was missing.");

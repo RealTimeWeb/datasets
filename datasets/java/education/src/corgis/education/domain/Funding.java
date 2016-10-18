@@ -54,8 +54,8 @@ public class Funding {
 	 */
     public Funding(JSONObject json_data) {
         try {// expenditures
-            this.expenditures = (Long)json_data.get("expenditures");// revenue
-            this.revenue = (Long)json_data.get("revenue");
+            this.expenditures = ((Number)json_data.get("expenditures")).longValue();// revenue
+            this.revenue = ((Number)json_data.get("revenue")).longValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Funding; a field was missing.");
     		e.printStackTrace();

@@ -55,7 +55,7 @@ public class Started {
     public Started(JSONObject json_data) {
         try {// is started
             this.isStarted = (Boolean)json_data.get("is started");// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());
+            this.year = ((Number)json_data.get("year")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Started; a field was missing.");
     		e.printStackTrace();

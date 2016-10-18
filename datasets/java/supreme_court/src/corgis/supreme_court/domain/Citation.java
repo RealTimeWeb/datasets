@@ -18,8 +18,8 @@ public class Citation {
 	
     private String sct;
     private String led;
-    private String lexis;
     private String us;
+    private String lexis;
     
     
     /*
@@ -43,8 +43,8 @@ public class Citation {
     /*
      * @return 
      */
-    public String getLexis() {
-        return this.lexis;
+    public String getUs() {
+        return this.us;
     }
     
     
@@ -52,8 +52,8 @@ public class Citation {
     /*
      * @return 
      */
-    public String getUs() {
-        return this.us;
+    public String getLexis() {
+        return this.lexis;
     }
     
     
@@ -65,7 +65,7 @@ public class Citation {
 	 * @return String
 	 */
 	public String toString() {
-		return "Citation[" +sct+", "+led+", "+lexis+", "+us+"]";
+		return "Citation[" +sct+", "+led+", "+us+", "+lexis+"]";
 	}
 	
 	/**
@@ -75,9 +75,9 @@ public class Citation {
     public Citation(JSONObject json_data) {
         try {// sct
             this.sct = (String)json_data.get("sct");// led
-            this.led = (String)json_data.get("led");// lexis
-            this.lexis = (String)json_data.get("lexis");// us
-            this.us = (String)json_data.get("us");
+            this.led = (String)json_data.get("led");// us
+            this.us = (String)json_data.get("us");// lexis
+            this.lexis = (String)json_data.get("lexis");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Citation; a field was missing.");
     		e.printStackTrace();

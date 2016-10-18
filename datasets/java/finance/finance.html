@@ -153,7 +153,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#downloads">Downloads</a></li>
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
-        <li><a href='#get_finances_by_state'>get_finances_by_state</a></li>
         <li><a href='#get_finances'>get_finances</a></li>
         
         </ol></li>
@@ -201,7 +200,7 @@ The Annual Survey of State Government Finances provides a comprehensive summary 
     
     <h3 id="usage">Usage</h3>
     
-    Begin by adding the above JAR file to your classpath. This library has 2 functions you can use.
+    Begin by adding the above JAR file to your classpath. This library has 1 function you can use.
     
 <div class="highlight"><pre><span class="kn">import</span> <span class="nn">corgis.finance.FinanceLibrary</span><span class="o">;</span>
 
@@ -210,7 +209,7 @@ The Annual Survey of State Government Finances provides a comprehensive summary 
         <span class="c1">// Get access to the library</span>
         <span class="n">FinanceLibrary</span> <span class="n">financeLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FinanceLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">Record</span> <span class="n">a_record</span> <span class="o">=</span> <span class="n">financeLibrary</span><span class="o">.</span><span class="na">getFinancesByState</span><span class="o">(</span><span class="s">&quot;Alaska&quot;</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Record</span><span class="o">&gt;</span> <span class="n">list_of_record</span> <span class="o">=</span> <span class="n">financeLibrary</span><span class="o">.</span><span class="na">getFinances</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Record</span><span class="o">&gt;</span> <span class="n">list_of_record</span> <span class="o">=</span> <span class="n">financeLibrary</span><span class="o">.</span><span class="na">getFinances</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -239,28 +238,6 @@ The Annual Survey of State Government Finances provides a comprehensive summary 
     
     We provide full <a href="docs/index.html" target="blank">JavaDoc<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a> for this library. Alternatively, you may refer to the below:
     
-<h4 id='getFinancesByState' style='font-family:monospace'    >&nbsp;financeLibrary.getFinancesByState(state)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Retuns financial data about a single state.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>state</b>: <i>String</i></h5>
-    <p class="list-group-item-text">The name of the state (e.g., "Alaska").
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
-
-</ul>
-
-</div>
-
 <h4 id='getFinances' style='font-family:monospace'    >&nbsp;financeLibrary.getFinances(test)</h4>
 
 <div class='row'>

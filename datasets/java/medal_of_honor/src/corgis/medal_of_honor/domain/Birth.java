@@ -18,7 +18,7 @@ import corgis.medal_of_honor.domain.Date;
 public class Birth {
 	
     private Date date;
-    private String location;
+    private String locationName;
     
     
     /*
@@ -33,8 +33,8 @@ public class Birth {
     /*
      * @return 
      */
-    public String getLocation() {
-        return this.location;
+    public String getLocationName() {
+        return this.locationName;
     }
     
     
@@ -46,7 +46,7 @@ public class Birth {
 	 * @return String
 	 */
 	public String toString() {
-		return "Birth[" +date+", "+location+"]";
+		return "Birth[" +date+", "+locationName+"]";
 	}
 	
 	/**
@@ -55,8 +55,8 @@ public class Birth {
 	 */
     public Birth(JSONObject json_data) {
         try {// date
-            this.date = new Date((JSONObject)json_data.get("date"));// location
-            this.location = (String)json_data.get("location");
+            this.date = new Date((JSONObject)json_data.get("date"));// location name
+            this.locationName = (String)json_data.get("location name");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Birth; a field was missing.");
     		e.printStackTrace();

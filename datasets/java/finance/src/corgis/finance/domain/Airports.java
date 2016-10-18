@@ -54,8 +54,8 @@ public class Airports {
 	 */
     public Airports(JSONObject json_data) {
         try {// Airports Intergovernmental
-            this.airportsIntergovernmental = new Integer(((Long)json_data.get("Airports Intergovernmental")).intValue());// Airports Total Expenditure
-            this.airportsTotalExpenditure = new Integer(((Long)json_data.get("Airports Total Expenditure")).intValue());
+            this.airportsIntergovernmental = ((Number)json_data.get("Airports Intergovernmental")).intValue();// Airports Total Expenditure
+            this.airportsTotalExpenditure = ((Number)json_data.get("Airports Total Expenditure")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Airports; a field was missing.");
     		e.printStackTrace();

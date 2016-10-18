@@ -66,7 +66,7 @@ public class AdminAction {
         try {// state
             this.state = (String)json_data.get("state");// agency
             this.agency = (String)json_data.get("agency");// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());
+            this.id = ((Number)json_data.get("id")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a AdminAction; a field was missing.");
     		e.printStackTrace();

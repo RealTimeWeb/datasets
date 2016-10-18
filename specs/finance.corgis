@@ -21,18 +21,6 @@ local:
       - name: year
         jsonpath: finance.[0].Year
 interfaces:
-  - name: get finances by state
-    args:
-      - name: state
-        type: str
-        default: 'Alaska'
-        matches: SELECT DISTINCT state FROM finance
-        description: The name of the state (e.g., "Alaska").
-    returns: record
-    description: Retuns financial data about a single state.
-    production:
-        sql: SELECT data FROM finance WHERE state=?
-        post: json()|jsonpath(data)
   - name: get finances
     returns: list[record]
     description: Returns financial data about all the states.

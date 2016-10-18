@@ -1,0 +1,54 @@
+{
+  "medal_of_honor": {
+    "dicts": {
+      "count": 8, 
+      "inconsistent": {
+        "date": "awardee.[0].birth.date.full"
+      }, 
+      "average branching factor": 3
+    }, 
+    "tags": [
+      "us", 
+      "usa", 
+      "united states", 
+      "military", 
+      "combat", 
+      "government", 
+      "army", 
+      "airforce", 
+      "marines", 
+      "navy", 
+      "fighting", 
+      "war", 
+      "award", 
+      "medal", 
+      "honor", 
+      "glory", 
+      "death"
+    ], 
+    "atomics": {
+      "count": 23, 
+      "nones": 0, 
+      "ints": 9, 
+      "booleans": 1, 
+      "longs": 0, 
+      "unknown": 0, 
+      "strings": 13, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 3475, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "keys": {}, 
+      "sizes": 0
+    }, 
+    "length": 3475, 
+    "locals": 0, 
+    "size": 4255759
+  }
+}

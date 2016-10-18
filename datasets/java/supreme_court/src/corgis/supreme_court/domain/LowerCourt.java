@@ -10,24 +10,22 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.supreme_court.domain.Reasons;
-import corgis.supreme_court.domain.Disposition;
 
 /**
  * 
  */
 public class LowerCourt {
 	
-    private Reasons reasons;
+    private String reasons;
     private Boolean disagreement;
     private String direction;
-    private Disposition disposition;
+    private String disposition;
     
     
     /*
      * @return 
      */
-    public Reasons getReasons() {
+    public String getReasons() {
         return this.reasons;
     }
     
@@ -54,7 +52,7 @@ public class LowerCourt {
     /*
      * @return 
      */
-    public Disposition getDisposition() {
+    public String getDisposition() {
         return this.disposition;
     }
     
@@ -76,10 +74,10 @@ public class LowerCourt {
 	 */
     public LowerCourt(JSONObject json_data) {
         try {// reasons
-            this.reasons = new Reasons((JSONObject)json_data.get("reasons"));// disagreement?
+            this.reasons = (String)json_data.get("reasons");// disagreement?
             this.disagreement = (Boolean)json_data.get("disagreement?");// direction
             this.direction = (String)json_data.get("direction");// disposition
-            this.disposition = new Disposition((JSONObject)json_data.get("disposition"));
+            this.disposition = (String)json_data.get("disposition");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a LowerCourt; a field was missing.");
     		e.printStackTrace();

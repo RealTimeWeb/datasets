@@ -64,9 +64,9 @@ public class Attendance {
 	 */
     public Attendance(JSONObject json_data) {
         try {// average student rate
-            this.averageStudentRate = new Integer(((Long)json_data.get("average student rate")).intValue());// average teacher rate
-            this.averageTeacherRate = (Double)json_data.get("average teacher rate");// average minutes
-            this.averageMinutes = (Double)json_data.get("average minutes");
+            this.averageStudentRate = ((Number)json_data.get("average student rate")).intValue();// average teacher rate
+            this.averageTeacherRate = ((Number)json_data.get("average teacher rate")).doubleValue();// average minutes
+            this.averageMinutes = ((Number)json_data.get("average minutes")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Attendance; a field was missing.");
     		e.printStackTrace();

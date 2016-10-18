@@ -97,8 +97,8 @@ public class Voting {
     public Voting(JSONObject json_data) {
         try {// unclear
             this.unclear = (Boolean)json_data.get("unclear");// minority
-            this.minority = new Integer(((Long)json_data.get("minority")).intValue());// majority
-            this.majority = new Integer(((Long)json_data.get("majority")).intValue());// majority assigner
+            this.minority = ((Number)json_data.get("minority")).intValue();// majority
+            this.majority = ((Number)json_data.get("majority")).intValue();// majority assigner
             this.majorityAssigner = new MajorityAssigner((JSONObject)json_data.get("majority assigner"));// majority writer
             this.majorityWriter = new MajorityWriter((JSONObject)json_data.get("majority writer"));// split on second
             this.splitOnSecond = (Boolean)json_data.get("split on second");

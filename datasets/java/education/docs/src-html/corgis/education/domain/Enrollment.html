@@ -93,11 +93,11 @@
 <span class="sourceLineNo">085</span>         */<a name="line.85"></a>
 <span class="sourceLineNo">086</span>    public Enrollment(JSONObject json_data) {<a name="line.86"></a>
 <span class="sourceLineNo">087</span>        try {// schools<a name="line.87"></a>
-<span class="sourceLineNo">088</span>            this.schools = new Integer(((Long)json_data.get("schools")).intValue());// students<a name="line.88"></a>
+<span class="sourceLineNo">088</span>            this.schools = ((Number)json_data.get("schools")).intValue();// students<a name="line.88"></a>
 <span class="sourceLineNo">089</span>            this.students = new Students((JSONObject)json_data.get("students"));// student teacher ratio<a name="line.89"></a>
-<span class="sourceLineNo">090</span>            this.studentTeacherRatio = (Double)json_data.get("student teacher ratio");// teachers<a name="line.90"></a>
-<span class="sourceLineNo">091</span>            this.teachers = (Double)json_data.get("teachers");// staff<a name="line.91"></a>
-<span class="sourceLineNo">092</span>            this.staff = (Double)json_data.get("staff");<a name="line.92"></a>
+<span class="sourceLineNo">090</span>            this.studentTeacherRatio = ((Number)json_data.get("student teacher ratio")).doubleValue();// teachers<a name="line.90"></a>
+<span class="sourceLineNo">091</span>            this.teachers = ((Number)json_data.get("teachers")).doubleValue();// staff<a name="line.91"></a>
+<span class="sourceLineNo">092</span>            this.staff = ((Number)json_data.get("staff")).doubleValue();<a name="line.92"></a>
 <span class="sourceLineNo">093</span>        } catch (NullPointerException e) {<a name="line.93"></a>
 <span class="sourceLineNo">094</span>                System.err.println("Could not convert the response to a Enrollment; a field was missing.");<a name="line.94"></a>
 <span class="sourceLineNo">095</span>                e.printStackTrace();<a name="line.95"></a>

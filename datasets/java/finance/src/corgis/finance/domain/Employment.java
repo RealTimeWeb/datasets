@@ -94,12 +94,12 @@ public class Employment {
 	 */
     public Employment(JSONObject json_data) {
         try {// Unemployment Comp Total Cash and Securities
-            this.unemploymentCompTotalCashAndSecurities = new Integer(((Long)json_data.get("Unemployment Comp Total Cash and Securities")).intValue());// Employment Security Administration Expenditure Total
-            this.employmentSecurityAdministrationExpenditureTotal = new Integer(((Long)json_data.get("Employment Security Administration Expenditure Total")).intValue());// Employee Retirement Total Cash and Securities
-            this.employeeRetirementTotalCashAndSecurities = new Integer(((Long)json_data.get("Employee Retirement Total Cash and Securities")).intValue());// Employment Security Administration Intergovernmental
-            this.employmentSecurityAdministrationIntergovernmental = new Integer(((Long)json_data.get("Employment Security Administration Intergovernmental")).intValue());// Employee Retirement Total Expenditure
-            this.employeeRetirementTotalExpenditure = new Integer(((Long)json_data.get("Employee Retirement Total Expenditure")).intValue());// Unemployment Comp Total Expenditure
-            this.unemploymentCompTotalExpenditure = new Integer(((Long)json_data.get("Unemployment Comp Total Expenditure")).intValue());
+            this.unemploymentCompTotalCashAndSecurities = ((Number)json_data.get("Unemployment Comp Total Cash and Securities")).intValue();// Employment Security Administration Expenditure Total
+            this.employmentSecurityAdministrationExpenditureTotal = ((Number)json_data.get("Employment Security Administration Expenditure Total")).intValue();// Employee Retirement Total Cash and Securities
+            this.employeeRetirementTotalCashAndSecurities = ((Number)json_data.get("Employee Retirement Total Cash and Securities")).intValue();// Employment Security Administration Intergovernmental
+            this.employmentSecurityAdministrationIntergovernmental = ((Number)json_data.get("Employment Security Administration Intergovernmental")).intValue();// Employee Retirement Total Expenditure
+            this.employeeRetirementTotalExpenditure = ((Number)json_data.get("Employee Retirement Total Expenditure")).intValue();// Unemployment Comp Total Expenditure
+            this.unemploymentCompTotalExpenditure = ((Number)json_data.get("Unemployment Comp Total Expenditure")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Employment; a field was missing.");
     		e.printStackTrace();

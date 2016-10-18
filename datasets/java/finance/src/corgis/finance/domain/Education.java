@@ -174,20 +174,20 @@ public class Education {
 	 */
     public Education(JSONObject json_data) {
         try {// Education-NEC Intergovernmental
-            this.educationNecIntergovernmental = new Integer(((Long)json_data.get("Education-NEC Intergovernmental")).intValue());// Education Equipment
-            this.educationEquipment = new Integer(((Long)json_data.get("Education Equipment")).intValue());// Edcation Assistance and Subsidies
-            this.edcationAssistanceAndSubsidies = new Integer(((Long)json_data.get("Edcation Assistance and Subsidies")).intValue());// Education-NEC Expenditure Total
-            this.educationNecExpenditureTotal = new Integer(((Long)json_data.get("Education-NEC Expenditure Total")).intValue());// Education Total
-            this.educationTotal = new Integer(((Long)json_data.get("Education Total")).intValue());// Elementary Secondary Total Expenditure
-            this.elementarySecondaryTotalExpenditure = new Integer(((Long)json_data.get("Elementary Secondary Total Expenditure")).intValue());// Education Equipment and Land
-            this.educationEquipmentAndLand = new Integer(((Long)json_data.get("Education Equipment and Land")).intValue());// Higher Education-NEC Total Expenditure
-            this.higherEducationNecTotalExpenditure = new Integer(((Long)json_data.get("Higher Education-NEC Total Expenditure")).intValue());// Education Construction
-            this.educationConstruction = new Integer(((Long)json_data.get("Education Construction")).intValue());// Elementary Secondary Intergovernmental
-            this.elementarySecondaryIntergovernmental = new Integer(((Long)json_data.get("Elementary Secondary Intergovernmental")).intValue());// Higher Education-NEC Intergovernmental
-            this.higherEducationNecIntergovernmental = new Integer(((Long)json_data.get("Higher Education-NEC Intergovernmental")).intValue());// Education Intergovernmental
-            this.educationIntergovernmental = new Integer(((Long)json_data.get("Education Intergovernmental")).intValue());// Higher Education-Auxilliary Total Expenditure
-            this.higherEducationAuxilliaryTotalExpenditure = new Integer(((Long)json_data.get("Higher Education-Auxilliary Total Expenditure")).intValue());// Education Other Current Operation
-            this.educationOtherCurrentOperation = new Integer(((Long)json_data.get("Education Other Current Operation")).intValue());
+            this.educationNecIntergovernmental = ((Number)json_data.get("Education-NEC Intergovernmental")).intValue();// Education Equipment
+            this.educationEquipment = ((Number)json_data.get("Education Equipment")).intValue();// Edcation Assistance and Subsidies
+            this.edcationAssistanceAndSubsidies = ((Number)json_data.get("Edcation Assistance and Subsidies")).intValue();// Education-NEC Expenditure Total
+            this.educationNecExpenditureTotal = ((Number)json_data.get("Education-NEC Expenditure Total")).intValue();// Education Total
+            this.educationTotal = ((Number)json_data.get("Education Total")).intValue();// Elementary Secondary Total Expenditure
+            this.elementarySecondaryTotalExpenditure = ((Number)json_data.get("Elementary Secondary Total Expenditure")).intValue();// Education Equipment and Land
+            this.educationEquipmentAndLand = ((Number)json_data.get("Education Equipment and Land")).intValue();// Higher Education-NEC Total Expenditure
+            this.higherEducationNecTotalExpenditure = ((Number)json_data.get("Higher Education-NEC Total Expenditure")).intValue();// Education Construction
+            this.educationConstruction = ((Number)json_data.get("Education Construction")).intValue();// Elementary Secondary Intergovernmental
+            this.elementarySecondaryIntergovernmental = ((Number)json_data.get("Elementary Secondary Intergovernmental")).intValue();// Higher Education-NEC Intergovernmental
+            this.higherEducationNecIntergovernmental = ((Number)json_data.get("Higher Education-NEC Intergovernmental")).intValue();// Education Intergovernmental
+            this.educationIntergovernmental = ((Number)json_data.get("Education Intergovernmental")).intValue();// Higher Education-Auxilliary Total Expenditure
+            this.higherEducationAuxilliaryTotalExpenditure = ((Number)json_data.get("Higher Education-Auxilliary Total Expenditure")).intValue();// Education Other Current Operation
+            this.educationOtherCurrentOperation = ((Number)json_data.get("Education Other Current Operation")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Education; a field was missing.");
     		e.printStackTrace();

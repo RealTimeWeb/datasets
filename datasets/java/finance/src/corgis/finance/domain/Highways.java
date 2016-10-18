@@ -114,14 +114,14 @@ public class Highways {
 	 */
     public Highways(JSONObject json_data) {
         try {// Regular Highways Intergovernmental
-            this.regularHighwaysIntergovernmental = new Integer(((Long)json_data.get("Regular Highways Intergovernmental")).intValue());// Toll Highways Total Expenditure
-            this.tollHighwaysTotalExpenditure = new Integer(((Long)json_data.get("Toll Highways Total Expenditure")).intValue());// Highways Direct
-            this.highwaysDirect = new Integer(((Long)json_data.get("Highways Direct")).intValue());// Highways Intergovernmental
-            this.highwaysIntergovernmental = new Integer(((Long)json_data.get("Highways Intergovernmental")).intValue());// Highways Total Expenditure
-            this.highwaysTotalExpenditure = new Integer(((Long)json_data.get("Highways Total Expenditure")).intValue());// Highways Land and Equipment
-            this.highwaysLandAndEquipment = new Integer(((Long)json_data.get("Highways Land and Equipment")).intValue());// Highways Construction Total
-            this.highwaysConstructionTotal = new Integer(((Long)json_data.get("Highways Construction Total")).intValue());// Regular Highways Total Expenditure
-            this.regularHighwaysTotalExpenditure = new Integer(((Long)json_data.get("Regular Highways Total Expenditure")).intValue());
+            this.regularHighwaysIntergovernmental = ((Number)json_data.get("Regular Highways Intergovernmental")).intValue();// Toll Highways Total Expenditure
+            this.tollHighwaysTotalExpenditure = ((Number)json_data.get("Toll Highways Total Expenditure")).intValue();// Highways Direct
+            this.highwaysDirect = ((Number)json_data.get("Highways Direct")).intValue();// Highways Intergovernmental
+            this.highwaysIntergovernmental = ((Number)json_data.get("Highways Intergovernmental")).intValue();// Highways Total Expenditure
+            this.highwaysTotalExpenditure = ((Number)json_data.get("Highways Total Expenditure")).intValue();// Highways Land and Equipment
+            this.highwaysLandAndEquipment = ((Number)json_data.get("Highways Land and Equipment")).intValue();// Highways Construction Total
+            this.highwaysConstructionTotal = ((Number)json_data.get("Highways Construction Total")).intValue();// Regular Highways Total Expenditure
+            this.regularHighwaysTotalExpenditure = ((Number)json_data.get("Regular Highways Total Expenditure")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Highways; a field was missing.");
     		e.printStackTrace();

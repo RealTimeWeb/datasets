@@ -105,8 +105,8 @@
 <span class="sourceLineNo">097</span>    public Voting(JSONObject json_data) {<a name="line.97"></a>
 <span class="sourceLineNo">098</span>        try {// unclear<a name="line.98"></a>
 <span class="sourceLineNo">099</span>            this.unclear = (Boolean)json_data.get("unclear");// minority<a name="line.99"></a>
-<span class="sourceLineNo">100</span>            this.minority = new Integer(((Long)json_data.get("minority")).intValue());// majority<a name="line.100"></a>
-<span class="sourceLineNo">101</span>            this.majority = new Integer(((Long)json_data.get("majority")).intValue());// majority assigner<a name="line.101"></a>
+<span class="sourceLineNo">100</span>            this.minority = ((Number)json_data.get("minority")).intValue();// majority<a name="line.100"></a>
+<span class="sourceLineNo">101</span>            this.majority = ((Number)json_data.get("majority")).intValue();// majority assigner<a name="line.101"></a>
 <span class="sourceLineNo">102</span>            this.majorityAssigner = new MajorityAssigner((JSONObject)json_data.get("majority assigner"));// majority writer<a name="line.102"></a>
 <span class="sourceLineNo">103</span>            this.majorityWriter = new MajorityWriter((JSONObject)json_data.get("majority writer"));// split on second<a name="line.103"></a>
 <span class="sourceLineNo">104</span>            this.splitOnSecond = (Boolean)json_data.get("split on second");<a name="line.104"></a>

@@ -65,9 +65,9 @@ public class Result {
 	 */
     public Result(JSONObject json_data) {
         try {// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());// data
+            this.year = ((Number)json_data.get("year")).intValue();// data
             this.data = new Data((JSONObject)json_data.get("data"));// month
-            this.month = new Integer(((Long)json_data.get("month")).intValue());
+            this.month = ((Number)json_data.get("month")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Result; a field was missing.");
     		e.printStackTrace();

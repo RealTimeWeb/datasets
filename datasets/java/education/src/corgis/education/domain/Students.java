@@ -89,7 +89,7 @@ public class Students {
     public Students(JSONObject json_data) {
         try {// gender
             this.gender = new Gender((JSONObject)json_data.get("gender"));// all
-            this.all = new Integer(((Long)json_data.get("all")).intValue());// race
+            this.all = ((Number)json_data.get("all")).intValue();// race
             this.race = new Race((JSONObject)json_data.get("race"));// other
             this.other = new Other((JSONObject)json_data.get("other"));// year
             this.year = new ArrayList<Integer>();

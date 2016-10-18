@@ -99,7 +99,7 @@ public class EngineInformation {
             this.engineType = (String)json_data.get("Engine Type");// Engine Statistics
             this.engineStatistics = new EngineStatistics((JSONObject)json_data.get("Engine Statistics"));// Hybrid
             this.hybrid = (Boolean)json_data.get("Hybrid");// Number of Forward Gears
-            this.numberOfForwardGears = new Integer(((Long)json_data.get("Number of Forward Gears")).intValue());// Driveline
+            this.numberOfForwardGears = ((Number)json_data.get("Number of Forward Gears")).intValue();// Driveline
             this.driveline = (String)json_data.get("Driveline");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a EngineInformation; a field was missing.");

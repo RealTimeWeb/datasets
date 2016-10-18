@@ -68,7 +68,7 @@ public class ImmigrationLibrary {
     
     
     /**
-     * Returns data about immigration from all the years and states.
+     * Returns data about immigration from all the years and countries.
     
      * @return a list[record]
      */

@@ -78,10 +78,10 @@ public class Property {
 	 */
     public Property(JSONObject json_data) {
         try {// Burglary
-            this.burglary = new Integer(((Long)json_data.get("Burglary")).intValue());// Larceny
-            this.larceny = new Integer(((Long)json_data.get("Larceny")).intValue());// All
-            this.all = new Integer(((Long)json_data.get("All")).intValue());// Motor
-            this.motor = new Integer(((Long)json_data.get("Motor")).intValue());
+            this.burglary = ((Number)json_data.get("Burglary")).intValue();// Larceny
+            this.larceny = ((Number)json_data.get("Larceny")).intValue();// All
+            this.all = ((Number)json_data.get("All")).intValue();// Motor
+            this.motor = ((Number)json_data.get("Motor")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Property; a field was missing.");
     		e.printStackTrace();

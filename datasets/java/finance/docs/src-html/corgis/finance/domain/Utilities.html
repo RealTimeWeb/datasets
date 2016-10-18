@@ -132,15 +132,15 @@
 <span class="sourceLineNo">124</span>         */<a name="line.124"></a>
 <span class="sourceLineNo">125</span>    public Utilities(JSONObject json_data) {<a name="line.125"></a>
 <span class="sourceLineNo">126</span>        try {// Water Utility Total Expenditure<a name="line.126"></a>
-<span class="sourceLineNo">127</span>            this.waterUtilityTotalExpenditure = new Integer(((Long)json_data.get("Water Utility Total Expenditure")).intValue());// Gas Utility Total Expenditure<a name="line.127"></a>
-<span class="sourceLineNo">128</span>            this.gasUtilityTotalExpenditure = new Integer(((Long)json_data.get("Gas Utility Total Expenditure")).intValue());// Utilities Current Operation<a name="line.128"></a>
-<span class="sourceLineNo">129</span>            this.utilitiesCurrentOperation = new Integer(((Long)json_data.get("Utilities Current Operation")).intValue());// Utilities Total Expenditure<a name="line.129"></a>
-<span class="sourceLineNo">130</span>            this.utilitiesTotalExpenditure = new Integer(((Long)json_data.get("Utilities Total Expenditure")).intValue());// Utilities Equipment and Land<a name="line.130"></a>
-<span class="sourceLineNo">131</span>            this.utilitiesEquipmentAndLand = new Integer(((Long)json_data.get("Utilities Equipment and Land")).intValue());// Utilities Construction<a name="line.131"></a>
-<span class="sourceLineNo">132</span>            this.utilitiesConstruction = new Integer(((Long)json_data.get("Utilities Construction")).intValue());// Utilities Interest Total<a name="line.132"></a>
-<span class="sourceLineNo">133</span>            this.utilitiesInterestTotal = new Integer(((Long)json_data.get("Utilities Interest Total")).intValue());// Transit Utility Total Expenditure<a name="line.133"></a>
-<span class="sourceLineNo">134</span>            this.transitUtilityTotalExpenditure = new Integer(((Long)json_data.get("Transit Utility Total Expenditure")).intValue());// Electric Utility Total Expenditure<a name="line.134"></a>
-<span class="sourceLineNo">135</span>            this.electricUtilityTotalExpenditure = new Integer(((Long)json_data.get("Electric Utility Total Expenditure")).intValue());<a name="line.135"></a>
+<span class="sourceLineNo">127</span>            this.waterUtilityTotalExpenditure = ((Number)json_data.get("Water Utility Total Expenditure")).intValue();// Gas Utility Total Expenditure<a name="line.127"></a>
+<span class="sourceLineNo">128</span>            this.gasUtilityTotalExpenditure = ((Number)json_data.get("Gas Utility Total Expenditure")).intValue();// Utilities Current Operation<a name="line.128"></a>
+<span class="sourceLineNo">129</span>            this.utilitiesCurrentOperation = ((Number)json_data.get("Utilities Current Operation")).intValue();// Utilities Total Expenditure<a name="line.129"></a>
+<span class="sourceLineNo">130</span>            this.utilitiesTotalExpenditure = ((Number)json_data.get("Utilities Total Expenditure")).intValue();// Utilities Equipment and Land<a name="line.130"></a>
+<span class="sourceLineNo">131</span>            this.utilitiesEquipmentAndLand = ((Number)json_data.get("Utilities Equipment and Land")).intValue();// Utilities Construction<a name="line.131"></a>
+<span class="sourceLineNo">132</span>            this.utilitiesConstruction = ((Number)json_data.get("Utilities Construction")).intValue();// Utilities Interest Total<a name="line.132"></a>
+<span class="sourceLineNo">133</span>            this.utilitiesInterestTotal = ((Number)json_data.get("Utilities Interest Total")).intValue();// Transit Utility Total Expenditure<a name="line.133"></a>
+<span class="sourceLineNo">134</span>            this.transitUtilityTotalExpenditure = ((Number)json_data.get("Transit Utility Total Expenditure")).intValue();// Electric Utility Total Expenditure<a name="line.134"></a>
+<span class="sourceLineNo">135</span>            this.electricUtilityTotalExpenditure = ((Number)json_data.get("Electric Utility Total Expenditure")).intValue();<a name="line.135"></a>
 <span class="sourceLineNo">136</span>        } catch (NullPointerException e) {<a name="line.136"></a>
 <span class="sourceLineNo">137</span>                System.err.println("Could not convert the response to a Utilities; a field was missing.");<a name="line.137"></a>
 <span class="sourceLineNo">138</span>                e.printStackTrace();<a name="line.138"></a>

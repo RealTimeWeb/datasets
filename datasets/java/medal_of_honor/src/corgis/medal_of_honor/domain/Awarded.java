@@ -20,7 +20,7 @@ public class Awarded {
 	
     private String issued;
     private String citation;
-    private Integer gONumber;
+    private Integer generalOrderNumber;
     private String accreditedTo;
     private Location location;
     private Date date;
@@ -47,8 +47,8 @@ public class Awarded {
     /*
      * @return 
      */
-    public Integer getGONumber() {
-        return this.gONumber;
+    public Integer getGeneralOrderNumber() {
+        return this.generalOrderNumber;
     }
     
     
@@ -87,7 +87,7 @@ public class Awarded {
 	 * @return String
 	 */
 	public String toString() {
-		return "Awarded[" +issued+", "+citation+", "+gONumber+", "+accreditedTo+", "+location+", "+date+"]";
+		return "Awarded[" +issued+", "+citation+", "+generalOrderNumber+", "+accreditedTo+", "+location+", "+date+"]";
 	}
 	
 	/**
@@ -97,8 +97,8 @@ public class Awarded {
     public Awarded(JSONObject json_data) {
         try {// issued
             this.issued = (String)json_data.get("issued");// citation
-            this.citation = (String)json_data.get("citation");// g.o. number
-            this.gONumber = new Integer(((Long)((JSONObject) ((JSONObject) json_data.get("g")).get("o")).get(" number")).intValue());// accredited to
+            this.citation = (String)json_data.get("citation");// General Order number
+            this.generalOrderNumber = ((Number)json_data.get("General Order number")).intValue();// accredited to
             this.accreditedTo = (String)json_data.get("accredited to");// location
             this.location = new Location((JSONObject)json_data.get("location"));// date
             this.date = new Date((JSONObject)json_data.get("date"));

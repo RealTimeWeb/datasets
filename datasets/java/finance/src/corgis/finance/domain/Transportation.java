@@ -98,9 +98,9 @@ public class Transportation {
 	 */
     public Transportation(JSONObject json_data) {
         try {// Transit Subsidy Intergovernmental
-            this.transitSubsidyIntergovernmental = new Integer(((Long)json_data.get("Transit Subsidy Intergovernmental")).intValue());// Airports
+            this.transitSubsidyIntergovernmental = ((Number)json_data.get("Transit Subsidy Intergovernmental")).intValue();// Airports
             this.airports = new Airports((JSONObject)json_data.get("Airports"));// Transit Subsidy Total Expenditure
-            this.transitSubsidyTotalExpenditure = new Integer(((Long)json_data.get("Transit Subsidy Total Expenditure")).intValue());// Highways
+            this.transitSubsidyTotalExpenditure = ((Number)json_data.get("Transit Subsidy Total Expenditure")).intValue();// Highways
             this.highways = new Highways((JSONObject)json_data.get("Highways"));// Water Transport
             this.waterTransport = new WaterTransport((JSONObject)json_data.get("Water Transport"));// Parking
             this.parking = new Parking((JSONObject)json_data.get("Parking"));

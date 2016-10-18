@@ -115,13 +115,13 @@ public class Data {
     public Data(JSONObject json_data) {
         try {// Count
             this.count = ((Number)json_data.get("Count")).intValue();// Crude Rate
-            this.crudeRate = (Double)json_data.get("Crude Rate");// Crude CI Upper
-            this.crudeCiUpper = (Double)json_data.get("Crude CI Upper");// Crude CI Lower
-            this.crudeCiLower = (Double)json_data.get("Crude CI Lower");// Sex
+            this.crudeRate = ((Number)json_data.get("Crude Rate")).doubleValue();// Crude CI Upper
+            this.crudeCiUpper = ((Number)json_data.get("Crude CI Upper")).doubleValue();// Crude CI Lower
+            this.crudeCiLower = ((Number)json_data.get("Crude CI Lower")).doubleValue();// Sex
             this.sex = (String)json_data.get("Sex");// Race
             this.race = (String)json_data.get("Race");// Event Type
             this.eventType = (String)json_data.get("Event Type");// Population
-            this.population = new Integer(((Long)json_data.get("Population")).intValue());
+            this.population = ((Number)json_data.get("Population")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Data; a field was missing.");
     		e.printStackTrace();

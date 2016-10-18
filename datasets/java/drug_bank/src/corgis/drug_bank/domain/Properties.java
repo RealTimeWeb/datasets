@@ -18,15 +18,15 @@ public class Properties {
 	
     private String waterSolubility;
     private Double isoelectricPoint;
-    private String logp;
-    private String cacotwoPermeability;
+    private Integer logp;
+    private Integer cacotwoPermeability;
     private String logs;
-    private String pka;
-    private String boilingPoint;
+    private Integer pka;
+    private Integer boilingPoint;
     private Double hydrophobicity;
     private String molecularFormula;
-    private String molecularWeight;
-    private String meltingPoint;
+    private Double molecularWeight;
+    private Double meltingPoint;
     
     
     /*
@@ -50,7 +50,7 @@ public class Properties {
     /*
      * @return 
      */
-    public String getLogp() {
+    public Integer getLogp() {
         return this.logp;
     }
     
@@ -59,7 +59,7 @@ public class Properties {
     /*
      * @return 
      */
-    public String getCacotwoPermeability() {
+    public Integer getCacotwoPermeability() {
         return this.cacotwoPermeability;
     }
     
@@ -77,7 +77,7 @@ public class Properties {
     /*
      * @return 
      */
-    public String getPka() {
+    public Integer getPka() {
         return this.pka;
     }
     
@@ -86,7 +86,7 @@ public class Properties {
     /*
      * @return 
      */
-    public String getBoilingPoint() {
+    public Integer getBoilingPoint() {
         return this.boilingPoint;
     }
     
@@ -113,7 +113,7 @@ public class Properties {
     /*
      * @return 
      */
-    public String getMolecularWeight() {
+    public Double getMolecularWeight() {
         return this.molecularWeight;
     }
     
@@ -122,7 +122,7 @@ public class Properties {
     /*
      * @return 
      */
-    public String getMeltingPoint() {
+    public Double getMeltingPoint() {
         return this.meltingPoint;
     }
     
@@ -145,16 +145,16 @@ public class Properties {
     public Properties(JSONObject json_data) {
         try {// water solubility
             this.waterSolubility = (String)json_data.get("water solubility");// isoelectric point
-            this.isoelectricPoint = (Double)json_data.get("isoelectric point");// logp
-            this.logp = (String)json_data.get("logp");// caco2 permeability
-            this.cacotwoPermeability = (String)json_data.get("caco2 permeability");// logs
+            this.isoelectricPoint = ((Number)json_data.get("isoelectric point")).doubleValue();// logp
+            this.logp = ((Number)json_data.get("logp")).intValue();// caco2 permeability
+            this.cacotwoPermeability = ((Number)json_data.get("caco2 permeability")).intValue();// logs
             this.logs = (String)json_data.get("logs");// pka
-            this.pka = (String)json_data.get("pka");// boiling point
-            this.boilingPoint = (String)json_data.get("boiling point");// hydrophobicity
-            this.hydrophobicity = (Double)json_data.get("hydrophobicity");// molecular formula
+            this.pka = ((Number)json_data.get("pka")).intValue();// boiling point
+            this.boilingPoint = ((Number)json_data.get("boiling point")).intValue();// hydrophobicity
+            this.hydrophobicity = ((Number)json_data.get("hydrophobicity")).doubleValue();// molecular formula
             this.molecularFormula = (String)json_data.get("molecular formula");// molecular weight
-            this.molecularWeight = (String)json_data.get("molecular weight");// melting point
-            this.meltingPoint = (String)json_data.get("melting point");
+            this.molecularWeight = ((Number)json_data.get("molecular weight")).doubleValue();// melting point
+            this.meltingPoint = ((Number)json_data.get("melting point")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Properties; a field was missing.");
     		e.printStackTrace();

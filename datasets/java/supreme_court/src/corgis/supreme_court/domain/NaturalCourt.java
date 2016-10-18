@@ -89,8 +89,8 @@ public class NaturalCourt {
             this.start = new Start((JSONObject)json_data.get("start"));// chief
             this.chief = (String)json_data.get("chief");// end
             this.end = new End((JSONObject)json_data.get("end"));// period
-            this.period = new Integer(((Long)json_data.get("period")).intValue());// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());
+            this.period = ((Number)json_data.get("period")).intValue();// id
+            this.id = ((Number)json_data.get("id")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a NaturalCourt; a field was missing.");
     		e.printStackTrace();

@@ -54,7 +54,7 @@ public class Disposition {
 	 */
     public Disposition(JSONObject json_data) {
         try {// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());// disposition
+            this.id = ((Number)json_data.get("id")).intValue();// disposition
             this.disposition = (String)json_data.get("disposition");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Disposition; a field was missing.");

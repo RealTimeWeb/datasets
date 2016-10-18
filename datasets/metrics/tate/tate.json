@@ -2,6 +2,7 @@
   "tate": {
     "dicts": {
       "count": 7, 
+      "inconsistent": {}, 
       "average branching factor": 3
     }, 
     "tags": [
@@ -13,10 +14,11 @@
     "atomics": {
       "count": 18, 
       "nones": 0, 
+      "ints": 5, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 4, 
-      "strings": 11, 
+      "unknown": 0, 
+      "strings": 10, 
       "floats": 3
     }, 
     "lists": {
@@ -27,10 +29,11 @@
     "heights": 4, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 3332, 
     "locals": 0, 
-    "size": 2068403
+    "size": 2093646
   }
 }
