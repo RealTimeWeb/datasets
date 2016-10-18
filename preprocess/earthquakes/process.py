@@ -21,12 +21,12 @@ for quake in reports['earthquakes']:
     if quake['magnitude'] > 0:
         new_reports.append({
             'location': {
-                'name': state,
-                'full': quake['location_description'],
-                'latitude': quake['location']['latitude'],
-                'longitude': quake['location']['longitude'],
-                'depth': quake['location']['depth'],
-                'distance': quake['distance']
+                'name': state.strip(),
+                'full': quake['location_description'].strip(),
+                'latitude': quake['location']['latitude'].strip(),
+                'longitude': quake['location']['longitude'].strip(),
+                'depth': quake['location']['depth'].strip(),
+                'distance': quake['distance'].strip()
             },
             'id': quake['id'],
             'time': {

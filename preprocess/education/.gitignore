@@ -1,0 +1,6 @@
+*.csv
+*.json
+*.txt
+*.pdf
+*.zip
+pdfs/*.pdf
