@@ -36,20 +36,6 @@ Skyscrapers JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -114,12 +100,362 @@ Collected statistics about the tallest buildings all over the world, including t
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].purposes.bridge</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.industrial</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.office</td>
+        <td>bool</td> 
+        <td></td>
+        <td>True</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.library</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.education</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.religious</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.telecommunications</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.belltower</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.residential</td>
+        <td>bool</td> 
+        <td></td>
+        <td>True</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.hospital</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.other</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.exhibition</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.serviced apartments</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.multiple</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.government</td>
+        <td>bool</td> 
+        <td></td>
+        <td>True</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.hotel</td>
+        <td>bool</td> 
+        <td></td>
+        <td>True</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.commercial</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.abandoned</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.observation</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.air traffic control tower</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.casino</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.retail</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes.museum</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].statistics.number of purposes</td>
+        <td>int</td> 
+        <td></td>
+        <td>4</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.floors above</td>
+        <td>int</td> 
+        <td></td>
+        <td>528</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.rank</td>
+        <td>int</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.height</td>
+        <td>float</td> 
+        <td></td>
+        <td>1609.35998535</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].location.city</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Chicago</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.city_id</td>
+        <td>int</td> 
+        <td></td>
+        <td>1539</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.country</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>US</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.country id</td>
+        <td>int</td> 
+        <td></td>
+        <td>163</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.longitude</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.latitude</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].status</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'current': u'vision', u'started': {u'is started': False, u'year': 0}, u'completed': {u'year': 0, u'is completed': False}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'number of purposes': 4, u'floors above': 528, u'rank': 1, u'height': 1609.3599853516}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>The Illinois</td>
+    </tr>
+    
+    <tr>
+        <td>[0].material</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>steel</td>
+    </tr>
+    
+    <tr>
+        <td>[0].purposes</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'bridge': False, u'industrial': False, u'office': True, u'library': False, u'education': False, u'religious': False, u'telecommunications': False, u'belltower': False, u'residential': True, u'hospital': False, u'other': False, u'exhibition': False, u'serviced apartments': False, u'multiple': False, u'government': True, u'hotel': True, u'commercial': False, u'observation': False, u'abandoned': False, u'air traffic control tower': False, u'casino': False, u'retail': False, u'museum': False}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'city': u'Chicago', u'city_id': 1539, u'country': u'US', u'country id': 163, u'longitude': 0, u'latitude': 0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].id</td>
+        <td>int</td> 
+        <td></td>
+        <td>12</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].status.started.is started</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].status.started.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].status.completed.is completed</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].status.completed.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].status.current</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>vision</td>
+    </tr>
+    
+    <tr>
+        <td>[0].status.started</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'is started': False, u'year': 0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].status.completed</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'year': 0, u'is completed': False}</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

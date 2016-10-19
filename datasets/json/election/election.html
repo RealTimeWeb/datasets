@@ -44,12 +44,540 @@ Data about the results was collected from CNN's 2016 election center.  Each coun
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Location.County</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Abbeville</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Location.State</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>South Carolina</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Location.State Abbreviation</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>SC</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Ted Cruz.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Republican</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Ted Cruz.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>876</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Ted Cruz.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>23.9</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Hillary Clinton.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Democrat</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Hillary Clinton.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>1501</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Hillary Clinton.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>81.8</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Location</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'County': u'Abbeville', u'State': u'South Carolina', u'State Abbreviation': u'SC'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Rand Paul': {u'Party': u'Republican', u'Number of Votes': 0, u'Percent of Votes': 0.0}, u'Rick Santorum': {u'Party': u'Republican', u'Number of Votes': 0, u'Percent of Votes': 0.0}, u"Martin O'Malley": {u'Party': u'Democrat', u'Number of Votes': 0, u'Percent of Votes': 0.0}, u'No Preference': {u'Party': u'N/A', u'Number of Votes': 0, u'Percent of Votes': 0.0}, u'Chris Christie': {u'Party': u'Republican', u'Number of Votes': 0, u'Percent of Votes': 0.0}, u'Jeb Bush': {u'Party': u'Republican', u'Number of Votes': 236, u'Percent of Votes': 6.4}, u'Hillary Clinton': {u'Party': u'Democrat', u'Number of Votes': 1501, u'Percent of Votes': 81.8}, u'John Kasich': {u'Party': u'Republican', u'Number of Votes': 157, u'Percent of Votes': 4.3}, u'Donald Trump': {u'Party': u'Republican', u'Number of Votes': 1353, u'Percent of Votes': 36.9}, u'Uncommitted': {u'Party': u'N/A', u'Number of Votes': 0, u'Percent of Votes': 0.0}, u'Mike Huckabee': {u'Party': u'Republican', u'Number of Votes': 0, u'Percent of Votes': 0.0}, u'Marco Rubio': {u'Party': u'Republican', u'Number of Votes': 740, u'Percent of Votes': 20.200000000000003}, u'Bernie Sanders': {u'Party': u'Democrat', u'Number of Votes': 312, u'Percent of Votes': 17.0}, u'Carly Fiorina': {u'Party': u'Republican', u'Number of Votes': 0, u'Percent of Votes': 0.0}, u'Ben Carson': {u'Party': u'Republican', u'Number of Votes': 305, u'Percent of Votes': 8.3}, u'Ted Cruz': {u'Party': u'Republican', u'Number of Votes': 876, u'Percent of Votes': 23.9}}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Donald Trump.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Republican</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Donald Trump.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>1353</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Donald Trump.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>36.9</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Rick Santorum.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Republican</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Rick Santorum.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Rick Santorum.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Uncommitted.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>N/A</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Uncommitted.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Uncommitted.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Mike Huckabee.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Republican</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Mike Huckabee.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Mike Huckabee.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.No Preference.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>N/A</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.No Preference.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.No Preference.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Marco Rubio.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Republican</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Marco Rubio.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>740</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Marco Rubio.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>20.2</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Chris Christie.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Republican</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Chris Christie.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Chris Christie.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Rand Paul</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Republican', u'Number of Votes': 0, u'Percent of Votes': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Rick Santorum</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Republican', u'Number of Votes': 0, u'Percent of Votes': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Martin O'Malley</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Democrat', u'Number of Votes': 0, u'Percent of Votes': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.No Preference</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'N/A', u'Number of Votes': 0, u'Percent of Votes': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Chris Christie</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Republican', u'Number of Votes': 0, u'Percent of Votes': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Jeb Bush</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Republican', u'Number of Votes': 236, u'Percent of Votes': 6.4}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Hillary Clinton</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Democrat', u'Number of Votes': 1501, u'Percent of Votes': 81.8}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.John Kasich</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Republican', u'Number of Votes': 157, u'Percent of Votes': 4.3}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Donald Trump</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Republican', u'Number of Votes': 1353, u'Percent of Votes': 36.9}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Uncommitted</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'N/A', u'Number of Votes': 0, u'Percent of Votes': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Mike Huckabee</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Republican', u'Number of Votes': 0, u'Percent of Votes': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Marco Rubio</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Republican', u'Number of Votes': 740, u'Percent of Votes': 20.200000000000003}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Bernie Sanders</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Democrat', u'Number of Votes': 312, u'Percent of Votes': 17.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Carly Fiorina</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Republican', u'Number of Votes': 0, u'Percent of Votes': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Ben Carson</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Republican', u'Number of Votes': 305, u'Percent of Votes': 8.3}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Ted Cruz</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Party': u'Republican', u'Number of Votes': 876, u'Percent of Votes': 23.9}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Carly Fiorina.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Republican</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Carly Fiorina.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Carly Fiorina.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Jeb Bush.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Republican</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Jeb Bush.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>236</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Jeb Bush.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>6.4</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Bernie Sanders.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Democrat</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Bernie Sanders.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>312</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Bernie Sanders.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>17.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Martin O'Malley.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Democrat</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Martin O'Malley.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Martin O'Malley.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.John Kasich.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Republican</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.John Kasich.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>157</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.John Kasich.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>4.3</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Rand Paul.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Republican</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Rand Paul.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Rand Paul.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Vote Data.Ben Carson.Party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Republican</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Ben Carson.Number of Votes</td>
+        <td>int</td> 
+        <td></td>
+        <td>305</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Vote Data.Ben Carson.Percent of Votes</td>
+        <td>float</td> 
+        <td></td>
+        <td>8.3</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

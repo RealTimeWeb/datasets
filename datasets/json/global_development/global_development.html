@@ -44,12 +44,241 @@ The following data contains records collected on different countries and geograp
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Country</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Canada</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Infrastructure': {u'Telephone Lines': 9595000.0, u'Mobile Cellular Subscriptions': 0.0, u'Telephone Lines per 100 People': 39.5623509247736, u'Mobile Cellular Subscriptions per 100 People': 0.0}, u'Health': {u'Life Expectancy at Birth, Total': 74.8663414634146, u'Total Population': 24277000.0, u'Life Expectancy at Birth, Male': 71.32, u'Population Growth': 0.997669360128831, u'Life Expectancy at Birth, Female': 78.59, u'Birth Rate': 15.4, u'Death Rate': 7.0, u'Fertility Rate': 1.754}, u'Rural Development': {u'Arable Land Percent': 4.8797439052687, u'Arable Land': 1.82782057091074, u'Rural Population': 5918004.0, u'Agricultural Land Percent': 7.35722509789949, u'Rural Population Growth': 0.833711883207287, u'Surface Area': 9984670.0, u'Agricultural Land': 669030.0, u'Land Area': 9093510.0}, u'Urban Development': {u'Urban Population': 75.623, u'Population Density': 2.66970619705702, u'Urban Population Growth': 1.05057823382459}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1980</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Urban Development.Urban Population</td>
+        <td>float</td> 
+        <td>Percent of total</td>
+        <td>75.623</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Urban Development.Population Density</td>
+        <td>float</td> 
+        <td>People per square kilometer of land area</td>
+        <td>2.66970619706</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Urban Development.Urban Population Growth</td>
+        <td>float</td> 
+        <td>Annual percent</td>
+        <td>1.05057823382</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Rural Development.Surface Area</td>
+        <td>float</td> 
+        <td>Square kilometers</td>
+        <td>9984670.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rural Development.Arable Land</td>
+        <td>float</td> 
+        <td>Hectacres per person</td>
+        <td>1.82782057091</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rural Development.Rural Population</td>
+        <td>float</td> 
+        <td>Percent of total population</td>
+        <td>5918004.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rural Development.Agricultural Land Percent</td>
+        <td>float</td> 
+        <td>Percent of land area</td>
+        <td>7.3572250979</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rural Development.Rural Population Growth</td>
+        <td>float</td> 
+        <td>Annual Percent</td>
+        <td>0.833711883207</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rural Development.Arable Land Percent</td>
+        <td>float</td> 
+        <td>Percent of land area</td>
+        <td>4.87974390527</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rural Development.Agricultural Land</td>
+        <td>float</td> 
+        <td>Square kilometers</td>
+        <td>669030.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rural Development.Land Area</td>
+        <td>float</td> 
+        <td>Square kilometers</td>
+        <td>9093510.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Health.Life Expectancy at Birth, Total</td>
+        <td>float</td> 
+        <td>Years</td>
+        <td>74.8663414634</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Health.Total Population</td>
+        <td>float</td> 
+        <td></td>
+        <td>24277000.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Health.Life Expectancy at Birth, Male</td>
+        <td>float</td> 
+        <td>Years</td>
+        <td>71.32</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Health.Population Growth</td>
+        <td>float</td> 
+        <td>Annual Percent</td>
+        <td>0.997669360129</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Health.Life Expectancy at Birth, Female</td>
+        <td>float</td> 
+        <td>Years</td>
+        <td>78.59</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Health.Birth Rate</td>
+        <td>float</td> 
+        <td>Crude, per 1000 People</td>
+        <td>15.4</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Health.Death Rate</td>
+        <td>float</td> 
+        <td>Crude, per 100 People</td>
+        <td>7.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Health.Fertility Rate</td>
+        <td>float</td> 
+        <td>Total, Births per woman</td>
+        <td>1.754</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Infrastructure</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Telephone Lines': 9595000.0, u'Mobile Cellular Subscriptions': 0.0, u'Telephone Lines per 100 People': 39.5623509247736, u'Mobile Cellular Subscriptions per 100 People': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Health</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Life Expectancy at Birth, Total': 74.8663414634146, u'Total Population': 24277000.0, u'Life Expectancy at Birth, Male': 71.32, u'Population Growth': 0.997669360128831, u'Life Expectancy at Birth, Female': 78.59, u'Birth Rate': 15.4, u'Death Rate': 7.0, u'Fertility Rate': 1.754}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Urban Development</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Urban Population': 75.623, u'Population Density': 2.66970619705702, u'Urban Population Growth': 1.05057823382459}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rural Development</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Arable Land Percent': 4.8797439052687, u'Arable Land': 1.82782057091074, u'Rural Population': 5918004.0, u'Agricultural Land Percent': 7.35722509789949, u'Rural Population Growth': 0.833711883207287, u'Surface Area': 9984670.0, u'Agricultural Land': 669030.0, u'Land Area': 9093510.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Infrastructure.Telephone Lines</td>
+        <td>float</td> 
+        <td></td>
+        <td>9595000.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Infrastructure.Mobile Cellular Subscriptions per 100 People</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Infrastructure.Telephone Lines per 100 People</td>
+        <td>float</td> 
+        <td></td>
+        <td>39.5623509248</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Infrastructure.Mobile Cellular Subscriptions</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

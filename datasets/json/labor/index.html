@@ -36,20 +36,6 @@ Labor JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -114,12 +100,1292 @@ The Current Population Survey (CPS) is a monthly survey of households conducted 
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force.Black or African American.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force.Black or African American.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>8334.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployment rate.White.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate.White.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>5.9</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.White</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Percent or rate', u'value': 56.1}, u'Men': {u'units': u'Percent or rate', u'value': 77.7}, u'Women': {u'units': u'Percent or rate', u'value': 40.5}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.Black or African American</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Percent or rate', u'value': 51.4}, u'Men': {u'units': u'Percent or rate', u'value': 69.3}, u'Women': {u'units': u'Percent or rate', u'value': 45.9}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.Asian</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force.White.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 75608.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force.White.Men</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 43514.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force.White.Women</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 25728.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployment rate.White.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 5.9}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate.White.Men</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 4.8}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate.White.Women</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 5.1}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployed.Black or African American.Men.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed.Black or African American.Men.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>378.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployment rate.Black or African American.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate.Black or African American.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>11.6</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian noninstitutional population.White</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Number in thousands', u'value': 126749.0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian noninstitutional population.Black or African American</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Number in thousands', u'value': 14332.0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian noninstitutional population.Asian</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.White</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Percent or rate', u'value': 59.7}, u'Men': {u'units': u'Percent or rate', u'value': 81.7}, u'Women': {u'units': u'Percent or rate', u'value': 42.7}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.Black or African American</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Percent or rate', u'value': 58.1}, u'Men': {u'units': u'Percent or rate', u'value': 76.2}, u'Women': {u'units': u'Percent or rate', u'value': 50.9}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.Asian</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employed.Black or African American.Women.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed.Black or African American.Women.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>3156.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployed.White.Men.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed.White.Men.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>2096.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.Asian.All</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.Black or African American.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.Black or African American.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>51.4</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployed.White.Women.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed.White.Women.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>1325.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.Black or African American.Women.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.Black or African American.Women.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>50.9</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployment rate.White.Women.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate.White.Women.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>5.1</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.Black or African American.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 51.4}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.Black or African American.Men</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 69.3}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.Black or African American.Women</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 45.9}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployed.Black or African American.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed.Black or African American.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>967.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployment rate.White</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Percent or rate', u'value': 5.9}, u'Men': {u'units': u'Percent or rate', u'value': 4.8}, u'Women': {u'units': u'Percent or rate', u'value': 5.1}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate.Black or African American</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Percent or rate', u'value': 11.6}, u'Men': {u'units': u'Percent or rate', u'value': 9.0}, u'Women': {u'units': u'Percent or rate', u'value': 9.8}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate.Asian</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployment rate.Black or African American.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 11.6}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate.Black or African American.Men</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 9.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate.Black or African American.Women</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 9.8}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian noninstitutional population.White.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 126749.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force.White.Men.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force.White.Men.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>43514.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1972</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Civilian labor force': {u'White': {u'All': {u'units': u'Number in thousands', u'value': 75608.0}, u'Men': {u'units': u'Number in thousands', u'value': 43514.0}, u'Women': {u'units': u'Number in thousands', u'value': 25728.0}}, u'Black or African American': {u'All': {u'units': u'Number in thousands', u'value': 8334.0}, u'Men': {u'units': u'Number in thousands', u'value': 4180.0}, u'Women': {u'units': u'Number in thousands', u'value': 3498.0}}, u'Asian': {u'All': 0}}, u'Not in labor force': {u'White': {u'All': 0}, u'Black or African American': {u'All': {u'units': u'Number in thousands', u'value': 5998.0}}, u'Asian': {u'All': 0}}, u'Unemployed': {u'White': {u'All': {u'units': u'Number in thousands', u'value': 4439.0}, u'Men': {u'units': u'Number in thousands', u'value': 2096.0}, u'Women': {u'units': u'Number in thousands', u'value': 1325.0}}, u'Black or African American': {u'All': {u'units': u'Number in thousands', u'value': 967.0}, u'Men': {u'units': u'Number in thousands', u'value': 378.0}, u'Women': {u'units': u'Number in thousands', u'value': 343.0}}, u'Asian': {u'All': 0}}, u'Civilian labor force participation rate': {u'White': {u'All': {u'units': u'Percent or rate', u'value': 59.7}, u'Men': {u'units': u'Percent or rate', u'value': 81.7}, u'Women': {u'units': u'Percent or rate', u'value': 42.7}}, u'Black or African American': {u'All': {u'units': u'Percent or rate', u'value': 58.1}, u'Men': {u'units': u'Percent or rate', u'value': 76.2}, u'Women': {u'units': u'Percent or rate', u'value': 50.9}}, u'Asian': {u'All': 0}}, u'Unemployment rate': {u'White': {u'All': {u'units': u'Percent or rate', u'value': 5.9}, u'Men': {u'units': u'Percent or rate', u'value': 4.8}, u'Women': {u'units': u'Percent or rate', u'value': 5.1}}, u'Black or African American': {u'All': {u'units': u'Percent or rate', u'value': 11.6}, u'Men': {u'units': u'Percent or rate', u'value': 9.0}, u'Women': {u'units': u'Percent or rate', u'value': 9.8}}, u'Asian': {u'All': 0}}, u'Civilian noninstitutional population': {u'White': {u'All': {u'units': u'Number in thousands', u'value': 126749.0}}, u'Black or African American': {u'All': {u'units': u'Number in thousands', u'value': 14332.0}}, u'Asian': {u'All': 0}}, u'Employed': {u'White': {u'All': {u'units': u'Number in thousands', u'value': 71169.0}, u'Men': {u'units': u'Number in thousands', u'value': 41418.0}, u'Women': {u'units': u'Number in thousands', u'value': 24403.0}}, u'Black or African American': {u'All': {u'units': u'Number in thousands', u'value': 7367.0}, u'Men': {u'units': u'Number in thousands', u'value': 3802.0}, u'Women': {u'units': u'Number in thousands', u'value': 3156.0}}, u'Asian': {u'All': 0}}, u'Employment-population ratio': {u'White': {u'All': {u'units': u'Percent or rate', u'value': 56.1}, u'Men': {u'units': u'Percent or rate', u'value': 77.7}, u'Women': {u'units': u'Percent or rate', u'value': 40.5}}, u'Black or African American': {u'All': {u'units': u'Percent or rate', u'value': 51.4}, u'Men': {u'units': u'Percent or rate', u'value': 69.3}, u'Women': {u'units': u'Percent or rate', u'value': 45.9}}, u'Asian': {u'All': 0}}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].month</td>
+        <td>int</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Not in labor force.White</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Not in labor force.Black or African American</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Number in thousands', u'value': 5998.0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Not in labor force.Asian</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employed.White.Women.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed.White.Women.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>24403.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.Black or African American.Men.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.Black or African American.Men.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>76.2</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian noninstitutional population.Black or African American.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian noninstitutional population.Black or African American.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>14332.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employed.White</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Number in thousands', u'value': 71169.0}, u'Men': {u'units': u'Number in thousands', u'value': 41418.0}, u'Women': {u'units': u'Number in thousands', u'value': 24403.0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed.Black or African American</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Number in thousands', u'value': 7367.0}, u'Men': {u'units': u'Number in thousands', u'value': 3802.0}, u'Women': {u'units': u'Number in thousands', u'value': 3156.0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed.Asian</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployment rate.White.Men.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate.White.Men.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>4.8</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployment rate.Asian.All</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian noninstitutional population.Asian.All</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force.Asian.All</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.Asian.All</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employed.Black or African American.Men.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed.Black or African American.Men.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>3802.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian noninstitutional population.White.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian noninstitutional population.White.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>126749.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.White.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.White.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>59.7</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployment rate.Black or African American.Men.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate.Black or African American.Men.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>9.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployed.Black or African American.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 967.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed.Black or African American.Men</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 378.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed.Black or African American.Women</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 343.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.Black or African American.Women.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.Black or African American.Women.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>45.9</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.White.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.White.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>56.1</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployed.White.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 4439.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed.White.Men</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 2096.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed.White.Women</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 1325.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employed.Black or African American.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed.Black or African American.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>7367.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployed.Black or African American.Women.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed.Black or African American.Women.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>343.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force.White.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force.White.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>75608.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.White.Women.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.White.Women.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>42.7</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployed.Asian.All</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployment rate.Black or African American.Women.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate.Black or African American.Women.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>9.8</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'White': {u'All': {u'units': u'Number in thousands', u'value': 75608.0}, u'Men': {u'units': u'Number in thousands', u'value': 43514.0}, u'Women': {u'units': u'Number in thousands', u'value': 25728.0}}, u'Black or African American': {u'All': {u'units': u'Number in thousands', u'value': 8334.0}, u'Men': {u'units': u'Number in thousands', u'value': 4180.0}, u'Women': {u'units': u'Number in thousands', u'value': 3498.0}}, u'Asian': {u'All': 0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Not in labor force</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'White': {u'All': 0}, u'Black or African American': {u'All': {u'units': u'Number in thousands', u'value': 5998.0}}, u'Asian': {u'All': 0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'White': {u'All': {u'units': u'Number in thousands', u'value': 4439.0}, u'Men': {u'units': u'Number in thousands', u'value': 2096.0}, u'Women': {u'units': u'Number in thousands', u'value': 1325.0}}, u'Black or African American': {u'All': {u'units': u'Number in thousands', u'value': 967.0}, u'Men': {u'units': u'Number in thousands', u'value': 378.0}, u'Women': {u'units': u'Number in thousands', u'value': 343.0}}, u'Asian': {u'All': 0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'White': {u'All': {u'units': u'Percent or rate', u'value': 59.7}, u'Men': {u'units': u'Percent or rate', u'value': 81.7}, u'Women': {u'units': u'Percent or rate', u'value': 42.7}}, u'Black or African American': {u'All': {u'units': u'Percent or rate', u'value': 58.1}, u'Men': {u'units': u'Percent or rate', u'value': 76.2}, u'Women': {u'units': u'Percent or rate', u'value': 50.9}}, u'Asian': {u'All': 0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployment rate</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'White': {u'All': {u'units': u'Percent or rate', u'value': 5.9}, u'Men': {u'units': u'Percent or rate', u'value': 4.8}, u'Women': {u'units': u'Percent or rate', u'value': 5.1}}, u'Black or African American': {u'All': {u'units': u'Percent or rate', u'value': 11.6}, u'Men': {u'units': u'Percent or rate', u'value': 9.0}, u'Women': {u'units': u'Percent or rate', u'value': 9.8}}, u'Asian': {u'All': 0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian noninstitutional population</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'White': {u'All': {u'units': u'Number in thousands', u'value': 126749.0}}, u'Black or African American': {u'All': {u'units': u'Number in thousands', u'value': 14332.0}}, u'Asian': {u'All': 0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'White': {u'All': {u'units': u'Number in thousands', u'value': 71169.0}, u'Men': {u'units': u'Number in thousands', u'value': 41418.0}, u'Women': {u'units': u'Number in thousands', u'value': 24403.0}}, u'Black or African American': {u'All': {u'units': u'Number in thousands', u'value': 7367.0}, u'Men': {u'units': u'Number in thousands', u'value': 3802.0}, u'Women': {u'units': u'Number in thousands', u'value': 3156.0}}, u'Asian': {u'All': 0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'White': {u'All': {u'units': u'Percent or rate', u'value': 56.1}, u'Men': {u'units': u'Percent or rate', u'value': 77.7}, u'Women': {u'units': u'Percent or rate', u'value': 40.5}}, u'Black or African American': {u'All': {u'units': u'Percent or rate', u'value': 51.4}, u'Men': {u'units': u'Percent or rate', u'value': 69.3}, u'Women': {u'units': u'Percent or rate', u'value': 45.9}}, u'Asian': {u'All': 0}}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force.White</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Number in thousands', u'value': 75608.0}, u'Men': {u'units': u'Number in thousands', u'value': 43514.0}, u'Women': {u'units': u'Number in thousands', u'value': 25728.0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force.Black or African American</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Number in thousands', u'value': 8334.0}, u'Men': {u'units': u'Number in thousands', u'value': 4180.0}, u'Women': {u'units': u'Number in thousands', u'value': 3498.0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force.Asian</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force.Black or African American.Women.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force.Black or African American.Women.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>3498.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployed.White</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Number in thousands', u'value': 4439.0}, u'Men': {u'units': u'Number in thousands', u'value': 2096.0}, u'Women': {u'units': u'Number in thousands', u'value': 1325.0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed.Black or African American</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': {u'units': u'Number in thousands', u'value': 967.0}, u'Men': {u'units': u'Number in thousands', u'value': 378.0}, u'Women': {u'units': u'Number in thousands', u'value': 343.0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed.Asian</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.White.Men.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.White.Men.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>81.7</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Not in labor force.Black or African American.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Not in labor force.Black or African American.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>5998.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Unemployed.White.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Unemployed.White.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>4439.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.Black or African American.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 58.1}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.Black or African American.Men</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 76.2}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.Black or African American.Women</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 50.9}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employed.Asian.All</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Not in labor force.Black or African American.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 5998.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force.Black or African American.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 8334.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force.Black or African American.Men</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 4180.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force.Black or African American.Women</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 3498.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force.White.Women.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force.White.Women.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>25728.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employed.White.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed.White.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>71169.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.White.Men.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.White.Men.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>77.7</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.Black or African American.Men.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.Black or African American.Men.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>69.3</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.White.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 59.7}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.White.Men</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 81.7}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.White.Women</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 42.7}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.White.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 56.1}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.White.Men</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 77.7}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.White.Women</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Percent or rate', u'value': 40.5}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employed.Black or African American.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 7367.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed.Black or African American.Men</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 3802.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed.Black or African American.Women</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 3156.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employed.White.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 71169.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed.White.Men</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 41418.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed.White.Women</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 24403.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.Black or African American.All.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force participation rate.Black or African American.All.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>58.1</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian noninstitutional population.Black or African American.All</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'units': u'Number in thousands', u'value': 14332.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Not in labor force.Asian.All</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Civilian labor force.Black or African American.Men.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Civilian labor force.Black or African American.Men.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>4180.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Not in labor force.White.All</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employed.White.Men.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Number in thousands</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employed.White.Men.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>41418.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.White.Women.units</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Percent or rate</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.Employment-population ratio.White.Women.value</td>
+        <td>float</td> 
+        <td></td>
+        <td>40.5</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

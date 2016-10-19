@@ -44,12 +44,178 @@ Under the National Oceanic and Atmpospheric Administration, the National Weather
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Date.Full</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>04-13-2016</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Date.Day</td>
+        <td>int</td> 
+        <td></td>
+        <td>13</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Date.Month</td>
+        <td>int</td> 
+        <td></td>
+        <td>4</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Date.Year</td>
+        <td>int</td> 
+        <td></td>
+        <td>2016</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Precipitation</td>
+        <td>float</td> 
+        <td>Inches</td>
+        <td>0.32</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Temperature</td>
+        <td>dict</td> 
+        <td>Degrees Farenheit</td>
+        <td>{u'Max Temp': 57.0, u'Avg Temp': 51.0, u'Min Temp': 44.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Wind</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'High Gust': 28.0, u'Avg Wind': 9.0, u'High Wind': 21.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Wind.High Gust</td>
+        <td>float</td> 
+        <td></td>
+        <td>28.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Wind.Avg Wind</td>
+        <td>float</td> 
+        <td></td>
+        <td>9.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Wind.High Wind</td>
+        <td>float</td> 
+        <td></td>
+        <td>21.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Weather Conditions</td>
+        <td>list[unicode]</td> 
+        <td>This is a list of strings. An empty list represents no significant weather to report for that day</td>
+        <td>[u'RAIN', u'FOG']</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Date</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Year': 2016, u'Full': u'04-13-2016', u'Day': 13, u'Month': 4}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Station</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'City': u'Seattle', u'State': u'Washington', u'Code': u'SEA', u'Location': u'Seattle, WA'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Precipitation': 0.32, u'Temperature': {u'Max Temp': 57.0, u'Avg Temp': 51.0, u'Min Temp': 44.0}, u'Wind': {u'High Gust': 28.0, u'Avg Wind': 9.0, u'High Wind': 21.0}}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Temperature.Max Temp</td>
+        <td>float</td> 
+        <td></td>
+        <td>57.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Temperature.Avg Temp</td>
+        <td>float</td> 
+        <td></td>
+        <td>51.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Temperature.Min Temp</td>
+        <td>float</td> 
+        <td></td>
+        <td>44.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Station.City</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Seattle</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Station.State</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Washington</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Station.Code</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>SEA</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Station.Location</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Seattle, WA</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

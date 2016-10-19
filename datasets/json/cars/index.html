@@ -36,20 +36,6 @@ Cars JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -110,12 +96,192 @@ This is a dataset about cars and how much fuel they use.
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Engine Information</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Transmission': u'6 Speed Automatic Select Shift', u'Engine Type': u'Audi 3.2L 6 cylinder 250hp 236ft-lbs', u'Engine Statistics': {u'Horsepower': 250, u'Torque': 236}, u'Hybrid': False, u'Number of Forward Gears': 6, u'Driveline': u'All-wheel drive'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Identification</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Make': u'Audi', u'Model Year': u'2009 Audi A3', u'ID': u'2009 Audi A3 3.2', u'Classification': u'Automatic transmission', u'Year': 2009}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Dimensions</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Width': 202, u'Length': 143, u'Height': 140}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Fuel Information</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Highway mpg': 25, u'City mph': 18, u'Fuel Type': u'Gasoline'}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Fuel Information.Highway mpg</td>
+        <td>int</td> 
+        <td></td>
+        <td>25</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Fuel Information.City mph</td>
+        <td>int</td> 
+        <td></td>
+        <td>18</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Fuel Information.Fuel Type</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Gasoline</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Identification.Make</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Audi</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Identification.Model Year</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>2009 Audi A3</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Identification.ID</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>2009 Audi A3 3.2</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Identification.Classification</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Automatic transmission</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Identification.Year</td>
+        <td>int</td> 
+        <td></td>
+        <td>2009</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Dimensions.Width</td>
+        <td>int</td> 
+        <td></td>
+        <td>202</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Dimensions.Length</td>
+        <td>int</td> 
+        <td></td>
+        <td>143</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Dimensions.Height</td>
+        <td>int</td> 
+        <td></td>
+        <td>140</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Engine Information.Transmission</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>6 Speed Automatic Select Shift</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Engine Information.Engine Type</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Audi 3.2L 6 cylinder 250hp 236ft-lbs</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Engine Information.Engine Statistics</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Horsepower': 250, u'Torque': 236}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Engine Information.Hybrid</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Engine Information.Number of Forward Gears</td>
+        <td>int</td> 
+        <td></td>
+        <td>6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Engine Information.Driveline</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>All-wheel drive</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Engine Information.Engine Statistics.Horsepower</td>
+        <td>int</td> 
+        <td></td>
+        <td>250</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Engine Information.Engine Statistics.Torque</td>
+        <td>int</td> 
+        <td>lb/ft</td>
+        <td>236</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

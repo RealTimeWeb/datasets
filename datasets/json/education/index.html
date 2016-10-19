@@ -36,20 +36,6 @@ Education JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -114,12 +100,392 @@ This dataset comes from the National Center for Educational Statistics' Common C
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.score.math.[0].grade</td>
+        <td>int</td> 
+        <td></td>
+        <td>4</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.score.math.[0].scale score</td>
+        <td>int</td> 
+        <td></td>
+        <td>228</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].state</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>alabama</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'enrollment': {u'schools': 1615, u'students': {u'gender': {u'male': 387549, u'female': 368003}, u'all': 755552, u'race': {u'biracial': 2534, u'hispanic': 35389, u'black': 261255, u'asian': 9753, u'white': 440519, u'native american': 6102}, u'other': {u'individualized education program': 81216, u'free lunch eligible': 356929, u'ungraded students': u'', u'lep/ell students': 17559, u'reduced-price lunch eligible': 45457}, u'year': [8179, 57665, 58448, 56699, 57216, 59117, 59897, 59157, 59242, 57992, 62615, 57644, 51962, 49719]}, u'staff': 95144.48, u'teachers': 49363.24, u'student teacher ratio': 15.31}, u'attendance': {u'average student rate': 96, u'average teacher rate': 93.38461538, u'average minutes': 61768.53846}, u'funding': {u'expenditures': 7646087117L, u'revenue': 7239690678L}, u'score': {u'science': [{u'grade': 4, u'scale score': 142}, {u'grade': 8, u'scale score': 138}], u'reading': [{u'grade': 4, u'scale score': 216}, {u'grade': 8, u'scale score': 252}], u'math': [{u'grade': 4, u'scale score': 228}, {u'grade': 8, u'scale score': 269}], u'writing': [{u'grade': 4, u'scale score': 140}, {u'grade': 8, u'scale score': 148}]}, u'location': {u'latitude': 32.3182314, u'longitude': -86.902298}}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.score.science.[0].grade</td>
+        <td>int</td> 
+        <td></td>
+        <td>4</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.score.science.[0].scale score</td>
+        <td>int</td> 
+        <td></td>
+        <td>142</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.enrollment.students.gender.male</td>
+        <td>int</td> 
+        <td></td>
+        <td>387549</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.gender.female</td>
+        <td>int</td> 
+        <td></td>
+        <td>368003</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.enrollment</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'schools': 1615, u'students': {u'gender': {u'male': 387549, u'female': 368003}, u'all': 755552, u'race': {u'biracial': 2534, u'hispanic': 35389, u'black': 261255, u'asian': 9753, u'white': 440519, u'native american': 6102}, u'other': {u'individualized education program': 81216, u'free lunch eligible': 356929, u'ungraded students': u'', u'lep/ell students': 17559, u'reduced-price lunch eligible': 45457}, u'year': [8179, 57665, 58448, 56699, 57216, 59117, 59897, 59157, 59242, 57992, 62615, 57644, 51962, 49719]}, u'staff': 95144.48, u'teachers': 49363.24, u'student teacher ratio': 15.31}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.attendance</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'average student rate': 96, u'average teacher rate': 93.38461538, u'average minutes': 61768.53846}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.funding</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'expenditures': 7646087117L, u'revenue': 7239690678L}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.score</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'science': [{u'grade': 4, u'scale score': 142}, {u'grade': 8, u'scale score': 138}], u'reading': [{u'grade': 4, u'scale score': 216}, {u'grade': 8, u'scale score': 252}], u'math': [{u'grade': 4, u'scale score': 228}, {u'grade': 8, u'scale score': 269}], u'writing': [{u'grade': 4, u'scale score': 140}, {u'grade': 8, u'scale score': 148}]}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.location</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'latitude': 32.3182314, u'longitude': -86.902298}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.attendance.average student rate</td>
+        <td>int</td> 
+        <td></td>
+        <td>96</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.attendance.average teacher rate</td>
+        <td>float</td> 
+        <td></td>
+        <td>93.38461538</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.attendance.average minutes</td>
+        <td>float</td> 
+        <td></td>
+        <td>61768.53846</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.enrollment.students.gender</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'male': 387549, u'female': 368003}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.all</td>
+        <td>int</td> 
+        <td></td>
+        <td>755552</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.race</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'biracial': 2534, u'hispanic': 35389, u'black': 261255, u'asian': 9753, u'white': 440519, u'native american': 6102}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.other</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'individualized education program': 81216, u'free lunch eligible': 356929, u'ungraded students': u'', u'lep/ell students': 17559, u'reduced-price lunch eligible': 45457}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.year</td>
+        <td>list[int]</td> 
+        <td>Each of these match to the different age groups for students: The first one is Preschool, the second is Kindergarten, and so on for 1st grade - 12th grade.</td>
+        <td>[8179, 57665, 58448, 56699, 57216, 59117, 59897, 59157, 59242, 57992, 62615, 57644, 51962, 49719]</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.enrollment.schools</td>
+        <td>int</td> 
+        <td></td>
+        <td>1615</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'gender': {u'male': 387549, u'female': 368003}, u'all': 755552, u'race': {u'biracial': 2534, u'hispanic': 35389, u'black': 261255, u'asian': 9753, u'white': 440519, u'native american': 6102}, u'other': {u'individualized education program': 81216, u'free lunch eligible': 356929, u'ungraded students': u'', u'lep/ell students': 17559, u'reduced-price lunch eligible': 45457}, u'year': [8179, 57665, 58448, 56699, 57216, 59117, 59897, 59157, 59242, 57992, 62615, 57644, 51962, 49719]}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.student teacher ratio</td>
+        <td>float</td> 
+        <td></td>
+        <td>15.31</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.teachers</td>
+        <td>float</td> 
+        <td></td>
+        <td>49363.24</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.staff</td>
+        <td>float</td> 
+        <td></td>
+        <td>95144.48</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.score.science</td>
+        <td>list[dict]</td> 
+        <td></td>
+        <td>[{u'grade': 4, u'scale score': 142}, {u'grade': 8, u'scale score': 138}]</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.score.reading</td>
+        <td>list[dict]</td> 
+        <td></td>
+        <td>[{u'grade': 4, u'scale score': 216}, {u'grade': 8, u'scale score': 252}]</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.score.math</td>
+        <td>list[dict]</td> 
+        <td></td>
+        <td>[{u'grade': 4, u'scale score': 228}, {u'grade': 8, u'scale score': 269}]</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.score.writing</td>
+        <td>list[dict]</td> 
+        <td></td>
+        <td>[{u'grade': 4, u'scale score': 140}, {u'grade': 8, u'scale score': 148}]</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.funding.expenditures</td>
+        <td>long</td> 
+        <td></td>
+        <td>7646087117</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.funding.revenue</td>
+        <td>long</td> 
+        <td></td>
+        <td>7239690678</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.score.reading.[0].grade</td>
+        <td>int</td> 
+        <td></td>
+        <td>4</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.score.reading.[0].scale score</td>
+        <td>int</td> 
+        <td></td>
+        <td>216</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.enrollment.students.other.individualized education program</td>
+        <td>int</td> 
+        <td></td>
+        <td>81216</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.other.free lunch eligible</td>
+        <td>int</td> 
+        <td></td>
+        <td>356929</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.other.ungraded students</td>
+        <td>unicode</td> 
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.other.lep/ell students</td>
+        <td>int</td> 
+        <td></td>
+        <td>17559</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.other.reduced-price lunch eligible</td>
+        <td>int</td> 
+        <td></td>
+        <td>45457</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.location.latitude</td>
+        <td>float</td> 
+        <td></td>
+        <td>32.3182314</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.location.longitude</td>
+        <td>float</td> 
+        <td></td>
+        <td>-86.902298</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.score.writing.[0].grade</td>
+        <td>int</td> 
+        <td></td>
+        <td>4</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.score.writing.[0].scale score</td>
+        <td>int</td> 
+        <td></td>
+        <td>140</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.enrollment.students.race.biracial</td>
+        <td>int</td> 
+        <td></td>
+        <td>2534</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.race.hispanic</td>
+        <td>int</td> 
+        <td></td>
+        <td>35389</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.race.black</td>
+        <td>int</td> 
+        <td></td>
+        <td>261255</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.race.asian</td>
+        <td>int</td> 
+        <td></td>
+        <td>9753</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.race.white</td>
+        <td>int</td> 
+        <td></td>
+        <td>440519</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.enrollment.students.race.native american</td>
+        <td>int</td> 
+        <td></td>
+        <td>6102</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

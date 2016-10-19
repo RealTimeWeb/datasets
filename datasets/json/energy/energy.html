@@ -45,12 +45,374 @@ This data comes from the US Energy Information Administration, which has histori
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data</td>
+        <td>dict</td> 
+        <td>Units are in quadrillion BTUs</td>
+        <td>{u'imports': {u'crude oil': 0.914739, u'petroleum products': 0.512607, u'natural gas': 0.0, u'electricity': 0.006018, u'coal coke': 0.006919, u'coal': 0.007875, u'total': 1.448158, u'total petroleum': 1.427346, u'biofuels': 0.0}, u'exports': {u'crude oil': 0.1918, u'petroleum products': 0.487721, u'natural gas': 0.020756, u'electricity': 0.000598, u'coal coke': 0.01359, u'coal': 0.877294, u'total': 1.59176, u'total petroleum': 0.679521, u'biofuels': 0.0}, u'production': {u'crude oil': 10.683252, u'total': 31.72216, u'natural gas': 5.377243, u'nuclear': 0.0, u'total renewable': 2.973984, u'biomass': 1.549262, u'hydroelectric': 1.424722, u'natural gas plant liquids': 0.713799, u'geothermal': 0.0, u'coal': 11.973882, u'solar': 0.0, u'fossil fuels': 28.748176, u'wind': 0.0}, u'consumption': {u'total': 31.981503, u'natural gas': 5.145142, u'nuclear': 0.0, u'total renewable': 2.973984, u'petroleum': 11.882722, u'biomass': 1.549262, u'hydroelectric': 1.424722, u'coal': 11.980905, u'geothermal': 0.0, u'solar': 0.0, u'fossil fuels': 29.002099, u'wind': 0.0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1949</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.imports</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'crude oil': 0.914739, u'petroleum products': 0.512607, u'natural gas': 0.0, u'electricity': 0.006018, u'coal coke': 0.006919, u'coal': 0.007875, u'total': 1.448158, u'total petroleum': 1.427346, u'biofuels': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.exports</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'crude oil': 0.1918, u'petroleum products': 0.487721, u'natural gas': 0.020756, u'electricity': 0.000598, u'coal coke': 0.01359, u'coal': 0.877294, u'total': 1.59176, u'total petroleum': 0.679521, u'biofuels': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'crude oil': 10.683252, u'total': 31.72216, u'natural gas': 5.377243, u'nuclear': 0.0, u'total renewable': 2.973984, u'biomass': 1.549262, u'hydroelectric': 1.424722, u'natural gas plant liquids': 0.713799, u'geothermal': 0.0, u'coal': 11.973882, u'solar': 0.0, u'fossil fuels': 28.748176, u'wind': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.consumption</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'total': 31.981503, u'natural gas': 5.145142, u'nuclear': 0.0, u'total renewable': 2.973984, u'petroleum': 11.882722, u'biomass': 1.549262, u'hydroelectric': 1.424722, u'coal': 11.980905, u'geothermal': 0.0, u'solar': 0.0, u'fossil fuels': 29.002099, u'wind': 0.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.imports.crude oil</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.914739</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.imports.petroleum products</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.512607</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.imports.natural gas</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.imports.electricity</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.006018</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.imports.coal coke</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.006919</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.imports.coal</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.007875</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.imports.total</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.448158</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.imports.total petroleum</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.427346</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.imports.biofuels</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.production.crude oil</td>
+        <td>float</td> 
+        <td></td>
+        <td>10.683252</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production.fossil fuels</td>
+        <td>float</td> 
+        <td></td>
+        <td>28.748176</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production.natural gas</td>
+        <td>float</td> 
+        <td></td>
+        <td>5.377243</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production.nuclear</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production.total renewable</td>
+        <td>float</td> 
+        <td></td>
+        <td>2.973984</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production.biomass</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.549262</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production.hydroelectric</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.424722</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production.natural gas plant liquids</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.713799</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production.geothermal</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production.coal</td>
+        <td>float</td> 
+        <td></td>
+        <td>11.973882</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production.solar</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production.total</td>
+        <td>float</td> 
+        <td></td>
+        <td>31.72216</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.production.wind</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.consumption.fossil fuels</td>
+        <td>float</td> 
+        <td></td>
+        <td>29.002099</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.consumption.natural gas</td>
+        <td>float</td> 
+        <td></td>
+        <td>5.145142</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.consumption.nuclear</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.consumption.total renewable</td>
+        <td>float</td> 
+        <td></td>
+        <td>2.973984</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.consumption.petroleum</td>
+        <td>float</td> 
+        <td></td>
+        <td>11.882722</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.consumption.biomass</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.549262</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.consumption.hydroelectric</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.424722</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.consumption.coal</td>
+        <td>float</td> 
+        <td></td>
+        <td>11.980905</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.consumption.geothermal</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.consumption.solar</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.consumption.total</td>
+        <td>float</td> 
+        <td></td>
+        <td>31.981503</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.consumption.wind</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.exports.crude oil</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.1918</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.exports.petroleum products</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.487721</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.exports.natural gas</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.020756</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.exports.electricity</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.000598</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.exports.coal coke</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.01359</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.exports.coal</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.877294</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.exports.total</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.59176</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.exports.total petroleum</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.679521</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.exports.biofuels</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

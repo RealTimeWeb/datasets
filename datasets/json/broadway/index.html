@@ -36,20 +36,6 @@ Broadway JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -110,12 +96,132 @@ This library holds data about over Broadway shows, grouped over weeklong periods
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Date.Full</td>
+        <td>unicode</td> 
+        <td>The full date representation that this performance's week ended on.</td>
+        <td>08/26/1990</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Date.Day</td>
+        <td>int</td> 
+        <td>The day of the month that this performance's week ended on.</td>
+        <td>26</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Date.Month</td>
+        <td>int</td> 
+        <td>The numeric month that this performance's week ended in (1 = January, 2 = February, etc.).</td>
+        <td>8</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Date.Year</td>
+        <td>int</td> 
+        <td>The year that this performance occurred in.</td>
+        <td>1990</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Statistics.Gross</td>
+        <td>int</td> 
+        <td>The "Gross Gross" of this performance, or how much it made in total across the entire week. Measured in dollars.</td>
+        <td>134456</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Statistics.Performances</td>
+        <td>int</td> 
+        <td>The number of performances that occurred this week.</td>
+        <td>8</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Statistics.Attendance</td>
+        <td>int</td> 
+        <td>The total number of people who attended performances over the week.</td>
+        <td>5500</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Statistics.Capacity</td>
+        <td>int</td> 
+        <td>The percentage of the theatre that was filled during that week.</td>
+        <td>88</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Statistics.Gross Potential</td>
+        <td>int</td> 
+        <td>The Gross Potential is the maximum amount an engagement can possibly earn based on calculations involving ticket prices, seating capacity, and the number of performances. This number is expressed here as a percentage of what could have been achieved (Gross Gross / Gross Potential). In case the GP could not be calculated, it was replaced with 0%.</td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Date</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Year': 1990, u'Full': u'08/26/1990', u'Day': 26, u'Month': 8}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Statistics</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Gross Potential': 0, u'Gross': 134456, u'Attendance': 5500, u'Capacity': 88, u'Performances': 8}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Show</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Type': u'Play', u'Name': u'Tru', u'Theatre': u'Booth'}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Show.Type</td>
+        <td>unicode</td> 
+        <td>Whether it is a "Musical", "Play", or "Special".</td>
+        <td>Play</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Show.Name</td>
+        <td>unicode</td> 
+        <td>The name of the production.</td>
+        <td>Tru</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Show.Theatre</td>
+        <td>unicode</td> 
+        <td>The name of the theatre.</td>
+        <td>Booth</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

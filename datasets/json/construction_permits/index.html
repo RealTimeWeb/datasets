@@ -36,20 +36,6 @@ Construction Permits JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -114,12 +100,155 @@ This dataset provides data on the number and valuation of new housing units auth
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].period</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'month': 6, u'month name': u'June', u'full': u'2003/6', u'year': 2003}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].locations</td>
+        <td>list[dict]</td> 
+        <td></td>
+        <td>[{u'valuations': {u'2 units': 23595000, u'5+ units': 167249000, u'3-4 units': 41207000, u'1 unit': 2415962000L}, u'name': u'Mountain', u'# of permits': {u'2 units': 188, u'5+ units': 2600, u'3-4 units': 507, u'1 unit': 16770}, u'level': u'divisional'}, {u'valuations': {u'2 units': 0, u'5+ units': 3169000, u'3-4 units': 146000, u'1 unit': 83156000}, u'name': u'Mississippi', u'# of permits': {u'2 units': 0, u'5+ units': 82, u'3-4 units': 4, u'1 unit': 789}, u'level': u'state'}, {u'valuations': {u'2 units': 86391000, u'5+ units': 174342000, u'3-4 units': 49297000, u'1 unit': 1758582000}, u'name': u'Northeast', u'# of permits': {u'2 units': 926, u'5+ units': 2660, u'3-4 units': 621, u'1 unit': 11482}, u'level': u'regional'}, {u'valuations': {u'2 units': 71630000, u'5+ units': 516617000, u'3-4 units': 93113000, u'1 unit': 5770824000L}, u'name': u'West', u'# of permits': {u'2 units': 616, u'5+ units': 6661, u'3-4 units': 1064, u'1 unit': 35018}, u'level': u'regional'}, {u'valuations': {u'2 units': 2608000, u'5+ units': 894000, u'3-4 units': 173000, u'1 unit': 145263000}, u'name': u'Oklahoma', u'# of permits': {u'2 units': 42, u'5+ units': 19, u'3-4 units': 4, u'1 unit': 1056}, u'level': u'state'}, {u'valuations': {u'2 units': 61704000, u'5+ units': 356186000, u'3-4 units': 44148000, u'1 unit': 2940292000L}, u'name': u'East North Central', u'# of permits': {u'2 units': 624, u'5+ units': 5396, u'3-4 units': 541, u'1 unit': 19034}, u'level': u'divisional'}, {u'valuations': {u'2 units': 7798000, u'5+ units': 43408000, u'3-4 units': 4968000, u'1 unit': 497828000}, u'name': u'Minnesota', u'# of permits': {u'2 units': 74, u'5+ units': 450, u'3-4 units': 77, u'1 unit': 3245}, u'level': u'state'}, {u'valuations': {u'2 units': 37672000, u'5+ units': 258328000, u'3-4 units': 34161000, u'1 unit': 2024692000}, u'name': u'West South Central', u'# of permits': {u'2 units': 594, u'5+ units': 4355, u'3-4 units': 576, u'1 unit': 15726}, u'level': u'divisional'}, {u'valuations': {u'2 units': 11112000, u'5+ units': 164494000, u'3-4 units': 20690000, u'1 unit': 736772000}, u'name': u'Illinois', u'# of permits': {u'2 units': 116, u'5+ units': 1673, u'3-4 units': 244, u'1 unit': 4543}, u'level': u'state'}, {u'valuations': {u'2 units': 6117000, u'5+ units': 48246000, u'3-4 units': 2943000, u'1 unit': 769867000}, u'name': u'Georgia', u'# of permits': {u'2 units': 42, u'5+ units': 840, u'3-4 units': 98, u'1 unit': 6529}, u'level': u'state'}, {u'valuations': {u'2 units': 1227000, u'5+ units': 7201000, u'3-4 units': 1530000, u'1 unit': 122022000}, u'name': u'Arkansas', u'# of permits': {u'2 units': 22, u'5+ units': 133, u'3-4 units': 27, u'1 unit': 888}, u'level': u'state'}, {u'valuations': {u'2 units': 112000, u'5+ units': 3778000, u'3-4 units': 826000, u'1 unit': 154961000}, u'name': u'New Mexico', u'# of permits': {u'2 units': 2, u'5+ units': 92, u'3-4 units': 19, u'1 unit': 1117}, u'level': u'state'}, {u'valuations': {u'2 units': 13498000, u'5+ units': 57347000, u'3-4 units': 4457000, u'1 unit': 472526000}, u'name': u'Indiana', u'# of permits': {u'2 units': 150, u'5+ units': 1148, u'3-4 units': 56, u'1 unit': 3138}, u'level': u'state'}, {u'valuations': {u'2 units': 338000, u'5+ units': 17459000, u'3-4 units': 1043000, u'1 unit': 427061000}, u'name': u'Maryland', u'# of permits': {u'2 units': 6, u'5+ units': 288, u'3-4 units': 15, u'1 unit': 3239}, u'level': u'state'}, {u'valuations': {u'2 units': 87716000, u'5+ units': 452112000, u'3-4 units': 58862000, u'1 unit': 4230352000L}, u'name': u'Midwest', u'# of permits': {u'2 units': 934, u'5+ units': 6787, u'3-4 units': 776, u'1 unit': 28136}, u'level': u'regional'}, {u'valuations': {u'2 units': 17304000, u'5+ units': 235035000, u'3-4 units': 23069000, u'1 unit': 1577494000}, u'name': u'Texas', u'# of permits': {u'2 units': 276, u'5+ units': 3924, u'3-4 units': 352, u'1 unit': 12235}, u'level': u'state'}, {u'valuations': {u'2 units': 250000, u'5+ units': 223000, u'3-4 units': 833000, u'1 unit': 28774000}, u'name': u'Wyoming', u'# of permits': {u'2 units': 4, u'5+ units': 5, u'3-4 units': 3, u'1 unit': 181}, u'level': u'state'}, {u'valuations': {u'2 units': 2361000, u'5+ units': 21345000, u'3-4 units': 695000, u'1 unit': 374895000}, u'name': u'Tennessee', u'# of permits': {u'2 units': 50, u'5+ units': 307, u'3-4 units': 15, u'1 unit': 3075}, u'level': u'state'}, {u'valuations': {u'2 units': 2846000, u'5+ units': 10240000, u'3-4 units': 1505000, u'1 unit': 194479000}, u'name': u'Iowa', u'# of permits': {u'2 units': 34, u'5+ units': 153, u'3-4 units': 31, u'1 unit': 1368}, u'level': u'state'}, {u'valuations': {u'2 units': 21972000, u'5+ units': 53296000, u'3-4 units': 7846000, u'1 unit': 432109000}, u'name': u'Wisconsin', u'# of permits': {u'2 units': 200, u'5+ units': 1075, u'3-4 units': 105, u'1 unit': 2814}, u'level': u'state'}, {u'valuations': {u'2 units': 3607000, u'5+ units': 81987000, u'3-4 units': 7117000, u'1 unit': 862408000}, u'name': u'Arizona', u'# of permits': {u'2 units': 48, u'5+ units': 1157, u'3-4 units': 85, u'1 unit': 6077}, u'level': u'state'}, {u'valuations': {u'2 units': 16533000, u'5+ units': 15198000, u'3-4 units': 9389000, u'1 unit': 179913000}, u'name': u'Louisiana', u'# of permits': {u'2 units': 254, u'5+ units': 279, u'3-4 units': 193, u'1 unit': 1547}, u'level': u'state'}, {u'valuations': {u'2 units': 6159000, u'5+ units': 37186000, u'3-4 units': 3892000, u'1 unit': 645233000}, u'name': u'Michigan', u'# of permits': {u'2 units': 62, u'5+ units': 543, u'3-4 units': 44, u'1 unit': 4539}, u'level': u'state'}, {u'valuations': {u'2 units': 5234000, u'5+ units': 0, u'3-4 units': 298000, u'1 unit': 153167000}, u'name': u'Kansas', u'# of permits': {u'2 units': 58, u'5+ units': 0, u'3-4 units': 3, u'1 unit': 1087}, u'level': u'state'}, {u'valuations': {u'2 units': 4539000, u'5+ units': 6843000, u'3-4 units': 7843000, u'1 unit': 227446000}, u'name': u'Utah', u'# of permits': {u'2 units': 40, u'5+ units': 85, u'3-4 units': 94, u'1 unit': 1651}, u'level': u'state'}, {u'valuations': {u'2 units': 1862000, u'5+ units': 75144000, u'3-4 units': 4214000, u'1 unit': 604277000}, u'name': u'Virginia', u'# of permits': {u'2 units': 38, u'5+ units': 1565, u'3-4 units': 60, u'1 unit': 4468}, u'level': u'state'}, {u'valuations': {u'2 units': 6146000, u'5+ units': 20858000, u'3-4 units': 5558000, u'1 unit': 304130000}, u'name': u'Oregon', u'# of permits': {u'2 units': 62, u'5+ units': 286, u'3-4 units': 74, u'1 unit': 1682}, u'level': u'state'}, {u'valuations': {u'2 units': 1326000, u'5+ units': 14758000, u'3-4 units': 290000, u'1 unit': 160480000}, u'name': u'Connecticut', u'# of permits': {u'2 units': 14, u'5+ units': 296, u'3-4 units': 4, u'1 unit': 823}, u'level': u'state'}, {u'valuations': {u'2 units': 0, u'5+ units': 15841000, u'3-4 units': 0, u'1 unit': 1304000}, u'name': u'District of Columbia', u'# of permits': {u'2 units': 0, u'5+ units': 259, u'3-4 units': 0, u'1 unit': 10}, u'level': u'state'}, {u'valuations': {u'2 units': 2235000, u'5+ units': 14459000, u'3-4 units': 1467000, u'1 unit': 98945000}, u'name': u'New Hampshire', u'# of permits': {u'2 units': 20, u'5+ units': 194, u'3-4 units': 13, u'1 unit': 613}, u'level': u'state'}, {u'valuations': {u'2 units': 10463000, u'5+ units': 24374000, u'3-4 units': 5943000, u'1 unit': 218307000}, u'name': u'Massachusetts', u'# of permits': {u'2 units': 110, u'5+ units': 378, u'3-4 units': 69, u'1 unit': 1158}, u'level': u'state'}, {u'valuations': {u'2 units': 3623000, u'5+ units': 226000, u'3-4 units': 237000, u'1 unit': 50235000}, u'name': u'West Virginia', u'# of permits': {u'2 units': 48, u'5+ units': 5, u'3-4 units': 4, u'1 unit': 393}, u'level': u'state'}, {u'valuations': {u'2 units': 3443000, u'5+ units': 20167000, u'3-4 units': 2677000, u'1 unit': 381970000}, u'name': u'South Carolina', u'# of permits': {u'2 units': 58, u'5+ units': 332, u'3-4 units': 41, u'1 unit': 2877}, u'level': u'state'}, {u'valuations': {u'2 units': 4641000, u'5+ units': 85000000, u'3-4 units': 2596000, u'1 unit': 858853000}, u'name': u'East South Central', u'# of permits': {u'2 units': 90, u'5+ units': 906, u'3-4 units': 51, u'1 unit': 7125}, u'level': u'divisional'}, {u'valuations': {u'2 units': 1115000, u'5+ units': 625000, u'3-4 units': 0, u'1 unit': 39504000}, u'name': u'Vermont', u'# of permits': {u'2 units': 12, u'5+ units': 10, u'3-4 units': 0, u'1 unit': 267}, u'level': u'state'}, {u'valuations': {u'2 units': 0, u'5+ units': 80000, u'3-4 units': 0, u'1 unit': 59957000}, u'name': u'Delaware', u'# of permits': {u'2 units': 0, u'5+ units': 5, u'3-4 units': 0, u'1 unit': 535}, u'level': u'state'}, {u'valuations': {u'2 units': 0, u'5+ units': 10967000, u'3-4 units': 787000, u'1 unit': 36344000}, u'name': u'North Dakota', u'# of permits': {u'2 units': 0, u'5+ units': 161, u'3-4 units': 8, u'1 unit': 251}, u'level': u'state'}, {u'valuations': {u'2 units': 24538000, u'5+ units': 227210000, u'3-4 units': 32924000, u'1 unit': 2473946000L}, u'name': u'California', u'# of permits': {u'2 units': 206, u'5+ units': 2537, u'3-4 units': 322, u'1 unit': 13038}, u'level': u'state'}, {u'valuations': {u'2 units': 2338000, u'5+ units': 27778000, u'3-4 units': 7077000, u'1 unit': 456293000}, u'name': u'Pennsylvania', u'# of permits': {u'2 units': 36, u'5+ units': 311, u'3-4 units': 106, u'1 unit': 3277}, u'level': u'state'}, {u'valuations': {u'2 units': 20012000, u'5+ units': 253804000, u'3-4 units': 59632000, u'1 unit': 1971557000}, u'name': u'Florida', u'# of permits': {u'2 units': 268, u'5+ units': 3581, u'3-4 units': 490, u'1 unit': 13526}, u'level': u'state'}, {u'valuations': {u'2 units': 26012000, u'5+ units': 95926000, u'3-4 units': 14714000, u'1 unit': 1290060000}, u'name': u'West North Central', u'# of permits': {u'2 units': 310, u'5+ units': 1391, u'3-4 units': 235, u'1 unit': 9102}, u'level': u'divisional'}, {u'valuations': {u'2 units': 1337000, u'5+ units': 5346000, u'3-4 units': 839000, u'1 unit': 165455000}, u'name': u'Kentucky', u'# of permits': {u'2 units': 24, u'5+ units': 119, u'3-4 units': 17, u'1 unit': 1397}, u'level': u'state'}, {u'valuations': {u'2 units': 238000, u'5+ units': 423000, u'3-4 units': 556000, u'1 unit': 26270000}, u'name': u'Rhode Island', u'# of permits': {u'2 units': 4, u'5+ units': 26, u'3-4 units': 14, u'1 unit': 168}, u'level': u'state'}, {u'valuations': {u'2 units': 330283000, u'5+ units': 1962788000, u'3-4 units': 311384000, u'1 unit': 19790685000L}, u'name': u'United States', u'# of permits': {u'2 units': 3726, u'5+ units': 28961, u'3-4 units': 3858, u'1 unit': 135521}, u'level': u'national'}, {u'valuations': {u'2 units': 70442000, u'5+ units': 118959000, u'3-4 units': 40052000, u'1 unit': 1125379000}, u'name': u'Middle Atlantic', u'# of permits': {u'2 units': 756, u'5+ units': 1744, u'3-4 units': 511, u'1 unit': 7780}, u'level': u'divisional'}, {u'valuations': {u'2 units': 285000, u'5+ units': 2756000, u'3-4 units': 0, u'1 unit': 112149000}, u'name': u'Nebraska', u'# of permits': {u'2 units': 4, u'5+ units': 60, u'3-4 units': 0, u'1 unit': 832}, u'level': u'state'}, {u'valuations': {u'2 units': 9423000, u'5+ units': 23938000, u'3-4 units': 7118000, u'1 unit': 261907000}, u'name': u'Missouri', u'# of permits': {u'2 units': 136, u'5+ units': 531, u'3-4 units': 112, u'1 unit': 1933}, u'level': u'state'}, {u'valuations': {u'2 units': 8963000, u'5+ units': 43863000, u'3-4 units': 7263000, u'1 unit': 653652000}, u'name': u'Ohio', u'# of permits': {u'2 units': 96, u'5+ units': 957, u'3-4 units': 92, u'1 unit': 4000}, u'level': u'state'}, {u'valuations': {u'2 units': 943000, u'5+ units': 55141000, u'3-4 units': 917000, u'1 unit': 235346000}, u'name': u'Alabama', u'# of permits': {u'2 units': 16, u'5+ units': 398, u'3-4 units': 15, u'1 unit': 1864}, u'level': u'state'}, {u'valuations': {u'2 units': 84546000, u'5+ units': 819717000, u'3-4 units': 110112000, u'1 unit': 8030927000L}, u'name': u'South', u'# of permits': {u'2 units': 1250, u'5+ units': 12853, u'3-4 units': 1397, u'1 unit': 60885}, u'level': u'regional'}, {u'valuations': {u'2 units': 426000, u'5+ units': 4616000, u'3-4 units': 38000, u'1 unit': 34187000}, u'name': u'South Dakota', u'# of permits': {u'2 units': 4, u'5+ units': 36, u'3-4 units': 4, u'1 unit': 386}, u'level': u'state'}, {u'valuations': {u'2 units': 7290000, u'5+ units': 25102000, u'3-4 units': 3117000, u'1 unit': 27410000}, u'name': u'Alaska', u'# of permits': {u'2 units': 58, u'5+ units': 204, u'3-4 units': 38, u'1 unit': 146}, u'level': u'state'}, {u'valuations': {u'2 units': 11412000, u'5+ units': 37718000, u'3-4 units': 2742000, u'1 unit': 527161000}, u'name': u'Colorado', u'# of permits': {u'2 units': 46, u'5+ units': 517, u'3-4 units': 33, u'1 unit': 3135}, u'level': u'state'}, {u'valuations': {u'2 units': 798000, u'5+ units': 8036000, u'3-4 units': 5472000, u'1 unit': 159587000}, u'name': u'Idaho', u'# of permits': {u'2 units': 10, u'5+ units': 199, u'3-4 units': 91, u'1 unit': 1050}, u'level': u'state'}, {u'valuations': {u'2 units': 42233000, u'5+ units': 476389000, u'3-4 units': 73355000, u'1 unit': 5147382000L}, u'name': u'South Atlantic', u'# of permits': {u'2 units': 566, u'5+ units': 7592, u'3-4 units': 770, u'1 unit': 38034}, u'level': u'divisional'}, {u'valuations': {u'2 units': 14689000, u'5+ units': 16647000, u'3-4 units': 3517000, u'1 unit': 256790000}, u'name': u'New Jersey', u'# of permits': {u'2 units': 162, u'5+ units': 303, u'3-4 units': 42, u'1 unit': 1939}, u'level': u'state'}, {u'valuations': {u'2 units': 9862000, u'5+ units': 57993000, u'3-4 units': 9379000, u'1 unit': 466758000}, u'name': u'Washington', u'# of permits': {u'2 units': 100, u'5+ units': 821, u'3-4 units': 112, u'1 unit': 2955}, u'level': u'state'}, {u'valuations': {u'2 units': 6838000, u'5+ units': 45421000, u'3-4 units': 2608000, u'1 unit': 881154000}, u'name': u'North Carolina', u'# of permits': {u'2 units': 106, u'5+ units': 717, u'3-4 units': 62, u'1 unit': 6457}, u'level': u'state'}, {u'valuations': {u'2 units': 572000, u'5+ units': 743000, u'3-4 units': 989000, u'1 unit': 89697000}, u'name': u'Maine', u'# of permits': {u'2 units': 10, u'5+ units': 12, u'3-4 units': 10, u'1 unit': 673}, u'level': u'state'}, {u'valuations': {u'2 units': 53415000, u'5+ units': 74534000, u'3-4 units': 29458000, u'1 unit': 412296000}, u'name': u'New York', u'# of permits': {u'2 units': 558, u'5+ units': 1130, u'3-4 units': 363, u'1 unit': 2564}, u'level': u'state'}, {u'valuations': {u'2 units': 2010000, u'5+ units': 962000, u'3-4 units': 1598000, u'1 unit': 30393000}, u'name': u'Montana', u'# of permits': {u'2 units': 32, u'5+ units': 17, u'3-4 units': 21, u'1 unit': 213}, u'level': u'state'}, {u'valuations': {u'2 units': 866000, u'5+ units': 27703000, u'3-4 units': 14775000, u'1 unit': 425232000}, u'name': u'Nevada', u'# of permits': {u'2 units': 6, u'5+ units': 528, u'3-4 units': 161, u'1 unit': 3346}, u'level': u'state'}, {u'valuations': {u'2 units': 48035000, u'5+ units': 349368000, u'3-4 units': 51906000, u'1 unit': 3354862000L}, u'name': u'Pacific', u'# of permits': {u'2 units': 428, u'5+ units': 4061, u'3-4 units': 557, u'1 unit': 18248}, u'level': u'divisional'}, {u'valuations': {u'2 units': 15949000, u'5+ units': 55383000, u'3-4 units': 9245000, u'1 unit': 633203000}, u'name': u'New England', u'# of permits': {u'2 units': 170, u'5+ units': 916, u'3-4 units': 110, u'1 unit': 3702}, u'level': u'divisional'}, {u'valuations': {u'2 units': 198000, u'5+ units': 18205000, u'3-4 units': 928000, u'1 unit': 82618000}, u'name': u'Hawaii', u'# of permits': {u'2 units': 2, u'5+ units': 213, u'3-4 units': 11, u'1 unit': 427}, u'level': u'state'}]</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].locations.[0].valuations.2 units</td>
+        <td>int</td> 
+        <td></td>
+        <td>23595000</td>
+    </tr>
+    
+    <tr>
+        <td>[0].locations.[0].valuations.5+ units</td>
+        <td>int</td> 
+        <td></td>
+        <td>167249000</td>
+    </tr>
+    
+    <tr>
+        <td>[0].locations.[0].valuations.3-4 units</td>
+        <td>int</td> 
+        <td></td>
+        <td>41207000</td>
+    </tr>
+    
+    <tr>
+        <td>[0].locations.[0].valuations.1 unit</td>
+        <td>long</td> 
+        <td></td>
+        <td>2415962000</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].period.month name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>June</td>
+    </tr>
+    
+    <tr>
+        <td>[0].period.full</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>2003/6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].period.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>2003</td>
+    </tr>
+    
+    <tr>
+        <td>[0].period.month</td>
+        <td>int</td> 
+        <td></td>
+        <td>6</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].locations.[0].# of permits</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'2 units': 188, u'5+ units': 2600, u'3-4 units': 507, u'1 unit': 16770}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].locations.[0].name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Mountain</td>
+    </tr>
+    
+    <tr>
+        <td>[0].locations.[0].valuations</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'2 units': 23595000, u'5+ units': 167249000, u'3-4 units': 41207000, u'1 unit': 2415962000L}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].locations.[0].level</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>divisional</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].locations.[0].# of permits.2 units</td>
+        <td>int</td> 
+        <td></td>
+        <td>188</td>
+    </tr>
+    
+    <tr>
+        <td>[0].locations.[0].# of permits.5+ units</td>
+        <td>int</td> 
+        <td></td>
+        <td>2600</td>
+    </tr>
+    
+    <tr>
+        <td>[0].locations.[0].# of permits.3-4 units</td>
+        <td>int</td> 
+        <td></td>
+        <td>507</td>
+    </tr>
+    
+    <tr>
+        <td>[0].locations.[0].# of permits.1 unit</td>
+        <td>int</td> 
+        <td></td>
+        <td>16770</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

@@ -44,12 +44,220 @@ The UNAIDS Organization is an entity of the United Nations that looks to reduce 
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.AIDS-Related Deaths.Male Adults</td>
+        <td>int</td> 
+        <td>15+ Years Old</td>
+        <td>227</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.AIDS-Related Deaths.All Ages</td>
+        <td>int</td> 
+        <td></td>
+        <td>341</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.AIDS-Related Deaths.AIDS Orphans</td>
+        <td>int</td> 
+        <td>0-17 Years Old</td>
+        <td>3953</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.AIDS-Related Deaths.Children</td>
+        <td>int</td> 
+        <td>0-14 Years Old</td>
+        <td>30</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.AIDS-Related Deaths.Female Adults</td>
+        <td>int</td> 
+        <td>15+ Years Old</td>
+        <td>84</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.AIDS-Related Deaths.Adults</td>
+        <td>int</td> 
+        <td>15+ Years Old</td>
+        <td>312</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.New HIV Infections.Incidence Rate Among Adults</td>
+        <td>float</td> 
+        <td>15-49 Years Old</td>
+        <td>0.0058</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.New HIV Infections.Male Adults</td>
+        <td>int</td> 
+        <td>15+ Years Old</td>
+        <td>659</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.New HIV Infections.All Ages</td>
+        <td>int</td> 
+        <td></td>
+        <td>968</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.New HIV Infections.Children</td>
+        <td>int</td> 
+        <td>0-14 Years Old</td>
+        <td>62</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.New HIV Infections.Female Adults</td>
+        <td>float</td> 
+        <td>15+ Years Old</td>
+        <td>247.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.New HIV Infections.Adults</td>
+        <td>int</td> 
+        <td>15+ Years Old</td>
+        <td>906</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.People Living with HIV.Male Adults</td>
+        <td>int</td> 
+        <td>15+ Years Old</td>
+        <td>4784</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.People Living with HIV.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>6931</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.People Living with HIV.Children</td>
+        <td>int</td> 
+        <td>0-14 Years Old</td>
+        <td>233</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.People Living with HIV.Female Adults</td>
+        <td>int</td> 
+        <td>15+ Years Old</td>
+        <td>1914</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.People Living with HIV.Adults</td>
+        <td>int</td> 
+        <td>15+ Years Old</td>
+        <td>6698</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.HIV Prevalence.Young Men</td>
+        <td>float</td> 
+        <td>15-24 Years Old</td>
+        <td>0.0127</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.HIV Prevalence.Adults</td>
+        <td>float</td> 
+        <td>15-49 Years Old</td>
+        <td>0.0395</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.HIV Prevalence.Young Women</td>
+        <td>float</td> 
+        <td>15-24 Years Old</td>
+        <td>0.0108</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Country</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Afghanistan</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'HIV Prevalence': {u'Young Men': 0.0127, u'Adults': 0.0395, u'Young Women': 0.0108}, u'AIDS-Related Deaths': {u'Adults': 312, u'All Ages': 341, u'AIDS Orphans': 3953, u'Children': 30, u'Female Adults': 84, u'Male Adults': 227}, u'New HIV Infections': {u'Incidence Rate Among Adults': 0.0058, u'Adults': 906, u'All Ages': 968, u'Children': 62, u'Female Adults': 247.0, u'Male Adults': 659}, u'People Living with HIV': {u'Adults': 6698, u'Total': 6931, u'Male Adults': 4784, u'Female Adults': 1914, u'Children': 233}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Year</td>
+        <td>int</td> 
+        <td></td>
+        <td>2015</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.HIV Prevalence</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Young Men': 0.0127, u'Adults': 0.0395, u'Young Women': 0.0108}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.People Living with HIV</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Adults': 6698, u'Total': 6931, u'Male Adults': 4784, u'Female Adults': 1914, u'Children': 233}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.New HIV Infections</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Incidence Rate Among Adults': 0.0058, u'Adults': 906, u'All Ages': 968, u'Children': 62, u'Female Adults': 247.0, u'Male Adults': 659}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.AIDS-Related Deaths</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Adults': 312, u'All Ages': 341, u'AIDS Orphans': 3953, u'Children': 30, u'Female Adults': 84, u'Male Adults': 227}</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

@@ -36,20 +36,6 @@ Hydropower JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -114,12 +100,134 @@ Recent Federal policies and legislation focus on moving the nation towards a cle
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Identity.Project</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Organization': u'Rogue River Basin', u'Year': 1965}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Identity.Name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Agate Dam</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Identity.Watercourse</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Dry Creek</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Identity.Project.Organization</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Rogue River Basin</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Identity.Project.Year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1965</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Location</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Latitude': 42.4155, u'County': u'Jackson', u'State': u'Oregon', u'Longitude': -122.7723}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Identity</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Project': {u'Organization': u'Rogue River Basin', u'Year': 1965}, u'Name': u'Agate Dam', u'Watercourse': u'Dry Creek'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Dimensions</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Structural Height': 86.0, u'Crest Elevaion': 1520.0, u'Crest Length': 3800.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Location.Latitude</td>
+        <td>float</td> 
+        <td>Missing values for the Latitude were imputed with a mean value of 36.278079019861529</td>
+        <td>42.4155</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Location.County</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Jackson</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Location.State</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Oregon</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Location.Longitude</td>
+        <td>float</td> 
+        <td>Missing values for the Longitude were imputed with a mean value of -97.501892792978808</td>
+        <td>-122.7723</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Dimensions.Crest Length</td>
+        <td>float</td> 
+        <td></td>
+        <td>3800.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Dimensions.Crest Elevaion</td>
+        <td>float</td> 
+        <td></td>
+        <td>1520.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Dimensions.Structural Height</td>
+        <td>float</td> 
+        <td>In feet, missing values were imputed with a mean value of 132.17</td>
+        <td>86.0</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

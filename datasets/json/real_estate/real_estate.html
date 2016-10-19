@@ -44,12 +44,192 @@ Real Estate Across the United States (REXUS) is the primary tool used by PBS to 
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].location.address.city</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>HARTFORD</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.address.zip</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>61031125</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.address.county</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>HARTFORD</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.address.state</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>CT</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.address.line 1</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>135 HIGH ST</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.address.line 2</td>
+        <td>unicode</td> 
+        <td></td>
+        <td> </td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'status': u'ACTIVE', u'disabilities': {u'ansi usable': u'97884', u'aba accessible': u'Will Conform'}, u'parking spaces': u'29', u'owned or leased': u'OWNED', u'date': u'1-Jan-33', u'type': u'BUILDING', u'history': {u'status': u'National Register Listed', u'type': u'Field Not In Use'}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'region id': u'1', u'address': {u'city': u'HARTFORD', u'zip': u'61031125', u'county': u'HARTFORD', u'state': u'CT', u'line 1': u'135 HIGH ST', u'line 2': u' '}, u'congressional district': u'1', u'id': u'CT0013'}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.disabilities.ansi usable</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>97884</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.disabilities.aba accessible</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Will Conform</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.history.status</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>National Register Listed</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.history.type</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Field Not In Use</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.status</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>ACTIVE</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.disabilities</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'ansi usable': u'97884', u'aba accessible': u'Will Conform'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.parking spaces</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>29</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.owned or leased</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>OWNED</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.date</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1-Jan-33</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.type</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>BUILDING</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.history</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'status': u'National Register Listed', u'type': u'Field Not In Use'}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].location.region id</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.congressional district</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.id</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>CT0013</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.address</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'city': u'HARTFORD', u'zip': u'61031125', u'county': u'HARTFORD', u'state': u'CT', u'line 1': u'135 HIGH ST', u'line 2': u' '}</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

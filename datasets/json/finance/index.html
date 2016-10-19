@@ -36,20 +36,6 @@ Finance JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -114,12 +100,1294 @@ The Annual Survey of State Government Finances provides a comprehensive summary 
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Insurance Trust.Insurance Trust Other Securities</td>
+        <td>int</td> 
+        <td></td>
+        <td>6229427</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Insurance Trust.Insurance Trust Cash and Deposits</td>
+        <td>int</td> 
+        <td></td>
+        <td>1718782</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Insurance Trust.Insurance Trust State and Local Securities Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Insurance Trust.Insurance Trust Securities Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>8112690</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Insurance Trust.Insurance Trust Federal Agency Securities</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Insurance Trust.Insurance Trust Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>1122612</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Insurance Trust.Insurance Trust</td>
+        <td>int</td> 
+        <td></td>
+        <td>1122612</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Insurance Trust.Insurance Trust Cash and Securities</td>
+        <td>int</td> 
+        <td></td>
+        <td>9962332</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Insurance Trust.Insurance Trust Federal Securities</td>
+        <td>int</td> 
+        <td></td>
+        <td>1883263</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Correction.Correction Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>13529</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Correction.Correction NEC Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>13529</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Correction.Correction NEC Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>130881</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Correction.Correction Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>296108</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Correction.Correction Institutions Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>165227</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Employment.Unemployment Comp Total Cash and Securities</td>
+        <td>int</td> 
+        <td></td>
+        <td>544529</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Employment.Employment Security Administration Expenditure Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>37401</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Employment.Employee Retirement Total Cash and Securities</td>
+        <td>int</td> 
+        <td></td>
+        <td>8699175</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Employment.Employment Security Administration Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Employment.Employee Retirement Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>712514</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Employment.Unemployment Comp Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>146857</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].State</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Oklahoma</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Insurance trust  revenue': 2206642, u'Capital outlay': 711251, u'State intergovernmental': 0, u'Miscellaneous': 407354, u'Equipment and land': 194464, u'Construction': 516787, u'Expenditure': 9024966, u'General revenue': 8155980, u'Miscellaneous commercial activity': 1968, u'Other insurance trust revenue': 0, u"Worker's comp revenue": 295603, u'Charges': 933593, u'Unemployment comp revenue': 206068, u'Selective sales tax': 659669, u'Sales tax': 1870060, u'License tax': 658486, u'Federal intergovernmental': 2119474, u'General expenditure': 7752849, u'Utility revenue': 246482, u'Revenue': 10609104, u'Tax': 4617688, u'Employee retirement revenue': 1704971, u'Intergovernmental': 2197345, u'Local intergovernmental': 77871}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details</td>
+        <td>dict</td> 
+        <td>NEC - Not Elsewhere Defined</td>
+        <td>{u'Waste': {u'Sewerage Total Expenditure': 24316, u'Solid Waste Management Intergovernmental': 169, u'Sewerage Intergovernmental': 23940, u'Solid Waste Management Total Expenditure': 3937}, u'Transportation': {u'Transit Subsidy Intergovernmental': 0, u'Airports': {u'Airports Intergovernmental': 2311, u'Airports Total Expenditure': 2469}, u'Transit Subsidy Total Expenditure': 0, u'Highways': {u'Regular Highways Intergovernmental': 213859, u'Toll Highways Total Expenditure': 82275, u'Highways Direct': 618099, u'Highways Intergovernmental': 213859, u'Highways Total Expenditure': 831958, u'Highways Land and Equipment': 50890, u'Highways Construction Total': 408413, u'Regular Highways Total Expenditure': 749683}, u'Water Transport': {u'Water Transport Intergovernmental': 0, u'Water Transport Total Expenditure': 10}, u'Parking': {u'Parking Total': 0, u'Parking Intergovernmental': 0}}, u'Natural Resources': {u'Fish and Game': {u'Fish and Game Intergovernmental': 331, u'Fish and Game Total Expenditure': 23231}, u'Natural Resources Total': 132691, u'Natural Resources Intergovernmental': 11113, u'Natural Resources NEC Total Expenditure': 35596, u'Natural Resources Construction': 2393, u'Parks': {u'Parks Total Expenditure': 49855, u'Parks Intergovernmental': 4057}, u'Forestry': {u'Forestry Intergovernmental': 3687, u'Forestry Total Expenditure': 6009}, u'Natural Resources Direct': 121578, u'Natural Resources Equipment and Land': 9543, u'Agriculture': {u'Agriculture Intergovernmental': 273, u'Agriculture Total Expenditure': 67855, u'Federal Agriculture Farm Income Intergovernmental': 0, u'Federal Agriculture Farm Income Total': 0, u'Federal Farm Credit Total': 0, u'Federal Farm Credit Intergovernmental': 0}}, u'Correction': {u'Correction Intergovernmental': 13529, u'Correction NEC Intergovernmental': 13529, u'Correction NEC Total': 130881, u'Correction Institutions Total': 165227, u'Correction Total': 296108}, u'Utilities': {u'Utilities Current Operation': 138479, u'Gas Utility Total Expenditure': 4553, u'Water Utility Total Expenditure': 2417, u'Utilities Total Expenditure': 149505, u'Utilities Equipment and Land': 374, u'Utilities Construction': 10652, u'Utilities Interest Total': 0, u'Transit Utility Total Expenditure': 0, u'Electric Utility Total Expenditure': 142535}, u'Health': {u'Health Total Expenditure': 309846, u'Hospitals': {u'Own Hospitals Total Expenditure': 282472, u'Hospital-Other Total Expenditure': 655, u'Hospitals Total Expenditure': 283127, u'Hospitals Total Intergovernmental': 655, u'Hospitals Total Equipment and land': 5502, u'Hospitals Total Construction': 1233, u'Hospitals Total Current': 275737, u'Hospital-Other Intergovernmental': 655}, u'Health Intergovernmental': 67608}, u'Public Welfare': {u'Public Welfare Equipment and Land': 9452, u'Public Welfare Intergovernmental': 48222, u'Public Welfare Other Current Operation': 1450135, u'Public Welfare Direct Expenditure': 1610161, u'Public Welfare Construction': 12382, u'Public Welfare Total Expenditure': 1658383, u'Public Welfare Assistance and Subsidies': 138192}, u'Financial Aid': {u'Federal Agency Securities Total': 0, u'Beginning Long Term Debt Total Outstanding': 0, u'Categorical Assistance Total Expenditure': 170160, u'Cash Assistance Total Expenditure': 9074, u'Borrowing Total': 0, u'Cash and Securities Total': 14606637, u'Assistance and Subsidies': 206533, u'Cash and Deposits Total': 6363087, u'Categorical Assistance Intergovernmental': 41042, u'Sinking Fund Total': 1379240, u'Securities Total': 8112690, u'Bond Fund Total': 250936, u'Cash Assistance Intergovernmental': 0}, u'Welfare': {u'Welfare Institution Total Expenditure': 45510, u'Welfare Vendor Payments Total': 1115785, u'Welfare NEC Total Expenditure': 317854, u'Welfare NEC Intergovernmental': 7180}, u'Education': {u'Education-NEC Intergovernmental': 348, u'Education Equipment': 66084, u'Edcation Assistance and Subsidies': 68341, u'Education-NEC Expenditure Total': 154591, u'Education Total': 3475725, u'Elementary Secondary Total Expenditure': 2053367, u'Education Equipment and Land': 69335, u'Education Construction': 63357, u'Higher Education-NEC Total Expenditure': 1061281, u'Higher Education-NEC Intergovernmental': 0, u'Higher Education-Auxilliary Total Expenditure': 206486, u'Education Intergovernmental': 2038925, u'Elementary Secondary Intergovernmental': 2038577, u'Education Other Current Operation': 1235767}, u'Employment': {u'Unemployment Comp Total Cash and Securities': 544529, u'Employment Security Administration Expenditure Total': 37401, u'Employee Retirement Total Cash and Securities': 8699175, u'Employment Security Administration Intergovernmental': 0, u'Employee Retirement Total Expenditure': 712514, u'Unemployment Comp Total Expenditure': 146857}, u'Intergovernmental': {u'Intergovernmental to Combined and Unallocable': 75015, u'Intergovernmental to Federal': 41125, u'Intergovernmental to Municipalities': 0, u'Intergovernmental to Counties': 377518, u'Intergovernmental to State': 0, u'Intergovernmental to Townships': 0, u'Intergovernmental to Special Districts': 5319, u'Intergovernmental Expenditure': 2536908, u'Intergovernmental to Local': 2495783, u'Intergovernmental to School Districts': 2037931}, u'Insurance Trust': {u'Insurance Trust Other Securities': 6229427, u'Insurance Trust Cash and Deposits': 1718782, u'Insurance Trust State and Local Securities Total': 0, u'Insurance Trust Securities Total': 8112690, u'Insurance Trust Federal Agency Securities': 0, u'Insurance Trust Total Expenditure': 1122612, u'Insurance Trust': 1122612, u'Insurance Trust Cash and Securities': 9962332, u'Insurance Trust Federal Securities': 1883263}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1996</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Agriculture.Agriculture Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>273</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Agriculture.Agriculture Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>67855</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Agriculture.Federal Agriculture Farm Income Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Agriculture.Federal Agriculture Farm Income Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Agriculture.Federal Farm Credit Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Agriculture.Federal Farm Credit Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Fish and Game.Fish and Game Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>331</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Fish and Game.Fish and Game Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>23231</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Intergovernmental.Intergovernmental to Combined and Unallocable</td>
+        <td>int</td> 
+        <td></td>
+        <td>75015</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Intergovernmental.Intergovernmental to Federal</td>
+        <td>int</td> 
+        <td></td>
+        <td>41125</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Intergovernmental.Intergovernmental to Municipalities</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Intergovernmental.Intergovernmental to Counties</td>
+        <td>int</td> 
+        <td></td>
+        <td>377518</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Intergovernmental.Intergovernmental to State</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Intergovernmental.Intergovernmental to Townships</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Intergovernmental.Intergovernmental to Special Districts</td>
+        <td>int</td> 
+        <td></td>
+        <td>5319</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Intergovernmental.Intergovernmental Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>2536908</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Intergovernmental.Intergovernmental to Local</td>
+        <td>int</td> 
+        <td></td>
+        <td>2495783</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Intergovernmental.Intergovernmental to School Districts</td>
+        <td>int</td> 
+        <td></td>
+        <td>2037931</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Education</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Education-NEC Intergovernmental': 348, u'Education Equipment': 66084, u'Edcation Assistance and Subsidies': 68341, u'Education-NEC Expenditure Total': 154591, u'Education Total': 3475725, u'Elementary Secondary Total Expenditure': 2053367, u'Education Equipment and Land': 69335, u'Education Construction': 63357, u'Higher Education-NEC Total Expenditure': 1061281, u'Higher Education-NEC Intergovernmental': 0, u'Higher Education-Auxilliary Total Expenditure': 206486, u'Education Intergovernmental': 2038925, u'Elementary Secondary Intergovernmental': 2038577, u'Education Other Current Operation': 1235767}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Transit Subsidy Intergovernmental': 0, u'Airports': {u'Airports Intergovernmental': 2311, u'Airports Total Expenditure': 2469}, u'Transit Subsidy Total Expenditure': 0, u'Highways': {u'Regular Highways Intergovernmental': 213859, u'Toll Highways Total Expenditure': 82275, u'Highways Direct': 618099, u'Highways Intergovernmental': 213859, u'Highways Total Expenditure': 831958, u'Highways Land and Equipment': 50890, u'Highways Construction Total': 408413, u'Regular Highways Total Expenditure': 749683}, u'Water Transport': {u'Water Transport Intergovernmental': 0, u'Water Transport Total Expenditure': 10}, u'Parking': {u'Parking Total': 0, u'Parking Intergovernmental': 0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Fish and Game': {u'Fish and Game Intergovernmental': 331, u'Fish and Game Total Expenditure': 23231}, u'Natural Resources Total': 132691, u'Natural Resources Intergovernmental': 11113, u'Natural Resources NEC Total Expenditure': 35596, u'Natural Resources Construction': 2393, u'Parks': {u'Parks Total Expenditure': 49855, u'Parks Intergovernmental': 4057}, u'Forestry': {u'Forestry Intergovernmental': 3687, u'Forestry Total Expenditure': 6009}, u'Natural Resources Direct': 121578, u'Natural Resources Equipment and Land': 9543, u'Agriculture': {u'Agriculture Intergovernmental': 273, u'Agriculture Total Expenditure': 67855, u'Federal Agriculture Farm Income Intergovernmental': 0, u'Federal Agriculture Farm Income Total': 0, u'Federal Farm Credit Total': 0, u'Federal Farm Credit Intergovernmental': 0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Correction</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Correction Intergovernmental': 13529, u'Correction NEC Intergovernmental': 13529, u'Correction NEC Total': 130881, u'Correction Institutions Total': 165227, u'Correction Total': 296108}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Utilities</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Utilities Current Operation': 138479, u'Gas Utility Total Expenditure': 4553, u'Water Utility Total Expenditure': 2417, u'Utilities Total Expenditure': 149505, u'Utilities Equipment and Land': 374, u'Utilities Construction': 10652, u'Utilities Interest Total': 0, u'Transit Utility Total Expenditure': 0, u'Electric Utility Total Expenditure': 142535}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Health</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Health Total Expenditure': 309846, u'Hospitals': {u'Own Hospitals Total Expenditure': 282472, u'Hospital-Other Total Expenditure': 655, u'Hospitals Total Expenditure': 283127, u'Hospitals Total Intergovernmental': 655, u'Hospitals Total Equipment and land': 5502, u'Hospitals Total Construction': 1233, u'Hospitals Total Current': 275737, u'Hospital-Other Intergovernmental': 655}, u'Health Intergovernmental': 67608}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Public Welfare</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Public Welfare Equipment and Land': 9452, u'Public Welfare Intergovernmental': 48222, u'Public Welfare Other Current Operation': 1450135, u'Public Welfare Direct Expenditure': 1610161, u'Public Welfare Construction': 12382, u'Public Welfare Total Expenditure': 1658383, u'Public Welfare Assistance and Subsidies': 138192}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Federal Agency Securities Total': 0, u'Beginning Long Term Debt Total Outstanding': 0, u'Categorical Assistance Total Expenditure': 170160, u'Cash Assistance Total Expenditure': 9074, u'Borrowing Total': 0, u'Cash and Securities Total': 14606637, u'Assistance and Subsidies': 206533, u'Cash and Deposits Total': 6363087, u'Categorical Assistance Intergovernmental': 41042, u'Sinking Fund Total': 1379240, u'Securities Total': 8112690, u'Bond Fund Total': 250936, u'Cash Assistance Intergovernmental': 0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Welfare</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Welfare Institution Total Expenditure': 45510, u'Welfare Vendor Payments Total': 1115785, u'Welfare NEC Total Expenditure': 317854, u'Welfare NEC Intergovernmental': 7180}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Waste</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Sewerage Total Expenditure': 24316, u'Solid Waste Management Intergovernmental': 169, u'Sewerage Intergovernmental': 23940, u'Solid Waste Management Total Expenditure': 3937}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Employment</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Unemployment Comp Total Cash and Securities': 544529, u'Employment Security Administration Expenditure Total': 37401, u'Employee Retirement Total Cash and Securities': 8699175, u'Employment Security Administration Intergovernmental': 0, u'Employee Retirement Total Expenditure': 712514, u'Unemployment Comp Total Expenditure': 146857}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Intergovernmental</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Intergovernmental to Combined and Unallocable': 75015, u'Intergovernmental to Federal': 41125, u'Intergovernmental to Municipalities': 0, u'Intergovernmental to Counties': 377518, u'Intergovernmental to State': 0, u'Intergovernmental to Townships': 0, u'Intergovernmental to Special Districts': 5319, u'Intergovernmental Expenditure': 2536908, u'Intergovernmental to Local': 2495783, u'Intergovernmental to School Districts': 2037931}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Insurance Trust</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Insurance Trust Other Securities': 6229427, u'Insurance Trust Cash and Deposits': 1718782, u'Insurance Trust State and Local Securities Total': 0, u'Insurance Trust Securities Total': 8112690, u'Insurance Trust Federal Agency Securities': 0, u'Insurance Trust Total Expenditure': 1122612, u'Insurance Trust': 1122612, u'Insurance Trust Cash and Securities': 9962332, u'Insurance Trust Federal Securities': 1883263}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Federal Agency Securities Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Beginning Long Term Debt Total Outstanding</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Categorical Assistance Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>170160</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Cash Assistance Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>9074</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Categorical Assistance Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>41042</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Cash and Securities Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>14606637</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Assistance and Subsidies</td>
+        <td>int</td> 
+        <td></td>
+        <td>206533</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Cash Assistance Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Borrowing Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Sinking Fund Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>1379240</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Securities Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>8112690</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Bond Fund Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>250936</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Financial Aid.Cash and Deposits Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>6363087</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Transportation.Highways.Regular Highways Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>213859</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Highways.Toll Highways Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>82275</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Highways.Highways Direct</td>
+        <td>int</td> 
+        <td></td>
+        <td>618099</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Highways.Highways Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>213859</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Highways.Highways Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>831958</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Highways.Highways Land and Equipment</td>
+        <td>int</td> 
+        <td></td>
+        <td>50890</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Highways.Highways Construction Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>408413</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Highways.Regular Highways Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>749683</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Education.Education-NEC Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>348</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Education Equipment</td>
+        <td>int</td> 
+        <td></td>
+        <td>66084</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Edcation Assistance and Subsidies</td>
+        <td>int</td> 
+        <td></td>
+        <td>68341</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Education-NEC Expenditure Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>154591</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Education Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>3475725</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Elementary Secondary Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>2053367</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Education Equipment and Land</td>
+        <td>int</td> 
+        <td></td>
+        <td>69335</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Higher Education-NEC Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>1061281</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Education Construction</td>
+        <td>int</td> 
+        <td></td>
+        <td>63357</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Elementary Secondary Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>2038577</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Higher Education-NEC Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Education Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>2038925</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Higher Education-Auxilliary Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>206486</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Education.Education Other Current Operation</td>
+        <td>int</td> 
+        <td></td>
+        <td>1235767</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Utilities.Water Utility Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>2417</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Utilities.Gas Utility Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>4553</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Utilities.Utilities Current Operation</td>
+        <td>int</td> 
+        <td></td>
+        <td>138479</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Utilities.Utilities Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>149505</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Utilities.Utilities Equipment and Land</td>
+        <td>int</td> 
+        <td></td>
+        <td>374</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Utilities.Utilities Construction</td>
+        <td>int</td> 
+        <td></td>
+        <td>10652</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Utilities.Utilities Interest Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Utilities.Transit Utility Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Utilities.Electric Utility Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>142535</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Waste.Sewerage Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>24316</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Waste.Solid Waste Management Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>169</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Waste.Sewerage Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>23940</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Waste.Solid Waste Management Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>3937</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Insurance trust  revenue</td>
+        <td>int</td> 
+        <td></td>
+        <td>2206642</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Capital outlay</td>
+        <td>int</td> 
+        <td></td>
+        <td>711251</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.State intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Miscellaneous</td>
+        <td>int</td> 
+        <td></td>
+        <td>407354</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Charges</td>
+        <td>int</td> 
+        <td></td>
+        <td>933593</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Construction</td>
+        <td>int</td> 
+        <td></td>
+        <td>516787</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>9024966</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.General revenue</td>
+        <td>int</td> 
+        <td></td>
+        <td>8155980</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Miscellaneous commercial activity</td>
+        <td>int</td> 
+        <td></td>
+        <td>1968</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Other insurance trust revenue</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Worker's comp revenue</td>
+        <td>int</td> 
+        <td></td>
+        <td>295603</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Equipment and land</td>
+        <td>int</td> 
+        <td></td>
+        <td>194464</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Unemployment comp revenue</td>
+        <td>int</td> 
+        <td></td>
+        <td>206068</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Selective sales tax</td>
+        <td>int</td> 
+        <td></td>
+        <td>659669</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Sales tax</td>
+        <td>int</td> 
+        <td></td>
+        <td>1870060</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.License tax</td>
+        <td>int</td> 
+        <td></td>
+        <td>658486</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Federal intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>2119474</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.General expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>7752849</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Utility revenue</td>
+        <td>int</td> 
+        <td></td>
+        <td>246482</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Revenue</td>
+        <td>int</td> 
+        <td></td>
+        <td>10609104</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Tax</td>
+        <td>int</td> 
+        <td></td>
+        <td>4617688</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Local intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>77871</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>2197345</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Employee retirement revenue</td>
+        <td>int</td> 
+        <td></td>
+        <td>1704971</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Welfare.Welfare Institution Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>45510</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Welfare.Welfare Vendor Payments Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>1115785</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Welfare.Welfare NEC Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>317854</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Welfare.Welfare NEC Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>7180</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Transportation.Transit Subsidy Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Airports</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Airports Intergovernmental': 2311, u'Airports Total Expenditure': 2469}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Transit Subsidy Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Highways</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Regular Highways Intergovernmental': 213859, u'Toll Highways Total Expenditure': 82275, u'Highways Direct': 618099, u'Highways Intergovernmental': 213859, u'Highways Total Expenditure': 831958, u'Highways Land and Equipment': 50890, u'Highways Construction Total': 408413, u'Regular Highways Total Expenditure': 749683}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Water Transport</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Water Transport Intergovernmental': 0, u'Water Transport Total Expenditure': 10}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Parking</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Parking Total': 0, u'Parking Intergovernmental': 0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Transportation.Parking.Parking Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Parking.Parking Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Fish and Game</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Fish and Game Intergovernmental': 331, u'Fish and Game Total Expenditure': 23231}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Natural Resources Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>132691</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Natural Resources Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>11113</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Natural Resources NEC Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>35596</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Natural Resources Construction</td>
+        <td>int</td> 
+        <td></td>
+        <td>2393</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Parks</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Parks Total Expenditure': 49855, u'Parks Intergovernmental': 4057}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Forestry</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Forestry Intergovernmental': 3687, u'Forestry Total Expenditure': 6009}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Natural Resources Direct</td>
+        <td>int</td> 
+        <td></td>
+        <td>121578</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Natural Resources Equipment and Land</td>
+        <td>int</td> 
+        <td></td>
+        <td>9543</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Agriculture</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Agriculture Intergovernmental': 273, u'Agriculture Total Expenditure': 67855, u'Federal Agriculture Farm Income Intergovernmental': 0, u'Federal Agriculture Farm Income Total': 0, u'Federal Farm Credit Total': 0, u'Federal Farm Credit Intergovernmental': 0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Transportation.Water Transport.Water Transport Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Water Transport.Water Transport Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>10</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Parks.Parks Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>49855</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Parks.Parks Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>4057</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Forestry.Forestry Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>3687</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Natural Resources.Forestry.Forestry Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>6009</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Public Welfare.Public Welfare Equipment and Land</td>
+        <td>int</td> 
+        <td></td>
+        <td>9452</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Public Welfare.Public Welfare Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>48222</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Public Welfare.Public Welfare Other Current Operation</td>
+        <td>int</td> 
+        <td></td>
+        <td>1450135</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Public Welfare.Public Welfare Direct Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>1610161</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Public Welfare.Public Welfare Construction</td>
+        <td>int</td> 
+        <td></td>
+        <td>12382</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Public Welfare.Public Welfare Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>1658383</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Public Welfare.Public Welfare Assistance and Subsidies</td>
+        <td>int</td> 
+        <td></td>
+        <td>138192</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Health.Hospitals.Own Hospitals Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>282472</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Health.Hospitals.Hospital-Other Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>655</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Health.Hospitals.Hospitals Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>283127</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Health.Hospitals.Hospitals Total Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>655</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Health.Hospitals.Hospitals Total Equipment and land</td>
+        <td>int</td> 
+        <td></td>
+        <td>5502</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Health.Hospitals.Hospitals Total Construction</td>
+        <td>int</td> 
+        <td></td>
+        <td>1233</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Health.Hospitals.Hospitals Total Current</td>
+        <td>int</td> 
+        <td></td>
+        <td>275737</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Health.Hospitals.Hospital-Other Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>655</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Transportation.Airports.Airports Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>2311</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Transportation.Airports.Airports Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>2469</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Details.Health.Health Total Expenditure</td>
+        <td>int</td> 
+        <td></td>
+        <td>309846</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Health.Hospitals</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Own Hospitals Total Expenditure': 282472, u'Hospital-Other Total Expenditure': 655, u'Hospitals Total Expenditure': 283127, u'Hospitals Total Intergovernmental': 655, u'Hospitals Total Equipment and land': 5502, u'Hospitals Total Construction': 1233, u'Hospitals Total Current': 275737, u'Hospital-Other Intergovernmental': 655}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Details.Health.Health Intergovernmental</td>
+        <td>int</td> 
+        <td></td>
+        <td>67608</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

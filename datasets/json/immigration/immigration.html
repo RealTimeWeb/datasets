@@ -44,12 +44,164 @@ The Yearbook of Immigration Statistics is a compendium of tables that provides d
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Country</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Canada</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Enforcement': {u'Non-criminal': 1099, u'Criminal': 462, u'Apprehended': 1486, u'Inadmissable': 41861}, u'Legal permanant residences': {u'Birth': 21878, u'Last Residence': 29930}, u'Naturalizations (Birth)': 7815, u'Refugees': {u'Defensive Asylum': 4, u'Arrived': -1, u'Affirmative': -1}, u'Nonimmigrant Admissions': {u'Last Residence': 527264, u'Birth': 231171}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Year</td>
+        <td>int</td> 
+        <td></td>
+        <td>2005</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Enforcement</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Non-criminal': 1099, u'Criminal': 462, u'Apprehended': 1486, u'Inadmissable': 41861}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Legal permanant residences</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Birth': 21878, u'Last Residence': 29930}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Naturalizations (Birth)</td>
+        <td>int</td> 
+        <td></td>
+        <td>7815</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Refugees</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Defensive Asylum': 4, u'Arrived': -1, u'Affirmative': -1}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Nonimmigrant Admissions</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Last Residence': 527264, u'Birth': 231171}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Refugees.Arrived</td>
+        <td>int</td> 
+        <td></td>
+        <td>-1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Refugees.Defensive Asylum</td>
+        <td>int</td> 
+        <td></td>
+        <td>4</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Refugees.Affirmative</td>
+        <td>int</td> 
+        <td></td>
+        <td>-1</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Legal permanant residences.Last Residence</td>
+        <td>int</td> 
+        <td></td>
+        <td>29930</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Legal permanant residences.Birth</td>
+        <td>int</td> 
+        <td></td>
+        <td>21878</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Nonimmigrant Admissions.Birth</td>
+        <td>int</td> 
+        <td></td>
+        <td>231171</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Nonimmigrant Admissions.Last Residence</td>
+        <td>int</td> 
+        <td></td>
+        <td>527264</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Enforcement.Non-criminal</td>
+        <td>int</td> 
+        <td></td>
+        <td>1099</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Enforcement.Criminal</td>
+        <td>int</td> 
+        <td></td>
+        <td>462</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Enforcement.Apprehended</td>
+        <td>int</td> 
+        <td></td>
+        <td>1486</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Enforcement.Inadmissable</td>
+        <td>int</td> 
+        <td></td>
+        <td>41861</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

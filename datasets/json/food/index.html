@@ -36,20 +36,6 @@ Food JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -114,12 +100,402 @@ The following data comes from the United States Department of Agriculture's Food
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Category</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>BUTTER</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Niacin': 0.042, u'Major Minerals': {u'Copper': 0.0, u'Zinc': 0.09, u'Sodium': 576, u'Potassium': 24, u'Calcium': 24, u'Magnesium': 2, u'Iron': 0.02, u'Phosphorus': 24}, u'Vitamins': {u'Vitamin A - IU': 2499, u'Vitamin C': 0.0, u'Vitamin B12': 0.17, u'Vitamin B6': 0.003, u'Vitamin A - RAE': 684, u'Vitamin E': 2.32, u'Vitamin K': 7.0}, u'Carboydrate': 0.06, u'Selenium': 1.0, u'Thiamin': 0.005, u'Choline': 19, u'Beta Carotene': 158, u'Fiber': 0.0, u'Refuse Percentage': 0, u'Fat': {u'Saturated Fat': 51.368, u'Monosaturated Fat': 21.021, u'Total Lipid': 81.11, u'Polysaturated Fat': 3.043}, u'Water': 15.87, u'Lycopene': 0, u'Pantothenic Acid': 0.11, u'Ash': 2.11, u'Household Weights': {u'2nd Household Weight': 14, u'2nd Household Weight Description': u'1 tbsp', u'1st Household Weight': 227.0, u'1st Household Weight Description': u'1 cup'}, u'Retinol': 671, u'Manganese': 0.0, u'Beta Cryptoxanthin': 0, u'Riboflavin': 0.034, u'Cholesterol': 215, u'Lutein and Zeaxanthin': 0, u'Kilocalories': 717, u'Alpha Carotene': 0, u'Sugar Total': 0.059999999, u'Protein': 0.85}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Description</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>BUTTER,WITH SALT</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Nutrient Data Bank Number</td>
+        <td>int</td> 
+        <td></td>
+        <td>1001</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Fat.Saturated Fat</td>
+        <td>float</td> 
+        <td></td>
+        <td>51.368</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Fat.Monosaturated Fat</td>
+        <td>float</td> 
+        <td></td>
+        <td>21.021</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Fat.Total Lipid</td>
+        <td>float</td> 
+        <td></td>
+        <td>81.11</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Fat.Polysaturated Fat</td>
+        <td>float</td> 
+        <td></td>
+        <td>3.043</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Niacin</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.042</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Major Minerals</td>
+        <td>dict</td> 
+        <td>In milligrams per 100 grams</td>
+        <td>{u'Copper': 0.0, u'Zinc': 0.09, u'Sodium': 576, u'Potassium': 24, u'Calcium': 24, u'Magnesium': 2, u'Iron': 0.02, u'Phosphorus': 24}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Vitamins</td>
+        <td>dict</td> 
+        <td>In milligrams per 100 grams</td>
+        <td>{u'Vitamin A - IU': 2499, u'Vitamin C': 0.0, u'Vitamin B12': 0.17, u'Vitamin B6': 0.003, u'Vitamin A - RAE': 684, u'Vitamin E': 2.32, u'Vitamin K': 7.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Carboydrate</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.06</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Selenium</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Thiamin</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.005</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Choline</td>
+        <td>int</td> 
+        <td></td>
+        <td>19</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Beta Carotene</td>
+        <td>int</td> 
+        <td></td>
+        <td>158</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Fiber</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Refuse Percentage</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Fat</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Saturated Fat': 51.368, u'Monosaturated Fat': 21.021, u'Total Lipid': 81.11, u'Polysaturated Fat': 3.043}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Water</td>
+        <td>float</td> 
+        <td></td>
+        <td>15.87</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Lycopene</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Pantothenic Acid</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.11</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Ash</td>
+        <td>float</td> 
+        <td></td>
+        <td>2.11</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Alpha Carotene</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Retinol</td>
+        <td>int</td> 
+        <td></td>
+        <td>671</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Manganese</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Beta Cryptoxanthin</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Riboflavin</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.034</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Cholesterol</td>
+        <td>int</td> 
+        <td></td>
+        <td>215</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Lutein and Zeaxanthin</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Kilocalories</td>
+        <td>int</td> 
+        <td></td>
+        <td>717</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Household Weights</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'2nd Household Weight': 14, u'2nd Household Weight Description': u'1 tbsp', u'1st Household Weight': 227.0, u'1st Household Weight Description': u'1 cup'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Sugar Total</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.059999999</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Protein</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.85</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Vitamins.Vitamin A - IU</td>
+        <td>int</td> 
+        <td></td>
+        <td>2499</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Vitamins.Vitamin C</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Vitamins.Vitamin B12</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.17</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Vitamins.Vitamin B6</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.003</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Vitamins.Vitamin A - RAE</td>
+        <td>int</td> 
+        <td></td>
+        <td>684</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Vitamins.Vitamin E</td>
+        <td>float</td> 
+        <td></td>
+        <td>2.32</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Vitamins.Vitamin K</td>
+        <td>float</td> 
+        <td></td>
+        <td>7.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Major Minerals.Copper</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Major Minerals.Iron</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.02</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Major Minerals.Sodium</td>
+        <td>int</td> 
+        <td></td>
+        <td>576</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Major Minerals.Potassium</td>
+        <td>int</td> 
+        <td></td>
+        <td>24</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Major Minerals.Calcium</td>
+        <td>int</td> 
+        <td></td>
+        <td>24</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Major Minerals.Magnesium</td>
+        <td>int</td> 
+        <td></td>
+        <td>2</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Major Minerals.Zinc</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.09</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Major Minerals.Phosphorus</td>
+        <td>int</td> 
+        <td></td>
+        <td>24</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Household Weights.1st Household Weight Description</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1 cup</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Household Weights.1st Household Weight</td>
+        <td>float</td> 
+        <td></td>
+        <td>227.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Household Weights.2nd Household Weight</td>
+        <td>int</td> 
+        <td></td>
+        <td>14</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Household Weights.2nd Household Weight Description</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1 tbsp</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

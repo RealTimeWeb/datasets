@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 # Get the data, put it in a property
 list_of_earthquake = earthquakes.get_earthquakes()
 
+
+
 # Calculate the three averages
 china_total = 0
 china_count = 0

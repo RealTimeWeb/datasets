@@ -36,20 +36,6 @@ Airlines JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -111,12 +97,245 @@ Additional information is available: <a href="http://www.rita.dot.gov/bts/help/a
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].statistics.# of delays.late aircraft</td>
+        <td>int</td> 
+        <td></td>
+        <td>18</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.# of delays.weather</td>
+        <td>int</td> 
+        <td></td>
+        <td>28</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.# of delays.security</td>
+        <td>int</td> 
+        <td></td>
+        <td>2</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.# of delays.national aviation system</td>
+        <td>int</td> 
+        <td></td>
+        <td>105</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.# of delays.carrier</td>
+        <td>int</td> 
+        <td></td>
+        <td>34</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].carrier.code</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>AA</td>
+    </tr>
+    
+    <tr>
+        <td>[0].carrier.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>American Airlines Inc.</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].statistics.minutes delayed.late aircraft</td>
+        <td>int</td> 
+        <td></td>
+        <td>1269</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.minutes delayed.weather</td>
+        <td>int</td> 
+        <td></td>
+        <td>1722</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.minutes delayed.carrier</td>
+        <td>int</td> 
+        <td></td>
+        <td>1367</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.minutes delayed.security</td>
+        <td>int</td> 
+        <td></td>
+        <td>139</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.minutes delayed.total</td>
+        <td>int</td> 
+        <td></td>
+        <td>8314</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.minutes delayed.national aviation system</td>
+        <td>int</td> 
+        <td></td>
+        <td>3817</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].statistics.flights.cancelled</td>
+        <td>int</td> 
+        <td></td>
+        <td>5</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.flights.on time</td>
+        <td>int</td> 
+        <td></td>
+        <td>561</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.flights.total</td>
+        <td>int</td> 
+        <td></td>
+        <td>752</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.flights.delayed</td>
+        <td>int</td> 
+        <td></td>
+        <td>186</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.flights.diverted</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].airport.code</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>ATL</td>
+    </tr>
+    
+    <tr>
+        <td>[0].airport.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Atlanta, GA: Hartsfield-Jackson Atlanta International</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].airport</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'code': u'ATL', u'name': u'Atlanta, GA: Hartsfield-Jackson Atlanta International'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'flights': {u'cancelled': 5, u'on time': 561, u'total': 752, u'delayed': 186, u'diverted': 0}, u'# of delays': {u'weather': 28, u'security': 2, u'late aircraft': 18, u'national aviation system': 105, u'carrier': 34}, u'minutes delayed': {u'late aircraft': 1269, u'weather': 1722, u'carrier': 1367, u'security': 139, u'total': 8314, u'national aviation system': 3817}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].time</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'month': 6, u'year': 2003, u'label': u'2003/6'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].carrier</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'code': u'AA', u'name': u'American Airlines Inc.'}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].statistics.flights</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'cancelled': 5, u'on time': 561, u'total': 752, u'delayed': 186, u'diverted': 0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.# of delays</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'weather': 28, u'security': 2, u'late aircraft': 18, u'national aviation system': 105, u'carrier': 34}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.minutes delayed</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'late aircraft': 1269, u'weather': 1722, u'carrier': 1367, u'security': 139, u'total': 8314, u'national aviation system': 3817}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].time.label</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>2003/6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].time.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>2003</td>
+    </tr>
+    
+    <tr>
+        <td>[0].time.month</td>
+        <td>int</td> 
+        <td></td>
+        <td>6</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

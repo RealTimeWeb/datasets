@@ -44,12 +44,139 @@ From a newspaper article about analyzing amazon e-book sales by genre and publis
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].publisher.type</td>
+        <td>unicode</td> 
+        <td>The type, or size, of the publisher (e.g, "indie", "small", "big five", etc.)</td>
+        <td>big five</td>
+    </tr>
+    
+    <tr>
+        <td>[0].publisher.name</td>
+        <td>unicode</td> 
+        <td>The name of the publisher.</td>
+        <td>Katherine Tegen Books</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].genre</td>
+        <td>unicode</td> 
+        <td>The genre of the book, either "fiction", "non-fiction", "genre fiction", "childrens", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.</td>
+        <td>genre fiction</td>
+    </tr>
+    
+    <tr>
+        <td>[0].publisher</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'type': u'big five', u'name': u'Katherine Tegen Books'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].sold by</td>
+        <td>unicode</td> 
+        <td>The actual company that sold this book, as oppposed to the company that published it.</td>
+        <td>HarperCollins Publishers</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'sales rank': 1, u'sale price': 4.88, u'total reviews': 9604, u'average rating': 4.57}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].daily</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'publisher revenue': 20496.0, u'amazon revenue': 6832.0, u'author revenue': 6832.0, u'gross sales': 34160.0, u'units sold': 7000}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].daily.publisher revenue</td>
+        <td>float</td> 
+        <td>The amount of money that the publisher made per day on this book, in dollars.</td>
+        <td>20496.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].daily.amazon revenue</td>
+        <td>float</td> 
+        <td>The amount of money that Amazon made per day on this book, in dollars.</td>
+        <td>6832.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].daily.author revenue</td>
+        <td>float</td> 
+        <td>The amount of money that the author made per day on this book, in dollars.</td>
+        <td>6832.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].daily.units sold</td>
+        <td>int</td> 
+        <td>The number of books sold per day.</td>
+        <td>7000</td>
+    </tr>
+    
+    <tr>
+        <td>[0].daily.gross sales</td>
+        <td>float</td> 
+        <td>The total amount of money that was made per day on this book, in dollars.</td>
+        <td>34160.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].statistics.sales rank</td>
+        <td>int</td> 
+        <td>The ranking of this book, compared to other books. A higher rank indicates a more popular book.</td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.sale price</td>
+        <td>float</td> 
+        <td>The cost of this book on Amazon, in dollars.</td>
+        <td>4.88</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.total reviews</td>
+        <td>int</td> 
+        <td>The number of people who have reviewed this book.</td>
+        <td>9604</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.average rating</td>
+        <td>float</td> 
+        <td>The average rating of this book, on a five-point scale, as determined by customers.</td>
+        <td>4.57</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

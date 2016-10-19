@@ -44,12 +44,231 @@ From the Unified Crime Reporting Statistics and under the collaboration of the U
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Totals.Violent</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 6097, u'Murder': 406, u'Robbery': 898, u'Rape': 281, u'Assault': 4512}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Property</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Burglary': 11626, u'Larceny': 19344, u'All': 33823, u'Motor': 2853}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].State</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Alabama</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Totals': {u'Violent': {u'All': 6097, u'Murder': 406, u'Robbery': 898, u'Rape': 281, u'Assault': 4512}, u'Property': {u'Burglary': 11626, u'Larceny': 19344, u'All': 33823, u'Motor': 2853}}, u'Rates': {u'Violent': {u'All': 186.6, u'Murder': 12.4, u'Robbery': 27.5, u'Rape': 8.6, u'Assault': 138.1}, u'Property': {u'Burglary': 355.9, u'Larceny': 592.1, u'All': 1035.4, u'Motor': 87.3}}, u'Population': 3266740}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1960</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Rates.Violent</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 186.6, u'Murder': 12.4, u'Robbery': 27.5, u'Rape': 8.6, u'Assault': 138.1}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Property</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Burglary': 355.9, u'Larceny': 592.1, u'All': 1035.4, u'Motor': 87.3}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Totals.Violent.All</td>
+        <td>int</td> 
+        <td>This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td>
+        <td>6097</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Violent.Murder</td>
+        <td>int</td> 
+        <td>This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td>
+        <td>406</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Violent.Rape</td>
+        <td>int</td> 
+        <td>This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td>
+        <td>281</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Violent.Robbery</td>
+        <td>int</td> 
+        <td>This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.</td>
+        <td>898</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Violent.Assault</td>
+        <td>int</td> 
+        <td>This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.</td>
+        <td>4512</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Rates.Property.Burglary</td>
+        <td>float</td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td>
+        <td>355.9</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Property.Larceny</td>
+        <td>float</td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or theft of personal property.</td>
+        <td>592.1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Property.All</td>
+        <td>float</td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td>
+        <td>1035.4</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Property.Motor</td>
+        <td>float</td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where a motor vehicle was stolen.</td>
+        <td>87.3</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Population</td>
+        <td>int</td> 
+        <td></td>
+        <td>3266740</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates</td>
+        <td>dict</td> 
+        <td>Rates are the number of reported offenses per 100,000 population.</td>
+        <td>{u'Violent': {u'All': 186.6, u'Murder': 12.4, u'Robbery': 27.5, u'Rape': 8.6, u'Assault': 138.1}, u'Property': {u'Burglary': 355.9, u'Larceny': 592.1, u'All': 1035.4, u'Motor': 87.3}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Violent': {u'All': 6097, u'Murder': 406, u'Robbery': 898, u'Rape': 281, u'Assault': 4512}, u'Property': {u'Burglary': 11626, u'Larceny': 19344, u'All': 33823, u'Motor': 2853}}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Totals.Property.Burglary</td>
+        <td>int</td> 
+        <td>This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td>
+        <td>11626</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Property.Larceny</td>
+        <td>int</td> 
+        <td>This property reflects the number of burglaries, or theft of personal property.</td>
+        <td>19344</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Property.All</td>
+        <td>int</td> 
+        <td>This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td>
+        <td>33823</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Property.Motor</td>
+        <td>int</td> 
+        <td>This property reflects the number of crimes where a motor vehicle was stolen.</td>
+        <td>2853</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Rates.Violent.All</td>
+        <td>float</td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td>
+        <td>186.6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Violent.Murder</td>
+        <td>float</td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td>
+        <td>12.4</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Violent.Rape</td>
+        <td>float</td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td>
+        <td>8.6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Violent.Robbery</td>
+        <td>float</td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.</td>
+        <td>27.5</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Violent.Assault</td>
+        <td>float</td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.</td>
+        <td>138.1</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

@@ -44,12 +44,206 @@ This library comes from FiveThirtyEight's story on earnings of college majors ba
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Major Information</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Major Code': 2419, u'Rank by Median Earnings': 1, u'Major': u'PETROLEUM ENGINEERING', u'Total Number in Major': 2339, u'Major Category': u'Engineering'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Demographics</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Men': 2057, u'Women as Share of Total': 0.120564344, u'Women': 282}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Part Time': 270, u'Unemployed': 37, u'Unemployment Rate': 0.018380527, u'Full Time': 1849, u'Employed': 1976, u'Full Time, Year-Round': 1207}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Earnings</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Non-College Jobs': 364, u'College Jobs': 1534, u'Earnings Breakdown': {u'Median Earnings': 110000, u'75th Percentile of Earnings': 125000, u'25th Percentile of Earnings': 95000}, u'Low Wage Jobs': 193}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Earnings.Earnings Breakdown.Median Earnings</td>
+        <td>int</td> 
+        <td></td>
+        <td>110000</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Earnings.Earnings Breakdown.75th Percentile of Earnings</td>
+        <td>int</td> 
+        <td></td>
+        <td>125000</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Earnings.Earnings Breakdown.25th Percentile of Earnings</td>
+        <td>int</td> 
+        <td></td>
+        <td>95000</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Demographics.Men</td>
+        <td>int</td> 
+        <td></td>
+        <td>2057</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Demographics.Women as Share of Total</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.120564344</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Demographics.Women</td>
+        <td>int</td> 
+        <td></td>
+        <td>282</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Major Information.Major Code</td>
+        <td>int</td> 
+        <td></td>
+        <td>2419</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Major Information.Rank by Median Earnings</td>
+        <td>int</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Major Information.Major</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>PETROLEUM ENGINEERING</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Major Information.Total Number in Major</td>
+        <td>int</td> 
+        <td></td>
+        <td>2339</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Major Information.Major Category</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Engineering</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Earnings.Non-College Jobs</td>
+        <td>int</td> 
+        <td></td>
+        <td>364</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Earnings.College Jobs</td>
+        <td>int</td> 
+        <td></td>
+        <td>1534</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Earnings.Earnings Breakdown</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Median Earnings': 110000, u'75th Percentile of Earnings': 125000, u'25th Percentile of Earnings': 95000}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Earnings.Low Wage Jobs</td>
+        <td>int</td> 
+        <td></td>
+        <td>193</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Employment.Part Time</td>
+        <td>int</td> 
+        <td></td>
+        <td>270</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Unemployed</td>
+        <td>int</td> 
+        <td></td>
+        <td>37</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Unemployment Rate</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.018380527</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Full Time</td>
+        <td>int</td> 
+        <td></td>
+        <td>1849</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Employed</td>
+        <td>int</td> 
+        <td></td>
+        <td>1976</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Full Time, Year-Round</td>
+        <td>int</td> 
+        <td></td>
+        <td>1207</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

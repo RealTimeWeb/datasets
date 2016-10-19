@@ -36,20 +36,6 @@ Earthquakes JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -84,7 +70,7 @@ Earthquakes JSON Library (CORGIS Datasets Project)
     
     <h3 id="overview">Overview</h3>
 <p>
-Earthquake records from around the world collected from the United States Geological Survey.  Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake.  Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included.
+Earthquake records from around the world collected from the United States Geological Survey.  Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake.  Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included. The earthquakes collected are from the past month.
 
 </p>
 
@@ -114,12 +100,174 @@ Earthquake records from around the world collected from the United States Geolog
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].impact.magnitude</td>
+        <td>float</td> 
+        <td>Earthquake magnitude is a measure of the size of an earthquake at its source. It is a logarithmic measure. At the same distance from the earthquake, the amplitude of the seismic waves from which the magnitude is determined are approximately 10 times as large during a magnitude 5 earthquake as during a magnitude 4 earthquake. The total amount of energy released by the earthquake usually goes up by a larger factor; for many commonly used magnitude types, the total energy of an average earthquake goes up by a factor of approximately 32 for each unit increase in magnitude. Typically ranges from -1 (very tiny) to 10 (incredibly powerful).</td>
+        <td>1.43</td>
+    </tr>
+    
+    <tr>
+        <td>[0].impact.significance</td>
+        <td>int</td> 
+        <td>A number describing how significant the event is. Larger numbers indicate a more significant event. This value is determined on a number of factors, including magnitude, maximum MMI, felt reports, and estimated impact. Ranges from 0 to 1000.</td>
+        <td>31</td>
+    </tr>
+    
+    <tr>
+        <td>[0].impact.gap</td>
+        <td>float</td> 
+        <td>In general, the smaller this number, the more reliable is the calculated horizontal position of the earthquake. Specifically, this means the largest azimuthal gap between azimuthally adjacent stations (in degrees). Earthquake locations in which the azimuthal gap exceeds 180 degrees typically have large location and depth uncertainties. Ranges from 0 to 180.</td>
+        <td>122.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].location.distance</td>
+        <td>float</td> 
+        <td>The rough distance that this earthquake occurred away from the reporting station, measured in degrees between. 1 degree is approximately 111.2 kilometers. In general, the smaller this number, the more reliable is the calculated depth of the earthquake. In general, this number is between 0.4-7.1.</td>
+        <td>0.1034</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.full</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>13km E of Livermore, California</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.name</td>
+        <td>unicode</td> 
+        <td>A best guess for the name of the state (or country, in some cases) that this earthquake was reported in.</td>
+        <td>California</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.longitude</td>
+        <td>float</td> 
+        <td>Decimal degrees longitude (east and west on the globe). Negative values for western latitudes. Ranges from -180 to 180.</td>
+        <td>-121.619</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.depth</td>
+        <td>float</td> 
+        <td>Depth of the event in kilometers.</td>
+        <td>15.12</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.latitude</td>
+        <td>float</td> 
+        <td>Decimal degrees latitude (up and down on the globe). Negative values for southern latitudes. Ranges from -90 to 90.</td>
+        <td>37.6723333</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].impact</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'gap': 122.0, u'magnitude': 1.43, u'significance': 31}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].id</td>
+        <td>unicode</td> 
+        <td>A unique name for this earthquake.</td>
+        <td>nc72666881</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'distance': 0.1034, u'full': u'13km E of Livermore, California', u'name': u'California', u'longitude': -121.619, u'depth': 15.12, u'latitude': 37.6723333}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].time</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'full': u'2016-07-27 00:19:43', u'hour': 0, u'epoch': 1469593183550L, u'month': 7, u'second': 43, u'year': 2016, u'day': 27, u'minute': 19}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].time.full</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>2016-07-27 00:19:43</td>
+    </tr>
+    
+    <tr>
+        <td>[0].time.hour</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].time.second</td>
+        <td>int</td> 
+        <td></td>
+        <td>43</td>
+    </tr>
+    
+    <tr>
+        <td>[0].time.month</td>
+        <td>int</td> 
+        <td></td>
+        <td>7</td>
+    </tr>
+    
+    <tr>
+        <td>[0].time.epoch</td>
+        <td>long</td> 
+        <td>A number that represents the time that this earthquake occurred. Epoch's are the number of seconds since a particular date (January 1st, 1970), and are a convenient way to store date/times.</td>
+        <td>1469593183550</td>
+    </tr>
+    
+    <tr>
+        <td>[0].time.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>2016</td>
+    </tr>
+    
+    <tr>
+        <td>[0].time.day</td>
+        <td>int</td> 
+        <td></td>
+        <td>27</td>
+    </tr>
+    
+    <tr>
+        <td>[0].time.minute</td>
+        <td>int</td> 
+        <td></td>
+        <td>19</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

@@ -45,12 +45,245 @@ The dataset was collected from the official military site, and includes records 
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].death</td>
+        <td>bool</td> 
+        <td></td>
+        <td>True</td>
+    </tr>
+    
+    <tr>
+        <td>[0].name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Sagelhurst, John C.</td>
+    </tr>
+    
+    <tr>
+        <td>[0].awarded</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'issued': u'01/03/1906', u'citation': u"Under a heavy fire from the enemy carried off the field a commissioned officer who was severely wounded and also led a charge on the enemy's rifle pits.", u'General Order number': -1, u'accredited to': u'', u'location': {u'latitude': 38, u'name': u'Hatchers Run Court, Stafford, VA 22554, USA', u'longitude': -77}, u'date': {u'month': 2, u'full': u'1865-2-6', u'day': 6, u'year': 1865}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].birth</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'date': {u'month': -1, u'day': -1, u'year': -1}, u'location name': u'Buffalo, N.Y.'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].military record</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'entered service at': u'Buffalo, N.Y.', u'company': u'Company B', u'division': u'1st New Jersey Cavalry', u'rank': u'Sergeant', u'organization': u'U.S. Army'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].metadata</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'link': u'http://www.cmohs.org/recipient-detail/1176/sagelhurst-john-c.php'}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].birth.date</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'month': -1, u'day': -1, u'year': -1}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].birth.location name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Buffalo, N.Y.</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].metadata.link</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>http://www.cmohs.org/recipient-detail/1176/sagelhurst-john-c.php</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].birth.date.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>-1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].birth.date.day</td>
+        <td>int</td> 
+        <td></td>
+        <td>-1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].birth.date.month</td>
+        <td>int</td> 
+        <td></td>
+        <td>-1</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].awarded.issued</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>01/03/1906</td>
+    </tr>
+    
+    <tr>
+        <td>[0].awarded.citation</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Under a heavy fire from the enemy carried off the field a commissioned officer who was severely wounded and also led a charge on the enemy's rifle pits.</td>
+    </tr>
+    
+    <tr>
+        <td>[0].awarded.General Order number</td>
+        <td>int</td> 
+        <td></td>
+        <td>-1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].awarded.accredited to</td>
+        <td>unicode</td> 
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>[0].awarded.location</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'latitude': 38, u'name': u'Hatchers Run Court, Stafford, VA 22554, USA', u'longitude': -77}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].awarded.date</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'month': 2, u'full': u'1865-2-6', u'day': 6, u'year': 1865}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].awarded.location.latitude</td>
+        <td>int</td> 
+        <td></td>
+        <td>38</td>
+    </tr>
+    
+    <tr>
+        <td>[0].awarded.location.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Hatchers Run Court, Stafford, VA 22554, USA</td>
+    </tr>
+    
+    <tr>
+        <td>[0].awarded.location.longitude</td>
+        <td>int</td> 
+        <td></td>
+        <td>-77</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].military record.entered service at</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Buffalo, N.Y.</td>
+    </tr>
+    
+    <tr>
+        <td>[0].military record.company</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Company B</td>
+    </tr>
+    
+    <tr>
+        <td>[0].military record.organization</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>U.S. Army</td>
+    </tr>
+    
+    <tr>
+        <td>[0].military record.rank</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Sergeant</td>
+    </tr>
+    
+    <tr>
+        <td>[0].military record.division</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1st New Jersey Cavalry</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].awarded.date.full</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1865-2-6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].awarded.date.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1865</td>
+    </tr>
+    
+    <tr>
+        <td>[0].awarded.date.day</td>
+        <td>int</td> 
+        <td></td>
+        <td>6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].awarded.date.month</td>
+        <td>int</td> 
+        <td></td>
+        <td>2</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

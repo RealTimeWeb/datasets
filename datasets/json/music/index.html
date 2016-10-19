@@ -36,20 +36,6 @@ Music JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -114,12 +100,293 @@ This library comes from the Million Song Dataset, which used a company called th
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].release</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'id': 300848, u'name': u'Fear Itself'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'terms_freq': 1.0, u'terms': u'hip hop', u'name': u'Casual', u'familiarity': 0.581793766, u'longitude': -63.933357868519515, u'hotttnesss': 0.401997543, u'location': u'California - LA', u'latitude': 37.15735675013362, u'similar': u'ARV4KO21187FB38008', u'id': u'ARD7TVE1187B99BFB1'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'key': 1.0, u'mode_confidence': 0.636, u'artist_mbtags_count': 0.0, u'key_confidence': 0.736, u'tatums_start': 0.28519, u'year': 0, u'duration': 218.93179, u'id': u'SOMZWCG12A8C13C480', u'beats_start': 0.58521, u'time_signature_confidence': 0.778, u'title': u"I Didn't Mean To", u'bars_confidence': 0.643, u'hotttnesss': 0.60211999, u'bars_start': 0.58521, u'artist_mbtags': u'', u'start_of_fade_out': 218.932, u'tempo': 92.198, u'end_of_fade_in': 0.247, u'beats_confidence': 0.834, u'tatums_confidence': 0.779, u'mode': 0, u'time_signature': 4.0, u'loudness': -11.197}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].artist.terms_freq</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.terms</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>hip hop</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Casual</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.familiarity</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.581793766</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.longitude</td>
+        <td>float</td> 
+        <td></td>
+        <td>-63.9333578685</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.id</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>ARD7TVE1187B99BFB1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.location</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>California - LA</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.latitude</td>
+        <td>float</td> 
+        <td></td>
+        <td>37.1573567501</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.similar</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>ARV4KO21187FB38008</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.hotttnesss</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.401997543</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].song.key</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.mode_confidence</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.636</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.artist_mbtags_count</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.key_confidence</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.736</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.tatums_start</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.28519</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.duration</td>
+        <td>float</td> 
+        <td></td>
+        <td>218.93179</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.hotttnesss</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.60211999</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.beats_start</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.58521</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.time_signature_confidence</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.778</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.title</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>I Didn't Mean To</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.bars_confidence</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.643</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.id</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>SOMZWCG12A8C13C480</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.bars_start</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.58521</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.artist_mbtags</td>
+        <td>unicode</td> 
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.start_of_fade_out</td>
+        <td>float</td> 
+        <td></td>
+        <td>218.932</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.tempo</td>
+        <td>float</td> 
+        <td></td>
+        <td>92.198</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.end_of_fade_in</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.247</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.beats_confidence</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.834</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.tatums_confidence</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.779</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.mode</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.time_signature</td>
+        <td>float</td> 
+        <td></td>
+        <td>4.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].song.loudness</td>
+        <td>float</td> 
+        <td></td>
+        <td>-11.197</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].release.id</td>
+        <td>int</td> 
+        <td></td>
+        <td>300848</td>
+    </tr>
+    
+    <tr>
+        <td>[0].release.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Fear Itself</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

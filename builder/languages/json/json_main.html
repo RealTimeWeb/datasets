@@ -16,12 +16,28 @@
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    {% for local in structures.values() %}
+    {% for item_list in local['dictionaries'].values() %}
+    {% for item in  item_list['fields'] %}
+    <tr>
+        <td>{{ item['path'].split('.', 1)[-1] }}</td>
+        <td>{{ item['type']|to_human_readable_type }}</td> 
+        <td>{{ item['comment'] }}</td>
+        <td>{{ item['example']|convert_example_value}}</td>
+    </tr>
+    {% endfor %}
+    {% endfor %}
+    {% endfor %}
     </table>
-    
-    
 
 {{ macros.appendix(metadata) }}    
 

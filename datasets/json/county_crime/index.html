@@ -36,20 +36,6 @@ County Crime JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -114,12 +100,238 @@ From the Unified Crime Reporting Statistics and  under the collaboration of the 
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Totals.Violent</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 18, u'Murder': 1, u'Robbery': 2, u'Rape': 1, u'Assault': 14}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Property</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Burglary': 18, u'Larceny': 44, u'All': 69, u'Motor': 7.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Department</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Alabaster Police Dept</td>
+    </tr>
+    
+    <tr>
+        <td>[0].State</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Alabama</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Totals': {u'Violent': {u'All': 18, u'Murder': 1, u'Robbery': 2, u'Rape': 1, u'Assault': 14}, u'Property': {u'Burglary': 18, u'Larceny': 44, u'All': 69, u'Motor': 7.0}}, u'Rates': {u'Violent': {u'All': 234.1, u'Murder': 13.0, u'Robbery': 26.0, u'Rape': 13.0, u'Assault': 182.1}, u'Property': {u'Burglary': 234.1, u'Larceny': 572.2, u'All': 897.3, u'Motor': 91.0}}, u'Population': 7690}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1984</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Rates.Violent</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 234.1, u'Murder': 13.0, u'Robbery': 26.0, u'Rape': 13.0, u'Assault': 182.1}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Property</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Burglary': 234.1, u'Larceny': 572.2, u'All': 897.3, u'Motor': 91.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Totals.Violent.All</td>
+        <td>int</td> 
+        <td></td>
+        <td>18</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Violent.Murder</td>
+        <td>int</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Violent.Rape</td>
+        <td>int</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Violent.Robbery</td>
+        <td>int</td> 
+        <td></td>
+        <td>2</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Violent.Assault</td>
+        <td>int</td> 
+        <td></td>
+        <td>14</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Rates.Property.Burglary</td>
+        <td>float</td> 
+        <td></td>
+        <td>234.1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Property.Larceny</td>
+        <td>float</td> 
+        <td></td>
+        <td>572.2</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Property.All</td>
+        <td>float</td> 
+        <td></td>
+        <td>897.3</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Property.Motor</td>
+        <td>float</td> 
+        <td></td>
+        <td>91.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Population</td>
+        <td>int</td> 
+        <td></td>
+        <td>7690</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates</td>
+        <td>dict</td> 
+        <td>Rates are the number of reported offenses per 100,000 population.</td>
+        <td>{u'Violent': {u'All': 234.1, u'Murder': 13.0, u'Robbery': 26.0, u'Rape': 13.0, u'Assault': 182.1}, u'Property': {u'Burglary': 234.1, u'Larceny': 572.2, u'All': 897.3, u'Motor': 91.0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Violent': {u'All': 18, u'Murder': 1, u'Robbery': 2, u'Rape': 1, u'Assault': 14}, u'Property': {u'Burglary': 18, u'Larceny': 44, u'All': 69, u'Motor': 7.0}}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Totals.Property.Burglary</td>
+        <td>int</td> 
+        <td></td>
+        <td>18</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Property.Larceny</td>
+        <td>int</td> 
+        <td></td>
+        <td>44</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Property.All</td>
+        <td>int</td> 
+        <td></td>
+        <td>69</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Property.Motor</td>
+        <td>float</td> 
+        <td></td>
+        <td>7.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Rates.Violent.All</td>
+        <td>float</td> 
+        <td></td>
+        <td>234.1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Violent.Murder</td>
+        <td>float</td> 
+        <td></td>
+        <td>13.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Violent.Rape</td>
+        <td>float</td> 
+        <td></td>
+        <td>13.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Violent.Robbery</td>
+        <td>float</td> 
+        <td></td>
+        <td>26.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Violent.Assault</td>
+        <td>float</td> 
+        <td></td>
+        <td>182.1</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

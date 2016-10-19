@@ -36,20 +36,6 @@ Suicide Attacks JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -116,12 +102,245 @@ Note that multiple attackers or targets are collapsed into a single record for s
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].attacker.age</td>
+        <td>int</td> 
+        <td></td>
+        <td>15</td>
+    </tr>
+    
+    <tr>
+        <td>[0].attacker.demographics</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'gender': u'Male', u'religion': u'Secular', u'education': u'Primary', u'marital': u'Unknown', u'occupation': u'Unskilled'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].attacker.birth</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'location': u'Lebanon', u'year': 1967}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].attacker.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Ahmad Qasiraka Haider</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].attacker.birth.location</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Lebanon</td>
+    </tr>
+    
+    <tr>
+        <td>[0].attacker.birth.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1967</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].statistics.# wounded</td>
+        <td>int</td> 
+        <td></td>
+        <td>28</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.# killed</td>
+        <td>int</td> 
+        <td></td>
+        <td>115</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].target.assassination?</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].target.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Israeli Defense Forces (IDF) headquarters</td>
+    </tr>
+    
+    <tr>
+        <td>[0].target.country</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Lebanon</td>
+    </tr>
+    
+    <tr>
+        <td>[0].target.weapon</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Car bomb</td>
+    </tr>
+    
+    <tr>
+        <td>[0].target.location</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Lebanon, TyreLiban-Sud</td>
+    </tr>
+    
+    <tr>
+        <td>[0].target.type</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Security</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].attacker.demographics.occupation</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Unskilled</td>
+    </tr>
+    
+    <tr>
+        <td>[0].attacker.demographics.gender</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Male</td>
+    </tr>
+    
+    <tr>
+        <td>[0].attacker.demographics.education</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Primary</td>
+    </tr>
+    
+    <tr>
+        <td>[0].attacker.demographics.marital</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Unknown</td>
+    </tr>
+    
+    <tr>
+        <td>[0].attacker.demographics.religion</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Secular</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].date.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1982</td>
+    </tr>
+    
+    <tr>
+        <td>[0].date.day</td>
+        <td>int</td> 
+        <td></td>
+        <td>11</td>
+    </tr>
+    
+    <tr>
+        <td>[0].date.month</td>
+        <td>int</td> 
+        <td></td>
+        <td>11</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].statistics</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'# wounded': 28, u'# killed': 115}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].target</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'assassination?': False, u'name': u'Israeli Defense Forces (IDF) headquarters', u'country': u'Lebanon', u'weapon': u'Car bomb', u'location': u'Lebanon, TyreLiban-Sud', u'type': u'Security'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].campaign</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'name': u'Hezbollah vs. Israel', u'sides': [u'Hezbollah', u'Israel']}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].attacker</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'age': 15, u'demographics': {u'gender': u'Male', u'religion': u'Secular', u'education': u'Primary', u'marital': u'Unknown', u'occupation': u'Unskilled'}, u'birth': {u'location': u'Lebanon', u'year': 1967}, u'name': u'Ahmad Qasiraka Haider'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].groups</td>
+        <td>list[unicode]</td> 
+        <td></td>
+        <td>[u'Lebanese National Resistance Front', u'Armed Struggle Group']</td>
+    </tr>
+    
+    <tr>
+        <td>[0].date</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'month': 11, u'day': 11, u'year': 1982}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].campaign.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Hezbollah vs. Israel</td>
+    </tr>
+    
+    <tr>
+        <td>[0].campaign.sides</td>
+        <td>list[unicode]</td> 
+        <td></td>
+        <td>[u'Hezbollah', u'Israel']</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

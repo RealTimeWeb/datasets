@@ -44,12 +44,779 @@
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].voting.unclear</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].voting.minority</td>
+        <td>int</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].voting.majority</td>
+        <td>int</td> 
+        <td></td>
+        <td>8</td>
+    </tr>
+    
+    <tr>
+        <td>[0].voting.majority assigner</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'long name': u'Black, Hugo ( 08/19/1937 - 09/17/1971 )', u'id': 78, u'name': u'HLBlack'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].voting.majority writer</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'long name': u'Black, Hugo ( 08/19/1937 - 09/17/1971 )', u'id': 78, u'name': u'HLBlack'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].voting.split on second</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].decision.case.unusual</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.case.disposition</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>reversed</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].issue.text</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>patents and copyrights: patent</td>
+    </tr>
+    
+    <tr>
+        <td>[0].issue.id</td>
+        <td>int</td> 
+        <td></td>
+        <td>80180</td>
+    </tr>
+    
+    <tr>
+        <td>[0].issue.area</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Economic Activity</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].origin</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'state': u'', u'id': 51, u'name': u'California Southern U.S. District Court'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].voting</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'unclear': False, u'minority': 1, u'majority': 8, u'majority assigner': {u'long name': u'Black, Hugo ( 08/19/1937 - 09/17/1971 )', u'id': 78, u'name': u'HLBlack'}, u'majority writer': {u'long name': u'Black, Hugo ( 08/19/1937 - 09/17/1971 )', u'id': 78, u'name': u'HLBlack'}, u'split on second': False}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].lower court</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'reasons': u'to resolve question presented', u'disagreement?': False, u'direction': u'conservative', u'disposition': u'affirmed'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].laws</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'type': u'Infrequently litigated statutes', u'id': 6}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].issue</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'text': u'patents and copyrights: patent', u'id': 80180, u'area': u'Economic Activity'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'precedent altered?': True, u'case': {u'unusual': False, u'disposition': u'reversed'}, u'direction': u'liberal', u'jurisdiction': u'rehearing or reargument', u'authority 1': u'statutory construction', u'authority 2': u'', u'admin action': {u'state': u'', u'agency': u'unknown', u'id': -1}, u'unconstitutional': u'no unconstitutionality', u'term': 1946, u'date': {u'full': u'11/18/1946', u'year': 1946, u'day': 18, u'month': 11}, u'winning party': u'favorable disposition for petitioning party', u'type': u'court opinion', u'dissent agrees': False}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].citation</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'sct': u'67 S. Ct. 6', u'led': u'91 L. Ed. 3', u'lexis': u'1946 U.S. LEXIS 1724', u'us': u'329 U.S. 1'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].natural court</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'start': {u'full': u'June/24/1946', u'year': 1946, u'day': 24, u'month': 6}, u'chief': u'Vinson', u'end': {u'full': u'August/23/1949', u'year': 1949, u'day': 23, u'month': 8}, u'period': 1, u'id': 1301}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].source</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'state': u'', u'id': 29, u'name': u'U.S. Court of Appeals, Ninth Circuit'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'date reargued': {u'full': u'10/23/1946', u'year': 1946, u'day': 23, u'month': 10}, u'date argued': {u'full': u'1/9/1946', u'year': 1946, u'day': 9, u'month': 1}, u'respondent': {u'state': u'', u'id': 172, u'entity': u'inventor, patent assigner, trademark owner or holder'}, u'petitioner': {u'state': u'', u'id': 198, u'entity': u'oil company, or natural gas producer'}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].3 judge dc?</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].docket</td>
+        <td>int</td> 
+        <td></td>
+        <td>24</td>
+    </tr>
+    
+    <tr>
+        <td>[0].id</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'case': u'1946-001', u'vote': u'1946-001-01-01-01', u'docket': u'1946-001-01', u'case issues': u'1946-001-01-01'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>HALLIBURTON OIL WELL CEMENTING CO. v. WALKER et al., DOING BUSINESS AS DEPTHOGRAPH CO.</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].decision.admin action.state</td>
+        <td>unicode</td> 
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.admin action.agency</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>unknown</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.admin action.id</td>
+        <td>int</td> 
+        <td></td>
+        <td>-1</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].natural court.start</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'full': u'June/24/1946', u'year': 1946, u'day': 24, u'month': 6}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].natural court.chief</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Vinson</td>
+    </tr>
+    
+    <tr>
+        <td>[0].natural court.end</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'full': u'August/23/1949', u'year': 1949, u'day': 23, u'month': 8}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].natural court.period</td>
+        <td>int</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].natural court.id</td>
+        <td>int</td> 
+        <td></td>
+        <td>1301</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].arguments.respondent.state</td>
+        <td>unicode</td> 
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.respondent.id</td>
+        <td>int</td> 
+        <td></td>
+        <td>172</td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.respondent.entity</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>inventor, patent assigner, trademark owner or holder</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].laws.type</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Infrequently litigated statutes</td>
+    </tr>
+    
+    <tr>
+        <td>[0].laws.id</td>
+        <td>int</td> 
+        <td></td>
+        <td>6</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].decision.precedent altered?</td>
+        <td>bool</td> 
+        <td></td>
+        <td>True</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.case</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'unusual': False, u'disposition': u'reversed'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.direction</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>liberal</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.unconstitutional</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>no unconstitutionality</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.authority 1</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>statutory construction</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.authority 2</td>
+        <td>unicode</td> 
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.admin action</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'state': u'', u'agency': u'unknown', u'id': -1}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.jurisdiction</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>rehearing or reargument</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.term</td>
+        <td>int</td> 
+        <td></td>
+        <td>1946</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.date</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'full': u'11/18/1946', u'year': 1946, u'day': 18, u'month': 11}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.winning party</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>favorable disposition for petitioning party</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.type</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>court opinion</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.dissent agrees</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].natural court.start.month</td>
+        <td>int</td> 
+        <td></td>
+        <td>6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].natural court.start.full</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>June/24/1946</td>
+    </tr>
+    
+    <tr>
+        <td>[0].natural court.start.day</td>
+        <td>int</td> 
+        <td></td>
+        <td>24</td>
+    </tr>
+    
+    <tr>
+        <td>[0].natural court.start.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1946</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].arguments.date reargued</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'full': u'10/23/1946', u'year': 1946, u'day': 23, u'month': 10}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.date argued</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'full': u'1/9/1946', u'year': 1946, u'day': 9, u'month': 1}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.respondent</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'state': u'', u'id': 172, u'entity': u'inventor, patent assigner, trademark owner or holder'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.petitioner</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'state': u'', u'id': 198, u'entity': u'oil company, or natural gas producer'}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].voting.majority writer.long name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Black, Hugo ( 08/19/1937 - 09/17/1971 )</td>
+    </tr>
+    
+    <tr>
+        <td>[0].voting.majority writer.id</td>
+        <td>int</td> 
+        <td></td>
+        <td>78</td>
+    </tr>
+    
+    <tr>
+        <td>[0].voting.majority writer.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>HLBlack</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].id.case</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1946-001</td>
+    </tr>
+    
+    <tr>
+        <td>[0].id.vote</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1946-001-01-01-01</td>
+    </tr>
+    
+    <tr>
+        <td>[0].id.docket</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1946-001-01</td>
+    </tr>
+    
+    <tr>
+        <td>[0].id.case issues</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1946-001-01-01</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].source.state</td>
+        <td>unicode</td> 
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>[0].source.id</td>
+        <td>int</td> 
+        <td></td>
+        <td>29</td>
+    </tr>
+    
+    <tr>
+        <td>[0].source.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>U.S. Court of Appeals, Ninth Circuit</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].arguments.date reargued.month</td>
+        <td>int</td> 
+        <td></td>
+        <td>10</td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.date reargued.full</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>10/23/1946</td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.date reargued.day</td>
+        <td>int</td> 
+        <td></td>
+        <td>23</td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.date reargued.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1946</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].voting.majority assigner.long name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Black, Hugo ( 08/19/1937 - 09/17/1971 )</td>
+    </tr>
+    
+    <tr>
+        <td>[0].voting.majority assigner.id</td>
+        <td>int</td> 
+        <td></td>
+        <td>78</td>
+    </tr>
+    
+    <tr>
+        <td>[0].voting.majority assigner.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>HLBlack</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].arguments.petitioner.state</td>
+        <td>unicode</td> 
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.petitioner.id</td>
+        <td>int</td> 
+        <td></td>
+        <td>198</td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.petitioner.entity</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>oil company, or natural gas producer</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].lower court.reasons</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>to resolve question presented</td>
+    </tr>
+    
+    <tr>
+        <td>[0].lower court.disagreement?</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].lower court.direction</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>conservative</td>
+    </tr>
+    
+    <tr>
+        <td>[0].lower court.disposition</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>affirmed</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].natural court.end.month</td>
+        <td>int</td> 
+        <td></td>
+        <td>8</td>
+    </tr>
+    
+    <tr>
+        <td>[0].natural court.end.full</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>August/23/1949</td>
+    </tr>
+    
+    <tr>
+        <td>[0].natural court.end.day</td>
+        <td>int</td> 
+        <td></td>
+        <td>23</td>
+    </tr>
+    
+    <tr>
+        <td>[0].natural court.end.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1949</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].citation.sct</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>67 S. Ct. 6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].citation.led</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>91 L. Ed. 3</td>
+    </tr>
+    
+    <tr>
+        <td>[0].citation.us</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>329 U.S. 1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].citation.lexis</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1946 U.S. LEXIS 1724</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].decision.date.month</td>
+        <td>int</td> 
+        <td></td>
+        <td>11</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.date.full</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>11/18/1946</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.date.day</td>
+        <td>int</td> 
+        <td></td>
+        <td>18</td>
+    </tr>
+    
+    <tr>
+        <td>[0].decision.date.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1946</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].origin.state</td>
+        <td>unicode</td> 
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>[0].origin.id</td>
+        <td>int</td> 
+        <td></td>
+        <td>51</td>
+    </tr>
+    
+    <tr>
+        <td>[0].origin.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>California Southern U.S. District Court</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].arguments.date argued.month</td>
+        <td>int</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.date argued.full</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>1/9/1946</td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.date argued.day</td>
+        <td>int</td> 
+        <td></td>
+        <td>9</td>
+    </tr>
+    
+    <tr>
+        <td>[0].arguments.date argued.year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1946</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

@@ -36,20 +36,6 @@ Art Institute Metadata JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -114,12 +100,191 @@ The Minneapolis Institute of Art's mission is to enrich the community by collect
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Artist Info</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Country': u'England', u'Artist': u'Artist: Frederick G. Smith; Artist: Formerly attributed to Dante Gabriel Rossetti; Artist: Formerly attributed to Frederic James Shields', u'Nationality': u'English', u'Continent': u'Europe', u'Years Living': u'English, 1833 - 1911'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Title</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Air, from the series The Four Elements</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Institute Info</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Rights Type': u'Public Domain', u'Inscription': u'Signature (spurious)', u'Credit Line': u'Gift of Mrs. C. J. Martin, in memory of Charles Jairus Martin', u'Room': u'Not on View', u'Text': u'The attribution of this impressive stained glass design, along with its three companion drawings in Mia\'s collection (10.2-10.4), has been a century-old puzzle. The large-scale cartoons, representing the four elements, were acquired in 1910 as the work of the famous British Pre-Raphaelite painter Dante Gabriel Rossetti (1828-1882). This attribution was based on the spurious monogram "D.G.R" inscribed at the lower edge of each of the drawings. Over the years, other artists\' names have been proposed--Frederic James Shields (1833-1911), Henry Holiday (1839-1927)--but no consensus among experts was found. \r\n\r\nFinally, in December 2015, exactly 105 years (almost to the day) after the drawings were given to the museum, the identity of the artist has been recovered. They are the work of the British artist Frederick G. Smith. It was Peter Cormack, the noted scholar of British and American stained glass, who tracked down the artist and also identified the project for which they were produced, the grand staircase at Avery Hill, in southeast London. Smith was a partner of the London firm Campbell, Smith, & Co., and he likely executed these cartoons between 1888 or 1889 when the house was being reconstructed by Colonel John T. North. The stained glass was completed by 1890, but  Avery Hill was badly damaged during the Blitz of World War II. In 1982 the museum acquired a stained glass panel directly related to the series, representing the allegory of Water (81.92). The provenance is not known, but the glass is roughly half the size of the drawing. It may have come from Avery Hill, or perhaps Campbell, Smith & Co. executed multiple versions of Smith\'s designs.', u'Provenance': u'[Art dealer, London, acquired from "an old house in Chelsea;" sold to Brooks]; [Edmund D. Brooks Book Rooms, Minneapolis, 1910; sold to Martin]; Ella S. (Mrs. Charles Jarius) Martin, Minneapolis (1910; given to Mia).', u'Department': u'Prints and Drawings'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Description</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Style': u'19th century', u'Medium': u'Pen and ink, brush and wash over graphite', u'Classification': u' Drawings', u'Short Description': u'Design for a stained glass window; once thought to be by Dante Gabriel Rosetti\r\nfrom a series of The Elements', u'Signed': u'Inscribed: D.G.R.', u'Dated': u'c.1888-89', u'Dimension': u'68-5/8 x 25-1/8 in. (174.3 x 63.8 cm)'}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Artist Info.Country</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>England</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Artist Info.Continent</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Europe</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Artist Info.Years Living</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>English, 1833 - 1911</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Artist Info.Artist</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Artist: Frederick G. Smith; Artist: Formerly attributed to Dante Gabriel Rossetti; Artist: Formerly attributed to Frederic James Shields</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Artist Info.Nationality</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>English</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Institute Info.Rights Type</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Public Domain</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Institute Info.Inscription</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Signature (spurious)</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Institute Info.Credit Line</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Gift of Mrs. C. J. Martin, in memory of Charles Jairus Martin</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Institute Info.Room</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Not on View</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Institute Info.Text</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>The attribution of this impressive stained glass design, along with its three companion drawings in Mia's collection (10.2-10.4), has been a century-old puzzle. The large-scale cartoons, representing the four elements, were acquired in 1910 as the work of the famous British Pre-Raphaelite painter Dante Gabriel Rossetti (1828-1882). This attribution was based on the spurious monogram "D.G.R" inscribed at the lower edge of each of the drawings. Over the years, other artists' names have been proposed--Frederic James Shields (1833-1911), Henry Holiday (1839-1927)--but no consensus among experts was found. 
+
+Finally, in December 2015, exactly 105 years (almost to the day) after the drawings were given to the museum, the identity of the artist has been recovered. They are the work of the British artist Frederick G. Smith. It was Peter Cormack, the noted scholar of British and American stained glass, who tracked down the artist and also identified the project for which they were produced, the grand staircase at Avery Hill, in southeast London. Smith was a partner of the London firm Campbell, Smith, & Co., and he likely executed these cartoons between 1888 or 1889 when the house was being reconstructed by Colonel John T. North. The stained glass was completed by 1890, but  Avery Hill was badly damaged during the Blitz of World War II. In 1982 the museum acquired a stained glass panel directly related to the series, representing the allegory of Water (81.92). The provenance is not known, but the glass is roughly half the size of the drawing. It may have come from Avery Hill, or perhaps Campbell, Smith & Co. executed multiple versions of Smith's designs.</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Institute Info.Provenance</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>[Art dealer, London, acquired from "an old house in Chelsea;" sold to Brooks]; [Edmund D. Brooks Book Rooms, Minneapolis, 1910; sold to Martin]; Ella S. (Mrs. Charles Jarius) Martin, Minneapolis (1910; given to Mia).</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Institute Info.Department</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Prints and Drawings</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Description.Style</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>19th century</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Description.Medium</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Pen and ink, brush and wash over graphite</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Description.Classification</td>
+        <td>unicode</td> 
+        <td></td>
+        <td> Drawings</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Description.Short Description</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Design for a stained glass window; once thought to be by Dante Gabriel Rosetti
+from a series of The Elements</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Description.Signed</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Inscribed: D.G.R.</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Description.Dated</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>c.1888-89</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Description.Dimension</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>68-5/8 x 25-1/8 in. (174.3 x 63.8 cm)</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

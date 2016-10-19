@@ -36,20 +36,6 @@ Slavery JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -115,12 +101,213 @@ This dataset has financial records of New Orleans slave sales, 1856-1861. There 
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Transaction.Sale Details.Prices Listed</td>
+        <td>int</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Transaction.Sale Details.Price</td>
+        <td>float</td> 
+        <td>Missing values were replaced using the mean of the rest of the category"</td>
+        <td>650.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Transaction.Sale Details.Payment Method</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Cash</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Transaction.Sale Details.Discount Rate</td>
+        <td>float</td> 
+        <td>Missing values were replaced using the mean of the rest of the category</td>
+        <td>0.00602698</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Transaction.Sale Details.Predicted Interest Rate</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.07477</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Buyer</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Origin': u'Unknown, Unknown', u'State of Origin': u'Unknown', u'County of Origin': u'Unknown', u'Full Name': u'Maria Hopson'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Transaction</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Date': u'10/6/1856', u'Number of Total Slaves Purchased': 1, u'Number of Adult Slaves': 1, u'Number of Child Slaves': 0, u'Sale Details': {u'Discount Rate': 0.00602698, u'Price': 650.0, u'Payment Method': u'Cash', u'Prices Listed': 1, u'Predicted Interest Rate': 0.07477}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Slave</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Gender': u'M', u'Age': 40.0, u'Skin Color': u'Unknown', u'Name': u'Shadrack'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Seller</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Origin': u'Unknown, AL', u'State of Origin': u'AL', u'County of Origin': u'Unknown', u'Full Name': u'Benjamin Screws'}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Seller.Origin</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Unknown, AL</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Seller.County of Origin</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Unknown</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Seller.Full Name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Benjamin Screws</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Seller.State of Origin</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>AL</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Slave.Gender</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>M</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Slave.Age</td>
+        <td>float</td> 
+        <td>Ages that are represented as -1 stand for ages that were not available in the data that was collected.</td>
+        <td>40.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Slave.Skin Color</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Unknown</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Slave.Name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Shadrack</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Buyer.Origin</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Unknown, Unknown</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Buyer.County of Origin</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Unknown</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Buyer.Full Name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Maria Hopson</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Buyer.State of Origin</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Unknown</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Transaction.Date</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>10/6/1856</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Transaction.Number of Total Slaves Purchased</td>
+        <td>int</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Transaction.Number of Adult Slaves</td>
+        <td>int</td> 
+        <td></td>
+        <td>1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Transaction.Number of Child Slaves</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Transaction.Sale Details</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Discount Rate': 0.00602698, u'Price': 650.0, u'Payment Method': u'Cash', u'Prices Listed': 1, u'Predicted Interest Rate': 0.07477}</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

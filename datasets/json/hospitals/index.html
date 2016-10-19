@@ -36,20 +36,6 @@ Hospitals JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -114,12 +100,188 @@ Medicare has collected data on many different hospitals throughout the country t
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Information</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Phone Number': u'7068582101', u'Type': u'Acute Care Hospitals', u'Name': u'HUTCHESON MEDICAL CENTER', u'Emergency Services': u'Yes', u'Ownership': u'Government - Hospital District or Authority'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Outpatient Volume</td>
+        <td>dict</td> 
+        <td>Outpatient data for 2014.</td>
+        <td>{u'Genitourinary': 113, u'Eye': 244, u'Nervous System': 710, u'Musculoskeletal': 76, u'Skin': 25, u'Gastrointestinal': 395, u'Cardiovascular': 14}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Provider ID</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>110004</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Location</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'City': u'FORT OGLETHORPE', u'ZIP Code': u'30742', u'Longitude': -85.263105, u'County': u'CATOOSA', u'State': u'GA', u'Address': u'100 GROSS CRESCENT', u'Latitude': 34.949143}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Location.City</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>FORT OGLETHORPE</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Location.ZIP Code</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>30742</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Location.Longitude</td>
+        <td>float</td> 
+        <td></td>
+        <td>-85.263105</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Location.County</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>CATOOSA</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Location.State</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>GA</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Location.Address</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>100 GROSS CRESCENT</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Location.Latitude</td>
+        <td>float</td> 
+        <td></td>
+        <td>34.949143</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Outpatient Volume.Genitourinary</td>
+        <td>int</td> 
+        <td></td>
+        <td>113</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Outpatient Volume.Eye</td>
+        <td>int</td> 
+        <td></td>
+        <td>244</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Outpatient Volume.Nervous System</td>
+        <td>int</td> 
+        <td></td>
+        <td>710</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Outpatient Volume.Musculoskeletal</td>
+        <td>int</td> 
+        <td></td>
+        <td>76</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Outpatient Volume.Skin</td>
+        <td>int</td> 
+        <td></td>
+        <td>25</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Outpatient Volume.Gastrointestinal</td>
+        <td>int</td> 
+        <td></td>
+        <td>395</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Outpatient Volume.Cardiovascular</td>
+        <td>int</td> 
+        <td></td>
+        <td>14</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Information.Type</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Acute Care Hospitals</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Information.Phone Number</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>7068582101</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Information.Emergency Services</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Yes</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Information.Name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>HUTCHESON MEDICAL CENTER</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Information.Ownership</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Government - Hospital District or Authority</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

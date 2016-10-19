@@ -45,12 +45,201 @@ This dataset has metadata about many pieces from their collection.
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].dimensions.width</td>
+        <td>float</td> 
+        <td>The width of the piece of art, in millimeters. If it is unknown, this was replaced with "0".</td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].dimensions.depth</td>
+        <td>float</td> 
+        <td>The depth of the piece of art, in millimeters. If it is unknown, this was replaced with "0".</td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].dimensions.height</td>
+        <td>float</td> 
+        <td>The height of the piece of art, in millimeters. If it is unknown, this was replaced with "0".</td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].artist</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'gender': u'Female', u'death': {u'location': u'', u'year': 0}, u'role': u'artist', u'name': u'Abakanowicz, Magdalena', u'birth': {u'location': u'Polska', u'year': 1930}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'url': u'http://www.tate.org.uk/art/artworks/abakanowicz-backs-t12981', u'medium': u'Burlap and resin', u'thumbnail': u'http://www.tate.org.uk/art/images/work/T/T12/T12981_8.jpg', u'title': u'Backs'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].dimensions</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'width': 0.0, u'depth': 0.0, u'height': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].metadata</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'credit': u'Presented anonymously 2009', u'acquisition date': 2009, u'creation decade': 1970, u'creation year': 1976}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].data.url</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>http://www.tate.org.uk/art/artworks/abakanowicz-backs-t12981</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.medium</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Burlap and resin</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.thumbnail</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>http://www.tate.org.uk/art/images/work/T/T12/T12981_8.jpg</td>
+    </tr>
+    
+    <tr>
+        <td>[0].data.title</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Backs</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].artist.death.location</td>
+        <td>unicode</td> 
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.death.year</td>
+        <td>int</td> 
+        <td>The year that the artist died. If the year is unknown, it was replaced with "0".</td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].artist.gender</td>
+        <td>unicode</td> 
+        <td>The recorded gender of the artist, either "Male", "Female", or a blank string.</td>
+        <td>Female</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.death</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'location': u'', u'year': 0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.role</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>artist</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Abakanowicz, Magdalena</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.birth</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'location': u'Polska', u'year': 1930}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].artist.birth.location</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Polska</td>
+    </tr>
+    
+    <tr>
+        <td>[0].artist.birth.year</td>
+        <td>int</td> 
+        <td>The year that the artist was born. If the year is unknown, it was replaced with "0".</td>
+        <td>1930</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].metadata.credit</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Presented anonymously 2009</td>
+    </tr>
+    
+    <tr>
+        <td>[0].metadata.acquisition date</td>
+        <td>int</td> 
+        <td>The year that this particular art piece was acquired by the Tate art gallery. If the creation date was not known, it was replaced with "0".</td>
+        <td>2009</td>
+    </tr>
+    
+    <tr>
+        <td>[0].metadata.creation decade</td>
+        <td>int</td> 
+        <td>The 10-year period that this particular art piece was created in. If the creation date was not known, it was replaced with "0".</td>
+        <td>1970</td>
+    </tr>
+    
+    <tr>
+        <td>[0].metadata.creation year</td>
+        <td>int</td> 
+        <td>The year that this particular art piece was created in. If the creation date was not known, it was replaced with "0".</td>
+        <td>1976</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

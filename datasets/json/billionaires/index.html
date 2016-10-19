@@ -36,20 +36,6 @@ Billionaires JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -114,12 +100,220 @@ Researchers have compiled a multi-decade database of the super-rich. Building of
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].wealth.how.category</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Financial</td>
+    </tr>
+    
+    <tr>
+        <td>[0].wealth.how.from emerging</td>
+        <td>bool</td> 
+        <td></td>
+        <td>True</td>
+    </tr>
+    
+    <tr>
+        <td>[0].wealth.how.industry</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Money Management</td>
+    </tr>
+    
+    <tr>
+        <td>[0].wealth.how.was political</td>
+        <td>bool</td> 
+        <td></td>
+        <td>False</td>
+    </tr>
+    
+    <tr>
+        <td>[0].wealth.how.inherited</td>
+        <td>bool</td> 
+        <td></td>
+        <td>True</td>
+    </tr>
+    
+    <tr>
+        <td>[0].wealth.how.was founder</td>
+        <td>bool</td> 
+        <td></td>
+        <td>True</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].demographics.gender</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>male</td>
+    </tr>
+    
+    <tr>
+        <td>[0].demographics.age</td>
+        <td>int</td> 
+        <td>Ages that are represented as -1 stand for ages that were not available in the data that was collected.</td>
+        <td>-1</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].wealth</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'worth in billions': 1.0, u'how': {u'category': u'Financial', u'from emerging': True, u'industry': u'Money Management', u'was political': False, u'inherited': True, u'was founder': True}, u'type': u'self-made finance'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].company</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'sector': u'construction', u'founded': 1968, u'type': u'new', u'name': u'Rolaco Trading and Contracting Company', u'relationship': u'founder'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].rank</td>
+        <td>int</td> 
+        <td></td>
+        <td>404</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'gdp': 158000000000.0, u'region': u'Middle East/North Africa', u'citizenship': u'Saudi Arabia', u'country code': u'SAU'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].year</td>
+        <td>int</td> 
+        <td></td>
+        <td>1996</td>
+    </tr>
+    
+    <tr>
+        <td>[0].demographics</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'gender': u'male', u'age': -1}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Abdul Aziz Al-Sulaiman</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].company.sector</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>construction</td>
+    </tr>
+    
+    <tr>
+        <td>[0].company.founded</td>
+        <td>int</td> 
+        <td></td>
+        <td>1968</td>
+    </tr>
+    
+    <tr>
+        <td>[0].company.type</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>new</td>
+    </tr>
+    
+    <tr>
+        <td>[0].company.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Rolaco Trading and Contracting Company</td>
+    </tr>
+    
+    <tr>
+        <td>[0].company.relationship</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>founder</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].wealth.worth in billions</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].wealth.how</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'category': u'Financial', u'from emerging': True, u'industry': u'Money Management', u'was political': False, u'inherited': True, u'was founder': True}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].wealth.type</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>self-made finance</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].location.gdp</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.58e+11</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.region</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Middle East/North Africa</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.citizenship</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Saudi Arabia</td>
+    </tr>
+    
+    <tr>
+        <td>[0].location.country code</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>SAU</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

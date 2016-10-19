@@ -44,12 +44,475 @@ The following data set is information obtained about counties in the United Stat
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Housing.Housing Units</td>
+        <td>int</td> 
+        <td>2014</td>
+        <td>22751</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Housing.Units in Multi-Unit Structures</td>
+        <td>float</td> 
+        <td>percent, 2009-2013</td>
+        <td>8.3</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Housing.Median Value of Owner-Occupied Units</td>
+        <td>int</td> 
+        <td>2009-2013</td>
+        <td>136200</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Housing.Households</td>
+        <td>int</td> 
+        <td>2009-2013</td>
+        <td>20071</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Housing.Persons per Household</td>
+        <td>float</td> 
+        <td>2009-2013</td>
+        <td>2.71</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Housing.Homeownership Rate</td>
+        <td>float</td> 
+        <td>2009-2013</td>
+        <td>76.8</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Age.Percent Under 18 Years</td>
+        <td>float</td> 
+        <td></td>
+        <td>25.2</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Age.Percent 65 and Older</td>
+        <td>float</td> 
+        <td></td>
+        <td>13.8</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Age.Percent Under 5 Years</td>
+        <td>float</td> 
+        <td></td>
+        <td>6.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Miscellaneous.Manufacturers Shipments</td>
+        <td>int</td> 
+        <td>$100,000 of dollars, 2007</td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Foreign Born</td>
+        <td>float</td> 
+        <td>percent 2009-2013</td>
+        <td>1.6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Percent Female</td>
+        <td>float</td> 
+        <td>2014</td>
+        <td>51.4</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Language Other than English at Home</td>
+        <td>float</td> 
+        <td>age 5+, percent, 2009-2013</td>
+        <td>3.5</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Living in Same House +1 Years</td>
+        <td>float</td> 
+        <td>percent, 2009-2013</td>
+        <td>85.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Mean Travel Time to Work</td>
+        <td>float</td> 
+        <td>minutes, workers aged 16+, 2009-2013</td>
+        <td>26.2</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Building Permits</td>
+        <td>int</td> 
+        <td>2014</td>
+        <td>131</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Veterans</td>
+        <td>int</td> 
+        <td>2009-2013</td>
+        <td>5922</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Land Area</td>
+        <td>float</td> 
+        <td>Square Miles, 2010</td>
+        <td>594.44</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Ethnicities.White Alone, not Hispanic or Latino</td>
+        <td>float</td> 
+        <td></td>
+        <td>75.6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Ethnicities.Two or More Races</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.8</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Ethnicities.Asian Alone</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Ethnicities.Native Hawaiian and Other Pacific Islander Alone</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Ethnicities.White Alone</td>
+        <td>float</td> 
+        <td></td>
+        <td>77.9</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Ethnicities.Hispanic or Latino</td>
+        <td>float</td> 
+        <td></td>
+        <td>2.7</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Ethnicities.Black Alone</td>
+        <td>float</td> 
+        <td></td>
+        <td>18.7</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Ethnicities.American Indian and Alaska Native Alone</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.5</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Employment.Firms.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>4067</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms.Hispanic-Owned</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.7</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms.Native Hawaiian and Other Pacific Islander-Owned</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms.American Indian-Owned</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms.Black-Owned</td>
+        <td>float</td> 
+        <td></td>
+        <td>15.2</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms.Asian-Owned</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.3</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms.Women-Owned</td>
+        <td>float</td> 
+        <td></td>
+        <td>31.7</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Sales.Retail Sales</td>
+        <td>int</td> 
+        <td>$100,000 of dollars</td>
+        <td>5981</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Sales.Merchant Wholesaler Sales</td>
+        <td>int</td> 
+        <td>$100,000 of dollars</td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Sales.Accommodation and Food Services Sales</td>
+        <td>int</td> 
+        <td>$100,000 of dollars</td>
+        <td>881</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Sales.Retail Sales per Capita</td>
+        <td>int</td> 
+        <td></td>
+        <td>12003</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Income.Median Houseold Income</td>
+        <td>int</td> 
+        <td></td>
+        <td>53682</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Income.Per Capita Income</td>
+        <td>int</td> 
+        <td>2013 dollars</td>
+        <td>24571</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Income.Persons Below Poverty Level</td>
+        <td>float</td> 
+        <td>percent</td>
+        <td>12.1</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Education.Bachelor's Degree or Higher</td>
+        <td>float</td> 
+        <td></td>
+        <td>20.9</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Education.High School or Higher</td>
+        <td>float</td> 
+        <td></td>
+        <td>85.6</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Ethnicities</td>
+        <td>dict</td> 
+        <td>percent, 2014</td>
+        <td>{u'White Alone, not Hispanic or Latino': 75.6, u'Two or More Races': 1.8, u'Asian Alone': 1.1, u'Native Hawaiian and Other Pacific Islander Alone': 0.1, u'White Alone': 77.9, u'Hispanic or Latino': 2.7, u'Black Alone': 18.7, u'American Indian and Alaska Native Alone': 0.5}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Age</td>
+        <td>dict</td> 
+        <td>percent, 2014</td>
+        <td>{u'Percent Under 18 Years': 25.2, u'Percent 65 and Older': 13.8, u'Percent Under 5 Years': 6.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Manufacturers Shipments': 0, u'Foreign Born': 1.6, u'Percent Female': 51.4, u'Language Other than English at Home': 3.5, u'Living in Same House +1 Years': 85.0, u'Mean Travel Time to Work': 26.2, u'Building Permits': 131, u'Veterans': 5922, u'Land Area': 594.44}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Sales</td>
+        <td>dict</td> 
+        <td>2007</td>
+        <td>{u'Retail Sales': 5981, u'Merchant Wholesaler Sales': 0, u'Accommodation and Food Services Sales': 881, u'Retail Sales per Capita': 12003}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].County</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Autauga County</td>
+    </tr>
+    
+    <tr>
+        <td>[0].State</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>AL</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Income</td>
+        <td>dict</td> 
+        <td>2009-2013</td>
+        <td>{u'Median Houseold Income': 53682, u'Per Capita Income': 24571, u'Persons Below Poverty Level': 12.1}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Education</td>
+        <td>dict</td> 
+        <td>percent, 2009-2013</td>
+        <td>{u"Bachelor's Degree or Higher": 20.9, u'High School or Higher': 85.6}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Private Non-farm Establishments': 817, u'Nonemployer Establishments': 2947, u'Firms': {u'Total': 4067, u'Hispanic-Owned': 0.7, u'Native Hawaiian and Other Pacific Islander-Owned': 0.0, u'Women-Owned': 31.7, u'American Indian-Owned': 0.0, u'Asian-Owned': 1.3, u'Black-Owned': 15.2}, u'Private Non-farm Employment Percent Change': 2.1, u'Private Non-farm Employment': 10120}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Housing</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Housing Units': 22751, u'Units in Multi-Unit Structures': 8.3, u'Median Value of Owner-Occupied Units': 136200, u'Households': 20071, u'Persons per Household': 2.71, u'Homeownership Rate': 76.8}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Population</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'2014 Population': 55395, u'2010 Population': 54571, u'Population per Square Mile': 91.8, u'Population Percent Change': 1.5}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Employment.Private Non-farm Establishments</td>
+        <td>int</td> 
+        <td>2013</td>
+        <td>817</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Private Non-farm Employment Percent Change</td>
+        <td>float</td> 
+        <td>2012-2013</td>
+        <td>2.1</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms</td>
+        <td>dict</td> 
+        <td>2007</td>
+        <td>{u'Total': 4067, u'Hispanic-Owned': 0.7, u'Native Hawaiian and Other Pacific Islander-Owned': 0.0, u'Women-Owned': 31.7, u'American Indian-Owned': 0.0, u'Asian-Owned': 1.3, u'Black-Owned': 15.2}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Nonemployer Establishments</td>
+        <td>int</td> 
+        <td>2013</td>
+        <td>2947</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Private Non-farm Employment</td>
+        <td>int</td> 
+        <td>2013</td>
+        <td>10120</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Population.2014 Population</td>
+        <td>int</td> 
+        <td></td>
+        <td>55395</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Population.2010 Population</td>
+        <td>int</td> 
+        <td></td>
+        <td>54571</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Population.Population per Square Mile</td>
+        <td>float</td> 
+        <td>2010</td>
+        <td>91.8</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Population.Population Percent Change</td>
+        <td>float</td> 
+        <td>April 1, 2010 to July 1, 2014</td>
+        <td>1.5</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

@@ -48,12 +48,155 @@ State Participation: Not all state plan states participate in the ODI. The follo
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].address</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'city': u'Cherry Hill', u'state': u'NJ', u'street': u'100 Dobbs Ln Ste 102', u'zip': 8034}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].industry</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'major_group': u'Motor Freight Transportation And Warehousing', u'division': u'Transportation, Communications, Electric, Gas, And Sanitary Services', u'id': 4222, u'label': u'Refrigerated Warehousing and Storage'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'total case rate': 0.0, u'days away': 0.0, u'days away/restricted/transfer': 0.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].business</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'name': u'United States Cold Storage', u'second name': u'US Cold'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].year</td>
+        <td>int</td> 
+        <td></td>
+        <td>2002</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].business.name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>United States Cold Storage</td>
+    </tr>
+    
+    <tr>
+        <td>[0].business.second name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>US Cold</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].address.city</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Cherry Hill</td>
+    </tr>
+    
+    <tr>
+        <td>[0].address.state</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>NJ</td>
+    </tr>
+    
+    <tr>
+        <td>[0].address.street</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>100 Dobbs Ln Ste 102</td>
+    </tr>
+    
+    <tr>
+        <td>[0].address.zip</td>
+        <td>int</td> 
+        <td></td>
+        <td>8034</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].industry.major_group</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Motor Freight Transportation And Warehousing</td>
+    </tr>
+    
+    <tr>
+        <td>[0].industry.division</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Transportation, Communications, Electric, Gas, And Sanitary Services</td>
+    </tr>
+    
+    <tr>
+        <td>[0].industry.id</td>
+        <td>int</td> 
+        <td></td>
+        <td>4222</td>
+    </tr>
+    
+    <tr>
+        <td>[0].industry.label</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Refrigerated Warehousing and Storage</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].statistics.total case rate</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.days away</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].statistics.days away/restricted/transfer</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 
