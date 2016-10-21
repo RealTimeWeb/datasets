@@ -66,9 +66,9 @@ public class Income {
 	 */
     public Income(JSONObject json_data) {
         try {// Median Houseold Income
-            this.medianHouseoldIncome = new Integer(((Long)json_data.get("Median Houseold Income")).intValue());// Per Capita Income
-            this.perCapitaIncome = new Integer(((Long)json_data.get("Per Capita Income")).intValue());// Persons Below Poverty Level
-            this.personsBelowPovertyLevel = (Double)json_data.get("Persons Below Poverty Level");
+            this.medianHouseoldIncome = ((Number)json_data.get("Median Houseold Income")).intValue();// Per Capita Income
+            this.perCapitaIncome = ((Number)json_data.get("Per Capita Income")).intValue();// Persons Below Poverty Level
+            this.personsBelowPovertyLevel = ((Number)json_data.get("Persons Below Poverty Level")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Income; a field was missing.");
     		e.printStackTrace();

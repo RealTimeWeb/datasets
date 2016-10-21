@@ -102,12 +102,12 @@
 <span class="sourceLineNo">094</span>         */<a name="line.94"></a>
 <span class="sourceLineNo">095</span>    public Employment(JSONObject json_data) {<a name="line.95"></a>
 <span class="sourceLineNo">096</span>        try {// Part Time<a name="line.96"></a>
-<span class="sourceLineNo">097</span>            this.partTime = new Integer(((Long)json_data.get("Part Time")).intValue());// Unemployed<a name="line.97"></a>
-<span class="sourceLineNo">098</span>            this.unemployed = new Integer(((Long)json_data.get("Unemployed")).intValue());// Unemployment Rate<a name="line.98"></a>
-<span class="sourceLineNo">099</span>            this.unemploymentRate = (Double)json_data.get("Unemployment Rate");// Full Time<a name="line.99"></a>
-<span class="sourceLineNo">100</span>            this.fullTime = new Integer(((Long)json_data.get("Full Time")).intValue());// Employed<a name="line.100"></a>
-<span class="sourceLineNo">101</span>            this.employed = new Integer(((Long)json_data.get("Employed")).intValue());// Full Time, Year-Round<a name="line.101"></a>
-<span class="sourceLineNo">102</span>            this.fullTimeYearRound = new Integer(((Long)json_data.get("Full Time, Year-Round")).intValue());<a name="line.102"></a>
+<span class="sourceLineNo">097</span>            this.partTime = ((Number)json_data.get("Part Time")).intValue();// Unemployed<a name="line.97"></a>
+<span class="sourceLineNo">098</span>            this.unemployed = ((Number)json_data.get("Unemployed")).intValue();// Unemployment Rate<a name="line.98"></a>
+<span class="sourceLineNo">099</span>            this.unemploymentRate = ((Number)json_data.get("Unemployment Rate")).doubleValue();// Full Time<a name="line.99"></a>
+<span class="sourceLineNo">100</span>            this.fullTime = ((Number)json_data.get("Full Time")).intValue();// Employed<a name="line.100"></a>
+<span class="sourceLineNo">101</span>            this.employed = ((Number)json_data.get("Employed")).intValue();// Full Time, Year-Round<a name="line.101"></a>
+<span class="sourceLineNo">102</span>            this.fullTimeYearRound = ((Number)json_data.get("Full Time, Year-Round")).intValue();<a name="line.102"></a>
 <span class="sourceLineNo">103</span>        } catch (NullPointerException e) {<a name="line.103"></a>
 <span class="sourceLineNo">104</span>                System.err.println("Could not convert the response to a Employment; a field was missing.");<a name="line.104"></a>
 <span class="sourceLineNo">105</span>                e.printStackTrace();<a name="line.105"></a>

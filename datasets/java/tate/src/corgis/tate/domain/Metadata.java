@@ -78,9 +78,9 @@ public class Metadata {
     public Metadata(JSONObject json_data) {
         try {// credit
             this.credit = (String)json_data.get("credit");// acquisition date
-            this.acquisitionDate = new Integer(((Long)json_data.get("acquisition date")).intValue());// creation decade
-            this.creationDecade = new Integer(((Long)json_data.get("creation decade")).intValue());// creation year
-            this.creationYear = new Integer(((Long)json_data.get("creation year")).intValue());
+            this.acquisitionDate = ((Number)json_data.get("acquisition date")).intValue();// creation decade
+            this.creationDecade = ((Number)json_data.get("creation decade")).intValue();// creation year
+            this.creationYear = ((Number)json_data.get("creation year")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Metadata; a field was missing.");
     		e.printStackTrace();

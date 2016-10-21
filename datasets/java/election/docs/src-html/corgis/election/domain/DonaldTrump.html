@@ -73,8 +73,8 @@
 <span class="sourceLineNo">065</span>    public DonaldTrump(JSONObject json_data) {<a name="line.65"></a>
 <span class="sourceLineNo">066</span>        try {// Party<a name="line.66"></a>
 <span class="sourceLineNo">067</span>            this.party = (String)json_data.get("Party");// Number of Votes<a name="line.67"></a>
-<span class="sourceLineNo">068</span>            this.numberOfVotes = new Integer(((Long)json_data.get("Number of Votes")).intValue());// Percent of Votes<a name="line.68"></a>
-<span class="sourceLineNo">069</span>            this.percentOfVotes = (Double)json_data.get("Percent of Votes");<a name="line.69"></a>
+<span class="sourceLineNo">068</span>            this.numberOfVotes = ((Number)json_data.get("Number of Votes")).intValue();// Percent of Votes<a name="line.68"></a>
+<span class="sourceLineNo">069</span>            this.percentOfVotes = ((Number)json_data.get("Percent of Votes")).doubleValue();<a name="line.69"></a>
 <span class="sourceLineNo">070</span>        } catch (NullPointerException e) {<a name="line.70"></a>
 <span class="sourceLineNo">071</span>                System.err.println("Could not convert the response to a DonaldTrump; a field was missing.");<a name="line.71"></a>
 <span class="sourceLineNo">072</span>                e.printStackTrace();<a name="line.72"></a>

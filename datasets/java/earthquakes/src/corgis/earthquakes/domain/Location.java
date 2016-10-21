@@ -99,12 +99,12 @@ public class Location {
 	 */
     public Location(JSONObject json_data) {
         try {// distance
-            this.distance = (Double)json_data.get("distance");// full
+            this.distance = ((Number)json_data.get("distance")).doubleValue();// full
             this.full = (String)json_data.get("full");// name
             this.name = (String)json_data.get("name");// longitude
-            this.longitude = (Double)json_data.get("longitude");// depth
-            this.depth = (Double)json_data.get("depth");// latitude
-            this.latitude = (Double)json_data.get("latitude");
+            this.longitude = ((Number)json_data.get("longitude")).doubleValue();// depth
+            this.depth = ((Number)json_data.get("depth")).doubleValue();// latitude
+            this.latitude = ((Number)json_data.get("latitude")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Location; a field was missing.");
     		e.printStackTrace();

@@ -104,13 +104,13 @@ public class Vitamins {
 	 */
     public Vitamins(JSONObject json_data) {
         try {// Vitamin A - IU
-            this.vitaminAIu = new Integer(((Long)json_data.get("Vitamin A - IU")).intValue());// Vitamin C
-            this.vitaminC = (Double)json_data.get("Vitamin C");// Vitamin B12
-            this.vitaminBonetwo = (Double)json_data.get("Vitamin B12");// Vitamin B6
-            this.vitaminBsix = (Double)json_data.get("Vitamin B6");// Vitamin A - RAE
-            this.vitaminARae = new Integer(((Long)json_data.get("Vitamin A - RAE")).intValue());// Vitamin E
-            this.vitaminE = (Double)json_data.get("Vitamin E");// Vitamin K
-            this.vitaminK = (Double)json_data.get("Vitamin K");
+            this.vitaminAIu = ((Number)json_data.get("Vitamin A - IU")).intValue();// Vitamin C
+            this.vitaminC = ((Number)json_data.get("Vitamin C")).doubleValue();// Vitamin B12
+            this.vitaminBonetwo = ((Number)json_data.get("Vitamin B12")).doubleValue();// Vitamin B6
+            this.vitaminBsix = ((Number)json_data.get("Vitamin B6")).doubleValue();// Vitamin A - RAE
+            this.vitaminARae = ((Number)json_data.get("Vitamin A - RAE")).intValue();// Vitamin E
+            this.vitaminE = ((Number)json_data.get("Vitamin E")).doubleValue();// Vitamin K
+            this.vitaminK = ((Number)json_data.get("Vitamin K")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Vitamins; a field was missing.");
     		e.printStackTrace();

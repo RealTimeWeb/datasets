@@ -121,14 +121,14 @@ public class Health {
 	 */
     public Health(JSONObject json_data) {
         try {// Life Expectancy at Birth, Total
-            this.lifeExpectancyAtBirthTotal = (Double)json_data.get("Life Expectancy at Birth, Total");// Total Population
-            this.totalPopulation = (Double)json_data.get("Total Population");// Life Expectancy at Birth, Male
-            this.lifeExpectancyAtBirthMale = (Double)json_data.get("Life Expectancy at Birth, Male");// Population Growth
-            this.populationGrowth = (Double)json_data.get("Population Growth");// Life Expectancy at Birth, Female
-            this.lifeExpectancyAtBirthFemale = (Double)json_data.get("Life Expectancy at Birth, Female");// Birth Rate
-            this.birthRate = (Double)json_data.get("Birth Rate");// Death Rate
-            this.deathRate = (Double)json_data.get("Death Rate");// Fertility Rate
-            this.fertilityRate = (Double)json_data.get("Fertility Rate");
+            this.lifeExpectancyAtBirthTotal = ((Number)json_data.get("Life Expectancy at Birth, Total")).doubleValue();// Total Population
+            this.totalPopulation = ((Number)json_data.get("Total Population")).doubleValue();// Life Expectancy at Birth, Male
+            this.lifeExpectancyAtBirthMale = ((Number)json_data.get("Life Expectancy at Birth, Male")).doubleValue();// Population Growth
+            this.populationGrowth = ((Number)json_data.get("Population Growth")).doubleValue();// Life Expectancy at Birth, Female
+            this.lifeExpectancyAtBirthFemale = ((Number)json_data.get("Life Expectancy at Birth, Female")).doubleValue();// Birth Rate
+            this.birthRate = ((Number)json_data.get("Birth Rate")).doubleValue();// Death Rate
+            this.deathRate = ((Number)json_data.get("Death Rate")).doubleValue();// Fertility Rate
+            this.fertilityRate = ((Number)json_data.get("Fertility Rate")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Health; a field was missing.");
     		e.printStackTrace();

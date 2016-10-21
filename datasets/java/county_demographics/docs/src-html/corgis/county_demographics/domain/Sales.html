@@ -85,10 +85,10 @@
 <span class="sourceLineNo">077</span>         */<a name="line.77"></a>
 <span class="sourceLineNo">078</span>    public Sales(JSONObject json_data) {<a name="line.78"></a>
 <span class="sourceLineNo">079</span>        try {// Retail Sales<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.retailSales = new Integer(((Long)json_data.get("Retail Sales")).intValue());// Merchant Wholesaler Sales<a name="line.80"></a>
-<span class="sourceLineNo">081</span>            this.merchantWholesalerSales = new Integer(((Long)json_data.get("Merchant Wholesaler Sales")).intValue());// Accommodation and Food Services Sales<a name="line.81"></a>
-<span class="sourceLineNo">082</span>            this.accommodationAndFoodServicesSales = new Integer(((Long)json_data.get("Accommodation and Food Services Sales")).intValue());// Retail Sales per Capita<a name="line.82"></a>
-<span class="sourceLineNo">083</span>            this.retailSalesPerCapita = new Integer(((Long)json_data.get("Retail Sales per Capita")).intValue());<a name="line.83"></a>
+<span class="sourceLineNo">080</span>            this.retailSales = ((Number)json_data.get("Retail Sales")).intValue();// Merchant Wholesaler Sales<a name="line.80"></a>
+<span class="sourceLineNo">081</span>            this.merchantWholesalerSales = ((Number)json_data.get("Merchant Wholesaler Sales")).intValue();// Accommodation and Food Services Sales<a name="line.81"></a>
+<span class="sourceLineNo">082</span>            this.accommodationAndFoodServicesSales = ((Number)json_data.get("Accommodation and Food Services Sales")).intValue();// Retail Sales per Capita<a name="line.82"></a>
+<span class="sourceLineNo">083</span>            this.retailSalesPerCapita = ((Number)json_data.get("Retail Sales per Capita")).intValue();<a name="line.83"></a>
 <span class="sourceLineNo">084</span>        } catch (NullPointerException e) {<a name="line.84"></a>
 <span class="sourceLineNo">085</span>                System.err.println("Could not convert the response to a Sales; a field was missing.");<a name="line.85"></a>
 <span class="sourceLineNo">086</span>                e.printStackTrace();<a name="line.86"></a>

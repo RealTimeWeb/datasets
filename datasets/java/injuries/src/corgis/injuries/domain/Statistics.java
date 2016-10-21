@@ -64,9 +64,9 @@ public class Statistics {
 	 */
     public Statistics(JSONObject json_data) {
         try {// total case rate
-            this.totalCaseRate = (Double)json_data.get("total case rate");// days away
-            this.daysAway = (Double)json_data.get("days away");// days away/restricted/transfer
-            this.daysAwayRestrictedTransfer = (Double)json_data.get("days away/restricted/transfer");
+            this.totalCaseRate = ((Number)json_data.get("total case rate")).doubleValue();// days away
+            this.daysAway = ((Number)json_data.get("days away")).doubleValue();// days away/restricted/transfer
+            this.daysAwayRestrictedTransfer = ((Number)json_data.get("days away/restricted/transfer")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Statistics; a field was missing.");
     		e.printStackTrace();

@@ -64,9 +64,9 @@ public class Temperature {
 	 */
     public Temperature(JSONObject json_data) {
         try {// Max Temp
-            this.maxTemp = (Double)json_data.get("Max Temp");// Avg Temp
-            this.avgTemp = (Double)json_data.get("Avg Temp");// Min Temp
-            this.minTemp = (Double)json_data.get("Min Temp");
+            this.maxTemp = ((Number)json_data.get("Max Temp")).doubleValue();// Avg Temp
+            this.avgTemp = ((Number)json_data.get("Avg Temp")).doubleValue();// Min Temp
+            this.minTemp = ((Number)json_data.get("Min Temp")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Temperature; a field was missing.");
     		e.printStackTrace();

@@ -86,9 +86,9 @@
 <span class="sourceLineNo">078</span>    public Metadata(JSONObject json_data) {<a name="line.78"></a>
 <span class="sourceLineNo">079</span>        try {// credit<a name="line.79"></a>
 <span class="sourceLineNo">080</span>            this.credit = (String)json_data.get("credit");// acquisition date<a name="line.80"></a>
-<span class="sourceLineNo">081</span>            this.acquisitionDate = new Integer(((Long)json_data.get("acquisition date")).intValue());// creation decade<a name="line.81"></a>
-<span class="sourceLineNo">082</span>            this.creationDecade = new Integer(((Long)json_data.get("creation decade")).intValue());// creation year<a name="line.82"></a>
-<span class="sourceLineNo">083</span>            this.creationYear = new Integer(((Long)json_data.get("creation year")).intValue());<a name="line.83"></a>
+<span class="sourceLineNo">081</span>            this.acquisitionDate = ((Number)json_data.get("acquisition date")).intValue();// creation decade<a name="line.81"></a>
+<span class="sourceLineNo">082</span>            this.creationDecade = ((Number)json_data.get("creation decade")).intValue();// creation year<a name="line.82"></a>
+<span class="sourceLineNo">083</span>            this.creationYear = ((Number)json_data.get("creation year")).intValue();<a name="line.83"></a>
 <span class="sourceLineNo">084</span>        } catch (NullPointerException e) {<a name="line.84"></a>
 <span class="sourceLineNo">085</span>                System.err.println("Could not convert the response to a Metadata; a field was missing.");<a name="line.85"></a>
 <span class="sourceLineNo">086</span>                e.printStackTrace();<a name="line.86"></a>

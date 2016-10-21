@@ -89,11 +89,11 @@ public class Daily {
 	 */
     public Daily(JSONObject json_data) {
         try {// publisher revenue
-            this.publisherRevenue = (Double)json_data.get("publisher revenue");// amazon revenue
-            this.amazonRevenue = (Double)json_data.get("amazon revenue");// author revenue
-            this.authorRevenue = (Double)json_data.get("author revenue");// units sold
-            this.unitsSold = new Integer(((Long)json_data.get("units sold")).intValue());// gross sales
-            this.grossSales = (Double)json_data.get("gross sales");
+            this.publisherRevenue = ((Number)json_data.get("publisher revenue")).doubleValue();// amazon revenue
+            this.amazonRevenue = ((Number)json_data.get("amazon revenue")).doubleValue();// author revenue
+            this.authorRevenue = ((Number)json_data.get("author revenue")).doubleValue();// units sold
+            this.unitsSold = ((Number)json_data.get("units sold")).intValue();// gross sales
+            this.grossSales = ((Number)json_data.get("gross sales")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Daily; a field was missing.");
     		e.printStackTrace();

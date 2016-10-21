@@ -74,10 +74,10 @@ public class Infrastructure {
 	 */
     public Infrastructure(JSONObject json_data) {
         try {// Telephone Lines
-            this.telephoneLines = (Double)json_data.get("Telephone Lines");// Mobile Cellular Subscriptions per 100 People
-            this.mobileCellularSubscriptionsPerOnezerozeroPeople = (Double)json_data.get("Mobile Cellular Subscriptions per 100 People");// Telephone Lines per 100 People
-            this.telephoneLinesPerOnezerozeroPeople = (Double)json_data.get("Telephone Lines per 100 People");// Mobile Cellular Subscriptions
-            this.mobileCellularSubscriptions = (Double)json_data.get("Mobile Cellular Subscriptions");
+            this.telephoneLines = ((Number)json_data.get("Telephone Lines")).doubleValue();// Mobile Cellular Subscriptions per 100 People
+            this.mobileCellularSubscriptionsPerOnezerozeroPeople = ((Number)json_data.get("Mobile Cellular Subscriptions per 100 People")).doubleValue();// Telephone Lines per 100 People
+            this.telephoneLinesPerOnezerozeroPeople = ((Number)json_data.get("Telephone Lines per 100 People")).doubleValue();// Mobile Cellular Subscriptions
+            this.mobileCellularSubscriptions = ((Number)json_data.get("Mobile Cellular Subscriptions")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Infrastructure; a field was missing.");
     		e.printStackTrace();

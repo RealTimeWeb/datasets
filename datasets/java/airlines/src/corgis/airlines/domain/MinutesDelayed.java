@@ -94,12 +94,12 @@ public class MinutesDelayed {
 	 */
     public MinutesDelayed(JSONObject json_data) {
         try {// late aircraft
-            this.lateAircraft = new Integer(((Long)json_data.get("late aircraft")).intValue());// weather
-            this.weather = new Integer(((Long)json_data.get("weather")).intValue());// carrier
-            this.carrier = new Integer(((Long)json_data.get("carrier")).intValue());// security
-            this.security = new Integer(((Long)json_data.get("security")).intValue());// total
-            this.total = new Integer(((Long)json_data.get("total")).intValue());// national aviation system
-            this.nationalAviationSystem = new Integer(((Long)json_data.get("national aviation system")).intValue());
+            this.lateAircraft = ((Number)json_data.get("late aircraft")).intValue();// weather
+            this.weather = ((Number)json_data.get("weather")).intValue();// carrier
+            this.carrier = ((Number)json_data.get("carrier")).intValue();// security
+            this.security = ((Number)json_data.get("security")).intValue();// total
+            this.total = ((Number)json_data.get("total")).intValue();// national aviation system
+            this.nationalAviationSystem = ((Number)json_data.get("national aviation system")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a MinutesDelayed; a field was missing.");
     		e.printStackTrace();

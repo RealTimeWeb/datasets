@@ -84,11 +84,11 @@ public class Flights {
 	 */
     public Flights(JSONObject json_data) {
         try {// cancelled
-            this.cancelled = new Integer(((Long)json_data.get("cancelled")).intValue());// on time
-            this.onTime = new Integer(((Long)json_data.get("on time")).intValue());// total
-            this.total = new Integer(((Long)json_data.get("total")).intValue());// delayed
-            this.delayed = new Integer(((Long)json_data.get("delayed")).intValue());// diverted
-            this.diverted = new Integer(((Long)json_data.get("diverted")).intValue());
+            this.cancelled = ((Number)json_data.get("cancelled")).intValue();// on time
+            this.onTime = ((Number)json_data.get("on time")).intValue();// total
+            this.total = ((Number)json_data.get("total")).intValue();// delayed
+            this.delayed = ((Number)json_data.get("delayed")).intValue();// diverted
+            this.diverted = ((Number)json_data.get("diverted")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Flights; a field was missing.");
     		e.printStackTrace();

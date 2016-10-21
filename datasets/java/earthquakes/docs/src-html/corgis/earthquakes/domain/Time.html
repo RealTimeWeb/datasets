@@ -124,13 +124,13 @@
 <span class="sourceLineNo">116</span>    public Time(JSONObject json_data) {<a name="line.116"></a>
 <span class="sourceLineNo">117</span>        try {// full<a name="line.117"></a>
 <span class="sourceLineNo">118</span>            this.full = (String)json_data.get("full");// hour<a name="line.118"></a>
-<span class="sourceLineNo">119</span>            this.hour = new Integer(((Long)json_data.get("hour")).intValue());// second<a name="line.119"></a>
-<span class="sourceLineNo">120</span>            this.second = new Integer(((Long)json_data.get("second")).intValue());// month<a name="line.120"></a>
-<span class="sourceLineNo">121</span>            this.month = new Integer(((Long)json_data.get("month")).intValue());// epoch<a name="line.121"></a>
-<span class="sourceLineNo">122</span>            this.epoch = (Long)json_data.get("epoch");// year<a name="line.122"></a>
-<span class="sourceLineNo">123</span>            this.year = new Integer(((Long)json_data.get("year")).intValue());// day<a name="line.123"></a>
-<span class="sourceLineNo">124</span>            this.day = new Integer(((Long)json_data.get("day")).intValue());// minute<a name="line.124"></a>
-<span class="sourceLineNo">125</span>            this.minute = new Integer(((Long)json_data.get("minute")).intValue());<a name="line.125"></a>
+<span class="sourceLineNo">119</span>            this.hour = ((Number)json_data.get("hour")).intValue();// second<a name="line.119"></a>
+<span class="sourceLineNo">120</span>            this.second = ((Number)json_data.get("second")).intValue();// month<a name="line.120"></a>
+<span class="sourceLineNo">121</span>            this.month = ((Number)json_data.get("month")).intValue();// epoch<a name="line.121"></a>
+<span class="sourceLineNo">122</span>            this.epoch = ((Number)json_data.get("epoch")).longValue();// year<a name="line.122"></a>
+<span class="sourceLineNo">123</span>            this.year = ((Number)json_data.get("year")).intValue();// day<a name="line.123"></a>
+<span class="sourceLineNo">124</span>            this.day = ((Number)json_data.get("day")).intValue();// minute<a name="line.124"></a>
+<span class="sourceLineNo">125</span>            this.minute = ((Number)json_data.get("minute")).intValue();<a name="line.125"></a>
 <span class="sourceLineNo">126</span>        } catch (NullPointerException e) {<a name="line.126"></a>
 <span class="sourceLineNo">127</span>                System.err.println("Could not convert the response to a Time; a field was missing.");<a name="line.127"></a>
 <span class="sourceLineNo">128</span>                e.printStackTrace();<a name="line.128"></a>

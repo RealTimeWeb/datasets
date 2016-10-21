@@ -89,9 +89,9 @@ public class Metadata {
     public Metadata(JSONObject json_data) {
         try {// url
             this.url = (String)json_data.get("url");// downloads
-            this.downloads = new Integer(((Long)json_data.get("downloads")).intValue());// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());// rank
-            this.rank = new Integer(((Long)json_data.get("rank")).intValue());// formats
+            this.downloads = ((Number)json_data.get("downloads")).intValue();// id
+            this.id = ((Number)json_data.get("id")).intValue();// rank
+            this.rank = ((Number)json_data.get("rank")).intValue();// formats
             this.formats = new Formats((JSONObject)json_data.get("formats"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Metadata; a field was missing.");

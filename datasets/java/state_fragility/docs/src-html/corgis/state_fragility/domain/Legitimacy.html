@@ -93,11 +93,11 @@
 <span class="sourceLineNo">085</span>         */<a name="line.85"></a>
 <span class="sourceLineNo">086</span>    public Legitimacy(JSONObject json_data) {<a name="line.86"></a>
 <span class="sourceLineNo">087</span>        try {// Legitimacy Score<a name="line.87"></a>
-<span class="sourceLineNo">088</span>            this.legitimacyScore = new Integer(((Long)json_data.get("Legitimacy Score")).intValue());// Political Legitimacy<a name="line.88"></a>
-<span class="sourceLineNo">089</span>            this.politicalLegitimacy = new Integer(((Long)json_data.get("Political Legitimacy")).intValue());// Security Legitimacy<a name="line.89"></a>
-<span class="sourceLineNo">090</span>            this.securityLegitimacy = new Integer(((Long)json_data.get("Security Legitimacy")).intValue());// Economic Legitimacy<a name="line.90"></a>
-<span class="sourceLineNo">091</span>            this.economicLegitimacy = new Integer(((Long)json_data.get("Economic Legitimacy")).intValue());// Social Legitimacy<a name="line.91"></a>
-<span class="sourceLineNo">092</span>            this.socialLegitimacy = new Integer(((Long)json_data.get("Social Legitimacy")).intValue());<a name="line.92"></a>
+<span class="sourceLineNo">088</span>            this.legitimacyScore = ((Number)json_data.get("Legitimacy Score")).intValue();// Political Legitimacy<a name="line.88"></a>
+<span class="sourceLineNo">089</span>            this.politicalLegitimacy = ((Number)json_data.get("Political Legitimacy")).intValue();// Security Legitimacy<a name="line.89"></a>
+<span class="sourceLineNo">090</span>            this.securityLegitimacy = ((Number)json_data.get("Security Legitimacy")).intValue();// Economic Legitimacy<a name="line.90"></a>
+<span class="sourceLineNo">091</span>            this.economicLegitimacy = ((Number)json_data.get("Economic Legitimacy")).intValue();// Social Legitimacy<a name="line.91"></a>
+<span class="sourceLineNo">092</span>            this.socialLegitimacy = ((Number)json_data.get("Social Legitimacy")).intValue();<a name="line.92"></a>
 <span class="sourceLineNo">093</span>        } catch (NullPointerException e) {<a name="line.93"></a>
 <span class="sourceLineNo">094</span>                System.err.println("Could not convert the response to a Legitimacy; a field was missing.");<a name="line.94"></a>
 <span class="sourceLineNo">095</span>                e.printStackTrace();<a name="line.95"></a>

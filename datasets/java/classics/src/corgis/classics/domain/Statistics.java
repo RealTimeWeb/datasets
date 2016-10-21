@@ -116,14 +116,14 @@ public class Statistics {
 	 */
     public Statistics(JSONObject json_data) {
         try {// polysyllables
-            this.polysyllables = new Integer(((Long)json_data.get("polysyllables")).intValue());// characters
-            this.characters = new Integer(((Long)json_data.get("characters")).intValue());// average sentence length
-            this.averageSentenceLength = (Double)json_data.get("average sentence length");// words
-            this.words = new Integer(((Long)json_data.get("words")).intValue());// sentences
-            this.sentences = new Integer(((Long)json_data.get("sentences")).intValue());// syllables
-            this.syllables = (Double)json_data.get("syllables");// average sentence per word
-            this.averageSentencePerWord = (Double)json_data.get("average sentence per word");// average letter per word
-            this.averageLetterPerWord = (Double)json_data.get("average letter per word");
+            this.polysyllables = ((Number)json_data.get("polysyllables")).intValue();// characters
+            this.characters = ((Number)json_data.get("characters")).intValue();// average sentence length
+            this.averageSentenceLength = ((Number)json_data.get("average sentence length")).doubleValue();// words
+            this.words = ((Number)json_data.get("words")).intValue();// sentences
+            this.sentences = ((Number)json_data.get("sentences")).intValue();// syllables
+            this.syllables = ((Number)json_data.get("syllables")).doubleValue();// average sentence per word
+            this.averageSentencePerWord = ((Number)json_data.get("average sentence per word")).doubleValue();// average letter per word
+            this.averageLetterPerWord = ((Number)json_data.get("average letter per word")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Statistics; a field was missing.");
     		e.printStackTrace();

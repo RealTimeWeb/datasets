@@ -88,11 +88,11 @@ public class PeopleLivingWithHiv {
 	 */
     public PeopleLivingWithHiv(JSONObject json_data) {
         try {// Male Adults
-            this.maleAdults = new Integer(((Long)json_data.get("Male Adults")).intValue());// Total
-            this.total = new Integer(((Long)json_data.get("Total")).intValue());// Children
-            this.children = new Integer(((Long)json_data.get("Children")).intValue());// Female Adults
-            this.femaleAdults = new Integer(((Long)json_data.get("Female Adults")).intValue());// Adults
-            this.adults = new Integer(((Long)json_data.get("Adults")).intValue());
+            this.maleAdults = ((Number)json_data.get("Male Adults")).intValue();// Total
+            this.total = ((Number)json_data.get("Total")).intValue();// Children
+            this.children = ((Number)json_data.get("Children")).intValue();// Female Adults
+            this.femaleAdults = ((Number)json_data.get("Female Adults")).intValue();// Adults
+            this.adults = ((Number)json_data.get("Adults")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a PeopleLivingWithHiv; a field was missing.");
     		e.printStackTrace();

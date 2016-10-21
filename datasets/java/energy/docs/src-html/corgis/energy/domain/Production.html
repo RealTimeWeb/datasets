@@ -172,19 +172,19 @@
 <span class="sourceLineNo">164</span>         */<a name="line.164"></a>
 <span class="sourceLineNo">165</span>    public Production(JSONObject json_data) {<a name="line.165"></a>
 <span class="sourceLineNo">166</span>        try {// crude oil<a name="line.166"></a>
-<span class="sourceLineNo">167</span>            this.crudeOil = (Double)json_data.get("crude oil");// fossil fuels<a name="line.167"></a>
-<span class="sourceLineNo">168</span>            this.fossilFuels = (Double)json_data.get("fossil fuels");// natural gas<a name="line.168"></a>
-<span class="sourceLineNo">169</span>            this.naturalGas = (Double)json_data.get("natural gas");// nuclear<a name="line.169"></a>
-<span class="sourceLineNo">170</span>            this.nuclear = (Double)json_data.get("nuclear");// total renewable<a name="line.170"></a>
-<span class="sourceLineNo">171</span>            this.totalRenewable = (Double)json_data.get("total renewable");// biomass<a name="line.171"></a>
-<span class="sourceLineNo">172</span>            this.biomass = (Double)json_data.get("biomass");// hydroelectric<a name="line.172"></a>
-<span class="sourceLineNo">173</span>            this.hydroelectric = (Double)json_data.get("hydroelectric");// natural gas plant liquids<a name="line.173"></a>
-<span class="sourceLineNo">174</span>            this.naturalGasPlantLiquids = (Double)json_data.get("natural gas plant liquids");// geothermal<a name="line.174"></a>
-<span class="sourceLineNo">175</span>            this.geothermal = (Double)json_data.get("geothermal");// coal<a name="line.175"></a>
-<span class="sourceLineNo">176</span>            this.coal = (Double)json_data.get("coal");// solar<a name="line.176"></a>
-<span class="sourceLineNo">177</span>            this.solar = (Double)json_data.get("solar");// total<a name="line.177"></a>
-<span class="sourceLineNo">178</span>            this.total = (Double)json_data.get("total");// wind<a name="line.178"></a>
-<span class="sourceLineNo">179</span>            this.wind = (Double)json_data.get("wind");<a name="line.179"></a>
+<span class="sourceLineNo">167</span>            this.crudeOil = ((Number)json_data.get("crude oil")).doubleValue();// fossil fuels<a name="line.167"></a>
+<span class="sourceLineNo">168</span>            this.fossilFuels = ((Number)json_data.get("fossil fuels")).doubleValue();// natural gas<a name="line.168"></a>
+<span class="sourceLineNo">169</span>            this.naturalGas = ((Number)json_data.get("natural gas")).doubleValue();// nuclear<a name="line.169"></a>
+<span class="sourceLineNo">170</span>            this.nuclear = ((Number)json_data.get("nuclear")).doubleValue();// total renewable<a name="line.170"></a>
+<span class="sourceLineNo">171</span>            this.totalRenewable = ((Number)json_data.get("total renewable")).doubleValue();// biomass<a name="line.171"></a>
+<span class="sourceLineNo">172</span>            this.biomass = ((Number)json_data.get("biomass")).doubleValue();// hydroelectric<a name="line.172"></a>
+<span class="sourceLineNo">173</span>            this.hydroelectric = ((Number)json_data.get("hydroelectric")).doubleValue();// natural gas plant liquids<a name="line.173"></a>
+<span class="sourceLineNo">174</span>            this.naturalGasPlantLiquids = ((Number)json_data.get("natural gas plant liquids")).doubleValue();// geothermal<a name="line.174"></a>
+<span class="sourceLineNo">175</span>            this.geothermal = ((Number)json_data.get("geothermal")).doubleValue();// coal<a name="line.175"></a>
+<span class="sourceLineNo">176</span>            this.coal = ((Number)json_data.get("coal")).doubleValue();// solar<a name="line.176"></a>
+<span class="sourceLineNo">177</span>            this.solar = ((Number)json_data.get("solar")).doubleValue();// total<a name="line.177"></a>
+<span class="sourceLineNo">178</span>            this.total = ((Number)json_data.get("total")).doubleValue();// wind<a name="line.178"></a>
+<span class="sourceLineNo">179</span>            this.wind = ((Number)json_data.get("wind")).doubleValue();<a name="line.179"></a>
 <span class="sourceLineNo">180</span>        } catch (NullPointerException e) {<a name="line.180"></a>
 <span class="sourceLineNo">181</span>                System.err.println("Could not convert the response to a Production; a field was missing.");<a name="line.181"></a>
 <span class="sourceLineNo">182</span>                e.printStackTrace();<a name="line.182"></a>

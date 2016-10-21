@@ -107,12 +107,12 @@
 <span class="sourceLineNo">099</span>         */<a name="line.99"></a>
 <span class="sourceLineNo">100</span>    public Location(JSONObject json_data) {<a name="line.100"></a>
 <span class="sourceLineNo">101</span>        try {// distance<a name="line.101"></a>
-<span class="sourceLineNo">102</span>            this.distance = (Double)json_data.get("distance");// full<a name="line.102"></a>
+<span class="sourceLineNo">102</span>            this.distance = ((Number)json_data.get("distance")).doubleValue();// full<a name="line.102"></a>
 <span class="sourceLineNo">103</span>            this.full = (String)json_data.get("full");// name<a name="line.103"></a>
 <span class="sourceLineNo">104</span>            this.name = (String)json_data.get("name");// longitude<a name="line.104"></a>
-<span class="sourceLineNo">105</span>            this.longitude = (Double)json_data.get("longitude");// depth<a name="line.105"></a>
-<span class="sourceLineNo">106</span>            this.depth = (Double)json_data.get("depth");// latitude<a name="line.106"></a>
-<span class="sourceLineNo">107</span>            this.latitude = (Double)json_data.get("latitude");<a name="line.107"></a>
+<span class="sourceLineNo">105</span>            this.longitude = ((Number)json_data.get("longitude")).doubleValue();// depth<a name="line.105"></a>
+<span class="sourceLineNo">106</span>            this.depth = ((Number)json_data.get("depth")).doubleValue();// latitude<a name="line.106"></a>
+<span class="sourceLineNo">107</span>            this.latitude = ((Number)json_data.get("latitude")).doubleValue();<a name="line.107"></a>
 <span class="sourceLineNo">108</span>        } catch (NullPointerException e) {<a name="line.108"></a>
 <span class="sourceLineNo">109</span>                System.err.println("Could not convert the response to a Location; a field was missing.");<a name="line.109"></a>
 <span class="sourceLineNo">110</span>                e.printStackTrace();<a name="line.110"></a>

@@ -85,7 +85,7 @@ public class Company {
     public Company(JSONObject json_data) {
         try {// sector
             this.sector = (String)json_data.get("sector");// founded
-            this.founded = new Integer(((Long)json_data.get("founded")).intValue());// type
+            this.founded = ((Number)json_data.get("founded")).intValue();// type
             this.type = (String)json_data.get("type");// name
             this.name = (String)json_data.get("name");// relationship
             this.relationship = (String)json_data.get("relationship");

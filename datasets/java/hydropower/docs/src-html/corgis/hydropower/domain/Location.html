@@ -84,10 +84,10 @@
 <span class="sourceLineNo">076</span>         */<a name="line.76"></a>
 <span class="sourceLineNo">077</span>    public Location(JSONObject json_data) {<a name="line.77"></a>
 <span class="sourceLineNo">078</span>        try {// Latitude<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.latitude = (Double)json_data.get("Latitude");// County<a name="line.79"></a>
+<span class="sourceLineNo">079</span>            this.latitude = ((Number)json_data.get("Latitude")).doubleValue();// County<a name="line.79"></a>
 <span class="sourceLineNo">080</span>            this.county = (String)json_data.get("County");// State<a name="line.80"></a>
 <span class="sourceLineNo">081</span>            this.state = (String)json_data.get("State");// Longitude<a name="line.81"></a>
-<span class="sourceLineNo">082</span>            this.longitude = (Double)json_data.get("Longitude");<a name="line.82"></a>
+<span class="sourceLineNo">082</span>            this.longitude = ((Number)json_data.get("Longitude")).doubleValue();<a name="line.82"></a>
 <span class="sourceLineNo">083</span>        } catch (NullPointerException e) {<a name="line.83"></a>
 <span class="sourceLineNo">084</span>                System.err.println("Could not convert the response to a Location; a field was missing.");<a name="line.84"></a>
 <span class="sourceLineNo">085</span>                e.printStackTrace();<a name="line.85"></a>

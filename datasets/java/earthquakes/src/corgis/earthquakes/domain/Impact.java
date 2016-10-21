@@ -67,9 +67,9 @@ public class Impact {
 	 */
     public Impact(JSONObject json_data) {
         try {// magnitude
-            this.magnitude = (Double)json_data.get("magnitude");// significance
-            this.significance = new Integer(((Long)json_data.get("significance")).intValue());// gap
-            this.gap = (Double)json_data.get("gap");
+            this.magnitude = ((Number)json_data.get("magnitude")).doubleValue();// significance
+            this.significance = ((Number)json_data.get("significance")).intValue();// gap
+            this.gap = ((Number)json_data.get("gap")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Impact; a field was missing.");
     		e.printStackTrace();

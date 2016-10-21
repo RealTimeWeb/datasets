@@ -54,8 +54,8 @@ public class Education {
 	 */
     public Education(JSONObject json_data) {
         try {// Bachelor's Degree or Higher
-            this.bachelorsDegreeOrHigher = (Double)json_data.get("Bachelor's Degree or Higher");// High School or Higher
-            this.highSchoolOrHigher = (Double)json_data.get("High School or Higher");
+            this.bachelorsDegreeOrHigher = ((Number)json_data.get("Bachelor's Degree or Higher")).doubleValue();// High School or Higher
+            this.highSchoolOrHigher = ((Number)json_data.get("High School or Higher")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Education; a field was missing.");
     		e.printStackTrace();

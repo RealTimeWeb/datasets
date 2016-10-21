@@ -74,10 +74,10 @@ public class VehicleAccess {
 	 */
     public VehicleAccess(JSONObject json_data) {
         try {// 20 Miles
-            this.twozeroMiles = (Double)json_data.get("20 Miles");// 1/2 Mile
-            this.oneTwoMile = (Double)json_data.get("1/2 Mile");// 1 Mile
-            this.oneMile = (Double)json_data.get("1 Mile");// 10 Miles
-            this.onezeroMiles = (Double)json_data.get("10 Miles");
+            this.twozeroMiles = ((Number)json_data.get("20 Miles")).doubleValue();// 1/2 Mile
+            this.oneTwoMile = ((Number)json_data.get("1/2 Mile")).doubleValue();// 1 Mile
+            this.oneMile = ((Number)json_data.get("1 Mile")).doubleValue();// 10 Miles
+            this.onezeroMiles = ((Number)json_data.get("10 Miles")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a VehicleAccess; a field was missing.");
     		e.printStackTrace();

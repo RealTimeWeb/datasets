@@ -78,10 +78,10 @@ public class Statistics {
 	 */
     public Statistics(JSONObject json_data) {
         try {// sales rank
-            this.salesRank = new Integer(((Long)json_data.get("sales rank")).intValue());// sale price
-            this.salePrice = (Double)json_data.get("sale price");// total reviews
-            this.totalReviews = new Integer(((Long)json_data.get("total reviews")).intValue());// average rating
-            this.averageRating = (Double)json_data.get("average rating");
+            this.salesRank = ((Number)json_data.get("sales rank")).intValue();// sale price
+            this.salePrice = ((Number)json_data.get("sale price")).doubleValue();// total reviews
+            this.totalReviews = ((Number)json_data.get("total reviews")).intValue();// average rating
+            this.averageRating = ((Number)json_data.get("average rating")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Statistics; a field was missing.");
     		e.printStackTrace();

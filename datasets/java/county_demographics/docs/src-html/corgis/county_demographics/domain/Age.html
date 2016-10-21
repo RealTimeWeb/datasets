@@ -72,9 +72,9 @@
 <span class="sourceLineNo">064</span>         */<a name="line.64"></a>
 <span class="sourceLineNo">065</span>    public Age(JSONObject json_data) {<a name="line.65"></a>
 <span class="sourceLineNo">066</span>        try {// Percent Under 18 Years<a name="line.66"></a>
-<span class="sourceLineNo">067</span>            this.percentUnderOneeightYears = (Double)json_data.get("Percent Under 18 Years");// Percent 65 and Older<a name="line.67"></a>
-<span class="sourceLineNo">068</span>            this.percentSixfiveAndOlder = (Double)json_data.get("Percent 65 and Older");// Percent Under 5 Years<a name="line.68"></a>
-<span class="sourceLineNo">069</span>            this.percentUnderFiveYears = (Double)json_data.get("Percent Under 5 Years");<a name="line.69"></a>
+<span class="sourceLineNo">067</span>            this.percentUnderOneeightYears = ((Number)json_data.get("Percent Under 18 Years")).doubleValue();// Percent 65 and Older<a name="line.67"></a>
+<span class="sourceLineNo">068</span>            this.percentSixfiveAndOlder = ((Number)json_data.get("Percent 65 and Older")).doubleValue();// Percent Under 5 Years<a name="line.68"></a>
+<span class="sourceLineNo">069</span>            this.percentUnderFiveYears = ((Number)json_data.get("Percent Under 5 Years")).doubleValue();<a name="line.69"></a>
 <span class="sourceLineNo">070</span>        } catch (NullPointerException e) {<a name="line.70"></a>
 <span class="sourceLineNo">071</span>                System.err.println("Could not convert the response to a Age; a field was missing.");<a name="line.71"></a>
 <span class="sourceLineNo">072</span>                e.printStackTrace();<a name="line.72"></a>

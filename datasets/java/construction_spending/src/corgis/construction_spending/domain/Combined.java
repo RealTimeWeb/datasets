@@ -243,25 +243,25 @@ public class Combined {
 	 */
     public Combined(JSONObject json_data) {
         try {// lodging
-            this.lodging = new Integer(((Long)json_data.get("lodging")).intValue());// educational
-            this.educational = new Integer(((Long)json_data.get("educational")).intValue());// total construction
-            this.totalConstruction = new Integer(((Long)json_data.get("total construction")).intValue());// transportation
-            this.transportation = new Integer(((Long)json_data.get("transportation")).intValue());// power
-            this.power = new Integer(((Long)json_data.get("power")).intValue());// office
-            this.office = new Integer(((Long)json_data.get("office")).intValue());// nonresidential
-            this.nonresidential = new Integer(((Long)json_data.get("nonresidential")).intValue());// amusement and recreation
-            this.amusementAndRecreation = new Integer(((Long)json_data.get("amusement and recreation")).intValue());// residential
-            this.residential = new Integer(((Long)json_data.get("residential")).intValue());// public safety
-            this.publicSafety = new Integer(((Long)json_data.get("public safety")).intValue());// conservation and development
-            this.conservationAndDevelopment = new Integer(((Long)json_data.get("conservation and development")).intValue());// commercial
-            this.commercial = new Integer(((Long)json_data.get("commercial")).intValue());// water supply
-            this.waterSupply = new Integer(((Long)json_data.get("water supply")).intValue());// health care
-            this.healthCare = new Integer(((Long)json_data.get("health care")).intValue());// sewage and waste disposal
-            this.sewageAndWasteDisposal = new Integer(((Long)json_data.get("sewage and waste disposal")).intValue());// communication
-            this.communication = new Integer(((Long)json_data.get("communication")).intValue());// manufacturing
-            this.manufacturing = new Integer(((Long)json_data.get("manufacturing")).intValue());// religious
-            this.religious = new Integer(((Long)json_data.get("religious")).intValue());// highway and street
-            this.highwayAndStreet = new Integer(((Long)json_data.get("highway and street")).intValue());
+            this.lodging = ((Number)json_data.get("lodging")).intValue();// educational
+            this.educational = ((Number)json_data.get("educational")).intValue();// total construction
+            this.totalConstruction = ((Number)json_data.get("total construction")).intValue();// transportation
+            this.transportation = ((Number)json_data.get("transportation")).intValue();// power
+            this.power = ((Number)json_data.get("power")).intValue();// office
+            this.office = ((Number)json_data.get("office")).intValue();// nonresidential
+            this.nonresidential = ((Number)json_data.get("nonresidential")).intValue();// amusement and recreation
+            this.amusementAndRecreation = ((Number)json_data.get("amusement and recreation")).intValue();// residential
+            this.residential = ((Number)json_data.get("residential")).intValue();// public safety
+            this.publicSafety = ((Number)json_data.get("public safety")).intValue();// conservation and development
+            this.conservationAndDevelopment = ((Number)json_data.get("conservation and development")).intValue();// commercial
+            this.commercial = ((Number)json_data.get("commercial")).intValue();// water supply
+            this.waterSupply = ((Number)json_data.get("water supply")).intValue();// health care
+            this.healthCare = ((Number)json_data.get("health care")).intValue();// sewage and waste disposal
+            this.sewageAndWasteDisposal = ((Number)json_data.get("sewage and waste disposal")).intValue();// communication
+            this.communication = ((Number)json_data.get("communication")).intValue();// manufacturing
+            this.manufacturing = ((Number)json_data.get("manufacturing")).intValue();// religious
+            this.religious = ((Number)json_data.get("religious")).intValue();// highway and street
+            this.highwayAndStreet = ((Number)json_data.get("highway and street")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Combined; a field was missing.");
     		e.printStackTrace();

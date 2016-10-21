@@ -92,11 +92,11 @@
 <span class="sourceLineNo">084</span>         */<a name="line.84"></a>
 <span class="sourceLineNo">085</span>    public NumberOfDelays(JSONObject json_data) {<a name="line.85"></a>
 <span class="sourceLineNo">086</span>        try {// late aircraft<a name="line.86"></a>
-<span class="sourceLineNo">087</span>            this.lateAircraft = new Integer(((Long)json_data.get("late aircraft")).intValue());// weather<a name="line.87"></a>
-<span class="sourceLineNo">088</span>            this.weather = new Integer(((Long)json_data.get("weather")).intValue());// security<a name="line.88"></a>
-<span class="sourceLineNo">089</span>            this.security = new Integer(((Long)json_data.get("security")).intValue());// national aviation system<a name="line.89"></a>
-<span class="sourceLineNo">090</span>            this.nationalAviationSystem = new Integer(((Long)json_data.get("national aviation system")).intValue());// carrier<a name="line.90"></a>
-<span class="sourceLineNo">091</span>            this.carrier = new Integer(((Long)json_data.get("carrier")).intValue());<a name="line.91"></a>
+<span class="sourceLineNo">087</span>            this.lateAircraft = ((Number)json_data.get("late aircraft")).intValue();// weather<a name="line.87"></a>
+<span class="sourceLineNo">088</span>            this.weather = ((Number)json_data.get("weather")).intValue();// security<a name="line.88"></a>
+<span class="sourceLineNo">089</span>            this.security = ((Number)json_data.get("security")).intValue();// national aviation system<a name="line.89"></a>
+<span class="sourceLineNo">090</span>            this.nationalAviationSystem = ((Number)json_data.get("national aviation system")).intValue();// carrier<a name="line.90"></a>
+<span class="sourceLineNo">091</span>            this.carrier = ((Number)json_data.get("carrier")).intValue();<a name="line.91"></a>
 <span class="sourceLineNo">092</span>        } catch (NullPointerException e) {<a name="line.92"></a>
 <span class="sourceLineNo">093</span>                System.err.println("Could not convert the response to a #OfDelays; a field was missing.");<a name="line.93"></a>
 <span class="sourceLineNo">094</span>                e.printStackTrace();<a name="line.94"></a>

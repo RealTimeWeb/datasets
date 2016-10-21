@@ -251,25 +251,25 @@
 <span class="sourceLineNo">243</span>         */<a name="line.243"></a>
 <span class="sourceLineNo">244</span>    public Combined(JSONObject json_data) {<a name="line.244"></a>
 <span class="sourceLineNo">245</span>        try {// lodging<a name="line.245"></a>
-<span class="sourceLineNo">246</span>            this.lodging = new Integer(((Long)json_data.get("lodging")).intValue());// educational<a name="line.246"></a>
-<span class="sourceLineNo">247</span>            this.educational = new Integer(((Long)json_data.get("educational")).intValue());// total construction<a name="line.247"></a>
-<span class="sourceLineNo">248</span>            this.totalConstruction = new Integer(((Long)json_data.get("total construction")).intValue());// transportation<a name="line.248"></a>
-<span class="sourceLineNo">249</span>            this.transportation = new Integer(((Long)json_data.get("transportation")).intValue());// power<a name="line.249"></a>
-<span class="sourceLineNo">250</span>            this.power = new Integer(((Long)json_data.get("power")).intValue());// office<a name="line.250"></a>
-<span class="sourceLineNo">251</span>            this.office = new Integer(((Long)json_data.get("office")).intValue());// nonresidential<a name="line.251"></a>
-<span class="sourceLineNo">252</span>            this.nonresidential = new Integer(((Long)json_data.get("nonresidential")).intValue());// amusement and recreation<a name="line.252"></a>
-<span class="sourceLineNo">253</span>            this.amusementAndRecreation = new Integer(((Long)json_data.get("amusement and recreation")).intValue());// residential<a name="line.253"></a>
-<span class="sourceLineNo">254</span>            this.residential = new Integer(((Long)json_data.get("residential")).intValue());// public safety<a name="line.254"></a>
-<span class="sourceLineNo">255</span>            this.publicSafety = new Integer(((Long)json_data.get("public safety")).intValue());// conservation and development<a name="line.255"></a>
-<span class="sourceLineNo">256</span>            this.conservationAndDevelopment = new Integer(((Long)json_data.get("conservation and development")).intValue());// commercial<a name="line.256"></a>
-<span class="sourceLineNo">257</span>            this.commercial = new Integer(((Long)json_data.get("commercial")).intValue());// water supply<a name="line.257"></a>
-<span class="sourceLineNo">258</span>            this.waterSupply = new Integer(((Long)json_data.get("water supply")).intValue());// health care<a name="line.258"></a>
-<span class="sourceLineNo">259</span>            this.healthCare = new Integer(((Long)json_data.get("health care")).intValue());// sewage and waste disposal<a name="line.259"></a>
-<span class="sourceLineNo">260</span>            this.sewageAndWasteDisposal = new Integer(((Long)json_data.get("sewage and waste disposal")).intValue());// communication<a name="line.260"></a>
-<span class="sourceLineNo">261</span>            this.communication = new Integer(((Long)json_data.get("communication")).intValue());// manufacturing<a name="line.261"></a>
-<span class="sourceLineNo">262</span>            this.manufacturing = new Integer(((Long)json_data.get("manufacturing")).intValue());// religious<a name="line.262"></a>
-<span class="sourceLineNo">263</span>            this.religious = new Integer(((Long)json_data.get("religious")).intValue());// highway and street<a name="line.263"></a>
-<span class="sourceLineNo">264</span>            this.highwayAndStreet = new Integer(((Long)json_data.get("highway and street")).intValue());<a name="line.264"></a>
+<span class="sourceLineNo">246</span>            this.lodging = ((Number)json_data.get("lodging")).intValue();// educational<a name="line.246"></a>
+<span class="sourceLineNo">247</span>            this.educational = ((Number)json_data.get("educational")).intValue();// total construction<a name="line.247"></a>
+<span class="sourceLineNo">248</span>            this.totalConstruction = ((Number)json_data.get("total construction")).intValue();// transportation<a name="line.248"></a>
+<span class="sourceLineNo">249</span>            this.transportation = ((Number)json_data.get("transportation")).intValue();// power<a name="line.249"></a>
+<span class="sourceLineNo">250</span>            this.power = ((Number)json_data.get("power")).intValue();// office<a name="line.250"></a>
+<span class="sourceLineNo">251</span>            this.office = ((Number)json_data.get("office")).intValue();// nonresidential<a name="line.251"></a>
+<span class="sourceLineNo">252</span>            this.nonresidential = ((Number)json_data.get("nonresidential")).intValue();// amusement and recreation<a name="line.252"></a>
+<span class="sourceLineNo">253</span>            this.amusementAndRecreation = ((Number)json_data.get("amusement and recreation")).intValue();// residential<a name="line.253"></a>
+<span class="sourceLineNo">254</span>            this.residential = ((Number)json_data.get("residential")).intValue();// public safety<a name="line.254"></a>
+<span class="sourceLineNo">255</span>            this.publicSafety = ((Number)json_data.get("public safety")).intValue();// conservation and development<a name="line.255"></a>
+<span class="sourceLineNo">256</span>            this.conservationAndDevelopment = ((Number)json_data.get("conservation and development")).intValue();// commercial<a name="line.256"></a>
+<span class="sourceLineNo">257</span>            this.commercial = ((Number)json_data.get("commercial")).intValue();// water supply<a name="line.257"></a>
+<span class="sourceLineNo">258</span>            this.waterSupply = ((Number)json_data.get("water supply")).intValue();// health care<a name="line.258"></a>
+<span class="sourceLineNo">259</span>            this.healthCare = ((Number)json_data.get("health care")).intValue();// sewage and waste disposal<a name="line.259"></a>
+<span class="sourceLineNo">260</span>            this.sewageAndWasteDisposal = ((Number)json_data.get("sewage and waste disposal")).intValue();// communication<a name="line.260"></a>
+<span class="sourceLineNo">261</span>            this.communication = ((Number)json_data.get("communication")).intValue();// manufacturing<a name="line.261"></a>
+<span class="sourceLineNo">262</span>            this.manufacturing = ((Number)json_data.get("manufacturing")).intValue();// religious<a name="line.262"></a>
+<span class="sourceLineNo">263</span>            this.religious = ((Number)json_data.get("religious")).intValue();// highway and street<a name="line.263"></a>
+<span class="sourceLineNo">264</span>            this.highwayAndStreet = ((Number)json_data.get("highway and street")).intValue();<a name="line.264"></a>
 <span class="sourceLineNo">265</span>        } catch (NullPointerException e) {<a name="line.265"></a>
 <span class="sourceLineNo">266</span>                System.err.println("Could not convert the response to a Combined; a field was missing.");<a name="line.266"></a>
 <span class="sourceLineNo">267</span>                e.printStackTrace();<a name="line.267"></a>

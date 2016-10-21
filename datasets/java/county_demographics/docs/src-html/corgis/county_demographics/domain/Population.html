@@ -84,10 +84,10 @@
 <span class="sourceLineNo">076</span>         */<a name="line.76"></a>
 <span class="sourceLineNo">077</span>    public Population(JSONObject json_data) {<a name="line.77"></a>
 <span class="sourceLineNo">078</span>        try {// 2014 Population<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.twozeroonefourPopulation = new Integer(((Long)json_data.get("2014 Population")).intValue());// 2010 Population<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.twozeroonezeroPopulation = new Integer(((Long)json_data.get("2010 Population")).intValue());// Population per Square Mile<a name="line.80"></a>
-<span class="sourceLineNo">081</span>            this.populationPerSquareMile = (Double)json_data.get("Population per Square Mile");// Population Percent Change<a name="line.81"></a>
-<span class="sourceLineNo">082</span>            this.populationPercentChange = (Double)json_data.get("Population Percent Change");<a name="line.82"></a>
+<span class="sourceLineNo">079</span>            this.twozeroonefourPopulation = ((Number)json_data.get("2014 Population")).intValue();// 2010 Population<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            this.twozeroonezeroPopulation = ((Number)json_data.get("2010 Population")).intValue();// Population per Square Mile<a name="line.80"></a>
+<span class="sourceLineNo">081</span>            this.populationPerSquareMile = ((Number)json_data.get("Population per Square Mile")).doubleValue();// Population Percent Change<a name="line.81"></a>
+<span class="sourceLineNo">082</span>            this.populationPercentChange = ((Number)json_data.get("Population Percent Change")).doubleValue();<a name="line.82"></a>
 <span class="sourceLineNo">083</span>        } catch (NullPointerException e) {<a name="line.83"></a>
 <span class="sourceLineNo">084</span>                System.err.println("Could not convert the response to a Population; a field was missing.");<a name="line.84"></a>
 <span class="sourceLineNo">085</span>                e.printStackTrace();<a name="line.85"></a>

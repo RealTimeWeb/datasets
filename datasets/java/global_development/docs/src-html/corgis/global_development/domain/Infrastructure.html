@@ -82,10 +82,10 @@
 <span class="sourceLineNo">074</span>         */<a name="line.74"></a>
 <span class="sourceLineNo">075</span>    public Infrastructure(JSONObject json_data) {<a name="line.75"></a>
 <span class="sourceLineNo">076</span>        try {// Telephone Lines<a name="line.76"></a>
-<span class="sourceLineNo">077</span>            this.telephoneLines = (Double)json_data.get("Telephone Lines");// Mobile Cellular Subscriptions per 100 People<a name="line.77"></a>
-<span class="sourceLineNo">078</span>            this.mobileCellularSubscriptionsPerOnezerozeroPeople = (Double)json_data.get("Mobile Cellular Subscriptions per 100 People");// Telephone Lines per 100 People<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.telephoneLinesPerOnezerozeroPeople = (Double)json_data.get("Telephone Lines per 100 People");// Mobile Cellular Subscriptions<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.mobileCellularSubscriptions = (Double)json_data.get("Mobile Cellular Subscriptions");<a name="line.80"></a>
+<span class="sourceLineNo">077</span>            this.telephoneLines = ((Number)json_data.get("Telephone Lines")).doubleValue();// Mobile Cellular Subscriptions per 100 People<a name="line.77"></a>
+<span class="sourceLineNo">078</span>            this.mobileCellularSubscriptionsPerOnezerozeroPeople = ((Number)json_data.get("Mobile Cellular Subscriptions per 100 People")).doubleValue();// Telephone Lines per 100 People<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            this.telephoneLinesPerOnezerozeroPeople = ((Number)json_data.get("Telephone Lines per 100 People")).doubleValue();// Mobile Cellular Subscriptions<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            this.mobileCellularSubscriptions = ((Number)json_data.get("Mobile Cellular Subscriptions")).doubleValue();<a name="line.80"></a>
 <span class="sourceLineNo">081</span>        } catch (NullPointerException e) {<a name="line.81"></a>
 <span class="sourceLineNo">082</span>                System.err.println("Could not convert the response to a Infrastructure; a field was missing.");<a name="line.82"></a>
 <span class="sourceLineNo">083</span>                e.printStackTrace();<a name="line.83"></a>

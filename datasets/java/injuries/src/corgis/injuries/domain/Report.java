@@ -92,7 +92,7 @@ public class Report {
             this.industry = new Industry((JSONObject)json_data.get("industry"));// statistics
             this.statistics = new Statistics((JSONObject)json_data.get("statistics"));// business
             this.business = new Business((JSONObject)json_data.get("business"));// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());
+            this.year = ((Number)json_data.get("year")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Report; a field was missing.");
     		e.printStackTrace();

@@ -114,14 +114,14 @@ public class MajorMinerals {
 	 */
     public MajorMinerals(JSONObject json_data) {
         try {// Copper
-            this.copper = (Double)json_data.get("Copper");// Iron
-            this.iron = (Double)json_data.get("Iron");// Sodium
-            this.sodium = new Integer(((Long)json_data.get("Sodium")).intValue());// Potassium
-            this.potassium = new Integer(((Long)json_data.get("Potassium")).intValue());// Calcium
-            this.calcium = new Integer(((Long)json_data.get("Calcium")).intValue());// Magnesium
-            this.magnesium = new Integer(((Long)json_data.get("Magnesium")).intValue());// Zinc
-            this.zinc = (Double)json_data.get("Zinc");// Phosphorus
-            this.phosphorus = new Integer(((Long)json_data.get("Phosphorus")).intValue());
+            this.copper = ((Number)json_data.get("Copper")).doubleValue();// Iron
+            this.iron = ((Number)json_data.get("Iron")).doubleValue();// Sodium
+            this.sodium = ((Number)json_data.get("Sodium")).intValue();// Potassium
+            this.potassium = ((Number)json_data.get("Potassium")).intValue();// Calcium
+            this.calcium = ((Number)json_data.get("Calcium")).intValue();// Magnesium
+            this.magnesium = ((Number)json_data.get("Magnesium")).intValue();// Zinc
+            this.zinc = ((Number)json_data.get("Zinc")).doubleValue();// Phosphorus
+            this.phosphorus = ((Number)json_data.get("Phosphorus")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a MajorMinerals; a field was missing.");
     		e.printStackTrace();

@@ -74,9 +74,9 @@
 <span class="sourceLineNo">066</span>         */<a name="line.66"></a>
 <span class="sourceLineNo">067</span>    public Author(JSONObject json_data) {<a name="line.67"></a>
 <span class="sourceLineNo">068</span>        try {// death<a name="line.68"></a>
-<span class="sourceLineNo">069</span>            this.death = new Integer(((Long)json_data.get("death")).intValue());// name<a name="line.69"></a>
+<span class="sourceLineNo">069</span>            this.death = ((Number)json_data.get("death")).intValue();// name<a name="line.69"></a>
 <span class="sourceLineNo">070</span>            this.name = (String)json_data.get("name");// birth<a name="line.70"></a>
-<span class="sourceLineNo">071</span>            this.birth = new Integer(((Long)json_data.get("birth")).intValue());<a name="line.71"></a>
+<span class="sourceLineNo">071</span>            this.birth = ((Number)json_data.get("birth")).intValue();<a name="line.71"></a>
 <span class="sourceLineNo">072</span>        } catch (NullPointerException e) {<a name="line.72"></a>
 <span class="sourceLineNo">073</span>                System.err.println("Could not convert the response to a Author; a field was missing.");<a name="line.73"></a>
 <span class="sourceLineNo">074</span>                e.printStackTrace();<a name="line.74"></a>

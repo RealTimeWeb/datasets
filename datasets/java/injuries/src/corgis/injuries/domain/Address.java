@@ -77,7 +77,7 @@ public class Address {
             this.city = (String)json_data.get("city");// state
             this.state = (String)json_data.get("state");// street
             this.street = (String)json_data.get("street");// zip
-            this.zip = new Integer(((Long)json_data.get("zip")).intValue());
+            this.zip = ((Number)json_data.get("zip")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Address; a field was missing.");
     		e.printStackTrace();

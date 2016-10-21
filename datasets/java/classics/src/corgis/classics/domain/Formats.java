@@ -55,7 +55,7 @@ public class Formats {
 	 */
     public Formats(JSONObject json_data) {
         try {// total
-            this.total = new Integer(((Long)json_data.get("total")).intValue());// types
+            this.total = ((Number)json_data.get("total")).intValue();// types
             this.types = new ArrayList<String>();
             Iterator<Object> typesIter = ((List<Object>)json_data.get("types")).iterator();
             while (typesIter.hasNext()) {

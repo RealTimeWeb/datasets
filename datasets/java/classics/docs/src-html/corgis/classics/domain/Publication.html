@@ -97,9 +97,9 @@
 <span class="sourceLineNo">089</span>        try {// month name<a name="line.89"></a>
 <span class="sourceLineNo">090</span>            this.monthName = (String)json_data.get("month name");// full<a name="line.90"></a>
 <span class="sourceLineNo">091</span>            this.full = (String)json_data.get("full");// year<a name="line.91"></a>
-<span class="sourceLineNo">092</span>            this.year = new Integer(((Long)json_data.get("year")).intValue());// day<a name="line.92"></a>
-<span class="sourceLineNo">093</span>            this.day = new Integer(((Long)json_data.get("day")).intValue());// month<a name="line.93"></a>
-<span class="sourceLineNo">094</span>            this.month = new Integer(((Long)json_data.get("month")).intValue());<a name="line.94"></a>
+<span class="sourceLineNo">092</span>            this.year = ((Number)json_data.get("year")).intValue();// day<a name="line.92"></a>
+<span class="sourceLineNo">093</span>            this.day = ((Number)json_data.get("day")).intValue();// month<a name="line.93"></a>
+<span class="sourceLineNo">094</span>            this.month = ((Number)json_data.get("month")).intValue();<a name="line.94"></a>
 <span class="sourceLineNo">095</span>        } catch (NullPointerException e) {<a name="line.95"></a>
 <span class="sourceLineNo">096</span>                System.err.println("Could not convert the response to a Publication; a field was missing.");<a name="line.96"></a>
 <span class="sourceLineNo">097</span>                e.printStackTrace();<a name="line.97"></a>

@@ -134,16 +134,16 @@ public class Artist {
 	 */
     public Artist(JSONObject json_data) {
         try {// terms_freq
-            this.terms_Freq = (Double)json_data.get("terms_freq");// terms
+            this.terms_Freq = ((Number)json_data.get("terms_freq")).doubleValue();// terms
             this.terms = (String)json_data.get("terms");// name
             this.name = (String)json_data.get("name");// familiarity
-            this.familiarity = (Double)json_data.get("familiarity");// longitude
-            this.longitude = (Double)json_data.get("longitude");// id
+            this.familiarity = ((Number)json_data.get("familiarity")).doubleValue();// longitude
+            this.longitude = ((Number)json_data.get("longitude")).doubleValue();// id
             this.id = (String)json_data.get("id");// location
             this.location = (String)json_data.get("location");// latitude
-            this.latitude = (Double)json_data.get("latitude");// similar
+            this.latitude = ((Number)json_data.get("latitude")).doubleValue();// similar
             this.similar = (String)json_data.get("similar");// hotttnesss
-            this.hotttnesss = (Double)json_data.get("hotttnesss");
+            this.hotttnesss = ((Number)json_data.get("hotttnesss")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Artist; a field was missing.");
     		e.printStackTrace();

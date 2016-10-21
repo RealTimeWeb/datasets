@@ -84,10 +84,10 @@ public class MajorInformation {
 	 */
     public MajorInformation(JSONObject json_data) {
         try {// Major Code
-            this.majorCode = new Integer(((Long)json_data.get("Major Code")).intValue());// Rank by Median Earnings
-            this.rankByMedianEarnings = new Integer(((Long)json_data.get("Rank by Median Earnings")).intValue());// Major
+            this.majorCode = ((Number)json_data.get("Major Code")).intValue();// Rank by Median Earnings
+            this.rankByMedianEarnings = ((Number)json_data.get("Rank by Median Earnings")).intValue();// Major
             this.major = (String)json_data.get("Major");// Total Number in Major
-            this.totalNumberInMajor = new Integer(((Long)json_data.get("Total Number in Major")).intValue());// Major Category
+            this.totalNumberInMajor = ((Number)json_data.get("Total Number in Major")).intValue();// Major Category
             this.majorCategory = (String)json_data.get("Major Category");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a MajorInformation; a field was missing.");

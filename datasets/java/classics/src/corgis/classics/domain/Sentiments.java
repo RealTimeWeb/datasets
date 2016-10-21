@@ -56,8 +56,8 @@ public class Sentiments {
 	 */
     public Sentiments(JSONObject json_data) {
         try {// polarity
-            this.polarity = (Double)json_data.get("polarity");// subjectivity
-            this.subjectivity = (Double)json_data.get("subjectivity");
+            this.polarity = ((Number)json_data.get("polarity")).doubleValue();// subjectivity
+            this.subjectivity = ((Number)json_data.get("subjectivity")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Sentiments; a field was missing.");
     		e.printStackTrace();

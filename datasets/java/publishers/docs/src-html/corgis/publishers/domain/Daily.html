@@ -97,11 +97,11 @@
 <span class="sourceLineNo">089</span>         */<a name="line.89"></a>
 <span class="sourceLineNo">090</span>    public Daily(JSONObject json_data) {<a name="line.90"></a>
 <span class="sourceLineNo">091</span>        try {// publisher revenue<a name="line.91"></a>
-<span class="sourceLineNo">092</span>            this.publisherRevenue = (Double)json_data.get("publisher revenue");// amazon revenue<a name="line.92"></a>
-<span class="sourceLineNo">093</span>            this.amazonRevenue = (Double)json_data.get("amazon revenue");// author revenue<a name="line.93"></a>
-<span class="sourceLineNo">094</span>            this.authorRevenue = (Double)json_data.get("author revenue");// units sold<a name="line.94"></a>
-<span class="sourceLineNo">095</span>            this.unitsSold = new Integer(((Long)json_data.get("units sold")).intValue());// gross sales<a name="line.95"></a>
-<span class="sourceLineNo">096</span>            this.grossSales = (Double)json_data.get("gross sales");<a name="line.96"></a>
+<span class="sourceLineNo">092</span>            this.publisherRevenue = ((Number)json_data.get("publisher revenue")).doubleValue();// amazon revenue<a name="line.92"></a>
+<span class="sourceLineNo">093</span>            this.amazonRevenue = ((Number)json_data.get("amazon revenue")).doubleValue();// author revenue<a name="line.93"></a>
+<span class="sourceLineNo">094</span>            this.authorRevenue = ((Number)json_data.get("author revenue")).doubleValue();// units sold<a name="line.94"></a>
+<span class="sourceLineNo">095</span>            this.unitsSold = ((Number)json_data.get("units sold")).intValue();// gross sales<a name="line.95"></a>
+<span class="sourceLineNo">096</span>            this.grossSales = ((Number)json_data.get("gross sales")).doubleValue();<a name="line.96"></a>
 <span class="sourceLineNo">097</span>        } catch (NullPointerException e) {<a name="line.97"></a>
 <span class="sourceLineNo">098</span>                System.err.println("Could not convert the response to a Daily; a field was missing.");<a name="line.98"></a>
 <span class="sourceLineNo">099</span>                e.printStackTrace();<a name="line.99"></a>

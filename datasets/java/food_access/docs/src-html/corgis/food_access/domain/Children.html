@@ -82,10 +82,10 @@
 <span class="sourceLineNo">074</span>         */<a name="line.74"></a>
 <span class="sourceLineNo">075</span>    public Children(JSONObject json_data) {<a name="line.75"></a>
 <span class="sourceLineNo">076</span>        try {// 20 Miles<a name="line.76"></a>
-<span class="sourceLineNo">077</span>            this.twozeroMiles = (Double)json_data.get("20 Miles");// 1/2 Mile<a name="line.77"></a>
-<span class="sourceLineNo">078</span>            this.oneTwoMile = (Double)json_data.get("1/2 Mile");// 1 Mile<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.oneMile = (Double)json_data.get("1 Mile");// 10 Miles<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.onezeroMiles = (Double)json_data.get("10 Miles");<a name="line.80"></a>
+<span class="sourceLineNo">077</span>            this.twozeroMiles = ((Number)json_data.get("20 Miles")).doubleValue();// 1/2 Mile<a name="line.77"></a>
+<span class="sourceLineNo">078</span>            this.oneTwoMile = ((Number)json_data.get("1/2 Mile")).doubleValue();// 1 Mile<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            this.oneMile = ((Number)json_data.get("1 Mile")).doubleValue();// 10 Miles<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            this.onezeroMiles = ((Number)json_data.get("10 Miles")).doubleValue();<a name="line.80"></a>
 <span class="sourceLineNo">081</span>        } catch (NullPointerException e) {<a name="line.81"></a>
 <span class="sourceLineNo">082</span>                System.err.println("Could not convert the response to a Children; a field was missing.");<a name="line.82"></a>
 <span class="sourceLineNo">083</span>                e.printStackTrace();<a name="line.83"></a>

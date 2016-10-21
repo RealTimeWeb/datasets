@@ -84,7 +84,7 @@
 <span class="sourceLineNo">076</span>        try {// major_group<a name="line.76"></a>
 <span class="sourceLineNo">077</span>            this.major_Group = (String)json_data.get("major_group");// division<a name="line.77"></a>
 <span class="sourceLineNo">078</span>            this.division = (String)json_data.get("division");// id<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.id = new Integer(((Long)json_data.get("id")).intValue());// label<a name="line.79"></a>
+<span class="sourceLineNo">079</span>            this.id = ((Number)json_data.get("id")).intValue();// label<a name="line.79"></a>
 <span class="sourceLineNo">080</span>            this.label = (String)json_data.get("label");<a name="line.80"></a>
 <span class="sourceLineNo">081</span>        } catch (NullPointerException e) {<a name="line.81"></a>
 <span class="sourceLineNo">082</span>                System.err.println("Could not convert the response to a Industry; a field was missing.");<a name="line.82"></a>

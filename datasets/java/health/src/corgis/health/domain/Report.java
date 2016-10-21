@@ -95,11 +95,11 @@ public class Report {
     public Report(JSONObject json_data) {
         try {// loc
             this.loc = (String)json_data.get("loc");// number
-            this.number = new Integer(((Long)json_data.get("number")).intValue());// disease
+            this.number = ((Number)json_data.get("number")).intValue();// disease
             this.disease = (String)json_data.get("disease");// increase
-            this.increase = (Double)json_data.get("increase");// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());// population
-            this.population = new Integer(((Long)json_data.get("population")).intValue());
+            this.increase = ((Number)json_data.get("increase")).doubleValue();// year
+            this.year = ((Number)json_data.get("year")).intValue();// population
+            this.population = ((Number)json_data.get("population")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Report; a field was missing.");
     		e.printStackTrace();

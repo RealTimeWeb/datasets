@@ -64,9 +64,9 @@ public class Demographics {
 	 */
     public Demographics(JSONObject json_data) {
         try {// Men
-            this.men = new Integer(((Long)json_data.get("Men")).intValue());// Women as Share of Total
-            this.womenAsShareOfTotal = (Double)json_data.get("Women as Share of Total");// Women
-            this.women = new Integer(((Long)json_data.get("Women")).intValue());
+            this.men = ((Number)json_data.get("Men")).intValue();// Women as Share of Total
+            this.womenAsShareOfTotal = ((Number)json_data.get("Women as Share of Total")).doubleValue();// Women
+            this.women = ((Number)json_data.get("Women")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Demographics; a field was missing.");
     		e.printStackTrace();

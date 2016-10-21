@@ -75,10 +75,10 @@ public class Earnings {
 	 */
     public Earnings(JSONObject json_data) {
         try {// Non-College Jobs
-            this.nonCollegeJobs = new Integer(((Long)json_data.get("Non-College Jobs")).intValue());// College Jobs
-            this.collegeJobs = new Integer(((Long)json_data.get("College Jobs")).intValue());// Earnings Breakdown
+            this.nonCollegeJobs = ((Number)json_data.get("Non-College Jobs")).intValue();// College Jobs
+            this.collegeJobs = ((Number)json_data.get("College Jobs")).intValue();// Earnings Breakdown
             this.earningsBreakdown = new EarningsBreakdown((JSONObject)json_data.get("Earnings Breakdown"));// Low Wage Jobs
-            this.lowWageJobs = new Integer(((Long)json_data.get("Low Wage Jobs")).intValue());
+            this.lowWageJobs = ((Number)json_data.get("Low Wage Jobs")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Earnings; a field was missing.");
     		e.printStackTrace();

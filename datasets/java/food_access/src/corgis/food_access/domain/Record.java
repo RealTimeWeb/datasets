@@ -117,7 +117,7 @@ public class Record {
             this.county = (String)json_data.get("County");// Low Access Percents
             this.lowAccessPercents = new LowAccessPercents((JSONObject)json_data.get("Low Access Percents"));// State
             this.state = (String)json_data.get("State");// Population
-            this.population = new Integer(((Long)json_data.get("Population")).intValue());
+            this.population = ((Number)json_data.get("Population")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Record; a field was missing.");
     		e.printStackTrace();

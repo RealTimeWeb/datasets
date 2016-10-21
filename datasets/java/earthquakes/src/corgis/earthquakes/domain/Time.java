@@ -116,13 +116,13 @@ public class Time {
     public Time(JSONObject json_data) {
         try {// full
             this.full = (String)json_data.get("full");// hour
-            this.hour = new Integer(((Long)json_data.get("hour")).intValue());// second
-            this.second = new Integer(((Long)json_data.get("second")).intValue());// month
-            this.month = new Integer(((Long)json_data.get("month")).intValue());// epoch
-            this.epoch = (Long)json_data.get("epoch");// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());// day
-            this.day = new Integer(((Long)json_data.get("day")).intValue());// minute
-            this.minute = new Integer(((Long)json_data.get("minute")).intValue());
+            this.hour = ((Number)json_data.get("hour")).intValue();// second
+            this.second = ((Number)json_data.get("second")).intValue();// month
+            this.month = ((Number)json_data.get("month")).intValue();// epoch
+            this.epoch = ((Number)json_data.get("epoch")).longValue();// year
+            this.year = ((Number)json_data.get("year")).intValue();// day
+            this.day = ((Number)json_data.get("day")).intValue();// minute
+            this.minute = ((Number)json_data.get("minute")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Time; a field was missing.");
     		e.printStackTrace();

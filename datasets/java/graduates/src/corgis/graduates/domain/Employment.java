@@ -94,12 +94,12 @@ public class Employment {
 	 */
     public Employment(JSONObject json_data) {
         try {// Part Time
-            this.partTime = new Integer(((Long)json_data.get("Part Time")).intValue());// Unemployed
-            this.unemployed = new Integer(((Long)json_data.get("Unemployed")).intValue());// Unemployment Rate
-            this.unemploymentRate = (Double)json_data.get("Unemployment Rate");// Full Time
-            this.fullTime = new Integer(((Long)json_data.get("Full Time")).intValue());// Employed
-            this.employed = new Integer(((Long)json_data.get("Employed")).intValue());// Full Time, Year-Round
-            this.fullTimeYearRound = new Integer(((Long)json_data.get("Full Time, Year-Round")).intValue());
+            this.partTime = ((Number)json_data.get("Part Time")).intValue();// Unemployed
+            this.unemployed = ((Number)json_data.get("Unemployed")).intValue();// Unemployment Rate
+            this.unemploymentRate = ((Number)json_data.get("Unemployment Rate")).doubleValue();// Full Time
+            this.fullTime = ((Number)json_data.get("Full Time")).intValue();// Employed
+            this.employed = ((Number)json_data.get("Employed")).intValue();// Full Time, Year-Round
+            this.fullTimeYearRound = ((Number)json_data.get("Full Time, Year-Round")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Employment; a field was missing.");
     		e.printStackTrace();

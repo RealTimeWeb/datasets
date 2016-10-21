@@ -54,8 +54,8 @@ public class Statistics {
 	 */
     public Statistics(JSONObject json_data) {
         try {// # wounded
-            this.numberWounded = new Integer(((Long)json_data.get("# wounded")).intValue());// # killed
-            this.numberKilled = new Integer(((Long)json_data.get("# killed")).intValue());
+            this.numberWounded = ((Number)json_data.get("# wounded")).intValue();// # killed
+            this.numberKilled = ((Number)json_data.get("# killed")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Statistics; a field was missing.");
     		e.printStackTrace();

@@ -90,11 +90,11 @@ public class Employment {
 	 */
     public Employment(JSONObject json_data) {
         try {// Private Non-farm Establishments
-            this.privateNonFarmEstablishments = new Integer(((Long)json_data.get("Private Non-farm Establishments")).intValue());// Private Non-farm Employment Percent Change
-            this.privateNonFarmEmploymentPercentChange = (Double)json_data.get("Private Non-farm Employment Percent Change");// Firms
+            this.privateNonFarmEstablishments = ((Number)json_data.get("Private Non-farm Establishments")).intValue();// Private Non-farm Employment Percent Change
+            this.privateNonFarmEmploymentPercentChange = ((Number)json_data.get("Private Non-farm Employment Percent Change")).doubleValue();// Firms
             this.firms = new Firms((JSONObject)json_data.get("Firms"));// Nonemployer Establishments
-            this.nonemployerEstablishments = new Integer(((Long)json_data.get("Nonemployer Establishments")).intValue());// Private Non-farm Employment
-            this.privateNonFarmEmployment = new Integer(((Long)json_data.get("Private Non-farm Employment")).intValue());
+            this.nonemployerEstablishments = ((Number)json_data.get("Nonemployer Establishments")).intValue();// Private Non-farm Employment
+            this.privateNonFarmEmployment = ((Number)json_data.get("Private Non-farm Employment")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Employment; a field was missing.");
     		e.printStackTrace();

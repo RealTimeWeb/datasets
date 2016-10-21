@@ -99,12 +99,12 @@ public class NewHivInfections {
 	 */
     public NewHivInfections(JSONObject json_data) {
         try {// Incidence Rate Among Adults
-            this.incidenceRateAmongAdults = (Double)json_data.get("Incidence Rate Among Adults");// Male Adults
-            this.maleAdults = new Integer(((Long)json_data.get("Male Adults")).intValue());// All Ages
-            this.allAges = new Integer(((Long)json_data.get("All Ages")).intValue());// Children
-            this.children = new Integer(((Long)json_data.get("Children")).intValue());// Female Adults
-            this.femaleAdults = (Double)json_data.get("Female Adults");// Adults
-            this.adults = new Integer(((Long)json_data.get("Adults")).intValue());
+            this.incidenceRateAmongAdults = ((Number)json_data.get("Incidence Rate Among Adults")).doubleValue();// Male Adults
+            this.maleAdults = ((Number)json_data.get("Male Adults")).intValue();// All Ages
+            this.allAges = ((Number)json_data.get("All Ages")).intValue();// Children
+            this.children = ((Number)json_data.get("Children")).intValue();// Female Adults
+            this.femaleAdults = ((Number)json_data.get("Female Adults")).doubleValue();// Adults
+            this.adults = ((Number)json_data.get("Adults")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a NewHivInfections; a field was missing.");
     		e.printStackTrace();

@@ -89,11 +89,11 @@ public class Statistics {
 	 */
     public Statistics(JSONObject json_data) {
         try {// Gross
-            this.gross = new Integer(((Long)json_data.get("Gross")).intValue());// Performances
-            this.performances = new Integer(((Long)json_data.get("Performances")).intValue());// Attendance
-            this.attendance = new Integer(((Long)json_data.get("Attendance")).intValue());// Capacity
-            this.capacity = new Integer(((Long)json_data.get("Capacity")).intValue());// Gross Potential
-            this.grossPotential = new Integer(((Long)json_data.get("Gross Potential")).intValue());
+            this.gross = ((Number)json_data.get("Gross")).intValue();// Performances
+            this.performances = ((Number)json_data.get("Performances")).intValue();// Attendance
+            this.attendance = ((Number)json_data.get("Attendance")).intValue();// Capacity
+            this.capacity = ((Number)json_data.get("Capacity")).intValue();// Gross Potential
+            this.grossPotential = ((Number)json_data.get("Gross Potential")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Statistics; a field was missing.");
     		e.printStackTrace();

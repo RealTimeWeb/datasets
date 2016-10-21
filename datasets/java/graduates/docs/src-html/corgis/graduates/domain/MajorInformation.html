@@ -92,10 +92,10 @@
 <span class="sourceLineNo">084</span>         */<a name="line.84"></a>
 <span class="sourceLineNo">085</span>    public MajorInformation(JSONObject json_data) {<a name="line.85"></a>
 <span class="sourceLineNo">086</span>        try {// Major Code<a name="line.86"></a>
-<span class="sourceLineNo">087</span>            this.majorCode = new Integer(((Long)json_data.get("Major Code")).intValue());// Rank by Median Earnings<a name="line.87"></a>
-<span class="sourceLineNo">088</span>            this.rankByMedianEarnings = new Integer(((Long)json_data.get("Rank by Median Earnings")).intValue());// Major<a name="line.88"></a>
+<span class="sourceLineNo">087</span>            this.majorCode = ((Number)json_data.get("Major Code")).intValue();// Rank by Median Earnings<a name="line.87"></a>
+<span class="sourceLineNo">088</span>            this.rankByMedianEarnings = ((Number)json_data.get("Rank by Median Earnings")).intValue();// Major<a name="line.88"></a>
 <span class="sourceLineNo">089</span>            this.major = (String)json_data.get("Major");// Total Number in Major<a name="line.89"></a>
-<span class="sourceLineNo">090</span>            this.totalNumberInMajor = new Integer(((Long)json_data.get("Total Number in Major")).intValue());// Major Category<a name="line.90"></a>
+<span class="sourceLineNo">090</span>            this.totalNumberInMajor = ((Number)json_data.get("Total Number in Major")).intValue();// Major Category<a name="line.90"></a>
 <span class="sourceLineNo">091</span>            this.majorCategory = (String)json_data.get("Major Category");<a name="line.91"></a>
 <span class="sourceLineNo">092</span>        } catch (NullPointerException e) {<a name="line.92"></a>
 <span class="sourceLineNo">093</span>                System.err.println("Could not convert the response to a MajorInformation; a field was missing.");<a name="line.93"></a>

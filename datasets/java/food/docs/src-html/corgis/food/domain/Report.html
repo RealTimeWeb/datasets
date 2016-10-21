@@ -86,7 +86,7 @@
 <span class="sourceLineNo">078</span>            this.category = (String)json_data.get("Category");// Data<a name="line.78"></a>
 <span class="sourceLineNo">079</span>            this.data = new Data((JSONObject)json_data.get("Data"));// Description<a name="line.79"></a>
 <span class="sourceLineNo">080</span>            this.description = (String)json_data.get("Description");// Nutrient Data Bank Number<a name="line.80"></a>
-<span class="sourceLineNo">081</span>            this.nutrientDataBankNumber = new Integer(((Long)json_data.get("Nutrient Data Bank Number")).intValue());<a name="line.81"></a>
+<span class="sourceLineNo">081</span>            this.nutrientDataBankNumber = ((Number)json_data.get("Nutrient Data Bank Number")).intValue();<a name="line.81"></a>
 <span class="sourceLineNo">082</span>        } catch (NullPointerException e) {<a name="line.82"></a>
 <span class="sourceLineNo">083</span>                System.err.println("Could not convert the response to a Report; a field was missing.");<a name="line.83"></a>
 <span class="sourceLineNo">084</span>                e.printStackTrace();<a name="line.84"></a>

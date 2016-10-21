@@ -83,9 +83,9 @@
 <span class="sourceLineNo">075</span>    public Date(JSONObject json_data) {<a name="line.75"></a>
 <span class="sourceLineNo">076</span>        try {// Full<a name="line.76"></a>
 <span class="sourceLineNo">077</span>            this.full = (String)json_data.get("Full");// Day<a name="line.77"></a>
-<span class="sourceLineNo">078</span>            this.day = new Integer(((Long)json_data.get("Day")).intValue());// Month<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.month = new Integer(((Long)json_data.get("Month")).intValue());// Year<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.year = new Integer(((Long)json_data.get("Year")).intValue());<a name="line.80"></a>
+<span class="sourceLineNo">078</span>            this.day = ((Number)json_data.get("Day")).intValue();// Month<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            this.month = ((Number)json_data.get("Month")).intValue();// Year<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            this.year = ((Number)json_data.get("Year")).intValue();<a name="line.80"></a>
 <span class="sourceLineNo">081</span>        } catch (NullPointerException e) {<a name="line.81"></a>
 <span class="sourceLineNo">082</span>                System.err.println("Could not convert the response to a Date; a field was missing.");<a name="line.82"></a>
 <span class="sourceLineNo">083</span>                e.printStackTrace();<a name="line.83"></a>

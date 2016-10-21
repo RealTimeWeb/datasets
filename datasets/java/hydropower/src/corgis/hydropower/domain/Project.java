@@ -55,7 +55,7 @@ public class Project {
     public Project(JSONObject json_data) {
         try {// Organization
             this.organization = (String)json_data.get("Organization");// Year
-            this.year = new Integer(((Long)json_data.get("Year")).intValue());
+            this.year = ((Number)json_data.get("Year")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Project; a field was missing.");
     		e.printStackTrace();

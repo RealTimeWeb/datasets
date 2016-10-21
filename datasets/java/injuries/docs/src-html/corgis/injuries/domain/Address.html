@@ -85,7 +85,7 @@
 <span class="sourceLineNo">077</span>            this.city = (String)json_data.get("city");// state<a name="line.77"></a>
 <span class="sourceLineNo">078</span>            this.state = (String)json_data.get("state");// street<a name="line.78"></a>
 <span class="sourceLineNo">079</span>            this.street = (String)json_data.get("street");// zip<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.zip = new Integer(((Long)json_data.get("zip")).intValue());<a name="line.80"></a>
+<span class="sourceLineNo">080</span>            this.zip = ((Number)json_data.get("zip")).intValue();<a name="line.80"></a>
 <span class="sourceLineNo">081</span>        } catch (NullPointerException e) {<a name="line.81"></a>
 <span class="sourceLineNo">082</span>                System.err.println("Could not convert the response to a Address; a field was missing.");<a name="line.82"></a>
 <span class="sourceLineNo">083</span>                e.printStackTrace();<a name="line.83"></a>

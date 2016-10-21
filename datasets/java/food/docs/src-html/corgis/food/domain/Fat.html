@@ -82,10 +82,10 @@
 <span class="sourceLineNo">074</span>         */<a name="line.74"></a>
 <span class="sourceLineNo">075</span>    public Fat(JSONObject json_data) {<a name="line.75"></a>
 <span class="sourceLineNo">076</span>        try {// Saturated Fat<a name="line.76"></a>
-<span class="sourceLineNo">077</span>            this.saturatedFat = (Double)json_data.get("Saturated Fat");// Monosaturated Fat<a name="line.77"></a>
-<span class="sourceLineNo">078</span>            this.monosaturatedFat = (Double)json_data.get("Monosaturated Fat");// Total Lipid<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.totalLipid = (Double)json_data.get("Total Lipid");// Polysaturated Fat<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.polysaturatedFat = (Double)json_data.get("Polysaturated Fat");<a name="line.80"></a>
+<span class="sourceLineNo">077</span>            this.saturatedFat = ((Number)json_data.get("Saturated Fat")).doubleValue();// Monosaturated Fat<a name="line.77"></a>
+<span class="sourceLineNo">078</span>            this.monosaturatedFat = ((Number)json_data.get("Monosaturated Fat")).doubleValue();// Total Lipid<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            this.totalLipid = ((Number)json_data.get("Total Lipid")).doubleValue();// Polysaturated Fat<a name="line.79"></a>
+<span class="sourceLineNo">080</span>            this.polysaturatedFat = ((Number)json_data.get("Polysaturated Fat")).doubleValue();<a name="line.80"></a>
 <span class="sourceLineNo">081</span>        } catch (NullPointerException e) {<a name="line.81"></a>
 <span class="sourceLineNo">082</span>                System.err.println("Could not convert the response to a Fat; a field was missing.");<a name="line.82"></a>
 <span class="sourceLineNo">083</span>                e.printStackTrace();<a name="line.83"></a>

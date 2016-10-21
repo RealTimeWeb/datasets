@@ -65,7 +65,7 @@ public class Wealth {
 	 */
     public Wealth(JSONObject json_data) {
         try {// worth in billions
-            this.worthInBillions = (Double)json_data.get("worth in billions");// how
+            this.worthInBillions = ((Number)json_data.get("worth in billions")).doubleValue();// how
             this.how = new How((JSONObject)json_data.get("how"));// type
             this.type = (String)json_data.get("type");
         } catch (NullPointerException e) {

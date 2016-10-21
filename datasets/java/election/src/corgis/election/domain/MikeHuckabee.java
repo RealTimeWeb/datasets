@@ -65,8 +65,8 @@ public class MikeHuckabee {
     public MikeHuckabee(JSONObject json_data) {
         try {// Party
             this.party = (String)json_data.get("Party");// Number of Votes
-            this.numberOfVotes = new Integer(((Long)json_data.get("Number of Votes")).intValue());// Percent of Votes
-            this.percentOfVotes = (Double)json_data.get("Percent of Votes");
+            this.numberOfVotes = ((Number)json_data.get("Number of Votes")).intValue();// Percent of Votes
+            this.percentOfVotes = ((Number)json_data.get("Percent of Votes")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a MikeHuckabee; a field was missing.");
     		e.printStackTrace();

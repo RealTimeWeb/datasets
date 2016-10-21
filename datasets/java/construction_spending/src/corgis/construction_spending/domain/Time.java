@@ -90,10 +90,10 @@ public class Time {
     public Time(JSONObject json_data) {
         try {// month name
             this.monthName = (String)json_data.get("month name");// month
-            this.month = new Integer(((Long)json_data.get("month")).intValue());// index
-            this.index = new Integer(((Long)json_data.get("index")).intValue());// period
+            this.month = ((Number)json_data.get("month")).intValue();// index
+            this.index = ((Number)json_data.get("index")).intValue();// period
             this.period = (String)json_data.get("period");// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());
+            this.year = ((Number)json_data.get("year")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Time; a field was missing.");
     		e.printStackTrace();

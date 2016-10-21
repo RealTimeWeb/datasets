@@ -154,18 +154,18 @@ public class Consumption {
 	 */
     public Consumption(JSONObject json_data) {
         try {// fossil fuels
-            this.fossilFuels = (Double)json_data.get("fossil fuels");// natural gas
-            this.naturalGas = (Double)json_data.get("natural gas");// nuclear
-            this.nuclear = (Double)json_data.get("nuclear");// total renewable
-            this.totalRenewable = (Double)json_data.get("total renewable");// petroleum
-            this.petroleum = (Double)json_data.get("petroleum");// biomass
-            this.biomass = (Double)json_data.get("biomass");// hydroelectric
-            this.hydroelectric = (Double)json_data.get("hydroelectric");// coal
-            this.coal = (Double)json_data.get("coal");// geothermal
-            this.geothermal = (Double)json_data.get("geothermal");// solar
-            this.solar = (Double)json_data.get("solar");// total
-            this.total = (Double)json_data.get("total");// wind
-            this.wind = (Double)json_data.get("wind");
+            this.fossilFuels = ((Number)json_data.get("fossil fuels")).doubleValue();// natural gas
+            this.naturalGas = ((Number)json_data.get("natural gas")).doubleValue();// nuclear
+            this.nuclear = ((Number)json_data.get("nuclear")).doubleValue();// total renewable
+            this.totalRenewable = ((Number)json_data.get("total renewable")).doubleValue();// petroleum
+            this.petroleum = ((Number)json_data.get("petroleum")).doubleValue();// biomass
+            this.biomass = ((Number)json_data.get("biomass")).doubleValue();// hydroelectric
+            this.hydroelectric = ((Number)json_data.get("hydroelectric")).doubleValue();// coal
+            this.coal = ((Number)json_data.get("coal")).doubleValue();// geothermal
+            this.geothermal = ((Number)json_data.get("geothermal")).doubleValue();// solar
+            this.solar = ((Number)json_data.get("solar")).doubleValue();// total
+            this.total = ((Number)json_data.get("total")).doubleValue();// wind
+            this.wind = ((Number)json_data.get("wind")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Consumption; a field was missing.");
     		e.printStackTrace();

@@ -86,10 +86,10 @@
 <span class="sourceLineNo">078</span>         */<a name="line.78"></a>
 <span class="sourceLineNo">079</span>    public Statistics(JSONObject json_data) {<a name="line.79"></a>
 <span class="sourceLineNo">080</span>        try {// sales rank<a name="line.80"></a>
-<span class="sourceLineNo">081</span>            this.salesRank = new Integer(((Long)json_data.get("sales rank")).intValue());// sale price<a name="line.81"></a>
-<span class="sourceLineNo">082</span>            this.salePrice = (Double)json_data.get("sale price");// total reviews<a name="line.82"></a>
-<span class="sourceLineNo">083</span>            this.totalReviews = new Integer(((Long)json_data.get("total reviews")).intValue());// average rating<a name="line.83"></a>
-<span class="sourceLineNo">084</span>            this.averageRating = (Double)json_data.get("average rating");<a name="line.84"></a>
+<span class="sourceLineNo">081</span>            this.salesRank = ((Number)json_data.get("sales rank")).intValue();// sale price<a name="line.81"></a>
+<span class="sourceLineNo">082</span>            this.salePrice = ((Number)json_data.get("sale price")).doubleValue();// total reviews<a name="line.82"></a>
+<span class="sourceLineNo">083</span>            this.totalReviews = ((Number)json_data.get("total reviews")).intValue();// average rating<a name="line.83"></a>
+<span class="sourceLineNo">084</span>            this.averageRating = ((Number)json_data.get("average rating")).doubleValue();<a name="line.84"></a>
 <span class="sourceLineNo">085</span>        } catch (NullPointerException e) {<a name="line.85"></a>
 <span class="sourceLineNo">086</span>                System.err.println("Could not convert the response to a Statistics; a field was missing.");<a name="line.86"></a>
 <span class="sourceLineNo">087</span>                e.printStackTrace();<a name="line.87"></a>

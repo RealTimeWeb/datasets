@@ -69,7 +69,7 @@ public class Metrics {
         try {// Legitimacy
             this.legitimacy = new Legitimacy((JSONObject)json_data.get("Legitimacy"));// Effectiveness
             this.effectiveness = new Effectiveness((JSONObject)json_data.get("Effectiveness"));// State Fragility Index
-            this.stateFragilityIndex = new Integer(((Long)json_data.get("State Fragility Index")).intValue());
+            this.stateFragilityIndex = ((Number)json_data.get("State Fragility Index")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Metrics; a field was missing.");
     		e.printStackTrace();

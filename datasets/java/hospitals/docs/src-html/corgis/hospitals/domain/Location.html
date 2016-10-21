@@ -114,11 +114,11 @@
 <span class="sourceLineNo">106</span>        try {// City<a name="line.106"></a>
 <span class="sourceLineNo">107</span>            this.city = (String)json_data.get("City");// ZIP Code<a name="line.107"></a>
 <span class="sourceLineNo">108</span>            this.zipCode = (String)json_data.get("ZIP Code");// Longitude<a name="line.108"></a>
-<span class="sourceLineNo">109</span>            this.longitude = (Double)json_data.get("Longitude");// County<a name="line.109"></a>
+<span class="sourceLineNo">109</span>            this.longitude = ((Number)json_data.get("Longitude")).doubleValue();// County<a name="line.109"></a>
 <span class="sourceLineNo">110</span>            this.county = (String)json_data.get("County");// State<a name="line.110"></a>
 <span class="sourceLineNo">111</span>            this.state = (String)json_data.get("State");// Address<a name="line.111"></a>
 <span class="sourceLineNo">112</span>            this.address = (String)json_data.get("Address");// Latitude<a name="line.112"></a>
-<span class="sourceLineNo">113</span>            this.latitude = (Double)json_data.get("Latitude");<a name="line.113"></a>
+<span class="sourceLineNo">113</span>            this.latitude = ((Number)json_data.get("Latitude")).doubleValue();<a name="line.113"></a>
 <span class="sourceLineNo">114</span>        } catch (NullPointerException e) {<a name="line.114"></a>
 <span class="sourceLineNo">115</span>                System.err.println("Could not convert the response to a Location; a field was missing.");<a name="line.115"></a>
 <span class="sourceLineNo">116</span>                e.printStackTrace();<a name="line.116"></a>

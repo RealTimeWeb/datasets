@@ -74,7 +74,7 @@ public class Location {
 	 */
     public Location(JSONObject json_data) {
         try {// gdp
-            this.gdp = (Double)json_data.get("gdp");// region
+            this.gdp = ((Number)json_data.get("gdp")).doubleValue();// region
             this.region = (String)json_data.get("region");// citizenship
             this.citizenship = (String)json_data.get("citizenship");// country code
             this.countryCode = (String)json_data.get("country code");

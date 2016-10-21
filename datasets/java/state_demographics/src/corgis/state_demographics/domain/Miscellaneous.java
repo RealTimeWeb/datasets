@@ -133,15 +133,15 @@ public class Miscellaneous {
 	 */
     public Miscellaneous(JSONObject json_data) {
         try {// Manufacturers Shipments
-            this.manufacturersShipments = new Integer(((Long)json_data.get("Manufacturers Shipments")).intValue());// Foreign Born
-            this.foreignBorn = (Double)json_data.get("Foreign Born");// Percent Female
-            this.percentFemale = (Double)json_data.get("Percent Female");// Language Other than English at Home
-            this.languageOtherThanEnglishAtHome = (Double)json_data.get("Language Other than English at Home");// Living in Same House +1 Years
-            this.livingInSameHousePlusoneYears = (Double)json_data.get("Living in Same House +1 Years");// Mean Travel Time to Work
-            this.meanTravelTimeToWork = (Double)json_data.get("Mean Travel Time to Work");// Building Permits
-            this.buildingPermits = new Integer(((Long)json_data.get("Building Permits")).intValue());// Veterans
-            this.veterans = new Integer(((Long)json_data.get("Veterans")).intValue());// Land Area
-            this.landArea = (Double)json_data.get("Land Area");
+            this.manufacturersShipments = ((Number)json_data.get("Manufacturers Shipments")).intValue();// Foreign Born
+            this.foreignBorn = ((Number)json_data.get("Foreign Born")).doubleValue();// Percent Female
+            this.percentFemale = ((Number)json_data.get("Percent Female")).doubleValue();// Language Other than English at Home
+            this.languageOtherThanEnglishAtHome = ((Number)json_data.get("Language Other than English at Home")).doubleValue();// Living in Same House +1 Years
+            this.livingInSameHousePlusoneYears = ((Number)json_data.get("Living in Same House +1 Years")).doubleValue();// Mean Travel Time to Work
+            this.meanTravelTimeToWork = ((Number)json_data.get("Mean Travel Time to Work")).doubleValue();// Building Permits
+            this.buildingPermits = ((Number)json_data.get("Building Permits")).intValue();// Veterans
+            this.veterans = ((Number)json_data.get("Veterans")).intValue();// Land Area
+            this.landArea = ((Number)json_data.get("Land Area")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Miscellaneous; a field was missing.");
     		e.printStackTrace();

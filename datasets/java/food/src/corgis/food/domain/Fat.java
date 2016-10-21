@@ -74,10 +74,10 @@ public class Fat {
 	 */
     public Fat(JSONObject json_data) {
         try {// Saturated Fat
-            this.saturatedFat = (Double)json_data.get("Saturated Fat");// Monosaturated Fat
-            this.monosaturatedFat = (Double)json_data.get("Monosaturated Fat");// Total Lipid
-            this.totalLipid = (Double)json_data.get("Total Lipid");// Polysaturated Fat
-            this.polysaturatedFat = (Double)json_data.get("Polysaturated Fat");
+            this.saturatedFat = ((Number)json_data.get("Saturated Fat")).doubleValue();// Monosaturated Fat
+            this.monosaturatedFat = ((Number)json_data.get("Monosaturated Fat")).doubleValue();// Total Lipid
+            this.totalLipid = ((Number)json_data.get("Total Lipid")).doubleValue();// Polysaturated Fat
+            this.polysaturatedFat = ((Number)json_data.get("Polysaturated Fat")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Fat; a field was missing.");
     		e.printStackTrace();

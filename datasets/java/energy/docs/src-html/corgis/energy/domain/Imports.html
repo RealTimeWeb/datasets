@@ -132,15 +132,15 @@
 <span class="sourceLineNo">124</span>         */<a name="line.124"></a>
 <span class="sourceLineNo">125</span>    public Imports(JSONObject json_data) {<a name="line.125"></a>
 <span class="sourceLineNo">126</span>        try {// crude oil<a name="line.126"></a>
-<span class="sourceLineNo">127</span>            this.crudeOil = (Double)json_data.get("crude oil");// petroleum products<a name="line.127"></a>
-<span class="sourceLineNo">128</span>            this.petroleumProducts = (Double)json_data.get("petroleum products");// natural gas<a name="line.128"></a>
-<span class="sourceLineNo">129</span>            this.naturalGas = (Double)json_data.get("natural gas");// electricity<a name="line.129"></a>
-<span class="sourceLineNo">130</span>            this.electricity = (Double)json_data.get("electricity");// coal coke<a name="line.130"></a>
-<span class="sourceLineNo">131</span>            this.coalCoke = (Double)json_data.get("coal coke");// coal<a name="line.131"></a>
-<span class="sourceLineNo">132</span>            this.coal = (Double)json_data.get("coal");// total<a name="line.132"></a>
-<span class="sourceLineNo">133</span>            this.total = (Double)json_data.get("total");// total petroleum<a name="line.133"></a>
-<span class="sourceLineNo">134</span>            this.totalPetroleum = (Double)json_data.get("total petroleum");// biofuels<a name="line.134"></a>
-<span class="sourceLineNo">135</span>            this.biofuels = (Double)json_data.get("biofuels");<a name="line.135"></a>
+<span class="sourceLineNo">127</span>            this.crudeOil = ((Number)json_data.get("crude oil")).doubleValue();// petroleum products<a name="line.127"></a>
+<span class="sourceLineNo">128</span>            this.petroleumProducts = ((Number)json_data.get("petroleum products")).doubleValue();// natural gas<a name="line.128"></a>
+<span class="sourceLineNo">129</span>            this.naturalGas = ((Number)json_data.get("natural gas")).doubleValue();// electricity<a name="line.129"></a>
+<span class="sourceLineNo">130</span>            this.electricity = ((Number)json_data.get("electricity")).doubleValue();// coal coke<a name="line.130"></a>
+<span class="sourceLineNo">131</span>            this.coalCoke = ((Number)json_data.get("coal coke")).doubleValue();// coal<a name="line.131"></a>
+<span class="sourceLineNo">132</span>            this.coal = ((Number)json_data.get("coal")).doubleValue();// total<a name="line.132"></a>
+<span class="sourceLineNo">133</span>            this.total = ((Number)json_data.get("total")).doubleValue();// total petroleum<a name="line.133"></a>
+<span class="sourceLineNo">134</span>            this.totalPetroleum = ((Number)json_data.get("total petroleum")).doubleValue();// biofuels<a name="line.134"></a>
+<span class="sourceLineNo">135</span>            this.biofuels = ((Number)json_data.get("biofuels")).doubleValue();<a name="line.135"></a>
 <span class="sourceLineNo">136</span>        } catch (NullPointerException e) {<a name="line.136"></a>
 <span class="sourceLineNo">137</span>                System.err.println("Could not convert the response to a Imports; a field was missing.");<a name="line.137"></a>
 <span class="sourceLineNo">138</span>                e.printStackTrace();<a name="line.138"></a>

@@ -65,9 +65,9 @@ public class Dimensions {
 	 */
     public Dimensions(JSONObject json_data) {
         try {// Crest Length
-            this.crestLength = (Double)json_data.get("Crest Length");// Crest Elevaion
-            this.crestElevaion = (Double)json_data.get("Crest Elevaion");// Structural Height
-            this.structuralHeight = (Double)json_data.get("Structural Height");
+            this.crestLength = ((Number)json_data.get("Crest Length")).doubleValue();// Crest Elevaion
+            this.crestElevaion = ((Number)json_data.get("Crest Elevaion")).doubleValue();// Structural Height
+            this.structuralHeight = ((Number)json_data.get("Structural Height")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Dimensions; a field was missing.");
     		e.printStackTrace();

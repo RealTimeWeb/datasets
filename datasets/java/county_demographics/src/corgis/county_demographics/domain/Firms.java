@@ -104,13 +104,13 @@ public class Firms {
 	 */
     public Firms(JSONObject json_data) {
         try {// Total
-            this.total = new Integer(((Long)json_data.get("Total")).intValue());// Hispanic-Owned
-            this.hispanicOwned = (Double)json_data.get("Hispanic-Owned");// Native Hawaiian and Other Pacific Islander-Owned
-            this.nativeHawaiianAndOtherPacificIslanderOwned = (Double)json_data.get("Native Hawaiian and Other Pacific Islander-Owned");// American Indian-Owned
-            this.americanIndianOwned = (Double)json_data.get("American Indian-Owned");// Black-Owned
-            this.blackOwned = (Double)json_data.get("Black-Owned");// Asian-Owned
-            this.asianOwned = (Double)json_data.get("Asian-Owned");// Women-Owned
-            this.womenOwned = (Double)json_data.get("Women-Owned");
+            this.total = ((Number)json_data.get("Total")).intValue();// Hispanic-Owned
+            this.hispanicOwned = ((Number)json_data.get("Hispanic-Owned")).doubleValue();// Native Hawaiian and Other Pacific Islander-Owned
+            this.nativeHawaiianAndOtherPacificIslanderOwned = ((Number)json_data.get("Native Hawaiian and Other Pacific Islander-Owned")).doubleValue();// American Indian-Owned
+            this.americanIndianOwned = ((Number)json_data.get("American Indian-Owned")).doubleValue();// Black-Owned
+            this.blackOwned = ((Number)json_data.get("Black-Owned")).doubleValue();// Asian-Owned
+            this.asianOwned = ((Number)json_data.get("Asian-Owned")).doubleValue();// Women-Owned
+            this.womenOwned = ((Number)json_data.get("Women-Owned")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Firms; a field was missing.");
     		e.printStackTrace();

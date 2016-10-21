@@ -77,10 +77,10 @@ public class Sales {
 	 */
     public Sales(JSONObject json_data) {
         try {// Retail Sales
-            this.retailSales = new Integer(((Long)json_data.get("Retail Sales")).intValue());// Merchant Wholesaler Sales
-            this.merchantWholesalerSales = new Integer(((Long)json_data.get("Merchant Wholesaler Sales")).intValue());// Accommodation and Food Services Sales
-            this.accommodationAndFoodServicesSales = new Integer(((Long)json_data.get("Accommodation and Food Services Sales")).intValue());// Retail Sales per Capita
-            this.retailSalesPerCapita = new Integer(((Long)json_data.get("Retail Sales per Capita")).intValue());
+            this.retailSales = ((Number)json_data.get("Retail Sales")).intValue();// Merchant Wholesaler Sales
+            this.merchantWholesalerSales = ((Number)json_data.get("Merchant Wholesaler Sales")).intValue();// Accommodation and Food Services Sales
+            this.accommodationAndFoodServicesSales = ((Number)json_data.get("Accommodation and Food Services Sales")).intValue();// Retail Sales per Capita
+            this.retailSalesPerCapita = ((Number)json_data.get("Retail Sales per Capita")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Sales; a field was missing.");
     		e.printStackTrace();

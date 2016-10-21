@@ -96,11 +96,11 @@
 <span class="sourceLineNo">088</span>         */<a name="line.88"></a>
 <span class="sourceLineNo">089</span>    public PeopleLivingWithHiv(JSONObject json_data) {<a name="line.89"></a>
 <span class="sourceLineNo">090</span>        try {// Male Adults<a name="line.90"></a>
-<span class="sourceLineNo">091</span>            this.maleAdults = new Integer(((Long)json_data.get("Male Adults")).intValue());// Total<a name="line.91"></a>
-<span class="sourceLineNo">092</span>            this.total = new Integer(((Long)json_data.get("Total")).intValue());// Children<a name="line.92"></a>
-<span class="sourceLineNo">093</span>            this.children = new Integer(((Long)json_data.get("Children")).intValue());// Female Adults<a name="line.93"></a>
-<span class="sourceLineNo">094</span>            this.femaleAdults = new Integer(((Long)json_data.get("Female Adults")).intValue());// Adults<a name="line.94"></a>
-<span class="sourceLineNo">095</span>            this.adults = new Integer(((Long)json_data.get("Adults")).intValue());<a name="line.95"></a>
+<span class="sourceLineNo">091</span>            this.maleAdults = ((Number)json_data.get("Male Adults")).intValue();// Total<a name="line.91"></a>
+<span class="sourceLineNo">092</span>            this.total = ((Number)json_data.get("Total")).intValue();// Children<a name="line.92"></a>
+<span class="sourceLineNo">093</span>            this.children = ((Number)json_data.get("Children")).intValue();// Female Adults<a name="line.93"></a>
+<span class="sourceLineNo">094</span>            this.femaleAdults = ((Number)json_data.get("Female Adults")).intValue();// Adults<a name="line.94"></a>
+<span class="sourceLineNo">095</span>            this.adults = ((Number)json_data.get("Adults")).intValue();<a name="line.95"></a>
 <span class="sourceLineNo">096</span>        } catch (NullPointerException e) {<a name="line.96"></a>
 <span class="sourceLineNo">097</span>                System.err.println("Could not convert the response to a PeopleLivingWithHiv; a field was missing.");<a name="line.97"></a>
 <span class="sourceLineNo">098</span>                e.printStackTrace();<a name="line.98"></a>

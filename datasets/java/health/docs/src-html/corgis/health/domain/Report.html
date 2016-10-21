@@ -103,11 +103,11 @@
 <span class="sourceLineNo">095</span>    public Report(JSONObject json_data) {<a name="line.95"></a>
 <span class="sourceLineNo">096</span>        try {// loc<a name="line.96"></a>
 <span class="sourceLineNo">097</span>            this.loc = (String)json_data.get("loc");// number<a name="line.97"></a>
-<span class="sourceLineNo">098</span>            this.number = new Integer(((Long)json_data.get("number")).intValue());// disease<a name="line.98"></a>
+<span class="sourceLineNo">098</span>            this.number = ((Number)json_data.get("number")).intValue();// disease<a name="line.98"></a>
 <span class="sourceLineNo">099</span>            this.disease = (String)json_data.get("disease");// increase<a name="line.99"></a>
-<span class="sourceLineNo">100</span>            this.increase = (Double)json_data.get("increase");// year<a name="line.100"></a>
-<span class="sourceLineNo">101</span>            this.year = new Integer(((Long)json_data.get("year")).intValue());// population<a name="line.101"></a>
-<span class="sourceLineNo">102</span>            this.population = new Integer(((Long)json_data.get("population")).intValue());<a name="line.102"></a>
+<span class="sourceLineNo">100</span>            this.increase = ((Number)json_data.get("increase")).doubleValue();// year<a name="line.100"></a>
+<span class="sourceLineNo">101</span>            this.year = ((Number)json_data.get("year")).intValue();// population<a name="line.101"></a>
+<span class="sourceLineNo">102</span>            this.population = ((Number)json_data.get("population")).intValue();<a name="line.102"></a>
 <span class="sourceLineNo">103</span>        } catch (NullPointerException e) {<a name="line.103"></a>
 <span class="sourceLineNo">104</span>                System.err.println("Could not convert the response to a Report; a field was missing.");<a name="line.104"></a>
 <span class="sourceLineNo">105</span>                e.printStackTrace();<a name="line.105"></a>

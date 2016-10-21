@@ -100,7 +100,7 @@
 <span class="sourceLineNo">092</span>            this.industry = new Industry((JSONObject)json_data.get("industry"));// statistics<a name="line.92"></a>
 <span class="sourceLineNo">093</span>            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));// business<a name="line.93"></a>
 <span class="sourceLineNo">094</span>            this.business = new Business((JSONObject)json_data.get("business"));// year<a name="line.94"></a>
-<span class="sourceLineNo">095</span>            this.year = new Integer(((Long)json_data.get("year")).intValue());<a name="line.95"></a>
+<span class="sourceLineNo">095</span>            this.year = ((Number)json_data.get("year")).intValue();<a name="line.95"></a>
 <span class="sourceLineNo">096</span>        } catch (NullPointerException e) {<a name="line.96"></a>
 <span class="sourceLineNo">097</span>                System.err.println("Could not convert the response to a Report; a field was missing.");<a name="line.97"></a>
 <span class="sourceLineNo">098</span>                e.printStackTrace();<a name="line.98"></a>

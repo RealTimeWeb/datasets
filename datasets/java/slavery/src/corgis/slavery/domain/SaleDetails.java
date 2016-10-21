@@ -86,11 +86,11 @@ public class SaleDetails {
 	 */
     public SaleDetails(JSONObject json_data) {
         try {// Prices Listed
-            this.pricesListed = new Integer(((Long)json_data.get("Prices Listed")).intValue());// Price
-            this.price = (Double)json_data.get("Price");// Payment Method
+            this.pricesListed = ((Number)json_data.get("Prices Listed")).intValue();// Price
+            this.price = ((Number)json_data.get("Price")).doubleValue();// Payment Method
             this.paymentMethod = (String)json_data.get("Payment Method");// Discount Rate
-            this.discountRate = (Double)json_data.get("Discount Rate");// Predicted Interest Rate
-            this.predictedInterestRate = (Double)json_data.get("Predicted Interest Rate");
+            this.discountRate = ((Number)json_data.get("Discount Rate")).doubleValue();// Predicted Interest Rate
+            this.predictedInterestRate = ((Number)json_data.get("Predicted Interest Rate")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a SaleDetails; a field was missing.");
     		e.printStackTrace();

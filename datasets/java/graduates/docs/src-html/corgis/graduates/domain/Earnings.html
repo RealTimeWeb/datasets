@@ -83,10 +83,10 @@
 <span class="sourceLineNo">075</span>         */<a name="line.75"></a>
 <span class="sourceLineNo">076</span>    public Earnings(JSONObject json_data) {<a name="line.76"></a>
 <span class="sourceLineNo">077</span>        try {// Non-College Jobs<a name="line.77"></a>
-<span class="sourceLineNo">078</span>            this.nonCollegeJobs = new Integer(((Long)json_data.get("Non-College Jobs")).intValue());// College Jobs<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.collegeJobs = new Integer(((Long)json_data.get("College Jobs")).intValue());// Earnings Breakdown<a name="line.79"></a>
+<span class="sourceLineNo">078</span>            this.nonCollegeJobs = ((Number)json_data.get("Non-College Jobs")).intValue();// College Jobs<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            this.collegeJobs = ((Number)json_data.get("College Jobs")).intValue();// Earnings Breakdown<a name="line.79"></a>
 <span class="sourceLineNo">080</span>            this.earningsBreakdown = new EarningsBreakdown((JSONObject)json_data.get("Earnings Breakdown"));// Low Wage Jobs<a name="line.80"></a>
-<span class="sourceLineNo">081</span>            this.lowWageJobs = new Integer(((Long)json_data.get("Low Wage Jobs")).intValue());<a name="line.81"></a>
+<span class="sourceLineNo">081</span>            this.lowWageJobs = ((Number)json_data.get("Low Wage Jobs")).intValue();<a name="line.81"></a>
 <span class="sourceLineNo">082</span>        } catch (NullPointerException e) {<a name="line.82"></a>
 <span class="sourceLineNo">083</span>                System.err.println("Could not convert the response to a Earnings; a field was missing.");<a name="line.83"></a>
 <span class="sourceLineNo">084</span>                e.printStackTrace();<a name="line.84"></a>

@@ -125,7 +125,7 @@
 <span class="sourceLineNo">117</span>            this.county = (String)json_data.get("County");// Low Access Percents<a name="line.117"></a>
 <span class="sourceLineNo">118</span>            this.lowAccessPercents = new LowAccessPercents((JSONObject)json_data.get("Low Access Percents"));// State<a name="line.118"></a>
 <span class="sourceLineNo">119</span>            this.state = (String)json_data.get("State");// Population<a name="line.119"></a>
-<span class="sourceLineNo">120</span>            this.population = new Integer(((Long)json_data.get("Population")).intValue());<a name="line.120"></a>
+<span class="sourceLineNo">120</span>            this.population = ((Number)json_data.get("Population")).intValue();<a name="line.120"></a>
 <span class="sourceLineNo">121</span>        } catch (NullPointerException e) {<a name="line.121"></a>
 <span class="sourceLineNo">122</span>                System.err.println("Could not convert the response to a Record; a field was missing.");<a name="line.122"></a>
 <span class="sourceLineNo">123</span>                e.printStackTrace();<a name="line.123"></a>

@@ -110,9 +110,9 @@ public class Billionaire {
         try {// wealth
             this.wealth = new Wealth((JSONObject)json_data.get("wealth"));// company
             this.company = new Company((JSONObject)json_data.get("company"));// rank
-            this.rank = new Integer(((Long)json_data.get("rank")).intValue());// location
+            this.rank = ((Number)json_data.get("rank")).intValue();// location
             this.location = new Location((JSONObject)json_data.get("location"));// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());// demographics
+            this.year = ((Number)json_data.get("year")).intValue();// demographics
             this.demographics = new Demographics((JSONObject)json_data.get("demographics"));// name
             this.name = (String)json_data.get("name");
         } catch (NullPointerException e) {

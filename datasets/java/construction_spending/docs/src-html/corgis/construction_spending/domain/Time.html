@@ -98,10 +98,10 @@
 <span class="sourceLineNo">090</span>    public Time(JSONObject json_data) {<a name="line.90"></a>
 <span class="sourceLineNo">091</span>        try {// month name<a name="line.91"></a>
 <span class="sourceLineNo">092</span>            this.monthName = (String)json_data.get("month name");// month<a name="line.92"></a>
-<span class="sourceLineNo">093</span>            this.month = new Integer(((Long)json_data.get("month")).intValue());// index<a name="line.93"></a>
-<span class="sourceLineNo">094</span>            this.index = new Integer(((Long)json_data.get("index")).intValue());// period<a name="line.94"></a>
+<span class="sourceLineNo">093</span>            this.month = ((Number)json_data.get("month")).intValue();// index<a name="line.93"></a>
+<span class="sourceLineNo">094</span>            this.index = ((Number)json_data.get("index")).intValue();// period<a name="line.94"></a>
 <span class="sourceLineNo">095</span>            this.period = (String)json_data.get("period");// year<a name="line.95"></a>
-<span class="sourceLineNo">096</span>            this.year = new Integer(((Long)json_data.get("year")).intValue());<a name="line.96"></a>
+<span class="sourceLineNo">096</span>            this.year = ((Number)json_data.get("year")).intValue();<a name="line.96"></a>
 <span class="sourceLineNo">097</span>        } catch (NullPointerException e) {<a name="line.97"></a>
 <span class="sourceLineNo">098</span>                System.err.println("Could not convert the response to a Time; a field was missing.");<a name="line.98"></a>
 <span class="sourceLineNo">099</span>                e.printStackTrace();<a name="line.99"></a>

@@ -67,9 +67,9 @@ public class Dimensions {
 	 */
     public Dimensions(JSONObject json_data) {
         try {// width
-            this.width = (Double)json_data.get("width");// depth
-            this.depth = (Double)json_data.get("depth");// height
-            this.height = (Double)json_data.get("height");
+            this.width = ((Number)json_data.get("width")).doubleValue();// depth
+            this.depth = ((Number)json_data.get("depth")).doubleValue();// height
+            this.height = ((Number)json_data.get("height")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Dimensions; a field was missing.");
     		e.printStackTrace();

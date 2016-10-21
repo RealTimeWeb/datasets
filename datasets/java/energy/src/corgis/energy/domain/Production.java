@@ -164,19 +164,19 @@ public class Production {
 	 */
     public Production(JSONObject json_data) {
         try {// crude oil
-            this.crudeOil = (Double)json_data.get("crude oil");// fossil fuels
-            this.fossilFuels = (Double)json_data.get("fossil fuels");// natural gas
-            this.naturalGas = (Double)json_data.get("natural gas");// nuclear
-            this.nuclear = (Double)json_data.get("nuclear");// total renewable
-            this.totalRenewable = (Double)json_data.get("total renewable");// biomass
-            this.biomass = (Double)json_data.get("biomass");// hydroelectric
-            this.hydroelectric = (Double)json_data.get("hydroelectric");// natural gas plant liquids
-            this.naturalGasPlantLiquids = (Double)json_data.get("natural gas plant liquids");// geothermal
-            this.geothermal = (Double)json_data.get("geothermal");// coal
-            this.coal = (Double)json_data.get("coal");// solar
-            this.solar = (Double)json_data.get("solar");// total
-            this.total = (Double)json_data.get("total");// wind
-            this.wind = (Double)json_data.get("wind");
+            this.crudeOil = ((Number)json_data.get("crude oil")).doubleValue();// fossil fuels
+            this.fossilFuels = ((Number)json_data.get("fossil fuels")).doubleValue();// natural gas
+            this.naturalGas = ((Number)json_data.get("natural gas")).doubleValue();// nuclear
+            this.nuclear = ((Number)json_data.get("nuclear")).doubleValue();// total renewable
+            this.totalRenewable = ((Number)json_data.get("total renewable")).doubleValue();// biomass
+            this.biomass = ((Number)json_data.get("biomass")).doubleValue();// hydroelectric
+            this.hydroelectric = ((Number)json_data.get("hydroelectric")).doubleValue();// natural gas plant liquids
+            this.naturalGasPlantLiquids = ((Number)json_data.get("natural gas plant liquids")).doubleValue();// geothermal
+            this.geothermal = ((Number)json_data.get("geothermal")).doubleValue();// coal
+            this.coal = ((Number)json_data.get("coal")).doubleValue();// solar
+            this.solar = ((Number)json_data.get("solar")).doubleValue();// total
+            this.total = ((Number)json_data.get("total")).doubleValue();// wind
+            this.wind = ((Number)json_data.get("wind")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Production; a field was missing.");
     		e.printStackTrace();

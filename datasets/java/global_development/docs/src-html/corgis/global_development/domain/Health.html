@@ -129,14 +129,14 @@
 <span class="sourceLineNo">121</span>         */<a name="line.121"></a>
 <span class="sourceLineNo">122</span>    public Health(JSONObject json_data) {<a name="line.122"></a>
 <span class="sourceLineNo">123</span>        try {// Life Expectancy at Birth, Total<a name="line.123"></a>
-<span class="sourceLineNo">124</span>            this.lifeExpectancyAtBirthTotal = (Double)json_data.get("Life Expectancy at Birth, Total");// Total Population<a name="line.124"></a>
-<span class="sourceLineNo">125</span>            this.totalPopulation = (Double)json_data.get("Total Population");// Life Expectancy at Birth, Male<a name="line.125"></a>
-<span class="sourceLineNo">126</span>            this.lifeExpectancyAtBirthMale = (Double)json_data.get("Life Expectancy at Birth, Male");// Population Growth<a name="line.126"></a>
-<span class="sourceLineNo">127</span>            this.populationGrowth = (Double)json_data.get("Population Growth");// Life Expectancy at Birth, Female<a name="line.127"></a>
-<span class="sourceLineNo">128</span>            this.lifeExpectancyAtBirthFemale = (Double)json_data.get("Life Expectancy at Birth, Female");// Birth Rate<a name="line.128"></a>
-<span class="sourceLineNo">129</span>            this.birthRate = (Double)json_data.get("Birth Rate");// Death Rate<a name="line.129"></a>
-<span class="sourceLineNo">130</span>            this.deathRate = (Double)json_data.get("Death Rate");// Fertility Rate<a name="line.130"></a>
-<span class="sourceLineNo">131</span>            this.fertilityRate = (Double)json_data.get("Fertility Rate");<a name="line.131"></a>
+<span class="sourceLineNo">124</span>            this.lifeExpectancyAtBirthTotal = ((Number)json_data.get("Life Expectancy at Birth, Total")).doubleValue();// Total Population<a name="line.124"></a>
+<span class="sourceLineNo">125</span>            this.totalPopulation = ((Number)json_data.get("Total Population")).doubleValue();// Life Expectancy at Birth, Male<a name="line.125"></a>
+<span class="sourceLineNo">126</span>            this.lifeExpectancyAtBirthMale = ((Number)json_data.get("Life Expectancy at Birth, Male")).doubleValue();// Population Growth<a name="line.126"></a>
+<span class="sourceLineNo">127</span>            this.populationGrowth = ((Number)json_data.get("Population Growth")).doubleValue();// Life Expectancy at Birth, Female<a name="line.127"></a>
+<span class="sourceLineNo">128</span>            this.lifeExpectancyAtBirthFemale = ((Number)json_data.get("Life Expectancy at Birth, Female")).doubleValue();// Birth Rate<a name="line.128"></a>
+<span class="sourceLineNo">129</span>            this.birthRate = ((Number)json_data.get("Birth Rate")).doubleValue();// Death Rate<a name="line.129"></a>
+<span class="sourceLineNo">130</span>            this.deathRate = ((Number)json_data.get("Death Rate")).doubleValue();// Fertility Rate<a name="line.130"></a>
+<span class="sourceLineNo">131</span>            this.fertilityRate = ((Number)json_data.get("Fertility Rate")).doubleValue();<a name="line.131"></a>
 <span class="sourceLineNo">132</span>        } catch (NullPointerException e) {<a name="line.132"></a>
 <span class="sourceLineNo">133</span>                System.err.println("Could not convert the response to a Health; a field was missing.");<a name="line.133"></a>
 <span class="sourceLineNo">134</span>                e.printStackTrace();<a name="line.134"></a>

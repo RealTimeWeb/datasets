@@ -75,7 +75,7 @@
 <span class="sourceLineNo">067</span>        try {// Country<a name="line.67"></a>
 <span class="sourceLineNo">068</span>            this.country = (String)json_data.get("Country");// Data<a name="line.68"></a>
 <span class="sourceLineNo">069</span>            this.data = new Data((JSONObject)json_data.get("Data"));// Year<a name="line.69"></a>
-<span class="sourceLineNo">070</span>            this.year = new Integer(((Long)json_data.get("Year")).intValue());<a name="line.70"></a>
+<span class="sourceLineNo">070</span>            this.year = ((Number)json_data.get("Year")).intValue();<a name="line.70"></a>
 <span class="sourceLineNo">071</span>        } catch (NullPointerException e) {<a name="line.71"></a>
 <span class="sourceLineNo">072</span>                System.err.println("Could not convert the response to a Report; a field was missing.");<a name="line.72"></a>
 <span class="sourceLineNo">073</span>                e.printStackTrace();<a name="line.73"></a>

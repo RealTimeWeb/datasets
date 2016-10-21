@@ -67,9 +67,9 @@ public class HivPrevalence {
 	 */
     public HivPrevalence(JSONObject json_data) {
         try {// Young Men
-            this.youngMen = (Double)json_data.get("Young Men");// Adults
-            this.adults = (Double)json_data.get("Adults");// Young Women
-            this.youngWomen = (Double)json_data.get("Young Women");
+            this.youngMen = ((Number)json_data.get("Young Men")).doubleValue();// Adults
+            this.adults = ((Number)json_data.get("Adults")).doubleValue();// Young Women
+            this.youngWomen = ((Number)json_data.get("Young Women")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a HivPrevalence; a field was missing.");
     		e.printStackTrace();

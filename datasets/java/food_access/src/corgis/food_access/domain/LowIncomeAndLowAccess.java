@@ -54,8 +54,8 @@ public class LowIncomeAndLowAccess {
 	 */
     public LowIncomeAndLowAccess(JSONObject json_data) {
         try {// 1/2 and 10 Miles
-            this.oneTwoAndOnezeroMiles = (Double)json_data.get("1/2 and 10 Miles");// 1 and 20 Miles
-            this.oneAndTwozeroMiles = (Double)json_data.get("1 and 20 Miles");
+            this.oneTwoAndOnezeroMiles = ((Number)json_data.get("1/2 and 10 Miles")).doubleValue();// 1 and 20 Miles
+            this.oneAndTwozeroMiles = ((Number)json_data.get("1 and 20 Miles")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a LowIncomeAndLowAccess; a field was missing.");
     		e.printStackTrace();

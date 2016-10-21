@@ -114,14 +114,14 @@ public class Ethnicities {
 	 */
     public Ethnicities(JSONObject json_data) {
         try {// White Alone, not Hispanic or Latino
-            this.whiteAloneNotHispanicOrLatino = (Double)json_data.get("White Alone, not Hispanic or Latino");// Two or More Races
-            this.twoOrMoreRaces = (Double)json_data.get("Two or More Races");// Asian Alone
-            this.asianAlone = (Double)json_data.get("Asian Alone");// Native Hawaiian and Other Pacific Islander Alone
-            this.nativeHawaiianAndOtherPacificIslanderAlone = (Double)json_data.get("Native Hawaiian and Other Pacific Islander Alone");// White Alone
-            this.whiteAlone = (Double)json_data.get("White Alone");// Hispanic or Latino
-            this.hispanicOrLatino = (Double)json_data.get("Hispanic or Latino");// Black Alone
-            this.blackAlone = (Double)json_data.get("Black Alone");// American Indian and Alaska Native Alone
-            this.americanIndianAndAlaskaNativeAlone = (Double)json_data.get("American Indian and Alaska Native Alone");
+            this.whiteAloneNotHispanicOrLatino = ((Number)json_data.get("White Alone, not Hispanic or Latino")).doubleValue();// Two or More Races
+            this.twoOrMoreRaces = ((Number)json_data.get("Two or More Races")).doubleValue();// Asian Alone
+            this.asianAlone = ((Number)json_data.get("Asian Alone")).doubleValue();// Native Hawaiian and Other Pacific Islander Alone
+            this.nativeHawaiianAndOtherPacificIslanderAlone = ((Number)json_data.get("Native Hawaiian and Other Pacific Islander Alone")).doubleValue();// White Alone
+            this.whiteAlone = ((Number)json_data.get("White Alone")).doubleValue();// Hispanic or Latino
+            this.hispanicOrLatino = ((Number)json_data.get("Hispanic or Latino")).doubleValue();// Black Alone
+            this.blackAlone = ((Number)json_data.get("Black Alone")).doubleValue();// American Indian and Alaska Native Alone
+            this.americanIndianAndAlaskaNativeAlone = ((Number)json_data.get("American Indian and Alaska Native Alone")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Ethnicities; a field was missing.");
     		e.printStackTrace();

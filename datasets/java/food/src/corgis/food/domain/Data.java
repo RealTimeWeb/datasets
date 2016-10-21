@@ -300,32 +300,32 @@ public class Data {
 	 */
     public Data(JSONObject json_data) {
         try {// Niacin
-            this.niacin = (Double)json_data.get("Niacin");// Major Minerals
+            this.niacin = ((Number)json_data.get("Niacin")).doubleValue();// Major Minerals
             this.majorMinerals = new MajorMinerals((JSONObject)json_data.get("Major Minerals"));// Vitamins
             this.vitamins = new Vitamins((JSONObject)json_data.get("Vitamins"));// Carboydrate
-            this.carboydrate = (Double)json_data.get("Carboydrate");// Selenium
-            this.selenium = (Double)json_data.get("Selenium");// Thiamin
-            this.thiamin = (Double)json_data.get("Thiamin");// Choline
-            this.choline = new Integer(((Long)json_data.get("Choline")).intValue());// Beta Carotene
-            this.betaCarotene = new Integer(((Long)json_data.get("Beta Carotene")).intValue());// Fiber
-            this.fiber = (Double)json_data.get("Fiber");// Refuse Percentage
-            this.refusePercentage = new Integer(((Long)json_data.get("Refuse Percentage")).intValue());// Fat
+            this.carboydrate = ((Number)json_data.get("Carboydrate")).doubleValue();// Selenium
+            this.selenium = ((Number)json_data.get("Selenium")).doubleValue();// Thiamin
+            this.thiamin = ((Number)json_data.get("Thiamin")).doubleValue();// Choline
+            this.choline = ((Number)json_data.get("Choline")).intValue();// Beta Carotene
+            this.betaCarotene = ((Number)json_data.get("Beta Carotene")).intValue();// Fiber
+            this.fiber = ((Number)json_data.get("Fiber")).doubleValue();// Refuse Percentage
+            this.refusePercentage = ((Number)json_data.get("Refuse Percentage")).intValue();// Fat
             this.fat = new Fat((JSONObject)json_data.get("Fat"));// Water
-            this.water = (Double)json_data.get("Water");// Lycopene
-            this.lycopene = new Integer(((Long)json_data.get("Lycopene")).intValue());// Pantothenic Acid
-            this.pantothenicAcid = (Double)json_data.get("Pantothenic Acid");// Ash
-            this.ash = (Double)json_data.get("Ash");// Alpha Carotene
-            this.alphaCarotene = new Integer(((Long)json_data.get("Alpha Carotene")).intValue());// Retinol
-            this.retinol = new Integer(((Long)json_data.get("Retinol")).intValue());// Manganese
-            this.manganese = (Double)json_data.get("Manganese");// Beta Cryptoxanthin
-            this.betaCryptoxanthin = new Integer(((Long)json_data.get("Beta Cryptoxanthin")).intValue());// Riboflavin
-            this.riboflavin = (Double)json_data.get("Riboflavin");// Cholesterol
-            this.cholesterol = new Integer(((Long)json_data.get("Cholesterol")).intValue());// Lutein and Zeaxanthin
-            this.luteinAndZeaxanthin = new Integer(((Long)json_data.get("Lutein and Zeaxanthin")).intValue());// Kilocalories
-            this.kilocalories = new Integer(((Long)json_data.get("Kilocalories")).intValue());// Household Weights
+            this.water = ((Number)json_data.get("Water")).doubleValue();// Lycopene
+            this.lycopene = ((Number)json_data.get("Lycopene")).intValue();// Pantothenic Acid
+            this.pantothenicAcid = ((Number)json_data.get("Pantothenic Acid")).doubleValue();// Ash
+            this.ash = ((Number)json_data.get("Ash")).doubleValue();// Alpha Carotene
+            this.alphaCarotene = ((Number)json_data.get("Alpha Carotene")).intValue();// Retinol
+            this.retinol = ((Number)json_data.get("Retinol")).intValue();// Manganese
+            this.manganese = ((Number)json_data.get("Manganese")).doubleValue();// Beta Cryptoxanthin
+            this.betaCryptoxanthin = ((Number)json_data.get("Beta Cryptoxanthin")).intValue();// Riboflavin
+            this.riboflavin = ((Number)json_data.get("Riboflavin")).doubleValue();// Cholesterol
+            this.cholesterol = ((Number)json_data.get("Cholesterol")).intValue();// Lutein and Zeaxanthin
+            this.luteinAndZeaxanthin = ((Number)json_data.get("Lutein and Zeaxanthin")).intValue();// Kilocalories
+            this.kilocalories = ((Number)json_data.get("Kilocalories")).intValue();// Household Weights
             this.householdWeights = new HouseholdWeights((JSONObject)json_data.get("Household Weights"));// Sugar Total
-            this.sugarTotal = (Double)json_data.get("Sugar Total");// Protein
-            this.protein = (Double)json_data.get("Protein");
+            this.sugarTotal = ((Number)json_data.get("Sugar Total")).doubleValue();// Protein
+            this.protein = ((Number)json_data.get("Protein")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Data; a field was missing.");
     		e.printStackTrace();

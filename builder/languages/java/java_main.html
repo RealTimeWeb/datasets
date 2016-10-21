@@ -42,6 +42,8 @@
     
 {% highlight 'java' %}
 import corgis.{{ metadata.name | snake_case }}.{{ metadata.name | camel_case_caps }}Library;
+import corgis.{{ metadata.name | snake_case }}.domain.*;
+import java.util.ArrayList;
 
 public class ExampleClass {
     public static void main(String[] args) {
@@ -64,6 +66,8 @@ public class ExampleClass {
 
 {% highlight 'java' %}
 import corgis.{{ metadata.name | snake_case }}.{{ metadata.name | camel_case_caps }}Library;
+import corgis.{{ metadata.name | snake_case }}.domain.*;
+import java.util.ArrayList;
 
 public class ExampleClass {
     public static void main(String[] args) {

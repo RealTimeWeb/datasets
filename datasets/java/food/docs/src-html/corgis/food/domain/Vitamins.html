@@ -112,13 +112,13 @@
 <span class="sourceLineNo">104</span>         */<a name="line.104"></a>
 <span class="sourceLineNo">105</span>    public Vitamins(JSONObject json_data) {<a name="line.105"></a>
 <span class="sourceLineNo">106</span>        try {// Vitamin A - IU<a name="line.106"></a>
-<span class="sourceLineNo">107</span>            this.vitaminAIu = new Integer(((Long)json_data.get("Vitamin A - IU")).intValue());// Vitamin C<a name="line.107"></a>
-<span class="sourceLineNo">108</span>            this.vitaminC = (Double)json_data.get("Vitamin C");// Vitamin B12<a name="line.108"></a>
-<span class="sourceLineNo">109</span>            this.vitaminBonetwo = (Double)json_data.get("Vitamin B12");// Vitamin B6<a name="line.109"></a>
-<span class="sourceLineNo">110</span>            this.vitaminBsix = (Double)json_data.get("Vitamin B6");// Vitamin A - RAE<a name="line.110"></a>
-<span class="sourceLineNo">111</span>            this.vitaminARae = new Integer(((Long)json_data.get("Vitamin A - RAE")).intValue());// Vitamin E<a name="line.111"></a>
-<span class="sourceLineNo">112</span>            this.vitaminE = (Double)json_data.get("Vitamin E");// Vitamin K<a name="line.112"></a>
-<span class="sourceLineNo">113</span>            this.vitaminK = (Double)json_data.get("Vitamin K");<a name="line.113"></a>
+<span class="sourceLineNo">107</span>            this.vitaminAIu = ((Number)json_data.get("Vitamin A - IU")).intValue();// Vitamin C<a name="line.107"></a>
+<span class="sourceLineNo">108</span>            this.vitaminC = ((Number)json_data.get("Vitamin C")).doubleValue();// Vitamin B12<a name="line.108"></a>
+<span class="sourceLineNo">109</span>            this.vitaminBonetwo = ((Number)json_data.get("Vitamin B12")).doubleValue();// Vitamin B6<a name="line.109"></a>
+<span class="sourceLineNo">110</span>            this.vitaminBsix = ((Number)json_data.get("Vitamin B6")).doubleValue();// Vitamin A - RAE<a name="line.110"></a>
+<span class="sourceLineNo">111</span>            this.vitaminARae = ((Number)json_data.get("Vitamin A - RAE")).intValue();// Vitamin E<a name="line.111"></a>
+<span class="sourceLineNo">112</span>            this.vitaminE = ((Number)json_data.get("Vitamin E")).doubleValue();// Vitamin K<a name="line.112"></a>
+<span class="sourceLineNo">113</span>            this.vitaminK = ((Number)json_data.get("Vitamin K")).doubleValue();<a name="line.113"></a>
 <span class="sourceLineNo">114</span>        } catch (NullPointerException e) {<a name="line.114"></a>
 <span class="sourceLineNo">115</span>                System.err.println("Could not convert the response to a Vitamins; a field was missing.");<a name="line.115"></a>
 <span class="sourceLineNo">116</span>                e.printStackTrace();<a name="line.116"></a>

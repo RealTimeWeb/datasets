@@ -76,7 +76,7 @@ public class Slave {
     public Slave(JSONObject json_data) {
         try {// Gender
             this.gender = (String)json_data.get("Gender");// Age
-            this.age = (Double)json_data.get("Age");// Skin Color
+            this.age = ((Number)json_data.get("Age")).doubleValue();// Skin Color
             this.skinColor = (String)json_data.get("Skin Color");// Name
             this.name = (String)json_data.get("Name");
         } catch (NullPointerException e) {

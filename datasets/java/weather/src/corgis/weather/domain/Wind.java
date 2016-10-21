@@ -64,9 +64,9 @@ public class Wind {
 	 */
     public Wind(JSONObject json_data) {
         try {// High Gust
-            this.highGust = (Double)json_data.get("High Gust");// Avg Wind
-            this.avgWind = (Double)json_data.get("Avg Wind");// High Wind
-            this.highWind = (Double)json_data.get("High Wind");
+            this.highGust = ((Number)json_data.get("High Gust")).doubleValue();// Avg Wind
+            this.avgWind = ((Number)json_data.get("Avg Wind")).doubleValue();// High Wind
+            this.highWind = ((Number)json_data.get("High Wind")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Wind; a field was missing.");
     		e.printStackTrace();

@@ -85,10 +85,10 @@
 <span class="sourceLineNo">077</span>         */<a name="line.77"></a>
 <span class="sourceLineNo">078</span>    public HousingData(JSONObject json_data) {<a name="line.78"></a>
 <span class="sourceLineNo">079</span>        try {// Total Housing Units<a name="line.79"></a>
-<span class="sourceLineNo">080</span>            this.totalHousingUnits = new Integer(((Long)json_data.get("Total Housing Units")).intValue());// Urban Housing Percentage<a name="line.80"></a>
-<span class="sourceLineNo">081</span>            this.urbanHousingPercentage = (Double)json_data.get("Urban Housing Percentage");// Residing in Group Quarters<a name="line.81"></a>
-<span class="sourceLineNo">082</span>            this.residingInGroupQuarters = (Double)json_data.get("Residing in Group Quarters");// Rural Housing Percentage<a name="line.82"></a>
-<span class="sourceLineNo">083</span>            this.ruralHousingPercentage = (Double)json_data.get("Rural Housing Percentage");<a name="line.83"></a>
+<span class="sourceLineNo">080</span>            this.totalHousingUnits = ((Number)json_data.get("Total Housing Units")).intValue();// Urban Housing Percentage<a name="line.80"></a>
+<span class="sourceLineNo">081</span>            this.urbanHousingPercentage = ((Number)json_data.get("Urban Housing Percentage")).doubleValue();// Residing in Group Quarters<a name="line.81"></a>
+<span class="sourceLineNo">082</span>            this.residingInGroupQuarters = ((Number)json_data.get("Residing in Group Quarters")).doubleValue();// Rural Housing Percentage<a name="line.82"></a>
+<span class="sourceLineNo">083</span>            this.ruralHousingPercentage = ((Number)json_data.get("Rural Housing Percentage")).doubleValue();<a name="line.83"></a>
 <span class="sourceLineNo">084</span>        } catch (NullPointerException e) {<a name="line.84"></a>
 <span class="sourceLineNo">085</span>                System.err.println("Could not convert the response to a HousingData; a field was missing.");<a name="line.85"></a>
 <span class="sourceLineNo">086</span>                e.printStackTrace();<a name="line.86"></a>

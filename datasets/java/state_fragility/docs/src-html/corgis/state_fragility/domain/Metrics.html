@@ -77,7 +77,7 @@
 <span class="sourceLineNo">069</span>        try {// Legitimacy<a name="line.69"></a>
 <span class="sourceLineNo">070</span>            this.legitimacy = new Legitimacy((JSONObject)json_data.get("Legitimacy"));// Effectiveness<a name="line.70"></a>
 <span class="sourceLineNo">071</span>            this.effectiveness = new Effectiveness((JSONObject)json_data.get("Effectiveness"));// State Fragility Index<a name="line.71"></a>
-<span class="sourceLineNo">072</span>            this.stateFragilityIndex = new Integer(((Long)json_data.get("State Fragility Index")).intValue());<a name="line.72"></a>
+<span class="sourceLineNo">072</span>            this.stateFragilityIndex = ((Number)json_data.get("State Fragility Index")).intValue();<a name="line.72"></a>
 <span class="sourceLineNo">073</span>        } catch (NullPointerException e) {<a name="line.73"></a>
 <span class="sourceLineNo">074</span>                System.err.println("Could not convert the response to a Metrics; a field was missing.");<a name="line.74"></a>
 <span class="sourceLineNo">075</span>                e.printStackTrace();<a name="line.75"></a>

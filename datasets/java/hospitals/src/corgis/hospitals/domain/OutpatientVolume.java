@@ -104,13 +104,13 @@ public class OutpatientVolume {
 	 */
     public OutpatientVolume(JSONObject json_data) {
         try {// Genitourinary
-            this.genitourinary = new Integer(((Long)json_data.get("Genitourinary")).intValue());// Eye
-            this.eye = new Integer(((Long)json_data.get("Eye")).intValue());// Nervous System
-            this.nervousSystem = new Integer(((Long)json_data.get("Nervous System")).intValue());// Musculoskeletal
-            this.musculoskeletal = new Integer(((Long)json_data.get("Musculoskeletal")).intValue());// Skin
-            this.skin = new Integer(((Long)json_data.get("Skin")).intValue());// Gastrointestinal
-            this.gastrointestinal = new Integer(((Long)json_data.get("Gastrointestinal")).intValue());// Cardiovascular
-            this.cardiovascular = new Integer(((Long)json_data.get("Cardiovascular")).intValue());
+            this.genitourinary = ((Number)json_data.get("Genitourinary")).intValue();// Eye
+            this.eye = ((Number)json_data.get("Eye")).intValue();// Nervous System
+            this.nervousSystem = ((Number)json_data.get("Nervous System")).intValue();// Musculoskeletal
+            this.musculoskeletal = ((Number)json_data.get("Musculoskeletal")).intValue();// Skin
+            this.skin = ((Number)json_data.get("Skin")).intValue();// Gastrointestinal
+            this.gastrointestinal = ((Number)json_data.get("Gastrointestinal")).intValue();// Cardiovascular
+            this.cardiovascular = ((Number)json_data.get("Cardiovascular")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a OutpatientVolume; a field was missing.");
     		e.printStackTrace();

@@ -93,11 +93,11 @@
 <span class="sourceLineNo">085</span>         */<a name="line.85"></a>
 <span class="sourceLineNo">086</span>    public Effectiveness(JSONObject json_data) {<a name="line.86"></a>
 <span class="sourceLineNo">087</span>        try {// Security Effectiveness<a name="line.87"></a>
-<span class="sourceLineNo">088</span>            this.securityEffectiveness = new Integer(((Long)json_data.get("Security Effectiveness")).intValue());// Social Effectiveness<a name="line.88"></a>
-<span class="sourceLineNo">089</span>            this.socialEffectiveness = new Integer(((Long)json_data.get("Social Effectiveness")).intValue());// Political Effectiveness<a name="line.89"></a>
-<span class="sourceLineNo">090</span>            this.politicalEffectiveness = new Integer(((Long)json_data.get("Political Effectiveness")).intValue());// Economic Effectiveness<a name="line.90"></a>
-<span class="sourceLineNo">091</span>            this.economicEffectiveness = new Integer(((Long)json_data.get("Economic Effectiveness")).intValue());// Effectiveness Score<a name="line.91"></a>
-<span class="sourceLineNo">092</span>            this.effectivenessScore = new Integer(((Long)json_data.get("Effectiveness Score")).intValue());<a name="line.92"></a>
+<span class="sourceLineNo">088</span>            this.securityEffectiveness = ((Number)json_data.get("Security Effectiveness")).intValue();// Social Effectiveness<a name="line.88"></a>
+<span class="sourceLineNo">089</span>            this.socialEffectiveness = ((Number)json_data.get("Social Effectiveness")).intValue();// Political Effectiveness<a name="line.89"></a>
+<span class="sourceLineNo">090</span>            this.politicalEffectiveness = ((Number)json_data.get("Political Effectiveness")).intValue();// Economic Effectiveness<a name="line.90"></a>
+<span class="sourceLineNo">091</span>            this.economicEffectiveness = ((Number)json_data.get("Economic Effectiveness")).intValue();// Effectiveness Score<a name="line.91"></a>
+<span class="sourceLineNo">092</span>            this.effectivenessScore = ((Number)json_data.get("Effectiveness Score")).intValue();<a name="line.92"></a>
 <span class="sourceLineNo">093</span>        } catch (NullPointerException e) {<a name="line.93"></a>
 <span class="sourceLineNo">094</span>                System.err.println("Could not convert the response to a Effectiveness; a field was missing.");<a name="line.94"></a>
 <span class="sourceLineNo">095</span>                e.printStackTrace();<a name="line.95"></a>

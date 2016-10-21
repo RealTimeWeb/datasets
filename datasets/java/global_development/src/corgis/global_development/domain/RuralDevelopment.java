@@ -122,14 +122,14 @@ public class RuralDevelopment {
 	 */
     public RuralDevelopment(JSONObject json_data) {
         try {// Surface Area
-            this.surfaceArea = (Double)json_data.get("Surface Area");// Arable Land
-            this.arableLand = (Double)json_data.get("Arable Land");// Rural Population
-            this.ruralPopulation = (Double)json_data.get("Rural Population");// Agricultural Land Percent
-            this.agriculturalLandPercent = (Double)json_data.get("Agricultural Land Percent");// Rural Population Growth
-            this.ruralPopulationGrowth = (Double)json_data.get("Rural Population Growth");// Arable Land Percent
-            this.arableLandPercent = (Double)json_data.get("Arable Land Percent");// Agricultural Land
-            this.agriculturalLand = (Double)json_data.get("Agricultural Land");// Land Area
-            this.landArea = (Double)json_data.get("Land Area");
+            this.surfaceArea = ((Number)json_data.get("Surface Area")).doubleValue();// Arable Land
+            this.arableLand = ((Number)json_data.get("Arable Land")).doubleValue();// Rural Population
+            this.ruralPopulation = ((Number)json_data.get("Rural Population")).doubleValue();// Agricultural Land Percent
+            this.agriculturalLandPercent = ((Number)json_data.get("Agricultural Land Percent")).doubleValue();// Rural Population Growth
+            this.ruralPopulationGrowth = ((Number)json_data.get("Rural Population Growth")).doubleValue();// Arable Land Percent
+            this.arableLandPercent = ((Number)json_data.get("Arable Land Percent")).doubleValue();// Agricultural Land
+            this.agriculturalLand = ((Number)json_data.get("Agricultural Land")).doubleValue();// Land Area
+            this.landArea = ((Number)json_data.get("Land Area")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a RuralDevelopment; a field was missing.");
     		e.printStackTrace();

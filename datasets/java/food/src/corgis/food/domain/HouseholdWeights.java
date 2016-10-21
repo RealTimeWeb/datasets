@@ -75,8 +75,8 @@ public class HouseholdWeights {
     public HouseholdWeights(JSONObject json_data) {
         try {// 1st Household Weight Description
             this.onestHouseholdWeightDescription = (String)json_data.get("1st Household Weight Description");// 1st Household Weight
-            this.onestHouseholdWeight = (Double)json_data.get("1st Household Weight");// 2nd Household Weight
-            this.twondHouseholdWeight = new Integer(((Long)json_data.get("2nd Household Weight")).intValue());// 2nd Household Weight Description
+            this.onestHouseholdWeight = ((Number)json_data.get("1st Household Weight")).doubleValue();// 2nd Household Weight
+            this.twondHouseholdWeight = ((Number)json_data.get("2nd Household Weight")).intValue();// 2nd Household Weight Description
             this.twondHouseholdWeightDescription = (String)json_data.get("2nd Household Weight Description");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a HouseholdWeights; a field was missing.");

@@ -108,12 +108,12 @@
 <span class="sourceLineNo">100</span>         */<a name="line.100"></a>
 <span class="sourceLineNo">101</span>    public Housing(JSONObject json_data) {<a name="line.101"></a>
 <span class="sourceLineNo">102</span>        try {// Housing Units<a name="line.102"></a>
-<span class="sourceLineNo">103</span>            this.housingUnits = new Integer(((Long)json_data.get("Housing Units")).intValue());// Units in Multi-Unit Structures<a name="line.103"></a>
-<span class="sourceLineNo">104</span>            this.unitsInMultiUnitStructures = (Double)json_data.get("Units in Multi-Unit Structures");// Median Value of Owner-Occupied Units<a name="line.104"></a>
-<span class="sourceLineNo">105</span>            this.medianValueOfOwnerOccupiedUnits = new Integer(((Long)json_data.get("Median Value of Owner-Occupied Units")).intValue());// Households<a name="line.105"></a>
-<span class="sourceLineNo">106</span>            this.households = new Integer(((Long)json_data.get("Households")).intValue());// Persons per Household<a name="line.106"></a>
-<span class="sourceLineNo">107</span>            this.personsPerHousehold = (Double)json_data.get("Persons per Household");// Homeownership Rate<a name="line.107"></a>
-<span class="sourceLineNo">108</span>            this.homeownershipRate = (Double)json_data.get("Homeownership Rate");<a name="line.108"></a>
+<span class="sourceLineNo">103</span>            this.housingUnits = ((Number)json_data.get("Housing Units")).intValue();// Units in Multi-Unit Structures<a name="line.103"></a>
+<span class="sourceLineNo">104</span>            this.unitsInMultiUnitStructures = ((Number)json_data.get("Units in Multi-Unit Structures")).doubleValue();// Median Value of Owner-Occupied Units<a name="line.104"></a>
+<span class="sourceLineNo">105</span>            this.medianValueOfOwnerOccupiedUnits = ((Number)json_data.get("Median Value of Owner-Occupied Units")).intValue();// Households<a name="line.105"></a>
+<span class="sourceLineNo">106</span>            this.households = ((Number)json_data.get("Households")).intValue();// Persons per Household<a name="line.106"></a>
+<span class="sourceLineNo">107</span>            this.personsPerHousehold = ((Number)json_data.get("Persons per Household")).doubleValue();// Homeownership Rate<a name="line.107"></a>
+<span class="sourceLineNo">108</span>            this.homeownershipRate = ((Number)json_data.get("Homeownership Rate")).doubleValue();<a name="line.108"></a>
 <span class="sourceLineNo">109</span>        } catch (NullPointerException e) {<a name="line.109"></a>
 <span class="sourceLineNo">110</span>                System.err.println("Could not convert the response to a Housing; a field was missing.");<a name="line.110"></a>
 <span class="sourceLineNo">111</span>                e.printStackTrace();<a name="line.111"></a>

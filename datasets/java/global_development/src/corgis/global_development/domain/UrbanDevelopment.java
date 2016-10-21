@@ -67,9 +67,9 @@ public class UrbanDevelopment {
 	 */
     public UrbanDevelopment(JSONObject json_data) {
         try {// Urban Population
-            this.urbanPopulation = (Double)json_data.get("Urban Population");// Population Density
-            this.populationDensity = (Double)json_data.get("Population Density");// Urban Population Growth
-            this.urbanPopulationGrowth = (Double)json_data.get("Urban Population Growth");
+            this.urbanPopulation = ((Number)json_data.get("Urban Population")).doubleValue();// Population Density
+            this.populationDensity = ((Number)json_data.get("Population Density")).doubleValue();// Urban Population Growth
+            this.urbanPopulationGrowth = ((Number)json_data.get("Urban Population Growth")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a UrbanDevelopment; a field was missing.");
     		e.printStackTrace();

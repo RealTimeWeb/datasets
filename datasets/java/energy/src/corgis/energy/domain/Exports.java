@@ -124,15 +124,15 @@ public class Exports {
 	 */
     public Exports(JSONObject json_data) {
         try {// crude oil
-            this.crudeOil = (Double)json_data.get("crude oil");// petroleum products
-            this.petroleumProducts = (Double)json_data.get("petroleum products");// natural gas
-            this.naturalGas = (Double)json_data.get("natural gas");// electricity
-            this.electricity = (Double)json_data.get("electricity");// coal coke
-            this.coalCoke = (Double)json_data.get("coal coke");// coal
-            this.coal = (Double)json_data.get("coal");// total
-            this.total = (Double)json_data.get("total");// total petroleum
-            this.totalPetroleum = (Double)json_data.get("total petroleum");// biofuels
-            this.biofuels = (Double)json_data.get("biofuels");
+            this.crudeOil = ((Number)json_data.get("crude oil")).doubleValue();// petroleum products
+            this.petroleumProducts = ((Number)json_data.get("petroleum products")).doubleValue();// natural gas
+            this.naturalGas = ((Number)json_data.get("natural gas")).doubleValue();// electricity
+            this.electricity = ((Number)json_data.get("electricity")).doubleValue();// coal coke
+            this.coalCoke = ((Number)json_data.get("coal coke")).doubleValue();// coal
+            this.coal = ((Number)json_data.get("coal")).doubleValue();// total
+            this.total = ((Number)json_data.get("total")).doubleValue();// total petroleum
+            this.totalPetroleum = ((Number)json_data.get("total petroleum")).doubleValue();// biofuels
+            this.biofuels = ((Number)json_data.get("biofuels")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Exports; a field was missing.");
     		e.printStackTrace();

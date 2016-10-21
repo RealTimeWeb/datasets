@@ -264,29 +264,29 @@ public class Song {
 	 */
     public Song(JSONObject json_data) {
         try {// key
-            this.key = (Double)json_data.get("key");// mode_confidence
-            this.mode_Confidence = (Double)json_data.get("mode_confidence");// artist_mbtags_count
-            this.artist_Mbtags_Count = (Double)json_data.get("artist_mbtags_count");// key_confidence
-            this.key_Confidence = (Double)json_data.get("key_confidence");// tatums_start
-            this.tatums_Start = (Double)json_data.get("tatums_start");// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());// duration
-            this.duration = (Double)json_data.get("duration");// hotttnesss
-            this.hotttnesss = (Double)json_data.get("hotttnesss");// beats_start
-            this.beats_Start = (Double)json_data.get("beats_start");// time_signature_confidence
-            this.time_Signature_Confidence = (Double)json_data.get("time_signature_confidence");// title
+            this.key = ((Number)json_data.get("key")).doubleValue();// mode_confidence
+            this.mode_Confidence = ((Number)json_data.get("mode_confidence")).doubleValue();// artist_mbtags_count
+            this.artist_Mbtags_Count = ((Number)json_data.get("artist_mbtags_count")).doubleValue();// key_confidence
+            this.key_Confidence = ((Number)json_data.get("key_confidence")).doubleValue();// tatums_start
+            this.tatums_Start = ((Number)json_data.get("tatums_start")).doubleValue();// year
+            this.year = ((Number)json_data.get("year")).intValue();// duration
+            this.duration = ((Number)json_data.get("duration")).doubleValue();// hotttnesss
+            this.hotttnesss = ((Number)json_data.get("hotttnesss")).doubleValue();// beats_start
+            this.beats_Start = ((Number)json_data.get("beats_start")).doubleValue();// time_signature_confidence
+            this.time_Signature_Confidence = ((Number)json_data.get("time_signature_confidence")).doubleValue();// title
             this.title = (String)json_data.get("title");// bars_confidence
-            this.bars_Confidence = (Double)json_data.get("bars_confidence");// id
+            this.bars_Confidence = ((Number)json_data.get("bars_confidence")).doubleValue();// id
             this.id = (String)json_data.get("id");// bars_start
-            this.bars_Start = (Double)json_data.get("bars_start");// artist_mbtags
+            this.bars_Start = ((Number)json_data.get("bars_start")).doubleValue();// artist_mbtags
             this.artist_Mbtags = (String)json_data.get("artist_mbtags");// start_of_fade_out
-            this.start_Of_Fade_Out = (Double)json_data.get("start_of_fade_out");// tempo
-            this.tempo = (Double)json_data.get("tempo");// end_of_fade_in
-            this.end_Of_Fade_In = (Double)json_data.get("end_of_fade_in");// beats_confidence
-            this.beats_Confidence = (Double)json_data.get("beats_confidence");// tatums_confidence
-            this.tatums_Confidence = (Double)json_data.get("tatums_confidence");// mode
-            this.mode = new Integer(((Long)json_data.get("mode")).intValue());// time_signature
-            this.time_Signature = (Double)json_data.get("time_signature");// loudness
-            this.loudness = (Double)json_data.get("loudness");
+            this.start_Of_Fade_Out = ((Number)json_data.get("start_of_fade_out")).doubleValue();// tempo
+            this.tempo = ((Number)json_data.get("tempo")).doubleValue();// end_of_fade_in
+            this.end_Of_Fade_In = ((Number)json_data.get("end_of_fade_in")).doubleValue();// beats_confidence
+            this.beats_Confidence = ((Number)json_data.get("beats_confidence")).doubleValue();// tatums_confidence
+            this.tatums_Confidence = ((Number)json_data.get("tatums_confidence")).doubleValue();// mode
+            this.mode = ((Number)json_data.get("mode")).intValue();// time_signature
+            this.time_Signature = ((Number)json_data.get("time_signature")).doubleValue();// loudness
+            this.loudness = ((Number)json_data.get("loudness")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Song; a field was missing.");
     		e.printStackTrace();

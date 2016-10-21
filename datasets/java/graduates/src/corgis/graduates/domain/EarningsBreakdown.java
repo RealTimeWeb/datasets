@@ -64,9 +64,9 @@ public class EarningsBreakdown {
 	 */
     public EarningsBreakdown(JSONObject json_data) {
         try {// Median Earnings
-            this.medianEarnings = new Integer(((Long)json_data.get("Median Earnings")).intValue());// 75th Percentile of Earnings
-            this.sevenfivethPercentileOfEarnings = new Integer(((Long)json_data.get("75th Percentile of Earnings")).intValue());// 25th Percentile of Earnings
-            this.twofivethPercentileOfEarnings = new Integer(((Long)json_data.get("25th Percentile of Earnings")).intValue());
+            this.medianEarnings = ((Number)json_data.get("Median Earnings")).intValue();// 75th Percentile of Earnings
+            this.sevenfivethPercentileOfEarnings = ((Number)json_data.get("75th Percentile of Earnings")).intValue();// 25th Percentile of Earnings
+            this.twofivethPercentileOfEarnings = ((Number)json_data.get("25th Percentile of Earnings")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a EarningsBreakdown; a field was missing.");
     		e.printStackTrace();

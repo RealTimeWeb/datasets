@@ -64,9 +64,9 @@ public class Date {
 	 */
     public Date(JSONObject json_data) {
         try {// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());// day
-            this.day = new Integer(((Long)json_data.get("day")).intValue());// month
-            this.month = new Integer(((Long)json_data.get("month")).intValue());
+            this.year = ((Number)json_data.get("year")).intValue();// day
+            this.day = ((Number)json_data.get("day")).intValue();// month
+            this.month = ((Number)json_data.get("month")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Date; a field was missing.");
     		e.printStackTrace();

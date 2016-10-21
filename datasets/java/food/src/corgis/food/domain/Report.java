@@ -78,7 +78,7 @@ public class Report {
             this.category = (String)json_data.get("Category");// Data
             this.data = new Data((JSONObject)json_data.get("Data"));// Description
             this.description = (String)json_data.get("Description");// Nutrient Data Bank Number
-            this.nutrientDataBankNumber = new Integer(((Long)json_data.get("Nutrient Data Bank Number")).intValue());
+            this.nutrientDataBankNumber = ((Number)json_data.get("Nutrient Data Bank Number")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Report; a field was missing.");
     		e.printStackTrace();

@@ -112,13 +112,13 @@
 <span class="sourceLineNo">104</span>         */<a name="line.104"></a>
 <span class="sourceLineNo">105</span>    public OutpatientVolume(JSONObject json_data) {<a name="line.105"></a>
 <span class="sourceLineNo">106</span>        try {// Genitourinary<a name="line.106"></a>
-<span class="sourceLineNo">107</span>            this.genitourinary = new Integer(((Long)json_data.get("Genitourinary")).intValue());// Eye<a name="line.107"></a>
-<span class="sourceLineNo">108</span>            this.eye = new Integer(((Long)json_data.get("Eye")).intValue());// Nervous System<a name="line.108"></a>
-<span class="sourceLineNo">109</span>            this.nervousSystem = new Integer(((Long)json_data.get("Nervous System")).intValue());// Musculoskeletal<a name="line.109"></a>
-<span class="sourceLineNo">110</span>            this.musculoskeletal = new Integer(((Long)json_data.get("Musculoskeletal")).intValue());// Skin<a name="line.110"></a>
-<span class="sourceLineNo">111</span>            this.skin = new Integer(((Long)json_data.get("Skin")).intValue());// Gastrointestinal<a name="line.111"></a>
-<span class="sourceLineNo">112</span>            this.gastrointestinal = new Integer(((Long)json_data.get("Gastrointestinal")).intValue());// Cardiovascular<a name="line.112"></a>
-<span class="sourceLineNo">113</span>            this.cardiovascular = new Integer(((Long)json_data.get("Cardiovascular")).intValue());<a name="line.113"></a>
+<span class="sourceLineNo">107</span>            this.genitourinary = ((Number)json_data.get("Genitourinary")).intValue();// Eye<a name="line.107"></a>
+<span class="sourceLineNo">108</span>            this.eye = ((Number)json_data.get("Eye")).intValue();// Nervous System<a name="line.108"></a>
+<span class="sourceLineNo">109</span>            this.nervousSystem = ((Number)json_data.get("Nervous System")).intValue();// Musculoskeletal<a name="line.109"></a>
+<span class="sourceLineNo">110</span>            this.musculoskeletal = ((Number)json_data.get("Musculoskeletal")).intValue();// Skin<a name="line.110"></a>
+<span class="sourceLineNo">111</span>            this.skin = ((Number)json_data.get("Skin")).intValue();// Gastrointestinal<a name="line.111"></a>
+<span class="sourceLineNo">112</span>            this.gastrointestinal = ((Number)json_data.get("Gastrointestinal")).intValue();// Cardiovascular<a name="line.112"></a>
+<span class="sourceLineNo">113</span>            this.cardiovascular = ((Number)json_data.get("Cardiovascular")).intValue();<a name="line.113"></a>
 <span class="sourceLineNo">114</span>        } catch (NullPointerException e) {<a name="line.114"></a>
 <span class="sourceLineNo">115</span>                System.err.println("Could not convert the response to a OutpatientVolume; a field was missing.");<a name="line.115"></a>
 <span class="sourceLineNo">116</span>                e.printStackTrace();<a name="line.116"></a>

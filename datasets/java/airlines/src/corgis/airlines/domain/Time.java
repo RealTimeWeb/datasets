@@ -65,8 +65,8 @@ public class Time {
     public Time(JSONObject json_data) {
         try {// label
             this.label = (String)json_data.get("label");// year
-            this.year = new Integer(((Long)json_data.get("year")).intValue());// month
-            this.month = new Integer(((Long)json_data.get("month")).intValue());
+            this.year = ((Number)json_data.get("year")).intValue();// month
+            this.month = ((Number)json_data.get("month")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Time; a field was missing.");
     		e.printStackTrace();

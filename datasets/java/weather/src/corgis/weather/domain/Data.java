@@ -68,7 +68,7 @@ public class Data {
 	 */
     public Data(JSONObject json_data) {
         try {// Precipitation
-            this.precipitation = (Double)json_data.get("Precipitation");// Temperature
+            this.precipitation = ((Number)json_data.get("Precipitation")).doubleValue();// Temperature
             this.temperature = new Temperature((JSONObject)json_data.get("Temperature"));// Wind
             this.wind = new Wind((JSONObject)json_data.get("Wind"));
         } catch (NullPointerException e) {

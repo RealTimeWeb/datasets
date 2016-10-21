@@ -100,12 +100,12 @@ public class Housing {
 	 */
     public Housing(JSONObject json_data) {
         try {// Housing Units
-            this.housingUnits = new Integer(((Long)json_data.get("Housing Units")).intValue());// Units in Multi-Unit Structures
-            this.unitsInMultiUnitStructures = (Double)json_data.get("Units in Multi-Unit Structures");// Median Value of Owner-Occupied Units
-            this.medianValueOfOwnerOccupiedUnits = new Integer(((Long)json_data.get("Median Value of Owner-Occupied Units")).intValue());// Households
-            this.households = new Integer(((Long)json_data.get("Households")).intValue());// Persons per Household
-            this.personsPerHousehold = (Double)json_data.get("Persons per Household");// Homeownership Rate
-            this.homeownershipRate = (Double)json_data.get("Homeownership Rate");
+            this.housingUnits = ((Number)json_data.get("Housing Units")).intValue();// Units in Multi-Unit Structures
+            this.unitsInMultiUnitStructures = ((Number)json_data.get("Units in Multi-Unit Structures")).doubleValue();// Median Value of Owner-Occupied Units
+            this.medianValueOfOwnerOccupiedUnits = ((Number)json_data.get("Median Value of Owner-Occupied Units")).intValue();// Households
+            this.households = ((Number)json_data.get("Households")).intValue();// Persons per Household
+            this.personsPerHousehold = ((Number)json_data.get("Persons per Household")).doubleValue();// Homeownership Rate
+            this.homeownershipRate = ((Number)json_data.get("Homeownership Rate")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Housing; a field was missing.");
     		e.printStackTrace();

@@ -118,9 +118,9 @@
 <span class="sourceLineNo">110</span>        try {// wealth<a name="line.110"></a>
 <span class="sourceLineNo">111</span>            this.wealth = new Wealth((JSONObject)json_data.get("wealth"));// company<a name="line.111"></a>
 <span class="sourceLineNo">112</span>            this.company = new Company((JSONObject)json_data.get("company"));// rank<a name="line.112"></a>
-<span class="sourceLineNo">113</span>            this.rank = new Integer(((Long)json_data.get("rank")).intValue());// location<a name="line.113"></a>
+<span class="sourceLineNo">113</span>            this.rank = ((Number)json_data.get("rank")).intValue();// location<a name="line.113"></a>
 <span class="sourceLineNo">114</span>            this.location = new Location((JSONObject)json_data.get("location"));// year<a name="line.114"></a>
-<span class="sourceLineNo">115</span>            this.year = new Integer(((Long)json_data.get("year")).intValue());// demographics<a name="line.115"></a>
+<span class="sourceLineNo">115</span>            this.year = ((Number)json_data.get("year")).intValue();// demographics<a name="line.115"></a>
 <span class="sourceLineNo">116</span>            this.demographics = new Demographics((JSONObject)json_data.get("demographics"));// name<a name="line.116"></a>
 <span class="sourceLineNo">117</span>            this.name = (String)json_data.get("name");<a name="line.117"></a>
 <span class="sourceLineNo">118</span>        } catch (NullPointerException e) {<a name="line.118"></a>

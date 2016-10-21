@@ -162,18 +162,18 @@
 <span class="sourceLineNo">154</span>         */<a name="line.154"></a>
 <span class="sourceLineNo">155</span>    public Consumption(JSONObject json_data) {<a name="line.155"></a>
 <span class="sourceLineNo">156</span>        try {// fossil fuels<a name="line.156"></a>
-<span class="sourceLineNo">157</span>            this.fossilFuels = (Double)json_data.get("fossil fuels");// natural gas<a name="line.157"></a>
-<span class="sourceLineNo">158</span>            this.naturalGas = (Double)json_data.get("natural gas");// nuclear<a name="line.158"></a>
-<span class="sourceLineNo">159</span>            this.nuclear = (Double)json_data.get("nuclear");// total renewable<a name="line.159"></a>
-<span class="sourceLineNo">160</span>            this.totalRenewable = (Double)json_data.get("total renewable");// petroleum<a name="line.160"></a>
-<span class="sourceLineNo">161</span>            this.petroleum = (Double)json_data.get("petroleum");// biomass<a name="line.161"></a>
-<span class="sourceLineNo">162</span>            this.biomass = (Double)json_data.get("biomass");// hydroelectric<a name="line.162"></a>
-<span class="sourceLineNo">163</span>            this.hydroelectric = (Double)json_data.get("hydroelectric");// coal<a name="line.163"></a>
-<span class="sourceLineNo">164</span>            this.coal = (Double)json_data.get("coal");// geothermal<a name="line.164"></a>
-<span class="sourceLineNo">165</span>            this.geothermal = (Double)json_data.get("geothermal");// solar<a name="line.165"></a>
-<span class="sourceLineNo">166</span>            this.solar = (Double)json_data.get("solar");// total<a name="line.166"></a>
-<span class="sourceLineNo">167</span>            this.total = (Double)json_data.get("total");// wind<a name="line.167"></a>
-<span class="sourceLineNo">168</span>            this.wind = (Double)json_data.get("wind");<a name="line.168"></a>
+<span class="sourceLineNo">157</span>            this.fossilFuels = ((Number)json_data.get("fossil fuels")).doubleValue();// natural gas<a name="line.157"></a>
+<span class="sourceLineNo">158</span>            this.naturalGas = ((Number)json_data.get("natural gas")).doubleValue();// nuclear<a name="line.158"></a>
+<span class="sourceLineNo">159</span>            this.nuclear = ((Number)json_data.get("nuclear")).doubleValue();// total renewable<a name="line.159"></a>
+<span class="sourceLineNo">160</span>            this.totalRenewable = ((Number)json_data.get("total renewable")).doubleValue();// petroleum<a name="line.160"></a>
+<span class="sourceLineNo">161</span>            this.petroleum = ((Number)json_data.get("petroleum")).doubleValue();// biomass<a name="line.161"></a>
+<span class="sourceLineNo">162</span>            this.biomass = ((Number)json_data.get("biomass")).doubleValue();// hydroelectric<a name="line.162"></a>
+<span class="sourceLineNo">163</span>            this.hydroelectric = ((Number)json_data.get("hydroelectric")).doubleValue();// coal<a name="line.163"></a>
+<span class="sourceLineNo">164</span>            this.coal = ((Number)json_data.get("coal")).doubleValue();// geothermal<a name="line.164"></a>
+<span class="sourceLineNo">165</span>            this.geothermal = ((Number)json_data.get("geothermal")).doubleValue();// solar<a name="line.165"></a>
+<span class="sourceLineNo">166</span>            this.solar = ((Number)json_data.get("solar")).doubleValue();// total<a name="line.166"></a>
+<span class="sourceLineNo">167</span>            this.total = ((Number)json_data.get("total")).doubleValue();// wind<a name="line.167"></a>
+<span class="sourceLineNo">168</span>            this.wind = ((Number)json_data.get("wind")).doubleValue();<a name="line.168"></a>
 <span class="sourceLineNo">169</span>        } catch (NullPointerException e) {<a name="line.169"></a>
 <span class="sourceLineNo">170</span>                System.err.println("Could not convert the response to a Consumption; a field was missing.");<a name="line.170"></a>
 <span class="sourceLineNo">171</span>                e.printStackTrace();<a name="line.171"></a>

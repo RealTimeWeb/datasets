@@ -130,14 +130,14 @@
 <span class="sourceLineNo">122</span>         */<a name="line.122"></a>
 <span class="sourceLineNo">123</span>    public RuralDevelopment(JSONObject json_data) {<a name="line.123"></a>
 <span class="sourceLineNo">124</span>        try {// Surface Area<a name="line.124"></a>
-<span class="sourceLineNo">125</span>            this.surfaceArea = (Double)json_data.get("Surface Area");// Arable Land<a name="line.125"></a>
-<span class="sourceLineNo">126</span>            this.arableLand = (Double)json_data.get("Arable Land");// Rural Population<a name="line.126"></a>
-<span class="sourceLineNo">127</span>            this.ruralPopulation = (Double)json_data.get("Rural Population");// Agricultural Land Percent<a name="line.127"></a>
-<span class="sourceLineNo">128</span>            this.agriculturalLandPercent = (Double)json_data.get("Agricultural Land Percent");// Rural Population Growth<a name="line.128"></a>
-<span class="sourceLineNo">129</span>            this.ruralPopulationGrowth = (Double)json_data.get("Rural Population Growth");// Arable Land Percent<a name="line.129"></a>
-<span class="sourceLineNo">130</span>            this.arableLandPercent = (Double)json_data.get("Arable Land Percent");// Agricultural Land<a name="line.130"></a>
-<span class="sourceLineNo">131</span>            this.agriculturalLand = (Double)json_data.get("Agricultural Land");// Land Area<a name="line.131"></a>
-<span class="sourceLineNo">132</span>            this.landArea = (Double)json_data.get("Land Area");<a name="line.132"></a>
+<span class="sourceLineNo">125</span>            this.surfaceArea = ((Number)json_data.get("Surface Area")).doubleValue();// Arable Land<a name="line.125"></a>
+<span class="sourceLineNo">126</span>            this.arableLand = ((Number)json_data.get("Arable Land")).doubleValue();// Rural Population<a name="line.126"></a>
+<span class="sourceLineNo">127</span>            this.ruralPopulation = ((Number)json_data.get("Rural Population")).doubleValue();// Agricultural Land Percent<a name="line.127"></a>
+<span class="sourceLineNo">128</span>            this.agriculturalLandPercent = ((Number)json_data.get("Agricultural Land Percent")).doubleValue();// Rural Population Growth<a name="line.128"></a>
+<span class="sourceLineNo">129</span>            this.ruralPopulationGrowth = ((Number)json_data.get("Rural Population Growth")).doubleValue();// Arable Land Percent<a name="line.129"></a>
+<span class="sourceLineNo">130</span>            this.arableLandPercent = ((Number)json_data.get("Arable Land Percent")).doubleValue();// Agricultural Land<a name="line.130"></a>
+<span class="sourceLineNo">131</span>            this.agriculturalLand = ((Number)json_data.get("Agricultural Land")).doubleValue();// Land Area<a name="line.131"></a>
+<span class="sourceLineNo">132</span>            this.landArea = ((Number)json_data.get("Land Area")).doubleValue();<a name="line.132"></a>
 <span class="sourceLineNo">133</span>        } catch (NullPointerException e) {<a name="line.133"></a>
 <span class="sourceLineNo">134</span>                System.err.println("Could not convert the response to a RuralDevelopment; a field was missing.");<a name="line.134"></a>
 <span class="sourceLineNo">135</span>                e.printStackTrace();<a name="line.135"></a>

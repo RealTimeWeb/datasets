@@ -76,7 +76,7 @@ public class Attacker {
 	 */
     public Attacker(JSONObject json_data) {
         try {// age
-            this.age = new Integer(((Long)json_data.get("age")).intValue());// demographics
+            this.age = ((Number)json_data.get("age")).intValue();// demographics
             this.demographics = new Demographics((JSONObject)json_data.get("demographics"));// birth
             this.birth = new Birth((JSONObject)json_data.get("birth"));// name
             this.name = (String)json_data.get("name");

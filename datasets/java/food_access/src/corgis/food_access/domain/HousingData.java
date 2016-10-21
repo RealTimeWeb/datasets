@@ -77,10 +77,10 @@ public class HousingData {
 	 */
     public HousingData(JSONObject json_data) {
         try {// Total Housing Units
-            this.totalHousingUnits = new Integer(((Long)json_data.get("Total Housing Units")).intValue());// Urban Housing Percentage
-            this.urbanHousingPercentage = (Double)json_data.get("Urban Housing Percentage");// Residing in Group Quarters
-            this.residingInGroupQuarters = (Double)json_data.get("Residing in Group Quarters");// Rural Housing Percentage
-            this.ruralHousingPercentage = (Double)json_data.get("Rural Housing Percentage");
+            this.totalHousingUnits = ((Number)json_data.get("Total Housing Units")).intValue();// Urban Housing Percentage
+            this.urbanHousingPercentage = ((Number)json_data.get("Urban Housing Percentage")).doubleValue();// Residing in Group Quarters
+            this.residingInGroupQuarters = ((Number)json_data.get("Residing in Group Quarters")).doubleValue();// Rural Housing Percentage
+            this.ruralHousingPercentage = ((Number)json_data.get("Rural Housing Percentage")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a HousingData; a field was missing.");
     		e.printStackTrace();

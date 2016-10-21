@@ -86,9 +86,9 @@ public class Transaction {
     public Transaction(JSONObject json_data) {
         try {// Date
             this.date = (String)json_data.get("Date");// Number of Total Slaves Purchased
-            this.numberOfTotalSlavesPurchased = new Integer(((Long)json_data.get("Number of Total Slaves Purchased")).intValue());// Number of Adult Slaves
-            this.numberOfAdultSlaves = new Integer(((Long)json_data.get("Number of Adult Slaves")).intValue());// Number of Child Slaves
-            this.numberOfChildSlaves = new Integer(((Long)json_data.get("Number of Child Slaves")).intValue());// Sale Details
+            this.numberOfTotalSlavesPurchased = ((Number)json_data.get("Number of Total Slaves Purchased")).intValue();// Number of Adult Slaves
+            this.numberOfAdultSlaves = ((Number)json_data.get("Number of Adult Slaves")).intValue();// Number of Child Slaves
+            this.numberOfChildSlaves = ((Number)json_data.get("Number of Child Slaves")).intValue();// Sale Details
             this.saleDetails = new SaleDetails((JSONObject)json_data.get("Sale Details"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Transaction; a field was missing.");

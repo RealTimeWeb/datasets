@@ -74,9 +74,9 @@
 <span class="sourceLineNo">066</span>         */<a name="line.66"></a>
 <span class="sourceLineNo">067</span>    public Income(JSONObject json_data) {<a name="line.67"></a>
 <span class="sourceLineNo">068</span>        try {// Median Houseold Income<a name="line.68"></a>
-<span class="sourceLineNo">069</span>            this.medianHouseoldIncome = new Integer(((Long)json_data.get("Median Houseold Income")).intValue());// Per Capita Income<a name="line.69"></a>
-<span class="sourceLineNo">070</span>            this.perCapitaIncome = new Integer(((Long)json_data.get("Per Capita Income")).intValue());// Persons Below Poverty Level<a name="line.70"></a>
-<span class="sourceLineNo">071</span>            this.personsBelowPovertyLevel = (Double)json_data.get("Persons Below Poverty Level");<a name="line.71"></a>
+<span class="sourceLineNo">069</span>            this.medianHouseoldIncome = ((Number)json_data.get("Median Houseold Income")).intValue();// Per Capita Income<a name="line.69"></a>
+<span class="sourceLineNo">070</span>            this.perCapitaIncome = ((Number)json_data.get("Per Capita Income")).intValue();// Persons Below Poverty Level<a name="line.70"></a>
+<span class="sourceLineNo">071</span>            this.personsBelowPovertyLevel = ((Number)json_data.get("Persons Below Poverty Level")).doubleValue();<a name="line.71"></a>
 <span class="sourceLineNo">072</span>        } catch (NullPointerException e) {<a name="line.72"></a>
 <span class="sourceLineNo">073</span>                System.err.println("Could not convert the response to a Income; a field was missing.");<a name="line.73"></a>
 <span class="sourceLineNo">074</span>                e.printStackTrace();<a name="line.74"></a>

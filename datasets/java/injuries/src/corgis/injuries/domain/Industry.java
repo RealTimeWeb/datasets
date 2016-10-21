@@ -76,7 +76,7 @@ public class Industry {
         try {// major_group
             this.major_Group = (String)json_data.get("major_group");// division
             this.division = (String)json_data.get("division");// id
-            this.id = new Integer(((Long)json_data.get("id")).intValue());// label
+            this.id = ((Number)json_data.get("id")).intValue();// label
             this.label = (String)json_data.get("label");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Industry; a field was missing.");

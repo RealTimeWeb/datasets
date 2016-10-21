@@ -83,8 +83,8 @@
 <span class="sourceLineNo">075</span>    public HouseholdWeights(JSONObject json_data) {<a name="line.75"></a>
 <span class="sourceLineNo">076</span>        try {// 1st Household Weight Description<a name="line.76"></a>
 <span class="sourceLineNo">077</span>            this.onestHouseholdWeightDescription = (String)json_data.get("1st Household Weight Description");// 1st Household Weight<a name="line.77"></a>
-<span class="sourceLineNo">078</span>            this.onestHouseholdWeight = (Double)json_data.get("1st Household Weight");// 2nd Household Weight<a name="line.78"></a>
-<span class="sourceLineNo">079</span>            this.twondHouseholdWeight = new Integer(((Long)json_data.get("2nd Household Weight")).intValue());// 2nd Household Weight Description<a name="line.79"></a>
+<span class="sourceLineNo">078</span>            this.onestHouseholdWeight = ((Number)json_data.get("1st Household Weight")).doubleValue();// 2nd Household Weight<a name="line.78"></a>
+<span class="sourceLineNo">079</span>            this.twondHouseholdWeight = ((Number)json_data.get("2nd Household Weight")).intValue();// 2nd Household Weight Description<a name="line.79"></a>
 <span class="sourceLineNo">080</span>            this.twondHouseholdWeightDescription = (String)json_data.get("2nd Household Weight Description");<a name="line.80"></a>
 <span class="sourceLineNo">081</span>        } catch (NullPointerException e) {<a name="line.81"></a>
 <span class="sourceLineNo">082</span>                System.err.println("Could not convert the response to a HouseholdWeights; a field was missing.");<a name="line.82"></a>

@@ -99,12 +99,12 @@ public class AidsRelatedDeaths {
 	 */
     public AidsRelatedDeaths(JSONObject json_data) {
         try {// Male Adults
-            this.maleAdults = new Integer(((Long)json_data.get("Male Adults")).intValue());// All Ages
-            this.allAges = new Integer(((Long)json_data.get("All Ages")).intValue());// AIDS Orphans
-            this.aidsOrphans = new Integer(((Long)json_data.get("AIDS Orphans")).intValue());// Children
-            this.children = new Integer(((Long)json_data.get("Children")).intValue());// Female Adults
-            this.femaleAdults = new Integer(((Long)json_data.get("Female Adults")).intValue());// Adults
-            this.adults = new Integer(((Long)json_data.get("Adults")).intValue());
+            this.maleAdults = ((Number)json_data.get("Male Adults")).intValue();// All Ages
+            this.allAges = ((Number)json_data.get("All Ages")).intValue();// AIDS Orphans
+            this.aidsOrphans = ((Number)json_data.get("AIDS Orphans")).intValue();// Children
+            this.children = ((Number)json_data.get("Children")).intValue();// Female Adults
+            this.femaleAdults = ((Number)json_data.get("Female Adults")).intValue();// Adults
+            this.adults = ((Number)json_data.get("Adults")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Aids-RelatedDeaths; a field was missing.");
     		e.printStackTrace();

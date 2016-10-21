@@ -76,10 +76,10 @@ public class Population {
 	 */
     public Population(JSONObject json_data) {
         try {// 2014 Population
-            this.twozeroonefourPopulation = new Integer(((Long)json_data.get("2014 Population")).intValue());// 2010 Population
-            this.twozeroonezeroPopulation = new Integer(((Long)json_data.get("2010 Population")).intValue());// Population per Square Mile
-            this.populationPerSquareMile = (Double)json_data.get("Population per Square Mile");// Population Percent Change
-            this.populationPercentChange = (Double)json_data.get("Population Percent Change");
+            this.twozeroonefourPopulation = ((Number)json_data.get("2014 Population")).intValue();// 2010 Population
+            this.twozeroonezeroPopulation = ((Number)json_data.get("2010 Population")).intValue();// Population per Square Mile
+            this.populationPerSquareMile = ((Number)json_data.get("Population per Square Mile")).doubleValue();// Population Percent Change
+            this.populationPercentChange = ((Number)json_data.get("Population Percent Change")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Population; a field was missing.");
     		e.printStackTrace();

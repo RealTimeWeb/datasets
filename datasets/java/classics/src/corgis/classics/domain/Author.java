@@ -66,9 +66,9 @@ public class Author {
 	 */
     public Author(JSONObject json_data) {
         try {// death
-            this.death = new Integer(((Long)json_data.get("death")).intValue());// name
+            this.death = ((Number)json_data.get("death")).intValue();// name
             this.name = (String)json_data.get("name");// birth
-            this.birth = new Integer(((Long)json_data.get("birth")).intValue());
+            this.birth = ((Number)json_data.get("birth")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Author; a field was missing.");
     		e.printStackTrace();

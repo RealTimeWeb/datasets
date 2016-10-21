@@ -85,11 +85,11 @@ public class Effectiveness {
 	 */
     public Effectiveness(JSONObject json_data) {
         try {// Security Effectiveness
-            this.securityEffectiveness = new Integer(((Long)json_data.get("Security Effectiveness")).intValue());// Social Effectiveness
-            this.socialEffectiveness = new Integer(((Long)json_data.get("Social Effectiveness")).intValue());// Political Effectiveness
-            this.politicalEffectiveness = new Integer(((Long)json_data.get("Political Effectiveness")).intValue());// Economic Effectiveness
-            this.economicEffectiveness = new Integer(((Long)json_data.get("Economic Effectiveness")).intValue());// Effectiveness Score
-            this.effectivenessScore = new Integer(((Long)json_data.get("Effectiveness Score")).intValue());
+            this.securityEffectiveness = ((Number)json_data.get("Security Effectiveness")).intValue();// Social Effectiveness
+            this.socialEffectiveness = ((Number)json_data.get("Social Effectiveness")).intValue();// Political Effectiveness
+            this.politicalEffectiveness = ((Number)json_data.get("Political Effectiveness")).intValue();// Economic Effectiveness
+            this.economicEffectiveness = ((Number)json_data.get("Economic Effectiveness")).intValue();// Effectiveness Score
+            this.effectivenessScore = ((Number)json_data.get("Effectiveness Score")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Effectiveness; a field was missing.");
     		e.printStackTrace();

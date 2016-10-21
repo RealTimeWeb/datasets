@@ -64,9 +64,9 @@ public class Age {
 	 */
     public Age(JSONObject json_data) {
         try {// Percent Under 18 Years
-            this.percentUnderOneeightYears = (Double)json_data.get("Percent Under 18 Years");// Percent 65 and Older
-            this.percentSixfiveAndOlder = (Double)json_data.get("Percent 65 and Older");// Percent Under 5 Years
-            this.percentUnderFiveYears = (Double)json_data.get("Percent Under 5 Years");
+            this.percentUnderOneeightYears = ((Number)json_data.get("Percent Under 18 Years")).doubleValue();// Percent 65 and Older
+            this.percentSixfiveAndOlder = ((Number)json_data.get("Percent 65 and Older")).doubleValue();// Percent Under 5 Years
+            this.percentUnderFiveYears = ((Number)json_data.get("Percent Under 5 Years")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Age; a field was missing.");
     		e.printStackTrace();

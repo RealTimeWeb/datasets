@@ -85,11 +85,11 @@ public class Legitimacy {
 	 */
     public Legitimacy(JSONObject json_data) {
         try {// Legitimacy Score
-            this.legitimacyScore = new Integer(((Long)json_data.get("Legitimacy Score")).intValue());// Political Legitimacy
-            this.politicalLegitimacy = new Integer(((Long)json_data.get("Political Legitimacy")).intValue());// Security Legitimacy
-            this.securityLegitimacy = new Integer(((Long)json_data.get("Security Legitimacy")).intValue());// Economic Legitimacy
-            this.economicLegitimacy = new Integer(((Long)json_data.get("Economic Legitimacy")).intValue());// Social Legitimacy
-            this.socialLegitimacy = new Integer(((Long)json_data.get("Social Legitimacy")).intValue());
+            this.legitimacyScore = ((Number)json_data.get("Legitimacy Score")).intValue();// Political Legitimacy
+            this.politicalLegitimacy = ((Number)json_data.get("Political Legitimacy")).intValue();// Security Legitimacy
+            this.securityLegitimacy = ((Number)json_data.get("Security Legitimacy")).intValue();// Economic Legitimacy
+            this.economicLegitimacy = ((Number)json_data.get("Economic Legitimacy")).intValue();// Social Legitimacy
+            this.socialLegitimacy = ((Number)json_data.get("Social Legitimacy")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Legitimacy; a field was missing.");
     		e.printStackTrace();

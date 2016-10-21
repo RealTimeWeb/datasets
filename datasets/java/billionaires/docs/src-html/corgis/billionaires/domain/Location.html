@@ -82,7 +82,7 @@
 <span class="sourceLineNo">074</span>         */<a name="line.74"></a>
 <span class="sourceLineNo">075</span>    public Location(JSONObject json_data) {<a name="line.75"></a>
 <span class="sourceLineNo">076</span>        try {// gdp<a name="line.76"></a>
-<span class="sourceLineNo">077</span>            this.gdp = (Double)json_data.get("gdp");// region<a name="line.77"></a>
+<span class="sourceLineNo">077</span>            this.gdp = ((Number)json_data.get("gdp")).doubleValue();// region<a name="line.77"></a>
 <span class="sourceLineNo">078</span>            this.region = (String)json_data.get("region");// citizenship<a name="line.78"></a>
 <span class="sourceLineNo">079</span>            this.citizenship = (String)json_data.get("citizenship");// country code<a name="line.79"></a>
 <span class="sourceLineNo">080</span>            this.countryCode = (String)json_data.get("country code");<a name="line.80"></a>

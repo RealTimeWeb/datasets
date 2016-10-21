@@ -133,15 +133,15 @@ public class Difficulty {
 	 */
     public Difficulty(JSONObject json_data) {
         try {// flesch reading ease
-            this.fleschReadingEase = (Double)json_data.get("flesch reading ease");// automated readability index
-            this.automatedReadabilityIndex = (Double)json_data.get("automated readability index");// coleman liau index
-            this.colemanLiauIndex = (Double)json_data.get("coleman liau index");// gunning fog
-            this.gunningFog = (Double)json_data.get("gunning fog");// linsear write formula
-            this.linsearWriteFormula = (Double)json_data.get("linsear write formula");// dale chall readability score
-            this.daleChallReadabilityScore = (Double)json_data.get("dale chall readability score");// flesch kincaid grade
-            this.fleschKincaidGrade = (Double)json_data.get("flesch kincaid grade");// smog index
-            this.smogIndex = (Double)json_data.get("smog index");// difficult words
-            this.difficultWords = new Integer(((Long)json_data.get("difficult words")).intValue());
+            this.fleschReadingEase = ((Number)json_data.get("flesch reading ease")).doubleValue();// automated readability index
+            this.automatedReadabilityIndex = ((Number)json_data.get("automated readability index")).doubleValue();// coleman liau index
+            this.colemanLiauIndex = ((Number)json_data.get("coleman liau index")).doubleValue();// gunning fog
+            this.gunningFog = ((Number)json_data.get("gunning fog")).doubleValue();// linsear write formula
+            this.linsearWriteFormula = ((Number)json_data.get("linsear write formula")).doubleValue();// dale chall readability score
+            this.daleChallReadabilityScore = ((Number)json_data.get("dale chall readability score")).doubleValue();// flesch kincaid grade
+            this.fleschKincaidGrade = ((Number)json_data.get("flesch kincaid grade")).doubleValue();// smog index
+            this.smogIndex = ((Number)json_data.get("smog index")).doubleValue();// difficult words
+            this.difficultWords = ((Number)json_data.get("difficult words")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Difficulty; a field was missing.");
     		e.printStackTrace();

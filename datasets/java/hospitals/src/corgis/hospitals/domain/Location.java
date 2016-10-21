@@ -106,11 +106,11 @@ public class Location {
         try {// City
             this.city = (String)json_data.get("City");// ZIP Code
             this.zipCode = (String)json_data.get("ZIP Code");// Longitude
-            this.longitude = (Double)json_data.get("Longitude");// County
+            this.longitude = ((Number)json_data.get("Longitude")).doubleValue();// County
             this.county = (String)json_data.get("County");// State
             this.state = (String)json_data.get("State");// Address
             this.address = (String)json_data.get("Address");// Latitude
-            this.latitude = (Double)json_data.get("Latitude");
+            this.latitude = ((Number)json_data.get("Latitude")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Location; a field was missing.");
     		e.printStackTrace();

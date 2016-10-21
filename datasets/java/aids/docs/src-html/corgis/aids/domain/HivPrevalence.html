@@ -75,9 +75,9 @@
 <span class="sourceLineNo">067</span>         */<a name="line.67"></a>
 <span class="sourceLineNo">068</span>    public HivPrevalence(JSONObject json_data) {<a name="line.68"></a>
 <span class="sourceLineNo">069</span>        try {// Young Men<a name="line.69"></a>
-<span class="sourceLineNo">070</span>            this.youngMen = (Double)json_data.get("Young Men");// Adults<a name="line.70"></a>
-<span class="sourceLineNo">071</span>            this.adults = (Double)json_data.get("Adults");// Young Women<a name="line.71"></a>
-<span class="sourceLineNo">072</span>            this.youngWomen = (Double)json_data.get("Young Women");<a name="line.72"></a>
+<span class="sourceLineNo">070</span>            this.youngMen = ((Number)json_data.get("Young Men")).doubleValue();// Adults<a name="line.70"></a>
+<span class="sourceLineNo">071</span>            this.adults = ((Number)json_data.get("Adults")).doubleValue();// Young Women<a name="line.71"></a>
+<span class="sourceLineNo">072</span>            this.youngWomen = ((Number)json_data.get("Young Women")).doubleValue();<a name="line.72"></a>
 <span class="sourceLineNo">073</span>        } catch (NullPointerException e) {<a name="line.73"></a>
 <span class="sourceLineNo">074</span>                System.err.println("Could not convert the response to a HivPrevalence; a field was missing.");<a name="line.74"></a>
 <span class="sourceLineNo">075</span>                e.printStackTrace();<a name="line.75"></a>
