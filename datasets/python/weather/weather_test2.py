@@ -16,7 +16,8 @@ weather_reports = weather.get_weather(test=False)
 
 precips = []
 for report in weather_reports:
-    precips.append(report['Data']['Temperature']['Min Temp'])
+    if report['Data']['Precipitation'] < 5:
+        precips.append(report['Data']['Precipitation'])
 
 plt.hist(precips)
 plt.show()
