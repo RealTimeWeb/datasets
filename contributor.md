@@ -22,10 +22,18 @@ We generally discourage lists below the main list. Although nested lists can be 
 
 We demand that every instance in the main list is of the exact same type. This should be treated recursively for all structures within. That is, if the first element has a key named "Address" that is an integer, all subsequent elements must have a key named "Address" that is a String. Common mistakes are to use Null instead of 0, or to have numeric values inconsistently encoded as strings.
 
+A suitable icon should be found to represent the dataset. This icon should be appropriately licensed and sourced in the Spec file.
+
 .corgis Spec File
 -----------------
 
-In addition to preparing a dataset file, 
+In addition to preparing a dataset file, you must also prepare a Spec file. These have the extension of ".corgis" but are really simple YAML files. They have the following sections and fields.
+
+Metadata
+********
+
+* name: The name of the Spec file. Use spaces between words (e.g,. "Horse Racing").
+* author: A string or list of HTML strings representing the authors.
 
 The major 
 
