@@ -1,0 +1,2541 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+School Scores Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    
+    
+<style>
+pre .hll { background-color: #ffffcc }
+pre  { background: #f0f0f0; }
+pre .c { color: #60a0b0; font-style: italic } /* Comment */
+pre .err { border: 1px solid #FF0000 } /* Error */
+pre .k { color: #007020; font-weight: bold } /* Keyword */
+pre .o { color: #666666 } /* Operator */
+pre .ch { color: #60a0b0; font-style: italic } /* Comment.Hashbang */
+pre .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+pre .cp { color: #007020 } /* Comment.Preproc */
+pre .cpf { color: #60a0b0; font-style: italic } /* Comment.PreprocFile */
+pre .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+pre .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+pre .gd { color: #A00000 } /* Generic.Deleted */
+pre .ge { font-style: italic } /* Generic.Emph */
+pre .gr { color: #FF0000 } /* Generic.Error */
+pre .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre .gi { color: #00A000 } /* Generic.Inserted */
+pre .go { color: #888888 } /* Generic.Output */
+pre .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+pre .gs { font-weight: bold } /* Generic.Strong */
+pre .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre .gt { color: #0044DD } /* Generic.Traceback */
+pre .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+pre .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+pre .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+pre .kp { color: #007020 } /* Keyword.Pseudo */
+pre .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+pre .kt { color: #902000 } /* Keyword.Type */
+pre .m { color: #40a070 } /* Literal.Number */
+pre .s { color: #4070a0 } /* Literal.String */
+pre .na { color: #4070a0 } /* Name.Attribute */
+pre .nb { color: #007020 } /* Name.Builtin */
+pre .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+pre .no { color: #60add5 } /* Name.Constant */
+pre .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+pre .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+pre .ne { color: #007020 } /* Name.Exception */
+pre .nf { color: #06287e } /* Name.Function */
+pre .nl { color: #002070; font-weight: bold } /* Name.Label */
+pre .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+pre .nt { color: #062873; font-weight: bold } /* Name.Tag */
+pre .nv { color: #bb60d5 } /* Name.Variable */
+pre .ow { color: #007020; font-weight: bold } /* Operator.Word */
+pre .w { color: #bbbbbb } /* Text.Whitespace */
+pre .mb { color: #40a070 } /* Literal.Number.Bin */
+pre .mf { color: #40a070 } /* Literal.Number.Float */
+pre .mh { color: #40a070 } /* Literal.Number.Hex */
+pre .mi { color: #40a070 } /* Literal.Number.Integer */
+pre .mo { color: #40a070 } /* Literal.Number.Oct */
+pre .sb { color: #4070a0 } /* Literal.String.Backtick */
+pre .sc { color: #4070a0 } /* Literal.String.Char */
+pre .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+pre .s2 { color: #4070a0 } /* Literal.String.Double */
+pre .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+pre .sh { color: #4070a0 } /* Literal.String.Heredoc */
+pre .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+pre .sx { color: #c65d09 } /* Literal.String.Other */
+pre .sr { color: #235388 } /* Literal.String.Regex */
+pre .s1 { color: #4070a0 } /* Literal.String.Single */
+pre .ss { color: #517918 } /* Literal.String.Symbol */
+pre .bp { color: #007020 } /* Name.Builtin.Pseudo */
+pre .vc { color: #bb60d5 } /* Name.Variable.Class */
+pre .vg { color: #bb60d5 } /* Name.Variable.Global */
+pre .vi { color: #bb60d5 } /* Name.Variable.Instance */
+pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { background-color: #ffffcc }
+.syntax pre  { background: #f0f0f0; }
+.syntax pre .c { color: #60a0b0; font-style: italic } /* Comment */
+.syntax pre .err { border: 1px solid #FF0000 } /* Error */
+.syntax pre .k { color: #007020; font-weight: bold } /* Keyword */
+.syntax pre .o { color: #666666 } /* Operator */
+.syntax pre .ch { color: #60a0b0; font-style: italic } /* Comment.Hashbang */
+.syntax pre .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.syntax pre .cp { color: #007020 } /* Comment.Preproc */
+.syntax pre .cpf { color: #60a0b0; font-style: italic } /* Comment.PreprocFile */
+.syntax pre .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.syntax pre .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.syntax pre .gd { color: #A00000 } /* Generic.Deleted */
+.syntax pre .ge { font-style: italic } /* Generic.Emph */
+.syntax pre .gr { color: #FF0000 } /* Generic.Error */
+.syntax pre .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.syntax pre .gi { color: #00A000 } /* Generic.Inserted */
+.syntax pre .go { color: #888888 } /* Generic.Output */
+.syntax pre .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.syntax pre .gs { font-weight: bold } /* Generic.Strong */
+.syntax pre .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.syntax pre .gt { color: #0044DD } /* Generic.Traceback */
+.syntax pre .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.syntax pre .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.syntax pre .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.syntax pre .kp { color: #007020 } /* Keyword.Pseudo */
+.syntax pre .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.syntax pre .kt { color: #902000 } /* Keyword.Type */
+.syntax pre .m { color: #40a070 } /* Literal.Number */
+.syntax pre .s { color: #4070a0 } /* Literal.String */
+.syntax pre .na { color: #4070a0 } /* Name.Attribute */
+.syntax pre .nb { color: #007020 } /* Name.Builtin */
+.syntax pre .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.syntax pre .no { color: #60add5 } /* Name.Constant */
+.syntax pre .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.syntax pre .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.syntax pre .ne { color: #007020 } /* Name.Exception */
+.syntax pre .nf { color: #06287e } /* Name.Function */
+.syntax pre .nl { color: #002070; font-weight: bold } /* Name.Label */
+.syntax pre .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.syntax pre .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.syntax pre .nv { color: #bb60d5 } /* Name.Variable */
+.syntax pre .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.syntax pre .w { color: #bbbbbb } /* Text.Whitespace */
+.syntax pre .mb { color: #40a070 } /* Literal.Number.Bin */
+.syntax pre .mf { color: #40a070 } /* Literal.Number.Float */
+.syntax pre .mh { color: #40a070 } /* Literal.Number.Hex */
+.syntax pre .mi { color: #40a070 } /* Literal.Number.Integer */
+.syntax pre .mo { color: #40a070 } /* Literal.Number.Oct */
+.syntax pre .sb { color: #4070a0 } /* Literal.String.Backtick */
+.syntax pre .sc { color: #4070a0 } /* Literal.String.Char */
+.syntax pre .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.syntax pre .s2 { color: #4070a0 } /* Literal.String.Double */
+.syntax pre .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.syntax pre .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.syntax pre .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.syntax pre .sx { color: #c65d09 } /* Literal.String.Other */
+.syntax pre .sr { color: #235388 } /* Literal.String.Regex */
+.syntax pre .s1 { color: #4070a0 } /* Literal.String.Single */
+.syntax pre .ss { color: #517918 } /* Literal.String.Symbol */
+.syntax pre .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.syntax pre .vc { color: #bb60d5 } /* Name.Variable.Class */
+.syntax pre .vg { color: #bb60d5 } /* Name.Variable.Global */
+.syntax pre .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.syntax pre .il { color: #40a070 } /* Literal.Number.Integer.Long */
+</style>
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="school_scores.png" alt="School Scores" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>School Scores Python Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 10/24/2016</span><br>
+    <span class="text-muted">Tags: school, education, K-12, kindergarten, learning, teaching, sat</span><br>
+</div>
+    
+    <!--
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_all'>get_all</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    -->
+    
+    <h3 id="overview">Overview</h3>
+<p>
+SAT Scores from across the country
+
+</p>
+
+<p>
+<i><a href='https://nces.ed.gov/ccd/aboutCCD.asp'>https://nces.ed.gov/ccd/aboutCCD.asp</a></i>
+</p>
+
+    
+    
+<h3 id="structure">Explore Structure</h3>
+
+
+<div class='row'>
+    <div class='col-md-2'>
+        <button class='btn btn-default' id='btn-explore-school_scores'>Explore school_scores data</button>
+    </div>
+    
+    <br><br><br>
+</div>
+
+<script>
+$(document).ready(function() {
+    $("#btn-explore-school_scores").click(function() {
+        $( "#explore-school_scores" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        $('.ui-dialog :button').blur();
+    });
+});
+</script>
+
+
+    <div id='explore-school_scores' title='List'>
+        
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
+            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
+            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        $("#btn-explore-school_scores-__0__").click(function() {
+            $( "#explore-school_scores-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+            $('.ui-dialog :button').blur();
+        });
+    });
+    </script>
+
+
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-500-to-600' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Verbal'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Math'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-500-to-600" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Math").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Verbal' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Males"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>613</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Females"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>596</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1209</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Verbal" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Verbal-Males").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Verbal-Males" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Verbal-Females").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Verbal-Females" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Verbal-Total").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Verbal-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-GPA-A' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1032</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>608</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>600</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-GPA-A" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-A-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-GPA-A-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-A-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-GPA-A-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-A-Math").click(function() {
+            $( "#explore-school_scores-__0__-GPA-A-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-GPA-A-minus' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>724</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>575</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>569</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-GPA-A-minus" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-A-minus-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-GPA-A-minus-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-A-minus-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-GPA-A-minus-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-A-minus-Math").click(function() {
+            $( "#explore-school_scores-__0__-GPA-A-minus-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Math' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Males"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>93</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Females"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>173</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>266</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Math" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Math-Males").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Math-Males" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Math-Females").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Math-Females" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Math-Total").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Math-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-300-to-400' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Verbal'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Math'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-300-to-400" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Math").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Family-Income-Between-40-60k' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>442</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>539</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>551</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Family-Income-Between-40-60k" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-40-60k-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-40-60k-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-40-60k-Math").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-40-60k-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-40-60k-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-40-60k-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-GPA-D-or-lower' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-GPA-D-or-lower" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-D-or-lower-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-GPA-D-or-lower-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-D-or-lower-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-GPA-D-or-lower-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-D-or-lower-Math").click(function() {
+            $( "#explore-school_scores-__0__-GPA-D-or-lower-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-200-to-300' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Verbal'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Math'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-200-to-300" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Math").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Gender-Female' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>561</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>538</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2072</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Gender-Female" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Gender-Female-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Gender-Female-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Gender-Female-Math").click(function() {
+            $( "#explore-school_scores-__0__-Gender-Female-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Gender-Female-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-Gender-Female-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-GPA-A-plus' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>563</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>623</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>622</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-GPA-A-plus" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-A-plus-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-GPA-A-plus-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-A-plus-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-GPA-A-plus-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-A-plus-Math").click(function() {
+            $( "#explore-school_scores-__0__-GPA-A-plus-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Gender-Male' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>574</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>582</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1913</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Gender-Male" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Gender-Male-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Gender-Male-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Gender-Male-Math").click(function() {
+            $( "#explore-school_scores-__0__-Gender-Male-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Gender-Male-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-Gender-Male-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Verbal' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Males"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>84</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Females"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>123</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>207</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Verbal" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Verbal-Males").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Verbal-Males" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Verbal-Females").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Verbal-Females" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Verbal-Total").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-300-to-400-Verbal-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Family-Income-Less-than-20k' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>175</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>462</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>474</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Family-Income-Less-than-20k" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Less-than-20k-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Less-than-20k-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Less-than-20k-Math").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Less-than-20k-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Less-than-20k-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Less-than-20k-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-600-to-700' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Verbal'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Math'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-600-to-700" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Math").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Math' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Males"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>292</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Females"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>156</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>448</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Math" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Math-Males").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Math-Males" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Math-Females").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Math-Females" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Math-Total").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Math-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-GPA-No-response' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>225</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-GPA-No-response" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-No-response-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-GPA-No-response-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-No-response-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-GPA-No-response-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-No-response-Math").click(function() {
+            $( "#explore-school_scores-__0__-GPA-No-response-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-State' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Code"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"AL"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Alabama"</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-State" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-State-Code").click(function() {
+            $( "#explore-school_scores-__0__-State-Code" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-State-Name").click(function() {
+            $( "#explore-school_scores-__0__-State-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Academic-Subjects-English' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Average GPA"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.53</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Average Years"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.9</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Academic-Subjects-English" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-English-Average-GPA").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-English-Average-GPA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-English-Average-Years").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-English-Average-Years" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Academic-Subjects-Arts_Music' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Average GPA"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.92</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Average Years"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>2.2</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Academic-Subjects-Arts_Music" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Arts_Music-Average-GPA").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Arts_Music-Average-GPA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Arts_Music-Average-Years").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Arts_Music-Average-Years" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-GPA' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"A"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-GPA-A'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"C"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-GPA-C'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"B"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-GPA-B'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"No response"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-GPA-No-response'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"D or lower"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-GPA-D-or-lower'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"A plus"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-GPA-A-plus'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"A minus"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-GPA-A-minus'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-GPA" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-A").click(function() {
+            $( "#explore-school_scores-__0__-GPA-A" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-C").click(function() {
+            $( "#explore-school_scores-__0__-GPA-C" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-B").click(function() {
+            $( "#explore-school_scores-__0__-GPA-B" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-No-response").click(function() {
+            $( "#explore-school_scores-__0__-GPA-No-response" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-D-or-lower").click(function() {
+            $( "#explore-school_scores-__0__-GPA-D-or-lower" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-A-plus").click(function() {
+            $( "#explore-school_scores-__0__-GPA-A-plus" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-A-minus").click(function() {
+            $( "#explore-school_scores-__0__-GPA-A-minus" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Family-Income' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Less than 20k"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Family-Income-Less-than-20k'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"More than 100k"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Family-Income-More-than-100k'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Between 40-60k"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Family-Income-Between-40-60k'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Between 60-80k"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Family-Income-Between-60-80k'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Between 20-40k"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Family-Income-Between-20-40k'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Between 80-100k"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Family-Income-Between-80-100k'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Family-Income" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Less-than-20k").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Less-than-20k" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-More-than-100k").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-More-than-100k" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-40-60k").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-40-60k" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-60-80k").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-60-80k" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-20-40k").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-20-40k" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-80-100k").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-80-100k" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-400-to-500' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Verbal'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Math'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-400-to-500" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Math").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__' title='Dictionary (8 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Gender"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Gender'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"2005"</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"GPA"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-GPA'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Score Ranges"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"State"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-State'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Academic Subjects"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Academic-Subjects'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Total'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Family Income"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Family-Income'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Gender").click(function() {
+            $( "#explore-school_scores-__0__-Gender" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Year").click(function() {
+            $( "#explore-school_scores-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA").click(function() {
+            $( "#explore-school_scores-__0__-GPA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-State").click(function() {
+            $( "#explore-school_scores-__0__-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Total").click(function() {
+            $( "#explore-school_scores-__0__-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Verbal' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Males"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>17</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Females"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>14</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>31</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Verbal" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Verbal-Males").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Verbal-Males" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Verbal-Females").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Verbal-Females" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Verbal-Total").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Verbal-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Academic-Subjects' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Foreign Languages"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Academic-Subjects-Foreign-Languages'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Arts/Music"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Academic-Subjects-Arts_Music'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Mathematics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Academic-Subjects-Mathematics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Social Sciences/History"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Academic-Subjects-Social-Sciences_History'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"English"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Academic-Subjects-English'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Natural Sciences"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Academic-Subjects-Natural-Sciences'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Academic-Subjects" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Foreign-Languages").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Foreign-Languages" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Arts_Music").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Arts_Music" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Mathematics").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Mathematics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Social-Sciences_History").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Social-Sciences_History" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-English").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-English" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Natural-Sciences").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Natural-Sciences" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Verbal' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Males"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>250</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Females"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>219</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>469</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Verbal" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Verbal-Males").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Verbal-Males" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Verbal-Females").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Verbal-Females" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Verbal-Total").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Verbal-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Verbal' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Males"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>332</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Females"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>430</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>762</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Verbal" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Verbal-Males").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Verbal-Males" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Verbal-Females").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Verbal-Females" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Verbal-Total").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Verbal-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Family-Income-Between-60-80k' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>473</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>550</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>564</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Family-Income-Between-60-80k" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-60-80k-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-60-80k-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-60-80k-Math").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-60-80k-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-60-80k-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-60-80k-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Verbal' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Males"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>617</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Females"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>690</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1307</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Verbal" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Verbal-Males").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Verbal-Males" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Verbal-Females").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Verbal-Females" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Verbal-Total").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Verbal-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Academic-Subjects-Foreign-Languages' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Average GPA"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.54</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Average Years"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>2.6</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Academic-Subjects-Foreign-Languages" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Foreign-Languages-Average-GPA").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Foreign-Languages-Average-GPA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Foreign-Languages-Average-Years").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Foreign-Languages-Average-Years" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-GPA-C' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>188</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>451</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>436</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-GPA-C" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-C-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-GPA-C-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-C-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-GPA-C-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-C-Math").click(function() {
+            $( "#explore-school_scores-__0__-GPA-C-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-GPA-B' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1253</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>525</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>514</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-GPA-B" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-B-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-GPA-B-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-B-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-GPA-B-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-GPA-B-Math").click(function() {
+            $( "#explore-school_scores-__0__-GPA-B-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Math' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Males"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>611</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Females"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>485</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1096</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Math" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Math-Males").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Math-Males" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Math-Females").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Math-Females" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Math-Total").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-600-to-700-Math-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Gender' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Male"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Gender-Male'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Female"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Gender-Female'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Gender" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Gender-Male").click(function() {
+            $( "#explore-school_scores-__0__-Gender-Male" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Gender-Female").click(function() {
+            $( "#explore-school_scores-__0__-Gender-Female" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Academic-Subjects-Social-Sciences_History' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Average GPA"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.59</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Average Years"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.9</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Academic-Subjects-Social-Sciences_History" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Social-Sciences_History-Average-GPA").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Social-Sciences_History-Average-GPA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Social-Sciences_History-Average-Years").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Social-Sciences_History-Average-Years" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Academic-Subjects-Mathematics' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Average GPA"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.41</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Average Years"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.0</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Academic-Subjects-Mathematics" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Mathematics-Average-GPA").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Mathematics-Average-GPA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Mathematics-Average-Years").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Mathematics-Average-Years" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Math' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Males"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>293</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Females"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>514</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>807</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Math" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Math-Males").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Math-Males" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Math-Females").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Math-Females" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Math-Total").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-400-to-500-Math-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Family-Income-More-than-100k' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>980</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>590</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>588</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Family-Income-More-than-100k" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-More-than-100k-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-More-than-100k-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-More-than-100k-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-More-than-100k-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-More-than-100k-Math").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-More-than-100k-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Total' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>567</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>559</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3985</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Total" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Total-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Total-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Total-Math").click(function() {
+            $( "#explore-school_scores-__0__-Total-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Total-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-Total-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Family-Income-Between-80-100k' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>475</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>577</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>566</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Family-Income-Between-80-100k" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-80-100k-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-80-100k-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-80-100k-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-80-100k-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-80-100k-Math").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-80-100k-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Between 400 to 500"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-400-to-500'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Between 200 to 300"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-200-to-300'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Between 700 to 800"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-700-to-800'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Between 600 to 700"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-600-to-700'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Between 500 to 600"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-500-to-600'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Between 300 to 400"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-300-to-400'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-400-to-500").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-400-to-500" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-200-to-300").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-200-to-300" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-700-to-800").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-700-to-800" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-600-to-700").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-600-to-700" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-500-to-600").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-500-to-600" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-300-to-400").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-300-to-400" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Math' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Males"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>10</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Females"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>22</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>32</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Math" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Math-Males").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Math-Males" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Math-Females").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Math-Females" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Math-Total").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-200-to-300-Math-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-700-to-800' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Verbal'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Math'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-700-to-800" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Math").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-700-to-800-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Math' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Males"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>614</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Females"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>722</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Total"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1336</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Math" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Math-Males").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Math-Males" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Math-Females").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Math-Females" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Math-Total").click(function() {
+            $( "#explore-school_scores-__0__-Score-Ranges-Between-500-to-600-Math-Total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Family-Income-Between-20-40k' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Test-takers"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>324</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Math"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>513</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Verbal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>527</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Family-Income-Between-20-40k" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-20-40k-Test-takers").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-20-40k-Test-takers" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-20-40k-Math").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-20-40k-Math" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Family-Income-Between-20-40k-Verbal").click(function() {
+            $( "#explore-school_scores-__0__-Family-Income-Between-20-40k-Verbal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-school_scores-__0__-Academic-Subjects-Natural-Sciences' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Average GPA"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.52</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Average Years"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.9</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-school_scores-__0__-Academic-Subjects-Natural-Sciences" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Natural-Sciences-Average-GPA").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Natural-Sciences-Average-GPA" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-school_scores-__0__-Academic-Subjects-Natural-Sciences-Average-Years").click(function() {
+            $( "#explore-school_scores-__0__-Academic-Subjects-Natural-Sciences-Average-Years" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="school_scores.py?forcedownload=1" download="school_scores.py" target="_blank">
+        <strong>school_scores.py</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+    
+    <li><a href="school_scores.db?forcedownload=1" download="school_scores.db" target="_blank">
+        <strong>school_scores.db</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 1 function you can use.
+    
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">school_scores</span>
+<span class="n">list_of_record</span> <span class="o">=</span> <span class="n">school_scores</span><span class="o">.</span><span class="n">get_all</span><span class="p">()</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_all' style='font-family:monospace'    >&nbsp;school_scores.get_all()</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns all of the data for every state into a list.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+</ul>
+
+</div>
+
+
+
+    
+
+
+</div>
