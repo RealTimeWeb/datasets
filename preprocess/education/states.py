@@ -57,3 +57,4 @@ state_map = {
         'wv': 'west virginia',
         'wy': 'wyoming'
 }
+reverse_map = {v: k for k,v in state_map.items()}

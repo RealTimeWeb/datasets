@@ -13,6 +13,7 @@ The motivation behind a custom validator (as opposed to Rx or Voluptuous) is tha
 
 import os
 import json
+from pprint import pprint
 
 from json_walker import JsonWalker
 
@@ -321,6 +322,26 @@ class Compiler(object):
     def walk_structures(self, spec):
         return dict(self.walk_dict("structures", "structures", spec, self.walk_structure))
     
+    def walk_comment(self, data, path=''):
+        if isinstance(data, dict):
+            for key, value in data.items():
+                for result in self.walk_comment(value, path+'.'+key):
+                    yield result
+        elif isinstance(data, list):
+            first = data[0]
+            for result in self.walk_comment(self, first, path+'.[0]'):
+                yield result
+        elif isinstance(data, (int, float, str)):
+            yield path, data
+        else:
+            self.type_error("comments."+path, str, type(data))
+        
+    def walk_comments(self, spec, start):
+        comments = spec["comments"]
+        # To support multiple locals, need to change this
+        start = start+'.[0]'
+        return {path: comment for path, comment in self.walk_comment(comments, start)}
+    
     def walk_interface_arg(self, name, data, in_location):
         location = "{}.{}".format(in_location, name)
         argument = Argument()
@@ -417,7 +438,10 @@ class Compiler(object):
         
         # Locals
         self.package.locals = self.walk_locals(spec)
-        self.package.structures_comments = self.walk_structures(spec)
+        if "comments" in spec:
+            self.package.structures_comments = self.walk_comments(spec, self.package.locals[0].name)
+        else:
+            self.package.structures_comments = self.walk_structures(spec)
         self.package.structures = {}
         leaves = set()
         for local in self.package.locals:

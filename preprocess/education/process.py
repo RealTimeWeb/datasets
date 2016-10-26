@@ -6,6 +6,8 @@ import sys
 from pprint import pprint
 from tqdm import tqdm
 from collections import Counter
+from states import reverse_map
+from corrected import corrected
 
 def parse_int(val):
     try:
@@ -85,6 +87,48 @@ def parse_academics(line):
         'Average GPA': line[5] if len(line) > 5 else 0
     }
     
+def parse_range(line):
+    line = clean_data(line)
+    return {
+        'Verbal': {
+            'Males': line[0] if len(line) > 0 else 0,
+            'Females': line[1] if len(line) > 1 else 0,
+            'Total': line[2] if len(line) > 2 else 0
+        },
+        'Math': {
+            'Males': line[6] if len(line) > 6 else 0,
+            'Females': line[7] if len(line) > 7 else 0,
+            'Total': line[8] if len(line) > 8 else 0
+        },
+    }
+def parse_alt_range(line):
+    line = clean_data(line)
+    return {
+        'Verbal': {
+            'Males': line[0] if len(line) > 0 else 0,
+            'Females': line[1] if len(line) > 1 else 0,
+            'Total': line[2] if len(line) > 2 else 0
+        },
+        'Math': {
+            'Males': line[3] if len(line) > 3 else 0,
+            'Females': line[4] if len(line) > 4 else 0,
+            'Total': line[5] if len(line) > 5 else 0
+        },
+    }
+def combine_range(*dicts):
+    return {
+        'Verbal': {
+            'Males': sum(d['Verbal']['Males'] for d in dicts),
+            'Females': sum(d['Verbal']['Females'] for d in dicts),
+            'Total': sum(d['Verbal']['Total'] for d in dicts)
+        },
+        'Math': {
+            'Males': sum(d['Math']['Males'] for d in dicts),
+            'Females': sum(d['Math']['Females'] for d in dicts),
+            'Total': sum(d['Math']['Total'] for d in dicts)
+        },
+    }
+    
 def clean_data(list_of_numbers, converter=parse_int):
     return [converter(i)
             for l in list_of_numbers[1:]
@@ -93,8 +137,14 @@ def clean_data(list_of_numbers, converter=parse_int):
 all_data = []
 for path, lines in ones.items():
     state, year = path[5:-4].split("_")
-    print(state, year)
-    data = {}
+    code_name = reverse_map[state]
+    data = {
+        'Year': '20'+year,
+        'State': {
+            'Name': state.title(),
+            'Code': code_name.upper()
+        }
+    }
     # 05 High School Grade Point Average
     line_iter = iter(lines)
     grade_point_average = seek(line_iter, "High School Grade Point Average")
@@ -118,6 +168,42 @@ for path, lines in ones.items():
         "Natural Sciences": parse_academics(next(line_iter)),
         "Social Sciences/History": parse_academics(next(line_iter)),
     }
+    # 05 Ranges
+    line_iter = iter(lines)
+    grade_point_average = seek(line_iter, "TABLE 6")
+    grade_point_average = seek(line_iter, "Ranges")
+    data["Score Ranges"] = {
+        "Between 700 to 800": combine_range(parse_range(next(line_iter)), parse_range(next(line_iter))),
+        "Between 600 to 700": combine_range(parse_range(next(line_iter)), parse_range(next(line_iter))),
+        "Between 500 to 600": combine_range(parse_range(next(line_iter)), parse_range(next(line_iter))),
+        "Between 400 to 500": combine_range(parse_range(next(line_iter)), parse_range(next(line_iter))),
+        "Between 300 to 400": combine_range(parse_range(next(line_iter)), parse_range(next(line_iter))),
+        "Between 200 to 300": combine_range(parse_range(next(line_iter)), parse_range(next(line_iter))),
+    }
+    # Gender
+    totals = clean_data(next(line_iter))
+    means = clean_data(next(line_iter))
+    data["Gender"] = {
+        "Male": {
+            "Verbal": means[0],
+            "Math": means[3],
+            "Test-takers": totals[0]
+        },
+        "Female": {
+            "Verbal": means[1],
+            "Math": means[4],
+            "Test-takers": totals[1]
+        }
+    }
+    data["Total"] = {
+        "Verbal": means[2],
+        "Math": means[5],
+        "Test-takers": totals[2]
+    }
+    #total_number_of_students = clean_data(next(line_iter))
+    #data["Gender"]["Male"]["Test-takers"] = total_number_of_students[0]
+    #data["Gender"]["Female"]["Test-takers"] = total_number_of_students[1]
+    #data["Total"]["Test-takers"] = total_number_of_students[2]
     # 05 Family Income
     line_iter = iter(lines)
     family_income = seek(line_iter, "Family Income")
@@ -133,11 +219,18 @@ for path, lines in ones.items():
         "Between 80-100k": parse_one_family_income(next(line_iter)),
         "More than 100k": parse_one_family_income(next(line_iter))
     }
+    all_data.append(data)
     
 for path, lines in sixes.items():
     state, year = path[5:-4].split("_")
-    print(state, year)
-    data = {}
+    code_name = reverse_map[state]
+    data = {
+        'Year': '20'+year,
+        'State': {
+            'Name': state.title(),
+            'Code': code_name.upper()
+        }
+    }
     # 05 High School Grade Point Average
     line_iter = iter(lines)
     grade_point_average = seek(line_iter, "Table 1\d: High School Grade Point Average")
@@ -152,6 +245,34 @@ for path, lines in sixes.items():
         "D or lower": parse_gpa(next(line_iter)),
         "No response": parse_gpa(next(line_iter)),
     }
+    # Gender
+    line_iter = iter(lines)
+    try:
+        row = seek(line_iter, 'Male')
+        male = clean_data(row)
+        female = clean_data(next(line_iter))
+        data["Gender"] = {
+            "Male": {
+                "Verbal": male[1],
+                "Math": male[3],
+                "Test-takers": male[0]
+            },
+            "Female": {
+                "Verbal": female[1],
+                "Math": female[3],
+                "Test-takers": female[0]
+            }
+        }
+        data["Total"] = {
+            "Verbal": avg((data["Gender"]["Female"]["Verbal"], data["Gender"]["Male"]["Verbal"])),
+            "Math": avg((data["Gender"]["Female"]["Math"], data["Gender"]["Male"]["Math"])),
+            "Test-takers": data["Gender"]["Female"]["Test-takers"] + data["Gender"]["Male"]["Test-takers"]
+        }
+    except Exception as e:
+        #print(e)
+        data["Gender"] = corrected[(year, state)]["Gender"]
+        data["Total"] = corrected[(year, state)]["Total"]
+        print state, year
     # 05 Academic Subject
     line_iter = iter(lines)
     grade_point_average = seek(line_iter, "Table 1\d: Average Years of Study in Six Academic Subjects")
@@ -164,6 +285,17 @@ for path, lines in sixes.items():
         "Mathematics": parse_academics(next(line_iter)),
         "Natural Sciences": parse_academics(next(line_iter)),
         "Social Sciences/History": parse_academics(next(line_iter)),
+    }
+    # 05 Ranges
+    line_iter = iter(lines)
+    grade_point_average = seek(line_iter, "Score Range")
+    data["Score Ranges"] = {
+        "Between 700 to 800": combine_range(parse_alt_range(next(line_iter)), parse_alt_range(next(line_iter))),
+        "Between 600 to 700": combine_range(parse_alt_range(next(line_iter)), parse_alt_range(next(line_iter))),
+        "Between 500 to 600": combine_range(parse_alt_range(next(line_iter)), parse_alt_range(next(line_iter))),
+        "Between 400 to 500": combine_range(parse_alt_range(next(line_iter)), parse_alt_range(next(line_iter))),
+        "Between 300 to 400": combine_range(parse_alt_range(next(line_iter)), parse_alt_range(next(line_iter))),
+        "Between 200 to 300": combine_range(parse_alt_range(next(line_iter)), parse_alt_range(next(line_iter))),
     }
     # 06 Family Income
     line_iter = iter(lines)
@@ -180,11 +312,18 @@ for path, lines in sixes.items():
         "Between 80-100k": parse_clean_family_income(next(line_iter)),
         "More than 100k": parse_clean_family_income(next(line_iter))
     }
+    all_data.append(data)
     
 for path, lines in tens.items():
     state, year = path[5:-4].split("_")
-    print(state, year)
-    data = {}
+    code_name = reverse_map[state]
+    data = {
+        'Year': '20'+year,
+        'State': {
+            'Name': state.title(),
+            'Code': code_name.upper()
+        }
+    }
     # 05 High School Grade Point Average
     line_iter = iter(lines)
     grade_point_average = seek(line_iter, "Table 1\d: High School Grade Point Average")
@@ -212,6 +351,46 @@ for path, lines in tens.items():
         "Natural Sciences": parse_academics(next(line_iter)),
         "Social Sciences/History": parse_academics(next(line_iter)),
     }
+    # 05 Ranges
+    line_iter = iter(lines)
+    grade_point_average = seek(line_iter, "Score Range")
+    data["Score Ranges"] = {
+        "Between 700 to 800": parse_alt_range(next(line_iter)),
+        "Between 600 to 700": parse_alt_range(next(line_iter)),
+        "Between 500 to 600": parse_alt_range(next(line_iter)),
+        "Between 400 to 500": parse_alt_range(next(line_iter)),
+        "Between 300 to 400": parse_alt_range(next(line_iter)),
+        "Between 200 to 300": parse_alt_range(next(line_iter))
+    }
+    # Gender
+    line_iter = iter(lines)
+    try:
+        row = seek(line_iter, 'Male')
+        male = clean_data(row)
+        female = clean_data(next(line_iter))
+        data["Gender"] = {
+            "Male": {
+                "Verbal": male[1],
+                "Math": male[3],
+                "Test-takers": male[0]
+            },
+            "Female": {
+                "Verbal": female[1],
+                "Math": female[3],
+                "Test-takers": female[0]
+            }
+        }
+        data["Total"] = {
+            "Verbal": avg((data["Gender"]["Female"]["Verbal"], data["Gender"]["Male"]["Verbal"])),
+            "Math": avg((data["Gender"]["Female"]["Math"], data["Gender"]["Male"]["Math"])),
+            "Test-takers": data["Gender"]["Female"]["Test-takers"] + data["Gender"]["Male"]["Test-takers"]
+        }
+        print(data["Gender"]["Female"]["Verbal"])
+    except Exception as e:
+        #print(e)
+        data["Gender"] = corrected[(year, state)]["Gender"]
+        data["Total"] = corrected[(year, state)]["Total"]
+        print state, year
     # 10 Family Income
     line_iter = iter(lines)
     family_income = seek(line_iter, "Family Income")
@@ -227,3 +406,8 @@ for path, lines in tens.items():
                                                 parse_clean_family_income(next(line_iter)),
                                                 parse_clean_family_income(next(line_iter)))
     }
+    all_data.append(data)
+
+all_data = list(sorted(all_data, key= lambda r: (r['Year'], r['State']['Name'])))
+with open('school_scores.json', 'w') as output:
+    json.dump(all_data, output, indent=2)

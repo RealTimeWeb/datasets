@@ -59,21 +59,31 @@ interfaces:
         sql: SELECT data FROM aids WHERE country=? LIMIT {hardware}
         post: json()
     returns: list[report]
-structures:
-    "aids.[0].Data.People Living with HIV.Adults": '15+ Years Old'
-    "aids.[0].Data.People Living with HIV.Male Adults": '15+ Years Old'
-    "aids.[0].Data.People Living with HIV.Female Adults": '15+ Years Old'
-    "aids.[0].Data.People Living with HIV.Children": '0-14 Years Old'
-    "aids.[0].Data.HIV Prevalence.Adults": '15-49 Years Old'
-    "aids.[0].Data.HIV Prevalence.Young Men": '15-24 Years Old'
-    "aids.[0].Data.HIV Prevalence.Young Women": '15-24 Years Old'
-    "aids.[0].Data.New HIV Infections.Adults": '15+ Years Old'
-    "aids.[0].Data.New HIV Infections.Male Adults": '15+ Years Old'
-    "aids.[0].Data.New HIV Infections.Female Adults": '15+ Years Old'
-    "aids.[0].Data.New HIV Infections.Children": '0-14 Years Old'
-    "aids.[0].Data.New HIV Infections.Incidence Rate Among Adults": '15-49 Years Old'
-    "aids.[0].Data.AIDS-Related Deaths.Adults": '15+ Years Old'
-    "aids.[0].Data.AIDS-Related Deaths.Male Adults": '15+ Years Old'
-    "aids.[0].Data.AIDS-Related Deaths.Female Adults": '15+ Years Old'
-    "aids.[0].Data.AIDS-Related Deaths.Children": '0-14 Years Old'
-    "aids.[0].Data.AIDS-Related Deaths.AIDS Orphans": '0-17 Years Old'
+comments:
+    Data:
+        "AIDS-Related Deaths":
+            AIDS Orphans: Children who have been orphaned from AIDS (parents died of AIDS) below 17 years of age.
+            Children: Children who have died of AIDS below 14 years of age.
+            Female Adults: Female adults (older than 15 years of age) who have died of aids.
+            Male Adults: Male adults (older than 15 years of age) who have died of aids.
+            Adults: All adults (older than 15 years of age) who have died of aids.
+            All Ages: The total number of deaths caused by AIDS in this year.
+        "New HIV Infections":
+            Incidence Rate Among Adults: The number of reported cases of AIDS in adults (15-49 years old).
+            Children: The number of reported cases of AIDS in children (0-14 years old).
+            Adults: The number of reported cases of AIDS in all adults (15+ years old).
+            Male Adults: The number of reported cases of AIDS in male adults (15+ years old).
+            Female Adults: The number of reported cases of AIDS in female adults (15+ years old).
+            All Ages: The total number of reported cases of AIDS in this year.
+        HIV Prevalence:
+            Adults: The percentage of the population of Young Men (15-49 years old) suffering from AIDS in this year. 
+            Young Men: The percentage of the population of Young Men (15-24 years old) suffering from AIDS in this year. 
+            Young Women: The percentage of the population of Young Women (15-24 years old) suffering from AIDS in this year. 
+        People Living with HIV:
+            Children: The number of Children (less than 15 years old) suffering from AIDS in this year. 
+            Male Adults: The number of Adult Men (greater than 15 years old) suffering from AIDS in this year. 
+            Female Adults: The number of Adult Women (greater than 15 years old) suffering from AIDS in this year. 
+            Adults: The number of Adults (greater than 15 years old) suffering from AIDS in this year. 
+            Total: The total number of people suffering from AIDS in this year.
+    Year: 4-digit year
+    Country: The name of the country.

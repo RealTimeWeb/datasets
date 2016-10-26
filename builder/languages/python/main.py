@@ -433,7 +433,7 @@ def _{{ http.name | snake_case }}_request({% for arg in http.args %}{{arg.name |
 
 {% for interface in interfaces %}
 
-def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=True{% endif %}):
+def {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=False{% endif %}):
     """
     {{ interface.description }}
     
@@ -523,7 +523,7 @@ def _test_interfaces():
     # Production test
     print("Production {{ interface.name | snake_case }}")
     start_time = _default_timer()
-    result = {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default|tojson|safe }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=False{% endif %})
+    result = {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default|tojson|safe }}{% if not loop.last %}, {%endif %}{% endfor %})
     {% if interface.returns.startswith("list[") %}
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -535,7 +535,7 @@ def _test_interfaces():
     # Test test
     print("Test {{ interface.name | snake_case }}")
     start_time = _default_timer()
-    result = {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default|tojson|safe }}{% if not loop.last %}, {%endif %}{% endfor %})
+    result = {{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default|tojson|safe }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.args %}, {% endif %}test=True)
     {% if interface.returns.startswith("list[") %}
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -552,13 +552,7 @@ if __name__ == '__main__':
     _parser.add_option("-t", "--test", action="store_true",
                       default=False,
                       help="Execute the interfaces to test them.")
-    _parser.add_option("-r", "--reset", action="store_true",
-                      default=False,
-                      help="Reset the cache")
     (_options, _args) = _parser.parse_args()
     
     if _options.test:
         _test_interfaces()
-
-    if _options.reset:
-        _modify_self()

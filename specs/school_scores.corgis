@@ -1,0 +1,31 @@
+metadata:
+    version: 1
+    name: School Scores
+    builder: 1
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 10/24/2016
+    tags: [school, education, K-12, kindergarten, learning, teaching, sat]
+    description:
+        overview: >
+            SAT Scores from across the country
+        short: SAT scores for students across the United States, organized by year and state.
+        citation: <a href='https://nces.ed.gov/ccd/aboutCCD.asp'>https://nces.ed.gov/ccd/aboutCCD.asp</a>
+local:
+  - file: school_scores.json
+    name: school_scores
+    row: record
+    indexes:
+      - name: state
+        jsonpath: school_scores.[0].State.Name
+      - name: year
+        jsonpath: school_scores.[0].Year
+structures:
+    "school.[0].data.enrollment.students.year": "Each of these match to the different age groups for students: The first one is Preschool, the second is Kindergarten, and so on for 1st grade - 12th grade."
+interfaces:
+  - name: get all
+    args: []
+    returns: list[record]
+    description: Returns all of the data for every state into a list.
+    production:
+        sql: SELECT data FROM school_scores
+        post: json()

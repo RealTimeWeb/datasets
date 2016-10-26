@@ -31,6 +31,8 @@
     
     {{ macros.overview(metadata) }}
     
+    {{ macros.explorer(metadata, structures) }}
+    
     {{ macros.downloads([ metadata.name|snake_case + '.py' , metadata.name|snake_case + '.db' ]) }}
     
     
@@ -42,19 +44,19 @@
 {% highlight 'python3' %}
 import {{ metadata.name | snake_case }}
 {% for interface in interfaces -%}
-{{ interface.returns|to_python_variable }} = {{ metadata.name | snake_case }}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default|tojson }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=True{% endif %})
+{{ interface.returns|to_python_variable }} = {{ metadata.name | snake_case }}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default|tojson }}{% if not loop.last %}, {%endif %}{% endfor %})
 {% endfor %}
 {% endhighlight %}
 
 {% if interfaces|rejectattr('test', 'none')|list %}
 
-    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+    Additionally, some of the functions can return a sample of the Big Data using an extra argument. If you use this sampled Big Data, it may be much faster. When you are sure your code is correct, you can remove the argument to use the full dataset.
 
 {% highlight 'python3' %}
 import {{ metadata.name | snake_case }}
 # These may be slow!
 {% for interface in interfaces %}{% if interface.test -%}
-{{ interface.returns|to_python_variable }} = {{ metadata.name | snake_case }}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default|tojson }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=False{% endif %})
+{{ interface.returns|to_python_variable }} = {{ metadata.name | snake_case }}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.default|tojson }}{% if not loop.last %}, {%endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=True{% endif %})
 {% endif %}{% endfor %}
 {% endhighlight %}
 
@@ -63,7 +65,7 @@ import {{ metadata.name | snake_case }}
     <h3 id="documentation">Documentation</h3>
     
 {% for interface in interfaces -%}    
-<h4 id='{{ interface.name | snake_case }}' style='font-family:monospace'    >&nbsp;{{metadata.name|snake_case}}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=True{% endif %})</h4>
+<h4 id='{{ interface.name | snake_case }}' style='font-family:monospace'    >&nbsp;{{metadata.name|snake_case}}.{{ interface.name | snake_case }}({% for arg in interface.args %}{{arg.name| snake_case }}{% if not loop.last %}, {% endif %}{% endfor %}{% if interface.test %}{% if interface.args %}, {% endif %}test=False{% endif %})</h4>
 
 <div class='row'>
 <div class='col-md-offset-1'>
@@ -92,8 +94,6 @@ import {{ metadata.name | snake_case }}
 </div>
 
 {% endfor %}
-
-{{ macros.explorer(metadata, structures) }}
 
 {{ macros.appendix(metadata) }}    
 

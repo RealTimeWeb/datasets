@@ -33,3 +33,5 @@ interfaces:
     test:
         sql: SELECT data FROM airlines LIMIT {hardware}
         post: json()
+structures:
+    
