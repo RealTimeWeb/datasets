@@ -46,16 +46,19 @@ interfaces:
     production:
         sql: SELECT data FROM broadway WHERE theatre=? COLLATE NOCASE
         post: json()
-structures:
-    "broadway.[0].Show.Theatre": The name of the theatre.
-    "broadway.[0].Show.Type": Whether it is a "Musical", "Play", or "Special".
-    "broadway.[0].Show.Name": The name of the production.
-    "broadway.[0].Date.Day": The day of the month that this performance's week ended on.
-    "broadway.[0].Date.Full": The full date representation that this performance's week ended on.
-    "broadway.[0].Date.Month": The numeric month that this performance's week ended in (1 = January, 2 = February, etc.).
-    "broadway.[0].Date.Year": The year that this performance occurred in.
-    "broadway.[0].Statistics.Gross": The "Gross Gross" of this performance, or how much it made in total across the entire week. Measured in dollars.
-    "broadway.[0].Statistics.Gross Potential": The Gross Potential is the maximum amount an engagement can possibly earn based on calculations involving ticket prices, seating capacity, and the number of performances. This number is expressed here as a percentage of what could have been achieved (Gross Gross / Gross Potential). In case the GP could not be calculated, it was replaced with 0%.
-    "broadway.[0].Statistics.Attendance": The total number of people who attended performances over the week.
-    "broadway.[0].Statistics.Performances": The number of performances that occurred this week.
-    "broadway.[0].Statistics.Capacity": The percentage of the theatre that was filled during that week.
+comments:
+    Show:
+        Theatre: The name of the theatre.
+        Type: Whether it is a "Musical", "Play", or "Special".
+        Name: The name of the production.
+    Date:
+        Day: The day of the month that this performance's week ended on.
+        Full: The full date representation that this performance's week ended on in "Month/Day/Year" format.
+        Month: The numeric month that this performance's week ended in (1 = January, 2 = February, etc.).
+        Year: The year that this week of performances occurred in.
+    Statistics:
+        Gross: The "Gross Gross" of this performance, or how much it made in total across the entire week. Measured in dollars.
+        Gross Potential:  The Gross Potential is the maximum amount an engagement can possibly earn based on calculations involving ticket prices, seating capacity, and the number of performances. This number is expressed here as a percentage of what could have been achieved (Gross Gross / Gross Potential). In case the GP could not be calculated, it was replaced with 0%.
+        Attendance: The total number of people who attended performances over the week.
+        Performances: The number of performances that occurred this week.
+        Capacity: The percentage of the theatre that was filled during that week.

@@ -103,7 +103,7 @@ class _Auxiliary(object):
 
 
 
-def get_shows(test=True):
+def get_shows(test=False):
     """
     Returns information about all the shows
     
@@ -125,7 +125,7 @@ def get_shows(test=True):
         return _Auxiliary._byteify(data)
         
 
-def get_show_by_theatre(theatre, test=True):
+def get_show_by_theatre(theatre, test=False):
     """
     Returns information about all the shows at a given theatre
     
@@ -171,7 +171,7 @@ def _test_interfaces():
     # Production test
     print("Production get_shows")
     start_time = _default_timer()
-    result = get_shows(test=False)
+    result = get_shows()
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -180,7 +180,7 @@ def _test_interfaces():
     # Test test
     print("Test get_shows")
     start_time = _default_timer()
-    result = get_shows()
+    result = get_shows(test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -190,7 +190,7 @@ def _test_interfaces():
     # Production test
     print("Production get_show_by_theatre")
     start_time = _default_timer()
-    result = get_show_by_theatre("friedman", test=False)
+    result = get_show_by_theatre("friedman")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -199,7 +199,7 @@ def _test_interfaces():
     # Test test
     print("Test get_show_by_theatre")
     start_time = _default_timer()
-    result = get_show_by_theatre("friedman")
+    result = get_show_by_theatre("friedman", test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -213,13 +213,7 @@ if __name__ == '__main__':
     _parser.add_option("-t", "--test", action="store_true",
                       default=False,
                       help="Execute the interfaces to test them.")
-    _parser.add_option("-r", "--reset", action="store_true",
-                      default=False,
-                      help="Reset the cache")
     (_options, _args) = _parser.parse_args()
     
     if _options.test:
         _test_interfaces()
-
-    if _options.reset:
-        _modify_self()
