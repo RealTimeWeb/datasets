@@ -103,7 +103,7 @@ class _Auxiliary(object):
 
 
 
-def get_reports(test=True):
+def get_reports(test=False):
     """
     Returns cancer reports from the dataset.
     
@@ -125,7 +125,7 @@ def get_reports(test=True):
         return _Auxiliary._byteify(data)
         
 
-def get_reports_by_year(year, test=True):
+def get_reports_by_year(year, test=False):
     """
     Given a year, returns all the cancer reports for that year in the database.
     
@@ -158,7 +158,7 @@ def get_reports_by_year(year, test=True):
         return _Auxiliary._byteify(data)
         
 
-def get_reports_by_area(area, test=True):
+def get_reports_by_area(area, test=False):
     """
     Given a area, returns all the cancer reports for that area in the database.
     
@@ -204,7 +204,7 @@ def _test_interfaces():
     # Production test
     print("Production get_reports")
     start_time = _default_timer()
-    result = get_reports(test=False)
+    result = get_reports()
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -213,7 +213,7 @@ def _test_interfaces():
     # Test test
     print("Test get_reports")
     start_time = _default_timer()
-    result = get_reports()
+    result = get_reports(test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -223,7 +223,7 @@ def _test_interfaces():
     # Production test
     print("Production get_reports_by_year")
     start_time = _default_timer()
-    result = get_reports_by_year("1999", test=False)
+    result = get_reports_by_year(1999)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -232,7 +232,7 @@ def _test_interfaces():
     # Test test
     print("Test get_reports_by_year")
     start_time = _default_timer()
-    result = get_reports_by_year("1999")
+    result = get_reports_by_year(1999, test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -242,7 +242,7 @@ def _test_interfaces():
     # Production test
     print("Production get_reports_by_area")
     start_time = _default_timer()
-    result = get_reports_by_area("Alabama", test=False)
+    result = get_reports_by_area("Alabama")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -251,7 +251,7 @@ def _test_interfaces():
     # Test test
     print("Test get_reports_by_area")
     start_time = _default_timer()
-    result = get_reports_by_area("Alabama")
+    result = get_reports_by_area("Alabama", test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -265,13 +265,7 @@ if __name__ == '__main__':
     _parser.add_option("-t", "--test", action="store_true",
                       default=False,
                       help="Execute the interfaces to test them.")
-    _parser.add_option("-r", "--reset", action="store_true",
-                      default=False,
-                      help="Reset the cache")
     (_options, _args) = _parser.parse_args()
     
     if _options.test:
         _test_interfaces()
-
-    if _options.reset:
-        _modify_self()
