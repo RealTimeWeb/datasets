@@ -277,27 +277,27 @@ $(document).ready(function() {
             <tr> <td><code>"late aircraft"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>18</code></td> 
-                 <td></td> </tr>
+                 <td>The number of delays and cancellations caused by a previous flight with the same aircraft arriving late, causing the present flight to depart late in this month.</td> </tr>
             
             <tr> <td><code>"weather"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>28</code></td> 
-                 <td></td> </tr>
+                 <td>Number of delays or cancellations caused by significant meteorological conditions (actual or forecasted) that, in the judgment of the carrier, delays or prevents the operation of a flight such as tornado, blizzard or hurricane in this month.</td> </tr>
             
             <tr> <td><code>"security"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>2</code></td> 
-                 <td></td> </tr>
+                 <td>Number of delays or cancellations caused by evacuation of a terminal or concourse, re-boarding of aircraft because of security breach, inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas in this month.</td> </tr>
             
             <tr> <td><code>"national aviation system"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>105</code></td> 
-                 <td></td> </tr>
+                 <td>The number of delays and cancellations attributable to the national aviation system that refer to a broad set of conditions, such as non-extreme weather conditions, airport operations, heavy traffic volume, and air traffic control in this month.</td> </tr>
             
             <tr> <td><code>"carrier"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>34</code></td> 
-                 <td></td> </tr>
+                 <td>The number of delays and cancellations due to circumstances within the airline's control (e.g. maintenance or crew problems, aircraft cleaning, baggage loading, fueling, etc.) in this month.</td> </tr>
             
         </table>
     </div>
@@ -343,12 +343,12 @@ $(document).ready(function() {
             <tr> <td><code>"code"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"AA"</code></td> 
-                 <td></td> </tr>
+                 <td>The 3 letter code for this airline carrier, assigned by IATA. For more information, consult this <a href='https://en.wikipedia.org/wiki/List_of_airline_codes'>List of Airline Codes</a>.</td> </tr>
             
             <tr> <td><code>"name"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"American Airlines Inc."</code></td> 
-                 <td></td> </tr>
+                 <td>The full name of this airline carrier.</td> </tr>
             
         </table>
     </div>
@@ -379,22 +379,22 @@ $(document).ready(function() {
             <tr> <td><code>"late aircraft"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>1269</code></td> 
-                 <td></td> </tr>
+                 <td>The number of minutes delayed caused by a previous flight with the same aircraft arriving late, causing the present flight to depart late in this month.</td> </tr>
             
             <tr> <td><code>"weather"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>1722</code></td> 
-                 <td></td> </tr>
+                 <td>Number of of minutes delayed caused by significant meteorological conditions (actual or forecasted) that, in the judgment of the carrier, delays or prevents the operation of a flight such as tornado, blizzard or hurricane in this month.</td> </tr>
             
             <tr> <td><code>"carrier"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>1367</code></td> 
-                 <td></td> </tr>
+                 <td>The number of minutes delayed due to circumstances within the airline's control (e.g. maintenance or crew problems, aircraft cleaning, baggage loading, fueling, etc.) in this month.</td> </tr>
             
             <tr> <td><code>"security"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>139</code></td> 
-                 <td></td> </tr>
+                 <td>Number of minutes delayed caused by evacuation of a terminal or concourse, re-boarding of aircraft because of security breach, inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas in this month.</td> </tr>
             
             <tr> <td><code>"total"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
@@ -404,7 +404,7 @@ $(document).ready(function() {
             <tr> <td><code>"national aviation system"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>3817</code></td> 
-                 <td></td> </tr>
+                 <td>The number of minutes delayed attributable to the national aviation system that refer to a broad set of conditions, such as non-extreme weather conditions, airport operations, heavy traffic volume, and air traffic control in this month.</td> </tr>
             
         </table>
     </div>
@@ -455,27 +455,27 @@ $(document).ready(function() {
             <tr> <td><code>"cancelled"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>5</code></td> 
-                 <td></td> </tr>
+                 <td>The number of flights that were cancelled in this month.</td> </tr>
             
             <tr> <td><code>"on time"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>561</code></td> 
-                 <td></td> </tr>
+                 <td>The number of flights that were on time in this month.</td> </tr>
             
             <tr> <td><code>"total"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>752</code></td> 
-                 <td></td> </tr>
+                 <td>The total number of flights in this month.</td> </tr>
             
             <tr> <td><code>"delayed"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>186</code></td> 
-                 <td></td> </tr>
+                 <td>The number of flights that were delayed in this month.</td> </tr>
             
             <tr> <td><code>"diverted"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>0</code></td> 
-                 <td></td> </tr>
+                 <td>The number of flights that were diverted in this month.</td> </tr>
             
         </table>
     </div>
@@ -521,12 +521,12 @@ $(document).ready(function() {
             <tr> <td><code>"code"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"ATL"</code></td> 
-                 <td></td> </tr>
+                 <td>The 3 letter code for this airport, assigned by IATA. For more information, consult this <a href='https://en.wikipedia.org/wiki/List_of_airports_by_IATA_code'>List of Airport Codes</a>.</td> </tr>
             
             <tr> <td><code>"name"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"Atlanta, GA: Hartsfield-Jackson Atlanta International"</code></td> 
-                 <td></td> </tr>
+                 <td>The full name of this airport.</td> </tr>
             
         </table>
     </div>
@@ -659,17 +659,17 @@ $(document).ready(function() {
             <tr> <td><code>"label"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"2003/6"</code></td> 
-                 <td></td> </tr>
+                 <td>The "year/month" reported as a string, to make it easier to sort by time periods.</td> </tr>
             
             <tr> <td><code>"year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>2003</code></td> 
-                 <td></td> </tr>
+                 <td>The reported year as a 4-digit number.</td> </tr>
             
             <tr> <td><code>"month"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>6</code></td> 
-                 <td></td> </tr>
+                 <td>The reported month as a number. 0 is January, 1 is February, etc.</td> </tr>
             
         </table>
     </div>
@@ -733,17 +733,17 @@ $(document).ready(function() {
     This library has 1 function you can use.
     
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">airlines</span>
-<span class="n">list_of_airline</span> <span class="o">=</span> <span class="n">airlines</span><span class="o">.</span><span class="n">get_reports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">list_of_airline</span> <span class="o">=</span> <span class="n">airlines</span><span class="o">.</span><span class="n">get_reports</span><span class="p">()</span>
 </pre></div>
 
 
 
 
-    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
+    Additionally, some of the functions can return a sample of the Big Data using an extra argument. If you use this sampled Big Data, it may be much faster. When you are sure your code is correct, you can remove the argument to use the full dataset.
 
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">airlines</span>
 <span class="c1"># These may be slow!</span>
-<span class="n">list_of_airline</span> <span class="o">=</span> <span class="n">airlines</span><span class="o">.</span><span class="n">get_reports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">list_of_airline</span> <span class="o">=</span> <span class="n">airlines</span><span class="o">.</span><span class="n">get_reports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
 
@@ -751,7 +751,7 @@ $(document).ready(function() {
     
     <h3 id="documentation">Documentation</h3>
     
-<h4 id='get_reports' style='font-family:monospace'    >&nbsp;airlines.get_reports(test=True)</h4>
+<h4 id='get_reports' style='font-family:monospace'    >&nbsp;airlines.get_reports(test=False)</h4>
 
 <div class='row'>
 <div class='col-md-offset-1'>
