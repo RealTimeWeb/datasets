@@ -103,7 +103,7 @@ class _Auxiliary(object):
 
 
 
-def get_all_crimes(test=True):
+def get_all_crimes(test=False):
     """
     Gets a list of all the crime reports in the database.
     
@@ -125,7 +125,7 @@ def get_all_crimes(test=True):
         return _Auxiliary._byteify(data)
         
 
-def get_crime_by_state(department, test=True):
+def get_crime_by_state(department, test=False):
     """
     Given the name of a state, returns all the crime reports for that state in the database.
     
@@ -161,7 +161,7 @@ def get_crime_by_state(department, test=True):
         return _Auxiliary._byteify(data)
         
 
-def get_crime_by_year(year, test=True):
+def get_crime_by_year(year, test=False):
     """
     Given a year, returns all the crime reports for that year in the database.
     
@@ -204,7 +204,7 @@ def _test_interfaces():
     # Production test
     print("Production get_all_crimes")
     start_time = _default_timer()
-    result = get_all_crimes(test=False)
+    result = get_all_crimes()
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -213,7 +213,7 @@ def _test_interfaces():
     # Test test
     print("Test get_all_crimes")
     start_time = _default_timer()
-    result = get_all_crimes()
+    result = get_all_crimes(test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -223,7 +223,7 @@ def _test_interfaces():
     # Production test
     print("Production get_crime_by_state")
     start_time = _default_timer()
-    result = get_crime_by_state("Alabama", test=False)
+    result = get_crime_by_state("Alabama")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -232,7 +232,7 @@ def _test_interfaces():
     # Test test
     print("Test get_crime_by_state")
     start_time = _default_timer()
-    result = get_crime_by_state("Alabama")
+    result = get_crime_by_state("Alabama", test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -242,7 +242,7 @@ def _test_interfaces():
     # Production test
     print("Production get_crime_by_year")
     start_time = _default_timer()
-    result = get_crime_by_year(1984, test=False)
+    result = get_crime_by_year(1984)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -251,7 +251,7 @@ def _test_interfaces():
     # Test test
     print("Test get_crime_by_year")
     start_time = _default_timer()
-    result = get_crime_by_year(1984)
+    result = get_crime_by_year(1984, test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -265,13 +265,7 @@ if __name__ == '__main__':
     _parser.add_option("-t", "--test", action="store_true",
                       default=False,
                       help="Execute the interfaces to test them.")
-    _parser.add_option("-r", "--reset", action="store_true",
-                      default=False,
-                      help="Reset the cache")
     (_options, _args) = _parser.parse_args()
     
     if _options.test:
         _test_interfaces()
-
-    if _options.reset:
-        _modify_self()
