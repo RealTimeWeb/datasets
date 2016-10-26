@@ -24,3 +24,31 @@ interfaces:
         post: json()
 structures:
     "billionaires.[0].demographics.age": Ages that are represented as -1 stand for ages that were not available in the data that was collected.
+comments:
+    demographics:
+        age: The current age of the billionaire. Ages that are represented as -1 stand for ages that were not available in the data that was collected.
+        gender: A string representing their gender.
+    company:
+        founded: The year that the company was founded.
+        name: The name of the company.
+        relationship: The billionaires relationship to the company.
+        sector: The sector of the business, or what segment of the economy they fit into.
+        type: The type of business for this company.
+    location:
+        citizenship: The name of the country that this billionaire has citizenship with.
+        region: The region of the world where this billionaire lives.
+        country code: the 3-letter country code of the country where this billionaire has citizenship.
+        gdp: The "Gross Domestic Product" of the country where the billionaire has citizenship. This is one of the primary indicators used to gauge the health of a country's economy. It represents the total dollar value of all goods and services produced over a specific time period; you can think of it as the size of the economy.
+    name: The name of the billionaire.
+    rank: The rank of this billionaire compared to the rest of the billionaires reported on. A lower rank means they make more money.
+    year: The year that data about this billionaire was collected.
+    wealth:
+        how:
+            category: A category representing where their money came from.
+            from emerging: Whether the money came from emerging markets.
+            industry: The specific industry this billionaire profitted from.
+            was political: Whether the money came from politics.
+            inherited: Whether the money was partially inherited.
+            was founder: Whether the billionaire was the founder of their company.
+        worth in billions: The number of billion of dollars that this billionaire is worth.
+        type: The type of billionaire that they are.

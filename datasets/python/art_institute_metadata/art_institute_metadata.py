@@ -103,13 +103,13 @@ class _Auxiliary(object):
 
 
 
-def get_records(test=True):
+def get_records(test=False):
     """
     Returns art data records from the dataset.
     
     """
     if _Constants._TEST or test:
-        rows = _Constants._DATABASE.execute("SELECT data FROM artdata LIMIT {hardware}".format(
+        rows = _Constants._DATABASE.execute("SELECT data FROM artwork LIMIT {hardware}".format(
             hardware=_Constants._HARDWARE))
         data = [r[0] for r in rows]
         data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
@@ -117,7 +117,7 @@ def get_records(test=True):
         return _Auxiliary._byteify(data)
         
     else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM artdata".format(
+        rows = _Constants._DATABASE.execute("SELECT data FROM artwork".format(
             hardware=_Constants._HARDWARE))
         data = [r[0] for r in rows]
         data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
@@ -135,7 +135,7 @@ def _test_interfaces():
     # Production test
     print("Production get_records")
     start_time = _default_timer()
-    result = get_records(test=False)
+    result = get_records()
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -144,7 +144,7 @@ def _test_interfaces():
     # Test test
     print("Test get_records")
     start_time = _default_timer()
-    result = get_records()
+    result = get_records(test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -158,13 +158,7 @@ if __name__ == '__main__':
     _parser.add_option("-t", "--test", action="store_true",
                       default=False,
                       help="Execute the interfaces to test them.")
-    _parser.add_option("-r", "--reset", action="store_true",
-                      default=False,
-                      help="Reset the cache")
     (_options, _args) = _parser.parse_args()
     
     if _options.test:
         _test_interfaces()
-
-    if _options.reset:
-        _modify_self()
