@@ -103,7 +103,7 @@ class _Auxiliary(object):
 
 
 
-def get_artwork(test=True):
+def get_artwork(test=False):
     """
     Returns a list of all the pieces of art in the Tate collection.
     
@@ -135,7 +135,7 @@ def _test_interfaces():
     # Production test
     print("Production get_artwork")
     start_time = _default_timer()
-    result = get_artwork(test=False)
+    result = get_artwork()
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -144,7 +144,7 @@ def _test_interfaces():
     # Test test
     print("Test get_artwork")
     start_time = _default_timer()
-    result = get_artwork()
+    result = get_artwork(test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -158,13 +158,7 @@ if __name__ == '__main__':
     _parser.add_option("-t", "--test", action="store_true",
                       default=False,
                       help="Execute the interfaces to test them.")
-    _parser.add_option("-r", "--reset", action="store_true",
-                      default=False,
-                      help="Reset the cache")
     (_options, _args) = _parser.parse_args()
     
     if _options.test:
         _test_interfaces()
-
-    if _options.reset:
-        _modify_self()

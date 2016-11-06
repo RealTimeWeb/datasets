@@ -103,7 +103,7 @@ class _Auxiliary(object):
 
 
 
-def get_cars(test=True):
+def get_cars(test=False):
     """
     Returns the complete list of cars.
     
@@ -125,7 +125,7 @@ def get_cars(test=True):
         return _Auxiliary._byteify(data)
         
 
-def get_cars_by_year(year, test=True):
+def get_cars_by_year(year, test=False):
     """
     Returns all the cars for a given year.
     
@@ -152,7 +152,7 @@ def get_cars_by_year(year, test=True):
         return _Auxiliary._byteify(data)
         
 
-def get_cars_by_make(make, test=True):
+def get_cars_by_make(make, test=False):
     """
     Returns all the cars of a certain make.
     
@@ -198,7 +198,7 @@ def _test_interfaces():
     # Production test
     print("Production get_cars")
     start_time = _default_timer()
-    result = get_cars(test=False)
+    result = get_cars()
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -207,7 +207,7 @@ def _test_interfaces():
     # Test test
     print("Test get_cars")
     start_time = _default_timer()
-    result = get_cars()
+    result = get_cars(test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -217,7 +217,7 @@ def _test_interfaces():
     # Production test
     print("Production get_cars_by_year")
     start_time = _default_timer()
-    result = get_cars_by_year("2001", test=False)
+    result = get_cars_by_year(2001)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -226,7 +226,7 @@ def _test_interfaces():
     # Test test
     print("Test get_cars_by_year")
     start_time = _default_timer()
-    result = get_cars_by_year("2001")
+    result = get_cars_by_year(2001, test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -236,7 +236,7 @@ def _test_interfaces():
     # Production test
     print("Production get_cars_by_make")
     start_time = _default_timer()
-    result = get_cars_by_make("'Pontiac'", test=False)
+    result = get_cars_by_make("Pontiac")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -245,7 +245,7 @@ def _test_interfaces():
     # Test test
     print("Test get_cars_by_make")
     start_time = _default_timer()
-    result = get_cars_by_make("'Pontiac'")
+    result = get_cars_by_make("Pontiac", test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -259,13 +259,7 @@ if __name__ == '__main__':
     _parser.add_option("-t", "--test", action="store_true",
                       default=False,
                       help="Execute the interfaces to test them.")
-    _parser.add_option("-r", "--reset", action="store_true",
-                      default=False,
-                      help="Reset the cache")
     (_options, _args) = _parser.parse_args()
     
     if _options.test:
         _test_interfaces()
-
-    if _options.reset:
-        _modify_self()

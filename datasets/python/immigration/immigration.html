@@ -1,15 +1,152 @@
 
-    <div class="page-header">
-        
-        <img class="img-rounded pull-right" src="immigration.png" alt="Immigration" style="max-width: 128px; max-height: 128px;">
-        
-        <h1>Immigration Library</h1>
-        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
-        <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
-        <span class="text-muted">Version 1, created 11/1/2015</span><br>
-        <span class="text-muted">Tags: immigration, naturalization, illegals, permanants, united states, us</span><br>
-    </div>
+
     
+    
+<style>
+pre .hll { background-color: #ffffcc }
+pre  { background: #f0f0f0; }
+pre .c { color: #60a0b0; font-style: italic } /* Comment */
+pre .err { border: 1px solid #FF0000 } /* Error */
+pre .k { color: #007020; font-weight: bold } /* Keyword */
+pre .o { color: #666666 } /* Operator */
+pre .ch { color: #60a0b0; font-style: italic } /* Comment.Hashbang */
+pre .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+pre .cp { color: #007020 } /* Comment.Preproc */
+pre .cpf { color: #60a0b0; font-style: italic } /* Comment.PreprocFile */
+pre .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+pre .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+pre .gd { color: #A00000 } /* Generic.Deleted */
+pre .ge { font-style: italic } /* Generic.Emph */
+pre .gr { color: #FF0000 } /* Generic.Error */
+pre .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre .gi { color: #00A000 } /* Generic.Inserted */
+pre .go { color: #888888 } /* Generic.Output */
+pre .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+pre .gs { font-weight: bold } /* Generic.Strong */
+pre .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre .gt { color: #0044DD } /* Generic.Traceback */
+pre .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+pre .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+pre .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+pre .kp { color: #007020 } /* Keyword.Pseudo */
+pre .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+pre .kt { color: #902000 } /* Keyword.Type */
+pre .m { color: #40a070 } /* Literal.Number */
+pre .s { color: #4070a0 } /* Literal.String */
+pre .na { color: #4070a0 } /* Name.Attribute */
+pre .nb { color: #007020 } /* Name.Builtin */
+pre .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+pre .no { color: #60add5 } /* Name.Constant */
+pre .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+pre .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+pre .ne { color: #007020 } /* Name.Exception */
+pre .nf { color: #06287e } /* Name.Function */
+pre .nl { color: #002070; font-weight: bold } /* Name.Label */
+pre .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+pre .nt { color: #062873; font-weight: bold } /* Name.Tag */
+pre .nv { color: #bb60d5 } /* Name.Variable */
+pre .ow { color: #007020; font-weight: bold } /* Operator.Word */
+pre .w { color: #bbbbbb } /* Text.Whitespace */
+pre .mb { color: #40a070 } /* Literal.Number.Bin */
+pre .mf { color: #40a070 } /* Literal.Number.Float */
+pre .mh { color: #40a070 } /* Literal.Number.Hex */
+pre .mi { color: #40a070 } /* Literal.Number.Integer */
+pre .mo { color: #40a070 } /* Literal.Number.Oct */
+pre .sb { color: #4070a0 } /* Literal.String.Backtick */
+pre .sc { color: #4070a0 } /* Literal.String.Char */
+pre .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+pre .s2 { color: #4070a0 } /* Literal.String.Double */
+pre .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+pre .sh { color: #4070a0 } /* Literal.String.Heredoc */
+pre .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+pre .sx { color: #c65d09 } /* Literal.String.Other */
+pre .sr { color: #235388 } /* Literal.String.Regex */
+pre .s1 { color: #4070a0 } /* Literal.String.Single */
+pre .ss { color: #517918 } /* Literal.String.Symbol */
+pre .bp { color: #007020 } /* Name.Builtin.Pseudo */
+pre .vc { color: #bb60d5 } /* Name.Variable.Class */
+pre .vg { color: #bb60d5 } /* Name.Variable.Global */
+pre .vi { color: #bb60d5 } /* Name.Variable.Instance */
+pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { background-color: #ffffcc }
+.syntax pre  { background: #f0f0f0; }
+.syntax pre .c { color: #60a0b0; font-style: italic } /* Comment */
+.syntax pre .err { border: 1px solid #FF0000 } /* Error */
+.syntax pre .k { color: #007020; font-weight: bold } /* Keyword */
+.syntax pre .o { color: #666666 } /* Operator */
+.syntax pre .ch { color: #60a0b0; font-style: italic } /* Comment.Hashbang */
+.syntax pre .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.syntax pre .cp { color: #007020 } /* Comment.Preproc */
+.syntax pre .cpf { color: #60a0b0; font-style: italic } /* Comment.PreprocFile */
+.syntax pre .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.syntax pre .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.syntax pre .gd { color: #A00000 } /* Generic.Deleted */
+.syntax pre .ge { font-style: italic } /* Generic.Emph */
+.syntax pre .gr { color: #FF0000 } /* Generic.Error */
+.syntax pre .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.syntax pre .gi { color: #00A000 } /* Generic.Inserted */
+.syntax pre .go { color: #888888 } /* Generic.Output */
+.syntax pre .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.syntax pre .gs { font-weight: bold } /* Generic.Strong */
+.syntax pre .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.syntax pre .gt { color: #0044DD } /* Generic.Traceback */
+.syntax pre .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.syntax pre .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.syntax pre .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.syntax pre .kp { color: #007020 } /* Keyword.Pseudo */
+.syntax pre .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.syntax pre .kt { color: #902000 } /* Keyword.Type */
+.syntax pre .m { color: #40a070 } /* Literal.Number */
+.syntax pre .s { color: #4070a0 } /* Literal.String */
+.syntax pre .na { color: #4070a0 } /* Name.Attribute */
+.syntax pre .nb { color: #007020 } /* Name.Builtin */
+.syntax pre .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.syntax pre .no { color: #60add5 } /* Name.Constant */
+.syntax pre .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.syntax pre .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.syntax pre .ne { color: #007020 } /* Name.Exception */
+.syntax pre .nf { color: #06287e } /* Name.Function */
+.syntax pre .nl { color: #002070; font-weight: bold } /* Name.Label */
+.syntax pre .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.syntax pre .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.syntax pre .nv { color: #bb60d5 } /* Name.Variable */
+.syntax pre .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.syntax pre .w { color: #bbbbbb } /* Text.Whitespace */
+.syntax pre .mb { color: #40a070 } /* Literal.Number.Bin */
+.syntax pre .mf { color: #40a070 } /* Literal.Number.Float */
+.syntax pre .mh { color: #40a070 } /* Literal.Number.Hex */
+.syntax pre .mi { color: #40a070 } /* Literal.Number.Integer */
+.syntax pre .mo { color: #40a070 } /* Literal.Number.Oct */
+.syntax pre .sb { color: #4070a0 } /* Literal.String.Backtick */
+.syntax pre .sc { color: #4070a0 } /* Literal.String.Char */
+.syntax pre .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.syntax pre .s2 { color: #4070a0 } /* Literal.String.Double */
+.syntax pre .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.syntax pre .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.syntax pre .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.syntax pre .sx { color: #c65d09 } /* Literal.String.Other */
+.syntax pre .sr { color: #235388 } /* Literal.String.Regex */
+.syntax pre .s1 { color: #4070a0 } /* Literal.String.Single */
+.syntax pre .ss { color: #517918 } /* Literal.String.Symbol */
+.syntax pre .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.syntax pre .vc { color: #bb60d5 } /* Name.Variable.Class */
+.syntax pre .vg { color: #bb60d5 } /* Name.Variable.Global */
+.syntax pre .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.syntax pre .il { color: #40a070 } /* Literal.Number.Integer.Long */
+</style>
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="immigration.png" alt="Immigration" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Immigration Python Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 11/1/2015</span><br>
+    <span class="text-muted">Tags: immigration, naturalization, illegals, permanants, united states, us</span><br>
+</div>
+    
+    <!--
     <h3>Table of Contents</h3>
     <ol>
         <li><a href="#overview">Overview</a></li>
@@ -21,71 +158,22 @@
         </ol></li>
         
     </ol>
+    -->
     
     <h3 id="overview">Overview</h3>
-    
-    <p>
-    The Yearbook of Immigration Statistics is a compendium of tables that provides data on foreign nationals who, during a fiscal year, were granted lawful permanent residence (i.e., admitted as immigrants or became legal permanent residents), were admitted into the United States on a temporary basis (e.g., tourists, students, or workers), applied for asylum or refugee status, or were naturalized. The Yearbook also presents data on immigration enforcement actions, including alien apprehensions, removals, and returns.
+<p>
+The Yearbook of Immigration Statistics is a compendium of tables that provides data on foreign nationals who, during a fiscal year, were granted lawful permanent residence (i.e., admitted as immigrants or became legal permanent residents), were admitted into the United States on a temporary basis (e.g., tourists, students, or workers), applied for asylum or refugee status, or were naturalized. The Yearbook also presents data on immigration enforcement actions, including alien apprehensions, removals, and returns.
 
-    </p>
-    
-    
-    <p>
-    <i>http://www.dhs.gov/yearbook-immigration-statistics</i>
-    </p>
-    
-    
-    <h3 id="downloads">Downloads</h3>
-    
-    <p>Download all of the following files.</p>
-    
-    <div class='row'>
-    <div class="well col-md-6 col-md-offset-1">
-    
-    <ol>
-        <li><a href="immigration.py?forcedownload=1" download="immigration.py" target="_blank">
-            <strong>immigration.py </strong>
-            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
-        </a></li>
-        <li><a href="immigration.db?forcedownload=1" download="immigration.db" target="_blank">
-            <strong>immigration.db </strong>
-            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
-        </a></li>
-    </ol>
-    </div>
-    </div>
-    
-    <h3 id="usage">Usage</h3>
-    
-    This library has 1 function you can use.
-    
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">immigration</span>
-<span class="n">list_of_record</span> <span class="o">=</span> <span class="n">immigration</span><span class="o">.</span><span class="n">get_records</span><span class="p">()</span>
-</pre></div>
+</p>
 
-
+<p>
+<i>http://www.dhs.gov/yearbook-immigration-statistics</i>
+</p>
 
     
-    <h3 id="documentation">Documentation</h3>
     
-<h4 id='get_records'>immigration.get_records()</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns data about immigration from all the years and states.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-
-</ul>
-
-</div>
-
-
-
 <h3 id="structure">Explore Structure</h3>
+
 
 <div class='row'>
     <div class='col-md-2'>
@@ -129,1726 +217,23 @@ $(document).ready(function() {
 
 
 
-    <div id='explore-immigration-__0__-naturalizations' title='Dictionary (54 keys)'>
+    <div id='explore-immigration-__0__' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"wyoming"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>146</code></td> 
+            <tr> <td><code>"Country"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Canada"</code></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"colorado"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>6007</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"guam"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1052</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"washington"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>12667</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"rhode island"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2185</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"tennessee"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2613</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"iowa"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1314</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"nevada"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>4622</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"maine"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>548</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"north dakota"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>267</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"mississippi"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>557</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"south dakota"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>257</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"new jersey"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>30291</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"oklahoma"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1765</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"delaware"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>982</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"minnesota"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>7713</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"north carolina"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>5084</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"illinois"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>29432</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"new york"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>66234</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"arkansas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>823</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"puerto rico"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>512</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"total"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>537151</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"indiana"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2455</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"maryland"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>12295</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"louisiana"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1458</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"idaho"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>864</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"district of columbia"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>882</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"arizona"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>6500</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"wisconsin"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>3570</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"michigan"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>14615</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"kansas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2093</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"utah"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>3110</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"virginia"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>13478</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"oregon"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>3612</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"connecticut"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>5957</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"montana"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>285</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"california"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>145593</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"massachusetts"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>16263</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"alaska"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>777</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"vermont"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>419</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"georgia"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>6880</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"pennsylvania"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>10205</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"florida"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>43795</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"hawaii"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2050</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"kentucky"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1307</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"missouri"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>3999</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"nebraska"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1537</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"new hampshire"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>958</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"texas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>35417</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"west virginia"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>237</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"south carolina"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1748</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"ohio"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>8590</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"alabama"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>734</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"new mexico"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1449</code></td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-immigration-__0__-naturalizations" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-wyoming").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-wyoming" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-colorado").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-colorado" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-guam").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-guam" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-washington").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-washington" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-rhode-island").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-rhode-island" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-tennessee").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-tennessee" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-iowa").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-iowa" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-nevada").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-nevada" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-maine").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-maine" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-north-dakota").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-north-dakota" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-mississippi").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-mississippi" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-south-dakota").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-south-dakota" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-new-jersey").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-new-jersey" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-oklahoma").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-oklahoma" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-delaware").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-delaware" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-minnesota").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-minnesota" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-north-carolina").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-north-carolina" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-illinois").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-illinois" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-new-york").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-new-york" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-arkansas").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-arkansas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-puerto-rico").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-puerto-rico" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-total").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-indiana").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-indiana" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-maryland").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-maryland" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-louisiana").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-louisiana" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-idaho").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-idaho" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-district-of-columbia").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-district-of-columbia" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-arizona").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-arizona" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-wisconsin").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-wisconsin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-michigan").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-michigan" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-kansas").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-kansas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-utah").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-utah" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-virginia").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-virginia" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-oregon").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-oregon" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-connecticut").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-connecticut" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-montana").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-montana" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-california").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-california" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-massachusetts").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-massachusetts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-alaska").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-alaska" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-vermont").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-vermont" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-georgia").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-georgia" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-pennsylvania").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-pennsylvania" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-florida").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-florida" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-hawaii").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-hawaii" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-kentucky").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-kentucky" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-missouri").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-missouri" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-nebraska").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-nebraska" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-new-hampshire").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-new-hampshire" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-texas").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-texas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-west-virginia").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-west-virginia" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-south-carolina").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-south-carolina" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-ohio").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-ohio" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-alabama").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-alabama" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-naturalizations-new-mexico").click(function() {
-            $( "#explore-immigration-__0__-naturalizations-new-mexico" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-    });
-    </script>
-
-    <div id='explore-immigration-__0__-illegals' title='Dictionary (57 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"wyoming"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"colorado"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>5943</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"guam"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"washington"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>5455</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"rhode island"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"tennessee"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"iowa"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"nevada"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"maine"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>263</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"north dakota"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1225</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"mississippi"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"south dakota"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"new jersey"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1892</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"oklahoma"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"delaware"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"minnesota"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2596</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"north carolina"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"illinois"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>8113</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"new york"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>5721</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"arkansas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"puerto rico"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2998</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"total"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1264232</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"indiana"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"maryland"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>990</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"hawii"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>425</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"louisiana"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"idaho"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"district of columbia"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2135</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"arizona"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>602216</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"wisconsin"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"michigan"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>4151</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"kansas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"utah"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"virginia"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"oregon"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"connecticut"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"montana"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>986</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"california"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>242557</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"massachusetts"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>3141</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"alaska"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"vermont"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2701</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"georgia"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>3237</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"pennsylvania"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"louisana"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>5246</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"florida"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>7988</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"hawaii"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"kentucky"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"missouri"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"nebraska"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"new hampshire"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"texas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>351747</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"west virginia"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"south carolina"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"ohio"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"alabama"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"pennslyvania"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2506</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"new mexico"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-immigration-__0__-illegals" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-wyoming").click(function() {
-            $( "#explore-immigration-__0__-illegals-wyoming" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-colorado").click(function() {
-            $( "#explore-immigration-__0__-illegals-colorado" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-guam").click(function() {
-            $( "#explore-immigration-__0__-illegals-guam" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-washington").click(function() {
-            $( "#explore-immigration-__0__-illegals-washington" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-rhode-island").click(function() {
-            $( "#explore-immigration-__0__-illegals-rhode-island" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-tennessee").click(function() {
-            $( "#explore-immigration-__0__-illegals-tennessee" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-iowa").click(function() {
-            $( "#explore-immigration-__0__-illegals-iowa" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-nevada").click(function() {
-            $( "#explore-immigration-__0__-illegals-nevada" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-maine").click(function() {
-            $( "#explore-immigration-__0__-illegals-maine" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-north-dakota").click(function() {
-            $( "#explore-immigration-__0__-illegals-north-dakota" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-mississippi").click(function() {
-            $( "#explore-immigration-__0__-illegals-mississippi" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-south-dakota").click(function() {
-            $( "#explore-immigration-__0__-illegals-south-dakota" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-new-jersey").click(function() {
-            $( "#explore-immigration-__0__-illegals-new-jersey" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-oklahoma").click(function() {
-            $( "#explore-immigration-__0__-illegals-oklahoma" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-delaware").click(function() {
-            $( "#explore-immigration-__0__-illegals-delaware" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-minnesota").click(function() {
-            $( "#explore-immigration-__0__-illegals-minnesota" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-north-carolina").click(function() {
-            $( "#explore-immigration-__0__-illegals-north-carolina" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-illinois").click(function() {
-            $( "#explore-immigration-__0__-illegals-illinois" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-new-york").click(function() {
-            $( "#explore-immigration-__0__-illegals-new-york" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-arkansas").click(function() {
-            $( "#explore-immigration-__0__-illegals-arkansas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-puerto-rico").click(function() {
-            $( "#explore-immigration-__0__-illegals-puerto-rico" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-total").click(function() {
-            $( "#explore-immigration-__0__-illegals-total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-indiana").click(function() {
-            $( "#explore-immigration-__0__-illegals-indiana" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-maryland").click(function() {
-            $( "#explore-immigration-__0__-illegals-maryland" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-hawii").click(function() {
-            $( "#explore-immigration-__0__-illegals-hawii" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-louisiana").click(function() {
-            $( "#explore-immigration-__0__-illegals-louisiana" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-idaho").click(function() {
-            $( "#explore-immigration-__0__-illegals-idaho" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-district-of-columbia").click(function() {
-            $( "#explore-immigration-__0__-illegals-district-of-columbia" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-arizona").click(function() {
-            $( "#explore-immigration-__0__-illegals-arizona" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-wisconsin").click(function() {
-            $( "#explore-immigration-__0__-illegals-wisconsin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-michigan").click(function() {
-            $( "#explore-immigration-__0__-illegals-michigan" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-kansas").click(function() {
-            $( "#explore-immigration-__0__-illegals-kansas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-utah").click(function() {
-            $( "#explore-immigration-__0__-illegals-utah" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-virginia").click(function() {
-            $( "#explore-immigration-__0__-illegals-virginia" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-oregon").click(function() {
-            $( "#explore-immigration-__0__-illegals-oregon" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-connecticut").click(function() {
-            $( "#explore-immigration-__0__-illegals-connecticut" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-montana").click(function() {
-            $( "#explore-immigration-__0__-illegals-montana" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-california").click(function() {
-            $( "#explore-immigration-__0__-illegals-california" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-massachusetts").click(function() {
-            $( "#explore-immigration-__0__-illegals-massachusetts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-alaska").click(function() {
-            $( "#explore-immigration-__0__-illegals-alaska" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-vermont").click(function() {
-            $( "#explore-immigration-__0__-illegals-vermont" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-georgia").click(function() {
-            $( "#explore-immigration-__0__-illegals-georgia" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-pennsylvania").click(function() {
-            $( "#explore-immigration-__0__-illegals-pennsylvania" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-louisana").click(function() {
-            $( "#explore-immigration-__0__-illegals-louisana" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-florida").click(function() {
-            $( "#explore-immigration-__0__-illegals-florida" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-hawaii").click(function() {
-            $( "#explore-immigration-__0__-illegals-hawaii" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-kentucky").click(function() {
-            $( "#explore-immigration-__0__-illegals-kentucky" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-missouri").click(function() {
-            $( "#explore-immigration-__0__-illegals-missouri" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-nebraska").click(function() {
-            $( "#explore-immigration-__0__-illegals-nebraska" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-new-hampshire").click(function() {
-            $( "#explore-immigration-__0__-illegals-new-hampshire" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-texas").click(function() {
-            $( "#explore-immigration-__0__-illegals-texas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-west-virginia").click(function() {
-            $( "#explore-immigration-__0__-illegals-west-virginia" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-south-carolina").click(function() {
-            $( "#explore-immigration-__0__-illegals-south-carolina" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-ohio").click(function() {
-            $( "#explore-immigration-__0__-illegals-ohio" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-alabama").click(function() {
-            $( "#explore-immigration-__0__-illegals-alabama" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-pennslyvania").click(function() {
-            $( "#explore-immigration-__0__-illegals-pennslyvania" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-illegals-new-mexico").click(function() {
-            $( "#explore-immigration-__0__-illegals-new-mexico" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-    });
-    </script>
-
-    <div id='explore-immigration-__0__-permanants' title='Dictionary (54 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"wyoming"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>304</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"colorado"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>11255</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"guam"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1275</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"washington"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>19758</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"rhode island"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>3740</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"tennessee"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>5844</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"iowa"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>4067</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"nevada"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>8798</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"maine"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1322</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"north dakota"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>591</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"mississippi"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1312</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"south dakota"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>747</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"new jersey"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>50699</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"oklahoma"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>3578</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"delaware"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1705</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"minnesota"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>12097</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"north carolina"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>11036</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"illinois"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>46896</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"new york"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>103151</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"arkansas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2288</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"puerto rico"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>4760</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"total"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>957883</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"indiana"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>6262</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"maryland"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>20549</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"louisiana"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>3095</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"idaho"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2299</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"district of columbia"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2148</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"arizona"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>19507</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"wisconsin"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>5580</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"michigan"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>18851</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"kansas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>4139</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"utah"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>4346</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"virginia"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>22104</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"oregon"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>8540</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"connecticut"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>12335</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"montana"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>452</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"california"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>253858</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"massachusetts"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>28067</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"alaska"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1261</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"vermont"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>814</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"georgia"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>16681</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"pennsylvania"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>18813</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"florida"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>76178</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"hawaii"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>6405</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"kentucky"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>3820</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"missouri"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>7050</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"nebraska"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>3002</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"new hampshire"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2280</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"texas"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>92440</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"west virginia"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>634</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"south carolina"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2672</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"ohio"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>12072</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"alabama"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2247</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"new mexico"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>3076</code></td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-immigration-__0__-permanants" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-wyoming").click(function() {
-            $( "#explore-immigration-__0__-permanants-wyoming" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-colorado").click(function() {
-            $( "#explore-immigration-__0__-permanants-colorado" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-guam").click(function() {
-            $( "#explore-immigration-__0__-permanants-guam" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-washington").click(function() {
-            $( "#explore-immigration-__0__-permanants-washington" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-rhode-island").click(function() {
-            $( "#explore-immigration-__0__-permanants-rhode-island" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-tennessee").click(function() {
-            $( "#explore-immigration-__0__-permanants-tennessee" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-iowa").click(function() {
-            $( "#explore-immigration-__0__-permanants-iowa" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-nevada").click(function() {
-            $( "#explore-immigration-__0__-permanants-nevada" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-maine").click(function() {
-            $( "#explore-immigration-__0__-permanants-maine" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-north-dakota").click(function() {
-            $( "#explore-immigration-__0__-permanants-north-dakota" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-mississippi").click(function() {
-            $( "#explore-immigration-__0__-permanants-mississippi" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-south-dakota").click(function() {
-            $( "#explore-immigration-__0__-permanants-south-dakota" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-new-jersey").click(function() {
-            $( "#explore-immigration-__0__-permanants-new-jersey" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-oklahoma").click(function() {
-            $( "#explore-immigration-__0__-permanants-oklahoma" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-delaware").click(function() {
-            $( "#explore-immigration-__0__-permanants-delaware" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-minnesota").click(function() {
-            $( "#explore-immigration-__0__-permanants-minnesota" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-north-carolina").click(function() {
-            $( "#explore-immigration-__0__-permanants-north-carolina" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-illinois").click(function() {
-            $( "#explore-immigration-__0__-permanants-illinois" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-new-york").click(function() {
-            $( "#explore-immigration-__0__-permanants-new-york" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-arkansas").click(function() {
-            $( "#explore-immigration-__0__-permanants-arkansas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-puerto-rico").click(function() {
-            $( "#explore-immigration-__0__-permanants-puerto-rico" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-total").click(function() {
-            $( "#explore-immigration-__0__-permanants-total" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-indiana").click(function() {
-            $( "#explore-immigration-__0__-permanants-indiana" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-maryland").click(function() {
-            $( "#explore-immigration-__0__-permanants-maryland" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-louisiana").click(function() {
-            $( "#explore-immigration-__0__-permanants-louisiana" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-idaho").click(function() {
-            $( "#explore-immigration-__0__-permanants-idaho" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-district-of-columbia").click(function() {
-            $( "#explore-immigration-__0__-permanants-district-of-columbia" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-arizona").click(function() {
-            $( "#explore-immigration-__0__-permanants-arizona" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-wisconsin").click(function() {
-            $( "#explore-immigration-__0__-permanants-wisconsin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-michigan").click(function() {
-            $( "#explore-immigration-__0__-permanants-michigan" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-kansas").click(function() {
-            $( "#explore-immigration-__0__-permanants-kansas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-utah").click(function() {
-            $( "#explore-immigration-__0__-permanants-utah" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-virginia").click(function() {
-            $( "#explore-immigration-__0__-permanants-virginia" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-oregon").click(function() {
-            $( "#explore-immigration-__0__-permanants-oregon" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-connecticut").click(function() {
-            $( "#explore-immigration-__0__-permanants-connecticut" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-montana").click(function() {
-            $( "#explore-immigration-__0__-permanants-montana" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-california").click(function() {
-            $( "#explore-immigration-__0__-permanants-california" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-massachusetts").click(function() {
-            $( "#explore-immigration-__0__-permanants-massachusetts" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-alaska").click(function() {
-            $( "#explore-immigration-__0__-permanants-alaska" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-vermont").click(function() {
-            $( "#explore-immigration-__0__-permanants-vermont" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-georgia").click(function() {
-            $( "#explore-immigration-__0__-permanants-georgia" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-pennsylvania").click(function() {
-            $( "#explore-immigration-__0__-permanants-pennsylvania" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-florida").click(function() {
-            $( "#explore-immigration-__0__-permanants-florida" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-hawaii").click(function() {
-            $( "#explore-immigration-__0__-permanants-hawaii" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-kentucky").click(function() {
-            $( "#explore-immigration-__0__-permanants-kentucky" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-missouri").click(function() {
-            $( "#explore-immigration-__0__-permanants-missouri" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-nebraska").click(function() {
-            $( "#explore-immigration-__0__-permanants-nebraska" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-new-hampshire").click(function() {
-            $( "#explore-immigration-__0__-permanants-new-hampshire" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-texas").click(function() {
-            $( "#explore-immigration-__0__-permanants-texas" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-west-virginia").click(function() {
-            $( "#explore-immigration-__0__-permanants-west-virginia" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-south-carolina").click(function() {
-            $( "#explore-immigration-__0__-permanants-south-carolina" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-ohio").click(function() {
-            $( "#explore-immigration-__0__-permanants-ohio" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-alabama").click(function() {
-            $( "#explore-immigration-__0__-permanants-alabama" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-permanants-new-mexico").click(function() {
-            $( "#explore-immigration-__0__-permanants-new-mexico" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-    });
-    </script>
-
-    <div id='explore-immigration-__0__' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"illegals"</code></td> 
+            <tr> <td><code>"Data"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-immigration-__0__-illegals'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td><a class='dialog-opener' id='btn-explore-immigration-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"naturalizations"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-immigration-__0__-naturalizations'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"permanants"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-immigration-__0__-permanants'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"year"</code></td> 
+            <tr> <td><code>"Year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2004</code></td> 
+                 <td><code>2005</code></td> 
                  <td></td> </tr>
             
         </table>
@@ -1860,28 +245,321 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-immigration-__0__-illegals").click(function() {
-            $( "#explore-immigration-__0__-illegals" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-immigration-__0__-Country").click(function() {
+            $( "#explore-immigration-__0__-Country" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-immigration-__0__-naturalizations").click(function() {
-            $( "#explore-immigration-__0__-naturalizations" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-immigration-__0__-Data").click(function() {
+            $( "#explore-immigration-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-immigration-__0__-permanants").click(function() {
-            $( "#explore-immigration-__0__-permanants" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-immigration-__0__-year").click(function() {
-            $( "#explore-immigration-__0__-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-immigration-__0__-Year").click(function() {
+            $( "#explore-immigration-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
     });
     </script>
+
+    <div id='explore-immigration-__0__-Data' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Enforcement"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-immigration-__0__-Data-Enforcement'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Legal permanant residences"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-immigration-__0__-Data-Legal-permanant-residences'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Naturalizations (Birth)"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>7815</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Refugees"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-immigration-__0__-Data-Refugees'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Nonimmigrant Admissions"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-immigration-__0__-Data-Nonimmigrant-Admissions'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-immigration-__0__-Data" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Enforcement").click(function() {
+            $( "#explore-immigration-__0__-Data-Enforcement" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Legal-permanant-residences").click(function() {
+            $( "#explore-immigration-__0__-Data-Legal-permanant-residences" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Naturalizations-(Birth)").click(function() {
+            $( "#explore-immigration-__0__-Data-Naturalizations-(Birth)" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Refugees").click(function() {
+            $( "#explore-immigration-__0__-Data-Refugees" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Nonimmigrant-Admissions").click(function() {
+            $( "#explore-immigration-__0__-Data-Nonimmigrant-Admissions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-immigration-__0__-Data-Refugees' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Arrived"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>-1</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Defensive Asylum"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Affirmative"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>-1</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-immigration-__0__-Data-Refugees" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Refugees-Arrived").click(function() {
+            $( "#explore-immigration-__0__-Data-Refugees-Arrived" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Refugees-Defensive-Asylum").click(function() {
+            $( "#explore-immigration-__0__-Data-Refugees-Defensive-Asylum" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Refugees-Affirmative").click(function() {
+            $( "#explore-immigration-__0__-Data-Refugees-Affirmative" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-immigration-__0__-Data-Legal-permanant-residences' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Last Residence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>29930</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Birth"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>21878</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-immigration-__0__-Data-Legal-permanant-residences" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Legal-permanant-residences-Last-Residence").click(function() {
+            $( "#explore-immigration-__0__-Data-Legal-permanant-residences-Last-Residence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Legal-permanant-residences-Birth").click(function() {
+            $( "#explore-immigration-__0__-Data-Legal-permanant-residences-Birth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-immigration-__0__-Data-Nonimmigrant-Admissions' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Birth"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>231171</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Last Residence"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>527264</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-immigration-__0__-Data-Nonimmigrant-Admissions" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Nonimmigrant-Admissions-Birth").click(function() {
+            $( "#explore-immigration-__0__-Data-Nonimmigrant-Admissions-Birth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Nonimmigrant-Admissions-Last-Residence").click(function() {
+            $( "#explore-immigration-__0__-Data-Nonimmigrant-Admissions-Last-Residence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-immigration-__0__-Data-Enforcement' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Non-criminal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1099</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Criminal"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>462</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Apprehended"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1486</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Inadmissable"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>41861</code></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-immigration-__0__-Data-Enforcement" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Enforcement-Non-criminal").click(function() {
+            $( "#explore-immigration-__0__-Data-Enforcement-Non-criminal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Enforcement-Criminal").click(function() {
+            $( "#explore-immigration-__0__-Data-Enforcement-Criminal" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Enforcement-Apprehended").click(function() {
+            $( "#explore-immigration-__0__-Data-Enforcement-Apprehended" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-immigration-__0__-Data-Enforcement-Inadmissable").click(function() {
+            $( "#explore-immigration-__0__-Data-Enforcement-Inadmissable" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="immigration.py?forcedownload=1" download="immigration.py" target="_blank">
+        <strong>immigration.py</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+    
+    <li><a href="immigration.db?forcedownload=1" download="immigration.db" target="_blank">
+        <strong>immigration.db</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 1 function you can use.
+    
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">immigration</span>
+<span class="n">list_of_record</span> <span class="o">=</span> <span class="n">immigration</span><span class="o">.</span><span class="n">get_records</span><span class="p">()</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_records' style='font-family:monospace'    >&nbsp;immigration.get_records()</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns data about immigration from all the years and countries.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+</ul>
+
+</div>
 
 
 

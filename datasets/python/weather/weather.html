@@ -171,80 +171,7 @@ Under the National Oceanic and Atmpospheric Administration, the National Weather
 </p>
 
     
-    <h3 id="downloads">Downloads</h3>
     
-<p>Download all of the following files.</p>
-
-<div class='row'>
-<div class="well col-md-6 col-md-offset-1">
-
-<ol>
-    
-    
-    <li><a href="weather.py?forcedownload=1" download="weather.py" target="_blank">
-        <strong>weather.py</strong>
-        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
-    </a></li>
-    
-    
-    <li><a href="weather.db?forcedownload=1" download="weather.db" target="_blank">
-        <strong>weather.db</strong>
-        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
-    </a></li>
-    
-</ol>
-</div>
-</div>
-    
-    
-    
-    <h3 id="usage">Usage</h3>
-    
-    This library has 1 function you can use.
-    
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">weather</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-
-
-
-
-    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
-
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">weather</span>
-<span class="c1"># These may be slow!</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-
-
-
-    
-    <h3 id="documentation">Documentation</h3>
-    
-<h4 id='get_weather' style='font-family:monospace'    >&nbsp;weather.get_weather(test=True)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns weather reports from the dataset.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-
-
-
 <h3 id="structure">Explore Structure</h3>
 
 
@@ -618,6 +545,79 @@ $(document).ready(function() {
     });
     </script>
 
+
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="weather.py?forcedownload=1" download="weather.py" target="_blank">
+        <strong>weather.py</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+    
+    <li><a href="weather.db?forcedownload=1" download="weather.db" target="_blank">
+        <strong>weather.db</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 1 function you can use.
+    
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">weather</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather</span><span class="p">()</span>
+</pre></div>
+
+
+
+
+    Additionally, some of the functions can return a sample of the Big Data using an extra argument. If you use this sampled Big Data, it may be much faster. When you are sure your code is correct, you can remove the argument to use the full dataset.
+
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">weather</span>
+<span class="c1"># These may be slow!</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">weather</span><span class="o">.</span><span class="n">get_weather</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_weather' style='font-family:monospace'    >&nbsp;weather.get_weather(test=False)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Returns weather reports from the dataset.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
 
 
 

@@ -103,6 +103,23 @@ class _Auxiliary(object):
 
 
 
+def get_all_surveys():
+    """
+    Returns all of the surveys.
+    
+    """
+    if False:
+        # If there was a Test version of this method, it would go here. But alas.
+        pass
+    else:
+        rows = _Constants._DATABASE.execute("SELECT data FROM drugs".format(
+            hardware=_Constants._HARDWARE))
+        data = [r[0] for r in rows]
+        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
+        
+        return _Auxiliary._byteify(data)
+        
+
 def get_surveys(question):
     """
     Given one of the survey questions, returns the associated data from respondents.
@@ -141,9 +158,19 @@ def _test_interfaces():
     from pprint import pprint as _pprint
     from timeit import default_timer as _default_timer
     # Production test
+    print("Production get_all_surveys")
+    start_time = _default_timer()
+    result = get_all_surveys()
+    
+    print("{} entries found.".format(len(result)))
+    _pprint(_Auxiliary._guess_schema(result))
+    
+    print("Time taken: {}".format(_default_timer() - start_time))
+    
+    # Production test
     print("Production get_surveys")
     start_time = _default_timer()
-    result = get_surveys("'Cigarette Use'")
+    result = get_surveys("Cigarette Use")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -157,13 +184,7 @@ if __name__ == '__main__':
     _parser.add_option("-t", "--test", action="store_true",
                       default=False,
                       help="Execute the interfaces to test them.")
-    _parser.add_option("-r", "--reset", action="store_true",
-                      default=False,
-                      help="Reset the cache")
     (_options, _args) = _parser.parse_args()
     
     if _options.test:
         _test_interfaces()
-
-    if _options.reset:
-        _modify_self()

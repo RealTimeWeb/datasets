@@ -57,6 +57,27 @@ interfaces:
     test:
         sql: SELECT data FROM cars WHERE make=? COLLATE NOCASE LIMIT {hardware}
         post: json()
-structures:
-    "cars.[0].Engine Information.Engine Statistics.Torque": lb/ft
-    
+comments:
+    Dimensions:
+        Height: Unknown values are stored as 0. Unfortunately, many cars do not report this data.
+        Length: Unknown values are stored as 0. Unfortunately, many cars do not report this data.
+        Width: Unknown values are stored as 0. Unfortunately, many cars do not report this data.
+    Engine Information:
+        Driveline: A string representing whether this is "Rear-wheel drive", "Front-wheel drive", or "All-wheel drive".
+        Engine Statistics:
+            Horsepower: A measure of the engine's power. A unit of power equal to 550 foot-pounds per second (745.7 watts).
+            Torque: The torque of the engine, measured in lb/ft. When an engine is said to make "200 lb-ft of torque", it means that 200 pounds of force on a 1-foot lever is needed to stop its motion.
+        Engine Type: How many cylinders are in this engine. Most cars are either a 6-cylinder or an 8-cylinder.
+        Hybrid: Whether this is a hybrid engine or not - that is, if it uses both an internal combustion engine and an electric motor.
+        Number of Forward Gears: The number of forward gears. If no information is available, it is coded as 0.
+        Transmission: The full name of this type of transmission, based on its Classification and number of forward gears.
+    Fuel Information:
+        City mph: The miles-per-gallon this car gets on average in cities.
+        Fuel Type: Whether this car takes "Gasoline", "Diesel fuel", "Electricity", "Compressed natural gas", or "E85" (a term that refers to high-level ethanol-gasoline blends containing 51%-83% ethanol). If it is unknown, it is left blank.
+        Highway mpg: The miles-per-gallon this car gets on average on highways.
+    Identification:
+        Classification: Whether this is a "Manual transmission" or an "Automatic transmission". If it is unknown, it is left blank.
+        ID: A unique ID for this particular car, using the year, make, model, and transmission type.
+        Make: The maker for this car.
+        Model Year: The specific name/year for this car.
+        Year: The year that this car was released.

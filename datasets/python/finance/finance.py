@@ -103,39 +103,7 @@ class _Auxiliary(object):
 
 
 
-def get_finances_by_state(state):
-    """
-    Retuns financial data about a single state.
-    
-    :param state: The name of the state (e.g., "Alaska").
-    :type state: str
-    """
-    
-    # Match it against recommend values
-    
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT state FROM finance").fetchall()]
-    if state.lower() not in potentials:
-        best_guesses = _difflib.get_close_matches(state, potentials)
-        if best_guesses:
-            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
-        else:
-            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
-    if False:
-        # If there was a Test version of this method, it would go here. But alas.
-        pass
-    else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM finance WHERE state=?".format(
-            hardware=_Constants._HARDWARE),
-            (state, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        data = data[0]
-        
-        return _Auxiliary._byteify(data)
-        
-
-def get_finances(test=True):
+def get_finances(test=False):
     """
     Returns financial data about all the states.
     
@@ -165,18 +133,9 @@ def _test_interfaces():
     from pprint import pprint as _pprint
     from timeit import default_timer as _default_timer
     # Production test
-    print("Production get_finances_by_state")
-    start_time = _default_timer()
-    result = get_finances_by_state("Alaska")
-    
-    _pprint(result)
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    
-    # Production test
     print("Production get_finances")
     start_time = _default_timer()
-    result = get_finances(test=False)
+    result = get_finances()
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -185,7 +144,7 @@ def _test_interfaces():
     # Test test
     print("Test get_finances")
     start_time = _default_timer()
-    result = get_finances()
+    result = get_finances(test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -199,13 +158,7 @@ if __name__ == '__main__':
     _parser.add_option("-t", "--test", action="store_true",
                       default=False,
                       help="Execute the interfaces to test them.")
-    _parser.add_option("-r", "--reset", action="store_true",
-                      default=False,
-                      help="Reset the cache")
     (_options, _args) = _parser.parse_args()
     
     if _options.test:
         _test_interfaces()
-
-    if _options.reset:
-        _modify_self()

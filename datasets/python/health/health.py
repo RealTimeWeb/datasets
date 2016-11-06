@@ -103,7 +103,7 @@ class _Auxiliary(object):
 
 
 
-def get_reports_by_year(year, test=True):
+def get_reports_by_year(year, test=False):
     """
     Returns information about the status of disease for the given year, from 1928 to 2011.
     
@@ -133,7 +133,7 @@ def get_reports_by_year(year, test=True):
         return _Auxiliary._byteify(data)
         
 
-def get_reports_by_disease(disease, test=True):
+def get_reports_by_disease(disease, test=False):
     """
     Returns information about the status of disease for the given disease.
     
@@ -169,7 +169,7 @@ def get_reports_by_disease(disease, test=True):
         return _Auxiliary._byteify(data)
         
 
-def get_reports_by_location(location, test=True):
+def get_reports_by_location(location, test=False):
     """
     Returns information about the status of disease for the given location.
     
@@ -205,7 +205,7 @@ def get_reports_by_location(location, test=True):
         return _Auxiliary._byteify(data)
         
 
-def get_all_reports(test=True):
+def get_all_reports(test=False):
     """
     Returns information about the status of disease for all locations, diseases, and years.
     
@@ -237,7 +237,7 @@ def _test_interfaces():
     # Production test
     print("Production get_reports_by_year")
     start_time = _default_timer()
-    result = get_reports_by_year("1990", test=False)
+    result = get_reports_by_year(1990)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -246,7 +246,7 @@ def _test_interfaces():
     # Test test
     print("Test get_reports_by_year")
     start_time = _default_timer()
-    result = get_reports_by_year("1990")
+    result = get_reports_by_year(1990, test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -256,7 +256,7 @@ def _test_interfaces():
     # Production test
     print("Production get_reports_by_disease")
     start_time = _default_timer()
-    result = get_reports_by_disease("'MUMPS'", test=False)
+    result = get_reports_by_disease("'MUMPS'")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -265,7 +265,7 @@ def _test_interfaces():
     # Test test
     print("Test get_reports_by_disease")
     start_time = _default_timer()
-    result = get_reports_by_disease("'MUMPS'")
+    result = get_reports_by_disease("'MUMPS'", test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -275,7 +275,7 @@ def _test_interfaces():
     # Production test
     print("Production get_reports_by_location")
     start_time = _default_timer()
-    result = get_reports_by_location("'Delaware'", test=False)
+    result = get_reports_by_location("'Delaware'")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -284,7 +284,7 @@ def _test_interfaces():
     # Test test
     print("Test get_reports_by_location")
     start_time = _default_timer()
-    result = get_reports_by_location("'Delaware'")
+    result = get_reports_by_location("'Delaware'", test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -294,7 +294,7 @@ def _test_interfaces():
     # Production test
     print("Production get_all_reports")
     start_time = _default_timer()
-    result = get_all_reports(test=False)
+    result = get_all_reports()
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -303,7 +303,7 @@ def _test_interfaces():
     # Test test
     print("Test get_all_reports")
     start_time = _default_timer()
-    result = get_all_reports()
+    result = get_all_reports(test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
@@ -317,13 +317,7 @@ if __name__ == '__main__':
     _parser.add_option("-t", "--test", action="store_true",
                       default=False,
                       help="Execute the interfaces to test them.")
-    _parser.add_option("-r", "--reset", action="store_true",
-                      default=False,
-                      help="Reset the cache")
     (_options, _args) = _parser.parse_args()
     
     if _options.test:
         _test_interfaces()
-
-    if _options.reset:
-        _modify_self()

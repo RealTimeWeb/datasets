@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -35,20 +36,6 @@ County Crime Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -69,17 +56,153 @@ County Crime Library (CORGIS Datasets Project)
 
 <div class="container">
 
-    <div class="page-header">
-        
-        <img class="img-rounded pull-right" src="county_crime.png" alt="County Crime" style="max-width: 128px; max-height: 128px;">
-        
-        <h1>County Crime Library</h1>
-        <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
-        <span class="text-muted">By Ryan Whitcomb</span><br>
-        <span class="text-muted">Version 1, created 6/1/2016</span><br>
-        <span class="text-muted">Tags: crime, burglary, larceny, motor, property, violent, assault, murder, rape, robbery</span><br>
-    </div>
     
+    
+<style>
+pre .hll { background-color: #ffffcc }
+pre  { background: #f0f0f0; }
+pre .c { color: #60a0b0; font-style: italic } /* Comment */
+pre .err { border: 1px solid #FF0000 } /* Error */
+pre .k { color: #007020; font-weight: bold } /* Keyword */
+pre .o { color: #666666 } /* Operator */
+pre .ch { color: #60a0b0; font-style: italic } /* Comment.Hashbang */
+pre .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+pre .cp { color: #007020 } /* Comment.Preproc */
+pre .cpf { color: #60a0b0; font-style: italic } /* Comment.PreprocFile */
+pre .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+pre .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+pre .gd { color: #A00000 } /* Generic.Deleted */
+pre .ge { font-style: italic } /* Generic.Emph */
+pre .gr { color: #FF0000 } /* Generic.Error */
+pre .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre .gi { color: #00A000 } /* Generic.Inserted */
+pre .go { color: #888888 } /* Generic.Output */
+pre .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+pre .gs { font-weight: bold } /* Generic.Strong */
+pre .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre .gt { color: #0044DD } /* Generic.Traceback */
+pre .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+pre .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+pre .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+pre .kp { color: #007020 } /* Keyword.Pseudo */
+pre .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+pre .kt { color: #902000 } /* Keyword.Type */
+pre .m { color: #40a070 } /* Literal.Number */
+pre .s { color: #4070a0 } /* Literal.String */
+pre .na { color: #4070a0 } /* Name.Attribute */
+pre .nb { color: #007020 } /* Name.Builtin */
+pre .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+pre .no { color: #60add5 } /* Name.Constant */
+pre .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+pre .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+pre .ne { color: #007020 } /* Name.Exception */
+pre .nf { color: #06287e } /* Name.Function */
+pre .nl { color: #002070; font-weight: bold } /* Name.Label */
+pre .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+pre .nt { color: #062873; font-weight: bold } /* Name.Tag */
+pre .nv { color: #bb60d5 } /* Name.Variable */
+pre .ow { color: #007020; font-weight: bold } /* Operator.Word */
+pre .w { color: #bbbbbb } /* Text.Whitespace */
+pre .mb { color: #40a070 } /* Literal.Number.Bin */
+pre .mf { color: #40a070 } /* Literal.Number.Float */
+pre .mh { color: #40a070 } /* Literal.Number.Hex */
+pre .mi { color: #40a070 } /* Literal.Number.Integer */
+pre .mo { color: #40a070 } /* Literal.Number.Oct */
+pre .sb { color: #4070a0 } /* Literal.String.Backtick */
+pre .sc { color: #4070a0 } /* Literal.String.Char */
+pre .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+pre .s2 { color: #4070a0 } /* Literal.String.Double */
+pre .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+pre .sh { color: #4070a0 } /* Literal.String.Heredoc */
+pre .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+pre .sx { color: #c65d09 } /* Literal.String.Other */
+pre .sr { color: #235388 } /* Literal.String.Regex */
+pre .s1 { color: #4070a0 } /* Literal.String.Single */
+pre .ss { color: #517918 } /* Literal.String.Symbol */
+pre .bp { color: #007020 } /* Name.Builtin.Pseudo */
+pre .vc { color: #bb60d5 } /* Name.Variable.Class */
+pre .vg { color: #bb60d5 } /* Name.Variable.Global */
+pre .vi { color: #bb60d5 } /* Name.Variable.Instance */
+pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { background-color: #ffffcc }
+.syntax pre  { background: #f0f0f0; }
+.syntax pre .c { color: #60a0b0; font-style: italic } /* Comment */
+.syntax pre .err { border: 1px solid #FF0000 } /* Error */
+.syntax pre .k { color: #007020; font-weight: bold } /* Keyword */
+.syntax pre .o { color: #666666 } /* Operator */
+.syntax pre .ch { color: #60a0b0; font-style: italic } /* Comment.Hashbang */
+.syntax pre .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.syntax pre .cp { color: #007020 } /* Comment.Preproc */
+.syntax pre .cpf { color: #60a0b0; font-style: italic } /* Comment.PreprocFile */
+.syntax pre .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.syntax pre .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.syntax pre .gd { color: #A00000 } /* Generic.Deleted */
+.syntax pre .ge { font-style: italic } /* Generic.Emph */
+.syntax pre .gr { color: #FF0000 } /* Generic.Error */
+.syntax pre .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.syntax pre .gi { color: #00A000 } /* Generic.Inserted */
+.syntax pre .go { color: #888888 } /* Generic.Output */
+.syntax pre .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.syntax pre .gs { font-weight: bold } /* Generic.Strong */
+.syntax pre .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.syntax pre .gt { color: #0044DD } /* Generic.Traceback */
+.syntax pre .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.syntax pre .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.syntax pre .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.syntax pre .kp { color: #007020 } /* Keyword.Pseudo */
+.syntax pre .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.syntax pre .kt { color: #902000 } /* Keyword.Type */
+.syntax pre .m { color: #40a070 } /* Literal.Number */
+.syntax pre .s { color: #4070a0 } /* Literal.String */
+.syntax pre .na { color: #4070a0 } /* Name.Attribute */
+.syntax pre .nb { color: #007020 } /* Name.Builtin */
+.syntax pre .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.syntax pre .no { color: #60add5 } /* Name.Constant */
+.syntax pre .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.syntax pre .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.syntax pre .ne { color: #007020 } /* Name.Exception */
+.syntax pre .nf { color: #06287e } /* Name.Function */
+.syntax pre .nl { color: #002070; font-weight: bold } /* Name.Label */
+.syntax pre .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.syntax pre .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.syntax pre .nv { color: #bb60d5 } /* Name.Variable */
+.syntax pre .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.syntax pre .w { color: #bbbbbb } /* Text.Whitespace */
+.syntax pre .mb { color: #40a070 } /* Literal.Number.Bin */
+.syntax pre .mf { color: #40a070 } /* Literal.Number.Float */
+.syntax pre .mh { color: #40a070 } /* Literal.Number.Hex */
+.syntax pre .mi { color: #40a070 } /* Literal.Number.Integer */
+.syntax pre .mo { color: #40a070 } /* Literal.Number.Oct */
+.syntax pre .sb { color: #4070a0 } /* Literal.String.Backtick */
+.syntax pre .sc { color: #4070a0 } /* Literal.String.Char */
+.syntax pre .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.syntax pre .s2 { color: #4070a0 } /* Literal.String.Double */
+.syntax pre .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.syntax pre .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.syntax pre .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.syntax pre .sx { color: #c65d09 } /* Literal.String.Other */
+.syntax pre .sr { color: #235388 } /* Literal.String.Regex */
+.syntax pre .s1 { color: #4070a0 } /* Literal.String.Single */
+.syntax pre .ss { color: #517918 } /* Literal.String.Symbol */
+.syntax pre .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.syntax pre .vc { color: #bb60d5 } /* Name.Variable.Class */
+.syntax pre .vg { color: #bb60d5 } /* Name.Variable.Global */
+.syntax pre .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.syntax pre .il { color: #40a070 } /* Literal.Number.Integer.Long */
+</style>
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="county_crime.png" alt="County Crime" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>County Crime Python Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Ryan Whitcomb</span><br>
+    <span class="text-muted">Version 1, created 6/1/2016</span><br>
+    <span class="text-muted">Tags: crime, burglary, larceny, motor, property, violent, assault, murder, rape, robbery</span><br>
+</div>
+    
+    <!--
     <h3>Table of Contents</h3>
     <ol>
         <li><a href="#overview">Overview</a></li>
@@ -93,147 +216,22 @@ County Crime Library (CORGIS Datasets Project)
         </ol></li>
         
     </ol>
+    -->
     
     <h3 id="overview">Overview</h3>
-    
-    <p>
-    From the Unified Crime Reporting Statistics and  under the collaboration of the U.S. Department of Justice and the Federal Bureau of Investigation information crime statistics are available for public review.  The following data set has information on the crime rates and totals for counties across the United States for a wide range of years.  The crime reports are divided into two main categories: property and violent crime.  Property crime refers to burglary, larceny, and motor related crime while violent crime refers to assault, murder, rape, and robbery.
+<p>
+From the Unified Crime Reporting Statistics and  under the collaboration of the U.S. Department of Justice and the Federal Bureau of Investigation information crime statistics are available for public review.  The following data set has information on the crime rates and totals for counties across the United States for a wide range of years.  The crime reports are divided into two main categories: property and violent crime.  Property crime refers to burglary, larceny, and motor related crime while violent crime refers to assault, murder, rape, and robbery.
 
-    </p>
-    
-    
-    <p>
-    <i>http://www.ucrdatatool.gov/Search/Crime/Local/JurisbyJurisStepTwo.cfm</i>
-    </p>
-    
-    
-    <h3 id="downloads">Downloads</h3>
-    
-    <p>Download all of the following files.</p>
-    
-    <div class='row'>
-    <div class="well col-md-6 col-md-offset-1">
-    
-    <ol>
-        <li><a href="county_crime.py?forcedownload=1" download="county_crime.py" target="_blank">
-            <strong>county_crime.py </strong>
-            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
-        </a></li>
-        <li><a href="county_crime.db?forcedownload=1" download="county_crime.db" target="_blank">
-            <strong>county_crime.db </strong>
-            <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
-        </a></li>
-    </ol>
-    </div>
-    </div>
-    
-    <h3 id="usage">Usage</h3>
-    
-    This library has 3 functions you can use.
-    
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">county_crime</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">county_crime</span><span class="o">.</span><span class="n">get_all_crimes</span><span class="p">()</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">county_crime</span><span class="o">.</span><span class="n">get_crime_by_county</span><span class="p">(</span><span class="s">&quot;Alabaster Police Dept&quot;</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">county_crime</span><span class="o">.</span><span class="n">get_crime_by_year</span><span class="p">(</span><span class="s">&quot;1984&quot;</span><span class="p">)</span>
-</pre></div>
+</p>
 
-
-
-
-    Additionally, some of the functions can optionally return Big Data using an extra argument. If you use this Big Data, it may be much slower. Wait until you are sure your code is correct before using these examples.
-
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">county_crime</span>
-<span class="c"># These may be slow!</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">county_crime</span><span class="o">.</span><span class="n">get_all_crimes</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">county_crime</span><span class="o">.</span><span class="n">get_crime_by_county</span><span class="p">(</span><span class="s">&quot;Alabaster Police Dept&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">county_crime</span><span class="o">.</span><span class="n">get_crime_by_year</span><span class="p">(</span><span class="s">&quot;1984&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
-</pre></div>
-
-
+<p>
+<i>http://www.ucrdatatool.gov/Search/Crime/Local/JurisbyJurisStepTwo.cfm</i>
+</p>
 
     
-    <h3 id="documentation">Documentation</h3>
     
-<h4 id='get_all_crimes'>county_crime.get_all_crimes(test=True)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Gets a list of all the crime reports in the database.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='get_crime_by_county'>county_crime.get_crime_by_county(department, test=True)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Given the name of an county, returns all the crime reports for that county in the database.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>department</b>: <i>str</i></h5>
-    <p class="list-group-item-text">The name of the county.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='get_crime_by_year'>county_crime.get_crime_by_year(year, test=True)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Given a year, returns all the crime reports for that year in the database.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>year</b>: <i>int</i></h5>
-    <p class="list-group-item-text">The year to get reports.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-
-
 <h3 id="structure">Explore Structure</h3>
+
 
 <div class='row'>
     <div class='col-md-2'>
@@ -320,12 +318,12 @@ $(document).ready(function() {
             <tr> <td><code>"Department"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"Alabaster Police Dept"</code></td> 
-                 <td></td> </tr>
+                 <td>The long name of the police department that this report was made for.</td> </tr>
             
             <tr> <td><code>"State"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"Alabama"</code></td> 
-                 <td></td> </tr>
+                 <td>The long name of the state that this report was made for.</td> </tr>
             
             <tr> <td><code>"Data"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
@@ -335,7 +333,7 @@ $(document).ready(function() {
             <tr> <td><code>"Year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>1984</code></td> 
-                 <td></td> </tr>
+                 <td>The year that this report was made in.</td> </tr>
             
         </table>
     </div>
@@ -412,27 +410,27 @@ $(document).ready(function() {
             <tr> <td><code>"All"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>18</code></td> 
-                 <td></td> </tr>
+                 <td>This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td> </tr>
             
             <tr> <td><code>"Murder"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>1</code></td> 
-                 <td></td> </tr>
+                 <td>This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td> </tr>
             
             <tr> <td><code>"Rape"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>1</code></td> 
-                 <td></td> </tr>
+                 <td>This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td> </tr>
             
             <tr> <td><code>"Robbery"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>2</code></td> 
-                 <td></td> </tr>
+                 <td>This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.</td> </tr>
             
             <tr> <td><code>"Assault"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>14</code></td> 
-                 <td></td> </tr>
+                 <td>This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.</td> </tr>
             
         </table>
     </div>
@@ -478,22 +476,22 @@ $(document).ready(function() {
             <tr> <td><code>"Burglary"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>234.1</code></td> 
-                 <td></td> </tr>
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td> </tr>
             
             <tr> <td><code>"Larceny"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>572.2</code></td> 
-                 <td></td> </tr>
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or theft of personal property.</td> </tr>
             
             <tr> <td><code>"All"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>897.3</code></td> 
-                 <td></td> </tr>
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td> </tr>
             
             <tr> <td><code>"Motor"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>91.0</code></td> 
-                 <td></td> </tr>
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where a motor vehicle was stolen.</td> </tr>
             
         </table>
     </div>
@@ -534,12 +532,12 @@ $(document).ready(function() {
             <tr> <td><code>"Population"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>7690</code></td> 
-                 <td></td> </tr>
+                 <td>The number of people living in this state at the time the report was created.</td> </tr>
             
             <tr> <td><code>"Rates"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
                  <td><a class='dialog-opener' id='btn-explore-crime-__0__-Data-Rates'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td>Rates are the number of reported offenses per 100,000 population.</td> </tr>
+                 <td></td> </tr>
             
             <tr> <td><code>"Totals"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
@@ -580,22 +578,22 @@ $(document).ready(function() {
             <tr> <td><code>"Burglary"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>18</code></td> 
-                 <td></td> </tr>
+                 <td>This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td> </tr>
             
             <tr> <td><code>"Larceny"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>44</code></td> 
-                 <td></td> </tr>
+                 <td>This property reflects the number of burglaries, or theft of personal property.</td> </tr>
             
             <tr> <td><code>"All"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>69</code></td> 
-                 <td></td> </tr>
+                 <td>This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td> </tr>
             
             <tr> <td><code>"Motor"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>7.0</code></td> 
-                 <td></td> </tr>
+                 <td>This property reflects the number of crimes where a motor vehicle was stolen.</td> </tr>
             
         </table>
     </div>
@@ -636,27 +634,27 @@ $(document).ready(function() {
             <tr> <td><code>"All"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>234.1</code></td> 
-                 <td></td> </tr>
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td> </tr>
             
             <tr> <td><code>"Murder"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>13.0</code></td> 
-                 <td></td> </tr>
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td> </tr>
             
             <tr> <td><code>"Rape"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>13.0</code></td> 
-                 <td></td> </tr>
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td> </tr>
             
             <tr> <td><code>"Robbery"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>26.0</code></td> 
-                 <td></td> </tr>
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.</td> </tr>
             
             <tr> <td><code>"Assault"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>182.1</code></td> 
-                 <td></td> </tr>
+                 <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.</td> </tr>
             
         </table>
     </div>
@@ -694,6 +692,140 @@ $(document).ready(function() {
         
     });
     </script>
+
+
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="county_crime.py?forcedownload=1" download="county_crime.py" target="_blank">
+        <strong>county_crime.py</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+    
+    <li><a href="county_crime.db?forcedownload=1" download="county_crime.db" target="_blank">
+        <strong>county_crime.db</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Usage</h3>
+    
+    This library has 3 functions you can use.
+    
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">county_crime</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">county_crime</span><span class="o">.</span><span class="n">get_all_crimes</span><span class="p">()</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">county_crime</span><span class="o">.</span><span class="n">get_crime_by_county</span><span class="p">(</span><span class="s2">&quot;Alabaster Police Dept&quot;</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">county_crime</span><span class="o">.</span><span class="n">get_crime_by_year</span><span class="p">(</span><span class="mi">1984</span><span class="p">)</span>
+</pre></div>
+
+
+
+
+    Additionally, some of the functions can return a sample of the Big Data using an extra argument. If you use this sampled Big Data, it may be much faster. When you are sure your code is correct, you can remove the argument to use the full dataset.
+
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">county_crime</span>
+<span class="c1"># These may be slow!</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">county_crime</span><span class="o">.</span><span class="n">get_all_crimes</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">county_crime</span><span class="o">.</span><span class="n">get_crime_by_county</span><span class="p">(</span><span class="s2">&quot;Alabaster Police Dept&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">county_crime</span><span class="o">.</span><span class="n">get_crime_by_year</span><span class="p">(</span><span class="mi">1984</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+
+
+    
+    <h3 id="documentation">Documentation</h3>
+    
+<h4 id='get_all_crimes' style='font-family:monospace'    >&nbsp;county_crime.get_all_crimes(test=False)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Gets a list of all the crime reports in the database.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+<h4 id='get_crime_by_county' style='font-family:monospace'    >&nbsp;county_crime.get_crime_by_county(department, test=False)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Given the name of an county, returns all the crime reports for that county in the database.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>department</b>: <i>str</i></h5>
+    <p class="list-group-item-text">The name of the county.
+    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
+    </p>
+</li>
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
+
+<h4 id='get_crime_by_year' style='font-family:monospace'    >&nbsp;county_crime.get_crime_by_year(year, test=False)</h4>
+
+<div class='row'>
+<div class='col-md-offset-1'>
+Given a year, returns all the crime reports for that year in the database.
+</div>
+<br>
+
+<ul class="list-group col-md-6 col-md-offset-1">
+
+<li class="list-group-item">
+    <h5 class="list-group-item-heading"><b>year</b>: <i>int</i></h5>
+    <p class="list-group-item-text">The year to get reports.
+    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
+    </p>
+</li>
+
+
+<li class="list-group-item list-group-item-warning">
+    <span class="badge">optional</span>
+    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
+    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
+</li>
+
+</ul>
+
+</div>
 
 
 
