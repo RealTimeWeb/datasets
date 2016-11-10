@@ -4,7 +4,7 @@ metadata:
     builder: 2
     author: Austin Cory Bart <acbart@vt.edu>
     datetime: 11/1/2015
-    tags: [immigration, naturalization, illegals, permanants, united states, us]
+    tags: [immigration, naturalization, permanants, united states, us]
     description:
         short: A dataset about the immigration of foreign nationals to the United States.
         overview: >
