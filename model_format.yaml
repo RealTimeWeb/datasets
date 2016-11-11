@@ -13,13 +13,48 @@ metadata:
     icon: (string) The filename of the icon file for this dataset.
     tags: (list of string) A list of keywords that can be used to search for this dataset.
 locals:
-    _: A list of the actual data files available for this dataset. Historically, this was a list because multiple data files could be associated with a single dataset. In practice, that was a nightmare and we don't do that. So this is typically only one data file.
-    name: 
-    
+    _: (list of objects) A list of the actual data files available for this dataset. Historically, this was a list because multiple data files could be associated with a single dataset. In practice, that was a nightmare and we don't do that. So this is typically only one data file.
+    name: (string) The name of this local dataset, often identical to the name of the dataset itself. It would really only be different if there needed to be more than one data file.
+    file: (string) The full path to the data file.
+    type: (string) The type of the data file. In theory, other formats were to be availabel (e.g., CSV), but in practice JSON is perfect.
+    row: (string) A description of what a single row of the dataset looks like, for humans. This is used by some Target Builders (e.g., the Visualizer) to explain the dataset better. It's also used to name the top-level class in the Java libraries (and other statically typed libraries)
+    order: (string) A description of how the dataset is sorted, for humans. This is used by some Target Builders (e.g., the Visualizer) to explain the dataset better.
+    index:
+        _: (list of objects) A dataset can optionally have an index to more efficiently access certain slices of the data. This is particularly useful for the Visualizer.
+        name: (string) The name that this index will be given.
+        location: (string) A representative JSON Path into the dataset where the data should be indexed against (e.g., "school_scores.[0].State.Name"). Must not contain sublist elements.
 interfaces:
-    _: 
-    
-comments:
-    _:
+    _: (list of objects) A list of the ways that this dataset can be accessed. Historically, this would allow multiple methods for accessing data, including HTTP APIs.
+    name: (string) The name of the interface for accessing the data. This will often be translated into a function for the end-user.
+    returns: (string) The file type that will be returned for this dataset. Any special objects should be consistent with the Local Row attribute from above. For example, if the row was "record", then this interface might return "list[record]".
+    description: (string) A description of what this interface does, meant for the end-user.
+    production:
+        _: 
+        sql: (string) A SQL query that will be applied by the interface to actually retrieve data from the database. It can reference tables that are named via the ``local'' field above. Most of the time, this will be very straightforward, to just return the entire dataset.
+        http: (string) Historically, it was going to be possible to access online data sources through these interfaces. That ended up not being particularly valuable, and the feature was never completed.
+        post: (string) A bit of custom Bark script that can be used to post-process the result of the SQL query. Bark was meant to be a mini-language to apply simple filters. There isn't really much it can do, but the most common one is to convert the result from a raw string to JSON (e.g., "json()") or to convert it to JSON and then access a specific field (e.g., "json()|jsonpath(school_scores.[0].State.Name)").
+        pre: (string) A bit of custom Bark script that can be used preprocess the dataset returned by the dataset.
+    test:
+        _: Identical to the `production` field, except it will only be used with test data.
+    args:
+        _: (list of objects) The arguments that will be available for this interface.
+        name: (string) The name of the argument, ready to be sluggified for the language.
+        type: (string) What data type the argument should be (typically a primitive value such as int).
+        default: (any) Optionaly field to use as the default value for the call in the documentation, as an example.
+        matches: (string) This field is a SQL string that will allow validation for the given argument. Typically, this is used to make a suggestion about a mispelling or something.
+        description: (string) A human-ready description of this argument.
+    cache: (list) I'll be honest, I don't know what this was meant for.
 structures:
-    _:
+    _: This is where comments and explanations of individual dataset fields comes in. There are two types of structures.
+    dictionaries:
+        _: (list of objects) Any dictionary nested anywhere inside the dataset gets an entry here. We require that dictionaries have unique names, unless they have identical structures!
+        name: The name of the dictionary, ready to be sluggified as needed.
+        fields:
+            _: (list of objects) The fields in this dictionary.
+            type: (string) The type of the value of this field, which might be a primitive (e.g., int), another dictionary, or even a list.
+            key: (string) The name of this field, ready to be sluggified.
+            example: (string) The value taken from the first row, used as an example in documentation, typically.
+            path: (string) The full JSON path to this key.
+            comment: (string) Any associated metadata that's available for this particular field.
+    lists:
+        _: (list of objects) Any lists that were found are described here. This doesn't have much use, I forget why it's here.
