@@ -1,6 +1,6 @@
 '''
 
-name: validate.py
+name: compile.py
 author: acbart
 version: 2
 

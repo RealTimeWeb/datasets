@@ -1,5 +1,17 @@
 from __future__ import print_function
 
+'''
+
+name: builder.py
+author: acbart
+version: 3
+
+This is the main point of entry for the application. This file is mostly
+responsible for parsing command line arguments, calling the compilation,
+passing the result to the correct target builder, and then updating the index.
+
+'''
+
 import os
 import argparse
 import yaml
@@ -9,6 +21,7 @@ import glob
 from compile import Compiler
 from auxiliary import to_dict
 from build import build_dir
+# Target builders
 from languages.build_python import build_python
 from languages.build_racket import build_racket
 from languages.build_csv import build_csv
@@ -20,6 +33,7 @@ from languages.build_visualizer import build_visualizer
 from languages.build_blockpy import build_blockpy
 from languages.build_index import add_to_index, rebuild_index, reconstruct_index
 
+# Optional progress bars
 try:
     from tqdm import tqdm
 except ImportError:
@@ -28,6 +42,7 @@ except ImportError:
 
 if __name__ == '__main__':
 
+    # Blacklist for disabling certain datasets
     with open('blacklist.txt') as blacklist_file:
         blacklist = [item.strip() for item in blacklist_file.readlines()]
     
@@ -56,6 +71,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
+    # Mass control over datasets
     if args.all:
         specs = glob.glob(args.spec+'*.corgis')
         specs = [spec for spec in specs if os.path.basename(spec) not in blacklist]
@@ -86,6 +102,10 @@ if __name__ == '__main__':
             # print("*"*10)
             language_target = args.language.lower()
             compiled_dict = to_dict(compiled)
+            
+            #
+            # Target Builder Dispatcher
+            #
             if language_target == "python":
                 files, moves = build_python(compiled_dict, args.fast)
             elif language_target == "csv":

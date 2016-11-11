@@ -1,0 +1,25 @@
+metadata:
+    _: Information about the dataset, such as its name and version are present here.
+    name: (string) The full name of the dataset, including spaces and capitilization. Target Builders are responsible for sluggifying the dataset name as needed.
+    author: (string) A list of names of the authors who have been involved in creating this dataset, separated by a comma.
+    version: (int) A number indicating the current version of this dataset, meant to be incremented each time there are changes.
+    datetime: (string) A date time indicating when this dataset was last updated, meant to be updated by hand.
+    hardware: (int) A number indicating the default limit to restrict the length of datasets when they are sampled (e.g., only the first 1000 elements).
+    description:
+        _: A set of high-level descriptions of the dataset, meant for humans.
+        overview: The main description of the dataset, should probably be a few paragraphs. This gives any necessary background and context for any users of the dataset.
+        short: A short, 1-2 sentence description of the dataset, meant to give a quick idea of what it is about.
+    appendix: (list of string) A list of filenames in the languages' directory that should be included.
+    icon: (string) The filename of the icon file for this dataset.
+    tags: (list of string) A list of keywords that can be used to search for this dataset.
+locals:
+    _: A list of the actual data files available for this dataset. Historically, this was a list because multiple data files could be associated with a single dataset. In practice, that was a nightmare and we don't do that. So this is typically only one data file.
+    name: 
+    
+interfaces:
+    _: 
+    
+comments:
+    _:
+structures:
+    _:
