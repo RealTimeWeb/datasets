@@ -1,1 +1,5306 @@
-[{"state": "alabama", "data": {"attendance": {"average minutes": 61768.53846, "average teacher rate": 93.38461538, "average student rate": 96}, "funding": {"expenditures": 7646087117, "revenue": 7239690678}, "score": {"reading": [{"grade": 4, "scale score": 216}, {"grade": 8, "scale score": 252}], "math": [{"grade": 4, "scale score": 228}, {"grade": 8, "scale score": 269}], "science": [{"grade": 4, "scale score": 142}, {"grade": 8, "scale score": 138}], "writing": [{"grade": 4, "scale score": 140}, {"grade": 8, "scale score": 148}]}, "location": {"latitude": 32.3182314, "longitude": -86.902298}, "enrollment": {"teachers": 49363.24, "schools": 1615, "students": {"all": 755552, "year": [8179, 57665, 58448, 56699, 57216, 59117, 59897, 59157, 59242, 57992, 62615, 57644, 51962, 49719], "race": {"hispanic": 35389, "native american": 6102, "white": 440519, "black": 261255, "asian": 9753, "biracial": 2534}, "gender": {"male": 387549, "female": 368003}, "other": {"ungraded students": "", "individualized education program": 81216, "free lunch eligible": 356929, "lep/ell students": 17559, "reduced-price lunch eligible": 45457}}, "staff": 95144.48, "student teacher ratio": 15.31}}}, {"state": "alaska", "data": {"attendance": {"average minutes": 67104.71429, "average teacher rate": 91, "average student rate": 81.85714286}, "funding": {"expenditures": 2363392122, "revenue": 2338215421}, "score": {"reading": [{"grade": 4, "scale score": 214}, {"grade": 8, "scale score": 259}], "math": [{"grade": 4, "scale score": 237}, {"grade": 8, "scale score": 283}], "science": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": ""}], "writing": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": ""}]}, "location": {"latitude": 64.2008413, "longitude": -149.4936733}, "enrollment": {"teachers": 8170.64, "schools": 518, "students": {"all": 132104, "year": [2990, 10120, 9991, 10006, 9787, 9917, 9988, 9933, 9636, 9622, 10023, 9723, 10725, 9643], "race": {"hispanic": 7802, "native american": 30433, "white": 68967, "black": 4788, "asian": 10556, "biracial": 9558}, "gender": {"male": 68169, "female": 63935}, "other": {"ungraded students": "", "individualized education program": 18048, "free lunch eligible": 42028, "lep/ell students": 14963, "reduced-price lunch eligible": 8673}}, "staff": 18102.1, "student teacher ratio": 16.17}}}, {"state": "arizona", "data": {"attendance": {"average minutes": 69632.68421, "average teacher rate": 93.68421053, "average student rate": 89.05263158}, "funding": {"expenditures": 10043771219, "revenue": 10069959317}, "score": {"reading": [{"grade": 4, "scale score": 210}, {"grade": 8, "scale score": 255}], "math": [{"grade": 4, "scale score": 230}, {"grade": 8, "scale score": 277}], "science": [{"grade": 4, "scale score": 139}, {"grade": 8, "scale score": 140}], "writing": [{"grade": 4, "scale score": 140}, {"grade": 8, "scale score": 148}]}, "location": {"latitude": 34.0489281, "longitude": -111.0937311}, "enrollment": {"teachers": 50030.62, "schools": 2380, "students": {"all": 1071751, "year": [8554, 82860, 84473, 83544, 82485, 82862, 82690, 82305, 81445, 80636, 82304, 79842, 76275, 81326], "race": {"hispanic": 452283, "native american": 55312, "white": 459348, "black": 59549, "asian": 32427, "biracial": 12832}, "gender": {"male": 551429, "female": 520322}, "other": {"ungraded students": 150, "individualized education program": 125806, "free lunch eligible": 374905, "lep/ell students": 76320, "reduced-price lunch eligible": 107139}}, "staff": 96622.35, "student teacher ratio": 21.42}}}, {"state": "arkansas", "data": {"attendance": {"average minutes": 92459.42857, "average teacher rate": 89, "average student rate": 93.28571429}, "funding": {"expenditures": 5275686582, "revenue": 5160400914}, "score": {"reading": [{"grade": 4, "scale score": 217}, {"grade": 8, "scale score": 258}], "math": [{"grade": 4, "scale score": 238}, {"grade": 8, "scale score": 276}], "science": [{"grade": 4, "scale score": 147}, {"grade": 8, "scale score": 144}], "writing": [{"grade": 4, "scale score": 145}, {"grade": 8, "scale score": 151}]}, "location": {"latitude": 35.20105, "longitude": -91.8318334}, "enrollment": {"teachers": 34272.8, "schools": 1128, "students": {"all": 482114, "year": [14059, 37701, 37651, 36770, 36624, 36873, 36628, 36591, 36306, 36237, 37807, 35280, 32739, 30330], "race": {"hispanic": 47340, "native american": 3369, "white": 312372, "black": 103637, "asian": 8979, "biracial": 6417}, "gender": {"male": 246682, "female": 235432}, "other": {"ungraded students": 518, "individualized education program": 64883, "free lunch eligible": 246451, "lep/ell students": 31537, "reduced-price lunch eligible": 45157}}, "staff": 72184.8, "student teacher ratio": 14.07}}}, {"state": "california", "data": {"attendance": {"average minutes": 63042.71739, "average teacher rate": 89.85869565, "average student rate": 90.0326087}, "funding": {"expenditures": 68479096372, "revenue": 64130241939}, "score": {"reading": [{"grade": 4, "scale score": 209}, {"grade": 8, "scale score": 251}], "math": [{"grade": 4, "scale score": 232}, {"grade": 8, "scale score": 270}], "science": [{"grade": 4, "scale score": 137}, {"grade": 8, "scale score": 136}], "writing": [{"grade": 4, "scale score": 146}, {"grade": 8, "scale score": 148}]}, "location": {"latitude": 36.778261, "longitude": -119.4179324}, "enrollment": {"teachers": 260806.3, "schools": 10340, "students": {"all": 6289578, "year": [72404, 468036, 477086, 470001, 461967, 463691, 469800, 467271, 463505, 476639, 510011, 502452, 488530, 492545], "race": {"hispanic": 3197490, "native american": 43546, "white": 1655539, "black": 416299, "asian": 724420, "biracial": 179880}, "gender": {"male": 3193286, "female": 3023888}, "other": {"ungraded students": 5640, "individualized education program": 662508, "free lunch eligible": 2848583, "lep/ell students": 0, "reduced-price lunch eligible": 487302}}, "staff": 530337.1, "student teacher ratio": 24.12}}}, {"state": "colorado", "data": {"attendance": {"average minutes": 62790.04762, "average teacher rate": 76.80952381, "average student rate": 77}, "funding": {"expenditures": 8970879441, "revenue": 8852609203}, "score": {"reading": [{"grade": 4, "scale score": 224}, {"grade": 8, "scale score": 266}], "math": [{"grade": 4, "scale score": 243}, {"grade": 8, "scale score": 287}], "science": [{"grade": 4, "scale score": 155}, {"grade": 8, "scale score": 155}], "writing": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": 161}]}, "location": {"latitude": 39.5500507, "longitude": -105.7820674}, "enrollment": {"teachers": 48542.99, "schools": 1835, "students": {"all": 843316, "year": [30593, 65182, 65665, 65885, 64238, 63819, 63328, 61755, 60928, 59684, 62258, 60775, 58307, 60899], "race": {"hispanic": 266098, "native american": 7452, "white": 479327, "black": 40537, "asian": 26337, "biracial": 23565}, "gender": {"male": 432270, "female": 411046}, "other": {"ungraded students": "", "individualized education program": 84710, "free lunch eligible": 279259, "lep/ell students": 99804, "reduced-price lunch eligible": 57166}}, "staff": 101426.27, "student teacher ratio": 17.37}}}, {"state": "connecticut", "data": {"attendance": {"average minutes": 61105.71429, "average teacher rate": 87.85714286, "average student rate": 88.42857143}, "funding": {"expenditures": 9932181078, "revenue": 9895487089}, "score": {"reading": [{"grade": 4, "scale score": 227}, {"grade": 8, "scale score": 267}], "math": [{"grade": 4, "scale score": 245}, {"grade": 8, "scale score": 289}], "science": [{"grade": 4, "scale score": 155}, {"grade": 8, "scale score": 152}], "writing": [{"grade": 4, "scale score": 174}, {"grade": 8, "scale score": 172}]}, "location": {"latitude": 41.6032207, "longitude": -73.087749}, "enrollment": {"teachers": 42951.39, "schools": 1184, "students": {"all": 560546, "year": [15921, 39670, 40830, 41203, 40254, 41155, 41550, 41930, 42616, 42346, 45908, 43573, 42209, 41381], "race": {"hispanic": 104312, "native american": 2100, "white": 347739, "black": 74130, "asian": 24366, "biracial": 7899}, "gender": {"male": 288798, "female": 271748}, "other": {"ungraded students": "", "individualized education program": 68130, "free lunch eligible": 162823, "lep/ell students": 30428, "reduced-price lunch eligible": 27731}}, "staff": 93087.95, "student teacher ratio": 13.05}}}, {"state": "delaware", "data": {"attendance": {"average minutes": null, "average teacher rate": null, "average student rate": 89.5}, "funding": {"expenditures": 1816880173, "revenue": 1784101401}, "score": {"reading": [{"grade": 4, "scale score": 225}, {"grade": 8, "scale score": 265}], "math": [{"grade": 4, "scale score": 239}, {"grade": 8, "scale score": 284}], "science": [{"grade": 4, "scale score": 152}, {"grade": 8, "scale score": 152}], "writing": [{"grade": 4, "scale score": 163}, {"grade": 8, "scale score": 158}]}, "location": {"latitude": 38.9108325, "longitude": -75.52766989999999}, "enrollment": {"teachers": 8933, "schools": 218, "students": {"all": 129403, "year": [1626, 9810, 10157, 10127, 9796, 9797, 9897, 9847, 9718, 9504, 11416, 10147, 9097, 8464], "race": {"hispanic": 15988, "native american": 635, "white": 64784, "black": 41737, "asian": 4441, "biracial": 1818}, "gender": {"male": 66612, "female": 62791}, "other": {"ungraded students": "", "individualized education program": 18608, "free lunch eligible": 54057, "lep/ell students": 6858, "reduced-price lunch eligible": 7507}}, "staff": 16477.97, "student teacher ratio": 14.49}}}, {"state": "district of columbia", "data": {"attendance": {"average minutes": 78280.5, "average teacher rate": 89.8, "average student rate": 86.6}, "funding": {"expenditures": 1691237659, "revenue": 1720917362}, "score": {"reading": [{"grade": 4, "scale score": 197}, {"grade": 8, "scale score": 241}], "math": [{"grade": 4, "scale score": 219}, {"grade": 8, "scale score": 254}], "science": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": ""}], "writing": [{"grade": 4, "scale score": 135}, {"grade": 8, "scale score": ""}]}, "location": {"latitude": 38.9071923, "longitude": -77.0368707}, "enrollment": {"teachers": 5925.33, "schools": 235, "students": {"all": 71284, "year": [9581, 5939, 5240, 4915, 4873, 4877, 4825, 4391, 4439, 4307, 5858, 4516, 3851, 3407], "race": {"hispanic": 8980, "native american": 52, "white": 5093, "black": 55441, "asian": 1027, "biracial": 691}, "gender": {"male": 35506, "female": 35778}, "other": {"ungraded students": 265, "individualized education program": 11947, "free lunch eligible": 46183, "lep/ell students": 5261, "reduced-price lunch eligible": 5000}}, "staff": 11381.12, "student teacher ratio": 12.03}}}, {"state": "florida", "data": {"attendance": {"average minutes": 70982.85915, "average teacher rate": 92.76056338, "average student rate": 93.04225352}, "funding": {"expenditures": 27637538062, "revenue": 26056856782}, "score": {"reading": [{"grade": 4, "scale score": 224}, {"grade": 8, "scale score": 260}], "math": [{"grade": 4, "scale score": 242}, {"grade": 8, "scale score": 279}], "science": [{"grade": 4, "scale score": 150}, {"grade": 8, "scale score": 141}], "writing": [{"grade": 4, "scale score": 158}, {"grade": 8, "scale score": 158}]}, "location": {"latitude": 27.6648274, "longitude": -81.5157535}, "enrollment": {"teachers": 175609.29, "schools": 4289, "students": {"all": 2643347, "year": [52779, 197097, 200806, 196620, 205650, 200682, 200738, 202303, 200147, 201676, 214993, 205142, 186399, 178315], "race": {"hispanic": 740786, "native american": 10493, "white": 1137860, "black": 607134, "asian": 67880, "biracial": 79194}, "gender": {"male": 1359024, "female": 1284323}, "other": {"ungraded students": "", "individualized education program": 366824, "free lunch eligible": 1287000, "lep/ell students": 229758, "reduced-price lunch eligible": 192519}}, "staff": 333183.15, "student teacher ratio": 15.05}}}, {"state": "georgia", "data": {"attendance": {"average minutes": 86922.84615, "average teacher rate": 93.88461538, "average student rate": 91.84615385}, "funding": {"expenditures": 17851273130, "revenue": 17835791419}, "score": {"reading": [{"grade": 4, "scale score": 219}, {"grade": 8, "scale score": 259}], "math": [{"grade": 4, "scale score": 236}, {"grade": 8, "scale score": 278}], "science": [{"grade": 4, "scale score": 148}, {"grade": 8, "scale score": 144}], "writing": [{"grade": 4, "scale score": 149}, {"grade": 8, "scale score": 153}]}, "location": {"latitude": 32.1656221, "longitude": -82.9000751}, "enrollment": {"teachers": 112459.6, "schools": 2541, "students": {"all": 1677067, "year": [42816, 132008, 130171, 127744, 129879, 131326, 131057, 127442, 126242, 123794, 145043, 124239, 104914, 100392], "race": {"hispanic": 200086, "native american": 3959, "white": 745145, "black": 621222, "asian": 56780, "biracial": 49875}, "gender": {"male": 858566, "female": 818501}, "other": {"ungraded students": "", "individualized education program": 177536, "free lunch eligible": 850161, "lep/ell students": 81409, "reduced-price lunch eligible": 111793}}, "staff": 227187.5, "student teacher ratio": 14.91}}}, {"state": "hawaii", "data": {"attendance": {"average minutes": 71515, "average teacher rate": 91.33333333, "average student rate": 91.33333333}, "funding": {"expenditures": 2323871359, "revenue": 2564854622}, "score": {"reading": [{"grade": 4, "scale score": 213}, {"grade": 8, "scale score": 251}], "math": [{"grade": 4, "scale score": 236}, {"grade": 8, "scale score": 274}], "science": [{"grade": 4, "scale score": 142}, {"grade": 8, "scale score": 136}], "writing": [{"grade": 4, "scale score": 149}, {"grade": 8, "scale score": 144}]}, "location": {"latitude": 19.8967662, "longitude": -155.5827818}, "enrollment": {"teachers": 11395.95, "schools": 290, "students": {"all": 179601, "year": [1393, 16028, 14754, 14540, 14234, 13457, 14171, 13285, 12982, 12567, 15164, 13466, 12527, 10818], "race": {"hispanic": 7996, "native american": 1071, "white": 25962, "black": 4444, "asian": 125079, "biracial": 15049}, "gender": {"male": 93542, "female": 86059}, "other": {"ungraded students": 215, "individualized education program": 19716, "free lunch eligible": 65273, "lep/ell students": 19092, "reduced-price lunch eligible": 18833}}, "staff": 21703.58, "student teacher ratio": 15.76}}}, {"state": "idaho", "data": {"attendance": {"average minutes": 77717.33333, "average teacher rate": 80, "average student rate": 79.33333333}, "funding": {"expenditures": 2275076283, "revenue": 2222539471}, "score": {"reading": [{"grade": 4, "scale score": 223}, {"grade": 8, "scale score": 265}], "math": [{"grade": 4, "scale score": 241}, {"grade": 8, "scale score": 287}], "science": [{"grade": 4, "scale score": 155}, {"grade": 8, "scale score": 158}], "writing": [{"grade": 4, "scale score": 150}, {"grade": 8, "scale score": 154}]}, "location": {"latitude": 44.0682019, "longitude": -114.7420408}, "enrollment": {"teachers": 15672.54, "schools": 755, "students": {"all": 275859, "year": [1821, 21144, 21865, 21577, 21592, 21575, 21434, 21563, 20985, 20588, 22062, 20451, 19840, 19362], "race": {"hispanic": 43795, "native american": 3846, "white": 216683, "black": 2819, "asian": 4553, "biracial": 4163}, "gender": {"male": 142065, "female": 133794}, "other": {"ungraded students": "", "individualized education program": 27365, "free lunch eligible": 99557, "lep/ell students": 15393, "reduced-price lunch eligible": 24547}}, "staff": 27783.43, "student teacher ratio": 17.6}}}, {"state": "illinois", "data": {"attendance": {"average minutes": 61080.2, "average teacher rate": 84.8, "average student rate": 83.4}, "funding": {"expenditures": 28198146579, "revenue": 28263059341}, "score": {"reading": [{"grade": 4, "scale score": 219}, {"grade": 8, "scale score": 263}], "math": [{"grade": 4, "scale score": 238}, {"grade": 8, "scale score": 282}], "science": [{"grade": 4, "scale score": 148}, {"grade": 8, "scale score": 148}], "writing": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": 160}]}, "location": {"latitude": 40.6331249, "longitude": -89.3985283}, "enrollment": {"teachers": 132982.73, "schools": 4439, "students": {"all": 2091654, "year": [78260, 146225, 153996, 151647, 153926, 153781, 154636, 153748, 154281, 154293, 169967, 169365, 150576, 146953], "race": {"hispanic": 479515, "native american": 6846, "white": 1072617, "black": 384701, "asian": 87775, "biracial": 60200}, "gender": {"male": 1074775, "female": 1016879}, "other": {"ungraded students": "", "individualized education program": 303092, "free lunch eligible": 811915, "lep/ell students": 174340, "reduced-price lunch eligible": 109556}}, "staff": 215764.43, "student teacher ratio": 15.73}}}, {"state": "indiana", "data": {"attendance": {"average minutes": 70114.28571, "average teacher rate": 94.85714286, "average student rate": 89.14285714}, "funding": {"expenditures": 11351074316, "revenue": 13641694560}, "score": {"reading": [{"grade": 4, "scale score": 222}, {"grade": 8, "scale score": 264}], "math": [{"grade": 4, "scale score": 243}, {"grade": 8, "scale score": 287}], "science": [{"grade": 4, "scale score": 152}, {"grade": 8, "scale score": 150}], "writing": [{"grade": 4, "scale score": 154}, {"grade": 8, "scale score": 155}]}, "location": {"latitude": 40.2671941, "longitude": -86.1349019}, "enrollment": {"teachers": 58121, "schools": 1992, "students": {"all": 1047232, "year": [11652, 76765, 81397, 78857, 78972, 82387, 80081, 79585, 79928, 79790, 84139, 81558, 77285, 74836], "race": {"hispanic": 88133, "native american": 3376, "white": 765473, "black": 126783, "asian": 17470, "biracial": 45997}, "gender": {"male": 537152, "female": 510080}, "other": {"ungraded students": "", "individualized education program": 165802, "free lunch eligible": 405045, "lep/ell students": 49573, "reduced-price lunch eligible": 80683}}, "staff": 138802, "student teacher ratio": 18.02}}}, {"state": "iowa", "data": {"attendance": {"average minutes": 81643.33333, "average teacher rate": 92.66666667, "average student rate": 93.33333333}, "funding": {"expenditures": 5728511603, "revenue": 5541140375}, "score": {"reading": [{"grade": 4, "scale score": 225}, {"grade": 8, "scale score": 267}], "math": [{"grade": 4, "scale score": 243}, {"grade": 8, "scale score": 284}], "science": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": ""}], "writing": [{"grade": 4, "scale score": 155}, {"grade": 8, "scale score": 155}]}, "location": {"latitude": 41.8780025, "longitude": -93.097702}, "enrollment": {"teachers": 34642.08, "schools": 1487, "students": {"all": 495775, "year": [27211, 39306, 35369, 35121, 34939, 35071, 35336, 35080, 35416, 35263, 36984, 36540, 36435, 37704], "race": {"hispanic": 42295, "native american": 2362, "white": 404160, "black": 25215, "asian": 10623, "biracial": 11120}, "gender": {"male": 255611, "female": 240164}, "other": {"ungraded students": "", "individualized education program": 68498, "free lunch eligible": 149977, "lep/ell students": 21733, "reduced-price lunch eligible": 38509}}, "staff": 69614.93, "student teacher ratio": 14.31}}}, {"state": "kansas", "data": {"attendance": {"average minutes": 71079.5, "average teacher rate": 92.66666667, "average student rate": 93.16666667}, "funding": {"expenditures": 5327426553, "revenue": 5487071312}, "score": {"reading": [{"grade": 4, "scale score": 225}, {"grade": 8, "scale score": 267}], "math": [{"grade": 4, "scale score": 245}, {"grade": 8, "scale score": 289}], "science": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": ""}], "writing": [{"grade": 4, "scale score": 149}, {"grade": 8, "scale score": 156}]}, "location": {"latitude": 39.011902, "longitude": -98.4842465}, "enrollment": {"teachers": 34643.8, "schools": 1470, "students": {"all": 483701, "year": [17318, 37023, 36520, 36357, 35648, 35991, 35898, 35372, 35244, 34220, 37010, 35639, 33676, 33180], "race": {"hispanic": 79129, "native american": 6184, "white": 329036, "black": 35958, "asian": 12796, "biracial": 20598}, "gender": {"male": 248943, "female": 234758}, "other": {"ungraded students": 4605, "individualized education program": 66851, "free lunch eligible": 179931, "lep/ell students": 39323, "reduced-price lunch eligible": 48921}}, "staff": 67750.8, "student teacher ratio": 13.96}}}, {"state": "kentucky", "data": {"attendance": {"average minutes": 70475.5, "average teacher rate": null, "average student rate": 85}, "funding": {"expenditures": 7097739314, "revenue": 6873286087}, "score": {"reading": [{"grade": 4, "scale score": 222}, {"grade": 8, "scale score": 262}], "math": [{"grade": 4, "scale score": 239}, {"grade": 8, "scale score": 279}], "science": [{"grade": 4, "scale score": 158}, {"grade": 8, "scale score": 153}], "writing": [{"grade": 4, "scale score": 154}, {"grade": 8, "scale score": 151}]}, "location": {"latitude": 37.8393332, "longitude": -84.2700179}, "enrollment": {"teachers": 42041.84, "schools": 1577, "students": {"all": 673128, "year": [24260, 51091, 52207, 50855, 51279, 51189, 50980, 49988, 49633, 48525, 52668, 50262, 46008, 43723], "race": {"hispanic": 26188, "native american": 941, "white": 551461, "black": 72915, "asian": 9543, "biracial": 12080}, "gender": {"male": 346945, "female": 326183}, "other": {"ungraded students": 460, "individualized education program": 102370, "free lunch eligible": 329897, "lep/ell students": 16351, "reduced-price lunch eligible": 50876}}, "staff": 99225.24, "student teacher ratio": 16.01}}}, {"state": "louisiana", "data": {"attendance": {"average minutes": 72214.5, "average teacher rate": 93.5, "average student rate": 88.5}, "funding": {"expenditures": 8358505788, "revenue": 8215973149}, "score": {"reading": [{"grade": 4, "scale score": 207}, {"grade": 8, "scale score": 253}], "math": [{"grade": 4, "scale score": 229}, {"grade": 8, "scale score": 272}], "science": [{"grade": 4, "scale score": 143}, {"grade": 8, "scale score": 138}], "writing": [{"grade": 4, "scale score": 142}, {"grade": 8, "scale score": 147}]}, "location": {"latitude": 30.9842977, "longitude": -91.96233269999999}, "enrollment": {"teachers": 48655.03, "schools": 1509, "students": {"all": 696558, "year": [29657, 54276, 55750, 53975, 53842, 58778, 52976, 51813, 51676, 49523, 57941, 46689, 41224, 38438], "race": {"hispanic": 18145, "native american": 6585, "white": 338126, "black": 316083, "asian": 10522, "biracial": 7097}, "gender": {"male": 356535, "female": 340023}, "other": {"ungraded students": "", "individualized education program": 82934, "free lunch eligible": 412684, "lep/ell students": 11698, "reduced-price lunch eligible": 47862}}, "staff": 100880.51, "student teacher ratio": 14.32}}}, {"state": "maine", "data": {"attendance": {"average minutes": 83164, "average teacher rate": 96.16666667, "average student rate": 92.16666667}, "funding": {"expenditures": 2618800032, "revenue": 2639779372}, "score": {"reading": [{"grade": 4, "scale score": 226}, {"grade": 8, "scale score": 270}], "math": [{"grade": 4, "scale score": 244}, {"grade": 8, "scale score": 286}], "science": [{"grade": 4, "scale score": 160}, {"grade": 8, "scale score": 158}], "writing": [{"grade": 4, "scale score": 158}, {"grade": 8, "scale score": 161}]}, "location": {"latitude": 45.253783, "longitude": -69.4454689}, "enrollment": {"teachers": 15384.3, "schools": 657, "students": {"all": 189077, "year": [4247, 13819, 13647, 13405, 13420, 13728, 13858, 14034, 14413, 14358, 14836, 14996, 15001, 15315], "race": {"hispanic": 2766, "native american": 1385, "white": 174828, "black": 3347, "asian": 2092, "biracial": 4659}, "gender": {"male": 97694, "female": 91383}, "other": {"ungraded students": "", "individualized education program": 29502, "free lunch eligible": 66458, "lep/ell students": 4792, "reduced-price lunch eligible": 12457}}, "staff": 32548.8, "student teacher ratio": 12.29}}}, {"state": "maryland", "data": {"attendance": {"average minutes": 73440.90909, "average teacher rate": 89.90909091, "average student rate": 91.09090909}, "funding": {"expenditures": 13206360760, "revenue": 13352511187}, "score": {"reading": [{"grade": 4, "scale score": 225}, {"grade": 8, "scale score": 265}], "math": [{"grade": 4, "scale score": 244}, {"grade": 8, "scale score": 288}], "science": [{"grade": 4, "scale score": 149}, {"grade": 8, "scale score": 145}], "writing": [{"grade": 4, "scale score": 157}, {"grade": 8, "scale score": ""}]}, "location": {"latitude": 39.0457549, "longitude": -76.64127119999999}, "enrollment": {"teachers": 58428.47, "schools": 1457, "students": {"all": 852211, "year": [29377, 62704, 63635, 63086, 62640, 60765, 61641, 60475, 61862, 61971, 72700, 67923, 62877, 60555], "race": {"hispanic": 98404, "native american": 3047, "white": 366004, "black": 305310, "asian": 49939, "biracial": 29507}, "gender": {"male": 436830, "female": 415381}, "other": {"ungraded students": "", "individualized education program": 102818, "free lunch eligible": 285041, "lep/ell students": 45500, "reduced-price lunch eligible": 56516}}, "staff": 115367.37, "student teacher ratio": 14.59}}}, {"state": "massachusetts", "data": {"attendance": {"average minutes": null, "average teacher rate": null, "average student rate": 92.16666667}, "funding": {"expenditures": 15112344078, "revenue": 15570234335}, "score": {"reading": [{"grade": 4, "scale score": 236}, {"grade": 8, "scale score": 273}], "math": [{"grade": 4, "scale score": 252}, {"grade": 8, "scale score": 299}], "science": [{"grade": 4, "scale score": 160}, {"grade": 8, "scale score": 161}], "writing": [{"grade": 4, "scale score": 170}, {"grade": 8, "scale score": 167}]}, "location": {"latitude": 42.4072107, "longitude": -71.3824374}, "enrollment": {"teachers": 68754.39, "schools": 1849, "students": {"all": 955563, "year": [27747, 67496, 70973, 70797, 70312, 71140, 71402, 71404, 72667, 71588, 77787, 73101, 70557, 67716], "race": {"hispanic": 147524, "native american": 2382, "white": 650166, "black": 78825, "asian": 53823, "biracial": 22843}, "gender": {"male": 490363, "female": 465200}, "other": {"ungraded students": 876, "individualized education program": 167323, "free lunch eligible": 277919, "lep/ell students": 54988, "reduced-price lunch eligible": 48930}}, "staff": 122057.07, "student teacher ratio": 13.9}}}, {"state": "michigan", "data": {"attendance": {"average minutes": 69261.35714, "average teacher rate": 85.92857143, "average student rate": 81.42857143}, "funding": {"expenditures": 19792567967, "revenue": 19401179865}, "score": {"reading": [{"grade": 4, "scale score": 220}, {"grade": 8, "scale score": 260}], "math": [{"grade": 4, "scale score": 236}, {"grade": 8, "scale score": 278}], "science": [{"grade": 4, "scale score": 152}, {"grade": 8, "scale score": 155}], "writing": [{"grade": 4, "scale score": 147}, {"grade": 8, "scale score": 151}]}, "location": {"latitude": 44.3148443, "longitude": -85.60236429999999}, "enrollment": {"teachers": 88614.71, "schools": 4115, "students": {"all": 1587067, "year": [28187, 112835, 116028, 112653, 112875, 115722, 117035, 117129, 118958, 118831, 132050, 133238, 121344, 122236], "race": {"hispanic": 92734, "native american": 13003, "white": 1107198, "black": 301176, "asian": 43075, "biracial": 29881}, "gender": {"male": 818044, "female": 769023}, "other": {"ungraded students": 7946, "individualized education program": 217213, "free lunch eligible": 636380, "lep/ell students": 56474, "reduced-price lunch eligible": 83420}}, "staff": 193486.62, "student teacher ratio": 17.91}}}, {"state": "minnesota", "data": {"attendance": {"average minutes": 74390.57895, "average teacher rate": 95.26315789, "average student rate": 89.10526316}, "funding": {"expenditures": 10737802343, "revenue": 10639250907}, "score": {"reading": [{"grade": 4, "scale score": 225}, {"grade": 8, "scale score": 268}], "math": [{"grade": 4, "scale score": 249}, {"grade": 8, "scale score": 294}], "science": [{"grade": 4, "scale score": 156}, {"grade": 8, "scale score": 158}], "writing": [{"grade": 4, "scale score": 156}, {"grade": 8, "scale score": 156}]}, "location": {"latitude": 46.729553, "longitude": -94.6858998}, "enrollment": {"teachers": 52671.71, "schools": 2461, "students": {"all": 838037, "year": [14405, 62961, 63218, 62116, 60648, 61627, 61130, 60831, 61321, 61706, 63935, 65013, 65465, 73661], "race": {"hispanic": 60175, "native american": 16296, "white": 618819, "black": 77015, "asian": 50704, "biracial": 15028}, "gender": {"male": 431857, "female": 406180}, "other": {"ungraded students": "", "individualized education program": 122850, "free lunch eligible": 239221, "lep/ell students": 48428, "reduced-price lunch eligible": 66915}}, "staff": 108993.31, "student teacher ratio": 15.91}}}, {"state": "mississippi", "data": {"attendance": {"average minutes": 82442.25, "average teacher rate": 90, "average student rate": 94}, "funding": {"expenditures": 4384125182, "revenue": 4443683166}, "score": {"reading": [{"grade": 4, "scale score": 208}, {"grade": 8, "scale score": 250}], "math": [{"grade": 4, "scale score": 227}, {"grade": 8, "scale score": 265}], "science": [{"grade": 4, "scale score": 133}, {"grade": 8, "scale score": 132}], "writing": [{"grade": 4, "scale score": 141}, {"grade": 8, "scale score": 142}]}, "location": {"latitude": 32.3546679, "longitude": -89.3985283}, "enrollment": {"teachers": 32254.83, "schools": 1115, "students": {"all": 490526, "year": [3447, 38923, 39740, 37607, 38157, 38295, 39155, 37607, 37048, 36113, 38666, 36364, 31579, 29668], "race": {"hispanic": 12360, "native american": 930, "white": 225697, "black": 244634, "asian": 4649, "biracial": 2256}, "gender": {"male": 250450, "female": 240076}, "other": {"ungraded students": 8157, "individualized education program": 63786, "free lunch eligible": 309581, "lep/ell students": 5620, "reduced-price lunch eligible": 36153}}, "staff": 67866.31, "student teacher ratio": 15.21}}}, {"state": "missouri", "data": {"attendance": {"average minutes": 64923.5, "average teacher rate": 87.15625, "average student rate": 86.53125}, "funding": {"expenditures": 10402883203, "revenue": 10157111580}, "score": {"reading": [{"grade": 4, "scale score": 221}, {"grade": 8, "scale score": 263}], "math": [{"grade": 4, "scale score": 241}, {"grade": 8, "scale score": 286}], "science": [{"grade": 4, "scale score": 158}, {"grade": 8, "scale score": 154}], "writing": [{"grade": 4, "scale score": 151}, {"grade": 8, "scale score": 153}]}, "location": {"latitude": 37.9642529, "longitude": -91.8318334}, "enrollment": {"teachers": 66734.84, "schools": 2451, "students": {"all": 918710, "year": [28495, 69376, 68974, 67818, 67296, 68313, 68709, 67913, 69153, 66944, 73080, 69794, 66855, 65990], "race": {"hispanic": 41691, "native american": 4341, "white": 686147, "black": 156941, "asian": 18080, "biracial": 11510}, "gender": {"male": 473619, "female": 445091}, "other": {"ungraded students": "", "individualized education program": 127148, "free lunch eligible": 342715, "lep/ell students": 21918, "reduced-price lunch eligible": 63643}}, "staff": 128289.14, "student teacher ratio": 13.77}}}, {"state": "montana", "data": {"attendance": {"average minutes": 73432, "average teacher rate": 89, "average student rate": 80.66666667}, "funding": {"expenditures": 1640013689, "revenue": 1616262353}, "score": {"reading": [{"grade": 4, "scale score": 227}, {"grade": 8, "scale score": 271}], "math": [{"grade": 4, "scale score": 244}, {"grade": 8, "scale score": 292}], "science": [{"grade": 4, "scale score": 160}, {"grade": 8, "scale score": 162}], "writing": [{"grade": 4, "scale score": 149}, {"grade": 8, "scale score": 157}]}, "location": {"latitude": 46.8796822, "longitude": -110.3625658}, "enrollment": {"teachers": 10360.99, "schools": 829, "students": {"all": 141693, "year": [1351, 11115, 11066, 10813, 10693, 10751, 10535, 10713, 10725, 10729, 11569, 10733, 10584, 10316], "race": {"hispanic": 4996, "native american": 15734, "white": 115827, "black": 1378, "asian": 1561, "biracial": 2197}, "gender": {"male": 73297, "female": 68396}, "other": {"ungraded students": "", "individualized education program": 16760, "free lunch eligible": 46116, "lep/ell students": 3300, "reduced-price lunch eligible": 11720}}, "staff": 19249.08, "student teacher ratio": 13.68}}}, {"state": "nebraska", "data": {"attendance": {"average minutes": 69004.57143, "average teacher rate": 93.57142857, "average student rate": 92.85714286}, "funding": {"expenditures": 3674796158, "revenue": 3693929543}, "score": {"reading": [{"grade": 4, "scale score": 223}, {"grade": 8, "scale score": 267}], "math": [{"grade": 4, "scale score": 239}, {"grade": 8, "scale score": 284}], "science": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": ""}], "writing": [{"grade": 4, "scale score": 154}, {"grade": 8, "scale score": ""}]}, "location": {"latitude": 41.4925374, "longitude": -99.9018131}, "enrollment": {"teachers": 22345.16, "schools": 1127, "students": {"all": 298500, "year": [12656, 23411, 23134, 22390, 22150, 21901, 21680, 21103, 20992, 20875, 22567, 21998, 21407, 22236], "race": {"hispanic": 47900, "native american": 4413, "white": 211205, "black": 19990, "asian": 6350, "biracial": 8642}, "gender": {"male": 154228, "female": 144272}, "other": {"ungraded students": "", "individualized education program": 44299, "free lunch eligible": 100563, "lep/ell students": 20077, "reduced-price lunch eligible": 26551}}, "staff": 45509.07, "student teacher ratio": 13.36}}}, {"state": "nevada", "data": {"attendance": {"average minutes": 80490.3, "average teacher rate": 98.9, "average student rate": 98.1}, "funding": {"expenditures": 4257267515, "revenue": 4310014015}, "score": {"reading": [{"grade": 4, "scale score": 211}, {"grade": 8, "scale score": 252}], "math": [{"grade": 4, "scale score": 235}, {"grade": 8, "scale score": 274}], "science": [{"grade": 4, "scale score": 140}, {"grade": 8, "scale score": 138}], "writing": [{"grade": 4, "scale score": 145}, {"grade": 8, "scale score": 143}]}, "location": {"latitude": 38.8026097, "longitude": -116.419389}, "enrollment": {"teachers": 21839.48, "schools": 677, "students": {"all": 437149, "year": [4444, 32454, 33809, 33492, 33600, 34047, 33754, 34054, 33947, 33070, 33780, 34199, 32645, 29207], "race": {"hispanic": 169236, "native american": 5705, "white": 169220, "black": 43225, "asian": 31209, "biracial": 18554}, "gender": {"male": 225145, "female": 212004}, "other": {"ungraded students": 647, "individualized education program": 48078, "free lunch eligible": 190854, "lep/ell students": 83352, "reduced-price lunch eligible": 29049}}, "staff": 33400.11, "student teacher ratio": 20.02}}}, {"state": "new hampshire", "data": {"attendance": {"average minutes": 66722.85714, "average teacher rate": 89.57142857, "average student rate": 93.85714286}, "funding": {"expenditures": 2760682470, "revenue": 2810017950}, "score": {"reading": [{"grade": 4, "scale score": 229}, {"grade": 8, "scale score": 270}], "math": [{"grade": 4, "scale score": 251}, {"grade": 8, "scale score": 292}], "science": [{"grade": 4, "scale score": 161}, {"grade": 8, "scale score": 162}], "writing": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": 160}]}, "location": {"latitude": 43.1938516, "longitude": -71.5723953}, "enrollment": {"teachers": 15365.2, "schools": 483, "students": {"all": 194711, "year": [3097, 11970, 14120, 13913, 14187, 14294, 14602, 14795, 15191, 15407, 16832, 15994, 15290, 15019], "race": {"hispanic": 7231, "native american": 653, "white": 174778, "black": 3821, "asian": 5370, "biracial": 2858}, "gender": {"male": 100688, "female": 94023}, "other": {"ungraded students": "", "individualized education program": 29778, "free lunch eligible": 38659, "lep/ell students": 3965, "reduced-price lunch eligible": 10245}}, "staff": 32955.1, "student teacher ratio": 12.67}}}, {"state": "new jersey", "data": {"attendance": {"average minutes": 92180.1, "average teacher rate": 95.1, "average student rate": 91}, "funding": {"expenditures": 26157669469, "revenue": 25856286143}, "score": {"reading": [{"grade": 4, "scale score": 231}, {"grade": 8, "scale score": 270}], "math": [{"grade": 4, "scale score": 247}, {"grade": 8, "scale score": 293}], "science": [{"grade": 4, "scale score": 154}, {"grade": 8, "scale score": 153}], "writing": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": 175}]}, "location": {"latitude": 40.0583238, "longitude": -74.4056612}, "enrollment": {"teachers": 110202.4, "schools": 2634, "students": {"all": 1402548, "year": [53564, 92413, 99976, 98791, 97716, 98641, 99344, 100245, 100225, 99630, 106281, 103267, 98237, 97358], "race": {"hispanic": 309673, "native american": 1864, "white": 722642, "black": 234395, "asian": 124519, "biracial": 9455}, "gender": {"male": 724048, "female": 678500}, "other": {"ungraded students": 56860, "individualized education program": 225471, "free lunch eligible": 370531, "lep/ell students": 52771, "reduced-price lunch eligible": 74205}}, "staff": 202633.6, "student teacher ratio": 12.73}}}, {"state": "new mexico", "data": {"attendance": {"average minutes": 60908.44444, "average teacher rate": 95.55555556, "average student rate": 94.55555556}, "funding": {"expenditures": 3792957530, "revenue": 3760801165}, "score": {"reading": [{"grade": 4, "scale score": 212}, {"grade": 8, "scale score": 251}], "math": [{"grade": 4, "scale score": 230}, {"grade": 8, "scale score": 270}], "science": [{"grade": 4, "scale score": 141}, {"grade": 8, "scale score": 138}], "writing": [{"grade": 4, "scale score": 142}, {"grade": 8, "scale score": 143}]}, "location": {"latitude": 34.5199402, "longitude": -105.8700901}, "enrollment": {"teachers": 22437.43, "schools": 873, "students": {"all": 338122, "year": [7980, 26688, 26660, 26087, 25906, 25955, 25615, 25329, 24656, 24469, 29179, 26451, 22553, 20594], "race": {"hispanic": 200774, "native american": 34530, "white": 88009, "black": 7151, "asian": 4397, "biracial": 3261}, "gender": {"male": 173392, "female": 164730}, "other": {"ungraded students": "", "individualized education program": 46612, "free lunch eligible": 206414, "lep/ell students": 52557, "reduced-price lunch eligible": 20663}}, "staff": 46519.33, "student teacher ratio": 15.07}}}, {"state": "new york", "data": {"attendance": {"average minutes": 22463.72, "average teacher rate": 50.2, "average student rate": 73.44}, "funding": {"expenditures": 56690808637, "revenue": 57146375462}, "score": {"reading": [{"grade": 4, "scale score": 224}, {"grade": 8, "scale score": 264}], "math": [{"grade": 4, "scale score": 241}, {"grade": 8, "scale score": 283}], "science": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": ""}], "writing": [{"grade": 4, "scale score": 163}, {"grade": 8, "scale score": 154}]}, "location": {"latitude": 40.7127837, "longitude": -74.0059413}, "enrollment": {"teachers": 211605.54, "schools": 4791, "students": {"all": 2734955, "year": [51649, 194607, 202889, 201820, 198573, 198720, 201761, 199937, 202305, 203761, 235380, 227380, 197541, 191528], "race": {"hispanic": 611873, "native american": 14541, "white": 1346498, "black": 519113, "asian": 226894, "biracial": 16036}, "gender": {"male": 1401555, "female": 1333400}, "other": {"ungraded students": 27104, "individualized education program": 452551, "free lunch eligible": 1123040, "lep/ell students": 208125, "reduced-price lunch eligible": 192524}}, "staff": 413971.15, "student teacher ratio": 12.92}}}, {"state": "north carolina", "data": {"attendance": {"average minutes": 72555.54167, "average teacher rate": null, "average student rate": 88.25}, "funding": {"expenditures": 13297983515, "revenue": 13056767057}, "score": {"reading": [{"grade": 4, "scale score": 218}, {"grade": 8, "scale score": 259}], "math": [{"grade": 4, "scale score": 244}, {"grade": 8, "scale score": 284}], "science": [{"grade": 4, "scale score": 149}, {"grade": 8, "scale score": 144}], "writing": [{"grade": 4, "scale score": 159}, {"grade": 8, "scale score": 153}]}, "location": {"latitude": 35.7595731, "longitude": -79.01929969999999}, "enrollment": {"teachers": 98357.47, "schools": 2609, "students": {"all": 1490605, "year": [23510, 115782, 108078, 117107, 117747, 118617, 117170, 115186, 113310, 111112, 126090, 111889, 102676, 91541], "race": {"hispanic": 187967, "native american": 22199, "white": 792461, "black": 394635, "asian": 37538, "biracial": 55805}, "gender": {"male": 761595, "female": 729010}, "other": {"ungraded students": 790, "individualized education program": 184704, "free lunch eligible": 633440, "lep/ell students": 103249, "reduced-price lunch eligible": 114538}}, "staff": 193038.9, "student teacher ratio": 15.15}}}, {"state": "north dakota", "data": {"attendance": {"average minutes": null, "average teacher rate": null, "average student rate": null}, "funding": {"expenditures": 1159215292, "revenue": 1256047706}, "score": {"reading": [{"grade": 4, "scale score": 226}, {"grade": 8, "scale score": 268}], "math": [{"grade": 4, "scale score": 245}, {"grade": 8, "scale score": 293}], "science": [{"grade": 4, "scale score": 160}, {"grade": 8, "scale score": 163}], "writing": [{"grade": 4, "scale score": 150}, {"grade": 8, "scale score": 154}]}, "location": {"latitude": 47.5514926, "longitude": -101.0020119}, "enrollment": {"teachers": 8416.95, "schools": 521, "students": {"all": 96323, "year": [1529, 7449, 7484, 7197, 6915, 6974, 6676, 7141, 7372, 7298, 7591, 7701, 7415, 7581], "race": {"hispanic": 95, "native american": 8789, "white": 80661, "black": 2318, "asian": 1267, "biracial": 3193}, "gender": {"male": 49789, "female": 46534}, "other": {"ungraded students": "", "individualized education program": 13097, "free lunch eligible": 22988, "lep/ell students": 2788, "reduced-price lunch eligible": 6941}}, "staff": 16239.18, "student teacher ratio": 11.44}}}, {"state": "ohio", "data": {"attendance": {"average minutes": 92278.11429, "average teacher rate": 90.68571429, "average student rate": 91.37142857}, "funding": {"expenditures": 23262091286, "revenue": 22729890148}, "score": {"reading": [{"grade": 4, "scale score": 226}, {"grade": 8, "scale score": 268}], "math": [{"grade": 4, "scale score": 244}, {"grade": 8, "scale score": 286}], "science": [{"grade": 4, "scale score": 157}, {"grade": 8, "scale score": 155}], "writing": [{"grade": 4, "scale score": 157}, {"grade": 8, "scale score": 156}]}, "location": {"latitude": 40.4172871, "longitude": -82.90712300000001}, "enrollment": {"teachers": 109281.94, "schools": 3852, "students": {"all": 1754191, "year": [30047, 129964, 132638, 130425, 130593, 133202, 134109, 133615, 135005, 133210, 152198, 138532, 121707, 118946], "race": {"hispanic": 60506, "native american": 2519, "white": 1301921, "black": 285091, "asian": 30641, "biracial": 73513}, "gender": {"male": 901177, "female": 853014}, "other": {"ungraded students": "", "individualized education program": 259448, "free lunch eligible": 646984, "lep/ell students": 37116, "reduced-price lunch eligible": 98137}}, "staff": 241211.64, "student teacher ratio": 16.05}}}, {"state": "oklahoma", "data": {"attendance": {"average minutes": 75968.5, "average teacher rate": 93.6, "average student rate": 90.6}, "funding": {"expenditures": 5664915113, "revenue": 5699757846}, "score": {"reading": [{"grade": 4, "scale score": 217}, {"grade": 8, "scale score": 260}], "math": [{"grade": 4, "scale score": 237}, {"grade": 8, "scale score": 276}], "science": [{"grade": 4, "scale score": 150}, {"grade": 8, "scale score": 147}], "writing": [{"grade": 4, "scale score": 142}, {"grade": 8, "scale score": 153}]}, "location": {"latitude": 35.4675602, "longitude": -97.5164276}, "enrollment": {"teachers": 41277.8, "schools": 1803, "students": {"all": 659911, "year": [40688, 52114, 52420, 50070, 48899, 48519, 48490, 47809, 47418, 45737, 48131, 45564, 42620, 39634], "race": {"hispanic": 81009, "native american": 116597, "white": 360125, "black": 67107, "asian": 14116, "biracial": 20957}, "gender": {"male": 339686, "female": 320225}, "other": {"ungraded students": 1798, "individualized education program": 97247, "free lunch eligible": 337536, "lep/ell students": 41812, "reduced-price lunch eligible": 61381}}, "staff": 82261.7, "student teacher ratio": 15.99}}}, {"state": "oregon", "data": {"attendance": {"average minutes": 80254.25, "average teacher rate": 95.08333333, "average student rate": 87.16666667}, "funding": {"expenditures": 6288121386, "revenue": 6211293861}, "score": {"reading": [{"grade": 4, "scale score": 215}, {"grade": 8, "scale score": 266}], "math": [{"grade": 4, "scale score": 238}, {"grade": 8, "scale score": 285}], "science": [{"grade": 4, "scale score": 151}, {"grade": 8, "scale score": 153}], "writing": [{"grade": 4, "scale score": 149}, {"grade": 8, "scale score": ""}]}, "location": {"latitude": 43.8041334, "longitude": -120.5542012}, "enrollment": {"teachers": 28109.27, "schools": 1313, "students": {"all": 570720, "year": [9392, 40656, 42508, 42322, 42013, 42924, 43144, 43280, 43528, 42834, 44540, 44289, 43078, 46212], "race": {"hispanic": 115102, "native american": 10406, "white": 372194, "black": 14599, "asian": 25233, "biracial": 23794}, "gender": {"male": 288575, "female": 272753}, "other": {"ungraded students": "", "individualized education program": 80283, "free lunch eligible": 240711, "lep/ell students": 58946, "reduced-price lunch eligible": 39463}}, "staff": 63602.73, "student teacher ratio": 20.3}}}, {"state": "pennsylvania", "data": {"attendance": {"average minutes": 65233.24561, "average teacher rate": 83.03508772, "average student rate": 78.19298246}, "funding": {"expenditures": 26520057652, "revenue": 26408846275}, "score": {"reading": [{"grade": 4, "scale score": 226}, {"grade": 8, "scale score": 268}], "math": [{"grade": 4, "scale score": 244}, {"grade": 8, "scale score": 288}], "science": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": ""}], "writing": [{"grade": 4, "scale score": 156}, {"grade": 8, "scale score": 159}]}, "location": {"latitude": 41.2033216, "longitude": -77.1945247}, "enrollment": {"teachers": 129911.39, "schools": 3269, "students": {"all": 1793284, "year": [16294, 128120, 131170, 130253, 129292, 132497, 134499, 134782, 135869, 135876, 150150, 148716, 141866, 141710], "race": {"hispanic": 149247, "native american": 2892, "white": 1276052, "black": 280981, "asian": 56914, "biracial": 27198}, "gender": {"male": 922865, "female": 870419}, "other": {"ungraded students": 2190, "individualized education program": 295077, "free lunch eligible": 584251, "lep/ell students": 47014, "reduced-price lunch eligible": 102390}}, "staff": 266795.76, "student teacher ratio": 13.8}}}, {"state": "rhode island", "data": {"attendance": {"average minutes": 75600, "average teacher rate": null, "average student rate": 86}, "funding": {"expenditures": 2286060927, "revenue": 2262193286}, "score": {"reading": [{"grade": 4, "scale score": 219}, {"grade": 8, "scale score": 258}], "math": [{"grade": 4, "scale score": 239}, {"grade": 8, "scale score": 278}], "science": [{"grade": 4, "scale score": 146}, {"grade": 8, "scale score": 146}], "writing": [{"grade": 4, "scale score": 157}, {"grade": 8, "scale score": 154}]}, "location": {"latitude": 41.5800945, "longitude": -71.4774291}, "enrollment": {"teachers": 11211.8, "schools": 325, "students": {"all": 143793, "year": [2054, 10057, 11070, 10745, 10755, 10865, 10195, 9889, 11150, 10954, 12888, 11814, 10891, 10466], "race": {"hispanic": 29917, "native american": 951, "white": 93683, "black": 11457, "asian": 4368, "biracial": 3417}, "gender": {"male": 74490, "female": 69303}, "other": {"ungraded students": "", "individualized education program": 25332, "free lunch eligible": 52839, "lep/ell students": 7655, "reduced-price lunch eligible": 8288}}, "staff": 18631.74, "student teacher ratio": 12.83}}}, {"state": "south carolina", "data": {"attendance": {"average minutes": 63148.36842, "average teacher rate": 88.94736842, "average student rate": 90.42105263}, "funding": {"expenditures": 8215179835, "revenue": 7837314357}, "score": {"reading": [{"grade": 4, "scale score": 214}, {"grade": 8, "scale score": 257}], "math": [{"grade": 4, "scale score": 236}, {"grade": 8, "scale score": 280}], "science": [{"grade": 4, "scale score": 148}, {"grade": 8, "scale score": 145}], "writing": [{"grade": 4, "scale score": 145}, {"grade": 8, "scale score": 148}]}, "location": {"latitude": 33.836081, "longitude": -81.1637245}, "enrollment": {"teachers": 45210.4, "schools": 1228, "students": {"all": 725838, "year": [24188, 54624, 55328, 53846, 54100, 55636, 55887, 54788, 54280, 52904, 62161, 54685, 48708, 44703], "race": {"hispanic": 46202, "native american": 2111, "white": 387520, "black": 263034, "asian": 10452, "biracial": 16519}, "gender": {"male": 373366, "female": 352472}, "other": {"ungraded students": "", "individualized education program": 100262, "free lunch eligible": 350202, "lep/ell students": 36379, "reduced-price lunch eligible": 44831}}, "staff": 65508.4, "student teacher ratio": 16.05}}}, {"state": "south dakota", "data": {"attendance": {"average minutes": 70840, "average teacher rate": 92.5, "average student rate": 95.5}, "funding": {"expenditures": 1289354666, "revenue": 1300147427}, "score": {"reading": [{"grade": 4, "scale score": 223}, {"grade": 8, "scale score": 270}], "math": [{"grade": 4, "scale score": 242}, {"grade": 8, "scale score": 291}], "science": [{"grade": 4, "scale score": 158}, {"grade": 8, "scale score": 161}], "writing": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": ""}]}, "location": {"latitude": 43.9695148, "longitude": -99.9018131}, "enrollment": {"teachers": 9511.67, "schools": 718, "students": {"all": 126128, "year": [1974, 11049, 9903, 9498, 9233, 9140, 9321, 9331, 9212, 9275, 10307, 9779, 9043, 9063], "race": {"hispanic": 4352, "native american": 14683, "white": 100680, "black": 3144, "asian": 1868, "biracial": 1401}, "gender": {"male": 65144, "female": 60984}, "other": {"ungraded students": "", "individualized education program": 18026, "free lunch eligible": 36573, "lep/ell students": 4383, "reduced-price lunch eligible": 10144}}, "staff": 19545.06, "student teacher ratio": 13.26}}}, {"state": "tennessee", "data": {"attendance": {"average minutes": 79760, "average teacher rate": 95.75, "average student rate": 89.83333333}, "funding": {"expenditures": 8759495348, "revenue": 8528047188}, "score": {"reading": [{"grade": 4, "scale score": 216}, {"grade": 8, "scale score": 259}], "math": [{"grade": 4, "scale score": 232}, {"grade": 8, "scale score": 275}], "science": [{"grade": 4, "scale score": 150}, {"grade": 8, "scale score": 145}], "writing": [{"grade": 4, "scale score": 149}, {"grade": 8, "scale score": 156}]}, "location": {"latitude": 35.5174913, "longitude": -86.5804473}, "enrollment": {"teachers": 66558.1, "schools": 1803, "students": {"all": 987422, "year": [28787, 76642, 76706, 74788, 74793, 75481, 75057, 74615, 73363, 71475, 76010, 73509, 68755, 67441], "race": {"hispanic": 60549, "native american": 1902, "white": 664947, "black": 236013, "asian": 16840, "biracial": 7171}, "gender": {"male": 508744, "female": 478678}, "other": {"ungraded students": "", "individualized education program": 119004, "free lunch eligible": 471483, "lep/ell students": 29681, "reduced-price lunch eligible": 71470}}, "staff": 128196.6, "student teacher ratio": 14.84}}}, {"state": "texas", "data": {"attendance": {"average minutes": 82781.91667, "average teacher rate": 92.60416667, "average student rate": 86.29166667}, "funding": {"expenditures": 53838221095, "revenue": 50045607224}, "score": {"reading": [{"grade": 4, "scale score": 220}, {"grade": 8, "scale score": 261}], "math": [{"grade": 4, "scale score": 240}, {"grade": 8, "scale score": 287}], "science": [{"grade": 4, "scale score": 150}, {"grade": 8, "scale score": 143}], "writing": [{"grade": 4, "scale score": 154}, {"grade": 8, "scale score": 151}]}, "location": {"latitude": 31.9685988, "longitude": -99.9018131}, "enrollment": {"teachers": 334996.94, "schools": 9332, "students": {"all": 4935715, "year": [249122, 374195, 387899, 379910, 375454, 374111, 372509, 361700, 357395, 354314, 391554, 344241, 314911, 298400], "race": {"hispanic": 2480792, "native american": 23607, "white": 1539026, "black": 638377, "asian": 175489, "biracial": 78424}, "gender": {"male": 2535286, "female": 2400429}, "other": {"ungraded students": "", "individualized education program": 441987, "free lunch eligible": 2148558, "lep/ell students": 738663, "reduced-price lunch eligible": 322654}}, "staff": 665418.5, "student teacher ratio": 14.73}}}, {"state": "utah", "data": {"attendance": {"average minutes": 69207.14286, "average teacher rate": 96.57142857, "average student rate": 91.57142857}, "funding": {"expenditures": 4564279023, "revenue": 4464561903}, "score": {"reading": [{"grade": 4, "scale score": 221}, {"grade": 8, "scale score": 262}], "math": [{"grade": 4, "scale score": 240}, {"grade": 8, "scale score": 284}], "science": [{"grade": 4, "scale score": 155}, {"grade": 8, "scale score": 154}], "writing": [{"grade": 4, "scale score": 145}, {"grade": 8, "scale score": 152}]}, "location": {"latitude": 39.3209801, "longitude": -111.0937311}, "enrollment": {"teachers": 25676.71, "schools": 1029, "students": {"all": 585552, "year": [10376, 48043, 48770, 48122, 46753, 46127, 45822, 44797, 43942, 42227, 41419, 40964, 39446, 38744], "race": {"hispanic": 88285, "native american": 7816, "white": 456510, "black": 8468, "asian": 19942, "biracial": 4531}, "gender": {"male": 301355, "female": 284197}, "other": {"ungraded students": "", "individualized education program": 70232, "free lunch eligible": 180183, "lep/ell students": 42804, "reduced-price lunch eligible": 43760}}, "staff": 52340.96, "student teacher ratio": 22.8}}}, {"state": "vermont", "data": {"attendance": {"average minutes": 86694.6, "average teacher rate": 94.6, "average student rate": 94.6}, "funding": {"expenditures": 1555315802, "revenue": 1638396119}, "score": {"reading": [{"grade": 4, "scale score": 228}, {"grade": 8, "scale score": 273}], "math": [{"grade": 4, "scale score": 248}, {"grade": 8, "scale score": 293}], "science": [{"grade": 4, "scale score": 160}, {"grade": 8, "scale score": 162}], "writing": [{"grade": 4, "scale score": 158}, {"grade": 8, "scale score": 162}]}, "location": {"latitude": 44.5588028, "longitude": -72.57784149999999}, "enrollment": {"teachers": 8382.08, "schools": 324, "students": {"all": 96858, "year": [10678, 6259, 6213, 6171, 6214, 6291, 6294, 6484, 6628, 6757, 7139, 7287, 7329, 7114], "race": {"hispanic": 1307, "native american": 268, "white": 89899, "black": 1787, "asian": 1563, "biracial": 2034}, "gender": {"male": 50353, "female": 46505}, "other": {"ungraded students": "", "individualized education program": 13562, "free lunch eligible": 25757, "lep/ell students": 1510, "reduced-price lunch eligible": 5582}}, "staff": 18485.22, "student teacher ratio": 11.56}}}, {"state": "virginia", "data": {"attendance": {"average minutes": 68119.72222, "average teacher rate": 83.83333333, "average student rate": 82.44444444}, "funding": {"expenditures": 14548960294, "revenue": 14692849375}, "score": {"reading": [{"grade": 4, "scale score": 227}, {"grade": 8, "scale score": 267}], "math": [{"grade": 4, "scale score": 243}, {"grade": 8, "scale score": 286}], "science": [{"grade": 4, "scale score": 161}, {"grade": 8, "scale score": 155}], "writing": [{"grade": 4, "scale score": 157}, {"grade": 8, "scale score": 157}]}, "location": {"latitude": 37.4315734, "longitude": -78.6568942}, "enrollment": {"teachers": 70947.13, "schools": 2211, "students": {"all": 1251440, "year": [30821, 92899, 95368, 93687, 93328, 93965, 94182, 92762, 92557, 91877, 102407, 96918, 91403, 89266], "race": {"hispanic": 142536, "native american": 4251, "white": 677123, "black": 301427, "asian": 74933, "biracial": 51170}, "gender": {"male": 644200, "female": 607240}, "other": {"ungraded students": "", "individualized education program": 162338, "free lunch eligible": 384744, "lep/ell students": 88033, "reduced-price lunch eligible": 74135}}, "staff": 201047.18, "student teacher ratio": 17.64}}}, {"state": "washington", "data": {"attendance": {"average minutes": 76764.11111, "average teacher rate": 88.38888889, "average student rate": 85.33333333}, "funding": {"expenditures": 11797716020, "revenue": 11817487671}, "score": {"reading": [{"grade": 4, "scale score": 224}, {"grade": 8, "scale score": 265}], "math": [{"grade": 4, "scale score": 242}, {"grade": 8, "scale score": 289}], "science": [{"grade": 4, "scale score": 153}, {"grade": 8, "scale score": 154}], "writing": [{"grade": 4, "scale score": 158}, {"grade": 8, "scale score": 158}]}, "location": {"latitude": 38.9071923, "longitude": -77.0368707}, "enrollment": {"teachers": 53934.11, "schools": 2354, "students": {"all": 1043788, "year": [12056, 75933, 78598, 77707, 76802, 78546, 79062, 78531, 78489, 78448, 84449, 81990, 79465, 83712], "race": {"hispanic": 187783, "native american": 17570, "white": 655984, "black": 50048, "asian": 84123, "biracial": 48280}, "gender": {"male": 538050, "female": 505738}, "other": {"ungraded students": "", "individualized education program": 127909, "free lunch eligible": 345382, "lep/ell students": 90282, "reduced-price lunch eligible": 72683}}, "staff": 103782.87, "student teacher ratio": 19.35}}}, {"state": "west virginia", "data": {"attendance": {"average minutes": 76721.13333, "average teacher rate": 92.2, "average student rate": 95.6}, "funding": {"expenditures": 3435241188, "revenue": 3432220414}, "score": {"reading": [{"grade": 4, "scale score": 215}, {"grade": 8, "scale score": 255}], "math": [{"grade": 4, "scale score": 233}, {"grade": 8, "scale score": 270}], "science": [{"grade": 4, "scale score": 151}, {"grade": 8, "scale score": 147}], "writing": [{"grade": 4, "scale score": 147}, {"grade": 8, "scale score": 146}]}, "location": {"latitude": 38.5976262, "longitude": -80.4549026}, "enrollment": {"teachers": 20338.46, "schools": 765, "students": {"all": 282879, "year": [14660, 21256, 21167, 20299, 20786, 20493, 20842, 20595, 20919, 20455, 22785, 21037, 19155, 18430], "race": {"hispanic": 3139, "native american": 338, "white": 260278, "black": 14786, "asian": 2063, "biracial": 2275}, "gender": {"male": 146200, "female": 136679}, "other": {"ungraded students": "", "individualized education program": 44924, "free lunch eligible": 124111, "lep/ell students": 1788, "reduced-price lunch eligible": 21494}}, "staff": 39270.21, "student teacher ratio": 13.91}}}, {"state": "wisconsin", "data": {"attendance": {"average minutes": 43804.72727, "average teacher rate": 57.90909091, "average student rate": 51.36363636}, "funding": {"expenditures": 11470336083, "revenue": 11104748973}, "score": {"reading": [{"grade": 4, "scale score": 223}, {"grade": 8, "scale score": 264}], "math": [{"grade": 4, "scale score": 244}, {"grade": 8, "scale score": 288}], "science": [{"grade": 4, "scale score": 158}, {"grade": 8, "scale score": 158}], "writing": [{"grade": 4, "scale score": ""}, {"grade": 8, "scale score": 158}]}, "location": {"latitude": 43.7844397, "longitude": -88.7878678}, "enrollment": {"teachers": 57625.42, "schools": 2275, "students": {"all": 872286, "year": [50200, 60721, 61262, 60226, 59981, 61015, 61420, 61053, 61264, 61337, 68383, 66490, 69076, 69858], "race": {"hispanic": 80826, "native american": 11625, "white": 648801, "black": 86665, "asian": 31165, "biracial": 13204}, "gender": {"male": 449545, "female": 422741}, "other": {"ungraded students": "", "individualized education program": 124721, "free lunch eligible": 289759, "lep/ell students": 43638, "reduced-price lunch eligible": 52901}}, "staff": 103900.92, "student teacher ratio": 15.14}}}, {"state": "wyoming", "data": {"attendance": {"average minutes": 66640, "average teacher rate": null, "average student rate": 90.33333333}, "funding": {"expenditures": 1685613073, "revenue": 1708365142}, "score": {"reading": [{"grade": 4, "scale score": 225}, {"grade": 8, "scale score": 266}], "math": [{"grade": 4, "scale score": 242}, {"grade": 8, "scale score": 286}], "science": [{"grade": 4, "scale score": 157}, {"grade": 8, "scale score": 159}], "writing": [{"grade": 4, "scale score": 150}, {"grade": 8, "scale score": 158}]}, "location": {"latitude": 43.0759678, "longitude": -107.2902839}, "enrollment": {"teachers": 7127.45, "schools": 365, "students": {"all": 89009, "year": [582, 7611, 7124, 7064, 6801, 6694, 6711, 6766, 6776, 6657, 6842, 6724, 6424, 6233], "race": {"hispanic": 10932, "native american": 2937, "white": 72070, "black": 1022, "asian": 837, "biracial": 1211}, "gender": {"male": 45873, "female": 43136}, "other": {"ungraded students": "", "individualized education program": 15231, "free lunch eligible": 24216, "lep/ell students": 2602, "reduced-price lunch eligible": 8752}}, "staff": 16423.88, "student teacher ratio": 12.49}}}]
+[
+  {
+    "state": "alabama", 
+    "data": {
+      "enrollment": {
+        "schools": 1615, 
+        "students": {
+          "gender": {
+            "male": 387549, 
+            "female": 368003
+          }, 
+          "all": 755552, 
+          "race": {
+            "biracial": 2534, 
+            "hispanic": 35389, 
+            "black": 261255, 
+            "asian": 9753, 
+            "white": 440519, 
+            "native american": 6102
+          }, 
+          "other": {
+            "individualized education program": 81216, 
+            "free lunch eligible": 356929, 
+            "ungraded students": "", 
+            "lep/ell students": 17559, 
+            "reduced-price lunch eligible": 45457
+          }, 
+          "year": [
+            8179, 
+            57665, 
+            58448, 
+            56699, 
+            57216, 
+            59117, 
+            59897, 
+            59157, 
+            59242, 
+            57992, 
+            62615, 
+            57644, 
+            51962, 
+            49719
+          ]
+        }, 
+        "student teacher ratio": 15.31, 
+        "teachers": 49363.24, 
+        "staff": 95144.48
+      }, 
+      "attendance": {
+        "average student rate": 96, 
+        "average teacher rate": 93.38461538, 
+        "average minutes": 61768.53846
+      }, 
+      "funding": {
+        "expenditures": 7646087117, 
+        "revenue": 7239690678
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 142
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 138
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 216
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 252
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 228
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 269
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 140
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 148
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 32.3182314, 
+        "longitude": -86.902298
+      }
+    }
+  }, 
+  {
+    "state": "alaska", 
+    "data": {
+      "enrollment": {
+        "schools": 518, 
+        "students": {
+          "gender": {
+            "male": 68169, 
+            "female": 63935
+          }, 
+          "all": 132104, 
+          "race": {
+            "biracial": 9558, 
+            "hispanic": 7802, 
+            "black": 4788, 
+            "asian": 10556, 
+            "white": 68967, 
+            "native american": 30433
+          }, 
+          "other": {
+            "individualized education program": 18048, 
+            "free lunch eligible": 42028, 
+            "ungraded students": "", 
+            "lep/ell students": 14963, 
+            "reduced-price lunch eligible": 8673
+          }, 
+          "year": [
+            2990, 
+            10120, 
+            9991, 
+            10006, 
+            9787, 
+            9917, 
+            9988, 
+            9933, 
+            9636, 
+            9622, 
+            10023, 
+            9723, 
+            10725, 
+            9643
+          ]
+        }, 
+        "student teacher ratio": 16.17, 
+        "teachers": 8170.64, 
+        "staff": 18102.1
+      }, 
+      "attendance": {
+        "average student rate": 81.85714286, 
+        "average teacher rate": 91, 
+        "average minutes": 67104.71429
+      }, 
+      "funding": {
+        "expenditures": 2363392122, 
+        "revenue": 2338215421
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 214
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 259
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 237
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 283
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 64.2008413, 
+        "longitude": -149.4936733
+      }
+    }
+  }, 
+  {
+    "state": "arizona", 
+    "data": {
+      "enrollment": {
+        "schools": 2380, 
+        "students": {
+          "gender": {
+            "male": 551429, 
+            "female": 520322
+          }, 
+          "all": 1071751, 
+          "race": {
+            "biracial": 12832, 
+            "hispanic": 452283, 
+            "black": 59549, 
+            "asian": 32427, 
+            "white": 459348, 
+            "native american": 55312
+          }, 
+          "other": {
+            "individualized education program": 125806, 
+            "free lunch eligible": 374905, 
+            "ungraded students": 150, 
+            "lep/ell students": 76320, 
+            "reduced-price lunch eligible": 107139
+          }, 
+          "year": [
+            8554, 
+            82860, 
+            84473, 
+            83544, 
+            82485, 
+            82862, 
+            82690, 
+            82305, 
+            81445, 
+            80636, 
+            82304, 
+            79842, 
+            76275, 
+            81326
+          ]
+        }, 
+        "student teacher ratio": 21.42, 
+        "teachers": 50030.62, 
+        "staff": 96622.35
+      }, 
+      "attendance": {
+        "average student rate": 89.05263158, 
+        "average teacher rate": 93.68421053, 
+        "average minutes": 69632.68421
+      }, 
+      "funding": {
+        "expenditures": 10043771219, 
+        "revenue": 10069959317
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 139
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 140
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 210
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 255
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 230
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 277
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 140
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 148
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 34.0489281, 
+        "longitude": -111.0937311
+      }
+    }
+  }, 
+  {
+    "state": "arkansas", 
+    "data": {
+      "enrollment": {
+        "schools": 1128, 
+        "students": {
+          "gender": {
+            "male": 246682, 
+            "female": 235432
+          }, 
+          "all": 482114, 
+          "race": {
+            "biracial": 6417, 
+            "hispanic": 47340, 
+            "black": 103637, 
+            "asian": 8979, 
+            "white": 312372, 
+            "native american": 3369
+          }, 
+          "other": {
+            "individualized education program": 64883, 
+            "free lunch eligible": 246451, 
+            "ungraded students": 518, 
+            "lep/ell students": 31537, 
+            "reduced-price lunch eligible": 45157
+          }, 
+          "year": [
+            14059, 
+            37701, 
+            37651, 
+            36770, 
+            36624, 
+            36873, 
+            36628, 
+            36591, 
+            36306, 
+            36237, 
+            37807, 
+            35280, 
+            32739, 
+            30330
+          ]
+        }, 
+        "student teacher ratio": 14.07, 
+        "teachers": 34272.8, 
+        "staff": 72184.8
+      }, 
+      "attendance": {
+        "average student rate": 93.28571429, 
+        "average teacher rate": 89, 
+        "average minutes": 92459.42857
+      }, 
+      "funding": {
+        "expenditures": 5275686582, 
+        "revenue": 5160400914
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 147
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 144
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 217
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 258
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 238
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 276
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 145
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 151
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 35.20105, 
+        "longitude": -91.8318334
+      }
+    }
+  }, 
+  {
+    "state": "california", 
+    "data": {
+      "enrollment": {
+        "schools": 10340, 
+        "students": {
+          "gender": {
+            "male": 3193286, 
+            "female": 3023888
+          }, 
+          "all": 6289578, 
+          "race": {
+            "biracial": 179880, 
+            "hispanic": 3197490, 
+            "black": 416299, 
+            "asian": 724420, 
+            "white": 1655539, 
+            "native american": 43546
+          }, 
+          "other": {
+            "individualized education program": 662508, 
+            "free lunch eligible": 2848583, 
+            "ungraded students": 5640, 
+            "lep/ell students": 0, 
+            "reduced-price lunch eligible": 487302
+          }, 
+          "year": [
+            72404, 
+            468036, 
+            477086, 
+            470001, 
+            461967, 
+            463691, 
+            469800, 
+            467271, 
+            463505, 
+            476639, 
+            510011, 
+            502452, 
+            488530, 
+            492545
+          ]
+        }, 
+        "student teacher ratio": 24.12, 
+        "teachers": 260806.3, 
+        "staff": 530337.1
+      }, 
+      "attendance": {
+        "average student rate": 90.0326087, 
+        "average teacher rate": 89.85869565, 
+        "average minutes": 63042.71739
+      }, 
+      "funding": {
+        "expenditures": 68479096372, 
+        "revenue": 64130241939
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 137
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 136
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 209
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 251
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 232
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 270
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 146
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 148
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 36.778261, 
+        "longitude": -119.4179324
+      }
+    }
+  }, 
+  {
+    "state": "colorado", 
+    "data": {
+      "enrollment": {
+        "schools": 1835, 
+        "students": {
+          "gender": {
+            "male": 432270, 
+            "female": 411046
+          }, 
+          "all": 843316, 
+          "race": {
+            "biracial": 23565, 
+            "hispanic": 266098, 
+            "black": 40537, 
+            "asian": 26337, 
+            "white": 479327, 
+            "native american": 7452
+          }, 
+          "other": {
+            "individualized education program": 84710, 
+            "free lunch eligible": 279259, 
+            "ungraded students": "", 
+            "lep/ell students": 99804, 
+            "reduced-price lunch eligible": 57166
+          }, 
+          "year": [
+            30593, 
+            65182, 
+            65665, 
+            65885, 
+            64238, 
+            63819, 
+            63328, 
+            61755, 
+            60928, 
+            59684, 
+            62258, 
+            60775, 
+            58307, 
+            60899
+          ]
+        }, 
+        "student teacher ratio": 17.37, 
+        "teachers": 48542.99, 
+        "staff": 101426.27
+      }, 
+      "attendance": {
+        "average student rate": 77, 
+        "average teacher rate": 76.80952381, 
+        "average minutes": 62790.04762
+      }, 
+      "funding": {
+        "expenditures": 8970879441, 
+        "revenue": 8852609203
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 155
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 155
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 224
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 266
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 243
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 287
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 161
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 39.5500507, 
+        "longitude": -105.7820674
+      }
+    }
+  }, 
+  {
+    "state": "connecticut", 
+    "data": {
+      "enrollment": {
+        "schools": 1184, 
+        "students": {
+          "gender": {
+            "male": 288798, 
+            "female": 271748
+          }, 
+          "all": 560546, 
+          "race": {
+            "biracial": 7899, 
+            "hispanic": 104312, 
+            "black": 74130, 
+            "asian": 24366, 
+            "white": 347739, 
+            "native american": 2100
+          }, 
+          "other": {
+            "individualized education program": 68130, 
+            "free lunch eligible": 162823, 
+            "ungraded students": "", 
+            "lep/ell students": 30428, 
+            "reduced-price lunch eligible": 27731
+          }, 
+          "year": [
+            15921, 
+            39670, 
+            40830, 
+            41203, 
+            40254, 
+            41155, 
+            41550, 
+            41930, 
+            42616, 
+            42346, 
+            45908, 
+            43573, 
+            42209, 
+            41381
+          ]
+        }, 
+        "student teacher ratio": 13.05, 
+        "teachers": 42951.39, 
+        "staff": 93087.95
+      }, 
+      "attendance": {
+        "average student rate": 88.42857143, 
+        "average teacher rate": 87.85714286, 
+        "average minutes": 61105.71429
+      }, 
+      "funding": {
+        "expenditures": 9932181078, 
+        "revenue": 9895487089
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 155
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 152
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 227
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 267
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 245
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 289
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 174
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 172
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 41.6032207, 
+        "longitude": -73.087749
+      }
+    }
+  }, 
+  {
+    "state": "delaware", 
+    "data": {
+      "enrollment": {
+        "schools": 218, 
+        "students": {
+          "gender": {
+            "male": 66612, 
+            "female": 62791
+          }, 
+          "all": 129403, 
+          "race": {
+            "biracial": 1818, 
+            "hispanic": 15988, 
+            "black": 41737, 
+            "asian": 4441, 
+            "white": 64784, 
+            "native american": 635
+          }, 
+          "other": {
+            "individualized education program": 18608, 
+            "free lunch eligible": 54057, 
+            "ungraded students": "", 
+            "lep/ell students": 6858, 
+            "reduced-price lunch eligible": 7507
+          }, 
+          "year": [
+            1626, 
+            9810, 
+            10157, 
+            10127, 
+            9796, 
+            9797, 
+            9897, 
+            9847, 
+            9718, 
+            9504, 
+            11416, 
+            10147, 
+            9097, 
+            8464
+          ]
+        }, 
+        "student teacher ratio": 14.49, 
+        "teachers": 8933, 
+        "staff": 16477.97
+      }, 
+      "attendance": {
+        "average student rate": 89.5, 
+        "average teacher rate": null, 
+        "average minutes": null
+      }, 
+      "funding": {
+        "expenditures": 1816880173, 
+        "revenue": 1784101401
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 152
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 152
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 225
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 265
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 239
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 284
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 163
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 158
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 38.9108325, 
+        "longitude": -75.52766989999999
+      }
+    }
+  }, 
+  {
+    "state": "district of columbia", 
+    "data": {
+      "enrollment": {
+        "schools": 235, 
+        "students": {
+          "gender": {
+            "male": 35506, 
+            "female": 35778
+          }, 
+          "all": 71284, 
+          "race": {
+            "biracial": 691, 
+            "hispanic": 8980, 
+            "black": 55441, 
+            "asian": 1027, 
+            "white": 5093, 
+            "native american": 52
+          }, 
+          "other": {
+            "individualized education program": 11947, 
+            "free lunch eligible": 46183, 
+            "ungraded students": 265, 
+            "lep/ell students": 5261, 
+            "reduced-price lunch eligible": 5000
+          }, 
+          "year": [
+            9581, 
+            5939, 
+            5240, 
+            4915, 
+            4873, 
+            4877, 
+            4825, 
+            4391, 
+            4439, 
+            4307, 
+            5858, 
+            4516, 
+            3851, 
+            3407
+          ]
+        }, 
+        "student teacher ratio": 12.03, 
+        "teachers": 5925.33, 
+        "staff": 11381.12
+      }, 
+      "attendance": {
+        "average student rate": 86.6, 
+        "average teacher rate": 89.8, 
+        "average minutes": 78280.5
+      }, 
+      "funding": {
+        "expenditures": 1691237659, 
+        "revenue": 1720917362
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 197
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 241
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 219
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 254
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 135
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 38.9071923, 
+        "longitude": -77.0368707
+      }
+    }
+  }, 
+  {
+    "state": "florida", 
+    "data": {
+      "enrollment": {
+        "schools": 4289, 
+        "students": {
+          "gender": {
+            "male": 1359024, 
+            "female": 1284323
+          }, 
+          "all": 2643347, 
+          "race": {
+            "biracial": 79194, 
+            "hispanic": 740786, 
+            "black": 607134, 
+            "asian": 67880, 
+            "white": 1137860, 
+            "native american": 10493
+          }, 
+          "other": {
+            "individualized education program": 366824, 
+            "free lunch eligible": 1287000, 
+            "ungraded students": "", 
+            "lep/ell students": 229758, 
+            "reduced-price lunch eligible": 192519
+          }, 
+          "year": [
+            52779, 
+            197097, 
+            200806, 
+            196620, 
+            205650, 
+            200682, 
+            200738, 
+            202303, 
+            200147, 
+            201676, 
+            214993, 
+            205142, 
+            186399, 
+            178315
+          ]
+        }, 
+        "student teacher ratio": 15.05, 
+        "teachers": 175609.29, 
+        "staff": 333183.15
+      }, 
+      "attendance": {
+        "average student rate": 93.04225352, 
+        "average teacher rate": 92.76056338, 
+        "average minutes": 70982.85915
+      }, 
+      "funding": {
+        "expenditures": 27637538062, 
+        "revenue": 26056856782
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 150
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 141
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 224
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 260
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 242
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 279
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 158
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 158
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 27.6648274, 
+        "longitude": -81.5157535
+      }
+    }
+  }, 
+  {
+    "state": "georgia", 
+    "data": {
+      "enrollment": {
+        "schools": 2541, 
+        "students": {
+          "gender": {
+            "male": 858566, 
+            "female": 818501
+          }, 
+          "all": 1677067, 
+          "race": {
+            "biracial": 49875, 
+            "hispanic": 200086, 
+            "black": 621222, 
+            "asian": 56780, 
+            "white": 745145, 
+            "native american": 3959
+          }, 
+          "other": {
+            "individualized education program": 177536, 
+            "free lunch eligible": 850161, 
+            "ungraded students": "", 
+            "lep/ell students": 81409, 
+            "reduced-price lunch eligible": 111793
+          }, 
+          "year": [
+            42816, 
+            132008, 
+            130171, 
+            127744, 
+            129879, 
+            131326, 
+            131057, 
+            127442, 
+            126242, 
+            123794, 
+            145043, 
+            124239, 
+            104914, 
+            100392
+          ]
+        }, 
+        "student teacher ratio": 14.91, 
+        "teachers": 112459.6, 
+        "staff": 227187.5
+      }, 
+      "attendance": {
+        "average student rate": 91.84615385, 
+        "average teacher rate": 93.88461538, 
+        "average minutes": 86922.84615
+      }, 
+      "funding": {
+        "expenditures": 17851273130, 
+        "revenue": 17835791419
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 148
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 144
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 219
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 259
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 236
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 278
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 149
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 153
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 32.1656221, 
+        "longitude": -82.9000751
+      }
+    }
+  }, 
+  {
+    "state": "hawaii", 
+    "data": {
+      "enrollment": {
+        "schools": 290, 
+        "students": {
+          "gender": {
+            "male": 93542, 
+            "female": 86059
+          }, 
+          "all": 179601, 
+          "race": {
+            "biracial": 15049, 
+            "hispanic": 7996, 
+            "black": 4444, 
+            "asian": 125079, 
+            "white": 25962, 
+            "native american": 1071
+          }, 
+          "other": {
+            "individualized education program": 19716, 
+            "free lunch eligible": 65273, 
+            "ungraded students": 215, 
+            "lep/ell students": 19092, 
+            "reduced-price lunch eligible": 18833
+          }, 
+          "year": [
+            1393, 
+            16028, 
+            14754, 
+            14540, 
+            14234, 
+            13457, 
+            14171, 
+            13285, 
+            12982, 
+            12567, 
+            15164, 
+            13466, 
+            12527, 
+            10818
+          ]
+        }, 
+        "student teacher ratio": 15.76, 
+        "teachers": 11395.95, 
+        "staff": 21703.58
+      }, 
+      "attendance": {
+        "average student rate": 91.33333333, 
+        "average teacher rate": 91.33333333, 
+        "average minutes": 71515
+      }, 
+      "funding": {
+        "expenditures": 2323871359, 
+        "revenue": 2564854622
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 142
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 136
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 213
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 251
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 236
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 274
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 149
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 144
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 19.8967662, 
+        "longitude": -155.5827818
+      }
+    }
+  }, 
+  {
+    "state": "idaho", 
+    "data": {
+      "enrollment": {
+        "schools": 755, 
+        "students": {
+          "gender": {
+            "male": 142065, 
+            "female": 133794
+          }, 
+          "all": 275859, 
+          "race": {
+            "biracial": 4163, 
+            "hispanic": 43795, 
+            "black": 2819, 
+            "asian": 4553, 
+            "white": 216683, 
+            "native american": 3846
+          }, 
+          "other": {
+            "individualized education program": 27365, 
+            "free lunch eligible": 99557, 
+            "ungraded students": "", 
+            "lep/ell students": 15393, 
+            "reduced-price lunch eligible": 24547
+          }, 
+          "year": [
+            1821, 
+            21144, 
+            21865, 
+            21577, 
+            21592, 
+            21575, 
+            21434, 
+            21563, 
+            20985, 
+            20588, 
+            22062, 
+            20451, 
+            19840, 
+            19362
+          ]
+        }, 
+        "student teacher ratio": 17.6, 
+        "teachers": 15672.54, 
+        "staff": 27783.43
+      }, 
+      "attendance": {
+        "average student rate": 79.33333333, 
+        "average teacher rate": 80, 
+        "average minutes": 77717.33333
+      }, 
+      "funding": {
+        "expenditures": 2275076283, 
+        "revenue": 2222539471
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 155
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 158
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 223
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 265
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 241
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 287
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 150
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 154
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 44.0682019, 
+        "longitude": -114.7420408
+      }
+    }
+  }, 
+  {
+    "state": "illinois", 
+    "data": {
+      "enrollment": {
+        "schools": 4439, 
+        "students": {
+          "gender": {
+            "male": 1074775, 
+            "female": 1016879
+          }, 
+          "all": 2091654, 
+          "race": {
+            "biracial": 60200, 
+            "hispanic": 479515, 
+            "black": 384701, 
+            "asian": 87775, 
+            "white": 1072617, 
+            "native american": 6846
+          }, 
+          "other": {
+            "individualized education program": 303092, 
+            "free lunch eligible": 811915, 
+            "ungraded students": "", 
+            "lep/ell students": 174340, 
+            "reduced-price lunch eligible": 109556
+          }, 
+          "year": [
+            78260, 
+            146225, 
+            153996, 
+            151647, 
+            153926, 
+            153781, 
+            154636, 
+            153748, 
+            154281, 
+            154293, 
+            169967, 
+            169365, 
+            150576, 
+            146953
+          ]
+        }, 
+        "student teacher ratio": 15.73, 
+        "teachers": 132982.73, 
+        "staff": 215764.43
+      }, 
+      "attendance": {
+        "average student rate": 83.4, 
+        "average teacher rate": 84.8, 
+        "average minutes": 61080.2
+      }, 
+      "funding": {
+        "expenditures": 28198146579, 
+        "revenue": 28263059341
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 148
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 148
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 219
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 263
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 238
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 282
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 160
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 40.6331249, 
+        "longitude": -89.3985283
+      }
+    }
+  }, 
+  {
+    "state": "indiana", 
+    "data": {
+      "enrollment": {
+        "schools": 1992, 
+        "students": {
+          "gender": {
+            "male": 537152, 
+            "female": 510080
+          }, 
+          "all": 1047232, 
+          "race": {
+            "biracial": 45997, 
+            "hispanic": 88133, 
+            "black": 126783, 
+            "asian": 17470, 
+            "white": 765473, 
+            "native american": 3376
+          }, 
+          "other": {
+            "individualized education program": 165802, 
+            "free lunch eligible": 405045, 
+            "ungraded students": "", 
+            "lep/ell students": 49573, 
+            "reduced-price lunch eligible": 80683
+          }, 
+          "year": [
+            11652, 
+            76765, 
+            81397, 
+            78857, 
+            78972, 
+            82387, 
+            80081, 
+            79585, 
+            79928, 
+            79790, 
+            84139, 
+            81558, 
+            77285, 
+            74836
+          ]
+        }, 
+        "student teacher ratio": 18.02, 
+        "teachers": 58121, 
+        "staff": 138802
+      }, 
+      "attendance": {
+        "average student rate": 89.14285714, 
+        "average teacher rate": 94.85714286, 
+        "average minutes": 70114.28571
+      }, 
+      "funding": {
+        "expenditures": 11351074316, 
+        "revenue": 13641694560
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 152
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 150
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 222
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 264
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 243
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 287
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 154
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 155
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 40.2671941, 
+        "longitude": -86.1349019
+      }
+    }
+  }, 
+  {
+    "state": "iowa", 
+    "data": {
+      "enrollment": {
+        "schools": 1487, 
+        "students": {
+          "gender": {
+            "male": 255611, 
+            "female": 240164
+          }, 
+          "all": 495775, 
+          "race": {
+            "biracial": 11120, 
+            "hispanic": 42295, 
+            "black": 25215, 
+            "asian": 10623, 
+            "white": 404160, 
+            "native american": 2362
+          }, 
+          "other": {
+            "individualized education program": 68498, 
+            "free lunch eligible": 149977, 
+            "ungraded students": "", 
+            "lep/ell students": 21733, 
+            "reduced-price lunch eligible": 38509
+          }, 
+          "year": [
+            27211, 
+            39306, 
+            35369, 
+            35121, 
+            34939, 
+            35071, 
+            35336, 
+            35080, 
+            35416, 
+            35263, 
+            36984, 
+            36540, 
+            36435, 
+            37704
+          ]
+        }, 
+        "student teacher ratio": 14.31, 
+        "teachers": 34642.08, 
+        "staff": 69614.93
+      }, 
+      "attendance": {
+        "average student rate": 93.33333333, 
+        "average teacher rate": 92.66666667, 
+        "average minutes": 81643.33333
+      }, 
+      "funding": {
+        "expenditures": 5728511603, 
+        "revenue": 5541140375
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 225
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 267
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 243
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 284
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 155
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 155
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 41.8780025, 
+        "longitude": -93.097702
+      }
+    }
+  }, 
+  {
+    "state": "kansas", 
+    "data": {
+      "enrollment": {
+        "schools": 1470, 
+        "students": {
+          "gender": {
+            "male": 248943, 
+            "female": 234758
+          }, 
+          "all": 483701, 
+          "race": {
+            "biracial": 20598, 
+            "hispanic": 79129, 
+            "black": 35958, 
+            "asian": 12796, 
+            "white": 329036, 
+            "native american": 6184
+          }, 
+          "other": {
+            "individualized education program": 66851, 
+            "free lunch eligible": 179931, 
+            "ungraded students": 4605, 
+            "lep/ell students": 39323, 
+            "reduced-price lunch eligible": 48921
+          }, 
+          "year": [
+            17318, 
+            37023, 
+            36520, 
+            36357, 
+            35648, 
+            35991, 
+            35898, 
+            35372, 
+            35244, 
+            34220, 
+            37010, 
+            35639, 
+            33676, 
+            33180
+          ]
+        }, 
+        "student teacher ratio": 13.96, 
+        "teachers": 34643.8, 
+        "staff": 67750.8
+      }, 
+      "attendance": {
+        "average student rate": 93.16666667, 
+        "average teacher rate": 92.66666667, 
+        "average minutes": 71079.5
+      }, 
+      "funding": {
+        "expenditures": 5327426553, 
+        "revenue": 5487071312
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 225
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 267
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 245
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 289
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 149
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 156
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 39.011902, 
+        "longitude": -98.4842465
+      }
+    }
+  }, 
+  {
+    "state": "kentucky", 
+    "data": {
+      "enrollment": {
+        "schools": 1577, 
+        "students": {
+          "gender": {
+            "male": 346945, 
+            "female": 326183
+          }, 
+          "all": 673128, 
+          "race": {
+            "biracial": 12080, 
+            "hispanic": 26188, 
+            "black": 72915, 
+            "asian": 9543, 
+            "white": 551461, 
+            "native american": 941
+          }, 
+          "other": {
+            "individualized education program": 102370, 
+            "free lunch eligible": 329897, 
+            "ungraded students": 460, 
+            "lep/ell students": 16351, 
+            "reduced-price lunch eligible": 50876
+          }, 
+          "year": [
+            24260, 
+            51091, 
+            52207, 
+            50855, 
+            51279, 
+            51189, 
+            50980, 
+            49988, 
+            49633, 
+            48525, 
+            52668, 
+            50262, 
+            46008, 
+            43723
+          ]
+        }, 
+        "student teacher ratio": 16.01, 
+        "teachers": 42041.84, 
+        "staff": 99225.24
+      }, 
+      "attendance": {
+        "average student rate": 85, 
+        "average teacher rate": null, 
+        "average minutes": 70475.5
+      }, 
+      "funding": {
+        "expenditures": 7097739314, 
+        "revenue": 6873286087
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 158
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 153
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 222
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 262
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 239
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 279
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 154
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 151
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 37.8393332, 
+        "longitude": -84.2700179
+      }
+    }
+  }, 
+  {
+    "state": "louisiana", 
+    "data": {
+      "enrollment": {
+        "schools": 1509, 
+        "students": {
+          "gender": {
+            "male": 356535, 
+            "female": 340023
+          }, 
+          "all": 696558, 
+          "race": {
+            "biracial": 7097, 
+            "hispanic": 18145, 
+            "black": 316083, 
+            "asian": 10522, 
+            "white": 338126, 
+            "native american": 6585
+          }, 
+          "other": {
+            "individualized education program": 82934, 
+            "free lunch eligible": 412684, 
+            "ungraded students": "", 
+            "lep/ell students": 11698, 
+            "reduced-price lunch eligible": 47862
+          }, 
+          "year": [
+            29657, 
+            54276, 
+            55750, 
+            53975, 
+            53842, 
+            58778, 
+            52976, 
+            51813, 
+            51676, 
+            49523, 
+            57941, 
+            46689, 
+            41224, 
+            38438
+          ]
+        }, 
+        "student teacher ratio": 14.32, 
+        "teachers": 48655.03, 
+        "staff": 100880.51
+      }, 
+      "attendance": {
+        "average student rate": 88.5, 
+        "average teacher rate": 93.5, 
+        "average minutes": 72214.5
+      }, 
+      "funding": {
+        "expenditures": 8358505788, 
+        "revenue": 8215973149
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 143
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 138
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 207
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 253
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 229
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 272
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 142
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 147
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 30.9842977, 
+        "longitude": -91.96233269999999
+      }
+    }
+  }, 
+  {
+    "state": "maine", 
+    "data": {
+      "enrollment": {
+        "schools": 657, 
+        "students": {
+          "gender": {
+            "male": 97694, 
+            "female": 91383
+          }, 
+          "all": 189077, 
+          "race": {
+            "biracial": 4659, 
+            "hispanic": 2766, 
+            "black": 3347, 
+            "asian": 2092, 
+            "white": 174828, 
+            "native american": 1385
+          }, 
+          "other": {
+            "individualized education program": 29502, 
+            "free lunch eligible": 66458, 
+            "ungraded students": "", 
+            "lep/ell students": 4792, 
+            "reduced-price lunch eligible": 12457
+          }, 
+          "year": [
+            4247, 
+            13819, 
+            13647, 
+            13405, 
+            13420, 
+            13728, 
+            13858, 
+            14034, 
+            14413, 
+            14358, 
+            14836, 
+            14996, 
+            15001, 
+            15315
+          ]
+        }, 
+        "student teacher ratio": 12.29, 
+        "teachers": 15384.3, 
+        "staff": 32548.8
+      }, 
+      "attendance": {
+        "average student rate": 92.16666667, 
+        "average teacher rate": 96.16666667, 
+        "average minutes": 83164
+      }, 
+      "funding": {
+        "expenditures": 2618800032, 
+        "revenue": 2639779372
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 160
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 158
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 226
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 270
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 244
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 286
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 158
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 161
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 45.253783, 
+        "longitude": -69.4454689
+      }
+    }
+  }, 
+  {
+    "state": "maryland", 
+    "data": {
+      "enrollment": {
+        "schools": 1457, 
+        "students": {
+          "gender": {
+            "male": 436830, 
+            "female": 415381
+          }, 
+          "all": 852211, 
+          "race": {
+            "biracial": 29507, 
+            "hispanic": 98404, 
+            "black": 305310, 
+            "asian": 49939, 
+            "white": 366004, 
+            "native american": 3047
+          }, 
+          "other": {
+            "individualized education program": 102818, 
+            "free lunch eligible": 285041, 
+            "ungraded students": "", 
+            "lep/ell students": 45500, 
+            "reduced-price lunch eligible": 56516
+          }, 
+          "year": [
+            29377, 
+            62704, 
+            63635, 
+            63086, 
+            62640, 
+            60765, 
+            61641, 
+            60475, 
+            61862, 
+            61971, 
+            72700, 
+            67923, 
+            62877, 
+            60555
+          ]
+        }, 
+        "student teacher ratio": 14.59, 
+        "teachers": 58428.47, 
+        "staff": 115367.37
+      }, 
+      "attendance": {
+        "average student rate": 91.09090909, 
+        "average teacher rate": 89.90909091, 
+        "average minutes": 73440.90909
+      }, 
+      "funding": {
+        "expenditures": 13206360760, 
+        "revenue": 13352511187
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 149
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 145
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 225
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 265
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 244
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 288
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 157
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 39.0457549, 
+        "longitude": -76.64127119999999
+      }
+    }
+  }, 
+  {
+    "state": "massachusetts", 
+    "data": {
+      "enrollment": {
+        "schools": 1849, 
+        "students": {
+          "gender": {
+            "male": 490363, 
+            "female": 465200
+          }, 
+          "all": 955563, 
+          "race": {
+            "biracial": 22843, 
+            "hispanic": 147524, 
+            "black": 78825, 
+            "asian": 53823, 
+            "white": 650166, 
+            "native american": 2382
+          }, 
+          "other": {
+            "individualized education program": 167323, 
+            "free lunch eligible": 277919, 
+            "ungraded students": 876, 
+            "lep/ell students": 54988, 
+            "reduced-price lunch eligible": 48930
+          }, 
+          "year": [
+            27747, 
+            67496, 
+            70973, 
+            70797, 
+            70312, 
+            71140, 
+            71402, 
+            71404, 
+            72667, 
+            71588, 
+            77787, 
+            73101, 
+            70557, 
+            67716
+          ]
+        }, 
+        "student teacher ratio": 13.9, 
+        "teachers": 68754.39, 
+        "staff": 122057.07
+      }, 
+      "attendance": {
+        "average student rate": 92.16666667, 
+        "average teacher rate": null, 
+        "average minutes": null
+      }, 
+      "funding": {
+        "expenditures": 15112344078, 
+        "revenue": 15570234335
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 160
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 161
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 236
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 273
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 252
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 299
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 170
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 167
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 42.4072107, 
+        "longitude": -71.3824374
+      }
+    }
+  }, 
+  {
+    "state": "michigan", 
+    "data": {
+      "enrollment": {
+        "schools": 4115, 
+        "students": {
+          "gender": {
+            "male": 818044, 
+            "female": 769023
+          }, 
+          "all": 1587067, 
+          "race": {
+            "biracial": 29881, 
+            "hispanic": 92734, 
+            "black": 301176, 
+            "asian": 43075, 
+            "white": 1107198, 
+            "native american": 13003
+          }, 
+          "other": {
+            "individualized education program": 217213, 
+            "free lunch eligible": 636380, 
+            "ungraded students": 7946, 
+            "lep/ell students": 56474, 
+            "reduced-price lunch eligible": 83420
+          }, 
+          "year": [
+            28187, 
+            112835, 
+            116028, 
+            112653, 
+            112875, 
+            115722, 
+            117035, 
+            117129, 
+            118958, 
+            118831, 
+            132050, 
+            133238, 
+            121344, 
+            122236
+          ]
+        }, 
+        "student teacher ratio": 17.91, 
+        "teachers": 88614.71, 
+        "staff": 193486.62
+      }, 
+      "attendance": {
+        "average student rate": 81.42857143, 
+        "average teacher rate": 85.92857143, 
+        "average minutes": 69261.35714
+      }, 
+      "funding": {
+        "expenditures": 19792567967, 
+        "revenue": 19401179865
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 152
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 155
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 220
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 260
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 236
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 278
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 147
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 151
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 44.3148443, 
+        "longitude": -85.60236429999999
+      }
+    }
+  }, 
+  {
+    "state": "minnesota", 
+    "data": {
+      "enrollment": {
+        "schools": 2461, 
+        "students": {
+          "gender": {
+            "male": 431857, 
+            "female": 406180
+          }, 
+          "all": 838037, 
+          "race": {
+            "biracial": 15028, 
+            "hispanic": 60175, 
+            "black": 77015, 
+            "asian": 50704, 
+            "white": 618819, 
+            "native american": 16296
+          }, 
+          "other": {
+            "individualized education program": 122850, 
+            "free lunch eligible": 239221, 
+            "ungraded students": "", 
+            "lep/ell students": 48428, 
+            "reduced-price lunch eligible": 66915
+          }, 
+          "year": [
+            14405, 
+            62961, 
+            63218, 
+            62116, 
+            60648, 
+            61627, 
+            61130, 
+            60831, 
+            61321, 
+            61706, 
+            63935, 
+            65013, 
+            65465, 
+            73661
+          ]
+        }, 
+        "student teacher ratio": 15.91, 
+        "teachers": 52671.71, 
+        "staff": 108993.31
+      }, 
+      "attendance": {
+        "average student rate": 89.10526316, 
+        "average teacher rate": 95.26315789, 
+        "average minutes": 74390.57895
+      }, 
+      "funding": {
+        "expenditures": 10737802343, 
+        "revenue": 10639250907
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 156
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 158
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 225
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 268
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 249
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 294
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 156
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 156
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 46.729553, 
+        "longitude": -94.6858998
+      }
+    }
+  }, 
+  {
+    "state": "mississippi", 
+    "data": {
+      "enrollment": {
+        "schools": 1115, 
+        "students": {
+          "gender": {
+            "male": 250450, 
+            "female": 240076
+          }, 
+          "all": 490526, 
+          "race": {
+            "biracial": 2256, 
+            "hispanic": 12360, 
+            "black": 244634, 
+            "asian": 4649, 
+            "white": 225697, 
+            "native american": 930
+          }, 
+          "other": {
+            "individualized education program": 63786, 
+            "free lunch eligible": 309581, 
+            "ungraded students": 8157, 
+            "lep/ell students": 5620, 
+            "reduced-price lunch eligible": 36153
+          }, 
+          "year": [
+            3447, 
+            38923, 
+            39740, 
+            37607, 
+            38157, 
+            38295, 
+            39155, 
+            37607, 
+            37048, 
+            36113, 
+            38666, 
+            36364, 
+            31579, 
+            29668
+          ]
+        }, 
+        "student teacher ratio": 15.21, 
+        "teachers": 32254.83, 
+        "staff": 67866.31
+      }, 
+      "attendance": {
+        "average student rate": 94, 
+        "average teacher rate": 90, 
+        "average minutes": 82442.25
+      }, 
+      "funding": {
+        "expenditures": 4384125182, 
+        "revenue": 4443683166
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 133
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 132
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 208
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 250
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 227
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 265
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 141
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 142
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 32.3546679, 
+        "longitude": -89.3985283
+      }
+    }
+  }, 
+  {
+    "state": "missouri", 
+    "data": {
+      "enrollment": {
+        "schools": 2451, 
+        "students": {
+          "gender": {
+            "male": 473619, 
+            "female": 445091
+          }, 
+          "all": 918710, 
+          "race": {
+            "biracial": 11510, 
+            "hispanic": 41691, 
+            "black": 156941, 
+            "asian": 18080, 
+            "white": 686147, 
+            "native american": 4341
+          }, 
+          "other": {
+            "individualized education program": 127148, 
+            "free lunch eligible": 342715, 
+            "ungraded students": "", 
+            "lep/ell students": 21918, 
+            "reduced-price lunch eligible": 63643
+          }, 
+          "year": [
+            28495, 
+            69376, 
+            68974, 
+            67818, 
+            67296, 
+            68313, 
+            68709, 
+            67913, 
+            69153, 
+            66944, 
+            73080, 
+            69794, 
+            66855, 
+            65990
+          ]
+        }, 
+        "student teacher ratio": 13.77, 
+        "teachers": 66734.84, 
+        "staff": 128289.14
+      }, 
+      "attendance": {
+        "average student rate": 86.53125, 
+        "average teacher rate": 87.15625, 
+        "average minutes": 64923.5
+      }, 
+      "funding": {
+        "expenditures": 10402883203, 
+        "revenue": 10157111580
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 158
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 154
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 221
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 263
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 241
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 286
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 151
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 153
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 37.9642529, 
+        "longitude": -91.8318334
+      }
+    }
+  }, 
+  {
+    "state": "montana", 
+    "data": {
+      "enrollment": {
+        "schools": 829, 
+        "students": {
+          "gender": {
+            "male": 73297, 
+            "female": 68396
+          }, 
+          "all": 141693, 
+          "race": {
+            "biracial": 2197, 
+            "hispanic": 4996, 
+            "black": 1378, 
+            "asian": 1561, 
+            "white": 115827, 
+            "native american": 15734
+          }, 
+          "other": {
+            "individualized education program": 16760, 
+            "free lunch eligible": 46116, 
+            "ungraded students": "", 
+            "lep/ell students": 3300, 
+            "reduced-price lunch eligible": 11720
+          }, 
+          "year": [
+            1351, 
+            11115, 
+            11066, 
+            10813, 
+            10693, 
+            10751, 
+            10535, 
+            10713, 
+            10725, 
+            10729, 
+            11569, 
+            10733, 
+            10584, 
+            10316
+          ]
+        }, 
+        "student teacher ratio": 13.68, 
+        "teachers": 10360.99, 
+        "staff": 19249.08
+      }, 
+      "attendance": {
+        "average student rate": 80.66666667, 
+        "average teacher rate": 89, 
+        "average minutes": 73432
+      }, 
+      "funding": {
+        "expenditures": 1640013689, 
+        "revenue": 1616262353
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 160
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 162
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 227
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 271
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 244
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 292
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 149
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 157
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 46.8796822, 
+        "longitude": -110.3625658
+      }
+    }
+  }, 
+  {
+    "state": "nebraska", 
+    "data": {
+      "enrollment": {
+        "schools": 1127, 
+        "students": {
+          "gender": {
+            "male": 154228, 
+            "female": 144272
+          }, 
+          "all": 298500, 
+          "race": {
+            "biracial": 8642, 
+            "hispanic": 47900, 
+            "black": 19990, 
+            "asian": 6350, 
+            "white": 211205, 
+            "native american": 4413
+          }, 
+          "other": {
+            "individualized education program": 44299, 
+            "free lunch eligible": 100563, 
+            "ungraded students": "", 
+            "lep/ell students": 20077, 
+            "reduced-price lunch eligible": 26551
+          }, 
+          "year": [
+            12656, 
+            23411, 
+            23134, 
+            22390, 
+            22150, 
+            21901, 
+            21680, 
+            21103, 
+            20992, 
+            20875, 
+            22567, 
+            21998, 
+            21407, 
+            22236
+          ]
+        }, 
+        "student teacher ratio": 13.36, 
+        "teachers": 22345.16, 
+        "staff": 45509.07
+      }, 
+      "attendance": {
+        "average student rate": 92.85714286, 
+        "average teacher rate": 93.57142857, 
+        "average minutes": 69004.57143
+      }, 
+      "funding": {
+        "expenditures": 3674796158, 
+        "revenue": 3693929543
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 223
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 267
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 239
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 284
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 154
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 41.4925374, 
+        "longitude": -99.9018131
+      }
+    }
+  }, 
+  {
+    "state": "nevada", 
+    "data": {
+      "enrollment": {
+        "schools": 677, 
+        "students": {
+          "gender": {
+            "male": 225145, 
+            "female": 212004
+          }, 
+          "all": 437149, 
+          "race": {
+            "biracial": 18554, 
+            "hispanic": 169236, 
+            "black": 43225, 
+            "asian": 31209, 
+            "white": 169220, 
+            "native american": 5705
+          }, 
+          "other": {
+            "individualized education program": 48078, 
+            "free lunch eligible": 190854, 
+            "ungraded students": 647, 
+            "lep/ell students": 83352, 
+            "reduced-price lunch eligible": 29049
+          }, 
+          "year": [
+            4444, 
+            32454, 
+            33809, 
+            33492, 
+            33600, 
+            34047, 
+            33754, 
+            34054, 
+            33947, 
+            33070, 
+            33780, 
+            34199, 
+            32645, 
+            29207
+          ]
+        }, 
+        "student teacher ratio": 20.02, 
+        "teachers": 21839.48, 
+        "staff": 33400.11
+      }, 
+      "attendance": {
+        "average student rate": 98.1, 
+        "average teacher rate": 98.9, 
+        "average minutes": 80490.3
+      }, 
+      "funding": {
+        "expenditures": 4257267515, 
+        "revenue": 4310014015
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 140
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 138
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 211
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 252
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 235
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 274
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 145
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 143
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 38.8026097, 
+        "longitude": -116.419389
+      }
+    }
+  }, 
+  {
+    "state": "new hampshire", 
+    "data": {
+      "enrollment": {
+        "schools": 483, 
+        "students": {
+          "gender": {
+            "male": 100688, 
+            "female": 94023
+          }, 
+          "all": 194711, 
+          "race": {
+            "biracial": 2858, 
+            "hispanic": 7231, 
+            "black": 3821, 
+            "asian": 5370, 
+            "white": 174778, 
+            "native american": 653
+          }, 
+          "other": {
+            "individualized education program": 29778, 
+            "free lunch eligible": 38659, 
+            "ungraded students": "", 
+            "lep/ell students": 3965, 
+            "reduced-price lunch eligible": 10245
+          }, 
+          "year": [
+            3097, 
+            11970, 
+            14120, 
+            13913, 
+            14187, 
+            14294, 
+            14602, 
+            14795, 
+            15191, 
+            15407, 
+            16832, 
+            15994, 
+            15290, 
+            15019
+          ]
+        }, 
+        "student teacher ratio": 12.67, 
+        "teachers": 15365.2, 
+        "staff": 32955.1
+      }, 
+      "attendance": {
+        "average student rate": 93.85714286, 
+        "average teacher rate": 89.57142857, 
+        "average minutes": 66722.85714
+      }, 
+      "funding": {
+        "expenditures": 2760682470, 
+        "revenue": 2810017950
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 161
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 162
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 229
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 270
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 251
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 292
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 160
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 43.1938516, 
+        "longitude": -71.5723953
+      }
+    }
+  }, 
+  {
+    "state": "new jersey", 
+    "data": {
+      "enrollment": {
+        "schools": 2634, 
+        "students": {
+          "gender": {
+            "male": 724048, 
+            "female": 678500
+          }, 
+          "all": 1402548, 
+          "race": {
+            "biracial": 9455, 
+            "hispanic": 309673, 
+            "black": 234395, 
+            "asian": 124519, 
+            "white": 722642, 
+            "native american": 1864
+          }, 
+          "other": {
+            "individualized education program": 225471, 
+            "free lunch eligible": 370531, 
+            "ungraded students": 56860, 
+            "lep/ell students": 52771, 
+            "reduced-price lunch eligible": 74205
+          }, 
+          "year": [
+            53564, 
+            92413, 
+            99976, 
+            98791, 
+            97716, 
+            98641, 
+            99344, 
+            100245, 
+            100225, 
+            99630, 
+            106281, 
+            103267, 
+            98237, 
+            97358
+          ]
+        }, 
+        "student teacher ratio": 12.73, 
+        "teachers": 110202.4, 
+        "staff": 202633.6
+      }, 
+      "attendance": {
+        "average student rate": 91, 
+        "average teacher rate": 95.1, 
+        "average minutes": 92180.1
+      }, 
+      "funding": {
+        "expenditures": 26157669469, 
+        "revenue": 25856286143
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 154
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 153
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 231
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 270
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 247
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 293
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 175
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 40.0583238, 
+        "longitude": -74.4056612
+      }
+    }
+  }, 
+  {
+    "state": "new mexico", 
+    "data": {
+      "enrollment": {
+        "schools": 873, 
+        "students": {
+          "gender": {
+            "male": 173392, 
+            "female": 164730
+          }, 
+          "all": 338122, 
+          "race": {
+            "biracial": 3261, 
+            "hispanic": 200774, 
+            "black": 7151, 
+            "asian": 4397, 
+            "white": 88009, 
+            "native american": 34530
+          }, 
+          "other": {
+            "individualized education program": 46612, 
+            "free lunch eligible": 206414, 
+            "ungraded students": "", 
+            "lep/ell students": 52557, 
+            "reduced-price lunch eligible": 20663
+          }, 
+          "year": [
+            7980, 
+            26688, 
+            26660, 
+            26087, 
+            25906, 
+            25955, 
+            25615, 
+            25329, 
+            24656, 
+            24469, 
+            29179, 
+            26451, 
+            22553, 
+            20594
+          ]
+        }, 
+        "student teacher ratio": 15.07, 
+        "teachers": 22437.43, 
+        "staff": 46519.33
+      }, 
+      "attendance": {
+        "average student rate": 94.55555556, 
+        "average teacher rate": 95.55555556, 
+        "average minutes": 60908.44444
+      }, 
+      "funding": {
+        "expenditures": 3792957530, 
+        "revenue": 3760801165
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 141
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 138
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 212
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 251
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 230
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 270
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 142
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 143
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 34.5199402, 
+        "longitude": -105.8700901
+      }
+    }
+  }, 
+  {
+    "state": "new york", 
+    "data": {
+      "enrollment": {
+        "schools": 4791, 
+        "students": {
+          "gender": {
+            "male": 1401555, 
+            "female": 1333400
+          }, 
+          "all": 2734955, 
+          "race": {
+            "biracial": 16036, 
+            "hispanic": 611873, 
+            "black": 519113, 
+            "asian": 226894, 
+            "white": 1346498, 
+            "native american": 14541
+          }, 
+          "other": {
+            "individualized education program": 452551, 
+            "free lunch eligible": 1123040, 
+            "ungraded students": 27104, 
+            "lep/ell students": 208125, 
+            "reduced-price lunch eligible": 192524
+          }, 
+          "year": [
+            51649, 
+            194607, 
+            202889, 
+            201820, 
+            198573, 
+            198720, 
+            201761, 
+            199937, 
+            202305, 
+            203761, 
+            235380, 
+            227380, 
+            197541, 
+            191528
+          ]
+        }, 
+        "student teacher ratio": 12.92, 
+        "teachers": 211605.54, 
+        "staff": 413971.15
+      }, 
+      "attendance": {
+        "average student rate": 73.44, 
+        "average teacher rate": 50.2, 
+        "average minutes": 22463.72
+      }, 
+      "funding": {
+        "expenditures": 56690808637, 
+        "revenue": 57146375462
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 224
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 264
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 241
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 283
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 163
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 154
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 40.7127837, 
+        "longitude": -74.0059413
+      }
+    }
+  }, 
+  {
+    "state": "north carolina", 
+    "data": {
+      "enrollment": {
+        "schools": 2609, 
+        "students": {
+          "gender": {
+            "male": 761595, 
+            "female": 729010
+          }, 
+          "all": 1490605, 
+          "race": {
+            "biracial": 55805, 
+            "hispanic": 187967, 
+            "black": 394635, 
+            "asian": 37538, 
+            "white": 792461, 
+            "native american": 22199
+          }, 
+          "other": {
+            "individualized education program": 184704, 
+            "free lunch eligible": 633440, 
+            "ungraded students": 790, 
+            "lep/ell students": 103249, 
+            "reduced-price lunch eligible": 114538
+          }, 
+          "year": [
+            23510, 
+            115782, 
+            108078, 
+            117107, 
+            117747, 
+            118617, 
+            117170, 
+            115186, 
+            113310, 
+            111112, 
+            126090, 
+            111889, 
+            102676, 
+            91541
+          ]
+        }, 
+        "student teacher ratio": 15.15, 
+        "teachers": 98357.47, 
+        "staff": 193038.9
+      }, 
+      "attendance": {
+        "average student rate": 88.25, 
+        "average teacher rate": null, 
+        "average minutes": 72555.54167
+      }, 
+      "funding": {
+        "expenditures": 13297983515, 
+        "revenue": 13056767057
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 149
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 144
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 218
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 259
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 244
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 284
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 159
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 153
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 35.7595731, 
+        "longitude": -79.01929969999999
+      }
+    }
+  }, 
+  {
+    "state": "north dakota", 
+    "data": {
+      "enrollment": {
+        "schools": 521, 
+        "students": {
+          "gender": {
+            "male": 49789, 
+            "female": 46534
+          }, 
+          "all": 96323, 
+          "race": {
+            "biracial": 3193, 
+            "hispanic": 95, 
+            "black": 2318, 
+            "asian": 1267, 
+            "white": 80661, 
+            "native american": 8789
+          }, 
+          "other": {
+            "individualized education program": 13097, 
+            "free lunch eligible": 22988, 
+            "ungraded students": "", 
+            "lep/ell students": 2788, 
+            "reduced-price lunch eligible": 6941
+          }, 
+          "year": [
+            1529, 
+            7449, 
+            7484, 
+            7197, 
+            6915, 
+            6974, 
+            6676, 
+            7141, 
+            7372, 
+            7298, 
+            7591, 
+            7701, 
+            7415, 
+            7581
+          ]
+        }, 
+        "student teacher ratio": 11.44, 
+        "teachers": 8416.95, 
+        "staff": 16239.18
+      }, 
+      "attendance": {
+        "average student rate": null, 
+        "average teacher rate": null, 
+        "average minutes": null
+      }, 
+      "funding": {
+        "expenditures": 1159215292, 
+        "revenue": 1256047706
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 160
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 163
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 226
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 268
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 245
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 293
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 150
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 154
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 47.5514926, 
+        "longitude": -101.0020119
+      }
+    }
+  }, 
+  {
+    "state": "ohio", 
+    "data": {
+      "enrollment": {
+        "schools": 3852, 
+        "students": {
+          "gender": {
+            "male": 901177, 
+            "female": 853014
+          }, 
+          "all": 1754191, 
+          "race": {
+            "biracial": 73513, 
+            "hispanic": 60506, 
+            "black": 285091, 
+            "asian": 30641, 
+            "white": 1301921, 
+            "native american": 2519
+          }, 
+          "other": {
+            "individualized education program": 259448, 
+            "free lunch eligible": 646984, 
+            "ungraded students": "", 
+            "lep/ell students": 37116, 
+            "reduced-price lunch eligible": 98137
+          }, 
+          "year": [
+            30047, 
+            129964, 
+            132638, 
+            130425, 
+            130593, 
+            133202, 
+            134109, 
+            133615, 
+            135005, 
+            133210, 
+            152198, 
+            138532, 
+            121707, 
+            118946
+          ]
+        }, 
+        "student teacher ratio": 16.05, 
+        "teachers": 109281.94, 
+        "staff": 241211.64
+      }, 
+      "attendance": {
+        "average student rate": 91.37142857, 
+        "average teacher rate": 90.68571429, 
+        "average minutes": 92278.11429
+      }, 
+      "funding": {
+        "expenditures": 23262091286, 
+        "revenue": 22729890148
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 157
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 155
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 226
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 268
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 244
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 286
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 157
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 156
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 40.4172871, 
+        "longitude": -82.90712300000001
+      }
+    }
+  }, 
+  {
+    "state": "oklahoma", 
+    "data": {
+      "enrollment": {
+        "schools": 1803, 
+        "students": {
+          "gender": {
+            "male": 339686, 
+            "female": 320225
+          }, 
+          "all": 659911, 
+          "race": {
+            "biracial": 20957, 
+            "hispanic": 81009, 
+            "black": 67107, 
+            "asian": 14116, 
+            "white": 360125, 
+            "native american": 116597
+          }, 
+          "other": {
+            "individualized education program": 97247, 
+            "free lunch eligible": 337536, 
+            "ungraded students": 1798, 
+            "lep/ell students": 41812, 
+            "reduced-price lunch eligible": 61381
+          }, 
+          "year": [
+            40688, 
+            52114, 
+            52420, 
+            50070, 
+            48899, 
+            48519, 
+            48490, 
+            47809, 
+            47418, 
+            45737, 
+            48131, 
+            45564, 
+            42620, 
+            39634
+          ]
+        }, 
+        "student teacher ratio": 15.99, 
+        "teachers": 41277.8, 
+        "staff": 82261.7
+      }, 
+      "attendance": {
+        "average student rate": 90.6, 
+        "average teacher rate": 93.6, 
+        "average minutes": 75968.5
+      }, 
+      "funding": {
+        "expenditures": 5664915113, 
+        "revenue": 5699757846
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 150
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 147
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 217
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 260
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 237
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 276
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 142
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 153
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 35.4675602, 
+        "longitude": -97.5164276
+      }
+    }
+  }, 
+  {
+    "state": "oregon", 
+    "data": {
+      "enrollment": {
+        "schools": 1313, 
+        "students": {
+          "gender": {
+            "male": 288575, 
+            "female": 272753
+          }, 
+          "all": 570720, 
+          "race": {
+            "biracial": 23794, 
+            "hispanic": 115102, 
+            "black": 14599, 
+            "asian": 25233, 
+            "white": 372194, 
+            "native american": 10406
+          }, 
+          "other": {
+            "individualized education program": 80283, 
+            "free lunch eligible": 240711, 
+            "ungraded students": "", 
+            "lep/ell students": 58946, 
+            "reduced-price lunch eligible": 39463
+          }, 
+          "year": [
+            9392, 
+            40656, 
+            42508, 
+            42322, 
+            42013, 
+            42924, 
+            43144, 
+            43280, 
+            43528, 
+            42834, 
+            44540, 
+            44289, 
+            43078, 
+            46212
+          ]
+        }, 
+        "student teacher ratio": 20.3, 
+        "teachers": 28109.27, 
+        "staff": 63602.73
+      }, 
+      "attendance": {
+        "average student rate": 87.16666667, 
+        "average teacher rate": 95.08333333, 
+        "average minutes": 80254.25
+      }, 
+      "funding": {
+        "expenditures": 6288121386, 
+        "revenue": 6211293861
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 151
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 153
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 215
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 266
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 238
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 285
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 149
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 43.8041334, 
+        "longitude": -120.5542012
+      }
+    }
+  }, 
+  {
+    "state": "pennsylvania", 
+    "data": {
+      "enrollment": {
+        "schools": 3269, 
+        "students": {
+          "gender": {
+            "male": 922865, 
+            "female": 870419
+          }, 
+          "all": 1793284, 
+          "race": {
+            "biracial": 27198, 
+            "hispanic": 149247, 
+            "black": 280981, 
+            "asian": 56914, 
+            "white": 1276052, 
+            "native american": 2892
+          }, 
+          "other": {
+            "individualized education program": 295077, 
+            "free lunch eligible": 584251, 
+            "ungraded students": 2190, 
+            "lep/ell students": 47014, 
+            "reduced-price lunch eligible": 102390
+          }, 
+          "year": [
+            16294, 
+            128120, 
+            131170, 
+            130253, 
+            129292, 
+            132497, 
+            134499, 
+            134782, 
+            135869, 
+            135876, 
+            150150, 
+            148716, 
+            141866, 
+            141710
+          ]
+        }, 
+        "student teacher ratio": 13.8, 
+        "teachers": 129911.39, 
+        "staff": 266795.76
+      }, 
+      "attendance": {
+        "average student rate": 78.19298246, 
+        "average teacher rate": 83.03508772, 
+        "average minutes": 65233.24561
+      }, 
+      "funding": {
+        "expenditures": 26520057652, 
+        "revenue": 26408846275
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 226
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 268
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 244
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 288
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 156
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 159
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 41.2033216, 
+        "longitude": -77.1945247
+      }
+    }
+  }, 
+  {
+    "state": "rhode island", 
+    "data": {
+      "enrollment": {
+        "schools": 325, 
+        "students": {
+          "gender": {
+            "male": 74490, 
+            "female": 69303
+          }, 
+          "all": 143793, 
+          "race": {
+            "biracial": 3417, 
+            "hispanic": 29917, 
+            "black": 11457, 
+            "asian": 4368, 
+            "white": 93683, 
+            "native american": 951
+          }, 
+          "other": {
+            "individualized education program": 25332, 
+            "free lunch eligible": 52839, 
+            "ungraded students": "", 
+            "lep/ell students": 7655, 
+            "reduced-price lunch eligible": 8288
+          }, 
+          "year": [
+            2054, 
+            10057, 
+            11070, 
+            10745, 
+            10755, 
+            10865, 
+            10195, 
+            9889, 
+            11150, 
+            10954, 
+            12888, 
+            11814, 
+            10891, 
+            10466
+          ]
+        }, 
+        "student teacher ratio": 12.83, 
+        "teachers": 11211.8, 
+        "staff": 18631.74
+      }, 
+      "attendance": {
+        "average student rate": 86, 
+        "average teacher rate": null, 
+        "average minutes": 75600
+      }, 
+      "funding": {
+        "expenditures": 2286060927, 
+        "revenue": 2262193286
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 146
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 146
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 219
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 258
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 239
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 278
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 157
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 154
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 41.5800945, 
+        "longitude": -71.4774291
+      }
+    }
+  }, 
+  {
+    "state": "south carolina", 
+    "data": {
+      "enrollment": {
+        "schools": 1228, 
+        "students": {
+          "gender": {
+            "male": 373366, 
+            "female": 352472
+          }, 
+          "all": 725838, 
+          "race": {
+            "biracial": 16519, 
+            "hispanic": 46202, 
+            "black": 263034, 
+            "asian": 10452, 
+            "white": 387520, 
+            "native american": 2111
+          }, 
+          "other": {
+            "individualized education program": 100262, 
+            "free lunch eligible": 350202, 
+            "ungraded students": "", 
+            "lep/ell students": 36379, 
+            "reduced-price lunch eligible": 44831
+          }, 
+          "year": [
+            24188, 
+            54624, 
+            55328, 
+            53846, 
+            54100, 
+            55636, 
+            55887, 
+            54788, 
+            54280, 
+            52904, 
+            62161, 
+            54685, 
+            48708, 
+            44703
+          ]
+        }, 
+        "student teacher ratio": 16.05, 
+        "teachers": 45210.4, 
+        "staff": 65508.4
+      }, 
+      "attendance": {
+        "average student rate": 90.42105263, 
+        "average teacher rate": 88.94736842, 
+        "average minutes": 63148.36842
+      }, 
+      "funding": {
+        "expenditures": 8215179835, 
+        "revenue": 7837314357
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 148
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 145
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 214
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 257
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 236
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 280
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 145
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 148
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 33.836081, 
+        "longitude": -81.1637245
+      }
+    }
+  }, 
+  {
+    "state": "south dakota", 
+    "data": {
+      "enrollment": {
+        "schools": 718, 
+        "students": {
+          "gender": {
+            "male": 65144, 
+            "female": 60984
+          }, 
+          "all": 126128, 
+          "race": {
+            "biracial": 1401, 
+            "hispanic": 4352, 
+            "black": 3144, 
+            "asian": 1868, 
+            "white": 100680, 
+            "native american": 14683
+          }, 
+          "other": {
+            "individualized education program": 18026, 
+            "free lunch eligible": 36573, 
+            "ungraded students": "", 
+            "lep/ell students": 4383, 
+            "reduced-price lunch eligible": 10144
+          }, 
+          "year": [
+            1974, 
+            11049, 
+            9903, 
+            9498, 
+            9233, 
+            9140, 
+            9321, 
+            9331, 
+            9212, 
+            9275, 
+            10307, 
+            9779, 
+            9043, 
+            9063
+          ]
+        }, 
+        "student teacher ratio": 13.26, 
+        "teachers": 9511.67, 
+        "staff": 19545.06
+      }, 
+      "attendance": {
+        "average student rate": 95.5, 
+        "average teacher rate": 92.5, 
+        "average minutes": 70840
+      }, 
+      "funding": {
+        "expenditures": 1289354666, 
+        "revenue": 1300147427
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 158
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 161
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 223
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 270
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 242
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 291
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": ""
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 43.9695148, 
+        "longitude": -99.9018131
+      }
+    }
+  }, 
+  {
+    "state": "tennessee", 
+    "data": {
+      "enrollment": {
+        "schools": 1803, 
+        "students": {
+          "gender": {
+            "male": 508744, 
+            "female": 478678
+          }, 
+          "all": 987422, 
+          "race": {
+            "biracial": 7171, 
+            "hispanic": 60549, 
+            "black": 236013, 
+            "asian": 16840, 
+            "white": 664947, 
+            "native american": 1902
+          }, 
+          "other": {
+            "individualized education program": 119004, 
+            "free lunch eligible": 471483, 
+            "ungraded students": "", 
+            "lep/ell students": 29681, 
+            "reduced-price lunch eligible": 71470
+          }, 
+          "year": [
+            28787, 
+            76642, 
+            76706, 
+            74788, 
+            74793, 
+            75481, 
+            75057, 
+            74615, 
+            73363, 
+            71475, 
+            76010, 
+            73509, 
+            68755, 
+            67441
+          ]
+        }, 
+        "student teacher ratio": 14.84, 
+        "teachers": 66558.1, 
+        "staff": 128196.6
+      }, 
+      "attendance": {
+        "average student rate": 89.83333333, 
+        "average teacher rate": 95.75, 
+        "average minutes": 79760
+      }, 
+      "funding": {
+        "expenditures": 8759495348, 
+        "revenue": 8528047188
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 150
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 145
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 216
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 259
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 232
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 275
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 149
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 156
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 35.5174913, 
+        "longitude": -86.5804473
+      }
+    }
+  }, 
+  {
+    "state": "texas", 
+    "data": {
+      "enrollment": {
+        "schools": 9332, 
+        "students": {
+          "gender": {
+            "male": 2535286, 
+            "female": 2400429
+          }, 
+          "all": 4935715, 
+          "race": {
+            "biracial": 78424, 
+            "hispanic": 2480792, 
+            "black": 638377, 
+            "asian": 175489, 
+            "white": 1539026, 
+            "native american": 23607
+          }, 
+          "other": {
+            "individualized education program": 441987, 
+            "free lunch eligible": 2148558, 
+            "ungraded students": "", 
+            "lep/ell students": 738663, 
+            "reduced-price lunch eligible": 322654
+          }, 
+          "year": [
+            249122, 
+            374195, 
+            387899, 
+            379910, 
+            375454, 
+            374111, 
+            372509, 
+            361700, 
+            357395, 
+            354314, 
+            391554, 
+            344241, 
+            314911, 
+            298400
+          ]
+        }, 
+        "student teacher ratio": 14.73, 
+        "teachers": 334996.94, 
+        "staff": 665418.5
+      }, 
+      "attendance": {
+        "average student rate": 86.29166667, 
+        "average teacher rate": 92.60416667, 
+        "average minutes": 82781.91667
+      }, 
+      "funding": {
+        "expenditures": 53838221095, 
+        "revenue": 50045607224
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 150
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 143
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 220
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 261
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 240
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 287
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 154
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 151
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 31.9685988, 
+        "longitude": -99.9018131
+      }
+    }
+  }, 
+  {
+    "state": "utah", 
+    "data": {
+      "enrollment": {
+        "schools": 1029, 
+        "students": {
+          "gender": {
+            "male": 301355, 
+            "female": 284197
+          }, 
+          "all": 585552, 
+          "race": {
+            "biracial": 4531, 
+            "hispanic": 88285, 
+            "black": 8468, 
+            "asian": 19942, 
+            "white": 456510, 
+            "native american": 7816
+          }, 
+          "other": {
+            "individualized education program": 70232, 
+            "free lunch eligible": 180183, 
+            "ungraded students": "", 
+            "lep/ell students": 42804, 
+            "reduced-price lunch eligible": 43760
+          }, 
+          "year": [
+            10376, 
+            48043, 
+            48770, 
+            48122, 
+            46753, 
+            46127, 
+            45822, 
+            44797, 
+            43942, 
+            42227, 
+            41419, 
+            40964, 
+            39446, 
+            38744
+          ]
+        }, 
+        "student teacher ratio": 22.8, 
+        "teachers": 25676.71, 
+        "staff": 52340.96
+      }, 
+      "attendance": {
+        "average student rate": 91.57142857, 
+        "average teacher rate": 96.57142857, 
+        "average minutes": 69207.14286
+      }, 
+      "funding": {
+        "expenditures": 4564279023, 
+        "revenue": 4464561903
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 155
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 154
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 221
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 262
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 240
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 284
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 145
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 152
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 39.3209801, 
+        "longitude": -111.0937311
+      }
+    }
+  }, 
+  {
+    "state": "vermont", 
+    "data": {
+      "enrollment": {
+        "schools": 324, 
+        "students": {
+          "gender": {
+            "male": 50353, 
+            "female": 46505
+          }, 
+          "all": 96858, 
+          "race": {
+            "biracial": 2034, 
+            "hispanic": 1307, 
+            "black": 1787, 
+            "asian": 1563, 
+            "white": 89899, 
+            "native american": 268
+          }, 
+          "other": {
+            "individualized education program": 13562, 
+            "free lunch eligible": 25757, 
+            "ungraded students": "", 
+            "lep/ell students": 1510, 
+            "reduced-price lunch eligible": 5582
+          }, 
+          "year": [
+            10678, 
+            6259, 
+            6213, 
+            6171, 
+            6214, 
+            6291, 
+            6294, 
+            6484, 
+            6628, 
+            6757, 
+            7139, 
+            7287, 
+            7329, 
+            7114
+          ]
+        }, 
+        "student teacher ratio": 11.56, 
+        "teachers": 8382.08, 
+        "staff": 18485.22
+      }, 
+      "attendance": {
+        "average student rate": 94.6, 
+        "average teacher rate": 94.6, 
+        "average minutes": 86694.6
+      }, 
+      "funding": {
+        "expenditures": 1555315802, 
+        "revenue": 1638396119
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 160
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 162
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 228
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 273
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 248
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 293
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 158
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 162
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 44.5588028, 
+        "longitude": -72.57784149999999
+      }
+    }
+  }, 
+  {
+    "state": "virginia", 
+    "data": {
+      "enrollment": {
+        "schools": 2211, 
+        "students": {
+          "gender": {
+            "male": 644200, 
+            "female": 607240
+          }, 
+          "all": 1251440, 
+          "race": {
+            "biracial": 51170, 
+            "hispanic": 142536, 
+            "black": 301427, 
+            "asian": 74933, 
+            "white": 677123, 
+            "native american": 4251
+          }, 
+          "other": {
+            "individualized education program": 162338, 
+            "free lunch eligible": 384744, 
+            "ungraded students": "", 
+            "lep/ell students": 88033, 
+            "reduced-price lunch eligible": 74135
+          }, 
+          "year": [
+            30821, 
+            92899, 
+            95368, 
+            93687, 
+            93328, 
+            93965, 
+            94182, 
+            92762, 
+            92557, 
+            91877, 
+            102407, 
+            96918, 
+            91403, 
+            89266
+          ]
+        }, 
+        "student teacher ratio": 17.64, 
+        "teachers": 70947.13, 
+        "staff": 201047.18
+      }, 
+      "attendance": {
+        "average student rate": 82.44444444, 
+        "average teacher rate": 83.83333333, 
+        "average minutes": 68119.72222
+      }, 
+      "funding": {
+        "expenditures": 14548960294, 
+        "revenue": 14692849375
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 161
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 155
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 227
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 267
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 243
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 286
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 157
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 157
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 37.4315734, 
+        "longitude": -78.6568942
+      }
+    }
+  }, 
+  {
+    "state": "washington", 
+    "data": {
+      "enrollment": {
+        "schools": 2354, 
+        "students": {
+          "gender": {
+            "male": 538050, 
+            "female": 505738
+          }, 
+          "all": 1043788, 
+          "race": {
+            "biracial": 48280, 
+            "hispanic": 187783, 
+            "black": 50048, 
+            "asian": 84123, 
+            "white": 655984, 
+            "native american": 17570
+          }, 
+          "other": {
+            "individualized education program": 127909, 
+            "free lunch eligible": 345382, 
+            "ungraded students": "", 
+            "lep/ell students": 90282, 
+            "reduced-price lunch eligible": 72683
+          }, 
+          "year": [
+            12056, 
+            75933, 
+            78598, 
+            77707, 
+            76802, 
+            78546, 
+            79062, 
+            78531, 
+            78489, 
+            78448, 
+            84449, 
+            81990, 
+            79465, 
+            83712
+          ]
+        }, 
+        "student teacher ratio": 19.35, 
+        "teachers": 53934.11, 
+        "staff": 103782.87
+      }, 
+      "attendance": {
+        "average student rate": 85.33333333, 
+        "average teacher rate": 88.38888889, 
+        "average minutes": 76764.11111
+      }, 
+      "funding": {
+        "expenditures": 11797716020, 
+        "revenue": 11817487671
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 153
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 154
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 224
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 265
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 242
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 289
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 158
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 158
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 38.9071923, 
+        "longitude": -77.0368707
+      }
+    }
+  }, 
+  {
+    "state": "west virginia", 
+    "data": {
+      "enrollment": {
+        "schools": 765, 
+        "students": {
+          "gender": {
+            "male": 146200, 
+            "female": 136679
+          }, 
+          "all": 282879, 
+          "race": {
+            "biracial": 2275, 
+            "hispanic": 3139, 
+            "black": 14786, 
+            "asian": 2063, 
+            "white": 260278, 
+            "native american": 338
+          }, 
+          "other": {
+            "individualized education program": 44924, 
+            "free lunch eligible": 124111, 
+            "ungraded students": "", 
+            "lep/ell students": 1788, 
+            "reduced-price lunch eligible": 21494
+          }, 
+          "year": [
+            14660, 
+            21256, 
+            21167, 
+            20299, 
+            20786, 
+            20493, 
+            20842, 
+            20595, 
+            20919, 
+            20455, 
+            22785, 
+            21037, 
+            19155, 
+            18430
+          ]
+        }, 
+        "student teacher ratio": 13.91, 
+        "teachers": 20338.46, 
+        "staff": 39270.21
+      }, 
+      "attendance": {
+        "average student rate": 95.6, 
+        "average teacher rate": 92.2, 
+        "average minutes": 76721.13333
+      }, 
+      "funding": {
+        "expenditures": 3435241188, 
+        "revenue": 3432220414
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 151
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 147
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 215
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 255
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 233
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 270
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 147
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 146
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 38.5976262, 
+        "longitude": -80.4549026
+      }
+    }
+  }, 
+  {
+    "state": "wisconsin", 
+    "data": {
+      "enrollment": {
+        "schools": 2275, 
+        "students": {
+          "gender": {
+            "male": 449545, 
+            "female": 422741
+          }, 
+          "all": 872286, 
+          "race": {
+            "biracial": 13204, 
+            "hispanic": 80826, 
+            "black": 86665, 
+            "asian": 31165, 
+            "white": 648801, 
+            "native american": 11625
+          }, 
+          "other": {
+            "individualized education program": 124721, 
+            "free lunch eligible": 289759, 
+            "ungraded students": "", 
+            "lep/ell students": 43638, 
+            "reduced-price lunch eligible": 52901
+          }, 
+          "year": [
+            50200, 
+            60721, 
+            61262, 
+            60226, 
+            59981, 
+            61015, 
+            61420, 
+            61053, 
+            61264, 
+            61337, 
+            68383, 
+            66490, 
+            69076, 
+            69858
+          ]
+        }, 
+        "student teacher ratio": 15.14, 
+        "teachers": 57625.42, 
+        "staff": 103900.92
+      }, 
+      "attendance": {
+        "average student rate": 51.36363636, 
+        "average teacher rate": 57.90909091, 
+        "average minutes": 43804.72727
+      }, 
+      "funding": {
+        "expenditures": 11470336083, 
+        "revenue": 11104748973
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 158
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 158
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 223
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 264
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 244
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 288
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": ""
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 158
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 43.7844397, 
+        "longitude": -88.7878678
+      }
+    }
+  }, 
+  {
+    "state": "wyoming", 
+    "data": {
+      "enrollment": {
+        "schools": 365, 
+        "students": {
+          "gender": {
+            "male": 45873, 
+            "female": 43136
+          }, 
+          "all": 89009, 
+          "race": {
+            "biracial": 1211, 
+            "hispanic": 10932, 
+            "black": 1022, 
+            "asian": 837, 
+            "white": 72070, 
+            "native american": 2937
+          }, 
+          "other": {
+            "individualized education program": 15231, 
+            "free lunch eligible": 24216, 
+            "ungraded students": "", 
+            "lep/ell students": 2602, 
+            "reduced-price lunch eligible": 8752
+          }, 
+          "year": [
+            582, 
+            7611, 
+            7124, 
+            7064, 
+            6801, 
+            6694, 
+            6711, 
+            6766, 
+            6776, 
+            6657, 
+            6842, 
+            6724, 
+            6424, 
+            6233
+          ]
+        }, 
+        "student teacher ratio": 12.49, 
+        "teachers": 7127.45, 
+        "staff": 16423.88
+      }, 
+      "attendance": {
+        "average student rate": 90.33333333, 
+        "average teacher rate": null, 
+        "average minutes": 66640
+      }, 
+      "funding": {
+        "expenditures": 1685613073, 
+        "revenue": 1708365142
+      }, 
+      "score": {
+        "science": [
+          {
+            "grade": 4, 
+            "scale score": 157
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 159
+          }
+        ], 
+        "reading": [
+          {
+            "grade": 4, 
+            "scale score": 225
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 266
+          }
+        ], 
+        "math": [
+          {
+            "grade": 4, 
+            "scale score": 242
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 286
+          }
+        ], 
+        "writing": [
+          {
+            "grade": 4, 
+            "scale score": 150
+          }, 
+          {
+            "grade": 8, 
+            "scale score": 158
+          }
+        ]
+      }, 
+      "location": {
+        "latitude": 43.0759678, 
+        "longitude": -107.2902839
+      }
+    }
+  }
+]

@@ -174,7 +174,7 @@ def build_locals(model):
         new_file = name+'.json'
         file = local["file"]
         with open(file, 'rb') as inp, open(new_file, 'wb') as out:
-            out.write(inp.read())
+            json.dump(json.load(inp), out, indent=2)
         moves[new_file] = 'json/'+module_name+'/'
         
     return moves

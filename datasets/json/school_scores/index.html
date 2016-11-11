@@ -1,0 +1,1229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+School Scores JSON Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="school_scores.png" alt="School Scores" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>School Scores JSON Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 10/24/2016</span><br>
+    <span class="text-muted">Tags: school, education, K-12, kindergarten, learning, teaching, sat</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+SAT Scores from across the country
+
+</p>
+
+<p>
+<i><a href='https://nces.ed.gov/ccd/aboutCCD.asp'>https://nces.ed.gov/ccd/aboutCCD.asp</a></i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="school_scores.json?forcedownload=1" download="school_scores.json" target="_blank">
+        <strong>school_scores.json</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="field">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 500 to 600.Verbal</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Males': 617, u'Females': 690, u'Total': 1307}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 500 to 600.Math</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Males': 614, u'Females': 722, u'Total': 1336}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 600 to 700.Verbal.Males</td>
+        <td>int</td> 
+        <td></td>
+        <td>613</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 600 to 700.Verbal.Females</td>
+        <td>int</td> 
+        <td></td>
+        <td>596</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 600 to 700.Verbal.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>1209</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].GPA.A.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>1032</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.A.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>608</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.A.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>600</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].GPA.A minus.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>724</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.A minus.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>575</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.A minus.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>569</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 300 to 400.Math.Males</td>
+        <td>int</td> 
+        <td></td>
+        <td>93</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 300 to 400.Math.Females</td>
+        <td>int</td> 
+        <td></td>
+        <td>173</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 300 to 400.Math.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>266</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 300 to 400.Verbal</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Males': 84, u'Females': 123, u'Total': 207}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 300 to 400.Math</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Males': 93, u'Females': 173, u'Total': 266}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Family Income.Between 40-60k.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>442</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Between 40-60k.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>539</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Between 40-60k.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>551</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].GPA.D or lower.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.D or lower.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.D or lower.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 200 to 300.Verbal</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Males': 17, u'Females': 14, u'Total': 31}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 200 to 300.Math</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Males': 10, u'Females': 22, u'Total': 32}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Gender.Female.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>561</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Gender.Female.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>538</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Gender.Female.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>2072</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].GPA.A plus.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>563</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.A plus.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>623</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.A plus.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>622</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Gender.Male.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>574</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Gender.Male.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>582</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Gender.Male.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>1913</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 300 to 400.Verbal.Males</td>
+        <td>int</td> 
+        <td></td>
+        <td>84</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 300 to 400.Verbal.Females</td>
+        <td>int</td> 
+        <td></td>
+        <td>123</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 300 to 400.Verbal.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>207</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Family Income.Less than 20k.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>175</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Less than 20k.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>462</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Less than 20k.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>474</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 600 to 700.Verbal</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Males': 613, u'Females': 596, u'Total': 1209}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 600 to 700.Math</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Males': 611, u'Females': 485, u'Total': 1096}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 700 to 800.Math.Males</td>
+        <td>int</td> 
+        <td></td>
+        <td>292</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 700 to 800.Math.Females</td>
+        <td>int</td> 
+        <td></td>
+        <td>156</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 700 to 800.Math.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>448</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].GPA.No response.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>225</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.No response.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.No response.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].State.Code</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>AL</td>
+    </tr>
+    
+    <tr>
+        <td>[0].State.Name</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>Alabama</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Academic Subjects.English.Average GPA</td>
+        <td>float</td> 
+        <td></td>
+        <td>3.53</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Academic Subjects.English.Average Years</td>
+        <td>float</td> 
+        <td></td>
+        <td>3.9</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Academic Subjects.Arts/Music.Average GPA</td>
+        <td>float</td> 
+        <td></td>
+        <td>3.92</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Academic Subjects.Arts/Music.Average Years</td>
+        <td>float</td> 
+        <td></td>
+        <td>2.2</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].GPA.A</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': 600, u'Verbal': 608, u'Test-takers': 1032}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.C</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': 436, u'Verbal': 451, u'Test-takers': 188}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.B</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': 514, u'Verbal': 525, u'Test-takers': 1253}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.No response</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': 0, u'Verbal': 0, u'Test-takers': 225}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.D or lower</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': 0, u'Verbal': 0, u'Test-takers': 0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.A plus</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': 622, u'Verbal': 623, u'Test-takers': 563}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.A minus</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': 569, u'Verbal': 575, u'Test-takers': 724}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Family Income.Less than 20k</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Verbal': 474, u'Math': 462, u'Test-takers': 175}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.More than 100k</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': 588, u'Verbal': 590, u'Test-takers': 980}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Between 40-60k</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Verbal': 551, u'Math': 539, u'Test-takers': 442}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Between 60-80k</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Verbal': 564, u'Math': 550, u'Test-takers': 473}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Between 20-40k</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Verbal': 527, u'Math': 513, u'Test-takers': 324}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Between 80-100k</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': 566, u'Verbal': 577, u'Test-takers': 475}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 400 to 500.Verbal</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Males': 332, u'Females': 430, u'Total': 762}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 400 to 500.Math</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Males': 293, u'Females': 514, u'Total': 807}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Gender</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Male': {u'Test-takers': 1913, u'Math': 582, u'Verbal': 574}, u'Female': {u'Test-takers': 2072, u'Math': 538, u'Verbal': 561}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Year</td>
+        <td>unicode</td> 
+        <td></td>
+        <td>2005</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'A': {u'Math': 600, u'Verbal': 608, u'Test-takers': 1032}, u'C': {u'Math': 436, u'Verbal': 451, u'Test-takers': 188}, u'B': {u'Math': 514, u'Verbal': 525, u'Test-takers': 1253}, u'No response': {u'Math': 0, u'Verbal': 0, u'Test-takers': 225}, u'D or lower': {u'Math': 0, u'Verbal': 0, u'Test-takers': 0}, u'A plus': {u'Math': 622, u'Verbal': 623, u'Test-takers': 563}, u'A minus': {u'Math': 569, u'Verbal': 575, u'Test-takers': 724}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Between 400 to 500': {u'Math': {u'Males': 293, u'Females': 514, u'Total': 807}, u'Verbal': {u'Males': 332, u'Females': 430, u'Total': 762}}, u'Between 200 to 300': {u'Math': {u'Males': 10, u'Females': 22, u'Total': 32}, u'Verbal': {u'Males': 17, u'Females': 14, u'Total': 31}}, u'Between 700 to 800': {u'Math': {u'Males': 292, u'Females': 156, u'Total': 448}, u'Verbal': {u'Males': 250, u'Females': 219, u'Total': 469}}, u'Between 600 to 700': {u'Math': {u'Males': 611, u'Females': 485, u'Total': 1096}, u'Verbal': {u'Males': 613, u'Females': 596, u'Total': 1209}}, u'Between 500 to 600': {u'Math': {u'Males': 614, u'Females': 722, u'Total': 1336}, u'Verbal': {u'Males': 617, u'Females': 690, u'Total': 1307}}, u'Between 300 to 400': {u'Math': {u'Males': 93, u'Females': 173, u'Total': 266}, u'Verbal': {u'Males': 84, u'Females': 123, u'Total': 207}}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].State</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Code': u'AL', u'Name': u'Alabama'}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Academic Subjects</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Social Sciences/History': {u'Average GPA': 3.59, u'Average Years': 3.9}, u'Natural Sciences': {u'Average GPA': 3.52, u'Average Years': 3.9}, u'Arts/Music': {u'Average GPA': 3.92, u'Average Years': 2.2}, u'Foreign Languages': {u'Average GPA': 3.54, u'Average Years': 2.6}, u'English': {u'Average GPA': 3.53, u'Average Years': 3.9}, u'Mathematics': {u'Average GPA': 3.41, u'Average Years': 4.0}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Total</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Test-takers': 3985, u'Math': 559, u'Verbal': 567}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Between 40-60k': {u'Verbal': 551, u'Math': 539, u'Test-takers': 442}, u'More than 100k': {u'Math': 588, u'Verbal': 590, u'Test-takers': 980}, u'Less than 20k': {u'Verbal': 474, u'Math': 462, u'Test-takers': 175}, u'Between 60-80k': {u'Verbal': 564, u'Math': 550, u'Test-takers': 473}, u'Between 20-40k': {u'Verbal': 527, u'Math': 513, u'Test-takers': 324}, u'Between 80-100k': {u'Math': 566, u'Verbal': 577, u'Test-takers': 475}}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 200 to 300.Verbal.Males</td>
+        <td>int</td> 
+        <td></td>
+        <td>17</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 200 to 300.Verbal.Females</td>
+        <td>int</td> 
+        <td></td>
+        <td>14</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 200 to 300.Verbal.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>31</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Academic Subjects.Foreign Languages</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Average GPA': 3.54, u'Average Years': 2.6}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Academic Subjects.Arts/Music</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Average GPA': 3.92, u'Average Years': 2.2}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Academic Subjects.Mathematics</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Average GPA': 3.41, u'Average Years': 4.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Academic Subjects.Social Sciences/History</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Average GPA': 3.59, u'Average Years': 3.9}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Academic Subjects.English</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Average GPA': 3.53, u'Average Years': 3.9}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Academic Subjects.Natural Sciences</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Average GPA': 3.52, u'Average Years': 3.9}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 700 to 800.Verbal.Males</td>
+        <td>int</td> 
+        <td></td>
+        <td>250</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 700 to 800.Verbal.Females</td>
+        <td>int</td> 
+        <td></td>
+        <td>219</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 700 to 800.Verbal.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>469</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 400 to 500.Verbal.Males</td>
+        <td>int</td> 
+        <td></td>
+        <td>332</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 400 to 500.Verbal.Females</td>
+        <td>int</td> 
+        <td></td>
+        <td>430</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 400 to 500.Verbal.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>762</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Family Income.Between 60-80k.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>473</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Between 60-80k.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>550</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Between 60-80k.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>564</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 500 to 600.Verbal.Males</td>
+        <td>int</td> 
+        <td></td>
+        <td>617</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 500 to 600.Verbal.Females</td>
+        <td>int</td> 
+        <td></td>
+        <td>690</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 500 to 600.Verbal.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>1307</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Academic Subjects.Foreign Languages.Average GPA</td>
+        <td>float</td> 
+        <td></td>
+        <td>3.54</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Academic Subjects.Foreign Languages.Average Years</td>
+        <td>float</td> 
+        <td></td>
+        <td>2.6</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].GPA.C.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>188</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.C.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>451</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.C.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>436</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].GPA.B.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>1253</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.B.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>525</td>
+    </tr>
+    
+    <tr>
+        <td>[0].GPA.B.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>514</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 600 to 700.Math.Males</td>
+        <td>int</td> 
+        <td></td>
+        <td>611</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 600 to 700.Math.Females</td>
+        <td>int</td> 
+        <td></td>
+        <td>485</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 600 to 700.Math.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>1096</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Gender.Male</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Test-takers': 1913, u'Math': 582, u'Verbal': 574}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Gender.Female</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Test-takers': 2072, u'Math': 538, u'Verbal': 561}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Academic Subjects.Social Sciences/History.Average GPA</td>
+        <td>float</td> 
+        <td></td>
+        <td>3.59</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Academic Subjects.Social Sciences/History.Average Years</td>
+        <td>float</td> 
+        <td></td>
+        <td>3.9</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Academic Subjects.Mathematics.Average GPA</td>
+        <td>float</td> 
+        <td></td>
+        <td>3.41</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Academic Subjects.Mathematics.Average Years</td>
+        <td>float</td> 
+        <td></td>
+        <td>4.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 400 to 500.Math.Males</td>
+        <td>int</td> 
+        <td></td>
+        <td>293</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 400 to 500.Math.Females</td>
+        <td>int</td> 
+        <td></td>
+        <td>514</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 400 to 500.Math.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>807</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Family Income.More than 100k.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>980</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.More than 100k.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>590</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.More than 100k.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>588</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Total.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>567</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Total.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>559</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Total.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>3985</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Family Income.Between 80-100k.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>475</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Between 80-100k.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>577</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Between 80-100k.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>566</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 400 to 500</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': {u'Males': 293, u'Females': 514, u'Total': 807}, u'Verbal': {u'Males': 332, u'Females': 430, u'Total': 762}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 200 to 300</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': {u'Males': 10, u'Females': 22, u'Total': 32}, u'Verbal': {u'Males': 17, u'Females': 14, u'Total': 31}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 700 to 800</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': {u'Males': 292, u'Females': 156, u'Total': 448}, u'Verbal': {u'Males': 250, u'Females': 219, u'Total': 469}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 600 to 700</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': {u'Males': 611, u'Females': 485, u'Total': 1096}, u'Verbal': {u'Males': 613, u'Females': 596, u'Total': 1209}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 500 to 600</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': {u'Males': 614, u'Females': 722, u'Total': 1336}, u'Verbal': {u'Males': 617, u'Females': 690, u'Total': 1307}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 300 to 400</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Math': {u'Males': 93, u'Females': 173, u'Total': 266}, u'Verbal': {u'Males': 84, u'Females': 123, u'Total': 207}}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 200 to 300.Math.Males</td>
+        <td>int</td> 
+        <td></td>
+        <td>10</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 200 to 300.Math.Females</td>
+        <td>int</td> 
+        <td></td>
+        <td>22</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 200 to 300.Math.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>32</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 700 to 800.Verbal</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Males': 250, u'Females': 219, u'Total': 469}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 700 to 800.Math</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Males': 292, u'Females': 156, u'Total': 448}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Score Ranges.Between 500 to 600.Math.Males</td>
+        <td>int</td> 
+        <td></td>
+        <td>614</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 500 to 600.Math.Females</td>
+        <td>int</td> 
+        <td></td>
+        <td>722</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Score Ranges.Between 500 to 600.Math.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>1336</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Family Income.Between 20-40k.Test-takers</td>
+        <td>int</td> 
+        <td></td>
+        <td>324</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Between 20-40k.Math</td>
+        <td>int</td> 
+        <td></td>
+        <td>513</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Family Income.Between 20-40k.Verbal</td>
+        <td>int</td> 
+        <td></td>
+        <td>527</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Academic Subjects.Natural Sciences.Average GPA</td>
+        <td>float</td> 
+        <td></td>
+        <td>3.52</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Academic Subjects.Natural Sciences.Average Years</td>
+        <td>float</td> 
+        <td></td>
+        <td>3.9</td>
+    </tr>
+    
+    
+    
+    </table>
+
+    
+
+
+</div>
