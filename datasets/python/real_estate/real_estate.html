@@ -339,7 +339,7 @@ $(document).ready(function() {
                  <td><code>"97884"</code></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"aba accessible"</code></td> 
+            <tr> <td><code>"ADA Accessible"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"Will Conform"</code></td> 
                  <td></td> </tr>
@@ -358,8 +358,8 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-real_estate-__0__-data-disabilities-aba-accessible").click(function() {
-            $( "#explore-real_estate-__0__-data-disabilities-aba-accessible" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-real_estate-__0__-data-disabilities-ADA-Accessible").click(function() {
+            $( "#explore-real_estate-__0__-data-disabilities-ADA-Accessible" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -492,6 +492,11 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
+            <tr> <td><code>"id"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"CT0013"</code></td> 
+                 <td></td> </tr>
+            
             <tr> <td><code>"region id"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"1"</code></td> 
@@ -500,11 +505,6 @@ $(document).ready(function() {
             <tr> <td><code>"congressional district"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"1"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"id"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"CT0013"</code></td> 
                  <td></td> </tr>
             
             <tr> <td><code>"address"</code></td> 
@@ -521,6 +521,11 @@ $(document).ready(function() {
           width: 600
         });
         
+        $("#btn-explore-real_estate-__0__-location-id").click(function() {
+            $( "#explore-real_estate-__0__-location-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
         $("#btn-explore-real_estate-__0__-location-region-id").click(function() {
             $( "#explore-real_estate-__0__-location-region-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
@@ -528,11 +533,6 @@ $(document).ready(function() {
         
         $("#btn-explore-real_estate-__0__-location-congressional-district").click(function() {
             $( "#explore-real_estate-__0__-location-congressional-district" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-real_estate-__0__-location-id").click(function() {
-            $( "#explore-real_estate-__0__-location-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -578,9 +578,9 @@ $(document).ready(function() {
     
     This library has 2 functions you can use.
     
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">real_estate</span>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">real_estate</span>
 <span class="n">list_of_building</span> <span class="o">=</span> <span class="n">real_estate</span><span class="o">.</span><span class="n">get_buildings</span><span class="p">()</span>
-<span class="n">list_of_building</span> <span class="o">=</span> <span class="n">real_estate</span><span class="o">.</span><span class="n">get_buildings_by_state</span><span class="p">(</span><span class="s2">&quot;&#39;VA&#39;&quot;</span><span class="p">)</span>
+<span class="n">list_of_building</span> <span class="o">=</span> <span class="n">real_estate</span><span class="o">.</span><span class="n">get_buildings_by_state</span><span class="p">(</span><span class="s">&quot;&#39;VA&#39;&quot;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -588,9 +588,9 @@ $(document).ready(function() {
 
     Additionally, some of the functions can return a sample of the Big Data using an extra argument. If you use this sampled Big Data, it may be much faster. When you are sure your code is correct, you can remove the argument to use the full dataset.
 
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">real_estate</span>
-<span class="c1"># These may be slow!</span>
-<span class="n">list_of_building</span> <span class="o">=</span> <span class="n">real_estate</span><span class="o">.</span><span class="n">get_buildings</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">real_estate</span>
+<span class="c"># These may be slow!</span>
+<span class="n">list_of_building</span> <span class="o">=</span> <span class="n">real_estate</span><span class="o">.</span><span class="n">get_buildings</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
 </pre></div>
 
 
