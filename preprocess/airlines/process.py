@@ -66,8 +66,8 @@ with csvx.OrderedDictReader('medium.csv') as csv_in:
                     'Year': int(row['year']),
                     'Month': int(row[' month']),
                     'Month Name': month_name[int(row[' month'])],
-                    'Label': "{}/{}".format(str(row[' month']).zfill(2),
-                                            str(row['year']).zfill(2))
+                    'Label': "{}/{}".format(str(row['year']).zfill(2),
+                                            str(row[' month']).zfill(2))
                 },
                 'Airport': {
                     'Code': row['airport'],

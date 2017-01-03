@@ -621,7 +621,6 @@ $(document).ready(function () {
                 //.style('outline', '1px solid '+mainModel.settings.color().stroke)
                 .attr("height", height - y(0));
                 
-            console.log(width, histMapper.length, width/histMapper.length);
             bars.transition()
                 .duration(500)
                 .attr("x", function(d) { return x(d.x); })
