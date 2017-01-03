@@ -1,0 +1,24 @@
+Corgis
+Publishers - Corgi on books ("Pride and Paws", "The Cat of Monte Cristo"), with a corgi on the shelf too
+Classics - Shakespearan high-top collar wearing Corgi with a quill; To Corgi or not to Corgi scroll
+Weather - Corgi in a raincoat
+Airlines - Corgi in aviator goggles
+Broadway - Phantom of the Opera Corgi
+Construction - Corgi with a hard hat and bricks or something
+Crime - Policeman corgis
+Earthquakes - Corgi standing over split earth
+School Scores - Corgi taking a test
+Education - Teacher Corgi
+Global Development - Globe with many different kinds of dogs, including corgis
+State Demographics - Colored pie chart with corgis
+Tate - Famous painting of a corgi () with easal and frame
+    
+BlockPy
+    
+    
+    
+    K.3.2 Computer and Information Science Education < K.3 Computers and Education < K Computing Milieux	 Remove
+K.3.1.b Computer-assisted instruction < K.3.1 Computer Uses in Education < K.3 Computers and Education < K Computing Milieux	 Remove
+N.2 E-learning tools < N. Learning Technologies	 Remove
+N.2.h Self-assessment technologies < N.2 E-learning tools < N. Learning Technologies	 Remove
+N.4 Adaptive and intelligent educational systems < N. Learning Technologies

@@ -1,6 +1,7 @@
 from jinja2 import Environment, FileSystemLoader
 import os
 import json
+import matplotlib
 
 base_directory = os.path.dirname(os.path.realpath(__file__))
 

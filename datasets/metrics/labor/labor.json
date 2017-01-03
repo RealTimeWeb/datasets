@@ -45,9 +45,46 @@
     }, 
     "heights": 6, 
     "unions": {
-      "count": 0, 
-      "keys": {}, 
-      "sizes": 0
+      "count": 9, 
+      "keys": {
+        "result.[0].data.Civilian labor force participation rate.Asian.All": [
+          "dict", 
+          "number"
+        ], 
+        "result.[0].data.Employment-population ratio.Asian.All": [
+          "dict", 
+          "number"
+        ], 
+        "result.[0].data.Not in labor force.Asian.All": [
+          "dict", 
+          "number"
+        ], 
+        "result.[0].data.Unemployed.Asian.All": [
+          "dict", 
+          "number"
+        ], 
+        "result.[0].data.Civilian labor force.Asian.All": [
+          "dict", 
+          "number"
+        ], 
+        "result.[0].data.Employed.Asian.All": [
+          "dict", 
+          "number"
+        ], 
+        "result.[0].data.Not in labor force.White.All": [
+          "dict", 
+          "number"
+        ], 
+        "result.[0].data.Civilian noninstitutional population.Asian.All": [
+          "dict", 
+          "number"
+        ], 
+        "result.[0].data.Unemployment rate.Asian.All": [
+          "dict", 
+          "number"
+        ]
+      }, 
+      "sizes": 2
     }, 
     "length": 528, 
     "locals": 0, 
