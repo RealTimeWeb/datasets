@@ -26,6 +26,7 @@ interfaces:
         sql: SELECT data FROM construction_permits LIMIT {hardware}
         post: json()
 comments:
-    period:
+    Valuations: In 1000's of units
+    Period:
         full: The full representation of the time period for this report. The format is "Year/month".
     

@@ -22,3 +22,5 @@ interfaces:
     production:
         sql: SELECT data FROM labor
         post: json()
+comments:
+    Data: If the data is not a rate, then it is presented as the number in thousands

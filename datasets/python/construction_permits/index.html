@@ -271,42 +271,86 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-construction_permits-__0__-locations' title='List'>
-        
+
+
+    <div id='explore-construction_permits-__0__-Number-of-Permits' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
-            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-construction_permits-__0__-locations-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
-            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"2 units"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>0</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"5+ units"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>82</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"3-4 units"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4</code></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"1 unit"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>789</code></td> 
+                 <td></td> </tr>
+            
         </table>
     </div>
     <script>
     $(document).ready(function() {
-        $( "#explore-construction_permits-__0__-locations" ).dialog({
+        $( "#explore-construction_permits-__0__-Number-of-Permits" ).dialog({
           autoOpen: false,
           width: 600
         });
-        $("#btn-explore-construction_permits-__0__-locations-__0__").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        
+        $("#btn-explore-construction_permits-__0__-Number-of-Permits-2-units").click(function() {
+            $( "#explore-construction_permits-__0__-Number-of-Permits-2-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        $("#btn-explore-construction_permits-__0__-Number-of-Permits-5+-units").click(function() {
+            $( "#explore-construction_permits-__0__-Number-of-Permits-5+-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-construction_permits-__0__-Number-of-Permits-3-4-units").click(function() {
+            $( "#explore-construction_permits-__0__-Number-of-Permits-3-4-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-construction_permits-__0__-Number-of-Permits-1-unit").click(function() {
+            $( "#explore-construction_permits-__0__-Number-of-Permits-1-unit" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
     });
     </script>
 
-
-
-    <div id='explore-construction_permits-__0__' title='Dictionary (2 keys)'>
+    <div id='explore-construction_permits-__0__' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"period"</code></td> 
+            <tr> <td><code>"Number of Permits"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-construction_permits-__0__-period'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td><a class='dialog-opener' id='btn-explore-construction_permits-__0__-Number-of-Permits'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"locations"</code></td> 
-                 <td><span data-toggle="tooltip" title="List">list</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-construction_permits-__0__-locations'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+            <tr> <td><code>"Period"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-construction_permits-__0__-Period'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Valuations"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-construction_permits-__0__-Valuations'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>In 1000's of units</td> </tr>
+            
+            <tr> <td><code>"Name"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td><code>"Mississippi"</code></td> 
                  <td></td> </tr>
             
         </table>
@@ -318,78 +362,37 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-construction_permits-__0__-period").click(function() {
-            $( "#explore-construction_permits-__0__-period" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-construction_permits-__0__-Number-of-Permits").click(function() {
+            $( "#explore-construction_permits-__0__-Number-of-Permits" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-construction_permits-__0__-locations").click(function() {
-            $( "#explore-construction_permits-__0__-locations" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-construction_permits-__0__-Period").click(function() {
+            $( "#explore-construction_permits-__0__-Period" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-    });
-    </script>
-
-    <div id='explore-construction_permits-__0__-locations-__0__-valuations' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"2 units"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>23595000</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"5+ units"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>167249000</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"3-4 units"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>41207000</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"1 unit"</code></td> 
-                 <td><span data-toggle="tooltip" title="Long (a very big whole number)">long</span></td> 
-                 <td><code>2415962000</code></td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-construction_permits-__0__-locations-__0__-valuations" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-construction_permits-__0__-locations-__0__-valuations-2-units").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__-valuations-2-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-construction_permits-__0__-Valuations").click(function() {
+            $( "#explore-construction_permits-__0__-Valuations" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-construction_permits-__0__-locations-__0__-valuations-5+-units").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__-valuations-5+-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-construction_permits-__0__-locations-__0__-valuations-3-4-units").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__-valuations-3-4-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-construction_permits-__0__-locations-__0__-valuations-1-unit").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__-valuations-1-unit" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-construction_permits-__0__-Name").click(function() {
+            $( "#explore-construction_permits-__0__-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
     });
     </script>
 
-    <div id='explore-construction_permits-__0__-period' title='Dictionary (4 keys)'>
+    <div id='explore-construction_permits-__0__-Period' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6</code></td> 
+                 <td></td> </tr>
             
             <tr> <td><code>"month name"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -398,7 +401,7 @@ $(document).ready(function() {
             
             <tr> <td><code>"full"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"2003/6"</code></td> 
+                 <td><code>"2003/06"</code></td> 
                  <td>The full representation of the time period for this report. The format is "Year/month".</td> </tr>
             
             <tr> <td><code>"year"</code></td> 
@@ -406,149 +409,88 @@ $(document).ready(function() {
                  <td><code>2003</code></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"month"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>6</code></td> 
-                 <td></td> </tr>
-            
         </table>
     </div>
     <script>
     $(document).ready(function() {
-        $( "#explore-construction_permits-__0__-period" ).dialog({
+        $( "#explore-construction_permits-__0__-Period" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-construction_permits-__0__-period-month-name").click(function() {
-            $( "#explore-construction_permits-__0__-period-month-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-construction_permits-__0__-Period-month").click(function() {
+            $( "#explore-construction_permits-__0__-Period-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-construction_permits-__0__-period-full").click(function() {
-            $( "#explore-construction_permits-__0__-period-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-construction_permits-__0__-Period-month-name").click(function() {
+            $( "#explore-construction_permits-__0__-Period-month-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-construction_permits-__0__-period-year").click(function() {
-            $( "#explore-construction_permits-__0__-period-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-construction_permits-__0__-Period-full").click(function() {
+            $( "#explore-construction_permits-__0__-Period-full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-construction_permits-__0__-period-month").click(function() {
-            $( "#explore-construction_permits-__0__-period-month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-construction_permits-__0__-Period-year").click(function() {
+            $( "#explore-construction_permits-__0__-Period-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
     });
     </script>
 
-    <div id='explore-construction_permits-__0__-locations-__0__' title='Dictionary (4 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"# of permits"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-construction_permits-__0__-locations-__0__-_-of-permits'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"name"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Mountain"</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"valuations"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-construction_permits-__0__-locations-__0__-valuations'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"level"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"divisional"</code></td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-construction_permits-__0__-locations-__0__" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-construction_permits-__0__-locations-__0__-_-of-permits").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__-_-of-permits" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-construction_permits-__0__-locations-__0__-name").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-construction_permits-__0__-locations-__0__-valuations").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__-valuations" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-construction_permits-__0__-locations-__0__-level").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__-level" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-    });
-    </script>
-
-    <div id='explore-construction_permits-__0__-locations-__0__-_-of-permits' title='Dictionary (4 keys)'>
+    <div id='explore-construction_permits-__0__-Valuations' title='Dictionary (4 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
             <tr> <td><code>"2 units"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>188</code></td> 
+                 <td><code>0</code></td> 
                  <td></td> </tr>
             
             <tr> <td><code>"5+ units"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2600</code></td> 
+                 <td><code>3169</code></td> 
                  <td></td> </tr>
             
             <tr> <td><code>"3-4 units"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>507</code></td> 
+                 <td><code>146</code></td> 
                  <td></td> </tr>
             
             <tr> <td><code>"1 unit"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>16770</code></td> 
+                 <td><code>83156</code></td> 
                  <td></td> </tr>
             
         </table>
     </div>
     <script>
     $(document).ready(function() {
-        $( "#explore-construction_permits-__0__-locations-__0__-_-of-permits" ).dialog({
+        $( "#explore-construction_permits-__0__-Valuations" ).dialog({
           autoOpen: false,
           width: 600
         });
         
-        $("#btn-explore-construction_permits-__0__-locations-__0__-_-of-permits-2-units").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__-_-of-permits-2-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-construction_permits-__0__-Valuations-2-units").click(function() {
+            $( "#explore-construction_permits-__0__-Valuations-2-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-construction_permits-__0__-locations-__0__-_-of-permits-5+-units").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__-_-of-permits-5+-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-construction_permits-__0__-Valuations-5+-units").click(function() {
+            $( "#explore-construction_permits-__0__-Valuations-5+-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-construction_permits-__0__-locations-__0__-_-of-permits-3-4-units").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__-_-of-permits-3-4-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-construction_permits-__0__-Valuations-3-4-units").click(function() {
+            $( "#explore-construction_permits-__0__-Valuations-3-4-units" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-construction_permits-__0__-locations-__0__-_-of-permits-1-unit").click(function() {
-            $( "#explore-construction_permits-__0__-locations-__0__-_-of-permits-1-unit" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-construction_permits-__0__-Valuations-1-unit").click(function() {
+            $( "#explore-construction_permits-__0__-Valuations-1-unit" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -589,7 +531,7 @@ $(document).ready(function() {
     
     This library has 1 function you can use.
     
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">construction_permits</span>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">construction_permits</span>
 <span class="n">list_of_permit</span> <span class="o">=</span> <span class="n">construction_permits</span><span class="o">.</span><span class="n">get_records</span><span class="p">()</span>
 </pre></div>
 
@@ -598,9 +540,9 @@ $(document).ready(function() {
 
     Additionally, some of the functions can return a sample of the Big Data using an extra argument. If you use this sampled Big Data, it may be much faster. When you are sure your code is correct, you can remove the argument to use the full dataset.
 
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">construction_permits</span>
-<span class="c1"># These may be slow!</span>
-<span class="n">list_of_permit</span> <span class="o">=</span> <span class="n">construction_permits</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">construction_permits</span>
+<span class="c"># These may be slow!</span>
+<span class="n">list_of_permit</span> <span class="o">=</span> <span class="n">construction_permits</span><span class="o">.</span><span class="n">get_records</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
 </pre></div>
 
 
