@@ -61,9 +61,9 @@ interfaces:
 structures:
     "development.[0].Data": Based on the nature of the data, some of the numbers that are reported are very small.  For example a field reported as 0.15 is 0.15 %, not 15 %.
     "development.[0].Data.Urban Development.Population Density": People per square kilometer of land area
-    "development.[0].Data.Urban Development.Urban Population": Percent of total
+    "development.[0].Data.Urban Development.Urban Population Percent": Percent of total population
     "development.[0].Data.Urban Development.Urban Population Growth": Annual percent
-    "development.[0].Data.Rural Development.Rural Population": Percent of total population
+    "development.[0].Data.Rural Development.Rural Population": Value of rural population
     "development.[0].Data.Rural Development.Land Area": Square kilometers
     "development.[0].Data.Rural Development.Rural Population Growth": Annual Percent
     "development.[0].Data.Rural Development.Arable Land Percent": Percent of land area
