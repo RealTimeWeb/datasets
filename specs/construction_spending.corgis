@@ -18,6 +18,8 @@ local:
     indexes:
       - name: year
         jsonpath: construction_spending.[0].time.year
+      - name: month
+        jsonpath: construction_spending.[0].time.month
 interfaces:
   - name: get spending
     description: Returns spending data from every year.

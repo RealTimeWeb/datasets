@@ -8,7 +8,7 @@ metadata:
     description:
         short: Reports of country's development over time
         overview: >
-            The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank.  Included is different data about urban development, agriculture and rural development, health, and infrastructure.       
+            The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank.  Included is different data about urban development, agriculture and rural development, health, and infrastructure.   
 
         citation: https://ndb.nal.usda.gov/
 local:
@@ -59,6 +59,7 @@ interfaces:
         sql: SELECT data FROM development WHERE country=? LIMIT {hardware}
         post: json()
 structures:
+    "development.[0].Data": Based on the nature of the data, some of the numbers that are reported are very small.  For example a field reported as 0.15 is 0.15 %, not 15 %.
     "development.[0].Data.Urban Development.Population Density": People per square kilometer of land area
     "development.[0].Data.Urban Development.Urban Population": Percent of total
     "development.[0].Data.Urban Development.Urban Population Growth": Annual percent

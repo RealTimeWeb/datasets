@@ -7,7 +7,7 @@ metadata:
     tags: [publishers, amazon, books, sales, genres, literature, english]
     description:
         overview: >
-            From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking.
+            From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking. This ranking is used to sort the books. Keep in mind that this data is NOT time-oriented; it is a collection of a bunch of different books, not a book over time.
         short: >
             E-book sales on Amazon, including daily and total earnings for 54,000 titles.
         citation: http://authorearnings.com/report/september-2015-author-earnings-report/
@@ -39,7 +39,7 @@ structures:
     "publishers.[0].daily.publisher revenue": The amount of money that the publisher made per day on this book, in dollars.
     "publishers.[0].daily.gross sales": The total amount of money that was made per day on this book, in dollars.
     "publishers.[0].daily.units sold": The number of books sold per day.
-    "publishers.[0].genre": The genre of the book, either "fiction", "non-fiction", "genre fiction", "childrens", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.
+    "publishers.[0].genre": The genre of the book, either "fiction", "nonfiction", "genre fiction", "children", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.
     "publishers.[0].publisher.name": The name of the publisher.
     "publishers.[0].publisher.type": The type, or size, of the publisher (e.g, "indie", "small", "big five", etc.)
     "publishers.[0].sold by": The actual company that sold this book, as oppposed to the company that published it.

@@ -20471,7 +20471,7 @@ construction_spending = [
   }, 
   {
     "comment": "The numeric month that this report was made. January is 1, February is 2, etc.", 
-    "index": false, 
+    "index": true, 
     "name": "construction_spending.[0].time.month", 
     "data": [
       1, 

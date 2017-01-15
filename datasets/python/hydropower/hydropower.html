@@ -405,20 +405,20 @@ $(document).ready(function() {
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
+            <tr> <td><code>"Structural Height"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>86.0</code></td> 
+                 <td>In feet, missing values were imputed with a mean value of 132.17</td> </tr>
+            
             <tr> <td><code>"Crest Length"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>3800.0</code></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Crest Elevaion"</code></td> 
+            <tr> <td><code>"Crest Elevation"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>1520.0</code></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"Structural Height"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>86.0</code></td> 
-                 <td>In feet, missing values were imputed with a mean value of 132.17</td> </tr>
+                 <td>In feet, missing values were imputed with a mean value of 4141.10</td> </tr>
             
         </table>
     </div>
@@ -429,18 +429,18 @@ $(document).ready(function() {
           width: 600
         });
         
+        $("#btn-explore-hydropower-__0__-Dimensions-Structural-Height").click(function() {
+            $( "#explore-hydropower-__0__-Dimensions-Structural-Height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
         $("#btn-explore-hydropower-__0__-Dimensions-Crest-Length").click(function() {
             $( "#explore-hydropower-__0__-Dimensions-Crest-Length" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-hydropower-__0__-Dimensions-Crest-Elevaion").click(function() {
-            $( "#explore-hydropower-__0__-Dimensions-Crest-Elevaion" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-hydropower-__0__-Dimensions-Structural-Height").click(function() {
-            $( "#explore-hydropower-__0__-Dimensions-Structural-Height" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-hydropower-__0__-Dimensions-Crest-Elevation").click(function() {
+            $( "#explore-hydropower-__0__-Dimensions-Crest-Elevation" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -481,7 +481,7 @@ $(document).ready(function() {
     
     This library has 1 function you can use.
     
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">hydropower</span>
+<div class="highlight"><pre><span class="kn">import</span> <span class="nn">hydropower</span>
 <span class="n">list_of_dam</span> <span class="o">=</span> <span class="n">hydropower</span><span class="o">.</span><span class="n">get_dams</span><span class="p">()</span>
 </pre></div>
 

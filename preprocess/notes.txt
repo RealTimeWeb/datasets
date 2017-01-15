@@ -1,0 +1,351 @@
+\section{Designing Scaffolded Datasets}
+
+In this section, I review design opportunities, affordances, and problems derived while building the CORGIS dataset collection.
+At the time of writing, this collection spanned more than 44 datasets.
+Each dataset required a different approach and had different issues.
+
+\subsection{30 Design Opportunities}
+
+I have attempted to organize and summarize the most interesting issues that future developers might want to consider.
+
+Many of the issues are similar to those encountered by expert data scientists.
+However, when designing for novices, the developer must scaffold the dataset.
+In general, the goal is to remove all difficulties that are not explicitly related to the intended teaching goals.
+
+There are few clear-cut answers when it comes to building educational datasets.
+Instead, the designer must consider the learning objectives and prior skills of their audience.
+Decisions that seem perfectly reasonable in advance may have surprising consequences when brought to a learner.
+As with any design project, you can expect to work in an iterative manner; it is valuable to expose early iterations to expected users to gauge reaction.
+
+A recurring danger when scaffolding a dataset is that students may inadvertantly learn incorrect behavior.
+They may believe that the instructor has created the dataset with best practices in mind, and they will (possibly subconsciously) adopt these strategies.
+Instructors should work with interested students
+This can also be a teachable moment for the entire class: consider an assignment where students work to improve a dataset 
+
+This section is broken into 7 parts:
+
+\begin{enumerate}
+    \item Meta Ideas
+    \item Collecting Data
+    \item Restructuring Data
+    \item Manipulating Data
+    \item Knowing Data
+    \item Working with Data Types
+    \item Building Problems
+\end{enumerate}
+
+\subsection{Meta ideas}
+
+\begin{enumerate}
+    \item Standardize your process:
+        Provide links to original source, citation, and data dictionary whereever possible.
+        Write code so that it is understandable
+        At any time, you should be able to regenerate the completed datasets almost entirely automatically
+        Document the process, maximize reusability.
+        No dataset is finalized
+        Plan early to have to re-run it
+        Services like github may not appreciate many large data files
+    
+    \item Keep track of the health of the datasets
+        Use an Issue tracker like GitHub to manage problems with the datasets
+
+\end{enumerate}
+
+\subsection{Collecting data}
+
+\begin{enumerate}
+
+    \item Working with file formats:
+        Data can come in many exotic formats, which can be troublesome to deal with.
+        JSON is a hiearchical format that incorporates lists, objects, etc.
+        CSV requires a row-column format.
+        We chose JSON as our designated format.
+        
+    \item Parsing PDFs:
+        This is extremely difficult, and usually not worth it.
+        There are tools for extracting out Tables (E.g., School Scores dataset), but these can introduce a lot of garbage.
+        Probably need to incorporate some human effort.
+        Paid-for tools can sometimes do a better job
+        
+    \item Collecting real-time data:
+        Mining a real-time data source is an easy way to translate a high-velocity, low-volume dataset into a low-velocity, high-volume dataset.
+        This requires time, planning, and coordination.
+        It is a good idea to keep tabs on your data collection, in case the API service changes.
+        An example is how we collected the Stock trading dataset.
+        
+    \item Collecting static data
+        Crawling websites can be a great way to make your own dataset
+        Make sure that you are not violating the ToS of the website
+        Check carefully that they do not have their data available in some other way.
+        Consider requesting the data directly
+        Scrape politely, use non-peak hours,
+        
+    \item Using Textual Data:
+        Extract out values for them from text where ever possible (e.g. Dates, stuff from Art dataset)
+        
+    \item Legality of your data:
+        Getting permission, approval; remember that some datasets might need release from individual students. Probably best to not even worry about these.
+
+    \item Metadata as data:
+        Add the rank of the element into to the dataset (acts as an enumeration)
+        Generating metrics (e.g., sentiment analysis) and metadata
+        
+    \item Synthesizing Datasets:
+        Many datasets can be improved and expanded by incorporating additional data
+        "Mash-ups"
+        E.g., adding per-state/year population data to school-score data
+
+    \item Know your audience:
+        Datasets are typically generated for some purpose; studying more about that purpose can greatly aid in the development
+        Reach out to subject-matter experts.
+    
+\end{enumerate}
+
+\subsection{Restructuring data}
+
+\begin{enumerate}}
+
+\item Tabular data into List-of-objects:
+    Often we would transform a CSV file into a JSON file
+    You can chunk subsets of columns into meaningful objects.
+    Cognitive load theory suggests that grouping into chunks of 7 might be ideal.
+
+\item XML into JSON:
+    XML is a very cumbersome format to use
+    Typically, you can create a direct translation from XML into JSON - however, the results typically won't be meaningful.
+    You will want to apply some intelligent renaming.
+    
+\item Indexes
+    Try to limit to 2 indexes.
+    This makes it easier to filter on an index and leave the other index (e.g., filter by state in crime data to get time-ordered).
+    Students struggle with multiple indexes and their implications (e.g., cancer dataset).
+
+\item Collapsing fields on an index
+    If you find your dataset is too big, you can consider collapsing on a field.
+    This cuts out information, but does so in a consistent way.
+    You can salvage this data into a single field.
+    (e.g., in Airlines we collapsed the Carrier)
+    There are other ways to aggregate too, such as reducing the time scale of data (Days -> Months) or geographic region (counties -> states)
+
+\item Binning Data
+    Consider the cars data, which has information about cars over multiple years. 
+    Some students will want to bin the dataset to e.g., plot the average MPG for each year over all cars
+        
+\item Tidy Data:
+    Typically, we try to stack data.
+    Stacking data means to extract out a value into its own column.
+    Every time you stack data, however, you introduce a new index, so use it with caution.
+    This can also be used to increase the number of records your dataset has, making the argument for automation more compelling.
+    Makes it easier to iterate through the different values.
+    
+\item Avoiding embedded lists:
+    By aggregating fields intelligently, you can avoid nesting a new list in the old list.
+    Consider including a field representing the total or average of the list instead of the sublist.
+
+\item Including redudantnt total in a set of keys
+    E.g., Time delayed in different categories.
+    This prevents you from doing an iteration over keys because it doubles the cumulation.
+    Building construction for a case where this is even worse.
+
+\end{enumerate}
+    
+\subsection{Knowing the data}
+
+\begin{enumerate}
+    
+\item Normality:
+    It is not possible to identify if a dataset is normally distributed, but you can get an estimate.
+    You might consider using these statistical tools to judge the nature of your data, so you can help guide your students.
+    
+\item Monitor fields, structure, etc.:
+    Use visualization tools to help you keep on top of your datasets
+    Automate these tools wherever possible
+    
+\item Won't read documentation:
+    Students don't read documentation.
+    However, keep it available and make it easy to access.
+    The fewer the barriers, and the better the documnetation is at answering questions, the more students will learn to use it.
+    
+\item Figuring out the structure
+    Students assume that the top level is a dictionary, not a list
+    You can help students learn about the nature of their data by mapping out the structure as a diagram.
+    In all of our data, we use a structure of "list of records".
+    However, students glaze over the "list of" part and focus on the dictionaries at the top.
+    In general, students struggle to learn the structure of their data
+    
+\item Preparing for Dissemination:
+    Students will often download the database file and the associated code file, then get confused when they can't understand it.
+    Unless you specifically want them to browse the database file with a visualization tool (e.g., a local SQLite client), tell them to not open the file.
+    Keep in mind what files students will need, how they will access documentation.
+    Recognize that file size can be a problem for some students.
+    
+\end{enumerate}
+
+\subsection{Manipulating the data}
+
+\begin{enumerate}
+
+\item Choosing Types:
+    What types do you want your students to be familiar with?
+    Most datasets will incorporate at least some basic numeric types (integer, decimal) and text types.
+    It's also very common to have boolean types.
+    And then some datasets would benefit from having enumerated types.
+    However, enumerated types exist as metadata, not necessarily as an inherent part of the structure.
+    There are also the "Non-existence" types (Null, None, Undefined, NaN, etc.) that require further explanation.
+    For our purposes, we stuck with only integers, decimals, booleans, and string types as our simple primitives.
+
+\item Standardizing Fields:
+    Be consistent as possible across fields and their values.
+    Ensure same capitalization, spelling, and punctuation.
+    Ensure that you use the same kind of units.
+    Ensure that you use the same nullified value consistently.
+    Ensure that the field has the same type across values.
+    Ensure uniform structure of objects between rows
+    Choose the timespan of your data for consistencies sake.
+
+\item Naming things:    
+    Pick meaningful names, because that is almost the only way students will learn about the dataset.
+    "Daily Average" in publishers
+    But long names will force students to do more typing and get frustrated
+    Offensive language, politically correct language (Immigration)
+    Fully explain abbreviations
+    Hint at units
+    
+\item Working with bad data
+    Cleaning datasets is often necessary (imputation)
+    Null data can be complex for students to handle, requiring more conditionals, breaking some functions, more critical thinking.
+    Can often be convenient to just remove those elements for incidence data.
+    Might replace with 0, 99999, or -1 or some other "Bad data" value
+    You might also consider using interpolation to guess the values - but this can be misleading and downright dishonest.
+    Make sure you document to the student what you did.
+    
+\item Smoothing:
+    Removing outliers to smooth data can lead to odd results (immigration and Mexico).
+    Probably should only do this when you have incident data, rather than report-style data.
+    Consider removing data that isn't intuitive to whitewash more complex things.
+    For example, earthquake magnitudes can be negative - but explaining this to students is an extra headache.
+    Understand that you might be making up information if you don't document it correctly.
+    
+\item Cleaning up by hand
+    Automate as much as possible, write scripts to help bring the worst stuff to your attention.
+    Formalize the clean-up process - you may have to do it more than once (what if new data is added?)
+    It's like QuickSort - write rules to cover as many cases as possible, then go in by hand.
+    Mechanical turks and undergrads can be powerful tools for fixing up data.
+    
+\item Sampling down a dataset:
+    For incidence data, consider removing some percentage of the data - consider retaining any important statistical relationships by sampling intelligently.
+    In the worst case, use a proper sampling algorithm that gets a random distribution.
+    For report data, make sure you are sampling down on an index (e.g., either remove all Arizonia reports or all 1994 reports, but don't just remove that one report and leave it to be confusing)
+    
+\item Shaping data:
+    Students don't know what to do with log/sqrt distributed data
+    If you change the nature of the data, you will have to explain this to them.
+    They often struggle with exponents.
+    
+\item Decoding values
+    Enumerated types are very common
+    Many datasets use a numeric code to reduce the space that the data takes up
+    This requires external documentation to figure out (e.g., Using a lookup table)
+    Avoid this, and simply include the redundancy to simplify the details.
+    
+\item Assume its time oriented
+    Students seem to be pre-disposed to find patterns in the data.
+    This includes finding time patterns.
+    E.g., "Daily Use" in Publishers.
+    
+\end{enumerate}
+
+\subsection{Working with Data Types}
+
+\begin{enumerate}
+
+    \item Numbers
+        Keep the size of numbers manageable - not every language likes having numbers past 2^30
+        
+    \item Textual
+        New lines, tab characters, etc.
+        
+    \item Unicode fields (e.g., names)
+        Should you strip out unicode data?
+        This can be very offensive
+        Refer to more serious resources to ensure you handle it more correctly
+        
+    \item Dates
+        YYYY/MM/DD
+        Writing out month names? 
+        Should you zero-fill? Helps sorting, but can make it harder to read
+        Natural ordering: Biggest -> Smallest?
+        Should you separate it into individual fields
+        
+    \item Currencies/Temperature/Distance/Volume
+        In dollars, euros? Centigrade, kelvin, fahrenheight? Consider using an unusual format so they have to convert.
+        
+    \item Percents
+        Don't use 100, use 1.00. Make it very clear in the documentation
+        
+    \item States
+        Write out the state name? VA-> Virginia?
+        What do you do about territories?
+        What about when you want to add in a location that doesn't fit the state theme?
+        Washington DC?
+        Not every state was always a state
+        What about a "Total" field
+        
+    \item Regions
+        You can use the census regions
+        Most students won't be familiar with these
+        
+    \item Countries
+        Countries changes over time
+        
+    \item Address
+        Should you break it into individual fields?
+        What parts are actually important?
+        Addresses alone are not particularly useful to students.
+            Geotagging services can be expensive, slow, rate-limited
+            Batch them in advance rather than expecting students to do so.
+            
+    \item Time
+        HH:MM
+        Epoch time? (Avoid long numbers)
+        Timezones
+        Handling all the intracacies of time is impossible - consider what is important
+        
+    \item Gender
+        Male/Female/Other
+        
+    \item URLs
+        Include "http"
+        Ensure that the links work
+        Will your students actually be able to use the URLs for anything?
+    
+\end{enumerate}
+
+\subsection{Building Problems}
+
+Common operations on numerical data
+
+    Descriptive Statistics
+        Average - combining results of multiple iteration
+        Sum, Length - iteration with update
+        Minimum, Maximum - iteration with decision
+        First, Nth, Last
+        Median - 
+        
+    List Handling Functions
+        Filter
+        Reduce
+        Map
+        
+    Visualization
+        Histogram
+        Scatter Plot
+        Bar Chart
+        Scatter Plot
+        
+    Basic Statistics
+        Variance, Standard Deviation
+        ANOVA
+        Correlation Coefficient
+        Standardization
+    

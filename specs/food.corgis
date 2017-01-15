@@ -26,7 +26,7 @@ interfaces:
         sql: SELECT data FROM food LIMIT {hardware}
         post: json()
 structures:
-    "food.[0].Data.Vitamins.Vitamin A IU": In International Units
-    "food.[0].Data.Vitamins.Vitamin A RAE": In retinol activity equivalents
+    "food.[0].Data.Vitamins.Vitamin A - IU": In International Units
+    "food.[0].Data.Vitamins.Vitamin A - RAE": In retinol activity equivalents
     "food.[0].Data.Vitamins": In milligrams per 100 grams
     "food.[0].Data.Major Minerals": In milligrams per 100 grams

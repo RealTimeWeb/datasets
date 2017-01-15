@@ -8,13 +8,16 @@ metadata:
     description:
         short: Demographic information for the states in the United States.
         overview: >
-            The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau.  Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.
+            The following data set is summarized information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau. However, this data is not available for these years; just the summarized data as of 2015. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.
 
         citation: http://www.census.gov/quickfacts/table/PST045215/00
 local:
   - file: state_demographics.json
     name: demographics
     row: report
+    indexes:
+      - name: state
+        jsonpath: demographics.[0].State
 interfaces:
   - name: get all states
     description: Returns the report for each state from the dataset.

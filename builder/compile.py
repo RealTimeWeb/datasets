@@ -184,6 +184,7 @@ class Compiler(object):
         metadata.version = self.recommend_field("metadata", "version", raw, 1, int, "Assuming version is 1.")
         metadata.hardware = self.typecheck_field("metadata", "hardware", raw, 1000, int)
         metadata.description = self.recommend_field("metadata", "description", raw, {}, dict, "There will be no top-level documentation!")
+        metadata.outliers = self.recommend_field("metadata", "outliers", raw, False, bool, "Removing outliers automatically.")
         if 'overview' not in metadata.description:
             metadata.description['overview'] = ""
         if 'short' not in metadata.description:
@@ -193,6 +194,7 @@ class Compiler(object):
         else:
             metadata.appendix = []
         metadata.icon = os.path.join(self.path, clean_identifier(metadata.name).lower()+'.png')
+        metadata.splash = os.path.join(self.path, clean_identifier(metadata.name).lower()+'_splash.png')
         metadata.tags = self.recommend_field("metadata", "tags", raw, [], list)
         return metadata
             

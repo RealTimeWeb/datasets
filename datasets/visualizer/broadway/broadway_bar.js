@@ -1,2272 +1,2272 @@
 broadway_bar = [
   {
     "best_indexes": [
-      "Majestic", 
       "Broadway", 
-      "Palace", 
+      "Majestic", 
       "Shubert", 
-      "Ambassador", 
-      "Gershwin", 
       "New Amsterdam", 
-      "Nederlander", 
-      "Lunt-Fontanne", 
-      "Imperial"
+      "Gershwin", 
+      "Palace", 
+      "Imperial", 
+      "Helen Hayes", 
+      "Eugene O'Neill", 
+      "Ambassador"
     ], 
     "data": {
       "broadway.[0].Statistics.Gross": {
         "Nederlander": {
-          "count": 911, 
-          "sum": 438840807, 
-          "average": 481713.289791438
+          "count": 267, 
+          "sum": 122920822, 
+          "average": 460377.6104868914
         }, 
         "Jacobs": {
-          "count": 441, 
-          "sum": 269229840, 
-          "average": 610498.5034013606
+          "count": 144, 
+          "sum": 86717589, 
+          "average": 602205.4791666666
         }, 
         "Music Box": {
-          "count": 642, 
-          "sum": 245989279, 
-          "average": 383160.8707165109
-        }, 
-        "Lunt-Fontanne": {
-          "count": 910, 
-          "sum": 677190984, 
-          "average": 744165.9164835165
-        }, 
-        "Neil Simon": {
-          "count": 754, 
-          "sum": 469783656, 
-          "average": 623055.2466843502
-        }, 
-        "Minskoff": {
-          "count": 854, 
-          "sum": 921996398, 
-          "average": 1079621.074941452
-        }, 
-        "Imperial": {
-          "count": 903, 
-          "sum": 633662295, 
-          "average": 701730.1162790698
-        }, 
-        "Al Hirschfeld": {
-          "count": 569, 
-          "sum": 455103051, 
-          "average": 799829.6151142356
-        }, 
-        "Criterion": {
-          "count": 145, 
-          "sum": 20973725, 
-          "average": 144646.37931034484
-        }, 
-        "Broadhurst": {
-          "count": 706, 
-          "sum": 386183829, 
-          "average": 547002.5906515581
-        }, 
-        "Ford Center": {
-          "count": 193, 
-          "sum": 131200806, 
-          "average": 679796.9222797927
-        }, 
-        "Gershwin": {
-          "count": 948, 
-          "sum": 1148664178, 
-          "average": 1211671.0738396624
-        }, 
-        "Belasco": {
-          "count": 470, 
-          "sum": 162226068, 
-          "average": 345161.84680851066
-        }, 
-        "Helen Hayes": {
-          "count": 868, 
-          "sum": 187827195, 
-          "average": 216390.7776497696
-        }, 
-        "Cadillac Winter Garden": {
-          "count": 242, 
-          "sum": 229929442, 
-          "average": 950121.6611570248
-        }, 
-        "Winter Garden": {
-          "count": 719, 
-          "sum": 505803628, 
-          "average": 703482.0973574409
-        }, 
-        "Friedman": {
-          "count": 291, 
-          "sum": 71690024, 
-          "average": 246357.470790378
+          "count": 204, 
+          "sum": 81437682, 
+          "average": 399204.32352941175
         }, 
         "St. James": {
-          "count": 817, 
-          "sum": 577571273, 
-          "average": 706941.582619339
+          "count": 294, 
+          "sum": 211734574, 
+          "average": 720185.6258503401
+        }, 
+        "Neil Simon": {
+          "count": 253, 
+          "sum": 150984762, 
+          "average": 596777.7154150198
+        }, 
+        "Minskoff": {
+          "count": 279, 
+          "sum": 291803970, 
+          "average": 1045892.3655913979
+        }, 
+        "Imperial": {
+          "count": 310, 
+          "sum": 217507787, 
+          "average": 701638.0225806452
+        }, 
+        "Al Hirschfeld": {
+          "count": 201, 
+          "sum": 156456043, 
+          "average": 778388.2736318408
+        }, 
+        "Criterion": {
+          "count": 47, 
+          "sum": 6794718, 
+          "average": 144568.46808510637
+        }, 
+        "Broadhurst": {
+          "count": 221, 
+          "sum": 116500595, 
+          "average": 527152.0135746606
+        }, 
+        "Ford Center": {
+          "count": 59, 
+          "sum": 39377667, 
+          "average": 667418.0847457628
+        }, 
+        "Gershwin": {
+          "count": 317, 
+          "sum": 380064107, 
+          "average": 1198940.4006309148
+        }, 
+        "Belasco": {
+          "count": 163, 
+          "sum": 55470055, 
+          "average": 340307.08588957053
+        }, 
+        "Helen Hayes": {
+          "count": 310, 
+          "sum": 65326190, 
+          "average": 210729.64516129033
+        }, 
+        "Cadillac Winter Garden": {
+          "count": 83, 
+          "sum": 78983612, 
+          "average": 951609.7831325302
+        }, 
+        "Winter Garden": {
+          "count": 240, 
+          "sum": 160560604, 
+          "average": 669002.5166666667
+        }, 
+        "Friedman": {
+          "count": 100, 
+          "sum": 24885322, 
+          "average": 248853.22
+        }, 
+        "Lunt-Fontanne": {
+          "count": 288, 
+          "sum": 219409724, 
+          "average": 761839.3194444445
         }, 
         "Virginia": {
-          "count": 424, 
-          "sum": 151197789, 
-          "average": 356598.55896226416
+          "count": 137, 
+          "sum": 48037576, 
+          "average": 350639.2408759124
         }, 
         "Cort": {
-          "count": 501, 
-          "sum": 178168342, 
-          "average": 355625.4331337325
+          "count": 175, 
+          "sum": 62412695, 
+          "average": 356643.97142857144
         }, 
         "Lyceum": {
-          "count": 544, 
-          "sum": 128263069, 
-          "average": 235777.70036764705
+          "count": 189, 
+          "sum": 46021298, 
+          "average": 243498.9312169312
         }, 
         "New Amsterdam": {
-          "count": 914, 
-          "sum": 937473373, 
-          "average": 1025682.0273522976
+          "count": 322, 
+          "sum": 330243683, 
+          "average": 1025601.5
         }, 
         "Royale": {
-          "count": 312, 
-          "sum": 84842231, 
-          "average": 271930.22756410256
+          "count": 97, 
+          "sum": 27467326, 
+          "average": 283168.3092783505
         }, 
         "Shubert": {
-          "count": 967, 
-          "sum": 684708066, 
-          "average": 708074.525336091
+          "count": 327, 
+          "sum": 230187229, 
+          "average": 703936.4801223242
         }, 
         "Martin Beck": {
-          "count": 289, 
-          "sum": 147743508, 
-          "average": 511223.21107266436
+          "count": 91, 
+          "sum": 46506619, 
+          "average": 511061.74725274724
         }, 
         "Ethel Barrymore": {
-          "count": 797, 
-          "sum": 314854373, 
-          "average": 395049.4015056462
+          "count": 264, 
+          "sum": 99231166, 
+          "average": 375875.6287878788
         }, 
         "Kit Kat Klub": {
-          "count": 35, 
-          "sum": 7995666, 
-          "average": 228447.6
+          "count": 12, 
+          "sum": 2595712, 
+          "average": 216309.33333333334
         }, 
         "Marquis": {
-          "count": 735, 
-          "sum": 502888884, 
-          "average": 684202.5632653062
-        }, 
-        "Ambassador": {
-          "count": 963, 
-          "sum": 457209272, 
-          "average": 474775.9833852544
-        }, 
-        "Biltmore": {
-          "count": 167, 
-          "sum": 34059000, 
-          "average": 203946.10778443114
-        }, 
-        "Circle In The Square": {
-          "count": 638, 
-          "sum": 185429564, 
-          "average": 290641.94984326017
-        }, 
-        "Ford Center (Livent)": {
-          "count": 108, 
-          "sum": 79947694, 
-          "average": 740256.425925926
-        }, 
-        "Richard Rodgers": {
-          "count": 809, 
-          "sum": 530914290, 
-          "average": 656259.9381953028
-        }, 
-        "Hilton Theatre": {
-          "count": 143, 
-          "sum": 112779348, 
-          "average": 788666.7692307692
-        }, 
-        "Plymouth": {
-          "count": 383, 
-          "sum": 136738520, 
-          "average": 357019.634464752
-        }, 
-        "Ford Center (Tcn)": {
-          "count": 24, 
-          "sum": 11284435, 
-          "average": 470184.7916666667
-        }, 
-        "Longacre": {
-          "count": 413, 
-          "sum": 136353546, 
-          "average": 330153.86440677964
-        }, 
-        "American Airlines": {
-          "count": 650, 
-          "sum": 170978045, 
-          "average": 263043.1461538462
+          "count": 258, 
+          "sum": 177439349, 
+          "average": 687749.4147286821
         }, 
         "Golden": {
-          "count": 781, 
-          "sum": 250993723, 
-          "average": 321374.80537772086
+          "count": 242, 
+          "sum": 75886330, 
+          "average": 313579.87603305787
+        }, 
+        "Biltmore": {
+          "count": 52, 
+          "sum": 10716882, 
+          "average": 206093.88461538462
+        }, 
+        "Circle In The Square": {
+          "count": 220, 
+          "sum": 60933980, 
+          "average": 276972.63636363635
+        }, 
+        "Ford Center (Livent)": {
+          "count": 40, 
+          "sum": 29324114, 
+          "average": 733102.85
+        }, 
+        "Richard Rodgers": {
+          "count": 289, 
+          "sum": 190234688, 
+          "average": 658251.5155709343
+        }, 
+        "Hilton Theatre": {
+          "count": 54, 
+          "sum": 44114385, 
+          "average": 816933.0555555555
+        }, 
+        "Plymouth": {
+          "count": 127, 
+          "sum": 45231831, 
+          "average": 356156.14960629924
+        }, 
+        "Ford Center (Tcn)": {
+          "count": 9, 
+          "sum": 4085428, 
+          "average": 453936.44444444444
+        }, 
+        "Longacre": {
+          "count": 142, 
+          "sum": 47188659, 
+          "average": 332314.5
+        }, 
+        "American Airlines": {
+          "count": 216, 
+          "sum": 57819705, 
+          "average": 267683.81944444444
+        }, 
+        "Ambassador": {
+          "count": 298, 
+          "sum": 140753253, 
+          "average": 472326.3523489933
         }, 
         "Stephen Sondheim": {
-          "count": 252, 
-          "sum": 210653625, 
-          "average": 835927.0833333334
+          "count": 79, 
+          "sum": 67201739, 
+          "average": 850654.9240506329
         }, 
         "Studio 54 ('98)": {
-          "count": 269, 
-          "sum": 111393773, 
-          "average": 414103.24535315984
+          "count": 95, 
+          "sum": 38630095, 
+          "average": 406632.5789473684
         }, 
         "Palace": {
-          "count": 970, 
-          "sum": 710362193, 
-          "average": 732332.1577319588
+          "count": 311, 
+          "sum": 230911559, 
+          "average": 742480.8971061093
         }, 
         "Studio 54": {
-          "count": 362, 
-          "sum": 159610268, 
-          "average": 440912.3425414365
+          "count": 111, 
+          "sum": 47827701, 
+          "average": 430880.1891891892
         }, 
         "August Wilson": {
-          "count": 563, 
-          "sum": 537937024, 
-          "average": 955483.1687388987
+          "count": 180, 
+          "sum": 171557499, 
+          "average": 953097.2166666667
         }, 
         "Vivian Beaumont": {
-          "count": 835, 
-          "sum": 397036713, 
-          "average": 475493.06946107786
+          "count": 259, 
+          "sum": 127594674, 
+          "average": 492643.52895752894
         }, 
         "Schoenfeld": {
-          "count": 351, 
-          "sum": 222322807, 
-          "average": 633398.3105413106
+          "count": 112, 
+          "sum": 66170971, 
+          "average": 590812.2410714285
         }, 
         "Brooks Atkinson": {
-          "count": 689, 
-          "sum": 300654873, 
-          "average": 436364.11175616836
+          "count": 241, 
+          "sum": 104626038, 
+          "average": 434132.9377593361
         }, 
         "Eugene O'Neill": {
-          "count": 874, 
-          "sum": 686403991, 
-          "average": 785359.257437071
+          "count": 309, 
+          "sum": 255993248, 
+          "average": 828457.1132686085
         }, 
         "Walter Kerr": {
-          "count": 827, 
-          "sum": 311236841, 
-          "average": 376344.4268440145
+          "count": 253, 
+          "sum": 92979493, 
+          "average": 367507.8774703557
         }, 
         "Henry Miller (Rndabt)": {
-          "count": 26, 
-          "sum": 12839953, 
-          "average": 493844.3461538461
+          "count": 12, 
+          "sum": 5091234, 
+          "average": 424269.5
         }, 
         "Lyric": {
-          "count": 78, 
-          "sum": 51023607, 
-          "average": 654148.8076923077
+          "count": 30, 
+          "sum": 18288366, 
+          "average": 609612.2
         }, 
         "Booth": {
-          "count": 726, 
-          "sum": 199057971, 
-          "average": 274184.53305785125
+          "count": 256, 
+          "sum": 69244543, 
+          "average": 270486.49609375
         }, 
         "Majestic": {
-          "count": 1053, 
-          "sum": 790512187, 
-          "average": 750723.824311491
+          "count": 345, 
+          "sum": 263733633, 
+          "average": 764445.3130434783
         }, 
         "Broadway": {
-          "count": 1045, 
-          "sum": 702746119, 
-          "average": 672484.3244019139
+          "count": 372, 
+          "sum": 249181403, 
+          "average": 669842.4811827957
         }, 
         "Foxwoods": {
-          "count": 157, 
-          "sum": 204570820, 
-          "average": 1302998.8535031846
+          "count": 47, 
+          "sum": 61831505, 
+          "average": 1315563.9361702127
         }, 
         "Henry Miller": {
-          "count": 125, 
-          "sum": 34815864, 
-          "average": 278526.912
+          "count": 42, 
+          "sum": 12482093, 
+          "average": 297192.6904761905
         }
       }, 
       "broadway.[0].Statistics.Attendance": {
         "Nederlander": {
-          "count": 911, 
-          "sum": 6981322, 
-          "average": 7663.361141602634
+          "count": 267, 
+          "sum": 2025008, 
+          "average": 7584.299625468165
         }, 
         "Jacobs": {
-          "count": 441, 
-          "sum": 2969379, 
-          "average": 6733.285714285715
+          "count": 144, 
+          "sum": 961234, 
+          "average": 6675.236111111111
         }, 
         "Music Box": {
-          "count": 642, 
-          "sum": 3498713, 
-          "average": 5449.708722741433
-        }, 
-        "Lunt-Fontanne": {
-          "count": 910, 
-          "sum": 9226219, 
-          "average": 10138.702197802198
-        }, 
-        "Neil Simon": {
-          "count": 754, 
-          "sum": 6771127, 
-          "average": 8980.274535809018
-        }, 
-        "Minskoff": {
-          "count": 854, 
-          "sum": 10007949, 
-          "average": 11718.909836065573
-        }, 
-        "Imperial": {
-          "count": 903, 
-          "sum": 8573882, 
-          "average": 9494.885935769656
-        }, 
-        "Al Hirschfeld": {
-          "count": 569, 
-          "sum": 5020641, 
-          "average": 8823.622144112478
-        }, 
-        "Criterion": {
-          "count": 145, 
-          "sum": 523719, 
-          "average": 3611.8551724137933
-        }, 
-        "Broadhurst": {
-          "count": 706, 
-          "sum": 5069822, 
-          "average": 7181.050991501416
-        }, 
-        "Ford Center": {
-          "count": 193, 
-          "sum": 2199186, 
-          "average": 11394.746113989637
-        }, 
-        "Gershwin": {
-          "count": 948, 
-          "sum": 12602873, 
-          "average": 13294.16983122363
-        }, 
-        "Belasco": {
-          "count": 470, 
-          "sum": 2444940, 
-          "average": 5202.0
-        }, 
-        "Helen Hayes": {
-          "count": 868, 
-          "sum": 2816896, 
-          "average": 3245.2718894009217
-        }, 
-        "Cadillac Winter Garden": {
-          "count": 242, 
-          "sum": 2814385, 
-          "average": 11629.690082644629
-        }, 
-        "Winter Garden": {
-          "count": 719, 
-          "sum": 7046362, 
-          "average": 9800.225312934632
-        }, 
-        "Friedman": {
-          "count": 291, 
-          "sum": 1186681, 
-          "average": 4077.9415807560135
+          "count": 204, 
+          "sum": 1116697, 
+          "average": 5474.004901960784
         }, 
         "St. James": {
-          "count": 817, 
-          "sum": 8128544, 
-          "average": 9949.258261933905
+          "count": 294, 
+          "sum": 2979502, 
+          "average": 10134.360544217687
+        }, 
+        "Neil Simon": {
+          "count": 253, 
+          "sum": 2210584, 
+          "average": 8737.486166007906
+        }, 
+        "Minskoff": {
+          "count": 279, 
+          "sum": 3267970, 
+          "average": 11713.1541218638
+        }, 
+        "Imperial": {
+          "count": 310, 
+          "sum": 2959091, 
+          "average": 9545.454838709677
+        }, 
+        "Al Hirschfeld": {
+          "count": 201, 
+          "sum": 1744618, 
+          "average": 8679.691542288558
+        }, 
+        "Criterion": {
+          "count": 47, 
+          "sum": 167395, 
+          "average": 3561.595744680851
+        }, 
+        "Broadhurst": {
+          "count": 221, 
+          "sum": 1576007, 
+          "average": 7131.253393665158
+        }, 
+        "Ford Center": {
+          "count": 59, 
+          "sum": 666972, 
+          "average": 11304.610169491525
+        }, 
+        "Gershwin": {
+          "count": 317, 
+          "sum": 4202476, 
+          "average": 13257.022082018928
+        }, 
+        "Belasco": {
+          "count": 163, 
+          "sum": 840955, 
+          "average": 5159.233128834356
+        }, 
+        "Helen Hayes": {
+          "count": 310, 
+          "sum": 1011515, 
+          "average": 3262.951612903226
+        }, 
+        "Cadillac Winter Garden": {
+          "count": 83, 
+          "sum": 965476, 
+          "average": 11632.240963855422
+        }, 
+        "Winter Garden": {
+          "count": 240, 
+          "sum": 2317847, 
+          "average": 9657.695833333333
+        }, 
+        "Friedman": {
+          "count": 100, 
+          "sum": 413172, 
+          "average": 4131.72
+        }, 
+        "Lunt-Fontanne": {
+          "count": 288, 
+          "sum": 2941112, 
+          "average": 10212.194444444445
         }, 
         "Virginia": {
-          "count": 424, 
-          "sum": 2979210, 
-          "average": 7026.438679245283
+          "count": 137, 
+          "sum": 953458, 
+          "average": 6959.5474452554745
         }, 
         "Cort": {
-          "count": 501, 
-          "sum": 2723053, 
-          "average": 5435.235528942116
+          "count": 175, 
+          "sum": 939668, 
+          "average": 5369.5314285714285
         }, 
         "Lyceum": {
-          "count": 544, 
-          "sum": 2260179, 
-          "average": 4154.74080882353
+          "count": 189, 
+          "sum": 799990, 
+          "average": 4232.751322751323
         }, 
         "New Amsterdam": {
-          "count": 914, 
-          "sum": 11987118, 
-          "average": 13115.00875273523
+          "count": 322, 
+          "sum": 4221063, 
+          "average": 13108.891304347826
         }, 
         "Royale": {
-          "count": 312, 
-          "sum": 1815021, 
-          "average": 5817.375
+          "count": 97, 
+          "sum": 574404, 
+          "average": 5921.690721649485
         }, 
         "Shubert": {
-          "count": 967, 
-          "sum": 9302936, 
-          "average": 9620.409513960703
+          "count": 327, 
+          "sum": 3116619, 
+          "average": 9530.944954128441
         }, 
         "Martin Beck": {
-          "count": 289, 
-          "sum": 2547719, 
-          "average": 8815.636678200692
+          "count": 91, 
+          "sum": 790219, 
+          "average": 8683.725274725275
         }, 
         "Ethel Barrymore": {
-          "count": 797, 
-          "sum": 4806166, 
-          "average": 6030.321204516938
+          "count": 264, 
+          "sum": 1565944, 
+          "average": 5931.606060606061
         }, 
         "Kit Kat Klub": {
-          "count": 35, 
-          "sum": 132975, 
-          "average": 3799.285714285714
+          "count": 12, 
+          "sum": 45590, 
+          "average": 3799.1666666666665
         }, 
         "Marquis": {
-          "count": 735, 
-          "sum": 7141376, 
-          "average": 9716.157823129251
-        }, 
-        "Ambassador": {
-          "count": 963, 
-          "sum": 6632768, 
-          "average": 6887.609553478713
-        }, 
-        "Biltmore": {
-          "count": 167, 
-          "sum": 647750, 
-          "average": 3878.74251497006
-        }, 
-        "Circle In The Square": {
-          "count": 638, 
-          "sum": 2784138, 
-          "average": 4363.852664576802
-        }, 
-        "Ford Center (Livent)": {
-          "count": 108, 
-          "sum": 1432872, 
-          "average": 13267.333333333334
-        }, 
-        "Richard Rodgers": {
-          "count": 809, 
-          "sum": 6823631, 
-          "average": 8434.648949320148
-        }, 
-        "Hilton Theatre": {
-          "count": 143, 
-          "sum": 1481753, 
-          "average": 10361.90909090909
-        }, 
-        "Plymouth": {
-          "count": 383, 
-          "sum": 2492368, 
-          "average": 6507.488250652742
-        }, 
-        "Ford Center (Tcn)": {
-          "count": 24, 
-          "sum": 250225, 
-          "average": 10426.041666666666
-        }, 
-        "Longacre": {
-          "count": 413, 
-          "sum": 2157986, 
-          "average": 5225.147699757869
-        }, 
-        "American Airlines": {
-          "count": 650, 
-          "sum": 3028297, 
-          "average": 4658.918461538461
+          "count": 258, 
+          "sum": 2524961, 
+          "average": 9786.670542635658
         }, 
         "Golden": {
-          "count": 781, 
-          "sum": 3785412, 
-          "average": 4846.8783610755445
+          "count": 242, 
+          "sum": 1175454, 
+          "average": 4857.247933884298
+        }, 
+        "Biltmore": {
+          "count": 52, 
+          "sum": 203005, 
+          "average": 3903.9423076923076
+        }, 
+        "Circle In The Square": {
+          "count": 220, 
+          "sum": 937258, 
+          "average": 4260.263636363637
+        }, 
+        "Ford Center (Livent)": {
+          "count": 40, 
+          "sum": 528581, 
+          "average": 13214.525
+        }, 
+        "Richard Rodgers": {
+          "count": 289, 
+          "sum": 2450942, 
+          "average": 8480.768166089965
+        }, 
+        "Hilton Theatre": {
+          "count": 54, 
+          "sum": 574569, 
+          "average": 10640.166666666666
+        }, 
+        "Plymouth": {
+          "count": 127, 
+          "sum": 839208, 
+          "average": 6607.937007874016
+        }, 
+        "Ford Center (Tcn)": {
+          "count": 9, 
+          "sum": 92108, 
+          "average": 10234.222222222223
+        }, 
+        "Longacre": {
+          "count": 142, 
+          "sum": 744428, 
+          "average": 5242.450704225352
+        }, 
+        "American Airlines": {
+          "count": 216, 
+          "sum": 1017736, 
+          "average": 4711.740740740741
+        }, 
+        "Ambassador": {
+          "count": 298, 
+          "sum": 2044088, 
+          "average": 6859.355704697987
         }, 
         "Stephen Sondheim": {
-          "count": 252, 
-          "sum": 1831030, 
-          "average": 7265.992063492064
+          "count": 79, 
+          "sum": 581048, 
+          "average": 7355.037974683544
         }, 
         "Studio 54 ('98)": {
-          "count": 269, 
-          "sum": 1786223, 
-          "average": 6640.2342007434945
+          "count": 95, 
+          "sum": 626391, 
+          "average": 6593.58947368421
         }, 
         "Palace": {
-          "count": 970, 
-          "sum": 10661465, 
-          "average": 10991.201030927836
+          "count": 311, 
+          "sum": 3395566, 
+          "average": 10918.218649517685
         }, 
         "Studio 54": {
-          "count": 362, 
-          "sum": 2272984, 
-          "average": 6278.96132596685
+          "count": 111, 
+          "sum": 696996, 
+          "average": 6279.243243243243
         }, 
         "August Wilson": {
-          "count": 563, 
-          "sum": 4961746, 
-          "average": 8813.047957371225
+          "count": 180, 
+          "sum": 1593374, 
+          "average": 8852.077777777778
         }, 
         "Vivian Beaumont": {
-          "count": 835, 
-          "sum": 5171262, 
-          "average": 6193.1281437125745
+          "count": 259, 
+          "sum": 1602599, 
+          "average": 6187.640926640926
         }, 
         "Schoenfeld": {
-          "count": 351, 
-          "sum": 2316006, 
-          "average": 6598.307692307692
+          "count": 112, 
+          "sum": 729857, 
+          "average": 6516.580357142857
         }, 
         "Brooks Atkinson": {
-          "count": 689, 
-          "sum": 4386508, 
-          "average": 6366.484760522497
+          "count": 241, 
+          "sum": 1536778, 
+          "average": 6376.672199170124
         }, 
         "Eugene O'Neill": {
-          "count": 874, 
-          "sum": 6486863, 
-          "average": 7422.04004576659
+          "count": 309, 
+          "sum": 2297916, 
+          "average": 7436.621359223301
         }, 
         "Walter Kerr": {
-          "count": 827, 
-          "sum": 4615862, 
-          "average": 5581.453446191052
+          "count": 253, 
+          "sum": 1400023, 
+          "average": 5533.687747035573
         }, 
         "Henry Miller (Rndabt)": {
-          "count": 26, 
-          "sum": 179091, 
-          "average": 6888.115384615385
+          "count": 12, 
+          "sum": 76306, 
+          "average": 6358.833333333333
         }, 
         "Lyric": {
-          "count": 78, 
-          "sum": 703831, 
-          "average": 9023.47435897436
+          "count": 30, 
+          "sum": 258625, 
+          "average": 8620.833333333334
         }, 
         "Booth": {
-          "count": 726, 
-          "sum": 3100036, 
-          "average": 4270.022038567493
+          "count": 256, 
+          "sum": 1081032, 
+          "average": 4222.78125
         }, 
         "Majestic": {
-          "count": 1053, 
-          "sum": 11582362, 
-          "average": 10999.394112060778
+          "count": 345, 
+          "sum": 3809248, 
+          "average": 11041.298550724638
         }, 
         "Broadway": {
-          "count": 1045, 
-          "sum": 11485549, 
-          "average": 10990.955980861245
+          "count": 372, 
+          "sum": 4040659, 
+          "average": 10861.986559139785
         }, 
         "Foxwoods": {
-          "count": 157, 
-          "sum": 2017344, 
-          "average": 12849.324840764331
+          "count": 47, 
+          "sum": 609306, 
+          "average": 12963.95744680851
         }, 
         "Henry Miller": {
-          "count": 125, 
-          "sum": 524188, 
-          "average": 4193.504
+          "count": 42, 
+          "sum": 183580, 
+          "average": 4370.952380952381
         }
       }, 
       "broadway.[0].Statistics.Capacity": {
         "Nederlander": {
-          "count": 911, 
-          "sum": 74146, 
-          "average": 81.38968166849615
+          "count": 267, 
+          "sum": 21547, 
+          "average": 80.70037453183521
         }, 
         "Jacobs": {
-          "count": 441, 
-          "sum": 35584, 
-          "average": 80.68934240362812
+          "count": 144, 
+          "sum": 11522, 
+          "average": 80.01388888888889
         }, 
         "Music Box": {
-          "count": 642, 
-          "sum": 45570, 
-          "average": 70.98130841121495
-        }, 
-        "Lunt-Fontanne": {
-          "count": 910, 
-          "sum": 77367, 
-          "average": 85.01868131868132
-        }, 
-        "Neil Simon": {
-          "count": 754, 
-          "sum": 62356, 
-          "average": 82.70026525198939
-        }, 
-        "Minskoff": {
-          "count": 854, 
-          "sum": 74893, 
-          "average": 87.69672131147541
-        }, 
-        "Imperial": {
-          "count": 903, 
-          "sum": 76267, 
-          "average": 84.45957918050941
-        }, 
-        "Al Hirschfeld": {
-          "count": 569, 
-          "sum": 44698, 
-          "average": 78.55536028119508
-        }, 
-        "Criterion": {
-          "count": 145, 
-          "sum": 13531, 
-          "average": 93.31724137931035
-        }, 
-        "Broadhurst": {
-          "count": 706, 
-          "sum": 56765, 
-          "average": 80.40368271954674
-        }, 
-        "Ford Center": {
-          "count": 193, 
-          "sum": 15185, 
-          "average": 78.67875647668394
-        }, 
-        "Gershwin": {
-          "count": 948, 
-          "sum": 86454, 
-          "average": 91.19620253164557
-        }, 
-        "Belasco": {
-          "count": 470, 
-          "sum": 32379, 
-          "average": 68.89148936170213
-        }, 
-        "Helen Hayes": {
-          "count": 868, 
-          "sum": 61812, 
-          "average": 71.21198156682027
-        }, 
-        "Cadillac Winter Garden": {
-          "count": 242, 
-          "sum": 23557, 
-          "average": 97.34297520661157
-        }, 
-        "Winter Garden": {
-          "count": 719, 
-          "sum": 59448, 
-          "average": 82.68150208623088
-        }, 
-        "Friedman": {
-          "count": 291, 
-          "sum": 23401, 
-          "average": 80.41580756013745
+          "count": 204, 
+          "sum": 14500, 
+          "average": 71.07843137254902
         }, 
         "St. James": {
-          "count": 817, 
-          "sum": 61914, 
-          "average": 75.78212974296206
+          "count": 294, 
+          "sum": 22829, 
+          "average": 77.64965986394557
+        }, 
+        "Neil Simon": {
+          "count": 253, 
+          "sum": 20552, 
+          "average": 81.23320158102767
+        }, 
+        "Minskoff": {
+          "count": 279, 
+          "sum": 24447, 
+          "average": 87.6236559139785
+        }, 
+        "Imperial": {
+          "count": 310, 
+          "sum": 26145, 
+          "average": 84.33870967741936
+        }, 
+        "Al Hirschfeld": {
+          "count": 201, 
+          "sum": 15479, 
+          "average": 77.00995024875621
+        }, 
+        "Criterion": {
+          "count": 47, 
+          "sum": 4312, 
+          "average": 91.74468085106383
+        }, 
+        "Broadhurst": {
+          "count": 221, 
+          "sum": 17537, 
+          "average": 79.3529411764706
+        }, 
+        "Ford Center": {
+          "count": 59, 
+          "sum": 4599, 
+          "average": 77.94915254237289
+        }, 
+        "Gershwin": {
+          "count": 317, 
+          "sum": 28610, 
+          "average": 90.25236593059937
+        }, 
+        "Belasco": {
+          "count": 163, 
+          "sum": 11272, 
+          "average": 69.15337423312883
+        }, 
+        "Helen Hayes": {
+          "count": 310, 
+          "sum": 22245, 
+          "average": 71.75806451612904
+        }, 
+        "Cadillac Winter Garden": {
+          "count": 83, 
+          "sum": 8077, 
+          "average": 97.3132530120482
+        }, 
+        "Winter Garden": {
+          "count": 240, 
+          "sum": 19561, 
+          "average": 81.50416666666666
+        }, 
+        "Friedman": {
+          "count": 100, 
+          "sum": 8106, 
+          "average": 81.06
+        }, 
+        "Lunt-Fontanne": {
+          "count": 288, 
+          "sum": 24637, 
+          "average": 85.54513888888889
         }, 
         "Virginia": {
-          "count": 424, 
-          "sum": 30974, 
-          "average": 73.05188679245283
+          "count": 137, 
+          "sum": 9940, 
+          "average": 72.55474452554745
         }, 
         "Cort": {
-          "count": 501, 
-          "sum": 33840, 
-          "average": 67.54491017964072
+          "count": 175, 
+          "sum": 11824, 
+          "average": 67.56571428571428
         }, 
         "Lyceum": {
-          "count": 544, 
-          "sum": 34704, 
-          "average": 63.794117647058826
+          "count": 189, 
+          "sum": 12334, 
+          "average": 65.25925925925925
         }, 
         "New Amsterdam": {
-          "count": 914, 
-          "sum": 84615, 
-          "average": 92.57658643326039
+          "count": 322, 
+          "sum": 29916, 
+          "average": 92.90683229813665
         }, 
         "Royale": {
-          "count": 312, 
-          "sum": 21994, 
-          "average": 70.49358974358974
+          "count": 97, 
+          "sum": 6985, 
+          "average": 72.01030927835052
         }, 
         "Shubert": {
-          "count": 967, 
-          "sum": 80474, 
-          "average": 83.22026887280248
+          "count": 327, 
+          "sum": 26974, 
+          "average": 82.48929663608563
         }, 
         "Martin Beck": {
-          "count": 289, 
-          "sum": 22460, 
-          "average": 77.71626297577855
+          "count": 91, 
+          "sum": 7117, 
+          "average": 78.20879120879121
         }, 
         "Ethel Barrymore": {
-          "count": 797, 
-          "sum": 58674, 
-          "average": 73.6185696361355
+          "count": 264, 
+          "sum": 19195, 
+          "average": 72.70833333333333
         }, 
         "Kit Kat Klub": {
-          "count": 35, 
-          "sum": 3364, 
-          "average": 96.11428571428571
+          "count": 12, 
+          "sum": 1151, 
+          "average": 95.91666666666667
         }, 
         "Marquis": {
-          "count": 735, 
-          "sum": 56785, 
-          "average": 77.25850340136054
-        }, 
-        "Ambassador": {
-          "count": 963, 
-          "sum": 77192, 
-          "average": 80.15784008307372
-        }, 
-        "Biltmore": {
-          "count": 167, 
-          "sum": 12953, 
-          "average": 77.562874251497
-        }, 
-        "Circle In The Square": {
-          "count": 638, 
-          "sum": 51470, 
-          "average": 80.67398119122257
-        }, 
-        "Ford Center (Livent)": {
-          "count": 108, 
-          "sum": 9916, 
-          "average": 91.81481481481481
-        }, 
-        "Richard Rodgers": {
-          "count": 809, 
-          "sum": 65133, 
-          "average": 80.51050679851669
-        }, 
-        "Hilton Theatre": {
-          "count": 143, 
-          "sum": 10159, 
-          "average": 71.04195804195804
-        }, 
-        "Plymouth": {
-          "count": 383, 
-          "sum": 29813, 
-          "average": 77.84073107049609
-        }, 
-        "Ford Center (Tcn)": {
-          "count": 24, 
-          "sum": 1761, 
-          "average": 73.375
-        }, 
-        "Longacre": {
-          "count": 413, 
-          "sum": 25876, 
-          "average": 62.653753026634384
-        }, 
-        "American Airlines": {
-          "count": 650, 
-          "sum": 54321, 
-          "average": 83.57076923076923
+          "count": 258, 
+          "sum": 19996, 
+          "average": 77.50387596899225
         }, 
         "Golden": {
-          "count": 781, 
-          "sum": 62427, 
-          "average": 79.93213828425095
+          "count": 242, 
+          "sum": 19323, 
+          "average": 79.84710743801652
+        }, 
+        "Biltmore": {
+          "count": 52, 
+          "sum": 4024, 
+          "average": 77.38461538461539
+        }, 
+        "Circle In The Square": {
+          "count": 220, 
+          "sum": 17425, 
+          "average": 79.20454545454545
+        }, 
+        "Ford Center (Livent)": {
+          "count": 40, 
+          "sum": 3693, 
+          "average": 92.325
+        }, 
+        "Richard Rodgers": {
+          "count": 289, 
+          "sum": 23369, 
+          "average": 80.86159169550173
+        }, 
+        "Hilton Theatre": {
+          "count": 54, 
+          "sum": 3877, 
+          "average": 71.79629629629629
+        }, 
+        "Plymouth": {
+          "count": 127, 
+          "sum": 10001, 
+          "average": 78.74803149606299
+        }, 
+        "Ford Center (Tcn)": {
+          "count": 9, 
+          "sum": 635, 
+          "average": 70.55555555555556
+        }, 
+        "Longacre": {
+          "count": 142, 
+          "sum": 8872, 
+          "average": 62.478873239436616
+        }, 
+        "American Airlines": {
+          "count": 216, 
+          "sum": 18255, 
+          "average": 84.51388888888889
+        }, 
+        "Ambassador": {
+          "count": 298, 
+          "sum": 23809, 
+          "average": 79.89597315436242
         }, 
         "Stephen Sondheim": {
-          "count": 252, 
-          "sum": 22527, 
-          "average": 89.39285714285714
+          "count": 79, 
+          "sum": 7229, 
+          "average": 91.50632911392405
         }, 
         "Studio 54 ('98)": {
-          "count": 269, 
-          "sum": 24347, 
-          "average": 90.5092936802974
+          "count": 95, 
+          "sum": 8570, 
+          "average": 90.21052631578948
         }, 
         "Palace": {
-          "count": 970, 
-          "sum": 79352, 
-          "average": 81.8061855670103
+          "count": 311, 
+          "sum": 25223, 
+          "average": 81.10289389067525
         }, 
         "Studio 54": {
-          "count": 362, 
-          "sum": 30101, 
-          "average": 83.15193370165746
+          "count": 111, 
+          "sum": 9172, 
+          "average": 82.63063063063063
         }, 
         "August Wilson": {
-          "count": 563, 
-          "sum": 50804, 
-          "average": 90.23801065719361
+          "count": 180, 
+          "sum": 16273, 
+          "average": 90.40555555555555
         }, 
         "Vivian Beaumont": {
-          "count": 835, 
-          "sum": 69167, 
-          "average": 82.83473053892216
+          "count": 259, 
+          "sum": 21418, 
+          "average": 82.6949806949807
         }, 
         "Schoenfeld": {
-          "count": 351, 
-          "sum": 28617, 
-          "average": 81.52991452991454
+          "count": 112, 
+          "sum": 8935, 
+          "average": 79.77678571428571
         }, 
         "Brooks Atkinson": {
-          "count": 689, 
-          "sum": 54216, 
-          "average": 78.68795355587808
+          "count": 241, 
+          "sum": 18811, 
+          "average": 78.0539419087137
         }, 
         "Eugene O'Neill": {
-          "count": 874, 
-          "sum": 76251, 
-          "average": 87.24370709382151
+          "count": 309, 
+          "sum": 26926, 
+          "average": 87.13915857605178
         }, 
         "Walter Kerr": {
-          "count": 827, 
-          "sum": 62936, 
-          "average": 76.10157194679564
+          "count": 253, 
+          "sum": 19174, 
+          "average": 75.78656126482214
         }, 
         "Henry Miller (Rndabt)": {
-          "count": 26, 
-          "sum": 2221, 
-          "average": 85.42307692307692
+          "count": 12, 
+          "sum": 932, 
+          "average": 77.66666666666667
         }, 
         "Lyric": {
-          "count": 78, 
-          "sum": 5031, 
-          "average": 64.5
+          "count": 30, 
+          "sum": 1801, 
+          "average": 60.03333333333333
         }, 
         "Booth": {
-          "count": 726, 
-          "sum": 53085, 
-          "average": 73.1198347107438
+          "count": 256, 
+          "sum": 18770, 
+          "average": 73.3203125
         }, 
         "Majestic": {
-          "count": 1053, 
-          "sum": 90299, 
-          "average": 85.75403608736941
+          "count": 345, 
+          "sum": 29746, 
+          "average": 86.22028985507247
         }, 
         "Broadway": {
-          "count": 1045, 
-          "sum": 84027, 
-          "average": 80.40861244019139
+          "count": 372, 
+          "sum": 29618, 
+          "average": 79.61827956989248
         }, 
         "Foxwoods": {
-          "count": 157, 
-          "sum": 13716, 
-          "average": 87.36305732484077
+          "count": 47, 
+          "sum": 4073, 
+          "average": 86.65957446808511
         }, 
         "Henry Miller": {
-          "count": 125, 
-          "sum": 10467, 
-          "average": 83.736
+          "count": 42, 
+          "sum": 3646, 
+          "average": 86.80952380952381
         }
       }, 
       "broadway.[0].Statistics.Performances": {
         "Nederlander": {
-          "count": 911, 
-          "sum": 7019, 
-          "average": 7.704720087815588
+          "count": 267, 
+          "sum": 2039, 
+          "average": 7.6367041198501875
         }, 
         "Jacobs": {
-          "count": 441, 
-          "sum": 3183, 
-          "average": 7.217687074829932
+          "count": 144, 
+          "sum": 1041, 
+          "average": 7.229166666666667
         }, 
         "Music Box": {
-          "count": 642, 
-          "sum": 4388, 
-          "average": 6.834890965732087
-        }, 
-        "Lunt-Fontanne": {
-          "count": 910, 
-          "sum": 6971, 
-          "average": 7.660439560439561
-        }, 
-        "Neil Simon": {
-          "count": 754, 
-          "sum": 5548, 
-          "average": 7.358090185676392
-        }, 
-        "Minskoff": {
-          "count": 854, 
-          "sum": 6575, 
-          "average": 7.6990632318501175
-        }, 
-        "Imperial": {
-          "count": 903, 
-          "sum": 6933, 
-          "average": 7.677740863787376
-        }, 
-        "Al Hirschfeld": {
-          "count": 569, 
-          "sum": 4256, 
-          "average": 7.479789103690686
-        }, 
-        "Criterion": {
-          "count": 145, 
-          "sum": 816, 
-          "average": 5.627586206896551
-        }, 
-        "Broadhurst": {
-          "count": 706, 
-          "sum": 4857, 
-          "average": 6.879603399433428
-        }, 
-        "Ford Center": {
-          "count": 193, 
-          "sum": 1509, 
-          "average": 7.818652849740933
-        }, 
-        "Gershwin": {
-          "count": 948, 
-          "sum": 7427, 
-          "average": 7.834388185654008
-        }, 
-        "Belasco": {
-          "count": 470, 
-          "sum": 2940, 
-          "average": 6.25531914893617
-        }, 
-        "Helen Hayes": {
-          "count": 868, 
-          "sum": 6255, 
-          "average": 7.206221198156682
-        }, 
-        "Cadillac Winter Garden": {
-          "count": 242, 
-          "sum": 1930, 
-          "average": 7.975206611570248
-        }, 
-        "Winter Garden": {
-          "count": 719, 
-          "sum": 5628, 
-          "average": 7.827538247566064
-        }, 
-        "Friedman": {
-          "count": 291, 
-          "sum": 1662, 
-          "average": 5.711340206185567
+          "count": 204, 
+          "sum": 1408, 
+          "average": 6.901960784313726
         }, 
         "St. James": {
-          "count": 817, 
-          "sum": 6022, 
-          "average": 7.370869033047736
+          "count": 294, 
+          "sum": 2135, 
+          "average": 7.261904761904762
+        }, 
+        "Neil Simon": {
+          "count": 253, 
+          "sum": 1846, 
+          "average": 7.296442687747035
+        }, 
+        "Minskoff": {
+          "count": 279, 
+          "sum": 2145, 
+          "average": 7.688172043010753
+        }, 
+        "Imperial": {
+          "count": 310, 
+          "sum": 2408, 
+          "average": 7.767741935483871
+        }, 
+        "Al Hirschfeld": {
+          "count": 201, 
+          "sum": 1541, 
+          "average": 7.666666666666667
+        }, 
+        "Criterion": {
+          "count": 47, 
+          "sum": 246, 
+          "average": 5.23404255319149
+        }, 
+        "Broadhurst": {
+          "count": 221, 
+          "sum": 1563, 
+          "average": 7.072398190045249
+        }, 
+        "Ford Center": {
+          "count": 59, 
+          "sum": 453, 
+          "average": 7.677966101694915
+        }, 
+        "Gershwin": {
+          "count": 317, 
+          "sum": 2517, 
+          "average": 7.94006309148265
+        }, 
+        "Belasco": {
+          "count": 163, 
+          "sum": 922, 
+          "average": 5.656441717791411
+        }, 
+        "Helen Hayes": {
+          "count": 310, 
+          "sum": 2162, 
+          "average": 6.974193548387097
+        }, 
+        "Cadillac Winter Garden": {
+          "count": 83, 
+          "sum": 663, 
+          "average": 7.9879518072289155
+        }, 
+        "Winter Garden": {
+          "count": 240, 
+          "sum": 1877, 
+          "average": 7.820833333333334
+        }, 
+        "Friedman": {
+          "count": 100, 
+          "sum": 555, 
+          "average": 5.55
+        }, 
+        "Lunt-Fontanne": {
+          "count": 288, 
+          "sum": 2195, 
+          "average": 7.621527777777778
         }, 
         "Virginia": {
-          "count": 424, 
-          "sum": 3092, 
-          "average": 7.2924528301886795
+          "count": 137, 
+          "sum": 992, 
+          "average": 7.240875912408759
         }, 
         "Cort": {
-          "count": 501, 
-          "sum": 3159, 
-          "average": 6.3053892215568865
+          "count": 175, 
+          "sum": 1077, 
+          "average": 6.154285714285714
         }, 
         "Lyceum": {
-          "count": 544, 
-          "sum": 3308, 
-          "average": 6.080882352941177
+          "count": 189, 
+          "sum": 1176, 
+          "average": 6.222222222222222
         }, 
         "New Amsterdam": {
-          "count": 914, 
-          "sum": 7186, 
-          "average": 7.862144420131291
+          "count": 322, 
+          "sum": 2519, 
+          "average": 7.8229813664596275
         }, 
         "Royale": {
-          "count": 312, 
-          "sum": 2032, 
-          "average": 6.512820512820513
+          "count": 97, 
+          "sum": 611, 
+          "average": 6.298969072164948
         }, 
         "Shubert": {
-          "count": 967, 
-          "sum": 7522, 
-          "average": 7.778697001034126
+          "count": 327, 
+          "sum": 2551, 
+          "average": 7.801223241590214
         }, 
         "Martin Beck": {
-          "count": 289, 
-          "sum": 2146, 
-          "average": 7.42560553633218
+          "count": 91, 
+          "sum": 662, 
+          "average": 7.274725274725275
         }, 
         "Ethel Barrymore": {
-          "count": 797, 
-          "sum": 5557, 
-          "average": 6.972396486825596
+          "count": 264, 
+          "sum": 1809, 
+          "average": 6.8522727272727275
         }, 
         "Kit Kat Klub": {
-          "count": 35, 
-          "sum": 233, 
-          "average": 6.6571428571428575
+          "count": 12, 
+          "sum": 77, 
+          "average": 6.416666666666667
         }, 
         "Marquis": {
-          "count": 735, 
-          "sum": 5262, 
-          "average": 7.159183673469387
-        }, 
-        "Ambassador": {
-          "count": 963, 
-          "sum": 7530, 
-          "average": 7.8193146417445485
-        }, 
-        "Biltmore": {
-          "count": 167, 
-          "sum": 916, 
-          "average": 5.485029940119761
-        }, 
-        "Circle In The Square": {
-          "count": 638, 
-          "sum": 4429, 
-          "average": 6.9420062695924765
-        }, 
-        "Ford Center (Livent)": {
-          "count": 108, 
-          "sum": 834, 
-          "average": 7.722222222222222
-        }, 
-        "Richard Rodgers": {
-          "count": 809, 
-          "sum": 5888, 
-          "average": 7.278121137206428
-        }, 
-        "Hilton Theatre": {
-          "count": 143, 
-          "sum": 1023, 
-          "average": 7.153846153846154
-        }, 
-        "Plymouth": {
-          "count": 383, 
-          "sum": 2759, 
-          "average": 7.203655352480418
-        }, 
-        "Ford Center (Tcn)": {
-          "count": 24, 
-          "sum": 161, 
-          "average": 6.708333333333333
-        }, 
-        "Longacre": {
-          "count": 413, 
-          "sum": 2654, 
-          "average": 6.426150121065375
-        }, 
-        "American Airlines": {
-          "count": 650, 
-          "sum": 3604, 
-          "average": 5.544615384615384
+          "count": 258, 
+          "sum": 1890, 
+          "average": 7.325581395348837
         }, 
         "Golden": {
-          "count": 781, 
-          "sum": 5586, 
-          "average": 7.152368758002561
+          "count": 242, 
+          "sum": 1756, 
+          "average": 7.256198347107438
+        }, 
+        "Biltmore": {
+          "count": 52, 
+          "sum": 284, 
+          "average": 5.461538461538462
+        }, 
+        "Circle In The Square": {
+          "count": 220, 
+          "sum": 1530, 
+          "average": 6.954545454545454
+        }, 
+        "Ford Center (Livent)": {
+          "count": 40, 
+          "sum": 312, 
+          "average": 7.8
+        }, 
+        "Richard Rodgers": {
+          "count": 289, 
+          "sum": 2073, 
+          "average": 7.173010380622838
+        }, 
+        "Hilton Theatre": {
+          "count": 54, 
+          "sum": 394, 
+          "average": 7.296296296296297
+        }, 
+        "Plymouth": {
+          "count": 127, 
+          "sum": 908, 
+          "average": 7.149606299212598
+        }, 
+        "Ford Center (Tcn)": {
+          "count": 9, 
+          "sum": 64, 
+          "average": 7.111111111111111
+        }, 
+        "Longacre": {
+          "count": 142, 
+          "sum": 870, 
+          "average": 6.126760563380282
+        }, 
+        "American Airlines": {
+          "count": 216, 
+          "sum": 1232, 
+          "average": 5.703703703703703
+        }, 
+        "Ambassador": {
+          "count": 298, 
+          "sum": 2321, 
+          "average": 7.7885906040268456
         }, 
         "Stephen Sondheim": {
-          "count": 252, 
-          "sum": 1850, 
-          "average": 7.341269841269841
+          "count": 79, 
+          "sum": 577, 
+          "average": 7.30379746835443
         }, 
         "Studio 54 ('98)": {
-          "count": 269, 
-          "sum": 2144, 
-          "average": 7.970260223048327
+          "count": 95, 
+          "sum": 755, 
+          "average": 7.947368421052632
         }, 
         "Palace": {
-          "count": 970, 
-          "sum": 7354, 
-          "average": 7.581443298969072
+          "count": 311, 
+          "sum": 2354, 
+          "average": 7.569131832797428
         }, 
         "Studio 54": {
-          "count": 362, 
-          "sum": 2192, 
-          "average": 6.05524861878453
+          "count": 111, 
+          "sum": 652, 
+          "average": 5.873873873873874
         }, 
         "August Wilson": {
-          "count": 563, 
-          "sum": 4466, 
-          "average": 7.932504440497335
+          "count": 180, 
+          "sum": 1438, 
+          "average": 7.988888888888889
         }, 
         "Vivian Beaumont": {
-          "count": 835, 
-          "sum": 5180, 
-          "average": 6.203592814371257
+          "count": 259, 
+          "sum": 1653, 
+          "average": 6.382239382239383
         }, 
         "Schoenfeld": {
-          "count": 351, 
-          "sum": 2167, 
-          "average": 6.1737891737891735
+          "count": 112, 
+          "sum": 734, 
+          "average": 6.553571428571429
         }, 
         "Brooks Atkinson": {
-          "count": 689, 
-          "sum": 4722, 
-          "average": 6.853410740203193
+          "count": 241, 
+          "sum": 1651, 
+          "average": 6.850622406639004
         }, 
         "Eugene O'Neill": {
-          "count": 874, 
-          "sum": 6554, 
-          "average": 7.498855835240275
+          "count": 309, 
+          "sum": 2361, 
+          "average": 7.640776699029126
         }, 
         "Walter Kerr": {
-          "count": 827, 
-          "sum": 5991, 
-          "average": 7.244256348246675
+          "count": 253, 
+          "sum": 1808, 
+          "average": 7.146245059288537
         }, 
         "Henry Miller (Rndabt)": {
-          "count": 26, 
-          "sum": 137, 
-          "average": 5.269230769230769
+          "count": 12, 
+          "sum": 57, 
+          "average": 4.75
         }, 
         "Lyric": {
-          "count": 78, 
-          "sum": 529, 
-          "average": 6.782051282051282
+          "count": 30, 
+          "sum": 210, 
+          "average": 7.0
         }, 
         "Booth": {
-          "count": 726, 
-          "sum": 4756, 
-          "average": 6.550964187327824
+          "count": 256, 
+          "sum": 1690, 
+          "average": 6.6015625
         }, 
         "Majestic": {
-          "count": 1053, 
-          "sum": 8400, 
-          "average": 7.977207977207978
+          "count": 345, 
+          "sum": 2746, 
+          "average": 7.959420289855072
         }, 
         "Broadway": {
-          "count": 1045, 
-          "sum": 7946, 
-          "average": 7.603827751196172
+          "count": 372, 
+          "sum": 2797, 
+          "average": 7.518817204301075
         }, 
         "Foxwoods": {
-          "count": 157, 
-          "sum": 1039, 
-          "average": 6.617834394904459
+          "count": 47, 
+          "sum": 341, 
+          "average": 7.25531914893617
         }, 
         "Henry Miller": {
-          "count": 125, 
-          "sum": 965, 
-          "average": 7.72
+          "count": 42, 
+          "sum": 323, 
+          "average": 7.690476190476191
         }
       }, 
       "broadway.[0].Date.Year": {
         "Nederlander": {
-          "count": 911, 
-          "sum": 1826676, 
-          "average": 2005.132821075741
+          "count": 267, 
+          "sum": 535293, 
+          "average": 2004.8426966292134
         }, 
         "Jacobs": {
-          "count": 441, 
-          "sum": 886808, 
-          "average": 2010.9024943310658
+          "count": 144, 
+          "sum": 289575, 
+          "average": 2010.9375
         }, 
         "Music Box": {
-          "count": 642, 
-          "sum": 1288379, 
-          "average": 2006.8208722741433
-        }, 
-        "Lunt-Fontanne": {
-          "count": 910, 
-          "sum": 1825640, 
-          "average": 2006.1978021978023
-        }, 
-        "Neil Simon": {
-          "count": 754, 
-          "sum": 1511473, 
-          "average": 2004.606100795756
-        }, 
-        "Minskoff": {
-          "count": 854, 
-          "sum": 1713005, 
-          "average": 2005.860655737705
-        }, 
-        "Imperial": {
-          "count": 903, 
-          "sum": 1811153, 
-          "average": 2005.7065337763013
-        }, 
-        "Al Hirschfeld": {
-          "count": 569, 
-          "sum": 1143542, 
-          "average": 2009.7398945518453
-        }, 
-        "Criterion": {
-          "count": 145, 
-          "sum": 289617, 
-          "average": 1997.3586206896553
-        }, 
-        "Broadhurst": {
-          "count": 706, 
-          "sum": 1416178, 
-          "average": 2005.9178470254958
-        }, 
-        "Ford Center": {
-          "count": 193, 
-          "sum": 386506, 
-          "average": 2002.6217616580311
-        }, 
-        "Gershwin": {
-          "count": 948, 
-          "sum": 1901628, 
-          "average": 2005.9367088607594
-        }, 
-        "Belasco": {
-          "count": 470, 
-          "sum": 942828, 
-          "average": 2006.0170212765956
-        }, 
-        "Helen Hayes": {
-          "count": 868, 
-          "sum": 1741067, 
-          "average": 2005.8375576036867
-        }, 
-        "Cadillac Winter Garden": {
-          "count": 242, 
-          "sum": 485004, 
-          "average": 2004.1487603305786
-        }, 
-        "Winter Garden": {
-          "count": 719, 
-          "sum": 1442264, 
-          "average": 2005.9304589707929
-        }, 
-        "Friedman": {
-          "count": 291, 
-          "sum": 585544, 
-          "average": 2012.1786941580756
+          "count": 204, 
+          "sum": 409449, 
+          "average": 2007.1029411764705
         }, 
         "St. James": {
-          "count": 817, 
-          "sum": 1638404, 
-          "average": 2005.390452876377
+          "count": 294, 
+          "sum": 589560, 
+          "average": 2005.3061224489795
+        }, 
+        "Neil Simon": {
+          "count": 253, 
+          "sum": 507195, 
+          "average": 2004.7233201581028
+        }, 
+        "Minskoff": {
+          "count": 279, 
+          "sum": 559521, 
+          "average": 2005.4516129032259
+        }, 
+        "Imperial": {
+          "count": 310, 
+          "sum": 621752, 
+          "average": 2005.651612903226
+        }, 
+        "Al Hirschfeld": {
+          "count": 201, 
+          "sum": 403911, 
+          "average": 2009.5074626865671
+        }, 
+        "Criterion": {
+          "count": 47, 
+          "sum": 93871, 
+          "average": 1997.2553191489362
+        }, 
+        "Broadhurst": {
+          "count": 221, 
+          "sum": 443304, 
+          "average": 2005.9004524886877
+        }, 
+        "Ford Center": {
+          "count": 59, 
+          "sum": 118155, 
+          "average": 2002.6271186440679
+        }, 
+        "Gershwin": {
+          "count": 317, 
+          "sum": 635875, 
+          "average": 2005.9148264984228
+        }, 
+        "Belasco": {
+          "count": 163, 
+          "sum": 327039, 
+          "average": 2006.3742331288342
+        }, 
+        "Helen Hayes": {
+          "count": 310, 
+          "sum": 621720, 
+          "average": 2005.5483870967741
+        }, 
+        "Cadillac Winter Garden": {
+          "count": 83, 
+          "sum": 166341, 
+          "average": 2004.1084337349398
+        }, 
+        "Winter Garden": {
+          "count": 240, 
+          "sum": 481320, 
+          "average": 2005.5
+        }, 
+        "Friedman": {
+          "count": 100, 
+          "sum": 201231, 
+          "average": 2012.31
+        }, 
+        "Lunt-Fontanne": {
+          "count": 288, 
+          "sum": 577825, 
+          "average": 2006.3368055555557
         }, 
         "Virginia": {
-          "count": 424, 
-          "sum": 847678, 
-          "average": 1999.2405660377358
+          "count": 137, 
+          "sum": 273933, 
+          "average": 1999.5109489051094
         }, 
         "Cort": {
-          "count": 501, 
-          "sum": 1005742, 
-          "average": 2007.4690618762475
+          "count": 175, 
+          "sum": 351381, 
+          "average": 2007.8914285714286
         }, 
         "Lyceum": {
-          "count": 544, 
-          "sum": 1091686, 
-          "average": 2006.7757352941176
+          "count": 189, 
+          "sum": 379309, 
+          "average": 2006.9259259259259
         }, 
         "New Amsterdam": {
-          "count": 914, 
-          "sum": 1833780, 
-          "average": 2006.3238512035011
+          "count": 322, 
+          "sum": 646015, 
+          "average": 2006.2577639751553
         }, 
         "Royale": {
-          "count": 312, 
-          "sum": 624036, 
-          "average": 2000.1153846153845
+          "count": 97, 
+          "sum": 194006, 
+          "average": 2000.0618556701031
         }, 
         "Shubert": {
-          "count": 967, 
-          "sum": 1939744, 
-          "average": 2005.9400206825233
+          "count": 327, 
+          "sum": 655934, 
+          "average": 2005.9143730886851
         }, 
         "Martin Beck": {
-          "count": 289, 
-          "sum": 577849, 
-          "average": 1999.477508650519
+          "count": 91, 
+          "sum": 181946, 
+          "average": 1999.4065934065934
         }, 
         "Ethel Barrymore": {
-          "count": 797, 
-          "sum": 1597502, 
-          "average": 2004.3939774153073
+          "count": 264, 
+          "sum": 529093, 
+          "average": 2004.1401515151515
         }, 
         "Kit Kat Klub": {
-          "count": 35, 
-          "sum": 69930, 
+          "count": 12, 
+          "sum": 23976, 
           "average": 1998.0
         }, 
         "Marquis": {
-          "count": 735, 
-          "sum": 1473493, 
-          "average": 2004.752380952381
+          "count": 258, 
+          "sum": 517131, 
+          "average": 2004.3837209302326
         }, 
-        "Ambassador": {
-          "count": 963, 
-          "sum": 1932228, 
-          "average": 2006.4672897196263
+        "Golden": {
+          "count": 242, 
+          "sum": 485290, 
+          "average": 2005.3305785123966
         }, 
         "Biltmore": {
-          "count": 167, 
-          "sum": 334946, 
-          "average": 2005.6646706586826
+          "count": 52, 
+          "sum": 104300, 
+          "average": 2005.7692307692307
         }, 
         "Circle In The Square": {
-          "count": 638, 
-          "sum": 1279884, 
-          "average": 2006.087774294671
+          "count": 220, 
+          "sum": 441387, 
+          "average": 2006.3045454545454
         }, 
         "Ford Center (Livent)": {
-          "count": 108, 
-          "sum": 215841, 
-          "average": 1998.5277777777778
+          "count": 40, 
+          "sum": 79939, 
+          "average": 1998.475
         }, 
         "Richard Rodgers": {
-          "count": 809, 
-          "sum": 1623130, 
-          "average": 2006.3411619283065
+          "count": 289, 
+          "sum": 579789, 
+          "average": 2006.190311418685
         }, 
         "Hilton Theatre": {
-          "count": 143, 
-          "sum": 286953, 
-          "average": 2006.6643356643356
+          "count": 54, 
+          "sum": 108364, 
+          "average": 2006.7407407407406
         }, 
         "Plymouth": {
-          "count": 383, 
-          "sum": 766056, 
-          "average": 2000.1462140992166
+          "count": 127, 
+          "sum": 254014, 
+          "average": 2000.1102362204724
         }, 
         "Ford Center (Tcn)": {
-          "count": 24, 
-          "sum": 48000, 
+          "count": 9, 
+          "sum": 18000, 
           "average": 2000.0
         }, 
         "Longacre": {
-          "count": 413, 
-          "sum": 829174, 
-          "average": 2007.685230024213
+          "count": 142, 
+          "sum": 285165, 
+          "average": 2008.2042253521126
         }, 
         "American Airlines": {
-          "count": 650, 
-          "sum": 1304996, 
-          "average": 2007.686153846154
+          "count": 216, 
+          "sum": 433595, 
+          "average": 2007.3842592592594
         }, 
-        "Golden": {
-          "count": 781, 
-          "sum": 1566490, 
-          "average": 2005.7490396927017
+        "Ambassador": {
+          "count": 298, 
+          "sum": 597871, 
+          "average": 2006.278523489933
         }, 
         "Stephen Sondheim": {
-          "count": 252, 
-          "sum": 507390, 
-          "average": 2013.452380952381
+          "count": 79, 
+          "sum": 159085, 
+          "average": 2013.73417721519
         }, 
         "Studio 54 ('98)": {
-          "count": 269, 
-          "sum": 538250, 
-          "average": 2000.9293680297399
+          "count": 95, 
+          "sum": 190103, 
+          "average": 2001.0842105263157
         }, 
         "Palace": {
-          "count": 970, 
-          "sum": 1944116, 
-          "average": 2004.2432989690722
+          "count": 311, 
+          "sum": 623507, 
+          "average": 2004.8456591639872
         }, 
         "Studio 54": {
-          "count": 362, 
-          "sum": 727619, 
-          "average": 2009.9972375690609
+          "count": 111, 
+          "sum": 223081, 
+          "average": 2009.7387387387387
         }, 
         "August Wilson": {
-          "count": 563, 
-          "sum": 1132042, 
-          "average": 2010.7317939609236
+          "count": 180, 
+          "sum": 361917, 
+          "average": 2010.65
         }, 
         "Vivian Beaumont": {
-          "count": 835, 
-          "sum": 1674788, 
-          "average": 2005.734131736527
+          "count": 259, 
+          "sum": 519691, 
+          "average": 2006.5289575289576
         }, 
         "Schoenfeld": {
-          "count": 351, 
-          "sum": 705614, 
-          "average": 2010.2962962962963
+          "count": 112, 
+          "sum": 225083, 
+          "average": 2009.669642857143
         }, 
         "Brooks Atkinson": {
-          "count": 689, 
-          "sum": 1382733, 
-          "average": 2006.8693759071118
+          "count": 241, 
+          "sum": 483633, 
+          "average": 2006.7759336099584
         }, 
         "Eugene O'Neill": {
-          "count": 874, 
-          "sum": 1753619, 
-          "average": 2006.429061784897
+          "count": 309, 
+          "sum": 620158, 
+          "average": 2006.9838187702264
         }, 
         "Walter Kerr": {
-          "count": 827, 
-          "sum": 1658678, 
-          "average": 2005.6565900846433
+          "count": 253, 
+          "sum": 507400, 
+          "average": 2005.5335968379447
         }, 
         "Henry Miller (Rndabt)": {
-          "count": 26, 
-          "sum": 52244, 
-          "average": 2009.3846153846155
+          "count": 12, 
+          "sum": 24114, 
+          "average": 2009.5
         }, 
         "Lyric": {
-          "count": 78, 
-          "sum": 157174, 
-          "average": 2015.051282051282
+          "count": 30, 
+          "sum": 60449, 
+          "average": 2014.9666666666667
         }, 
         "Booth": {
-          "count": 726, 
-          "sum": 1455984, 
-          "average": 2005.4876033057851
+          "count": 256, 
+          "sum": 513378, 
+          "average": 2005.3828125
         }, 
         "Majestic": {
-          "count": 1053, 
-          "sum": 2112336, 
-          "average": 2006.017094017094
+          "count": 345, 
+          "sum": 692159, 
+          "average": 2006.2579710144928
         }, 
         "Broadway": {
-          "count": 1045, 
-          "sum": 2092945, 
-          "average": 2002.8181818181818
+          "count": 372, 
+          "sum": 745105, 
+          "average": 2002.970430107527
         }, 
         "Foxwoods": {
-          "count": 157, 
-          "sum": 315878, 
-          "average": 2011.9617834394905
+          "count": 47, 
+          "sum": 94569, 
+          "average": 2012.1063829787233
         }, 
         "Henry Miller": {
-          "count": 125, 
-          "sum": 250290, 
-          "average": 2002.32
+          "count": 42, 
+          "sum": 84092, 
+          "average": 2002.1904761904761
         }
       }, 
       "broadway.[0].Date.Day": {
         "Nederlander": {
-          "count": 911, 
-          "sum": 14255, 
-          "average": 15.647639956092206
+          "count": 267, 
+          "sum": 3860, 
+          "average": 14.456928838951312
         }, 
         "Jacobs": {
-          "count": 441, 
-          "sum": 6932, 
-          "average": 15.718820861678005
+          "count": 144, 
+          "sum": 2436, 
+          "average": 16.916666666666668
         }, 
         "Music Box": {
-          "count": 642, 
-          "sum": 10069, 
-          "average": 15.68380062305296
-        }, 
-        "Lunt-Fontanne": {
-          "count": 910, 
-          "sum": 14408, 
-          "average": 15.832967032967034
-        }, 
-        "Neil Simon": {
-          "count": 754, 
-          "sum": 11851, 
-          "average": 15.717506631299734
-        }, 
-        "Minskoff": {
-          "count": 854, 
-          "sum": 13327, 
-          "average": 15.605386416861826
-        }, 
-        "Imperial": {
-          "count": 903, 
-          "sum": 14135, 
-          "average": 15.653377630121817
-        }, 
-        "Al Hirschfeld": {
-          "count": 569, 
-          "sum": 8978, 
-          "average": 15.778558875219684
-        }, 
-        "Criterion": {
-          "count": 145, 
-          "sum": 2226, 
-          "average": 15.351724137931035
-        }, 
-        "Broadhurst": {
-          "count": 706, 
-          "sum": 10996, 
-          "average": 15.575070821529746
-        }, 
-        "Ford Center": {
-          "count": 193, 
-          "sum": 3060, 
-          "average": 15.854922279792746
-        }, 
-        "Gershwin": {
-          "count": 948, 
-          "sum": 14814, 
-          "average": 15.626582278481013
-        }, 
-        "Belasco": {
-          "count": 470, 
-          "sum": 7255, 
-          "average": 15.436170212765957
-        }, 
-        "Helen Hayes": {
-          "count": 868, 
-          "sum": 13772, 
-          "average": 15.866359447004609
-        }, 
-        "Cadillac Winter Garden": {
-          "count": 242, 
-          "sum": 3796, 
-          "average": 15.685950413223141
-        }, 
-        "Winter Garden": {
-          "count": 719, 
-          "sum": 11344, 
-          "average": 15.777468706536856
-        }, 
-        "Friedman": {
-          "count": 291, 
-          "sum": 4540, 
-          "average": 15.601374570446735
+          "count": 204, 
+          "sum": 3296, 
+          "average": 16.15686274509804
         }, 
         "St. James": {
-          "count": 817, 
-          "sum": 12911, 
-          "average": 15.802937576499389
+          "count": 294, 
+          "sum": 4513, 
+          "average": 15.350340136054422
+        }, 
+        "Neil Simon": {
+          "count": 253, 
+          "sum": 4101, 
+          "average": 16.209486166007906
+        }, 
+        "Minskoff": {
+          "count": 279, 
+          "sum": 4475, 
+          "average": 16.03942652329749
+        }, 
+        "Imperial": {
+          "count": 310, 
+          "sum": 4912, 
+          "average": 15.845161290322581
+        }, 
+        "Al Hirschfeld": {
+          "count": 201, 
+          "sum": 3103, 
+          "average": 15.437810945273633
+        }, 
+        "Criterion": {
+          "count": 47, 
+          "sum": 618, 
+          "average": 13.148936170212766
+        }, 
+        "Broadhurst": {
+          "count": 221, 
+          "sum": 3299, 
+          "average": 14.927601809954751
+        }, 
+        "Ford Center": {
+          "count": 59, 
+          "sum": 944, 
+          "average": 16.0
+        }, 
+        "Gershwin": {
+          "count": 317, 
+          "sum": 4759, 
+          "average": 15.012618296529968
+        }, 
+        "Belasco": {
+          "count": 163, 
+          "sum": 2548, 
+          "average": 15.631901840490798
+        }, 
+        "Helen Hayes": {
+          "count": 310, 
+          "sum": 4724, 
+          "average": 15.238709677419354
+        }, 
+        "Cadillac Winter Garden": {
+          "count": 83, 
+          "sum": 1336, 
+          "average": 16.096385542168676
+        }, 
+        "Winter Garden": {
+          "count": 240, 
+          "sum": 3768, 
+          "average": 15.7
+        }, 
+        "Friedman": {
+          "count": 100, 
+          "sum": 1557, 
+          "average": 15.57
+        }, 
+        "Lunt-Fontanne": {
+          "count": 288, 
+          "sum": 4630, 
+          "average": 16.07638888888889
         }, 
         "Virginia": {
-          "count": 424, 
-          "sum": 6632, 
-          "average": 15.641509433962264
+          "count": 137, 
+          "sum": 2091, 
+          "average": 15.262773722627736
         }, 
         "Cort": {
-          "count": 501, 
-          "sum": 7912, 
-          "average": 15.792415169660678
+          "count": 175, 
+          "sum": 2616, 
+          "average": 14.948571428571428
         }, 
         "Lyceum": {
-          "count": 544, 
-          "sum": 8586, 
-          "average": 15.783088235294118
+          "count": 189, 
+          "sum": 2995, 
+          "average": 15.846560846560847
         }, 
         "New Amsterdam": {
-          "count": 914, 
-          "sum": 14413, 
-          "average": 15.769146608315099
+          "count": 322, 
+          "sum": 5281, 
+          "average": 16.400621118012424
         }, 
         "Royale": {
-          "count": 312, 
-          "sum": 4909, 
-          "average": 15.73397435897436
+          "count": 97, 
+          "sum": 1615, 
+          "average": 16.649484536082475
         }, 
         "Shubert": {
-          "count": 967, 
-          "sum": 15253, 
-          "average": 15.773526370217166
+          "count": 327, 
+          "sum": 5004, 
+          "average": 15.302752293577981
         }, 
         "Martin Beck": {
-          "count": 289, 
-          "sum": 4545, 
-          "average": 15.726643598615917
+          "count": 91, 
+          "sum": 1440, 
+          "average": 15.824175824175825
         }, 
         "Ethel Barrymore": {
-          "count": 797, 
-          "sum": 12460, 
-          "average": 15.633626097867001
+          "count": 264, 
+          "sum": 4218, 
+          "average": 15.977272727272727
         }, 
         "Kit Kat Klub": {
-          "count": 35, 
-          "sum": 551, 
-          "average": 15.742857142857142
+          "count": 12, 
+          "sum": 205, 
+          "average": 17.083333333333332
         }, 
         "Marquis": {
-          "count": 735, 
-          "sum": 11555, 
-          "average": 15.72108843537415
-        }, 
-        "Ambassador": {
-          "count": 963, 
-          "sum": 15143, 
-          "average": 15.724818276220144
-        }, 
-        "Biltmore": {
-          "count": 167, 
-          "sum": 2674, 
-          "average": 16.01197604790419
-        }, 
-        "Circle In The Square": {
-          "count": 638, 
-          "sum": 10013, 
-          "average": 15.69435736677116
-        }, 
-        "Ford Center (Livent)": {
-          "count": 108, 
-          "sum": 1699, 
-          "average": 15.731481481481481
-        }, 
-        "Richard Rodgers": {
-          "count": 809, 
-          "sum": 12688, 
-          "average": 15.683559950556242
-        }, 
-        "Hilton Theatre": {
-          "count": 143, 
-          "sum": 2261, 
-          "average": 15.811188811188812
-        }, 
-        "Plymouth": {
-          "count": 383, 
-          "sum": 6047, 
-          "average": 15.788511749347258
-        }, 
-        "Ford Center (Tcn)": {
-          "count": 24, 
-          "sum": 383, 
-          "average": 15.958333333333334
-        }, 
-        "Longacre": {
-          "count": 413, 
-          "sum": 6382, 
-          "average": 15.45278450363196
-        }, 
-        "American Airlines": {
-          "count": 650, 
-          "sum": 10248, 
-          "average": 15.766153846153847
+          "count": 258, 
+          "sum": 4132, 
+          "average": 16.015503875968992
         }, 
         "Golden": {
-          "count": 781, 
-          "sum": 12300, 
-          "average": 15.749039692701665
+          "count": 242, 
+          "sum": 3739, 
+          "average": 15.450413223140496
+        }, 
+        "Biltmore": {
+          "count": 52, 
+          "sum": 723, 
+          "average": 13.903846153846153
+        }, 
+        "Circle In The Square": {
+          "count": 220, 
+          "sum": 3408, 
+          "average": 15.49090909090909
+        }, 
+        "Ford Center (Livent)": {
+          "count": 40, 
+          "sum": 655, 
+          "average": 16.375
+        }, 
+        "Richard Rodgers": {
+          "count": 289, 
+          "sum": 4639, 
+          "average": 16.05190311418685
+        }, 
+        "Hilton Theatre": {
+          "count": 54, 
+          "sum": 908, 
+          "average": 16.814814814814813
+        }, 
+        "Plymouth": {
+          "count": 127, 
+          "sum": 2059, 
+          "average": 16.212598425196852
+        }, 
+        "Ford Center (Tcn)": {
+          "count": 9, 
+          "sum": 112, 
+          "average": 12.444444444444445
+        }, 
+        "Longacre": {
+          "count": 142, 
+          "sum": 2262, 
+          "average": 15.929577464788732
+        }, 
+        "American Airlines": {
+          "count": 216, 
+          "sum": 3435, 
+          "average": 15.902777777777779
+        }, 
+        "Ambassador": {
+          "count": 298, 
+          "sum": 4617, 
+          "average": 15.493288590604028
         }, 
         "Stephen Sondheim": {
-          "count": 252, 
-          "sum": 3941, 
-          "average": 15.63888888888889
+          "count": 79, 
+          "sum": 1277, 
+          "average": 16.164556962025316
         }, 
         "Studio 54 ('98)": {
-          "count": 269, 
-          "sum": 4260, 
-          "average": 15.8364312267658
+          "count": 95, 
+          "sum": 1531, 
+          "average": 16.11578947368421
         }, 
         "Palace": {
-          "count": 970, 
-          "sum": 15245, 
-          "average": 15.716494845360824
+          "count": 311, 
+          "sum": 5124, 
+          "average": 16.475884244372992
         }, 
         "Studio 54": {
-          "count": 362, 
-          "sum": 5662, 
-          "average": 15.640883977900552
+          "count": 111, 
+          "sum": 1668, 
+          "average": 15.027027027027026
         }, 
         "August Wilson": {
-          "count": 563, 
-          "sum": 8840, 
-          "average": 15.701598579040853
+          "count": 180, 
+          "sum": 2757, 
+          "average": 15.316666666666666
         }, 
         "Vivian Beaumont": {
-          "count": 835, 
-          "sum": 13136, 
-          "average": 15.731736526946108
+          "count": 259, 
+          "sum": 3949, 
+          "average": 15.247104247104247
         }, 
         "Schoenfeld": {
-          "count": 351, 
-          "sum": 5491, 
-          "average": 15.643874643874645
+          "count": 112, 
+          "sum": 1764, 
+          "average": 15.75
         }, 
         "Brooks Atkinson": {
-          "count": 689, 
-          "sum": 10875, 
-          "average": 15.783744557329463
+          "count": 241, 
+          "sum": 3780, 
+          "average": 15.684647302904564
         }, 
         "Eugene O'Neill": {
-          "count": 874, 
-          "sum": 13839, 
-          "average": 15.834096109839816
+          "count": 309, 
+          "sum": 4843, 
+          "average": 15.673139158576053
         }, 
         "Walter Kerr": {
-          "count": 827, 
-          "sum": 12969, 
-          "average": 15.6819830713422
+          "count": 253, 
+          "sum": 3977, 
+          "average": 15.719367588932807
         }, 
         "Henry Miller (Rndabt)": {
-          "count": 26, 
-          "sum": 415, 
-          "average": 15.961538461538462
+          "count": 12, 
+          "sum": 209, 
+          "average": 17.416666666666668
         }, 
         "Lyric": {
-          "count": 78, 
-          "sum": 1232, 
-          "average": 15.794871794871796
+          "count": 30, 
+          "sum": 464, 
+          "average": 15.466666666666667
         }, 
         "Booth": {
-          "count": 726, 
-          "sum": 11443, 
-          "average": 15.761707988980715
+          "count": 256, 
+          "sum": 4264, 
+          "average": 16.65625
         }, 
         "Majestic": {
-          "count": 1053, 
-          "sum": 16531, 
-          "average": 15.698955365622032
+          "count": 345, 
+          "sum": 5404, 
+          "average": 15.663768115942029
         }, 
         "Broadway": {
-          "count": 1045, 
-          "sum": 16437, 
-          "average": 15.729186602870813
+          "count": 372, 
+          "sum": 5885, 
+          "average": 15.81989247311828
         }, 
         "Foxwoods": {
-          "count": 157, 
-          "sum": 2452, 
-          "average": 15.617834394904458
+          "count": 47, 
+          "sum": 830, 
+          "average": 17.659574468085108
         }, 
         "Henry Miller": {
-          "count": 125, 
-          "sum": 1960, 
-          "average": 15.68
+          "count": 42, 
+          "sum": 684, 
+          "average": 16.285714285714285
         }
       }, 
       "broadway.[0].Date.Month": {
         "Nederlander": {
-          "count": 911, 
-          "sum": 5836, 
-          "average": 6.4061470911086715
+          "count": 267, 
+          "sum": 1688, 
+          "average": 6.322097378277154
         }, 
         "Jacobs": {
-          "count": 441, 
-          "sum": 2900, 
-          "average": 6.575963718820861
+          "count": 144, 
+          "sum": 965, 
+          "average": 6.701388888888889
         }, 
         "Music Box": {
-          "count": 642, 
-          "sum": 4167, 
-          "average": 6.490654205607477
-        }, 
-        "Lunt-Fontanne": {
-          "count": 910, 
-          "sum": 5904, 
-          "average": 6.487912087912088
-        }, 
-        "Neil Simon": {
-          "count": 754, 
-          "sum": 5254, 
-          "average": 6.968169761273209
-        }, 
-        "Minskoff": {
-          "count": 854, 
-          "sum": 5608, 
-          "average": 6.566744730679157
-        }, 
-        "Imperial": {
-          "count": 903, 
-          "sum": 5861, 
-          "average": 6.490586932447398
-        }, 
-        "Al Hirschfeld": {
-          "count": 569, 
-          "sum": 3801, 
-          "average": 6.680140597539543
-        }, 
-        "Criterion": {
-          "count": 145, 
-          "sum": 945, 
-          "average": 6.517241379310345
-        }, 
-        "Broadhurst": {
-          "count": 706, 
-          "sum": 4686, 
-          "average": 6.637393767705382
-        }, 
-        "Ford Center": {
-          "count": 193, 
-          "sum": 1330, 
-          "average": 6.891191709844559
-        }, 
-        "Gershwin": {
-          "count": 948, 
-          "sum": 6202, 
-          "average": 6.542194092827004
-        }, 
-        "Belasco": {
-          "count": 470, 
-          "sum": 2918, 
-          "average": 6.208510638297873
-        }, 
-        "Helen Hayes": {
-          "count": 868, 
-          "sum": 5812, 
-          "average": 6.695852534562212
-        }, 
-        "Cadillac Winter Garden": {
-          "count": 242, 
-          "sum": 1640, 
-          "average": 6.776859504132231
-        }, 
-        "Winter Garden": {
-          "count": 719, 
-          "sum": 4483, 
-          "average": 6.235048678720445
-        }, 
-        "Friedman": {
-          "count": 291, 
-          "sum": 1759, 
-          "average": 6.0446735395189
+          "count": 204, 
+          "sum": 1287, 
+          "average": 6.3088235294117645
         }, 
         "St. James": {
-          "count": 817, 
-          "sum": 5496, 
-          "average": 6.727050183598531
+          "count": 294, 
+          "sum": 2033, 
+          "average": 6.914965986394558
+        }, 
+        "Neil Simon": {
+          "count": 253, 
+          "sum": 1769, 
+          "average": 6.992094861660079
+        }, 
+        "Minskoff": {
+          "count": 279, 
+          "sum": 1878, 
+          "average": 6.731182795698925
+        }, 
+        "Imperial": {
+          "count": 310, 
+          "sum": 2012, 
+          "average": 6.490322580645161
+        }, 
+        "Al Hirschfeld": {
+          "count": 201, 
+          "sum": 1289, 
+          "average": 6.412935323383085
+        }, 
+        "Criterion": {
+          "count": 47, 
+          "sum": 324, 
+          "average": 6.8936170212765955
+        }, 
+        "Broadhurst": {
+          "count": 221, 
+          "sum": 1428, 
+          "average": 6.461538461538462
+        }, 
+        "Ford Center": {
+          "count": 59, 
+          "sum": 408, 
+          "average": 6.915254237288136
+        }, 
+        "Gershwin": {
+          "count": 317, 
+          "sum": 2014, 
+          "average": 6.353312302839116
+        }, 
+        "Belasco": {
+          "count": 163, 
+          "sum": 1025, 
+          "average": 6.288343558282208
+        }, 
+        "Helen Hayes": {
+          "count": 310, 
+          "sum": 2039, 
+          "average": 6.577419354838709
+        }, 
+        "Cadillac Winter Garden": {
+          "count": 83, 
+          "sum": 537, 
+          "average": 6.469879518072289
+        }, 
+        "Winter Garden": {
+          "count": 240, 
+          "sum": 1427, 
+          "average": 5.945833333333334
+        }, 
+        "Friedman": {
+          "count": 100, 
+          "sum": 576, 
+          "average": 5.76
+        }, 
+        "Lunt-Fontanne": {
+          "count": 288, 
+          "sum": 1831, 
+          "average": 6.357638888888889
         }, 
         "Virginia": {
-          "count": 424, 
-          "sum": 2715, 
-          "average": 6.403301886792453
+          "count": 137, 
+          "sum": 821, 
+          "average": 5.992700729927007
         }, 
         "Cort": {
-          "count": 501, 
-          "sum": 3183, 
-          "average": 6.3532934131736525
+          "count": 175, 
+          "sum": 1134, 
+          "average": 6.48
         }, 
         "Lyceum": {
-          "count": 544, 
-          "sum": 3271, 
-          "average": 6.012867647058823
+          "count": 189, 
+          "sum": 1144, 
+          "average": 6.052910052910053
         }, 
         "New Amsterdam": {
-          "count": 914, 
-          "sum": 5915, 
-          "average": 6.471553610503283
+          "count": 322, 
+          "sum": 2119, 
+          "average": 6.580745341614906
         }, 
         "Royale": {
-          "count": 312, 
-          "sum": 2089, 
-          "average": 6.69551282051282
+          "count": 97, 
+          "sum": 692, 
+          "average": 7.134020618556701
         }, 
         "Shubert": {
-          "count": 967, 
-          "sum": 6290, 
-          "average": 6.5046535677352635
+          "count": 327, 
+          "sum": 2207, 
+          "average": 6.749235474006116
         }, 
         "Martin Beck": {
-          "count": 289, 
-          "sum": 1870, 
-          "average": 6.470588235294118
+          "count": 91, 
+          "sum": 610, 
+          "average": 6.7032967032967035
         }, 
         "Ethel Barrymore": {
-          "count": 797, 
-          "sum": 4856, 
-          "average": 6.0928481806775405
+          "count": 264, 
+          "sum": 1531, 
+          "average": 5.799242424242424
         }, 
         "Kit Kat Klub": {
-          "count": 35, 
-          "sum": 219, 
-          "average": 6.257142857142857
+          "count": 12, 
+          "sum": 69, 
+          "average": 5.75
         }, 
         "Marquis": {
-          "count": 735, 
-          "sum": 4847, 
-          "average": 6.594557823129252
-        }, 
-        "Ambassador": {
-          "count": 963, 
-          "sum": 6223, 
-          "average": 6.4620976116303215
-        }, 
-        "Biltmore": {
-          "count": 167, 
-          "sum": 1013, 
-          "average": 6.065868263473054
-        }, 
-        "Circle In The Square": {
-          "count": 638, 
-          "sum": 4004, 
-          "average": 6.275862068965517
-        }, 
-        "Ford Center (Livent)": {
-          "count": 108, 
-          "sum": 690, 
-          "average": 6.388888888888889
-        }, 
-        "Richard Rodgers": {
-          "count": 809, 
-          "sum": 5320, 
-          "average": 6.57601977750309
-        }, 
-        "Hilton Theatre": {
-          "count": 143, 
-          "sum": 1015, 
-          "average": 7.0979020979020975
-        }, 
-        "Plymouth": {
-          "count": 383, 
-          "sum": 2549, 
-          "average": 6.655352480417754
-        }, 
-        "Ford Center (Tcn)": {
-          "count": 24, 
-          "sum": 143, 
-          "average": 5.958333333333333
-        }, 
-        "Longacre": {
-          "count": 413, 
-          "sum": 2709, 
-          "average": 6.559322033898305
-        }, 
-        "American Airlines": {
-          "count": 650, 
-          "sum": 4112, 
-          "average": 6.326153846153846
+          "count": 258, 
+          "sum": 1672, 
+          "average": 6.48062015503876
         }, 
         "Golden": {
-          "count": 781, 
-          "sum": 4982, 
-          "average": 6.379001280409731
+          "count": 242, 
+          "sum": 1555, 
+          "average": 6.425619834710743
         }, 
-        "Stephen Sondheim": {
-          "count": 252, 
-          "sum": 1610, 
+        "Biltmore": {
+          "count": 52, 
+          "sum": 332, 
+          "average": 6.384615384615385
+        }, 
+        "Circle In The Square": {
+          "count": 220, 
+          "sum": 1323, 
+          "average": 6.013636363636364
+        }, 
+        "Ford Center (Livent)": {
+          "count": 40, 
+          "sum": 275, 
+          "average": 6.875
+        }, 
+        "Richard Rodgers": {
+          "count": 289, 
+          "sum": 1890, 
+          "average": 6.539792387543253
+        }, 
+        "Hilton Theatre": {
+          "count": 54, 
+          "sum": 393, 
+          "average": 7.277777777777778
+        }, 
+        "Plymouth": {
+          "count": 127, 
+          "sum": 808, 
+          "average": 6.362204724409449
+        }, 
+        "Ford Center (Tcn)": {
+          "count": 9, 
+          "sum": 58, 
+          "average": 6.444444444444445
+        }, 
+        "Longacre": {
+          "count": 142, 
+          "sum": 959, 
+          "average": 6.753521126760563
+        }, 
+        "American Airlines": {
+          "count": 216, 
+          "sum": 1380, 
           "average": 6.388888888888889
         }, 
+        "Ambassador": {
+          "count": 298, 
+          "sum": 1988, 
+          "average": 6.671140939597316
+        }, 
+        "Stephen Sondheim": {
+          "count": 79, 
+          "sum": 475, 
+          "average": 6.012658227848101
+        }, 
         "Studio 54 ('98)": {
-          "count": 269, 
-          "sum": 1790, 
-          "average": 6.654275092936803
+          "count": 95, 
+          "sum": 652, 
+          "average": 6.863157894736842
         }, 
         "Palace": {
-          "count": 970, 
-          "sum": 6298, 
-          "average": 6.492783505154639
+          "count": 311, 
+          "sum": 2049, 
+          "average": 6.588424437299035
         }, 
         "Studio 54": {
-          "count": 362, 
-          "sum": 2304, 
-          "average": 6.3646408839779
+          "count": 111, 
+          "sum": 745, 
+          "average": 6.711711711711712
         }, 
         "August Wilson": {
-          "count": 563, 
-          "sum": 3637, 
-          "average": 6.460035523978686
+          "count": 180, 
+          "sum": 1110, 
+          "average": 6.166666666666667
         }, 
         "Vivian Beaumont": {
-          "count": 835, 
-          "sum": 5573, 
-          "average": 6.674251497005988
+          "count": 259, 
+          "sum": 1708, 
+          "average": 6.594594594594595
         }, 
         "Schoenfeld": {
-          "count": 351, 
-          "sum": 2269, 
-          "average": 6.464387464387465
+          "count": 112, 
+          "sum": 722, 
+          "average": 6.446428571428571
         }, 
         "Brooks Atkinson": {
-          "count": 689, 
-          "sum": 4545, 
-          "average": 6.596516690856314
+          "count": 241, 
+          "sum": 1620, 
+          "average": 6.721991701244813
         }, 
         "Eugene O'Neill": {
-          "count": 874, 
-          "sum": 5551, 
-          "average": 6.351258581235698
+          "count": 309, 
+          "sum": 1958, 
+          "average": 6.336569579288026
         }, 
         "Walter Kerr": {
-          "count": 827, 
-          "sum": 5477, 
-          "average": 6.62273276904474
+          "count": 253, 
+          "sum": 1730, 
+          "average": 6.83794466403162
         }, 
         "Henry Miller (Rndabt)": {
-          "count": 26, 
-          "sum": 192, 
-          "average": 7.384615384615385
+          "count": 12, 
+          "sum": 80, 
+          "average": 6.666666666666667
         }, 
         "Lyric": {
-          "count": 78, 
-          "sum": 531, 
-          "average": 6.8076923076923075
+          "count": 30, 
+          "sum": 230, 
+          "average": 7.666666666666667
         }, 
         "Booth": {
-          "count": 726, 
-          "sum": 4770, 
-          "average": 6.570247933884297
+          "count": 256, 
+          "sum": 1683, 
+          "average": 6.57421875
         }, 
         "Majestic": {
-          "count": 1053, 
-          "sum": 6863, 
-          "average": 6.517568850902184
+          "count": 345, 
+          "sum": 2294, 
+          "average": 6.649275362318841
         }, 
         "Broadway": {
-          "count": 1045, 
-          "sum": 6934, 
-          "average": 6.635406698564593
+          "count": 372, 
+          "sum": 2499, 
+          "average": 6.717741935483871
         }, 
         "Foxwoods": {
-          "count": 157, 
-          "sum": 1043, 
-          "average": 6.643312101910828
+          "count": 47, 
+          "sum": 312, 
+          "average": 6.638297872340425
         }, 
         "Henry Miller": {
-          "count": 125, 
-          "sum": 874, 
-          "average": 6.992
+          "count": 42, 
+          "sum": 294, 
+          "average": 7.0
         }
       }, 
       "broadway.[0].Statistics.Gross Potential": {
         "Nederlander": {
-          "count": 911, 
-          "sum": 59648, 
-          "average": 65.47530186608122
+          "count": 267, 
+          "sum": 16812, 
+          "average": 62.96629213483146
         }, 
         "Jacobs": {
-          "count": 441, 
-          "sum": 29323, 
-          "average": 66.4920634920635
+          "count": 144, 
+          "sum": 9387, 
+          "average": 65.1875
         }, 
         "Music Box": {
-          "count": 642, 
-          "sum": 34818, 
-          "average": 54.23364485981308
-        }, 
-        "Lunt-Fontanne": {
-          "count": 910, 
-          "sum": 65705, 
-          "average": 72.2032967032967
-        }, 
-        "Neil Simon": {
-          "count": 754, 
-          "sum": 47176, 
-          "average": 62.56763925729443
-        }, 
-        "Minskoff": {
-          "count": 854, 
-          "sum": 60651, 
-          "average": 71.01990632318501
-        }, 
-        "Imperial": {
-          "count": 903, 
-          "sum": 62973, 
-          "average": 69.7375415282392
-        }, 
-        "Al Hirschfeld": {
-          "count": 569, 
-          "sum": 36302, 
-          "average": 63.799648506151144
-        }, 
-        "Criterion": {
-          "count": 145, 
-          "sum": 6226, 
-          "average": 42.93793103448276
-        }, 
-        "Broadhurst": {
-          "count": 706, 
-          "sum": 46102, 
-          "average": 65.30028328611898
-        }, 
-        "Ford Center": {
-          "count": 193, 
-          "sum": 12567, 
-          "average": 65.11398963730569
-        }, 
-        "Gershwin": {
-          "count": 948, 
-          "sum": 77902, 
-          "average": 82.17510548523207
-        }, 
-        "Belasco": {
-          "count": 470, 
-          "sum": 26317, 
-          "average": 55.9936170212766
-        }, 
-        "Helen Hayes": {
-          "count": 868, 
-          "sum": 39537, 
-          "average": 45.54953917050691
-        }, 
-        "Cadillac Winter Garden": {
-          "count": 242, 
-          "sum": 21980, 
-          "average": 90.82644628099173
-        }, 
-        "Winter Garden": {
-          "count": 719, 
-          "sum": 41943, 
-          "average": 58.33518776077886
-        }, 
-        "Friedman": {
-          "count": 291, 
-          "sum": 12458, 
-          "average": 42.81099656357388
+          "count": 204, 
+          "sum": 11089, 
+          "average": 54.3578431372549
         }, 
         "St. James": {
-          "count": 817, 
-          "sum": 51454, 
-          "average": 62.97919216646267
+          "count": 294, 
+          "sum": 18601, 
+          "average": 63.2687074829932
+        }, 
+        "Neil Simon": {
+          "count": 253, 
+          "sum": 15869, 
+          "average": 62.723320158102766
+        }, 
+        "Minskoff": {
+          "count": 279, 
+          "sum": 18784, 
+          "average": 67.32616487455198
+        }, 
+        "Imperial": {
+          "count": 310, 
+          "sum": 21703, 
+          "average": 70.00967741935484
+        }, 
+        "Al Hirschfeld": {
+          "count": 201, 
+          "sum": 12689, 
+          "average": 63.12935323383085
+        }, 
+        "Criterion": {
+          "count": 47, 
+          "sum": 2055, 
+          "average": 43.723404255319146
+        }, 
+        "Broadhurst": {
+          "count": 221, 
+          "sum": 14053, 
+          "average": 63.588235294117645
+        }, 
+        "Ford Center": {
+          "count": 59, 
+          "sum": 3775, 
+          "average": 63.983050847457626
+        }, 
+        "Gershwin": {
+          "count": 317, 
+          "sum": 25237, 
+          "average": 79.61198738170347
+        }, 
+        "Belasco": {
+          "count": 163, 
+          "sum": 9150, 
+          "average": 56.13496932515337
+        }, 
+        "Helen Hayes": {
+          "count": 310, 
+          "sum": 14168, 
+          "average": 45.70322580645161
+        }, 
+        "Cadillac Winter Garden": {
+          "count": 83, 
+          "sum": 7543, 
+          "average": 90.87951807228916
+        }, 
+        "Winter Garden": {
+          "count": 240, 
+          "sum": 13396, 
+          "average": 55.81666666666667
+        }, 
+        "Friedman": {
+          "count": 100, 
+          "sum": 4334, 
+          "average": 43.34
+        }, 
+        "Lunt-Fontanne": {
+          "count": 288, 
+          "sum": 20960, 
+          "average": 72.77777777777777
         }, 
         "Virginia": {
-          "count": 424, 
-          "sum": 15618, 
-          "average": 36.83490566037736
+          "count": 137, 
+          "sum": 5287, 
+          "average": 38.59124087591241
         }, 
         "Cort": {
-          "count": 501, 
-          "sum": 25679, 
-          "average": 51.25548902195609
+          "count": 175, 
+          "sum": 8729, 
+          "average": 49.88
         }, 
         "Lyceum": {
-          "count": 544, 
-          "sum": 24300, 
-          "average": 44.669117647058826
+          "count": 189, 
+          "sum": 8777, 
+          "average": 46.439153439153436
         }, 
         "New Amsterdam": {
-          "count": 914, 
-          "sum": 79630, 
-          "average": 87.12253829321664
+          "count": 322, 
+          "sum": 28024, 
+          "average": 87.03105590062111
         }, 
         "Royale": {
-          "count": 312, 
-          "sum": 16504, 
-          "average": 52.8974358974359
+          "count": 97, 
+          "sum": 5373, 
+          "average": 55.391752577319586
         }, 
         "Shubert": {
-          "count": 967, 
-          "sum": 68501, 
-          "average": 70.83867631851086
+          "count": 327, 
+          "sum": 22944, 
+          "average": 70.1651376146789
         }, 
         "Martin Beck": {
-          "count": 289, 
-          "sum": 17857, 
-          "average": 61.78892733564014
+          "count": 91, 
+          "sum": 5958, 
+          "average": 65.47252747252747
         }, 
         "Ethel Barrymore": {
-          "count": 797, 
-          "sum": 45749, 
-          "average": 57.40150564617315
+          "count": 264, 
+          "sum": 14797, 
+          "average": 56.04924242424242
         }, 
         "Kit Kat Klub": {
-          "count": 35, 
-          "sum": 2939, 
-          "average": 83.97142857142858
+          "count": 12, 
+          "sum": 970, 
+          "average": 80.83333333333333
         }, 
         "Marquis": {
-          "count": 735, 
-          "sum": 42752, 
-          "average": 58.16598639455783
-        }, 
-        "Ambassador": {
-          "count": 963, 
-          "sum": 53513, 
-          "average": 55.56905503634476
-        }, 
-        "Biltmore": {
-          "count": 167, 
-          "sum": 8749, 
-          "average": 52.38922155688623
-        }, 
-        "Circle In The Square": {
-          "count": 638, 
-          "sum": 35004, 
-          "average": 54.86520376175549
-        }, 
-        "Ford Center (Livent)": {
-          "count": 108, 
-          "sum": 9946, 
-          "average": 92.0925925925926
-        }, 
-        "Richard Rodgers": {
-          "count": 809, 
-          "sum": 53544, 
-          "average": 66.18541409147095
-        }, 
-        "Hilton Theatre": {
-          "count": 143, 
-          "sum": 3835, 
-          "average": 26.818181818181817
-        }, 
-        "Plymouth": {
-          "count": 383, 
-          "sum": 22711, 
-          "average": 59.297650130548305
-        }, 
-        "Ford Center (Tcn)": {
-          "count": 24, 
-          "sum": 1287, 
-          "average": 53.625
-        }, 
-        "Longacre": {
-          "count": 413, 
-          "sum": 18330, 
-          "average": 44.38256658595642
-        }, 
-        "American Airlines": {
-          "count": 650, 
-          "sum": 35554, 
-          "average": 54.69846153846154
+          "count": 258, 
+          "sum": 14915, 
+          "average": 57.810077519379846
         }, 
         "Golden": {
-          "count": 781, 
-          "sum": 46685, 
-          "average": 59.77592829705506
+          "count": 242, 
+          "sum": 13917, 
+          "average": 57.50826446280992
+        }, 
+        "Biltmore": {
+          "count": 52, 
+          "sum": 2706, 
+          "average": 52.03846153846154
+        }, 
+        "Circle In The Square": {
+          "count": 220, 
+          "sum": 11780, 
+          "average": 53.54545454545455
+        }, 
+        "Ford Center (Livent)": {
+          "count": 40, 
+          "sum": 3704, 
+          "average": 92.6
+        }, 
+        "Richard Rodgers": {
+          "count": 289, 
+          "sum": 19000, 
+          "average": 65.7439446366782
+        }, 
+        "Hilton Theatre": {
+          "count": 54, 
+          "sum": 1428, 
+          "average": 26.444444444444443
+        }, 
+        "Plymouth": {
+          "count": 127, 
+          "sum": 7575, 
+          "average": 59.645669291338585
+        }, 
+        "Ford Center (Tcn)": {
+          "count": 9, 
+          "sum": 453, 
+          "average": 50.333333333333336
+        }, 
+        "Longacre": {
+          "count": 142, 
+          "sum": 6129, 
+          "average": 43.16197183098591
+        }, 
+        "American Airlines": {
+          "count": 216, 
+          "sum": 12084, 
+          "average": 55.94444444444444
+        }, 
+        "Ambassador": {
+          "count": 298, 
+          "sum": 17124, 
+          "average": 57.46308724832215
         }, 
         "Stephen Sondheim": {
-          "count": 252, 
-          "sum": 18664, 
-          "average": 74.06349206349206
+          "count": 79, 
+          "sum": 5971, 
+          "average": 75.58227848101266
         }, 
         "Studio 54 ('98)": {
-          "count": 269, 
-          "sum": 19920, 
-          "average": 74.05204460966543
+          "count": 95, 
+          "sum": 6938, 
+          "average": 73.03157894736842
         }, 
         "Palace": {
-          "count": 970, 
-          "sum": 56300, 
-          "average": 58.04123711340206
+          "count": 311, 
+          "sum": 18706, 
+          "average": 60.147909967845656
         }, 
         "Studio 54": {
-          "count": 362, 
-          "sum": 21162, 
-          "average": 58.4585635359116
+          "count": 111, 
+          "sum": 6376, 
+          "average": 57.44144144144144
         }, 
         "August Wilson": {
-          "count": 563, 
-          "sum": 51827, 
-          "average": 92.0550621669627
+          "count": 180, 
+          "sum": 16623, 
+          "average": 92.35
         }, 
         "Vivian Beaumont": {
-          "count": 835, 
-          "sum": 52553, 
-          "average": 62.9377245508982
+          "count": 259, 
+          "sum": 16354, 
+          "average": 63.142857142857146
         }, 
         "Schoenfeld": {
-          "count": 351, 
-          "sum": 23769, 
-          "average": 67.71794871794872
+          "count": 112, 
+          "sum": 7282, 
+          "average": 65.01785714285714
         }, 
         "Brooks Atkinson": {
-          "count": 689, 
-          "sum": 40998, 
-          "average": 59.503628447024674
+          "count": 241, 
+          "sum": 13867, 
+          "average": 57.53941908713693
         }, 
         "Eugene O'Neill": {
-          "count": 874, 
-          "sum": 66781, 
-          "average": 76.40846681922197
+          "count": 309, 
+          "sum": 23881, 
+          "average": 77.28478964401295
         }, 
         "Walter Kerr": {
-          "count": 827, 
-          "sum": 47741, 
-          "average": 57.7279322853688
+          "count": 253, 
+          "sum": 14506, 
+          "average": 57.33596837944664
         }, 
         "Henry Miller (Rndabt)": {
-          "count": 26, 
-          "sum": 1325, 
-          "average": 50.96153846153846
+          "count": 12, 
+          "sum": 524, 
+          "average": 43.666666666666664
         }, 
         "Lyric": {
-          "count": 78, 
-          "sum": 3186, 
-          "average": 40.84615384615385
+          "count": 30, 
+          "sum": 1114, 
+          "average": 37.13333333333333
         }, 
         "Booth": {
-          "count": 726, 
-          "sum": 38156, 
-          "average": 52.5564738292011
+          "count": 256, 
+          "sum": 13317, 
+          "average": 52.01953125
         }, 
         "Majestic": {
-          "count": 1053, 
-          "sum": 68473, 
-          "average": 65.02659069325736
+          "count": 345, 
+          "sum": 22842, 
+          "average": 66.20869565217392
         }, 
         "Broadway": {
-          "count": 1045, 
-          "sum": 47269, 
-          "average": 45.233492822966504
+          "count": 372, 
+          "sum": 16986, 
+          "average": 45.66129032258065
         }, 
         "Foxwoods": {
-          "count": 157, 
-          "sum": 11366, 
-          "average": 72.39490445859873
+          "count": 47, 
+          "sum": 3418, 
+          "average": 72.72340425531915
         }, 
         "Henry Miller": {
-          "count": 125, 
-          "sum": 9123, 
-          "average": 72.984
+          "count": 42, 
+          "sum": 3256, 
+          "average": 77.52380952380952
         }
       }
     }, 
@@ -2275,7 +2275,7 @@ broadway_bar = [
     "indexes": [
       "Nederlander", 
       "Jacobs", 
-      "Lunt-Fontanne", 
+      "St. James", 
       "Neil Simon", 
       "Minskoff", 
       "Imperial", 
@@ -2289,7 +2289,7 @@ broadway_bar = [
       "Cadillac Winter Garden", 
       "Winter Garden", 
       "Friedman", 
-      "St. James", 
+      "Lunt-Fontanne", 
       "Virginia", 
       "Hilton Theatre", 
       "Cort", 
@@ -2301,7 +2301,7 @@ broadway_bar = [
       "Ethel Barrymore", 
       "Kit Kat Klub", 
       "Marquis", 
-      "Golden", 
+      "Ambassador", 
       "Biltmore", 
       "Circle In The Square", 
       "Ford Center (Livent)", 
@@ -2311,7 +2311,7 @@ broadway_bar = [
       "Ford Center (Tcn)", 
       "Longacre", 
       "American Airlines", 
-      "Ambassador", 
+      "Golden", 
       "Stephen Sondheim", 
       "Studio 54 ('98)", 
       "Palace", 
@@ -2347,1098 +2347,1058 @@ broadway_bar = [
     "data": {
       "broadway.[0].Statistics.Gross": {
         "2015": {
-          "count": 1574, 
-          "sum": 1299064018, 
-          "average": 825326.5679796697
+          "count": 524, 
+          "sum": 443657414, 
+          "average": 846674.4541984732
         }, 
         "2014": {
-          "count": 1613, 
-          "sum": 1319291970, 
-          "average": 817911.946683199
+          "count": 540, 
+          "sum": 449751132, 
+          "average": 832872.4666666667
         }, 
         "2016": {
-          "count": 1055, 
-          "sum": 831143656, 
-          "average": 787813.891943128
+          "count": 356, 
+          "sum": 281579065, 
+          "average": 790952.4297752809
         }, 
         "2011": {
-          "count": 1480, 
-          "sum": 1076224576, 
-          "average": 727178.7675675675
+          "count": 493, 
+          "sum": 342346714, 
+          "average": 694415.2413793104
         }, 
         "2010": {
-          "count": 1546, 
-          "sum": 1029838913, 
-          "average": 666131.2503234153
+          "count": 515, 
+          "sum": 340880820, 
+          "average": 661904.504854369
         }, 
         "2013": {
-          "count": 1377, 
-          "sum": 1151877842, 
-          "average": 836512.5940450254
+          "count": 457, 
+          "sum": 381915563, 
+          "average": 835701.4507658643
         }, 
         "2012": {
-          "count": 1555, 
-          "sum": 1157196814, 
-          "average": 744178.0154340836
+          "count": 518, 
+          "sum": 369345574, 
+          "average": 713022.3436293437
         }, 
         "1991": {
-          "count": 41, 
-          "sum": 30665673, 
-          "average": 747943.243902439
-        }, 
-        "1990": {
-          "count": 1, 
-          "sum": 134456, 
-          "average": 134456.0
+          "count": 14, 
+          "sum": 10014346, 
+          "average": 715310.4285714285
         }, 
         "1993": {
-          "count": 95, 
-          "sum": 46171494, 
-          "average": 486015.72631578945
+          "count": 31, 
+          "sum": 14498141, 
+          "average": 467681.96774193546
         }, 
         "1992": {
-          "count": 73, 
-          "sum": 42262582, 
-          "average": 578939.4794520548
+          "count": 25, 
+          "sum": 14574902, 
+          "average": 582996.08
         }, 
         "1995": {
-          "count": 411, 
-          "sum": 197856030, 
-          "average": 481401.5328467153
+          "count": 137, 
+          "sum": 63515093, 
+          "average": 463613.81751824816
         }, 
         "1994": {
-          "count": 167, 
-          "sum": 83518661, 
-          "average": 500111.7425149701
+          "count": 56, 
+          "sum": 29636655, 
+          "average": 529225.9821428572
         }, 
         "1997": {
-          "count": 1340, 
-          "sum": 506095272, 
-          "average": 377683.03880597017
+          "count": 447, 
+          "sum": 167731241, 
+          "average": 375237.67561521253
         }, 
         "1996": {
-          "count": 941, 
-          "sum": 350366854, 
-          "average": 372334.5951115834
+          "count": 314, 
+          "sum": 116254193, 
+          "average": 370236.2834394904
         }, 
         "1999": {
-          "count": 1465, 
-          "sum": 588066824, 
-          "average": 401410.80136518774
+          "count": 489, 
+          "sum": 197820356, 
+          "average": 404540.6053169734
         }, 
         "1998": {
-          "count": 1432, 
-          "sum": 573157572, 
-          "average": 400249.7011173184
+          "count": 475, 
+          "sum": 186589668, 
+          "average": 392820.3536842105
         }, 
         "2002": {
-          "count": 1506, 
-          "sum": 706243486, 
-          "average": 468953.1779548473
+          "count": 502, 
+          "sum": 235332834, 
+          "average": 468790.5059760956
         }, 
         "2003": {
-          "count": 1455, 
-          "sum": 724660389, 
-          "average": 498048.3773195876
+          "count": 486, 
+          "sum": 248597461, 
+          "average": 511517.4094650206
         }, 
         "2000": {
-          "count": 1524, 
-          "sum": 678334768, 
-          "average": 445101.55380577425
+          "count": 508, 
+          "sum": 224535509, 
+          "average": 441999.0334645669
         }, 
         "2001": {
-          "count": 1462, 
-          "sum": 643802427, 
-          "average": 440357.33720930235
+          "count": 487, 
+          "sum": 216201146, 
+          "average": 443944.85831622174
         }, 
         "2006": {
-          "count": 1491, 
-          "sum": 929545061, 
-          "average": 623437.3313212609
+          "count": 495, 
+          "sum": 312168941, 
+          "average": 630644.3252525253
         }, 
         "2007": {
-          "count": 1521, 
-          "sum": 927333504, 
-          "average": 609686.7218934911
+          "count": 507, 
+          "sum": 309507964, 
+          "average": 610469.3570019724
         }, 
         "2004": {
-          "count": 1450, 
-          "sum": 748819564, 
-          "average": 516427.2855172414
+          "count": 483, 
+          "sum": 251252595, 
+          "average": 520191.70807453414
         }, 
         "2005": {
-          "count": 1516, 
-          "sum": 825189740, 
-          "average": 544320.4089709762
+          "count": 505, 
+          "sum": 282777022, 
+          "average": 559954.499009901
         }, 
         "2008": {
-          "count": 1652, 
-          "sum": 985446068, 
-          "average": 596516.99031477
+          "count": 551, 
+          "sum": 324540147, 
+          "average": 589002.0816696915
         }, 
         "2009": {
-          "count": 1439, 
-          "sum": 969559631, 
-          "average": 673773.1973592773
+          "count": 480, 
+          "sum": 311689029, 
+          "average": 649352.14375
         }
       }, 
       "broadway.[0].Statistics.Attendance": {
         "2015": {
-          "count": 1574, 
-          "sum": 12648243, 
-          "average": 8035.73252858958
+          "count": 524, 
+          "sum": 4272184, 
+          "average": 8153.022900763359
         }, 
         "2014": {
-          "count": 1613, 
-          "sum": 12874988, 
-          "average": 7982.0136391816495
+          "count": 540, 
+          "sum": 4342051, 
+          "average": 8040.835185185185
         }, 
         "2016": {
-          "count": 1055, 
-          "sum": 8390509, 
-          "average": 7953.089099526066
+          "count": 356, 
+          "sum": 2812394, 
+          "average": 7899.983146067416
         }, 
         "2011": {
-          "count": 1480, 
-          "sum": 12098227, 
-          "average": 8174.477702702703
+          "count": 493, 
+          "sum": 3885218, 
+          "average": 7880.766734279919
         }, 
         "2010": {
-          "count": 1546, 
-          "sum": 12055349, 
-          "average": 7797.767787839586
+          "count": 515, 
+          "sum": 4007772, 
+          "average": 7782.0815533980585
         }, 
         "2013": {
-          "count": 1377, 
-          "sum": 11335080, 
-          "average": 8231.721132897603
+          "count": 457, 
+          "sum": 3767883, 
+          "average": 8244.82056892779
         }, 
         "2012": {
-          "count": 1555, 
-          "sum": 12236354, 
-          "average": 7869.037942122187
+          "count": 518, 
+          "sum": 4020334, 
+          "average": 7761.262548262548
         }, 
         "1991": {
-          "count": 41, 
-          "sum": 559179, 
-          "average": 13638.512195121952
-        }, 
-        "1990": {
-          "count": 1, 
-          "sum": 5500, 
-          "average": 5500.0
+          "count": 14, 
+          "sum": 181502, 
+          "average": 12964.42857142857
         }, 
         "1993": {
-          "count": 95, 
-          "sum": 1038747, 
-          "average": 10934.17894736842
+          "count": 31, 
+          "sum": 330158, 
+          "average": 10650.258064516129
         }, 
         "1992": {
-          "count": 73, 
-          "sum": 856809, 
-          "average": 11737.109589041096
+          "count": 25, 
+          "sum": 294655, 
+          "average": 11786.2
         }, 
         "1995": {
-          "count": 411, 
-          "sum": 3982285, 
-          "average": 9689.257907542578
+          "count": 137, 
+          "sum": 1294078, 
+          "average": 9445.824817518249
         }, 
         "1994": {
-          "count": 167, 
-          "sum": 1774391, 
-          "average": 10625.095808383234
+          "count": 56, 
+          "sum": 608160, 
+          "average": 10860.0
         }, 
         "1997": {
-          "count": 1340, 
-          "sum": 10557122, 
-          "average": 7878.449253731344
+          "count": 447, 
+          "sum": 3506601, 
+          "average": 7844.744966442953
         }, 
         "1996": {
-          "count": 941, 
-          "sum": 7423061, 
-          "average": 7888.481402763018
+          "count": 314, 
+          "sum": 2485697, 
+          "average": 7916.232484076433
         }, 
         "1999": {
-          "count": 1465, 
-          "sum": 11504171, 
-          "average": 7852.676450511945
+          "count": 489, 
+          "sum": 3890339, 
+          "average": 7955.703476482618
         }, 
         "1998": {
-          "count": 1432, 
-          "sum": 11553289, 
-          "average": 8067.939245810056
+          "count": 475, 
+          "sum": 3783137, 
+          "average": 7964.498947368421
         }, 
         "2002": {
-          "count": 1506, 
-          "sum": 11394477, 
-          "average": 7566.053784860558
+          "count": 502, 
+          "sum": 3779385, 
+          "average": 7528.655378486056
         }, 
         "2003": {
-          "count": 1455, 
-          "sum": 11081134, 
-          "average": 7615.899656357388
+          "count": 486, 
+          "sum": 3759651, 
+          "average": 7735.907407407408
         }, 
         "2000": {
-          "count": 1524, 
-          "sum": 12252863, 
-          "average": 8039.9363517060365
+          "count": 508, 
+          "sum": 4075525, 
+          "average": 8022.687007874016
         }, 
         "2001": {
-          "count": 1462, 
-          "sum": 11382440, 
-          "average": 7785.526675786594
+          "count": 487, 
+          "sum": 3795940, 
+          "average": 7794.5379876796715
         }, 
         "2006": {
-          "count": 1491, 
-          "sum": 12211574, 
-          "average": 8190.190476190476
+          "count": 495, 
+          "sum": 4090992, 
+          "average": 8264.630303030302
         }, 
         "2007": {
-          "count": 1521, 
-          "sum": 12126711, 
-          "average": 7972.8540433925045
+          "count": 507, 
+          "sum": 4054592, 
+          "average": 7997.222879684418
         }, 
         "2004": {
-          "count": 1450, 
-          "sum": 11328820, 
-          "average": 7812.979310344827
+          "count": 483, 
+          "sum": 3794241, 
+          "average": 7855.571428571428
         }, 
         "2005": {
-          "count": 1516, 
-          "sum": 11975625, 
-          "average": 7899.488786279683
+          "count": 505, 
+          "sum": 4083059, 
+          "average": 8085.265346534654
         }, 
         "2008": {
-          "count": 1652, 
-          "sum": 12850231, 
-          "average": 7778.5901937046
+          "count": 551, 
+          "sum": 4271755, 
+          "average": 7752.731397459165
         }, 
         "2009": {
-          "count": 1439, 
-          "sum": 11680764, 
-          "average": 8117.2786657400975
+          "count": 480, 
+          "sum": 3838925, 
+          "average": 7997.760416666667
         }
       }, 
       "broadway.[0].Statistics.Capacity": {
         "2015": {
-          "count": 1574, 
-          "sum": 132224, 
-          "average": 84.00508259212198
+          "count": 524, 
+          "sum": 44113, 
+          "average": 84.18511450381679
         }, 
         "2014": {
-          "count": 1613, 
-          "sum": 137360, 
-          "average": 85.15809051456912
+          "count": 540, 
+          "sum": 46175, 
+          "average": 85.50925925925925
         }, 
         "2016": {
-          "count": 1055, 
-          "sum": 86936, 
-          "average": 82.40379146919432
+          "count": 356, 
+          "sum": 29288, 
+          "average": 82.26966292134831
         }, 
         "2011": {
-          "count": 1480, 
-          "sum": 121236, 
-          "average": 81.91621621621621
+          "count": 493, 
+          "sum": 40046, 
+          "average": 81.22920892494929
         }, 
         "2010": {
-          "count": 1546, 
-          "sum": 121446, 
-          "average": 78.55498059508409
+          "count": 515, 
+          "sum": 39968, 
+          "average": 77.60776699029127
         }, 
         "2013": {
-          "count": 1377, 
-          "sum": 117481, 
-          "average": 85.31663035584604
+          "count": 457, 
+          "sum": 38833, 
+          "average": 84.97374179431073
         }, 
         "2012": {
-          "count": 1555, 
-          "sum": 124870, 
-          "average": 80.30225080385853
+          "count": 518, 
+          "sum": 41157, 
+          "average": 79.45366795366796
         }, 
         "1991": {
-          "count": 41, 
-          "sum": 4123, 
-          "average": 100.5609756097561
-        }, 
-        "1990": {
-          "count": 1, 
-          "sum": 88, 
-          "average": 88.0
+          "count": 14, 
+          "sum": 1401, 
+          "average": 100.07142857142857
         }, 
         "1993": {
-          "count": 95, 
-          "sum": 8961, 
-          "average": 94.32631578947368
+          "count": 31, 
+          "sum": 2926, 
+          "average": 94.38709677419355
         }, 
         "1992": {
-          "count": 73, 
-          "sum": 6767, 
-          "average": 92.6986301369863
+          "count": 25, 
+          "sum": 2326, 
+          "average": 93.04
         }, 
         "1995": {
-          "count": 411, 
-          "sum": 35136, 
-          "average": 85.48905109489051
+          "count": 137, 
+          "sum": 11844, 
+          "average": 86.45255474452554
         }, 
         "1994": {
-          "count": 167, 
-          "sum": 14112, 
-          "average": 84.50299401197604
+          "count": 56, 
+          "sum": 4720, 
+          "average": 84.28571428571429
         }, 
         "1997": {
-          "count": 1340, 
-          "sum": 108237, 
-          "average": 80.77388059701492
+          "count": 447, 
+          "sum": 35654, 
+          "average": 79.76286353467562
         }, 
         "1996": {
-          "count": 941, 
-          "sum": 76635, 
-          "average": 81.43995749202976
+          "count": 314, 
+          "sum": 25419, 
+          "average": 80.95222929936305
         }, 
         "1999": {
-          "count": 1465, 
-          "sum": 113967, 
-          "average": 77.79317406143345
+          "count": 489, 
+          "sum": 37844, 
+          "average": 77.39059304703477
         }, 
         "1998": {
-          "count": 1432, 
-          "sum": 113726, 
-          "average": 79.41759776536313
+          "count": 475, 
+          "sum": 37127, 
+          "average": 78.1621052631579
         }, 
         "2002": {
-          "count": 1506, 
-          "sum": 117285, 
-          "average": 77.87848605577689
+          "count": 502, 
+          "sum": 38967, 
+          "average": 77.62350597609561
         }, 
         "2003": {
-          "count": 1455, 
-          "sum": 112763, 
-          "average": 77.50034364261168
+          "count": 486, 
+          "sum": 38048, 
+          "average": 78.2880658436214
         }, 
         "2000": {
-          "count": 1524, 
-          "sum": 120997, 
-          "average": 79.39435695538057
+          "count": 508, 
+          "sum": 40499, 
+          "average": 79.7224409448819
         }, 
         "2001": {
-          "count": 1462, 
-          "sum": 115230, 
-          "average": 78.81668946648426
+          "count": 487, 
+          "sum": 38527, 
+          "average": 79.11088295687885
         }, 
         "2006": {
-          "count": 1491, 
-          "sum": 122846, 
-          "average": 82.39168343393696
+          "count": 495, 
+          "sum": 40767, 
+          "average": 82.35757575757576
         }, 
         "2007": {
-          "count": 1521, 
-          "sum": 122149, 
-          "average": 80.30834976988824
+          "count": 507, 
+          "sum": 41243, 
+          "average": 81.34714003944774
         }, 
         "2004": {
-          "count": 1450, 
-          "sum": 111495, 
-          "average": 76.89310344827587
+          "count": 483, 
+          "sum": 37050, 
+          "average": 76.7080745341615
         }, 
         "2005": {
-          "count": 1516, 
-          "sum": 119562, 
-          "average": 78.86675461741424
+          "count": 505, 
+          "sum": 39654, 
+          "average": 78.52277227722772
         }, 
         "2008": {
-          "count": 1652, 
-          "sum": 128624, 
-          "average": 77.85956416464892
+          "count": 551, 
+          "sum": 42750, 
+          "average": 77.58620689655173
         }, 
         "2009": {
-          "count": 1439, 
-          "sum": 117140, 
-          "average": 81.40375260597638
+          "count": 480, 
+          "sum": 38663, 
+          "average": 80.54791666666667
         }
       }, 
       "broadway.[0].Statistics.Performances": {
         "2015": {
-          "count": 1574, 
-          "sum": 11251, 
-          "average": 7.148030495552732
+          "count": 524, 
+          "sum": 3707, 
+          "average": 7.074427480916031
         }, 
         "2014": {
-          "count": 1613, 
-          "sum": 11601, 
-          "average": 7.192188468691879
+          "count": 540, 
+          "sum": 3838, 
+          "average": 7.107407407407408
         }, 
         "2016": {
-          "count": 1055, 
-          "sum": 7743, 
-          "average": 7.339336492890995
+          "count": 356, 
+          "sum": 2620, 
+          "average": 7.359550561797753
         }, 
         "2011": {
-          "count": 1480, 
-          "sum": 10309, 
-          "average": 6.96554054054054
+          "count": 493, 
+          "sum": 3480, 
+          "average": 7.0588235294117645
         }, 
         "2010": {
-          "count": 1546, 
-          "sum": 11220, 
-          "average": 7.257438551099612
+          "count": 515, 
+          "sum": 3711, 
+          "average": 7.205825242718447
         }, 
         "2013": {
-          "count": 1377, 
-          "sum": 9694, 
-          "average": 7.0399419026870005
+          "count": 457, 
+          "sum": 3192, 
+          "average": 6.9846827133479215
         }, 
         "2012": {
-          "count": 1555, 
-          "sum": 11189, 
-          "average": 7.195498392282958
+          "count": 518, 
+          "sum": 3696, 
+          "average": 7.135135135135135
         }, 
         "1991": {
-          "count": 41, 
-          "sum": 300, 
-          "average": 7.317073170731708
-        }, 
-        "1990": {
-          "count": 1, 
-          "sum": 8, 
-          "average": 8.0
+          "count": 14, 
+          "sum": 100, 
+          "average": 7.142857142857143
         }, 
         "1993": {
-          "count": 95, 
-          "sum": 740, 
-          "average": 7.7894736842105265
+          "count": 31, 
+          "sum": 240, 
+          "average": 7.741935483870968
         }, 
         "1992": {
-          "count": 73, 
-          "sum": 553, 
-          "average": 7.575342465753424
+          "count": 25, 
+          "sum": 192, 
+          "average": 7.68
         }, 
         "1995": {
-          "count": 411, 
-          "sum": 2957, 
-          "average": 7.194647201946472
+          "count": 137, 
+          "sum": 959, 
+          "average": 7.0
         }, 
         "1994": {
-          "count": 167, 
-          "sum": 1211, 
-          "average": 7.251497005988024
+          "count": 56, 
+          "sum": 409, 
+          "average": 7.303571428571429
         }, 
         "1997": {
-          "count": 1340, 
-          "sum": 9698, 
-          "average": 7.237313432835821
+          "count": 447, 
+          "sum": 3184, 
+          "average": 7.123042505592841
         }, 
         "1996": {
-          "count": 941, 
-          "sum": 6729, 
-          "average": 7.150903294367694
+          "count": 314, 
+          "sum": 2277, 
+          "average": 7.251592356687898
         }, 
         "1999": {
-          "count": 1465, 
-          "sum": 10724, 
-          "average": 7.320136518771331
+          "count": 489, 
+          "sum": 3610, 
+          "average": 7.382413087934561
         }, 
         "1998": {
-          "count": 1432, 
-          "sum": 10534, 
-          "average": 7.356145251396648
+          "count": 475, 
+          "sum": 3527, 
+          "average": 7.425263157894737
         }, 
         "2002": {
-          "count": 1506, 
-          "sum": 10730, 
-          "average": 7.124833997343957
+          "count": 502, 
+          "sum": 3579, 
+          "average": 7.129482071713148
         }, 
         "2003": {
-          "count": 1455, 
-          "sum": 10419, 
-          "average": 7.1608247422680416
+          "count": 486, 
+          "sum": 3509, 
+          "average": 7.220164609053498
         }, 
         "2000": {
-          "count": 1524, 
-          "sum": 11211, 
-          "average": 7.356299212598425
+          "count": 508, 
+          "sum": 3724, 
+          "average": 7.330708661417323
         }, 
         "2001": {
-          "count": 1462, 
-          "sum": 10729, 
-          "average": 7.338577291381669
+          "count": 487, 
+          "sum": 3523, 
+          "average": 7.234086242299795
         }, 
         "2006": {
-          "count": 1491, 
-          "sum": 10828, 
-          "average": 7.26224010731053
+          "count": 495, 
+          "sum": 3584, 
+          "average": 7.240404040404041
         }, 
         "2007": {
-          "count": 1521, 
-          "sum": 11008, 
-          "average": 7.237343852728468
+          "count": 507, 
+          "sum": 3672, 
+          "average": 7.242603550295858
         }, 
         "2004": {
-          "count": 1450, 
-          "sum": 10432, 
-          "average": 7.19448275862069
+          "count": 483, 
+          "sum": 3445, 
+          "average": 7.132505175983437
         }, 
         "2005": {
-          "count": 1516, 
-          "sum": 10825, 
-          "average": 7.1405013192612135
+          "count": 505, 
+          "sum": 3672, 
+          "average": 7.2712871287128715
         }, 
         "2008": {
-          "count": 1652, 
-          "sum": 12172, 
-          "average": 7.368038740920097
+          "count": 551, 
+          "sum": 4079, 
+          "average": 7.402903811252268
         }, 
         "2009": {
-          "count": 1439, 
-          "sum": 10377, 
-          "average": 7.211257817929117
+          "count": 480, 
+          "sum": 3442, 
+          "average": 7.170833333333333
         }
       }, 
       "broadway.[0].Date.Year": {
         "2015": {
-          "count": 1574, 
-          "sum": 3171610, 
+          "count": 524, 
+          "sum": 1055860, 
           "average": 2015.0
         }, 
         "2014": {
-          "count": 1613, 
-          "sum": 3248582, 
+          "count": 540, 
+          "sum": 1087560, 
           "average": 2014.0
         }, 
         "2016": {
-          "count": 1055, 
-          "sum": 2126880, 
+          "count": 356, 
+          "sum": 717696, 
           "average": 2016.0
         }, 
         "2011": {
-          "count": 1480, 
-          "sum": 2976280, 
+          "count": 493, 
+          "sum": 991423, 
           "average": 2011.0
         }, 
         "2010": {
-          "count": 1546, 
-          "sum": 3107460, 
+          "count": 515, 
+          "sum": 1035150, 
           "average": 2010.0
         }, 
         "2013": {
-          "count": 1377, 
-          "sum": 2771901, 
+          "count": 457, 
+          "sum": 919941, 
           "average": 2013.0
         }, 
         "2012": {
-          "count": 1555, 
-          "sum": 3128660, 
+          "count": 518, 
+          "sum": 1042216, 
           "average": 2012.0
         }, 
         "1991": {
-          "count": 41, 
-          "sum": 81631, 
+          "count": 14, 
+          "sum": 27874, 
           "average": 1991.0
         }, 
-        "1990": {
-          "count": 1, 
-          "sum": 1990, 
-          "average": 1990.0
-        }, 
         "1993": {
-          "count": 95, 
-          "sum": 189335, 
+          "count": 31, 
+          "sum": 61783, 
           "average": 1993.0
         }, 
         "1992": {
-          "count": 73, 
-          "sum": 145416, 
+          "count": 25, 
+          "sum": 49800, 
           "average": 1992.0
         }, 
         "1995": {
-          "count": 411, 
-          "sum": 819945, 
+          "count": 137, 
+          "sum": 273315, 
           "average": 1995.0
         }, 
         "1994": {
-          "count": 167, 
-          "sum": 332998, 
+          "count": 56, 
+          "sum": 111664, 
           "average": 1994.0
         }, 
         "1997": {
-          "count": 1340, 
-          "sum": 2675980, 
+          "count": 447, 
+          "sum": 892659, 
           "average": 1997.0
         }, 
         "1996": {
-          "count": 941, 
-          "sum": 1878236, 
+          "count": 314, 
+          "sum": 626744, 
           "average": 1996.0
         }, 
         "1999": {
-          "count": 1465, 
-          "sum": 2928535, 
+          "count": 489, 
+          "sum": 977511, 
           "average": 1999.0
         }, 
         "1998": {
-          "count": 1432, 
-          "sum": 2861136, 
+          "count": 475, 
+          "sum": 949050, 
           "average": 1998.0
         }, 
         "2002": {
-          "count": 1506, 
-          "sum": 3015012, 
+          "count": 502, 
+          "sum": 1005004, 
           "average": 2002.0
         }, 
         "2003": {
-          "count": 1455, 
-          "sum": 2914365, 
+          "count": 486, 
+          "sum": 973458, 
           "average": 2003.0
         }, 
         "2000": {
-          "count": 1524, 
-          "sum": 3048000, 
+          "count": 508, 
+          "sum": 1016000, 
           "average": 2000.0
         }, 
         "2001": {
-          "count": 1462, 
-          "sum": 2925462, 
+          "count": 487, 
+          "sum": 974487, 
           "average": 2001.0
         }, 
         "2006": {
-          "count": 1491, 
-          "sum": 2990946, 
+          "count": 495, 
+          "sum": 992970, 
           "average": 2006.0
         }, 
         "2007": {
-          "count": 1521, 
-          "sum": 3052647, 
+          "count": 507, 
+          "sum": 1017549, 
           "average": 2007.0
         }, 
         "2004": {
-          "count": 1450, 
-          "sum": 2905800, 
+          "count": 483, 
+          "sum": 967932, 
           "average": 2004.0
         }, 
         "2005": {
-          "count": 1516, 
-          "sum": 3039580, 
+          "count": 505, 
+          "sum": 1012525, 
           "average": 2005.0
         }, 
         "2008": {
-          "count": 1652, 
-          "sum": 3317216, 
+          "count": 551, 
+          "sum": 1106408, 
           "average": 2008.0
         }, 
         "2009": {
-          "count": 1439, 
-          "sum": 2890951, 
+          "count": 480, 
+          "sum": 964320, 
           "average": 2009.0
         }
       }, 
       "broadway.[0].Date.Day": {
         "2015": {
-          "count": 1574, 
-          "sum": 24518, 
-          "average": 15.57687420584498
+          "count": 524, 
+          "sum": 8162, 
+          "average": 15.576335877862595
         }, 
         "2014": {
-          "count": 1613, 
-          "sum": 25641, 
-          "average": 15.896466212027278
+          "count": 540, 
+          "sum": 8599, 
+          "average": 15.924074074074074
         }, 
         "2016": {
-          "count": 1055, 
-          "sum": 16441, 
-          "average": 15.58388625592417
+          "count": 356, 
+          "sum": 5541, 
+          "average": 15.564606741573034
         }, 
         "2011": {
-          "count": 1480, 
-          "sum": 23092, 
-          "average": 15.602702702702702
+          "count": 493, 
+          "sum": 7702, 
+          "average": 15.622718052738337
         }, 
         "2010": {
-          "count": 1546, 
-          "sum": 25099, 
-          "average": 16.234799482535575
+          "count": 515, 
+          "sum": 8448, 
+          "average": 16.40388349514563
         }, 
         "2013": {
-          "count": 1377, 
-          "sum": 21568, 
-          "average": 15.663035584604213
+          "count": 457, 
+          "sum": 7086, 
+          "average": 15.5054704595186
         }, 
         "2012": {
-          "count": 1555, 
-          "sum": 23782, 
-          "average": 15.293890675241158
+          "count": 518, 
+          "sum": 7926, 
+          "average": 15.301158301158301
         }, 
         "1991": {
-          "count": 41, 
-          "sum": 665, 
-          "average": 16.21951219512195
-        }, 
-        "1990": {
-          "count": 1, 
-          "sum": 26, 
-          "average": 26.0
+          "count": 14, 
+          "sum": 225, 
+          "average": 16.071428571428573
         }, 
         "1993": {
-          "count": 95, 
-          "sum": 1527, 
-          "average": 16.073684210526316
+          "count": 31, 
+          "sum": 498, 
+          "average": 16.06451612903226
         }, 
         "1992": {
-          "count": 73, 
-          "sum": 1152, 
-          "average": 15.780821917808218
+          "count": 25, 
+          "sum": 345, 
+          "average": 13.8
         }, 
         "1995": {
-          "count": 411, 
-          "sum": 6362, 
-          "average": 15.479318734793187
+          "count": 137, 
+          "sum": 2101, 
+          "average": 15.335766423357665
         }, 
         "1994": {
-          "count": 167, 
-          "sum": 2626, 
-          "average": 15.724550898203592
+          "count": 56, 
+          "sum": 928, 
+          "average": 16.571428571428573
         }, 
         "1997": {
-          "count": 1340, 
-          "sum": 21445, 
-          "average": 16.003731343283583
+          "count": 447, 
+          "sum": 7167, 
+          "average": 16.033557046979865
         }, 
         "1996": {
-          "count": 941, 
-          "sum": 14748, 
-          "average": 15.67268862911796
+          "count": 314, 
+          "sum": 4934, 
+          "average": 15.713375796178344
         }, 
         "1999": {
-          "count": 1465, 
-          "sum": 23731, 
-          "average": 16.198634812286688
+          "count": 489, 
+          "sum": 7911, 
+          "average": 16.177914110429448
         }, 
         "1998": {
-          "count": 1432, 
-          "sum": 22166, 
-          "average": 15.47905027932961
+          "count": 475, 
+          "sum": 7311, 
+          "average": 15.391578947368421
         }, 
         "2002": {
-          "count": 1506, 
-          "sum": 23770, 
-          "average": 15.783532536520584
+          "count": 502, 
+          "sum": 7857, 
+          "average": 15.651394422310757
         }, 
         "2003": {
-          "count": 1455, 
-          "sum": 22931, 
-          "average": 15.760137457044674
+          "count": 486, 
+          "sum": 7718, 
+          "average": 15.880658436213992
         }, 
         "2000": {
-          "count": 1524, 
-          "sum": 24047, 
-          "average": 15.778871391076116
+          "count": 508, 
+          "sum": 8075, 
+          "average": 15.895669291338583
         }, 
         "2001": {
-          "count": 1462, 
-          "sum": 22651, 
-          "average": 15.493160054719562
+          "count": 487, 
+          "sum": 7552, 
+          "average": 15.507186858316222
         }, 
         "2006": {
-          "count": 1491, 
-          "sum": 23525, 
-          "average": 15.778001341381623
+          "count": 495, 
+          "sum": 7812, 
+          "average": 15.781818181818181
         }, 
         "2007": {
-          "count": 1521, 
-          "sum": 23248, 
-          "average": 15.284681130834977
+          "count": 507, 
+          "sum": 7694, 
+          "average": 15.175542406311637
         }, 
         "2004": {
-          "count": 1450, 
-          "sum": 22815, 
-          "average": 15.73448275862069
+          "count": 483, 
+          "sum": 7622, 
+          "average": 15.780538302277433
         }, 
         "2005": {
-          "count": 1516, 
-          "sum": 23865, 
-          "average": 15.742084432717679
+          "count": 505, 
+          "sum": 7923, 
+          "average": 15.68910891089109
         }, 
         "2008": {
-          "count": 1652, 
-          "sum": 26264, 
-          "average": 15.898305084745763
+          "count": 551, 
+          "sum": 8806, 
+          "average": 15.98185117967332
         }, 
         "2009": {
-          "count": 1439, 
-          "sum": 22346, 
-          "average": 15.528839471855456
+          "count": 480, 
+          "sum": 7500, 
+          "average": 15.625
         }
       }, 
       "broadway.[0].Date.Month": {
         "2015": {
-          "count": 1574, 
-          "sum": 10444, 
-          "average": 6.635324015247776
+          "count": 524, 
+          "sum": 3480, 
+          "average": 6.641221374045801
         }, 
         "2014": {
-          "count": 1613, 
-          "sum": 10749, 
-          "average": 6.663980161190328
+          "count": 540, 
+          "sum": 3596, 
+          "average": 6.659259259259259
         }, 
         "2016": {
-          "count": 1055, 
-          "sum": 4446, 
-          "average": 4.214218009478673
+          "count": 356, 
+          "sum": 1500, 
+          "average": 4.213483146067416
         }, 
         "2011": {
-          "count": 1480, 
-          "sum": 9609, 
-          "average": 6.492567567567567
+          "count": 493, 
+          "sum": 3207, 
+          "average": 6.505070993914807
         }, 
         "2010": {
-          "count": 1546, 
-          "sum": 10317, 
-          "average": 6.673350582147477
+          "count": 515, 
+          "sum": 3443, 
+          "average": 6.6854368932038835
         }, 
         "2013": {
-          "count": 1377, 
-          "sum": 9264, 
-          "average": 6.727668845315904
+          "count": 457, 
+          "sum": 3069, 
+          "average": 6.715536105032823
         }, 
         "2012": {
-          "count": 1555, 
-          "sum": 9934, 
-          "average": 6.388424437299036
+          "count": 518, 
+          "sum": 3317, 
+          "average": 6.403474903474904
         }, 
         "1991": {
-          "count": 41, 
-          "sum": 321, 
-          "average": 7.829268292682927
-        }, 
-        "1990": {
-          "count": 1, 
-          "sum": 8, 
-          "average": 8.0
+          "count": 14, 
+          "sum": 109, 
+          "average": 7.785714285714286
         }, 
         "1993": {
-          "count": 95, 
-          "sum": 659, 
-          "average": 6.936842105263158
+          "count": 31, 
+          "sum": 219, 
+          "average": 7.064516129032258
         }, 
         "1992": {
-          "count": 73, 
-          "sum": 454, 
-          "average": 6.219178082191781
+          "count": 25, 
+          "sum": 160, 
+          "average": 6.4
         }, 
         "1995": {
-          "count": 411, 
-          "sum": 2901, 
-          "average": 7.0583941605839415
+          "count": 137, 
+          "sum": 970, 
+          "average": 7.08029197080292
         }, 
         "1994": {
-          "count": 167, 
-          "sum": 1167, 
-          "average": 6.9880239520958085
+          "count": 56, 
+          "sum": 391, 
+          "average": 6.982142857142857
         }, 
         "1997": {
-          "count": 1340, 
-          "sum": 8933, 
-          "average": 6.666417910447761
+          "count": 447, 
+          "sum": 2980, 
+          "average": 6.666666666666667
         }, 
         "1996": {
-          "count": 941, 
-          "sum": 7564, 
-          "average": 8.038257173219979
+          "count": 314, 
+          "sum": 2525, 
+          "average": 8.04140127388535
         }, 
         "1999": {
-          "count": 1465, 
-          "sum": 9316, 
-          "average": 6.359044368600682
+          "count": 489, 
+          "sum": 3114, 
+          "average": 6.368098159509202
         }, 
         "1998": {
-          "count": 1432, 
-          "sum": 9022, 
-          "average": 6.300279329608938
+          "count": 475, 
+          "sum": 2998, 
+          "average": 6.311578947368421
         }, 
         "2002": {
-          "count": 1506, 
-          "sum": 10117, 
-          "average": 6.7177954847277555
+          "count": 502, 
+          "sum": 3375, 
+          "average": 6.723107569721115
         }, 
         "2003": {
-          "count": 1455, 
-          "sum": 9445, 
-          "average": 6.491408934707904
+          "count": 486, 
+          "sum": 3158, 
+          "average": 6.497942386831276
         }, 
         "2000": {
-          "count": 1524, 
-          "sum": 9845, 
-          "average": 6.45997375328084
+          "count": 508, 
+          "sum": 3283, 
+          "average": 6.46259842519685
         }, 
         "2001": {
-          "count": 1462, 
-          "sum": 9507, 
-          "average": 6.502735978112175
+          "count": 487, 
+          "sum": 3168, 
+          "average": 6.505133470225872
         }, 
         "2006": {
-          "count": 1491, 
-          "sum": 9756, 
-          "average": 6.543259557344064
+          "count": 495, 
+          "sum": 3224, 
+          "average": 6.513131313131313
         }, 
         "2007": {
-          "count": 1521, 
-          "sum": 9829, 
-          "average": 6.462195923734385
+          "count": 507, 
+          "sum": 3275, 
+          "average": 6.459566074950691
         }, 
         "2004": {
-          "count": 1450, 
-          "sum": 9408, 
-          "average": 6.488275862068965
+          "count": 483, 
+          "sum": 3137, 
+          "average": 6.494824016563147
         }, 
         "2005": {
-          "count": 1516, 
-          "sum": 9721, 
-          "average": 6.412269129287599
+          "count": 505, 
+          "sum": 3236, 
+          "average": 6.407920792079208
         }, 
         "2008": {
-          "count": 1652, 
-          "sum": 10619, 
-          "average": 6.427966101694915
+          "count": 551, 
+          "sum": 3539, 
+          "average": 6.422867513611616
         }, 
         "2009": {
-          "count": 1439, 
-          "sum": 9523, 
-          "average": 6.617790132036136
+          "count": 480, 
+          "sum": 3178, 
+          "average": 6.620833333333334
         }
       }, 
       "broadway.[0].Statistics.Gross Potential": {
         "2015": {
-          "count": 1574, 
-          "sum": 108702, 
-          "average": 69.06099110546378
+          "count": 524, 
+          "sum": 36408, 
+          "average": 69.48091603053435
         }, 
         "2014": {
-          "count": 1613, 
-          "sum": 114247, 
-          "average": 70.82889026658401
+          "count": 540, 
+          "sum": 38538, 
+          "average": 71.36666666666666
         }, 
         "2016": {
-          "count": 1055, 
-          "sum": 68377, 
-          "average": 64.81232227488151
+          "count": 356, 
+          "sum": 23144, 
+          "average": 65.01123595505618
         }, 
         "2011": {
-          "count": 1480, 
-          "sum": 91837, 
-          "average": 62.05202702702703
+          "count": 493, 
+          "sum": 30170, 
+          "average": 61.19675456389452
         }, 
         "2010": {
-          "count": 1546, 
-          "sum": 91469, 
-          "average": 59.16494178525227
+          "count": 515, 
+          "sum": 29983, 
+          "average": 58.21941747572816
         }, 
         "2013": {
-          "count": 1377, 
-          "sum": 96347, 
-          "average": 69.9687726942629
+          "count": 457, 
+          "sum": 31796, 
+          "average": 69.57549234135668
         }, 
         "2012": {
-          "count": 1555, 
-          "sum": 96993, 
-          "average": 62.37491961414791
+          "count": 518, 
+          "sum": 31255, 
+          "average": 60.33783783783784
         }, 
         "1991": {
-          "count": 41, 
-          "sum": 0, 
-          "average": 0.0
-        }, 
-        "1990": {
-          "count": 1, 
+          "count": 14, 
           "sum": 0, 
           "average": 0.0
         }, 
         "1993": {
-          "count": 95, 
-          "sum": 3721, 
-          "average": 39.16842105263158
+          "count": 31, 
+          "sum": 1391, 
+          "average": 44.87096774193548
         }, 
         "1992": {
-          "count": 73, 
-          "sum": 1549, 
-          "average": 21.21917808219178
+          "count": 25, 
+          "sum": 532, 
+          "average": 21.28
         }, 
         "1995": {
-          "count": 411, 
-          "sum": 7915, 
-          "average": 19.257907542579076
+          "count": 137, 
+          "sum": 3079, 
+          "average": 22.474452554744527
         }, 
         "1994": {
-          "count": 167, 
-          "sum": 2121, 
-          "average": 12.70059880239521
+          "count": 56, 
+          "sum": 653, 
+          "average": 11.660714285714286
         }, 
         "1997": {
-          "count": 1340, 
-          "sum": 54103, 
-          "average": 40.375373134328356
+          "count": 447, 
+          "sum": 17837, 
+          "average": 39.903803131991054
         }, 
         "1996": {
-          "count": 941, 
-          "sum": 2003, 
-          "average": 2.128586609989373
+          "count": 314, 
+          "sum": 605, 
+          "average": 1.9267515923566878
         }, 
         "1999": {
-          "count": 1465, 
-          "sum": 97701, 
-          "average": 66.6901023890785
+          "count": 489, 
+          "sum": 32312, 
+          "average": 66.07770961145194
         }, 
         "1998": {
-          "count": 1432, 
-          "sum": 100954, 
-          "average": 70.49860335195531
+          "count": 475, 
+          "sum": 32534, 
+          "average": 68.49263157894737
         }, 
         "2002": {
-          "count": 1506, 
-          "sum": 100796, 
-          "average": 66.92961487383798
+          "count": 502, 
+          "sum": 33591, 
+          "average": 66.91434262948208
         }, 
         "2003": {
-          "count": 1455, 
-          "sum": 94258, 
-          "average": 64.78213058419244
+          "count": 486, 
+          "sum": 32023, 
+          "average": 65.89094650205762
         }, 
         "2000": {
-          "count": 1524, 
-          "sum": 107000, 
-          "average": 70.20997375328083
+          "count": 508, 
+          "sum": 35640, 
+          "average": 70.15748031496064
         }, 
         "2001": {
-          "count": 1462, 
-          "sum": 97550, 
-          "average": 66.72366621067032
+          "count": 487, 
+          "sum": 32722, 
+          "average": 67.19096509240246
         }, 
         "2006": {
-          "count": 1491, 
-          "sum": 110395, 
-          "average": 74.04091213950369
+          "count": 495, 
+          "sum": 36592, 
+          "average": 73.92323232323233
         }, 
         "2007": {
-          "count": 1521, 
-          "sum": 102061, 
-          "average": 67.10124917817225
+          "count": 507, 
+          "sum": 33961, 
+          "average": 66.98422090729782
         }, 
         "2004": {
-          "count": 1450, 
-          "sum": 92993, 
-          "average": 64.13310344827586
+          "count": 483, 
+          "sum": 30926, 
+          "average": 64.02898550724638
         }, 
         "2005": {
-          "count": 1516, 
-          "sum": 103056, 
-          "average": 67.97889182058047
+          "count": 505, 
+          "sum": 34182, 
+          "average": 67.68712871287129
         }, 
         "2008": {
-          "count": 1652, 
-          "sum": 102268, 
-          "average": 61.90556900726392
+          "count": 551, 
+          "sum": 33553, 
+          "average": 60.89473684210526
         }, 
         "2009": {
-          "count": 1439, 
-          "sum": 91966, 
-          "average": 63.909659485754
+          "count": 480, 
+          "sum": 29813, 
+          "average": 62.110416666666666
         }
       }
     }, 
@@ -3453,7 +3413,6 @@ broadway_bar = [
       "2013", 
       "2012", 
       "1991", 
-      "1990", 
       "1993", 
       "1992", 
       "1995", 
@@ -3483,138 +3442,138 @@ broadway_bar = [
     "data": {
       "broadway.[0].Statistics.Gross": {
         "Play": {
-          "count": 8394, 
-          "sum": 2734834004, 
-          "average": 325808.1968072433
+          "count": 2778, 
+          "sum": 872162205, 
+          "average": 313953.277537797
         }, 
         "Musical": {
-          "count": 22454, 
-          "sum": 15566727474, 
-          "average": 693271.9103055135
+          "count": 7510, 
+          "sum": 5218110788, 
+          "average": 694821.6761651132
         }, 
         "Special": {
-          "count": 334, 
-          "sum": 120306367, 
-          "average": 360198.7035928144
+          "count": 107, 
+          "sum": 36440532, 
+          "average": 340565.7196261682
         }
       }, 
       "broadway.[0].Statistics.Attendance": {
         "Play": {
-          "count": 8394, 
-          "sum": 42986253, 
-          "average": 5121.068977841315
+          "count": 2778, 
+          "sum": 14018786, 
+          "average": 5046.359251259899
         }, 
         "Musical": {
-          "count": 22454, 
-          "sum": 204500983, 
-          "average": 9107.552462812862
+          "count": 7510, 
+          "sum": 68482295, 
+          "average": 9118.814247669774
         }, 
         "Special": {
-          "count": 334, 
-          "sum": 1690707, 
-          "average": 5061.997005988024
+          "count": 107, 
+          "sum": 525147, 
+          "average": 4907.915887850468
         }
       }, 
       "broadway.[0].Statistics.Capacity": {
         "Play": {
-          "count": 8394, 
-          "sum": 615445, 
-          "average": 73.31963307124137
+          "count": 2778, 
+          "sum": 202919, 
+          "average": 73.04499640028797
         }, 
         "Musical": {
-          "count": 22454, 
-          "sum": 1871884, 
-          "average": 83.36528012826223
+          "count": 7510, 
+          "sum": 624447, 
+          "average": 83.14873501997337
         }, 
         "Special": {
-          "count": 334, 
-          "sum": 24067, 
-          "average": 72.05688622754491
+          "count": 107, 
+          "sum": 7643, 
+          "average": 71.42990654205607
         }
       }, 
       "broadway.[0].Statistics.Performances": {
         "Play": {
-          "count": 8394, 
-          "sum": 53816, 
-          "average": 6.4112461281868
+          "count": 2778, 
+          "sum": 17666, 
+          "average": 6.359251259899208
         }, 
         "Musical": {
-          "count": 22454, 
-          "sum": 169690, 
-          "average": 7.557228110804311
+          "count": 7510, 
+          "sum": 56750, 
+          "average": 7.55659121171771
         }, 
         "Special": {
-          "count": 334, 
-          "sum": 1686, 
-          "average": 5.047904191616767
+          "count": 107, 
+          "sum": 555, 
+          "average": 5.186915887850467
         }
       }, 
       "broadway.[0].Date.Year": {
         "Play": {
-          "count": 8394, 
-          "sum": 16834654, 
-          "average": 2005.5580176316416
+          "count": 2778, 
+          "sum": 5571401, 
+          "average": 2005.5439164866812
         }, 
         "Musical": {
-          "count": 22454, 
-          "sum": 45042536, 
-          "average": 2005.9916273269796
+          "count": 7510, 
+          "sum": 15065050, 
+          "average": 2005.9986684420771
         }, 
         "Special": {
-          "count": 334, 
-          "sum": 669364, 
-          "average": 2004.0838323353294
+          "count": 107, 
+          "sum": 214448, 
+          "average": 2004.1869158878505
         }
       }, 
       "broadway.[0].Date.Day": {
         "Play": {
-          "count": 8394, 
-          "sum": 132077, 
-          "average": 15.734691446271146
+          "count": 2778, 
+          "sum": 43846, 
+          "average": 15.783297336213103
         }, 
         "Musical": {
-          "count": 22454, 
-          "sum": 352854, 
-          "average": 15.714527478400285
+          "count": 7510, 
+          "sum": 117856, 
+          "average": 15.693209054593876
         }, 
         "Special": {
-          "count": 334, 
-          "sum": 5120, 
-          "average": 15.32934131736527
+          "count": 107, 
+          "sum": 1741, 
+          "average": 16.27102803738318
         }
       }, 
       "broadway.[0].Date.Month": {
         "Play": {
-          "count": 8394, 
-          "sum": 53310, 
-          "average": 6.35096497498213
+          "count": 2778, 
+          "sum": 17561, 
+          "average": 6.3214542836573075
         }, 
         "Musical": {
-          "count": 22454, 
-          "sum": 147141, 
-          "average": 6.552997238799323
+          "count": 7510, 
+          "sum": 49333, 
+          "average": 6.568974700399467
         }, 
         "Special": {
-          "count": 334, 
-          "sum": 2427, 
-          "average": 7.266467065868263
+          "count": 107, 
+          "sum": 757, 
+          "average": 7.074766355140187
         }
       }, 
       "broadway.[0].Statistics.Gross Potential": {
         "Play": {
-          "count": 8394, 
-          "sum": 445269, 
-          "average": 53.046104360257324
+          "count": 2778, 
+          "sum": 144595, 
+          "average": 52.05003599712023
         }, 
         "Musical": {
-          "count": 22454, 
-          "sum": 1477928, 
-          "average": 65.82025474303019
+          "count": 7510, 
+          "sum": 493200, 
+          "average": 65.67243675099867
         }, 
         "Special": {
-          "count": 334, 
-          "sum": 17185, 
-          "average": 51.452095808383234
+          "count": 107, 
+          "sum": 5445, 
+          "average": 50.88785046728972
         }
       }
     }, 

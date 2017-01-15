@@ -78,6 +78,10 @@ function captureImage() {
         .height(100+parseInt(svg_object.attr('height')));*/
     $('#capture-dialog .modal-body').height(100+parseInt(svg_object.attr('height')));
     $('#capture-dialog .modal-dialog').width(30+parseInt(svg_object.attr('width')))
+    // TODO: If IE then set href to "#"
+    $("#download-image")
+            .attr("href", url)
+            .attr("download", generateSafeFilename(mainModel.settings.title())+".png");
     img.onload = function(){
         // Now that the image has loaded, put the image into a canvas element.
         var canvas = document.createElement('canvas');
@@ -85,7 +89,13 @@ function captureImage() {
         canvas.height = svg_object.attr('height');
         var ctx = canvas.getContext('2d');
         ctx.drawImage(img, 0, 0);
-        var canvasUrl = canvas.toDataURL("image/png");
+        // TODO: TRY CATCH
+        var canvasUrl = "";
+        try {
+            canvasUrl = canvas.toDataURL("image/png");
+        } catch (e) {
+            canvasUrl = url;
+        }
         img.onload = null;
         img.setAttribute('src', canvasUrl);
         $("#download-image")
@@ -150,9 +160,9 @@ var COLOR_SCHEMES = [
     
 var mainModel = {
     'aggregators': ko.observableArray([
+        {'name': 'Average', 'id': 'average'},
         {'name': 'Count', 'id': 'count'},
-        {'name': 'Sum', 'id': 'sum'},
-        {'name': 'Average', 'id': 'average'}
+        {'name': 'Sum', 'id': 'sum'}
     ]),
     'schemes': COLOR_SCHEMES,
     'settings': {
@@ -267,6 +277,8 @@ $(document).ready(function () {
         captureImage();
         $("#capture-dialog").modal('show');
     });
+    
+    $(".hide-on-load").hide();
 
     ko.applyBindings(mainModel);
     
@@ -621,7 +633,6 @@ $(document).ready(function () {
                 //.style('outline', '1px solid '+mainModel.settings.color().stroke)
                 .attr("height", height - y(0));
                 
-            console.log(width, histMapper.length, width/histMapper.length);
             bars.transition()
                 .duration(500)
                 .attr("x", function(d) { return x(d.x); })
@@ -633,7 +644,8 @@ $(document).ready(function () {
         var x_axis_label = mainModel.selected.chart().id == 'bar' ? 
                   mainModel.selected.category().pretty : 
                   mainModel.selected.chart().id == 'line' ? 
-                  (mainModel.selected.dataset().order) : 
+                  //(mainModel.selected.dataset().order) : 
+                  (mainModel.selected.bar_dataset().data.filter( cur => cur.name != mainModel.selected.filter() ).reduce( (pre, cur) => pre+" / "+cur.pretty, "").substring(3)) :
                   mainModel.selected.first().pretty;
         var y_axis_label = mainModel.selected.chart().id == 'hist' ? 
                   'Number of '+mainModel.selected.dataset().row+"s": 
@@ -703,6 +715,7 @@ $(document).ready(function () {
     mainModel.selected.filter_value.subscribe(changeDataset);
     
     mainModel.selected.chart.subscribe(function (chart_type) {
+        mainModel.settings.title("Add your title here")
     });
     
     mainModel.settings.bins.subscribe(changeDataset);
@@ -722,7 +735,7 @@ $(document).ready(function () {
 
 <div class="page-header">
     
-    <img class="img-rounded pull-right" src="publishers.png" alt="Publishers" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="specs/publishers/publishers_splash.png" alt="specs/publishers/publishers_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Visualize Publishers</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -731,8 +744,15 @@ $(document).ready(function () {
     <span class="text-muted">Tags: publishers, amazon, books, sales, genres, literature, english</span><br>
 </div>
 
-<div class='row hide-on-load'>
-    Please be patient while the page loads! This can take a little the first time.
+<div class="alert hide-on-load alert-warning row" role="alert">
+    <p style='padding-bottom:10px'>
+    <b>Please Wait!</b> The page is loading; this can take a little while the first time.
+  </p>
+  <div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only">45% Complete</span>
+  </div>
+  </div>
 </div>
 
 <div class='modal fade' id="capture-dialog" style='display:none'>

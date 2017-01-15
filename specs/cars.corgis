@@ -72,7 +72,7 @@ comments:
         Number of Forward Gears: The number of forward gears. If no information is available, it is coded as 0.
         Transmission: The full name of this type of transmission, based on its Classification and number of forward gears.
     Fuel Information:
-        City mph: The miles-per-gallon this car gets on average in cities.
+        City mpg: The miles-per-gallon this car gets on average in cities.
         Fuel Type: Whether this car takes "Gasoline", "Diesel fuel", "Electricity", "Compressed natural gas", or "E85" (a term that refers to high-level ethanol-gasoline blends containing 51%-83% ethanol). If it is unknown, it is left blank.
         Highway mpg: The miles-per-gallon this car gets on average on highways.
     Identification:

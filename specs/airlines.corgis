@@ -3,6 +3,7 @@ metadata:
     name: Airlines
     builder: 2
     hardware: 100
+    outliers: True
     author: Austin Cory Bart <acbart@vt.edu>
     datetime: 3/27/2015
     tags: [airplane, airports, travel, plane, air, flights, delays, national, united states, transportation]

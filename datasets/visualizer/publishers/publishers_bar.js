@@ -6,6076 +6,23 @@ publishers_bar = [
       "(Single-Author Publisher)", 
       "HarperCollins e-books", 
       "HarperCollins", 
-      "Random House Books for Young Readers", 
       "Simon & Schuster", 
-      "Vintage", 
+      "Random House Books for Young Readers", 
+      "St. Martin's Press", 
       "Berkley", 
-      "Ballantine Books"
+      "Vintage"
     ], 
     "data": {
-      "publishers.[0].daily.units sold": {
-        "Simon Pulse/Mercury Ink": {
-          "count": 1, 
-          "sum": 57, 
-          "average": 57.0
-        }, 
-        "Gallery Books": {
-          "count": 56, 
-          "sum": 2592, 
-          "average": 46.285714285714285
-        }, 
-        "Dial": {
-          "count": 10, 
-          "sum": 55, 
-          "average": 5.5
-        }, 
-        "McClelland & Stewart": {
-          "count": 1, 
-          "sum": 2, 
-          "average": 2.0
-        }, 
-        "Tor Books": {
-          "count": 77, 
-          "sum": 2589, 
-          "average": 33.62337662337662
-        }, 
-        "Penguin Young Readers": {
-          "count": 1, 
-          "sum": 11, 
-          "average": 11.0
-        }, 
-        "ESPN": {
-          "count": 2, 
-          "sum": 13, 
-          "average": 6.5
-        }, 
-        "Bantam": {
-          "count": 132, 
-          "sum": 4405, 
-          "average": 33.371212121212125
-        }, 
-        "Harper": {
-          "count": 55, 
-          "sum": 2696, 
-          "average": 49.018181818181816
-        }, 
-        "Portfolio": {
-          "count": 81, 
-          "sum": 1081, 
-          "average": 13.345679012345679
-        }, 
-        "Plume": {
-          "count": 52, 
-          "sum": 995, 
-          "average": 19.134615384615383
-        }, 
-        "Jericho Books": {
-          "count": 2, 
-          "sum": 30, 
-          "average": 15.0
-        }, 
-        "HarperTeen": {
-          "count": 28, 
-          "sum": 993, 
-          "average": 35.464285714285715
-        }, 
-        "NAL": {
-          "count": 33, 
-          "sum": 1218, 
-          "average": 36.90909090909091
-        }, 
-        "Avon Impulse": {
-          "count": 13, 
-          "sum": 568, 
-          "average": 43.69230769230769
-        }, 
-        "AmazonEncore": {
-          "count": 10, 
-          "sum": 287, 
-          "average": 28.7
-        }, 
-        "Zondervan/Youth Specialties": {
-          "count": 2, 
-          "sum": 4, 
-          "average": 2.0
-        }, 
-        "Dial Press Trade Paperback": {
-          "count": 2, 
-          "sum": 25, 
-          "average": 12.5
-        }, 
-        "Villard": {
-          "count": 6, 
-          "sum": 47, 
-          "average": 7.833333333333333
-        }, 
-        "Golden/Disney": {
-          "count": 6, 
-          "sum": 39, 
-          "average": 6.5
-        }, 
-        "RH/Disney": {
-          "count": 7, 
-          "sum": 87, 
-          "average": 12.428571428571429
-        }, 
-        "Hodder & Stoughton": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        "Newmarket Press": {
-          "count": 2, 
-          "sum": 4, 
-          "average": 2.0
-        }, 
-        "Little Brown and Company": {
-          "count": 141, 
-          "sum": 6715, 
-          "average": 47.6241134751773
-        }, 
-        "Grand Central Life & Style": {
-          "count": 15, 
-          "sum": 460, 
-          "average": 30.666666666666668
-        }, 
-        "Perigee": {
-          "count": 17, 
-          "sum": 238, 
-          "average": 14.0
-        }, 
-        "Golden Books": {
-          "count": 8, 
-          "sum": 26, 
-          "average": 3.25
-        }, 
-        "Thomas Dunne Books": {
-          "count": 36, 
-          "sum": 564, 
-          "average": 15.666666666666666
-        }, 
-        "HarperSport": {
-          "count": 2, 
-          "sum": 5, 
-          "average": 2.5
-        }, 
-        "Collins Reference": {
-          "count": 1, 
-          "sum": 12, 
-          "average": 12.0
-        }, 
-        "Tor Teen": {
-          "count": 1, 
-          "sum": 13, 
-          "average": 13.0
-        }, 
-        "Crown Archetype": {
-          "count": 28, 
-          "sum": 360, 
-          "average": 12.857142857142858
-        }, 
-        "Harper Element": {
-          "count": 20, 
-          "sum": 216, 
-          "average": 10.8
-        }, 
-        "(Indie Publisher)": {
-          "count": 5637, 
-          "sum": 141016, 
-          "average": 25.01614333865531
-        }, 
-        "Zondervan": {
-          "count": 65, 
-          "sum": 1934, 
-          "average": 29.753846153846155
-        }, 
-        "HarperWave": {
-          "count": 6, 
-          "sum": 312, 
-          "average": 52.0
-        }, 
-        "Studio": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        "Bantam Dell": {
-          "count": 1, 
-          "sum": 8, 
-          "average": 8.0
-        }, 
-        "Pocket Star": {
-          "count": 11, 
-          "sum": 406, 
-          "average": 36.90909090909091
-        }, 
-        "Avon": {
-          "count": 25, 
-          "sum": 1858, 
-          "average": 74.32
-        }, 
-        "Thomas & Mercer": {
-          "count": 102, 
-          "sum": 5234, 
-          "average": 51.31372549019608
-        }, 
-        "Thomas Nelson": {
-          "count": 90, 
-          "sum": 2223, 
-          "average": 24.7
-        }, 
-        "Penguin": {
-          "count": 37, 
-          "sum": 316, 
-          "average": 8.54054054054054
-        }, 
-        "Billboard Books": {
-          "count": 2, 
-          "sum": 2, 
-          "average": 1.0
-        }, 
-        "HarperBusiness": {
-          "count": 23, 
-          "sum": 381, 
-          "average": 16.565217391304348
-        }, 
-        "Simon Pulse": {
-          "count": 13, 
-          "sum": 496, 
-          "average": 38.15384615384615
-        }, 
-        "Little Brown Books for Young Readers": {
-          "count": 55, 
-          "sum": 801, 
-          "average": 14.563636363636364
-        }, 
-        "Cash Money Content": {
-          "count": 2, 
-          "sum": 16, 
-          "average": 8.0
-        }, 
-        "Harper Paperbacks": {
-          "count": 5, 
-          "sum": 21, 
-          "average": 4.2
-        }, 
-        "Simon & Schuster": {
-          "count": 198, 
-          "sum": 4236, 
-          "average": 21.393939393939394
-        }, 
-        "Putnam Adult": {
-          "count": 37, 
-          "sum": 2514, 
-          "average": 67.94594594594595
-        }, 
-        "Gallery Books/Karen Hunter Publishing": {
-          "count": 1, 
-          "sum": 4, 
-          "average": 4.0
-        }, 
-        "Reagan Arthur Books": {
-          "count": 2, 
-          "sum": 101, 
-          "average": 50.5
-        }, 
-        "William Morrow Impulse": {
-          "count": 2, 
-          "sum": 166, 
-          "average": 83.0
-        }, 
-        "Two Lions": {
-          "count": 64, 
-          "sum": 1030, 
-          "average": 16.09375
-        }, 
-        "Metropolitan Books": {
-          "count": 15, 
-          "sum": 184, 
-          "average": 12.266666666666667
-        }, 
-        "Potter Style": {
-          "count": 3, 
-          "sum": 17, 
-          "average": 5.666666666666667
-        }, 
-        "Poppy": {
-          "count": 1, 
-          "sum": 14, 
-          "average": 14.0
-        }, 
-        "Three Rivers Press": {
-          "count": 21, 
-          "sum": 292, 
-          "average": 13.904761904761905
-        }, 
-        "Little Simon": {
-          "count": 2, 
-          "sum": 2, 
-          "average": 1.0
-        }, 
-        "Avon Inspire": {
-          "count": 1, 
-          "sum": 52, 
-          "average": 52.0
-        }, 
-        "St. Martin's Paperbacks": {
-          "count": 18, 
-          "sum": 388, 
-          "average": 21.555555555555557
-        }, 
-        "PHILOMEL": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        "Celestial Arts": {
-          "count": 5, 
-          "sum": 47, 
-          "average": 9.4
-        }, 
-        "HarperTorch": {
-          "count": 1, 
-          "sum": 4, 
-          "average": 4.0
-        }, 
-        "Entangled: Bliss": {
-          "count": 1, 
-          "sum": 72, 
-          "average": 72.0
-        }, 
-        "Debbie Macomber Books": {
-          "count": 2, 
-          "sum": 322, 
-          "average": 161.0
-        }, 
-        "Roaring Brook Press": {
-          "count": 7, 
-          "sum": 48, 
-          "average": 6.857142857142857
-        }, 
-        "Sentinel": {
-          "count": 2, 
-          "sum": 174, 
-          "average": 87.0
-        }, 
-        "HarperStudio": {
-          "count": 1, 
-          "sum": 8, 
-          "average": 8.0
-        }, 
-        "Amazon Publishing": {
-          "count": 21, 
-          "sum": 735, 
-          "average": 35.0
-        }, 
-        "St. Martin's Press": {
-          "count": 147, 
-          "sum": 3540, 
-          "average": 24.081632653061224
-        }, 
-        "HarperPerennial Classics": {
-          "count": 5, 
-          "sum": 227, 
-          "average": 45.4
-        }, 
-        "Pintail": {
-          "count": 1, 
-          "sum": 105, 
-          "average": 105.0
-        }, 
-        "Current": {
-          "count": 3, 
-          "sum": 26, 
-          "average": 8.666666666666666
-        }, 
-        "HarperCollins e-books": {
-          "count": 378, 
-          "sum": 6190, 
-          "average": 16.375661375661377
-        }, 
-        "Gotham Books": {
-          "count": 27, 
-          "sum": 544, 
-          "average": 20.14814814814815
-        }, 
-        "MTV Books": {
-          "count": 2, 
-          "sum": 31, 
-          "average": 15.5
-        }, 
-        "Vintage": {
-          "count": 181, 
-          "sum": 3096, 
-          "average": 17.104972375690608
-        }, 
-        "Clarkson Potter": {
-          "count": 35, 
-          "sum": 161, 
-          "average": 4.6
-        }, 
-        "Grand Harbor Press": {
-          "count": 3, 
-          "sum": 41, 
-          "average": 13.666666666666666
-        }, 
-        "Harper Thorsons": {
-          "count": 1, 
-          "sum": 4, 
-          "average": 4.0
-        }, 
-        "Deepak Chopra": {
-          "count": 3, 
-          "sum": 17, 
-          "average": 5.666666666666667
-        }, 
-        "Picador": {
-          "count": 10, 
-          "sum": 103, 
-          "average": 10.3
-        }, 
-        "Harmony": {
-          "count": 57, 
-          "sum": 1024, 
-          "average": 17.964912280701753
-        }, 
-        "Signet Classic": {
-          "count": 4, 
-          "sum": 26, 
-          "average": 6.5
-        }, 
-        "47North": {
-          "count": 66, 
-          "sum": 2692, 
-          "average": 40.78787878787879
-        }, 
-        "HarperPress": {
-          "count": 3, 
-          "sum": 12, 
-          "average": 4.0
-        }, 
-        "Collins": {
-          "count": 8, 
-          "sum": 64, 
-          "average": 8.0
-        }, 
-        "Starscape": {
-          "count": 1, 
-          "sum": 2, 
-          "average": 2.0
-        }, 
-        "Atria/Emily Bestler Books": {
-          "count": 7, 
-          "sum": 480, 
-          "average": 68.57142857142857
-        }, 
-        "Dragonfly Books": {
-          "count": 1, 
-          "sum": 2, 
-          "average": 2.0
-        }, 
-        "Feiwel & Friends": {
-          "count": 9, 
-          "sum": 343, 
-          "average": 38.111111111111114
-        }, 
-        "DK Publishing": {
-          "count": 26, 
-          "sum": 103, 
-          "average": 3.9615384615384617
-        }, 
-        "Leer-e": {
-          "count": 1, 
-          "sum": 17, 
-          "average": 17.0
-        }, 
-        "Amphoto Books": {
-          "count": 9, 
-          "sum": 53, 
-          "average": 5.888888888888889
-        }, 
-        "Skyscape": {
-          "count": 11, 
-          "sum": 1502, 
-          "average": 136.54545454545453
-        }, 
-        "Avery": {
-          "count": 15, 
-          "sum": 214, 
-          "average": 14.266666666666667
-        }, 
-        "Appetite by Random House": {
-          "count": 1, 
-          "sum": 3, 
-          "average": 3.0
-        }, 
-        "Faber & Faber": {
-          "count": 6, 
-          "sum": 41, 
-          "average": 6.833333333333333
-        }, 
-        "AmazonCrossing": {
-          "count": 29, 
-          "sum": 1522, 
-          "average": 52.48275862068966
-        }, 
-        "Simon & Schuster Audio": {
-          "count": 1, 
-          "sum": 20, 
-          "average": 20.0
-        }, 
-        "Del Rey": {
-          "count": 45, 
-          "sum": 644, 
-          "average": 14.311111111111112
-        }, 
-        "Graywolf Press": {
-          "count": 2, 
-          "sum": 45, 
-          "average": 22.5
-        }, 
-        "Howard Books": {
-          "count": 20, 
-          "sum": 508, 
-          "average": 25.4
-        }, 
-        "First Second": {
-          "count": 3, 
-          "sum": 8, 
-          "average": 2.6666666666666665
-        }, 
-        "Walden Pond Press": {
-          "count": 3, 
-          "sum": 14, 
-          "average": 4.666666666666667
-        }, 
-        "Penguin Classic": {
-          "count": 17, 
-          "sum": 297, 
-          "average": 17.470588235294116
-        }, 
-        "Montlake Romance": {
-          "count": 66, 
-          "sum": 5650, 
-          "average": 85.60606060606061
-        }, 
-        "The Dial Press": {
-          "count": 2, 
-          "sum": 118, 
-          "average": 59.0
-        }, 
-        "Modern Library": {
-          "count": 5, 
-          "sum": 53, 
-          "average": 10.6
-        }, 
-        "Knopf": {
-          "count": 43, 
-          "sum": 1522, 
-          "average": 35.395348837209305
-        }, 
-        "Forever": {
-          "count": 18, 
-          "sum": 1434, 
-          "average": 79.66666666666667
-        }, 
-        "Riverhead": {
-          "count": 46, 
-          "sum": 1095, 
-          "average": 23.804347826086957
-        }, 
-        "Mulholland Books": {
-          "count": 8, 
-          "sum": 87, 
-          "average": 10.875
-        }, 
-        "Yearling": {
-          "count": 12, 
-          "sum": 78, 
-          "average": 6.5
-        }, 
-        "Hogarth": {
-          "count": 1, 
-          "sum": 107, 
-          "average": 107.0
-        }, 
-        "Bantam Classics": {
-          "count": 5, 
-          "sum": 58, 
-          "average": 11.6
-        }, 
-        "Potter Craft": {
-          "count": 6, 
-          "sum": 24, 
-          "average": 4.0
-        }, 
-        "Atheneum Books for Young Readers": {
-          "count": 36, 
-          "sum": 342, 
-          "average": 9.5
-        }, 
-        "Golden Guides from St. Martin's Press": {
-          "count": 1, 
-          "sum": 9, 
-          "average": 9.0
-        }, 
-        "Penguin Books": {
-          "count": 144, 
-          "sum": 2871, 
-          "average": 19.9375
-        }, 
-        "CLBusiness": {
-          "count": 1, 
-          "sum": 2, 
-          "average": 2.0
-        }, 
-        "Lone Eagle": {
-          "count": 1, 
-          "sum": 4, 
-          "average": 4.0
-        }, 
-        "Berkley": {
-          "count": 169, 
-          "sum": 5827, 
-          "average": 34.4792899408284
-        }, 
-        "Harper Voyager": {
-          "count": 10, 
-          "sum": 457, 
-          "average": 45.7
-        }, 
-        "Hyperion": {
-          "count": 62, 
-          "sum": 1493, 
-          "average": 24.080645161290324
-        }, 
-        "Anchor": {
-          "count": 74, 
-          "sum": 1412, 
-          "average": 19.08108108108108
-        }, 
-        "Signet": {
-          "count": 63, 
-          "sum": 2361, 
-          "average": 37.476190476190474
-        }, 
-        "Forge Books": {
-          "count": 19, 
-          "sum": 185, 
-          "average": 9.736842105263158
-        }, 
-        "Celebra": {
-          "count": 2, 
-          "sum": 131, 
-          "average": 65.5
-        }, 
-        "Knopf Books for Young Readers": {
-          "count": 30, 
-          "sum": 451, 
-          "average": 15.033333333333333
-        }, 
-        "William Morrow Cookbooks": {
-          "count": 14, 
-          "sum": 96, 
-          "average": 6.857142857142857
-        }, 
-        "Image": {
-          "count": 7, 
-          "sum": 44, 
-          "average": 6.285714285714286
-        }, 
-        "Roc": {
-          "count": 13, 
-          "sum": 163, 
-          "average": 12.538461538461538
-        }, 
-        "Simon & Schuster/Paula Wiseman Books": {
-          "count": 3, 
-          "sum": 4, 
-          "average": 1.3333333333333333
-        }, 
-        "St. Martin's Griffin": {
-          "count": 43, 
-          "sum": 626, 
-          "average": 14.55813953488372
-        }, 
-        "Pantheon": {
-          "count": 8, 
-          "sum": 134, 
-          "average": 16.75
-        }, 
-        "Reader's Digest": {
-          "count": 3, 
-          "sum": 89, 
-          "average": 29.666666666666668
-        }, 
-        "InterMix": {
-          "count": 4, 
-          "sum": 211, 
-          "average": 52.75
-        }, 
-        "Pocket Books": {
-          "count": 72, 
-          "sum": 1932, 
-          "average": 26.833333333333332
-        }, 
-        "Witness Impulse": {
-          "count": 12, 
-          "sum": 427, 
-          "average": 35.583333333333336
-        }, 
-        "Ivy Books": {
-          "count": 3, 
-          "sum": 8, 
-          "average": 2.6666666666666665
-        }, 
-        "Dutton Children's": {
-          "count": 4, 
-          "sum": 148, 
-          "average": 37.0
-        }, 
-        "Speak": {
-          "count": 19, 
-          "sum": 1452, 
-          "average": 76.42105263157895
-        }, 
-        "Yen Press": {
-          "count": 12, 
-          "sum": 34, 
-          "average": 2.8333333333333335
-        }, 
-        "Random House Reference": {
-          "count": 1, 
-          "sum": 6, 
-          "average": 6.0
-        }, 
-        "Greenwillow Books": {
-          "count": 17, 
-          "sum": 133, 
-          "average": 7.823529411764706
-        }, 
-        "Schwartz & Wade": {
-          "count": 2, 
-          "sum": 4, 
-          "average": 2.0
-        }, 
-        "Page Street Publishing": {
-          "count": 2, 
-          "sum": 22, 
-          "average": 11.0
-        }, 
-        "Island Books": {
-          "count": 3, 
-          "sum": 118, 
-          "average": 39.333333333333336
-        }, 
-        "PSS Juvenile": {
-          "count": 1, 
-          "sum": 8, 
-          "average": 8.0
-        }, 
-        "Joe Books": {
-          "count": 3, 
-          "sum": 69, 
-          "average": 23.0
-        }, 
-        "Viking Adult": {
-          "count": 29, 
-          "sum": 1090, 
-          "average": 37.58620689655172
-        }, 
-        "Blue Rider Press": {
-          "count": 8, 
-          "sum": 359, 
-          "average": 44.875
-        }, 
-        "Thorsons": {
-          "count": 4, 
-          "sum": 30, 
-          "average": 7.5
-        }, 
-        "David Fickling Books": {
-          "count": 1, 
-          "sum": 73, 
-          "average": 73.0
-        }, 
-        "Alfred A. Knopf BFYR": {
-          "count": 4, 
-          "sum": 12, 
-          "average": 3.0
-        }, 
-        "Minotaur Books": {
-          "count": 43, 
-          "sum": 1658, 
-          "average": 38.55813953488372
-        }, 
-        "Random House Trade Paperbacks": {
-          "count": 30, 
-          "sum": 763, 
-          "average": 25.433333333333334
-        }, 
-        "BradyGames": {
-          "count": 2, 
-          "sum": 6, 
-          "average": 3.0
-        }, 
-        "Renaissance Books": {
-          "count": 1, 
-          "sum": 12, 
-          "average": 12.0
-        }, 
-        "Harper Perennial": {
-          "count": 20, 
-          "sum": 193, 
-          "average": 9.65
-        }, 
-        "Viking Children's": {
-          "count": 4, 
-          "sum": 30, 
-          "average": 7.5
-        }, 
-        "North Point Press": {
-          "count": 5, 
-          "sum": 35, 
-          "average": 7.0
-        }, 
-        "Simon & Schuster Books for Young Readers": {
-          "count": 45, 
-          "sum": 516, 
-          "average": 11.466666666666667
-        }, 
-        "Random House": {
-          "count": 81, 
-          "sum": 1742, 
-          "average": 21.506172839506174
-        }, 
-        "Schocken": {
-          "count": 4, 
-          "sum": 19, 
-          "average": 4.75
-        }, 
-        "Meadowbrook": {
-          "count": 3, 
-          "sum": 17, 
-          "average": 5.666666666666667
-        }, 
-        "HarperFestival": {
-          "count": 5, 
-          "sum": 45, 
-          "average": 9.0
-        }, 
-        "Grand Central Publishing": {
-          "count": 94, 
-          "sum": 3952, 
-          "average": 42.04255319148936
-        }, 
-        "Zinc Ink": {
-          "count": 1, 
-          "sum": 4, 
-          "average": 4.0
-        }, 
-        "Entangled: Teen": {
-          "count": 2, 
-          "sum": 85, 
-          "average": 42.5
-        }, 
-        "Gildan Digital": {
-          "count": 1, 
-          "sum": 7, 
-          "average": 7.0
-        }, 
-        "Scientific American": {
-          "count": 9, 
-          "sum": 78, 
-          "average": 8.666666666666666
-        }, 
-        "Ecco": {
-          "count": 27, 
-          "sum": 773, 
-          "average": 28.62962962962963
-        }, 
-        "Presidio Press": {
-          "count": 4, 
-          "sum": 100, 
-          "average": 25.0
-        }, 
-        "Ripley Publishing": {
-          "count": 4, 
-          "sum": 13, 
-          "average": 3.25
-        }, 
-        "FENN-M&S": {
-          "count": 1, 
-          "sum": 4, 
-          "average": 4.0
-        }, 
-        "FaithWords": {
-          "count": 11, 
-          "sum": 395, 
-          "average": 35.90909090909091
-        }, 
-        "Tor Science Fiction": {
-          "count": 1, 
-          "sum": 12, 
-          "average": 12.0
-        }, 
-        "Entangled: Brazen": {
-          "count": 18, 
-          "sum": 2947, 
-          "average": 163.72222222222223
-        }, 
-        "Forever Yours": {
-          "count": 1, 
-          "sum": 47, 
-          "average": 47.0
-        }, 
-        "Piatkus": {
-          "count": 1, 
-          "sum": 8, 
-          "average": 8.0
-        }, 
-        "Palgrave Macmillan": {
-          "count": 26, 
-          "sum": 115, 
-          "average": 4.423076923076923
-        }, 
-        "Broadway Books": {
-          "count": 68, 
-          "sum": 1604, 
-          "average": 23.58823529411765
-        }, 
-        "Random House Books for Young Readers": {
-          "count": 199, 
-          "sum": 1542, 
-          "average": 7.748743718592965
-        }, 
-        "Overlook": {
-          "count": 4, 
-          "sum": 19, 
-          "average": 4.75
-        }, 
-        "Threshold Editions": {
-          "count": 11, 
-          "sum": 168, 
-          "average": 15.272727272727273
-        }, 
-        "William Morrow": {
-          "count": 72, 
-          "sum": 2635, 
-          "average": 36.59722222222222
-        }, 
-        "Twelve": {
-          "count": 14, 
-          "sum": 177, 
-          "average": 12.642857142857142
-        }, 
-        "Delta": {
-          "count": 7, 
-          "sum": 155, 
-          "average": 22.142857142857142
-        }, 
-        "St. Martin's True Crime": {
-          "count": 2, 
-          "sum": 35, 
-          "average": 17.5
-        }, 
-        "Little A": {
-          "count": 1, 
-          "sum": 14, 
-          "average": 14.0
-        }, 
-        "Jove": {
-          "count": 41, 
-          "sum": 1569, 
-          "average": 38.26829268292683
-        }, 
-        "Jet City Comics": {
-          "count": 2, 
-          "sum": 57, 
-          "average": 28.5
-        }, 
-        "Simon Spotlight": {
-          "count": 18, 
-          "sum": 90, 
-          "average": 5.0
-        }, 
-        "Balzer + Bray": {
-          "count": 11, 
-          "sum": 150, 
-          "average": 13.636363636363637
-        }, 
-        "Entangled: Indulgence": {
-          "count": 2, 
-          "sum": 220, 
-          "average": 110.0
-        }, 
-        "Dutton Adult": {
-          "count": 23, 
-          "sum": 895, 
-          "average": 38.91304347826087
-        }, 
-        "Orb Books": {
-          "count": 7, 
-          "sum": 44, 
-          "average": 6.285714285714286
-        }, 
-        "Laurel Leaf": {
-          "count": 8, 
-          "sum": 125, 
-          "average": 15.625
-        }, 
-        "Aerie": {
-          "count": 1, 
-          "sum": 13, 
-          "average": 13.0
-        }, 
-        "Hudson Street Press": {
-          "count": 3, 
-          "sum": 25, 
-          "average": 8.333333333333334
-        }, 
-        "Back Bay Books": {
-          "count": 10, 
-          "sum": 245, 
-          "average": 24.5
-        }, 
-        "Times Books": {
-          "count": 16, 
-          "sum": 150, 
-          "average": 9.375
-        }, 
-        "HP": {
-          "count": 1, 
-          "sum": 1, 
-          "average": 1.0
-        }, 
-        "Robin Corey Books": {
-          "count": 1, 
-          "sum": 2, 
-          "average": 2.0
-        }, 
-        "LucasBooks": {
-          "count": 69, 
-          "sum": 540, 
-          "average": 7.826086956521739
-        }, 
-        "Peterson's": {
-          "count": 3, 
-          "sum": 7, 
-          "average": 2.3333333333333335
-        }, 
-        "Crown": {
-          "count": 31, 
-          "sum": 729, 
-          "average": 23.516129032258064
-        }, 
-        "FSG Originals": {
-          "count": 3, 
-          "sum": 132, 
-          "average": 44.0
-        }, 
-        "Orion": {
-          "count": 2, 
-          "sum": 4, 
-          "average": 2.0
-        }, 
-        "Katherine Tegen Books": {
-          "count": 12, 
-          "sum": 492, 
-          "average": 41.0
-        }, 
-        "(Single-Author Publisher)": {
-          "count": 3426, 
-          "sum": 53673, 
-          "average": 15.666374781085814
-        }, 
-        "HarperCollins": {
-          "count": 237, 
-          "sum": 3959, 
-          "average": 16.70464135021097
-        }, 
-        "WaterBrook Press": {
-          "count": 19, 
-          "sum": 300, 
-          "average": 15.789473684210526
-        }, 
-        "Putnam Juvenile": {
-          "count": 10, 
-          "sum": 326, 
-          "average": 32.6
-        }, 
-        "Harper Design": {
-          "count": 2, 
-          "sum": 4, 
-          "average": 2.0
-        }, 
-        "Loveswept": {
-          "count": 10, 
-          "sum": 546, 
-          "average": 54.6
-        }, 
-        "Crimeline": {
-          "count": 4, 
-          "sum": 77, 
-          "average": 19.25
-        }, 
-        "Hill and Wang": {
-          "count": 8, 
-          "sum": 38, 
-          "average": 4.75
-        }, 
-        "Delacorte Press": {
-          "count": 46, 
-          "sum": 3405, 
-          "average": 74.02173913043478
-        }, 
-        "Broadside e-books": {
-          "count": 2, 
-          "sum": 6, 
-          "average": 3.0
-        }, 
-        "Wellspring/Ballantine": {
-          "count": 2, 
-          "sum": 5, 
-          "average": 2.5
-        }, 
-        "Philomel": {
-          "count": 6, 
-          "sum": 146, 
-          "average": 24.333333333333332
-        }, 
-        "Center Street": {
-          "count": 10, 
-          "sum": 595, 
-          "average": 59.5
-        }, 
-        "Margaret K. McElderry Books": {
-          "count": 18, 
-          "sum": 1461, 
-          "average": 81.16666666666667
-        }, 
-        "The Friday Project": {
-          "count": 1, 
-          "sum": 11, 
-          "average": 11.0
-        }, 
-        "Ballantine Books": {
-          "count": 151, 
-          "sum": 2707, 
-          "average": 17.927152317880793
-        }, 
-        "Amistad": {
-          "count": 2, 
-          "sum": 7, 
-          "average": 3.5
-        }, 
-        "Atria Books/Beyond Words": {
-          "count": 6, 
-          "sum": 45, 
-          "average": 7.5
-        }, 
-        "Grijalbo": {
-          "count": 1, 
-          "sum": 2, 
-          "average": 2.0
-        }, 
-        "Tundra Books": {
-          "count": 2, 
-          "sum": 7, 
-          "average": 3.5
-        }, 
-        "Crown Forum": {
-          "count": 4, 
-          "sum": 28, 
-          "average": 7.0
-        }, 
-        "Scribner": {
-          "count": 113, 
-          "sum": 2301, 
-          "average": 20.36283185840708
-        }, 
-        "Scientific American / Farrar Straus and Giroux": {
-          "count": 3, 
-          "sum": 25, 
-          "average": 8.333333333333334
-        }, 
-        "Peterson Institute for International Economics": {
-          "count": 1, 
-          "sum": 7, 
-          "average": 7.0
-        }, 
-        "Crown Business": {
-          "count": 54, 
-          "sum": 686, 
-          "average": 12.703703703703704
-        }, 
-        "Pocket Books/Star Trek": {
-          "count": 56, 
-          "sum": 279, 
-          "average": 4.982142857142857
-        }, 
-        "Doubleday": {
-          "count": 24, 
-          "sum": 692, 
-          "average": 28.833333333333332
-        }, 
-        "Delacorte Books for Young Readers": {
-          "count": 20, 
-          "sum": 286, 
-          "average": 14.3
-        }, 
-        "Henry Holt and Co.": {
-          "count": 42, 
-          "sum": 604, 
-          "average": 14.380952380952381
-        }, 
-        "Convergent Books": {
-          "count": 1, 
-          "sum": 10, 
-          "average": 10.0
-        }, 
-        "Zonderkidz": {
-          "count": 27, 
-          "sum": 229, 
-          "average": 8.481481481481481
-        }, 
-        "Papercutz": {
-          "count": 13, 
-          "sum": 56, 
-          "average": 4.3076923076923075
-        }, 
-        "Atria Books": {
-          "count": 96, 
-          "sum": 2851, 
-          "average": 29.697916666666668
-        }, 
-        "(Small or Medium Publisher)": {
-          "count": 9107, 
-          "sum": 107533, 
-          "average": 11.807730317338311
-        }, 
-        "Flash Point": {
-          "count": 2, 
-          "sum": 18, 
-          "average": 9.0
-        }, 
-        "Onyx": {
-          "count": 2, 
-          "sum": 35, 
-          "average": 17.5
-        }, 
-        "Dell": {
-          "count": 45, 
-          "sum": 2092, 
-          "average": 46.48888888888889
-        }, 
-        "Atria / 37 Ink": {
-          "count": 2, 
-          "sum": 71, 
-          "average": 35.5
-        }, 
-        "HarperOne": {
-          "count": 40, 
-          "sum": 554, 
-          "average": 13.85
-        }, 
-        "Touchstone": {
-          "count": 69, 
-          "sum": 1186, 
-          "average": 17.18840579710145
-        }, 
-        "Watson-Guptill": {
-          "count": 16, 
-          "sum": 40, 
-          "average": 2.5
-        }, 
-        "Princeton Review": {
-          "count": 9, 
-          "sum": 32, 
-          "average": 3.5555555555555554
-        }, 
-        "Entangled: Select": {
-          "count": 1, 
-          "sum": 76, 
-          "average": 76.0
-        }, 
-        "Mitchell Beazley": {
-          "count": 1, 
-          "sum": 5, 
-          "average": 5.0
-        }, 
-        "Washington Square Press": {
-          "count": 4, 
-          "sum": 16, 
-          "average": 4.0
-        }, 
-        "Tarcher": {
-          "count": 22, 
-          "sum": 257, 
-          "average": 11.681818181818182
-        }, 
-        "Galvanized Books": {
-          "count": 1, 
-          "sum": 12, 
-          "average": 12.0
-        }, 
-        "Alpha": {
-          "count": 5, 
-          "sum": 28, 
-          "average": 5.6
-        }, 
-        "Fodor's": {
-          "count": 14, 
-          "sum": 54, 
-          "average": 3.857142857142857
-        }, 
-        "Nan A. Talese": {
-          "count": 5, 
-          "sum": 193, 
-          "average": 38.6
-        }, 
-        "Square Fish": {
-          "count": 3, 
-          "sum": 16, 
-          "average": 5.333333333333333
-        }, 
-        "Chicken Soup for the Soul": {
-          "count": 5, 
-          "sum": 19, 
-          "average": 3.8
-        }, 
-        "Ace": {
-          "count": 43, 
-          "sum": 1154, 
-          "average": 26.837209302325583
-        }, 
-        "Prentice Hall Press": {
-          "count": 6, 
-          "sum": 40, 
-          "average": 6.666666666666667
-        }, 
-        "Free Press": {
-          "count": 68, 
-          "sum": 604, 
-          "average": 8.882352941176471
-        }, 
-        "Rough Guides": {
-          "count": 4, 
-          "sum": 11, 
-          "average": 2.75
-        }, 
-        "Spectra": {
-          "count": 47, 
-          "sum": 762, 
-          "average": 16.21276595744681
-        }, 
-        "Orbit": {
-          "count": 46, 
-          "sum": 1198, 
-          "average": 26.043478260869566
-        }, 
-        "Spiegel & Grau": {
-          "count": 22, 
-          "sum": 598, 
-          "average": 27.181818181818183
-        }, 
-        "Main Street Books": {
-          "count": 1, 
-          "sum": 14, 
-          "average": 14.0
-        }, 
-        "William Morrow Paperbacks": {
-          "count": 44, 
-          "sum": 1252, 
-          "average": 28.454545454545453
-        }, 
-        "Crossing Press": {
-          "count": 2, 
-          "sum": 7, 
-          "average": 3.5
-        }, 
-        "LB Kids": {
-          "count": 8, 
-          "sum": 33, 
-          "average": 4.125
-        }, 
-        "Fawcett": {
-          "count": 4, 
-          "sum": 31, 
-          "average": 7.75
-        }, 
-        "Sarah Crichton Books": {
-          "count": 7, 
-          "sum": 257, 
-          "average": 36.714285714285715
-        }, 
-        "Anthony Bourdain/Ecco": {
-          "count": 2, 
-          "sum": 11, 
-          "average": 5.5
-        }, 
-        "Vision": {
-          "count": 4, 
-          "sum": 119, 
-          "average": 29.75
-        }, 
-        "Farrar Straus and Giroux": {
-          "count": 89, 
-          "sum": 1466, 
-          "average": 16.471910112359552
-        }, 
-        "Vintage Espanol": {
-          "count": 7, 
-          "sum": 96, 
-          "average": 13.714285714285714
-        }, 
-        "Holt Paperbacks": {
-          "count": 25, 
-          "sum": 443, 
-          "average": 17.72
-        }, 
-        "Multnomah Books": {
-          "count": 7, 
-          "sum": 132, 
-          "average": 18.857142857142858
-        }, 
-        "Grupo Nelson": {
-          "count": 3, 
-          "sum": 26, 
-          "average": 8.666666666666666
-        }, 
-        "Grosset & Dunlap": {
-          "count": 104, 
-          "sum": 602, 
-          "average": 5.788461538461538
-        }, 
-        "HarperTrue": {
-          "count": 1, 
-          "sum": 94, 
-          "average": 94.0
-        }, 
-        "Business Plus": {
-          "count": 15, 
-          "sum": 138, 
-          "average": 9.2
-        }, 
-        "Wendy Lamb Books": {
-          "count": 5, 
-          "sum": 51, 
-          "average": 10.2
-        }, 
-        "Puffin": {
-          "count": 103, 
-          "sum": 1454, 
-          "average": 14.116504854368932
-        }, 
-        "It Books": {
-          "count": 24, 
-          "sum": 480, 
-          "average": 20.0
-        }, 
-        "World Wrestling Entertainment": {
-          "count": 2, 
-          "sum": 12, 
-          "average": 6.0
-        }, 
-        "Knopf Group E-Books": {
-          "count": 1, 
-          "sum": 3, 
-          "average": 3.0
-        }, 
-        "HarperCollinsChildren'sBooks": {
-          "count": 2, 
-          "sum": 3, 
-          "average": 1.5
-        }, 
-        "Truman Talley Books": {
-          "count": 1, 
-          "sum": 8, 
-          "average": 8.0
-        }, 
-        "Aladdin": {
-          "count": 79, 
-          "sum": 532, 
-          "average": 6.734177215189874
-        }, 
-        "Random House/Disney": {
-          "count": 13, 
-          "sum": 273, 
-          "average": 21.0
-        }, 
-        "Razorbill": {
-          "count": 14, 
-          "sum": 1359, 
-          "average": 97.07142857142857
-        }, 
-        "Ten Speed Press": {
-          "count": 41, 
-          "sum": 243, 
-          "average": 5.926829268292683
-        }, 
-        "DAW": {
-          "count": 14, 
-          "sum": 229, 
-          "average": 16.357142857142858
-        }, 
-        "The Penguin Press": {
-          "count": 27, 
-          "sum": 585, 
-          "average": 21.666666666666668
-        }
-      }, 
-      "publishers.[0].daily.gross sales": {
-        "Simon Pulse/Mercury Ink": {
-          "count": 1, 
-          "sum": 572.85, 
-          "average": 572.85
-        }, 
-        "Gallery Books": {
-          "count": 56, 
-          "sum": 11853.039999999995, 
-          "average": 211.66142857142856
-        }, 
-        "Dial": {
-          "count": 10, 
-          "sum": 530.05, 
-          "average": 53.004999999999995
-        }, 
-        "McClelland & Stewart": {
-          "count": 1, 
-          "sum": 21.98, 
-          "average": 21.98
-        }, 
-        "Tor Books": {
-          "count": 77, 
-          "sum": 19247.220000000005, 
-          "average": 249.96389610389613
-        }, 
-        "Penguin Young Readers": {
-          "count": 1, 
-          "sum": 10.89, 
-          "average": 10.89
-        }, 
-        "ESPN": {
-          "count": 2, 
-          "sum": 152.41, 
-          "average": 76.205
-        }, 
-        "Bantam": {
-          "count": 132, 
-          "sum": 28481.960000000014, 
-          "average": 215.77242424242422
-        }, 
-        "Harper": {
-          "count": 55, 
-          "sum": 23864.149999999998, 
-          "average": 433.8936363636364
-        }, 
-        "Portfolio": {
-          "count": 81, 
-          "sum": 11585.509999999986, 
-          "average": 143.030987654321
-        }, 
-        "Plume": {
-          "count": 52, 
-          "sum": 8643.259999999991, 
-          "average": 166.21653846153848
-        }, 
-        "Jericho Books": {
-          "count": 2, 
-          "sum": 320.7, 
-          "average": 160.35
-        }, 
-        "HarperTeen": {
-          "count": 28, 
-          "sum": 5413.379999999999, 
-          "average": 193.335
-        }, 
-        "NAL": {
-          "count": 33, 
-          "sum": 10173.629999999997, 
-          "average": 308.29181818181814
-        }, 
-        "Avon Impulse": {
-          "count": 13, 
-          "sum": 941.3199999999998, 
-          "average": 72.40923076923077
-        }, 
-        "AmazonEncore": {
-          "count": 10, 
-          "sum": 1058.1299999999999, 
-          "average": 105.81299999999999
-        }, 
-        "Zondervan/Youth Specialties": {
-          "count": 2, 
-          "sum": 22.200000000000003, 
-          "average": 11.100000000000001
-        }, 
-        "Dial Press Trade Paperback": {
-          "count": 2, 
-          "sum": 224.45000000000002, 
-          "average": 112.22500000000001
-        }, 
-        "Villard": {
-          "count": 6, 
-          "sum": 469.74000000000007, 
-          "average": 78.29
-        }, 
-        "Golden/Disney": {
-          "count": 6, 
-          "sum": 116.66000000000003, 
-          "average": 19.44333333333333
-        }, 
-        "RH/Disney": {
-          "count": 7, 
-          "sum": 390.10999999999996, 
-          "average": 55.730000000000004
-        }, 
-        "Hodder & Stoughton": {
-          "count": 1, 
-          "sum": 107.88, 
-          "average": 107.88
-        }, 
-        "Newmarket Press": {
-          "count": 2, 
-          "sum": 35.54, 
-          "average": 17.77
-        }, 
-        "Little Brown and Company": {
-          "count": 141, 
-          "sum": 50123.93999999999, 
-          "average": 355.4889361702128
-        }, 
-        "Grand Central Life & Style": {
-          "count": 15, 
-          "sum": 5366.789999999999, 
-          "average": 357.786
-        }, 
-        "Perigee": {
-          "count": 17, 
-          "sum": 1941.0800000000006, 
-          "average": 114.18117647058824
-        }, 
-        "Golden Books": {
-          "count": 8, 
-          "sum": 92.24000000000002, 
-          "average": 11.530000000000001
-        }, 
-        "Thomas Dunne Books": {
-          "count": 36, 
-          "sum": 4081.269999999999, 
-          "average": 113.36861111111111
-        }, 
-        "HarperSport": {
-          "count": 2, 
-          "sum": 9.95, 
-          "average": 4.975
-        }, 
-        "Collins Reference": {
-          "count": 1, 
-          "sum": 107.16, 
-          "average": 107.16
-        }, 
-        "Tor Teen": {
-          "count": 1, 
-          "sum": 74.62, 
-          "average": 74.62
-        }, 
-        "Crown Archetype": {
-          "count": 28, 
-          "sum": 3696.3699999999985, 
-          "average": 132.01321428571427
-        }, 
-        "Harper Element": {
-          "count": 20, 
-          "sum": 976.7200000000001, 
-          "average": 48.836
-        }, 
-        "(Indie Publisher)": {
-          "count": 5637, 
-          "sum": 423787.08999999, 
-          "average": 75.17954408373248
-        }, 
-        "Zondervan": {
-          "count": 65, 
-          "sum": 13475.199999999999, 
-          "average": 207.31076923076924
-        }, 
-        "HarperWave": {
-          "count": 6, 
-          "sum": 3532.7299999999996, 
-          "average": 588.7883333333333
-        }, 
-        "Studio": {
-          "count": 1, 
-          "sum": 65.0, 
-          "average": 65.0
-        }, 
-        "Bantam Dell": {
-          "count": 1, 
-          "sum": 79.92, 
-          "average": 79.92
-        }, 
-        "Pocket Star": {
-          "count": 11, 
-          "sum": 780.6400000000001, 
-          "average": 70.96727272727273
-        }, 
-        "Avon": {
-          "count": 25, 
-          "sum": 9130.590000000004, 
-          "average": 365.22360000000003
-        }, 
-        "Thomas & Mercer": {
-          "count": 102, 
-          "sum": 21467.36999999999, 
-          "average": 210.4644117647059
-        }, 
-        "Thomas Nelson": {
-          "count": 90, 
-          "sum": 16210.949999999983, 
-          "average": 180.12166666666667
-        }, 
-        "Penguin": {
-          "count": 37, 
-          "sum": 3004.6399999999994, 
-          "average": 81.20648648648648
-        }, 
-        "Billboard Books": {
-          "count": 2, 
-          "sum": 36.81, 
-          "average": 18.405
-        }, 
-        "HarperBusiness": {
-          "count": 23, 
-          "sum": 4979.489999999999, 
-          "average": 216.4995652173913
-        }, 
-        "Simon Pulse": {
-          "count": 13, 
-          "sum": 2614.3100000000004, 
-          "average": 201.10076923076923
-        }, 
-        "Little Brown Books for Young Readers": {
-          "count": 55, 
-          "sum": 6159.310000000001, 
-          "average": 111.98745454545455
-        }, 
-        "Cash Money Content": {
-          "count": 2, 
-          "sum": 151.04000000000002, 
-          "average": 75.52000000000001
-        }, 
-        "Harper Paperbacks": {
-          "count": 5, 
-          "sum": 197.3, 
-          "average": 39.46
-        }, 
-        "Simon & Schuster": {
-          "count": 198, 
-          "sum": 33125.440000000024, 
-          "average": 167.30020202020202
-        }, 
-        "Putnam Adult": {
-          "count": 37, 
-          "sum": 23183.610000000004, 
-          "average": 626.584054054054
-        }, 
-        "Gallery Books/Karen Hunter Publishing": {
-          "count": 1, 
-          "sum": 41.52, 
-          "average": 41.52
-        }, 
-        "Reagan Arthur Books": {
-          "count": 2, 
-          "sum": 1008.99, 
-          "average": 504.495
-        }, 
-        "William Morrow Impulse": {
-          "count": 2, 
-          "sum": 164.34, 
-          "average": 82.17
-        }, 
-        "Two Lions": {
-          "count": 64, 
-          "sum": 2039.0000000000016, 
-          "average": 31.859375
-        }, 
-        "Metropolitan Books": {
-          "count": 15, 
-          "sum": 2011.97, 
-          "average": 134.13133333333334
-        }, 
-        "Potter Style": {
-          "count": 3, 
-          "sum": 141.38, 
-          "average": 47.126666666666665
-        }, 
-        "Poppy": {
-          "count": 1, 
-          "sum": 41.86, 
-          "average": 41.86
-        }, 
-        "Three Rivers Press": {
-          "count": 21, 
-          "sum": 2131.26, 
-          "average": 101.48857142857143
-        }, 
-        "Little Simon": {
-          "count": 2, 
-          "sum": 8.54, 
-          "average": 4.27
-        }, 
-        "Avon Inspire": {
-          "count": 1, 
-          "sum": 416.0, 
-          "average": 416.0
-        }, 
-        "St. Martin's Paperbacks": {
-          "count": 18, 
-          "sum": 2530.34, 
-          "average": 140.57444444444445
-        }, 
-        "PHILOMEL": {
-          "count": 1, 
-          "sum": 25.56, 
-          "average": 25.56
-        }, 
-        "Celestial Arts": {
-          "count": 5, 
-          "sum": 536.03, 
-          "average": 107.20599999999999
-        }, 
-        "HarperTorch": {
-          "count": 1, 
-          "sum": 3.96, 
-          "average": 3.96
-        }, 
-        "Entangled: Bliss": {
-          "count": 1, 
-          "sum": 215.28, 
-          "average": 215.28
-        }, 
-        "Debbie Macomber Books": {
-          "count": 2, 
-          "sum": 962.78, 
-          "average": 481.39
-        }, 
-        "Roaring Brook Press": {
-          "count": 7, 
-          "sum": 335.12, 
-          "average": 47.87428571428571
-        }, 
-        "Sentinel": {
-          "count": 2, 
-          "sum": 1866.5, 
-          "average": 933.25
-        }, 
-        "HarperStudio": {
-          "count": 1, 
-          "sum": 71.12, 
-          "average": 71.12
-        }, 
-        "Amazon Publishing": {
-          "count": 21, 
-          "sum": 3247.8399999999992, 
-          "average": 154.6590476190476
-        }, 
-        "St. Martin's Press": {
-          "count": 147, 
-          "sum": 30319.3, 
-          "average": 206.25374149659862
-        }, 
-        "HarperPerennial Classics": {
-          "count": 5, 
-          "sum": 224.73000000000002, 
-          "average": 44.946
-        }, 
-        "Pintail": {
-          "count": 1, 
-          "sum": 1048.95, 
-          "average": 1048.95
-        }, 
-        "Current": {
-          "count": 3, 
-          "sum": 322.74, 
-          "average": 107.58
-        }, 
-        "HarperCollins e-books": {
-          "count": 378, 
-          "sum": 41251.27000000004, 
-          "average": 109.1303439153439
-        }, 
-        "Gotham Books": {
-          "count": 27, 
-          "sum": 4739.84, 
-          "average": 175.54962962962964
-        }, 
-        "MTV Books": {
-          "count": 2, 
-          "sum": 276.09000000000003, 
-          "average": 138.04500000000002
-        }, 
-        "Vintage": {
-          "count": 181, 
-          "sum": 28271.870000000028, 
-          "average": 156.1981767955801
-        }, 
-        "Clarkson Potter": {
-          "count": 35, 
-          "sum": 2001.1700000000003, 
-          "average": 57.17628571428572
-        }, 
-        "Grand Harbor Press": {
-          "count": 3, 
-          "sum": 112.59, 
-          "average": 37.53
-        }, 
-        "Harper Thorsons": {
-          "count": 1, 
-          "sum": 26.6, 
-          "average": 26.6
-        }, 
-        "Deepak Chopra": {
-          "count": 3, 
-          "sum": 163.53000000000003, 
-          "average": 54.51
-        }, 
-        "Picador": {
-          "count": 10, 
-          "sum": 1022.5500000000002, 
-          "average": 102.255
-        }, 
-        "Harmony": {
-          "count": 57, 
-          "sum": 10835.59999999999, 
-          "average": 190.0982456140351
-        }, 
-        "Signet Classic": {
-          "count": 4, 
-          "sum": 146.29, 
-          "average": 36.5725
-        }, 
-        "47North": {
-          "count": 66, 
-          "sum": 10988.830000000002, 
-          "average": 166.49742424242424
-        }, 
-        "HarperPress": {
-          "count": 3, 
-          "sum": 59.269999999999996, 
-          "average": 19.756666666666664
-        }, 
-        "Collins": {
-          "count": 8, 
-          "sum": 443.02000000000004, 
-          "average": 55.3775
-        }, 
-        "Starscape": {
-          "count": 1, 
-          "sum": 10.24, 
-          "average": 10.24
-        }, 
-        "Atria/Emily Bestler Books": {
-          "count": 7, 
-          "sum": 3464.0200000000004, 
-          "average": 494.86
-        }, 
-        "Dragonfly Books": {
-          "count": 1, 
-          "sum": 11.98, 
-          "average": 11.98
-        }, 
-        "Feiwel & Friends": {
-          "count": 9, 
-          "sum": 1792.69, 
-          "average": 199.1877777777778
-        }, 
-        "DK Publishing": {
-          "count": 26, 
-          "sum": 464.17000000000013, 
-          "average": 17.85269230769231
-        }, 
-        "Leer-e": {
-          "count": 1, 
-          "sum": 101.83, 
-          "average": 101.83
-        }, 
-        "Amphoto Books": {
-          "count": 9, 
-          "sum": 805.29, 
-          "average": 89.47666666666666
-        }, 
-        "Skyscape": {
-          "count": 11, 
-          "sum": 5210.030000000001, 
-          "average": 473.6390909090909
-        }, 
-        "Avery": {
-          "count": 15, 
-          "sum": 2302.44, 
-          "average": 153.496
-        }, 
-        "Appetite by Random House": {
-          "count": 1, 
-          "sum": 39.0, 
-          "average": 39.0
-        }, 
-        "Faber & Faber": {
-          "count": 6, 
-          "sum": 386.19, 
-          "average": 64.365
-        }, 
-        "AmazonCrossing": {
-          "count": 29, 
-          "sum": 5106.04, 
-          "average": 176.0703448275862
-        }, 
-        "Simon & Schuster Audio": {
-          "count": 1, 
-          "sum": 94.8, 
-          "average": 94.8
-        }, 
-        "Del Rey": {
-          "count": 45, 
-          "sum": 5214.839999999999, 
-          "average": 115.88533333333334
-        }, 
-        "Graywolf Press": {
-          "count": 2, 
-          "sum": 146.35, 
-          "average": 73.175
-        }, 
-        "Howard Books": {
-          "count": 20, 
-          "sum": 4499.589999999999, 
-          "average": 224.9795
-        }, 
-        "First Second": {
-          "count": 3, 
-          "sum": 78.24, 
-          "average": 26.080000000000002
-        }, 
-        "Walden Pond Press": {
-          "count": 3, 
-          "sum": 39.83, 
-          "average": 13.276666666666666
-        }, 
-        "Penguin Classic": {
-          "count": 17, 
-          "sum": 2834.0699999999993, 
-          "average": 166.71
-        }, 
-        "Montlake Romance": {
-          "count": 66, 
-          "sum": 22097.199999999993, 
-          "average": 334.8060606060606
-        }, 
-        "The Dial Press": {
-          "count": 2, 
-          "sum": 1188.08, 
-          "average": 594.04
-        }, 
-        "Modern Library": {
-          "count": 5, 
-          "sum": 602.67, 
-          "average": 120.53400000000002
-        }, 
-        "Knopf": {
-          "count": 43, 
-          "sum": 15806.14, 
-          "average": 367.5846511627907
-        }, 
-        "Forever": {
-          "count": 18, 
-          "sum": 7587.880000000001, 
-          "average": 421.5488888888889
-        }, 
-        "Riverhead": {
-          "count": 46, 
-          "sum": 11101.899999999996, 
-          "average": 241.34565217391304
-        }, 
-        "Mulholland Books": {
-          "count": 8, 
-          "sum": 794.28, 
-          "average": 99.285
-        }, 
-        "Yearling": {
-          "count": 12, 
-          "sum": 454.13, 
-          "average": 37.844166666666666
-        }, 
-        "Hogarth": {
-          "count": 1, 
-          "sum": 854.93, 
-          "average": 854.93
-        }, 
-        "Bantam Classics": {
-          "count": 5, 
-          "sum": 179.24, 
-          "average": 35.848
-        }, 
-        "Potter Craft": {
-          "count": 6, 
-          "sum": 282.96000000000004, 
-          "average": 47.16
-        }, 
-        "Atheneum Books for Young Readers": {
-          "count": 36, 
-          "sum": 2132.7999999999997, 
-          "average": 59.24444444444445
-        }, 
-        "Golden Guides from St. Martin's Press": {
-          "count": 1, 
-          "sum": 80.01, 
-          "average": 80.01
-        }, 
-        "Penguin Books": {
-          "count": 144, 
-          "sum": 24007.02000000004, 
-          "average": 166.71541666666667
-        }, 
-        "CLBusiness": {
-          "count": 1, 
-          "sum": 21.98, 
-          "average": 21.98
-        }, 
-        "Lone Eagle": {
-          "count": 1, 
-          "sum": 52.0, 
-          "average": 52.0
-        }, 
-        "Berkley": {
-          "count": 169, 
-          "sum": 40966.64000000006, 
-          "average": 242.40615384615384
-        }, 
-        "Harper Voyager": {
-          "count": 10, 
-          "sum": 1456.0299999999997, 
-          "average": 145.603
-        }, 
-        "Hyperion": {
-          "count": 62, 
-          "sum": 10206.24999999999, 
-          "average": 164.61693548387098
-        }, 
-        "Anchor": {
-          "count": 74, 
-          "sum": 9528.809999999996, 
-          "average": 128.7677027027027
-        }, 
-        "Signet": {
-          "count": 63, 
-          "sum": 16577.820000000003, 
-          "average": 263.14
-        }, 
-        "Forge Books": {
-          "count": 19, 
-          "sum": 1395.3899999999996, 
-          "average": 73.44157894736843
-        }, 
-        "Celebra": {
-          "count": 2, 
-          "sum": 1261.4899999999998, 
-          "average": 630.7449999999999
-        }, 
-        "Knopf Books for Young Readers": {
-          "count": 30, 
-          "sum": 2796.439999999999, 
-          "average": 93.21466666666667
-        }, 
-        "William Morrow Cookbooks": {
-          "count": 14, 
-          "sum": 599.02, 
-          "average": 42.787142857142854
-        }, 
-        "Image": {
-          "count": 7, 
-          "sum": 358.02000000000004, 
-          "average": 51.14571428571429
-        }, 
-        "Roc": {
-          "count": 13, 
-          "sum": 1245.45, 
-          "average": 95.80384615384615
-        }, 
-        "Simon & Schuster/Paula Wiseman Books": {
-          "count": 3, 
-          "sum": 28.12, 
-          "average": 9.373333333333333
-        }, 
-        "St. Martin's Griffin": {
-          "count": 43, 
-          "sum": 4918.249999999999, 
-          "average": 114.37790697674419
-        }, 
-        "Pantheon": {
-          "count": 8, 
-          "sum": 1292.58, 
-          "average": 161.5725
-        }, 
-        "Reader's Digest": {
-          "count": 3, 
-          "sum": 854.11, 
-          "average": 284.7033333333333
-        }, 
-        "InterMix": {
-          "count": 4, 
-          "sum": 1056.44, 
-          "average": 264.11
-        }, 
-        "Pocket Books": {
-          "count": 72, 
-          "sum": 11197.719999999992, 
-          "average": 155.52388888888888
-        }, 
-        "Witness Impulse": {
-          "count": 12, 
-          "sum": 960.36, 
-          "average": 80.03
-        }, 
-        "Ivy Books": {
-          "count": 3, 
-          "sum": 47.92, 
-          "average": 15.973333333333334
-        }, 
-        "Dutton Children's": {
-          "count": 4, 
-          "sum": 1252.21, 
-          "average": 313.0525
-        }, 
-        "Speak": {
-          "count": 19, 
-          "sum": 8468.280000000004, 
-          "average": 445.6989473684211
-        }, 
-        "Yen Press": {
-          "count": 12, 
-          "sum": 302.31000000000006, 
-          "average": 25.1925
-        }, 
-        "Random House Reference": {
-          "count": 1, 
-          "sum": 77.94, 
-          "average": 77.94
-        }, 
-        "Greenwillow Books": {
-          "count": 17, 
-          "sum": 710.7200000000001, 
-          "average": 41.80705882352942
-        }, 
-        "Schwartz & Wade": {
-          "count": 2, 
-          "sum": 27.71, 
-          "average": 13.855
-        }, 
-        "Page Street Publishing": {
-          "count": 2, 
-          "sum": 206.58, 
-          "average": 103.29
-        }, 
-        "Island Books": {
-          "count": 3, 
-          "sum": 706.2699999999999, 
-          "average": 235.42333333333332
-        }, 
-        "PSS Juvenile": {
-          "count": 1, 
-          "sum": 40.96, 
-          "average": 40.96
-        }, 
-        "Joe Books": {
-          "count": 3, 
-          "sum": 68.31, 
-          "average": 22.77
-        }, 
-        "Viking Adult": {
-          "count": 29, 
-          "sum": 9770.71, 
-          "average": 336.9210344827586
-        }, 
-        "Blue Rider Press": {
-          "count": 8, 
-          "sum": 3337.2500000000005, 
-          "average": 417.15625
-        }, 
-        "Thorsons": {
-          "count": 4, 
-          "sum": 243.26, 
-          "average": 60.815
-        }, 
-        "David Fickling Books": {
-          "count": 1, 
-          "sum": 505.16, 
-          "average": 505.16
-        }, 
-        "Alfred A. Knopf BFYR": {
-          "count": 4, 
-          "sum": 71.76, 
-          "average": 17.94
-        }, 
-        "Minotaur Books": {
-          "count": 43, 
-          "sum": 9883.700000000004, 
-          "average": 229.85348837209304
-        }, 
-        "Random House Trade Paperbacks": {
-          "count": 30, 
-          "sum": 6281.569999999997, 
-          "average": 209.38566666666665
-        }, 
-        "BradyGames": {
-          "count": 2, 
-          "sum": 47.94, 
-          "average": 23.97
-        }, 
-        "Renaissance Books": {
-          "count": 1, 
-          "sum": 91.08, 
-          "average": 91.08
-        }, 
-        "Harper Perennial": {
-          "count": 20, 
-          "sum": 1692.12, 
-          "average": 84.606
-        }, 
-        "Viking Children's": {
-          "count": 4, 
-          "sum": 279.12, 
-          "average": 69.78
-        }, 
-        "North Point Press": {
-          "count": 5, 
-          "sum": 311.27, 
-          "average": 62.254
-        }, 
-        "Simon & Schuster Books for Young Readers": {
-          "count": 45, 
-          "sum": 3346.610000000001, 
-          "average": 74.36911111111111
-        }, 
-        "Random House": {
-          "count": 81, 
-          "sum": 16888.91000000001, 
-          "average": 208.50506172839505
-        }, 
-        "Schocken": {
-          "count": 4, 
-          "sum": 216.81, 
-          "average": 54.2025
-        }, 
-        "Meadowbrook": {
-          "count": 3, 
-          "sum": 143.37, 
-          "average": 47.79
-        }, 
-        "HarperFestival": {
-          "count": 5, 
-          "sum": 204.35, 
-          "average": 40.87
-        }, 
-        "Grand Central Publishing": {
-          "count": 94, 
-          "sum": 28006.61000000001, 
-          "average": 297.9426595744681
-        }, 
-        "Zinc Ink": {
-          "count": 1, 
-          "sum": 43.96, 
-          "average": 43.96
-        }, 
-        "Entangled: Teen": {
-          "count": 2, 
-          "sum": 276.52, 
-          "average": 138.26
-        }, 
-        "Gildan Digital": {
-          "count": 1, 
-          "sum": 13.93, 
-          "average": 13.93
-        }, 
-        "Scientific American": {
-          "count": 9, 
-          "sum": 295.61999999999995, 
-          "average": 32.846666666666664
-        }, 
-        "Ecco": {
-          "count": 27, 
-          "sum": 6820.989999999999, 
-          "average": 252.62925925925924
-        }, 
-        "Presidio Press": {
-          "count": 4, 
-          "sum": 620.55, 
-          "average": 155.1375
-        }, 
-        "Ripley Publishing": {
-          "count": 4, 
-          "sum": 50.22, 
-          "average": 12.555
-        }, 
-        "FENN-M&S": {
-          "count": 1, 
-          "sum": 47.96, 
-          "average": 47.96
-        }, 
-        "FaithWords": {
-          "count": 11, 
-          "sum": 2865.25, 
-          "average": 260.47727272727275
-        }, 
-        "Tor Science Fiction": {
-          "count": 1, 
-          "sum": 102.36, 
-          "average": 102.36
-        }, 
-        "Entangled: Brazen": {
-          "count": 18, 
-          "sum": 5113.930000000001, 
-          "average": 284.1072222222222
-        }, 
-        "Forever Yours": {
-          "count": 1, 
-          "sum": 93.53, 
-          "average": 93.53
-        }, 
-        "Piatkus": {
-          "count": 1, 
-          "sum": 55.92, 
-          "average": 55.92
-        }, 
-        "Palgrave Macmillan": {
-          "count": 26, 
-          "sum": 1306.8500000000001, 
-          "average": 50.26346153846154
-        }, 
-        "Broadway Books": {
-          "count": 68, 
-          "sum": 10498.809999999985, 
-          "average": 154.39426470588234
-        }, 
-        "Random House Books for Young Readers": {
-          "count": 199, 
-          "sum": 7687.639999999995, 
-          "average": 38.6313567839196
-        }, 
-        "Overlook": {
-          "count": 4, 
-          "sum": 191.36, 
-          "average": 47.84
-        }, 
-        "Threshold Editions": {
-          "count": 11, 
-          "sum": 1769.1400000000003, 
-          "average": 160.8309090909091
-        }, 
-        "William Morrow": {
-          "count": 72, 
-          "sum": 21422.179999999997, 
-          "average": 297.53027777777777
-        }, 
-        "Twelve": {
-          "count": 14, 
-          "sum": 1865.78, 
-          "average": 133.27
-        }, 
-        "Delta": {
-          "count": 7, 
-          "sum": 912.92, 
-          "average": 130.41714285714286
-        }, 
-        "St. Martin's True Crime": {
-          "count": 2, 
-          "sum": 239.04999999999998, 
-          "average": 119.52499999999999
-        }, 
-        "Little A": {
-          "count": 1, 
-          "sum": 83.86, 
-          "average": 83.86
-        }, 
-        "Jove": {
-          "count": 41, 
-          "sum": 11482.049999999997, 
-          "average": 280.04999999999995
-        }, 
-        "Jet City Comics": {
-          "count": 2, 
-          "sum": 455.43000000000006, 
-          "average": 227.71500000000003
-        }, 
-        "Simon Spotlight": {
-          "count": 18, 
-          "sum": 426.41000000000014, 
-          "average": 23.689444444444447
-        }, 
-        "Balzer + Bray": {
-          "count": 11, 
-          "sum": 1183.7400000000002, 
-          "average": 107.61272727272727
-        }, 
-        "Entangled: Indulgence": {
-          "count": 2, 
-          "sum": 217.8, 
-          "average": 108.9
-        }, 
-        "Dutton Adult": {
-          "count": 23, 
-          "sum": 8644.779999999999, 
-          "average": 375.86
-        }, 
-        "Orb Books": {
-          "count": 7, 
-          "sum": 368.56, 
-          "average": 52.651428571428575
-        }, 
-        "Laurel Leaf": {
-          "count": 8, 
-          "sum": 685.28, 
-          "average": 85.66
-        }, 
-        "Aerie": {
-          "count": 1, 
-          "sum": 36.92, 
-          "average": 36.92
-        }, 
-        "Hudson Street Press": {
-          "count": 3, 
-          "sum": 274.75, 
-          "average": 91.58333333333333
-        }, 
-        "Back Bay Books": {
-          "count": 10, 
-          "sum": 2434.35, 
-          "average": 243.435
-        }, 
-        "Times Books": {
-          "count": 16, 
-          "sum": 1688.2600000000007, 
-          "average": 105.51625
-        }, 
-        "HP": {
-          "count": 1, 
-          "sum": 16.14, 
-          "average": 16.14
-        }, 
-        "Robin Corey Books": {
-          "count": 1, 
-          "sum": 11.98, 
-          "average": 11.98
-        }, 
-        "LucasBooks": {
-          "count": 69, 
-          "sum": 3964.8599999999974, 
-          "average": 57.461739130434786
-        }, 
-        "Peterson's": {
-          "count": 3, 
-          "sum": 45.93, 
-          "average": 15.31
-        }, 
-        "Crown": {
-          "count": 31, 
-          "sum": 7374.02, 
-          "average": 237.8716129032258
-        }, 
-        "FSG Originals": {
-          "count": 3, 
-          "sum": 941.0600000000001, 
-          "average": 313.68666666666667
-        }, 
-        "Orion": {
-          "count": 2, 
-          "sum": 26.560000000000002, 
-          "average": 13.280000000000001
-        }, 
-        "Katherine Tegen Books": {
-          "count": 12, 
-          "sum": 1145.4200000000003, 
-          "average": 95.45166666666667
-        }, 
-        "(Single-Author Publisher)": {
-          "count": 3426, 
-          "sum": 187245.7200000028, 
-          "average": 54.65432574430823
-        }, 
-        "HarperCollins": {
-          "count": 237, 
-          "sum": 23921.71999999999, 
-          "average": 100.93552742616035
-        }, 
-        "WaterBrook Press": {
-          "count": 19, 
-          "sum": 2615.519999999999, 
-          "average": 137.65894736842105
-        }, 
-        "Putnam Juvenile": {
-          "count": 10, 
-          "sum": 2595.8999999999996, 
-          "average": 259.59000000000003
-        }, 
-        "Harper Design": {
-          "count": 2, 
-          "sum": 72.67999999999999, 
-          "average": 36.339999999999996
-        }, 
-        "Loveswept": {
-          "count": 10, 
-          "sum": 1030.54, 
-          "average": 103.054
-        }, 
-        "Crimeline": {
-          "count": 4, 
-          "sum": 460.46000000000004, 
-          "average": 115.115
-        }, 
-        "Hill and Wang": {
-          "count": 8, 
-          "sum": 326.21999999999997, 
-          "average": 40.7775
-        }, 
-        "Delacorte Press": {
-          "count": 46, 
-          "sum": 22114.21000000001, 
-          "average": 480.74369565217387
-        }, 
-        "Broadside e-books": {
-          "count": 2, 
-          "sum": 70.86, 
-          "average": 35.43
-        }, 
-        "Wellspring/Ballantine": {
-          "count": 2, 
-          "sum": 59.2, 
-          "average": 29.6
-        }, 
-        "Philomel": {
-          "count": 6, 
-          "sum": 1355.44, 
-          "average": 225.90666666666667
-        }, 
-        "Center Street": {
-          "count": 10, 
-          "sum": 3494.55, 
-          "average": 349.45500000000004
-        }, 
-        "Margaret K. McElderry Books": {
-          "count": 18, 
-          "sum": 9111.109999999999, 
-          "average": 506.1727777777778
-        }, 
-        "The Friday Project": {
-          "count": 1, 
-          "sum": 21.89, 
-          "average": 21.89
-        }, 
-        "Ballantine Books": {
-          "count": 151, 
-          "sum": 22607.84000000002, 
-          "average": 149.72079470198676
-        }, 
-        "Amistad": {
-          "count": 2, 
-          "sum": 68.39, 
-          "average": 34.195
-        }, 
-        "Atria Books/Beyond Words": {
-          "count": 6, 
-          "sum": 470.51000000000005, 
-          "average": 78.41833333333334
-        }, 
-        "Grijalbo": {
-          "count": 1, 
-          "sum": 17.98, 
-          "average": 17.98
-        }, 
-        "Tundra Books": {
-          "count": 2, 
-          "sum": 41.86, 
-          "average": 20.93
-        }, 
-        "Crown Forum": {
-          "count": 4, 
-          "sum": 286.40000000000003, 
-          "average": 71.6
-        }, 
-        "Scribner": {
-          "count": 113, 
-          "sum": 20869.23, 
-          "average": 184.68345132743363
-        }, 
-        "Scientific American / Farrar Straus and Giroux": {
-          "count": 3, 
-          "sum": 266.70000000000005, 
-          "average": 88.90000000000002
-        }, 
-        "Peterson Institute for International Economics": {
-          "count": 1, 
-          "sum": 55.93, 
-          "average": 55.93
-        }, 
-        "Crown Business": {
-          "count": 54, 
-          "sum": 7688.149999999999, 
-          "average": 142.37314814814815
-        }, 
-        "Pocket Books/Star Trek": {
-          "count": 56, 
-          "sum": 2040.9800000000005, 
-          "average": 36.44607142857143
-        }, 
-        "Doubleday": {
-          "count": 24, 
-          "sum": 7378.389999999999, 
-          "average": 307.4329166666667
-        }, 
-        "Delacorte Books for Young Readers": {
-          "count": 20, 
-          "sum": 1865.3400000000006, 
-          "average": 93.267
-        }, 
-        "Henry Holt and Co.": {
-          "count": 42, 
-          "sum": 5362.049999999999, 
-          "average": 127.66785714285714
-        }, 
-        "Convergent Books": {
-          "count": 1, 
-          "sum": 79.9, 
-          "average": 79.9
-        }, 
-        "Zonderkidz": {
-          "count": 27, 
-          "sum": 949.36, 
-          "average": 35.16148148148148
-        }, 
-        "Papercutz": {
-          "count": 13, 
-          "sum": 294.92, 
-          "average": 22.686153846153847
-        }, 
-        "Atria Books": {
-          "count": 96, 
-          "sum": 22309.30999999998, 
-          "average": 232.38864583333336
-        }, 
-        "(Small or Medium Publisher)": {
-          "count": 9107, 
-          "sum": 622420.6599999397, 
-          "average": 68.34530141649282
-        }, 
-        "Flash Point": {
-          "count": 2, 
-          "sum": 138.9, 
-          "average": 69.45
-        }, 
-        "Onyx": {
-          "count": 2, 
-          "sum": 170.45, 
-          "average": 85.225
-        }, 
-        "Dell": {
-          "count": 45, 
-          "sum": 10080.050000000003, 
-          "average": 224.0011111111111
-        }, 
-        "Atria / 37 Ink": {
-          "count": 2, 
-          "sum": 378.86, 
-          "average": 189.43
-        }, 
-        "HarperOne": {
-          "count": 40, 
-          "sum": 4894.100000000003, 
-          "average": 122.3525
-        }, 
-        "Touchstone": {
-          "count": 69, 
-          "sum": 11067.920000000006, 
-          "average": 160.40463768115941
-        }, 
-        "Watson-Guptill": {
-          "count": 16, 
-          "sum": 529.87, 
-          "average": 33.116875
-        }, 
-        "Princeton Review": {
-          "count": 9, 
-          "sum": 305.68, 
-          "average": 33.964444444444446
-        }, 
-        "Entangled: Select": {
-          "count": 1, 
-          "sum": 414.2, 
-          "average": 414.2
-        }, 
-        "Mitchell Beazley": {
-          "count": 1, 
-          "sum": 23.7, 
-          "average": 23.7
-        }, 
-        "Washington Square Press": {
-          "count": 4, 
-          "sum": 159.47999999999996, 
-          "average": 39.87
-        }, 
-        "Tarcher": {
-          "count": 22, 
-          "sum": 2786.93, 
-          "average": 126.67863636363636
-        }, 
-        "Galvanized Books": {
-          "count": 1, 
-          "sum": 115.08, 
-          "average": 115.08
-        }, 
-        "Alpha": {
-          "count": 5, 
-          "sum": 224.84, 
-          "average": 44.968
-        }, 
-        "Fodor's": {
-          "count": 14, 
-          "sum": 696.8100000000001, 
-          "average": 49.77214285714285
-        }, 
-        "Nan A. Talese": {
-          "count": 5, 
-          "sum": 2151.9399999999996, 
-          "average": 430.38800000000003
-        }, 
-        "Square Fish": {
-          "count": 3, 
-          "sum": 97.44000000000001, 
-          "average": 32.48
-        }, 
-        "Chicken Soup for the Soul": {
-          "count": 5, 
-          "sum": 139.91000000000003, 
-          "average": 27.982
-        }, 
-        "Ace": {
-          "count": 43, 
-          "sum": 8044.9299999999985, 
-          "average": 187.0913953488372
-        }, 
-        "Prentice Hall Press": {
-          "count": 6, 
-          "sum": 689.7900000000001, 
-          "average": 114.96499999999999
-        }, 
-        "Free Press": {
-          "count": 68, 
-          "sum": 6198.71, 
-          "average": 91.1575
-        }, 
-        "Rough Guides": {
-          "count": 4, 
-          "sum": 120.39000000000001, 
-          "average": 30.0975
-        }, 
-        "Spectra": {
-          "count": 47, 
-          "sum": 4913.340000000001, 
-          "average": 104.53914893617022
-        }, 
-        "Orbit": {
-          "count": 46, 
-          "sum": 7302.179999999997, 
-          "average": 158.7430434782609
-        }, 
-        "Spiegel & Grau": {
-          "count": 22, 
-          "sum": 4735.580000000001, 
-          "average": 215.25363636363636
-        }, 
-        "Main Street Books": {
-          "count": 1, 
-          "sum": 118.16, 
-          "average": 118.16
-        }, 
-        "William Morrow Paperbacks": {
-          "count": 44, 
-          "sum": 6402.7300000000005, 
-          "average": 145.5165909090909
-        }, 
-        "Crossing Press": {
-          "count": 2, 
-          "sum": 80.33, 
-          "average": 40.165
-        }, 
-        "LB Kids": {
-          "count": 8, 
-          "sum": 111.11, 
-          "average": 13.88875
-        }, 
-        "Fawcett": {
-          "count": 4, 
-          "sum": 185.69, 
-          "average": 46.4225
-        }, 
-        "Sarah Crichton Books": {
-          "count": 7, 
-          "sum": 2299.59, 
-          "average": 328.5128571428572
-        }, 
-        "Anthony Bourdain/Ecco": {
-          "count": 2, 
-          "sum": 164.79, 
-          "average": 82.395
-        }, 
-        "Vision": {
-          "count": 4, 
-          "sum": 831.81, 
-          "average": 207.9525
-        }, 
-        "Farrar Straus and Giroux": {
-          "count": 89, 
-          "sum": 9394.3, 
-          "average": 105.55393258426966
-        }, 
-        "Vintage Espanol": {
-          "count": 7, 
-          "sum": 758.9699999999999, 
-          "average": 108.42428571428572
-        }, 
-        "Holt Paperbacks": {
-          "count": 25, 
-          "sum": 3149.4399999999996, 
-          "average": 125.9776
-        }, 
-        "Multnomah Books": {
-          "count": 7, 
-          "sum": 1086.02, 
-          "average": 155.1457142857143
-        }, 
-        "Grupo Nelson": {
-          "count": 3, 
-          "sum": 58.74, 
-          "average": 19.580000000000002
-        }, 
-        "Grosset & Dunlap": {
-          "count": 104, 
-          "sum": 2739.370000000002, 
-          "average": 26.340096153846154
-        }, 
-        "HarperTrue": {
-          "count": 1, 
-          "sum": 187.06, 
-          "average": 187.06
-        }, 
-        "Business Plus": {
-          "count": 15, 
-          "sum": 1497.3200000000004, 
-          "average": 99.82133333333334
-        }, 
-        "Wendy Lamb Books": {
-          "count": 5, 
-          "sum": 306.46000000000004, 
-          "average": 61.291999999999994
-        }, 
-        "Puffin": {
-          "count": 103, 
-          "sum": 9193.569999999996, 
-          "average": 89.25796116504854
-        }, 
-        "It Books": {
-          "count": 24, 
-          "sum": 2525.7799999999997, 
-          "average": 105.24083333333334
-        }, 
-        "World Wrestling Entertainment": {
-          "count": 2, 
-          "sum": 87.12, 
-          "average": 43.56
-        }, 
-        "Knopf Group E-Books": {
-          "count": 1, 
-          "sum": 43.17, 
-          "average": 43.17
-        }, 
-        "HarperCollinsChildren'sBooks": {
-          "count": 2, 
-          "sum": 17.45, 
-          "average": 8.725
-        }, 
-        "Truman Talley Books": {
-          "count": 1, 
-          "sum": 71.12, 
-          "average": 71.12
-        }, 
-        "Aladdin": {
-          "count": 79, 
-          "sum": 2917.62, 
-          "average": 36.93189873417722
-        }, 
-        "Random House/Disney": {
-          "count": 13, 
-          "sum": 747.2800000000001, 
-          "average": 57.48307692307692
-        }, 
-        "Razorbill": {
-          "count": 14, 
-          "sum": 10160.369999999999, 
-          "average": 725.7407142857143
-        }, 
-        "Ten Speed Press": {
-          "count": 41, 
-          "sum": 2965.3899999999994, 
-          "average": 72.32658536585366
-        }, 
-        "DAW": {
-          "count": 14, 
-          "sum": 1560.5100000000007, 
-          "average": 111.465
-        }, 
-        "The Penguin Press": {
-          "count": 27, 
-          "sum": 6879.399999999999, 
-          "average": 254.79259259259257
-        }
-      }, 
-      "publishers.[0].daily.author revenue": {
-        "Simon Pulse/Mercury Ink": {
-          "count": 1, 
-          "sum": 114.57, 
-          "average": 114.57
-        }, 
-        "Gallery Books": {
-          "count": 56, 
-          "sum": 2370.608000000002, 
-          "average": 42.33228571428572
-        }, 
-        "Dial": {
-          "count": 10, 
-          "sum": 106.00999999999998, 
-          "average": 10.601
-        }, 
-        "McClelland & Stewart": {
-          "count": 1, 
-          "sum": 4.396, 
-          "average": 4.396
-        }, 
-        "Tor Books": {
-          "count": 77, 
-          "sum": 3849.4439999999986, 
-          "average": 49.99277922077922
-        }, 
-        "Penguin Young Readers": {
-          "count": 1, 
-          "sum": 2.178, 
-          "average": 2.178
-        }, 
-        "ESPN": {
-          "count": 2, 
-          "sum": 30.482, 
-          "average": 15.241
-        }, 
-        "Bantam": {
-          "count": 132, 
-          "sum": 5696.3920000000035, 
-          "average": 43.15448484848485
-        }, 
-        "Harper": {
-          "count": 55, 
-          "sum": 4772.83, 
-          "average": 86.77872727272727
-        }, 
-        "Portfolio": {
-          "count": 81, 
-          "sum": 2317.101999999999, 
-          "average": 28.606197530864197
-        }, 
-        "Plume": {
-          "count": 52, 
-          "sum": 1728.6519999999991, 
-          "average": 33.243307692307695
-        }, 
-        "Jericho Books": {
-          "count": 2, 
-          "sum": 64.14, 
-          "average": 32.07
-        }, 
-        "HarperTeen": {
-          "count": 28, 
-          "sum": 1082.676, 
-          "average": 38.666999999999994
-        }, 
-        "NAL": {
-          "count": 33, 
-          "sum": 2034.7260000000006, 
-          "average": 61.65836363636363
-        }, 
-        "Avon Impulse": {
-          "count": 13, 
-          "sum": 188.26399999999998, 
-          "average": 14.481846153846154
-        }, 
-        "AmazonEncore": {
-          "count": 10, 
-          "sum": 370.34549999999996, 
-          "average": 37.034549999999996
-        }, 
-        "Zondervan/Youth Specialties": {
-          "count": 2, 
-          "sum": 4.4399999999999995, 
-          "average": 2.2199999999999998
-        }, 
-        "Dial Press Trade Paperback": {
-          "count": 2, 
-          "sum": 44.89, 
-          "average": 22.445
-        }, 
-        "Villard": {
-          "count": 6, 
-          "sum": 93.948, 
-          "average": 15.658
-        }, 
-        "Golden/Disney": {
-          "count": 6, 
-          "sum": 23.331999999999997, 
-          "average": 3.888666666666667
-        }, 
-        "RH/Disney": {
-          "count": 7, 
-          "sum": 78.02199999999999, 
-          "average": 11.145999999999999
-        }, 
-        "Hodder & Stoughton": {
-          "count": 1, 
-          "sum": 21.576, 
-          "average": 21.576
-        }, 
-        "Newmarket Press": {
-          "count": 2, 
-          "sum": 7.1080000000000005, 
-          "average": 3.5540000000000003
-        }, 
-        "Little Brown and Company": {
-          "count": 141, 
-          "sum": 10024.787999999988, 
-          "average": 71.09778723404256
-        }, 
-        "Grand Central Life & Style": {
-          "count": 15, 
-          "sum": 1073.3580000000002, 
-          "average": 71.5572
-        }, 
-        "Perigee": {
-          "count": 17, 
-          "sum": 388.216, 
-          "average": 22.836235294117646
-        }, 
-        "Golden Books": {
-          "count": 8, 
-          "sum": 18.447999999999997, 
-          "average": 2.306
-        }, 
-        "Thomas Dunne Books": {
-          "count": 36, 
-          "sum": 816.2539999999999, 
-          "average": 22.673722222222224
-        }, 
-        "HarperSport": {
-          "count": 2, 
-          "sum": 1.99, 
-          "average": 0.995
-        }, 
-        "Collins Reference": {
-          "count": 1, 
-          "sum": 21.432, 
-          "average": 21.432
-        }, 
-        "Tor Teen": {
-          "count": 1, 
-          "sum": 14.924, 
-          "average": 14.924
-        }, 
-        "Crown Archetype": {
-          "count": 28, 
-          "sum": 739.2739999999999, 
-          "average": 26.402642857142858
-        }, 
-        "Harper Element": {
-          "count": 20, 
-          "sum": 195.34399999999994, 
-          "average": 9.767199999999999
-        }, 
-        "(Indie Publisher)": {
-          "count": 5637, 
-          "sum": 274998.61200000014, 
-          "average": 48.78456838744013
-        }, 
-        "Zondervan": {
-          "count": 65, 
-          "sum": 2695.0399999999977, 
-          "average": 41.462153846153846
-        }, 
-        "HarperWave": {
-          "count": 6, 
-          "sum": 706.5460000000002, 
-          "average": 117.75766666666668
-        }, 
-        "Studio": {
-          "count": 1, 
-          "sum": 13.0, 
-          "average": 13.0
-        }, 
-        "Bantam Dell": {
-          "count": 1, 
-          "sum": 15.984, 
-          "average": 15.984
-        }, 
-        "Pocket Star": {
-          "count": 11, 
-          "sum": 156.12800000000004, 
-          "average": 14.193454545454545
-        }, 
-        "Avon": {
-          "count": 25, 
-          "sum": 1826.1179999999995, 
-          "average": 73.04472
-        }, 
-        "Thomas & Mercer": {
-          "count": 102, 
-          "sum": 7513.579500000001, 
-          "average": 73.66254411764706
-        }, 
-        "Thomas Nelson": {
-          "count": 90, 
-          "sum": 3242.190000000001, 
-          "average": 36.02433333333333
-        }, 
-        "Penguin": {
-          "count": 37, 
-          "sum": 600.9279999999999, 
-          "average": 16.241297297297297
-        }, 
-        "Billboard Books": {
-          "count": 2, 
-          "sum": 7.362, 
-          "average": 3.681
-        }, 
-        "HarperBusiness": {
-          "count": 23, 
-          "sum": 995.898, 
-          "average": 43.29991304347826
-        }, 
-        "Simon Pulse": {
-          "count": 13, 
-          "sum": 522.8620000000001, 
-          "average": 40.22015384615384
-        }, 
-        "Little Brown Books for Young Readers": {
-          "count": 55, 
-          "sum": 1231.8620000000003, 
-          "average": 22.397490909090912
-        }, 
-        "Cash Money Content": {
-          "count": 2, 
-          "sum": 30.208, 
-          "average": 15.104
-        }, 
-        "Harper Paperbacks": {
-          "count": 5, 
-          "sum": 39.459999999999994, 
-          "average": 7.892
-        }, 
-        "Simon & Schuster": {
-          "count": 198, 
-          "sum": 6625.0880000000025, 
-          "average": 33.460040404040406
-        }, 
-        "Putnam Adult": {
-          "count": 37, 
-          "sum": 4636.722000000001, 
-          "average": 125.31681081081081
-        }, 
-        "Gallery Books/Karen Hunter Publishing": {
-          "count": 1, 
-          "sum": 8.304, 
-          "average": 8.304
-        }, 
-        "Reagan Arthur Books": {
-          "count": 2, 
-          "sum": 201.798, 
-          "average": 100.899
-        }, 
-        "William Morrow Impulse": {
-          "count": 2, 
-          "sum": 32.868, 
-          "average": 16.434
-        }, 
-        "Two Lions": {
-          "count": 64, 
-          "sum": 713.6499999999995, 
-          "average": 11.15078125
-        }, 
-        "Metropolitan Books": {
-          "count": 15, 
-          "sum": 402.394, 
-          "average": 26.826266666666665
-        }, 
-        "Potter Style": {
-          "count": 3, 
-          "sum": 28.276, 
-          "average": 9.425333333333333
-        }, 
-        "Poppy": {
-          "count": 1, 
-          "sum": 8.372, 
-          "average": 8.372
-        }, 
-        "Three Rivers Press": {
-          "count": 21, 
-          "sum": 426.2519999999999, 
-          "average": 20.297714285714285
-        }, 
-        "Little Simon": {
-          "count": 2, 
-          "sum": 1.708, 
-          "average": 0.854
-        }, 
-        "Avon Inspire": {
-          "count": 1, 
-          "sum": 83.2, 
-          "average": 83.2
-        }, 
-        "St. Martin's Paperbacks": {
-          "count": 18, 
-          "sum": 506.0679999999999, 
-          "average": 28.11488888888889
-        }, 
-        "PHILOMEL": {
-          "count": 1, 
-          "sum": 5.112, 
-          "average": 5.112
-        }, 
-        "Celestial Arts": {
-          "count": 5, 
-          "sum": 107.206, 
-          "average": 21.441200000000002
-        }, 
-        "HarperTorch": {
-          "count": 1, 
-          "sum": 0.792, 
-          "average": 0.792
-        }, 
-        "Entangled: Bliss": {
-          "count": 1, 
-          "sum": 43.056, 
-          "average": 43.056
-        }, 
-        "Debbie Macomber Books": {
-          "count": 2, 
-          "sum": 192.556, 
-          "average": 96.278
-        }, 
-        "Roaring Brook Press": {
-          "count": 7, 
-          "sum": 67.024, 
-          "average": 9.574857142857143
-        }, 
-        "Sentinel": {
-          "count": 2, 
-          "sum": 373.3, 
-          "average": 186.65
-        }, 
-        "HarperStudio": {
-          "count": 1, 
-          "sum": 14.224, 
-          "average": 14.224
-        }, 
-        "Amazon Publishing": {
-          "count": 21, 
-          "sum": 1136.7440000000001, 
-          "average": 54.13066666666666
-        }, 
-        "St. Martin's Press": {
-          "count": 147, 
-          "sum": 6063.85999999999, 
-          "average": 41.250748299319724
-        }, 
-        "HarperPerennial Classics": {
-          "count": 5, 
-          "sum": 44.946, 
-          "average": 8.9892
-        }, 
-        "Pintail": {
-          "count": 1, 
-          "sum": 209.79, 
-          "average": 209.79
-        }, 
-        "Current": {
-          "count": 3, 
-          "sum": 64.548, 
-          "average": 21.516000000000002
-        }, 
-        "HarperCollins e-books": {
-          "count": 378, 
-          "sum": 8250.254, 
-          "average": 21.826068783068784
-        }, 
-        "Gotham Books": {
-          "count": 27, 
-          "sum": 947.9680000000001, 
-          "average": 35.10992592592592
-        }, 
-        "MTV Books": {
-          "count": 2, 
-          "sum": 55.218, 
-          "average": 27.609
-        }, 
-        "Vintage": {
-          "count": 181, 
-          "sum": 5654.373999999995, 
-          "average": 31.239635359116022
-        }, 
-        "Clarkson Potter": {
-          "count": 35, 
-          "sum": 400.2340000000001, 
-          "average": 11.435257142857143
-        }, 
-        "Grand Harbor Press": {
-          "count": 3, 
-          "sum": 39.4065, 
-          "average": 13.1355
-        }, 
-        "Harper Thorsons": {
-          "count": 1, 
-          "sum": 5.32, 
-          "average": 5.32
-        }, 
-        "Deepak Chopra": {
-          "count": 3, 
-          "sum": 32.705999999999996, 
-          "average": 10.902000000000001
-        }, 
-        "Picador": {
-          "count": 10, 
-          "sum": 204.50999999999996, 
-          "average": 20.451
-        }, 
-        "Harmony": {
-          "count": 57, 
-          "sum": 2167.1200000000013, 
-          "average": 38.01964912280702
-        }, 
-        "Signet Classic": {
-          "count": 4, 
-          "sum": 29.258, 
-          "average": 7.3145
-        }, 
-        "47North": {
-          "count": 66, 
-          "sum": 3846.0905000000002, 
-          "average": 58.27409848484849
-        }, 
-        "HarperPress": {
-          "count": 3, 
-          "sum": 11.854, 
-          "average": 3.951333333333333
-        }, 
-        "Collins": {
-          "count": 8, 
-          "sum": 88.604, 
-          "average": 11.0755
-        }, 
-        "Starscape": {
-          "count": 1, 
-          "sum": 2.048, 
-          "average": 2.048
-        }, 
-        "Atria/Emily Bestler Books": {
-          "count": 7, 
-          "sum": 692.804, 
-          "average": 98.972
-        }, 
-        "Dragonfly Books": {
-          "count": 1, 
-          "sum": 2.396, 
-          "average": 2.396
-        }, 
-        "Feiwel & Friends": {
-          "count": 9, 
-          "sum": 358.5380000000001, 
-          "average": 39.837555555555554
-        }, 
-        "DK Publishing": {
-          "count": 26, 
-          "sum": 92.83399999999997, 
-          "average": 3.5705384615384617
-        }, 
-        "Leer-e": {
-          "count": 1, 
-          "sum": 20.366, 
-          "average": 20.366
-        }, 
-        "Amphoto Books": {
-          "count": 9, 
-          "sum": 161.058, 
-          "average": 17.895333333333333
-        }, 
-        "Skyscape": {
-          "count": 11, 
-          "sum": 1823.5104999999999, 
-          "average": 165.7736818181818
-        }, 
-        "Avery": {
-          "count": 15, 
-          "sum": 460.488, 
-          "average": 30.6992
-        }, 
-        "Appetite by Random House": {
-          "count": 1, 
-          "sum": 7.8, 
-          "average": 7.8
-        }, 
-        "Faber & Faber": {
-          "count": 6, 
-          "sum": 77.238, 
-          "average": 12.873
-        }, 
-        "AmazonCrossing": {
-          "count": 29, 
-          "sum": 1787.1140000000003, 
-          "average": 61.624620689655174
-        }, 
-        "Simon & Schuster Audio": {
-          "count": 1, 
-          "sum": 18.96, 
-          "average": 18.96
-        }, 
-        "Del Rey": {
-          "count": 45, 
-          "sum": 1042.9680000000003, 
-          "average": 23.17706666666667
-        }, 
-        "Graywolf Press": {
-          "count": 2, 
-          "sum": 29.27, 
-          "average": 14.635
-        }, 
-        "Howard Books": {
-          "count": 20, 
-          "sum": 899.9180000000005, 
-          "average": 44.9959
-        }, 
-        "First Second": {
-          "count": 3, 
-          "sum": 15.648, 
-          "average": 5.216
-        }, 
-        "Walden Pond Press": {
-          "count": 3, 
-          "sum": 7.965999999999999, 
-          "average": 2.6553333333333335
-        }, 
-        "Penguin Classic": {
-          "count": 17, 
-          "sum": 566.814, 
-          "average": 33.342
-        }, 
-        "Montlake Romance": {
-          "count": 66, 
-          "sum": 7734.019999999999, 
-          "average": 117.1821212121212
-        }, 
-        "The Dial Press": {
-          "count": 2, 
-          "sum": 237.61599999999999, 
-          "average": 118.80799999999999
-        }, 
-        "Modern Library": {
-          "count": 5, 
-          "sum": 120.534, 
-          "average": 24.1068
-        }, 
-        "Knopf": {
-          "count": 43, 
-          "sum": 3161.2280000000005, 
-          "average": 73.51693023255814
-        }, 
-        "Forever": {
-          "count": 18, 
-          "sum": 1517.5759999999996, 
-          "average": 84.30977777777778
-        }, 
-        "Riverhead": {
-          "count": 46, 
-          "sum": 2220.38, 
-          "average": 48.26913043478261
-        }, 
-        "Mulholland Books": {
-          "count": 8, 
-          "sum": 158.856, 
-          "average": 19.857
-        }, 
-        "Yearling": {
-          "count": 12, 
-          "sum": 90.82599999999998, 
-          "average": 7.568833333333333
-        }, 
-        "Hogarth": {
-          "count": 1, 
-          "sum": 170.986, 
-          "average": 170.986
-        }, 
-        "Bantam Classics": {
-          "count": 5, 
-          "sum": 35.848, 
-          "average": 7.1696
-        }, 
-        "Potter Craft": {
-          "count": 6, 
-          "sum": 56.592000000000006, 
-          "average": 9.432
-        }, 
-        "Atheneum Books for Young Readers": {
-          "count": 36, 
-          "sum": 426.55999999999995, 
-          "average": 11.848888888888888
-        }, 
-        "Golden Guides from St. Martin's Press": {
-          "count": 1, 
-          "sum": 16.002, 
-          "average": 16.002
-        }, 
-        "Penguin Books": {
-          "count": 144, 
-          "sum": 4801.404000000002, 
-          "average": 33.34308333333334
-        }, 
-        "CLBusiness": {
-          "count": 1, 
-          "sum": 4.396, 
-          "average": 4.396
-        }, 
-        "Lone Eagle": {
-          "count": 1, 
-          "sum": 10.4, 
-          "average": 10.4
-        }, 
-        "Berkley": {
-          "count": 169, 
-          "sum": 8193.328, 
-          "average": 48.48123076923077
-        }, 
-        "Harper Voyager": {
-          "count": 10, 
-          "sum": 291.20599999999996, 
-          "average": 29.120600000000003
-        }, 
-        "Hyperion": {
-          "count": 62, 
-          "sum": 2041.25, 
-          "average": 32.92338709677419
-        }, 
-        "Anchor": {
-          "count": 74, 
-          "sum": 1905.7620000000006, 
-          "average": 25.75354054054054
-        }, 
-        "Signet": {
-          "count": 63, 
-          "sum": 3315.5640000000003, 
-          "average": 52.628
-        }, 
-        "Forge Books": {
-          "count": 19, 
-          "sum": 279.0780000000001, 
-          "average": 14.688315789473686
-        }, 
-        "Celebra": {
-          "count": 2, 
-          "sum": 252.298, 
-          "average": 126.149
-        }, 
-        "Knopf Books for Young Readers": {
-          "count": 30, 
-          "sum": 559.288, 
-          "average": 18.642933333333335
-        }, 
-        "William Morrow Cookbooks": {
-          "count": 14, 
-          "sum": 119.804, 
-          "average": 8.557428571428572
-        }, 
-        "Image": {
-          "count": 7, 
-          "sum": 71.60399999999998, 
-          "average": 10.229142857142858
-        }, 
-        "Roc": {
-          "count": 13, 
-          "sum": 249.09000000000006, 
-          "average": 19.16076923076923
-        }, 
-        "Simon & Schuster/Paula Wiseman Books": {
-          "count": 3, 
-          "sum": 5.624, 
-          "average": 1.8746666666666665
-        }, 
-        "St. Martin's Griffin": {
-          "count": 43, 
-          "sum": 983.65, 
-          "average": 22.875581395348835
-        }, 
-        "Pantheon": {
-          "count": 8, 
-          "sum": 258.516, 
-          "average": 32.3145
-        }, 
-        "Reader's Digest": {
-          "count": 3, 
-          "sum": 170.822, 
-          "average": 56.940666666666665
-        }, 
-        "InterMix": {
-          "count": 4, 
-          "sum": 211.28799999999998, 
-          "average": 52.821999999999996
-        }, 
-        "Pocket Books": {
-          "count": 72, 
-          "sum": 2239.5440000000012, 
-          "average": 31.104777777777777
-        }, 
-        "Witness Impulse": {
-          "count": 12, 
-          "sum": 192.07200000000003, 
-          "average": 16.006
-        }, 
-        "Ivy Books": {
-          "count": 3, 
-          "sum": 9.584, 
-          "average": 3.1946666666666665
-        }, 
-        "Dutton Children's": {
-          "count": 4, 
-          "sum": 250.442, 
-          "average": 62.6105
-        }, 
-        "Speak": {
-          "count": 19, 
-          "sum": 1693.6559999999997, 
-          "average": 89.1397894736842
-        }, 
-        "Yen Press": {
-          "count": 12, 
-          "sum": 60.461999999999996, 
-          "average": 5.0385
-        }, 
-        "Random House Reference": {
-          "count": 1, 
-          "sum": 15.588, 
-          "average": 15.588
-        }, 
-        "Greenwillow Books": {
-          "count": 17, 
-          "sum": 142.14399999999998, 
-          "average": 8.361411764705883
-        }, 
-        "Schwartz & Wade": {
-          "count": 2, 
-          "sum": 5.542, 
-          "average": 2.771
-        }, 
-        "Page Street Publishing": {
-          "count": 2, 
-          "sum": 41.316, 
-          "average": 20.658
-        }, 
-        "Island Books": {
-          "count": 3, 
-          "sum": 141.254, 
-          "average": 47.084666666666664
-        }, 
-        "PSS Juvenile": {
-          "count": 1, 
-          "sum": 8.192, 
-          "average": 8.192
-        }, 
-        "Joe Books": {
-          "count": 3, 
-          "sum": 13.661999999999999, 
-          "average": 4.553999999999999
-        }, 
-        "Viking Adult": {
-          "count": 29, 
-          "sum": 1954.1420000000005, 
-          "average": 67.38420689655173
-        }, 
-        "Blue Rider Press": {
-          "count": 8, 
-          "sum": 667.45, 
-          "average": 83.43125
-        }, 
-        "Thorsons": {
-          "count": 4, 
-          "sum": 48.652, 
-          "average": 12.163
-        }, 
-        "David Fickling Books": {
-          "count": 1, 
-          "sum": 101.032, 
-          "average": 101.032
-        }, 
-        "Alfred A. Knopf BFYR": {
-          "count": 4, 
-          "sum": 14.352, 
-          "average": 3.588
-        }, 
-        "Minotaur Books": {
-          "count": 43, 
-          "sum": 1976.7400000000002, 
-          "average": 45.9706976744186
-        }, 
-        "Random House Trade Paperbacks": {
-          "count": 30, 
-          "sum": 1256.3140000000003, 
-          "average": 41.87713333333333
-        }, 
-        "BradyGames": {
-          "count": 2, 
-          "sum": 9.588000000000001, 
-          "average": 4.7940000000000005
-        }, 
-        "Renaissance Books": {
-          "count": 1, 
-          "sum": 18.216, 
-          "average": 18.216
-        }, 
-        "Harper Perennial": {
-          "count": 20, 
-          "sum": 338.424, 
-          "average": 16.9212
-        }, 
-        "Viking Children's": {
-          "count": 4, 
-          "sum": 55.824, 
-          "average": 13.956
-        }, 
-        "North Point Press": {
-          "count": 5, 
-          "sum": 62.254000000000005, 
-          "average": 12.4508
-        }, 
-        "Simon & Schuster Books for Young Readers": {
-          "count": 45, 
-          "sum": 669.322, 
-          "average": 14.873822222222222
-        }, 
-        "Random House": {
-          "count": 81, 
-          "sum": 3377.782000000002, 
-          "average": 41.70101234567901
-        }, 
-        "Schocken": {
-          "count": 4, 
-          "sum": 43.362, 
-          "average": 10.8405
-        }, 
-        "Meadowbrook": {
-          "count": 3, 
-          "sum": 28.674, 
-          "average": 9.558
-        }, 
-        "HarperFestival": {
-          "count": 5, 
-          "sum": 40.87, 
-          "average": 8.174
-        }, 
-        "Grand Central Publishing": {
-          "count": 94, 
-          "sum": 5601.321999999999, 
-          "average": 59.588531914893615
-        }, 
-        "Zinc Ink": {
-          "count": 1, 
-          "sum": 8.792, 
-          "average": 8.792
-        }, 
-        "Entangled: Teen": {
-          "count": 2, 
-          "sum": 55.304, 
-          "average": 27.652
-        }, 
-        "Gildan Digital": {
-          "count": 1, 
-          "sum": 2.786, 
-          "average": 2.786
-        }, 
-        "Scientific American": {
-          "count": 9, 
-          "sum": 59.124, 
-          "average": 6.569333333333333
-        }, 
-        "Ecco": {
-          "count": 27, 
-          "sum": 1364.198, 
-          "average": 50.525851851851854
-        }, 
-        "Presidio Press": {
-          "count": 4, 
-          "sum": 124.11, 
-          "average": 31.0275
-        }, 
-        "Ripley Publishing": {
-          "count": 4, 
-          "sum": 10.044, 
-          "average": 2.511
-        }, 
-        "FENN-M&S": {
-          "count": 1, 
-          "sum": 9.592, 
-          "average": 9.592
-        }, 
-        "FaithWords": {
-          "count": 11, 
-          "sum": 573.0500000000002, 
-          "average": 52.095454545454544
-        }, 
-        "Tor Science Fiction": {
-          "count": 1, 
-          "sum": 20.472, 
-          "average": 20.472
-        }, 
-        "Entangled: Brazen": {
-          "count": 18, 
-          "sum": 1022.7860000000001, 
-          "average": 56.82144444444444
-        }, 
-        "Forever Yours": {
-          "count": 1, 
-          "sum": 18.706, 
-          "average": 18.706
-        }, 
-        "Piatkus": {
-          "count": 1, 
-          "sum": 11.184, 
-          "average": 11.184
-        }, 
-        "Palgrave Macmillan": {
-          "count": 26, 
-          "sum": 261.37, 
-          "average": 10.052692307692308
-        }, 
-        "Broadway Books": {
-          "count": 68, 
-          "sum": 2099.762, 
-          "average": 30.878852941176472
-        }, 
-        "Random House Books for Young Readers": {
-          "count": 199, 
-          "sum": 1537.528, 
-          "average": 7.726271356783919
-        }, 
-        "Overlook": {
-          "count": 4, 
-          "sum": 38.272, 
-          "average": 9.568
-        }, 
-        "Threshold Editions": {
-          "count": 11, 
-          "sum": 353.82800000000003, 
-          "average": 32.16618181818182
-        }, 
-        "William Morrow": {
-          "count": 72, 
-          "sum": 4284.436, 
-          "average": 59.50605555555555
-        }, 
-        "Twelve": {
-          "count": 14, 
-          "sum": 373.156, 
-          "average": 26.654
-        }, 
-        "Delta": {
-          "count": 7, 
-          "sum": 182.584, 
-          "average": 26.083428571428573
-        }, 
-        "St. Martin's True Crime": {
-          "count": 2, 
-          "sum": 47.81, 
-          "average": 23.905
-        }, 
-        "Little A": {
-          "count": 1, 
-          "sum": 29.351, 
-          "average": 29.351
-        }, 
-        "Jove": {
-          "count": 41, 
-          "sum": 2296.4100000000008, 
-          "average": 56.01
-        }, 
-        "Jet City Comics": {
-          "count": 2, 
-          "sum": 159.40050000000002, 
-          "average": 79.70025000000001
-        }, 
-        "Simon Spotlight": {
-          "count": 18, 
-          "sum": 85.28200000000002, 
-          "average": 4.737888888888889
-        }, 
-        "Balzer + Bray": {
-          "count": 11, 
-          "sum": 236.748, 
-          "average": 21.522545454545455
-        }, 
-        "Entangled: Indulgence": {
-          "count": 2, 
-          "sum": 43.56, 
-          "average": 21.78
-        }, 
-        "Dutton Adult": {
-          "count": 23, 
-          "sum": 1728.9559999999994, 
-          "average": 75.172
-        }, 
-        "Orb Books": {
-          "count": 7, 
-          "sum": 73.712, 
-          "average": 10.530285714285714
-        }, 
-        "Laurel Leaf": {
-          "count": 8, 
-          "sum": 137.05599999999998, 
-          "average": 17.131999999999998
-        }, 
-        "Aerie": {
-          "count": 1, 
-          "sum": 7.384, 
-          "average": 7.384
-        }, 
-        "Hudson Street Press": {
-          "count": 3, 
-          "sum": 54.95, 
-          "average": 18.316666666666666
-        }, 
-        "Back Bay Books": {
-          "count": 10, 
-          "sum": 486.8699999999999, 
-          "average": 48.687
-        }, 
-        "Times Books": {
-          "count": 16, 
-          "sum": 337.65200000000004, 
-          "average": 21.10325
-        }, 
-        "HP": {
-          "count": 1, 
-          "sum": 3.228, 
-          "average": 3.228
-        }, 
-        "Robin Corey Books": {
-          "count": 1, 
-          "sum": 2.396, 
-          "average": 2.396
-        }, 
-        "LucasBooks": {
-          "count": 69, 
-          "sum": 792.972, 
-          "average": 11.492347826086956
-        }, 
-        "Peterson's": {
-          "count": 3, 
-          "sum": 9.186, 
-          "average": 3.062
-        }, 
-        "Crown": {
-          "count": 31, 
-          "sum": 1474.8040000000008, 
-          "average": 47.574322580645166
-        }, 
-        "FSG Originals": {
-          "count": 3, 
-          "sum": 188.212, 
-          "average": 62.73733333333334
-        }, 
-        "Orion": {
-          "count": 2, 
-          "sum": 5.312, 
-          "average": 2.656
-        }, 
-        "Katherine Tegen Books": {
-          "count": 12, 
-          "sum": 229.084, 
-          "average": 19.090333333333334
-        }, 
-        "(Single-Author Publisher)": {
-          "count": 3426, 
-          "sum": 37449.14399999994, 
-          "average": 10.930865148861646
-        }, 
-        "HarperCollins": {
-          "count": 237, 
-          "sum": 4784.343999999989, 
-          "average": 20.187105485232067
-        }, 
-        "WaterBrook Press": {
-          "count": 19, 
-          "sum": 523.1039999999999, 
-          "average": 27.531789473684213
-        }, 
-        "Putnam Juvenile": {
-          "count": 10, 
-          "sum": 519.18, 
-          "average": 51.91799999999999
-        }, 
-        "Harper Design": {
-          "count": 2, 
-          "sum": 14.536, 
-          "average": 7.268
-        }, 
-        "Loveswept": {
-          "count": 10, 
-          "sum": 206.10800000000003, 
-          "average": 20.6108
-        }, 
-        "Crimeline": {
-          "count": 4, 
-          "sum": 92.092, 
-          "average": 23.023
-        }, 
-        "Hill and Wang": {
-          "count": 8, 
-          "sum": 65.244, 
-          "average": 8.1555
-        }, 
-        "Delacorte Press": {
-          "count": 46, 
-          "sum": 4422.842, 
-          "average": 96.14873913043478
-        }, 
-        "Broadside e-books": {
-          "count": 2, 
-          "sum": 14.172, 
-          "average": 7.086
-        }, 
-        "Wellspring/Ballantine": {
-          "count": 2, 
-          "sum": 11.84, 
-          "average": 5.92
-        }, 
-        "Philomel": {
-          "count": 6, 
-          "sum": 271.08799999999997, 
-          "average": 45.18133333333333
-        }, 
-        "Center Street": {
-          "count": 10, 
-          "sum": 698.9100000000002, 
-          "average": 69.89099999999999
-        }, 
-        "Margaret K. McElderry Books": {
-          "count": 18, 
-          "sum": 1822.222, 
-          "average": 101.23455555555556
-        }, 
-        "The Friday Project": {
-          "count": 1, 
-          "sum": 4.378, 
-          "average": 4.378
-        }, 
-        "Ballantine Books": {
-          "count": 151, 
-          "sum": 4521.568000000001, 
-          "average": 29.94415894039735
-        }, 
-        "Amistad": {
-          "count": 2, 
-          "sum": 13.677999999999999, 
-          "average": 6.8389999999999995
-        }, 
-        "Atria Books/Beyond Words": {
-          "count": 6, 
-          "sum": 94.102, 
-          "average": 15.683666666666667
-        }, 
-        "Grijalbo": {
-          "count": 1, 
-          "sum": 3.596, 
-          "average": 3.596
-        }, 
-        "Tundra Books": {
-          "count": 2, 
-          "sum": 8.372, 
-          "average": 4.186
-        }, 
-        "Crown Forum": {
-          "count": 4, 
-          "sum": 57.28, 
-          "average": 14.32
-        }, 
-        "Scribner": {
-          "count": 113, 
-          "sum": 4173.845999999999, 
-          "average": 36.93669026548673
-        }, 
-        "Scientific American / Farrar Straus and Giroux": {
-          "count": 3, 
-          "sum": 53.339999999999996, 
-          "average": 17.78
-        }, 
-        "Peterson Institute for International Economics": {
-          "count": 1, 
-          "sum": 11.186, 
-          "average": 11.186
-        }, 
-        "Crown Business": {
-          "count": 54, 
-          "sum": 1537.6300000000006, 
-          "average": 28.47462962962963
-        }, 
-        "Pocket Books/Star Trek": {
-          "count": 56, 
-          "sum": 408.196, 
-          "average": 7.289214285714285
-        }, 
-        "Doubleday": {
-          "count": 24, 
-          "sum": 1475.678, 
-          "average": 61.48658333333333
-        }, 
-        "Delacorte Books for Young Readers": {
-          "count": 20, 
-          "sum": 373.068, 
-          "average": 18.653399999999998
-        }, 
-        "Henry Holt and Co.": {
-          "count": 42, 
-          "sum": 1072.4100000000003, 
-          "average": 25.53357142857143
-        }, 
-        "Convergent Books": {
-          "count": 1, 
-          "sum": 15.98, 
-          "average": 15.98
-        }, 
-        "Zonderkidz": {
-          "count": 27, 
-          "sum": 189.87199999999996, 
-          "average": 7.0322962962962965
-        }, 
-        "Papercutz": {
-          "count": 13, 
-          "sum": 58.98400000000001, 
-          "average": 4.537230769230769
-        }, 
-        "Atria Books": {
-          "count": 96, 
-          "sum": 4461.862000000001, 
-          "average": 46.47772916666667
-        }, 
-        "(Small or Medium Publisher)": {
-          "count": 9107, 
-          "sum": 124484.13200000241, 
-          "average": 13.669060283298561
-        }, 
-        "Flash Point": {
-          "count": 2, 
-          "sum": 27.78, 
-          "average": 13.89
-        }, 
-        "Onyx": {
-          "count": 2, 
-          "sum": 34.09, 
-          "average": 17.045
-        }, 
-        "Dell": {
-          "count": 45, 
-          "sum": 2016.01, 
-          "average": 44.800222222222224
-        }, 
-        "Atria / 37 Ink": {
-          "count": 2, 
-          "sum": 75.772, 
-          "average": 37.886
-        }, 
-        "HarperOne": {
-          "count": 40, 
-          "sum": 978.8199999999998, 
-          "average": 24.4705
-        }, 
-        "Touchstone": {
-          "count": 69, 
-          "sum": 2213.583999999999, 
-          "average": 32.08092753623188
-        }, 
-        "Watson-Guptill": {
-          "count": 16, 
-          "sum": 105.97399999999998, 
-          "average": 6.623375
-        }, 
-        "Princeton Review": {
-          "count": 9, 
-          "sum": 61.13600000000001, 
-          "average": 6.792888888888889
-        }, 
-        "Entangled: Select": {
-          "count": 1, 
-          "sum": 82.84, 
-          "average": 82.84
-        }, 
-        "Mitchell Beazley": {
-          "count": 1, 
-          "sum": 4.74, 
-          "average": 4.74
-        }, 
-        "Washington Square Press": {
-          "count": 4, 
-          "sum": 31.896, 
-          "average": 7.974
-        }, 
-        "Tarcher": {
-          "count": 22, 
-          "sum": 557.386, 
-          "average": 25.335727272727272
-        }, 
-        "Galvanized Books": {
-          "count": 1, 
-          "sum": 23.016, 
-          "average": 23.016
-        }, 
-        "Alpha": {
-          "count": 5, 
-          "sum": 44.968, 
-          "average": 8.9936
-        }, 
-        "Fodor's": {
-          "count": 14, 
-          "sum": 139.36199999999997, 
-          "average": 9.95442857142857
-        }, 
-        "Nan A. Talese": {
-          "count": 5, 
-          "sum": 430.38800000000003, 
-          "average": 86.07759999999999
-        }, 
-        "Square Fish": {
-          "count": 3, 
-          "sum": 19.488, 
-          "average": 6.4959999999999996
-        }, 
-        "Chicken Soup for the Soul": {
-          "count": 5, 
-          "sum": 27.982, 
-          "average": 5.5964
-        }, 
-        "Ace": {
-          "count": 43, 
-          "sum": 1608.9859999999999, 
-          "average": 37.41827906976744
-        }, 
-        "Prentice Hall Press": {
-          "count": 6, 
-          "sum": 137.95800000000003, 
-          "average": 22.993
-        }, 
-        "Free Press": {
-          "count": 68, 
-          "sum": 1239.7420000000004, 
-          "average": 18.2315
-        }, 
-        "Rough Guides": {
-          "count": 4, 
-          "sum": 24.078, 
-          "average": 6.0195
-        }, 
-        "Spectra": {
-          "count": 47, 
-          "sum": 982.6680000000003, 
-          "average": 20.907829787234043
-        }, 
-        "Orbit": {
-          "count": 46, 
-          "sum": 1460.4359999999992, 
-          "average": 31.748608695652173
-        }, 
-        "Spiegel & Grau": {
-          "count": 22, 
-          "sum": 947.1159999999999, 
-          "average": 43.05072727272727
-        }, 
-        "Main Street Books": {
-          "count": 1, 
-          "sum": 23.632, 
-          "average": 23.632
-        }, 
-        "William Morrow Paperbacks": {
-          "count": 44, 
-          "sum": 1280.5460000000003, 
-          "average": 29.10331818181818
-        }, 
-        "Crossing Press": {
-          "count": 2, 
-          "sum": 16.066, 
-          "average": 8.033
-        }, 
-        "LB Kids": {
-          "count": 8, 
-          "sum": 22.221999999999998, 
-          "average": 2.77775
-        }, 
-        "Fawcett": {
-          "count": 4, 
-          "sum": 37.138, 
-          "average": 9.2845
-        }, 
-        "Sarah Crichton Books": {
-          "count": 7, 
-          "sum": 459.918, 
-          "average": 65.70257142857143
-        }, 
-        "Anthony Bourdain/Ecco": {
-          "count": 2, 
-          "sum": 32.958, 
-          "average": 16.479
-        }, 
-        "Vision": {
-          "count": 4, 
-          "sum": 166.362, 
-          "average": 41.5905
-        }, 
-        "Farrar Straus and Giroux": {
-          "count": 89, 
-          "sum": 1878.86, 
-          "average": 21.11078651685393
-        }, 
-        "Vintage Espanol": {
-          "count": 7, 
-          "sum": 151.79399999999998, 
-          "average": 21.684857142857144
-        }, 
-        "Holt Paperbacks": {
-          "count": 25, 
-          "sum": 629.8879999999999, 
-          "average": 25.195520000000002
-        }, 
-        "Multnomah Books": {
-          "count": 7, 
-          "sum": 217.204, 
-          "average": 31.02914285714286
-        }, 
-        "Grupo Nelson": {
-          "count": 3, 
-          "sum": 11.748, 
-          "average": 3.9160000000000004
-        }, 
-        "Grosset & Dunlap": {
-          "count": 104, 
-          "sum": 547.8740000000008, 
-          "average": 5.268019230769231
-        }, 
-        "HarperTrue": {
-          "count": 1, 
-          "sum": 37.412, 
-          "average": 37.412
-        }, 
-        "Business Plus": {
-          "count": 15, 
-          "sum": 299.46400000000006, 
-          "average": 19.964266666666667
-        }, 
-        "Wendy Lamb Books": {
-          "count": 5, 
-          "sum": 61.292, 
-          "average": 12.2584
-        }, 
-        "Puffin": {
-          "count": 103, 
-          "sum": 1838.7139999999995, 
-          "average": 17.851592233009708
-        }, 
-        "It Books": {
-          "count": 24, 
-          "sum": 505.1560000000002, 
-          "average": 21.048166666666667
-        }, 
-        "World Wrestling Entertainment": {
-          "count": 2, 
-          "sum": 17.424, 
-          "average": 8.712
-        }, 
-        "Knopf Group E-Books": {
-          "count": 1, 
-          "sum": 8.634, 
-          "average": 8.634
-        }, 
-        "HarperCollinsChildren'sBooks": {
-          "count": 2, 
-          "sum": 3.49, 
-          "average": 1.745
-        }, 
-        "Truman Talley Books": {
-          "count": 1, 
-          "sum": 14.224, 
-          "average": 14.224
-        }, 
-        "Aladdin": {
-          "count": 79, 
-          "sum": 583.5240000000001, 
-          "average": 7.386379746835443
-        }, 
-        "Random House/Disney": {
-          "count": 13, 
-          "sum": 149.45599999999993, 
-          "average": 11.496615384615383
-        }, 
-        "Razorbill": {
-          "count": 14, 
-          "sum": 2032.0739999999998, 
-          "average": 145.14814285714286
-        }, 
-        "Ten Speed Press": {
-          "count": 41, 
-          "sum": 593.0780000000001, 
-          "average": 14.46531707317073
-        }, 
-        "DAW": {
-          "count": 14, 
-          "sum": 312.1020000000001, 
-          "average": 22.293
-        }, 
-        "The Penguin Press": {
-          "count": 27, 
-          "sum": 1375.8799999999999, 
-          "average": 50.958518518518524
-        }
-      }, 
-      "publishers.[0].daily.publisher revenue": {
-        "Simon Pulse/Mercury Ink": {
-          "count": 1, 
-          "sum": 343.71, 
-          "average": 343.71
-        }, 
-        "Gallery Books": {
-          "count": 56, 
-          "sum": 7111.824000000001, 
-          "average": 126.99685714285714
-        }, 
-        "Dial": {
-          "count": 10, 
-          "sum": 318.03, 
-          "average": 31.802999999999997
-        }, 
-        "McClelland & Stewart": {
-          "count": 1, 
-          "sum": 13.188, 
-          "average": 13.188
-        }, 
-        "Tor Books": {
-          "count": 77, 
-          "sum": 11548.332000000004, 
-          "average": 149.97833766233768
-        }, 
-        "Penguin Young Readers": {
-          "count": 1, 
-          "sum": 6.534, 
-          "average": 6.534
-        }, 
-        "ESPN": {
-          "count": 2, 
-          "sum": 91.446, 
-          "average": 45.723
-        }, 
-        "Bantam": {
-          "count": 132, 
-          "sum": 17089.175999999996, 
-          "average": 129.46345454545454
-        }, 
-        "Harper": {
-          "count": 55, 
-          "sum": 14318.489999999998, 
-          "average": 260.33618181818184
-        }, 
-        "Portfolio": {
-          "count": 81, 
-          "sum": 6951.306, 
-          "average": 85.8185925925926
-        }, 
-        "Plume": {
-          "count": 52, 
-          "sum": 5185.955999999999, 
-          "average": 99.72992307692309
-        }, 
-        "Jericho Books": {
-          "count": 2, 
-          "sum": 192.42, 
-          "average": 96.21
-        }, 
-        "HarperTeen": {
-          "count": 28, 
-          "sum": 3248.028000000001, 
-          "average": 116.00099999999999
-        }, 
-        "NAL": {
-          "count": 33, 
-          "sum": 6104.177999999998, 
-          "average": 184.9750909090909
-        }, 
-        "Avon Impulse": {
-          "count": 13, 
-          "sum": 564.792, 
-          "average": 43.44553846153846
-        }, 
-        "AmazonEncore": {
-          "count": 10, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "Zondervan/Youth Specialties": {
-          "count": 2, 
-          "sum": 13.32, 
-          "average": 6.66
-        }, 
-        "Dial Press Trade Paperback": {
-          "count": 2, 
-          "sum": 134.67, 
-          "average": 67.335
-        }, 
-        "Villard": {
-          "count": 6, 
-          "sum": 281.84400000000005, 
-          "average": 46.974
-        }, 
-        "Golden/Disney": {
-          "count": 6, 
-          "sum": 69.996, 
-          "average": 11.665999999999999
-        }, 
-        "RH/Disney": {
-          "count": 7, 
-          "sum": 234.066, 
-          "average": 33.438
-        }, 
-        "Hodder & Stoughton": {
-          "count": 1, 
-          "sum": 64.728, 
-          "average": 64.728
-        }, 
-        "Newmarket Press": {
-          "count": 2, 
-          "sum": 21.323999999999998, 
-          "average": 10.661999999999999
-        }, 
-        "Little Brown and Company": {
-          "count": 141, 
-          "sum": 30074.363999999994, 
-          "average": 213.29336170212767
-        }, 
-        "Grand Central Life & Style": {
-          "count": 15, 
-          "sum": 3220.0740000000005, 
-          "average": 214.6716
-        }, 
-        "Perigee": {
-          "count": 17, 
-          "sum": 1164.6479999999997, 
-          "average": 68.50870588235294
-        }, 
-        "Golden Books": {
-          "count": 8, 
-          "sum": 55.343999999999994, 
-          "average": 6.918
-        }, 
-        "Thomas Dunne Books": {
-          "count": 36, 
-          "sum": 2448.761999999999, 
-          "average": 68.02116666666667
-        }, 
-        "HarperSport": {
-          "count": 2, 
-          "sum": 5.97, 
-          "average": 2.985
-        }, 
-        "Collins Reference": {
-          "count": 1, 
-          "sum": 64.296, 
-          "average": 64.296
-        }, 
-        "Tor Teen": {
-          "count": 1, 
-          "sum": 44.772, 
-          "average": 44.772
-        }, 
-        "Crown Archetype": {
-          "count": 28, 
-          "sum": 2217.822, 
-          "average": 79.20792857142858
-        }, 
-        "Harper Element": {
-          "count": 20, 
-          "sum": 586.032, 
-          "average": 29.3016
-        }, 
-        "(Indie Publisher)": {
-          "count": 5637, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "Zondervan": {
-          "count": 65, 
-          "sum": 8085.1200000000035, 
-          "average": 124.38646153846153
-        }, 
-        "HarperWave": {
-          "count": 6, 
-          "sum": 2119.638, 
-          "average": 353.27299999999997
-        }, 
-        "Studio": {
-          "count": 1, 
-          "sum": 39.0, 
-          "average": 39.0
-        }, 
-        "Bantam Dell": {
-          "count": 1, 
-          "sum": 47.952, 
-          "average": 47.952
-        }, 
-        "Pocket Star": {
-          "count": 11, 
-          "sum": 468.38399999999996, 
-          "average": 42.580363636363636
-        }, 
-        "Avon": {
-          "count": 25, 
-          "sum": 5478.354000000003, 
-          "average": 219.13416
-        }, 
-        "Thomas & Mercer": {
-          "count": 102, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "Thomas Nelson": {
-          "count": 90, 
-          "sum": 9726.569999999996, 
-          "average": 108.073
-        }, 
-        "Penguin": {
-          "count": 37, 
-          "sum": 1802.7839999999999, 
-          "average": 48.723891891891896
-        }, 
-        "Billboard Books": {
-          "count": 2, 
-          "sum": 22.086, 
-          "average": 11.043
-        }, 
-        "HarperBusiness": {
-          "count": 23, 
-          "sum": 2987.694, 
-          "average": 129.89973913043477
-        }, 
-        "Simon Pulse": {
-          "count": 13, 
-          "sum": 1568.586, 
-          "average": 120.66046153846153
-        }, 
-        "Little Brown Books for Young Readers": {
-          "count": 55, 
-          "sum": 3695.585999999999, 
-          "average": 67.19247272727273
-        }, 
-        "Cash Money Content": {
-          "count": 2, 
-          "sum": 90.624, 
-          "average": 45.312
-        }, 
-        "Harper Paperbacks": {
-          "count": 5, 
-          "sum": 118.38000000000001, 
-          "average": 23.676
-        }, 
-        "Simon & Schuster": {
-          "count": 198, 
-          "sum": 19875.26399999998, 
-          "average": 100.38012121212121
-        }, 
-        "Putnam Adult": {
-          "count": 37, 
-          "sum": 13910.165999999996, 
-          "average": 375.9504324324324
-        }, 
-        "Gallery Books/Karen Hunter Publishing": {
-          "count": 1, 
-          "sum": 24.912, 
-          "average": 24.912
-        }, 
-        "Reagan Arthur Books": {
-          "count": 2, 
-          "sum": 605.394, 
-          "average": 302.697
-        }, 
-        "William Morrow Impulse": {
-          "count": 2, 
-          "sum": 98.604, 
-          "average": 49.302
-        }, 
-        "Two Lions": {
-          "count": 64, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "Metropolitan Books": {
-          "count": 15, 
-          "sum": 1207.182, 
-          "average": 80.4788
-        }, 
-        "Potter Style": {
-          "count": 3, 
-          "sum": 84.828, 
-          "average": 28.276
-        }, 
-        "Poppy": {
-          "count": 1, 
-          "sum": 25.116, 
-          "average": 25.116
-        }, 
-        "Three Rivers Press": {
-          "count": 21, 
-          "sum": 1278.7559999999999, 
-          "average": 60.89314285714286
-        }, 
-        "Little Simon": {
-          "count": 2, 
-          "sum": 5.1240000000000006, 
-          "average": 2.5620000000000003
-        }, 
-        "Avon Inspire": {
-          "count": 1, 
-          "sum": 249.6, 
-          "average": 249.6
-        }, 
-        "St. Martin's Paperbacks": {
-          "count": 18, 
-          "sum": 1518.2039999999997, 
-          "average": 84.34466666666667
-        }, 
-        "PHILOMEL": {
-          "count": 1, 
-          "sum": 15.336, 
-          "average": 15.336
-        }, 
-        "Celestial Arts": {
-          "count": 5, 
-          "sum": 321.618, 
-          "average": 64.3236
-        }, 
-        "HarperTorch": {
-          "count": 1, 
-          "sum": 2.376, 
-          "average": 2.376
-        }, 
-        "Entangled: Bliss": {
-          "count": 1, 
-          "sum": 129.168, 
-          "average": 129.168
-        }, 
-        "Debbie Macomber Books": {
-          "count": 2, 
-          "sum": 577.668, 
-          "average": 288.834
-        }, 
-        "Roaring Brook Press": {
-          "count": 7, 
-          "sum": 201.072, 
-          "average": 28.72457142857143
-        }, 
-        "Sentinel": {
-          "count": 2, 
-          "sum": 1119.9, 
-          "average": 559.95
-        }, 
-        "HarperStudio": {
-          "count": 1, 
-          "sum": 42.672, 
-          "average": 42.672
-        }, 
-        "Amazon Publishing": {
-          "count": 21, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "St. Martin's Press": {
-          "count": 147, 
-          "sum": 18191.580000000005, 
-          "average": 123.75224489795917
-        }, 
-        "HarperPerennial Classics": {
-          "count": 5, 
-          "sum": 134.838, 
-          "average": 26.967599999999997
-        }, 
-        "Pintail": {
-          "count": 1, 
-          "sum": 629.37, 
-          "average": 629.37
-        }, 
-        "Current": {
-          "count": 3, 
-          "sum": 193.644, 
-          "average": 64.548
-        }, 
-        "HarperCollins e-books": {
-          "count": 378, 
-          "sum": 24750.76199999998, 
-          "average": 65.47820634920635
-        }, 
-        "Gotham Books": {
-          "count": 27, 
-          "sum": 2843.9039999999995, 
-          "average": 105.32977777777778
-        }, 
-        "MTV Books": {
-          "count": 2, 
-          "sum": 165.654, 
-          "average": 82.827
-        }, 
-        "Vintage": {
-          "count": 181, 
-          "sum": 16963.122000000007, 
-          "average": 93.71890607734807
-        }, 
-        "Clarkson Potter": {
-          "count": 35, 
-          "sum": 1200.702, 
-          "average": 34.305771428571425
-        }, 
-        "Grand Harbor Press": {
-          "count": 3, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "Harper Thorsons": {
-          "count": 1, 
-          "sum": 15.96, 
-          "average": 15.96
-        }, 
-        "Deepak Chopra": {
-          "count": 3, 
-          "sum": 98.118, 
-          "average": 32.705999999999996
-        }, 
-        "Picador": {
-          "count": 10, 
-          "sum": 613.53, 
-          "average": 61.352999999999994
-        }, 
-        "Harmony": {
-          "count": 57, 
-          "sum": 6501.359999999998, 
-          "average": 114.05894736842104
-        }, 
-        "Signet Classic": {
-          "count": 4, 
-          "sum": 87.774, 
-          "average": 21.9435
-        }, 
-        "47North": {
-          "count": 66, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "HarperPress": {
-          "count": 3, 
-          "sum": 35.562000000000005, 
-          "average": 11.854
-        }, 
-        "Collins": {
-          "count": 8, 
-          "sum": 265.812, 
-          "average": 33.2265
-        }, 
-        "Starscape": {
-          "count": 1, 
-          "sum": 6.144, 
-          "average": 6.144
-        }, 
-        "Atria/Emily Bestler Books": {
-          "count": 7, 
-          "sum": 2078.412, 
-          "average": 296.916
-        }, 
-        "Dragonfly Books": {
-          "count": 1, 
-          "sum": 7.188, 
-          "average": 7.188
-        }, 
-        "Feiwel & Friends": {
-          "count": 9, 
-          "sum": 1075.614, 
-          "average": 119.51266666666668
-        }, 
-        "DK Publishing": {
-          "count": 26, 
-          "sum": 278.502, 
-          "average": 10.711615384615385
-        }, 
-        "Leer-e": {
-          "count": 1, 
-          "sum": 61.098, 
-          "average": 61.098
-        }, 
-        "Amphoto Books": {
-          "count": 9, 
-          "sum": 483.17400000000004, 
-          "average": 53.686
-        }, 
-        "Skyscape": {
-          "count": 11, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "Avery": {
-          "count": 15, 
-          "sum": 1381.464, 
-          "average": 92.0976
-        }, 
-        "Appetite by Random House": {
-          "count": 1, 
-          "sum": 23.4, 
-          "average": 23.4
-        }, 
-        "Faber & Faber": {
-          "count": 6, 
-          "sum": 231.71400000000006, 
-          "average": 38.619
-        }, 
-        "AmazonCrossing": {
-          "count": 29, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "Simon & Schuster Audio": {
-          "count": 1, 
-          "sum": 56.88, 
-          "average": 56.88
-        }, 
-        "Del Rey": {
-          "count": 45, 
-          "sum": 3128.904000000001, 
-          "average": 69.5312
-        }, 
-        "Graywolf Press": {
-          "count": 2, 
-          "sum": 87.81, 
-          "average": 43.905
-        }, 
-        "Howard Books": {
-          "count": 20, 
-          "sum": 2699.754000000001, 
-          "average": 134.9877
-        }, 
-        "First Second": {
-          "count": 3, 
-          "sum": 46.944, 
-          "average": 15.648000000000001
-        }, 
-        "Walden Pond Press": {
-          "count": 3, 
-          "sum": 23.898000000000003, 
-          "average": 7.966
-        }, 
-        "Penguin Classic": {
-          "count": 17, 
-          "sum": 1700.4419999999996, 
-          "average": 100.026
-        }, 
-        "Montlake Romance": {
-          "count": 66, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "The Dial Press": {
-          "count": 2, 
-          "sum": 712.8480000000001, 
-          "average": 356.42400000000004
-        }, 
-        "Modern Library": {
-          "count": 5, 
-          "sum": 361.602, 
-          "average": 72.32039999999999
-        }, 
-        "Knopf": {
-          "count": 43, 
-          "sum": 9483.683999999996, 
-          "average": 220.55079069767442
-        }, 
-        "Forever": {
-          "count": 18, 
-          "sum": 4552.727999999999, 
-          "average": 252.92933333333335
-        }, 
-        "Riverhead": {
-          "count": 46, 
-          "sum": 6661.140000000003, 
-          "average": 144.80739130434785
-        }, 
-        "Mulholland Books": {
-          "count": 8, 
-          "sum": 476.56800000000004, 
-          "average": 59.571
-        }, 
-        "Yearling": {
-          "count": 12, 
-          "sum": 272.47800000000007, 
-          "average": 22.706500000000002
-        }, 
-        "Hogarth": {
-          "count": 1, 
-          "sum": 512.958, 
-          "average": 512.958
-        }, 
-        "Bantam Classics": {
-          "count": 5, 
-          "sum": 107.54400000000001, 
-          "average": 21.5088
-        }, 
-        "Potter Craft": {
-          "count": 6, 
-          "sum": 169.77599999999998, 
-          "average": 28.296000000000003
-        }, 
-        "Atheneum Books for Young Readers": {
-          "count": 36, 
-          "sum": 1279.679999999999, 
-          "average": 35.54666666666667
-        }, 
-        "Golden Guides from St. Martin's Press": {
-          "count": 1, 
-          "sum": 48.006, 
-          "average": 48.006
-        }, 
-        "Penguin Books": {
-          "count": 144, 
-          "sum": 14404.211999999998, 
-          "average": 100.02924999999999
-        }, 
-        "CLBusiness": {
-          "count": 1, 
-          "sum": 13.188, 
-          "average": 13.188
-        }, 
-        "Lone Eagle": {
-          "count": 1, 
-          "sum": 31.2, 
-          "average": 31.2
-        }, 
-        "Berkley": {
-          "count": 169, 
-          "sum": 24579.984000000008, 
-          "average": 145.44369230769232
-        }, 
-        "Harper Voyager": {
-          "count": 10, 
-          "sum": 873.6179999999999, 
-          "average": 87.3618
-        }, 
-        "Hyperion": {
-          "count": 62, 
-          "sum": 6123.749999999996, 
-          "average": 98.77016129032258
-        }, 
-        "Anchor": {
-          "count": 74, 
-          "sum": 5717.286, 
-          "average": 77.26062162162162
-        }, 
-        "Signet": {
-          "count": 63, 
-          "sum": 9946.691999999997, 
-          "average": 157.884
-        }, 
-        "Forge Books": {
-          "count": 19, 
-          "sum": 837.2339999999999, 
-          "average": 44.06494736842105
-        }, 
-        "Celebra": {
-          "count": 2, 
-          "sum": 756.894, 
-          "average": 378.447
-        }, 
-        "Knopf Books for Young Readers": {
-          "count": 30, 
-          "sum": 1677.8639999999998, 
-          "average": 55.9288
-        }, 
-        "William Morrow Cookbooks": {
-          "count": 14, 
-          "sum": 359.412, 
-          "average": 25.672285714285717
-        }, 
-        "Image": {
-          "count": 7, 
-          "sum": 214.81199999999998, 
-          "average": 30.68742857142857
-        }, 
-        "Roc": {
-          "count": 13, 
-          "sum": 747.27, 
-          "average": 57.48230769230769
-        }, 
-        "Simon & Schuster/Paula Wiseman Books": {
-          "count": 3, 
-          "sum": 16.872, 
-          "average": 5.624
-        }, 
-        "St. Martin's Griffin": {
-          "count": 43, 
-          "sum": 2950.9499999999985, 
-          "average": 68.62674418604651
-        }, 
-        "Pantheon": {
-          "count": 8, 
-          "sum": 775.5480000000001, 
-          "average": 96.9435
-        }, 
-        "Reader's Digest": {
-          "count": 3, 
-          "sum": 512.466, 
-          "average": 170.822
-        }, 
-        "InterMix": {
-          "count": 4, 
-          "sum": 633.864, 
-          "average": 158.466
-        }, 
-        "Pocket Books": {
-          "count": 72, 
-          "sum": 6718.632000000001, 
-          "average": 93.31433333333332
-        }, 
-        "Witness Impulse": {
-          "count": 12, 
-          "sum": 576.2160000000001, 
-          "average": 48.018
-        }, 
-        "Ivy Books": {
-          "count": 3, 
-          "sum": 28.752000000000002, 
-          "average": 9.584
-        }, 
-        "Dutton Children's": {
-          "count": 4, 
-          "sum": 751.326, 
-          "average": 187.83149999999998
-        }, 
-        "Speak": {
-          "count": 19, 
-          "sum": 5080.968000000001, 
-          "average": 267.41936842105264
-        }, 
-        "Yen Press": {
-          "count": 12, 
-          "sum": 181.38600000000005, 
-          "average": 15.115499999999999
-        }, 
-        "Random House Reference": {
-          "count": 1, 
-          "sum": 46.764, 
-          "average": 46.764
-        }, 
-        "Greenwillow Books": {
-          "count": 17, 
-          "sum": 426.4319999999999, 
-          "average": 25.084235294117647
-        }, 
-        "Schwartz & Wade": {
-          "count": 2, 
-          "sum": 16.625999999999998, 
-          "average": 8.312999999999999
-        }, 
-        "Page Street Publishing": {
-          "count": 2, 
-          "sum": 123.948, 
-          "average": 61.974
-        }, 
-        "Island Books": {
-          "count": 3, 
-          "sum": 423.76200000000006, 
-          "average": 141.254
-        }, 
-        "PSS Juvenile": {
-          "count": 1, 
-          "sum": 24.576, 
-          "average": 24.576
-        }, 
-        "Joe Books": {
-          "count": 3, 
-          "sum": 40.986000000000004, 
-          "average": 13.662
-        }, 
-        "Viking Adult": {
-          "count": 29, 
-          "sum": 5862.426, 
-          "average": 202.15262068965518
-        }, 
-        "Blue Rider Press": {
-          "count": 8, 
-          "sum": 2002.35, 
-          "average": 250.29375000000002
-        }, 
-        "Thorsons": {
-          "count": 4, 
-          "sum": 145.95600000000002, 
-          "average": 36.489000000000004
-        }, 
-        "David Fickling Books": {
-          "count": 1, 
-          "sum": 303.096, 
-          "average": 303.096
-        }, 
-        "Alfred A. Knopf BFYR": {
-          "count": 4, 
-          "sum": 43.056000000000004, 
-          "average": 10.764
-        }, 
-        "Minotaur Books": {
-          "count": 43, 
-          "sum": 5930.2199999999975, 
-          "average": 137.9120930232558
-        }, 
-        "Random House Trade Paperbacks": {
-          "count": 30, 
-          "sum": 3768.9420000000005, 
-          "average": 125.6314
-        }, 
-        "BradyGames": {
-          "count": 2, 
-          "sum": 28.763999999999996, 
-          "average": 14.381999999999998
-        }, 
-        "Renaissance Books": {
-          "count": 1, 
-          "sum": 54.648, 
-          "average": 54.648
-        }, 
-        "Harper Perennial": {
-          "count": 20, 
-          "sum": 1015.2719999999999, 
-          "average": 50.7636
-        }, 
-        "Viking Children's": {
-          "count": 4, 
-          "sum": 167.47199999999998, 
-          "average": 41.867999999999995
-        }, 
-        "North Point Press": {
-          "count": 5, 
-          "sum": 186.762, 
-          "average": 37.3524
-        }, 
-        "Simon & Schuster Books for Young Readers": {
-          "count": 45, 
-          "sum": 2007.9659999999997, 
-          "average": 44.62146666666666
-        }, 
-        "Random House": {
-          "count": 81, 
-          "sum": 10133.345999999998, 
-          "average": 125.10303703703703
-        }, 
-        "Schocken": {
-          "count": 4, 
-          "sum": 130.086, 
-          "average": 32.5215
-        }, 
-        "Meadowbrook": {
-          "count": 3, 
-          "sum": 86.022, 
-          "average": 28.673999999999996
-        }, 
-        "HarperFestival": {
-          "count": 5, 
-          "sum": 122.60999999999999, 
-          "average": 24.522
-        }, 
-        "Grand Central Publishing": {
-          "count": 94, 
-          "sum": 16803.96599999999, 
-          "average": 178.76559574468087
-        }, 
-        "Zinc Ink": {
-          "count": 1, 
-          "sum": 26.376, 
-          "average": 26.376
-        }, 
-        "Entangled: Teen": {
-          "count": 2, 
-          "sum": 165.912, 
-          "average": 82.956
-        }, 
-        "Gildan Digital": {
-          "count": 1, 
-          "sum": 8.358, 
-          "average": 8.358
-        }, 
-        "Scientific American": {
-          "count": 9, 
-          "sum": 177.372, 
-          "average": 19.708
-        }, 
-        "Ecco": {
-          "count": 27, 
-          "sum": 4092.594, 
-          "average": 151.57755555555556
-        }, 
-        "Presidio Press": {
-          "count": 4, 
-          "sum": 372.33000000000004, 
-          "average": 93.0825
-        }, 
-        "Ripley Publishing": {
-          "count": 4, 
-          "sum": 30.132000000000005, 
-          "average": 7.533
-        }, 
-        "FENN-M&S": {
-          "count": 1, 
-          "sum": 28.776, 
-          "average": 28.776
-        }, 
-        "FaithWords": {
-          "count": 11, 
-          "sum": 1719.1499999999999, 
-          "average": 156.28636363636363
-        }, 
-        "Tor Science Fiction": {
-          "count": 1, 
-          "sum": 61.416, 
-          "average": 61.416
-        }, 
-        "Entangled: Brazen": {
-          "count": 18, 
-          "sum": 3068.3579999999997, 
-          "average": 170.46433333333334
-        }, 
-        "Forever Yours": {
-          "count": 1, 
-          "sum": 56.118, 
-          "average": 56.118
-        }, 
-        "Piatkus": {
-          "count": 1, 
-          "sum": 33.552, 
-          "average": 33.552
-        }, 
-        "Palgrave Macmillan": {
-          "count": 26, 
-          "sum": 784.1099999999998, 
-          "average": 30.158076923076923
-        }, 
-        "Broadway Books": {
-          "count": 68, 
-          "sum": 6299.285999999997, 
-          "average": 92.63655882352941
-        }, 
-        "Random House Books for Young Readers": {
-          "count": 199, 
-          "sum": 4612.583999999991, 
-          "average": 23.17881407035176
-        }, 
-        "Overlook": {
-          "count": 4, 
-          "sum": 114.816, 
-          "average": 28.704
-        }, 
-        "Threshold Editions": {
-          "count": 11, 
-          "sum": 1061.4840000000002, 
-          "average": 96.49854545454545
-        }, 
-        "William Morrow": {
-          "count": 72, 
-          "sum": 12853.308000000005, 
-          "average": 178.51816666666664
-        }, 
-        "Twelve": {
-          "count": 14, 
-          "sum": 1119.468, 
-          "average": 79.962
-        }, 
-        "Delta": {
-          "count": 7, 
-          "sum": 547.7520000000001, 
-          "average": 78.25028571428572
-        }, 
-        "St. Martin's True Crime": {
-          "count": 2, 
-          "sum": 143.43, 
-          "average": 71.715
-        }, 
-        "Little A": {
-          "count": 1, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "Jove": {
-          "count": 41, 
-          "sum": 6889.229999999995, 
-          "average": 168.03
-        }, 
-        "Jet City Comics": {
-          "count": 2, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "Simon Spotlight": {
-          "count": 18, 
-          "sum": 255.84600000000003, 
-          "average": 14.213666666666667
-        }, 
-        "Balzer + Bray": {
-          "count": 11, 
-          "sum": 710.244, 
-          "average": 64.56763636363637
-        }, 
-        "Entangled: Indulgence": {
-          "count": 2, 
-          "sum": 130.68, 
-          "average": 65.34
-        }, 
-        "Dutton Adult": {
-          "count": 23, 
-          "sum": 5186.868, 
-          "average": 225.51600000000002
-        }, 
-        "Orb Books": {
-          "count": 7, 
-          "sum": 221.13600000000002, 
-          "average": 31.590857142857143
-        }, 
-        "Laurel Leaf": {
-          "count": 8, 
-          "sum": 411.16799999999995, 
-          "average": 51.396
-        }, 
-        "Aerie": {
-          "count": 1, 
-          "sum": 22.152, 
-          "average": 22.152
-        }, 
-        "Hudson Street Press": {
-          "count": 3, 
-          "sum": 164.85, 
-          "average": 54.949999999999996
-        }, 
-        "Back Bay Books": {
-          "count": 10, 
-          "sum": 1460.6099999999997, 
-          "average": 146.06099999999998
-        }, 
-        "Times Books": {
-          "count": 16, 
-          "sum": 1012.9559999999999, 
-          "average": 63.30975
-        }, 
-        "HP": {
-          "count": 1, 
-          "sum": 9.684, 
-          "average": 9.684
-        }, 
-        "Robin Corey Books": {
-          "count": 1, 
-          "sum": 7.188, 
-          "average": 7.188
-        }, 
-        "LucasBooks": {
-          "count": 69, 
-          "sum": 2378.916000000003, 
-          "average": 34.477043478260875
-        }, 
-        "Peterson's": {
-          "count": 3, 
-          "sum": 27.558, 
-          "average": 9.186
-        }, 
-        "Crown": {
-          "count": 31, 
-          "sum": 4424.411999999998, 
-          "average": 142.7229677419355
-        }, 
-        "FSG Originals": {
-          "count": 3, 
-          "sum": 564.636, 
-          "average": 188.212
-        }, 
-        "Orion": {
-          "count": 2, 
-          "sum": 15.936, 
-          "average": 7.968
-        }, 
-        "Katherine Tegen Books": {
-          "count": 12, 
-          "sum": 687.2520000000002, 
-          "average": 57.27100000000001
-        }, 
-        "(Single-Author Publisher)": {
-          "count": 3426, 
-          "sum": 112347.43200000076, 
-          "average": 32.79259544658494
-        }, 
-        "HarperCollins": {
-          "count": 237, 
-          "sum": 14353.032, 
-          "average": 60.5613164556962
-        }, 
-        "WaterBrook Press": {
-          "count": 19, 
-          "sum": 1569.3120000000001, 
-          "average": 82.59536842105263
-        }, 
-        "Putnam Juvenile": {
-          "count": 10, 
-          "sum": 1557.5399999999997, 
-          "average": 155.754
-        }, 
-        "Harper Design": {
-          "count": 2, 
-          "sum": 43.608, 
-          "average": 21.804
-        }, 
-        "Loveswept": {
-          "count": 10, 
-          "sum": 618.3240000000001, 
-          "average": 61.83239999999999
-        }, 
-        "Crimeline": {
-          "count": 4, 
-          "sum": 276.27599999999995, 
-          "average": 69.069
-        }, 
-        "Hill and Wang": {
-          "count": 8, 
-          "sum": 195.73200000000003, 
-          "average": 24.4665
-        }, 
-        "Delacorte Press": {
-          "count": 46, 
-          "sum": 13268.526000000002, 
-          "average": 288.44621739130434
-        }, 
-        "Broadside e-books": {
-          "count": 2, 
-          "sum": 42.516, 
-          "average": 21.258
-        }, 
-        "Wellspring/Ballantine": {
-          "count": 2, 
-          "sum": 35.52, 
-          "average": 17.76
-        }, 
-        "Philomel": {
-          "count": 6, 
-          "sum": 813.264, 
-          "average": 135.544
-        }, 
-        "Center Street": {
-          "count": 10, 
-          "sum": 2096.73, 
-          "average": 209.673
-        }, 
-        "Margaret K. McElderry Books": {
-          "count": 18, 
-          "sum": 5466.666, 
-          "average": 303.70366666666666
-        }, 
-        "The Friday Project": {
-          "count": 1, 
-          "sum": 13.134, 
-          "average": 13.134
-        }, 
-        "Ballantine Books": {
-          "count": 151, 
-          "sum": 13564.704000000012, 
-          "average": 89.83247682119205
-        }, 
-        "Amistad": {
-          "count": 2, 
-          "sum": 41.034, 
-          "average": 20.517
-        }, 
-        "Atria Books/Beyond Words": {
-          "count": 6, 
-          "sum": 282.306, 
-          "average": 47.050999999999995
-        }, 
-        "Grijalbo": {
-          "count": 1, 
-          "sum": 10.788, 
-          "average": 10.788
-        }, 
-        "Tundra Books": {
-          "count": 2, 
-          "sum": 25.116, 
-          "average": 12.558
-        }, 
-        "Crown Forum": {
-          "count": 4, 
-          "sum": 171.84, 
-          "average": 42.96
-        }, 
-        "Scribner": {
-          "count": 113, 
-          "sum": 12521.537999999999, 
-          "average": 110.81007079646018
-        }, 
-        "Scientific American / Farrar Straus and Giroux": {
-          "count": 3, 
-          "sum": 160.01999999999998, 
-          "average": 53.339999999999996
-        }, 
-        "Peterson Institute for International Economics": {
-          "count": 1, 
-          "sum": 33.558, 
-          "average": 33.558
-        }, 
-        "Crown Business": {
-          "count": 54, 
-          "sum": 4612.890000000001, 
-          "average": 85.4238888888889
-        }, 
-        "Pocket Books/Star Trek": {
-          "count": 56, 
-          "sum": 1224.588, 
-          "average": 21.867642857142858
-        }, 
-        "Doubleday": {
-          "count": 24, 
-          "sum": 4427.034000000001, 
-          "average": 184.45974999999999
-        }, 
-        "Delacorte Books for Young Readers": {
-          "count": 20, 
-          "sum": 1119.2039999999997, 
-          "average": 55.9602
-        }, 
-        "Henry Holt and Co.": {
-          "count": 42, 
-          "sum": 3217.230000000001, 
-          "average": 76.60071428571429
-        }, 
-        "Convergent Books": {
-          "count": 1, 
-          "sum": 47.94, 
-          "average": 47.94
-        }, 
-        "Zonderkidz": {
-          "count": 27, 
-          "sum": 569.6160000000002, 
-          "average": 21.096888888888888
-        }, 
-        "Papercutz": {
-          "count": 13, 
-          "sum": 176.95200000000003, 
-          "average": 13.611692307692307
-        }, 
-        "Atria Books": {
-          "count": 96, 
-          "sum": 13385.586, 
-          "average": 139.4331875
-        }, 
-        "(Small or Medium Publisher)": {
-          "count": 9107, 
-          "sum": 373452.3960000026, 
-          "average": 41.00718084989568
-        }, 
-        "Flash Point": {
-          "count": 2, 
-          "sum": 83.34, 
-          "average": 41.67
-        }, 
-        "Onyx": {
-          "count": 2, 
-          "sum": 102.27000000000001, 
-          "average": 51.135000000000005
-        }, 
-        "Dell": {
-          "count": 45, 
-          "sum": 6048.03, 
-          "average": 134.40066666666667
-        }, 
-        "Atria / 37 Ink": {
-          "count": 2, 
-          "sum": 227.31599999999997, 
-          "average": 113.65799999999999
-        }, 
-        "HarperOne": {
-          "count": 40, 
-          "sum": 2936.460000000001, 
-          "average": 73.4115
-        }, 
-        "Touchstone": {
-          "count": 69, 
-          "sum": 6640.751999999998, 
-          "average": 96.24278260869566
-        }, 
-        "Watson-Guptill": {
-          "count": 16, 
-          "sum": 317.92199999999997, 
-          "average": 19.870124999999998
-        }, 
-        "Princeton Review": {
-          "count": 9, 
-          "sum": 183.408, 
-          "average": 20.378666666666664
-        }, 
-        "Entangled: Select": {
-          "count": 1, 
-          "sum": 248.52, 
-          "average": 248.52
-        }, 
-        "Mitchell Beazley": {
-          "count": 1, 
-          "sum": 14.22, 
-          "average": 14.22
-        }, 
-        "Washington Square Press": {
-          "count": 4, 
-          "sum": 95.688, 
-          "average": 23.922
-        }, 
-        "Tarcher": {
-          "count": 22, 
-          "sum": 1672.1580000000004, 
-          "average": 76.00718181818182
-        }, 
-        "Galvanized Books": {
-          "count": 1, 
-          "sum": 69.048, 
-          "average": 69.048
-        }, 
-        "Alpha": {
-          "count": 5, 
-          "sum": 134.904, 
-          "average": 26.9808
-        }, 
-        "Fodor's": {
-          "count": 14, 
-          "sum": 418.086, 
-          "average": 29.863285714285716
-        }, 
-        "Nan A. Talese": {
-          "count": 5, 
-          "sum": 1291.1639999999998, 
-          "average": 258.2328
-        }, 
-        "Square Fish": {
-          "count": 3, 
-          "sum": 58.464, 
-          "average": 19.488
-        }, 
-        "Chicken Soup for the Soul": {
-          "count": 5, 
-          "sum": 83.946, 
-          "average": 16.7892
-        }, 
-        "Ace": {
-          "count": 43, 
-          "sum": 4826.957999999998, 
-          "average": 112.25483720930232
-        }, 
-        "Prentice Hall Press": {
-          "count": 6, 
-          "sum": 413.874, 
-          "average": 68.979
-        }, 
-        "Free Press": {
-          "count": 68, 
-          "sum": 3719.2260000000006, 
-          "average": 54.694500000000005
-        }, 
-        "Rough Guides": {
-          "count": 4, 
-          "sum": 72.23400000000001, 
-          "average": 18.058500000000002
-        }, 
-        "Spectra": {
-          "count": 47, 
-          "sum": 2948.004, 
-          "average": 62.72348936170213
-        }, 
-        "Orbit": {
-          "count": 46, 
-          "sum": 4381.308, 
-          "average": 95.24582608695653
-        }, 
-        "Spiegel & Grau": {
-          "count": 22, 
-          "sum": 2841.348, 
-          "average": 129.15218181818182
-        }, 
-        "Main Street Books": {
-          "count": 1, 
-          "sum": 70.896, 
-          "average": 70.896
-        }, 
-        "William Morrow Paperbacks": {
-          "count": 44, 
-          "sum": 3841.6379999999995, 
-          "average": 87.30995454545454
-        }, 
-        "Crossing Press": {
-          "count": 2, 
-          "sum": 48.198, 
-          "average": 24.099
-        }, 
-        "LB Kids": {
-          "count": 8, 
-          "sum": 66.66600000000001, 
-          "average": 8.33325
-        }, 
-        "Fawcett": {
-          "count": 4, 
-          "sum": 111.414, 
-          "average": 27.8535
-        }, 
-        "Sarah Crichton Books": {
-          "count": 7, 
-          "sum": 1379.754, 
-          "average": 197.10771428571428
-        }, 
-        "Anthony Bourdain/Ecco": {
-          "count": 2, 
-          "sum": 98.874, 
-          "average": 49.437
-        }, 
-        "Vision": {
-          "count": 4, 
-          "sum": 499.086, 
-          "average": 124.7715
-        }, 
-        "Farrar Straus and Giroux": {
-          "count": 89, 
-          "sum": 5636.579999999998, 
-          "average": 63.3323595505618
-        }, 
-        "Vintage Espanol": {
-          "count": 7, 
-          "sum": 455.38199999999995, 
-          "average": 65.05457142857144
-        }, 
-        "Holt Paperbacks": {
-          "count": 25, 
-          "sum": 1889.664, 
-          "average": 75.58656
-        }, 
-        "Multnomah Books": {
-          "count": 7, 
-          "sum": 651.6120000000001, 
-          "average": 93.08742857142856
-        }, 
-        "Grupo Nelson": {
-          "count": 3, 
-          "sum": 35.244, 
-          "average": 11.748
-        }, 
-        "Grosset & Dunlap": {
-          "count": 104, 
-          "sum": 1643.6219999999983, 
-          "average": 15.804057692307692
-        }, 
-        "HarperTrue": {
-          "count": 1, 
-          "sum": 112.236, 
-          "average": 112.236
-        }, 
-        "Business Plus": {
-          "count": 15, 
-          "sum": 898.392, 
-          "average": 59.892799999999994
-        }, 
-        "Wendy Lamb Books": {
-          "count": 5, 
-          "sum": 183.876, 
-          "average": 36.7752
-        }, 
-        "Puffin": {
-          "count": 103, 
-          "sum": 5516.141999999999, 
-          "average": 53.55477669902913
-        }, 
-        "It Books": {
-          "count": 24, 
-          "sum": 1515.468, 
-          "average": 63.144499999999994
-        }, 
-        "World Wrestling Entertainment": {
-          "count": 2, 
-          "sum": 52.272000000000006, 
-          "average": 26.136000000000003
-        }, 
-        "Knopf Group E-Books": {
-          "count": 1, 
-          "sum": 25.902, 
-          "average": 25.902
-        }, 
-        "HarperCollinsChildren'sBooks": {
-          "count": 2, 
-          "sum": 10.469999999999999, 
-          "average": 5.234999999999999
-        }, 
-        "Truman Talley Books": {
-          "count": 1, 
-          "sum": 42.672, 
-          "average": 42.672
-        }, 
-        "Aladdin": {
-          "count": 79, 
-          "sum": 1750.5719999999988, 
-          "average": 22.15913924050633
-        }, 
-        "Random House/Disney": {
-          "count": 13, 
-          "sum": 448.36799999999994, 
-          "average": 34.48984615384615
-        }, 
-        "Razorbill": {
-          "count": 14, 
-          "sum": 6096.222000000001, 
-          "average": 435.44442857142855
-        }, 
-        "Ten Speed Press": {
-          "count": 41, 
-          "sum": 1779.234, 
-          "average": 43.39595121951219
-        }, 
-        "DAW": {
-          "count": 14, 
-          "sum": 936.3060000000002, 
-          "average": 66.879
-        }, 
-        "The Penguin Press": {
-          "count": 27, 
-          "sum": 4127.639999999999, 
-          "average": 152.87555555555556
-        }
-      }, 
       "publishers.[0].statistics.sales rank": {
-        "Simon Pulse/Mercury Ink": {
-          "count": 1, 
-          "sum": 3696, 
-          "average": 3696.0
-        }, 
         "Gallery Books": {
-          "count": 56, 
-          "sum": 1559917, 
-          "average": 27855.660714285714
+          "count": 30, 
+          "sum": 895582, 
+          "average": 29852.733333333334
         }, 
         "Dial": {
-          "count": 10, 
-          "sum": 621415, 
-          "average": 62141.5
+          "count": 4, 
+          "sum": 152971, 
+          "average": 38242.75
         }, 
         "McClelland & Stewart": {
           "count": 1, 
@@ -6083,14 +30,9 @@ publishers_bar = [
           "average": 80503.0
         }, 
         "Tor Books": {
-          "count": 77, 
-          "sum": 1522574, 
-          "average": 19773.68831168831
-        }, 
-        "Penguin Young Readers": {
-          "count": 1, 
-          "sum": 22338, 
-          "average": 22338.0
+          "count": 41, 
+          "sum": 970150, 
+          "average": 23662.19512195122
         }, 
         "ESPN": {
           "count": 2, 
@@ -6098,24 +40,24 @@ publishers_bar = [
           "average": 40617.0
         }, 
         "Bantam": {
-          "count": 132, 
-          "sum": 3283372, 
-          "average": 24874.030303030304
+          "count": 77, 
+          "sum": 2023747, 
+          "average": 26282.428571428572
         }, 
         "Harper": {
-          "count": 55, 
-          "sum": 1162379, 
-          "average": 21134.163636363635
+          "count": 28, 
+          "sum": 525386, 
+          "average": 18763.785714285714
         }, 
         "Portfolio": {
-          "count": 81, 
-          "sum": 2945303, 
-          "average": 36361.765432098764
+          "count": 40, 
+          "sum": 1176799, 
+          "average": 29419.975
         }, 
         "Plume": {
-          "count": 52, 
-          "sum": 1811913, 
-          "average": 34844.480769230766
+          "count": 35, 
+          "sum": 1223231, 
+          "average": 34949.45714285714
         }, 
         "Jericho Books": {
           "count": 2, 
@@ -6123,29 +65,24 @@ publishers_bar = [
           "average": 19204.0
         }, 
         "HarperTeen": {
-          "count": 28, 
-          "sum": 385775, 
-          "average": 13777.67857142857
+          "count": 15, 
+          "sum": 191600, 
+          "average": 12773.333333333334
         }, 
         "NAL": {
-          "count": 33, 
-          "sum": 786550, 
-          "average": 23834.848484848484
+          "count": 20, 
+          "sum": 485796, 
+          "average": 24289.8
         }, 
         "Avon Impulse": {
-          "count": 13, 
-          "sum": 62951, 
-          "average": 4842.384615384615
+          "count": 9, 
+          "sum": 40481, 
+          "average": 4497.888888888889
         }, 
         "AmazonEncore": {
-          "count": 10, 
-          "sum": 185983, 
-          "average": 18598.3
-        }, 
-        "Zondervan/Youth Specialties": {
-          "count": 2, 
-          "sum": 160894, 
-          "average": 80447.0
+          "count": 6, 
+          "sum": 145252, 
+          "average": 24208.666666666668
         }, 
         "Dial Press Trade Paperback": {
           "count": 2, 
@@ -6153,19 +90,19 @@ publishers_bar = [
           "average": 17973.0
         }, 
         "Villard": {
-          "count": 6, 
-          "sum": 262139, 
-          "average": 43689.833333333336
+          "count": 1, 
+          "sum": 13869, 
+          "average": 13869.0
         }, 
         "Golden/Disney": {
-          "count": 6, 
-          "sum": 300146, 
-          "average": 50024.333333333336
+          "count": 3, 
+          "sum": 177163, 
+          "average": 59054.333333333336
         }, 
         "RH/Disney": {
-          "count": 7, 
-          "sum": 158846, 
-          "average": 22692.285714285714
+          "count": 2, 
+          "sum": 31825, 
+          "average": 15912.5
         }, 
         "Hodder & Stoughton": {
           "count": 1, 
@@ -6173,44 +110,39 @@ publishers_bar = [
           "average": 44356.0
         }, 
         "Newmarket Press": {
-          "count": 2, 
-          "sum": 163211, 
-          "average": 81605.5
+          "count": 1, 
+          "sum": 87396, 
+          "average": 87396.0
         }, 
         "Little Brown and Company": {
-          "count": 141, 
-          "sum": 2774559, 
-          "average": 19677.72340425532
+          "count": 67, 
+          "sum": 1510010, 
+          "average": 22537.462686567163
         }, 
         "Grand Central Life & Style": {
-          "count": 15, 
-          "sum": 227609, 
-          "average": 15173.933333333332
+          "count": 10, 
+          "sum": 179159, 
+          "average": 17915.9
         }, 
         "Perigee": {
-          "count": 17, 
-          "sum": 695476, 
-          "average": 40910.35294117647
+          "count": 9, 
+          "sum": 291955, 
+          "average": 32439.444444444445
         }, 
         "Golden Books": {
-          "count": 8, 
-          "sum": 537064, 
-          "average": 67133.0
+          "count": 3, 
+          "sum": 221259, 
+          "average": 73753.0
         }, 
         "Thomas Dunne Books": {
-          "count": 36, 
-          "sum": 1363681, 
-          "average": 37880.02777777778
+          "count": 17, 
+          "sum": 618820, 
+          "average": 36401.17647058824
         }, 
         "HarperSport": {
           "count": 2, 
           "sum": 144713, 
           "average": 72356.5
-        }, 
-        "Collins Reference": {
-          "count": 1, 
-          "sum": 19301, 
-          "average": 19301.0
         }, 
         "Tor Teen": {
           "count": 1, 
@@ -6218,29 +150,29 @@ publishers_bar = [
           "average": 15742.0
         }, 
         "Crown Archetype": {
-          "count": 28, 
-          "sum": 1022494, 
-          "average": 36517.642857142855
+          "count": 13, 
+          "sum": 441045, 
+          "average": 33926.53846153846
         }, 
         "Harper Element": {
-          "count": 20, 
-          "sum": 774157, 
-          "average": 38707.85
+          "count": 8, 
+          "sum": 352884, 
+          "average": 44110.5
         }, 
         "(Indie Publisher)": {
-          "count": 5637, 
-          "sum": 179858202, 
-          "average": 31906.7237892496
+          "count": 2819, 
+          "sum": 88861063, 
+          "average": 31522.19333096843
         }, 
         "Zondervan": {
-          "count": 65, 
-          "sum": 1663158, 
-          "average": 25587.046153846153
+          "count": 31, 
+          "sum": 771227, 
+          "average": 24878.290322580644
         }, 
         "HarperWave": {
-          "count": 6, 
-          "sum": 86365, 
-          "average": 14394.166666666666
+          "count": 3, 
+          "sum": 44432, 
+          "average": 14810.666666666666
         }, 
         "Studio": {
           "count": 1, 
@@ -6253,99 +185,89 @@ publishers_bar = [
           "average": 35549.0
         }, 
         "Pocket Star": {
-          "count": 11, 
-          "sum": 162615, 
-          "average": 14783.181818181818
+          "count": 5, 
+          "sum": 82028, 
+          "average": 16405.6
         }, 
         "Avon": {
-          "count": 25, 
-          "sum": 239018, 
-          "average": 9560.72
+          "count": 10, 
+          "sum": 129054, 
+          "average": 12905.4
         }, 
         "Thomas & Mercer": {
-          "count": 102, 
-          "sum": 1268347, 
-          "average": 12434.774509803921
+          "count": 57, 
+          "sum": 808790, 
+          "average": 14189.298245614034
         }, 
         "Thomas Nelson": {
-          "count": 90, 
-          "sum": 2927884, 
-          "average": 32532.044444444444
+          "count": 58, 
+          "sum": 1811198, 
+          "average": 31227.55172413793
         }, 
         "Penguin": {
-          "count": 37, 
-          "sum": 1817201, 
-          "average": 49113.54054054054
+          "count": 20, 
+          "sum": 988423, 
+          "average": 49421.15
         }, 
         "Billboard Books": {
           "count": 2, 
           "sum": 190681, 
           "average": 95340.5
         }, 
-        "HarperBusiness": {
-          "count": 23, 
-          "sum": 907324, 
-          "average": 39448.86956521739
-        }, 
         "Simon Pulse": {
-          "count": 13, 
-          "sum": 434655, 
-          "average": 33435.0
+          "count": 9, 
+          "sum": 404404, 
+          "average": 44933.77777777778
         }, 
         "Little Brown Books for Young Readers": {
-          "count": 55, 
-          "sum": 1823056, 
-          "average": 33146.472727272725
+          "count": 33, 
+          "sum": 1041897, 
+          "average": 31572.636363636364
         }, 
-        "Cash Money Content": {
-          "count": 2, 
-          "sum": 74161, 
-          "average": 37080.5
+        "Watson-Guptill": {
+          "count": 8, 
+          "sum": 646101, 
+          "average": 80762.625
         }, 
         "Harper Paperbacks": {
-          "count": 5, 
-          "sum": 311486, 
-          "average": 62297.2
+          "count": 1, 
+          "sum": 57601, 
+          "average": 57601.0
         }, 
         "Simon & Schuster": {
-          "count": 198, 
-          "sum": 6964308, 
-          "average": 35173.27272727273
+          "count": 95, 
+          "sum": 3239576, 
+          "average": 34100.8
         }, 
         "Putnam Adult": {
-          "count": 37, 
-          "sum": 330037, 
-          "average": 8919.918918918918
-        }, 
-        "Gallery Books/Karen Hunter Publishing": {
-          "count": 1, 
-          "sum": 60733, 
-          "average": 60733.0
+          "count": 17, 
+          "sum": 177677, 
+          "average": 10451.588235294117
         }, 
         "Reagan Arthur Books": {
-          "count": 2, 
-          "sum": 8165, 
-          "average": 4082.5
+          "count": 1, 
+          "sum": 5543, 
+          "average": 5543.0
         }, 
         "William Morrow Impulse": {
-          "count": 2, 
-          "sum": 4676, 
-          "average": 2338.0
+          "count": 1, 
+          "sum": 1531, 
+          "average": 1531.0
         }, 
-        "Two Lions": {
-          "count": 64, 
-          "sum": 2136022, 
-          "average": 33375.34375
+        "Puffin": {
+          "count": 52, 
+          "sum": 1797146, 
+          "average": 34560.5
         }, 
         "Metropolitan Books": {
-          "count": 15, 
-          "sum": 677891, 
-          "average": 45192.73333333333
+          "count": 7, 
+          "sum": 343714, 
+          "average": 49102.0
         }, 
         "Potter Style": {
-          "count": 3, 
-          "sum": 156816, 
-          "average": 52272.0
+          "count": 2, 
+          "sum": 91227, 
+          "average": 45613.5
         }, 
         "Poppy": {
           "count": 1, 
@@ -6353,34 +275,34 @@ publishers_bar = [
           "average": 11268.0
         }, 
         "Three Rivers Press": {
-          "count": 21, 
-          "sum": 942635, 
-          "average": 44887.380952380954
+          "count": 8, 
+          "sum": 287970, 
+          "average": 35996.25
         }, 
         "Little Simon": {
-          "count": 2, 
-          "sum": 194500, 
-          "average": 97250.0
-        }, 
-        "Avon Inspire": {
           "count": 1, 
-          "sum": 3966, 
-          "average": 3966.0
+          "sum": 97352, 
+          "average": 97352.0
+        }, 
+        "The Dial Press": {
+          "count": 2, 
+          "sum": 14713, 
+          "average": 7356.5
+        }, 
+        "Hudson Street Press": {
+          "count": 1, 
+          "sum": 24385, 
+          "average": 24385.0
         }, 
         "St. Martin's Paperbacks": {
-          "count": 18, 
-          "sum": 379822, 
-          "average": 21101.222222222223
-        }, 
-        "PHILOMEL": {
-          "count": 1, 
-          "sum": 44264, 
-          "average": 44264.0
+          "count": 9, 
+          "sum": 278034, 
+          "average": 30892.666666666668
         }, 
         "Celestial Arts": {
-          "count": 5, 
-          "sum": 177925, 
-          "average": 35585.0
+          "count": 1, 
+          "sum": 21213, 
+          "average": 21213.0
         }, 
         "HarperTorch": {
           "count": 1, 
@@ -6393,59 +315,54 @@ publishers_bar = [
           "average": 2858.0
         }, 
         "Debbie Macomber Books": {
-          "count": 2, 
-          "sum": 1162, 
-          "average": 581.0
+          "count": 1, 
+          "sum": 472, 
+          "average": 472.0
         }, 
         "Roaring Brook Press": {
-          "count": 7, 
-          "sum": 332490, 
-          "average": 47498.57142857143
+          "count": 3, 
+          "sum": 99312, 
+          "average": 33104.0
         }, 
-        "Sentinel": {
-          "count": 2, 
-          "sum": 30430, 
-          "average": 15215.0
+        "Atheneum Books for Young Readers": {
+          "count": 19, 
+          "sum": 920966, 
+          "average": 48471.89473684211
         }, 
-        "HarperStudio": {
-          "count": 1, 
-          "sum": 36323, 
-          "average": 36323.0
+        "Pocket Books": {
+          "count": 36, 
+          "sum": 1183749, 
+          "average": 32881.916666666664
         }, 
         "Amazon Publishing": {
-          "count": 21, 
-          "sum": 394756, 
-          "average": 18797.904761904763
+          "count": 11, 
+          "sum": 242725, 
+          "average": 22065.909090909092
         }, 
         "St. Martin's Press": {
-          "count": 147, 
-          "sum": 4515796, 
-          "average": 30719.700680272108
+          "count": 84, 
+          "sum": 2629359, 
+          "average": 31301.89285714286
         }, 
         "HarperPerennial Classics": {
-          "count": 5, 
-          "sum": 86621, 
-          "average": 17324.2
+          "count": 2, 
+          "sum": 22690, 
+          "average": 11345.0
         }, 
         "Pintail": {
           "count": 1, 
           "sum": 1288, 
           "average": 1288.0
         }, 
-        "Current": {
-          "count": 3, 
-          "sum": 130132, 
-          "average": 43377.333333333336
-        }, 
         "HarperCollins e-books": {
-          "count": 378, 
-          "sum": 12877366, 
-          "average": 34067.10582010582
+          "count": 179, 
+          "sum": 6255010, 
+          "average": 34944.18994413408
         }, 
         "Gotham Books": {
-          "count": 27, 
-          "sum": 1176600, 
-          "average": 43577.77777777778
+          "count": 11, 
+          "sum": 481599, 
+          "average": 43781.72727272727
         }, 
         "MTV Books": {
           "count": 2, 
@@ -6453,119 +370,89 @@ publishers_bar = [
           "average": 11224.5
         }, 
         "Vintage": {
-          "count": 181, 
-          "sum": 6509781, 
-          "average": 35965.6408839779
+          "count": 78, 
+          "sum": 3002360, 
+          "average": 38491.794871794875
         }, 
         "Clarkson Potter": {
-          "count": 35, 
-          "sum": 2133333, 
-          "average": 60952.37142857143
+          "count": 14, 
+          "sum": 951904, 
+          "average": 67993.14285714286
         }, 
         "Grand Harbor Press": {
-          "count": 3, 
-          "sum": 69010, 
-          "average": 23003.333333333332
+          "count": 1, 
+          "sum": 5990, 
+          "average": 5990.0
         }, 
         "Harper Thorsons": {
           "count": 1, 
           "sum": 50826, 
           "average": 50826.0
         }, 
-        "Deepak Chopra": {
-          "count": 3, 
-          "sum": 152091, 
-          "average": 50697.0
-        }, 
         "Picador": {
-          "count": 10, 
-          "sum": 331482, 
-          "average": 33148.2
+          "count": 4, 
+          "sum": 136189, 
+          "average": 34047.25
         }, 
         "Harmony": {
-          "count": 57, 
-          "sum": 1799973, 
-          "average": 31578.473684210527
+          "count": 36, 
+          "sum": 1184099, 
+          "average": 32891.63888888889
         }, 
         "Signet Classic": {
-          "count": 4, 
-          "sum": 176386, 
-          "average": 44096.5
+          "count": 3, 
+          "sum": 127107, 
+          "average": 42369.0
         }, 
         "47North": {
-          "count": 66, 
-          "sum": 882316, 
-          "average": 13368.424242424242
+          "count": 26, 
+          "sum": 316961, 
+          "average": 12190.807692307691
         }, 
         "HarperPress": {
-          "count": 3, 
-          "sum": 187605, 
-          "average": 62535.0
+          "count": 2, 
+          "sum": 105065, 
+          "average": 52532.5
         }, 
         "Collins": {
-          "count": 8, 
-          "sum": 416158, 
-          "average": 52019.75
-        }, 
-        "Starscape": {
-          "count": 1, 
-          "sum": 80089, 
-          "average": 80089.0
-        }, 
-        "Atria/Emily Bestler Books": {
-          "count": 7, 
-          "sum": 43128, 
-          "average": 6161.142857142857
-        }, 
-        "Dragonfly Books": {
-          "count": 1, 
-          "sum": 86820, 
-          "average": 86820.0
+          "count": 5, 
+          "sum": 300538, 
+          "average": 60107.6
         }, 
         "Feiwel & Friends": {
-          "count": 9, 
-          "sum": 380730, 
-          "average": 42303.333333333336
+          "count": 4, 
+          "sum": 236659, 
+          "average": 59164.75
         }, 
         "DK Publishing": {
-          "count": 26, 
-          "sum": 1693460, 
-          "average": 65133.07692307692
-        }, 
-        "Leer-e": {
-          "count": 1, 
-          "sum": 8663, 
-          "average": 8663.0
+          "count": 15, 
+          "sum": 990842, 
+          "average": 66056.13333333333
         }, 
         "Amphoto Books": {
-          "count": 9, 
-          "sum": 469138, 
-          "average": 52126.444444444445
+          "count": 2, 
+          "sum": 120228, 
+          "average": 60114.0
         }, 
         "Skyscape": {
-          "count": 11, 
-          "sum": 48044, 
-          "average": 4367.636363636364
+          "count": 6, 
+          "sum": 36117, 
+          "average": 6019.5
         }, 
         "Avery": {
-          "count": 15, 
-          "sum": 481351, 
-          "average": 32090.066666666666
-        }, 
-        "Appetite by Random House": {
-          "count": 1, 
-          "sum": 71472, 
-          "average": 71472.0
+          "count": 10, 
+          "sum": 336097, 
+          "average": 33609.7
         }, 
         "Faber & Faber": {
-          "count": 6, 
-          "sum": 282084, 
-          "average": 47014.0
+          "count": 4, 
+          "sum": 220823, 
+          "average": 55205.75
         }, 
         "AmazonCrossing": {
-          "count": 29, 
-          "sum": 352058, 
-          "average": 12139.931034482759
+          "count": 13, 
+          "sum": 179484, 
+          "average": 13806.461538461539
         }, 
         "Simon & Schuster Audio": {
           "count": 1, 
@@ -6573,74 +460,74 @@ publishers_bar = [
           "average": 7363.0
         }, 
         "Del Rey": {
-          "count": 45, 
-          "sum": 1446959, 
-          "average": 32154.644444444446
+          "count": 23, 
+          "sum": 731291, 
+          "average": 31795.260869565216
         }, 
         "Graywolf Press": {
-          "count": 2, 
-          "sum": 90009, 
-          "average": 45004.5
+          "count": 1, 
+          "sum": 4450, 
+          "average": 4450.0
         }, 
         "Howard Books": {
-          "count": 20, 
-          "sum": 296673, 
-          "average": 14833.65
+          "count": 10, 
+          "sum": 178595, 
+          "average": 17859.5
         }, 
         "First Second": {
-          "count": 3, 
-          "sum": 220347, 
-          "average": 73449.0
+          "count": 2, 
+          "sum": 156597, 
+          "average": 78298.5
         }, 
-        "Walden Pond Press": {
-          "count": 3, 
-          "sum": 196474, 
-          "average": 65491.333333333336
+        "FaithWords": {
+          "count": 5, 
+          "sum": 93162, 
+          "average": 18632.4
         }, 
         "Penguin Classic": {
-          "count": 17, 
-          "sum": 523427, 
-          "average": 30789.823529411766
+          "count": 8, 
+          "sum": 302300, 
+          "average": 37787.5
         }, 
         "Montlake Romance": {
-          "count": 66, 
-          "sum": 438209, 
-          "average": 6639.530303030303
+          "count": 34, 
+          "sum": 228361, 
+          "average": 6716.5
         }, 
-        "The Dial Press": {
+        "Rough Guides": {
           "count": 2, 
-          "sum": 14713, 
-          "average": 7356.5
+          "sum": 129390, 
+          "average": 64695.0
         }, 
         "Modern Library": {
-          "count": 5, 
-          "sum": 201149, 
-          "average": 40229.8
+          "count": 4, 
+          "sum": 141171, 
+          "average": 35292.75
         }, 
         "Knopf": {
-          "count": 43, 
-          "sum": 1226167, 
-          "average": 28515.511627906977
+          "count": 23, 
+          "sum": 665458, 
+          "average": 28932.956521739132
         }, 
         "Forever": {
-          "count": 18, 
-          "sum": 159042, 
-          "average": 8835.666666666666
+          "count": 6, 
+          "sum": 67730, 
+          "average": 11288.333333333334
         }, 
         "Riverhead": {
-          "count": 46, 
-          "sum": 1538552, 
-          "average": 33446.782608695656
+          "count": 24, 
+          "sum": 778355, 
+          "average": 32431.458333333332
         }, 
         "Mulholland Books": {
-          "count": 8, 
-          "sum": 277433, 
-          "average": 34679.125
+          "count": 4, 
+          "sum": 134017, 
+          "average": 33504.25
         }, 
         "Yearling": {
-          "count": 12, 
-          "sum": 794421, 
-          "average": 66201.75
+          "count": 4, 
+          "sum": 226537, 
+          "average": 56634.25
         }, 
         "Hogarth": {
           "count": 1, 
@@ -6648,34 +535,29 @@ publishers_bar = [
           "average": 1219.0
         }, 
         "Bantam Classics": {
-          "count": 5, 
-          "sum": 164848, 
-          "average": 32969.6
+          "count": 1, 
+          "sum": 34397, 
+          "average": 34397.0
         }, 
         "Potter Craft": {
-          "count": 6, 
-          "sum": 392889, 
-          "average": 65481.5
+          "count": 4, 
+          "sum": 273888, 
+          "average": 68472.0
         }, 
-        "Atheneum Books for Young Readers": {
-          "count": 36, 
-          "sum": 1762682, 
-          "average": 48963.38888888889
-        }, 
-        "Golden Guides from St. Martin's Press": {
+        "Sentinel": {
           "count": 1, 
-          "sum": 33522, 
-          "average": 33522.0
+          "sum": 29883, 
+          "average": 29883.0
+        }, 
+        "Atria/Emily Bestler Books": {
+          "count": 3, 
+          "sum": 5441, 
+          "average": 1813.6666666666667
         }, 
         "Penguin Books": {
-          "count": 144, 
-          "sum": 5392035, 
-          "average": 37444.6875
-        }, 
-        "CLBusiness": {
-          "count": 1, 
-          "sum": 84896, 
-          "average": 84896.0
+          "count": 72, 
+          "sum": 2894175, 
+          "average": 40196.875
         }, 
         "Lone Eagle": {
           "count": 1, 
@@ -6683,34 +565,34 @@ publishers_bar = [
           "average": 60203.0
         }, 
         "Berkley": {
-          "count": 169, 
-          "sum": 3776573, 
-          "average": 22346.585798816566
+          "count": 79, 
+          "sum": 1924692, 
+          "average": 24363.189873417723
         }, 
         "Harper Voyager": {
-          "count": 10, 
-          "sum": 207512, 
-          "average": 20751.2
+          "count": 6, 
+          "sum": 112404, 
+          "average": 18734.0
         }, 
         "Hyperion": {
-          "count": 62, 
-          "sum": 2112740, 
-          "average": 34076.45161290323
+          "count": 36, 
+          "sum": 1258145, 
+          "average": 34948.47222222222
         }, 
         "Anchor": {
-          "count": 74, 
-          "sum": 2963416, 
-          "average": 40046.16216216216
+          "count": 34, 
+          "sum": 1290481, 
+          "average": 37955.32352941176
         }, 
-        "Signet": {
-          "count": 63, 
-          "sum": 1017494, 
-          "average": 16150.698412698413
+        "Touchstone": {
+          "count": 29, 
+          "sum": 1151604, 
+          "average": 39710.48275862069
         }, 
         "Forge Books": {
-          "count": 19, 
-          "sum": 762514, 
-          "average": 40132.31578947369
+          "count": 8, 
+          "sum": 309559, 
+          "average": 38694.875
         }, 
         "Celebra": {
           "count": 2, 
@@ -6718,154 +600,124 @@ publishers_bar = [
           "average": 7790.5
         }, 
         "Knopf Books for Young Readers": {
-          "count": 30, 
-          "sum": 1235517, 
-          "average": 41183.9
+          "count": 16, 
+          "sum": 553398, 
+          "average": 34587.375
         }, 
-        "William Morrow Cookbooks": {
-          "count": 14, 
-          "sum": 678566, 
-          "average": 48469.0
-        }, 
-        "Image": {
-          "count": 7, 
-          "sum": 371369, 
-          "average": 53052.71428571428
+        "Loveswept": {
+          "count": 9, 
+          "sum": 49199, 
+          "average": 5466.555555555556
         }, 
         "Roc": {
-          "count": 13, 
-          "sum": 372297, 
-          "average": 28638.23076923077
-        }, 
-        "Simon & Schuster/Paula Wiseman Books": {
-          "count": 3, 
-          "sum": 269780, 
-          "average": 89926.66666666667
+          "count": 5, 
+          "sum": 162424, 
+          "average": 32484.8
         }, 
         "St. Martin's Griffin": {
-          "count": 43, 
-          "sum": 2055319, 
-          "average": 47798.11627906977
+          "count": 23, 
+          "sum": 839552, 
+          "average": 36502.260869565216
         }, 
         "Pantheon": {
-          "count": 8, 
-          "sum": 308650, 
-          "average": 38581.25
+          "count": 3, 
+          "sum": 96258, 
+          "average": 32086.0
         }, 
         "Reader's Digest": {
-          "count": 3, 
-          "sum": 137749, 
-          "average": 45916.333333333336
+          "count": 2, 
+          "sum": 135391, 
+          "average": 67695.5
         }, 
         "InterMix": {
-          "count": 4, 
-          "sum": 40156, 
-          "average": 10039.0
-        }, 
-        "Pocket Books": {
-          "count": 72, 
-          "sum": 2413722, 
-          "average": 33523.916666666664
+          "count": 1, 
+          "sum": 6802, 
+          "average": 6802.0
         }, 
         "Witness Impulse": {
-          "count": 12, 
-          "sum": 119228, 
-          "average": 9935.666666666666
-        }, 
-        "Ivy Books": {
-          "count": 3, 
-          "sum": 227112, 
-          "average": 75704.0
+          "count": 7, 
+          "sum": 67390, 
+          "average": 9627.142857142857
         }, 
         "Dutton Children's": {
-          "count": 4, 
-          "sum": 44590, 
-          "average": 11147.5
+          "count": 2, 
+          "sum": 20866, 
+          "average": 10433.0
         }, 
         "Speak": {
-          "count": 19, 
-          "sum": 381781, 
-          "average": 20093.736842105263
+          "count": 9, 
+          "sum": 154826, 
+          "average": 17202.88888888889
         }, 
         "Yen Press": {
-          "count": 12, 
-          "sum": 895466, 
-          "average": 74622.16666666667
-        }, 
-        "Random House Reference": {
-          "count": 1, 
-          "sum": 45169, 
-          "average": 45169.0
+          "count": 2, 
+          "sum": 158309, 
+          "average": 79154.5
         }, 
         "Greenwillow Books": {
-          "count": 17, 
-          "sum": 685697, 
-          "average": 40335.117647058825
+          "count": 8, 
+          "sum": 214318, 
+          "average": 26789.75
         }, 
         "Schwartz & Wade": {
-          "count": 2, 
-          "sum": 160002, 
-          "average": 80001.0
+          "count": 1, 
+          "sum": 96259, 
+          "average": 96259.0
         }, 
         "Page Street Publishing": {
           "count": 2, 
           "sum": 45348, 
           "average": 22674.0
         }, 
-        "Island Books": {
+        "Vintage Espanol": {
           "count": 3, 
-          "sum": 49307, 
-          "average": 16435.666666666668
-        }, 
-        "PSS Juvenile": {
-          "count": 1, 
-          "sum": 35604, 
-          "average": 35604.0
+          "sum": 50816, 
+          "average": 16938.666666666668
         }, 
         "Joe Books": {
-          "count": 3, 
-          "sum": 42876, 
-          "average": 14292.0
+          "count": 1, 
+          "sum": 20326, 
+          "average": 20326.0
         }, 
         "Viking Adult": {
-          "count": 29, 
-          "sum": 689276, 
-          "average": 23768.137931034482
+          "count": 13, 
+          "sum": 378027, 
+          "average": 29079.0
         }, 
         "Blue Rider Press": {
-          "count": 8, 
-          "sum": 100893, 
-          "average": 12611.625
+          "count": 4, 
+          "sum": 66888, 
+          "average": 16722.0
         }, 
         "Thorsons": {
-          "count": 4, 
-          "sum": 153135, 
-          "average": 38283.75
+          "count": 2, 
+          "sum": 73439, 
+          "average": 36719.5
         }, 
-        "David Fickling Books": {
-          "count": 1, 
-          "sum": 2835, 
-          "average": 2835.0
+        "HarperBusiness": {
+          "count": 10, 
+          "sum": 308612, 
+          "average": 30861.2
         }, 
         "Alfred A. Knopf BFYR": {
-          "count": 4, 
-          "sum": 273799, 
-          "average": 68449.75
+          "count": 3, 
+          "sum": 224861, 
+          "average": 74953.66666666667
         }, 
         "Minotaur Books": {
-          "count": 43, 
-          "sum": 794117, 
-          "average": 18467.837209302324
+          "count": 19, 
+          "sum": 353743, 
+          "average": 18618.052631578947
         }, 
         "Random House Trade Paperbacks": {
-          "count": 30, 
-          "sum": 925253, 
-          "average": 30841.766666666666
+          "count": 15, 
+          "sum": 429599, 
+          "average": 28639.933333333334
         }, 
         "BradyGames": {
-          "count": 2, 
-          "sum": 138088, 
-          "average": 69044.0
+          "count": 1, 
+          "sum": 57865, 
+          "average": 57865.0
         }, 
         "Renaissance Books": {
           "count": 1, 
@@ -6873,49 +725,49 @@ publishers_bar = [
           "average": 21160.0
         }, 
         "Harper Perennial": {
-          "count": 20, 
-          "sum": 743641, 
-          "average": 37182.05
+          "count": 8, 
+          "sum": 235412, 
+          "average": 29426.5
         }, 
         "Viking Children's": {
-          "count": 4, 
-          "sum": 167811, 
-          "average": 41952.75
+          "count": 3, 
+          "sum": 157273, 
+          "average": 52424.333333333336
         }, 
         "North Point Press": {
-          "count": 5, 
-          "sum": 206719, 
-          "average": 41343.8
+          "count": 3, 
+          "sum": 96953, 
+          "average": 32317.666666666668
         }, 
         "Simon & Schuster Books for Young Readers": {
-          "count": 45, 
-          "sum": 1670137, 
-          "average": 37114.15555555555
+          "count": 22, 
+          "sum": 761009, 
+          "average": 34591.318181818184
         }, 
         "Random House": {
-          "count": 81, 
-          "sum": 2797590, 
-          "average": 34538.148148148146
+          "count": 42, 
+          "sum": 1387348, 
+          "average": 33032.09523809524
         }, 
         "Schocken": {
-          "count": 4, 
-          "sum": 226307, 
-          "average": 56576.75
+          "count": 3, 
+          "sum": 176965, 
+          "average": 58988.333333333336
         }, 
         "Meadowbrook": {
-          "count": 3, 
-          "sum": 147875, 
-          "average": 49291.666666666664
+          "count": 2, 
+          "sum": 117894, 
+          "average": 58947.0
         }, 
         "HarperFestival": {
-          "count": 5, 
-          "sum": 211147, 
-          "average": 42229.4
+          "count": 3, 
+          "sum": 137154, 
+          "average": 45718.0
         }, 
         "Grand Central Publishing": {
-          "count": 94, 
-          "sum": 2069732, 
-          "average": 22018.425531914894
+          "count": 38, 
+          "sum": 923635, 
+          "average": 24306.184210526317
         }, 
         "Zinc Ink": {
           "count": 1, 
@@ -6923,29 +775,24 @@ publishers_bar = [
           "average": 58244.0
         }, 
         "Entangled: Teen": {
-          "count": 2, 
-          "sum": 38573, 
-          "average": 19286.5
-        }, 
-        "Gildan Digital": {
           "count": 1, 
-          "sum": 40221, 
-          "average": 40221.0
+          "sum": 35943, 
+          "average": 35943.0
         }, 
         "Scientific American": {
-          "count": 9, 
-          "sum": 334660, 
-          "average": 37184.444444444445
+          "count": 1, 
+          "sum": 83790, 
+          "average": 83790.0
         }, 
         "Ecco": {
-          "count": 27, 
-          "sum": 597047, 
-          "average": 22112.85185185185
+          "count": 12, 
+          "sum": 280053, 
+          "average": 23337.75
         }, 
         "Presidio Press": {
-          "count": 4, 
-          "sum": 172234, 
-          "average": 43058.5
+          "count": 1, 
+          "sum": 3219, 
+          "average": 3219.0
         }, 
         "Ripley Publishing": {
           "count": 4, 
@@ -6957,25 +804,15 @@ publishers_bar = [
           "sum": 53378, 
           "average": 53378.0
         }, 
-        "FaithWords": {
-          "count": 11, 
-          "sum": 235160, 
-          "average": 21378.18181818182
-        }, 
-        "Tor Science Fiction": {
-          "count": 1, 
-          "sum": 19227, 
-          "average": 19227.0
-        }, 
         "Entangled: Brazen": {
-          "count": 18, 
-          "sum": 37751, 
-          "average": 2097.277777777778
+          "count": 12, 
+          "sum": 32844, 
+          "average": 2737.0
         }, 
-        "Forever Yours": {
-          "count": 1, 
-          "sum": 4258, 
-          "average": 4258.0
+        "LucasBooks": {
+          "count": 41, 
+          "sum": 1677474, 
+          "average": 40914.0
         }, 
         "Piatkus": {
           "count": 1, 
@@ -6983,49 +820,49 @@ publishers_bar = [
           "average": 36786.0
         }, 
         "Palgrave Macmillan": {
-          "count": 26, 
-          "sum": 1622209, 
-          "average": 62392.653846153844
+          "count": 11, 
+          "sum": 610516, 
+          "average": 55501.454545454544
         }, 
         "Broadway Books": {
-          "count": 68, 
-          "sum": 2755031, 
-          "average": 40515.16176470588
+          "count": 35, 
+          "sum": 1333219, 
+          "average": 38091.97142857143
         }, 
         "Random House Books for Young Readers": {
-          "count": 199, 
-          "sum": 9507809, 
-          "average": 47777.934673366835
+          "count": 94, 
+          "sum": 4543612, 
+          "average": 48336.29787234042
         }, 
         "Overlook": {
-          "count": 4, 
-          "sum": 217997, 
-          "average": 54499.25
+          "count": 2, 
+          "sum": 129785, 
+          "average": 64892.5
         }, 
         "Threshold Editions": {
-          "count": 11, 
-          "sum": 361561, 
-          "average": 32869.181818181816
+          "count": 6, 
+          "sum": 235019, 
+          "average": 39169.833333333336
         }, 
         "William Morrow": {
-          "count": 72, 
-          "sum": 1345291, 
-          "average": 18684.597222222223
+          "count": 41, 
+          "sum": 735838, 
+          "average": 17947.268292682926
         }, 
         "Twelve": {
-          "count": 14, 
-          "sum": 333169, 
-          "average": 23797.785714285714
+          "count": 7, 
+          "sum": 210187, 
+          "average": 30026.714285714286
         }, 
         "Delta": {
-          "count": 7, 
-          "sum": 267581, 
-          "average": 38225.857142857145
+          "count": 2, 
+          "sum": 59205, 
+          "average": 29602.5
         }, 
         "St. Martin's True Crime": {
-          "count": 2, 
-          "sum": 29051, 
-          "average": 14525.5
+          "count": 1, 
+          "sum": 23365, 
+          "average": 23365.0
         }, 
         "Little A": {
           "count": 1, 
@@ -7033,24 +870,24 @@ publishers_bar = [
           "average": 11186.0
         }, 
         "Jove": {
-          "count": 41, 
-          "sum": 619065, 
-          "average": 15099.146341463415
+          "count": 20, 
+          "sum": 248520, 
+          "average": 12426.0
         }, 
         "Jet City Comics": {
-          "count": 2, 
-          "sum": 11354, 
-          "average": 5677.0
+          "count": 1, 
+          "sum": 4981, 
+          "average": 4981.0
         }, 
-        "Simon Spotlight": {
-          "count": 18, 
-          "sum": 984938, 
-          "average": 54718.77777777778
+        "Island Books": {
+          "count": 1, 
+          "sum": 3804, 
+          "average": 3804.0
         }, 
         "Balzer + Bray": {
-          "count": 11, 
-          "sum": 420209, 
-          "average": 38200.818181818184
+          "count": 8, 
+          "sum": 319780, 
+          "average": 39972.5
         }, 
         "Entangled: Indulgence": {
           "count": 2, 
@@ -7058,39 +895,34 @@ publishers_bar = [
           "average": 1104.5
         }, 
         "Dutton Adult": {
-          "count": 23, 
-          "sum": 334840, 
-          "average": 14558.260869565218
+          "count": 14, 
+          "sum": 221055, 
+          "average": 15789.642857142857
         }, 
         "Orb Books": {
-          "count": 7, 
-          "sum": 314687, 
-          "average": 44955.28571428572
+          "count": 4, 
+          "sum": 195828, 
+          "average": 48957.0
         }, 
         "Laurel Leaf": {
-          "count": 8, 
-          "sum": 294573, 
-          "average": 36821.625
+          "count": 5, 
+          "sum": 191686, 
+          "average": 38337.2
         }, 
         "Aerie": {
           "count": 1, 
           "sum": 15113, 
           "average": 15113.0
         }, 
-        "Hudson Street Press": {
-          "count": 3, 
-          "sum": 130916, 
-          "average": 43638.666666666664
+        "Current": {
+          "count": 1, 
+          "sum": 68625, 
+          "average": 68625.0
         }, 
         "Back Bay Books": {
-          "count": 10, 
-          "sum": 221989, 
-          "average": 22198.9
-        }, 
-        "Times Books": {
-          "count": 16, 
-          "sum": 748479, 
-          "average": 46779.9375
+          "count": 3, 
+          "sum": 30956, 
+          "average": 10318.666666666666
         }, 
         "HP": {
           "count": 1, 
@@ -7102,105 +934,105 @@ publishers_bar = [
           "sum": 81346, 
           "average": 81346.0
         }, 
-        "LucasBooks": {
-          "count": 69, 
-          "sum": 2852990, 
-          "average": 41347.68115942029
+        "It Books": {
+          "count": 14, 
+          "sum": 477115, 
+          "average": 34079.642857142855
         }, 
         "Peterson's": {
-          "count": 3, 
-          "sum": 229005, 
-          "average": 76335.0
+          "count": 2, 
+          "sum": 146673, 
+          "average": 73336.5
+        }, 
+        "Grosset & Dunlap": {
+          "count": 50, 
+          "sum": 2595774, 
+          "average": 51915.48
         }, 
         "Crown": {
-          "count": 31, 
-          "sum": 1067042, 
-          "average": 34420.709677419356
+          "count": 11, 
+          "sum": 322682, 
+          "average": 29334.727272727272
         }, 
         "FSG Originals": {
-          "count": 3, 
-          "sum": 65349, 
-          "average": 21783.0
+          "count": 2, 
+          "sum": 15844, 
+          "average": 7922.0
         }, 
         "Orion": {
-          "count": 2, 
-          "sum": 162456, 
-          "average": 81228.0
+          "count": 1, 
+          "sum": 66959, 
+          "average": 66959.0
         }, 
         "Katherine Tegen Books": {
-          "count": 12, 
-          "sum": 387204, 
-          "average": 32267.0
+          "count": 7, 
+          "sum": 275722, 
+          "average": 39388.857142857145
         }, 
         "(Single-Author Publisher)": {
-          "count": 3426, 
-          "sum": 129300046, 
-          "average": 37740.81903093987
+          "count": 1757, 
+          "sum": 67200395, 
+          "average": 38247.23676721685
         }, 
         "HarperCollins": {
-          "count": 237, 
-          "sum": 8433252, 
-          "average": 35583.3417721519
+          "count": 123, 
+          "sum": 4342372, 
+          "average": 35303.83739837398
         }, 
         "WaterBrook Press": {
-          "count": 19, 
-          "sum": 762566, 
-          "average": 40135.05263157895
+          "count": 13, 
+          "sum": 479279, 
+          "average": 36867.61538461538
         }, 
         "Putnam Juvenile": {
-          "count": 10, 
-          "sum": 325323, 
-          "average": 32532.3
-        }, 
-        "Harper Design": {
           "count": 2, 
-          "sum": 167761, 
-          "average": 83880.5
+          "sum": 30788, 
+          "average": 15394.0
         }, 
-        "Loveswept": {
-          "count": 10, 
-          "sum": 69795, 
-          "average": 6979.5
+        "Image": {
+          "count": 5, 
+          "sum": 258366, 
+          "average": 51673.2
         }, 
         "Crimeline": {
-          "count": 4, 
-          "sum": 31646, 
-          "average": 7911.5
+          "count": 2, 
+          "sum": 17898, 
+          "average": 8949.0
         }, 
         "Hill and Wang": {
-          "count": 8, 
-          "sum": 473424, 
-          "average": 59178.0
+          "count": 1, 
+          "sum": 88987, 
+          "average": 88987.0
         }, 
         "Delacorte Press": {
-          "count": 46, 
-          "sum": 477624, 
-          "average": 10383.130434782608
+          "count": 27, 
+          "sum": 284925, 
+          "average": 10552.777777777777
         }, 
         "Broadside e-books": {
-          "count": 2, 
-          "sum": 139341, 
-          "average": 69670.5
+          "count": 1, 
+          "sum": 80618, 
+          "average": 80618.0
         }, 
         "Wellspring/Ballantine": {
-          "count": 2, 
-          "sum": 160374, 
-          "average": 80187.0
+          "count": 1, 
+          "sum": 60470, 
+          "average": 60470.0
         }, 
         "Philomel": {
-          "count": 6, 
-          "sum": 146876, 
-          "average": 24479.333333333332
+          "count": 2, 
+          "sum": 58760, 
+          "average": 29380.0
         }, 
         "Center Street": {
-          "count": 10, 
-          "sum": 241806, 
-          "average": 24180.6
+          "count": 3, 
+          "sum": 99409, 
+          "average": 33136.333333333336
         }, 
         "Margaret K. McElderry Books": {
-          "count": 18, 
-          "sum": 483457, 
-          "average": 26858.722222222223
+          "count": 8, 
+          "sum": 242506, 
+          "average": 30313.25
         }, 
         "The Friday Project": {
           "count": 1, 
@@ -7208,44 +1040,34 @@ publishers_bar = [
           "average": 23694.0
         }, 
         "Ballantine Books": {
-          "count": 151, 
-          "sum": 5009112, 
-          "average": 33172.92715231788
-        }, 
-        "Amistad": {
-          "count": 2, 
-          "sum": 133719, 
-          "average": 66859.5
+          "count": 71, 
+          "sum": 2090322, 
+          "average": 29441.154929577464
         }, 
         "Atria Books/Beyond Words": {
-          "count": 6, 
-          "sum": 251876, 
-          "average": 41979.333333333336
-        }, 
-        "Grijalbo": {
-          "count": 1, 
-          "sum": 86167, 
-          "average": 86167.0
+          "count": 2, 
+          "sum": 110782, 
+          "average": 55391.0
         }, 
         "Tundra Books": {
-          "count": 2, 
-          "sum": 120020, 
-          "average": 60010.0
+          "count": 1, 
+          "sum": 57016, 
+          "average": 57016.0
         }, 
         "Crown Forum": {
-          "count": 4, 
-          "sum": 221275, 
-          "average": 55318.75
+          "count": 2, 
+          "sum": 111910, 
+          "average": 55955.0
         }, 
         "Scribner": {
-          "count": 113, 
-          "sum": 3502713, 
-          "average": 30997.46017699115
+          "count": 57, 
+          "sum": 1694956, 
+          "average": 29736.070175438595
         }, 
         "Scientific American / Farrar Straus and Giroux": {
-          "count": 3, 
-          "sum": 103538, 
-          "average": 34512.666666666664
+          "count": 1, 
+          "sum": 46359, 
+          "average": 46359.0
         }, 
         "Peterson Institute for International Economics": {
           "count": 1, 
@@ -7253,179 +1075,169 @@ publishers_bar = [
           "average": 41814.0
         }, 
         "Crown Business": {
-          "count": 54, 
-          "sum": 2143232, 
-          "average": 39689.48148148148
+          "count": 26, 
+          "sum": 860740, 
+          "average": 33105.38461538462
         }, 
         "Pocket Books/Star Trek": {
-          "count": 56, 
-          "sum": 3656910, 
-          "average": 65301.96428571428
+          "count": 27, 
+          "sum": 1745149, 
+          "average": 64635.148148148146
         }, 
         "Doubleday": {
-          "count": 24, 
-          "sum": 667904, 
-          "average": 27829.333333333332
+          "count": 18, 
+          "sum": 608692, 
+          "average": 33816.22222222222
         }, 
         "Delacorte Books for Young Readers": {
-          "count": 20, 
-          "sum": 660581, 
-          "average": 33029.05
+          "count": 9, 
+          "sum": 241177, 
+          "average": 26797.444444444445
         }, 
         "Henry Holt and Co.": {
-          "count": 42, 
-          "sum": 1803232, 
-          "average": 42934.09523809524
-        }, 
-        "Convergent Books": {
-          "count": 1, 
-          "sum": 29720, 
-          "average": 29720.0
+          "count": 24, 
+          "sum": 933957, 
+          "average": 38914.875
         }, 
         "Zonderkidz": {
-          "count": 27, 
-          "sum": 1307675, 
-          "average": 48432.40740740741
+          "count": 14, 
+          "sum": 805375, 
+          "average": 57526.78571428572
         }, 
         "Papercutz": {
-          "count": 13, 
-          "sum": 755763, 
-          "average": 58135.61538461538
+          "count": 4, 
+          "sum": 263893, 
+          "average": 65973.25
         }, 
         "Atria Books": {
-          "count": 96, 
-          "sum": 2604569, 
-          "average": 27130.927083333332
+          "count": 47, 
+          "sum": 1521741, 
+          "average": 32377.468085106382
         }, 
         "(Small or Medium Publisher)": {
-          "count": 9107, 
-          "sum": 418525296, 
-          "average": 45956.43966179861
+          "count": 4507, 
+          "sum": 208537917, 
+          "average": 46269.78411360107
         }, 
         "Flash Point": {
-          "count": 2, 
-          "sum": 74094, 
-          "average": 37047.0
+          "count": 1, 
+          "sum": 12998, 
+          "average": 12998.0
         }, 
         "Onyx": {
-          "count": 2, 
-          "sum": 20650, 
-          "average": 10325.0
+          "count": 1, 
+          "sum": 7083, 
+          "average": 7083.0
         }, 
         "Dell": {
-          "count": 45, 
-          "sum": 748789, 
-          "average": 16639.755555555555
+          "count": 21, 
+          "sum": 330262, 
+          "average": 15726.761904761905
         }, 
         "Atria / 37 Ink": {
-          "count": 2, 
-          "sum": 25584, 
-          "average": 12792.0
+          "count": 1, 
+          "sum": 21997, 
+          "average": 21997.0
         }, 
         "HarperOne": {
-          "count": 40, 
-          "sum": 1101976, 
-          "average": 27549.4
-        }, 
-        "Touchstone": {
-          "count": 69, 
-          "sum": 2447175, 
-          "average": 35466.30434782609
-        }, 
-        "Watson-Guptill": {
-          "count": 16, 
-          "sum": 1192871, 
-          "average": 74554.4375
+          "count": 18, 
+          "sum": 367499, 
+          "average": 20416.61111111111
         }, 
         "Princeton Review": {
-          "count": 9, 
-          "sum": 584371, 
-          "average": 64930.11111111111
+          "count": 5, 
+          "sum": 325132, 
+          "average": 65026.4
         }, 
-        "Entangled: Select": {
-          "count": 1, 
-          "sum": 2672, 
-          "average": 2672.0
+        "DAW": {
+          "count": 7, 
+          "sum": 242151, 
+          "average": 34593.0
         }, 
-        "Mitchell Beazley": {
+        "Deepak Chopra": {
           "count": 1, 
-          "sum": 49953, 
-          "average": 49953.0
+          "sum": 76572, 
+          "average": 76572.0
         }, 
         "Washington Square Press": {
-          "count": 4, 
-          "sum": 246571, 
-          "average": 61642.75
+          "count": 2, 
+          "sum": 119718, 
+          "average": 59859.0
         }, 
         "Tarcher": {
-          "count": 22, 
-          "sum": 795779, 
-          "average": 36171.77272727273
+          "count": 10, 
+          "sum": 373019, 
+          "average": 37301.9
         }, 
-        "Galvanized Books": {
-          "count": 1, 
-          "sum": 21012, 
-          "average": 21012.0
+        "Times Books": {
+          "count": 4, 
+          "sum": 201817, 
+          "average": 50454.25
         }, 
-        "Alpha": {
-          "count": 5, 
-          "sum": 246827, 
-          "average": 49365.4
+        "William Morrow Cookbooks": {
+          "count": 7, 
+          "sum": 259493, 
+          "average": 37070.42857142857
         }, 
         "Fodor's": {
-          "count": 14, 
-          "sum": 848367, 
-          "average": 60597.642857142855
+          "count": 3, 
+          "sum": 158013, 
+          "average": 52671.0
+        }, 
+        "Signet": {
+          "count": 33, 
+          "sum": 580630, 
+          "average": 17594.848484848484
         }, 
         "Nan A. Talese": {
-          "count": 5, 
-          "sum": 86422, 
-          "average": 17284.4
+          "count": 3, 
+          "sum": 46446, 
+          "average": 15482.0
         }, 
         "Square Fish": {
-          "count": 3, 
-          "sum": 153685, 
-          "average": 51228.333333333336
+          "count": 2, 
+          "sum": 117552, 
+          "average": 58776.0
         }, 
         "Chicken Soup for the Soul": {
-          "count": 5, 
-          "sum": 328927, 
-          "average": 65785.4
+          "count": 2, 
+          "sum": 156553, 
+          "average": 78276.5
         }, 
         "Ace": {
-          "count": 43, 
-          "sum": 679575, 
-          "average": 15804.06976744186
+          "count": 18, 
+          "sum": 312593, 
+          "average": 17366.277777777777
         }, 
         "Prentice Hall Press": {
-          "count": 6, 
-          "sum": 271073, 
-          "average": 45178.833333333336
+          "count": 4, 
+          "sum": 135814, 
+          "average": 33953.5
         }, 
         "Free Press": {
-          "count": 68, 
-          "sum": 3194923, 
-          "average": 46984.16176470588
+          "count": 28, 
+          "sum": 1423839, 
+          "average": 50851.392857142855
         }, 
-        "Rough Guides": {
-          "count": 4, 
-          "sum": 291462, 
-          "average": 72865.5
+        "World Wrestling Entertainment": {
+          "count": 1, 
+          "sum": 42854, 
+          "average": 42854.0
         }, 
         "Spectra": {
-          "count": 47, 
-          "sum": 1436517, 
-          "average": 30564.191489361703
+          "count": 24, 
+          "sum": 805943, 
+          "average": 33580.958333333336
         }, 
         "Orbit": {
-          "count": 46, 
-          "sum": 823929, 
-          "average": 17911.5
+          "count": 25, 
+          "sum": 569472, 
+          "average": 22778.88
         }, 
         "Spiegel & Grau": {
-          "count": 22, 
-          "sum": 793041, 
-          "average": 36047.318181818184
+          "count": 12, 
+          "sum": 434007, 
+          "average": 36167.25
         }, 
         "Main Street Books": {
           "count": 1, 
@@ -7433,9 +1245,9 @@ publishers_bar = [
           "average": 12544.0
         }, 
         "William Morrow Paperbacks": {
-          "count": 44, 
-          "sum": 1207760, 
-          "average": 27449.090909090908
+          "count": 17, 
+          "sum": 407026, 
+          "average": 23942.70588235294
         }, 
         "Crossing Press": {
           "count": 2, 
@@ -7443,59 +1255,49 @@ publishers_bar = [
           "average": 61156.0
         }, 
         "LB Kids": {
-          "count": 8, 
-          "sum": 537056, 
-          "average": 67132.0
+          "count": 2, 
+          "sum": 109592, 
+          "average": 54796.0
         }, 
         "Fawcett": {
-          "count": 4, 
-          "sum": 183579, 
-          "average": 45894.75
+          "count": 1, 
+          "sum": 17195, 
+          "average": 17195.0
         }, 
         "Sarah Crichton Books": {
-          "count": 7, 
-          "sum": 85015, 
-          "average": 12145.0
-        }, 
-        "Anthony Bourdain/Ecco": {
-          "count": 2, 
-          "sum": 100601, 
-          "average": 50300.5
+          "count": 3, 
+          "sum": 20678, 
+          "average": 6892.666666666667
         }, 
         "Vision": {
-          "count": 4, 
-          "sum": 65496, 
-          "average": 16374.0
+          "count": 2, 
+          "sum": 33564, 
+          "average": 16782.0
         }, 
         "Farrar Straus and Giroux": {
-          "count": 89, 
-          "sum": 4161635, 
-          "average": 46759.94382022472
-        }, 
-        "Vintage Espanol": {
-          "count": 7, 
-          "sum": 116931, 
-          "average": 16704.428571428572
+          "count": 49, 
+          "sum": 2151512, 
+          "average": 43908.4081632653
         }, 
         "Holt Paperbacks": {
-          "count": 25, 
-          "sum": 468377, 
-          "average": 18735.08
+          "count": 12, 
+          "sum": 247946, 
+          "average": 20662.166666666668
         }, 
         "Multnomah Books": {
-          "count": 7, 
-          "sum": 294450, 
-          "average": 42064.28571428572
+          "count": 4, 
+          "sum": 117402, 
+          "average": 29350.5
         }, 
         "Grupo Nelson": {
-          "count": 3, 
-          "sum": 128211, 
-          "average": 42737.0
+          "count": 2, 
+          "sum": 37280, 
+          "average": 18640.0
         }, 
-        "Grosset & Dunlap": {
-          "count": 104, 
-          "sum": 5635469, 
-          "average": 54187.20192307692
+        "Simon Spotlight": {
+          "count": 8, 
+          "sum": 443479, 
+          "average": 55434.875
         }, 
         "HarperTrue": {
           "count": 1, 
@@ -7503,29 +1305,19 @@ publishers_bar = [
           "average": 1792.0
         }, 
         "Business Plus": {
-          "count": 15, 
-          "sum": 526753, 
-          "average": 35116.86666666667
+          "count": 9, 
+          "sum": 274709, 
+          "average": 30523.222222222223
         }, 
         "Wendy Lamb Books": {
-          "count": 5, 
-          "sum": 157797, 
-          "average": 31559.4
+          "count": 3, 
+          "sum": 71687, 
+          "average": 23895.666666666668
         }, 
-        "Puffin": {
-          "count": 103, 
-          "sum": 3545295, 
-          "average": 34420.33980582524
-        }, 
-        "It Books": {
-          "count": 24, 
-          "sum": 908309, 
-          "average": 37846.208333333336
-        }, 
-        "World Wrestling Entertainment": {
-          "count": 2, 
-          "sum": 86465, 
-          "average": 43232.5
+        "Two Lions": {
+          "count": 32, 
+          "sum": 1065638, 
+          "average": 33301.1875
         }, 
         "Knopf Group E-Books": {
           "count": 1, 
@@ -7533,9 +1325,9 @@ publishers_bar = [
           "average": 69603.0
         }, 
         "HarperCollinsChildren'sBooks": {
-          "count": 2, 
-          "sum": 166562, 
-          "average": 83281.0
+          "count": 1, 
+          "sum": 89897, 
+          "average": 89897.0
         }, 
         "Truman Talley Books": {
           "count": 1, 
@@ -7543,3075 +1335,1388 @@ publishers_bar = [
           "average": 36589.0
         }, 
         "Aladdin": {
-          "count": 79, 
-          "sum": 4392928, 
-          "average": 55606.6835443038
+          "count": 32, 
+          "sum": 1559189, 
+          "average": 48724.65625
         }, 
         "Random House/Disney": {
-          "count": 13, 
-          "sum": 713635, 
-          "average": 54895.0
+          "count": 5, 
+          "sum": 341917, 
+          "average": 68383.4
         }, 
         "Razorbill": {
-          "count": 14, 
-          "sum": 253764, 
-          "average": 18126.0
+          "count": 7, 
+          "sum": 108226, 
+          "average": 15460.857142857143
         }, 
         "Ten Speed Press": {
-          "count": 41, 
-          "sum": 2410164, 
-          "average": 58784.48780487805
-        }, 
-        "DAW": {
-          "count": 14, 
-          "sum": 408669, 
-          "average": 29190.64285714286
+          "count": 24, 
+          "sum": 1417576, 
+          "average": 59065.666666666664
         }, 
         "The Penguin Press": {
-          "count": 27, 
-          "sum": 702457, 
-          "average": 26016.925925925927
+          "count": 11, 
+          "sum": 311390, 
+          "average": 28308.18181818182
         }
       }, 
-      "publishers.[0].statistics.total reviews": {
-        "Simon Pulse/Mercury Ink": {
-          "count": 1, 
-          "sum": 445, 
-          "average": 445.0
-        }, 
+      "publishers.[0].daily average.publisher revenue": {
         "Gallery Books": {
-          "count": 56, 
-          "sum": 13614, 
-          "average": 243.10714285714286
+          "count": 30, 
+          "sum": 3240.6780000000003, 
+          "average": 108.0226
         }, 
         "Dial": {
-          "count": 10, 
-          "sum": 457, 
-          "average": 45.7
+          "count": 4, 
+          "sum": 239.526, 
+          "average": 59.881499999999996
         }, 
         "McClelland & Stewart": {
           "count": 1, 
-          "sum": 51, 
-          "average": 51.0
+          "sum": 13.188, 
+          "average": 13.188
         }, 
         "Tor Books": {
-          "count": 77, 
-          "sum": 22660, 
-          "average": 294.2857142857143
-        }, 
-        "Penguin Young Readers": {
-          "count": 1, 
-          "sum": 75, 
-          "average": 75.0
+          "count": 41, 
+          "sum": 4514.826000000001, 
+          "average": 110.11770731707317
         }, 
         "ESPN": {
           "count": 2, 
-          "sum": 404, 
-          "average": 202.0
+          "sum": 91.446, 
+          "average": 45.723
         }, 
         "Bantam": {
-          "count": 132, 
-          "sum": 37445, 
-          "average": 283.67424242424244
-        }, 
-        "Harper": {
-          "count": 55, 
-          "sum": 17827, 
-          "average": 324.1272727272727
-        }, 
-        "Portfolio": {
-          "count": 81, 
-          "sum": 9173, 
-          "average": 113.24691358024691
-        }, 
-        "Plume": {
-          "count": 52, 
-          "sum": 12996, 
-          "average": 249.92307692307693
-        }, 
-        "Jericho Books": {
-          "count": 2, 
-          "sum": 580, 
-          "average": 290.0
-        }, 
-        "HarperTeen": {
-          "count": 28, 
-          "sum": 5956, 
-          "average": 212.71428571428572
-        }, 
-        "NAL": {
-          "count": 33, 
-          "sum": 4080, 
-          "average": 123.63636363636364
-        }, 
-        "Avon Impulse": {
-          "count": 13, 
-          "sum": 945, 
-          "average": 72.6923076923077
-        }, 
-        "AmazonEncore": {
-          "count": 10, 
-          "sum": 2343, 
-          "average": 234.3
-        }, 
-        "Zondervan/Youth Specialties": {
-          "count": 2, 
-          "sum": 27, 
-          "average": 13.5
-        }, 
-        "Dial Press Trade Paperback": {
-          "count": 2, 
-          "sum": 323, 
-          "average": 161.5
-        }, 
-        "Villard": {
-          "count": 6, 
-          "sum": 679, 
-          "average": 113.16666666666667
-        }, 
-        "Golden/Disney": {
-          "count": 6, 
-          "sum": 239, 
-          "average": 39.833333333333336
-        }, 
-        "RH/Disney": {
-          "count": 7, 
-          "sum": 174, 
-          "average": 24.857142857142858
-        }, 
-        "Hodder & Stoughton": {
-          "count": 1, 
-          "sum": 4, 
-          "average": 4.0
-        }, 
-        "Newmarket Press": {
-          "count": 2, 
-          "sum": 73, 
-          "average": 36.5
-        }, 
-        "Little Brown and Company": {
-          "count": 141, 
-          "sum": 56034, 
-          "average": 397.40425531914894
-        }, 
-        "Grand Central Life & Style": {
-          "count": 15, 
-          "sum": 4423, 
-          "average": 294.8666666666667
-        }, 
-        "Perigee": {
-          "count": 17, 
-          "sum": 2792, 
-          "average": 164.23529411764707
-        }, 
-        "Golden Books": {
-          "count": 8, 
-          "sum": 555, 
-          "average": 69.375
-        }, 
-        "Thomas Dunne Books": {
-          "count": 36, 
-          "sum": 6204, 
-          "average": 172.33333333333334
-        }, 
-        "HarperSport": {
-          "count": 2, 
-          "sum": 35, 
-          "average": 17.5
-        }, 
-        "Collins Reference": {
-          "count": 1, 
-          "sum": 57, 
-          "average": 57.0
-        }, 
-        "Tor Teen": {
-          "count": 1, 
-          "sum": 136, 
-          "average": 136.0
-        }, 
-        "Crown Archetype": {
-          "count": 28, 
-          "sum": 6635, 
-          "average": 236.96428571428572
-        }, 
-        "Harper Element": {
-          "count": 20, 
-          "sum": 2030, 
-          "average": 101.5
-        }, 
-        "(Indie Publisher)": {
-          "count": 5637, 
-          "sum": 396527, 
-          "average": 70.34362249423452
-        }, 
-        "Zondervan": {
-          "count": 65, 
-          "sum": 16999, 
-          "average": 261.5230769230769
-        }, 
-        "HarperWave": {
-          "count": 6, 
-          "sum": 1112, 
-          "average": 185.33333333333334
-        }, 
-        "Studio": {
-          "count": 1, 
-          "sum": 37, 
-          "average": 37.0
-        }, 
-        "Bantam Dell": {
-          "count": 1, 
-          "sum": 109, 
-          "average": 109.0
-        }, 
-        "Pocket Star": {
-          "count": 11, 
-          "sum": 793, 
-          "average": 72.0909090909091
-        }, 
-        "Avon": {
-          "count": 25, 
-          "sum": 3843, 
-          "average": 153.72
-        }, 
-        "Thomas & Mercer": {
-          "count": 102, 
-          "sum": 32219, 
-          "average": 315.87254901960785
-        }, 
-        "Thomas Nelson": {
-          "count": 90, 
-          "sum": 18420, 
-          "average": 204.66666666666666
-        }, 
-        "Penguin": {
-          "count": 37, 
-          "sum": 4607, 
-          "average": 124.51351351351352
-        }, 
-        "Billboard Books": {
-          "count": 2, 
-          "sum": 54, 
-          "average": 27.0
-        }, 
-        "HarperBusiness": {
-          "count": 23, 
-          "sum": 2859, 
-          "average": 124.30434782608695
-        }, 
-        "Simon Pulse": {
-          "count": 13, 
-          "sum": 4057, 
-          "average": 312.0769230769231
-        }, 
-        "Little Brown Books for Young Readers": {
-          "count": 55, 
-          "sum": 11077, 
-          "average": 201.4
-        }, 
-        "Cash Money Content": {
-          "count": 2, 
-          "sum": 282, 
-          "average": 141.0
-        }, 
-        "Harper Paperbacks": {
-          "count": 5, 
-          "sum": 565, 
-          "average": 113.0
-        }, 
-        "Simon & Schuster": {
-          "count": 198, 
-          "sum": 46287, 
-          "average": 233.77272727272728
-        }, 
-        "Putnam Adult": {
-          "count": 37, 
-          "sum": 16856, 
-          "average": 455.56756756756755
-        }, 
-        "Gallery Books/Karen Hunter Publishing": {
-          "count": 1, 
-          "sum": 299, 
-          "average": 299.0
-        }, 
-        "Reagan Arthur Books": {
-          "count": 2, 
-          "sum": 1869, 
-          "average": 934.5
-        }, 
-        "William Morrow Impulse": {
-          "count": 2, 
-          "sum": 129, 
-          "average": 64.5
-        }, 
-        "Two Lions": {
-          "count": 64, 
-          "sum": 4529, 
-          "average": 70.765625
-        }, 
-        "Metropolitan Books": {
-          "count": 15, 
-          "sum": 3387, 
-          "average": 225.8
-        }, 
-        "Potter Style": {
-          "count": 3, 
-          "sum": 90, 
-          "average": 30.0
-        }, 
-        "Poppy": {
-          "count": 1, 
-          "sum": 162, 
-          "average": 162.0
-        }, 
-        "Three Rivers Press": {
-          "count": 21, 
-          "sum": 4168, 
-          "average": 198.47619047619048
-        }, 
-        "Little Simon": {
-          "count": 2, 
-          "sum": 111, 
-          "average": 55.5
-        }, 
-        "Avon Inspire": {
-          "count": 1, 
-          "sum": 20, 
-          "average": 20.0
-        }, 
-        "St. Martin's Paperbacks": {
-          "count": 18, 
-          "sum": 1663, 
-          "average": 92.38888888888889
-        }, 
-        "PHILOMEL": {
-          "count": 1, 
-          "sum": 126, 
-          "average": 126.0
-        }, 
-        "Celestial Arts": {
-          "count": 5, 
-          "sum": 660, 
-          "average": 132.0
-        }, 
-        "HarperTorch": {
-          "count": 1, 
-          "sum": 396, 
-          "average": 396.0
-        }, 
-        "Entangled: Bliss": {
-          "count": 1, 
-          "sum": 116, 
-          "average": 116.0
-        }, 
-        "Debbie Macomber Books": {
-          "count": 2, 
-          "sum": 31, 
-          "average": 15.5
-        }, 
-        "Roaring Brook Press": {
-          "count": 7, 
-          "sum": 331, 
-          "average": 47.285714285714285
-        }, 
-        "Sentinel": {
-          "count": 2, 
-          "sum": 1919, 
-          "average": 959.5
-        }, 
-        "HarperStudio": {
-          "count": 1, 
-          "sum": 206, 
-          "average": 206.0
-        }, 
-        "Amazon Publishing": {
-          "count": 21, 
-          "sum": 6229, 
-          "average": 296.6190476190476
-        }, 
-        "St. Martin's Press": {
-          "count": 147, 
-          "sum": 35319, 
-          "average": 240.26530612244898
-        }, 
-        "HarperPerennial Classics": {
-          "count": 5, 
-          "sum": 860, 
-          "average": 172.0
-        }, 
-        "Pintail": {
-          "count": 1, 
-          "sum": 4, 
-          "average": 4.0
-        }, 
-        "Current": {
-          "count": 3, 
-          "sum": 285, 
-          "average": 95.0
-        }, 
-        "HarperCollins e-books": {
-          "count": 378, 
-          "sum": 72215, 
-          "average": 191.04497354497354
-        }, 
-        "Gotham Books": {
-          "count": 27, 
-          "sum": 4331, 
-          "average": 160.40740740740742
-        }, 
-        "MTV Books": {
-          "count": 2, 
-          "sum": 872, 
-          "average": 436.0
-        }, 
-        "Vintage": {
-          "count": 181, 
-          "sum": 48096, 
-          "average": 265.72375690607737
-        }, 
-        "Clarkson Potter": {
-          "count": 35, 
-          "sum": 5180, 
-          "average": 148.0
-        }, 
-        "Grand Harbor Press": {
-          "count": 3, 
-          "sum": 281, 
-          "average": 93.66666666666667
-        }, 
-        "Harper Thorsons": {
-          "count": 1, 
-          "sum": 28, 
-          "average": 28.0
-        }, 
-        "Deepak Chopra": {
-          "count": 3, 
-          "sum": 133, 
-          "average": 44.333333333333336
-        }, 
-        "Picador": {
-          "count": 10, 
-          "sum": 1133, 
-          "average": 113.3
-        }, 
-        "Harmony": {
-          "count": 57, 
-          "sum": 10105, 
-          "average": 177.28070175438597
-        }, 
-        "Signet Classic": {
-          "count": 4, 
-          "sum": 338, 
-          "average": 84.5
-        }, 
-        "47North": {
-          "count": 66, 
-          "sum": 16531, 
-          "average": 250.46969696969697
-        }, 
-        "HarperPress": {
-          "count": 3, 
-          "sum": 43, 
-          "average": 14.333333333333334
-        }, 
-        "Collins": {
-          "count": 8, 
-          "sum": 1085, 
-          "average": 135.625
-        }, 
-        "Starscape": {
-          "count": 1, 
-          "sum": 18, 
-          "average": 18.0
-        }, 
-        "Atria/Emily Bestler Books": {
-          "count": 7, 
-          "sum": 5757, 
-          "average": 822.4285714285714
-        }, 
-        "Dragonfly Books": {
-          "count": 1, 
-          "sum": 15, 
-          "average": 15.0
-        }, 
-        "Feiwel & Friends": {
-          "count": 9, 
-          "sum": 2795, 
-          "average": 310.55555555555554
-        }, 
-        "DK Publishing": {
-          "count": 26, 
-          "sum": 541, 
-          "average": 20.807692307692307
-        }, 
-        "Leer-e": {
-          "count": 1, 
-          "sum": 218, 
-          "average": 218.0
-        }, 
-        "Amphoto Books": {
-          "count": 9, 
-          "sum": 1142, 
-          "average": 126.88888888888889
-        }, 
-        "Skyscape": {
-          "count": 11, 
-          "sum": 7901, 
-          "average": 718.2727272727273
-        }, 
-        "Avery": {
-          "count": 15, 
-          "sum": 2172, 
-          "average": 144.8
-        }, 
-        "Appetite by Random House": {
-          "count": 1, 
-          "sum": 95, 
-          "average": 95.0
-        }, 
-        "Faber & Faber": {
-          "count": 6, 
-          "sum": 506, 
-          "average": 84.33333333333333
-        }, 
-        "AmazonCrossing": {
-          "count": 29, 
-          "sum": 7694, 
-          "average": 265.3103448275862
-        }, 
-        "Simon & Schuster Audio": {
-          "count": 1, 
-          "sum": 567, 
-          "average": 567.0
-        }, 
-        "Del Rey": {
-          "count": 45, 
-          "sum": 10118, 
-          "average": 224.84444444444443
-        }, 
-        "Graywolf Press": {
-          "count": 2, 
-          "sum": 89, 
-          "average": 44.5
-        }, 
-        "Howard Books": {
-          "count": 20, 
-          "sum": 8773, 
-          "average": 438.65
-        }, 
-        "First Second": {
-          "count": 3, 
-          "sum": 68, 
-          "average": 22.666666666666668
-        }, 
-        "Walden Pond Press": {
-          "count": 3, 
-          "sum": 155, 
-          "average": 51.666666666666664
-        }, 
-        "Penguin Classic": {
-          "count": 17, 
-          "sum": 5928, 
-          "average": 348.70588235294116
-        }, 
-        "Montlake Romance": {
-          "count": 66, 
-          "sum": 18745, 
-          "average": 284.0151515151515
-        }, 
-        "The Dial Press": {
-          "count": 2, 
-          "sum": 1106, 
-          "average": 553.0
-        }, 
-        "Modern Library": {
-          "count": 5, 
-          "sum": 857, 
-          "average": 171.4
-        }, 
-        "Knopf": {
-          "count": 43, 
-          "sum": 9179, 
-          "average": 213.46511627906978
-        }, 
-        "Forever": {
-          "count": 18, 
-          "sum": 6644, 
-          "average": 369.1111111111111
-        }, 
-        "Riverhead": {
-          "count": 46, 
-          "sum": 10170, 
-          "average": 221.08695652173913
-        }, 
-        "Mulholland Books": {
-          "count": 8, 
-          "sum": 685, 
-          "average": 85.625
-        }, 
-        "Yearling": {
-          "count": 12, 
-          "sum": 1567, 
-          "average": 130.58333333333334
-        }, 
-        "Hogarth": {
-          "count": 1, 
-          "sum": 1143, 
-          "average": 1143.0
-        }, 
-        "Bantam Classics": {
-          "count": 5, 
-          "sum": 961, 
-          "average": 192.2
-        }, 
-        "Potter Craft": {
-          "count": 6, 
-          "sum": 517, 
-          "average": 86.16666666666667
-        }, 
-        "Atheneum Books for Young Readers": {
-          "count": 36, 
-          "sum": 5387, 
-          "average": 149.63888888888889
-        }, 
-        "Golden Guides from St. Martin's Press": {
-          "count": 1, 
-          "sum": 160, 
-          "average": 160.0
-        }, 
-        "Penguin Books": {
-          "count": 144, 
-          "sum": 32466, 
-          "average": 225.45833333333334
-        }, 
-        "CLBusiness": {
-          "count": 1, 
-          "sum": 139, 
-          "average": 139.0
-        }, 
-        "Lone Eagle": {
-          "count": 1, 
-          "sum": 21, 
-          "average": 21.0
-        }, 
-        "Berkley": {
-          "count": 169, 
-          "sum": 44877, 
-          "average": 265.5443786982249
-        }, 
-        "Harper Voyager": {
-          "count": 10, 
-          "sum": 2261, 
-          "average": 226.1
-        }, 
-        "Hyperion": {
-          "count": 62, 
-          "sum": 19524, 
-          "average": 314.9032258064516
-        }, 
-        "Anchor": {
-          "count": 74, 
-          "sum": 28925, 
-          "average": 390.8783783783784
-        }, 
-        "Signet": {
-          "count": 63, 
-          "sum": 20818, 
-          "average": 330.44444444444446
-        }, 
-        "Forge Books": {
-          "count": 19, 
-          "sum": 1461, 
-          "average": 76.89473684210526
-        }, 
-        "Celebra": {
-          "count": 2, 
-          "sum": 431, 
-          "average": 215.5
-        }, 
-        "Knopf Books for Young Readers": {
-          "count": 30, 
-          "sum": 6756, 
-          "average": 225.2
-        }, 
-        "William Morrow Cookbooks": {
-          "count": 14, 
-          "sum": 767, 
-          "average": 54.785714285714285
-        }, 
-        "Image": {
-          "count": 7, 
-          "sum": 1229, 
-          "average": 175.57142857142858
-        }, 
-        "Roc": {
-          "count": 13, 
-          "sum": 2433, 
-          "average": 187.15384615384616
-        }, 
-        "Simon & Schuster/Paula Wiseman Books": {
-          "count": 3, 
-          "sum": 65, 
-          "average": 21.666666666666668
-        }, 
-        "St. Martin's Griffin": {
-          "count": 43, 
-          "sum": 5228, 
-          "average": 121.5813953488372
-        }, 
-        "Pantheon": {
-          "count": 8, 
-          "sum": 1093, 
-          "average": 136.625
-        }, 
-        "Reader's Digest": {
-          "count": 3, 
-          "sum": 274, 
-          "average": 91.33333333333333
-        }, 
-        "InterMix": {
-          "count": 4, 
-          "sum": 162, 
-          "average": 40.5
-        }, 
-        "Pocket Books": {
-          "count": 72, 
-          "sum": 9835, 
-          "average": 136.59722222222223
-        }, 
-        "Witness Impulse": {
-          "count": 12, 
-          "sum": 265, 
-          "average": 22.083333333333332
-        }, 
-        "Ivy Books": {
-          "count": 3, 
-          "sum": 64, 
-          "average": 21.333333333333332
-        }, 
-        "Dutton Children's": {
-          "count": 4, 
-          "sum": 636, 
-          "average": 159.0
-        }, 
-        "Speak": {
-          "count": 19, 
-          "sum": 8687, 
-          "average": 457.2105263157895
-        }, 
-        "Yen Press": {
-          "count": 12, 
-          "sum": 476, 
-          "average": 39.666666666666664
-        }, 
-        "Random House Reference": {
-          "count": 1, 
-          "sum": 63, 
-          "average": 63.0
-        }, 
-        "Greenwillow Books": {
-          "count": 17, 
-          "sum": 1844, 
-          "average": 108.47058823529412
-        }, 
-        "Schwartz & Wade": {
-          "count": 2, 
-          "sum": 70, 
-          "average": 35.0
-        }, 
-        "Page Street Publishing": {
-          "count": 2, 
-          "sum": 79, 
-          "average": 39.5
-        }, 
-        "Island Books": {
-          "count": 3, 
-          "sum": 460, 
-          "average": 153.33333333333334
-        }, 
-        "PSS Juvenile": {
-          "count": 1, 
-          "sum": 22, 
-          "average": 22.0
-        }, 
-        "Joe Books": {
-          "count": 3, 
-          "sum": 965, 
-          "average": 321.6666666666667
-        }, 
-        "Viking Adult": {
-          "count": 29, 
-          "sum": 5319, 
-          "average": 183.41379310344828
-        }, 
-        "Blue Rider Press": {
-          "count": 8, 
-          "sum": 1162, 
-          "average": 145.25
-        }, 
-        "Thorsons": {
-          "count": 4, 
-          "sum": 104, 
-          "average": 26.0
-        }, 
-        "David Fickling Books": {
-          "count": 1, 
-          "sum": 698, 
-          "average": 698.0
-        }, 
-        "Alfred A. Knopf BFYR": {
-          "count": 4, 
-          "sum": 47, 
-          "average": 11.75
-        }, 
-        "Minotaur Books": {
-          "count": 43, 
-          "sum": 7843, 
-          "average": 182.3953488372093
-        }, 
-        "Random House Trade Paperbacks": {
-          "count": 30, 
-          "sum": 11325, 
-          "average": 377.5
-        }, 
-        "BradyGames": {
-          "count": 2, 
-          "sum": 50, 
-          "average": 25.0
-        }, 
-        "Renaissance Books": {
-          "count": 1, 
-          "sum": 55, 
-          "average": 55.0
-        }, 
-        "Harper Perennial": {
-          "count": 20, 
-          "sum": 3485, 
-          "average": 174.25
-        }, 
-        "Viking Children's": {
-          "count": 4, 
-          "sum": 167, 
-          "average": 41.75
-        }, 
-        "North Point Press": {
-          "count": 5, 
-          "sum": 725, 
-          "average": 145.0
-        }, 
-        "Simon & Schuster Books for Young Readers": {
-          "count": 45, 
-          "sum": 8344, 
-          "average": 185.42222222222222
-        }, 
-        "Random House": {
-          "count": 81, 
-          "sum": 20856, 
-          "average": 257.48148148148147
-        }, 
-        "Schocken": {
-          "count": 4, 
-          "sum": 263, 
-          "average": 65.75
-        }, 
-        "Meadowbrook": {
-          "count": 3, 
-          "sum": 384, 
-          "average": 128.0
-        }, 
-        "HarperFestival": {
-          "count": 5, 
-          "sum": 118, 
-          "average": 23.6
-        }, 
-        "Grand Central Publishing": {
-          "count": 94, 
-          "sum": 32703, 
-          "average": 347.90425531914894
-        }, 
-        "Zinc Ink": {
-          "count": 1, 
-          "sum": 58, 
-          "average": 58.0
-        }, 
-        "Entangled: Teen": {
-          "count": 2, 
-          "sum": 514, 
-          "average": 257.0
-        }, 
-        "Gildan Digital": {
-          "count": 1, 
-          "sum": 8, 
-          "average": 8.0
-        }, 
-        "Scientific American": {
-          "count": 9, 
-          "sum": 140, 
-          "average": 15.555555555555555
-        }, 
-        "Ecco": {
-          "count": 27, 
-          "sum": 4824, 
-          "average": 178.66666666666666
-        }, 
-        "Presidio Press": {
-          "count": 4, 
-          "sum": 1482, 
-          "average": 370.5
-        }, 
-        "Ripley Publishing": {
-          "count": 4, 
-          "sum": 24, 
-          "average": 6.0
-        }, 
-        "FENN-M&S": {
-          "count": 1, 
-          "sum": 11, 
-          "average": 11.0
-        }, 
-        "FaithWords": {
-          "count": 11, 
-          "sum": 3207, 
-          "average": 291.54545454545456
-        }, 
-        "Tor Science Fiction": {
-          "count": 1, 
-          "sum": 346, 
-          "average": 346.0
-        }, 
-        "Entangled: Brazen": {
-          "count": 18, 
-          "sum": 3211, 
-          "average": 178.38888888888889
-        }, 
-        "Forever Yours": {
-          "count": 1, 
-          "sum": 13, 
-          "average": 13.0
-        }, 
-        "Piatkus": {
-          "count": 1, 
-          "sum": 355, 
-          "average": 355.0
-        }, 
-        "Palgrave Macmillan": {
-          "count": 26, 
-          "sum": 838, 
-          "average": 32.23076923076923
-        }, 
-        "Broadway Books": {
-          "count": 68, 
-          "sum": 20033, 
-          "average": 294.6029411764706
-        }, 
-        "Random House Books for Young Readers": {
-          "count": 199, 
-          "sum": 15433, 
-          "average": 77.55276381909547
-        }, 
-        "Overlook": {
-          "count": 4, 
-          "sum": 191, 
-          "average": 47.75
-        }, 
-        "Threshold Editions": {
-          "count": 11, 
-          "sum": 3691, 
-          "average": 335.54545454545456
-        }, 
-        "William Morrow": {
-          "count": 72, 
-          "sum": 21728, 
-          "average": 301.77777777777777
-        }, 
-        "Twelve": {
-          "count": 14, 
-          "sum": 4810, 
-          "average": 343.57142857142856
-        }, 
-        "Delta": {
-          "count": 7, 
-          "sum": 2426, 
-          "average": 346.57142857142856
-        }, 
-        "St. Martin's True Crime": {
-          "count": 2, 
-          "sum": 99, 
-          "average": 49.5
-        }, 
-        "Little A": {
-          "count": 1, 
-          "sum": 82, 
-          "average": 82.0
-        }, 
-        "Jove": {
-          "count": 41, 
-          "sum": 10066, 
-          "average": 245.5121951219512
-        }, 
-        "Jet City Comics": {
-          "count": 2, 
-          "sum": 146, 
-          "average": 73.0
-        }, 
-        "Simon Spotlight": {
-          "count": 18, 
-          "sum": 241, 
-          "average": 13.38888888888889
-        }, 
-        "Balzer + Bray": {
-          "count": 11, 
-          "sum": 1048, 
-          "average": 95.27272727272727
-        }, 
-        "Entangled: Indulgence": {
-          "count": 2, 
-          "sum": 136, 
-          "average": 68.0
-        }, 
-        "Dutton Adult": {
-          "count": 23, 
-          "sum": 3867, 
-          "average": 168.1304347826087
-        }, 
-        "Orb Books": {
-          "count": 7, 
-          "sum": 618, 
-          "average": 88.28571428571429
-        }, 
-        "Laurel Leaf": {
-          "count": 8, 
-          "sum": 2668, 
-          "average": 333.5
-        }, 
-        "Aerie": {
-          "count": 1, 
-          "sum": 865, 
-          "average": 865.0
-        }, 
-        "Hudson Street Press": {
-          "count": 3, 
-          "sum": 140, 
-          "average": 46.666666666666664
-        }, 
-        "Back Bay Books": {
-          "count": 10, 
-          "sum": 4222, 
-          "average": 422.2
-        }, 
-        "Times Books": {
-          "count": 16, 
-          "sum": 1301, 
-          "average": 81.3125
-        }, 
-        "HP": {
-          "count": 1, 
-          "sum": 7, 
-          "average": 7.0
-        }, 
-        "Robin Corey Books": {
-          "count": 1, 
-          "sum": 43, 
-          "average": 43.0
-        }, 
-        "LucasBooks": {
-          "count": 69, 
-          "sum": 13516, 
-          "average": 195.8840579710145
-        }, 
-        "Peterson's": {
-          "count": 3, 
-          "sum": 32, 
-          "average": 10.666666666666666
-        }, 
-        "Crown": {
-          "count": 31, 
-          "sum": 9513, 
-          "average": 306.8709677419355
-        }, 
-        "FSG Originals": {
-          "count": 3, 
-          "sum": 448, 
-          "average": 149.33333333333334
-        }, 
-        "Orion": {
-          "count": 2, 
-          "sum": 53, 
-          "average": 26.5
-        }, 
-        "Katherine Tegen Books": {
-          "count": 12, 
-          "sum": 2310, 
-          "average": 192.5
-        }, 
-        "(Single-Author Publisher)": {
-          "count": 3426, 
-          "sum": 211981, 
-          "average": 61.874197314652655
-        }, 
-        "HarperCollins": {
-          "count": 237, 
-          "sum": 38044, 
-          "average": 160.52320675105486
-        }, 
-        "WaterBrook Press": {
-          "count": 19, 
-          "sum": 5048, 
-          "average": 265.6842105263158
-        }, 
-        "Putnam Juvenile": {
-          "count": 10, 
-          "sum": 2464, 
-          "average": 246.4
-        }, 
-        "Harper Design": {
-          "count": 2, 
-          "sum": 94, 
-          "average": 47.0
-        }, 
-        "Loveswept": {
-          "count": 10, 
-          "sum": 1502, 
-          "average": 150.2
-        }, 
-        "Crimeline": {
-          "count": 4, 
-          "sum": 714, 
-          "average": 178.5
-        }, 
-        "Hill and Wang": {
-          "count": 8, 
-          "sum": 548, 
-          "average": 68.5
-        }, 
-        "Delacorte Press": {
-          "count": 46, 
-          "sum": 24032, 
-          "average": 522.4347826086956
-        }, 
-        "Broadside e-books": {
-          "count": 2, 
-          "sum": 524, 
-          "average": 262.0
-        }, 
-        "Wellspring/Ballantine": {
-          "count": 2, 
-          "sum": 129, 
-          "average": 64.5
-        }, 
-        "Philomel": {
-          "count": 6, 
-          "sum": 1152, 
-          "average": 192.0
-        }, 
-        "Center Street": {
-          "count": 10, 
-          "sum": 1558, 
-          "average": 155.8
-        }, 
-        "Margaret K. McElderry Books": {
-          "count": 18, 
-          "sum": 9786, 
-          "average": 543.6666666666666
-        }, 
-        "The Friday Project": {
-          "count": 1, 
-          "sum": 53, 
-          "average": 53.0
-        }, 
-        "Ballantine Books": {
-          "count": 151, 
-          "sum": 33149, 
-          "average": 219.52980132450332
-        }, 
-        "Amistad": {
-          "count": 2, 
-          "sum": 228, 
-          "average": 114.0
-        }, 
-        "Atria Books/Beyond Words": {
-          "count": 6, 
-          "sum": 890, 
-          "average": 148.33333333333334
-        }, 
-        "Grijalbo": {
-          "count": 1, 
-          "sum": 1, 
-          "average": 1.0
-        }, 
-        "Tundra Books": {
-          "count": 2, 
-          "sum": 82, 
-          "average": 41.0
-        }, 
-        "Crown Forum": {
-          "count": 4, 
-          "sum": 1062, 
-          "average": 265.5
-        }, 
-        "Scribner": {
-          "count": 113, 
-          "sum": 37653, 
-          "average": 333.21238938053096
-        }, 
-        "Scientific American / Farrar Straus and Giroux": {
-          "count": 3, 
-          "sum": 127, 
-          "average": 42.333333333333336
-        }, 
-        "Peterson Institute for International Economics": {
-          "count": 1, 
-          "sum": 4, 
-          "average": 4.0
-        }, 
-        "Crown Business": {
-          "count": 54, 
-          "sum": 8491, 
-          "average": 157.24074074074073
-        }, 
-        "Pocket Books/Star Trek": {
-          "count": 56, 
-          "sum": 3275, 
-          "average": 58.482142857142854
-        }, 
-        "Doubleday": {
-          "count": 24, 
-          "sum": 3350, 
-          "average": 139.58333333333334
-        }, 
-        "Delacorte Books for Young Readers": {
-          "count": 20, 
-          "sum": 4493, 
-          "average": 224.65
-        }, 
-        "Henry Holt and Co.": {
-          "count": 42, 
-          "sum": 8885, 
-          "average": 211.54761904761904
-        }, 
-        "Convergent Books": {
-          "count": 1, 
-          "sum": 62, 
-          "average": 62.0
-        }, 
-        "Zonderkidz": {
-          "count": 27, 
-          "sum": 2953, 
-          "average": 109.37037037037037
-        }, 
-        "Papercutz": {
-          "count": 13, 
-          "sum": 136, 
-          "average": 10.461538461538462
-        }, 
-        "Atria Books": {
-          "count": 96, 
-          "sum": 30279, 
-          "average": 315.40625
-        }, 
-        "(Small or Medium Publisher)": {
-          "count": 9107, 
-          "sum": 680543, 
-          "average": 74.72746239156693
-        }, 
-        "Flash Point": {
-          "count": 2, 
-          "sum": 156, 
-          "average": 78.0
-        }, 
-        "Onyx": {
-          "count": 2, 
-          "sum": 177, 
-          "average": 88.5
-        }, 
-        "Dell": {
-          "count": 45, 
-          "sum": 21174, 
-          "average": 470.53333333333336
-        }, 
-        "Atria / 37 Ink": {
-          "count": 2, 
-          "sum": 1917, 
-          "average": 958.5
-        }, 
-        "HarperOne": {
-          "count": 40, 
-          "sum": 6503, 
-          "average": 162.575
-        }, 
-        "Touchstone": {
-          "count": 69, 
-          "sum": 13661, 
-          "average": 197.9855072463768
-        }, 
-        "Watson-Guptill": {
-          "count": 16, 
-          "sum": 658, 
-          "average": 41.125
-        }, 
-        "Princeton Review": {
-          "count": 9, 
-          "sum": 244, 
-          "average": 27.11111111111111
-        }, 
-        "Entangled: Select": {
-          "count": 1, 
-          "sum": 77, 
-          "average": 77.0
-        }, 
-        "Mitchell Beazley": {
-          "count": 1, 
-          "sum": 25, 
-          "average": 25.0
-        }, 
-        "Washington Square Press": {
-          "count": 4, 
-          "sum": 323, 
-          "average": 80.75
-        }, 
-        "Tarcher": {
-          "count": 22, 
-          "sum": 2722, 
-          "average": 123.72727272727273
-        }, 
-        "Galvanized Books": {
-          "count": 1, 
-          "sum": 12, 
-          "average": 12.0
-        }, 
-        "Alpha": {
-          "count": 5, 
-          "sum": 382, 
-          "average": 76.4
-        }, 
-        "Fodor's": {
-          "count": 14, 
-          "sum": 125, 
-          "average": 8.928571428571429
-        }, 
-        "Nan A. Talese": {
-          "count": 5, 
-          "sum": 985, 
-          "average": 197.0
-        }, 
-        "Square Fish": {
-          "count": 3, 
-          "sum": 207, 
-          "average": 69.0
-        }, 
-        "Chicken Soup for the Soul": {
-          "count": 5, 
-          "sum": 590, 
-          "average": 118.0
-        }, 
-        "Ace": {
-          "count": 43, 
-          "sum": 21775, 
-          "average": 506.3953488372093
-        }, 
-        "Prentice Hall Press": {
-          "count": 6, 
-          "sum": 536, 
-          "average": 89.33333333333333
-        }, 
-        "Free Press": {
-          "count": 68, 
-          "sum": 12126, 
-          "average": 178.3235294117647
-        }, 
-        "Rough Guides": {
-          "count": 4, 
-          "sum": 23, 
-          "average": 5.75
-        }, 
-        "Spectra": {
-          "count": 47, 
-          "sum": 13953, 
-          "average": 296.8723404255319
-        }, 
-        "Orbit": {
-          "count": 46, 
-          "sum": 12953, 
-          "average": 281.5869565217391
-        }, 
-        "Spiegel & Grau": {
-          "count": 22, 
-          "sum": 5335, 
-          "average": 242.5
-        }, 
-        "Main Street Books": {
-          "count": 1, 
-          "sum": 309, 
-          "average": 309.0
-        }, 
-        "William Morrow Paperbacks": {
-          "count": 44, 
-          "sum": 9386, 
-          "average": 213.3181818181818
-        }, 
-        "Crossing Press": {
-          "count": 2, 
-          "sum": 119, 
-          "average": 59.5
-        }, 
-        "LB Kids": {
-          "count": 8, 
-          "sum": 104, 
-          "average": 13.0
-        }, 
-        "Fawcett": {
-          "count": 4, 
-          "sum": 308, 
-          "average": 77.0
-        }, 
-        "Sarah Crichton Books": {
-          "count": 7, 
-          "sum": 1444, 
-          "average": 206.28571428571428
-        }, 
-        "Anthony Bourdain/Ecco": {
-          "count": 2, 
-          "sum": 118, 
-          "average": 59.0
-        }, 
-        "Vision": {
-          "count": 4, 
-          "sum": 754, 
-          "average": 188.5
-        }, 
-        "Farrar Straus and Giroux": {
-          "count": 89, 
-          "sum": 16404, 
-          "average": 184.31460674157304
-        }, 
-        "Vintage Espanol": {
-          "count": 7, 
-          "sum": 765, 
-          "average": 109.28571428571429
-        }, 
-        "Holt Paperbacks": {
-          "count": 25, 
-          "sum": 4179, 
-          "average": 167.16
-        }, 
-        "Multnomah Books": {
-          "count": 7, 
-          "sum": 2669, 
-          "average": 381.2857142857143
-        }, 
-        "Grupo Nelson": {
-          "count": 3, 
-          "sum": 73, 
-          "average": 24.333333333333332
-        }, 
-        "Grosset & Dunlap": {
-          "count": 104, 
-          "sum": 3209, 
-          "average": 30.85576923076923
-        }, 
-        "HarperTrue": {
-          "count": 1, 
-          "sum": 41, 
-          "average": 41.0
-        }, 
-        "Business Plus": {
-          "count": 15, 
-          "sum": 2446, 
-          "average": 163.06666666666666
-        }, 
-        "Wendy Lamb Books": {
-          "count": 5, 
-          "sum": 773, 
-          "average": 154.6
-        }, 
-        "Puffin": {
-          "count": 103, 
-          "sum": 15223, 
-          "average": 147.79611650485438
-        }, 
-        "It Books": {
-          "count": 24, 
-          "sum": 4143, 
-          "average": 172.625
-        }, 
-        "World Wrestling Entertainment": {
-          "count": 2, 
-          "sum": 102, 
-          "average": 51.0
-        }, 
-        "Knopf Group E-Books": {
-          "count": 1, 
-          "sum": 11, 
-          "average": 11.0
-        }, 
-        "HarperCollinsChildren'sBooks": {
-          "count": 2, 
-          "sum": 12, 
-          "average": 6.0
-        }, 
-        "Truman Talley Books": {
-          "count": 1, 
-          "sum": 167, 
-          "average": 167.0
-        }, 
-        "Aladdin": {
-          "count": 79, 
-          "sum": 4385, 
-          "average": 55.50632911392405
-        }, 
-        "Random House/Disney": {
-          "count": 13, 
-          "sum": 251, 
-          "average": 19.307692307692307
-        }, 
-        "Razorbill": {
-          "count": 14, 
-          "sum": 5020, 
-          "average": 358.57142857142856
-        }, 
-        "Ten Speed Press": {
-          "count": 41, 
-          "sum": 4194, 
-          "average": 102.29268292682927
-        }, 
-        "DAW": {
-          "count": 14, 
-          "sum": 2507, 
-          "average": 179.07142857142858
-        }, 
-        "The Penguin Press": {
-          "count": 27, 
-          "sum": 4472, 
-          "average": 165.62962962962962
-        }
-      }, 
-      "publishers.[0].statistics.sale price": {
-        "Simon Pulse/Mercury Ink": {
-          "count": 1, 
-          "sum": 10.05, 
-          "average": 10.05
-        }, 
-        "Gallery Books": {
-          "count": 56, 
-          "sum": 499.01000000000005, 
-          "average": 8.910892857142857
-        }, 
-        "Dial": {
-          "count": 10, 
-          "sum": 96.1, 
-          "average": 9.61
-        }, 
-        "McClelland & Stewart": {
-          "count": 1, 
-          "sum": 10.99, 
-          "average": 10.99
-        }, 
-        "Tor Books": {
           "count": 77, 
-          "sum": 578.1000000000001, 
-          "average": 7.507792207792208
-        }, 
-        "Penguin Young Readers": {
-          "count": 1, 
-          "sum": 0.99, 
-          "average": 0.99
-        }, 
-        "ESPN": {
-          "count": 2, 
-          "sum": 24.04, 
-          "average": 12.02
-        }, 
-        "Bantam": {
-          "count": 132, 
-          "sum": 1063.430000000001, 
-          "average": 8.056287878787879
+          "sum": 8769.953999999996, 
+          "average": 113.89550649350649
         }, 
         "Harper": {
-          "count": 55, 
-          "sum": 521.25, 
-          "average": 9.477272727272727
+          "count": 28, 
+          "sum": 6964.331999999999, 
+          "average": 248.72614285714286
         }, 
         "Portfolio": {
-          "count": 81, 
-          "sum": 854.0200000000002, 
-          "average": 10.543456790123457
+          "count": 40, 
+          "sum": 3889.392000000001, 
+          "average": 97.23479999999999
         }, 
         "Plume": {
-          "count": 52, 
-          "sum": 503.5800000000002, 
-          "average": 9.68423076923077
+          "count": 35, 
+          "sum": 3704.6220000000003, 
+          "average": 105.84634285714286
         }, 
         "Jericho Books": {
           "count": 2, 
-          "sum": 20.98, 
-          "average": 10.49
+          "sum": 192.42, 
+          "average": 96.21
         }, 
         "HarperTeen": {
-          "count": 28, 
-          "sum": 206.74000000000004, 
-          "average": 7.383571428571429
+          "count": 15, 
+          "sum": 1415.5140000000001, 
+          "average": 94.3676
         }, 
         "NAL": {
-          "count": 33, 
-          "sum": 293.4100000000001, 
-          "average": 8.891212121212122
+          "count": 20, 
+          "sum": 1650.336, 
+          "average": 82.5168
         }, 
         "Avon Impulse": {
-          "count": 13, 
-          "sum": 22.669999999999995, 
-          "average": 1.743846153846154
+          "count": 9, 
+          "sum": 409.164, 
+          "average": 45.462666666666664
         }, 
         "AmazonEncore": {
-          "count": 10, 
-          "sum": 36.900000000000006, 
-          "average": 3.69
-        }, 
-        "Zondervan/Youth Specialties": {
-          "count": 2, 
-          "sum": 11.100000000000001, 
-          "average": 5.550000000000001
+          "count": 6, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
         "Dial Press Trade Paperback": {
           "count": 2, 
-          "sum": 17.68, 
-          "average": 8.84
+          "sum": 134.67, 
+          "average": 67.335
         }, 
         "Villard": {
-          "count": 6, 
-          "sum": 60.410000000000004, 
-          "average": 10.068333333333333
+          "count": 1, 
+          "sum": 88.368, 
+          "average": 88.368
         }, 
         "Golden/Disney": {
-          "count": 6, 
-          "sum": 18.16, 
-          "average": 3.026666666666667
+          "count": 3, 
+          "sum": 27.54, 
+          "average": 9.18
         }, 
         "RH/Disney": {
-          "count": 7, 
-          "sum": 32.52, 
-          "average": 4.645714285714286
+          "count": 2, 
+          "sum": 76.956, 
+          "average": 38.478
         }, 
         "Hodder & Stoughton": {
           "count": 1, 
-          "sum": 17.98, 
-          "average": 17.98
+          "sum": 64.728, 
+          "average": 64.728
         }, 
         "Newmarket Press": {
-          "count": 2, 
-          "sum": 17.77, 
-          "average": 8.885
+          "count": 1, 
+          "sum": 9.6, 
+          "average": 9.6
         }, 
         "Little Brown and Company": {
-          "count": 141, 
-          "sum": 1275.9700000000014, 
-          "average": 9.049432624113475
+          "count": 67, 
+          "sum": 11808.503999999994, 
+          "average": 176.24632835820893
         }, 
         "Grand Central Life & Style": {
-          "count": 15, 
-          "sum": 176.26000000000002, 
-          "average": 11.750666666666666
+          "count": 10, 
+          "sum": 1865.6039999999998, 
+          "average": 186.56040000000002
         }, 
         "Perigee": {
-          "count": 17, 
-          "sum": 160.04000000000002, 
-          "average": 9.414117647058823
+          "count": 9, 
+          "sum": 777.588, 
+          "average": 86.39866666666666
         }, 
         "Golden Books": {
-          "count": 8, 
-          "sum": 28.47, 
-          "average": 3.55875
+          "count": 3, 
+          "sum": 16.247999999999998, 
+          "average": 5.4159999999999995
         }, 
         "Thomas Dunne Books": {
-          "count": 36, 
-          "sum": 356.31999999999994, 
-          "average": 9.897777777777778
+          "count": 17, 
+          "sum": 1163.6639999999998, 
+          "average": 68.45082352941176
         }, 
         "HarperSport": {
           "count": 2, 
-          "sum": 3.98, 
-          "average": 1.99
-        }, 
-        "Collins Reference": {
-          "count": 1, 
-          "sum": 8.93, 
-          "average": 8.93
+          "sum": 5.97, 
+          "average": 2.985
         }, 
         "Tor Teen": {
           "count": 1, 
-          "sum": 5.74, 
-          "average": 5.74
+          "sum": 44.772, 
+          "average": 44.772
         }, 
         "Crown Archetype": {
-          "count": 28, 
-          "sum": 282.5200000000001, 
-          "average": 10.09
+          "count": 13, 
+          "sum": 838.4880000000002, 
+          "average": 64.49907692307691
         }, 
         "Harper Element": {
-          "count": 20, 
-          "sum": 89.33999999999997, 
-          "average": 4.4670000000000005
+          "count": 8, 
+          "sum": 220.82399999999996, 
+          "average": 27.603
         }, 
         "(Indie Publisher)": {
-          "count": 5637, 
-          "sum": 19247.140000000254, 
-          "average": 3.4144296611672873
+          "count": 2819, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
         "Zondervan": {
-          "count": 65, 
-          "sum": 425.60000000000025, 
-          "average": 6.547692307692308
+          "count": 31, 
+          "sum": 3726.258, 
+          "average": 120.20187096774193
         }, 
         "HarperWave": {
-          "count": 6, 
-          "sum": 71.44, 
-          "average": 11.906666666666666
+          "count": 3, 
+          "sum": 909.198, 
+          "average": 303.066
         }, 
         "Studio": {
           "count": 1, 
-          "sum": 13.0, 
-          "average": 13.0
+          "sum": 39.0, 
+          "average": 39.0
         }, 
         "Bantam Dell": {
           "count": 1, 
-          "sum": 9.99, 
-          "average": 9.99
+          "sum": 47.952, 
+          "average": 47.952
         }, 
         "Pocket Star": {
-          "count": 11, 
-          "sum": 30.99, 
-          "average": 2.8172727272727274
+          "count": 5, 
+          "sum": 274.902, 
+          "average": 54.980399999999996
         }, 
         "Avon": {
-          "count": 25, 
-          "sum": 119.51999999999997, 
-          "average": 4.7808
+          "count": 10, 
+          "sum": 2255.2740000000003, 
+          "average": 225.5274
         }, 
         "Thomas & Mercer": {
-          "count": 102, 
-          "sum": 424.9900000000006, 
-          "average": 4.166568627450981
+          "count": 57, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
         "Thomas Nelson": {
-          "count": 90, 
-          "sum": 824.1200000000005, 
-          "average": 9.156888888888888
+          "count": 58, 
+          "sum": 6721.458000000002, 
+          "average": 115.88720689655172
         }, 
         "Penguin": {
-          "count": 37, 
-          "sum": 283.13, 
-          "average": 7.652162162162162
+          "count": 20, 
+          "sum": 565.056, 
+          "average": 28.2528
         }, 
         "Billboard Books": {
           "count": 2, 
-          "sum": 36.81, 
-          "average": 18.405
-        }, 
-        "HarperBusiness": {
-          "count": 23, 
-          "sum": 264.78, 
-          "average": 11.512173913043478
+          "sum": 22.086, 
+          "average": 11.043
         }, 
         "Simon Pulse": {
-          "count": 13, 
-          "sum": 98.08, 
-          "average": 7.544615384615384
+          "count": 9, 
+          "sum": 565.296, 
+          "average": 62.81066666666667
         }, 
         "Little Brown Books for Young Readers": {
-          "count": 55, 
-          "sum": 379.0500000000002, 
-          "average": 6.891818181818182
+          "count": 33, 
+          "sum": 2812.794, 
+          "average": 85.23618181818182
         }, 
-        "Cash Money Content": {
-          "count": 2, 
-          "sum": 18.880000000000003, 
-          "average": 9.440000000000001
+        "Watson-Guptill": {
+          "count": 8, 
+          "sum": 116.41199999999999, 
+          "average": 14.551499999999999
         }, 
         "Harper Paperbacks": {
-          "count": 5, 
-          "sum": 45.33, 
-          "average": 9.065999999999999
+          "count": 1, 
+          "sum": 19.2, 
+          "average": 19.2
         }, 
         "Simon & Schuster": {
-          "count": 198, 
-          "sum": 2030.4300000000023, 
-          "average": 10.25469696969697
+          "count": 95, 
+          "sum": 10508.381999999998, 
+          "average": 110.61454736842104
         }, 
         "Putnam Adult": {
-          "count": 37, 
-          "sum": 397.60000000000014, 
-          "average": 10.745945945945946
-        }, 
-        "Gallery Books/Karen Hunter Publishing": {
-          "count": 1, 
-          "sum": 10.38, 
-          "average": 10.38
+          "count": 17, 
+          "sum": 4864.938000000001, 
+          "average": 286.17282352941174
         }, 
         "Reagan Arthur Books": {
-          "count": 2, 
-          "sum": 19.98, 
-          "average": 9.99
+          "count": 1, 
+          "sum": 143.856, 
+          "average": 143.856
         }, 
         "William Morrow Impulse": {
-          "count": 2, 
-          "sum": 1.98, 
-          "average": 0.99
+          "count": 1, 
+          "sum": 58.806, 
+          "average": 58.806
         }, 
-        "Two Lions": {
-          "count": 64, 
-          "sum": 192.05000000000007, 
-          "average": 3.00078125
+        "Puffin": {
+          "count": 52, 
+          "sum": 2825.3399999999992, 
+          "average": 54.33346153846154
         }, 
         "Metropolitan Books": {
-          "count": 15, 
-          "sum": 150.23, 
-          "average": 10.015333333333334
+          "count": 7, 
+          "sum": 783.9540000000001, 
+          "average": 111.99342857142858
         }, 
         "Potter Style": {
-          "count": 3, 
-          "sum": 25.82, 
-          "average": 8.606666666666667
+          "count": 2, 
+          "sum": 74.046, 
+          "average": 37.023
         }, 
         "Poppy": {
           "count": 1, 
-          "sum": 2.99, 
-          "average": 2.99
+          "sum": 25.116, 
+          "average": 25.116
         }, 
         "Three Rivers Press": {
-          "count": 21, 
-          "sum": 215.18, 
-          "average": 10.246666666666666
+          "count": 8, 
+          "sum": 393.2819999999999, 
+          "average": 49.16025
         }, 
         "Little Simon": {
-          "count": 2, 
-          "sum": 8.54, 
-          "average": 4.27
-        }, 
-        "Avon Inspire": {
           "count": 1, 
-          "sum": 8.0, 
-          "average": 8.0
-        }, 
-        "St. Martin's Paperbacks": {
-          "count": 18, 
-          "sum": 122.99, 
-          "average": 6.832777777777777
-        }, 
-        "PHILOMEL": {
-          "count": 1, 
-          "sum": 4.26, 
-          "average": 4.26
-        }, 
-        "Celestial Arts": {
-          "count": 5, 
-          "sum": 57.800000000000004, 
-          "average": 11.559999999999999
-        }, 
-        "HarperTorch": {
-          "count": 1, 
-          "sum": 0.99, 
-          "average": 0.99
-        }, 
-        "Entangled: Bliss": {
-          "count": 1, 
-          "sum": 2.99, 
-          "average": 2.99
-        }, 
-        "Debbie Macomber Books": {
-          "count": 2, 
-          "sum": 5.98, 
-          "average": 2.99
-        }, 
-        "Roaring Brook Press": {
-          "count": 7, 
-          "sum": 53.61000000000001, 
-          "average": 7.658571428571428
-        }, 
-        "Sentinel": {
-          "count": 2, 
-          "sum": 22.64, 
-          "average": 11.32
-        }, 
-        "HarperStudio": {
-          "count": 1, 
-          "sum": 8.89, 
-          "average": 8.89
-        }, 
-        "Amazon Publishing": {
-          "count": 21, 
-          "sum": 104.81999999999998, 
-          "average": 4.991428571428572
-        }, 
-        "St. Martin's Press": {
-          "count": 147, 
-          "sum": 1313.3700000000008, 
-          "average": 8.934489795918369
-        }, 
-        "HarperPerennial Classics": {
-          "count": 5, 
-          "sum": 4.95, 
-          "average": 0.99
-        }, 
-        "Pintail": {
-          "count": 1, 
-          "sum": 9.99, 
-          "average": 9.99
-        }, 
-        "Current": {
-          "count": 3, 
-          "sum": 34.97, 
-          "average": 11.656666666666666
-        }, 
-        "HarperCollins e-books": {
-          "count": 378, 
-          "sum": 2893.7099999999946, 
-          "average": 7.655317460317461
-        }, 
-        "Gotham Books": {
-          "count": 27, 
-          "sum": 296.5300000000001, 
-          "average": 10.982592592592594
-        }, 
-        "MTV Books": {
-          "count": 2, 
-          "sum": 17.58, 
-          "average": 8.79
-        }, 
-        "Vintage": {
-          "count": 181, 
-          "sum": 1760.9699999999996, 
-          "average": 9.729116022099447
-        }, 
-        "Clarkson Potter": {
-          "count": 35, 
-          "sum": 467.30000000000007, 
-          "average": 13.351428571428572
-        }, 
-        "Grand Harbor Press": {
-          "count": 3, 
-          "sum": 10.97, 
-          "average": 3.6566666666666667
-        }, 
-        "Harper Thorsons": {
-          "count": 1, 
-          "sum": 6.65, 
-          "average": 6.65
-        }, 
-        "Deepak Chopra": {
-          "count": 3, 
-          "sum": 30.82, 
-          "average": 10.273333333333333
-        }, 
-        "Picador": {
-          "count": 10, 
-          "sum": 97.86, 
-          "average": 9.786
-        }, 
-        "Harmony": {
-          "count": 57, 
-          "sum": 587.9700000000003, 
-          "average": 10.315263157894737
-        }, 
-        "Signet Classic": {
-          "count": 4, 
-          "sum": 22.980000000000004, 
-          "average": 5.745
-        }, 
-        "47North": {
-          "count": 66, 
-          "sum": 274.35000000000025, 
-          "average": 4.156818181818182
-        }, 
-        "HarperPress": {
-          "count": 3, 
-          "sum": 20.66, 
-          "average": 6.886666666666667
-        }, 
-        "Collins": {
-          "count": 8, 
-          "sum": 58.36000000000001, 
-          "average": 7.295
-        }, 
-        "Starscape": {
-          "count": 1, 
-          "sum": 5.12, 
-          "average": 5.12
-        }, 
-        "Atria/Emily Bestler Books": {
-          "count": 7, 
-          "sum": 54.52, 
-          "average": 7.788571428571429
-        }, 
-        "Dragonfly Books": {
-          "count": 1, 
-          "sum": 5.99, 
-          "average": 5.99
-        }, 
-        "Feiwel & Friends": {
-          "count": 9, 
-          "sum": 56.870000000000005, 
-          "average": 6.318888888888889
-        }, 
-        "DK Publishing": {
-          "count": 26, 
-          "sum": 109.93999999999997, 
-          "average": 4.228461538461539
-        }, 
-        "Leer-e": {
-          "count": 1, 
-          "sum": 5.99, 
-          "average": 5.99
-        }, 
-        "Amphoto Books": {
-          "count": 9, 
-          "sum": 137.38, 
-          "average": 15.264444444444443
-        }, 
-        "Skyscape": {
-          "count": 11, 
-          "sum": 44.90000000000001, 
-          "average": 4.081818181818182
-        }, 
-        "Avery": {
-          "count": 15, 
-          "sum": 167.37000000000003, 
-          "average": 11.158
-        }, 
-        "Appetite by Random House": {
-          "count": 1, 
-          "sum": 13.0, 
-          "average": 13.0
-        }, 
-        "Faber & Faber": {
-          "count": 6, 
-          "sum": 56.440000000000005, 
-          "average": 9.406666666666668
-        }, 
-        "AmazonCrossing": {
-          "count": 29, 
-          "sum": 116.72999999999995, 
-          "average": 4.025172413793103
-        }, 
-        "Simon & Schuster Audio": {
-          "count": 1, 
-          "sum": 4.74, 
-          "average": 4.74
-        }, 
-        "Del Rey": {
-          "count": 45, 
-          "sum": 336.9600000000002, 
-          "average": 7.488
-        }, 
-        "Graywolf Press": {
-          "count": 2, 
-          "sum": 11.88, 
-          "average": 5.94
-        }, 
-        "Howard Books": {
-          "count": 20, 
-          "sum": 191.27999999999997, 
-          "average": 9.564
-        }, 
-        "First Second": {
-          "count": 3, 
-          "sum": 28.450000000000003, 
-          "average": 9.483333333333334
-        }, 
-        "Walden Pond Press": {
-          "count": 3, 
-          "sum": 13.950000000000001, 
-          "average": 4.65
-        }, 
-        "Penguin Classic": {
-          "count": 17, 
-          "sum": 157.83999999999997, 
-          "average": 9.284705882352942
-        }, 
-        "Montlake Romance": {
-          "count": 66, 
-          "sum": 245.37000000000026, 
-          "average": 3.7177272727272728
+          "sum": 2.556, 
+          "average": 2.556
         }, 
         "The Dial Press": {
           "count": 2, 
-          "sum": 21.67, 
-          "average": 10.835
+          "sum": 712.8480000000001, 
+          "average": 356.42400000000004
+        }, 
+        "Hudson Street Press": {
+          "count": 1, 
+          "sum": 72.534, 
+          "average": 72.534
+        }, 
+        "St. Martin's Paperbacks": {
+          "count": 9, 
+          "sum": 632.082, 
+          "average": 70.23133333333334
+        }, 
+        "Celestial Arts": {
+          "count": 1, 
+          "sum": 79.128, 
+          "average": 79.128
+        }, 
+        "HarperTorch": {
+          "count": 1, 
+          "sum": 2.376, 
+          "average": 2.376
+        }, 
+        "Entangled: Bliss": {
+          "count": 1, 
+          "sum": 129.168, 
+          "average": 129.168
+        }, 
+        "Debbie Macomber Books": {
+          "count": 1, 
+          "sum": 339.066, 
+          "average": 339.066
+        }, 
+        "Roaring Brook Press": {
+          "count": 3, 
+          "sum": 105.528, 
+          "average": 35.176
+        }, 
+        "Atheneum Books for Young Readers": {
+          "count": 19, 
+          "sum": 578.172, 
+          "average": 30.430105263157895
+        }, 
+        "Pocket Books": {
+          "count": 36, 
+          "sum": 2599.5420000000013, 
+          "average": 72.20949999999999
+        }, 
+        "Amazon Publishing": {
+          "count": 11, 
+          "sum": 0.0, 
+          "average": 0.0
+        }, 
+        "St. Martin's Press": {
+          "count": 84, 
+          "sum": 11600.928000000002, 
+          "average": 138.10628571428572
+        }, 
+        "HarperPerennial Classics": {
+          "count": 2, 
+          "sum": 63.558, 
+          "average": 31.779
+        }, 
+        "Pintail": {
+          "count": 1, 
+          "sum": 629.37, 
+          "average": 629.37
+        }, 
+        "HarperCollins e-books": {
+          "count": 179, 
+          "sum": 11138.436000000002, 
+          "average": 62.22589944134078
+        }, 
+        "Gotham Books": {
+          "count": 11, 
+          "sum": 860.25, 
+          "average": 78.20454545454545
+        }, 
+        "MTV Books": {
+          "count": 2, 
+          "sum": 165.654, 
+          "average": 82.827
+        }, 
+        "Vintage": {
+          "count": 78, 
+          "sum": 5883.923999999995, 
+          "average": 75.43492307692307
+        }, 
+        "Clarkson Potter": {
+          "count": 14, 
+          "sum": 386.72999999999996, 
+          "average": 27.62357142857143
+        }, 
+        "Grand Harbor Press": {
+          "count": 1, 
+          "sum": 0.0, 
+          "average": 0.0
+        }, 
+        "Harper Thorsons": {
+          "count": 1, 
+          "sum": 15.96, 
+          "average": 15.96
+        }, 
+        "Picador": {
+          "count": 4, 
+          "sum": 259.068, 
+          "average": 64.767
+        }, 
+        "Harmony": {
+          "count": 36, 
+          "sum": 4005.744, 
+          "average": 111.27066666666667
+        }, 
+        "Signet Classic": {
+          "count": 3, 
+          "sum": 64.794, 
+          "average": 21.598
+        }, 
+        "47North": {
+          "count": 26, 
+          "sum": 0.0, 
+          "average": 0.0
+        }, 
+        "HarperPress": {
+          "count": 2, 
+          "sum": 22.758000000000003, 
+          "average": 11.379000000000001
+        }, 
+        "Collins": {
+          "count": 5, 
+          "sum": 108.14999999999999, 
+          "average": 21.63
+        }, 
+        "Feiwel & Friends": {
+          "count": 4, 
+          "sum": 424.584, 
+          "average": 106.14599999999999
+        }, 
+        "DK Publishing": {
+          "count": 15, 
+          "sum": 166.95000000000005, 
+          "average": 11.129999999999999
+        }, 
+        "Amphoto Books": {
+          "count": 2, 
+          "sum": 113.88000000000001, 
+          "average": 56.940000000000005
+        }, 
+        "Skyscape": {
+          "count": 6, 
+          "sum": 0.0, 
+          "average": 0.0
+        }, 
+        "Avery": {
+          "count": 10, 
+          "sum": 666.5580000000001, 
+          "average": 66.6558
+        }, 
+        "Faber & Faber": {
+          "count": 4, 
+          "sum": 130.368, 
+          "average": 32.592
+        }, 
+        "AmazonCrossing": {
+          "count": 13, 
+          "sum": 0.0, 
+          "average": 0.0
+        }, 
+        "Simon & Schuster Audio": {
+          "count": 1, 
+          "sum": 56.88, 
+          "average": 56.88
+        }, 
+        "Del Rey": {
+          "count": 23, 
+          "sum": 1672.7699999999998, 
+          "average": 72.7291304347826
+        }, 
+        "Graywolf Press": {
+          "count": 1, 
+          "sum": 77.142, 
+          "average": 77.142
+        }, 
+        "Howard Books": {
+          "count": 10, 
+          "sum": 1298.0880000000002, 
+          "average": 129.8088
+        }, 
+        "First Second": {
+          "count": 2, 
+          "sum": 30.942, 
+          "average": 15.471
+        }, 
+        "FaithWords": {
+          "count": 5, 
+          "sum": 628.344, 
+          "average": 125.66879999999999
+        }, 
+        "Penguin Classic": {
+          "count": 8, 
+          "sum": 336.91800000000006, 
+          "average": 42.11475
+        }, 
+        "Montlake Romance": {
+          "count": 34, 
+          "sum": 0.0, 
+          "average": 0.0
+        }, 
+        "Rough Guides": {
+          "count": 2, 
+          "sum": 40.758, 
+          "average": 20.379
         }, 
         "Modern Library": {
-          "count": 5, 
-          "sum": 69.35, 
-          "average": 13.87
+          "count": 4, 
+          "sum": 301.626, 
+          "average": 75.4065
         }, 
         "Knopf": {
-          "count": 43, 
-          "sum": 505.8599999999999, 
-          "average": 11.764186046511629
+          "count": 23, 
+          "sum": 5565.84, 
+          "average": 241.9930434782609
         }, 
         "Forever": {
-          "count": 18, 
-          "sum": 104.92999999999998, 
-          "average": 5.829444444444444
+          "count": 6, 
+          "sum": 1893.702, 
+          "average": 315.617
         }, 
         "Riverhead": {
-          "count": 46, 
-          "sum": 481.10000000000014, 
-          "average": 10.458695652173914
+          "count": 24, 
+          "sum": 3555.7319999999995, 
+          "average": 148.1555
         }, 
         "Mulholland Books": {
-          "count": 8, 
-          "sum": 83.27000000000001, 
-          "average": 10.40875
+          "count": 4, 
+          "sum": 294.42, 
+          "average": 73.605
         }, 
         "Yearling": {
-          "count": 12, 
-          "sum": 67.33, 
-          "average": 5.610833333333333
+          "count": 4, 
+          "sum": 182.92800000000003, 
+          "average": 45.732
         }, 
         "Hogarth": {
           "count": 1, 
-          "sum": 7.99, 
-          "average": 7.99
+          "sum": 512.958, 
+          "average": 512.958
         }, 
         "Bantam Classics": {
-          "count": 5, 
-          "sum": 16.040000000000003, 
-          "average": 3.2079999999999997
+          "count": 1, 
+          "sum": 9.552, 
+          "average": 9.552
         }, 
         "Potter Craft": {
-          "count": 6, 
-          "sum": 65.8, 
-          "average": 10.966666666666667
+          "count": 4, 
+          "sum": 121.164, 
+          "average": 30.291
         }, 
-        "Atheneum Books for Young Readers": {
-          "count": 36, 
-          "sum": 220.32999999999998, 
-          "average": 6.120277777777778
-        }, 
-        "Golden Guides from St. Martin's Press": {
+        "Sentinel": {
           "count": 1, 
-          "sum": 8.89, 
-          "average": 8.89
+          "sum": 71.94, 
+          "average": 71.94
+        }, 
+        "Atria/Emily Bestler Books": {
+          "count": 3, 
+          "sum": 1275.906, 
+          "average": 425.30199999999996
         }, 
         "Penguin Books": {
-          "count": 144, 
-          "sum": 1494.3700000000001, 
-          "average": 10.377569444444445
-        }, 
-        "CLBusiness": {
-          "count": 1, 
-          "sum": 10.99, 
-          "average": 10.99
+          "count": 72, 
+          "sum": 6625.200000000002, 
+          "average": 92.01666666666667
         }, 
         "Lone Eagle": {
           "count": 1, 
-          "sum": 13.0, 
-          "average": 13.0
+          "sum": 31.2, 
+          "average": 31.2
         }, 
         "Berkley": {
-          "count": 169, 
-          "sum": 1183.9700000000012, 
-          "average": 7.005739644970414
+          "count": 79, 
+          "sum": 11294.393999999998, 
+          "average": 142.96701265822784
         }, 
         "Harper Voyager": {
-          "count": 10, 
-          "sum": 48.370000000000005, 
-          "average": 4.837000000000001
+          "count": 6, 
+          "sum": 500.03400000000005, 
+          "average": 83.339
         }, 
         "Hyperion": {
-          "count": 62, 
-          "sum": 558.2000000000002, 
-          "average": 9.003225806451614
+          "count": 36, 
+          "sum": 3700.086, 
+          "average": 102.78016666666666
         }, 
         "Anchor": {
-          "count": 74, 
-          "sum": 710.0000000000003, 
-          "average": 9.594594594594595
+          "count": 34, 
+          "sum": 2327.6820000000002, 
+          "average": 68.46123529411764
         }, 
-        "Signet": {
-          "count": 63, 
-          "sum": 451.28000000000037, 
-          "average": 7.163174603174603
+        "Touchstone": {
+          "count": 29, 
+          "sum": 2826.1740000000004, 
+          "average": 97.45427586206897
         }, 
         "Forge Books": {
-          "count": 19, 
-          "sum": 151.56000000000003, 
-          "average": 7.976842105263158
+          "count": 8, 
+          "sum": 363.03000000000003, 
+          "average": 45.37875
         }, 
         "Celebra": {
           "count": 2, 
-          "sum": 19.58, 
-          "average": 9.79
+          "sum": 756.894, 
+          "average": 378.447
         }, 
         "Knopf Books for Young Readers": {
-          "count": 30, 
-          "sum": 187.96999999999997, 
-          "average": 6.265666666666666
+          "count": 16, 
+          "sum": 778.1520000000002, 
+          "average": 48.6345
         }, 
-        "William Morrow Cookbooks": {
-          "count": 14, 
-          "sum": 101.44, 
-          "average": 7.2457142857142856
-        }, 
-        "Image": {
-          "count": 7, 
-          "sum": 60.03, 
-          "average": 8.575714285714286
+        "Loveswept": {
+          "count": 9, 
+          "sum": 596.796, 
+          "average": 66.31066666666668
         }, 
         "Roc": {
-          "count": 13, 
-          "sum": 95.64999999999999, 
-          "average": 7.357692307692308
-        }, 
-        "Simon & Schuster/Paula Wiseman Books": {
-          "count": 3, 
-          "sum": 22.140000000000004, 
-          "average": 7.38
+          "count": 5, 
+          "sum": 236.65800000000002, 
+          "average": 47.331599999999995
         }, 
         "St. Martin's Griffin": {
-          "count": 43, 
-          "sum": 366.57999999999987, 
-          "average": 8.525116279069769
+          "count": 23, 
+          "sum": 1536.51, 
+          "average": 66.80478260869565
         }, 
         "Pantheon": {
-          "count": 8, 
-          "sum": 84.53999999999999, 
-          "average": 10.5675
+          "count": 3, 
+          "sum": 530.43, 
+          "average": 176.80999999999997
         }, 
         "Reader's Digest": {
-          "count": 3, 
-          "sum": 21.770000000000003, 
-          "average": 7.256666666666667
+          "count": 2, 
+          "sum": 20.958, 
+          "average": 10.479
         }, 
         "InterMix": {
-          "count": 4, 
-          "sum": 17.490000000000002, 
-          "average": 4.3725000000000005
-        }, 
-        "Pocket Books": {
-          "count": 72, 
-          "sum": 517.8599999999998, 
-          "average": 7.1925
+          "count": 1, 
+          "sum": 56.232, 
+          "average": 56.232
         }, 
         "Witness Impulse": {
-          "count": 12, 
-          "sum": 24.389999999999997, 
-          "average": 2.0325
-        }, 
-        "Ivy Books": {
-          "count": 3, 
-          "sum": 17.97, 
-          "average": 5.989999999999999
+          "count": 7, 
+          "sum": 317.3339999999999, 
+          "average": 45.33342857142857
         }, 
         "Dutton Children's": {
-          "count": 4, 
-          "sum": 30.509999999999998, 
-          "average": 7.6274999999999995
+          "count": 2, 
+          "sum": 569.856, 
+          "average": 284.928
         }, 
         "Speak": {
-          "count": 19, 
-          "sum": 123.6, 
-          "average": 6.5052631578947375
+          "count": 9, 
+          "sum": 3717.18, 
+          "average": 413.02
         }, 
         "Yen Press": {
-          "count": 12, 
-          "sum": 104.7, 
-          "average": 8.725
-        }, 
-        "Random House Reference": {
-          "count": 1, 
-          "sum": 12.99, 
-          "average": 12.99
+          "count": 2, 
+          "sum": 21.576, 
+          "average": 10.788
         }, 
         "Greenwillow Books": {
-          "count": 17, 
-          "sum": 96.08, 
-          "average": 5.651764705882353
+          "count": 8, 
+          "sum": 221.24999999999997, 
+          "average": 27.65625
         }, 
         "Schwartz & Wade": {
-          "count": 2, 
-          "sum": 15.75, 
-          "average": 7.875
+          "count": 1, 
+          "sum": 5.862, 
+          "average": 5.862
         }, 
         "Page Street Publishing": {
           "count": 2, 
-          "sum": 18.880000000000003, 
-          "average": 9.440000000000001
+          "sum": 123.948, 
+          "average": 61.974
         }, 
-        "Island Books": {
+        "Vintage Espanol": {
           "count": 3, 
-          "sum": 17.96, 
-          "average": 5.986666666666667
-        }, 
-        "PSS Juvenile": {
-          "count": 1, 
-          "sum": 5.12, 
-          "average": 5.12
+          "sum": 238.266, 
+          "average": 79.422
         }, 
         "Joe Books": {
-          "count": 3, 
-          "sum": 2.9699999999999998, 
-          "average": 0.9899999999999999
+          "count": 1, 
+          "sum": 7.128, 
+          "average": 7.128
         }, 
         "Viking Adult": {
-          "count": 29, 
-          "sum": 336.7700000000001, 
-          "average": 11.612758620689654
+          "count": 13, 
+          "sum": 1536.138, 
+          "average": 118.16446153846154
         }, 
         "Blue Rider Press": {
-          "count": 8, 
-          "sum": 82.58, 
-          "average": 10.3225
+          "count": 4, 
+          "sum": 1175.1899999999998, 
+          "average": 293.7975
         }, 
         "Thorsons": {
-          "count": 4, 
-          "sum": 33.940000000000005, 
-          "average": 8.485
+          "count": 2, 
+          "sum": 51.204, 
+          "average": 25.602
         }, 
-        "David Fickling Books": {
-          "count": 1, 
-          "sum": 6.92, 
-          "average": 6.92
+        "HarperBusiness": {
+          "count": 10, 
+          "sum": 985.83, 
+          "average": 98.583
         }, 
         "Alfred A. Knopf BFYR": {
-          "count": 4, 
-          "sum": 23.92, 
-          "average": 5.98
+          "count": 3, 
+          "sum": 25.116, 
+          "average": 8.372
         }, 
         "Minotaur Books": {
-          "count": 43, 
-          "sum": 325.47, 
-          "average": 7.569069767441861
+          "count": 19, 
+          "sum": 2758.986000000001, 
+          "average": 145.2097894736842
         }, 
         "Random House Trade Paperbacks": {
-          "count": 30, 
-          "sum": 289.36000000000007, 
-          "average": 9.645333333333333
+          "count": 15, 
+          "sum": 1849.272, 
+          "average": 123.28479999999999
         }, 
         "BradyGames": {
-          "count": 2, 
-          "sum": 15.98, 
-          "average": 7.99
+          "count": 1, 
+          "sum": 19.176, 
+          "average": 19.176
         }, 
         "Renaissance Books": {
           "count": 1, 
-          "sum": 7.59, 
-          "average": 7.59
+          "sum": 54.648, 
+          "average": 54.648
         }, 
         "Harper Perennial": {
-          "count": 20, 
-          "sum": 181.98000000000002, 
-          "average": 9.099
+          "count": 8, 
+          "sum": 574.9499999999999, 
+          "average": 71.86874999999999
         }, 
         "Viking Children's": {
-          "count": 4, 
-          "sum": 38.05, 
-          "average": 9.5125
+          "count": 3, 
+          "sum": 93.71999999999998, 
+          "average": 31.24
         }, 
         "North Point Press": {
-          "count": 5, 
-          "sum": 45.629999999999995, 
-          "average": 9.126000000000001
+          "count": 3, 
+          "sum": 141.738, 
+          "average": 47.246
         }, 
         "Simon & Schuster Books for Young Readers": {
-          "count": 45, 
-          "sum": 324.23999999999995, 
-          "average": 7.205333333333334
+          "count": 22, 
+          "sum": 951.5759999999999, 
+          "average": 43.253454545454545
         }, 
         "Random House": {
-          "count": 81, 
-          "sum": 856.7900000000005, 
-          "average": 10.577654320987653
+          "count": 42, 
+          "sum": 5568.096, 
+          "average": 132.5737142857143
         }, 
         "Schocken": {
-          "count": 4, 
-          "sum": 45.96, 
-          "average": 11.49
+          "count": 3, 
+          "sum": 94.11600000000001, 
+          "average": 31.372
         }, 
         "Meadowbrook": {
-          "count": 3, 
-          "sum": 24.45, 
-          "average": 8.15
+          "count": 2, 
+          "sum": 32.862, 
+          "average": 16.431
         }, 
         "HarperFestival": {
-          "count": 5, 
-          "sum": 22.93, 
-          "average": 4.586
+          "count": 3, 
+          "sum": 86.436, 
+          "average": 28.811999999999998
         }, 
         "Grand Central Publishing": {
-          "count": 94, 
-          "sum": 792.6900000000003, 
-          "average": 8.432872340425533
+          "count": 38, 
+          "sum": 5375.826, 
+          "average": 141.4691052631579
         }, 
         "Zinc Ink": {
           "count": 1, 
-          "sum": 10.99, 
-          "average": 10.99
+          "sum": 26.376, 
+          "average": 26.376
         }, 
         "Entangled: Teen": {
-          "count": 2, 
-          "sum": 8.690000000000001, 
-          "average": 4.345000000000001
-        }, 
-        "Gildan Digital": {
           "count": 1, 
-          "sum": 1.99, 
-          "average": 1.99
+          "sum": 27.312, 
+          "average": 27.312
         }, 
         "Scientific American": {
-          "count": 9, 
-          "sum": 34.11, 
-          "average": 3.79
+          "count": 1, 
+          "sum": 4.548, 
+          "average": 4.548
         }, 
         "Ecco": {
-          "count": 27, 
-          "sum": 275.88, 
-          "average": 10.217777777777778
+          "count": 12, 
+          "sum": 1484.3520000000003, 
+          "average": 123.69599999999998
         }, 
         "Presidio Press": {
-          "count": 4, 
-          "sum": 33.81, 
-          "average": 8.4525
+          "count": 1, 
+          "sum": 237.204, 
+          "average": 237.204
         }, 
         "Ripley Publishing": {
           "count": 4, 
-          "sum": 16.11, 
-          "average": 4.0275
+          "sum": 30.132000000000005, 
+          "average": 7.533
         }, 
         "FENN-M&S": {
           "count": 1, 
-          "sum": 11.99, 
-          "average": 11.99
-        }, 
-        "FaithWords": {
-          "count": 11, 
-          "sum": 94.78999999999999, 
-          "average": 8.617272727272727
-        }, 
-        "Tor Science Fiction": {
-          "count": 1, 
-          "sum": 8.53, 
-          "average": 8.53
+          "sum": 28.776, 
+          "average": 28.776
         }, 
         "Entangled: Brazen": {
-          "count": 18, 
-          "sum": 45.22, 
-          "average": 2.5122222222222224
+          "count": 12, 
+          "sum": 1751.85, 
+          "average": 145.98749999999998
         }, 
-        "Forever Yours": {
-          "count": 1, 
-          "sum": 1.99, 
-          "average": 1.99
+        "LucasBooks": {
+          "count": 41, 
+          "sum": 1599.275999999999, 
+          "average": 39.00673170731707
         }, 
         "Piatkus": {
           "count": 1, 
-          "sum": 6.99, 
-          "average": 6.99
+          "sum": 33.552, 
+          "average": 33.552
         }, 
         "Palgrave Macmillan": {
-          "count": 26, 
-          "sum": 303.17, 
-          "average": 11.660384615384617
+          "count": 11, 
+          "sum": 416.52, 
+          "average": 37.86545454545455
         }, 
         "Broadway Books": {
-          "count": 68, 
-          "sum": 637.9000000000004, 
-          "average": 9.380882352941176
+          "count": 35, 
+          "sum": 4344.521999999999, 
+          "average": 124.1292
         }, 
         "Random House Books for Young Readers": {
-          "count": 199, 
-          "sum": 910.1899999999996, 
-          "average": 4.573819095477387
+          "count": 94, 
+          "sum": 2139.5939999999987, 
+          "average": 22.76163829787234
         }, 
         "Overlook": {
-          "count": 4, 
-          "sum": 40.81, 
-          "average": 10.2025
+          "count": 2, 
+          "sum": 47.688, 
+          "average": 23.844
         }, 
         "Threshold Editions": {
-          "count": 11, 
-          "sum": 113.85999999999999, 
-          "average": 10.350909090909092
+          "count": 6, 
+          "sum": 282.048, 
+          "average": 47.008
         }, 
         "William Morrow": {
-          "count": 72, 
-          "sum": 584.34, 
-          "average": 8.115833333333335
+          "count": 41, 
+          "sum": 8617.140000000001, 
+          "average": 210.1741463414634
         }, 
         "Twelve": {
-          "count": 14, 
-          "sum": 147.40999999999997, 
-          "average": 10.529285714285715
+          "count": 7, 
+          "sum": 499.044, 
+          "average": 71.292
         }, 
         "Delta": {
-          "count": 7, 
-          "sum": 63.9, 
-          "average": 9.12857142857143
+          "count": 2, 
+          "sum": 117.50999999999999, 
+          "average": 58.754999999999995
         }, 
         "St. Martin's True Crime": {
-          "count": 2, 
-          "sum": 13.66, 
-          "average": 6.83
+          "count": 1, 
+          "sum": 45.078, 
+          "average": 45.078
         }, 
         "Little A": {
           "count": 1, 
-          "sum": 5.99, 
-          "average": 5.99
+          "sum": 0.0, 
+          "average": 0.0
         }, 
         "Jove": {
-          "count": 41, 
-          "sum": 291.3600000000002, 
-          "average": 7.106341463414634
+          "count": 20, 
+          "sum": 4554.287999999999, 
+          "average": 227.7144
         }, 
         "Jet City Comics": {
-          "count": 2, 
-          "sum": 15.98, 
-          "average": 7.99
+          "count": 1, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
-        "Simon Spotlight": {
-          "count": 18, 
-          "sum": 81.70999999999998, 
-          "average": 4.539444444444445
+        "Island Books": {
+          "count": 1, 
+          "sum": 197.34, 
+          "average": 197.34
         }, 
         "Balzer + Bray": {
-          "count": 11, 
-          "sum": 74.44, 
-          "average": 6.767272727272727
+          "count": 8, 
+          "sum": 529.4460000000001, 
+          "average": 66.18075
         }, 
         "Entangled: Indulgence": {
           "count": 2, 
-          "sum": 1.98, 
-          "average": 0.99
+          "sum": 130.68, 
+          "average": 65.34
         }, 
         "Dutton Adult": {
-          "count": 23, 
-          "sum": 223.80000000000007, 
-          "average": 9.730434782608697
+          "count": 14, 
+          "sum": 2626.776, 
+          "average": 187.62685714285712
         }, 
         "Orb Books": {
-          "count": 7, 
-          "sum": 58.68, 
-          "average": 8.382857142857143
+          "count": 4, 
+          "sum": 122.68199999999999, 
+          "average": 30.670499999999997
         }, 
         "Laurel Leaf": {
-          "count": 8, 
-          "sum": 44.99000000000001, 
-          "average": 5.62375
+          "count": 5, 
+          "sum": 324.348, 
+          "average": 64.8696
         }, 
         "Aerie": {
           "count": 1, 
-          "sum": 2.84, 
-          "average": 2.84
+          "sum": 22.152, 
+          "average": 22.152
         }, 
-        "Hudson Street Press": {
-          "count": 3, 
-          "sum": 32.97, 
-          "average": 10.99
+        "Current": {
+          "count": 1, 
+          "sum": 21.582, 
+          "average": 21.582
         }, 
         "Back Bay Books": {
-          "count": 10, 
-          "sum": 98.79999999999998, 
-          "average": 9.879999999999999
-        }, 
-        "Times Books": {
-          "count": 16, 
-          "sum": 163.0, 
-          "average": 10.1875
+          "count": 3, 
+          "sum": 743.256, 
+          "average": 247.75199999999998
         }, 
         "HP": {
           "count": 1, 
-          "sum": 16.14, 
-          "average": 16.14
+          "sum": 9.684, 
+          "average": 9.684
         }, 
         "Robin Corey Books": {
           "count": 1, 
-          "sum": 5.99, 
-          "average": 5.99
+          "sum": 7.188, 
+          "average": 7.188
         }, 
-        "LucasBooks": {
-          "count": 69, 
-          "sum": 472.7300000000004, 
-          "average": 6.851159420289855
+        "It Books": {
+          "count": 14, 
+          "sum": 1129.7640000000001, 
+          "average": 80.69742857142856
         }, 
         "Peterson's": {
-          "count": 3, 
-          "sum": 19.97, 
-          "average": 6.656666666666666
+          "count": 2, 
+          "sum": 19.17, 
+          "average": 9.585
+        }, 
+        "Grosset & Dunlap": {
+          "count": 50, 
+          "sum": 848.0820000000002, 
+          "average": 16.96164
         }, 
         "Crown": {
-          "count": 31, 
-          "sum": 316.3500000000001, 
-          "average": 10.20483870967742
+          "count": 11, 
+          "sum": 1171.0679999999998, 
+          "average": 106.46072727272727
         }, 
         "FSG Originals": {
-          "count": 3, 
-          "sum": 20.29, 
-          "average": 6.763333333333333
+          "count": 2, 
+          "sum": 537.966, 
+          "average": 268.983
         }, 
         "Orion": {
-          "count": 2, 
-          "sum": 13.28, 
-          "average": 6.64
+          "count": 1, 
+          "sum": 11.952, 
+          "average": 11.952
         }, 
         "Katherine Tegen Books": {
-          "count": 12, 
-          "sum": 67.74000000000001, 
-          "average": 5.645
+          "count": 7, 
+          "sum": 457.72200000000004, 
+          "average": 65.38885714285715
         }, 
         "(Single-Author Publisher)": {
-          "count": 3426, 
-          "sum": 15870.259999999522, 
-          "average": 4.632300058377116
+          "count": 1757, 
+          "sum": 56680.45800000032, 
+          "average": 32.259793966989186
         }, 
         "HarperCollins": {
-          "count": 237, 
-          "sum": 1375.1400000000008, 
-          "average": 5.802278481012658
+          "count": 123, 
+          "sum": 7901.994000000004, 
+          "average": 64.24385365853658
         }, 
         "WaterBrook Press": {
-          "count": 19, 
-          "sum": 170.99000000000004, 
-          "average": 8.999473684210527
+          "count": 13, 
+          "sum": 1099.3619999999999, 
+          "average": 84.5663076923077
         }, 
         "Putnam Juvenile": {
-          "count": 10, 
-          "sum": 71.00000000000001, 
-          "average": 7.1
-        }, 
-        "Harper Design": {
           "count": 2, 
-          "sum": 32.72, 
-          "average": 16.36
+          "sum": 218.856, 
+          "average": 109.428
         }, 
-        "Loveswept": {
-          "count": 10, 
-          "sum": 23.900000000000006, 
-          "average": 2.39
+        "Image": {
+          "count": 5, 
+          "sum": 136.884, 
+          "average": 27.376799999999996
         }, 
         "Crimeline": {
-          "count": 4, 
-          "sum": 23.92, 
-          "average": 5.98
+          "count": 2, 
+          "sum": 121.992, 
+          "average": 60.996
         }, 
         "Hill and Wang": {
-          "count": 8, 
-          "sum": 70.02000000000001, 
-          "average": 8.752500000000001
+          "count": 1, 
+          "sum": 5.334, 
+          "average": 5.334
         }, 
         "Delacorte Press": {
-          "count": 46, 
-          "sum": 343.00000000000006, 
-          "average": 7.456521739130435
+          "count": 27, 
+          "sum": 7609.872000000002, 
+          "average": 281.84711111111113
         }, 
         "Broadside e-books": {
-          "count": 2, 
-          "sum": 24.509999999999998, 
-          "average": 12.254999999999999
+          "count": 1, 
+          "sum": 16.308, 
+          "average": 16.308
         }, 
         "Wellspring/Ballantine": {
-          "count": 2, 
-          "sum": 23.68, 
-          "average": 11.84
+          "count": 1, 
+          "sum": 28.416, 
+          "average": 28.416
         }, 
         "Philomel": {
-          "count": 6, 
-          "sum": 59.09, 
-          "average": 9.848333333333333
+          "count": 2, 
+          "sum": 117.24, 
+          "average": 58.62
         }, 
         "Center Street": {
-          "count": 10, 
-          "sum": 87.01, 
-          "average": 8.701
+          "count": 3, 
+          "sum": 768.4920000000001, 
+          "average": 256.16400000000004
         }, 
         "Margaret K. McElderry Books": {
-          "count": 18, 
-          "sum": 160.04, 
-          "average": 8.89111111111111
+          "count": 8, 
+          "sum": 2143.3379999999997, 
+          "average": 267.91725
         }, 
         "The Friday Project": {
           "count": 1, 
-          "sum": 1.99, 
-          "average": 1.99
+          "sum": 13.134, 
+          "average": 13.134
         }, 
         "Ballantine Books": {
-          "count": 151, 
-          "sum": 1319.2600000000004, 
-          "average": 8.73682119205298
-        }, 
-        "Amistad": {
-          "count": 2, 
-          "sum": 19.54, 
-          "average": 9.77
+          "count": 71, 
+          "sum": 7641.576, 
+          "average": 107.6278309859155
         }, 
         "Atria Books/Beyond Words": {
-          "count": 6, 
-          "sum": 62.07, 
-          "average": 10.345
-        }, 
-        "Grijalbo": {
-          "count": 1, 
-          "sum": 8.99, 
-          "average": 8.99
+          "count": 2, 
+          "sum": 59.94, 
+          "average": 29.97
         }, 
         "Tundra Books": {
-          "count": 2, 
-          "sum": 11.96, 
-          "average": 5.98
+          "count": 1, 
+          "sum": 14.352, 
+          "average": 14.352
         }, 
         "Crown Forum": {
-          "count": 4, 
-          "sum": 41.580000000000005, 
-          "average": 10.395
+          "count": 2, 
+          "sum": 84.522, 
+          "average": 42.261
         }, 
         "Scribner": {
-          "count": 113, 
-          "sum": 1130.6999999999998, 
-          "average": 10.006194690265486
+          "count": 57, 
+          "sum": 6704.124000000003, 
+          "average": 117.61621052631578
         }, 
         "Scientific American / Farrar Straus and Giroux": {
-          "count": 3, 
-          "sum": 31.68, 
-          "average": 10.56
+          "count": 1, 
+          "sum": 31.95, 
+          "average": 31.95
         }, 
         "Peterson Institute for International Economics": {
           "count": 1, 
-          "sum": 7.99, 
-          "average": 7.99
+          "sum": 33.558, 
+          "average": 33.558
         }, 
         "Crown Business": {
-          "count": 54, 
-          "sum": 595.86, 
-          "average": 11.034444444444444
+          "count": 26, 
+          "sum": 2064.6239999999993, 
+          "average": 79.40861538461537
         }, 
         "Pocket Books/Star Trek": {
-          "count": 56, 
-          "sum": 451.4699999999999, 
-          "average": 8.061964285714286
+          "count": 27, 
+          "sum": 721.3259999999998, 
+          "average": 26.715777777777777
         }, 
         "Doubleday": {
-          "count": 24, 
-          "sum": 270.0300000000001, 
-          "average": 11.25125
+          "count": 18, 
+          "sum": 2438.5560000000005, 
+          "average": 135.47533333333334
         }, 
         "Delacorte Books for Young Readers": {
-          "count": 20, 
-          "sum": 136.42999999999995, 
-          "average": 6.8215
+          "count": 9, 
+          "sum": 670.3199999999999, 
+          "average": 74.47999999999999
         }, 
         "Henry Holt and Co.": {
-          "count": 42, 
-          "sum": 356.38999999999993, 
-          "average": 8.48547619047619
-        }, 
-        "Convergent Books": {
-          "count": 1, 
-          "sum": 7.99, 
-          "average": 7.99
+          "count": 24, 
+          "sum": 2027.964, 
+          "average": 84.49849999999999
         }, 
         "Zonderkidz": {
-          "count": 27, 
-          "sum": 110.57999999999997, 
-          "average": 4.095555555555555
+          "count": 14, 
+          "sum": 214.812, 
+          "average": 15.343714285714286
         }, 
         "Papercutz": {
-          "count": 13, 
-          "sum": 74.14, 
-          "average": 5.703076923076923
+          "count": 4, 
+          "sum": 43.224000000000004, 
+          "average": 10.806000000000001
         }, 
         "Atria Books": {
-          "count": 96, 
-          "sum": 881.7700000000001, 
-          "average": 9.185104166666667
+          "count": 47, 
+          "sum": 6079.662000000001, 
+          "average": 129.35451063829788
         }, 
         "(Small or Medium Publisher)": {
-          "count": 9107, 
-          "sum": 70387.52999999953, 
-          "average": 7.728948061930383
+          "count": 4507, 
+          "sum": 181256.2440000019, 
+          "average": 40.21660616818283
         }, 
         "Flash Point": {
-          "count": 2, 
-          "sum": 14.75, 
-          "average": 7.375
+          "count": 1, 
+          "sum": 67.116, 
+          "average": 67.116
         }, 
         "Onyx": {
-          "count": 2, 
-          "sum": 10.68, 
-          "average": 5.34
+          "count": 1, 
+          "sum": 37.674, 
+          "average": 37.674
         }, 
         "Dell": {
-          "count": 45, 
-          "sum": 298.95000000000016, 
-          "average": 6.643333333333333
+          "count": 21, 
+          "sum": 3836.9879999999994, 
+          "average": 182.71371428571427
         }, 
         "Atria / 37 Ink": {
-          "count": 2, 
-          "sum": 7.21, 
-          "average": 3.605
+          "count": 1, 
+          "sum": 7.128, 
+          "average": 7.128
         }, 
         "HarperOne": {
-          "count": 40, 
-          "sum": 371.03000000000014, 
-          "average": 9.275749999999999
-        }, 
-        "Touchstone": {
-          "count": 69, 
-          "sum": 701.2800000000001, 
-          "average": 10.163478260869566
-        }, 
-        "Watson-Guptill": {
-          "count": 16, 
-          "sum": 205.68000000000004, 
-          "average": 12.855
+          "count": 18, 
+          "sum": 1407.924, 
+          "average": 78.218
         }, 
         "Princeton Review": {
-          "count": 9, 
-          "sum": 99.71, 
-          "average": 11.07888888888889
+          "count": 5, 
+          "sum": 118.704, 
+          "average": 23.7408
         }, 
-        "Entangled: Select": {
-          "count": 1, 
-          "sum": 5.45, 
-          "average": 5.45
+        "DAW": {
+          "count": 7, 
+          "sum": 237.21600000000004, 
+          "average": 33.888
         }, 
-        "Mitchell Beazley": {
+        "Deepak Chopra": {
           "count": 1, 
-          "sum": 4.74, 
-          "average": 4.74
+          "sum": 14.208, 
+          "average": 14.208
         }, 
         "Washington Square Press": {
-          "count": 4, 
-          "sum": 41.77, 
-          "average": 10.442499999999999
+          "count": 2, 
+          "sum": 53.891999999999996, 
+          "average": 26.945999999999998
         }, 
         "Tarcher": {
-          "count": 22, 
-          "sum": 219.88000000000002, 
-          "average": 9.994545454545454
+          "count": 10, 
+          "sum": 620.7059999999999, 
+          "average": 62.0706
         }, 
-        "Galvanized Books": {
-          "count": 1, 
-          "sum": 9.59, 
-          "average": 9.59
+        "Times Books": {
+          "count": 4, 
+          "sum": 164.616, 
+          "average": 41.153999999999996
         }, 
-        "Alpha": {
-          "count": 5, 
-          "sum": 41.73, 
-          "average": 8.346
+        "William Morrow Cookbooks": {
+          "count": 7, 
+          "sum": 192.51600000000002, 
+          "average": 27.502285714285712
         }, 
         "Fodor's": {
-          "count": 14, 
-          "sum": 189.24999999999997, 
-          "average": 13.517857142857142
+          "count": 3, 
+          "sum": 108.27000000000001, 
+          "average": 36.089999999999996
+        }, 
+        "Signet": {
+          "count": 33, 
+          "sum": 5485.901999999997, 
+          "average": 166.23945454545455
         }, 
         "Nan A. Talese": {
-          "count": 5, 
-          "sum": 57.38, 
-          "average": 11.476
+          "count": 3, 
+          "sum": 928.1399999999999, 
+          "average": 309.38
         }, 
         "Square Fish": {
-          "count": 3, 
-          "sum": 17.6, 
-          "average": 5.866666666666667
+          "count": 2, 
+          "sum": 26.016000000000002, 
+          "average": 13.008000000000001
         }, 
         "Chicken Soup for the Soul": {
-          "count": 5, 
-          "sum": 38.650000000000006, 
-          "average": 7.730000000000001
+          "count": 2, 
+          "sum": 17.855999999999998, 
+          "average": 8.927999999999999
         }, 
         "Ace": {
-          "count": 43, 
-          "sum": 301.70000000000016, 
-          "average": 7.0162790697674415
+          "count": 18, 
+          "sum": 2161.65, 
+          "average": 120.09166666666667
         }, 
         "Prentice Hall Press": {
-          "count": 6, 
-          "sum": 95.3, 
-          "average": 15.883333333333333
+          "count": 4, 
+          "sum": 354.39000000000004, 
+          "average": 88.5975
         }, 
         "Free Press": {
-          "count": 68, 
-          "sum": 815.4600000000003, 
-          "average": 11.992058823529412
+          "count": 28, 
+          "sum": 1258.3799999999997, 
+          "average": 44.94214285714286
         }, 
-        "Rough Guides": {
-          "count": 4, 
-          "sum": 45.21000000000001, 
-          "average": 11.3025
+        "World Wrestling Entertainment": {
+          "count": 1, 
+          "sum": 24.588, 
+          "average": 24.588
         }, 
         "Spectra": {
-          "count": 47, 
-          "sum": 306.38000000000017, 
-          "average": 6.5187234042553195
+          "count": 24, 
+          "sum": 1154.4720000000002, 
+          "average": 48.103
         }, 
         "Orbit": {
-          "count": 46, 
-          "sum": 346.65000000000015, 
-          "average": 7.535869565217392
+          "count": 25, 
+          "sum": 2014.3319999999992, 
+          "average": 80.57328000000001
         }, 
         "Spiegel & Grau": {
-          "count": 22, 
-          "sum": 214.43000000000004, 
-          "average": 9.746818181818183
+          "count": 12, 
+          "sum": 1701.264, 
+          "average": 141.77200000000002
         }, 
         "Main Street Books": {
           "count": 1, 
-          "sum": 8.44, 
-          "average": 8.44
+          "sum": 70.896, 
+          "average": 70.896
         }, 
         "William Morrow Paperbacks": {
-          "count": 44, 
-          "sum": 361.51999999999987, 
-          "average": 8.216363636363637
+          "count": 17, 
+          "sum": 1413.9720000000002, 
+          "average": 83.17482352941177
         }, 
         "Crossing Press": {
           "count": 2, 
-          "sum": 22.83, 
-          "average": 11.415
+          "sum": 48.198, 
+          "average": 24.099
         }, 
         "LB Kids": {
-          "count": 8, 
-          "sum": 28.21, 
-          "average": 3.52625
+          "count": 2, 
+          "sum": 23.112000000000002, 
+          "average": 11.556000000000001
         }, 
         "Fawcett": {
-          "count": 4, 
-          "sum": 23.96, 
-          "average": 5.99
+          "count": 1, 
+          "sum": 46.722, 
+          "average": 46.722
         }, 
         "Sarah Crichton Books": {
-          "count": 7, 
-          "sum": 71.35, 
-          "average": 10.192857142857141
-        }, 
-        "Anthony Bourdain/Ecco": {
-          "count": 2, 
-          "sum": 29.729999999999997, 
-          "average": 14.864999999999998
+          "count": 3, 
+          "sum": 683.4300000000001, 
+          "average": 227.80999999999997
         }, 
         "Vision": {
-          "count": 4, 
-          "sum": 27.96, 
-          "average": 6.99
+          "count": 2, 
+          "sum": 327.132, 
+          "average": 163.566
         }, 
         "Farrar Straus and Giroux": {
-          "count": 89, 
-          "sum": 735.3899999999996, 
-          "average": 8.262808988764045
-        }, 
-        "Vintage Espanol": {
-          "count": 7, 
-          "sum": 52.900000000000006, 
-          "average": 7.557142857142858
+          "count": 49, 
+          "sum": 4191.677999999995, 
+          "average": 85.54444897959183
         }, 
         "Holt Paperbacks": {
-          "count": 25, 
-          "sum": 189.16999999999996, 
-          "average": 7.566800000000001
+          "count": 12, 
+          "sum": 934.9440000000001, 
+          "average": 77.91199999999999
         }, 
         "Multnomah Books": {
-          "count": 7, 
-          "sum": 62.489999999999995, 
-          "average": 8.927142857142858
+          "count": 4, 
+          "sum": 579.8280000000001, 
+          "average": 144.957
         }, 
         "Grupo Nelson": {
-          "count": 3, 
-          "sum": 12.97, 
-          "average": 4.323333333333333
+          "count": 2, 
+          "sum": 29.85, 
+          "average": 14.925
         }, 
-        "Grosset & Dunlap": {
-          "count": 104, 
-          "sum": 509.70000000000016, 
-          "average": 4.900961538461538
+        "Simon Spotlight": {
+          "count": 8, 
+          "sum": 109.44000000000001, 
+          "average": 13.68
         }, 
         "HarperTrue": {
           "count": 1, 
-          "sum": 1.99, 
-          "average": 1.99
+          "sum": 112.236, 
+          "average": 112.236
         }, 
         "Business Plus": {
-          "count": 15, 
-          "sum": 161.54999999999995, 
-          "average": 10.770000000000001
+          "count": 9, 
+          "sum": 557.352, 
+          "average": 61.928
         }, 
         "Wendy Lamb Books": {
-          "count": 5, 
-          "sum": 29.84, 
-          "average": 5.968
+          "count": 3, 
+          "sum": 135.708, 
+          "average": 45.236
         }, 
-        "Puffin": {
-          "count": 103, 
-          "sum": 617.8800000000005, 
-          "average": 5.998834951456311
-        }, 
-        "It Books": {
-          "count": 24, 
-          "sum": 216.22000000000006, 
-          "average": 9.009166666666667
-        }, 
-        "World Wrestling Entertainment": {
-          "count": 2, 
-          "sum": 14.52, 
-          "average": 7.26
+        "Two Lions": {
+          "count": 32, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
         "Knopf Group E-Books": {
           "count": 1, 
-          "sum": 14.39, 
-          "average": 14.39
+          "sum": 25.902, 
+          "average": 25.902
         }, 
         "HarperCollinsChildren'sBooks": {
-          "count": 2, 
-          "sum": 10.620000000000001, 
-          "average": 5.3100000000000005
+          "count": 1, 
+          "sum": 2.274, 
+          "average": 2.274
         }, 
         "Truman Talley Books": {
           "count": 1, 
-          "sum": 8.89, 
-          "average": 8.89
+          "sum": 42.672, 
+          "average": 42.672
         }, 
         "Aladdin": {
-          "count": 79, 
-          "sum": 446.0100000000001, 
-          "average": 5.645696202531646
+          "count": 32, 
+          "sum": 697.8840000000004, 
+          "average": 21.808875
         }, 
         "Random House/Disney": {
-          "count": 13, 
-          "sum": 44.28, 
-          "average": 3.4061538461538463
+          "count": 5, 
+          "sum": 39.93, 
+          "average": 7.986
         }, 
         "Razorbill": {
-          "count": 14, 
-          "sum": 108.38, 
-          "average": 7.741428571428571
+          "count": 7, 
+          "sum": 3829.3199999999993, 
+          "average": 547.0457142857143
         }, 
         "Ten Speed Press": {
-          "count": 41, 
-          "sum": 515.87, 
-          "average": 12.58219512195122
-        }, 
-        "DAW": {
-          "count": 14, 
-          "sum": 87.56, 
-          "average": 6.2542857142857144
+          "count": 24, 
+          "sum": 1094.0759999999998, 
+          "average": 45.5865
         }, 
         "The Penguin Press": {
-          "count": 27, 
-          "sum": 315.48000000000013, 
-          "average": 11.684444444444445
+          "count": 11, 
+          "sum": 2009.1, 
+          "average": 182.64545454545453
         }
       }, 
       "publishers.[0].statistics.average rating": {
-        "Simon Pulse/Mercury Ink": {
-          "count": 1, 
-          "sum": 4.81, 
-          "average": 4.81
-        }, 
         "Gallery Books": {
-          "count": 56, 
-          "sum": 242.00000000000003, 
-          "average": 4.321428571428571
+          "count": 30, 
+          "sum": 129.99999999999997, 
+          "average": 4.333333333333333
         }, 
         "Dial": {
-          "count": 10, 
-          "sum": 46.970000000000006, 
-          "average": 4.697
+          "count": 4, 
+          "sum": 18.83, 
+          "average": 4.7075
         }, 
         "McClelland & Stewart": {
           "count": 1, 
@@ -10619,14 +2724,9 @@ publishers_bar = [
           "average": 4.49
         }, 
         "Tor Books": {
-          "count": 77, 
-          "sum": 317.1699999999999, 
-          "average": 4.119090909090909
-        }, 
-        "Penguin Young Readers": {
-          "count": 1, 
-          "sum": 4.32, 
-          "average": 4.32
+          "count": 41, 
+          "sum": 171.59999999999994, 
+          "average": 4.185365853658537
         }, 
         "ESPN": {
           "count": 2, 
@@ -10634,24 +2734,24 @@ publishers_bar = [
           "average": 4.1
         }, 
         "Bantam": {
-          "count": 132, 
-          "sum": 559.6999999999998, 
-          "average": 4.240151515151515
+          "count": 77, 
+          "sum": 327.87999999999994, 
+          "average": 4.258181818181818
         }, 
         "Harper": {
-          "count": 55, 
-          "sum": 228.3000000000001, 
-          "average": 4.150909090909091
+          "count": 28, 
+          "sum": 115.97999999999999, 
+          "average": 4.142142857142857
         }, 
         "Portfolio": {
-          "count": 81, 
-          "sum": 354.79, 
-          "average": 4.380123456790123
+          "count": 40, 
+          "sum": 174.48000000000002, 
+          "average": 4.362
         }, 
         "Plume": {
-          "count": 52, 
-          "sum": 221.62000000000006, 
-          "average": 4.261923076923077
+          "count": 35, 
+          "sum": 147.42000000000004, 
+          "average": 4.212
         }, 
         "Jericho Books": {
           "count": 2, 
@@ -10659,29 +2759,24 @@ publishers_bar = [
           "average": 4.73
         }, 
         "HarperTeen": {
-          "count": 28, 
-          "sum": 125.41, 
-          "average": 4.478928571428571
+          "count": 15, 
+          "sum": 67.1, 
+          "average": 4.473333333333333
         }, 
         "NAL": {
-          "count": 33, 
-          "sum": 144.81, 
-          "average": 4.388181818181819
+          "count": 20, 
+          "sum": 88.35999999999999, 
+          "average": 4.418
         }, 
         "Avon Impulse": {
-          "count": 13, 
-          "sum": 57.27, 
-          "average": 4.405384615384615
+          "count": 9, 
+          "sum": 39.03, 
+          "average": 4.336666666666667
         }, 
         "AmazonEncore": {
-          "count": 10, 
-          "sum": 39.89000000000001, 
-          "average": 3.989
-        }, 
-        "Zondervan/Youth Specialties": {
-          "count": 2, 
-          "sum": 8.14, 
-          "average": 4.07
+          "count": 6, 
+          "sum": 24.380000000000003, 
+          "average": 4.0633333333333335
         }, 
         "Dial Press Trade Paperback": {
           "count": 2, 
@@ -10689,19 +2784,19 @@ publishers_bar = [
           "average": 4.16
         }, 
         "Villard": {
-          "count": 6, 
-          "sum": 26.33, 
-          "average": 4.388333333333333
+          "count": 1, 
+          "sum": 4.36, 
+          "average": 4.36
         }, 
         "Golden/Disney": {
-          "count": 6, 
-          "sum": 27.56, 
-          "average": 4.593333333333333
+          "count": 3, 
+          "sum": 13.670000000000002, 
+          "average": 4.556666666666667
         }, 
         "RH/Disney": {
-          "count": 7, 
-          "sum": 33.74, 
-          "average": 4.82
+          "count": 2, 
+          "sum": 9.66, 
+          "average": 4.83
         }, 
         "Hodder & Stoughton": {
           "count": 1, 
@@ -10709,44 +2804,39 @@ publishers_bar = [
           "average": 3.5
         }, 
         "Newmarket Press": {
-          "count": 2, 
-          "sum": 8.530000000000001, 
-          "average": 4.265000000000001
+          "count": 1, 
+          "sum": 4.4, 
+          "average": 4.4
         }, 
         "Little Brown and Company": {
-          "count": 141, 
-          "sum": 589.1400000000002, 
-          "average": 4.178297872340425
+          "count": 67, 
+          "sum": 283.0599999999999, 
+          "average": 4.224776119402985
         }, 
         "Grand Central Life & Style": {
-          "count": 15, 
-          "sum": 62.37, 
-          "average": 4.1579999999999995
+          "count": 10, 
+          "sum": 42.910000000000004, 
+          "average": 4.2909999999999995
         }, 
         "Perigee": {
-          "count": 17, 
-          "sum": 77.83, 
-          "average": 4.578235294117647
+          "count": 9, 
+          "sum": 41.28, 
+          "average": 4.586666666666667
         }, 
         "Golden Books": {
-          "count": 8, 
-          "sum": 35.809999999999995, 
-          "average": 4.47625
+          "count": 3, 
+          "sum": 13.47, 
+          "average": 4.489999999999999
         }, 
         "Thomas Dunne Books": {
-          "count": 36, 
-          "sum": 159.25999999999996, 
-          "average": 4.4238888888888885
+          "count": 17, 
+          "sum": 76.68, 
+          "average": 4.510588235294118
         }, 
         "HarperSport": {
           "count": 2, 
           "sum": 9.15, 
           "average": 4.575
-        }, 
-        "Collins Reference": {
-          "count": 1, 
-          "sum": 4.63, 
-          "average": 4.63
         }, 
         "Tor Teen": {
           "count": 1, 
@@ -10754,29 +2844,29 @@ publishers_bar = [
           "average": 4.2
         }, 
         "Crown Archetype": {
-          "count": 28, 
-          "sum": 118.36000000000003, 
-          "average": 4.227142857142857
+          "count": 13, 
+          "sum": 57.25, 
+          "average": 4.403846153846154
         }, 
         "Harper Element": {
-          "count": 20, 
-          "sum": 89.7, 
-          "average": 4.485
+          "count": 8, 
+          "sum": 35.26, 
+          "average": 4.4075
         }, 
         "(Indie Publisher)": {
-          "count": 5637, 
-          "sum": 24419.06999999992, 
-          "average": 4.331926556679084
+          "count": 2819, 
+          "sum": 12186.289999999959, 
+          "average": 4.322912380276694
         }, 
         "Zondervan": {
-          "count": 65, 
-          "sum": 290.65000000000003, 
-          "average": 4.4715384615384615
+          "count": 31, 
+          "sum": 137.7, 
+          "average": 4.441935483870967
         }, 
         "HarperWave": {
-          "count": 6, 
-          "sum": 27.06, 
-          "average": 4.510000000000001
+          "count": 3, 
+          "sum": 13.39, 
+          "average": 4.463333333333334
         }, 
         "Studio": {
           "count": 1, 
@@ -10789,99 +2879,89 @@ publishers_bar = [
           "average": 4.11
         }, 
         "Pocket Star": {
-          "count": 11, 
-          "sum": 46.9, 
-          "average": 4.263636363636364
+          "count": 5, 
+          "sum": 21.720000000000002, 
+          "average": 4.343999999999999
         }, 
         "Avon": {
-          "count": 25, 
-          "sum": 105.94000000000001, 
-          "average": 4.2376
+          "count": 10, 
+          "sum": 42.22, 
+          "average": 4.2219999999999995
         }, 
         "Thomas & Mercer": {
-          "count": 102, 
-          "sum": 424.7200000000001, 
-          "average": 4.163921568627451
+          "count": 57, 
+          "sum": 237.65, 
+          "average": 4.169298245614035
         }, 
         "Thomas Nelson": {
-          "count": 90, 
-          "sum": 407.5600000000002, 
-          "average": 4.528444444444444
+          "count": 58, 
+          "sum": 264.04, 
+          "average": 4.552413793103448
         }, 
         "Penguin": {
-          "count": 37, 
-          "sum": 160.43000000000004, 
-          "average": 4.335945945945946
+          "count": 20, 
+          "sum": 86.25, 
+          "average": 4.3125
         }, 
         "Billboard Books": {
           "count": 2, 
           "sum": 8.3, 
           "average": 4.15
         }, 
-        "HarperBusiness": {
-          "count": 23, 
-          "sum": 101.29, 
-          "average": 4.403913043478261
-        }, 
         "Simon Pulse": {
-          "count": 13, 
-          "sum": 55.53999999999999, 
-          "average": 4.272307692307693
+          "count": 9, 
+          "sum": 37.739999999999995, 
+          "average": 4.193333333333333
         }, 
         "Little Brown Books for Young Readers": {
-          "count": 55, 
-          "sum": 252.44000000000003, 
-          "average": 4.589818181818182
+          "count": 33, 
+          "sum": 151.14000000000001, 
+          "average": 4.579999999999999
         }, 
-        "Cash Money Content": {
-          "count": 2, 
-          "sum": 8.98, 
-          "average": 4.49
+        "Watson-Guptill": {
+          "count": 8, 
+          "sum": 35.559999999999995, 
+          "average": 4.445
         }, 
         "Harper Paperbacks": {
-          "count": 5, 
-          "sum": 21.1, 
-          "average": 4.220000000000001
+          "count": 1, 
+          "sum": 4.66, 
+          "average": 4.66
         }, 
         "Simon & Schuster": {
-          "count": 198, 
-          "sum": 842.6499999999996, 
-          "average": 4.25580808080808
+          "count": 95, 
+          "sum": 406.1, 
+          "average": 4.274736842105264
         }, 
         "Putnam Adult": {
-          "count": 37, 
-          "sum": 151.74, 
-          "average": 4.101081081081081
-        }, 
-        "Gallery Books/Karen Hunter Publishing": {
-          "count": 1, 
-          "sum": 3.08, 
-          "average": 3.08
+          "count": 17, 
+          "sum": 71.5, 
+          "average": 4.205882352941177
         }, 
         "Reagan Arthur Books": {
-          "count": 2, 
-          "sum": 8.780000000000001, 
-          "average": 4.390000000000001
-        }, 
-        "William Morrow Impulse": {
-          "count": 2, 
-          "sum": 8.34, 
-          "average": 4.17
-        }, 
-        "Two Lions": {
-          "count": 64, 
-          "sum": 282.24000000000007, 
+          "count": 1, 
+          "sum": 4.41, 
           "average": 4.41
         }, 
+        "William Morrow Impulse": {
+          "count": 1, 
+          "sum": 3.92, 
+          "average": 3.92
+        }, 
+        "Puffin": {
+          "count": 52, 
+          "sum": 236.67000000000007, 
+          "average": 4.551346153846153
+        }, 
         "Metropolitan Books": {
-          "count": 15, 
-          "sum": 64.42, 
-          "average": 4.294666666666667
+          "count": 7, 
+          "sum": 30.239999999999995, 
+          "average": 4.319999999999999
         }, 
         "Potter Style": {
-          "count": 3, 
-          "sum": 11.93, 
-          "average": 3.9766666666666666
+          "count": 2, 
+          "sum": 8.32, 
+          "average": 4.16
         }, 
         "Poppy": {
           "count": 1, 
@@ -10889,34 +2969,34 @@ publishers_bar = [
           "average": 4.19
         }, 
         "Three Rivers Press": {
-          "count": 21, 
-          "sum": 90.82000000000001, 
-          "average": 4.324761904761904
+          "count": 8, 
+          "sum": 34.96, 
+          "average": 4.37
         }, 
         "Little Simon": {
-          "count": 2, 
-          "sum": 8.84, 
-          "average": 4.42
-        }, 
-        "Avon Inspire": {
           "count": 1, 
-          "sum": 4.75, 
-          "average": 4.75
+          "sum": 4.83, 
+          "average": 4.83
+        }, 
+        "The Dial Press": {
+          "count": 2, 
+          "sum": 8.48, 
+          "average": 4.24
+        }, 
+        "Hudson Street Press": {
+          "count": 1, 
+          "sum": 4.43, 
+          "average": 4.43
         }, 
         "St. Martin's Paperbacks": {
-          "count": 18, 
-          "sum": 73.35000000000001, 
-          "average": 4.074999999999999
-        }, 
-        "PHILOMEL": {
-          "count": 1, 
-          "sum": 4.39, 
-          "average": 4.39
+          "count": 9, 
+          "sum": 36.059999999999995, 
+          "average": 4.006666666666667
         }, 
         "Celestial Arts": {
-          "count": 5, 
-          "sum": 21.57, 
-          "average": 4.314
+          "count": 1, 
+          "sum": 4.45, 
+          "average": 4.45
         }, 
         "HarperTorch": {
           "count": 1, 
@@ -10929,59 +3009,54 @@ publishers_bar = [
           "average": 4.31
         }, 
         "Debbie Macomber Books": {
-          "count": 2, 
-          "sum": 9.1, 
-          "average": 4.55
+          "count": 1, 
+          "sum": 4.1, 
+          "average": 4.1
         }, 
         "Roaring Brook Press": {
-          "count": 7, 
-          "sum": 30.95, 
-          "average": 4.421428571428572
+          "count": 3, 
+          "sum": 13.920000000000002, 
+          "average": 4.64
         }, 
-        "Sentinel": {
-          "count": 2, 
-          "sum": 8.36, 
-          "average": 4.18
+        "Atheneum Books for Young Readers": {
+          "count": 19, 
+          "sum": 83.77000000000002, 
+          "average": 4.408947368421052
         }, 
-        "HarperStudio": {
-          "count": 1, 
-          "sum": 4.42, 
-          "average": 4.42
+        "Pocket Books": {
+          "count": 36, 
+          "sum": 151.48999999999998, 
+          "average": 4.208055555555556
         }, 
         "Amazon Publishing": {
-          "count": 21, 
-          "sum": 89.13, 
-          "average": 4.244285714285714
+          "count": 11, 
+          "sum": 45.769999999999996, 
+          "average": 4.16090909090909
         }, 
         "St. Martin's Press": {
-          "count": 147, 
-          "sum": 628.0799999999999, 
-          "average": 4.27265306122449
+          "count": 84, 
+          "sum": 356.82000000000005, 
+          "average": 4.247857142857143
         }, 
         "HarperPerennial Classics": {
-          "count": 5, 
-          "sum": 21.84, 
-          "average": 4.368
+          "count": 2, 
+          "sum": 8.37, 
+          "average": 4.185
         }, 
         "Pintail": {
           "count": 1, 
           "sum": 3.75, 
           "average": 3.75
         }, 
-        "Current": {
-          "count": 3, 
-          "sum": 12.82, 
-          "average": 4.273333333333333
-        }, 
         "HarperCollins e-books": {
-          "count": 378, 
-          "sum": 1602.3400000000001, 
-          "average": 4.238994708994709
+          "count": 179, 
+          "sum": 755.9599999999998, 
+          "average": 4.223240223463687
         }, 
         "Gotham Books": {
-          "count": 27, 
-          "sum": 117.72999999999999, 
-          "average": 4.3603703703703705
+          "count": 11, 
+          "sum": 47.03999999999999, 
+          "average": 4.276363636363636
         }, 
         "MTV Books": {
           "count": 2, 
@@ -10989,119 +3064,89 @@ publishers_bar = [
           "average": 4.65
         }, 
         "Vintage": {
-          "count": 181, 
-          "sum": 764.0600000000003, 
-          "average": 4.221325966850828
+          "count": 78, 
+          "sum": 324.4, 
+          "average": 4.158974358974358
         }, 
         "Clarkson Potter": {
-          "count": 35, 
-          "sum": 155.54, 
-          "average": 4.444
+          "count": 14, 
+          "sum": 62.83, 
+          "average": 4.487857142857143
         }, 
         "Grand Harbor Press": {
-          "count": 3, 
-          "sum": 12.84, 
-          "average": 4.28
+          "count": 1, 
+          "sum": 4.31, 
+          "average": 4.31
         }, 
         "Harper Thorsons": {
           "count": 1, 
           "sum": 4.42, 
           "average": 4.42
         }, 
-        "Deepak Chopra": {
-          "count": 3, 
-          "sum": 13.830000000000002, 
-          "average": 4.61
-        }, 
         "Picador": {
-          "count": 10, 
-          "sum": 38.58, 
-          "average": 3.8579999999999997
+          "count": 4, 
+          "sum": 15.309999999999999, 
+          "average": 3.8275
         }, 
         "Harmony": {
-          "count": 57, 
-          "sum": 250.1000000000001, 
-          "average": 4.387719298245614
+          "count": 36, 
+          "sum": 157.44000000000003, 
+          "average": 4.373333333333333
         }, 
         "Signet Classic": {
-          "count": 4, 
-          "sum": 17.490000000000002, 
-          "average": 4.3725000000000005
+          "count": 3, 
+          "sum": 13.07, 
+          "average": 4.3566666666666665
         }, 
         "47North": {
-          "count": 66, 
-          "sum": 276.1799999999999, 
-          "average": 4.184545454545455
+          "count": 26, 
+          "sum": 108.86000000000003, 
+          "average": 4.186923076923077
         }, 
         "HarperPress": {
-          "count": 3, 
-          "sum": 12.86, 
-          "average": 4.286666666666666
+          "count": 2, 
+          "sum": 8.27, 
+          "average": 4.135
         }, 
         "Collins": {
-          "count": 8, 
-          "sum": 34.26, 
-          "average": 4.2825
-        }, 
-        "Starscape": {
-          "count": 1, 
-          "sum": 4.77, 
-          "average": 4.77
-        }, 
-        "Atria/Emily Bestler Books": {
-          "count": 7, 
-          "sum": 28.020000000000003, 
-          "average": 4.002857142857143
-        }, 
-        "Dragonfly Books": {
-          "count": 1, 
-          "sum": 4.4, 
-          "average": 4.4
+          "count": 5, 
+          "sum": 22.009999999999998, 
+          "average": 4.401999999999999
         }, 
         "Feiwel & Friends": {
-          "count": 9, 
-          "sum": 40.93, 
-          "average": 4.547777777777778
+          "count": 4, 
+          "sum": 18.24, 
+          "average": 4.5600000000000005
         }, 
         "DK Publishing": {
-          "count": 26, 
-          "sum": 114.26, 
-          "average": 4.394615384615385
-        }, 
-        "Leer-e": {
-          "count": 1, 
-          "sum": 4.64, 
-          "average": 4.64
+          "count": 15, 
+          "sum": 65.62, 
+          "average": 4.374666666666667
         }, 
         "Amphoto Books": {
-          "count": 9, 
-          "sum": 41.57000000000001, 
-          "average": 4.618888888888889
+          "count": 2, 
+          "sum": 9.32, 
+          "average": 4.66
         }, 
         "Skyscape": {
-          "count": 11, 
-          "sum": 47.58, 
-          "average": 4.325454545454545
+          "count": 6, 
+          "sum": 25.43, 
+          "average": 4.238333333333333
         }, 
         "Avery": {
-          "count": 15, 
-          "sum": 66.75999999999999, 
-          "average": 4.450666666666667
-        }, 
-        "Appetite by Random House": {
-          "count": 1, 
-          "sum": 4.86, 
-          "average": 4.86
+          "count": 10, 
+          "sum": 43.96, 
+          "average": 4.396
         }, 
         "Faber & Faber": {
-          "count": 6, 
-          "sum": 26.680000000000003, 
-          "average": 4.446666666666666
+          "count": 4, 
+          "sum": 18.22, 
+          "average": 4.555
         }, 
         "AmazonCrossing": {
-          "count": 29, 
-          "sum": 111.94999999999999, 
-          "average": 3.860344827586207
+          "count": 13, 
+          "sum": 49.98, 
+          "average": 3.8446153846153845
         }, 
         "Simon & Schuster Audio": {
           "count": 1, 
@@ -11109,74 +3154,74 @@ publishers_bar = [
           "average": 3.2
         }, 
         "Del Rey": {
-          "count": 45, 
-          "sum": 185.32000000000005, 
-          "average": 4.118222222222222
+          "count": 23, 
+          "sum": 93.9, 
+          "average": 4.0826086956521745
         }, 
         "Graywolf Press": {
-          "count": 2, 
-          "sum": 8.559999999999999, 
-          "average": 4.279999999999999
+          "count": 1, 
+          "sum": 4.31, 
+          "average": 4.31
         }, 
         "Howard Books": {
-          "count": 20, 
-          "sum": 92.55000000000001, 
-          "average": 4.6274999999999995
+          "count": 10, 
+          "sum": 46.88, 
+          "average": 4.688000000000001
         }, 
         "First Second": {
-          "count": 3, 
-          "sum": 13.190000000000001, 
-          "average": 4.396666666666667
+          "count": 2, 
+          "sum": 8.82, 
+          "average": 4.41
         }, 
-        "Walden Pond Press": {
-          "count": 3, 
-          "sum": 13.18, 
-          "average": 4.3933333333333335
+        "FaithWords": {
+          "count": 5, 
+          "sum": 23.47, 
+          "average": 4.694
         }, 
         "Penguin Classic": {
-          "count": 17, 
-          "sum": 73.22999999999999, 
-          "average": 4.307647058823529
+          "count": 8, 
+          "sum": 34.09, 
+          "average": 4.26125
         }, 
         "Montlake Romance": {
-          "count": 66, 
-          "sum": 283.7900000000001, 
-          "average": 4.299848484848485
+          "count": 34, 
+          "sum": 146.86, 
+          "average": 4.319411764705883
         }, 
-        "The Dial Press": {
+        "Rough Guides": {
           "count": 2, 
-          "sum": 8.48, 
-          "average": 4.24
+          "sum": 8.77, 
+          "average": 4.385
         }, 
         "Modern Library": {
-          "count": 5, 
-          "sum": 22.159999999999997, 
-          "average": 4.432
+          "count": 4, 
+          "sum": 17.57, 
+          "average": 4.3925
         }, 
         "Knopf": {
-          "count": 43, 
-          "sum": 183.23000000000002, 
-          "average": 4.261162790697674
+          "count": 23, 
+          "sum": 98.80000000000001, 
+          "average": 4.2956521739130435
         }, 
         "Forever": {
-          "count": 18, 
-          "sum": 81.27999999999999, 
-          "average": 4.515555555555555
+          "count": 6, 
+          "sum": 27.58, 
+          "average": 4.596666666666667
         }, 
         "Riverhead": {
-          "count": 46, 
-          "sum": 197.23999999999998, 
-          "average": 4.287826086956522
+          "count": 24, 
+          "sum": 104.11, 
+          "average": 4.337916666666667
         }, 
         "Mulholland Books": {
-          "count": 8, 
-          "sum": 33.06, 
-          "average": 4.1325
+          "count": 4, 
+          "sum": 17.130000000000003, 
+          "average": 4.282500000000001
         }, 
         "Yearling": {
-          "count": 12, 
-          "sum": 55.78, 
-          "average": 4.648333333333333
+          "count": 4, 
+          "sum": 18.93, 
+          "average": 4.7325
         }, 
         "Hogarth": {
           "count": 1, 
@@ -11184,34 +3229,29 @@ publishers_bar = [
           "average": 3.41
         }, 
         "Bantam Classics": {
-          "count": 5, 
-          "sum": 21.85, 
-          "average": 4.37
+          "count": 1, 
+          "sum": 4.32, 
+          "average": 4.32
         }, 
         "Potter Craft": {
-          "count": 6, 
-          "sum": 27.799999999999997, 
-          "average": 4.633333333333334
+          "count": 4, 
+          "sum": 18.740000000000002, 
+          "average": 4.6850000000000005
         }, 
-        "Atheneum Books for Young Readers": {
-          "count": 36, 
-          "sum": 161.01, 
-          "average": 4.4725
-        }, 
-        "Golden Guides from St. Martin's Press": {
+        "Sentinel": {
           "count": 1, 
-          "sum": 4.39, 
-          "average": 4.39
+          "sum": 3.81, 
+          "average": 3.81
+        }, 
+        "Atria/Emily Bestler Books": {
+          "count": 3, 
+          "sum": 12.61, 
+          "average": 4.203333333333333
         }, 
         "Penguin Books": {
-          "count": 144, 
-          "sum": 611.7599999999999, 
-          "average": 4.248333333333333
-        }, 
-        "CLBusiness": {
-          "count": 1, 
-          "sum": 4.16, 
-          "average": 4.16
+          "count": 72, 
+          "sum": 306.31, 
+          "average": 4.254305555555556
         }, 
         "Lone Eagle": {
           "count": 1, 
@@ -11219,34 +3259,34 @@ publishers_bar = [
           "average": 4.28
         }, 
         "Berkley": {
-          "count": 169, 
-          "sum": 699.4399999999999, 
-          "average": 4.138698224852071
+          "count": 79, 
+          "sum": 326.8999999999999, 
+          "average": 4.137974683544304
         }, 
         "Harper Voyager": {
-          "count": 10, 
-          "sum": 43.709999999999994, 
-          "average": 4.371
+          "count": 6, 
+          "sum": 26.349999999999998, 
+          "average": 4.391666666666667
         }, 
         "Hyperion": {
-          "count": 62, 
-          "sum": 271.56999999999994, 
-          "average": 4.38016129032258
+          "count": 36, 
+          "sum": 156.42999999999998, 
+          "average": 4.345277777777778
         }, 
         "Anchor": {
-          "count": 74, 
-          "sum": 313.13999999999993, 
-          "average": 4.231621621621621
+          "count": 34, 
+          "sum": 141.23000000000002, 
+          "average": 4.153823529411764
         }, 
-        "Signet": {
-          "count": 63, 
-          "sum": 267.3500000000001, 
-          "average": 4.243650793650794
+        "Touchstone": {
+          "count": 29, 
+          "sum": 127.48000000000003, 
+          "average": 4.395862068965517
         }, 
         "Forge Books": {
-          "count": 19, 
-          "sum": 80.33999999999999, 
-          "average": 4.228421052631579
+          "count": 8, 
+          "sum": 32.61, 
+          "average": 4.07625
         }, 
         "Celebra": {
           "count": 2, 
@@ -11254,154 +3294,124 @@ publishers_bar = [
           "average": 4.675
         }, 
         "Knopf Books for Young Readers": {
-          "count": 30, 
-          "sum": 134.29000000000002, 
-          "average": 4.476333333333333
+          "count": 16, 
+          "sum": 71.74999999999999, 
+          "average": 4.484375
         }, 
-        "William Morrow Cookbooks": {
-          "count": 14, 
-          "sum": 61.99000000000001, 
-          "average": 4.427857142857143
-        }, 
-        "Image": {
-          "count": 7, 
-          "sum": 31.98, 
-          "average": 4.5685714285714285
+        "Loveswept": {
+          "count": 9, 
+          "sum": 39.67999999999999, 
+          "average": 4.408888888888889
         }, 
         "Roc": {
-          "count": 13, 
-          "sum": 51.75, 
-          "average": 3.980769230769231
-        }, 
-        "Simon & Schuster/Paula Wiseman Books": {
-          "count": 3, 
-          "sum": 14.27, 
-          "average": 4.756666666666667
+          "count": 5, 
+          "sum": 20.6, 
+          "average": 4.12
         }, 
         "St. Martin's Griffin": {
-          "count": 43, 
-          "sum": 187.48, 
-          "average": 4.359999999999999
+          "count": 23, 
+          "sum": 101.77, 
+          "average": 4.424782608695652
         }, 
         "Pantheon": {
-          "count": 8, 
-          "sum": 34.379999999999995, 
-          "average": 4.2975
+          "count": 3, 
+          "sum": 13.129999999999999, 
+          "average": 4.376666666666666
         }, 
         "Reader's Digest": {
-          "count": 3, 
-          "sum": 13.84, 
-          "average": 4.613333333333333
+          "count": 2, 
+          "sum": 8.95, 
+          "average": 4.475
         }, 
         "InterMix": {
-          "count": 4, 
-          "sum": 17.34, 
-          "average": 4.335
-        }, 
-        "Pocket Books": {
-          "count": 72, 
-          "sum": 300.7099999999999, 
-          "average": 4.176527777777777
+          "count": 1, 
+          "sum": 4.48, 
+          "average": 4.48
         }, 
         "Witness Impulse": {
-          "count": 12, 
-          "sum": 51.959999999999994, 
-          "average": 4.33
-        }, 
-        "Ivy Books": {
-          "count": 3, 
-          "sum": 13.5, 
-          "average": 4.5
+          "count": 7, 
+          "sum": 31.14, 
+          "average": 4.448571428571428
         }, 
         "Dutton Children's": {
-          "count": 4, 
-          "sum": 18.53, 
-          "average": 4.6325
+          "count": 2, 
+          "sum": 9.21, 
+          "average": 4.605
         }, 
         "Speak": {
-          "count": 19, 
-          "sum": 82.49, 
-          "average": 4.341578947368421
+          "count": 9, 
+          "sum": 38.58, 
+          "average": 4.286666666666666
         }, 
         "Yen Press": {
-          "count": 12, 
-          "sum": 54.05000000000001, 
-          "average": 4.504166666666666
-        }, 
-        "Random House Reference": {
-          "count": 1, 
-          "sum": 4.53, 
-          "average": 4.53
+          "count": 2, 
+          "sum": 8.95, 
+          "average": 4.475
         }, 
         "Greenwillow Books": {
-          "count": 17, 
-          "sum": 77.00999999999999, 
-          "average": 4.53
+          "count": 8, 
+          "sum": 36.83, 
+          "average": 4.60375
         }, 
         "Schwartz & Wade": {
-          "count": 2, 
-          "sum": 9.49, 
-          "average": 4.745
+          "count": 1, 
+          "sum": 4.91, 
+          "average": 4.91
         }, 
         "Page Street Publishing": {
           "count": 2, 
           "sum": 9.280000000000001, 
           "average": 4.640000000000001
         }, 
-        "Island Books": {
+        "Vintage Espanol": {
           "count": 3, 
-          "sum": 13.600000000000001, 
-          "average": 4.533333333333333
-        }, 
-        "PSS Juvenile": {
-          "count": 1, 
-          "sum": 4.59, 
-          "average": 4.59
+          "sum": 13.09, 
+          "average": 4.363333333333333
         }, 
         "Joe Books": {
-          "count": 3, 
-          "sum": 13.88, 
-          "average": 4.626666666666666
+          "count": 1, 
+          "sum": 4.83, 
+          "average": 4.83
         }, 
         "Viking Adult": {
-          "count": 29, 
-          "sum": 126.42, 
-          "average": 4.359310344827586
+          "count": 13, 
+          "sum": 57.5, 
+          "average": 4.423076923076923
         }, 
         "Blue Rider Press": {
-          "count": 8, 
-          "sum": 34.65, 
-          "average": 4.33125
+          "count": 4, 
+          "sum": 16.85, 
+          "average": 4.2125
         }, 
         "Thorsons": {
-          "count": 4, 
-          "sum": 17.95, 
-          "average": 4.4875
+          "count": 2, 
+          "sum": 9.469999999999999, 
+          "average": 4.734999999999999
         }, 
-        "David Fickling Books": {
-          "count": 1, 
-          "sum": 4.39, 
-          "average": 4.39
+        "HarperBusiness": {
+          "count": 10, 
+          "sum": 44.239999999999995, 
+          "average": 4.424
         }, 
         "Alfred A. Knopf BFYR": {
-          "count": 4, 
-          "sum": 19.03, 
-          "average": 4.7575
+          "count": 3, 
+          "sum": 14.19, 
+          "average": 4.7299999999999995
         }, 
         "Minotaur Books": {
-          "count": 43, 
-          "sum": 182.42999999999998, 
-          "average": 4.242558139534884
+          "count": 19, 
+          "sum": 78.62, 
+          "average": 4.137894736842106
         }, 
         "Random House Trade Paperbacks": {
-          "count": 30, 
-          "sum": 127.21000000000001, 
-          "average": 4.240333333333333
+          "count": 15, 
+          "sum": 63.150000000000006, 
+          "average": 4.21
         }, 
         "BradyGames": {
-          "count": 2, 
-          "sum": 7.470000000000001, 
-          "average": 3.7350000000000003
+          "count": 1, 
+          "sum": 4.03, 
+          "average": 4.03
         }, 
         "Renaissance Books": {
           "count": 1, 
@@ -11409,49 +3419,49 @@ publishers_bar = [
           "average": 3.9
         }, 
         "Harper Perennial": {
-          "count": 20, 
-          "sum": 84.34, 
-          "average": 4.2170000000000005
+          "count": 8, 
+          "sum": 34.459999999999994, 
+          "average": 4.3075
         }, 
         "Viking Children's": {
-          "count": 4, 
-          "sum": 18.69, 
-          "average": 4.6725
+          "count": 3, 
+          "sum": 14.5, 
+          "average": 4.833333333333333
         }, 
         "North Point Press": {
-          "count": 5, 
-          "sum": 22.699999999999996, 
-          "average": 4.54
+          "count": 3, 
+          "sum": 13.739999999999998, 
+          "average": 4.58
         }, 
         "Simon & Schuster Books for Young Readers": {
-          "count": 45, 
-          "sum": 202.2, 
-          "average": 4.493333333333333
+          "count": 22, 
+          "sum": 99.64, 
+          "average": 4.529090909090909
         }, 
         "Random House": {
-          "count": 81, 
-          "sum": 346.20000000000016, 
-          "average": 4.274074074074074
+          "count": 42, 
+          "sum": 179.64999999999995, 
+          "average": 4.277380952380953
         }, 
         "Schocken": {
-          "count": 4, 
-          "sum": 18.290000000000003, 
-          "average": 4.5725
+          "count": 3, 
+          "sum": 13.650000000000002, 
+          "average": 4.55
         }, 
         "Meadowbrook": {
-          "count": 3, 
-          "sum": 12.059999999999999, 
-          "average": 4.0200000000000005
+          "count": 2, 
+          "sum": 8.1, 
+          "average": 4.05
         }, 
         "HarperFestival": {
-          "count": 5, 
-          "sum": 21.220000000000002, 
-          "average": 4.244
+          "count": 3, 
+          "sum": 12.5, 
+          "average": 4.166666666666667
         }, 
         "Grand Central Publishing": {
-          "count": 94, 
-          "sum": 389.29999999999984, 
-          "average": 4.141489361702128
+          "count": 38, 
+          "sum": 157.49, 
+          "average": 4.144473684210527
         }, 
         "Zinc Ink": {
           "count": 1, 
@@ -11459,29 +3469,24 @@ publishers_bar = [
           "average": 4.77
         }, 
         "Entangled: Teen": {
-          "count": 2, 
-          "sum": 9.3, 
-          "average": 4.65
-        }, 
-        "Gildan Digital": {
           "count": 1, 
-          "sum": 4.75, 
-          "average": 4.75
+          "sum": 4.53, 
+          "average": 4.53
         }, 
         "Scientific American": {
-          "count": 9, 
-          "sum": 36.97, 
-          "average": 4.107777777777778
+          "count": 1, 
+          "sum": 4.0, 
+          "average": 4.0
         }, 
         "Ecco": {
-          "count": 27, 
-          "sum": 111.08000000000004, 
-          "average": 4.114074074074074
+          "count": 12, 
+          "sum": 49.93000000000001, 
+          "average": 4.160833333333334
         }, 
         "Presidio Press": {
-          "count": 4, 
-          "sum": 18.73, 
-          "average": 4.6825
+          "count": 1, 
+          "sum": 4.48, 
+          "average": 4.48
         }, 
         "Ripley Publishing": {
           "count": 4, 
@@ -11493,25 +3498,15 @@ publishers_bar = [
           "sum": 4.09, 
           "average": 4.09
         }, 
-        "FaithWords": {
-          "count": 11, 
-          "sum": 51.46, 
-          "average": 4.678181818181819
-        }, 
-        "Tor Science Fiction": {
-          "count": 1, 
-          "sum": 4.17, 
-          "average": 4.17
-        }, 
         "Entangled: Brazen": {
-          "count": 18, 
-          "sum": 80.74, 
-          "average": 4.485555555555555
+          "count": 12, 
+          "sum": 53.57000000000001, 
+          "average": 4.464166666666666
         }, 
-        "Forever Yours": {
-          "count": 1, 
-          "sum": 4.84, 
-          "average": 4.84
+        "LucasBooks": {
+          "count": 41, 
+          "sum": 165.18, 
+          "average": 4.0287804878048785
         }, 
         "Piatkus": {
           "count": 1, 
@@ -11519,49 +3514,49 @@ publishers_bar = [
           "average": 4.49
         }, 
         "Palgrave Macmillan": {
-          "count": 26, 
-          "sum": 114.07000000000001, 
-          "average": 4.387307692307693
+          "count": 11, 
+          "sum": 46.440000000000005, 
+          "average": 4.221818181818182
         }, 
         "Broadway Books": {
-          "count": 68, 
-          "sum": 289.08000000000004, 
-          "average": 4.251176470588235
+          "count": 35, 
+          "sum": 149.65, 
+          "average": 4.275714285714286
         }, 
         "Random House Books for Young Readers": {
-          "count": 199, 
-          "sum": 898.8500000000006, 
-          "average": 4.516834170854271
+          "count": 94, 
+          "sum": 417.77, 
+          "average": 4.44436170212766
         }, 
         "Overlook": {
-          "count": 4, 
-          "sum": 16.98, 
-          "average": 4.245
+          "count": 2, 
+          "sum": 8.96, 
+          "average": 4.48
         }, 
         "Threshold Editions": {
-          "count": 11, 
-          "sum": 48.3, 
-          "average": 4.390909090909091
+          "count": 6, 
+          "sum": 26.6, 
+          "average": 4.433333333333334
         }, 
         "William Morrow": {
-          "count": 72, 
-          "sum": 304.55, 
-          "average": 4.229861111111111
+          "count": 41, 
+          "sum": 172.54000000000005, 
+          "average": 4.208292682926829
         }, 
         "Twelve": {
-          "count": 14, 
-          "sum": 61.21, 
-          "average": 4.372142857142857
+          "count": 7, 
+          "sum": 30.619999999999997, 
+          "average": 4.3742857142857146
         }, 
         "Delta": {
-          "count": 7, 
-          "sum": 28.21, 
-          "average": 4.03
+          "count": 2, 
+          "sum": 8.879999999999999, 
+          "average": 4.4399999999999995
         }, 
         "St. Martin's True Crime": {
-          "count": 2, 
-          "sum": 7.58, 
-          "average": 3.79
+          "count": 1, 
+          "sum": 4.18, 
+          "average": 4.18
         }, 
         "Little A": {
           "count": 1, 
@@ -11569,24 +3564,24 @@ publishers_bar = [
           "average": 2.67
         }, 
         "Jove": {
-          "count": 41, 
-          "sum": 171.37, 
-          "average": 4.1797560975609755
+          "count": 20, 
+          "sum": 82.38999999999999, 
+          "average": 4.1195
         }, 
         "Jet City Comics": {
-          "count": 2, 
-          "sum": 7.890000000000001, 
-          "average": 3.9450000000000003
+          "count": 1, 
+          "sum": 4.07, 
+          "average": 4.07
         }, 
-        "Simon Spotlight": {
-          "count": 18, 
-          "sum": 84.60000000000001, 
-          "average": 4.699999999999999
+        "Island Books": {
+          "count": 1, 
+          "sum": 4.47, 
+          "average": 4.47
         }, 
         "Balzer + Bray": {
-          "count": 11, 
-          "sum": 47.76, 
-          "average": 4.341818181818182
+          "count": 8, 
+          "sum": 34.089999999999996, 
+          "average": 4.26125
         }, 
         "Entangled: Indulgence": {
           "count": 2, 
@@ -11594,39 +3589,34 @@ publishers_bar = [
           "average": 4.595000000000001
         }, 
         "Dutton Adult": {
-          "count": 23, 
-          "sum": 99.64999999999998, 
-          "average": 4.3326086956521745
+          "count": 14, 
+          "sum": 61.61999999999999, 
+          "average": 4.401428571428571
         }, 
         "Orb Books": {
-          "count": 7, 
-          "sum": 29.89, 
-          "average": 4.2700000000000005
+          "count": 4, 
+          "sum": 16.86, 
+          "average": 4.215
         }, 
         "Laurel Leaf": {
-          "count": 8, 
-          "sum": 34.78, 
-          "average": 4.3475
+          "count": 5, 
+          "sum": 22.209999999999997, 
+          "average": 4.442
         }, 
         "Aerie": {
           "count": 1, 
           "sum": 4.24, 
           "average": 4.24
         }, 
-        "Hudson Street Press": {
-          "count": 3, 
-          "sum": 13.59, 
-          "average": 4.53
+        "Current": {
+          "count": 1, 
+          "sum": 4.25, 
+          "average": 4.25
         }, 
         "Back Bay Books": {
-          "count": 10, 
-          "sum": 41.8, 
-          "average": 4.18
-        }, 
-        "Times Books": {
-          "count": 16, 
-          "sum": 68.84, 
-          "average": 4.3025
+          "count": 3, 
+          "sum": 12.29, 
+          "average": 4.096666666666667
         }, 
         "HP": {
           "count": 1, 
@@ -11638,105 +3628,105 @@ publishers_bar = [
           "sum": 4.76, 
           "average": 4.76
         }, 
-        "LucasBooks": {
-          "count": 69, 
-          "sum": 275.67999999999995, 
-          "average": 3.99536231884058
+        "It Books": {
+          "count": 14, 
+          "sum": 58.69, 
+          "average": 4.192142857142857
         }, 
         "Peterson's": {
-          "count": 3, 
-          "sum": 12.75, 
-          "average": 4.25
+          "count": 2, 
+          "sum": 8.09, 
+          "average": 4.045
+        }, 
+        "Grosset & Dunlap": {
+          "count": 50, 
+          "sum": 222.92000000000004, 
+          "average": 4.4584
         }, 
         "Crown": {
-          "count": 31, 
-          "sum": 132.67999999999998, 
-          "average": 4.28
+          "count": 11, 
+          "sum": 47.68, 
+          "average": 4.334545454545455
         }, 
         "FSG Originals": {
-          "count": 3, 
-          "sum": 11.5, 
-          "average": 3.8333333333333335
+          "count": 2, 
+          "sum": 7.49, 
+          "average": 3.745
         }, 
         "Orion": {
-          "count": 2, 
-          "sum": 8.54, 
-          "average": 4.27
+          "count": 1, 
+          "sum": 4.25, 
+          "average": 4.25
         }, 
         "Katherine Tegen Books": {
-          "count": 12, 
-          "sum": 53.44, 
-          "average": 4.453333333333333
+          "count": 7, 
+          "sum": 32.03, 
+          "average": 4.575714285714286
         }, 
         "(Single-Author Publisher)": {
-          "count": 3426, 
-          "sum": 15056.95999999998, 
-          "average": 4.394909515469935
+          "count": 1757, 
+          "sum": 7707.820000000012, 
+          "average": 4.386920887877063
         }, 
         "HarperCollins": {
-          "count": 237, 
-          "sum": 1083.3400000000006, 
-          "average": 4.571054852320675
+          "count": 123, 
+          "sum": 560.4000000000001, 
+          "average": 4.556097560975609
         }, 
         "WaterBrook Press": {
-          "count": 19, 
-          "sum": 85.07, 
-          "average": 4.477368421052631
+          "count": 13, 
+          "sum": 57.94, 
+          "average": 4.4569230769230765
         }, 
         "Putnam Juvenile": {
-          "count": 10, 
-          "sum": 46.12, 
-          "average": 4.612
-        }, 
-        "Harper Design": {
           "count": 2, 
-          "sum": 8.42, 
-          "average": 4.21
+          "sum": 8.850000000000001, 
+          "average": 4.425000000000001
         }, 
-        "Loveswept": {
-          "count": 10, 
-          "sum": 43.809999999999995, 
-          "average": 4.381
+        "Image": {
+          "count": 5, 
+          "sum": 22.62, 
+          "average": 4.524
         }, 
         "Crimeline": {
-          "count": 4, 
-          "sum": 17.16, 
-          "average": 4.29
+          "count": 2, 
+          "sum": 8.71, 
+          "average": 4.355
         }, 
         "Hill and Wang": {
-          "count": 8, 
-          "sum": 34.38999999999999, 
-          "average": 4.29875
+          "count": 1, 
+          "sum": 4.33, 
+          "average": 4.33
         }, 
         "Delacorte Press": {
-          "count": 46, 
-          "sum": 192.10999999999999, 
-          "average": 4.176304347826087
+          "count": 27, 
+          "sum": 112.64999999999998, 
+          "average": 4.1722222222222225
         }, 
         "Broadside e-books": {
-          "count": 2, 
-          "sum": 7.5, 
-          "average": 3.75
+          "count": 1, 
+          "sum": 4.09, 
+          "average": 4.09
         }, 
         "Wellspring/Ballantine": {
-          "count": 2, 
-          "sum": 9.16, 
-          "average": 4.58
+          "count": 1, 
+          "sum": 4.71, 
+          "average": 4.71
         }, 
         "Philomel": {
-          "count": 6, 
-          "sum": 27.700000000000003, 
-          "average": 4.616666666666666
+          "count": 2, 
+          "sum": 9.29, 
+          "average": 4.645
         }, 
         "Center Street": {
-          "count": 10, 
-          "sum": 43.459999999999994, 
-          "average": 4.346
+          "count": 3, 
+          "sum": 13.96, 
+          "average": 4.653333333333333
         }, 
         "Margaret K. McElderry Books": {
-          "count": 18, 
-          "sum": 80.14, 
-          "average": 4.452222222222222
+          "count": 8, 
+          "sum": 34.97, 
+          "average": 4.37125
         }, 
         "The Friday Project": {
           "count": 1, 
@@ -11744,44 +3734,34 @@ publishers_bar = [
           "average": 3.73
         }, 
         "Ballantine Books": {
-          "count": 151, 
-          "sum": 634.0199999999996, 
-          "average": 4.198807947019867
-        }, 
-        "Amistad": {
-          "count": 2, 
-          "sum": 9.16, 
-          "average": 4.58
+          "count": 71, 
+          "sum": 300.1100000000001, 
+          "average": 4.226901408450704
         }, 
         "Atria Books/Beyond Words": {
-          "count": 6, 
-          "sum": 27.88, 
-          "average": 4.6466666666666665
-        }, 
-        "Grijalbo": {
-          "count": 1, 
-          "sum": 3.0, 
-          "average": 3.0
+          "count": 2, 
+          "sum": 9.33, 
+          "average": 4.665
         }, 
         "Tundra Books": {
-          "count": 2, 
-          "sum": 9.29, 
-          "average": 4.645
+          "count": 1, 
+          "sum": 4.59, 
+          "average": 4.59
         }, 
         "Crown Forum": {
-          "count": 4, 
-          "sum": 17.330000000000002, 
-          "average": 4.3325
+          "count": 2, 
+          "sum": 8.49, 
+          "average": 4.245
         }, 
         "Scribner": {
-          "count": 113, 
-          "sum": 483.33, 
-          "average": 4.277256637168142
+          "count": 57, 
+          "sum": 242.58, 
+          "average": 4.255789473684211
         }, 
         "Scientific American / Farrar Straus and Giroux": {
-          "count": 3, 
-          "sum": 12.129999999999999, 
-          "average": 4.043333333333333
+          "count": 1, 
+          "sum": 3.62, 
+          "average": 3.62
         }, 
         "Peterson Institute for International Economics": {
           "count": 1, 
@@ -11789,179 +3769,169 @@ publishers_bar = [
           "average": 5.0
         }, 
         "Crown Business": {
-          "count": 54, 
-          "sum": 234.48000000000002, 
-          "average": 4.342222222222222
+          "count": 26, 
+          "sum": 111.80000000000003, 
+          "average": 4.3
         }, 
         "Pocket Books/Star Trek": {
-          "count": 56, 
-          "sum": 226.37, 
-          "average": 4.042321428571428
+          "count": 27, 
+          "sum": 110.45, 
+          "average": 4.090740740740741
         }, 
         "Doubleday": {
-          "count": 24, 
-          "sum": 101.87, 
-          "average": 4.244583333333334
+          "count": 18, 
+          "sum": 75.69000000000001, 
+          "average": 4.205
         }, 
         "Delacorte Books for Young Readers": {
-          "count": 20, 
-          "sum": 88.77999999999999, 
-          "average": 4.439
+          "count": 9, 
+          "sum": 42.08, 
+          "average": 4.6755555555555555
         }, 
         "Henry Holt and Co.": {
-          "count": 42, 
-          "sum": 182.60000000000002, 
-          "average": 4.347619047619047
-        }, 
-        "Convergent Books": {
-          "count": 1, 
-          "sum": 4.59, 
-          "average": 4.59
+          "count": 24, 
+          "sum": 104.46000000000005, 
+          "average": 4.3525
         }, 
         "Zonderkidz": {
-          "count": 27, 
-          "sum": 123.74999999999997, 
-          "average": 4.583333333333333
+          "count": 14, 
+          "sum": 63.74000000000001, 
+          "average": 4.552857142857143
         }, 
         "Papercutz": {
-          "count": 13, 
-          "sum": 60.75999999999999, 
-          "average": 4.673846153846154
+          "count": 4, 
+          "sum": 19.16, 
+          "average": 4.79
         }, 
         "Atria Books": {
-          "count": 96, 
-          "sum": 411.2900000000001, 
-          "average": 4.284270833333333
+          "count": 47, 
+          "sum": 204.87000000000003, 
+          "average": 4.3589361702127665
         }, 
         "(Small or Medium Publisher)": {
-          "count": 9107, 
-          "sum": 39847.35000000027, 
-          "average": 4.375463928845942
+          "count": 4507, 
+          "sum": 19725.97999999999, 
+          "average": 4.376742844464167
         }, 
         "Flash Point": {
-          "count": 2, 
-          "sum": 9.34, 
-          "average": 4.67
+          "count": 1, 
+          "sum": 4.71, 
+          "average": 4.71
         }, 
         "Onyx": {
-          "count": 2, 
-          "sum": 8.83, 
-          "average": 4.415
+          "count": 1, 
+          "sum": 4.34, 
+          "average": 4.34
         }, 
         "Dell": {
-          "count": 45, 
-          "sum": 186.02000000000004, 
-          "average": 4.133777777777778
+          "count": 21, 
+          "sum": 87.25999999999999, 
+          "average": 4.155238095238095
         }, 
         "Atria / 37 Ink": {
-          "count": 2, 
-          "sum": 7.640000000000001, 
-          "average": 3.8200000000000003
+          "count": 1, 
+          "sum": 4.62, 
+          "average": 4.62
         }, 
         "HarperOne": {
-          "count": 40, 
-          "sum": 176.73999999999998, 
-          "average": 4.4185
-        }, 
-        "Touchstone": {
-          "count": 69, 
-          "sum": 299.0299999999999, 
-          "average": 4.3337681159420285
-        }, 
-        "Watson-Guptill": {
-          "count": 16, 
-          "sum": 71.53, 
-          "average": 4.470625
+          "count": 18, 
+          "sum": 80.8, 
+          "average": 4.488888888888889
         }, 
         "Princeton Review": {
-          "count": 9, 
-          "sum": 34.370000000000005, 
-          "average": 3.8188888888888886
+          "count": 5, 
+          "sum": 20.46, 
+          "average": 4.0920000000000005
         }, 
-        "Entangled: Select": {
-          "count": 1, 
-          "sum": 4.31, 
-          "average": 4.31
+        "DAW": {
+          "count": 7, 
+          "sum": 30.099999999999998, 
+          "average": 4.3
         }, 
-        "Mitchell Beazley": {
+        "Deepak Chopra": {
           "count": 1, 
-          "sum": 4.72, 
-          "average": 4.72
+          "sum": 4.87, 
+          "average": 4.87
         }, 
         "Washington Square Press": {
-          "count": 4, 
-          "sum": 18.009999999999998, 
-          "average": 4.5024999999999995
+          "count": 2, 
+          "sum": 9.35, 
+          "average": 4.675
         }, 
         "Tarcher": {
-          "count": 22, 
-          "sum": 98.77, 
-          "average": 4.489545454545454
+          "count": 10, 
+          "sum": 45.3, 
+          "average": 4.529999999999999
         }, 
-        "Galvanized Books": {
-          "count": 1, 
-          "sum": 4.66, 
-          "average": 4.66
+        "Times Books": {
+          "count": 4, 
+          "sum": 17.32, 
+          "average": 4.33
         }, 
-        "Alpha": {
-          "count": 5, 
-          "sum": 23.02, 
-          "average": 4.604
+        "William Morrow Cookbooks": {
+          "count": 7, 
+          "sum": 31.54, 
+          "average": 4.505714285714285
         }, 
         "Fodor's": {
-          "count": 14, 
-          "sum": 56.11, 
-          "average": 4.007857142857143
+          "count": 3, 
+          "sum": 12.0, 
+          "average": 4.0
+        }, 
+        "Signet": {
+          "count": 33, 
+          "sum": 141.29000000000002, 
+          "average": 4.281515151515151
         }, 
         "Nan A. Talese": {
-          "count": 5, 
-          "sum": 20.740000000000002, 
-          "average": 4.148
+          "count": 3, 
+          "sum": 12.469999999999999, 
+          "average": 4.156666666666666
         }, 
         "Square Fish": {
-          "count": 3, 
-          "sum": 12.66, 
-          "average": 4.22
+          "count": 2, 
+          "sum": 8.19, 
+          "average": 4.095
         }, 
         "Chicken Soup for the Soul": {
-          "count": 5, 
-          "sum": 23.490000000000002, 
-          "average": 4.6979999999999995
+          "count": 2, 
+          "sum": 9.12, 
+          "average": 4.56
         }, 
         "Ace": {
-          "count": 43, 
-          "sum": 175.52, 
-          "average": 4.0818604651162795
+          "count": 18, 
+          "sum": 76.97, 
+          "average": 4.276111111111111
         }, 
         "Prentice Hall Press": {
-          "count": 6, 
-          "sum": 27.209999999999997, 
-          "average": 4.535
+          "count": 4, 
+          "sum": 17.869999999999997, 
+          "average": 4.467499999999999
         }, 
         "Free Press": {
-          "count": 68, 
-          "sum": 289.71999999999997, 
-          "average": 4.260588235294118
+          "count": 28, 
+          "sum": 119.59000000000002, 
+          "average": 4.271071428571429
         }, 
-        "Rough Guides": {
-          "count": 4, 
-          "sum": 18.34, 
-          "average": 4.585
+        "World Wrestling Entertainment": {
+          "count": 1, 
+          "sum": 4.19, 
+          "average": 4.19
         }, 
         "Spectra": {
-          "count": 47, 
-          "sum": 190.53999999999996, 
-          "average": 4.054042553191489
+          "count": 24, 
+          "sum": 96.73000000000003, 
+          "average": 4.0304166666666665
         }, 
         "Orbit": {
-          "count": 46, 
-          "sum": 199.15999999999994, 
-          "average": 4.329565217391305
+          "count": 25, 
+          "sum": 108.22000000000003, 
+          "average": 4.3288
         }, 
         "Spiegel & Grau": {
-          "count": 22, 
-          "sum": 95.92999999999999, 
-          "average": 4.360454545454545
+          "count": 12, 
+          "sum": 51.79, 
+          "average": 4.315833333333333
         }, 
         "Main Street Books": {
           "count": 1, 
@@ -11969,9 +3939,9 @@ publishers_bar = [
           "average": 4.62
         }, 
         "William Morrow Paperbacks": {
-          "count": 44, 
-          "sum": 191.78999999999996, 
-          "average": 4.358863636363636
+          "count": 17, 
+          "sum": 75.02000000000001, 
+          "average": 4.412941176470588
         }, 
         "Crossing Press": {
           "count": 2, 
@@ -11979,59 +3949,49 @@ publishers_bar = [
           "average": 4.74
         }, 
         "LB Kids": {
-          "count": 8, 
-          "sum": 35.47, 
-          "average": 4.43375
+          "count": 2, 
+          "sum": 9.11, 
+          "average": 4.555
         }, 
         "Fawcett": {
-          "count": 4, 
-          "sum": 15.62, 
-          "average": 3.9050000000000002
+          "count": 1, 
+          "sum": 3.2, 
+          "average": 3.2
         }, 
         "Sarah Crichton Books": {
-          "count": 7, 
-          "sum": 29.980000000000004, 
-          "average": 4.282857142857143
-        }, 
-        "Anthony Bourdain/Ecco": {
-          "count": 2, 
-          "sum": 8.290000000000001, 
-          "average": 4.1450000000000005
+          "count": 3, 
+          "sum": 13.25, 
+          "average": 4.416666666666667
         }, 
         "Vision": {
-          "count": 4, 
-          "sum": 14.76, 
-          "average": 3.69
+          "count": 2, 
+          "sum": 6.84, 
+          "average": 3.42
         }, 
         "Farrar Straus and Giroux": {
-          "count": 89, 
-          "sum": 383.2300000000001, 
-          "average": 4.3059550561797755
-        }, 
-        "Vintage Espanol": {
-          "count": 7, 
-          "sum": 30.85, 
-          "average": 4.4071428571428575
+          "count": 49, 
+          "sum": 213.26999999999998, 
+          "average": 4.352448979591837
         }, 
         "Holt Paperbacks": {
-          "count": 25, 
-          "sum": 108.25999999999999, 
-          "average": 4.3304
+          "count": 12, 
+          "sum": 51.900000000000006, 
+          "average": 4.325
         }, 
         "Multnomah Books": {
-          "count": 7, 
-          "sum": 32.52, 
-          "average": 4.645714285714285
+          "count": 4, 
+          "sum": 18.65, 
+          "average": 4.6625
         }, 
         "Grupo Nelson": {
-          "count": 3, 
-          "sum": 13.37, 
-          "average": 4.456666666666666
+          "count": 2, 
+          "sum": 8.85, 
+          "average": 4.425
         }, 
-        "Grosset & Dunlap": {
-          "count": 104, 
-          "sum": 468.78999999999985, 
-          "average": 4.507596153846154
+        "Simon Spotlight": {
+          "count": 8, 
+          "sum": 37.34, 
+          "average": 4.6675
         }, 
         "HarperTrue": {
           "count": 1, 
@@ -12039,29 +3999,19 @@ publishers_bar = [
           "average": 4.73
         }, 
         "Business Plus": {
-          "count": 15, 
-          "sum": 64.81, 
-          "average": 4.320666666666667
+          "count": 9, 
+          "sum": 39.01, 
+          "average": 4.334444444444444
         }, 
         "Wendy Lamb Books": {
-          "count": 5, 
-          "sum": 22.19, 
-          "average": 4.438
+          "count": 3, 
+          "sum": 13.68, 
+          "average": 4.56
         }, 
-        "Puffin": {
-          "count": 103, 
-          "sum": 468.5999999999999, 
-          "average": 4.549514563106796
-        }, 
-        "It Books": {
-          "count": 24, 
-          "sum": 99.88000000000001, 
-          "average": 4.161666666666666
-        }, 
-        "World Wrestling Entertainment": {
-          "count": 2, 
-          "sum": 8.5, 
-          "average": 4.25
+        "Two Lions": {
+          "count": 32, 
+          "sum": 143.07, 
+          "average": 4.4709375
         }, 
         "Knopf Group E-Books": {
           "count": 1, 
@@ -12069,9 +4019,9 @@ publishers_bar = [
           "average": 4.9
         }, 
         "HarperCollinsChildren'sBooks": {
-          "count": 2, 
-          "sum": 9.719999999999999, 
-          "average": 4.859999999999999
+          "count": 1, 
+          "sum": 5.0, 
+          "average": 5.0
         }, 
         "Truman Talley Books": {
           "count": 1, 
@@ -12079,51 +4029,2735 @@ publishers_bar = [
           "average": 4.65
         }, 
         "Aladdin": {
-          "count": 79, 
-          "sum": 365.2300000000001, 
-          "average": 4.623164556962026
+          "count": 32, 
+          "sum": 147.82000000000002, 
+          "average": 4.619375
         }, 
         "Random House/Disney": {
-          "count": 13, 
-          "sum": 59.44, 
-          "average": 4.572307692307692
+          "count": 5, 
+          "sum": 23.14, 
+          "average": 4.628
         }, 
         "Razorbill": {
-          "count": 14, 
-          "sum": 62.900000000000006, 
-          "average": 4.492857142857143
+          "count": 7, 
+          "sum": 30.96, 
+          "average": 4.422857142857143
         }, 
         "Ten Speed Press": {
-          "count": 41, 
-          "sum": 185.63999999999993, 
-          "average": 4.52780487804878
-        }, 
-        "DAW": {
-          "count": 14, 
-          "sum": 59.11, 
-          "average": 4.222142857142857
+          "count": 24, 
+          "sum": 107.58, 
+          "average": 4.4825
         }, 
         "The Penguin Press": {
-          "count": 27, 
-          "sum": 112.35000000000001, 
-          "average": 4.1611111111111105
+          "count": 11, 
+          "sum": 46.62, 
+          "average": 4.238181818181818
         }
       }, 
-      "publishers.[0].daily.amazon revenue": {
-        "Simon Pulse/Mercury Ink": {
-          "count": 1, 
-          "sum": 114.57, 
-          "average": 114.57
-        }, 
+      "publishers.[0].daily average.units sold": {
         "Gallery Books": {
-          "count": 56, 
-          "sum": 2370.608000000002, 
-          "average": 42.33228571428572
+          "count": 30, 
+          "sum": 1058, 
+          "average": 35.266666666666666
         }, 
         "Dial": {
+          "count": 4, 
+          "sum": 41, 
+          "average": 10.25
+        }, 
+        "McClelland & Stewart": {
+          "count": 1, 
+          "sum": 2, 
+          "average": 2.0
+        }, 
+        "Tor Books": {
+          "count": 41, 
+          "sum": 1022, 
+          "average": 24.926829268292682
+        }, 
+        "ESPN": {
+          "count": 2, 
+          "sum": 13, 
+          "average": 6.5
+        }, 
+        "Bantam": {
+          "count": 77, 
+          "sum": 1897, 
+          "average": 24.636363636363637
+        }, 
+        "Harper": {
+          "count": 28, 
+          "sum": 1232, 
+          "average": 44.0
+        }, 
+        "Portfolio": {
+          "count": 40, 
+          "sum": 586, 
+          "average": 14.65
+        }, 
+        "Plume": {
+          "count": 35, 
+          "sum": 667, 
+          "average": 19.057142857142857
+        }, 
+        "Jericho Books": {
+          "count": 2, 
+          "sum": 30, 
+          "average": 15.0
+        }, 
+        "HarperTeen": {
+          "count": 15, 
+          "sum": 430, 
+          "average": 28.666666666666668
+        }, 
+        "NAL": {
+          "count": 20, 
+          "sum": 317, 
+          "average": 15.85
+        }, 
+        "Avon Impulse": {
+          "count": 9, 
+          "sum": 406, 
+          "average": 45.111111111111114
+        }, 
+        "AmazonEncore": {
+          "count": 6, 
+          "sum": 183, 
+          "average": 30.5
+        }, 
+        "Dial Press Trade Paperback": {
+          "count": 2, 
+          "sum": 25, 
+          "average": 12.5
+        }, 
+        "Villard": {
+          "count": 1, 
+          "sum": 14, 
+          "average": 14.0
+        }, 
+        "Golden/Disney": {
+          "count": 3, 
+          "sum": 16, 
+          "average": 5.333333333333333
+        }, 
+        "RH/Disney": {
+          "count": 2, 
+          "sum": 33, 
+          "average": 16.5
+        }, 
+        "Hodder & Stoughton": {
+          "count": 1, 
+          "sum": 6, 
+          "average": 6.0
+        }, 
+        "Newmarket Press": {
+          "count": 1, 
+          "sum": 2, 
+          "average": 2.0
+        }, 
+        "Little Brown and Company": {
+          "count": 67, 
+          "sum": 2516, 
+          "average": 37.55223880597015
+        }, 
+        "Grand Central Life & Style": {
           "count": 10, 
-          "sum": 106.00999999999998, 
-          "average": 10.601
+          "sum": 266, 
+          "average": 26.6
+        }, 
+        "Perigee": {
+          "count": 9, 
+          "sum": 176, 
+          "average": 19.555555555555557
+        }, 
+        "Golden Books": {
+          "count": 3, 
+          "sum": 8, 
+          "average": 2.6666666666666665
+        }, 
+        "Thomas Dunne Books": {
+          "count": 17, 
+          "sum": 180, 
+          "average": 10.588235294117647
+        }, 
+        "HarperSport": {
+          "count": 2, 
+          "sum": 5, 
+          "average": 2.5
+        }, 
+        "Tor Teen": {
+          "count": 1, 
+          "sum": 13, 
+          "average": 13.0
+        }, 
+        "Crown Archetype": {
+          "count": 13, 
+          "sum": 125, 
+          "average": 9.615384615384615
+        }, 
+        "Harper Element": {
+          "count": 8, 
+          "sum": 60, 
+          "average": 7.5
+        }, 
+        "(Indie Publisher)": {
+          "count": 2819, 
+          "sum": 72302, 
+          "average": 25.648102163887902
+        }, 
+        "Zondervan": {
+          "count": 31, 
+          "sum": 909, 
+          "average": 29.322580645161292
+        }, 
+        "HarperWave": {
+          "count": 3, 
+          "sum": 137, 
+          "average": 45.666666666666664
+        }, 
+        "Studio": {
+          "count": 1, 
+          "sum": 5, 
+          "average": 5.0
+        }, 
+        "Bantam Dell": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Pocket Star": {
+          "count": 5, 
+          "sum": 153, 
+          "average": 30.6
+        }, 
+        "Avon": {
+          "count": 10, 
+          "sum": 826, 
+          "average": 82.6
+        }, 
+        "Thomas & Mercer": {
+          "count": 57, 
+          "sum": 2654, 
+          "average": 46.56140350877193
+        }, 
+        "Thomas Nelson": {
+          "count": 58, 
+          "sum": 1541, 
+          "average": 26.56896551724138
+        }, 
+        "Penguin": {
+          "count": 20, 
+          "sum": 122, 
+          "average": 6.1
+        }, 
+        "Billboard Books": {
+          "count": 2, 
+          "sum": 2, 
+          "average": 1.0
+        }, 
+        "Simon Pulse": {
+          "count": 9, 
+          "sum": 292, 
+          "average": 32.44444444444444
+        }, 
+        "Little Brown Books for Young Readers": {
+          "count": 33, 
+          "sum": 589, 
+          "average": 17.848484848484848
+        }, 
+        "Watson-Guptill": {
+          "count": 8, 
+          "sum": 16, 
+          "average": 2.0
+        }, 
+        "Harper Paperbacks": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Simon & Schuster": {
+          "count": 95, 
+          "sum": 2495, 
+          "average": 26.263157894736842
+        }, 
+        "Putnam Adult": {
+          "count": 17, 
+          "sum": 754, 
+          "average": 44.35294117647059
+        }, 
+        "Reagan Arthur Books": {
+          "count": 1, 
+          "sum": 24, 
+          "average": 24.0
+        }, 
+        "William Morrow Impulse": {
+          "count": 1, 
+          "sum": 99, 
+          "average": 99.0
+        }, 
+        "Puffin": {
+          "count": 52, 
+          "sum": 752, 
+          "average": 14.461538461538462
+        }, 
+        "Metropolitan Books": {
+          "count": 7, 
+          "sum": 112, 
+          "average": 16.0
+        }, 
+        "Potter Style": {
+          "count": 2, 
+          "sum": 14, 
+          "average": 7.0
+        }, 
+        "Poppy": {
+          "count": 1, 
+          "sum": 14, 
+          "average": 14.0
+        }, 
+        "Three Rivers Press": {
+          "count": 8, 
+          "sum": 70, 
+          "average": 8.75
+        }, 
+        "Little Simon": {
+          "count": 1, 
+          "sum": 1, 
+          "average": 1.0
+        }, 
+        "The Dial Press": {
+          "count": 2, 
+          "sum": 118, 
+          "average": 59.0
+        }, 
+        "Hudson Street Press": {
+          "count": 1, 
+          "sum": 11, 
+          "average": 11.0
+        }, 
+        "St. Martin's Paperbacks": {
+          "count": 9, 
+          "sum": 151, 
+          "average": 16.77777777777778
+        }, 
+        "Celestial Arts": {
+          "count": 1, 
+          "sum": 12, 
+          "average": 12.0
+        }, 
+        "HarperTorch": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Entangled: Bliss": {
+          "count": 1, 
+          "sum": 72, 
+          "average": 72.0
+        }, 
+        "Debbie Macomber Books": {
+          "count": 1, 
+          "sum": 189, 
+          "average": 189.0
+        }, 
+        "Roaring Brook Press": {
+          "count": 3, 
+          "sum": 26, 
+          "average": 8.666666666666666
+        }, 
+        "Atheneum Books for Young Readers": {
+          "count": 19, 
+          "sum": 150, 
+          "average": 7.894736842105263
+        }, 
+        "Pocket Books": {
+          "count": 36, 
+          "sum": 785, 
+          "average": 21.805555555555557
+        }, 
+        "Amazon Publishing": {
+          "count": 11, 
+          "sum": 346, 
+          "average": 31.454545454545453
+        }, 
+        "St. Martin's Press": {
+          "count": 84, 
+          "sum": 2212, 
+          "average": 26.333333333333332
+        }, 
+        "HarperPerennial Classics": {
+          "count": 2, 
+          "sum": 107, 
+          "average": 53.5
+        }, 
+        "Pintail": {
+          "count": 1, 
+          "sum": 105, 
+          "average": 105.0
+        }, 
+        "HarperCollins e-books": {
+          "count": 179, 
+          "sum": 2782, 
+          "average": 15.541899441340782
+        }, 
+        "Gotham Books": {
+          "count": 11, 
+          "sum": 131, 
+          "average": 11.909090909090908
+        }, 
+        "MTV Books": {
+          "count": 2, 
+          "sum": 31, 
+          "average": 15.5
+        }, 
+        "Vintage": {
+          "count": 78, 
+          "sum": 1027, 
+          "average": 13.166666666666666
+        }, 
+        "Clarkson Potter": {
+          "count": 14, 
+          "sum": 53, 
+          "average": 3.7857142857142856
+        }, 
+        "Grand Harbor Press": {
+          "count": 1, 
+          "sum": 23, 
+          "average": 23.0
+        }, 
+        "Harper Thorsons": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Picador": {
+          "count": 4, 
+          "sum": 42, 
+          "average": 10.5
+        }, 
+        "Harmony": {
+          "count": 36, 
+          "sum": 618, 
+          "average": 17.166666666666668
+        }, 
+        "Signet Classic": {
+          "count": 3, 
+          "sum": 21, 
+          "average": 7.0
+        }, 
+        "47North": {
+          "count": 26, 
+          "sum": 1061, 
+          "average": 40.80769230769231
+        }, 
+        "HarperPress": {
+          "count": 2, 
+          "sum": 10, 
+          "average": 5.0
+        }, 
+        "Collins": {
+          "count": 5, 
+          "sum": 25, 
+          "average": 5.0
+        }, 
+        "Feiwel & Friends": {
+          "count": 4, 
+          "sum": 101, 
+          "average": 25.25
+        }, 
+        "DK Publishing": {
+          "count": 15, 
+          "sum": 55, 
+          "average": 3.6666666666666665
+        }, 
+        "Amphoto Books": {
+          "count": 2, 
+          "sum": 10, 
+          "average": 5.0
+        }, 
+        "Skyscape": {
+          "count": 6, 
+          "sum": 504, 
+          "average": 84.0
+        }, 
+        "Avery": {
+          "count": 10, 
+          "sum": 97, 
+          "average": 9.7
+        }, 
+        "Faber & Faber": {
+          "count": 4, 
+          "sum": 22, 
+          "average": 5.5
+        }, 
+        "AmazonCrossing": {
+          "count": 13, 
+          "sum": 805, 
+          "average": 61.92307692307692
+        }, 
+        "Simon & Schuster Audio": {
+          "count": 1, 
+          "sum": 20, 
+          "average": 20.0
+        }, 
+        "Del Rey": {
+          "count": 23, 
+          "sum": 357, 
+          "average": 15.521739130434783
+        }, 
+        "Graywolf Press": {
+          "count": 1, 
+          "sum": 43, 
+          "average": 43.0
+        }, 
+        "Howard Books": {
+          "count": 10, 
+          "sum": 271, 
+          "average": 27.1
+        }, 
+        "First Second": {
+          "count": 2, 
+          "sum": 5, 
+          "average": 2.5
+        }, 
+        "FaithWords": {
+          "count": 5, 
+          "sum": 196, 
+          "average": 39.2
+        }, 
+        "Penguin Classic": {
+          "count": 8, 
+          "sum": 68, 
+          "average": 8.5
+        }, 
+        "Montlake Romance": {
+          "count": 34, 
+          "sum": 2939, 
+          "average": 86.44117647058823
+        }, 
+        "Rough Guides": {
+          "count": 2, 
+          "sum": 7, 
+          "average": 3.5
+        }, 
+        "Modern Library": {
+          "count": 4, 
+          "sum": 49, 
+          "average": 12.25
+        }, 
+        "Knopf": {
+          "count": 23, 
+          "sum": 868, 
+          "average": 37.73913043478261
+        }, 
+        "Forever": {
+          "count": 6, 
+          "sum": 629, 
+          "average": 104.83333333333333
+        }, 
+        "Riverhead": {
+          "count": 24, 
+          "sum": 558, 
+          "average": 23.25
+        }, 
+        "Mulholland Books": {
+          "count": 4, 
+          "sum": 45, 
+          "average": 11.25
+        }, 
+        "Yearling": {
+          "count": 4, 
+          "sum": 52, 
+          "average": 13.0
+        }, 
+        "Hogarth": {
+          "count": 1, 
+          "sum": 107, 
+          "average": 107.0
+        }, 
+        "Bantam Classics": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Potter Craft": {
+          "count": 4, 
+          "sum": 16, 
+          "average": 4.0
+        }, 
+        "Sentinel": {
+          "count": 1, 
+          "sum": 10, 
+          "average": 10.0
+        }, 
+        "Atria/Emily Bestler Books": {
+          "count": 3, 
+          "sum": 279, 
+          "average": 93.0
+        }, 
+        "Penguin Books": {
+          "count": 72, 
+          "sum": 1285, 
+          "average": 17.84722222222222
+        }, 
+        "Lone Eagle": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Berkley": {
+          "count": 79, 
+          "sum": 2533, 
+          "average": 32.063291139240505
+        }, 
+        "Harper Voyager": {
+          "count": 6, 
+          "sum": 161, 
+          "average": 26.833333333333332
+        }, 
+        "Hyperion": {
+          "count": 36, 
+          "sum": 986, 
+          "average": 27.38888888888889
+        }, 
+        "Anchor": {
+          "count": 34, 
+          "sum": 455, 
+          "average": 13.382352941176471
+        }, 
+        "Touchstone": {
+          "count": 29, 
+          "sum": 541, 
+          "average": 18.655172413793103
+        }, 
+        "Forge Books": {
+          "count": 8, 
+          "sum": 67, 
+          "average": 8.375
+        }, 
+        "Celebra": {
+          "count": 2, 
+          "sum": 131, 
+          "average": 65.5
+        }, 
+        "Knopf Books for Young Readers": {
+          "count": 16, 
+          "sum": 219, 
+          "average": 13.6875
+        }, 
+        "Loveswept": {
+          "count": 9, 
+          "sum": 534, 
+          "average": 59.333333333333336
+        }, 
+        "Roc": {
+          "count": 5, 
+          "sum": 53, 
+          "average": 10.6
+        }, 
+        "St. Martin's Griffin": {
+          "count": 23, 
+          "sum": 338, 
+          "average": 14.695652173913043
+        }, 
+        "Pantheon": {
+          "count": 3, 
+          "sum": 87, 
+          "average": 29.0
+        }, 
+        "Reader's Digest": {
+          "count": 2, 
+          "sum": 7, 
+          "average": 3.5
+        }, 
+        "InterMix": {
+          "count": 1, 
+          "sum": 22, 
+          "average": 22.0
+        }, 
+        "Witness Impulse": {
+          "count": 7, 
+          "sum": 274, 
+          "average": 39.142857142857146
+        }, 
+        "Dutton Children's": {
+          "count": 2, 
+          "sum": 112, 
+          "average": 56.0
+        }, 
+        "Speak": {
+          "count": 9, 
+          "sum": 1160, 
+          "average": 128.88888888888889
+        }, 
+        "Yen Press": {
+          "count": 2, 
+          "sum": 4, 
+          "average": 2.0
+        }, 
+        "Greenwillow Books": {
+          "count": 8, 
+          "sum": 83, 
+          "average": 10.375
+        }, 
+        "Schwartz & Wade": {
+          "count": 1, 
+          "sum": 1, 
+          "average": 1.0
+        }, 
+        "Page Street Publishing": {
+          "count": 2, 
+          "sum": 22, 
+          "average": 11.0
+        }, 
+        "Vintage Espanol": {
+          "count": 3, 
+          "sum": 45, 
+          "average": 15.0
+        }, 
+        "Joe Books": {
+          "count": 1, 
+          "sum": 12, 
+          "average": 12.0
+        }, 
+        "Viking Adult": {
+          "count": 13, 
+          "sum": 233, 
+          "average": 17.923076923076923
+        }, 
+        "Blue Rider Press": {
+          "count": 4, 
+          "sum": 235, 
+          "average": 58.75
+        }, 
+        "Thorsons": {
+          "count": 2, 
+          "sum": 16, 
+          "average": 8.0
+        }, 
+        "HarperBusiness": {
+          "count": 10, 
+          "sum": 136, 
+          "average": 13.6
+        }, 
+        "Alfred A. Knopf BFYR": {
+          "count": 3, 
+          "sum": 7, 
+          "average": 2.3333333333333335
+        }, 
+        "Minotaur Books": {
+          "count": 19, 
+          "sum": 625, 
+          "average": 32.89473684210526
+        }, 
+        "Random House Trade Paperbacks": {
+          "count": 15, 
+          "sum": 312, 
+          "average": 20.8
+        }, 
+        "BradyGames": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Renaissance Books": {
+          "count": 1, 
+          "sum": 12, 
+          "average": 12.0
+        }, 
+        "Harper Perennial": {
+          "count": 8, 
+          "sum": 97, 
+          "average": 12.125
+        }, 
+        "Viking Children's": {
+          "count": 3, 
+          "sum": 16, 
+          "average": 5.333333333333333
+        }, 
+        "North Point Press": {
+          "count": 3, 
+          "sum": 27, 
+          "average": 9.0
+        }, 
+        "Simon & Schuster Books for Young Readers": {
+          "count": 22, 
+          "sum": 237, 
+          "average": 10.772727272727273
+        }, 
+        "Random House": {
+          "count": 42, 
+          "sum": 863, 
+          "average": 20.547619047619047
+        }, 
+        "Schocken": {
+          "count": 3, 
+          "sum": 14, 
+          "average": 4.666666666666667
+        }, 
+        "Meadowbrook": {
+          "count": 2, 
+          "sum": 7, 
+          "average": 3.5
+        }, 
+        "HarperFestival": {
+          "count": 3, 
+          "sum": 28, 
+          "average": 9.333333333333334
+        }, 
+        "Grand Central Publishing": {
+          "count": 38, 
+          "sum": 1245, 
+          "average": 32.76315789473684
+        }, 
+        "Zinc Ink": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Entangled: Teen": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Scientific American": {
+          "count": 1, 
+          "sum": 2, 
+          "average": 2.0
+        }, 
+        "Ecco": {
+          "count": 12, 
+          "sum": 255, 
+          "average": 21.25
+        }, 
+        "Presidio Press": {
+          "count": 1, 
+          "sum": 66, 
+          "average": 66.0
+        }, 
+        "Ripley Publishing": {
+          "count": 4, 
+          "sum": 13, 
+          "average": 3.25
+        }, 
+        "FENN-M&S": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Entangled: Brazen": {
+          "count": 12, 
+          "sum": 1265, 
+          "average": 105.41666666666667
+        }, 
+        "LucasBooks": {
+          "count": 41, 
+          "sum": 340, 
+          "average": 8.292682926829269
+        }, 
+        "Piatkus": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Palgrave Macmillan": {
+          "count": 11, 
+          "sum": 62, 
+          "average": 5.636363636363637
+        }, 
+        "Broadway Books": {
+          "count": 35, 
+          "sum": 1264, 
+          "average": 36.114285714285714
+        }, 
+        "Random House Books for Young Readers": {
+          "count": 94, 
+          "sum": 690, 
+          "average": 7.340425531914893
+        }, 
+        "Overlook": {
+          "count": 2, 
+          "sum": 7, 
+          "average": 3.5
+        }, 
+        "Threshold Editions": {
+          "count": 6, 
+          "sum": 45, 
+          "average": 7.5
+        }, 
+        "William Morrow": {
+          "count": 41, 
+          "sum": 1845, 
+          "average": 45.0
+        }, 
+        "Twelve": {
+          "count": 7, 
+          "sum": 81, 
+          "average": 11.571428571428571
+        }, 
+        "Delta": {
+          "count": 2, 
+          "sum": 19, 
+          "average": 9.5
+        }, 
+        "St. Martin's True Crime": {
+          "count": 1, 
+          "sum": 11, 
+          "average": 11.0
+        }, 
+        "Little A": {
+          "count": 1, 
+          "sum": 14, 
+          "average": 14.0
+        }, 
+        "Jove": {
+          "count": 20, 
+          "sum": 1050, 
+          "average": 52.5
+        }, 
+        "Jet City Comics": {
+          "count": 1, 
+          "sum": 34, 
+          "average": 34.0
+        }, 
+        "Island Books": {
+          "count": 1, 
+          "sum": 55, 
+          "average": 55.0
+        }, 
+        "Balzer + Bray": {
+          "count": 8, 
+          "sum": 113, 
+          "average": 14.125
+        }, 
+        "Entangled: Indulgence": {
+          "count": 2, 
+          "sum": 220, 
+          "average": 110.0
+        }, 
+        "Dutton Adult": {
+          "count": 14, 
+          "sum": 477, 
+          "average": 34.07142857142857
+        }, 
+        "Orb Books": {
+          "count": 4, 
+          "sum": 23, 
+          "average": 5.75
+        }, 
+        "Laurel Leaf": {
+          "count": 5, 
+          "sum": 99, 
+          "average": 19.8
+        }, 
+        "Aerie": {
+          "count": 1, 
+          "sum": 13, 
+          "average": 13.0
+        }, 
+        "Current": {
+          "count": 1, 
+          "sum": 3, 
+          "average": 3.0
+        }, 
+        "Back Bay Books": {
+          "count": 3, 
+          "sum": 124, 
+          "average": 41.333333333333336
+        }, 
+        "HP": {
+          "count": 1, 
+          "sum": 1, 
+          "average": 1.0
+        }, 
+        "Robin Corey Books": {
+          "count": 1, 
+          "sum": 2, 
+          "average": 2.0
+        }, 
+        "It Books": {
+          "count": 14, 
+          "sum": 403, 
+          "average": 28.785714285714285
+        }, 
+        "Peterson's": {
+          "count": 2, 
+          "sum": 5, 
+          "average": 2.5
+        }, 
+        "Grosset & Dunlap": {
+          "count": 50, 
+          "sum": 318, 
+          "average": 6.36
+        }, 
+        "Crown": {
+          "count": 11, 
+          "sum": 187, 
+          "average": 17.0
+        }, 
+        "FSG Originals": {
+          "count": 2, 
+          "sum": 127, 
+          "average": 63.5
+        }, 
+        "Orion": {
+          "count": 1, 
+          "sum": 3, 
+          "average": 3.0
+        }, 
+        "Katherine Tegen Books": {
+          "count": 7, 
+          "sum": 257, 
+          "average": 36.714285714285715
+        }, 
+        "(Single-Author Publisher)": {
+          "count": 1757, 
+          "sum": 27979, 
+          "average": 15.92430278884462
+        }, 
+        "HarperCollins": {
+          "count": 123, 
+          "sum": 2030, 
+          "average": 16.504065040650406
+        }, 
+        "WaterBrook Press": {
+          "count": 13, 
+          "sum": 207, 
+          "average": 15.923076923076923
+        }, 
+        "Putnam Juvenile": {
+          "count": 2, 
+          "sum": 54, 
+          "average": 27.0
+        }, 
+        "Image": {
+          "count": 5, 
+          "sum": 32, 
+          "average": 6.4
+        }, 
+        "Crimeline": {
+          "count": 2, 
+          "sum": 34, 
+          "average": 17.0
+        }, 
+        "Hill and Wang": {
+          "count": 1, 
+          "sum": 1, 
+          "average": 1.0
+        }, 
+        "Delacorte Press": {
+          "count": 27, 
+          "sum": 1695, 
+          "average": 62.77777777777778
+        }, 
+        "Broadside e-books": {
+          "count": 1, 
+          "sum": 2, 
+          "average": 2.0
+        }, 
+        "Wellspring/Ballantine": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Philomel": {
+          "count": 2, 
+          "sum": 20, 
+          "average": 10.0
+        }, 
+        "Center Street": {
+          "count": 3, 
+          "sum": 388, 
+          "average": 129.33333333333334
+        }, 
+        "Margaret K. McElderry Books": {
+          "count": 8, 
+          "sum": 641, 
+          "average": 80.125
+        }, 
+        "The Friday Project": {
+          "count": 1, 
+          "sum": 11, 
+          "average": 11.0
+        }, 
+        "Ballantine Books": {
+          "count": 71, 
+          "sum": 1569, 
+          "average": 22.098591549295776
+        }, 
+        "Atria Books/Beyond Words": {
+          "count": 2, 
+          "sum": 10, 
+          "average": 5.0
+        }, 
+        "Tundra Books": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Crown Forum": {
+          "count": 2, 
+          "sum": 13, 
+          "average": 6.5
+        }, 
+        "Scribner": {
+          "count": 57, 
+          "sum": 1200, 
+          "average": 21.05263157894737
+        }, 
+        "Scientific American / Farrar Straus and Giroux": {
+          "count": 1, 
+          "sum": 5, 
+          "average": 5.0
+        }, 
+        "Peterson Institute for International Economics": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Crown Business": {
+          "count": 26, 
+          "sum": 313, 
+          "average": 12.038461538461538
+        }, 
+        "Pocket Books/Star Trek": {
+          "count": 27, 
+          "sum": 162, 
+          "average": 6.0
+        }, 
+        "Doubleday": {
+          "count": 18, 
+          "sum": 365, 
+          "average": 20.27777777777778
+        }, 
+        "Delacorte Books for Young Readers": {
+          "count": 9, 
+          "sum": 178, 
+          "average": 19.77777777777778
+        }, 
+        "Henry Holt and Co.": {
+          "count": 24, 
+          "sum": 406, 
+          "average": 16.916666666666668
+        }, 
+        "Zonderkidz": {
+          "count": 14, 
+          "sum": 69, 
+          "average": 4.928571428571429
+        }, 
+        "Papercutz": {
+          "count": 4, 
+          "sum": 12, 
+          "average": 3.0
+        }, 
+        "Atria Books": {
+          "count": 47, 
+          "sum": 1301, 
+          "average": 27.680851063829788
+        }, 
+        "(Small or Medium Publisher)": {
+          "count": 4507, 
+          "sum": 52716, 
+          "average": 11.696472154426448
+        }, 
+        "Flash Point": {
+          "count": 1, 
+          "sum": 14, 
+          "average": 14.0
+        }, 
+        "Onyx": {
+          "count": 1, 
+          "sum": 21, 
+          "average": 21.0
+        }, 
+        "Dell": {
+          "count": 21, 
+          "sum": 1439, 
+          "average": 68.52380952380952
+        }, 
+        "Atria / 37 Ink": {
+          "count": 1, 
+          "sum": 12, 
+          "average": 12.0
+        }, 
+        "HarperOne": {
+          "count": 18, 
+          "sum": 312, 
+          "average": 17.333333333333332
+        }, 
+        "Princeton Review": {
+          "count": 5, 
+          "sum": 16, 
+          "average": 3.2
+        }, 
+        "DAW": {
+          "count": 7, 
+          "sum": 64, 
+          "average": 9.142857142857142
+        }, 
+        "Deepak Chopra": {
+          "count": 1, 
+          "sum": 2, 
+          "average": 2.0
+        }, 
+        "Washington Square Press": {
+          "count": 2, 
+          "sum": 9, 
+          "average": 4.5
+        }, 
+        "Tarcher": {
+          "count": 10, 
+          "sum": 99, 
+          "average": 9.9
+        }, 
+        "Times Books": {
+          "count": 4, 
+          "sum": 24, 
+          "average": 6.0
+        }, 
+        "William Morrow Cookbooks": {
+          "count": 7, 
+          "sum": 62, 
+          "average": 8.857142857142858
+        }, 
+        "Fodor's": {
+          "count": 3, 
+          "sum": 15, 
+          "average": 5.0
+        }, 
+        "Signet": {
+          "count": 33, 
+          "sum": 1404, 
+          "average": 42.54545454545455
+        }, 
+        "Nan A. Talese": {
+          "count": 3, 
+          "sum": 142, 
+          "average": 47.333333333333336
+        }, 
+        "Square Fish": {
+          "count": 2, 
+          "sum": 8, 
+          "average": 4.0
+        }, 
+        "Chicken Soup for the Soul": {
+          "count": 2, 
+          "sum": 4, 
+          "average": 2.0
+        }, 
+        "Ace": {
+          "count": 18, 
+          "sum": 533, 
+          "average": 29.61111111111111
+        }, 
+        "Prentice Hall Press": {
+          "count": 4, 
+          "sum": 34, 
+          "average": 8.5
+        }, 
+        "Free Press": {
+          "count": 28, 
+          "sum": 194, 
+          "average": 6.928571428571429
+        }, 
+        "World Wrestling Entertainment": {
+          "count": 1, 
+          "sum": 6, 
+          "average": 6.0
+        }, 
+        "Spectra": {
+          "count": 24, 
+          "sum": 288, 
+          "average": 12.0
+        }, 
+        "Orbit": {
+          "count": 25, 
+          "sum": 472, 
+          "average": 18.88
+        }, 
+        "Spiegel & Grau": {
+          "count": 12, 
+          "sum": 408, 
+          "average": 34.0
+        }, 
+        "Main Street Books": {
+          "count": 1, 
+          "sum": 14, 
+          "average": 14.0
+        }, 
+        "William Morrow Paperbacks": {
+          "count": 17, 
+          "sum": 334, 
+          "average": 19.647058823529413
+        }, 
+        "Crossing Press": {
+          "count": 2, 
+          "sum": 7, 
+          "average": 3.5
+        }, 
+        "LB Kids": {
+          "count": 2, 
+          "sum": 12, 
+          "average": 6.0
+        }, 
+        "Fawcett": {
+          "count": 1, 
+          "sum": 13, 
+          "average": 13.0
+        }, 
+        "Sarah Crichton Books": {
+          "count": 3, 
+          "sum": 107, 
+          "average": 35.666666666666664
+        }, 
+        "Vision": {
+          "count": 2, 
+          "sum": 78, 
+          "average": 39.0
+        }, 
+        "Farrar Straus and Giroux": {
+          "count": 49, 
+          "sum": 1154, 
+          "average": 23.551020408163264
+        }, 
+        "Holt Paperbacks": {
+          "count": 12, 
+          "sum": 210, 
+          "average": 17.5
+        }, 
+        "Multnomah Books": {
+          "count": 4, 
+          "sum": 118, 
+          "average": 29.5
+        }, 
+        "Grupo Nelson": {
+          "count": 2, 
+          "sum": 25, 
+          "average": 12.5
+        }, 
+        "Simon Spotlight": {
+          "count": 8, 
+          "sum": 38, 
+          "average": 4.75
+        }, 
+        "HarperTrue": {
+          "count": 1, 
+          "sum": 94, 
+          "average": 94.0
+        }, 
+        "Business Plus": {
+          "count": 9, 
+          "sum": 88, 
+          "average": 9.777777777777779
+        }, 
+        "Wendy Lamb Books": {
+          "count": 3, 
+          "sum": 37, 
+          "average": 12.333333333333334
+        }, 
+        "Two Lions": {
+          "count": 32, 
+          "sum": 427, 
+          "average": 13.34375
+        }, 
+        "Knopf Group E-Books": {
+          "count": 1, 
+          "sum": 3, 
+          "average": 3.0
+        }, 
+        "HarperCollinsChildren'sBooks": {
+          "count": 1, 
+          "sum": 1, 
+          "average": 1.0
+        }, 
+        "Truman Talley Books": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Aladdin": {
+          "count": 32, 
+          "sum": 220, 
+          "average": 6.875
+        }, 
+        "Random House/Disney": {
+          "count": 5, 
+          "sum": 19, 
+          "average": 3.8
+        }, 
+        "Razorbill": {
+          "count": 7, 
+          "sum": 884, 
+          "average": 126.28571428571429
+        }, 
+        "Ten Speed Press": {
+          "count": 24, 
+          "sum": 158, 
+          "average": 6.583333333333333
+        }, 
+        "The Penguin Press": {
+          "count": 11, 
+          "sum": 275, 
+          "average": 25.0
+        }
+      }, 
+      "publishers.[0].statistics.total reviews": {
+        "Gallery Books": {
+          "count": 30, 
+          "sum": 7177, 
+          "average": 239.23333333333332
+        }, 
+        "Dial": {
+          "count": 4, 
+          "sum": 317, 
+          "average": 79.25
+        }, 
+        "McClelland & Stewart": {
+          "count": 1, 
+          "sum": 51, 
+          "average": 51.0
+        }, 
+        "Tor Books": {
+          "count": 41, 
+          "sum": 11750, 
+          "average": 286.5853658536585
+        }, 
+        "ESPN": {
+          "count": 2, 
+          "sum": 404, 
+          "average": 202.0
+        }, 
+        "Bantam": {
+          "count": 77, 
+          "sum": 19912, 
+          "average": 258.5974025974026
+        }, 
+        "Harper": {
+          "count": 28, 
+          "sum": 10800, 
+          "average": 385.7142857142857
+        }, 
+        "Portfolio": {
+          "count": 40, 
+          "sum": 4875, 
+          "average": 121.875
+        }, 
+        "Plume": {
+          "count": 35, 
+          "sum": 8551, 
+          "average": 244.31428571428572
+        }, 
+        "Jericho Books": {
+          "count": 2, 
+          "sum": 580, 
+          "average": 290.0
+        }, 
+        "HarperTeen": {
+          "count": 15, 
+          "sum": 2595, 
+          "average": 173.0
+        }, 
+        "NAL": {
+          "count": 20, 
+          "sum": 3110, 
+          "average": 155.5
+        }, 
+        "Avon Impulse": {
+          "count": 9, 
+          "sum": 664, 
+          "average": 73.77777777777777
+        }, 
+        "AmazonEncore": {
+          "count": 6, 
+          "sum": 1683, 
+          "average": 280.5
+        }, 
+        "Dial Press Trade Paperback": {
+          "count": 2, 
+          "sum": 323, 
+          "average": 161.5
+        }, 
+        "Villard": {
+          "count": 1, 
+          "sum": 175, 
+          "average": 175.0
+        }, 
+        "Golden/Disney": {
+          "count": 3, 
+          "sum": 114, 
+          "average": 38.0
+        }, 
+        "RH/Disney": {
+          "count": 2, 
+          "sum": 10, 
+          "average": 5.0
+        }, 
+        "Hodder & Stoughton": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Newmarket Press": {
+          "count": 1, 
+          "sum": 27, 
+          "average": 27.0
+        }, 
+        "Little Brown and Company": {
+          "count": 67, 
+          "sum": 22521, 
+          "average": 336.13432835820896
+        }, 
+        "Grand Central Life & Style": {
+          "count": 10, 
+          "sum": 2877, 
+          "average": 287.7
+        }, 
+        "Perigee": {
+          "count": 9, 
+          "sum": 2246, 
+          "average": 249.55555555555554
+        }, 
+        "Golden Books": {
+          "count": 3, 
+          "sum": 258, 
+          "average": 86.0
+        }, 
+        "Thomas Dunne Books": {
+          "count": 17, 
+          "sum": 2035, 
+          "average": 119.70588235294117
+        }, 
+        "HarperSport": {
+          "count": 2, 
+          "sum": 35, 
+          "average": 17.5
+        }, 
+        "Tor Teen": {
+          "count": 1, 
+          "sum": 136, 
+          "average": 136.0
+        }, 
+        "Crown Archetype": {
+          "count": 13, 
+          "sum": 2728, 
+          "average": 209.84615384615384
+        }, 
+        "Harper Element": {
+          "count": 8, 
+          "sum": 645, 
+          "average": 80.625
+        }, 
+        "(Indie Publisher)": {
+          "count": 2819, 
+          "sum": 199998, 
+          "average": 70.94643490599503
+        }, 
+        "Zondervan": {
+          "count": 31, 
+          "sum": 7129, 
+          "average": 229.96774193548387
+        }, 
+        "HarperWave": {
+          "count": 3, 
+          "sum": 823, 
+          "average": 274.3333333333333
+        }, 
+        "Studio": {
+          "count": 1, 
+          "sum": 37, 
+          "average": 37.0
+        }, 
+        "Bantam Dell": {
+          "count": 1, 
+          "sum": 109, 
+          "average": 109.0
+        }, 
+        "Pocket Star": {
+          "count": 5, 
+          "sum": 232, 
+          "average": 46.4
+        }, 
+        "Avon": {
+          "count": 10, 
+          "sum": 1401, 
+          "average": 140.1
+        }, 
+        "Thomas & Mercer": {
+          "count": 57, 
+          "sum": 14386, 
+          "average": 252.3859649122807
+        }, 
+        "Thomas Nelson": {
+          "count": 58, 
+          "sum": 10917, 
+          "average": 188.22413793103448
+        }, 
+        "Penguin": {
+          "count": 20, 
+          "sum": 3358, 
+          "average": 167.9
+        }, 
+        "Billboard Books": {
+          "count": 2, 
+          "sum": 54, 
+          "average": 27.0
+        }, 
+        "Simon Pulse": {
+          "count": 9, 
+          "sum": 2976, 
+          "average": 330.6666666666667
+        }, 
+        "Little Brown Books for Young Readers": {
+          "count": 33, 
+          "sum": 7157, 
+          "average": 216.87878787878788
+        }, 
+        "Watson-Guptill": {
+          "count": 8, 
+          "sum": 258, 
+          "average": 32.25
+        }, 
+        "Harper Paperbacks": {
+          "count": 1, 
+          "sum": 39, 
+          "average": 39.0
+        }, 
+        "Simon & Schuster": {
+          "count": 95, 
+          "sum": 21681, 
+          "average": 228.22105263157894
+        }, 
+        "Putnam Adult": {
+          "count": 17, 
+          "sum": 4611, 
+          "average": 271.2352941176471
+        }, 
+        "Reagan Arthur Books": {
+          "count": 1, 
+          "sum": 440, 
+          "average": 440.0
+        }, 
+        "William Morrow Impulse": {
+          "count": 1, 
+          "sum": 51, 
+          "average": 51.0
+        }, 
+        "Puffin": {
+          "count": 52, 
+          "sum": 7819, 
+          "average": 150.3653846153846
+        }, 
+        "Metropolitan Books": {
+          "count": 7, 
+          "sum": 614, 
+          "average": 87.71428571428571
+        }, 
+        "Potter Style": {
+          "count": 2, 
+          "sum": 72, 
+          "average": 36.0
+        }, 
+        "Poppy": {
+          "count": 1, 
+          "sum": 162, 
+          "average": 162.0
+        }, 
+        "Three Rivers Press": {
+          "count": 8, 
+          "sum": 1290, 
+          "average": 161.25
+        }, 
+        "Little Simon": {
+          "count": 1, 
+          "sum": 6, 
+          "average": 6.0
+        }, 
+        "The Dial Press": {
+          "count": 2, 
+          "sum": 1106, 
+          "average": 553.0
+        }, 
+        "Hudson Street Press": {
+          "count": 1, 
+          "sum": 67, 
+          "average": 67.0
+        }, 
+        "St. Martin's Paperbacks": {
+          "count": 9, 
+          "sum": 755, 
+          "average": 83.88888888888889
+        }, 
+        "Celestial Arts": {
+          "count": 1, 
+          "sum": 414, 
+          "average": 414.0
+        }, 
+        "HarperTorch": {
+          "count": 1, 
+          "sum": 396, 
+          "average": 396.0
+        }, 
+        "Entangled: Bliss": {
+          "count": 1, 
+          "sum": 116, 
+          "average": 116.0
+        }, 
+        "Debbie Macomber Books": {
+          "count": 1, 
+          "sum": 29, 
+          "average": 29.0
+        }, 
+        "Roaring Brook Press": {
+          "count": 3, 
+          "sum": 112, 
+          "average": 37.333333333333336
+        }, 
+        "Atheneum Books for Young Readers": {
+          "count": 19, 
+          "sum": 2629, 
+          "average": 138.3684210526316
+        }, 
+        "Pocket Books": {
+          "count": 36, 
+          "sum": 4881, 
+          "average": 135.58333333333334
+        }, 
+        "Amazon Publishing": {
+          "count": 11, 
+          "sum": 2044, 
+          "average": 185.8181818181818
+        }, 
+        "St. Martin's Press": {
+          "count": 84, 
+          "sum": 19551, 
+          "average": 232.75
+        }, 
+        "HarperPerennial Classics": {
+          "count": 2, 
+          "sum": 600, 
+          "average": 300.0
+        }, 
+        "Pintail": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "HarperCollins e-books": {
+          "count": 179, 
+          "sum": 36226, 
+          "average": 202.37988826815644
+        }, 
+        "Gotham Books": {
+          "count": 11, 
+          "sum": 767, 
+          "average": 69.72727272727273
+        }, 
+        "MTV Books": {
+          "count": 2, 
+          "sum": 872, 
+          "average": 436.0
+        }, 
+        "Vintage": {
+          "count": 78, 
+          "sum": 16977, 
+          "average": 217.65384615384616
+        }, 
+        "Clarkson Potter": {
+          "count": 14, 
+          "sum": 1701, 
+          "average": 121.5
+        }, 
+        "Grand Harbor Press": {
+          "count": 1, 
+          "sum": 22, 
+          "average": 22.0
+        }, 
+        "Harper Thorsons": {
+          "count": 1, 
+          "sum": 28, 
+          "average": 28.0
+        }, 
+        "Picador": {
+          "count": 4, 
+          "sum": 338, 
+          "average": 84.5
+        }, 
+        "Harmony": {
+          "count": 36, 
+          "sum": 6788, 
+          "average": 188.55555555555554
+        }, 
+        "Signet Classic": {
+          "count": 3, 
+          "sum": 247, 
+          "average": 82.33333333333333
+        }, 
+        "47North": {
+          "count": 26, 
+          "sum": 6936, 
+          "average": 266.7692307692308
+        }, 
+        "HarperPress": {
+          "count": 2, 
+          "sum": 38, 
+          "average": 19.0
+        }, 
+        "Collins": {
+          "count": 5, 
+          "sum": 155, 
+          "average": 31.0
+        }, 
+        "Feiwel & Friends": {
+          "count": 4, 
+          "sum": 1172, 
+          "average": 293.0
+        }, 
+        "DK Publishing": {
+          "count": 15, 
+          "sum": 276, 
+          "average": 18.4
+        }, 
+        "Amphoto Books": {
+          "count": 2, 
+          "sum": 174, 
+          "average": 87.0
+        }, 
+        "Skyscape": {
+          "count": 6, 
+          "sum": 2796, 
+          "average": 466.0
+        }, 
+        "Avery": {
+          "count": 10, 
+          "sum": 723, 
+          "average": 72.3
+        }, 
+        "Faber & Faber": {
+          "count": 4, 
+          "sum": 314, 
+          "average": 78.5
+        }, 
+        "AmazonCrossing": {
+          "count": 13, 
+          "sum": 2754, 
+          "average": 211.84615384615384
+        }, 
+        "Simon & Schuster Audio": {
+          "count": 1, 
+          "sum": 567, 
+          "average": 567.0
+        }, 
+        "Del Rey": {
+          "count": 23, 
+          "sum": 5978, 
+          "average": 259.9130434782609
+        }, 
+        "Graywolf Press": {
+          "count": 1, 
+          "sum": 41, 
+          "average": 41.0
+        }, 
+        "Howard Books": {
+          "count": 10, 
+          "sum": 2994, 
+          "average": 299.4
+        }, 
+        "First Second": {
+          "count": 2, 
+          "sum": 60, 
+          "average": 30.0
+        }, 
+        "FaithWords": {
+          "count": 5, 
+          "sum": 1600, 
+          "average": 320.0
+        }, 
+        "Penguin Classic": {
+          "count": 8, 
+          "sum": 1546, 
+          "average": 193.25
+        }, 
+        "Montlake Romance": {
+          "count": 34, 
+          "sum": 9622, 
+          "average": 283.0
+        }, 
+        "Rough Guides": {
+          "count": 2, 
+          "sum": 15, 
+          "average": 7.5
+        }, 
+        "Modern Library": {
+          "count": 4, 
+          "sum": 847, 
+          "average": 211.75
+        }, 
+        "Knopf": {
+          "count": 23, 
+          "sum": 4536, 
+          "average": 197.2173913043478
+        }, 
+        "Forever": {
+          "count": 6, 
+          "sum": 769, 
+          "average": 128.16666666666666
+        }, 
+        "Riverhead": {
+          "count": 24, 
+          "sum": 5166, 
+          "average": 215.25
+        }, 
+        "Mulholland Books": {
+          "count": 4, 
+          "sum": 222, 
+          "average": 55.5
+        }, 
+        "Yearling": {
+          "count": 4, 
+          "sum": 889, 
+          "average": 222.25
+        }, 
+        "Hogarth": {
+          "count": 1, 
+          "sum": 1143, 
+          "average": 1143.0
+        }, 
+        "Bantam Classics": {
+          "count": 1, 
+          "sum": 40, 
+          "average": 40.0
+        }, 
+        "Potter Craft": {
+          "count": 4, 
+          "sum": 243, 
+          "average": 60.75
+        }, 
+        "Sentinel": {
+          "count": 1, 
+          "sum": 768, 
+          "average": 768.0
+        }, 
+        "Atria/Emily Bestler Books": {
+          "count": 3, 
+          "sum": 2364, 
+          "average": 788.0
+        }, 
+        "Penguin Books": {
+          "count": 72, 
+          "sum": 14510, 
+          "average": 201.52777777777777
+        }, 
+        "Lone Eagle": {
+          "count": 1, 
+          "sum": 21, 
+          "average": 21.0
+        }, 
+        "Berkley": {
+          "count": 79, 
+          "sum": 18010, 
+          "average": 227.9746835443038
+        }, 
+        "Harper Voyager": {
+          "count": 6, 
+          "sum": 1605, 
+          "average": 267.5
+        }, 
+        "Hyperion": {
+          "count": 36, 
+          "sum": 11786, 
+          "average": 327.3888888888889
+        }, 
+        "Anchor": {
+          "count": 34, 
+          "sum": 12598, 
+          "average": 370.52941176470586
+        }, 
+        "Touchstone": {
+          "count": 29, 
+          "sum": 5565, 
+          "average": 191.89655172413794
+        }, 
+        "Forge Books": {
+          "count": 8, 
+          "sum": 512, 
+          "average": 64.0
+        }, 
+        "Celebra": {
+          "count": 2, 
+          "sum": 431, 
+          "average": 215.5
+        }, 
+        "Knopf Books for Young Readers": {
+          "count": 16, 
+          "sum": 3994, 
+          "average": 249.625
+        }, 
+        "Loveswept": {
+          "count": 9, 
+          "sum": 1459, 
+          "average": 162.11111111111111
+        }, 
+        "Roc": {
+          "count": 5, 
+          "sum": 783, 
+          "average": 156.6
+        }, 
+        "St. Martin's Griffin": {
+          "count": 23, 
+          "sum": 2654, 
+          "average": 115.3913043478261
+        }, 
+        "Pantheon": {
+          "count": 3, 
+          "sum": 557, 
+          "average": 185.66666666666666
+        }, 
+        "Reader's Digest": {
+          "count": 2, 
+          "sum": 188, 
+          "average": 94.0
+        }, 
+        "InterMix": {
+          "count": 1, 
+          "sum": 41, 
+          "average": 41.0
+        }, 
+        "Witness Impulse": {
+          "count": 7, 
+          "sum": 160, 
+          "average": 22.857142857142858
+        }, 
+        "Dutton Children's": {
+          "count": 2, 
+          "sum": 300, 
+          "average": 150.0
+        }, 
+        "Speak": {
+          "count": 9, 
+          "sum": 6114, 
+          "average": 679.3333333333334
+        }, 
+        "Yen Press": {
+          "count": 2, 
+          "sum": 34, 
+          "average": 17.0
+        }, 
+        "Greenwillow Books": {
+          "count": 8, 
+          "sum": 1111, 
+          "average": 138.875
+        }, 
+        "Schwartz & Wade": {
+          "count": 1, 
+          "sum": 36, 
+          "average": 36.0
+        }, 
+        "Page Street Publishing": {
+          "count": 2, 
+          "sum": 79, 
+          "average": 39.5
+        }, 
+        "Vintage Espanol": {
+          "count": 3, 
+          "sum": 373, 
+          "average": 124.33333333333333
+        }, 
+        "Joe Books": {
+          "count": 1, 
+          "sum": 12, 
+          "average": 12.0
+        }, 
+        "Viking Adult": {
+          "count": 13, 
+          "sum": 1749, 
+          "average": 134.53846153846155
+        }, 
+        "Blue Rider Press": {
+          "count": 4, 
+          "sum": 819, 
+          "average": 204.75
+        }, 
+        "Thorsons": {
+          "count": 2, 
+          "sum": 46, 
+          "average": 23.0
+        }, 
+        "HarperBusiness": {
+          "count": 10, 
+          "sum": 647, 
+          "average": 64.7
+        }, 
+        "Alfred A. Knopf BFYR": {
+          "count": 3, 
+          "sum": 34, 
+          "average": 11.333333333333334
+        }, 
+        "Minotaur Books": {
+          "count": 19, 
+          "sum": 3343, 
+          "average": 175.94736842105263
+        }, 
+        "Random House Trade Paperbacks": {
+          "count": 15, 
+          "sum": 4691, 
+          "average": 312.73333333333335
+        }, 
+        "BradyGames": {
+          "count": 1, 
+          "sum": 32, 
+          "average": 32.0
+        }, 
+        "Renaissance Books": {
+          "count": 1, 
+          "sum": 55, 
+          "average": 55.0
+        }, 
+        "Harper Perennial": {
+          "count": 8, 
+          "sum": 2100, 
+          "average": 262.5
+        }, 
+        "Viking Children's": {
+          "count": 3, 
+          "sum": 121, 
+          "average": 40.333333333333336
+        }, 
+        "North Point Press": {
+          "count": 3, 
+          "sum": 572, 
+          "average": 190.66666666666666
+        }, 
+        "Simon & Schuster Books for Young Readers": {
+          "count": 22, 
+          "sum": 3438, 
+          "average": 156.27272727272728
+        }, 
+        "Random House": {
+          "count": 42, 
+          "sum": 9976, 
+          "average": 237.52380952380952
+        }, 
+        "Schocken": {
+          "count": 3, 
+          "sum": 199, 
+          "average": 66.33333333333333
+        }, 
+        "Meadowbrook": {
+          "count": 2, 
+          "sum": 137, 
+          "average": 68.5
+        }, 
+        "HarperFestival": {
+          "count": 3, 
+          "sum": 37, 
+          "average": 12.333333333333334
+        }, 
+        "Grand Central Publishing": {
+          "count": 38, 
+          "sum": 12709, 
+          "average": 334.44736842105266
+        }, 
+        "Zinc Ink": {
+          "count": 1, 
+          "sum": 58, 
+          "average": 58.0
+        }, 
+        "Entangled: Teen": {
+          "count": 1, 
+          "sum": 75, 
+          "average": 75.0
+        }, 
+        "Scientific American": {
+          "count": 1, 
+          "sum": 18, 
+          "average": 18.0
+        }, 
+        "Ecco": {
+          "count": 12, 
+          "sum": 1396, 
+          "average": 116.33333333333333
+        }, 
+        "Presidio Press": {
+          "count": 1, 
+          "sum": 405, 
+          "average": 405.0
+        }, 
+        "Ripley Publishing": {
+          "count": 4, 
+          "sum": 24, 
+          "average": 6.0
+        }, 
+        "FENN-M&S": {
+          "count": 1, 
+          "sum": 11, 
+          "average": 11.0
+        }, 
+        "Entangled: Brazen": {
+          "count": 12, 
+          "sum": 2444, 
+          "average": 203.66666666666666
+        }, 
+        "LucasBooks": {
+          "count": 41, 
+          "sum": 7332, 
+          "average": 178.82926829268294
+        }, 
+        "Piatkus": {
+          "count": 1, 
+          "sum": 355, 
+          "average": 355.0
+        }, 
+        "Palgrave Macmillan": {
+          "count": 11, 
+          "sum": 414, 
+          "average": 37.63636363636363
+        }, 
+        "Broadway Books": {
+          "count": 35, 
+          "sum": 13133, 
+          "average": 375.22857142857146
+        }, 
+        "Random House Books for Young Readers": {
+          "count": 94, 
+          "sum": 7276, 
+          "average": 77.40425531914893
+        }, 
+        "Overlook": {
+          "count": 2, 
+          "sum": 70, 
+          "average": 35.0
+        }, 
+        "Threshold Editions": {
+          "count": 6, 
+          "sum": 1850, 
+          "average": 308.3333333333333
+        }, 
+        "William Morrow": {
+          "count": 41, 
+          "sum": 14309, 
+          "average": 349.0
+        }, 
+        "Twelve": {
+          "count": 7, 
+          "sum": 2660, 
+          "average": 380.0
+        }, 
+        "Delta": {
+          "count": 2, 
+          "sum": 290, 
+          "average": 145.0
+        }, 
+        "St. Martin's True Crime": {
+          "count": 1, 
+          "sum": 94, 
+          "average": 94.0
+        }, 
+        "Little A": {
+          "count": 1, 
+          "sum": 82, 
+          "average": 82.0
+        }, 
+        "Jove": {
+          "count": 20, 
+          "sum": 5828, 
+          "average": 291.4
+        }, 
+        "Jet City Comics": {
+          "count": 1, 
+          "sum": 26, 
+          "average": 26.0
+        }, 
+        "Island Books": {
+          "count": 1, 
+          "sum": 218, 
+          "average": 218.0
+        }, 
+        "Balzer + Bray": {
+          "count": 8, 
+          "sum": 738, 
+          "average": 92.25
+        }, 
+        "Entangled: Indulgence": {
+          "count": 2, 
+          "sum": 136, 
+          "average": 68.0
+        }, 
+        "Dutton Adult": {
+          "count": 14, 
+          "sum": 2237, 
+          "average": 159.78571428571428
+        }, 
+        "Orb Books": {
+          "count": 4, 
+          "sum": 501, 
+          "average": 125.25
+        }, 
+        "Laurel Leaf": {
+          "count": 5, 
+          "sum": 2320, 
+          "average": 464.0
+        }, 
+        "Aerie": {
+          "count": 1, 
+          "sum": 865, 
+          "average": 865.0
+        }, 
+        "Current": {
+          "count": 1, 
+          "sum": 32, 
+          "average": 32.0
+        }, 
+        "Back Bay Books": {
+          "count": 3, 
+          "sum": 2372, 
+          "average": 790.6666666666666
+        }, 
+        "HP": {
+          "count": 1, 
+          "sum": 7, 
+          "average": 7.0
+        }, 
+        "Robin Corey Books": {
+          "count": 1, 
+          "sum": 43, 
+          "average": 43.0
+        }, 
+        "It Books": {
+          "count": 14, 
+          "sum": 3314, 
+          "average": 236.71428571428572
+        }, 
+        "Peterson's": {
+          "count": 2, 
+          "sum": 29, 
+          "average": 14.5
+        }, 
+        "Grosset & Dunlap": {
+          "count": 50, 
+          "sum": 1854, 
+          "average": 37.08
+        }, 
+        "Crown": {
+          "count": 11, 
+          "sum": 3337, 
+          "average": 303.3636363636364
+        }, 
+        "FSG Originals": {
+          "count": 2, 
+          "sum": 224, 
+          "average": 112.0
+        }, 
+        "Orion": {
+          "count": 1, 
+          "sum": 16, 
+          "average": 16.0
+        }, 
+        "Katherine Tegen Books": {
+          "count": 7, 
+          "sum": 906, 
+          "average": 129.42857142857142
+        }, 
+        "(Single-Author Publisher)": {
+          "count": 1757, 
+          "sum": 107695, 
+          "average": 61.29482071713147
+        }, 
+        "HarperCollins": {
+          "count": 123, 
+          "sum": 19892, 
+          "average": 161.72357723577235
+        }, 
+        "WaterBrook Press": {
+          "count": 13, 
+          "sum": 4479, 
+          "average": 344.53846153846155
+        }, 
+        "Putnam Juvenile": {
+          "count": 2, 
+          "sum": 838, 
+          "average": 419.0
+        }, 
+        "Image": {
+          "count": 5, 
+          "sum": 839, 
+          "average": 167.8
+        }, 
+        "Crimeline": {
+          "count": 2, 
+          "sum": 288, 
+          "average": 144.0
+        }, 
+        "Hill and Wang": {
+          "count": 1, 
+          "sum": 9, 
+          "average": 9.0
+        }, 
+        "Delacorte Press": {
+          "count": 27, 
+          "sum": 13958, 
+          "average": 516.9629629629629
+        }, 
+        "Broadside e-books": {
+          "count": 1, 
+          "sum": 111, 
+          "average": 111.0
+        }, 
+        "Wellspring/Ballantine": {
+          "count": 1, 
+          "sum": 87, 
+          "average": 87.0
+        }, 
+        "Philomel": {
+          "count": 2, 
+          "sum": 182, 
+          "average": 91.0
+        }, 
+        "Center Street": {
+          "count": 3, 
+          "sum": 327, 
+          "average": 109.0
+        }, 
+        "Margaret K. McElderry Books": {
+          "count": 8, 
+          "sum": 3709, 
+          "average": 463.625
+        }, 
+        "The Friday Project": {
+          "count": 1, 
+          "sum": 53, 
+          "average": 53.0
+        }, 
+        "Ballantine Books": {
+          "count": 71, 
+          "sum": 16712, 
+          "average": 235.38028169014083
+        }, 
+        "Atria Books/Beyond Words": {
+          "count": 2, 
+          "sum": 255, 
+          "average": 127.5
+        }, 
+        "Tundra Books": {
+          "count": 1, 
+          "sum": 72, 
+          "average": 72.0
+        }, 
+        "Crown Forum": {
+          "count": 2, 
+          "sum": 762, 
+          "average": 381.0
+        }, 
+        "Scribner": {
+          "count": 57, 
+          "sum": 14924, 
+          "average": 261.82456140350877
+        }, 
+        "Scientific American / Farrar Straus and Giroux": {
+          "count": 1, 
+          "sum": 8, 
+          "average": 8.0
+        }, 
+        "Peterson Institute for International Economics": {
+          "count": 1, 
+          "sum": 4, 
+          "average": 4.0
+        }, 
+        "Crown Business": {
+          "count": 26, 
+          "sum": 4784, 
+          "average": 184.0
+        }, 
+        "Pocket Books/Star Trek": {
+          "count": 27, 
+          "sum": 1765, 
+          "average": 65.37037037037037
+        }, 
+        "Doubleday": {
+          "count": 18, 
+          "sum": 1734, 
+          "average": 96.33333333333333
+        }, 
+        "Delacorte Books for Young Readers": {
+          "count": 9, 
+          "sum": 1649, 
+          "average": 183.22222222222223
+        }, 
+        "Henry Holt and Co.": {
+          "count": 24, 
+          "sum": 5556, 
+          "average": 231.5
+        }, 
+        "Zonderkidz": {
+          "count": 14, 
+          "sum": 1703, 
+          "average": 121.64285714285714
+        }, 
+        "Papercutz": {
+          "count": 4, 
+          "sum": 33, 
+          "average": 8.25
+        }, 
+        "Atria Books": {
+          "count": 47, 
+          "sum": 14084, 
+          "average": 299.6595744680851
+        }, 
+        "(Small or Medium Publisher)": {
+          "count": 4507, 
+          "sum": 348797, 
+          "average": 77.39005990681163
+        }, 
+        "Flash Point": {
+          "count": 1, 
+          "sum": 110, 
+          "average": 110.0
+        }, 
+        "Onyx": {
+          "count": 1, 
+          "sum": 110, 
+          "average": 110.0
+        }, 
+        "Dell": {
+          "count": 21, 
+          "sum": 10651, 
+          "average": 507.1904761904762
+        }, 
+        "Atria / 37 Ink": {
+          "count": 1, 
+          "sum": 1490, 
+          "average": 1490.0
+        }, 
+        "HarperOne": {
+          "count": 18, 
+          "sum": 3216, 
+          "average": 178.66666666666666
+        }, 
+        "Princeton Review": {
+          "count": 5, 
+          "sum": 191, 
+          "average": 38.2
+        }, 
+        "DAW": {
+          "count": 7, 
+          "sum": 336, 
+          "average": 48.0
+        }, 
+        "Deepak Chopra": {
+          "count": 1, 
+          "sum": 16, 
+          "average": 16.0
+        }, 
+        "Washington Square Press": {
+          "count": 2, 
+          "sum": 109, 
+          "average": 54.5
+        }, 
+        "Tarcher": {
+          "count": 10, 
+          "sum": 1444, 
+          "average": 144.4
+        }, 
+        "Times Books": {
+          "count": 4, 
+          "sum": 364, 
+          "average": 91.0
+        }, 
+        "William Morrow Cookbooks": {
+          "count": 7, 
+          "sum": 458, 
+          "average": 65.42857142857143
+        }, 
+        "Fodor's": {
+          "count": 3, 
+          "sum": 17, 
+          "average": 5.666666666666667
+        }, 
+        "Signet": {
+          "count": 33, 
+          "sum": 11183, 
+          "average": 338.8787878787879
+        }, 
+        "Nan A. Talese": {
+          "count": 3, 
+          "sum": 665, 
+          "average": 221.66666666666666
+        }, 
+        "Square Fish": {
+          "count": 2, 
+          "sum": 146, 
+          "average": 73.0
+        }, 
+        "Chicken Soup for the Soul": {
+          "count": 2, 
+          "sum": 76, 
+          "average": 38.0
+        }, 
+        "Ace": {
+          "count": 18, 
+          "sum": 11127, 
+          "average": 618.1666666666666
+        }, 
+        "Prentice Hall Press": {
+          "count": 4, 
+          "sum": 494, 
+          "average": 123.5
+        }, 
+        "Free Press": {
+          "count": 28, 
+          "sum": 3867, 
+          "average": 138.10714285714286
+        }, 
+        "World Wrestling Entertainment": {
+          "count": 1, 
+          "sum": 61, 
+          "average": 61.0
+        }, 
+        "Spectra": {
+          "count": 24, 
+          "sum": 6807, 
+          "average": 283.625
+        }, 
+        "Orbit": {
+          "count": 25, 
+          "sum": 5910, 
+          "average": 236.4
+        }, 
+        "Spiegel & Grau": {
+          "count": 12, 
+          "sum": 3745, 
+          "average": 312.0833333333333
+        }, 
+        "Main Street Books": {
+          "count": 1, 
+          "sum": 309, 
+          "average": 309.0
+        }, 
+        "William Morrow Paperbacks": {
+          "count": 17, 
+          "sum": 4266, 
+          "average": 250.94117647058823
+        }, 
+        "Crossing Press": {
+          "count": 2, 
+          "sum": 119, 
+          "average": 59.5
+        }, 
+        "LB Kids": {
+          "count": 2, 
+          "sum": 50, 
+          "average": 25.0
+        }, 
+        "Fawcett": {
+          "count": 1, 
+          "sum": 221, 
+          "average": 221.0
+        }, 
+        "Sarah Crichton Books": {
+          "count": 3, 
+          "sum": 467, 
+          "average": 155.66666666666666
+        }, 
+        "Vision": {
+          "count": 2, 
+          "sum": 288, 
+          "average": 144.0
+        }, 
+        "Farrar Straus and Giroux": {
+          "count": 49, 
+          "sum": 13188, 
+          "average": 269.14285714285717
+        }, 
+        "Holt Paperbacks": {
+          "count": 12, 
+          "sum": 2022, 
+          "average": 168.5
+        }, 
+        "Multnomah Books": {
+          "count": 4, 
+          "sum": 2201, 
+          "average": 550.25
+        }, 
+        "Grupo Nelson": {
+          "count": 2, 
+          "sum": 31, 
+          "average": 15.5
+        }, 
+        "Simon Spotlight": {
+          "count": 8, 
+          "sum": 118, 
+          "average": 14.75
+        }, 
+        "HarperTrue": {
+          "count": 1, 
+          "sum": 41, 
+          "average": 41.0
+        }, 
+        "Business Plus": {
+          "count": 9, 
+          "sum": 1701, 
+          "average": 189.0
+        }, 
+        "Wendy Lamb Books": {
+          "count": 3, 
+          "sum": 562, 
+          "average": 187.33333333333334
+        }, 
+        "Two Lions": {
+          "count": 32, 
+          "sum": 2985, 
+          "average": 93.28125
+        }, 
+        "Knopf Group E-Books": {
+          "count": 1, 
+          "sum": 11, 
+          "average": 11.0
+        }, 
+        "HarperCollinsChildren'sBooks": {
+          "count": 1, 
+          "sum": 1, 
+          "average": 1.0
+        }, 
+        "Truman Talley Books": {
+          "count": 1, 
+          "sum": 167, 
+          "average": 167.0
+        }, 
+        "Aladdin": {
+          "count": 32, 
+          "sum": 1662, 
+          "average": 51.9375
+        }, 
+        "Random House/Disney": {
+          "count": 5, 
+          "sum": 41, 
+          "average": 8.2
+        }, 
+        "Razorbill": {
+          "count": 7, 
+          "sum": 3209, 
+          "average": 458.42857142857144
+        }, 
+        "Ten Speed Press": {
+          "count": 24, 
+          "sum": 1838, 
+          "average": 76.58333333333333
+        }, 
+        "The Penguin Press": {
+          "count": 11, 
+          "sum": 1790, 
+          "average": 162.72727272727272
+        }
+      }, 
+      "publishers.[0].daily average.author revenue": {
+        "Gallery Books": {
+          "count": 30, 
+          "sum": 1080.226, 
+          "average": 36.00753333333333
+        }, 
+        "Dial": {
+          "count": 4, 
+          "sum": 79.842, 
+          "average": 19.9605
         }, 
         "McClelland & Stewart": {
           "count": 1, 
@@ -12131,14 +6765,9 @@ publishers_bar = [
           "average": 4.396
         }, 
         "Tor Books": {
-          "count": 77, 
-          "sum": 3849.4439999999986, 
-          "average": 49.99277922077922
-        }, 
-        "Penguin Young Readers": {
-          "count": 1, 
-          "sum": 2.178, 
-          "average": 2.178
+          "count": 41, 
+          "sum": 1504.942, 
+          "average": 36.70590243902439
         }, 
         "ESPN": {
           "count": 2, 
@@ -12146,24 +6775,24 @@ publishers_bar = [
           "average": 15.241
         }, 
         "Bantam": {
-          "count": 132, 
-          "sum": 5696.3920000000035, 
-          "average": 43.15448484848485
+          "count": 77, 
+          "sum": 2923.3180000000007, 
+          "average": 37.96516883116883
         }, 
         "Harper": {
-          "count": 55, 
-          "sum": 4772.83, 
-          "average": 86.77872727272727
+          "count": 28, 
+          "sum": 2321.444, 
+          "average": 82.90871428571428
         }, 
         "Portfolio": {
-          "count": 81, 
-          "sum": 2317.101999999999, 
-          "average": 28.606197530864197
+          "count": 40, 
+          "sum": 1296.4640000000002, 
+          "average": 32.4116
         }, 
         "Plume": {
-          "count": 52, 
-          "sum": 1728.6519999999991, 
-          "average": 33.243307692307695
+          "count": 35, 
+          "sum": 1234.8739999999998, 
+          "average": 35.282114285714286
         }, 
         "Jericho Books": {
           "count": 2, 
@@ -12171,29 +6800,24 @@ publishers_bar = [
           "average": 32.07
         }, 
         "HarperTeen": {
-          "count": 28, 
-          "sum": 1082.676, 
-          "average": 38.666999999999994
+          "count": 15, 
+          "sum": 471.838, 
+          "average": 31.45586666666667
         }, 
         "NAL": {
-          "count": 33, 
-          "sum": 2034.7260000000006, 
-          "average": 61.65836363636363
+          "count": 20, 
+          "sum": 550.1120000000001, 
+          "average": 27.505599999999998
         }, 
         "Avon Impulse": {
-          "count": 13, 
-          "sum": 188.26399999999998, 
-          "average": 14.481846153846154
+          "count": 9, 
+          "sum": 136.388, 
+          "average": 15.154222222222224
         }, 
         "AmazonEncore": {
-          "count": 10, 
-          "sum": 687.7844999999999, 
-          "average": 68.77844999999999
-        }, 
-        "Zondervan/Youth Specialties": {
-          "count": 2, 
-          "sum": 4.4399999999999995, 
-          "average": 2.2199999999999998
+          "count": 6, 
+          "sum": 244.3595, 
+          "average": 40.72658333333333
         }, 
         "Dial Press Trade Paperback": {
           "count": 2, 
@@ -12201,19 +6825,19 @@ publishers_bar = [
           "average": 22.445
         }, 
         "Villard": {
-          "count": 6, 
-          "sum": 93.948, 
-          "average": 15.658
+          "count": 1, 
+          "sum": 29.456, 
+          "average": 29.456
         }, 
         "Golden/Disney": {
-          "count": 6, 
-          "sum": 23.331999999999997, 
-          "average": 3.888666666666667
+          "count": 3, 
+          "sum": 9.18, 
+          "average": 3.06
         }, 
         "RH/Disney": {
-          "count": 7, 
-          "sum": 78.02199999999999, 
-          "average": 11.145999999999999
+          "count": 2, 
+          "sum": 25.652, 
+          "average": 12.826
         }, 
         "Hodder & Stoughton": {
           "count": 1, 
@@ -12221,44 +6845,39 @@ publishers_bar = [
           "average": 21.576
         }, 
         "Newmarket Press": {
-          "count": 2, 
-          "sum": 7.1080000000000005, 
-          "average": 3.5540000000000003
+          "count": 1, 
+          "sum": 3.2, 
+          "average": 3.2
         }, 
         "Little Brown and Company": {
-          "count": 141, 
-          "sum": 10024.787999999988, 
-          "average": 71.09778723404256
+          "count": 67, 
+          "sum": 3936.1680000000015, 
+          "average": 58.74877611940299
         }, 
         "Grand Central Life & Style": {
-          "count": 15, 
-          "sum": 1073.3580000000002, 
-          "average": 71.5572
+          "count": 10, 
+          "sum": 621.8679999999999, 
+          "average": 62.186800000000005
         }, 
         "Perigee": {
-          "count": 17, 
-          "sum": 388.216, 
-          "average": 22.836235294117646
+          "count": 9, 
+          "sum": 259.196, 
+          "average": 28.799555555555557
         }, 
         "Golden Books": {
-          "count": 8, 
-          "sum": 18.447999999999997, 
-          "average": 2.306
+          "count": 3, 
+          "sum": 5.416, 
+          "average": 1.8053333333333335
         }, 
         "Thomas Dunne Books": {
-          "count": 36, 
-          "sum": 816.2539999999999, 
-          "average": 22.673722222222224
+          "count": 17, 
+          "sum": 387.8880000000001, 
+          "average": 22.816941176470586
         }, 
         "HarperSport": {
           "count": 2, 
           "sum": 1.99, 
           "average": 0.995
-        }, 
-        "Collins Reference": {
-          "count": 1, 
-          "sum": 21.432, 
-          "average": 21.432
         }, 
         "Tor Teen": {
           "count": 1, 
@@ -12266,29 +6885,29 @@ publishers_bar = [
           "average": 14.924
         }, 
         "Crown Archetype": {
-          "count": 28, 
-          "sum": 739.2739999999999, 
-          "average": 26.402642857142858
+          "count": 13, 
+          "sum": 279.49600000000004, 
+          "average": 21.499692307692307
         }, 
         "Harper Element": {
-          "count": 20, 
-          "sum": 195.34399999999994, 
-          "average": 9.767199999999999
+          "count": 8, 
+          "sum": 73.608, 
+          "average": 9.201
         }, 
         "(Indie Publisher)": {
-          "count": 5637, 
-          "sum": 148788.4779999945, 
-          "average": 26.394975696292356
+          "count": 2819, 
+          "sum": 141309.44099999938, 
+          "average": 50.127506562610854
         }, 
         "Zondervan": {
-          "count": 65, 
-          "sum": 2695.0399999999977, 
-          "average": 41.462153846153846
+          "count": 31, 
+          "sum": 1242.0859999999998, 
+          "average": 40.06729032258065
         }, 
         "HarperWave": {
-          "count": 6, 
-          "sum": 706.5460000000002, 
-          "average": 117.75766666666668
+          "count": 3, 
+          "sum": 303.066, 
+          "average": 101.022
         }, 
         "Studio": {
           "count": 1, 
@@ -12301,99 +6920,89 @@ publishers_bar = [
           "average": 15.984
         }, 
         "Pocket Star": {
-          "count": 11, 
-          "sum": 156.12800000000004, 
-          "average": 14.193454545454545
+          "count": 5, 
+          "sum": 91.63399999999999, 
+          "average": 18.3268
         }, 
         "Avon": {
-          "count": 25, 
-          "sum": 1826.1179999999995, 
-          "average": 73.04472
+          "count": 10, 
+          "sum": 751.7579999999999, 
+          "average": 75.17580000000001
         }, 
         "Thomas & Mercer": {
-          "count": 102, 
-          "sum": 13953.790499999994, 
-          "average": 136.80186764705883
+          "count": 57, 
+          "sum": 3614.9609999999984, 
+          "average": 63.42036842105263
         }, 
         "Thomas Nelson": {
-          "count": 90, 
-          "sum": 3242.190000000001, 
-          "average": 36.02433333333333
+          "count": 58, 
+          "sum": 2240.4860000000003, 
+          "average": 38.62906896551724
         }, 
         "Penguin": {
-          "count": 37, 
-          "sum": 600.9279999999999, 
-          "average": 16.241297297297297
+          "count": 20, 
+          "sum": 188.35199999999998, 
+          "average": 9.4176
         }, 
         "Billboard Books": {
           "count": 2, 
           "sum": 7.362, 
           "average": 3.681
         }, 
-        "HarperBusiness": {
-          "count": 23, 
-          "sum": 995.898, 
-          "average": 43.29991304347826
-        }, 
         "Simon Pulse": {
-          "count": 13, 
-          "sum": 522.8620000000001, 
-          "average": 40.22015384615384
+          "count": 9, 
+          "sum": 188.432, 
+          "average": 20.936888888888888
         }, 
         "Little Brown Books for Young Readers": {
-          "count": 55, 
-          "sum": 1231.8620000000003, 
-          "average": 22.397490909090912
+          "count": 33, 
+          "sum": 937.5980000000001, 
+          "average": 28.412060606060606
         }, 
-        "Cash Money Content": {
-          "count": 2, 
-          "sum": 30.208, 
-          "average": 15.104
+        "Watson-Guptill": {
+          "count": 8, 
+          "sum": 38.80400000000001, 
+          "average": 4.8505
         }, 
         "Harper Paperbacks": {
-          "count": 5, 
-          "sum": 39.459999999999994, 
-          "average": 7.892
+          "count": 1, 
+          "sum": 6.4, 
+          "average": 6.4
         }, 
         "Simon & Schuster": {
-          "count": 198, 
-          "sum": 6625.0880000000025, 
-          "average": 33.460040404040406
+          "count": 95, 
+          "sum": 3502.794, 
+          "average": 36.87151578947368
         }, 
         "Putnam Adult": {
-          "count": 37, 
-          "sum": 4636.722000000001, 
-          "average": 125.31681081081081
-        }, 
-        "Gallery Books/Karen Hunter Publishing": {
-          "count": 1, 
-          "sum": 8.304, 
-          "average": 8.304
+          "count": 17, 
+          "sum": 1621.646, 
+          "average": 95.39094117647059
         }, 
         "Reagan Arthur Books": {
-          "count": 2, 
-          "sum": 201.798, 
-          "average": 100.899
+          "count": 1, 
+          "sum": 47.952, 
+          "average": 47.952
         }, 
         "William Morrow Impulse": {
-          "count": 2, 
-          "sum": 32.868, 
-          "average": 16.434
+          "count": 1, 
+          "sum": 19.602, 
+          "average": 19.602
         }, 
-        "Two Lions": {
-          "count": 64, 
-          "sum": 1325.3500000000001, 
-          "average": 20.70859375
+        "Puffin": {
+          "count": 52, 
+          "sum": 941.7799999999999, 
+          "average": 18.111153846153847
         }, 
         "Metropolitan Books": {
-          "count": 15, 
-          "sum": 402.394, 
-          "average": 26.826266666666665
+          "count": 7, 
+          "sum": 261.31800000000004, 
+          "average": 37.33114285714286
         }, 
         "Potter Style": {
-          "count": 3, 
-          "sum": 28.276, 
-          "average": 9.425333333333333
+          "count": 2, 
+          "sum": 24.682, 
+          "average": 12.341
         }, 
         "Poppy": {
           "count": 1, 
@@ -12401,34 +7010,34 @@ publishers_bar = [
           "average": 8.372
         }, 
         "Three Rivers Press": {
-          "count": 21, 
-          "sum": 426.2519999999999, 
-          "average": 20.297714285714285
+          "count": 8, 
+          "sum": 131.094, 
+          "average": 16.38675
         }, 
         "Little Simon": {
-          "count": 2, 
-          "sum": 1.708, 
-          "average": 0.854
-        }, 
-        "Avon Inspire": {
           "count": 1, 
-          "sum": 83.2, 
-          "average": 83.2
+          "sum": 0.852, 
+          "average": 0.852
+        }, 
+        "The Dial Press": {
+          "count": 2, 
+          "sum": 237.61599999999999, 
+          "average": 118.80799999999999
+        }, 
+        "Hudson Street Press": {
+          "count": 1, 
+          "sum": 24.178, 
+          "average": 24.178
         }, 
         "St. Martin's Paperbacks": {
-          "count": 18, 
-          "sum": 506.0679999999999, 
-          "average": 28.11488888888889
-        }, 
-        "PHILOMEL": {
-          "count": 1, 
-          "sum": 5.112, 
-          "average": 5.112
+          "count": 9, 
+          "sum": 210.694, 
+          "average": 23.410444444444447
         }, 
         "Celestial Arts": {
-          "count": 5, 
-          "sum": 107.206, 
-          "average": 21.441200000000002
+          "count": 1, 
+          "sum": 26.376, 
+          "average": 26.376
         }, 
         "HarperTorch": {
           "count": 1, 
@@ -12441,59 +7050,54 @@ publishers_bar = [
           "average": 43.056
         }, 
         "Debbie Macomber Books": {
-          "count": 2, 
-          "sum": 192.556, 
-          "average": 96.278
+          "count": 1, 
+          "sum": 113.022, 
+          "average": 113.022
         }, 
         "Roaring Brook Press": {
-          "count": 7, 
-          "sum": 67.024, 
-          "average": 9.574857142857143
+          "count": 3, 
+          "sum": 35.176, 
+          "average": 11.725333333333333
         }, 
-        "Sentinel": {
-          "count": 2, 
-          "sum": 373.3, 
-          "average": 186.65
+        "Atheneum Books for Young Readers": {
+          "count": 19, 
+          "sum": 192.72400000000005, 
+          "average": 10.143368421052632
         }, 
-        "HarperStudio": {
-          "count": 1, 
-          "sum": 14.224, 
-          "average": 14.224
+        "Pocket Books": {
+          "count": 36, 
+          "sum": 866.5140000000001, 
+          "average": 24.069833333333335
         }, 
         "Amazon Publishing": {
-          "count": 21, 
-          "sum": 2111.0959999999995, 
-          "average": 100.52838095238096
+          "count": 11, 
+          "sum": 567.2345, 
+          "average": 51.56677272727273
         }, 
         "St. Martin's Press": {
-          "count": 147, 
-          "sum": 6063.85999999999, 
-          "average": 41.250748299319724
+          "count": 84, 
+          "sum": 3866.975999999999, 
+          "average": 46.035428571428575
         }, 
         "HarperPerennial Classics": {
-          "count": 5, 
-          "sum": 44.946, 
-          "average": 8.9892
+          "count": 2, 
+          "sum": 21.186, 
+          "average": 10.593
         }, 
         "Pintail": {
           "count": 1, 
           "sum": 209.79, 
           "average": 209.79
         }, 
-        "Current": {
-          "count": 3, 
-          "sum": 64.548, 
-          "average": 21.516000000000002
-        }, 
         "HarperCollins e-books": {
-          "count": 378, 
-          "sum": 8250.254, 
-          "average": 21.826068783068784
+          "count": 179, 
+          "sum": 3712.8120000000004, 
+          "average": 20.741966480446926
         }, 
         "Gotham Books": {
-          "count": 27, 
-          "sum": 947.9680000000001, 
-          "average": 35.10992592592592
+          "count": 11, 
+          "sum": 286.74999999999994, 
+          "average": 26.068181818181817
         }, 
         "MTV Books": {
           "count": 2, 
@@ -12501,119 +7105,89 @@ publishers_bar = [
           "average": 27.609
         }, 
         "Vintage": {
-          "count": 181, 
-          "sum": 5654.373999999995, 
-          "average": 31.239635359116022
+          "count": 78, 
+          "sum": 1961.3080000000004, 
+          "average": 25.14497435897436
         }, 
         "Clarkson Potter": {
-          "count": 35, 
-          "sum": 400.2340000000001, 
-          "average": 11.435257142857143
+          "count": 14, 
+          "sum": 128.91, 
+          "average": 9.207857142857142
         }, 
         "Grand Harbor Press": {
-          "count": 3, 
-          "sum": 73.1835, 
-          "average": 24.394499999999997
+          "count": 1, 
+          "sum": 7.9695, 
+          "average": 7.9695
         }, 
         "Harper Thorsons": {
           "count": 1, 
           "sum": 5.32, 
           "average": 5.32
         }, 
-        "Deepak Chopra": {
-          "count": 3, 
-          "sum": 32.705999999999996, 
-          "average": 10.902000000000001
-        }, 
         "Picador": {
-          "count": 10, 
-          "sum": 204.50999999999996, 
-          "average": 20.451
+          "count": 4, 
+          "sum": 86.356, 
+          "average": 21.589
         }, 
         "Harmony": {
-          "count": 57, 
-          "sum": 2167.1200000000013, 
-          "average": 38.01964912280702
+          "count": 36, 
+          "sum": 1335.2480000000003, 
+          "average": 37.09022222222222
         }, 
         "Signet Classic": {
-          "count": 4, 
-          "sum": 29.258, 
-          "average": 7.3145
+          "count": 3, 
+          "sum": 21.598, 
+          "average": 7.199333333333333
         }, 
         "47North": {
-          "count": 66, 
-          "sum": 7142.739500000004, 
-          "average": 108.22332575757575
+          "count": 26, 
+          "sum": 1641.9865000000004, 
+          "average": 63.153326923076925
         }, 
         "HarperPress": {
-          "count": 3, 
-          "sum": 11.854, 
-          "average": 3.951333333333333
+          "count": 2, 
+          "sum": 7.586, 
+          "average": 3.793
         }, 
         "Collins": {
-          "count": 8, 
-          "sum": 88.604, 
-          "average": 11.0755
-        }, 
-        "Starscape": {
-          "count": 1, 
-          "sum": 2.048, 
-          "average": 2.048
-        }, 
-        "Atria/Emily Bestler Books": {
-          "count": 7, 
-          "sum": 692.804, 
-          "average": 98.972
-        }, 
-        "Dragonfly Books": {
-          "count": 1, 
-          "sum": 2.396, 
-          "average": 2.396
+          "count": 5, 
+          "sum": 36.04999999999999, 
+          "average": 7.209999999999999
         }, 
         "Feiwel & Friends": {
-          "count": 9, 
-          "sum": 358.5380000000001, 
-          "average": 39.837555555555554
+          "count": 4, 
+          "sum": 141.528, 
+          "average": 35.382
         }, 
         "DK Publishing": {
-          "count": 26, 
-          "sum": 92.83399999999997, 
-          "average": 3.5705384615384617
-        }, 
-        "Leer-e": {
-          "count": 1, 
-          "sum": 20.366, 
-          "average": 20.366
+          "count": 15, 
+          "sum": 55.64999999999999, 
+          "average": 3.71
         }, 
         "Amphoto Books": {
-          "count": 9, 
-          "sum": 161.058, 
-          "average": 17.895333333333333
+          "count": 2, 
+          "sum": 37.96, 
+          "average": 18.98
         }, 
         "Skyscape": {
-          "count": 11, 
-          "sum": 3386.5195000000003, 
-          "average": 307.86540909090905
+          "count": 6, 
+          "sum": 802.536, 
+          "average": 133.756
         }, 
         "Avery": {
-          "count": 15, 
-          "sum": 460.488, 
-          "average": 30.6992
-        }, 
-        "Appetite by Random House": {
-          "count": 1, 
-          "sum": 7.8, 
-          "average": 7.8
+          "count": 10, 
+          "sum": 222.18600000000004, 
+          "average": 22.218600000000002
         }, 
         "Faber & Faber": {
-          "count": 6, 
-          "sum": 77.238, 
-          "average": 12.873
+          "count": 4, 
+          "sum": 43.456, 
+          "average": 10.864
         }, 
         "AmazonCrossing": {
-          "count": 29, 
-          "sum": 3318.9260000000004, 
-          "average": 114.44572413793104
+          "count": 13, 
+          "sum": 884.8175, 
+          "average": 68.06288461538462
         }, 
         "Simon & Schuster Audio": {
           "count": 1, 
@@ -12621,74 +7195,74 @@ publishers_bar = [
           "average": 18.96
         }, 
         "Del Rey": {
-          "count": 45, 
-          "sum": 1042.9680000000003, 
-          "average": 23.17706666666667
+          "count": 23, 
+          "sum": 557.5900000000003, 
+          "average": 24.24304347826087
         }, 
         "Graywolf Press": {
-          "count": 2, 
-          "sum": 29.27, 
-          "average": 14.635
+          "count": 1, 
+          "sum": 25.714, 
+          "average": 25.714
         }, 
         "Howard Books": {
-          "count": 20, 
-          "sum": 899.9180000000005, 
-          "average": 44.9959
+          "count": 10, 
+          "sum": 432.696, 
+          "average": 43.269600000000004
         }, 
         "First Second": {
-          "count": 3, 
-          "sum": 15.648, 
-          "average": 5.216
+          "count": 2, 
+          "sum": 10.314, 
+          "average": 5.157
         }, 
-        "Walden Pond Press": {
-          "count": 3, 
-          "sum": 7.965999999999999, 
-          "average": 2.6553333333333335
+        "FaithWords": {
+          "count": 5, 
+          "sum": 209.448, 
+          "average": 41.8896
         }, 
         "Penguin Classic": {
-          "count": 17, 
-          "sum": 566.814, 
-          "average": 33.342
+          "count": 8, 
+          "sum": 112.306, 
+          "average": 14.03825
         }, 
         "Montlake Romance": {
-          "count": 66, 
-          "sum": 14363.18, 
-          "average": 217.6239393939394
+          "count": 34, 
+          "sum": 4185.7375, 
+          "average": 123.10992647058823
         }, 
-        "The Dial Press": {
+        "Rough Guides": {
           "count": 2, 
-          "sum": 237.61599999999999, 
-          "average": 118.80799999999999
+          "sum": 13.585999999999999, 
+          "average": 6.792999999999999
         }, 
         "Modern Library": {
-          "count": 5, 
-          "sum": 120.534, 
-          "average": 24.1068
+          "count": 4, 
+          "sum": 100.542, 
+          "average": 25.1355
         }, 
         "Knopf": {
-          "count": 43, 
-          "sum": 3161.2280000000005, 
-          "average": 73.51693023255814
+          "count": 23, 
+          "sum": 1855.2800000000002, 
+          "average": 80.66434782608695
         }, 
         "Forever": {
-          "count": 18, 
-          "sum": 1517.5759999999996, 
-          "average": 84.30977777777778
+          "count": 6, 
+          "sum": 631.2340000000002, 
+          "average": 105.20566666666667
         }, 
         "Riverhead": {
-          "count": 46, 
-          "sum": 2220.38, 
-          "average": 48.26913043478261
+          "count": 24, 
+          "sum": 1185.2440000000004, 
+          "average": 49.38516666666666
         }, 
         "Mulholland Books": {
-          "count": 8, 
-          "sum": 158.856, 
-          "average": 19.857
+          "count": 4, 
+          "sum": 98.14, 
+          "average": 24.535
         }, 
         "Yearling": {
-          "count": 12, 
-          "sum": 90.82599999999998, 
-          "average": 7.568833333333333
+          "count": 4, 
+          "sum": 60.976, 
+          "average": 15.244
         }, 
         "Hogarth": {
           "count": 1, 
@@ -12696,34 +7270,29 @@ publishers_bar = [
           "average": 170.986
         }, 
         "Bantam Classics": {
-          "count": 5, 
-          "sum": 35.848, 
-          "average": 7.1696
+          "count": 1, 
+          "sum": 3.184, 
+          "average": 3.184
         }, 
         "Potter Craft": {
-          "count": 6, 
-          "sum": 56.592000000000006, 
-          "average": 9.432
+          "count": 4, 
+          "sum": 40.388000000000005, 
+          "average": 10.097
         }, 
-        "Atheneum Books for Young Readers": {
-          "count": 36, 
-          "sum": 426.55999999999995, 
-          "average": 11.848888888888888
-        }, 
-        "Golden Guides from St. Martin's Press": {
+        "Sentinel": {
           "count": 1, 
-          "sum": 16.002, 
-          "average": 16.002
+          "sum": 23.98, 
+          "average": 23.98
+        }, 
+        "Atria/Emily Bestler Books": {
+          "count": 3, 
+          "sum": 425.302, 
+          "average": 141.76733333333334
         }, 
         "Penguin Books": {
-          "count": 144, 
-          "sum": 4801.404000000002, 
-          "average": 33.34308333333334
-        }, 
-        "CLBusiness": {
-          "count": 1, 
-          "sum": 4.396, 
-          "average": 4.396
+          "count": 72, 
+          "sum": 2208.4000000000005, 
+          "average": 30.672222222222224
         }, 
         "Lone Eagle": {
           "count": 1, 
@@ -12731,34 +7300,34 @@ publishers_bar = [
           "average": 10.4
         }, 
         "Berkley": {
-          "count": 169, 
-          "sum": 8193.328, 
-          "average": 48.48123076923077
+          "count": 79, 
+          "sum": 3764.7980000000002, 
+          "average": 47.655670886075946
         }, 
         "Harper Voyager": {
-          "count": 10, 
-          "sum": 291.20599999999996, 
-          "average": 29.120600000000003
+          "count": 6, 
+          "sum": 166.678, 
+          "average": 27.779666666666667
         }, 
         "Hyperion": {
-          "count": 62, 
-          "sum": 2041.25, 
-          "average": 32.92338709677419
+          "count": 36, 
+          "sum": 1233.362, 
+          "average": 34.26005555555556
         }, 
         "Anchor": {
-          "count": 74, 
-          "sum": 1905.7620000000006, 
-          "average": 25.75354054054054
+          "count": 34, 
+          "sum": 775.894, 
+          "average": 22.82041176470588
         }, 
-        "Signet": {
-          "count": 63, 
-          "sum": 3315.5640000000003, 
-          "average": 52.628
+        "Touchstone": {
+          "count": 29, 
+          "sum": 942.0580000000003, 
+          "average": 32.484758620689654
         }, 
         "Forge Books": {
-          "count": 19, 
-          "sum": 279.0780000000001, 
-          "average": 14.688315789473686
+          "count": 8, 
+          "sum": 121.01, 
+          "average": 15.12625
         }, 
         "Celebra": {
           "count": 2, 
@@ -12766,154 +7335,124 @@ publishers_bar = [
           "average": 126.149
         }, 
         "Knopf Books for Young Readers": {
-          "count": 30, 
-          "sum": 559.288, 
-          "average": 18.642933333333335
+          "count": 16, 
+          "sum": 259.384, 
+          "average": 16.2115
         }, 
-        "William Morrow Cookbooks": {
-          "count": 14, 
-          "sum": 119.804, 
-          "average": 8.557428571428572
-        }, 
-        "Image": {
-          "count": 7, 
-          "sum": 71.60399999999998, 
-          "average": 10.229142857142858
+        "Loveswept": {
+          "count": 9, 
+          "sum": 198.93200000000004, 
+          "average": 22.10355555555556
         }, 
         "Roc": {
-          "count": 13, 
-          "sum": 249.09000000000006, 
-          "average": 19.16076923076923
-        }, 
-        "Simon & Schuster/Paula Wiseman Books": {
-          "count": 3, 
-          "sum": 5.624, 
-          "average": 1.8746666666666665
+          "count": 5, 
+          "sum": 78.886, 
+          "average": 15.777199999999999
         }, 
         "St. Martin's Griffin": {
-          "count": 43, 
-          "sum": 983.65, 
-          "average": 22.875581395348835
+          "count": 23, 
+          "sum": 512.1700000000001, 
+          "average": 22.268260869565214
         }, 
         "Pantheon": {
-          "count": 8, 
-          "sum": 258.516, 
-          "average": 32.3145
+          "count": 3, 
+          "sum": 176.80999999999997, 
+          "average": 58.93666666666667
         }, 
         "Reader's Digest": {
-          "count": 3, 
-          "sum": 170.822, 
-          "average": 56.940666666666665
+          "count": 2, 
+          "sum": 6.986000000000001, 
+          "average": 3.4930000000000003
         }, 
         "InterMix": {
-          "count": 4, 
-          "sum": 211.28799999999998, 
-          "average": 52.821999999999996
-        }, 
-        "Pocket Books": {
-          "count": 72, 
-          "sum": 2239.5440000000012, 
-          "average": 31.104777777777777
+          "count": 1, 
+          "sum": 18.744, 
+          "average": 18.744
         }, 
         "Witness Impulse": {
-          "count": 12, 
-          "sum": 192.07200000000003, 
-          "average": 16.006
-        }, 
-        "Ivy Books": {
-          "count": 3, 
-          "sum": 9.584, 
-          "average": 3.1946666666666665
+          "count": 7, 
+          "sum": 105.77800000000002, 
+          "average": 15.111142857142857
         }, 
         "Dutton Children's": {
-          "count": 4, 
-          "sum": 250.442, 
-          "average": 62.6105
+          "count": 2, 
+          "sum": 189.952, 
+          "average": 94.976
         }, 
         "Speak": {
-          "count": 19, 
-          "sum": 1693.6559999999997, 
-          "average": 89.1397894736842
+          "count": 9, 
+          "sum": 1239.06, 
+          "average": 137.67333333333332
         }, 
         "Yen Press": {
-          "count": 12, 
-          "sum": 60.461999999999996, 
-          "average": 5.0385
-        }, 
-        "Random House Reference": {
-          "count": 1, 
-          "sum": 15.588, 
-          "average": 15.588
+          "count": 2, 
+          "sum": 7.192, 
+          "average": 3.596
         }, 
         "Greenwillow Books": {
-          "count": 17, 
-          "sum": 142.14399999999998, 
-          "average": 8.361411764705883
+          "count": 8, 
+          "sum": 73.75, 
+          "average": 9.21875
         }, 
         "Schwartz & Wade": {
-          "count": 2, 
-          "sum": 5.542, 
-          "average": 2.771
+          "count": 1, 
+          "sum": 1.954, 
+          "average": 1.954
         }, 
         "Page Street Publishing": {
           "count": 2, 
           "sum": 41.316, 
           "average": 20.658
         }, 
-        "Island Books": {
+        "Vintage Espanol": {
           "count": 3, 
-          "sum": 141.254, 
-          "average": 47.084666666666664
-        }, 
-        "PSS Juvenile": {
-          "count": 1, 
-          "sum": 8.192, 
-          "average": 8.192
+          "sum": 79.42200000000001, 
+          "average": 26.474
         }, 
         "Joe Books": {
-          "count": 3, 
-          "sum": 13.661999999999999, 
-          "average": 4.553999999999999
+          "count": 1, 
+          "sum": 2.376, 
+          "average": 2.376
         }, 
         "Viking Adult": {
-          "count": 29, 
-          "sum": 1954.1420000000005, 
-          "average": 67.38420689655173
+          "count": 13, 
+          "sum": 512.046, 
+          "average": 39.38815384615385
         }, 
         "Blue Rider Press": {
-          "count": 8, 
-          "sum": 667.45, 
-          "average": 83.43125
+          "count": 4, 
+          "sum": 391.72999999999996, 
+          "average": 97.9325
         }, 
         "Thorsons": {
-          "count": 4, 
-          "sum": 48.652, 
-          "average": 12.163
+          "count": 2, 
+          "sum": 17.068, 
+          "average": 8.534
         }, 
-        "David Fickling Books": {
-          "count": 1, 
-          "sum": 101.032, 
-          "average": 101.032
+        "HarperBusiness": {
+          "count": 10, 
+          "sum": 328.61, 
+          "average": 32.861000000000004
         }, 
         "Alfred A. Knopf BFYR": {
-          "count": 4, 
-          "sum": 14.352, 
-          "average": 3.588
+          "count": 3, 
+          "sum": 8.372, 
+          "average": 2.7906666666666666
         }, 
         "Minotaur Books": {
-          "count": 43, 
-          "sum": 1976.7400000000002, 
-          "average": 45.9706976744186
+          "count": 19, 
+          "sum": 919.6620000000003, 
+          "average": 48.40326315789474
         }, 
         "Random House Trade Paperbacks": {
-          "count": 30, 
-          "sum": 1256.3140000000003, 
-          "average": 41.87713333333333
+          "count": 15, 
+          "sum": 616.424, 
+          "average": 41.09493333333333
         }, 
         "BradyGames": {
-          "count": 2, 
-          "sum": 9.588000000000001, 
-          "average": 4.7940000000000005
+          "count": 1, 
+          "sum": 6.392, 
+          "average": 6.392
         }, 
         "Renaissance Books": {
           "count": 1, 
@@ -12921,49 +7460,49 @@ publishers_bar = [
           "average": 18.216
         }, 
         "Harper Perennial": {
-          "count": 20, 
-          "sum": 338.424, 
-          "average": 16.9212
+          "count": 8, 
+          "sum": 191.65, 
+          "average": 23.95625
         }, 
         "Viking Children's": {
-          "count": 4, 
-          "sum": 55.824, 
-          "average": 13.956
+          "count": 3, 
+          "sum": 31.240000000000002, 
+          "average": 10.413333333333332
         }, 
         "North Point Press": {
-          "count": 5, 
-          "sum": 62.254000000000005, 
-          "average": 12.4508
+          "count": 3, 
+          "sum": 47.246, 
+          "average": 15.748666666666667
         }, 
         "Simon & Schuster Books for Young Readers": {
-          "count": 45, 
-          "sum": 669.322, 
-          "average": 14.873822222222222
+          "count": 22, 
+          "sum": 317.19200000000006, 
+          "average": 14.417818181818182
         }, 
         "Random House": {
-          "count": 81, 
-          "sum": 3377.782000000002, 
-          "average": 41.70101234567901
+          "count": 42, 
+          "sum": 1856.0319999999997, 
+          "average": 44.19123809523809
         }, 
         "Schocken": {
-          "count": 4, 
-          "sum": 43.362, 
-          "average": 10.8405
+          "count": 3, 
+          "sum": 31.371999999999996, 
+          "average": 10.457333333333333
         }, 
         "Meadowbrook": {
-          "count": 3, 
-          "sum": 28.674, 
-          "average": 9.558
+          "count": 2, 
+          "sum": 10.954, 
+          "average": 5.477
         }, 
         "HarperFestival": {
-          "count": 5, 
-          "sum": 40.87, 
-          "average": 8.174
+          "count": 3, 
+          "sum": 28.811999999999998, 
+          "average": 9.604
         }, 
         "Grand Central Publishing": {
-          "count": 94, 
-          "sum": 5601.321999999999, 
-          "average": 59.588531914893615
+          "count": 38, 
+          "sum": 1791.942, 
+          "average": 47.15636842105263
         }, 
         "Zinc Ink": {
           "count": 1, 
@@ -12971,29 +7510,24 @@ publishers_bar = [
           "average": 8.792
         }, 
         "Entangled: Teen": {
-          "count": 2, 
-          "sum": 55.304, 
-          "average": 27.652
-        }, 
-        "Gildan Digital": {
           "count": 1, 
-          "sum": 2.786, 
-          "average": 2.786
+          "sum": 9.104, 
+          "average": 9.104
         }, 
         "Scientific American": {
-          "count": 9, 
-          "sum": 59.124, 
-          "average": 6.569333333333333
+          "count": 1, 
+          "sum": 1.516, 
+          "average": 1.516
         }, 
         "Ecco": {
-          "count": 27, 
-          "sum": 1364.198, 
-          "average": 50.525851851851854
+          "count": 12, 
+          "sum": 494.78400000000005, 
+          "average": 41.232
         }, 
         "Presidio Press": {
-          "count": 4, 
-          "sum": 124.11, 
-          "average": 31.0275
+          "count": 1, 
+          "sum": 79.068, 
+          "average": 79.068
         }, 
         "Ripley Publishing": {
           "count": 4, 
@@ -13005,25 +7539,15 @@ publishers_bar = [
           "sum": 9.592, 
           "average": 9.592
         }, 
-        "FaithWords": {
-          "count": 11, 
-          "sum": 573.0500000000002, 
-          "average": 52.095454545454544
-        }, 
-        "Tor Science Fiction": {
-          "count": 1, 
-          "sum": 20.472, 
-          "average": 20.472
-        }, 
         "Entangled: Brazen": {
-          "count": 18, 
-          "sum": 1022.7860000000001, 
-          "average": 56.82144444444444
+          "count": 12, 
+          "sum": 583.95, 
+          "average": 48.6625
         }, 
-        "Forever Yours": {
-          "count": 1, 
-          "sum": 18.706, 
-          "average": 18.706
+        "LucasBooks": {
+          "count": 41, 
+          "sum": 533.0920000000001, 
+          "average": 13.002243902439025
         }, 
         "Piatkus": {
           "count": 1, 
@@ -13031,74 +7555,74 @@ publishers_bar = [
           "average": 11.184
         }, 
         "Palgrave Macmillan": {
-          "count": 26, 
-          "sum": 261.37, 
-          "average": 10.052692307692308
+          "count": 11, 
+          "sum": 138.84000000000003, 
+          "average": 12.621818181818183
         }, 
         "Broadway Books": {
-          "count": 68, 
-          "sum": 2099.762, 
-          "average": 30.878852941176472
+          "count": 35, 
+          "sum": 1448.1739999999995, 
+          "average": 41.3764
         }, 
         "Random House Books for Young Readers": {
-          "count": 199, 
-          "sum": 1537.528, 
-          "average": 7.726271356783919
+          "count": 94, 
+          "sum": 713.1980000000005, 
+          "average": 7.587212765957447
         }, 
         "Overlook": {
-          "count": 4, 
-          "sum": 38.272, 
-          "average": 9.568
+          "count": 2, 
+          "sum": 15.896, 
+          "average": 7.948
         }, 
         "Threshold Editions": {
-          "count": 11, 
-          "sum": 353.82800000000003, 
-          "average": 32.16618181818182
+          "count": 6, 
+          "sum": 94.016, 
+          "average": 15.669333333333334
         }, 
         "William Morrow": {
-          "count": 72, 
-          "sum": 4284.436, 
-          "average": 59.50605555555555
+          "count": 41, 
+          "sum": 2872.38, 
+          "average": 70.05804878048781
         }, 
         "Twelve": {
-          "count": 14, 
-          "sum": 373.156, 
-          "average": 26.654
+          "count": 7, 
+          "sum": 166.34799999999998, 
+          "average": 23.764000000000003
         }, 
         "Delta": {
-          "count": 7, 
-          "sum": 182.584, 
-          "average": 26.083428571428573
+          "count": 2, 
+          "sum": 39.17, 
+          "average": 19.585
         }, 
         "St. Martin's True Crime": {
-          "count": 2, 
-          "sum": 47.81, 
-          "average": 23.905
+          "count": 1, 
+          "sum": 15.026, 
+          "average": 15.026
         }, 
         "Little A": {
           "count": 1, 
-          "sum": 54.509, 
-          "average": 54.509
+          "sum": 29.351, 
+          "average": 29.351
         }, 
         "Jove": {
-          "count": 41, 
-          "sum": 2296.4100000000008, 
-          "average": 56.01
+          "count": 20, 
+          "sum": 1518.0960000000002, 
+          "average": 75.9048
         }, 
         "Jet City Comics": {
-          "count": 2, 
-          "sum": 296.0295, 
-          "average": 148.01475
+          "count": 1, 
+          "sum": 95.081, 
+          "average": 95.081
         }, 
-        "Simon Spotlight": {
-          "count": 18, 
-          "sum": 85.28200000000002, 
-          "average": 4.737888888888889
+        "Island Books": {
+          "count": 1, 
+          "sum": 65.78, 
+          "average": 65.78
         }, 
         "Balzer + Bray": {
-          "count": 11, 
-          "sum": 236.748, 
-          "average": 21.522545454545455
+          "count": 8, 
+          "sum": 176.482, 
+          "average": 22.06025
         }, 
         "Entangled: Indulgence": {
           "count": 2, 
@@ -13106,39 +7630,34 @@ publishers_bar = [
           "average": 21.78
         }, 
         "Dutton Adult": {
-          "count": 23, 
-          "sum": 1728.9559999999994, 
-          "average": 75.172
+          "count": 14, 
+          "sum": 875.5920000000002, 
+          "average": 62.54228571428571
         }, 
         "Orb Books": {
-          "count": 7, 
-          "sum": 73.712, 
-          "average": 10.530285714285714
+          "count": 4, 
+          "sum": 40.894000000000005, 
+          "average": 10.2235
         }, 
         "Laurel Leaf": {
-          "count": 8, 
-          "sum": 137.05599999999998, 
-          "average": 17.131999999999998
+          "count": 5, 
+          "sum": 108.116, 
+          "average": 21.6232
         }, 
         "Aerie": {
           "count": 1, 
           "sum": 7.384, 
           "average": 7.384
         }, 
-        "Hudson Street Press": {
-          "count": 3, 
-          "sum": 54.95, 
-          "average": 18.316666666666666
+        "Current": {
+          "count": 1, 
+          "sum": 7.194, 
+          "average": 7.194
         }, 
         "Back Bay Books": {
-          "count": 10, 
-          "sum": 486.8699999999999, 
-          "average": 48.687
-        }, 
-        "Times Books": {
-          "count": 16, 
-          "sum": 337.65200000000004, 
-          "average": 21.10325
+          "count": 3, 
+          "sum": 247.752, 
+          "average": 82.584
         }, 
         "HP": {
           "count": 1, 
@@ -13150,105 +7669,105 @@ publishers_bar = [
           "sum": 2.396, 
           "average": 2.396
         }, 
-        "LucasBooks": {
-          "count": 69, 
-          "sum": 792.972, 
-          "average": 11.492347826086956
+        "It Books": {
+          "count": 14, 
+          "sum": 376.58800000000014, 
+          "average": 26.89914285714286
         }, 
         "Peterson's": {
-          "count": 3, 
-          "sum": 9.186, 
-          "average": 3.062
+          "count": 2, 
+          "sum": 6.39, 
+          "average": 3.195
+        }, 
+        "Grosset & Dunlap": {
+          "count": 50, 
+          "sum": 282.69400000000013, 
+          "average": 5.65388
         }, 
         "Crown": {
-          "count": 31, 
-          "sum": 1474.8040000000008, 
-          "average": 47.574322580645166
+          "count": 11, 
+          "sum": 390.35599999999994, 
+          "average": 35.48690909090909
         }, 
         "FSG Originals": {
-          "count": 3, 
-          "sum": 188.212, 
-          "average": 62.73733333333334
+          "count": 2, 
+          "sum": 179.322, 
+          "average": 89.661
         }, 
         "Orion": {
-          "count": 2, 
-          "sum": 5.312, 
-          "average": 2.656
+          "count": 1, 
+          "sum": 3.984, 
+          "average": 3.984
         }, 
         "Katherine Tegen Books": {
-          "count": 12, 
-          "sum": 229.084, 
-          "average": 19.090333333333334
+          "count": 7, 
+          "sum": 152.57399999999998, 
+          "average": 21.796285714285716
         }, 
         "(Single-Author Publisher)": {
-          "count": 3426, 
-          "sum": 37449.14399999994, 
-          "average": 10.930865148861646
+          "count": 1757, 
+          "sum": 18893.48600000001, 
+          "average": 10.753264655663063
         }, 
         "HarperCollins": {
-          "count": 237, 
-          "sum": 4784.343999999989, 
-          "average": 20.187105485232067
+          "count": 123, 
+          "sum": 2633.9979999999982, 
+          "average": 21.414617886178863
         }, 
         "WaterBrook Press": {
-          "count": 19, 
-          "sum": 523.1039999999999, 
-          "average": 27.531789473684213
+          "count": 13, 
+          "sum": 366.45399999999995, 
+          "average": 28.188769230769232
         }, 
         "Putnam Juvenile": {
-          "count": 10, 
-          "sum": 519.18, 
-          "average": 51.91799999999999
-        }, 
-        "Harper Design": {
           "count": 2, 
-          "sum": 14.536, 
-          "average": 7.268
+          "sum": 72.952, 
+          "average": 36.476
         }, 
-        "Loveswept": {
-          "count": 10, 
-          "sum": 206.10800000000003, 
-          "average": 20.6108
+        "Image": {
+          "count": 5, 
+          "sum": 45.62800000000001, 
+          "average": 9.1256
         }, 
         "Crimeline": {
-          "count": 4, 
-          "sum": 92.092, 
-          "average": 23.023
+          "count": 2, 
+          "sum": 40.664, 
+          "average": 20.332
         }, 
         "Hill and Wang": {
-          "count": 8, 
-          "sum": 65.244, 
-          "average": 8.1555
+          "count": 1, 
+          "sum": 1.778, 
+          "average": 1.778
         }, 
         "Delacorte Press": {
-          "count": 46, 
-          "sum": 4422.842, 
-          "average": 96.14873913043478
+          "count": 27, 
+          "sum": 2536.6239999999993, 
+          "average": 93.94903703703703
         }, 
         "Broadside e-books": {
-          "count": 2, 
-          "sum": 14.172, 
-          "average": 7.086
+          "count": 1, 
+          "sum": 5.436, 
+          "average": 5.436
         }, 
         "Wellspring/Ballantine": {
-          "count": 2, 
-          "sum": 11.84, 
-          "average": 5.92
+          "count": 1, 
+          "sum": 9.472, 
+          "average": 9.472
         }, 
         "Philomel": {
-          "count": 6, 
-          "sum": 271.08799999999997, 
-          "average": 45.18133333333333
+          "count": 2, 
+          "sum": 39.08, 
+          "average": 19.54
         }, 
         "Center Street": {
-          "count": 10, 
-          "sum": 698.9100000000002, 
-          "average": 69.89099999999999
+          "count": 3, 
+          "sum": 256.164, 
+          "average": 85.38799999999999
         }, 
         "Margaret K. McElderry Books": {
-          "count": 18, 
-          "sum": 1822.222, 
-          "average": 101.23455555555556
+          "count": 8, 
+          "sum": 714.4460000000001, 
+          "average": 89.30575
         }, 
         "The Friday Project": {
           "count": 1, 
@@ -13256,44 +7775,34 @@ publishers_bar = [
           "average": 4.378
         }, 
         "Ballantine Books": {
-          "count": 151, 
-          "sum": 4521.568000000001, 
-          "average": 29.94415894039735
-        }, 
-        "Amistad": {
-          "count": 2, 
-          "sum": 13.677999999999999, 
-          "average": 6.8389999999999995
+          "count": 71, 
+          "sum": 2547.192000000001, 
+          "average": 35.87594366197183
         }, 
         "Atria Books/Beyond Words": {
-          "count": 6, 
-          "sum": 94.102, 
-          "average": 15.683666666666667
-        }, 
-        "Grijalbo": {
-          "count": 1, 
-          "sum": 3.596, 
-          "average": 3.596
+          "count": 2, 
+          "sum": 19.98, 
+          "average": 9.99
         }, 
         "Tundra Books": {
-          "count": 2, 
-          "sum": 8.372, 
-          "average": 4.186
+          "count": 1, 
+          "sum": 4.784, 
+          "average": 4.784
         }, 
         "Crown Forum": {
-          "count": 4, 
-          "sum": 57.28, 
-          "average": 14.32
+          "count": 2, 
+          "sum": 28.174, 
+          "average": 14.087
         }, 
         "Scribner": {
-          "count": 113, 
-          "sum": 4173.845999999999, 
-          "average": 36.93669026548673
+          "count": 57, 
+          "sum": 2234.7080000000005, 
+          "average": 39.20540350877193
         }, 
         "Scientific American / Farrar Straus and Giroux": {
-          "count": 3, 
-          "sum": 53.339999999999996, 
-          "average": 17.78
+          "count": 1, 
+          "sum": 10.65, 
+          "average": 10.65
         }, 
         "Peterson Institute for International Economics": {
           "count": 1, 
@@ -13301,179 +7810,169 @@ publishers_bar = [
           "average": 11.186
         }, 
         "Crown Business": {
-          "count": 54, 
-          "sum": 1537.6300000000006, 
-          "average": 28.47462962962963
+          "count": 26, 
+          "sum": 688.2080000000001, 
+          "average": 26.46953846153846
         }, 
         "Pocket Books/Star Trek": {
-          "count": 56, 
-          "sum": 408.196, 
-          "average": 7.289214285714285
+          "count": 27, 
+          "sum": 240.44200000000006, 
+          "average": 8.90525925925926
         }, 
         "Doubleday": {
-          "count": 24, 
-          "sum": 1475.678, 
-          "average": 61.48658333333333
+          "count": 18, 
+          "sum": 812.852, 
+          "average": 45.15844444444444
         }, 
         "Delacorte Books for Young Readers": {
-          "count": 20, 
-          "sum": 373.068, 
-          "average": 18.653399999999998
+          "count": 9, 
+          "sum": 223.44, 
+          "average": 24.826666666666668
         }, 
         "Henry Holt and Co.": {
-          "count": 42, 
-          "sum": 1072.4100000000003, 
-          "average": 25.53357142857143
-        }, 
-        "Convergent Books": {
-          "count": 1, 
-          "sum": 15.98, 
-          "average": 15.98
+          "count": 24, 
+          "sum": 675.9879999999998, 
+          "average": 28.16616666666667
         }, 
         "Zonderkidz": {
-          "count": 27, 
-          "sum": 189.87199999999996, 
-          "average": 7.0322962962962965
+          "count": 14, 
+          "sum": 71.604, 
+          "average": 5.114571428571429
         }, 
         "Papercutz": {
-          "count": 13, 
-          "sum": 58.98400000000001, 
-          "average": 4.537230769230769
+          "count": 4, 
+          "sum": 14.408, 
+          "average": 3.602
         }, 
         "Atria Books": {
-          "count": 96, 
-          "sum": 4461.862000000001, 
-          "average": 46.47772916666667
+          "count": 47, 
+          "sum": 2026.5540000000015, 
+          "average": 43.11817021276596
         }, 
         "(Small or Medium Publisher)": {
-          "count": 9107, 
-          "sum": 124484.13200000241, 
-          "average": 13.669060283298561
+          "count": 4507, 
+          "sum": 60418.74799999992, 
+          "average": 13.405535389394275
         }, 
         "Flash Point": {
-          "count": 2, 
-          "sum": 27.78, 
-          "average": 13.89
+          "count": 1, 
+          "sum": 22.372, 
+          "average": 22.372
         }, 
         "Onyx": {
-          "count": 2, 
-          "sum": 34.09, 
-          "average": 17.045
+          "count": 1, 
+          "sum": 12.558, 
+          "average": 12.558
         }, 
         "Dell": {
-          "count": 45, 
-          "sum": 2016.01, 
-          "average": 44.800222222222224
+          "count": 21, 
+          "sum": 1278.9959999999996, 
+          "average": 60.90457142857142
         }, 
         "Atria / 37 Ink": {
-          "count": 2, 
-          "sum": 75.772, 
-          "average": 37.886
+          "count": 1, 
+          "sum": 2.376, 
+          "average": 2.376
         }, 
         "HarperOne": {
-          "count": 40, 
-          "sum": 978.8199999999998, 
-          "average": 24.4705
-        }, 
-        "Touchstone": {
-          "count": 69, 
-          "sum": 2213.583999999999, 
-          "average": 32.08092753623188
-        }, 
-        "Watson-Guptill": {
-          "count": 16, 
-          "sum": 105.97399999999998, 
-          "average": 6.623375
+          "count": 18, 
+          "sum": 469.30799999999994, 
+          "average": 26.072666666666667
         }, 
         "Princeton Review": {
-          "count": 9, 
-          "sum": 61.13600000000001, 
-          "average": 6.792888888888889
+          "count": 5, 
+          "sum": 39.568000000000005, 
+          "average": 7.913600000000001
         }, 
-        "Entangled: Select": {
-          "count": 1, 
-          "sum": 82.84, 
-          "average": 82.84
+        "DAW": {
+          "count": 7, 
+          "sum": 79.07199999999999, 
+          "average": 11.296000000000001
         }, 
-        "Mitchell Beazley": {
+        "Deepak Chopra": {
           "count": 1, 
-          "sum": 4.74, 
-          "average": 4.74
+          "sum": 4.736, 
+          "average": 4.736
         }, 
         "Washington Square Press": {
-          "count": 4, 
-          "sum": 31.896, 
-          "average": 7.974
+          "count": 2, 
+          "sum": 17.964, 
+          "average": 8.982
         }, 
         "Tarcher": {
-          "count": 22, 
-          "sum": 557.386, 
-          "average": 25.335727272727272
+          "count": 10, 
+          "sum": 206.90200000000002, 
+          "average": 20.690199999999997
         }, 
-        "Galvanized Books": {
-          "count": 1, 
-          "sum": 23.016, 
-          "average": 23.016
+        "Times Books": {
+          "count": 4, 
+          "sum": 54.872, 
+          "average": 13.718
         }, 
-        "Alpha": {
-          "count": 5, 
-          "sum": 44.968, 
-          "average": 8.9936
+        "William Morrow Cookbooks": {
+          "count": 7, 
+          "sum": 64.17200000000001, 
+          "average": 9.167428571428571
         }, 
         "Fodor's": {
-          "count": 14, 
-          "sum": 139.36199999999997, 
-          "average": 9.95442857142857
+          "count": 3, 
+          "sum": 36.089999999999996, 
+          "average": 12.03
+        }, 
+        "Signet": {
+          "count": 33, 
+          "sum": 1828.6339999999998, 
+          "average": 55.41315151515152
         }, 
         "Nan A. Talese": {
-          "count": 5, 
-          "sum": 430.38800000000003, 
-          "average": 86.07759999999999
+          "count": 3, 
+          "sum": 309.38, 
+          "average": 103.12666666666667
         }, 
         "Square Fish": {
-          "count": 3, 
-          "sum": 19.488, 
-          "average": 6.4959999999999996
+          "count": 2, 
+          "sum": 8.672, 
+          "average": 4.336
         }, 
         "Chicken Soup for the Soul": {
-          "count": 5, 
-          "sum": 27.982, 
-          "average": 5.5964
+          "count": 2, 
+          "sum": 5.952, 
+          "average": 2.976
         }, 
         "Ace": {
-          "count": 43, 
-          "sum": 1608.9859999999999, 
-          "average": 37.41827906976744
+          "count": 18, 
+          "sum": 720.5500000000001, 
+          "average": 40.03055555555555
         }, 
         "Prentice Hall Press": {
-          "count": 6, 
-          "sum": 137.95800000000003, 
-          "average": 22.993
+          "count": 4, 
+          "sum": 118.13000000000001, 
+          "average": 29.5325
         }, 
         "Free Press": {
-          "count": 68, 
-          "sum": 1239.7420000000004, 
-          "average": 18.2315
+          "count": 28, 
+          "sum": 419.46000000000015, 
+          "average": 14.980714285714285
         }, 
-        "Rough Guides": {
-          "count": 4, 
-          "sum": 24.078, 
-          "average": 6.0195
+        "World Wrestling Entertainment": {
+          "count": 1, 
+          "sum": 8.196, 
+          "average": 8.196
         }, 
         "Spectra": {
-          "count": 47, 
-          "sum": 982.6680000000003, 
-          "average": 20.907829787234043
+          "count": 24, 
+          "sum": 384.82399999999996, 
+          "average": 16.034333333333333
         }, 
         "Orbit": {
-          "count": 46, 
-          "sum": 1460.4359999999992, 
-          "average": 31.748608695652173
+          "count": 25, 
+          "sum": 671.4440000000001, 
+          "average": 26.85776
         }, 
         "Spiegel & Grau": {
-          "count": 22, 
-          "sum": 947.1159999999999, 
-          "average": 43.05072727272727
+          "count": 12, 
+          "sum": 567.088, 
+          "average": 47.25733333333333
         }, 
         "Main Street Books": {
           "count": 1, 
@@ -13481,9 +7980,9 @@ publishers_bar = [
           "average": 23.632
         }, 
         "William Morrow Paperbacks": {
-          "count": 44, 
-          "sum": 1280.5460000000003, 
-          "average": 29.10331818181818
+          "count": 17, 
+          "sum": 471.32399999999996, 
+          "average": 27.72494117647059
         }, 
         "Crossing Press": {
           "count": 2, 
@@ -13491,59 +7990,49 @@ publishers_bar = [
           "average": 8.033
         }, 
         "LB Kids": {
-          "count": 8, 
-          "sum": 22.221999999999998, 
-          "average": 2.77775
+          "count": 2, 
+          "sum": 7.704, 
+          "average": 3.852
         }, 
         "Fawcett": {
-          "count": 4, 
-          "sum": 37.138, 
-          "average": 9.2845
+          "count": 1, 
+          "sum": 15.574, 
+          "average": 15.574
         }, 
         "Sarah Crichton Books": {
-          "count": 7, 
-          "sum": 459.918, 
-          "average": 65.70257142857143
-        }, 
-        "Anthony Bourdain/Ecco": {
-          "count": 2, 
-          "sum": 32.958, 
-          "average": 16.479
+          "count": 3, 
+          "sum": 227.81, 
+          "average": 75.93666666666667
         }, 
         "Vision": {
-          "count": 4, 
-          "sum": 166.362, 
-          "average": 41.5905
+          "count": 2, 
+          "sum": 109.04400000000001, 
+          "average": 54.522000000000006
         }, 
         "Farrar Straus and Giroux": {
-          "count": 89, 
-          "sum": 1878.86, 
-          "average": 21.11078651685393
-        }, 
-        "Vintage Espanol": {
-          "count": 7, 
-          "sum": 151.79399999999998, 
-          "average": 21.684857142857144
+          "count": 49, 
+          "sum": 1397.2259999999999, 
+          "average": 28.514816326530614
         }, 
         "Holt Paperbacks": {
-          "count": 25, 
-          "sum": 629.8879999999999, 
-          "average": 25.195520000000002
+          "count": 12, 
+          "sum": 311.648, 
+          "average": 25.970666666666663
         }, 
         "Multnomah Books": {
-          "count": 7, 
-          "sum": 217.204, 
-          "average": 31.02914285714286
+          "count": 4, 
+          "sum": 193.27599999999998, 
+          "average": 48.318999999999996
         }, 
         "Grupo Nelson": {
-          "count": 3, 
-          "sum": 11.748, 
-          "average": 3.9160000000000004
+          "count": 2, 
+          "sum": 9.95, 
+          "average": 4.975
         }, 
-        "Grosset & Dunlap": {
-          "count": 104, 
-          "sum": 547.8740000000008, 
-          "average": 5.268019230769231
+        "Simon Spotlight": {
+          "count": 8, 
+          "sum": 36.480000000000004, 
+          "average": 4.56
         }, 
         "HarperTrue": {
           "count": 1, 
@@ -13551,29 +8040,19 @@ publishers_bar = [
           "average": 37.412
         }, 
         "Business Plus": {
-          "count": 15, 
-          "sum": 299.46400000000006, 
-          "average": 19.964266666666667
+          "count": 9, 
+          "sum": 185.78400000000002, 
+          "average": 20.64266666666667
         }, 
         "Wendy Lamb Books": {
-          "count": 5, 
-          "sum": 61.292, 
-          "average": 12.2584
+          "count": 3, 
+          "sum": 45.236, 
+          "average": 15.078666666666665
         }, 
-        "Puffin": {
-          "count": 103, 
-          "sum": 1838.7139999999995, 
-          "average": 17.851592233009708
-        }, 
-        "It Books": {
-          "count": 24, 
-          "sum": 505.1560000000002, 
-          "average": 21.048166666666667
-        }, 
-        "World Wrestling Entertainment": {
-          "count": 2, 
-          "sum": 17.424, 
-          "average": 8.712
+        "Two Lions": {
+          "count": 32, 
+          "sum": 396.42400000000004, 
+          "average": 12.38825
         }, 
         "Knopf Group E-Books": {
           "count": 1, 
@@ -13581,9 +8060,9 @@ publishers_bar = [
           "average": 8.634
         }, 
         "HarperCollinsChildren'sBooks": {
-          "count": 2, 
-          "sum": 3.49, 
-          "average": 1.745
+          "count": 1, 
+          "sum": 0.758, 
+          "average": 0.758
         }, 
         "Truman Talley Books": {
           "count": 1, 
@@ -13591,41 +8070,4076 @@ publishers_bar = [
           "average": 14.224
         }, 
         "Aladdin": {
-          "count": 79, 
-          "sum": 583.5240000000001, 
-          "average": 7.386379746835443
+          "count": 32, 
+          "sum": 232.62799999999993, 
+          "average": 7.2696250000000004
         }, 
         "Random House/Disney": {
-          "count": 13, 
-          "sum": 149.45599999999993, 
-          "average": 11.496615384615383
+          "count": 5, 
+          "sum": 13.31, 
+          "average": 2.662
         }, 
         "Razorbill": {
-          "count": 14, 
-          "sum": 2032.0739999999998, 
-          "average": 145.14814285714286
+          "count": 7, 
+          "sum": 1276.4399999999998, 
+          "average": 182.3485714285714
         }, 
         "Ten Speed Press": {
-          "count": 41, 
-          "sum": 593.0780000000001, 
-          "average": 14.46531707317073
-        }, 
-        "DAW": {
-          "count": 14, 
-          "sum": 312.1020000000001, 
-          "average": 22.293
+          "count": 24, 
+          "sum": 364.6919999999998, 
+          "average": 15.195500000000001
         }, 
         "The Penguin Press": {
+          "count": 11, 
+          "sum": 669.6999999999999, 
+          "average": 60.88181818181818
+        }
+      }, 
+      "publishers.[0].statistics.sale price": {
+        "Gallery Books": {
+          "count": 30, 
+          "sum": 263.88999999999993, 
+          "average": 8.796333333333333
+        }, 
+        "Dial": {
+          "count": 4, 
+          "sum": 38.739999999999995, 
+          "average": 9.684999999999999
+        }, 
+        "McClelland & Stewart": {
+          "count": 1, 
+          "sum": 10.99, 
+          "average": 10.99
+        }, 
+        "Tor Books": {
+          "count": 41, 
+          "sum": 308.5799999999999, 
+          "average": 7.526341463414634
+        }, 
+        "ESPN": {
+          "count": 2, 
+          "sum": 24.04, 
+          "average": 12.02
+        }, 
+        "Bantam": {
+          "count": 77, 
+          "sum": 639.8100000000004, 
+          "average": 8.30922077922078
+        }, 
+        "Harper": {
+          "count": 28, 
+          "sum": 259.59000000000003, 
+          "average": 9.271071428571428
+        }, 
+        "Portfolio": {
+          "count": 40, 
+          "sum": 425.41000000000014, 
+          "average": 10.635250000000001
+        }, 
+        "Plume": {
+          "count": 35, 
+          "sum": 356.5200000000001, 
+          "average": 10.186285714285713
+        }, 
+        "Jericho Books": {
+          "count": 2, 
+          "sum": 20.98, 
+          "average": 10.49
+        }, 
+        "HarperTeen": {
+          "count": 15, 
+          "sum": 110.84, 
+          "average": 7.389333333333334
+        }, 
+        "NAL": {
+          "count": 20, 
+          "sum": 184.17000000000002, 
+          "average": 9.2085
+        }, 
+        "Avon Impulse": {
+          "count": 9, 
+          "sum": 13.91, 
+          "average": 1.5455555555555556
+        }, 
+        "AmazonEncore": {
+          "count": 6, 
+          "sum": 21.940000000000005, 
+          "average": 3.6566666666666667
+        }, 
+        "Dial Press Trade Paperback": {
+          "count": 2, 
+          "sum": 17.68, 
+          "average": 8.84
+        }, 
+        "Villard": {
+          "count": 1, 
+          "sum": 10.52, 
+          "average": 10.52
+        }, 
+        "Golden/Disney": {
+          "count": 3, 
+          "sum": 9.1, 
+          "average": 3.033333333333333
+        }, 
+        "RH/Disney": {
+          "count": 2, 
+          "sum": 8.25, 
+          "average": 4.125
+        }, 
+        "Hodder & Stoughton": {
+          "count": 1, 
+          "sum": 17.98, 
+          "average": 17.98
+        }, 
+        "Newmarket Press": {
+          "count": 1, 
+          "sum": 8.0, 
+          "average": 8.0
+        }, 
+        "Little Brown and Company": {
+          "count": 67, 
+          "sum": 634.6800000000003, 
+          "average": 9.472835820895524
+        }, 
+        "Grand Central Life & Style": {
+          "count": 10, 
+          "sum": 118.89999999999998, 
+          "average": 11.89
+        }, 
+        "Perigee": {
+          "count": 9, 
+          "sum": 76.58, 
+          "average": 8.508888888888889
+        }, 
+        "Golden Books": {
+          "count": 3, 
+          "sum": 10.190000000000001, 
+          "average": 3.396666666666667
+        }, 
+        "Thomas Dunne Books": {
+          "count": 17, 
+          "sum": 175.4, 
+          "average": 10.31764705882353
+        }, 
+        "HarperSport": {
+          "count": 2, 
+          "sum": 3.98, 
+          "average": 1.99
+        }, 
+        "Tor Teen": {
+          "count": 1, 
+          "sum": 5.74, 
+          "average": 5.74
+        }, 
+        "Crown Archetype": {
+          "count": 13, 
+          "sum": 139.75, 
+          "average": 10.75
+        }, 
+        "Harper Element": {
+          "count": 8, 
+          "sum": 40.400000000000006, 
+          "average": 5.05
+        }, 
+        "(Indie Publisher)": {
+          "count": 2819, 
+          "sum": 9488.51999999958, 
+          "average": 3.3659169918410785
+        }, 
+        "Zondervan": {
+          "count": 31, 
+          "sum": 208.08000000000004, 
+          "average": 6.71225806451613
+        }, 
+        "HarperWave": {
+          "count": 3, 
+          "sum": 34.519999999999996, 
+          "average": 11.506666666666666
+        }, 
+        "Studio": {
+          "count": 1, 
+          "sum": 13.0, 
+          "average": 13.0
+        }, 
+        "Bantam Dell": {
+          "count": 1, 
+          "sum": 9.99, 
+          "average": 9.99
+        }, 
+        "Pocket Star": {
+          "count": 5, 
+          "sum": 19.05, 
+          "average": 3.81
+        }, 
+        "Avon": {
+          "count": 10, 
+          "sum": 41.010000000000005, 
+          "average": 4.101
+        }, 
+        "Thomas & Mercer": {
+          "count": 57, 
+          "sum": 233.43000000000018, 
+          "average": 4.095263157894737
+        }, 
+        "Thomas Nelson": {
+          "count": 58, 
+          "sum": 537.7500000000002, 
+          "average": 9.27155172413793
+        }, 
+        "Penguin": {
+          "count": 20, 
+          "sum": 141.35, 
+          "average": 7.0675
+        }, 
+        "Billboard Books": {
+          "count": 2, 
+          "sum": 36.81, 
+          "average": 18.405
+        }, 
+        "Simon Pulse": {
+          "count": 9, 
+          "sum": 67.18, 
+          "average": 7.464444444444443
+        }, 
+        "Little Brown Books for Young Readers": {
+          "count": 33, 
+          "sum": 237.26000000000005, 
+          "average": 7.18969696969697
+        }, 
+        "Watson-Guptill": {
+          "count": 8, 
+          "sum": 98.06, 
+          "average": 12.2575
+        }, 
+        "Harper Paperbacks": {
+          "count": 1, 
+          "sum": 8.0, 
+          "average": 8.0
+        }, 
+        "Simon & Schuster": {
+          "count": 95, 
+          "sum": 981.6199999999998, 
+          "average": 10.332842105263158
+        }, 
+        "Putnam Adult": {
+          "count": 17, 
+          "sum": 191.05000000000004, 
+          "average": 11.238235294117647
+        }, 
+        "Reagan Arthur Books": {
+          "count": 1, 
+          "sum": 9.99, 
+          "average": 9.99
+        }, 
+        "William Morrow Impulse": {
+          "count": 1, 
+          "sum": 0.99, 
+          "average": 0.99
+        }, 
+        "Puffin": {
+          "count": 52, 
+          "sum": 307.3200000000001, 
+          "average": 5.91
+        }, 
+        "Metropolitan Books": {
+          "count": 7, 
+          "sum": 71.46000000000001, 
+          "average": 10.20857142857143
+        }, 
+        "Potter Style": {
+          "count": 2, 
+          "sum": 19.83, 
+          "average": 9.915
+        }, 
+        "Poppy": {
+          "count": 1, 
+          "sum": 2.99, 
+          "average": 2.99
+        }, 
+        "Three Rivers Press": {
+          "count": 8, 
+          "sum": 81.60000000000001, 
+          "average": 10.2
+        }, 
+        "Little Simon": {
+          "count": 1, 
+          "sum": 4.26, 
+          "average": 4.26
+        }, 
+        "The Dial Press": {
+          "count": 2, 
+          "sum": 21.67, 
+          "average": 10.835
+        }, 
+        "Hudson Street Press": {
+          "count": 1, 
+          "sum": 10.99, 
+          "average": 10.99
+        }, 
+        "St. Martin's Paperbacks": {
+          "count": 9, 
+          "sum": 63.17999999999999, 
+          "average": 7.02
+        }, 
+        "Celestial Arts": {
+          "count": 1, 
+          "sum": 10.99, 
+          "average": 10.99
+        }, 
+        "HarperTorch": {
+          "count": 1, 
+          "sum": 0.99, 
+          "average": 0.99
+        }, 
+        "Entangled: Bliss": {
+          "count": 1, 
+          "sum": 2.99, 
+          "average": 2.99
+        }, 
+        "Debbie Macomber Books": {
+          "count": 1, 
+          "sum": 2.99, 
+          "average": 2.99
+        }, 
+        "Roaring Brook Press": {
+          "count": 3, 
+          "sum": 21.11, 
+          "average": 7.036666666666666
+        }, 
+        "Atheneum Books for Young Readers": {
+          "count": 19, 
+          "sum": 116.47000000000001, 
+          "average": 6.13
+        }, 
+        "Pocket Books": {
+          "count": 36, 
+          "sum": 258.64000000000004, 
+          "average": 7.184444444444444
+        }, 
+        "Amazon Publishing": {
+          "count": 11, 
+          "sum": 50.90000000000001, 
+          "average": 4.627272727272728
+        }, 
+        "St. Martin's Press": {
+          "count": 84, 
+          "sum": 738.44, 
+          "average": 8.790952380952382
+        }, 
+        "HarperPerennial Classics": {
+          "count": 2, 
+          "sum": 1.98, 
+          "average": 0.99
+        }, 
+        "Pintail": {
+          "count": 1, 
+          "sum": 9.99, 
+          "average": 9.99
+        }, 
+        "HarperCollins e-books": {
+          "count": 179, 
+          "sum": 1382.1000000000006, 
+          "average": 7.721229050279329
+        }, 
+        "Gotham Books": {
+          "count": 11, 
+          "sum": 117.70999999999998, 
+          "average": 10.700909090909091
+        }, 
+        "MTV Books": {
+          "count": 2, 
+          "sum": 17.58, 
+          "average": 8.79
+        }, 
+        "Vintage": {
+          "count": 78, 
+          "sum": 755.8600000000005, 
+          "average": 9.69051282051282
+        }, 
+        "Clarkson Potter": {
+          "count": 14, 
+          "sum": 194.60999999999999, 
+          "average": 13.900714285714287
+        }, 
+        "Grand Harbor Press": {
+          "count": 1, 
+          "sum": 0.99, 
+          "average": 0.99
+        }, 
+        "Harper Thorsons": {
+          "count": 1, 
+          "sum": 6.65, 
+          "average": 6.65
+        }, 
+        "Picador": {
+          "count": 4, 
+          "sum": 41.56, 
+          "average": 10.39
+        }, 
+        "Harmony": {
+          "count": 36, 
+          "sum": 384.0300000000001, 
+          "average": 10.6675
+        }, 
+        "Signet Classic": {
+          "count": 3, 
+          "sum": 15.32, 
+          "average": 5.1066666666666665
+        }, 
+        "47North": {
+          "count": 26, 
+          "sum": 110.73999999999997, 
+          "average": 4.259230769230769
+        }, 
+        "HarperPress": {
+          "count": 2, 
+          "sum": 9.99, 
+          "average": 4.995
+        }, 
+        "Collins": {
+          "count": 5, 
+          "sum": 30.55, 
+          "average": 6.11
+        }, 
+        "Feiwel & Friends": {
+          "count": 4, 
+          "sum": 22.740000000000002, 
+          "average": 5.6850000000000005
+        }, 
+        "DK Publishing": {
+          "count": 15, 
+          "sum": 62.65000000000002, 
+          "average": 4.176666666666667
+        }, 
+        "Amphoto Books": {
+          "count": 2, 
+          "sum": 37.96, 
+          "average": 18.98
+        }, 
+        "Skyscape": {
+          "count": 6, 
+          "sum": 25.940000000000005, 
+          "average": 4.323333333333333
+        }, 
+        "Avery": {
+          "count": 10, 
+          "sum": 113.28999999999999, 
+          "average": 11.329
+        }, 
+        "Faber & Faber": {
+          "count": 4, 
+          "sum": 38.660000000000004, 
+          "average": 9.665000000000001
+        }, 
+        "AmazonCrossing": {
+          "count": 13, 
+          "sum": 54.88000000000002, 
+          "average": 4.2215384615384615
+        }, 
+        "Simon & Schuster Audio": {
+          "count": 1, 
+          "sum": 4.74, 
+          "average": 4.74
+        }, 
+        "Del Rey": {
+          "count": 23, 
+          "sum": 166.58000000000004, 
+          "average": 7.242608695652175
+        }, 
+        "Graywolf Press": {
+          "count": 1, 
+          "sum": 2.99, 
+          "average": 2.99
+        }, 
+        "Howard Books": {
+          "count": 10, 
+          "sum": 91.98000000000002, 
+          "average": 9.198
+        }, 
+        "First Second": {
+          "count": 2, 
+          "sum": 19.560000000000002, 
+          "average": 9.780000000000001
+        }, 
+        "FaithWords": {
+          "count": 5, 
+          "sum": 39.85, 
+          "average": 7.970000000000001
+        }, 
+        "Penguin Classic": {
+          "count": 8, 
+          "sum": 65.42, 
+          "average": 8.1775
+        }, 
+        "Montlake Romance": {
+          "count": 34, 
+          "sum": 125.67999999999994, 
+          "average": 3.6964705882352944
+        }, 
+        "Rough Guides": {
+          "count": 2, 
+          "sum": 18.98, 
+          "average": 9.49
+        }, 
+        "Modern Library": {
+          "count": 4, 
+          "sum": 44.36, 
+          "average": 11.09
+        }, 
+        "Knopf": {
+          "count": 23, 
+          "sum": 268.20000000000005, 
+          "average": 11.660869565217391
+        }, 
+        "Forever": {
+          "count": 6, 
+          "sum": 33.660000000000004, 
+          "average": 5.61
+        }, 
+        "Riverhead": {
+          "count": 24, 
+          "sum": 256.49000000000007, 
+          "average": 10.687083333333334
+        }, 
+        "Mulholland Books": {
+          "count": 4, 
+          "sum": 44.31, 
+          "average": 11.0775
+        }, 
+        "Yearling": {
+          "count": 4, 
+          "sum": 22.14, 
+          "average": 5.535
+        }, 
+        "Hogarth": {
+          "count": 1, 
+          "sum": 7.99, 
+          "average": 7.99
+        }, 
+        "Bantam Classics": {
+          "count": 1, 
+          "sum": 1.99, 
+          "average": 1.99
+        }, 
+        "Potter Craft": {
+          "count": 4, 
+          "sum": 48.970000000000006, 
+          "average": 12.2425
+        }, 
+        "Sentinel": {
+          "count": 1, 
+          "sum": 11.99, 
+          "average": 11.99
+        }, 
+        "Atria/Emily Bestler Books": {
+          "count": 3, 
+          "sum": 22.440000000000005, 
+          "average": 7.48
+        }, 
+        "Penguin Books": {
+          "count": 72, 
+          "sum": 745.2300000000001, 
+          "average": 10.350416666666668
+        }, 
+        "Lone Eagle": {
+          "count": 1, 
+          "sum": 13.0, 
+          "average": 13.0
+        }, 
+        "Berkley": {
+          "count": 79, 
+          "sum": 562.5900000000005, 
+          "average": 7.1213924050632915
+        }, 
+        "Harper Voyager": {
+          "count": 6, 
+          "sum": 35.71, 
+          "average": 5.951666666666667
+        }, 
+        "Hyperion": {
+          "count": 36, 
+          "sum": 314.3400000000001, 
+          "average": 8.731666666666667
+        }, 
+        "Anchor": {
+          "count": 34, 
+          "sum": 327.7200000000001, 
+          "average": 9.638823529411766
+        }, 
+        "Touchstone": {
+          "count": 29, 
+          "sum": 288.8400000000001, 
+          "average": 9.959999999999999
+        }, 
+        "Forge Books": {
+          "count": 8, 
+          "sum": 68.53, 
+          "average": 8.56625
+        }, 
+        "Celebra": {
+          "count": 2, 
+          "sum": 19.58, 
+          "average": 9.79
+        }, 
+        "Knopf Books for Young Readers": {
+          "count": 16, 
+          "sum": 100.03000000000002, 
+          "average": 6.251875
+        }, 
+        "Loveswept": {
+          "count": 9, 
+          "sum": 20.910000000000004, 
+          "average": 2.3233333333333333
+        }, 
+        "Roc": {
+          "count": 5, 
+          "sum": 36.49, 
+          "average": 7.298
+        }, 
+        "St. Martin's Griffin": {
+          "count": 23, 
+          "sum": 198.01999999999998, 
+          "average": 8.609565217391305
+        }, 
+        "Pantheon": {
+          "count": 3, 
+          "sum": 32.59, 
+          "average": 10.863333333333335
+        }, 
+        "Reader's Digest": {
+          "count": 2, 
+          "sum": 11.780000000000001, 
+          "average": 5.890000000000001
+        }, 
+        "InterMix": {
+          "count": 1, 
+          "sum": 4.26, 
+          "average": 4.26
+        }, 
+        "Witness Impulse": {
+          "count": 7, 
+          "sum": 11.440000000000001, 
+          "average": 1.6342857142857146
+        }, 
+        "Dutton Children's": {
+          "count": 2, 
+          "sum": 14.76, 
+          "average": 7.38
+        }, 
+        "Speak": {
+          "count": 9, 
+          "sum": 51.39, 
+          "average": 5.71
+        }, 
+        "Yen Press": {
+          "count": 2, 
+          "sum": 17.98, 
+          "average": 8.99
+        }, 
+        "Greenwillow Books": {
+          "count": 8, 
+          "sum": 37.28, 
+          "average": 4.66
+        }, 
+        "Schwartz & Wade": {
+          "count": 1, 
+          "sum": 9.77, 
+          "average": 9.77
+        }, 
+        "Page Street Publishing": {
+          "count": 2, 
+          "sum": 18.880000000000003, 
+          "average": 9.440000000000001
+        }, 
+        "Vintage Espanol": {
+          "count": 3, 
+          "sum": 24.450000000000003, 
+          "average": 8.15
+        }, 
+        "Joe Books": {
+          "count": 1, 
+          "sum": 0.99, 
+          "average": 0.99
+        }, 
+        "Viking Adult": {
+          "count": 13, 
+          "sum": 151.57999999999998, 
+          "average": 11.66
+        }, 
+        "Blue Rider Press": {
+          "count": 4, 
+          "sum": 37.96, 
+          "average": 9.49
+        }, 
+        "Thorsons": {
+          "count": 2, 
+          "sum": 11.379999999999999, 
+          "average": 5.6899999999999995
+        }, 
+        "HarperBusiness": {
+          "count": 10, 
+          "sum": 114.31999999999998, 
+          "average": 11.431999999999999
+        }, 
+        "Alfred A. Knopf BFYR": {
+          "count": 3, 
+          "sum": 17.94, 
+          "average": 5.98
+        }, 
+        "Minotaur Books": {
+          "count": 19, 
+          "sum": 156.54000000000002, 
+          "average": 8.238947368421051
+        }, 
+        "Random House Trade Paperbacks": {
+          "count": 15, 
+          "sum": 152.13000000000002, 
+          "average": 10.142
+        }, 
+        "BradyGames": {
+          "count": 1, 
+          "sum": 7.99, 
+          "average": 7.99
+        }, 
+        "Renaissance Books": {
+          "count": 1, 
+          "sum": 7.59, 
+          "average": 7.59
+        }, 
+        "Harper Perennial": {
+          "count": 8, 
+          "sum": 77.42999999999999, 
+          "average": 9.67875
+        }, 
+        "Viking Children's": {
+          "count": 3, 
+          "sum": 29.27, 
+          "average": 9.756666666666666
+        }, 
+        "North Point Press": {
+          "count": 3, 
+          "sum": 26.87, 
+          "average": 8.956666666666667
+        }, 
+        "Simon & Schuster Books for Young Readers": {
+          "count": 22, 
+          "sum": 155.48000000000002, 
+          "average": 7.0672727272727265
+        }, 
+        "Random House": {
+          "count": 42, 
+          "sum": 463.3599999999999, 
+          "average": 11.032380952380953
+        }, 
+        "Schocken": {
+          "count": 3, 
+          "sum": 33.97, 
+          "average": 11.323333333333332
+        }, 
+        "Meadowbrook": {
+          "count": 2, 
+          "sum": 15.59, 
+          "average": 7.795
+        }, 
+        "HarperFestival": {
+          "count": 3, 
+          "sum": 15.53, 
+          "average": 5.176666666666667
+        }, 
+        "Grand Central Publishing": {
+          "count": 38, 
+          "sum": 323.9600000000001, 
+          "average": 8.525263157894736
+        }, 
+        "Zinc Ink": {
+          "count": 1, 
+          "sum": 10.99, 
+          "average": 10.99
+        }, 
+        "Entangled: Teen": {
+          "count": 1, 
+          "sum": 5.69, 
+          "average": 5.69
+        }, 
+        "Scientific American": {
+          "count": 1, 
+          "sum": 3.79, 
+          "average": 3.79
+        }, 
+        "Ecco": {
+          "count": 12, 
+          "sum": 111.26999999999998, 
+          "average": 9.272499999999999
+        }, 
+        "Presidio Press": {
+          "count": 1, 
+          "sum": 5.99, 
+          "average": 5.99
+        }, 
+        "Ripley Publishing": {
+          "count": 4, 
+          "sum": 16.11, 
+          "average": 4.0275
+        }, 
+        "FENN-M&S": {
+          "count": 1, 
+          "sum": 11.99, 
+          "average": 11.99
+        }, 
+        "Entangled: Brazen": {
+          "count": 12, 
+          "sum": 34.28, 
+          "average": 2.856666666666667
+        }, 
+        "LucasBooks": {
+          "count": 41, 
+          "sum": 291.9700000000002, 
+          "average": 7.121219512195123
+        }, 
+        "Piatkus": {
+          "count": 1, 
+          "sum": 6.99, 
+          "average": 6.99
+        }, 
+        "Palgrave Macmillan": {
+          "count": 11, 
+          "sum": 129.14000000000001, 
+          "average": 11.739999999999998
+        }, 
+        "Broadway Books": {
+          "count": 35, 
+          "sum": 318.4500000000001, 
+          "average": 9.098571428571429
+        }, 
+        "Random House Books for Young Readers": {
+          "count": 94, 
+          "sum": 435.8600000000003, 
+          "average": 4.636808510638298
+        }, 
+        "Overlook": {
+          "count": 2, 
+          "sum": 22.83, 
+          "average": 11.415
+        }, 
+        "Threshold Editions": {
+          "count": 6, 
+          "sum": 63.230000000000004, 
+          "average": 10.538333333333334
+        }, 
+        "William Morrow": {
+          "count": 41, 
+          "sum": 344.7300000000001, 
+          "average": 8.408048780487805
+        }, 
+        "Twelve": {
+          "count": 7, 
+          "sum": 70.48, 
+          "average": 10.06857142857143
+        }, 
+        "Delta": {
+          "count": 2, 
+          "sum": 20.54, 
+          "average": 10.27
+        }, 
+        "St. Martin's True Crime": {
+          "count": 1, 
+          "sum": 6.83, 
+          "average": 6.83
+        }, 
+        "Little A": {
+          "count": 1, 
+          "sum": 5.99, 
+          "average": 5.99
+        }, 
+        "Jove": {
+          "count": 20, 
+          "sum": 134.87999999999997, 
+          "average": 6.744
+        }, 
+        "Jet City Comics": {
+          "count": 1, 
+          "sum": 7.99, 
+          "average": 7.99
+        }, 
+        "Island Books": {
+          "count": 1, 
+          "sum": 5.98, 
+          "average": 5.98
+        }, 
+        "Balzer + Bray": {
+          "count": 8, 
+          "sum": 51.56999999999999, 
+          "average": 6.44625
+        }, 
+        "Entangled: Indulgence": {
+          "count": 2, 
+          "sum": 1.98, 
+          "average": 0.99
+        }, 
+        "Dutton Adult": {
+          "count": 14, 
+          "sum": 135.08999999999997, 
+          "average": 9.649285714285714
+        }, 
+        "Orb Books": {
+          "count": 4, 
+          "sum": 35.56, 
+          "average": 8.89
+        }, 
+        "Laurel Leaf": {
+          "count": 5, 
+          "sum": 28.029999999999998, 
+          "average": 5.606
+        }, 
+        "Aerie": {
+          "count": 1, 
+          "sum": 2.84, 
+          "average": 2.84
+        }, 
+        "Current": {
+          "count": 1, 
+          "sum": 11.99, 
+          "average": 11.99
+        }, 
+        "Back Bay Books": {
+          "count": 3, 
+          "sum": 29.97, 
+          "average": 9.99
+        }, 
+        "HP": {
+          "count": 1, 
+          "sum": 16.14, 
+          "average": 16.14
+        }, 
+        "Robin Corey Books": {
+          "count": 1, 
+          "sum": 5.99, 
+          "average": 5.99
+        }, 
+        "It Books": {
+          "count": 14, 
+          "sum": 132.74, 
+          "average": 9.481428571428571
+        }, 
+        "Peterson's": {
+          "count": 2, 
+          "sum": 12.98, 
+          "average": 6.49
+        }, 
+        "Grosset & Dunlap": {
+          "count": 50, 
+          "sum": 245.55999999999986, 
+          "average": 4.9112
+        }, 
+        "Crown": {
+          "count": 11, 
+          "sum": 111.93999999999998, 
+          "average": 10.176363636363636
+        }, 
+        "FSG Originals": {
+          "count": 2, 
+          "sum": 11.4, 
+          "average": 5.7
+        }, 
+        "Orion": {
+          "count": 1, 
+          "sum": 6.64, 
+          "average": 6.64
+        }, 
+        "Katherine Tegen Books": {
+          "count": 7, 
+          "sum": 47.47, 
+          "average": 6.781428571428571
+        }, 
+        "(Single-Author Publisher)": {
+          "count": 1757, 
+          "sum": 8000.369999999771, 
+          "average": 4.553426294820717
+        }, 
+        "HarperCollins": {
+          "count": 123, 
+          "sum": 716.3500000000005, 
+          "average": 5.823983739837399
+        }, 
+        "WaterBrook Press": {
+          "count": 13, 
+          "sum": 115.47, 
+          "average": 8.882307692307693
+        }, 
+        "Putnam Juvenile": {
+          "count": 2, 
+          "sum": 12.71, 
+          "average": 6.355
+        }, 
+        "Image": {
+          "count": 5, 
+          "sum": 39.05, 
+          "average": 7.81
+        }, 
+        "Crimeline": {
+          "count": 2, 
+          "sum": 11.96, 
+          "average": 5.98
+        }, 
+        "Hill and Wang": {
+          "count": 1, 
+          "sum": 8.89, 
+          "average": 8.89
+        }, 
+        "Delacorte Press": {
           "count": 27, 
-          "sum": 1375.8799999999999, 
-          "average": 50.958518518518524
+          "sum": 209.45000000000007, 
+          "average": 7.757407407407408
+        }, 
+        "Broadside e-books": {
+          "count": 1, 
+          "sum": 13.59, 
+          "average": 13.59
+        }, 
+        "Wellspring/Ballantine": {
+          "count": 1, 
+          "sum": 11.84, 
+          "average": 11.84
+        }, 
+        "Philomel": {
+          "count": 2, 
+          "sum": 19.54, 
+          "average": 9.77
+        }, 
+        "Center Street": {
+          "count": 3, 
+          "sum": 25.02, 
+          "average": 8.34
+        }, 
+        "Margaret K. McElderry Books": {
+          "count": 8, 
+          "sum": 50.93999999999999, 
+          "average": 6.3675
+        }, 
+        "The Friday Project": {
+          "count": 1, 
+          "sum": 1.99, 
+          "average": 1.99
+        }, 
+        "Ballantine Books": {
+          "count": 71, 
+          "sum": 627.7900000000002, 
+          "average": 8.842112676056338
+        }, 
+        "Atria Books/Beyond Words": {
+          "count": 2, 
+          "sum": 19.46, 
+          "average": 9.73
+        }, 
+        "Tundra Books": {
+          "count": 1, 
+          "sum": 5.98, 
+          "average": 5.98
+        }, 
+        "Crown Forum": {
+          "count": 2, 
+          "sum": 20.98, 
+          "average": 10.49
+        }, 
+        "Scribner": {
+          "count": 57, 
+          "sum": 560.0800000000002, 
+          "average": 9.825964912280703
+        }, 
+        "Scientific American / Farrar Straus and Giroux": {
+          "count": 1, 
+          "sum": 10.65, 
+          "average": 10.65
+        }, 
+        "Peterson Institute for International Economics": {
+          "count": 1, 
+          "sum": 7.99, 
+          "average": 7.99
+        }, 
+        "Crown Business": {
+          "count": 26, 
+          "sum": 281.18000000000006, 
+          "average": 10.814615384615385
+        }, 
+        "Pocket Books/Star Trek": {
+          "count": 27, 
+          "sum": 216.65, 
+          "average": 8.024074074074074
+        }, 
+        "Doubleday": {
+          "count": 18, 
+          "sum": 212.44000000000003, 
+          "average": 11.802222222222222
+        }, 
+        "Delacorte Books for Young Readers": {
+          "count": 9, 
+          "sum": 60.21000000000001, 
+          "average": 6.69
+        }, 
+        "Henry Holt and Co.": {
+          "count": 24, 
+          "sum": 208.61999999999995, 
+          "average": 8.6925
+        }, 
+        "Zonderkidz": {
+          "count": 14, 
+          "sum": 69.59, 
+          "average": 4.970714285714286
+        }, 
+        "Papercutz": {
+          "count": 4, 
+          "sum": 24.650000000000002, 
+          "average": 6.1625
+        }, 
+        "Atria Books": {
+          "count": 47, 
+          "sum": 440.8700000000001, 
+          "average": 9.380212765957447
+        }, 
+        "(Small or Medium Publisher)": {
+          "count": 4507, 
+          "sum": 34864.47000000102, 
+          "average": 7.735626802751276
+        }, 
+        "Flash Point": {
+          "count": 1, 
+          "sum": 7.99, 
+          "average": 7.99
+        }, 
+        "Onyx": {
+          "count": 1, 
+          "sum": 2.99, 
+          "average": 2.99
+        }, 
+        "Dell": {
+          "count": 21, 
+          "sum": 140.55999999999997, 
+          "average": 6.693333333333333
+        }, 
+        "Atria / 37 Ink": {
+          "count": 1, 
+          "sum": 0.99, 
+          "average": 0.99
+        }, 
+        "HarperOne": {
+          "count": 18, 
+          "sum": 147.64999999999995, 
+          "average": 8.202777777777778
+        }, 
+        "Princeton Review": {
+          "count": 5, 
+          "sum": 60.95, 
+          "average": 12.190000000000001
+        }, 
+        "DAW": {
+          "count": 7, 
+          "sum": 43.93000000000001, 
+          "average": 6.275714285714286
+        }, 
+        "Deepak Chopra": {
+          "count": 1, 
+          "sum": 11.84, 
+          "average": 11.84
+        }, 
+        "Washington Square Press": {
+          "count": 2, 
+          "sum": 21.61, 
+          "average": 10.805
+        }, 
+        "Tarcher": {
+          "count": 10, 
+          "sum": 100.74999999999999, 
+          "average": 10.075
+        }, 
+        "Times Books": {
+          "count": 4, 
+          "sum": 40.910000000000004, 
+          "average": 10.2275
+        }, 
+        "William Morrow Cookbooks": {
+          "count": 7, 
+          "sum": 42.11, 
+          "average": 6.015714285714286
+        }, 
+        "Fodor's": {
+          "count": 3, 
+          "sum": 36.47, 
+          "average": 12.156666666666666
+        }, 
+        "Signet": {
+          "count": 33, 
+          "sum": 214.81000000000006, 
+          "average": 6.50939393939394
+        }, 
+        "Nan A. Talese": {
+          "count": 3, 
+          "sum": 33.550000000000004, 
+          "average": 11.183333333333332
+        }, 
+        "Square Fish": {
+          "count": 2, 
+          "sum": 10.84, 
+          "average": 5.42
+        }, 
+        "Chicken Soup for the Soul": {
+          "count": 2, 
+          "sum": 14.88, 
+          "average": 7.44
+        }, 
+        "Ace": {
+          "count": 18, 
+          "sum": 123.95999999999997, 
+          "average": 6.886666666666667
+        }, 
+        "Prentice Hall Press": {
+          "count": 4, 
+          "sum": 65.52, 
+          "average": 16.38
+        }, 
+        "Free Press": {
+          "count": 28, 
+          "sum": 341.25, 
+          "average": 12.1875
+        }, 
+        "World Wrestling Entertainment": {
+          "count": 1, 
+          "sum": 6.83, 
+          "average": 6.83
+        }, 
+        "Spectra": {
+          "count": 24, 
+          "sum": 158.76000000000002, 
+          "average": 6.614999999999999
+        }, 
+        "Orbit": {
+          "count": 25, 
+          "sum": 195.67000000000007, 
+          "average": 7.8268
+        }, 
+        "Spiegel & Grau": {
+          "count": 12, 
+          "sum": 120.81, 
+          "average": 10.0675
+        }, 
+        "Main Street Books": {
+          "count": 1, 
+          "sum": 8.44, 
+          "average": 8.44
+        }, 
+        "William Morrow Paperbacks": {
+          "count": 17, 
+          "sum": 136.16, 
+          "average": 8.009411764705883
+        }, 
+        "Crossing Press": {
+          "count": 2, 
+          "sum": 22.83, 
+          "average": 11.415
+        }, 
+        "LB Kids": {
+          "count": 2, 
+          "sum": 7.26, 
+          "average": 3.63
+        }, 
+        "Fawcett": {
+          "count": 1, 
+          "sum": 5.99, 
+          "average": 5.99
+        }, 
+        "Sarah Crichton Books": {
+          "count": 3, 
+          "sum": 30.53, 
+          "average": 10.176666666666668
+        }, 
+        "Vision": {
+          "count": 2, 
+          "sum": 13.98, 
+          "average": 6.99
+        }, 
+        "Farrar Straus and Giroux": {
+          "count": 49, 
+          "sum": 393.3999999999998, 
+          "average": 8.028571428571428
+        }, 
+        "Holt Paperbacks": {
+          "count": 12, 
+          "sum": 95.61999999999999, 
+          "average": 7.968333333333334
+        }, 
+        "Multnomah Books": {
+          "count": 4, 
+          "sum": 35.739999999999995, 
+          "average": 8.935
+        }, 
+        "Grupo Nelson": {
+          "count": 2, 
+          "sum": 3.98, 
+          "average": 1.99
+        }, 
+        "Simon Spotlight": {
+          "count": 8, 
+          "sum": 36.209999999999994, 
+          "average": 4.52625
+        }, 
+        "HarperTrue": {
+          "count": 1, 
+          "sum": 1.99, 
+          "average": 1.99
+        }, 
+        "Business Plus": {
+          "count": 9, 
+          "sum": 94.71, 
+          "average": 10.523333333333333
+        }, 
+        "Wendy Lamb Books": {
+          "count": 3, 
+          "sum": 18.740000000000002, 
+          "average": 6.246666666666667
+        }, 
+        "Two Lions": {
+          "count": 32, 
+          "sum": 106.74999999999997, 
+          "average": 3.3359375
+        }, 
+        "Knopf Group E-Books": {
+          "count": 1, 
+          "sum": 14.39, 
+          "average": 14.39
+        }, 
+        "HarperCollinsChildren'sBooks": {
+          "count": 1, 
+          "sum": 3.79, 
+          "average": 3.79
+        }, 
+        "Truman Talley Books": {
+          "count": 1, 
+          "sum": 8.89, 
+          "average": 8.89
+        }, 
+        "Aladdin": {
+          "count": 32, 
+          "sum": 171.25000000000006, 
+          "average": 5.3515625
+        }, 
+        "Random House/Disney": {
+          "count": 5, 
+          "sum": 17.830000000000002, 
+          "average": 3.566
+        }, 
+        "Razorbill": {
+          "count": 7, 
+          "sum": 50.730000000000004, 
+          "average": 7.247142857142857
+        }, 
+        "Ten Speed Press": {
+          "count": 24, 
+          "sum": 288.56, 
+          "average": 12.023333333333333
+        }, 
+        "The Penguin Press": {
+          "count": 11, 
+          "sum": 131.64, 
+          "average": 11.967272727272729
+        }
+      }, 
+      "publishers.[0].daily average.amazon revenue": {
+        "Gallery Books": {
+          "count": 30, 
+          "sum": 1080.226, 
+          "average": 36.00753333333333
+        }, 
+        "Dial": {
+          "count": 4, 
+          "sum": 79.842, 
+          "average": 19.9605
+        }, 
+        "McClelland & Stewart": {
+          "count": 1, 
+          "sum": 4.396, 
+          "average": 4.396
+        }, 
+        "Tor Books": {
+          "count": 41, 
+          "sum": 1504.942, 
+          "average": 36.70590243902439
+        }, 
+        "ESPN": {
+          "count": 2, 
+          "sum": 30.482, 
+          "average": 15.241
+        }, 
+        "Bantam": {
+          "count": 77, 
+          "sum": 2923.3180000000007, 
+          "average": 37.96516883116883
+        }, 
+        "Harper": {
+          "count": 28, 
+          "sum": 2321.444, 
+          "average": 82.90871428571428
+        }, 
+        "Portfolio": {
+          "count": 40, 
+          "sum": 1296.4640000000002, 
+          "average": 32.4116
+        }, 
+        "Plume": {
+          "count": 35, 
+          "sum": 1234.8739999999998, 
+          "average": 35.282114285714286
+        }, 
+        "Jericho Books": {
+          "count": 2, 
+          "sum": 64.14, 
+          "average": 32.07
+        }, 
+        "HarperTeen": {
+          "count": 15, 
+          "sum": 471.838, 
+          "average": 31.45586666666667
+        }, 
+        "NAL": {
+          "count": 20, 
+          "sum": 550.1120000000001, 
+          "average": 27.505599999999998
+        }, 
+        "Avon Impulse": {
+          "count": 9, 
+          "sum": 136.388, 
+          "average": 15.154222222222224
+        }, 
+        "AmazonEncore": {
+          "count": 6, 
+          "sum": 453.81050000000005, 
+          "average": 75.63508333333333
+        }, 
+        "Dial Press Trade Paperback": {
+          "count": 2, 
+          "sum": 44.89, 
+          "average": 22.445
+        }, 
+        "Villard": {
+          "count": 1, 
+          "sum": 29.456, 
+          "average": 29.456
+        }, 
+        "Golden/Disney": {
+          "count": 3, 
+          "sum": 9.18, 
+          "average": 3.06
+        }, 
+        "RH/Disney": {
+          "count": 2, 
+          "sum": 25.652, 
+          "average": 12.826
+        }, 
+        "Hodder & Stoughton": {
+          "count": 1, 
+          "sum": 21.576, 
+          "average": 21.576
+        }, 
+        "Newmarket Press": {
+          "count": 1, 
+          "sum": 3.2, 
+          "average": 3.2
+        }, 
+        "Little Brown and Company": {
+          "count": 67, 
+          "sum": 3936.1680000000015, 
+          "average": 58.74877611940299
+        }, 
+        "Grand Central Life & Style": {
+          "count": 10, 
+          "sum": 621.8679999999999, 
+          "average": 62.186800000000005
+        }, 
+        "Perigee": {
+          "count": 9, 
+          "sum": 259.196, 
+          "average": 28.799555555555557
+        }, 
+        "Golden Books": {
+          "count": 3, 
+          "sum": 5.416, 
+          "average": 1.8053333333333335
+        }, 
+        "Thomas Dunne Books": {
+          "count": 17, 
+          "sum": 387.8880000000001, 
+          "average": 22.816941176470586
+        }, 
+        "HarperSport": {
+          "count": 2, 
+          "sum": 1.99, 
+          "average": 0.995
+        }, 
+        "Tor Teen": {
+          "count": 1, 
+          "sum": 14.924, 
+          "average": 14.924
+        }, 
+        "Crown Archetype": {
+          "count": 13, 
+          "sum": 279.49600000000004, 
+          "average": 21.499692307692307
+        }, 
+        "Harper Element": {
+          "count": 8, 
+          "sum": 73.608, 
+          "average": 9.201
+        }, 
+        "(Indie Publisher)": {
+          "count": 2819, 
+          "sum": 76431.73900000054, 
+          "average": 27.113068109258602
+        }, 
+        "Zondervan": {
+          "count": 31, 
+          "sum": 1242.0859999999998, 
+          "average": 40.06729032258065
+        }, 
+        "HarperWave": {
+          "count": 3, 
+          "sum": 303.066, 
+          "average": 101.022
+        }, 
+        "Studio": {
+          "count": 1, 
+          "sum": 13.0, 
+          "average": 13.0
+        }, 
+        "Bantam Dell": {
+          "count": 1, 
+          "sum": 15.984, 
+          "average": 15.984
+        }, 
+        "Pocket Star": {
+          "count": 5, 
+          "sum": 91.63399999999999, 
+          "average": 18.3268
+        }, 
+        "Avon": {
+          "count": 10, 
+          "sum": 751.7579999999999, 
+          "average": 75.17580000000001
+        }, 
+        "Thomas & Mercer": {
+          "count": 57, 
+          "sum": 6713.499000000001, 
+          "average": 117.78068421052632
+        }, 
+        "Thomas Nelson": {
+          "count": 58, 
+          "sum": 2240.4860000000003, 
+          "average": 38.62906896551724
+        }, 
+        "Penguin": {
+          "count": 20, 
+          "sum": 188.35199999999998, 
+          "average": 9.4176
+        }, 
+        "Billboard Books": {
+          "count": 2, 
+          "sum": 7.362, 
+          "average": 3.681
+        }, 
+        "Simon Pulse": {
+          "count": 9, 
+          "sum": 188.432, 
+          "average": 20.936888888888888
+        }, 
+        "Little Brown Books for Young Readers": {
+          "count": 33, 
+          "sum": 937.5980000000001, 
+          "average": 28.412060606060606
+        }, 
+        "Watson-Guptill": {
+          "count": 8, 
+          "sum": 38.80400000000001, 
+          "average": 4.8505
+        }, 
+        "Harper Paperbacks": {
+          "count": 1, 
+          "sum": 6.4, 
+          "average": 6.4
+        }, 
+        "Simon & Schuster": {
+          "count": 95, 
+          "sum": 3502.794, 
+          "average": 36.87151578947368
+        }, 
+        "Putnam Adult": {
+          "count": 17, 
+          "sum": 1621.646, 
+          "average": 95.39094117647059
+        }, 
+        "Reagan Arthur Books": {
+          "count": 1, 
+          "sum": 47.952, 
+          "average": 47.952
+        }, 
+        "William Morrow Impulse": {
+          "count": 1, 
+          "sum": 19.602, 
+          "average": 19.602
+        }, 
+        "Puffin": {
+          "count": 52, 
+          "sum": 941.7799999999999, 
+          "average": 18.111153846153847
+        }, 
+        "Metropolitan Books": {
+          "count": 7, 
+          "sum": 261.31800000000004, 
+          "average": 37.33114285714286
+        }, 
+        "Potter Style": {
+          "count": 2, 
+          "sum": 24.682, 
+          "average": 12.341
+        }, 
+        "Poppy": {
+          "count": 1, 
+          "sum": 8.372, 
+          "average": 8.372
+        }, 
+        "Three Rivers Press": {
+          "count": 8, 
+          "sum": 131.094, 
+          "average": 16.38675
+        }, 
+        "Little Simon": {
+          "count": 1, 
+          "sum": 0.852, 
+          "average": 0.852
+        }, 
+        "The Dial Press": {
+          "count": 2, 
+          "sum": 237.61599999999999, 
+          "average": 118.80799999999999
+        }, 
+        "Hudson Street Press": {
+          "count": 1, 
+          "sum": 24.178, 
+          "average": 24.178
+        }, 
+        "St. Martin's Paperbacks": {
+          "count": 9, 
+          "sum": 210.694, 
+          "average": 23.410444444444447
+        }, 
+        "Celestial Arts": {
+          "count": 1, 
+          "sum": 26.376, 
+          "average": 26.376
+        }, 
+        "HarperTorch": {
+          "count": 1, 
+          "sum": 0.792, 
+          "average": 0.792
+        }, 
+        "Entangled: Bliss": {
+          "count": 1, 
+          "sum": 43.056, 
+          "average": 43.056
+        }, 
+        "Debbie Macomber Books": {
+          "count": 1, 
+          "sum": 113.022, 
+          "average": 113.022
+        }, 
+        "Roaring Brook Press": {
+          "count": 3, 
+          "sum": 35.176, 
+          "average": 11.725333333333333
+        }, 
+        "Atheneum Books for Young Readers": {
+          "count": 19, 
+          "sum": 192.72400000000005, 
+          "average": 10.143368421052632
+        }, 
+        "Pocket Books": {
+          "count": 36, 
+          "sum": 866.5140000000001, 
+          "average": 24.069833333333335
+        }, 
+        "Amazon Publishing": {
+          "count": 11, 
+          "sum": 1053.4354999999998, 
+          "average": 95.76686363636364
+        }, 
+        "St. Martin's Press": {
+          "count": 84, 
+          "sum": 3866.975999999999, 
+          "average": 46.035428571428575
+        }, 
+        "HarperPerennial Classics": {
+          "count": 2, 
+          "sum": 21.186, 
+          "average": 10.593
+        }, 
+        "Pintail": {
+          "count": 1, 
+          "sum": 209.79, 
+          "average": 209.79
+        }, 
+        "HarperCollins e-books": {
+          "count": 179, 
+          "sum": 3712.8120000000004, 
+          "average": 20.741966480446926
+        }, 
+        "Gotham Books": {
+          "count": 11, 
+          "sum": 286.74999999999994, 
+          "average": 26.068181818181817
+        }, 
+        "MTV Books": {
+          "count": 2, 
+          "sum": 55.218, 
+          "average": 27.609
+        }, 
+        "Vintage": {
+          "count": 78, 
+          "sum": 1961.3080000000004, 
+          "average": 25.14497435897436
+        }, 
+        "Clarkson Potter": {
+          "count": 14, 
+          "sum": 128.91, 
+          "average": 9.207857142857142
+        }, 
+        "Grand Harbor Press": {
+          "count": 1, 
+          "sum": 14.8005, 
+          "average": 14.8005
+        }, 
+        "Harper Thorsons": {
+          "count": 1, 
+          "sum": 5.32, 
+          "average": 5.32
+        }, 
+        "Picador": {
+          "count": 4, 
+          "sum": 86.356, 
+          "average": 21.589
+        }, 
+        "Harmony": {
+          "count": 36, 
+          "sum": 1335.2480000000003, 
+          "average": 37.09022222222222
+        }, 
+        "Signet Classic": {
+          "count": 3, 
+          "sum": 21.598, 
+          "average": 7.199333333333333
+        }, 
+        "47North": {
+          "count": 26, 
+          "sum": 3049.403500000001, 
+          "average": 117.28475
+        }, 
+        "HarperPress": {
+          "count": 2, 
+          "sum": 7.586, 
+          "average": 3.793
+        }, 
+        "Collins": {
+          "count": 5, 
+          "sum": 36.04999999999999, 
+          "average": 7.209999999999999
+        }, 
+        "Feiwel & Friends": {
+          "count": 4, 
+          "sum": 141.528, 
+          "average": 35.382
+        }, 
+        "DK Publishing": {
+          "count": 15, 
+          "sum": 55.64999999999999, 
+          "average": 3.71
+        }, 
+        "Amphoto Books": {
+          "count": 2, 
+          "sum": 37.96, 
+          "average": 18.98
+        }, 
+        "Skyscape": {
+          "count": 6, 
+          "sum": 1490.4239999999998, 
+          "average": 248.404
+        }, 
+        "Avery": {
+          "count": 10, 
+          "sum": 222.18600000000004, 
+          "average": 22.218600000000002
+        }, 
+        "Faber & Faber": {
+          "count": 4, 
+          "sum": 43.456, 
+          "average": 10.864
+        }, 
+        "AmazonCrossing": {
+          "count": 13, 
+          "sum": 1643.2325, 
+          "average": 126.4025
+        }, 
+        "Simon & Schuster Audio": {
+          "count": 1, 
+          "sum": 18.96, 
+          "average": 18.96
+        }, 
+        "Del Rey": {
+          "count": 23, 
+          "sum": 557.5900000000003, 
+          "average": 24.24304347826087
+        }, 
+        "Graywolf Press": {
+          "count": 1, 
+          "sum": 25.714, 
+          "average": 25.714
+        }, 
+        "Howard Books": {
+          "count": 10, 
+          "sum": 432.696, 
+          "average": 43.269600000000004
+        }, 
+        "First Second": {
+          "count": 2, 
+          "sum": 10.314, 
+          "average": 5.157
+        }, 
+        "FaithWords": {
+          "count": 5, 
+          "sum": 209.448, 
+          "average": 41.8896
+        }, 
+        "Penguin Classic": {
+          "count": 8, 
+          "sum": 112.306, 
+          "average": 14.03825
+        }, 
+        "Montlake Romance": {
+          "count": 34, 
+          "sum": 7773.512500000001, 
+          "average": 228.6327205882353
+        }, 
+        "Rough Guides": {
+          "count": 2, 
+          "sum": 13.585999999999999, 
+          "average": 6.792999999999999
+        }, 
+        "Modern Library": {
+          "count": 4, 
+          "sum": 100.542, 
+          "average": 25.1355
+        }, 
+        "Knopf": {
+          "count": 23, 
+          "sum": 1855.2800000000002, 
+          "average": 80.66434782608695
+        }, 
+        "Forever": {
+          "count": 6, 
+          "sum": 631.2340000000002, 
+          "average": 105.20566666666667
+        }, 
+        "Riverhead": {
+          "count": 24, 
+          "sum": 1185.2440000000004, 
+          "average": 49.38516666666666
+        }, 
+        "Mulholland Books": {
+          "count": 4, 
+          "sum": 98.14, 
+          "average": 24.535
+        }, 
+        "Yearling": {
+          "count": 4, 
+          "sum": 60.976, 
+          "average": 15.244
+        }, 
+        "Hogarth": {
+          "count": 1, 
+          "sum": 170.986, 
+          "average": 170.986
+        }, 
+        "Bantam Classics": {
+          "count": 1, 
+          "sum": 3.184, 
+          "average": 3.184
+        }, 
+        "Potter Craft": {
+          "count": 4, 
+          "sum": 40.388000000000005, 
+          "average": 10.097
+        }, 
+        "Sentinel": {
+          "count": 1, 
+          "sum": 23.98, 
+          "average": 23.98
+        }, 
+        "Atria/Emily Bestler Books": {
+          "count": 3, 
+          "sum": 425.302, 
+          "average": 141.76733333333334
+        }, 
+        "Penguin Books": {
+          "count": 72, 
+          "sum": 2208.4000000000005, 
+          "average": 30.672222222222224
+        }, 
+        "Lone Eagle": {
+          "count": 1, 
+          "sum": 10.4, 
+          "average": 10.4
+        }, 
+        "Berkley": {
+          "count": 79, 
+          "sum": 3764.7980000000002, 
+          "average": 47.655670886075946
+        }, 
+        "Harper Voyager": {
+          "count": 6, 
+          "sum": 166.678, 
+          "average": 27.779666666666667
+        }, 
+        "Hyperion": {
+          "count": 36, 
+          "sum": 1233.362, 
+          "average": 34.26005555555556
+        }, 
+        "Anchor": {
+          "count": 34, 
+          "sum": 775.894, 
+          "average": 22.82041176470588
+        }, 
+        "Touchstone": {
+          "count": 29, 
+          "sum": 942.0580000000003, 
+          "average": 32.484758620689654
+        }, 
+        "Forge Books": {
+          "count": 8, 
+          "sum": 121.01, 
+          "average": 15.12625
+        }, 
+        "Celebra": {
+          "count": 2, 
+          "sum": 252.298, 
+          "average": 126.149
+        }, 
+        "Knopf Books for Young Readers": {
+          "count": 16, 
+          "sum": 259.384, 
+          "average": 16.2115
+        }, 
+        "Loveswept": {
+          "count": 9, 
+          "sum": 198.93200000000004, 
+          "average": 22.10355555555556
+        }, 
+        "Roc": {
+          "count": 5, 
+          "sum": 78.886, 
+          "average": 15.777199999999999
+        }, 
+        "St. Martin's Griffin": {
+          "count": 23, 
+          "sum": 512.1700000000001, 
+          "average": 22.268260869565214
+        }, 
+        "Pantheon": {
+          "count": 3, 
+          "sum": 176.80999999999997, 
+          "average": 58.93666666666667
+        }, 
+        "Reader's Digest": {
+          "count": 2, 
+          "sum": 6.986000000000001, 
+          "average": 3.4930000000000003
+        }, 
+        "InterMix": {
+          "count": 1, 
+          "sum": 18.744, 
+          "average": 18.744
+        }, 
+        "Witness Impulse": {
+          "count": 7, 
+          "sum": 105.77800000000002, 
+          "average": 15.111142857142857
+        }, 
+        "Dutton Children's": {
+          "count": 2, 
+          "sum": 189.952, 
+          "average": 94.976
+        }, 
+        "Speak": {
+          "count": 9, 
+          "sum": 1239.06, 
+          "average": 137.67333333333332
+        }, 
+        "Yen Press": {
+          "count": 2, 
+          "sum": 7.192, 
+          "average": 3.596
+        }, 
+        "Greenwillow Books": {
+          "count": 8, 
+          "sum": 73.75, 
+          "average": 9.21875
+        }, 
+        "Schwartz & Wade": {
+          "count": 1, 
+          "sum": 1.954, 
+          "average": 1.954
+        }, 
+        "Page Street Publishing": {
+          "count": 2, 
+          "sum": 41.316, 
+          "average": 20.658
+        }, 
+        "Vintage Espanol": {
+          "count": 3, 
+          "sum": 79.42200000000001, 
+          "average": 26.474
+        }, 
+        "Joe Books": {
+          "count": 1, 
+          "sum": 2.376, 
+          "average": 2.376
+        }, 
+        "Viking Adult": {
+          "count": 13, 
+          "sum": 512.046, 
+          "average": 39.38815384615385
+        }, 
+        "Blue Rider Press": {
+          "count": 4, 
+          "sum": 391.72999999999996, 
+          "average": 97.9325
+        }, 
+        "Thorsons": {
+          "count": 2, 
+          "sum": 17.068, 
+          "average": 8.534
+        }, 
+        "HarperBusiness": {
+          "count": 10, 
+          "sum": 328.61, 
+          "average": 32.861000000000004
+        }, 
+        "Alfred A. Knopf BFYR": {
+          "count": 3, 
+          "sum": 8.372, 
+          "average": 2.7906666666666666
+        }, 
+        "Minotaur Books": {
+          "count": 19, 
+          "sum": 919.6620000000003, 
+          "average": 48.40326315789474
+        }, 
+        "Random House Trade Paperbacks": {
+          "count": 15, 
+          "sum": 616.424, 
+          "average": 41.09493333333333
+        }, 
+        "BradyGames": {
+          "count": 1, 
+          "sum": 6.392, 
+          "average": 6.392
+        }, 
+        "Renaissance Books": {
+          "count": 1, 
+          "sum": 18.216, 
+          "average": 18.216
+        }, 
+        "Harper Perennial": {
+          "count": 8, 
+          "sum": 191.65, 
+          "average": 23.95625
+        }, 
+        "Viking Children's": {
+          "count": 3, 
+          "sum": 31.240000000000002, 
+          "average": 10.413333333333332
+        }, 
+        "North Point Press": {
+          "count": 3, 
+          "sum": 47.246, 
+          "average": 15.748666666666667
+        }, 
+        "Simon & Schuster Books for Young Readers": {
+          "count": 22, 
+          "sum": 317.19200000000006, 
+          "average": 14.417818181818182
+        }, 
+        "Random House": {
+          "count": 42, 
+          "sum": 1856.0319999999997, 
+          "average": 44.19123809523809
+        }, 
+        "Schocken": {
+          "count": 3, 
+          "sum": 31.371999999999996, 
+          "average": 10.457333333333333
+        }, 
+        "Meadowbrook": {
+          "count": 2, 
+          "sum": 10.954, 
+          "average": 5.477
+        }, 
+        "HarperFestival": {
+          "count": 3, 
+          "sum": 28.811999999999998, 
+          "average": 9.604
+        }, 
+        "Grand Central Publishing": {
+          "count": 38, 
+          "sum": 1791.942, 
+          "average": 47.15636842105263
+        }, 
+        "Zinc Ink": {
+          "count": 1, 
+          "sum": 8.792, 
+          "average": 8.792
+        }, 
+        "Entangled: Teen": {
+          "count": 1, 
+          "sum": 9.104, 
+          "average": 9.104
+        }, 
+        "Scientific American": {
+          "count": 1, 
+          "sum": 1.516, 
+          "average": 1.516
+        }, 
+        "Ecco": {
+          "count": 12, 
+          "sum": 494.78400000000005, 
+          "average": 41.232
+        }, 
+        "Presidio Press": {
+          "count": 1, 
+          "sum": 79.068, 
+          "average": 79.068
+        }, 
+        "Ripley Publishing": {
+          "count": 4, 
+          "sum": 10.044, 
+          "average": 2.511
+        }, 
+        "FENN-M&S": {
+          "count": 1, 
+          "sum": 9.592, 
+          "average": 9.592
+        }, 
+        "Entangled: Brazen": {
+          "count": 12, 
+          "sum": 583.95, 
+          "average": 48.6625
+        }, 
+        "LucasBooks": {
+          "count": 41, 
+          "sum": 533.0920000000001, 
+          "average": 13.002243902439025
+        }, 
+        "Piatkus": {
+          "count": 1, 
+          "sum": 11.184, 
+          "average": 11.184
+        }, 
+        "Palgrave Macmillan": {
+          "count": 11, 
+          "sum": 138.84000000000003, 
+          "average": 12.621818181818183
+        }, 
+        "Broadway Books": {
+          "count": 35, 
+          "sum": 1448.1739999999995, 
+          "average": 41.3764
+        }, 
+        "Random House Books for Young Readers": {
+          "count": 94, 
+          "sum": 713.1980000000005, 
+          "average": 7.587212765957447
+        }, 
+        "Overlook": {
+          "count": 2, 
+          "sum": 15.896, 
+          "average": 7.948
+        }, 
+        "Threshold Editions": {
+          "count": 6, 
+          "sum": 94.016, 
+          "average": 15.669333333333334
+        }, 
+        "William Morrow": {
+          "count": 41, 
+          "sum": 2872.38, 
+          "average": 70.05804878048781
+        }, 
+        "Twelve": {
+          "count": 7, 
+          "sum": 166.34799999999998, 
+          "average": 23.764000000000003
+        }, 
+        "Delta": {
+          "count": 2, 
+          "sum": 39.17, 
+          "average": 19.585
+        }, 
+        "St. Martin's True Crime": {
+          "count": 1, 
+          "sum": 15.026, 
+          "average": 15.026
+        }, 
+        "Little A": {
+          "count": 1, 
+          "sum": 54.509, 
+          "average": 54.509
+        }, 
+        "Jove": {
+          "count": 20, 
+          "sum": 1518.0960000000002, 
+          "average": 75.9048
+        }, 
+        "Jet City Comics": {
+          "count": 1, 
+          "sum": 176.579, 
+          "average": 176.579
+        }, 
+        "Island Books": {
+          "count": 1, 
+          "sum": 65.78, 
+          "average": 65.78
+        }, 
+        "Balzer + Bray": {
+          "count": 8, 
+          "sum": 176.482, 
+          "average": 22.06025
+        }, 
+        "Entangled: Indulgence": {
+          "count": 2, 
+          "sum": 43.56, 
+          "average": 21.78
+        }, 
+        "Dutton Adult": {
+          "count": 14, 
+          "sum": 875.5920000000002, 
+          "average": 62.54228571428571
+        }, 
+        "Orb Books": {
+          "count": 4, 
+          "sum": 40.894000000000005, 
+          "average": 10.2235
+        }, 
+        "Laurel Leaf": {
+          "count": 5, 
+          "sum": 108.116, 
+          "average": 21.6232
+        }, 
+        "Aerie": {
+          "count": 1, 
+          "sum": 7.384, 
+          "average": 7.384
+        }, 
+        "Current": {
+          "count": 1, 
+          "sum": 7.194, 
+          "average": 7.194
+        }, 
+        "Back Bay Books": {
+          "count": 3, 
+          "sum": 247.752, 
+          "average": 82.584
+        }, 
+        "HP": {
+          "count": 1, 
+          "sum": 3.228, 
+          "average": 3.228
+        }, 
+        "Robin Corey Books": {
+          "count": 1, 
+          "sum": 2.396, 
+          "average": 2.396
+        }, 
+        "It Books": {
+          "count": 14, 
+          "sum": 376.58800000000014, 
+          "average": 26.89914285714286
+        }, 
+        "Peterson's": {
+          "count": 2, 
+          "sum": 6.39, 
+          "average": 3.195
+        }, 
+        "Grosset & Dunlap": {
+          "count": 50, 
+          "sum": 282.69400000000013, 
+          "average": 5.65388
+        }, 
+        "Crown": {
+          "count": 11, 
+          "sum": 390.35599999999994, 
+          "average": 35.48690909090909
+        }, 
+        "FSG Originals": {
+          "count": 2, 
+          "sum": 179.322, 
+          "average": 89.661
+        }, 
+        "Orion": {
+          "count": 1, 
+          "sum": 3.984, 
+          "average": 3.984
+        }, 
+        "Katherine Tegen Books": {
+          "count": 7, 
+          "sum": 152.57399999999998, 
+          "average": 21.796285714285716
+        }, 
+        "(Single-Author Publisher)": {
+          "count": 1757, 
+          "sum": 18893.48600000001, 
+          "average": 10.753264655663063
+        }, 
+        "HarperCollins": {
+          "count": 123, 
+          "sum": 2633.9979999999982, 
+          "average": 21.414617886178863
+        }, 
+        "WaterBrook Press": {
+          "count": 13, 
+          "sum": 366.45399999999995, 
+          "average": 28.188769230769232
+        }, 
+        "Putnam Juvenile": {
+          "count": 2, 
+          "sum": 72.952, 
+          "average": 36.476
+        }, 
+        "Image": {
+          "count": 5, 
+          "sum": 45.62800000000001, 
+          "average": 9.1256
+        }, 
+        "Crimeline": {
+          "count": 2, 
+          "sum": 40.664, 
+          "average": 20.332
+        }, 
+        "Hill and Wang": {
+          "count": 1, 
+          "sum": 1.778, 
+          "average": 1.778
+        }, 
+        "Delacorte Press": {
+          "count": 27, 
+          "sum": 2536.6239999999993, 
+          "average": 93.94903703703703
+        }, 
+        "Broadside e-books": {
+          "count": 1, 
+          "sum": 5.436, 
+          "average": 5.436
+        }, 
+        "Wellspring/Ballantine": {
+          "count": 1, 
+          "sum": 9.472, 
+          "average": 9.472
+        }, 
+        "Philomel": {
+          "count": 2, 
+          "sum": 39.08, 
+          "average": 19.54
+        }, 
+        "Center Street": {
+          "count": 3, 
+          "sum": 256.164, 
+          "average": 85.38799999999999
+        }, 
+        "Margaret K. McElderry Books": {
+          "count": 8, 
+          "sum": 714.4460000000001, 
+          "average": 89.30575
+        }, 
+        "The Friday Project": {
+          "count": 1, 
+          "sum": 4.378, 
+          "average": 4.378
+        }, 
+        "Ballantine Books": {
+          "count": 71, 
+          "sum": 2547.192000000001, 
+          "average": 35.87594366197183
+        }, 
+        "Atria Books/Beyond Words": {
+          "count": 2, 
+          "sum": 19.98, 
+          "average": 9.99
+        }, 
+        "Tundra Books": {
+          "count": 1, 
+          "sum": 4.784, 
+          "average": 4.784
+        }, 
+        "Crown Forum": {
+          "count": 2, 
+          "sum": 28.174, 
+          "average": 14.087
+        }, 
+        "Scribner": {
+          "count": 57, 
+          "sum": 2234.7080000000005, 
+          "average": 39.20540350877193
+        }, 
+        "Scientific American / Farrar Straus and Giroux": {
+          "count": 1, 
+          "sum": 10.65, 
+          "average": 10.65
+        }, 
+        "Peterson Institute for International Economics": {
+          "count": 1, 
+          "sum": 11.186, 
+          "average": 11.186
+        }, 
+        "Crown Business": {
+          "count": 26, 
+          "sum": 688.2080000000001, 
+          "average": 26.46953846153846
+        }, 
+        "Pocket Books/Star Trek": {
+          "count": 27, 
+          "sum": 240.44200000000006, 
+          "average": 8.90525925925926
+        }, 
+        "Doubleday": {
+          "count": 18, 
+          "sum": 812.852, 
+          "average": 45.15844444444444
+        }, 
+        "Delacorte Books for Young Readers": {
+          "count": 9, 
+          "sum": 223.44, 
+          "average": 24.826666666666668
+        }, 
+        "Henry Holt and Co.": {
+          "count": 24, 
+          "sum": 675.9879999999998, 
+          "average": 28.16616666666667
+        }, 
+        "Zonderkidz": {
+          "count": 14, 
+          "sum": 71.604, 
+          "average": 5.114571428571429
+        }, 
+        "Papercutz": {
+          "count": 4, 
+          "sum": 14.408, 
+          "average": 3.602
+        }, 
+        "Atria Books": {
+          "count": 47, 
+          "sum": 2026.5540000000015, 
+          "average": 43.11817021276596
+        }, 
+        "(Small or Medium Publisher)": {
+          "count": 4507, 
+          "sum": 60418.74799999992, 
+          "average": 13.405535389394275
+        }, 
+        "Flash Point": {
+          "count": 1, 
+          "sum": 22.372, 
+          "average": 22.372
+        }, 
+        "Onyx": {
+          "count": 1, 
+          "sum": 12.558, 
+          "average": 12.558
+        }, 
+        "Dell": {
+          "count": 21, 
+          "sum": 1278.9959999999996, 
+          "average": 60.90457142857142
+        }, 
+        "Atria / 37 Ink": {
+          "count": 1, 
+          "sum": 2.376, 
+          "average": 2.376
+        }, 
+        "HarperOne": {
+          "count": 18, 
+          "sum": 469.30799999999994, 
+          "average": 26.072666666666667
+        }, 
+        "Princeton Review": {
+          "count": 5, 
+          "sum": 39.568000000000005, 
+          "average": 7.913600000000001
+        }, 
+        "DAW": {
+          "count": 7, 
+          "sum": 79.07199999999999, 
+          "average": 11.296000000000001
+        }, 
+        "Deepak Chopra": {
+          "count": 1, 
+          "sum": 4.736, 
+          "average": 4.736
+        }, 
+        "Washington Square Press": {
+          "count": 2, 
+          "sum": 17.964, 
+          "average": 8.982
+        }, 
+        "Tarcher": {
+          "count": 10, 
+          "sum": 206.90200000000002, 
+          "average": 20.690199999999997
+        }, 
+        "Times Books": {
+          "count": 4, 
+          "sum": 54.872, 
+          "average": 13.718
+        }, 
+        "William Morrow Cookbooks": {
+          "count": 7, 
+          "sum": 64.17200000000001, 
+          "average": 9.167428571428571
+        }, 
+        "Fodor's": {
+          "count": 3, 
+          "sum": 36.089999999999996, 
+          "average": 12.03
+        }, 
+        "Signet": {
+          "count": 33, 
+          "sum": 1828.6339999999998, 
+          "average": 55.41315151515152
+        }, 
+        "Nan A. Talese": {
+          "count": 3, 
+          "sum": 309.38, 
+          "average": 103.12666666666667
+        }, 
+        "Square Fish": {
+          "count": 2, 
+          "sum": 8.672, 
+          "average": 4.336
+        }, 
+        "Chicken Soup for the Soul": {
+          "count": 2, 
+          "sum": 5.952, 
+          "average": 2.976
+        }, 
+        "Ace": {
+          "count": 18, 
+          "sum": 720.5500000000001, 
+          "average": 40.03055555555555
+        }, 
+        "Prentice Hall Press": {
+          "count": 4, 
+          "sum": 118.13000000000001, 
+          "average": 29.5325
+        }, 
+        "Free Press": {
+          "count": 28, 
+          "sum": 419.46000000000015, 
+          "average": 14.980714285714285
+        }, 
+        "World Wrestling Entertainment": {
+          "count": 1, 
+          "sum": 8.196, 
+          "average": 8.196
+        }, 
+        "Spectra": {
+          "count": 24, 
+          "sum": 384.82399999999996, 
+          "average": 16.034333333333333
+        }, 
+        "Orbit": {
+          "count": 25, 
+          "sum": 671.4440000000001, 
+          "average": 26.85776
+        }, 
+        "Spiegel & Grau": {
+          "count": 12, 
+          "sum": 567.088, 
+          "average": 47.25733333333333
+        }, 
+        "Main Street Books": {
+          "count": 1, 
+          "sum": 23.632, 
+          "average": 23.632
+        }, 
+        "William Morrow Paperbacks": {
+          "count": 17, 
+          "sum": 471.32399999999996, 
+          "average": 27.72494117647059
+        }, 
+        "Crossing Press": {
+          "count": 2, 
+          "sum": 16.066, 
+          "average": 8.033
+        }, 
+        "LB Kids": {
+          "count": 2, 
+          "sum": 7.704, 
+          "average": 3.852
+        }, 
+        "Fawcett": {
+          "count": 1, 
+          "sum": 15.574, 
+          "average": 15.574
+        }, 
+        "Sarah Crichton Books": {
+          "count": 3, 
+          "sum": 227.81, 
+          "average": 75.93666666666667
+        }, 
+        "Vision": {
+          "count": 2, 
+          "sum": 109.04400000000001, 
+          "average": 54.522000000000006
+        }, 
+        "Farrar Straus and Giroux": {
+          "count": 49, 
+          "sum": 1397.2259999999999, 
+          "average": 28.514816326530614
+        }, 
+        "Holt Paperbacks": {
+          "count": 12, 
+          "sum": 311.648, 
+          "average": 25.970666666666663
+        }, 
+        "Multnomah Books": {
+          "count": 4, 
+          "sum": 193.27599999999998, 
+          "average": 48.318999999999996
+        }, 
+        "Grupo Nelson": {
+          "count": 2, 
+          "sum": 9.95, 
+          "average": 4.975
+        }, 
+        "Simon Spotlight": {
+          "count": 8, 
+          "sum": 36.480000000000004, 
+          "average": 4.56
+        }, 
+        "HarperTrue": {
+          "count": 1, 
+          "sum": 37.412, 
+          "average": 37.412
+        }, 
+        "Business Plus": {
+          "count": 9, 
+          "sum": 185.78400000000002, 
+          "average": 20.64266666666667
+        }, 
+        "Wendy Lamb Books": {
+          "count": 3, 
+          "sum": 45.236, 
+          "average": 15.078666666666665
+        }, 
+        "Two Lions": {
+          "count": 32, 
+          "sum": 736.2159999999999, 
+          "average": 23.00675
+        }, 
+        "Knopf Group E-Books": {
+          "count": 1, 
+          "sum": 8.634, 
+          "average": 8.634
+        }, 
+        "HarperCollinsChildren'sBooks": {
+          "count": 1, 
+          "sum": 0.758, 
+          "average": 0.758
+        }, 
+        "Truman Talley Books": {
+          "count": 1, 
+          "sum": 14.224, 
+          "average": 14.224
+        }, 
+        "Aladdin": {
+          "count": 32, 
+          "sum": 232.62799999999993, 
+          "average": 7.2696250000000004
+        }, 
+        "Random House/Disney": {
+          "count": 5, 
+          "sum": 13.31, 
+          "average": 2.662
+        }, 
+        "Razorbill": {
+          "count": 7, 
+          "sum": 1276.4399999999998, 
+          "average": 182.3485714285714
+        }, 
+        "Ten Speed Press": {
+          "count": 24, 
+          "sum": 364.6919999999998, 
+          "average": 15.195500000000001
+        }, 
+        "The Penguin Press": {
+          "count": 11, 
+          "sum": 669.6999999999999, 
+          "average": 60.88181818181818
+        }
+      }, 
+      "publishers.[0].daily average.gross sales": {
+        "Gallery Books": {
+          "count": 30, 
+          "sum": 5401.13, 
+          "average": 180.03766666666667
+        }, 
+        "Dial": {
+          "count": 4, 
+          "sum": 399.21, 
+          "average": 99.8025
+        }, 
+        "McClelland & Stewart": {
+          "count": 1, 
+          "sum": 21.98, 
+          "average": 21.98
+        }, 
+        "Tor Books": {
+          "count": 41, 
+          "sum": 7524.710000000001, 
+          "average": 183.52951219512195
+        }, 
+        "ESPN": {
+          "count": 2, 
+          "sum": 152.41, 
+          "average": 76.205
+        }, 
+        "Bantam": {
+          "count": 77, 
+          "sum": 14616.589999999997, 
+          "average": 189.82584415584415
+        }, 
+        "Harper": {
+          "count": 28, 
+          "sum": 11607.22, 
+          "average": 414.5435714285714
+        }, 
+        "Portfolio": {
+          "count": 40, 
+          "sum": 6482.319999999999, 
+          "average": 162.058
+        }, 
+        "Plume": {
+          "count": 35, 
+          "sum": 6174.37, 
+          "average": 176.41057142857142
+        }, 
+        "Jericho Books": {
+          "count": 2, 
+          "sum": 320.7, 
+          "average": 160.35
+        }, 
+        "HarperTeen": {
+          "count": 15, 
+          "sum": 2359.19, 
+          "average": 157.27933333333334
+        }, 
+        "NAL": {
+          "count": 20, 
+          "sum": 2750.5599999999995, 
+          "average": 137.528
+        }, 
+        "Avon Impulse": {
+          "count": 9, 
+          "sum": 681.9399999999999, 
+          "average": 75.77111111111111
+        }, 
+        "AmazonEncore": {
+          "count": 6, 
+          "sum": 698.17, 
+          "average": 116.36166666666666
+        }, 
+        "Dial Press Trade Paperback": {
+          "count": 2, 
+          "sum": 224.45000000000002, 
+          "average": 112.22500000000001
+        }, 
+        "Villard": {
+          "count": 1, 
+          "sum": 147.28, 
+          "average": 147.28
+        }, 
+        "Golden/Disney": {
+          "count": 3, 
+          "sum": 45.9, 
+          "average": 15.300000000000002
+        }, 
+        "RH/Disney": {
+          "count": 2, 
+          "sum": 128.26, 
+          "average": 64.13
+        }, 
+        "Hodder & Stoughton": {
+          "count": 1, 
+          "sum": 107.88, 
+          "average": 107.88
+        }, 
+        "Newmarket Press": {
+          "count": 1, 
+          "sum": 16.0, 
+          "average": 16.0
+        }, 
+        "Little Brown and Company": {
+          "count": 67, 
+          "sum": 19680.83999999999, 
+          "average": 293.74388059701494
+        }, 
+        "Grand Central Life & Style": {
+          "count": 10, 
+          "sum": 3109.3400000000006, 
+          "average": 310.93399999999997
+        }, 
+        "Perigee": {
+          "count": 9, 
+          "sum": 1295.98, 
+          "average": 143.99777777777777
+        }, 
+        "Golden Books": {
+          "count": 3, 
+          "sum": 27.080000000000002, 
+          "average": 9.026666666666667
+        }, 
+        "Thomas Dunne Books": {
+          "count": 17, 
+          "sum": 1939.4400000000003, 
+          "average": 114.08470588235295
+        }, 
+        "HarperSport": {
+          "count": 2, 
+          "sum": 9.95, 
+          "average": 4.975
+        }, 
+        "Tor Teen": {
+          "count": 1, 
+          "sum": 74.62, 
+          "average": 74.62
+        }, 
+        "Crown Archetype": {
+          "count": 13, 
+          "sum": 1397.48, 
+          "average": 107.49846153846154
+        }, 
+        "Harper Element": {
+          "count": 8, 
+          "sum": 368.04, 
+          "average": 46.005
+        }, 
+        "(Indie Publisher)": {
+          "count": 2819, 
+          "sum": 217741.17999999906, 
+          "average": 77.24057467186945
+        }, 
+        "Zondervan": {
+          "count": 31, 
+          "sum": 6210.4299999999985, 
+          "average": 200.33645161290323
+        }, 
+        "HarperWave": {
+          "count": 3, 
+          "sum": 1515.3300000000002, 
+          "average": 505.11000000000007
+        }, 
+        "Studio": {
+          "count": 1, 
+          "sum": 65.0, 
+          "average": 65.0
+        }, 
+        "Bantam Dell": {
+          "count": 1, 
+          "sum": 79.92, 
+          "average": 79.92
+        }, 
+        "Pocket Star": {
+          "count": 5, 
+          "sum": 458.17, 
+          "average": 91.634
+        }, 
+        "Avon": {
+          "count": 10, 
+          "sum": 3758.7900000000004, 
+          "average": 375.879
+        }, 
+        "Thomas & Mercer": {
+          "count": 57, 
+          "sum": 10328.459999999997, 
+          "average": 181.20105263157896
+        }, 
+        "Thomas Nelson": {
+          "count": 58, 
+          "sum": 11202.429999999986, 
+          "average": 193.1453448275862
+        }, 
+        "Penguin": {
+          "count": 20, 
+          "sum": 941.7600000000002, 
+          "average": 47.088
+        }, 
+        "Billboard Books": {
+          "count": 2, 
+          "sum": 36.81, 
+          "average": 18.405
+        }, 
+        "Simon Pulse": {
+          "count": 9, 
+          "sum": 942.1600000000001, 
+          "average": 104.68444444444444
+        }, 
+        "Little Brown Books for Young Readers": {
+          "count": 33, 
+          "sum": 4687.99, 
+          "average": 142.06030303030303
+        }, 
+        "Watson-Guptill": {
+          "count": 8, 
+          "sum": 194.02000000000004, 
+          "average": 24.252499999999998
+        }, 
+        "Harper Paperbacks": {
+          "count": 1, 
+          "sum": 32.0, 
+          "average": 32.0
+        }, 
+        "Simon & Schuster": {
+          "count": 95, 
+          "sum": 17513.96999999999, 
+          "average": 184.35757894736844
+        }, 
+        "Putnam Adult": {
+          "count": 17, 
+          "sum": 8108.230000000001, 
+          "average": 476.954705882353
+        }, 
+        "Reagan Arthur Books": {
+          "count": 1, 
+          "sum": 239.76, 
+          "average": 239.76
+        }, 
+        "William Morrow Impulse": {
+          "count": 1, 
+          "sum": 98.01, 
+          "average": 98.01
+        }, 
+        "Puffin": {
+          "count": 52, 
+          "sum": 4708.899999999998, 
+          "average": 90.55576923076923
+        }, 
+        "Metropolitan Books": {
+          "count": 7, 
+          "sum": 1306.5900000000001, 
+          "average": 186.6557142857143
+        }, 
+        "Potter Style": {
+          "count": 2, 
+          "sum": 123.41, 
+          "average": 61.705
+        }, 
+        "Poppy": {
+          "count": 1, 
+          "sum": 41.86, 
+          "average": 41.86
+        }, 
+        "Three Rivers Press": {
+          "count": 8, 
+          "sum": 655.4699999999999, 
+          "average": 81.93375
+        }, 
+        "Little Simon": {
+          "count": 1, 
+          "sum": 4.26, 
+          "average": 4.26
+        }, 
+        "The Dial Press": {
+          "count": 2, 
+          "sum": 1188.08, 
+          "average": 594.04
+        }, 
+        "Hudson Street Press": {
+          "count": 1, 
+          "sum": 120.89, 
+          "average": 120.89
+        }, 
+        "St. Martin's Paperbacks": {
+          "count": 9, 
+          "sum": 1053.47, 
+          "average": 117.05222222222223
+        }, 
+        "Celestial Arts": {
+          "count": 1, 
+          "sum": 131.88, 
+          "average": 131.88
+        }, 
+        "HarperTorch": {
+          "count": 1, 
+          "sum": 3.96, 
+          "average": 3.96
+        }, 
+        "Entangled: Bliss": {
+          "count": 1, 
+          "sum": 215.28, 
+          "average": 215.28
+        }, 
+        "Debbie Macomber Books": {
+          "count": 1, 
+          "sum": 565.11, 
+          "average": 565.11
+        }, 
+        "Roaring Brook Press": {
+          "count": 3, 
+          "sum": 175.88, 
+          "average": 58.626666666666665
+        }, 
+        "Atheneum Books for Young Readers": {
+          "count": 19, 
+          "sum": 963.6200000000001, 
+          "average": 50.71684210526316
+        }, 
+        "Pocket Books": {
+          "count": 36, 
+          "sum": 4332.57, 
+          "average": 120.34916666666666
+        }, 
+        "Amazon Publishing": {
+          "count": 11, 
+          "sum": 1620.67, 
+          "average": 147.33363636363637
+        }, 
+        "St. Martin's Press": {
+          "count": 84, 
+          "sum": 19334.880000000005, 
+          "average": 230.17714285714288
+        }, 
+        "HarperPerennial Classics": {
+          "count": 2, 
+          "sum": 105.92999999999999, 
+          "average": 52.964999999999996
+        }, 
+        "Pintail": {
+          "count": 1, 
+          "sum": 1048.95, 
+          "average": 1048.95
+        }, 
+        "HarperCollins e-books": {
+          "count": 179, 
+          "sum": 18564.06, 
+          "average": 103.70983240223464
+        }, 
+        "Gotham Books": {
+          "count": 11, 
+          "sum": 1433.75, 
+          "average": 130.3409090909091
+        }, 
+        "MTV Books": {
+          "count": 2, 
+          "sum": 276.09000000000003, 
+          "average": 138.04500000000002
+        }, 
+        "Vintage": {
+          "count": 78, 
+          "sum": 9806.539999999997, 
+          "average": 125.7248717948718
+        }, 
+        "Clarkson Potter": {
+          "count": 14, 
+          "sum": 644.55, 
+          "average": 46.03928571428572
+        }, 
+        "Grand Harbor Press": {
+          "count": 1, 
+          "sum": 22.77, 
+          "average": 22.77
+        }, 
+        "Harper Thorsons": {
+          "count": 1, 
+          "sum": 26.6, 
+          "average": 26.6
+        }, 
+        "Picador": {
+          "count": 4, 
+          "sum": 431.78, 
+          "average": 107.94500000000001
+        }, 
+        "Harmony": {
+          "count": 36, 
+          "sum": 6676.239999999998, 
+          "average": 185.45111111111112
+        }, 
+        "Signet Classic": {
+          "count": 3, 
+          "sum": 107.99000000000001, 
+          "average": 35.99666666666666
+        }, 
+        "47North": {
+          "count": 26, 
+          "sum": 4691.389999999999, 
+          "average": 180.43807692307695
+        }, 
+        "HarperPress": {
+          "count": 2, 
+          "sum": 37.93, 
+          "average": 18.965
+        }, 
+        "Collins": {
+          "count": 5, 
+          "sum": 180.25, 
+          "average": 36.05
+        }, 
+        "Feiwel & Friends": {
+          "count": 4, 
+          "sum": 707.6400000000001, 
+          "average": 176.91
+        }, 
+        "DK Publishing": {
+          "count": 15, 
+          "sum": 278.2500000000001, 
+          "average": 18.55
+        }, 
+        "Amphoto Books": {
+          "count": 2, 
+          "sum": 189.79999999999998, 
+          "average": 94.89999999999999
+        }, 
+        "Skyscape": {
+          "count": 6, 
+          "sum": 2292.96, 
+          "average": 382.16
+        }, 
+        "Avery": {
+          "count": 10, 
+          "sum": 1110.9299999999998, 
+          "average": 111.093
+        }, 
+        "Faber & Faber": {
+          "count": 4, 
+          "sum": 217.28000000000003, 
+          "average": 54.32000000000001
+        }, 
+        "AmazonCrossing": {
+          "count": 13, 
+          "sum": 2528.0500000000006, 
+          "average": 194.46538461538464
+        }, 
+        "Simon & Schuster Audio": {
+          "count": 1, 
+          "sum": 94.8, 
+          "average": 94.8
+        }, 
+        "Del Rey": {
+          "count": 23, 
+          "sum": 2787.95, 
+          "average": 121.21521739130434
+        }, 
+        "Graywolf Press": {
+          "count": 1, 
+          "sum": 128.57, 
+          "average": 128.57
+        }, 
+        "Howard Books": {
+          "count": 10, 
+          "sum": 2163.4799999999996, 
+          "average": 216.348
+        }, 
+        "First Second": {
+          "count": 2, 
+          "sum": 51.57, 
+          "average": 25.785
+        }, 
+        "FaithWords": {
+          "count": 5, 
+          "sum": 1047.24, 
+          "average": 209.448
+        }, 
+        "Penguin Classic": {
+          "count": 8, 
+          "sum": 561.53, 
+          "average": 70.19125
+        }, 
+        "Montlake Romance": {
+          "count": 34, 
+          "sum": 11959.249999999998, 
+          "average": 351.74264705882354
+        }, 
+        "Rough Guides": {
+          "count": 2, 
+          "sum": 67.93, 
+          "average": 33.965
+        }, 
+        "Modern Library": {
+          "count": 4, 
+          "sum": 502.71000000000004, 
+          "average": 125.67750000000001
+        }, 
+        "Knopf": {
+          "count": 23, 
+          "sum": 9276.400000000001, 
+          "average": 403.32173913043476
+        }, 
+        "Forever": {
+          "count": 6, 
+          "sum": 3156.1699999999996, 
+          "average": 526.0283333333333
+        }, 
+        "Riverhead": {
+          "count": 24, 
+          "sum": 5926.219999999998, 
+          "average": 246.92583333333334
+        }, 
+        "Mulholland Books": {
+          "count": 4, 
+          "sum": 490.7, 
+          "average": 122.675
+        }, 
+        "Yearling": {
+          "count": 4, 
+          "sum": 304.88000000000005, 
+          "average": 76.22
+        }, 
+        "Hogarth": {
+          "count": 1, 
+          "sum": 854.93, 
+          "average": 854.93
+        }, 
+        "Bantam Classics": {
+          "count": 1, 
+          "sum": 15.92, 
+          "average": 15.92
+        }, 
+        "Potter Craft": {
+          "count": 4, 
+          "sum": 201.94, 
+          "average": 50.485
+        }, 
+        "Sentinel": {
+          "count": 1, 
+          "sum": 119.9, 
+          "average": 119.9
+        }, 
+        "Atria/Emily Bestler Books": {
+          "count": 3, 
+          "sum": 2126.51, 
+          "average": 708.8366666666667
+        }, 
+        "Penguin Books": {
+          "count": 72, 
+          "sum": 11041.999999999984, 
+          "average": 153.36111111111111
+        }, 
+        "Lone Eagle": {
+          "count": 1, 
+          "sum": 52.0, 
+          "average": 52.0
+        }, 
+        "Berkley": {
+          "count": 79, 
+          "sum": 18823.99000000001, 
+          "average": 238.27835443037978
+        }, 
+        "Harper Voyager": {
+          "count": 6, 
+          "sum": 833.3900000000001, 
+          "average": 138.89833333333334
+        }, 
+        "Hyperion": {
+          "count": 36, 
+          "sum": 6166.810000000001, 
+          "average": 171.30027777777778
+        }, 
+        "Anchor": {
+          "count": 34, 
+          "sum": 3879.4699999999993, 
+          "average": 114.10205882352942
+        }, 
+        "Touchstone": {
+          "count": 29, 
+          "sum": 4710.289999999999, 
+          "average": 162.42379310344828
+        }, 
+        "Forge Books": {
+          "count": 8, 
+          "sum": 605.0500000000001, 
+          "average": 75.63125
+        }, 
+        "Celebra": {
+          "count": 2, 
+          "sum": 1261.4899999999998, 
+          "average": 630.7449999999999
+        }, 
+        "Knopf Books for Young Readers": {
+          "count": 16, 
+          "sum": 1296.9200000000005, 
+          "average": 81.0575
+        }, 
+        "Loveswept": {
+          "count": 9, 
+          "sum": 994.66, 
+          "average": 110.51777777777778
+        }, 
+        "Roc": {
+          "count": 5, 
+          "sum": 394.42999999999995, 
+          "average": 78.886
+        }, 
+        "St. Martin's Griffin": {
+          "count": 23, 
+          "sum": 2560.8499999999995, 
+          "average": 111.34130434782608
+        }, 
+        "Pantheon": {
+          "count": 3, 
+          "sum": 884.05, 
+          "average": 294.68333333333334
+        }, 
+        "Reader's Digest": {
+          "count": 2, 
+          "sum": 34.93, 
+          "average": 17.465
+        }, 
+        "InterMix": {
+          "count": 1, 
+          "sum": 93.72, 
+          "average": 93.72
+        }, 
+        "Witness Impulse": {
+          "count": 7, 
+          "sum": 528.89, 
+          "average": 75.55571428571429
+        }, 
+        "Dutton Children's": {
+          "count": 2, 
+          "sum": 949.76, 
+          "average": 474.88
+        }, 
+        "Speak": {
+          "count": 9, 
+          "sum": 6195.299999999999, 
+          "average": 688.3666666666667
+        }, 
+        "Yen Press": {
+          "count": 2, 
+          "sum": 35.96, 
+          "average": 17.98
+        }, 
+        "Greenwillow Books": {
+          "count": 8, 
+          "sum": 368.75, 
+          "average": 46.09375
+        }, 
+        "Schwartz & Wade": {
+          "count": 1, 
+          "sum": 9.77, 
+          "average": 9.77
+        }, 
+        "Page Street Publishing": {
+          "count": 2, 
+          "sum": 206.58, 
+          "average": 103.29
+        }, 
+        "Vintage Espanol": {
+          "count": 3, 
+          "sum": 397.11, 
+          "average": 132.37
+        }, 
+        "Joe Books": {
+          "count": 1, 
+          "sum": 11.88, 
+          "average": 11.88
+        }, 
+        "Viking Adult": {
+          "count": 13, 
+          "sum": 2560.2299999999996, 
+          "average": 196.94076923076923
+        }, 
+        "Blue Rider Press": {
+          "count": 4, 
+          "sum": 1958.65, 
+          "average": 489.6625
+        }, 
+        "Thorsons": {
+          "count": 2, 
+          "sum": 85.34, 
+          "average": 42.67
+        }, 
+        "HarperBusiness": {
+          "count": 10, 
+          "sum": 1643.0500000000002, 
+          "average": 164.305
+        }, 
+        "Alfred A. Knopf BFYR": {
+          "count": 3, 
+          "sum": 41.86, 
+          "average": 13.953333333333333
+        }, 
+        "Minotaur Books": {
+          "count": 19, 
+          "sum": 4598.3099999999995, 
+          "average": 242.01631578947365
+        }, 
+        "Random House Trade Paperbacks": {
+          "count": 15, 
+          "sum": 3082.12, 
+          "average": 205.47466666666665
+        }, 
+        "BradyGames": {
+          "count": 1, 
+          "sum": 31.96, 
+          "average": 31.96
+        }, 
+        "Renaissance Books": {
+          "count": 1, 
+          "sum": 91.08, 
+          "average": 91.08
+        }, 
+        "Harper Perennial": {
+          "count": 8, 
+          "sum": 958.25, 
+          "average": 119.78125
+        }, 
+        "Viking Children's": {
+          "count": 3, 
+          "sum": 156.20000000000002, 
+          "average": 52.06666666666666
+        }, 
+        "North Point Press": {
+          "count": 3, 
+          "sum": 236.23000000000002, 
+          "average": 78.74333333333334
+        }, 
+        "Simon & Schuster Books for Young Readers": {
+          "count": 22, 
+          "sum": 1585.96, 
+          "average": 72.08909090909091
+        }, 
+        "Random House": {
+          "count": 42, 
+          "sum": 9280.16, 
+          "average": 220.95619047619047
+        }, 
+        "Schocken": {
+          "count": 3, 
+          "sum": 156.86, 
+          "average": 52.28666666666667
+        }, 
+        "Meadowbrook": {
+          "count": 2, 
+          "sum": 54.769999999999996, 
+          "average": 27.384999999999998
+        }, 
+        "HarperFestival": {
+          "count": 3, 
+          "sum": 144.06, 
+          "average": 48.02
+        }, 
+        "Grand Central Publishing": {
+          "count": 38, 
+          "sum": 8959.709999999995, 
+          "average": 235.7818421052632
+        }, 
+        "Zinc Ink": {
+          "count": 1, 
+          "sum": 43.96, 
+          "average": 43.96
+        }, 
+        "Entangled: Teen": {
+          "count": 1, 
+          "sum": 45.52, 
+          "average": 45.52
+        }, 
+        "Scientific American": {
+          "count": 1, 
+          "sum": 7.58, 
+          "average": 7.58
+        }, 
+        "Ecco": {
+          "count": 12, 
+          "sum": 2473.919999999999, 
+          "average": 206.16
+        }, 
+        "Presidio Press": {
+          "count": 1, 
+          "sum": 395.34, 
+          "average": 395.34
+        }, 
+        "Ripley Publishing": {
+          "count": 4, 
+          "sum": 50.22, 
+          "average": 12.555
+        }, 
+        "FENN-M&S": {
+          "count": 1, 
+          "sum": 47.96, 
+          "average": 47.96
+        }, 
+        "Entangled: Brazen": {
+          "count": 12, 
+          "sum": 2919.75, 
+          "average": 243.3125
+        }, 
+        "LucasBooks": {
+          "count": 41, 
+          "sum": 2665.4599999999996, 
+          "average": 65.01121951219513
+        }, 
+        "Piatkus": {
+          "count": 1, 
+          "sum": 55.92, 
+          "average": 55.92
+        }, 
+        "Palgrave Macmillan": {
+          "count": 11, 
+          "sum": 694.1999999999999, 
+          "average": 63.10909090909092
+        }, 
+        "Broadway Books": {
+          "count": 35, 
+          "sum": 7240.869999999999, 
+          "average": 206.882
+        }, 
+        "Random House Books for Young Readers": {
+          "count": 94, 
+          "sum": 3565.990000000001, 
+          "average": 37.93606382978723
+        }, 
+        "Overlook": {
+          "count": 2, 
+          "sum": 79.48, 
+          "average": 39.74
+        }, 
+        "Threshold Editions": {
+          "count": 6, 
+          "sum": 470.08, 
+          "average": 78.34666666666666
+        }, 
+        "William Morrow": {
+          "count": 41, 
+          "sum": 14361.900000000001, 
+          "average": 350.290243902439
+        }, 
+        "Twelve": {
+          "count": 7, 
+          "sum": 831.7399999999999, 
+          "average": 118.82000000000001
+        }, 
+        "Delta": {
+          "count": 2, 
+          "sum": 195.85000000000002, 
+          "average": 97.92500000000001
+        }, 
+        "St. Martin's True Crime": {
+          "count": 1, 
+          "sum": 75.13, 
+          "average": 75.13
+        }, 
+        "Little A": {
+          "count": 1, 
+          "sum": 83.86, 
+          "average": 83.86
+        }, 
+        "Jove": {
+          "count": 20, 
+          "sum": 7590.479999999999, 
+          "average": 379.524
+        }, 
+        "Jet City Comics": {
+          "count": 1, 
+          "sum": 271.66, 
+          "average": 271.66
+        }, 
+        "Island Books": {
+          "count": 1, 
+          "sum": 328.9, 
+          "average": 328.9
+        }, 
+        "Balzer + Bray": {
+          "count": 8, 
+          "sum": 882.4100000000001, 
+          "average": 110.30125000000001
+        }, 
+        "Entangled: Indulgence": {
+          "count": 2, 
+          "sum": 217.8, 
+          "average": 108.9
+        }, 
+        "Dutton Adult": {
+          "count": 14, 
+          "sum": 4377.959999999999, 
+          "average": 312.7114285714286
+        }, 
+        "Orb Books": {
+          "count": 4, 
+          "sum": 204.47000000000003, 
+          "average": 51.11750000000001
+        }, 
+        "Laurel Leaf": {
+          "count": 5, 
+          "sum": 540.5799999999999, 
+          "average": 108.11600000000001
+        }, 
+        "Aerie": {
+          "count": 1, 
+          "sum": 36.92, 
+          "average": 36.92
+        }, 
+        "Current": {
+          "count": 1, 
+          "sum": 35.97, 
+          "average": 35.97
+        }, 
+        "Back Bay Books": {
+          "count": 3, 
+          "sum": 1238.7600000000002, 
+          "average": 412.92
+        }, 
+        "HP": {
+          "count": 1, 
+          "sum": 16.14, 
+          "average": 16.14
+        }, 
+        "Robin Corey Books": {
+          "count": 1, 
+          "sum": 11.98, 
+          "average": 11.98
+        }, 
+        "It Books": {
+          "count": 14, 
+          "sum": 1882.9400000000005, 
+          "average": 134.49571428571429
+        }, 
+        "Peterson's": {
+          "count": 2, 
+          "sum": 31.95, 
+          "average": 15.975
+        }, 
+        "Grosset & Dunlap": {
+          "count": 50, 
+          "sum": 1413.4700000000005, 
+          "average": 28.2694
+        }, 
+        "Crown": {
+          "count": 11, 
+          "sum": 1951.7800000000002, 
+          "average": 177.43454545454546
+        }, 
+        "FSG Originals": {
+          "count": 2, 
+          "sum": 896.61, 
+          "average": 448.305
+        }, 
+        "Orion": {
+          "count": 1, 
+          "sum": 19.92, 
+          "average": 19.92
+        }, 
+        "Katherine Tegen Books": {
+          "count": 7, 
+          "sum": 762.87, 
+          "average": 108.98142857142857
+        }, 
+        "(Single-Author Publisher)": {
+          "count": 1757, 
+          "sum": 94467.4300000006, 
+          "average": 53.76632327831531
+        }, 
+        "HarperCollins": {
+          "count": 123, 
+          "sum": 13169.990000000002, 
+          "average": 107.07308943089431
+        }, 
+        "WaterBrook Press": {
+          "count": 13, 
+          "sum": 1832.2700000000002, 
+          "average": 140.94384615384615
+        }, 
+        "Putnam Juvenile": {
+          "count": 2, 
+          "sum": 364.76, 
+          "average": 182.38
+        }, 
+        "Image": {
+          "count": 5, 
+          "sum": 228.14, 
+          "average": 45.628
+        }, 
+        "Crimeline": {
+          "count": 2, 
+          "sum": 203.32, 
+          "average": 101.66
+        }, 
+        "Hill and Wang": {
+          "count": 1, 
+          "sum": 8.89, 
+          "average": 8.89
+        }, 
+        "Delacorte Press": {
+          "count": 27, 
+          "sum": 12683.120000000006, 
+          "average": 469.7451851851852
+        }, 
+        "Broadside e-books": {
+          "count": 1, 
+          "sum": 27.18, 
+          "average": 27.18
+        }, 
+        "Wellspring/Ballantine": {
+          "count": 1, 
+          "sum": 47.36, 
+          "average": 47.36
+        }, 
+        "Philomel": {
+          "count": 2, 
+          "sum": 195.39999999999998, 
+          "average": 97.69999999999999
+        }, 
+        "Center Street": {
+          "count": 3, 
+          "sum": 1280.82, 
+          "average": 426.94
+        }, 
+        "Margaret K. McElderry Books": {
+          "count": 8, 
+          "sum": 3572.230000000001, 
+          "average": 446.52875
+        }, 
+        "The Friday Project": {
+          "count": 1, 
+          "sum": 21.89, 
+          "average": 21.89
+        }, 
+        "Ballantine Books": {
+          "count": 71, 
+          "sum": 12735.960000000001, 
+          "average": 179.37971830985916
+        }, 
+        "Atria Books/Beyond Words": {
+          "count": 2, 
+          "sum": 99.89999999999999, 
+          "average": 49.949999999999996
+        }, 
+        "Tundra Books": {
+          "count": 1, 
+          "sum": 23.92, 
+          "average": 23.92
+        }, 
+        "Crown Forum": {
+          "count": 2, 
+          "sum": 140.87, 
+          "average": 70.435
+        }, 
+        "Scribner": {
+          "count": 57, 
+          "sum": 11173.54, 
+          "average": 196.02701754385964
+        }, 
+        "Scientific American / Farrar Straus and Giroux": {
+          "count": 1, 
+          "sum": 53.25, 
+          "average": 53.25
+        }, 
+        "Peterson Institute for International Economics": {
+          "count": 1, 
+          "sum": 55.93, 
+          "average": 55.93
+        }, 
+        "Crown Business": {
+          "count": 26, 
+          "sum": 3441.0399999999995, 
+          "average": 132.3476923076923
+        }, 
+        "Pocket Books/Star Trek": {
+          "count": 27, 
+          "sum": 1202.21, 
+          "average": 44.526296296296294
+        }, 
+        "Doubleday": {
+          "count": 18, 
+          "sum": 4064.26, 
+          "average": 225.79222222222222
+        }, 
+        "Delacorte Books for Young Readers": {
+          "count": 9, 
+          "sum": 1117.1999999999998, 
+          "average": 124.13333333333334
+        }, 
+        "Henry Holt and Co.": {
+          "count": 24, 
+          "sum": 3379.940000000001, 
+          "average": 140.83083333333335
+        }, 
+        "Zonderkidz": {
+          "count": 14, 
+          "sum": 358.02000000000004, 
+          "average": 25.572857142857142
+        }, 
+        "Papercutz": {
+          "count": 4, 
+          "sum": 72.04, 
+          "average": 18.01
+        }, 
+        "Atria Books": {
+          "count": 47, 
+          "sum": 10132.769999999995, 
+          "average": 215.5908510638298
+        }, 
+        "(Small or Medium Publisher)": {
+          "count": 4507, 
+          "sum": 302093.7399999955, 
+          "average": 67.02767694697138
+        }, 
+        "Flash Point": {
+          "count": 1, 
+          "sum": 111.86, 
+          "average": 111.86
+        }, 
+        "Onyx": {
+          "count": 1, 
+          "sum": 62.79, 
+          "average": 62.79
+        }, 
+        "Dell": {
+          "count": 21, 
+          "sum": 6394.98, 
+          "average": 304.52285714285716
+        }, 
+        "Atria / 37 Ink": {
+          "count": 1, 
+          "sum": 11.88, 
+          "average": 11.88
+        }, 
+        "HarperOne": {
+          "count": 18, 
+          "sum": 2346.539999999999, 
+          "average": 130.36333333333334
+        }, 
+        "Princeton Review": {
+          "count": 5, 
+          "sum": 197.83999999999997, 
+          "average": 39.568
+        }, 
+        "DAW": {
+          "count": 7, 
+          "sum": 395.36, 
+          "average": 56.480000000000004
+        }, 
+        "Deepak Chopra": {
+          "count": 1, 
+          "sum": 23.68, 
+          "average": 23.68
+        }, 
+        "Washington Square Press": {
+          "count": 2, 
+          "sum": 89.82, 
+          "average": 44.91
+        }, 
+        "Tarcher": {
+          "count": 10, 
+          "sum": 1034.51, 
+          "average": 103.451
+        }, 
+        "Times Books": {
+          "count": 4, 
+          "sum": 274.36, 
+          "average": 68.59
+        }, 
+        "William Morrow Cookbooks": {
+          "count": 7, 
+          "sum": 320.86, 
+          "average": 45.83714285714286
+        }, 
+        "Fodor's": {
+          "count": 3, 
+          "sum": 180.45, 
+          "average": 60.15
+        }, 
+        "Signet": {
+          "count": 33, 
+          "sum": 9143.170000000002, 
+          "average": 277.0657575757576
+        }, 
+        "Nan A. Talese": {
+          "count": 3, 
+          "sum": 1546.9, 
+          "average": 515.6333333333333
+        }, 
+        "Square Fish": {
+          "count": 2, 
+          "sum": 43.36, 
+          "average": 21.68
+        }, 
+        "Chicken Soup for the Soul": {
+          "count": 2, 
+          "sum": 29.76, 
+          "average": 14.88
+        }, 
+        "Ace": {
+          "count": 18, 
+          "sum": 3602.75, 
+          "average": 200.15277777777777
+        }, 
+        "Prentice Hall Press": {
+          "count": 4, 
+          "sum": 590.6500000000001, 
+          "average": 147.6625
+        }, 
+        "Free Press": {
+          "count": 28, 
+          "sum": 2097.2999999999997, 
+          "average": 74.90357142857144
+        }, 
+        "World Wrestling Entertainment": {
+          "count": 1, 
+          "sum": 40.98, 
+          "average": 40.98
+        }, 
+        "Spectra": {
+          "count": 24, 
+          "sum": 1924.1200000000013, 
+          "average": 80.17166666666667
+        }, 
+        "Orbit": {
+          "count": 25, 
+          "sum": 3357.2199999999993, 
+          "average": 134.28879999999998
+        }, 
+        "Spiegel & Grau": {
+          "count": 12, 
+          "sum": 2835.439999999999, 
+          "average": 236.28666666666666
+        }, 
+        "Main Street Books": {
+          "count": 1, 
+          "sum": 118.16, 
+          "average": 118.16
+        }, 
+        "William Morrow Paperbacks": {
+          "count": 17, 
+          "sum": 2356.6199999999994, 
+          "average": 138.62470588235294
+        }, 
+        "Crossing Press": {
+          "count": 2, 
+          "sum": 80.33, 
+          "average": 40.165
+        }, 
+        "LB Kids": {
+          "count": 2, 
+          "sum": 38.519999999999996, 
+          "average": 19.259999999999998
+        }, 
+        "Fawcett": {
+          "count": 1, 
+          "sum": 77.87, 
+          "average": 77.87
+        }, 
+        "Sarah Crichton Books": {
+          "count": 3, 
+          "sum": 1139.05, 
+          "average": 379.68333333333334
+        }, 
+        "Vision": {
+          "count": 2, 
+          "sum": 545.22, 
+          "average": 272.61
+        }, 
+        "Farrar Straus and Giroux": {
+          "count": 49, 
+          "sum": 6986.130000000001, 
+          "average": 142.57408163265308
+        }, 
+        "Holt Paperbacks": {
+          "count": 12, 
+          "sum": 1558.24, 
+          "average": 129.85333333333332
+        }, 
+        "Multnomah Books": {
+          "count": 4, 
+          "sum": 966.38, 
+          "average": 241.595
+        }, 
+        "Grupo Nelson": {
+          "count": 2, 
+          "sum": 49.75, 
+          "average": 24.875
+        }, 
+        "Simon Spotlight": {
+          "count": 8, 
+          "sum": 182.39999999999995, 
+          "average": 22.8
+        }, 
+        "HarperTrue": {
+          "count": 1, 
+          "sum": 187.06, 
+          "average": 187.06
+        }, 
+        "Business Plus": {
+          "count": 9, 
+          "sum": 928.9200000000001, 
+          "average": 103.21333333333334
+        }, 
+        "Wendy Lamb Books": {
+          "count": 3, 
+          "sum": 226.18, 
+          "average": 75.39333333333333
+        }, 
+        "Two Lions": {
+          "count": 32, 
+          "sum": 1132.64, 
+          "average": 35.394999999999996
+        }, 
+        "Knopf Group E-Books": {
+          "count": 1, 
+          "sum": 43.17, 
+          "average": 43.17
+        }, 
+        "HarperCollinsChildren'sBooks": {
+          "count": 1, 
+          "sum": 3.79, 
+          "average": 3.79
+        }, 
+        "Truman Talley Books": {
+          "count": 1, 
+          "sum": 71.12, 
+          "average": 71.12
+        }, 
+        "Aladdin": {
+          "count": 32, 
+          "sum": 1163.1399999999996, 
+          "average": 36.348125
+        }, 
+        "Random House/Disney": {
+          "count": 5, 
+          "sum": 66.55, 
+          "average": 13.309999999999999
+        }, 
+        "Razorbill": {
+          "count": 7, 
+          "sum": 6382.2, 
+          "average": 911.7428571428571
+        }, 
+        "Ten Speed Press": {
+          "count": 24, 
+          "sum": 1823.46, 
+          "average": 75.9775
+        }, 
+        "The Penguin Press": {
+          "count": 11, 
+          "sum": 3348.5, 
+          "average": 304.40909090909093
         }
       }
     }, 
     "name": "publishers.[0].publisher.name", 
     "pretty": "Publisher: Name", 
     "indexes": [
-      "Simon Pulse/Mercury Ink", 
       "Gallery Books", 
       "Dial", 
       "McClelland & Stewart", 
@@ -13639,29 +12153,23 @@ publishers_bar = [
       "NAL", 
       "Avon Impulse", 
       "AmazonEncore", 
-      "Zondervan/Youth Specialties", 
       "Dial Press Trade Paperback", 
-      "Atria / 37 Ink", 
+      "Villard", 
       "Golden/Disney", 
       "RH/Disney", 
       "Hodder & Stoughton", 
       "Newmarket Press", 
-      "Penguin Young Readers", 
-      "Knopf Group E-Books", 
       "Grand Central Life & Style", 
       "Perigee", 
       "Golden Books", 
       "Thomas Dunne Books", 
       "HarperSport", 
-      "Collins Reference", 
-      "Tor Teen", 
+      "Loveswept", 
       "Crown Archetype", 
       "Harper Element", 
-      "HarperStudio", 
       "(Indie Publisher)", 
       "Zondervan", 
       "Atria Books/Beyond Words", 
-      "Entangled: Select", 
       "Studio", 
       "Bantam Dell", 
       "Pocket Star", 
@@ -13670,41 +12178,35 @@ publishers_bar = [
       "Schwartz & Wade", 
       "Penguin", 
       "Billboard Books", 
-      "Galvanized Books", 
       "Simon Pulse", 
-      "Cash Money Content", 
+      "Random House/Disney", 
+      "Watson-Guptill", 
       "Harper Paperbacks", 
       "Penguin Classic", 
       "Putnam Adult", 
-      "Mitchell Beazley", 
       "Reagan Arthur Books", 
       "William Morrow Impulse", 
-      "Alpha", 
-      "Two Lions", 
+      "Puffin", 
       "Metropolitan Books", 
-      "Potter Style", 
+      "William Morrow Cookbooks", 
       "Poppy", 
       "Three Rivers Press", 
       "Random House Books for Young Readers", 
       "Forge Books", 
       "Little Simon", 
-      "Avon Inspire", 
-      "Hudson Street Press", 
-      "Zinc Ink", 
       "Joe Books", 
-      "PHILOMEL", 
       "Celestial Arts", 
       "HarperTorch", 
       "Howard Books", 
       "Debbie Macomber Books", 
       "Roaring Brook Press", 
-      "Sentinel", 
+      "Atheneum Books for Young Readers", 
       "Thorsons", 
       "Amazon Publishing", 
       "St. Martin's Press", 
       "HarperPerennial Classics", 
-      "Villard", 
       "Pintail", 
+      "Current", 
       "HarperCollins e-books", 
       "Gotham Books", 
       "Entangled: Bliss", 
@@ -13713,6 +12215,7 @@ publishers_bar = [
       "Clarkson Potter", 
       "Grand Harbor Press", 
       "Square Fish", 
+      "Tor Teen", 
       "Harper Thorsons", 
       "Picador", 
       "Harmony", 
@@ -13720,58 +12223,47 @@ publishers_bar = [
       "47North", 
       "Ripley Publishing", 
       "Collins", 
-      "Starscape", 
-      "Dragonfly Books", 
       "DK Publishing", 
-      "Leer-e", 
       "Amphoto Books", 
       "Skyscape", 
       "Avery", 
       "Image", 
-      "Appetite by Random House", 
       "Faber & Faber", 
       "Orion", 
       "Simon & Schuster Audio", 
       "Graywolf Press", 
       "HarperWave", 
       "Crown Forum", 
-      "Walden Pond Press", 
       "Simon & Schuster", 
       "Montlake Romance", 
-      "Prentice Hall Press", 
+      "World Wrestling Entertainment", 
       "Modern Library", 
       "Knopf", 
       "Forever", 
-      "Spectra", 
       "Riverhead", 
       "Mulholland Books", 
       "Yearling", 
       "Hogarth", 
       "Bantam Classics", 
       "Potter Craft", 
-      "Atheneum Books for Young Readers", 
-      "Golden Guides from St. Martin's Press", 
+      "Sentinel", 
       "Penguin Books", 
-      "CLBusiness", 
       "Lone Eagle", 
       "Berkley", 
       "Holt Paperbacks", 
       "Harper Voyager", 
       "Hyperion", 
       "Anchor", 
-      "Signet", 
+      "Touchstone", 
       "Ecco", 
       "Celebra", 
       "Knopf Books for Young Readers", 
-      "Loveswept", 
+      "Razorbill", 
       "Roc", 
-      "St. Martin's Griffin", 
       "Pantheon", 
       "Reader's Digest", 
-      "Forever Yours", 
-      "InterMix", 
+      "Vintage Espanol", 
       "Little Brown Books for Young Readers", 
-      "Ivy Books", 
       "Dutton Children's", 
       "Speak", 
       "Yen Press", 
@@ -13779,11 +12271,10 @@ publishers_bar = [
       "Thomas Nelson", 
       "Page Street Publishing", 
       "Island Books", 
-      "PSS Juvenile", 
       "St. Martin's Paperbacks", 
       "Viking Adult", 
       "Pocket Books", 
-      "David Fickling Books", 
+      "Zinc Ink", 
       "Alfred A. Knopf BFYR", 
       "Minotaur Books", 
       "Random House Trade Paperbacks", 
@@ -13800,13 +12291,11 @@ publishers_bar = [
       "Grand Central Publishing", 
       "HarperBusiness", 
       "Entangled: Teen", 
-      "Gildan Digital", 
       "Scientific American", 
-      "Touchstone", 
+      "Signet", 
       "Presidio Press", 
-      "Delta", 
+      "Prentice Hall Press", 
       "FENN-M&S", 
-      "Tor Science Fiction", 
       "Entangled: Brazen", 
       "LucasBooks", 
       "Piatkus", 
@@ -13817,6 +12306,7 @@ publishers_bar = [
       "Threshold Editions", 
       "William Morrow", 
       "Twelve", 
+      "Delta", 
       "St. Martin's True Crime", 
       "Little A", 
       "Jove", 
@@ -13825,11 +12315,12 @@ publishers_bar = [
       "Balzer + Bray", 
       "Entangled: Indulgence", 
       "Dutton Adult", 
+      "Atria / 37 Ink", 
       "Orb Books", 
       "Laurel Leaf", 
       "Aerie", 
-      "Gallery Books/Karen Hunter Publishing", 
       "First Second", 
+      "Potter Style", 
       "The Penguin Press", 
       "Back Bay Books", 
       "Grupo Nelson", 
@@ -13846,8 +12337,7 @@ publishers_bar = [
       "HarperCollins", 
       "WaterBrook Press", 
       "Putnam Juvenile", 
-      "Harper Design", 
-      "Razorbill", 
+      "St. Martin's Griffin", 
       "Crimeline", 
       "Hill and Wang", 
       "Delacorte Press", 
@@ -13858,8 +12348,7 @@ publishers_bar = [
       "Margaret K. McElderry Books", 
       "The Friday Project", 
       "FaithWords", 
-      "Amistad", 
-      "Current", 
+      "Hudson Street Press", 
       "HarperPress", 
       "Tundra Books", 
       "Sarah Crichton Books", 
@@ -13870,7 +12359,6 @@ publishers_bar = [
       "Doubleday", 
       "Delacorte Books for Young Readers", 
       "Henry Holt and Co.", 
-      "Convergent Books", 
       "Zonderkidz", 
       "Papercutz", 
       "Atria Books", 
@@ -13881,14 +12369,13 @@ publishers_bar = [
       "Atria/Emily Bestler Books", 
       "HarperOne", 
       "Scientific American / Farrar Straus and Giroux", 
-      "Watson-Guptill", 
       "Princeton Review", 
       "DAW", 
       "Deepak Chopra", 
       "Washington Square Press", 
       "Tarcher", 
       "Times Books", 
-      "William Morrow Cookbooks", 
+      "InterMix", 
       "Fodor's", 
       "Nan A. Talese", 
       "Free Press", 
@@ -13897,7 +12384,7 @@ publishers_bar = [
       "Del Rey", 
       "Feiwel & Friends", 
       "The Dial Press", 
-      "Random House/Disney", 
+      "Spectra", 
       "Orbit", 
       "Spiegel & Grau", 
       "Main Street Books", 
@@ -13905,21 +12392,16 @@ publishers_bar = [
       "Crossing Press", 
       "LB Kids", 
       "Fawcett", 
-      "Anthony Bourdain/Ecco", 
       "Vision", 
       "Jericho Books", 
-      "Vintage Espanol", 
       "Blue Rider Press", 
       "Multnomah Books", 
       "Wendy Lamb Books", 
       "Grosset & Dunlap", 
       "HarperTrue", 
       "Business Plus", 
-      "Grijalbo", 
-      "Puffin", 
-      "Simon & Schuster/Paula Wiseman Books", 
-      "World Wrestling Entertainment", 
-      "Random House Reference", 
+      "Two Lions", 
+      "Knopf Group E-Books", 
       "HarperCollinsChildren'sBooks", 
       "Truman Talley Books", 
       "Aladdin", 
@@ -13938,247 +12420,247 @@ publishers_bar = [
       "amazon"
     ], 
     "data": {
-      "publishers.[0].daily.units sold": {
-        "indie": {
-          "count": 5637, 
-          "sum": 141016, 
-          "average": 25.01614333865531
-        }, 
-        "small/medium": {
-          "count": 9107, 
-          "sum": 107533, 
-          "average": 11.807730317338311
-        }, 
-        "amazon": {
-          "count": 375, 
-          "sum": 18764, 
-          "average": 50.037333333333336
-        }, 
-        "single author": {
-          "count": 3426, 
-          "sum": 53673, 
-          "average": 15.666374781085814
-        }, 
-        "big five": {
-          "count": 6783, 
-          "sum": 155002, 
-          "average": 22.8515406162465
-        }
-      }, 
-      "publishers.[0].daily.gross sales": {
-        "indie": {
-          "count": 5637, 
-          "sum": 423787.08999999, 
-          "average": 75.17954408373248
-        }, 
-        "small/medium": {
-          "count": 9107, 
-          "sum": 622420.6599999397, 
-          "average": 68.34530141649282
-        }, 
-        "amazon": {
-          "count": 375, 
-          "sum": 71866.32000000005, 
-          "average": 191.64352000000002
-        }, 
-        "single author": {
-          "count": 3426, 
-          "sum": 187245.7200000028, 
-          "average": 54.65432574430823
-        }, 
-        "big five": {
-          "count": 6783, 
-          "sum": 1123491.3899999834, 
-          "average": 165.6334055727554
-        }
-      }, 
-      "publishers.[0].daily.author revenue": {
-        "indie": {
-          "count": 5637, 
-          "sum": 274998.61200000014, 
-          "average": 48.78456838744013
-        }, 
-        "small/medium": {
-          "count": 9107, 
-          "sum": 124484.13200000241, 
-          "average": 13.669060283298561
-        }, 
-        "amazon": {
-          "count": 375, 
-          "sum": 25153.21200000001, 
-          "average": 67.075232
-        }, 
-        "single author": {
-          "count": 3426, 
-          "sum": 37449.14399999994, 
-          "average": 10.930865148861646
-        }, 
-        "big five": {
-          "count": 6783, 
-          "sum": 224698.27800000066, 
-          "average": 33.12668111455108
-        }
-      }, 
-      "publishers.[0].daily.publisher revenue": {
-        "indie": {
-          "count": 5637, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "small/medium": {
-          "count": 9107, 
-          "sum": 373452.3960000026, 
-          "average": 41.00718084989568
-        }, 
-        "amazon": {
-          "count": 375, 
-          "sum": 0.0, 
-          "average": 0.0
-        }, 
-        "single author": {
-          "count": 3426, 
-          "sum": 112347.43200000076, 
-          "average": 32.79259544658494
-        }, 
-        "big five": {
-          "count": 6783, 
-          "sum": 674094.8339999939, 
-          "average": 99.38004334365326
-        }
-      }, 
       "publishers.[0].statistics.sales rank": {
         "indie": {
-          "count": 5637, 
-          "sum": 179858202, 
-          "average": 31906.7237892496
+          "count": 2819, 
+          "sum": 88861063, 
+          "average": 31522.19333096843
         }, 
         "small/medium": {
-          "count": 9107, 
-          "sum": 418525296, 
-          "average": 45956.43966179861
-        }, 
-        "amazon": {
-          "count": 375, 
-          "sum": 5797285, 
-          "average": 15459.426666666666
+          "count": 4507, 
+          "sum": 208537917, 
+          "average": 46269.78411360107
         }, 
         "single author": {
-          "count": 3426, 
-          "sum": 129300046, 
-          "average": 37740.81903093987
+          "count": 1757, 
+          "sum": 67200395, 
+          "average": 38247.23676721685
+        }, 
+        "amazon": {
+          "count": 188, 
+          "sum": 3045485, 
+          "average": 16199.38829787234
         }, 
         "big five": {
-          "count": 6783, 
-          "sum": 232458479, 
-          "average": 34270.7473094501
+          "count": 3368, 
+          "sum": 113827585, 
+          "average": 33796.788895486934
         }
       }, 
-      "publishers.[0].statistics.total reviews": {
+      "publishers.[0].daily average.publisher revenue": {
         "indie": {
-          "count": 5637, 
-          "sum": 396527, 
-          "average": 70.34362249423452
+          "count": 2819, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
         "small/medium": {
-          "count": 9107, 
-          "sum": 680543, 
-          "average": 74.72746239156693
-        }, 
-        "amazon": {
-          "count": 375, 
-          "sum": 96700, 
-          "average": 257.8666666666667
+          "count": 4507, 
+          "sum": 181256.2440000019, 
+          "average": 40.21660616818283
         }, 
         "single author": {
-          "count": 3426, 
-          "sum": 211981, 
-          "average": 61.874197314652655
-        }, 
-        "big five": {
-          "count": 6783, 
-          "sum": 1449703, 
-          "average": 213.72593247825446
-        }
-      }, 
-      "publishers.[0].statistics.sale price": {
-        "indie": {
-          "count": 5637, 
-          "sum": 19247.140000000254, 
-          "average": 3.4144296611672873
-        }, 
-        "small/medium": {
-          "count": 9107, 
-          "sum": 70387.52999999953, 
-          "average": 7.728948061930383
+          "count": 1757, 
+          "sum": 56680.45800000032, 
+          "average": 32.259793966989186
         }, 
         "amazon": {
-          "count": 375, 
-          "sum": 1473.0500000000027, 
-          "average": 3.9281333333333333
-        }, 
-        "single author": {
-          "count": 3426, 
-          "sum": 15870.259999999522, 
-          "average": 4.632300058377116
+          "count": 188, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
         "big five": {
-          "count": 6783, 
-          "sum": 56267.84999999941, 
-          "average": 8.295422379478106
+          "count": 3368, 
+          "sum": 331866.5159999977, 
+          "average": 98.53518883610451
         }
       }, 
       "publishers.[0].statistics.average rating": {
         "indie": {
-          "count": 5637, 
-          "sum": 24419.06999999992, 
-          "average": 4.331926556679084
+          "count": 2819, 
+          "sum": 12186.289999999959, 
+          "average": 4.322912380276694
         }, 
         "small/medium": {
-          "count": 9107, 
-          "sum": 39847.35000000027, 
-          "average": 4.375463928845942
-        }, 
-        "amazon": {
-          "count": 375, 
-          "sum": 1578.8800000000006, 
-          "average": 4.210346666666667
+          "count": 4507, 
+          "sum": 19725.97999999999, 
+          "average": 4.376742844464167
         }, 
         "single author": {
-          "count": 3426, 
-          "sum": 15056.95999999998, 
-          "average": 4.394909515469935
+          "count": 1757, 
+          "sum": 7707.820000000012, 
+          "average": 4.386920887877063
+        }, 
+        "amazon": {
+          "count": 188, 
+          "sum": 793.0499999999998, 
+          "average": 4.218351063829787
         }, 
         "big five": {
-          "count": 6783, 
-          "sum": 29294.749999999924, 
-          "average": 4.318848592068406
+          "count": 3368, 
+          "sum": 14562.879999999977, 
+          "average": 4.323895486935867
         }
       }, 
-      "publishers.[0].daily.amazon revenue": {
+      "publishers.[0].daily average.units sold": {
         "indie": {
-          "count": 5637, 
-          "sum": 148788.4779999945, 
-          "average": 26.394975696292356
+          "count": 2819, 
+          "sum": 72302, 
+          "average": 25.648102163887902
         }, 
         "small/medium": {
-          "count": 9107, 
-          "sum": 124484.13200000241, 
-          "average": 13.669060283298561
-        }, 
-        "amazon": {
-          "count": 375, 
-          "sum": 46713.10800000006, 
-          "average": 124.568288
+          "count": 4507, 
+          "sum": 52716, 
+          "average": 11.696472154426448
         }, 
         "single author": {
-          "count": 3426, 
-          "sum": 37449.14399999994, 
-          "average": 10.930865148861646
+          "count": 1757, 
+          "sum": 27979, 
+          "average": 15.92430278884462
+        }, 
+        "amazon": {
+          "count": 188, 
+          "sum": 8990, 
+          "average": 47.819148936170215
         }, 
         "big five": {
-          "count": 6783, 
-          "sum": 224698.27800000066, 
-          "average": 33.12668111455108
+          "count": 3368, 
+          "sum": 75575, 
+          "average": 22.43913301662708
+        }
+      }, 
+      "publishers.[0].statistics.total reviews": {
+        "indie": {
+          "count": 2819, 
+          "sum": 199998, 
+          "average": 70.94643490599503
+        }, 
+        "small/medium": {
+          "count": 4507, 
+          "sum": 348797, 
+          "average": 77.39005990681163
+        }, 
+        "single author": {
+          "count": 1757, 
+          "sum": 107695, 
+          "average": 61.29482071713147
+        }, 
+        "amazon": {
+          "count": 188, 
+          "sum": 43336, 
+          "average": 230.51063829787233
+        }, 
+        "big five": {
+          "count": 3368, 
+          "sum": 709942, 
+          "average": 210.79038004750595
+        }
+      }, 
+      "publishers.[0].daily average.author revenue": {
+        "indie": {
+          "count": 2819, 
+          "sum": 141309.44099999938, 
+          "average": 50.127506562610854
+        }, 
+        "small/medium": {
+          "count": 4507, 
+          "sum": 60418.74799999992, 
+          "average": 13.405535389394275
+        }, 
+        "single author": {
+          "count": 1757, 
+          "sum": 18893.48600000001, 
+          "average": 10.753264655663063
+        }, 
+        "amazon": {
+          "count": 188, 
+          "sum": 12470.457999999986, 
+          "average": 66.33222340425532
+        }, 
+        "big five": {
+          "count": 3368, 
+          "sum": 110622.17200000036, 
+          "average": 32.84506294536817
+        }
+      }, 
+      "publishers.[0].statistics.sale price": {
+        "indie": {
+          "count": 2819, 
+          "sum": 9488.51999999958, 
+          "average": 3.3659169918410785
+        }, 
+        "small/medium": {
+          "count": 4507, 
+          "sum": 34864.47000000102, 
+          "average": 7.735626802751276
+        }, 
+        "single author": {
+          "count": 1757, 
+          "sum": 8000.369999999771, 
+          "average": 4.553426294820717
+        }, 
+        "amazon": {
+          "count": 188, 
+          "sum": 745.2300000000013, 
+          "average": 3.9639893617021276
+        }, 
+        "big five": {
+          "count": 3368, 
+          "sum": 27969.710000000538, 
+          "average": 8.304545724465559
+        }
+      }, 
+      "publishers.[0].daily average.amazon revenue": {
+        "indie": {
+          "count": 2819, 
+          "sum": 76431.73900000054, 
+          "average": 27.113068109258602
+        }, 
+        "small/medium": {
+          "count": 4507, 
+          "sum": 60418.74799999992, 
+          "average": 13.405535389394275
+        }, 
+        "single author": {
+          "count": 1757, 
+          "sum": 18893.48600000001, 
+          "average": 10.753264655663063
+        }, 
+        "amazon": {
+          "count": 188, 
+          "sum": 23159.421999999984, 
+          "average": 123.18841489361701
+        }, 
+        "big five": {
+          "count": 3368, 
+          "sum": 110622.17200000036, 
+          "average": 32.84506294536817
+        }
+      }, 
+      "publishers.[0].daily average.gross sales": {
+        "indie": {
+          "count": 2819, 
+          "sum": 217741.17999999906, 
+          "average": 77.24057467186945
+        }, 
+        "small/medium": {
+          "count": 4507, 
+          "sum": 302093.7399999955, 
+          "average": 67.02767694697138
+        }, 
+        "single author": {
+          "count": 1757, 
+          "sum": 94467.4300000006, 
+          "average": 53.76632327831531
+        }, 
+        "amazon": {
+          "count": 188, 
+          "sum": 35629.880000000034, 
+          "average": 189.52063829787232
+        }, 
+        "big five": {
+          "count": 3368, 
+          "sum": 553110.8599999881, 
+          "average": 164.22531472684085
         }
       }
     }, 
@@ -14187,8 +12669,8 @@ publishers_bar = [
     "indexes": [
       "indie", 
       "small/medium", 
-      "amazon", 
       "single author", 
+      "amazon", 
       "big five"
     ]
   }, 
@@ -14202,292 +12684,292 @@ publishers_bar = [
       "foreign language"
     ], 
     "data": {
-      "publishers.[0].daily.units sold": {
-        "comics": {
-          "count": 491, 
-          "sum": 3078, 
-          "average": 6.268839103869654
-        }, 
-        "fiction": {
-          "count": 674, 
-          "sum": 23812, 
-          "average": 35.32937685459941
-        }, 
-        "nonfiction": {
-          "count": 13442, 
-          "sum": 148394, 
-          "average": 11.039577443832764
-        }, 
-        "foreign language": {
-          "count": 78, 
-          "sum": 368, 
-          "average": 4.717948717948718
-        }, 
-        "genre fiction": {
-          "count": 8218, 
-          "sum": 279071, 
-          "average": 33.95850571915308
-        }, 
-        "children": {
-          "count": 2425, 
-          "sum": 21265, 
-          "average": 8.769072164948454
-        }
-      }, 
-      "publishers.[0].daily.gross sales": {
-        "comics": {
-          "count": 491, 
-          "sum": 20102.58000000007, 
-          "average": 40.942118126272916
-        }, 
-        "fiction": {
-          "count": 674, 
-          "sum": 114805.12000000004, 
-          "average": 170.3340059347181
-        }, 
-        "nonfiction": {
-          "count": 13442, 
-          "sum": 1031216.6299999332, 
-          "average": 76.71601175420325
-        }, 
-        "foreign language": {
-          "count": 78, 
-          "sum": 1770.1100000000006, 
-          "average": 22.69371794871795
-        }, 
-        "genre fiction": {
-          "count": 8218, 
-          "sum": 1158335.2399998563, 
-          "average": 140.95099050863956
-        }, 
-        "children": {
-          "count": 2425, 
-          "sum": 102581.50000000093, 
-          "average": 42.301649484536085
-        }
-      }, 
-      "publishers.[0].daily.author revenue": {
-        "comics": {
-          "count": 491, 
-          "sum": 4020.8129999999987, 
-          "average": 8.18902851323829
-        }, 
-        "fiction": {
-          "count": 674, 
-          "sum": 28883.954, 
-          "average": 42.85453115727003
-        }, 
-        "nonfiction": {
-          "count": 13442, 
-          "sum": 247513.15900000415, 
-          "average": 18.413417571789914
-        }, 
-        "foreign language": {
-          "count": 78, 
-          "sum": 417.79249999999996, 
-          "average": 5.356314102564103
-        }, 
-        "genre fiction": {
-          "count": 8218, 
-          "sum": 382971.209999999, 
-          "average": 46.601510099780974
-        }, 
-        "children": {
-          "count": 2425, 
-          "sum": 22976.449499999926, 
-          "average": 9.474824536082474
-        }
-      }, 
-      "publishers.[0].daily.publisher revenue": {
-        "comics": {
-          "count": 491, 
-          "sum": 12060.359999999973, 
-          "average": 24.562851323828923
-        }, 
-        "fiction": {
-          "count": 674, 
-          "sum": 60081.94799999998, 
-          "average": 89.14235608308604
-        }, 
-        "nonfiction": {
-          "count": 13442, 
-          "sum": 559808.8379999853, 
-          "average": 41.64624594554382
-        }, 
-        "foreign language": {
-          "count": 78, 
-          "sum": 972.7860000000001, 
-          "average": 12.471615384615385
-        }, 
-        "genre fiction": {
-          "count": 8218, 
-          "sum": 469824.19799999613, 
-          "average": 57.170138476514964
-        }, 
-        "children": {
-          "count": 2425, 
-          "sum": 57146.53200000026, 
-          "average": 23.565580206185565
-        }
-      }, 
       "publishers.[0].statistics.sales rank": {
         "comics": {
-          "count": 491, 
-          "sum": 25620809, 
-          "average": 52180.87372708758
+          "count": 247, 
+          "sum": 12509687, 
+          "average": 50646.506072874494
         }, 
         "fiction": {
-          "count": 674, 
-          "sum": 12412237, 
-          "average": 18415.781899109792
+          "count": 344, 
+          "sum": 6207057, 
+          "average": 18043.77034883721
         }, 
         "nonfiction": {
-          "count": 13442, 
-          "sum": 605023623, 
-          "average": 45009.94070822794
+          "count": 6678, 
+          "sum": 301177829, 
+          "average": 45100.00434261755
         }, 
         "foreign language": {
-          "count": 78, 
-          "sum": 4782949, 
-          "average": 61319.85897435898
+          "count": 39, 
+          "sum": 2589172, 
+          "average": 66389.02564102564
         }, 
         "genre fiction": {
-          "count": 8218, 
-          "sum": 197164840, 
-          "average": 23991.827695302993
+          "count": 4126, 
+          "sum": 99928379, 
+          "average": 24219.190256907415
         }, 
         "children": {
-          "count": 2425, 
-          "sum": 120934850, 
-          "average": 49870.0412371134
+          "count": 1205, 
+          "sum": 59060321, 
+          "average": 49012.714522821574
         }
       }, 
-      "publishers.[0].statistics.total reviews": {
+      "publishers.[0].daily average.publisher revenue": {
         "comics": {
-          "count": 491, 
-          "sum": 23554, 
-          "average": 47.97148676171079
+          "count": 247, 
+          "sum": 6513.504000000002, 
+          "average": 26.370461538461537
         }, 
         "fiction": {
-          "count": 674, 
-          "sum": 128868, 
-          "average": 191.19881305637983
+          "count": 344, 
+          "sum": 31587.239999999987, 
+          "average": 91.82337209302327
         }, 
         "nonfiction": {
-          "count": 13442, 
-          "sum": 1322495, 
-          "average": 98.38528492783811
+          "count": 6678, 
+          "sum": 277558.99800000177, 
+          "average": 41.56319227313567
         }, 
         "foreign language": {
-          "count": 78, 
-          "sum": 1374, 
-          "average": 17.615384615384617
+          "count": 39, 
+          "sum": 464.74199999999996, 
+          "average": 11.916461538461538
         }, 
         "genre fiction": {
-          "count": 8218, 
-          "sum": 1147224, 
-          "average": 139.5989291798491
+          "count": 4126, 
+          "sum": 225029.1000000008, 
+          "average": 54.539287445467764
         }, 
         "children": {
-          "count": 2425, 
-          "sum": 211939, 
-          "average": 87.39752577319588
-        }
-      }, 
-      "publishers.[0].statistics.sale price": {
-        "comics": {
-          "count": 491, 
-          "sum": 3348.3199999999765, 
-          "average": 6.81938900203666
-        }, 
-        "fiction": {
-          "count": 674, 
-          "sum": 3101.8999999999673, 
-          "average": 4.602225519287834
-        }, 
-        "nonfiction": {
-          "count": 13442, 
-          "sum": 108315.87000001136, 
-          "average": 8.05801740812379
-        }, 
-        "foreign language": {
-          "count": 78, 
-          "sum": 373.71000000000026, 
-          "average": 4.791153846153846
-        }, 
-        "genre fiction": {
-          "count": 8218, 
-          "sum": 36821.90000000228, 
-          "average": 4.480640058408372
-        }, 
-        "children": {
-          "count": 2425, 
-          "sum": 11284.12999999977, 
-          "average": 4.653249484536083
+          "count": 1205, 
+          "sum": 28649.633999999925, 
+          "average": 23.77562987551867
         }
       }, 
       "publishers.[0].statistics.average rating": {
         "comics": {
-          "count": 491, 
-          "sum": 2114.3600000000024, 
-          "average": 4.306232179226069
+          "count": 247, 
+          "sum": 1057.3699999999997, 
+          "average": 4.280850202429149
         }, 
         "fiction": {
-          "count": 674, 
-          "sum": 2913.4899999999993, 
-          "average": 4.322685459940653
+          "count": 344, 
+          "sum": 1482.3700000000003, 
+          "average": 4.309215116279069
         }, 
         "nonfiction": {
-          "count": 13442, 
-          "sum": 58422.83000000069, 
-          "average": 4.346289986609135
+          "count": 6678, 
+          "sum": 29029.430000000026, 
+          "average": 4.347024558250974
         }, 
         "foreign language": {
-          "count": 78, 
-          "sum": 342.3900000000001, 
-          "average": 4.389615384615384
+          "count": 39, 
+          "sum": 172.42, 
+          "average": 4.421025641025642
         }, 
         "genre fiction": {
-          "count": 8218, 
-          "sum": 35478.61000000015, 
-          "average": 4.317183012898515
+          "count": 4126, 
+          "sum": 17805.110000000026, 
+          "average": 4.31534415899176
         }, 
         "children": {
-          "count": 2425, 
-          "sum": 10925.329999999996, 
-          "average": 4.505290721649485
+          "count": 1205, 
+          "sum": 5429.320000000005, 
+          "average": 4.505659751037344
         }
       }, 
-      "publishers.[0].daily.amazon revenue": {
+      "publishers.[0].daily average.units sold": {
         "comics": {
-          "count": 491, 
-          "sum": 4021.4069999999983, 
-          "average": 8.190238289205704
+          "count": 247, 
+          "sum": 1626, 
+          "average": 6.582995951417004
         }, 
         "fiction": {
-          "count": 674, 
-          "sum": 25839.218000000015, 
-          "average": 38.33711869436202
+          "count": 344, 
+          "sum": 12314, 
+          "average": 35.79651162790697
         }, 
         "nonfiction": {
-          "count": 13442, 
-          "sum": 223894.63299999989, 
-          "average": 16.656348236869512
+          "count": 6678, 
+          "sum": 74708, 
+          "average": 11.187181790955377
         }, 
         "foreign language": {
-          "count": 78, 
-          "sum": 379.5315, 
-          "average": 4.865788461538462
+          "count": 39, 
+          "sum": 160, 
+          "average": 4.102564102564102
         }, 
         "genre fiction": {
-          "count": 8218, 
-          "sum": 305539.83199999476, 
-          "average": 37.17934193234363
+          "count": 4126, 
+          "sum": 138045, 
+          "average": 33.457343674260784
         }, 
         "children": {
-          "count": 2425, 
-          "sum": 22458.51849999995, 
-          "average": 9.26124474226804
+          "count": 1205, 
+          "sum": 10709, 
+          "average": 8.887136929460581
+        }
+      }, 
+      "publishers.[0].statistics.total reviews": {
+        "comics": {
+          "count": 247, 
+          "sum": 12642, 
+          "average": 51.18218623481781
+        }, 
+        "fiction": {
+          "count": 344, 
+          "sum": 70889, 
+          "average": 206.07267441860466
+        }, 
+        "nonfiction": {
+          "count": 6678, 
+          "sum": 644901, 
+          "average": 96.57097933513027
+        }, 
+        "foreign language": {
+          "count": 39, 
+          "sum": 679, 
+          "average": 17.41025641025641
+        }, 
+        "genre fiction": {
+          "count": 4126, 
+          "sum": 569231, 
+          "average": 137.96194861851671
+        }, 
+        "children": {
+          "count": 1205, 
+          "sum": 111426, 
+          "average": 92.46970954356847
+        }
+      }, 
+      "publishers.[0].daily average.author revenue": {
+        "comics": {
+          "count": 247, 
+          "sum": 2171.861, 
+          "average": 8.79295951417004
+        }, 
+        "fiction": {
+          "count": 344, 
+          "sum": 14215.948499999988, 
+          "average": 41.325431686046514
+        }, 
+        "nonfiction": {
+          "count": 6678, 
+          "sum": 123987.64800000077, 
+          "average": 18.56658400718778
+        }, 
+        "foreign language": {
+          "count": 39, 
+          "sum": 183.62449999999998, 
+          "average": 4.708320512820513
+        }, 
+        "genre fiction": {
+          "count": 4126, 
+          "sum": 191529.0785000008, 
+          "average": 46.420038414929714
+        }, 
+        "children": {
+          "count": 1205, 
+          "sum": 11626.14449999994, 
+          "average": 9.648252697095437
+        }
+      }, 
+      "publishers.[0].statistics.sale price": {
+        "comics": {
+          "count": 247, 
+          "sum": 1679.490000000001, 
+          "average": 6.799554655870446
+        }, 
+        "fiction": {
+          "count": 344, 
+          "sum": 1571.4900000000023, 
+          "average": 4.5682848837209304
+        }, 
+        "nonfiction": {
+          "count": 6678, 
+          "sum": 53707.11999999869, 
+          "average": 8.042395926924229
+        }, 
+        "foreign language": {
+          "count": 39, 
+          "sum": 188.76000000000002, 
+          "average": 4.84
+        }, 
+        "genre fiction": {
+          "count": 4126, 
+          "sum": 18354.21999999981, 
+          "average": 4.448429471643238
+        }, 
+        "children": {
+          "count": 1205, 
+          "sum": 5567.2199999999175, 
+          "average": 4.620099585062241
+        }
+      }, 
+      "publishers.[0].daily average.amazon revenue": {
+        "comics": {
+          "count": 247, 
+          "sum": 2172.4549999999995, 
+          "average": 8.795364372469635
+        }, 
+        "fiction": {
+          "count": 344, 
+          "sum": 13067.441499999995, 
+          "average": 37.98674854651163
+        }, 
+        "nonfiction": {
+          "count": 6678, 
+          "sum": 111776.7740000017, 
+          "average": 16.738061395627433
+        }, 
+        "foreign language": {
+          "count": 39, 
+          "sum": 172.9835, 
+          "average": 4.435474358974359
+        }, 
+        "genre fiction": {
+          "count": 4126, 
+          "sum": 150946.08149999968, 
+          "average": 36.58412057682986
+        }, 
+        "children": {
+          "count": 1205, 
+          "sum": 11389.831499999942, 
+          "average": 9.452142323651453
+        }
+      }, 
+      "publishers.[0].daily average.gross sales": {
+        "comics": {
+          "count": 247, 
+          "sum": 10857.819999999963, 
+          "average": 43.95878542510121
+        }, 
+        "fiction": {
+          "count": 344, 
+          "sum": 58870.630000000005, 
+          "average": 171.1355523255814
+        }, 
+        "nonfiction": {
+          "count": 6678, 
+          "sum": 513323.4199999887, 
+          "average": 76.86783767595088
+        }, 
+        "foreign language": {
+          "count": 39, 
+          "sum": 821.3500000000003, 
+          "average": 21.06025641025641
+        }, 
+        "genre fiction": {
+          "count": 4126, 
+          "sum": 567504.2599999948, 
+          "average": 137.54344643722735
+        }, 
+        "children": {
+          "count": 1205, 
+          "sum": 51665.61000000014, 
+          "average": 42.87602489626556
         }
       }
     }, 

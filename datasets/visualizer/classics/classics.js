@@ -11011,7 +11011,7 @@ classics = [
     "type": "number"
   }, 
   {
-    "comment": "Every book on Project Gutenberg has a unique ID number. You can use this number to check the book on project gutenberg (e.g., book 110 is http://www.gutenberg.org/ebooks/110).", 
+    "comment": "Every book on Project Gutenberg has a unique ID number. You can use this number to check the book on project gutenberg (e.g., book 110 is <a href=\"http://www.gutenberg.org/ebooks/110\">http://www.gutenberg.org/ebooks/110</a>).", 
     "index": false, 
     "name": "classics.[0].metadata.id", 
     "data": [

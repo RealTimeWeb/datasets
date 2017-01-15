@@ -2877,6 +2877,6 @@ demographics = [
     ], 
     "name": "demographics.[0].State", 
     "pretty": "State: State", 
-    "index": false
+    "index": true
   }
 ]

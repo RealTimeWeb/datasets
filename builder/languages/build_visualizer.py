@@ -162,7 +162,7 @@ def sample_down(dol):
     for data in dol:
         data['data'] = random.sample(data['data'], min(len(data['data']), 1000))
         
-def remove_outliers(lodol):
+def remove_outliers(lodol, actually_keep=True):
     bad_indexes = set()
     bad_keys = set()
     DEVIATIONS = 4
@@ -197,6 +197,9 @@ def remove_outliers(lodol):
             for offset in xrange(0, stride):
                 if keep_index != offset:
                     bad_indexes.add(min(total_indexes, an_index+offset))
+    if actually_keep:
+        bad_indexes = set()
+        bad_keys = set()
     print("Trimmed indexes:", len(bad_indexes), "/", total_indexes)    
     #print("Contributing keys:", ', '.join(bad_keys))
     for data in lodol:
@@ -235,7 +238,7 @@ def build_locals(model, js_path):
                 data = [JsonLeafNodes(name+'.[0]', item).result for item in data_list]
                 data = lod_to_dol(data)
                 bar_data = []
-                remove_outliers(data)
+                remove_outliers(data, actually_keep=model['metadata']['outliers'])
                 for row in data:
                     if row['name'] in model['structures_comments']:
                         row['comment'] = model['structures_comments'][row['name']]
@@ -307,6 +310,12 @@ def build_visualizer(model, fast):
             files[new_folder+name+'.png'] = icon_data.read()
     else:
         model["metadata"]["icon"] = False
+    splash_file = model['metadata']['splash']
+    if os.path.exists(splash_file):
+        with open(splash_file, 'rb') as splash_data:
+            files[new_folder+splash_file] = splash_data.read()
+    else:
+        model["metadata"]["splash"] = False
     
     if not fast:
         moves = {f: new_folder for f in build_locals(model, new_folder)}

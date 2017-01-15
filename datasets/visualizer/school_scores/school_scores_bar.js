@@ -10036,6 +10036,263 @@ school_scores_bar = [
           "average": 2392.2727272727275
         }
       }, 
+      "school_scores.[0].Year": {
+        "Mississippi": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Oklahoma": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Wyoming": {
+          "count": 6, 
+          "sum": 12052, 
+          "average": 2008.6666666666667
+        }, 
+        "Minnesota": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Illinois": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "District Of Columbia": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Arkansas": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "New Mexico": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Ohio": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Indiana": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Maryland": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Louisiana": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Idaho": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Arizona": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Iowa": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Michigan": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Kansas": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Utah": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Virginia": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Oregon": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Connecticut": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Montana": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "New Hampshire": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Massachusetts": {
+          "count": 10, 
+          "sum": 20101, 
+          "average": 2010.1
+        }, 
+        "Puerto Rico": {
+          "count": 9, 
+          "sum": 18091, 
+          "average": 2010.111111111111
+        }, 
+        "South Carolina": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Vermont": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Delaware": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "North Dakota": {
+          "count": 3, 
+          "sum": 6025, 
+          "average": 2008.3333333333333
+        }, 
+        "Pennsylvania": {
+          "count": 10, 
+          "sum": 20101, 
+          "average": 2010.1
+        }, 
+        "West Virginia": {
+          "count": 9, 
+          "sum": 18099, 
+          "average": 2011.0
+        }, 
+        "Florida": {
+          "count": 9, 
+          "sum": 18086, 
+          "average": 2009.5555555555557
+        }, 
+        "Alaska": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Kentucky": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Hawaii": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Nebraska": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Missouri": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Wisconsin": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Alabama": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Rhode Island": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Colorado": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "South Dakota": {
+          "count": 7, 
+          "sum": 14070, 
+          "average": 2010.0
+        }, 
+        "Georgia": {
+          "count": 9, 
+          "sum": 18087, 
+          "average": 2009.6666666666667
+        }, 
+        "Virgin Islands": {
+          "count": 4, 
+          "sum": 8029, 
+          "average": 2007.25
+        }, 
+        "New Jersey": {
+          "count": 10, 
+          "sum": 20101, 
+          "average": 2010.1
+        }, 
+        "Washington": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "North Carolina": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Tennessee": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Texas": {
+          "count": 5, 
+          "sum": 10039, 
+          "average": 2007.8
+        }, 
+        "Nevada": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }, 
+        "Maine": {
+          "count": 11, 
+          "sum": 22110, 
+          "average": 2010.0
+        }
+      }, 
       "school_scores.[0].Score Ranges.Between 700 to 800.Verbal.Males": {
         "Mississippi": {
           "count": 11, 
@@ -26977,6 +27234,63 @@ school_scores_bar = [
           "count": 47, 
           "sum": 178407, 
           "average": 3795.8936170212764
+        }
+      }, 
+      "school_scores.[0].Year": {
+        "2006": {
+          "count": 50, 
+          "sum": 100300, 
+          "average": 2006.0
+        }, 
+        "2007": {
+          "count": 50, 
+          "sum": 100350, 
+          "average": 2007.0
+        }, 
+        "2005": {
+          "count": 47, 
+          "sum": 94235, 
+          "average": 2005.0
+        }, 
+        "2015": {
+          "count": 46, 
+          "sum": 92690, 
+          "average": 2015.0
+        }, 
+        "2014": {
+          "count": 45, 
+          "sum": 90630, 
+          "average": 2014.0
+        }, 
+        "2008": {
+          "count": 48, 
+          "sum": 96384, 
+          "average": 2008.0
+        }, 
+        "2009": {
+          "count": 42, 
+          "sum": 84378, 
+          "average": 2009.0
+        }, 
+        "2011": {
+          "count": 49, 
+          "sum": 98539, 
+          "average": 2011.0
+        }, 
+        "2010": {
+          "count": 49, 
+          "sum": 98490, 
+          "average": 2010.0
+        }, 
+        "2013": {
+          "count": 47, 
+          "sum": 94611, 
+          "average": 2013.0
+        }, 
+        "2012": {
+          "count": 47, 
+          "sum": 94564, 
+          "average": 2012.0
         }
       }, 
       "school_scores.[0].Score Ranges.Between 700 to 800.Verbal.Males": {

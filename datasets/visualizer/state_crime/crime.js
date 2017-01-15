@@ -47772,7 +47772,9 @@ crime = [
     "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of people living in this state at the time the report was created.", 
+    "index": false, 
+    "name": "crime.[0].Data.Population", 
     "data": [
       3266740, 
       3302000, 
@@ -50420,12 +50422,13 @@ crime = [
       567356, 
       576412
     ], 
-    "name": "crime.[0].Data.Population", 
     "pretty": "Data: Population", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "text", 
+    "comment": "The long name of the state that this report was made for.", 
+    "index": true, 
+    "name": "crime.[0].State", 
     "data": [
       "Alabama", 
       "Alabama", 
@@ -53073,12 +53076,13 @@ crime = [
       "Wyoming", 
       "Wyoming"
     ], 
-    "name": "crime.[0].State", 
     "pretty": "State: State", 
-    "index": true
+    "type": "text"
   }, 
   {
-    "type": "number", 
+    "comment": "The year that this report was made in.", 
+    "index": true, 
+    "name": "crime.[0].Year", 
     "data": [
       1960, 
       1961, 
@@ -55726,8 +55730,7 @@ crime = [
       2011, 
       2012
     ], 
-    "name": "crime.[0].Year", 
     "pretty": "Year: Year", 
-    "index": true
+    "type": "number"
   }
 ]
