@@ -213,9 +213,9 @@ var COLOR_SCHEMES = [
     
 var mainModel = {
     'aggregators': ko.observableArray([
+        {'name': 'Average', 'id': 'average'},
         {'name': 'Count', 'id': 'count'},
-        {'name': 'Sum', 'id': 'sum'},
-        {'name': 'Average', 'id': 'average'}
+        {'name': 'Sum', 'id': 'sum'}
     ]),
     'schemes': COLOR_SCHEMES,
     'settings': {
@@ -242,7 +242,7 @@ var mainModel = {
     ]),
     'structures':  ko.observableArray([
     
-        {'name': "crime", 'row': "report", 'order': "Index", 'data': crime}
+        {'name': "crime", 'row': "report", 'order': "", 'data': crime}
     
     ])
 };
@@ -330,6 +330,8 @@ $(document).ready(function () {
         captureImage();
         $("#capture-dialog").modal('show');
     });
+    
+    $(".hide-on-load").hide();
 
     ko.applyBindings(mainModel);
     
@@ -696,7 +698,8 @@ $(document).ready(function () {
                   mainModel.selected.category().pretty : 
                   mainModel.selected.chart().id == 'line' ? 
                   //(mainModel.selected.dataset().order) : 
-                  (mainModel.selected.bar_dataset().data.filter( cur => cur.name != mainModel.selected.filter() ).reduce( (pre, cur) => pre+" / "+cur.pretty, "").substring(3)) :
+                  (mainModel.selected.dataset().order !== "" ? mainModel.selected.dataset().order :
+                  (mainModel.selected.bar_dataset().data.filter( cur => cur.name != mainModel.selected.filter() ).reduce( (pre, cur) => pre+" / "+cur.pretty, "").substring(3))) :
                   mainModel.selected.first().pretty;
         var y_axis_label = mainModel.selected.chart().id == 'hist' ? 
                   'Number of '+mainModel.selected.dataset().row+"s": 
@@ -795,8 +798,15 @@ $(document).ready(function () {
     <span class="text-muted">Tags: crime, burglary, larceny, motor, property, violent, assault, murder, rape, robbery</span><br>
 </div>
 
-<div class='row hide-on-load'>
-    Please be patient while the page loads! This can take a little the first time.
+<div class="alert hide-on-load alert-warning row" role="alert">
+    <p style='padding-bottom:10px'>
+    <b>Please Wait!</b> The page is loading; this can take a little while the first time.
+  </p>
+  <div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only">45% Complete</span>
+  </div>
+  </div>
 </div>
 
 <div class='modal fade' id="capture-dialog" style='display:none'>
@@ -823,7 +833,7 @@ $(document).ready(function () {
     <h3 id="overview">Overview</h3>
     
     <p>
-    From the Unified Crime Reporting Statistics and under the collaboration of the U.S. Department of Justice and the Federal Bureau of Investigation information crime statistics are available for public review.  The following data set has information on the crime rates and totals for states across the United States for a wide range of years.  The crime reports are divided into two main categories: property and violent crime.  Property crime refers to burglary, larceny, and motor related crime while violent crime refers to assault, murder, rape, and robbery.
+    From the Unified Crime Reporting Statistics and under the collaboration of the U.S. Department of Justice and the Federal Bureau of Investigation information crime statistics are available for public review.  The following data set has information on the crime rates and totals for states across the United States for a wide range of years.  The crime reports are divided into two main categories: property and violent crime.  Property crime refers to burglary, larceny, and motor related crime while violent crime refers to assault, murder, rape, and robbery. These reports go from 1960 to 2012.
 
     </p>
     

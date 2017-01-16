@@ -213,9 +213,9 @@ var COLOR_SCHEMES = [
     
 var mainModel = {
     'aggregators': ko.observableArray([
+        {'name': 'Average', 'id': 'average'},
         {'name': 'Count', 'id': 'count'},
-        {'name': 'Sum', 'id': 'sum'},
-        {'name': 'Average', 'id': 'average'}
+        {'name': 'Sum', 'id': 'sum'}
     ]),
     'schemes': COLOR_SCHEMES,
     'settings': {
@@ -242,7 +242,7 @@ var mainModel = {
     ]),
     'structures':  ko.observableArray([
     
-        {'name': "demographics", 'row': "report", 'order': "Index", 'data': demographics}
+        {'name': "demographics", 'row': "report", 'order': "", 'data': demographics}
     
     ])
 };
@@ -698,7 +698,8 @@ $(document).ready(function () {
                   mainModel.selected.category().pretty : 
                   mainModel.selected.chart().id == 'line' ? 
                   //(mainModel.selected.dataset().order) : 
-                  (mainModel.selected.bar_dataset().data.filter( cur => cur.name != mainModel.selected.filter() ).reduce( (pre, cur) => pre+" / "+cur.pretty, "").substring(3)) :
+                  (mainModel.selected.dataset().order !== "" ? mainModel.selected.dataset().order :
+                  (mainModel.selected.bar_dataset().data.filter( cur => cur.name != mainModel.selected.filter() ).reduce( (pre, cur) => pre+" / "+cur.pretty, "").substring(3))) :
                   mainModel.selected.first().pretty;
         var y_axis_label = mainModel.selected.chart().id == 'hist' ? 
                   'Number of '+mainModel.selected.dataset().row+"s": 
@@ -832,7 +833,7 @@ $(document).ready(function () {
     <h3 id="overview">Overview</h3>
     
     <p>
-    The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau.  Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.
+    The following data set is summarized information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau. However, this data is not available for these years; just the summarized data as of 2015. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.
 
     </p>
     

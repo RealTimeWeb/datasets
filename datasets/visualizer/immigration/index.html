@@ -213,9 +213,9 @@ var COLOR_SCHEMES = [
     
 var mainModel = {
     'aggregators': ko.observableArray([
+        {'name': 'Average', 'id': 'average'},
         {'name': 'Count', 'id': 'count'},
-        {'name': 'Sum', 'id': 'sum'},
-        {'name': 'Average', 'id': 'average'}
+        {'name': 'Sum', 'id': 'sum'}
     ]),
     'schemes': COLOR_SCHEMES,
     'settings': {
@@ -242,7 +242,7 @@ var mainModel = {
     ]),
     'structures':  ko.observableArray([
     
-        {'name': "immigration", 'row': "record", 'order': "Index", 'data': immigration}
+        {'name': "immigration", 'row': "record", 'order': "", 'data': immigration}
     
     ])
 };
@@ -698,7 +698,8 @@ $(document).ready(function () {
                   mainModel.selected.category().pretty : 
                   mainModel.selected.chart().id == 'line' ? 
                   //(mainModel.selected.dataset().order) : 
-                  (mainModel.selected.bar_dataset().data.filter( cur => cur.name != mainModel.selected.filter() ).reduce( (pre, cur) => pre+" / "+cur.pretty, "").substring(3)) :
+                  (mainModel.selected.dataset().order !== "" ? mainModel.selected.dataset().order :
+                  (mainModel.selected.bar_dataset().data.filter( cur => cur.name != mainModel.selected.filter() ).reduce( (pre, cur) => pre+" / "+cur.pretty, "").substring(3))) :
                   mainModel.selected.first().pretty;
         var y_axis_label = mainModel.selected.chart().id == 'hist' ? 
                   'Number of '+mainModel.selected.dataset().row+"s": 
@@ -788,7 +789,7 @@ $(document).ready(function () {
 
 <div class="page-header">
     
-    <img class="img-rounded pull-right" src="immigration.png" alt="Immigration" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="specs/immigration/immigration_splash.png" alt="specs/immigration/immigration_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Visualize Immigration</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>

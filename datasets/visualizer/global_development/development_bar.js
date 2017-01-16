@@ -65,9 +65,9 @@ development_bar = [
           "average": 17200.0
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 152825857.0, 
-          "average": 4775808.03125
+          "count": 15, 
+          "sum": 71697495.0, 
+          "average": 4779833.0
         }, 
         "Argentina": {
           "count": 34, 
@@ -90,9 +90,9 @@ development_bar = [
           "average": 273600.0
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 411872905.0, 
-          "average": 34322742.083333336
+          "count": 10, 
+          "sum": 343228915.0, 
+          "average": 34322891.5
         }, 
         "Bahrain": {
           "count": 31, 
@@ -139,10 +139,10 @@ development_bar = [
           "sum": 2600640.0, 
           "average": 96320.0
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 9900.0, 
-          "average": 300.0
+        "Netherlands": {
+          "count": 34, 
+          "sum": 1147710.0, 
+          "average": 33756.17647058824
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -465,9 +465,9 @@ development_bar = [
           "average": 18270.0
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 13764990.0, 
-          "average": 404852.64705882355
+          "count": 30, 
+          "sum": 12145500.0, 
+          "average": 404850.0
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -550,13 +550,13 @@ development_bar = [
           "average": 2594822.470588235
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 2342260.0, 
+          "count": 4, 
+          "sum": 275560.0, 
           "average": 68890.0
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 26209920.0, 
+          "count": 30, 
+          "sum": 23126400.0, 
           "average": 770880.0
         }, 
         "Nigeria": {
@@ -615,14 +615,14 @@ development_bar = [
           "average": 22810.0
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 489351797.0, 
-          "average": 14392699.911764706
+          "count": 4, 
+          "sum": 57571712.0, 
+          "average": 14392928.0
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 2448520.0, 
-          "average": 72015.29411764706
+          "count": 30, 
+          "sum": 2159800.0, 
+          "average": 71993.33333333333
         }, 
         "Nepal": {
           "count": 34, 
@@ -779,11 +779,6 @@ development_bar = [
           "sum": 10880.0, 
           "average": 320.0
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 1147710.0, 
-          "average": 33756.17647058824
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 5304000.0, 
@@ -899,11 +894,6 @@ development_bar = [
           "sum": 4091560.0, 
           "average": 120340.0
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 63274.0, 
-          "average": 1861.0
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 8225620.0, 
@@ -920,941 +910,14 @@ development_bar = [
           "average": 128900.0
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 13508200.0, 
+          "count": 4, 
+          "sum": 1589200.0, 
           "average": 397300.0
-        }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 15301710.0, 
-          "average": 566730.0
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
-          "count": 34, 
-          "sum": 673032269.0, 
-          "average": 19795066.73529412
-        }
-      }, 
-      "development.[0].Data.Urban Development.Urban Population Growth": {
-        "Canada": {
-          "count": 5, 
-          "sum": 6.6293468421259005, 
-          "average": 1.3258693684251799
-        }, 
-        "Sao Tome and Principe": {
-          "count": 34, 
-          "sum": 139.53096670602542, 
-          "average": 4.103851961941925
-        }, 
-        "Lao PDR": {
-          "count": 34, 
-          "sum": 183.6675032571486, 
-          "average": 5.401985389916136
-        }, 
-        "Arab World": {
-          "count": 34, 
-          "sum": 113.0190883496424, 
-          "average": 3.32409083381301
-        }, 
-        "Latin America & Caribbean (all income levels)": {
-          "count": 34, 
-          "sum": 79.89146643323247, 
-          "average": 2.349749012742131
-        }, 
-        "Cambodia": {
-          "count": 31, 
-          "sum": 124.53734259355159, 
-          "average": 4.01733363205005
-        }, 
-        "Ethiopia": {
-          "count": 34, 
-          "sum": 158.55100681980056, 
-          "average": 4.663264906464724
-        }, 
-        "Aruba": {
-          "count": 34, 
-          "sum": 35.689893466381776, 
-          "average": 1.0497027490112292
-        }, 
-        "Sri Lanka": {
-          "count": 34, 
-          "sum": 31.871193684028555, 
-          "average": 0.9373880495302519
-        }, 
-        "Swaziland": {
-          "count": 34, 
-          "sum": 103.74742600960833, 
-          "average": 3.051394882635539
-        }, 
-        "South Asia": {
-          "count": 32, 
-          "sum": 100.49729351592151, 
-          "average": 3.1405404223725477
-        }, 
-        "Argentina": {
-          "count": 34, 
-          "sum": 51.4739398676895, 
-          "average": 1.513939407873221
-        }, 
-        "Bolivia": {
-          "count": 34, 
-          "sum": 115.4974405091402, 
-          "average": 3.396983544386476
-        }, 
-        "Cameroon": {
-          "count": 34, 
-          "sum": 149.98973871058908, 
-          "average": 4.41146290325262
-        }, 
-        "Burkina Faso": {
-          "count": 34, 
-          "sum": 219.59242117207657, 
-          "average": 6.458600622708135
-        }, 
-        "OECD members": {
-          "count": 12, 
-          "sum": 14.39769557609987, 
-          "average": 1.1998079646749893
-        }, 
-        "Bahrain": {
-          "count": 31, 
-          "sum": 119.95627843685597, 
-          "average": 3.8695573689308382
-        }, 
-        "Saudi Arabia": {
-          "count": 30, 
-          "sum": 136.66712418575915, 
-          "average": 4.55557080619197
-        }, 
-        "Middle East & North Africa (all income levels)": {
-          "count": 34, 
-          "sum": 110.45126581692669, 
-          "average": 3.248566641674315
-        }, 
-        "Guatemala": {
-          "count": 34, 
-          "sum": 111.80006035504896, 
-          "average": 3.288237069266146
-        }, 
-        "Guinea": {
-          "count": 34, 
-          "sum": 144.49506511877811, 
-          "average": 4.24985485643465
-        }, 
-        "Germany": {
-          "count": 34, 
-          "sum": 5.601547462398306, 
-          "average": 0.16475139595289137
-        }, 
-        "St. Lucia": {
-          "count": 34, 
-          "sum": 11.381665307484596, 
-          "average": 0.33475486198484095
-        }, 
-        "Spain": {
-          "count": 34, 
-          "sum": 33.57205915678361, 
-          "average": 0.9874135046112824
-        }, 
-        "Liberia": {
-          "count": 27, 
-          "sum": 127.69974818736294, 
-          "average": 4.729620303235663
-        }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 149.83921837768585, 
-          "average": 4.54058237508139
-        }, 
-        "East Asia & Pacific (all income levels)": {
-          "count": 25, 
-          "sum": 86.70483708694283, 
-          "average": 3.4681934834777137
-        }, 
-        "Oman": {
-          "count": 31, 
-          "sum": 148.09864379734978, 
-          "average": 4.777375606366122
-        }, 
-        "Tanzania": {
-          "count": 34, 
-          "sum": 177.10203063816752, 
-          "average": 5.208883254063751
-        }, 
-        "Cabo Verde": {
-          "count": 34, 
-          "sum": 151.26511691074066, 
-          "average": 4.44897402678649
-        }, 
-        "Gabon": {
-          "count": 33, 
-          "sum": 137.68336926622408, 
-          "average": 4.1722233110976985
-        }, 
-        "New Zealand": {
-          "count": 34, 
-          "sum": 56.03585055282589, 
-          "average": 1.6481132515537025
-        }, 
-        "European Union": {
-          "count": 34, 
-          "sum": 17.52995801471431, 
-          "average": 0.515587000432774
-        }, 
-        "Jamaica": {
-          "count": 34, 
-          "sum": 43.40623312964005, 
-          "average": 1.2766539155776484
-        }, 
-        "Albania": {
-          "count": 34, 
-          "sum": 57.72264735199608, 
-          "average": 1.697724922117532
-        }, 
-        "Korea Rep.": {
-          "count": 34, 
-          "sum": 73.57858873121333, 
-          "average": 2.164076139153334
-        }, 
-        "United Arab Emirates": {
-          "count": 25, 
-          "sum": 130.34809390282712, 
-          "average": 5.213923756113084
-        }, 
-        "Guam": {
-          "count": 32, 
-          "sum": 45.24655062708406, 
-          "average": 1.4139547070963772
-        }, 
-        "India": {
-          "count": 34, 
-          "sum": 96.29075274382593, 
-          "average": 2.832080963053704
-        }, 
-        "Yemen Rep.": {
-          "count": 29, 
-          "sum": 163.10808273076208, 
-          "average": 5.624416645888348
-        }, 
-        "Madagascar": {
-          "count": 34, 
-          "sum": 162.50932407660466, 
-          "average": 4.779686002253078
-        }, 
-        "Lesotho": {
-          "count": 34, 
-          "sum": 132.38261850752212, 
-          "average": 3.8936064266918256
-        }, 
-        "Kenya": {
-          "count": 34, 
-          "sum": 155.43027605927043, 
-          "average": 4.571478707625602
-        }, 
-        "Upper middle income": {
-          "count": 34, 
-          "sum": 122.02591943511831, 
-          "average": 3.5889976304446556
-        }, 
-        "Pacific island small states": {
-          "count": 34, 
-          "sum": 79.51409427148113, 
-          "average": 2.33864983151415
-        }, 
-        "Turkey": {
-          "count": 34, 
-          "sum": 108.22375346772417, 
-          "average": 3.1830515725801223
-        }, 
-        "Afghanistan": {
-          "count": 31, 
-          "sum": 103.40583123027531, 
-          "average": 3.3356719751701718
-        }, 
-        "Bangladesh": {
-          "count": 14, 
-          "sum": 53.32185193217522, 
-          "average": 3.808703709441087
-        }, 
-        "Solomon Islands": {
-          "count": 34, 
-          "sum": 168.67583369971453, 
-          "average": 4.961053932344544
-        }, 
-        "Mongolia": {
-          "count": 34, 
-          "sum": 86.84160507716517, 
-          "average": 2.5541648552107405
-        }, 
-        "France": {
-          "count": 34, 
-          "sum": 25.63558269204788, 
-          "average": 0.7539877262367023
-        }, 
-        "Syrian Arab Republic": {
-          "count": 34, 
-          "sum": 118.89993506754944, 
-          "average": 3.4970569137514547
-        }, 
-        "Rwanda": {
-          "count": 22, 
-          "sum": 138.6204153573245, 
-          "average": 6.300927970787478
-        }, 
-        "Somalia": {
-          "count": 33, 
-          "sum": 93.53487554885768, 
-          "average": 2.834390168147202
-        }, 
-        "Peru": {
-          "count": 34, 
-          "sum": 80.36237267911761, 
-          "average": 2.363599196444636
-        }, 
-        "Vanuatu": {
-          "count": 34, 
-          "sum": 139.76894841798028, 
-          "average": 4.110851424058245
-        }, 
-        "Norway": {
-          "count": 34, 
-          "sum": 58.96044518711558, 
-          "average": 1.7341307407975177
-        }, 
-        "Cote d'Ivoire": {
-          "count": 34, 
-          "sum": 132.110666795277, 
-          "average": 3.8856078469199122
-        }, 
-        "Benin": {
-          "count": 34, 
-          "sum": 156.0963083105528, 
-          "average": 4.5910678914868495
-        }, 
-        "Other small states": {
-          "count": 34, 
-          "sum": 137.26172034662403, 
-          "average": 4.03710942195953
-        }, 
-        "Venezuela RB": {
-          "count": 34, 
-          "sum": 88.19042727863206, 
-          "average": 2.5938360964303553
-        }, 
-        "Cuba": {
-          "count": 34, 
-          "sum": 29.163995838169626, 
-          "average": 0.8577645834755775
-        }, 
-        "Togo": {
-          "count": 34, 
-          "sum": 142.1304452611438, 
-          "average": 4.180307213563052
-        }, 
-        "China": {
-          "count": 33, 
-          "sum": 137.91888746373087, 
-          "average": 4.179360226173664
-        }, 
-        "Dominican Republic": {
-          "count": 34, 
-          "sum": 105.29894938578846, 
-          "average": 3.0970279231114257
-        }, 
-        "Congo Dem. Rep.": {
-          "count": 34, 
-          "sum": 140.1328102919085, 
-          "average": 4.121553243879662
-        }, 
-        "French Polynesia": {
-          "count": 34, 
-          "sum": 59.91270593003693, 
-          "average": 1.7621384097069681
-        }, 
-        "Egypt Arab Rep.": {
-          "count": 34, 
-          "sum": 61.06946035625789, 
-          "average": 1.7961605987134677
-        }, 
-        "Ghana": {
-          "count": 34, 
-          "sum": 142.38236456612498, 
-          "average": 4.187716604886029
-        }, 
-        "Tonga": {
-          "count": 34, 
-          "sum": 26.444680778947603, 
-          "average": 0.7777847287925764
-        }, 
-        "Finland": {
-          "count": 32, 
-          "sum": 29.507665359124427, 
-          "average": 0.9221145424726385
-        }, 
-        "Latin America & Caribbean (developing only)": {
-          "count": 34, 
-          "sum": 81.48452387490778, 
-          "average": 2.396603643379641
-        }, 
-        "Colombia": {
-          "count": 34, 
-          "sum": 83.70836671775639, 
-          "average": 2.4620107858163642
-        }, 
-        "Libya": {
-          "count": 32, 
-          "sum": 89.26598320781336, 
-          "average": 2.789561975244168
-        }, 
-        "Indonesia": {
-          "count": 34, 
-          "sum": 147.43120642322407, 
-          "average": 4.336211953624236
-        }, 
-        "Central African Republic": {
-          "count": 34, 
-          "sum": 90.69980258703683, 
-          "average": 2.667641252559906
-        }, 
-        "Iran Islamic Rep.": {
-          "count": 34, 
-          "sum": 114.59064418769269, 
-          "average": 3.3703130643439025
-        }, 
-        "North America": {
-          "count": 34, 
-          "sum": 44.28060291466941, 
-          "average": 1.302370673960865
-        }, 
-        "Sweden": {
-          "count": 34, 
-          "sum": 31.24054601999022, 
-          "average": 0.9188395888232418
-        }, 
-        "Vietnam": {
-          "count": 34, 
-          "sum": 105.26188513920323, 
-          "average": 3.09593779821186
-        }, 
-        "Mali": {
-          "count": 34, 
-          "sum": 158.79857137437315, 
-          "average": 4.670546216893327
-        }, 
-        "Bulgaria": {
-          "count": 34, 
-          "sum": 0.2634592309150794, 
-          "average": 0.007748800909266949
-        }, 
-        "Mauritius": {
-          "count": 34, 
-          "sum": 25.79588828474459, 
-          "average": 0.758702596610135
-        }, 
-        "Romania": {
-          "count": 34, 
-          "sum": 10.256333144261884, 
-          "average": 0.30165685718417296
-        }, 
-        "Angola": {
-          "count": 34, 
-          "sum": 186.43720778549178, 
-          "average": 5.483447287808581
-        }, 
-        "Central Europe and the Baltics": {
-          "count": 34, 
-          "sum": 8.710409311995416, 
-          "average": 0.2561885091763358
-        }, 
-        "Chad": {
-          "count": 34, 
-          "sum": 123.90762162870449, 
-          "average": 3.6443418126089555
-        }, 
-        "South Africa": {
-          "count": 34, 
-          "sum": 95.50861740596599, 
-          "average": 2.809076982528412
-        }, 
-        "St. Vincent and the Grenadines": {
-          "count": 34, 
-          "sum": 45.55885026005368, 
-          "average": 1.3399661841192252
-        }, 
-        "Fiji": {
-          "count": 34, 
-          "sum": 70.0671959468359, 
-          "average": 2.0607998807892915
-        }, 
-        "Caribbean small states": {
-          "count": 34, 
-          "sum": 38.123275804185816, 
-          "average": 1.121272817770171
-        }, 
-        "Brunei Darussalam": {
-          "count": 34, 
-          "sum": 105.38127272908116, 
-          "average": 3.099449197914151
-        }, 
-        "Malaysia": {
-          "count": 34, 
-          "sum": 138.42608796125188, 
-          "average": 4.071355528272114
-        }, 
-        "Austria": {
-          "count": 34, 
-          "sum": 11.613297364368998, 
-          "average": 0.3415675695402647
-        }, 
-        "High income: OECD": {
-          "count": 13, 
-          "sum": 12.398686629285805, 
-          "average": 0.9537451253296774
-        }, 
-        "Mozambique": {
-          "count": 34, 
-          "sum": 177.99792666576562, 
-          "average": 5.2352331372284
-        }, 
-        "Uganda": {
-          "count": 34, 
-          "sum": 185.4550925309709, 
-          "average": 5.454561545028556
-        }, 
-        "Hungary": {
-          "count": 34, 
-          "sum": 2.11326177099573, 
-          "average": 0.062154757970462646
-        }, 
-        "Niger": {
-          "count": 17, 
-          "sum": 75.58538065362386, 
-          "average": 4.446198861977874
-        }, 
-        "United States": {
-          "count": 34, 
-          "sum": 43.970463717867574, 
-          "average": 1.2932489328784582
-        }, 
-        "Brazil": {
-          "count": 34, 
-          "sum": 132.79394336049745, 
-          "average": 3.9057042164852174
-        }, 
-        "Virgin Islands (U.S.)": {
-          "count": 34, 
-          "sum": 28.495369414335396, 
-          "average": 0.8380991004216293
-        }, 
-        "Kuwait": {
-          "count": 27, 
-          "sum": 80.5750859307528, 
-          "average": 2.9842624418797334
-        }, 
-        "Panama": {
-          "count": 31, 
-          "sum": 90.74055751489186, 
-          "average": 2.9271147585448984
-        }, 
-        "Guyana": {
-          "count": 34, 
-          "sum": 32.61625206758486, 
-          "average": 0.9593015313995547
-        }, 
-        "Costa Rica": {
-          "count": 34, 
-          "sum": 132.76010056905253, 
-          "average": 3.9047088402662506
-        }, 
-        "Euro area": {
-          "count": 34, 
-          "sum": 19.79930935494133, 
-          "average": 0.5823326280865097
-        }, 
-        "Ireland": {
-          "count": 34, 
-          "sum": 45.28018887151364, 
-          "average": 1.3317702609268718
-        }, 
-        "Pakistan": {
-          "count": 34, 
-          "sum": 118.55860560352673, 
-          "average": 3.487017811868433
-        }, 
-        "Nigeria": {
-          "count": 34, 
-          "sum": 165.12207961898585, 
-          "average": 4.856531753499584
-        }, 
-        "Lower middle income": {
-          "count": 30, 
-          "sum": 93.83007680456056, 
-          "average": 3.1276692268186848
-        }, 
-        "Ecuador": {
-          "count": 34, 
-          "sum": 105.96565862037374, 
-          "average": 3.1166370182462866
-        }, 
-        "Algeria": {
-          "count": 34, 
-          "sum": 124.10825308051142, 
-          "average": 3.650242737662101
-        }, 
-        "El Salvador": {
-          "count": 34, 
-          "sum": 102.27734568965597, 
-          "average": 3.008157226166352
-        }, 
-        "Korea Dem. Rep.": {
-          "count": 34, 
-          "sum": 44.05729453891798, 
-          "average": 1.2958027805564112
-        }, 
-        "Chile": {
-          "count": 34, 
-          "sum": 57.81681279950233, 
-          "average": 1.7004944941030098
-        }, 
-        "Puerto Rico": {
-          "count": 24, 
-          "sum": 10.187835375142987, 
-          "average": 0.42449314063095783
-        }, 
-        "Thailand": {
-          "count": 34, 
-          "sum": 123.79089153935014, 
-          "average": 3.6409085746867693
-        }, 
-        "Haiti": {
-          "count": 34, 
-          "sum": 139.0114311873345, 
-          "average": 4.088571505509839
-        }, 
-        "Belize": {
-          "count": 34, 
-          "sum": 73.61549632417561, 
-          "average": 2.165161656593401
-        }, 
-        "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 125.75316559197499, 
-          "average": 3.6986225174110294
-        }, 
-        "Sierra Leone": {
-          "count": 34, 
-          "sum": 97.39358529486388, 
-          "average": 2.86451721455482
-        }, 
-        "Nepal": {
-          "count": 34, 
-          "sum": 178.11261006407418, 
-          "average": 5.2386061783551225
-        }, 
-        "East Asia & Pacific (developing only)": {
-          "count": 30, 
-          "sum": 123.17798681078625, 
-          "average": 4.105932893692875
-        }, 
-        "Denmark": {
-          "count": 34, 
-          "sum": 13.785169141303557, 
-          "average": 0.40544615121481054
-        }, 
-        "Philippines": {
-          "count": 34, 
-          "sum": 96.9392566489377, 
-          "average": 2.8511546073216976
-        }, 
-        "Morocco": {
-          "count": 34, 
-          "sum": 93.12491359245689, 
-          "average": 2.7389680468369675
-        }, 
-        "Namibia": {
-          "count": 34, 
-          "sum": 142.3153795027581, 
-          "average": 4.185746455963474
-        }, 
-        "Congo Rep.": {
-          "count": 34, 
-          "sum": 127.0891811651982, 
-          "average": 3.737917093094065
-        }, 
-        "Guinea-Bissau": {
-          "count": 34, 
-          "sum": 177.73545174401502, 
-          "average": 5.227513286588678
-        }, 
-        "Kiribati": {
-          "count": 34, 
-          "sum": 99.45824391834898, 
-          "average": 2.9252424681867346
-        }, 
-        "Switzerland": {
-          "count": 34, 
-          "sum": 49.541509946163565, 
-          "average": 1.4571032337106937
-        }, 
-        "Grenada": {
-          "count": 34, 
-          "sum": 25.175580675869533, 
-          "average": 0.7404582551726334
-        }, 
-        "Iraq": {
-          "count": 34, 
-          "sum": 150.37831928344764, 
-          "average": 4.422891743630814
-        }, 
-        "Portugal": {
-          "count": 34, 
-          "sum": 48.143723271276365, 
-          "average": 1.4159918609198934
-        }, 
-        "Uruguay": {
-          "count": 34, 
-          "sum": 27.964910377094622, 
-          "average": 0.8224973640321946
-        }, 
-        "Gambia The": {
-          "count": 34, 
-          "sum": 191.684018874729, 
-          "average": 5.637765261021443
-        }, 
-        "Equatorial Guinea": {
-          "count": 32, 
-          "sum": 139.1101032711142, 
-          "average": 4.347190727222318
-        }, 
-        "Lebanon": {
-          "count": 34, 
-          "sum": 73.65798762385626, 
-          "average": 2.166411400701655
-        }, 
-        "Djibouti": {
-          "count": 33, 
-          "sum": 101.86501115494063, 
-          "average": 3.086818519846685
-        }, 
-        "Antigua and Barbuda": {
-          "count": 32, 
-          "sum": -5.911104763316278, 
-          "average": -0.18472202385363365
-        }, 
-        "Low income": {
-          "count": 34, 
-          "sum": 137.89530305058403, 
-          "average": 4.055744207370118
-        }, 
-        "High income": {
-          "count": 11, 
-          "sum": 12.138832409694672, 
-          "average": 1.1035302190631517
-        }, 
-        "Burundi": {
-          "count": 34, 
-          "sum": 194.9290420650361, 
-          "average": 5.733207119559886
-        }, 
-        "Least developed countries: UN classification": {
-          "count": 34, 
-          "sum": 151.41605815385853, 
-          "average": 4.453413475113487
-        }, 
-        "Cyprus": {
-          "count": 34, 
-          "sum": 73.43589365529824, 
-          "average": 2.1598792251558305
-        }, 
-        "Barbados": {
-          "count": 34, 
-          "sum": -7.762889745950997, 
-          "average": -0.22832028664561765
-        }, 
-        "Qatar": {
-          "count": 20, 
-          "sum": 78.80721093157705, 
-          "average": 3.9403605465788525
-        }, 
-        "Italy": {
-          "count": 34, 
-          "sum": 9.290481767284039, 
-          "average": 0.2732494637436482
-        }, 
-        "Bhutan": {
-          "count": 27, 
-          "sum": 204.26439552180608, 
-          "average": 7.565347982289115
-        }, 
-        "Sudan": {
-          "count": 34, 
-          "sum": 155.19019539016801, 
-          "average": 4.56441751147553
-        }, 
-        "Sub-Saharan Africa (developing only)": {
-          "count": 34, 
-          "sum": 148.17053712838805, 
-          "average": 4.357956974364354
-        }, 
-        "Malta": {
-          "count": 34, 
-          "sum": 35.83499994299415, 
-          "average": 1.0539705865586515
-        }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 50.685670099793555, 
-          "average": 1.4907550029351047
-        }, 
-        "Suriname": {
-          "count": 34, 
-          "sum": 47.36592635506646, 
-          "average": 1.3931154810313668
-        }, 
-        "Middle East & North Africa (developing only)": {
-          "count": 34, 
-          "sum": 139.65747239209517, 
-          "average": 4.1075727174145635
-        }, 
-        "Israel": {
-          "count": 34, 
-          "sum": 80.83045100498252, 
-          "average": 2.377366206028898
-        }, 
-        "Bahamas The": {
-          "count": 34, 
-          "sum": 75.27787608982753, 
-          "average": 2.214055179112574
-        }, 
-        "Iceland": {
-          "count": 34, 
-          "sum": 42.92862653984399, 
-          "average": 1.2626066629365882
-        }, 
-        "Zambia": {
-          "count": 34, 
-          "sum": 98.86661226039807, 
-          "average": 2.907841537070532
-        }, 
-        "Sub-Saharan Africa (all income levels)": {
-          "count": 34, 
-          "sum": 148.18218378839785, 
-          "average": 4.358299523188171
-        }, 
-        "Senegal": {
-          "count": 34, 
-          "sum": 115.23331027600612, 
-          "average": 3.389215008117827
-        }, 
-        "Papua New Guinea": {
-          "count": 34, 
-          "sum": 88.57396884610121, 
-          "average": 2.605116730767683
-        }, 
-        "Malawi": {
-          "count": 34, 
-          "sum": 160.2160562322317, 
-          "average": 4.712236948006812
-        }, 
-        "Zimbabwe": {
-          "count": 34, 
-          "sum": 113.33553110834526, 
-          "average": 3.3333979737748605
-        }, 
-        "Jordan": {
-          "count": 33, 
-          "sum": 135.91023716233997, 
-          "average": 4.118492035222422
-        }, 
-        "Poland": {
-          "count": 34, 
-          "sum": 15.606738283273362, 
-          "average": 0.4590217142139226
-        }, 
-        "Mauritania": {
-          "count": 34, 
-          "sum": 181.99331231952652, 
-          "average": 5.352744479986073
-        }, 
-        "Small states": {
-          "count": 34, 
-          "sum": 101.84570385259006, 
-          "average": 2.9954618780173554
-        }, 
-        "New Caledonia": {
-          "count": 34, 
-          "sum": 80.1313404021965, 
-          "average": 2.356804129476369
-        }, 
-        "Trinidad and Tobago": {
-          "count": 34, 
-          "sum": 0.7192464873009039, 
-          "average": 0.021154308450026586
-        }, 
-        "Japan": {
-          "count": 23, 
-          "sum": 15.169396993650867, 
-          "average": 0.6595389997239508
-        }, 
-        "Honduras": {
-          "count": 34, 
-          "sum": 129.36053678176333, 
-          "average": 3.804721670051862
-        }, 
-        "Myanmar": {
-          "count": 34, 
-          "sum": 77.73393876593214, 
-          "average": 2.2862923166450635
-        }, 
-        "Mexico": {
-          "count": 34, 
-          "sum": 77.81863990107044, 
-          "average": 2.2887835265020713
-        }, 
-        "Tunisia": {
-          "count": 34, 
-          "sum": 87.18319082835717, 
-          "average": 2.5642114949516817
-        }, 
-        "Nicaragua": {
-          "count": 34, 
-          "sum": 82.66595294730905, 
-          "average": 2.431351557273796
         }, 
         "Comoros": {
           "count": 34, 
-          "sum": 112.48243859462619, 
-          "average": 3.308307017489006
-        }, 
-        "United Kingdom": {
-          "count": 34, 
-          "sum": 17.114592461164058, 
-          "average": 0.5033703665048251
-        }, 
-        "High income: nonOECD": {
-          "count": 34, 
-          "sum": 36.76932659413794, 
-          "average": 1.0814507821805275
-        }, 
-        "Greece": {
-          "count": 34, 
-          "sum": 28.09368444805931, 
-          "average": 0.8262848367076269
-        }, 
-        "Paraguay": {
-          "count": 34, 
-          "sum": 116.49396839335115, 
-          "average": 3.4262931880397405
-        }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 120.36091596205397, 
-          "average": 4.457811702298295
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
-          "count": 34, 
-          "sum": 147.537811357058, 
-          "average": 4.339347392854647
+          "sum": 63274.0, 
+          "average": 1861.0
         }
       }, 
       "development.[0].Data.Urban Development.Population Density": {
@@ -1909,9 +972,9 @@ development_bar = [
           "average": 54.57586525307798
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 8349.051583479275, 
-          "average": 260.90786198372734
+          "count": 15, 
+          "sum": 3268.5460642662624, 
+          "average": 217.90307095108412
         }, 
         "Argentina": {
           "count": 34, 
@@ -1934,9 +997,9 @@ development_bar = [
           "average": 39.121382438940486
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 357.3477684166284, 
-          "average": 29.778980701385702
+          "count": 10, 
+          "sum": 295.43531428918044, 
+          "average": 29.543531428918037
         }, 
         "Bahrain": {
           "count": 31, 
@@ -1983,10 +1046,10 @@ development_bar = [
           "sum": 780.6950062292358, 
           "average": 28.91462986034206
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 26641.989999999998, 
-          "average": 807.3330303030303
+        "Netherlands": {
+          "count": 34, 
+          "sum": 15570.32908392264, 
+          "average": 457.95085540948946
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -2309,9 +1372,9 @@ development_bar = [
           "average": 42.0396294149844
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 522.2094169877153, 
-          "average": 15.359100499638688
+          "count": 30, 
+          "sum": 467.95053970606375, 
+          "average": 15.59835132353546
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -2394,14 +1457,14 @@ development_bar = [
           "average": 121.24130518630882
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 1884.676368123095, 
-          "average": 55.43165788597338
+          "count": 4, 
+          "sum": 199.23573813325578, 
+          "average": 49.808934533313945
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 5660.073286374014, 
-          "average": 166.4727437168828
+          "count": 30, 
+          "sum": 5237.593669572437, 
+          "average": 174.58645565241457
         }, 
         "Nigeria": {
           "count": 34, 
@@ -2459,14 +1522,14 @@ development_bar = [
           "average": 9.645601774247618
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 712.5054250946143, 
-          "average": 20.95604191454748
+          "count": 4, 
+          "sum": 55.837171283007905, 
+          "average": 13.959292820751974
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 2024.8468118465505, 
-          "average": 59.55431799548679
+          "count": 30, 
+          "sum": 1846.5235644095876, 
+          "average": 61.5507854803196
         }, 
         "Nepal": {
           "count": 34, 
@@ -2623,11 +1686,6 @@ development_bar = [
           "sum": 39363.39375, 
           "average": 1157.746875
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 15570.32908392264, 
-          "average": 457.95085540948946
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 96.25958333333335, 
@@ -2743,11 +1801,6 @@ development_bar = [
           "sum": 1309.7234917733092, 
           "average": 38.52127916980321
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 8893.931219774317, 
-          "average": 261.58621234630345
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 8245.794097466212, 
@@ -2764,19 +1817,14 @@ development_bar = [
           "average": 81.7262889608908
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 416.1840599043544, 
-          "average": 12.240707644245717
+          "count": 4, 
+          "sum": 32.70084067455324, 
+          "average": 8.17521016863831
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 78.53121592292628, 
-          "average": 2.9085635527009734
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 741.23968242289, 
-          "average": 21.801167130085002
+          "sum": 8893.931219774317, 
+          "average": 261.58621234630345
         }
       }, 
       "development.[0].Data.Health.Death Rate": {
@@ -2831,9 +1879,9 @@ development_bar = [
           "average": 12.595205882352943
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 313.8955723080894, 
-          "average": 9.809236634627796
+          "count": 15, 
+          "sum": 169.416288989433, 
+          "average": 11.294419265962201
         }, 
         "Argentina": {
           "count": 34, 
@@ -2856,9 +1904,9 @@ development_bar = [
           "average": 15.858558823529412
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 105.47048195132118, 
-          "average": 8.789206829276765
+          "count": 10, 
+          "sum": 88.22896565956816, 
+          "average": 8.822896565956817
         }, 
         "Bahrain": {
           "count": 31, 
@@ -2905,10 +1953,10 @@ development_bar = [
           "sum": 401.25000000000006, 
           "average": 14.86111111111111
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 256.74, 
-          "average": 7.78
+        "Netherlands": {
+          "count": 34, 
+          "sum": 288.3, 
+          "average": 8.479411764705883
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -3231,9 +2279,9 @@ development_bar = [
           "average": 6.4515
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 249.1483911705758, 
-          "average": 7.327893857958111
+          "count": 30, 
+          "sum": 219.31149853425, 
+          "average": 7.310383284474999
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -3316,14 +2364,14 @@ development_bar = [
           "average": 9.753283243440723
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 279.40000000000003, 
-          "average": 8.217647058823529
+          "count": 4, 
+          "sum": 38.6, 
+          "average": 9.65
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 310.4290000000001, 
-          "average": 9.130264705882354
+          "count": 30, 
+          "sum": 263.15100000000007, 
+          "average": 8.771700000000001
         }, 
         "Nigeria": {
           "count": 34, 
@@ -3381,14 +2429,14 @@ development_bar = [
           "average": 5.452647058823529
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 432.6883510468139, 
-          "average": 12.726127971965113
+          "count": 4, 
+          "sum": 62.2159591738745, 
+          "average": 15.553989793468626
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 791.28, 
-          "average": 23.27294117647059
+          "count": 30, 
+          "sum": 695.8040000000001, 
+          "average": 23.193466666666666
         }, 
         "Nepal": {
           "count": 34, 
@@ -3545,11 +2593,6 @@ development_bar = [
           "sum": 274.50000000000006, 
           "average": 8.073529411764707
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 288.3, 
-          "average": 8.479411764705883
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 247.889, 
@@ -3665,11 +2708,6 @@ development_bar = [
           "sum": 229.93200000000002, 
           "average": 6.7627058823529405
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 386.368, 
-          "average": 11.363764705882353
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 362.2, 
@@ -3686,19 +2724,14 @@ development_bar = [
           "average": 9.397058823529411
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 208.31199999999995, 
-          "average": 6.126823529411765
+          "count": 4, 
+          "sum": 27.412, 
+          "average": 6.853
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 337.93799999999993, 
-          "average": 12.516222222222222
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 508.5729755895232, 
-          "average": 14.958028693809506
+          "sum": 386.368, 
+          "average": 11.363764705882353
         }
       }, 
       "development.[0].Data.Rural Development.Arable Land Percent": {
@@ -3753,9 +2786,9 @@ development_bar = [
           "average": 10.03248974008207
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 1353.922090542651, 
-          "average": 42.31006532945784
+          "count": 15, 
+          "sum": 639.8509947941698, 
+          "average": 42.65673298627799
         }, 
         "Argentina": {
           "count": 34, 
@@ -3778,9 +2811,9 @@ development_bar = [
           "average": 14.540871173030608
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 152.5661450345848, 
-          "average": 12.713845419548733
+          "count": 10, 
+          "sum": 127.05128665032119, 
+          "average": 12.70512866503212
         }, 
         "Bahrain": {
           "count": 31, 
@@ -3827,10 +2860,10 @@ development_bar = [
           "sum": 110.54817275747506, 
           "average": 4.094376768795373
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 330.0, 
-          "average": 10.0
+        "Netherlands": {
+          "count": 34, 
+          "sum": 924.3722267161324, 
+          "average": 27.187418432827425
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -4153,9 +3186,9 @@ development_bar = [
           "average": 8.366013071895424
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 66.23430690622533, 
-          "average": 1.948067850183098
+          "count": 30, 
+          "sum": 58.25772508336421, 
+          "average": 1.9419241694454736
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -4238,14 +3271,14 @@ development_bar = [
           "average": 25.936215353763888
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 531.1220786761502, 
-          "average": 15.621237608122067
+          "count": 4, 
+          "sum": 63.608651473363295, 
+          "average": 15.902162868340824
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 916.6718555417189, 
-          "average": 26.960936927697606
+          "count": 30, 
+          "sum": 812.9021378165215, 
+          "average": 27.09673792721738
         }, 
         "Nigeria": {
           "count": 34, 
@@ -4303,14 +3336,14 @@ development_bar = [
           "average": 2.6162415865074657
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 186.4670358623758, 
-          "average": 5.484324584187525
+          "count": 4, 
+          "sum": 19.7384949315921, 
+          "average": 4.934623732898025
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 334.15787751447317, 
-          "average": 9.828172868072741
+          "count": 30, 
+          "sum": 309.0816791215666, 
+          "average": 10.302722637385555
         }, 
         "Nepal": {
           "count": 34, 
@@ -4467,11 +3500,6 @@ development_bar = [
           "sum": 1092.1875, 
           "average": 32.123161764705884
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 924.3722267161324, 
-          "average": 27.187418432827425
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 11.544871794871787, 
@@ -4587,11 +3615,6 @@ development_bar = [
           "sum": 442.77048362971567, 
           "average": 13.022661283226935
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 1435.7872111767865, 
-          "average": 42.229035622846666
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 889.31922456909, 
@@ -4608,19 +3631,14 @@ development_bar = [
           "average": 21.09202300004563
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 230.4882959979864, 
-          "average": 6.779067529352542
+          "count": 4, 
+          "sum": 16.71532846715328, 
+          "average": 4.17883211678832
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 14.176062675348051, 
-          "average": 0.5250393583462241
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 222.48088827389316, 
-          "average": 6.543555537467447
+          "sum": 1435.7872111767865, 
+          "average": 42.229035622846666
         }
       }, 
       "development.[0].Year": {
@@ -4675,9 +3693,9 @@ development_bar = [
           "average": 1996.5
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 63856, 
-          "average": 1995.5
+          "count": 15, 
+          "sum": 29805, 
+          "average": 1987.0
         }, 
         "Argentina": {
           "count": 34, 
@@ -4700,9 +3718,9 @@ development_bar = [
           "average": 1996.5
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 23826, 
-          "average": 1985.5
+          "count": 10, 
+          "sum": 19845, 
+          "average": 1984.5
         }, 
         "Bahrain": {
           "count": 31, 
@@ -4749,10 +3767,10 @@ development_bar = [
           "sum": 53919, 
           "average": 1997.0
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 65868, 
-          "average": 1996.0
+        "Netherlands": {
+          "count": 34, 
+          "sum": 67881, 
+          "average": 1996.5
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -5075,9 +4093,9 @@ development_bar = [
           "average": 1996.5
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 67881, 
-          "average": 1996.5
+          "count": 30, 
+          "sum": 59955, 
+          "average": 1998.5
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -5160,14 +4178,14 @@ development_bar = [
           "average": 1996.5
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 67881, 
-          "average": 1996.5
+          "count": 4, 
+          "sum": 7926, 
+          "average": 1981.5
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 67881, 
-          "average": 1996.5
+          "count": 30, 
+          "sum": 59955, 
+          "average": 1998.5
         }, 
         "Nigeria": {
           "count": 34, 
@@ -5225,14 +4243,14 @@ development_bar = [
           "average": 1996.5
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 67881, 
-          "average": 1996.5
+          "count": 4, 
+          "sum": 7926, 
+          "average": 1981.5
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 67881, 
-          "average": 1996.5
+          "count": 30, 
+          "sum": 59955, 
+          "average": 1998.5
         }, 
         "Nepal": {
           "count": 34, 
@@ -5389,11 +4407,6 @@ development_bar = [
           "sum": 67881, 
           "average": 1996.5
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 67881, 
-          "average": 1996.5
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 67881, 
@@ -5509,11 +4522,6 @@ development_bar = [
           "sum": 67881, 
           "average": 1996.5
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 67881, 
-          "average": 1996.5
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 67881, 
@@ -5530,941 +4538,1828 @@ development_bar = [
           "average": 1996.5
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 67881, 
-          "average": 1996.5
+          "count": 4, 
+          "sum": 7926, 
+          "average": 1981.5
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 53979, 
-          "average": 1999.2222222222222
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
           "sum": 67881, 
           "average": 1996.5
         }
       }, 
+      "development.[0].Data.Urban Development.Urban Population Percent Growth": {
+        "Canada": {
+          "count": 5, 
+          "sum": 6.6293468421259005, 
+          "average": 1.3258693684251799
+        }, 
+        "Sao Tome and Principe": {
+          "count": 34, 
+          "sum": 139.53096670602542, 
+          "average": 4.103851961941925
+        }, 
+        "Lao PDR": {
+          "count": 34, 
+          "sum": 183.6675032571486, 
+          "average": 5.401985389916136
+        }, 
+        "Arab World": {
+          "count": 34, 
+          "sum": 113.0190883496424, 
+          "average": 3.32409083381301
+        }, 
+        "Latin America & Caribbean (all income levels)": {
+          "count": 34, 
+          "sum": 79.89146643323247, 
+          "average": 2.349749012742131
+        }, 
+        "Cambodia": {
+          "count": 31, 
+          "sum": 124.53734259355159, 
+          "average": 4.01733363205005
+        }, 
+        "Ethiopia": {
+          "count": 34, 
+          "sum": 158.55100681980056, 
+          "average": 4.663264906464724
+        }, 
+        "Aruba": {
+          "count": 34, 
+          "sum": 35.689893466381776, 
+          "average": 1.0497027490112292
+        }, 
+        "Sri Lanka": {
+          "count": 34, 
+          "sum": 31.871193684028555, 
+          "average": 0.9373880495302519
+        }, 
+        "Swaziland": {
+          "count": 34, 
+          "sum": 103.74742600960833, 
+          "average": 3.051394882635539
+        }, 
+        "South Asia": {
+          "count": 15, 
+          "sum": 52.86735688301072, 
+          "average": 3.5244904588673815
+        }, 
+        "Argentina": {
+          "count": 34, 
+          "sum": 51.4739398676895, 
+          "average": 1.513939407873221
+        }, 
+        "Bolivia": {
+          "count": 34, 
+          "sum": 115.4974405091402, 
+          "average": 3.396983544386476
+        }, 
+        "Cameroon": {
+          "count": 34, 
+          "sum": 149.98973871058908, 
+          "average": 4.41146290325262
+        }, 
+        "Burkina Faso": {
+          "count": 34, 
+          "sum": 219.59242117207657, 
+          "average": 6.458600622708135
+        }, 
+        "OECD members": {
+          "count": 10, 
+          "sum": 11.94424839793291, 
+          "average": 1.194424839793291
+        }, 
+        "Bahrain": {
+          "count": 31, 
+          "sum": 119.95627843685597, 
+          "average": 3.8695573689308382
+        }, 
+        "Saudi Arabia": {
+          "count": 30, 
+          "sum": 136.66712418575915, 
+          "average": 4.55557080619197
+        }, 
+        "Middle East & North Africa (all income levels)": {
+          "count": 34, 
+          "sum": 110.45126581692669, 
+          "average": 3.248566641674315
+        }, 
+        "Guatemala": {
+          "count": 34, 
+          "sum": 111.80006035504896, 
+          "average": 3.288237069266146
+        }, 
+        "Guinea": {
+          "count": 34, 
+          "sum": 144.49506511877811, 
+          "average": 4.24985485643465
+        }, 
+        "Germany": {
+          "count": 34, 
+          "sum": 5.601547462398306, 
+          "average": 0.16475139595289137
+        }, 
+        "St. Lucia": {
+          "count": 34, 
+          "sum": 11.381665307484596, 
+          "average": 0.33475486198484095
+        }, 
+        "Spain": {
+          "count": 34, 
+          "sum": 33.57205915678361, 
+          "average": 0.9874135046112824
+        }, 
+        "Liberia": {
+          "count": 27, 
+          "sum": 127.69974818736294, 
+          "average": 4.729620303235663
+        }, 
+        "Netherlands": {
+          "count": 34, 
+          "sum": 50.685670099793555, 
+          "average": 1.4907550029351047
+        }, 
+        "East Asia & Pacific (all income levels)": {
+          "count": 25, 
+          "sum": 86.70483708694283, 
+          "average": 3.4681934834777137
+        }, 
+        "Oman": {
+          "count": 31, 
+          "sum": 148.09864379734978, 
+          "average": 4.777375606366122
+        }, 
+        "Tanzania": {
+          "count": 34, 
+          "sum": 177.10203063816752, 
+          "average": 5.208883254063751
+        }, 
+        "Cabo Verde": {
+          "count": 34, 
+          "sum": 151.26511691074066, 
+          "average": 4.44897402678649
+        }, 
+        "Gabon": {
+          "count": 33, 
+          "sum": 137.68336926622408, 
+          "average": 4.1722233110976985
+        }, 
+        "New Zealand": {
+          "count": 34, 
+          "sum": 56.03585055282589, 
+          "average": 1.6481132515537025
+        }, 
+        "European Union": {
+          "count": 34, 
+          "sum": 17.52995801471431, 
+          "average": 0.515587000432774
+        }, 
+        "Jamaica": {
+          "count": 34, 
+          "sum": 43.40623312964005, 
+          "average": 1.2766539155776484
+        }, 
+        "Albania": {
+          "count": 34, 
+          "sum": 57.72264735199608, 
+          "average": 1.697724922117532
+        }, 
+        "Korea Rep.": {
+          "count": 34, 
+          "sum": 73.57858873121333, 
+          "average": 2.164076139153334
+        }, 
+        "United Arab Emirates": {
+          "count": 25, 
+          "sum": 130.34809390282712, 
+          "average": 5.213923756113084
+        }, 
+        "Guam": {
+          "count": 32, 
+          "sum": 45.24655062708406, 
+          "average": 1.4139547070963772
+        }, 
+        "India": {
+          "count": 34, 
+          "sum": 96.29075274382593, 
+          "average": 2.832080963053704
+        }, 
+        "Yemen Rep.": {
+          "count": 29, 
+          "sum": 163.10808273076208, 
+          "average": 5.624416645888348
+        }, 
+        "Madagascar": {
+          "count": 34, 
+          "sum": 162.50932407660466, 
+          "average": 4.779686002253078
+        }, 
+        "Lesotho": {
+          "count": 34, 
+          "sum": 132.38261850752212, 
+          "average": 3.8936064266918256
+        }, 
+        "Kenya": {
+          "count": 34, 
+          "sum": 155.43027605927043, 
+          "average": 4.571478707625602
+        }, 
+        "Upper middle income": {
+          "count": 34, 
+          "sum": 122.02591943511831, 
+          "average": 3.5889976304446556
+        }, 
+        "Pacific island small states": {
+          "count": 34, 
+          "sum": 79.51409427148113, 
+          "average": 2.33864983151415
+        }, 
+        "Turkey": {
+          "count": 34, 
+          "sum": 108.22375346772417, 
+          "average": 3.1830515725801223
+        }, 
+        "Afghanistan": {
+          "count": 31, 
+          "sum": 103.40583123027531, 
+          "average": 3.3356719751701718
+        }, 
+        "Bangladesh": {
+          "count": 14, 
+          "sum": 53.32185193217522, 
+          "average": 3.808703709441087
+        }, 
+        "Solomon Islands": {
+          "count": 34, 
+          "sum": 168.67583369971453, 
+          "average": 4.961053932344544
+        }, 
+        "Mongolia": {
+          "count": 34, 
+          "sum": 86.84160507716517, 
+          "average": 2.5541648552107405
+        }, 
+        "France": {
+          "count": 34, 
+          "sum": 25.63558269204788, 
+          "average": 0.7539877262367023
+        }, 
+        "Syrian Arab Republic": {
+          "count": 34, 
+          "sum": 118.89993506754944, 
+          "average": 3.4970569137514547
+        }, 
+        "Rwanda": {
+          "count": 22, 
+          "sum": 138.6204153573245, 
+          "average": 6.300927970787478
+        }, 
+        "Somalia": {
+          "count": 33, 
+          "sum": 93.53487554885768, 
+          "average": 2.834390168147202
+        }, 
+        "Peru": {
+          "count": 34, 
+          "sum": 80.36237267911761, 
+          "average": 2.363599196444636
+        }, 
+        "Vanuatu": {
+          "count": 34, 
+          "sum": 139.76894841798028, 
+          "average": 4.110851424058245
+        }, 
+        "Norway": {
+          "count": 34, 
+          "sum": 58.96044518711558, 
+          "average": 1.7341307407975177
+        }, 
+        "Cote d'Ivoire": {
+          "count": 34, 
+          "sum": 132.110666795277, 
+          "average": 3.8856078469199122
+        }, 
+        "Benin": {
+          "count": 34, 
+          "sum": 156.0963083105528, 
+          "average": 4.5910678914868495
+        }, 
+        "Other small states": {
+          "count": 34, 
+          "sum": 137.26172034662403, 
+          "average": 4.03710942195953
+        }, 
+        "Venezuela RB": {
+          "count": 34, 
+          "sum": 88.19042727863206, 
+          "average": 2.5938360964303553
+        }, 
+        "Cuba": {
+          "count": 34, 
+          "sum": 29.163995838169626, 
+          "average": 0.8577645834755775
+        }, 
+        "Togo": {
+          "count": 34, 
+          "sum": 142.1304452611438, 
+          "average": 4.180307213563052
+        }, 
+        "China": {
+          "count": 33, 
+          "sum": 137.91888746373087, 
+          "average": 4.179360226173664
+        }, 
+        "Dominican Republic": {
+          "count": 34, 
+          "sum": 105.29894938578846, 
+          "average": 3.0970279231114257
+        }, 
+        "Congo Dem. Rep.": {
+          "count": 34, 
+          "sum": 140.1328102919085, 
+          "average": 4.121553243879662
+        }, 
+        "French Polynesia": {
+          "count": 34, 
+          "sum": 59.91270593003693, 
+          "average": 1.7621384097069681
+        }, 
+        "Egypt Arab Rep.": {
+          "count": 34, 
+          "sum": 61.06946035625789, 
+          "average": 1.7961605987134677
+        }, 
+        "Ghana": {
+          "count": 34, 
+          "sum": 142.38236456612498, 
+          "average": 4.187716604886029
+        }, 
+        "Tonga": {
+          "count": 34, 
+          "sum": 26.444680778947603, 
+          "average": 0.7777847287925764
+        }, 
+        "Finland": {
+          "count": 32, 
+          "sum": 29.507665359124427, 
+          "average": 0.9221145424726385
+        }, 
+        "Latin America & Caribbean (developing only)": {
+          "count": 34, 
+          "sum": 81.48452387490778, 
+          "average": 2.396603643379641
+        }, 
+        "Colombia": {
+          "count": 34, 
+          "sum": 83.70836671775639, 
+          "average": 2.4620107858163642
+        }, 
+        "Libya": {
+          "count": 32, 
+          "sum": 89.26598320781336, 
+          "average": 2.789561975244168
+        }, 
+        "Indonesia": {
+          "count": 34, 
+          "sum": 147.43120642322407, 
+          "average": 4.336211953624236
+        }, 
+        "Central African Republic": {
+          "count": 34, 
+          "sum": 90.69980258703683, 
+          "average": 2.667641252559906
+        }, 
+        "Iran Islamic Rep.": {
+          "count": 34, 
+          "sum": 114.59064418769269, 
+          "average": 3.3703130643439025
+        }, 
+        "North America": {
+          "count": 34, 
+          "sum": 44.28060291466941, 
+          "average": 1.302370673960865
+        }, 
+        "Sweden": {
+          "count": 34, 
+          "sum": 31.24054601999022, 
+          "average": 0.9188395888232418
+        }, 
+        "Vietnam": {
+          "count": 34, 
+          "sum": 105.26188513920323, 
+          "average": 3.09593779821186
+        }, 
+        "Mali": {
+          "count": 34, 
+          "sum": 158.79857137437315, 
+          "average": 4.670546216893327
+        }, 
+        "Bulgaria": {
+          "count": 34, 
+          "sum": 0.2634592309150794, 
+          "average": 0.007748800909266949
+        }, 
+        "Mauritius": {
+          "count": 34, 
+          "sum": 25.79588828474459, 
+          "average": 0.758702596610135
+        }, 
+        "Romania": {
+          "count": 34, 
+          "sum": 10.256333144261884, 
+          "average": 0.30165685718417296
+        }, 
+        "Angola": {
+          "count": 34, 
+          "sum": 186.43720778549178, 
+          "average": 5.483447287808581
+        }, 
+        "Central Europe and the Baltics": {
+          "count": 34, 
+          "sum": 8.710409311995416, 
+          "average": 0.2561885091763358
+        }, 
+        "Chad": {
+          "count": 34, 
+          "sum": 123.90762162870449, 
+          "average": 3.6443418126089555
+        }, 
+        "South Africa": {
+          "count": 34, 
+          "sum": 95.50861740596599, 
+          "average": 2.809076982528412
+        }, 
+        "St. Vincent and the Grenadines": {
+          "count": 34, 
+          "sum": 45.55885026005368, 
+          "average": 1.3399661841192252
+        }, 
+        "Fiji": {
+          "count": 34, 
+          "sum": 70.0671959468359, 
+          "average": 2.0607998807892915
+        }, 
+        "Caribbean small states": {
+          "count": 30, 
+          "sum": 30.56063088947685, 
+          "average": 1.0186876963158948
+        }, 
+        "Brunei Darussalam": {
+          "count": 34, 
+          "sum": 105.38127272908116, 
+          "average": 3.099449197914151
+        }, 
+        "Malaysia": {
+          "count": 34, 
+          "sum": 138.42608796125188, 
+          "average": 4.071355528272114
+        }, 
+        "Austria": {
+          "count": 34, 
+          "sum": 11.613297364368998, 
+          "average": 0.3415675695402647
+        }, 
+        "High income: OECD": {
+          "count": 13, 
+          "sum": 12.398686629285805, 
+          "average": 0.9537451253296774
+        }, 
+        "Mozambique": {
+          "count": 34, 
+          "sum": 177.99792666576562, 
+          "average": 5.2352331372284
+        }, 
+        "Uganda": {
+          "count": 34, 
+          "sum": 185.4550925309709, 
+          "average": 5.454561545028556
+        }, 
+        "Hungary": {
+          "count": 34, 
+          "sum": 2.11326177099573, 
+          "average": 0.062154757970462646
+        }, 
+        "Niger": {
+          "count": 17, 
+          "sum": 75.58538065362386, 
+          "average": 4.446198861977874
+        }, 
+        "United States": {
+          "count": 34, 
+          "sum": 43.970463717867574, 
+          "average": 1.2932489328784582
+        }, 
+        "Brazil": {
+          "count": 34, 
+          "sum": 132.79394336049745, 
+          "average": 3.9057042164852174
+        }, 
+        "Virgin Islands (U.S.)": {
+          "count": 34, 
+          "sum": 28.495369414335396, 
+          "average": 0.8380991004216293
+        }, 
+        "Kuwait": {
+          "count": 27, 
+          "sum": 80.5750859307528, 
+          "average": 2.9842624418797334
+        }, 
+        "Panama": {
+          "count": 31, 
+          "sum": 90.74055751489186, 
+          "average": 2.9271147585448984
+        }, 
+        "Guyana": {
+          "count": 34, 
+          "sum": 32.61625206758486, 
+          "average": 0.9593015313995547
+        }, 
+        "Costa Rica": {
+          "count": 34, 
+          "sum": 132.76010056905253, 
+          "average": 3.9047088402662506
+        }, 
+        "Euro area": {
+          "count": 34, 
+          "sum": 19.79930935494133, 
+          "average": 0.5823326280865097
+        }, 
+        "Ireland": {
+          "count": 4, 
+          "sum": 6.662086422919121, 
+          "average": 1.6655216057297801
+        }, 
+        "Pakistan": {
+          "count": 30, 
+          "sum": 100.69246824157767, 
+          "average": 3.3564156080525893
+        }, 
+        "Nigeria": {
+          "count": 34, 
+          "sum": 165.12207961898585, 
+          "average": 4.856531753499584
+        }, 
+        "Lower middle income": {
+          "count": 30, 
+          "sum": 93.83007680456056, 
+          "average": 3.1276692268186848
+        }, 
+        "Ecuador": {
+          "count": 34, 
+          "sum": 105.96565862037374, 
+          "average": 3.1166370182462866
+        }, 
+        "Algeria": {
+          "count": 34, 
+          "sum": 124.10825308051142, 
+          "average": 3.650242737662101
+        }, 
+        "El Salvador": {
+          "count": 34, 
+          "sum": 102.27734568965597, 
+          "average": 3.008157226166352
+        }, 
+        "Korea Dem. Rep.": {
+          "count": 34, 
+          "sum": 44.05729453891798, 
+          "average": 1.2958027805564112
+        }, 
+        "Chile": {
+          "count": 34, 
+          "sum": 57.81681279950233, 
+          "average": 1.7004944941030098
+        }, 
+        "Puerto Rico": {
+          "count": 24, 
+          "sum": 10.187835375142987, 
+          "average": 0.42449314063095783
+        }, 
+        "Thailand": {
+          "count": 34, 
+          "sum": 123.79089153935014, 
+          "average": 3.6409085746867693
+        }, 
+        "Haiti": {
+          "count": 34, 
+          "sum": 139.0114311873345, 
+          "average": 4.088571505509839
+        }, 
+        "Belize": {
+          "count": 34, 
+          "sum": 73.61549632417561, 
+          "average": 2.165161656593401
+        }, 
+        "Fragile and conflict affected situations": {
+          "count": 4, 
+          "sum": 15.85771915095707, 
+          "average": 3.9644297877392676
+        }, 
+        "Sierra Leone": {
+          "count": 30, 
+          "sum": 82.19481688320344, 
+          "average": 2.739827229440114
+        }, 
+        "Nepal": {
+          "count": 34, 
+          "sum": 178.11261006407418, 
+          "average": 5.2386061783551225
+        }, 
+        "East Asia & Pacific (developing only)": {
+          "count": 30, 
+          "sum": 123.17798681078625, 
+          "average": 4.105932893692875
+        }, 
+        "Denmark": {
+          "count": 34, 
+          "sum": 13.785169141303557, 
+          "average": 0.40544615121481054
+        }, 
+        "Philippines": {
+          "count": 34, 
+          "sum": 96.9392566489377, 
+          "average": 2.8511546073216976
+        }, 
+        "Morocco": {
+          "count": 34, 
+          "sum": 93.12491359245689, 
+          "average": 2.7389680468369675
+        }, 
+        "Namibia": {
+          "count": 34, 
+          "sum": 142.3153795027581, 
+          "average": 4.185746455963474
+        }, 
+        "Congo Rep.": {
+          "count": 34, 
+          "sum": 127.0891811651982, 
+          "average": 3.737917093094065
+        }, 
+        "Guinea-Bissau": {
+          "count": 34, 
+          "sum": 177.73545174401502, 
+          "average": 5.227513286588678
+        }, 
+        "Kiribati": {
+          "count": 34, 
+          "sum": 99.45824391834898, 
+          "average": 2.9252424681867346
+        }, 
+        "Switzerland": {
+          "count": 34, 
+          "sum": 49.541509946163565, 
+          "average": 1.4571032337106937
+        }, 
+        "Grenada": {
+          "count": 34, 
+          "sum": 25.175580675869533, 
+          "average": 0.7404582551726334
+        }, 
+        "Iraq": {
+          "count": 34, 
+          "sum": 150.37831928344764, 
+          "average": 4.422891743630814
+        }, 
+        "Portugal": {
+          "count": 34, 
+          "sum": 48.143723271276365, 
+          "average": 1.4159918609198934
+        }, 
+        "Uruguay": {
+          "count": 34, 
+          "sum": 27.964910377094622, 
+          "average": 0.8224973640321946
+        }, 
+        "Gambia The": {
+          "count": 34, 
+          "sum": 191.684018874729, 
+          "average": 5.637765261021443
+        }, 
+        "Equatorial Guinea": {
+          "count": 32, 
+          "sum": 139.1101032711142, 
+          "average": 4.347190727222318
+        }, 
+        "Lebanon": {
+          "count": 34, 
+          "sum": 73.65798762385626, 
+          "average": 2.166411400701655
+        }, 
+        "Djibouti": {
+          "count": 33, 
+          "sum": 101.86501115494063, 
+          "average": 3.086818519846685
+        }, 
+        "Antigua and Barbuda": {
+          "count": 32, 
+          "sum": -5.911104763316278, 
+          "average": -0.18472202385363365
+        }, 
+        "Low income": {
+          "count": 34, 
+          "sum": 137.89530305058403, 
+          "average": 4.055744207370118
+        }, 
+        "High income": {
+          "count": 11, 
+          "sum": 12.138832409694672, 
+          "average": 1.1035302190631517
+        }, 
+        "Burundi": {
+          "count": 34, 
+          "sum": 194.9290420650361, 
+          "average": 5.733207119559886
+        }, 
+        "Least developed countries: UN classification": {
+          "count": 34, 
+          "sum": 151.41605815385853, 
+          "average": 4.453413475113487
+        }, 
+        "Cyprus": {
+          "count": 34, 
+          "sum": 73.43589365529824, 
+          "average": 2.1598792251558305
+        }, 
+        "Barbados": {
+          "count": 34, 
+          "sum": -7.762889745950997, 
+          "average": -0.22832028664561765
+        }, 
+        "Qatar": {
+          "count": 20, 
+          "sum": 78.80721093157705, 
+          "average": 3.9403605465788525
+        }, 
+        "Italy": {
+          "count": 34, 
+          "sum": 9.290481767284039, 
+          "average": 0.2732494637436482
+        }, 
+        "Bhutan": {
+          "count": 27, 
+          "sum": 204.26439552180608, 
+          "average": 7.565347982289115
+        }, 
+        "Sudan": {
+          "count": 34, 
+          "sum": 155.19019539016801, 
+          "average": 4.56441751147553
+        }, 
+        "Sub-Saharan Africa (developing only)": {
+          "count": 34, 
+          "sum": 148.17053712838805, 
+          "average": 4.357956974364354
+        }, 
+        "Malta": {
+          "count": 34, 
+          "sum": 35.83499994299415, 
+          "average": 1.0539705865586515
+        }, 
+        "Suriname": {
+          "count": 34, 
+          "sum": 47.36592635506646, 
+          "average": 1.3931154810313668
+        }, 
+        "Middle East & North Africa (developing only)": {
+          "count": 34, 
+          "sum": 139.65747239209517, 
+          "average": 4.1075727174145635
+        }, 
+        "Israel": {
+          "count": 34, 
+          "sum": 80.83045100498252, 
+          "average": 2.377366206028898
+        }, 
+        "Bahamas The": {
+          "count": 34, 
+          "sum": 75.27787608982753, 
+          "average": 2.214055179112574
+        }, 
+        "Iceland": {
+          "count": 34, 
+          "sum": 42.92862653984399, 
+          "average": 1.2626066629365882
+        }, 
+        "Zambia": {
+          "count": 34, 
+          "sum": 98.86661226039807, 
+          "average": 2.907841537070532
+        }, 
+        "Sub-Saharan Africa (all income levels)": {
+          "count": 34, 
+          "sum": 148.18218378839785, 
+          "average": 4.358299523188171
+        }, 
+        "Senegal": {
+          "count": 34, 
+          "sum": 115.23331027600612, 
+          "average": 3.389215008117827
+        }, 
+        "Papua New Guinea": {
+          "count": 34, 
+          "sum": 88.57396884610121, 
+          "average": 2.605116730767683
+        }, 
+        "Malawi": {
+          "count": 34, 
+          "sum": 160.2160562322317, 
+          "average": 4.712236948006812
+        }, 
+        "Zimbabwe": {
+          "count": 34, 
+          "sum": 113.33553110834526, 
+          "average": 3.3333979737748605
+        }, 
+        "Jordan": {
+          "count": 33, 
+          "sum": 135.91023716233997, 
+          "average": 4.118492035222422
+        }, 
+        "Poland": {
+          "count": 34, 
+          "sum": 15.606738283273362, 
+          "average": 0.4590217142139226
+        }, 
+        "Mauritania": {
+          "count": 34, 
+          "sum": 181.99331231952652, 
+          "average": 5.352744479986073
+        }, 
+        "Small states": {
+          "count": 34, 
+          "sum": 101.84570385259006, 
+          "average": 2.9954618780173554
+        }, 
+        "New Caledonia": {
+          "count": 34, 
+          "sum": 80.1313404021965, 
+          "average": 2.356804129476369
+        }, 
+        "Trinidad and Tobago": {
+          "count": 34, 
+          "sum": 0.7192464873009039, 
+          "average": 0.021154308450026586
+        }, 
+        "Japan": {
+          "count": 23, 
+          "sum": 15.169396993650867, 
+          "average": 0.6595389997239508
+        }, 
+        "Honduras": {
+          "count": 34, 
+          "sum": 129.36053678176333, 
+          "average": 3.804721670051862
+        }, 
+        "Myanmar": {
+          "count": 34, 
+          "sum": 77.73393876593214, 
+          "average": 2.2862923166450635
+        }, 
+        "Mexico": {
+          "count": 34, 
+          "sum": 77.81863990107044, 
+          "average": 2.2887835265020713
+        }, 
+        "Tunisia": {
+          "count": 34, 
+          "sum": 87.18319082835717, 
+          "average": 2.5642114949516817
+        }, 
+        "Nicaragua": {
+          "count": 34, 
+          "sum": 82.66595294730905, 
+          "average": 2.431351557273796
+        }, 
+        "United Kingdom": {
+          "count": 34, 
+          "sum": 17.114592461164058, 
+          "average": 0.5033703665048251
+        }, 
+        "High income: nonOECD": {
+          "count": 34, 
+          "sum": 36.76932659413794, 
+          "average": 1.0814507821805275
+        }, 
+        "Greece": {
+          "count": 34, 
+          "sum": 28.09368444805931, 
+          "average": 0.8262848367076269
+        }, 
+        "Paraguay": {
+          "count": 4, 
+          "sum": 16.52477577337817, 
+          "average": 4.131193943344543
+        }, 
+        "Comoros": {
+          "count": 34, 
+          "sum": 112.48243859462619, 
+          "average": 3.308307017489006
+        }
+      }, 
       "development.[0].Data.Rural Development.Rural Population": {
         "Canada": {
           "count": 5, 
-          "sum": 32397352.0, 
+          "sum": 32397352, 
           "average": 6479470.4
         }, 
         "Sao Tome and Principe": {
           "count": 34, 
-          "sum": 2231932.0, 
+          "sum": 2231932, 
           "average": 65645.05882352941
         }, 
         "Lao PDR": {
           "count": 34, 
-          "sum": 128768864.0, 
+          "sum": 128768864, 
           "average": 3787319.529411765
         }, 
         "Arab World": {
           "count": 34, 
-          "sum": 4129529872.0, 
+          "sum": 4129529872, 
           "average": 121456760.94117647
         }, 
         "Latin America & Caribbean (all income levels)": {
           "count": 34, 
-          "sum": 4427157601.0, 
+          "sum": 4427157601, 
           "average": 130210517.6764706
         }, 
         "Cambodia": {
           "count": 31, 
-          "sum": 283514351.0, 
+          "sum": 283514351, 
           "average": 9145624.225806452
         }, 
         "Ethiopia": {
           "count": 34, 
-          "sum": 1727381478.0, 
+          "sum": 1727381478, 
           "average": 50805337.5882353
         }, 
         "Aruba": {
           "count": 34, 
-          "sum": 1443298.0, 
+          "sum": 1443298, 
           "average": 42449.94117647059
         }, 
         "Sri Lanka": {
           "count": 34, 
-          "sum": 496913800.0, 
+          "sum": 496913800, 
           "average": 14615111.764705881
         }, 
         "Swaziland": {
           "count": 34, 
-          "sum": 24897462.0, 
+          "sum": 24897462, 
           "average": 732278.2941176471
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 29235301178.0, 
-          "average": 913603161.8125
+          "count": 15, 
+          "sum": 11861808412, 
+          "average": 790787227.4666667
         }, 
         "Argentina": {
           "count": 34, 
-          "sum": 141142129.0, 
+          "sum": 141142129, 
           "average": 4151239.088235294
         }, 
         "Bolivia": {
           "count": 34, 
-          "sum": 107280483.0, 
+          "sum": 107280483, 
           "average": 3155308.3235294116
         }, 
         "Cameroon": {
           "count": 34, 
-          "sum": 274083970.0, 
-          "average": 8061293.235294118
+          "sum": 102616208, 
+          "average": 3018123.7647058824
         }, 
         "Burkina Faso": {
           "count": 34, 
-          "sum": 298017730.0, 
+          "sum": 298017730, 
           "average": 8765227.352941176
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 3467290091.0, 
-          "average": 288940840.9166667
+          "count": 10, 
+          "sum": 7836187272, 
+          "average": 783618727.2
         }, 
         "Bahrain": {
           "count": 31, 
-          "sum": 2349566.0, 
+          "sum": 2349566, 
           "average": 75792.45161290323
         }, 
         "Saudi Arabia": {
           "count": 30, 
-          "sum": 119007477.0, 
+          "sum": 119007477, 
           "average": 3966915.9
         }, 
         "Middle East & North Africa (all income levels)": {
           "count": 34, 
-          "sum": 4113220928.0, 
+          "sum": 4113220928, 
           "average": 120977086.11764705
         }, 
         "Guatemala": {
           "count": 34, 
-          "sum": 196984630.0, 
+          "sum": 196984630, 
           "average": 5793665.588235294
         }, 
         "Guinea": {
           "count": 34, 
-          "sum": 179513084.0, 
+          "sum": 179513084, 
           "average": 5279796.588235294
         }, 
         "Germany": {
           "count": 34, 
-          "sum": 731711543.0, 
-          "average": 21520927.73529412
+          "sum": 2560245, 
+          "average": 75301.32352941176
         }, 
         "St. Lucia": {
           "count": 34, 
-          "sum": 3740119.0, 
-          "average": 110003.5
+          "sum": 41053493, 
+          "average": 1207455.6764705882
         }, 
         "Spain": {
           "count": 34, 
-          "sum": 333396286.0, 
-          "average": 9805773.11764706
+          "sum": 48833408, 
+          "average": 1436276.705882353
         }, 
         "Liberia": {
           "count": 27, 
-          "sum": 41333748.0, 
-          "average": 1530879.5555555555
-        }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 5628983.0, 
-          "average": 170575.24242424243
-        }, 
-        "East Asia & Pacific (all income levels)": {
-          "count": 25, 
-          "sum": 29281651607.0, 
-          "average": 1171266064.28
-        }, 
-        "Oman": {
-          "count": 31, 
-          "sum": 19686101.0, 
-          "average": 635035.5161290322
-        }, 
-        "Tanzania": {
-          "count": 34, 
-          "sum": 817989097.0, 
-          "average": 24058502.852941178
-        }, 
-        "Cabo Verde": {
-          "count": 34, 
-          "sum": 7037936.0, 
-          "average": 206998.11764705883
-        }, 
-        "Gabon": {
-          "count": 33, 
-          "sum": 8908912.0, 
-          "average": 269967.0303030303
-        }, 
-        "New Zealand": {
-          "count": 34, 
-          "sum": 18004492.0, 
-          "average": 529543.8823529412
-        }, 
-        "European Union": {
-          "count": 34, 
-          "sum": 4728712303.0, 
-          "average": 139079773.61764705
-        }, 
-        "Jamaica": {
-          "count": 34, 
-          "sum": 41367655.0, 
-          "average": 1216695.7352941176
-        }, 
-        "Albania": {
-          "count": 34, 
-          "sum": 60542020.0, 
-          "average": 1780647.6470588236
-        }, 
-        "Korea Rep.": {
-          "count": 34, 
-          "sum": 380608336.0, 
-          "average": 11194362.823529411
-        }, 
-        "United Arab Emirates": {
-          "count": 25, 
-          "sum": 12620481.0, 
-          "average": 504819.24
-        }, 
-        "Guam": {
-          "count": 32, 
-          "sum": 326201.0, 
-          "average": 10193.78125
-        }, 
-        "India": {
-          "count": 34, 
-          "sum": 23786415554.0, 
-          "average": 699600457.4705882
-        }, 
-        "Yemen Rep.": {
-          "count": 29, 
-          "sum": 191727130.5, 
-          "average": 6611280.362068965
-        }, 
-        "Madagascar": {
-          "count": 34, 
-          "sum": 356607150.0, 
-          "average": 10488445.588235294
-        }, 
-        "Lesotho": {
-          "count": 34, 
-          "sum": 47808237.0, 
-          "average": 1406124.6176470588
-        }, 
-        "Kenya": {
-          "count": 34, 
-          "sum": 770091341.0, 
-          "average": 22649745.32352941
-        }, 
-        "Upper middle income": {
-          "count": 34, 
-          "sum": 33229540613.5, 
-          "average": 977339429.8088236
-        }, 
-        "Pacific island small states": {
-          "count": 34, 
-          "sum": 41670463.0, 
-          "average": 1225601.8529411764
-        }, 
-        "Turkey": {
-          "count": 34, 
-          "sum": 762947415.0, 
-          "average": 22439629.852941178
-        }, 
-        "Afghanistan": {
-          "count": 31, 
-          "sum": 458082741.0, 
-          "average": 14776862.612903226
-        }, 
-        "Bangladesh": {
-          "count": 14, 
-          "sum": 1450539379.0, 
-          "average": 103609955.64285715
-        }, 
-        "Solomon Islands": {
-          "count": 34, 
-          "sum": 10669684.0, 
-          "average": 313814.23529411765
-        }, 
-        "Mongolia": {
-          "count": 34, 
-          "sum": 31454062.0, 
-          "average": 925119.4705882353
-        }, 
-        "France": {
-          "count": 34, 
-          "sum": 500293497.0, 
-          "average": 14714514.61764706
-        }, 
-        "Syrian Arab Republic": {
-          "count": 34, 
-          "sum": 243755001.0, 
-          "average": 7169264.735294118
-        }, 
-        "Rwanda": {
-          "count": 22, 
-          "sum": 150088239.0, 
-          "average": 6822192.681818182
-        }, 
-        "Somalia": {
-          "count": 33, 
-          "sum": 162001449.0, 
-          "average": 4909134.818181818
-        }, 
-        "Peru": {
-          "count": 34, 
-          "sum": 229000431.0, 
-          "average": 6735306.794117647
-        }, 
-        "Vanuatu": {
-          "count": 34, 
-          "sum": 4629502.0, 
-          "average": 136161.82352941178
-        }, 
-        "Norway": {
-          "count": 34, 
-          "sum": 91412971.0, 
-          "average": 2688616.794117647
-        }, 
-        "Cote d'Ivoire": {
-          "count": 34, 
-          "sum": 269987178.0, 
-          "average": 7940799.352941177
-        }, 
-        "Benin": {
-          "count": 34, 
-          "sum": 134727511.0, 
-          "average": 3962573.8529411764
-        }, 
-        "Other small states": {
-          "count": 34, 
-          "sum": 305791138.0, 
-          "average": 8993857.0
-        }, 
-        "Venezuela RB": {
-          "count": 34, 
-          "sum": 105212459.0, 
-          "average": 3094484.088235294
-        }, 
-        "Cuba": {
-          "count": 34, 
-          "sum": 95770409.0, 
-          "average": 2816776.7352941176
-        }, 
-        "Togo": {
-          "count": 34, 
-          "sum": 102616208.0, 
-          "average": 3018123.7647058824
-        }, 
-        "China": {
-          "count": 33, 
-          "sum": 26076925081.0, 
-          "average": 790209850.939394
-        }, 
-        "Dominican Republic": {
-          "count": 34, 
-          "sum": 104481897.0, 
-          "average": 3072996.970588235
-        }, 
-        "Congo Dem. Rep.": {
-          "count": 34, 
-          "sum": 955547037.0, 
-          "average": 28104324.61764706
-        }, 
-        "French Polynesia": {
-          "count": 34, 
-          "sum": 3158749.0, 
-          "average": 92904.38235294117
-        }, 
-        "Egypt Arab Rep.": {
-          "count": 34, 
-          "sum": 1193535797.0, 
-          "average": 35103994.02941176
-        }, 
-        "Ghana": {
-          "count": 34, 
-          "sum": 338287633.0, 
-          "average": 9949636.264705881
-        }, 
-        "Tonga": {
-          "count": 34, 
-          "sum": 2560245.0, 
-          "average": 75301.32352941176
-        }, 
-        "Finland": {
-          "count": 32, 
-          "sum": 33081549.0, 
-          "average": 1033798.40625
-        }, 
-        "Latin America & Caribbean (developing only)": {
-          "count": 34, 
-          "sum": 4281985023.0, 
-          "average": 125940735.97058824
-        }, 
-        "Colombia": {
-          "count": 34, 
-          "sum": 370120223.0, 
-          "average": 10885888.911764706
-        }, 
-        "Libya": {
-          "count": 32, 
-          "sum": 35774143.0, 
-          "average": 1117941.96875
-        }, 
-        "Indonesia": {
-          "count": 34, 
-          "sum": 4111988577.0, 
-          "average": 120940840.5
-        }, 
-        "Central African Republic": {
-          "count": 34, 
-          "sum": 70942622.0, 
-          "average": 2086547.705882353
-        }, 
-        "Iran Islamic Rep.": {
-          "count": 34, 
-          "sum": 774304036.0, 
-          "average": 22773648.11764706
-        }, 
-        "North America": {
-          "count": 34, 
-          "sum": 2258669514.0, 
-          "average": 66431456.294117644
-        }, 
-        "Sweden": {
-          "count": 34, 
-          "sum": 54031759.0, 
-          "average": 1589169.3823529412
-        }, 
-        "Vietnam": {
-          "count": 34, 
-          "sum": 1850188481.0, 
-          "average": 54417308.26470588
-        }, 
-        "Mali": {
-          "count": 34, 
-          "sum": 237533574.0, 
-          "average": 6986281.588235294
-        }, 
-        "Bulgaria": {
-          "count": 34, 
-          "sum": 91721256.0, 
-          "average": 2697684.0
-        }, 
-        "Mauritius": {
-          "count": 34, 
-          "sum": 22186233.0, 
-          "average": 652536.2647058824
-        }, 
-        "Romania": {
-          "count": 34, 
-          "sum": 360448761.0, 
-          "average": 10601434.147058824
-        }, 
-        "Angola": {
-          "count": 34, 
-          "sum": 299893308.0, 
-          "average": 8820391.411764706
-        }, 
-        "Central Europe and the Baltics": {
-          "count": 34, 
-          "sum": 1431655892.0, 
-          "average": 42107526.23529412
-        }, 
-        "Chad": {
-          "count": 34, 
-          "sum": 203796645.0, 
-          "average": 5994018.970588235
-        }, 
-        "South Africa": {
-          "count": 34, 
-          "sum": 597079809.0, 
-          "average": 17561170.852941178
-        }, 
-        "St. Vincent and the Grenadines": {
-          "count": 34, 
-          "sum": 2063145.0, 
-          "average": 60680.73529411765
-        }, 
-        "Fiji": {
-          "count": 34, 
-          "sum": 14265600.0, 
-          "average": 419576.4705882353
-        }, 
-        "Caribbean small states": {
-          "count": 34, 
-          "sum": 126056556.0, 
-          "average": 3707545.7647058824
-        }, 
-        "Brunei Darussalam": {
-          "count": 34, 
-          "sum": 3091900.0, 
-          "average": 90938.23529411765
-        }, 
-        "Malaysia": {
-          "count": 34, 
-          "sum": 295325534.0, 
-          "average": 8686045.11764706
-        }, 
-        "Austria": {
-          "count": 34, 
-          "sum": 92325108.0, 
-          "average": 2715444.3529411764
-        }, 
-        "High income: OECD": {
-          "count": 13, 
-          "sum": 3085549503.0, 
-          "average": 237349961.76923078
-        }, 
-        "Mozambique": {
-          "count": 34, 
-          "sum": 427246298.0, 
-          "average": 12566067.588235294
-        }, 
-        "Uganda": {
-          "count": 34, 
-          "sum": 660846618.0, 
-          "average": 19436665.23529412
-        }, 
-        "Hungary": {
-          "count": 34, 
-          "sum": 120259797.0, 
-          "average": 3537052.8529411764
-        }, 
-        "Niger": {
-          "count": 17, 
-          "sum": 176688768.0, 
-          "average": 10393456.94117647
-        }, 
-        "United States": {
-          "count": 34, 
-          "sum": 2042578837.0, 
-          "average": 60075848.14705882
-        }, 
-        "Brazil": {
-          "count": 34, 
-          "sum": 1408237699.5, 
-          "average": 41418755.86764706
-        }, 
-        "Virgin Islands (U.S.)": {
-          "count": 34, 
-          "sum": 379560.0, 
-          "average": 11163.529411764706
-        }, 
-        "Kuwait": {
-          "count": 27, 
-          "sum": 1090521.5, 
-          "average": 40389.68518518518
-        }, 
-        "Panama": {
-          "count": 31, 
-          "sum": 35275297.0, 
-          "average": 1137912.8064516129
-        }, 
-        "Guyana": {
-          "count": 34, 
-          "sum": 18106519.0, 
-          "average": 532544.6764705882
-        }, 
-        "Costa Rica": {
-          "count": 34, 
-          "sum": 50324525.0, 
-          "average": 1480133.0882352942
-        }, 
-        "Euro area": {
-          "count": 34, 
-          "sum": 2960478315.0, 
-          "average": 87072891.61764705
-        }, 
-        "Ireland": {
-          "count": 34, 
-          "sum": 53774083.0, 
-          "average": 1581590.6764705882
-        }, 
-        "Pakistan": {
-          "count": 34, 
-          "sum": 2930373695.0, 
-          "average": 86187461.61764705
-        }, 
-        "Nigeria": {
-          "count": 34, 
-          "sum": 2524608769.0, 
-          "average": 74253199.08823529
-        }, 
-        "Lower middle income": {
-          "count": 30, 
-          "sum": 37707324473.0, 
-          "average": 1256910815.7666667
-        }, 
-        "Ecuador": {
-          "count": 34, 
-          "sum": 164600731.0, 
-          "average": 4841197.970588235
-        }, 
-        "Algeria": {
-          "count": 34, 
-          "sum": 416100607.0, 
-          "average": 12238253.147058824
-        }, 
-        "El Salvador": {
-          "count": 34, 
-          "sum": 85639448.0, 
-          "average": 2518807.294117647
-        }, 
-        "Korea Dem. Rep.": {
-          "count": 34, 
-          "sum": 299361472.0, 
-          "average": 8804749.176470589
-        }, 
-        "Chile": {
-          "count": 34, 
-          "sum": 71894634.0, 
-          "average": 2114548.0588235296
-        }, 
-        "Puerto Rico": {
-          "count": 24, 
-          "sum": 7099864.0, 
-          "average": 295827.6666666667
-        }, 
-        "Thailand": {
-          "count": 34, 
-          "sum": 1075221365.0, 
-          "average": 31624157.79411765
-        }, 
-        "Haiti": {
-          "count": 34, 
-          "sum": 141246988.0, 
-          "average": 4154323.1764705884
-        }, 
-        "Belize": {
-          "count": 34, 
-          "sum": 3965055.0, 
-          "average": 116619.26470588235
-        }, 
-        "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 6706832156.0, 
-          "average": 197259769.29411766
-        }, 
-        "Sierra Leone": {
-          "count": 34, 
-          "sum": 94834375.0, 
-          "average": 2789246.3235294116
-        }, 
-        "Nepal": {
-          "count": 34, 
-          "sum": 437183338.0, 
-          "average": 12858333.470588235
-        }, 
-        "East Asia & Pacific (developing only)": {
-          "count": 30, 
-          "sum": 33624774202.0, 
-          "average": 1120825806.7333333
-        }, 
-        "Denmark": {
-          "count": 34, 
-          "sum": 26634306.0, 
-          "average": 783361.9411764706
-        }, 
-        "Philippines": {
-          "count": 34, 
-          "sum": 1302069839.0, 
-          "average": 38296171.73529412
-        }, 
-        "Morocco": {
-          "count": 34, 
-          "sum": 438282436.0, 
-          "average": 12890659.88235294
-        }, 
-        "Namibia": {
-          "count": 34, 
-          "sum": 37411188.0, 
-          "average": 1100329.0588235294
-        }, 
-        "Congo Rep.": {
-          "count": 34, 
-          "sum": 41053493.0, 
-          "average": 1207455.6764705882
-        }, 
-        "Guinea-Bissau": {
-          "count": 34, 
-          "sum": 26313567.0, 
-          "average": 773928.4411764706
-        }, 
-        "Kiribati": {
-          "count": 34, 
-          "sum": 1596209.0, 
-          "average": 46947.32352941176
-        }, 
-        "Switzerland": {
-          "count": 34, 
-          "sum": 70177291.0, 
-          "average": 2064037.9705882352
-        }, 
-        "Grenada": {
-          "count": 34, 
-          "sum": 2214821.0, 
-          "average": 65141.794117647056
-        }, 
-        "Iraq": {
-          "count": 34, 
-          "sum": 161594810.5, 
-          "average": 4752788.544117647
-        }, 
-        "Portugal": {
-          "count": 34, 
-          "sum": 166778844.0, 
-          "average": 4905260.117647059
-        }, 
-        "Uruguay": {
-          "count": 34, 
-          "sum": 10231786.0, 
-          "average": 300934.8823529412
-        }, 
-        "Gambia The": {
-          "count": 34, 
-          "sum": 20347715.0, 
-          "average": 598462.2058823529
-        }, 
-        "Equatorial Guinea": {
-          "count": 32, 
-          "sum": 9467616.0, 
-          "average": 295863.0
-        }, 
-        "Lebanon": {
-          "count": 34, 
-          "sum": 17732560.0, 
-          "average": 521545.8823529412
-        }, 
-        "Djibouti": {
-          "count": 33, 
-          "sum": 5042603.0, 
-          "average": 152806.15151515152
-        }, 
-        "Antigua and Barbuda": {
-          "count": 32, 
-          "sum": 1571380.0, 
-          "average": 49105.625
-        }, 
-        "Low income": {
-          "count": 34, 
-          "sum": 14967094049.0, 
-          "average": 440208648.5
-        }, 
-        "High income": {
-          "count": 11, 
-          "sum": 3202088033.0, 
-          "average": 291098912.09090906
-        }, 
-        "Burundi": {
-          "count": 34, 
-          "sum": 200929517.0, 
-          "average": 5909691.676470588
-        }, 
-        "Least developed countries: UN classification": {
-          "count": 34, 
-          "sum": 15631733742.0, 
-          "average": 459756874.7647059
-        }, 
-        "Cyprus": {
-          "count": 34, 
-          "sum": 9902764.0, 
-          "average": 291257.76470588235
-        }, 
-        "Barbados": {
-          "count": 34, 
-          "sum": 5924330.0, 
-          "average": 174245.0
-        }, 
-        "Qatar": {
-          "count": 20, 
-          "sum": 547044.0, 
-          "average": 27352.2
-        }, 
-        "Italy": {
-          "count": 34, 
-          "sum": 637932611.0, 
-          "average": 18762723.852941178
-        }, 
-        "Bhutan": {
-          "count": 27, 
-          "sum": 18813267.5, 
-          "average": 696787.6851851852
-        }, 
-        "Sudan": {
-          "count": 34, 
-          "sum": 586325110.0, 
-          "average": 17244856.17647059
-        }, 
-        "Sub-Saharan Africa (developing only)": {
-          "count": 34, 
-          "sum": 14426357785.0, 
-          "average": 424304640.7352941
-        }, 
-        "Malta": {
-          "count": 34, 
-          "sum": 1022938.0, 
-          "average": 30086.41176470588
+          "sum": 4596947, 
+          "average": 170257.2962962963
         }, 
         "Netherlands": {
           "count": 34, 
-          "sum": 131626229.0, 
-          "average": 3871359.6764705884
+          "sum": 1126941587, 
+          "average": 33145340.79411765
+        }, 
+        "East Asia & Pacific (all income levels)": {
+          "count": 25, 
+          "sum": 15576741, 
+          "average": 623069.64
+        }, 
+        "Oman": {
+          "count": 31, 
+          "sum": 718963727, 
+          "average": 23192378.29032258
+        }, 
+        "Tanzania": {
+          "count": 34, 
+          "sum": 7037936, 
+          "average": 206998.11764705883
+        }, 
+        "Cabo Verde": {
+          "count": 34, 
+          "sum": 9131481, 
+          "average": 268572.9705882353
+        }, 
+        "Gabon": {
+          "count": 33, 
+          "sum": 17475938, 
+          "average": 529573.8787878788
+        }, 
+        "New Zealand": {
+          "count": 34, 
+          "sum": 4728712303, 
+          "average": 139079773.61764705
+        }, 
+        "European Union": {
+          "count": 34, 
+          "sum": 41367655, 
+          "average": 1216695.7352941176
+        }, 
+        "Jamaica": {
+          "count": 34, 
+          "sum": 60542020, 
+          "average": 1780647.6470588236
+        }, 
+        "Albania": {
+          "count": 34, 
+          "sum": 19958866, 
+          "average": 587025.4705882353
+        }, 
+        "Korea Rep.": {
+          "count": 34, 
+          "sum": 12680604230, 
+          "average": 372958947.9411765
+        }, 
+        "United Arab Emirates": {
+          "count": 25, 
+          "sum": 257617, 
+          "average": 10304.68
+        }, 
+        "Guam": {
+          "count": 32, 
+          "sum": 22721158787, 
+          "average": 710036212.09375
+        }, 
+        "India": {
+          "count": 34, 
+          "sum": 356607150, 
+          "average": 10488445.588235294
+        }, 
+        "Yemen Rep.": {
+          "count": 29, 
+          "sum": 17507196, 
+          "average": 603696.4137931034
+        }, 
+        "Madagascar": {
+          "count": 34, 
+          "sum": 47808237, 
+          "average": 1406124.6176470588
+        }, 
+        "Lesotho": {
+          "count": 34, 
+          "sum": 9501455993, 
+          "average": 279454588.0294118
+        }, 
+        "Kenya": {
+          "count": 34, 
+          "sum": 91721256, 
+          "average": 2697684.0
+        }, 
+        "Upper middle income": {
+          "count": 34, 
+          "sum": 41670463, 
+          "average": 1225601.8529411764
+        }, 
+        "Pacific island small states": {
+          "count": 34, 
+          "sum": 762947415, 
+          "average": 22439629.852941178
+        }, 
+        "Turkey": {
+          "count": 34, 
+          "sum": 379560, 
+          "average": 11163.529411764706
+        }, 
+        "Afghanistan": {
+          "count": 31, 
+          "sum": 188444019, 
+          "average": 6078839.322580645
+        }, 
+        "Bangladesh": {
+          "count": 14, 
+          "sum": 5410768, 
+          "average": 386483.4285714286
+        }, 
+        "Solomon Islands": {
+          "count": 34, 
+          "sum": 17732560, 
+          "average": 521545.8823529412
+        }, 
+        "Mongolia": {
+          "count": 34, 
+          "sum": 500293497, 
+          "average": 14714514.61764706
+        }, 
+        "France": {
+          "count": 34, 
+          "sum": 243755001, 
+          "average": 7169264.735294118
+        }, 
+        "Syrian Arab Republic": {
+          "count": 34, 
+          "sum": 223476092, 
+          "average": 6572826.235294118
+        }, 
+        "Rwanda": {
+          "count": 22, 
+          "sum": 112175705, 
+          "average": 5098895.681818182
+        }, 
+        "Somalia": {
+          "count": 33, 
+          "sum": 222913380, 
+          "average": 6754950.909090909
+        }, 
+        "Peru": {
+          "count": 34, 
+          "sum": 4629502, 
+          "average": 136161.82352941178
+        }, 
+        "Vanuatu": {
+          "count": 34, 
+          "sum": 91412971, 
+          "average": 2688616.794117647
+        }, 
+        "Norway": {
+          "count": 34, 
+          "sum": 269987178, 
+          "average": 7940799.352941177
+        }, 
+        "Cote d'Ivoire": {
+          "count": 34, 
+          "sum": 134727511, 
+          "average": 3962573.8529411764
+        }, 
+        "Benin": {
+          "count": 34, 
+          "sum": 305791138, 
+          "average": 8993857.0
+        }, 
+        "Other small states": {
+          "count": 34, 
+          "sum": 95770409, 
+          "average": 2816776.7352941176
+        }, 
+        "Venezuela RB": {
+          "count": 34, 
+          "sum": 3126026467, 
+          "average": 91941954.91176471
+        }, 
+        "Cuba": {
+          "count": 34, 
+          "sum": 274083970, 
+          "average": 8061293.235294118
+        }, 
+        "Togo": {
+          "count": 34, 
+          "sum": 104481897, 
+          "average": 3072996.970588235
+        }, 
+        "China": {
+          "count": 33, 
+          "sum": 711354159, 
+          "average": 21556186.636363637
+        }, 
+        "Dominican Republic": {
+          "count": 34, 
+          "sum": 338287633, 
+          "average": 9949636.264705881
+        }, 
+        "Congo Dem. Rep.": {
+          "count": 34, 
+          "sum": 64164959, 
+          "average": 1887204.6764705882
+        }, 
+        "French Polynesia": {
+          "count": 34, 
+          "sum": 62114444, 
+          "average": 1826895.4117647058
+        }, 
+        "Egypt Arab Rep.": {
+          "count": 34, 
+          "sum": 2063145, 
+          "average": 60680.73529411765
+        }, 
+        "Ghana": {
+          "count": 34, 
+          "sum": 4111988577, 
+          "average": 120940840.5
+        }, 
+        "Tonga": {
+          "count": 34, 
+          "sum": 4281985023, 
+          "average": 125940735.97058824
+        }, 
+        "Finland": {
+          "count": 32, 
+          "sum": 2126997737, 
+          "average": 66468679.28125
+        }, 
+        "Latin America & Caribbean (developing only)": {
+          "count": 34, 
+          "sum": 38478888, 
+          "average": 1131732.0
+        }, 
+        "Colombia": {
+          "count": 34, 
+          "sum": 34836519, 
+          "average": 1024603.5
+        }, 
+        "Libya": {
+          "count": 32, 
+          "sum": 65577104, 
+          "average": 2049284.5
+        }, 
+        "Indonesia": {
+          "count": 34, 
+          "sum": 370120223, 
+          "average": 10885888.911764706
+        }, 
+        "Central African Republic": {
+          "count": 34, 
+          "sum": 54031759, 
+          "average": 1589169.3823529412
+        }, 
+        "Iran Islamic Rep.": {
+          "count": 34, 
+          "sum": 33397755, 
+          "average": 982286.9117647059
+        }, 
+        "North America": {
+          "count": 34, 
+          "sum": 1850188481, 
+          "average": 54417308.26470588
+        }, 
+        "Sweden": {
+          "count": 34, 
+          "sum": 18106519, 
+          "average": 532544.6764705882
+        }, 
+        "Vietnam": {
+          "count": 34, 
+          "sum": 770091341, 
+          "average": 22649745.32352941
+        }, 
+        "Mali": {
+          "count": 34, 
+          "sum": 379849263, 
+          "average": 11172037.147058824
+        }, 
+        "Bulgaria": {
+          "count": 34, 
+          "sum": 360448761, 
+          "average": 10601434.147058824
+        }, 
+        "Mauritius": {
+          "count": 34, 
+          "sum": 299893308, 
+          "average": 8820391.411764706
+        }, 
+        "Romania": {
+          "count": 34, 
+          "sum": 1431655892, 
+          "average": 42107526.23529412
+        }, 
+        "Angola": {
+          "count": 34, 
+          "sum": 1193535797, 
+          "average": 35103994.02941176
+        }, 
+        "Central Europe and the Baltics": {
+          "count": 34, 
+          "sum": 597079809, 
+          "average": 17561170.852941178
+        }, 
+        "Chad": {
+          "count": 34, 
+          "sum": 346591989, 
+          "average": 10193882.029411765
+        }, 
+        "South Africa": {
+          "count": 34, 
+          "sum": 14265600, 
+          "average": 419576.4705882353
+        }, 
+        "St. Vincent and the Grenadines": {
+          "count": 34, 
+          "sum": 126056556, 
+          "average": 3707545.7647058824
+        }, 
+        "Fiji": {
+          "count": 34, 
+          "sum": 3091900, 
+          "average": 90938.23529411765
+        }, 
+        "Caribbean small states": {
+          "count": 30, 
+          "sum": 80855475, 
+          "average": 2695182.5
+        }, 
+        "Brunei Darussalam": {
+          "count": 34, 
+          "sum": 6934020048, 
+          "average": 203941766.11764705
+        }, 
+        "Malaysia": {
+          "count": 34, 
+          "sum": 12204566869, 
+          "average": 358957849.0882353
+        }, 
+        "Austria": {
+          "count": 34, 
+          "sum": 609714552, 
+          "average": 17932780.94117647
+        }, 
+        "High income: OECD": {
+          "count": 13, 
+          "sum": 369952117, 
+          "average": 28457855.153846152
+        }, 
+        "Mozambique": {
+          "count": 34, 
+          "sum": 280649429, 
+          "average": 8254394.970588235
+        }, 
+        "Uganda": {
+          "count": 34, 
+          "sum": 1858319266, 
+          "average": 54656449.0
+        }, 
+        "Hungary": {
+          "count": 34, 
+          "sum": 897206444, 
+          "average": 26388424.82352941
+        }, 
+        "Niger": {
+          "count": 17, 
+          "sum": 271325835, 
+          "average": 15960343.235294119
+        }, 
+        "United States": {
+          "count": 34, 
+          "sum": 87664536, 
+          "average": 2578368.705882353
+        }, 
+        "Brazil": {
+          "count": 34, 
+          "sum": 34182166, 
+          "average": 1005357.8235294118
+        }, 
+        "Virgin Islands (U.S.)": {
+          "count": 34, 
+          "sum": 105212459, 
+          "average": 3094484.088235294
+        }, 
+        "Kuwait": {
+          "count": 27, 
+          "sum": 41103182, 
+          "average": 1522340.0740740742
+        }, 
+        "Panama": {
+          "count": 31, 
+          "sum": 2376469981, 
+          "average": 76660321.96774194
+        }, 
+        "Guyana": {
+          "count": 34, 
+          "sum": 299361472, 
+          "average": 8804749.176470589
+        }, 
+        "Costa Rica": {
+          "count": 34, 
+          "sum": 2495941327, 
+          "average": 73410039.02941176
+        }, 
+        "Euro area": {
+          "count": 34, 
+          "sum": 2602692344, 
+          "average": 76549774.8235294
+        }, 
+        "Ireland": {
+          "count": 4, 
+          "sum": 363291354, 
+          "average": 90822838.5
+        }, 
+        "Pakistan": {
+          "count": 30, 
+          "sum": 142092199, 
+          "average": 4736406.633333334
+        }, 
+        "Nigeria": {
+          "count": 34, 
+          "sum": 94402463, 
+          "average": 2776543.029411765
+        }, 
+        "Lower middle income": {
+          "count": 30, 
+          "sum": 329172458, 
+          "average": 10972415.266666668
+        }, 
+        "Ecuador": {
+          "count": 34, 
+          "sum": 122849043, 
+          "average": 3613207.1470588236
+        }, 
+        "Algeria": {
+          "count": 34, 
+          "sum": 19259614, 
+          "average": 566459.2352941176
+        }, 
+        "El Salvador": {
+          "count": 34, 
+          "sum": 915895429, 
+          "average": 26938100.852941178
+        }, 
+        "Korea Dem. Rep.": {
+          "count": 34, 
+          "sum": 22186233, 
+          "average": 652536.2647058824
+        }, 
+        "Chile": {
+          "count": 34, 
+          "sum": 281125509, 
+          "average": 8268397.323529412
+        }, 
+        "Puerto Rico": {
+          "count": 24, 
+          "sum": 12783634, 
+          "average": 532651.4166666666
+        }, 
+        "Thailand": {
+          "count": 34, 
+          "sum": 5679659529, 
+          "average": 167048809.67647058
+        }, 
+        "Haiti": {
+          "count": 34, 
+          "sum": 1108385132, 
+          "average": 32599562.70588235
+        }, 
+        "Belize": {
+          "count": 34, 
+          "sum": 384727838, 
+          "average": 11315524.647058824
+        }, 
+        "Fragile and conflict affected situations": {
+          "count": 4, 
+          "sum": 66766783, 
+          "average": 16691695.75
+        }, 
+        "Sierra Leone": {
+          "count": 30, 
+          "sum": 23719088, 
+          "average": 790636.2666666667
+        }, 
+        "Nepal": {
+          "count": 34, 
+          "sum": 1098137234, 
+          "average": 32298153.94117647
+        }, 
+        "East Asia & Pacific (developing only)": {
+          "count": 30, 
+          "sum": 339598792, 
+          "average": 11319959.733333332
+        }, 
+        "Denmark": {
+          "count": 34, 
+          "sum": 401183831, 
+          "average": 11799524.44117647
+        }, 
+        "Philippines": {
+          "count": 34, 
+          "sum": 85940809, 
+          "average": 2527670.8529411764
+        }, 
+        "Morocco": {
+          "count": 34, 
+          "sum": 23292463, 
+          "average": 685072.4411764706
+        }, 
+        "Namibia": {
+          "count": 34, 
+          "sum": 4865894, 
+          "average": 143114.5294117647
+        }, 
+        "Congo Rep.": {
+          "count": 34, 
+          "sum": 333396286, 
+          "average": 9805773.11764706
+        }, 
+        "Guinea-Bissau": {
+          "count": 34, 
+          "sum": 10229118, 
+          "average": 300856.4117647059
+        }, 
+        "Kiribati": {
+          "count": 34, 
+          "sum": 177617172, 
+          "average": 5224034.470588235
+        }, 
+        "Switzerland": {
+          "count": 34, 
+          "sum": 178153914, 
+          "average": 5239821.0
+        }, 
+        "Grenada": {
+          "count": 34, 
+          "sum": 188289044, 
+          "average": 5537913.05882353
+        }, 
+        "Iraq": {
+          "count": 34, 
+          "sum": 8898285, 
+          "average": 261714.26470588235
+        }, 
+        "Portugal": {
+          "count": 34, 
+          "sum": 7779078, 
+          "average": 228796.41176470587
+        }, 
+        "Uruguay": {
+          "count": 34, 
+          "sum": 40098942, 
+          "average": 1179380.6470588236
+        }, 
+        "Gambia The": {
+          "count": 34, 
+          "sum": 77734169, 
+          "average": 2286299.088235294
+        }, 
+        "Equatorial Guinea": {
+          "count": 32, 
+          "sum": 2121739, 
+          "average": 66304.34375
+        }, 
+        "Lebanon": {
+          "count": 34, 
+          "sum": 31454062, 
+          "average": 925119.4705882353
+        }, 
+        "Djibouti": {
+          "count": 33, 
+          "sum": 10216814776, 
+          "average": 309600447.75757575
+        }, 
+        "Antigua and Barbuda": {
+          "count": 32, 
+          "sum": 1195720613, 
+          "average": 37366269.15625
+        }, 
+        "Low income": {
+          "count": 34, 
+          "sum": 13259607335, 
+          "average": 389988451.0294118
+        }, 
+        "High income": {
+          "count": 11, 
+          "sum": 2407479629, 
+          "average": 218861784.45454547
+        }, 
+        "Burundi": {
+          "count": 34, 
+          "sum": 6603597, 
+          "average": 194223.4411764706
+        }, 
+        "Least developed countries: UN classification": {
+          "count": 34, 
+          "sum": 1581084, 
+          "average": 46502.470588235294
+        }, 
+        "Cyprus": {
+          "count": 34, 
+          "sum": 563005380, 
+          "average": 16558981.764705881
+        }, 
+        "Barbados": {
+          "count": 34, 
+          "sum": 93676359, 
+          "average": 2755187.029411765
+        }, 
+        "Qatar": {
+          "count": 20, 
+          "sum": 292008161, 
+          "average": 14600408.05
+        }, 
+        "Italy": {
+          "count": 34, 
+          "sum": 12259956854, 
+          "average": 360586966.2941176
+        }, 
+        "Bhutan": {
+          "count": 27, 
+          "sum": 549556397, 
+          "average": 20353940.62962963
+        }, 
+        "Sudan": {
+          "count": 34, 
+          "sum": 935560, 
+          "average": 27516.470588235294
+        }, 
+        "Sub-Saharan Africa (developing only)": {
+          "count": 34, 
+          "sum": 123344857, 
+          "average": 3627789.911764706
+        }, 
+        "Malta": {
+          "count": 34, 
+          "sum": 2421224823, 
+          "average": 71212494.79411764
         }, 
         "Suriname": {
           "count": 34, 
-          "sum": 5109074.0, 
-          "average": 150266.88235294117
+          "sum": 102236157, 
+          "average": 3006945.794117647
         }, 
         "Middle East & North Africa (developing only)": {
           "count": 34, 
-          "sum": 2860351619.0, 
-          "average": 84127988.79411764
+          "sum": 265129191, 
+          "average": 7797917.382352941
         }, 
         "Israel": {
           "count": 34, 
-          "sum": 17543112.0, 
-          "average": 515973.8823529412
+          "sum": 163646325, 
+          "average": 4813127.205882353
         }, 
         "Bahamas The": {
           "count": 34, 
-          "sum": 1901814.0, 
+          "sum": 1901814, 
           "average": 55935.705882352944
         }, 
         "Iceland": {
           "count": 34, 
-          "sum": 775216.0, 
-          "average": 22800.470588235294
+          "sum": 2418097472, 
+          "average": 71120513.88235295
         }, 
         "Zambia": {
           "count": 34, 
-          "sum": 196376461.0, 
-          "average": 5775778.264705882
+          "sum": 150982331, 
+          "average": 4440656.794117647
         }, 
         "Sub-Saharan Africa (all income levels)": {
           "count": 34, 
-          "sum": 14436229588.0, 
-          "average": 424594987.88235295
+          "sum": 280123035, 
+          "average": 8238912.794117647
         }, 
         "Senegal": {
           "count": 34, 
-          "sum": 183928189.0, 
-          "average": 5409652.617647059
+          "sum": 275873326, 
+          "average": 8113921.352941177
         }, 
         "Papua New Guinea": {
           "count": 34, 
-          "sum": 144812647.0, 
-          "average": 4259195.5
+          "sum": 63276370, 
+          "average": 1861069.705882353
         }, 
         "Malawi": {
           "count": 34, 
-          "sum": 307424127.0, 
-          "average": 9041886.088235294
+          "sum": 448338395, 
+          "average": 13186423.38235294
         }, 
         "Zimbabwe": {
           "count": 34, 
-          "sum": 259926881.0, 
-          "average": 7644908.264705882
+          "sum": 98387450, 
+          "average": 2893748.529411765
         }, 
         "Jordan": {
           "count": 33, 
-          "sum": 31136729.0, 
-          "average": 943537.2424242424
+          "sum": 404074086, 
+          "average": 12244669.272727273
         }, 
         "Poland": {
           "count": 34, 
-          "sum": 504156033.0, 
-          "average": 14828118.61764706
+          "sum": 64964831, 
+          "average": 1910730.3235294118
         }, 
         "Mauritania": {
           "count": 34, 
-          "sum": 44598942.0, 
-          "average": 1311733.5882352942
+          "sum": 33469250, 
+          "average": 984389.7058823529
         }, 
         "Small states": {
           "count": 34, 
-          "sum": 473518157.0, 
-          "average": 13927004.61764706
+          "sum": 112767114, 
+          "average": 3316679.8235294116
         }, 
         "New Caledonia": {
           "count": 34, 
-          "sum": 2516262.0, 
-          "average": 74007.70588235294
+          "sum": 104018678, 
+          "average": 3059372.882352941
         }, 
         "Trinidad and Tobago": {
           "count": 34, 
-          "sum": 37983988.0, 
-          "average": 1117176.1176470588
+          "sum": 985099293, 
+          "average": 28973508.61764706
         }, 
         "Japan": {
           "count": 23, 
-          "sum": 636614830.0, 
-          "average": 27678905.652173914
+          "sum": 1035793281, 
+          "average": 45034490.47826087
         }, 
         "Honduras": {
           "count": 34, 
-          "sum": 106464668.0, 
-          "average": 3131313.7647058824
+          "sum": 206946379, 
+          "average": 6086658.205882353
         }, 
         "Myanmar": {
           "count": 34, 
-          "sum": 1112852925.0, 
-          "average": 32730968.38235294
+          "sum": 76751191, 
+          "average": 2257387.970588235
         }, 
         "Mexico": {
           "count": 34, 
-          "sum": 859191057.0, 
-          "average": 25270325.20588235
+          "sum": 814678642, 
+          "average": 23961136.529411763
         }, 
         "Tunisia": {
           "count": 34, 
-          "sum": 116848845.0, 
-          "average": 3436730.7352941176
+          "sum": 160888921, 
+          "average": 4732027.088235294
         }, 
         "Nicaragua": {
           "count": 34, 
-          "sum": 72323481.0, 
-          "average": 2127161.205882353
-        }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 12021096.0, 
-          "average": 353561.64705882355
+          "sum": 372130137, 
+          "average": 10945004.029411765
         }, 
         "United Kingdom": {
           "count": 34, 
-          "sum": 416915414.0, 
-          "average": 12262218.05882353
+          "sum": 294102168, 
+          "average": 8650063.764705881
         }, 
         "High income: nonOECD": {
           "count": 34, 
-          "sum": 1772612371.0, 
-          "average": 52135657.97058824
+          "sum": 35713537, 
+          "average": 1050398.1470588236
         }, 
         "Greece": {
           "count": 34, 
-          "sum": 98030368.0, 
-          "average": 2883246.117647059
+          "sum": 8875974588, 
+          "average": 261058076.11764705
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 78039303.0, 
-          "average": 2295273.617647059
+          "count": 4, 
+          "sum": 1702686358, 
+          "average": 425671589.5
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 22350431.0, 
-          "average": 827793.7407407408
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 10575207803.0, 
-          "average": 311035523.61764705
+          "sum": 1569016659, 
+          "average": 46147548.794117644
         }
       }, 
       "development.[0].Data.Rural Development.Surface Area": {
@@ -6519,9 +6414,9 @@ development_bar = [
           "average": 17360.0
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 164457358.0, 
-          "average": 5139292.4375
+          "count": 15, 
+          "sum": 77171550.0, 
+          "average": 5144770.0
         }, 
         "Argentina": {
           "count": 34, 
@@ -6544,8 +6439,8 @@ development_bar = [
           "average": 274220.0
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 431552820.0, 
+          "count": 10, 
+          "sum": 359627350.0, 
           "average": 35962735.0
         }, 
         "Bahrain": {
@@ -6593,10 +6488,10 @@ development_bar = [
           "sum": 3006990.0, 
           "average": 111370.0
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 9900.0, 
-          "average": 300.0
+        "Netherlands": {
+          "count": 34, 
+          "sum": 1412060.0, 
+          "average": 41531.17647058824
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -6919,9 +6814,9 @@ development_bar = [
           "average": 18270.0
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 14789750.0, 
-          "average": 434992.64705882355
+          "count": 30, 
+          "sum": 13049700.0, 
+          "average": 434990.0
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -7004,13 +6899,13 @@ development_bar = [
           "average": 2672511.0588235296
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 2389520.0, 
+          "count": 4, 
+          "sum": 281120.0, 
           "average": 70280.0
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 27067400.0, 
+          "count": 30, 
+          "sum": 23883000.0, 
           "average": 796100.0
         }, 
         "Nigeria": {
@@ -7069,14 +6964,14 @@ development_bar = [
           "average": 22970.0
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 501210802.0, 
-          "average": 14741494.176470589
+          "count": 4, 
+          "sum": 58962312.0, 
+          "average": 14740578.0
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 2452600.0, 
-          "average": 72135.29411764706
+          "count": 30, 
+          "sum": 2163400.0, 
+          "average": 72113.33333333333
         }, 
         "Nepal": {
           "count": 34, 
@@ -7233,11 +7128,6 @@ development_bar = [
           "sum": 10880.0, 
           "average": 320.0
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 1412060.0, 
-          "average": 41531.17647058824
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 5569880.0, 
@@ -7353,11 +7243,6 @@ development_bar = [
           "sum": 4432580.0, 
           "average": 130370.0
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 63274.0, 
-          "average": 1861.0
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 8282740.0, 
@@ -7374,19 +7259,14 @@ development_bar = [
           "average": 131960.0
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 13829506.0, 
-          "average": 406750.17647058825
+          "count": 4, 
+          "sum": 1627000.0, 
+          "average": 406750.0
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 15706710.0, 
-          "average": 581730.0
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 693755884.0, 
-          "average": 20404584.82352941
+          "sum": 63274.0, 
+          "average": 1861.0
         }
       }, 
       "development.[0].Data.Health.Life Expectancy at Birth, Male": {
@@ -7441,9 +7321,9 @@ development_bar = [
           "average": 51.97123529411765
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 1917.048323263555, 
-          "average": 59.90776010198609
+          "count": 15, 
+          "sum": 859.7762673872279, 
+          "average": 57.318417825815196
         }, 
         "Argentina": {
           "count": 34, 
@@ -7466,9 +7346,9 @@ development_bar = [
           "average": 49.43202941176471
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 841.4296582831911, 
-          "average": 70.11913819026593
+          "count": 10, 
+          "sum": 698.852927611338, 
+          "average": 69.8852927611338
         }, 
         "Bahrain": {
           "count": 31, 
@@ -7515,10 +7395,10 @@ development_bar = [
           "sum": 1363.9689999999998, 
           "average": 50.51737037037037
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 2141.9100000000003, 
-          "average": 64.90636363636364
+        "Netherlands": {
+          "count": 34, 
+          "sum": 2556.400000000001, 
+          "average": 75.18823529411765
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -7841,9 +7721,9 @@ development_bar = [
           "average": 64.31208823529411
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 2263.1213606965093, 
-          "average": 66.56239296166206
+          "count": 30, 
+          "sum": 2001.7553926222822, 
+          "average": 66.7251797540761
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -7926,14 +7806,14 @@ development_bar = [
           "average": 74.12659082510231
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 2503.0000000000005, 
-          "average": 73.61764705882354
+          "count": 4, 
+          "sum": 279.79200000000003, 
+          "average": 69.94800000000001
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 2102.1499999999996, 
-          "average": 61.82794117647059
+          "count": 30, 
+          "sum": 1870.9759999999994, 
+          "average": 62.36586666666667
         }, 
         "Nigeria": {
           "count": 34, 
@@ -7991,14 +7871,14 @@ development_bar = [
           "average": 68.59129411764705
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 1835.6821910178412, 
-          "average": 53.99065267699533
+          "count": 4, 
+          "sum": 199.07685685498143, 
+          "average": 49.76921421374535
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 1341.698, 
-          "average": 39.461705882352945
+          "count": 30, 
+          "sum": 1180.001, 
+          "average": 39.33336666666666
         }, 
         "Nepal": {
           "count": 34, 
@@ -8155,11 +8035,6 @@ development_bar = [
           "sum": 2537.1090000000004, 
           "average": 74.62085294117647
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 2556.400000000001, 
-          "average": 75.18823529411765
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 2202.3099999999995, 
@@ -8275,11 +8150,6 @@ development_bar = [
           "sum": 2175.705, 
           "average": 63.991323529411765
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 1868.9710000000002, 
-          "average": 54.96973529411765
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 2534.6499999999996, 
@@ -8296,19 +8166,14 @@ development_bar = [
           "average": 74.73388235294118
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 2282.639, 
-          "average": 67.1364411764706
+          "count": 4, 
+          "sum": 258.736, 
+          "average": 64.684
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 1407.1120000000003, 
-          "average": 52.11525925925926
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 1710.032895846804, 
-          "average": 50.29508517196483
+          "sum": 1868.9710000000002, 
+          "average": 54.96973529411765
         }
       }, 
       "development.[0].Data.Health.Life Expectancy at Birth, Total": {
@@ -8363,9 +8228,9 @@ development_bar = [
           "average": 52.86863845050215
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 1940.6215714923985, 
-          "average": 60.64442410913746
+          "count": 15, 
+          "sum": 863.6974889682147, 
+          "average": 57.57983259788097
         }, 
         "Argentina": {
           "count": 34, 
@@ -8388,9 +8253,9 @@ development_bar = [
           "average": 50.4688730272597
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 881.4647923977319, 
-          "average": 73.45539936647766
+          "count": 10, 
+          "sum": 732.2705832937559, 
+          "average": 73.22705832937558
         }, 
         "Bahrain": {
           "count": 31, 
@@ -8437,10 +8302,10 @@ development_bar = [
           "sum": 1398.6143658536585, 
           "average": 51.80053206865403
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 2143.766097560976, 
-          "average": 64.96260901699928
+        "Netherlands": {
+          "count": 34, 
+          "sum": 2647.307317073171, 
+          "average": 77.8619799139168
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -8763,9 +8628,9 @@ development_bar = [
           "average": 66.55432639885223
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 2358.0817816941594, 
-          "average": 69.35534652041645
+          "count": 30, 
+          "sum": 2087.0482435855333, 
+          "average": 69.56827478618445
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -8848,14 +8713,14 @@ development_bar = [
           "average": 77.32112917997937
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 2591.3604878048773, 
-          "average": 76.21648493543759
+          "count": 4, 
+          "sum": 290.65395121951224, 
+          "average": 72.66348780487806
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 2125.436341463415, 
-          "average": 62.51283357245338
+          "count": 30, 
+          "sum": 1892.5681951219515, 
+          "average": 63.08560650406505
         }, 
         "Nigeria": {
           "count": 34, 
@@ -8913,14 +8778,14 @@ development_bar = [
           "average": 71.18706169296988
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 1891.7520291891728, 
-          "average": 55.639765564387424
+          "count": 4, 
+          "sum": 206.0586880207053, 
+          "average": 51.51467200517632
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 1355.9643414634147, 
-          "average": 39.88130416068867
+          "count": 30, 
+          "sum": 1193.249292682927, 
+          "average": 39.77497642276424
         }, 
         "Nepal": {
           "count": 34, 
@@ -9077,11 +8942,6 @@ development_bar = [
           "sum": 2613.634365853659, 
           "average": 76.87159899569585
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 2647.307317073171, 
-          "average": 77.8619799139168
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 2311.462682926829, 
@@ -9197,11 +9057,6 @@ development_bar = [
           "sum": 2272.1674390243907, 
           "average": 66.82845408895267
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 1925.7388048780485, 
-          "average": 56.63937661406026
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 2618.8207317073175, 
@@ -9218,19 +9073,14 @@ development_bar = [
           "average": 77.40385365853659
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 2355.5346097560973, 
-          "average": 69.28042969870876
+          "count": 4, 
+          "sum": 267.2945365853659, 
+          "average": 66.82363414634148
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 1440.373463414634, 
-          "average": 53.34716531165313
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 1751.4942331170103, 
-          "average": 51.51453626814734
+          "sum": 1925.7388048780485, 
+          "average": 56.63937661406026
         }
       }, 
       "development.[0].Data.Rural Development.Agricultural Land": {
@@ -9285,9 +9135,9 @@ development_bar = [
           "average": 12463.235294117647
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 83751143.0, 
-          "average": 2617223.21875
+          "count": 15, 
+          "sum": 39276686.0, 
+          "average": 2618445.7333333334
         }, 
         "Argentina": {
           "count": 34, 
@@ -9310,9 +9160,9 @@ development_bar = [
           "average": 100405.88235294117
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 159683206.0, 
-          "average": 13306933.833333334
+          "count": 10, 
+          "sum": 133228090.0, 
+          "average": 13322809.0
         }, 
         "Bahrain": {
           "count": 31, 
@@ -9359,10 +9209,10 @@ development_bar = [
           "sum": 700470.0, 
           "average": 25943.333333333332
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 2710.0, 
-          "average": 82.12121212121212
+        "Netherlands": {
+          "count": 34, 
+          "sum": 669240.0, 
+          "average": 19683.529411764706
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -9685,9 +9535,9 @@ development_bar = [
           "average": 3983.470588235294
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 878935.0, 
-          "average": 25851.029411764706
+          "count": 30, 
+          "sum": 775210.0, 
+          "average": 25840.333333333332
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -9770,14 +9620,14 @@ development_bar = [
           "average": 1223043.2088235295
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 1647401.0, 
-          "average": 48452.970588235294
+          "count": 4, 
+          "sum": 229080.0, 
+          "average": 57270.0
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 8964600.0, 
-          "average": 263664.70588235295
+          "count": 30, 
+          "sum": 7951600.0, 
+          "average": 265053.3333333333
         }, 
         "Nigeria": {
           "count": 34, 
@@ -9835,14 +9685,14 @@ development_bar = [
           "average": 1334.4117647058824
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 166388584.00000003, 
-          "average": 4893781.882352941
+          "count": 4, 
+          "sum": 18235760.0, 
+          "average": 4558940.0
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 1030238.7000000001, 
-          "average": 30301.138235294115
+          "count": 30, 
+          "sum": 921078.7000000001, 
+          "average": 30702.623333333333
         }, 
         "Nepal": {
           "count": 34, 
@@ -9999,11 +9849,6 @@ development_bar = [
           "sum": 3857.0, 
           "average": 113.44117647058823
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 669240.0, 
-          "average": 19683.529411764706
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 27658.0, 
@@ -10119,11 +9964,6 @@ development_bar = [
           "sum": 1543790.0, 
           "average": 45405.58823529412
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 46130.0, 
-          "average": 1356.764705882353
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 6015570.0, 
@@ -10140,19 +9980,14 @@ development_bar = [
           "average": 84699.38235294117
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 6101270.0, 
-          "average": 179449.11764705883
+          "count": 4, 
+          "sum": 530000.0, 
+          "average": 132500.0
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 6992685.0, 
-          "average": 258988.33333333334
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 256817369.70000002, 
-          "average": 7553452.05
+          "sum": 46130.0, 
+          "average": 1356.764705882353
         }
       }, 
       "development.[0].Data.Health.Life Expectancy at Birth, Female": {
@@ -10207,9 +10042,9 @@ development_bar = [
           "average": 53.81091176470588
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 1965.4113360454076, 
-          "average": 61.419104251418986
+          "count": 15, 
+          "sum": 867.8455513449643, 
+          "average": 57.856370089664296
         }, 
         "Argentina": {
           "count": 34, 
@@ -10232,9 +10067,9 @@ development_bar = [
           "average": 51.557558823529405
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 923.4982195603877, 
-          "average": 76.95818496336565
+          "count": 10, 
+          "sum": 767.3545785017387, 
+          "average": 76.73545785017389
         }, 
         "Bahrain": {
           "count": 31, 
@@ -10281,10 +10116,10 @@ development_bar = [
           "sum": 1434.992, 
           "average": 53.14785185185185
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 2145.715, 
-          "average": 65.02166666666668
+        "Netherlands": {
+          "count": 34, 
+          "sum": 2742.7599999999998, 
+          "average": 80.66941176470588
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -10607,9 +10442,9 @@ development_bar = [
           "average": 68.90867647058823
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 2457.1385095585483, 
-          "average": 72.26877969289849
+          "count": 30, 
+          "sum": 2175.9986546580044, 
+          "average": 72.53328848860015
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -10692,14 +10527,14 @@ development_bar = [
           "average": 80.68072607582167
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 2684.1389999999997, 
-          "average": 78.94526470588235
+          "count": 4, 
+          "sum": 302.059, 
+          "average": 75.51474999999999
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 2149.8869999999997, 
-          "average": 63.2319705882353
+          "count": 30, 
+          "sum": 1915.2399999999996, 
+          "average": 63.84133333333333
         }, 
         "Nigeria": {
           "count": 34, 
@@ -10757,14 +10592,14 @@ development_bar = [
           "average": 73.91261764705882
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 1945.7809631134523, 
-          "average": 57.22885185627802
+          "count": 4, 
+          "sum": 212.94592094907551, 
+          "average": 53.23648023726888
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 1370.9440000000002, 
-          "average": 40.321882352941174
+          "count": 30, 
+          "sum": 1207.1600000000003, 
+          "average": 40.23866666666667
         }, 
         "Nepal": {
           "count": 34, 
@@ -10921,11 +10756,6 @@ development_bar = [
           "sum": 2693.9859999999994, 
           "average": 79.23488235294117
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 2742.7599999999998, 
-          "average": 80.66941176470588
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 2426.073, 
@@ -11041,11 +10871,6 @@ development_bar = [
           "sum": 2373.453, 
           "average": 69.80744117647059
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 1985.3449999999998, 
-          "average": 58.3925
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 2707.1999999999994, 
@@ -11062,19 +10887,14 @@ development_bar = [
           "average": 80.20732352941177
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 2432.0750000000007, 
-          "average": 71.53161764705882
+          "count": 4, 
+          "sum": 276.281, 
+          "average": 69.07025
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 1475.2979999999998, 
-          "average": 54.64066666666667
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 1795.1168906139396, 
-          "average": 52.79755560629234
+          "sum": 1985.3449999999998, 
+          "average": 58.3925
         }
       }, 
       "development.[0].Data.Health.Total Population": {
@@ -11129,9 +10949,9 @@ development_bar = [
           "average": 938704.8823529412
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 39868287686.0, 
-          "average": 1245883990.1875
+          "count": 15, 
+          "sum": 15623104340.0, 
+          "average": 1041540289.3333334
         }, 
         "Argentina": {
           "count": 34, 
@@ -11154,9 +10974,9 @@ development_bar = [
           "average": 10703610.235294119
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 12265148038.0, 
-          "average": 1022095669.8333334
+          "count": 10, 
+          "sum": 10140189097.0, 
+          "average": 1014018909.7
         }, 
         "Bahrain": {
           "count": 31, 
@@ -11203,10 +11023,10 @@ development_bar = [
           "sum": 75196543.0, 
           "average": 2785057.1481481483
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 7992597.0, 
-          "average": 242199.9090909091
+        "Netherlands": {
+          "count": 34, 
+          "sum": 525590107.0, 
+          "average": 15458532.55882353
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -11529,9 +11349,9 @@ development_bar = [
           "average": 768064.0294117647
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 211417683.0, 
-          "average": 6218167.147058823
+          "count": 30, 
+          "sum": 189449776.0, 
+          "average": 6314992.533333333
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -11614,14 +11434,14 @@ development_bar = [
           "average": 314645926.7941176
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 129835355.0, 
-          "average": 3818686.911764706
+          "count": 4, 
+          "sum": 13725350.0, 
+          "average": 3431337.5
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 4363237295.0, 
-          "average": 128330508.6764706
+          "count": 30, 
+          "sum": 4037556208.0, 
+          "average": 134585206.93333334
         }, 
         "Nigeria": {
           "count": 34, 
@@ -11679,14 +11499,14 @@ development_bar = [
           "average": 220016.17647058822
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 10254744535.0, 
-          "average": 301610133.38235295
+          "count": 4, 
+          "sum": 803660386.0, 
+          "average": 200915096.5
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 145741054.0, 
-          "average": 4286501.588235294
+          "count": 30, 
+          "sum": 132869682.0, 
+          "average": 4428989.4
         }, 
         "Nepal": {
           "count": 34, 
@@ -11843,11 +11663,6 @@ development_bar = [
           "sum": 12596286.0, 
           "average": 370479.0
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 525590107.0, 
-          "average": 15458532.55882353
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 15016495.0, 
@@ -11963,11 +11778,6 @@ development_bar = [
           "sum": 157612125.0, 
           "average": 4635650.735294118
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 16551606.0, 
-          "average": 486811.9411764706
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 1994904966.0, 
@@ -11984,19 +11794,14 @@ development_bar = [
           "average": 10534518.647058824
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 165349927.0, 
-          "average": 4863233.147058823
+          "count": 4, 
+          "sum": 12992044.0, 
+          "average": 3248011.0
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 44505996.0, 
-          "average": 1648370.2222222222
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 14664419671.0, 
-          "average": 431306460.9117647
+          "sum": 16551606.0, 
+          "average": 486811.9411764706
         }
       }, 
       "development.[0].Data.Infrastructure.Mobile Cellular Subscriptions": {
@@ -12051,9 +11856,9 @@ development_bar = [
           "average": 139062.26470588235
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 2998778209.0, 
-          "average": 93711819.03125
+          "count": 15, 
+          "sum": 60891.0, 
+          "average": 4059.4
         }, 
         "Argentina": {
           "count": 34, 
@@ -12076,9 +11881,9 @@ development_bar = [
           "average": 1017008.7647058824
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 27003765.0, 
-          "average": 2250313.75
+          "count": 10, 
+          "sum": 9390358.0, 
+          "average": 939035.8
         }, 
         "Bahrain": {
           "count": 31, 
@@ -12125,10 +11930,10 @@ development_bar = [
           "sum": 9087677.0, 
           "average": 336580.6296296296
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 2960394.0, 
-          "average": 89708.90909090909
+        "Netherlands": {
+          "count": 34, 
+          "sum": 229372469.0, 
+          "average": 6746249.088235294
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -12451,9 +12256,9 @@ development_bar = [
           "average": 148970.0
         }, 
         "Caribbean small states": {
-          "count": 34, 
+          "count": 30, 
           "sum": 65193412.0, 
-          "average": 1917453.294117647
+          "average": 2173113.7333333334
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -12536,14 +12341,14 @@ development_bar = [
           "average": 133392868.23529412
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 57878102.0, 
-          "average": 1702297.1176470588
+          "count": 4, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
         "Pakistan": {
-          "count": 34, 
+          "count": 30, 
           "sum": 631673187.0, 
-          "average": 18578623.147058822
+          "average": 21055772.9
         }, 
         "Nigeria": {
           "count": 34, 
@@ -12601,14 +12406,14 @@ development_bar = [
           "average": 44232.117647058825
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 995721017.0, 
-          "average": 29285912.26470588
+          "count": 4, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
         "Sierra Leone": {
-          "count": 34, 
+          "count": 30, 
           "sum": 10844670.0, 
-          "average": 318960.8823529412
+          "average": 361489.0
         }, 
         "Nepal": {
           "count": 34, 
@@ -12765,11 +12570,6 @@ development_bar = [
           "sum": 4702967.0, 
           "average": 138322.5588235294
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 229372469.0, 
-          "average": 6746249.088235294
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 4627640.0, 
@@ -12885,11 +12685,6 @@ development_bar = [
           "sum": 28321436.0, 
           "average": 832983.4117647059
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 1004446.0, 
-          "average": 29542.529411764706
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 921918547.0, 
@@ -12906,19 +12701,14 @@ development_bar = [
           "average": 4346358.529411765
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 48437024.0, 
-          "average": 1424618.3529411764
+          "count": 4, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 16205631.0, 
-          "average": 600208.5555555555
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 1453188986.0, 
-          "average": 42740852.52941176
+          "sum": 1004446.0, 
+          "average": 29542.529411764706
         }
       }, 
       "development.[0].Data.Health.Birth Rate": {
@@ -12973,9 +12763,9 @@ development_bar = [
           "average": 38.321176470588235
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 949.2784768301101, 
-          "average": 29.664952400940944
+          "count": 15, 
+          "sum": 511.0293234708902, 
+          "average": 34.06862156472601
         }, 
         "Argentina": {
           "count": 34, 
@@ -12998,9 +12788,9 @@ development_bar = [
           "average": 46.410794117647065
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 193.6367610770282, 
-          "average": 16.136396756419018
+          "count": 10, 
+          "sum": 162.7415378071038, 
+          "average": 16.27415378071038
         }, 
         "Bahrain": {
           "count": 31, 
@@ -13047,10 +12837,10 @@ development_bar = [
           "sum": 1169.8950000000002, 
           "average": 43.32944444444444
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 1105.5420000000004, 
-          "average": 33.50127272727273
+        "Netherlands": {
+          "count": 34, 
+          "sum": 414.7, 
+          "average": 12.197058823529412
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -13373,9 +13163,9 @@ development_bar = [
           "average": 27.025352941176468
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 745.9967213411753, 
-          "average": 21.941080039446344
+          "count": 30, 
+          "sum": 631.4543619334643, 
+          "average": 21.048478731115477
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -13458,14 +13248,14 @@ development_bar = [
           "average": 11.105370959249218
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 549.1999999999999, 
-          "average": 16.15294117647059
+          "count": 4, 
+          "sum": 84.39999999999999, 
+          "average": 21.1
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 1193.4950000000003, 
-          "average": 35.102794117647065
+          "count": 30, 
+          "sum": 1023.8550000000002, 
+          "average": 34.1285
         }, 
         "Nigeria": {
           "count": 34, 
@@ -13523,14 +13313,14 @@ development_bar = [
           "average": 32.35838235294118
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 1327.2079210805368, 
-          "average": 39.03552709060403
+          "count": 4, 
+          "sum": 176.0359049098136, 
+          "average": 44.0089762274534
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 1483.107, 
-          "average": 43.62079411764706
+          "count": 30, 
+          "sum": 1290.638, 
+          "average": 43.02126666666666
         }, 
         "Nepal": {
           "count": 34, 
@@ -13687,11 +13477,6 @@ development_bar = [
           "sum": 447.3, 
           "average": 13.155882352941177
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 414.7, 
-          "average": 12.197058823529412
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 797.638, 
@@ -13807,11 +13592,6 @@ development_bar = [
           "sum": 1113.8720000000003, 
           "average": 32.76094117647059
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 1353.745, 
-          "average": 39.8160294117647
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 433.79999999999995, 
@@ -13828,19 +13608,14 @@ development_bar = [
           "average": 10.68235294117647
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 1040.2519999999997, 
-          "average": 30.595647058823527
+          "count": 4, 
+          "sum": 147.763, 
+          "average": 36.94075
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 807.0720000000002, 
-          "average": 29.891555555555556
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 1485.0836730682995, 
-          "average": 43.67893156083234
+          "sum": 1353.745, 
+          "average": 39.8160294117647
         }
       }, 
       "development.[0].Data.Infrastructure.Telephone Lines": {
@@ -13895,9 +13670,9 @@ development_bar = [
           "average": 26059.08823529412
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 725406053.0, 
-          "average": 22668939.15625
+          "count": 15, 
+          "sum": 74110200.0, 
+          "average": 4940680.0
         }, 
         "Argentina": {
           "count": 34, 
@@ -13920,9 +13695,9 @@ development_bar = [
           "average": 55097.132352941175
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 3910002337.0, 
-          "average": 325833528.0833333
+          "count": 10, 
+          "sum": 3109886212.0, 
+          "average": 310988621.2
         }, 
         "Bahrain": {
           "count": 31, 
@@ -13969,10 +13744,10 @@ development_bar = [
           "sum": 163037.0, 
           "average": 6038.407407407408
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 529773.0, 
-          "average": 16053.727272727272
+        "Netherlands": {
+          "count": 34, 
+          "sum": 243960700.0, 
+          "average": 7175314.705882353
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -14295,9 +14070,9 @@ development_bar = [
           "average": 70158.05882352941
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 30393645.0, 
-          "average": 893930.7352941176
+          "count": 30, 
+          "sum": 29551854.0, 
+          "average": 985061.8
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -14380,14 +14155,14 @@ development_bar = [
           "average": 135624804.6470588
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 47119127.0, 
-          "average": 1385856.6764705882
+          "count": 4, 
+          "sum": 2034600.0, 
+          "average": 508650.0
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 86233712.0, 
-          "average": 2536285.6470588236
+          "count": 30, 
+          "sum": 84980072.0, 
+          "average": 2832669.066666667
         }, 
         "Nigeria": {
           "count": 34, 
@@ -14445,14 +14220,14 @@ development_bar = [
           "average": 22872.441176470587
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 173855393.5, 
-          "average": 5113393.926470588
+          "count": 4, 
+          "sum": 3392771.5, 
+          "average": 848192.875
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 6468294.5, 
-          "average": 190243.95588235295
+          "count": 30, 
+          "sum": 567953.0, 
+          "average": 18931.766666666666
         }, 
         "Nepal": {
           "count": 34, 
@@ -14609,11 +14384,6 @@ development_bar = [
           "sum": 5447133.0, 
           "average": 160209.79411764705
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 243960700.0, 
-          "average": 7175314.705882353
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 1854921.0, 
@@ -14729,11 +14499,6 @@ development_bar = [
           "sum": 4344111.0, 
           "average": 127767.9705882353
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 307844.0, 
-          "average": 9054.235294117647
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 962957347.0, 
@@ -14750,19 +14515,14 @@ development_bar = [
           "average": 4653879.94117647
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 6912209.0, 
-          "average": 203300.26470588235
+          "count": 4, 
+          "sum": 210985.0, 
+          "average": 52746.25
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 2504227.0, 
-          "average": 92749.14814814815
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 101895238.0, 
-          "average": 2996918.7647058824
+          "sum": 307844.0, 
+          "average": 9054.235294117647
         }
       }, 
       "development.[0].Data.Health.Population Growth": {
@@ -14817,9 +14577,9 @@ development_bar = [
           "average": 2.2771278536936124
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 62.91856373595846, 
-          "average": 1.9662051167487016
+          "count": 15, 
+          "sum": 34.26645838673436, 
+          "average": 2.284430559115623
         }, 
         "Argentina": {
           "count": 34, 
@@ -14842,9 +14602,9 @@ development_bar = [
           "average": 2.7188507404595192
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 9.73747610103753, 
-          "average": 0.8114563417531274
+          "count": 10, 
+          "sum": 8.062674076855927, 
+          "average": 0.8062674076855927
         }, 
         "Bahrain": {
           "count": 31, 
@@ -14891,10 +14651,10 @@ development_bar = [
           "sum": 75.8846230906024, 
           "average": 2.810541595948237
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 82.44175467129035, 
-          "average": 2.498234990039102
+        "Netherlands": {
+          "count": 34, 
+          "sum": 18.381010409054905, 
+          "average": 0.5406179532074972
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -15217,9 +14977,9 @@ development_bar = [
           "average": 1.0633706384488741
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 26.546271512702255, 
-          "average": 0.7807726915500663
+          "count": 30, 
+          "sum": 22.139097890767015, 
+          "average": 0.7379699296922339
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -15302,14 +15062,14 @@ development_bar = [
           "average": 0.3455670542225136
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 32.05017634069698, 
-          "average": 0.942652245314617
+          "count": 4, 
+          "sum": 4.59955759129535, 
+          "average": 1.1498893978238376
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 87.25414438187111, 
-          "average": 2.5662983641726793
+          "count": 30, 
+          "sum": 73.85764320262953, 
+          "average": 2.46192144008765
         }, 
         "Nigeria": {
           "count": 34, 
@@ -15367,14 +15127,14 @@ development_bar = [
           "average": 2.4901653230665093
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 85.33426276112182, 
-          "average": 2.509831257680054
+          "count": 4, 
+          "sum": 10.628162533232569, 
+          "average": 2.657040633308142
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 67.96566007475467, 
-          "average": 1.9989900021986662
+          "count": 30, 
+          "sum": 58.49510210998312, 
+          "average": 1.9498367369994372
         }, 
         "Nepal": {
           "count": 34, 
@@ -15531,11 +15291,6 @@ development_bar = [
           "sum": 27.802841108267398, 
           "average": 0.817730620831394
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 18.381010409054905, 
-          "average": 0.5406179532074972
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 38.51010791258953, 
@@ -15651,11 +15406,6 @@ development_bar = [
           "sum": 67.0065615498225, 
           "average": 1.9707812220536032
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 90.10973937407647, 
-          "average": 2.650286452178719
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 12.526230372049495, 
@@ -15672,19 +15422,14 @@ development_bar = [
           "average": 0.47765260613077404
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 79.21380113650721, 
-          "average": 2.3298176804855073
+          "count": 4, 
+          "sum": 11.27783988645542, 
+          "average": 2.8194599716138553
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 54.26713148583345, 
-          "average": 2.0098937587345724
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 94.96148664847291, 
-          "average": 2.7929849014256733
+          "sum": 90.10973937407647, 
+          "average": 2.650286452178719
         }
       }, 
       "development.[0].Data.Infrastructure.Mobile Cellular Subscriptions per 100 People": {
@@ -15739,9 +15484,9 @@ development_bar = [
           "average": 11.865975336512438
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 191.20899762760888, 
-          "average": 5.9752811758627775
+          "count": 15, 
+          "sum": 0.005114726946626586, 
+          "average": 0.0003409817964417724
         }, 
         "Argentina": {
           "count": 34, 
@@ -15764,9 +15509,9 @@ development_bar = [
           "average": 6.565195572645798
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 2.577190534554092, 
-          "average": 0.21476587787950766
+          "count": 10, 
+          "sum": 0.923037933961395, 
+          "average": 0.0923037933961395
         }, 
         "Bahrain": {
           "count": 31, 
@@ -15813,10 +15558,10 @@ development_bar = [
           "sum": 232.14803238775227, 
           "average": 8.598075273620454
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 941.703281320398, 
-          "average": 28.53646307031509
+        "Netherlands": {
+          "count": 34, 
+          "sum": 1403.841644534956, 
+          "average": 41.28946013338106
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -16139,9 +15884,9 @@ development_bar = [
           "average": 17.528263448678132
         }, 
         "Caribbean small states": {
-          "count": 34, 
+          "count": 30, 
           "sum": 956.4147080186606, 
-          "average": 28.129844353490018
+          "average": 31.880490267288685
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -16224,14 +15969,14 @@ development_bar = [
           "average": 40.736399897928884
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 1377.7381759828727, 
-          "average": 40.521711058319795
+          "count": 4, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
         "Pakistan": {
-          "count": 34, 
+          "count": 30, 
           "sum": 369.4427310030909, 
-          "average": 10.865962676561496
+          "average": 12.31475770010303
         }, 
         "Nigeria": {
           "count": 34, 
@@ -16289,14 +16034,14 @@ development_bar = [
           "average": 15.201982205984296
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 243.50740899803532, 
-          "average": 7.161982617589273
+          "count": 4, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
         "Sierra Leone": {
-          "count": 34, 
+          "count": 30, 
           "sum": 191.1979337227553, 
-          "average": 5.6234686389045665
+          "average": 6.373264457425176
         }, 
         "Nepal": {
           "count": 34, 
@@ -16453,11 +16198,6 @@ development_bar = [
           "sum": 1123.3446889688264, 
           "average": 33.03954967555372
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 1403.841644534956, 
-          "average": 41.28946013338106
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 899.8312856438498, 
@@ -16573,11 +16313,6 @@ development_bar = [
           "sum": 492.4562651208033, 
           "average": 14.484007797670685
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 147.31657818614912, 
-          "average": 4.3328405348867385
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 1518.7942003756548, 
@@ -16594,19 +16329,14 @@ development_bar = [
           "average": 39.30231978171593
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 779.7453053607551, 
-          "average": 22.933685451786914
+          "count": 4, 
+          "sum": 0.0, 
+          "average": 0.0
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 834.6034544949262, 
-          "average": 30.911239055367634
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 235.60697435364537, 
-          "average": 6.929616892754275
+          "sum": 147.31657818614912, 
+          "average": 4.3328405348867385
         }
       }, 
       "development.[0].Data.Rural Development.Rural Population Growth": {
@@ -16661,9 +16391,9 @@ development_bar = [
           "average": 2.0976616360457836
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 49.793933241909905, 
-          "average": 1.5560604138096845
+          "count": 15, 
+          "sum": 28.578748324306112, 
+          "average": 1.905249888287074
         }, 
         "Argentina": {
           "count": 34, 
@@ -16686,9 +16416,9 @@ development_bar = [
           "average": 2.0139026145256502
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": -1.9447169257506274, 
-          "average": -0.16205974381255225
+          "count": 10, 
+          "sum": -1.5318888587733863, 
+          "average": -0.15318888587733862
         }, 
         "Bahrain": {
           "count": 31, 
@@ -16735,10 +16465,10 @@ development_bar = [
           "sum": 37.57124287009251, 
           "average": 1.3915275137071301
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 52.95286720302419, 
-          "average": 1.6046323394855817
+        "Netherlands": {
+          "count": 34, 
+          "sum": -96.04826523613103, 
+          "average": -2.824948977533265
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -17061,9 +16791,9 @@ development_bar = [
           "average": 0.2487960424487113
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 18.985135843788356, 
-          "average": 0.5583863483467164
+          "count": 30, 
+          "sum": 16.494304381262666, 
+          "average": 0.5498101460420889
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -17146,14 +16876,14 @@ development_bar = [
           "average": -0.27615222883186213
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 13.357817606625696, 
-          "average": 0.3928769884301676
+          "count": 4, 
+          "sum": 2.055661069012182, 
+          "average": 0.5139152672530455
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 72.34537529582217, 
-          "average": 2.1278051557594755
+          "count": 30, 
+          "sum": 60.68626008971624, 
+          "average": 2.022875336323875
         }, 
         "Nigeria": {
           "count": 34, 
@@ -17211,14 +16941,14 @@ development_bar = [
           "average": 2.779421849075019
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 66.31035182983423, 
-          "average": 1.9503044655833597
+          "count": 4, 
+          "sum": 8.69875545803789, 
+          "average": 2.1746888645094726
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 52.93395551749968, 
-          "average": 1.5568810446323438
+          "count": 30, 
+          "sum": 45.89750892185075, 
+          "average": 1.5299169640616919
         }, 
         "Nepal": {
           "count": 34, 
@@ -17375,11 +17105,6 @@ development_bar = [
           "sum": -41.24685910337387, 
           "average": -1.2131429148051138
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": -96.04826523613103, 
-          "average": -2.824948977533265
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 23.147960828106132, 
@@ -17495,11 +17220,6 @@ development_bar = [
           "sum": 48.868971361719176, 
           "average": 1.4373226871093874
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 82.59236209525712, 
-          "average": 2.4291871204487387
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": -5.874595344540006, 
@@ -17516,941 +17236,14 @@ development_bar = [
           "average": -0.4573017500827642
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 42.284410430006105, 
-          "average": 1.2436591302942972
-        }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 10.719184538849412, 
-          "average": 0.3970068347722004
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
-          "count": 34, 
-          "sum": 76.51648825019882, 
-          "average": 2.2504849485352594
-        }
-      }, 
-      "development.[0].Data.Urban Development.Urban Population": {
-        "Canada": {
-          "count": 5, 
-          "sum": 404.68100000000004, 
-          "average": 80.9362
-        }, 
-        "Sao Tome and Principe": {
-          "count": 34, 
-          "sum": 1653.2439999999997, 
-          "average": 48.62482352941176
-        }, 
-        "Lao PDR": {
-          "count": 34, 
-          "sum": 697.0250000000001, 
-          "average": 20.500735294117646
-        }, 
-        "Arab World": {
-          "count": 34, 
-          "sum": 1751.410081891975, 
-          "average": 51.51206123211691
-        }, 
-        "Latin America & Caribbean (all income levels)": {
-          "count": 34, 
-          "sum": 2465.4948371549785, 
-          "average": 72.51455403396997
-        }, 
-        "Cambodia": {
-          "count": 31, 
-          "sum": 534.981, 
-          "average": 17.257451612903225
-        }, 
-        "Ethiopia": {
-          "count": 34, 
-          "sum": 470.3530000000001, 
-          "average": 13.833911764705883
-        }, 
-        "Aruba": {
-          "count": 34, 
-          "sum": 1622.368, 
-          "average": 47.71670588235294
-        }, 
-        "Sri Lanka": {
-          "count": 34, 
-          "sum": 629.249, 
-          "average": 18.507323529411764
-        }, 
-        "Swaziland": {
-          "count": 34, 
-          "sum": 742.242, 
-          "average": 21.83064705882353
-        }, 
-        "South Asia": {
-          "count": 32, 
-          "sum": 839.1679032569075, 
-          "average": 26.22399697677836
-        }, 
-        "Argentina": {
-          "count": 34, 
-          "sum": 2984.038, 
-          "average": 87.76582352941176
-        }, 
-        "Bolivia": {
-          "count": 34, 
-          "sum": 1973.081, 
-          "average": 58.03179411764705
-        }, 
-        "Cameroon": {
-          "count": 34, 
-          "sum": 1449.658, 
-          "average": 42.637
-        }, 
-        "Burkina Faso": {
-          "count": 34, 
-          "sum": 567.5269999999999, 
-          "average": 16.691970588235296
-        }, 
-        "OECD members": {
-          "count": 12, 
-          "sum": 860.4560932861975, 
-          "average": 71.70467444051647
-        }, 
-        "Bahrain": {
-          "count": 31, 
-          "sum": 2724.361, 
-          "average": 87.8826129032258
-        }, 
-        "Saudi Arabia": {
-          "count": 30, 
-          "sum": 2290.715, 
-          "average": 76.35716666666667
-        }, 
-        "Middle East & North Africa (all income levels)": {
-          "count": 34, 
-          "sum": 1929.2425255839762, 
-          "average": 56.7424272230581
-        }, 
-        "Guatemala": {
-          "count": 34, 
-          "sum": 1475.3280000000007, 
-          "average": 43.391999999999996
-        }, 
-        "Guinea": {
-          "count": 34, 
-          "sum": 1010.4790000000003, 
-          "average": 29.719970588235295
-        }, 
-        "Germany": {
-          "count": 34, 
-          "sum": 2491.483, 
-          "average": 73.27891176470588
-        }, 
-        "St. Lucia": {
-          "count": 34, 
-          "sum": 884.2779999999999, 
-          "average": 26.008176470588236
-        }, 
-        "Spain": {
-          "count": 34, 
-          "sum": 2578.527, 
-          "average": 75.83902941176471
-        }, 
-        "Liberia": {
-          "count": 27, 
-          "sum": 1198.206, 
-          "average": 44.37800000000001
-        }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 941.18, 
-          "average": 28.52060606060606
-        }, 
-        "East Asia & Pacific (all income levels)": {
-          "count": 25, 
-          "sum": 870.2433159142423, 
-          "average": 34.80973263656969
-        }, 
-        "Oman": {
-          "count": 31, 
-          "sum": 2036.132, 
-          "average": 65.68167741935484
-        }, 
-        "Tanzania": {
-          "count": 34, 
-          "sum": 716.5839999999998, 
-          "average": 21.075999999999997
-        }, 
-        "Cabo Verde": {
-          "count": 34, 
-          "sum": 1581.55, 
-          "average": 46.516176470588235
-        }, 
-        "Gabon": {
-          "count": 33, 
-          "sum": 2415.289, 
-          "average": 73.19057575757576
-        }, 
-        "New Zealand": {
-          "count": 34, 
-          "sum": 2783.2025000000003, 
-          "average": 81.85889705882353
-        }, 
-        "European Union": {
-          "count": 34, 
-          "sum": 2422.1645910747784, 
-          "average": 71.24013503161113
-        }, 
-        "Jamaica": {
-          "count": 34, 
-          "sum": 1722.307, 
-          "average": 50.65608823529412
-        }, 
-        "Albania": {
-          "count": 34, 
-          "sum": 1391.915, 
-          "average": 40.938676470588234
-        }, 
-        "Korea Rep.": {
-          "count": 34, 
-          "sum": 2526.5860000000002, 
-          "average": 74.31135294117647
-        }, 
-        "United Arab Emirates": {
-          "count": 25, 
-          "sum": 2000.092, 
-          "average": 80.00368
-        }, 
-        "Guam": {
-          "count": 32, 
-          "sum": 2968.129, 
-          "average": 92.75403125
-        }, 
-        "India": {
-          "count": 34, 
-          "sum": 914.7419999999998, 
-          "average": 26.904176470588233
-        }, 
-        "Yemen Rep.": {
-          "count": 29, 
-          "sum": 476.4544999999999, 
-          "average": 16.42946551724138
-        }, 
-        "Madagascar": {
-          "count": 34, 
-          "sum": 866.286, 
-          "average": 25.479
-        }, 
-        "Lesotho": {
-          "count": 34, 
-          "sum": 592.5900000000001, 
-          "average": 17.429117647058824
-        }, 
-        "Kenya": {
-          "count": 34, 
-          "sum": 643.9639999999999, 
-          "average": 18.940117647058827
-        }, 
-        "Upper middle income": {
-          "count": 34, 
-          "sum": 1108.0324068578607, 
-          "average": 32.58918843699591
-        }, 
-        "Pacific island small states": {
-          "count": 34, 
-          "sum": 1109.3481194751282, 
-          "average": 32.627885866915534
-        }, 
-        "Turkey": {
-          "count": 34, 
-          "sum": 2061.564, 
-          "average": 60.634235294117644
-        }, 
-        "Afghanistan": {
-          "count": 31, 
-          "sum": 625.3469999999999, 
-          "average": 20.172483870967742
-        }, 
-        "Bangladesh": {
-          "count": 14, 
-          "sum": 380.966, 
-          "average": 27.211857142857145
-        }, 
-        "Solomon Islands": {
-          "count": 34, 
-          "sum": 515.672, 
-          "average": 15.166823529411765
-        }, 
-        "Mongolia": {
-          "count": 34, 
-          "sum": 1991.6789999999999, 
-          "average": 58.578794117647064
-        }, 
-        "France": {
-          "count": 34, 
-          "sum": 2563.361, 
-          "average": 75.39297058823529
-        }, 
-        "Syrian Arab Republic": {
-          "count": 34, 
-          "sum": 1729.3029999999997, 
-          "average": 50.86185294117647
-        }, 
-        "Rwanda": {
-          "count": 22, 
-          "sum": 298.53000000000003, 
-          "average": 13.569545454545453
-        }, 
-        "Somalia": {
-          "count": 33, 
-          "sum": 1055.272, 
-          "average": 31.97793939393939
-        }, 
-        "Peru": {
-          "count": 34, 
-          "sum": 2417.7340000000004, 
-          "average": 71.10982352941176
-        }, 
-        "Vanuatu": {
-          "count": 34, 
-          "sum": 684.4470000000001, 
-          "average": 20.13079411764706
-        }, 
-        "Norway": {
-          "count": 34, 
-          "sum": 2223.305, 
-          "average": 65.39132352941176
-        }, 
-        "Cote d'Ivoire": {
-          "count": 34, 
-          "sum": 1444.9330000000004, 
-          "average": 42.498029411764705
-        }, 
-        "Benin": {
-          "count": 34, 
-          "sum": 1221.7540000000001, 
-          "average": 35.93394117647058
-        }, 
-        "Other small states": {
-          "count": 34, 
-          "sum": 1292.2286670604396, 
-          "average": 38.006725501777645
-        }, 
-        "Venezuela RB": {
-          "count": 34, 
-          "sum": 2906.2780000000002, 
-          "average": 85.47876470588236
-        }, 
-        "Cuba": {
-          "count": 34, 
-          "sum": 2506.2100000000005, 
-          "average": 73.71205882352942
-        }, 
-        "Togo": {
-          "count": 34, 
-          "sum": 1056.887, 
-          "average": 31.08491176470588
-        }, 
-        "China": {
-          "count": 33, 
-          "sum": 1067.8049999999998, 
-          "average": 32.357727272727274
-        }, 
-        "Dominican Republic": {
-          "count": 34, 
-          "sum": 2054.3750000000005, 
-          "average": 60.42279411764706
-        }, 
-        "Congo Dem. Rep.": {
-          "count": 34, 
-          "sum": 1131.6639999999998, 
-          "average": 33.28423529411765
-        }, 
-        "French Polynesia": {
-          "count": 34, 
-          "sum": 1946.563, 
-          "average": 57.25185294117647
-        }, 
-        "Egypt Arab Rep.": {
-          "count": 34, 
-          "sum": 1470.8239999999998, 
-          "average": 43.25952941176471
-        }, 
-        "Ghana": {
-          "count": 34, 
-          "sum": 1382.408, 
-          "average": 40.659058823529406
-        }, 
-        "Tonga": {
-          "count": 34, 
-          "sum": 771.9269999999998, 
-          "average": 22.70373529411765
-        }, 
-        "Finland": {
-          "count": 32, 
-          "sum": 2543.7719999999995, 
-          "average": 79.492875
-        }, 
-        "Latin America & Caribbean (developing only)": {
-          "count": 34, 
-          "sum": 2449.9800467118193, 
-          "average": 72.05823666799469
-        }, 
-        "Colombia": {
-          "count": 34, 
-          "sum": 2374.698, 
-          "average": 69.84405882352941
-        }, 
-        "Libya": {
-          "count": 32, 
-          "sum": 2416.577, 
-          "average": 75.51803124999999
-        }, 
-        "Indonesia": {
-          "count": 34, 
-          "sum": 1242.335, 
-          "average": 36.53926470588235
-        }, 
-        "Central African Republic": {
-          "count": 34, 
-          "sum": 1256.8230000000005, 
-          "average": 36.96538235294118
-        }, 
-        "Iran Islamic Rep.": {
-          "count": 34, 
-          "sum": 2061.0190000000002, 
-          "average": 60.618205882352946
-        }, 
-        "North America": {
-          "count": 34, 
-          "sum": 2632.5692308802595, 
-          "average": 77.42850679059586
-        }, 
-        "Sweden": {
-          "count": 34, 
-          "sum": 2736.2789999999995, 
-          "average": 80.47879411764706
-        }, 
-        "Vietnam": {
-          "count": 34, 
-          "sum": 797.8070000000002, 
-          "average": 23.46491176470588
-        }, 
-        "Mali": {
-          "count": 34, 
-          "sum": 906.427, 
-          "average": 26.659617647058823
-        }, 
-        "Bulgaria": {
-          "count": 34, 
-          "sum": 2301.566, 
-          "average": 67.69311764705881
-        }, 
-        "Mauritius": {
-          "count": 34, 
-          "sum": 1439.2959999999998, 
-          "average": 42.33223529411765
-        }, 
-        "Romania": {
-          "count": 34, 
-          "sum": 1768.5429999999997, 
-          "average": 52.01597058823529
-        }, 
-        "Angola": {
-          "count": 34, 
-          "sum": 1008.8359999999999, 
-          "average": 29.67164705882353
-        }, 
-        "Central Europe and the Baltics": {
-          "count": 34, 
-          "sum": 2074.4979873120224, 
-          "average": 61.01464668564772
-        }, 
-        "Chad": {
-          "count": 34, 
-          "sum": 713.0590000000001, 
-          "average": 20.972323529411764
-        }, 
-        "South Africa": {
-          "count": 34, 
-          "sum": 1867.6229999999998, 
-          "average": 54.93008823529412
-        }, 
-        "St. Vincent and the Grenadines": {
-          "count": 34, 
-          "sum": 1466.0949999999998, 
-          "average": 43.12044117647059
-        }, 
-        "Fiji": {
-          "count": 34, 
-          "sum": 1527.7519999999997, 
-          "average": 44.933882352941175
-        }, 
-        "Caribbean small states": {
-          "count": 34, 
-          "sum": 1369.5431355294304, 
-          "average": 40.28068045674795
-        }, 
-        "Brunei Darussalam": {
-          "count": 34, 
-          "sum": 2323.8469999999998, 
-          "average": 68.3484411764706
-        }, 
-        "Malaysia": {
-          "count": 34, 
-          "sum": 1923.271, 
-          "average": 56.566794117647056
-        }, 
-        "Austria": {
-          "count": 34, 
-          "sum": 2234.6159999999995, 
-          "average": 65.724
-        }, 
-        "High income: OECD": {
-          "count": 13, 
-          "sum": 952.520467210039, 
-          "average": 73.270805170003
-        }, 
-        "Mozambique": {
-          "count": 34, 
-          "sum": 856.489, 
-          "average": 25.190852941176473
-        }, 
-        "Uganda": {
-          "count": 34, 
-          "sum": 387.8550000000001, 
-          "average": 11.4075
-        }, 
-        "Hungary": {
-          "count": 34, 
-          "sum": 2237.2059999999997, 
-          "average": 65.80017647058824
-        }, 
-        "Niger": {
-          "count": 17, 
-          "sum": 281.93899999999996, 
-          "average": 16.58464705882353
-        }, 
-        "United States": {
-          "count": 34, 
-          "sum": 2629.543, 
-          "average": 77.3395
-        }, 
-        "Brazil": {
-          "count": 34, 
-          "sum": 2089.7215, 
-          "average": 61.462397058823534
-        }, 
-        "Virgin Islands (U.S.)": {
-          "count": 34, 
-          "sum": 3037.614, 
-          "average": 89.34158823529413
-        }, 
-        "Kuwait": {
-          "count": 27, 
-          "sum": 2648.7529999999992, 
-          "average": 98.10196296296297
-        }, 
-        "Panama": {
-          "count": 31, 
-          "sum": 1782.9830000000002, 
-          "average": 57.515580645161286
-        }, 
-        "Guyana": {
-          "count": 34, 
-          "sum": 1024.2735000000002, 
-          "average": 30.12569117647059
-        }, 
-        "Costa Rica": {
-          "count": 34, 
-          "sum": 1907.009, 
-          "average": 56.0885
-        }, 
-        "Euro area": {
-          "count": 34, 
-          "sum": 2457.1917322806416, 
-          "average": 72.2703450670777
-        }, 
-        "Ireland": {
-          "count": 34, 
-          "sum": 1984.7019999999998, 
-          "average": 58.373588235294115
-        }, 
-        "Pakistan": {
-          "count": 34, 
-          "sum": 1094.167, 
-          "average": 32.18138235294117
-        }, 
-        "Nigeria": {
-          "count": 34, 
-          "sum": 1114.1079999999997, 
-          "average": 32.76788235294117
-        }, 
-        "Lower middle income": {
-          "count": 30, 
-          "sum": 952.9547703175143, 
-          "average": 31.765159010583815
-        }, 
-        "Ecuador": {
-          "count": 34, 
-          "sum": 1932.7979999999998, 
-          "average": 56.847
-        }, 
-        "Algeria": {
-          "count": 34, 
-          "sum": 1912.346, 
-          "average": 56.24547058823529
-        }, 
-        "El Salvador": {
-          "count": 34, 
-          "sum": 1468.2544999999998, 
-          "average": 43.18395588235294
-        }, 
-        "Korea Dem. Rep.": {
-          "count": 34, 
-          "sum": 2000.406, 
-          "average": 58.835470588235296
-        }, 
-        "Chile": {
-          "count": 34, 
-          "sum": 2888.542, 
-          "average": 84.95711764705882
-        }, 
-        "Puerto Rico": {
-          "count": 24, 
-          "sum": 2200.1730000000007, 
-          "average": 91.673875
-        }, 
-        "Thailand": {
-          "count": 34, 
-          "sum": 856.2730000000001, 
-          "average": 25.1845
-        }, 
-        "Haiti": {
-          "count": 34, 
-          "sum": 752.8724999999998, 
-          "average": 22.14330882352941
-        }, 
-        "Belize": {
-          "count": 34, 
-          "sum": 1608.143, 
-          "average": 47.29832352941177
-        }, 
-        "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 1133.7645801499948, 
-          "average": 33.34601706323514
-        }, 
-        "Sierra Leone": {
-          "count": 34, 
-          "sum": 1171.742, 
-          "average": 34.463
-        }, 
-        "Nepal": {
-          "count": 34, 
-          "sum": 203.7125, 
-          "average": 5.991544117647059
-        }, 
-        "East Asia & Pacific (developing only)": {
-          "count": 30, 
-          "sum": 952.5282858634253, 
-          "average": 31.750942862114176
-        }, 
-        "Denmark": {
-          "count": 34, 
-          "sum": 2894.671, 
-          "average": 85.13738235294117
-        }, 
-        "Philippines": {
-          "count": 34, 
-          "sum": 1547.7750000000003, 
-          "average": 45.52279411764706
-        }, 
-        "Morocco": {
-          "count": 34, 
-          "sum": 1721.025, 
-          "average": 50.61838235294118
-        }, 
-        "Namibia": {
-          "count": 34, 
-          "sum": 1073.7359999999999, 
-          "average": 31.58047058823529
-        }, 
-        "Congo Rep.": {
-          "count": 34, 
-          "sum": 1921.6529999999998, 
-          "average": 56.51920588235294
-        }, 
-        "Guinea-Bissau": {
-          "count": 34, 
-          "sum": 1102.0439999999999, 
-          "average": 32.41305882352941
-        }, 
-        "Kiribati": {
-          "count": 34, 
-          "sum": 1305.1549999999997, 
-          "average": 38.38691176470588
-        }, 
-        "Switzerland": {
-          "count": 34, 
-          "sum": 2391.034, 
-          "average": 70.32452941176471
-        }, 
-        "Grenada": {
-          "count": 34, 
-          "sum": 1174.842, 
-          "average": 34.55417647058824
-        }, 
-        "Iraq": {
-          "count": 34, 
-          "sum": 2044.6815000000001, 
-          "average": 60.13769117647059
-        }, 
-        "Portugal": {
-          "count": 34, 
-          "sum": 1756.291, 
-          "average": 51.65561764705882
-        }, 
-        "Uruguay": {
-          "count": 34, 
-          "sum": 3074.553, 
-          "average": 90.4280294117647
-        }, 
-        "Gambia The": {
-          "count": 34, 
-          "sum": 1471.298, 
-          "average": 43.27347058823529
-        }, 
-        "Equatorial Guinea": {
-          "count": 32, 
-          "sum": 1155.762, 
-          "average": 36.1175625
-        }, 
-        "Lebanon": {
-          "count": 34, 
-          "sum": 2832.461, 
-          "average": 83.30767647058823
-        }, 
-        "Djibouti": {
-          "count": 33, 
-          "sum": 2506.1929999999998, 
-          "average": 75.94524242424242
-        }, 
-        "Antigua and Barbuda": {
-          "count": 32, 
-          "sum": 1045.941, 
-          "average": 32.68565625
-        }, 
-        "Low income": {
-          "count": 34, 
-          "sum": 797.210967360432, 
-          "average": 23.447381392953883
-        }, 
-        "High income": {
-          "count": 11, 
-          "sum": 801.4344430164214, 
-          "average": 72.85767663785649
-        }, 
-        "Burundi": {
-          "count": 34, 
-          "sum": 252.54699999999997, 
-          "average": 7.427852941176471
-        }, 
-        "Least developed countries: UN classification": {
-          "count": 34, 
-          "sum": 782.366383948413, 
-          "average": 23.010775998482735
-        }, 
-        "Cyprus": {
-          "count": 34, 
-          "sum": 2258.3329999999996, 
-          "average": 66.42155882352941
-        }, 
-        "Barbados": {
-          "count": 34, 
-          "sum": 1161.077, 
-          "average": 34.14932352941177
-        }, 
-        "Qatar": {
-          "count": 20, 
-          "sum": 1886.5700000000002, 
-          "average": 94.32849999999999
-        }, 
-        "Italy": {
-          "count": 34, 
-          "sum": 2285.702, 
-          "average": 67.22652941176472
-        }, 
-        "Bhutan": {
-          "count": 27, 
-          "sum": 308.973, 
-          "average": 11.443444444444445
-        }, 
-        "Sudan": {
-          "count": 34, 
-          "sum": 991.24, 
-          "average": 29.154117647058825
-        }, 
-        "Sub-Saharan Africa (developing only)": {
-          "count": 34, 
-          "sum": 984.9330336789799, 
-          "average": 28.968618637617052
-        }, 
-        "Malta": {
-          "count": 34, 
-          "sum": 3118.8720000000003, 
-          "average": 91.7315294117647
-        }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 2534.5760000000005, 
-          "average": 74.54635294117647
-        }, 
-        "Suriname": {
-          "count": 34, 
-          "sum": 2240.668, 
-          "average": 65.902
-        }, 
-        "Middle East & North Africa (developing only)": {
-          "count": 34, 
-          "sum": 1519.3262276971118, 
-          "average": 44.68606552050329
-        }, 
-        "Israel": {
-          "count": 34, 
-          "sum": 3082.9280000000003, 
-          "average": 90.67435294117647
-        }, 
-        "Bahamas The": {
-          "count": 34, 
-          "sum": 2714.016, 
-          "average": 79.824
-        }, 
-        "Iceland": {
-          "count": 34, 
-          "sum": 3108.3820000000005, 
-          "average": 91.423
-        }, 
-        "Zambia": {
-          "count": 34, 
-          "sum": 1290.787, 
-          "average": 37.964323529411764
-        }, 
-        "Sub-Saharan Africa (all income levels)": {
-          "count": 34, 
-          "sum": 985.1029531537284, 
-          "average": 28.9736162692273
-        }, 
-        "Senegal": {
-          "count": 34, 
-          "sum": 1342.766, 
-          "average": 39.493117647058824
-        }, 
-        "Papua New Guinea": {
-          "count": 34, 
-          "sum": 463.88199999999995, 
-          "average": 13.643588235294118
-        }, 
-        "Malawi": {
-          "count": 34, 
-          "sum": 437.69900000000007, 
-          "average": 12.8735
-        }, 
-        "Zimbabwe": {
-          "count": 34, 
-          "sum": 1026.6870000000001, 
-          "average": 30.196676470588233
-        }, 
-        "Jordan": {
-          "count": 33, 
-          "sum": 2477.682, 
-          "average": 75.08127272727272
-        }, 
-        "Poland": {
-          "count": 34, 
-          "sum": 2066.7749999999996, 
-          "average": 60.7875
-        }, 
-        "Mauritania": {
-          "count": 34, 
-          "sum": 1515.635, 
-          "average": 44.5775
-        }, 
-        "Small states": {
-          "count": 34, 
-          "sum": 1303.688284149252, 
-          "average": 38.3437730632133
-        }, 
-        "New Caledonia": {
-          "count": 34, 
-          "sum": 2088.396, 
-          "average": 61.42341176470589
-        }, 
-        "Trinidad and Tobago": {
-          "count": 34, 
-          "sum": 330.4590000000002, 
-          "average": 9.719382352941176
-        }, 
-        "Japan": {
-          "count": 23, 
-          "sum": 1780.8969999999997, 
-          "average": 77.43030434782608
-        }, 
-        "Honduras": {
-          "count": 34, 
-          "sum": 1474.779, 
-          "average": 43.37585294117647
-        }, 
-        "Myanmar": {
-          "count": 34, 
-          "sum": 903.7959999999997, 
-          "average": 26.58223529411765
-        }, 
-        "Mexico": {
-          "count": 34, 
-          "sum": 2478.781, 
-          "average": 72.90532352941176
-        }, 
-        "Tunisia": {
-          "count": 34, 
-          "sum": 2041.7189999999996, 
-          "average": 60.050558823529414
-        }, 
-        "Nicaragua": {
-          "count": 34, 
-          "sum": 1824.9799999999998, 
-          "average": 53.67588235294118
+          "count": 4, 
+          "sum": 7.52661892988135, 
+          "average": 1.8816547324703374
         }, 
         "Comoros": {
           "count": 34, 
-          "sum": 921.075, 
-          "average": 27.09044117647059
-        }, 
-        "United Kingdom": {
-          "count": 34, 
-          "sum": 2688.124, 
-          "average": 79.06247058823529
-        }, 
-        "High income: nonOECD": {
-          "count": 34, 
-          "sum": 2530.5706694031014, 
-          "average": 74.42854910009122
-        }, 
-        "Greece": {
-          "count": 34, 
-          "sum": 2465.995, 
-          "average": 72.52926470588235
-        }, 
-        "Paraguay": {
-          "count": 34, 
-          "sum": 1752.73, 
-          "average": 51.55088235294118
-        }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 1288.806, 
-          "average": 47.733555555555554
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
-          "count": 34, 
-          "sum": 914.678161110519, 
-          "average": 26.90229885619173
+          "sum": 82.59236209525712, 
+          "average": 2.4291871204487387
         }
       }, 
       "development.[0].Data.Infrastructure.Telephone Lines per 100 People": {
@@ -18505,9 +17298,9 @@ development_bar = [
           "average": 2.523415923077346
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 51.860364266166094, 
-          "average": 1.6206363833176902
+          "count": 15, 
+          "sum": 6.890218329307558, 
+          "average": 0.45934788862050385
         }, 
         "Argentina": {
           "count": 34, 
@@ -18530,9 +17323,9 @@ development_bar = [
           "average": 1.465730724963024
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 381.10573554027866, 
-          "average": 31.758811295023218
+          "count": 10, 
+          "sum": 305.96444429375373, 
+          "average": 30.596444429375374
         }, 
         "Bahrain": {
           "count": 31, 
@@ -18579,10 +17372,10 @@ development_bar = [
           "sum": 6.361961520330453, 
           "average": 0.23562820445668345
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 191.27762915258353, 
-          "average": 5.79629179250253
+        "Netherlands": {
+          "count": 34, 
+          "sum": 1576.2885916083183, 
+          "average": 46.36142916495054
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -18905,9 +17698,9 @@ development_bar = [
           "average": 8.799729568547516
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 475.17306238064407, 
-          "average": 13.975678305313064
+          "count": 30, 
+          "sum": 458.29287741697743, 
+          "average": 15.276429247232585
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -18990,14 +17783,14 @@ development_bar = [
           "average": 42.87235761341231
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 1205.7005141671234, 
-          "average": 35.461779828444804
+          "count": 4, 
+          "sum": 59.21069013955461, 
+          "average": 14.80267253488865
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 58.46055676796432, 
-          "average": 1.7194281402342448
+          "count": 30, 
+          "sum": 56.922366372727595, 
+          "average": 1.8974122124242532
         }, 
         "Nigeria": {
           "count": 34, 
@@ -19055,14 +17848,14 @@ development_bar = [
           "average": 9.828220991028651
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 52.88782987247066, 
-          "average": 1.5555244080138433
+          "count": 4, 
+          "sum": 2.0526869910827203, 
+          "average": 0.51317174777068
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 15.318260569894493, 
-          "average": 0.4505370755851321
+          "count": 30, 
+          "sum": 12.713697200959697, 
+          "average": 0.4237899066986566
         }, 
         "Nepal": {
           "count": 34, 
@@ -19219,11 +18012,6 @@ development_bar = [
           "sum": 1368.7818846449165, 
           "average": 40.25829072485049
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 1576.2885916083183, 
-          "average": 46.36142916495054
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 402.06901409511414, 
@@ -19339,11 +18127,6 @@ development_bar = [
           "sum": 85.26149516978083, 
           "average": 2.507691034405318
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 53.18007268507772, 
-          "average": 1.564119784855227
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 1636.6879689297919, 
@@ -19360,19 +18143,14 @@ development_bar = [
           "average": 43.64834524968625
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 130.30939021468916, 
-          "average": 3.832629123961446
+          "count": 4, 
+          "sum": 6.48028952173968, 
+          "average": 1.62007238043492
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 140.03846527118964, 
-          "average": 5.186609824858875
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 20.907333407649055, 
-          "average": 0.6149215708132074
+          "sum": 53.18007268507772, 
+          "average": 1.564119784855227
         }
       }, 
       "development.[0].Data.Rural Development.Arable Land": {
@@ -19427,9 +18205,9 @@ development_bar = [
           "average": 0.19117054622213553
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 5.370642607851867, 
-          "average": 0.1678325814953708
+          "count": 15, 
+          "sum": 2.963971757027093, 
+          "average": 0.19759811713513953
         }, 
         "Argentina": {
           "count": 34, 
@@ -19452,9 +18230,9 @@ development_bar = [
           "average": 0.3742542227042333
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 5.2487050921325, 
-          "average": 0.4373920910110416
+          "count": 10, 
+          "sum": 4.4055437188770235, 
+          "average": 0.44055437188770225
         }, 
         "Bahrain": {
           "count": 31, 
@@ -19501,10 +18279,10 @@ development_bar = [
           "sum": 4.042630216636475, 
           "average": 0.1497270450606102
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 0.4319877136810795, 
-          "average": 0.013090536778214529
+        "Netherlands": {
+          "count": 34, 
+          "sum": 2.013988023640046, 
+          "average": 0.059234941871766054
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -19827,9 +18605,9 @@ development_bar = [
           "average": 0.19757720845764834
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 4.34288294361998, 
-          "average": 0.12773185128294054
+          "count": 30, 
+          "sum": 3.7546839627640654, 
+          "average": 0.1251561320921355
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -19912,14 +18690,14 @@ development_bar = [
           "average": 0.21653448902772318
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 9.65093702287357, 
-          "average": 0.2838510889080461
+          "count": 4, 
+          "sum": 1.2776456270163852, 
+          "average": 0.31941140675409624
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 5.832435422489149, 
-          "average": 0.17154221830850436
+          "count": 30, 
+          "sum": 4.848627667678156, 
+          "average": 0.1616209222559385
         }, 
         "Nigeria": {
           "count": 34, 
@@ -19977,14 +18755,14 @@ development_bar = [
           "average": 0.27573084876779674
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 9.622656501906004, 
-          "average": 0.2830193088795884
+          "count": 4, 
+          "sum": 1.493607630411737, 
+          "average": 0.37340190760293424
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 5.369261895787659, 
-          "average": 0.15791946752316646
+          "count": 30, 
+          "sum": 4.806567789641505, 
+          "average": 0.16021892632138354
         }, 
         "Nepal": {
           "count": 34, 
@@ -20141,11 +18919,6 @@ development_bar = [
           "sum": 0.9628318551033406, 
           "average": 0.028318583973627666
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 2.013988023640046, 
-          "average": 0.059234941871766054
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 4.122812671647179, 
@@ -20261,11 +19034,6 @@ development_bar = [
           "sum": 11.460186941040016, 
           "average": 0.33706432179529466
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 5.797520811474724, 
-          "average": 0.17051531798455072
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 3.678561496870237, 
@@ -20282,19 +19050,14 @@ development_bar = [
           "average": 0.25961772073473294
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 18.548581066673698, 
-          "average": 0.5455465019609911
+          "count": 4, 
+          "sum": 2.042493865268948, 
+          "average": 0.510623466317237
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 5.294905556958082, 
-          "average": 0.19610761322066975
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 10.689645543960337, 
-          "average": 0.3144013395282452
+          "sum": 5.797520811474724, 
+          "average": 0.17051531798455072
         }
       }, 
       "development.[0].Data.Health.Fertility Rate": {
@@ -20349,9 +19112,9 @@ development_bar = [
           "average": 4.990705882352941
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 121.98117606012707, 
-          "average": 3.8119117518789705
+          "count": 15, 
+          "sum": 67.65889399082599, 
+          "average": 4.5105929327217344
         }, 
         "Argentina": {
           "count": 34, 
@@ -20374,9 +19137,9 @@ development_bar = [
           "average": 6.677588235294117
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 24.46375079378865, 
-          "average": 2.0386458994823875
+          "count": 10, 
+          "sum": 20.53552063969405, 
+          "average": 2.0535520639694047
         }, 
         "Bahrain": {
           "count": 31, 
@@ -20423,10 +19186,10 @@ development_bar = [
           "sum": 163.48099999999997, 
           "average": 6.0548518518518515
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 155.85800000000006, 
-          "average": 4.722969696969697
+        "Netherlands": {
+          "count": 34, 
+          "sum": 55.37, 
+          "average": 1.6285294117647058
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -20749,9 +19512,9 @@ development_bar = [
           "average": 3.240470588235294
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 90.78964023077164, 
-          "average": 2.670283536199165
+          "count": 30, 
+          "sum": 76.66644686555331, 
+          "average": 2.5555482288517766
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -20834,14 +19597,14 @@ development_bar = [
           "average": 1.5325176641572371
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 74.32000000000001, 
-          "average": 2.185882352941176
+          "count": 4, 
+          "sum": 12.409999999999998, 
+          "average": 3.1025
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 173.42599999999996, 
-          "average": 5.100764705882352
+          "count": 30, 
+          "sum": 147.339, 
+          "average": 4.9113
         }, 
         "Nigeria": {
           "count": 34, 
@@ -20899,14 +19662,14 @@ development_bar = [
           "average": 4.086411764705882
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 187.01720864887648, 
-          "average": 5.500506136731662
+          "count": 4, 
+          "sum": 25.9074302953657, 
+          "average": 6.476857573841425
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 207.80500000000004, 
-          "average": 6.111911764705883
+          "count": 30, 
+          "sum": 179.62000000000003, 
+          "average": 5.987333333333334
         }, 
         "Nepal": {
           "count": 34, 
@@ -21063,11 +19826,6 @@ development_bar = [
           "sum": 59.970000000000006, 
           "average": 1.7638235294117646
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 55.37, 
-          "average": 1.6285294117647058
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 97.345, 
@@ -21183,11 +19941,6 @@ development_bar = [
           "sum": 139.20600000000005, 
           "average": 4.094294117647059
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 192.65999999999997, 
-          "average": 5.666470588235294
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 60.709999999999994, 
@@ -21204,19 +19957,921 @@ development_bar = [
           "average": 1.5014705882352941
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 138.65200000000002, 
-          "average": 4.077999999999999
+          "count": 4, 
+          "sum": 20.837, 
+          "average": 5.20925
         }, 
-        "Botswana": {
+        "Comoros": {
+          "count": 34, 
+          "sum": 192.65999999999997, 
+          "average": 5.666470588235294
+        }
+      }, 
+      "development.[0].Data.Urban Development.Urban Population Percent": {
+        "Canada": {
+          "count": 5, 
+          "sum": 404.68100000000004, 
+          "average": 80.9362
+        }, 
+        "Sao Tome and Principe": {
+          "count": 34, 
+          "sum": 1653.2439999999997, 
+          "average": 48.62482352941176
+        }, 
+        "Lao PDR": {
+          "count": 34, 
+          "sum": 697.0250000000001, 
+          "average": 20.500735294117646
+        }, 
+        "Arab World": {
+          "count": 34, 
+          "sum": 1751.410081891975, 
+          "average": 51.51206123211691
+        }, 
+        "Latin America & Caribbean (all income levels)": {
+          "count": 34, 
+          "sum": 2465.4948371549785, 
+          "average": 72.51455403396997
+        }, 
+        "Cambodia": {
+          "count": 31, 
+          "sum": 534.981, 
+          "average": 17.257451612903225
+        }, 
+        "Ethiopia": {
+          "count": 34, 
+          "sum": 470.3530000000001, 
+          "average": 13.833911764705883
+        }, 
+        "Aruba": {
+          "count": 34, 
+          "sum": 1622.368, 
+          "average": 47.71670588235294
+        }, 
+        "Sri Lanka": {
+          "count": 34, 
+          "sum": 629.249, 
+          "average": 18.507323529411764
+        }, 
+        "Swaziland": {
+          "count": 34, 
+          "sum": 742.242, 
+          "average": 21.83064705882353
+        }, 
+        "South Asia": {
+          "count": 15, 
+          "sum": 359.45551194555424, 
+          "average": 23.963700796370283
+        }, 
+        "Argentina": {
+          "count": 34, 
+          "sum": 2984.038, 
+          "average": 87.76582352941176
+        }, 
+        "Bolivia": {
+          "count": 34, 
+          "sum": 1973.081, 
+          "average": 58.03179411764705
+        }, 
+        "Cameroon": {
+          "count": 34, 
+          "sum": 1449.658, 
+          "average": 42.637
+        }, 
+        "Burkina Faso": {
+          "count": 34, 
+          "sum": 567.5269999999999, 
+          "average": 16.691970588235296
+        }, 
+        "OECD members": {
+          "count": 10, 
+          "sum": 714.2353834129036, 
+          "average": 71.42353834129037
+        }, 
+        "Bahrain": {
+          "count": 31, 
+          "sum": 2724.361, 
+          "average": 87.8826129032258
+        }, 
+        "Saudi Arabia": {
+          "count": 30, 
+          "sum": 2290.715, 
+          "average": 76.35716666666667
+        }, 
+        "Middle East & North Africa (all income levels)": {
+          "count": 34, 
+          "sum": 1929.2425255839762, 
+          "average": 56.7424272230581
+        }, 
+        "Guatemala": {
+          "count": 34, 
+          "sum": 1475.3280000000007, 
+          "average": 43.391999999999996
+        }, 
+        "Guinea": {
+          "count": 34, 
+          "sum": 1010.4790000000003, 
+          "average": 29.719970588235295
+        }, 
+        "Germany": {
+          "count": 34, 
+          "sum": 2491.483, 
+          "average": 73.27891176470588
+        }, 
+        "St. Lucia": {
+          "count": 34, 
+          "sum": 884.2779999999999, 
+          "average": 26.008176470588236
+        }, 
+        "Spain": {
+          "count": 34, 
+          "sum": 2578.527, 
+          "average": 75.83902941176471
+        }, 
+        "Liberia": {
           "count": 27, 
-          "sum": 103.131, 
-          "average": 3.8196666666666665
+          "sum": 1198.206, 
+          "average": 44.37800000000001
         }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Netherlands": {
           "count": 34, 
-          "sum": 212.12341154723168, 
-          "average": 6.238923869036226
+          "sum": 2534.5760000000005, 
+          "average": 74.54635294117647
+        }, 
+        "East Asia & Pacific (all income levels)": {
+          "count": 25, 
+          "sum": 870.2433159142423, 
+          "average": 34.80973263656969
+        }, 
+        "Oman": {
+          "count": 31, 
+          "sum": 2036.132, 
+          "average": 65.68167741935484
+        }, 
+        "Tanzania": {
+          "count": 34, 
+          "sum": 716.5839999999998, 
+          "average": 21.075999999999997
+        }, 
+        "Cabo Verde": {
+          "count": 34, 
+          "sum": 1581.55, 
+          "average": 46.516176470588235
+        }, 
+        "Gabon": {
+          "count": 33, 
+          "sum": 2415.289, 
+          "average": 73.19057575757576
+        }, 
+        "New Zealand": {
+          "count": 34, 
+          "sum": 2783.2025000000003, 
+          "average": 81.85889705882353
+        }, 
+        "European Union": {
+          "count": 34, 
+          "sum": 2422.1645910747784, 
+          "average": 71.24013503161113
+        }, 
+        "Jamaica": {
+          "count": 34, 
+          "sum": 1722.307, 
+          "average": 50.65608823529412
+        }, 
+        "Albania": {
+          "count": 34, 
+          "sum": 1391.915, 
+          "average": 40.938676470588234
+        }, 
+        "Korea Rep.": {
+          "count": 34, 
+          "sum": 2526.5860000000002, 
+          "average": 74.31135294117647
+        }, 
+        "United Arab Emirates": {
+          "count": 25, 
+          "sum": 2000.092, 
+          "average": 80.00368
+        }, 
+        "Guam": {
+          "count": 32, 
+          "sum": 2968.129, 
+          "average": 92.75403125
+        }, 
+        "India": {
+          "count": 34, 
+          "sum": 914.7419999999998, 
+          "average": 26.904176470588233
+        }, 
+        "Yemen Rep.": {
+          "count": 29, 
+          "sum": 476.4544999999999, 
+          "average": 16.42946551724138
+        }, 
+        "Madagascar": {
+          "count": 34, 
+          "sum": 866.286, 
+          "average": 25.479
+        }, 
+        "Lesotho": {
+          "count": 34, 
+          "sum": 592.5900000000001, 
+          "average": 17.429117647058824
+        }, 
+        "Kenya": {
+          "count": 34, 
+          "sum": 643.9639999999999, 
+          "average": 18.940117647058827
+        }, 
+        "Upper middle income": {
+          "count": 34, 
+          "sum": 1108.0324068578607, 
+          "average": 32.58918843699591
+        }, 
+        "Pacific island small states": {
+          "count": 34, 
+          "sum": 1109.3481194751282, 
+          "average": 32.627885866915534
+        }, 
+        "Turkey": {
+          "count": 34, 
+          "sum": 2061.564, 
+          "average": 60.634235294117644
+        }, 
+        "Afghanistan": {
+          "count": 31, 
+          "sum": 625.3469999999999, 
+          "average": 20.172483870967742
+        }, 
+        "Bangladesh": {
+          "count": 14, 
+          "sum": 380.966, 
+          "average": 27.211857142857145
+        }, 
+        "Solomon Islands": {
+          "count": 34, 
+          "sum": 515.672, 
+          "average": 15.166823529411765
+        }, 
+        "Mongolia": {
+          "count": 34, 
+          "sum": 1991.6789999999999, 
+          "average": 58.578794117647064
+        }, 
+        "France": {
+          "count": 34, 
+          "sum": 2563.361, 
+          "average": 75.39297058823529
+        }, 
+        "Syrian Arab Republic": {
+          "count": 34, 
+          "sum": 1729.3029999999997, 
+          "average": 50.86185294117647
+        }, 
+        "Rwanda": {
+          "count": 22, 
+          "sum": 298.53000000000003, 
+          "average": 13.569545454545453
+        }, 
+        "Somalia": {
+          "count": 33, 
+          "sum": 1055.272, 
+          "average": 31.97793939393939
+        }, 
+        "Peru": {
+          "count": 34, 
+          "sum": 2417.7340000000004, 
+          "average": 71.10982352941176
+        }, 
+        "Vanuatu": {
+          "count": 34, 
+          "sum": 684.4470000000001, 
+          "average": 20.13079411764706
+        }, 
+        "Norway": {
+          "count": 34, 
+          "sum": 2223.305, 
+          "average": 65.39132352941176
+        }, 
+        "Cote d'Ivoire": {
+          "count": 34, 
+          "sum": 1444.9330000000004, 
+          "average": 42.498029411764705
+        }, 
+        "Benin": {
+          "count": 34, 
+          "sum": 1221.7540000000001, 
+          "average": 35.93394117647058
+        }, 
+        "Other small states": {
+          "count": 34, 
+          "sum": 1292.2286670604396, 
+          "average": 38.006725501777645
+        }, 
+        "Venezuela RB": {
+          "count": 34, 
+          "sum": 2906.2780000000002, 
+          "average": 85.47876470588236
+        }, 
+        "Cuba": {
+          "count": 34, 
+          "sum": 2506.2100000000005, 
+          "average": 73.71205882352942
+        }, 
+        "Togo": {
+          "count": 34, 
+          "sum": 1056.887, 
+          "average": 31.08491176470588
+        }, 
+        "China": {
+          "count": 33, 
+          "sum": 1067.8049999999998, 
+          "average": 32.357727272727274
+        }, 
+        "Dominican Republic": {
+          "count": 34, 
+          "sum": 2054.3750000000005, 
+          "average": 60.42279411764706
+        }, 
+        "Congo Dem. Rep.": {
+          "count": 34, 
+          "sum": 1131.6639999999998, 
+          "average": 33.28423529411765
+        }, 
+        "French Polynesia": {
+          "count": 34, 
+          "sum": 1946.563, 
+          "average": 57.25185294117647
+        }, 
+        "Egypt Arab Rep.": {
+          "count": 34, 
+          "sum": 1470.8239999999998, 
+          "average": 43.25952941176471
+        }, 
+        "Ghana": {
+          "count": 34, 
+          "sum": 1382.408, 
+          "average": 40.659058823529406
+        }, 
+        "Tonga": {
+          "count": 34, 
+          "sum": 771.9269999999998, 
+          "average": 22.70373529411765
+        }, 
+        "Finland": {
+          "count": 32, 
+          "sum": 2543.7719999999995, 
+          "average": 79.492875
+        }, 
+        "Latin America & Caribbean (developing only)": {
+          "count": 34, 
+          "sum": 2449.9800467118193, 
+          "average": 72.05823666799469
+        }, 
+        "Colombia": {
+          "count": 34, 
+          "sum": 2374.698, 
+          "average": 69.84405882352941
+        }, 
+        "Libya": {
+          "count": 32, 
+          "sum": 2416.577, 
+          "average": 75.51803124999999
+        }, 
+        "Indonesia": {
+          "count": 34, 
+          "sum": 1242.335, 
+          "average": 36.53926470588235
+        }, 
+        "Central African Republic": {
+          "count": 34, 
+          "sum": 1256.8230000000005, 
+          "average": 36.96538235294118
+        }, 
+        "Iran Islamic Rep.": {
+          "count": 34, 
+          "sum": 2061.0190000000002, 
+          "average": 60.618205882352946
+        }, 
+        "North America": {
+          "count": 34, 
+          "sum": 2632.5692308802595, 
+          "average": 77.42850679059586
+        }, 
+        "Sweden": {
+          "count": 34, 
+          "sum": 2736.2789999999995, 
+          "average": 80.47879411764706
+        }, 
+        "Vietnam": {
+          "count": 34, 
+          "sum": 797.8070000000002, 
+          "average": 23.46491176470588
+        }, 
+        "Mali": {
+          "count": 34, 
+          "sum": 906.427, 
+          "average": 26.659617647058823
+        }, 
+        "Bulgaria": {
+          "count": 34, 
+          "sum": 2301.566, 
+          "average": 67.69311764705881
+        }, 
+        "Mauritius": {
+          "count": 34, 
+          "sum": 1439.2959999999998, 
+          "average": 42.33223529411765
+        }, 
+        "Romania": {
+          "count": 34, 
+          "sum": 1768.5429999999997, 
+          "average": 52.01597058823529
+        }, 
+        "Angola": {
+          "count": 34, 
+          "sum": 1008.8359999999999, 
+          "average": 29.67164705882353
+        }, 
+        "Central Europe and the Baltics": {
+          "count": 34, 
+          "sum": 2074.4979873120224, 
+          "average": 61.01464668564772
+        }, 
+        "Chad": {
+          "count": 34, 
+          "sum": 713.0590000000001, 
+          "average": 20.972323529411764
+        }, 
+        "South Africa": {
+          "count": 34, 
+          "sum": 1867.6229999999998, 
+          "average": 54.93008823529412
+        }, 
+        "St. Vincent and the Grenadines": {
+          "count": 34, 
+          "sum": 1466.0949999999998, 
+          "average": 43.12044117647059
+        }, 
+        "Fiji": {
+          "count": 34, 
+          "sum": 1527.7519999999997, 
+          "average": 44.933882352941175
+        }, 
+        "Caribbean small states": {
+          "count": 30, 
+          "sum": 1216.70372870023, 
+          "average": 40.55679095667433
+        }, 
+        "Brunei Darussalam": {
+          "count": 34, 
+          "sum": 2323.8469999999998, 
+          "average": 68.3484411764706
+        }, 
+        "Malaysia": {
+          "count": 34, 
+          "sum": 1923.271, 
+          "average": 56.566794117647056
+        }, 
+        "Austria": {
+          "count": 34, 
+          "sum": 2234.6159999999995, 
+          "average": 65.724
+        }, 
+        "High income: OECD": {
+          "count": 13, 
+          "sum": 952.520467210039, 
+          "average": 73.270805170003
+        }, 
+        "Mozambique": {
+          "count": 34, 
+          "sum": 856.489, 
+          "average": 25.190852941176473
+        }, 
+        "Uganda": {
+          "count": 34, 
+          "sum": 387.8550000000001, 
+          "average": 11.4075
+        }, 
+        "Hungary": {
+          "count": 34, 
+          "sum": 2237.2059999999997, 
+          "average": 65.80017647058824
+        }, 
+        "Niger": {
+          "count": 17, 
+          "sum": 281.93899999999996, 
+          "average": 16.58464705882353
+        }, 
+        "United States": {
+          "count": 34, 
+          "sum": 2629.543, 
+          "average": 77.3395
+        }, 
+        "Brazil": {
+          "count": 34, 
+          "sum": 2089.7215, 
+          "average": 61.462397058823534
+        }, 
+        "Virgin Islands (U.S.)": {
+          "count": 34, 
+          "sum": 3037.614, 
+          "average": 89.34158823529413
+        }, 
+        "Kuwait": {
+          "count": 27, 
+          "sum": 2648.7529999999992, 
+          "average": 98.10196296296297
+        }, 
+        "Panama": {
+          "count": 31, 
+          "sum": 1782.9830000000002, 
+          "average": 57.515580645161286
+        }, 
+        "Guyana": {
+          "count": 34, 
+          "sum": 1024.2735000000002, 
+          "average": 30.12569117647059
+        }, 
+        "Costa Rica": {
+          "count": 34, 
+          "sum": 1907.009, 
+          "average": 56.0885
+        }, 
+        "Euro area": {
+          "count": 34, 
+          "sum": 2457.1917322806416, 
+          "average": 72.2703450670777
+        }, 
+        "Ireland": {
+          "count": 4, 
+          "sum": 221.755, 
+          "average": 55.43875
+        }, 
+        "Pakistan": {
+          "count": 30, 
+          "sum": 981.3870000000001, 
+          "average": 32.7129
+        }, 
+        "Nigeria": {
+          "count": 34, 
+          "sum": 1114.1079999999997, 
+          "average": 32.76788235294117
+        }, 
+        "Lower middle income": {
+          "count": 30, 
+          "sum": 952.9547703175143, 
+          "average": 31.765159010583815
+        }, 
+        "Ecuador": {
+          "count": 34, 
+          "sum": 1932.7979999999998, 
+          "average": 56.847
+        }, 
+        "Algeria": {
+          "count": 34, 
+          "sum": 1912.346, 
+          "average": 56.24547058823529
+        }, 
+        "El Salvador": {
+          "count": 34, 
+          "sum": 1468.2544999999998, 
+          "average": 43.18395588235294
+        }, 
+        "Korea Dem. Rep.": {
+          "count": 34, 
+          "sum": 2000.406, 
+          "average": 58.835470588235296
+        }, 
+        "Chile": {
+          "count": 34, 
+          "sum": 2888.542, 
+          "average": 84.95711764705882
+        }, 
+        "Puerto Rico": {
+          "count": 24, 
+          "sum": 2200.1730000000007, 
+          "average": 91.673875
+        }, 
+        "Thailand": {
+          "count": 34, 
+          "sum": 856.2730000000001, 
+          "average": 25.1845
+        }, 
+        "Haiti": {
+          "count": 34, 
+          "sum": 752.8724999999998, 
+          "average": 22.14330882352941
+        }, 
+        "Belize": {
+          "count": 34, 
+          "sum": 1608.143, 
+          "average": 47.29832352941177
+        }, 
+        "Fragile and conflict affected situations": {
+          "count": 4, 
+          "sum": 110.3157090165442, 
+          "average": 27.57892725413605
+        }, 
+        "Sierra Leone": {
+          "count": 30, 
+          "sum": 1051.601, 
+          "average": 35.05336666666666
+        }, 
+        "Nepal": {
+          "count": 34, 
+          "sum": 203.7125, 
+          "average": 5.991544117647059
+        }, 
+        "East Asia & Pacific (developing only)": {
+          "count": 30, 
+          "sum": 952.5282858634253, 
+          "average": 31.750942862114176
+        }, 
+        "Denmark": {
+          "count": 34, 
+          "sum": 2894.671, 
+          "average": 85.13738235294117
+        }, 
+        "Philippines": {
+          "count": 34, 
+          "sum": 1547.7750000000003, 
+          "average": 45.52279411764706
+        }, 
+        "Morocco": {
+          "count": 34, 
+          "sum": 1721.025, 
+          "average": 50.61838235294118
+        }, 
+        "Namibia": {
+          "count": 34, 
+          "sum": 1073.7359999999999, 
+          "average": 31.58047058823529
+        }, 
+        "Congo Rep.": {
+          "count": 34, 
+          "sum": 1921.6529999999998, 
+          "average": 56.51920588235294
+        }, 
+        "Guinea-Bissau": {
+          "count": 34, 
+          "sum": 1102.0439999999999, 
+          "average": 32.41305882352941
+        }, 
+        "Kiribati": {
+          "count": 34, 
+          "sum": 1305.1549999999997, 
+          "average": 38.38691176470588
+        }, 
+        "Switzerland": {
+          "count": 34, 
+          "sum": 2391.034, 
+          "average": 70.32452941176471
+        }, 
+        "Grenada": {
+          "count": 34, 
+          "sum": 1174.842, 
+          "average": 34.55417647058824
+        }, 
+        "Iraq": {
+          "count": 34, 
+          "sum": 2044.6815000000001, 
+          "average": 60.13769117647059
+        }, 
+        "Portugal": {
+          "count": 34, 
+          "sum": 1756.291, 
+          "average": 51.65561764705882
+        }, 
+        "Uruguay": {
+          "count": 34, 
+          "sum": 3074.553, 
+          "average": 90.4280294117647
+        }, 
+        "Gambia The": {
+          "count": 34, 
+          "sum": 1471.298, 
+          "average": 43.27347058823529
+        }, 
+        "Equatorial Guinea": {
+          "count": 32, 
+          "sum": 1155.762, 
+          "average": 36.1175625
+        }, 
+        "Lebanon": {
+          "count": 34, 
+          "sum": 2832.461, 
+          "average": 83.30767647058823
+        }, 
+        "Djibouti": {
+          "count": 33, 
+          "sum": 2506.1929999999998, 
+          "average": 75.94524242424242
+        }, 
+        "Antigua and Barbuda": {
+          "count": 32, 
+          "sum": 1045.941, 
+          "average": 32.68565625
+        }, 
+        "Low income": {
+          "count": 34, 
+          "sum": 797.210967360432, 
+          "average": 23.447381392953883
+        }, 
+        "High income": {
+          "count": 11, 
+          "sum": 801.4344430164214, 
+          "average": 72.85767663785649
+        }, 
+        "Burundi": {
+          "count": 34, 
+          "sum": 252.54699999999997, 
+          "average": 7.427852941176471
+        }, 
+        "Least developed countries: UN classification": {
+          "count": 34, 
+          "sum": 782.366383948413, 
+          "average": 23.010775998482735
+        }, 
+        "Cyprus": {
+          "count": 34, 
+          "sum": 2258.3329999999996, 
+          "average": 66.42155882352941
+        }, 
+        "Barbados": {
+          "count": 34, 
+          "sum": 1161.077, 
+          "average": 34.14932352941177
+        }, 
+        "Qatar": {
+          "count": 20, 
+          "sum": 1886.5700000000002, 
+          "average": 94.32849999999999
+        }, 
+        "Italy": {
+          "count": 34, 
+          "sum": 2285.702, 
+          "average": 67.22652941176472
+        }, 
+        "Bhutan": {
+          "count": 27, 
+          "sum": 308.973, 
+          "average": 11.443444444444445
+        }, 
+        "Sudan": {
+          "count": 34, 
+          "sum": 991.24, 
+          "average": 29.154117647058825
+        }, 
+        "Sub-Saharan Africa (developing only)": {
+          "count": 34, 
+          "sum": 984.9330336789799, 
+          "average": 28.968618637617052
+        }, 
+        "Malta": {
+          "count": 34, 
+          "sum": 3118.8720000000003, 
+          "average": 91.7315294117647
+        }, 
+        "Suriname": {
+          "count": 34, 
+          "sum": 2240.668, 
+          "average": 65.902
+        }, 
+        "Middle East & North Africa (developing only)": {
+          "count": 34, 
+          "sum": 1519.3262276971118, 
+          "average": 44.68606552050329
+        }, 
+        "Israel": {
+          "count": 34, 
+          "sum": 3082.9280000000003, 
+          "average": 90.67435294117647
+        }, 
+        "Bahamas The": {
+          "count": 34, 
+          "sum": 2714.016, 
+          "average": 79.824
+        }, 
+        "Iceland": {
+          "count": 34, 
+          "sum": 3108.3820000000005, 
+          "average": 91.423
+        }, 
+        "Zambia": {
+          "count": 34, 
+          "sum": 1290.787, 
+          "average": 37.964323529411764
+        }, 
+        "Sub-Saharan Africa (all income levels)": {
+          "count": 34, 
+          "sum": 985.1029531537284, 
+          "average": 28.9736162692273
+        }, 
+        "Senegal": {
+          "count": 34, 
+          "sum": 1342.766, 
+          "average": 39.493117647058824
+        }, 
+        "Papua New Guinea": {
+          "count": 34, 
+          "sum": 463.88199999999995, 
+          "average": 13.643588235294118
+        }, 
+        "Malawi": {
+          "count": 34, 
+          "sum": 437.69900000000007, 
+          "average": 12.8735
+        }, 
+        "Zimbabwe": {
+          "count": 34, 
+          "sum": 1026.6870000000001, 
+          "average": 30.196676470588233
+        }, 
+        "Jordan": {
+          "count": 33, 
+          "sum": 2477.682, 
+          "average": 75.08127272727272
+        }, 
+        "Poland": {
+          "count": 34, 
+          "sum": 2066.7749999999996, 
+          "average": 60.7875
+        }, 
+        "Mauritania": {
+          "count": 34, 
+          "sum": 1515.635, 
+          "average": 44.5775
+        }, 
+        "Small states": {
+          "count": 34, 
+          "sum": 1303.688284149252, 
+          "average": 38.3437730632133
+        }, 
+        "New Caledonia": {
+          "count": 34, 
+          "sum": 2088.396, 
+          "average": 61.42341176470589
+        }, 
+        "Trinidad and Tobago": {
+          "count": 34, 
+          "sum": 330.4590000000002, 
+          "average": 9.719382352941176
+        }, 
+        "Japan": {
+          "count": 23, 
+          "sum": 1780.8969999999997, 
+          "average": 77.43030434782608
+        }, 
+        "Honduras": {
+          "count": 34, 
+          "sum": 1474.779, 
+          "average": 43.37585294117647
+        }, 
+        "Myanmar": {
+          "count": 34, 
+          "sum": 903.7959999999997, 
+          "average": 26.58223529411765
+        }, 
+        "Mexico": {
+          "count": 34, 
+          "sum": 2478.781, 
+          "average": 72.90532352941176
+        }, 
+        "Tunisia": {
+          "count": 34, 
+          "sum": 2041.7189999999996, 
+          "average": 60.050558823529414
+        }, 
+        "Nicaragua": {
+          "count": 34, 
+          "sum": 1824.9799999999998, 
+          "average": 53.67588235294118
+        }, 
+        "United Kingdom": {
+          "count": 34, 
+          "sum": 2688.124, 
+          "average": 79.06247058823529
+        }, 
+        "High income: nonOECD": {
+          "count": 34, 
+          "sum": 2530.5706694031014, 
+          "average": 74.42854910009122
+        }, 
+        "Greece": {
+          "count": 34, 
+          "sum": 2465.995, 
+          "average": 72.52926470588235
+        }, 
+        "Paraguay": {
+          "count": 4, 
+          "sum": 167.849, 
+          "average": 41.96225
+        }, 
+        "Comoros": {
+          "count": 34, 
+          "sum": 921.075, 
+          "average": 27.09044117647059
         }
       }, 
       "development.[0].Data.Rural Development.Agricultural Land Percent": {
@@ -21271,9 +20926,9 @@ development_bar = [
           "average": 72.46067031463748
         }, 
         "South Asia": {
-          "count": 32, 
-          "sum": 1753.6541274424749, 
-          "average": 54.80169148257735
+          "count": 15, 
+          "sum": 821.7167001441263, 
+          "average": 54.78111334294176
         }, 
         "Argentina": {
           "count": 34, 
@@ -21296,9 +20951,9 @@ development_bar = [
           "average": 36.698056415548685
         }, 
         "OECD members": {
-          "count": 12, 
-          "sum": 467.8011817114867, 
-          "average": 38.98343180929055
+          "count": 10, 
+          "sum": 390.2976885033029, 
+          "average": 39.02976885033028
         }, 
         "Bahrain": {
           "count": 31, 
@@ -21345,10 +21000,10 @@ development_bar = [
           "sum": 727.2321428571428, 
           "average": 26.93452380952381
         }, 
-        "Maldives": {
-          "count": 33, 
-          "sum": 903.3333333333334, 
-          "average": 27.373737373737384
+        "Netherlands": {
+          "count": 34, 
+          "sum": 1982.5614027612078, 
+          "average": 58.31062949297669
         }, 
         "East Asia & Pacific (all income levels)": {
           "count": 25, 
@@ -21671,9 +21326,9 @@ development_bar = [
           "average": 21.803342026465756
         }, 
         "Caribbean small states": {
-          "count": 34, 
-          "sum": 217.09996921494903, 
-          "average": 6.385293212204382
+          "count": 30, 
+          "sum": 191.48079535630484, 
+          "average": 6.3826931785434935
         }, 
         "Brunei Darussalam": {
           "count": 34, 
@@ -21756,14 +21411,14 @@ development_bar = [
           "average": 48.48828370343628
         }, 
         "Ireland": {
-          "count": 34, 
-          "sum": 2391.3499782261574, 
-          "average": 70.33382288900464
+          "count": 4, 
+          "sum": 332.5301204819276, 
+          "average": 83.1325301204819
         }, 
         "Pakistan": {
-          "count": 34, 
-          "sum": 1162.9047322540473, 
-          "average": 34.20308036041316
+          "count": 30, 
+          "sum": 1031.4964715649646, 
+          "average": 34.38321571883216
         }, 
         "Nigeria": {
           "count": 34, 
@@ -21821,14 +21476,14 @@ development_bar = [
           "average": 5.850117337597029
         }, 
         "Fragile and conflict affected situations": {
-          "count": 34, 
-          "sum": 1157.642697741701, 
-          "average": 34.04831463946179
+          "count": 4, 
+          "sum": 128.1497361813645, 
+          "average": 32.03743404534112
         }, 
         "Sierra Leone": {
-          "count": 34, 
-          "sum": 1431.0507944278747, 
-          "average": 42.089729247878665
+          "count": 30, 
+          "sum": 1279.817765888113, 
+          "average": 42.66059219627042
         }, 
         "Nepal": {
           "count": 34, 
@@ -21985,11 +21640,6 @@ development_bar = [
           "sum": 1205.3125, 
           "average": 35.450367647058826
         }, 
-        "Netherlands": {
-          "count": 34, 
-          "sum": 1982.5614027612078, 
-          "average": 58.31062949297669
-        }, 
         "Suriname": {
           "count": 34, 
           "sum": 17.72948717948718, 
@@ -22105,11 +21755,6 @@ development_bar = [
           "sum": 1282.8569054346024, 
           "average": 37.731085453958876
         }, 
-        "Comoros": {
-          "count": 34, 
-          "sum": 2478.774852229985, 
-          "average": 72.9051427126466
-        }, 
         "United Kingdom": {
           "count": 34, 
           "sum": 2486.491960484438, 
@@ -22126,19 +21771,14 @@ development_bar = [
           "average": 65.70937343129648
         }, 
         "Paraguay": {
-          "count": 34, 
-          "sum": 1535.683362698213, 
-          "average": 45.167157726418026
+          "count": 4, 
+          "sum": 133.4004530581424, 
+          "average": 33.3501132645356
         }, 
-        "Botswana": {
-          "count": 27, 
-          "sum": 1233.8653326981098, 
-          "average": 45.69871602585593
-        }, 
-        "Heavily indebted poor countries (HIPC)": {
+        "Comoros": {
           "count": 34, 
-          "sum": 1300.1129786028744, 
-          "average": 38.2386170177316
+          "sum": 2478.774852229985, 
+          "average": 72.9051427126466
         }
       }
     }, 
@@ -22170,7 +21810,7 @@ development_bar = [
       "Congo Rep.", 
       "Spain", 
       "Liberia", 
-      "Maldives", 
+      "Netherlands", 
       "Paraguay", 
       "East Asia & Pacific (all income levels)", 
       "Oman", 
@@ -22213,11 +21853,11 @@ development_bar = [
       "Dominican Republic", 
       "Ghana", 
       "Tonga", 
-      "Finland", 
+      "Indonesia", 
       "Latin America & Caribbean (developing only)", 
       "High income", 
       "Libya", 
-      "Indonesia", 
+      "Finland", 
       "Central African Republic", 
       "Mauritius", 
       "Sweden", 
@@ -22296,7 +21936,6 @@ development_bar = [
       "Sudan", 
       "Nepal", 
       "Malta", 
-      "Netherlands", 
       "Suriname", 
       "Middle East & North Africa (developing only)", 
       "Iran Islamic Rep.", 
@@ -22321,28 +21960,26 @@ development_bar = [
       "Tunisia", 
       "Nicaragua", 
       "Congo Dem. Rep.", 
-      "Botswana", 
       "United Kingdom", 
       "Gambia The", 
       "High income: nonOECD", 
       "Greece", 
       "Sri Lanka", 
-      "Comoros", 
-      "Heavily indebted poor countries (HIPC)"
+      "Comoros"
     ]
   }, 
   {
     "best_indexes": [
       "1988", 
       "1989", 
-      "1990", 
       "1987", 
+      "1990", 
       "1986", 
-      "1982", 
       "1983", 
-      "1991", 
       "1984", 
-      "1985"
+      "1985", 
+      "1982", 
+      "1981"
     ], 
     "data": {
       "development.[0].Data.Rural Development.Land Area": {
@@ -22352,59 +21989,59 @@ development_bar = [
           "average": 4477934.357142857
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 374805474.79999995, 
-          "average": 2299420.090797546
+          "count": 156, 
+          "sum": 334851715.79999995, 
+          "average": 2146485.357692308
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 555977677.1999999, 
-          "average": 3088764.8733333335
+          "count": 175, 
+          "sum": 521263438.1999999, 
+          "average": 2978648.2182857143
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 555977627.1999999, 
-          "average": 3088764.595555556
+          "count": 175, 
+          "sum": 521263388.1999999, 
+          "average": 2978647.9325714284
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 554681497.1999999, 
-          "average": 3133793.769491526
+          "count": 172, 
+          "sum": 519967258.1999999, 
+          "average": 3023065.4546511625
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 554711427.1999999, 
-          "average": 3098946.520670391
+          "count": 174, 
+          "sum": 519997188.1999999, 
+          "average": 2988489.587356322
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 554661383.1999999, 
-          "average": 3151485.1318181823
+          "count": 171, 
+          "sum": 519947144.1999999, 
+          "average": 3040626.5742690056
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 554653947.1999999, 
-          "average": 3151442.8818181823
+          "count": 171, 
+          "sum": 519939708.1999999, 
+          "average": 3040583.0888888887
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 555080953.1999999, 
-          "average": 3136050.5830508475
+          "count": 171, 
+          "sum": 533411192.1999999, 
+          "average": 3119363.697076023
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 554689663.1999999, 
-          "average": 3133839.905084746
+          "count": 172, 
+          "sum": 533586632.1999999, 
+          "average": 3102247.861627907
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 554367803.1999999, 
-          "average": 3167816.0182857146
+          "count": 169, 
+          "sum": 532697952.1999999, 
+          "average": 3152058.8887573965
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 555005293.1999999, 
-          "average": 3153439.165909091
+          "count": 170, 
+          "sum": 533335532.1999999, 
+          "average": 3137267.836470588
         }, 
         "1964": {
           "count": 12, 
@@ -22447,34 +22084,34 @@ development_bar = [
           "average": 5176373.166666667
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 319704494.5, 
-          "average": 2049387.7852564103
+          "count": 149, 
+          "sum": 279758281.5, 
+          "average": 1877572.3590604027
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 321774105.29999995, 
-          "average": 2023736.511320755
+          "count": 152, 
+          "sum": 281827842.3, 
+          "average": 1854130.5414473685
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 306589941.7, 
-          "average": 1965320.139102564
+          "count": 151, 
+          "sum": 271412332.7, 
+          "average": 1797432.6668874172
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 314713078.7, 
-          "average": 2030406.9593548386
+          "count": 149, 
+          "sum": 279538059.7, 
+          "average": 1876094.3604026844
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 375829564.79999995, 
-          "average": 2277754.9381818185
+          "count": 158, 
+          "sum": 335878188.79999995, 
+          "average": 2125811.3215189874
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 351394723.79999995, 
-          "average": 2169103.2333333334
+          "count": 155, 
+          "sum": 311445360.79999995, 
+          "average": 2009324.9083870968
         }, 
         "1968": {
           "count": 14, 
@@ -22487,34 +22124,34 @@ development_bar = [
           "average": 4477938.642857143
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 503841057.79999995, 
-          "average": 2846559.6485875705
+          "count": 170, 
+          "sum": 434238093.79999995, 
+          "average": 2554341.728235294
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 556515727.1999999, 
-          "average": 3091754.04
+          "count": 173, 
+          "sum": 486912763.1999999, 
+          "average": 2814524.6427745665
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 437365648.79999995, 
-          "average": 2499232.278857143
+          "count": 169, 
+          "sum": 402083799.79999995, 
+          "average": 2379194.081656805
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 469448632.79999995, 
-          "average": 2667321.7772727273
+          "count": 170, 
+          "sum": 434166783.79999995, 
+          "average": 2553922.257647059
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 374122105.79999995, 
-          "average": 2309395.7148148147
+          "count": 155, 
+          "sum": 334168346.79999995, 
+          "average": 2155924.8180645164
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 374065140.79999995, 
-          "average": 2323385.9677018635
+          "count": 155, 
+          "sum": 338884291.79999995, 
+          "average": 2186350.269677419
         }, 
         "1979": {
           "count": 14, 
@@ -22542,9 +22179,9 @@ development_bar = [
           "average": 4477934.357142857
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 374675685.79999995, 
-          "average": 2312812.875308642
+          "count": 155, 
+          "sum": 334721926.79999995, 
+          "average": 2159496.301935484
         }, 
         "1973": {
           "count": 14, 
@@ -22567,326 +22204,54 @@ development_bar = [
           "average": 4477938.642857143
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 376190844.4, 
-          "average": 2266209.906024096
-        }, 
-        "1999": {
-          "count": 162, 
-          "sum": 374661542.79999995, 
-          "average": 2312725.5728395064
-        }, 
-        "2000": {
-          "count": 164, 
-          "sum": 376031671.79999995, 
-          "average": 2292876.047560976
-        }, 
-        "2001": {
-          "count": 165, 
-          "sum": 376167990.79999995, 
-          "average": 2279806.004848485
-        }, 
-        "2006": {
-          "count": 162, 
-          "sum": 351400013.79999995, 
-          "average": 2169135.8876543213
-        }, 
-        "2007": {
-          "count": 161, 
-          "sum": 351388340.0, 
-          "average": 2182536.2732919254
-        }, 
-        "2004": {
-          "count": 165, 
-          "sum": 375827318.79999995, 
-          "average": 2277741.326060606
-        }, 
-        "1998": {
-          "count": 163, 
-          "sum": 374840783.79999995, 
-          "average": 2299636.7104294477
-        }, 
-        "2008": {
-          "count": 161, 
-          "sum": 351388502.2, 
-          "average": 2182537.2807453414
-        }, 
-        "2009": {
-          "count": 162, 
-          "sum": 360449532.2, 
-          "average": 2224997.1123456787
-        }
-      }, 
-      "development.[0].Data.Urban Development.Urban Population Growth": {
-        "1974": {
-          "count": 14, 
-          "sum": 52.18711279415932, 
-          "average": 3.727650913868523
-        }, 
-        "1997": {
-          "count": 163, 
-          "sum": 418.75675269966547, 
-          "average": 2.5690598325132865
-        }, 
-        "1988": {
-          "count": 180, 
-          "sum": 595.7414510989577, 
-          "average": 3.309674728327541
-        }, 
-        "1989": {
-          "count": 180, 
-          "sum": 582.5582584040656, 
-          "average": 3.236434768911473
-        }, 
-        "1986": {
-          "count": 177, 
-          "sum": 600.3215973937098, 
-          "average": 3.3916474429023147
-        }, 
-        "1987": {
-          "count": 179, 
-          "sum": 604.2869602514671, 
-          "average": 3.375904805874119
-        }, 
-        "1984": {
-          "count": 176, 
-          "sum": 599.2552331683535, 
-          "average": 3.404859279365645
-        }, 
-        "1985": {
-          "count": 176, 
-          "sum": 598.3050466420582, 
-          "average": 3.399460492284422
-        }, 
-        "1982": {
-          "count": 177, 
-          "sum": 626.6986223674254, 
-          "average": 3.5406701828668097
-        }, 
-        "1983": {
-          "count": 177, 
-          "sum": 618.8346394658885, 
-          "average": 3.496240900937223
-        }, 
-        "1980": {
-          "count": 175, 
-          "sum": 616.9186511246221, 
-          "average": 3.5252494349978414
-        }, 
-        "1981": {
-          "count": 176, 
-          "sum": 626.880851654577, 
-          "average": 3.561823020764642
-        }, 
-        "1964": {
-          "count": 12, 
-          "sum": 46.33854722166822, 
-          "average": 3.8615456018056853
-        }, 
-        "1965": {
-          "count": 12, 
-          "sum": 46.343713150460275, 
-          "average": 3.861976095871689
-        }, 
-        "1966": {
-          "count": 13, 
-          "sum": 49.72280290913975, 
-          "average": 3.82483099301075
-        }, 
-        "1967": {
-          "count": 13, 
-          "sum": 48.95151806448172, 
-          "average": 3.7655013895755163
-        }, 
-        "1960": {
-          "count": 14, 
-          "sum": 40.177917600409636, 
-          "average": 2.869851257172116
-        }, 
-        "1961": {
-          "count": 12, 
-          "sum": 43.08793123893241, 
-          "average": 3.590660936577701
-        }, 
-        "1962": {
-          "count": 12, 
-          "sum": 45.3241507037529, 
-          "average": 3.7770125586460748
-        }, 
-        "1963": {
-          "count": 12, 
-          "sum": 46.47682703178562, 
-          "average": 3.8730689193154677
-        }, 
-        "2011": {
-          "count": 156, 
-          "sum": 359.34898113851983, 
-          "average": 2.303519109862306
-        }, 
-        "2010": {
           "count": 159, 
-          "sum": 368.8266514142151, 
-          "average": 2.31966447430324
-        }, 
-        "2013": {
-          "count": 156, 
-          "sum": 346.1483679660157, 
-          "average": 2.2188997946539466
-        }, 
-        "2012": {
-          "count": 155, 
-          "sum": 361.27167682315917, 
-          "average": 2.3307850117623183
-        }, 
-        "2003": {
-          "count": 165, 
-          "sum": 407.99186910146614, 
-          "average": 2.4726779945543393
-        }, 
-        "2005": {
-          "count": 162, 
-          "sum": 394.01622861407736, 
-          "average": 2.432198942062206
-        }, 
-        "1968": {
-          "count": 14, 
-          "sum": 55.7107220379573, 
-          "average": 3.9793372884255205
-        }, 
-        "1969": {
-          "count": 14, 
-          "sum": 54.22191294238631, 
-          "average": 3.872993781599022
-        }, 
-        "1991": {
-          "count": 177, 
-          "sum": 564.7267016031345, 
-          "average": 3.190546336740871
-        }, 
-        "1990": {
-          "count": 180, 
-          "sum": 570.7087179626271, 
-          "average": 3.170603988681263
-        }, 
-        "1993": {
-          "count": 175, 
-          "sum": 504.8670173255134, 
-          "average": 2.8849543847172203
-        }, 
-        "1992": {
-          "count": 176, 
-          "sum": 539.182518832944, 
-          "average": 3.0635370388235454
-        }, 
-        "1995": {
-          "count": 162, 
-          "sum": 426.873665380513, 
-          "average": 2.6350226258056364
-        }, 
-        "1994": {
-          "count": 161, 
-          "sum": 450.9674331083884, 
-          "average": 2.801039957194958
-        }, 
-        "1979": {
-          "count": 14, 
-          "sum": 49.50942823423318, 
-          "average": 3.5363877310166556
-        }, 
-        "1978": {
-          "count": 14, 
-          "sum": 49.84413322399648, 
-          "average": 3.5602952302854622
-        }, 
-        "1977": {
-          "count": 14, 
-          "sum": 50.84121546033116, 
-          "average": 3.631515390023654
-        }, 
-        "1976": {
-          "count": 14, 
-          "sum": 52.172537924220244, 
-          "average": 3.7266098517300175
-        }, 
-        "1975": {
-          "count": 14, 
-          "sum": 52.388205957482704, 
-          "average": 3.742014711248764
-        }, 
-        "1996": {
-          "count": 162, 
-          "sum": 426.51237978707456, 
-          "average": 2.632792467821448
-        }, 
-        "1973": {
-          "count": 14, 
-          "sum": 52.96608604162195, 
-          "average": 3.783291860115853
-        }, 
-        "1972": {
-          "count": 14, 
-          "sum": 52.00698911854543, 
-          "average": 3.714784937038959
-        }, 
-        "1971": {
-          "count": 14, 
-          "sum": 53.97363111205728, 
-          "average": 3.855259365146949
-        }, 
-        "1970": {
-          "count": 14, 
-          "sum": 53.60438223464245, 
-          "average": 3.8288844453316035
-        }, 
-        "2002": {
-          "count": 166, 
-          "sum": 417.1430977377289, 
-          "average": 2.5129102273357176
+          "sum": 336236735.4, 
+          "average": 2114696.4490566035
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 402.6429628972544, 
-          "average": 2.4854503882546575
+          "count": 155, 
+          "sum": 334707783.79999995, 
+          "average": 2159405.0567741934
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 409.66673339217914, 
-          "average": 2.4979678865376784
+          "count": 157, 
+          "sum": 336077912.79999995, 
+          "average": 2140623.648407643
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 410.16846499281075, 
-          "average": 2.4858694848049128
+          "count": 158, 
+          "sum": 336213881.79999995, 
+          "average": 2127935.9607594935
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 393.3482484019802, 
-          "average": 2.42807560741963
+          "count": 155, 
+          "sum": 311450710.79999995, 
+          "average": 2009359.424516129
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 383.16450325066154, 
-          "average": 2.3799037468985196
+          "count": 154, 
+          "sum": 311438867.0, 
+          "average": 2022330.3051948051
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 408.41947384944984, 
-          "average": 2.4752695384815144
+          "count": 158, 
+          "sum": 335876132.79999995, 
+          "average": 2125798.3088607597
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 418.54790382792976, 
-          "average": 2.5677785510915947
+          "count": 156, 
+          "sum": 334887024.79999995, 
+          "average": 2146711.6974358973
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 376.79145417344307, 
-          "average": 2.3403195911393975
+          "count": 154, 
+          "sum": 311438969.2, 
+          "average": 2022330.9688311687
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 376.14521174580545, 
-          "average": 2.321884023122255
+          "count": 155, 
+          "sum": 320500209.2, 
+          "average": 2067743.2851612903
         }
       }, 
       "development.[0].Data.Urban Development.Population Density": {
@@ -22896,59 +22261,59 @@ development_bar = [
           "average": 49.29567283156127
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 19126.538414489598, 
-          "average": 117.34072646926136
+          "count": 156, 
+          "sum": 17911.54944871872, 
+          "average": 114.81762467127388
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 16857.5130434403, 
-          "average": 93.652850241335
+          "count": 175, 
+          "sum": 16108.552723072342, 
+          "average": 92.04887270327052
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 17110.18665213504, 
-          "average": 95.05659251186137
+          "count": 175, 
+          "sum": 16338.45600040313, 
+          "average": 93.36260571658931
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 16204.16844200356, 
-          "average": 91.54897424860769
+          "count": 172, 
+          "sum": 15500.630892241645, 
+          "average": 90.11994704791654
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 16597.21337526776, 
-          "average": 92.72186243166345
+          "count": 174, 
+          "sum": 15871.141316618157, 
+          "average": 91.21345584263308
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 15694.525481122337, 
-          "average": 89.17344023364969
+          "count": 171, 
+          "sum": 15035.161670535948, 
+          "average": 87.92492204991784
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 15941.541613465772, 
-          "average": 90.57694098560097
+          "count": 171, 
+          "sum": 15260.200031052384, 
+          "average": 89.24093585410749
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 15142.891800843337, 
-          "average": 85.55306102171377
+          "count": 171, 
+          "sum": 14429.479769688312, 
+          "average": 84.38292262975621
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 15448.147453635873, 
-          "average": 87.27766922958119
+          "count": 172, 
+          "sum": 14712.628485975338, 
+          "average": 85.53853770915893
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 14815.918227956388, 
-          "average": 84.6623898740365
+          "count": 169, 
+          "sum": 14145.231003624116, 
+          "average": 83.69959173742079
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 15061.226049639494, 
-          "average": 85.5751480093153
+          "count": 170, 
+          "sum": 14370.13396334443, 
+          "average": 84.53019978437901
         }, 
         "1964": {
           "count": 12, 
@@ -22991,34 +22356,34 @@ development_bar = [
           "average": 43.21569706832205
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 22855.21018543535, 
-          "average": 146.50775759894455
+          "count": 149, 
+          "sum": 21286.417180902157, 
+          "average": 142.86186027451117
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 22732.435457491913, 
-          "average": 142.97129218548378
+          "count": 152, 
+          "sum": 21190.39954202749, 
+          "average": 139.41052330281255
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 22334.26083557136, 
-          "average": 143.16833868956007
+          "count": 151, 
+          "sum": 22183.78992368983, 
+          "average": 146.91251605092606
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 22908.434672334515, 
-          "average": 147.7963527247387
+          "count": 149, 
+          "sum": 21653.436663715507, 
+          "average": 145.32507827996977
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 20902.8955203319, 
-          "average": 126.68421527473873
+          "count": 158, 
+          "sum": 19537.293108104655, 
+          "average": 123.6537538487636
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 21333.338689978835, 
-          "average": 131.68727586406692
+          "count": 155, 
+          "sum": 19920.032472907624, 
+          "average": 128.51633853488795
         }, 
         "1968": {
           "count": 14, 
@@ -23031,34 +22396,34 @@ development_bar = [
           "average": 44.026119677439006
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 17285.591103607458, 
-          "average": 97.65870680004214
+          "count": 170, 
+          "sum": 16435.30255755791, 
+          "average": 96.67825033857594
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 17073.90251318934, 
-          "average": 94.85501396216297
+          "count": 173, 
+          "sum": 16246.422633904507, 
+          "average": 93.90995742141332
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 18137.569690032007, 
-          "average": 103.64325537161145
+          "count": 169, 
+          "sum": 17274.861606976137, 
+          "average": 102.21811601761028
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 17892.29477093074, 
-          "average": 101.66076574392464
+          "count": 170, 
+          "sum": 17051.061986847366, 
+          "average": 100.30036462851393
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 17682.304684210394, 
-          "average": 109.15002891487896
+          "count": 155, 
+          "sum": 16519.292035396582, 
+          "average": 106.57607764771984
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 17402.273351933014, 
-          "average": 108.08865435983235
+          "count": 155, 
+          "sum": 16518.548431766798, 
+          "average": 106.57128020494703
         }, 
         "1979": {
           "count": 14, 
@@ -23086,9 +22451,9 @@ development_bar = [
           "average": 50.37112840686292
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 17936.7848649666, 
-          "average": 110.72089422818885
+          "count": 155, 
+          "sum": 16747.866460228895, 
+          "average": 108.05075135631546
         }, 
         "1973": {
           "count": 14, 
@@ -23111,54 +22476,54 @@ development_bar = [
           "average": 45.06278036186033
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 20941.388996022415, 
-          "average": 126.15294575917122
+          "count": 159, 
+          "sum": 19599.712564719805, 
+          "average": 123.26863248251452
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 18689.588906500914, 
-          "average": 115.3678327561785
+          "count": 155, 
+          "sum": 17422.560786902486, 
+          "average": 112.40361798001602
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 18982.90666910768, 
-          "average": 115.74943090919311
+          "count": 157, 
+          "sum": 17690.406728128546, 
+          "average": 112.67774986069135
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 20272.72332990013, 
-          "average": 122.86498987818258
+          "count": 158, 
+          "sum": 18955.340301038646, 
+          "average": 119.97050823442177
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 21649.710164880587, 
-          "average": 133.64018620296653
+          "count": 155, 
+          "sum": 20211.78663616704, 
+          "average": 130.39862345914216
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 20709.746358474124, 
-          "average": 128.63196495946656
+          "count": 154, 
+          "sum": 19246.33750343243, 
+          "average": 124.97621755475602
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 21207.23349422142, 
-          "average": 128.52868784376628
+          "count": 158, 
+          "sum": 19817.972958802893, 
+          "average": 125.43020860001837
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 18461.17596451764, 
-          "average": 113.25874824857448
+          "count": 156, 
+          "sum": 17220.05329351485, 
+          "average": 110.3849570097106
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 20953.10442997503, 
-          "average": 130.14350577624236
+          "count": 154, 
+          "sum": 19463.584487813398, 
+          "average": 126.38691225852848
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 21208.674566965634, 
-          "average": 130.91774424052855
+          "count": 155, 
+          "sum": 19692.941888520636, 
+          "average": 127.05123799045572
         }
       }, 
       "development.[0].Data.Health.Death Rate": {
@@ -23168,59 +22533,59 @@ development_bar = [
           "average": 13.276442898805579
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 1546.467441186631, 
-          "average": 9.487530314028405
+          "count": 156, 
+          "sum": 1477.6294696940497, 
+          "average": 9.471983780090056
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 1856.0423897515357, 
-          "average": 10.311346609730752
+          "count": 175, 
+          "sum": 1799.1314310978325, 
+          "average": 10.280751034844757
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 1838.2985920385408, 
-          "average": 10.21276995576967
+          "count": 175, 
+          "sum": 1782.147688872986, 
+          "average": 10.183701079274202
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 1876.964589888284, 
-          "average": 10.604319716882955
+          "count": 172, 
+          "sum": 1817.6595694088453, 
+          "average": 10.567788194237467
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 1854.0878627333475, 
-          "average": 10.35803275270027
+          "count": 174, 
+          "sum": 1795.654836215226, 
+          "average": 10.31985538054728
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 1918.2356485044022, 
-          "average": 10.899066184684106
+          "count": 171, 
+          "sum": 1856.9109203866708, 
+          "average": 10.859128189395738
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 1880.4569957826907, 
-          "average": 10.684414748765288
+          "count": 171, 
+          "sum": 1820.449762468748, 
+          "average": 10.645905043676889
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 1987.0126744465547, 
-          "average": 11.226060307607655
+          "count": 171, 
+          "sum": 1903.7323362245425, 
+          "average": 11.132937638740016
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 1969.8792388998313, 
-          "average": 11.129261236722217
+          "count": 172, 
+          "sum": 1896.2585911929868, 
+          "average": 11.024759251122022
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 2020.036187451626, 
-          "average": 11.543063928295004
+          "count": 169, 
+          "sum": 1933.6841072353427, 
+          "average": 11.44191779429197
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 2023.5070242974334, 
-          "average": 11.49719900168996
+          "count": 170, 
+          "sum": 1938.7495000126144, 
+          "average": 11.404408823603612
         }, 
         "1964": {
           "count": 12, 
@@ -23263,34 +22628,34 @@ development_bar = [
           "average": 14.231357460422158
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 1328.1330629648246, 
-          "average": 8.513673480543748
+          "count": 149, 
+          "sum": 1266.6506563113683, 
+          "average": 8.501011116183681
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 1357.1093059811128, 
-          "average": 8.535278653969259
+          "count": 152, 
+          "sum": 1294.8757209833955, 
+          "average": 8.51891921699602
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 1285.1250142461254, 
-          "average": 8.237980860552087
+          "count": 151, 
+          "sum": 1235.60962806983, 
+          "average": 8.182845219005499
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 1293.8785228067404, 
-          "average": 8.347603372946715
+          "count": 149, 
+          "sum": 1240.4920644601307, 
+          "average": 8.32545009704786
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 1515.5718754695658, 
-          "average": 9.185284093754944
+          "count": 158, 
+          "sum": 1449.0246349595234, 
+          "average": 9.171041993414706
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 1466.0734605946798, 
-          "average": 9.049836176510366
+          "count": 155, 
+          "sum": 1400.6937578334075, 
+          "average": 9.036733921505853
         }, 
         "1968": {
           "count": 14, 
@@ -23303,34 +22668,34 @@ development_bar = [
           "average": 14.708961678564533
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 1731.8793807180496, 
-          "average": 9.784629269593498
+          "count": 170, 
+          "sum": 1661.800269048033, 
+          "average": 9.775295700282546
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 1799.8696690008678, 
-          "average": 9.999275938893708
+          "count": 173, 
+          "sum": 1728.8088558218133, 
+          "average": 9.993114773536492
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 1677.5443538573793, 
-          "average": 9.585967736327882
+          "count": 169, 
+          "sum": 1617.3308959288788, 
+          "average": 9.570005301354312
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 1710.4035972852719, 
-          "average": 9.718202257302682
+          "count": 170, 
+          "sum": 1649.51725685816, 
+          "average": 9.70304268740094
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 1552.0407534246315, 
-          "average": 9.580498477929826
+          "count": 155, 
+          "sum": 1482.7824234505495, 
+          "average": 9.566338215809997
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 1548.0009245466515, 
-          "average": 9.614912574823926
+          "count": 155, 
+          "sum": 1487.845595741751, 
+          "average": 9.59900384349517
         }, 
         "1979": {
           "count": 14, 
@@ -23358,9 +22723,9 @@ development_bar = [
           "average": 12.996404667525763
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 1546.2924931690313, 
-          "average": 9.545015389932297
+          "count": 155, 
+          "sum": 1477.0408664830647, 
+          "average": 9.529295912793971
         }, 
         "1973": {
           "count": 14, 
@@ -23383,54 +22748,54 @@ development_bar = [
           "average": 14.414980771778845
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 1534.893279717267, 
-          "average": 9.24634505853775
+          "count": 159, 
+          "sum": 1467.7884180243502, 
+          "average": 9.23137369826635
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 1519.2475990087032, 
-          "average": 9.378071598819156
+          "count": 155, 
+          "sum": 1450.9106489082794, 
+          "average": 9.360713863924385
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 1545.0348199101775, 
-          "average": 9.420944023842544
+          "count": 157, 
+          "sum": 1476.6411646912866, 
+          "average": 9.405357736887174
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 1537.8354485163745, 
-          "average": 9.320214839493183
+          "count": 158, 
+          "sum": 1470.1166169178643, 
+          "average": 9.30453555011307
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 1451.3552928169895, 
-          "average": 8.95898328899376
+          "count": 155, 
+          "sum": 1386.5913443765119, 
+          "average": 8.945750608880719
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 1426.3903668263001, 
-          "average": 8.85956749581553
+          "count": 154, 
+          "sum": 1362.1918262674726, 
+          "average": 8.845401469269303
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 1503.6729378529365, 
-          "average": 9.113169320320821
+          "count": 158, 
+          "sum": 1437.632021054084, 
+          "average": 9.098936842114453
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 1542.3931217399036, 
-          "average": 9.462534489201865
+          "count": 156, 
+          "sum": 1473.8143287729129, 
+          "average": 9.447527748544315
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 1407.7294089095, 
-          "average": 8.743660924903725
+          "count": 154, 
+          "sum": 1344.3336267988284, 
+          "average": 8.729439135057326
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 1396.5825904440399, 
-          "average": 8.620880187926169
+          "count": 155, 
+          "sum": 1333.8100305074604, 
+          "average": 8.605226003273936
         }
       }, 
       "development.[0].Data.Rural Development.Arable Land Percent": {
@@ -23440,59 +22805,59 @@ development_bar = [
           "average": 10.769526723303757
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 2168.6680224476704, 
-          "average": 13.304711794157477
+          "count": 156, 
+          "sum": 2081.7862239541046, 
+          "average": 13.34478348688528
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 2350.938649408484, 
-          "average": 13.060770274491585
+          "count": 175, 
+          "sum": 2310.885029534607, 
+          "average": 13.205057311626334
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 2358.0313909319284, 
-          "average": 13.100174394066268
+          "count": 175, 
+          "sum": 2317.1556444035464, 
+          "average": 13.240889396591694
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 2329.476180029364, 
-          "average": 13.160882373047261
+          "count": 172, 
+          "sum": 2288.9638752341666, 
+          "average": 13.307929507175395
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 2341.2680544628442, 
-          "average": 13.079709801468415
+          "count": 174, 
+          "sum": 2300.922552310999, 
+          "average": 13.223692829373563
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 2298.5979215118427, 
-          "average": 13.060215463135473
+          "count": 171, 
+          "sum": 2258.6069140298573, 
+          "average": 13.20822756742607
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 2313.8789025487968, 
-          "average": 13.14703921902726
+          "count": 171, 
+          "sum": 2273.3816300075623, 
+          "average": 13.294629415248908
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 2301.477087575566, 
-          "average": 13.002695410031448
+          "count": 171, 
+          "sum": 2250.891070217097, 
+          "average": 13.163105673784191
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 2311.4879073517377, 
-          "average": 13.059253713851628
+          "count": 172, 
+          "sum": 2261.472625583102, 
+          "average": 13.148096660366877
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 2322.5174612650103, 
-          "average": 13.271528350085774
+          "count": 169, 
+          "sum": 2272.1316586427106, 
+          "average": 13.44456602747166
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 2311.18680270289, 
-          "average": 13.131743197175517
+          "count": 170, 
+          "sum": 2260.653215297535, 
+          "average": 13.297960089985505
         }, 
         "1964": {
           "count": 12, 
@@ -23535,34 +22900,34 @@ development_bar = [
           "average": 11.632151860568285
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 2215.2957035930026, 
-          "average": 14.20061348457053
+          "count": 149, 
+          "sum": 2124.953049712403, 
+          "average": 14.261429863841629
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 2224.8851714355337, 
-          "average": 13.992988499594558
+          "count": 152, 
+          "sum": 2133.632000888276, 
+          "average": 14.03705263742287
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 2196.3920149820674, 
-          "average": 14.0794359934748
+          "count": 151, 
+          "sum": 2152.9718709258364, 
+          "average": 14.258091860436005
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 2169.3381609625576, 
-          "average": 13.99573007072618
+          "count": 149, 
+          "sum": 2119.6935625341453, 
+          "average": 14.226131292175472
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 2224.85076284045, 
-          "average": 13.48394401721485
+          "count": 158, 
+          "sum": 2134.663868653282, 
+          "average": 13.510530814261278
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 2230.4722404837953, 
-          "average": 13.768347163480218
+          "count": 155, 
+          "sum": 2139.1888454751925, 
+          "average": 13.801218357904471
         }, 
         "1968": {
           "count": 14, 
@@ -23575,34 +22940,34 @@ development_bar = [
           "average": 10.419205599160774
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 2292.567648633314, 
-          "average": 12.952359596798384
+          "count": 170, 
+          "sum": 2237.6701367000146, 
+          "average": 13.162765510000089
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 2318.65212513426, 
-          "average": 12.881400695190342
+          "count": 173, 
+          "sum": 2263.8262256927737, 
+          "average": 13.085700726547833
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 2256.191646348351, 
-          "average": 12.892523693419134
+          "count": 169, 
+          "sum": 2214.2279367831106, 
+          "average": 13.10194045433792
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 2285.065574633547, 
-          "average": 12.983327128599706
+          "count": 170, 
+          "sum": 2243.1228717910103, 
+          "average": 13.194840422300071
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 2094.9224685629406, 
-          "average": 12.931620176314448
+          "count": 155, 
+          "sum": 2009.205267580843, 
+          "average": 12.962614629553828
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 2099.664145992551, 
-          "average": 13.041392211133854
+          "count": 155, 
+          "sum": 2056.8104951284854, 
+          "average": 13.26974512986119
         }, 
         "1979": {
           "count": 14, 
@@ -23630,9 +22995,9 @@ development_bar = [
           "average": 10.917105946742305
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 2100.1297398282704, 
-          "average": 12.963763826100434
+          "count": 155, 
+          "sum": 2013.7873213468401, 
+          "average": 12.992176266753813
         }, 
         "1973": {
           "count": 14, 
@@ -23655,54 +23020,54 @@ development_bar = [
           "average": 10.45535001531431
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 2232.3507471332487, 
-          "average": 13.44789606706776
+          "count": 159, 
+          "sum": 2142.427800101103, 
+          "average": 13.474388679881148
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 2108.00922040936, 
-          "average": 13.012402595119502
+          "count": 155, 
+          "sum": 2020.0503035327888, 
+          "average": 13.032582603437344
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 2116.0071601229565, 
-          "average": 12.902482683676556
+          "count": 157, 
+          "sum": 2028.0298636299472, 
+          "average": 12.91738766643278
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 2179.57219234893, 
-          "average": 13.209528438478358
+          "count": 158, 
+          "sum": 2091.2719837399613, 
+          "average": 13.235898631265576
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 2222.0530482505637, 
-          "average": 13.71637684105286
+          "count": 155, 
+          "sum": 2130.4592994235827, 
+          "average": 13.744898705958589
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 2218.96187998755, 
-          "average": 13.78237192538851
+          "count": 154, 
+          "sum": 2127.6986776297776, 
+          "average": 13.81622517941414
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 2234.6816142778766, 
-          "average": 13.543524935017432
+          "count": 158, 
+          "sum": 2143.8697069891386, 
+          "average": 13.568795613855308
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 2114.257167892221, 
-          "average": 12.970902870504418
+          "count": 156, 
+          "sum": 2027.5504430171643, 
+          "average": 12.997118224468997
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 2199.7899666282183, 
-          "average": 13.663291718187697
+          "count": 154, 
+          "sum": 2109.757403782338, 
+          "average": 13.699723401184018
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 2245.9468206132374, 
-          "average": 13.863869263044679
+          "count": 155, 
+          "sum": 2154.7858883702793, 
+          "average": 13.901844441098579
         }
       }, 
       "development.[0].Year": {
@@ -23712,58 +23077,58 @@ development_bar = [
           "average": 1974.0
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 325511, 
+          "count": 156, 
+          "sum": 311532, 
           "average": 1997.0
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 357840, 
+          "count": 175, 
+          "sum": 347900, 
           "average": 1988.0
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 358020, 
+          "count": 175, 
+          "sum": 348075, 
           "average": 1989.0
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 351522, 
+          "count": 172, 
+          "sum": 341592, 
           "average": 1986.0
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 355673, 
+          "count": 174, 
+          "sum": 345738, 
           "average": 1987.0
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 349184, 
+          "count": 171, 
+          "sum": 339264, 
           "average": 1984.0
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 349360, 
+          "count": 171, 
+          "sum": 339435, 
           "average": 1985.0
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 350814, 
+          "count": 171, 
+          "sum": 338922, 
           "average": 1982.0
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 350991, 
+          "count": 172, 
+          "sum": 341076, 
           "average": 1983.0
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 346500, 
+          "count": 169, 
+          "sum": 334620, 
           "average": 1980.0
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 348656, 
+          "count": 170, 
+          "sum": 336770, 
           "average": 1981.0
         }, 
         "1964": {
@@ -23807,33 +23172,33 @@ development_bar = [
           "average": 1963.0
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 313716, 
+          "count": 149, 
+          "sum": 299639, 
           "average": 2011.0
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 319590, 
+          "count": 152, 
+          "sum": 305520, 
           "average": 2010.0
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 314028, 
+          "count": 151, 
+          "sum": 303963, 
           "average": 2013.0
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 311860, 
+          "count": 149, 
+          "sum": 299788, 
           "average": 2012.0
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 330495, 
+          "count": 158, 
+          "sum": 316474, 
           "average": 2003.0
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 324810, 
+          "count": 155, 
+          "sum": 310775, 
           "average": 2005.0
         }, 
         "1968": {
@@ -23847,33 +23212,33 @@ development_bar = [
           "average": 1969.0
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 352407, 
+          "count": 170, 
+          "sum": 338470, 
           "average": 1991.0
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 358200, 
+          "count": 173, 
+          "sum": 344270, 
           "average": 1990.0
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 348775, 
+          "count": 169, 
+          "sum": 336817, 
           "average": 1993.0
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 350592, 
+          "count": 170, 
+          "sum": 338640, 
           "average": 1992.0
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 323190, 
+          "count": 155, 
+          "sum": 309225, 
           "average": 1995.0
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 321034, 
+          "count": 155, 
+          "sum": 309070, 
           "average": 1994.0
         }, 
         "1979": {
@@ -23902,8 +23267,8 @@ development_bar = [
           "average": 1975.0
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 323352, 
+          "count": 155, 
+          "sum": 309380, 
           "average": 1996.0
         }, 
         "1973": {
@@ -23927,326 +23292,598 @@ development_bar = [
           "average": 1970.0
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 332332, 
+          "count": 159, 
+          "sum": 318318, 
           "average": 2002.0
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 323838, 
+          "count": 155, 
+          "sum": 309845, 
           "average": 1999.0
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 328000, 
+          "count": 157, 
+          "sum": 314000, 
           "average": 2000.0
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 330165, 
+          "count": 158, 
+          "sum": 316158, 
           "average": 2001.0
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 324972, 
+          "count": 155, 
+          "sum": 310930, 
           "average": 2006.0
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 323127, 
+          "count": 154, 
+          "sum": 309078, 
           "average": 2007.0
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 330660, 
+          "count": 158, 
+          "sum": 316632, 
           "average": 2004.0
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 325674, 
+          "count": 156, 
+          "sum": 311688, 
           "average": 1998.0
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 323288, 
+          "count": 154, 
+          "sum": 309232, 
           "average": 2008.0
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 325458, 
+          "count": 155, 
+          "sum": 311395, 
           "average": 2009.0
+        }
+      }, 
+      "development.[0].Data.Urban Development.Urban Population Percent Growth": {
+        "1974": {
+          "count": 14, 
+          "sum": 52.18711279415932, 
+          "average": 3.727650913868523
+        }, 
+        "1997": {
+          "count": 156, 
+          "sum": 396.06531618684187, 
+          "average": 2.538880231966936
+        }, 
+        "1988": {
+          "count": 175, 
+          "sum": 578.6622093732332, 
+          "average": 3.306641196418474
+        }, 
+        "1989": {
+          "count": 175, 
+          "sum": 566.2151266742679, 
+          "average": 3.2355150095672434
+        }, 
+        "1986": {
+          "count": 172, 
+          "sum": 580.755876005691, 
+          "average": 3.3764876511958777
+        }, 
+        "1987": {
+          "count": 174, 
+          "sum": 586.8980543187851, 
+          "average": 3.3729773236711806
+        }, 
+        "1984": {
+          "count": 171, 
+          "sum": 578.7521263368396, 
+          "average": 3.3845153586949692
+        }, 
+        "1985": {
+          "count": 171, 
+          "sum": 577.6204469818261, 
+          "average": 3.377897350770913
+        }, 
+        "1982": {
+          "count": 171, 
+          "sum": 596.2583459992551, 
+          "average": 3.486890912276344
+        }, 
+        "1983": {
+          "count": 172, 
+          "sum": 598.3547649917548, 
+          "average": 3.4788067732078773
+        }, 
+        "1980": {
+          "count": 169, 
+          "sum": 585.497105488071, 
+          "average": 3.4644799141305977
+        }, 
+        "1981": {
+          "count": 170, 
+          "sum": 595.5096836379573, 
+          "average": 3.5029981390468077
+        }, 
+        "1964": {
+          "count": 12, 
+          "sum": 46.33854722166822, 
+          "average": 3.8615456018056853
+        }, 
+        "1965": {
+          "count": 12, 
+          "sum": 46.343713150460275, 
+          "average": 3.861976095871689
+        }, 
+        "1966": {
+          "count": 13, 
+          "sum": 49.72280290913975, 
+          "average": 3.82483099301075
+        }, 
+        "1967": {
+          "count": 13, 
+          "sum": 48.95151806448172, 
+          "average": 3.7655013895755163
+        }, 
+        "1960": {
+          "count": 14, 
+          "sum": 40.177917600409636, 
+          "average": 2.869851257172116
+        }, 
+        "1961": {
+          "count": 12, 
+          "sum": 43.08793123893241, 
+          "average": 3.590660936577701
+        }, 
+        "1962": {
+          "count": 12, 
+          "sum": 45.3241507037529, 
+          "average": 3.7770125586460748
+        }, 
+        "1963": {
+          "count": 12, 
+          "sum": 46.47682703178562, 
+          "average": 3.8730689193154677
+        }, 
+        "2011": {
+          "count": 149, 
+          "sum": 339.8645607408378, 
+          "average": 2.2809702063143478
+        }, 
+        "2010": {
+          "count": 152, 
+          "sum": 348.6264141500019, 
+          "average": 2.2935948299342233
+        }, 
+        "2013": {
+          "count": 151, 
+          "sum": 334.65253395074393, 
+          "average": 2.216241946693668
+        }, 
+        "2012": {
+          "count": 149, 
+          "sum": 344.7865402309082, 
+          "average": 2.314003625710794
+        }, 
+        "2003": {
+          "count": 158, 
+          "sum": 384.613997299956, 
+          "average": 2.4342658056959245
+        }, 
+        "2005": {
+          "count": 155, 
+          "sum": 371.90991524246505, 
+          "average": 2.399418808015904
+        }, 
+        "1968": {
+          "count": 14, 
+          "sum": 55.7107220379573, 
+          "average": 3.9793372884255205
+        }, 
+        "1969": {
+          "count": 14, 
+          "sum": 54.22191294238631, 
+          "average": 3.872993781599022
+        }, 
+        "1991": {
+          "count": 170, 
+          "sum": 534.1328909333457, 
+          "average": 3.1419581819608564
+        }, 
+        "1990": {
+          "count": 173, 
+          "sum": 541.7224198897719, 
+          "average": 3.131343467570936
+        }, 
+        "1993": {
+          "count": 169, 
+          "sum": 483.25317955640463, 
+          "average": 2.8594862695645253
+        }, 
+        "1992": {
+          "count": 170, 
+          "sum": 512.2089761936081, 
+          "average": 3.0129939776094607
+        }, 
+        "1995": {
+          "count": 155, 
+          "sum": 405.0985442326558, 
+          "average": 2.6135389950493924
+        }, 
+        "1994": {
+          "count": 155, 
+          "sum": 430.9860347942038, 
+          "average": 2.780555063188411
+        }, 
+        "1979": {
+          "count": 14, 
+          "sum": 49.50942823423318, 
+          "average": 3.5363877310166556
+        }, 
+        "1978": {
+          "count": 14, 
+          "sum": 49.84413322399648, 
+          "average": 3.5602952302854622
+        }, 
+        "1977": {
+          "count": 14, 
+          "sum": 50.84121546033116, 
+          "average": 3.631515390023654
+        }, 
+        "1976": {
+          "count": 14, 
+          "sum": 52.172537924220244, 
+          "average": 3.7266098517300175
+        }, 
+        "1975": {
+          "count": 14, 
+          "sum": 52.388205957482704, 
+          "average": 3.742014711248764
+        }, 
+        "1996": {
+          "count": 155, 
+          "sum": 404.7563099580393, 
+          "average": 2.6113310319873504
+        }, 
+        "1973": {
+          "count": 14, 
+          "sum": 52.96608604162195, 
+          "average": 3.783291860115853
+        }, 
+        "1972": {
+          "count": 14, 
+          "sum": 52.00698911854543, 
+          "average": 3.714784937038959
+        }, 
+        "1971": {
+          "count": 14, 
+          "sum": 53.97363111205728, 
+          "average": 3.855259365146949
+        }, 
+        "1970": {
+          "count": 14, 
+          "sum": 53.60438223464245, 
+          "average": 3.8288844453316035
+        }, 
+        "2002": {
+          "count": 159, 
+          "sum": 392.75497355603045, 
+          "average": 2.4701570663901293
+        }, 
+        "1999": {
+          "count": 155, 
+          "sum": 380.60746088757463, 
+          "average": 2.4555320057262886
+        }, 
+        "2000": {
+          "count": 157, 
+          "sum": 387.9280494972349, 
+          "average": 2.470879296160732
+        }, 
+        "2001": {
+          "count": 158, 
+          "sum": 387.93083096580534, 
+          "average": 2.45525842383421
+        }, 
+        "2006": {
+          "count": 155, 
+          "sum": 371.0583344052809, 
+          "average": 2.3939247380985855
+        }, 
+        "2007": {
+          "count": 154, 
+          "sum": 360.5376739672942, 
+          "average": 2.3411537270603526
+        }, 
+        "2004": {
+          "count": 158, 
+          "sum": 386.14737981902067, 
+          "average": 2.443970758348233
+        }, 
+        "1998": {
+          "count": 156, 
+          "sum": 396.01983171346706, 
+          "average": 2.5385886648299185
+        }, 
+        "2008": {
+          "count": 154, 
+          "sum": 354.2680846673759, 
+          "average": 2.3004421082297126
+        }, 
+        "2009": {
+          "count": 155, 
+          "sum": 354.6527132453523, 
+          "average": 2.288082020937756
         }
       }, 
       "development.[0].Data.Rural Development.Rural Population": {
         "1974": {
           "count": 14, 
-          "sum": 1180902371.0, 
-          "average": 84350169.35714285
+          "sum": 400424600, 
+          "average": 28601757.14285714
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 10677371923.0, 
-          "average": 65505349.220858894
+          "count": 156, 
+          "sum": 5530819467, 
+          "average": 35453970.942307696
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 11691833401.0, 
-          "average": 64954630.005555555
+          "count": 175, 
+          "sum": 7133248387, 
+          "average": 40761419.35428572
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 11821281007.0, 
-          "average": 65673783.37222222
+          "count": 175, 
+          "sum": 7235951865, 
+          "average": 41348296.37142857
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 11421988572.0, 
-          "average": 64531008.881355934
+          "count": 172, 
+          "sum": 6902810009, 
+          "average": 40132616.33139535
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 11551197789.0, 
-          "average": 64531831.223463684
+          "count": 174, 
+          "sum": 7019246720, 
+          "average": 40340498.390804596
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 11172412800.0, 
-          "average": 63479618.18181818
+          "count": 171, 
+          "sum": 6718380398, 
+          "average": 39288774.25730994
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 11296214592.0, 
-          "average": 64183037.45454545
+          "count": 171, 
+          "sum": 6805412224, 
+          "average": 39797732.30409357
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 10914649346.0, 
-          "average": 61664685.57062147
+          "count": 171, 
+          "sum": 7428788314, 
+          "average": 43443206.51461988
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 11043702854.0, 
-          "average": 62393801.43502825
+          "count": 172, 
+          "sum": 7526210787, 
+          "average": 43757039.45930233
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 10682317898.0, 
-          "average": 61041816.56
+          "count": 169, 
+          "sum": 5841855198, 
+          "average": 34567190.52071006
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 10802026673.0, 
-          "average": 61375151.55113637
+          "count": 170, 
+          "sum": 6816055649, 
+          "average": 40094444.99411765
         }, 
         "1964": {
           "count": 12, 
-          "sum": 958039843.0, 
-          "average": 79836653.58333333
+          "sum": 351582452, 
+          "average": 29298537.666666668
         }, 
         "1965": {
           "count": 12, 
-          "sum": 972498097.0, 
-          "average": 81041508.08333333
+          "sum": 364059952, 
+          "average": 30338329.333333332
         }, 
         "1966": {
           "count": 13, 
-          "sum": 997696468.0, 
-          "average": 76745882.15384616
+          "sum": 368755456, 
+          "average": 28365804.307692308
         }, 
         "1967": {
           "count": 13, 
-          "sum": 1020599828.0, 
-          "average": 78507679.07692307
+          "sum": 372886726, 
+          "average": 28683594.307692308
         }, 
         "1960": {
           "count": 14, 
-          "sum": 607146708.5, 
-          "average": 43367622.03571428
+          "sum": 970987994, 
+          "average": 69356285.28571428
         }, 
         "1961": {
           "count": 12, 
-          "sum": 940225425.0, 
-          "average": 78352118.75
+          "sum": 415117668, 
+          "average": 34593139.0
         }, 
         "1962": {
           "count": 12, 
-          "sum": 936498163.0, 
-          "average": 78041513.58333333
+          "sum": 419077207, 
+          "average": 34923100.583333336
         }, 
         "1963": {
           "count": 12, 
-          "sum": 942787163.0, 
-          "average": 78565596.91666667
+          "sum": 423333442, 
+          "average": 35277786.833333336
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 8060119746.0, 
-          "average": 51667434.26923077
+          "count": 149, 
+          "sum": 6290095331, 
+          "average": 42215404.906040266
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 7994549578.0, 
-          "average": 50280186.025157236
+          "count": 152, 
+          "sum": 6267745299, 
+          "average": 41235166.440789476
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 6422532621.0, 
-          "average": 41170080.90384615
+          "count": 151, 
+          "sum": 6449100237, 
+          "average": 42709273.09271523
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 7011529848.0, 
-          "average": 45235676.438709676
+          "count": 149, 
+          "sum": 6288758103, 
+          "average": 42206430.22147651
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 11207562740.0, 
-          "average": 67924622.66666667
+          "count": 158, 
+          "sum": 5929820022, 
+          "average": 37530506.468354434
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 10196271259.0, 
-          "average": 62939946.04320987
+          "count": 155, 
+          "sum": 6048652804, 
+          "average": 39023566.477419354
         }, 
         "1968": {
           "count": 14, 
-          "sum": 1042844401.0, 
-          "average": 74488885.78571428
+          "sum": 377105919, 
+          "average": 26936137.07142857
         }, 
         "1969": {
           "count": 14, 
-          "sum": 1065350687.0, 
-          "average": 76096477.64285715
+          "sum": 380286460, 
+          "average": 27163318.57142857
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 11783193777.0, 
-          "average": 66571716.25423729
+          "count": 170, 
+          "sum": 6499332139, 
+          "average": 38231365.52352941
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 11947230168.0, 
-          "average": 66373500.93333333
+          "count": 173, 
+          "sum": 6424453075, 
+          "average": 37135566.90751445
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 11493763021.75, 
-          "average": 65678645.83857143
+          "count": 169, 
+          "sum": 6633578053, 
+          "average": 39251941.142011836
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 11620123610.0, 
-          "average": 66023429.60227273
+          "count": 170, 
+          "sum": 6571485546, 
+          "average": 38655797.32941177
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 10352951320.25, 
-          "average": 63907106.915123455
+          "count": 155, 
+          "sum": 5385268739, 
+          "average": 34743669.283870965
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 10239562961.5, 
-          "average": 63599769.94720497
+          "count": 155, 
+          "sum": 6216093781, 
+          "average": 40103830.84516129
         }, 
         "1979": {
           "count": 14, 
-          "sum": 1257767042.0, 
-          "average": 89840503.0
+          "sum": 428964391, 
+          "average": 30640313.64285714
         }, 
         "1978": {
           "count": 14, 
-          "sum": 1246444655.0, 
-          "average": 89031761.07142857
+          "sum": 422897043, 
+          "average": 30206931.64285714
         }, 
         "1977": {
           "count": 14, 
-          "sum": 1231968142.0, 
-          "average": 87997724.42857143
+          "sum": 416949386, 
+          "average": 29782099.0
         }, 
         "1976": {
           "count": 14, 
-          "sum": 1216255608.0, 
-          "average": 86875400.57142857
+          "sum": 411310172, 
+          "average": 29379298.0
         }, 
         "1975": {
           "count": 14, 
-          "sum": 1199551303.0, 
-          "average": 85682235.92857143
+          "sum": 405808799, 
+          "average": 28986342.785714287
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 10475525290.0, 
-          "average": 64663736.358024694
+          "count": 155, 
+          "sum": 5460219231, 
+          "average": 35227220.84516129
         }, 
         "1973": {
           "count": 14, 
-          "sum": 1160061916.0, 
-          "average": 82861565.42857143
+          "sum": 395856354, 
+          "average": 28275453.85714286
         }, 
         "1972": {
           "count": 14, 
-          "sum": 1137442323.0, 
-          "average": 81245880.21428572
+          "sum": 391763436, 
+          "average": 27983102.57142857
         }, 
         "1971": {
           "count": 14, 
-          "sum": 1113245188.0, 
-          "average": 79517513.42857143
+          "sum": 388106813, 
+          "average": 27721915.214285713
         }, 
         "1970": {
           "count": 14, 
-          "sum": 1089049081.0, 
-          "average": 77789220.07142857
+          "sum": 384211623, 
+          "average": 27443687.35714286
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 11164149022.0, 
-          "average": 67253909.77108434
+          "count": 159, 
+          "sum": 5903447059, 
+          "average": 37128597.85534591
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 10783510287.0, 
-          "average": 66564878.31481481
+          "count": 155, 
+          "sum": 5671977525, 
+          "average": 36593403.38709678
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 10888480404.0, 
-          "average": 66393173.19512195
+          "count": 157, 
+          "sum": 5757172001, 
+          "average": 36669885.356687896
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 11079278144.0, 
-          "average": 67147140.26666667
+          "count": 158, 
+          "sum": 5828299202, 
+          "average": 36887969.63291139
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 10270340352.0, 
-          "average": 63397162.666666664
+          "count": 155, 
+          "sum": 6113882055, 
+          "average": 39444400.35483871
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 10342789625.0, 
-          "average": 64240929.347826086
+          "count": 154, 
+          "sum": 6177510222, 
+          "average": 40113702.74025974
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 11273263498.0, 
-          "average": 68322809.07878788
+          "count": 158, 
+          "sum": 5998838823, 
+          "average": 37967334.32278481
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 10686310570.0, 
-          "average": 65560187.54601227
+          "count": 156, 
+          "sum": 5601253957, 
+          "average": 35905474.083333336
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 10413382652.0, 
-          "average": 64679395.35403727
+          "count": 154, 
+          "sum": 6241027484, 
+          "average": 40526152.49350649
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 10488243612.0, 
-          "average": 64742244.518518515
+          "count": 155, 
+          "sum": 6311250831, 
+          "average": 40717747.29677419
         }
       }, 
       "development.[0].Data.Rural Development.Surface Area": {
@@ -24256,59 +23893,59 @@ development_bar = [
           "average": 4557097.0
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 385915744.79999995, 
-          "average": 2367581.256441718
+          "count": 156, 
+          "sum": 344584028.79999995, 
+          "average": 2208871.97948718
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 573829655.1999999, 
-          "average": 3187942.528888889
+          "count": 175, 
+          "sum": 538100796.1999999, 
+          "average": 3074861.692571429
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 573829695.1999999, 
-          "average": 3187942.7511111116
+          "count": 175, 
+          "sum": 538100836.1999999, 
+          "average": 3074861.9211428575
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 572538585.1999999, 
-          "average": 3234681.2723163846
+          "count": 172, 
+          "sum": 536809726.1999999, 
+          "average": 3120986.780232558
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 572568015.1999999, 
-          "average": 3198703.9955307264
+          "count": 174, 
+          "sum": 536839156.1999999, 
+          "average": 3085282.5068965517
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 572510535.1999999, 
-          "average": 3252900.7681818185
+          "count": 171, 
+          "sum": 536781676.1999999, 
+          "average": 3139074.1298245615
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 572510535.1999999, 
-          "average": 3252900.7681818185
+          "count": 171, 
+          "sum": 536781676.1999999, 
+          "average": 3139074.1298245615
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 572939275.1999999, 
-          "average": 3236945.057627119
+          "count": 171, 
+          "sum": 550542904.1999999, 
+          "average": 3219549.1473684213
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 572538585.1999999, 
-          "average": 3234681.2723163846
+          "count": 172, 
+          "sum": 550723944.1999999, 
+          "average": 3201883.3965116283
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 572214885.1999999, 
-          "average": 3269799.344
+          "count": 169, 
+          "sum": 549818424.1999999, 
+          "average": 3253363.456804734
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 572864005.1999999, 
-          "average": 3254909.1204545456
+          "count": 170, 
+          "sum": 550467634.1999999, 
+          "average": 3238044.907058824
         }, 
         "1964": {
           "count": 12, 
@@ -24351,34 +23988,34 @@ development_bar = [
           "average": 5268699.0
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 330518807.5, 
-          "average": 2118710.3044871795
+          "count": 149, 
+          "sum": 289199312.5, 
+          "average": 1940934.9832214764
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 332587877.29999995, 
-          "average": 2091747.6559748428
+          "count": 152, 
+          "sum": 291268384.29999995, 
+          "average": 1916239.370394737
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 315128919.2, 
-          "average": 2020057.1743589742
+          "count": 151, 
+          "sum": 279546493.2, 
+          "average": 1851301.2794701986
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 323969273.2, 
-          "average": 2090124.3432258065
+          "count": 149, 
+          "sum": 288389427.2, 
+          "average": 1935499.5114093958
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 387054985.79999995, 
-          "average": 2345787.792727273
+          "count": 158, 
+          "sum": 345730729.79999995, 
+          "average": 2188169.175949367
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 362098435.79999995, 
-          "average": 2235175.5296296296
+          "count": 155, 
+          "sum": 320775862.79999995, 
+          "average": 2069521.695483871
         }, 
         "1968": {
           "count": 14, 
@@ -24391,34 +24028,34 @@ development_bar = [
           "average": 4557097.0
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 519373741.79999995, 
-          "average": 2934314.925423729
+          "count": 170, 
+          "sum": 447100417.79999995, 
+          "average": 2630002.457647059
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 574385085.1999999, 
-          "average": 3191028.2511111116
+          "count": 173, 
+          "sum": 502111761.1999999, 
+          "average": 2902380.1225433527
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 449654107.79999995, 
-          "average": 2569452.0445714286
+          "count": 169, 
+          "sum": 413342638.79999995, 
+          "average": 2445814.4307692307
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 483339716.79999995, 
-          "average": 2746248.390909091
+          "count": 170, 
+          "sum": 447028247.79999995, 
+          "average": 2629577.9282352943
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 385225504.79999995, 
-          "average": 2377935.2148148147
+          "count": 155, 
+          "sum": 343893788.79999995, 
+          "average": 2218669.6051612906
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 385148719.79999995, 
-          "average": 2392228.0732919257
+          "count": 155, 
+          "sum": 348954850.79999995, 
+          "average": 2251321.618064516
         }, 
         "1979": {
           "count": 14, 
@@ -24446,9 +24083,9 @@ development_bar = [
           "average": 4557097.0
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 385767054.79999995, 
-          "average": 2381278.116049383
+          "count": 155, 
+          "sum": 344435338.79999995, 
+          "average": 2222163.476129032
         }, 
         "1973": {
           "count": 14, 
@@ -24471,54 +24108,54 @@ development_bar = [
           "average": 4557097.0
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 387369889.4, 
-          "average": 2333553.5506024095
+          "count": 159, 
+          "sum": 346038173.4, 
+          "average": 2176340.713207547
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 385754244.79999995, 
-          "average": 2381199.0419753087
+          "count": 155, 
+          "sum": 344422528.79999995, 
+          "average": 2222080.830967742
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 387132614.79999995, 
-          "average": 2360564.724390244
+          "count": 157, 
+          "sum": 345800898.79999995, 
+          "average": 2202553.495541401
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 387342734.79999995, 
-          "average": 2347531.726060606
+          "count": 158, 
+          "sum": 346011018.79999995, 
+          "average": 2189943.1569620254
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 362104259.79999995, 
-          "average": 2235211.4802469136
+          "count": 155, 
+          "sum": 320781686.79999995, 
+          "average": 2069559.2696774194
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 362104426.0, 
-          "average": 2249095.813664596
+          "count": 154, 
+          "sum": 320781853.0, 
+          "average": 2082999.0454545454
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 387055269.79999995, 
-          "average": 2345789.513939394
+          "count": 158, 
+          "sum": 345731013.79999995, 
+          "average": 2188170.9734177217
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 385947394.79999995, 
-          "average": 2367775.428220859
+          "count": 156, 
+          "sum": 344615678.79999995, 
+          "average": 2209074.8641025643
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 362104438.2, 
-          "average": 2249095.889440994
+          "count": 154, 
+          "sum": 320781865.2, 
+          "average": 2082999.1246753247
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 372487775.2, 
-          "average": 2299307.2543209875
+          "count": 155, 
+          "sum": 331165202.2, 
+          "average": 2136549.691612903
         }
       }, 
       "development.[0].Data.Health.Life Expectancy at Birth, Male": {
@@ -24528,59 +24165,59 @@ development_bar = [
           "average": 56.113255309044995
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 10252.668255329694, 
-          "average": 62.89980524742143
+          "count": 156, 
+          "sum": 9829.622307893973, 
+          "average": 63.01039940957675
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 10985.891473296993, 
-          "average": 61.03273040720552
+          "count": 175, 
+          "sum": 10689.946329668819, 
+          "average": 61.08540759810754
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 11032.520125082412, 
-          "average": 61.29177847268004
+          "count": 175, 
+          "sum": 10735.083923291673, 
+          "average": 61.343336704523814
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 10688.23584933081, 
-          "average": 60.38551327305544
+          "count": 172, 
+          "sum": 10395.556933353128, 
+          "average": 60.43928449623913
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 10891.34159967203, 
-          "average": 60.84548379705045
+          "count": 174, 
+          "sum": 10596.983145483226, 
+          "average": 60.90220198553577
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 10528.145463974144, 
-          "average": 59.81900831803492
+          "count": 171, 
+          "sum": 10239.039378448875, 
+          "average": 59.877423265782895
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 10590.723842603707, 
-          "average": 60.174567287521086
+          "count": 171, 
+          "sum": 10299.803430582904, 
+          "average": 60.23276859990005
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 10470.443584884957, 
-          "average": 59.15504850217488
+          "count": 171, 
+          "sum": 10146.553129834807, 
+          "average": 59.33656801072984
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 10513.956406372492, 
-          "average": 59.40088365182197
+          "count": 172, 
+          "sum": 10247.535161311154, 
+          "average": 59.57869279832065
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 10268.679782238012, 
-          "average": 58.678170184217215
+          "count": 169, 
+          "sum": 9949.706865338134, 
+          "average": 58.874005120343995
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 10345.081782746445, 
-          "average": 58.778873765604814
+          "count": 170, 
+          "sum": 10023.581732066988, 
+          "average": 58.962245482746994
         }, 
         "1964": {
           "count": 12, 
@@ -24623,34 +24260,34 @@ development_bar = [
           "average": 54.257175208225796
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 10331.809206091944, 
-          "average": 66.22954619289708
+          "count": 149, 
+          "sum": 9882.315220956, 
+          "average": 66.3242632278926
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 10497.230327871235, 
-          "average": 66.02031652749201
+          "count": 152, 
+          "sum": 10050.33845940767, 
+          "average": 66.12064775926095
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 10451.486835373, 
-          "average": 66.99671048316024
+          "count": 151, 
+          "sum": 10139.870609950149, 
+          "average": 67.15146099304734
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 10320.823441547003, 
-          "average": 66.5859576874
+          "count": 149, 
+          "sum": 9934.320516865426, 
+          "average": 66.67329205949946
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 10542.149435745325, 
-          "average": 63.89181476209288
+          "count": 158, 
+          "sum": 10111.288642293464, 
+          "average": 63.99549773603457
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 10425.010978367873, 
-          "average": 64.35191961955478
+          "count": 155, 
+          "sum": 9989.539199048082, 
+          "average": 64.44863999385859
         }, 
         "1968": {
           "count": 14, 
@@ -24663,34 +24300,34 @@ development_bar = [
           "average": 54.17813569932887
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 10987.46612960081, 
-          "average": 62.07607982825315
+          "count": 170, 
+          "sum": 10555.279544118343, 
+          "average": 62.089879671284336
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 11104.787441876346, 
-          "average": 61.69326356597973
+          "count": 173, 
+          "sum": 10673.77473953802, 
+          "average": 61.6981198817227
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 10936.562494793003, 
-          "average": 62.49464282738857
+          "count": 169, 
+          "sum": 10574.620339981087, 
+          "average": 62.57171798805375
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 10952.887149329355, 
-          "average": 62.232313348462256
+          "count": 170, 
+          "sum": 10591.397612059043, 
+          "average": 62.302338894464974
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 10135.658757438308, 
-          "average": 62.56579479900193
+          "count": 155, 
+          "sum": 9713.677965431882, 
+          "average": 62.66889009956055
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 10064.117928211943, 
-          "average": 62.51004924355245
+          "count": 155, 
+          "sum": 9701.884585053822, 
+          "average": 62.59280377454078
         }, 
         "1979": {
           "count": 14, 
@@ -24718,9 +24355,9 @@ development_bar = [
           "average": 56.523354945765085
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 10159.736460721446, 
-          "average": 62.71442259704594
+          "count": 155, 
+          "sum": 9737.309122771372, 
+          "average": 62.82134917917012
         }, 
         "1973": {
           "count": 14, 
@@ -24743,54 +24380,54 @@ development_bar = [
           "average": 54.58709881864438
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 10578.440313883495, 
-          "average": 63.72554405953912
+          "count": 159, 
+          "sum": 10149.606547344396, 
+          "average": 63.8340034424176
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 10247.399505700596, 
-          "average": 63.255552504324655
+          "count": 155, 
+          "sum": 9822.924226634543, 
+          "average": 63.37370468796478
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 10379.700321794639, 
-          "average": 63.29085562069905
+          "count": 157, 
+          "sum": 9954.370768082217, 
+          "average": 63.40363546549183
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 10484.83071929837, 
-          "average": 63.54442860180827
+          "count": 158, 
+          "sum": 10057.817558310388, 
+          "average": 63.65707315386318
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 10477.27018850088, 
-          "average": 64.67450733642518
+          "count": 155, 
+          "sum": 10039.284122700248, 
+          "average": 64.76957498516288
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 10461.217055134795, 
-          "average": 64.9765034480422
+          "count": 154, 
+          "sum": 10021.067169259488, 
+          "average": 65.0718647354512
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 10590.413845163612, 
-          "average": 64.1843263343249
+          "count": 158, 
+          "sum": 10157.164643159145, 
+          "average": 64.2858521718933
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 10267.909994846146, 
-          "average": 62.99331285181686
+          "count": 156, 
+          "sum": 9844.083464142695, 
+          "average": 63.103099129119855
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 10515.834381531384, 
-          "average": 65.31574150019495
+          "count": 154, 
+          "sum": 10073.308669704034, 
+          "average": 65.41109525781842
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 10650.244816797156, 
-          "average": 65.74225195553797
+          "count": 155, 
+          "sum": 10205.162846433112, 
+          "average": 65.83976029956847
         }
       }, 
       "development.[0].Data.Health.Life Expectancy at Birth, Total": {
@@ -24800,59 +24437,59 @@ development_bar = [
           "average": 57.971019928958874
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 10600.85914919377, 
-          "average": 65.03594570057528
+          "count": 156, 
+          "sum": 10166.92429487176, 
+          "average": 65.17259163379333
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 11388.133822981354, 
-          "average": 63.26741012767415
+          "count": 175, 
+          "sum": 11084.922292068099, 
+          "average": 63.34241309753194
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 11431.622429851794, 
-          "average": 63.509013499176675
+          "count": 175, 
+          "sum": 11126.829689538292, 
+          "average": 63.581883940218844
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 11090.726355270495, 
-          "average": 62.65947093373159
+          "count": 172, 
+          "sum": 10790.890511689593, 
+          "average": 62.73773553307902
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 11294.454395916191, 
-          "average": 63.097510591710574
+          "count": 174, 
+          "sum": 10992.89712796011, 
+          "average": 63.17756970092018
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 10926.225640711178, 
-          "average": 62.08082750404078
+          "count": 171, 
+          "sum": 10630.045420903689, 
+          "average": 62.16400830937831
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 10991.468643687225, 
-          "average": 62.451526384586494
+          "count": 171, 
+          "sum": 10693.425817485751, 
+          "average": 62.534653903425436
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 10859.904646698762, 
-          "average": 61.35539348417379
+          "count": 171, 
+          "sum": 10530.70447744141, 
+          "average": 61.58306711954039
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 10908.18804602704, 
-          "average": 61.62818105100022
+          "count": 172, 
+          "sum": 10638.407406595275, 
+          "average": 61.8512058522981
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 10640.056295637805, 
-          "average": 60.80032168935891
+          "count": 169, 
+          "sum": 10315.905603379886, 
+          "average": 61.0408615584609
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 10726.756028433907, 
-          "average": 60.94747743428354
+          "count": 170, 
+          "sum": 10400.004193232116, 
+          "average": 61.176495254306545
         }, 
         "1964": {
           "count": 12, 
@@ -24895,34 +24532,34 @@ development_bar = [
           "average": 55.920607471738236
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 10652.264832615958, 
-          "average": 68.28374892702534
+          "count": 149, 
+          "sum": 10193.563824266506, 
+          "average": 68.41318002863424
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 10824.379841964437, 
-          "average": 68.0778606412858
+          "count": 152, 
+          "sum": 10368.075805261218, 
+          "average": 68.21102503461329
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 10774.12844594541, 
-          "average": 69.06492593554754
+          "count": 151, 
+          "sum": 10455.848891660278, 
+          "average": 69.2440323951012
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 10638.772251767568, 
-          "average": 68.6372403339843
+          "count": 149, 
+          "sum": 10244.635286248546, 
+          "average": 68.7559415184466
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 10876.055164488173, 
-          "average": 65.91548584538289
+          "count": 158, 
+          "sum": 10434.88618274546, 
+          "average": 66.04358343509789
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 10753.105306333833, 
-          "average": 66.37719324897424
+          "count": 155, 
+          "sum": 10307.724403859784, 
+          "average": 66.50144776683729
         }, 
         "1968": {
           "count": 14, 
@@ -24935,34 +24572,34 @@ development_bar = [
           "average": 55.808625534488655
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 11379.868961403592, 
-          "average": 64.29304497968133
+          "count": 170, 
+          "sum": 10934.334204833598, 
+          "average": 64.31961296960942
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 11503.628445087617, 
-          "average": 63.90904691715343
+          "count": 173, 
+          "sum": 11059.497212549668, 
+          "average": 63.92772955231021
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 11324.56059224065, 
-          "average": 64.71177481280368
+          "count": 169, 
+          "sum": 10952.315906369491, 
+          "average": 64.80660299626913
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 11345.526553415995, 
-          "average": 64.46321905350001
+          "count": 170, 
+          "sum": 10973.843478722278, 
+          "average": 64.55202046307227
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 10489.739383933611, 
-          "average": 64.75147767860254
+          "count": 155, 
+          "sum": 10056.743459619474, 
+          "average": 64.88221586851273
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 10417.033555263111, 
-          "average": 64.7020717718206
+          "count": 155, 
+          "sum": 10044.46358590215, 
+          "average": 64.8029908767881
         }, 
         "1979": {
           "count": 14, 
@@ -24990,9 +24627,9 @@ development_bar = [
           "average": 58.396850999305265
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 10512.70706928085, 
-          "average": 64.89325351407935
+          "count": 155, 
+          "sum": 10079.310635263291, 
+          "average": 65.02781055008577
         }, 
         "1973": {
           "count": 14, 
@@ -25015,54 +24652,54 @@ development_bar = [
           "average": 56.2646942102644
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 10915.747994264415, 
-          "average": 65.75751803773743
+          "count": 159, 
+          "sum": 10476.534869164072, 
+          "average": 65.89015640983695
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 10590.850779001803, 
-          "average": 65.37562209260368
+          "count": 155, 
+          "sum": 10155.636074504533, 
+          "average": 65.52023273873888
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 10720.311279336755, 
-          "average": 65.36775170327284
+          "count": 157, 
+          "sum": 10284.435000712303, 
+          "average": 65.50595541854966
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 10822.850075230803, 
-          "average": 65.59303075897454
+          "count": 158, 
+          "sum": 10385.495482929511, 
+          "average": 65.7309840691741
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 10804.9700961814, 
-          "average": 66.69734627272467
+          "count": 155, 
+          "sum": 10357.390941133486, 
+          "average": 66.82187703957085
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 10789.560853530804, 
-          "average": 67.0159059225516
+          "count": 154, 
+          "sum": 10339.836506077088, 
+          "average": 67.14179549400708
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 10921.148370269213, 
-          "average": 66.1887780016316
+          "count": 158, 
+          "sum": 10477.8786159564, 
+          "average": 66.31568744276203
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 10614.488454155113, 
-          "average": 65.11956106843627
+          "count": 156, 
+          "sum": 10180.019836182704, 
+          "average": 65.25653741142759
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 10845.317866653868, 
-          "average": 67.3622227742476
+          "count": 154, 
+          "sum": 10393.316074066075, 
+          "average": 67.48906541601345
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 10982.794131492183, 
-          "average": 67.7950255030382
+          "count": 155, 
+          "sum": 10528.45387519686, 
+          "average": 67.92550887223784
         }
       }, 
       "development.[0].Data.Rural Development.Agricultural Land": {
@@ -25072,59 +24709,59 @@ development_bar = [
           "average": 1332116.2142857143
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 149063734.0, 
-          "average": 914501.4355828221
+          "count": 156, 
+          "sum": 133505409.0, 
+          "average": 855803.9038461539
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 198741348.39999998, 
-          "average": 1104118.6022222224
+          "count": 175, 
+          "sum": 186475388.39999998, 
+          "average": 1065573.648
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 199814861.39999998, 
-          "average": 1110082.5633333335
+          "count": 175, 
+          "sum": 187471001.39999998, 
+          "average": 1071262.8651428572
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 196364031.79999998, 
-          "average": 1109401.3096045197
+          "count": 172, 
+          "sum": 184236361.79999998, 
+          "average": 1071141.6383720932
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 197628229.39999998, 
-          "average": 1104068.3206703912
+          "count": 174, 
+          "sum": 185409309.39999998, 
+          "average": 1065570.743678161
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 193811434.20000002, 
-          "average": 1101201.330681818
+          "count": 171, 
+          "sum": 181775314.20000002, 
+          "average": 1063013.5333333332
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 194973148.79999998, 
-          "average": 1107801.981818182
+          "count": 171, 
+          "sum": 182915068.79999998, 
+          "average": 1069678.7649122807
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 193016342.79999998, 
-          "average": 1090487.8124293785
+          "count": 171, 
+          "sum": 185205274.79999998, 
+          "average": 1083071.7824561405
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 193404621.60000002, 
-          "average": 1092681.4779661016
+          "count": 172, 
+          "sum": 185845161.60000002, 
+          "average": 1080495.1255813953
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 192095584.60000002, 
-          "average": 1097689.0548571427
+          "count": 169, 
+          "sum": 184300182.60000002, 
+          "average": 1090533.624852071
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 192997133.20000002, 
-          "average": 1096574.6204545454
+          "count": 170, 
+          "sum": 185192178.20000002, 
+          "average": 1089365.754117647
         }, 
         "1964": {
           "count": 12, 
@@ -25167,34 +24804,34 @@ development_bar = [
           "average": 1397170.6666666667
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 122135665.2, 
-          "average": 782920.9307692308
+          "count": 149, 
+          "sum": 105855628.19999999, 
+          "average": 710440.4577181208
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 122049422.59999998, 
-          "average": 767606.4314465409
+          "count": 152, 
+          "sum": 105805264.99999999, 
+          "average": 696087.2697368421
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 114605107.99999997, 
-          "average": 734648.1282051282
+          "count": 151, 
+          "sum": 101008812.49999999, 
+          "average": 668932.5331125828
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 119157843.10000001, 
-          "average": 768760.2780645161
+          "count": 149, 
+          "sum": 105729755.10000001, 
+          "average": 709595.6718120805
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 151194831.4, 
-          "average": 916332.3115151515
+          "count": 158, 
+          "sum": 135320489.4, 
+          "average": 856458.7936708861
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 139363884.6, 
-          "average": 860270.8925925925
+          "count": 155, 
+          "sum": 123382826.99999999, 
+          "average": 796018.2387096775
         }, 
         "1968": {
           "count": 14, 
@@ -25207,34 +24844,34 @@ development_bar = [
           "average": 1271300.4285714286
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 188045133.0, 
-          "average": 1062401.8813559322
+          "count": 170, 
+          "sum": 162155118.0, 
+          "average": 953853.6352941176
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 200739525.0, 
-          "average": 1115219.5833333333
+          "count": 173, 
+          "sum": 174846974.0, 
+          "average": 1010676.1502890174
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 169809100.0, 
-          "average": 970337.7142857143
+          "count": 169, 
+          "sum": 157059965.0, 
+          "average": 929348.9053254438
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 175287222.0, 
-          "average": 995950.125
+          "count": 170, 
+          "sum": 162599987.0, 
+          "average": 956470.5117647059
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 147919474.0, 
-          "average": 913083.1728395062
+          "count": 155, 
+          "sum": 132500313.0, 
+          "average": 854840.729032258
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 147396038.60000002, 
-          "average": 915503.3453416149
+          "count": 155, 
+          "sum": 134654663.60000002, 
+          "average": 868739.7651612903
         }, 
         "1979": {
           "count": 14, 
@@ -25262,9 +24899,9 @@ development_bar = [
           "average": 1343686.0
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 148639111.0, 
-          "average": 917525.3765432099
+          "count": 155, 
+          "sum": 133167478.0, 
+          "average": 859145.0193548388
         }, 
         "1973": {
           "count": 14, 
@@ -25287,54 +24924,54 @@ development_bar = [
           "average": 1288786.2857142857
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 151114961.4, 
-          "average": 910331.0927710844
+          "count": 159, 
+          "sum": 135279145.0, 
+          "average": 850812.2327044025
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 149992396.0, 
-          "average": 925878.987654321
+          "count": 155, 
+          "sum": 134315847.0, 
+          "average": 866553.8516129032
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 150669385.8, 
-          "average": 918715.7670731707
+          "count": 157, 
+          "sum": 134944514.8, 
+          "average": 859519.2025477708
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 151011662.0, 
-          "average": 915222.193939394
+          "count": 158, 
+          "sum": 135236586.0, 
+          "average": 855927.7594936709
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 139557507.7, 
-          "average": 861466.0969135802
+          "count": 155, 
+          "sum": 123447415.7, 
+          "average": 796434.9400000001
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 139881923.39999998, 
-          "average": 868831.8223602485
+          "count": 154, 
+          "sum": 123738181.39999999, 
+          "average": 803494.6844155844
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 150978659.0, 
-          "average": 915022.1757575758
+          "count": 158, 
+          "sum": 135007697.0, 
+          "average": 854479.0949367088
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 149716771.0, 
-          "average": 918507.7975460123
+          "count": 156, 
+          "sum": 134087594.0, 
+          "average": 859535.858974359
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 139937671.90000004, 
-          "average": 869178.0863354037
+          "count": 154, 
+          "sum": 123757427.10000004, 
+          "average": 803619.6564935065
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 141144288.90000004, 
-          "average": 871261.0425925927
+          "count": 155, 
+          "sum": 124915084.10000004, 
+          "average": 805903.7683870967
         }
       }, 
       "development.[0].Data.Health.Life Expectancy at Birth, Female": {
@@ -25344,59 +24981,59 @@ development_bar = [
           "average": 59.924485877967825
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 10965.291286116628, 
-          "average": 67.2717256816971
+          "count": 156, 
+          "sum": 10520.090840173654, 
+          "average": 67.43647974470291
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 11809.210337522578, 
-          "average": 65.60672409734765
+          "count": 175, 
+          "sum": 11498.577181841463, 
+          "average": 65.70615532480835
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 11850.164545676056, 
-          "average": 65.83424747597812
+          "count": 175, 
+          "sum": 11537.845686082534, 
+          "average": 65.9305467776145
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 11512.559592648653, 
-          "average": 65.04270956298676
+          "count": 172, 
+          "sum": 11205.419308829325, 
+          "average": 65.14778667924028
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 11717.145934415808, 
-          "average": 65.45891583472515
+          "count": 174, 
+          "sum": 11408.235473193849, 
+          "average": 65.5645716850221
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 11343.519742813916, 
-          "average": 64.45181672053354
+          "count": 171, 
+          "sum": 11040.13120716967, 
+          "average": 64.56217080216175
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 11411.423739893367, 
-          "average": 64.83763488575777
+          "count": 171, 
+          "sum": 11106.117486131776, 
+          "average": 64.94805547445482
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 11268.129193237177, 
-          "average": 63.661746854447316
+          "count": 171, 
+          "sum": 10933.355087111451, 
+          "average": 63.937749047435396
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 11321.314835230141, 
-          "average": 63.962230707514905
+          "count": 172, 
+          "sum": 11048.036431059283, 
+          "average": 64.23276994801905
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 11029.538901399217, 
-          "average": 63.02593657942408
+          "count": 169, 
+          "sum": 10699.953965214188, 
+          "average": 63.31333707227327
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 11127.01602836578, 
-          "average": 63.221681979351054
+          "count": 170, 
+          "sum": 10794.751668289111, 
+          "average": 63.49853922523012
         }, 
         "1964": {
           "count": 12, 
@@ -25439,34 +25076,34 @@ development_bar = [
           "average": 57.669096533009956
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 10987.819915483913, 
-          "average": 70.43474304797373
+          "count": 149, 
+          "sum": 10519.451532111429, 
+          "average": 70.60034585309677
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 11166.812687416317, 
-          "average": 70.23152633595168
+          "count": 152, 
+          "sum": 10700.72049539843, 
+          "average": 70.39947694341069
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 11112.118373984393, 
-          "average": 71.23152803836149
+          "count": 151, 
+          "sum": 10786.92912513073, 
+          "average": 71.43661672272003
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 10971.761619475674, 
-          "average": 70.78555883532692
+          "count": 149, 
+          "sum": 10569.696823385322, 
+          "average": 70.93756257305583
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 11224.770347718364, 
-          "average": 68.0289111982931
+          "count": 158, 
+          "sum": 10772.881233891158, 
+          "average": 68.18279261956428
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 11096.178149186273, 
-          "average": 68.49492684682882
+          "count": 155, 
+          "sum": 10640.493769352071, 
+          "average": 68.64834689904558
         }, 
         "1968": {
           "count": 14, 
@@ -25479,34 +25116,34 @@ development_bar = [
           "average": 57.52400006960796
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 11791.10919996449, 
-          "average": 66.61643615799149
+          "count": 170, 
+          "sum": 11331.746633967545, 
+          "average": 66.65733314098554
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 11921.856622473966, 
-          "average": 66.23253679152204
+          "count": 173, 
+          "sum": 11464.145355836732, 
+          "average": 66.26673616090598
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 11730.705888995764, 
-          "average": 67.03260507997578
+          "count": 169, 
+          "sum": 11347.82534214138, 
+          "average": 67.14689551562947
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 11757.000097728001, 
-          "average": 66.8011369189091
+          "count": 170, 
+          "sum": 11374.799591371097, 
+          "average": 66.91058583159466
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 10860.16770785667, 
-          "average": 67.03807227072016
+          "count": 155, 
+          "sum": 10415.77792777612, 
+          "average": 67.19856727597495
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 10786.288640016122, 
-          "average": 66.99558161500701
+          "count": 155, 
+          "sum": 10403.043000385642, 
+          "average": 67.11640645410097
         }, 
         "1979": {
           "count": 14, 
@@ -25534,9 +25171,9 @@ development_bar = [
           "average": 60.36678911649513
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 10881.980001313475, 
-          "average": 67.17271605749059
+          "count": 155, 
+          "sum": 10437.235601480701, 
+          "average": 67.33700388052064
         }, 
         "1973": {
           "count": 14, 
@@ -25559,54 +25196,54 @@ development_bar = [
           "average": 58.02959915246672
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 11268.447434570535, 
-          "average": 67.88221346126828
+          "count": 159, 
+          "sum": 10818.44361901355, 
+          "average": 68.04052590574558
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 10950.215542727996, 
-          "average": 67.59392310325917
+          "count": 155, 
+          "sum": 10503.876348132937, 
+          "average": 67.76694418150277
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 11076.558065730238, 
-          "average": 67.53998820567219
+          "count": 157, 
+          "sum": 10629.719436175246, 
+          "average": 67.70521933869585
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 11176.256379252618, 
-          "average": 67.73488714698556
+          "count": 158, 
+          "sum": 10728.156897736819, 
+          "average": 67.89972720086593
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 11147.6843328298, 
-          "average": 68.81286625203578
+          "count": 155, 
+          "sum": 10690.13215700622, 
+          "average": 68.96859456133042
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 11133.081265669054, 
-          "average": 69.1495730786898
+          "count": 154, 
+          "sum": 10673.402656409577, 
+          "average": 69.30780945720505
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 11266.852046803331, 
-          "average": 68.28395179880802
+          "count": 158, 
+          "sum": 10813.163045752224, 
+          "average": 68.43774079590011
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 10976.906509169094, 
-          "average": 67.34298471882883
+          "count": 156, 
+          "sum": 10531.429916339746, 
+          "average": 67.50916613038302
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 11190.108465982901, 
-          "average": 69.50377929181926
+          "count": 154, 
+          "sum": 10728.254683947487, 
+          "average": 69.66399145420446
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 11330.89756044304, 
-          "average": 69.94381210150027
+          "count": 155, 
+          "sum": 10866.932250834947, 
+          "average": 70.10924032796744
         }
       }, 
       "development.[0].Data.Health.Total Population": {
@@ -25616,59 +25253,59 @@ development_bar = [
           "average": 125792881.0
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 18030945039.0, 
-          "average": 110619294.71779141
+          "count": 156, 
+          "sum": 16011439488.0, 
+          "average": 102637432.61538461
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 20604563323.0, 
-          "average": 114469796.23888889
+          "count": 175, 
+          "sum": 20037420966.0, 
+          "average": 114499548.37714286
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 20964194742.0, 
-          "average": 116467748.56666666
+          "count": 175, 
+          "sum": 20382210467.0, 
+          "average": 116469774.09714286
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 19895560922.0, 
-          "average": 112404298.99435028
+          "count": 172, 
+          "sum": 19356335757.0, 
+          "average": 112536835.79651164
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 20242925173.0, 
-          "average": 113088967.44692737
+          "count": 174, 
+          "sum": 19689973135.0, 
+          "average": 113160765.14367816
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 19237787099.0, 
-          "average": 109305608.51704545
+          "count": 171, 
+          "sum": 18724684593.0, 
+          "average": 109501079.49122807
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 19562464563.0, 
-          "average": 111150366.83522727
+          "count": 171, 
+          "sum": 19036524635.0, 
+          "average": 111324705.46783626
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 18580707101.0, 
-          "average": 104975746.33333333
+          "count": 171, 
+          "sum": 18210179575.0, 
+          "average": 106492278.21637426
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 18911467851.0, 
-          "average": 106844451.13559322
+          "count": 172, 
+          "sum": 18531814204.0, 
+          "average": 107743105.8372093
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 17952957190.0, 
-          "average": 102588326.8
+          "count": 169, 
+          "sum": 17602058649.0, 
+          "average": 104154193.18934911
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 18268080889.0, 
-          "average": 103795914.14204545
+          "count": 170, 
+          "sum": 17907484556.0, 
+          "average": 105338144.44705883
         }, 
         "1964": {
           "count": 12, 
@@ -25711,34 +25348,34 @@ development_bar = [
           "average": 110968688.33333333
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 15397712172.0, 
-          "average": 98703283.15384616
+          "count": 149, 
+          "sum": 12739015234.0, 
+          "average": 85496746.53691275
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 15170280228.0, 
-          "average": 95410567.47169812
+          "count": 152, 
+          "sum": 12559042985.0, 
+          "average": 82625282.79605263
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 12888673276.0, 
-          "average": 82619700.48717949
+          "count": 151, 
+          "sum": 11783198463.0, 
+          "average": 78034426.90728477
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 14012900479.0, 
-          "average": 90405809.54193549
+          "count": 149, 
+          "sum": 12934368058.0, 
+          "average": 86807839.31543624
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 19662376060.0, 
-          "average": 119165915.51515152
+          "count": 158, 
+          "sum": 17375736492.0, 
+          "average": 109973015.7721519
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 18126282505.0, 
-          "average": 111890632.74691358
+          "count": 155, 
+          "sum": 15747246642.0, 
+          "average": 101595139.62580645
         }, 
         "1968": {
           "count": 14, 
@@ -25751,34 +25388,34 @@ development_bar = [
           "average": 111087727.35714285
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 20541956022.0, 
-          "average": 116056248.71186441
+          "count": 170, 
+          "sum": 18856968382.0, 
+          "average": 110923343.42352942
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 21319827509.0, 
-          "average": 118443486.16111112
+          "count": 173, 
+          "sum": 19662817710.0, 
+          "average": 113657905.8381503
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 19212581606.0, 
-          "average": 109786180.60571429
+          "count": 169, 
+          "sum": 18557137321.0, 
+          "average": 109805546.27810651
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 19819261795.0, 
-          "average": 112609442.01704545
+          "count": 170, 
+          "sum": 19183111884.0, 
+          "average": 112841834.6117647
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 17305609990.0, 
-          "average": 106824753.02469136
+          "count": 155, 
+          "sum": 15375527008.0, 
+          "average": 99196948.43870968
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 17010268043.0, 
-          "average": 105653838.77639751
+          "count": 155, 
+          "sum": 16334823894.0, 
+          "average": 105385960.60645162
         }, 
         "1979": {
           "count": 14, 
@@ -25806,9 +25443,9 @@ development_bar = [
           "average": 128588352.71428572
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 17617682181.0, 
-          "average": 108751124.57407407
+          "count": 155, 
+          "sum": 15642658243.0, 
+          "average": 100920375.76129033
         }, 
         "1973": {
           "count": 14, 
@@ -25831,54 +25468,54 @@ development_bar = [
           "average": 113989459.21428572
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 19500989646.0, 
-          "average": 117475841.24096386
+          "count": 159, 
+          "sum": 17260017959.0, 
+          "average": 108553572.0691824
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 18487121074.0, 
-          "average": 114118031.32098766
+          "count": 155, 
+          "sum": 16379536278.0, 
+          "average": 105674427.6
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 18786962392.0, 
-          "average": 114554648.73170732
+          "count": 157, 
+          "sum": 16635282924.0, 
+          "average": 105957216.07643312
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 19204821576.0, 
-          "average": 116392858.03636363
+          "count": 158, 
+          "sum": 17008634936.0, 
+          "average": 107649588.20253165
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 18403041901.0, 
-          "average": 113599024.08024691
+          "count": 155, 
+          "sum": 15977765191.0, 
+          "average": 103082356.07096775
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 18680355372.0, 
-          "average": 116027052.0
+          "count": 154, 
+          "sum": 16208819069.0, 
+          "average": 105252071.87662338
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 19951620355.0, 
-          "average": 120918911.24242425
+          "count": 158, 
+          "sum": 17618860941.0, 
+          "average": 111511778.10759494
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 18201428755.0, 
-          "average": 111665207.08588958
+          "count": 156, 
+          "sum": 16137723399.0, 
+          "average": 103446944.86538461
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 18960004474.0, 
-          "average": 117764002.94409938
+          "count": 154, 
+          "sum": 16442173097.0, 
+          "average": 106767357.77272727
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 19276069180.0, 
-          "average": 118988081.35802469
+          "count": 155, 
+          "sum": 16711755394.0, 
+          "average": 107817776.73548387
         }
       }, 
       "development.[0].Data.Infrastructure.Mobile Cellular Subscriptions": {
@@ -25888,59 +25525,59 @@ development_bar = [
           "average": 0.0
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 317827480.28571427, 
-          "average": 1949861.8422436458
+          "count": 156, 
+          "sum": 316873112.28571427, 
+          "average": 2031237.8992673992
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 27753314.916666664, 
-          "average": 154185.0828703704
+          "count": 175, 
+          "sum": 27749839.916666664, 
+          "average": 158570.5138095238
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 31529064.944444448, 
-          "average": 175161.47191358026
+          "count": 175, 
+          "sum": 31522764.944444448, 
+          "average": 180130.08539682542
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 28903542.41666667, 
-          "average": 163296.8498116761
+          "count": 172, 
+          "sum": 28903242.41666667, 
+          "average": 168042.10707364345
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 27345022.222222224, 
-          "average": 152765.48727498448
+          "count": 174, 
+          "sum": 27343522.222222224, 
+          "average": 157146.67943805875
         }, 
         "1984": {
-          "count": 176, 
+          "count": 171, 
           "sum": 36077565.41666667, 
-          "average": 204986.16714015155
+          "average": 210979.91471734896
         }, 
         "1985": {
-          "count": 176, 
+          "count": 171, 
           "sum": 31766849.833333332, 
-          "average": 180493.46496212122
+          "average": 185771.05165692008
         }, 
         "1982": {
-          "count": 177, 
+          "count": 171, 
           "sum": 46485684.75, 
-          "average": 262630.98728813557
+          "average": 271846.1096491228
         }, 
         "1983": {
-          "count": 177, 
+          "count": 172, 
           "sum": 40819624.333333336, 
-          "average": 230619.34651600756
+          "average": 237323.3972868217
         }, 
         "1980": {
-          "count": 175, 
+          "count": 169, 
           "sum": 55260496.08333333, 
-          "average": 315774.2633333333
+          "average": 326985.18392504926
         }, 
         "1981": {
-          "count": 176, 
+          "count": 170, 
           "sum": 50380442.16666667, 
-          "average": 286252.5123106061
+          "average": 296355.5421568628
         }, 
         "1964": {
           "count": 12, 
@@ -25983,34 +25620,34 @@ development_bar = [
           "average": 0.0
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 10540903984.166666, 
-          "average": 67569897.33440171
+          "count": 149, 
+          "sum": 9168350161.166668, 
+          "average": 61532551.41722595
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 9148002933.555555, 
-          "average": 57534609.64500349
+          "count": 152, 
+          "sum": 8111335365.555555, 
+          "average": 53364048.45760234
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 10483882553.38889, 
-          "average": 67204375.34223647
+          "count": 151, 
+          "sum": 9904213289.38889, 
+          "average": 65590816.486019135
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 10737839021.777779, 
-          "average": 69276380.78566308
+          "count": 149, 
+          "sum": 10234724641.777779, 
+          "average": 68689427.12602536
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 2882614995.0, 
-          "average": 17470393.90909091
+          "count": 158, 
+          "sum": 2847268462.0, 
+          "average": 18020686.46835443
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 3823192392.5, 
-          "average": 23599953.040123455
+          "count": 155, 
+          "sum": 3716264410.5, 
+          "average": 23975899.422580644
         }, 
         "1968": {
           "count": 14, 
@@ -26023,34 +25660,34 @@ development_bar = [
           "average": 0.0
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 44516903.0, 
-          "average": 251507.92655367233
+          "count": 170, 
+          "sum": 33892827.0, 
+          "average": 199369.5705882353
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 41409595.97222222, 
-          "average": 230053.31095679014
+          "count": 173, 
+          "sum": 34381685.972222224, 
+          "average": 198738.06920359668
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 50683138.76190477, 
-          "average": 289617.93578231294
+          "count": 169, 
+          "sum": 50633092.76190477, 
+          "average": 299604.09918286843
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 49766451.38095238, 
-          "average": 282763.9283008658
+          "count": 170, 
+          "sum": 49734156.38095238, 
+          "average": 292553.8610644258
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 118046099.02380954, 
-          "average": 728679.6236037625
+          "count": 155, 
+          "sum": 117869081.02380954, 
+          "average": 760445.6840245776
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 72142337.14285713, 
-          "average": 448089.05057675246
+          "count": 155, 
+          "sum": 72065075.14285713, 
+          "average": 464935.9686635945
         }, 
         "1979": {
           "count": 14, 
@@ -26078,9 +25715,9 @@ development_bar = [
           "average": 0.0
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 195173526.9047619, 
-          "average": 1204774.857436802
+          "count": 155, 
+          "sum": 194763321.9047619, 
+          "average": 1256537.5606758832
         }, 
         "1973": {
           "count": 14, 
@@ -26103,54 +25740,54 @@ development_bar = [
           "average": 0.0
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 2414636379.0, 
-          "average": 14546002.28313253
+          "count": 159, 
+          "sum": 2393484392.0, 
+          "average": 15053360.955974843
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 740552955.0, 
-          "average": 4571314.537037037
+          "count": 155, 
+          "sum": 736825812.0, 
+          "average": 4753714.916129032
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 1170556733.0, 
-          "average": 7137541.054878049
+          "count": 157, 
+          "sum": 1163793463.0, 
+          "average": 7412697.21656051
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 1812585781.0, 
-          "average": 10985368.36969697
+          "count": 158, 
+          "sum": 1800299422.0, 
+          "average": 11394300.139240507
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 4914423712.111111, 
-          "average": 30335948.840192042
+          "count": 155, 
+          "sum": 4732536332.111111, 
+          "average": 30532492.465232972
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 6347181822.222222, 
-          "average": 39423489.579020016
+          "count": 154, 
+          "sum": 6003181176.222222, 
+          "average": 38981695.94949495
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 3553925963.0, 
-          "average": 21538945.23030303
+          "count": 158, 
+          "sum": 3485824561.0, 
+          "average": 22062180.765822783
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 487075587.0, 
-          "average": 2988193.7852760735
+          "count": 156, 
+          "sum": 484890590.0, 
+          "average": 3108273.012820513
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 8070011414.333333, 
-          "average": 50124294.4989648
+          "count": 154, 
+          "sum": 7541238538.333333, 
+          "average": 48969081.41774891
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 10007015067.944445, 
-          "average": 61771697.95027435
+          "count": 155, 
+          "sum": 9238813553.944445, 
+          "average": 59605248.73512545
         }
       }, 
       "development.[0].Data.Health.Birth Rate": {
@@ -26160,59 +25797,59 @@ development_bar = [
           "average": 35.013054452914496
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 4517.321138398768, 
-          "average": 27.713626615943376
+          "count": 156, 
+          "sum": 4301.283827020726, 
+          "average": 27.572332224491845
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 5718.631593563384, 
-          "average": 31.77017551979658
+          "count": 175, 
+          "sum": 5532.922709010031, 
+          "average": 31.616701194343037
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 5648.447820467071, 
-          "average": 31.380265669261487
+          "count": 175, 
+          "sum": 5466.314012639258, 
+          "average": 31.23608007222431
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 5739.056641679006, 
-          "average": 32.42404882304522
+          "count": 172, 
+          "sum": 5548.336163995908, 
+          "average": 32.25776839532503
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 5733.14771188021, 
-          "average": 32.02875816692855
+          "count": 174, 
+          "sum": 5544.3386650257835, 
+          "average": 31.864015316240142
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 5813.156849710402, 
-          "average": 33.02930028244546
+          "count": 171, 
+          "sum": 5619.280554155473, 
+          "average": 32.861289790382884
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 5754.684945177834, 
-          "average": 32.697073552146804
+          "count": 171, 
+          "sum": 5562.338181980377, 
+          "average": 32.52829346187356
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 5956.379771492867, 
-          "average": 33.6518631157789
+          "count": 171, 
+          "sum": 5700.407626057105, 
+          "average": 33.33571711144506
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 5918.155825322908, 
-          "average": 33.43590861764353
+          "count": 172, 
+          "sum": 5705.7288779272485, 
+          "average": 33.17284231353049
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 5948.065255508491, 
-          "average": 33.98894431719137
+          "count": 169, 
+          "sum": 5691.223353658205, 
+          "average": 33.67587783229706
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 5961.685437821764, 
-          "average": 33.87321271489639
+          "count": 170, 
+          "sum": 5705.171949821493, 
+          "average": 33.559834998949974
         }, 
         "1964": {
           "count": 12, 
@@ -26255,34 +25892,34 @@ development_bar = [
           "average": 36.78355303978329
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 3789.5498384589737, 
-          "average": 24.291986143967772
+          "count": 149, 
+          "sum": 3607.0329787404357, 
+          "average": 24.208275025103582
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 3888.9221774470416, 
-          "average": 24.45863004683675
+          "count": 152, 
+          "sum": 3704.8205170966703, 
+          "average": 24.373819191425476
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 3688.936412335297, 
-          "average": 23.647028284200626
+          "count": 151, 
+          "sum": 3554.011542559361, 
+          "average": 23.53650028185007
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 3726.5897705346497, 
-          "average": 24.04251464861064
+          "count": 149, 
+          "sum": 3567.650021041586, 
+          "average": 23.94395987276232
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 4270.172327116577, 
-          "average": 25.879832285554997
+          "count": 158, 
+          "sum": 4073.8318916205462, 
+          "average": 25.78374614949711
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 4133.4545722159955, 
-          "average": 25.515151680345653
+          "count": 155, 
+          "sum": 3942.5017925559937, 
+          "average": 25.435495435845116
         }, 
         "1968": {
           "count": 14, 
@@ -26295,34 +25932,34 @@ development_bar = [
           "average": 37.19024771953202
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 5357.464349917678, 
-          "average": 30.268160169026437
+          "count": 170, 
+          "sum": 5131.5056445752525, 
+          "average": 30.185327321030897
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 5552.793327761559, 
-          "average": 30.84885182089757
+          "count": 173, 
+          "sum": 5323.156074870709, 
+          "average": 30.76968829405035
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 5123.633045250344, 
-          "average": 29.27790311571625
+          "count": 169, 
+          "sum": 4921.863493995585, 
+          "average": 29.1234526271928
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 5237.878546155151, 
-          "average": 29.760673557699715
+          "count": 170, 
+          "sum": 5031.642687378326, 
+          "average": 29.597898161048974
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 4624.054469569816, 
-          "average": 28.543546108455658
+          "count": 155, 
+          "sum": 4400.7508777741705, 
+          "average": 28.39194114693012
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 4655.322641529913, 
-          "average": 28.915047462918704
+          "count": 155, 
+          "sum": 4457.928066708484, 
+          "average": 28.760826236828922
         }, 
         "1979": {
           "count": 14, 
@@ -26350,9 +25987,9 @@ development_bar = [
           "average": 34.56638145704259
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 4553.997401089991, 
-          "average": 28.111095068456738
+          "count": 155, 
+          "sum": 4334.540598369436, 
+          "average": 27.964778053996362
         }, 
         "1973": {
           "count": 14, 
@@ -26375,54 +26012,54 @@ development_bar = [
           "average": 36.70962210786961
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 4332.150832838729, 
-          "average": 26.09729417372727
+          "count": 159, 
+          "sum": 4133.136604777498, 
+          "average": 25.99456984136791
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 4355.241014798231, 
-          "average": 26.884203795050812
+          "count": 155, 
+          "sum": 4146.128141166001, 
+          "average": 26.749213813974208
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 4386.614101130233, 
-          "average": 26.74764695811118
+          "count": 157, 
+          "sum": 4181.282040404124, 
+          "average": 26.632369684102706
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 4360.438733305423, 
-          "average": 26.426901413972264
+          "count": 158, 
+          "sum": 4158.669911566996, 
+          "average": 26.320695642829097
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 4095.1900145617697, 
-          "average": 25.278950707171415
+          "count": 155, 
+          "sum": 3906.7478839101777, 
+          "average": 25.204825057485014
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 4040.5366424744625, 
-          "average": 25.096500884934542
+          "count": 154, 
+          "sum": 3853.4137763236677, 
+          "average": 25.02216737872511
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 4222.672980028096, 
-          "average": 25.591957454715747
+          "count": 158, 
+          "sum": 4029.0950317838383, 
+          "average": 25.50060146698633
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 4464.441690311137, 
-          "average": 27.389212823994693
+          "count": 156, 
+          "sum": 4251.685223273255, 
+          "average": 27.25439245687983
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 4008.0031453416827, 
-          "average": 24.894429474171947
+          "count": 154, 
+          "sum": 3821.564382400458, 
+          "average": 24.81535313247051
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 3990.773933537069, 
-          "average": 24.6344069971424
+          "count": 155, 
+          "sum": 3805.3054292724714, 
+          "average": 24.550357608209495
         }
       }, 
       "development.[0].Data.Infrastructure.Telephone Lines": {
@@ -26432,59 +26069,59 @@ development_bar = [
           "average": 1621530.002024446
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 1698755961.0, 
-          "average": 10421815.711656442
+          "count": 156, 
+          "sum": 1673646017.0, 
+          "average": 10728500.108974358
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 2118242386.0, 
-          "average": 11768013.255555555
+          "count": 175, 
+          "sum": 2114375506.0, 
+          "average": 12082145.74857143
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 2224751193.0, 
-          "average": 12359728.85
+          "count": 175, 
+          "sum": 2220714397.0, 
+          "average": 12689796.554285714
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 1972233308.7777777, 
-          "average": 11142561.066541117
+          "count": 172, 
+          "sum": 1968902219.7777777, 
+          "average": 11447105.928940568
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 2036357963.8888888, 
-          "average": 11376301.474239603
+          "count": 174, 
+          "sum": 2032754349.8888888, 
+          "average": 11682496.263729246
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 1835271501.5555556, 
-          "average": 10427678.986111112
+          "count": 171, 
+          "sum": 1832446559.5555556, 
+          "average": 10716061.751786875
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 1899228834.6666667, 
-          "average": 10791072.924242424
+          "count": 171, 
+          "sum": 1896130062.6666667, 
+          "average": 11088479.898635479
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 1665308808.3666666, 
-          "average": 9408524.341054613
+          "count": 171, 
+          "sum": 1663947304.3666666, 
+          "average": 9730685.990448343
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 1770419463.2444444, 
-          "average": 10002369.848838668
+          "count": 172, 
+          "sum": 1768988027.2444444, 
+          "average": 10284814.111886304
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 2290806190.4090915, 
-          "average": 13090321.088051949
+          "count": 169, 
+          "sum": 2283952307.9090915, 
+          "average": 13514510.69768693
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 1948745341.9666665, 
-          "average": 11072416.715719698
+          "count": 170, 
+          "sum": 1947546565.9666665, 
+          "average": 11456156.270392157
         }, 
         "1964": {
           "count": 12, 
@@ -26527,34 +26164,34 @@ development_bar = [
           "average": 1243084.8614379086
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 2063983680.0, 
-          "average": 13230664.615384616
+          "count": 149, 
+          "sum": 1995605394.0, 
+          "average": 13393324.791946309
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 2099238670.0, 
-          "average": 13202758.93081761
+          "count": 152, 
+          "sum": 2029794425.0, 
+          "average": 13353910.690789474
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 1669909294.6666665, 
-          "average": 10704546.760683762
+          "count": 151, 
+          "sum": 1648483164.6666665, 
+          "average": 10917107.050772628
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 1978957380.3333335, 
-          "average": 12767466.969892472
+          "count": 149, 
+          "sum": 1957261709.3333335, 
+          "average": 13135984.62639821
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 2585787474.0, 
-          "average": 15671439.236363636
+          "count": 158, 
+          "sum": 2524205430.0, 
+          "average": 15975983.734177215
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 2490166461.5333333, 
-          "average": 15371397.91069959
+          "count": 155, 
+          "sum": 2420372072.5333333, 
+          "average": 15615303.69376344
         }, 
         "1968": {
           "count": 14, 
@@ -26567,34 +26204,34 @@ development_bar = [
           "average": 1245605.0823020118
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 2034921553.0, 
-          "average": 11496731.937853107
+          "count": 170, 
+          "sum": 1620344455.0, 
+          "average": 9531437.970588235
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 2337868616.5, 
-          "average": 12988158.980555555
+          "count": 173, 
+          "sum": 1943524374.5, 
+          "average": 11234244.939306358
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 1375170637.0, 
-          "average": 7858117.925714286
+          "count": 169, 
+          "sum": 1369496541.0, 
+          "average": 8103529.8284023665
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 1706563865.0, 
-          "average": 9696385.596590908
+          "count": 170, 
+          "sum": 1701842939.0, 
+          "average": 10010840.817647059
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 1447824123.0, 
-          "average": 8937185.944444444
+          "count": 155, 
+          "sum": 1429663129.0, 
+          "average": 9223633.09032258
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 1345523655.0, 
-          "average": 8357289.782608695
+          "count": 155, 
+          "sum": 1339591670.0, 
+          "average": 8642526.903225806
         }, 
         "1979": {
           "count": 14, 
@@ -26622,9 +26259,9 @@ development_bar = [
           "average": 1715800.3240641712
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 1568984651.0, 
-          "average": 9685090.438271604
+          "count": 155, 
+          "sum": 1547635571.0, 
+          "average": 9984745.619354839
         }, 
         "1973": {
           "count": 14, 
@@ -26647,54 +26284,54 @@ development_bar = [
           "average": 1292162.0591036414
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 2500423833.0, 
-          "average": 15062794.174698794
+          "count": 159, 
+          "sum": 2444271538.0, 
+          "average": 15372776.96855346
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 1962344842.0, 
-          "average": 12113239.765432099
+          "count": 155, 
+          "sum": 1927684087.0, 
+          "average": 12436671.529032258
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 2132844755.0, 
-          "average": 13005150.945121951
+          "count": 157, 
+          "sum": 2091781895.0, 
+          "average": 13323451.560509555
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 2329529410.0, 
-          "average": 14118360.06060606
+          "count": 158, 
+          "sum": 2280711840.0, 
+          "average": 14434885.06329114
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 2587629099.9666667, 
-          "average": 15973019.135596707
+          "count": 155, 
+          "sum": 2512343062.9666667, 
+          "average": 16208664.92236559
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 2624057389.65, 
-          "average": 16298493.10341615
+          "count": 154, 
+          "sum": 2555997473.65, 
+          "average": 16597386.192532469
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 2751061809.6, 
-          "average": 16673101.876363635
+          "count": 158, 
+          "sum": 2686984624.6, 
+          "average": 17006231.80126582
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 1835595101.0, 
-          "average": 11261319.63803681
+          "count": 156, 
+          "sum": 1806130401.0, 
+          "average": 11577758.98076923
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 2623474519.833333, 
-          "average": 16294872.793995861
+          "count": 154, 
+          "sum": 2555600667.833333, 
+          "average": 16594809.531385282
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 2652769337.416667, 
-          "average": 16375119.366769547
+          "count": 155, 
+          "sum": 2585435967.416667, 
+          "average": 16680232.047849461
         }
       }, 
       "development.[0].Data.Health.Population Growth": {
@@ -26704,59 +26341,59 @@ development_bar = [
           "average": 2.029116389382753
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 283.86989400715095, 
-          "average": 1.7415330920684107
+          "count": 156, 
+          "sum": 268.7347131990317, 
+          "average": 1.7226584179425106
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 363.5333131415349, 
-          "average": 2.019629517452972
+          "count": 175, 
+          "sum": 352.22388479794677, 
+          "average": 2.012707913131125
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 354.9597447063771, 
-          "average": 1.9719985817020953
+          "count": 175, 
+          "sum": 344.14090512794144, 
+          "average": 1.966519457873952
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 357.4537380783951, 
-          "average": 2.019512644510707
+          "count": 172, 
+          "sum": 345.8371943785663, 
+          "average": 2.0106813626660838
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 365.547997062029, 
-          "average": 2.0421675813521163
+          "count": 174, 
+          "sum": 354.12526853777507, 
+          "average": 2.0352026927458327
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 360.53784372823793, 
-          "average": 2.048510475728625
+          "count": 171, 
+          "sum": 348.3210543666976, 
+          "average": 2.036965230214606
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 358.03510883177347, 
-          "average": 2.0342903910896224
+          "count": 171, 
+          "sum": 345.91002700943335, 
+          "average": 2.0228656550259267
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 372.54475456473835, 
-          "average": 2.104772624659539
+          "count": 171, 
+          "sum": 356.252625976837, 
+          "average": 2.0833486899230236
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 375.02629682676906, 
-          "average": 2.1187926374393733
+          "count": 172, 
+          "sum": 362.11235399665037, 
+          "average": 2.1053043837014553
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 353.84771774266994, 
-          "average": 2.0219869585295416
+          "count": 169, 
+          "sum": 337.8077444862052, 
+          "average": 1.9988623934094971
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 366.1226581998638, 
-          "average": 2.0802423761355913
+          "count": 170, 
+          "sum": 349.874541071424, 
+          "average": 2.0580855357142607
         }, 
         "1964": {
           "count": 12, 
@@ -26799,34 +26436,34 @@ development_bar = [
           "average": 2.1966364425348677
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 241.01591094984573, 
-          "average": 1.5449737881400374
+          "count": 149, 
+          "sum": 229.56150847535812, 
+          "average": 1.54068126493529
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 251.01539830725164, 
-          "average": 1.5787131969009547
+          "count": 152, 
+          "sum": 239.0329037539746, 
+          "average": 1.5725848931182547
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 237.5810344531514, 
-          "average": 1.522955349058663
+          "count": 151, 
+          "sum": 229.7546249875284, 
+          "average": 1.5215538078644266
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 241.4805878865852, 
-          "average": 1.5579392766876468
+          "count": 149, 
+          "sum": 231.56367782975525, 
+          "average": 1.55411864315272
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 274.95251574808526, 
-          "average": 1.6663788833217286
+          "count": 158, 
+          "sum": 261.19719884382295, 
+          "average": 1.6531468281254613
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 266.60151395089974, 
-          "average": 1.6456883577216042
+          "count": 155, 
+          "sum": 253.15983793123138, 
+          "average": 1.6332892769756866
         }, 
         "1968": {
           "count": 14, 
@@ -26839,34 +26476,34 @@ development_bar = [
           "average": 2.183317548665827
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 349.37552574394476, 
-          "average": 1.9738730268019469
+          "count": 170, 
+          "sum": 333.44164305404803, 
+          "average": 1.961421429729694
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 348.7413020669812, 
-          "average": 1.9374516781498943
+          "count": 173, 
+          "sum": 334.0567517206762, 
+          "average": 1.9309638827784736
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 330.0591576417688, 
-          "average": 1.8860523293815368
+          "count": 169, 
+          "sum": 315.3850882793296, 
+          "average": 1.8661839543155603
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 341.20550555962944, 
-          "average": 1.938667645225167
+          "count": 170, 
+          "sum": 326.5067781353585, 
+          "average": 1.9206281066785795
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 297.00664558656416, 
-          "average": 1.8333743554726194
+          "count": 155, 
+          "sum": 281.2016970298535, 
+          "average": 1.8142044969667976
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 305.2493256614301, 
-          "average": 1.8959585444809322
+          "count": 155, 
+          "sum": 291.0100246712831, 
+          "average": 1.8774840301373106
         }, 
         "1979": {
           "count": 14, 
@@ -26894,9 +26531,9 @@ development_bar = [
           "average": 2.0400210279898974
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 294.420344558019, 
-          "average": 1.8174095343087604
+          "count": 155, 
+          "sum": 279.0226058641319, 
+          "average": 1.8001458442847234
         }, 
         "1973": {
           "count": 14, 
@@ -26919,54 +26556,54 @@ development_bar = [
           "average": 2.1691334351669203
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 277.8159750992932, 
-          "average": 1.6735902114415258
+          "count": 159, 
+          "sum": 263.8852019484268, 
+          "average": 1.6596553581662068
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 272.2498018316293, 
-          "average": 1.6805543322940077
+          "count": 155, 
+          "sum": 257.8586801723029, 
+          "average": 1.663604388208406
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 281.25794658835775, 
-          "average": 1.7149874791973034
+          "count": 157, 
+          "sum": 267.18023860786235, 
+          "average": 1.7017849592857475
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 279.52885943168366, 
-          "average": 1.6941142995859615
+          "count": 158, 
+          "sum": 265.5411472864004, 
+          "average": 1.6806401726987366
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 265.4001131389963, 
-          "average": 1.6382723033271376
+          "count": 155, 
+          "sum": 251.7834881817007, 
+          "average": 1.6244096011722624
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 256.74563208919056, 
-          "average": 1.5946933670136063
+          "count": 154, 
+          "sum": 242.747312009509, 
+          "average": 1.5762812468149938
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 277.28043458555794, 
-          "average": 1.6804874823367137
+          "count": 158, 
+          "sum": 263.8294883190131, 
+          "average": 1.6698068880950192
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 284.96402357202487, 
-          "average": 1.748245543386656
+          "count": 156, 
+          "sum": 270.105072042999, 
+          "average": 1.7314427695064036
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 253.76234041346908, 
-          "average": 1.5761636050526024
+          "count": 154, 
+          "sum": 239.73776319986038, 
+          "average": 1.5567387220770148
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 252.15562633279268, 
-          "average": 1.556516211930819
+          "count": 155, 
+          "sum": 239.07734962146273, 
+          "average": 1.5424345136868565
         }
       }, 
       "development.[0].Data.Infrastructure.Mobile Cellular Subscriptions per 100 People": {
@@ -26976,59 +26613,59 @@ development_bar = [
           "average": 0.0
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 413.4908421407283, 
-          "average": 2.5367536327652065
+          "count": 156, 
+          "sum": 404.80257111282725, 
+          "average": 2.594888276364279
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 76.70176494244541, 
-          "average": 0.4261209163469192
+          "count": 175, 
+          "sum": 76.60352364542283, 
+          "average": 0.43773442083098774
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 63.88386026824988, 
-          "average": 0.35491033482361045
+          "count": 175, 
+          "sum": 63.70554892759201, 
+          "average": 0.36403170815766867
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 105.38212600341888, 
-          "average": 0.5953792429571688
+          "count": 172, 
+          "sum": 105.3736371928031, 
+          "average": 0.6126374255395531
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 90.66745175201864, 
-          "average": 0.50652207682692
+          "count": 174, 
+          "sum": 90.62506069280171, 
+          "average": 0.5208336821425388
         }, 
         "1984": {
-          "count": 176, 
+          "count": 171, 
           "sum": 141.25436437773578, 
-          "average": 0.8025816157825898
+          "average": 0.8260489144896831
         }, 
         "1985": {
-          "count": 176, 
+          "count": 171, 
           "sum": 122.84174291789103, 
-          "average": 0.6979644483971084
+          "average": 0.7183727656017022
         }, 
         "1982": {
-          "count": 177, 
+          "count": 171, 
           "sum": 206.83033368266325, 
-          "average": 1.1685329586591144
+          "average": 1.209534115103294
         }, 
         "1983": {
-          "count": 177, 
+          "count": 172, 
           "sum": 160.08594408830294, 
-          "average": 0.9044403620808076
+          "average": 0.9307322330715287
         }, 
         "1980": {
-          "count": 175, 
+          "count": 169, 
           "sum": 217.52891308089062, 
-          "average": 1.2430223604622321
+          "average": 1.2871533318395894
         }, 
         "1981": {
-          "count": 176, 
+          "count": 170, 
           "sum": 198.30430604571717, 
-          "average": 1.1267290116233928
+          "average": 1.166495917915983
         }, 
         "1964": {
           "count": 12, 
@@ -27071,34 +26708,34 @@ development_bar = [
           "average": 0.0
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 12302.085228190655, 
-          "average": 78.85952069352986
+          "count": 149, 
+          "sum": 11696.949966842272, 
+          "average": 78.5030199116931
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 11723.85105994894, 
-          "average": 73.7349123267229
+          "count": 152, 
+          "sum": 11181.773669739066, 
+          "average": 73.56430045880968
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 14112.80672288156, 
-          "average": 90.46670976206126
+          "count": 151, 
+          "sum": 13646.673855827987, 
+          "average": 90.37532354852969
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 13178.654696833884, 
-          "average": 85.0235786892509
+          "count": 149, 
+          "sum": 12573.225087139475, 
+          "average": 84.3840609875133
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 3658.474123097741, 
-          "average": 22.172570443016607
+          "count": 158, 
+          "sum": 3514.835810003321, 
+          "average": 22.245796265843797
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 5159.509136651593, 
-          "average": 31.848821831182665
+          "count": 155, 
+          "sum": 4955.1767373719995, 
+          "average": 31.96888217659354
         }, 
         "1968": {
           "count": 14, 
@@ -27111,34 +26748,34 @@ development_bar = [
           "average": 0.0
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 48.49441644844315, 
-          "average": 0.2739797539460065
+          "count": 170, 
+          "sum": 46.795873119579966, 
+          "average": 0.2752698418798821
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 55.02213654321343, 
-          "average": 0.3056785363511857
+          "count": 173, 
+          "sum": 53.973892198039586, 
+          "average": 0.31198781617363924
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 89.91558661750886, 
-          "average": 0.5138033521000505
+          "count": 169, 
+          "sum": 88.64079923078394, 
+          "average": 0.5245017705963545
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 68.61327044978391, 
-          "average": 0.38984812755559023
+          "count": 170, 
+          "sum": 67.7086205609204, 
+          "average": 0.39828600329953157
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 161.50232172735468, 
-          "average": 0.9969279118972509
+          "count": 155, 
+          "sum": 158.87226643452493, 
+          "average": 1.0249823640937092
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 104.53766550363358, 
-          "average": 0.6493022702089041
+          "count": 155, 
+          "sum": 102.74574864441213, 
+          "average": 0.6628757977058847
         }, 
         "1979": {
           "count": 14, 
@@ -27166,9 +26803,9 @@ development_bar = [
           "average": 0.0
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 266.1517826582422, 
-          "average": 1.6429122386311243
+          "count": 155, 
+          "sum": 261.4154563908482, 
+          "average": 1.6865513315538594
         }, 
         "1973": {
           "count": 14, 
@@ -27191,54 +26828,54 @@ development_bar = [
           "average": 0.0
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 3086.838660767767, 
-          "average": 18.59541361908294
+          "count": 159, 
+          "sum": 2960.98104836325, 
+          "average": 18.622522316749997
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 953.2807094292234, 
-          "average": 5.884448823637183
+          "count": 155, 
+          "sum": 921.392002063882, 
+          "average": 5.944464529444402
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 1514.415082796084, 
-          "average": 9.234238309732222
+          "count": 157, 
+          "sum": 1454.281404305543, 
+          "average": 9.262938880927026
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 2324.5547216629775, 
-          "average": 14.088210434321088
+          "count": 158, 
+          "sum": 2227.728076801649, 
+          "average": 14.099544789883863
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 6289.595126663823, 
-          "average": 38.82466127570259
+          "count": 155, 
+          "sum": 6035.866269246997, 
+          "average": 38.94107270481931
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 7553.837207586059, 
-          "average": 46.91824352537927
+          "count": 154, 
+          "sum": 7217.799923626387, 
+          "average": 46.86883067289863
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 4409.279450249707, 
-          "average": 26.72290575908914
+          "count": 158, 
+          "sum": 4235.520655457896, 
+          "average": 26.807092756062648
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 616.1625331033506, 
-          "average": 3.7801382398978594
+          "count": 156, 
+          "sum": 598.9410406845757, 
+          "average": 3.8393656454139498
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 9133.187745196024, 
-          "average": 56.7278741937641
+          "count": 154, 
+          "sum": 8720.592458310479, 
+          "average": 56.62722375526285
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 10761.823001261266, 
-          "average": 66.43100618062515
+          "count": 155, 
+          "sum": 10253.954791428467, 
+          "average": 66.15454704147403
         }
       }, 
       "development.[0].Data.Rural Development.Rural Population Growth": {
@@ -27248,59 +26885,59 @@ development_bar = [
           "average": 1.0101271443334385
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 144.54115198376152, 
-          "average": 0.8867555336427085
+          "count": 156, 
+          "sum": 134.58566992688574, 
+          "average": 0.8627286533774727
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 177.28975830393045, 
-          "average": 0.9849431016885019
+          "count": 175, 
+          "sum": 169.037269613739, 
+          "average": 0.9659272549356511
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 161.36816789670266, 
-          "average": 0.8964898216483482
+          "count": 175, 
+          "sum": 153.5741401366354, 
+          "average": 0.8775665150664881
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 184.16374118969418, 
-          "average": 1.0404731140660686
+          "count": 172, 
+          "sum": 176.27260177060714, 
+          "average": 1.024840707968646
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 183.0552110558302, 
-          "average": 1.0226548103677668
+          "count": 174, 
+          "sum": 174.7425091506494, 
+          "average": 1.00426729396925
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 190.31979402632103, 
-          "average": 1.0813624660586418
+          "count": 171, 
+          "sum": 181.75579979859165, 
+          "average": 1.0628994140268515
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 187.22685833015848, 
-          "average": 1.0637889677849919
+          "count": 171, 
+          "sum": 178.94533180647693, 
+          "average": 1.046463928692848
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 193.97740474203124, 
-          "average": 1.0959175409154305
+          "count": 171, 
+          "sum": 181.66743762072326, 
+          "average": 1.06238267614458
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 199.37644204510246, 
-          "average": 1.1264205765260027
+          "count": 172, 
+          "sum": 189.12341373787928, 
+          "average": 1.0995547310341818
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 174.01364174573214, 
-          "average": 0.9943636671184692
+          "count": 169, 
+          "sum": 162.18198117067794, 
+          "average": 0.9596566933176209
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 177.345339656123, 
-          "average": 1.0076439753188808
+          "count": 170, 
+          "sum": 165.39447718921988, 
+          "average": 0.9729086893483524
         }, 
         "1964": {
           "count": 12, 
@@ -27343,34 +26980,34 @@ development_bar = [
           "average": 0.7398794707279058
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 95.7408098130717, 
-          "average": 0.6137231398273828
+          "count": 149, 
+          "sum": 89.91196779510743, 
+          "average": 0.6034360254705199
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 105.12351674835175, 
-          "average": 0.6611541933858599
+          "count": 152, 
+          "sum": 98.73465410871466, 
+          "average": 0.649570092820491
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 79.3201329882383, 
-          "average": 0.508462390950245
+          "count": 151, 
+          "sum": 74.63795995264452, 
+          "average": 0.49429112551420173
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 93.30424851429547, 
-          "average": 0.6019628936406158
+          "count": 149, 
+          "sum": 88.46623064519879, 
+          "average": 0.5937330915785154
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 129.05375702076546, 
-          "average": 0.7821439819440329
+          "count": 158, 
+          "sum": 121.23642335250643, 
+          "average": 0.7673191351424457
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 125.2578102528696, 
-          "average": 0.773196359585615
+          "count": 155, 
+          "sum": 116.925565413394, 
+          "average": 0.7543584865380258
         }, 
         "1968": {
           "count": 14, 
@@ -27383,34 +27020,34 @@ development_bar = [
           "average": 0.9257677411614438
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 163.0871718848348, 
-          "average": 0.9213964513267502
+          "count": 170, 
+          "sum": 157.16144645211912, 
+          "average": 0.9244790967771707
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 161.01288469294258, 
-          "average": 0.894516026071903
+          "count": 173, 
+          "sum": 155.3940588560662, 
+          "average": 0.8982315540813074
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 166.75627744326903, 
-          "average": 0.9528930139615372
+          "count": 169, 
+          "sum": 157.2260796807106, 
+          "average": 0.9303318324302402
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 169.87494523341314, 
-          "average": 0.9651985524625747
+          "count": 170, 
+          "sum": 164.02884864623127, 
+          "average": 0.9648755802719484
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 160.89581462133958, 
-          "average": 0.9931840408724664
+          "count": 155, 
+          "sum": 149.53484376995223, 
+          "average": 0.964740927548079
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 157.98273671185737, 
-          "average": 0.9812592342351392
+          "count": 155, 
+          "sum": 148.09037086299634, 
+          "average": 0.9554217475032024
         }, 
         "1979": {
           "count": 14, 
@@ -27438,9 +27075,9 @@ development_bar = [
           "average": 1.0001869820973572
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 155.98767725841628, 
-          "average": 0.9628868966568909
+          "count": 155, 
+          "sum": 145.25421322366992, 
+          "average": 0.9371239562817414
         }, 
         "1973": {
           "count": 14, 
@@ -27463,326 +27100,54 @@ development_bar = [
           "average": 0.8938723757628477
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 131.13485761903348, 
-          "average": 0.7899690218014062
-        }, 
-        "1999": {
-          "count": 162, 
-          "sum": 130.2573832098919, 
-          "average": 0.8040579210487155
-        }, 
-        "2000": {
-          "count": 164, 
-          "sum": 138.44250152306662, 
-          "average": 0.8441615946528452
-        }, 
-        "2001": {
-          "count": 165, 
-          "sum": 134.50701155026243, 
-          "average": 0.8151940093955304
-        }, 
-        "2006": {
-          "count": 162, 
-          "sum": 119.95530966849999, 
-          "average": 0.7404648744969137
-        }, 
-        "2007": {
-          "count": 161, 
-          "sum": 110.24530423478524, 
-          "average": 0.684753442452082
-        }, 
-        "2004": {
-          "count": 165, 
-          "sum": 130.40321599016644, 
-          "average": 0.7903225211525234
-        }, 
-        "1998": {
-          "count": 163, 
-          "sum": 142.49377195906692, 
-          "average": 0.8741949199942758
-        }, 
-        "2008": {
-          "count": 161, 
-          "sum": 105.18850716649422, 
-          "average": 0.6533447650092808
-        }, 
-        "2009": {
-          "count": 162, 
-          "sum": 102.77723418906521, 
-          "average": 0.6344273715374396
-        }
-      }, 
-      "development.[0].Data.Urban Development.Urban Population": {
-        "1974": {
-          "count": 14, 
-          "sum": 561.6195990332567, 
-          "average": 40.115685645232624
-        }, 
-        "1997": {
-          "count": 163, 
-          "sum": 8223.56542265584, 
-          "average": 50.451321611385524
-        }, 
-        "1988": {
-          "count": 180, 
-          "sum": 8449.287206266237, 
-          "average": 46.94048447925688
-        }, 
-        "1989": {
-          "count": 180, 
-          "sum": 8531.488326389845, 
-          "average": 47.39715736883247
-        }, 
-        "1986": {
-          "count": 177, 
-          "sum": 8082.629466591557, 
-          "average": 45.66457325757941
-        }, 
-        "1987": {
-          "count": 179, 
-          "sum": 8353.050966559184, 
-          "average": 46.665089198654634
-        }, 
-        "1984": {
-          "count": 176, 
-          "sum": 7892.342724481852, 
-          "average": 44.842856389101414
-        }, 
-        "1985": {
-          "count": 176, 
-          "sum": 7972.097191166137, 
-          "average": 45.29600676798941
-        }, 
-        "1982": {
-          "count": 177, 
-          "sum": 7765.516901690202, 
-          "average": 43.87297684570734
-        }, 
-        "1983": {
-          "count": 177, 
-          "sum": 7841.631449768777, 
-          "average": 44.30300254106652
-        }, 
-        "1980": {
-          "count": 175, 
-          "sum": 7482.512590249785, 
-          "average": 42.7572148014273
-        }, 
-        "1981": {
-          "count": 176, 
-          "sum": 7576.312788710165, 
-          "average": 43.04723175403502
-        }, 
-        "1964": {
-          "count": 12, 
-          "sum": 475.9741133983567, 
-          "average": 39.66450944986306
-        }, 
-        "1965": {
-          "count": 12, 
-          "sum": 483.7438744639941, 
-          "average": 40.31198953866617
-        }, 
-        "1966": {
-          "count": 13, 
-          "sum": 502.0392270097417, 
-          "average": 38.618402077672435
-        }, 
-        "1967": {
-          "count": 13, 
-          "sum": 509.24725468264484, 
-          "average": 39.172865744818836
-        }, 
-        "1960": {
-          "count": 14, 
-          "sum": 677.6998856039701, 
-          "average": 48.40713468599787
-        }, 
-        "1961": {
-          "count": 12, 
-          "sum": 453.08577120794035, 
-          "average": 37.75714760066169
-        }, 
-        "1962": {
-          "count": 12, 
-          "sum": 460.3347542555542, 
-          "average": 38.361229521296174
-        }, 
-        "1963": {
-          "count": 12, 
-          "sum": 468.2092386138255, 
-          "average": 39.01743655115212
-        }, 
-        "2011": {
-          "count": 156, 
-          "sum": 8418.205599007142, 
-          "average": 53.96285640389197
-        }, 
-        "2010": {
           "count": 159, 
-          "sum": 8544.687315461195, 
-          "average": 53.740171795353426
-        }, 
-        "2013": {
-          "count": 156, 
-          "sum": 8580.623718054028, 
-          "average": 55.00399819265402
-        }, 
-        "2012": {
-          "count": 155, 
-          "sum": 8440.594424225419, 
-          "average": 54.45544789822852
-        }, 
-        "2003": {
-          "count": 165, 
-          "sum": 8537.576624136325, 
-          "average": 51.74288863112925
-        }, 
-        "2005": {
-          "count": 162, 
-          "sum": 8422.501798962126, 
-          "average": 51.9907518454452
-        }, 
-        "1968": {
-          "count": 14, 
-          "sum": 521.3237658100937, 
-          "average": 37.23741184357812
-        }, 
-        "1969": {
-          "count": 14, 
-          "sum": 528.4679641856189, 
-          "average": 37.74771172754422
-        }, 
-        "1991": {
-          "count": 177, 
-          "sum": 8578.613548680667, 
-          "average": 48.466743212885106
-        }, 
-        "1990": {
-          "count": 180, 
-          "sum": 8642.43134973031, 
-          "average": 48.0135074985017
-        }, 
-        "1993": {
-          "count": 175, 
-          "sum": 8641.41189054, 
-          "average": 49.379496517371415
-        }, 
-        "1992": {
-          "count": 176, 
-          "sum": 8595.747931157923, 
-          "average": 48.83947688157912
-        }, 
-        "1995": {
-          "count": 162, 
-          "sum": 8128.628473996521, 
-          "average": 50.17671897528715
-        }, 
-        "1994": {
-          "count": 161, 
-          "sum": 8026.754923388805, 
-          "average": 49.855620642166464
-        }, 
-        "1979": {
-          "count": 14, 
-          "sum": 591.5628444994155, 
-          "average": 42.2544888928154
-        }, 
-        "1978": {
-          "count": 14, 
-          "sum": 585.7960216192904, 
-          "average": 41.84257297280646
-        }, 
-        "1977": {
-          "count": 14, 
-          "sum": 580.0119083344349, 
-          "average": 41.42942202388821
-        }, 
-        "1976": {
-          "count": 14, 
-          "sum": 574.0375011127074, 
-          "average": 41.002678650907676
-        }, 
-        "1975": {
-          "count": 14, 
-          "sum": 567.8645440701146, 
-          "average": 40.56175314786532
-        }, 
-        "1996": {
-          "count": 162, 
-          "sum": 8150.242502319231, 
-          "average": 50.310138903205115
-        }, 
-        "1973": {
-          "count": 14, 
-          "sum": 555.4561678929828, 
-          "average": 39.675440563784484
-        }, 
-        "1972": {
-          "count": 14, 
-          "sum": 549.2955154344663, 
-          "average": 39.235393959604735
-        }, 
-        "1971": {
-          "count": 14, 
-          "sum": 542.7728293052817, 
-          "average": 38.76948780752012
-        }, 
-        "1970": {
-          "count": 14, 
-          "sum": 535.5636966783807, 
-          "average": 38.25454976274147
-        }, 
-        "2002": {
-          "count": 166, 
-          "sum": 8563.131898153784, 
-          "average": 51.58513191658907
+          "sum": 124.0691679784695, 
+          "average": 0.78030923256899
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 8304.909464150005, 
-          "average": 51.26487323549386
+          "count": 155, 
+          "sum": 121.25912594204726, 
+          "average": 0.7823169415615953
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 8416.416157280833, 
-          "average": 51.31961071512704
+          "count": 157, 
+          "sum": 129.83138074271972, 
+          "average": 0.8269514696988515
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 8492.750729086622, 
-          "average": 51.47121653991893
+          "count": 158, 
+          "sum": 126.36911743396112, 
+          "average": 0.7998045407212728
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 8476.872886673373, 
-          "average": 52.326375843662774
+          "count": 155, 
+          "sum": 111.59361715783315, 
+          "average": 0.7199588203731172
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 8442.930679529461, 
-          "average": 52.44056322689108
+          "count": 154, 
+          "sum": 101.63804610588264, 
+          "average": 0.6599873123758613
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 8591.875338557667, 
-          "average": 52.07197174883436
+          "count": 158, 
+          "sum": 122.08645619216627, 
+          "average": 0.7726990898238367
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 8296.621006452906, 
-          "average": 50.899515377011696
+          "count": 156, 
+          "sum": 133.0031791464691, 
+          "average": 0.8525844817081355
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 8497.275790949312, 
-          "average": 52.77811050279076
+          "count": 154, 
+          "sum": 96.63417739059165, 
+          "average": 0.6274946583804653
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 8632.255339094312, 
-          "average": 53.28552678453279
+          "count": 155, 
+          "sum": 95.26399398133316, 
+          "average": 0.6146064127827947
         }
       }, 
       "development.[0].Data.Infrastructure.Telephone Lines per 100 People": {
@@ -27792,59 +27157,59 @@ development_bar = [
           "average": 8.919482569967219
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 2370.173887978552, 
-          "average": 14.540944098027918
+          "count": 156, 
+          "sum": 2314.7314961168604, 
+          "average": 14.83802241100551
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 1751.5371845127293, 
-          "average": 9.730762136181827
+          "count": 175, 
+          "sum": 1723.9412253746134, 
+          "average": 9.85109271642636
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 1844.0560718829086, 
-          "average": 10.24475595490505
+          "count": 175, 
+          "sum": 1814.6092463219372, 
+          "average": 10.369195693268214
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 1571.682971872236, 
-          "average": 8.87956481283749
+          "count": 172, 
+          "sum": 1547.428188865995, 
+          "average": 8.996675516662759
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 1672.2059563068647, 
-          "average": 9.341932716798132
+          "count": 174, 
+          "sum": 1646.2863417499038, 
+          "average": 9.46141575718336
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 1432.3824634223752, 
-          "average": 8.138536723990775
+          "count": 171, 
+          "sum": 1410.9248075096264, 
+          "average": 8.251022266138172
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 1501.1989659496462, 
-          "average": 8.529539579259351
+          "count": 171, 
+          "sum": 1478.0104340839925, 
+          "average": 8.643335871836213
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 1316.2013108988544, 
-          "average": 7.436165598298609
+          "count": 171, 
+          "sum": 1309.3763159990845, 
+          "average": 7.657171438591136
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 1371.5355696300567, 
-          "average": 7.7487885289833764
+          "count": 172, 
+          "sum": 1365.0875388862144, 
+          "average": 7.936555458640785
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 1390.384297558047, 
-          "average": 7.945053128903128
+          "count": 169, 
+          "sum": 1382.8464497013192, 
+          "average": 8.182523371013728
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 1310.521449449207, 
-          "average": 7.446144599143221
+          "count": 170, 
+          "sum": 1303.807508099952, 
+          "average": 7.6694559299997165
         }, 
         "1964": {
           "count": 12, 
@@ -27887,34 +27252,34 @@ development_bar = [
           "average": 8.743362426167806
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 2593.3768664400436, 
-          "average": 16.624210682307975
+          "count": 149, 
+          "sum": 2518.6557855777455, 
+          "average": 16.903730104548625
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 2716.830813287879, 
-          "average": 17.086986247093584
+          "count": 152, 
+          "sum": 2638.838077195395, 
+          "average": 17.360776823653918
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 2500.9087448470927, 
-          "average": 16.031466313122383
+          "count": 151, 
+          "sum": 2439.091966743743, 
+          "average": 16.15292693207777
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 2528.3053942508072, 
-          "average": 16.311647704843917
+          "count": 149, 
+          "sum": 2458.725401511538, 
+          "average": 16.501512761822408
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 2801.9434191938617, 
-          "average": 16.981475267841585
+          "count": 158, 
+          "sum": 2722.1132477880305, 
+          "average": 17.228564859417915
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 2722.9133696053286, 
-          "average": 16.808107219785974
+          "count": 155, 
+          "sum": 2643.0699339600283, 
+          "average": 17.052064090064693
         }, 
         "1968": {
           "count": 14, 
@@ -27927,34 +27292,34 @@ development_bar = [
           "average": 8.754475944642836
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 2005.3038894797419, 
-          "average": 11.329400505535267
+          "count": 170, 
+          "sum": 1930.4693839289398, 
+          "average": 11.355702258405529
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 1936.9816088922264, 
-          "average": 10.761008938290146
+          "count": 173, 
+          "sum": 1866.4330581963507, 
+          "average": 10.788630394198558
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 2138.0660584948505, 
-          "average": 12.217520334256285
+          "count": 169, 
+          "sum": 2096.1372941139293, 
+          "average": 12.403179255112011
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 2073.3842066209495, 
-          "average": 11.780592083073573
+          "count": 170, 
+          "sum": 2034.0461952680412, 
+          "average": 11.964977619223768
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 2140.579536287189, 
-          "average": 13.213453927698694
+          "count": 155, 
+          "sum": 2092.1595148591614, 
+          "average": 13.49780332167201
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 2045.663595462847, 
-          "average": 12.70598506498662
+          "count": 155, 
+          "sum": 2001.1027246560195, 
+          "average": 12.910340159071087
         }, 
         "1979": {
           "count": 14, 
@@ -27982,9 +27347,9 @@ development_bar = [
           "average": 8.996065335212332
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 2248.2524226052856, 
-          "average": 13.878101374106707
+          "count": 155, 
+          "sum": 2196.3452789148027, 
+          "average": 14.169969541385827
         }, 
         "1973": {
           "count": 14, 
@@ -28007,54 +27372,54 @@ development_bar = [
           "average": 8.72210510943736
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 2840.4932369800413, 
-          "average": 17.11140504204844
+          "count": 159, 
+          "sum": 2763.181497444791, 
+          "average": 17.378499983929498
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 2604.7152614718098, 
-          "average": 16.07848926834451
+          "count": 155, 
+          "sum": 2537.9764529700765, 
+          "average": 16.374041632065005
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 2716.952247972701, 
-          "average": 16.566781999833545
+          "count": 157, 
+          "sum": 2645.5551396058663, 
+          "average": 16.850669679018253
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 2802.9751754276026, 
-          "average": 16.98772833592486
+          "count": 158, 
+          "sum": 2727.593770030903, 
+          "average": 17.263251709056348
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 2709.2934036307133, 
-          "average": 16.72403335574514
+          "count": 155, 
+          "sum": 2628.703320052382, 
+          "average": 16.959376258402457
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 2680.0336467424177, 
-          "average": 16.646171718897012
+          "count": 154, 
+          "sum": 2598.1274001507795, 
+          "average": 16.870957143836236
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 2799.4421766471014, 
-          "average": 16.96631622210365
+          "count": 158, 
+          "sum": 2721.400412650699, 
+          "average": 17.224053244624677
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 2498.848092663383, 
-          "average": 15.330356396707874
+          "count": 156, 
+          "sum": 2436.4191009613205, 
+          "average": 15.618071160008466
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 2671.0812918870583, 
-          "average": 16.590567030354407
+          "count": 154, 
+          "sum": 2586.915939410204, 
+          "average": 16.798155450715623
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 2746.2776397895127, 
-          "average": 16.952331109811805
+          "count": 155, 
+          "sum": 2659.879908097127, 
+          "average": 17.160515536110502
         }
       }, 
       "development.[0].Data.Rural Development.Arable Land": {
@@ -28064,59 +27429,59 @@ development_bar = [
           "average": 0.3436565852099843
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 34.6515566879881, 
-          "average": 0.2125862373496203
+          "count": 156, 
+          "sum": 32.86995167873639, 
+          "average": 0.21070481845343844
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 45.477416808908195, 
-          "average": 0.2526523156050456
+          "count": 175, 
+          "sum": 43.996813065510175, 
+          "average": 0.25141036037434383
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 44.88648354154713, 
-          "average": 0.2493693530085952
+          "count": 175, 
+          "sum": 43.41079589509357, 
+          "average": 0.24806169082910612
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 45.31006420915111, 
-          "average": 0.25598906332853727
+          "count": 172, 
+          "sum": 43.77559672015232, 
+          "average": 0.2545092832566995
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 44.72292513154283, 
-          "average": 0.24984874375163577
+          "count": 174, 
+          "sum": 43.21270083509428, 
+          "average": 0.24834885537410487
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 45.88737203575376, 
-          "average": 0.26072370474860096
+          "count": 171, 
+          "sum": 44.31848742871566, 
+          "average": 0.25917244110360055
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 45.38319156664438, 
-          "average": 0.2578590429922977
+          "count": 171, 
+          "sum": 43.82812596519554, 
+          "average": 0.256304830205822
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 47.992662612778794, 
-          "average": 0.2711449865128743
+          "count": 171, 
+          "sum": 46.652010903552494, 
+          "average": 0.272818777213757
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 47.19442976607241, 
-          "average": 0.2666351964184884
+          "count": 172, 
+          "sum": 46.2659153925632, 
+          "average": 0.2689878801893211
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 49.75500848463311, 
-          "average": 0.2843143341979034
+          "count": 169, 
+          "sum": 48.338617200329686, 
+          "average": 0.28602732071200987
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 48.893914711484435, 
-          "average": 0.27780633358797974
+          "count": 170, 
+          "sum": 47.51479030914137, 
+          "average": 0.279498766524361
         }, 
         "1964": {
           "count": 12, 
@@ -28159,34 +27524,34 @@ development_bar = [
           "average": 0.42245383857611624
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 30.9057642895828, 
-          "average": 0.1981138736511718
+          "count": 149, 
+          "sum": 29.347444949555843, 
+          "average": 0.19696271778225397
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 31.65158766295964, 
-          "average": 0.19906658907521776
+          "count": 152, 
+          "sum": 30.039124040470295, 
+          "average": 0.19762581605572554
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 30.29942825766787, 
-          "average": 0.19422710421581962
+          "count": 151, 
+          "sum": 28.771421247927055, 
+          "average": 0.1905392135624308
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 29.986254613794458, 
-          "average": 0.19345970718577077
+          "count": 149, 
+          "sum": 28.5668607832492, 
+          "average": 0.19172389787415578
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 33.053463886600206, 
-          "average": 0.20032402355515275
+          "count": 158, 
+          "sum": 31.379184604255705, 
+          "average": 0.19860243420415002
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 32.32145891274288, 
-          "average": 0.19951517847372147
+          "count": 155, 
+          "sum": 30.672024954049007, 
+          "average": 0.19788403196160648
         }, 
         "1968": {
           "count": 14, 
@@ -28199,34 +27564,34 @@ development_bar = [
           "average": 0.36610161370020283
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 41.81915206536923, 
-          "average": 0.2362663958495438
+          "count": 170, 
+          "sum": 39.65511606415325, 
+          "average": 0.2332653886126663
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 44.380749754892456, 
-          "average": 0.24655972086051361
+          "count": 173, 
+          "sum": 42.1871168476382, 
+          "average": 0.24385616674935373
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 39.41410891466339, 
-          "average": 0.22522347951236238
+          "count": 169, 
+          "sum": 37.83056074199645, 
+          "average": 0.22384947184613296
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 40.5529329783004, 
-          "average": 0.23041439192216134
+          "count": 170, 
+          "sum": 38.92433101120138, 
+          "average": 0.22896665300706692
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 35.011757041038834, 
-          "average": 0.21612195704344955
+          "count": 155, 
+          "sum": 33.18847035770662, 
+          "average": 0.2141191635981073
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 35.36316612517089, 
-          "average": 0.21964699456627879
+          "count": 155, 
+          "sum": 33.72666561023317, 
+          "average": 0.21759139103376235
         }, 
         "1979": {
           "count": 14, 
@@ -28254,9 +27619,9 @@ development_bar = [
           "average": 0.3406719389591091
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 34.92090286832546, 
-          "average": 0.21556112881682393
+          "count": 155, 
+          "sum": 33.12223024053723, 
+          "average": 0.21369180800346607
         }, 
         "1973": {
           "count": 14, 
@@ -28279,54 +27644,54 @@ development_bar = [
           "average": 0.3600906593215972
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 33.46923794382542, 
-          "average": 0.20162191532424947
+          "count": 159, 
+          "sum": 31.807673415092356, 
+          "average": 0.20004826047227897
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 33.55433636052327, 
-          "average": 0.20712553308964973
+          "count": 155, 
+          "sum": 31.852673328009576, 
+          "average": 0.20550111824522302
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 34.49418465346058, 
-          "average": 0.21033039422841812
+          "count": 157, 
+          "sum": 32.80411861756954, 
+          "average": 0.20894343068515633
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 33.97434255129539, 
-          "average": 0.20590510637148715
+          "count": 158, 
+          "sum": 32.244251357336644, 
+          "average": 0.20407754023630773
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 32.02600405897311, 
-          "average": 0.1976913830800809
+          "count": 155, 
+          "sum": 30.376008408152167, 
+          "average": 0.1959742477945301
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 31.49951814764793, 
-          "average": 0.19564918104129153
+          "count": 154, 
+          "sum": 29.895612689051852, 
+          "average": 0.19412735512371337
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 32.9108315155647, 
-          "average": 0.19945958494281643
+          "count": 158, 
+          "sum": 31.265036442180264, 
+          "average": 0.19787997748215358
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 34.29112328580696, 
-          "average": 0.21037498948347833
+          "count": 156, 
+          "sum": 32.576939090410285, 
+          "average": 0.20882653263083517
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 30.942597882178983, 
-          "average": 0.19219004895763345
+          "count": 154, 
+          "sum": 29.384288743836823, 
+          "average": 0.19080706976517417
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 32.49170511610721, 
-          "average": 0.20056608096362485
+          "count": 155, 
+          "sum": 30.87917615504972, 
+          "average": 0.19922049132290148
         }
       }, 
       "development.[0].Data.Health.Fertility Rate": {
@@ -28336,59 +27701,59 @@ development_bar = [
           "average": 5.111195005460907
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 606.6641858102366, 
-          "average": 3.7218661706149487
+          "count": 156, 
+          "sum": 577.1451874602728, 
+          "average": 3.6996486375658524
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 791.8598508824645, 
-          "average": 4.39922139379147
+          "count": 175, 
+          "sum": 764.9688546845116, 
+          "average": 4.371250598197211
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 779.9333836423039, 
-          "average": 4.332963242457244
+          "count": 175, 
+          "sum": 753.6297922743379, 
+          "average": 4.30645595585336
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 799.0606649460086, 
-          "average": 4.514467033593269
+          "count": 172, 
+          "sum": 771.3197680913645, 
+          "average": 4.484417256345142
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 796.346523573293, 
-          "average": 4.448863260185992
+          "count": 174, 
+          "sum": 768.954768319063, 
+          "average": 4.419280277695762
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 814.5006465634456, 
-          "average": 4.627844582746851
+          "count": 171, 
+          "sum": 786.1318378495677, 
+          "average": 4.597262209646595
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 804.0369256884461, 
-          "average": 4.568391623229807
+          "count": 171, 
+          "sum": 775.9730637527842, 
+          "average": 4.537854173992891
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 840.2238404356731, 
-          "average": 4.747027347094198
+          "count": 171, 
+          "sum": 803.0102346045322, 
+          "average": 4.695966284237029
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 830.705536250125, 
-          "average": 4.693251617232346
+          "count": 172, 
+          "sum": 799.706984942537, 
+          "average": 4.649459214782195
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 846.25166187682, 
-          "average": 4.835723782153256
+          "count": 169, 
+          "sum": 808.7414092713153, 
+          "average": 4.78545212586577
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 844.621111602589, 
-          "average": 4.798983588651074
+          "count": 170, 
+          "sum": 807.2474686776312, 
+          "average": 4.748514521633124
         }, 
         "1964": {
           "count": 12, 
@@ -28431,34 +27796,34 @@ development_bar = [
           "average": 5.45080172286086
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 494.60424367939873, 
-          "average": 3.1705400235858905
+          "count": 149, 
+          "sum": 472.0268328437886, 
+          "average": 3.167965321099253
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 507.7860758360257, 
-          "average": 3.193623118465571
+          "count": 152, 
+          "sum": 484.88691408181876, 
+          "average": 3.1900454873803867
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 480.9176487511119, 
-          "average": 3.0828054407122565
+          "count": 151, 
+          "sum": 463.8581472545822, 
+          "average": 3.071908259964121
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 485.44991018878363, 
-          "average": 3.1319349044437668
+          "count": 149, 
+          "sum": 465.8241874914451, 
+          "average": 3.1263368288016467
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 566.5744849092196, 
-          "average": 3.4337847570255757
+          "count": 158, 
+          "sum": 540.8328443564283, 
+          "average": 3.4229926858001805
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 545.1935114444487, 
-          "average": 3.3653920459533886
+          "count": 155, 
+          "sum": 520.5180385271663, 
+          "average": 3.358180893723654
         }, 
         "1968": {
           "count": 14, 
@@ -28471,34 +27836,34 @@ development_bar = [
           "average": 5.4878757839112415
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 734.5883199810818, 
-          "average": 4.150216497068261
+          "count": 170, 
+          "sum": 702.6647305115215, 
+          "average": 4.133321944185422
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 763.6850236188319, 
-          "average": 4.242694575660176
+          "count": 173, 
+          "sum": 731.1341430489633, 
+          "average": 4.226208919358167
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 696.9814699186165, 
-          "average": 3.9827512566778083
+          "count": 169, 
+          "sum": 668.4949588543458, 
+          "average": 3.9555914725109216
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 715.093446720884, 
-          "average": 4.063030947277752
+          "count": 170, 
+          "sum": 685.8476627143021, 
+          "average": 4.034398015966484
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 624.6064032702055, 
-          "average": 3.8555950819148506
+          "count": 155, 
+          "sum": 593.7362758614595, 
+          "average": 3.8305566184610296
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 630.4190395381263, 
-          "average": 3.915646208311345
+          "count": 155, 
+          "sum": 602.6753401254635, 
+          "average": 3.888228000809442
         }, 
         "1979": {
           "count": 14, 
@@ -28526,9 +27891,9 @@ development_bar = [
           "average": 5.042172871949779
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 613.6876008626273, 
-          "average": 3.7881950670532554
+          "count": 155, 
+          "sum": 583.5253579352478, 
+          "average": 3.7646797286145026
         }, 
         "1973": {
           "count": 14, 
@@ -28551,54 +27916,326 @@ development_bar = [
           "average": 5.419729409806496
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 576.3413269919306, 
-          "average": 3.4719357047706656
+          "count": 159, 
+          "sum": 550.0522044211368, 
+          "average": 3.4594478265480304
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 582.0917787951194, 
-          "average": 3.593159128364934
+          "count": 155, 
+          "sum": 553.8724003923476, 
+          "average": 3.573370325111919
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 586.1453231426462, 
-          "average": 3.5740568484307693
+          "count": 157, 
+          "sum": 558.633531200059, 
+          "average": 3.5581753579621584
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 580.876234594298, 
-          "average": 3.520462027844229
+          "count": 158, 
+          "sum": 554.0221184250933, 
+          "average": 3.506469103956285
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 538.521353145727, 
-          "average": 3.3242058836155977
+          "count": 155, 
+          "sum": 514.3661875238566, 
+          "average": 3.3184915324119775
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 530.3809310573685, 
-          "average": 3.294291497250735
+          "count": 154, 
+          "sum": 506.5839711954338, 
+          "average": 3.289506306463856
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 559.0088719451604, 
-          "average": 3.3879325572433965
+          "count": 158, 
+          "sum": 533.8119528243576, 
+          "average": 3.3785566634453006
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 598.4346266076628, 
-          "average": 3.6713780773476246
+          "count": 156, 
+          "sum": 569.5472278671863, 
+          "average": 3.6509437683793986
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 524.8800471399044, 
-          "average": 3.26012451639692
+          "count": 154, 
+          "sum": 501.35844988254485, 
+          "average": 3.2555743498866536
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 521.8178689403013, 
-          "average": 3.2210979564216125
+          "count": 155, 
+          "sum": 498.59412959506363, 
+          "average": 3.2167363199681525
+        }
+      }, 
+      "development.[0].Data.Urban Development.Urban Population Percent": {
+        "1974": {
+          "count": 14, 
+          "sum": 561.6195990332567, 
+          "average": 40.115685645232624
+        }, 
+        "1997": {
+          "count": 156, 
+          "sum": 7949.394471813063, 
+          "average": 50.95765687059655
+        }, 
+        "1988": {
+          "count": 175, 
+          "sum": 8266.440242559927, 
+          "average": 47.236801386056726
+        }, 
+        "1989": {
+          "count": 175, 
+          "sum": 8346.81390810509, 
+          "average": 47.69607947488623
+        }, 
+        "1986": {
+          "count": 172, 
+          "sum": 7903.562825092222, 
+          "average": 45.950946657512915
+        }, 
+        "1987": {
+          "count": 174, 
+          "sum": 8172.073905314243, 
+          "average": 46.96594198456461
+        }, 
+        "1984": {
+          "count": 171, 
+          "sum": 7718.163015415344, 
+          "average": 45.13545623049906
+        }, 
+        "1985": {
+          "count": 171, 
+          "sum": 7795.416437866687, 
+          "average": 45.58723063079933
+        }, 
+        "1982": {
+          "count": 171, 
+          "sum": 7606.932098942348, 
+          "average": 44.48498303475055
+        }, 
+        "1983": {
+          "count": 172, 
+          "sum": 7698.669013086401, 
+          "average": 44.759703564455805
+        }, 
+        "1980": {
+          "count": 169, 
+          "sum": 7330.207190410908, 
+          "average": 43.37400704385149
+        }, 
+        "1981": {
+          "count": 170, 
+          "sum": 7420.765183616679, 
+          "average": 43.65155990362752
+        }, 
+        "1964": {
+          "count": 12, 
+          "sum": 475.9741133983567, 
+          "average": 39.66450944986306
+        }, 
+        "1965": {
+          "count": 12, 
+          "sum": 483.7438744639941, 
+          "average": 40.31198953866617
+        }, 
+        "1966": {
+          "count": 13, 
+          "sum": 502.0392270097417, 
+          "average": 38.618402077672435
+        }, 
+        "1967": {
+          "count": 13, 
+          "sum": 509.24725468264484, 
+          "average": 39.172865744818836
+        }, 
+        "1960": {
+          "count": 14, 
+          "sum": 677.6998856039701, 
+          "average": 48.40713468599787
+        }, 
+        "1961": {
+          "count": 12, 
+          "sum": 453.08577120794035, 
+          "average": 37.75714760066169
+        }, 
+        "1962": {
+          "count": 12, 
+          "sum": 460.3347542555542, 
+          "average": 38.361229521296174
+        }, 
+        "1963": {
+          "count": 12, 
+          "sum": 468.2092386138255, 
+          "average": 39.01743655115212
+        }, 
+        "2011": {
+          "count": 149, 
+          "sum": 8099.831126792536, 
+          "average": 54.36128273015126
+        }, 
+        "2010": {
+          "count": 152, 
+          "sum": 8229.45739329374, 
+          "average": 54.14116706114304
+        }, 
+        "2013": {
+          "count": 151, 
+          "sum": 8330.096037838968, 
+          "average": 55.16619892608588
+        }, 
+        "2012": {
+          "count": 149, 
+          "sum": 8150.478642935642, 
+          "average": 54.701198945876804
+        }, 
+        "2003": {
+          "count": 158, 
+          "sum": 8244.139127944301, 
+          "average": 52.17809574648293
+        }, 
+        "2005": {
+          "count": 155, 
+          "sum": 8122.996607215875, 
+          "average": 52.40642972397335
+        }, 
+        "1968": {
+          "count": 14, 
+          "sum": 521.3237658100937, 
+          "average": 37.23741184357812
+        }, 
+        "1969": {
+          "count": 14, 
+          "sum": 528.4679641856189, 
+          "average": 37.74771172754422
+        }, 
+        "1991": {
+          "count": 170, 
+          "sum": 8274.904879674095, 
+          "average": 48.67591105690643
+        }, 
+        "1990": {
+          "count": 173, 
+          "sum": 8344.347267647949, 
+          "average": 48.23322120027716
+        }, 
+        "1993": {
+          "count": 169, 
+          "sum": 8403.127146712855, 
+          "average": 49.72264583853759
+        }, 
+        "1992": {
+          "count": 170, 
+          "sum": 8360.283856486181, 
+          "average": 49.17814033227165
+        }, 
+        "1995": {
+          "count": 155, 
+          "sum": 7859.84837897828, 
+          "average": 50.7086992192147
+        }, 
+        "1994": {
+          "count": 155, 
+          "sum": 7786.119187898975, 
+          "average": 50.23302701870305
+        }, 
+        "1979": {
+          "count": 14, 
+          "sum": 591.5628444994155, 
+          "average": 42.2544888928154
+        }, 
+        "1978": {
+          "count": 14, 
+          "sum": 585.7960216192904, 
+          "average": 41.84257297280646
+        }, 
+        "1977": {
+          "count": 14, 
+          "sum": 580.0119083344349, 
+          "average": 41.42942202388821
+        }, 
+        "1976": {
+          "count": 14, 
+          "sum": 574.0375011127074, 
+          "average": 41.002678650907676
+        }, 
+        "1975": {
+          "count": 14, 
+          "sum": 567.8645440701146, 
+          "average": 40.56175314786532
+        }, 
+        "1996": {
+          "count": 155, 
+          "sum": 7878.9353185243035, 
+          "average": 50.83184076467292
+        }, 
+        "1973": {
+          "count": 14, 
+          "sum": 555.4561678929828, 
+          "average": 39.675440563784484
+        }, 
+        "1972": {
+          "count": 14, 
+          "sum": 549.2955154344663, 
+          "average": 39.235393959604735
+        }, 
+        "1971": {
+          "count": 14, 
+          "sum": 542.7728293052817, 
+          "average": 38.76948780752012
+        }, 
+        "1970": {
+          "count": 14, 
+          "sum": 535.5636966783807, 
+          "average": 38.25454976274147
+        }, 
+        "2002": {
+          "count": 159, 
+          "sum": 8273.10195634563, 
+          "average": 52.03208777575868
+        }, 
+        "1999": {
+          "count": 155, 
+          "sum": 8024.854460888513, 
+          "average": 51.773254586377504
+        }, 
+        "2000": {
+          "count": 157, 
+          "sum": 8133.390004266442, 
+          "average": 51.80503187430854
+        }, 
+        "2001": {
+          "count": 158, 
+          "sum": 8206.554381820224, 
+          "average": 51.94021760645712
+        }, 
+        "2006": {
+          "count": 155, 
+          "sum": 8174.277766171197, 
+          "average": 52.7372759107819
+        }, 
+        "2007": {
+          "count": 154, 
+          "sum": 8137.195934628309, 
+          "average": 52.838934640443576
+        }, 
+        "2004": {
+          "count": 158, 
+          "sum": 8295.396324340094, 
+          "average": 52.50250838189936
+        }, 
+        "1998": {
+          "count": 156, 
+          "sum": 8019.512362197212, 
+          "average": 51.40713052690519
+        }, 
+        "2008": {
+          "count": 154, 
+          "sum": 8188.386325558141, 
+          "average": 53.171339776351566
+        }, 
+        "2009": {
+          "count": 155, 
+          "sum": 8320.187103477352, 
+          "average": 53.67862647404745
         }
       }, 
       "development.[0].Data.Rural Development.Agricultural Land Percent": {
@@ -28608,59 +28245,59 @@ development_bar = [
           "average": 29.65327880040363
         }, 
         "1997": {
-          "count": 163, 
-          "sum": 6318.201868659525, 
-          "average": 38.761974654352926
+          "count": 156, 
+          "sum": 6007.679996036794, 
+          "average": 38.510769205364085
         }, 
         "1988": {
-          "count": 180, 
-          "sum": 6824.850307237409, 
-          "average": 37.91583504020782
+          "count": 175, 
+          "sum": 6602.885230676832, 
+          "average": 37.73077274672474
         }, 
         "1989": {
-          "count": 180, 
-          "sum": 6842.4435379837005, 
-          "average": 38.01357521102055
+          "count": 175, 
+          "sum": 6620.013125621039, 
+          "average": 37.82864643212021
         }, 
         "1986": {
-          "count": 177, 
-          "sum": 6738.151272348235, 
-          "average": 38.068651256204724
+          "count": 172, 
+          "sum": 6520.2975901064965, 
+          "average": 37.908706919223825
         }, 
         "1987": {
-          "count": 179, 
-          "sum": 6784.35548787317, 
-          "average": 37.901427306554034
+          "count": 174, 
+          "sum": 6563.537734360669, 
+          "average": 37.72148123195788
         }, 
         "1984": {
-          "count": 176, 
-          "sum": 6675.379287157821, 
-          "average": 37.9282914043058
+          "count": 171, 
+          "sum": 6460.703208540069, 
+          "average": 37.78189010842146
         }, 
         "1985": {
-          "count": 176, 
-          "sum": 6710.78743795136, 
-          "average": 38.1294740792691
+          "count": 171, 
+          "sum": 6494.779585594634, 
+          "average": 37.98116716722009
         }, 
         "1982": {
-          "count": 177, 
-          "sum": 6715.342179412962, 
-          "average": 37.939786324366985
+          "count": 171, 
+          "sum": 6532.35764952463, 
+          "average": 38.20092192704458
         }, 
         "1983": {
-          "count": 177, 
-          "sum": 6689.768814555198, 
-          "average": 37.795304037034995
+          "count": 172, 
+          "sum": 6549.0139983874315, 
+          "average": 38.07566278132226
         }, 
         "1980": {
-          "count": 175, 
-          "sum": 6611.490146448582, 
-          "average": 37.779943693991875
+          "count": 169, 
+          "sum": 6428.858123723529, 
+          "average": 38.04058061374868
         }, 
         "1981": {
-          "count": 176, 
-          "sum": 6725.865337867344, 
-          "average": 38.215143965155356
+          "count": 170, 
+          "sum": 6543.0289422679425, 
+          "average": 38.48840554275259
         }, 
         "1964": {
           "count": 12, 
@@ -28703,34 +28340,34 @@ development_bar = [
           "average": 28.623841047842358
         }, 
         "2011": {
-          "count": 156, 
-          "sum": 6198.2486190366435, 
-          "average": 39.73236294254257
+          "count": 149, 
+          "sum": 5879.08413213111, 
+          "average": 39.456940484101395
         }, 
         "2010": {
-          "count": 159, 
-          "sum": 6224.691336122312, 
-          "average": 39.1490021139768
+          "count": 152, 
+          "sum": 5911.319822007905, 
+          "average": 38.890261986894096
         }, 
         "2013": {
-          "count": 156, 
-          "sum": 6113.889665600674, 
-          "average": 39.19160042051715
+          "count": 151, 
+          "sum": 5874.167879202699, 
+          "average": 38.90177403445496
         }, 
         "2012": {
-          "count": 155, 
-          "sum": 6116.595332304974, 
-          "average": 39.46190536970953
+          "count": 149, 
+          "sum": 5855.451931806098, 
+          "average": 39.29833511279263
         }, 
         "2003": {
-          "count": 165, 
-          "sum": 6491.782495270898, 
-          "average": 39.3441363349751
+          "count": 158, 
+          "sum": 6164.407613643694, 
+          "average": 39.015238061035994
         }, 
         "2005": {
-          "count": 162, 
-          "sum": 6431.424496655758, 
-          "average": 39.70015121392443
+          "count": 155, 
+          "sum": 6107.634420222704, 
+          "average": 39.40409303369485
         }, 
         "1968": {
           "count": 14, 
@@ -28743,34 +28380,34 @@ development_bar = [
           "average": 28.829520989323203
         }, 
         "1991": {
-          "count": 177, 
-          "sum": 6728.929414615867, 
-          "average": 38.01655036506143
+          "count": 170, 
+          "sum": 6421.484174310632, 
+          "average": 37.77343631947433
         }, 
         "1990": {
-          "count": 180, 
-          "sum": 6819.312920616549, 
-          "average": 37.885071781203045
+          "count": 173, 
+          "sum": 6511.937506797483, 
+          "average": 37.64125726472535
         }, 
         "1993": {
-          "count": 175, 
-          "sum": 6626.216493113035, 
-          "average": 37.864094246360196
+          "count": 169, 
+          "sum": 6374.858317577605, 
+          "average": 37.721055133595286
         }, 
         "1992": {
-          "count": 176, 
-          "sum": 6711.344194335928, 
-          "average": 38.13263746781775
+          "count": 170, 
+          "sum": 6460.1170455588035, 
+          "average": 38.000688503287066
         }, 
         "1995": {
-          "count": 162, 
-          "sum": 6204.128444731609, 
-          "average": 38.297089165009915
+          "count": 155, 
+          "sum": 5900.885151223746, 
+          "average": 38.07022678208867
         }, 
         "1994": {
-          "count": 161, 
-          "sum": 6180.5321473836475, 
-          "average": 38.38839843095432
+          "count": 155, 
+          "sum": 5929.173511842739, 
+          "average": 38.25273233446928
         }, 
         "1979": {
           "count": 14, 
@@ -28798,9 +28435,9 @@ development_bar = [
           "average": 29.90226076792279
         }, 
         "1996": {
-          "count": 162, 
-          "sum": 6235.910311230613, 
-          "average": 38.4932735261149
+          "count": 155, 
+          "sum": 5931.466883461811, 
+          "average": 38.2675282803988
         }, 
         "1973": {
           "count": 14, 
@@ -28823,54 +28460,54 @@ development_bar = [
           "average": 28.934946406221723
         }, 
         "2002": {
-          "count": 166, 
-          "sum": 6481.3733675535395, 
-          "average": 39.04441787682857
+          "count": 159, 
+          "sum": 6158.8645831825415, 
+          "average": 38.734997378506556
         }, 
         "1999": {
-          "count": 162, 
-          "sum": 6258.111056762181, 
-          "average": 38.63031516519865
+          "count": 155, 
+          "sum": 5944.466838468064, 
+          "average": 38.351398957858486
         }, 
         "2000": {
-          "count": 164, 
-          "sum": 6321.628281630994, 
-          "average": 38.54651391238411
+          "count": 157, 
+          "sum": 6006.478513463072, 
+          "average": 38.257824926516385
         }, 
         "2001": {
-          "count": 165, 
-          "sum": 6396.861067153878, 
-          "average": 38.76885495244774
+          "count": 158, 
+          "sum": 6077.4006301487625, 
+          "average": 38.46456095030861
         }, 
         "2006": {
-          "count": 162, 
-          "sum": 6376.271814681268, 
-          "average": 39.35970255976091
+          "count": 155, 
+          "sum": 6057.712079136418, 
+          "average": 39.08201341378334
         }, 
         "2007": {
-          "count": 161, 
-          "sum": 6390.735088170959, 
-          "average": 39.69400675882583
+          "count": 154, 
+          "sum": 6075.225588656349, 
+          "average": 39.4495168094568
         }, 
         "2004": {
-          "count": 165, 
-          "sum": 6464.648555734162, 
-          "average": 39.17968821657067
+          "count": 158, 
+          "sum": 6137.37006493683, 
+          "average": 38.844114335043216
         }, 
         "1998": {
-          "count": 163, 
-          "sum": 6284.618338939549, 
-          "average": 38.5559407296905
+          "count": 156, 
+          "sum": 5971.976078400203, 
+          "average": 38.28189793846283
         }, 
         "2008": {
-          "count": 161, 
-          "sum": 6344.011604810115, 
-          "average": 39.40379878764047
+          "count": 154, 
+          "sum": 6030.839273496596, 
+          "average": 39.16129398374413
         }, 
         "2009": {
-          "count": 162, 
-          "sum": 6413.349974861648, 
-          "average": 39.58858009173856
+          "count": 155, 
+          "sum": 6100.164717123199, 
+          "average": 39.35590140079483
         }
       }
     }, 
