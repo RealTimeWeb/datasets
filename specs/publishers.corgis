@@ -34,11 +34,11 @@ interfaces:
         sql: SELECT data FROM publishers LIMIT {hardware}
         post: json()
 structures:
-    "publishers.[0].daily.amazon revenue": The amount of money that Amazon made per day on this book, in dollars.
-    "publishers.[0].daily.author revenue": The amount of money that the author made per day on this book, in dollars.
-    "publishers.[0].daily.publisher revenue": The amount of money that the publisher made per day on this book, in dollars.
-    "publishers.[0].daily.gross sales": The total amount of money that was made per day on this book, in dollars.
-    "publishers.[0].daily.units sold": The number of books sold per day.
+    "publishers.[0].daily average.amazon revenue": The amount of money that Amazon made per day on this book, in dollars.
+    "publishers.[0].daily average.author revenue": The amount of money that the author made per day on this book, in dollars.
+    "publishers.[0].daily average.publisher revenue": The amount of money that the publisher made per day on this book, in dollars.
+    "publishers.[0].daily average.gross sales": The total amount of money that was made per day on this book, in dollars.
+    "publishers.[0].daily average.units sold": The number of books sold per day.
     "publishers.[0].genre": The genre of the book, either "fiction", "nonfiction", "genre fiction", "children", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.
     "publishers.[0].publisher.name": The name of the publisher.
     "publishers.[0].publisher.type": The type, or size, of the publisher (e.g, "indie", "small", "big five", etc.)

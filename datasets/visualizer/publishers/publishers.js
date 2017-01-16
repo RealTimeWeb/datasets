@@ -1,6 +1,8 @@
 publishers = [
   {
-    "type": "number", 
+    "comment": "The amount of money that Amazon made per day on this book, in dollars.", 
+    "index": false, 
+    "name": "publishers.[0].daily average.amazon revenue", 
     "data": [
       395.7525, 
       386.1, 
@@ -12642,12 +12644,13 @@ publishers = [
       0.758, 
       2.948
     ], 
-    "name": "publishers.[0].daily average.amazon revenue", 
     "pretty": "Daily Average: Amazon Revenue", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The amount of money that the author made per day on this book, in dollars.", 
+    "index": false, 
+    "name": "publishers.[0].daily average.author revenue", 
     "data": [
       213.0975, 
       207.9, 
@@ -25289,12 +25292,13 @@ publishers = [
       0.758, 
       2.948
     ], 
-    "name": "publishers.[0].daily average.author revenue", 
     "pretty": "Daily Average: Author Revenue", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The total amount of money that was made per day on this book, in dollars.", 
+    "index": false, 
+    "name": "publishers.[0].daily average.gross sales", 
     "data": [
       608.85, 
       594.0, 
@@ -37936,12 +37940,13 @@ publishers = [
       3.79, 
       14.74
     ], 
-    "name": "publishers.[0].daily average.gross sales", 
     "pretty": "Daily Average: Gross Sales", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The amount of money that the publisher made per day on this book, in dollars.", 
+    "index": false, 
+    "name": "publishers.[0].daily average.publisher revenue", 
     "data": [
       0.0, 
       0.0, 
@@ -50583,12 +50588,13 @@ publishers = [
       2.274, 
       8.844
     ], 
-    "name": "publishers.[0].daily average.publisher revenue", 
     "pretty": "Daily Average: Publisher Revenue", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of books sold per day.", 
+    "index": false, 
+    "name": "publishers.[0].daily average.units sold", 
     "data": [
       615, 
       600, 
@@ -63230,9 +63236,8 @@ publishers = [
       1, 
       1
     ], 
-    "name": "publishers.[0].daily average.units sold", 
     "pretty": "Daily Average: Units Sold", 
-    "index": false
+    "type": "number"
   }, 
   {
     "comment": "The genre of the book, either \"fiction\", \"nonfiction\", \"genre fiction\", \"children\", \"comics\", or \"foreign language\". Some books originally had more than one genre, but this was simplified down to the most prominent genre.", 

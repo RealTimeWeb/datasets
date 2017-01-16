@@ -652,7 +652,8 @@ $(document).ready(function () {
                   mainModel.selected.category().pretty : 
                   mainModel.selected.chart().id == 'line' ? 
                   //(mainModel.selected.dataset().order) : 
-                  (mainModel.selected.bar_dataset().data.filter( cur => cur.name != mainModel.selected.filter() ).reduce( (pre, cur) => pre+" / "+cur.pretty, "").substring(3)) :
+                  (mainModel.selected.dataset().order !== "" ? mainModel.selected.dataset().order :
+                  (mainModel.selected.bar_dataset().data.filter( cur => cur.name != mainModel.selected.filter() ).reduce( (pre, cur) => pre+" / "+cur.pretty, "").substring(3))) :
                   mainModel.selected.first().pretty;
         var y_axis_label = mainModel.selected.chart().id == 'hist' ? 
                   'Number of '+mainModel.selected.dataset().row+"s": 

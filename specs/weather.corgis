@@ -60,8 +60,25 @@ interfaces:
         # sql: SELECT data FROM weather WHERE year=? LIMIT {hardware}
         # post: json()
     # returns: list[report]
-structures:
-    "weather.[0].Weather Conditions": 'This is a list of strings. An empty list represents no significant weather to report for that day'
-    "weather.[0].Data.Precipitation": 'Inches'
-    "weather.[0].Data.Temperature": 'Degrees Farenheit'
-    "weather.[0].": 'Miles per Hour'
+comments:
+    Data:
+        Temperature:
+            Avg Temp: The average recorded temperature on this day, in degrees Farenheit.
+            Min Temp: The lowest recorded temperature on this day, in degrees Farenheit.
+            Max Temp: The highest recorded temperature on this day, in degrees Farenheit.
+        Wind:
+            Avg Wind: The average windspeed for that day, in Miles per Hour.
+            High Gust: A gust is a sudden burst of wind (less than 20 seconds long), which is often much stronger than the average windspeed. This is reported in Miles per Hour.
+            High Wind: The highest windspeed for that day, in Miles per Hour.
+        Precipitation: The average amount of rain, in inches.
+    Weather Conditions: This is a list of strings. An empty list represents no significant weather to report for that day.
+    Date:
+        Day: The day of the month that this report was made.
+        Full: A full string representation of the date this report was made.
+        Month: The month of the year that this report was made.
+        Year: The year that this report was made.
+    Station:
+        City: The city that the reporting station sends its data to. Note that the recording station itself might actually be in a different city.
+        Code: The unique code representing this station.
+        Location: The exact location of this recording station. Note that the recording station itself might be in a different location than where it sends its data.
+        State: The state that the reporting station sends its data to. Note that the recording station itself might actually be in a different state.

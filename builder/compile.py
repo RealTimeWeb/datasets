@@ -184,7 +184,7 @@ class Compiler(object):
         metadata.version = self.recommend_field("metadata", "version", raw, 1, int, "Assuming version is 1.")
         metadata.hardware = self.typecheck_field("metadata", "hardware", raw, 1000, int)
         metadata.description = self.recommend_field("metadata", "description", raw, {}, dict, "There will be no top-level documentation!")
-        metadata.outliers = self.recommend_field("metadata", "outliers", raw, False, bool, "Removing outliers automatically.")
+        metadata.outliers = self.typecheck_field("metadata", "outliers", raw, False, bool)
         if 'overview' not in metadata.description:
             metadata.description['overview'] = ""
         if 'short' not in metadata.description:
@@ -297,7 +297,7 @@ class Compiler(object):
             local.name = self.require_field(location, "name", data, "", str)
             location = "{}.{}".format(in_location, clean_identifier(local.name))
             local.row = self.typecheck_field(location, "row", data, local.name, str)
-            local.order = self.typecheck_field(location, "order", data, "Index", str)
+            local.order = self.typecheck_field(location, "order", data, "", str)
             local.file = self.require_field(location, "file", data, "", str)
             local.file = os.path.join(self.path, local.file)
             local.type = local.file.split(".")[-1].lower()

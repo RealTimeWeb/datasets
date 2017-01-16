@@ -10,13 +10,15 @@ metadata:
         overview: >
             Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art.
             The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation and performance.
+            This dataset is not ordered in any particular way.
             
             This dataset has metadata about many pieces from their collection.
         citation: http://www.tate.org.uk/about/our-work/collection/about-the-collection
 local:
   - file: tate.json
     name: tate
-    row: art
+    row: artwork
+    order: Pieces of Art (Unordered)
     indexes:
       - name: gender
         jsonpath: tate.[0].artist.gender

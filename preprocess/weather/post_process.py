@@ -89,5 +89,7 @@ for row in weather_data:
 
 weather_data = [row for row in reversed(weather_data) if row['Station']['Code'] not in KILL_STATIONS]
 
+weather_data = sorted(weather_data, key= lambda r: (r['Date']['Full'], r['Station']['Code']))
+
 with open('weather.json','w') as new_file:
     json.dump(weather_data, new_file)
