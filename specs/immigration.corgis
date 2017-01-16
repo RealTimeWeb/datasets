@@ -27,3 +27,23 @@ interfaces:
         sql: SELECT data FROM immigration
         post: json()
     description: Returns data about immigration from all the years and countries.
+comments:
+    Country: The country that these immigrants came from to USA, or are going to from the USA.
+    Year: The year that this immigration data comes from.
+    Data:
+        Legal permanant residences:
+            Birth: Lawful permanent residents (LPRs), also known as "green card" holders, are non-citizens who are lawfully authorized to live permanently within the United States. This is the number that were from the associated country where they were originally born.
+            Last Residence: Lawful permanent residents (LPRs), also known as "green card" holders, are non-citizens who are lawfully authorized to live permanently within the United States. This is the number that had their last residence in the associated country.
+        Enforcement:
+            Apprehended: The number of aliens who entered without inspection between ports of entry and are apprehended by U.S. Border Patrol (USBP). 
+            Criminal: The number of aliens who were removed from the US for having prior criminal convictions (e.g., immigration-related offenses, dangerous drug crimes, criminal traffic offenses, and assault).
+            Inadmissable:  The number of aliens who were ineligible to receive a visa and ineligible to be admitted to the United States.
+            Non-criminal: The number of aliens who were removed from the US without a prior criminal conviction (but were present in the USA illegaly).
+        Naturalizations (Birth): Naturalization is the process by which U.S. citizenship is granted to a foreign citizen or national after he or she fulfills the requirements established by Congress in the Immigration and Nationality Act (INA). This is the number that became naturalized in this year from the associated country. Note that this is not the number of naturally-born citizens, which is a different form of citizenship.
+        Nonimmigrant Admissions:
+            Birth: Nonimmigrants are foreign nationals granted temporary admission into the United States. The major purposes for which nonimmigrant admission may be authorized include temporary visits for business or pleasure, academic or vocational study, temporary employment, or to act as a representative of a foreign government or international organization, among others. This is the number that were entered this year from the associated country.
+            Last Residence: Nonimmigrants are foreign nationals granted temporary admission into the United States. The major purposes for which nonimmigrant admission may be authorized include temporary visits for business or pleasure, academic or vocational study, temporary employment, or to act as a representative of a foreign government or international organization, among others. This is the number that had their last residence in the associated country.
+        Refugees:
+            Affirmative: Refugee status is a form of protection that may be granted to people who meet the definition of refugee and who are of special humanitarian concern to the United States. Refugees are generally people outside of their country who are unable or unwilling to return home because they fear serious harm. This is the number that were granted refugee status from the associated country in this year.
+            Arrived: Refugee status is a form of protection that may be granted to people who meet the definition of refugee and who are of special humanitarian concern to the United States. Refugees are generally people outside of their country who are unable or unwilling to return home because they fear serious harm. This is the number that have arrived from the associated country in this year seeking refugee status and asylum.
+            Defensive Asylum: "Asylum status is a form of protection available to people who: (1) Meet the definition of refugee, (2) Are already in the United States, and (3) Are seeking admission at a port of entry. This is the number of people who have been granted aslyum in the USA from the associated country in this year."

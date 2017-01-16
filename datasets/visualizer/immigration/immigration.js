@@ -1,6 +1,8 @@
 immigration = [
   {
-    "type": "text", 
+    "comment": "The country that these immigrants came from to USA, or are going to from the USA.", 
+    "index": true, 
+    "name": "immigration.[0].Country", 
     "data": [
       "Canada", 
       "East Timor", 
@@ -2573,12 +2575,13 @@ immigration = [
       "French Guiana", 
       "Zambia"
     ], 
-    "name": "immigration.[0].Country", 
     "pretty": "Country: Country", 
-    "index": true
+    "type": "text"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of aliens who entered without inspection between ports of entry and are apprehended by U.S. Border Patrol (USBP).", 
+    "index": false, 
+    "name": "immigration.[0].Data.Enforcement.Apprehended", 
     "data": [
       1486, 
       -1, 
@@ -5151,12 +5154,13 @@ immigration = [
       -1, 
       27
     ], 
-    "name": "immigration.[0].Data.Enforcement.Apprehended", 
     "pretty": "Data Enforcement: Apprehended", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of aliens who were removed from the US for having prior criminal convictions (e.g., immigration-related offenses, dangerous drug crimes, criminal traffic offenses, and assault).", 
+    "index": false, 
+    "name": "immigration.[0].Data.Enforcement.Criminal", 
     "data": [
       462, 
       -1, 
@@ -7729,12 +7733,13 @@ immigration = [
       -1, 
       7
     ], 
-    "name": "immigration.[0].Data.Enforcement.Criminal", 
     "pretty": "Data Enforcement: Criminal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of aliens who were ineligible to receive a visa and ineligible to be admitted to the United States.", 
+    "index": false, 
+    "name": "immigration.[0].Data.Enforcement.Inadmissable", 
     "data": [
       41861, 
       -1, 
@@ -10307,12 +10312,13 @@ immigration = [
       -1, 
       18
     ], 
-    "name": "immigration.[0].Data.Enforcement.Inadmissable", 
     "pretty": "Data Enforcement: Inadmissable", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of aliens who were removed from the US without a prior criminal conviction (but were present in the USA illegaly).", 
+    "index": false, 
+    "name": "immigration.[0].Data.Enforcement.Non-criminal", 
     "data": [
       1099, 
       -1, 
@@ -12885,12 +12891,13 @@ immigration = [
       -1, 
       4
     ], 
-    "name": "immigration.[0].Data.Enforcement.Non-criminal", 
     "pretty": "Data Enforcement: Non-Criminal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Lawful permanent residents (LPRs), also known as \"green card\" holders, are non-citizens who are lawfully authorized to live permanently within the United States. This is the number that were from the associated country where they were originally born.", 
+    "index": false, 
+    "name": "immigration.[0].Data.Legal permanant residences.Birth", 
     "data": [
       21878, 
       -1, 
@@ -15463,12 +15470,13 @@ immigration = [
       -1, 
       441
     ], 
-    "name": "immigration.[0].Data.Legal permanant residences.Birth", 
     "pretty": "Data Legal Permanant Residences: Birth", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Lawful permanent residents (LPRs), also known as \"green card\" holders, are non-citizens who are lawfully authorized to live permanently within the United States. This is the number that had their last residence in the associated country.", 
+    "index": false, 
+    "name": "immigration.[0].Data.Legal permanant residences.Last Residence", 
     "data": [
       29930, 
       -1, 
@@ -18041,12 +18049,13 @@ immigration = [
       -1, 
       -1
     ], 
-    "name": "immigration.[0].Data.Legal permanant residences.Last Residence", 
     "pretty": "Data Legal Permanant Residences: Last Residence", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Nonimmigrants are foreign nationals granted temporary admission into the United States. The major purposes for which nonimmigrant admission may be authorized include temporary visits for business or pleasure, academic or vocational study, temporary employment, or to act as a representative of a foreign government or international organization, among others. This is the number that were entered this year from the associated country.", 
+    "index": false, 
+    "name": "immigration.[0].Data.Nonimmigrant Admissions.Birth", 
     "data": [
       231171, 
       18, 
@@ -20619,12 +20628,13 @@ immigration = [
       -1, 
       5441
     ], 
-    "name": "immigration.[0].Data.Nonimmigrant Admissions.Birth", 
     "pretty": "Data Nonimmigrant Admissions: Birth", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Nonimmigrants are foreign nationals granted temporary admission into the United States. The major purposes for which nonimmigrant admission may be authorized include temporary visits for business or pleasure, academic or vocational study, temporary employment, or to act as a representative of a foreign government or international organization, among others. This is the number that had their last residence in the associated country.", 
+    "index": false, 
+    "name": "immigration.[0].Data.Nonimmigrant Admissions.Last Residence", 
     "data": [
       527264, 
       43, 
@@ -23197,12 +23207,13 @@ immigration = [
       1512, 
       5039
     ], 
-    "name": "immigration.[0].Data.Nonimmigrant Admissions.Last Residence", 
     "pretty": "Data Nonimmigrant Admissions: Last Residence", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Refugee status is a form of protection that may be granted to people who meet the definition of refugee and who are of special humanitarian concern to the United States. Refugees are generally people outside of their country who are unable or unwilling to return home because they fear serious harm. This is the number that were granted refugee status from the associated country in this year.", 
+    "index": false, 
+    "name": "immigration.[0].Data.Refugees.Affirmative", 
     "data": [
       -1, 
       -1, 
@@ -25775,12 +25786,13 @@ immigration = [
       -1, 
       -1
     ], 
-    "name": "immigration.[0].Data.Refugees.Affirmative", 
     "pretty": "Data Refugees: Affirmative", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Refugee status is a form of protection that may be granted to people who meet the definition of refugee and who are of special humanitarian concern to the United States. Refugees are generally people outside of their country who are unable or unwilling to return home because they fear serious harm. This is the number that have arrived from the associated country in this year seeking refugee status and asylum.", 
+    "index": false, 
+    "name": "immigration.[0].Data.Refugees.Arrived", 
     "data": [
       -1, 
       -1, 
@@ -28353,12 +28365,13 @@ immigration = [
       -1, 
       -1
     ], 
-    "name": "immigration.[0].Data.Refugees.Arrived", 
     "pretty": "Data Refugees: Arrived", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Asylum status is a form of protection available to people who: (1) Meet the definition of refugee, (2) Are already in the United States, and (3) Are seeking admission at a port of entry. This is the number of people who have been granted aslyum in the USA from the associated country in this year.", 
+    "index": false, 
+    "name": "immigration.[0].Data.Refugees.Defensive Asylum", 
     "data": [
       4, 
       -1, 
@@ -30931,12 +30944,13 @@ immigration = [
       -1, 
       -1
     ], 
-    "name": "immigration.[0].Data.Refugees.Defensive Asylum", 
     "pretty": "Data Refugees: Defensive Asylum", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "Naturalization is the process by which U.S. citizenship is granted to a foreign citizen or national after he or she fulfills the requirements established by Congress in the Immigration and Nationality Act (INA). This is the number that became naturalized in this year from the associated country. Note that this is not the number of naturally-born citizens, which is a different form of citizenship.", 
+    "index": false, 
+    "name": "immigration.[0].Data.Naturalizations (Birth)", 
     "data": [
       7815, 
       -1, 
@@ -33509,12 +33523,13 @@ immigration = [
       -1, 
       318
     ], 
-    "name": "immigration.[0].Data.Naturalizations (Birth)", 
     "pretty": "Data: Naturalizations (Birth)", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The year that this immigration data comes from.", 
+    "index": true, 
+    "name": "immigration.[0].Year", 
     "data": [
       2005, 
       2005, 
@@ -36087,8 +36102,7 @@ immigration = [
       2014, 
       2014
     ], 
-    "name": "immigration.[0].Year", 
     "pretty": "Year: Year", 
-    "index": true
+    "type": "number"
   }
 ]

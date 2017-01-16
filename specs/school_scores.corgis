@@ -29,3 +29,149 @@ interfaces:
     production:
         sql: SELECT data FROM school_scores
         post: json()
+comments:
+    Academic Subjects:
+        Arts/Music:
+            Average GPA: The average GPA of all students in this state during this year in Arts/Music. Note that this is just the GPA within the subject, not across all academic subjects.
+            Average Years: The average number of years that a student has studied Arts/Music when they took the exam.
+        English:
+            Average GPA: The average GPA of all students in this state during this year in English. Note that this is just the GPA within the subject, not across all academic subjects.
+            Average Years: The average number of years that a student has studied English when they took the exam.
+        Foreign Languages:
+            Average GPA: The average GPA of all students in this state during this year in Foreign Languages. Note that this is just the GPA within the subject, not across all academic subjects.
+            Average Years: The average number of years that a student has studied Foreign Languages when they took the exam.
+        Mathematics:
+            Average GPA: The average GPA of all students in this state during this year in Math. Note that this is just the GPA within the subject, not across all academic subjects.
+            Average Years: The average number of years that a student has studied Math when they took the exam.
+        Natural Sciences:
+            Average GPA: The average GPA of all students in this state during this year in the Natural Sciences. Note that this is just the GPA within the subject, not across all academic subjects.
+            Average Years: The average number of years that a student has studied the Natural Sciences when they took the exam.
+        Social Sciences/History:
+            Average GPA: The average GPA of all students in this state during this year in Social Sciences and History. Note that this is just the GPA within the subject, not across all academic subjects.
+            Average Years: The average number of years that a student has studied Social Sciences and History when they took the exam.
+    Family Income:
+        Less than 20k:
+            Math: The average Math score of students in this state during this year who reported that their family income was in this bracket.
+            Test-takers: The number of test-takers in this state during this year who reported that their family income was in this bracket.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.
+        Between 20-40k:
+            Math: The average Math score of students in this state during this year who reported that their family income was in this bracket.
+            Test-takers: The number of test-takers in this state during this year who reported that their family income was in this bracket.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.
+        Between 40-60k:
+            Math: The average Math score of students in this state during this year who reported that their family income was in this bracket.
+            Test-takers: The number of test-takers in this state during this year who reported that their family income was in this bracket.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.
+        Between 60-80k:
+            Math: The average Math score of students in this state during this year who reported that their family income was in this bracket.
+            Test-takers: The number of test-takers in this state during this year who reported that their family income was in this bracket.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.
+        Between 80-100k:
+            Math: The average Math score of students in this state during this year who reported that their family income was in this bracket.
+            Test-takers: The number of test-takers in this state during this year who reported that their family income was in this bracket.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.
+        More than 100k:
+            Math: The average Math score of students in this state during this year who reported that their family income was in this bracket.
+            Test-takers: The number of test-takers in this state during this year who reported that their family income was in this bracket.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.
+    GPA:
+        A:
+            Math: The average Math score of students in this state during this year who reported this for their high school grade point average.
+            Test-takers: The number of test-takers in this state during this year who reported this for their high school grade point average.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.
+        A minus:
+            Math: The average Math score of students in this state during this year who reported this for their high school grade point average.
+            Test-takers: The number of test-takers in this state during this year who reported this for their high school grade point average.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.
+        A plus:
+            Math: The average Math score of students in this state during this year who reported this for their high school grade point average.
+            Test-takers: The number of test-takers in this state during this year who reported this for their high school grade point average.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.
+        B:
+            Math: The average Math score of students in this state during this year who reported this for their high school grade point average.
+            Test-takers: The number of test-takers in this state during this year who reported this for their high school grade point average.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.
+        C:
+            Math: The average Math score of students in this state during this year who reported this for their high school grade point average.
+            Test-takers: The number of test-takers in this state during this year who reported this for their high school grade point average.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.
+        D or lower:
+            Math: The average Math score of students in this state during this year who reported this for their high school grade point average.
+            Test-takers: The number of test-takers in this state during this year who reported this for their high school grade point average.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.
+        No response:
+            Math: The average Math score of students in this state during this year who reported this for their high school grade point average.
+            Test-takers: The number of test-takers in this state during this year who reported this for their high school grade point average.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.
+    Gender:
+        Female:
+            Math: The average Math score of students in this state during this year who identified as Female.
+            Test-takers: The number of test-takers in this state during this year who identified as Female.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who identified as Female.
+        Male:
+            Math: The average Math score of students in this state during this year who identified as Male.
+            Test-takers: The number of test-takers in this state during this year who identified as Male.
+            Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year who identified as Male.
+    Score Ranges:
+        Between 200 to 300:
+            Math:
+                Females: The number of students in this score range for Math who identified as Female in this state during this year.
+                Males: The number of students in this score range for Math who identified as Male in this state during this year.
+                Total: The number of students in this score range for Math in this state during this year.
+            Verbal:
+                Females: The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.
+                Males: The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.
+                Total: The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.
+        Between 300 to 400:
+            Math:
+                Females: The number of students in this score range for Math who identified as Female in this state during this year.
+                Males: The number of students in this score range for Math who identified as Male in this state during this year.
+                Total: The number of students in this score range for Math in this state during this year.
+            Verbal:
+                Females: The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.
+                Males: The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.
+                Total: The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.
+        Between 400 to 500:
+            Math:
+                Females: The number of students in this score range for Math who identified as Female in this state during this year.
+                Males: The number of students in this score range for Math who identified as Male in this state during this year.
+                Total: The number of students in this score range for Math in this state during this year.
+            Verbal:
+                Females: The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.
+                Males: The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.
+                Total: The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.
+        Between 500 to 600:
+            Math:
+                Females: The number of students in this score range for Math who identified as Female in this state during this year.
+                Males: The number of students in this score range for Math who identified as Male in this state during this year.
+                Total: The number of students in this score range for Math in this state during this year.
+            Verbal:
+                Females: The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.
+                Males: The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.
+                Total: The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.
+        Between 600 to 700:
+            Math:
+                Females: The number of students in this score range for Math who identified as Female in this state during this year.
+                Males: The number of students in this score range for Math who identified as Male in this state during this year.
+                Total: The number of students in this score range for Math in this state during this year.
+            Verbal:
+                Females: The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.
+                Males: The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.
+                Total: The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.
+        Between 700 to 800:
+            Math:
+                Females: The number of students in this score range for Math who identified as Female in this state during this year.
+                Males: The number of students in this score range for Math who identified as Male in this state during this year.
+                Total: The number of students in this score range for Math in this state during this year.
+            Verbal:
+                Females: The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.
+                Males: The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.
+                Total: The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.
+    State:
+        Name: The full name of the state for this report.
+        Code: The two-letter abbreviation of the state for thsi report.
+    Total:
+        Math: The average Math score of students in this state during this year.
+        Test-takers: The number of test-takers in this state during this year.
+        Verbal: The average Verbal (Reading, not Writing) score of students in this state during this year.
+    Year: The year of this report.

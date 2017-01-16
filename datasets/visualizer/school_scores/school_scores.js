@@ -1,6 +1,8 @@
 school_scores = [
   {
-    "type": "number", 
+    "comment": "The average GPA of all students in this state during this year in Arts/Music. Note that this is just the GPA within the subject, not across all academic subjects.", 
+    "index": false, 
+    "name": "school_scores.[0].Academic Subjects.Arts/Music.Average GPA", 
     "data": [
       3.92, 
       3.76, 
@@ -523,12 +525,13 @@ school_scores = [
       3.92, 
       3.93
     ], 
-    "name": "school_scores.[0].Academic Subjects.Arts/Music.Average GPA", 
     "pretty": "Academic Subjects Arts/Music: Average Gpa", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average number of years that a student has studied Arts/Music when they took the exam.", 
+    "index": false, 
+    "name": "school_scores.[0].Academic Subjects.Arts/Music.Average Years", 
     "data": [
       2.2, 
       1.9, 
@@ -1051,12 +1054,13 @@ school_scores = [
       2.4, 
       2.6
     ], 
-    "name": "school_scores.[0].Academic Subjects.Arts/Music.Average Years", 
     "pretty": "Academic Subjects Arts/Music: Average Years", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average GPA of all students in this state during this year in English. Note that this is just the GPA within the subject, not across all academic subjects.", 
+    "index": false, 
+    "name": "school_scores.[0].Academic Subjects.English.Average GPA", 
     "data": [
       3.53, 
       3.35, 
@@ -1579,12 +1583,13 @@ school_scores = [
       3.71, 
       3.77
     ], 
-    "name": "school_scores.[0].Academic Subjects.English.Average GPA", 
     "pretty": "Academic Subjects English: Average Gpa", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average number of years that a student has studied English when they took the exam.", 
+    "index": false, 
+    "name": "school_scores.[0].Academic Subjects.English.Average Years", 
     "data": [
       3.9, 
       3.9, 
@@ -2107,12 +2112,13 @@ school_scores = [
       3.9, 
       4.1
     ], 
-    "name": "school_scores.[0].Academic Subjects.English.Average Years", 
     "pretty": "Academic Subjects English: Average Years", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average GPA of all students in this state during this year in Foreign Languages. Note that this is just the GPA within the subject, not across all academic subjects.", 
+    "index": false, 
+    "name": "school_scores.[0].Academic Subjects.Foreign Languages.Average GPA", 
     "data": [
       3.54, 
       3.34, 
@@ -2635,12 +2641,13 @@ school_scores = [
       3.57, 
       3.72
     ], 
-    "name": "school_scores.[0].Academic Subjects.Foreign Languages.Average GPA", 
     "pretty": "Academic Subjects Foreign Languages: Average Gpa", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average number of years that a student has studied Foreign Languages when they took the exam.", 
+    "index": false, 
+    "name": "school_scores.[0].Academic Subjects.Foreign Languages.Average Years", 
     "data": [
       2.6, 
       2.1, 
@@ -3163,12 +3170,13 @@ school_scores = [
       2.5, 
       3.5
     ], 
-    "name": "school_scores.[0].Academic Subjects.Foreign Languages.Average Years", 
     "pretty": "Academic Subjects Foreign Languages: Average Years", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average GPA of all students in this state during this year in Math. Note that this is just the GPA within the subject, not across all academic subjects.", 
+    "index": false, 
+    "name": "school_scores.[0].Academic Subjects.Mathematics.Average GPA", 
     "data": [
       3.41, 
       3.06, 
@@ -3691,12 +3699,13 @@ school_scores = [
       3.47, 
       3.64
     ], 
-    "name": "school_scores.[0].Academic Subjects.Mathematics.Average GPA", 
     "pretty": "Academic Subjects Mathematics: Average Gpa", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average number of years that a student has studied Math when they took the exam.", 
+    "index": false, 
+    "name": "school_scores.[0].Academic Subjects.Mathematics.Average Years", 
     "data": [
       4.0, 
       3.5, 
@@ -4219,12 +4228,13 @@ school_scores = [
       4.2, 
       4.1
     ], 
-    "name": "school_scores.[0].Academic Subjects.Mathematics.Average Years", 
     "pretty": "Academic Subjects Mathematics: Average Years", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average GPA of all students in this state during this year in the Natural Sciences. Note that this is just the GPA within the subject, not across all academic subjects.", 
+    "index": false, 
+    "name": "school_scores.[0].Academic Subjects.Natural Sciences.Average GPA", 
     "data": [
       3.52, 
       3.25, 
@@ -4747,12 +4757,13 @@ school_scores = [
       3.58, 
       3.7
     ], 
-    "name": "school_scores.[0].Academic Subjects.Natural Sciences.Average GPA", 
     "pretty": "Academic Subjects Natural Sciences: Average Gpa", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average number of years that a student has studied the Natural Sciences when they took the exam.", 
+    "index": false, 
+    "name": "school_scores.[0].Academic Subjects.Natural Sciences.Average Years", 
     "data": [
       3.9, 
       3.2, 
@@ -5275,12 +5286,13 @@ school_scores = [
       3.9, 
       3.9
     ], 
-    "name": "school_scores.[0].Academic Subjects.Natural Sciences.Average Years", 
     "pretty": "Academic Subjects Natural Sciences: Average Years", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average GPA of all students in this state during this year in Social Sciences and History. Note that this is just the GPA within the subject, not across all academic subjects.", 
+    "index": false, 
+    "name": "school_scores.[0].Academic Subjects.Social Sciences/History.Average GPA", 
     "data": [
       3.59, 
       3.39, 
@@ -5803,12 +5815,13 @@ school_scores = [
       3.7, 
       3.76
     ], 
-    "name": "school_scores.[0].Academic Subjects.Social Sciences/History.Average GPA", 
     "pretty": "Academic Subjects Social Sciences/History: Average Gpa", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average number of years that a student has studied Social Sciences and History when they took the exam.", 
+    "index": false, 
+    "name": "school_scores.[0].Academic Subjects.Social Sciences/History.Average Years", 
     "data": [
       3.9, 
       3.4, 
@@ -6331,12 +6344,13 @@ school_scores = [
       3.9, 
       3.8
     ], 
-    "name": "school_scores.[0].Academic Subjects.Social Sciences/History.Average Years", 
     "pretty": "Academic Subjects Social Sciences/History: Average Years", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Between 20-40k.Math", 
     "data": [
       513, 
       492, 
@@ -6859,12 +6873,13 @@ school_scores = [
       468, 
       551
     ], 
-    "name": "school_scores.[0].Family Income.Between 20-40k.Math", 
     "pretty": "Family Income Between 20-40K: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Between 20-40k.Test-takers", 
     "data": [
       324, 
       401, 
@@ -7387,12 +7402,13 @@ school_scores = [
       269, 
       127
     ], 
-    "name": "school_scores.[0].Family Income.Between 20-40k.Test-takers", 
     "pretty": "Family Income Between 20-40K: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Between 20-40k.Verbal", 
     "data": [
       527, 
       500, 
@@ -7915,12 +7931,13 @@ school_scores = [
       481, 
       544
     ], 
-    "name": "school_scores.[0].Family Income.Between 20-40k.Verbal", 
     "pretty": "Family Income Between 20-40K: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Between 40-60k.Math", 
     "data": [
       539, 
       517, 
@@ -8443,12 +8460,13 @@ school_scores = [
       483, 
       596
     ], 
-    "name": "school_scores.[0].Family Income.Between 40-60k.Math", 
     "pretty": "Family Income Between 40-60K: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Between 40-60k.Test-takers", 
     "data": [
       442, 
       539, 
@@ -8971,12 +8989,13 @@ school_scores = [
       294, 
       174
     ], 
-    "name": "school_scores.[0].Family Income.Between 40-60k.Test-takers", 
     "pretty": "Family Income Between 40-60K: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Between 40-60k.Verbal", 
     "data": [
       551, 
       522, 
@@ -9499,12 +9518,13 @@ school_scores = [
       492, 
       579
     ], 
-    "name": "school_scores.[0].Family Income.Between 40-60k.Verbal", 
     "pretty": "Family Income Between 40-60K: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Between 60-80k.Math", 
     "data": [
       550, 
       513, 
@@ -10027,12 +10047,13 @@ school_scores = [
       487, 
       590
     ], 
-    "name": "school_scores.[0].Family Income.Between 60-80k.Math", 
     "pretty": "Family Income Between 60-80K: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Between 60-80k.Test-takers", 
     "data": [
       473, 
       603, 
@@ -10555,12 +10576,13 @@ school_scores = [
       281, 
       172
     ], 
-    "name": "school_scores.[0].Family Income.Between 60-80k.Test-takers", 
     "pretty": "Family Income Between 60-80K: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Between 60-80k.Verbal", 
     "data": [
       564, 
       519, 
@@ -11083,12 +11105,13 @@ school_scores = [
       501, 
       580
     ], 
-    "name": "school_scores.[0].Family Income.Between 60-80k.Verbal", 
     "pretty": "Family Income Between 60-80K: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Between 80-100k.Math", 
     "data": [
       566, 
       528, 
@@ -11611,12 +11634,13 @@ school_scores = [
       503, 
       605
     ], 
-    "name": "school_scores.[0].Family Income.Between 80-100k.Math", 
     "pretty": "Family Income Between 80-100K: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Between 80-100k.Test-takers", 
     "data": [
       475, 
       444, 
@@ -12139,12 +12163,13 @@ school_scores = [
       297, 
       213
     ], 
-    "name": "school_scores.[0].Family Income.Between 80-100k.Test-takers", 
     "pretty": "Family Income Between 80-100K: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Between 80-100k.Verbal", 
     "data": [
       577, 
       534, 
@@ -12667,12 +12692,13 @@ school_scores = [
       511, 
       595
     ], 
-    "name": "school_scores.[0].Family Income.Between 80-100k.Verbal", 
     "pretty": "Family Income Between 80-100K: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Less than 20k.Math", 
     "data": [
       462, 
       464, 
@@ -13195,12 +13221,13 @@ school_scores = [
       448, 
       573
     ], 
-    "name": "school_scores.[0].Family Income.Less than 20k.Math", 
     "pretty": "Family Income Less Than 20K: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Less than 20k.Test-takers", 
     "data": [
       175, 
       191, 
@@ -13723,12 +13750,13 @@ school_scores = [
       159, 
       60
     ], 
-    "name": "school_scores.[0].Family Income.Less than 20k.Test-takers", 
     "pretty": "Family Income Less Than 20K: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.Less than 20k.Verbal", 
     "data": [
       474, 
       467, 
@@ -14251,12 +14279,13 @@ school_scores = [
       455, 
       532
     ], 
-    "name": "school_scores.[0].Family Income.Less than 20k.Verbal", 
     "pretty": "Family Income Less Than 20K: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.More than 100k.Math", 
     "data": [
       588, 
       541, 
@@ -14779,12 +14808,13 @@ school_scores = [
       522, 
       615
     ], 
-    "name": "school_scores.[0].Family Income.More than 100k.Math", 
     "pretty": "Family Income More Than 100K: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.More than 100k.Test-takers", 
     "data": [
       980, 
       540, 
@@ -15307,12 +15337,13 @@ school_scores = [
       696, 
       730
     ], 
-    "name": "school_scores.[0].Family Income.More than 100k.Test-takers", 
     "pretty": "Family Income More Than 100K: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.", 
+    "index": false, 
+    "name": "school_scores.[0].Family Income.More than 100k.Verbal", 
     "data": [
       590, 
       544, 
@@ -15835,12 +15866,13 @@ school_scores = [
       532, 
       603
     ], 
-    "name": "school_scores.[0].Family Income.More than 100k.Verbal", 
     "pretty": "Family Income More Than 100K: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who identified as Female.", 
+    "index": false, 
+    "name": "school_scores.[0].Gender.Female.Math", 
     "data": [
       538, 
       505, 
@@ -16363,12 +16395,13 @@ school_scores = [
       487, 
       585
     ], 
-    "name": "school_scores.[0].Gender.Female.Math", 
     "pretty": "Gender Female: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who identified as Female.", 
+    "index": false, 
+    "name": "school_scores.[0].Gender.Female.Test-takers", 
     "data": [
       2072, 
       2161, 
@@ -16891,12 +16924,13 @@ school_scores = [
       1451, 
       1219
     ], 
-    "name": "school_scores.[0].Gender.Female.Test-takers", 
     "pretty": "Gender Female: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who identified as Female.", 
+    "index": false, 
+    "name": "school_scores.[0].Gender.Female.Verbal", 
     "data": [
       561, 
       521, 
@@ -17419,12 +17453,13 @@ school_scores = [
       506, 
       586
     ], 
-    "name": "school_scores.[0].Gender.Female.Verbal", 
     "pretty": "Gender Female: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who identified as Male.", 
+    "index": false, 
+    "name": "school_scores.[0].Gender.Male.Math", 
     "data": [
       582, 
       535, 
@@ -17947,12 +17982,13 @@ school_scores = [
       513, 
       627
     ], 
-    "name": "school_scores.[0].Gender.Male.Math", 
     "pretty": "Gender Male: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who identified as Male.", 
+    "index": false, 
+    "name": "school_scores.[0].Gender.Male.Test-takers", 
     "data": [
       1913, 
       1835, 
@@ -18475,12 +18511,13 @@ school_scores = [
       1050, 
       1058
     ], 
-    "name": "school_scores.[0].Gender.Male.Test-takers", 
     "pretty": "Gender Male: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who identified as Male.", 
+    "index": false, 
+    "name": "school_scores.[0].Gender.Male.Verbal", 
     "data": [
       574, 
       526, 
@@ -19003,12 +19040,13 @@ school_scores = [
       512, 
       597
     ], 
-    "name": "school_scores.[0].Gender.Male.Verbal", 
     "pretty": "Gender Male: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.A minus.Math", 
     "data": [
       569, 
       544, 
@@ -19531,12 +19569,13 @@ school_scores = [
       478, 
       585
     ], 
-    "name": "school_scores.[0].GPA.A minus.Math", 
     "pretty": "Gpa A Minus: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.A minus.Test-takers", 
     "data": [
       724, 
       673, 
@@ -20059,12 +20098,13 @@ school_scores = [
       405, 
       375
     ], 
-    "name": "school_scores.[0].GPA.A minus.Test-takers", 
     "pretty": "Gpa A Minus: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.A minus.Verbal", 
     "data": [
       575, 
       546, 
@@ -20587,12 +20627,13 @@ school_scores = [
       488, 
       570
     ], 
-    "name": "school_scores.[0].GPA.A minus.Verbal", 
     "pretty": "Gpa A Minus: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.A plus.Math", 
     "data": [
       622, 
       600, 
@@ -21115,12 +21156,13 @@ school_scores = [
       559, 
       668
     ], 
-    "name": "school_scores.[0].GPA.A plus.Math", 
     "pretty": "Gpa A Plus: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.A plus.Test-takers", 
     "data": [
       563, 
       173, 
@@ -21643,12 +21685,13 @@ school_scores = [
       551, 
       430
     ], 
-    "name": "school_scores.[0].GPA.A plus.Test-takers", 
     "pretty": "Gpa A Plus: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.A plus.Verbal", 
     "data": [
       623, 
       604, 
@@ -22171,12 +22214,13 @@ school_scores = [
       565, 
       655
     ], 
-    "name": "school_scores.[0].GPA.A plus.Verbal", 
     "pretty": "Gpa A Plus: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.A.Math", 
     "data": [
       600, 
       580, 
@@ -22699,12 +22743,13 @@ school_scores = [
       516, 
       635
     ], 
-    "name": "school_scores.[0].GPA.A.Math", 
     "pretty": "Gpa A: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.A.Test-takers", 
     "data": [
       1032, 
       671, 
@@ -23227,12 +23272,13 @@ school_scores = [
       816, 
       876
     ], 
-    "name": "school_scores.[0].GPA.A.Test-takers", 
     "pretty": "Gpa A: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.A.Verbal", 
     "data": [
       608, 
       578, 
@@ -23755,12 +23801,13 @@ school_scores = [
       524, 
       621
     ], 
-    "name": "school_scores.[0].GPA.A.Verbal", 
     "pretty": "Gpa A: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.B.Math", 
     "data": [
       514, 
       492, 
@@ -24283,12 +24330,13 @@ school_scores = [
       446, 
       527
     ], 
-    "name": "school_scores.[0].GPA.B.Math", 
     "pretty": "Gpa B: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.B.Test-takers", 
     "data": [
       1253, 
       1622, 
@@ -24811,12 +24859,13 @@ school_scores = [
       584, 
       418
     ], 
-    "name": "school_scores.[0].GPA.B.Test-takers", 
     "pretty": "Gpa B: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.B.Verbal", 
     "data": [
       525, 
       499, 
@@ -25339,12 +25388,13 @@ school_scores = [
       463, 
       515
     ], 
-    "name": "school_scores.[0].GPA.B.Verbal", 
     "pretty": "Gpa B: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.C.Math", 
     "data": [
       436, 
       466, 
@@ -25867,12 +25917,13 @@ school_scores = [
       401, 
       466
     ], 
-    "name": "school_scores.[0].GPA.C.Math", 
     "pretty": "Gpa C: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.C.Test-takers", 
     "data": [
       188, 
       418, 
@@ -26395,12 +26446,13 @@ school_scores = [
       80, 
       47
     ], 
-    "name": "school_scores.[0].GPA.C.Test-takers", 
     "pretty": "Gpa C: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.C.Verbal", 
     "data": [
       451, 
       472, 
@@ -26923,12 +26975,13 @@ school_scores = [
       414, 
       449
     ], 
-    "name": "school_scores.[0].GPA.C.Verbal", 
     "pretty": "Gpa C: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.D or lower.Math", 
     "data": [
       0, 
       424, 
@@ -27451,12 +27504,13 @@ school_scores = [
       0, 
       0
     ], 
-    "name": "school_scores.[0].GPA.D or lower.Math", 
     "pretty": "Gpa D Or Lower: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.D or lower.Test-takers", 
     "data": [
       0, 
       12, 
@@ -27979,12 +28033,13 @@ school_scores = [
       1, 
       4
     ], 
-    "name": "school_scores.[0].GPA.D or lower.Test-takers", 
     "pretty": "Gpa D Or Lower: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.D or lower.Verbal", 
     "data": [
       0, 
       466, 
@@ -28507,12 +28562,13 @@ school_scores = [
       0, 
       0
     ], 
-    "name": "school_scores.[0].GPA.D or lower.Verbal", 
     "pretty": "Gpa D Or Lower: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.No response.Math", 
     "data": [
       0, 
       0, 
@@ -29035,12 +29091,13 @@ school_scores = [
       454, 
       515
     ], 
-    "name": "school_scores.[0].GPA.No response.Math", 
     "pretty": "Gpa No Response: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.No response.Test-takers", 
     "data": [
       225, 
       427, 
@@ -29563,12 +29620,13 @@ school_scores = [
       64, 
       127
     ], 
-    "name": "school_scores.[0].GPA.No response.Test-takers", 
     "pretty": "Gpa No Response: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.", 
+    "index": false, 
+    "name": "school_scores.[0].GPA.No response.Verbal", 
     "data": [
       0, 
       0, 
@@ -30091,12 +30149,13 @@ school_scores = [
       452, 
       552
     ], 
-    "name": "school_scores.[0].GPA.No response.Verbal", 
     "pretty": "Gpa No Response: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math who identified as Female in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 200 to 300.Math.Females", 
     "data": [
       22, 
       30, 
@@ -30619,12 +30678,13 @@ school_scores = [
       17, 
       5
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 200 to 300.Math.Females", 
     "pretty": "Score Ranges Between 200 To 300 Math: Females", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math who identified as Male in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 200 to 300.Math.Males", 
     "data": [
       10, 
       20, 
@@ -31147,12 +31207,13 @@ school_scores = [
       19, 
       4
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 200 to 300.Math.Males", 
     "pretty": "Score Ranges Between 200 To 300 Math: Males", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 200 to 300.Math.Total", 
     "data": [
       32, 
       50, 
@@ -31675,12 +31736,13 @@ school_scores = [
       36, 
       9
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 200 to 300.Math.Total", 
     "pretty": "Score Ranges Between 200 To 300 Math: Total", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 200 to 300.Verbal.Females", 
     "data": [
       14, 
       26, 
@@ -32203,12 +32265,13 @@ school_scores = [
       22, 
       9
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 200 to 300.Verbal.Females", 
     "pretty": "Score Ranges Between 200 To 300 Verbal: Females", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 200 to 300.Verbal.Males", 
     "data": [
       17, 
       26, 
@@ -32731,12 +32794,13 @@ school_scores = [
       17, 
       6
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 200 to 300.Verbal.Males", 
     "pretty": "Score Ranges Between 200 To 300 Verbal: Males", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 200 to 300.Verbal.Total", 
     "data": [
       31, 
       52, 
@@ -33259,12 +33323,13 @@ school_scores = [
       39, 
       15
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 200 to 300.Verbal.Total", 
     "pretty": "Score Ranges Between 200 To 300 Verbal: Total", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math who identified as Female in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 300 to 400.Math.Females", 
     "data": [
       173, 
       233, 
@@ -33787,12 +33852,13 @@ school_scores = [
       219, 
       43
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 300 to 400.Math.Females", 
     "pretty": "Score Ranges Between 300 To 400 Math: Females", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math who identified as Male in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 300 to 400.Math.Males", 
     "data": [
       93, 
       153, 
@@ -34315,12 +34381,13 @@ school_scores = [
       115, 
       23
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 300 to 400.Math.Males", 
     "pretty": "Score Ranges Between 300 To 400 Math: Males", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 300 to 400.Math.Total", 
     "data": [
       266, 
       386, 
@@ -34843,12 +34910,13 @@ school_scores = [
       334, 
       66
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 300 to 400.Math.Total", 
     "pretty": "Score Ranges Between 300 To 400 Math: Total", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 300 to 400.Verbal.Females", 
     "data": [
       123, 
       218, 
@@ -35371,12 +35439,13 @@ school_scores = [
       144, 
       51
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 300 to 400.Verbal.Females", 
     "pretty": "Score Ranges Between 300 To 400 Verbal: Females", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 300 to 400.Verbal.Males", 
     "data": [
       84, 
       171, 
@@ -35899,12 +35968,13 @@ school_scores = [
       111, 
       49
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 300 to 400.Verbal.Males", 
     "pretty": "Score Ranges Between 300 To 400 Verbal: Males", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 300 to 400.Verbal.Total", 
     "data": [
       207, 
       389, 
@@ -36427,12 +36497,13 @@ school_scores = [
       255, 
       100
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 300 to 400.Verbal.Total", 
     "pretty": "Score Ranges Between 300 To 400 Verbal: Total", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math who identified as Female in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 400 to 500.Math.Females", 
     "data": [
       514, 
       696, 
@@ -36955,12 +37026,13 @@ school_scores = [
       587, 
       189
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 400 to 500.Math.Females", 
     "pretty": "Score Ranges Between 400 To 500 Math: Females", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math who identified as Male in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 400 to 500.Math.Males", 
     "data": [
       293, 
       485, 
@@ -37483,12 +37555,13 @@ school_scores = [
       333, 
       106
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 400 to 500.Math.Males", 
     "pretty": "Score Ranges Between 400 To 500 Math: Males", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 400 to 500.Math.Total", 
     "data": [
       807, 
       1181, 
@@ -38011,12 +38084,13 @@ school_scores = [
       920, 
       295
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 400 to 500.Math.Total", 
     "pretty": "Score Ranges Between 400 To 500 Math: Total", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 400 to 500.Verbal.Females", 
     "data": [
       430, 
       656, 
@@ -38539,12 +38613,13 @@ school_scores = [
       529, 
       198
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 400 to 500.Verbal.Females", 
     "pretty": "Score Ranges Between 400 To 500 Verbal: Females", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 400 to 500.Verbal.Males", 
     "data": [
       332, 
       552, 
@@ -39067,12 +39142,13 @@ school_scores = [
       337, 
       150
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 400 to 500.Verbal.Males", 
     "pretty": "Score Ranges Between 400 To 500 Verbal: Males", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 400 to 500.Verbal.Total", 
     "data": [
       762, 
       1208, 
@@ -39595,12 +39671,13 @@ school_scores = [
       866, 
       348
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 400 to 500.Verbal.Total", 
     "pretty": "Score Ranges Between 400 To 500 Verbal: Total", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math who identified as Female in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 500 to 600.Math.Females", 
     "data": [
       722, 
       813, 
@@ -40123,12 +40200,13 @@ school_scores = [
       429, 
       391
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 500 to 600.Math.Females", 
     "pretty": "Score Ranges Between 500 To 600 Math: Females", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math who identified as Male in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 500 to 600.Math.Males", 
     "data": [
       614, 
       616, 
@@ -40651,12 +40729,13 @@ school_scores = [
       354, 
       243
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 500 to 600.Math.Males", 
     "pretty": "Score Ranges Between 500 To 600 Math: Males", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 500 to 600.Math.Total", 
     "data": [
       1336, 
       1429, 
@@ -41179,12 +41258,13 @@ school_scores = [
       783, 
       634
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 500 to 600.Math.Total", 
     "pretty": "Score Ranges Between 500 To 600 Math: Total", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 500 to 600.Verbal.Females", 
     "data": [
       690, 
       729, 
@@ -41707,12 +41787,13 @@ school_scores = [
       503, 
       376
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 500 to 600.Verbal.Females", 
     "pretty": "Score Ranges Between 500 To 600 Verbal: Females", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 500 to 600.Verbal.Males", 
     "data": [
       617, 
       596, 
@@ -42235,12 +42316,13 @@ school_scores = [
       359, 
       291
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 500 to 600.Verbal.Males", 
     "pretty": "Score Ranges Between 500 To 600 Verbal: Males", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 500 to 600.Verbal.Total", 
     "data": [
       1307, 
       1325, 
@@ -42763,12 +42845,13 @@ school_scores = [
       862, 
       667
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 500 to 600.Verbal.Total", 
     "pretty": "Score Ranges Between 500 To 600 Verbal: Total", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math who identified as Female in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 600 to 700.Math.Females", 
     "data": [
       485, 
       342, 
@@ -43291,12 +43374,13 @@ school_scores = [
       169, 
       425
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 600 to 700.Math.Females", 
     "pretty": "Score Ranges Between 600 To 700 Math: Females", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math who identified as Male in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 600 to 700.Math.Males", 
     "data": [
       611, 
       445, 
@@ -43819,12 +43903,13 @@ school_scores = [
       186, 
       373
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 600 to 700.Math.Males", 
     "pretty": "Score Ranges Between 600 To 700 Math: Males", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 600 to 700.Math.Total", 
     "data": [
       1096, 
       787, 
@@ -44347,12 +44432,13 @@ school_scores = [
       355, 
       798
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 600 to 700.Math.Total", 
     "pretty": "Score Ranges Between 600 To 700 Math: Total", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 600 to 700.Verbal.Females", 
     "data": [
       596, 
       423, 
@@ -44875,12 +44961,13 @@ school_scores = [
       211, 
       387
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 600 to 700.Verbal.Females", 
     "pretty": "Score Ranges Between 600 To 700 Verbal: Females", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 600 to 700.Verbal.Males", 
     "data": [
       613, 
       375, 
@@ -45403,12 +45490,13 @@ school_scores = [
       186, 
       337
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 600 to 700.Verbal.Males", 
     "pretty": "Score Ranges Between 600 To 700 Verbal: Males", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 600 to 700.Verbal.Total", 
     "data": [
       1209, 
       798, 
@@ -45931,12 +46019,13 @@ school_scores = [
       397, 
       724
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 600 to 700.Verbal.Total", 
     "pretty": "Score Ranges Between 600 To 700 Verbal: Total", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math who identified as Female in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 700 to 800.Math.Females", 
     "data": [
       156, 
       47, 
@@ -46459,12 +46548,13 @@ school_scores = [
       30, 
       166
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 700 to 800.Math.Females", 
     "pretty": "Score Ranges Between 700 To 800 Math: Females", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math who identified as Male in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 700 to 800.Math.Males", 
     "data": [
       292, 
       116, 
@@ -46987,12 +47077,13 @@ school_scores = [
       43, 
       309
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 700 to 800.Math.Males", 
     "pretty": "Score Ranges Between 700 To 800 Math: Males", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Math in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 700 to 800.Math.Total", 
     "data": [
       448, 
       163, 
@@ -47515,12 +47606,13 @@ school_scores = [
       73, 
       475
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 700 to 800.Math.Total", 
     "pretty": "Score Ranges Between 700 To 800 Math: Total", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 700 to 800.Verbal.Females", 
     "data": [
       219, 
       109, 
@@ -48043,12 +48135,13 @@ school_scores = [
       42, 
       198
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 700 to 800.Verbal.Females", 
     "pretty": "Score Ranges Between 700 To 800 Verbal: Females", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 700 to 800.Verbal.Males", 
     "data": [
       250, 
       115, 
@@ -48571,12 +48664,13 @@ school_scores = [
       40, 
       225
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 700 to 800.Verbal.Males", 
     "pretty": "Score Ranges Between 700 To 800 Verbal: Males", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Score Ranges.Between 700 to 800.Verbal.Total", 
     "data": [
       469, 
       224, 
@@ -49099,12 +49193,13 @@ school_scores = [
       82, 
       423
     ], 
-    "name": "school_scores.[0].Score Ranges.Between 700 to 800.Verbal.Total", 
     "pretty": "Score Ranges Between 700 To 800 Verbal: Total", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "text", 
+    "comment": "The two-letter abbreviation of the state for thsi report.", 
+    "index": false, 
+    "name": "school_scores.[0].State.Code", 
     "data": [
       "AL", 
       "AK", 
@@ -49627,12 +49722,13 @@ school_scores = [
       "WV", 
       "WI"
     ], 
-    "name": "school_scores.[0].State.Code", 
     "pretty": "State: Code", 
-    "index": false
+    "type": "text"
   }, 
   {
-    "type": "text", 
+    "comment": "The full name of the state for this report.", 
+    "index": true, 
+    "name": "school_scores.[0].State.Name", 
     "data": [
       "Alabama", 
       "Alaska", 
@@ -50155,12 +50251,13 @@ school_scores = [
       "West Virginia", 
       "Wisconsin"
     ], 
-    "name": "school_scores.[0].State.Name", 
     "pretty": "State: Name", 
-    "index": true
+    "type": "text"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Math score of students in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Total.Math", 
     "data": [
       559, 
       519, 
@@ -50683,12 +50780,13 @@ school_scores = [
       500, 
       606
     ], 
-    "name": "school_scores.[0].Total.Math", 
     "pretty": "Total: Math", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The number of test-takers in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Total.Test-takers", 
     "data": [
       3985, 
       3996, 
@@ -51211,12 +51309,13 @@ school_scores = [
       2501, 
       2277
     ], 
-    "name": "school_scores.[0].Total.Test-takers", 
     "pretty": "Total: Test-Takers", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The average Verbal (Reading, not Writing) score of students in this state during this year.", 
+    "index": false, 
+    "name": "school_scores.[0].Total.Verbal", 
     "data": [
       567, 
       523, 
@@ -51739,12 +51838,13 @@ school_scores = [
       509, 
       591
     ], 
-    "name": "school_scores.[0].Total.Verbal", 
     "pretty": "Total: Verbal", 
-    "index": false
+    "type": "number"
   }, 
   {
-    "type": "number", 
+    "comment": "The year of this report.", 
+    "index": true, 
+    "name": "school_scores.[0].Year", 
     "data": [
       2005, 
       2005, 
@@ -52267,8 +52367,7 @@ school_scores = [
       2015, 
       2015
     ], 
-    "name": "school_scores.[0].Year", 
     "pretty": "Year: Year", 
-    "index": true
+    "type": "number"
   }
 ]
