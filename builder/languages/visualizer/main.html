@@ -50,13 +50,9 @@ if (typeof log === 'undefined') {
 
     </style>
     
-    <!-- Datasets! -->
-    {% for local in locals %}
-    <script src='{{ local.name|snake_case }}.js'></script>
-    <script src='{{ local.name|snake_case }}_bar.js'></script>
-    {% endfor %}
-    
     <script>
+    
+$(document).ready(function () {
     
 var doctype = '<?xml version="1.0" standalone="no"?>' + '<' + '!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">';
 
@@ -165,7 +161,7 @@ var COLOR_SCHEMES = [
         {'name': 'Purple', 'stroke': 'purple', 'fill': 'plum '}
     ];
     
-var mainModel = {
+mainModel = {
     'aggregators': ko.observableArray([
         {'name': 'Average', 'id': 'average'},
         {'name': 'Count', 'id': 'count'},
@@ -275,10 +271,6 @@ ko.bindingHandlers.fadeVisible = {
         ko.unwrap(value) ? $(element).fadeIn() : $(element).fadeOut();
     }
 };
-
-
-
-$(document).ready(function () {
 
     $('#capture-button').click(function() {
         captureImage();
@@ -960,5 +952,11 @@ $(document).ready(function () {
 {% endif %}
 
 </div>
+
+<!-- Datasets! -->
+{% for local in locals %}
+<script src='{{ local.name|snake_case }}.js'></script>
+<script src='{{ local.name|snake_case }}_bar.js'></script>
+{% endfor %}
 
 {% endblock %}

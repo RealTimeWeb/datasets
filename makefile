@@ -45,3 +45,17 @@ latex_index:
 	python datasets/metrics/build_latex_index.py
 infer_json:
 	python infer_json.py specs/$(target)/$(target).json
+all_visualizer:
+	python builder/builder.py -l visualizer specs/airlines.corgis ./datasets
+	python builder/builder.py -l visualizer specs/broadway.corgis ./datasets
+	python builder/builder.py -l visualizer specs/classics.corgis ./datasets
+	python builder/builder.py -l visualizer specs/construction_spending.corgis ./datasets
+	python builder/builder.py -l visualizer specs/earthquakes.corgis ./datasets
+	python builder/builder.py -l visualizer specs/global_development.corgis ./datasets
+	python builder/builder.py -l visualizer specs/immigration.corgis ./datasets
+	python builder/builder.py -l visualizer specs/publishers.corgis ./datasets
+	python builder/builder.py -l visualizer specs/school_scores.corgis ./datasets
+	python builder/builder.py -l visualizer specs/state_crime.corgis ./datasets
+	python builder/builder.py -l visualizer specs/state_demographics.corgis ./datasets
+	python builder/builder.py -l visualizer specs/tate.corgis ./datasets
+	python builder/builder.py -l visualizer specs/weather.corgis ./datasets
