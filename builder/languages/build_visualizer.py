@@ -313,7 +313,7 @@ def build_visualizer(model, fast):
     splash_file = model['metadata']['splash']
     if os.path.exists(splash_file):
         with open(splash_file, 'rb') as splash_data:
-            files[new_folder+splash_file] = splash_data.read()
+            files[new_folder+name+"_splash.png"] = splash_data.read()
     else:
         model["metadata"]["splash"] = False
     
