@@ -16,6 +16,37 @@ Classics Visualizer (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+<link rel="stylesheet" href="../../_lib/bootstrap-tagsinput.css">
+<link href="../../_lib/multiselect.css" media="screen" rel="stylesheet" type="text/css">
+
+<style id='d3-styling'>
+body {
+  font: 14px sans-serif;
+}
+
+.vertically-align {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.data-viz {
+    height: 100%;
+    position: absolute;
+}
+
+#download-image:focus, #download-image:hover {
+    text-decoration: none;
+}
+
+#download-image:focus img, #download-image:hover img {
+    border: 1px solid lightblue;
+    opacity: .75;
+}
+</style>
+
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -40,6 +71,7 @@ if (typeof log === 'undefined') {
 </script>
 
 
+
     
     <script>
     $(document).ready(function() {
@@ -62,39 +94,10 @@ if (typeof log === 'undefined') {
 
 <div class="container">
 
-    <link rel="stylesheet" href="../../_lib/bootstrap-tagsinput.css"></script>
-    <link href="../../_lib/multiselect.css" media="screen" rel="stylesheet" type="text/css">
     <script src="../../_lib/jquery.multi-select.js" type="text/javascript"></script>
     <script src="../../_lib/bootstrap-tagsinput.js"></script>
     <script src="../../_lib/typeahead.bundle.js"></script>
     <script src="../../_lib/jquery.quicksearch.js"></script>
-    
-    <style id='d3-styling'>
-    body {
-      font: 14px sans-serif;
-    }
-    
-    .vertically-align {
-        display: inline-block;
-        vertical-align: middle;
-        float: none;
-    }
-    
-    .data-viz {
-        height: 100%;
-        position: absolute;
-    }
-    
-    #download-image:focus, #download-image:hover {
-        text-decoration: none;
-    }
-    
-    #download-image:focus img, #download-image:hover img {
-        border: 1px solid lightblue;
-        opacity: .75;
-    }
-
-    </style>
     
     <script>
     
@@ -691,7 +694,11 @@ ko.bindingHandlers.fadeVisible = {
                   mainModel.selected.chart().id == 'line' ? 
                   //(mainModel.selected.dataset().order) : 
                   (mainModel.selected.dataset().order !== "" ? mainModel.selected.dataset().order :
-                  (mainModel.selected.bar_dataset().data.filter( cur => cur.name != mainModel.selected.filter() ).reduce( (pre, cur) => pre+" / "+cur.pretty, "").substring(3))) :
+                  (mainModel.selected.bar_dataset().data.filter(function(cur) {
+                        return cur.name != mainModel.selected.filter()
+                    }).reduce(function(pre, cur) {
+                        return pre+" / "+cur.pretty
+                    }, "").substring(3))) :
                   mainModel.selected.first().pretty;
         var y_axis_label = mainModel.selected.chart().id == 'hist' ? 
                   'Number of '+mainModel.selected.dataset().row+"s": 
@@ -775,8 +782,6 @@ ko.bindingHandlers.fadeVisible = {
 });
     </script>
     
-</head>
-<body>
 <div class='container'>
 
 <div class="page-header">
@@ -876,7 +881,7 @@ ko.bindingHandlers.fadeVisible = {
         </div>
     </div>
     <!-- Bin selector -->
-    <div class='col-md-3'" data-bind="visible: selected.chart().id == 'hist'">
+    <div class='col-md-3' data-bind="visible: selected.chart().id == 'hist'">
         <div class="form-group">
             <label for="set-bins">Bins: </label>
             <input name='set-bins' class='form-control' data-bind="textInput: settings.bins" />

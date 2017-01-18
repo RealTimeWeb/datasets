@@ -1,0 +1,8 @@
+*.csv
+*.json
+completed/
+*.gz
+*.bz2
+*.zip
+*.xlsx
+*.xls
