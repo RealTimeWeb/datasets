@@ -396,6 +396,7 @@ ko.bindingHandlers.fadeVisible = {
         e.canvas.append("text")      // text label for the x axis
             .attr("transform", "translate(" + (width / 2) + " ," + (height + margin.bottom-5) + ")")
             .attr("class", "x-axis-label")
+            .style("font-size", "14px")
             .style("text-anchor", "middle")
             .text(mainModel.selected.first().pretty);
         e.canvas.append("text")
@@ -403,6 +404,7 @@ ko.bindingHandlers.fadeVisible = {
             .attr("class", "y-axis-label")
             .attr("y", 0 - margin.left)
             .attr("x", 0 - (height / 2))
+            .style("font-size", "14px")
             .attr("dy", "1em")
             .style("text-anchor", "middle")
             .text(mainModel.selected.second().pretty);
@@ -410,8 +412,8 @@ ko.bindingHandlers.fadeVisible = {
             .attr("x", (width / 2))
             .attr("y", 0 - (margin.top / 2))
             .attr("class", "title-text")
-            .attr("text-anchor", "middle")  
-            .style("font-size", "16px") 
+            .attr("text-anchor", "middle")
+            .style("font-size", "16px")
             .style("text-decoration", "underline")  
             .text(mainModel.settings.title());
         e.canvas.append("text")
@@ -425,6 +427,8 @@ ko.bindingHandlers.fadeVisible = {
             .attr("type", "text/css")
             .text(/*"<![CDATA[\n"+*/
 "svg { background-color: white; }\n"+
+"text { font: 14px sans-serif}\n"+
+".tick text { font-size: 14px; }\n"+
 ".axis path,.axis line { fill: none; stroke: black; shape-rendering: crispEdges;}\n"+
 ".line { fill: none; stroke-width: 1px;}\n"+
 ".circle { r: 3; shape-rendering: crispEdges; }\n"+
@@ -762,7 +766,7 @@ ko.bindingHandlers.fadeVisible = {
             </div>
             <div class='modal-body' style='width:100%; height:400px; white-space:pre-wrap'>
             Click the image below in order to save it.
-            <a id="download-image" href="" download="">
+            <a id="download-image" href="" download="" target="_blank">
             <img />
             </a>
             </div>
