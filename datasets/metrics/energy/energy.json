@@ -2,6 +2,7 @@
   "energy": {
     "dicts": {
       "count": 6, 
+      "inconsistent": {}, 
       "average branching factor": 8
     }, 
     "tags": [
@@ -16,9 +17,10 @@
     "atomics": {
       "count": 44, 
       "nones": 0, 
+      "ints": 1, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 1, 
+      "unknown": 0, 
       "strings": 0, 
       "floats": 43
     }, 
@@ -30,6 +32,7 @@
     "heights": 4, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 66, 

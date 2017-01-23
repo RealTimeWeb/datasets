@@ -2,6 +2,7 @@
   "cancer": {
     "dicts": {
       "count": 3, 
+      "inconsistent": {}, 
       "average branching factor": 5
     }, 
     "tags": [
@@ -16,11 +17,12 @@
     "atomics": {
       "count": 13, 
       "nones": 0, 
+      "ints": 3, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 0, 
-      "strings": 0, 
-      "floats": 0
+      "unknown": 0, 
+      "strings": 4, 
+      "floats": 6
     }, 
     "lists": {
       "count": 1, 
@@ -29,17 +31,12 @@
     }, 
     "heights": 3, 
     "unions": {
-      "count": 1, 
-      "keys": {
-        "report.[0].Year": [
-          "text", 
-          "number"
-        ]
-      }, 
-      "sizes": 2
+      "count": 0, 
+      "keys": {}, 
+      "sizes": 0
     }, 
     "length": 22140, 
     "locals": 0, 
-    "size": 7091975
+    "size": 7080719
   }
 }

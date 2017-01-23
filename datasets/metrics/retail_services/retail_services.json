@@ -3,7 +3,7 @@
     "dicts": {
       "count": 6, 
       "inconsistent": {}, 
-      "average branching factor": 34
+      "average branching factor": 33
     }, 
     "tags": [
       "retail", 
@@ -17,9 +17,9 @@
       "services"
     ], 
     "atomics": {
-      "count": 200, 
+      "count": 197, 
       "nones": 0, 
-      "ints": 189, 
+      "ints": 186, 
       "booleans": 0, 
       "longs": 0, 
       "unknown": 0, 
@@ -39,6 +39,6 @@
     }, 
     "length": 289, 
     "locals": 0, 
-    "size": 2599335
+    "size": 2507176
   }
 }

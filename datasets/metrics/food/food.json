@@ -2,6 +2,7 @@
   "food": {
     "dicts": {
       "count": 6, 
+      "inconsistent": {}, 
       "average branching factor": 8
     }, 
     "tags": [
@@ -14,9 +15,10 @@
     "atomics": {
       "count": 48, 
       "nones": 0, 
+      "ints": 19, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 19, 
+      "unknown": 0, 
       "strings": 4, 
       "floats": 25
     }, 
@@ -28,10 +30,11 @@
     "heights": 4, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 7413, 
     "locals": 0, 
-    "size": 8496461
+    "size": 8503874
   }
 }

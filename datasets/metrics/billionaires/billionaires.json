@@ -2,6 +2,7 @@
   "billionaires": {
     "dicts": {
       "count": 6, 
+      "inconsistent": {}, 
       "average branching factor": 4
     }, 
     "tags": [
@@ -15,9 +16,10 @@
     "atomics": {
       "count": 22, 
       "nones": 0, 
+      "ints": 4, 
       "booleans": 4, 
       "longs": 0, 
-      "ints": 4, 
+      "unknown": 0, 
       "strings": 12, 
       "floats": 2
     }, 
@@ -29,10 +31,11 @@
     "heights": 4, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 2614, 
     "locals": 0, 
-    "size": 1444578
+    "size": 1444960
   }
 }

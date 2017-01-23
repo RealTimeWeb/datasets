@@ -2,6 +2,7 @@
   "hospitals": {
     "dicts": {
       "count": 4, 
+      "inconsistent": {}, 
       "average branching factor": 5
     }, 
     "tags": [
@@ -16,9 +17,10 @@
     "atomics": {
       "count": 20, 
       "nones": 0, 
+      "ints": 7, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 7, 
+      "unknown": 0, 
       "strings": 11, 
       "floats": 2
     }, 
@@ -30,6 +32,7 @@
     "heights": 3, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 4861, 

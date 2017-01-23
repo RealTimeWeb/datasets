@@ -1,8 +1,9 @@
 {
   "cars": {
     "dicts": {
-      "count": 1, 
-      "average branching factor": 23
+      "count": 6, 
+      "inconsistent": {}, 
+      "average branching factor": 3
     }, 
     "tags": [
       "cars", 
@@ -10,26 +11,28 @@
       "fuel"
     ], 
     "atomics": {
-      "count": 23, 
+      "count": 18, 
       "nones": 0, 
-      "booleans": 0, 
+      "ints": 9, 
+      "booleans": 1, 
       "longs": 0, 
-      "ints": 10, 
-      "strings": 10, 
-      "floats": 3
+      "unknown": 0, 
+      "strings": 8, 
+      "floats": 0
     }, 
     "lists": {
       "count": 1, 
-      "lengths": 25053, 
+      "lengths": 5076, 
       "complex": 1
     }, 
-    "heights": 2, 
+    "heights": 4, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
-    "length": 25053, 
+    "length": 5076, 
     "locals": 0, 
-    "size": 14069072
+    "size": 2947891
   }
 }

@@ -59,3 +59,17 @@ all_visualizer:
 	python builder/builder.py -l visualizer specs/state_demographics.corgis ./datasets
 	python builder/builder.py -l visualizer specs/tate.corgis ./datasets
 	python builder/builder.py -l visualizer specs/weather.corgis ./datasets
+all_blockpy:
+	python builder/builder.py -l blockpy specs/airlines.corgis ./datasets
+	python builder/builder.py -l blockpy specs/broadway.corgis ./datasets
+	python builder/builder.py -l blockpy specs/classics.corgis ./datasets
+	python builder/builder.py -l blockpy specs/construction_spending.corgis ./datasets
+	python builder/builder.py -l blockpy specs/earthquakes.corgis ./datasets
+	python builder/builder.py -l blockpy specs/global_development.corgis ./datasets
+	python builder/builder.py -l blockpy specs/immigration.corgis ./datasets
+	python builder/builder.py -l blockpy specs/publishers.corgis ./datasets
+	python builder/builder.py -l blockpy specs/school_scores.corgis ./datasets
+	python builder/builder.py -l blockpy specs/state_crime.corgis ./datasets
+	python builder/builder.py -l blockpy specs/state_demographics.corgis ./datasets
+	python builder/builder.py -l blockpy specs/tate.corgis ./datasets
+	python builder/builder.py -l blockpy specs/weather.corgis ./datasets

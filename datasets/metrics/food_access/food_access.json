@@ -1,0 +1,45 @@
+{
+  "food_access": {
+    "dicts": {
+      "count": 11, 
+      "inconsistent": {}, 
+      "average branching factor": 3
+    }, 
+    "tags": [
+      "counties", 
+      "states", 
+      "food", 
+      "access", 
+      "availability", 
+      "supermarket", 
+      "rural", 
+      "urban", 
+      "population", 
+      "vehicles"
+    ], 
+    "atomics": {
+      "count": 31, 
+      "nones": 0, 
+      "ints": 2, 
+      "booleans": 0, 
+      "longs": 0, 
+      "unknown": 0, 
+      "strings": 2, 
+      "floats": 27
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 3143, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "keys": {}, 
+      "sizes": 0
+    }, 
+    "length": 3143, 
+    "locals": 0, 
+    "size": 3380701
+  }
+}

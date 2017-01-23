@@ -29,7 +29,8 @@ Blockly.Blocks['{{ library_name }}_get'] = {
     this.setColour(WEATHER_HUE);
     this.appendDummyInput('MAIN')
         .appendField("{{ library_name }}.get")
-        .appendField(new Blockly.FieldDropdown({{library_name}}_PROPERTIES), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown({{library_name}}_PROPERTIES), "PROPERTY");
+    this.appendDummyInput('SECOND')
         .appendField("filter")
         .appendField(new Blockly.FieldDropdown({{library_name}}_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
@@ -43,6 +44,7 @@ Blockly.Blocks['{{ library_name }}_get'] = {
     var container = document.createElement('mutation');
     container.setAttribute('index', this.getFieldValue('INDEX'));
     container.setAttribute('index_value', this.getFieldValue('INDEX_VALUE'));
+    container.setAttribute('module', "{{ library_name }}")
     return container;
   },
   domToMutation: function(xmlElement) {
@@ -51,7 +53,7 @@ Blockly.Blocks['{{ library_name }}_get'] = {
     this.updateShape_(index, index_value);
   },
   updateShape_: function(index, index_value) {
-    var inputGroup = this.getInput('MAIN')
+    var inputGroup = this.getInput('SECOND')
     var fieldExists = this.getField('INDEX_VALUE');
     if (fieldExists) {
         inputGroup.removeField('INDEX_VALUE');
@@ -69,9 +71,10 @@ Blockly.Blocks['{{ library_name }}_get'] = {
 };
 Blockly.Python['{{ library_name }}_get'] = function(block) {
     Blockly.Python.definitions_['import_{{ library_name }}'] = 'import {{ library_name }}';
-    var property = Blockly.Python.quote_(block.getFieldValue('PROPERTY'));
+    var propertyValue = block.getFieldValue('PROPERTY') || '';
+    var property = Blockly.Python.quote_(propertyValue);
     var index_unquoted = block.getFieldValue('INDEX');
-    var index = Blockly.Python.quote_(index_unquoted);
+    var index = Blockly.Python.quote_(index_unquoted || '');
     var index_value = "''";
     if (index_unquoted != '(None)') {
         var iv = block.getFieldValue('INDEX_VALUE') || "";

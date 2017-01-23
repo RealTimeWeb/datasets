@@ -2,6 +2,7 @@
   "health": {
     "dicts": {
       "count": 1, 
+      "inconsistent": {}, 
       "average branching factor": 6
     }, 
     "tags": [
@@ -12,9 +13,10 @@
     "atomics": {
       "count": 6, 
       "nones": 0, 
+      "ints": 3, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 3, 
+      "unknown": 0, 
       "strings": 2, 
       "floats": 1
     }, 
@@ -26,6 +28,7 @@
     "heights": 2, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 14265, 

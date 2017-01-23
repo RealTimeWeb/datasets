@@ -3,12 +3,28 @@
 var construction_spending_INDEXES = [
     ["(None)", "(None)"],
     
+    ["month", "month"] ,
     ["year", "year"] 
 ];
 
 var construction_spending_INDEX_VALUES = {
     "(None)": [],
     
+    "month": [
+        
+        ["1", "1"] ,
+        ["10", "10"] ,
+        ["11", "11"] ,
+        ["12", "12"] ,
+        ["2", "2"] ,
+        ["3", "3"] ,
+        ["4", "4"] ,
+        ["5", "5"] ,
+        ["6", "6"] ,
+        ["7", "7"] ,
+        ["8", "8"] ,
+        ["9", "9"] 
+    ],
     "year": [
         
         ["2002", "2002"] ,
@@ -156,7 +172,8 @@ Blockly.Blocks['construction_spending_get'] = {
     this.setColour(WEATHER_HUE);
     this.appendDummyInput('MAIN')
         .appendField("construction_spending.get")
-        .appendField(new Blockly.FieldDropdown(construction_spending_PROPERTIES), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown(construction_spending_PROPERTIES), "PROPERTY");
+    this.appendDummyInput('SECOND')
         .appendField("filter")
         .appendField(new Blockly.FieldDropdown(construction_spending_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
@@ -170,6 +187,7 @@ Blockly.Blocks['construction_spending_get'] = {
     var container = document.createElement('mutation');
     container.setAttribute('index', this.getFieldValue('INDEX'));
     container.setAttribute('index_value', this.getFieldValue('INDEX_VALUE'));
+    container.setAttribute('module', "construction_spending")
     return container;
   },
   domToMutation: function(xmlElement) {
@@ -178,7 +196,7 @@ Blockly.Blocks['construction_spending_get'] = {
     this.updateShape_(index, index_value);
   },
   updateShape_: function(index, index_value) {
-    var inputGroup = this.getInput('MAIN')
+    var inputGroup = this.getInput('SECOND')
     var fieldExists = this.getField('INDEX_VALUE');
     if (fieldExists) {
         inputGroup.removeField('INDEX_VALUE');
@@ -196,9 +214,10 @@ Blockly.Blocks['construction_spending_get'] = {
 };
 Blockly.Python['construction_spending_get'] = function(block) {
     Blockly.Python.definitions_['import_construction_spending'] = 'import construction_spending';
-    var property = Blockly.Python.quote_(block.getFieldValue('PROPERTY'));
+    var propertyValue = block.getFieldValue('PROPERTY') || '';
+    var property = Blockly.Python.quote_(propertyValue);
     var index_unquoted = block.getFieldValue('INDEX');
-    var index = Blockly.Python.quote_(index_unquoted);
+    var index = Blockly.Python.quote_(index_unquoted || '');
     var index_value = "''";
     if (index_unquoted != '(None)') {
         var iv = block.getFieldValue('INDEX_VALUE') || "";

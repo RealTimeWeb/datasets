@@ -1,0 +1,40 @@
+{
+  "real_estate": {
+    "dicts": {
+      "count": 6, 
+      "inconsistent": {}, 
+      "average branching factor": 3
+    }, 
+    "tags": [
+      "real", 
+      "estate", 
+      "buildings", 
+      "government", 
+      "building"
+    ], 
+    "atomics": {
+      "count": 18, 
+      "nones": 0, 
+      "ints": 1, 
+      "booleans": 0, 
+      "longs": 0, 
+      "unknown": 0, 
+      "strings": 17, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 9315, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "keys": {}, 
+      "sizes": 0
+    }, 
+    "length": 9315, 
+    "locals": 0, 
+    "size": 4443172
+  }
+}

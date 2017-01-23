@@ -129,7 +129,8 @@ Blockly.Blocks['earthquakes_get'] = {
     this.setColour(WEATHER_HUE);
     this.appendDummyInput('MAIN')
         .appendField("earthquakes.get")
-        .appendField(new Blockly.FieldDropdown(earthquakes_PROPERTIES), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown(earthquakes_PROPERTIES), "PROPERTY");
+    this.appendDummyInput('SECOND')
         .appendField("filter")
         .appendField(new Blockly.FieldDropdown(earthquakes_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
@@ -143,6 +144,7 @@ Blockly.Blocks['earthquakes_get'] = {
     var container = document.createElement('mutation');
     container.setAttribute('index', this.getFieldValue('INDEX'));
     container.setAttribute('index_value', this.getFieldValue('INDEX_VALUE'));
+    container.setAttribute('module', "earthquakes")
     return container;
   },
   domToMutation: function(xmlElement) {
@@ -151,7 +153,7 @@ Blockly.Blocks['earthquakes_get'] = {
     this.updateShape_(index, index_value);
   },
   updateShape_: function(index, index_value) {
-    var inputGroup = this.getInput('MAIN')
+    var inputGroup = this.getInput('SECOND')
     var fieldExists = this.getField('INDEX_VALUE');
     if (fieldExists) {
         inputGroup.removeField('INDEX_VALUE');
@@ -169,9 +171,10 @@ Blockly.Blocks['earthquakes_get'] = {
 };
 Blockly.Python['earthquakes_get'] = function(block) {
     Blockly.Python.definitions_['import_earthquakes'] = 'import earthquakes';
-    var property = Blockly.Python.quote_(block.getFieldValue('PROPERTY'));
+    var propertyValue = block.getFieldValue('PROPERTY') || '';
+    var property = Blockly.Python.quote_(propertyValue);
     var index_unquoted = block.getFieldValue('INDEX');
-    var index = Blockly.Python.quote_(index_unquoted);
+    var index = Blockly.Python.quote_(index_unquoted || '');
     var index_value = "''";
     if (index_unquoted != '(None)') {
         var iv = block.getFieldValue('INDEX_VALUE') || "";

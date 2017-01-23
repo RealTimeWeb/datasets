@@ -21232,7 +21232,9 @@ _IMPORTED_DATASETS['state_crime'] = {
     "type": "number"
   }, 
   "Year": {
-    "type": "number", 
+    "comment": "The year that this report was made in.", 
+    "index": true, 
+    "name": "crime.[0].Year", 
     "data": [
       "1960", 
       "1961", 
@@ -23880,9 +23882,8 @@ _IMPORTED_DATASETS['state_crime'] = {
       "2011", 
       "2012"
     ], 
-    "name": "crime.[0].Year", 
     "pretty": "Year: Year", 
-    "index": true
+    "type": "number"
   }, 
   "Rates.Violent.Rape": {
     "comment": "Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.", 
@@ -26539,7 +26540,9 @@ _IMPORTED_DATASETS['state_crime'] = {
     "type": "number"
   }, 
   "Population": {
-    "type": "number", 
+    "comment": "The number of people living in this state at the time the report was created.", 
+    "index": false, 
+    "name": "crime.[0].Data.Population", 
     "data": [
       3266740, 
       3302000, 
@@ -29187,9 +29190,8 @@ _IMPORTED_DATASETS['state_crime'] = {
       567356, 
       576412
     ], 
-    "name": "crime.[0].Data.Population", 
     "pretty": "Data: Population", 
-    "index": false
+    "type": "number"
   }, 
   "Totals.Property.Burglary": {
     "comment": "This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.", 
@@ -31846,7 +31848,9 @@ _IMPORTED_DATASETS['state_crime'] = {
     "type": "number"
   }, 
   "State": {
-    "type": "text", 
+    "comment": "The long name of the state that this report was made for.", 
+    "index": true, 
+    "name": "crime.[0].State", 
     "data": [
       "Alabama", 
       "Alabama", 
@@ -34494,9 +34498,8 @@ _IMPORTED_DATASETS['state_crime'] = {
       "Wyoming", 
       "Wyoming"
     ], 
-    "name": "crime.[0].State", 
     "pretty": "State: State", 
-    "index": true
+    "type": "text"
   }, 
   "Rates.Violent.Assault": {
     "comment": "Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.", 

@@ -117,7 +117,6 @@ var global_development_INDEX_VALUES = {
         ["Madagascar", "Madagascar"] ,
         ["Malawi", "Malawi"] ,
         ["Malaysia", "Malaysia"] ,
-        ["Maldives", "Maldives"] ,
         ["Mali", "Mali"] ,
         ["Malta", "Malta"] ,
         ["Mauritania", "Mauritania"] ,
@@ -279,8 +278,8 @@ var global_development_PROPERTIES = [
     ["Rural Population Growth", "Rural Population Growth"] ,
     ["Surface Area", "Surface Area"] ,
     ["Population Density", "Population Density"] ,
-    ["Urban Population", "Urban Population"] ,
-    ["Urban Population Growth", "Urban Population Growth"] ,
+    ["Urban Population Percent", "Urban Population Percent"] ,
+    ["Urban Population Percent Growth", "Urban Population Percent Growth"] ,
     ["Year", "Year"] 
 ]
 
@@ -289,7 +288,8 @@ Blockly.Blocks['global_development_get'] = {
     this.setColour(WEATHER_HUE);
     this.appendDummyInput('MAIN')
         .appendField("global_development.get")
-        .appendField(new Blockly.FieldDropdown(global_development_PROPERTIES), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown(global_development_PROPERTIES), "PROPERTY");
+    this.appendDummyInput('SECOND')
         .appendField("filter")
         .appendField(new Blockly.FieldDropdown(global_development_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
@@ -303,6 +303,7 @@ Blockly.Blocks['global_development_get'] = {
     var container = document.createElement('mutation');
     container.setAttribute('index', this.getFieldValue('INDEX'));
     container.setAttribute('index_value', this.getFieldValue('INDEX_VALUE'));
+    container.setAttribute('module', "global_development")
     return container;
   },
   domToMutation: function(xmlElement) {
@@ -311,7 +312,7 @@ Blockly.Blocks['global_development_get'] = {
     this.updateShape_(index, index_value);
   },
   updateShape_: function(index, index_value) {
-    var inputGroup = this.getInput('MAIN')
+    var inputGroup = this.getInput('SECOND')
     var fieldExists = this.getField('INDEX_VALUE');
     if (fieldExists) {
         inputGroup.removeField('INDEX_VALUE');
@@ -329,9 +330,10 @@ Blockly.Blocks['global_development_get'] = {
 };
 Blockly.Python['global_development_get'] = function(block) {
     Blockly.Python.definitions_['import_global_development'] = 'import global_development';
-    var property = Blockly.Python.quote_(block.getFieldValue('PROPERTY'));
+    var propertyValue = block.getFieldValue('PROPERTY') || '';
+    var property = Blockly.Python.quote_(propertyValue);
     var index_unquoted = block.getFieldValue('INDEX');
-    var index = Blockly.Python.quote_(index_unquoted);
+    var index = Blockly.Python.quote_(index_unquoted || '');
     var index_value = "''";
     if (index_unquoted != '(None)') {
         var iv = block.getFieldValue('INDEX_VALUE') || "";

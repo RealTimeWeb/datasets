@@ -35,14 +35,15 @@ ax.set_xlabel('Percentage of Total Types')
 ax.set_ylabel('Types')
 
 shapes = pd.DataFrame([{'Heights': s['heights'],
-                            'ABF': s['dicts']['average branching factor'],
-                            'Fields': s['atomics']['count'],
+                        'Average Branching Factor': s['dicts']['average branching factor'],
+                        'Number of Fields': s['atomics']['count'],
                         'Rows (1000s)': s['length']/1000,
                         'Size (MB)': s['size']/1000/1000,
 }
  for r in reports for s in r.values()])
 
-sax = shapes.plot.box(subplots=True, vert=False, layout=(5, 1), sharex=False, figsize=(2.5,3))
+sax = shapes.plot.box(subplots=True, vert=False, layout=(5, 1), 
+                      sharex=False, figsize=(5,3))
 fig = matplotlib.pyplot.gcf()
 #fig.set_size_inches(2.5, .5)
 fig.subplots_adjust(hspace=.9)

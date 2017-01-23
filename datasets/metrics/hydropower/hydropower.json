@@ -2,6 +2,7 @@
   "hydropower": {
     "dicts": {
       "count": 5, 
+      "inconsistent": {}, 
       "average branching factor": 3
     }, 
     "tags": [
@@ -21,9 +22,10 @@
     "atomics": {
       "count": 11, 
       "nones": 0, 
+      "ints": 1, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 1, 
+      "unknown": 0, 
       "strings": 5, 
       "floats": 5
     }, 
@@ -35,10 +37,11 @@
     "heights": 4, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 336, 
     "locals": 0, 
-    "size": 113989
+    "size": 114247
   }
 }

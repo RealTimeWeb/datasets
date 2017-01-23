@@ -1,0 +1,42 @@
+{
+  "school_scores": {
+    "dicts": {
+      "count": 47, 
+      "inconsistent": {}, 
+      "average branching factor": 3
+    }, 
+    "tags": [
+      "school", 
+      "education", 
+      "K-12", 
+      "kindergarten", 
+      "learning", 
+      "teaching", 
+      "sat"
+    ], 
+    "atomics": {
+      "count": 99, 
+      "nones": 0, 
+      "ints": 85, 
+      "booleans": 0, 
+      "longs": 0, 
+      "unknown": 0, 
+      "strings": 2, 
+      "floats": 12
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 577, 
+      "complex": 1
+    }, 
+    "heights": 5, 
+    "unions": {
+      "count": 0, 
+      "keys": {}, 
+      "sizes": 0
+    }, 
+    "length": 577, 
+    "locals": 0, 
+    "size": 1347966
+  }
+}

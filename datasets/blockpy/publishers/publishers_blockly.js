@@ -323,7 +323,8 @@ Blockly.Blocks['publishers_get'] = {
     this.setColour(WEATHER_HUE);
     this.appendDummyInput('MAIN')
         .appendField("publishers.get")
-        .appendField(new Blockly.FieldDropdown(publishers_PROPERTIES), "PROPERTY")
+        .appendField(new Blockly.FieldDropdown(publishers_PROPERTIES), "PROPERTY");
+    this.appendDummyInput('SECOND')
         .appendField("filter")
         .appendField(new Blockly.FieldDropdown(publishers_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
@@ -337,6 +338,7 @@ Blockly.Blocks['publishers_get'] = {
     var container = document.createElement('mutation');
     container.setAttribute('index', this.getFieldValue('INDEX'));
     container.setAttribute('index_value', this.getFieldValue('INDEX_VALUE'));
+    container.setAttribute('module', "publishers")
     return container;
   },
   domToMutation: function(xmlElement) {
@@ -345,7 +347,7 @@ Blockly.Blocks['publishers_get'] = {
     this.updateShape_(index, index_value);
   },
   updateShape_: function(index, index_value) {
-    var inputGroup = this.getInput('MAIN')
+    var inputGroup = this.getInput('SECOND')
     var fieldExists = this.getField('INDEX_VALUE');
     if (fieldExists) {
         inputGroup.removeField('INDEX_VALUE');
@@ -363,9 +365,10 @@ Blockly.Blocks['publishers_get'] = {
 };
 Blockly.Python['publishers_get'] = function(block) {
     Blockly.Python.definitions_['import_publishers'] = 'import publishers';
-    var property = Blockly.Python.quote_(block.getFieldValue('PROPERTY'));
+    var propertyValue = block.getFieldValue('PROPERTY') || '';
+    var property = Blockly.Python.quote_(propertyValue);
     var index_unquoted = block.getFieldValue('INDEX');
-    var index = Blockly.Python.quote_(index_unquoted);
+    var index = Blockly.Python.quote_(index_unquoted || '');
     var index_value = "''";
     if (index_unquoted != '(None)') {
         var iv = block.getFieldValue('INDEX_VALUE') || "";

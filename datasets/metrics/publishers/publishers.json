@@ -2,7 +2,8 @@
   "publishers": {
     "dicts": {
       "count": 4, 
-      "average branching factor": 6
+      "inconsistent": {}, 
+      "average branching factor": 4
     }, 
     "tags": [
       "publishers", 
@@ -14,12 +15,13 @@
       "english"
     ], 
     "atomics": {
-      "count": 21, 
+      "count": 13, 
       "nones": 0, 
-      "booleans": 11, 
-      "longs": 0, 
       "ints": 3, 
-      "strings": 1, 
+      "booleans": 0, 
+      "longs": 0, 
+      "unknown": 0, 
+      "strings": 4, 
       "floats": 6
     }, 
     "lists": {
@@ -30,10 +32,11 @@
     "heights": 3, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 27027, 
     "locals": 0, 
-    "size": 13746142
+    "size": 10177939
   }
 }

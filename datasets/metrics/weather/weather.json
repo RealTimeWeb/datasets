@@ -1,7 +1,8 @@
 {
   "weather": {
     "dicts": {
-      "count": 4, 
+      "count": 6, 
+      "inconsistent": {}, 
       "average branching factor": 3
     }, 
     "tags": [
@@ -14,26 +15,28 @@
       "wind"
     ], 
     "atomics": {
-      "count": 11, 
+      "count": 16, 
       "nones": 0, 
+      "ints": 3, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 0, 
-      "strings": 4, 
+      "unknown": 0, 
+      "strings": 6, 
       "floats": 7
     }, 
     "lists": {
       "count": 2, 
-      "lengths": 36726, 
+      "lengths": 7903, 
       "complex": 1
     }, 
     "heights": 4, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
-    "length": 36726, 
+    "length": 7903, 
     "locals": 0, 
-    "size": 11057561
+    "size": 2970373
   }
 }

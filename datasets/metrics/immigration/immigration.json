@@ -1,38 +1,40 @@
 {
   "immigration": {
     "dicts": {
-      "count": 4, 
-      "average branching factor": 42
+      "count": 6, 
+      "inconsistent": {}, 
+      "average branching factor": 3
     }, 
     "tags": [
       "immigration", 
       "naturalization", 
-      "illegals", 
       "permanants", 
       "united states", 
       "us"
     ], 
     "atomics": {
-      "count": 166, 
+      "count": 14, 
       "nones": 0, 
+      "ints": 13, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 166, 
-      "strings": 0, 
+      "unknown": 0, 
+      "strings": 1, 
       "floats": 0
     }, 
     "lists": {
       "count": 1, 
-      "lengths": 10, 
+      "lengths": 2570, 
       "complex": 1
     }, 
-    "heights": 3, 
+    "heights": 4, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
-    "length": 10, 
+    "length": 2570, 
     "locals": 0, 
-    "size": 30649
+    "size": 1470753
   }
 }

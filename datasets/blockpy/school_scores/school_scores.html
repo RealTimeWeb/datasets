@@ -1,0 +1,908 @@
+
+
+    
+    
+<style>
+pre .hll { background-color: #ffffcc }
+pre  { background: #f0f0f0; }
+pre .c { color: #60a0b0; font-style: italic } /* Comment */
+pre .err { border: 1px solid #FF0000 } /* Error */
+pre .k { color: #007020; font-weight: bold } /* Keyword */
+pre .o { color: #666666 } /* Operator */
+pre .ch { color: #60a0b0; font-style: italic } /* Comment.Hashbang */
+pre .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+pre .cp { color: #007020 } /* Comment.Preproc */
+pre .cpf { color: #60a0b0; font-style: italic } /* Comment.PreprocFile */
+pre .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+pre .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+pre .gd { color: #A00000 } /* Generic.Deleted */
+pre .ge { font-style: italic } /* Generic.Emph */
+pre .gr { color: #FF0000 } /* Generic.Error */
+pre .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+pre .gi { color: #00A000 } /* Generic.Inserted */
+pre .go { color: #888888 } /* Generic.Output */
+pre .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+pre .gs { font-weight: bold } /* Generic.Strong */
+pre .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+pre .gt { color: #0044DD } /* Generic.Traceback */
+pre .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+pre .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+pre .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+pre .kp { color: #007020 } /* Keyword.Pseudo */
+pre .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+pre .kt { color: #902000 } /* Keyword.Type */
+pre .m { color: #40a070 } /* Literal.Number */
+pre .s { color: #4070a0 } /* Literal.String */
+pre .na { color: #4070a0 } /* Name.Attribute */
+pre .nb { color: #007020 } /* Name.Builtin */
+pre .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+pre .no { color: #60add5 } /* Name.Constant */
+pre .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+pre .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+pre .ne { color: #007020 } /* Name.Exception */
+pre .nf { color: #06287e } /* Name.Function */
+pre .nl { color: #002070; font-weight: bold } /* Name.Label */
+pre .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+pre .nt { color: #062873; font-weight: bold } /* Name.Tag */
+pre .nv { color: #bb60d5 } /* Name.Variable */
+pre .ow { color: #007020; font-weight: bold } /* Operator.Word */
+pre .w { color: #bbbbbb } /* Text.Whitespace */
+pre .mb { color: #40a070 } /* Literal.Number.Bin */
+pre .mf { color: #40a070 } /* Literal.Number.Float */
+pre .mh { color: #40a070 } /* Literal.Number.Hex */
+pre .mi { color: #40a070 } /* Literal.Number.Integer */
+pre .mo { color: #40a070 } /* Literal.Number.Oct */
+pre .sb { color: #4070a0 } /* Literal.String.Backtick */
+pre .sc { color: #4070a0 } /* Literal.String.Char */
+pre .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+pre .s2 { color: #4070a0 } /* Literal.String.Double */
+pre .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+pre .sh { color: #4070a0 } /* Literal.String.Heredoc */
+pre .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+pre .sx { color: #c65d09 } /* Literal.String.Other */
+pre .sr { color: #235388 } /* Literal.String.Regex */
+pre .s1 { color: #4070a0 } /* Literal.String.Single */
+pre .ss { color: #517918 } /* Literal.String.Symbol */
+pre .bp { color: #007020 } /* Name.Builtin.Pseudo */
+pre .vc { color: #bb60d5 } /* Name.Variable.Class */
+pre .vg { color: #bb60d5 } /* Name.Variable.Global */
+pre .vi { color: #bb60d5 } /* Name.Variable.Instance */
+pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { background-color: #ffffcc }
+.syntax pre  { background: #f0f0f0; }
+.syntax pre .c { color: #60a0b0; font-style: italic } /* Comment */
+.syntax pre .err { border: 1px solid #FF0000 } /* Error */
+.syntax pre .k { color: #007020; font-weight: bold } /* Keyword */
+.syntax pre .o { color: #666666 } /* Operator */
+.syntax pre .ch { color: #60a0b0; font-style: italic } /* Comment.Hashbang */
+.syntax pre .cm { color: #60a0b0; font-style: italic } /* Comment.Multiline */
+.syntax pre .cp { color: #007020 } /* Comment.Preproc */
+.syntax pre .cpf { color: #60a0b0; font-style: italic } /* Comment.PreprocFile */
+.syntax pre .c1 { color: #60a0b0; font-style: italic } /* Comment.Single */
+.syntax pre .cs { color: #60a0b0; background-color: #fff0f0 } /* Comment.Special */
+.syntax pre .gd { color: #A00000 } /* Generic.Deleted */
+.syntax pre .ge { font-style: italic } /* Generic.Emph */
+.syntax pre .gr { color: #FF0000 } /* Generic.Error */
+.syntax pre .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.syntax pre .gi { color: #00A000 } /* Generic.Inserted */
+.syntax pre .go { color: #888888 } /* Generic.Output */
+.syntax pre .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.syntax pre .gs { font-weight: bold } /* Generic.Strong */
+.syntax pre .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.syntax pre .gt { color: #0044DD } /* Generic.Traceback */
+.syntax pre .kc { color: #007020; font-weight: bold } /* Keyword.Constant */
+.syntax pre .kd { color: #007020; font-weight: bold } /* Keyword.Declaration */
+.syntax pre .kn { color: #007020; font-weight: bold } /* Keyword.Namespace */
+.syntax pre .kp { color: #007020 } /* Keyword.Pseudo */
+.syntax pre .kr { color: #007020; font-weight: bold } /* Keyword.Reserved */
+.syntax pre .kt { color: #902000 } /* Keyword.Type */
+.syntax pre .m { color: #40a070 } /* Literal.Number */
+.syntax pre .s { color: #4070a0 } /* Literal.String */
+.syntax pre .na { color: #4070a0 } /* Name.Attribute */
+.syntax pre .nb { color: #007020 } /* Name.Builtin */
+.syntax pre .nc { color: #0e84b5; font-weight: bold } /* Name.Class */
+.syntax pre .no { color: #60add5 } /* Name.Constant */
+.syntax pre .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.syntax pre .ni { color: #d55537; font-weight: bold } /* Name.Entity */
+.syntax pre .ne { color: #007020 } /* Name.Exception */
+.syntax pre .nf { color: #06287e } /* Name.Function */
+.syntax pre .nl { color: #002070; font-weight: bold } /* Name.Label */
+.syntax pre .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.syntax pre .nt { color: #062873; font-weight: bold } /* Name.Tag */
+.syntax pre .nv { color: #bb60d5 } /* Name.Variable */
+.syntax pre .ow { color: #007020; font-weight: bold } /* Operator.Word */
+.syntax pre .w { color: #bbbbbb } /* Text.Whitespace */
+.syntax pre .mb { color: #40a070 } /* Literal.Number.Bin */
+.syntax pre .mf { color: #40a070 } /* Literal.Number.Float */
+.syntax pre .mh { color: #40a070 } /* Literal.Number.Hex */
+.syntax pre .mi { color: #40a070 } /* Literal.Number.Integer */
+.syntax pre .mo { color: #40a070 } /* Literal.Number.Oct */
+.syntax pre .sb { color: #4070a0 } /* Literal.String.Backtick */
+.syntax pre .sc { color: #4070a0 } /* Literal.String.Char */
+.syntax pre .sd { color: #4070a0; font-style: italic } /* Literal.String.Doc */
+.syntax pre .s2 { color: #4070a0 } /* Literal.String.Double */
+.syntax pre .se { color: #4070a0; font-weight: bold } /* Literal.String.Escape */
+.syntax pre .sh { color: #4070a0 } /* Literal.String.Heredoc */
+.syntax pre .si { color: #70a0d0; font-style: italic } /* Literal.String.Interpol */
+.syntax pre .sx { color: #c65d09 } /* Literal.String.Other */
+.syntax pre .sr { color: #235388 } /* Literal.String.Regex */
+.syntax pre .s1 { color: #4070a0 } /* Literal.String.Single */
+.syntax pre .ss { color: #517918 } /* Literal.String.Symbol */
+.syntax pre .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.syntax pre .vc { color: #bb60d5 } /* Name.Variable.Class */
+.syntax pre .vg { color: #bb60d5 } /* Name.Variable.Global */
+.syntax pre .vi { color: #bb60d5 } /* Name.Variable.Instance */
+.syntax pre .il { color: #40a070 } /* Literal.Number.Integer.Long */
+</style>
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="school_scores.png" alt="School Scores" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>School Scores Blockpy Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 10/24/2016</span><br>
+    <span class="text-muted">Tags: school, education, K-12, kindergarten, learning, teaching, sat</span><br>
+</div>
+    
+    <!--
+    <h3>Table of Contents</h3>
+    <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#downloads">Downloads</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#documentation">Documentation</a><ol>
+        <li><a href='#get_all'>get_all</a></li>
+        
+        </ol></li>
+        
+    </ol>
+    -->
+    
+    <h3 id="overview">Overview</h3>
+<p>
+SAT Scores from across the country
+
+</p>
+
+<p>
+<i><a href='https://nces.ed.gov/ccd/aboutCCD.asp'>https://nces.ed.gov/ccd/aboutCCD.asp</a></i>
+</p>
+
+    
+    <h3 id="usage">Key Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>Arts/Music.Average GPA</td>
+        <td><code>float</code> (Decimal number)</td> 
+        <td>The average GPA of all students in this state during this year in Arts/Music. Note that this is just the GPA within the subject, not across all academic subjects.</td>
+        <td><code>3.92</code></td>
+    </tr>
+    
+    <tr>
+        <td>Arts/Music.Average Years</td>
+        <td><code>float</code> (Decimal number)</td> 
+        <td>The average number of years that a student has studied Arts/Music when they took the exam.</td>
+        <td><code>2.2</code></td>
+    </tr>
+    
+    <tr>
+        <td>English.Average GPA</td>
+        <td><code>float</code> (Decimal number)</td> 
+        <td>The average GPA of all students in this state during this year in English. Note that this is just the GPA within the subject, not across all academic subjects.</td>
+        <td><code>3.53</code></td>
+    </tr>
+    
+    <tr>
+        <td>English.Average Years</td>
+        <td><code>float</code> (Decimal number)</td> 
+        <td>The average number of years that a student has studied English when they took the exam.</td>
+        <td><code>3.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>Foreign Languages.Average GPA</td>
+        <td><code>float</code> (Decimal number)</td> 
+        <td>The average GPA of all students in this state during this year in Foreign Languages. Note that this is just the GPA within the subject, not across all academic subjects.</td>
+        <td><code>3.54</code></td>
+    </tr>
+    
+    <tr>
+        <td>Foreign Languages.Average Years</td>
+        <td><code>float</code> (Decimal number)</td> 
+        <td>The average number of years that a student has studied Foreign Languages when they took the exam.</td>
+        <td><code>2.6</code></td>
+    </tr>
+    
+    <tr>
+        <td>Mathematics.Average GPA</td>
+        <td><code>float</code> (Decimal number)</td> 
+        <td>The average GPA of all students in this state during this year in Math. Note that this is just the GPA within the subject, not across all academic subjects.</td>
+        <td><code>3.41</code></td>
+    </tr>
+    
+    <tr>
+        <td>Mathematics.Average Years</td>
+        <td><code>float</code> (Decimal number)</td> 
+        <td>The average number of years that a student has studied Math when they took the exam.</td>
+        <td><code>4.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Natural Sciences.Average GPA</td>
+        <td><code>float</code> (Decimal number)</td> 
+        <td>The average GPA of all students in this state during this year in the Natural Sciences. Note that this is just the GPA within the subject, not across all academic subjects.</td>
+        <td><code>3.52</code></td>
+    </tr>
+    
+    <tr>
+        <td>Natural Sciences.Average Years</td>
+        <td><code>float</code> (Decimal number)</td> 
+        <td>The average number of years that a student has studied the Natural Sciences when they took the exam.</td>
+        <td><code>3.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>Social Sciences/History.Average GPA</td>
+        <td><code>float</code> (Decimal number)</td> 
+        <td>The average GPA of all students in this state during this year in Social Sciences and History. Note that this is just the GPA within the subject, not across all academic subjects.</td>
+        <td><code>3.59</code></td>
+    </tr>
+    
+    <tr>
+        <td>Social Sciences/History.Average Years</td>
+        <td><code>float</code> (Decimal number)</td> 
+        <td>The average number of years that a student has studied Social Sciences and History when they took the exam.</td>
+        <td><code>3.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 20-40k.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>513</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 20-40k.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>324</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 20-40k.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>527</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 40-60k.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>539</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 40-60k.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>442</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 40-60k.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>551</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 60-80k.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>550</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 60-80k.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>473</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 60-80k.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>564</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 80-100k.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>566</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 80-100k.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>475</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 80-100k.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>577</code></td>
+    </tr>
+    
+    <tr>
+        <td>Less than 20k.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>462</code></td>
+    </tr>
+    
+    <tr>
+        <td>Less than 20k.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>175</code></td>
+    </tr>
+    
+    <tr>
+        <td>Less than 20k.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>474</code></td>
+    </tr>
+    
+    <tr>
+        <td>More than 100k.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>588</code></td>
+    </tr>
+    
+    <tr>
+        <td>More than 100k.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>980</code></td>
+    </tr>
+    
+    <tr>
+        <td>More than 100k.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported that their family income was in this bracket.</td>
+        <td><code>590</code></td>
+    </tr>
+    
+    <tr>
+        <td>Female.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who identified as Female.</td>
+        <td><code>538</code></td>
+    </tr>
+    
+    <tr>
+        <td>Female.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who identified as Female.</td>
+        <td><code>2072</code></td>
+    </tr>
+    
+    <tr>
+        <td>Female.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who identified as Female.</td>
+        <td><code>561</code></td>
+    </tr>
+    
+    <tr>
+        <td>Male.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who identified as Male.</td>
+        <td><code>582</code></td>
+    </tr>
+    
+    <tr>
+        <td>Male.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who identified as Male.</td>
+        <td><code>1913</code></td>
+    </tr>
+    
+    <tr>
+        <td>Male.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who identified as Male.</td>
+        <td><code>574</code></td>
+    </tr>
+    
+    <tr>
+        <td>A minus.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>569</code></td>
+    </tr>
+    
+    <tr>
+        <td>A minus.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>724</code></td>
+    </tr>
+    
+    <tr>
+        <td>A minus.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>575</code></td>
+    </tr>
+    
+    <tr>
+        <td>A plus.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>622</code></td>
+    </tr>
+    
+    <tr>
+        <td>A plus.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>563</code></td>
+    </tr>
+    
+    <tr>
+        <td>A plus.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>623</code></td>
+    </tr>
+    
+    <tr>
+        <td>A.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>600</code></td>
+    </tr>
+    
+    <tr>
+        <td>A.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>1032</code></td>
+    </tr>
+    
+    <tr>
+        <td>A.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>608</code></td>
+    </tr>
+    
+    <tr>
+        <td>B.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>514</code></td>
+    </tr>
+    
+    <tr>
+        <td>B.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>1253</code></td>
+    </tr>
+    
+    <tr>
+        <td>B.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>525</code></td>
+    </tr>
+    
+    <tr>
+        <td>C.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>436</code></td>
+    </tr>
+    
+    <tr>
+        <td>C.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>188</code></td>
+    </tr>
+    
+    <tr>
+        <td>C.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>451</code></td>
+    </tr>
+    
+    <tr>
+        <td>D or lower.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>D or lower.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>D or lower.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>No response.Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>No response.Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>225</code></td>
+    </tr>
+    
+    <tr>
+        <td>No response.Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year who reported this for their high school grade point average.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 200 to 300.Math.Females</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math who identified as Female in this state during this year.</td>
+        <td><code>22</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 200 to 300.Math.Males</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math who identified as Male in this state during this year.</td>
+        <td><code>10</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 200 to 300.Math.Total</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math in this state during this year.</td>
+        <td><code>32</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 200 to 300.Verbal.Females</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.</td>
+        <td><code>14</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 200 to 300.Verbal.Males</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.</td>
+        <td><code>17</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 200 to 300.Verbal.Total</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.</td>
+        <td><code>31</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 300 to 400.Math.Females</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math who identified as Female in this state during this year.</td>
+        <td><code>173</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 300 to 400.Math.Males</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math who identified as Male in this state during this year.</td>
+        <td><code>93</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 300 to 400.Math.Total</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math in this state during this year.</td>
+        <td><code>266</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 300 to 400.Verbal.Females</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.</td>
+        <td><code>123</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 300 to 400.Verbal.Males</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.</td>
+        <td><code>84</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 300 to 400.Verbal.Total</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.</td>
+        <td><code>207</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 400 to 500.Math.Females</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math who identified as Female in this state during this year.</td>
+        <td><code>514</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 400 to 500.Math.Males</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math who identified as Male in this state during this year.</td>
+        <td><code>293</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 400 to 500.Math.Total</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math in this state during this year.</td>
+        <td><code>807</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 400 to 500.Verbal.Females</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.</td>
+        <td><code>430</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 400 to 500.Verbal.Males</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.</td>
+        <td><code>332</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 400 to 500.Verbal.Total</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.</td>
+        <td><code>762</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 500 to 600.Math.Females</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math who identified as Female in this state during this year.</td>
+        <td><code>722</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 500 to 600.Math.Males</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math who identified as Male in this state during this year.</td>
+        <td><code>614</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 500 to 600.Math.Total</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math in this state during this year.</td>
+        <td><code>1336</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 500 to 600.Verbal.Females</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.</td>
+        <td><code>690</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 500 to 600.Verbal.Males</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.</td>
+        <td><code>617</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 500 to 600.Verbal.Total</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.</td>
+        <td><code>1307</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 600 to 700.Math.Females</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math who identified as Female in this state during this year.</td>
+        <td><code>485</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 600 to 700.Math.Males</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math who identified as Male in this state during this year.</td>
+        <td><code>611</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 600 to 700.Math.Total</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math in this state during this year.</td>
+        <td><code>1096</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 600 to 700.Verbal.Females</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.</td>
+        <td><code>596</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 600 to 700.Verbal.Males</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.</td>
+        <td><code>613</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 600 to 700.Verbal.Total</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.</td>
+        <td><code>1209</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 700 to 800.Math.Females</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math who identified as Female in this state during this year.</td>
+        <td><code>156</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 700 to 800.Math.Males</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math who identified as Male in this state during this year.</td>
+        <td><code>292</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 700 to 800.Math.Total</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Math in this state during this year.</td>
+        <td><code>448</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 700 to 800.Verbal.Females</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) who identified as Female in this state during this year.</td>
+        <td><code>219</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 700 to 800.Verbal.Males</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) who identified as Male in this state during this year.</td>
+        <td><code>250</code></td>
+    </tr>
+    
+    <tr>
+        <td>Between 700 to 800.Verbal.Total</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of students in this score range for Verbal (Reading, not Writing) in this state during this year.</td>
+        <td><code>469</code></td>
+    </tr>
+    
+    <tr>
+        <td>Code</td>
+        <td><code>str</code> (Text)</td> 
+        <td>The two-letter abbreviation of the state for thsi report.</td>
+        <td><code>"AL"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Name</td>
+        <td><code>str</code> (Text)</td> 
+        <td>The full name of the state for this report.</td>
+        <td><code>"Alabama"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Math</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Math score of students in this state during this year.</td>
+        <td><code>559</code></td>
+    </tr>
+    
+    <tr>
+        <td>Test-takers</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The number of test-takers in this state during this year.</td>
+        <td><code>3985</code></td>
+    </tr>
+    
+    <tr>
+        <td>Verbal</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The average Verbal (Reading, not Writing) score of students in this state during this year.</td>
+        <td><code>567</code></td>
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>int</code> (Integer number)</td> 
+        <td>The year of this report.</td>
+        <td><code>2005</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    <br><br>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    <tr>
+        <td>Name</td>
+        <td><code>str</code> (Text)</td> 
+        <td>The full name of the state for this report.</td>
+        <td><code>"Alabama"</code></td> 
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>str</code> (Text)</td> 
+        <td>The year of this report.</td>
+        <td><code>"2005"</code></td> 
+    </tr>
+    
+    </table>
+
+    
+

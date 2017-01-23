@@ -2,6 +2,7 @@
   "skyscrapers": {
     "dicts": {
       "count": 7, 
+      "inconsistent": {}, 
       "average branching factor": 6
     }, 
     "tags": [
@@ -17,9 +18,10 @@
     "atomics": {
       "count": 41, 
       "nones": 0, 
+      "ints": 10, 
       "booleans": 25, 
       "longs": 0, 
-      "ints": 10, 
+      "unknown": 0, 
       "strings": 5, 
       "floats": 1
     }, 
@@ -31,10 +33,11 @@
     "heights": 4, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 2431, 
     "locals": 0, 
-    "size": 2280320
+    "size": 2280092
   }
 }

@@ -2,6 +2,7 @@
   "classics": {
     "dicts": {
       "count": 10, 
+      "inconsistent": {}, 
       "average branching factor": 4
     }, 
     "tags": [
@@ -25,9 +26,10 @@
     "atomics": {
       "count": 38, 
       "nones": 0, 
+      "ints": 14, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 14, 
+      "unknown": 0, 
       "strings": 10, 
       "floats": 14
     }, 
@@ -39,10 +41,11 @@
     "heights": 5, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 1006, 
     "locals": 0, 
-    "size": 1357426
+    "size": 2027138
   }
 }

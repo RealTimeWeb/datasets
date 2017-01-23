@@ -2,6 +2,7 @@
   "music": {
     "dicts": {
       "count": 4, 
+      "inconsistent": {}, 
       "average branching factor": 9
     }, 
     "tags": [
@@ -14,9 +15,10 @@
     "atomics": {
       "count": 35, 
       "nones": 0, 
+      "ints": 3, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 3, 
+      "unknown": 0, 
       "strings": 9, 
       "floats": 23
     }, 
@@ -27,8 +29,18 @@
     }, 
     "heights": 3, 
     "unions": {
-      "count": 0, 
-      "sizes": 0
+      "count": 2, 
+      "keys": {
+        "music.[0].artist.familiarity": [
+          "none", 
+          "number"
+        ], 
+        "music.[0].song.hotttnesss": [
+          "none", 
+          "number"
+        ]
+      }, 
+      "sizes": 2
     }, 
     "length": 10000, 
     "locals": 0, 

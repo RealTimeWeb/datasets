@@ -1,0 +1,43 @@
+{
+  "fragility": {
+    "dicts": {
+      "count": 4, 
+      "inconsistent": {}, 
+      "average branching factor": 4
+    }, 
+    "tags": [
+      "world", 
+      "countries", 
+      "security", 
+      "politics", 
+      "economy", 
+      "society", 
+      "effectiveness", 
+      "legitimacy"
+    ], 
+    "atomics": {
+      "count": 13, 
+      "nones": 0, 
+      "ints": 12, 
+      "booleans": 0, 
+      "longs": 0, 
+      "unknown": 0, 
+      "strings": 1, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 3292, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "keys": {}, 
+      "sizes": 0
+    }, 
+    "length": 3292, 
+    "locals": 0, 
+    "size": 1260759
+  }
+}

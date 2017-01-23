@@ -1,8 +1,9 @@
 {
   "aids": {
     "dicts": {
-      "count": 5, 
-      "average branching factor": 5
+      "count": 6, 
+      "inconsistent": {}, 
+      "average branching factor": 4
     }, 
     "tags": [
       "aids", 
@@ -20,9 +21,10 @@
     "atomics": {
       "count": 22, 
       "nones": 0, 
+      "ints": 16, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 16, 
+      "unknown": 0, 
       "strings": 1, 
       "floats": 5
     }, 
@@ -34,10 +36,11 @@
     "heights": 4, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 2574, 
     "locals": 0, 
-    "size": 2367334
+    "size": 1422676
   }
 }

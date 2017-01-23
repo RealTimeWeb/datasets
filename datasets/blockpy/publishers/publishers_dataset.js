@@ -25298,7 +25298,7 @@ _IMPORTED_DATASETS['publishers'] = {
   "publisher revenue": {
     "comment": "The amount of money that the publisher made per day on this book, in dollars.", 
     "index": false, 
-    "name": "publishers.[0].daily.publisher revenue", 
+    "name": "publishers.[0].daily average.publisher revenue", 
     "data": [
       0.0, 
       0.0, 
@@ -37940,7 +37940,7 @@ _IMPORTED_DATASETS['publishers'] = {
       2.274, 
       8.844
     ], 
-    "pretty": "Daily: Publisher Revenue", 
+    "pretty": "Daily Average: Publisher Revenue", 
     "type": "number"
   }, 
   "sold by": {
@@ -50594,7 +50594,7 @@ _IMPORTED_DATASETS['publishers'] = {
   "units sold": {
     "comment": "The number of books sold per day.", 
     "index": false, 
-    "name": "publishers.[0].daily.units sold", 
+    "name": "publishers.[0].daily average.units sold", 
     "data": [
       615, 
       600, 
@@ -63236,7 +63236,7 @@ _IMPORTED_DATASETS['publishers'] = {
       1, 
       1
     ], 
-    "pretty": "Daily: Units Sold", 
+    "pretty": "Daily Average: Units Sold", 
     "type": "number"
   }, 
   "sales rank": {
@@ -75890,7 +75890,7 @@ _IMPORTED_DATASETS['publishers'] = {
   "author revenue": {
     "comment": "The amount of money that the author made per day on this book, in dollars.", 
     "index": false, 
-    "name": "publishers.[0].daily.author revenue", 
+    "name": "publishers.[0].daily average.author revenue", 
     "data": [
       213.0975, 
       207.9, 
@@ -88532,7 +88532,7 @@ _IMPORTED_DATASETS['publishers'] = {
       0.758, 
       2.948
     ], 
-    "pretty": "Daily: Author Revenue", 
+    "pretty": "Daily Average: Author Revenue", 
     "type": "number"
   }, 
   "total reviews": {
@@ -101186,7 +101186,7 @@ _IMPORTED_DATASETS['publishers'] = {
   "gross sales": {
     "comment": "The total amount of money that was made per day on this book, in dollars.", 
     "index": false, 
-    "name": "publishers.[0].daily.gross sales", 
+    "name": "publishers.[0].daily average.gross sales", 
     "data": [
       608.85, 
       594.0, 
@@ -113828,11 +113828,11 @@ _IMPORTED_DATASETS['publishers'] = {
       3.79, 
       14.74
     ], 
-    "pretty": "Daily: Gross Sales", 
+    "pretty": "Daily Average: Gross Sales", 
     "type": "number"
   }, 
   "genre": {
-    "comment": "The genre of the book, either \"fiction\", \"non-fiction\", \"genre fiction\", \"childrens\", \"comics\", or \"foreign language\". Some books originally had more than one genre, but this was simplified down to the most prominent genre.", 
+    "comment": "The genre of the book, either \"fiction\", \"nonfiction\", \"genre fiction\", \"children\", \"comics\", or \"foreign language\". Some books originally had more than one genre, but this was simplified down to the most prominent genre.", 
     "index": true, 
     "name": "publishers.[0].genre", 
     "data": [
@@ -126482,7 +126482,7 @@ _IMPORTED_DATASETS['publishers'] = {
   "amazon revenue": {
     "comment": "The amount of money that Amazon made per day on this book, in dollars.", 
     "index": false, 
-    "name": "publishers.[0].daily.amazon revenue", 
+    "name": "publishers.[0].daily average.amazon revenue", 
     "data": [
       395.7525, 
       386.1, 
@@ -139124,7 +139124,7 @@ _IMPORTED_DATASETS['publishers'] = {
       0.758, 
       2.948
     ], 
-    "pretty": "Daily: Amazon Revenue", 
+    "pretty": "Daily Average: Amazon Revenue", 
     "type": "number"
   }, 
   "type": {

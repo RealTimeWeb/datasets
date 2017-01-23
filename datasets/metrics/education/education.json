@@ -2,6 +2,7 @@
   "school": {
     "dicts": {
       "count": 15, 
+      "inconsistent": {}, 
       "average branching factor": 3
     }, 
     "tags": [

@@ -1,0 +1,46 @@
+{
+  "construction_spending": {
+    "dicts": {
+      "count": 10, 
+      "inconsistent": {}, 
+      "average branching factor": 12
+    }, 
+    "tags": [
+      "construction", 
+      "spending", 
+      "us", 
+      "united states", 
+      "america", 
+      "government", 
+      "buildings", 
+      "residential", 
+      "non-residential", 
+      "private", 
+      "public"
+    ], 
+    "atomics": {
+      "count": 119, 
+      "nones": 0, 
+      "ints": 117, 
+      "booleans": 0, 
+      "longs": 0, 
+      "unknown": 0, 
+      "strings": 2, 
+      "floats": 0
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 169, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "keys": {}, 
+      "sizes": 0
+    }, 
+    "length": 169, 
+    "locals": 0, 
+    "size": 712174
+  }
+}

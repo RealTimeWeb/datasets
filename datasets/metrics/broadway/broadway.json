@@ -1,8 +1,9 @@
 {
   "broadway": {
     "dicts": {
-      "count": 1, 
-      "average branching factor": 11
+      "count": 4, 
+      "inconsistent": {}, 
+      "average branching factor": 3
     }, 
     "tags": [
       "broadway", 
@@ -11,26 +12,28 @@
       "tickets"
     ], 
     "atomics": {
-      "count": 11, 
+      "count": 12, 
       "nones": 0, 
+      "ints": 8, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 7, 
-      "strings": 3, 
+      "unknown": 0, 
+      "strings": 4, 
       "floats": 0
     }, 
     "lists": {
       "count": 1, 
-      "lengths": 41750, 
+      "lengths": 31296, 
       "complex": 1
     }, 
-    "heights": 2, 
+    "heights": 3, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
-    "length": 41750, 
+    "length": 31296, 
     "locals": 0, 
-    "size": 8457344
+    "size": 8231514
   }
 }

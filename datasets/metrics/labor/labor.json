@@ -1,10 +1,11 @@
 {
   "labor": {
     "dicts": {
-      "count": 73, 
+      "count": 29, 
       "inconsistent": {
-        "White": "result.[0].data.Civilian noninstitutional population.White.Women", 
-        "Black or African American": "result.[0].data.Civilian noninstitutional population.Black or African American.Women"
+        "White": "result.[0].Data.Employed.White.Participation Rate", 
+        "Black or African American": "result.[0].Data.Employed.Black or African American.Participation Rate", 
+        "Asian": "result.[0].Data.Employed.Asian.Participation Rate"
       }, 
       "average branching factor": 2
     }, 
@@ -29,13 +30,13 @@
       "government"
     ], 
     "atomics": {
-      "count": 89, 
+      "count": 51, 
       "nones": 0, 
       "ints": 11, 
       "booleans": 0, 
       "longs": 0, 
       "unknown": 0, 
-      "strings": 39, 
+      "strings": 1, 
       "floats": 39
     }, 
     "lists": {
@@ -45,49 +46,12 @@
     }, 
     "heights": 6, 
     "unions": {
-      "count": 9, 
-      "keys": {
-        "result.[0].data.Civilian labor force participation rate.Asian.All": [
-          "dict", 
-          "number"
-        ], 
-        "result.[0].data.Employment-population ratio.Asian.All": [
-          "dict", 
-          "number"
-        ], 
-        "result.[0].data.Not in labor force.Asian.All": [
-          "dict", 
-          "number"
-        ], 
-        "result.[0].data.Unemployed.Asian.All": [
-          "dict", 
-          "number"
-        ], 
-        "result.[0].data.Civilian labor force.Asian.All": [
-          "dict", 
-          "number"
-        ], 
-        "result.[0].data.Employed.Asian.All": [
-          "dict", 
-          "number"
-        ], 
-        "result.[0].data.Not in labor force.White.All": [
-          "dict", 
-          "number"
-        ], 
-        "result.[0].data.Civilian noninstitutional population.Asian.All": [
-          "dict", 
-          "number"
-        ], 
-        "result.[0].data.Unemployment rate.Asian.All": [
-          "dict", 
-          "number"
-        ]
-      }, 
-      "sizes": 2
+      "count": 0, 
+      "keys": {}, 
+      "sizes": 0
     }, 
     "length": 528, 
     "locals": 0, 
-    "size": 1655873
+    "size": 726272
   }
 }

@@ -2,6 +2,7 @@
   "slavery": {
     "dicts": {
       "count": 6, 
+      "inconsistent": {}, 
       "average branching factor": 4
     }, 
     "tags": [
@@ -17,9 +18,10 @@
     "atomics": {
       "count": 21, 
       "nones": 0, 
+      "ints": 4, 
       "booleans": 0, 
       "longs": 0, 
-      "ints": 4, 
+      "unknown": 0, 
       "strings": 13, 
       "floats": 4
     }, 
@@ -31,6 +33,7 @@
     "heights": 4, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
     "length": 9599, 

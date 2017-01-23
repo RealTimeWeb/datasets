@@ -2,6 +2,7 @@
   "earthquakes": {
     "dicts": {
       "count": 4, 
+      "inconsistent": {}, 
       "average branching factor": 5
     }, 
     "tags": [
@@ -16,24 +17,26 @@
     "atomics": {
       "count": 18, 
       "nones": 0, 
-      "booleans": 0, 
-      "longs": 0, 
       "ints": 7, 
+      "booleans": 0, 
+      "longs": 1, 
+      "unknown": 0, 
       "strings": 4, 
       "floats": 6
     }, 
     "lists": {
       "count": 1, 
-      "lengths": 9303, 
+      "lengths": 8394, 
       "complex": 1
     }, 
     "heights": 3, 
     "unions": {
       "count": 0, 
+      "keys": {}, 
       "sizes": 0
     }, 
-    "length": 9303, 
+    "length": 8394, 
     "locals": 0, 
-    "size": 3567648
+    "size": 3239120
   }
 }

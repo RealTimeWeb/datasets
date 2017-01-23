@@ -10404,7 +10404,7 @@ _IMPORTED_DATASETS['broadway'] = {
     "type": "number"
   }, 
   "Full": {
-    "comment": "The full date representation that this performance's week ended on.", 
+    "comment": "The full date representation that this performance's week ended on in \"Month/Day/Year\" format.", 
     "index": false, 
     "name": "broadway.[0].Date.Full", 
     "data": [
@@ -93636,7 +93636,7 @@ _IMPORTED_DATASETS['broadway'] = {
     "type": "number"
   }, 
   "Year": {
-    "comment": "The year that this performance occurred in.", 
+    "comment": "The year that this week of performances occurred in.", 
     "index": true, 
     "name": "broadway.[0].Date.Year", 
     "data": [
