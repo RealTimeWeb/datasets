@@ -2,6 +2,11 @@
   "real_estate": {
     "dicts": {
       "count": 6, 
+      "levels": {
+        "1": 2, 
+        "2": 5, 
+        "3": 3
+      }, 
       "inconsistent": {}, 
       "average branching factor": 3
     }, 
@@ -34,6 +39,9 @@
       "sizes": 0
     }, 
     "length": 9315, 
+    "indexes": [
+      1
+    ], 
     "locals": 0, 
     "size": 4443172
   }

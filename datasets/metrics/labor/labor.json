@@ -2,6 +2,13 @@
   "labor": {
     "dicts": {
       "count": 29, 
+      "levels": {
+        "1": 2, 
+        "2": 4, 
+        "3": 3, 
+        "4": 2, 
+        "5": 3
+      }, 
       "inconsistent": {
         "White": "result.[0].Data.Employed.White.Participation Rate", 
         "Black or African American": "result.[0].Data.Employed.Black or African American.Participation Rate", 
@@ -51,6 +58,9 @@
       "sizes": 0
     }, 
     "length": 528, 
+    "indexes": [
+      0
+    ], 
     "locals": 0, 
     "size": 726272
   }

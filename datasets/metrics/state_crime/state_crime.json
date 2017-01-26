@@ -2,6 +2,12 @@
   "crime": {
     "dicts": {
       "count": 8, 
+      "levels": {
+        "1": 3, 
+        "2": 3, 
+        "3": 2, 
+        "4": 4
+      }, 
       "inconsistent": {}, 
       "average branching factor": 3
     }, 
@@ -39,6 +45,9 @@
       "sizes": 0
     }, 
     "length": 2751, 
+    "indexes": [
+      2
+    ], 
     "locals": 0, 
     "size": 1205727
   }

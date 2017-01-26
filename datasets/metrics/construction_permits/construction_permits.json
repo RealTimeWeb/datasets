@@ -2,6 +2,10 @@
   "construction_permits": {
     "dicts": {
       "count": 4, 
+      "levels": {
+        "1": 4, 
+        "2": 4
+      }, 
       "inconsistent": {}, 
       "average branching factor": 4
     }, 
@@ -40,6 +44,9 @@
       "sizes": 0
     }, 
     "length": 7089, 
+    "indexes": [
+      0
+    ], 
     "locals": 0, 
     "size": 1965754
   }

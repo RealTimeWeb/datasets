@@ -42,11 +42,31 @@ shapes = pd.DataFrame([{'Heights': s['heights'],
 }
  for r in reports for s in r.values()])
 
+for r in reports:
+    for s in r.values():
+        if 'levels' not in s['dicts']:
+            print(r)
+
+levels = pd.DataFrame([{l: v for l,v in 
+                        s['dicts']['levels'].items()
+                        if v <= 50}
+   for r in reports for s in r.values()])
+levels = levels.reindex_axis(reversed(sorted(levels.columns)), axis=1)
+
+levelIQR = pd.DataFrame(columns=levels.columns)
+for c in levels.columns:
+    levelIQR[c] = [levels[c].quantile(0.75) - levels[c].quantile(0.25) ]
+levels.median()
+levelIQR.T
+levels.count()
+
 sax = shapes.plot.box(subplots=True, vert=False, layout=(5, 1), 
                       sharex=False, figsize=(5,3))
 fig = matplotlib.pyplot.gcf()
 #fig.set_size_inches(2.5, .5)
 fig.subplots_adjust(hspace=.9)
+
+levels.plot.box(vert=False, showfliers=False)
 
 '''
 shapes = pd.DataFrame([s['heights'] for r in reports for s in r.values()])

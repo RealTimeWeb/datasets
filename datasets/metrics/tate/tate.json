@@ -2,6 +2,11 @@
   "tate": {
     "dicts": {
       "count": 7, 
+      "levels": {
+        "1": 4, 
+        "2": 4, 
+        "3": 2
+      }, 
       "inconsistent": {}, 
       "average branching factor": 3
     }, 
@@ -33,6 +38,9 @@
       "sizes": 0
     }, 
     "length": 3332, 
+    "indexes": [
+      2
+    ], 
     "locals": 0, 
     "size": 2093646
   }

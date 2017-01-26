@@ -2,6 +2,11 @@
   "retail_services": {
     "dicts": {
       "count": 6, 
+      "levels": {
+        "1": 2, 
+        "2": 4, 
+        "3": 64
+      }, 
       "inconsistent": {}, 
       "average branching factor": 33
     }, 
@@ -38,6 +43,9 @@
       "sizes": 0
     }, 
     "length": 289, 
+    "indexes": [
+      0
+    ], 
     "locals": 0, 
     "size": 2507176
   }

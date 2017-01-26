@@ -2,6 +2,9 @@
   "health": {
     "dicts": {
       "count": 1, 
+      "levels": {
+        "1": 6
+      }, 
       "inconsistent": {}, 
       "average branching factor": 6
     }, 
@@ -32,6 +35,9 @@
       "sizes": 0
     }, 
     "length": 14265, 
+    "indexes": [
+      3
+    ], 
     "locals": 0, 
     "size": 1743261
   }

@@ -2,6 +2,10 @@
   "artwork": {
     "dicts": {
       "count": 4, 
+      "levels": {
+        "1": 4, 
+        "2": 6
+      }, 
       "inconsistent": {}, 
       "average branching factor": 5
     }, 
@@ -35,6 +39,9 @@
       "sizes": 0
     }, 
     "length": 48576, 
+    "indexes": [
+      0
+    ], 
     "locals": 0, 
     "size": 43556336
   }

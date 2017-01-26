@@ -2,6 +2,11 @@
   "energy": {
     "dicts": {
       "count": 6, 
+      "levels": {
+        "1": 2, 
+        "2": 4, 
+        "3": 10
+      }, 
       "inconsistent": {}, 
       "average branching factor": 8
     }, 
@@ -36,6 +41,9 @@
       "sizes": 0
     }, 
     "length": 66, 
+    "indexes": [
+      0
+    ], 
     "locals": 0, 
     "size": 71292
   }

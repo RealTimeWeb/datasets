@@ -2,6 +2,11 @@
   "medal_of_honor": {
     "dicts": {
       "count": 8, 
+      "levels": {
+        "1": 6, 
+        "2": 3, 
+        "3": 3
+      }, 
       "inconsistent": {
         "date": "awardee.[0].birth.date.full"
       }, 
@@ -48,6 +53,9 @@
       "sizes": 0
     }, 
     "length": 3475, 
+    "indexes": [
+      0
+    ], 
     "locals": 0, 
     "size": 4255759
   }

@@ -85,6 +85,7 @@ class JsonMetrics(object):
             'dicts': {
                 'count': 0,
                 'widths': [],
+                'levels': {},
                 'inconsistent': {}
             },
             'unions': {
@@ -122,6 +123,12 @@ class JsonMetrics(object):
         
     def walk_dict(self, a_dict, parent_name):
         self.report['dicts']['widths'].append(len(a_dict))
+        height = len(self.path)
+        level_dict = self.report['dicts']['levels']
+        if height not in level_dict:
+            level_dict[height] = []
+        level_dict[height].append(len(a_dict))
+            
         self.report['dicts']['count'] += 1
         for key, value in a_dict.items():
             self.path.append(key)
@@ -173,6 +180,9 @@ class JsonMetrics(object):
             self.report['lists']['lengths'] = max(self.report['lists']['lengths'])
         else:
             self.report['lists']['lengths'] = 0
+        if self.report['dicts']['levels']:
+            for level, ll in self.report['dicts']['levels'].items():
+                self.report['dicts']['levels'][level] = average(ll)
         if self.report['dicts']['widths']:
             self.report['dicts']['average branching factor'] = average(self.report['dicts']['widths'])
             del self.report['dicts']['widths']
@@ -243,6 +253,8 @@ def build_report(model):
                 json_reports[name]['length'] = len(data_list)
                 json_reports[name]['size'] = os.path.getsize(file)
                 json_reports[name]['tags'] = model['metadata']['tags']
+                json_reports[name]['indexes'] = [len(local['indexes'])
+                                                 for local in locals]
             elif type == "csv":
                 pass
     return json.dumps(json_reports, indent=2)

@@ -2,6 +2,12 @@
   "finance": {
     "dicts": {
       "count": 25, 
+      "levels": {
+        "1": 4, 
+        "2": 18, 
+        "3": 7, 
+        "4": 3
+      }, 
       "inconsistent": {}, 
       "average branching factor": 7
     }, 
@@ -36,6 +42,9 @@
       "sizes": 0
     }, 
     "length": 918, 
+    "indexes": [
+      2
+    ], 
     "locals": 0, 
     "size": 5738653
   }

@@ -2,6 +2,10 @@
   "publishers": {
     "dicts": {
       "count": 4, 
+      "levels": {
+        "1": 5, 
+        "2": 3
+      }, 
       "inconsistent": {}, 
       "average branching factor": 4
     }, 
@@ -36,6 +40,9 @@
       "sizes": 0
     }, 
     "length": 27027, 
+    "indexes": [
+      3
+    ], 
     "locals": 0, 
     "size": 10177939
   }

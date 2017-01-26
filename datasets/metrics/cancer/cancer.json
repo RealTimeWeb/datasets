@@ -2,6 +2,10 @@
   "cancer": {
     "dicts": {
       "count": 3, 
+      "levels": {
+        "1": 4, 
+        "2": 5
+      }, 
       "inconsistent": {}, 
       "average branching factor": 5
     }, 
@@ -36,6 +40,9 @@
       "sizes": 0
     }, 
     "length": 22140, 
+    "indexes": [
+      2
+    ], 
     "locals": 0, 
     "size": 7080719
   }

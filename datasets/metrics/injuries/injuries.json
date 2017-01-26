@@ -2,6 +2,10 @@
   "injuries": {
     "dicts": {
       "count": 5, 
+      "levels": {
+        "1": 5, 
+        "2": 3
+      }, 
       "inconsistent": {}, 
       "average branching factor": 3
     }, 
@@ -48,6 +52,9 @@
       "sizes": 0
     }, 
     "length": 25010, 
+    "indexes": [
+      0
+    ], 
     "locals": 0, 
     "size": 11367169
   }

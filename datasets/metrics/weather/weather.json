@@ -2,6 +2,11 @@
   "weather": {
     "dicts": {
       "count": 6, 
+      "levels": {
+        "1": 4, 
+        "2": 3, 
+        "3": 3
+      }, 
       "inconsistent": {}, 
       "average branching factor": 3
     }, 
@@ -36,6 +41,9 @@
       "sizes": 0
     }, 
     "length": 7903, 
+    "indexes": [
+      2
+    ], 
     "locals": 0, 
     "size": 2970373
   }

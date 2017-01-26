@@ -2,6 +2,11 @@
   "graduates": {
     "dicts": {
       "count": 6, 
+      "levels": {
+        "1": 4, 
+        "2": 4, 
+        "3": 3
+      }, 
       "inconsistent": {}, 
       "average branching factor": 4
     }, 
@@ -38,6 +43,9 @@
       "sizes": 0
     }, 
     "length": 173, 
+    "indexes": [
+      0
+    ], 
     "locals": 0, 
     "size": 110659
   }

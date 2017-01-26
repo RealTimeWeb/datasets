@@ -2,6 +2,11 @@
   "food": {
     "dicts": {
       "count": 6, 
+      "levels": {
+        "1": 4, 
+        "2": 26, 
+        "3": 5
+      }, 
       "inconsistent": {}, 
       "average branching factor": 8
     }, 
@@ -34,6 +39,9 @@
       "sizes": 0
     }, 
     "length": 7413, 
+    "indexes": [
+      0
+    ], 
     "locals": 0, 
     "size": 8503874
   }

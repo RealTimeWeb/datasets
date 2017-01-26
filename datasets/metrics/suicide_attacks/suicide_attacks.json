@@ -2,6 +2,11 @@
   "suicide_attacks": {
     "dicts": {
       "count": 8, 
+      "levels": {
+        "1": 6, 
+        "2": 3, 
+        "3": 3
+      }, 
       "inconsistent": {}, 
       "average branching factor": 3
     }, 
@@ -46,6 +51,9 @@
       "sizes": 0
     }, 
     "length": 4616, 
+    "indexes": [
+      0
+    ], 
     "locals": 0, 
     "size": 3021293
   }

@@ -2,6 +2,12 @@
   "drug_bank": {
     "dicts": {
       "count": 3, 
+      "levels": {
+        "1": 10, 
+        "2": 11, 
+        "3": 7
+      }, 
+      "inconsistent": {}, 
       "average branching factor": 9
     }, 
     "tags": [
@@ -25,7 +31,7 @@
     }, 
     "lists": {
       "count": 7, 
-      "lengths": 7759, 
+      "lengths": 7755, 
       "complex": 2
     }, 
     "heights": 5, 
@@ -34,8 +40,8 @@
       "keys": {}, 
       "sizes": 0
     }, 
-    "length": 7759, 
+    "length": 7755, 
     "locals": 0, 
-    "size": 8427304
+    "size": 8425545
   }
 }

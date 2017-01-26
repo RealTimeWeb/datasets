@@ -2,6 +2,11 @@
   "fragility": {
     "dicts": {
       "count": 4, 
+      "levels": {
+        "1": 3, 
+        "2": 3, 
+        "3": 5
+      }, 
       "inconsistent": {}, 
       "average branching factor": 4
     }, 
@@ -37,6 +42,9 @@
       "sizes": 0
     }, 
     "length": 3292, 
+    "indexes": [
+      0
+    ], 
     "locals": 0, 
     "size": 1260759
   }

@@ -2,6 +2,11 @@
   "development": {
     "dicts": {
       "count": 6, 
+      "levels": {
+        "1": 3, 
+        "2": 4, 
+        "3": 5
+      }, 
       "inconsistent": {}, 
       "average branching factor": 5
     }, 
@@ -38,6 +43,9 @@
       "sizes": 0
     }, 
     "length": 6426, 
+    "indexes": [
+      2
+    ], 
     "locals": 0, 
     "size": 6457923
   }

@@ -2,6 +2,11 @@
   "cars": {
     "dicts": {
       "count": 6, 
+      "levels": {
+        "1": 4, 
+        "2": 4, 
+        "3": 2
+      }, 
       "inconsistent": {}, 
       "average branching factor": 3
     }, 
@@ -32,6 +37,9 @@
       "sizes": 0
     }, 
     "length": 5076, 
+    "indexes": [
+      2
+    ], 
     "locals": 0, 
     "size": 2947891
   }
