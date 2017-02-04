@@ -3,9 +3,18 @@
     "dicts": {
       "count": 7, 
       "levels": {
-        "1": 7, 
-        "2": 9, 
-        "3": 2
+        "1": {
+          "lengths": 7, 
+          "key lengths": 10
+        }, 
+        "2": {
+          "lengths": 9, 
+          "key lengths": 8
+        }, 
+        "3": {
+          "lengths": 2, 
+          "key lengths": 8
+        }
       }, 
       "inconsistent": {}, 
       "average branching factor": 6

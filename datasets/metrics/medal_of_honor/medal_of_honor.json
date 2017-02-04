@@ -3,9 +3,18 @@
     "dicts": {
       "count": 8, 
       "levels": {
-        "1": 6, 
-        "2": 3, 
-        "3": 3
+        "1": {
+          "lengths": 6, 
+          "key lengths": 7
+        }, 
+        "2": {
+          "lengths": 3, 
+          "key lengths": 8
+        }, 
+        "3": {
+          "lengths": 3, 
+          "key lengths": 5
+        }
       }, 
       "inconsistent": {
         "date": "awardee.[0].birth.date.full"

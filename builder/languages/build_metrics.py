@@ -126,8 +126,9 @@ class JsonMetrics(object):
         height = len(self.path)
         level_dict = self.report['dicts']['levels']
         if height not in level_dict:
-            level_dict[height] = []
-        level_dict[height].append(len(a_dict))
+            level_dict[height] = {'lengths': [], 'key lengths': []}
+        level_dict[height]['lengths'].append(len(a_dict))
+        level_dict[height]['key lengths'].append(len(parent_name))
             
         self.report['dicts']['count'] += 1
         for key, value in a_dict.items():
@@ -182,7 +183,8 @@ class JsonMetrics(object):
             self.report['lists']['lengths'] = 0
         if self.report['dicts']['levels']:
             for level, ll in self.report['dicts']['levels'].items():
-                self.report['dicts']['levels'][level] = average(ll)
+                self.report['dicts']['levels'][level]['lengths'] = average(ll['lengths'])
+                self.report['dicts']['levels'][level]['key lengths'] = average(ll['key lengths'])
         if self.report['dicts']['widths']:
             self.report['dicts']['average branching factor'] = average(self.report['dicts']['widths'])
             del self.report['dicts']['widths']

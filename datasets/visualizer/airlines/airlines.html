@@ -188,7 +188,7 @@ mainModel = {
     ]),
     'structures':  ko.observableArray([
     
-        {'name': "airlines", 'row': "airline", 'order': "", 'data': airlines}
+        {'name': "airlines", 'row': "airports", 'order': "", 'data': airlines}
     
     ])
 };
@@ -665,7 +665,22 @@ ko.bindingHandlers.fadeVisible = {
                     .orient("bottom");
         var yAxis = d3.svg.axis().scale(y).orient("left");
         
-        if (stringContains(x_axis_label.toLowerCase(), "year")) {
+        // Get the indexes; remove any filtered ones
+        // Use them in tandem to get the x-axis values
+        if (chart.id == 'line') {
+            var indexes = mainModel.only_indexes(mainModel.selected.dataset().data);
+            xAxis.tickFormat(function(value, index) {
+                var a_tick = [];
+                for (var j = 0; j < indexes.length; j = j+1) {
+                    var an_index = indexes[j];
+                    if (an_index.name != filter_index) {
+                        a_tick.push(indexes[j].data[value]);
+                    }
+                }
+                return a_tick.join(", ");
+            });
+            xAxisOrdinal.tickFormat(d3.format("d"));
+        } else if (stringContains(x_axis_label.toLowerCase(), "year")) {
             xAxis.tickFormat(d3.format("d"));
             xAxisOrdinal.tickFormat(d3.format("d"));
         }
@@ -678,22 +693,23 @@ ko.bindingHandlers.fadeVisible = {
 
         var r = canvas.selectAll("g.x.axis")
             .call(chart.id == 'bar' ? xAxisOrdinal : xAxis);
-        if (chart.id == 'bar') {
+        if (chart.id == 'bar' || chart.id == 'line') {
             r.selectAll("text")  
-            .style("text-anchor", "end")
-            .attr("dx", "-.3em")
-            .attr("dy", ".15em")
-            .attr("transform", "rotate(-15)" );
-            
+              .style("text-anchor", "end")
+              .attr("dx", "-.3em")
+              .attr("dy", ".15em")
+              .attr("transform", "rotate(-15)" );
+        }
+        if (chart.id == 'bar') {
             d3.selectAll("text.aggregator-text")
-                .text("Aggregation: "+mainModel.selected.third().name);
+              .text("Aggregation: "+mainModel.selected.third().name);
         } else {
             if (mainModel.selected.filter_value() !== undefined) {
                 d3.selectAll("text.aggregator-text")
-                    .text(mainModel.selected.filter_value());
+                  .text(mainModel.selected.filter_value());
             } else {
                 d3.selectAll("text.aggregator-text")
-                .text("");
+                  .text("");
             }
         }
         

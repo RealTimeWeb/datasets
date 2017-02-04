@@ -3,11 +3,26 @@
     "dicts": {
       "count": 29, 
       "levels": {
-        "1": 2, 
-        "2": 4, 
-        "3": 3, 
-        "4": 2, 
-        "5": 3
+        "1": {
+          "lengths": 2, 
+          "key lengths": 6
+        }, 
+        "2": {
+          "lengths": 4, 
+          "key lengths": 4
+        }, 
+        "3": {
+          "lengths": 3, 
+          "key lengths": 18
+        }, 
+        "4": {
+          "lengths": 2, 
+          "key lengths": 11
+        }, 
+        "5": {
+          "lengths": 3, 
+          "key lengths": 13
+        }
       }, 
       "inconsistent": {
         "White": "result.[0].Data.Employed.White.Participation Rate", 

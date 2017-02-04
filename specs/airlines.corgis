@@ -16,7 +16,7 @@ metadata:
 local:
   - file: airlines.json
     name: airlines
-    row: airline
+    row: airports
     indexes:
       - name: airport
         jsonpath: airlines.[0].Airport.Code
