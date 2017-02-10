@@ -284,7 +284,7 @@ ko.bindingHandlers.fadeVisible = {
 
     ko.applyBindings(mainModel);
     
-    mainModel.settings.sampling(Math.min(100, mainModel.structures()[0].data.length))
+    mainModel.settings.sampling(Math.min(100, mainModel.structures()[0].data[0].data.length))
     
     function changeCategory() {
         $('#select-bar-keys').empty().multiSelect('refresh');
@@ -683,16 +683,22 @@ ko.bindingHandlers.fadeVisible = {
                 for (var j = 0; j < indexes.length; j = j+1) {
                     var an_index = indexes[j],
                         value = an_index.data[i];
+                    if (typeof value === 'string') {
+                        key_value = value.replace(',', '')
+                    } else {
+                        key_value = value;
+                    }
                     if (an_index.name != filter_index) {
                         a_tick.push(value);
-                    } else if (value != filter_value) {
+                    } else if (key_value != filter_value) {
                         keep = false;
                     }
                 }
                 if (keep) {
-                    all_ticks.push(a_tick.join(", "));
+                    all_ticks.push(""+a_tick.join(", "));
                 }
             }
+            console.log(all_ticks);
             xAxis.tickFormat(function(value, index) {
                 return all_ticks[value];
             });

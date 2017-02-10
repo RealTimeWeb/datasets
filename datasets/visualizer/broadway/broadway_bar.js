@@ -2271,7 +2271,7 @@ broadway_bar = [
       }
     }, 
     "name": "broadway.[0].Show.Theatre", 
-    "pretty": "Show: Theatre", 
+    "pretty": "Show, Theatre", 
     "indexes": [
       "Nederlander", 
       "Jacobs", 
@@ -3403,7 +3403,7 @@ broadway_bar = [
       }
     }, 
     "name": "broadway.[0].Date.Year", 
-    "pretty": "Date: Year", 
+    "pretty": "Date, Year", 
     "indexes": [
       "2015", 
       "2014", 
@@ -3578,7 +3578,7 @@ broadway_bar = [
       }
     }, 
     "name": "broadway.[0].Show.Type", 
-    "pretty": "Show: Type", 
+    "pretty": "Show, Type", 
     "indexes": [
       "Play", 
       "Musical", 

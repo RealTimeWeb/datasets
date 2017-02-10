@@ -2808,7 +2808,7 @@ airlines_bar = [
       }
     }, 
     "name": "airlines.[0].Airport.Code", 
-    "pretty": "Airport: Code", 
+    "pretty": "Airport, Code", 
     "indexes": [
       "JFK", 
       "MIA", 
@@ -17335,7 +17335,7 @@ airlines_bar = [
       }
     }, 
     "name": "airlines.[0].Time.Label", 
-    "pretty": "Time: Label", 
+    "pretty": "Time, Label", 
     "indexes": [
       "2014/10", 
       "2014/11", 

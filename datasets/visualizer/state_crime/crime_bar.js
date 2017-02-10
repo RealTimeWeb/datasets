@@ -130,9 +130,9 @@ crime_bar = [
           "average": 1239467.0943396227
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 9769790, 
-          "average": 195395.8
+          "count": 53, 
+          "sum": 10702825, 
+          "average": 201940.09433962265
         }, 
         "West Virginia": {
           "count": 53, 
@@ -175,9 +175,9 @@ crime_bar = [
           "average": 627172.4150943396
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 896434, 
-          "average": 19073.063829787236
+          "count": 53, 
+          "sum": 1056627, 
+          "average": 19936.35849056604
         }, 
         "Kentucky": {
           "count": 53, 
@@ -188,6 +188,11 @@ crime_bar = [
           "count": 53, 
           "sum": 2724352, 
           "average": 51402.8679245283
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 500820538, 
+          "average": 9449444.113207547
         }, 
         "Nebraska": {
           "count": 53, 
@@ -245,9 +250,9 @@ crime_bar = [
           "average": 173835.5849056604
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 318865, 
-          "average": 26572.083333333332
+          "count": 53, 
+          "sum": 2114933, 
+          "average": 39904.3962264151
         }, 
         "Texas": {
           "count": 53, 
@@ -255,9 +260,9 @@ crime_bar = [
           "average": 770780.1886792453
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 2859599, 
-          "average": 57191.98
+          "count": 53, 
+          "sum": 3044314, 
+          "average": 57439.88679245283
         }, 
         "Maine": {
           "count": 53, 
@@ -387,9 +392,9 @@ crime_bar = [
           "average": 1327.1000000000001
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 43579.2, 
-          "average": 871.584
+          "count": 53, 
+          "sum": 48503.59999999999, 
+          "average": 915.1622641509433
         }, 
         "West Virginia": {
           "count": 53, 
@@ -432,9 +437,9 @@ crime_bar = [
           "average": 1512.4962264150945
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 36806.80000000001, 
-          "average": 783.1234042553192
+          "count": 53, 
+          "sum": 43025.3, 
+          "average": 811.7981132075472
         }, 
         "Kentucky": {
           "count": 53, 
@@ -445,6 +450,11 @@ crime_bar = [
           "count": 53, 
           "sum": 61121.79999999999, 
           "average": 1153.2415094339624
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 53974.1, 
+          "average": 1018.3792452830188
         }, 
         "Nebraska": {
           "count": 53, 
@@ -502,9 +512,9 @@ crime_bar = [
           "average": 1039.656603773585
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 10746.099999999999, 
-          "average": 895.5083333333333
+          "count": 53, 
+          "sum": 79465.79999999999, 
+          "average": 1499.3547169811322
         }, 
         "Texas": {
           "count": 53, 
@@ -512,9 +522,9 @@ crime_bar = [
           "average": 1241.7396226415094
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 68655.10000000002, 
-          "average": 1373.102
+          "count": 53, 
+          "sum": 77109.50000000001, 
+          "average": 1454.8962264150944
         }, 
         "Maine": {
           "count": 53, 
@@ -644,9 +654,9 @@ crime_bar = [
           "average": 654.7547169811321
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 31831.300000000003, 
-          "average": 636.626
+          "count": 53, 
+          "sum": 36080.700000000004, 
+          "average": 680.7679245283018
         }, 
         "West Virginia": {
           "count": 53, 
@@ -689,9 +699,9 @@ crime_bar = [
           "average": 467.9264150943396
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 21608.999999999993, 
-          "average": 459.7659574468085
+          "count": 53, 
+          "sum": 24982.699999999997, 
+          "average": 471.3716981132076
         }, 
         "Kentucky": {
           "count": 53, 
@@ -702,6 +712,11 @@ crime_bar = [
           "count": 53, 
           "sum": 24547.799999999996, 
           "average": 463.16603773584905
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 22557.400000000005, 
+          "average": 425.611320754717
         }, 
         "Nebraska": {
           "count": 53, 
@@ -759,9 +774,9 @@ crime_bar = [
           "average": 378.16603773584905
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 7972.2, 
-          "average": 664.35
+          "count": 53, 
+          "sum": 53264.5, 
+          "average": 1004.9905660377359
         }, 
         "Texas": {
           "count": 53, 
@@ -769,9 +784,9 @@ crime_bar = [
           "average": 456.56981132075475
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 30825.3, 
-          "average": 616.506
+          "count": 53, 
+          "sum": 32802.9, 
+          "average": 618.922641509434
         }, 
         "Maine": {
           "count": 53, 
@@ -901,9 +916,9 @@ crime_bar = [
           "average": 642.0716981132076
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 22312.7, 
-          "average": 446.254
+          "count": 53, 
+          "sum": 23543.2, 
+          "average": 444.211320754717
         }, 
         "West Virginia": {
           "count": 53, 
@@ -946,9 +961,9 @@ crime_bar = [
           "average": 737.7471698113208
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 22392.099999999995, 
-          "average": 476.42765957446807
+          "count": 53, 
+          "sum": 26115.699999999997, 
+          "average": 492.7490566037736
         }, 
         "Kentucky": {
           "count": 53, 
@@ -959,6 +974,11 @@ crime_bar = [
           "count": 53, 
           "sum": 11289.1, 
           "average": 213.00188679245284
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 25257.300000000003, 
+          "average": 476.55283018867925
         }, 
         "Nebraska": {
           "count": 53, 
@@ -1016,9 +1036,9 @@ crime_bar = [
           "average": 497.4433962264151
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 11005.8, 
-          "average": 917.15
+          "count": 53, 
+          "sum": 87596.99999999999, 
+          "average": 1652.7735849056603
         }, 
         "Texas": {
           "count": 53, 
@@ -1026,9 +1046,9 @@ crime_bar = [
           "average": 479.6547169811321
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 29223.200000000004, 
-          "average": 584.464
+          "count": 53, 
+          "sum": 31867.800000000007, 
+          "average": 601.2792452830189
         }, 
         "Maine": {
           "count": 53, 
@@ -1158,9 +1178,9 @@ crime_bar = [
           "average": 336071.1886792453
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 2568250, 
-          "average": 51365.0
+          "count": 53, 
+          "sum": 2854497, 
+          "average": 53858.43396226415
         }, 
         "West Virginia": {
           "count": 53, 
@@ -1203,9 +1223,9 @@ crime_bar = [
           "average": 171888.05660377358
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 172438, 
-          "average": 3668.8936170212764
+          "count": 53, 
+          "sum": 204447, 
+          "average": 3857.490566037736
         }, 
         "Kentucky": {
           "count": 53, 
@@ -1216,6 +1236,11 @@ crime_bar = [
           "count": 53, 
           "sum": 612514, 
           "average": 11556.867924528302
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 129681563, 
+          "average": 2446821.9433962265
         }, 
         "Nebraska": {
           "count": 53, 
@@ -1273,9 +1298,9 @@ crime_bar = [
           "average": 51326.6037735849
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 80928, 
-          "average": 6744.0
+          "count": 53, 
+          "sum": 524689, 
+          "average": 9899.792452830188
         }, 
         "Texas": {
           "count": 53, 
@@ -1283,9 +1308,9 @@ crime_bar = [
           "average": 203389.20754716982
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 764723, 
-          "average": 15294.46
+          "count": 53, 
+          "sum": 830831, 
+          "average": 15676.056603773584
         }, 
         "Maine": {
           "count": 53, 
@@ -1415,9 +1440,9 @@ crime_bar = [
           "average": 27154939.79245283
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 296559912, 
-          "average": 5931198.24
+          "count": 53, 
+          "sum": 313996912, 
+          "average": 5924470.037735849
         }, 
         "West Virginia": {
           "count": 53, 
@@ -1460,9 +1485,9 @@ crime_bar = [
           "average": 11715686.396226415
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 22554829, 
-          "average": 479889.97872340423
+          "count": 53, 
+          "sum": 25751109, 
+          "average": 485869.9811320755
         }, 
         "Kentucky": {
           "count": 53, 
@@ -1473,6 +1498,11 @@ crime_bar = [
           "count": 53, 
           "sum": 54467535, 
           "average": 1027689.3396226416
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 12900101962, 
+          "average": 243398150.2264151
         }, 
         "Nebraska": {
           "count": 53, 
@@ -1530,9 +1560,9 @@ crime_bar = [
           "average": 4864989.075471698
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 8775697, 
-          "average": 731308.0833333334
+          "count": 53, 
+          "sum": 34580068, 
+          "average": 652454.1132075472
         }, 
         "Texas": {
           "count": 53, 
@@ -1540,9 +1570,9 @@ crime_bar = [
           "average": 16539456.641509434
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 63605347, 
-          "average": 1272106.94
+          "count": 53, 
+          "sum": 65952659, 
+          "average": 1244389.7924528301
         }, 
         "Maine": {
           "count": 53, 
@@ -1672,9 +1702,9 @@ crime_bar = [
           "average": 722726.283018868
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 5338155, 
-          "average": 106763.1
+          "count": 53, 
+          "sum": 5737920, 
+          "average": 108262.64150943396
         }, 
         "West Virginia": {
           "count": 53, 
@@ -1717,9 +1747,9 @@ crime_bar = [
           "average": 397373.7358490566
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 623796, 
-          "average": 13272.255319148937
+          "count": 53, 
+          "sum": 734485, 
+          "average": 13858.207547169812
         }, 
         "Kentucky": {
           "count": 53, 
@@ -1730,6 +1760,11 @@ crime_bar = [
           "count": 53, 
           "sum": 1855536, 
           "average": 35010.11320754717
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 315944509, 
+          "average": 5961217.150943397
         }, 
         "Nebraska": {
           "count": 53, 
@@ -1787,9 +1822,9 @@ crime_bar = [
           "average": 103639.43396226416
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 180852, 
-          "average": 15071.0
+          "count": 53, 
+          "sum": 1253944, 
+          "average": 23659.32075471698
         }, 
         "Texas": {
           "count": 53, 
@@ -1797,9 +1832,9 @@ crime_bar = [
           "average": 489910.69811320753
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 1672651, 
-          "average": 33453.02
+          "count": 53, 
+          "sum": 1775858, 
+          "average": 33506.75471698113
         }, 
         "Maine": {
           "count": 53, 
@@ -1929,9 +1964,9 @@ crime_bar = [
           "average": 356.90000000000003
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 14491.699999999999, 
-          "average": 289.834
+          "count": 53, 
+          "sum": 15038.199999999999, 
+          "average": 283.7396226415094
         }, 
         "West Virginia": {
           "count": 53, 
@@ -1974,9 +2009,9 @@ crime_bar = [
           "average": 464.83962264150944
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 15597.800000000003, 
-          "average": 331.868085106383
+          "count": 53, 
+          "sum": 18069.6, 
+          "average": 340.93584905660373
         }, 
         "Kentucky": {
           "count": 53, 
@@ -1987,6 +2022,11 @@ crime_bar = [
           "count": 53, 
           "sum": 5085.0, 
           "average": 95.94339622641509
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 14274.399999999998, 
+          "average": 269.3283018867925
         }, 
         "Nebraska": {
           "count": 53, 
@@ -2044,9 +2084,9 @@ crime_bar = [
           "average": 312.3132075471698
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 5344.1, 
-          "average": 445.3416666666667
+          "count": 53, 
+          "sum": 36217.50000000001, 
+          "average": 683.3490566037735
         }, 
         "Texas": {
           "count": 53, 
@@ -2054,9 +2094,9 @@ crime_bar = [
           "average": 282.0264150943396
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 14813.199999999997, 
-          "average": 296.264
+          "count": 53, 
+          "sum": 15885.199999999997, 
+          "average": 299.72075471698116
         }, 
         "Maine": {
           "count": 53, 
@@ -2186,9 +2226,9 @@ crime_bar = [
           "average": 1986.0
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 99333, 
-          "average": 1986.66
+          "count": 53, 
+          "sum": 105258, 
+          "average": 1986.0
         }, 
         "West Virginia": {
           "count": 53, 
@@ -2231,9 +2271,9 @@ crime_bar = [
           "average": 1986.0
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 93324, 
-          "average": 1985.6170212765958
+          "count": 53, 
+          "sum": 105258, 
+          "average": 1986.0
         }, 
         "Kentucky": {
           "count": 53, 
@@ -2241,6 +2281,11 @@ crime_bar = [
           "average": 1986.0
         }, 
         "Hawaii": {
+          "count": 53, 
+          "sum": 105258, 
+          "average": 1986.0
+        }, 
+        "United States": {
           "count": 53, 
           "sum": 105258, 
           "average": 1986.0
@@ -2301,9 +2346,9 @@ crime_bar = [
           "average": 1986.0
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 23747, 
-          "average": 1978.9166666666667
+          "count": 53, 
+          "sum": 105258, 
+          "average": 1986.0
         }, 
         "Texas": {
           "count": 53, 
@@ -2311,9 +2356,9 @@ crime_bar = [
           "average": 1986.0
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 99318, 
-          "average": 1986.36
+          "count": 53, 
+          "sum": 105258, 
+          "average": 1986.0
         }, 
         "Maine": {
           "count": 53, 
@@ -2443,9 +2488,9 @@ crime_bar = [
           "average": 101636.18867924529
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 880249, 
-          "average": 17604.98
+          "count": 53, 
+          "sum": 912017, 
+          "average": 17207.867924528302
         }, 
         "West Virginia": {
           "count": 53, 
@@ -2488,9 +2533,9 @@ crime_bar = [
           "average": 59079.11320754717
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 86156, 
-          "average": 1833.1063829787233
+          "count": 53, 
+          "sum": 99398, 
+          "average": 1875.433962264151
         }, 
         "Kentucky": {
           "count": 53, 
@@ -2501,6 +2546,11 @@ crime_bar = [
           "count": 53, 
           "sum": 57067, 
           "average": 1076.7358490566037
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 36023334, 
+          "average": 679685.5471698113
         }, 
         "Nebraska": {
           "count": 53, 
@@ -2558,9 +2608,9 @@ crime_bar = [
           "average": 16484.66037735849
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 37870, 
-          "average": 3155.8333333333335
+          "count": 53, 
+          "sum": 225674, 
+          "average": 4258.0
         }, 
         "Texas": {
           "count": 53, 
@@ -2568,9 +2618,9 @@ crime_bar = [
           "average": 49995.47169811321
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 222950, 
-          "average": 4459.0
+          "count": 53, 
+          "sum": 231343, 
+          "average": 4364.962264150943
         }, 
         "Maine": {
           "count": 53, 
@@ -2700,9 +2750,9 @@ crime_bar = [
           "average": 2755.235849056604
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 89435.90000000001, 
-          "average": 1788.7179999999998
+          "count": 53, 
+          "sum": 96313.2, 
+          "average": 1817.2301886792452
         }, 
         "West Virginia": {
           "count": 53, 
@@ -2745,9 +2795,9 @@ crime_bar = [
           "average": 3315.7283018867925
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 124717.1, 
-          "average": 2653.555319148936
+          "count": 53, 
+          "sum": 145760.8, 
+          "average": 2750.2037735849053
         }, 
         "Kentucky": {
           "count": 53, 
@@ -2758,6 +2808,11 @@ crime_bar = [
           "count": 53, 
           "sum": 176136.80000000005, 
           "average": 3323.3358490566034
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 127992.00000000001, 
+          "average": 2414.943396226415
         }, 
         "Nebraska": {
           "count": 53, 
@@ -2815,9 +2870,9 @@ crime_bar = [
           "average": 2017.8037735849057
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 25776.5, 
-          "average": 2148.0416666666665
+          "count": 53, 
+          "sum": 197539.39999999994, 
+          "average": 3727.1584905660375
         }, 
         "Texas": {
           "count": 53, 
@@ -2825,9 +2880,9 @@ crime_bar = [
           "average": 2853.8037735849057
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 144561.4, 
-          "average": 2891.228
+          "count": 53, 
+          "sum": 157762.3, 
+          "average": 2976.6471698113205
         }, 
         "Maine": {
           "count": 53, 
@@ -2957,9 +3012,9 @@ crime_bar = [
           "average": 34.27547169811321
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 1132.4, 
-          "average": 22.648000000000003
+          "count": 53, 
+          "sum": 1184.9000000000003, 
+          "average": 22.356603773584908
         }, 
         "West Virginia": {
           "count": 53, 
@@ -3002,9 +3057,9 @@ crime_bar = [
           "average": 36.98490566037736
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 2642.4999999999995, 
-          "average": 56.223404255319146
+          "count": 53, 
+          "sum": 3221.4999999999995, 
+          "average": 60.783018867924525
         }, 
         "Kentucky": {
           "count": 53, 
@@ -3015,6 +3070,11 @@ crime_bar = [
           "count": 53, 
           "sum": 1288.1000000000001, 
           "average": 24.30377358490566
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 1527.2999999999995, 
+          "average": 28.816981132075473
         }, 
         "Nebraska": {
           "count": 53, 
@@ -3072,9 +3132,9 @@ crime_bar = [
           "average": 32.12264150943396
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 244.10000000000002, 
-          "average": 20.341666666666665
+          "count": 53, 
+          "sum": 2452.5000000000005, 
+          "average": 46.27358490566038
         }, 
         "Texas": {
           "count": 53, 
@@ -3082,9 +3142,9 @@ crime_bar = [
           "average": 34.12830188679245
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 2131.4999999999995, 
-          "average": 42.63
+          "count": 53, 
+          "sum": 2323.0999999999995, 
+          "average": 43.83207547169811
         }, 
         "Maine": {
           "count": 53, 
@@ -3214,9 +3274,9 @@ crime_bar = [
           "average": 9178.698113207547
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 68572, 
-          "average": 1371.44
+          "count": 53, 
+          "sum": 71628, 
+          "average": 1351.4716981132076
         }, 
         "West Virginia": {
           "count": 53, 
@@ -3259,9 +3319,9 @@ crime_bar = [
           "average": 4642.320754716981
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 14281, 
-          "average": 303.8510638297872
+          "count": 53, 
+          "sum": 17353, 
+          "average": 327.41509433962267
         }, 
         "Kentucky": {
           "count": 53, 
@@ -3272,6 +3332,11 @@ crime_bar = [
           "count": 53, 
           "sum": 14144, 
           "average": 266.8679245283019
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 3835164, 
+          "average": 72361.58490566038
         }, 
         "Nebraska": {
           "count": 53, 
@@ -3329,9 +3394,9 @@ crime_bar = [
           "average": 1638.5849056603774
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 1703, 
-          "average": 141.91666666666666
+          "count": 53, 
+          "sum": 16015, 
+          "average": 302.1698113207547
         }, 
         "Texas": {
           "count": 53, 
@@ -3339,9 +3404,9 @@ crime_bar = [
           "average": 5975.962264150943
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 29126, 
-          "average": 582.52
+          "count": 53, 
+          "sum": 30630, 
+          "average": 577.9245283018868
         }, 
         "Maine": {
           "count": 53, 
@@ -3471,9 +3536,9 @@ crime_bar = [
           "average": 66506.69811320755
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 390745, 
-          "average": 7814.9
+          "count": 53, 
+          "sum": 426757, 
+          "average": 8052.018867924528
         }, 
         "West Virginia": {
           "count": 53, 
@@ -3516,9 +3581,9 @@ crime_bar = [
           "average": 27530.283018867925
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 19373, 
-          "average": 412.1914893617021
+          "count": 53, 
+          "sum": 22588, 
+          "average": 426.188679245283
         }, 
         "Kentucky": {
           "count": 53, 
@@ -3529,6 +3594,11 @@ crime_bar = [
           "count": 53, 
           "sum": 50344, 
           "average": 949.8867924528302
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 22237906, 
+          "average": 419583.1320754717
         }, 
         "Nebraska": {
           "count": 53, 
@@ -3586,9 +3656,9 @@ crime_bar = [
           "average": 7311.584905660377
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 36605, 
-          "average": 3050.4166666666665
+          "count": 53, 
+          "sum": 303825, 
+          "average": 5732.547169811321
         }, 
         "Texas": {
           "count": 53, 
@@ -3596,9 +3666,9 @@ crime_bar = [
           "average": 26531.943396226416
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 156544, 
-          "average": 3130.88
+          "count": 53, 
+          "sum": 166961, 
+          "average": 3150.2075471698113
         }, 
         "Maine": {
           "count": 53, 
@@ -3728,9 +3798,9 @@ crime_bar = [
           "average": 179584.88679245283
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 1348477, 
-          "average": 26969.54
+          "count": 53, 
+          "sum": 1420005, 
+          "average": 26792.54716981132
         }, 
         "West Virginia": {
           "count": 53, 
@@ -3773,9 +3843,9 @@ crime_bar = [
           "average": 92258.37735849057
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 121582, 
-          "average": 2586.851063829787
+          "count": 53, 
+          "sum": 141420, 
+          "average": 2668.301886792453
         }, 
         "Kentucky": {
           "count": 53, 
@@ -3786,6 +3856,11 @@ crime_bar = [
           "count": 53, 
           "sum": 123565, 
           "average": 2331.4150943396226
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 63020711, 
+          "average": 1189070.0188679246
         }, 
         "Nebraska": {
           "count": 53, 
@@ -3843,9 +3918,9 @@ crime_bar = [
           "average": 25855.33962264151
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 77629, 
-          "average": 6469.083333333333
+          "count": 53, 
+          "sum": 557758, 
+          "average": 10523.735849056604
         }, 
         "Texas": {
           "count": 53, 
@@ -3853,9 +3928,9 @@ crime_bar = [
           "average": 84070.11320754717
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 414320, 
-          "average": 8286.4
+          "count": 53, 
+          "sum": 435065, 
+          "average": 8208.77358490566
         }, 
         "Maine": {
           "count": 53, 
@@ -3985,9 +4060,9 @@ crime_bar = [
           "average": 242.54905660377358
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 6537.9, 
-          "average": 130.75799999999998
+          "count": 53, 
+          "sum": 7157.500000000001, 
+          "average": 135.04716981132074
         }, 
         "West Virginia": {
           "count": 53, 
@@ -4030,9 +4105,9 @@ crime_bar = [
           "average": 226.5
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 3749.4999999999986, 
-          "average": 79.77659574468085
+          "count": 53, 
+          "sum": 4361.599999999999, 
+          "average": 82.29433962264152
         }, 
         "Kentucky": {
           "count": 53, 
@@ -4043,6 +4118,11 @@ crime_bar = [
           "count": 53, 
           "sum": 4713.599999999999, 
           "average": 88.93584905660379
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 9071.999999999998, 
+          "average": 171.16981132075472
         }, 
         "Nebraska": {
           "count": 53, 
@@ -4100,9 +4180,9 @@ crime_bar = [
           "average": 144.21320754716982
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 5215.3, 
-          "average": 434.60833333333335
+          "count": 53, 
+          "sum": 46969.7, 
+          "average": 886.2207547169811
         }, 
         "Texas": {
           "count": 53, 
@@ -4110,9 +4190,9 @@ crime_bar = [
           "average": 153.4320754716981
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 11788.399999999998, 
-          "average": 235.768
+          "count": 53, 
+          "sum": 13114.499999999998, 
+          "average": 247.4433962264151
         }, 
         "Maine": {
           "count": 53, 
@@ -4242,9 +4322,9 @@ crime_bar = [
           "average": 8.328301886792453
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 150.40000000000003, 
-          "average": 3.008
+          "count": 53, 
+          "sum": 162.29999999999998, 
+          "average": 3.0622641509433963
         }, 
         "West Virginia": {
           "count": 53, 
@@ -4287,9 +4367,9 @@ crime_bar = [
           "average": 9.413207547169812
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 402.3000000000001, 
-          "average": 8.559574468085106
+          "count": 53, 
+          "sum": 463.2000000000001, 
+          "average": 8.739622641509433
         }, 
         "Kentucky": {
           "count": 53, 
@@ -4300,6 +4380,11 @@ crime_bar = [
           "count": 53, 
           "sum": 202.20000000000002, 
           "average": 3.8150943396226413
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 384.1, 
+          "average": 7.247169811320755
         }, 
         "Nebraska": {
           "count": 53, 
@@ -4357,9 +4442,9 @@ crime_bar = [
           "average": 8.79433962264151
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 202.00000000000003, 
-          "average": 16.833333333333332
+          "count": 53, 
+          "sum": 1957.1000000000004, 
+          "average": 36.92641509433962
         }, 
         "Texas": {
           "count": 53, 
@@ -4367,9 +4452,9 @@ crime_bar = [
           "average": 10.064150943396227
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 488.9, 
-          "average": 9.777999999999999
+          "count": 53, 
+          "sum": 543.8999999999999, 
+          "average": 10.262264150943397
         }, 
         "Maine": {
           "count": 53, 
@@ -4499,9 +4584,9 @@ crime_bar = [
           "average": 180669.62264150943
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 1863385, 
-          "average": 37267.7
+          "count": 53, 
+          "sum": 2110408, 
+          "average": 39819.018867924526
         }, 
         "West Virginia": {
           "count": 53, 
@@ -4544,9 +4629,9 @@ crime_bar = [
           "average": 57910.622641509435
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 100200, 
-          "average": 2131.9148936170213
+          "count": 53, 
+          "sum": 117695, 
+          "average": 2220.6603773584907
         }, 
         "Kentucky": {
           "count": 53, 
@@ -4557,6 +4642,11 @@ crime_bar = [
           "count": 53, 
           "sum": 256302, 
           "average": 4835.88679245283
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 55194466, 
+          "average": 1041405.0188679246
         }, 
         "Nebraska": {
           "count": 53, 
@@ -4614,9 +4704,9 @@ crime_bar = [
           "average": 18869.54716981132
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 57085, 
-          "average": 4757.083333333333
+          "count": 53, 
+          "sum": 336300, 
+          "average": 6345.2830188679245
         }, 
         "Texas": {
           "count": 53, 
@@ -4624,9 +4714,9 @@ crime_bar = [
           "average": 77480.28301886792
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 422225, 
-          "average": 8444.5
+          "count": 53, 
+          "sum": 437625, 
+          "average": 8257.075471698114
         }, 
         "Maine": {
           "count": 53, 
@@ -4756,9 +4846,9 @@ crime_bar = [
           "average": 4737.105660377359
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 164846.80000000002, 
-          "average": 3296.9359999999997
+          "count": 53, 
+          "sum": 180898.00000000003, 
+          "average": 3413.169811320755
         }, 
         "West Virginia": {
           "count": 53, 
@@ -4801,9 +4891,9 @@ crime_bar = [
           "average": 5296.143396226415
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 183132.9, 
-          "average": 3896.444680851064
+          "count": 53, 
+          "sum": 213768.70000000007, 
+          "average": 4033.371698113208
         }, 
         "Kentucky": {
           "count": 53, 
@@ -4814,6 +4904,11 @@ crime_bar = [
           "count": 53, 
           "sum": 261807.5, 
           "average": 4939.764150943396
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 204523.80000000002, 
+          "average": 3858.9396226415092
         }, 
         "Nebraska": {
           "count": 53, 
@@ -4871,9 +4966,9 @@ crime_bar = [
           "average": 3435.6056603773586
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 44494.90000000001, 
-          "average": 3707.9083333333333
+          "count": 53, 
+          "sum": 330270.0, 
+          "average": 6231.509433962264
         }, 
         "Texas": {
           "count": 53, 
@@ -4881,9 +4976,9 @@ crime_bar = [
           "average": 4552.098113207548
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 244042.30000000005, 
-          "average": 4880.846
+          "count": 53, 
+          "sum": 267675.20000000007, 
+          "average": 5050.475471698113
         }, 
         "Maine": {
           "count": 53, 
@@ -5013,9 +5108,9 @@ crime_bar = [
           "average": 2263.301886792453
         }, 
         "Massachusetts": {
-          "count": 50, 
-          "sum": 8911, 
-          "average": 178.22
+          "count": 53, 
+          "sum": 9603, 
+          "average": 181.18867924528303
         }, 
         "West Virginia": {
           "count": 53, 
@@ -5058,9 +5153,9 @@ crime_bar = [
           "average": 1006.6603773584906
         }, 
         "Alaska": {
-          "count": 47, 
-          "sum": 1772, 
-          "average": 37.702127659574465
+          "count": 53, 
+          "sum": 2081, 
+          "average": 39.264150943396224
         }, 
         "Kentucky": {
           "count": 53, 
@@ -5071,6 +5166,11 @@ crime_bar = [
           "count": 53, 
           "sum": 2010, 
           "average": 37.924528301886795
+        }, 
+        "United States": {
+          "count": 53, 
+          "sum": 924327, 
+          "average": 17440.132075471698
         }, 
         "Nebraska": {
           "count": 53, 
@@ -5128,9 +5228,9 @@ crime_bar = [
           "average": 420.50943396226415
         }, 
         "District of Columbia": {
-          "count": 12, 
-          "sum": 1451, 
-          "average": 120.91666666666667
+          "count": 53, 
+          "sum": 12244, 
+          "average": 231.0188679245283
         }, 
         "Texas": {
           "count": 53, 
@@ -5138,9 +5238,9 @@ crime_bar = [
           "average": 1566.7358490566037
         }, 
         "Nevada": {
-          "count": 50, 
-          "sum": 5700, 
-          "average": 114.0
+          "count": 53, 
+          "sum": 6131, 
+          "average": 115.67924528301887
         }, 
         "Maine": {
           "count": 53, 
@@ -5155,7 +5255,7 @@ crime_bar = [
       }
     }, 
     "name": "crime.[0].State", 
-    "pretty": "State: State", 
+    "pretty": "State", 
     "indexes": [
       "Mississippi", 
       "Oklahoma", 
@@ -5193,6 +5293,7 @@ crime_bar = [
       "Alaska", 
       "Kentucky", 
       "Hawaii", 
+      "United States", 
       "Nebraska", 
       "Missouri", 
       "Ohio", 
@@ -5212,5361 +5313,5361 @@ crime_bar = [
   }, 
   {
     "best_indexes": [
-      "1965", 
-      "1966", 
-      "1967", 
-      "2011", 
-      "2010", 
-      "2012", 
-      "2006", 
-      "1962", 
-      "1963", 
-      "1986"
+      "1974", 
+      "1986", 
+      "1987", 
+      "1984", 
+      "1985", 
+      "1968", 
+      "1969", 
+      "1980", 
+      "1981", 
+      "1965"
     ], 
     "data": {
       "crime.[0].Data.Totals.Property.All": {
         "1974": {
-          "count": 49, 
-          "sum": 8945367, 
-          "average": 182558.51020408163
+          "count": 52, 
+          "sum": 18556787, 
+          "average": 356861.28846153844
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 3058865, 
-          "average": 61177.3
+          "count": 51, 
+          "sum": 6509565, 
+          "average": 127638.5294117647
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 3341570, 
-          "average": 66831.4
+          "count": 51, 
+          "sum": 7134070, 
+          "average": 139883.72549019608
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 11679919, 
-          "average": 233598.38
+          "count": 52, 
+          "sum": 23445400, 
+          "average": 450873.07692307694
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 11982156, 
-          "average": 239643.12
+          "count": 52, 
+          "sum": 24049418, 
+          "average": 462488.8076923077
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 10537403, 
-          "average": 215049.04081632654
+          "count": 52, 
+          "sum": 21216143, 
+          "average": 408002.75
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 11062646, 
-          "average": 221252.92
+          "count": 52, 
+          "sum": 22205140, 
+          "average": 427021.92307692306
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 6088952, 
-          "average": 121779.04
+          "count": 52, 
+          "sum": 12265625, 
+          "average": 235877.40384615384
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 6610259, 
-          "average": 132205.18
+          "count": 52, 
+          "sum": 13425261, 
+          "average": 258178.09615384616
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 11948388, 
-          "average": 243844.6530612245
+          "count": 52, 
+          "sum": 24126540, 
+          "average": 463971.92307692306
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 11917783, 
-          "average": 248287.14583333334
+          "count": 52, 
+          "sum": 24122786, 
+          "average": 463899.73076923075
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 3750313, 
-          "average": 75006.26
+          "count": 51, 
+          "sum": 7950713, 
+          "average": 155896.33333333334
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 4364824, 
-          "average": 85584.7843137255
+          "count": 52, 
+          "sum": 8716824, 
+          "average": 167631.23076923078
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 4806528, 
-          "average": 94245.64705882352
+          "count": 52, 
+          "sum": 9599828, 
+          "average": 184612.07692307694
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 5417559, 
-          "average": 106226.64705882352
+          "count": 52, 
+          "sum": 10821059, 
+          "average": 208097.28846153847
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 2770689, 
-          "average": 55413.78
+          "count": 51, 
+          "sum": 5866389, 
+          "average": 115027.23529411765
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 2859039, 
-          "average": 57180.78
+          "count": 51, 
+          "sum": 6057639, 
+          "average": 118777.23529411765
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 12307308, 
-          "average": 246146.16
+          "count": 52, 
+          "sum": 24713730, 
+          "average": 475264.03846153844
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 12556177, 
-          "average": 251123.54
+          "count": 52, 
+          "sum": 25210824, 
+          "average": 484823.53846153844
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 9052743, 
-          "average": 177504.76470588235
+          "count": 52, 
+          "sum": 18105486, 
+          "average": 348182.42307692306
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 9112625, 
-          "average": 178678.92156862744
+          "count": 52, 
+          "sum": 18225250, 
+          "average": 350485.57692307694
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 8975438, 
-          "average": 175988.98039215687
+          "count": 52, 
+          "sum": 17950876, 
+          "average": 345209.1538461539
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 10938754, 
-          "average": 223239.8775510204
+          "count": 52, 
+          "sum": 22082263, 
+          "average": 424658.9038461539
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 10174914, 
-          "average": 203498.28
+          "count": 52, 
+          "sum": 20416668, 
+          "average": 392628.23076923075
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 10914605, 
-          "average": 218292.1
+          "count": 52, 
+          "sum": 21903654, 
+          "average": 421224.1153846154
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 11598966, 
-          "average": 231979.32
+          "count": 52, 
+          "sum": 23303261, 
+          "average": 448139.6346153846
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 10778130, 
-          "average": 219961.83673469388
+          "count": 52, 
+          "sum": 21700405, 
+          "average": 417315.48076923075
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 12882394, 
-          "average": 262906.0
+          "count": 52, 
+          "sum": 25922232, 
+          "average": 498504.46153846156
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 12605016, 
-          "average": 252100.32
+          "count": 52, 
+          "sum": 25310972, 
+          "average": 486749.46153846156
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 12167686, 
-          "average": 243353.72
+          "count": 52, 
+          "sum": 24437554, 
+          "average": 469952.96153846156
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 12426599, 
-          "average": 253604.0612244898
+          "count": 52, 
+          "sum": 25011834, 
+          "average": 480996.8076923077
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 12011238, 
-          "average": 240224.76
+          "count": 52, 
+          "sum": 24127870, 
+          "average": 463997.5
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 12083864, 
-          "average": 241677.28
+          "count": 52, 
+          "sum": 24263746, 
+          "average": 466610.5
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 11517134, 
-          "average": 230342.68
+          "count": 52, 
+          "sum": 23116950, 
+          "average": 444556.73076923075
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 11754135, 
-          "average": 235082.7
+          "count": 52, 
+          "sum": 23610646, 
+          "average": 454050.8846153846
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 9924345, 
-          "average": 198486.9
+          "count": 52, 
+          "sum": 19919323, 
+          "average": 383063.9038461539
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 9990480, 
-          "average": 203887.3469387755
+          "count": 52, 
+          "sum": 20690253, 
+          "average": 397889.48076923075
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 9881091, 
-          "average": 201654.91836734695
+          "count": 52, 
+          "sum": 20504667, 
+          "average": 394320.51923076925
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 10081284, 
-          "average": 201625.68
+          "count": 52, 
+          "sum": 20246119, 
+          "average": 389348.4423076923
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 7802552, 
-          "average": 156051.04
+          "count": 52, 
+          "sum": 15692047, 
+          "average": 301770.1346153846
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 7373911, 
-          "average": 147478.22
+          "count": 52, 
+          "sum": 14834036, 
+          "average": 285269.92307692306
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 7719261, 
-          "average": 154385.22
+          "count": 52, 
+          "sum": 15545393, 
+          "average": 298949.8653846154
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 7297374, 
-          "average": 145947.48
+          "count": 52, 
+          "sum": 14722062, 
+          "average": 283116.57692307694
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 10418800, 
-          "average": 208376.0
+          "count": 52, 
+          "sum": 20910554, 
+          "average": 402126.03846153844
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 10385780, 
-          "average": 211954.693877551
+          "count": 52, 
+          "sum": 20885724, 
+          "average": 401648.53846153844
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 10149584, 
-          "average": 202991.68
+          "count": 52, 
+          "sum": 20365168, 
+          "average": 391637.8461538461
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 10401957, 
-          "average": 208039.14
+          "count": 52, 
+          "sum": 20874378, 
+          "average": 401430.3461538461
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 10019601, 
-          "average": 196462.76470588235
+          "count": 52, 
+          "sum": 20039202, 
+          "average": 385369.26923076925
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 9853290, 
-          "average": 197065.8
+          "count": 52, 
+          "sum": 19764424, 
+          "average": 380085.07692307694
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 10292490, 
-          "average": 205849.8
+          "count": 52, 
+          "sum": 20638772, 
+          "average": 396899.46153846156
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 10148621, 
-          "average": 202972.42
+          "count": 52, 
+          "sum": 20349508, 
+          "average": 391336.6923076923
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 9743941, 
-          "average": 194878.82
+          "count": 52, 
+          "sum": 19548304, 
+          "average": 375928.92307692306
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 9308565, 
-          "average": 186171.3
+          "count": 52, 
+          "sum": 18674120, 
+          "average": 359117.6923076923
         }
       }, 
       "crime.[0].Data.Rates.Property.Burglary": {
         "1974": {
-          "count": 49, 
-          "sum": 63682.50000000002, 
-          "average": 1299.642857142857
+          "count": 52, 
+          "sum": 68623.80000000002, 
+          "average": 1319.6884615384615
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 22422.800000000003, 
-          "average": 448.45599999999996
+          "count": 51, 
+          "sum": 22958.000000000004, 
+          "average": 450.15686274509807
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 24609.300000000003, 
-          "average": 492.186
+          "count": 51, 
+          "sum": 25185.700000000004, 
+          "average": 493.8372549019608
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 59791.600000000006, 
-          "average": 1195.8319999999999
+          "count": 52, 
+          "sum": 62869.00000000001, 
+          "average": 1209.0192307692307
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 59242.200000000004, 
-          "average": 1184.844
+          "count": 52, 
+          "sum": 62385.600000000006, 
+          "average": 1199.7230769230769
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 55170.399999999994, 
-          "average": 1125.926530612245
+          "count": 52, 
+          "sum": 59430.99999999999, 
+          "average": 1142.9038461538462
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 57733.60000000001, 
-          "average": 1154.672
+          "count": 52, 
+          "sum": 60623.50000000001, 
+          "average": 1165.8365384615386
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 39093.0, 
-          "average": 781.86
+          "count": 52, 
+          "sum": 42244.100000000006, 
+          "average": 812.3865384615384
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 41734.09999999999, 
-          "average": 834.682
+          "count": 52, 
+          "sum": 45588.09999999998, 
+          "average": 876.6942307692308
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 72063.5, 
-          "average": 1470.6836734693877
+          "count": 52, 
+          "sum": 79214.0, 
+          "average": 1523.3461538461538
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 69492.4, 
-          "average": 1447.7583333333332
+          "count": 52, 
+          "sum": 77843.29999999999, 
+          "average": 1496.9865384615384
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 27124.799999999996, 
-          "average": 542.496
+          "count": 51, 
+          "sum": 27759.499999999996, 
+          "average": 544.3039215686274
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 28757.2, 
-          "average": 563.8666666666667
+          "count": 52, 
+          "sum": 29419.9, 
+          "average": 565.7673076923077
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 31697.20000000001, 
-          "average": 621.5137254901961
+          "count": 52, 
+          "sum": 32418.20000000001, 
+          "average": 623.4269230769231
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 36553.7, 
-          "average": 716.7392156862744
+          "count": 52, 
+          "sum": 37380.299999999996, 
+          "average": 718.8519230769232
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 21174.4, 
-          "average": 423.48800000000006
+          "count": 51, 
+          "sum": 21683.0, 
+          "average": 425.15686274509807
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 21868.100000000002, 
-          "average": 437.36199999999997
+          "count": 51, 
+          "sum": 22387.000000000004, 
+          "average": 438.96078431372547
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 57875.69999999999, 
-          "average": 1157.514
+          "count": 52, 
+          "sum": 61175.79999999999, 
+          "average": 1176.4576923076925
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 56147.99999999999, 
-          "average": 1122.96
+          "count": 52, 
+          "sum": 59381.899999999994, 
+          "average": 1141.9596153846155
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 34211.200000000004, 
-          "average": 670.8078431372548
+          "count": 52, 
+          "sum": 34912.50000000001, 
+          "average": 671.3942307692307
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 34012.899999999994, 
-          "average": 666.9196078431373
+          "count": 52, 
+          "sum": 34713.899999999994, 
+          "average": 667.575
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 32868.6, 
-          "average": 644.4823529411765
+          "count": 52, 
+          "sum": 33538.799999999996, 
+          "average": 644.9769230769232
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 65362.2, 
-          "average": 1333.9224489795918
+          "count": 52, 
+          "sum": 71745.1, 
+          "average": 1379.7134615384616
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 36879.7, 
-          "average": 737.5939999999999
+          "count": 52, 
+          "sum": 38626.4, 
+          "average": 742.8153846153847
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 41165.50000000001, 
-          "average": 823.31
+          "count": 52, 
+          "sum": 43245.0, 
+          "average": 831.6346153846154
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 66160.4, 
-          "average": 1323.2079999999999
+          "count": 52, 
+          "sum": 69989.79999999999, 
+          "average": 1345.9576923076925
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 58563.399999999994, 
-          "average": 1195.1714285714286
+          "count": 52, 
+          "sum": 63099.99999999999, 
+          "average": 1213.4615384615386
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 54938.799999999996, 
-          "average": 1121.2
+          "count": 52, 
+          "sum": 59244.59999999999, 
+          "average": 1139.3192307692307
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 55071.100000000006, 
-          "average": 1101.422
+          "count": 52, 
+          "sum": 58286.299999999996, 
+          "average": 1120.8903846153846
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 49280.19999999999, 
-          "average": 985.6039999999999
+          "count": 52, 
+          "sum": 52375.39999999999, 
+          "average": 1007.2192307692308
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 51133.79999999999, 
-          "average": 1043.5469387755102
+          "count": 52, 
+          "sum": 55003.09999999999, 
+          "average": 1057.751923076923
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 46175.99999999999, 
-          "average": 923.52
+          "count": 52, 
+          "sum": 49001.399999999994, 
+          "average": 942.3346153846154
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 47583.60000000001, 
-          "average": 951.672
+          "count": 52, 
+          "sum": 50386.600000000006, 
+          "average": 968.9730769230769
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 43741.3, 
-          "average": 874.826
+          "count": 52, 
+          "sum": 45976.4, 
+          "average": 884.1615384615385
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 44357.900000000016, 
-          "average": 887.158
+          "count": 52, 
+          "sum": 47112.80000000002, 
+          "average": 906.0153846153846
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 64999.79999999999, 
-          "average": 1299.996
+          "count": 52, 
+          "sum": 68099.29999999999, 
+          "average": 1309.6019230769232
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 63413.099999999984, 
-          "average": 1294.1448979591837
+          "count": 52, 
+          "sum": 68214.09999999998, 
+          "average": 1311.8096153846154
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 67387.79999999999, 
-          "average": 1375.261224489796
+          "count": 52, 
+          "sum": 72470.9, 
+          "average": 1393.6711538461536
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 65066.59999999999, 
-          "average": 1301.3319999999999
+          "count": 52, 
+          "sum": 68355.4, 
+          "average": 1314.526923076923
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 54841.1, 
-          "average": 1096.822
+          "count": 52, 
+          "sum": 57645.49999999999, 
+          "average": 1108.5673076923076
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 49968.399999999994, 
-          "average": 999.368
+          "count": 52, 
+          "sum": 52820.6, 
+          "average": 1015.7807692307692
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 49624.99999999999, 
-          "average": 992.5
+          "count": 52, 
+          "sum": 53327.99999999999, 
+          "average": 1025.5384615384614
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 46744.00000000001, 
-          "average": 934.88
+          "count": 52, 
+          "sum": 50702.60000000001, 
+          "average": 975.05
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 35758.3, 
-          "average": 715.166
+          "count": 52, 
+          "sum": 37413.7, 
+          "average": 719.4942307692307
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 34938.799999999996, 
-          "average": 713.0367346938776
+          "count": 52, 
+          "sum": 37115.09999999999, 
+          "average": 713.751923076923
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 34980.80000000001, 
-          "average": 699.6160000000001
+          "count": 52, 
+          "sum": 36539.10000000001, 
+          "average": 702.675
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 35414.6, 
-          "average": 708.2919999999999
+          "count": 52, 
+          "sum": 37018.9, 
+          "average": 711.9019230769231
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 35754.8, 
-          "average": 701.0745098039216
+          "count": 52, 
+          "sum": 36487.9, 
+          "average": 701.6903846153847
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 34470.6, 
-          "average": 689.4119999999999
+          "count": 52, 
+          "sum": 35864.1, 
+          "average": 689.6942307692308
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 35172.80000000001, 
-          "average": 703.456
+          "count": 52, 
+          "sum": 36615.10000000001, 
+          "average": 704.1365384615384
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 34630.20000000001, 
-          "average": 692.6039999999999
+          "count": 52, 
+          "sum": 35971.70000000001, 
+          "average": 691.7634615384615
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 34470.09999999999, 
-          "average": 689.4019999999999
+          "count": 52, 
+          "sum": 35843.09999999999, 
+          "average": 689.2903846153846
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 34082.19999999999, 
-          "average": 681.6439999999999
+          "count": 52, 
+          "sum": 35416.29999999999, 
+          "average": 681.0826923076924
         }
       }, 
       "crime.[0].Data.Rates.Property.Motor": {
         "1974": {
-          "count": 49, 
-          "sum": 18495.3, 
-          "average": 377.4551020408163
+          "count": 52, 
+          "sum": 20865.8, 
+          "average": 401.2653846153846
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 9001.199999999999, 
-          "average": 180.024
+          "count": 51, 
+          "sum": 9198.599999999999, 
+          "average": 180.36470588235295
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 9866.0, 
-          "average": 197.32
+          "count": 51, 
+          "sum": 10082.6, 
+          "average": 197.6980392156863
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 19110.1, 
-          "average": 382.202
+          "count": 52, 
+          "sum": 20595.099999999995, 
+          "average": 396.05961538461537
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 19695.1, 
-          "average": 393.902
+          "count": 52, 
+          "sum": 21239.399999999998, 
+          "average": 408.45000000000005
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 16168.699999999999, 
-          "average": 329.97346938775513
+          "count": 52, 
+          "sum": 17937.3, 
+          "average": 344.9480769230769
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 17779.000000000004, 
-          "average": 355.58
+          "count": 52, 
+          "sum": 19045.2, 
+          "average": 366.25384615384615
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 15743.4, 
-          "average": 314.868
+          "count": 52, 
+          "sum": 17539.899999999998, 
+          "average": 337.3057692307693
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 17581.60000000001, 
-          "average": 351.63199999999995
+          "count": 52, 
+          "sum": 19420.100000000006, 
+          "average": 373.4634615384615
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 19992.1, 
-          "average": 408.0020408163265
+          "count": 52, 
+          "sum": 21734.399999999998, 
+          "average": 417.9692307692308
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 17978.800000000003, 
-          "average": 374.55833333333334
+          "count": 52, 
+          "sum": 20330.199999999997, 
+          "average": 390.9653846153846
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 10749.1, 
-          "average": 214.982
+          "count": 51, 
+          "sum": 10996.5, 
+          "average": 215.61764705882354
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 11285.900000000001, 
-          "average": 221.2921568627451
+          "count": 52, 
+          "sum": 11542.7, 
+          "average": 221.97500000000002
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 12862.200000000004, 
-          "average": 252.20000000000002
+          "count": 52, 
+          "sum": 13149.100000000004, 
+          "average": 252.8673076923077
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 14735.299999999997, 
-          "average": 288.92745098039217
+          "count": 52, 
+          "sum": 15069.399999999998, 
+          "average": 289.79615384615386
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 8229.699999999997, 
-          "average": 164.59400000000002
+          "count": 51, 
+          "sum": 8412.699999999997, 
+          "average": 164.95490196078433
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 8356.000000000002, 
-          "average": 167.12
+          "count": 51, 
+          "sum": 8539.600000000002, 
+          "average": 167.44313725490196
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 21001.2, 
-          "average": 420.024
+          "count": 52, 
+          "sum": 22979.7, 
+          "average": 441.9173076923077
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 22560.400000000005, 
-          "average": 451.208
+          "count": 52, 
+          "sum": 24567.1, 
+          "average": 472.4442307692308
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 10794.499999999998, 
-          "average": 211.65686274509804
+          "count": 52, 
+          "sum": 11024.499999999998, 
+          "average": 212.0096153846154
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 11221.3, 
-          "average": 220.0254901960784
+          "count": 52, 
+          "sum": 11460.4, 
+          "average": 220.3923076923077
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 10504.8, 
-          "average": 205.9764705882353
+          "count": 52, 
+          "sum": 10734.5, 
+          "average": 206.43269230769232
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 20628.1, 
-          "average": 420.9816326530612
+          "count": 52, 
+          "sum": 22387.8, 
+          "average": 430.5346153846154
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 18132.0, 
-          "average": 362.64
+          "count": 52, 
+          "sum": 19836.2, 
+          "average": 381.4653846153846
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 19503.4, 
-          "average": 390.06800000000004
+          "count": 52, 
+          "sum": 21206.3, 
+          "average": 407.8134615384615
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 18044.199999999997, 
-          "average": 360.884
+          "count": 52, 
+          "sum": 19150.299999999996, 
+          "average": 368.275
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 16055.800000000001, 
-          "average": 327.66938775510204
+          "count": 52, 
+          "sum": 17765.499999999996, 
+          "average": 341.6442307692308
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 23036.699999999993, 
-          "average": 470.13673469387754
+          "count": 52, 
+          "sum": 25589.999999999996, 
+          "average": 492.11538461538464
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 23673.900000000005, 
-          "average": 473.478
+          "count": 52, 
+          "sum": 25665.800000000003, 
+          "average": 493.5730769230769
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 22306.400000000005, 
-          "average": 446.12800000000004
+          "count": 52, 
+          "sum": 24307.500000000004, 
+          "average": 467.4519230769231
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 22226.899999999998, 
-          "average": 453.6102040816327
+          "count": 52, 
+          "sum": 24903.599999999995, 
+          "average": 478.9153846153846
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 22546.000000000004, 
-          "average": 450.92
+          "count": 52, 
+          "sum": 24946.2, 
+          "average": 479.7346153846154
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 22805.899999999994, 
-          "average": 456.11800000000005
+          "count": 52, 
+          "sum": 24846.499999999996, 
+          "average": 477.8173076923077
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 21299.59999999999, 
-          "average": 425.99199999999996
+          "count": 52, 
+          "sum": 23236.09999999999, 
+          "average": 446.8480769230769
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 21536.099999999995, 
-          "average": 430.722
+          "count": 52, 
+          "sum": 23898.8, 
+          "average": 459.59230769230766
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 18959.399999999998, 
-          "average": 379.18800000000005
+          "count": 52, 
+          "sum": 19808.699999999997, 
+          "average": 380.9365384615385
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 17552.0, 
-          "average": 358.2040816326531
+          "count": 52, 
+          "sum": 19735.199999999997, 
+          "average": 379.5230769230769
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 18716.10000000001, 
-          "average": 381.9612244897959
+          "count": 52, 
+          "sum": 21235.30000000001, 
+          "average": 408.37115384615385
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 19543.6, 
-          "average": 390.87199999999996
+          "count": 52, 
+          "sum": 20478.0, 
+          "average": 393.8076923076923
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 18489.9, 
-          "average": 369.798
+          "count": 52, 
+          "sum": 19564.3, 
+          "average": 376.23653846153843
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 17485.100000000002, 
-          "average": 349.702
+          "count": 52, 
+          "sum": 18689.399999999998, 
+          "average": 359.4115384615385
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 18641.5, 
-          "average": 372.83
+          "count": 52, 
+          "sum": 20279.699999999993, 
+          "average": 389.9942307692308
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 18483.0, 
-          "average": 369.66
+          "count": 52, 
+          "sum": 20408.399999999998, 
+          "average": 392.4692307692308
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 18838.800000000007, 
-          "average": 376.776
+          "count": 52, 
+          "sum": 20958.200000000008, 
+          "average": 403.0423076923077
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 18378.499999999996, 
-          "average": 375.07142857142856
+          "count": 52, 
+          "sum": 20968.3, 
+          "average": 403.23653846153843
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 17658.199999999997, 
-          "average": 353.164
+          "count": 52, 
+          "sum": 19224.100000000002, 
+          "average": 369.6942307692307
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 18542.499999999993, 
-          "average": 370.85
+          "count": 52, 
+          "sum": 20361.899999999994, 
+          "average": 391.57500000000005
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 18700.200000000004, 
-          "average": 366.67058823529413
+          "count": 52, 
+          "sum": 19100.400000000005, 
+          "average": 367.31538461538463
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 15858.400000000001, 
-          "average": 317.168
+          "count": 52, 
+          "sum": 17516.200000000004, 
+          "average": 336.85
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 18024.500000000007, 
-          "average": 360.49
+          "count": 52, 
+          "sum": 19963.000000000007, 
+          "average": 383.90384615384613
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 18165.0, 
-          "average": 363.3
+          "count": 52, 
+          "sum": 19907.8, 
+          "average": 382.84230769230766
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 13564.599999999999, 
-          "average": 271.29200000000003
+          "count": 52, 
+          "sum": 14972.4, 
+          "average": 287.9307692307692
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 11202.2, 
-          "average": 224.044
+          "count": 52, 
+          "sum": 12383.900000000001, 
+          "average": 238.15192307692308
         }
       }, 
       "crime.[0].Data.Rates.Violent.All": {
         "1974": {
-          "count": 49, 
-          "sum": 17276.6, 
-          "average": 352.58367346938775
+          "count": 52, 
+          "sum": 19729.399999999994, 
+          "average": 379.4115384615385
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 5727.5999999999985, 
-          "average": 114.552
+          "count": 51, 
+          "sum": 5889.899999999999, 
+          "average": 115.48823529411764
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 6044.099999999999, 
-          "average": 120.882
+          "count": 51, 
+          "sum": 6212.299999999999, 
+          "average": 121.80980392156863
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 22924.300000000003, 
-          "average": 458.486
+          "count": 52, 
+          "sum": 25049.700000000004, 
+          "average": 481.725
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 22258.5, 
-          "average": 445.17
+          "count": 52, 
+          "sum": 24481.300000000003, 
+          "average": 470.79423076923075
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 20028.600000000002, 
-          "average": 408.74693877551016
+          "count": 52, 
+          "sum": 22911.6, 
+          "average": 440.6076923076923
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 21349.899999999998, 
-          "average": 426.99800000000005
+          "count": 52, 
+          "sum": 23532.8, 
+          "average": 452.55384615384617
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 10539.799999999997, 
-          "average": 210.796
+          "count": 52, 
+          "sum": 12343.799999999997, 
+          "average": 237.3807692307692
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 11670.099999999999, 
-          "average": 233.40200000000002
+          "count": 52, 
+          "sum": 14133.899999999996, 
+          "average": 271.8057692307692
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 21822.999999999993, 
-          "average": 445.3673469387755
+          "count": 52, 
+          "sum": 25342.799999999992, 
+          "average": 487.36153846153843
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 21166.400000000005, 
-          "average": 440.9666666666667
+          "count": 52, 
+          "sum": 25546.899999999998, 
+          "average": 491.2865384615385
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 7362.099999999999, 
-          "average": 147.24200000000002
+          "count": 51, 
+          "sum": 7552.7, 
+          "average": 148.0921568627451
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 7950.8, 
-          "average": 155.89803921568628
+          "count": 52, 
+          "sum": 8151.0, 
+          "average": 156.75
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 8843.100000000002, 
-          "average": 173.39411764705883
+          "count": 52, 
+          "sum": 9063.100000000002, 
+          "average": 174.29038461538462
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 10264.400000000001, 
-          "average": 201.2627450980392
+          "count": 52, 
+          "sum": 10517.600000000002, 
+          "average": 202.26153846153846
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 5743.3, 
-          "average": 114.866
+          "count": 51, 
+          "sum": 5904.2, 
+          "average": 115.76862745098039
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 5644.5, 
-          "average": 112.89
+          "count": 51, 
+          "sum": 5802.6, 
+          "average": 113.7764705882353
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 23317.600000000006, 
-          "average": 466.352
+          "count": 52, 
+          "sum": 25879.800000000003, 
+          "average": 497.6884615384615
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 24154.499999999996, 
-          "average": 483.09
+          "count": 52, 
+          "sum": 26963.3, 
+          "average": 518.525
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 18914.499999999996, 
-          "average": 370.87254901960785
+          "count": 52, 
+          "sum": 19301.599999999995, 
+          "average": 371.18461538461537
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 19649.300000000007, 
-          "average": 385.2803921568627
+          "count": 52, 
+          "sum": 20053.800000000007, 
+          "average": 385.65
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 18934.999999999993, 
-          "average": 371.27450980392155
+          "count": 52, 
+          "sum": 19321.899999999994, 
+          "average": 371.57500000000005
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 20762.799999999996, 
-          "average": 423.73061224489794
+          "count": 52, 
+          "sum": 23756.0, 
+          "average": 456.84615384615387
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 21750.1, 
-          "average": 435.00199999999995
+          "count": 52, 
+          "sum": 23900.8, 
+          "average": 459.6307692307692
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 23392.199999999997, 
-          "average": 467.844
+          "count": 52, 
+          "sum": 25678.299999999996, 
+          "average": 493.8134615384615
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 21865.499999999996, 
-          "average": 437.31
+          "count": 52, 
+          "sum": 24559.399999999994, 
+          "average": 472.29615384615386
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 19889.4, 
-          "average": 405.9061224489796
+          "count": 52, 
+          "sum": 22956.7, 
+          "average": 441.475
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 27288.2, 
-          "average": 556.9020408163266
+          "count": 52, 
+          "sum": 31113.6, 
+          "average": 598.3384615384616
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 26704.300000000003, 
-          "average": 534.086
+          "count": 52, 
+          "sum": 29892.100000000002, 
+          "average": 574.8480769230769
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 28397.800000000003, 
-          "average": 567.956
+          "count": 52, 
+          "sum": 32066.700000000008, 
+          "average": 616.6673076923078
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 27455.2, 
-          "average": 560.3102040816327
+          "count": 52, 
+          "sum": 31706.2, 
+          "average": 609.7346153846154
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 26971.4, 
-          "average": 539.428
+          "count": 52, 
+          "sum": 30317.300000000007, 
+          "average": 583.025
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 27643.8, 
-          "average": 552.876
+          "count": 52, 
+          "sum": 31019.999999999996, 
+          "average": 596.5384615384615
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 24783.700000000004, 
-          "average": 495.67400000000004
+          "count": 52, 
+          "sum": 27418.9, 
+          "average": 527.2865384615385
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 25292.2, 
-          "average": 505.844
+          "count": 52, 
+          "sum": 28398.600000000002, 
+          "average": 546.126923076923
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 18607.600000000006, 
-          "average": 372.152
+          "count": 52, 
+          "sum": 20510.000000000004, 
+          "average": 394.4230769230769
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 17688.699999999997, 
-          "average": 360.99387755102043
+          "count": 52, 
+          "sum": 20036.999999999993, 
+          "average": 385.3269230769231
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 18395.09999999999, 
-          "average": 375.4102040816326
+          "count": 52, 
+          "sum": 21099.799999999992, 
+          "average": 405.7653846153846
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 19601.4, 
-          "average": 392.028
+          "count": 52, 
+          "sum": 21510.899999999998, 
+          "average": 413.67115384615386
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 15884.400000000003, 
-          "average": 317.688
+          "count": 52, 
+          "sum": 17860.200000000004, 
+          "average": 343.4653846153846
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 14952.3, 
-          "average": 299.046
+          "count": 52, 
+          "sum": 17038.7, 
+          "average": 327.6673076923077
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 14373.400000000003, 
-          "average": 287.468
+          "count": 52, 
+          "sum": 16940.000000000004, 
+          "average": 325.7692307692308
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 13070.400000000001, 
-          "average": 261.408
+          "count": 52, 
+          "sum": 15660.700000000003, 
+          "average": 301.1673076923077
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 20685.200000000008, 
-          "average": 413.704
+          "count": 52, 
+          "sum": 22817.500000000007, 
+          "average": 438.7980769230769
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 19592.3, 
-          "average": 399.84285714285716
+          "count": 52, 
+          "sum": 22291.0, 
+          "average": 428.6730769230769
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 21101.899999999998, 
-          "average": 422.038
+          "count": 52, 
+          "sum": 23116.3, 
+          "average": 444.54423076923075
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 21016.8, 
-          "average": 420.336
+          "count": 52, 
+          "sum": 23123.7, 
+          "average": 444.6865384615385
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 22603.399999999998, 
-          "average": 443.2039215686275
+          "count": 52, 
+          "sum": 23082.699999999997, 
+          "average": 443.8980769230769
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 20911.499999999996, 
-          "average": 418.23
+          "count": 52, 
+          "sum": 22798.4, 
+          "average": 438.4307692307693
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 19862.1, 
-          "average": 397.24199999999996
+          "count": 52, 
+          "sum": 21694.7, 
+          "average": 417.20576923076925
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 20075.0, 
-          "average": 401.5
+          "count": 52, 
+          "sum": 21924.0, 
+          "average": 421.61538461538464
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 20380.9, 
-          "average": 407.61800000000005
+          "count": 52, 
+          "sum": 22277.199999999997, 
+          "average": 428.40769230769234
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 19384.399999999994, 
-          "average": 387.68800000000005
+          "count": 52, 
+          "sum": 21165.199999999997, 
+          "average": 407.0230769230769
         }
       }, 
       "crime.[0].Data.Totals.Property.Burglary": {
         "1974": {
-          "count": 49, 
-          "sum": 2935084, 
-          "average": 59899.67346938775
+          "count": 52, 
+          "sum": 6078301, 
+          "average": 116890.40384615384
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 850222, 
-          "average": 17004.44
+          "count": 51, 
+          "sum": 1844522, 
+          "average": 36167.098039215685
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 927679, 
-          "average": 18553.58
+          "count": 51, 
+          "sum": 2014079, 
+          "average": 39491.74509803922
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 3230595, 
-          "average": 64611.9
+          "count": 52, 
+          "sum": 6482820, 
+          "average": 124669.61538461539
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 3224940, 
-          "average": 64498.8
+          "count": 52, 
+          "sum": 6472368, 
+          "average": 124468.61538461539
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 2967243, 
-          "average": 60555.97959183674
+          "count": 52, 
+          "sum": 5968815, 
+          "average": 114784.90384615384
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 3063340, 
-          "average": 61266.8
+          "count": 52, 
+          "sum": 6146693, 
+          "average": 118205.63461538461
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 1841806, 
-          "average": 36836.12
+          "count": 52, 
+          "sum": 3718656, 
+          "average": 71512.61538461539
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 1959684, 
-          "average": 39193.68
+          "count": 52, 
+          "sum": 3964486, 
+          "average": 76240.11538461539
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 3755607, 
-          "average": 76645.04081632652
+          "count": 52, 
+          "sum": 7590330, 
+          "average": 145967.88461538462
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 3734253, 
-          "average": 77796.9375
+          "count": 52, 
+          "sum": 7559310, 
+          "average": 145371.34615384616
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 1043547, 
-          "average": 20870.94
+          "count": 51, 
+          "sum": 2256747, 
+          "average": 44249.94117647059
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 1284159, 
-          "average": 25179.58823529412
+          "count": 52, 
+          "sum": 2566659, 
+          "average": 49358.82692307692
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 1411410, 
-          "average": 27674.70588235294
+          "count": 52, 
+          "sum": 2821510, 
+          "average": 54259.807692307695
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 1633461, 
-          "average": 32028.647058823528
+          "count": 52, 
+          "sum": 3265561, 
+          "average": 62799.25
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 785673, 
-          "average": 15713.46
+          "count": 51, 
+          "sum": 1697773, 
+          "average": 33289.666666666664
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 816635, 
-          "average": 16332.7
+          "count": 51, 
+          "sum": 1766235, 
+          "average": 34632.05882352941
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 3205777, 
-          "average": 64115.54
+          "count": 52, 
+          "sum": 6436154, 
+          "average": 123772.19230769231
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 3156390, 
-          "average": 63127.8
+          "count": 52, 
+          "sum": 6336340, 
+          "average": 121852.69230769231
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 2185140, 
-          "average": 42845.882352941175
+          "count": 52, 
+          "sum": 4370280, 
+          "average": 84043.84615384616
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 2168459, 
-          "average": 42518.80392156863
+          "count": 52, 
+          "sum": 4336918, 
+          "average": 83402.26923076923
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 2103787, 
-          "average": 41250.72549019608
+          "count": 52, 
+          "sum": 4207574, 
+          "average": 80914.88461538461
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 3294461, 
-          "average": 67233.89795918367
+          "count": 52, 
+          "sum": 6655412, 
+          "average": 127988.69230769231
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 2095672, 
-          "average": 41913.44
+          "count": 52, 
+          "sum": 4201478, 
+          "average": 80797.65384615384
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 2326374, 
-          "average": 46527.48
+          "count": 52, 
+          "sum": 4665470, 
+          "average": 89720.57692307692
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 3432313, 
-          "average": 68646.26
+          "count": 52, 
+          "sum": 6894187, 
+          "average": 132580.51923076922
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 3111604, 
-          "average": 63502.12244897959
+          "count": 52, 
+          "sum": 6259658, 
+          "average": 120378.03846153847
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 3139163, 
-          "average": 64064.551020408166
+          "count": 52, 
+          "sum": 6314300, 
+          "average": 121428.84615384616
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 3061874, 
-          "average": 61237.48
+          "count": 52, 
+          "sum": 6147818, 
+          "average": 118227.26923076923
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 2823274, 
-          "average": 56465.48
+          "count": 52, 
+          "sum": 5669616, 
+          "average": 109031.07692307692
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 2963993, 
-          "average": 60489.65306122449
+          "count": 52, 
+          "sum": 5959768, 
+          "average": 114610.92307692308
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 2583599, 
-          "average": 51671.98
+          "count": 52, 
+          "sum": 5187568, 
+          "average": 99760.92307692308
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 2702737, 
-          "average": 54054.74
+          "count": 52, 
+          "sum": 5425548, 
+          "average": 104337.46153846153
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 2454063, 
-          "average": 49081.26
+          "count": 52, 
+          "sum": 4921552, 
+          "average": 94645.23076923077
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 2496572, 
-          "average": 49931.44
+          "count": 52, 
+          "sum": 5012800, 
+          "average": 96400.0
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 3069893, 
-          "average": 61397.86
+          "count": 52, 
+          "sum": 6152983, 
+          "average": 118326.59615384616
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 3000242, 
-          "average": 61229.42857142857
+          "count": 52, 
+          "sum": 6217365, 
+          "average": 119564.71153846153
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 3152305, 
-          "average": 64332.755102040814
+          "count": 52, 
+          "sum": 6530571, 
+          "average": 125587.90384615384
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 3115726, 
-          "average": 62314.52
+          "count": 52, 
+          "sum": 6256523, 
+          "average": 120317.75
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 2553975, 
-          "average": 51079.5
+          "count": 52, 
+          "sum": 5131276, 
+          "average": 98678.38461538461
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 2363200, 
-          "average": 47264.0
+          "count": 52, 
+          "sum": 4751501, 
+          "average": 91375.01923076923
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 2381389, 
-          "average": 47627.78
+          "count": 52, 
+          "sum": 4799507, 
+          "average": 92298.21153846153
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 2184574, 
-          "average": 43691.48
+          "count": 52, 
+          "sum": 4411314, 
+          "average": 84832.96153846153
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 2146082, 
-          "average": 42921.64
+          "count": 52, 
+          "sum": 4302504, 
+          "average": 82740.46153846153
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 2146289, 
-          "average": 43801.816326530614
+          "count": 52, 
+          "sum": 4309668, 
+          "average": 82878.23076923077
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 2046247, 
-          "average": 40924.94
+          "count": 52, 
+          "sum": 4101984, 
+          "average": 78884.30769230769
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 2111582, 
-          "average": 42231.64
+          "count": 52, 
+          "sum": 4233062, 
+          "average": 81405.03846153847
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 2194993, 
-          "average": 43039.07843137255
+          "count": 52, 
+          "sum": 4389986, 
+          "average": 84422.80769230769
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 2186272, 
-          "average": 43725.44
+          "count": 52, 
+          "sum": 4380396, 
+          "average": 84238.38461538461
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 2140500, 
-          "average": 42810.0
+          "count": 52, 
+          "sum": 4288892, 
+          "average": 82478.69230769231
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 2151871, 
-          "average": 43037.42
+          "count": 52, 
+          "sum": 4310896, 
+          "average": 82901.84615384616
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 2225099, 
-          "average": 44501.98
+          "count": 52, 
+          "sum": 4457774, 
+          "average": 85726.42307692308
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 2199617, 
-          "average": 43992.34
+          "count": 52, 
+          "sum": 4406626, 
+          "average": 84742.80769230769
         }
       }, 
       "crime.[0].Data.Population": {
         "1974": {
-          "count": 49, 
-          "sum": 204869000, 
-          "average": 4181000.0
+          "count": 52, 
+          "sum": 422784000, 
+          "average": 8130461.538461538
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 168418000, 
-          "average": 3368360.0
+          "count": 51, 
+          "sum": 354189000, 
+          "average": 6944882.352941177
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 170825000, 
-          "average": 3416500.0
+          "count": 51, 
+          "sum": 359308000, 
+          "average": 7045254.901960785
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 240432000, 
-          "average": 4808640.0
+          "count": 52, 
+          "sum": 481190887, 
+          "average": 9253670.903846154
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 242777000, 
-          "average": 4855540.0
+          "count": 52, 
+          "sum": 485687918, 
+          "average": 9340152.26923077
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 235038000, 
-          "average": 4796693.87755102
+          "count": 52, 
+          "sum": 471985902, 
+          "average": 9076651.961538462
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 238113000, 
-          "average": 4762260.0
+          "count": 52, 
+          "sum": 476662795, 
+          "average": 9166592.211538462
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 199051000, 
-          "average": 3981020.0
+          "count": 52, 
+          "sum": 399259000, 
+          "average": 7678057.692307692
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 201129000, 
-          "average": 4022580.0
+          "count": 52, 
+          "sum": 403312000, 
+          "average": 7756000.0
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 223953719, 
-          "average": 4570484.0612244895
+          "count": 52, 
+          "sum": 450738528, 
+          "average": 8668048.615384616
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 227253000, 
-          "average": 4734437.5
+          "count": 52, 
+          "sum": 458611714, 
+          "average": 8819456.038461538
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 173419000, 
-          "average": 3468380.0
+          "count": 51, 
+          "sum": 364560000, 
+          "average": 7148235.294117647
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 193816000, 
-          "average": 3800313.725490196
+          "count": 52, 
+          "sum": 387342000, 
+          "average": 7448884.615384615
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 195857000, 
-          "average": 3840333.3333333335
+          "count": 52, 
+          "sum": 391433000, 
+          "average": 7527557.692307692
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 197864000, 
-          "average": 3879686.274509804
+          "count": 52, 
+          "sum": 395321000, 
+          "average": 7602326.923076923
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 162540871, 
-          "average": 3250817.42
+          "count": 51, 
+          "sum": 341864046, 
+          "average": 6703216.588235294
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 165923956, 
-          "average": 3318479.12
+          "count": 51, 
+          "sum": 348915956, 
+          "average": 6841489.333333333
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 245190000, 
-          "average": 4903800.0
+          "count": 52, 
+          "sum": 490308982, 
+          "average": 9429018.884615384
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 247639000, 
-          "average": 4952780.0
+          "count": 52, 
+          "sum": 495062230, 
+          "average": 9520427.5
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 311587816, 
-          "average": 6109565.019607843
+          "count": 52, 
+          "sum": 623175632, 
+          "average": 11984146.76923077
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 309330219, 
-          "average": 6065298.411764706
+          "count": 52, 
+          "sum": 618660438, 
+          "average": 11897316.115384616
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 313914040, 
-          "average": 6155177.2549019605
+          "count": 52, 
+          "sum": 627828080, 
+          "average": 12073616.923076924
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 218739000, 
-          "average": 4464061.224489796
+          "count": 52, 
+          "sum": 440196000, 
+          "average": 8465307.692307692
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 272171813, 
-          "average": 5443436.26
+          "count": 52, 
+          "sum": 545381626, 
+          "average": 10488108.192307692
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 269773000, 
-          "average": 5395460.0
+          "count": 52, 
+          "sum": 540544003, 
+          "average": 10395076.98076923
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 230904000, 
-          "average": 4618080.0
+          "count": 52, 
+          "sum": 463199458, 
+          "average": 8907681.884615384
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 232878000, 
-          "average": 4752612.244897959
+          "count": 52, 
+          "sum": 467771994, 
+          "average": 8995615.26923077
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 251013000, 
-          "average": 5122714.285714285
+          "count": 52, 
+          "sum": 504334092, 
+          "average": 9698732.538461538
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 248102973, 
-          "average": 4962059.46
+          "count": 52, 
+          "sum": 498174269, 
+          "average": 9580274.403846154
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 257326000, 
-          "average": 5146520.0
+          "count": 52, 
+          "sum": 515686608, 
+          "average": 9917050.153846154
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 253905000, 
-          "average": 5181734.693877551
+          "count": 52, 
+          "sum": 510110699, 
+          "average": 9809821.134615384
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 262200000, 
-          "average": 5244000.0
+          "count": 52, 
+          "sum": 525557276, 
+          "average": 10106870.692307692
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 259771000, 
-          "average": 5195420.0
+          "count": 52, 
+          "sum": 520668021, 
+          "average": 10012846.557692308
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 267108000, 
-          "average": 5342160.0
+          "count": 52, 
+          "sum": 535420607, 
+          "average": 10296550.134615384
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 264741000, 
-          "average": 5294820.0
+          "count": 52, 
+          "sum": 530512572, 
+          "average": 10202164.846153846
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 215640000, 
-          "average": 4312800.0
+          "count": 52, 
+          "sum": 432662000, 
+          "average": 8320423.076923077
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 208147000, 
-          "average": 4247897.959183673
+          "count": 52, 
+          "sum": 429317000, 
+          "average": 8256096.153846154
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 206580000, 
-          "average": 4215918.367346939
+          "count": 52, 
+          "sum": 426248000, 
+          "average": 8197076.923076923
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 217391000, 
-          "average": 4347820.0
+          "count": 52, 
+          "sum": 436124000, 
+          "average": 8387000.0
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 209105000, 
-          "average": 4182100.0
+          "count": 52, 
+          "sum": 419702000, 
+          "average": 8071192.307692308
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 207486000, 
-          "average": 4149720.0
+          "count": 52, 
+          "sum": 416464000, 
+          "average": 8008923.076923077
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 205514000, 
-          "average": 4110280.0
+          "count": 52, 
+          "sum": 412467000, 
+          "average": 7932057.692307692
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 202427532, 
-          "average": 4048550.64
+          "count": 52, 
+          "sum": 406419340, 
+          "average": 7815756.538461538
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 287404767, 
-          "average": 5748095.34
+          "count": 52, 
+          "sum": 575947848, 
+          "average": 11075920.153846154
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 289583076, 
-          "average": 5909858.693877551
+          "count": 52, 
+          "sum": 581577952, 
+          "average": 11184191.384615384
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 280849847, 
-          "average": 5616996.94
+          "count": 52, 
+          "sum": 562843812, 
+          "average": 10823919.461538462
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 284743737, 
-          "average": 5694874.74
+          "count": 52, 
+          "sum": 570635118, 
+          "average": 10973752.26923077
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 299398484, 
-          "average": 5870558.509803922
+          "count": 52, 
+          "sum": 598796968, 
+          "average": 11515326.307692308
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 301032865, 
-          "average": 6020657.3
+          "count": 52, 
+          "sum": 603242314, 
+          "average": 11600813.73076923
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 293102603, 
-          "average": 5862052.06
+          "count": 52, 
+          "sum": 587313684, 
+          "average": 11294493.923076924
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 295925012, 
-          "average": 5918500.24
+          "count": 52, 
+          "sum": 593014122, 
+          "average": 11404117.73076923
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 303467891, 
-          "average": 6069357.82
+          "count": 52, 
+          "sum": 608119448, 
+          "average": 11694604.76923077
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 306406893, 
-          "average": 6128137.86
+          "count": 52, 
+          "sum": 614013100, 
+          "average": 11807944.23076923
         }
       }, 
       "crime.[0].Data.Totals.Property.Larceny": {
         "1974": {
-          "count": 49, 
-          "sum": 5116374, 
-          "average": 104415.79591836735
+          "count": 52, 
+          "sum": 10524450, 
+          "average": 202393.26923076922
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 1880882, 
-          "average": 37617.64
+          "count": 51, 
+          "sum": 3970482, 
+          "average": 77852.58823529411
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 2052750, 
-          "average": 41055.0
+          "count": 51, 
+          "sum": 4350550, 
+          "average": 85304.90196078431
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 7231292, 
-          "average": 144625.84
+          "count": 52, 
+          "sum": 14514306, 
+          "average": 279121.26923076925
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 7474839, 
-          "average": 149496.78
+          "count": 52, 
+          "sum": 14999702, 
+          "average": 288455.8076923077
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 6545568, 
-          "average": 133583.02040816325
+          "count": 52, 
+          "sum": 13183053, 
+          "average": 253520.25
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 6901469, 
-          "average": 138029.38
+          "count": 52, 
+          "sum": 13852723, 
+          "average": 266398.51923076925
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 3474546, 
-          "average": 69490.92
+          "count": 52, 
+          "sum": 6979415, 
+          "average": 134219.51923076922
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 3782882, 
-          "average": 75657.64
+          "count": 52, 
+          "sum": 7703392, 
+          "average": 148142.15384615384
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 7070124, 
-          "average": 144288.24489795917
+          "count": 52, 
+          "sum": 14272956, 
+          "average": 274479.92307692306
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 7107385, 
-          "average": 148070.52083333334
+          "count": 52, 
+          "sum": 14387895, 
+          "average": 276690.28846153844
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 2289914, 
-          "average": 45798.28
+          "count": 51, 
+          "sum": 4804314, 
+          "average": 94202.23529411765
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 2583515, 
-          "average": 50657.1568627451
+          "count": 52, 
+          "sum": 5156115, 
+          "average": 99156.05769230769
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 2833618, 
-          "average": 55561.13725490196
+          "count": 52, 
+          "sum": 5655618, 
+          "average": 108761.88461538461
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 3123919, 
-          "average": 61253.313725490196
+          "count": 52, 
+          "sum": 6235519, 
+          "average": 119913.82692307692
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 1691963, 
-          "average": 33839.26
+          "count": 51, 
+          "sum": 3547363, 
+          "average": 69556.13725490196
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 1742223, 
-          "average": 34844.46
+          "count": 51, 
+          "sum": 3655223, 
+          "average": 71671.03921568628
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 7677248, 
-          "average": 153544.96
+          "count": 52, 
+          "sum": 15411744, 
+          "average": 296379.6923076923
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 7843278, 
-          "average": 156865.56
+          "count": 52, 
+          "sum": 15744884, 
+          "average": 302786.23076923075
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 6151095, 
-          "average": 120609.70588235294
+          "count": 52, 
+          "sum": 12302190, 
+          "average": 236580.57692307694
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 6204601, 
-          "average": 121658.8431372549
+          "count": 52, 
+          "sum": 12409202, 
+          "average": 238638.5
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 6150598, 
-          "average": 120599.96078431372
+          "count": 52, 
+          "sum": 12301196, 
+          "average": 236561.46153846153
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 6540100, 
-          "average": 133471.42857142858
+          "count": 52, 
+          "sum": 13201307, 
+          "average": 253871.28846153847
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 6933819, 
-          "average": 138676.38
+          "count": 52, 
+          "sum": 13911040, 
+          "average": 267520.0
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 7351951, 
-          "average": 147039.02
+          "count": 52, 
+          "sum": 14752622, 
+          "average": 283704.26923076925
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 7108404, 
-          "average": 142168.08
+          "count": 52, 
+          "sum": 14284339, 
+          "average": 274698.82692307694
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 6665654, 
-          "average": 136033.75510204083
+          "count": 52, 
+          "sum": 13424903, 
+          "average": 258171.21153846153
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 8092671, 
-          "average": 165156.55102040817
+          "count": 52, 
+          "sum": 16284456, 
+          "average": 313162.6153846154
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 7915344, 
-          "average": 158306.88
+          "count": 52, 
+          "sum": 15891340, 
+          "average": 305602.6923076923
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 7789414, 
-          "average": 155788.28
+          "count": 52, 
+          "sum": 15641818, 
+          "average": 300804.1923076923
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 7863808, 
-          "average": 160485.8775510204
+          "count": 52, 
+          "sum": 15830398, 
+          "average": 304430.73076923075
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 7965391, 
-          "average": 159307.82
+          "count": 52, 
+          "sum": 15995420, 
+          "average": 307604.23076923075
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 7850101, 
-          "average": 157002.02
+          "count": 52, 
+          "sum": 15759624, 
+          "average": 303069.6923076923
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 7716951, 
-          "average": 154339.02
+          "count": 52, 
+          "sum": 15487520, 
+          "average": 297836.92307692306
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 7873300, 
-          "average": 157466.0
+          "count": 52, 
+          "sum": 15809370, 
+          "average": 304026.3461538461
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 5879517, 
-          "average": 117590.34
+          "count": 52, 
+          "sum": 11810863, 
+          "average": 227131.98076923078
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 6103498, 
-          "average": 124561.1836734694
+          "count": 52, 
+          "sum": 12540939, 
+          "average": 241171.90384615384
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 5814156, 
-          "average": 118656.24489795919
+          "count": 52, 
+          "sum": 11954806, 
+          "average": 229900.11538461538
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 5964645, 
-          "average": 119292.9
+          "count": 52, 
+          "sum": 11981389, 
+          "average": 230411.32692307694
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 4324321, 
-          "average": 86486.42
+          "count": 52, 
+          "sum": 8703002, 
+          "average": 167365.42307692306
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 4129334, 
-          "average": 82586.68
+          "count": 52, 
+          "sum": 8308137, 
+          "average": 159771.86538461538
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 4398219, 
-          "average": 87964.38
+          "count": 52, 
+          "sum": 8849301, 
+          "average": 170178.86538461538
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 4195126, 
-          "average": 83902.52
+          "count": 52, 
+          "sum": 8453564, 
+          "average": 162568.53846153847
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 7035671, 
-          "average": 140713.42
+          "count": 52, 
+          "sum": 14114758, 
+          "average": 271437.6538461539
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 6990632, 
-          "average": 142665.95918367346
+          "count": 52, 
+          "sum": 14053604, 
+          "average": 270261.6153846154
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 6949935, 
-          "average": 138998.7
+          "count": 52, 
+          "sum": 13943180, 
+          "average": 268138.07692307694
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 7069954, 
-          "average": 141399.08
+          "count": 52, 
+          "sum": 14184534, 
+          "average": 272779.5
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 6626363, 
-          "average": 129928.6862745098
+          "count": 52, 
+          "sum": 13252726, 
+          "average": 254860.11538461538
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 6574152, 
-          "average": 131483.04
+          "count": 52, 
+          "sum": 13183084, 
+          "average": 253520.84615384616
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 6922547, 
-          "average": 138450.94
+          "count": 52, 
+          "sum": 13874178, 
+          "average": 266811.1153846154
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 6768611, 
-          "average": 135372.22
+          "count": 52, 
+          "sum": 13566894, 
+          "average": 260901.8076923077
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 6566248, 
-          "average": 131324.96
+          "count": 52, 
+          "sum": 13172412, 
+          "average": 253315.61538461538
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 6318828, 
-          "average": 126376.56
+          "count": 52, 
+          "sum": 12676190, 
+          "average": 243772.88461538462
         }
       }, 
       "crime.[0].Data.Rates.Violent.Assault": {
         "1974": {
-          "count": 49, 
-          "sum": 9111.699999999999, 
-          "average": 185.9530612244898
+          "count": 52, 
+          "sum": 9872.599999999999, 
+          "average": 189.8576923076923
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 3177.6000000000013, 
-          "average": 63.552
+          "count": 51, 
+          "sum": 3266.200000000001, 
+          "average": 64.04313725490196
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 3385.099999999999, 
-          "average": 67.702
+          "count": 51, 
+          "sum": 3477.499999999999, 
+          "average": 68.18627450980392
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 13782.400000000001, 
-          "average": 275.64799999999997
+          "count": 52, 
+          "sum": 14797.700000000003, 
+          "average": 284.57115384615383
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 13537.5, 
-          "average": 270.75
+          "count": 52, 
+          "sum": 14707.799999999997, 
+          "average": 282.84230769230766
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 11808.9, 
-          "average": 240.99795918367346
+          "count": 52, 
+          "sum": 13166.099999999999, 
+          "average": 253.19423076923078
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 12751.0, 
-          "average": 255.02
+          "count": 52, 
+          "sum": 13767.0, 
+          "average": 264.75
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 5695.999999999999, 
-          "average": 113.92
+          "count": 52, 
+          "sum": 6223.4, 
+          "average": 119.68076923076923
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 6197.200000000001, 
-          "average": 123.944
+          "count": 52, 
+          "sum": 6803.999999999999, 
+          "average": 130.84615384615384
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 12277.400000000001, 
-          "average": 250.5591836734694
+          "count": 52, 
+          "sum": 13450.200000000003, 
+          "average": 258.65769230769234
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 11654.600000000004, 
-          "average": 242.80416666666667
+          "count": 52, 
+          "sum": 13224.100000000004, 
+          "average": 254.3096153846154
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 4398.499999999999, 
-          "average": 87.97
+          "count": 51, 
+          "sum": 4504.699999999999, 
+          "average": 88.32745098039216
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 4657.899999999999, 
-          "average": 91.3313725490196
+          "count": 52, 
+          "sum": 4769.199999999999, 
+          "average": 91.71538461538461
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 5076.499999999998, 
-          "average": 99.53921568627452
+          "count": 52, 
+          "sum": 5196.799999999998, 
+          "average": 99.93846153846154
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 5581.499999999999, 
-          "average": 109.44117647058823
+          "count": 52, 
+          "sum": 5711.699999999999, 
+          "average": 109.84038461538461
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 3179.299999999999, 
-          "average": 63.586000000000006
+          "count": 51, 
+          "sum": 3265.3999999999987, 
+          "average": 64.02745098039216
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 3118.9, 
-          "average": 62.378
+          "count": 51, 
+          "sum": 3204.6, 
+          "average": 62.83529411764706
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 14393.0, 
-          "average": 287.86
+          "count": 52, 
+          "sum": 15682.9, 
+          "average": 301.59423076923076
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 14857.199999999997, 
-          "average": 297.144
+          "count": 52, 
+          "sum": 16198.899999999998, 
+          "average": 311.51730769230767
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 12116.699999999995, 
-          "average": 237.58235294117648
+          "count": 52, 
+          "sum": 12358.199999999995, 
+          "average": 237.65769230769232
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 12589.5, 
-          "average": 246.85294117647058
+          "count": 52, 
+          "sum": 12842.3, 
+          "average": 246.96730769230768
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 12177.6, 
-          "average": 238.7764705882353
+          "count": 52, 
+          "sum": 12419.9, 
+          "average": 238.84423076923076
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 12052.4, 
-          "average": 245.9673469387755
+          "count": 52, 
+          "sum": 13141.199999999999, 
+          "average": 252.71538461538464
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 14230.300000000001, 
-          "average": 284.606
+          "count": 52, 
+          "sum": 15453.8, 
+          "average": 297.1884615384615
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 15309.699999999995, 
-          "average": 306.194
+          "count": 52, 
+          "sum": 16614.1, 
+          "average": 319.50192307692305
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 12342.500000000004, 
-          "average": 246.85
+          "count": 52, 
+          "sum": 13209.200000000003, 
+          "average": 254.02307692307693
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 11378.199999999997, 
-          "average": 232.20816326530613
+          "count": 52, 
+          "sum": 12644.299999999997, 
+          "average": 243.15961538461536
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 16645.4, 
-          "average": 339.7020408163266
+          "count": 52, 
+          "sum": 18601.800000000003, 
+          "average": 357.7269230769231
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 16599.000000000004, 
-          "average": 331.98
+          "count": 52, 
+          "sum": 18138.899999999998, 
+          "average": 348.82500000000005
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 17797.100000000002, 
-          "average": 355.94199999999995
+          "count": 52, 
+          "sum": 19795.2, 
+          "average": 380.6769230769231
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 16998.7, 
-          "average": 346.9122448979592
+          "count": 52, 
+          "sum": 19340.600000000002, 
+          "average": 371.93461538461537
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 17119.3, 
-          "average": 342.38599999999997
+          "count": 52, 
+          "sum": 18842.300000000003, 
+          "average": 362.3519230769231
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 17409.199999999997, 
-          "average": 348.184
+          "count": 52, 
+          "sum": 19278.599999999995, 
+          "average": 370.7423076923077
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 15891.0, 
-          "average": 317.82
+          "count": 52, 
+          "sum": 17348.300000000003, 
+          "average": 333.62115384615385
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 16060.600000000002, 
-          "average": 321.212
+          "count": 52, 
+          "sum": 17613.7, 
+          "average": 338.725
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 10670.300000000003, 
-          "average": 213.40599999999998
+          "count": 52, 
+          "sum": 11293.200000000003, 
+          "average": 217.1769230769231
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 9958.099999999997, 
-          "average": 203.22653061224491
+          "count": 52, 
+          "sum": 10768.099999999995, 
+          "average": 207.07884615384617
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 9866.200000000003, 
-          "average": 201.3510204081633
+          "count": 52, 
+          "sum": 10682.200000000003, 
+          "average": 205.4269230769231
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 11333.2, 
-          "average": 226.66400000000002
+          "count": 52, 
+          "sum": 11973.000000000002, 
+          "average": 230.25
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 8620.0, 
-          "average": 172.4
+          "count": 52, 
+          "sum": 9301.899999999998, 
+          "average": 178.8826923076923
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 8121.000000000001, 
-          "average": 162.42
+          "count": 52, 
+          "sum": 8830.800000000001, 
+          "average": 169.8230769230769
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 7643.4, 
-          "average": 152.868
+          "count": 52, 
+          "sum": 8358.199999999999, 
+          "average": 160.7346153846154
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 6843.0, 
-          "average": 136.86
+          "count": 52, 
+          "sum": 7548.3, 
+          "average": 145.1596153846154
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 13367.600000000002, 
-          "average": 267.35200000000003
+          "count": 52, 
+          "sum": 14548.900000000001, 
+          "average": 279.78653846153844
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 12549.299999999996, 
-          "average": 256.10816326530613
+          "count": 52, 
+          "sum": 14098.999999999995, 
+          "average": 271.13461538461536
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 13807.3, 
-          "average": 276.14599999999996
+          "count": 52, 
+          "sum": 14932.299999999997, 
+          "average": 287.1596153846154
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 13625.200000000003, 
-          "average": 272.504
+          "count": 52, 
+          "sum": 14815.700000000003, 
+          "average": 284.9173076923077
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 14283.499999999998, 
-          "average": 280.0686274509804
+          "count": 52, 
+          "sum": 14575.499999999998, 
+          "average": 280.2980769230769
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 13429.299999999997, 
-          "average": 268.586
+          "count": 52, 
+          "sum": 14343.199999999999, 
+          "average": 275.83076923076925
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 12872.799999999996, 
-          "average": 257.45599999999996
+          "count": 52, 
+          "sum": 13877.299999999996, 
+          "average": 266.87115384615385
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 12987.6, 
-          "average": 259.752
+          "count": 52, 
+          "sum": 13960.599999999999, 
+          "average": 268.4730769230769
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 12994.899999999998, 
-          "average": 259.89799999999997
+          "count": 52, 
+          "sum": 13898.799999999997, 
+          "average": 267.2846153846154
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 12487.000000000004, 
-          "average": 249.74
+          "count": 52, 
+          "sum": 13317.000000000004, 
+          "average": 256.09615384615387
         }
       }, 
       "crime.[0].Year": {
         "1974": {
-          "count": 49, 
-          "sum": 96726, 
+          "count": 52, 
+          "sum": 102648, 
           "average": 1974.0
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 98100, 
+          "count": 51, 
+          "sum": 100062, 
           "average": 1962.0
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 98150, 
+          "count": 51, 
+          "sum": 100113, 
           "average": 1963.0
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 99300, 
+          "count": 52, 
+          "sum": 103272, 
           "average": 1986.0
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 99350, 
+          "count": 52, 
+          "sum": 103324, 
           "average": 1987.0
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 97216, 
+          "count": 52, 
+          "sum": 103168, 
           "average": 1984.0
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 99250, 
+          "count": 52, 
+          "sum": 103220, 
           "average": 1985.0
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 98400, 
+          "count": 52, 
+          "sum": 102336, 
           "average": 1968.0
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 98450, 
+          "count": 52, 
+          "sum": 102388, 
           "average": 1969.0
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 97020, 
+          "count": 52, 
+          "sum": 102960, 
           "average": 1980.0
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 95088, 
+          "count": 52, 
+          "sum": 103012, 
           "average": 1981.0
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 98200, 
+          "count": 51, 
+          "sum": 100164, 
           "average": 1964.0
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 100215, 
+          "count": 52, 
+          "sum": 102180, 
           "average": 1965.0
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 100266, 
+          "count": 52, 
+          "sum": 102232, 
           "average": 1966.0
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 100317, 
+          "count": 52, 
+          "sum": 102284, 
           "average": 1967.0
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 98000, 
+          "count": 51, 
+          "sum": 99960, 
           "average": 1960.0
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 98050, 
+          "count": 51, 
+          "sum": 100011, 
           "average": 1961.0
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 99400, 
+          "count": 52, 
+          "sum": 103376, 
           "average": 1988.0
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 99450, 
+          "count": 52, 
+          "sum": 103428, 
           "average": 1989.0
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 102561, 
+          "count": 52, 
+          "sum": 104572, 
           "average": 2011.0
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 102510, 
+          "count": 52, 
+          "sum": 104520, 
           "average": 2010.0
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 102612, 
+          "count": 52, 
+          "sum": 104624, 
           "average": 2012.0
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 96971, 
+          "count": 52, 
+          "sum": 102908, 
           "average": 1979.0
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 99950, 
+          "count": 52, 
+          "sum": 103948, 
           "average": 1999.0
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 99900, 
+          "count": 52, 
+          "sum": 103896, 
           "average": 1998.0
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 99100, 
+          "count": 52, 
+          "sum": 103064, 
           "average": 1982.0
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 97167, 
+          "count": 52, 
+          "sum": 103116, 
           "average": 1983.0
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 97559, 
+          "count": 52, 
+          "sum": 103532, 
           "average": 1991.0
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 99500, 
+          "count": 52, 
+          "sum": 103480, 
           "average": 1990.0
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 99650, 
+          "count": 52, 
+          "sum": 103636, 
           "average": 1993.0
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 97608, 
+          "count": 52, 
+          "sum": 103584, 
           "average": 1992.0
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 99750, 
+          "count": 52, 
+          "sum": 103740, 
           "average": 1995.0
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 99700, 
+          "count": 52, 
+          "sum": 103688, 
           "average": 1994.0
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 99850, 
+          "count": 52, 
+          "sum": 103844, 
           "average": 1997.0
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 99800, 
+          "count": 52, 
+          "sum": 103792, 
           "average": 1996.0
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 98850, 
+          "count": 52, 
+          "sum": 102804, 
           "average": 1977.0
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 96824, 
+          "count": 52, 
+          "sum": 102752, 
           "average": 1976.0
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 96775, 
+          "count": 52, 
+          "sum": 102700, 
           "average": 1975.0
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 98900, 
+          "count": 52, 
+          "sum": 102856, 
           "average": 1978.0
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 98650, 
+          "count": 52, 
+          "sum": 102596, 
           "average": 1973.0
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 98600, 
+          "count": 52, 
+          "sum": 102544, 
           "average": 1972.0
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 98550, 
+          "count": 52, 
+          "sum": 102492, 
           "average": 1971.0
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 98500, 
+          "count": 52, 
+          "sum": 102440, 
           "average": 1970.0
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 100100, 
+          "count": 52, 
+          "sum": 104104, 
           "average": 2002.0
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 98147, 
+          "count": 52, 
+          "sum": 104156, 
           "average": 2003.0
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 100000, 
+          "count": 52, 
+          "sum": 104000, 
           "average": 2000.0
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 100050, 
+          "count": 52, 
+          "sum": 104052, 
           "average": 2001.0
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 102306, 
+          "count": 52, 
+          "sum": 104312, 
           "average": 2006.0
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 100350, 
+          "count": 52, 
+          "sum": 104364, 
           "average": 2007.0
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 100200, 
+          "count": 52, 
+          "sum": 104208, 
           "average": 2004.0
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 100250, 
+          "count": 52, 
+          "sum": 104260, 
           "average": 2005.0
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 100400, 
+          "count": 52, 
+          "sum": 104416, 
           "average": 2008.0
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 100450, 
+          "count": 52, 
+          "sum": 104468, 
           "average": 2009.0
         }
       }, 
       "crime.[0].Data.Totals.Violent.Assault": {
         "1974": {
-          "count": 49, 
-          "sum": 444227, 
-          "average": 9065.857142857143
+          "count": 52, 
+          "sum": 912313, 
+          "average": 17544.48076923077
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 134498, 
-          "average": 2689.96
+          "count": 51, 
+          "sum": 299068, 
+          "average": 5864.078431372549
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 142346, 
-          "average": 2846.92
+          "count": 51, 
+          "sum": 316556, 
+          "average": 6206.980392156863
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 830141, 
-          "average": 16602.82
+          "count": 52, 
+          "sum": 1668644, 
+          "average": 32089.30769230769
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 850004, 
-          "average": 17000.08
+          "count": 52, 
+          "sum": 1710176, 
+          "average": 32888.0
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 678985, 
-          "average": 13856.836734693878
+          "count": 52, 
+          "sum": 1370476, 
+          "average": 26355.30769230769
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 718787, 
-          "average": 14375.74
+          "count": 52, 
+          "sum": 1446490, 
+          "average": 27817.115384615383
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 284098, 
-          "average": 5681.96
+          "count": 52, 
+          "sum": 573901, 
+          "average": 11036.557692307691
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 307694, 
-          "average": 6153.88
+          "count": 52, 
+          "sum": 622393, 
+          "average": 11969.096153846154
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 666291, 
-          "average": 13597.775510204081
+          "count": 52, 
+          "sum": 1345097, 
+          "average": 25867.25
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 655623, 
-          "average": 13658.8125
+          "count": 52, 
+          "sum": 1327548, 
+          "average": 25529.76923076923
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 179129, 
-          "average": 3582.58
+          "count": 51, 
+          "sum": 382179, 
+          "average": 7493.705882352941
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 215965, 
-          "average": 4234.607843137255
+          "count": 52, 
+          "sum": 431295, 
+          "average": 8294.134615384615
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 235764, 
-          "average": 4622.823529411765
+          "count": 52, 
+          "sum": 471094, 
+          "average": 9059.5
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 257419, 
-          "average": 5047.431372549019
+          "count": 52, 
+          "sum": 514579, 
+          "average": 9895.75
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 127204, 
-          "average": 2544.08
+          "count": 51, 
+          "sum": 281524, 
+          "average": 5520.078431372549
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 128436, 
-          "average": 2568.72
+          "count": 51, 
+          "sum": 285196, 
+          "average": 5592.078431372549
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 904402, 
-          "average": 18088.04
+          "count": 52, 
+          "sum": 1820184, 
+          "average": 35003.53846153846
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 945932, 
-          "average": 18918.64
+          "count": 52, 
+          "sum": 1903414, 
+          "average": 36604.11538461538
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 752423, 
-          "average": 14753.392156862745
+          "count": 52, 
+          "sum": 1504846, 
+          "average": 28939.346153846152
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 781844, 
-          "average": 15330.274509803921
+          "count": 52, 
+          "sum": 1563688, 
+          "average": 30070.923076923078
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 760739, 
-          "average": 14916.450980392157
+          "count": 52, 
+          "sum": 1521478, 
+          "average": 29259.19230769231
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 623910, 
-          "average": 12732.857142857143
+          "count": 52, 
+          "sum": 1258818, 
+          "average": 24208.03846153846
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 907125, 
-          "average": 18142.5
+          "count": 52, 
+          "sum": 1823480, 
+          "average": 35066.92307692308
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 971651, 
-          "average": 19433.02
+          "count": 52, 
+          "sum": 1953166, 
+          "average": 37560.88461538462
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 665674, 
-          "average": 13313.48
+          "count": 52, 
+          "sum": 1338799, 
+          "average": 25746.134615384617
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 647567, 
-          "average": 13215.65306122449
+          "count": 52, 
+          "sum": 1306430, 
+          "average": 25123.653846153848
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 1083744, 
-          "average": 22117.224489795917
+          "count": 52, 
+          "sum": 2185478, 
+          "average": 42028.42307692308
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 1048084, 
-          "average": 20961.68
+          "count": 52, 
+          "sum": 2109726, 
+          "average": 40571.653846153844
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 1126604, 
-          "average": 22532.08
+          "count": 52, 
+          "sum": 2271214, 
+          "average": 43677.192307692305
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 1115792, 
-          "average": 22771.26530612245
+          "count": 52, 
+          "sum": 2253948, 
+          "average": 43345.153846153844
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 1091979, 
-          "average": 21839.58
+          "count": 52, 
+          "sum": 2198414, 
+          "average": 42277.192307692305
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 1104961, 
-          "average": 22099.22
+          "count": 52, 
+          "sum": 2226358, 
+          "average": 42814.57692307692
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 1017513, 
-          "average": 20350.26
+          "count": 52, 
+          "sum": 2046402, 
+          "average": 39353.88461538462
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 1030739, 
-          "average": 20614.78
+          "count": 52, 
+          "sum": 2074098, 
+          "average": 39886.5
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 531654, 
-          "average": 10633.08
+          "count": 52, 
+          "sum": 1068598, 
+          "average": 20549.96153846154
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 486248, 
-          "average": 9923.42857142857
+          "count": 52, 
+          "sum": 1000939, 
+          "average": 19248.826923076922
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 478486, 
-          "average": 9765.020408163266
+          "count": 52, 
+          "sum": 985119, 
+          "average": 18944.596153846152
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 568789, 
-          "average": 11375.78
+          "count": 52, 
+          "sum": 1142795, 
+          "average": 21976.826923076922
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 417124, 
-          "average": 8342.48
+          "count": 52, 
+          "sum": 841365, 
+          "average": 16180.096153846154
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 389429, 
-          "average": 7788.58
+          "count": 52, 
+          "sum": 786416, 
+          "average": 15123.384615384615
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 365064, 
-          "average": 7301.28
+          "count": 52, 
+          "sum": 737796, 
+          "average": 14188.384615384615
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 331139, 
-          "average": 6622.78
+          "count": 52, 
+          "sum": 670198, 
+          "average": 12888.423076923076
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 886445, 
-          "average": 17728.9
+          "count": 52, 
+          "sum": 1782814, 
+          "average": 34284.88461538462
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 851646, 
-          "average": 17380.530612244896
+          "count": 52, 
+          "sum": 1718060, 
+          "average": 33039.61538461538
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 907124, 
-          "average": 18142.48
+          "count": 52, 
+          "sum": 1823412, 
+          "average": 35065.61538461538
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 904020, 
-          "average": 18080.4
+          "count": 52, 
+          "sum": 1818046, 
+          "average": 34962.42307692308
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 874096, 
-          "average": 17139.13725490196
+          "count": 52, 
+          "sum": 1748192, 
+          "average": 33619.07692307692
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 862671, 
-          "average": 17253.42
+          "count": 52, 
+          "sum": 1732716, 
+          "average": 33321.46153846154
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 843413, 
-          "average": 16868.26
+          "count": 52, 
+          "sum": 1694762, 
+          "average": 32591.576923076922
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 858249, 
-          "average": 17164.98
+          "count": 52, 
+          "sum": 1724440, 
+          "average": 33162.307692307695
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 839976, 
-          "average": 16799.52
+          "count": 52, 
+          "sum": 1687366, 
+          "average": 32449.346153846152
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 809124, 
-          "average": 16182.48
+          "count": 52, 
+          "sum": 1625028, 
+          "average": 31250.53846153846
         }
       }, 
       "crime.[0].Data.Rates.Property.Larceny": {
         "1974": {
-          "count": 49, 
-          "sum": 119966.50000000001, 
-          "average": 2448.295918367347
+          "count": 52, 
+          "sum": 127993.20000000001, 
+          "average": 2461.4076923076923
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 53144.89999999999, 
-          "average": 1062.8980000000001
+          "count": 51, 
+          "sum": 54269.69999999999, 
+          "average": 1064.1117647058823
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 56678.5, 
-          "average": 1133.57
+          "count": 51, 
+          "sum": 57897.6, 
+          "average": 1135.2470588235294
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 145909.60000000003, 
-          "average": 2918.192
+          "count": 52, 
+          "sum": 153062.90000000002, 
+          "average": 2943.5173076923074
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 149136.50000000003, 
-          "average": 2982.73
+          "count": 52, 
+          "sum": 156253.10000000003, 
+          "average": 3004.867307692308
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 132377.80000000002, 
-          "average": 2701.587755102041
+          "count": 52, 
+          "sum": 143210.5, 
+          "average": 2754.048076923077
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 140700.30000000002, 
-          "average": 2814.006
+          "count": 52, 
+          "sum": 147585.00000000003, 
+          "average": 2838.173076923077
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 80330.20000000001, 
-          "average": 1606.604
+          "count": 52, 
+          "sum": 84817.10000000002, 
+          "average": 1631.098076923077
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 88223.69999999998, 
-          "average": 1764.474
+          "count": 52, 
+          "sum": 94153.29999999996, 
+          "average": 1810.6403846153846
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 152201.99999999997, 
-          "average": 3106.1632653061224
+          "count": 52, 
+          "sum": 164616.09999999998, 
+          "average": 3165.6942307692307
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 147175.1, 
-          "average": 3066.147916666667
+          "count": 52, 
+          "sum": 163806.8, 
+          "average": 3150.130769230769
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 61429.19999999998, 
-          "average": 1228.5839999999998
+          "count": 51, 
+          "sum": 62744.69999999998, 
+          "average": 1230.2882352941176
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 64096.299999999996, 
-          "average": 1256.7901960784313
+          "count": 52, 
+          "sum": 65425.6, 
+          "average": 1258.1846153846154
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 69588.09999999996, 
-          "average": 1364.4725490196079
+          "count": 52, 
+          "sum": 71030.99999999996, 
+          "average": 1365.9807692307693
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 75852.4, 
-          "average": 1487.3019607843137
+          "count": 52, 
+          "sum": 77428.2, 
+          "average": 1489.003846153846
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 50819.7, 
-          "average": 1016.3939999999999
+          "count": 51, 
+          "sum": 51854.399999999994, 
+          "average": 1016.7529411764706
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 50614.19999999999, 
-          "average": 1012.284
+          "count": 51, 
+          "sum": 51659.59999999999, 
+          "average": 1012.9333333333333
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 149085.79999999996, 
-          "average": 2981.716
+          "count": 52, 
+          "sum": 156854.3, 
+          "average": 3016.428846153846
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 150784.2, 
-          "average": 3015.684
+          "count": 52, 
+          "sum": 158802.30000000002, 
+          "average": 3053.8903846153844
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 102179.09999999998, 
-          "average": 2003.5117647058826
+          "count": 52, 
+          "sum": 104153.19999999998, 
+          "average": 2002.9461538461537
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 102574.2, 
-          "average": 2011.2588235294118
+          "count": 52, 
+          "sum": 104580.0, 
+          "average": 2011.1538461538462
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 102197.9, 
-          "average": 2003.8803921568626
+          "count": 52, 
+          "sum": 104157.2, 
+          "average": 2003.0230769230768
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 144553.79999999996, 
-          "average": 2950.077551020408
+          "count": 52, 
+          "sum": 156417.19999999998, 
+          "average": 3008.023076923077
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 128615.50000000003, 
-          "average": 2572.31
+          "count": 52, 
+          "sum": 135347.50000000003, 
+          "average": 2602.8365384615386
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 138302.49999999997, 
-          "average": 2766.05
+          "count": 52, 
+          "sum": 145689.69999999998, 
+          "average": 2801.7250000000004
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 151217.2, 
-          "average": 3024.344
+          "count": 52, 
+          "sum": 159599.00000000003, 
+          "average": 3069.2115384615386
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 136937.5, 
-          "average": 2794.6428571428573
+          "count": 52, 
+          "sum": 148095.49999999997, 
+          "average": 2847.9903846153848
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 152218.8, 
-          "average": 3106.5061224489796
+          "count": 52, 
+          "sum": 163902.39999999997, 
+          "average": 3151.9692307692308
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 154414.59999999998, 
-          "average": 3088.292
+          "count": 52, 
+          "sum": 162596.59999999998, 
+          "average": 3126.8576923076926
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 148551.30000000005, 
-          "average": 2971.026
+          "count": 52, 
+          "sum": 157034.2, 
+          "average": 3019.888461538462
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 147870.50000000003, 
-          "average": 3017.765306122449
+          "count": 52, 
+          "sum": 159711.2, 
+          "average": 3071.369230769231
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 153915.89999999997, 
-          "average": 3078.3179999999998
+          "count": 52, 
+          "sum": 162792.89999999997, 
+          "average": 3130.632692307692
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 150104.8, 
-          "average": 3002.0959999999995
+          "count": 52, 
+          "sum": 158344.19999999998, 
+          "average": 3045.0807692307694
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 147092.40000000002, 
-          "average": 2941.848
+          "count": 52, 
+          "sum": 155052.1, 
+          "average": 2981.771153846154
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 149770.69999999998, 
-          "average": 2995.414
+          "count": 52, 
+          "sum": 158530.89999999997, 
+          "average": 3048.6711538461536
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 133564.4, 
-          "average": 2671.288
+          "count": 52, 
+          "sum": 140011.10000000003, 
+          "average": 2692.521153846154
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 139437.19999999995, 
-          "average": 2845.6571428571433
+          "count": 52, 
+          "sum": 148296.19999999995, 
+          "average": 2851.8500000000004
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 134397.30000000002, 
-          "average": 2742.802040816326
+          "count": 52, 
+          "sum": 143170.00000000003, 
+          "average": 2753.269230769231
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 135424.80000000002, 
-          "average": 2708.4959999999996
+          "count": 52, 
+          "sum": 141991.8, 
+          "average": 2730.611538461538
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 102051.59999999999, 
-          "average": 2041.0320000000002
+          "count": 52, 
+          "sum": 108249.59999999998, 
+          "average": 2081.723076923077
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 97605.5, 
-          "average": 1952.11
+          "count": 52, 
+          "sum": 103289.3, 
+          "average": 1986.3326923076925
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 102202.00000000003, 
-          "average": 2044.04
+          "count": 52, 
+          "sum": 107975.30000000003, 
+          "average": 2076.4480769230768
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 97500.49999999999, 
-          "average": 1950.01
+          "count": 52, 
+          "sum": 103894.09999999998, 
+          "average": 1997.9634615384616
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 123672.80000000005, 
-          "average": 2473.456
+          "count": 52, 
+          "sum": 129937.60000000005, 
+          "average": 2498.8
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 118441.09999999999, 
-          "average": 2417.1653061224492
+          "count": 52, 
+          "sum": 126891.3, 
+          "average": 2440.2173076923077
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 125671.89999999998, 
-          "average": 2513.438
+          "count": 52, 
+          "sum": 131934.59999999998, 
+          "average": 2537.2038461538464
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 125333.90000000002, 
-          "average": 2506.678
+          "count": 52, 
+          "sum": 131708.10000000003, 
+          "average": 2532.848076923077
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 113591.40000000001, 
-          "average": 2227.282352941176
+          "count": 52, 
+          "sum": 115804.6, 
+          "average": 2227.0115384615387
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 108918.59999999999, 
-          "average": 2178.3720000000003
+          "count": 52, 
+          "sum": 114059.99999999999, 
+          "average": 2193.4615384615386
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 118339.50000000001, 
-          "average": 2366.79
+          "count": 52, 
+          "sum": 123325.60000000002, 
+          "average": 2371.646153846154
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 115044.0, 
-          "average": 2300.88
+          "count": 52, 
+          "sum": 119880.8, 
+          "average": 2305.4
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 107161.20000000001, 
-          "average": 2143.224
+          "count": 52, 
+          "sum": 112699.50000000003, 
+          "average": 2167.298076923077
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 102291.09999999999, 
-          "average": 2045.8220000000001
+          "count": 52, 
+          "sum": 107568.59999999999, 
+          "average": 2068.626923076923
         }
       }, 
       "crime.[0].Data.Rates.Violent.Rape": {
         "1974": {
-          "count": 49, 
-          "sum": 1121.0, 
-          "average": 22.877551020408163
+          "count": 52, 
+          "sum": 1240.4, 
+          "average": 23.853846153846156
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 395.09999999999997, 
-          "average": 7.902
+          "count": 51, 
+          "sum": 404.49999999999994, 
+          "average": 7.931372549019608
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 392.6000000000001, 
-          "average": 7.852
+          "count": 51, 
+          "sum": 402.00000000000006, 
+          "average": 7.882352941176471
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 1701.4999999999998, 
-          "average": 34.03
+          "count": 52, 
+          "sum": 1791.9999999999998, 
+          "average": 34.46153846153846
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 1707.4, 
-          "average": 34.148
+          "count": 52, 
+          "sum": 1784.3999999999999, 
+          "average": 34.315384615384616
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 1545.9, 
-          "average": 31.548979591836737
+          "count": 52, 
+          "sum": 1731.9, 
+          "average": 33.30576923076923
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 1667.3, 
-          "average": 33.346
+          "count": 52, 
+          "sum": 1757.8999999999999, 
+          "average": 33.80576923076923
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 664.4000000000001, 
-          "average": 13.288
+          "count": 52, 
+          "sum": 712.4000000000001, 
+          "average": 13.7
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 765.7, 
-          "average": 15.314
+          "count": 52, 
+          "sum": 881.4, 
+          "average": 16.95
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 1539.9, 
-          "average": 31.4265306122449
+          "count": 52, 
+          "sum": 1713.0, 
+          "average": 32.94230769230769
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 1457.3000000000004, 
-          "average": 30.360416666666666
+          "count": 52, 
+          "sum": 1725.5000000000002, 
+          "average": 33.18269230769231
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 485.50000000000006, 
-          "average": 9.71
+          "count": 51, 
+          "sum": 496.70000000000005, 
+          "average": 9.739215686274509
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 514.7, 
-          "average": 10.0921568627451
+          "count": 52, 
+          "sum": 526.8000000000001, 
+          "average": 10.13076923076923
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 568.2, 
-          "average": 11.141176470588237
+          "count": 52, 
+          "sum": 581.4000000000001, 
+          "average": 11.180769230769231
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 593.5000000000001, 
-          "average": 11.637254901960784
+          "count": 52, 
+          "sum": 607.5000000000001, 
+          "average": 11.682692307692308
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 402.19999999999993, 
-          "average": 8.044
+          "count": 51, 
+          "sum": 411.79999999999995, 
+          "average": 8.074509803921568
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 383.90000000000003, 
-          "average": 7.678
+          "count": 51, 
+          "sum": 393.3, 
+          "average": 7.711764705882353
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 1730.6000000000004, 
-          "average": 34.611999999999995
+          "count": 52, 
+          "sum": 1795.0000000000002, 
+          "average": 34.51923076923077
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 1796.9, 
-          "average": 35.938
+          "count": 52, 
+          "sum": 1866.0, 
+          "average": 35.88461538461539
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 1579.7, 
-          "average": 30.97450980392157
+          "count": 52, 
+          "sum": 1606.7, 
+          "average": 30.898076923076925
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 1594.8000000000004, 
-          "average": 31.270588235294117
+          "count": 52, 
+          "sum": 1622.5000000000005, 
+          "average": 31.201923076923077
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 1579.2, 
-          "average": 30.96470588235294
+          "count": 52, 
+          "sum": 1606.1000000000001, 
+          "average": 30.88653846153846
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 1489.8, 
-          "average": 30.40408163265306
+          "count": 52, 
+          "sum": 1658.5, 
+          "average": 31.89423076923077
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 1732.1999999999998, 
-          "average": 34.644
+          "count": 52, 
+          "sum": 1812.7999999999997, 
+          "average": 34.86153846153846
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 1778.6000000000001, 
-          "average": 35.571999999999996
+          "count": 52, 
+          "sum": 1849.4, 
+          "average": 35.565384615384616
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 1537.2, 
-          "average": 30.744
+          "count": 52, 
+          "sum": 1637.9000000000003, 
+          "average": 31.498076923076926
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 1451.6, 
-          "average": 29.624489795918365
+          "count": 52, 
+          "sum": 1652.1, 
+          "average": 31.771153846153844
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 1977.4000000000003, 
-          "average": 40.35510204081633
+          "count": 52, 
+          "sum": 2147.3000000000006, 
+          "average": 41.29423076923077
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 1980.4, 
-          "average": 39.608000000000004
+          "count": 52, 
+          "sum": 2071.4, 
+          "average": 39.83461538461539
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 2066.2, 
-          "average": 41.324
+          "count": 52, 
+          "sum": 2163.3999999999996, 
+          "average": 41.603846153846156
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 2036.4000000000003, 
-          "average": 41.55918367346939
+          "count": 52, 
+          "sum": 2214.3, 
+          "average": 42.58269230769231
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 1880.0000000000005, 
-          "average": 37.6
+          "count": 52, 
+          "sum": 1969.8000000000002, 
+          "average": 37.88076923076923
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 1977.1000000000001, 
-          "average": 39.542
+          "count": 52, 
+          "sum": 2060.1000000000004, 
+          "average": 39.61730769230769
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 1834.0000000000005, 
-          "average": 36.68
+          "count": 52, 
+          "sum": 1911.1000000000004, 
+          "average": 36.75192307692308
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 1829.1, 
-          "average": 36.582
+          "count": 52, 
+          "sum": 1913.3, 
+          "average": 36.794230769230765
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 1291.0000000000002, 
-          "average": 25.82
+          "count": 52, 
+          "sum": 1378.7000000000003, 
+          "average": 26.513461538461538
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 1156.1, 
-          "average": 23.593877551020405
+          "count": 52, 
+          "sum": 1272.8000000000002, 
+          "average": 24.476923076923075
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 1137.7999999999997, 
-          "average": 23.220408163265304
+          "count": 52, 
+          "sum": 1255.8999999999999, 
+          "average": 24.15192307692308
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 1358.4, 
-          "average": 27.168000000000003
+          "count": 52, 
+          "sum": 1455.7000000000003, 
+          "average": 27.99423076923077
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 1068.1999999999996, 
-          "average": 21.364
+          "count": 52, 
+          "sum": 1172.5999999999997, 
+          "average": 22.549999999999997
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 970.1999999999997, 
-          "average": 19.404
+          "count": 52, 
+          "sum": 1088.1999999999998, 
+          "average": 20.926923076923078
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 893.9, 
-          "average": 17.878
+          "count": 52, 
+          "sum": 997.4000000000002, 
+          "average": 19.18076923076923
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 791.6999999999998, 
-          "average": 15.834000000000001
+          "count": 52, 
+          "sum": 905.5999999999999, 
+          "average": 17.415384615384617
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 1723.9, 
-          "average": 34.478
+          "count": 52, 
+          "sum": 1803.0000000000002, 
+          "average": 34.67307692307692
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 1621.6, 
-          "average": 33.093877551020405
+          "count": 52, 
+          "sum": 1796.2999999999997, 
+          "average": 34.544230769230765
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 1691.4, 
-          "average": 33.828
+          "count": 52, 
+          "sum": 1767.3, 
+          "average": 33.98653846153846
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 1664.5999999999997, 
-          "average": 33.292
+          "count": 52, 
+          "sum": 1727.8999999999996, 
+          "average": 33.228846153846156
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 1764.0000000000007, 
-          "average": 34.588235294117645
+          "count": 52, 
+          "sum": 1795.6000000000006, 
+          "average": 34.53076923076923
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 1691.9000000000005, 
-          "average": 33.838
+          "count": 52, 
+          "sum": 1755.1000000000006, 
+          "average": 33.75192307692308
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 1725.0999999999997, 
-          "average": 34.501999999999995
+          "count": 52, 
+          "sum": 1797.6000000000001, 
+          "average": 34.56923076923077
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 1705.2, 
-          "average": 34.104
+          "count": 52, 
+          "sum": 1765.4999999999998, 
+          "average": 33.95192307692308
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 1685.6000000000004, 
-          "average": 33.711999999999996
+          "count": 52, 
+          "sum": 1746.8000000000004, 
+          "average": 33.59230769230769
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1655.8999999999994, 
-          "average": 33.118
+          "count": 52, 
+          "sum": 1709.9999999999995, 
+          "average": 32.88461538461539
         }
       }, 
       "crime.[0].Data.Totals.Violent.Rape": {
         "1974": {
-          "count": 49, 
-          "sum": 53898, 
-          "average": 1099.9591836734694
+          "count": 52, 
+          "sum": 110766, 
+          "average": 2130.1153846153848
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 15436, 
-          "average": 308.72
+          "count": 51, 
+          "sum": 32986, 
+          "average": 646.7843137254902
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 15608, 
-          "average": 312.16
+          "count": 51, 
+          "sum": 33258, 
+          "average": 652.1176470588235
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 91131, 
-          "average": 1822.62
+          "count": 52, 
+          "sum": 182918, 
+          "average": 3517.653846153846
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 90866, 
-          "average": 1817.32
+          "count": 52, 
+          "sum": 182222, 
+          "average": 3504.269230769231
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 83378, 
-          "average": 1701.591836734694
+          "count": 52, 
+          "sum": 168435, 
+          "average": 3239.1346153846152
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 88332, 
-          "average": 1766.64
+          "count": 52, 
+          "sum": 176340, 
+          "average": 3391.153846153846
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 31465, 
-          "average": 629.3
+          "count": 52, 
+          "sum": 63395, 
+          "average": 1219.1346153846155
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 36848, 
-          "average": 736.96
+          "count": 52, 
+          "sum": 74794, 
+          "average": 1438.3461538461538
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 81969, 
-          "average": 1672.8367346938776
+          "count": 52, 
+          "sum": 165936, 
+          "average": 3191.076923076923
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 81063, 
-          "average": 1688.8125
+          "count": 52, 
+          "sum": 164946, 
+          "average": 3172.0384615384614
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 19456, 
-          "average": 389.12
+          "count": 51, 
+          "sum": 40876, 
+          "average": 801.4901960784314
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 23494, 
-          "average": 460.6666666666667
+          "count": 52, 
+          "sum": 46904, 
+          "average": 902.0
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 25921, 
-          "average": 508.2549019607843
+          "count": 52, 
+          "sum": 51741, 
+          "average": 995.0192307692307
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 27678, 
-          "average": 542.7058823529412
+          "count": 52, 
+          "sum": 55298, 
+          "average": 1063.423076923077
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 15219, 
-          "average": 304.38
+          "count": 51, 
+          "sum": 32409, 
+          "average": 635.4705882352941
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 15299, 
-          "average": 305.98
+          "count": 51, 
+          "sum": 32519, 
+          "average": 637.6274509803922
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 92321, 
-          "average": 1846.42
+          "count": 52, 
+          "sum": 184972, 
+          "average": 3557.153846153846
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 94318, 
-          "average": 1886.36
+          "count": 52, 
+          "sum": 189008, 
+          "average": 3634.769230769231
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 84175, 
-          "average": 1650.4901960784314
+          "count": 52, 
+          "sum": 168350, 
+          "average": 3237.5
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 85593, 
-          "average": 1678.2941176470588
+          "count": 52, 
+          "sum": 171186, 
+          "average": 3292.0384615384614
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 84376, 
-          "average": 1654.4313725490197
+          "count": 52, 
+          "sum": 168752, 
+          "average": 3245.230769230769
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 75453, 
-          "average": 1539.857142857143
+          "count": 52, 
+          "sum": 152750, 
+          "average": 2937.5
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 89163, 
-          "average": 1783.26
+          "count": 52, 
+          "sum": 178822, 
+          "average": 3438.8846153846152
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 92954, 
-          "average": 1859.08
+          "count": 52, 
+          "sum": 186288, 
+          "average": 3582.4615384615386
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 78305, 
-          "average": 1566.1
+          "count": 52, 
+          "sum": 157496, 
+          "average": 3028.769230769231
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 77999, 
-          "average": 1591.8163265306123
+          "count": 52, 
+          "sum": 157809, 
+          "average": 3034.7884615384614
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 105856, 
-          "average": 2160.326530612245
+          "count": 52, 
+          "sum": 213186, 
+          "average": 4099.7307692307695
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 102252, 
-          "average": 2045.04
+          "count": 52, 
+          "sum": 205110, 
+          "average": 3944.423076923077
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 105690, 
-          "average": 2113.8
+          "count": 52, 
+          "sum": 212028, 
+          "average": 4077.4615384615386
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 108268, 
-          "average": 2209.5510204081634
+          "count": 52, 
+          "sum": 218124, 
+          "average": 4194.692307692308
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 97178, 
-          "average": 1943.56
+          "count": 52, 
+          "sum": 194940, 
+          "average": 3748.846153846154
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 101967, 
-          "average": 2039.34
+          "count": 52, 
+          "sum": 204432, 
+          "average": 3931.3846153846152
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 95935, 
-          "average": 1918.7
+          "count": 52, 
+          "sum": 192306, 
+          "average": 3698.1923076923076
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 95992, 
-          "average": 1919.84
+          "count": 52, 
+          "sum": 192504, 
+          "average": 3702.0
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 63076, 
-          "average": 1261.52
+          "count": 52, 
+          "sum": 126978, 
+          "average": 2441.8846153846152
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 55510, 
-          "average": 1132.857142857143
+          "count": 52, 
+          "sum": 114126, 
+          "average": 2194.730769230769
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 54404, 
-          "average": 1110.2857142857142
+          "count": 52, 
+          "sum": 112135, 
+          "average": 2156.4423076923076
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 67118, 
-          "average": 1342.36
+          "count": 52, 
+          "sum": 135175, 
+          "average": 2599.519230769231
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 50774, 
-          "average": 1015.48
+          "count": 52, 
+          "sum": 102770, 
+          "average": 1976.3461538461538
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 46110, 
-          "average": 922.2
+          "count": 52, 
+          "sum": 93674, 
+          "average": 1801.423076923077
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 41612, 
-          "average": 832.24
+          "count": 52, 
+          "sum": 84487, 
+          "average": 1624.75
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 37648, 
-          "average": 752.96
+          "count": 52, 
+          "sum": 76358, 
+          "average": 1468.423076923077
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 94973, 
-          "average": 1899.46
+          "count": 52, 
+          "sum": 190470, 
+          "average": 3662.8846153846152
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 93004, 
-          "average": 1898.0408163265306
+          "count": 52, 
+          "sum": 187766, 
+          "average": 3610.8846153846152
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 89927, 
-          "average": 1798.54
+          "count": 52, 
+          "sum": 180356, 
+          "average": 3468.3846153846152
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 90682, 
-          "average": 1813.64
+          "count": 52, 
+          "sum": 181726, 
+          "average": 3494.730769230769
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 94472, 
-          "average": 1852.3921568627452
+          "count": 52, 
+          "sum": 188944, 
+          "average": 3633.5384615384614
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 91968, 
-          "average": 1839.36
+          "count": 52, 
+          "sum": 184320, 
+          "average": 3544.6153846153848
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 94867, 
-          "average": 1897.34
+          "count": 52, 
+          "sum": 190178, 
+          "average": 3657.269230769231
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 94181, 
-          "average": 1883.62
+          "count": 52, 
+          "sum": 188694, 
+          "average": 3628.730769230769
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 90564, 
-          "average": 1811.28
+          "count": 52, 
+          "sum": 181500, 
+          "average": 3490.3846153846152
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 89091, 
-          "average": 1781.82
+          "count": 52, 
+          "sum": 178482, 
+          "average": 3432.346153846154
         }
       }, 
       "crime.[0].Data.Totals.Violent.Robbery": {
         "1974": {
-          "count": 49, 
-          "sum": 421866, 
-          "average": 8609.510204081633
+          "count": 52, 
+          "sum": 884524, 
+          "average": 17010.076923076922
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 89648, 
-          "average": 1792.96
+          "count": 51, 
+          "sum": 200508, 
+          "average": 3931.529411764706
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 94221, 
-          "average": 1884.42
+          "count": 51, 
+          "sum": 210691, 
+          "average": 4131.196078431372
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 538055, 
-          "average": 10761.1
+          "count": 52, 
+          "sum": 1085550, 
+          "average": 20875.96153846154
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 513242, 
-          "average": 10264.84
+          "count": 52, 
+          "sum": 1035408, 
+          "average": 19911.69230769231
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 478142, 
-          "average": 9758.0
+          "count": 52, 
+          "sum": 969784, 
+          "average": 18649.69230769231
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 492638, 
-          "average": 9852.76
+          "count": 52, 
+          "sum": 995742, 
+          "average": 19148.884615384617
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 253966, 
-          "average": 5079.32
+          "count": 52, 
+          "sum": 525428, 
+          "average": 10104.384615384615
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 286243, 
-          "average": 5724.86
+          "count": 52, 
+          "sum": 597459, 
+          "average": 11489.596153846154
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 553033, 
-          "average": 11286.387755102041
+          "count": 52, 
+          "sum": 1131456, 
+          "average": 21758.76923076923
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 577888, 
-          "average": 12039.333333333334
+          "count": 52, 
+          "sum": 1185539, 
+          "average": 22798.826923076922
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 104334, 
-          "average": 2086.68
+          "count": 51, 
+          "sum": 234724, 
+          "average": 4602.431372549019
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 138850, 
-          "average": 2722.549019607843
+          "count": 52, 
+          "sum": 277540, 
+          "average": 5337.307692307692
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 157854, 
-          "average": 3095.176470588235
+          "count": 52, 
+          "sum": 315844, 
+          "average": 6073.923076923077
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 202679, 
-          "average": 3974.098039215686
+          "count": 52, 
+          "sum": 405589, 
+          "average": 7799.788461538462
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 87261, 
-          "average": 1745.22
+          "count": 51, 
+          "sum": 195101, 
+          "average": 3825.5098039215686
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 86446, 
-          "average": 1728.92
+          "count": 51, 
+          "sum": 193116, 
+          "average": 3786.5882352941176
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 537278, 
-          "average": 10745.56
+          "count": 52, 
+          "sum": 1085936, 
+          "average": 20883.384615384617
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 571784, 
-          "average": 11435.68
+          "count": 52, 
+          "sum": 1156652, 
+          "average": 22243.30769230769
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 354772, 
-          "average": 6956.313725490196
+          "count": 52, 
+          "sum": 709544, 
+          "average": 13645.076923076924
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 369089, 
-          "average": 7237.0392156862745
+          "count": 52, 
+          "sum": 738178, 
+          "average": 14195.73076923077
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 354522, 
-          "average": 6951.411764705882
+          "count": 52, 
+          "sum": 709044, 
+          "average": 13635.461538461539
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 470718, 
-          "average": 9606.489795918367
+          "count": 52, 
+          "sum": 961199, 
+          "average": 18484.596153846152
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 406027, 
-          "average": 8120.54
+          "count": 52, 
+          "sum": 818742, 
+          "average": 15745.038461538461
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 443580, 
-          "average": 8871.6
+          "count": 52, 
+          "sum": 894372, 
+          "average": 17199.46153846154
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 543702, 
-          "average": 10874.04
+          "count": 52, 
+          "sum": 1105969, 
+          "average": 21268.634615384617
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 498153, 
-          "average": 10166.387755102041
+          "count": 52, 
+          "sum": 1012883, 
+          "average": 19478.51923076923
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 679818, 
-          "average": 13873.836734693878
+          "count": 52, 
+          "sum": 1375464, 
+          "average": 26451.23076923077
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 631906, 
-          "average": 12638.12
+          "count": 52, 
+          "sum": 1278542, 
+          "average": 24587.346153846152
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 652763, 
-          "average": 13055.26
+          "count": 52, 
+          "sum": 1319740, 
+          "average": 25379.615384615383
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 664379, 
-          "average": 13558.755102040815
+          "count": 52, 
+          "sum": 1344956, 
+          "average": 25864.53846153846
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 573645, 
-          "average": 11472.9
+          "count": 52, 
+          "sum": 1161018, 
+          "average": 22327.26923076923
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 612638, 
-          "average": 12252.76
+          "count": 52, 
+          "sum": 1237898, 
+          "average": 23805.73076923077
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 494033, 
-          "average": 9880.66
+          "count": 52, 
+          "sum": 997068, 
+          "average": 19174.384615384617
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 529150, 
-          "average": 10583.0
+          "count": 52, 
+          "sum": 1071188, 
+          "average": 20599.76923076923
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 405789, 
-          "average": 8115.78
+          "count": 52, 
+          "sum": 825054, 
+          "average": 15866.423076923076
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 410079, 
-          "average": 8368.959183673469
+          "count": 52, 
+          "sum": 855399, 
+          "average": 16449.98076923077
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 447407, 
-          "average": 9130.755102040815
+          "count": 52, 
+          "sum": 940273, 
+          "average": 18082.173076923078
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 420375, 
-          "average": 8407.5
+          "count": 52, 
+          "sum": 853638, 
+          "average": 16416.115384615383
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 376826, 
-          "average": 7536.52
+          "count": 52, 
+          "sum": 768217, 
+          "average": 14773.403846153846
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 368564, 
-          "average": 7371.28
+          "count": 52, 
+          "sum": 752605, 
+          "average": 14473.173076923076
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 376365, 
-          "average": 7527.3
+          "count": 52, 
+          "sum": 775287, 
+          "average": 14909.365384615385
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 337824, 
-          "average": 6756.48
+          "count": 52, 
+          "sum": 699500, 
+          "average": 13451.923076923076
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 416972, 
-          "average": 8339.44
+          "count": 52, 
+          "sum": 841612, 
+          "average": 16184.846153846154
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 409848, 
-          "average": 8364.244897959185
+          "count": 52, 
+          "sum": 828470, 
+          "average": 15932.115384615385
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 404462, 
-          "average": 8089.24
+          "count": 52, 
+          "sum": 816032, 
+          "average": 15692.923076923076
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 419777, 
-          "average": 8395.54
+          "count": 52, 
+          "sum": 847114, 
+          "average": 16290.653846153846
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 449246, 
-          "average": 8808.745098039215
+          "count": 52, 
+          "sum": 898492, 
+          "average": 17278.69230769231
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 443059, 
-          "average": 8861.18
+          "count": 52, 
+          "sum": 894648, 
+          "average": 17204.76923076923
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 398268, 
-          "average": 7965.36
+          "count": 52, 
+          "sum": 802940, 
+          "average": 15441.153846153846
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 413738, 
-          "average": 8274.76
+          "count": 52, 
+          "sum": 834876, 
+          "average": 16055.307692307691
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 439133, 
-          "average": 8782.66
+          "count": 52, 
+          "sum": 887126, 
+          "average": 17060.115384615383
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 404338, 
-          "average": 8086.76
+          "count": 52, 
+          "sum": 817484, 
+          "average": 15720.846153846154
         }
       }, 
       "crime.[0].Data.Totals.Violent.All": {
         "1974": {
-          "count": 49, 
-          "sum": 940169, 
-          "average": 19187.122448979593
+          "count": 52, 
+          "sum": 1949024, 
+          "average": 37481.230769230766
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 247475, 
-          "average": 4949.5
+          "count": 51, 
+          "sum": 548985, 
+          "average": 10764.411764705883
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 260114, 
-          "average": 5202.28
+          "count": 51, 
+          "sum": 577084, 
+          "average": 11315.372549019608
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 1479746, 
-          "average": 29594.92
+          "count": 52, 
+          "sum": 2978338, 
+          "average": 57275.730769230766
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 1473983, 
-          "average": 29479.66
+          "count": 52, 
+          "sum": 2967998, 
+          "average": 57076.88461538462
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 1258961, 
-          "average": 25693.081632653062
+          "count": 52, 
+          "sum": 2546076, 
+          "average": 48963.0
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 1318586, 
-          "average": 26371.72
+          "count": 52, 
+          "sum": 2656524, 
+          "average": 51087.0
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 583158, 
-          "average": 11663.16
+          "count": 52, 
+          "sum": 1190348, 
+          "average": 22891.30769230769
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 645247, 
-          "average": 12904.94
+          "count": 52, 
+          "sum": 1324155, 
+          "average": 25464.51923076923
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 1323977, 
-          "average": 27019.938775510203
+          "count": 52, 
+          "sum": 2688573, 
+          "average": 51703.32692307692
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 1336659, 
-          "average": 27847.0625
+          "count": 52, 
+          "sum": 2723059, 
+          "average": 52366.519230769234
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 311455, 
-          "average": 6229.1
+          "count": 51, 
+          "sum": 675675, 
+          "average": 13248.529411764706
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 388288, 
-          "average": 7613.490196078431
+          "count": 52, 
+          "sum": 775678, 
+          "average": 14916.884615384615
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 430593, 
-          "average": 8443.0
+          "count": 52, 
+          "sum": 860773, 
+          "average": 16553.326923076922
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 500024, 
-          "average": 9804.392156862745
+          "count": 52, 
+          "sum": 999954, 
+          "average": 19229.884615384617
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 238326, 
-          "average": 4766.52
+          "count": 51, 
+          "sum": 526786, 
+          "average": 10329.137254901962
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 238296, 
-          "average": 4765.92
+          "count": 51, 
+          "sum": 527686, 
+          "average": 10346.78431372549
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 1554307, 
-          "average": 31086.14
+          "count": 52, 
+          "sum": 3132442, 
+          "average": 60239.269230769234
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 1633100, 
-          "average": 32662.0
+          "count": 52, 
+          "sum": 3292074, 
+          "average": 63309.11538461538
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 1206031, 
-          "average": 23647.666666666668
+          "count": 52, 
+          "sum": 2412062, 
+          "average": 46385.807692307695
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 1251248, 
-          "average": 24534.274509803923
+          "count": 52, 
+          "sum": 2502496, 
+          "average": 48124.92307692308
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 1214464, 
-          "average": 23813.019607843136
+          "count": 52, 
+          "sum": 2428928, 
+          "average": 46710.153846153844
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 1191234, 
-          "average": 24310.897959183672
+          "count": 52, 
+          "sum": 2415683, 
+          "average": 46455.442307692305
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 1417596, 
-          "average": 28351.92
+          "count": 52, 
+          "sum": 2852088, 
+          "average": 54847.846153846156
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 1524899, 
-          "average": 30497.98
+          "count": 52, 
+          "sum": 3067774, 
+          "average": 58995.653846153844
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 1308499, 
-          "average": 26169.98
+          "count": 52, 
+          "sum": 2644286, 
+          "average": 50851.653846153844
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 1242778, 
-          "average": 25362.816326530614
+          "count": 52, 
+          "sum": 2515738, 
+          "average": 48379.57692307692
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 1893597, 
-          "average": 38644.836734693876
+          "count": 52, 
+          "sum": 3823534, 
+          "average": 73529.5
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 1805208, 
-          "average": 36104.16
+          "count": 52, 
+          "sum": 3640254, 
+          "average": 70004.88461538461
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 1909129, 
-          "average": 38182.58
+          "count": 52, 
+          "sum": 3852034, 
+          "average": 74077.57692307692
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 1911712, 
-          "average": 39014.5306122449
+          "count": 52, 
+          "sum": 3864548, 
+          "average": 74318.23076923077
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 1784048, 
-          "average": 35680.96
+          "count": 52, 
+          "sum": 3597584, 
+          "average": 69184.30769230769
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 1842493, 
-          "average": 36849.86
+          "count": 52, 
+          "sum": 3715340, 
+          "average": 71448.84615384616
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 1625388, 
-          "average": 32507.76
+          "count": 52, 
+          "sum": 3272192, 
+          "average": 62926.769230769234
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 1675129, 
-          "average": 33502.58
+          "count": 52, 
+          "sum": 3377080, 
+          "average": 64943.846153846156
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 1019448, 
-          "average": 20388.96
+          "count": 52, 
+          "sum": 2058871, 
+          "average": 39593.67307692308
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 970239, 
-          "average": 19800.79591836735
+          "count": 52, 
+          "sum": 2008038, 
+          "average": 38616.11538461538
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 1000325, 
-          "average": 20414.79591836735
+          "count": 52, 
+          "sum": 2078532, 
+          "average": 39971.769230769234
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 1075648, 
-          "average": 21512.96
+          "count": 52, 
+          "sum": 2170713, 
+          "average": 41744.480769230766
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 864088, 
-          "average": 17281.76
+          "count": 52, 
+          "sum": 1751624, 
+          "average": 33685.07692307692
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 822543, 
-          "average": 16450.86
+          "count": 52, 
+          "sum": 1670050, 
+          "average": 32116.346153846152
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 800543, 
-          "average": 16010.86
+          "count": 52, 
+          "sum": 1633127, 
+          "average": 31406.28846153846
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 722396, 
-          "average": 14447.92
+          "count": 52, 
+          "sum": 1478062, 
+          "average": 28424.26923076923
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 1414355, 
-          "average": 28287.1
+          "count": 52, 
+          "sum": 2847354, 
+          "average": 54756.807692307695
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 1370738, 
-          "average": 27974.244897959183
+          "count": 52, 
+          "sum": 2767352, 
+          "average": 53218.307692307695
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 1416860, 
-          "average": 28337.2
+          "count": 52, 
+          "sum": 2850972, 
+          "average": 54826.38461538462
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 1430285, 
-          "average": 28605.7
+          "count": 52, 
+          "sum": 2878960, 
+          "average": 55364.61538461538
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 1435123, 
-          "average": 28139.666666666668
+          "count": 52, 
+          "sum": 2870246, 
+          "average": 55197.03846153846
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 1414645, 
-          "average": 28292.9
+          "count": 52, 
+          "sum": 2845940, 
+          "average": 54729.61538461538
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 1352498, 
-          "average": 27049.96
+          "count": 52, 
+          "sum": 2720176, 
+          "average": 52311.07692307692
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 1382713, 
-          "average": 27654.26
+          "count": 52, 
+          "sum": 2781490, 
+          "average": 53490.192307692305
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 1385952, 
-          "average": 27719.04
+          "count": 52, 
+          "sum": 2788922, 
+          "average": 53633.11538461538
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1317807, 
-          "average": 26356.14
+          "count": 52, 
+          "sum": 2651792, 
+          "average": 50996.0
         }
       }, 
       "crime.[0].Data.Rates.Violent.Robbery": {
         "1974": {
-          "count": 49, 
-          "sum": 6627.7, 
-          "average": 135.25918367346938
+          "count": 52, 
+          "sum": 8147.700000000001, 
+          "average": 156.68653846153845
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 1930.3999999999996, 
-          "average": 38.608000000000004
+          "count": 51, 
+          "sum": 1990.0999999999997, 
+          "average": 39.02156862745098
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 2038.6, 
-          "average": 40.772
+          "count": 51, 
+          "sum": 2100.4, 
+          "average": 41.1843137254902
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 7101.299999999999, 
-          "average": 142.026
+          "count": 52, 
+          "sum": 8081.300000000001, 
+          "average": 155.4096153846154
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 6690.4, 
-          "average": 133.808
+          "count": 52, 
+          "sum": 7621.500000000001, 
+          "average": 146.56730769230768
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 6375.5, 
-          "average": 130.1122448979592
+          "count": 52, 
+          "sum": 7667.599999999999, 
+          "average": 147.45384615384617
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 6613.899999999999, 
-          "average": 132.278
+          "count": 52, 
+          "sum": 7658.699999999999, 
+          "average": 147.28269230769232
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 3875.1, 
-          "average": 77.502
+          "count": 52, 
+          "sum": 5072.699999999999, 
+          "average": 97.55192307692307
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 4392.199999999999, 
-          "average": 87.844
+          "count": 52, 
+          "sum": 6090.2, 
+          "average": 117.11923076923077
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 7616.9, 
-          "average": 155.4469387755102
+          "count": 52, 
+          "sum": 9729.200000000003, 
+          "average": 187.09999999999997
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 7690.7, 
-          "average": 160.22291666666666
+          "count": 52, 
+          "sum": 10156.800000000001, 
+          "average": 195.3230769230769
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 2239.499999999999, 
-          "average": 44.79
+          "count": 51, 
+          "sum": 2307.699999999999, 
+          "average": 45.249019607843145
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 2527.7999999999997, 
-          "average": 49.564705882352946
+          "count": 52, 
+          "sum": 2599.4999999999995, 
+          "average": 49.99038461538461
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 2915.6000000000004, 
-          "average": 57.16862745098039
+          "count": 52, 
+          "sum": 2996.4000000000005, 
+          "average": 57.62307692307692
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 3787.6000000000004, 
-          "average": 74.26666666666667
+          "count": 52, 
+          "sum": 3890.4000000000005, 
+          "average": 74.81538461538462
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 1900.5999999999995, 
-          "average": 38.012
+          "count": 51, 
+          "sum": 1960.6999999999994, 
+          "average": 38.44509803921569
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 1901.0999999999995, 
-          "average": 38.022
+          "count": 51, 
+          "sum": 1959.3999999999994, 
+          "average": 38.41960784313726
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 6872.100000000001, 
-          "average": 137.442
+          "count": 52, 
+          "sum": 8011.900000000003, 
+          "average": 154.075
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 7170.700000000001, 
-          "average": 143.414
+          "count": 52, 
+          "sum": 8488.1, 
+          "average": 163.2326923076923
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 4987.700000000002, 
-          "average": 97.79803921568627
+          "count": 52, 
+          "sum": 5101.600000000001, 
+          "average": 98.10769230769232
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 5236.3, 
-          "average": 102.67254901960784
+          "count": 52, 
+          "sum": 5355.6, 
+          "average": 102.9923076923077
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 4951.4, 
-          "average": 97.08627450980391
+          "count": 52, 
+          "sum": 5064.299999999999, 
+          "average": 97.39038461538462
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 6835.300000000001, 
-          "average": 139.49591836734695
+          "count": 52, 
+          "sum": 8516.100000000002, 
+          "average": 163.77115384615385
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 5534.699999999998, 
-          "average": 110.694
+          "count": 52, 
+          "sum": 6329.0999999999985, 
+          "average": 121.71346153846153
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 6030.700000000001, 
-          "average": 120.61399999999999
+          "count": 52, 
+          "sum": 6885.7, 
+          "average": 132.4173076923077
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 7613.9, 
-          "average": 152.27800000000002
+          "count": 52, 
+          "sum": 9300.7, 
+          "average": 178.8596153846154
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 6740.599999999999, 
-          "average": 137.56326530612245
+          "count": 52, 
+          "sum": 8290.0, 
+          "average": 159.42307692307693
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 8307.500000000004, 
-          "average": 169.5408163265306
+          "count": 52, 
+          "sum": 9909.000000000002, 
+          "average": 190.55769230769232
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 7771.799999999998, 
-          "average": 155.436
+          "count": 52, 
+          "sum": 9241.599999999999, 
+          "average": 177.72307692307692
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 8167.3, 
-          "average": 163.346
+          "count": 52, 
+          "sum": 9652.9, 
+          "average": 185.6326923076923
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 8077.199999999998, 
-          "average": 164.84081632653061
+          "count": 52, 
+          "sum": 9716.299999999996, 
+          "average": 186.85192307692307
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 7634.799999999998, 
-          "average": 152.696
+          "count": 52, 
+          "sum": 9094.7, 
+          "average": 174.89807692307693
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 7903.699999999999, 
-          "average": 158.07399999999998
+          "count": 52, 
+          "sum": 9248.699999999999, 
+          "average": 177.8596153846154
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 6767.5999999999985, 
-          "average": 135.352
+          "count": 52, 
+          "sum": 7804.699999999997, 
+          "average": 150.0903846153846
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 7092.099999999998, 
-          "average": 141.842
+          "count": 52, 
+          "sum": 8480.699999999999, 
+          "average": 163.09038461538464
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 6274.4, 
-          "average": 125.48800000000001
+          "count": 52, 
+          "sum": 7429.5999999999985, 
+          "average": 142.87692307692308
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 6208.7, 
-          "average": 126.70816326530611
+          "count": 52, 
+          "sum": 7591.6, 
+          "average": 145.9923076923077
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 6981.299999999999, 
-          "average": 142.47551020408164
+          "count": 52, 
+          "sum": 8705.199999999999, 
+          "average": 167.40769230769232
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 6531.600000000001, 
-          "average": 130.632
+          "count": 52, 
+          "sum": 7667.000000000002, 
+          "average": 147.44230769230768
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 5803.999999999999, 
-          "average": 116.08
+          "count": 52, 
+          "sum": 6948.4, 
+          "average": 133.62307692307692
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 5481.800000000002, 
-          "average": 109.63600000000001
+          "count": 52, 
+          "sum": 6698.700000000003, 
+          "average": 128.82115384615383
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 5468.499999999998, 
-          "average": 109.37
+          "count": 52, 
+          "sum": 7170.9, 
+          "average": 137.90192307692308
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 5090.100000000002, 
-          "average": 101.802
+          "count": 52, 
+          "sum": 6824.100000000005, 
+          "average": 131.2326923076923
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 5361.199999999998, 
-          "average": 107.22399999999999
+          "count": 52, 
+          "sum": 6180.900000000001, 
+          "average": 118.86346153846154
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 5189.300000000001, 
-          "average": 105.90408163265306
+          "count": 52, 
+          "sum": 6107.400000000001, 
+          "average": 117.44999999999999
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 5370.799999999999, 
-          "average": 107.416
+          "count": 52, 
+          "sum": 6137.099999999999, 
+          "average": 118.02115384615385
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 5492.3, 
-          "average": 109.846
+          "count": 52, 
+          "sum": 6299.5, 
+          "average": 121.14423076923077
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 6274.4000000000015, 
-          "average": 123.02745098039215
+          "count": 52, 
+          "sum": 6424.4000000000015, 
+          "average": 123.54615384615384
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 5540.199999999999, 
-          "average": 110.804
+          "count": 52, 
+          "sum": 6413.499999999999, 
+          "average": 123.33653846153847
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 5031.999999999999, 
-          "average": 100.64
+          "count": 52, 
+          "sum": 5746.4, 
+          "average": 110.5076923076923
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 5145.8, 
-          "average": 102.916
+          "count": 52, 
+          "sum": 5922.300000000001, 
+          "average": 113.89038461538462
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 5462.000000000001, 
-          "average": 109.24
+          "count": 52, 
+          "sum": 6356.399999999999, 
+          "average": 122.23846153846154
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 5021.899999999999, 
-          "average": 100.43799999999999
+          "count": 52, 
+          "sum": 5889.400000000001, 
+          "average": 113.2576923076923
         }
       }, 
       "crime.[0].Data.Rates.Violent.Murder": {
         "1974": {
-          "count": 49, 
-          "sum": 415.80000000000007, 
-          "average": 8.485714285714286
+          "count": 52, 
+          "sum": 468.3000000000001, 
+          "average": 9.00576923076923
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 225.1, 
-          "average": 4.502
+          "count": 51, 
+          "sum": 229.7, 
+          "average": 4.503921568627451
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 227.59999999999997, 
-          "average": 4.552
+          "count": 51, 
+          "sum": 232.19999999999996, 
+          "average": 4.552941176470588
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 338.8, 
-          "average": 6.776
+          "count": 52, 
+          "sum": 378.4000000000001, 
+          "average": 7.276923076923077
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 323.0, 
-          "average": 6.46
+          "count": 52, 
+          "sum": 367.50000000000006, 
+          "average": 7.0673076923076925
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 297.80000000000007, 
-          "average": 6.077551020408164
+          "count": 52, 
+          "sum": 345.4, 
+          "average": 6.642307692307692
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 317.20000000000005, 
-          "average": 6.343999999999999
+          "count": 52, 
+          "sum": 348.7000000000001, 
+          "average": 6.7057692307692305
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 304.3000000000001, 
-          "average": 6.086
+          "count": 52, 
+          "sum": 335.30000000000007, 
+          "average": 6.448076923076924
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 314.50000000000017, 
-          "average": 6.29
+          "count": 52, 
+          "sum": 357.8000000000002, 
+          "average": 6.880769230769231
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 388.5, 
-          "average": 7.928571428571429
+          "count": 52, 
+          "sum": 450.19999999999993, 
+          "average": 8.657692307692308
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 363.1, 
-          "average": 7.564583333333334
+          "count": 52, 
+          "sum": 440.1, 
+          "average": 8.463461538461539
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 239.40000000000003, 
-          "average": 4.788
+          "count": 51, 
+          "sum": 244.30000000000004, 
+          "average": 4.790196078431372
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 249.89999999999998, 
-          "average": 4.9
+          "count": 52, 
+          "sum": 254.99999999999997, 
+          "average": 4.903846153846154
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 283.6, 
-          "average": 5.560784313725491
+          "count": 52, 
+          "sum": 289.20000000000005, 
+          "average": 5.561538461538461
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 302.9, 
-          "average": 5.939215686274509
+          "count": 52, 
+          "sum": 309.09999999999997, 
+          "average": 5.94423076923077
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 261.30000000000007, 
-          "average": 5.226
+          "count": 51, 
+          "sum": 266.4000000000001, 
+          "average": 5.223529411764705
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 240.29999999999993, 
-          "average": 4.806
+          "count": 51, 
+          "sum": 245.09999999999994, 
+          "average": 4.805882352941176
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 322.7000000000001, 
-          "average": 6.454
+          "count": 52, 
+          "sum": 390.7, 
+          "average": 7.513461538461538
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 329.2999999999999, 
-          "average": 6.586
+          "count": 52, 
+          "sum": 409.8999999999999, 
+          "average": 7.882692307692308
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 230.20000000000002, 
-          "average": 4.513725490196078
+          "count": 52, 
+          "sum": 234.9, 
+          "average": 4.517307692307693
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 227.6, 
-          "average": 4.462745098039216
+          "count": 52, 
+          "sum": 232.4, 
+          "average": 4.469230769230769
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 226.90000000000006, 
-          "average": 4.449019607843137
+          "count": 52, 
+          "sum": 231.60000000000005, 
+          "average": 4.453846153846154
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 384.90000000000003, 
-          "average": 7.855102040816326
+          "count": 52, 
+          "sum": 439.59999999999997, 
+          "average": 8.453846153846154
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 252.09999999999997, 
-          "average": 5.042
+          "count": 52, 
+          "sum": 304.2, 
+          "average": 5.85
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 273.40000000000003, 
-          "average": 5.468
+          "count": 52, 
+          "sum": 329.40000000000003, 
+          "average": 6.334615384615384
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 372.0999999999999, 
-          "average": 7.442
+          "count": 52, 
+          "sum": 411.9, 
+          "average": 7.921153846153846
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 318.59999999999997, 
-          "average": 6.502040816326531
+          "count": 52, 
+          "sum": 370.1000000000001, 
+          "average": 7.117307692307692
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 357.7, 
-          "average": 7.3
+          "count": 52, 
+          "sum": 455.5000000000001, 
+          "average": 8.759615384615385
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 352.7, 
-          "average": 7.053999999999999
+          "count": 52, 
+          "sum": 439.8999999999999, 
+          "average": 8.459615384615384
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 366.6, 
-          "average": 7.332000000000001
+          "count": 52, 
+          "sum": 454.59999999999997, 
+          "average": 8.742307692307692
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 343.49999999999994, 
-          "average": 7.010204081632653
+          "count": 52, 
+          "sum": 435.5, 
+          "average": 8.375
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 336.60000000000014, 
-          "average": 6.732
+          "count": 52, 
+          "sum": 409.8, 
+          "average": 7.880769230769231
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 353.4999999999999, 
-          "average": 7.07
+          "count": 52, 
+          "sum": 432.49999999999983, 
+          "average": 8.317307692307692
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 291.8, 
-          "average": 5.836
+          "count": 52, 
+          "sum": 355.49999999999994, 
+          "average": 6.836538461538462
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 311.69999999999993, 
-          "average": 6.234
+          "count": 52, 
+          "sum": 392.1999999999999, 
+          "average": 7.542307692307692
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 372.2000000000001, 
-          "average": 7.444
+          "count": 52, 
+          "sum": 408.80000000000007, 
+          "average": 7.861538461538462
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 365.5999999999999, 
-          "average": 7.461224489795919
+          "count": 52, 
+          "sum": 404.3999999999999, 
+          "average": 7.776923076923077
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 408.99999999999994, 
-          "average": 8.346938775510203
+          "count": 52, 
+          "sum": 455.5999999999999, 
+          "average": 8.761538461538462
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 378.49999999999994, 
-          "average": 7.57
+          "count": 52, 
+          "sum": 415.4999999999999, 
+          "average": 7.990384615384615
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 392.09999999999997, 
-          "average": 7.8420000000000005
+          "count": 52, 
+          "sum": 437.4, 
+          "average": 8.411538461538461
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 379.50000000000006, 
-          "average": 7.59
+          "count": 52, 
+          "sum": 421.30000000000007, 
+          "average": 8.101923076923077
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 367.00000000000006, 
-          "average": 7.34
+          "count": 52, 
+          "sum": 412.70000000000005, 
+          "average": 7.936538461538461
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 345.19999999999993, 
-          "average": 6.904
+          "count": 52, 
+          "sum": 382.2999999999999, 
+          "average": 7.351923076923077
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 232.7000000000001, 
-          "average": 4.654
+          "count": 52, 
+          "sum": 284.7000000000001, 
+          "average": 5.475
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 231.90000000000006, 
-          "average": 4.7326530612244895
+          "count": 52, 
+          "sum": 288.30000000000007, 
+          "average": 5.5442307692307695
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 232.1, 
-          "average": 4.6419999999999995
+          "count": 52, 
+          "sum": 279.3999999999999, 
+          "average": 5.373076923076923
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 234.60000000000005, 
-          "average": 4.692
+          "count": 52, 
+          "sum": 280.5000000000001, 
+          "average": 5.394230769230769
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 278.30000000000007, 
-          "average": 5.456862745098039
+          "count": 52, 
+          "sum": 284.1000000000001, 
+          "average": 5.463461538461539
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 250.00000000000003, 
-          "average": 5.0
+          "count": 52, 
+          "sum": 286.5, 
+          "average": 5.509615384615385
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 233.20000000000002, 
-          "average": 4.664
+          "count": 52, 
+          "sum": 274.40000000000003, 
+          "average": 5.276923076923077
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 237.50000000000003, 
-          "average": 4.75
+          "count": 52, 
+          "sum": 276.6000000000001, 
+          "average": 5.31923076923077
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 238.2, 
-          "average": 4.763999999999999
+          "count": 52, 
+          "sum": 274.99999999999994, 
+          "average": 5.288461538461538
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 219.6, 
-          "average": 4.3919999999999995
+          "count": 52, 
+          "sum": 248.80000000000004, 
+          "average": 4.7846153846153845
         }
       }, 
       "crime.[0].Data.Totals.Property.Motor": {
         "1974": {
-          "count": 49, 
-          "sum": 893909, 
-          "average": 18243.04081632653
+          "count": 52, 
+          "sum": 1954136, 
+          "average": 37579.53846153846
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 327761, 
-          "average": 6555.22
+          "count": 51, 
+          "sum": 694561, 
+          "average": 13618.843137254902
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 361141, 
-          "average": 7222.82
+          "count": 51, 
+          "sum": 769441, 
+          "average": 15087.078431372549
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 1218032, 
-          "average": 24360.64
+          "count": 52, 
+          "sum": 2448274, 
+          "average": 47082.192307692305
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 1282377, 
-          "average": 25647.54
+          "count": 52, 
+          "sum": 2577348, 
+          "average": 49564.38461538462
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 1024592, 
-          "average": 20910.04081632653
+          "count": 52, 
+          "sum": 2064275, 
+          "average": 39697.596153846156
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 1097837, 
-          "average": 21956.74
+          "count": 52, 
+          "sum": 2205724, 
+          "average": 42417.769230769234
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 772600, 
-          "average": 15452.0
+          "count": 52, 
+          "sum": 1567554, 
+          "average": 30145.26923076923
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 867693, 
-          "average": 17353.86
+          "count": 52, 
+          "sum": 1757383, 
+          "average": 33795.82692307692
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 1122657, 
-          "average": 22911.367346938776
+          "count": 52, 
+          "sum": 2263354, 
+          "average": 43526.03846153846
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 1076145, 
-          "average": 22419.6875
+          "count": 52, 
+          "sum": 2175581, 
+          "average": 41838.096153846156
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 416852, 
-          "average": 8337.04
+          "count": 51, 
+          "sum": 889652, 
+          "average": 17444.156862745098
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 497150, 
-          "average": 9748.039215686274
+          "count": 52, 
+          "sum": 994050, 
+          "average": 19116.346153846152
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 561500, 
-          "average": 11009.803921568628
+          "count": 52, 
+          "sum": 1122700, 
+          "average": 21590.384615384617
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 660179, 
-          "average": 12944.686274509804
+          "count": 52, 
+          "sum": 1319979, 
+          "average": 25384.21153846154
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 293053, 
-          "average": 5861.06
+          "count": 51, 
+          "sum": 621253, 
+          "average": 12181.43137254902
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 300181, 
-          "average": 6003.62
+          "count": 51, 
+          "sum": 636181, 
+          "average": 12474.137254901962
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 1424283, 
-          "average": 28485.66
+          "count": 52, 
+          "sum": 2865832, 
+          "average": 55112.153846153844
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 1556509, 
-          "average": 31130.18
+          "count": 52, 
+          "sum": 3129600, 
+          "average": 60184.61538461538
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 716508, 
-          "average": 14049.176470588236
+          "count": 52, 
+          "sum": 1433016, 
+          "average": 27558.0
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 739565, 
-          "average": 14501.274509803921
+          "count": 52, 
+          "sum": 1479130, 
+          "average": 28444.80769230769
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 721053, 
-          "average": 14138.29411764706
+          "count": 52, 
+          "sum": 1442106, 
+          "average": 27732.80769230769
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 1104193, 
-          "average": 22534.551020408162
+          "count": 52, 
+          "sum": 2225544, 
+          "average": 42798.92307692308
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 1145423, 
-          "average": 22908.46
+          "count": 52, 
+          "sum": 2304150, 
+          "average": 44310.57692307692
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 1236280, 
-          "average": 24725.6
+          "count": 52, 
+          "sum": 2485562, 
+          "average": 47799.269230769234
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 1058249, 
-          "average": 21164.98
+          "count": 52, 
+          "sum": 2124735, 
+          "average": 40860.28846153846
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 1000872, 
-          "average": 20425.95918367347
+          "count": 52, 
+          "sum": 2015844, 
+          "average": 38766.230769230766
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 1650560, 
-          "average": 33684.897959183676
+          "count": 52, 
+          "sum": 3323476, 
+          "average": 63913.0
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 1627798, 
-          "average": 32555.96
+          "count": 52, 
+          "sum": 3271814, 
+          "average": 62919.5
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 1554998, 
-          "average": 31099.96
+          "count": 52, 
+          "sum": 3126120, 
+          "average": 60117.692307692305
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 1598798, 
-          "average": 32628.530612244896
+          "count": 52, 
+          "sum": 3221668, 
+          "average": 61955.153846153844
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 1462248, 
-          "average": 29244.96
+          "count": 52, 
+          "sum": 2944882, 
+          "average": 56632.346153846156
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 1531026, 
-          "average": 30620.52
+          "count": 52, 
+          "sum": 3078574, 
+          "average": 59203.346153846156
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 1346620, 
-          "average": 26932.4
+          "count": 52, 
+          "sum": 2708378, 
+          "average": 52084.192307692305
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 1384263, 
-          "average": 27685.26
+          "count": 52, 
+          "sum": 2788476, 
+          "average": 53624.53846153846
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 974935, 
-          "average": 19498.7
+          "count": 52, 
+          "sum": 1955377, 
+          "average": 37603.403846153844
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 886740, 
-          "average": 18096.73469387755
+          "count": 52, 
+          "sum": 1931949, 
+          "average": 37152.86538461538
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 914630, 
-          "average": 18665.918367346938
+          "count": 52, 
+          "sum": 2019190, 
+          "average": 38830.57692307692
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 1000913, 
-          "average": 20018.26
+          "count": 52, 
+          "sum": 2008207, 
+          "average": 38619.36538461538
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 924256, 
-          "average": 18485.12
+          "count": 52, 
+          "sum": 1857769, 
+          "average": 35726.32692307692
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 881377, 
-          "average": 17627.54
+          "count": 52, 
+          "sum": 1774398, 
+          "average": 34123.03846153846
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 939653, 
-          "average": 18793.06
+          "count": 52, 
+          "sum": 1896585, 
+          "average": 36472.78846153846
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 917674, 
-          "average": 18353.48
+          "count": 52, 
+          "sum": 1857184, 
+          "average": 35715.07692307692
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 1237047, 
-          "average": 24740.94
+          "count": 52, 
+          "sum": 2493292, 
+          "average": 47947.92307692308
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 1248859, 
-          "average": 25486.918367346938
+          "count": 52, 
+          "sum": 2522452, 
+          "average": 48508.692307692305
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 1153402, 
-          "average": 23068.04
+          "count": 52, 
+          "sum": 2320004, 
+          "average": 44615.46153846154
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 1220421, 
-          "average": 24408.42
+          "count": 52, 
+          "sum": 2456782, 
+          "average": 47245.807692307695
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 1198245, 
-          "average": 23495.0
+          "count": 52, 
+          "sum": 2396490, 
+          "average": 46086.346153846156
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 1092866, 
-          "average": 21857.32
+          "count": 52, 
+          "sum": 2200944, 
+          "average": 42325.846153846156
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 1229443, 
-          "average": 24588.86
+          "count": 52, 
+          "sum": 2475702, 
+          "average": 47609.653846153844
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 1228139, 
-          "average": 24562.78
+          "count": 52, 
+          "sum": 2471718, 
+          "average": 47533.03846153846
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 952594, 
-          "average": 19051.88
+          "count": 52, 
+          "sum": 1918118, 
+          "average": 36886.88461538462
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 790120, 
-          "average": 15802.4
+          "count": 52, 
+          "sum": 1591304, 
+          "average": 30602.0
         }
       }, 
       "crime.[0].Data.Rates.Property.All": {
         "1974": {
-          "count": 49, 
-          "sum": 202143.49999999994, 
-          "average": 4125.377551020408
+          "count": 52, 
+          "sum": 217481.89999999994, 
+          "average": 4182.34423076923
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 84568.8, 
-          "average": 1691.376
+          "count": 51, 
+          "sum": 86426.3, 
+          "average": 1694.6333333333334
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 91153.5, 
-          "average": 1823.07
+          "count": 51, 
+          "sum": 93165.6, 
+          "average": 1826.7764705882355
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 224811.20000000004, 
-          "average": 4496.224
+          "count": 52, 
+          "sum": 236527.00000000003, 
+          "average": 4548.596153846154
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 228073.59999999995, 
-          "average": 4561.472
+          "count": 52, 
+          "sum": 239877.9, 
+          "average": 4613.036538461538
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 203717.00000000003, 
-          "average": 4157.489795918367
+          "count": 52, 
+          "sum": 220578.89999999997, 
+          "average": 4241.901923076923
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 216213.09999999998, 
-          "average": 4324.262
+          "count": 52, 
+          "sum": 227253.89999999997, 
+          "average": 4370.267307692307
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 135167.39999999997, 
-          "average": 2703.348
+          "count": 52, 
+          "sum": 144601.69999999998, 
+          "average": 2780.8019230769232
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 147539.40000000002, 
-          "average": 2950.788
+          "count": 52, 
+          "sum": 159161.6, 
+          "average": 3060.8
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 244257.59999999998, 
-          "average": 4984.848979591837
+          "count": 52, 
+          "sum": 265564.5, 
+          "average": 5107.009615384615
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 234646.79999999993, 
-          "average": 4888.474999999999
+          "count": 52, 
+          "sum": 261980.69999999992, 
+          "average": 5038.090384615385
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 99303.5, 
-          "average": 1986.07
+          "count": 51, 
+          "sum": 101501.0, 
+          "average": 1990.2156862745098
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 104139.50000000003, 
-          "average": 2041.950980392157
+          "count": 52, 
+          "sum": 106388.30000000003, 
+          "average": 2045.9288461538463
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 114147.6, 
-          "average": 2238.188235294118
+          "count": 52, 
+          "sum": 116598.5, 
+          "average": 2242.278846153846
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 127141.59999999999, 
-          "average": 2492.972549019608
+          "count": 52, 
+          "sum": 129878.09999999999, 
+          "average": 2497.6557692307692
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 80223.99999999997, 
-          "average": 1604.48
+          "count": 51, 
+          "sum": 81950.29999999997, 
+          "average": 1606.8686274509805
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 80838.49999999999, 
-          "average": 1616.77
+          "count": 51, 
+          "sum": 82586.39999999998, 
+          "average": 1619.3411764705882
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 227962.20000000004, 
-          "average": 4559.244000000001
+          "count": 52, 
+          "sum": 241009.30000000005, 
+          "average": 4634.79423076923
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 229492.1000000001, 
-          "average": 4589.842000000001
+          "count": 52, 
+          "sum": 242750.7000000001, 
+          "average": 4668.282692307693
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 147183.80000000002, 
-          "average": 2885.9568627450976
+          "count": 52, 
+          "sum": 150089.2, 
+          "average": 2886.3307692307694
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 147808.50000000003, 
-          "average": 2898.205882352941
+          "count": 52, 
+          "sum": 150754.40000000002, 
+          "average": 2899.123076923077
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 145570.99999999997, 
-          "average": 2854.3333333333335
+          "count": 52, 
+          "sum": 148430.19999999998, 
+          "average": 2854.4269230769232
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 230543.6999999999, 
-          "average": 4704.973469387755
+          "count": 52, 
+          "sum": 250549.69999999992, 
+          "average": 4818.263461538461
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 183627.3, 
-          "average": 3672.546
+          "count": 52, 
+          "sum": 193810.20000000004, 
+          "average": 3727.119230769231
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 198971.5, 
-          "average": 3979.43
+          "count": 52, 
+          "sum": 210141.00000000003, 
+          "average": 4041.173076923077
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 235421.3999999999, 
-          "average": 4708.428
+          "count": 52, 
+          "sum": 248738.69999999992, 
+          "average": 4783.4365384615385
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 211556.90000000005, 
-          "average": 4317.487755102041
+          "count": 52, 
+          "sum": 228961.20000000004, 
+          "average": 4403.1
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 230194.10000000003, 
-          "average": 4697.838775510204
+          "count": 52, 
+          "sum": 248736.7, 
+          "average": 4783.3980769230775
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 233159.6, 
-          "average": 4663.192
+          "count": 52, 
+          "sum": 246548.69999999998, 
+          "average": 4741.321153846154
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 220138.29999999993, 
-          "average": 4402.766
+          "count": 52, 
+          "sum": 233717.59999999995, 
+          "average": 4494.569230769231
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 221230.60000000003, 
-          "average": 4514.910204081632
+          "count": 52, 
+          "sum": 239617.50000000003, 
+          "average": 4608.028846153846
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 222638.30000000005, 
-          "average": 4452.766
+          "count": 52, 
+          "sum": 236740.90000000005, 
+          "average": 4552.709615384615
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 220495.19999999995, 
-          "average": 4409.904
+          "count": 52, 
+          "sum": 233577.99999999997, 
+          "average": 4491.884615384615
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 212133.60000000003, 
-          "average": 4242.6720000000005
+          "count": 52, 
+          "sum": 224264.80000000002, 
+          "average": 4312.784615384615
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 215663.5, 
-          "average": 4313.27
+          "count": 52, 
+          "sum": 229541.4, 
+          "average": 4414.257692307692
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 217523.49999999997, 
-          "average": 4350.47
+          "count": 52, 
+          "sum": 227919.09999999998, 
+          "average": 4383.059615384615
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 220402.4, 
-          "average": 4498.008163265306
+          "count": 52, 
+          "sum": 236245.7, 
+          "average": 4543.1865384615385
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 220501.19999999998, 
-          "average": 4500.024489795918
+          "count": 52, 
+          "sum": 236876.4, 
+          "average": 4555.315384615385
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 220035.00000000003, 
-          "average": 4400.7
+          "count": 52, 
+          "sum": 230825.10000000003, 
+          "average": 4438.944230769231
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 175382.5, 
-          "average": 3507.65
+          "count": 52, 
+          "sum": 185459.3, 
+          "average": 3566.5249999999996
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 165058.90000000008, 
-          "average": 3301.178
+          "count": 52, 
+          "sum": 174799.10000000006, 
+          "average": 3361.521153846154
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 170468.1, 
-          "average": 3409.362
+          "count": 52, 
+          "sum": 181582.6, 
+          "average": 3491.973076923077
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 162727.30000000005, 
-          "average": 3254.546
+          "count": 52, 
+          "sum": 175004.90000000005, 
+          "average": 3365.478846153846
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 178269.90000000002, 
-          "average": 3565.3979999999997
+          "count": 52, 
+          "sum": 188309.50000000006, 
+          "average": 3621.3365384615386
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 171758.80000000002, 
-          "average": 3505.281632653061
+          "count": 52, 
+          "sum": 184975.10000000003, 
+          "average": 3557.2134615384616
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 178310.69999999995, 
-          "average": 3566.2140000000004
+          "count": 52, 
+          "sum": 187697.59999999995, 
+          "average": 3609.5692307692307
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 179290.39999999994, 
-          "average": 3585.808
+          "count": 52, 
+          "sum": 189088.39999999997, 
+          "average": 3636.3153846153846
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 168046.49999999997, 
-          "average": 3295.029411764706
+          "count": 52, 
+          "sum": 171393.09999999998, 
+          "average": 3296.021153846154
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 159247.9, 
-          "average": 3184.958
+          "count": 52, 
+          "sum": 167440.59999999998, 
+          "average": 3220.0115384615387
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 171537.40000000005, 
-          "average": 3430.748
+          "count": 52, 
+          "sum": 179904.30000000005, 
+          "average": 3459.6980769230768
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 167839.0, 
-          "average": 3356.78
+          "count": 52, 
+          "sum": 175760.5, 
+          "average": 3380.0096153846152
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 155196.00000000003, 
-          "average": 3103.92
+          "count": 52, 
+          "sum": 163515.20000000004, 
+          "average": 3144.523076923077
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 147575.6, 
-          "average": 2951.512
+          "count": 52, 
+          "sum": 155368.8, 
+          "average": 2987.861538461538
         }
       }, 
       "crime.[0].Data.Totals.Violent.Murder": {
         "1974": {
-          "count": 49, 
-          "sum": 20178, 
-          "average": 411.7959183673469
+          "count": 52, 
+          "sum": 41421, 
+          "average": 796.5576923076923
         }, 
         "1962": {
-          "count": 50, 
-          "sum": 7893, 
-          "average": 157.86
+          "count": 51, 
+          "sum": 16423, 
+          "average": 322.01960784313724
         }, 
         "1963": {
-          "count": 50, 
-          "sum": 7939, 
-          "average": 158.78
+          "count": 51, 
+          "sum": 16579, 
+          "average": 325.078431372549
         }, 
         "1986": {
-          "count": 50, 
-          "sum": 20419, 
-          "average": 408.38
+          "count": 52, 
+          "sum": 41226, 
+          "average": 792.8076923076923
         }, 
         "1987": {
-          "count": 50, 
-          "sum": 19871, 
-          "average": 397.42
+          "count": 52, 
+          "sum": 40192, 
+          "average": 772.9230769230769
         }, 
         "1984": {
-          "count": 49, 
-          "sum": 18456, 
-          "average": 376.6530612244898
+          "count": 52, 
+          "sum": 37381, 
+          "average": 718.8653846153846
         }, 
         "1985": {
-          "count": 50, 
-          "sum": 18829, 
-          "average": 376.58
+          "count": 52, 
+          "sum": 37952, 
+          "average": 729.8461538461538
         }, 
         "1968": {
-          "count": 50, 
-          "sum": 13629, 
-          "average": 272.58
+          "count": 52, 
+          "sum": 27624, 
+          "average": 531.2307692307693
         }, 
         "1969": {
-          "count": 50, 
-          "sum": 14462, 
-          "average": 289.24
+          "count": 52, 
+          "sum": 29509, 
+          "average": 567.4807692307693
         }, 
         "1980": {
-          "count": 49, 
-          "sum": 22684, 
-          "average": 462.9387755102041
+          "count": 52, 
+          "sum": 46084, 
+          "average": 886.2307692307693
         }, 
         "1981": {
-          "count": 48, 
-          "sum": 22085, 
-          "average": 460.1041666666667
+          "count": 52, 
+          "sum": 45036, 
+          "average": 866.0769230769231
         }, 
         "1964": {
-          "count": 50, 
-          "sum": 8536, 
-          "average": 170.72
+          "count": 51, 
+          "sum": 17896, 
+          "average": 350.9019607843137
         }, 
         "1965": {
-          "count": 51, 
-          "sum": 9979, 
-          "average": 195.66666666666666
+          "count": 52, 
+          "sum": 19939, 
+          "average": 383.4423076923077
         }, 
         "1966": {
-          "count": 51, 
-          "sum": 11054, 
-          "average": 216.7450980392157
+          "count": 52, 
+          "sum": 22094, 
+          "average": 424.88461538461536
         }, 
         "1967": {
-          "count": 51, 
-          "sum": 12248, 
-          "average": 240.15686274509804
+          "count": 52, 
+          "sum": 24488, 
+          "average": 470.9230769230769
         }, 
         "1960": {
-          "count": 50, 
-          "sum": 8642, 
-          "average": 172.84
+          "count": 51, 
+          "sum": 17752, 
+          "average": 348.078431372549
         }, 
         "1961": {
-          "count": 50, 
-          "sum": 8115, 
-          "average": 162.3
+          "count": 51, 
+          "sum": 16855, 
+          "average": 330.4901960784314
         }, 
         "1988": {
-          "count": 50, 
-          "sum": 20306, 
-          "average": 406.12
+          "count": 52, 
+          "sum": 41350, 
+          "average": 795.1923076923077
         }, 
         "1989": {
-          "count": 50, 
-          "sum": 21066, 
-          "average": 421.32
+          "count": 52, 
+          "sum": 43000, 
+          "average": 826.9230769230769
         }, 
         "2011": {
-          "count": 51, 
-          "sum": 14661, 
-          "average": 287.47058823529414
+          "count": 52, 
+          "sum": 29322, 
+          "average": 563.8846153846154
         }, 
         "2010": {
-          "count": 51, 
-          "sum": 14722, 
-          "average": 288.6666666666667
+          "count": 52, 
+          "sum": 29444, 
+          "average": 566.2307692307693
         }, 
         "2012": {
-          "count": 51, 
-          "sum": 14827, 
-          "average": 290.72549019607845
+          "count": 52, 
+          "sum": 29654, 
+          "average": 570.2692307692307
         }, 
         "1979": {
-          "count": 49, 
-          "sum": 21153, 
-          "average": 431.6938775510204
+          "count": 52, 
+          "sum": 42916, 
+          "average": 825.3076923076923
         }, 
         "1999": {
-          "count": 50, 
-          "sum": 15281, 
-          "average": 305.62
+          "count": 52, 
+          "sum": 31044, 
+          "average": 597.0
         }, 
         "1998": {
-          "count": 50, 
-          "sum": 16714, 
-          "average": 334.28
+          "count": 52, 
+          "sum": 33948, 
+          "average": 652.8461538461538
         }, 
         "1982": {
-          "count": 50, 
-          "sum": 20818, 
-          "average": 416.36
+          "count": 52, 
+          "sum": 42022, 
+          "average": 808.1153846153846
         }, 
         "1983": {
-          "count": 49, 
-          "sum": 19059, 
-          "average": 388.9591836734694
+          "count": 52, 
+          "sum": 38616, 
+          "average": 742.6153846153846
         }, 
         "1991": {
-          "count": 49, 
-          "sum": 24179, 
-          "average": 493.44897959183675
+          "count": 52, 
+          "sum": 49406, 
+          "average": 950.1153846153846
         }, 
         "1990": {
-          "count": 50, 
-          "sum": 22966, 
-          "average": 459.32
+          "count": 52, 
+          "sum": 46876, 
+          "average": 901.4615384615385
         }, 
         "1993": {
-          "count": 50, 
-          "sum": 24072, 
-          "average": 481.44
+          "count": 52, 
+          "sum": 49052, 
+          "average": 943.3076923076923
         }, 
         "1992": {
-          "count": 49, 
-          "sum": 23273, 
-          "average": 474.9591836734694
+          "count": 52, 
+          "sum": 47520, 
+          "average": 913.8461538461538
         }, 
         "1995": {
-          "count": 50, 
-          "sum": 21246, 
-          "average": 424.92
+          "count": 52, 
+          "sum": 43212, 
+          "average": 831.0
         }, 
         "1994": {
-          "count": 50, 
-          "sum": 22927, 
-          "average": 458.54
+          "count": 52, 
+          "sum": 46652, 
+          "average": 897.1538461538462
         }, 
         "1997": {
-          "count": 50, 
-          "sum": 17910, 
-          "average": 358.2
+          "count": 52, 
+          "sum": 36419, 
+          "average": 700.3653846153846
         }, 
         "1996": {
-          "count": 50, 
-          "sum": 19248, 
-          "average": 384.96
+          "count": 52, 
+          "sum": 39290, 
+          "average": 755.5769230769231
         }, 
         "1977": {
-          "count": 50, 
-          "sum": 18929, 
-          "average": 378.58
+          "count": 52, 
+          "sum": 38241, 
+          "average": 735.4038461538462
         }, 
         "1976": {
-          "count": 49, 
-          "sum": 18402, 
-          "average": 375.55102040816325
+          "count": 52, 
+          "sum": 37564, 
+          "average": 722.3846153846154
         }, 
         "1975": {
-          "count": 49, 
-          "sum": 20028, 
-          "average": 408.734693877551
+          "count": 52, 
+          "sum": 41015, 
+          "average": 788.75
         }, 
         "1978": {
-          "count": 50, 
-          "sum": 19366, 
-          "average": 387.32
+          "count": 52, 
+          "sum": 39115, 
+          "average": 752.2115384615385
         }, 
         "1973": {
-          "count": 50, 
-          "sum": 19364, 
-          "average": 387.28
+          "count": 52, 
+          "sum": 39272, 
+          "average": 755.2307692307693
         }, 
         "1972": {
-          "count": 50, 
-          "sum": 18440, 
-          "average": 368.8
+          "count": 52, 
+          "sum": 37355, 
+          "average": 718.3653846153846
         }, 
         "1971": {
-          "count": 50, 
-          "sum": 17502, 
-          "average": 350.04
+          "count": 52, 
+          "sum": 35557, 
+          "average": 683.7884615384615
         }, 
         "1970": {
-          "count": 50, 
-          "sum": 15785, 
-          "average": 315.7
+          "count": 52, 
+          "sum": 32006, 
+          "average": 615.5
         }, 
         "2002": {
-          "count": 50, 
-          "sum": 15965, 
-          "average": 319.3
+          "count": 52, 
+          "sum": 32458, 
+          "average": 624.1923076923077
         }, 
         "2003": {
-          "count": 49, 
-          "sum": 16240, 
-          "average": 331.42857142857144
+          "count": 52, 
+          "sum": 33056, 
+          "average": 635.6923076923077
         }, 
         "2000": {
-          "count": 50, 
-          "sum": 15347, 
-          "average": 306.94
+          "count": 52, 
+          "sum": 31172, 
+          "average": 599.4615384615385
         }, 
         "2001": {
-          "count": 50, 
-          "sum": 15806, 
-          "average": 316.12
+          "count": 52, 
+          "sum": 32074, 
+          "average": 616.8076923076923
         }, 
         "2006": {
-          "count": 51, 
-          "sum": 17309, 
-          "average": 339.3921568627451
+          "count": 52, 
+          "sum": 34618, 
+          "average": 665.7307692307693
         }, 
         "2007": {
-          "count": 50, 
-          "sum": 16947, 
-          "average": 338.94
+          "count": 52, 
+          "sum": 34256, 
+          "average": 658.7692307692307
         }, 
         "2004": {
-          "count": 50, 
-          "sum": 15950, 
-          "average": 319.0
+          "count": 52, 
+          "sum": 32296, 
+          "average": 621.0769230769231
         }, 
         "2005": {
-          "count": 50, 
-          "sum": 16545, 
-          "average": 330.9
+          "count": 52, 
+          "sum": 33480, 
+          "average": 643.8461538461538
         }, 
         "2008": {
-          "count": 50, 
-          "sum": 16279, 
-          "average": 325.58
+          "count": 52, 
+          "sum": 32930, 
+          "average": 633.2692307692307
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 15254, 
-          "average": 305.08
+          "count": 52, 
+          "sum": 30798, 
+          "average": 592.2692307692307
         }
       }
     }, 
     "name": "crime.[0].Year", 
-    "pretty": "Year: Year", 
+    "pretty": "Year", 
     "indexes": [
       "2003", 
       "1997", 

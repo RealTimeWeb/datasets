@@ -1789,596 +1789,596 @@ weather_bar = [
           "average": 4.80327868852459
         }
       }, 
-      "weather.[0].Data.Wind.High Wind": {
+      "weather.[0].Data.Temperature.Max Temp": {
         "Tallahassee FL": {
           "count": 61, 
-          "sum": 1075.0, 
-          "average": 17.62295081967213
+          "sum": 5309.0, 
+          "average": 87.0327868852459
         }, 
         "Glasgow MT": {
           "count": 59, 
-          "sum": 1342.0, 
-          "average": 22.74576271186441
+          "sum": 3966.0, 
+          "average": 67.22033898305085
         }, 
         "Billings MT": {
           "count": 60, 
-          "sum": 1279.0, 
-          "average": 21.316666666666666
+          "sum": 3976.0, 
+          "average": 66.26666666666667
         }, 
         "New York/Upton NY": {
           "count": 61, 
-          "sum": 764.0, 
-          "average": 12.524590163934427
+          "sum": 4240.0, 
+          "average": 69.50819672131148
         }, 
         "Las Vegas NV": {
           "count": 56, 
-          "sum": 1509.0, 
-          "average": 26.946428571428573
+          "sum": 4899.0, 
+          "average": 87.48214285714286
         }, 
         "San Diego CA": {
           "count": 61, 
-          "sum": 1312.0, 
-          "average": 21.508196721311474
+          "sum": 4504.0, 
+          "average": 73.8360655737705
         }, 
         "Wichita KS": {
           "count": 60, 
-          "sum": 1149.0, 
-          "average": 19.15
+          "sum": 4501.0, 
+          "average": 75.01666666666667
         }, 
         "Great Falls MT": {
           "count": 61, 
-          "sum": 1191.0, 
-          "average": 19.524590163934427
+          "sum": 3954.0, 
+          "average": 64.81967213114754
         }, 
         "Grand Forks ND": {
           "count": 122, 
-          "sum": 3019.5, 
-          "average": 24.75
+          "sum": 7934.0, 
+          "average": 65.0327868852459
         }, 
         "Cheyenne WY": {
           "count": 61, 
-          "sum": 1414.0, 
-          "average": 23.18032786885246
+          "sum": 4162.0, 
+          "average": 68.22950819672131
         }, 
         "Lake Charles LA": {
           "count": 61, 
-          "sum": 1116.0, 
-          "average": 18.295081967213115
+          "sum": 5029.0, 
+          "average": 82.44262295081967
         }, 
         "Rapid City SD": {
           "count": 122, 
-          "sum": 3599.0, 
-          "average": 29.5
+          "sum": 7928.0, 
+          "average": 64.98360655737704
         }, 
         "Lincoln IL": {
           "count": 61, 
-          "sum": 1090.0, 
-          "average": 17.868852459016395
+          "sum": 4411.0, 
+          "average": 72.31147540983606
         }, 
         "Blacksburg VA": {
           "count": 61, 
-          "sum": 744.0, 
-          "average": 12.19672131147541
+          "sum": 4358.0, 
+          "average": 71.44262295081967
         }, 
         "Louisville KY": {
           "count": 61, 
-          "sum": 1200.0, 
-          "average": 19.672131147540984
+          "sum": 4634.0, 
+          "average": 75.9672131147541
         }, 
         "Charleston WV": {
           "count": 61, 
-          "sum": 687.0, 
-          "average": 11.262295081967213
+          "sum": 4529.0, 
+          "average": 74.24590163934427
         }, 
         "Salt Lake City UT": {
           "count": 61, 
-          "sum": 1373.0, 
-          "average": 22.508196721311474
+          "sum": 4341.0, 
+          "average": 71.1639344262295
         }, 
         "Melbourne FL": {
           "count": 61, 
-          "sum": 1096.0, 
-          "average": 17.9672131147541
+          "sum": 5151.0, 
+          "average": 84.44262295081967
         }, 
         "Albany NY": {
           "count": 61, 
-          "sum": 1129.0, 
-          "average": 18.508196721311474
+          "sum": 4145.0, 
+          "average": 67.95081967213115
         }, 
         "Greenville-Spartanburg SC": {
           "count": 61, 
-          "sum": 1052.0, 
-          "average": 17.24590163934426
+          "sum": 5074.0, 
+          "average": 83.18032786885246
         }, 
         "Flagstaff AZ": {
           "count": 58, 
-          "sum": 1353.0, 
-          "average": 23.32758620689655
+          "sum": 3697.0, 
+          "average": 63.741379310344826
         }, 
         "Burlington VT": {
           "count": 61, 
-          "sum": 1081.0, 
-          "average": 17.721311475409838
+          "sum": 4016.0, 
+          "average": 65.8360655737705
         }, 
         "Gaylord MI": {
           "count": 61, 
-          "sum": 1075.0, 
-          "average": 17.62295081967213
+          "sum": 3815.0, 
+          "average": 62.540983606557376
         }, 
         "Wakefield VA": {
           "count": 61, 
-          "sum": 1098.0, 
-          "average": 18.0
+          "sum": 4459.0, 
+          "average": 73.09836065573771
         }, 
         "Tulsa OK": {
           "count": 61, 
-          "sum": 1609.0, 
-          "average": 26.37704918032787
+          "sum": 4712.0, 
+          "average": 77.24590163934427
         }, 
         "Topeka KS": {
           "count": 61, 
-          "sum": 1358.0, 
-          "average": 22.262295081967213
+          "sum": 4440.0, 
+          "average": 72.78688524590164
         }, 
         "Lubbock TX": {
           "count": 61, 
-          "sum": 1578.0, 
-          "average": 25.868852459016395
+          "sum": 4889.0, 
+          "average": 80.14754098360656
         }, 
         "Spokane WA": {
           "count": 60, 
-          "sum": 1158.0, 
-          "average": 19.3
+          "sum": 4105.0, 
+          "average": 68.41666666666667
         }, 
         "Amarillo TX": {
           "count": 59, 
-          "sum": 1557.0, 
-          "average": 26.389830508474578
+          "sum": 4470.0, 
+          "average": 75.76271186440678
         }, 
         "San Joaquin Valley/Hanford CA": {
           "count": 60, 
-          "sum": 1084.0, 
-          "average": 18.066666666666666
+          "sum": 5047.0, 
+          "average": 84.11666666666666
         }, 
         "Shreveport LA": {
           "count": 61, 
-          "sum": 555.5, 
-          "average": 9.10655737704918
+          "sum": 4683.0, 
+          "average": 76.77049180327869
         }, 
         "Grand Junction CO": {
           "count": 122, 
-          "sum": 2958.0, 
-          "average": 24.24590163934426
+          "sum": 7932.0, 
+          "average": 65.01639344262296
         }, 
         "Kansas City/Pleasant Hill MO": {
           "count": 61, 
-          "sum": 1206.0, 
-          "average": 19.770491803278688
+          "sum": 4442.0, 
+          "average": 72.81967213114754
         }, 
         "El Paso TX": {
           "count": 60, 
-          "sum": 1499.0, 
-          "average": 24.983333333333334
+          "sum": 5144.0, 
+          "average": 85.73333333333333
         }, 
         "Des Moines IA": {
           "count": 61, 
-          "sum": 1265.0, 
-          "average": 20.737704918032787
+          "sum": 4399.0, 
+          "average": 72.11475409836065
         }, 
         "Corpus Christi TX": {
           "count": 61, 
-          "sum": 1424.0, 
-          "average": 23.34426229508197
+          "sum": 5243.0, 
+          "average": 85.95081967213115
         }, 
         "Minneapolis/Twin Cities MN": {
           "count": 122, 
-          "sum": 2208.0, 
-          "average": 18.098360655737704
+          "sum": 7632.0, 
+          "average": 62.557377049180324
         }, 
         "Indianapolis IN": {
           "count": 60, 
-          "sum": 1174.5, 
-          "average": 19.575
+          "sum": 4299.0, 
+          "average": 71.65
         }, 
         "Raleigh NC": {
           "count": 61, 
-          "sum": 1002.0, 
-          "average": 16.42622950819672
+          "sum": 4710.0, 
+          "average": 77.21311475409836
         }, 
         "Columbia SC": {
           "count": 61, 
-          "sum": 818.0, 
-          "average": 13.40983606557377
+          "sum": 5038.0, 
+          "average": 82.59016393442623
         }, 
         "Green Bay WI": {
           "count": 122, 
-          "sum": 2623.0, 
-          "average": 21.5
+          "sum": 7080.0, 
+          "average": 58.032786885245905
         }, 
         "Peachtree City/Atlanta GA": {
           "count": 61, 
-          "sum": 1152.0, 
-          "average": 18.885245901639344
+          "sum": 4909.0, 
+          "average": 80.47540983606558
         }, 
         "Bismarck ND": {
           "count": 61, 
-          "sum": 1388.0, 
-          "average": 22.75409836065574
+          "sum": 4102.0, 
+          "average": 67.24590163934427
         }, 
         "Phoenix AZ": {
           "count": 61, 
-          "sum": 1195.0, 
-          "average": 19.59016393442623
+          "sum": 5584.0, 
+          "average": 91.54098360655738
         }, 
         "Pittsburgh PA": {
           "count": 61, 
-          "sum": 1055.0, 
-          "average": 17.295081967213115
+          "sum": 4286.0, 
+          "average": 70.26229508196721
         }, 
         "Brownsville TX": {
           "count": 61, 
-          "sum": 1338.0, 
-          "average": 21.934426229508198
+          "sum": 5278.0, 
+          "average": 86.52459016393442
         }, 
         "Nashville TN": {
           "count": 61, 
-          "sum": 1051.0, 
-          "average": 17.229508196721312
+          "sum": 4842.0, 
+          "average": 79.37704918032787
         }, 
         "Newport/Morehead City NC": {
           "count": 61, 
-          "sum": 1032.0, 
-          "average": 16.918032786885245
+          "sum": 4443.0, 
+          "average": 72.8360655737705
         }, 
         "Tampa FL": {
           "count": 61, 
-          "sum": 1138.0, 
-          "average": 18.65573770491803
+          "sum": 5157.0, 
+          "average": 84.54098360655738
         }, 
         "Milwaukee/Sullivan WI": {
           "count": 122, 
-          "sum": 2460.0, 
-          "average": 20.16393442622951
+          "sum": 8264.0, 
+          "average": 67.73770491803279
         }, 
         "Albuquerque NM": {
           "count": 59, 
-          "sum": 1617.0, 
-          "average": 27.406779661016948
+          "sum": 4501.0, 
+          "average": 76.28813559322033
         }, 
         "Birmingham AL": {
           "count": 61, 
-          "sum": 1284.0, 
-          "average": 21.049180327868854
+          "sum": 4958.0, 
+          "average": 81.27868852459017
         }, 
         "Fort Worth/Dallas TX": {
           "count": 61, 
-          "sum": 1368.0, 
-          "average": 22.42622950819672
+          "sum": 4948.0, 
+          "average": 81.11475409836065
         }, 
         "Sacramento CA": {
           "count": 116, 
-          "sum": 1916.0, 
-          "average": 16.517241379310345
+          "sum": 9530.0, 
+          "average": 82.15517241379311
         }, 
         "Goodland KS": {
           "count": 60, 
-          "sum": 1474.0, 
-          "average": 24.566666666666666
+          "sum": 4428.0, 
+          "average": 73.8
         }, 
         "Wilmington NC": {
           "count": 61, 
-          "sum": 1132.0, 
-          "average": 18.557377049180328
+          "sum": 4817.0, 
+          "average": 78.9672131147541
         }, 
         "Grand Rapids MI": {
           "count": 61, 
-          "sum": 1187.0, 
-          "average": 19.459016393442624
+          "sum": 4166.0, 
+          "average": 68.29508196721312
         }, 
         "Los Angeles/Oxnard CA": {
           "count": 60, 
-          "sum": 906.0, 
-          "average": 15.1
+          "sum": 4514.0, 
+          "average": 75.23333333333333
         }, 
         "Houston/Galveston TX": {
           "count": 61, 
-          "sum": 1202.0, 
-          "average": 19.704918032786885
+          "sum": 4986.0, 
+          "average": 81.73770491803279
         }, 
         "Baltimore/Washington VA": {
           "count": 61, 
-          "sum": 1114.0, 
-          "average": 18.262295081967213
+          "sum": 4385.0, 
+          "average": 71.88524590163935
         }, 
         "St. Louis MO": {
           "count": 61, 
-          "sum": 1207.0, 
-          "average": 19.78688524590164
+          "sum": 4637.0, 
+          "average": 76.01639344262296
         }, 
         "Portland OR": {
           "count": 60, 
-          "sum": 729.0, 
-          "average": 12.15
+          "sum": 3664.0, 
+          "average": 61.06666666666667
         }, 
         "Denver/Boulder CO": {
           "count": 60, 
-          "sum": 1575.0, 
-          "average": 26.25
+          "sum": 3929.0, 
+          "average": 65.48333333333333
         }, 
         "Anchorage AK": {
           "count": 59, 
-          "sum": 890.0, 
-          "average": 15.084745762711865
+          "sum": 3417.0, 
+          "average": 57.91525423728814
         }, 
         "La Crosse WI": {
           "count": 120, 
-          "sum": 2768.0, 
-          "average": 23.066666666666666
+          "sum": 8082.0, 
+          "average": 67.35
         }, 
         "San Juan PR": {
           "count": 61, 
-          "sum": 1151.0, 
-          "average": 18.868852459016395
+          "sum": 5296.0, 
+          "average": 86.81967213114754
         }, 
         "Riverton WY": {
           "count": 60, 
-          "sum": 1440.0, 
-          "average": 24.0
+          "sum": 3640.0, 
+          "average": 60.666666666666664
         }, 
         "Hastings NE": {
           "count": 57, 
-          "sum": 1388.0, 
-          "average": 24.350877192982455
+          "sum": 3938.0, 
+          "average": 69.08771929824562
         }, 
         "Pendleton OR": {
           "count": 60, 
-          "sum": 1102.0, 
-          "average": 18.366666666666667
+          "sum": 4720.0, 
+          "average": 78.66666666666667
         }, 
         "State College PA": {
           "count": 61, 
-          "sum": 989.0, 
-          "average": 16.21311475409836
+          "sum": 4283.0, 
+          "average": 70.21311475409836
         }, 
         "Medford OR": {
           "count": 60, 
-          "sum": 1199.0, 
-          "average": 19.983333333333334
+          "sum": 4104.5, 
+          "average": 68.40833333333333
         }, 
         "Binghamton NY": {
           "count": 61, 
-          "sum": 1009.0, 
-          "average": 16.540983606557376
+          "sum": 3853.0, 
+          "average": 63.16393442622951
         }, 
         "Miami FL": {
           "count": 61, 
-          "sum": 1125.0, 
-          "average": 18.442622950819672
+          "sum": 5243.0, 
+          "average": 85.95081967213115
         }, 
         "Charleston SC": {
           "count": 61, 
-          "sum": 1119.0, 
-          "average": 18.34426229508197
+          "sum": 5026.0, 
+          "average": 82.39344262295081
         }, 
         "Cleveland OH": {
           "count": 61, 
-          "sum": 1140.0, 
-          "average": 18.688524590163933
+          "sum": 4183.0, 
+          "average": 68.57377049180327
         }, 
         "Omaha/Valley NE": {
           "count": 61, 
-          "sum": 1394.0, 
-          "average": 22.852459016393443
+          "sum": 4456.0, 
+          "average": 73.04918032786885
         }, 
         "Marquette MI": {
           "count": 122, 
-          "sum": 1946.0, 
-          "average": 15.950819672131148
+          "sum": 7258.0, 
+          "average": 59.49180327868852
         }, 
         "Eureka CA": {
           "count": 60, 
-          "sum": 1197.0, 
-          "average": 19.95
+          "sum": 3580.0, 
+          "average": 59.666666666666664
         }, 
         "North Platte NE": {
           "count": 61, 
-          "sum": 1519.0, 
-          "average": 24.901639344262296
+          "sum": 4184.0, 
+          "average": 68.59016393442623
         }, 
         "Pocatello ID": {
           "count": 61, 
-          "sum": 1231.0, 
-          "average": 20.18032786885246
+          "sum": 4173.0, 
+          "average": 68.40983606557377
         }, 
         "Tucson AZ": {
           "count": 60, 
-          "sum": 1186.0, 
-          "average": 19.766666666666666
+          "sum": 5350.0, 
+          "average": 89.16666666666667
         }, 
         "Pueblo CO": {
           "count": 61, 
-          "sum": 1572.0, 
-          "average": 25.770491803278688
+          "sum": 3971.0, 
+          "average": 65.09836065573771
         }, 
         "Springfield MO": {
           "count": 61, 
-          "sum": 1235.0, 
-          "average": 20.24590163934426
+          "sum": 4524.0, 
+          "average": 74.1639344262295
         }, 
         "San Francisco Bay Area/Monterey CA": {
           "count": 60, 
-          "sum": 954.0, 
-          "average": 15.9
+          "sum": 4482.0, 
+          "average": 74.7
         }, 
         "Boise ID": {
           "count": 60, 
-          "sum": 1255.0, 
-          "average": 20.916666666666668
+          "sum": 4133.0, 
+          "average": 68.88333333333334
         }, 
         "Northern Indiana IN": {
           "count": 61, 
-          "sum": 1144.0, 
-          "average": 18.75409836065574
+          "sum": 4257.0, 
+          "average": 69.78688524590164
         }, 
         "Jackson MS": {
           "count": 61, 
-          "sum": 1071.0, 
-          "average": 17.557377049180328
+          "sum": 4998.0, 
+          "average": 81.93442622950819
         }, 
         "Chicago IL": {
           "count": 61, 
-          "sum": 1287.0, 
-          "average": 21.098360655737704
+          "sum": 4287.0, 
+          "average": 70.27868852459017
         }, 
         "Buffalo NY": {
           "count": 61, 
-          "sum": 1198.0, 
-          "average": 19.639344262295083
+          "sum": 3967.0, 
+          "average": 65.0327868852459
         }, 
         "Mount Holly/Philadelphia NJ": {
           "count": 61, 
-          "sum": 972.0, 
-          "average": 15.934426229508198
+          "sum": 4305.0, 
+          "average": 70.57377049180327
         }, 
         "Seattle WA": {
           "count": 60, 
-          "sum": 954.0, 
-          "average": 15.9
+          "sum": 4152.0, 
+          "average": 69.2
         }, 
         "Mobile/Pensacola AL": {
           "count": 61, 
-          "sum": 918.0, 
-          "average": 15.049180327868852
+          "sum": 5031.0, 
+          "average": 82.47540983606558
         }, 
         "New Orleans/Baton Rouge LA": {
           "count": 61, 
-          "sum": 1060.0, 
-          "average": 17.37704918032787
+          "sum": 5104.0, 
+          "average": 83.67213114754098
         }, 
         "Jacksonville FL": {
           "count": 61, 
-          "sum": 1121.0, 
-          "average": 18.37704918032787
+          "sum": 5252.0, 
+          "average": 86.09836065573771
         }, 
         "Memphis TN": {
           "count": 61, 
-          "sum": 1143.0, 
-          "average": 18.737704918032787
+          "sum": 4853.0, 
+          "average": 79.55737704918033
         }, 
         "Huntsville AL": {
           "count": 61, 
-          "sum": 1062.0, 
-          "average": 17.40983606557377
+          "sum": 4969.0, 
+          "average": 81.45901639344262
         }, 
         "Detroit/Pontiac MI": {
           "count": 61, 
-          "sum": 1082.0, 
-          "average": 17.737704918032787
+          "sum": 4154.0, 
+          "average": 68.09836065573771
         }, 
         "Dodge City KS": {
           "count": 59, 
-          "sum": 1560.0, 
-          "average": 26.440677966101696
+          "sum": 4233.0, 
+          "average": 71.7457627118644
         }, 
         "Jackson KY": {
           "count": 60, 
-          "sum": 1009.0, 
-          "average": 16.816666666666666
+          "sum": 4499.0, 
+          "average": 74.98333333333333
         }, 
         "Morristown/Knoxville TN": {
           "count": 61, 
-          "sum": 1102.0, 
-          "average": 18.065573770491802
+          "sum": 4935.0, 
+          "average": 80.90163934426229
         }, 
         "Elko NV": {
           "count": 59, 
-          "sum": 1328.0, 
-          "average": 22.508474576271187
+          "sum": 3813.0, 
+          "average": 64.62711864406779
         }, 
         "Key West FL": {
           "count": 61, 
-          "sum": 901.0, 
-          "average": 14.770491803278688
+          "sum": 5263.0, 
+          "average": 86.27868852459017
         }, 
         "Wilmington OH": {
           "count": 61, 
-          "sum": 1164.0, 
-          "average": 19.081967213114755
+          "sum": 4428.0, 
+          "average": 72.59016393442623
         }, 
         "Paducah KY": {
           "count": 61, 
-          "sum": 1143.0, 
-          "average": 18.737704918032787
+          "sum": 4619.0, 
+          "average": 75.72131147540983
         }, 
         "Boston MD": {
           "count": 61, 
-          "sum": 1219.0, 
-          "average": 19.983606557377048
+          "sum": 3895.0, 
+          "average": 63.85245901639344
         }, 
         "Midland/Odessa TX": {
           "count": 61, 
-          "sum": 1693.0, 
-          "average": 27.75409836065574
+          "sum": 5213.0, 
+          "average": 85.45901639344262
         }, 
         "Norman/Oklahoma City OK": {
           "count": 61, 
-          "sum": 1660.0, 
-          "average": 27.21311475409836
+          "sum": 4700.0, 
+          "average": 77.04918032786885
         }, 
         "Missoula MT": {
           "count": 60, 
-          "sum": 1081.0, 
-          "average": 18.016666666666666
+          "sum": 4058.0, 
+          "average": 67.63333333333334
         }, 
         "Davenport/Quad Cities IA": {
           "count": 61, 
-          "sum": 1525.0, 
-          "average": 25.0
+          "sum": 4219.0, 
+          "average": 69.1639344262295
         }, 
         "Fairbanks AK": {
           "count": 59, 
-          "sum": 928.0, 
-          "average": 15.728813559322035
+          "sum": 3651.0, 
+          "average": 61.88135593220339
         }, 
         "Reno NV": {
           "count": 60, 
-          "sum": 1296.0, 
-          "average": 21.6
+          "sum": 4391.0, 
+          "average": 73.18333333333334
         }, 
         "Sioux Falls SD": {
           "count": 183, 
-          "sum": 4287.0, 
-          "average": 23.42622950819672
+          "sum": 12582.0, 
+          "average": 68.75409836065573
         }, 
         "San Angelo TX": {
           "count": 59, 
-          "sum": 1434.0, 
-          "average": 24.305084745762713
+          "sum": 4686.0, 
+          "average": 79.42372881355932
         }, 
         "Gray/Portland ME": {
           "count": 61, 
-          "sum": 1093.5, 
-          "average": 17.92622950819672
+          "sum": 3776.0, 
+          "average": 61.90163934426229
         }, 
         "Aberdeen SD": {
           "count": 61, 
-          "sum": 1555.0, 
-          "average": 25.491803278688526
+          "sum": 4246.0, 
+          "average": 69.60655737704919
         }, 
         "North Little Rock AR": {
           "count": 61, 
-          "sum": 1109.0, 
-          "average": 18.18032786885246
+          "sum": 4833.0, 
+          "average": 79.22950819672131
         }, 
         "Austin/San Antonio TX": {
           "count": 61, 
-          "sum": 1305.0, 
-          "average": 21.39344262295082
+          "sum": 5052.0, 
+          "average": 82.81967213114754
         }, 
         "Caribou ME": {
           "count": 61, 
-          "sum": 1141.0, 
-          "average": 18.704918032786885
+          "sum": 3992.0, 
+          "average": 65.44262295081967
         }
       }, 
       "weather.[0].Date.Year": {
@@ -5341,601 +5341,601 @@ weather_bar = [
           "average": 41.0655737704918
         }
       }, 
-      "weather.[0].Data.Temperature.Max Temp": {
+      "weather.[0].Data.Wind.High Wind": {
         "Tallahassee FL": {
           "count": 61, 
-          "sum": 5309.0, 
-          "average": 87.0327868852459
+          "sum": 1075.0, 
+          "average": 17.62295081967213
         }, 
         "Glasgow MT": {
           "count": 59, 
-          "sum": 3966.0, 
-          "average": 67.22033898305085
+          "sum": 1342.0, 
+          "average": 22.74576271186441
         }, 
         "Billings MT": {
           "count": 60, 
-          "sum": 3976.0, 
-          "average": 66.26666666666667
+          "sum": 1279.0, 
+          "average": 21.316666666666666
         }, 
         "New York/Upton NY": {
           "count": 61, 
-          "sum": 4240.0, 
-          "average": 69.50819672131148
+          "sum": 764.0, 
+          "average": 12.524590163934427
         }, 
         "Las Vegas NV": {
           "count": 56, 
-          "sum": 4899.0, 
-          "average": 87.48214285714286
+          "sum": 1509.0, 
+          "average": 26.946428571428573
         }, 
         "San Diego CA": {
           "count": 61, 
-          "sum": 4504.0, 
-          "average": 73.8360655737705
+          "sum": 1312.0, 
+          "average": 21.508196721311474
         }, 
         "Wichita KS": {
           "count": 60, 
-          "sum": 4501.0, 
-          "average": 75.01666666666667
+          "sum": 1149.0, 
+          "average": 19.15
         }, 
         "Great Falls MT": {
           "count": 61, 
-          "sum": 3954.0, 
-          "average": 64.81967213114754
+          "sum": 1191.0, 
+          "average": 19.524590163934427
         }, 
         "Grand Forks ND": {
           "count": 122, 
-          "sum": 7934.0, 
-          "average": 65.0327868852459
+          "sum": 3019.5, 
+          "average": 24.75
         }, 
         "Cheyenne WY": {
           "count": 61, 
-          "sum": 4162.0, 
-          "average": 68.22950819672131
+          "sum": 1414.0, 
+          "average": 23.18032786885246
         }, 
         "Lake Charles LA": {
           "count": 61, 
-          "sum": 5029.0, 
-          "average": 82.44262295081967
+          "sum": 1116.0, 
+          "average": 18.295081967213115
         }, 
         "Rapid City SD": {
           "count": 122, 
-          "sum": 7928.0, 
-          "average": 64.98360655737704
+          "sum": 3599.0, 
+          "average": 29.5
         }, 
         "Lincoln IL": {
           "count": 61, 
-          "sum": 4411.0, 
-          "average": 72.31147540983606
+          "sum": 1090.0, 
+          "average": 17.868852459016395
         }, 
         "Blacksburg VA": {
           "count": 61, 
-          "sum": 4358.0, 
-          "average": 71.44262295081967
+          "sum": 744.0, 
+          "average": 12.19672131147541
         }, 
         "Louisville KY": {
           "count": 61, 
-          "sum": 4634.0, 
-          "average": 75.9672131147541
+          "sum": 1200.0, 
+          "average": 19.672131147540984
         }, 
         "Charleston WV": {
           "count": 61, 
-          "sum": 4529.0, 
-          "average": 74.24590163934427
+          "sum": 687.0, 
+          "average": 11.262295081967213
         }, 
         "Salt Lake City UT": {
           "count": 61, 
-          "sum": 4341.0, 
-          "average": 71.1639344262295
+          "sum": 1373.0, 
+          "average": 22.508196721311474
         }, 
         "Melbourne FL": {
           "count": 61, 
-          "sum": 5151.0, 
-          "average": 84.44262295081967
+          "sum": 1096.0, 
+          "average": 17.9672131147541
         }, 
         "Albany NY": {
           "count": 61, 
-          "sum": 4145.0, 
-          "average": 67.95081967213115
+          "sum": 1129.0, 
+          "average": 18.508196721311474
         }, 
         "Greenville-Spartanburg SC": {
           "count": 61, 
-          "sum": 5074.0, 
-          "average": 83.18032786885246
+          "sum": 1052.0, 
+          "average": 17.24590163934426
         }, 
         "Flagstaff AZ": {
           "count": 58, 
-          "sum": 3697.0, 
-          "average": 63.741379310344826
+          "sum": 1353.0, 
+          "average": 23.32758620689655
         }, 
         "Burlington VT": {
           "count": 61, 
-          "sum": 4016.0, 
-          "average": 65.8360655737705
+          "sum": 1081.0, 
+          "average": 17.721311475409838
         }, 
         "Gaylord MI": {
           "count": 61, 
-          "sum": 3815.0, 
-          "average": 62.540983606557376
+          "sum": 1075.0, 
+          "average": 17.62295081967213
         }, 
         "Wakefield VA": {
           "count": 61, 
-          "sum": 4459.0, 
-          "average": 73.09836065573771
+          "sum": 1098.0, 
+          "average": 18.0
         }, 
         "Tulsa OK": {
           "count": 61, 
-          "sum": 4712.0, 
-          "average": 77.24590163934427
+          "sum": 1609.0, 
+          "average": 26.37704918032787
         }, 
         "Topeka KS": {
           "count": 61, 
-          "sum": 4440.0, 
-          "average": 72.78688524590164
+          "sum": 1358.0, 
+          "average": 22.262295081967213
         }, 
         "Lubbock TX": {
           "count": 61, 
-          "sum": 4889.0, 
-          "average": 80.14754098360656
+          "sum": 1578.0, 
+          "average": 25.868852459016395
         }, 
         "Spokane WA": {
           "count": 60, 
-          "sum": 4105.0, 
-          "average": 68.41666666666667
+          "sum": 1158.0, 
+          "average": 19.3
         }, 
         "Amarillo TX": {
           "count": 59, 
-          "sum": 4470.0, 
-          "average": 75.76271186440678
+          "sum": 1557.0, 
+          "average": 26.389830508474578
         }, 
         "San Joaquin Valley/Hanford CA": {
           "count": 60, 
-          "sum": 5047.0, 
-          "average": 84.11666666666666
+          "sum": 1084.0, 
+          "average": 18.066666666666666
         }, 
         "Shreveport LA": {
           "count": 61, 
-          "sum": 4683.0, 
-          "average": 76.77049180327869
+          "sum": 555.5, 
+          "average": 9.10655737704918
         }, 
         "Grand Junction CO": {
           "count": 122, 
-          "sum": 7932.0, 
-          "average": 65.01639344262296
+          "sum": 2958.0, 
+          "average": 24.24590163934426
         }, 
         "Kansas City/Pleasant Hill MO": {
           "count": 61, 
-          "sum": 4442.0, 
-          "average": 72.81967213114754
+          "sum": 1206.0, 
+          "average": 19.770491803278688
         }, 
         "El Paso TX": {
           "count": 60, 
-          "sum": 5144.0, 
-          "average": 85.73333333333333
+          "sum": 1499.0, 
+          "average": 24.983333333333334
         }, 
         "Des Moines IA": {
           "count": 61, 
-          "sum": 4399.0, 
-          "average": 72.11475409836065
+          "sum": 1265.0, 
+          "average": 20.737704918032787
         }, 
         "Corpus Christi TX": {
           "count": 61, 
-          "sum": 5243.0, 
-          "average": 85.95081967213115
+          "sum": 1424.0, 
+          "average": 23.34426229508197
         }, 
         "Minneapolis/Twin Cities MN": {
           "count": 122, 
-          "sum": 7632.0, 
-          "average": 62.557377049180324
+          "sum": 2208.0, 
+          "average": 18.098360655737704
         }, 
         "Indianapolis IN": {
           "count": 60, 
-          "sum": 4299.0, 
-          "average": 71.65
+          "sum": 1174.5, 
+          "average": 19.575
         }, 
         "Raleigh NC": {
           "count": 61, 
-          "sum": 4710.0, 
-          "average": 77.21311475409836
+          "sum": 1002.0, 
+          "average": 16.42622950819672
         }, 
         "Columbia SC": {
           "count": 61, 
-          "sum": 5038.0, 
-          "average": 82.59016393442623
+          "sum": 818.0, 
+          "average": 13.40983606557377
         }, 
         "Green Bay WI": {
           "count": 122, 
-          "sum": 7080.0, 
-          "average": 58.032786885245905
+          "sum": 2623.0, 
+          "average": 21.5
         }, 
         "Peachtree City/Atlanta GA": {
           "count": 61, 
-          "sum": 4909.0, 
-          "average": 80.47540983606558
+          "sum": 1152.0, 
+          "average": 18.885245901639344
         }, 
         "Bismarck ND": {
           "count": 61, 
-          "sum": 4102.0, 
-          "average": 67.24590163934427
+          "sum": 1388.0, 
+          "average": 22.75409836065574
         }, 
         "Phoenix AZ": {
           "count": 61, 
-          "sum": 5584.0, 
-          "average": 91.54098360655738
+          "sum": 1195.0, 
+          "average": 19.59016393442623
         }, 
         "Pittsburgh PA": {
           "count": 61, 
-          "sum": 4286.0, 
-          "average": 70.26229508196721
+          "sum": 1055.0, 
+          "average": 17.295081967213115
         }, 
         "Brownsville TX": {
           "count": 61, 
-          "sum": 5278.0, 
-          "average": 86.52459016393442
+          "sum": 1338.0, 
+          "average": 21.934426229508198
         }, 
         "Nashville TN": {
           "count": 61, 
-          "sum": 4842.0, 
-          "average": 79.37704918032787
+          "sum": 1051.0, 
+          "average": 17.229508196721312
         }, 
         "Newport/Morehead City NC": {
           "count": 61, 
-          "sum": 4443.0, 
-          "average": 72.8360655737705
+          "sum": 1032.0, 
+          "average": 16.918032786885245
         }, 
         "Tampa FL": {
           "count": 61, 
-          "sum": 5157.0, 
-          "average": 84.54098360655738
+          "sum": 1138.0, 
+          "average": 18.65573770491803
         }, 
         "Milwaukee/Sullivan WI": {
           "count": 122, 
-          "sum": 8264.0, 
-          "average": 67.73770491803279
+          "sum": 2460.0, 
+          "average": 20.16393442622951
         }, 
         "Albuquerque NM": {
           "count": 59, 
-          "sum": 4501.0, 
-          "average": 76.28813559322033
+          "sum": 1617.0, 
+          "average": 27.406779661016948
         }, 
         "Birmingham AL": {
           "count": 61, 
-          "sum": 4958.0, 
-          "average": 81.27868852459017
+          "sum": 1284.0, 
+          "average": 21.049180327868854
         }, 
         "Fort Worth/Dallas TX": {
           "count": 61, 
-          "sum": 4948.0, 
-          "average": 81.11475409836065
+          "sum": 1368.0, 
+          "average": 22.42622950819672
         }, 
         "Sacramento CA": {
           "count": 116, 
-          "sum": 9530.0, 
-          "average": 82.15517241379311
+          "sum": 1916.0, 
+          "average": 16.517241379310345
         }, 
         "Goodland KS": {
           "count": 60, 
-          "sum": 4428.0, 
-          "average": 73.8
+          "sum": 1474.0, 
+          "average": 24.566666666666666
         }, 
         "Wilmington NC": {
           "count": 61, 
-          "sum": 4817.0, 
-          "average": 78.9672131147541
+          "sum": 1132.0, 
+          "average": 18.557377049180328
         }, 
         "Grand Rapids MI": {
           "count": 61, 
-          "sum": 4166.0, 
-          "average": 68.29508196721312
+          "sum": 1187.0, 
+          "average": 19.459016393442624
         }, 
         "Los Angeles/Oxnard CA": {
           "count": 60, 
-          "sum": 4514.0, 
-          "average": 75.23333333333333
+          "sum": 906.0, 
+          "average": 15.1
         }, 
         "Houston/Galveston TX": {
           "count": 61, 
-          "sum": 4986.0, 
-          "average": 81.73770491803279
+          "sum": 1202.0, 
+          "average": 19.704918032786885
         }, 
         "Baltimore/Washington VA": {
           "count": 61, 
-          "sum": 4385.0, 
-          "average": 71.88524590163935
+          "sum": 1114.0, 
+          "average": 18.262295081967213
         }, 
         "St. Louis MO": {
           "count": 61, 
-          "sum": 4637.0, 
-          "average": 76.01639344262296
+          "sum": 1207.0, 
+          "average": 19.78688524590164
         }, 
         "Portland OR": {
           "count": 60, 
-          "sum": 3664.0, 
-          "average": 61.06666666666667
+          "sum": 729.0, 
+          "average": 12.15
         }, 
         "Denver/Boulder CO": {
           "count": 60, 
-          "sum": 3929.0, 
-          "average": 65.48333333333333
+          "sum": 1575.0, 
+          "average": 26.25
         }, 
         "Anchorage AK": {
           "count": 59, 
-          "sum": 3417.0, 
-          "average": 57.91525423728814
+          "sum": 890.0, 
+          "average": 15.084745762711865
         }, 
         "La Crosse WI": {
           "count": 120, 
-          "sum": 8082.0, 
-          "average": 67.35
+          "sum": 2768.0, 
+          "average": 23.066666666666666
         }, 
         "San Juan PR": {
           "count": 61, 
-          "sum": 5296.0, 
-          "average": 86.81967213114754
+          "sum": 1151.0, 
+          "average": 18.868852459016395
         }, 
         "Riverton WY": {
           "count": 60, 
-          "sum": 3640.0, 
-          "average": 60.666666666666664
+          "sum": 1440.0, 
+          "average": 24.0
         }, 
         "Hastings NE": {
           "count": 57, 
-          "sum": 3938.0, 
-          "average": 69.08771929824562
+          "sum": 1388.0, 
+          "average": 24.350877192982455
         }, 
         "Pendleton OR": {
           "count": 60, 
-          "sum": 4720.0, 
-          "average": 78.66666666666667
+          "sum": 1102.0, 
+          "average": 18.366666666666667
         }, 
         "State College PA": {
           "count": 61, 
-          "sum": 4283.0, 
-          "average": 70.21311475409836
+          "sum": 989.0, 
+          "average": 16.21311475409836
         }, 
         "Medford OR": {
           "count": 60, 
-          "sum": 4104.5, 
-          "average": 68.40833333333333
+          "sum": 1199.0, 
+          "average": 19.983333333333334
         }, 
         "Binghamton NY": {
           "count": 61, 
-          "sum": 3853.0, 
-          "average": 63.16393442622951
+          "sum": 1009.0, 
+          "average": 16.540983606557376
         }, 
         "Miami FL": {
           "count": 61, 
-          "sum": 5243.0, 
-          "average": 85.95081967213115
+          "sum": 1125.0, 
+          "average": 18.442622950819672
         }, 
         "Charleston SC": {
           "count": 61, 
-          "sum": 5026.0, 
-          "average": 82.39344262295081
+          "sum": 1119.0, 
+          "average": 18.34426229508197
         }, 
         "Cleveland OH": {
           "count": 61, 
-          "sum": 4183.0, 
-          "average": 68.57377049180327
+          "sum": 1140.0, 
+          "average": 18.688524590163933
         }, 
         "Omaha/Valley NE": {
           "count": 61, 
-          "sum": 4456.0, 
-          "average": 73.04918032786885
+          "sum": 1394.0, 
+          "average": 22.852459016393443
         }, 
         "Marquette MI": {
           "count": 122, 
-          "sum": 7258.0, 
-          "average": 59.49180327868852
+          "sum": 1946.0, 
+          "average": 15.950819672131148
         }, 
         "Eureka CA": {
           "count": 60, 
-          "sum": 3580.0, 
-          "average": 59.666666666666664
+          "sum": 1197.0, 
+          "average": 19.95
         }, 
         "North Platte NE": {
           "count": 61, 
-          "sum": 4184.0, 
-          "average": 68.59016393442623
+          "sum": 1519.0, 
+          "average": 24.901639344262296
         }, 
         "Pocatello ID": {
           "count": 61, 
-          "sum": 4173.0, 
-          "average": 68.40983606557377
+          "sum": 1231.0, 
+          "average": 20.18032786885246
         }, 
         "Tucson AZ": {
           "count": 60, 
-          "sum": 5350.0, 
-          "average": 89.16666666666667
+          "sum": 1186.0, 
+          "average": 19.766666666666666
         }, 
         "Pueblo CO": {
           "count": 61, 
-          "sum": 3971.0, 
-          "average": 65.09836065573771
+          "sum": 1572.0, 
+          "average": 25.770491803278688
         }, 
         "Springfield MO": {
           "count": 61, 
-          "sum": 4524.0, 
-          "average": 74.1639344262295
+          "sum": 1235.0, 
+          "average": 20.24590163934426
         }, 
         "San Francisco Bay Area/Monterey CA": {
           "count": 60, 
-          "sum": 4482.0, 
-          "average": 74.7
+          "sum": 954.0, 
+          "average": 15.9
         }, 
         "Boise ID": {
           "count": 60, 
-          "sum": 4133.0, 
-          "average": 68.88333333333334
+          "sum": 1255.0, 
+          "average": 20.916666666666668
         }, 
         "Northern Indiana IN": {
           "count": 61, 
-          "sum": 4257.0, 
-          "average": 69.78688524590164
+          "sum": 1144.0, 
+          "average": 18.75409836065574
         }, 
         "Jackson MS": {
           "count": 61, 
-          "sum": 4998.0, 
-          "average": 81.93442622950819
+          "sum": 1071.0, 
+          "average": 17.557377049180328
         }, 
         "Chicago IL": {
           "count": 61, 
-          "sum": 4287.0, 
-          "average": 70.27868852459017
+          "sum": 1287.0, 
+          "average": 21.098360655737704
         }, 
         "Buffalo NY": {
           "count": 61, 
-          "sum": 3967.0, 
-          "average": 65.0327868852459
+          "sum": 1198.0, 
+          "average": 19.639344262295083
         }, 
         "Mount Holly/Philadelphia NJ": {
           "count": 61, 
-          "sum": 4305.0, 
-          "average": 70.57377049180327
+          "sum": 972.0, 
+          "average": 15.934426229508198
         }, 
         "Seattle WA": {
           "count": 60, 
-          "sum": 4152.0, 
-          "average": 69.2
+          "sum": 954.0, 
+          "average": 15.9
         }, 
         "Mobile/Pensacola AL": {
           "count": 61, 
-          "sum": 5031.0, 
-          "average": 82.47540983606558
+          "sum": 918.0, 
+          "average": 15.049180327868852
         }, 
         "New Orleans/Baton Rouge LA": {
           "count": 61, 
-          "sum": 5104.0, 
-          "average": 83.67213114754098
+          "sum": 1060.0, 
+          "average": 17.37704918032787
         }, 
         "Jacksonville FL": {
           "count": 61, 
-          "sum": 5252.0, 
-          "average": 86.09836065573771
+          "sum": 1121.0, 
+          "average": 18.37704918032787
         }, 
         "Memphis TN": {
           "count": 61, 
-          "sum": 4853.0, 
-          "average": 79.55737704918033
+          "sum": 1143.0, 
+          "average": 18.737704918032787
         }, 
         "Huntsville AL": {
           "count": 61, 
-          "sum": 4969.0, 
-          "average": 81.45901639344262
+          "sum": 1062.0, 
+          "average": 17.40983606557377
         }, 
         "Detroit/Pontiac MI": {
           "count": 61, 
-          "sum": 4154.0, 
-          "average": 68.09836065573771
+          "sum": 1082.0, 
+          "average": 17.737704918032787
         }, 
         "Dodge City KS": {
           "count": 59, 
-          "sum": 4233.0, 
-          "average": 71.7457627118644
+          "sum": 1560.0, 
+          "average": 26.440677966101696
         }, 
         "Jackson KY": {
           "count": 60, 
-          "sum": 4499.0, 
-          "average": 74.98333333333333
+          "sum": 1009.0, 
+          "average": 16.816666666666666
         }, 
         "Morristown/Knoxville TN": {
           "count": 61, 
-          "sum": 4935.0, 
-          "average": 80.90163934426229
+          "sum": 1102.0, 
+          "average": 18.065573770491802
         }, 
         "Elko NV": {
           "count": 59, 
-          "sum": 3813.0, 
-          "average": 64.62711864406779
+          "sum": 1328.0, 
+          "average": 22.508474576271187
         }, 
         "Key West FL": {
           "count": 61, 
-          "sum": 5263.0, 
-          "average": 86.27868852459017
+          "sum": 901.0, 
+          "average": 14.770491803278688
         }, 
         "Wilmington OH": {
           "count": 61, 
-          "sum": 4428.0, 
-          "average": 72.59016393442623
+          "sum": 1164.0, 
+          "average": 19.081967213114755
         }, 
         "Paducah KY": {
           "count": 61, 
-          "sum": 4619.0, 
-          "average": 75.72131147540983
+          "sum": 1143.0, 
+          "average": 18.737704918032787
         }, 
         "Boston MD": {
           "count": 61, 
-          "sum": 3895.0, 
-          "average": 63.85245901639344
+          "sum": 1219.0, 
+          "average": 19.983606557377048
         }, 
         "Midland/Odessa TX": {
           "count": 61, 
-          "sum": 5213.0, 
-          "average": 85.45901639344262
+          "sum": 1693.0, 
+          "average": 27.75409836065574
         }, 
         "Norman/Oklahoma City OK": {
           "count": 61, 
-          "sum": 4700.0, 
-          "average": 77.04918032786885
+          "sum": 1660.0, 
+          "average": 27.21311475409836
         }, 
         "Missoula MT": {
           "count": 60, 
-          "sum": 4058.0, 
-          "average": 67.63333333333334
+          "sum": 1081.0, 
+          "average": 18.016666666666666
         }, 
         "Davenport/Quad Cities IA": {
           "count": 61, 
-          "sum": 4219.0, 
-          "average": 69.1639344262295
+          "sum": 1525.0, 
+          "average": 25.0
         }, 
         "Fairbanks AK": {
           "count": 59, 
-          "sum": 3651.0, 
-          "average": 61.88135593220339
+          "sum": 928.0, 
+          "average": 15.728813559322035
         }, 
         "Reno NV": {
           "count": 60, 
-          "sum": 4391.0, 
-          "average": 73.18333333333334
+          "sum": 1296.0, 
+          "average": 21.6
         }, 
         "Sioux Falls SD": {
           "count": 183, 
-          "sum": 12582.0, 
-          "average": 68.75409836065573
+          "sum": 4287.0, 
+          "average": 23.42622950819672
         }, 
         "San Angelo TX": {
           "count": 59, 
-          "sum": 4686.0, 
-          "average": 79.42372881355932
+          "sum": 1434.0, 
+          "average": 24.305084745762713
         }, 
         "Gray/Portland ME": {
           "count": 61, 
-          "sum": 3776.0, 
-          "average": 61.90163934426229
+          "sum": 1093.5, 
+          "average": 17.92622950819672
         }, 
         "Aberdeen SD": {
           "count": 61, 
-          "sum": 4246.0, 
-          "average": 69.60655737704919
+          "sum": 1555.0, 
+          "average": 25.491803278688526
         }, 
         "North Little Rock AR": {
           "count": 61, 
-          "sum": 4833.0, 
-          "average": 79.22950819672131
+          "sum": 1109.0, 
+          "average": 18.18032786885246
         }, 
         "Austin/San Antonio TX": {
           "count": 61, 
-          "sum": 5052.0, 
-          "average": 82.81967213114754
+          "sum": 1305.0, 
+          "average": 21.39344262295082
         }, 
         "Caribou ME": {
           "count": 61, 
-          "sum": 3992.0, 
-          "average": 65.44262295081967
+          "sum": 1141.0, 
+          "average": 18.704918032786885
         }
       }
     }, 
     "name": "weather.[0].Station.Location", 
-    "pretty": "Station: Location", 
+    "pretty": "Station, Location", 
     "indexes": [
       "Des Moines IA", 
       "Fairbanks AK", 
@@ -6992,311 +6992,311 @@ weather_bar = [
           "average": 5.0
         }
       }, 
-      "weather.[0].Data.Wind.High Wind": {
+      "weather.[0].Data.Temperature.Max Temp": {
         "05-16-2016": {
           "count": 128, 
-          "sum": 2633.867741935484, 
-          "average": 20.57709173387097
+          "sum": 8420.0, 
+          "average": 65.78125
         }, 
         "04-21-2016": {
           "count": 129, 
-          "sum": 2360.935483870968, 
-          "average": 18.301825456364092
+          "sum": 9289.0, 
+          "average": 72.0077519379845
         }, 
         "05-06-2016": {
           "count": 129, 
-          "sum": 2439.8548387096776, 
-          "average": 18.913603400850214
+          "sum": 9353.0, 
+          "average": 72.50387596899225
         }, 
         "06-08-2016": {
           "count": 129, 
-          "sum": 2651.6774193548385, 
-          "average": 20.55563890972743
+          "sum": 10629.0, 
+          "average": 82.3953488372093
         }, 
         "05-14-2016": {
           "count": 129, 
-          "sum": 2799.9451612903226, 
-          "average": 21.705001250312577
+          "sum": 9463.0, 
+          "average": 73.35658914728683
         }, 
         "05-05-2016": {
           "count": 129, 
-          "sum": 2537.1935483870966, 
-          "average": 19.668167041760437
+          "sum": 9153.0, 
+          "average": 70.95348837209302
         }, 
         "04-19-2016": {
           "count": 129, 
-          "sum": 2198.94623655914, 
-          "average": 17.046094857047596
+          "sum": 9171.0, 
+          "average": 71.09302325581395
         }, 
         "06-09-2016": {
           "count": 129, 
-          "sum": 2615.3387096774195, 
-          "average": 20.27394348587147
+          "sum": 10641.0, 
+          "average": 82.48837209302326
         }, 
         "06-01-2016": {
           "count": 129, 
-          "sum": 2556.048387096774, 
-          "average": 19.814328582145535
+          "sum": 10446.0, 
+          "average": 80.97674418604652
         }, 
         "04-26-2016": {
           "count": 127, 
-          "sum": 2714.4086021505377, 
-          "average": 21.373296079925495
+          "sum": 8918.0, 
+          "average": 70.22047244094489
         }, 
         "06-03-2016": {
           "count": 129, 
-          "sum": 2372.3709677419356, 
-          "average": 18.39047261815454
+          "sum": 10553.0, 
+          "average": 81.8062015503876
         }, 
         "04-18-2016": {
           "count": 129, 
-          "sum": 2369.451612903226, 
-          "average": 18.36784196049012
+          "sum": 9044.0, 
+          "average": 70.10852713178295
         }, 
         "04-23-2016": {
           "count": 128, 
-          "sum": 2560.9247311827958, 
-          "average": 20.007224462365592
+          "sum": 9200.0, 
+          "average": 71.875
         }, 
         "05-27-2016": {
           "count": 128, 
-          "sum": 2754.741935483871, 
-          "average": 21.52142137096774
+          "sum": 10236.0, 
+          "average": 79.96875
         }, 
         "05-20-2016": {
           "count": 129, 
-          "sum": 2505.112903225807, 
-          "average": 19.419479869967493
+          "sum": 9431.0, 
+          "average": 73.10852713178295
         }, 
         "04-25-2016": {
           "count": 129, 
-          "sum": 2678.9139784946237, 
-          "average": 20.766775027090105
+          "sum": 9096.5, 
+          "average": 70.51550387596899
         }, 
         "04-20-2016": {
           "count": 129, 
-          "sum": 2145.4408602150543, 
-          "average": 16.631324497791116
+          "sum": 9067.0, 
+          "average": 70.28682170542636
         }, 
         "06-05-2016": {
           "count": 129, 
-          "sum": 2431.6935483870966, 
-          "average": 18.850337584396097
+          "sum": 10687.0, 
+          "average": 82.84496124031008
         }, 
         "05-07-2016": {
           "count": 129, 
-          "sum": 2678.516129032258, 
-          "average": 20.76369092273068
+          "sum": 9677.0, 
+          "average": 75.01550387596899
         }, 
         "04-12-2016": {
           "count": 129, 
-          "sum": 2780.483870967742, 
-          "average": 21.55413853463366
+          "sum": 8086.0, 
+          "average": 62.68217054263566
         }, 
         "04-13-2016": {
           "count": 129, 
-          "sum": 2505.978494623656, 
-          "average": 19.426189880803534
+          "sum": 8171.0, 
+          "average": 63.34108527131783
         }, 
         "04-22-2016": {
           "count": 129, 
-          "sum": 2635.4301075268813, 
-          "average": 20.42969075602234
+          "sum": 9358.0, 
+          "average": 72.54263565891473
         }, 
         "05-02-2016": {
           "count": 127, 
-          "sum": 2366.209677419355, 
-          "average": 18.631572263144523
+          "sum": 8441.0, 
+          "average": 66.46456692913385
         }, 
         "05-28-2016": {
           "count": 129, 
-          "sum": 2666.4032258064517, 
-          "average": 20.66979244811203
+          "sum": 10111.0, 
+          "average": 78.37984496124031
         }, 
         "05-26-2016": {
           "count": 129, 
-          "sum": 2783.0806451612902, 
-          "average": 21.574268567141786
+          "sum": 10316.0, 
+          "average": 79.96899224806202
         }, 
         "05-19-2016": {
           "count": 128, 
-          "sum": 2255.451612903226, 
-          "average": 17.620715725806452
+          "sum": 9153.0, 
+          "average": 71.5078125
         }, 
         "04-24-2016": {
           "count": 126, 
-          "sum": 2662.4193548387098, 
-          "average": 21.13031233998976
+          "sum": 9002.0, 
+          "average": 71.44444444444444
         }, 
         "05-13-2016": {
           "count": 129, 
-          "sum": 2561.483870967742, 
-          "average": 19.856464116029006
+          "sum": 9789.0, 
+          "average": 75.88372093023256
         }, 
         "05-01-2016": {
           "count": 127, 
-          "sum": 2645.548387096774, 
-          "average": 20.831089662179323
+          "sum": 8130.0, 
+          "average": 64.01574803149606
         }, 
         "04-14-2016": {
           "count": 128, 
-          "sum": 2399.4731182795704, 
-          "average": 18.74588373655914
+          "sum": 8421.0, 
+          "average": 65.7890625
         }, 
         "05-11-2016": {
           "count": 126, 
-          "sum": 2589.1612903225805, 
-          "average": 20.54889912954429
+          "sum": 9358.0, 
+          "average": 74.26984126984127
         }, 
         "05-03-2016": {
           "count": 129, 
-          "sum": 2199.3709677419356, 
-          "average": 17.04938734683671
+          "sum": 8866.0, 
+          "average": 68.72868217054264
         }, 
         "05-08-2016": {
           "count": 128, 
-          "sum": 2677.1774193548385, 
-          "average": 20.915448588709676
+          "sum": 9341.666666666666, 
+          "average": 72.98177083333333
         }, 
         "05-12-2016": {
           "count": 128, 
-          "sum": 2521.8225806451615, 
-          "average": 19.701738911290324
+          "sum": 9641.0, 
+          "average": 75.3203125
         }, 
         "05-25-2016": {
           "count": 129, 
-          "sum": 2583.4193548387098, 
-          "average": 20.026506626656666
+          "sum": 10251.0, 
+          "average": 79.46511627906976
         }, 
         "05-17-2016": {
           "count": 129, 
-          "sum": 2573.329032258064, 
-          "average": 19.948287071767943
+          "sum": 8753.0, 
+          "average": 67.85271317829458
         }, 
         "06-02-2016": {
           "count": 129, 
-          "sum": 2456.709677419355, 
-          "average": 19.044261065266316
+          "sum": 10429.0, 
+          "average": 80.84496124031008
         }, 
         "05-30-2016": {
           "count": 129, 
-          "sum": 2620.7258064516127, 
-          "average": 20.315703925981495
+          "sum": 10569.0, 
+          "average": 81.93023255813954
         }, 
         "06-07-2016": {
           "count": 127, 
-          "sum": 2647.016129032258, 
-          "average": 20.84264668529337
+          "sum": 10590.0, 
+          "average": 83.38582677165354
         }, 
         "05-21-2016": {
           "count": 129, 
-          "sum": 2418.7741935483873, 
-          "average": 18.750187546886725
+          "sum": 9405.0, 
+          "average": 72.90697674418605
         }, 
         "05-24-2016": {
           "count": 129, 
-          "sum": 2522.758064516129, 
-          "average": 19.556264066016507
+          "sum": 9971.0, 
+          "average": 77.29457364341086
         }, 
         "06-04-2016": {
           "count": 129, 
-          "sum": 2342.032258064516, 
-          "average": 18.155288822205552
+          "sum": 10757.0, 
+          "average": 83.3875968992248
         }, 
         "05-29-2016": {
           "count": 129, 
-          "sum": 2447.064516129032, 
-          "average": 18.969492373093274
+          "sum": 10404.0, 
+          "average": 80.65116279069767
         }, 
         "05-22-2016": {
           "count": 127, 
-          "sum": 2577.435483870968, 
-          "average": 20.29476758953518
+          "sum": 9589.0, 
+          "average": 75.50393700787401
         }, 
         "05-31-2016": {
           "count": 129, 
-          "sum": 2706.3870967741937, 
-          "average": 20.97974493623406
+          "sum": 10652.0, 
+          "average": 82.57364341085271
         }, 
         "06-06-2016": {
           "count": 127, 
-          "sum": 2663.3548387096776, 
-          "average": 20.971297942595886
+          "sum": 10534.0, 
+          "average": 82.94488188976378
         }, 
         "04-16-2016": {
           "count": 128, 
-          "sum": 2740.462365591398, 
-          "average": 21.409862231182796
+          "sum": 8702.0, 
+          "average": 67.984375
         }, 
         "04-28-2016": {
           "count": 129, 
-          "sum": 2781.564516129032, 
-          "average": 21.562515628907228
+          "sum": 8448.0, 
+          "average": 65.48837209302326
         }, 
         "05-18-2016": {
           "count": 128, 
-          "sum": 2338.790322580645, 
-          "average": 18.271799395161292
+          "sum": 8849.0, 
+          "average": 69.1328125
         }, 
         "04-10-2016": {
           "count": 105, 
-          "sum": 2480.494623655914, 
-          "average": 23.623758320532513
+          "sum": 6145.0, 
+          "average": 58.523809523809526
         }, 
         "04-15-2016": {
           "count": 128, 
-          "sum": 2574.967741935484, 
-          "average": 20.116935483870968
+          "sum": 8725.0, 
+          "average": 68.1640625
         }, 
         "05-10-2016": {
           "count": 129, 
-          "sum": 2765.5, 
-          "average": 21.43798449612403
+          "sum": 9188.0, 
+          "average": 71.2248062015504
         }, 
         "04-27-2016": {
           "count": 128, 
-          "sum": 2825.4032258064517, 
-          "average": 22.073462701612904
+          "sum": 8701.0, 
+          "average": 67.9765625
         }, 
         "04-30-2016": {
           "count": 129, 
-          "sum": 2515.887096774193, 
-          "average": 19.503000750187546
+          "sum": 8301.0, 
+          "average": 64.34883720930233
         }, 
         "04-17-2016": {
           "count": 127, 
-          "sum": 2518.956989247312, 
-          "average": 19.834307001947337
+          "sum": 8766.0, 
+          "average": 69.02362204724409
         }, 
         "05-15-2016": {
           "count": 129, 
-          "sum": 3008.4064516129033, 
-          "average": 23.320980245061264
+          "sum": 8743.0, 
+          "average": 67.7751937984496
         }, 
         "05-09-2016": {
           "count": 129, 
-          "sum": 2812.8387096774195, 
-          "average": 21.804951237809455
+          "sum": 9366.333333333334, 
+          "average": 72.60723514211887
         }, 
         "04-29-2016": {
           "count": 129, 
-          "sum": 2488.2258064516127, 
-          "average": 19.288572143035758
+          "sum": 8405.0, 
+          "average": 65.15503875968992
         }, 
         "04-11-2016": {
           "count": 128, 
-          "sum": 2886.9892473118284, 
-          "average": 22.554603494623656
+          "sum": 7947.0, 
+          "average": 62.0859375
         }, 
         "05-04-2016": {
           "count": 129, 
-          "sum": 2386.532258064516, 
-          "average": 18.50025006251563
+          "sum": 9256.0, 
+          "average": 71.75193798449612
         }, 
         "05-23-2016": {
           "count": 128, 
-          "sum": 2760.0967741935483, 
-          "average": 21.563256048387096
+          "sum": 9829.0, 
+          "average": 76.7890625
         }
       }, 
       "weather.[0].Date.Year": {
@@ -8834,316 +8834,316 @@ weather_bar = [
           "average": 53.734375
         }
       }, 
-      "weather.[0].Data.Temperature.Max Temp": {
+      "weather.[0].Data.Wind.High Wind": {
         "05-16-2016": {
           "count": 128, 
-          "sum": 8420.0, 
-          "average": 65.78125
+          "sum": 2633.867741935484, 
+          "average": 20.57709173387097
         }, 
         "04-21-2016": {
           "count": 129, 
-          "sum": 9289.0, 
-          "average": 72.0077519379845
+          "sum": 2360.935483870968, 
+          "average": 18.301825456364092
         }, 
         "05-06-2016": {
           "count": 129, 
-          "sum": 9353.0, 
-          "average": 72.50387596899225
+          "sum": 2439.8548387096776, 
+          "average": 18.913603400850214
         }, 
         "06-08-2016": {
           "count": 129, 
-          "sum": 10629.0, 
-          "average": 82.3953488372093
+          "sum": 2651.6774193548385, 
+          "average": 20.55563890972743
         }, 
         "05-14-2016": {
           "count": 129, 
-          "sum": 9463.0, 
-          "average": 73.35658914728683
+          "sum": 2799.9451612903226, 
+          "average": 21.705001250312577
         }, 
         "05-05-2016": {
           "count": 129, 
-          "sum": 9153.0, 
-          "average": 70.95348837209302
+          "sum": 2537.1935483870966, 
+          "average": 19.668167041760437
         }, 
         "04-19-2016": {
           "count": 129, 
-          "sum": 9171.0, 
-          "average": 71.09302325581395
+          "sum": 2198.94623655914, 
+          "average": 17.046094857047596
         }, 
         "06-09-2016": {
           "count": 129, 
-          "sum": 10641.0, 
-          "average": 82.48837209302326
+          "sum": 2615.3387096774195, 
+          "average": 20.27394348587147
         }, 
         "06-01-2016": {
           "count": 129, 
-          "sum": 10446.0, 
-          "average": 80.97674418604652
+          "sum": 2556.048387096774, 
+          "average": 19.814328582145535
         }, 
         "04-26-2016": {
           "count": 127, 
-          "sum": 8918.0, 
-          "average": 70.22047244094489
+          "sum": 2714.4086021505377, 
+          "average": 21.373296079925495
         }, 
         "06-03-2016": {
           "count": 129, 
-          "sum": 10553.0, 
-          "average": 81.8062015503876
+          "sum": 2372.3709677419356, 
+          "average": 18.39047261815454
         }, 
         "04-18-2016": {
           "count": 129, 
-          "sum": 9044.0, 
-          "average": 70.10852713178295
+          "sum": 2369.451612903226, 
+          "average": 18.36784196049012
         }, 
         "04-23-2016": {
           "count": 128, 
-          "sum": 9200.0, 
-          "average": 71.875
+          "sum": 2560.9247311827958, 
+          "average": 20.007224462365592
         }, 
         "05-27-2016": {
           "count": 128, 
-          "sum": 10236.0, 
-          "average": 79.96875
+          "sum": 2754.741935483871, 
+          "average": 21.52142137096774
         }, 
         "05-20-2016": {
           "count": 129, 
-          "sum": 9431.0, 
-          "average": 73.10852713178295
+          "sum": 2505.112903225807, 
+          "average": 19.419479869967493
         }, 
         "04-25-2016": {
           "count": 129, 
-          "sum": 9096.5, 
-          "average": 70.51550387596899
+          "sum": 2678.9139784946237, 
+          "average": 20.766775027090105
         }, 
         "04-20-2016": {
           "count": 129, 
-          "sum": 9067.0, 
-          "average": 70.28682170542636
+          "sum": 2145.4408602150543, 
+          "average": 16.631324497791116
         }, 
         "06-05-2016": {
           "count": 129, 
-          "sum": 10687.0, 
-          "average": 82.84496124031008
+          "sum": 2431.6935483870966, 
+          "average": 18.850337584396097
         }, 
         "05-07-2016": {
           "count": 129, 
-          "sum": 9677.0, 
-          "average": 75.01550387596899
+          "sum": 2678.516129032258, 
+          "average": 20.76369092273068
         }, 
         "04-12-2016": {
           "count": 129, 
-          "sum": 8086.0, 
-          "average": 62.68217054263566
+          "sum": 2780.483870967742, 
+          "average": 21.55413853463366
         }, 
         "04-13-2016": {
           "count": 129, 
-          "sum": 8171.0, 
-          "average": 63.34108527131783
+          "sum": 2505.978494623656, 
+          "average": 19.426189880803534
         }, 
         "04-22-2016": {
           "count": 129, 
-          "sum": 9358.0, 
-          "average": 72.54263565891473
+          "sum": 2635.4301075268813, 
+          "average": 20.42969075602234
         }, 
         "05-02-2016": {
           "count": 127, 
-          "sum": 8441.0, 
-          "average": 66.46456692913385
+          "sum": 2366.209677419355, 
+          "average": 18.631572263144523
         }, 
         "05-28-2016": {
           "count": 129, 
-          "sum": 10111.0, 
-          "average": 78.37984496124031
+          "sum": 2666.4032258064517, 
+          "average": 20.66979244811203
         }, 
         "05-26-2016": {
           "count": 129, 
-          "sum": 10316.0, 
-          "average": 79.96899224806202
+          "sum": 2783.0806451612902, 
+          "average": 21.574268567141786
         }, 
         "05-19-2016": {
           "count": 128, 
-          "sum": 9153.0, 
-          "average": 71.5078125
+          "sum": 2255.451612903226, 
+          "average": 17.620715725806452
         }, 
         "04-24-2016": {
           "count": 126, 
-          "sum": 9002.0, 
-          "average": 71.44444444444444
+          "sum": 2662.4193548387098, 
+          "average": 21.13031233998976
         }, 
         "05-13-2016": {
           "count": 129, 
-          "sum": 9789.0, 
-          "average": 75.88372093023256
+          "sum": 2561.483870967742, 
+          "average": 19.856464116029006
         }, 
         "05-01-2016": {
           "count": 127, 
-          "sum": 8130.0, 
-          "average": 64.01574803149606
+          "sum": 2645.548387096774, 
+          "average": 20.831089662179323
         }, 
         "04-14-2016": {
           "count": 128, 
-          "sum": 8421.0, 
-          "average": 65.7890625
+          "sum": 2399.4731182795704, 
+          "average": 18.74588373655914
         }, 
         "05-11-2016": {
           "count": 126, 
-          "sum": 9358.0, 
-          "average": 74.26984126984127
+          "sum": 2589.1612903225805, 
+          "average": 20.54889912954429
         }, 
         "05-03-2016": {
           "count": 129, 
-          "sum": 8866.0, 
-          "average": 68.72868217054264
+          "sum": 2199.3709677419356, 
+          "average": 17.04938734683671
         }, 
         "05-08-2016": {
           "count": 128, 
-          "sum": 9341.666666666666, 
-          "average": 72.98177083333333
+          "sum": 2677.1774193548385, 
+          "average": 20.915448588709676
         }, 
         "05-12-2016": {
           "count": 128, 
-          "sum": 9641.0, 
-          "average": 75.3203125
+          "sum": 2521.8225806451615, 
+          "average": 19.701738911290324
         }, 
         "05-25-2016": {
           "count": 129, 
-          "sum": 10251.0, 
-          "average": 79.46511627906976
+          "sum": 2583.4193548387098, 
+          "average": 20.026506626656666
         }, 
         "05-17-2016": {
           "count": 129, 
-          "sum": 8753.0, 
-          "average": 67.85271317829458
+          "sum": 2573.329032258064, 
+          "average": 19.948287071767943
         }, 
         "06-02-2016": {
           "count": 129, 
-          "sum": 10429.0, 
-          "average": 80.84496124031008
+          "sum": 2456.709677419355, 
+          "average": 19.044261065266316
         }, 
         "05-30-2016": {
           "count": 129, 
-          "sum": 10569.0, 
-          "average": 81.93023255813954
+          "sum": 2620.7258064516127, 
+          "average": 20.315703925981495
         }, 
         "06-07-2016": {
           "count": 127, 
-          "sum": 10590.0, 
-          "average": 83.38582677165354
+          "sum": 2647.016129032258, 
+          "average": 20.84264668529337
         }, 
         "05-21-2016": {
           "count": 129, 
-          "sum": 9405.0, 
-          "average": 72.90697674418605
+          "sum": 2418.7741935483873, 
+          "average": 18.750187546886725
         }, 
         "05-24-2016": {
           "count": 129, 
-          "sum": 9971.0, 
-          "average": 77.29457364341086
+          "sum": 2522.758064516129, 
+          "average": 19.556264066016507
         }, 
         "06-04-2016": {
           "count": 129, 
-          "sum": 10757.0, 
-          "average": 83.3875968992248
+          "sum": 2342.032258064516, 
+          "average": 18.155288822205552
         }, 
         "05-29-2016": {
           "count": 129, 
-          "sum": 10404.0, 
-          "average": 80.65116279069767
+          "sum": 2447.064516129032, 
+          "average": 18.969492373093274
         }, 
         "05-22-2016": {
           "count": 127, 
-          "sum": 9589.0, 
-          "average": 75.50393700787401
+          "sum": 2577.435483870968, 
+          "average": 20.29476758953518
         }, 
         "05-31-2016": {
           "count": 129, 
-          "sum": 10652.0, 
-          "average": 82.57364341085271
+          "sum": 2706.3870967741937, 
+          "average": 20.97974493623406
         }, 
         "06-06-2016": {
           "count": 127, 
-          "sum": 10534.0, 
-          "average": 82.94488188976378
+          "sum": 2663.3548387096776, 
+          "average": 20.971297942595886
         }, 
         "04-16-2016": {
           "count": 128, 
-          "sum": 8702.0, 
-          "average": 67.984375
+          "sum": 2740.462365591398, 
+          "average": 21.409862231182796
         }, 
         "04-28-2016": {
           "count": 129, 
-          "sum": 8448.0, 
-          "average": 65.48837209302326
+          "sum": 2781.564516129032, 
+          "average": 21.562515628907228
         }, 
         "05-18-2016": {
           "count": 128, 
-          "sum": 8849.0, 
-          "average": 69.1328125
+          "sum": 2338.790322580645, 
+          "average": 18.271799395161292
         }, 
         "04-10-2016": {
           "count": 105, 
-          "sum": 6145.0, 
-          "average": 58.523809523809526
+          "sum": 2480.494623655914, 
+          "average": 23.623758320532513
         }, 
         "04-15-2016": {
           "count": 128, 
-          "sum": 8725.0, 
-          "average": 68.1640625
+          "sum": 2574.967741935484, 
+          "average": 20.116935483870968
         }, 
         "05-10-2016": {
           "count": 129, 
-          "sum": 9188.0, 
-          "average": 71.2248062015504
+          "sum": 2765.5, 
+          "average": 21.43798449612403
         }, 
         "04-27-2016": {
           "count": 128, 
-          "sum": 8701.0, 
-          "average": 67.9765625
+          "sum": 2825.4032258064517, 
+          "average": 22.073462701612904
         }, 
         "04-30-2016": {
           "count": 129, 
-          "sum": 8301.0, 
-          "average": 64.34883720930233
+          "sum": 2515.887096774193, 
+          "average": 19.503000750187546
         }, 
         "04-17-2016": {
           "count": 127, 
-          "sum": 8766.0, 
-          "average": 69.02362204724409
+          "sum": 2518.956989247312, 
+          "average": 19.834307001947337
         }, 
         "05-15-2016": {
           "count": 129, 
-          "sum": 8743.0, 
-          "average": 67.7751937984496
+          "sum": 3008.4064516129033, 
+          "average": 23.320980245061264
         }, 
         "05-09-2016": {
           "count": 129, 
-          "sum": 9366.333333333334, 
-          "average": 72.60723514211887
+          "sum": 2812.8387096774195, 
+          "average": 21.804951237809455
         }, 
         "04-29-2016": {
           "count": 129, 
-          "sum": 8405.0, 
-          "average": 65.15503875968992
+          "sum": 2488.2258064516127, 
+          "average": 19.288572143035758
         }, 
         "04-11-2016": {
           "count": 128, 
-          "sum": 7947.0, 
-          "average": 62.0859375
+          "sum": 2886.9892473118284, 
+          "average": 22.554603494623656
         }, 
         "05-04-2016": {
           "count": 129, 
-          "sum": 9256.0, 
-          "average": 71.75193798449612
+          "sum": 2386.532258064516, 
+          "average": 18.50025006251563
         }, 
         "05-23-2016": {
           "count": 128, 
-          "sum": 9829.0, 
-          "average": 76.7890625
+          "sum": 2760.0967741935483, 
+          "average": 21.563256048387096
         }
       }
     }, 
     "name": "weather.[0].Date.Full", 
-    "pretty": "Date: Full", 
+    "pretty": "Date, Full", 
     "indexes": [
       "05-16-2016", 
       "04-21-2016", 

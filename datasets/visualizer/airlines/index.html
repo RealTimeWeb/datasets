@@ -118,6 +118,7 @@ function captureImage() {
     var source = (new XMLSerializer()).serializeToString(selector.node());
     // create a file blob of our SVG.
     var blob = new Blob([ doctype + source], { type: 'image/svg+xml' });
+    console.log(blob.size);
     var url = window.URL.createObjectURL(blob);
     // Put the svg into an image tag so that the Canvas element can read it in.
     var svg_object = selector;
@@ -722,15 +723,25 @@ ko.bindingHandlers.fadeVisible = {
         // Use them in tandem to get the x-axis values
         if (chart.id == 'line') {
             var indexes = mainModel.only_indexes(mainModel.selected.dataset().data);
-            xAxis.tickFormat(function(value, index) {
+            var all_ticks = [];
+            for (var i = 0; i < indexes[0].data.length; i = i+1) {
                 var a_tick = [];
+                var keep = true;
                 for (var j = 0; j < indexes.length; j = j+1) {
-                    var an_index = indexes[j];
+                    var an_index = indexes[j],
+                        value = an_index.data[i];
                     if (an_index.name != filter_index) {
-                        a_tick.push(indexes[j].data[value]);
+                        a_tick.push(value);
+                    } else if (value != filter_value) {
+                        keep = false;
                     }
                 }
-                return a_tick.join(", ");
+                if (keep) {
+                    all_ticks.push(a_tick.join(", "));
+                }
+            }
+            xAxis.tickFormat(function(value, index) {
+                return all_ticks[value];
             });
             xAxisOrdinal.tickFormat(d3.format("d"));
         } else if (stringContains(x_axis_label.toLowerCase(), "year")) {

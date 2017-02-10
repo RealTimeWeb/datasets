@@ -4,6 +4,7 @@ metadata:
     builder: 2
     author: Ryan Whitcomb
     datetime: 6/7/2016
+    outliers: True
     tags: [crime, burglary, larceny, motor, property, violent, assault, murder, rape, robbery]
     description:
         short: Records about the crime rates and totals for US states over time.

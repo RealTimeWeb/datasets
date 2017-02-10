@@ -9024,7 +9024,7 @@ construction_spending_bar = [
       }
     }, 
     "name": "construction_spending.[0].time.year", 
-    "pretty": "Time: Year", 
+    "pretty": "time, year", 
     "indexes": [
       "2016", 
       "2002", 
@@ -16313,7 +16313,7 @@ construction_spending_bar = [
       }
     }, 
     "name": "construction_spending.[0].time.month", 
-    "pretty": "Time: Month", 
+    "pretty": "time, month", 
     "indexes": [
       "11", 
       "10", 

@@ -174,7 +174,7 @@ construction_spending = [
       20770, 
       20918
     ], 
-    "pretty": "Annual Combined: Amusement And Recreation", 
+    "pretty": "annual, combined, amusement and recreation", 
     "type": "number"
   }, 
   {
@@ -352,7 +352,7 @@ construction_spending = [
       69415, 
       66427
     ], 
-    "pretty": "Annual Combined: Commercial", 
+    "pretty": "annual, combined, commercial", 
     "type": "number"
   }, 
   {
@@ -530,7 +530,7 @@ construction_spending = [
       22576, 
       21635
     ], 
-    "pretty": "Annual Combined: Communication", 
+    "pretty": "annual, combined, communication", 
     "type": "number"
   }, 
   {
@@ -708,7 +708,7 @@ construction_spending = [
       6874, 
       7559
     ], 
-    "pretty": "Annual Combined: Conservation And Development", 
+    "pretty": "annual, combined, conservation and development", 
     "type": "number"
   }, 
   {
@@ -886,7 +886,7 @@ construction_spending = [
       88196, 
       87195
     ], 
-    "pretty": "Annual Combined: Educational", 
+    "pretty": "annual, combined, educational", 
     "type": "number"
   }, 
   {
@@ -1064,7 +1064,7 @@ construction_spending = [
       39265, 
       39209
     ], 
-    "pretty": "Annual Combined: Health Care", 
+    "pretty": "annual, combined, health care", 
     "type": "number"
   }, 
   {
@@ -1242,7 +1242,7 @@ construction_spending = [
       96553, 
       110677
     ], 
-    "pretty": "Annual Combined: Highway And Street", 
+    "pretty": "annual, combined, highway and street", 
     "type": "number"
   }, 
   {
@@ -1420,7 +1420,7 @@ construction_spending = [
       22203, 
       23600
     ], 
-    "pretty": "Annual Combined: Lodging", 
+    "pretty": "annual, combined, lodging", 
     "type": "number"
   }, 
   {
@@ -1598,7 +1598,7 @@ construction_spending = [
       79065, 
       82358
     ], 
-    "pretty": "Annual Combined: Manufacturing", 
+    "pretty": "annual, combined, manufacturing", 
     "type": "number"
   }, 
   {
@@ -1776,7 +1776,7 @@ construction_spending = [
       684481, 
       701883
     ], 
-    "pretty": "Annual Combined: Nonresidential", 
+    "pretty": "annual, combined, nonresidential", 
     "type": "number"
   }, 
   {
@@ -1954,7 +1954,7 @@ construction_spending = [
       59816, 
       59909
     ], 
-    "pretty": "Annual Combined: Office", 
+    "pretty": "annual, combined, office", 
     "type": "number"
   }, 
   {
@@ -2132,7 +2132,7 @@ construction_spending = [
       86663, 
       89201
     ], 
-    "pretty": "Annual Combined: Power", 
+    "pretty": "annual, combined, power", 
     "type": "number"
   }, 
   {
@@ -2310,7 +2310,7 @@ construction_spending = [
       8399, 
       8276
     ], 
-    "pretty": "Annual Combined: Public Safety", 
+    "pretty": "annual, combined, public safety", 
     "type": "number"
   }, 
   {
@@ -2488,7 +2488,7 @@ construction_spending = [
       3082, 
       3211
     ], 
-    "pretty": "Annual Combined: Religious", 
+    "pretty": "annual, combined, religious", 
     "type": "number"
   }, 
   {
@@ -2666,7 +2666,7 @@ construction_spending = [
       439017, 
       438958
     ], 
-    "pretty": "Annual Combined: Residential", 
+    "pretty": "annual, combined, residential", 
     "type": "number"
   }, 
   {
@@ -2844,7 +2844,7 @@ construction_spending = [
       24598, 
       25583
     ], 
-    "pretty": "Annual Combined: Sewage And Waste Disposal", 
+    "pretty": "annual, combined, sewage and waste disposal", 
     "type": "number"
   }, 
   {
@@ -3022,7 +3022,7 @@ construction_spending = [
       1123497, 
       1140841
     ], 
-    "pretty": "Annual Combined: Total Construction", 
+    "pretty": "annual, combined, total construction", 
     "type": "number"
   }, 
   {
@@ -3200,7 +3200,7 @@ construction_spending = [
       44631, 
       43503
     ], 
-    "pretty": "Annual Combined: Transportation", 
+    "pretty": "annual, combined, transportation", 
     "type": "number"
   }, 
   {
@@ -3378,7 +3378,7 @@ construction_spending = [
       12374, 
       12624
     ], 
-    "pretty": "Annual Combined: Water Supply", 
+    "pretty": "annual, combined, water supply", 
     "type": "number"
   }, 
   {
@@ -3556,7 +3556,7 @@ construction_spending = [
       10343, 
       10425
     ], 
-    "pretty": "Annual Private: Amusement And Recreation", 
+    "pretty": "annual, private, amusement and recreation", 
     "type": "number"
   }, 
   {
@@ -3734,7 +3734,7 @@ construction_spending = [
       66619, 
       63450
     ], 
-    "pretty": "Annual Private: Commercial", 
+    "pretty": "annual, private, commercial", 
     "type": "number"
   }, 
   {
@@ -3912,7 +3912,7 @@ construction_spending = [
       22422, 
       21469
     ], 
-    "pretty": "Annual Private: Communication", 
+    "pretty": "annual, private, communication", 
     "type": "number"
   }, 
   {
@@ -4090,7 +4090,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Annual Private: Conservation And Development", 
+    "pretty": "annual, private, conservation and development", 
     "type": "number"
   }, 
   {
@@ -4268,7 +4268,7 @@ construction_spending = [
       18078, 
       18377
     ], 
-    "pretty": "Annual Private: Educational", 
+    "pretty": "annual, private, educational", 
     "type": "number"
   }, 
   {
@@ -4446,7 +4446,7 @@ construction_spending = [
       30296, 
       30685
     ], 
-    "pretty": "Annual Private: Health Care", 
+    "pretty": "annual, private, health care", 
     "type": "number"
   }, 
   {
@@ -4624,7 +4624,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Annual Private: Highway And Street", 
+    "pretty": "annual, private, highway and street", 
     "type": "number"
   }, 
   {
@@ -4802,7 +4802,7 @@ construction_spending = [
       21842, 
       23303
     ], 
-    "pretty": "Annual Private: Lodging", 
+    "pretty": "annual, private, lodging", 
     "type": "number"
   }, 
   {
@@ -4980,7 +4980,7 @@ construction_spending = [
       78410, 
       81697
     ], 
-    "pretty": "Annual Private: Manufacturing", 
+    "pretty": "annual, private, manufacturing", 
     "type": "number"
   }, 
   {
@@ -5158,7 +5158,7 @@ construction_spending = [
       394237, 
       398241
     ], 
-    "pretty": "Annual Private: Nonresidential", 
+    "pretty": "annual, private, nonresidential", 
     "type": "number"
   }, 
   {
@@ -5336,7 +5336,7 @@ construction_spending = [
       52013, 
       52435
     ], 
-    "pretty": "Annual Private: Office", 
+    "pretty": "annual, private, office", 
     "type": "number"
   }, 
   {
@@ -5514,7 +5514,7 @@ construction_spending = [
       77377, 
       79453
     ], 
-    "pretty": "Annual Private: Power", 
+    "pretty": "annual, private, power", 
     "type": "number"
   }, 
   {
@@ -5692,7 +5692,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Annual Private: Public Safety", 
+    "pretty": "annual, private, public safety", 
     "type": "number"
   }, 
   {
@@ -5870,7 +5870,7 @@ construction_spending = [
       3076, 
       3211
     ], 
-    "pretty": "Annual Private: Religious", 
+    "pretty": "annual, private, religious", 
     "type": "number"
   }, 
   {
@@ -6048,7 +6048,7 @@ construction_spending = [
       433108, 
       433164
     ], 
-    "pretty": "Annual Private: Residential", 
+    "pretty": "annual, private, residential", 
     "type": "number"
   }, 
   {
@@ -6226,7 +6226,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Annual Private: Sewage And Waste Disposal", 
+    "pretty": "annual, private, sewage and waste disposal", 
     "type": "number"
   }, 
   {
@@ -6404,7 +6404,7 @@ construction_spending = [
       827345, 
       831405
     ], 
-    "pretty": "Annual Private: Total Construction", 
+    "pretty": "annual, private, total construction", 
     "type": "number"
   }, 
   {
@@ -6582,7 +6582,7 @@ construction_spending = [
       12820, 
       12874
     ], 
-    "pretty": "Annual Private: Transportation", 
+    "pretty": "annual, private, transportation", 
     "type": "number"
   }, 
   {
@@ -6760,7 +6760,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Annual Private: Water Supply", 
+    "pretty": "annual, private, water supply", 
     "type": "number"
   }, 
   {
@@ -6938,7 +6938,7 @@ construction_spending = [
       10427, 
       10493
     ], 
-    "pretty": "Annual Public: Amusement And Recreation", 
+    "pretty": "annual, public, amusement and recreation", 
     "type": "number"
   }, 
   {
@@ -7116,7 +7116,7 @@ construction_spending = [
       2796, 
       2977
     ], 
-    "pretty": "Annual Public: Commercial", 
+    "pretty": "annual, public, commercial", 
     "type": "number"
   }, 
   {
@@ -7294,7 +7294,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Annual Public: Communication", 
+    "pretty": "annual, public, communication", 
     "type": "number"
   }, 
   {
@@ -7472,7 +7472,7 @@ construction_spending = [
       6784, 
       7483
     ], 
-    "pretty": "Annual Public: Conservation And Development", 
+    "pretty": "annual, public, conservation and development", 
     "type": "number"
   }, 
   {
@@ -7650,7 +7650,7 @@ construction_spending = [
       70118, 
       68819
     ], 
-    "pretty": "Annual Public: Educational", 
+    "pretty": "annual, public, educational", 
     "type": "number"
   }, 
   {
@@ -7828,7 +7828,7 @@ construction_spending = [
       8969, 
       8524
     ], 
-    "pretty": "Annual Public: Health Care", 
+    "pretty": "annual, public, health care", 
     "type": "number"
   }, 
   {
@@ -8006,7 +8006,7 @@ construction_spending = [
       96211, 
       110369
     ], 
-    "pretty": "Annual Public: Highway And Street", 
+    "pretty": "annual, public, highway and street", 
     "type": "number"
   }, 
   {
@@ -8184,7 +8184,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Annual Public: Lodging", 
+    "pretty": "annual, public, lodging", 
     "type": "number"
   }, 
   {
@@ -8362,7 +8362,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Annual Public: Manufacturing", 
+    "pretty": "annual, public, manufacturing", 
     "type": "number"
   }, 
   {
@@ -8540,7 +8540,7 @@ construction_spending = [
       290244, 
       303643
     ], 
-    "pretty": "Annual Public: Nonresidential", 
+    "pretty": "annual, public, nonresidential", 
     "type": "number"
   }, 
   {
@@ -8718,7 +8718,7 @@ construction_spending = [
       7803, 
       7474
     ], 
-    "pretty": "Annual Public: Office", 
+    "pretty": "annual, public, office", 
     "type": "number"
   }, 
   {
@@ -8896,7 +8896,7 @@ construction_spending = [
       9286, 
       9748
     ], 
-    "pretty": "Annual Public: Power", 
+    "pretty": "annual, public, power", 
     "type": "number"
   }, 
   {
@@ -9074,7 +9074,7 @@ construction_spending = [
       8203, 
       8225
     ], 
-    "pretty": "Annual Public: Public Safety", 
+    "pretty": "annual, public, public safety", 
     "type": "number"
   }, 
   {
@@ -9252,7 +9252,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Annual Public: Religious", 
+    "pretty": "annual, public, religious", 
     "type": "number"
   }, 
   {
@@ -9430,7 +9430,7 @@ construction_spending = [
       5909, 
       5794
     ], 
-    "pretty": "Annual Public: Residential", 
+    "pretty": "annual, public, residential", 
     "type": "number"
   }, 
   {
@@ -9608,7 +9608,7 @@ construction_spending = [
       24385, 
       25353
     ], 
-    "pretty": "Annual Public: Sewage And Waste Disposal", 
+    "pretty": "annual, public, sewage and waste disposal", 
     "type": "number"
   }, 
   {
@@ -9786,7 +9786,7 @@ construction_spending = [
       296153, 
       309437
     ], 
-    "pretty": "Annual Public: Total Construction", 
+    "pretty": "annual, public, total construction", 
     "type": "number"
   }, 
   {
@@ -9964,7 +9964,7 @@ construction_spending = [
       31812, 
       30629
     ], 
-    "pretty": "Annual Public: Transportation", 
+    "pretty": "annual, public, transportation", 
     "type": "number"
   }, 
   {
@@ -10142,7 +10142,7 @@ construction_spending = [
       12275, 
       12426
     ], 
-    "pretty": "Annual Public: Water Supply", 
+    "pretty": "annual, public, water supply", 
     "type": "number"
   }, 
   {
@@ -10320,7 +10320,7 @@ construction_spending = [
       1638, 
       1495
     ], 
-    "pretty": "Current Combined: Amusement And Recreation", 
+    "pretty": "current, combined, amusement and recreation", 
     "type": "number"
   }, 
   {
@@ -10498,7 +10498,7 @@ construction_spending = [
       5462, 
       4758
     ], 
-    "pretty": "Current Combined: Commercial", 
+    "pretty": "current, combined, commercial", 
     "type": "number"
   }, 
   {
@@ -10676,7 +10676,7 @@ construction_spending = [
       2208, 
       1409
     ], 
-    "pretty": "Current Combined: Communication", 
+    "pretty": "current, combined, communication", 
     "type": "number"
   }, 
   {
@@ -10854,7 +10854,7 @@ construction_spending = [
       580, 
       531
     ], 
-    "pretty": "Current Combined: Conservation And Development", 
+    "pretty": "current, combined, conservation and development", 
     "type": "number"
   }, 
   {
@@ -11032,7 +11032,7 @@ construction_spending = [
       6356, 
       5887
     ], 
-    "pretty": "Current Combined: Educational", 
+    "pretty": "current, combined, educational", 
     "type": "number"
   }, 
   {
@@ -11210,7 +11210,7 @@ construction_spending = [
       3248, 
       2968
     ], 
-    "pretty": "Current Combined: Health Care", 
+    "pretty": "current, combined, health care", 
     "type": "number"
   }, 
   {
@@ -11388,7 +11388,7 @@ construction_spending = [
       6041, 
       5023
     ], 
-    "pretty": "Current Combined: Highway And Street", 
+    "pretty": "current, combined, highway and street", 
     "type": "number"
   }, 
   {
@@ -11566,7 +11566,7 @@ construction_spending = [
       1883, 
       1814
     ], 
-    "pretty": "Current Combined: Lodging", 
+    "pretty": "current, combined, lodging", 
     "type": "number"
   }, 
   {
@@ -11744,7 +11744,7 @@ construction_spending = [
       7069, 
       6272
     ], 
-    "pretty": "Current Combined: Manufacturing", 
+    "pretty": "current, combined, manufacturing", 
     "type": "number"
   }, 
   {
@@ -11922,7 +11922,7 @@ construction_spending = [
       54150, 
       48064
     ], 
-    "pretty": "Current Combined: Nonresidential", 
+    "pretty": "current, combined, nonresidential", 
     "type": "number"
   }, 
   {
@@ -12100,7 +12100,7 @@ construction_spending = [
       4914, 
       4547
     ], 
-    "pretty": "Current Combined: Office", 
+    "pretty": "current, combined, office", 
     "type": "number"
   }, 
   {
@@ -12278,7 +12278,7 @@ construction_spending = [
       7340, 
       6923
     ], 
-    "pretty": "Current Combined: Power", 
+    "pretty": "current, combined, power", 
     "type": "number"
   }, 
   {
@@ -12456,7 +12456,7 @@ construction_spending = [
       691, 
       635
     ], 
-    "pretty": "Current Combined: Public Safety", 
+    "pretty": "current, combined, public safety", 
     "type": "number"
   }, 
   {
@@ -12634,7 +12634,7 @@ construction_spending = [
       255, 
       242
     ], 
-    "pretty": "Current Combined: Religious", 
+    "pretty": "current, combined, religious", 
     "type": "number"
   }, 
   {
@@ -12812,7 +12812,7 @@ construction_spending = [
       32378, 
       29521
     ], 
-    "pretty": "Current Combined: Residential", 
+    "pretty": "current, combined, residential", 
     "type": "number"
   }, 
   {
@@ -12990,7 +12990,7 @@ construction_spending = [
       1930, 
       1703
     ], 
-    "pretty": "Current Combined: Sewage And Waste Disposal", 
+    "pretty": "current, combined, sewage and waste disposal", 
     "type": "number"
   }, 
   {
@@ -13168,7 +13168,7 @@ construction_spending = [
       86527, 
       77586
     ], 
-    "pretty": "Current Combined: Total Construction", 
+    "pretty": "current, combined, total construction", 
     "type": "number"
   }, 
   {
@@ -13346,7 +13346,7 @@ construction_spending = [
       3592, 
       2958
     ], 
-    "pretty": "Current Combined: Transportation", 
+    "pretty": "current, combined, transportation", 
     "type": "number"
   }, 
   {
@@ -13524,7 +13524,7 @@ construction_spending = [
       945, 
       899
     ], 
-    "pretty": "Current Combined: Water Supply", 
+    "pretty": "current, combined, water supply", 
     "type": "number"
   }, 
   {
@@ -13702,7 +13702,7 @@ construction_spending = [
       822, 
       805
     ], 
-    "pretty": "Current Private: Amusement And Recreation", 
+    "pretty": "current, private, amusement and recreation", 
     "type": "number"
   }, 
   {
@@ -13880,7 +13880,7 @@ construction_spending = [
       5234, 
       4546
     ], 
-    "pretty": "Current Private: Commercial", 
+    "pretty": "current, private, commercial", 
     "type": "number"
   }, 
   {
@@ -14058,7 +14058,7 @@ construction_spending = [
       2195, 
       1395
     ], 
-    "pretty": "Current Private: Communication", 
+    "pretty": "current, private, communication", 
     "type": "number"
   }, 
   {
@@ -14236,7 +14236,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Current Private: Conservation And Development", 
+    "pretty": "current, private, conservation and development", 
     "type": "number"
   }, 
   {
@@ -14414,7 +14414,7 @@ construction_spending = [
       1383, 
       1321
     ], 
-    "pretty": "Current Private: Educational", 
+    "pretty": "current, private, educational", 
     "type": "number"
   }, 
   {
@@ -14592,7 +14592,7 @@ construction_spending = [
       2507, 
       2311
     ], 
-    "pretty": "Current Private: Health Care", 
+    "pretty": "current, private, health care", 
     "type": "number"
   }, 
   {
@@ -14770,7 +14770,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Current Private: Highway And Street", 
+    "pretty": "current, private, highway and street", 
     "type": "number"
   }, 
   {
@@ -14948,7 +14948,7 @@ construction_spending = [
       1853, 
       1789
     ], 
-    "pretty": "Current Private: Lodging", 
+    "pretty": "current, private, lodging", 
     "type": "number"
   }, 
   {
@@ -15126,7 +15126,7 @@ construction_spending = [
       7015, 
       6217
     ], 
-    "pretty": "Current Private: Manufacturing", 
+    "pretty": "current, private, manufacturing", 
     "type": "number"
   }, 
   {
@@ -15304,7 +15304,7 @@ construction_spending = [
       33312, 
       29791
     ], 
-    "pretty": "Current Private: Nonresidential", 
+    "pretty": "current, private, nonresidential", 
     "type": "number"
   }, 
   {
@@ -15482,7 +15482,7 @@ construction_spending = [
       4273, 
       3996
     ], 
-    "pretty": "Current Private: Office", 
+    "pretty": "current, private, office", 
     "type": "number"
   }, 
   {
@@ -15660,7 +15660,7 @@ construction_spending = [
       6612, 
       6253
     ], 
-    "pretty": "Current Private: Power", 
+    "pretty": "current, private, power", 
     "type": "number"
   }, 
   {
@@ -15838,7 +15838,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Current Private: Public Safety", 
+    "pretty": "current, private, public safety", 
     "type": "number"
   }, 
   {
@@ -16016,7 +16016,7 @@ construction_spending = [
       254, 
       242
     ], 
-    "pretty": "Current Private: Religious", 
+    "pretty": "current, private, religious", 
     "type": "number"
   }, 
   {
@@ -16194,7 +16194,7 @@ construction_spending = [
       31911, 
       29125
     ], 
-    "pretty": "Current Private: Residential", 
+    "pretty": "current, private, residential", 
     "type": "number"
   }, 
   {
@@ -16372,7 +16372,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Current Private: Sewage And Waste Disposal", 
+    "pretty": "current, private, sewage and waste disposal", 
     "type": "number"
   }, 
   {
@@ -16550,7 +16550,7 @@ construction_spending = [
       65223, 
       58916
     ], 
-    "pretty": "Current Private: Total Construction", 
+    "pretty": "current, private, total construction", 
     "type": "number"
   }, 
   {
@@ -16728,7 +16728,7 @@ construction_spending = [
       1083, 
       858
     ], 
-    "pretty": "Current Private: Transportation", 
+    "pretty": "current, private, transportation", 
     "type": "number"
   }, 
   {
@@ -16906,7 +16906,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Current Private: Water Supply", 
+    "pretty": "current, private, water supply", 
     "type": "number"
   }, 
   {
@@ -17084,7 +17084,7 @@ construction_spending = [
       816, 
       691
     ], 
-    "pretty": "Current Public: Amusement And Recreation", 
+    "pretty": "current, public, amusement and recreation", 
     "type": "number"
   }, 
   {
@@ -17262,7 +17262,7 @@ construction_spending = [
       227, 
       212
     ], 
-    "pretty": "Current Public: Commercial", 
+    "pretty": "current, public, commercial", 
     "type": "number"
   }, 
   {
@@ -17440,7 +17440,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Current Public: Communication", 
+    "pretty": "current, public, communication", 
     "type": "number"
   }, 
   {
@@ -17618,7 +17618,7 @@ construction_spending = [
       572, 
       525
     ], 
-    "pretty": "Current Public: Conservation And Development", 
+    "pretty": "current, public, conservation and development", 
     "type": "number"
   }, 
   {
@@ -17796,7 +17796,7 @@ construction_spending = [
       4973, 
       4567
     ], 
-    "pretty": "Current Public: Educational", 
+    "pretty": "current, public, educational", 
     "type": "number"
   }, 
   {
@@ -17974,7 +17974,7 @@ construction_spending = [
       741, 
       656
     ], 
-    "pretty": "Current Public: Health Care", 
+    "pretty": "current, public, health care", 
     "type": "number"
   }, 
   {
@@ -18152,7 +18152,7 @@ construction_spending = [
       6008, 
       5005
     ], 
-    "pretty": "Current Public: Highway And Street", 
+    "pretty": "current, public, highway and street", 
     "type": "number"
   }, 
   {
@@ -18330,7 +18330,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Current Public: Lodging", 
+    "pretty": "current, public, lodging", 
     "type": "number"
   }, 
   {
@@ -18508,7 +18508,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Current Public: Manufacturing", 
+    "pretty": "current, public, manufacturing", 
     "type": "number"
   }, 
   {
@@ -18686,7 +18686,7 @@ construction_spending = [
       20838, 
       18273
     ], 
-    "pretty": "Current Public: Nonresidential", 
+    "pretty": "current, public, nonresidential", 
     "type": "number"
   }, 
   {
@@ -18864,7 +18864,7 @@ construction_spending = [
       641, 
       551
     ], 
-    "pretty": "Current Public: Office", 
+    "pretty": "current, public, office", 
     "type": "number"
   }, 
   {
@@ -19042,7 +19042,7 @@ construction_spending = [
       728, 
       670
     ], 
-    "pretty": "Current Public: Power", 
+    "pretty": "current, public, power", 
     "type": "number"
   }, 
   {
@@ -19220,7 +19220,7 @@ construction_spending = [
       677, 
       632
     ], 
-    "pretty": "Current Public: Public Safety", 
+    "pretty": "current, public, public safety", 
     "type": "number"
   }, 
   {
@@ -19398,7 +19398,7 @@ construction_spending = [
       0, 
       0
     ], 
-    "pretty": "Current Public: Religious", 
+    "pretty": "current, public, religious", 
     "type": "number"
   }, 
   {
@@ -19576,7 +19576,7 @@ construction_spending = [
       467, 
       396
     ], 
-    "pretty": "Current Public: Residential", 
+    "pretty": "current, public, residential", 
     "type": "number"
   }, 
   {
@@ -19754,7 +19754,7 @@ construction_spending = [
       1913, 
       1688
     ], 
-    "pretty": "Current Public: Sewage And Waste Disposal", 
+    "pretty": "current, public, sewage and waste disposal", 
     "type": "number"
   }, 
   {
@@ -19932,7 +19932,7 @@ construction_spending = [
       21305, 
       18669
     ], 
-    "pretty": "Current Public: Total Construction", 
+    "pretty": "current, public, total construction", 
     "type": "number"
   }, 
   {
@@ -20110,7 +20110,7 @@ construction_spending = [
       2509, 
       2099
     ], 
-    "pretty": "Current Public: Transportation", 
+    "pretty": "current, public, transportation", 
     "type": "number"
   }, 
   {
@@ -20288,7 +20288,7 @@ construction_spending = [
       937, 
       885
     ], 
-    "pretty": "Current Public: Water Supply", 
+    "pretty": "current, public, water supply", 
     "type": "number"
   }, 
   {
@@ -20466,7 +20466,7 @@ construction_spending = [
       168, 
       169
     ], 
-    "pretty": "Time: Index", 
+    "pretty": "time, index", 
     "type": "number"
   }, 
   {
@@ -20644,7 +20644,7 @@ construction_spending = [
       12, 
       1
     ], 
-    "pretty": "Time: Month", 
+    "pretty": "time, month", 
     "type": "number"
   }, 
   {
@@ -20822,7 +20822,7 @@ construction_spending = [
       "Dec", 
       "Jan"
     ], 
-    "pretty": "Time: Month Name", 
+    "pretty": "time, month name", 
     "type": "text"
   }, 
   {
@@ -21000,7 +21000,7 @@ construction_spending = [
       "Dec2015", 
       "Jan2016"
     ], 
-    "pretty": "Time: Period", 
+    "pretty": "time, period", 
     "type": "text"
   }, 
   {
@@ -21178,7 +21178,7 @@ construction_spending = [
       2015, 
       2016
     ], 
-    "pretty": "Time: Year", 
+    "pretty": "time, year", 
     "type": "number"
   }
 ]

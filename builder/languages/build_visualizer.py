@@ -157,10 +157,27 @@ def lod_to_dol(LD):
             else:
                 dictionaires[key] = [value]
     return [{'name': k, 'data': v} for k,v in dictionaires.items()]
+            
+def first_items(a_list_of_tuples):
+    return [item[0] for item in a_list_of_tuples]
+
+def shortest_unique_strings(los):
+    splits = [l.split('.')[2:] for l in los]
+    lengths = [ (', '.join(l[-2:]), l[:-2]) for l in splits]
+    while len(first_items(lengths)) != len(set(first_items(lengths))):
+        for this_index, (this, this_rest) in enumerate(lengths):
+            for other_index, (other, other_rest) in enumerate(lengths):
+                if this == other and this_index != other_index:
+                    if len(this_rest) >= len(other_rest):
+                        lengths[this_index] = ( this_rest[-1] + ', ' + this , this_rest[:-1] )
+                    if len(this_rest) <= len(other_rest):
+                        lengths[other_index] = ( other_rest[-1] + ', ' + other , other_rest[:-1] )
+    return first_items(lengths)
 
 def sample_down(dol):
     for data in dol:
         data['data'] = random.sample(data['data'], min(len(data['data']), 1000))
+
         
 def remove_outliers(lodol, actually_keep=True):
     bad_indexes = set()
@@ -202,22 +219,26 @@ def remove_outliers(lodol, actually_keep=True):
         bad_keys = set()
     print("Trimmed indexes:", len(bad_indexes), "/", total_indexes)    
     #print("Contributing keys:", ', '.join(bad_keys))
+    key_names = [row['name'] for row in lodol]
+    short_key_names = shortest_unique_strings(key_names)
+    key_name_map = dict(zip(key_names, short_key_names))
     for data in lodol:
         data['data'] = [v for i, v in enumerate(data['data']) if i not in bad_indexes]
-        inter = data['name'].split('.', 2)[2]
-        if '.' in inter:
-            category, name = inter.rsplit('.', 1)
-        else:
-            category, name = inter, inter
-        category = category.replace('.', ' ')
-        data['pretty'] = category.title() + ": "+name.title()
+        #inter = data['name'].split('.', 2)[2]
+        #if '.' in inter:
+        #    category, name = inter.rsplit('.', 1)
+        #else:
+        #    category, name = inter, inter
+        #category = category.replace('.', ' ')
+        #data['pretty'] = category.title() + ": "+name.title()
+        data['pretty'] = key_name_map[data['name']] 
         print(data['pretty'])
         if isinstance(data['data'][0], (float, int)):
             data['type'] = 'number'
         else:
             data['type'] = 'text'
     lodol.sort(key= lambda e: e['pretty'])
-
+    return key_name_map
 
 def build_locals(model, js_path):
     locals = model["locals"]
@@ -238,7 +259,7 @@ def build_locals(model, js_path):
                 data = [JsonLeafNodes(name+'.[0]', item).result for item in data_list]
                 data = lod_to_dol(data)
                 bar_data = []
-                remove_outliers(data, actually_keep=model['metadata']['outliers'])
+                key_name_map = remove_outliers(data, actually_keep=model['metadata']['outliers'])
                 for row in data:
                     if row['name'] in model['structures_comments']:
                         row['comment'] = model['structures_comments'][row['name']]
@@ -275,12 +296,12 @@ def build_locals(model, js_path):
                                 'sum': sum(values),                                
                                 'average': statistics.mean(values)
                             }
-                    inter = index_path.split('.', 2)[2]
-                    if '.' in inter:
-                        category, name = inter.rsplit('.', 1)
-                    else:
-                        category, name = inter, inter
-                    category = category.replace('.', ' ')
+                    #inter = index_path.split('.', 2)[2]
+                    #if '.' in inter:
+                    #    category, name = inter.rsplit('.', 1)
+                    #else:
+                    #    category, name = inter, inter
+                    #category = category.replace('.', ' ')
                     
                     bar_data.append({
                         'data': aggregated_values,
@@ -288,7 +309,8 @@ def build_locals(model, js_path):
                         'indexes': [k.replace(',', '') for k in indexed_values.keys()],
                         'best_indexes': [k.replace(',', '') for k, v in sorted([(k, v['count']) 
                                             for k, v in aggregated_values.values()[0].items()], key=lambda i: -i[1])[:10]],
-                        'pretty': category.title() + ": "+name.title()
+                        #'pretty': category.title() + ": "+name.title()
+                        'pretty': key_name_map[index_path]
                     })
                 #sample_down(data)
                 json.dump(data, output_file, indent=2)

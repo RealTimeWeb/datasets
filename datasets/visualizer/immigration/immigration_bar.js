@@ -273,56 +273,56 @@ immigration_bar = [
           "average": 4013.4280155642023
         }
       }, 
-      "immigration.[0].Data.Nonimmigrant Admissions.Birth": {
+      "immigration.[0].Data.Naturalizations (Birth)": {
         "2006": {
           "count": 257, 
-          "sum": 33667264, 
-          "average": 131001.02723735408
+          "sum": 701276, 
+          "average": 2728.7003891050585
         }, 
         "2007": {
           "count": 257, 
-          "sum": 37149587, 
-          "average": 144550.92217898832
+          "sum": 659431, 
+          "average": 2565.8793774319065
         }, 
         "2005": {
           "count": 257, 
-          "sum": 32003371, 
-          "average": 124526.73540856031
+          "sum": 603233, 
+          "average": 2347.2101167315177
         }, 
         "2014": {
           "count": 257, 
-          "sum": 74930544, 
-          "average": 291558.53696498054
+          "sum": 651446, 
+          "average": 2534.8093385214006
         }, 
         "2008": {
           "count": 257, 
-          "sum": 39381827, 
-          "average": 153236.68093385213
+          "sum": 1045047, 
+          "average": 4066.3307392996107
         }, 
         "2009": {
           "count": 257, 
-          "sum": 36231490, 
-          "average": 140978.56031128403
+          "sum": 742406, 
+          "average": 2888.739299610895
         }, 
         "2011": {
           "count": 257, 
-          "sum": 53082222, 
-          "average": 206545.61089494164
+          "sum": 692448, 
+          "average": 2694.350194552529
         }, 
         "2010": {
           "count": 257, 
-          "sum": 46471505, 
-          "average": 180822.9766536965
+          "sum": 618417, 
+          "average": 2406.291828793774
         }, 
         "2013": {
           "count": 257, 
-          "sum": 61052196, 
-          "average": 237557.18287937742
+          "sum": 777834, 
+          "average": 3026.591439688716
         }, 
         "2012": {
           "count": 257, 
-          "sum": 53887222, 
-          "average": 209677.90661478598
+          "sum": 755283, 
+          "average": 2938.8443579766536
         }
       }, 
       "immigration.[0].Data.Refugees.Affirmative": {
@@ -533,56 +533,56 @@ immigration_bar = [
           "average": 2012.0
         }
       }, 
-      "immigration.[0].Data.Naturalizations (Birth)": {
+      "immigration.[0].Data.Nonimmigrant Admissions.Birth": {
         "2006": {
           "count": 257, 
-          "sum": 701276, 
-          "average": 2728.7003891050585
+          "sum": 33667264, 
+          "average": 131001.02723735408
         }, 
         "2007": {
           "count": 257, 
-          "sum": 659431, 
-          "average": 2565.8793774319065
+          "sum": 37149587, 
+          "average": 144550.92217898832
         }, 
         "2005": {
           "count": 257, 
-          "sum": 603233, 
-          "average": 2347.2101167315177
+          "sum": 32003371, 
+          "average": 124526.73540856031
         }, 
         "2014": {
           "count": 257, 
-          "sum": 651446, 
-          "average": 2534.8093385214006
+          "sum": 74930544, 
+          "average": 291558.53696498054
         }, 
         "2008": {
           "count": 257, 
-          "sum": 1045047, 
-          "average": 4066.3307392996107
+          "sum": 39381827, 
+          "average": 153236.68093385213
         }, 
         "2009": {
           "count": 257, 
-          "sum": 742406, 
-          "average": 2888.739299610895
+          "sum": 36231490, 
+          "average": 140978.56031128403
         }, 
         "2011": {
           "count": 257, 
-          "sum": 692448, 
-          "average": 2694.350194552529
+          "sum": 53082222, 
+          "average": 206545.61089494164
         }, 
         "2010": {
           "count": 257, 
-          "sum": 618417, 
-          "average": 2406.291828793774
+          "sum": 46471505, 
+          "average": 180822.9766536965
         }, 
         "2013": {
           "count": 257, 
-          "sum": 777834, 
-          "average": 3026.591439688716
+          "sum": 61052196, 
+          "average": 237557.18287937742
         }, 
         "2012": {
           "count": 257, 
-          "sum": 755283, 
-          "average": 2938.8443579766536
+          "sum": 53887222, 
+          "average": 209677.90661478598
         }
       }, 
       "immigration.[0].Data.Refugees.Defensive Asylum": {
@@ -691,7 +691,7 @@ immigration_bar = [
       }
     }, 
     "name": "immigration.[0].Year", 
-    "pretty": "Year: Year", 
+    "pretty": "Year", 
     "indexes": [
       "2006", 
       "2007", 
@@ -7154,21 +7154,21 @@ immigration_bar = [
           "average": 1680.2
         }
       }, 
-      "immigration.[0].Data.Nonimmigrant Admissions.Birth": {
+      "immigration.[0].Data.Naturalizations (Birth)": {
         "Canada": {
           "count": 10, 
-          "sum": 23796482, 
-          "average": 2379648.2
+          "sum": 92044, 
+          "average": 9204.4
         }, 
         "East Timor": {
           "count": 10, 
-          "sum": 298, 
-          "average": 29.8
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Sao Tome and Principe": {
           "count": 10, 
-          "sum": 726, 
-          "average": 72.6
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Guernsey": {
           "count": 10, 
@@ -7177,8 +7177,8 @@ immigration_bar = [
         }, 
         "Turkmenistan": {
           "count": 10, 
-          "sum": 10037, 
-          "average": 1003.7
+          "sum": 1072, 
+          "average": 107.2
         }, 
         "Other South America": {
           "count": 10, 
@@ -7187,73 +7187,73 @@ immigration_bar = [
         }, 
         "Serbia and Montenegro": {
           "count": 10, 
-          "sum": 35727, 
-          "average": 3572.7
+          "sum": 30991, 
+          "average": 3099.1
         }, 
         "Unknown": {
           "count": 10, 
-          "sum": 2467001, 
-          "average": 246700.1
+          "sum": 6237, 
+          "average": 623.7
         }, 
         "Lithuania": {
           "count": 10, 
-          "sum": 208567, 
-          "average": 20856.7
+          "sum": 8856, 
+          "average": 885.6
         }, 
         "Cambodia": {
           "count": 10, 
-          "sum": 40707, 
-          "average": 4070.7
+          "sum": 45884, 
+          "average": 4588.4
         }, 
         "Ethiopia": {
           "count": 10, 
-          "sum": 128300, 
-          "average": 12830.0
+          "sum": 72591, 
+          "average": 7259.1
         }, 
         "Aruba": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 375, 
+          "average": 37.5
         }, 
         "Swaziland": {
           "count": 10, 
-          "sum": 6452, 
-          "average": 645.2
+          "sum": 103, 
+          "average": 10.3
         }, 
         "Belize": {
           "count": 10, 
-          "sum": 255112, 
-          "average": 25511.2
+          "sum": 8420, 
+          "average": 842.0
         }, 
         "Argentina": {
           "count": 10, 
-          "sum": 4858462, 
-          "average": 485846.2
+          "sum": 33121, 
+          "average": 3312.1
         }, 
         "Bolivia": {
           "count": 10, 
-          "sum": 423433, 
-          "average": 42343.3
+          "sum": 16991, 
+          "average": 1699.1
         }, 
         "Cameroon": {
           "count": 10, 
-          "sum": 94542, 
-          "average": 9454.2
+          "sum": 14919, 
+          "average": 1491.9
         }, 
         "Burkina Faso": {
           "count": 10, 
-          "sum": 31911, 
-          "average": 3191.1
+          "sum": 1158, 
+          "average": 115.8
         }, 
         "Ghana": {
           "count": 10, 
-          "sum": 251009, 
-          "average": 25100.9
+          "sum": 45336, 
+          "average": 4533.6
         }, 
         "Saudi Arabia": {
           "count": 10, 
-          "sum": 1146383, 
-          "average": 114638.3
+          "sum": 6849, 
+          "average": 684.9
         }, 
         "Saint Helena": {
           "count": 10, 
@@ -7262,28 +7262,28 @@ immigration_bar = [
         }, 
         "Micronesia Federated States": {
           "count": 10, 
-          "sum": 44567, 
-          "average": 4456.7
+          "sum": 680, 
+          "average": 68.0
         }, 
         "Slovenia": {
           "count": 10, 
-          "sum": 220558, 
-          "average": 22055.8
+          "sum": 618, 
+          "average": 61.8
         }, 
         "Guatemala": {
           "count": 10, 
-          "sum": 2151701, 
-          "average": 215170.1
+          "sum": 86224, 
+          "average": 8622.4
         }, 
         "Guinea": {
           "count": 10, 
-          "sum": 36427, 
-          "average": 3642.7
+          "sum": 4697, 
+          "average": 469.7
         }, 
         "Jordan": {
           "count": 10, 
-          "sum": 312935, 
-          "average": 31293.5
+          "sum": 25206, 
+          "average": 2520.6
         }, 
         "Saint Barthelemy": {
           "count": 10, 
@@ -7297,38 +7297,38 @@ immigration_bar = [
         }, 
         "Spain": {
           "count": 10, 
-          "sum": 7877138, 
-          "average": 787713.8
+          "sum": 13577, 
+          "average": 1357.7
         }, 
         "Liberia": {
           "count": 10, 
-          "sum": 25817, 
-          "average": 2581.7
+          "sum": 29225, 
+          "average": 2922.5
         }, 
         "Netherlands": {
           "count": 10, 
-          "sum": 7524991, 
-          "average": 752499.1
+          "sum": 486, 
+          "average": 48.6
         }, 
         "Paraguay": {
           "count": 10, 
-          "sum": 188959, 
-          "average": 18895.9
+          "sum": 2843, 
+          "average": 284.3
         }, 
         "Jamaica": {
           "count": 10, 
-          "sum": 2502761, 
-          "average": 250276.1
+          "sum": 153544, 
+          "average": 15354.4
         }, 
         "Oman": {
           "count": 10, 
-          "sum": 44014, 
-          "average": 4401.4
+          "sum": 314, 
+          "average": 31.4
         }, 
         "Tanzania": {
           "count": 10, 
-          "sum": 68596, 
-          "average": 6859.6
+          "sum": 4937, 
+          "average": 493.7
         }, 
         "Bonaire": {
           "count": 10, 
@@ -7342,8 +7342,8 @@ immigration_bar = [
         }, 
         "Gabon": {
           "count": 10, 
-          "sum": 22882, 
-          "average": 2288.2
+          "sum": 429, 
+          "average": 42.9
         }, 
         "Niue": {
           "count": 10, 
@@ -7352,8 +7352,8 @@ immigration_bar = [
         }, 
         "Monaco": {
           "count": 10, 
-          "sum": 11078, 
-          "average": 1107.8
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Wallis and Futuna": {
           "count": 10, 
@@ -7362,13 +7362,13 @@ immigration_bar = [
         }, 
         "New Zealand": {
           "count": 10, 
-          "sum": 2522250, 
-          "average": 252225.0
+          "sum": 5015, 
+          "average": 501.5
         }, 
         "Yemen": {
           "count": 10, 
-          "sum": 26513, 
-          "average": 2651.3
+          "sum": 11333, 
+          "average": 1133.3
         }, 
         "Jersey": {
           "count": 10, 
@@ -7377,33 +7377,33 @@ immigration_bar = [
         }, 
         "Kyrgyzstan": {
           "count": 10, 
-          "sum": 31225, 
-          "average": 3122.5
+          "sum": 3433, 
+          "average": 343.3
         }, 
         "Pakistan": {
           "count": 10, 
-          "sum": 655331, 
-          "average": 65533.1
+          "sum": 111162, 
+          "average": 11116.2
         }, 
         "Albania": {
           "count": 10, 
-          "sum": 85132, 
-          "average": 8513.2
+          "sum": 36674, 
+          "average": 3667.4
         }, 
         "Samoa": {
           "count": 10, 
-          "sum": 21168, 
-          "average": 2116.8
+          "sum": 1809, 
+          "average": 180.9
         }, 
         "Estonia": {
           "count": 10, 
-          "sum": 161259, 
-          "average": 16125.9
+          "sum": 1854, 
+          "average": 185.4
         }, 
         "Macau": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 1340, 
+          "average": 134.0
         }, 
         "Norfolk Island": {
           "count": 10, 
@@ -7412,8 +7412,8 @@ immigration_bar = [
         }, 
         "United Arab Emirates": {
           "count": 10, 
-          "sum": 175583, 
-          "average": 17558.3
+          "sum": 3632, 
+          "average": 363.2
         }, 
         "Guam": {
           "count": 10, 
@@ -7422,18 +7422,18 @@ immigration_bar = [
         }, 
         "Kosovo": {
           "count": 10, 
-          "sum": 5195, 
-          "average": 519.5
+          "sum": 2927, 
+          "average": 292.7
         }, 
         "India": {
           "count": 10, 
-          "sum": 11392922, 
-          "average": 1139292.2
+          "sum": 487041, 
+          "average": 48704.1
         }, 
         "Azerbaijan": {
           "count": 10, 
-          "sum": 51272, 
-          "average": 5127.2
+          "sum": 9061, 
+          "average": 906.1
         }, 
         "Other America": {
           "count": 10, 
@@ -7442,48 +7442,48 @@ immigration_bar = [
         }, 
         "Lesotho": {
           "count": 10, 
-          "sum": 4872, 
-          "average": 487.2
+          "sum": 70, 
+          "average": 7.0
         }, 
         "Congo (Brazzaville)": {
           "count": 10, 
-          "sum": 30374, 
-          "average": 3037.4
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Saint Vincent and the Grenadines": {
           "count": 10, 
-          "sum": 136549, 
-          "average": 13654.9
+          "sum": 4982, 
+          "average": 498.2
         }, 
         "Kenya": {
           "count": 10, 
-          "sum": 215883, 
-          "average": 21588.3
+          "sum": 27930, 
+          "average": 2793.0
         }, 
         "Belarus": {
           "count": 10, 
-          "sum": 119021, 
-          "average": 11902.1
+          "sum": 16536, 
+          "average": 1653.6
         }, 
         "Tajikistan": {
           "count": 10, 
-          "sum": 17137, 
-          "average": 1713.7
+          "sum": 1485, 
+          "average": 148.5
         }, 
         "Turkey": {
           "count": 10, 
-          "sum": 1552112, 
-          "average": 155211.2
+          "sum": 28929, 
+          "average": 2892.9
         }, 
         "Afghanistan": {
           "count": 10, 
-          "sum": 26486, 
-          "average": 2648.6
+          "sum": 20646, 
+          "average": 2064.6
         }, 
         "Fiji": {
           "count": 10, 
-          "sum": 114581, 
-          "average": 11458.1
+          "sum": 11455, 
+          "average": 1145.5
         }, 
         "Northern Mariana Islands": {
           "count": 10, 
@@ -7492,78 +7492,78 @@ immigration_bar = [
         }, 
         "Mauritania": {
           "count": 10, 
-          "sum": 12213, 
-          "average": 1221.3
+          "sum": 2608, 
+          "average": 260.8
         }, 
         "Solomon Islands": {
-          "count": 10, 
-          "sum": 3545, 
-          "average": 354.5
-        }, 
-        "Saint Lucia": {
-          "count": 10, 
-          "sum": 181270, 
-          "average": 18127.0
-        }, 
-        "Soviet Union (former)": {
           "count": 10, 
           "sum": -10, 
           "average": -1.0
         }, 
+        "Saint Lucia": {
+          "count": 10, 
+          "sum": 6375, 
+          "average": 637.5
+        }, 
+        "Soviet Union (former)": {
+          "count": 10, 
+          "sum": 31630, 
+          "average": 3163.0
+        }, 
         "Cyprus": {
           "count": 10, 
-          "sum": 98892, 
-          "average": 9889.2
+          "sum": 1252, 
+          "average": 125.2
         }, 
         "Mongolia": {
           "count": 10, 
-          "sum": 91196, 
-          "average": 9119.6
+          "sum": 1787, 
+          "average": 178.7
         }, 
         "France": {
           "count": 10, 
-          "sum": 16841711, 
-          "average": 1684171.1
+          "sum": 24168, 
+          "average": 2416.8
         }, 
         "Rwanda": {
           "count": 10, 
-          "sum": 31503, 
-          "average": 3150.3
+          "sum": 2158, 
+          "average": 215.8
         }, 
         "Slovakia": {
           "count": 10, 
-          "sum": 381494, 
-          "average": 38149.4
+          "sum": 4244, 
+          "average": 424.4
         }, 
         "Somalia": {
           "count": 10, 
-          "sum": 2584, 
-          "average": 258.4
+          "sum": 52665, 
+          "average": 5266.5
         }, 
         "Peru": {
           "count": 10, 
-          "sum": 2308398, 
-          "average": 230839.8
+          "sum": 103282, 
+          "average": 10328.2
         }, 
         "Laos": {
           "count": 10, 
-          "sum": 21578, 
-          "average": 2157.8
+          "sum": 43514, 
+          "average": 4351.4
         }, 
         "Nauru": {
           "count": 10, 
-          "sum": 925, 
-          "average": 92.5
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Norway": {
           "count": 10, 
-          "sum": 2509324, 
-          "average": 250932.4
+          "sum": 1107, 
+          "average": 110.7
         }, 
         "Cote d'Ivoire": {
           "count": 10, 
-          "sum": 38201, 
-          "average": 3820.1
+          "sum": 6244, 
+          "average": 624.4
         }, 
         "Cook Islands": {
           "count": 10, 
@@ -7572,13 +7572,13 @@ immigration_bar = [
         }, 
         "Benin": {
           "count": 10, 
-          "sum": 26962, 
-          "average": 2696.2
+          "sum": 1334, 
+          "average": 133.4
         }, 
         "Korea South": {
           "count": 10, 
-          "sum": 12518504, 
-          "average": 1251850.4
+          "sum": 161851, 
+          "average": 16185.1
         }, 
         "Korea": {
           "count": 10, 
@@ -7592,8 +7592,8 @@ immigration_bar = [
         }, 
         "Cuba": {
           "count": 10, 
-          "sum": 209350, 
-          "average": 20935.0
+          "sum": 233803, 
+          "average": 23380.3
         }, 
         "Not Specified": {
           "count": 10, 
@@ -7602,28 +7602,28 @@ immigration_bar = [
         }, 
         "Botswana": {
           "count": 10, 
-          "sum": 23706, 
-          "average": 2370.6
+          "sum": 162, 
+          "average": 16.2
         }, 
         "Montenegro": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 1202, 
+          "average": 120.2
         }, 
         "Togo": {
           "count": 10, 
-          "sum": 19164, 
-          "average": 1916.4
+          "sum": 9850, 
+          "average": 985.0
         }, 
         "China": {
           "count": 10, 
-          "sum": 12083437, 
-          "average": 1208343.7
+          "sum": 341748, 
+          "average": 34174.8
         }, 
         "Armenia": {
           "count": 10, 
-          "sum": 58119, 
-          "average": 5811.9
+          "sum": 25162, 
+          "average": 2516.2
         }, 
         "Other Caribbean": {
           "count": 10, 
@@ -7632,13 +7632,13 @@ immigration_bar = [
         }, 
         "Congo (Kinshas)": {
           "count": 10, 
-          "sum": 19381, 
-          "average": 1938.1
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Dominican Republic": {
           "count": 10, 
-          "sum": 2750656, 
-          "average": 275065.6
+          "sum": 252345, 
+          "average": 25234.5
         }, 
         "Other Central America": {
           "count": 10, 
@@ -7647,103 +7647,103 @@ immigration_bar = [
         }, 
         "Ukraine": {
           "count": 10, 
-          "sum": 718147, 
-          "average": 71814.7
+          "sum": 89137, 
+          "average": 8913.7
         }, 
         "Bahrain": {
           "count": 10, 
-          "sum": 54895, 
-          "average": 5489.5
+          "sum": 811, 
+          "average": 81.1
         }, 
         "Tonga": {
           "count": 10, 
-          "sum": 27993, 
-          "average": 2799.3
+          "sum": 3031, 
+          "average": 303.1
         }, 
         "Finland": {
           "count": 10, 
-          "sum": 1404685, 
-          "average": 140468.5
+          "sum": 3789, 
+          "average": 378.9
         }, 
         "Libya": {
           "count": 10, 
-          "sum": 29897, 
-          "average": 2989.7
+          "sum": 1880, 
+          "average": 188.0
         }, 
         "Indonesia": {
           "count": 10, 
-          "sum": 973951, 
-          "average": 97395.1
+          "sum": 18342, 
+          "average": 1834.2
         }, 
         "Central African Republic": {
           "count": 10, 
-          "sum": 2945, 
-          "average": 294.5
+          "sum": 297, 
+          "average": 29.7
         }, 
         "Mauritius": {
           "count": 10, 
-          "sum": 42114, 
-          "average": 4211.4
+          "sum": 661, 
+          "average": 66.1
         }, 
         "Sweden": {
           "count": 10, 
-          "sum": 4593020, 
-          "average": 459302.0
+          "sum": 8848, 
+          "average": 884.8
         }, 
         "Vietnam": {
           "count": 10, 
-          "sum": 546581, 
-          "average": 54658.1
+          "sum": 268355, 
+          "average": 26835.5
         }, 
         "British Virgin Islands": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 461, 
+          "average": 46.1
         }, 
         "Macedonia": {
           "count": 10, 
-          "sum": 80923, 
-          "average": 8092.3
+          "sum": 6767, 
+          "average": 676.7
         }, 
         "Mali": {
           "count": 10, 
-          "sum": 39314, 
-          "average": 3931.4
+          "sum": 2015, 
+          "average": 201.5
         }, 
         "Russia": {
           "count": 10, 
-          "sum": 2449096, 
-          "average": 244909.6
+          "sum": 84660, 
+          "average": 8466.0
         }, 
         "Bulgaria": {
           "count": 10, 
-          "sum": 392389, 
-          "average": 39238.9
+          "sum": 29501, 
+          "average": 2950.1
         }, 
         "United States": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 481, 
+          "average": 48.1
         }, 
         "Romania": {
           "count": 10, 
-          "sum": 747414, 
-          "average": 74741.4
+          "sum": 43244, 
+          "average": 4324.4
         }, 
         "Angola": {
           "count": 10, 
-          "sum": 83678, 
-          "average": 8367.8
+          "sum": 1304, 
+          "average": 130.4
         }, 
         "Portugal": {
           "count": 10, 
-          "sum": 1451358, 
-          "average": 145135.8
+          "sum": 21149, 
+          "average": 2114.9
         }, 
         "South Africa": {
           "count": 10, 
-          "sum": 1238386, 
-          "average": 123838.6
+          "sum": 22981, 
+          "average": 2298.1
         }, 
         "Tokelau": {
           "count": 10, 
@@ -7752,48 +7752,48 @@ immigration_bar = [
         }, 
         "Congo Republic": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 3342, 
+          "average": 334.2
         }, 
         "Liechtenstein": {
           "count": 10, 
-          "sum": 18573, 
-          "average": 1857.3
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Qatar": {
           "count": 10, 
-          "sum": 83165, 
-          "average": 8316.5
+          "sum": 869, 
+          "average": 86.9
         }, 
         "Malaysia": {
           "count": 10, 
-          "sum": 867077, 
-          "average": 86707.7
+          "sum": 12304, 
+          "average": 1230.4
         }, 
         "Austria": {
           "count": 10, 
-          "sum": 2031187, 
-          "average": 203118.7
+          "sum": 2878, 
+          "average": 287.8
         }, 
         "Mozambique": {
           "count": 10, 
-          "sum": 15292, 
-          "average": 1529.2
+          "sum": 500, 
+          "average": 50.0
         }, 
         "Uganda": {
           "count": 10, 
-          "sum": 78931, 
-          "average": 7893.1
+          "sum": 5973, 
+          "average": 597.3
         }, 
         "Japan": {
           "count": 10, 
-          "sum": 40351413, 
-          "average": 4035141.3
+          "sum": 19685, 
+          "average": 1968.5
         }, 
         "Niger": {
           "count": 10, 
-          "sum": 18231, 
-          "average": 1823.1
+          "sum": 970, 
+          "average": 97.0
         }, 
         "Isle of Man": {
           "count": 10, 
@@ -7802,13 +7802,13 @@ immigration_bar = [
         }, 
         "Bosnia-Herzegovina": {
           "count": 10, 
-          "sum": 71439, 
-          "average": 7143.9
+          "sum": 58848, 
+          "average": 5884.8
         }, 
         "Brazil": {
           "count": 10, 
-          "sum": 13070615, 
-          "average": 1307061.5
+          "sum": 81316, 
+          "average": 8131.6
         }, 
         "Falkland Islands": {
           "count": 10, 
@@ -7822,38 +7822,38 @@ immigration_bar = [
         }, 
         "Kuwait": {
           "count": 10, 
-          "sum": 318975, 
-          "average": 31897.5
+          "sum": 9006, 
+          "average": 900.6
         }, 
         "Panama": {
           "count": 10, 
-          "sum": 1195619, 
-          "average": 119561.9
+          "sum": 16716, 
+          "average": 1671.6
         }, 
         "Guyana": {
           "count": 10, 
-          "sum": 304449, 
-          "average": 30444.9
+          "sum": 60906, 
+          "average": 6090.6
         }, 
         "Costa Rica": {
           "count": 10, 
-          "sum": 1883435, 
-          "average": 188343.5
+          "sum": 15027, 
+          "average": 1502.7
         }, 
         "Luxembourg": {
           "count": 10, 
-          "sum": 131144, 
-          "average": 13114.4
+          "sum": 173, 
+          "average": 17.3
         }, 
         "Cape Verde": {
           "count": 10, 
-          "sum": 26991, 
-          "average": 2699.1
+          "sum": 10129, 
+          "average": 1012.9
         }, 
         "Bahamas": {
           "count": 10, 
-          "sum": 2887593, 
-          "average": 288759.3
+          "sum": 5678, 
+          "average": 567.8
         }, 
         "Gibraltar": {
           "count": 10, 
@@ -7862,18 +7862,18 @@ immigration_bar = [
         }, 
         "Ireland": {
           "count": 10, 
-          "sum": 5198694, 
-          "average": 519869.4
+          "sum": 14855, 
+          "average": 1485.5
         }, 
         "Palau": {
           "count": 10, 
-          "sum": 25081, 
-          "average": 2508.1
+          "sum": 535, 
+          "average": 53.5
         }, 
         "Nigeria": {
           "count": 10, 
-          "sum": 1051315, 
-          "average": 105131.5
+          "sum": 86027, 
+          "average": 8602.7
         }, 
         "Other Oceania": {
           "count": 10, 
@@ -7882,48 +7882,48 @@ immigration_bar = [
         }, 
         "Ecuador": {
           "count": 10, 
-          "sum": 2125958, 
-          "average": 212595.8
+          "sum": 80223, 
+          "average": 8022.3
         }, 
         "Bangladesh": {
           "count": 10, 
-          "sum": 205244, 
-          "average": 20524.4
+          "sum": 68688, 
+          "average": 6868.8
         }, 
         "Brunei": {
           "count": 10, 
-          "sum": 13484, 
-          "average": 1348.4
+          "sum": 154, 
+          "average": 15.4
         }, 
         "Australia": {
           "count": 10, 
-          "sum": 10516707, 
-          "average": 1051670.7
+          "sum": 12750, 
+          "average": 1275.0
         }, 
         "Iran": {
           "count": 10, 
-          "sum": 180892, 
-          "average": 18089.2
+          "sum": 106326, 
+          "average": 10632.6
         }, 
         "Algeria": {
           "count": 10, 
-          "sum": 71185, 
-          "average": 7118.5
+          "sum": 8284, 
+          "average": 828.4
         }, 
         "El Salvador": {
           "count": 10, 
-          "sum": 1475685, 
-          "average": 147568.5
+          "sum": 172345, 
+          "average": 17234.5
         }, 
         "Tuvalu": {
           "count": 10, 
-          "sum": 2181, 
-          "average": 218.1
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Venezuela": {
           "count": 10, 
-          "sum": 5733777, 
-          "average": 573377.7
+          "sum": 56024, 
+          "average": 5602.4
         }, 
         "Pitcairn Islands": {
           "count": 10, 
@@ -7937,13 +7937,13 @@ immigration_bar = [
         }, 
         "Marshall Islands": {
           "count": 10, 
-          "sum": 14709, 
-          "average": 1470.9
+          "sum": 182, 
+          "average": 18.2
         }, 
         "Chile": {
           "count": 10, 
-          "sum": 1868607, 
-          "average": 186860.7
+          "sum": 15960, 
+          "average": 1596.0
         }, 
         "Puerto Rico": {
           "count": 10, 
@@ -7952,38 +7952,38 @@ immigration_bar = [
         }, 
         "Belgium": {
           "count": 10, 
-          "sum": 2836598, 
-          "average": 283659.8
+          "sum": 4730, 
+          "average": 473.0
         }, 
         "Thailand": {
           "count": 10, 
-          "sum": 984605, 
-          "average": 98460.5
+          "sum": 51572, 
+          "average": 5157.2
         }, 
         "Haiti": {
           "count": 10, 
-          "sum": 1015759, 
-          "average": 101575.9
+          "sum": 154542, 
+          "average": 15454.2
         }, 
         "Iraq": {
           "count": 10, 
-          "sum": 82990, 
-          "average": 8299.0
+          "sum": 49628, 
+          "average": 4962.8
         }, 
         "Hong Kong": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 31138, 
+          "average": 3113.8
         }, 
         "Sierra Leone": {
           "count": 10, 
-          "sum": 28598, 
-          "average": 2859.8
+          "sum": 16686, 
+          "average": 1668.6
         }, 
         "Georgia": {
           "count": 10, 
-          "sum": 57918, 
-          "average": 5791.8
+          "sum": 8810, 
+          "average": 881.0
         }, 
         "Virgin Islands British": {
           "count": 10, 
@@ -7992,63 +7992,63 @@ immigration_bar = [
         }, 
         "Gambia": {
           "count": 10, 
-          "sum": 24827, 
-          "average": 2482.7
+          "sum": 4058, 
+          "average": 405.8
         }, 
         "Poland": {
           "count": 10, 
-          "sum": 1725079, 
-          "average": 172507.9
+          "sum": 96790, 
+          "average": 9679.0
         }, 
         "Saint Kitts-Nevis": {
           "count": 10, 
-          "sum": 139054, 
-          "average": 13905.4
+          "sum": 3581, 
+          "average": 358.1
         }, 
         "American Samoa": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 2214, 
+          "average": 221.4
         }, 
         "Moldova": {
           "count": 10, 
-          "sum": 98251, 
-          "average": 9825.1
+          "sum": 12658, 
+          "average": 1265.8
         }, 
         "Morocco": {
           "count": 10, 
-          "sum": 242871, 
-          "average": 24287.1
+          "sum": 35438, 
+          "average": 3543.8
         }, 
         "Namibia": {
           "count": 10, 
-          "sum": 17952, 
-          "average": 1795.2
+          "sum": 302, 
+          "average": 30.2
         }, 
         "French Polynesia": {
+          "count": 10, 
+          "sum": 153, 
+          "average": 15.3
+        }, 
+        "Guinea-Bissau": {
+          "count": 10, 
+          "sum": 187, 
+          "average": 18.7
+        }, 
+        "Kiribati": {
           "count": 10, 
           "sum": -10, 
           "average": -1.0
         }, 
-        "Guinea-Bissau": {
-          "count": 10, 
-          "sum": 1609, 
-          "average": 160.9
-        }, 
-        "Kiribati": {
-          "count": 10, 
-          "sum": 8333, 
-          "average": 833.3
-        }, 
         "Switzerland": {
           "count": 10, 
-          "sum": 3825039, 
-          "average": 382503.9
+          "sum": 4946, 
+          "average": 494.6
         }, 
         "Grenada": {
           "count": 10, 
-          "sum": 112028, 
-          "average": 11202.8
+          "sum": 6392, 
+          "average": 639.2
         }, 
         "Other Africa": {
           "count": 10, 
@@ -8057,18 +8057,18 @@ immigration_bar = [
         }, 
         "Czech Republic": {
           "count": 10, 
-          "sum": 760421, 
-          "average": 76042.1
+          "sum": 3260, 
+          "average": 326.0
         }, 
         "Seychelles": {
           "count": 10, 
-          "sum": 3451, 
-          "average": 345.1
+          "sum": 143, 
+          "average": 14.3
         }, 
         "Chad": {
           "count": 10, 
-          "sum": 5798, 
-          "average": 579.8
+          "sum": 404, 
+          "average": 40.4
         }, 
         "Virgin Islands U.S.": {
           "count": 10, 
@@ -8077,48 +8077,48 @@ immigration_bar = [
         }, 
         "Uruguay": {
           "count": 10, 
-          "sum": 525576, 
-          "average": 52557.6
+          "sum": 7038, 
+          "average": 703.8
         }, 
         "Mexico": {
           "count": 10, 
-          "sum": 116616198, 
-          "average": 11661619.8
+          "sum": 1085071, 
+          "average": 108507.1
         }, 
         "Lebanon": {
           "count": 10, 
-          "sum": 324587, 
-          "average": 32458.7
+          "sum": 31483, 
+          "average": 3148.3
         }, 
         "Uzbekistan": {
           "count": 10, 
-          "sum": 70789, 
-          "average": 7078.9
+          "sum": 18660, 
+          "average": 1866.0
         }, 
         "Egypt": {
           "count": 10, 
-          "sum": 606196, 
-          "average": 60619.6
+          "sum": 50158, 
+          "average": 5015.8
         }, 
         "Djibouti": {
           "count": 10, 
-          "sum": 3591, 
-          "average": 359.1
+          "sum": 223, 
+          "average": 22.3
         }, 
         "Bermuda": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 641, 
+          "average": 64.1
         }, 
         "Dominica": {
           "count": 10, 
-          "sum": 60881, 
-          "average": 6088.1
+          "sum": 6366, 
+          "average": 636.6
         }, 
         "Colombia": {
           "count": 10, 
-          "sum": 6078603, 
-          "average": 607860.3
+          "sum": 182458, 
+          "average": 18245.8
         }, 
         "Reunion": {
           "count": 10, 
@@ -8127,88 +8127,88 @@ immigration_bar = [
         }, 
         "Burundi": {
           "count": 10, 
-          "sum": 12338, 
-          "average": 1233.8
+          "sum": 1704, 
+          "average": 170.4
         }, 
         "Taiwan": {
           "count": 10, 
-          "sum": 3526651, 
-          "average": 352665.1
+          "sum": 65757, 
+          "average": 6575.7
         }, 
         "Turks and Caicos Islands": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 297, 
+          "average": 29.7
         }, 
         "Barbados": {
           "count": 10, 
-          "sum": 606912, 
-          "average": 60691.2
+          "sum": 7686, 
+          "average": 768.6
         }, 
         "Madagascar": {
           "count": 10, 
-          "sum": 11741, 
-          "average": 1174.1
+          "sum": 419, 
+          "average": 41.9
         }, 
         "Italy": {
           "count": 10, 
-          "sum": 10661189, 
-          "average": 1066118.9
+          "sum": 24237, 
+          "average": 2423.7
         }, 
         "Curacao": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 5, 
+          "average": 0.5
         }, 
         "Bhutan": {
           "count": 10, 
-          "sum": 6378, 
-          "average": 637.8
+          "sum": 3102, 
+          "average": 310.2
         }, 
         "Sudan": {
           "count": 10, 
-          "sum": 28322, 
-          "average": 2832.2
+          "sum": 23697, 
+          "average": 2369.7
         }, 
         "Nepal": {
           "count": 10, 
-          "sum": 179798, 
-          "average": 17979.8
+          "sum": 16682, 
+          "average": 1668.2
         }, 
         "Malta": {
           "count": 10, 
-          "sum": 59946, 
-          "average": 5994.6
+          "sum": 605, 
+          "average": 60.5
         }, 
         "Comoros": {
           "count": 10, 
-          "sum": 1189, 
-          "average": 118.9
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Maldives": {
           "count": 10, 
-          "sum": 3892, 
-          "average": 389.2
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Antigua-Barbuda": {
           "count": 10, 
-          "sum": 192828, 
-          "average": 19282.8
+          "sum": 4265, 
+          "average": 426.5
         }, 
         "Suriname": {
           "count": 10, 
-          "sum": 86674, 
-          "average": 8667.4
+          "sum": 1737, 
+          "average": 173.7
         }, 
         "Cayman Islands": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 172, 
+          "average": 17.2
         }, 
         "Anguilla": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 313, 
+          "average": 31.3
         }, 
         "Other Europe": {
           "count": 10, 
@@ -8217,88 +8217,88 @@ immigration_bar = [
         }, 
         "Holy See": {
           "count": 10, 
-          "sum": 1253, 
-          "average": 125.3
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Korea North": {
           "count": 10, 
-          "sum": 747, 
-          "average": 74.7
+          "sum": 120, 
+          "average": 12.0
         }, 
         "Israel": {
           "count": 10, 
-          "sum": 3675063, 
-          "average": 367506.3
+          "sum": 29745, 
+          "average": 2974.5
         }, 
         "Iceland": {
           "count": 10, 
-          "sum": 503737, 
-          "average": 50373.7
+          "sum": 741, 
+          "average": 74.1
         }, 
         "Zambia": {
           "count": 10, 
-          "sum": 40241, 
-          "average": 4024.1
+          "sum": 2851, 
+          "average": 285.1
         }, 
         "All other countries": {
+          "count": 10, 
+          "sum": 417, 
+          "average": 41.7
+        }, 
+        "Papua New Guinea": {
+          "count": 10, 
+          "sum": 135, 
+          "average": 13.5
+        }, 
+        "Malawi": {
+          "count": 10, 
+          "sum": 705, 
+          "average": 70.5
+        }, 
+        "Zimbabwe": {
+          "count": 10, 
+          "sum": 5140, 
+          "average": 514.0
+        }, 
+        "Germany": {
+          "count": 10, 
+          "sum": 42351, 
+          "average": 4235.1
+        }, 
+        "Vanuatu": {
           "count": 10, 
           "sum": -10, 
           "average": -1.0
         }, 
-        "Papua New Guinea": {
-          "count": 10, 
-          "sum": 9702, 
-          "average": 970.2
-        }, 
-        "Malawi": {
-          "count": 10, 
-          "sum": 20162, 
-          "average": 2016.2
-        }, 
-        "Zimbabwe": {
-          "count": 10, 
-          "sum": 81894, 
-          "average": 8189.4
-        }, 
-        "Germany": {
-          "count": 10, 
-          "sum": 20773891, 
-          "average": 2077389.1
-        }, 
-        "Vanuatu": {
-          "count": 10, 
-          "sum": 1836, 
-          "average": 183.6
-        }, 
         "Denmark": {
           "count": 10, 
-          "sum": 2947430, 
-          "average": 294743.0
+          "sum": 1525, 
+          "average": 152.5
         }, 
         "Senegal": {
           "count": 10, 
-          "sum": 94184, 
-          "average": 9418.4
+          "sum": 6346, 
+          "average": 634.6
         }, 
         "Kazakhstan": {
           "count": 10, 
-          "sum": 169020, 
-          "average": 16902.0
+          "sum": 8540, 
+          "average": 854.0
         }, 
         "Philippines": {
           "count": 10, 
-          "sum": 3255757, 
-          "average": 325575.7
+          "sum": 414752, 
+          "average": 41475.2
         }, 
         "Eritrea": {
           "count": 10, 
-          "sum": 12260, 
-          "average": 1226.0
+          "sum": 8577, 
+          "average": 857.7
         }, 
         "San Marino": {
           "count": 10, 
-          "sum": 7147, 
-          "average": 714.7
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Mayotte": {
           "count": 10, 
@@ -8307,8 +8307,8 @@ immigration_bar = [
         }, 
         "Montserrat": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 654, 
+          "average": 65.4
         }, 
         "New Caledonia": {
           "count": 10, 
@@ -8317,38 +8317,38 @@ immigration_bar = [
         }, 
         "Andorra": {
           "count": 10, 
-          "sum": 11294, 
-          "average": 1129.4
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Trinidad and Tobago": {
           "count": 10, 
-          "sum": 1668557, 
-          "average": 166855.7
+          "sum": 54270, 
+          "average": 5427.0
         }, 
         "Latvia": {
           "count": 10, 
-          "sum": 169805, 
-          "average": 16980.5
+          "sum": 3746, 
+          "average": 374.6
         }, 
         "South Sudan": {
           "count": 10, 
-          "sum": 519, 
-          "average": 51.9
+          "sum": 346, 
+          "average": 34.6
         }, 
         "Hungary": {
           "count": 10, 
-          "sum": 649056, 
-          "average": 64905.6
+          "sum": 9452, 
+          "average": 945.2
         }, 
         "Croatia": {
           "count": 10, 
-          "sum": 261204, 
-          "average": 26120.4
+          "sum": 8885, 
+          "average": 888.5
         }, 
         "Syria": {
           "count": 10, 
-          "sum": 96606, 
-          "average": 9660.6
+          "sum": 20887, 
+          "average": 2088.7
         }, 
         "Other Asia": {
           "count": 10, 
@@ -8367,38 +8367,38 @@ immigration_bar = [
         }, 
         "Burma": {
           "count": 10, 
-          "sum": 34217, 
-          "average": 3421.7
+          "sum": 21552, 
+          "average": 2155.2
         }, 
         "Honduras": {
           "count": 10, 
-          "sum": 1385280, 
-          "average": 138528.0
+          "sum": 49448, 
+          "average": 4944.8
         }, 
         "Equatorial Guinea": {
           "count": 10, 
-          "sum": 6698, 
-          "average": 669.8
+          "sum": 83, 
+          "average": 8.3
         }, 
         "Tunisia": {
           "count": 10, 
-          "sum": 79321, 
-          "average": 7932.1
+          "sum": 3510, 
+          "average": 351.0
         }, 
         "Nicaragua": {
           "count": 10, 
-          "sum": 553457, 
-          "average": 55345.7
+          "sum": 71774, 
+          "average": 7177.4
         }, 
         "Singapore": {
           "count": 10, 
-          "sum": 1344162, 
-          "average": 134416.2
+          "sum": 3297, 
+          "average": 329.7
         }, 
         "Serbia": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 630, 
+          "average": 63.0
         }, 
         "Martinique": {
           "count": 10, 
@@ -8407,8 +8407,8 @@ immigration_bar = [
         }, 
         "United Kingdom": {
           "count": 10, 
-          "sum": 48317799, 
-          "average": 4831779.9
+          "sum": 92255, 
+          "average": 9225.5
         }, 
         "Christmas Island": {
           "count": 10, 
@@ -8422,13 +8422,13 @@ immigration_bar = [
         }, 
         "Greece": {
           "count": 10, 
-          "sum": 775493, 
-          "average": 77549.3
+          "sum": 10176, 
+          "average": 1017.6
         }, 
         "Sri Lanka": {
           "count": 10, 
-          "sum": 195611, 
-          "average": 19561.1
+          "sum": 11981, 
+          "average": 1198.1
         }, 
         "French Guiana": {
           "count": 10, 
@@ -8437,8 +8437,8 @@ immigration_bar = [
         }, 
         "Czechoslovakia": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 4193, 
+          "average": 419.3
         }
       }, 
       "immigration.[0].Data.Refugees.Affirmative": {
@@ -13589,21 +13589,21 @@ immigration_bar = [
           "average": 2009.5
         }
       }, 
-      "immigration.[0].Data.Naturalizations (Birth)": {
+      "immigration.[0].Data.Nonimmigrant Admissions.Birth": {
         "Canada": {
           "count": 10, 
-          "sum": 92044, 
-          "average": 9204.4
+          "sum": 23796482, 
+          "average": 2379648.2
         }, 
         "East Timor": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 298, 
+          "average": 29.8
         }, 
         "Sao Tome and Principe": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 726, 
+          "average": 72.6
         }, 
         "Guernsey": {
           "count": 10, 
@@ -13612,8 +13612,8 @@ immigration_bar = [
         }, 
         "Turkmenistan": {
           "count": 10, 
-          "sum": 1072, 
-          "average": 107.2
+          "sum": 10037, 
+          "average": 1003.7
         }, 
         "Other South America": {
           "count": 10, 
@@ -13622,73 +13622,73 @@ immigration_bar = [
         }, 
         "Serbia and Montenegro": {
           "count": 10, 
-          "sum": 30991, 
-          "average": 3099.1
+          "sum": 35727, 
+          "average": 3572.7
         }, 
         "Unknown": {
           "count": 10, 
-          "sum": 6237, 
-          "average": 623.7
+          "sum": 2467001, 
+          "average": 246700.1
         }, 
         "Lithuania": {
           "count": 10, 
-          "sum": 8856, 
-          "average": 885.6
+          "sum": 208567, 
+          "average": 20856.7
         }, 
         "Cambodia": {
           "count": 10, 
-          "sum": 45884, 
-          "average": 4588.4
+          "sum": 40707, 
+          "average": 4070.7
         }, 
         "Ethiopia": {
           "count": 10, 
-          "sum": 72591, 
-          "average": 7259.1
+          "sum": 128300, 
+          "average": 12830.0
         }, 
         "Aruba": {
           "count": 10, 
-          "sum": 375, 
-          "average": 37.5
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Swaziland": {
           "count": 10, 
-          "sum": 103, 
-          "average": 10.3
+          "sum": 6452, 
+          "average": 645.2
         }, 
         "Belize": {
           "count": 10, 
-          "sum": 8420, 
-          "average": 842.0
+          "sum": 255112, 
+          "average": 25511.2
         }, 
         "Argentina": {
           "count": 10, 
-          "sum": 33121, 
-          "average": 3312.1
+          "sum": 4858462, 
+          "average": 485846.2
         }, 
         "Bolivia": {
           "count": 10, 
-          "sum": 16991, 
-          "average": 1699.1
+          "sum": 423433, 
+          "average": 42343.3
         }, 
         "Cameroon": {
           "count": 10, 
-          "sum": 14919, 
-          "average": 1491.9
+          "sum": 94542, 
+          "average": 9454.2
         }, 
         "Burkina Faso": {
           "count": 10, 
-          "sum": 1158, 
-          "average": 115.8
+          "sum": 31911, 
+          "average": 3191.1
         }, 
         "Ghana": {
           "count": 10, 
-          "sum": 45336, 
-          "average": 4533.6
+          "sum": 251009, 
+          "average": 25100.9
         }, 
         "Saudi Arabia": {
           "count": 10, 
-          "sum": 6849, 
-          "average": 684.9
+          "sum": 1146383, 
+          "average": 114638.3
         }, 
         "Saint Helena": {
           "count": 10, 
@@ -13697,28 +13697,28 @@ immigration_bar = [
         }, 
         "Micronesia Federated States": {
           "count": 10, 
-          "sum": 680, 
-          "average": 68.0
+          "sum": 44567, 
+          "average": 4456.7
         }, 
         "Slovenia": {
           "count": 10, 
-          "sum": 618, 
-          "average": 61.8
+          "sum": 220558, 
+          "average": 22055.8
         }, 
         "Guatemala": {
           "count": 10, 
-          "sum": 86224, 
-          "average": 8622.4
+          "sum": 2151701, 
+          "average": 215170.1
         }, 
         "Guinea": {
           "count": 10, 
-          "sum": 4697, 
-          "average": 469.7
+          "sum": 36427, 
+          "average": 3642.7
         }, 
         "Jordan": {
           "count": 10, 
-          "sum": 25206, 
-          "average": 2520.6
+          "sum": 312935, 
+          "average": 31293.5
         }, 
         "Saint Barthelemy": {
           "count": 10, 
@@ -13732,38 +13732,38 @@ immigration_bar = [
         }, 
         "Spain": {
           "count": 10, 
-          "sum": 13577, 
-          "average": 1357.7
+          "sum": 7877138, 
+          "average": 787713.8
         }, 
         "Liberia": {
           "count": 10, 
-          "sum": 29225, 
-          "average": 2922.5
+          "sum": 25817, 
+          "average": 2581.7
         }, 
         "Netherlands": {
           "count": 10, 
-          "sum": 486, 
-          "average": 48.6
+          "sum": 7524991, 
+          "average": 752499.1
         }, 
         "Paraguay": {
           "count": 10, 
-          "sum": 2843, 
-          "average": 284.3
+          "sum": 188959, 
+          "average": 18895.9
         }, 
         "Jamaica": {
           "count": 10, 
-          "sum": 153544, 
-          "average": 15354.4
+          "sum": 2502761, 
+          "average": 250276.1
         }, 
         "Oman": {
           "count": 10, 
-          "sum": 314, 
-          "average": 31.4
+          "sum": 44014, 
+          "average": 4401.4
         }, 
         "Tanzania": {
           "count": 10, 
-          "sum": 4937, 
-          "average": 493.7
+          "sum": 68596, 
+          "average": 6859.6
         }, 
         "Bonaire": {
           "count": 10, 
@@ -13777,8 +13777,8 @@ immigration_bar = [
         }, 
         "Gabon": {
           "count": 10, 
-          "sum": 429, 
-          "average": 42.9
+          "sum": 22882, 
+          "average": 2288.2
         }, 
         "Niue": {
           "count": 10, 
@@ -13787,8 +13787,8 @@ immigration_bar = [
         }, 
         "Monaco": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 11078, 
+          "average": 1107.8
         }, 
         "Wallis and Futuna": {
           "count": 10, 
@@ -13797,13 +13797,13 @@ immigration_bar = [
         }, 
         "New Zealand": {
           "count": 10, 
-          "sum": 5015, 
-          "average": 501.5
+          "sum": 2522250, 
+          "average": 252225.0
         }, 
         "Yemen": {
           "count": 10, 
-          "sum": 11333, 
-          "average": 1133.3
+          "sum": 26513, 
+          "average": 2651.3
         }, 
         "Jersey": {
           "count": 10, 
@@ -13812,33 +13812,33 @@ immigration_bar = [
         }, 
         "Kyrgyzstan": {
           "count": 10, 
-          "sum": 3433, 
-          "average": 343.3
+          "sum": 31225, 
+          "average": 3122.5
         }, 
         "Pakistan": {
           "count": 10, 
-          "sum": 111162, 
-          "average": 11116.2
+          "sum": 655331, 
+          "average": 65533.1
         }, 
         "Albania": {
           "count": 10, 
-          "sum": 36674, 
-          "average": 3667.4
+          "sum": 85132, 
+          "average": 8513.2
         }, 
         "Samoa": {
           "count": 10, 
-          "sum": 1809, 
-          "average": 180.9
+          "sum": 21168, 
+          "average": 2116.8
         }, 
         "Estonia": {
           "count": 10, 
-          "sum": 1854, 
-          "average": 185.4
+          "sum": 161259, 
+          "average": 16125.9
         }, 
         "Macau": {
           "count": 10, 
-          "sum": 1340, 
-          "average": 134.0
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Norfolk Island": {
           "count": 10, 
@@ -13847,8 +13847,8 @@ immigration_bar = [
         }, 
         "United Arab Emirates": {
           "count": 10, 
-          "sum": 3632, 
-          "average": 363.2
+          "sum": 175583, 
+          "average": 17558.3
         }, 
         "Guam": {
           "count": 10, 
@@ -13857,18 +13857,18 @@ immigration_bar = [
         }, 
         "Kosovo": {
           "count": 10, 
-          "sum": 2927, 
-          "average": 292.7
+          "sum": 5195, 
+          "average": 519.5
         }, 
         "India": {
           "count": 10, 
-          "sum": 487041, 
-          "average": 48704.1
+          "sum": 11392922, 
+          "average": 1139292.2
         }, 
         "Azerbaijan": {
           "count": 10, 
-          "sum": 9061, 
-          "average": 906.1
+          "sum": 51272, 
+          "average": 5127.2
         }, 
         "Other America": {
           "count": 10, 
@@ -13877,48 +13877,48 @@ immigration_bar = [
         }, 
         "Lesotho": {
           "count": 10, 
-          "sum": 70, 
-          "average": 7.0
+          "sum": 4872, 
+          "average": 487.2
         }, 
         "Congo (Brazzaville)": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 30374, 
+          "average": 3037.4
         }, 
         "Saint Vincent and the Grenadines": {
           "count": 10, 
-          "sum": 4982, 
-          "average": 498.2
+          "sum": 136549, 
+          "average": 13654.9
         }, 
         "Kenya": {
           "count": 10, 
-          "sum": 27930, 
-          "average": 2793.0
+          "sum": 215883, 
+          "average": 21588.3
         }, 
         "Belarus": {
           "count": 10, 
-          "sum": 16536, 
-          "average": 1653.6
+          "sum": 119021, 
+          "average": 11902.1
         }, 
         "Tajikistan": {
           "count": 10, 
-          "sum": 1485, 
-          "average": 148.5
+          "sum": 17137, 
+          "average": 1713.7
         }, 
         "Turkey": {
           "count": 10, 
-          "sum": 28929, 
-          "average": 2892.9
+          "sum": 1552112, 
+          "average": 155211.2
         }, 
         "Afghanistan": {
           "count": 10, 
-          "sum": 20646, 
-          "average": 2064.6
+          "sum": 26486, 
+          "average": 2648.6
         }, 
         "Fiji": {
           "count": 10, 
-          "sum": 11455, 
-          "average": 1145.5
+          "sum": 114581, 
+          "average": 11458.1
         }, 
         "Northern Mariana Islands": {
           "count": 10, 
@@ -13927,78 +13927,78 @@ immigration_bar = [
         }, 
         "Mauritania": {
           "count": 10, 
-          "sum": 2608, 
-          "average": 260.8
+          "sum": 12213, 
+          "average": 1221.3
         }, 
         "Solomon Islands": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 3545, 
+          "average": 354.5
         }, 
         "Saint Lucia": {
           "count": 10, 
-          "sum": 6375, 
-          "average": 637.5
+          "sum": 181270, 
+          "average": 18127.0
         }, 
         "Soviet Union (former)": {
-          "count": 10, 
-          "sum": 31630, 
-          "average": 3163.0
-        }, 
-        "Cyprus": {
-          "count": 10, 
-          "sum": 1252, 
-          "average": 125.2
-        }, 
-        "Mongolia": {
-          "count": 10, 
-          "sum": 1787, 
-          "average": 178.7
-        }, 
-        "France": {
-          "count": 10, 
-          "sum": 24168, 
-          "average": 2416.8
-        }, 
-        "Rwanda": {
-          "count": 10, 
-          "sum": 2158, 
-          "average": 215.8
-        }, 
-        "Slovakia": {
-          "count": 10, 
-          "sum": 4244, 
-          "average": 424.4
-        }, 
-        "Somalia": {
-          "count": 10, 
-          "sum": 52665, 
-          "average": 5266.5
-        }, 
-        "Peru": {
-          "count": 10, 
-          "sum": 103282, 
-          "average": 10328.2
-        }, 
-        "Laos": {
-          "count": 10, 
-          "sum": 43514, 
-          "average": 4351.4
-        }, 
-        "Nauru": {
           "count": 10, 
           "sum": -10, 
           "average": -1.0
         }, 
+        "Cyprus": {
+          "count": 10, 
+          "sum": 98892, 
+          "average": 9889.2
+        }, 
+        "Mongolia": {
+          "count": 10, 
+          "sum": 91196, 
+          "average": 9119.6
+        }, 
+        "France": {
+          "count": 10, 
+          "sum": 16841711, 
+          "average": 1684171.1
+        }, 
+        "Rwanda": {
+          "count": 10, 
+          "sum": 31503, 
+          "average": 3150.3
+        }, 
+        "Slovakia": {
+          "count": 10, 
+          "sum": 381494, 
+          "average": 38149.4
+        }, 
+        "Somalia": {
+          "count": 10, 
+          "sum": 2584, 
+          "average": 258.4
+        }, 
+        "Peru": {
+          "count": 10, 
+          "sum": 2308398, 
+          "average": 230839.8
+        }, 
+        "Laos": {
+          "count": 10, 
+          "sum": 21578, 
+          "average": 2157.8
+        }, 
+        "Nauru": {
+          "count": 10, 
+          "sum": 925, 
+          "average": 92.5
+        }, 
         "Norway": {
           "count": 10, 
-          "sum": 1107, 
-          "average": 110.7
+          "sum": 2509324, 
+          "average": 250932.4
         }, 
         "Cote d'Ivoire": {
           "count": 10, 
-          "sum": 6244, 
-          "average": 624.4
+          "sum": 38201, 
+          "average": 3820.1
         }, 
         "Cook Islands": {
           "count": 10, 
@@ -14007,13 +14007,13 @@ immigration_bar = [
         }, 
         "Benin": {
           "count": 10, 
-          "sum": 1334, 
-          "average": 133.4
+          "sum": 26962, 
+          "average": 2696.2
         }, 
         "Korea South": {
           "count": 10, 
-          "sum": 161851, 
-          "average": 16185.1
+          "sum": 12518504, 
+          "average": 1251850.4
         }, 
         "Korea": {
           "count": 10, 
@@ -14027,8 +14027,8 @@ immigration_bar = [
         }, 
         "Cuba": {
           "count": 10, 
-          "sum": 233803, 
-          "average": 23380.3
+          "sum": 209350, 
+          "average": 20935.0
         }, 
         "Not Specified": {
           "count": 10, 
@@ -14037,28 +14037,28 @@ immigration_bar = [
         }, 
         "Botswana": {
           "count": 10, 
-          "sum": 162, 
-          "average": 16.2
+          "sum": 23706, 
+          "average": 2370.6
         }, 
         "Montenegro": {
           "count": 10, 
-          "sum": 1202, 
-          "average": 120.2
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Togo": {
           "count": 10, 
-          "sum": 9850, 
-          "average": 985.0
+          "sum": 19164, 
+          "average": 1916.4
         }, 
         "China": {
           "count": 10, 
-          "sum": 341748, 
-          "average": 34174.8
+          "sum": 12083437, 
+          "average": 1208343.7
         }, 
         "Armenia": {
           "count": 10, 
-          "sum": 25162, 
-          "average": 2516.2
+          "sum": 58119, 
+          "average": 5811.9
         }, 
         "Other Caribbean": {
           "count": 10, 
@@ -14067,13 +14067,13 @@ immigration_bar = [
         }, 
         "Congo (Kinshas)": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 19381, 
+          "average": 1938.1
         }, 
         "Dominican Republic": {
           "count": 10, 
-          "sum": 252345, 
-          "average": 25234.5
+          "sum": 2750656, 
+          "average": 275065.6
         }, 
         "Other Central America": {
           "count": 10, 
@@ -14082,103 +14082,103 @@ immigration_bar = [
         }, 
         "Ukraine": {
           "count": 10, 
-          "sum": 89137, 
-          "average": 8913.7
+          "sum": 718147, 
+          "average": 71814.7
         }, 
         "Bahrain": {
           "count": 10, 
-          "sum": 811, 
-          "average": 81.1
+          "sum": 54895, 
+          "average": 5489.5
         }, 
         "Tonga": {
           "count": 10, 
-          "sum": 3031, 
-          "average": 303.1
+          "sum": 27993, 
+          "average": 2799.3
         }, 
         "Finland": {
           "count": 10, 
-          "sum": 3789, 
-          "average": 378.9
+          "sum": 1404685, 
+          "average": 140468.5
         }, 
         "Libya": {
           "count": 10, 
-          "sum": 1880, 
-          "average": 188.0
+          "sum": 29897, 
+          "average": 2989.7
         }, 
         "Indonesia": {
           "count": 10, 
-          "sum": 18342, 
-          "average": 1834.2
+          "sum": 973951, 
+          "average": 97395.1
         }, 
         "Central African Republic": {
           "count": 10, 
-          "sum": 297, 
-          "average": 29.7
+          "sum": 2945, 
+          "average": 294.5
         }, 
         "Mauritius": {
           "count": 10, 
-          "sum": 661, 
-          "average": 66.1
+          "sum": 42114, 
+          "average": 4211.4
         }, 
         "Sweden": {
           "count": 10, 
-          "sum": 8848, 
-          "average": 884.8
+          "sum": 4593020, 
+          "average": 459302.0
         }, 
         "Vietnam": {
           "count": 10, 
-          "sum": 268355, 
-          "average": 26835.5
+          "sum": 546581, 
+          "average": 54658.1
         }, 
         "British Virgin Islands": {
           "count": 10, 
-          "sum": 461, 
-          "average": 46.1
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Macedonia": {
           "count": 10, 
-          "sum": 6767, 
-          "average": 676.7
+          "sum": 80923, 
+          "average": 8092.3
         }, 
         "Mali": {
           "count": 10, 
-          "sum": 2015, 
-          "average": 201.5
+          "sum": 39314, 
+          "average": 3931.4
         }, 
         "Russia": {
           "count": 10, 
-          "sum": 84660, 
-          "average": 8466.0
+          "sum": 2449096, 
+          "average": 244909.6
         }, 
         "Bulgaria": {
           "count": 10, 
-          "sum": 29501, 
-          "average": 2950.1
+          "sum": 392389, 
+          "average": 39238.9
         }, 
         "United States": {
           "count": 10, 
-          "sum": 481, 
-          "average": 48.1
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Romania": {
           "count": 10, 
-          "sum": 43244, 
-          "average": 4324.4
+          "sum": 747414, 
+          "average": 74741.4
         }, 
         "Angola": {
           "count": 10, 
-          "sum": 1304, 
-          "average": 130.4
+          "sum": 83678, 
+          "average": 8367.8
         }, 
         "Portugal": {
           "count": 10, 
-          "sum": 21149, 
-          "average": 2114.9
+          "sum": 1451358, 
+          "average": 145135.8
         }, 
         "South Africa": {
           "count": 10, 
-          "sum": 22981, 
-          "average": 2298.1
+          "sum": 1238386, 
+          "average": 123838.6
         }, 
         "Tokelau": {
           "count": 10, 
@@ -14187,48 +14187,48 @@ immigration_bar = [
         }, 
         "Congo Republic": {
           "count": 10, 
-          "sum": 3342, 
-          "average": 334.2
-        }, 
-        "Liechtenstein": {
-          "count": 10, 
           "sum": -10, 
           "average": -1.0
         }, 
+        "Liechtenstein": {
+          "count": 10, 
+          "sum": 18573, 
+          "average": 1857.3
+        }, 
         "Qatar": {
           "count": 10, 
-          "sum": 869, 
-          "average": 86.9
+          "sum": 83165, 
+          "average": 8316.5
         }, 
         "Malaysia": {
           "count": 10, 
-          "sum": 12304, 
-          "average": 1230.4
+          "sum": 867077, 
+          "average": 86707.7
         }, 
         "Austria": {
           "count": 10, 
-          "sum": 2878, 
-          "average": 287.8
+          "sum": 2031187, 
+          "average": 203118.7
         }, 
         "Mozambique": {
           "count": 10, 
-          "sum": 500, 
-          "average": 50.0
+          "sum": 15292, 
+          "average": 1529.2
         }, 
         "Uganda": {
           "count": 10, 
-          "sum": 5973, 
-          "average": 597.3
+          "sum": 78931, 
+          "average": 7893.1
         }, 
         "Japan": {
           "count": 10, 
-          "sum": 19685, 
-          "average": 1968.5
+          "sum": 40351413, 
+          "average": 4035141.3
         }, 
         "Niger": {
           "count": 10, 
-          "sum": 970, 
-          "average": 97.0
+          "sum": 18231, 
+          "average": 1823.1
         }, 
         "Isle of Man": {
           "count": 10, 
@@ -14237,13 +14237,13 @@ immigration_bar = [
         }, 
         "Bosnia-Herzegovina": {
           "count": 10, 
-          "sum": 58848, 
-          "average": 5884.8
+          "sum": 71439, 
+          "average": 7143.9
         }, 
         "Brazil": {
           "count": 10, 
-          "sum": 81316, 
-          "average": 8131.6
+          "sum": 13070615, 
+          "average": 1307061.5
         }, 
         "Falkland Islands": {
           "count": 10, 
@@ -14257,38 +14257,38 @@ immigration_bar = [
         }, 
         "Kuwait": {
           "count": 10, 
-          "sum": 9006, 
-          "average": 900.6
+          "sum": 318975, 
+          "average": 31897.5
         }, 
         "Panama": {
           "count": 10, 
-          "sum": 16716, 
-          "average": 1671.6
+          "sum": 1195619, 
+          "average": 119561.9
         }, 
         "Guyana": {
           "count": 10, 
-          "sum": 60906, 
-          "average": 6090.6
+          "sum": 304449, 
+          "average": 30444.9
         }, 
         "Costa Rica": {
           "count": 10, 
-          "sum": 15027, 
-          "average": 1502.7
+          "sum": 1883435, 
+          "average": 188343.5
         }, 
         "Luxembourg": {
           "count": 10, 
-          "sum": 173, 
-          "average": 17.3
+          "sum": 131144, 
+          "average": 13114.4
         }, 
         "Cape Verde": {
           "count": 10, 
-          "sum": 10129, 
-          "average": 1012.9
+          "sum": 26991, 
+          "average": 2699.1
         }, 
         "Bahamas": {
           "count": 10, 
-          "sum": 5678, 
-          "average": 567.8
+          "sum": 2887593, 
+          "average": 288759.3
         }, 
         "Gibraltar": {
           "count": 10, 
@@ -14297,18 +14297,18 @@ immigration_bar = [
         }, 
         "Ireland": {
           "count": 10, 
-          "sum": 14855, 
-          "average": 1485.5
+          "sum": 5198694, 
+          "average": 519869.4
         }, 
         "Palau": {
           "count": 10, 
-          "sum": 535, 
-          "average": 53.5
+          "sum": 25081, 
+          "average": 2508.1
         }, 
         "Nigeria": {
           "count": 10, 
-          "sum": 86027, 
-          "average": 8602.7
+          "sum": 1051315, 
+          "average": 105131.5
         }, 
         "Other Oceania": {
           "count": 10, 
@@ -14317,48 +14317,48 @@ immigration_bar = [
         }, 
         "Ecuador": {
           "count": 10, 
-          "sum": 80223, 
-          "average": 8022.3
+          "sum": 2125958, 
+          "average": 212595.8
         }, 
         "Bangladesh": {
           "count": 10, 
-          "sum": 68688, 
-          "average": 6868.8
+          "sum": 205244, 
+          "average": 20524.4
         }, 
         "Brunei": {
           "count": 10, 
-          "sum": 154, 
-          "average": 15.4
+          "sum": 13484, 
+          "average": 1348.4
         }, 
         "Australia": {
           "count": 10, 
-          "sum": 12750, 
-          "average": 1275.0
+          "sum": 10516707, 
+          "average": 1051670.7
         }, 
         "Iran": {
           "count": 10, 
-          "sum": 106326, 
-          "average": 10632.6
+          "sum": 180892, 
+          "average": 18089.2
         }, 
         "Algeria": {
           "count": 10, 
-          "sum": 8284, 
-          "average": 828.4
+          "sum": 71185, 
+          "average": 7118.5
         }, 
         "El Salvador": {
           "count": 10, 
-          "sum": 172345, 
-          "average": 17234.5
+          "sum": 1475685, 
+          "average": 147568.5
         }, 
         "Tuvalu": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 2181, 
+          "average": 218.1
         }, 
         "Venezuela": {
           "count": 10, 
-          "sum": 56024, 
-          "average": 5602.4
+          "sum": 5733777, 
+          "average": 573377.7
         }, 
         "Pitcairn Islands": {
           "count": 10, 
@@ -14372,13 +14372,13 @@ immigration_bar = [
         }, 
         "Marshall Islands": {
           "count": 10, 
-          "sum": 182, 
-          "average": 18.2
+          "sum": 14709, 
+          "average": 1470.9
         }, 
         "Chile": {
           "count": 10, 
-          "sum": 15960, 
-          "average": 1596.0
+          "sum": 1868607, 
+          "average": 186860.7
         }, 
         "Puerto Rico": {
           "count": 10, 
@@ -14387,38 +14387,38 @@ immigration_bar = [
         }, 
         "Belgium": {
           "count": 10, 
-          "sum": 4730, 
-          "average": 473.0
+          "sum": 2836598, 
+          "average": 283659.8
         }, 
         "Thailand": {
           "count": 10, 
-          "sum": 51572, 
-          "average": 5157.2
+          "sum": 984605, 
+          "average": 98460.5
         }, 
         "Haiti": {
           "count": 10, 
-          "sum": 154542, 
-          "average": 15454.2
+          "sum": 1015759, 
+          "average": 101575.9
         }, 
         "Iraq": {
           "count": 10, 
-          "sum": 49628, 
-          "average": 4962.8
+          "sum": 82990, 
+          "average": 8299.0
         }, 
         "Hong Kong": {
           "count": 10, 
-          "sum": 31138, 
-          "average": 3113.8
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Sierra Leone": {
           "count": 10, 
-          "sum": 16686, 
-          "average": 1668.6
+          "sum": 28598, 
+          "average": 2859.8
         }, 
         "Georgia": {
           "count": 10, 
-          "sum": 8810, 
-          "average": 881.0
+          "sum": 57918, 
+          "average": 5791.8
         }, 
         "Virgin Islands British": {
           "count": 10, 
@@ -14427,63 +14427,63 @@ immigration_bar = [
         }, 
         "Gambia": {
           "count": 10, 
-          "sum": 4058, 
-          "average": 405.8
+          "sum": 24827, 
+          "average": 2482.7
         }, 
         "Poland": {
           "count": 10, 
-          "sum": 96790, 
-          "average": 9679.0
+          "sum": 1725079, 
+          "average": 172507.9
         }, 
         "Saint Kitts-Nevis": {
           "count": 10, 
-          "sum": 3581, 
-          "average": 358.1
+          "sum": 139054, 
+          "average": 13905.4
         }, 
         "American Samoa": {
-          "count": 10, 
-          "sum": 2214, 
-          "average": 221.4
-        }, 
-        "Moldova": {
-          "count": 10, 
-          "sum": 12658, 
-          "average": 1265.8
-        }, 
-        "Morocco": {
-          "count": 10, 
-          "sum": 35438, 
-          "average": 3543.8
-        }, 
-        "Namibia": {
-          "count": 10, 
-          "sum": 302, 
-          "average": 30.2
-        }, 
-        "French Polynesia": {
-          "count": 10, 
-          "sum": 153, 
-          "average": 15.3
-        }, 
-        "Guinea-Bissau": {
-          "count": 10, 
-          "sum": 187, 
-          "average": 18.7
-        }, 
-        "Kiribati": {
           "count": 10, 
           "sum": -10, 
           "average": -1.0
         }, 
+        "Moldova": {
+          "count": 10, 
+          "sum": 98251, 
+          "average": 9825.1
+        }, 
+        "Morocco": {
+          "count": 10, 
+          "sum": 242871, 
+          "average": 24287.1
+        }, 
+        "Namibia": {
+          "count": 10, 
+          "sum": 17952, 
+          "average": 1795.2
+        }, 
+        "French Polynesia": {
+          "count": 10, 
+          "sum": -10, 
+          "average": -1.0
+        }, 
+        "Guinea-Bissau": {
+          "count": 10, 
+          "sum": 1609, 
+          "average": 160.9
+        }, 
+        "Kiribati": {
+          "count": 10, 
+          "sum": 8333, 
+          "average": 833.3
+        }, 
         "Switzerland": {
           "count": 10, 
-          "sum": 4946, 
-          "average": 494.6
+          "sum": 3825039, 
+          "average": 382503.9
         }, 
         "Grenada": {
           "count": 10, 
-          "sum": 6392, 
-          "average": 639.2
+          "sum": 112028, 
+          "average": 11202.8
         }, 
         "Other Africa": {
           "count": 10, 
@@ -14492,18 +14492,18 @@ immigration_bar = [
         }, 
         "Czech Republic": {
           "count": 10, 
-          "sum": 3260, 
-          "average": 326.0
+          "sum": 760421, 
+          "average": 76042.1
         }, 
         "Seychelles": {
           "count": 10, 
-          "sum": 143, 
-          "average": 14.3
+          "sum": 3451, 
+          "average": 345.1
         }, 
         "Chad": {
           "count": 10, 
-          "sum": 404, 
-          "average": 40.4
+          "sum": 5798, 
+          "average": 579.8
         }, 
         "Virgin Islands U.S.": {
           "count": 10, 
@@ -14512,48 +14512,48 @@ immigration_bar = [
         }, 
         "Uruguay": {
           "count": 10, 
-          "sum": 7038, 
-          "average": 703.8
+          "sum": 525576, 
+          "average": 52557.6
         }, 
         "Mexico": {
           "count": 10, 
-          "sum": 1085071, 
-          "average": 108507.1
+          "sum": 116616198, 
+          "average": 11661619.8
         }, 
         "Lebanon": {
           "count": 10, 
-          "sum": 31483, 
-          "average": 3148.3
+          "sum": 324587, 
+          "average": 32458.7
         }, 
         "Uzbekistan": {
           "count": 10, 
-          "sum": 18660, 
-          "average": 1866.0
+          "sum": 70789, 
+          "average": 7078.9
         }, 
         "Egypt": {
           "count": 10, 
-          "sum": 50158, 
-          "average": 5015.8
+          "sum": 606196, 
+          "average": 60619.6
         }, 
         "Djibouti": {
           "count": 10, 
-          "sum": 223, 
-          "average": 22.3
+          "sum": 3591, 
+          "average": 359.1
         }, 
         "Bermuda": {
           "count": 10, 
-          "sum": 641, 
-          "average": 64.1
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Dominica": {
           "count": 10, 
-          "sum": 6366, 
-          "average": 636.6
+          "sum": 60881, 
+          "average": 6088.1
         }, 
         "Colombia": {
           "count": 10, 
-          "sum": 182458, 
-          "average": 18245.8
+          "sum": 6078603, 
+          "average": 607860.3
         }, 
         "Reunion": {
           "count": 10, 
@@ -14562,88 +14562,88 @@ immigration_bar = [
         }, 
         "Burundi": {
           "count": 10, 
-          "sum": 1704, 
-          "average": 170.4
+          "sum": 12338, 
+          "average": 1233.8
         }, 
         "Taiwan": {
           "count": 10, 
-          "sum": 65757, 
-          "average": 6575.7
+          "sum": 3526651, 
+          "average": 352665.1
         }, 
         "Turks and Caicos Islands": {
           "count": 10, 
-          "sum": 297, 
-          "average": 29.7
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Barbados": {
           "count": 10, 
-          "sum": 7686, 
-          "average": 768.6
+          "sum": 606912, 
+          "average": 60691.2
         }, 
         "Madagascar": {
           "count": 10, 
-          "sum": 419, 
-          "average": 41.9
+          "sum": 11741, 
+          "average": 1174.1
         }, 
         "Italy": {
           "count": 10, 
-          "sum": 24237, 
-          "average": 2423.7
+          "sum": 10661189, 
+          "average": 1066118.9
         }, 
         "Curacao": {
           "count": 10, 
-          "sum": 5, 
-          "average": 0.5
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Bhutan": {
           "count": 10, 
-          "sum": 3102, 
-          "average": 310.2
+          "sum": 6378, 
+          "average": 637.8
         }, 
         "Sudan": {
           "count": 10, 
-          "sum": 23697, 
-          "average": 2369.7
+          "sum": 28322, 
+          "average": 2832.2
         }, 
         "Nepal": {
           "count": 10, 
-          "sum": 16682, 
-          "average": 1668.2
+          "sum": 179798, 
+          "average": 17979.8
         }, 
         "Malta": {
           "count": 10, 
-          "sum": 605, 
-          "average": 60.5
+          "sum": 59946, 
+          "average": 5994.6
         }, 
         "Comoros": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 1189, 
+          "average": 118.9
         }, 
         "Maldives": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 3892, 
+          "average": 389.2
         }, 
         "Antigua-Barbuda": {
           "count": 10, 
-          "sum": 4265, 
-          "average": 426.5
+          "sum": 192828, 
+          "average": 19282.8
         }, 
         "Suriname": {
           "count": 10, 
-          "sum": 1737, 
-          "average": 173.7
+          "sum": 86674, 
+          "average": 8667.4
         }, 
         "Cayman Islands": {
           "count": 10, 
-          "sum": 172, 
-          "average": 17.2
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Anguilla": {
           "count": 10, 
-          "sum": 313, 
-          "average": 31.3
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Other Europe": {
           "count": 10, 
@@ -14652,88 +14652,88 @@ immigration_bar = [
         }, 
         "Holy See": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 1253, 
+          "average": 125.3
         }, 
         "Korea North": {
           "count": 10, 
-          "sum": 120, 
-          "average": 12.0
+          "sum": 747, 
+          "average": 74.7
         }, 
         "Israel": {
           "count": 10, 
-          "sum": 29745, 
-          "average": 2974.5
+          "sum": 3675063, 
+          "average": 367506.3
         }, 
         "Iceland": {
           "count": 10, 
-          "sum": 741, 
-          "average": 74.1
+          "sum": 503737, 
+          "average": 50373.7
         }, 
         "Zambia": {
           "count": 10, 
-          "sum": 2851, 
-          "average": 285.1
+          "sum": 40241, 
+          "average": 4024.1
         }, 
         "All other countries": {
           "count": 10, 
-          "sum": 417, 
-          "average": 41.7
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Papua New Guinea": {
           "count": 10, 
-          "sum": 135, 
-          "average": 13.5
+          "sum": 9702, 
+          "average": 970.2
         }, 
         "Malawi": {
           "count": 10, 
-          "sum": 705, 
-          "average": 70.5
+          "sum": 20162, 
+          "average": 2016.2
         }, 
         "Zimbabwe": {
           "count": 10, 
-          "sum": 5140, 
-          "average": 514.0
+          "sum": 81894, 
+          "average": 8189.4
         }, 
         "Germany": {
           "count": 10, 
-          "sum": 42351, 
-          "average": 4235.1
+          "sum": 20773891, 
+          "average": 2077389.1
         }, 
         "Vanuatu": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 1836, 
+          "average": 183.6
         }, 
         "Denmark": {
           "count": 10, 
-          "sum": 1525, 
-          "average": 152.5
+          "sum": 2947430, 
+          "average": 294743.0
         }, 
         "Senegal": {
           "count": 10, 
-          "sum": 6346, 
-          "average": 634.6
+          "sum": 94184, 
+          "average": 9418.4
         }, 
         "Kazakhstan": {
           "count": 10, 
-          "sum": 8540, 
-          "average": 854.0
+          "sum": 169020, 
+          "average": 16902.0
         }, 
         "Philippines": {
           "count": 10, 
-          "sum": 414752, 
-          "average": 41475.2
+          "sum": 3255757, 
+          "average": 325575.7
         }, 
         "Eritrea": {
           "count": 10, 
-          "sum": 8577, 
-          "average": 857.7
+          "sum": 12260, 
+          "average": 1226.0
         }, 
         "San Marino": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 7147, 
+          "average": 714.7
         }, 
         "Mayotte": {
           "count": 10, 
@@ -14742,8 +14742,8 @@ immigration_bar = [
         }, 
         "Montserrat": {
           "count": 10, 
-          "sum": 654, 
-          "average": 65.4
+          "sum": -10, 
+          "average": -1.0
         }, 
         "New Caledonia": {
           "count": 10, 
@@ -14752,38 +14752,38 @@ immigration_bar = [
         }, 
         "Andorra": {
           "count": 10, 
-          "sum": -10, 
-          "average": -1.0
+          "sum": 11294, 
+          "average": 1129.4
         }, 
         "Trinidad and Tobago": {
           "count": 10, 
-          "sum": 54270, 
-          "average": 5427.0
+          "sum": 1668557, 
+          "average": 166855.7
         }, 
         "Latvia": {
           "count": 10, 
-          "sum": 3746, 
-          "average": 374.6
+          "sum": 169805, 
+          "average": 16980.5
         }, 
         "South Sudan": {
           "count": 10, 
-          "sum": 346, 
-          "average": 34.6
+          "sum": 519, 
+          "average": 51.9
         }, 
         "Hungary": {
           "count": 10, 
-          "sum": 9452, 
-          "average": 945.2
+          "sum": 649056, 
+          "average": 64905.6
         }, 
         "Croatia": {
           "count": 10, 
-          "sum": 8885, 
-          "average": 888.5
+          "sum": 261204, 
+          "average": 26120.4
         }, 
         "Syria": {
           "count": 10, 
-          "sum": 20887, 
-          "average": 2088.7
+          "sum": 96606, 
+          "average": 9660.6
         }, 
         "Other Asia": {
           "count": 10, 
@@ -14802,38 +14802,38 @@ immigration_bar = [
         }, 
         "Burma": {
           "count": 10, 
-          "sum": 21552, 
-          "average": 2155.2
+          "sum": 34217, 
+          "average": 3421.7
         }, 
         "Honduras": {
           "count": 10, 
-          "sum": 49448, 
-          "average": 4944.8
+          "sum": 1385280, 
+          "average": 138528.0
         }, 
         "Equatorial Guinea": {
           "count": 10, 
-          "sum": 83, 
-          "average": 8.3
+          "sum": 6698, 
+          "average": 669.8
         }, 
         "Tunisia": {
           "count": 10, 
-          "sum": 3510, 
-          "average": 351.0
+          "sum": 79321, 
+          "average": 7932.1
         }, 
         "Nicaragua": {
           "count": 10, 
-          "sum": 71774, 
-          "average": 7177.4
+          "sum": 553457, 
+          "average": 55345.7
         }, 
         "Singapore": {
           "count": 10, 
-          "sum": 3297, 
-          "average": 329.7
+          "sum": 1344162, 
+          "average": 134416.2
         }, 
         "Serbia": {
           "count": 10, 
-          "sum": 630, 
-          "average": 63.0
+          "sum": -10, 
+          "average": -1.0
         }, 
         "Martinique": {
           "count": 10, 
@@ -14842,8 +14842,8 @@ immigration_bar = [
         }, 
         "United Kingdom": {
           "count": 10, 
-          "sum": 92255, 
-          "average": 9225.5
+          "sum": 48317799, 
+          "average": 4831779.9
         }, 
         "Christmas Island": {
           "count": 10, 
@@ -14857,13 +14857,13 @@ immigration_bar = [
         }, 
         "Greece": {
           "count": 10, 
-          "sum": 10176, 
-          "average": 1017.6
+          "sum": 775493, 
+          "average": 77549.3
         }, 
         "Sri Lanka": {
           "count": 10, 
-          "sum": 11981, 
-          "average": 1198.1
+          "sum": 195611, 
+          "average": 19561.1
         }, 
         "French Guiana": {
           "count": 10, 
@@ -14872,8 +14872,8 @@ immigration_bar = [
         }, 
         "Czechoslovakia": {
           "count": 10, 
-          "sum": 4193, 
-          "average": 419.3
+          "sum": -10, 
+          "average": -1.0
         }
       }, 
       "immigration.[0].Data.Refugees.Defensive Asylum": {
@@ -17452,7 +17452,7 @@ immigration_bar = [
       }
     }, 
     "name": "immigration.[0].Country", 
-    "pretty": "Country: Country", 
+    "pretty": "Country", 
     "indexes": [
       "Canada", 
       "East Timor", 

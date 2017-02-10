@@ -10400,7 +10400,7 @@ broadway = [
       14, 
       14
     ], 
-    "pretty": "Date: Day", 
+    "pretty": "Date, Day", 
     "type": "number"
   }, 
   {
@@ -20804,7 +20804,7 @@ broadway = [
       "08/14/2016", 
       "08/14/2016"
     ], 
-    "pretty": "Date: Full", 
+    "pretty": "Date, Full", 
     "type": "text"
   }, 
   {
@@ -31208,7 +31208,7 @@ broadway = [
       8, 
       8
     ], 
-    "pretty": "Date: Month", 
+    "pretty": "Date, Month", 
     "type": "number"
   }, 
   {
@@ -41612,7 +41612,7 @@ broadway = [
       2016, 
       2016
     ], 
-    "pretty": "Date: Year", 
+    "pretty": "Date, Year", 
     "type": "number"
   }, 
   {
@@ -52016,7 +52016,7 @@ broadway = [
       "Something Rotten!", 
       "The Phantom Of The Opera"
     ], 
-    "pretty": "Show: Name", 
+    "pretty": "Show, Name", 
     "type": "text"
   }, 
   {
@@ -62420,7 +62420,7 @@ broadway = [
       "St. James", 
       "Majestic"
     ], 
-    "pretty": "Show: Theatre", 
+    "pretty": "Show, Theatre", 
     "type": "text"
   }, 
   {
@@ -72824,7 +72824,7 @@ broadway = [
       "Musical", 
       "Musical"
     ], 
-    "pretty": "Show: Type", 
+    "pretty": "Show, Type", 
     "type": "text"
   }, 
   {
@@ -83228,7 +83228,7 @@ broadway = [
       7239, 
       10966
     ], 
-    "pretty": "Statistics: Attendance", 
+    "pretty": "Statistics, Attendance", 
     "type": "number"
   }, 
   {
@@ -93632,7 +93632,7 @@ broadway = [
       67, 
       85
     ], 
-    "pretty": "Statistics: Capacity", 
+    "pretty": "Statistics, Capacity", 
     "type": "number"
   }, 
   {
@@ -104036,7 +104036,7 @@ broadway = [
       584022, 
       999632
     ], 
-    "pretty": "Statistics: Gross", 
+    "pretty": "Statistics, Gross", 
     "type": "number"
   }, 
   {
@@ -114440,7 +114440,7 @@ broadway = [
       46, 
       66
     ], 
-    "pretty": "Statistics: Gross Potential", 
+    "pretty": "Statistics, Gross Potential", 
     "type": "number"
   }, 
   {
@@ -124844,7 +124844,7 @@ broadway = [
       8, 
       8
     ], 
-    "pretty": "Statistics: Performances", 
+    "pretty": "Statistics, Performances", 
     "type": "number"
   }
 ]
