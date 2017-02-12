@@ -14,6 +14,8 @@ Currently, the CORGIS project expects all datasets to be a JSON file where the d
 
 Primitives can be one of integers, floats, strings, or booleans.
 
+Percentages should be stored as (100\*decimal). That is, if the original ratio is 1/2, then the number should be stored as the integer 50, rather than the decimal value .5. The major argument is that floating point values lose precision and integers are aesthetically easier to read and friendlier to students. However, in all cases, the field should be documented for clarity.
+
 We recommend against using Null values, since beginners struggle to deal with varying levels of nothingness. Most of our datasets impute missing data, often by using an average value or with obvious incorrect numbers (-1). Any such imputation should be clearly documented in the Spec file.
 
 We recommend 2-4 of nested dictionaries below the main list. Too little and the dataset is too simple to traverse; too much and students will be overwhelmed by the data.
