@@ -15,7 +15,8 @@ import corgis.drugs.domain.*;
 import java.sql.*;
 
 /**
- * {'overview': "This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.\n", 'short': 'This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.', 'citation': "<a href='https://nsduhweb.rti.org/respweb/homepage.cfm'>https://nsduhweb.rti.org/respweb/homepage.cfm</a>"}
+ * This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. Data was collected from individual states as part of the NSDUH study. The data ranges from 2002 to 2014. Some values were <i>imputed</i>, meaning that they are estimated. Both totals (in thousands of people) and rates (as a percentage of the population) are given.
+
  */
 public class DrugsLibrary {
     private String databasePath;
@@ -28,8 +29,8 @@ public class DrugsLibrary {
         DrugsLibrary drugsLibrary = new DrugsLibrary();
         
         
-        System.out.println("Testing production GetSurveys");
-        ArrayList<Survey> list_of_survey_1_production = drugsLibrary.getSurveys("'Cigarette Use'");
+        System.out.println("Testing production GetReports");
+        ArrayList<Report> list_of_report_1_production = drugsLibrary.getReports();
         
         
         
@@ -67,18 +68,17 @@ public class DrugsLibrary {
     
     
     /**
-     * Given one of the survey questions, returns the associated data from respondents.
+     * Returns all of the reports.
     
-     * @param question The name of the survey question. Must be one of 'Cocaine Year', 'Alcohol Month', 'Cigarette Use', 'Alcohol Risk', 'Illicit/Alcohol Dependence or Abuse', 'Marijuana New', 'Illicit Dependence', 'Alcohol Dependence', 'Tobacco Use', 'Alcohol Binge', 'Marijuana Risk', 'Alcohol Abuse', 'Marijuana Month', 'Illicit Dependence or Abuse', 'Smoking Risk', 'Illicit Month', 'Alcohol Treatment', 'Nonmarijuana Illicit', 'Pain Relievers', 'Marijuana Year', 'Illicit Treatment', 'Depression'.
-     * @return a list[survey]
+     * @return a list[report]
      */
-	public ArrayList<Survey> getSurveys(String question) {
+	public ArrayList<Report> getReports() {
         String query;
         boolean test = false;
         if (test) {
             query = String.format("", this.HARDWARE);
         } else {
-            query = "SELECT data FROM drugs WHERE name=? COLLATE NOCASE";
+            query = "SELECT data FROM drugs";
         }
         PreparedStatement preparedQuery = null;
         ResultSet rs = null;
@@ -89,27 +89,21 @@ public class DrugsLibrary {
     		e.printStackTrace();
         }
         try {
-            preparedQuery.setString(1, question);
-        } catch (SQLException e) {
-            System.err.println("Could not build prepare argument: question");
-    		e.printStackTrace();
-        }
-        try {
             rs = preparedQuery.executeQuery();
         } catch (SQLException e) {
             System.err.println("Could not execute query.");
     		e.printStackTrace();
         }
         
-        ArrayList<Survey> result = new ArrayList<Survey>();
+        ArrayList<Report> result = new ArrayList<Report>();
         try {
             while (rs.next()) {
                 String raw_result = rs.getString(1);
-                Survey parsed = null;
+                Report parsed = null;
                 if (test) {
                     
                 } else {
-                    parsed = new Survey((JSONObject)this.parser.parse(raw_result));
+                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 
@@ -120,7 +114,7 @@ public class DrugsLibrary {
             System.err.println("Could not iterate through query.");
     		e.printStackTrace();
         } catch (ParseException e) {
-            System.err.println("Could not convert the response from getSurveys; a parser error occurred.");
+            System.err.println("Could not convert the response from getReports; a parser error occurred.");
     		e.printStackTrace();
         }
         return result;

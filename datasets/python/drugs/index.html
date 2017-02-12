@@ -17,6 +17,9 @@ Drugs Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -209,8 +212,7 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#downloads">Downloads</a></li>
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
-        <li><a href='#get_all_surveys'>get_all_surveys</a></li>
-        <li><a href='#get_surveys'>get_surveys</a></li>
+        <li><a href='#get_reports'>get_reports</a></li>
         
         </ol></li>
         
@@ -219,7 +221,7 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
     
     <h3 id="overview">Overview</h3>
 <p>
-This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.
+This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. Data was collected from individual states as part of the NSDUH study. The data ranges from 2002 to 2014. Some values were <i>imputed</i>, meaning that they are estimated. Both totals (in thousands of people) and rates (as a percentage of the population) are given.
 
 </p>
 
@@ -272,133 +274,1743 @@ $(document).ready(function() {
     });
     </script>
 
-    <div id='explore-drugs-__0__-data' title='List'>
-        
+
+
+    <div id='explore-drugs-__0__-Rates-Illicit-Drugs-Dependence-Past-Year' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Index</th> <th>Type</th> <th>Example Value</th></tr>
-            <tr> <td>0</td> <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-data-__0__'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td></tr>
-            <tr> <td>...</td> <td>...</td> <td>...</td></tr>
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1.15</code></td> 
+                 <td>Percentage of the population that has a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.65</code></td> 
+                 <td>Percentage of the population that has a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>2.56</code></td> 
+                 <td>Percentage of the population that has a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
         </table>
     </div>
     <script>
     $(document).ready(function() {
-        $( "#explore-drugs-__0__-data" ).dialog({
+        $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Dependence-Past-Year" ).dialog({
           autoOpen: false,
           width: 600
         });
-        $("#btn-explore-drugs-__0__-data-__0__").click(function() {
-            $( "#explore-drugs-__0__-data-__0__" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;;
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Dependence-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Dependence-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Dependence-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Dependence-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Dependence-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Dependence-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
     });
     </script>
 
-
-
-    <div id='explore-drugs-__0__-data-__0__' title='Dictionary (7 keys)'>
+    <div id='explore-drugs-__0__-Rates-Marijuana-New-Users' title='Dictionary (3 keys)'>
         <table class='table table-condensed table-striped table-bordered' >
             <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
-            <tr> <td><code>"Young CI"</code></td> 
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>0.09</code></td> 
+                 <td>Percentage of the population that has started using Marijuana in the past year among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>6.23</code></td> 
+                 <td>Percentage of the population that has started using Marijuana in the past year among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>5.97</code></td> 
+                 <td>Percentage of the population that has started using Marijuana in the past year among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Marijuana-New-Users" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-New-Users-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-New-Users-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-New-Users-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-New-Users-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-New-Users-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-New-Users-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Alcohol-Use-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1</code></td> 
+                 <td><code>104408</code></td> 
+                 <td>The estimated number of people (in thousands) that have used alcohol in the past month, among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>25398</code></td> 
+                 <td>The estimated number of people (in thousands) that have used alcohol in the past month, among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>5763</code></td> 
+                 <td>The estimated number of people (in thousands) that have used alcohol in the past month, among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Alcohol-Use-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Use-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Use-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Use-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Use-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Use-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Use-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>2.73</code></td> 
+                 <td>Percentage of the population that has used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>8.06</code></td> 
+                 <td>Percentage of the population that has used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>5.36</code></td> 
+                 <td>Percentage of the population that has used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Illicit-Drugs-Used-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>12802</code></td> 
+                 <td>The estimated number of people (in thousands) that have used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>7944</code></td> 
+                 <td>The estimated number of people (in thousands) that have used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3707</code></td> 
+                 <td>The estimated number of people (in thousands) that have used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Used-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Used-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Used-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Used-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Used-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Used-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Used-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Illicit-Drugs-Need-Treatment-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3585</code></td> 
+                 <td>The estimated number of people (in thousands) that need but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2960</code></td> 
+                 <td>The estimated number of people (in thousands) that need but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1633</code></td> 
+                 <td>The estimated number of people (in thousands) that need but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Need-Treatment-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Need-Treatment-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Need-Treatment-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Need-Treatment-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Need-Treatment-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Need-Treatment-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Need-Treatment-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Alcohol-Abuse-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.91</code></td> 
+                 <td>Percentage of the population that has a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>13.65</code></td> 
+                 <td>Percentage of the population that has a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.83</code></td> 
+                 <td>Percentage of the population that has a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Alcohol-Abuse-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Abuse-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Abuse-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Abuse-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Abuse-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Abuse-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Abuse-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Alcohol' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Abuse Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Alcohol-Abuse-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Medium"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>14</code></td> 
+            <tr> <td><code>"Binge Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Alcohol-Binge-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Old"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>32</code></td> 
+            <tr> <td><code>"Perceptions of Risk"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Alcohol-Perceptions-of-Risk'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Medium CI"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>5</code></td> 
+            <tr> <td><code>"Dependence Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Alcohol-Dependence-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"Young"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2</code></td> 
+            <tr> <td><code>"In Minors"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Alcohol-In-Minors'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
+            
+            <tr> <td><code>"Use Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Alcohol-Use-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Need Treatment Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Alcohol-Need-Treatment-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Alcohol" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Abuse-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Abuse-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Binge-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Binge-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Perceptions-of-Risk").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Perceptions-of-Risk" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Dependence-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Dependence-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-In-Minors").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-In-Minors" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Use-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Use-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Need-Treatment-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Need-Treatment-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Alcohol-Abuse-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>13754</code></td> 
+                 <td>The estimated number of people (in thousands) that have a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6803</code></td> 
+                 <td>The estimated number of people (in thousands) that have a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1855</code></td> 
+                 <td>The estimated number of people (in thousands) that have a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Alcohol-Abuse-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Abuse-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Abuse-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Abuse-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Abuse-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Abuse-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Abuse-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Alcohol-Binge-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>46083</code></td> 
+                 <td>The estimated number of people (in thousands) that have binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>17429</code></td> 
+                 <td>The estimated number of people (in thousands) that have binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3162</code></td> 
+                 <td>The estimated number of people (in thousands) that have binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Alcohol-Binge-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Binge-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Binge-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Binge-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Binge-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Binge-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Binge-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Pain-Relievers-Abuse-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>8488</code></td> 
+                 <td>The estimated number of people (in thousands) that have used pain-relievers in the past year for non-medical purposes, among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6469</code></td> 
+                 <td>The estimated number of people (in thousands) that have used pain-relievers in the past year for non-medical purposes, among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3077</code></td> 
+                 <td>The estimated number of people (in thousands) that have used pain-relievers in the past year for non-medical purposes, among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Pain-Relievers-Abuse-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Pain-Relievers-Abuse-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Pain-Relievers-Abuse-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Pain-Relievers-Abuse-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Pain-Relievers-Abuse-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Pain-Relievers-Abuse-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Pain-Relievers-Abuse-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Alcohol-Dependence-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>2.41</code></td> 
+                 <td>Percentage of the population that has a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>5.54</code></td> 
+                 <td>Percentage of the population that has a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1.67</code></td> 
+                 <td>Percentage of the population that has a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Alcohol-Dependence-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Dependence-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Dependence-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Dependence-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Dependence-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Dependence-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Dependence-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Alcohol-Need-Treatment-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.65</code></td> 
+                 <td>Percentage of the population that has needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>13.2</code></td> 
+                 <td>Percentage of the population that has needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.65</code></td> 
+                 <td>Percentage of the population that has needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Alcohol-Need-Treatment-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Need-Treatment-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Need-Treatment-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Need-Treatment-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Need-Treatment-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Need-Treatment-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Need-Treatment-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Illicit-Drugs-Abuse-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.57</code></td> 
+                 <td>Percentage of the population that has a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>15.94</code></td> 
+                 <td>Percentage of the population that has a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>9.65</code></td> 
+                 <td>Percentage of the population that has a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Abuse-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Abuse-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Abuse-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Abuse-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Abuse-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Abuse-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Abuse-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Illicit-Drugs-Used-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.57</code></td> 
+                 <td>Percentage of the population that has used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>15.94</code></td> 
+                 <td>Percentage of the population that has used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>9.65</code></td> 
+                 <td>Percentage of the population that has used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Used-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Used-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Used-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Used-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Used-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Used-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Used-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Tobacco' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Cigarette Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Tobacco-Cigarette-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Use Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Tobacco-Use-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Perceptions of Risk"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Tobacco-Perceptions-of-Risk'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Tobacco" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco-Cigarette-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco-Cigarette-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco-Use-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco-Use-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco-Perceptions-of-Risk").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco-Perceptions-of-Risk" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Population' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2801413</code></td> 
+                 <td>Estimated population for this age group (26 years old or older) in this year from US Census data for this state.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>498410</code></td> 
+                 <td>Estimated population for this age group (18 to 25 year olds) in this year from US Census data for this state.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>384241</code></td> 
+                 <td>Estimated population for this age group (12 to 17 year olds) in this year from US Census data for this state.</td> </tr>
+            
+            <tr> <td><code>"12-20"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>582609</code></td> 
+                 <td>Estimated population for this age group (12 to 20 year olds) in this year from US Census data for this state.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Population" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Population-26+").click(function() {
+            $( "#explore-drugs-__0__-Population-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Population-18-25").click(function() {
+            $( "#explore-drugs-__0__-Population-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Population-12-17").click(function() {
+            $( "#explore-drugs-__0__-Population-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Population-12-20").click(function() {
+            $( "#explore-drugs-__0__-Population-12-20" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Tobacco-Cigarette-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>25.88</code></td> 
+                 <td>Percentage of the population that has used Cigarettes in the past month, among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>39.24</code></td> 
+                 <td>Percentage of the population that has used Cigarettes in the past month, among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>13.69</code></td> 
+                 <td>Percentage of the population that has used Cigarettes in the past month, among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Tobacco-Cigarette-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco-Cigarette-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco-Cigarette-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco-Cigarette-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco-Cigarette-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco-Cigarette-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco-Cigarette-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Alcohol' title='Dictionary (7 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Abuse Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Alcohol-Abuse-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Binge Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Alcohol-Binge-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Perceptions of Risk"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Alcohol-Perceptions-of-Risk'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Dependence Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Alcohol-Dependence-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"In Minors"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Alcohol-In-Minors'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Use Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Alcohol-Use-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Need Treatment Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Alcohol-Need-Treatment-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Alcohol" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Abuse-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Abuse-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Binge-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Binge-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Perceptions-of-Risk").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Perceptions-of-Risk" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Dependence-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Dependence-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-In-Minors").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-In-Minors" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Use-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Use-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Need-Treatment-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Need-Treatment-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Alcohol-Perceptions-of-Risk' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>134944</code></td> 
+                 <td>The estimated number of people (in thousands) that perceive of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>18760</code></td> 
+                 <td>The estimated number of people (in thousands) that perceive of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>16422</code></td> 
+                 <td>The estimated number of people (in thousands) that perceive of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Alcohol-Perceptions-of-Risk" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Perceptions-of-Risk-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Perceptions-of-Risk-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Perceptions-of-Risk-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Perceptions-of-Risk-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Perceptions-of-Risk-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Perceptions-of-Risk-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Illicit-Drugs-Cocaine-Used-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1.75</code></td> 
+                 <td>Percentage of the population that has used Cocaine in the past year among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>5.49</code></td> 
+                 <td>Percentage of the population that has used Cocaine in the past year among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1.66</code></td> 
+                 <td>Percentage of the population that has used Cocaine in the past year among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Cocaine-Used-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Cocaine-Used-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Cocaine-Used-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Cocaine-Used-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Cocaine-Used-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Cocaine-Used-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Cocaine-Used-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Marijuana-Used-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>5.03</code></td> 
+                 <td>Percentage of the population that has used Marijuana in the past year among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>23.79</code></td> 
+                 <td>Percentage of the population that has used Marijuana in the past year among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>12.75</code></td> 
+                 <td>Percentage of the population that has used Marijuana in the past year among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Marijuana-Used-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-Used-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-Used-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-Used-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-Used-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-Used-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-Used-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Illicit-Drugs' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Abuse Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Illicit-Drugs-Abuse-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Dependence Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Illicit-Drugs-Dependence-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"All Except Marijuana Used Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Cocaine Used Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Illicit-Drugs-Cocaine-Used-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Used Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Illicit-Drugs-Used-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Need Treatment Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Illicit-Drugs-Need-Treatment-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Illicit-Drugs" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Abuse-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Abuse-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Dependence-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Dependence-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Cocaine-Used-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Cocaine-Used-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Used-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Used-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Need-Treatment-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Need-Treatment-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Marijuana' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"New Users"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Marijuana-New-Users'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Used Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Marijuana-Used-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Used Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Marijuana-Used-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Perceptions of Risk"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Marijuana-Perceptions-of-Risk'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Marijuana" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-New-Users").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-New-Users" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-Used-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-Used-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-Used-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-Used-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-Perceptions-of-Risk").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-Perceptions-of-Risk" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Alcohol-Dependence-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6751</code></td> 
+                 <td>The estimated number of people (in thousands) that have a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2761</code></td> 
+                 <td>The estimated number of people (in thousands) that have a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>641</code></td> 
+                 <td>The estimated number of people (in thousands) that have a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Alcohol-Dependence-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Dependence-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Dependence-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Dependence-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Dependence-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Dependence-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Dependence-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Marijuana' title='Dictionary (4 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"New Users"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Marijuana-New-Users'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Used Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Marijuana-Used-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Used Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Marijuana-Used-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Perceptions of Risk"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Marijuana-Perceptions-of-Risk'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Marijuana" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-New-Users").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-New-Users" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-Used-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-Used-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-Used-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-Used-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-Perceptions-of-Risk").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-Perceptions-of-Risk" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Pain Relievers Abuse Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Pain-Relievers-Abuse-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Illicit Drugs"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Illicit-Drugs'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Marijuana"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Marijuana'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Tobacco"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Tobacco'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Alcohol"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals-Alcohol'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Pain-Relievers-Abuse-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Totals-Pain-Relievers-Abuse-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Alcohol-Binge-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>16.45</code></td> 
+                 <td>Percentage of the population that has binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>34.97</code></td> 
+                 <td>Percentage of the population that has binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>8.23</code></td> 
+                 <td>Percentage of the population that has binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Alcohol-Binge-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Binge-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Binge-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Binge-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Binge-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Binge-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Binge-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>7647</code></td> 
+                 <td>The estimated number of people (in thousands) that have used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4017</code></td> 
+                 <td>The estimated number of people (in thousands) that have used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2059</code></td> 
+                 <td>The estimated number of people (in thousands) that have used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Tobacco' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Cigarette Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Tobacco-Cigarette-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Use Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Tobacco-Use-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Perceptions of Risk"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Tobacco-Perceptions-of-Risk'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Tobacco" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco-Cigarette-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco-Cigarette-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco-Use-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco-Use-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco-Perceptions-of-Risk").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco-Perceptions-of-Risk" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Alcohol-Perceptions-of-Risk' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>48.17</code></td> 
+                 <td>Percentage of the population that perceives of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>37.64</code></td> 
+                 <td>Percentage of the population that perceives of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>42.74</code></td> 
+                 <td>Percentage of the population that perceives of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Alcohol-Perceptions-of-Risk" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Perceptions-of-Risk-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Perceptions-of-Risk-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Perceptions-of-Risk-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Perceptions-of-Risk-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Perceptions-of-Risk-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Perceptions-of-Risk-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Marijuana-Used-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>14091</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Marijuana in the past year among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>11857</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Marijuana in the past year among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4899</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Marijuana in the past year among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Marijuana-Used-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-Used-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-Used-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-Used-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-Used-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-Used-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-Used-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Illicit-Drugs' title='Dictionary (6 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Abuse Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Illicit-Drugs-Abuse-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Dependence Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Illicit-Drugs-Dependence-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"All Except Marijuana Used Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Cocaine Used Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Illicit-Drugs-Cocaine-Used-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Used Past Month"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Illicit-Drugs-Used-Past-Month'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Need Treatment Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Illicit-Drugs-Need-Treatment-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Illicit-Drugs" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Abuse-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Abuse-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Dependence-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Dependence-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-All-Except-Marijuana-Used-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Cocaine-Used-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Cocaine-Used-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Used-Past-Month").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Used-Past-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Need-Treatment-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Need-Treatment-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
             
             <tr> <td><code>"State"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"Alabama"</code></td> 
-                 <td></td> </tr>
+                 <td>The state that this report was created for.</td> </tr>
             
-            <tr> <td><code>"Old CI"</code></td> 
+            <tr> <td><code>"Year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>17</code></td> 
+                 <td><code>2002</code></td> 
+                 <td>The year that this report was created for.</td> </tr>
+            
+            <tr> <td><code>"Rates"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-drugs-__0__-data-__0__" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-drugs-__0__-data-__0__-Young-CI").click(function() {
-            $( "#explore-drugs-__0__-data-__0__-Young-CI" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-drugs-__0__-data-__0__-Medium").click(function() {
-            $( "#explore-drugs-__0__-data-__0__-Medium" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-drugs-__0__-data-__0__-Old").click(function() {
-            $( "#explore-drugs-__0__-data-__0__-Old" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-drugs-__0__-data-__0__-Medium-CI").click(function() {
-            $( "#explore-drugs-__0__-data-__0__-Medium-CI" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-drugs-__0__-data-__0__-Young").click(function() {
-            $( "#explore-drugs-__0__-data-__0__-Young" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-drugs-__0__-data-__0__-State").click(function() {
-            $( "#explore-drugs-__0__-data-__0__-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-drugs-__0__-data-__0__-Old-CI").click(function() {
-            $( "#explore-drugs-__0__-data-__0__-Old-CI" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-    });
-    </script>
-
-    <div id='explore-drugs-__0__' title='Dictionary (3 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"about"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Cocaine Use in the Past Year"</code></td> 
+            <tr> <td><code>"Population"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Population'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
-            <tr> <td><code>"data"</code></td> 
-                 <td><span data-toggle="tooltip" title="List">list</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-data'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"name"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Cocaine Year"</code></td> 
+            <tr> <td><code>"Totals"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Totals'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
                  <td></td> </tr>
             
         </table>
@@ -410,18 +2022,948 @@ $(document).ready(function() {
           width: 600
         });
         
-        $("#btn-explore-drugs-__0__-about").click(function() {
-            $( "#explore-drugs-__0__-about" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-drugs-__0__-State").click(function() {
+            $( "#explore-drugs-__0__-State" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-drugs-__0__-data").click(function() {
-            $( "#explore-drugs-__0__-data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-drugs-__0__-Year").click(function() {
+            $( "#explore-drugs-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-        $("#btn-explore-drugs-__0__-name").click(function() {
-            $( "#explore-drugs-__0__-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+        $("#btn-explore-drugs-__0__-Rates").click(function() {
+            $( "#explore-drugs-__0__-Rates" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Population").click(function() {
+            $( "#explore-drugs-__0__-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals").click(function() {
+            $( "#explore-drugs-__0__-Totals" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Tobacco-Perceptions-of-Risk' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>196687</code></td> 
+                 <td>The estimated number of people (in thousands) that perceive great risk in smoking one or more packs of cigarettes per day, among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>31040</code></td> 
+                 <td>The estimated number of people (in thousands) that perceive great risk in smoking one or more packs of cigarettes per day, among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>23892</code></td> 
+                 <td>The estimated number of people (in thousands) that perceive great risk in smoking one or more packs of cigarettes per day, among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Tobacco-Perceptions-of-Risk" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco-Perceptions-of-Risk-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco-Perceptions-of-Risk-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco-Perceptions-of-Risk-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco-Perceptions-of-Risk-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco-Perceptions-of-Risk-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco-Perceptions-of-Risk-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Marijuana-Used-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>7283</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Marijuana in the past month among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6215</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Marijuana in the past month among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2447</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Marijuana in the past month among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Marijuana-Used-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-Used-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-Used-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-Used-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-Used-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-Used-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-Used-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Tobacco-Perceptions-of-Risk' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>70.21</code></td> 
+                 <td>Percentage of the population that perceives great risk in smoking one or more packs of cigarettes per day, among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>62.28</code></td> 
+                 <td>Percentage of the population that perceives great risk in smoking one or more packs of cigarettes per day, among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>62.18</code></td> 
+                 <td>Percentage of the population that perceives great risk in smoking one or more packs of cigarettes per day, among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Tobacco-Perceptions-of-Risk" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco-Perceptions-of-Risk-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco-Perceptions-of-Risk-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco-Perceptions-of-Risk-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco-Perceptions-of-Risk-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco-Perceptions-of-Risk-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco-Perceptions-of-Risk-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Alcohol-In-Minors' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Use"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>14495</code></td> 
+                 <td>The estimated number of minors (12-20 years old) who have drank alcohol in the past month.</td> </tr>
+            
+            <tr> <td><code>"Abuse"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>9583</code></td> 
+                 <td>The estimated number of minors (12-20 years old) who have binged alcohol in the past month. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Alcohol-In-Minors" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-In-Minors-Use").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-In-Minors-Use" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-In-Minors-Abuse").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-In-Minors-Abuse" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Tobacco-Use-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>33.07</code></td> 
+                 <td>Percentage of the population that has used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>45.2</code></td> 
+                 <td>Percentage of the population that has used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>16.66</code></td> 
+                 <td>Percentage of the population that has used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Tobacco-Use-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco-Use-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco-Use-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco-Use-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco-Use-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco-Use-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco-Use-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Illicit-Drugs-Abuse-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>12802</code></td> 
+                 <td>The estimated number of people (in thousands) that have a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>7944</code></td> 
+                 <td>The estimated number of people (in thousands) that have a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3707</code></td> 
+                 <td>The estimated number of people (in thousands) that have a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Abuse-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Abuse-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Abuse-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Abuse-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Abuse-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Abuse-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Abuse-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Illicit-Drugs-Cocaine-Used-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>4902</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Cocaine in the past year among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2736</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Cocaine in the past year among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>637</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Cocaine in the past year among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Cocaine-Used-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Cocaine-Used-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Cocaine-Used-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Cocaine-Used-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Cocaine-Used-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Cocaine-Used-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Cocaine-Used-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Tobacco-Use-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>92642</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>22528</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6401</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Tobacco-Use-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco-Use-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco-Use-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco-Use-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco-Use-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco-Use-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco-Use-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Pain-Relievers-Abuse-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>3.03</code></td> 
+                 <td>Percentage of the population that has used pain-relievers in the past year for non-medical purposes, among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>12.98</code></td> 
+                 <td>Percentage of the population that has used pain-relievers in the past year for non-medical purposes, among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>8.01</code></td> 
+                 <td>Percentage of the population that has used pain-relievers in the past year for non-medical purposes, among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Pain-Relievers-Abuse-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Pain-Relievers-Abuse-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Pain-Relievers-Abuse-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Pain-Relievers-Abuse-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Pain-Relievers-Abuse-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Pain-Relievers-Abuse-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Pain-Relievers-Abuse-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Alcohol-Need-Treatment-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>13026</code></td> 
+                 <td>The estimated number of people (in thousands) that have needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>6579</code></td> 
+                 <td>The estimated number of people (in thousands) that have needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>1786</code></td> 
+                 <td>The estimated number of people (in thousands) that have needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Alcohol-Need-Treatment-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Need-Treatment-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Need-Treatment-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Need-Treatment-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Need-Treatment-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Alcohol-Need-Treatment-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Alcohol-Need-Treatment-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Marijuana-Perceptions-of-Risk' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>147802</code></td> 
+                 <td>The estimated number of people (in thousands) that perceive great risk in Smoking Marijuana once a month, among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>15435</code></td> 
+                 <td>The estimated number of people (in thousands) that perceive great risk in Smoking Marijuana once a month, among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>15208</code></td> 
+                 <td>The estimated number of people (in thousands) that perceive great risk in Smoking Marijuana once a month, among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Marijuana-Perceptions-of-Risk" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-Perceptions-of-Risk-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-Perceptions-of-Risk-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-Perceptions-of-Risk-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-Perceptions-of-Risk-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-Perceptions-of-Risk-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-Perceptions-of-Risk-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Alcohol-In-Minors' title='Dictionary (2 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Use"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>24.88</code></td> 
+                 <td>The percentage of the population of minors (12-20 years old) who have drank alcohol in the past month.</td> </tr>
+            
+            <tr> <td><code>"Abuse"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>16.45</code></td> 
+                 <td>The percentage of the population of minors (12-20 years old) who have binged alcohol in the past month. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Alcohol-In-Minors" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-In-Minors-Use").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-In-Minors-Use" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-In-Minors-Abuse").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-In-Minors-Abuse" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Marijuana-Perceptions-of-Risk' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>52.76</code></td> 
+                 <td>Percentage of the population that perceives great risk in Smoking Marijuana once a month, among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>30.97</code></td> 
+                 <td>Percentage of the population that perceives great risk in Smoking Marijuana once a month, among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>39.58</code></td> 
+                 <td>Percentage of the population that perceives great risk in Smoking Marijuana once a month, among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Marijuana-Perceptions-of-Risk" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-Perceptions-of-Risk-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-Perceptions-of-Risk-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-Perceptions-of-Risk-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-Perceptions-of-Risk-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-Perceptions-of-Risk-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-Perceptions-of-Risk-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Marijuana-Used-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>2.6</code></td> 
+                 <td>Percentage of the population that has used Marijuana in the past month among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>12.47</code></td> 
+                 <td>Percentage of the population that has used Marijuana in the past month among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>6.37</code></td> 
+                 <td>Percentage of the population that has used Marijuana in the past month among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Marijuana-Used-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-Used-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-Used-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-Used-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-Used-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana-Used-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana-Used-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Illicit-Drugs-Dependence-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3221</code></td> 
+                 <td>The estimated number of people (in thousands) that have a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2317</code></td> 
+                 <td>The estimated number of people (in thousands) that have a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>983</code></td> 
+                 <td>The estimated number of people (in thousands) that have a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Dependence-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Dependence-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Dependence-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Dependence-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Dependence-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Illicit-Drugs-Dependence-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Illicit-Drugs-Dependence-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Alcohol-Use-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>37.27</code></td> 
+                 <td>Percentage of the population that has used alcohol in the past month, among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>50.96</code></td> 
+                 <td>Percentage of the population that has used alcohol in the past month, among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>15.0</code></td> 
+                 <td>Percentage of the population that has used alcohol in the past month, among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Alcohol-Use-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Use-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Use-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Use-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Use-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol-Use-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol-Use-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Tobacco-Cigarette-Past-Month' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>72500</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Cigarettes in the past month, among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>19557</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Cigarettes in the past month, among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>5260</code></td> 
+                 <td>The estimated number of people (in thousands) that have used Cigarettes in the past month, among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Tobacco-Cigarette-Past-Month" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco-Cigarette-Past-Month-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco-Cigarette-Past-Month-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco-Cigarette-Past-Month-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco-Cigarette-Past-Month-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Tobacco-Cigarette-Past-Month-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Tobacco-Cigarette-Past-Month-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Totals-Marijuana-New-Users' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>252</code></td> 
+                 <td>The estimated number of people (in thousands) that have started using Marijuana in the past year among this age group.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>3105</code></td> 
+                 <td>The estimated number of people (in thousands) that have started using Marijuana in the past year among this age group.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td><code>2293</code></td> 
+                 <td>The estimated number of people (in thousands) that have started using Marijuana in the past year among this age group.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Totals-Marijuana-New-Users" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-New-Users-26+").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-New-Users-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-New-Users-18-25").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-New-Users-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Totals-Marijuana-New-Users-12-17").click(function() {
+            $( "#explore-drugs-__0__-Totals-Marijuana-New-Users-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates-Illicit-Drugs-Need-Treatment-Past-Year' title='Dictionary (3 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"26+"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>1.28</code></td> 
+                 <td>Percentage of the population that needs but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+            <tr> <td><code>"18-25"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>5.94</code></td> 
+                 <td>Percentage of the population that needs but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+            <tr> <td><code>"12-17"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td><code>4.25</code></td> 
+                 <td>Percentage of the population that needs but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.</td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Need-Treatment-Past-Year" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Need-Treatment-Past-Year-26+").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Need-Treatment-Past-Year-26+" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Need-Treatment-Past-Year-18-25").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Need-Treatment-Past-Year-18-25" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs-Need-Treatment-Past-Year-12-17").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs-Need-Treatment-Past-Year-12-17" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+    });
+    </script>
+
+    <div id='explore-drugs-__0__-Rates' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"Pain Relievers Abuse Past Year"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Pain-Relievers-Abuse-Past-Year'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Illicit Drugs"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Illicit-Drugs'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Marijuana"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Marijuana'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Tobacco"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Tobacco'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"Alcohol"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td><a class='dialog-opener' id='btn-explore-drugs-__0__-Rates-Alcohol'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $( "#explore-drugs-__0__-Rates" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Pain-Relievers-Abuse-Past-Year").click(function() {
+            $( "#explore-drugs-__0__-Rates-Pain-Relievers-Abuse-Past-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Illicit-Drugs").click(function() {
+            $( "#explore-drugs-__0__-Rates-Illicit-Drugs" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Marijuana").click(function() {
+            $( "#explore-drugs-__0__-Rates-Marijuana" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Tobacco").click(function() {
+            $( "#explore-drugs-__0__-Rates-Tobacco" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-drugs-__0__-Rates-Alcohol").click(function() {
+            $( "#explore-drugs-__0__-Rates-Alcohol" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -460,11 +3002,10 @@ $(document).ready(function() {
     
     <h3 id="usage">Usage</h3>
     
-    This library has 2 functions you can use.
+    This library has 1 function you can use.
     
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">drugs</span>
-<span class="n">list_of_survey</span> <span class="o">=</span> <span class="n">drugs</span><span class="o">.</span><span class="n">get_all_surveys</span><span class="p">()</span>
-<span class="n">list_of_survey</span> <span class="o">=</span> <span class="n">drugs</span><span class="o">.</span><span class="n">get_surveys</span><span class="p">(</span><span class="s2">&quot;Cigarette Use&quot;</span><span class="p">)</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">drugs</span><span class="o">.</span><span class="n">get_reports</span><span class="p">()</span>
 </pre></div>
 
 
@@ -472,37 +3013,15 @@ $(document).ready(function() {
     
     <h3 id="documentation">Documentation</h3>
     
-<h4 id='get_all_surveys' style='font-family:monospace'    >&nbsp;drugs.get_all_surveys()</h4>
+<h4 id='get_reports' style='font-family:monospace'    >&nbsp;drugs.get_reports()</h4>
 
 <div class='row'>
 <div class='col-md-offset-1'>
-Returns all of the surveys.
+Returns all of the reports.
 </div>
 <br>
 
 <ul class="list-group col-md-6 col-md-offset-1">
-
-
-</ul>
-
-</div>
-
-<h4 id='get_surveys' style='font-family:monospace'    >&nbsp;drugs.get_surveys(question)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Given one of the survey questions, returns the associated data from respondents.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>question</b>: <i>str</i></h5>
-    <p class="list-group-item-text">The name of the survey question. Must be one of 'Cocaine Year', 'Alcohol Month', 'Cigarette Use', 'Alcohol Risk', 'Illicit/Alcohol Dependence or Abuse', 'Marijuana New', 'Illicit Dependence', 'Alcohol Dependence', 'Tobacco Use', 'Alcohol Binge', 'Marijuana Risk', 'Alcohol Abuse', 'Marijuana Month', 'Illicit Dependence or Abuse', 'Smoking Risk', 'Illicit Month', 'Alcohol Treatment', 'Nonmarijuana Illicit', 'Pain Relievers', 'Marijuana Year', 'Illicit Treatment', 'Depression'.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
 
 
 </ul>

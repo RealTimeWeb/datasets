@@ -17,6 +17,9 @@ Drugs JSON Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -36,20 +39,6 @@ Drugs JSON Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -84,7 +73,7 @@ Drugs JSON Library (CORGIS Datasets Project)
     
     <h3 id="overview">Overview</h3>
 <p>
-This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.
+This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. Data was collected from individual states as part of the NSDUH study. The data ranges from 2002 to 2014. Some values were <i>imputed</i>, meaning that they are estimated. Both totals (in thousands of people) and rates (as a percentage of the population) are given.
 
 </p>
 
@@ -114,12 +103,1408 @@ This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) 
     
     
     
-    <h3 id="usage">Field Descriptions</h3>
+    <h3 id="field">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>JSON Path</th>
+        <th class='col-md-2'>Type</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Dependence Past Year.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>1.15</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Dependence Past Year.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>4.65</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Dependence Past Year.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>2.56</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Marijuana.New Users.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has started using Marijuana in the past year among this age group.</td>
+        <td>0.09</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Marijuana.New Users.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has started using Marijuana in the past year among this age group.</td>
+        <td>6.23</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Marijuana.New Users.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has started using Marijuana in the past year among this age group.</td>
+        <td>5.97</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Use Past Month.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used alcohol in the past month, among this age group.</td>
+        <td>104408</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Use Past Month.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used alcohol in the past month, among this age group.</td>
+        <td>25398</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Use Past Month.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used alcohol in the past month, among this age group.</td>
+        <td>5763</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.All Except Marijuana Used Past Month.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>2.73</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.All Except Marijuana Used Past Month.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>8.06</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.All Except Marijuana Used Past Month.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>5.36</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Used Past Month.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>12802</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Used Past Month.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>7944</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Used Past Month.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>3707</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Need Treatment Past Year.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that need but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>3585</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Need Treatment Past Year.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that need but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>2960</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Need Treatment Past Year.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that need but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>1633</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Abuse Past Year.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>4.91</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Abuse Past Year.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>13.65</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Abuse Past Year.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>4.83</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Abuse Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 4.91, u'18-25': 13.65, u'12-17': 4.83}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Binge Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 16.45, u'18-25': 34.97, u'12-17': 8.23}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Perceptions of Risk</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 48.17, u'18-25': 37.64, u'12-17': 42.74}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Dependence Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 2.41, u'18-25': 5.54, u'12-17': 1.67}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.In Minors</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Use': 24.88, u'Abuse': 16.45}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Use Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 37.27, u'18-25': 50.96, u'12-17': 15.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Need Treatment Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 4.65, u'18-25': 13.2, u'12-17': 4.65}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Abuse Past Year.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>13754</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Abuse Past Year.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>6803</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Abuse Past Year.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>1855</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Binge Past Month.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td>
+        <td>46083</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Binge Past Month.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td>
+        <td>17429</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Binge Past Month.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td>
+        <td>3162</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Pain Relievers Abuse Past Year.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used pain-relievers in the past year for non-medical purposes, among this age group.</td>
+        <td>8488</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Pain Relievers Abuse Past Year.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used pain-relievers in the past year for non-medical purposes, among this age group.</td>
+        <td>6469</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Pain Relievers Abuse Past Year.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used pain-relievers in the past year for non-medical purposes, among this age group.</td>
+        <td>3077</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Dependence Past Year.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>2.41</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Dependence Past Year.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>5.54</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Dependence Past Year.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>1.67</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Need Treatment Past Year.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).</td>
+        <td>4.65</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Need Treatment Past Year.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).</td>
+        <td>13.2</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Need Treatment Past Year.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).</td>
+        <td>4.65</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Abuse Past Month.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>4.57</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Abuse Past Month.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>15.94</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Abuse Past Month.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>9.65</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Used Past Month.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>4.57</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Used Past Month.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>15.94</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Used Past Month.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>9.65</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Tobacco.Cigarette Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 72500, u'18-25': 19557, u'12-17': 5260}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Tobacco.Use Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 92642, u'18-25': 22528, u'12-17': 6401}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Tobacco.Perceptions of Risk</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 196687, u'18-25': 31040, u'12-17': 23892}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Population.26+</td>
+        <td>int</td> 
+        <td>Estimated population for this age group (26 years old or older) in this year from US Census data for this state.</td>
+        <td>2801413</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Population.18-25</td>
+        <td>int</td> 
+        <td>Estimated population for this age group (18 to 25 year olds) in this year from US Census data for this state.</td>
+        <td>498410</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Population.12-17</td>
+        <td>int</td> 
+        <td>Estimated population for this age group (12 to 17 year olds) in this year from US Census data for this state.</td>
+        <td>384241</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Population.12-20</td>
+        <td>int</td> 
+        <td>Estimated population for this age group (12 to 20 year olds) in this year from US Census data for this state.</td>
+        <td>582609</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Tobacco.Cigarette Past Month.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Cigarettes in the past month, among this age group.</td>
+        <td>25.88</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Tobacco.Cigarette Past Month.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Cigarettes in the past month, among this age group.</td>
+        <td>39.24</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Tobacco.Cigarette Past Month.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Cigarettes in the past month, among this age group.</td>
+        <td>13.69</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Abuse Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 13754, u'18-25': 6803, u'12-17': 1855}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Binge Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 46083, u'18-25': 17429, u'12-17': 3162}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Perceptions of Risk</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 134944, u'18-25': 18760, u'12-17': 16422}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Dependence Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 6751, u'18-25': 2761, u'12-17': 641}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.In Minors</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Use': 14495, u'Abuse': 9583}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Use Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 104408, u'18-25': 25398, u'12-17': 5763}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Need Treatment Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 13026, u'18-25': 6579, u'12-17': 1786}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Perceptions of Risk.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that perceive of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.</td>
+        <td>134944</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Perceptions of Risk.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that perceive of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.</td>
+        <td>18760</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Perceptions of Risk.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that perceive of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.</td>
+        <td>16422</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Cocaine Used Past Year.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Cocaine in the past year among this age group.</td>
+        <td>1.75</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Cocaine Used Past Year.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Cocaine in the past year among this age group.</td>
+        <td>5.49</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Cocaine Used Past Year.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Cocaine in the past year among this age group.</td>
+        <td>1.66</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Marijuana.Used Past Year.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Marijuana in the past year among this age group.</td>
+        <td>5.03</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Marijuana.Used Past Year.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Marijuana in the past year among this age group.</td>
+        <td>23.79</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Marijuana.Used Past Year.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Marijuana in the past year among this age group.</td>
+        <td>12.75</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Abuse Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 12802, u'18-25': 7944, u'12-17': 3707}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Dependence Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 3221, u'18-25': 2317, u'12-17': 983}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.All Except Marijuana Used Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 7647, u'18-25': 4017, u'12-17': 2059}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Cocaine Used Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 4902, u'18-25': 2736, u'12-17': 637}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Used Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 12802, u'18-25': 7944, u'12-17': 3707}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Need Treatment Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 3585, u'18-25': 2960, u'12-17': 1633}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Marijuana.New Users</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 252, u'18-25': 3105, u'12-17': 2293}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Marijuana.Used Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 7283, u'18-25': 6215, u'12-17': 2447}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Marijuana.Used Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 14091, u'18-25': 11857, u'12-17': 4899}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Marijuana.Perceptions of Risk</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 147802, u'18-25': 15435, u'12-17': 15208}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Dependence Past Year.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>6751</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Dependence Past Year.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>2761</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Dependence Past Year.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>641</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Marijuana.New Users</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 0.09, u'18-25': 6.23, u'12-17': 5.97}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Marijuana.Used Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 2.6, u'18-25': 12.47, u'12-17': 6.37}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Marijuana.Used Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 5.03, u'18-25': 23.79, u'12-17': 12.75}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Marijuana.Perceptions of Risk</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 52.76, u'18-25': 30.97, u'12-17': 39.58}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Pain Relievers Abuse Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 8488, u'18-25': 6469, u'12-17': 3077}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Abuse Past Month': {u'26+': 12802, u'18-25': 7944, u'12-17': 3707}, u'Dependence Past Year': {u'26+': 3221, u'18-25': 2317, u'12-17': 983}, u'All Except Marijuana Used Past Month': {u'26+': 7647, u'18-25': 4017, u'12-17': 2059}, u'Cocaine Used Past Year': {u'26+': 4902, u'18-25': 2736, u'12-17': 637}, u'Used Past Month': {u'26+': 12802, u'18-25': 7944, u'12-17': 3707}, u'Need Treatment Past Year': {u'26+': 3585, u'18-25': 2960, u'12-17': 1633}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Marijuana</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Perceptions of Risk': {u'26+': 147802, u'18-25': 15435, u'12-17': 15208}, u'Used Past Month': {u'26+': 7283, u'18-25': 6215, u'12-17': 2447}, u'Used Past Year': {u'26+': 14091, u'18-25': 11857, u'12-17': 4899}, u'New Users': {u'26+': 252, u'18-25': 3105, u'12-17': 2293}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Tobacco</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Cigarette Past Month': {u'26+': 72500, u'18-25': 19557, u'12-17': 5260}, u'Use Past Month': {u'26+': 92642, u'18-25': 22528, u'12-17': 6401}, u'Perceptions of Risk': {u'26+': 196687, u'18-25': 31040, u'12-17': 23892}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Abuse Past Year': {u'26+': 13754, u'18-25': 6803, u'12-17': 1855}, u'Binge Past Month': {u'26+': 46083, u'18-25': 17429, u'12-17': 3162}, u'Perceptions of Risk': {u'26+': 134944, u'18-25': 18760, u'12-17': 16422}, u'Dependence Past Year': {u'26+': 6751, u'18-25': 2761, u'12-17': 641}, u'In Minors': {u'Use': 14495, u'Abuse': 9583}, u'Use Past Month': {u'26+': 104408, u'18-25': 25398, u'12-17': 5763}, u'Need Treatment Past Year': {u'26+': 13026, u'18-25': 6579, u'12-17': 1786}}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Binge Past Month.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td>
+        <td>16.45</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Binge Past Month.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td>
+        <td>34.97</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Binge Past Month.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td>
+        <td>8.23</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.All Except Marijuana Used Past Month.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>7647</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.All Except Marijuana Used Past Month.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>4017</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.All Except Marijuana Used Past Month.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>2059</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Tobacco.Cigarette Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 25.88, u'18-25': 39.24, u'12-17': 13.69}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Tobacco.Use Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 33.07, u'18-25': 45.2, u'12-17': 16.66}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Tobacco.Perceptions of Risk</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 70.21, u'18-25': 62.28, u'12-17': 62.18}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Perceptions of Risk.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that perceives of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.</td>
+        <td>48.17</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Perceptions of Risk.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that perceives of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.</td>
+        <td>37.64</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Perceptions of Risk.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that perceives of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.</td>
+        <td>42.74</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Marijuana.Used Past Year.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Marijuana in the past year among this age group.</td>
+        <td>14091</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Marijuana.Used Past Year.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Marijuana in the past year among this age group.</td>
+        <td>11857</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Marijuana.Used Past Year.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Marijuana in the past year among this age group.</td>
+        <td>4899</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Abuse Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 4.57, u'18-25': 15.94, u'12-17': 9.65}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Dependence Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 1.15, u'18-25': 4.65, u'12-17': 2.56}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.All Except Marijuana Used Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 2.73, u'18-25': 8.06, u'12-17': 5.36}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Cocaine Used Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 1.75, u'18-25': 5.49, u'12-17': 1.66}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Used Past Month</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 4.57, u'18-25': 15.94, u'12-17': 9.65}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Need Treatment Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 1.28, u'18-25': 5.94, u'12-17': 4.25}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].State</td>
+        <td>unicode</td> 
+        <td>The state that this report was created for.</td>
+        <td>Alabama</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Year</td>
+        <td>int</td> 
+        <td>The year that this report was created for.</td>
+        <td>2002</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Alcohol': {u'Abuse Past Year': {u'26+': 4.91, u'18-25': 13.65, u'12-17': 4.83}, u'Binge Past Month': {u'26+': 16.45, u'18-25': 34.97, u'12-17': 8.23}, u'Perceptions of Risk': {u'26+': 48.17, u'18-25': 37.64, u'12-17': 42.74}, u'Dependence Past Year': {u'26+': 2.41, u'18-25': 5.54, u'12-17': 1.67}, u'In Minors': {u'Use': 24.88, u'Abuse': 16.45}, u'Use Past Month': {u'26+': 37.27, u'18-25': 50.96, u'12-17': 15.0}, u'Need Treatment Past Year': {u'26+': 4.65, u'18-25': 13.2, u'12-17': 4.65}}, u'Pain Relievers Abuse Past Year': {u'26+': 3.03, u'18-25': 12.98, u'12-17': 8.01}, u'Illicit Drugs': {u'Abuse Past Month': {u'26+': 4.57, u'18-25': 15.94, u'12-17': 9.65}, u'Dependence Past Year': {u'26+': 1.15, u'18-25': 4.65, u'12-17': 2.56}, u'All Except Marijuana Used Past Month': {u'26+': 2.73, u'18-25': 8.06, u'12-17': 5.36}, u'Cocaine Used Past Year': {u'26+': 1.75, u'18-25': 5.49, u'12-17': 1.66}, u'Used Past Month': {u'26+': 4.57, u'18-25': 15.94, u'12-17': 9.65}, u'Need Treatment Past Year': {u'26+': 1.28, u'18-25': 5.94, u'12-17': 4.25}}, u'Tobacco': {u'Cigarette Past Month': {u'26+': 25.88, u'18-25': 39.24, u'12-17': 13.69}, u'Use Past Month': {u'26+': 33.07, u'18-25': 45.2, u'12-17': 16.66}, u'Perceptions of Risk': {u'26+': 70.21, u'18-25': 62.28, u'12-17': 62.18}}, u'Marijuana': {u'Perceptions of Risk': {u'26+': 52.76, u'18-25': 30.97, u'12-17': 39.58}, u'Used Past Month': {u'26+': 2.6, u'18-25': 12.47, u'12-17': 6.37}, u'Used Past Year': {u'26+': 5.03, u'18-25': 23.79, u'12-17': 12.75}, u'New Users': {u'26+': 0.09, u'18-25': 6.23, u'12-17': 5.97}}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Population</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 2801413, u'18-25': 498410, u'12-17': 384241, u'12-20': 582609}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Alcohol': {u'Abuse Past Year': {u'26+': 13754, u'18-25': 6803, u'12-17': 1855}, u'Binge Past Month': {u'26+': 46083, u'18-25': 17429, u'12-17': 3162}, u'Perceptions of Risk': {u'26+': 134944, u'18-25': 18760, u'12-17': 16422}, u'Dependence Past Year': {u'26+': 6751, u'18-25': 2761, u'12-17': 641}, u'In Minors': {u'Use': 14495, u'Abuse': 9583}, u'Use Past Month': {u'26+': 104408, u'18-25': 25398, u'12-17': 5763}, u'Need Treatment Past Year': {u'26+': 13026, u'18-25': 6579, u'12-17': 1786}}, u'Pain Relievers Abuse Past Year': {u'26+': 8488, u'18-25': 6469, u'12-17': 3077}, u'Illicit Drugs': {u'Abuse Past Month': {u'26+': 12802, u'18-25': 7944, u'12-17': 3707}, u'Dependence Past Year': {u'26+': 3221, u'18-25': 2317, u'12-17': 983}, u'All Except Marijuana Used Past Month': {u'26+': 7647, u'18-25': 4017, u'12-17': 2059}, u'Cocaine Used Past Year': {u'26+': 4902, u'18-25': 2736, u'12-17': 637}, u'Used Past Month': {u'26+': 12802, u'18-25': 7944, u'12-17': 3707}, u'Need Treatment Past Year': {u'26+': 3585, u'18-25': 2960, u'12-17': 1633}}, u'Tobacco': {u'Cigarette Past Month': {u'26+': 72500, u'18-25': 19557, u'12-17': 5260}, u'Use Past Month': {u'26+': 92642, u'18-25': 22528, u'12-17': 6401}, u'Perceptions of Risk': {u'26+': 196687, u'18-25': 31040, u'12-17': 23892}}, u'Marijuana': {u'Perceptions of Risk': {u'26+': 147802, u'18-25': 15435, u'12-17': 15208}, u'Used Past Month': {u'26+': 7283, u'18-25': 6215, u'12-17': 2447}, u'Used Past Year': {u'26+': 14091, u'18-25': 11857, u'12-17': 4899}, u'New Users': {u'26+': 252, u'18-25': 3105, u'12-17': 2293}}}</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Tobacco.Perceptions of Risk.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that perceive great risk in smoking one or more packs of cigarettes per day, among this age group.</td>
+        <td>196687</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Tobacco.Perceptions of Risk.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that perceive great risk in smoking one or more packs of cigarettes per day, among this age group.</td>
+        <td>31040</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Tobacco.Perceptions of Risk.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that perceive great risk in smoking one or more packs of cigarettes per day, among this age group.</td>
+        <td>23892</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Marijuana.Used Past Month.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Marijuana in the past month among this age group.</td>
+        <td>7283</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Marijuana.Used Past Month.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Marijuana in the past month among this age group.</td>
+        <td>6215</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Marijuana.Used Past Month.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Marijuana in the past month among this age group.</td>
+        <td>2447</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Tobacco.Perceptions of Risk.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that perceives great risk in smoking one or more packs of cigarettes per day, among this age group.</td>
+        <td>70.21</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Tobacco.Perceptions of Risk.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that perceives great risk in smoking one or more packs of cigarettes per day, among this age group.</td>
+        <td>62.28</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Tobacco.Perceptions of Risk.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that perceives great risk in smoking one or more packs of cigarettes per day, among this age group.</td>
+        <td>62.18</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Alcohol.In Minors.Use</td>
+        <td>int</td> 
+        <td>The estimated number of minors (12-20 years old) who have drank alcohol in the past month.</td>
+        <td>14495</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.In Minors.Abuse</td>
+        <td>int</td> 
+        <td>The estimated number of minors (12-20 years old) who have binged alcohol in the past month. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td>
+        <td>9583</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Tobacco.Use Past Month.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.</td>
+        <td>33.07</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Tobacco.Use Past Month.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.</td>
+        <td>45.2</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Tobacco.Use Past Month.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.</td>
+        <td>16.66</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Abuse Past Month.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>12802</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Abuse Past Month.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>7944</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Abuse Past Month.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>3707</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Cocaine Used Past Year.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Cocaine in the past year among this age group.</td>
+        <td>4902</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Cocaine Used Past Year.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Cocaine in the past year among this age group.</td>
+        <td>2736</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Cocaine Used Past Year.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Cocaine in the past year among this age group.</td>
+        <td>637</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Tobacco.Use Past Month.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.</td>
+        <td>92642</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Tobacco.Use Past Month.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.</td>
+        <td>22528</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Tobacco.Use Past Month.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.</td>
+        <td>6401</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Pain Relievers Abuse Past Year.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used pain-relievers in the past year for non-medical purposes, among this age group.</td>
+        <td>3.03</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Pain Relievers Abuse Past Year.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used pain-relievers in the past year for non-medical purposes, among this age group.</td>
+        <td>12.98</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Pain Relievers Abuse Past Year.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used pain-relievers in the past year for non-medical purposes, among this age group.</td>
+        <td>8.01</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Need Treatment Past Year.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).</td>
+        <td>13026</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Need Treatment Past Year.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).</td>
+        <td>6579</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Alcohol.Need Treatment Past Year.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).</td>
+        <td>1786</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Marijuana.Perceptions of Risk.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that perceive great risk in Smoking Marijuana once a month, among this age group.</td>
+        <td>147802</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Marijuana.Perceptions of Risk.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that perceive great risk in Smoking Marijuana once a month, among this age group.</td>
+        <td>15435</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Marijuana.Perceptions of Risk.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that perceive great risk in Smoking Marijuana once a month, among this age group.</td>
+        <td>15208</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Alcohol.In Minors.Use</td>
+        <td>float</td> 
+        <td>The percentage of the population of minors (12-20 years old) who have drank alcohol in the past month.</td>
+        <td>24.88</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.In Minors.Abuse</td>
+        <td>float</td> 
+        <td>The percentage of the population of minors (12-20 years old) who have binged alcohol in the past month. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.</td>
+        <td>16.45</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Marijuana.Perceptions of Risk.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that perceives great risk in Smoking Marijuana once a month, among this age group.</td>
+        <td>52.76</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Marijuana.Perceptions of Risk.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that perceives great risk in Smoking Marijuana once a month, among this age group.</td>
+        <td>30.97</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Marijuana.Perceptions of Risk.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that perceives great risk in Smoking Marijuana once a month, among this age group.</td>
+        <td>39.58</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Marijuana.Used Past Month.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Marijuana in the past month among this age group.</td>
+        <td>2.6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Marijuana.Used Past Month.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Marijuana in the past month among this age group.</td>
+        <td>12.47</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Marijuana.Used Past Month.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used Marijuana in the past month among this age group.</td>
+        <td>6.37</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Dependence Past Year.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>3221</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Dependence Past Year.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>2317</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Illicit Drugs.Dependence Past Year.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).</td>
+        <td>983</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Use Past Month.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used alcohol in the past month, among this age group.</td>
+        <td>37.27</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Use Past Month.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used alcohol in the past month, among this age group.</td>
+        <td>50.96</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol.Use Past Month.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that has used alcohol in the past month, among this age group.</td>
+        <td>15.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Tobacco.Cigarette Past Month.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Cigarettes in the past month, among this age group.</td>
+        <td>72500</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Tobacco.Cigarette Past Month.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Cigarettes in the past month, among this age group.</td>
+        <td>19557</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Tobacco.Cigarette Past Month.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have used Cigarettes in the past month, among this age group.</td>
+        <td>5260</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Totals.Marijuana.New Users.26+</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have started using Marijuana in the past year among this age group.</td>
+        <td>252</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Marijuana.New Users.18-25</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have started using Marijuana in the past year among this age group.</td>
+        <td>3105</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Totals.Marijuana.New Users.12-17</td>
+        <td>int</td> 
+        <td>The estimated number of people (in thousands) that have started using Marijuana in the past year among this age group.</td>
+        <td>2293</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Need Treatment Past Year.26+</td>
+        <td>float</td> 
+        <td>Percentage of the population that needs but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>1.28</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Need Treatment Past Year.18-25</td>
+        <td>float</td> 
+        <td>Percentage of the population that needs but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>5.94</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs.Need Treatment Past Year.12-17</td>
+        <td>float</td> 
+        <td>Percentage of the population that needs but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.</td>
+        <td>4.25</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Rates.Pain Relievers Abuse Past Year</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'26+': 3.03, u'18-25': 12.98, u'12-17': 8.01}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Illicit Drugs</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Abuse Past Month': {u'26+': 4.57, u'18-25': 15.94, u'12-17': 9.65}, u'Dependence Past Year': {u'26+': 1.15, u'18-25': 4.65, u'12-17': 2.56}, u'All Except Marijuana Used Past Month': {u'26+': 2.73, u'18-25': 8.06, u'12-17': 5.36}, u'Cocaine Used Past Year': {u'26+': 1.75, u'18-25': 5.49, u'12-17': 1.66}, u'Used Past Month': {u'26+': 4.57, u'18-25': 15.94, u'12-17': 9.65}, u'Need Treatment Past Year': {u'26+': 1.28, u'18-25': 5.94, u'12-17': 4.25}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Marijuana</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Perceptions of Risk': {u'26+': 52.76, u'18-25': 30.97, u'12-17': 39.58}, u'Used Past Month': {u'26+': 2.6, u'18-25': 12.47, u'12-17': 6.37}, u'Used Past Year': {u'26+': 5.03, u'18-25': 23.79, u'12-17': 12.75}, u'New Users': {u'26+': 0.09, u'18-25': 6.23, u'12-17': 5.97}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Tobacco</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Cigarette Past Month': {u'26+': 25.88, u'18-25': 39.24, u'12-17': 13.69}, u'Use Past Month': {u'26+': 33.07, u'18-25': 45.2, u'12-17': 16.66}, u'Perceptions of Risk': {u'26+': 70.21, u'18-25': 62.28, u'12-17': 62.18}}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Rates.Alcohol</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Abuse Past Year': {u'26+': 4.91, u'18-25': 13.65, u'12-17': 4.83}, u'Binge Past Month': {u'26+': 16.45, u'18-25': 34.97, u'12-17': 8.23}, u'Perceptions of Risk': {u'26+': 48.17, u'18-25': 37.64, u'12-17': 42.74}, u'Dependence Past Year': {u'26+': 2.41, u'18-25': 5.54, u'12-17': 1.67}, u'In Minors': {u'Use': 24.88, u'Abuse': 16.45}, u'Use Past Month': {u'26+': 37.27, u'18-25': 50.96, u'12-17': 15.0}, u'Need Treatment Past Year': {u'26+': 4.65, u'18-25': 13.2, u'12-17': 4.65}}</td>
+    </tr>
+    
+    
+    
     </table>
-    
-    
 
     
 

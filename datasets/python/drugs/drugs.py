@@ -103,9 +103,9 @@ class _Auxiliary(object):
 
 
 
-def get_all_surveys():
+def get_reports():
     """
-    Returns all of the surveys.
+    Returns all of the reports.
     
     """
     if False:
@@ -120,36 +120,6 @@ def get_all_surveys():
         return _Auxiliary._byteify(data)
         
 
-def get_surveys(question):
-    """
-    Given one of the survey questions, returns the associated data from respondents.
-    
-    :param question: The name of the survey question. Must be one of 'Cocaine Year', 'Alcohol Month', 'Cigarette Use', 'Alcohol Risk', 'Illicit/Alcohol Dependence or Abuse', 'Marijuana New', 'Illicit Dependence', 'Alcohol Dependence', 'Tobacco Use', 'Alcohol Binge', 'Marijuana Risk', 'Alcohol Abuse', 'Marijuana Month', 'Illicit Dependence or Abuse', 'Smoking Risk', 'Illicit Month', 'Alcohol Treatment', 'Nonmarijuana Illicit', 'Pain Relievers', 'Marijuana Year', 'Illicit Treatment', 'Depression'.
-    :type question: str
-    """
-    
-    # Match it against recommend values
-    
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT name FROM drugs").fetchall()]
-    if question.lower() not in potentials:
-        best_guesses = _difflib.get_close_matches(question, potentials)
-        if best_guesses:
-            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
-        else:
-            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
-    if False:
-        # If there was a Test version of this method, it would go here. But alas.
-        pass
-    else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM drugs WHERE name=? COLLATE NOCASE".format(
-            hardware=_Constants._HARDWARE),
-            (question, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-
 ################################################################################
 # Internalized testing code
 ################################################################################
@@ -158,19 +128,9 @@ def _test_interfaces():
     from pprint import pprint as _pprint
     from timeit import default_timer as _default_timer
     # Production test
-    print("Production get_all_surveys")
+    print("Production get_reports")
     start_time = _default_timer()
-    result = get_all_surveys()
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    
-    # Production test
-    print("Production get_surveys")
-    start_time = _default_timer()
-    result = get_surveys("Cigarette Use")
+    result = get_reports()
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))
