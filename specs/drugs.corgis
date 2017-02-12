@@ -9,39 +9,206 @@ metadata:
     description:
         short: This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states.
         overview: >
-            This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. The units are in 1000s of people. The 'CI' refers to 'Confidence Intervals'.
+            This dataset is about substance abuse (cigarettes, marijuana, cocaine, alcohol) among different age groups and states. Data was collected from individual states as part of the NSDUH study. The data ranges from 2002 to 2014. Some values were <i>imputed</i>, meaning that they are estimated. Both totals (in thousands of people) and rates (as a percentage of the population) are given.
         citation: <a href='https://nsduhweb.rti.org/respweb/homepage.cfm'>https://nsduhweb.rti.org/respweb/homepage.cfm</a>
             
 local:
   - file: drugs.json
     name: drugs
-    row: survey
+    row: report
     indexes:
-      - name: name
-        jsonpath: drugs.[0].name
+      - name: State
+        jsonpath: drugs.[0].State
+      - name: Year
+        jsonpath: drugs.[0].Year
 interfaces:
-  - name: get all surveys
-    description: Returns all of the surveys.
-    returns: list[survey]
+  - name: get reports
+    description: Returns all of the reports.
+    returns: list[report]
     production:
         sql: SELECT data FROM drugs
         post: json()
-  - name: get surveys
-    description: Given one of the survey questions, returns the associated data from respondents.
-    args:
-      - name: question
-        type: str
-        description: The name of the survey question. Must be one of 'Cocaine Year', 'Alcohol Month', 'Cigarette Use', 'Alcohol Risk', 'Illicit/Alcohol Dependence or Abuse', 'Marijuana New', 'Illicit Dependence', 'Alcohol Dependence', 'Tobacco Use', 'Alcohol Binge', 'Marijuana Risk', 'Alcohol Abuse', 'Marijuana Month', 'Illicit Dependence or Abuse', 'Smoking Risk', 'Illicit Month', 'Alcohol Treatment', 'Nonmarijuana Illicit', 'Pain Relievers', 'Marijuana Year', 'Illicit Treatment', 'Depression'.
-        matches: SELECT DISTINCT name FROM drugs
-        default: "Cigarette Use"
-    returns: list[survey]
-    production:
-        sql: SELECT data FROM drugs WHERE name=? COLLATE NOCASE
-        post: json()
-structures:
-    "drugs.[0].data.Young": Unit of 1000 people
-    "drugs.[0].data.Medium": Unit of 1000 people
-    "drugs.[0].data.Old": Unit of 1000 people
-    "drugs.[0].data.Young CI": Designates the range for which the value that is likely to encompass the true value, e.g. 2 - 1 to 2 + 1 with 2 as the value for the unit of 1000 young users and 1 as the range of the confidence interval.
-    "drugs.[0].data.Medium CI": Designates the range for which the value that is likely to encompass the true value, e.g. 14 - 5 to 14 + 5 with 14 as the value for the unit of 1000  medium-aged users and 5 as the range of the confidence interval.
-    "drugs.[0].data.Old CI": Designates the range for which the value that is likely to encompass the true value, e.g. 32 - 17 to 32 + 17 with 32 as the value for the unit of 1000 old users and 17 as the range of the confidence interval.
+comments:
+    Year: The year that this report was created for.
+    State: The state that this report was created for.
+    Population:
+        "12-17": Estimated population for this age group (12 to 17 year olds) in this year from US Census data for this state.
+        "12-20": Estimated population for this age group (12 to 20 year olds) in this year from US Census data for this state.
+        "18-25": Estimated population for this age group (18 to 25 year olds) in this year from US Census data for this state.
+        "26+": Estimated population for this age group (26 years old or older) in this year from US Census data for this state.
+    Rates:
+        Marijuana:
+            Used Past Year:
+                "12-17": Percentage of the population that has used Marijuana in the past year among this age group.
+                "26+": Percentage of the population that has used Marijuana in the past year among this age group.
+                "18-25": Percentage of the population that has used Marijuana in the past year among this age group.
+            "New Users":
+                "12-17": Percentage of the population that has started using Marijuana in the past year among this age group.
+                "26+": Percentage of the population that has started using Marijuana in the past year among this age group.
+                "18-25": Percentage of the population that has started using Marijuana in the past year among this age group.
+            "Perceptions of Risk":
+                "12-17": Percentage of the population that perceives great risk in Smoking Marijuana once a month, among this age group.
+                "26+": Percentage of the population that perceives great risk in Smoking Marijuana once a month, among this age group.
+                "18-25": Percentage of the population that perceives great risk in Smoking Marijuana once a month, among this age group.
+            "Used Past Month":
+                "12-17": Percentage of the population that has used Marijuana in the past month among this age group.
+                "26+": Percentage of the population that has used Marijuana in the past month among this age group.
+                "18-25": Percentage of the population that has used Marijuana in the past month among this age group.
+        "Illicit Drugs":
+            "Dependence Past Year":
+                "12-17": Percentage of the population that has a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "26+":  Percentage of the population that has a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "18-25":  Percentage of the population that has a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+            "Cocaine Used Past Year":
+                "12-17": Percentage of the population that has used Cocaine in the past year among this age group.
+                "26+": Percentage of the population that has used Cocaine in the past year among this age group.
+                "18-25": Percentage of the population that has used Cocaine in the past year among this age group.
+            "Need Treatment Past Year":
+                "12-17": Percentage of the population that needs but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.
+                "26+": Percentage of the population that needs but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.
+                "18-25": Percentage of the population that needs but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.
+            "Abuse Past Month":
+                "12-17": Percentage of the population that has a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "26+": Percentage of the population that has a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "18-25": Percentage of the population that has a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+            "Used Past Month":
+                "12-17": Percentage of the population that has used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.
+                "26+": Percentage of the population that has used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.
+                "18-25": Percentage of the population that has used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.
+            "All Except Marijuana Used Past Month":
+                "12-17": Percentage of the population that has used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.
+                "26+": Percentage of the population that has used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.
+                "18-25": Percentage of the population that has used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.
+        "Alcohol":
+            "In Minors":
+                "Abuse": The percentage of the population of minors (12-20 years old) who have binged alcohol in the past month. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.
+                "Use": The percentage of the population of minors (12-20 years old) who have drank alcohol in the past month.
+            "Abuse Past Year":
+                "12-17": Percentage of the population that has a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "26+": Percentage of the population that has a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "18-25": Percentage of the population that has a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+            "Binge Past Month":
+                "12-17": Percentage of the population that has binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.
+                "26+": Percentage of the population that has binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.
+                "18-25": Percentage of the population that has binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.
+            "Use Past Month":
+                "12-17": Percentage of the population that has used alcohol in the past month, among this age group.
+                "26+": Percentage of the population that has used alcohol in the past month, among this age group.
+                "18-25": Percentage of the population that has used alcohol in the past month, among this age group.
+            "Dependence Past Year":
+                "12-17": Percentage of the population that has a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "26+": Percentage of the population that has a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "18-25": Percentage of the population that has a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+            "Need Treatment Past Year":
+                "12-17": Percentage of the population that has needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).
+                "26+": Percentage of the population that has needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).
+                "18-25": Percentage of the population that has needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).
+            "Perceptions of Risk":
+                "12-17": Percentage of the population that perceives of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.
+                "26+": Percentage of the population that perceives of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.
+                "18-25": Percentage of the population that perceives of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.
+        "Tobacco":
+            "Use Past Month":
+                "12-17": Percentage of the population that has used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.
+                "26+": Percentage of the population that has used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.
+                "18-25": Percentage of the population that has used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.
+            "Cigarette Past Month": 
+                "12-17": Percentage of the population that has used Cigarettes in the past month, among this age group.
+                "26+": Percentage of the population that has used Cigarettes in the past month, among this age group.
+                "18-25": Percentage of the population that has used Cigarettes in the past month, among this age group.
+            "Perceptions of Risk":
+                "12-17": Percentage of the population that perceives great risk in smoking one or more packs of cigarettes per day, among this age group.
+                "26+": Percentage of the population that perceives great risk in smoking one or more packs of cigarettes per day, among this age group.
+                "18-25": Percentage of the population that perceives great risk in smoking one or more packs of cigarettes per day, among this age group.
+        "Pain Relievers Abuse Past Year":
+            "12-17": Percentage of the population that has used pain-relievers in the past year for non-medical purposes, among this age group.
+            "26+": Percentage of the population that has used pain-relievers in the past year for non-medical purposes, among this age group.
+            "18-25": Percentage of the population that has used pain-relievers in the past year for non-medical purposes, among this age group.
+    Totals:
+        Marijuana:
+            Used Past Year:
+                "12-17": The estimated number of people (in thousands) that have used Marijuana in the past year among this age group.
+                "26+": The estimated number of people (in thousands) that have used Marijuana in the past year among this age group.
+                "18-25": The estimated number of people (in thousands) that have used Marijuana in the past year among this age group.
+            "New Users":
+                "12-17": The estimated number of people (in thousands) that have started using Marijuana in the past year among this age group.
+                "26+": The estimated number of people (in thousands) that have started using Marijuana in the past year among this age group.
+                "18-25": The estimated number of people (in thousands) that have started using Marijuana in the past year among this age group.
+            "Perceptions of Risk":
+                "12-17": The estimated number of people (in thousands) that perceive great risk in Smoking Marijuana once a month, among this age group.
+                "26+": The estimated number of people (in thousands) that perceive great risk in Smoking Marijuana once a month, among this age group.
+                "18-25": The estimated number of people (in thousands) that perceive great risk in Smoking Marijuana once a month, among this age group.
+            "Used Past Month":
+                "12-17": The estimated number of people (in thousands) that have used Marijuana in the past month among this age group.
+                "26+": The estimated number of people (in thousands) that have used Marijuana in the past month among this age group.
+                "18-25": The estimated number of people (in thousands) that have used Marijuana in the past month among this age group.
+        "Illicit Drugs":
+            "Dependence Past Year":
+                "12-17": The estimated number of people (in thousands) that have a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "26+":  The estimated number of people (in thousands) that have a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "18-25":  The estimated number of people (in thousands) that have a dependence on illicit drugs in the past year in this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used non-medically. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+            "Cocaine Used Past Year":
+                "12-17": The estimated number of people (in thousands) that have used Cocaine in the past year among this age group.
+                "26+": The estimated number of people (in thousands) that have used Cocaine in the past year among this age group.
+                "18-25": The estimated number of people (in thousands) that have used Cocaine in the past year among this age group.
+            "Need Treatment Past Year":
+                "12-17": The estimated number of people (in thousands) that need but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.
+                "26+": The estimated number of people (in thousands) that need but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.
+                "18-25": The estimated number of people (in thousands) that need but has not received treatment for illicit drugs in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for illicit drugs, but not receiving treatment for an illicit drug problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers). Illicit Drugs include marijuana/hashish, cocaine (including crack), inhalants, hallucinogens, heroin, or prescription-type psychotherapeutics used nonmedically.
+            "Abuse Past Month":
+                "12-17": The estimated number of people (in thousands) that have a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "26+": The estimated number of people (in thousands) that have a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "18-25": The estimated number of people (in thousands) that have a dependence on or abuse illicit drugs in the past year. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+            "Used Past Month":
+                "12-17": The estimated number of people (in thousands) that have used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.
+                "26+": The estimated number of people (in thousands) that have used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.
+                "18-25": The estimated number of people (in thousands) that have used illicit drugs in the past month among this age group. Illicit Drugs include marijuana/hashish, cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.
+            "All Except Marijuana Used Past Month":
+                "12-17": The estimated number of people (in thousands) that have used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.
+                "26+": The estimated number of people (in thousands) that have used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.
+                "18-25": The estimated number of people (in thousands) that have used illicit drugs (except Marijuana) in the past month among this age group. Illicit Drugs Other Than Marijuana include cocaine (including crack), heroin, hallucinogens, inhalants, or prescription-type psychotherapeutics used nonmedically.
+        "Alcohol":
+            "In Minors":
+                "Abuse": The estimated number of minors (12-20 years old) who have binged alcohol in the past month. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.
+                "Use": The estimated number of minors (12-20 years old) who have drank alcohol in the past month.
+            "Abuse Past Year":
+                "12-17": The estimated number of people (in thousands) that have a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "26+": The estimated number of people (in thousands) that have a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "18-25": The estimated number of people (in thousands) that have a dependence on or abused alcohol in the past year among this age group. Dependence or abuse is based on definitions found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+            "Binge Past Month":
+                "12-17": The estimated number of people (in thousands) that have binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.
+                "26+": The estimated number of people (in thousands) that have binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.
+                "18-25": The estimated number of people (in thousands) that have binged on alcohol in the past month among this age group. Binge Alcohol Use is defined as drinking five or more drinks on the same occasion (i.e., at the same time or within a couple of hours of each other) on at least 1 day in the past 30 days.
+            "Use Past Month":
+                "12-17": The estimated number of people (in thousands) that have used alcohol in the past month, among this age group.
+                "26+": The estimated number of people (in thousands) that have used alcohol in the past month, among this age group.
+                "18-25": The estimated number of people (in thousands) that have used alcohol in the past month, among this age group.
+            "Dependence Past Year":
+                "12-17": The estimated number of people (in thousands) that have a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "26+": The estimated number of people (in thousands) that have a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+                "18-25": The estimated number of people (in thousands) that have a dependence on alcohol in the past year among this age group. Dependence is based on the definition found in the 4th edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-IV).
+            "Need Treatment Past Year":
+                "12-17": The estimated number of people (in thousands) that have needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).
+                "26+": The estimated number of people (in thousands) that have needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).
+                "18-25": The estimated number of people (in thousands) that have needs but has not recieved treatment for alcohol use in the past year among this age group. Needing But Not Receiving Treatment refers to respondents classified as needing treatment for alcohol, but not receiving treatment for an alcohol problem at a specialty facility (i.e., drug and alcohol rehabilitation facilities [inpatient or outpatient], hospitals [inpatient only], and mental health centers).
+            "Perceptions of Risk":
+                "12-17": The estimated number of people (in thousands) that perceive of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.
+                "26+": The estimated number of people (in thousands) that perceive of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.
+                "18-25": The estimated number of people (in thousands) that perceive of great risk in having five or more drinks of an alcoholic beverage once or twice a week, among this age group.
+        "Tobacco":
+            "Use Past Month":
+                "12-17": The estimated number of people (in thousands) that have used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.
+                "26+": The estimated number of people (in thousands) that have used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.
+                "18-25": The estimated number of people (in thousands) that have used Tobacco products in the past month, among this age group. Tobacco Products include cigarettes, smokeless tobacco (i.e., chewing tobacco or snuff), cigars, or pipe tobacco.
+            "Cigarette Past Month": 
+                "12-17": The estimated number of people (in thousands) that have used Cigarettes in the past month, among this age group.
+                "26+": The estimated number of people (in thousands) that have used Cigarettes in the past month, among this age group.
+                "18-25": The estimated number of people (in thousands) that have used Cigarettes in the past month, among this age group.
+            "Perceptions of Risk":
+                "12-17": The estimated number of people (in thousands) that perceive great risk in smoking one or more packs of cigarettes per day, among this age group.
+                "26+": The estimated number of people (in thousands) that perceive great risk in smoking one or more packs of cigarettes per day, among this age group.
+                "18-25": The estimated number of people (in thousands) that perceive great risk in smoking one or more packs of cigarettes per day, among this age group.
+        "Pain Relievers Abuse Past Year":
+            "12-17": The estimated number of people (in thousands) that have used pain-relievers in the past year for non-medical purposes, among this age group.
+            "26+": The estimated number of people (in thousands) that have used pain-relievers in the past year for non-medical purposes, among this age group.
+            "18-25": The estimated number of people (in thousands) that have used pain-relievers in the past year for non-medical purposes, among this age group.

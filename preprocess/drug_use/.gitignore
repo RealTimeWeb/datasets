@@ -7,3 +7,6 @@ completed/
 *.xlsx
 *.xls
 *.stata
+seps/
+*.tsv
+*.pdf
