@@ -12,6 +12,10 @@ Committment to values
 
 Politeness, respect
 
+Some datasets may deal with subject matter of a sensitive nature (e.g., the Slavery dataset, Immigration dataset). Their data might be offensive to one or more groups. Although the goal of the CORGIS project is not to be provocative, a good dataset should not be rejected because it could potentially be offensive to some group. Regardless of whether this is because the terminology or values of the dataset are inherently offensive or because they are subjectively offensive, the project takes the views that learning environments should be able to provide controversial material (particularly in higher education settings). Some allowances must be made for good taste, of course.
+
+At all times, developers must make their best effort to ensure that datasets reflect reality and provide an accurate abstraction of the world they are representing.
+
 Preparing the Data File
 -----------------------
 
