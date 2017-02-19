@@ -3,6 +3,7 @@ metadata:
     name: Drugs
     builder: 2
     hardware: 100
+    outliers: True
     author: Austin Cory Bart <acbart@vt.edu>, Ryan Whitcomb <rwhit94@vt.edu>
     datetime: 5-18-16
     tags: [drugs, substances, drug usage]

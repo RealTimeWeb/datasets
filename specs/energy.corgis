@@ -8,21 +8,125 @@ metadata:
     description:
         short: United States Government reports on consumption, production, import, and export of various fuel sources.
         overview: >
-            United States Government reports on consumption, production, import, and export of various fuel sources.
-            
-            This data comes from the US Energy Information Administration, which has historical data from 1949 to 2014. All numbers are given in Quadrillion BTUs. 
+            United States Government reports on consumption, production, expenditures, and prices of various fuel sources. This data comes from the US Energy Information Administration, which has historical data from 1960 to 2014. Information was not always available, in which case 0 was reported instead. In some cases, very tiny values were rounded down to zero.
             
         citation: http://www.eia.gov/tools/faqs/
 local:
   - file: energy.json
     name: energy
     row: report
+    indexes:
+      - name: State
+        jsonpath: energy.[0].State
+      - name: Year
+        jsonpath: energy.[0].Year
 interfaces:
   - name: get reports
     returns: list[report]
-    description: Returns energy data from 1949 to 2014 across various factors.
+    description: Returns energy data from 1960 to 2014 across various factors.
     production:
         sql: SELECT data FROM energy
         post: json()
-structures:
-  "energy.[0].data": Units are in quadrillion BTUs
+comments:
+    Consumption:
+        Commercial:
+            Coal: Coal consumed by the commercial sector in billion BTU.
+            Distillate Fuel Oil: Distillate fuel oil consumed by the commercial sector in billion BTU.
+            Geothermal: Geothermal energy consumed by the commercial sector in billion BTU.
+            Hydropower: Hydropower consumed by the commercial sector in billion BTU.
+            Kerosene: Kerosene consumed by the commercial sector in billion BTU.
+            Liquefied Petroleum Gases: LPG consumed by the commercial sector in billion BTU.
+            Natural Gas: Natural gas consumed by (delivered to) the commercial sector (including supplemental gaseous fuels) in billion BTU.
+            Solar: Photovoltaic and solar thermal energy consumed by the commercial sector (except portion included in SOHCB) in billion BTU.
+            Wind: Wind energy consumed by the commercial sector in billion BTU.
+            Wood: Wood consumed by the commercial sector in billion BTU.
+        Electric Power:
+            Coal: Coal consumed by the electric power sector in billion BTU.
+            Distillate Fuel Oil: Distillate fuel oil consumed by the electrical power sector in billion BTU.
+            Natural Gas: Natural gas consumed by the electric power sector (including supplemental gaseous fuels) in billion BTU.
+            Wood: Wood and waste consumed by the electric power sector in billion BTU.
+        Industrial:
+            Coal: Coal consumed by the industrial sector in billion BTU.
+            Distillate Fuel Oil: Distillate fuel oil consumed by the industrial sector in billion BTU.
+            Geothermal: Geothermal energy consumed by the industrial sector in billion BTU.
+            Hydropower: Hydropower consumed by the industrial sector in billion BTU.
+            Kerosene: Kerosene consumed by the industrial sector in billion BTU.
+            Liquefied Petroleum Gases: LPG consumed by the industrial sector in billion BTU.
+            Natural Gas: Natural gas consumed by (delivered to) the industrial sector (including supplemental gaseous fuels) in billion BTU.
+            Other Petroleum Products: Other petroleum products consumed by the industrial sector in billion BTU.
+            Solar: Photovoltaic and solar thermal energy consumed by the industrial sector (except portion included in SOHCB) in billion BTU.
+            Wind: Wind energy consumed by the industrial sector in billion BTU.
+            Wood: Wood and waste consumed in the industrial sector, total, in billion BTU.
+        Refinery:
+            Coal: Coal consumed as refinery fuel in billion BTU.
+            Distillate Fuel Oil: Distillate fuel oil consumed as refinery fuel in billion BTU.
+            Liquefied Petroleum Gases: LPG consumed as refinery fuel in billion BTU.
+            Natural Gas: Natural gas consumed as refinery fuel (including supplemental gaseous fuels) in billion BTU.
+        Residential:
+            Coal: Coal consumed by the residential sector in billion BTU.
+            Distillate Fuel Oil: Distillate fuel oil consumed by the residential sector in billion BTU.
+            Geothermal: Geothermal energy consumed by the residential sector in billion BTU.
+            Kerosene: Kerosene consumed by the residential sector in billion BTU.
+            Liquefied Petroleum Gases: LPG consumed by the residential sector in billion BTU.
+            Natural Gas: Natural gas consumed by (delivered to) the residential sector (including supplemental gaseous fuels) in billion BTU.
+            Wood: Wood consumed by the residential sector in billion BTU.
+        Transportation:
+            Coal: Coal consumed by the transportation sector in billion BTU.
+            Distillate Fuel Oil: Distillate fuel oil consumed by the transportation sector in billion BTU.
+            Liquefied Petroleum Gases: LPG consumed by the transportation sector in billion BTU.
+            Natural Gas: Natural gas consumed by the transportation sector in billion BTU.
+    Expenditure:
+        Commercial:
+            Coal: Coal expenditures in the industrial sector in million dollars.
+            Distillate Fuel Oil: Distillate fuel oil expenditures in the industrial sector in million dollars.
+            Kerosene: Kerosene expenditures in the industrial sector in million dollars.
+            Liquefied Petroleum Gases: LPG expenditures in the industrial sector in million dollars.
+            Natural Gas: Natural gas expenditures in the industrial sector (including supplemental gaseous fuels) in million dollars.
+        Electric Power:
+            Coal: Coal expenditures in the electric power sector in million dollars.
+            Distillate Fuel Oil: Distillate fuel oil expenditures in the electric power sector in million dollars.
+            Natural Gas: Natural gas expenditures in the electric power sector (including supplemental gaseous fuels) in million dollars.
+        Industrial:
+            Coal: Coal expenditures in the industrial sector in million dollars.
+            Distillate Fuel Oil: Distillate fuel oil expenditures in the industrial sector in million dollars.
+            Kerosene: Kerosene expenditures in the industrial sector in million dollars.
+            Liquefied Petroleum Gases: LPG expenditures in the industrial sector in million dollars.
+            Natural Gas: Natural gas expenditures in the industrial sector (including supplemental gaseous fuels) in million dollars.
+            Other Petroleum Products: Other petroleum products total expenditures in the industrial sector in million dollars.
+        Residential:
+            Coal: Coal expenditures in the residential sector in million dollars.
+            Distillate Fuel Oil: Distillate fuel oil expenditures in the residential sector in million dollars.
+            Kerosene: Kerosene expenditures in the residential sector in million dollars.
+            Liquefied Petroleum Gases: LPG expenditures in the residential sector in million dollars.
+            Natural Gas: Natural gas expenditures in the residential sector (including supplemental gaseous fuels) in million dollars.
+            Wood: Wood expenditures in the residential sector in million dollars.
+        Transportation:
+            Coal: Coal expenditures in the transportation sector in million dollars.
+            Distillate Fuel Oil: Distillate fuel oil expenditures in the transportation sector in million dollars.
+            Liquefied Petroleum Gases: LPG expenditures in the transportation sector in million dollars.
+            Natural Gas: Natural gas expenditures in the transportation sector in million dollars.
+    Price:
+        Commercial:
+            Coal: Coal price in the commercial sector in dollars per million BTU.
+            Distillate Fuel Oil: Distillate fuel oil price in the commercial sector in dollars per million BTU.
+            Kerosene: Kerosene price in the commercial sector in dollars per million BTU.
+            Liquefied Petroleum Gases: LPG price in the commercial sector in dollars per million BTU.
+            Natural Gas: Natural gas price in the commercial sector (including supplemental gaseous fuels) in dollars per million BTU.
+        Electric Power:
+            Coal: Coal price in the electric power sector in dollars per million BTU.
+            Distillate Fuel Oil: Distillate fuel oil price in the electric power sector in dollars per million BTU.
+            Natural Gas: Natural gas price in the electric power sector (including supplemental gaseous fuels) in dollars per million BTU.
+        Industrial:
+            Coal: Coal price in the industrial sector in dollars per million BTU.
+            Distillate Fuel Oil: Distillate fuel oil price in the industrial sector in dollars per million BTU.
+            Kerosene: Kerosene price in the industrial sector in dollars per million BTU.
+            Liquefied Petroleum Gases: LPG price in the industrial sector in dollars per million BTU.
+            Natural Gas: Natural gas price in the industrial sector (including supplemental gaseous fuels) in dollars per million BTU.
+            Other Petroleum Products: Other petroleum products average price in the industrial sector in dollars per million BTU.
+        Transportation:
+            Coal: Coal price in the transportation sector in dollars per million BTU.
+            Distillate Fuel Oil: Distillate fuel oil price in the transportation sector in dollars per million BTU.
+            Liquefied Petroleum Gases: LPG price in the transportation sector in dollars per million BTU.
+            Natural Gas: Natural gas price in the transportation sector in dollars per million BTU.
+    Production:
+        Coal: Coal production in billion BTU. Unfortunately, the other energy sources produced by the United States (including Natural Gas and Petroleum) could not be incorporated.

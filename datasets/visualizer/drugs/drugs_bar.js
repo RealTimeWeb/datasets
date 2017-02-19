@@ -119,15 +119,15 @@ drugs_bar = [
           "sum": 63.61000000000001, 
           "average": 4.893076923076923
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 64.57, 
-          "average": 4.966923076923076
+          "sum": 89.24, 
+          "average": 6.864615384615385
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 82.83, 
-          "average": 6.371538461538462
+          "sum": 83.71, 
+          "average": 6.43923076923077
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -143,6 +143,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 84.34, 
           "average": 6.487692307692308
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 82.83, 
+          "average": 6.371538461538462
         }, 
         "Vermont": {
           "count": 13, 
@@ -204,10 +209,10 @@ drugs_bar = [
           "sum": 94.08, 
           "average": 7.236923076923077
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 78.61, 
-          "average": 6.046923076923077
+          "sum": 64.57, 
+          "average": 4.966923076923076
         }, 
         "South Dakota": {
           "count": 13, 
@@ -215,9 +220,9 @@ drugs_bar = [
           "average": 6.018461538461538
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 91.99000000000002, 
-          "average": 7.665833333333334
+          "count": 13, 
+          "sum": 97.56000000000003, 
+          "average": 7.504615384615385
         }, 
         "New Jersey": {
           "count": 13, 
@@ -239,20 +244,15 @@ drugs_bar = [
           "sum": 89.45, 
           "average": 6.880769230769231
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 65.48, 
-          "average": 6.548
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 4.67, 
-          "average": 4.67
+          "count": 13, 
+          "sum": 59.07, 
+          "average": 4.543846153846154
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 45.55, 
-          "average": 5.69375
+          "count": 13, 
+          "sum": 81.41000000000001, 
+          "average": 6.262307692307692
         }, 
         "Nevada": {
           "count": 13, 
@@ -263,6 +263,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 76.07, 
           "average": 5.851538461538461
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 78.61, 
+          "average": 6.046923076923077
         }
       }, 
       "drugs.[0].Totals.Marijuana.Perceptions of Risk.26+": {
@@ -371,15 +376,15 @@ drugs_bar = [
           "sum": 1001203, 
           "average": 77015.61538461539
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 5822914, 
-          "average": 447916.46153846156
+          "sum": 252681, 
+          "average": 19437.0
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 295758, 
-          "average": 22750.615384615383
+          "sum": 10234615, 
+          "average": 787278.0769230769
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -395,6 +400,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 1543016, 
           "average": 118693.53846153847
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 295758, 
+          "average": 22750.615384615383
         }, 
         "Vermont": {
           "count": 13, 
@@ -456,10 +466,10 @@ drugs_bar = [
           "sum": 1765275, 
           "average": 135790.38461538462
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 266600, 
-          "average": 20507.69230769231
+          "sum": 5822914, 
+          "average": 447916.46153846156
         }, 
         "South Dakota": {
           "count": 13, 
@@ -467,9 +477,9 @@ drugs_bar = [
           "average": 18303.384615384617
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 970645, 
-          "average": 80887.08333333333
+          "count": 13, 
+          "sum": 1037845, 
+          "average": 79834.23076923077
         }, 
         "New Jersey": {
           "count": 13, 
@@ -491,20 +501,15 @@ drugs_bar = [
           "sum": 2110877, 
           "average": 162375.15384615384
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 189957, 
-          "average": 18995.7
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 11159, 
-          "average": 11159.0
+          "count": 13, 
+          "sum": 152477, 
+          "average": 11729.0
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 5150177, 
-          "average": 643772.125
+          "count": 13, 
+          "sum": 8335312, 
+          "average": 641177.8461538461
         }, 
         "Nevada": {
           "count": 13, 
@@ -515,6 +520,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 317704, 
           "average": 24438.76923076923
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 266600, 
+          "average": 20507.69230769231
         }
       }, 
       "drugs.[0].Totals.Alcohol.In Minors.Use": {
@@ -623,15 +633,15 @@ drugs_bar = [
           "sum": 175196, 
           "average": 13476.615384615385
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 930102, 
-          "average": 71546.30769230769
+          "sum": 51997, 
+          "average": 3999.769230769231
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 75370, 
-          "average": 5797.692307692308
+          "sum": 1573012, 
+          "average": 121000.92307692308
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -647,6 +657,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 171680, 
           "average": 13206.153846153846
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 75370, 
+          "average": 5797.692307692308
         }, 
         "Vermont": {
           "count": 13, 
@@ -708,10 +723,10 @@ drugs_bar = [
           "sum": 171662, 
           "average": 13204.76923076923
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 61963, 
-          "average": 4766.384615384615
+          "sum": 930102, 
+          "average": 71546.30769230769
         }, 
         "South Dakota": {
           "count": 13, 
@@ -719,9 +734,9 @@ drugs_bar = [
           "average": 3235.076923076923
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 211805, 
-          "average": 17650.416666666668
+          "count": 13, 
+          "sum": 228505, 
+          "average": 17577.30769230769
         }, 
         "New Jersey": {
           "count": 13, 
@@ -743,20 +758,15 @@ drugs_bar = [
           "sum": 205433, 
           "average": 15802.538461538461
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 37752, 
-          "average": 3775.2
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 2173, 
-          "average": 2173.0
+          "count": 13, 
+          "sum": 27842, 
+          "average": 2141.6923076923076
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 637163, 
-          "average": 79645.375
+          "count": 13, 
+          "sum": 1057986, 
+          "average": 81383.53846153847
         }, 
         "Nevada": {
           "count": 13, 
@@ -767,6 +777,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 53574, 
           "average": 4121.076923076923
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 61963, 
+          "average": 4766.384615384615
         }
       }, 
       "drugs.[0].Totals.Alcohol.Abuse Past Year.18-25": {
@@ -875,15 +890,15 @@ drugs_bar = [
           "sum": 79468, 
           "average": 6112.923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 426674, 
-          "average": 32821.07692307692
+          "sum": 28826, 
+          "average": 2217.3846153846152
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 33540, 
-          "average": 2580.0
+          "sum": 848776, 
+          "average": 65290.46153846154
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -899,6 +914,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 99308, 
           "average": 7639.076923076923
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 33540, 
+          "average": 2580.0
         }, 
         "Vermont": {
           "count": 13, 
@@ -960,10 +980,10 @@ drugs_bar = [
           "sum": 87720, 
           "average": 6747.692307692308
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 33644, 
-          "average": 2588.0
+          "sum": 426674, 
+          "average": 32821.07692307692
         }, 
         "South Dakota": {
           "count": 13, 
@@ -971,9 +991,9 @@ drugs_bar = [
           "average": 1884.2307692307693
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 128307, 
-          "average": 10692.25
+          "count": 13, 
+          "sum": 136407, 
+          "average": 10492.846153846154
         }, 
         "New Jersey": {
           "count": 13, 
@@ -995,20 +1015,15 @@ drugs_bar = [
           "sum": 117734, 
           "average": 9056.461538461539
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 21951, 
-          "average": 2195.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 1752, 
-          "average": 1752.0
+          "count": 13, 
+          "sum": 20661, 
+          "average": 1589.3076923076924
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 326725, 
-          "average": 40840.625
+          "count": 13, 
+          "sum": 546433, 
+          "average": 42033.307692307695
         }, 
         "Nevada": {
           "count": 13, 
@@ -1019,6 +1034,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 26770, 
           "average": 2059.230769230769
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 33644, 
+          "average": 2588.0
         }
       }, 
       "drugs.[0].Rates.Tobacco.Perceptions of Risk.26+": {
@@ -1127,15 +1147,15 @@ drugs_bar = [
           "sum": 977.75, 
           "average": 75.21153846153847
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 1002.21, 
-          "average": 77.09307692307692
+          "sum": 918.8700000000001, 
+          "average": 70.68230769230769
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 938.25, 
-          "average": 72.17307692307692
+          "sum": 1018.73, 
+          "average": 78.36384615384615
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -1151,6 +1171,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 932.1999999999999, 
           "average": 71.7076923076923
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 938.25, 
+          "average": 72.17307692307692
         }, 
         "Vermont": {
           "count": 13, 
@@ -1212,10 +1237,10 @@ drugs_bar = [
           "sum": 907.33, 
           "average": 69.79461538461538
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 963.5100000000001, 
-          "average": 74.11615384615385
+          "sum": 1002.21, 
+          "average": 77.09307692307692
         }, 
         "South Dakota": {
           "count": 13, 
@@ -1223,9 +1248,9 @@ drugs_bar = [
           "average": 66.82307692307693
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 884.79, 
-          "average": 73.7325
+          "count": 13, 
+          "sum": 959.55, 
+          "average": 73.81153846153846
         }, 
         "New Jersey": {
           "count": 13, 
@@ -1247,20 +1272,15 @@ drugs_bar = [
           "sum": 885.5699999999999, 
           "average": 68.12076923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 700.9100000000001, 
-          "average": 70.091
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 77.42, 
-          "average": 77.42
+          "count": 13, 
+          "sum": 1009.9499999999999, 
+          "average": 77.68846153846154
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 590.8700000000001, 
-          "average": 73.85875
+          "count": 13, 
+          "sum": 964.29, 
+          "average": 74.17615384615384
         }, 
         "Nevada": {
           "count": 13, 
@@ -1271,6 +1291,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 915.5400000000002, 
           "average": 70.42615384615384
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 963.5100000000001, 
+          "average": 74.11615384615385
         }
       }, 
       "drugs.[0].Totals.Marijuana.New Users.18-25": {
@@ -1379,15 +1404,15 @@ drugs_bar = [
           "sum": 34580, 
           "average": 2660.0
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 182072, 
-          "average": 14005.538461538461
+          "sum": 11567, 
+          "average": 889.7692307692307
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 14941, 
-          "average": 1149.3076923076924
+          "sum": 336899, 
+          "average": 25915.30769230769
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -1403,6 +1428,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 39914, 
           "average": 3070.3076923076924
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 14941, 
+          "average": 1149.3076923076924
         }, 
         "Vermont": {
           "count": 13, 
@@ -1464,10 +1494,10 @@ drugs_bar = [
           "sum": 34232, 
           "average": 2633.230769230769
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 13421, 
-          "average": 1032.3846153846155
+          "sum": 182072, 
+          "average": 14005.538461538461
         }, 
         "South Dakota": {
           "count": 13, 
@@ -1475,9 +1505,9 @@ drugs_bar = [
           "average": 565.2307692307693
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 48594, 
-          "average": 4049.5
+          "count": 13, 
+          "sum": 50794, 
+          "average": 3907.230769230769
         }, 
         "New Jersey": {
           "count": 13, 
@@ -1499,20 +1529,15 @@ drugs_bar = [
           "sum": 44557, 
           "average": 3427.4615384615386
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 8498, 
-          "average": 849.8
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 961, 
-          "average": 961.0
+          "count": 13, 
+          "sum": 9034, 
+          "average": 694.9230769230769
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 113537, 
-          "average": 14192.125
+          "count": 13, 
+          "sum": 192514, 
+          "average": 14808.76923076923
         }, 
         "Nevada": {
           "count": 13, 
@@ -1523,6 +1548,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 12711, 
           "average": 977.7692307692307
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 13421, 
+          "average": 1032.3846153846155
         }
       }, 
       "drugs.[0].Totals.Alcohol.Abuse Past Year.26+": {
@@ -1631,15 +1661,15 @@ drugs_bar = [
           "sum": 185052, 
           "average": 14234.76923076923
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 961767, 
-          "average": 73982.07692307692
+          "sum": 60521, 
+          "average": 4655.461538461538
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 70748, 
-          "average": 5442.153846153846
+          "sum": 1869711, 
+          "average": 143823.92307692306
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -1655,6 +1685,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 233812, 
           "average": 17985.53846153846
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 70748, 
+          "average": 5442.153846153846
         }, 
         "Vermont": {
           "count": 13, 
@@ -1716,10 +1751,10 @@ drugs_bar = [
           "sum": 202718, 
           "average": 15593.692307692309
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 66140, 
-          "average": 5087.692307692308
+          "sum": 961767, 
+          "average": 73982.07692307692
         }, 
         "South Dakota": {
           "count": 13, 
@@ -1727,9 +1762,9 @@ drugs_bar = [
           "average": 3730.230769230769
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 261219, 
-          "average": 21768.25
+          "count": 13, 
+          "sum": 284619, 
+          "average": 21893.76923076923
         }, 
         "New Jersey": {
           "count": 13, 
@@ -1751,20 +1786,15 @@ drugs_bar = [
           "sum": 260153, 
           "average": 20011.76923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 46149, 
-          "average": 4614.9
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3158, 
-          "average": 3158.0
+          "count": 13, 
+          "sum": 46659, 
+          "average": 3589.153846153846
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 704119, 
-          "average": 88014.875
+          "count": 13, 
+          "sum": 1101700, 
+          "average": 84746.15384615384
         }, 
         "Nevada": {
           "count": 13, 
@@ -1775,6 +1805,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 63768, 
           "average": 4905.2307692307695
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 66140, 
+          "average": 5087.692307692308
         }
       }, 
       "drugs.[0].Totals.Alcohol.Use Past Month.18-25": {
@@ -1883,15 +1918,15 @@ drugs_bar = [
           "sum": 316190, 
           "average": 24322.30769230769
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 1846214, 
-          "average": 142016.46153846153
+          "sum": 91638, 
+          "average": 7049.076923076923
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 124201, 
-          "average": 9553.923076923076
+          "sum": 3260664, 
+          "average": 250820.3076923077
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -1907,6 +1942,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 384525, 
           "average": 29578.846153846152
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 124201, 
+          "average": 9553.923076923076
         }, 
         "Vermont": {
           "count": 13, 
@@ -1968,10 +2008,10 @@ drugs_bar = [
           "sum": 351396, 
           "average": 27030.46153846154
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 119352, 
-          "average": 9180.923076923076
+          "sum": 1846214, 
+          "average": 142016.46153846153
         }, 
         "South Dakota": {
           "count": 13, 
@@ -1979,9 +2019,9 @@ drugs_bar = [
           "average": 6231.7692307692305
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 455634, 
-          "average": 37969.5
+          "count": 13, 
+          "sum": 494434, 
+          "average": 38033.38461538462
         }, 
         "New Jersey": {
           "count": 13, 
@@ -2003,20 +2043,15 @@ drugs_bar = [
           "sum": 430496, 
           "average": 33115.07692307692
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 71354, 
-          "average": 7135.4
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 7332, 
-          "average": 7332.0
+          "count": 13, 
+          "sum": 87295, 
+          "average": 6715.0
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 1341000, 
-          "average": 167625.0
+          "count": 13, 
+          "sum": 2132891, 
+          "average": 164068.53846153847
         }, 
         "Nevada": {
           "count": 13, 
@@ -2027,6 +2062,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 106194, 
           "average": 8168.7692307692305
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 119352, 
+          "average": 9180.923076923076
         }
       }, 
       "drugs.[0].Rates.Marijuana.New Users.26+": {
@@ -2135,15 +2175,15 @@ drugs_bar = [
           "sum": 1.7799999999999998, 
           "average": 0.13692307692307693
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 1.88, 
-          "average": 0.14461538461538462
+          "sum": 1.9699999999999995, 
+          "average": 0.15153846153846154
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 1.9000000000000004, 
-          "average": 0.14615384615384616
+          "sum": 2.1, 
+          "average": 0.16153846153846155
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -2159,6 +2199,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 1.4700000000000002, 
           "average": 0.11307692307692307
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 1.9000000000000004, 
+          "average": 0.14615384615384616
         }, 
         "Vermont": {
           "count": 13, 
@@ -2220,10 +2265,10 @@ drugs_bar = [
           "sum": 1.3300000000000003, 
           "average": 0.10230769230769231
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 2.1199999999999997, 
-          "average": 0.1630769230769231
+          "sum": 1.88, 
+          "average": 0.14461538461538462
         }, 
         "South Dakota": {
           "count": 13, 
@@ -2231,9 +2276,9 @@ drugs_bar = [
           "average": 0.11538461538461539
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 2.2199999999999998, 
-          "average": 0.18500000000000003
+          "count": 13, 
+          "sum": 2.3699999999999997, 
+          "average": 0.1823076923076923
         }, 
         "New Jersey": {
           "count": 13, 
@@ -2255,20 +2300,15 @@ drugs_bar = [
           "sum": 1.4200000000000004, 
           "average": 0.10923076923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 1.5799999999999998, 
-          "average": 0.158
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 0.2, 
-          "average": 0.2
+          "count": 13, 
+          "sum": 2.6699999999999995, 
+          "average": 0.2053846153846154
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 1.0099999999999998, 
-          "average": 0.12625
+          "count": 13, 
+          "sum": 1.7400000000000002, 
+          "average": 0.13384615384615384
         }, 
         "Nevada": {
           "count": 13, 
@@ -2279,6 +2319,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 1.7300000000000004, 
           "average": 0.13307692307692306
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 2.1199999999999997, 
+          "average": 0.1630769230769231
         }
       }, 
       "drugs.[0].Totals.Tobacco.Perceptions of Risk.12-17": {
@@ -2387,15 +2432,15 @@ drugs_bar = [
           "sum": 256209, 
           "average": 19708.384615384617
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 1364631, 
-          "average": 104971.61538461539
+          "sum": 66341, 
+          "average": 5103.153846153846
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 88690, 
-          "average": 6822.307692307692
+          "sum": 2771281, 
+          "average": 213175.46153846153
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -2411,6 +2456,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 295327, 
           "average": 22717.46153846154
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 88690, 
+          "average": 6822.307692307692
         }, 
         "Vermont": {
           "count": 13, 
@@ -2472,10 +2522,10 @@ drugs_bar = [
           "sum": 312036, 
           "average": 24002.76923076923
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 71160, 
-          "average": 5473.846153846154
+          "sum": 1364631, 
+          "average": 104971.61538461539
         }, 
         "South Dakota": {
           "count": 13, 
@@ -2483,9 +2533,9 @@ drugs_bar = [
           "average": 4335.923076923077
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 311578, 
-          "average": 25964.833333333332
+          "count": 13, 
+          "sum": 337578, 
+          "average": 25967.53846153846
         }, 
         "New Jersey": {
           "count": 13, 
@@ -2507,20 +2557,15 @@ drugs_bar = [
           "sum": 404797, 
           "average": 31138.23076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 49974, 
-          "average": 4997.4
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 2461, 
-          "average": 2461.0
+          "count": 13, 
+          "sum": 28833, 
+          "average": 2217.923076923077
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 1154738, 
-          "average": 144342.25
+          "count": 13, 
+          "sum": 1795835, 
+          "average": 138141.15384615384
         }, 
         "Nevada": {
           "count": 13, 
@@ -2531,6 +2576,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 88200, 
           "average": 6784.615384615385
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 71160, 
+          "average": 5473.846153846154
         }
       }, 
       "drugs.[0].Rates.Alcohol.Need Treatment Past Year.12-17": {
@@ -2639,15 +2689,15 @@ drugs_bar = [
           "sum": 56.059999999999995, 
           "average": 4.312307692307693
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 56.389999999999986, 
-          "average": 4.337692307692308
+          "sum": 85.59, 
+          "average": 6.583846153846154
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 68.53999999999999, 
-          "average": 5.272307692307693
+          "sum": 58.35, 
+          "average": 4.4884615384615385
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -2663,6 +2713,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 49.300000000000004, 
           "average": 3.7923076923076926
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 68.53999999999999, 
+          "average": 5.272307692307693
         }, 
         "Vermont": {
           "count": 13, 
@@ -2724,10 +2779,10 @@ drugs_bar = [
           "sum": 51.61, 
           "average": 3.9699999999999998
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 58.67, 
-          "average": 4.513076923076923
+          "sum": 56.389999999999986, 
+          "average": 4.337692307692308
         }, 
         "South Dakota": {
           "count": 13, 
@@ -2735,9 +2790,9 @@ drugs_bar = [
           "average": 5.950769230769231
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 60.300000000000004, 
-          "average": 5.025
+          "count": 13, 
+          "sum": 63.45, 
+          "average": 4.880769230769231
         }, 
         "New Jersey": {
           "count": 13, 
@@ -2759,20 +2814,15 @@ drugs_bar = [
           "sum": 47.96000000000001, 
           "average": 3.689230769230769
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 56.3, 
-          "average": 5.630000000000001
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3.37, 
-          "average": 3.37
+          "count": 13, 
+          "sum": 37.8, 
+          "average": 2.9076923076923076
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 29.79, 
-          "average": 3.72375
+          "count": 13, 
+          "sum": 56.2, 
+          "average": 4.323076923076924
         }, 
         "Nevada": {
           "count": 13, 
@@ -2783,6 +2833,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 53.17999999999999, 
           "average": 4.090769230769231
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 58.67, 
+          "average": 4.513076923076923
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Dependence Past Year.12-17": {
@@ -2891,15 +2946,15 @@ drugs_bar = [
           "sum": 30.589999999999996, 
           "average": 2.353076923076923
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 31.939999999999998, 
-          "average": 2.4569230769230765
+          "sum": 36.39, 
+          "average": 2.7992307692307694
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 38.41, 
-          "average": 2.9546153846153844
+          "sum": 32.53, 
+          "average": 2.5023076923076926
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -2915,6 +2970,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 28.499999999999996, 
           "average": 2.1923076923076925
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 38.41, 
+          "average": 2.9546153846153844
         }, 
         "Vermont": {
           "count": 13, 
@@ -2976,10 +3036,10 @@ drugs_bar = [
           "sum": 28.13, 
           "average": 2.163846153846154
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 39.730000000000004, 
-          "average": 3.0561538461538467
+          "sum": 31.939999999999998, 
+          "average": 2.4569230769230765
         }, 
         "South Dakota": {
           "count": 13, 
@@ -2987,9 +3047,9 @@ drugs_bar = [
           "average": 2.4184615384615387
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 34.76, 
-          "average": 2.8966666666666665
+          "count": 13, 
+          "sum": 36.94, 
+          "average": 2.8415384615384616
         }, 
         "New Jersey": {
           "count": 13, 
@@ -3011,20 +3071,15 @@ drugs_bar = [
           "sum": 30.5, 
           "average": 2.3461538461538463
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 26.0, 
-          "average": 2.6
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 2.09, 
-          "average": 2.09
+          "count": 13, 
+          "sum": 30.360000000000003, 
+          "average": 2.335384615384615
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 17.95, 
-          "average": 2.24375
+          "count": 13, 
+          "sum": 31.529999999999998, 
+          "average": 2.4253846153846155
         }, 
         "Nevada": {
           "count": 13, 
@@ -3035,6 +3090,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 31.41, 
           "average": 2.416153846153846
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 39.730000000000004, 
+          "average": 3.0561538461538467
         }
       }, 
       "drugs.[0].Rates.Marijuana.Used Past Year.12-17": {
@@ -3143,15 +3203,15 @@ drugs_bar = [
           "sum": 215.66000000000003, 
           "average": 16.58923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 189.89999999999998, 
-          "average": 14.607692307692307
+          "sum": 234.00999999999993, 
+          "average": 18.00076923076923
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 242.3, 
-          "average": 18.638461538461538
+          "sum": 195.46000000000004, 
+          "average": 15.035384615384617
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -3167,6 +3227,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 167.57000000000002, 
           "average": 12.889999999999999
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 242.3, 
+          "average": 18.638461538461538
         }, 
         "Vermont": {
           "count": 13, 
@@ -3228,10 +3293,10 @@ drugs_bar = [
           "sum": 146.68999999999997, 
           "average": 11.283846153846154
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 233.56000000000003, 
-          "average": 17.966153846153848
+          "sum": 189.89999999999998, 
+          "average": 14.607692307692307
         }, 
         "South Dakota": {
           "count": 13, 
@@ -3239,9 +3304,9 @@ drugs_bar = [
           "average": 13.03076923076923
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 226.47, 
-          "average": 18.8725
+          "count": 13, 
+          "sum": 247.04, 
+          "average": 19.003076923076925
         }, 
         "New Jersey": {
           "count": 13, 
@@ -3263,20 +3328,15 @@ drugs_bar = [
           "sum": 150.89, 
           "average": 11.606923076923076
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 172.62, 
-          "average": 17.262
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 16.66, 
-          "average": 16.66
+          "count": 13, 
+          "sum": 205.04999999999998, 
+          "average": 15.773076923076925
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 96.48, 
-          "average": 12.06
+          "count": 13, 
+          "sum": 163.84, 
+          "average": 12.603076923076923
         }, 
         "Nevada": {
           "count": 13, 
@@ -3287,6 +3347,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 213.8, 
           "average": 16.446153846153848
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 233.56000000000003, 
+          "average": 17.966153846153848
         }
       }, 
       "drugs.[0].Totals.Tobacco.Use Past Month.18-25": {
@@ -3395,15 +3460,15 @@ drugs_bar = [
           "sum": 185988, 
           "average": 14306.76923076923
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 1074318, 
-          "average": 82639.84615384616
+          "sum": 66880, 
+          "average": 5144.615384615385
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 78675, 
-          "average": 6051.923076923077
+          "sum": 1836600, 
+          "average": 141276.92307692306
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -3419,6 +3484,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 293624, 
           "average": 22586.46153846154
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 78675, 
+          "average": 6051.923076923077
         }, 
         "Vermont": {
           "count": 13, 
@@ -3480,10 +3550,10 @@ drugs_bar = [
           "sum": 299934, 
           "average": 23071.846153846152
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 72180, 
-          "average": 5552.307692307692
+          "sum": 1074318, 
+          "average": 82639.84615384616
         }, 
         "South Dakota": {
           "count": 13, 
@@ -3491,9 +3561,9 @@ drugs_bar = [
           "average": 4523.846153846154
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 298680, 
-          "average": 24890.0
+          "count": 13, 
+          "sum": 322180, 
+          "average": 24783.076923076922
         }, 
         "New Jersey": {
           "count": 13, 
@@ -3515,20 +3585,15 @@ drugs_bar = [
           "sum": 397718, 
           "average": 30593.69230769231
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 51278, 
-          "average": 5127.8
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3614, 
-          "average": 3614.0
+          "count": 13, 
+          "sum": 43431, 
+          "average": 3340.846153846154
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 856051, 
-          "average": 107006.375
+          "count": 13, 
+          "sum": 1416234, 
+          "average": 108941.07692307692
         }, 
         "Nevada": {
           "count": 13, 
@@ -3539,6 +3604,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 75811, 
           "average": 5831.615384615385
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 72180, 
+          "average": 5552.307692307692
         }
       }, 
       "drugs.[0].Totals.Marijuana.New Users.12-17": {
@@ -3647,15 +3717,15 @@ drugs_bar = [
           "sum": 27128, 
           "average": 2086.769230769231
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 117362, 
-          "average": 9027.846153846154
+          "sum": 7652, 
+          "average": 588.6153846153846
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 10520, 
-          "average": 809.2307692307693
+          "sum": 252751, 
+          "average": 19442.384615384617
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -3671,6 +3741,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 26714, 
           "average": 2054.923076923077
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 10520, 
+          "average": 809.2307692307693
         }, 
         "Vermont": {
           "count": 13, 
@@ -3732,10 +3807,10 @@ drugs_bar = [
           "sum": 25380, 
           "average": 1952.3076923076924
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 7745, 
-          "average": 595.7692307692307
+          "sum": 117362, 
+          "average": 9027.846153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -3743,9 +3818,9 @@ drugs_bar = [
           "average": 403.2307692307692
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 36834, 
-          "average": 3069.5
+          "count": 13, 
+          "sum": 39634, 
+          "average": 3048.769230769231
         }, 
         "New Jersey": {
           "count": 13, 
@@ -3767,20 +3842,15 @@ drugs_bar = [
           "sum": 30188, 
           "average": 2322.153846153846
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 5411, 
-          "average": 541.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 284, 
-          "average": 284.0
+          "count": 13, 
+          "sum": 3212, 
+          "average": 247.07692307692307
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 90526, 
-          "average": 11315.75
+          "count": 13, 
+          "sum": 154992, 
+          "average": 11922.461538461539
         }, 
         "Nevada": {
           "count": 13, 
@@ -3791,6 +3861,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 8744, 
           "average": 672.6153846153846
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 7745, 
+          "average": 595.7692307692307
         }
       }, 
       "drugs.[0].Rates.Marijuana.Used Past Month.12-17": {
@@ -3899,15 +3974,15 @@ drugs_bar = [
           "sum": 113.86999999999999, 
           "average": 8.75923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 108.18000000000002, 
-          "average": 8.321538461538463
+          "sum": 129.86999999999998, 
+          "average": 9.99
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 141.83, 
-          "average": 10.91
+          "sum": 106.82999999999998, 
+          "average": 8.217692307692307
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -3923,6 +3998,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 85.88000000000001, 
           "average": 6.606153846153846
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 141.83, 
+          "average": 10.91
         }, 
         "Vermont": {
           "count": 13, 
@@ -3984,10 +4064,10 @@ drugs_bar = [
           "sum": 74.63000000000001, 
           "average": 5.740769230769231
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 138.96999999999997, 
-          "average": 10.69
+          "sum": 108.18000000000002, 
+          "average": 8.321538461538463
         }, 
         "South Dakota": {
           "count": 13, 
@@ -3995,9 +4075,9 @@ drugs_bar = [
           "average": 6.651538461538461
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 121.4, 
-          "average": 10.116666666666667
+          "count": 13, 
+          "sum": 133.74, 
+          "average": 10.287692307692309
         }, 
         "New Jersey": {
           "count": 13, 
@@ -4019,20 +4099,15 @@ drugs_bar = [
           "sum": 76.25999999999999, 
           "average": 5.866153846153846
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 94.71000000000001, 
-          "average": 9.471
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 9.31, 
-          "average": 9.31
+          "count": 13, 
+          "sum": 109.78, 
+          "average": 8.444615384615386
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 50.21000000000001, 
-          "average": 6.27625
+          "count": 13, 
+          "sum": 82.27000000000001, 
+          "average": 6.328461538461538
         }, 
         "Nevada": {
           "count": 13, 
@@ -4043,6 +4118,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 123.83, 
           "average": 9.525384615384615
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 138.96999999999997, 
+          "average": 10.69
         }
       }, 
       "drugs.[0].Totals.Tobacco.Perceptions of Risk.18-25": {
@@ -4151,15 +4231,15 @@ drugs_bar = [
           "sum": 307021, 
           "average": 23617.0
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 1974167, 
-          "average": 151859.0
+          "sum": 85480, 
+          "average": 6575.384615384615
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 109092, 
-          "average": 8391.692307692309
+          "sum": 4035250, 
+          "average": 310403.8461538461
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -4175,6 +4255,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 411654, 
           "average": 31665.69230769231
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 109092, 
+          "average": 8391.692307692309
         }, 
         "Vermont": {
           "count": 13, 
@@ -4236,10 +4321,10 @@ drugs_bar = [
           "sum": 419619, 
           "average": 32278.384615384617
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 115133, 
-          "average": 8856.384615384615
+          "sum": 1974167, 
+          "average": 151859.0
         }, 
         "South Dakota": {
           "count": 13, 
@@ -4247,9 +4332,9 @@ drugs_bar = [
           "average": 5436.461538461538
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 426061, 
-          "average": 35505.083333333336
+          "count": 13, 
+          "sum": 464461, 
+          "average": 35727.769230769234
         }, 
         "New Jersey": {
           "count": 13, 
@@ -4271,20 +4356,15 @@ drugs_bar = [
           "sum": 528955, 
           "average": 40688.846153846156
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 66061, 
-          "average": 6606.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 7102, 
-          "average": 7102.0
+          "count": 13, 
+          "sum": 87897, 
+          "average": 6761.307692307692
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 1552009, 
-          "average": 194001.125
+          "count": 13, 
+          "sum": 2447560, 
+          "average": 188273.84615384616
         }, 
         "Nevada": {
           "count": 13, 
@@ -4295,6 +4375,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 100006, 
           "average": 7692.7692307692305
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 115133, 
+          "average": 8856.384615384615
         }
       }, 
       "drugs.[0].Totals.Marijuana.Perceptions of Risk.18-25": {
@@ -4403,15 +4488,15 @@ drugs_bar = [
           "sum": 68374, 
           "average": 5259.538461538462
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 520049, 
-          "average": 40003.769230769234
+          "sum": 18998, 
+          "average": 1461.3846153846155
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 17796, 
-          "average": 1368.923076923077
+          "sum": 1150178, 
+          "average": 88475.23076923077
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -4427,6 +4512,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 137316, 
           "average": 10562.76923076923
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 17796, 
+          "average": 1368.923076923077
         }, 
         "Vermont": {
           "count": 13, 
@@ -4488,10 +4578,10 @@ drugs_bar = [
           "sum": 178640, 
           "average": 13741.538461538461
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 21277, 
-          "average": 1636.6923076923076
+          "sum": 520049, 
+          "average": 40003.769230769234
         }, 
         "South Dakota": {
           "count": 13, 
@@ -4499,9 +4589,9 @@ drugs_bar = [
           "average": 1728.2307692307693
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 92623, 
-          "average": 7718.583333333333
+          "count": 13, 
+          "sum": 97423, 
+          "average": 7494.076923076923
         }, 
         "New Jersey": {
           "count": 13, 
@@ -4523,20 +4613,15 @@ drugs_bar = [
           "sum": 180857, 
           "average": 13912.076923076924
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 13864, 
-          "average": 1386.4
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 1572, 
-          "average": 1572.0
+          "count": 13, 
+          "sum": 18544, 
+          "average": 1426.4615384615386
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 536150, 
-          "average": 67018.75
+          "count": 13, 
+          "sum": 931161, 
+          "average": 71627.76923076923
         }, 
         "Nevada": {
           "count": 13, 
@@ -4547,6 +4632,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 20226, 
           "average": 1555.8461538461538
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 21277, 
+          "average": 1636.6923076923076
         }
       }, 
       "drugs.[0].Population.12-17": {
@@ -4655,15 +4745,15 @@ drugs_bar = [
           "sum": 3839899, 
           "average": 295376.8461538461
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 20285507, 
-          "average": 1560423.6153846155
+          "sum": 1036330, 
+          "average": 79717.69230769231
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 1416043, 
-          "average": 108926.38461538461
+          "sum": 41570704, 
+          "average": 3197746.4615384615
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -4679,6 +4769,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 4739387, 
           "average": 364568.23076923075
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 1416043, 
+          "average": 108926.38461538461
         }, 
         "Vermont": {
           "count": 13, 
@@ -4740,10 +4835,10 @@ drugs_bar = [
           "sum": 5078794, 
           "average": 390676.46153846156
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 1116378, 
-          "average": 85875.23076923077
+          "sum": 20285507, 
+          "average": 1560423.6153846155
         }, 
         "South Dakota": {
           "count": 13, 
@@ -4751,9 +4846,9 @@ drugs_bar = [
           "average": 68747.23076923077
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 4754831, 
-          "average": 396235.9166666667
+          "count": 13, 
+          "sum": 5167999, 
+          "average": 397538.3846153846
         }, 
         "New Jersey": {
           "count": 13, 
@@ -4775,20 +4870,15 @@ drugs_bar = [
           "sum": 6498279, 
           "average": 499867.6153846154
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 783307, 
-          "average": 78330.7
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 37736, 
-          "average": 37736.0
+          "count": 13, 
+          "sum": 479643, 
+          "average": 36895.61538461538
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 18005097, 
-          "average": 2250637.125
+          "count": 13, 
+          "sum": 28372783, 
+          "average": 2182521.769230769
         }, 
         "Nevada": {
           "count": 13, 
@@ -4799,6 +4889,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 1360152, 
           "average": 104627.07692307692
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 1116378, 
+          "average": 85875.23076923077
         }
       }, 
       "drugs.[0].Totals.Alcohol.Perceptions of Risk.12-17": {
@@ -4907,15 +5002,15 @@ drugs_bar = [
           "sum": 145902, 
           "average": 11223.23076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 812924, 
-          "average": 62532.61538461538
+          "sum": 34366, 
+          "average": 2643.5384615384614
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 45015, 
-          "average": 3462.6923076923076
+          "sum": 1649646, 
+          "average": 126895.84615384616
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -4931,6 +5026,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 200667, 
           "average": 15435.923076923076
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 45015, 
+          "average": 3462.6923076923076
         }, 
         "Vermont": {
           "count": 13, 
@@ -4992,10 +5092,10 @@ drugs_bar = [
           "sum": 219035, 
           "average": 16848.846153846152
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 39716, 
-          "average": 3055.076923076923
+          "sum": 812924, 
+          "average": 62532.61538461538
         }, 
         "South Dakota": {
           "count": 13, 
@@ -5003,9 +5103,9 @@ drugs_bar = [
           "average": 2297.153846153846
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 165215, 
-          "average": 13767.916666666666
+          "count": 13, 
+          "sum": 179514, 
+          "average": 13808.76923076923
         }, 
         "New Jersey": {
           "count": 13, 
@@ -5027,20 +5127,15 @@ drugs_bar = [
           "sum": 268296, 
           "average": 20638.153846153848
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 26240, 
-          "average": 2624.0
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 1723, 
-          "average": 1723.0
+          "count": 13, 
+          "sum": 20804, 
+          "average": 1600.3076923076924
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 752109, 
-          "average": 94013.625
+          "count": 13, 
+          "sum": 1161727, 
+          "average": 89363.61538461539
         }, 
         "Nevada": {
           "count": 13, 
@@ -5051,6 +5146,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 45834, 
           "average": 3525.6923076923076
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 39716, 
+          "average": 3055.076923076923
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Abuse Past Month.26+": {
@@ -5159,15 +5259,15 @@ drugs_bar = [
           "sum": 86.34, 
           "average": 6.641538461538461
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 91.28999999999999, 
-          "average": 7.022307692307692
-        }, 
-        "New Hampshire": {
-          "count": 13, 
-          "sum": 108.27000000000001, 
+          "sum": 108.27, 
           "average": 8.328461538461537
+        }, 
+        "California": {
+          "count": 13, 
+          "sum": 102.68, 
+          "average": 7.898461538461538
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -5183,6 +5283,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 78.41, 
           "average": 6.031538461538461
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 108.27000000000001, 
+          "average": 8.328461538461537
         }, 
         "Vermont": {
           "count": 13, 
@@ -5244,10 +5349,10 @@ drugs_bar = [
           "sum": 68.58000000000001, 
           "average": 5.275384615384615
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 125.97, 
-          "average": 9.69
+          "sum": 91.28999999999999, 
+          "average": 7.022307692307692
         }, 
         "South Dakota": {
           "count": 13, 
@@ -5255,9 +5360,9 @@ drugs_bar = [
           "average": 4.446153846153846
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 118.1, 
-          "average": 9.841666666666667
+          "count": 13, 
+          "sum": 132.29, 
+          "average": 10.176153846153845
         }, 
         "New Jersey": {
           "count": 13, 
@@ -5279,20 +5384,15 @@ drugs_bar = [
           "sum": 66.84, 
           "average": 5.141538461538461
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 84.83, 
-          "average": 8.483
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 9.6, 
-          "average": 9.6
+          "count": 13, 
+          "sum": 131.51999999999998, 
+          "average": 10.116923076923078
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 40.870000000000005, 
-          "average": 5.10875
+          "count": 13, 
+          "sum": 64.45, 
+          "average": 4.957692307692308
         }, 
         "Nevada": {
           "count": 13, 
@@ -5303,6 +5403,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 108.54, 
           "average": 8.349230769230768
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 125.97, 
+          "average": 9.69
         }
       }, 
       "drugs.[0].Totals.Marijuana.Used Past Month.12-17": {
@@ -5411,15 +5516,15 @@ drugs_bar = [
           "sum": 33617, 
           "average": 2585.923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 168998, 
-          "average": 12999.846153846154
+          "sum": 10404, 
+          "average": 800.3076923076923
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 15478, 
-          "average": 1190.6153846153845
+          "sum": 341901, 
+          "average": 26300.076923076922
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -5435,6 +5540,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 31273, 
           "average": 2405.6153846153848
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 15478, 
+          "average": 1190.6153846153845
         }, 
         "Vermont": {
           "count": 13, 
@@ -5496,10 +5606,10 @@ drugs_bar = [
           "sum": 29160, 
           "average": 2243.076923076923
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 11911, 
-          "average": 916.2307692307693
+          "sum": 168998, 
+          "average": 12999.846153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -5507,9 +5617,9 @@ drugs_bar = [
           "average": 460.53846153846155
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 48126, 
-          "average": 4010.5
+          "count": 13, 
+          "sum": 53226, 
+          "average": 4094.3076923076924
         }, 
         "New Jersey": {
           "count": 13, 
@@ -5531,20 +5641,15 @@ drugs_bar = [
           "sum": 38084, 
           "average": 2929.5384615384614
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 7440, 
-          "average": 744.0
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 351, 
-          "average": 351.0
+          "count": 13, 
+          "sum": 4045, 
+          "average": 311.15384615384613
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 112955, 
-          "average": 14119.375
+          "count": 13, 
+          "sum": 179430, 
+          "average": 13802.307692307691
         }, 
         "Nevada": {
           "count": 13, 
@@ -5555,6 +5660,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 12977, 
           "average": 998.2307692307693
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 11911, 
+          "average": 916.2307692307693
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Dependence Past Year.26+": {
@@ -5663,15 +5773,15 @@ drugs_bar = [
           "sum": 15.81, 
           "average": 1.2161538461538461
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 18.229999999999997, 
-          "average": 1.4023076923076923
+          "sum": 14.98, 
+          "average": 1.1523076923076923
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 16.54, 
-          "average": 1.2723076923076921
+          "sum": 16.04, 
+          "average": 1.2338461538461538
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -5687,6 +5797,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 16.759999999999998, 
           "average": 1.2892307692307692
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 16.54, 
+          "average": 1.2723076923076921
         }, 
         "Vermont": {
           "count": 13, 
@@ -5748,10 +5863,10 @@ drugs_bar = [
           "sum": 15.629999999999997, 
           "average": 1.2023076923076923
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 20.19, 
-          "average": 1.5530769230769232
+          "sum": 18.229999999999997, 
+          "average": 1.4023076923076923
         }, 
         "South Dakota": {
           "count": 13, 
@@ -5759,9 +5874,9 @@ drugs_bar = [
           "average": 0.9692307692307692
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 14.020000000000001, 
-          "average": 1.1683333333333334
+          "count": 13, 
+          "sum": 15.310000000000002, 
+          "average": 1.1776923076923078
         }, 
         "New Jersey": {
           "count": 13, 
@@ -5783,20 +5898,15 @@ drugs_bar = [
           "sum": 16.669999999999998, 
           "average": 1.2823076923076924
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 11.8, 
-          "average": 1.1800000000000002
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 2.12, 
-          "average": 2.12
+          "count": 13, 
+          "sum": 29.39, 
+          "average": 2.2607692307692306
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 8.31, 
-          "average": 1.03875
+          "count": 13, 
+          "sum": 13.33, 
+          "average": 1.0253846153846153
         }, 
         "Nevada": {
           "count": 13, 
@@ -5807,6 +5917,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 14.330000000000002, 
           "average": 1.1023076923076922
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 20.19, 
+          "average": 1.5530769230769232
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Abuse Past Month.26+": {
@@ -5915,15 +6030,15 @@ drugs_bar = [
           "sum": 200422, 
           "average": 15417.076923076924
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 1140040, 
-          "average": 87695.38461538461
+          "sum": 68017, 
+          "average": 5232.076923076923
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 93396, 
-          "average": 7184.307692307692
+          "sum": 2323786, 
+          "average": 178752.76923076922
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -5939,6 +6054,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 224521, 
           "average": 17270.846153846152
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 93396, 
+          "average": 7184.307692307692
         }, 
         "Vermont": {
           "count": 13, 
@@ -6000,10 +6120,10 @@ drugs_bar = [
           "sum": 204737, 
           "average": 15749.0
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 85968, 
-          "average": 6612.923076923077
+          "sum": 1140040, 
+          "average": 87695.38461538461
         }, 
         "South Dakota": {
           "count": 13, 
@@ -6011,9 +6131,9 @@ drugs_bar = [
           "average": 2214.6923076923076
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 361423, 
-          "average": 30118.583333333332
+          "count": 13, 
+          "sum": 409723, 
+          "average": 31517.153846153848
         }, 
         "New Jersey": {
           "count": 13, 
@@ -6035,20 +6155,15 @@ drugs_bar = [
           "sum": 265740, 
           "average": 20441.53846153846
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 54300, 
-          "average": 5430.0
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3635, 
-          "average": 3635.0
+          "count": 13, 
+          "sum": 51339, 
+          "average": 3949.153846153846
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 620919, 
-          "average": 77614.875
+          "count": 13, 
+          "sum": 933549, 
+          "average": 71811.46153846153
         }, 
         "Nevada": {
           "count": 13, 
@@ -6059,6 +6174,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 97537, 
           "average": 7502.846153846154
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 85968, 
+          "average": 6612.923076923077
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Need Treatment Past Year.26+": {
@@ -6167,15 +6287,15 @@ drugs_bar = [
           "sum": 44614, 
           "average": 3431.846153846154
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 254428, 
-          "average": 19571.384615384617
+          "sum": 11037, 
+          "average": 849.0
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 15612, 
-          "average": 1200.923076923077
+          "sum": 471894, 
+          "average": 36299.53846153846
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -6191,6 +6311,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 57701, 
           "average": 4438.538461538462
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 15612, 
+          "average": 1200.923076923077
         }, 
         "Vermont": {
           "count": 13, 
@@ -6252,10 +6377,10 @@ drugs_bar = [
           "sum": 57432, 
           "average": 4417.846153846154
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 13981, 
-          "average": 1075.4615384615386
+          "sum": 254428, 
+          "average": 19571.384615384617
         }, 
         "South Dakota": {
           "count": 13, 
@@ -6263,9 +6388,9 @@ drugs_bar = [
           "average": 594.9230769230769
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 55572, 
-          "average": 4631.0
+          "count": 13, 
+          "sum": 60972, 
+          "average": 4690.153846153846
         }, 
         "New Jersey": {
           "count": 13, 
@@ -6287,20 +6412,15 @@ drugs_bar = [
           "sum": 80497, 
           "average": 6192.076923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 8466, 
-          "average": 846.6
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 734, 
-          "average": 734.0
+          "count": 13, 
+          "sum": 10640, 
+          "average": 818.4615384615385
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 156916, 
-          "average": 19614.5
+          "count": 13, 
+          "sum": 245064, 
+          "average": 18851.076923076922
         }, 
         "Nevada": {
           "count": 13, 
@@ -6311,6 +6431,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 16802, 
           "average": 1292.4615384615386
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 13981, 
+          "average": 1075.4615384615386
         }
       }, 
       "drugs.[0].Rates.Pain Relievers Abuse Past Year.26+": {
@@ -6419,15 +6544,15 @@ drugs_bar = [
           "sum": 36.92999999999999, 
           "average": 2.8407692307692307
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 38.0, 
-          "average": 2.923076923076923
+          "sum": 40.14999999999999, 
+          "average": 3.088461538461538
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 44.690000000000005, 
-          "average": 3.4376923076923074
+          "sum": 50.8, 
+          "average": 3.9076923076923076
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -6443,6 +6568,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 46.06999999999999, 
           "average": 3.543846153846154
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 44.690000000000005, 
+          "average": 3.4376923076923074
         }, 
         "Vermont": {
           "count": 13, 
@@ -6504,10 +6634,10 @@ drugs_bar = [
           "sum": 44.86, 
           "average": 3.4507692307692306
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 51.49999999999999, 
-          "average": 3.9615384615384617
+          "sum": 38.0, 
+          "average": 2.923076923076923
         }, 
         "South Dakota": {
           "count": 13, 
@@ -6515,9 +6645,9 @@ drugs_bar = [
           "average": 2.440769230769231
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 52.32, 
-          "average": 4.36
+          "count": 13, 
+          "sum": 56.43, 
+          "average": 4.340769230769231
         }, 
         "New Jersey": {
           "count": 13, 
@@ -6539,20 +6669,15 @@ drugs_bar = [
           "sum": 41.41, 
           "average": 3.1853846153846153
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 31.9, 
-          "average": 3.19
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3.39, 
-          "average": 3.39
+          "count": 13, 
+          "sum": 42.82, 
+          "average": 3.293846153846154
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 26.63, 
-          "average": 3.32875
+          "count": 13, 
+          "sum": 42.86, 
+          "average": 3.296923076923077
         }, 
         "Nevada": {
           "count": 13, 
@@ -6563,6 +6688,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 39.17, 
           "average": 3.013076923076923
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 51.49999999999999, 
+          "average": 3.9615384615384617
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Abuse Past Month.12-17": {
@@ -6671,15 +6801,15 @@ drugs_bar = [
           "sum": 140.98000000000002, 
           "average": 10.844615384615384
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 136.81, 
-          "average": 10.523846153846154
+          "sum": 163.66, 
+          "average": 12.589230769230769
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 167.58, 
-          "average": 12.89076923076923
+          "sum": 146.04, 
+          "average": 11.233846153846153
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -6695,6 +6825,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 127.46000000000001, 
           "average": 9.804615384615385
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 167.58, 
+          "average": 12.89076923076923
         }, 
         "Vermont": {
           "count": 13, 
@@ -6756,10 +6891,10 @@ drugs_bar = [
           "sum": 117.86000000000001, 
           "average": 9.066153846153846
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 172.70999999999998, 
-          "average": 13.285384615384617
+          "sum": 136.81, 
+          "average": 10.523846153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -6767,9 +6902,9 @@ drugs_bar = [
           "average": 9.386153846153846
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 159.46999999999997, 
-          "average": 13.289166666666667
+          "count": 13, 
+          "sum": 173.98999999999998, 
+          "average": 13.383846153846154
         }, 
         "New Jersey": {
           "count": 13, 
@@ -6791,20 +6926,15 @@ drugs_bar = [
           "sum": 111.24000000000001, 
           "average": 8.556923076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 118.63000000000001, 
-          "average": 11.863
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 13.54, 
-          "average": 13.54
+          "count": 13, 
+          "sum": 157.97, 
+          "average": 12.151538461538461
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 70.38, 
-          "average": 8.7975
+          "count": 13, 
+          "sum": 119.72, 
+          "average": 9.20923076923077
         }, 
         "Nevada": {
           "count": 13, 
@@ -6815,6 +6945,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 146.38, 
           "average": 11.26
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 172.70999999999998, 
+          "average": 13.285384615384617
         }
       }, 
       "drugs.[0].Rates.Alcohol.Use Past Month.26+": {
@@ -6923,15 +7058,15 @@ drugs_bar = [
           "sum": 823.05, 
           "average": 63.31153846153846
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 760.6400000000001, 
-          "average": 58.51076923076923
+          "sum": 791.1600000000001, 
+          "average": 60.85846153846153
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 865.18, 
-          "average": 66.55230769230769
+          "sum": 702.4600000000002, 
+          "average": 54.035384615384615
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -6947,6 +7082,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 640.04, 
           "average": 49.23384615384615
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 865.18, 
+          "average": 66.55230769230769
         }, 
         "Vermont": {
           "count": 13, 
@@ -7008,10 +7148,10 @@ drugs_bar = [
           "sum": 562.0500000000001, 
           "average": 43.23461538461538
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 821.65, 
-          "average": 63.20384615384615
+          "sum": 760.6400000000001, 
+          "average": 58.51076923076923
         }, 
         "South Dakota": {
           "count": 13, 
@@ -7019,9 +7159,9 @@ drugs_bar = [
           "average": 59.565384615384616
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 778.66, 
-          "average": 64.88833333333334
+          "count": 13, 
+          "sum": 844.78, 
+          "average": 64.98307692307692
         }, 
         "New Jersey": {
           "count": 13, 
@@ -7043,20 +7183,15 @@ drugs_bar = [
           "sum": 528.19, 
           "average": 40.63
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 617.88, 
-          "average": 61.788
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 63.51, 
-          "average": 63.51
+          "count": 13, 
+          "sum": 826.06, 
+          "average": 63.54307692307692
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 412.63, 
-          "average": 51.57875
+          "count": 13, 
+          "sum": 665.53, 
+          "average": 51.19461538461538
         }, 
         "Nevada": {
           "count": 13, 
@@ -7067,6 +7202,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 750.1199999999999, 
           "average": 57.70153846153846
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 821.65, 
+          "average": 63.20384615384615
         }
       }, 
       "drugs.[0].Rates.Alcohol.Perceptions of Risk.26+": {
@@ -7175,15 +7315,15 @@ drugs_bar = [
           "sum": 567.96, 
           "average": 43.689230769230775
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 573.2700000000001, 
-          "average": 44.097692307692306
+          "sum": 505.47, 
+          "average": 38.88230769230769
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 499.77, 
-          "average": 38.44384615384615
+          "sum": 624.26, 
+          "average": 48.019999999999996
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -7199,6 +7339,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 611.54, 
           "average": 47.04153846153846
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 499.77, 
+          "average": 38.44384615384615
         }, 
         "Vermont": {
           "count": 13, 
@@ -7260,10 +7405,10 @@ drugs_bar = [
           "sum": 612.7300000000001, 
           "average": 47.13307692307693
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 505.26, 
-          "average": 38.86615384615384
+          "sum": 573.2700000000001, 
+          "average": 44.097692307692306
         }, 
         "South Dakota": {
           "count": 13, 
@@ -7271,9 +7416,9 @@ drugs_bar = [
           "average": 37.05076923076923
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 493.61, 
-          "average": 41.134166666666665
+          "count": 13, 
+          "sum": 532.0, 
+          "average": 40.92307692307692
         }, 
         "New Jersey": {
           "count": 13, 
@@ -7295,20 +7440,15 @@ drugs_bar = [
           "sum": 610.69, 
           "average": 46.97615384615385
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 388.49, 
-          "average": 38.849000000000004
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 42.96, 
-          "average": 42.96
+          "count": 13, 
+          "sum": 572.6299999999999, 
+          "average": 44.04846153846154
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 374.26000000000005, 
-          "average": 46.7825
+          "count": 13, 
+          "sum": 608.5, 
+          "average": 46.80769230769231
         }, 
         "Nevada": {
           "count": 13, 
@@ -7319,6 +7459,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 501.39, 
           "average": 38.568461538461534
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 505.26, 
+          "average": 38.86615384615384
         }
       }, 
       "drugs.[0].Rates.Tobacco.Use Past Month.12-17": {
@@ -7427,15 +7572,15 @@ drugs_bar = [
           "sum": 142.97, 
           "average": 10.997692307692308
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 127.54999999999997, 
-          "average": 9.811538461538461
+          "sum": 214.32999999999998, 
+          "average": 16.486923076923077
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 172.51, 
-          "average": 13.27
+          "sum": 103.85999999999999, 
+          "average": 7.989230769230769
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -7451,6 +7596,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 161.1, 
           "average": 12.392307692307693
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 172.51, 
+          "average": 13.27
         }, 
         "Vermont": {
           "count": 13, 
@@ -7512,10 +7662,10 @@ drugs_bar = [
           "sum": 162.81, 
           "average": 12.523846153846154
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 151.49999999999997, 
-          "average": 11.653846153846153
+          "sum": 127.54999999999997, 
+          "average": 9.811538461538461
         }, 
         "South Dakota": {
           "count": 13, 
@@ -7523,9 +7673,9 @@ drugs_bar = [
           "average": 15.442307692307692
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 159.26999999999998, 
-          "average": 13.2725
+          "count": 13, 
+          "sum": 168.23, 
+          "average": 12.94076923076923
         }, 
         "New Jersey": {
           "count": 13, 
@@ -7547,20 +7697,15 @@ drugs_bar = [
           "sum": 176.62, 
           "average": 13.586153846153847
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 152.92, 
-          "average": 15.292000000000002
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 9.08, 
-          "average": 9.08
+          "count": 13, 
+          "sum": 104.42, 
+          "average": 8.032307692307693
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 68.86, 
-          "average": 8.6075
+          "count": 13, 
+          "sum": 131.05, 
+          "average": 10.080769230769231
         }, 
         "Nevada": {
           "count": 13, 
@@ -7571,6 +7716,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 152.59, 
           "average": 11.737692307692308
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 151.49999999999997, 
+          "average": 11.653846153846153
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Need Treatment Past Year.26+": {
@@ -7679,15 +7829,15 @@ drugs_bar = [
           "sum": 19.28, 
           "average": 1.4830769230769232
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 20.4, 
-          "average": 1.5692307692307694
+          "sum": 17.68, 
+          "average": 1.3599999999999999
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 18.099999999999998, 
-          "average": 1.3923076923076925
+          "sum": 21.040000000000003, 
+          "average": 1.6184615384615384
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -7703,6 +7853,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 20.209999999999997, 
           "average": 1.5546153846153847
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 18.099999999999998, 
+          "average": 1.3923076923076925
         }, 
         "Vermont": {
           "count": 13, 
@@ -7764,10 +7919,10 @@ drugs_bar = [
           "sum": 19.230000000000004, 
           "average": 1.4792307692307693
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 20.490000000000002, 
-          "average": 1.576153846153846
+          "sum": 20.4, 
+          "average": 1.5692307692307694
         }, 
         "South Dakota": {
           "count": 13, 
@@ -7775,9 +7930,9 @@ drugs_bar = [
           "average": 1.1984615384615385
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 18.32, 
-          "average": 1.5266666666666666
+          "count": 13, 
+          "sum": 19.91, 
+          "average": 1.5315384615384615
         }, 
         "New Jersey": {
           "count": 13, 
@@ -7799,20 +7954,15 @@ drugs_bar = [
           "sum": 20.32, 
           "average": 1.563076923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 13.280000000000001, 
-          "average": 1.3279999999999998
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 1.94, 
-          "average": 1.94
+          "count": 13, 
+          "sum": 27.349999999999998, 
+          "average": 2.103846153846154
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 10.36, 
-          "average": 1.295
+          "count": 13, 
+          "sum": 17.009999999999998, 
+          "average": 1.3084615384615386
         }, 
         "Nevada": {
           "count": 13, 
@@ -7823,6 +7973,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 18.770000000000003, 
           "average": 1.4438461538461538
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 20.490000000000002, 
+          "average": 1.576153846153846
         }
       }, 
       "drugs.[0].Population.12-20": {
@@ -7931,15 +8086,15 @@ drugs_bar = [
           "sum": 5698324, 
           "average": 438332.6153846154
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 31068322, 
-          "average": 2389870.923076923
+          "sum": 1584889, 
+          "average": 121914.53846153847
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 2147577, 
-          "average": 165198.23076923078
+          "sum": 62645022, 
+          "average": 4818847.846153846
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -7955,6 +8110,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 7365654, 
           "average": 566588.7692307692
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 2147577, 
+          "average": 165198.23076923078
         }, 
         "Vermont": {
           "count": 13, 
@@ -8016,10 +8176,10 @@ drugs_bar = [
           "sum": 7751318, 
           "average": 596255.2307692308
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 1835483, 
-          "average": 141191.0
+          "sum": 31068322, 
+          "average": 2389870.923076923
         }, 
         "South Dakota": {
           "count": 13, 
@@ -8027,9 +8187,9 @@ drugs_bar = [
           "average": 105877.46153846153
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 7219251, 
-          "average": 601604.25
+          "count": 13, 
+          "sum": 7844704, 
+          "average": 603438.7692307692
         }, 
         "New Jersey": {
           "count": 13, 
@@ -8051,20 +8211,15 @@ drugs_bar = [
           "sum": 9842075, 
           "average": 757082.6923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 1204984, 
-          "average": 120498.4
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 74369, 
-          "average": 74369.0
+          "count": 13, 
+          "sum": 932614, 
+          "average": 71739.53846153847
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 26855916, 
-          "average": 3356989.5
+          "count": 13, 
+          "sum": 42443886, 
+          "average": 3264914.3076923075
         }, 
         "Nevada": {
           "count": 13, 
@@ -8075,6 +8230,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 2025414, 
           "average": 155801.07692307694
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 1835483, 
+          "average": 141191.0
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Need Treatment Past Year.12-17": {
@@ -8183,15 +8343,15 @@ drugs_bar = [
           "sum": 54.71, 
           "average": 4.208461538461538
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 52.970000000000006, 
-          "average": 4.0746153846153845
+          "sum": 61.129999999999995, 
+          "average": 4.702307692307692
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 72.68, 
-          "average": 5.590769230769231
+          "sum": 59.46999999999999, 
+          "average": 4.5746153846153845
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -8207,6 +8367,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 50.86999999999999, 
           "average": 3.9130769230769227
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 72.68, 
+          "average": 5.590769230769231
         }, 
         "Vermont": {
           "count": 13, 
@@ -8268,10 +8433,10 @@ drugs_bar = [
           "sum": 46.82999999999999, 
           "average": 3.602307692307692
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 60.25000000000001, 
-          "average": 4.634615384615385
+          "sum": 52.970000000000006, 
+          "average": 4.0746153846153845
         }, 
         "South Dakota": {
           "count": 13, 
@@ -8279,9 +8444,9 @@ drugs_bar = [
           "average": 4.123846153846154
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 61.1, 
-          "average": 5.091666666666667
+          "count": 13, 
+          "sum": 65.21000000000001, 
+          "average": 5.016153846153847
         }, 
         "New Jersey": {
           "count": 13, 
@@ -8303,20 +8468,15 @@ drugs_bar = [
           "sum": 47.730000000000004, 
           "average": 3.6715384615384616
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 42.629999999999995, 
-          "average": 4.263
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3.54, 
-          "average": 3.54
+          "count": 13, 
+          "sum": 43.849999999999994, 
+          "average": 3.373076923076923
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 31.29, 
-          "average": 3.91125
+          "count": 13, 
+          "sum": 54.64, 
+          "average": 4.203076923076923
         }, 
         "Nevada": {
           "count": 13, 
@@ -8327,6 +8487,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 51.660000000000004, 
           "average": 3.9738461538461536
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 60.25000000000001, 
+          "average": 4.634615384615385
         }
       }, 
       "drugs.[0].Rates.Alcohol.Need Treatment Past Year.26+": {
@@ -8435,15 +8600,15 @@ drugs_bar = [
           "sum": 74.7, 
           "average": 5.746153846153846
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 72.51, 
-          "average": 5.577692307692308
+          "sum": 90.32999999999998, 
+          "average": 6.9484615384615385
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 78.32999999999998, 
-          "average": 6.025384615384615
+          "sum": 78.39, 
+          "average": 6.03
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -8459,6 +8624,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 78.49999999999999, 
           "average": 6.038461538461538
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 78.32999999999998, 
+          "average": 6.025384615384615
         }, 
         "Vermont": {
           "count": 13, 
@@ -8520,10 +8690,10 @@ drugs_bar = [
           "sum": 65.24, 
           "average": 5.018461538461538
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 88.03999999999999, 
-          "average": 6.772307692307693
+          "sum": 72.51, 
+          "average": 5.577692307692308
         }, 
         "South Dakota": {
           "count": 13, 
@@ -8531,9 +8701,9 @@ drugs_bar = [
           "average": 6.767692307692308
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 79.36999999999999, 
-          "average": 6.614166666666667
+          "count": 13, 
+          "sum": 85.69, 
+          "average": 6.591538461538462
         }, 
         "New Jersey": {
           "count": 13, 
@@ -8555,20 +8725,15 @@ drugs_bar = [
           "sum": 63.010000000000005, 
           "average": 4.846923076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 67.65, 
-          "average": 6.765000000000001
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 8.07, 
-          "average": 8.07
+          "count": 13, 
+          "sum": 114.17, 
+          "average": 8.782307692307693
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 44.989999999999995, 
-          "average": 5.62375
+          "count": 13, 
+          "sum": 73.91, 
+          "average": 5.685384615384615
         }, 
         "Nevada": {
           "count": 13, 
@@ -8579,6 +8744,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 66.24000000000001, 
           "average": 5.095384615384615
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 88.03999999999999, 
+          "average": 6.772307692307693
         }
       }, 
       "drugs.[0].Totals.Marijuana.Used Past Month.26+": {
@@ -8687,15 +8857,15 @@ drugs_bar = [
           "sum": 156790, 
           "average": 12060.76923076923
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 885693, 
-          "average": 68130.23076923077
+          "sum": 59618, 
+          "average": 4586.0
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 77985, 
-          "average": 5998.846153846154
+          "sum": 1723103, 
+          "average": 132546.38461538462
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -8711,6 +8881,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 157729, 
           "average": 12133.0
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 77985, 
+          "average": 5998.846153846154
         }, 
         "Vermont": {
           "count": 13, 
@@ -8772,10 +8947,10 @@ drugs_bar = [
           "sum": 122987, 
           "average": 9460.538461538461
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 69817, 
-          "average": 5370.538461538462
+          "sum": 885693, 
+          "average": 68130.23076923077
         }, 
         "South Dakota": {
           "count": 13, 
@@ -8783,9 +8958,9 @@ drugs_bar = [
           "average": 1652.923076923077
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 290353, 
-          "average": 24196.083333333332
+          "count": 13, 
+          "sum": 332653, 
+          "average": 25588.69230769231
         }, 
         "New Jersey": {
           "count": 13, 
@@ -8807,20 +8982,15 @@ drugs_bar = [
           "sum": 170631, 
           "average": 13125.461538461539
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 47808, 
-          "average": 4780.8
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 2904, 
-          "average": 2904.0
+          "count": 13, 
+          "sum": 39451, 
+          "average": 3034.6923076923076
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 428063, 
-          "average": 53507.875
+          "count": 13, 
+          "sum": 633387, 
+          "average": 48722.07692307692
         }, 
         "Nevada": {
           "count": 13, 
@@ -8831,6 +9001,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 80785, 
           "average": 6214.2307692307695
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 69817, 
+          "average": 5370.538461538462
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Abuse Past Month.18-25": {
@@ -8939,15 +9114,15 @@ drugs_bar = [
           "sum": 333.7, 
           "average": 25.66923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 306.65999999999997, 
-          "average": 23.58923076923077
+          "sum": 319.44, 
+          "average": 24.572307692307692
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 398.89, 
-          "average": 30.683846153846154
+          "sum": 286.25, 
+          "average": 22.01923076923077
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -8963,6 +9138,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 264.88, 
           "average": 20.375384615384615
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 398.89, 
+          "average": 30.683846153846154
         }, 
         "Vermont": {
           "count": 13, 
@@ -9024,10 +9204,10 @@ drugs_bar = [
           "sum": 222.00000000000003, 
           "average": 17.076923076923077
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 423.9700000000001, 
-          "average": 32.61307692307692
+          "sum": 306.65999999999997, 
+          "average": 23.58923076923077
         }, 
         "South Dakota": {
           "count": 13, 
@@ -9035,9 +9215,9 @@ drugs_bar = [
           "average": 15.694615384615386
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 340.97999999999996, 
-          "average": 28.415000000000003
+          "count": 13, 
+          "sum": 373.53999999999996, 
+          "average": 28.733846153846155
         }, 
         "New Jersey": {
           "count": 13, 
@@ -9059,20 +9239,15 @@ drugs_bar = [
           "sum": 221.76999999999998, 
           "average": 17.05923076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 251.01999999999998, 
-          "average": 25.102
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 24.01, 
-          "average": 24.01
+          "count": 13, 
+          "sum": 325.45, 
+          "average": 25.034615384615385
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 136.58, 
-          "average": 17.0725
+          "count": 13, 
+          "sum": 221.33999999999997, 
+          "average": 17.026153846153846
         }, 
         "Nevada": {
           "count": 13, 
@@ -9083,6 +9258,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 359.73, 
           "average": 27.671538461538464
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 423.9700000000001, 
+          "average": 32.61307692307692
         }
       }, 
       "drugs.[0].Rates.Marijuana.Used Past Month.18-25": {
@@ -9191,15 +9371,15 @@ drugs_bar = [
           "sum": 307.72999999999996, 
           "average": 23.671538461538464
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 273.16, 
-          "average": 21.01230769230769
+          "sum": 291.44999999999993, 
+          "average": 22.41923076923077
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 363.34999999999997, 
-          "average": 27.950000000000003
+          "sum": 249.71000000000004, 
+          "average": 19.20846153846154
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -9215,6 +9395,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 227.2, 
           "average": 17.476923076923075
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 363.34999999999997, 
+          "average": 27.950000000000003
         }, 
         "Vermont": {
           "count": 13, 
@@ -9276,10 +9461,10 @@ drugs_bar = [
           "sum": 176.75, 
           "average": 13.596153846153847
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 390.59000000000003, 
-          "average": 30.045384615384613
+          "sum": 273.16, 
+          "average": 21.01230769230769
         }, 
         "South Dakota": {
           "count": 13, 
@@ -9287,9 +9472,9 @@ drugs_bar = [
           "average": 13.725384615384616
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 299.61000000000007, 
-          "average": 24.9675
+          "count": 13, 
+          "sum": 329.6600000000001, 
+          "average": 25.35846153846154
         }, 
         "New Jersey": {
           "count": 13, 
@@ -9311,20 +9496,15 @@ drugs_bar = [
           "sum": 183.02, 
           "average": 14.07846153846154
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 228.59, 
-          "average": 22.859
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 21.14, 
-          "average": 21.14
+          "count": 13, 
+          "sum": 296.38, 
+          "average": 22.798461538461538
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 112.65, 
-          "average": 14.08125
+          "count": 13, 
+          "sum": 179.64000000000001, 
+          "average": 13.818461538461538
         }, 
         "Nevada": {
           "count": 13, 
@@ -9335,6 +9515,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 327.45000000000005, 
           "average": 25.18846153846154
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 390.59000000000003, 
+          "average": 30.045384615384613
         }
       }, 
       "drugs.[0].Rates.Alcohol.Need Treatment Past Year.18-25": {
@@ -9443,15 +9628,15 @@ drugs_bar = [
           "sum": 220.13, 
           "average": 16.93307692307692
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 188.76000000000002, 
-          "average": 14.52
+          "sum": 258.77, 
+          "average": 19.905384615384612
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 247.91, 
-          "average": 19.07
+          "sum": 191.75000000000003, 
+          "average": 14.75
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -9467,6 +9652,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 189.7, 
           "average": 14.592307692307692
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 247.91, 
+          "average": 19.07
         }, 
         "Vermont": {
           "count": 13, 
@@ -9528,10 +9718,10 @@ drugs_bar = [
           "sum": 161.53, 
           "average": 12.425384615384615
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 251.74, 
-          "average": 19.364615384615384
+          "sum": 188.76000000000002, 
+          "average": 14.52
         }, 
         "South Dakota": {
           "count": 13, 
@@ -9539,9 +9729,9 @@ drugs_bar = [
           "average": 19.54
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 220.66, 
-          "average": 18.388333333333332
+          "count": 13, 
+          "sum": 233.35, 
+          "average": 17.95
         }, 
         "New Jersey": {
           "count": 13, 
@@ -9563,20 +9753,15 @@ drugs_bar = [
           "sum": 171.4, 
           "average": 13.184615384615386
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 191.60999999999999, 
-          "average": 19.160999999999998
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 16.73, 
-          "average": 16.73
+          "count": 13, 
+          "sum": 211.49999999999994, 
+          "average": 16.26923076923077
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 108.63, 
-          "average": 13.57875
+          "count": 13, 
+          "sum": 188.55999999999997, 
+          "average": 14.504615384615384
         }, 
         "Nevada": {
           "count": 13, 
@@ -9587,6 +9772,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 203.50999999999996, 
           "average": 15.654615384615385
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 251.74, 
+          "average": 19.364615384615384
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.All Except Marijuana Used Past Month.18-25": {
@@ -9695,15 +9885,15 @@ drugs_bar = [
           "sum": 35912, 
           "average": 2762.4615384615386
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 213742, 
-          "average": 16441.69230769231
+          "sum": 9896, 
+          "average": 761.2307692307693
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 19584, 
-          "average": 1506.4615384615386
+          "sum": 411388, 
+          "average": 31645.23076923077
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -9719,6 +9909,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 48482, 
           "average": 3729.3846153846152
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 19584, 
+          "average": 1506.4615384615386
         }, 
         "Vermont": {
           "count": 13, 
@@ -9780,10 +9975,10 @@ drugs_bar = [
           "sum": 52247, 
           "average": 4019.0
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 18157, 
-          "average": 1396.6923076923076
+          "sum": 213742, 
+          "average": 16441.69230769231
         }, 
         "South Dakota": {
           "count": 13, 
@@ -9791,9 +9986,9 @@ drugs_bar = [
           "average": 550.3076923076923
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 61148, 
-          "average": 5095.666666666667
+          "count": 13, 
+          "sum": 65648, 
+          "average": 5049.846153846154
         }, 
         "New Jersey": {
           "count": 13, 
@@ -9815,20 +10010,15 @@ drugs_bar = [
           "sum": 66691, 
           "average": 5130.076923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 7747, 
-          "average": 774.7
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 794, 
-          "average": 794.0
+          "count": 13, 
+          "sum": 8525, 
+          "average": 655.7692307692307
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 150897, 
-          "average": 18862.125
+          "count": 13, 
+          "sum": 258206, 
+          "average": 19862.0
         }, 
         "Nevada": {
           "count": 13, 
@@ -9839,6 +10029,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 15581, 
           "average": 1198.5384615384614
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 18157, 
+          "average": 1396.6923076923076
         }
       }, 
       "drugs.[0].Totals.Alcohol.Dependence Past Year.12-17": {
@@ -9947,15 +10142,15 @@ drugs_bar = [
           "sum": 6312, 
           "average": 485.53846153846155
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 36606, 
-          "average": 2815.846153846154
+          "sum": 2947, 
+          "average": 226.69230769230768
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 2529, 
-          "average": 194.53846153846155
+          "sum": 73447, 
+          "average": 5649.7692307692305
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -9971,6 +10166,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 6772, 
           "average": 520.9230769230769
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 2529, 
+          "average": 194.53846153846155
         }, 
         "Vermont": {
           "count": 13, 
@@ -10032,10 +10232,10 @@ drugs_bar = [
           "sum": 7542, 
           "average": 580.1538461538462
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 2029, 
-          "average": 156.07692307692307
+          "sum": 36606, 
+          "average": 2815.846153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -10043,9 +10243,9 @@ drugs_bar = [
           "average": 175.07692307692307
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 9461, 
-          "average": 788.4166666666666
+          "count": 13, 
+          "sum": 9961, 
+          "average": 766.2307692307693
         }, 
         "New Jersey": {
           "count": 13, 
@@ -10067,20 +10267,15 @@ drugs_bar = [
           "sum": 9273, 
           "average": 713.3076923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 1827, 
-          "average": 182.7
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 50, 
-          "average": 50.0
+          "count": 13, 
+          "sum": 440, 
+          "average": 33.84615384615385
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 26570, 
-          "average": 3321.25
+          "count": 13, 
+          "sum": 46246, 
+          "average": 3557.3846153846152
         }, 
         "Nevada": {
           "count": 13, 
@@ -10091,6 +10286,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 2240, 
           "average": 172.30769230769232
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 2029, 
+          "average": 156.07692307692307
         }
       }, 
       "drugs.[0].Totals.Alcohol.Dependence Past Year.26+": {
@@ -10199,15 +10399,15 @@ drugs_bar = [
           "sum": 83618, 
           "average": 6432.153846153846
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 506521, 
-          "average": 38963.153846153844
+          "sum": 25589, 
+          "average": 1968.3846153846155
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 32875, 
-          "average": 2528.846153846154
+          "sum": 983315, 
+          "average": 75639.61538461539
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -10223,6 +10423,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 126662, 
           "average": 9743.23076923077
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 32875, 
+          "average": 2528.846153846154
         }, 
         "Vermont": {
           "count": 13, 
@@ -10284,10 +10489,10 @@ drugs_bar = [
           "sum": 107056, 
           "average": 8235.076923076924
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 30623, 
-          "average": 2355.6153846153848
+          "sum": 506521, 
+          "average": 38963.153846153844
         }, 
         "South Dakota": {
           "count": 13, 
@@ -10295,9 +10500,9 @@ drugs_bar = [
           "average": 1654.3846153846155
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 123443, 
-          "average": 10286.916666666666
+          "count": 13, 
+          "sum": 133843, 
+          "average": 10295.615384615385
         }, 
         "New Jersey": {
           "count": 13, 
@@ -10319,20 +10524,15 @@ drugs_bar = [
           "sum": 138576, 
           "average": 10659.692307692309
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 19687, 
-          "average": 1968.7
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 1654, 
-          "average": 1654.0
+          "count": 13, 
+          "sum": 23028, 
+          "average": 1771.3846153846155
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 342361, 
-          "average": 42795.125
+          "count": 13, 
+          "sum": 518301, 
+          "average": 39869.307692307695
         }, 
         "Nevada": {
           "count": 13, 
@@ -10343,6 +10543,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 32497, 
           "average": 2499.769230769231
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 30623, 
+          "average": 2355.6153846153848
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Dependence Past Year.26+": {
@@ -10451,15 +10656,15 @@ drugs_bar = [
           "sum": 36653, 
           "average": 2819.4615384615386
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 227446, 
-          "average": 17495.846153846152
+          "sum": 9392, 
+          "average": 722.4615384615385
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 14277, 
-          "average": 1098.2307692307693
+          "sum": 361902, 
+          "average": 27838.615384615383
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -10475,6 +10680,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 47869, 
           "average": 3682.230769230769
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 14277, 
+          "average": 1098.2307692307693
         }, 
         "Vermont": {
           "count": 13, 
@@ -10536,10 +10746,10 @@ drugs_bar = [
           "sum": 46541, 
           "average": 3580.076923076923
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 13770, 
-          "average": 1059.2307692307693
+          "sum": 227446, 
+          "average": 17495.846153846152
         }, 
         "South Dakota": {
           "count": 13, 
@@ -10547,9 +10757,9 @@ drugs_bar = [
           "average": 481.0
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 42802, 
-          "average": 3566.8333333333335
+          "count": 13, 
+          "sum": 47202, 
+          "average": 3630.923076923077
         }, 
         "New Jersey": {
           "count": 13, 
@@ -10571,20 +10781,15 @@ drugs_bar = [
           "sum": 66290, 
           "average": 5099.2307692307695
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 7535, 
-          "average": 753.5
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 802, 
-          "average": 802.0
+          "count": 13, 
+          "sum": 11383, 
+          "average": 875.6153846153846
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 125818, 
-          "average": 15727.25
+          "count": 13, 
+          "sum": 192437, 
+          "average": 14802.846153846154
         }, 
         "Nevada": {
           "count": 13, 
@@ -10595,6 +10800,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 12858, 
           "average": 989.0769230769231
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 13770, 
+          "average": 1059.2307692307693
         }
       }, 
       "drugs.[0].Totals.Alcohol.Need Treatment Past Year.12-17": {
@@ -10703,15 +10913,15 @@ drugs_bar = [
           "sum": 16533, 
           "average": 1271.7692307692307
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 88458, 
-          "average": 6804.461538461538
+          "sum": 6926, 
+          "average": 532.7692307692307
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 7509, 
-          "average": 577.6153846153846
+          "sum": 186825, 
+          "average": 14371.153846153846
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -10727,6 +10937,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 17952, 
           "average": 1380.923076923077
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 7509, 
+          "average": 577.6153846153846
         }, 
         "Vermont": {
           "count": 13, 
@@ -10788,10 +11003,10 @@ drugs_bar = [
           "sum": 20175, 
           "average": 1551.923076923077
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 5075, 
-          "average": 390.38461538461536
+          "sum": 88458, 
+          "average": 6804.461538461538
         }, 
         "South Dakota": {
           "count": 13, 
@@ -10799,9 +11014,9 @@ drugs_bar = [
           "average": 412.61538461538464
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 23806, 
-          "average": 1983.8333333333333
+          "count": 13, 
+          "sum": 25106, 
+          "average": 1931.2307692307693
         }, 
         "New Jersey": {
           "count": 13, 
@@ -10823,20 +11038,15 @@ drugs_bar = [
           "sum": 23896, 
           "average": 1838.1538461538462
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 4455, 
-          "average": 445.5
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 127, 
-          "average": 127.0
+          "count": 13, 
+          "sum": 1392, 
+          "average": 107.07692307692308
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 66806, 
-          "average": 8350.75
+          "count": 13, 
+          "sum": 121499, 
+          "average": 9346.076923076924
         }, 
         "Nevada": {
           "count": 13, 
@@ -10847,6 +11057,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 5628, 
           "average": 432.9230769230769
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 5075, 
+          "average": 390.38461538461536
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Cocaine Used Past Year.18-25": {
@@ -10955,15 +11170,15 @@ drugs_bar = [
           "sum": 28347, 
           "average": 2180.5384615384614
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 177934, 
-          "average": 13687.23076923077
+          "sum": 7970, 
+          "average": 613.0769230769231
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 14712, 
-          "average": 1131.6923076923076
+          "sum": 339493, 
+          "average": 26114.846153846152
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -10979,6 +11194,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 29934, 
           "average": 2302.6153846153848
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 14712, 
+          "average": 1131.6923076923076
         }, 
         "Vermont": {
           "count": 13, 
@@ -11040,10 +11260,10 @@ drugs_bar = [
           "sum": 23872, 
           "average": 1836.3076923076924
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 13819, 
-          "average": 1063.0
+          "sum": 177934, 
+          "average": 13687.23076923077
         }, 
         "South Dakota": {
           "count": 13, 
@@ -11051,9 +11271,9 @@ drugs_bar = [
           "average": 347.46153846153845
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 59888, 
-          "average": 4990.666666666667
+          "count": 13, 
+          "sum": 64088, 
+          "average": 4929.846153846154
         }, 
         "New Jersey": {
           "count": 13, 
@@ -11075,20 +11295,15 @@ drugs_bar = [
           "sum": 35208, 
           "average": 2708.3076923076924
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 5885, 
-          "average": 588.5
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 433, 
-          "average": 433.0
+          "count": 13, 
+          "sum": 5728, 
+          "average": 440.61538461538464
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 103189, 
-          "average": 12898.625
+          "count": 13, 
+          "sum": 185867, 
+          "average": 14297.461538461539
         }, 
         "Nevada": {
           "count": 13, 
@@ -11099,6 +11314,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 10706, 
           "average": 823.5384615384615
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 13819, 
+          "average": 1063.0
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Need Treatment Past Year.12-17": {
@@ -11207,15 +11427,15 @@ drugs_bar = [
           "sum": 16136, 
           "average": 1241.2307692307693
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 82927, 
-          "average": 6379.0
+          "sum": 4922, 
+          "average": 378.61538461538464
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 7949, 
-          "average": 611.4615384615385
+          "sum": 190351, 
+          "average": 14642.384615384615
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -11231,6 +11451,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 18527, 
           "average": 1425.1538461538462
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 7949, 
+          "average": 611.4615384615385
         }, 
         "Vermont": {
           "count": 13, 
@@ -11292,10 +11517,10 @@ drugs_bar = [
           "sum": 18302, 
           "average": 1407.8461538461538
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 5192, 
-          "average": 399.38461538461536
+          "sum": 82927, 
+          "average": 6379.0
         }, 
         "South Dakota": {
           "count": 13, 
@@ -11303,9 +11528,9 @@ drugs_bar = [
           "average": 284.84615384615387
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 24206, 
-          "average": 2017.1666666666667
+          "count": 13, 
+          "sum": 25906, 
+          "average": 1992.7692307692307
         }, 
         "New Jersey": {
           "count": 13, 
@@ -11327,20 +11552,15 @@ drugs_bar = [
           "sum": 23795, 
           "average": 1830.3846153846155
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 3362, 
-          "average": 336.2
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 133, 
-          "average": 133.0
+          "count": 13, 
+          "sum": 1619, 
+          "average": 124.53846153846153
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 70292, 
-          "average": 8786.5
+          "count": 13, 
+          "sum": 118668, 
+          "average": 9128.307692307691
         }, 
         "Nevada": {
           "count": 13, 
@@ -11351,6 +11571,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 5455, 
           "average": 419.61538461538464
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 5192, 
+          "average": 399.38461538461536
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Used Past Month.18-25": {
@@ -11459,15 +11684,15 @@ drugs_bar = [
           "sum": 333.7, 
           "average": 25.66923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 306.65999999999997, 
-          "average": 23.58923076923077
+          "sum": 319.44, 
+          "average": 24.572307692307692
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 398.89, 
-          "average": 30.683846153846154
+          "sum": 286.25, 
+          "average": 22.01923076923077
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -11483,6 +11708,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 264.88, 
           "average": 20.375384615384615
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 398.89, 
+          "average": 30.683846153846154
         }, 
         "Vermont": {
           "count": 13, 
@@ -11544,10 +11774,10 @@ drugs_bar = [
           "sum": 222.00000000000003, 
           "average": 17.076923076923077
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 423.9700000000001, 
-          "average": 32.61307692307692
+          "sum": 306.65999999999997, 
+          "average": 23.58923076923077
         }, 
         "South Dakota": {
           "count": 13, 
@@ -11555,9 +11785,9 @@ drugs_bar = [
           "average": 15.694615384615386
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 340.97999999999996, 
-          "average": 28.415000000000003
+          "count": 13, 
+          "sum": 373.53999999999996, 
+          "average": 28.733846153846155
         }, 
         "New Jersey": {
           "count": 13, 
@@ -11579,20 +11809,15 @@ drugs_bar = [
           "sum": 221.76999999999998, 
           "average": 17.05923076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 251.01999999999998, 
-          "average": 25.102
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 24.01, 
-          "average": 24.01
+          "count": 13, 
+          "sum": 325.45, 
+          "average": 25.034615384615385
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 136.58, 
-          "average": 17.0725
+          "count": 13, 
+          "sum": 221.33999999999997, 
+          "average": 17.026153846153846
         }, 
         "Nevada": {
           "count": 13, 
@@ -11603,6 +11828,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 359.73, 
           "average": 27.671538461538464
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 423.9700000000001, 
+          "average": 32.61307692307692
         }
       }, 
       "drugs.[0].Rates.Alcohol.Abuse Past Year.12-17": {
@@ -11711,15 +11941,15 @@ drugs_bar = [
           "sum": 57.339999999999996, 
           "average": 4.410769230769231
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 58.989999999999995, 
-          "average": 4.537692307692308
+          "sum": 97.24000000000002, 
+          "average": 7.48
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 72.33999999999999, 
-          "average": 5.564615384615385
+          "sum": 61.800000000000004, 
+          "average": 4.753846153846154
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -11735,6 +11965,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 50.93999999999999, 
           "average": 3.918461538461538
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 72.33999999999999, 
+          "average": 5.564615384615385
         }, 
         "Vermont": {
           "count": 13, 
@@ -11796,10 +12031,10 @@ drugs_bar = [
           "sum": 53.28999999999999, 
           "average": 4.099230769230769
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 60.440000000000005, 
-          "average": 4.649230769230769
+          "sum": 58.989999999999995, 
+          "average": 4.537692307692308
         }, 
         "South Dakota": {
           "count": 13, 
@@ -11807,9 +12042,9 @@ drugs_bar = [
           "average": 6.513076923076923
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 65.03999999999999, 
-          "average": 5.419999999999999
+          "count": 13, 
+          "sum": 68.42999999999999, 
+          "average": 5.263846153846154
         }, 
         "New Jersey": {
           "count": 13, 
@@ -11831,20 +12066,15 @@ drugs_bar = [
           "sum": 49.760000000000005, 
           "average": 3.8276923076923075
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 65.56, 
-          "average": 6.556
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3.32, 
-          "average": 3.32
+          "count": 13, 
+          "sum": 39.66, 
+          "average": 3.0507692307692307
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 31.14, 
-          "average": 3.8925
+          "count": 13, 
+          "sum": 58.53999999999999, 
+          "average": 4.503076923076923
         }, 
         "Nevada": {
           "count": 13, 
@@ -11855,6 +12085,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 54.55, 
           "average": 4.196153846153846
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 60.440000000000005, 
+          "average": 4.649230769230769
         }
       }, 
       "drugs.[0].Rates.Alcohol.Dependence Past Year.12-17": {
@@ -11963,15 +12198,15 @@ drugs_bar = [
           "sum": 21.4, 
           "average": 1.646153846153846
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 23.330000000000005, 
-          "average": 1.7946153846153845
+          "sum": 36.38, 
+          "average": 2.7984615384615386
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 23.060000000000002, 
-          "average": 1.7738461538461539
+          "sum": 22.93, 
+          "average": 1.7638461538461538
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -11987,6 +12222,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 18.61, 
           "average": 1.4315384615384614
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 23.060000000000002, 
+          "average": 1.7738461538461539
         }, 
         "Vermont": {
           "count": 13, 
@@ -12048,10 +12288,10 @@ drugs_bar = [
           "sum": 19.299999999999997, 
           "average": 1.4846153846153847
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 23.52, 
-          "average": 1.8092307692307692
+          "sum": 23.330000000000005, 
+          "average": 1.7946153846153845
         }, 
         "South Dakota": {
           "count": 13, 
@@ -12059,9 +12299,9 @@ drugs_bar = [
           "average": 2.523846153846154
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 23.970000000000002, 
-          "average": 1.9974999999999998
+          "count": 13, 
+          "sum": 25.180000000000003, 
+          "average": 1.936923076923077
         }, 
         "New Jersey": {
           "count": 13, 
@@ -12083,20 +12323,15 @@ drugs_bar = [
           "sum": 18.599999999999998, 
           "average": 1.4307692307692308
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 23.08, 
-          "average": 2.308
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 1.34, 
-          "average": 1.34
+          "count": 13, 
+          "sum": 11.79, 
+          "average": 0.9069230769230768
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 11.850000000000001, 
-          "average": 1.48125
+          "count": 13, 
+          "sum": 21.339999999999996, 
+          "average": 1.6415384615384616
         }, 
         "Nevada": {
           "count": 13, 
@@ -12107,6 +12342,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 21.150000000000002, 
           "average": 1.626923076923077
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 23.52, 
+          "average": 1.8092307692307692
         }
       }, 
       "drugs.[0].Rates.Alcohol.Use Past Month.18-25": {
@@ -12215,15 +12455,15 @@ drugs_bar = [
           "sum": 902.84, 
           "average": 69.44923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 837.6999999999999, 
-          "average": 64.43846153846154
+          "sum": 874.92, 
+          "average": 67.30153846153846
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 953.99, 
-          "average": 73.38384615384615
+          "sum": 752.3299999999999, 
+          "average": 57.871538461538464
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -12239,6 +12479,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 759.06, 
           "average": 58.389230769230764
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 953.99, 
+          "average": 73.38384615384615
         }, 
         "Vermont": {
           "count": 13, 
@@ -12300,10 +12545,10 @@ drugs_bar = [
           "sum": 670.73, 
           "average": 51.59461538461539
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 943.4699999999999, 
-          "average": 72.57461538461538
+          "sum": 837.6999999999999, 
+          "average": 64.43846153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -12311,9 +12556,9 @@ drugs_bar = [
           "average": 68.61538461538461
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 821.0600000000001, 
-          "average": 68.42166666666667
+          "count": 13, 
+          "sum": 885.84, 
+          "average": 68.14153846153846
         }, 
         "New Jersey": {
           "count": 13, 
@@ -12335,20 +12580,15 @@ drugs_bar = [
           "sum": 637.92, 
           "average": 49.07076923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 668.49, 
-          "average": 66.849
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 71.99, 
-          "average": 71.99
+          "count": 13, 
+          "sum": 904.6399999999999, 
+          "average": 69.58769230769231
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 453.70000000000005, 
-          "average": 56.7125
+          "count": 13, 
+          "sum": 745.4200000000001, 
+          "average": 57.339999999999996
         }, 
         "Nevada": {
           "count": 13, 
@@ -12359,6 +12599,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 851.8499999999999, 
           "average": 65.52692307692308
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 943.4699999999999, 
+          "average": 72.57461538461538
         }
       }, 
       "drugs.[0].Totals.Pain Relievers Abuse Past Year.26+": {
@@ -12467,15 +12712,15 @@ drugs_bar = [
           "sum": 85599, 
           "average": 6584.538461538462
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 474402, 
-          "average": 36492.46153846154
+          "sum": 25189, 
+          "average": 1937.6153846153845
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 38518, 
-          "average": 2962.923076923077
+          "sum": 1144035, 
+          "average": 88002.69230769231
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -12491,6 +12736,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 131115, 
           "average": 10085.76923076923
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 38518, 
+          "average": 2962.923076923077
         }, 
         "Vermont": {
           "count": 13, 
@@ -12552,10 +12802,10 @@ drugs_bar = [
           "sum": 134004, 
           "average": 10308.0
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 35116, 
-          "average": 2701.230769230769
+          "sum": 474402, 
+          "average": 36492.46153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -12563,9 +12813,9 @@ drugs_bar = [
           "average": 1217.3846153846155
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 158882, 
-          "average": 13240.166666666666
+          "count": 13, 
+          "sum": 172882, 
+          "average": 13298.615384615385
         }, 
         "New Jersey": {
           "count": 13, 
@@ -12587,20 +12837,15 @@ drugs_bar = [
           "sum": 164834, 
           "average": 12679.538461538461
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 20363, 
-          "average": 2036.3
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 1283, 
-          "average": 1283.0
+          "count": 13, 
+          "sum": 16659, 
+          "average": 1281.4615384615386
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 403771, 
-          "average": 50471.375
+          "count": 13, 
+          "sum": 618825, 
+          "average": 47601.92307692308
         }, 
         "Nevada": {
           "count": 13, 
@@ -12611,6 +12856,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 35117, 
           "average": 2701.3076923076924
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 35116, 
+          "average": 2701.230769230769
         }
       }, 
       "drugs.[0].Totals.Alcohol.Binge Past Month.12-17": {
@@ -12719,15 +12969,15 @@ drugs_bar = [
           "sum": 37662, 
           "average": 2897.076923076923
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 187742, 
-          "average": 14441.692307692309
+          "sum": 13190, 
+          "average": 1014.6153846153846
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 14726, 
-          "average": 1132.7692307692307
+          "sum": 334751, 
+          "average": 25750.076923076922
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -12743,6 +12993,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 33481, 
           "average": 2575.4615384615386
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 14726, 
+          "average": 1132.7692307692307
         }, 
         "Vermont": {
           "count": 13, 
@@ -12804,10 +13059,10 @@ drugs_bar = [
           "sum": 36521, 
           "average": 2809.3076923076924
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 10709, 
-          "average": 823.7692307692307
+          "sum": 187742, 
+          "average": 14441.692307692309
         }, 
         "South Dakota": {
           "count": 13, 
@@ -12815,9 +13070,9 @@ drugs_bar = [
           "average": 742.3076923076923
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 44192, 
-          "average": 3682.6666666666665
+          "count": 13, 
+          "sum": 46992, 
+          "average": 3614.769230769231
         }, 
         "New Jersey": {
           "count": 13, 
@@ -12839,20 +13094,15 @@ drugs_bar = [
           "sum": 45338, 
           "average": 3487.5384615384614
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 8861, 
-          "average": 886.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 261, 
-          "average": 261.0
+          "count": 13, 
+          "sum": 2915, 
+          "average": 224.23076923076923
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 128273, 
-          "average": 16034.125
+          "count": 13, 
+          "sum": 224121, 
+          "average": 17240.076923076922
         }, 
         "Nevada": {
           "count": 13, 
@@ -12863,6 +13113,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 11933, 
           "average": 917.9230769230769
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 10709, 
+          "average": 823.7692307692307
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Need Treatment Past Year.18-25": {
@@ -12971,15 +13226,15 @@ drugs_bar = [
           "sum": 101.27, 
           "average": 7.79
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 102.42, 
-          "average": 7.878461538461538
+          "sum": 98.48, 
+          "average": 7.575384615384616
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 123.22, 
-          "average": 9.478461538461538
+          "sum": 100.12, 
+          "average": 7.701538461538462
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -12995,6 +13250,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 87.15, 
           "average": 6.703846153846154
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 123.22, 
+          "average": 9.478461538461538
         }, 
         "Vermont": {
           "count": 13, 
@@ -13056,10 +13316,10 @@ drugs_bar = [
           "sum": 78.55999999999999, 
           "average": 6.0430769230769235
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 120.97, 
-          "average": 9.305384615384614
+          "sum": 102.42, 
+          "average": 7.878461538461538
         }, 
         "South Dakota": {
           "count": 13, 
@@ -13067,9 +13327,9 @@ drugs_bar = [
           "average": 5.6753846153846155
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 108.15, 
-          "average": 9.012500000000001
+          "count": 13, 
+          "sum": 115.16000000000001, 
+          "average": 8.858461538461539
         }, 
         "New Jersey": {
           "count": 13, 
@@ -13091,20 +13351,15 @@ drugs_bar = [
           "sum": 84.25999999999999, 
           "average": 6.481538461538462
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 74.76, 
-          "average": 7.476000000000001
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 6.43, 
-          "average": 6.43
+          "count": 13, 
+          "sum": 92.28000000000002, 
+          "average": 7.098461538461539
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 46.040000000000006, 
-          "average": 5.755
+          "count": 13, 
+          "sum": 77.69999999999999, 
+          "average": 5.976923076923077
         }, 
         "Nevada": {
           "count": 13, 
@@ -13115,6 +13370,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 109.54, 
           "average": 8.426153846153847
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 120.97, 
+          "average": 9.305384615384614
         }
       }, 
       "drugs.[0].Rates.Marijuana.Perceptions of Risk.12-17": {
@@ -13223,15 +13483,15 @@ drugs_bar = [
           "sum": 315.46000000000004, 
           "average": 24.266153846153845
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 343.03, 
-          "average": 26.386923076923075
+          "sum": 337.44000000000005, 
+          "average": 25.956923076923076
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 277.57000000000005, 
-          "average": 21.35153846153846
+          "sum": 343.21, 
+          "average": 26.400769230769228
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -13247,6 +13507,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 410.71999999999997, 
           "average": 31.593846153846155
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 277.57000000000005, 
+          "average": 21.35153846153846
         }, 
         "Vermont": {
           "count": 13, 
@@ -13308,10 +13573,10 @@ drugs_bar = [
           "sum": 488.23, 
           "average": 37.55615384615385
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 298.99, 
-          "average": 22.99923076923077
+          "sum": 343.03, 
+          "average": 26.386923076923075
         }, 
         "South Dakota": {
           "count": 13, 
@@ -13319,9 +13584,9 @@ drugs_bar = [
           "average": 32.66230769230769
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 291.84, 
-          "average": 24.320000000000004
+          "count": 13, 
+          "sum": 308.78, 
+          "average": 23.752307692307696
         }, 
         "New Jersey": {
           "count": 13, 
@@ -13343,20 +13608,15 @@ drugs_bar = [
           "sum": 418.59999999999997, 
           "average": 32.199999999999996
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 253.04, 
-          "average": 25.304
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 24.44, 
-          "average": 24.44
+          "count": 13, 
+          "sum": 300.29, 
+          "average": 23.099230769230772
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 256.52, 
-          "average": 32.065
+          "count": 13, 
+          "sum": 437.0899999999999, 
+          "average": 33.62230769230769
         }, 
         "Nevada": {
           "count": 13, 
@@ -13367,6 +13627,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 324.6, 
           "average": 24.96923076923077
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 298.99, 
+          "average": 22.99923076923077
         }
       }, 
       "drugs.[0].Rates.Alcohol.Perceptions of Risk.18-25": {
@@ -13475,15 +13740,15 @@ drugs_bar = [
           "sum": 386.89000000000004, 
           "average": 29.76076923076923
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 424.18000000000006, 
-          "average": 32.62923076923077
+          "sum": 333.86000000000007, 
+          "average": 25.681538461538462
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 301.60999999999996, 
-          "average": 23.200769230769232
+          "sum": 479.53, 
+          "average": 36.886923076923075
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -13499,6 +13764,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 461.37, 
           "average": 35.49
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 301.60999999999996, 
+          "average": 23.200769230769232
         }, 
         "Vermont": {
           "count": 13, 
@@ -13560,10 +13830,10 @@ drugs_bar = [
           "sum": 495.19, 
           "average": 38.09153846153846
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 379.06, 
-          "average": 29.158461538461538
+          "sum": 424.18000000000006, 
+          "average": 32.62923076923077
         }, 
         "South Dakota": {
           "count": 13, 
@@ -13571,9 +13841,9 @@ drugs_bar = [
           "average": 25.204615384615387
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 338.21999999999997, 
-          "average": 28.185000000000002
+          "count": 13, 
+          "sum": 363.26, 
+          "average": 27.943076923076923
         }, 
         "New Jersey": {
           "count": 13, 
@@ -13595,20 +13865,15 @@ drugs_bar = [
           "sum": 458.58, 
           "average": 35.27538461538462
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 259.15, 
-          "average": 25.915
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 32.85, 
-          "average": 32.85
+          "count": 13, 
+          "sum": 429.86999999999995, 
+          "average": 33.066923076923075
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 295.11, 
-          "average": 36.88875
+          "count": 13, 
+          "sum": 480.96, 
+          "average": 36.996923076923075
         }, 
         "Nevada": {
           "count": 13, 
@@ -13619,6 +13884,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 347.58000000000004, 
           "average": 26.736923076923077
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 379.06, 
+          "average": 29.158461538461538
         }
       }, 
       "drugs.[0].Rates.Marijuana.Perceptions of Risk.26+": {
@@ -13727,15 +13997,15 @@ drugs_bar = [
           "sum": 432.81, 
           "average": 33.293076923076924
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 467.69999999999993, 
-          "average": 35.97692307692308
+          "sum": 405.34999999999997, 
+          "average": 31.180769230769233
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 344.44, 
-          "average": 26.495384615384616
+          "sum": 455.79999999999995, 
+          "average": 35.06153846153846
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -13751,6 +14021,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 545.5200000000001, 
           "average": 41.96307692307692
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 344.44, 
+          "average": 26.495384615384616
         }, 
         "Vermont": {
           "count": 13, 
@@ -13812,10 +14087,10 @@ drugs_bar = [
           "sum": 594.7699999999999, 
           "average": 45.75153846153846
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 391.10999999999996, 
-          "average": 30.085384615384616
+          "sum": 467.69999999999993, 
+          "average": 35.97692307692308
         }, 
         "South Dakota": {
           "count": 13, 
@@ -13823,9 +14098,9 @@ drugs_bar = [
           "average": 37.01153846153846
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 320.01, 
-          "average": 26.6675
+          "count": 13, 
+          "sum": 339.75, 
+          "average": 26.134615384615383
         }, 
         "New Jersey": {
           "count": 13, 
@@ -13847,20 +14122,15 @@ drugs_bar = [
           "sum": 533.61, 
           "average": 41.04692307692308
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 298.12000000000006, 
-          "average": 29.812
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 29.47, 
-          "average": 29.47
+          "count": 13, 
+          "sum": 396.57, 
+          "average": 30.505384615384614
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 340.43, 
-          "average": 42.55375
+          "count": 13, 
+          "sum": 580.9799999999999, 
+          "average": 44.690769230769234
         }, 
         "Nevada": {
           "count": 13, 
@@ -13871,6 +14141,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 355.87, 
           "average": 27.374615384615385
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 391.10999999999996, 
+          "average": 30.085384615384616
         }
       }, 
       "drugs.[0].Rates.Marijuana.Used Past Year.18-25": {
@@ -13979,15 +14254,15 @@ drugs_bar = [
           "sum": 507.28, 
           "average": 39.02153846153846
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 439.7999999999999, 
-          "average": 33.830769230769235
+          "sum": 467.18, 
+          "average": 35.93692307692308
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 565.4499999999999, 
-          "average": 43.49615384615385
+          "sum": 410.65000000000003, 
+          "average": 31.588461538461537
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -14003,6 +14278,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 376.34, 
           "average": 28.949230769230766
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 565.4499999999999, 
+          "average": 43.49615384615385
         }, 
         "Vermont": {
           "count": 13, 
@@ -14064,10 +14344,10 @@ drugs_bar = [
           "sum": 309.54, 
           "average": 23.810769230769232
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 583.96, 
-          "average": 44.92
+          "sum": 439.7999999999999, 
+          "average": 33.830769230769235
         }, 
         "South Dakota": {
           "count": 13, 
@@ -14075,9 +14355,9 @@ drugs_bar = [
           "average": 26.283846153846152
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 468.83000000000004, 
-          "average": 39.06916666666667
+          "count": 13, 
+          "sum": 511.07000000000005, 
+          "average": 39.31307692307692
         }, 
         "New Jersey": {
           "count": 13, 
@@ -14099,20 +14379,15 @@ drugs_bar = [
           "sum": 313.84000000000003, 
           "average": 24.141538461538463
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 360.68, 
-          "average": 36.068
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 34.39, 
-          "average": 34.39
+          "count": 13, 
+          "sum": 482.71999999999997, 
+          "average": 37.13230769230769
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 192.21000000000004, 
-          "average": 24.02625
+          "count": 13, 
+          "sum": 305.82, 
+          "average": 23.524615384615384
         }, 
         "Nevada": {
           "count": 13, 
@@ -14123,6 +14398,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 513.01, 
           "average": 39.46230769230769
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 583.96, 
+          "average": 44.92
         }
       }, 
       "drugs.[0].Rates.Tobacco.Perceptions of Risk.12-17": {
@@ -14231,15 +14511,15 @@ drugs_bar = [
           "sum": 867.2199999999999, 
           "average": 66.70923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 874.2700000000002, 
-          "average": 67.25153846153846
+          "sum": 831.9099999999999, 
+          "average": 63.99307692307692
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 814.6700000000001, 
-          "average": 62.66692307692308
+          "sum": 866.6500000000001, 
+          "average": 66.66538461538461
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -14255,6 +14535,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 810.09, 
           "average": 62.31461538461539
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 814.6700000000001, 
+          "average": 62.66692307692308
         }, 
         "Vermont": {
           "count": 13, 
@@ -14316,10 +14601,10 @@ drugs_bar = [
           "sum": 798.8199999999999, 
           "average": 61.447692307692314
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 827.9900000000001, 
-          "average": 63.691538461538464
+          "sum": 874.2700000000002, 
+          "average": 67.25153846153846
         }, 
         "South Dakota": {
           "count": 13, 
@@ -14327,9 +14612,9 @@ drugs_bar = [
           "average": 63.113846153846154
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 786.1800000000001, 
-          "average": 65.515
+          "count": 13, 
+          "sum": 849.11, 
+          "average": 65.31615384615385
         }, 
         "New Jersey": {
           "count": 13, 
@@ -14351,20 +14636,15 @@ drugs_bar = [
           "sum": 809.81, 
           "average": 62.29307692307692
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 637.8399999999999, 
-          "average": 63.784000000000006
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 65.22, 
-          "average": 65.22
+          "count": 13, 
+          "sum": 779.79, 
+          "average": 59.98384615384615
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 512.96, 
-          "average": 64.12
+          "count": 13, 
+          "sum": 822.0899999999999, 
+          "average": 63.23769230769231
         }, 
         "Nevada": {
           "count": 13, 
@@ -14375,6 +14655,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 842.3499999999999, 
           "average": 64.79615384615384
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 827.9900000000001, 
+          "average": 63.691538461538464
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Cocaine Used Past Year.12-17": {
@@ -14483,15 +14768,15 @@ drugs_bar = [
           "sum": 4402, 
           "average": 338.61538461538464
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 20421, 
-          "average": 1570.8461538461538
+          "sum": 1555, 
+          "average": 119.61538461538461
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 2167, 
-          "average": 166.69230769230768
+          "sum": 53537, 
+          "average": 4118.2307692307695
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -14507,6 +14792,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 4384, 
           "average": 337.2307692307692
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 2167, 
+          "average": 166.69230769230768
         }, 
         "Vermont": {
           "count": 13, 
@@ -14568,10 +14858,10 @@ drugs_bar = [
           "sum": 4873, 
           "average": 374.84615384615387
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 1352, 
-          "average": 104.0
+          "sum": 20421, 
+          "average": 1570.8461538461538
         }, 
         "South Dakota": {
           "count": 13, 
@@ -14579,9 +14869,9 @@ drugs_bar = [
           "average": 73.46153846153847
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 7557, 
-          "average": 629.75
+          "count": 13, 
+          "sum": 7957, 
+          "average": 612.0769230769231
         }, 
         "New Jersey": {
           "count": 13, 
@@ -14603,20 +14893,15 @@ drugs_bar = [
           "sum": 7113, 
           "average": 547.1538461538462
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 975, 
-          "average": 97.5
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 14, 
-          "average": 14.0
+          "count": 13, 
+          "sum": 159, 
+          "average": 12.23076923076923
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 19040, 
-          "average": 2380.0
+          "count": 13, 
+          "sum": 41424, 
+          "average": 3186.4615384615386
         }, 
         "Nevada": {
           "count": 13, 
@@ -14627,6 +14912,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 1806, 
           "average": 138.92307692307693
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 1352, 
+          "average": 104.0
         }
       }, 
       "drugs.[0].Totals.Marijuana.Used Past Year.18-25": {
@@ -14735,15 +15025,15 @@ drugs_bar = [
           "sum": 177949, 
           "average": 13688.384615384615
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 969579, 
-          "average": 74583.0
+          "sum": 48931, 
+          "average": 3763.923076923077
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 73584, 
-          "average": 5660.307692307692
+          "sum": 1783072, 
+          "average": 137159.38461538462
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -14759,6 +15049,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 190967, 
           "average": 14689.76923076923
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 73584, 
+          "average": 5660.307692307692
         }, 
         "Vermont": {
           "count": 13, 
@@ -14820,10 +15115,10 @@ drugs_bar = [
           "sum": 162257, 
           "average": 12481.307692307691
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 73911, 
-          "average": 5685.461538461538
+          "sum": 969579, 
+          "average": 74583.0
         }, 
         "South Dakota": {
           "count": 13, 
@@ -14831,9 +15126,9 @@ drugs_bar = [
           "average": 2386.4615384615386
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 260506, 
-          "average": 21708.833333333332
+          "count": 13, 
+          "sum": 285806, 
+          "average": 21985.076923076922
         }, 
         "New Jersey": {
           "count": 13, 
@@ -14855,20 +15150,15 @@ drugs_bar = [
           "sum": 212061, 
           "average": 16312.384615384615
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 38464, 
-          "average": 3846.4
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3502, 
-          "average": 3502.0
+          "count": 13, 
+          "sum": 46570, 
+          "average": 3582.3076923076924
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 568920, 
-          "average": 71115.0
+          "count": 13, 
+          "sum": 877388, 
+          "average": 67491.38461538461
         }, 
         "Nevada": {
           "count": 13, 
@@ -14879,6 +15169,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 63995, 
           "average": 4922.692307692308
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 73911, 
+          "average": 5685.461538461538
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.All Except Marijuana Used Past Month.26+": {
@@ -14987,15 +15282,15 @@ drugs_bar = [
           "sum": 74935, 
           "average": 5764.2307692307695
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 409552, 
-          "average": 31504.0
+          "sum": 18954, 
+          "average": 1458.0
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 31958, 
-          "average": 2458.3076923076924
+          "sum": 884663, 
+          "average": 68051.0
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -15011,6 +15306,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 106614, 
           "average": 8201.076923076924
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 31958, 
+          "average": 2458.3076923076924
         }, 
         "Vermont": {
           "count": 13, 
@@ -15072,10 +15372,10 @@ drugs_bar = [
           "sum": 105640, 
           "average": 8126.153846153846
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 29545, 
-          "average": 2272.6923076923076
+          "sum": 409552, 
+          "average": 31504.0
         }, 
         "South Dakota": {
           "count": 13, 
@@ -15083,9 +15383,9 @@ drugs_bar = [
           "average": 928.7692307692307
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 118482, 
-          "average": 9873.5
+          "count": 13, 
+          "sum": 130982, 
+          "average": 10075.538461538461
         }, 
         "New Jersey": {
           "count": 13, 
@@ -15107,20 +15407,15 @@ drugs_bar = [
           "sum": 139594, 
           "average": 10738.0
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 14345, 
-          "average": 1434.5
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 1510, 
-          "average": 1510.0
+          "count": 13, 
+          "sum": 20916, 
+          "average": 1608.923076923077
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 292803, 
-          "average": 36600.375
+          "count": 13, 
+          "sum": 463430, 
+          "average": 35648.46153846154
         }, 
         "Nevada": {
           "count": 13, 
@@ -15131,6 +15426,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 29232, 
           "average": 2248.6153846153848
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 29545, 
+          "average": 2272.6923076923076
         }
       }, 
       "drugs.[0].Totals.Alcohol.Perceptions of Risk.18-25": {
@@ -15239,15 +15539,15 @@ drugs_bar = [
           "sum": 135998, 
           "average": 10461.384615384615
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 936293, 
-          "average": 72022.53846153847
+          "sum": 35003, 
+          "average": 2692.5384615384614
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 39344, 
-          "average": 3026.4615384615386
+          "sum": 2077940, 
+          "average": 159841.53846153847
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -15263,6 +15563,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 234051, 
           "average": 18003.923076923078
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 39344, 
+          "average": 3026.4615384615386
         }, 
         "Vermont": {
           "count": 13, 
@@ -15324,10 +15629,10 @@ drugs_bar = [
           "sum": 259365, 
           "average": 19951.153846153848
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 48001, 
-          "average": 3692.3846153846152
+          "sum": 936293, 
+          "average": 72022.53846153847
         }, 
         "South Dakota": {
           "count": 13, 
@@ -15335,9 +15640,9 @@ drugs_bar = [
           "average": 2294.923076923077
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 187648, 
-          "average": 15637.333333333334
+          "count": 13, 
+          "sum": 202648, 
+          "average": 15588.307692307691
         }, 
         "New Jersey": {
           "count": 13, 
@@ -15359,20 +15664,15 @@ drugs_bar = [
           "sum": 309465, 
           "average": 23805.0
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 27661, 
-          "average": 2766.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3345, 
-          "average": 3345.0
+          "count": 13, 
+          "sum": 41222, 
+          "average": 3170.923076923077
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 873088, 
-          "average": 109136.0
+          "count": 13, 
+          "sum": 1377513, 
+          "average": 105962.53846153847
         }, 
         "Nevada": {
           "count": 13, 
@@ -15383,6 +15683,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 43388, 
           "average": 3337.5384615384614
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 48001, 
+          "average": 3692.3846153846152
         }
       }, 
       "drugs.[0].Totals.Alcohol.Need Treatment Past Year.18-25": {
@@ -15491,15 +15796,15 @@ drugs_bar = [
           "sum": 76853, 
           "average": 5911.7692307692305
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 414870, 
-          "average": 31913.076923076922
+          "sum": 26976, 
+          "average": 2075.076923076923
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 32115, 
-          "average": 2470.3846153846152
+          "sum": 830298, 
+          "average": 63869.07692307692
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -15515,6 +15820,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 95499, 
           "average": 7346.076923076923
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 32115, 
+          "average": 2470.3846153846152
         }, 
         "Vermont": {
           "count": 13, 
@@ -15576,10 +15886,10 @@ drugs_bar = [
           "sum": 84480, 
           "average": 6498.461538461538
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 31774, 
-          "average": 2444.153846153846
+          "sum": 414870, 
+          "average": 31913.076923076922
         }, 
         "South Dakota": {
           "count": 13, 
@@ -15587,9 +15897,9 @@ drugs_bar = [
           "average": 1769.0
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 122144, 
-          "average": 10178.666666666666
+          "count": 13, 
+          "sum": 129744, 
+          "average": 9980.307692307691
         }, 
         "New Jersey": {
           "count": 13, 
@@ -15611,20 +15921,15 @@ drugs_bar = [
           "sum": 115288, 
           "average": 8868.307692307691
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 20377, 
-          "average": 2037.7
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 1704, 
-          "average": 1704.0
+          "count": 13, 
+          "sum": 20392, 
+          "average": 1568.6153846153845
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 320571, 
-          "average": 40071.375
+          "count": 13, 
+          "sum": 537400, 
+          "average": 41338.46153846154
         }, 
         "Nevada": {
           "count": 13, 
@@ -15635,6 +15940,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 25335, 
           "average": 1948.8461538461538
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 31774, 
+          "average": 2444.153846153846
         }
       }, 
       "drugs.[0].Totals.Alcohol.Need Treatment Past Year.26+": {
@@ -15743,15 +16053,15 @@ drugs_bar = [
           "sum": 173357, 
           "average": 13335.153846153846
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 903881, 
-          "average": 69529.30769230769
+          "sum": 56413, 
+          "average": 4339.461538461538
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 67443, 
-          "average": 5187.923076923077
+          "sum": 1763997, 
+          "average": 135692.07692307694
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -15767,6 +16077,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 222805, 
           "average": 17138.846153846152
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 67443, 
+          "average": 5187.923076923077
         }, 
         "Vermont": {
           "count": 13, 
@@ -15828,10 +16143,10 @@ drugs_bar = [
           "sum": 194200, 
           "average": 14938.461538461539
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 60035, 
-          "average": 4618.076923076923
+          "sum": 903881, 
+          "average": 69529.30769230769
         }, 
         "South Dakota": {
           "count": 13, 
@@ -15839,9 +16154,9 @@ drugs_bar = [
           "average": 3358.3076923076924
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 241239, 
-          "average": 20103.25
+          "count": 13, 
+          "sum": 262739, 
+          "average": 20210.69230769231
         }, 
         "New Jersey": {
           "count": 13, 
@@ -15863,20 +16178,15 @@ drugs_bar = [
           "sum": 250321, 
           "average": 19255.46153846154
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 43143, 
-          "average": 4314.3
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3056, 
-          "average": 3056.0
+          "count": 13, 
+          "sum": 44453, 
+          "average": 3419.4615384615386
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 682816, 
-          "average": 85352.0
+          "count": 13, 
+          "sum": 1065873, 
+          "average": 81990.23076923077
         }, 
         "Nevada": {
           "count": 13, 
@@ -15887,6 +16197,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 59343, 
           "average": 4564.846153846154
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 60035, 
+          "average": 4618.076923076923
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Dependence Past Year.18-25": {
@@ -15995,15 +16310,15 @@ drugs_bar = [
           "sum": 78.63999999999999, 
           "average": 6.049230769230769
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 77.73, 
-          "average": 5.979230769230769
+          "sum": 71.92000000000002, 
+          "average": 5.532307692307692
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 92.02, 
-          "average": 7.078461538461538
+          "sum": 75.77, 
+          "average": 5.828461538461538
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -16019,6 +16334,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 60.27, 
           "average": 4.636153846153846
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 92.02, 
+          "average": 7.078461538461538
         }, 
         "Vermont": {
           "count": 13, 
@@ -16080,10 +16400,10 @@ drugs_bar = [
           "sum": 60.150000000000006, 
           "average": 4.6269230769230765
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 91.81, 
-          "average": 7.062307692307693
+          "sum": 77.73, 
+          "average": 5.979230769230769
         }, 
         "South Dakota": {
           "count": 13, 
@@ -16091,9 +16411,9 @@ drugs_bar = [
           "average": 4.076153846153845
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 71.96, 
-          "average": 5.996666666666666
+          "count": 13, 
+          "sum": 77.13999999999999, 
+          "average": 5.9338461538461535
         }, 
         "New Jersey": {
           "count": 13, 
@@ -16115,20 +16435,15 @@ drugs_bar = [
           "sum": 64.42000000000002, 
           "average": 4.955384615384616
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 55.75, 
-          "average": 5.575
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 4.7, 
-          "average": 4.7
+          "count": 13, 
+          "sum": 71.61000000000001, 
+          "average": 5.508461538461538
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 32.92, 
-          "average": 4.115
+          "count": 13, 
+          "sum": 56.21, 
+          "average": 4.323846153846154
         }, 
         "Nevada": {
           "count": 13, 
@@ -16139,6 +16454,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 88.44, 
           "average": 6.803076923076923
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 91.81, 
+          "average": 7.062307692307693
         }
       }, 
       "drugs.[0].Totals.Alcohol.Binge Past Month.18-25": {
@@ -16247,15 +16567,15 @@ drugs_bar = [
           "sum": 215695, 
           "average": 16591.923076923078
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 1192469, 
-          "average": 91728.38461538461
+          "sum": 66096, 
+          "average": 5084.307692307692
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 83057, 
-          "average": 6389.0
+          "sum": 2081618, 
+          "average": 160124.46153846153
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -16271,6 +16591,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 253847, 
           "average": 19526.69230769231
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 83057, 
+          "average": 6389.0
         }, 
         "Vermont": {
           "count": 13, 
@@ -16332,10 +16657,10 @@ drugs_bar = [
           "sum": 224300, 
           "average": 17253.846153846152
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 82829, 
-          "average": 6371.461538461538
+          "sum": 1192469, 
+          "average": 91728.38461538461
         }, 
         "South Dakota": {
           "count": 13, 
@@ -16343,9 +16668,9 @@ drugs_bar = [
           "average": 4555.461538461538
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 301022, 
-          "average": 25085.166666666668
+          "count": 13, 
+          "sum": 324922, 
+          "average": 24994.0
         }, 
         "New Jersey": {
           "count": 13, 
@@ -16367,20 +16692,15 @@ drugs_bar = [
           "sum": 269288, 
           "average": 20714.46153846154
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 51144, 
-          "average": 5114.4
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 4760, 
-          "average": 4760.0
+          "count": 13, 
+          "sum": 56061, 
+          "average": 4312.384615384615
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 875088, 
-          "average": 109386.0
+          "count": 13, 
+          "sum": 1416373, 
+          "average": 108951.76923076923
         }, 
         "Nevada": {
           "count": 13, 
@@ -16391,6 +16711,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 72441, 
           "average": 5572.384615384615
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 82829, 
+          "average": 6371.461538461538
         }
       }, 
       "drugs.[0].Totals.Alcohol.Binge Past Month.26+": {
@@ -16499,15 +16824,15 @@ drugs_bar = [
           "sum": 697247, 
           "average": 53634.38461538462
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 3721514, 
-          "average": 286270.3076923077
+          "sum": 201944, 
+          "average": 15534.153846153846
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 246637, 
-          "average": 18972.076923076922
+          "sum": 6114264, 
+          "average": 470328.0
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -16523,6 +16848,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 808324, 
           "average": 62178.769230769234
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 246637, 
+          "average": 18972.076923076922
         }, 
         "Vermont": {
           "count": 13, 
@@ -16584,10 +16914,10 @@ drugs_bar = [
           "sum": 750750, 
           "average": 57750.0
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 221012, 
-          "average": 17000.923076923078
+          "sum": 3721514, 
+          "average": 286270.3076923077
         }, 
         "South Dakota": {
           "count": 13, 
@@ -16595,9 +16925,9 @@ drugs_bar = [
           "average": 12764.076923076924
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 877404, 
-          "average": 73117.0
+          "count": 13, 
+          "sum": 962804, 
+          "average": 74061.84615384616
         }, 
         "New Jersey": {
           "count": 13, 
@@ -16619,20 +16949,15 @@ drugs_bar = [
           "sum": 844052, 
           "average": 64927.07692307692
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 158447, 
-          "average": 15844.7
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 10497, 
-          "average": 10497.0
+          "count": 13, 
+          "sum": 142496, 
+          "average": 10961.23076923077
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 2795639, 
-          "average": 349454.875
+          "count": 13, 
+          "sum": 4324234, 
+          "average": 332633.3846153846
         }, 
         "Nevada": {
           "count": 13, 
@@ -16643,6 +16968,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 238767, 
           "average": 18366.69230769231
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 221012, 
+          "average": 17000.923076923078
         }
       }, 
       "drugs.[0].Totals.Marijuana.Used Past Year.12-17": {
@@ -16751,15 +17081,15 @@ drugs_bar = [
           "sum": 63666, 
           "average": 4897.384615384615
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 296593, 
-          "average": 22814.846153846152
+          "sum": 18723, 
+          "average": 1440.2307692307693
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 26423, 
-          "average": 2032.5384615384614
+          "sum": 625579, 
+          "average": 48121.46153846154
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -16775,6 +17105,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 61056, 
           "average": 4696.615384615385
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 26423, 
+          "average": 2032.5384615384614
         }, 
         "Vermont": {
           "count": 13, 
@@ -16836,10 +17171,10 @@ drugs_bar = [
           "sum": 57296, 
           "average": 4407.384615384615
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 20041, 
-          "average": 1541.6153846153845
+          "sum": 296593, 
+          "average": 22814.846153846152
         }, 
         "South Dakota": {
           "count": 13, 
@@ -16847,9 +17182,9 @@ drugs_bar = [
           "average": 901.0769230769231
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 89689, 
-          "average": 7474.083333333333
+          "count": 13, 
+          "sum": 98189, 
+          "average": 7553.0
         }, 
         "New Jersey": {
           "count": 13, 
@@ -16871,20 +17206,15 @@ drugs_bar = [
           "sum": 75380, 
           "average": 5798.461538461538
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 13546, 
-          "average": 1354.6
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 628, 
-          "average": 628.0
+          "count": 13, 
+          "sum": 7557, 
+          "average": 581.3076923076923
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 216862, 
-          "average": 27107.75
+          "count": 13, 
+          "sum": 356472, 
+          "average": 27420.923076923078
         }, 
         "Nevada": {
           "count": 13, 
@@ -16895,6 +17225,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 22426, 
           "average": 1725.076923076923
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 20041, 
+          "average": 1541.6153846153845
         }
       }, 
       "drugs.[0].Rates.Alcohol.Binge Past Month.18-25": {
@@ -17003,15 +17338,15 @@ drugs_bar = [
           "sum": 615.9399999999999, 
           "average": 47.38
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 541.2399999999999, 
-          "average": 41.63384615384616
+          "sum": 631.9200000000001, 
+          "average": 48.60923076923076
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 638.1699999999998, 
-          "average": 49.089999999999996
+          "sum": 480.44999999999993, 
+          "average": 36.957692307692305
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -17027,6 +17362,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 501.64, 
           "average": 38.58769230769231
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 638.1699999999998, 
+          "average": 49.089999999999996
         }, 
         "Vermont": {
           "count": 13, 
@@ -17088,10 +17428,10 @@ drugs_bar = [
           "sum": 428.5899999999999, 
           "average": 32.96846153846154
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 655.01, 
-          "average": 50.385384615384616
+          "sum": 541.2399999999999, 
+          "average": 41.63384615384616
         }, 
         "South Dakota": {
           "count": 13, 
@@ -17099,9 +17439,9 @@ drugs_bar = [
           "average": 50.18
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 542.8199999999999, 
-          "average": 45.23500000000001
+          "count": 13, 
+          "sum": 582.7199999999999, 
+          "average": 44.824615384615385
         }, 
         "New Jersey": {
           "count": 13, 
@@ -17123,20 +17463,15 @@ drugs_bar = [
           "sum": 399.28, 
           "average": 30.713846153846156
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 479.77000000000004, 
-          "average": 47.977
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 46.74, 
-          "average": 46.74
+          "count": 13, 
+          "sum": 579.0699999999999, 
+          "average": 44.54384615384616
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 296.33, 
-          "average": 37.04125
+          "count": 13, 
+          "sum": 495.76, 
+          "average": 38.135384615384616
         }, 
         "Nevada": {
           "count": 13, 
@@ -17147,6 +17482,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 581.05, 
           "average": 44.69615384615384
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 655.01, 
+          "average": 50.385384615384616
         }
       }, 
       "drugs.[0].Totals.Alcohol.Use Past Month.26+": {
@@ -17255,15 +17595,15 @@ drugs_bar = [
           "sum": 1908713, 
           "average": 146824.07692307694
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 9485490, 
-          "average": 729653.0769230769
+          "sum": 496550, 
+          "average": 38196.153846153844
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 746456, 
-          "average": 57419.692307692305
+          "sum": 15818981, 
+          "average": 1216844.6923076923
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -17279,6 +17619,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 1825864, 
           "average": 140451.07692307694
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 746456, 
+          "average": 57419.692307692305
         }, 
         "Vermont": {
           "count": 13, 
@@ -17340,10 +17685,10 @@ drugs_bar = [
           "sum": 1677010, 
           "average": 129000.76923076923
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 560370, 
-          "average": 43105.38461538462
+          "sum": 9485490, 
+          "average": 729653.0769230769
         }, 
         "South Dakota": {
           "count": 13, 
@@ -17351,9 +17696,9 @@ drugs_bar = [
           "average": 29614.923076923078
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 2372315, 
-          "average": 197692.91666666666
+          "count": 13, 
+          "sum": 2597415, 
+          "average": 199801.15384615384
         }, 
         "New Jersey": {
           "count": 13, 
@@ -17375,20 +17720,15 @@ drugs_bar = [
           "sum": 2100124, 
           "average": 161548.0
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 395149, 
-          "average": 39514.9
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 24050, 
-          "average": 24050.0
+          "count": 13, 
+          "sum": 320997, 
+          "average": 24692.076923076922
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 6253850, 
-          "average": 781731.25
+          "count": 13, 
+          "sum": 9606156, 
+          "average": 738935.0769230769
         }, 
         "Nevada": {
           "count": 13, 
@@ -17399,6 +17739,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 672634, 
           "average": 51741.07692307692
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 560370, 
+          "average": 43105.38461538462
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.All Except Marijuana Used Past Month.18-25": {
@@ -17507,15 +17852,15 @@ drugs_bar = [
           "sum": 102.62, 
           "average": 7.893846153846154
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 97.13000000000001, 
-          "average": 7.4715384615384615
+          "sum": 94.58999999999999, 
+          "average": 7.276153846153846
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 150.82000000000002, 
-          "average": 11.60153846153846
+          "sum": 94.99000000000001, 
+          "average": 7.306923076923076
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -17531,6 +17876,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 96.08, 
           "average": 7.390769230769231
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 150.82000000000002, 
+          "average": 11.60153846153846
         }, 
         "Vermont": {
           "count": 13, 
@@ -17592,10 +17942,10 @@ drugs_bar = [
           "sum": 99.80999999999999, 
           "average": 7.677692307692308
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 143.92999999999998, 
-          "average": 11.071538461538463
+          "sum": 97.13000000000001, 
+          "average": 7.4715384615384615
         }, 
         "South Dakota": {
           "count": 13, 
@@ -17603,9 +17953,9 @@ drugs_bar = [
           "average": 6.077692307692308
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 110.42, 
-          "average": 9.201666666666666
+          "count": 13, 
+          "sum": 117.93, 
+          "average": 9.071538461538461
         }, 
         "New Jersey": {
           "count": 13, 
@@ -17627,20 +17977,15 @@ drugs_bar = [
           "sum": 98.99000000000001, 
           "average": 7.6146153846153855
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 72.71000000000001, 
-          "average": 7.270999999999999
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 7.8, 
-          "average": 7.8
+          "count": 13, 
+          "sum": 88.59000000000002, 
+          "average": 6.814615384615385
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 51.16, 
-          "average": 6.3950000000000005
+          "count": 13, 
+          "sum": 90.72000000000001, 
+          "average": 6.978461538461539
         }, 
         "Nevada": {
           "count": 13, 
@@ -17651,6 +17996,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 125.16000000000001, 
           "average": 9.627692307692307
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 143.92999999999998, 
+          "average": 11.071538461538463
         }
       }, 
       "drugs.[0].Totals.Pain Relievers Abuse Past Year.18-25": {
@@ -17759,15 +18109,15 @@ drugs_bar = [
           "sum": 47419, 
           "average": 3647.6153846153848
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 276552, 
-          "average": 21273.23076923077
+          "sum": 14560, 
+          "average": 1120.0
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 23468, 
-          "average": 1805.2307692307693
+          "sum": 542692, 
+          "average": 41745.53846153846
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -17783,6 +18133,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 74075, 
           "average": 5698.076923076923
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 23468, 
+          "average": 1805.2307692307693
         }, 
         "Vermont": {
           "count": 13, 
@@ -17844,10 +18199,10 @@ drugs_bar = [
           "sum": 78526, 
           "average": 6040.461538461538
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 22913, 
-          "average": 1762.5384615384614
+          "sum": 276552, 
+          "average": 21273.23076923077
         }, 
         "South Dakota": {
           "count": 13, 
@@ -17855,9 +18210,9 @@ drugs_bar = [
           "average": 772.5384615384615
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 86437, 
-          "average": 7203.083333333333
+          "count": 13, 
+          "sum": 91837, 
+          "average": 7064.384615384615
         }, 
         "New Jersey": {
           "count": 13, 
@@ -17879,20 +18234,15 @@ drugs_bar = [
           "sum": 97775, 
           "average": 7521.153846153846
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 11466, 
-          "average": 1146.6
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 838, 
-          "average": 838.0
+          "count": 13, 
+          "sum": 9141, 
+          "average": 703.1538461538462
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 224936, 
-          "average": 28117.0
+          "count": 13, 
+          "sum": 373709, 
+          "average": 28746.846153846152
         }, 
         "Nevada": {
           "count": 13, 
@@ -17903,6 +18253,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 19941, 
           "average": 1533.923076923077
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 22913, 
+          "average": 1762.5384615384614
         }
       }, 
       "drugs.[0].Totals.Tobacco.Perceptions of Risk.26+": {
@@ -18011,15 +18366,15 @@ drugs_bar = [
           "sum": 2266789, 
           "average": 174368.38461538462
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 12497150, 
-          "average": 961319.2307692308
+          "sum": 575263, 
+          "average": 44251.0
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 809215, 
-          "average": 62247.307692307695
+          "sum": 22950598, 
+          "average": 1765430.6153846155
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -18035,6 +18390,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 2651439, 
           "average": 203956.84615384616
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 809215, 
+          "average": 62247.307692307695
         }, 
         "Vermont": {
           "count": 13, 
@@ -18096,10 +18456,10 @@ drugs_bar = [
           "sum": 2700264, 
           "average": 207712.61538461538
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 657163, 
-          "average": 50551.0
+          "sum": 12497150, 
+          "average": 961319.2307692308
         }, 
         "South Dakota": {
           "count": 13, 
@@ -18107,9 +18467,9 @@ drugs_bar = [
           "average": 33181.769230769234
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 2695282, 
-          "average": 224606.83333333334
+          "count": 13, 
+          "sum": 2949782, 
+          "average": 226906.3076923077
         }, 
         "New Jersey": {
           "count": 13, 
@@ -18131,20 +18491,15 @@ drugs_bar = [
           "sum": 3514578, 
           "average": 270352.1538461539
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 447741, 
-          "average": 44774.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 29318, 
-          "average": 29318.0
+          "count": 13, 
+          "sum": 391495, 
+          "average": 30115.0
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 8955510, 
-          "average": 1119438.75
+          "count": 13, 
+          "sum": 13903744, 
+          "average": 1069518.7692307692
         }, 
         "Nevada": {
           "count": 13, 
@@ -18155,6 +18510,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 820362, 
           "average": 63104.769230769234
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 657163, 
+          "average": 50551.0
         }
       }, 
       "drugs.[0].Rates.Alcohol.In Minors.Abuse": {
@@ -18263,15 +18623,15 @@ drugs_bar = [
           "sum": 263.43, 
           "average": 20.263846153846153
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 238.82, 
-          "average": 18.37076923076923
+          "sum": 301.23999999999995, 
+          "average": 23.172307692307694
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 305.55, 
-          "average": 23.503846153846155
+          "sum": 208.84000000000003, 
+          "average": 16.064615384615387
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -18287,6 +18647,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 194.55, 
           "average": 14.965384615384616
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 305.55, 
+          "average": 23.503846153846155
         }, 
         "Vermont": {
           "count": 13, 
@@ -18348,10 +18713,10 @@ drugs_bar = [
           "sum": 183.30000000000004, 
           "average": 14.100000000000001
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 291.67, 
-          "average": 22.436153846153847
+          "sum": 238.82, 
+          "average": 18.37076923076923
         }, 
         "South Dakota": {
           "count": 13, 
@@ -18359,9 +18724,9 @@ drugs_bar = [
           "average": 21.996153846153845
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 219.01, 
-          "average": 18.250833333333333
+          "count": 13, 
+          "sum": 234.67999999999998, 
+          "average": 18.052307692307693
         }, 
         "New Jersey": {
           "count": 13, 
@@ -18383,20 +18748,15 @@ drugs_bar = [
           "sum": 181.96000000000004, 
           "average": 13.996923076923078
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 217.34999999999997, 
-          "average": 21.735
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 16.72, 
-          "average": 16.72
+          "count": 13, 
+          "sum": 217.01999999999998, 
+          "average": 16.693846153846156
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 120.14, 
-          "average": 15.0175
+          "count": 13, 
+          "sum": 205.57000000000002, 
+          "average": 15.813076923076922
         }, 
         "Nevada": {
           "count": 13, 
@@ -18407,6 +18767,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 239.22000000000006, 
           "average": 18.40153846153846
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 291.67, 
+          "average": 22.436153846153847
         }
       }, 
       "drugs.[0].Totals.Tobacco.Use Past Month.26+": {
@@ -18515,15 +18880,15 @@ drugs_bar = [
           "sum": 728909, 
           "average": 56069.92307692308
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 4099516, 
-          "average": 315347.3846153846
+          "sum": 253274, 
+          "average": 19482.615384615383
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 310472, 
-          "average": 23882.46153846154
+          "sum": 6035253, 
+          "average": 464250.23076923075
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -18539,6 +18904,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 1156401, 
           "average": 88953.92307692308
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 310472, 
+          "average": 23882.46153846154
         }, 
         "Vermont": {
           "count": 13, 
@@ -18600,10 +18970,10 @@ drugs_bar = [
           "sum": 1277327, 
           "average": 98255.92307692308
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 241088, 
-          "average": 18545.23076923077
+          "sum": 4099516, 
+          "average": 315347.3846153846
         }, 
         "South Dakota": {
           "count": 13, 
@@ -18611,9 +18981,9 @@ drugs_bar = [
           "average": 15471.923076923076
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 1017223, 
-          "average": 84768.58333333333
+          "count": 13, 
+          "sum": 1102823, 
+          "average": 84832.53846153847
         }, 
         "New Jersey": {
           "count": 13, 
@@ -18635,20 +19005,15 @@ drugs_bar = [
           "sum": 1737559, 
           "average": 133658.38461538462
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 196543, 
-          "average": 19654.3
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 10364, 
-          "average": 10364.0
+          "count": 13, 
+          "sum": 139361, 
+          "average": 10720.076923076924
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 3095917, 
-          "average": 386989.625
+          "count": 13, 
+          "sum": 5001851, 
+          "average": 384757.76923076925
         }, 
         "Nevada": {
           "count": 13, 
@@ -18659,6 +19024,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 333262, 
           "average": 25635.53846153846
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 241088, 
+          "average": 18545.23076923077
         }
       }, 
       "drugs.[0].Totals.Marijuana.Used Past Year.26+": {
@@ -18767,15 +19137,15 @@ drugs_bar = [
           "sum": 263445, 
           "average": 20265.0
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 1500998, 
-          "average": 115461.38461538461
+          "sum": 86700, 
+          "average": 6669.2307692307695
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 122302, 
-          "average": 9407.846153846154
+          "sum": 2759177, 
+          "average": 212244.38461538462
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -18791,6 +19161,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 267612, 
           "average": 20585.53846153846
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 122302, 
+          "average": 9407.846153846154
         }, 
         "Vermont": {
           "count": 13, 
@@ -18852,10 +19227,10 @@ drugs_bar = [
           "sum": 235712, 
           "average": 18131.69230769231
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 104375, 
-          "average": 8028.846153846154
+          "sum": 1500998, 
+          "average": 115461.38461538461
         }, 
         "South Dakota": {
           "count": 13, 
@@ -18863,9 +19238,9 @@ drugs_bar = [
           "average": 2873.769230769231
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 448143, 
-          "average": 37345.25
+          "count": 13, 
+          "sum": 505243, 
+          "average": 38864.846153846156
         }, 
         "New Jersey": {
           "count": 13, 
@@ -18887,20 +19262,15 @@ drugs_bar = [
           "sum": 311886, 
           "average": 23991.23076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 70562, 
-          "average": 7056.2
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 4574, 
-          "average": 4574.0
+          "count": 13, 
+          "sum": 66239, 
+          "average": 5095.307692307692
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 729800, 
-          "average": 91225.0
+          "count": 13, 
+          "sum": 1079546, 
+          "average": 83042.0
         }, 
         "Nevada": {
           "count": 13, 
@@ -18911,6 +19281,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 124393, 
           "average": 9568.692307692309
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 104375, 
+          "average": 8028.846153846154
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Cocaine Used Past Year.12-17": {
@@ -19019,15 +19394,15 @@ drugs_bar = [
           "sum": 14.98, 
           "average": 1.1523076923076923
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 13.01, 
-          "average": 1.0007692307692309
+          "sum": 19.29, 
+          "average": 1.4838461538461538
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 19.79, 
-          "average": 1.5223076923076921
+          "sum": 16.749999999999996, 
+          "average": 1.2884615384615385
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -19043,6 +19418,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 12.1, 
           "average": 0.9307692307692308
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 19.79, 
+          "average": 1.5223076923076921
         }, 
         "Vermont": {
           "count": 13, 
@@ -19104,10 +19484,10 @@ drugs_bar = [
           "sum": 12.5, 
           "average": 0.9615384615384616
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 15.589999999999998, 
-          "average": 1.1992307692307693
+          "sum": 13.01, 
+          "average": 1.0007692307692309
         }, 
         "South Dakota": {
           "count": 13, 
@@ -19115,9 +19495,9 @@ drugs_bar = [
           "average": 1.0461538461538462
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 19.2, 
-          "average": 1.5999999999999999
+          "count": 13, 
+          "sum": 20.169999999999998, 
+          "average": 1.5515384615384618
         }, 
         "New Jersey": {
           "count": 13, 
@@ -19139,20 +19519,15 @@ drugs_bar = [
           "sum": 14.35, 
           "average": 1.103846153846154
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 12.39, 
-          "average": 1.239
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 0.38, 
-          "average": 0.38
+          "count": 13, 
+          "sum": 4.3100000000000005, 
+          "average": 0.3315384615384615
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 8.51, 
-          "average": 1.06375
+          "count": 13, 
+          "sum": 19.34, 
+          "average": 1.4876923076923076
         }, 
         "Nevada": {
           "count": 13, 
@@ -19163,6 +19538,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 16.990000000000002, 
           "average": 1.306923076923077
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 15.589999999999998, 
+          "average": 1.1992307692307693
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Dependence Past Year.12-17": {
@@ -19271,15 +19651,15 @@ drugs_bar = [
           "sum": 9014, 
           "average": 693.3846153846154
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 50056, 
-          "average": 3850.4615384615386
+          "sum": 2915, 
+          "average": 224.23076923076923
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 4200, 
-          "average": 323.0769230769231
+          "sum": 104102, 
+          "average": 8007.846153846154
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -19295,6 +19675,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 10375, 
           "average": 798.0769230769231
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 4200, 
+          "average": 323.0769230769231
         }, 
         "Vermont": {
           "count": 13, 
@@ -19356,10 +19741,10 @@ drugs_bar = [
           "sum": 10991, 
           "average": 845.4615384615385
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 3420, 
-          "average": 263.0769230769231
+          "sum": 50056, 
+          "average": 3850.4615384615386
         }, 
         "South Dakota": {
           "count": 13, 
@@ -19367,9 +19752,9 @@ drugs_bar = [
           "average": 167.07692307692307
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 13755, 
-          "average": 1146.25
+          "count": 13, 
+          "sum": 14655, 
+          "average": 1127.3076923076924
         }, 
         "New Jersey": {
           "count": 13, 
@@ -19391,20 +19776,15 @@ drugs_bar = [
           "sum": 15196, 
           "average": 1168.923076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 2040, 
-          "average": 204.0
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 78, 
-          "average": 78.0
+          "count": 13, 
+          "sum": 1110, 
+          "average": 85.38461538461539
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 40282, 
-          "average": 5035.25
+          "count": 13, 
+          "sum": 68414, 
+          "average": 5262.615384615385
         }, 
         "Nevada": {
           "count": 13, 
@@ -19415,6 +19795,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 3302, 
           "average": 254.0
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 3420, 
+          "average": 263.0769230769231
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.All Except Marijuana Used Past Month.26+": {
@@ -19523,15 +19908,15 @@ drugs_bar = [
           "sum": 32.34, 
           "average": 2.487692307692307
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 32.82, 
-          "average": 2.5246153846153847
+          "sum": 30.39, 
+          "average": 2.3376923076923077
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 37.1, 
-          "average": 2.853846153846154
+          "sum": 39.22, 
+          "average": 3.016923076923077
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -19547,6 +19932,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 37.39, 
           "average": 2.876153846153846
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 37.1, 
+          "average": 2.853846153846154
         }, 
         "Vermont": {
           "count": 13, 
@@ -19608,10 +19998,10 @@ drugs_bar = [
           "sum": 35.44, 
           "average": 2.726153846153846
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 43.32, 
-          "average": 3.332307692307692
+          "sum": 32.82, 
+          "average": 2.5246153846153847
         }, 
         "South Dakota": {
           "count": 13, 
@@ -19619,9 +20009,9 @@ drugs_bar = [
           "average": 1.8699999999999999
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 39.019999999999996, 
-          "average": 3.2516666666666665
+          "count": 13, 
+          "sum": 42.69, 
+          "average": 3.2838461538461536
         }, 
         "New Jersey": {
           "count": 13, 
@@ -19643,20 +20033,15 @@ drugs_bar = [
           "sum": 35.25000000000001, 
           "average": 2.7115384615384617
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 22.509999999999998, 
-          "average": 2.251
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3.99, 
-          "average": 3.99
+          "count": 13, 
+          "sum": 53.629999999999995, 
+          "average": 4.125384615384616
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 19.32, 
-          "average": 2.415
+          "count": 13, 
+          "sum": 32.21, 
+          "average": 2.477692307692308
         }, 
         "Nevada": {
           "count": 13, 
@@ -19667,6 +20052,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 32.67, 
           "average": 2.513076923076923
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 43.32, 
+          "average": 3.332307692307692
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Need Treatment Past Year.18-25": {
@@ -19775,15 +20165,15 @@ drugs_bar = [
           "sum": 35432, 
           "average": 2725.5384615384614
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 225296, 
-          "average": 17330.46153846154
+          "sum": 10301, 
+          "average": 792.3846153846154
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 15961, 
-          "average": 1227.7692307692307
+          "sum": 434347, 
+          "average": 33411.307692307695
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -19799,6 +20189,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 44089, 
           "average": 3391.4615384615386
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 15961, 
+          "average": 1227.7692307692307
         }, 
         "Vermont": {
           "count": 13, 
@@ -19860,10 +20255,10 @@ drugs_bar = [
           "sum": 41135, 
           "average": 3164.230769230769
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 15260, 
-          "average": 1173.8461538461538
+          "sum": 225296, 
+          "average": 17330.46153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -19871,9 +20266,9 @@ drugs_bar = [
           "average": 514.9230769230769
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 59943, 
-          "average": 4995.25
+          "count": 13, 
+          "sum": 64143, 
+          "average": 4934.076923076923
         }, 
         "New Jersey": {
           "count": 13, 
@@ -19895,20 +20290,15 @@ drugs_bar = [
           "sum": 56816, 
           "average": 4370.461538461538
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 7971, 
-          "average": 797.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 654, 
-          "average": 654.0
+          "count": 13, 
+          "sum": 8850, 
+          "average": 680.7692307692307
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 135919, 
-          "average": 16989.875
+          "count": 13, 
+          "sum": 221853, 
+          "average": 17065.615384615383
         }, 
         "Nevada": {
           "count": 13, 
@@ -19919,6 +20309,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 13641, 
           "average": 1049.3076923076924
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 15260, 
+          "average": 1173.8461538461538
         }
       }, 
       "drugs.[0].Rates.Tobacco.Use Past Month.26+": {
@@ -20027,15 +20422,15 @@ drugs_bar = [
           "sum": 314.76, 
           "average": 24.212307692307693
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 329.13999999999993, 
-          "average": 25.318461538461538
+          "sum": 404.85, 
+          "average": 31.142307692307693
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 360.96999999999997, 
-          "average": 27.766923076923078
+          "sum": 268.61, 
+          "average": 20.662307692307692
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -20051,6 +20446,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 406.29, 
           "average": 31.253076923076925
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 360.96999999999997, 
+          "average": 27.766923076923078
         }, 
         "Vermont": {
           "count": 13, 
@@ -20112,10 +20512,10 @@ drugs_bar = [
           "sum": 429.25, 
           "average": 33.01923076923077
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 353.56, 
-          "average": 27.196923076923078
+          "sum": 329.13999999999993, 
+          "average": 25.318461538461538
         }, 
         "South Dakota": {
           "count": 13, 
@@ -20123,9 +20523,9 @@ drugs_bar = [
           "average": 31.180769230769233
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 334.5, 
-          "average": 27.875
+          "count": 13, 
+          "sum": 359.64, 
+          "average": 27.664615384615384
         }, 
         "New Jersey": {
           "count": 13, 
@@ -20147,20 +20547,15 @@ drugs_bar = [
           "sum": 438.22999999999996, 
           "average": 33.71
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 307.89000000000004, 
-          "average": 30.788999999999998
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 27.37, 
-          "average": 27.37
+          "count": 13, 
+          "sum": 360.18, 
+          "average": 27.706153846153846
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 204.56000000000003, 
-          "average": 25.57
+          "count": 13, 
+          "sum": 348.5, 
+          "average": 26.807692307692307
         }, 
         "Nevada": {
           "count": 13, 
@@ -20171,6 +20566,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 372.27, 
           "average": 28.636153846153846
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 353.56, 
+          "average": 27.196923076923078
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Cocaine Used Past Year.26+": {
@@ -20279,15 +20679,15 @@ drugs_bar = [
           "sum": 41189, 
           "average": 3168.3846153846152
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 290816, 
-          "average": 22370.46153846154
+          "sum": 10202, 
+          "average": 784.7692307692307
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 19466, 
-          "average": 1497.3846153846155
+          "sum": 473265, 
+          "average": 36405.0
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -20303,6 +20703,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 65454, 
           "average": 5034.923076923077
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 19466, 
+          "average": 1497.3846153846155
         }, 
         "Vermont": {
           "count": 13, 
@@ -20364,10 +20769,10 @@ drugs_bar = [
           "sum": 44956, 
           "average": 3458.153846153846
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 19313, 
-          "average": 1485.6153846153845
+          "sum": 290816, 
+          "average": 22370.46153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -20375,9 +20780,9 @@ drugs_bar = [
           "average": 442.61538461538464
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 85802, 
-          "average": 7150.166666666667
+          "count": 13, 
+          "sum": 92502, 
+          "average": 7115.538461538462
         }, 
         "New Jersey": {
           "count": 13, 
@@ -20399,20 +20804,15 @@ drugs_bar = [
           "sum": 64462, 
           "average": 4958.615384615385
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 7454, 
-          "average": 745.4
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 1185, 
-          "average": 1185.0
+          "count": 13, 
+          "sum": 16237, 
+          "average": 1249.0
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 135607, 
-          "average": 16950.875
+          "count": 13, 
+          "sum": 234871, 
+          "average": 18067.0
         }, 
         "Nevada": {
           "count": 13, 
@@ -20423,6 +20823,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 15590, 
           "average": 1199.2307692307693
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 19313, 
+          "average": 1485.6153846153845
         }
       }, 
       "drugs.[0].Rates.Tobacco.Perceptions of Risk.18-25": {
@@ -20531,15 +20936,15 @@ drugs_bar = [
           "sum": 874.97, 
           "average": 67.30538461538461
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 895.1600000000001, 
-          "average": 68.85846153846154
+          "sum": 816.5799999999999, 
+          "average": 62.81384615384616
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 836.8, 
-          "average": 64.36923076923077
+          "sum": 931.4099999999999, 
+          "average": 71.64692307692307
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -20555,6 +20960,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 812.03, 
           "average": 62.46384615384615
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 836.8, 
+          "average": 64.36923076923077
         }, 
         "Vermont": {
           "count": 13, 
@@ -20616,10 +21026,10 @@ drugs_bar = [
           "sum": 800.99, 
           "average": 61.614615384615384
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 909.9899999999999, 
-          "average": 69.99923076923076
+          "sum": 895.1600000000001, 
+          "average": 68.85846153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -20627,9 +21037,9 @@ drugs_bar = [
           "average": 59.75692307692308
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 767.1500000000001, 
-          "average": 63.92916666666667
+          "count": 13, 
+          "sum": 831.2600000000001, 
+          "average": 63.94307692307692
         }, 
         "New Jersey": {
           "count": 13, 
@@ -20651,20 +21061,15 @@ drugs_bar = [
           "sum": 783.82, 
           "average": 60.29384615384616
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 618.9599999999999, 
-          "average": 61.896
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 69.73, 
-          "average": 69.73
+          "count": 13, 
+          "sum": 913.8399999999999, 
+          "average": 70.29538461538462
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 524.5699999999999, 
-          "average": 65.57124999999999
+          "count": 13, 
+          "sum": 854.51, 
+          "average": 65.73153846153846
         }, 
         "Nevada": {
           "count": 13, 
@@ -20675,6 +21080,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 802.0300000000001, 
           "average": 61.69461538461538
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 909.9899999999999, 
+          "average": 69.99923076923076
         }
       }, 
       "drugs.[0].Rates.Alcohol.Binge Past Month.12-17": {
@@ -20783,15 +21193,15 @@ drugs_bar = [
           "sum": 127.62999999999998, 
           "average": 9.817692307692308
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 119.91, 
-          "average": 9.223846153846154
+          "sum": 163.42999999999998, 
+          "average": 12.571538461538463
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 134.55999999999997, 
-          "average": 10.350769230769231
+          "sum": 104.66, 
+          "average": 8.05076923076923
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -20807,6 +21217,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 92.00999999999998, 
           "average": 7.077692307692308
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 134.55999999999997, 
+          "average": 10.350769230769231
         }, 
         "Vermont": {
           "count": 13, 
@@ -20868,10 +21283,10 @@ drugs_bar = [
           "sum": 93.50000000000001, 
           "average": 7.1923076923076925
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 124.03, 
-          "average": 9.54076923076923
+          "sum": 119.91, 
+          "average": 9.223846153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -20879,9 +21294,9 @@ drugs_bar = [
           "average": 10.703076923076923
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 111.82, 
-          "average": 9.318333333333333
+          "count": 13, 
+          "sum": 118.6, 
+          "average": 9.123076923076923
         }, 
         "New Jersey": {
           "count": 13, 
@@ -20903,20 +21318,15 @@ drugs_bar = [
           "sum": 90.91999999999999, 
           "average": 6.993846153846154
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 112.10000000000001, 
-          "average": 11.209999999999999
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 6.92, 
-          "average": 6.92
+          "count": 13, 
+          "sum": 79.06, 
+          "average": 6.081538461538462
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 57.129999999999995, 
-          "average": 7.14125
+          "count": 13, 
+          "sum": 103.40000000000002, 
+          "average": 7.953846153846154
         }, 
         "Nevada": {
           "count": 13, 
@@ -20927,6 +21337,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 113.15, 
           "average": 8.703846153846154
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 124.03, 
+          "average": 9.54076923076923
         }
       }, 
       "drugs.[0].Totals.Pain Relievers Abuse Past Year.12-17": {
@@ -21035,15 +21450,15 @@ drugs_bar = [
           "sum": 18757, 
           "average": 1442.8461538461538
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 101169, 
-          "average": 7782.2307692307695
+          "sum": 7152, 
+          "average": 550.1538461538462
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 9056, 
-          "average": 696.6153846153846
+          "sum": 267659, 
+          "average": 20589.153846153848
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -21059,6 +21474,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 30713, 
           "average": 2362.5384615384614
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 9056, 
+          "average": 696.6153846153846
         }, 
         "Vermont": {
           "count": 13, 
@@ -21120,10 +21540,10 @@ drugs_bar = [
           "sum": 36758, 
           "average": 2827.5384615384614
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 6782, 
-          "average": 521.6923076923077
+          "sum": 101169, 
+          "average": 7782.2307692307695
         }, 
         "South Dakota": {
           "count": 13, 
@@ -21131,9 +21551,9 @@ drugs_bar = [
           "average": 415.9230769230769
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 36383, 
-          "average": 3031.9166666666665
+          "count": 13, 
+          "sum": 38683, 
+          "average": 2975.6153846153848
         }, 
         "New Jersey": {
           "count": 13, 
@@ -21155,20 +21575,15 @@ drugs_bar = [
           "sum": 44539, 
           "average": 3426.076923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 5148, 
-          "average": 514.8
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 176, 
-          "average": 176.0
+          "count": 13, 
+          "sum": 2180, 
+          "average": 167.69230769230768
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 102299, 
-          "average": 12787.375
+          "count": 13, 
+          "sum": 176578, 
+          "average": 13582.923076923076
         }, 
         "Nevada": {
           "count": 13, 
@@ -21179,6 +21594,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 8024, 
           "average": 617.2307692307693
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 6782, 
+          "average": 521.6923076923077
         }
       }, 
       "drugs.[0].Rates.Tobacco.Use Past Month.18-25": {
@@ -21287,15 +21707,15 @@ drugs_bar = [
           "sum": 533.1000000000001, 
           "average": 41.00769230769231
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 488.93, 
-          "average": 37.61
+          "sum": 639.79, 
+          "average": 49.214615384615385
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 606.35, 
-          "average": 46.642307692307696
+          "sum": 424.95000000000005, 
+          "average": 32.68846153846154
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -21311,6 +21731,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 580.4399999999999, 
           "average": 44.649230769230776
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 606.35, 
+          "average": 46.642307692307696
         }, 
         "Vermont": {
           "count": 13, 
@@ -21372,10 +21797,10 @@ drugs_bar = [
           "sum": 572.86, 
           "average": 44.066153846153846
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 571.54, 
-          "average": 43.964615384615385
+          "sum": 488.93, 
+          "average": 37.61
         }, 
         "South Dakota": {
           "count": 13, 
@@ -21383,9 +21808,9 @@ drugs_bar = [
           "average": 49.88076923076923
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 538.9599999999999, 
-          "average": 44.913333333333334
+          "count": 13, 
+          "sum": 578.1999999999999, 
+          "average": 44.47692307692308
         }, 
         "New Jersey": {
           "count": 13, 
@@ -21407,20 +21832,15 @@ drugs_bar = [
           "sum": 590.7399999999999, 
           "average": 45.441538461538464
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 481.0, 
-          "average": 48.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 35.49, 
-          "average": 35.49
+          "count": 13, 
+          "sum": 452.13, 
+          "average": 34.77923076923077
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 289.9, 
-          "average": 36.2375
+          "count": 13, 
+          "sum": 496.36, 
+          "average": 38.181538461538466
         }, 
         "Nevada": {
           "count": 13, 
@@ -21431,6 +21851,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 608.6799999999998, 
           "average": 46.82153846153846
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 571.54, 
+          "average": 43.964615384615385
         }
       }, 
       "drugs.[0].Totals.Tobacco.Use Past Month.12-17": {
@@ -21539,15 +21964,15 @@ drugs_bar = [
           "sum": 42108, 
           "average": 3239.076923076923
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 200035, 
-          "average": 15387.307692307691
+          "sum": 17225, 
+          "average": 1325.0
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 18885, 
-          "average": 1452.6923076923076
+          "sum": 332428, 
+          "average": 25571.384615384617
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -21563,6 +21988,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 58645, 
           "average": 4511.153846153846
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 18885, 
+          "average": 1452.6923076923076
         }, 
         "Vermont": {
           "count": 13, 
@@ -21624,10 +22054,10 @@ drugs_bar = [
           "sum": 63618, 
           "average": 4893.692307692308
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 13091, 
-          "average": 1007.0
+          "sum": 200035, 
+          "average": 15387.307692307691
         }, 
         "South Dakota": {
           "count": 13, 
@@ -21635,9 +22065,9 @@ drugs_bar = [
           "average": 1071.1538461538462
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 62881, 
-          "average": 5240.083333333333
+          "count": 13, 
+          "sum": 66580, 
+          "average": 5121.538461538462
         }, 
         "New Jersey": {
           "count": 13, 
@@ -21659,20 +22089,15 @@ drugs_bar = [
           "sum": 87996, 
           "average": 6768.923076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 12046, 
-          "average": 1204.6
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 342, 
-          "average": 342.0
+          "count": 13, 
+          "sum": 3870, 
+          "average": 297.6923076923077
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 154360, 
-          "average": 19295.0
+          "count": 13, 
+          "sum": 283153, 
+          "average": 21781.0
         }, 
         "Nevada": {
           "count": 13, 
@@ -21683,6 +22108,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 16075, 
           "average": 1236.5384615384614
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 13091, 
+          "average": 1007.0
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.All Except Marijuana Used Past Month.12-17": {
@@ -21791,15 +22221,15 @@ drugs_bar = [
           "sum": 15429, 
           "average": 1186.8461538461538
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 78290, 
-          "average": 6022.307692307692
+          "sum": 5103, 
+          "average": 392.53846153846155
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 6491, 
-          "average": 499.3076923076923
+          "sum": 206030, 
+          "average": 15848.461538461539
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -21815,6 +22245,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 20736, 
           "average": 1595.076923076923
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 6491, 
+          "average": 499.3076923076923
         }, 
         "Vermont": {
           "count": 13, 
@@ -21876,10 +22311,10 @@ drugs_bar = [
           "sum": 24431, 
           "average": 1879.3076923076924
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 5267, 
-          "average": 405.15384615384613
+          "sum": 78290, 
+          "average": 6022.307692307692
         }, 
         "South Dakota": {
           "count": 13, 
@@ -21887,9 +22322,9 @@ drugs_bar = [
           "average": 314.15384615384613
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 23784, 
-          "average": 1982.0
+          "count": 13, 
+          "sum": 25184, 
+          "average": 1937.2307692307693
         }, 
         "New Jersey": {
           "count": 13, 
@@ -21911,20 +22346,15 @@ drugs_bar = [
           "sum": 29145, 
           "average": 2241.923076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 3413, 
-          "average": 341.3
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 164, 
-          "average": 164.0
+          "count": 13, 
+          "sum": 1972, 
+          "average": 151.69230769230768
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 77315, 
-          "average": 9664.375
+          "count": 13, 
+          "sum": 136916, 
+          "average": 10532.0
         }, 
         "Nevada": {
           "count": 13, 
@@ -21935,6 +22365,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 5765, 
           "average": 443.46153846153845
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 5267, 
+          "average": 405.15384615384613
         }
       }, 
       "drugs.[0].Rates.Alcohol.Perceptions of Risk.12-17": {
@@ -22043,15 +22478,15 @@ drugs_bar = [
           "sum": 493.83, 
           "average": 37.98692307692308
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 520.85, 
-          "average": 40.065384615384616
+          "sum": 431.69000000000005, 
+          "average": 33.206923076923076
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 413.44000000000005, 
-          "average": 31.803076923076922
+          "sum": 515.73, 
+          "average": 39.67153846153846
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -22067,6 +22502,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 550.46, 
           "average": 42.34307692307693
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 413.44000000000005, 
+          "average": 31.803076923076922
         }, 
         "Vermont": {
           "count": 13, 
@@ -22128,10 +22568,10 @@ drugs_bar = [
           "sum": 560.55, 
           "average": 43.11923076923077
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 462.5299999999999, 
-          "average": 35.57923076923077
+          "sum": 520.85, 
+          "average": 40.065384615384616
         }, 
         "South Dakota": {
           "count": 13, 
@@ -22139,9 +22579,9 @@ drugs_bar = [
           "average": 33.44538461538462
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 416.74999999999994, 
-          "average": 34.729166666666664
+          "count": 13, 
+          "sum": 451.35999999999996, 
+          "average": 34.72
         }, 
         "New Jersey": {
           "count": 13, 
@@ -22163,20 +22603,15 @@ drugs_bar = [
           "sum": 536.7299999999999, 
           "average": 41.28692307692308
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 335.33000000000004, 
-          "average": 33.533
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 45.67, 
-          "average": 45.67
+          "count": 13, 
+          "sum": 563.38, 
+          "average": 43.33692307692308
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 334.15000000000003, 
-          "average": 41.76875
+          "count": 13, 
+          "sum": 531.64, 
+          "average": 40.895384615384614
         }, 
         "Nevada": {
           "count": 13, 
@@ -22187,6 +22622,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 438.67999999999995, 
           "average": 33.744615384615386
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 462.5299999999999, 
+          "average": 35.57923076923077
         }
       }, 
       "drugs.[0].Rates.Alcohol.Abuse Past Year.18-25": {
@@ -22295,15 +22735,15 @@ drugs_bar = [
           "sum": 227.67999999999998, 
           "average": 17.513846153846153
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 194.10999999999996, 
-          "average": 14.93153846153846
+          "sum": 276.31, 
+          "average": 21.254615384615384
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 258.92, 
-          "average": 19.916923076923077
+          "sum": 196.00000000000003, 
+          "average": 15.076923076923077
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -22319,6 +22759,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 197.30999999999997, 
           "average": 15.177692307692308
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 258.92, 
+          "average": 19.916923076923077
         }, 
         "Vermont": {
           "count": 13, 
@@ -22380,10 +22825,10 @@ drugs_bar = [
           "sum": 167.76, 
           "average": 12.904615384615385
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 266.61, 
-          "average": 20.50846153846154
+          "sum": 194.10999999999996, 
+          "average": 14.93153846153846
         }, 
         "South Dakota": {
           "count": 13, 
@@ -22391,9 +22836,9 @@ drugs_bar = [
           "average": 20.817692307692308
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 231.65999999999994, 
-          "average": 19.305
+          "count": 13, 
+          "sum": 245.17999999999995, 
+          "average": 18.86
         }, 
         "New Jersey": {
           "count": 13, 
@@ -22415,20 +22860,15 @@ drugs_bar = [
           "sum": 175.10999999999999, 
           "average": 13.47
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 206.34000000000003, 
-          "average": 20.634
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 17.21, 
-          "average": 17.21
+          "count": 13, 
+          "sum": 214.33999999999997, 
+          "average": 16.487692307692306
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 110.73, 
-          "average": 13.84125
+          "count": 13, 
+          "sum": 191.72, 
+          "average": 14.747692307692308
         }, 
         "Nevada": {
           "count": 13, 
@@ -22439,6 +22879,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 215.04, 
           "average": 16.54153846153846
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 266.61, 
+          "average": 20.50846153846154
         }
       }, 
       "drugs.[0].Totals.Marijuana.Perceptions of Risk.12-17": {
@@ -22547,15 +22992,15 @@ drugs_bar = [
           "sum": 93080, 
           "average": 7160.0
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 536645, 
-          "average": 41280.38461538462
+          "sum": 26977, 
+          "average": 2075.153846153846
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 30287, 
-          "average": 2329.769230769231
+          "sum": 1096687, 
+          "average": 84360.53846153847
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -22571,6 +23016,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 149615, 
           "average": 11508.846153846154
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 30287, 
+          "average": 2329.769230769231
         }, 
         "Vermont": {
           "count": 13, 
@@ -22632,10 +23082,10 @@ drugs_bar = [
           "sum": 190875, 
           "average": 14682.692307692309
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 25767, 
-          "average": 1982.076923076923
+          "sum": 536645, 
+          "average": 41280.38461538462
         }, 
         "South Dakota": {
           "count": 13, 
@@ -22643,9 +23093,9 @@ drugs_bar = [
           "average": 2250.3076923076924
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 115388, 
-          "average": 9615.666666666666
+          "count": 13, 
+          "sum": 122388, 
+          "average": 9414.461538461539
         }, 
         "New Jersey": {
           "count": 13, 
@@ -22667,20 +23117,15 @@ drugs_bar = [
           "sum": 208956, 
           "average": 16073.538461538461
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 19859, 
-          "average": 1985.9
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 922, 
-          "average": 922.0
+          "count": 13, 
+          "sum": 11130, 
+          "average": 856.1538461538462
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 576150, 
-          "average": 72018.75
+          "count": 13, 
+          "sum": 950539, 
+          "average": 73118.38461538461
         }, 
         "Nevada": {
           "count": 13, 
@@ -22691,6 +23136,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 34106, 
           "average": 2623.5384615384614
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 25767, 
+          "average": 1982.076923076923
         }
       }, 
       "drugs.[0].Rates.Alcohol.Binge Past Month.26+": {
@@ -22799,15 +23249,15 @@ drugs_bar = [
           "sum": 300.64, 
           "average": 23.126153846153844
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 298.44, 
-          "average": 22.956923076923076
+          "sum": 322.53000000000003, 
+          "average": 24.81
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 285.94, 
-          "average": 21.995384615384616
+          "sum": 271.34999999999997, 
+          "average": 20.873076923076926
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -22823,6 +23273,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 283.68, 
           "average": 21.821538461538463
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 285.94, 
+          "average": 21.995384615384616
         }, 
         "Vermont": {
           "count": 13, 
@@ -22884,10 +23339,10 @@ drugs_bar = [
           "sum": 251.57, 
           "average": 19.35153846153846
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 324.04999999999995, 
-          "average": 24.926923076923078
+          "sum": 298.44, 
+          "average": 22.956923076923076
         }, 
         "South Dakota": {
           "count": 13, 
@@ -22895,9 +23350,9 @@ drugs_bar = [
           "average": 25.682307692307692
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 288.35999999999996, 
-          "average": 24.03
+          "count": 13, 
+          "sum": 313.44999999999993, 
+          "average": 24.111538461538462
         }, 
         "New Jersey": {
           "count": 13, 
@@ -22919,20 +23374,15 @@ drugs_bar = [
           "sum": 212.35, 
           "average": 16.334615384615383
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 248.19, 
-          "average": 24.819
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 27.72, 
-          "average": 27.72
+          "count": 13, 
+          "sum": 365.79, 
+          "average": 28.13769230769231
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 184.48999999999998, 
-          "average": 23.06125
+          "count": 13, 
+          "sum": 299.83000000000004, 
+          "average": 23.063846153846153
         }, 
         "Nevada": {
           "count": 13, 
@@ -22943,6 +23393,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 266.36, 
           "average": 20.48923076923077
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 324.04999999999995, 
+          "average": 24.926923076923078
         }
       }, 
       "drugs.[0].Rates.Tobacco.Cigarette Past Month.12-17": {
@@ -23051,15 +23506,15 @@ drugs_bar = [
           "sum": 116.69999999999999, 
           "average": 8.976923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 105.04999999999997, 
-          "average": 8.080769230769231
+          "sum": 158.75000000000003, 
+          "average": 12.211538461538462
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 137.82999999999998, 
-          "average": 10.602307692307694
+          "sum": 81.27, 
+          "average": 6.251538461538461
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -23075,6 +23530,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 124.07000000000002, 
           "average": 9.543846153846154
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 137.82999999999998, 
+          "average": 10.602307692307694
         }, 
         "Vermont": {
           "count": 13, 
@@ -23136,10 +23596,10 @@ drugs_bar = [
           "sum": 126.84, 
           "average": 9.756923076923076
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 121.42000000000003, 
-          "average": 9.34
+          "sum": 105.04999999999997, 
+          "average": 8.080769230769231
         }, 
         "South Dakota": {
           "count": 13, 
@@ -23147,9 +23607,9 @@ drugs_bar = [
           "average": 12.496153846153845
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 119.10000000000001, 
-          "average": 9.924999999999999
+          "count": 13, 
+          "sum": 125.15, 
+          "average": 9.626923076923077
         }, 
         "New Jersey": {
           "count": 13, 
@@ -23171,20 +23631,15 @@ drugs_bar = [
           "sum": 134.4, 
           "average": 10.338461538461539
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 112.13999999999999, 
-          "average": 11.214
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 6.53, 
-          "average": 6.53
+          "count": 13, 
+          "sum": 70.5, 
+          "average": 5.423076923076923
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 53.620000000000005, 
-          "average": 6.7025
+          "count": 13, 
+          "sum": 106.66000000000001, 
+          "average": 8.204615384615384
         }, 
         "Nevada": {
           "count": 13, 
@@ -23195,6 +23650,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 124.38999999999999, 
           "average": 9.568461538461538
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 121.42000000000003, 
+          "average": 9.34
         }
       }, 
       "drugs.[0].Rates.Marijuana.Used Past Year.26+": {
@@ -23303,15 +23763,15 @@ drugs_bar = [
           "sum": 113.46, 
           "average": 8.727692307692307
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 120.17, 
-          "average": 9.243846153846153
+          "sum": 137.7, 
+          "average": 10.592307692307692
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 141.90000000000003, 
-          "average": 10.915384615384616
+          "sum": 121.94000000000001, 
+          "average": 9.379999999999999
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -23327,6 +23787,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 93.44, 
           "average": 7.187692307692307
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 141.90000000000003, 
+          "average": 10.915384615384616
         }, 
         "Vermont": {
           "count": 13, 
@@ -23388,10 +23853,10 @@ drugs_bar = [
           "sum": 78.93, 
           "average": 6.071538461538462
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 152.93, 
-          "average": 11.763846153846155
+          "sum": 120.17, 
+          "average": 9.243846153846153
         }, 
         "South Dakota": {
           "count": 13, 
@@ -23399,9 +23864,9 @@ drugs_bar = [
           "average": 5.756923076923077
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 146.44, 
-          "average": 12.203333333333333
+          "count": 13, 
+          "sum": 163.21, 
+          "average": 12.554615384615385
         }, 
         "New Jersey": {
           "count": 13, 
@@ -23423,20 +23888,15 @@ drugs_bar = [
           "sum": 78.1, 
           "average": 6.007692307692308
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 110.11999999999999, 
-          "average": 11.012
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 12.08, 
-          "average": 12.08
+          "count": 13, 
+          "sum": 169.35000000000002, 
+          "average": 13.026923076923076
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 48.059999999999995, 
-          "average": 6.0075
+          "count": 13, 
+          "sum": 74.42, 
+          "average": 5.724615384615385
         }, 
         "Nevada": {
           "count": 13, 
@@ -23447,6 +23907,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 138.22, 
           "average": 10.632307692307693
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 152.93, 
+          "average": 11.763846153846155
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Used Past Month.18-25": {
@@ -23555,15 +24020,15 @@ drugs_bar = [
           "sum": 117002, 
           "average": 9000.153846153846
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 675607, 
-          "average": 51969.769230769234
+          "sum": 33523, 
+          "average": 2578.6923076923076
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 51930, 
-          "average": 3994.6153846153848
+          "sum": 1243958, 
+          "average": 95689.07692307692
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -23579,6 +24044,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 134327, 
           "average": 10332.846153846154
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 51930, 
+          "average": 3994.6153846153848
         }, 
         "Vermont": {
           "count": 13, 
@@ -23640,10 +24110,10 @@ drugs_bar = [
           "sum": 116404, 
           "average": 8954.153846153846
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 53664, 
-          "average": 4128.0
+          "sum": 675607, 
+          "average": 51969.769230769234
         }, 
         "South Dakota": {
           "count": 13, 
@@ -23651,9 +24121,9 @@ drugs_bar = [
           "average": 1423.3076923076924
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 189603, 
-          "average": 15800.25
+          "count": 13, 
+          "sum": 209103, 
+          "average": 16084.846153846154
         }, 
         "New Jersey": {
           "count": 13, 
@@ -23675,20 +24145,15 @@ drugs_bar = [
           "sum": 149657, 
           "average": 11512.076923076924
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 26798, 
-          "average": 2679.8
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 2445, 
-          "average": 2445.0
+          "count": 13, 
+          "sum": 31333, 
+          "average": 2410.230769230769
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 403745, 
-          "average": 50468.125
+          "count": 13, 
+          "sum": 633879, 
+          "average": 48759.92307692308
         }, 
         "Nevada": {
           "count": 13, 
@@ -23699,6 +24164,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 44877, 
           "average": 3452.076923076923
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 53664, 
+          "average": 4128.0
         }
       }, 
       "drugs.[0].Population.26+": {
@@ -23807,15 +24277,15 @@ drugs_bar = [
           "sum": 30133851, 
           "average": 2317988.5384615385
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 162069693, 
-          "average": 12466899.461538462
+          "sum": 8144953, 
+          "average": 626534.8461538461
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 11207162, 
-          "average": 862089.3846153846
+          "sum": 292881616, 
+          "average": 22529355.076923076
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -23831,6 +24301,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 36993875, 
           "average": 2845682.6923076925
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 11207162, 
+          "average": 862089.3846153846
         }, 
         "Vermont": {
           "count": 13, 
@@ -23892,10 +24367,10 @@ drugs_bar = [
           "sum": 38691629, 
           "average": 2976279.153846154
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 8866311, 
-          "average": 682023.9230769231
+          "sum": 162069693, 
+          "average": 12466899.461538462
         }, 
         "South Dakota": {
           "count": 13, 
@@ -23903,9 +24378,9 @@ drugs_bar = [
           "average": 496813.92307692306
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 36538193, 
-          "average": 3044849.4166666665
+          "count": 13, 
+          "sum": 39942567, 
+          "average": 3072505.153846154
         }, 
         "New Jersey": {
           "count": 13, 
@@ -23927,20 +24402,15 @@ drugs_bar = [
           "sum": 51596650, 
           "average": 3968973.076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 6389587, 
-          "average": 638958.7
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 378689, 
-          "average": 378689.0
+          "count": 13, 
+          "sum": 5036589, 
+          "average": 387429.92307692306
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 121318515, 
-          "average": 15164814.375
+          "count": 13, 
+          "sum": 187574820, 
+          "average": 14428832.307692308
         }, 
         "Nevada": {
           "count": 13, 
@@ -23951,6 +24421,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 11649631, 
           "average": 896125.4615384615
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 8866311, 
+          "average": 682023.9230769231
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Cocaine Used Past Year.18-25": {
@@ -24059,15 +24534,15 @@ drugs_bar = [
           "sum": 80.91999999999999, 
           "average": 6.224615384615385
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 80.96, 
-          "average": 6.227692307692307
+          "sum": 76.66, 
+          "average": 5.896923076923077
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 113.66999999999999, 
-          "average": 8.743846153846153
+          "sum": 78.44, 
+          "average": 6.033846153846154
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -24083,6 +24558,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 59.600000000000016, 
           "average": 4.584615384615384
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 113.66999999999999, 
+          "average": 8.743846153846153
         }, 
         "Vermont": {
           "count": 13, 
@@ -24144,10 +24624,10 @@ drugs_bar = [
           "sum": 45.919999999999995, 
           "average": 3.5323076923076924
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 109.82, 
-          "average": 8.447692307692309
+          "sum": 80.96, 
+          "average": 6.227692307692307
         }, 
         "South Dakota": {
           "count": 13, 
@@ -24155,9 +24635,9 @@ drugs_bar = [
           "average": 3.8492307692307692
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 108.14, 
-          "average": 9.011666666666667
+          "count": 13, 
+          "sum": 115.15, 
+          "average": 8.857692307692307
         }, 
         "New Jersey": {
           "count": 13, 
@@ -24179,20 +24659,15 @@ drugs_bar = [
           "sum": 52.60000000000001, 
           "average": 4.046153846153846
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 55.42, 
-          "average": 5.542
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 4.26, 
-          "average": 4.26
+          "count": 13, 
+          "sum": 59.379999999999995, 
+          "average": 4.567692307692307
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 35.0, 
-          "average": 4.375
+          "count": 13, 
+          "sum": 65.5, 
+          "average": 5.038461538461538
         }, 
         "Nevada": {
           "count": 13, 
@@ -24203,6 +24678,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 86.19999999999999, 
           "average": 6.630769230769231
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 109.82, 
+          "average": 8.447692307692309
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.All Except Marijuana Used Past Month.12-17": {
@@ -24311,15 +24791,15 @@ drugs_bar = [
           "sum": 52.37999999999999, 
           "average": 4.02923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 49.940000000000005, 
-          "average": 3.8415384615384616
+          "sum": 63.3, 
+          "average": 4.869230769230769
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 59.290000000000006, 
-          "average": 4.560769230769231
+          "sum": 64.42, 
+          "average": 4.955384615384616
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -24335,6 +24815,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 56.97, 
           "average": 4.382307692307692
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 59.290000000000006, 
+          "average": 4.560769230769231
         }, 
         "Vermont": {
           "count": 13, 
@@ -24396,10 +24881,10 @@ drugs_bar = [
           "sum": 62.49999999999999, 
           "average": 4.8076923076923075
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 61.13, 
-          "average": 4.702307692307692
+          "sum": 49.940000000000005, 
+          "average": 3.8415384615384616
         }, 
         "South Dakota": {
           "count": 13, 
@@ -24407,9 +24892,9 @@ drugs_bar = [
           "average": 4.533846153846154
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 60.230000000000004, 
-          "average": 5.019166666666666
+          "count": 13, 
+          "sum": 63.620000000000005, 
+          "average": 4.8938461538461535
         }, 
         "New Jersey": {
           "count": 13, 
@@ -24431,20 +24916,15 @@ drugs_bar = [
           "sum": 58.47, 
           "average": 4.497692307692308
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 43.25999999999999, 
-          "average": 4.326
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 4.37, 
-          "average": 4.37
+          "count": 13, 
+          "sum": 53.559999999999995, 
+          "average": 4.12
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 34.44, 
-          "average": 4.305
+          "count": 13, 
+          "sum": 63.220000000000006, 
+          "average": 4.863076923076923
         }, 
         "Nevada": {
           "count": 13, 
@@ -24455,6 +24935,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 54.58, 
           "average": 4.1984615384615385
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 61.13, 
+          "average": 4.702307692307692
         }
       }, 
       "drugs.[0].Rates.Alcohol.Dependence Past Year.26+": {
@@ -24563,15 +25048,15 @@ drugs_bar = [
           "sum": 36.05, 
           "average": 2.773076923076923
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 40.660000000000004, 
-          "average": 3.1276923076923078
+          "sum": 40.89, 
+          "average": 3.1453846153846152
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 38.13, 
-          "average": 2.933076923076923
+          "sum": 43.68, 
+          "average": 3.36
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -24587,6 +25072,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 44.57000000000001, 
           "average": 3.4284615384615384
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 38.13, 
+          "average": 2.933076923076923
         }, 
         "Vermont": {
           "count": 13, 
@@ -24648,10 +25138,10 @@ drugs_bar = [
           "sum": 35.900000000000006, 
           "average": 2.7615384615384615
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 44.910000000000004, 
-          "average": 3.4546153846153844
+          "sum": 40.660000000000004, 
+          "average": 3.1276923076923078
         }, 
         "South Dakota": {
           "count": 13, 
@@ -24659,9 +25149,9 @@ drugs_bar = [
           "average": 3.339230769230769
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 40.449999999999996, 
-          "average": 3.3708333333333336
+          "count": 13, 
+          "sum": 43.49999999999999, 
+          "average": 3.3461538461538463
         }, 
         "New Jersey": {
           "count": 13, 
@@ -24683,20 +25173,15 @@ drugs_bar = [
           "sum": 34.86000000000001, 
           "average": 2.6815384615384614
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 30.8, 
-          "average": 3.08
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 4.37, 
-          "average": 4.37
+          "count": 13, 
+          "sum": 59.47999999999999, 
+          "average": 4.575384615384616
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 22.549999999999997, 
-          "average": 2.81875
+          "count": 13, 
+          "sum": 35.81999999999999, 
+          "average": 2.7553846153846155
         }, 
         "Nevada": {
           "count": 13, 
@@ -24707,6 +25192,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 36.25, 
           "average": 2.7884615384615383
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 44.910000000000004, 
+          "average": 3.4546153846153844
         }
       }, 
       "drugs.[0].Rates.Tobacco.Cigarette Past Month.18-25": {
@@ -24815,15 +25305,15 @@ drugs_bar = [
           "sum": 466.02000000000004, 
           "average": 35.847692307692306
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 432.0, 
-          "average": 33.23076923076923
+          "sum": 511.29, 
+          "average": 39.33
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 521.64, 
-          "average": 40.12615384615385
+          "sum": 371.94000000000005, 
+          "average": 28.61076923076923
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -24839,6 +25329,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 500.78000000000003, 
           "average": 38.52153846153846
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 521.64, 
+          "average": 40.12615384615385
         }, 
         "Vermont": {
           "count": 13, 
@@ -24900,10 +25395,10 @@ drugs_bar = [
           "sum": 481.0, 
           "average": 37.0
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 494.83, 
-          "average": 38.06384615384615
+          "sum": 432.0, 
+          "average": 33.23076923076923
         }, 
         "South Dakota": {
           "count": 13, 
@@ -24911,9 +25406,9 @@ drugs_bar = [
           "average": 41.947692307692314
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 448.17999999999995, 
-          "average": 37.348333333333336
+          "count": 13, 
+          "sum": 479.4, 
+          "average": 36.87692307692308
         }, 
         "New Jersey": {
           "count": 13, 
@@ -24935,20 +25430,15 @@ drugs_bar = [
           "sum": 483.14, 
           "average": 37.16461538461538
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 379.8, 
-          "average": 37.980000000000004
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 29.33, 
-          "average": 29.33
+          "count": 13, 
+          "sum": 387.34999999999997, 
+          "average": 29.79615384615385
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 249.04000000000002, 
-          "average": 31.13
+          "count": 13, 
+          "sum": 435.57, 
+          "average": 33.505384615384614
         }, 
         "Nevada": {
           "count": 13, 
@@ -24959,6 +25449,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 514.9700000000001, 
           "average": 39.613076923076925
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 494.83, 
+          "average": 38.06384615384615
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Used Past Month.12-17": {
@@ -25067,15 +25562,15 @@ drugs_bar = [
           "sum": 140.98000000000002, 
           "average": 10.844615384615384
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 136.81, 
-          "average": 10.523846153846154
+          "sum": 163.66, 
+          "average": 12.589230769230769
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 167.58, 
-          "average": 12.89076923076923
+          "sum": 146.04, 
+          "average": 11.233846153846153
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -25091,6 +25586,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 127.46000000000001, 
           "average": 9.804615384615385
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 167.58, 
+          "average": 12.89076923076923
         }, 
         "Vermont": {
           "count": 13, 
@@ -25152,10 +25652,10 @@ drugs_bar = [
           "sum": 117.86000000000001, 
           "average": 9.066153846153846
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 172.70999999999998, 
-          "average": 13.285384615384617
+          "sum": 136.81, 
+          "average": 10.523846153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -25163,9 +25663,9 @@ drugs_bar = [
           "average": 9.386153846153846
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 159.46999999999997, 
-          "average": 13.289166666666667
+          "count": 13, 
+          "sum": 173.98999999999998, 
+          "average": 13.383846153846154
         }, 
         "New Jersey": {
           "count": 13, 
@@ -25187,20 +25687,15 @@ drugs_bar = [
           "sum": 111.24000000000001, 
           "average": 8.556923076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 118.63000000000001, 
-          "average": 11.863
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 13.54, 
-          "average": 13.54
+          "count": 13, 
+          "sum": 157.97, 
+          "average": 12.151538461538461
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 70.38, 
-          "average": 8.7975
+          "count": 13, 
+          "sum": 119.72, 
+          "average": 9.20923076923077
         }, 
         "Nevada": {
           "count": 13, 
@@ -25211,6 +25706,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 146.38, 
           "average": 11.26
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 172.70999999999998, 
+          "average": 13.285384615384617
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Used Past Month.26+": {
@@ -25319,15 +25819,15 @@ drugs_bar = [
           "sum": 86.34, 
           "average": 6.641538461538461
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 91.28999999999999, 
-          "average": 7.022307692307692
-        }, 
-        "New Hampshire": {
-          "count": 13, 
-          "sum": 108.27000000000001, 
+          "sum": 108.27, 
           "average": 8.328461538461537
+        }, 
+        "California": {
+          "count": 13, 
+          "sum": 102.68, 
+          "average": 7.898461538461538
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -25343,6 +25843,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 78.41, 
           "average": 6.031538461538461
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 108.27000000000001, 
+          "average": 8.328461538461537
         }, 
         "Vermont": {
           "count": 13, 
@@ -25404,10 +25909,10 @@ drugs_bar = [
           "sum": 68.58000000000001, 
           "average": 5.275384615384615
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 125.97, 
-          "average": 9.69
+          "sum": 91.28999999999999, 
+          "average": 7.022307692307692
         }, 
         "South Dakota": {
           "count": 13, 
@@ -25415,9 +25920,9 @@ drugs_bar = [
           "average": 4.446153846153846
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 118.1, 
-          "average": 9.841666666666667
+          "count": 13, 
+          "sum": 132.29, 
+          "average": 10.176153846153845
         }, 
         "New Jersey": {
           "count": 13, 
@@ -25439,20 +25944,15 @@ drugs_bar = [
           "sum": 66.84, 
           "average": 5.141538461538461
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 84.83, 
-          "average": 8.483
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 9.6, 
-          "average": 9.6
+          "count": 13, 
+          "sum": 131.51999999999998, 
+          "average": 10.116923076923078
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 40.870000000000005, 
-          "average": 5.10875
+          "count": 13, 
+          "sum": 64.45, 
+          "average": 4.957692307692308
         }, 
         "Nevada": {
           "count": 13, 
@@ -25463,6 +25963,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 108.54, 
           "average": 8.349230769230768
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 125.97, 
+          "average": 9.69
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Abuse Past Month.18-25": {
@@ -25571,15 +26076,15 @@ drugs_bar = [
           "sum": 117002, 
           "average": 9000.153846153846
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 675607, 
-          "average": 51969.769230769234
+          "sum": 33523, 
+          "average": 2578.6923076923076
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 51930, 
-          "average": 3994.6153846153848
+          "sum": 1243958, 
+          "average": 95689.07692307692
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -25595,6 +26100,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 134327, 
           "average": 10332.846153846154
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 51930, 
+          "average": 3994.6153846153848
         }, 
         "Vermont": {
           "count": 13, 
@@ -25656,10 +26166,10 @@ drugs_bar = [
           "sum": 116404, 
           "average": 8954.153846153846
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 53664, 
-          "average": 4128.0
+          "sum": 675607, 
+          "average": 51969.769230769234
         }, 
         "South Dakota": {
           "count": 13, 
@@ -25667,9 +26177,9 @@ drugs_bar = [
           "average": 1423.3076923076924
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 189603, 
-          "average": 15800.25
+          "count": 13, 
+          "sum": 209103, 
+          "average": 16084.846153846154
         }, 
         "New Jersey": {
           "count": 13, 
@@ -25691,20 +26201,15 @@ drugs_bar = [
           "sum": 149657, 
           "average": 11512.076923076924
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 26798, 
-          "average": 2679.8
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 2445, 
-          "average": 2445.0
+          "count": 13, 
+          "sum": 31333, 
+          "average": 2410.230769230769
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 403745, 
-          "average": 50468.125
+          "count": 13, 
+          "sum": 633879, 
+          "average": 48759.92307692308
         }, 
         "Nevada": {
           "count": 13, 
@@ -25715,6 +26220,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 44877, 
           "average": 3452.076923076923
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 53664, 
+          "average": 4128.0
         }
       }, 
       "drugs.[0].Totals.Alcohol.Use Past Month.12-17": {
@@ -25823,15 +26333,15 @@ drugs_bar = [
           "sum": 65735, 
           "average": 5056.538461538462
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 342004, 
-          "average": 26308.0
+          "sum": 19683, 
+          "average": 1514.076923076923
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 25078, 
-          "average": 1929.076923076923
+          "sum": 571718, 
+          "average": 43978.307692307695
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -25847,6 +26357,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 59557, 
           "average": 4581.307692307692
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 25078, 
+          "average": 1929.076923076923
         }, 
         "Vermont": {
           "count": 13, 
@@ -25908,10 +26423,10 @@ drugs_bar = [
           "sum": 64199, 
           "average": 4938.384615384615
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 19127, 
-          "average": 1471.3076923076924
+          "sum": 342004, 
+          "average": 26308.0
         }, 
         "South Dakota": {
           "count": 13, 
@@ -25919,9 +26434,9 @@ drugs_bar = [
           "average": 1119.6923076923076
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 82191, 
-          "average": 6849.25
+          "count": 13, 
+          "sum": 87991, 
+          "average": 6768.538461538462
         }, 
         "New Jersey": {
           "count": 13, 
@@ -25943,20 +26458,15 @@ drugs_bar = [
           "sum": 73862, 
           "average": 5681.692307692308
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 13627, 
-          "average": 1362.7
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 531, 
-          "average": 531.0
+          "count": 13, 
+          "sum": 6347, 
+          "average": 488.2307692307692
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 225761, 
-          "average": 28220.125
+          "count": 13, 
+          "sum": 395149, 
+          "average": 30396.076923076922
         }, 
         "Nevada": {
           "count": 13, 
@@ -25967,6 +26477,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 19157, 
           "average": 1473.6153846153845
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 19127, 
+          "average": 1471.3076923076924
         }
       }, 
       "drugs.[0].Totals.Alcohol.In Minors.Abuse": {
@@ -26075,15 +26590,15 @@ drugs_bar = [
           "sum": 115184, 
           "average": 8860.307692307691
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 571527, 
-          "average": 43963.61538461538
+          "sum": 36880, 
+          "average": 2836.923076923077
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 50473, 
-          "average": 3882.5384615384614
+          "sum": 1006648, 
+          "average": 77434.46153846153
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -26099,6 +26614,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 110037, 
           "average": 8464.384615384615
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 50473, 
+          "average": 3882.5384615384614
         }, 
         "Vermont": {
           "count": 13, 
@@ -26160,10 +26680,10 @@ drugs_bar = [
           "sum": 109245, 
           "average": 8403.461538461539
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 41223, 
-          "average": 3171.0
+          "sum": 571527, 
+          "average": 43963.61538461538
         }, 
         "South Dakota": {
           "count": 13, 
@@ -26171,9 +26691,9 @@ drugs_bar = [
           "average": 2338.076923076923
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 131460, 
-          "average": 10955.0
+          "count": 13, 
+          "sum": 141260, 
+          "average": 10866.153846153846
         }, 
         "New Jersey": {
           "count": 13, 
@@ -26195,20 +26715,15 @@ drugs_bar = [
           "sum": 137452, 
           "average": 10573.23076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 26256, 
-          "average": 2625.6
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 1243, 
-          "average": 1243.0
+          "count": 13, 
+          "sum": 15573, 
+          "average": 1197.923076923077
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 402403, 
-          "average": 50300.375
+          "count": 13, 
+          "sum": 668720, 
+          "average": 51440.0
         }, 
         "Nevada": {
           "count": 13, 
@@ -26219,6 +26734,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 37432, 
           "average": 2879.3846153846152
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 41223, 
+          "average": 3171.0
         }
       }, 
       "drugs.[0].Rates.Alcohol.Abuse Past Year.26+": {
@@ -26327,15 +26847,15 @@ drugs_bar = [
           "sum": 79.75, 
           "average": 6.134615384615385
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 77.14000000000001, 
-          "average": 5.9338461538461535
+          "sum": 96.91, 
+          "average": 7.454615384615384
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 82.19, 
-          "average": 6.322307692307692
+          "sum": 83.01, 
+          "average": 6.385384615384615
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -26351,6 +26871,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 82.46000000000001, 
           "average": 6.343076923076922
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 82.19, 
+          "average": 6.322307692307692
         }, 
         "Vermont": {
           "count": 13, 
@@ -26412,10 +26937,10 @@ drugs_bar = [
           "sum": 68.13000000000001, 
           "average": 5.240769230769231
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 96.99999999999999, 
-          "average": 7.461538461538462
+          "sum": 77.14000000000001, 
+          "average": 5.9338461538461535
         }, 
         "South Dakota": {
           "count": 13, 
@@ -26423,9 +26948,9 @@ drugs_bar = [
           "average": 7.521538461538461
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 85.99, 
-          "average": 7.165833333333333
+          "count": 13, 
+          "sum": 92.86, 
+          "average": 7.143076923076923
         }, 
         "New Jersey": {
           "count": 13, 
@@ -26447,20 +26972,15 @@ drugs_bar = [
           "sum": 65.50999999999999, 
           "average": 5.03923076923077
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 72.33999999999999, 
-          "average": 7.234
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 8.34, 
-          "average": 8.34
+          "count": 13, 
+          "sum": 119.78, 
+          "average": 9.213846153846154
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 46.419999999999995, 
-          "average": 5.8025
+          "count": 13, 
+          "sum": 76.43, 
+          "average": 5.8792307692307695
         }, 
         "Nevada": {
           "count": 13, 
@@ -26471,6 +26991,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 71.22999999999999, 
           "average": 5.479230769230769
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 96.99999999999999, 
+          "average": 7.461538461538462
         }
       }, 
       "drugs.[0].Rates.Pain Relievers Abuse Past Year.18-25": {
@@ -26579,15 +27104,15 @@ drugs_bar = [
           "sum": 135.97, 
           "average": 10.45923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 125.80999999999999, 
-          "average": 9.677692307692308
+          "sum": 139.23000000000002, 
+          "average": 10.709999999999999
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 181.66, 
-          "average": 13.973846153846154
+          "sum": 125.30999999999999, 
+          "average": 9.63923076923077
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -26603,6 +27128,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 146.56, 
           "average": 11.273846153846154
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 181.66, 
+          "average": 13.973846153846154
         }, 
         "Vermont": {
           "count": 13, 
@@ -26664,10 +27194,10 @@ drugs_bar = [
           "sum": 150.17999999999998, 
           "average": 11.552307692307693
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 181.67999999999998, 
-          "average": 13.975384615384616
+          "sum": 125.80999999999999, 
+          "average": 9.677692307692308
         }, 
         "South Dakota": {
           "count": 13, 
@@ -26675,9 +27205,9 @@ drugs_bar = [
           "average": 8.507692307692308
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 156.07999999999998, 
-          "average": 13.006666666666668
+          "count": 13, 
+          "sum": 165.1, 
+          "average": 12.7
         }, 
         "New Jersey": {
           "count": 13, 
@@ -26699,20 +27229,15 @@ drugs_bar = [
           "sum": 145.32, 
           "average": 11.178461538461537
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 107.75000000000001, 
-          "average": 10.775
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 8.23, 
-          "average": 8.23
+          "count": 13, 
+          "sum": 94.78000000000002, 
+          "average": 7.2907692307692304
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 76.28, 
-          "average": 9.535
+          "count": 13, 
+          "sum": 131.09999999999997, 
+          "average": 10.084615384615384
         }, 
         "Nevada": {
           "count": 13, 
@@ -26723,6 +27248,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 160.42000000000002, 
           "average": 12.340000000000002
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 181.67999999999998, 
+          "average": 13.975384615384616
         }
       }, 
       "drugs.[0].Totals.Tobacco.Cigarette Past Month.12-17": {
@@ -26831,15 +27361,15 @@ drugs_bar = [
           "sum": 34343, 
           "average": 2641.769230769231
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 164978, 
-          "average": 12690.615384615385
+          "sum": 12772, 
+          "average": 982.4615384615385
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 15099, 
-          "average": 1161.4615384615386
+          "sum": 260035, 
+          "average": 20002.69230769231
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -26855,6 +27385,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 45159, 
           "average": 3473.769230769231
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 15099, 
+          "average": 1161.4615384615386
         }, 
         "Vermont": {
           "count": 13, 
@@ -26916,10 +27451,10 @@ drugs_bar = [
           "sum": 49561, 
           "average": 3812.3846153846152
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 10501, 
-          "average": 807.7692307692307
+          "sum": 164978, 
+          "average": 12690.615384615385
         }, 
         "South Dakota": {
           "count": 13, 
@@ -26927,9 +27462,9 @@ drugs_bar = [
           "average": 867.9230769230769
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 46993, 
-          "average": 3916.0833333333335
+          "count": 13, 
+          "sum": 49492, 
+          "average": 3807.076923076923
         }, 
         "New Jersey": {
           "count": 13, 
@@ -26951,20 +27486,15 @@ drugs_bar = [
           "sum": 66864, 
           "average": 5143.384615384615
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 8841, 
-          "average": 884.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 246, 
-          "average": 246.0
+          "count": 13, 
+          "sum": 2623, 
+          "average": 201.76923076923077
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 120101, 
-          "average": 15012.625
+          "count": 13, 
+          "sum": 229901, 
+          "average": 17684.69230769231
         }, 
         "Nevada": {
           "count": 13, 
@@ -26975,6 +27505,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 13134, 
           "average": 1010.3076923076923
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 10501, 
+          "average": 807.7692307692307
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Dependence Past Year.18-25": {
@@ -27083,15 +27618,15 @@ drugs_bar = [
           "sum": 27597, 
           "average": 2122.846153846154
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 171098, 
-          "average": 13161.384615384615
+          "sum": 7532, 
+          "average": 579.3846153846154
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 11945, 
-          "average": 918.8461538461538
+          "sum": 329120, 
+          "average": 25316.923076923078
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -27107,6 +27642,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 30600, 
           "average": 2353.846153846154
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 11945, 
+          "average": 918.8461538461538
         }, 
         "Vermont": {
           "count": 13, 
@@ -27168,10 +27708,10 @@ drugs_bar = [
           "sum": 31481, 
           "average": 2421.6153846153848
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 11587, 
-          "average": 891.3076923076923
+          "sum": 171098, 
+          "average": 13161.384615384615
         }, 
         "South Dakota": {
           "count": 13, 
@@ -27179,9 +27719,9 @@ drugs_bar = [
           "average": 369.7692307692308
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 39961, 
-          "average": 3330.0833333333335
+          "count": 13, 
+          "sum": 43060, 
+          "average": 3312.3076923076924
         }, 
         "New Jersey": {
           "count": 13, 
@@ -27203,20 +27743,15 @@ drugs_bar = [
           "sum": 43499, 
           "average": 3346.076923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 5945, 
-          "average": 594.5
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 478, 
-          "average": 478.0
+          "count": 13, 
+          "sum": 6879, 
+          "average": 529.1538461538462
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 97137, 
-          "average": 12142.125
+          "count": 13, 
+          "sum": 160335, 
+          "average": 12333.461538461539
         }, 
         "Nevada": {
           "count": 13, 
@@ -27227,6 +27762,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 11025, 
           "average": 848.0769230769231
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 11587, 
+          "average": 891.3076923076923
         }
       }, 
       "drugs.[0].Rates.Marijuana.New Users.18-25": {
@@ -27335,15 +27875,15 @@ drugs_bar = [
           "sum": 99.74, 
           "average": 7.672307692307692
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 83.28, 
-          "average": 6.406153846153846
+          "sum": 111.67000000000002, 
+          "average": 8.59
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 116.29, 
-          "average": 8.945384615384615
+          "sum": 78.12, 
+          "average": 6.009230769230769
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -27359,6 +27899,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 79.53, 
           "average": 6.117692307692308
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 116.29, 
+          "average": 8.945384615384615
         }, 
         "Vermont": {
           "count": 13, 
@@ -27420,10 +27965,10 @@ drugs_bar = [
           "sum": 65.75, 
           "average": 5.0576923076923075
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 106.57, 
-          "average": 8.197692307692307
+          "sum": 83.28, 
+          "average": 6.406153846153846
         }, 
         "South Dakota": {
           "count": 13, 
@@ -27431,9 +27976,9 @@ drugs_bar = [
           "average": 6.267692307692308
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 88.14000000000001, 
-          "average": 7.345
+          "count": 13, 
+          "sum": 91.81000000000002, 
+          "average": 7.062307692307693
         }, 
         "New Jersey": {
           "count": 13, 
@@ -27455,20 +28000,15 @@ drugs_bar = [
           "sum": 66.51, 
           "average": 5.116153846153846
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 80.44, 
-          "average": 8.044
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 9.44, 
-          "average": 9.44
+          "count": 13, 
+          "sum": 94.69999999999997, 
+          "average": 7.2846153846153845
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 38.66, 
-          "average": 4.8325
+          "count": 13, 
+          "sum": 67.74000000000001, 
+          "average": 5.21076923076923
         }, 
         "Nevada": {
           "count": 13, 
@@ -27479,6 +28019,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 102.55, 
           "average": 7.888461538461538
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 106.57, 
+          "average": 8.197692307692307
         }
       }, 
       "drugs.[0].Totals.Marijuana.New Users.26+": {
@@ -27587,15 +28132,15 @@ drugs_bar = [
           "sum": 4086, 
           "average": 314.3076923076923
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 23473, 
-          "average": 1805.6153846153845
+          "sum": 1236, 
+          "average": 95.07692307692308
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 1636, 
-          "average": 125.84615384615384
+          "sum": 47041, 
+          "average": 3618.5384615384614
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -27611,6 +28156,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 4163, 
           "average": 320.2307692307692
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 1636, 
+          "average": 125.84615384615384
         }, 
         "Vermont": {
           "count": 13, 
@@ -27672,10 +28222,10 @@ drugs_bar = [
           "sum": 3911, 
           "average": 300.84615384615387
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 1433, 
-          "average": 110.23076923076923
+          "sum": 23473, 
+          "average": 1805.6153846153845
         }, 
         "South Dakota": {
           "count": 13, 
@@ -27683,9 +28233,9 @@ drugs_bar = [
           "average": 57.23076923076923
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 6699, 
-          "average": 558.25
+          "count": 13, 
+          "sum": 7199, 
+          "average": 553.7692307692307
         }, 
         "New Jersey": {
           "count": 13, 
@@ -27707,20 +28257,15 @@ drugs_bar = [
           "sum": 5613, 
           "average": 431.7692307692308
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 1011, 
-          "average": 101.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 75, 
-          "average": 75.0
+          "count": 13, 
+          "sum": 1033, 
+          "average": 79.46153846153847
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 15090, 
-          "average": 1886.25
+          "count": 13, 
+          "sum": 24750, 
+          "average": 1903.8461538461538
         }, 
         "Nevada": {
           "count": 13, 
@@ -27731,6 +28276,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 1544, 
           "average": 118.76923076923077
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 1433, 
+          "average": 110.23076923076923
         }
       }, 
       "drugs.[0].Totals.Alcohol.Abuse Past Year.12-17": {
@@ -27839,15 +28389,15 @@ drugs_bar = [
           "sum": 16908, 
           "average": 1300.6153846153845
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 92517, 
-          "average": 7116.692307692308
+          "sum": 7842, 
+          "average": 603.2307692307693
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 7910, 
-          "average": 608.4615384615385
+          "sum": 197837, 
+          "average": 15218.23076923077
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -27863,6 +28413,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 18543, 
           "average": 1426.3846153846155
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 7910, 
+          "average": 608.4615384615385
         }, 
         "Vermont": {
           "count": 13, 
@@ -27924,10 +28479,10 @@ drugs_bar = [
           "sum": 20825, 
           "average": 1601.923076923077
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 5229, 
-          "average": 402.2307692307692
+          "sum": 92517, 
+          "average": 7116.692307692308
         }, 
         "South Dakota": {
           "count": 13, 
@@ -27935,9 +28490,9 @@ drugs_bar = [
           "average": 452.38461538461536
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 25682, 
-          "average": 2140.1666666666665
+          "count": 13, 
+          "sum": 27082, 
+          "average": 2083.230769230769
         }, 
         "New Jersey": {
           "count": 13, 
@@ -27959,20 +28514,15 @@ drugs_bar = [
           "sum": 24789, 
           "average": 1906.8461538461538
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 5171, 
-          "average": 517.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 125, 
-          "average": 125.0
+          "count": 13, 
+          "sum": 1460, 
+          "average": 112.3076923076923
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 69827, 
-          "average": 8728.375
+          "count": 13, 
+          "sum": 126580, 
+          "average": 9736.923076923076
         }, 
         "Nevada": {
           "count": 13, 
@@ -27983,6 +28533,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 5767, 
           "average": 443.61538461538464
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 5229, 
+          "average": 402.2307692307692
         }
       }, 
       "drugs.[0].Totals.Alcohol.Dependence Past Year.18-25": {
@@ -28091,15 +28646,15 @@ drugs_bar = [
           "sum": 30030, 
           "average": 2310.0
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 186513, 
-          "average": 14347.153846153846
+          "sum": 11737, 
+          "average": 902.8461538461538
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 12520, 
-          "average": 963.0769230769231
+          "sum": 366136, 
+          "average": 28164.30769230769
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -28115,6 +28670,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 38353, 
           "average": 2950.230769230769
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 12520, 
+          "average": 963.0769230769231
         }, 
         "Vermont": {
           "count": 13, 
@@ -28176,10 +28736,10 @@ drugs_bar = [
           "sum": 36268, 
           "average": 2789.846153846154
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 14402, 
-          "average": 1107.8461538461538
+          "sum": 186513, 
+          "average": 14347.153846153846
         }, 
         "South Dakota": {
           "count": 13, 
@@ -28187,9 +28747,9 @@ drugs_bar = [
           "average": 705.2307692307693
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 48261, 
-          "average": 4021.75
+          "count": 13, 
+          "sum": 51461, 
+          "average": 3958.5384615384614
         }, 
         "New Jersey": {
           "count": 13, 
@@ -28211,20 +28771,15 @@ drugs_bar = [
           "sum": 47239, 
           "average": 3633.769230769231
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 8891, 
-          "average": 889.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 732, 
-          "average": 732.0
+          "count": 13, 
+          "sum": 9343, 
+          "average": 718.6923076923077
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 134019, 
-          "average": 16752.375
+          "count": 13, 
+          "sum": 222215, 
+          "average": 17093.46153846154
         }, 
         "Nevada": {
           "count": 13, 
@@ -28235,6 +28790,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 10752, 
           "average": 827.0769230769231
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 14402, 
+          "average": 1107.8461538461538
         }
       }, 
       "drugs.[0].Rates.Marijuana.Used Past Month.26+": {
@@ -28343,15 +28903,15 @@ drugs_bar = [
           "sum": 67.46, 
           "average": 5.189230769230769
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 70.9, 
-          "average": 5.453846153846154
+          "sum": 94.81, 
+          "average": 7.2930769230769235
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 90.51, 
-          "average": 6.962307692307693
+          "sum": 76.0, 
+          "average": 5.846153846153846
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -28367,6 +28927,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 55.04, 
           "average": 4.233846153846153
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 90.51, 
+          "average": 6.962307692307693
         }, 
         "Vermont": {
           "count": 13, 
@@ -28428,10 +28993,10 @@ drugs_bar = [
           "sum": 41.17, 
           "average": 3.166923076923077
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 102.28, 
-          "average": 7.867692307692308
+          "sum": 70.9, 
+          "average": 5.453846153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -28439,9 +29004,9 @@ drugs_bar = [
           "average": 3.313846153846154
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 94.64000000000001, 
-          "average": 7.886666666666667
+          "count": 13, 
+          "sum": 107.07000000000002, 
+          "average": 8.236153846153845
         }, 
         "New Jersey": {
           "count": 13, 
@@ -28463,20 +29028,15 @@ drugs_bar = [
           "sum": 42.790000000000006, 
           "average": 3.2915384615384613
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 74.62, 
-          "average": 7.462000000000001
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 7.67, 
-          "average": 7.67
+          "count": 13, 
+          "sum": 101.23, 
+          "average": 7.786923076923076
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 28.15, 
-          "average": 3.51875
+          "count": 13, 
+          "sum": 43.629999999999995, 
+          "average": 3.3561538461538465
         }, 
         "Nevada": {
           "count": 13, 
@@ -28487,6 +29047,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 89.84999999999998, 
           "average": 6.911538461538462
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 102.28, 
+          "average": 7.867692307692308
         }
       }, 
       "drugs.[0].Rates.Alcohol.In Minors.Use": {
@@ -28595,15 +29160,15 @@ drugs_bar = [
           "sum": 400.42, 
           "average": 30.801538461538463
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 388.7199999999999, 
-          "average": 29.901538461538465
+          "sum": 425.2300000000001, 
+          "average": 32.71
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 456.29, 
-          "average": 35.09923076923077
+          "sum": 326.32, 
+          "average": 25.10153846153846
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -28619,6 +29184,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 303.42, 
           "average": 23.34
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 456.29, 
+          "average": 35.09923076923077
         }, 
         "Vermont": {
           "count": 13, 
@@ -28680,10 +29250,10 @@ drugs_bar = [
           "sum": 287.91, 
           "average": 22.14692307692308
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 438.5400000000001, 
-          "average": 33.73384615384616
+          "sum": 388.7199999999999, 
+          "average": 29.901538461538465
         }, 
         "South Dakota": {
           "count": 13, 
@@ -28691,9 +29261,9 @@ drugs_bar = [
           "average": 30.457692307692305
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 352.72, 
-          "average": 29.393333333333334
+          "count": 13, 
+          "sum": 379.42, 
+          "average": 29.186153846153847
         }, 
         "New Jersey": {
           "count": 13, 
@@ -28715,20 +29285,15 @@ drugs_bar = [
           "sum": 271.93999999999994, 
           "average": 20.91846153846154
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 312.74000000000007, 
-          "average": 31.274
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 29.22, 
-          "average": 29.22
+          "count": 13, 
+          "sum": 387.96999999999997, 
+          "average": 29.843846153846155
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 190.13000000000002, 
-          "average": 23.76625
+          "count": 13, 
+          "sum": 325.14, 
+          "average": 25.01076923076923
         }, 
         "Nevada": {
           "count": 13, 
@@ -28739,6 +29304,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 343.06, 
           "average": 26.38923076923077
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 438.5400000000001, 
+          "average": 33.73384615384616
         }
       }, 
       "drugs.[0].Rates.Tobacco.Cigarette Past Month.26+": {
@@ -28847,15 +29417,15 @@ drugs_bar = [
           "sum": 265.93, 
           "average": 20.456153846153846
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 284.83, 
-          "average": 21.91
+          "sum": 320.32, 
+          "average": 24.64
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 290.7, 
-          "average": 22.361538461538462
+          "sum": 228.54999999999998, 
+          "average": 17.58076923076923
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -28871,6 +29441,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 346.62999999999994, 
           "average": 26.663846153846155
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 290.7, 
+          "average": 22.361538461538462
         }, 
         "Vermont": {
           "count": 13, 
@@ -28932,10 +29507,10 @@ drugs_bar = [
           "sum": 347.87, 
           "average": 26.75923076923077
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 296.10999999999996, 
-          "average": 22.77769230769231
+          "sum": 284.83, 
+          "average": 21.91
         }, 
         "South Dakota": {
           "count": 13, 
@@ -28943,9 +29518,9 @@ drugs_bar = [
           "average": 25.697692307692307
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 270.97999999999996, 
-          "average": 22.581666666666667
+          "count": 13, 
+          "sum": 290.21999999999997, 
+          "average": 22.324615384615388
         }, 
         "New Jersey": {
           "count": 13, 
@@ -28967,20 +29542,15 @@ drugs_bar = [
           "sum": 357.67, 
           "average": 27.513076923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 242.37, 
-          "average": 24.237000000000002
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 23.61, 
-          "average": 23.61
+          "count": 13, 
+          "sum": 312.72999999999996, 
+          "average": 24.056153846153848
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 171.03000000000003, 
-          "average": 21.37875
+          "count": 13, 
+          "sum": 292.10999999999996, 
+          "average": 22.470000000000002
         }, 
         "Nevada": {
           "count": 13, 
@@ -28991,6 +29561,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 320.41, 
           "average": 24.64692307692308
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 296.10999999999996, 
+          "average": 22.77769230769231
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Used Past Month.12-17": {
@@ -29099,15 +29674,15 @@ drugs_bar = [
           "sum": 41592, 
           "average": 3199.3846153846152
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 213912, 
-          "average": 16454.76923076923
+          "sum": 13116, 
+          "average": 1008.9230769230769
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 18294, 
-          "average": 1407.2307692307693
+          "sum": 467280, 
+          "average": 35944.61538461538
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -29123,6 +29698,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 46411, 
           "average": 3570.076923076923
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 18294, 
+          "average": 1407.2307692307693
         }, 
         "Vermont": {
           "count": 13, 
@@ -29184,10 +29764,10 @@ drugs_bar = [
           "sum": 46059, 
           "average": 3543.0
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 14823, 
-          "average": 1140.2307692307693
+          "sum": 213912, 
+          "average": 16454.76923076923
         }, 
         "South Dakota": {
           "count": 13, 
@@ -29195,9 +29775,9 @@ drugs_bar = [
           "average": 650.1538461538462
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 63173, 
-          "average": 5264.416666666667
+          "count": 13, 
+          "sum": 69173, 
+          "average": 5321.0
         }, 
         "New Jersey": {
           "count": 13, 
@@ -29219,20 +29799,15 @@ drugs_bar = [
           "sum": 55549, 
           "average": 4273.0
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 9318, 
-          "average": 931.8
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 510, 
-          "average": 510.0
+          "count": 13, 
+          "sum": 5832, 
+          "average": 448.61538461538464
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 158227, 
-          "average": 19778.375
+          "count": 13, 
+          "sum": 260488, 
+          "average": 20037.53846153846
         }, 
         "Nevada": {
           "count": 13, 
@@ -29243,6 +29818,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 15352, 
           "average": 1180.923076923077
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 14823, 
+          "average": 1140.2307692307693
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Abuse Past Month.12-17": {
@@ -29351,15 +29931,15 @@ drugs_bar = [
           "sum": 41592, 
           "average": 3199.3846153846152
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 213912, 
-          "average": 16454.76923076923
+          "sum": 13116, 
+          "average": 1008.9230769230769
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 18294, 
-          "average": 1407.2307692307693
+          "sum": 467280, 
+          "average": 35944.61538461538
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -29375,6 +29955,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 46411, 
           "average": 3570.076923076923
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 18294, 
+          "average": 1407.2307692307693
         }, 
         "Vermont": {
           "count": 13, 
@@ -29436,10 +30021,10 @@ drugs_bar = [
           "sum": 46059, 
           "average": 3543.0
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 14823, 
-          "average": 1140.2307692307693
+          "sum": 213912, 
+          "average": 16454.76923076923
         }, 
         "South Dakota": {
           "count": 13, 
@@ -29447,9 +30032,9 @@ drugs_bar = [
           "average": 650.1538461538462
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 63173, 
-          "average": 5264.416666666667
+          "count": 13, 
+          "sum": 69173, 
+          "average": 5321.0
         }, 
         "New Jersey": {
           "count": 13, 
@@ -29471,20 +30056,15 @@ drugs_bar = [
           "sum": 55549, 
           "average": 4273.0
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 9318, 
-          "average": 931.8
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 510, 
-          "average": 510.0
+          "count": 13, 
+          "sum": 5832, 
+          "average": 448.61538461538464
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 158227, 
-          "average": 19778.375
+          "count": 13, 
+          "sum": 260488, 
+          "average": 20037.53846153846
         }, 
         "Nevada": {
           "count": 13, 
@@ -29495,6 +30075,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 15352, 
           "average": 1180.923076923077
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 14823, 
+          "average": 1140.2307692307693
         }
       }, 
       "drugs.[0].Rates.Marijuana.New Users.12-17": {
@@ -29603,15 +30188,15 @@ drugs_bar = [
           "sum": 92.0, 
           "average": 7.076923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 75.03999999999999, 
-          "average": 5.772307692307692
+          "sum": 95.3, 
+          "average": 7.3307692307692305
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 96.26, 
-          "average": 7.404615384615385
+          "sum": 78.92999999999999, 
+          "average": 6.071538461538461
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -29627,6 +30212,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 73.39, 
           "average": 5.645384615384615
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 96.26, 
+          "average": 7.404615384615385
         }, 
         "Vermont": {
           "count": 13, 
@@ -29688,10 +30278,10 @@ drugs_bar = [
           "sum": 65.0, 
           "average": 5.0
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 89.93, 
-          "average": 6.917692307692308
+          "sum": 75.03999999999999, 
+          "average": 5.772307692307692
         }, 
         "South Dakota": {
           "count": 13, 
@@ -29699,9 +30289,9 @@ drugs_bar = [
           "average": 5.823076923076924
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 93.07000000000001, 
-          "average": 7.755833333333334
+          "count": 13, 
+          "sum": 99.85000000000001, 
+          "average": 7.680769230769231
         }, 
         "New Jersey": {
           "count": 13, 
@@ -29723,20 +30313,15 @@ drugs_bar = [
           "sum": 60.47, 
           "average": 4.651538461538461
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 68.71999999999998, 
-          "average": 6.872
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 7.53, 
-          "average": 7.53
+          "count": 13, 
+          "sum": 86.88000000000001, 
+          "average": 6.683076923076923
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 40.31, 
-          "average": 5.03875
+          "count": 13, 
+          "sum": 71.42, 
+          "average": 5.493846153846154
         }, 
         "Nevada": {
           "count": 13, 
@@ -29747,6 +30332,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 82.9, 
           "average": 6.376923076923077
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 89.93, 
+          "average": 6.917692307692308
         }
       }, 
       "drugs.[0].Population.18-25": {
@@ -29855,15 +30445,15 @@ drugs_bar = [
           "sum": 4559620, 
           "average": 350740.0
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 28664812, 
-          "average": 2204985.5384615385
+          "sum": 1362652, 
+          "average": 104819.38461538461
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 1691826, 
-          "average": 130140.46153846153
+          "sum": 56334984, 
+          "average": 4333460.307692308
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -29879,6 +30469,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 6589879, 
           "average": 506913.76923076925
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 1691826, 
+          "average": 130140.46153846153
         }, 
         "Vermont": {
           "count": 13, 
@@ -29940,10 +30535,10 @@ drugs_bar = [
           "sum": 6810627, 
           "average": 523894.3846153846
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 1645442, 
-          "average": 126572.46153846153
+          "sum": 28664812, 
+          "average": 2204985.5384615385
         }, 
         "South Dakota": {
           "count": 13, 
@@ -29951,9 +30546,9 @@ drugs_bar = [
           "average": 90925.61538461539
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 6662174, 
-          "average": 555181.1666666666
+          "count": 13, 
+          "sum": 7261127, 
+          "average": 558548.2307692308
         }, 
         "New Jersey": {
           "count": 13, 
@@ -29975,20 +30570,15 @@ drugs_bar = [
           "sum": 8768872, 
           "average": 674528.6153846154
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 1067806, 
-          "average": 106780.6
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 101855, 
-          "average": 101855.0
+          "count": 13, 
+          "sum": 1253358, 
+          "average": 96412.15384615384
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 23670842, 
-          "average": 2958855.25
+          "count": 13, 
+          "sum": 37242438, 
+          "average": 2864802.923076923
         }, 
         "Nevada": {
           "count": 13, 
@@ -29999,6 +30589,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 1621137, 
           "average": 124702.84615384616
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 1645442, 
+          "average": 126572.46153846153
         }
       }, 
       "drugs.[0].Year": {
@@ -30107,12 +30702,12 @@ drugs_bar = [
           "sum": 26104, 
           "average": 2008.0
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
           "sum": 26104, 
           "average": 2008.0
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
           "sum": 26104, 
           "average": 2008.0
@@ -30128,6 +30723,11 @@ drugs_bar = [
           "average": 2008.0
         }, 
         "South Carolina": {
+          "count": 13, 
+          "sum": 26104, 
+          "average": 2008.0
+        }, 
+        "New Hampshire": {
           "count": 13, 
           "sum": 26104, 
           "average": 2008.0
@@ -30192,7 +30792,7 @@ drugs_bar = [
           "sum": 26104, 
           "average": 2008.0
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
           "sum": 26104, 
           "average": 2008.0
@@ -30203,9 +30803,9 @@ drugs_bar = [
           "average": 2008.0
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 24090, 
-          "average": 2007.5
+          "count": 13, 
+          "sum": 26104, 
+          "average": 2008.0
         }, 
         "New Jersey": {
           "count": 13, 
@@ -30227,20 +30827,15 @@ drugs_bar = [
           "sum": 26104, 
           "average": 2008.0
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 20095, 
-          "average": 2009.5
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 2009, 
-          "average": 2009.0
+          "count": 13, 
+          "sum": 26104, 
+          "average": 2008.0
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 16084, 
-          "average": 2010.5
+          "count": 13, 
+          "sum": 26104, 
+          "average": 2008.0
         }, 
         "Nevada": {
           "count": 13, 
@@ -30248,6 +30843,11 @@ drugs_bar = [
           "average": 2008.0
         }, 
         "Maine": {
+          "count": 13, 
+          "sum": 26104, 
+          "average": 2008.0
+        }, 
+        "Rhode Island": {
           "count": 13, 
           "sum": 26104, 
           "average": 2008.0
@@ -30359,15 +30959,15 @@ drugs_bar = [
           "sum": 200422, 
           "average": 15417.076923076924
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 1140040, 
-          "average": 87695.38461538461
+          "sum": 68017, 
+          "average": 5232.076923076923
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 93396, 
-          "average": 7184.307692307692
+          "sum": 2323786, 
+          "average": 178752.76923076922
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -30383,6 +30983,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 224521, 
           "average": 17270.846153846152
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 93396, 
+          "average": 7184.307692307692
         }, 
         "Vermont": {
           "count": 13, 
@@ -30444,10 +31049,10 @@ drugs_bar = [
           "sum": 204737, 
           "average": 15749.0
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 85968, 
-          "average": 6612.923076923077
+          "sum": 1140040, 
+          "average": 87695.38461538461
         }, 
         "South Dakota": {
           "count": 13, 
@@ -30455,9 +31060,9 @@ drugs_bar = [
           "average": 2214.6923076923076
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 361423, 
-          "average": 30118.583333333332
+          "count": 13, 
+          "sum": 409723, 
+          "average": 31517.153846153848
         }, 
         "New Jersey": {
           "count": 13, 
@@ -30479,20 +31084,15 @@ drugs_bar = [
           "sum": 265740, 
           "average": 20441.53846153846
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 54300, 
-          "average": 5430.0
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3635, 
-          "average": 3635.0
+          "count": 13, 
+          "sum": 51339, 
+          "average": 3949.153846153846
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 620919, 
-          "average": 77614.875
+          "count": 13, 
+          "sum": 933549, 
+          "average": 71811.46153846153
         }, 
         "Nevada": {
           "count": 13, 
@@ -30503,6 +31103,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 97537, 
           "average": 7502.846153846154
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 85968, 
+          "average": 6612.923076923077
         }
       }, 
       "drugs.[0].Totals.Marijuana.Used Past Month.18-25": {
@@ -30611,15 +31216,15 @@ drugs_bar = [
           "sum": 107940, 
           "average": 8303.076923076924
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 601793, 
-          "average": 46291.769230769234
+          "sum": 30587, 
+          "average": 2352.846153846154
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 47317, 
-          "average": 3639.769230769231
+          "sum": 1085786, 
+          "average": 83522.0
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -30635,6 +31240,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 115302, 
           "average": 8869.384615384615
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 47317, 
+          "average": 3639.769230769231
         }, 
         "Vermont": {
           "count": 13, 
@@ -30696,10 +31306,10 @@ drugs_bar = [
           "sum": 92716, 
           "average": 7132.0
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 49439, 
-          "average": 3803.0
+          "sum": 601793, 
+          "average": 46291.769230769234
         }, 
         "South Dakota": {
           "count": 13, 
@@ -30707,9 +31317,9 @@ drugs_bar = [
           "average": 1246.1538461538462
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 166714, 
-          "average": 13892.833333333334
+          "count": 13, 
+          "sum": 184714, 
+          "average": 14208.76923076923
         }, 
         "New Jersey": {
           "count": 13, 
@@ -30731,20 +31341,15 @@ drugs_bar = [
           "sum": 123563, 
           "average": 9504.846153846154
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 24410, 
-          "average": 2441.0
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 2153, 
-          "average": 2153.0
+          "count": 13, 
+          "sum": 28534, 
+          "average": 2194.923076923077
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 333229, 
-          "average": 41653.625
+          "count": 13, 
+          "sum": 515150, 
+          "average": 39626.92307692308
         }, 
         "Nevada": {
           "count": 13, 
@@ -30755,6 +31360,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 40853, 
           "average": 3142.5384615384614
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 49439, 
+          "average": 3803.0
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Cocaine Used Past Year.26+": {
@@ -30863,15 +31473,15 @@ drugs_bar = [
           "sum": 17.77, 
           "average": 1.366923076923077
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 23.34, 
-          "average": 1.7953846153846154
+          "sum": 16.44, 
+          "average": 1.2646153846153847
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 22.65, 
-          "average": 1.7423076923076921
+          "sum": 21.1, 
+          "average": 1.623076923076923
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -30887,6 +31497,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 23.220000000000006, 
           "average": 1.786153846153846
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 22.65, 
+          "average": 1.7423076923076921
         }, 
         "Vermont": {
           "count": 13, 
@@ -30948,10 +31563,10 @@ drugs_bar = [
           "sum": 15.199999999999998, 
           "average": 1.1692307692307693
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 28.349999999999994, 
-          "average": 2.180769230769231
+          "sum": 23.34, 
+          "average": 1.7953846153846154
         }, 
         "South Dakota": {
           "count": 13, 
@@ -30959,9 +31574,9 @@ drugs_bar = [
           "average": 0.8953846153846154
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 28.470000000000002, 
-          "average": 2.3725
+          "count": 13, 
+          "sum": 30.44, 
+          "average": 2.3415384615384616
         }, 
         "New Jersey": {
           "count": 13, 
@@ -30983,20 +31598,15 @@ drugs_bar = [
           "sum": 16.4, 
           "average": 1.2615384615384615
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 11.740000000000002, 
-          "average": 1.174
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 3.13, 
-          "average": 3.13
+          "count": 13, 
+          "sum": 42.03, 
+          "average": 3.233076923076923
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 8.99, 
-          "average": 1.12375
+          "count": 13, 
+          "sum": 16.49, 
+          "average": 1.2684615384615383
         }, 
         "Nevada": {
           "count": 13, 
@@ -31007,6 +31617,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 17.439999999999998, 
           "average": 1.3415384615384616
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 28.349999999999994, 
+          "average": 2.180769230769231
         }
       }, 
       "drugs.[0].Totals.Alcohol.Perceptions of Risk.26+": {
@@ -31115,15 +31730,15 @@ drugs_bar = [
           "sum": 1316834, 
           "average": 101294.92307692308
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 7147703, 
-          "average": 549823.3076923077
+          "sum": 316614, 
+          "average": 24354.923076923078
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 430999, 
-          "average": 33153.769230769234
+          "sum": 14065022, 
+          "average": 1081924.7692307692
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -31139,6 +31754,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 1737301, 
           "average": 133638.53846153847
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 430999, 
+          "average": 33153.769230769234
         }, 
         "Vermont": {
           "count": 13, 
@@ -31200,10 +31820,10 @@ drugs_bar = [
           "sum": 1822832, 
           "average": 140217.84615384616
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 344605, 
-          "average": 26508.076923076922
+          "sum": 7147703, 
+          "average": 549823.3076923077
         }, 
         "South Dakota": {
           "count": 13, 
@@ -31211,9 +31831,9 @@ drugs_bar = [
           "average": 18393.53846153846
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 1503090, 
-          "average": 125257.5
+          "count": 13, 
+          "sum": 1633789, 
+          "average": 125676.07692307692
         }, 
         "New Jersey": {
           "count": 13, 
@@ -31235,20 +31855,15 @@ drugs_bar = [
           "sum": 2422791, 
           "average": 186368.53846153847
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 248167, 
-          "average": 24816.7
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 16268, 
-          "average": 16268.0
+          "count": 13, 
+          "sum": 221455, 
+          "average": 17035.0
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 5672764, 
-          "average": 709095.5
+          "count": 13, 
+          "sum": 8776610, 
+          "average": 675123.8461538461
         }, 
         "Nevada": {
           "count": 13, 
@@ -31259,6 +31874,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 449198, 
           "average": 34553.692307692305
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 344605, 
+          "average": 26508.076923076922
         }
       }, 
       "drugs.[0].Totals.Tobacco.Cigarette Past Month.26+": {
@@ -31367,15 +31987,15 @@ drugs_bar = [
           "sum": 615538, 
           "average": 47349.07692307692
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 3546691, 
-          "average": 272822.3846153846
+          "sum": 200304, 
+          "average": 15408.0
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 249953, 
-          "average": 19227.153846153848
+          "sum": 5133031, 
+          "average": 394848.53846153844
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -31391,6 +32011,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 987001, 
           "average": 75923.15384615384
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 249953, 
+          "average": 19227.153846153848
         }, 
         "Vermont": {
           "count": 13, 
@@ -31452,10 +32077,10 @@ drugs_bar = [
           "sum": 1035679, 
           "average": 79667.61538461539
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 201882, 
-          "average": 15529.384615384615
+          "sum": 3546691, 
+          "average": 272822.3846153846
         }, 
         "South Dakota": {
           "count": 13, 
@@ -31463,9 +32088,9 @@ drugs_bar = [
           "average": 12747.384615384615
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 822570, 
-          "average": 68547.5
+          "count": 13, 
+          "sum": 888070, 
+          "average": 68313.07692307692
         }, 
         "New Jersey": {
           "count": 13, 
@@ -31487,20 +32112,15 @@ drugs_bar = [
           "sum": 1417808, 
           "average": 109062.15384615384
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 154701, 
-          "average": 15470.1
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 8940, 
-          "average": 8940.0
+          "count": 13, 
+          "sum": 120859, 
+          "average": 9296.846153846154
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 2588989, 
-          "average": 323623.625
+          "count": 13, 
+          "sum": 4192138, 
+          "average": 322472.1538461539
         }, 
         "Nevada": {
           "count": 13, 
@@ -31511,6 +32131,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 286886, 
           "average": 22068.153846153848
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 201882, 
+          "average": 15529.384615384615
         }
       }, 
       "drugs.[0].Rates.Alcohol.Dependence Past Year.18-25": {
@@ -31619,15 +32244,15 @@ drugs_bar = [
           "sum": 85.72, 
           "average": 6.593846153846154
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 84.76000000000002, 
-          "average": 6.5200000000000005
+          "sum": 112.61, 
+          "average": 8.662307692307692
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 96.34000000000002, 
-          "average": 7.410769230769231
+          "sum": 84.39, 
+          "average": 6.491538461538462
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -31643,6 +32268,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 76.26, 
           "average": 5.866153846153846
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 96.34000000000002, 
+          "average": 7.410769230769231
         }, 
         "Vermont": {
           "count": 13, 
@@ -31704,10 +32334,10 @@ drugs_bar = [
           "sum": 69.36, 
           "average": 5.335384615384616
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 114.06, 
-          "average": 8.773846153846154
+          "sum": 84.76000000000002, 
+          "average": 6.5200000000000005
         }, 
         "South Dakota": {
           "count": 13, 
@@ -31715,9 +32345,9 @@ drugs_bar = [
           "average": 7.7807692307692315
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 87.06, 
-          "average": 7.255
+          "count": 13, 
+          "sum": 92.4, 
+          "average": 7.107692307692308
         }, 
         "New Jersey": {
           "count": 13, 
@@ -31739,20 +32369,15 @@ drugs_bar = [
           "sum": 70.25, 
           "average": 5.403846153846154
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 83.64, 
-          "average": 8.364
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 7.19, 
-          "average": 7.19
+          "count": 13, 
+          "sum": 96.48000000000002, 
+          "average": 7.421538461538462
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 45.38999999999999, 
-          "average": 5.67375
+          "count": 13, 
+          "sum": 77.89999999999999, 
+          "average": 5.992307692307692
         }, 
         "Nevada": {
           "count": 13, 
@@ -31763,6 +32388,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 86.53999999999999, 
           "average": 6.656923076923078
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 114.06, 
+          "average": 8.773846153846154
         }
       }, 
       "drugs.[0].Rates.Marijuana.Perceptions of Risk.18-25": {
@@ -31871,15 +32501,15 @@ drugs_bar = [
           "sum": 196.53, 
           "average": 15.117692307692307
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 237.18000000000006, 
-          "average": 18.244615384615386
+          "sum": 182.74, 
+          "average": 14.056923076923077
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 138.02999999999997, 
-          "average": 10.617692307692307
+          "sum": 267.03999999999996, 
+          "average": 20.54153846153846
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -31895,6 +32525,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 272.18, 
           "average": 20.936923076923076
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 138.02999999999997, 
+          "average": 10.617692307692307
         }, 
         "Vermont": {
           "count": 13, 
@@ -31956,10 +32591,10 @@ drugs_bar = [
           "sum": 342.4699999999999, 
           "average": 26.343846153846155
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 168.70000000000002, 
-          "average": 12.976923076923075
+          "sum": 237.18000000000006, 
+          "average": 18.244615384615386
         }, 
         "South Dakota": {
           "count": 13, 
@@ -31967,9 +32602,9 @@ drugs_bar = [
           "average": 19.060769230769232
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 167.70000000000002, 
-          "average": 13.975
+          "count": 13, 
+          "sum": 175.71, 
+          "average": 13.516153846153847
         }, 
         "New Jersey": {
           "count": 13, 
@@ -31991,20 +32626,15 @@ drugs_bar = [
           "sum": 269.44000000000005, 
           "average": 20.726153846153846
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 130.45999999999998, 
-          "average": 13.046000000000001
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 15.44, 
-          "average": 15.44
+          "count": 13, 
+          "sum": 194.9, 
+          "average": 14.992307692307692
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 181.81, 
-          "average": 22.72625
+          "count": 13, 
+          "sum": 327.45, 
+          "average": 25.18846153846154
         }, 
         "Nevada": {
           "count": 13, 
@@ -32015,6 +32645,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 162.72, 
           "average": 12.516923076923076
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 168.70000000000002, 
+          "average": 12.976923076923075
         }
       }, 
       "drugs.[0].Rates.Alcohol.Use Past Month.12-17": {
@@ -32123,15 +32758,15 @@ drugs_bar = [
           "sum": 222.67000000000002, 
           "average": 17.128461538461536
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 218.58, 
-          "average": 16.813846153846153
+          "sum": 244.57, 
+          "average": 18.813076923076924
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 229.46, 
-          "average": 17.65076923076923
+          "sum": 178.8, 
+          "average": 13.753846153846155
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -32147,6 +32782,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 163.51, 
           "average": 12.577692307692306
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 229.46, 
+          "average": 17.65076923076923
         }, 
         "Vermont": {
           "count": 13, 
@@ -32208,10 +32848,10 @@ drugs_bar = [
           "sum": 164.34, 
           "average": 12.641538461538461
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 221.76000000000002, 
-          "average": 17.058461538461536
+          "sum": 218.58, 
+          "average": 16.813846153846153
         }, 
         "South Dakota": {
           "count": 13, 
@@ -32219,9 +32859,9 @@ drugs_bar = [
           "average": 16.17
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 207.96, 
-          "average": 17.330000000000002
+          "count": 13, 
+          "sum": 222.0, 
+          "average": 17.076923076923077
         }, 
         "New Jersey": {
           "count": 13, 
@@ -32243,20 +32883,15 @@ drugs_bar = [
           "sum": 148.07, 
           "average": 11.389999999999999
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 172.76999999999998, 
-          "average": 17.276999999999997
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 14.09, 
-          "average": 14.09
+          "count": 13, 
+          "sum": 171.92000000000002, 
+          "average": 13.224615384615387
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 100.50000000000001, 
-          "average": 12.5625
+          "count": 13, 
+          "sum": 182.29, 
+          "average": 14.022307692307692
         }, 
         "Nevada": {
           "count": 13, 
@@ -32267,6 +32902,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 182.09999999999997, 
           "average": 14.007692307692308
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 221.76000000000002, 
+          "average": 17.058461538461536
         }
       }, 
       "drugs.[0].Totals.Tobacco.Cigarette Past Month.18-25": {
@@ -32375,15 +33015,15 @@ drugs_bar = [
           "sum": 162419, 
           "average": 12493.76923076923
         }, 
-        "New York": {
+        "Montana": {
           "count": 13, 
-          "sum": 948285, 
-          "average": 72945.0
+          "sum": 53386, 
+          "average": 4106.615384615385
         }, 
-        "New Hampshire": {
+        "California": {
           "count": 13, 
-          "sum": 67549, 
-          "average": 5196.076923076923
+          "sum": 1606830, 
+          "average": 123602.30769230769
         }, 
         "Massachusetts": {
           "count": 13, 
@@ -32399,6 +33039,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 253103, 
           "average": 19469.46153846154
+        }, 
+        "New Hampshire": {
+          "count": 13, 
+          "sum": 67549, 
+          "average": 5196.076923076923
         }, 
         "Vermont": {
           "count": 13, 
@@ -32460,10 +33105,10 @@ drugs_bar = [
           "sum": 251667, 
           "average": 19359.0
         }, 
-        "Rhode Island": {
+        "New York": {
           "count": 13, 
-          "sum": 62423, 
-          "average": 4801.7692307692305
+          "sum": 948285, 
+          "average": 72945.0
         }, 
         "South Dakota": {
           "count": 13, 
@@ -32471,9 +33116,9 @@ drugs_bar = [
           "average": 3800.153846153846
         }, 
         "Colorado": {
-          "count": 12, 
-          "sum": 248044, 
-          "average": 20670.333333333332
+          "count": 13, 
+          "sum": 266744, 
+          "average": 20518.76923076923
         }, 
         "New Jersey": {
           "count": 13, 
@@ -32495,20 +33140,15 @@ drugs_bar = [
           "sum": 325114, 
           "average": 25008.76923076923
         }, 
-        "Montana": {
-          "count": 10, 
-          "sum": 40468, 
-          "average": 4046.8
-        }, 
         "District of Columbia": {
-          "count": 1, 
-          "sum": 2987, 
-          "average": 2987.0
+          "count": 13, 
+          "sum": 37167, 
+          "average": 2859.0
         }, 
         "Texas": {
-          "count": 8, 
-          "sum": 735270, 
-          "average": 91908.75
+          "count": 13, 
+          "sum": 1241210, 
+          "average": 95477.69230769231
         }, 
         "Nevada": {
           "count": 13, 
@@ -32519,6 +33159,11 @@ drugs_bar = [
           "count": 13, 
           "sum": 64100, 
           "average": 4930.7692307692305
+        }, 
+        "Rhode Island": {
+          "count": 13, 
+          "sum": 62423, 
+          "average": 4801.7692307692305
         }
       }
     }, 
@@ -32537,6 +33182,7 @@ drugs_bar = [
       "Louisiana", 
       "Idaho", 
       "Wyoming", 
+      "Tennessee", 
       "Arizona", 
       "Iowa", 
       "Michigan", 
@@ -32545,11 +33191,12 @@ drugs_bar = [
       "Virginia", 
       "Oregon", 
       "Connecticut", 
-      "Tennessee", 
-      "New Hampshire", 
+      "Montana", 
+      "California", 
       "Massachusetts", 
       "West Virginia", 
       "South Carolina", 
+      "New Hampshire", 
       "Wisconsin", 
       "Vermont", 
       "Georgia", 
@@ -32563,8675 +33210,8674 @@ drugs_bar = [
       "Missouri", 
       "Ohio", 
       "Alabama", 
-      "Rhode Island", 
+      "New York", 
       "South Dakota", 
       "Colorado", 
       "New Jersey", 
       "Washington", 
       "North Carolina", 
-      "New York", 
-      "Montana", 
       "District of Columbia", 
       "Texas", 
       "Nevada", 
-      "Maine"
+      "Maine", 
+      "Rhode Island"
     ]
   }, 
   {
     "best_indexes": [
-      "2009", 
-      "2007", 
-      "2008", 
-      "2011", 
-      "2010", 
-      "2013", 
-      "2012", 
+      "2002", 
+      "2003", 
       "2006", 
+      "2007", 
+      "2004", 
       "2005", 
-      "2014"
+      "2014", 
+      "2008", 
+      "2009", 
+      "2011"
     ], 
     "data": {
       "drugs.[0].Rates.Pain Relievers Abuse Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 367.17999999999995, 
-          "average": 7.812340425531915
+          "count": 51, 
+          "sum": 395.62999999999994, 
+          "average": 7.757450980392157
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 359.21000000000004, 
-          "average": 7.642765957446808
+          "count": 51, 
+          "sum": 387.1, 
+          "average": 7.590196078431373
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 342.6899999999999, 
-          "average": 7.139375
+          "count": 51, 
+          "sum": 361.34999999999997, 
+          "average": 7.085294117647059
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 341.10999999999996, 
-          "average": 6.961428571428572
+          "count": 51, 
+          "sum": 352.81999999999994, 
+          "average": 6.9180392156862744
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 351.2200000000001, 
-          "average": 7.472765957446809
+          "count": 51, 
+          "sum": 378.5300000000001, 
+          "average": 7.422156862745099
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 350.8899999999999, 
-          "average": 7.310208333333333
+          "count": 51, 
+          "sum": 369.99999999999983, 
+          "average": 7.254901960784314
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 222.8, 
-          "average": 4.641666666666667
+          "count": 51, 
+          "sum": 236.05000000000004, 
+          "average": 4.62843137254902
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 332.76000000000005, 
-          "average": 6.7910204081632655
+          "count": 51, 
+          "sum": 344.25, 
+          "average": 6.75
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 329.11000000000007, 
-          "average": 6.5822
+          "count": 51, 
+          "sum": 335.72000000000014, 
+          "average": 6.582745098039216
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 279.85, 
-          "average": 5.711224489795919
+          "count": 51, 
+          "sum": 288.24, 
+          "average": 5.6517647058823535
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 302.13000000000005, 
-          "average": 6.165918367346939
+          "count": 51, 
+          "sum": 311.96000000000004, 
+          "average": 6.116862745098039
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 246.54999999999998, 
-          "average": 5.031632653061225
+          "count": 51, 
+          "sum": 257.48999999999995, 
+          "average": 5.048823529411765
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 263.2, 
-          "average": 5.371428571428571
+          "count": 51, 
+          "sum": 272.86, 
+          "average": 5.350196078431373
         }
       }, 
       "drugs.[0].Totals.Marijuana.Perceptions of Risk.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 6093119, 
-          "average": 129640.82978723405
+          "count": 51, 
+          "sum": 7579651, 
+          "average": 148620.60784313726
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 6035368, 
-          "average": 128412.08510638298
+          "count": 51, 
+          "sum": 7519272, 
+          "average": 147436.70588235295
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 5865614, 
-          "average": 122200.29166666667
+          "count": 51, 
+          "sum": 7316160, 
+          "average": 143454.11764705883
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 6441430, 
-          "average": 131457.75510204083
+          "count": 51, 
+          "sum": 7241132, 
+          "average": 141982.98039215687
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 5974838, 
-          "average": 127124.21276595745
+          "count": 51, 
+          "sum": 7455236, 
+          "average": 146181.0980392157
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 5931970, 
-          "average": 123582.70833333333
+          "count": 51, 
+          "sum": 7387528, 
+          "average": 144853.49019607843
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 5321489, 
-          "average": 110864.35416666667
+          "count": 51, 
+          "sum": 6138389, 
+          "average": 120360.56862745098
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 6370983, 
-          "average": 130020.0612244898
+          "count": 51, 
+          "sum": 7162444, 
+          "average": 140440.07843137256
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 6308397, 
-          "average": 126167.94
+          "count": 51, 
+          "sum": 7080083, 
+          "average": 138825.1568627451
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 6045992, 
-          "average": 123387.59183673469
+          "count": 51, 
+          "sum": 6852092, 
+          "average": 134354.74509803922
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 6173149, 
-          "average": 125982.63265306123
+          "count": 51, 
+          "sum": 6967606, 
+          "average": 136619.72549019608
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 5766592, 
-          "average": 117685.55102040817
+          "count": 51, 
+          "sum": 6533392, 
+          "average": 128105.72549019608
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 5908465, 
-          "average": 120580.91836734694
+          "count": 51, 
+          "sum": 6695413, 
+          "average": 131282.60784313726
         }
       }, 
       "drugs.[0].Totals.Alcohol.In Minors.Use": {
         "2002": {
-          "count": 47, 
-          "sum": 875003, 
-          "average": 18617.08510638298
+          "count": 51, 
+          "sum": 1078483, 
+          "average": 21146.725490196077
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 868300, 
-          "average": 18474.468085106382
+          "count": 51, 
+          "sum": 1074158, 
+          "average": 21061.92156862745
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 851949, 
-          "average": 17748.9375
+          "count": 51, 
+          "sum": 1060633, 
+          "average": 20796.725490196077
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 930573, 
-          "average": 18991.285714285714
+          "count": 51, 
+          "sum": 1055950, 
+          "average": 20704.901960784315
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 861502, 
-          "average": 18329.82978723404
+          "count": 51, 
+          "sum": 1069735, 
+          "average": 20975.196078431374
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 859066, 
-          "average": 17897.208333333332
+          "count": 51, 
+          "sum": 1065229, 
+          "average": 20886.843137254902
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 733093, 
-          "average": 15272.770833333334
+          "count": 51, 
+          "sum": 865693, 
+          "average": 16974.37254901961
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 923798, 
-          "average": 18853.020408163266
+          "count": 51, 
+          "sum": 1051172, 
+          "average": 20611.21568627451
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 919101, 
-          "average": 18382.02
+          "count": 51, 
+          "sum": 1046312, 
+          "average": 20515.92156862745
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 818298, 
-          "average": 16699.95918367347
+          "count": 51, 
+          "sum": 947798, 
+          "average": 18584.274509803923
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 867451, 
-          "average": 17703.081632653062
+          "count": 51, 
+          "sum": 996904, 
+          "average": 19547.13725490196
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 775891, 
-          "average": 15834.510204081633
+          "count": 51, 
+          "sum": 897091, 
+          "average": 17590.019607843136
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 796974, 
-          "average": 16264.775510204081
+          "count": 51, 
+          "sum": 922290, 
+          "average": 18084.117647058825
         }
       }, 
       "drugs.[0].Totals.Alcohol.Abuse Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 445770, 
-          "average": 9484.468085106382
+          "count": 51, 
+          "sum": 553846, 
+          "average": 10859.725490196079
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 443865, 
-          "average": 9443.936170212766
+          "count": 51, 
+          "sum": 553247, 
+          "average": 10847.980392156862
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 439704, 
-          "average": 9160.5
+          "count": 51, 
+          "sum": 550592, 
+          "average": 10795.921568627451
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 480615, 
-          "average": 9808.469387755102
+          "count": 51, 
+          "sum": 549418, 
+          "average": 10772.901960784313
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 441825, 
-          "average": 9400.531914893618
+          "count": 51, 
+          "sum": 552508, 
+          "average": 10833.490196078432
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 441996, 
-          "average": 9208.25
+          "count": 51, 
+          "sum": 551624, 
+          "average": 10816.156862745098
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 372891, 
-          "average": 7768.5625
+          "count": 51, 
+          "sum": 440590, 
+          "average": 8639.019607843138
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 477792, 
-          "average": 9750.857142857143
+          "count": 51, 
+          "sum": 548095, 
+          "average": 10746.960784313726
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 476564, 
-          "average": 9531.28
+          "count": 51, 
+          "sum": 546632, 
+          "average": 10718.274509803921
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 424397, 
-          "average": 8661.163265306122
+          "count": 51, 
+          "sum": 494596, 
+          "average": 9697.960784313726
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 449702, 
-          "average": 9177.591836734693
+          "count": 51, 
+          "sum": 520720, 
+          "average": 10210.196078431372
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 407495, 
-          "average": 8316.224489795919
+          "count": 51, 
+          "sum": 474495, 
+          "average": 9303.823529411764
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 416047, 
-          "average": 8490.755102040815
+          "count": 51, 
+          "sum": 484668, 
+          "average": 9503.29411764706
         }
       }, 
       "drugs.[0].Rates.Tobacco.Perceptions of Risk.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 3379.3999999999996, 
-          "average": 71.90212765957448
+          "count": 51, 
+          "sum": 3682.4900000000002, 
+          "average": 72.2056862745098
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 3375.54, 
-          "average": 71.82
+          "count": 51, 
+          "sum": 3678.06, 
+          "average": 72.11882352941177
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 3435.200000000001, 
-          "average": 71.56666666666666
+          "count": 51, 
+          "sum": 3664.820000000001, 
+          "average": 71.85921568627451
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 3505.4699999999993, 
-          "average": 71.54020408163265
+          "count": 51, 
+          "sum": 3660.3899999999994, 
+          "average": 71.77235294117646
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 3371.68, 
-          "average": 71.73787234042553
+          "count": 51, 
+          "sum": 3673.64, 
+          "average": 72.0321568627451
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 3439.4999999999995, 
-          "average": 71.65625
+          "count": 51, 
+          "sum": 3669.209999999999, 
+          "average": 71.94529411764707
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 3396.9200000000005, 
-          "average": 70.76916666666666
+          "count": 51, 
+          "sum": 3627.8000000000006, 
+          "average": 71.13333333333334
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 3501.1, 
-          "average": 71.45102040816326
+          "count": 51, 
+          "sum": 3655.97, 
+          "average": 71.6856862745098
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 3574.150000000001, 
-          "average": 71.483
+          "count": 51, 
+          "sum": 3651.540000000001, 
+          "average": 71.59882352941176
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 3529.1999999999985, 
-          "average": 72.02448979591837
+          "count": 51, 
+          "sum": 3689.989999999999, 
+          "average": 72.35274509803921
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 3512.9199999999996, 
-          "average": 71.69224489795918
+          "count": 51, 
+          "sum": 3670.7199999999993, 
+          "average": 71.97490196078432
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 3478.9200000000005, 
-          "average": 70.99836734693878
+          "count": 51, 
+          "sum": 3634.56, 
+          "average": 71.26588235294118
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 3504.02, 
-          "average": 71.51061224489796
+          "count": 51, 
+          "sum": 3662.2299999999996, 
+          "average": 71.80843137254902
         }
       }, 
       "drugs.[0].Totals.Marijuana.New Users.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 177804, 
-          "average": 3783.063829787234
+          "count": 51, 
+          "sum": 219561, 
+          "average": 4305.117647058823
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 180889, 
-          "average": 3848.7021276595747
+          "count": 51, 
+          "sum": 224254, 
+          "average": 4397.137254901961
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 191489, 
-          "average": 3989.3541666666665
+          "count": 51, 
+          "sum": 238704, 
+          "average": 4680.470588235294
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 212319, 
-          "average": 4333.040816326531
+          "count": 51, 
+          "sum": 243636, 
+          "average": 4777.176470588235
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 184010, 
-          "average": 3915.1063829787236
+          "count": 51, 
+          "sum": 229007, 
+          "average": 4490.333333333333
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 188262, 
-          "average": 3922.125
+          "count": 51, 
+          "sum": 233825, 
+          "average": 4584.803921568628
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 116293, 
-          "average": 2422.7708333333335
+          "count": 51, 
+          "sum": 138393, 
+          "average": 2713.5882352941176
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 216229, 
-          "average": 4412.836734693878
+          "count": 51, 
+          "sum": 248634, 
+          "average": 4875.176470588235
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 221144, 
-          "average": 4422.88
+          "count": 51, 
+          "sum": 253692, 
+          "average": 4974.35294117647
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 114991, 
-          "average": 2346.7551020408164
+          "count": 51, 
+          "sum": 135790, 
+          "average": 2662.549019607843
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 167824, 
-          "average": 3424.9795918367345
+          "count": 51, 
+          "sum": 195022, 
+          "average": 3823.9607843137255
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 114895, 
-          "average": 2344.795918367347
+          "count": 51, 
+          "sum": 134594, 
+          "average": 2639.098039215686
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 114948, 
-          "average": 2345.877551020408
+          "count": 51, 
+          "sum": 135203, 
+          "average": 2651.0392156862745
         }
       }, 
       "drugs.[0].Totals.Alcohol.Abuse Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 880780, 
-          "average": 18740.0
+          "count": 51, 
+          "sum": 1093076, 
+          "average": 21432.86274509804
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 888376, 
-          "average": 18901.617021276597
+          "count": 51, 
+          "sum": 1105793, 
+          "average": 21682.21568627451
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 915595, 
-          "average": 19074.895833333332
+          "count": 51, 
+          "sum": 1143830, 
+          "average": 22428.039215686276
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1005786, 
-          "average": 20526.244897959183
+          "count": 51, 
+          "sum": 1156475, 
+          "average": 22675.980392156864
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 895928, 
-          "average": 19062.297872340427
+          "count": 51, 
+          "sum": 1118492, 
+          "average": 21931.21568627451
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 908165, 
-          "average": 18920.104166666668
+          "count": 51, 
+          "sum": 1131169, 
+          "average": 22179.78431372549
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1031596, 
-          "average": 21491.583333333332
+          "count": 51, 
+          "sum": 1204996, 
+          "average": 23627.37254901961
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1014144, 
-          "average": 20696.816326530614
+          "count": 51, 
+          "sum": 1169092, 
+          "average": 22923.37254901961
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1025586, 
-          "average": 20511.72
+          "count": 51, 
+          "sum": 1181693, 
+          "average": 23170.450980392157
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 989892, 
-          "average": 20201.877551020407
+          "count": 51, 
+          "sum": 1134492, 
+          "average": 22244.941176470587
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1006394, 
-          "average": 20538.65306122449
+          "count": 51, 
+          "sum": 1158438, 
+          "average": 22714.470588235294
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1038090, 
-          "average": 21185.51020408163
+          "count": 51, 
+          "sum": 1198789, 
+          "average": 23505.666666666668
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1013785, 
-          "average": 20689.48979591837
+          "count": 51, 
+          "sum": 1166347, 
+          "average": 22869.549019607843
         }
       }, 
       "drugs.[0].Totals.Alcohol.Use Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 1545740, 
-          "average": 32888.085106382976
+          "count": 51, 
+          "sum": 1936412, 
+          "average": 37968.86274509804
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1562311, 
-          "average": 33240.65957446808
+          "count": 51, 
+          "sum": 1961854, 
+          "average": 38467.72549019608
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1618894, 
-          "average": 33726.958333333336
+          "count": 51, 
+          "sum": 2038674, 
+          "average": 39974.0
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1802001, 
-          "average": 36775.5306122449
+          "count": 51, 
+          "sum": 2064450, 
+          "average": 40479.41176470588
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1578870, 
-          "average": 33592.97872340425
+          "count": 51, 
+          "sum": 1987375, 
+          "average": 38968.13725490196
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1602296, 
-          "average": 33381.166666666664
+          "count": 51, 
+          "sum": 2012984, 
+          "average": 39470.27450980392
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1774396, 
-          "average": 36966.583333333336
+          "count": 51, 
+          "sum": 2077695, 
+          "average": 40739.117647058825
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1821329, 
-          "average": 37169.97959183674
+          "count": 51, 
+          "sum": 2090312, 
+          "average": 40986.509803921566
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1847988, 
-          "average": 36959.76
+          "count": 51, 
+          "sum": 2116252, 
+          "average": 41495.13725490196
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1819294, 
-          "average": 37128.448979591834
+          "count": 51, 
+          "sum": 2082294, 
+          "average": 40829.294117647056
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1830066, 
-          "average": 37348.28571428572
+          "count": 51, 
+          "sum": 2099419, 
+          "average": 41165.07843137255
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1814896, 
-          "average": 37038.69387755102
+          "count": 51, 
+          "sum": 2078595, 
+          "average": 40756.76470588235
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1817277, 
-          "average": 37087.28571428572
+          "count": 51, 
+          "sum": 2080644, 
+          "average": 40796.94117647059
         }
       }, 
       "drugs.[0].Rates.Marijuana.New Users.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 5.819999999999999, 
-          "average": 0.12382978723404256
+          "count": 51, 
+          "sum": 6.389999999999999, 
+          "average": 0.12529411764705883
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 5.98, 
-          "average": 0.1272340425531915
+          "count": 51, 
+          "sum": 6.57, 
+          "average": 0.1288235294117647
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 6.82, 
-          "average": 0.14208333333333334
+          "count": 51, 
+          "sum": 7.33, 
+          "average": 0.14372549019607844
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 7.140000000000001, 
-          "average": 0.1457142857142857
+          "count": 51, 
+          "sum": 7.51, 
+          "average": 0.1472549019607843
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 6.280000000000001, 
-          "average": 0.13361702127659575
+          "count": 51, 
+          "sum": 6.910000000000001, 
+          "average": 0.13549019607843138
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 6.590000000000001, 
-          "average": 0.13729166666666667
+          "count": 51, 
+          "sum": 7.090000000000001, 
+          "average": 0.13901960784313724
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 6.300000000000001, 
-          "average": 0.13125
+          "count": 51, 
+          "sum": 6.840000000000001, 
+          "average": 0.13411764705882354
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 7.460000000000001, 
-          "average": 0.15224489795918367
+          "count": 51, 
+          "sum": 7.8500000000000005, 
+          "average": 0.153921568627451
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 7.83, 
-          "average": 0.1566
+          "count": 51, 
+          "sum": 8.03, 
+          "average": 0.15745098039215685
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 4.910000000000001, 
-          "average": 0.10020408163265307
+          "count": 51, 
+          "sum": 5.3, 
+          "average": 0.10392156862745097
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 6.310000000000003, 
-          "average": 0.12877551020408165
+          "count": 51, 
+          "sum": 6.710000000000003, 
+          "average": 0.13156862745098039
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 5.989999999999999, 
-          "average": 0.12224489795918368
+          "count": 51, 
+          "sum": 6.359999999999999, 
+          "average": 0.12470588235294118
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 5.469999999999999, 
-          "average": 0.11163265306122448
+          "count": 51, 
+          "sum": 5.849999999999999, 
+          "average": 0.11470588235294117
         }
       }, 
       "drugs.[0].Totals.Tobacco.Perceptions of Risk.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 1241956, 
-          "average": 26424.59574468085
+          "count": 51, 
+          "sum": 1578751, 
+          "average": 30955.901960784315
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1253680, 
-          "average": 26674.042553191488
+          "count": 51, 
+          "sum": 1595364, 
+          "average": 31281.647058823528
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1294395, 
-          "average": 26966.5625
+          "count": 51, 
+          "sum": 1645585, 
+          "average": 32266.37254901961
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1442683, 
-          "average": 29442.51020408163
+          "count": 51, 
+          "sum": 1662447, 
+          "average": 32597.0
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1265450, 
-          "average": 26924.468085106382
+          "count": 51, 
+          "sum": 1612040, 
+          "average": 31608.62745098039
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1282596, 
-          "average": 26720.75
+          "count": 51, 
+          "sum": 1628782, 
+          "average": 31936.901960784315
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1391291, 
-          "average": 28985.229166666668
+          "count": 51, 
+          "sum": 1624491, 
+          "average": 31852.764705882353
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1457371, 
-          "average": 29742.26530612245
+          "count": 51, 
+          "sum": 1679379, 
+          "average": 32929.0
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1474580, 
-          "average": 29491.6
+          "count": 51, 
+          "sum": 1696367, 
+          "average": 33262.098039215685
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1428092, 
-          "average": 29144.73469387755
+          "count": 51, 
+          "sum": 1644891, 
+          "average": 32252.764705882353
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1449943, 
-          "average": 29590.673469387755
+          "count": 51, 
+          "sum": 1670461, 
+          "average": 32754.13725490196
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1407894, 
-          "average": 28732.530612244896
+          "count": 51, 
+          "sum": 1618694, 
+          "average": 31739.098039215685
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1418006, 
-          "average": 28938.897959183672
+          "count": 51, 
+          "sum": 1631802, 
+          "average": 31996.117647058825
         }
       }, 
       "drugs.[0].Rates.Alcohol.Need Treatment Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 281.8300000000001, 
-          "average": 5.996382978723404
+          "count": 51, 
+          "sum": 305.38, 
+          "average": 5.9878431372549015
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 271.39, 
-          "average": 5.774255319148936
+          "count": 51, 
+          "sum": 294.28999999999996, 
+          "average": 5.770392156862745
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 248.04999999999998, 
-          "average": 5.167708333333334
+          "count": 51, 
+          "sum": 261.06, 
+          "average": 5.118823529411765
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 241.72999999999996, 
-          "average": 4.933265306122449
+          "count": 51, 
+          "sum": 249.97, 
+          "average": 4.901372549019608
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 260.98, 
-          "average": 5.552765957446809
+          "count": 51, 
+          "sum": 283.23, 
+          "average": 5.553529411764706
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 259.09000000000003, 
-          "average": 5.397708333333333
+          "count": 51, 
+          "sum": 272.14000000000004, 
+          "average": 5.336078431372549
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 124.38, 
-          "average": 2.59125
+          "count": 51, 
+          "sum": 133.1, 
+          "average": 2.6098039215686275
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 230.53000000000003, 
-          "average": 4.70469387755102
+          "count": 51, 
+          "sum": 238.91000000000003, 
+          "average": 4.684509803921569
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 222.67000000000004, 
-          "average": 4.4534
+          "count": 51, 
+          "sum": 227.82000000000002, 
+          "average": 4.4670588235294115
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 167.59999999999997, 
-          "average": 3.420408163265306
+          "count": 51, 
+          "sum": 174.35, 
+          "average": 3.418627450980392
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 193.41000000000005, 
-          "average": 3.947142857142857
+          "count": 51, 
+          "sum": 201.04000000000002, 
+          "average": 3.9419607843137254
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 151.63999999999993, 
-          "average": 3.09469387755102
+          "count": 51, 
+          "sum": 157.38999999999996, 
+          "average": 3.086078431372549
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 159.60000000000005, 
-          "average": 3.257142857142857
+          "count": 51, 
+          "sum": 165.85000000000002, 
+          "average": 3.2519607843137255
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Dependence Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 141.90000000000006, 
-          "average": 3.019148936170213
+          "count": 51, 
+          "sum": 153.05000000000004, 
+          "average": 3.000980392156863
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 138.38999999999996, 
-          "average": 2.9444680851063825
+          "count": 51, 
+          "sum": 149.30999999999995, 
+          "average": 2.9276470588235295
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 130.89000000000001, 
-          "average": 2.7268749999999997
+          "count": 51, 
+          "sum": 138.17, 
+          "average": 2.7092156862745096
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 129.73000000000002, 
-          "average": 2.647551020408163
+          "count": 51, 
+          "sum": 134.43, 
+          "average": 2.635882352941177
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 134.84999999999997, 
-          "average": 2.8691489361702125
+          "count": 51, 
+          "sum": 145.57, 
+          "average": 2.854313725490196
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 134.49, 
-          "average": 2.8018750000000003
+          "count": 51, 
+          "sum": 141.83, 
+          "average": 2.780980392156863
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 89.26999999999995, 
-          "average": 1.8597916666666665
+          "count": 51, 
+          "sum": 96.30999999999996, 
+          "average": 1.8884313725490196
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 125.97999999999998, 
-          "average": 2.5710204081632653
+          "count": 51, 
+          "sum": 130.68999999999997, 
+          "average": 2.562549019607843
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 124.32999999999998, 
-          "average": 2.4866
+          "count": 51, 
+          "sum": 126.94999999999999, 
+          "average": 2.48921568627451
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 105.75, 
-          "average": 2.1581632653061225
+          "count": 51, 
+          "sum": 111.16, 
+          "average": 2.179607843137255
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 114.00999999999999, 
-          "average": 2.326734693877551
+          "count": 51, 
+          "sum": 119.07, 
+          "average": 2.3347058823529414
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 95.51, 
-          "average": 1.949183673469388
+          "count": 51, 
+          "sum": 100.37000000000002, 
+          "average": 1.9680392156862745
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 100.61000000000001, 
-          "average": 2.053265306122449
+          "count": 51, 
+          "sum": 105.75000000000001, 
+          "average": 2.073529411764706
         }
       }, 
       "drugs.[0].Rates.Marijuana.Used Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 759.9700000000001, 
-          "average": 16.169574468085106
+          "count": 51, 
+          "sum": 823.89, 
+          "average": 16.154705882352943
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 744.2600000000001, 
-          "average": 15.83531914893617
+          "count": 51, 
+          "sum": 807.86, 
+          "average": 15.840392156862745
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 715.7599999999999, 
-          "average": 14.911666666666667
+          "count": 51, 
+          "sum": 759.7999999999997, 
+          "average": 14.898039215686273
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 712.26, 
-          "average": 14.53591836734694
+          "count": 51, 
+          "sum": 743.7700000000001, 
+          "average": 14.583725490196079
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 728.5499999999997, 
-          "average": 15.501063829787233
+          "count": 51, 
+          "sum": 791.8499999999998, 
+          "average": 15.526470588235295
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 732.09, 
-          "average": 15.251875
+          "count": 51, 
+          "sum": 775.82, 
+          "average": 15.212156862745099
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 629.3499999999999, 
-          "average": 13.111458333333333
+          "count": 51, 
+          "sum": 681.9699999999999, 
+          "average": 13.371960784313726
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 695.7300000000001, 
-          "average": 14.198571428571428
+          "count": 51, 
+          "sum": 727.7600000000002, 
+          "average": 14.269803921568627
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 695.8500000000001, 
-          "average": 13.917
+          "count": 51, 
+          "sum": 711.7300000000001, 
+          "average": 13.955490196078431
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 682.7599999999999, 
-          "average": 13.933877551020409
+          "count": 51, 
+          "sum": 712.4199999999998, 
+          "average": 13.969019607843137
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 680.9699999999999, 
-          "average": 13.897346938775511
+          "count": 51, 
+          "sum": 712.0699999999999, 
+          "average": 13.962156862745099
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 664.4399999999999, 
-          "average": 13.56
+          "count": 51, 
+          "sum": 695.74, 
+          "average": 13.641960784313726
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 673.5500000000001, 
-          "average": 13.745918367346938
+          "count": 51, 
+          "sum": 704.0300000000001, 
+          "average": 13.804509803921569
         }
       }, 
       "drugs.[0].Totals.Tobacco.Use Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 1167597, 
-          "average": 24842.489361702126
+          "count": 51, 
+          "sum": 1430581, 
+          "average": 28050.607843137255
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1165990, 
-          "average": 24808.297872340427
+          "count": 51, 
+          "sum": 1430084, 
+          "average": 28040.86274509804
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1164448, 
-          "average": 24259.333333333332
+          "count": 51, 
+          "sum": 1426294, 
+          "average": 27966.549019607843
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1273358, 
-          "average": 25986.897959183672
+          "count": 51, 
+          "sum": 1424269, 
+          "average": 27926.843137254902
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1164064, 
-          "average": 24767.31914893617
+          "count": 51, 
+          "sum": 1429201, 
+          "average": 28023.549019607843
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1167015, 
-          "average": 24312.8125
+          "count": 51, 
+          "sum": 1427939, 
+          "average": 27998.803921568626
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1105995, 
-          "average": 23041.5625
+          "count": 51, 
+          "sum": 1256094, 
+          "average": 24629.29411764706
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1269972, 
-          "average": 25917.79591836735
+          "count": 51, 
+          "sum": 1421865, 
+          "average": 27879.70588235294
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1269827, 
-          "average": 25396.54
+          "count": 51, 
+          "sum": 1419068, 
+          "average": 27824.86274509804
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1194097, 
-          "average": 24369.326530612245
+          "count": 51, 
+          "sum": 1334997, 
+          "average": 26176.41176470588
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1230317, 
-          "average": 25108.51020408163
+          "count": 51, 
+          "sum": 1377242, 
+          "average": 27004.745098039217
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1168992, 
-          "average": 23856.979591836734
+          "count": 51, 
+          "sum": 1302492, 
+          "average": 25539.058823529413
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1181763, 
-          "average": 24117.61224489796
+          "count": 51, 
+          "sum": 1319011, 
+          "average": 25862.960784313724
         }
       }, 
       "drugs.[0].Totals.Marijuana.New Users.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 131083, 
-          "average": 2789.0
+          "count": 51, 
+          "sum": 163284, 
+          "average": 3201.6470588235293
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 129305, 
-          "average": 2751.1702127659573
+          "count": 51, 
+          "sum": 162050, 
+          "average": 3177.450980392157
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 124508, 
-          "average": 2593.9166666666665
+          "count": 51, 
+          "sum": 158226, 
+          "average": 3102.470588235294
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 135158, 
-          "average": 2758.326530612245
+          "count": 51, 
+          "sum": 156911, 
+          "average": 3076.6862745098038
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 127500, 
-          "average": 2712.7659574468084
+          "count": 51, 
+          "sum": 160791, 
+          "average": 3152.764705882353
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 126378, 
-          "average": 2632.875
+          "count": 51, 
+          "sum": 159523, 
+          "average": 3127.901960784314
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 103894, 
-          "average": 2164.4583333333335
+          "count": 51, 
+          "sum": 123393, 
+          "average": 2419.470588235294
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 133105, 
-          "average": 2716.4285714285716
+          "count": 51, 
+          "sum": 155573, 
+          "average": 3050.450980392157
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 131308, 
-          "average": 2626.16
+          "count": 51, 
+          "sum": 154219, 
+          "average": 3023.901960784314
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 112193, 
-          "average": 2289.6530612244896
+          "count": 51, 
+          "sum": 130693, 
+          "average": 2562.607843137255
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 121522, 
-          "average": 2480.0408163265306
+          "count": 51, 
+          "sum": 142337, 
+          "average": 2790.921568627451
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 110393, 
-          "average": 2252.918367346939
+          "count": 51, 
+          "sum": 126993, 
+          "average": 2490.0588235294117
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 111293, 
-          "average": 2271.285714285714
+          "count": 51, 
+          "sum": 128833, 
+          "average": 2526.1372549019607
         }
       }, 
       "drugs.[0].Rates.Marijuana.Used Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 401.28, 
-          "average": 8.537872340425531
+          "count": 51, 
+          "sum": 434.81999999999994, 
+          "average": 8.525882352941176
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 393.1099999999999, 
-          "average": 8.36404255319149
+          "count": 51, 
+          "sum": 426.71999999999986, 
+          "average": 8.367058823529412
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 379.13, 
-          "average": 7.898541666666667
+          "count": 51, 
+          "sum": 402.27, 
+          "average": 7.8876470588235295
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 377.07000000000005, 
-          "average": 7.695306122448979
+          "count": 51, 
+          "sum": 394.17000000000013, 
+          "average": 7.728823529411765
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 384.9200000000001, 
-          "average": 8.189787234042553
+          "count": 51, 
+          "sum": 418.6000000000001, 
+          "average": 8.207843137254903
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 387.7700000000001, 
-          "average": 8.078541666666666
+          "count": 51, 
+          "sum": 410.5000000000001, 
+          "average": 8.049019607843137
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 337.80999999999995, 
-          "average": 7.037708333333334
+          "count": 51, 
+          "sum": 367.38, 
+          "average": 7.2035294117647055
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 368.53999999999996, 
-          "average": 7.521224489795919
+          "count": 51, 
+          "sum": 386.05, 
+          "average": 7.5696078431372555
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 369.3499999999999, 
-          "average": 7.3870000000000005
+          "count": 51, 
+          "sum": 377.94999999999993, 
+          "average": 7.41078431372549
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 373.2400000000001, 
-          "average": 7.617142857142857
+          "count": 51, 
+          "sum": 390.22000000000014, 
+          "average": 7.651372549019609
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 366.62, 
-          "average": 7.48204081632653
+          "count": 51, 
+          "sum": 384.06, 
+          "average": 7.530588235294117
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 352.80999999999995, 
-          "average": 7.200204081632653
+          "count": 51, 
+          "sum": 369.1199999999999, 
+          "average": 7.237647058823529
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 363.02, 
-          "average": 7.408571428571428
+          "count": 51, 
+          "sum": 379.67, 
+          "average": 7.444509803921569
         }
       }, 
       "drugs.[0].Totals.Tobacco.Perceptions of Risk.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 1605266, 
-          "average": 34154.59574468085
+          "count": 51, 
+          "sum": 2086584, 
+          "average": 40913.41176470588
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1622177, 
-          "average": 34514.40425531915
+          "count": 51, 
+          "sum": 2108748, 
+          "average": 41348.0
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1679439, 
-          "average": 34988.3125
+          "count": 51, 
+          "sum": 2175102, 
+          "average": 42649.05882352941
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1882634, 
-          "average": 38421.102040816324
+          "count": 51, 
+          "sum": 2197188, 
+          "average": 43082.117647058825
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1639090, 
-          "average": 34874.255319148935
+          "count": 51, 
+          "sum": 2130885, 
+          "average": 41782.05882352941
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1662507, 
-          "average": 34635.5625
+          "count": 51, 
+          "sum": 2153008, 
+          "average": 42215.8431372549
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1952395, 
-          "average": 40674.895833333336
+          "count": 51, 
+          "sum": 2315895, 
+          "average": 45409.705882352944
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1901952, 
-          "average": 38815.34693877551
+          "count": 51, 
+          "sum": 2219245, 
+          "average": 43514.60784313725
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1928367, 
-          "average": 38567.34
+          "count": 51, 
+          "sum": 2241276, 
+          "average": 43946.58823529412
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1952593, 
-          "average": 39848.836734693876
+          "count": 51, 
+          "sum": 2282293, 
+          "average": 44750.8431372549
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1936911, 
-          "average": 39528.795918367345
+          "count": 51, 
+          "sum": 2261748, 
+          "average": 44348.0
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1970192, 
-          "average": 40208.0
+          "count": 51, 
+          "sum": 2300792, 
+          "average": 45113.56862745098
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1961475, 
-          "average": 40030.102040816324
+          "count": 51, 
+          "sum": 2291649, 
+          "average": 44934.294117647056
         }
       }, 
       "drugs.[0].Totals.Marijuana.Perceptions of Risk.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 584316, 
-          "average": 12432.255319148937
+          "count": 51, 
+          "sum": 772090, 
+          "average": 15139.019607843138
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 573089, 
-          "average": 12193.382978723404
+          "count": 51, 
+          "sum": 758084, 
+          "average": 14864.392156862745
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 538653, 
-          "average": 11221.9375
+          "count": 51, 
+          "sum": 712922, 
+          "average": 13978.862745098038
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 601733, 
-          "average": 12280.265306122448
+          "count": 51, 
+          "sum": 696810, 
+          "average": 13662.941176470587
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 561479, 
-          "average": 11946.36170212766
+          "count": 51, 
+          "sum": 743560, 
+          "average": 14579.607843137255
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 551091, 
-          "average": 11481.0625
+          "count": 51, 
+          "sum": 728499, 
+          "average": 14284.29411764706
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 425995, 
-          "average": 8874.895833333334
+          "count": 51, 
+          "sum": 495795, 
+          "average": 9721.470588235294
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 587340, 
-          "average": 11986.530612244898
+          "count": 51, 
+          "sum": 680171, 
+          "average": 13336.686274509804
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 574076, 
-          "average": 11481.52
+          "count": 51, 
+          "sum": 663013, 
+          "average": 13000.254901960785
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 517694, 
-          "average": 10565.183673469388
+          "count": 51, 
+          "sum": 598094, 
+          "average": 11727.333333333334
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 545240, 
-          "average": 11127.34693877551
+          "count": 51, 
+          "sum": 630733, 
+          "average": 12367.313725490196
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 472693, 
-          "average": 9646.795918367347
+          "count": 51, 
+          "sum": 547893, 
+          "average": 10743.0
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 495380, 
-          "average": 10109.795918367347
+          "count": 51, 
+          "sum": 573210, 
+          "average": 11239.411764705883
         }
       }, 
       "drugs.[0].Population.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 19594242, 
-          "average": 416898.7659574468
+          "count": 51, 
+          "sum": 24799277, 
+          "average": 486260.3333333333
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 19687749, 
-          "average": 418888.27659574465
+          "count": 51, 
+          "sum": 24961002, 
+          "average": 489431.4117647059
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 20049956, 
-          "average": 417707.4166666667
+          "count": 51, 
+          "sum": 25446246, 
+          "average": 498946.0
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 22313470, 
-          "average": 455376.9387755102
+          "count": 51, 
+          "sum": 25607995, 
+          "average": 502117.54901960783
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 19781279, 
-          "average": 420878.27659574465
+          "count": 51, 
+          "sum": 25122751, 
+          "average": 492602.96078431373
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 19957336, 
-          "average": 415777.8333333333
+          "count": 51, 
+          "sum": 25284500, 
+          "average": 495774.50980392157
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 21572280, 
-          "average": 449422.5
+          "count": 51, 
+          "sum": 25136411, 
+          "average": 492870.8039215686
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 22438544, 
-          "average": 457929.4693877551
+          "count": 51, 
+          "sum": 25769744, 
+          "average": 505289.09803921566
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 22601373, 
-          "average": 452027.46
+          "count": 51, 
+          "sum": 25931513, 
+          "average": 508461.03921568627
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 22119762, 
-          "average": 451423.71428571426
+          "count": 51, 
+          "sum": 25383465, 
+          "average": 497715.0
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 22341685, 
-          "average": 455952.7551020408
+          "count": 51, 
+          "sum": 25657474, 
+          "average": 503087.7254901961
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 21971869, 
-          "average": 448405.48979591834
+          "count": 51, 
+          "sum": 25153159, 
+          "average": 493199.1960784314
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 22045801, 
-          "average": 449914.306122449
+          "count": 51, 
+          "sum": 25268297, 
+          "average": 495456.8039215686
         }
       }, 
       "drugs.[0].Totals.Alcohol.Perceptions of Risk.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 749454, 
-          "average": 15945.829787234043
+          "count": 51, 
+          "sum": 951004, 
+          "average": 18647.13725490196
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 757464, 
-          "average": 16116.255319148937
+          "count": 51, 
+          "sum": 963118, 
+          "average": 18884.666666666668
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 784362, 
-          "average": 16340.875
+          "count": 51, 
+          "sum": 999899, 
+          "average": 19605.86274509804
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 880481, 
-          "average": 17969.0
+          "count": 51, 
+          "sum": 1012306, 
+          "average": 19849.13725490196
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 765508, 
-          "average": 16287.404255319148
+          "count": 51, 
+          "sum": 975305, 
+          "average": 19123.62745098039
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 776265, 
-          "average": 16172.1875
+          "count": 51, 
+          "sum": 987566, 
+          "average": 19364.039215686276
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 833993, 
-          "average": 17374.854166666668
+          "count": 51, 
+          "sum": 972492, 
+          "average": 19068.470588235294
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 890714, 
-          "average": 18177.836734693876
+          "count": 51, 
+          "sum": 1024782, 
+          "average": 20093.764705882353
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 902728, 
-          "average": 18054.56
+          "count": 51, 
+          "sum": 1037332, 
+          "average": 20339.843137254902
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 872393, 
-          "average": 17803.938775510203
+          "count": 51, 
+          "sum": 1003392, 
+          "average": 19674.352941176472
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 886552, 
-          "average": 18092.897959183672
+          "count": 51, 
+          "sum": 1020205, 
+          "average": 20004.019607843136
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 855293, 
-          "average": 17454.95918367347
+          "count": 51, 
+          "sum": 980493, 
+          "average": 19225.352941176472
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 863861, 
-          "average": 17629.816326530614
+          "count": 51, 
+          "sum": 991944, 
+          "average": 19449.882352941175
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Abuse Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 267.49, 
-          "average": 5.691276595744681
+          "count": 51, 
+          "sum": 295.41999999999996, 
+          "average": 5.7925490196078435
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 273.09, 
-          "average": 5.810425531914893
+          "count": 51, 
+          "sum": 301.39, 
+          "average": 5.9096078431372545
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 297.91999999999996, 
-          "average": 6.206666666666667
+          "count": 51, 
+          "sum": 319.38999999999993, 
+          "average": 6.262549019607843
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 308.46000000000004, 
-          "average": 6.295102040816326
+          "count": 51, 
+          "sum": 325.36, 
+          "average": 6.379607843137255
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 278.75999999999993, 
-          "average": 5.931063829787234
+          "count": 51, 
+          "sum": 307.43, 
+          "average": 6.028039215686275
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 292.26000000000005, 
-          "average": 6.08875
+          "count": 51, 
+          "sum": 313.40000000000003, 
+          "average": 6.145098039215686
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 366.99000000000007, 
-          "average": 7.645625
+          "count": 51, 
+          "sum": 403.7900000000001, 
+          "average": 7.917450980392157
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 314.25, 
-          "average": 6.413265306122449
+          "count": 51, 
+          "sum": 331.40000000000003, 
+          "average": 6.498039215686274
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 329.55000000000007, 
-          "average": 6.591
+          "count": 51, 
+          "sum": 337.37, 
+          "average": 6.615098039215686
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 333.99, 
-          "average": 6.816122448979592
+          "count": 51, 
+          "sum": 353.36, 
+          "average": 6.928627450980392
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 326.91999999999996, 
-          "average": 6.671836734693878
+          "count": 51, 
+          "sum": 345.32, 
+          "average": 6.770980392156862
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 349.27000000000004, 
-          "average": 7.127959183673469
+          "count": 51, 
+          "sum": 370.72, 
+          "average": 7.269019607843137
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 341.6400000000001, 
-          "average": 6.972244897959183
+          "count": 51, 
+          "sum": 362.05000000000007, 
+          "average": 7.099019607843138
         }
       }, 
       "drugs.[0].Totals.Marijuana.Used Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 161435, 
-          "average": 3434.7872340425533
+          "count": 51, 
+          "sum": 199100, 
+          "average": 3903.921568627451
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 159496, 
-          "average": 3393.531914893617
+          "count": 51, 
+          "sum": 198068, 
+          "average": 3883.6862745098038
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 154421, 
-          "average": 3217.1041666666665
+          "count": 51, 
+          "sum": 194914, 
+          "average": 3821.843137254902
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 166378, 
-          "average": 3395.469387755102
+          "count": 51, 
+          "sum": 193841, 
+          "average": 3800.8039215686276
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 157532, 
-          "average": 3351.744680851064
+          "count": 51, 
+          "sum": 197023, 
+          "average": 3863.1960784313724
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 156464, 
-          "average": 3259.6666666666665
+          "count": 51, 
+          "sum": 195977, 
+          "average": 3842.6862745098038
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 147191, 
-          "average": 3066.4791666666665
+          "count": 51, 
+          "sum": 179491, 
+          "average": 3519.4313725490197
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 164538, 
-          "average": 3357.918367346939
+          "count": 51, 
+          "sum": 192760, 
+          "average": 3779.607843137255
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 163030, 
-          "average": 3260.6
+          "count": 51, 
+          "sum": 191669, 
+          "average": 3758.2156862745096
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 160394, 
-          "average": 3273.3469387755104
+          "count": 51, 
+          "sum": 188594, 
+          "average": 3697.921568627451
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 161525, 
-          "average": 3296.4285714285716
+          "count": 51, 
+          "sum": 190120, 
+          "average": 3727.843137254902
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 153397, 
-          "average": 3130.5510204081634
+          "count": 51, 
+          "sum": 177997, 
+          "average": 3490.1372549019607
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 156877, 
-          "average": 3201.5714285714284
+          "count": 51, 
+          "sum": 183258, 
+          "average": 3593.294117647059
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Dependence Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 53.099999999999994, 
-          "average": 1.1297872340425532
+          "count": 51, 
+          "sum": 58.6, 
+          "average": 1.1490196078431374
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 53.85999999999999, 
-          "average": 1.1459574468085105
+          "count": 51, 
+          "sum": 59.399999999999984, 
+          "average": 1.1647058823529413
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 57.329999999999984, 
-          "average": 1.194375
+          "count": 51, 
+          "sum": 61.83999999999999, 
+          "average": 1.212549019607843
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 59.21, 
-          "average": 1.2083673469387755
+          "count": 51, 
+          "sum": 62.64, 
+          "average": 1.228235294117647
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 54.58999999999999, 
-          "average": 1.1614893617021278
+          "count": 51, 
+          "sum": 60.160000000000004, 
+          "average": 1.1796078431372548
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 56.47, 
-          "average": 1.1764583333333334
+          "count": 51, 
+          "sum": 60.96, 
+          "average": 1.1952941176470588
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 64.41, 
-          "average": 1.341875
+          "count": 51, 
+          "sum": 69.32, 
+          "average": 1.35921568627451
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 59.989999999999995, 
-          "average": 1.2242857142857144
+          "count": 51, 
+          "sum": 63.4, 
+          "average": 1.2431372549019608
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 62.93, 
-          "average": 1.2586
+          "count": 51, 
+          "sum": 64.2, 
+          "average": 1.2588235294117647
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 58.18000000000001, 
-          "average": 1.1873469387755102
+          "count": 51, 
+          "sum": 61.64000000000001, 
+          "average": 1.2086274509803923
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 59.449999999999996, 
-          "average": 1.213265306122449
+          "count": 51, 
+          "sum": 62.879999999999995, 
+          "average": 1.2329411764705882
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 63.960000000000015, 
-          "average": 1.3053061224489797
+          "count": 51, 
+          "sum": 67.66000000000003, 
+          "average": 1.3266666666666667
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 61.029999999999994, 
-          "average": 1.2455102040816326
+          "count": 51, 
+          "sum": 64.61, 
+          "average": 1.2668627450980392
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Abuse Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 812400, 
-          "average": 17285.106382978724
+          "count": 51, 
+          "sum": 1021917, 
+          "average": 20037.58823529412
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 836771, 
-          "average": 17803.63829787234
+          "count": 51, 
+          "sum": 1053227, 
+          "average": 20651.50980392157
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 916543, 
-          "average": 19094.645833333332
+          "count": 51, 
+          "sum": 1149587, 
+          "average": 22540.92156862745
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1011540, 
-          "average": 20643.673469387755
+          "count": 51, 
+          "sum": 1182514, 
+          "average": 23186.549019607843
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 861439, 
-          "average": 18328.489361702126
+          "count": 51, 
+          "sum": 1084939, 
+          "average": 21273.313725490196
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 891177, 
-          "average": 18566.1875
+          "count": 51, 
+          "sum": 1117062, 
+          "average": 21903.176470588234
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1309595, 
-          "average": 27283.229166666668
+          "count": 51, 
+          "sum": 1592795, 
+          "average": 31231.274509803923
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1039870, 
-          "average": 21221.836734693876
+          "count": 51, 
+          "sum": 1215858, 
+          "average": 23840.352941176472
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1072170, 
-          "average": 21443.4
+          "count": 51, 
+          "sum": 1249605, 
+          "average": 24502.058823529413
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1129398, 
-          "average": 23048.938775510203
+          "count": 51, 
+          "sum": 1334298, 
+          "average": 26162.70588235294
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1098856, 
-          "average": 22425.632653061224
+          "count": 51, 
+          "sum": 1291716, 
+          "average": 25327.764705882353
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1229295, 
-          "average": 25087.65306122449
+          "count": 51, 
+          "sum": 1449294, 
+          "average": 28417.529411764706
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1178848, 
-          "average": 24058.122448979593
+          "count": 51, 
+          "sum": 1391227, 
+          "average": 27278.960784313724
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Need Treatment Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 213875, 
-          "average": 4550.531914893617
+          "count": 51, 
+          "sum": 268067, 
+          "average": 5256.21568627451
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 216331, 
-          "average": 4602.787234042553
+          "count": 51, 
+          "sum": 271772, 
+          "average": 5328.862745098039
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 224444, 
-          "average": 4675.916666666667
+          "count": 51, 
+          "sum": 282855, 
+          "average": 5546.176470588235
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 246063, 
-          "average": 5021.693877551021
+          "count": 51, 
+          "sum": 286548, 
+          "average": 5618.588235294118
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 218767, 
-          "average": 4654.617021276596
+          "count": 51, 
+          "sum": 275470, 
+          "average": 5401.3725490196075
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 222044, 
-          "average": 4625.916666666667
+          "count": 51, 
+          "sum": 279166, 
+          "average": 5473.843137254902
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 271996, 
-          "average": 5666.583333333333
+          "count": 51, 
+          "sum": 315296, 
+          "average": 6182.274509803921
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 248977, 
-          "average": 5081.163265306122
+          "count": 51, 
+          "sum": 290231, 
+          "average": 5690.803921568628
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 252616, 
-          "average": 5052.32
+          "count": 51, 
+          "sum": 293911, 
+          "average": 5762.9607843137255
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 247098, 
-          "average": 5042.816326530612
+          "count": 51, 
+          "sum": 275696, 
+          "average": 5405.803921568628
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 249547, 
-          "average": 5092.7959183673465
+          "count": 51, 
+          "sum": 284953, 
+          "average": 5587.313725490196
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 269396, 
-          "average": 5497.877551020408
+          "count": 51, 
+          "sum": 303695, 
+          "average": 5954.803921568628
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 258141, 
-          "average": 5268.183673469388
+          "count": 51, 
+          "sum": 289554, 
+          "average": 5677.529411764706
         }
       }, 
       "drugs.[0].Rates.Pain Relievers Abuse Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 147.51000000000005, 
-          "average": 3.138510638297872
+          "count": 51, 
+          "sum": 160.1100000000001, 
+          "average": 3.1394117647058826
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 150.65999999999997, 
-          "average": 3.205531914893617
+          "count": 51, 
+          "sum": 163.45999999999998, 
+          "average": 3.2050980392156863
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 163.23, 
-          "average": 3.400625
+          "count": 51, 
+          "sum": 173.49999999999997, 
+          "average": 3.4019607843137254
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 169.77000000000004, 
-          "average": 3.4646938775510208
+          "count": 51, 
+          "sum": 176.85000000000005, 
+          "average": 3.467647058823529
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 153.8, 
-          "average": 3.2723404255319153
+          "count": 51, 
+          "sum": 166.82000000000002, 
+          "average": 3.2709803921568628
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 159.98, 
-          "average": 3.3329166666666663
+          "count": 51, 
+          "sum": 170.17000000000002, 
+          "average": 3.3366666666666664
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 154.60999999999996, 
-          "average": 3.221041666666667
+          "count": 51, 
+          "sum": 165.75999999999996, 
+          "average": 3.2501960784313724
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 173.05999999999997, 
-          "average": 3.5318367346938775
+          "count": 51, 
+          "sum": 180.21, 
+          "average": 3.533529411764706
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 179.74, 
-          "average": 3.5948
+          "count": 51, 
+          "sum": 183.55999999999997, 
+          "average": 3.5992156862745097
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 173.17000000000002, 
-          "average": 3.534081632653061
+          "count": 51, 
+          "sum": 180.72, 
+          "average": 3.543529411764706
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 174.78, 
-          "average": 3.566938775510204
+          "count": 51, 
+          "sum": 182.16, 
+          "average": 3.571764705882353
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 172.29000000000005, 
-          "average": 3.5161224489795915
+          "count": 51, 
+          "sum": 180.32000000000005, 
+          "average": 3.535686274509804
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 172.74999999999997, 
-          "average": 3.5255102040816326
+          "count": 51, 
+          "sum": 180.52999999999994, 
+          "average": 3.5398039215686277
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Abuse Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 556.68, 
-          "average": 11.844255319148937
+          "count": 51, 
+          "sum": 605.41, 
+          "average": 11.870784313725489
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 544.5699999999999, 
-          "average": 11.586595744680853
+          "count": 51, 
+          "sum": 592.9399999999999, 
+          "average": 11.626274509803922
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 521.5199999999999, 
-          "average": 10.865
+          "count": 51, 
+          "sum": 555.4699999999999, 
+          "average": 10.891568627450981
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 518.2499999999999, 
-          "average": 10.576530612244898
+          "count": 51, 
+          "sum": 543.0, 
+          "average": 10.647058823529411
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 532.4299999999998, 
-          "average": 11.328297872340425
+          "count": 51, 
+          "sum": 580.4299999999998, 
+          "average": 11.380980392156863
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 534.2099999999999, 
-          "average": 11.129375000000001
+          "count": 51, 
+          "sum": 567.96, 
+          "average": 11.136470588235294
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 422.17, 
-          "average": 8.795208333333333
+          "count": 51, 
+          "sum": 458.42, 
+          "average": 8.988627450980392
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 505.4, 
-          "average": 10.314285714285713
+          "count": 51, 
+          "sum": 530.49, 
+          "average": 10.401764705882353
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 506.10999999999996, 
-          "average": 10.1222
+          "count": 51, 
+          "sum": 518.02, 
+          "average": 10.157254901960783
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 474.55000000000007, 
-          "average": 9.684693877551021
+          "count": 51, 
+          "sum": 496.6000000000001, 
+          "average": 9.737254901960785
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 483.56, 
-          "average": 9.868571428571428
+          "count": 51, 
+          "sum": 507.30999999999995, 
+          "average": 9.947254901960784
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 452.86999999999995, 
-          "average": 9.242244897959184
+          "count": 51, 
+          "sum": 474.0199999999999, 
+          "average": 9.294509803921569
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 463.67000000000013, 
-          "average": 9.46265306122449
+          "count": 51, 
+          "sum": 485.28000000000014, 
+          "average": 9.51529411764706
         }
       }, 
       "drugs.[0].Rates.Alcohol.Use Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 2464.95, 
-          "average": 52.44574468085106
+          "count": 51, 
+          "sum": 2685.8999999999996, 
+          "average": 52.66470588235294
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 2482.4299999999994, 
-          "average": 52.81765957446808
+          "count": 51, 
+          "sum": 2704.7199999999993, 
+          "average": 53.033725490196076
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 2594.2999999999997, 
-          "average": 54.04791666666667
+          "count": 51, 
+          "sum": 2761.14, 
+          "average": 54.14
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 2664.010000000001, 
-          "average": 54.367551020408165
+          "count": 51, 
+          "sum": 2779.960000000001, 
+          "average": 54.509019607843136
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 2499.8800000000006, 
-          "average": 53.18893617021277
+          "count": 51, 
+          "sum": 2723.52, 
+          "average": 53.40235294117647
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 2576.2600000000007, 
-          "average": 53.672083333333326
+          "count": 51, 
+          "sum": 2742.3400000000006, 
+          "average": 53.77137254901961
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 2702.36, 
-          "average": 56.29916666666667
+          "count": 51, 
+          "sum": 2894.43, 
+          "average": 56.7535294117647
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 2682.3900000000003, 
-          "average": 54.74265306122449
+          "count": 51, 
+          "sum": 2798.76, 
+          "average": 54.877647058823534
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 2764.310000000001, 
-          "average": 55.2862
+          "count": 51, 
+          "sum": 2817.5800000000017, 
+          "average": 55.24666666666666
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 2753.9300000000003, 
-          "average": 56.20265306122449
+          "count": 51, 
+          "sum": 2874.7599999999998, 
+          "average": 56.36784313725491
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 2727.38, 
-          "average": 55.660816326530615
+          "count": 51, 
+          "sum": 2846.19, 
+          "average": 55.807647058823534
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 2759.1200000000003, 
-          "average": 56.308571428571426
+          "count": 51, 
+          "sum": 2878.98, 
+          "average": 56.45058823529412
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 2756.540000000001, 
-          "average": 56.255918367346936
+          "count": 51, 
+          "sum": 2876.8900000000012, 
+          "average": 56.40960784313725
         }
       }, 
       "drugs.[0].Rates.Alcohol.Perceptions of Risk.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 2021.7799999999997, 
-          "average": 43.01659574468085
+          "count": 51, 
+          "sum": 2203.0199999999995, 
+          "average": 43.19647058823529
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 2023.3899999999996, 
-          "average": 43.05085106382979
+          "count": 51, 
+          "sum": 2203.8599999999997, 
+          "average": 43.21294117647059
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 2067.08, 
-          "average": 43.064166666666665
+          "count": 51, 
+          "sum": 2206.4, 
+          "average": 43.26274509803922
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 2115.32, 
-          "average": 43.16979591836735
+          "count": 51, 
+          "sum": 2207.2400000000002, 
+          "average": 43.279215686274505
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 2025.0199999999998, 
-          "average": 43.085531914893615
+          "count": 51, 
+          "sum": 2204.7400000000002, 
+          "average": 43.230196078431376
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 2065.53, 
-          "average": 43.03187500000001
+          "count": 51, 
+          "sum": 2205.5799999999995, 
+          "average": 43.24666666666666
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1969.4199999999998, 
-          "average": 41.029583333333335
+          "count": 51, 
+          "sum": 2096.48, 
+          "average": 41.10745098039216
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 2116.86, 
-          "average": 43.20122448979592
+          "count": 51, 
+          "sum": 2208.1200000000003, 
+          "average": 43.296470588235294
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 2161.3200000000006, 
-          "average": 43.226400000000005
+          "count": 51, 
+          "sum": 2208.9600000000005, 
+          "average": 43.31294117647059
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 2078.5, 
-          "average": 42.41836734693877
+          "count": 51, 
+          "sum": 2170.620000000001, 
+          "average": 42.56117647058824
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 2098.41, 
-          "average": 42.82469387755102
+          "count": 51, 
+          "sum": 2189.77, 
+          "average": 42.93666666666667
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 2048.27, 
-          "average": 41.80142857142857
+          "count": 51, 
+          "sum": 2138.48, 
+          "average": 41.93098039215686
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 2063.3200000000006, 
-          "average": 42.10857142857143
+          "count": 51, 
+          "sum": 2154.4900000000002, 
+          "average": 42.24490196078431
         }
       }, 
       "drugs.[0].Rates.Tobacco.Use Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 769.7599999999999, 
-          "average": 16.377872340425533
+          "count": 51, 
+          "sum": 823.12, 
+          "average": 16.139607843137256
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 741.97, 
-          "average": 15.786595744680852
+          "count": 51, 
+          "sum": 794.05, 
+          "average": 15.569607843137254
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 677.0600000000002, 
-          "average": 14.105416666666665
+          "count": 51, 
+          "sum": 706.8900000000002, 
+          "average": 13.860588235294117
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 659.5, 
-          "average": 13.459183673469388
+          "count": 51, 
+          "sum": 677.8199999999999, 
+          "average": 13.290588235294118
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 714.1599999999999, 
-          "average": 15.194893617021275
+          "count": 51, 
+          "sum": 764.9499999999999, 
+          "average": 14.999019607843138
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 705.4600000000002, 
-          "average": 14.697083333333333
+          "count": 51, 
+          "sum": 735.8800000000001, 
+          "average": 14.429019607843138
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 402.25, 
-          "average": 8.380208333333334
+          "count": 51, 
+          "sum": 421.87999999999994, 
+          "average": 8.272156862745097
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 630.5, 
-          "average": 12.86734693877551
+          "count": 51, 
+          "sum": 648.7199999999998, 
+          "average": 12.72
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 610.5900000000001, 
-          "average": 12.2118
+          "count": 51, 
+          "sum": 619.6500000000002, 
+          "average": 12.15
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 504.0600000000001, 
-          "average": 10.286938775510205
+          "count": 51, 
+          "sum": 516.0300000000001, 
+          "average": 10.118235294117646
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 552.7900000000001, 
-          "average": 11.28142857142857
+          "count": 51, 
+          "sum": 567.85, 
+          "average": 11.134313725490196
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 448.7, 
-          "average": 9.157142857142857
+          "count": 51, 
+          "sum": 460.06, 
+          "average": 9.02078431372549
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 476.3899999999999, 
-          "average": 9.722244897959184
+          "count": 51, 
+          "sum": 488.0499999999999, 
+          "average": 9.569607843137256
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Need Treatment Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 69.63000000000001, 
-          "average": 1.4814893617021276
+          "count": 51, 
+          "sum": 76.09, 
+          "average": 1.4919607843137255
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 69.47, 
-          "average": 1.4780851063829787
+          "count": 51, 
+          "sum": 75.92999999999999, 
+          "average": 1.4888235294117649
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 70.46000000000001, 
-          "average": 1.4679166666666665
+          "count": 51, 
+          "sum": 75.52999999999999, 
+          "average": 1.4809803921568627
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 71.64000000000001, 
-          "average": 1.4620408163265306
+          "count": 51, 
+          "sum": 75.37, 
+          "average": 1.4778431372549021
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 69.34, 
-          "average": 1.4753191489361703
+          "count": 51, 
+          "sum": 75.8, 
+          "average": 1.4862745098039216
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 70.6, 
-          "average": 1.4708333333333332
+          "count": 51, 
+          "sum": 75.64, 
+          "average": 1.4831372549019608
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 74.45999999999998, 
-          "average": 1.5512499999999998
+          "count": 51, 
+          "sum": 79.87999999999997, 
+          "average": 1.5662745098039215
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 71.48999999999998, 
-          "average": 1.4589795918367345
+          "count": 51, 
+          "sum": 75.24, 
+          "average": 1.4752941176470586
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 73.26000000000003, 
-          "average": 1.4652
+          "count": 51, 
+          "sum": 75.08000000000001, 
+          "average": 1.472156862745098
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 68.89999999999999, 
-          "average": 1.406122448979592
+          "count": 51, 
+          "sum": 72.58999999999999, 
+          "average": 1.4233333333333333
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 70.14, 
-          "average": 1.4314285714285715
+          "count": 51, 
+          "sum": 73.85999999999999, 
+          "average": 1.448235294117647
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 74.01, 
-          "average": 1.5104081632653061
+          "count": 51, 
+          "sum": 77.76000000000002, 
+          "average": 1.5247058823529414
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 71.42999999999999, 
-          "average": 1.4577551020408164
+          "count": 51, 
+          "sum": 75.14999999999999, 
+          "average": 1.473529411764706
         }
       }, 
       "drugs.[0].Population.12-20": {
         "2002": {
-          "count": 47, 
-          "sum": 29464383, 
-          "average": 626901.7659574468
+          "count": 51, 
+          "sum": 37293478, 
+          "average": 731244.6666666666
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 29641904, 
-          "average": 630678.8085106383
+          "count": 51, 
+          "sum": 37570695, 
+          "average": 736680.2941176471
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 30298004, 
-          "average": 631208.4166666666
+          "count": 51, 
+          "sum": 38402408, 
+          "average": 752988.3921568628
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 33715910, 
-          "average": 688079.7959183673
+          "count": 51, 
+          "sum": 38679648, 
+          "average": 758424.4705882353
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 29819443, 
-          "average": 634456.2340425532
+          "count": 51, 
+          "sum": 37847932, 
+          "average": 742116.3137254902
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 30121516, 
-          "average": 627531.5833333334
+          "count": 51, 
+          "sum": 38125172, 
+          "average": 747552.3921568628
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 32778753, 
-          "average": 682890.6875
+          "count": 51, 
+          "sum": 38190250, 
+          "average": 748828.431372549
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 33933671, 
-          "average": 692523.8979591837
+          "count": 51, 
+          "sum": 38956885, 
+          "average": 763860.4901960784
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 34225824, 
-          "average": 684516.48
+          "count": 51, 
+          "sum": 39234145, 
+          "average": 769296.9607843137
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 33920304, 
-          "average": 692251.1020408163
+          "count": 51, 
+          "sum": 38917279, 
+          "average": 763083.9019607843
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 34035865, 
-          "average": 694609.4897959183
+          "count": 51, 
+          "sum": 39075697, 
+          "average": 766190.1372549019
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 33551470, 
-          "average": 684723.8775510204
+          "count": 51, 
+          "sum": 38391534, 
+          "average": 752775.1764705882
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 33735874, 
-          "average": 688487.224489796
+          "count": 51, 
+          "sum": 38654393, 
+          "average": 757929.274509804
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Need Treatment Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 239.96999999999989, 
-          "average": 5.105744680851064
+          "count": 51, 
+          "sum": 259.66999999999996, 
+          "average": 5.091568627450981
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 233.79999999999995, 
-          "average": 4.974468085106383
+          "count": 51, 
+          "sum": 253.12999999999994, 
+          "average": 4.963333333333333
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 220.68999999999997, 
-          "average": 4.597708333333333
+          "count": 51, 
+          "sum": 233.50999999999996, 
+          "average": 4.578627450980392
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 218.58, 
-          "average": 4.460816326530613
+          "count": 51, 
+          "sum": 226.97000000000003, 
+          "average": 4.450392156862745
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 227.65000000000003, 
-          "average": 4.843617021276596
+          "count": 51, 
+          "sum": 246.61999999999998, 
+          "average": 4.835686274509804
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 227.13999999999996, 
-          "average": 4.732083333333333
+          "count": 51, 
+          "sum": 240.07999999999998, 
+          "average": 4.707450980392157
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 149.35999999999996, 
-          "average": 3.111666666666667
+          "count": 51, 
+          "sum": 160.1599999999999, 
+          "average": 3.140392156862745
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 212.04999999999995, 
-          "average": 4.327551020408164
+          "count": 51, 
+          "sum": 220.45999999999995, 
+          "average": 4.322745098039216
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 209.04999999999995, 
-          "average": 4.181
+          "count": 51, 
+          "sum": 213.91999999999996, 
+          "average": 4.1945098039215685
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 184.56999999999996, 
-          "average": 3.766734693877551
+          "count": 51, 
+          "sum": 192.11999999999995, 
+          "average": 3.767058823529412
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 195.06, 
-          "average": 3.9808163265306122
+          "count": 51, 
+          "sum": 203.04, 
+          "average": 3.981176470588235
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 163.12000000000003, 
-          "average": 3.3289795918367346
+          "count": 51, 
+          "sum": 169.92000000000002, 
+          "average": 3.3317647058823527
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 173.79999999999998, 
-          "average": 3.5469387755102044
+          "count": 51, 
+          "sum": 180.97999999999996, 
+          "average": 3.548627450980392
         }
       }, 
       "drugs.[0].Rates.Alcohol.Need Treatment Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 272.5400000000001, 
-          "average": 5.79872340425532
+          "count": 51, 
+          "sum": 300.00999999999993, 
+          "average": 5.882549019607843
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 271.89000000000004, 
-          "average": 5.784893617021276
+          "count": 51, 
+          "sum": 299.28999999999996, 
+          "average": 5.86843137254902
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 277.06000000000006, 
-          "average": 5.772083333333334
+          "count": 51, 
+          "sum": 297.06, 
+          "average": 5.824705882352942
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 281.88000000000005, 
-          "average": 5.75265306122449
+          "count": 51, 
+          "sum": 296.34000000000003, 
+          "average": 5.810588235294117
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 271.21, 
-          "average": 5.770425531914893
+          "count": 51, 
+          "sum": 298.5199999999999, 
+          "average": 5.853333333333333
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 277.85999999999996, 
-          "average": 5.78875
+          "count": 51, 
+          "sum": 297.7999999999999, 
+          "average": 5.83921568627451
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 270.09000000000003, 
-          "average": 5.626874999999999
+          "count": 51, 
+          "sum": 290.85999999999996, 
+          "average": 5.703137254901961
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 281.0, 
-          "average": 5.73469387755102
+          "count": 51, 
+          "sum": 295.56999999999994, 
+          "average": 5.795490196078431
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 288.22999999999996, 
-          "average": 5.764600000000001
+          "count": 51, 
+          "sum": 294.8499999999999, 
+          "average": 5.781372549019609
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 273.56000000000006, 
-          "average": 5.582857142857143
+          "count": 51, 
+          "sum": 289.44000000000005, 
+          "average": 5.675294117647058
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 276.9, 
-          "average": 5.651020408163265
+          "count": 51, 
+          "sum": 292.19, 
+          "average": 5.72921568627451
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 280.46999999999997, 
-          "average": 5.723877551020409
+          "count": 51, 
+          "sum": 296.98, 
+          "average": 5.823137254901961
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 277.0300000000001, 
-          "average": 5.653673469387755
+          "count": 51, 
+          "sum": 293.2200000000001, 
+          "average": 5.749411764705883
         }
       }, 
       "drugs.[0].Totals.Marijuana.Used Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 577102, 
-          "average": 12278.765957446809
+          "count": 51, 
+          "sum": 716610, 
+          "average": 14051.176470588236
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 595480, 
-          "average": 12669.787234042553
+          "count": 51, 
+          "sum": 742271, 
+          "average": 14554.333333333334
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 656337, 
-          "average": 13673.6875
+          "count": 51, 
+          "sum": 821673, 
+          "average": 16111.235294117647
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 722690, 
-          "average": 14748.775510204081
+          "count": 51, 
+          "sum": 848949, 
+          "average": 16646.058823529413
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 614118, 
-          "average": 13066.340425531915
+          "count": 51, 
+          "sum": 768332, 
+          "average": 15065.333333333334
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 637099, 
-          "average": 13272.895833333334
+          "count": 51, 
+          "sum": 794800, 
+          "average": 15584.313725490196
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1026692, 
-          "average": 21389.416666666668
+          "count": 51, 
+          "sum": 1246692, 
+          "average": 24444.941176470587
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 744488, 
-          "average": 15193.632653061224
+          "count": 51, 
+          "sum": 876636, 
+          "average": 17188.941176470587
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 769494, 
-          "average": 15389.88
+          "count": 51, 
+          "sum": 904726, 
+          "average": 17739.725490196077
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 844791, 
-          "average": 17240.632653061224
+          "count": 51, 
+          "sum": 1007290, 
+          "average": 19750.78431372549
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 805440, 
-          "average": 16437.551020408162
+          "count": 51, 
+          "sum": 955626, 
+          "average": 18737.764705882353
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 934093, 
-          "average": 19063.122448979593
+          "count": 51, 
+          "sum": 1099392, 
+          "average": 21556.70588235294
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 888988, 
-          "average": 18142.61224489796
+          "count": 51, 
+          "sum": 1052899, 
+          "average": 20645.07843137255
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Abuse Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 988.4699999999999, 
-          "average": 21.031276595744682
+          "count": 51, 
+          "sum": 1072.4099999999996, 
+          "average": 21.027647058823533
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 993.7, 
-          "average": 21.142553191489363
+          "count": 51, 
+          "sum": 1078.6100000000001, 
+          "average": 21.14921568627451
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1033.5700000000002, 
-          "average": 21.532708333333332
+          "count": 51, 
+          "sum": 1097.16, 
+          "average": 21.51294117647059
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1056.84, 
-          "average": 21.568163265306122
+          "count": 51, 
+          "sum": 1103.3600000000001, 
+          "average": 21.63450980392157
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 998.8999999999997, 
-          "average": 21.2531914893617
+          "count": 51, 
+          "sum": 1084.77, 
+          "average": 21.27
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1027.8700000000001, 
-          "average": 21.413958333333337
+          "count": 51, 
+          "sum": 1090.97, 
+          "average": 21.39156862745098
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1011.2799999999999, 
-          "average": 21.06833333333333
+          "count": 51, 
+          "sum": 1090.8799999999997, 
+          "average": 21.389803921568628
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1062.7, 
-          "average": 21.687755102040818
+          "count": 51, 
+          "sum": 1109.52, 
+          "average": 21.755294117647058
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1092.6200000000003, 
-          "average": 21.852400000000003
+          "count": 51, 
+          "sum": 1115.7200000000003, 
+          "average": 21.87686274509804
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1039.9399999999998, 
-          "average": 21.22326530612245
+          "count": 51, 
+          "sum": 1089.1799999999996, 
+          "average": 21.356470588235297
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1054.26, 
-          "average": 21.515510204081632
+          "count": 51, 
+          "sum": 1102.4299999999998, 
+          "average": 21.616274509803922
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1023.7900000000003, 
-          "average": 20.893673469387753
+          "count": 51, 
+          "sum": 1073.0900000000004, 
+          "average": 21.04098039215686
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1031.85, 
-          "average": 21.05816326530612
+          "count": 51, 
+          "sum": 1081.1200000000001, 
+          "average": 21.198431372549017
         }
       }, 
       "drugs.[0].Rates.Marijuana.Used Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 844.9500000000002, 
-          "average": 17.977659574468085
+          "count": 51, 
+          "sum": 918.7000000000002, 
+          "average": 18.01372549019608
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 849.55, 
-          "average": 18.075531914893617
+          "count": 51, 
+          "sum": 923.9799999999999, 
+          "average": 18.117254901960784
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 885.25, 
-          "average": 18.442708333333332
+          "count": 51, 
+          "sum": 939.9, 
+          "average": 18.429411764705883
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 904.3399999999999, 
-          "average": 18.45591836734694
+          "count": 51, 
+          "sum": 945.18, 
+          "average": 18.532941176470587
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 854.1599999999999, 
-          "average": 18.173617021276595
+          "count": 51, 
+          "sum": 929.2799999999997, 
+          "average": 18.221176470588233
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 880.3000000000001, 
-          "average": 18.339583333333334
+          "count": 51, 
+          "sum": 934.5600000000001, 
+          "average": 18.32470588235294
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 904.8899999999998, 
-          "average": 18.851875
+          "count": 51, 
+          "sum": 978.42, 
+          "average": 19.18470588235294
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 909.5200000000002, 
-          "average": 18.561632653061224
+          "count": 51, 
+          "sum": 950.4800000000001, 
+          "average": 18.63686274509804
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 935.8199999999999, 
-          "average": 18.7164
+          "count": 51, 
+          "sum": 955.7599999999999, 
+          "average": 18.740392156862743
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 923.7899999999997, 
-          "average": 18.852857142857143
+          "count": 51, 
+          "sum": 968.5199999999999, 
+          "average": 18.990588235294116
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 919.2600000000002, 
-          "average": 18.760408163265307
+          "count": 51, 
+          "sum": 962.1700000000002, 
+          "average": 18.866078431372546
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 906.56, 
-          "average": 18.501224489795916
+          "count": 51, 
+          "sum": 951.4699999999999, 
+          "average": 18.65627450980392
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 915.17, 
-          "average": 18.6769387755102
+          "count": 51, 
+          "sum": 959.99, 
+          "average": 18.823333333333334
         }
       }, 
       "drugs.[0].Rates.Alcohol.Need Treatment Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 846.84, 
-          "average": 18.017872340425534
+          "count": 51, 
+          "sum": 916.6399999999999, 
+          "average": 17.973333333333333
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 830.9800000000001, 
-          "average": 17.680425531914896
+          "count": 51, 
+          "sum": 900.5400000000001, 
+          "average": 17.657647058823528
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 805.3200000000003, 
-          "average": 16.7775
+          "count": 51, 
+          "sum": 852.2800000000003, 
+          "average": 16.711372549019607
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 804.3299999999999, 
-          "average": 16.414897959183673
+          "count": 51, 
+          "sum": 836.1800000000001, 
+          "average": 16.395686274509803
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 815.1200000000001, 
-          "average": 17.342978723404254
+          "count": 51, 
+          "sum": 884.45, 
+          "average": 17.3421568627451
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 821.3199999999999, 
-          "average": 17.110833333333336
+          "count": 51, 
+          "sum": 868.3499999999999, 
+          "average": 17.026470588235295
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 591.5400000000001, 
-          "average": 12.323749999999999
+          "count": 51, 
+          "sum": 630.61, 
+          "average": 12.364901960784314
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 787.9899999999997, 
-          "average": 16.08142857142857
+          "count": 51, 
+          "sum": 820.0899999999997, 
+          "average": 16.080196078431374
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 788.3799999999999, 
-          "average": 15.7676
+          "count": 51, 
+          "sum": 803.9899999999999, 
+          "average": 15.76450980392157
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 707.5000000000002, 
-          "average": 14.438775510204081
+          "count": 51, 
+          "sum": 738.7700000000002, 
+          "average": 14.485686274509803
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 739.5500000000001, 
-          "average": 15.092857142857142
+          "count": 51, 
+          "sum": 771.3600000000001, 
+          "average": 15.124705882352941
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 660.9100000000001, 
-          "average": 13.48795918367347
+          "count": 51, 
+          "sum": 691.7600000000002, 
+          "average": 13.563921568627451
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 684.1999999999998, 
-          "average": 13.96326530612245
+          "count": 51, 
+          "sum": 715.2599999999999, 
+          "average": 14.024705882352942
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.All Except Marijuana Used Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 208269, 
-          "average": 4431.255319148936
+          "count": 51, 
+          "sum": 259988, 
+          "average": 5097.803921568628
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 210540, 
-          "average": 4479.574468085107
+          "count": 51, 
+          "sum": 262977, 
+          "average": 5156.411764705882
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 217990, 
-          "average": 4541.458333333333
+          "count": 51, 
+          "sum": 271802, 
+          "average": 5329.450980392156
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 240804, 
-          "average": 4914.367346938776
+          "count": 51, 
+          "sum": 274700, 
+          "average": 5386.274509803921
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 212786, 
-          "average": 4527.36170212766
+          "count": 51, 
+          "sum": 265940, 
+          "average": 5214.509803921569
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 215762, 
-          "average": 4495.041666666667
+          "count": 51, 
+          "sum": 268878, 
+          "average": 5272.117647058823
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 193294, 
-          "average": 4026.9583333333335
+          "count": 51, 
+          "sum": 228994, 
+          "average": 4490.078431372549
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 242667, 
-          "average": 4952.3877551020405
+          "count": 51, 
+          "sum": 277576, 
+          "average": 5442.666666666667
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 245295, 
-          "average": 4905.9
+          "count": 51, 
+          "sum": 280439, 
+          "average": 5498.803921568628
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 208690, 
-          "average": 4258.9795918367345
+          "count": 51, 
+          "sum": 240890, 
+          "average": 4723.333333333333
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 226666, 
-          "average": 4625.836734693878
+          "count": 51, 
+          "sum": 260749, 
+          "average": 5112.725490196079
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 207391, 
-          "average": 4232.469387755102
+          "count": 51, 
+          "sum": 238591, 
+          "average": 4678.254901960784
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 208058, 
-          "average": 4246.081632653061
+          "count": 51, 
+          "sum": 239765, 
+          "average": 4701.274509803921
         }
       }, 
       "drugs.[0].Totals.Alcohol.Dependence Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 41771, 
-          "average": 888.7446808510638
+          "count": 51, 
+          "sum": 51852, 
+          "average": 1016.7058823529412
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 40887, 
-          "average": 869.936170212766
+          "count": 51, 
+          "sum": 51160, 
+          "average": 1003.1372549019608
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 38461, 
-          "average": 801.2708333333334
+          "count": 51, 
+          "sum": 49041, 
+          "average": 961.5882352941177
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 41530, 
-          "average": 847.5510204081633
+          "count": 51, 
+          "sum": 48322, 
+          "average": 947.4901960784314
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 39987, 
-          "average": 850.7872340425532
+          "count": 51, 
+          "sum": 50455, 
+          "average": 989.3137254901961
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 39398, 
-          "average": 820.7916666666666
+          "count": 51, 
+          "sum": 49750, 
+          "average": 975.4901960784314
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 21895, 
-          "average": 456.1458333333333
+          "count": 51, 
+          "sum": 25595, 
+          "average": 501.8627450980392
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 40606, 
-          "average": 828.6938775510204
+          "count": 51, 
+          "sum": 47606, 
+          "average": 933.4509803921569
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 39724, 
-          "average": 794.48
+          "count": 51, 
+          "sum": 46883, 
+          "average": 919.2745098039215
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 28891, 
-          "average": 589.6122448979592
+          "count": 51, 
+          "sum": 33691, 
+          "average": 660.6078431372549
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 34223, 
-          "average": 698.4285714285714
+          "count": 51, 
+          "sum": 40209, 
+          "average": 788.4117647058823
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 24894, 
-          "average": 508.0408163265306
+          "count": 51, 
+          "sum": 28593, 
+          "average": 560.6470588235294
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 26881, 
-          "average": 548.5918367346939
+          "count": 51, 
+          "sum": 31124, 
+          "average": 610.2745098039215
         }
       }, 
       "drugs.[0].Totals.Alcohol.Dependence Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 415286, 
-          "average": 8835.872340425532
+          "count": 51, 
+          "sum": 517512, 
+          "average": 10147.29411764706
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 422176, 
-          "average": 8982.468085106382
+          "count": 51, 
+          "sum": 528140, 
+          "average": 10355.686274509804
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 445239, 
-          "average": 9275.8125
+          "count": 51, 
+          "sum": 560885, 
+          "average": 10997.745098039215
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 491123, 
-          "average": 10022.918367346938
+          "count": 51, 
+          "sum": 572096, 
+          "average": 11217.56862745098
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 429149, 
-          "average": 9130.829787234043
+          "count": 51, 
+          "sum": 538910, 
+          "average": 10566.862745098038
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 438119, 
-          "average": 9127.479166666666
+          "count": 51, 
+          "sum": 549822, 
+          "average": 10780.823529411764
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 496793, 
-          "average": 10349.854166666666
+          "count": 51, 
+          "sum": 582092, 
+          "average": 11413.56862745098
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 499616, 
-          "average": 10196.244897959185
+          "count": 51, 
+          "sum": 583451, 
+          "average": 11440.21568627451
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 509861, 
-          "average": 10197.22
+          "count": 51, 
+          "sum": 594948, 
+          "average": 11665.64705882353
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 502593, 
-          "average": 10257.0
+          "count": 51, 
+          "sum": 578792, 
+          "average": 11348.862745098038
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 505467, 
-          "average": 10315.65306122449
+          "count": 51, 
+          "sum": 587018, 
+          "average": 11510.156862745098
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 522295, 
-          "average": 10659.081632653062
+          "count": 51, 
+          "sum": 602695, 
+          "average": 11817.549019607843
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 512380, 
-          "average": 10456.734693877552
+          "count": 51, 
+          "sum": 590667, 
+          "average": 11581.70588235294
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Dependence Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 169207, 
-          "average": 3600.148936170213
+          "count": 51, 
+          "sum": 206791, 
+          "average": 4054.725490196078
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 172863, 
-          "average": 3677.936170212766
+          "count": 51, 
+          "sum": 211745, 
+          "average": 4151.862745098039
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 184663, 
-          "average": 3847.1458333333335
+          "count": 51, 
+          "sum": 226889, 
+          "average": 4448.803921568628
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 203792, 
-          "average": 4159.0204081632655
+          "count": 51, 
+          "sum": 232039, 
+          "average": 4549.78431372549
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 176544, 
-          "average": 3756.255319148936
+          "count": 51, 
+          "sum": 216749, 
+          "average": 4249.980392156863
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 180915, 
-          "average": 3769.0625
+          "count": 51, 
+          "sum": 221796, 
+          "average": 4348.941176470588
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 237793, 
-          "average": 4954.020833333333
+          "count": 51, 
+          "sum": 274793, 
+          "average": 5388.098039215686
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 208306, 
-          "average": 4251.142857142857
+          "count": 51, 
+          "sum": 237234, 
+          "average": 4651.64705882353
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 213662, 
-          "average": 4273.24
+          "count": 51, 
+          "sum": 242478, 
+          "average": 4754.470588235294
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 208393, 
-          "average": 4252.918367346939
+          "count": 51, 
+          "sum": 237393, 
+          "average": 4654.764705882353
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 210657, 
-          "average": 4299.122448979592
+          "count": 51, 
+          "sum": 239974, 
+          "average": 4705.3725490196075
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 230393, 
-          "average": 4701.897959183673
+          "count": 51, 
+          "sum": 263592, 
+          "average": 5168.470588235294
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 219297, 
-          "average": 4475.448979591837
+          "count": 51, 
+          "sum": 250371, 
+          "average": 4909.235294117647
         }
       }, 
       "drugs.[0].Totals.Alcohol.Need Treatment Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 110800, 
-          "average": 2357.446808510638
+          "count": 51, 
+          "sum": 138646, 
+          "average": 2718.549019607843
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 107483, 
-          "average": 2286.872340425532
+          "count": 51, 
+          "sum": 135309, 
+          "average": 2653.1176470588234
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 98007, 
-          "average": 2041.8125
+          "count": 51, 
+          "sum": 125069, 
+          "average": 2452.3333333333335
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 104777, 
-          "average": 2138.3061224489797
+          "count": 51, 
+          "sum": 121573, 
+          "average": 2383.7843137254904
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 104141, 
-          "average": 2215.7659574468084
+          "count": 51, 
+          "sum": 131940, 
+          "average": 2587.0588235294117
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 101469, 
-          "average": 2113.9375
+          "count": 51, 
+          "sum": 128523, 
+          "average": 2520.0588235294117
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 55593, 
-          "average": 1158.1875
+          "count": 51, 
+          "sum": 65393, 
+          "average": 1282.2156862745098
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 101003, 
-          "average": 2061.285714285714
+          "count": 51, 
+          "sum": 118039, 
+          "average": 2314.4901960784314
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 97309, 
-          "average": 1946.18
+          "count": 51, 
+          "sum": 114459, 
+          "average": 2244.294117647059
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 73488, 
-          "average": 1499.7551020408164
+          "count": 51, 
+          "sum": 86388, 
+          "average": 1693.8823529411766
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 85226, 
-          "average": 1739.3061224489795
+          "count": 51, 
+          "sum": 100283, 
+          "average": 1966.3333333333333
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 64492, 
-          "average": 1316.1632653061224
+          "count": 51, 
+          "sum": 73692, 
+          "average": 1444.9411764705883
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 68965, 
-          "average": 1407.4489795918366
+          "count": 51, 
+          "sum": 79993, 
+          "average": 1568.4901960784314
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Cocaine Used Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 166786, 
-          "average": 3548.6382978723404
+          "count": 51, 
+          "sum": 212267, 
+          "average": 4162.098039215686
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 162230, 
-          "average": 3451.7021276595747
+          "count": 51, 
+          "sum": 206964, 
+          "average": 4058.1176470588234
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 148479, 
-          "average": 3093.3125
+          "count": 51, 
+          "sum": 190101, 
+          "average": 3727.470588235294
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 158295, 
-          "average": 3230.5102040816328
+          "count": 51, 
+          "sum": 184165, 
+          "average": 3611.078431372549
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 157551, 
-          "average": 3352.148936170213
+          "count": 51, 
+          "sum": 201504, 
+          "average": 3951.0588235294117
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 153419, 
-          "average": 3196.2291666666665
+          "count": 51, 
+          "sum": 195882, 
+          "average": 3840.823529411765
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 125490, 
-          "average": 2614.375
+          "count": 51, 
+          "sum": 157490, 
+          "average": 3088.0392156862745
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 152511, 
-          "average": 3112.469387755102
+          "count": 51, 
+          "sum": 178073, 
+          "average": 3491.627450980392
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 147010, 
-          "average": 2940.2
+          "count": 51, 
+          "sum": 171817, 
+          "average": 3368.9607843137255
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 131893, 
-          "average": 2691.6938775510203
+          "count": 51, 
+          "sum": 157993, 
+          "average": 3097.901960784314
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 139266, 
-          "average": 2842.1632653061224
+          "count": 51, 
+          "sum": 164934, 
+          "average": 3234.0
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 128695, 
-          "average": 2626.4285714285716
+          "count": 51, 
+          "sum": 156995, 
+          "average": 3078.3333333333335
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 130306, 
-          "average": 2659.3061224489797
+          "count": 51, 
+          "sum": 157497, 
+          "average": 3088.176470588235
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Need Treatment Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 99235, 
-          "average": 2111.3829787234044
+          "count": 51, 
+          "sum": 123832, 
+          "average": 2428.078431372549
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 97077, 
-          "average": 2065.468085106383
+          "count": 51, 
+          "sum": 121860, 
+          "average": 2389.4117647058824
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 90849, 
-          "average": 1892.6875
+          "count": 51, 
+          "sum": 115727, 
+          "average": 2269.156862745098
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 97896, 
-          "average": 1997.8775510204082
+          "count": 51, 
+          "sum": 113613, 
+          "average": 2227.705882352941
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 94880, 
-          "average": 2018.723404255319
+          "count": 51, 
+          "sum": 119846, 
+          "average": 2349.921568627451
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 93128, 
-          "average": 1940.1666666666667
+          "count": 51, 
+          "sum": 117806, 
+          "average": 2309.921568627451
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 68495, 
-          "average": 1426.9791666666667
+          "count": 51, 
+          "sum": 82195, 
+          "average": 1611.6666666666667
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 95431, 
-          "average": 1947.5714285714287
+          "count": 51, 
+          "sum": 111463, 
+          "average": 2185.549019607843
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 93060, 
-          "average": 1861.2
+          "count": 51, 
+          "sum": 109277, 
+          "average": 2142.6862745098038
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 83193, 
-          "average": 1697.8163265306123
+          "count": 51, 
+          "sum": 98693, 
+          "average": 1935.1568627450981
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 87998, 
-          "average": 1795.8775510204082
+          "count": 51, 
+          "sum": 103920, 
+          "average": 2037.6470588235295
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 74490, 
-          "average": 1520.204081632653
+          "count": 51, 
+          "sum": 86990, 
+          "average": 1705.686274509804
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 78821, 
-          "average": 1608.591836734694
+          "count": 51, 
+          "sum": 92804, 
+          "average": 1819.686274509804
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Used Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 988.4699999999999, 
-          "average": 21.031276595744682
+          "count": 51, 
+          "sum": 1072.4099999999996, 
+          "average": 21.027647058823533
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 993.7, 
-          "average": 21.142553191489363
+          "count": 51, 
+          "sum": 1078.6100000000001, 
+          "average": 21.14921568627451
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1033.5700000000002, 
-          "average": 21.532708333333332
+          "count": 51, 
+          "sum": 1097.16, 
+          "average": 21.51294117647059
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1056.84, 
-          "average": 21.568163265306122
+          "count": 51, 
+          "sum": 1103.3600000000001, 
+          "average": 21.63450980392157
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 998.8999999999997, 
-          "average": 21.2531914893617
+          "count": 51, 
+          "sum": 1084.77, 
+          "average": 21.27
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1027.8700000000001, 
-          "average": 21.413958333333337
+          "count": 51, 
+          "sum": 1090.97, 
+          "average": 21.39156862745098
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1011.2799999999999, 
-          "average": 21.06833333333333
+          "count": 51, 
+          "sum": 1090.8799999999997, 
+          "average": 21.389803921568628
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1062.7, 
-          "average": 21.687755102040818
+          "count": 51, 
+          "sum": 1109.52, 
+          "average": 21.755294117647058
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1092.6200000000003, 
-          "average": 21.852400000000003
+          "count": 51, 
+          "sum": 1115.7200000000003, 
+          "average": 21.87686274509804
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1039.9399999999998, 
-          "average": 21.22326530612245
+          "count": 51, 
+          "sum": 1089.1799999999996, 
+          "average": 21.356470588235297
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1054.26, 
-          "average": 21.515510204081632
+          "count": 51, 
+          "sum": 1102.4299999999998, 
+          "average": 21.616274509803922
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1023.7900000000003, 
-          "average": 20.893673469387753
+          "count": 51, 
+          "sum": 1073.0900000000004, 
+          "average": 21.04098039215686
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1031.85, 
-          "average": 21.05816326530612
+          "count": 51, 
+          "sum": 1081.1200000000001, 
+          "average": 21.198431372549017
         }
       }, 
       "drugs.[0].Rates.Alcohol.Abuse Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 295.81000000000006, 
-          "average": 6.293829787234043
+          "count": 51, 
+          "sum": 321.37, 
+          "average": 6.301372549019608
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 284.59000000000003, 
-          "average": 6.055106382978723
+          "count": 51, 
+          "sum": 309.35000000000014, 
+          "average": 6.065686274509805
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 259.72999999999996, 
-          "average": 5.411041666666667
+          "count": 51, 
+          "sum": 273.46999999999997, 
+          "average": 5.362156862745098
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 252.79999999999998, 
-          "average": 5.159183673469388
+          "count": 51, 
+          "sum": 261.45, 
+          "average": 5.126470588235294
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 273.49, 
-          "average": 5.818936170212766
+          "count": 51, 
+          "sum": 297.45000000000005, 
+          "average": 5.83235294117647
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 271.53, 
-          "average": 5.656874999999999
+          "count": 51, 
+          "sum": 285.43000000000006, 
+          "average": 5.596666666666667
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 137.06999999999996, 
-          "average": 2.855625
+          "count": 51, 
+          "sum": 146.05999999999997, 
+          "average": 2.863921568627451
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 240.86999999999995, 
-          "average": 4.9157142857142855
+          "count": 51, 
+          "sum": 249.54999999999993, 
+          "average": 4.893137254901961
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 232.13999999999996, 
-          "average": 4.6428
+          "count": 51, 
+          "sum": 237.52999999999997, 
+          "average": 4.657450980392157
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 175.72000000000006, 
-          "average": 3.5861224489795918
+          "count": 51, 
+          "sum": 182.62000000000003, 
+          "average": 3.5807843137254904
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 202.28, 
-          "average": 4.128163265306123
+          "count": 51, 
+          "sum": 210.09000000000003, 
+          "average": 4.119411764705882
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 161.29, 
-          "average": 3.2916326530612245
+          "count": 51, 
+          "sum": 167.17000000000002, 
+          "average": 3.2778431372549015
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 168.49000000000004, 
-          "average": 3.4385714285714286
+          "count": 51, 
+          "sum": 174.88000000000002, 
+          "average": 3.429019607843137
         }
       }, 
       "drugs.[0].Rates.Alcohol.Dependence Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 107.01999999999998, 
-          "average": 2.2770212765957445
+          "count": 51, 
+          "sum": 117.00999999999999, 
+          "average": 2.294313725490196
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 103.86999999999999, 
-          "average": 2.21
+          "count": 51, 
+          "sum": 113.55000000000001, 
+          "average": 2.226470588235294
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 97.83000000000001, 
-          "average": 2.038125
+          "count": 51, 
+          "sum": 103.11000000000001, 
+          "average": 2.021764705882353
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 96.21000000000002, 
-          "average": 1.963469387755102
+          "count": 51, 
+          "sum": 99.65000000000003, 
+          "average": 1.953921568627451
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 100.71999999999998, 
-          "average": 2.1429787234042554
+          "count": 51, 
+          "sum": 110.10000000000001, 
+          "average": 2.1588235294117646
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 101.37000000000003, 
-          "average": 2.111875
+          "count": 51, 
+          "sum": 106.64000000000004, 
+          "average": 2.0909803921568626
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 53.12000000000001, 
-          "average": 1.1066666666666667
+          "count": 51, 
+          "sum": 55.360000000000014, 
+          "average": 1.0854901960784313
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 92.73999999999997, 
-          "average": 1.8926530612244896
+          "count": 51, 
+          "sum": 96.19999999999996, 
+          "average": 1.8862745098039215
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 90.58999999999999, 
-          "average": 1.8118
+          "count": 51, 
+          "sum": 92.74, 
+          "average": 1.8184313725490195
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 67.82000000000001, 
-          "average": 1.3840816326530612
+          "count": 51, 
+          "sum": 69.31, 
+          "average": 1.3590196078431374
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 78.51000000000002, 
-          "average": 1.6022448979591837
+          "count": 51, 
+          "sum": 81.00000000000003, 
+          "average": 1.588235294117647
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 60.639999999999986, 
-          "average": 1.2375510204081632
+          "count": 51, 
+          "sum": 61.819999999999986, 
+          "average": 1.212156862745098
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 64.23999999999998, 
-          "average": 1.3110204081632653
+          "count": 51, 
+          "sum": 65.56999999999998, 
+          "average": 1.2856862745098039
         }
       }, 
       "drugs.[0].Rates.Alcohol.Use Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 2932.1599999999994, 
-          "average": 62.386382978723404
+          "count": 51, 
+          "sum": 3182.139999999999, 
+          "average": 62.39490196078431
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 2927.37, 
-          "average": 62.28446808510638
+          "count": 51, 
+          "sum": 3178.5199999999995, 
+          "average": 62.32392156862745
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 2980.2900000000004, 
-          "average": 62.089375
+          "count": 51, 
+          "sum": 3167.5600000000004, 
+          "average": 62.10901960784314
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 3033.899999999999, 
-          "average": 61.916326530612245
+          "count": 51, 
+          "sum": 3163.939999999999, 
+          "average": 62.038039215686275
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 2922.560000000001, 
-          "average": 62.18212765957447
+          "count": 51, 
+          "sum": 3174.8700000000003, 
+          "average": 62.25235294117647
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 2985.620000000001, 
-          "average": 62.20041666666666
+          "count": 51, 
+          "sum": 3171.2500000000005, 
+          "average": 62.181372549019606
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 2851.429999999999, 
-          "average": 59.40479166666666
+          "count": 51, 
+          "sum": 3040.2699999999986, 
+          "average": 59.61313725490196
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 3028.78, 
-          "average": 61.811836734693884
+          "count": 51, 
+          "sum": 3160.2900000000004, 
+          "average": 61.966470588235296
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 3095.6799999999994, 
-          "average": 61.913599999999995
+          "count": 51, 
+          "sum": 3156.669999999999, 
+          "average": 61.895490196078434
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 2984.2700000000004, 
-          "average": 60.9034693877551
+          "count": 51, 
+          "sum": 3111.9700000000003, 
+          "average": 61.019019607843134
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 3003.949999999999, 
-          "average": 61.30510204081632
+          "count": 51, 
+          "sum": 3134.289999999999, 
+          "average": 61.45666666666666
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 2925.8999999999996, 
-          "average": 59.71224489795919
+          "count": 51, 
+          "sum": 3051.429999999999, 
+          "average": 59.83196078431372
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 2955.0599999999995, 
-          "average": 60.30734693877551
+          "count": 51, 
+          "sum": 3081.6799999999994, 
+          "average": 60.42509803921568
         }
       }, 
       "drugs.[0].Totals.Pain Relievers Abuse Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 444094, 
-          "average": 9448.808510638299
+          "count": 51, 
+          "sum": 571848, 
+          "average": 11212.70588235294
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 458128, 
-          "average": 9747.404255319148
+          "count": 51, 
+          "sum": 587412, 
+          "average": 11517.882352941177
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 503119, 
-          "average": 10481.645833333334
+          "count": 51, 
+          "sum": 634999, 
+          "average": 12450.960784313726
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 563909, 
-          "average": 11508.34693877551
+          "count": 51, 
+          "sum": 651158, 
+          "average": 12767.803921568628
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 472322, 
-          "average": 10049.404255319148
+          "count": 51, 
+          "sum": 603126, 
+          "average": 11826.0
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 488495, 
-          "average": 10176.979166666666
+          "count": 51, 
+          "sum": 618985, 
+          "average": 12136.960784313726
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 562493, 
-          "average": 11718.604166666666
+          "count": 51, 
+          "sum": 664793, 
+          "average": 13035.156862745098
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 579859, 
-          "average": 11833.857142857143
+          "count": 51, 
+          "sum": 667470, 
+          "average": 13087.64705882353
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 597256, 
-          "average": 11945.12
+          "count": 51, 
+          "sum": 683931, 
+          "average": 13410.411764705883
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 607598, 
-          "average": 12399.959183673469
+          "count": 51, 
+          "sum": 697497, 
+          "average": 13676.411764705883
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 601791, 
-          "average": 12281.448979591836
+          "count": 51, 
+          "sum": 690721, 
+          "average": 13543.549019607843
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 621897, 
-          "average": 12691.775510204081
+          "count": 51, 
+          "sum": 725596, 
+          "average": 14227.372549019608
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 614704, 
-          "average": 12544.979591836734
+          "count": 51, 
+          "sum": 711420, 
+          "average": 13949.411764705883
         }
       }, 
       "drugs.[0].Totals.Alcohol.Binge Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 214848, 
-          "average": 4571.234042553191
+          "count": 51, 
+          "sum": 264497, 
+          "average": 5186.21568627451
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 208597, 
-          "average": 4438.234042553191
+          "count": 51, 
+          "sum": 257970, 
+          "average": 5058.235294117647
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 190775, 
-          "average": 3974.4791666666665
+          "count": 51, 
+          "sum": 237961, 
+          "average": 4665.901960784314
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 202447, 
-          "average": 4131.571428571428
+          "count": 51, 
+          "sum": 231152, 
+          "average": 4532.392156862745
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 202299, 
-          "average": 4304.234042553191
+          "count": 51, 
+          "sum": 251372, 
+          "average": 4928.862745098039
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 197243, 
-          "average": 4109.229166666667
+          "count": 51, 
+          "sum": 244702, 
+          "average": 4798.078431372549
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 130892, 
-          "average": 2726.9166666666665
+          "count": 51, 
+          "sum": 153592, 
+          "average": 3011.607843137255
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 195511, 
-          "average": 3990.0204081632655
+          "count": 51, 
+          "sum": 224267, 
+          "average": 4397.392156862745
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 188766, 
-          "average": 3775.32
+          "count": 51, 
+          "sum": 217305, 
+          "average": 4260.882352941177
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 160290, 
-          "average": 3271.2244897959185
+          "count": 51, 
+          "sum": 182590, 
+          "average": 3580.1960784313724
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 174270, 
-          "average": 3556.530612244898
+          "count": 51, 
+          "sum": 199774, 
+          "average": 3917.1372549019607
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 147688, 
-          "average": 3014.0408163265306
+          "count": 51, 
+          "sum": 167688, 
+          "average": 3288.0
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 153946, 
-          "average": 3141.7551020408164
+          "count": 51, 
+          "sum": 175084, 
+          "average": 3433.0196078431372
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Need Treatment Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 363.4099999999999, 
-          "average": 7.732127659574469
+          "count": 51, 
+          "sum": 393.27999999999986, 
+          "average": 7.7113725490196074
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 359.40000000000003, 
-          "average": 7.646808510638297
+          "count": 51, 
+          "sum": 388.91999999999996, 
+          "average": 7.625882352941177
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 354.88, 
-          "average": 7.3933333333333335
+          "count": 51, 
+          "sum": 375.75999999999993, 
+          "average": 7.367843137254901
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 357.01, 
-          "average": 7.285918367346938
+          "count": 51, 
+          "sum": 371.3999999999999, 
+          "average": 7.2823529411764705
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 355.34999999999997, 
-          "average": 7.560638297872341
+          "count": 51, 
+          "sum": 384.48999999999995, 
+          "average": 7.539019607843137
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 359.0200000000001, 
-          "average": 7.479583333333333
+          "count": 51, 
+          "sum": 380.1300000000001, 
+          "average": 7.4535294117647055
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 302.28000000000003, 
-          "average": 6.297499999999999
+          "count": 51, 
+          "sum": 322.89, 
+          "average": 6.331176470588235
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 352.80999999999995, 
-          "average": 7.200204081632653
+          "count": 51, 
+          "sum": 366.97, 
+          "average": 7.195490196078432
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 355.09000000000003, 
-          "average": 7.1018
+          "count": 51, 
+          "sum": 362.60999999999996, 
+          "average": 7.11
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 331.47999999999996, 
-          "average": 6.764897959183674
+          "count": 51, 
+          "sum": 347.36, 
+          "average": 6.810980392156863
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 340.09000000000003, 
-          "average": 6.940612244897959
+          "count": 51, 
+          "sum": 355.00000000000006, 
+          "average": 6.96078431372549
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 330.35999999999996, 
-          "average": 6.742040816326531
+          "count": 51, 
+          "sum": 345.32000000000005, 
+          "average": 6.770980392156862
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 330.8500000000001, 
-          "average": 6.752040816326531
+          "count": 51, 
+          "sum": 346.2600000000001, 
+          "average": 6.789411764705882
         }
       }, 
       "drugs.[0].Rates.Marijuana.Perceptions of Risk.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 1556.7000000000003, 
-          "average": 33.12127659574468
+          "count": 51, 
+          "sum": 1682.4600000000003, 
+          "average": 32.989411764705885
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1538.5200000000002, 
-          "average": 32.734468085106386
+          "count": 51, 
+          "sum": 1662.3700000000003, 
+          "average": 32.59549019607843
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1511.1299999999997, 
-          "average": 31.481875000000002
+          "count": 51, 
+          "sum": 1602.1099999999997, 
+          "average": 31.413921568627448
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1528.4599999999998, 
-          "average": 31.193061224489796
+          "count": 51, 
+          "sum": 1582.02, 
+          "average": 31.02
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1520.34, 
-          "average": 32.34765957446808
+          "count": 51, 
+          "sum": 1642.2799999999997, 
+          "average": 32.20156862745098
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1529.64, 
-          "average": 31.867500000000003
+          "count": 51, 
+          "sum": 1622.19, 
+          "average": 31.80764705882353
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1128.2800000000002, 
-          "average": 23.50583333333333
+          "count": 51, 
+          "sum": 1179.3800000000003, 
+          "average": 23.12509803921569
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1509.86, 
-          "average": 30.8134693877551
+          "count": 51, 
+          "sum": 1561.9299999999998, 
+          "average": 30.62607843137255
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1515.6999999999998, 
-          "average": 30.314
+          "count": 51, 
+          "sum": 1541.84, 
+          "average": 30.232156862745097
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1322.67, 
-          "average": 26.99326530612245
+          "count": 51, 
+          "sum": 1360.93, 
+          "average": 26.684901960784316
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1406.9700000000003, 
-          "average": 28.713673469387757
+          "count": 51, 
+          "sum": 1451.4, 
+          "average": 28.458823529411767
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1242.5100000000002, 
-          "average": 25.35734693877551
+          "count": 51, 
+          "sum": 1283.3100000000004, 
+          "average": 25.162941176470586
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1282.6100000000001, 
-          "average": 26.175714285714285
+          "count": 51, 
+          "sum": 1322.14, 
+          "average": 25.924313725490197
         }
       }, 
       "drugs.[0].Rates.Alcohol.Perceptions of Risk.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 1431.3199999999997, 
-          "average": 30.453617021276596
+          "count": 51, 
+          "sum": 1567.5599999999997, 
+          "average": 30.736470588235292
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1440.5800000000004, 
-          "average": 30.650638297872337
+          "count": 51, 
+          "sum": 1576.3200000000002, 
+          "average": 30.908235294117645
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1494.0200000000002, 
-          "average": 31.125416666666666
+          "count": 51, 
+          "sum": 1602.5200000000002, 
+          "average": 31.421960784313725
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1540.4899999999998, 
-          "average": 31.43857142857143
+          "count": 51, 
+          "sum": 1611.28, 
+          "average": 31.59372549019608
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1449.7499999999998, 
-          "average": 30.845744680851062
+          "count": 51, 
+          "sum": 1585.01, 
+          "average": 31.07862745098039
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1484.48, 
-          "average": 30.926666666666666
+          "count": 51, 
+          "sum": 1593.77, 
+          "average": 31.250392156862745
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1486.58, 
-          "average": 30.970416666666665
+          "count": 51, 
+          "sum": 1578.07, 
+          "average": 30.942549019607842
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1549.8699999999997, 
-          "average": 31.63
+          "count": 51, 
+          "sum": 1619.9699999999998, 
+          "average": 31.764117647058825
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1592.18, 
-          "average": 31.843600000000002
+          "count": 51, 
+          "sum": 1628.73, 
+          "average": 31.935882352941178
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1583.29, 
-          "average": 32.31204081632653
+          "count": 51, 
+          "sum": 1650.0799999999997, 
+          "average": 32.354509803921566
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1571.3099999999995, 
-          "average": 32.06755102040816
+          "count": 51, 
+          "sum": 1639.4099999999994, 
+          "average": 32.14529411764706
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1526.63, 
-          "average": 31.15571428571429
+          "count": 51, 
+          "sum": 1593.23, 
+          "average": 31.239803921568626
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1554.9700000000003, 
-          "average": 31.734081632653062
+          "count": 51, 
+          "sum": 1621.67, 
+          "average": 31.79745098039216
         }
       }, 
       "drugs.[0].Rates.Marijuana.Perceptions of Risk.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 1957.2300000000002, 
-          "average": 41.643191489361705
+          "count": 51, 
+          "sum": 2119.7799999999997, 
+          "average": 41.564313725490194
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1916.3300000000004, 
-          "average": 40.77297872340425
+          "count": 51, 
+          "sum": 2075.3300000000004, 
+          "average": 40.69274509803921
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1826.6799999999994, 
-          "average": 38.05583333333333
+          "count": 51, 
+          "sum": 1942.0199999999998, 
+          "average": 38.078823529411764
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1830.4799999999998, 
-          "average": 37.35673469387755
+          "count": 51, 
+          "sum": 1897.57, 
+          "average": 37.20725490196078
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1875.4700000000003, 
-          "average": 39.903617021276595
+          "count": 51, 
+          "sum": 2030.92, 
+          "average": 39.821960784313724
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1868.48, 
-          "average": 38.92666666666667
+          "count": 51, 
+          "sum": 1986.4699999999998, 
+          "average": 38.95039215686275
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1385.0000000000002, 
-          "average": 28.854166666666668
+          "count": 51, 
+          "sum": 1455.29, 
+          "average": 28.535098039215686
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1787.8800000000003, 
-          "average": 36.48734693877551
+          "count": 51, 
+          "sum": 1853.1600000000003, 
+          "average": 36.336470588235294
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1774.7, 
-          "average": 35.494
+          "count": 51, 
+          "sum": 1808.7099999999998, 
+          "average": 35.46490196078432
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1627.2600000000002, 
-          "average": 33.20938775510204
+          "count": 51, 
+          "sum": 1690.88, 
+          "average": 33.15450980392157
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1686.3, 
-          "average": 34.41428571428571
+          "count": 51, 
+          "sum": 1749.85, 
+          "average": 34.31078431372549
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1516.4400000000003, 
-          "average": 30.947755102040816
+          "count": 51, 
+          "sum": 1572.7300000000002, 
+          "average": 30.837843137254904
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1571.8799999999999, 
-          "average": 32.07918367346939
+          "count": 51, 
+          "sum": 1631.84, 
+          "average": 31.99686274509804
         }
       }, 
       "drugs.[0].Rates.Marijuana.Used Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 1437.0999999999995, 
-          "average": 30.576595744680848
+          "count": 51, 
+          "sum": 1560.4299999999994, 
+          "average": 30.596666666666668
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1438.1299999999999, 
-          "average": 30.598510638297874
+          "count": 51, 
+          "sum": 1562.2199999999998, 
+          "average": 30.631764705882354
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1477.7799999999997, 
-          "average": 30.78708333333333
+          "count": 51, 
+          "sum": 1567.6299999999997, 
+          "average": 30.737843137254902
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1502.55, 
-          "average": 30.664285714285715
+          "count": 51, 
+          "sum": 1569.42, 
+          "average": 30.77294117647059
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1439.1699999999998, 
-          "average": 30.620638297872343
+          "count": 51, 
+          "sum": 1564.03, 
+          "average": 30.667254901960785
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1476.4000000000003, 
-          "average": 30.758333333333336
+          "count": 51, 
+          "sum": 1565.8200000000002, 
+          "average": 30.702352941176468
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1505.2000000000007, 
-          "average": 31.358333333333334
+          "count": 51, 
+          "sum": 1618.2000000000012, 
+          "average": 31.729411764705883
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1504.1599999999992, 
-          "average": 30.697142857142858
+          "count": 51, 
+          "sum": 1571.2299999999993, 
+          "average": 30.80843137254902
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1540.15, 
-          "average": 30.803
+          "count": 51, 
+          "sum": 1573.02, 
+          "average": 30.843529411764706
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1533.8100000000002, 
-          "average": 31.302244897959184
+          "count": 51, 
+          "sum": 1606.58, 
+          "average": 31.50156862745098
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1519.77, 
-          "average": 31.015714285714285
+          "count": 51, 
+          "sum": 1589.7900000000002, 
+          "average": 31.17235294117647
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1529.4, 
-          "average": 31.212244897959184
+          "count": 51, 
+          "sum": 1603.2600000000002, 
+          "average": 31.436470588235295
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1531.59, 
-          "average": 31.256938775510203
+          "count": 51, 
+          "sum": 1604.9099999999999, 
+          "average": 31.468823529411765
         }
       }, 
       "drugs.[0].Rates.Tobacco.Perceptions of Risk.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 2973.5299999999997, 
-          "average": 63.26659574468085
+          "count": 51, 
+          "sum": 3228.3700000000003, 
+          "average": 63.301372549019604
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 2985.139999999999, 
-          "average": 63.513617021276595
+          "count": 51, 
+          "sum": 3240.6599999999994, 
+          "average": 63.54235294117647
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 3084.36, 
-          "average": 64.25750000000001
+          "count": 51, 
+          "sum": 3277.4500000000003, 
+          "average": 64.26372549019608
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 3158.7500000000005, 
-          "average": 64.46428571428571
+          "count": 51, 
+          "sum": 3289.7400000000002, 
+          "average": 64.50470588235294
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 2996.65, 
-          "average": 63.75851063829787
+          "count": 51, 
+          "sum": 3252.870000000001, 
+          "average": 63.78176470588235
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 3072.81, 
-          "average": 64.016875
+          "count": 51, 
+          "sum": 3265.1600000000003, 
+          "average": 64.02274509803921
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 3051.039999999999, 
-          "average": 63.56333333333333
+          "count": 51, 
+          "sum": 3231.469999999999, 
+          "average": 63.362156862745096
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 3170.54, 
-          "average": 64.70489795918367
+          "count": 51, 
+          "sum": 3301.95, 
+          "average": 64.74411764705881
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 3247.64, 
-          "average": 64.9528
+          "count": 51, 
+          "sum": 3314.24, 
+          "average": 64.98509803921569
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 3136.57, 
-          "average": 64.01163265306123
+          "count": 51, 
+          "sum": 3255.95, 
+          "average": 63.84215686274509
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 3159.490000000001, 
-          "average": 64.47938775510204
+          "count": 51, 
+          "sum": 3285.0900000000015, 
+          "average": 64.41352941176471
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 3107.9099999999994, 
-          "average": 63.42673469387755
+          "count": 51, 
+          "sum": 3228.7299999999987, 
+          "average": 63.30843137254902
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 3122.2299999999996, 
-          "average": 63.718979591836735
+          "count": 51, 
+          "sum": 3242.3299999999995, 
+          "average": 63.57509803921568
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Cocaine Used Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 36455, 
-          "average": 775.6382978723404
+          "count": 51, 
+          "sum": 47098, 
+          "average": 923.4901960784314
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 33996, 
-          "average": 723.3191489361702
+          "count": 51, 
+          "sum": 44155, 
+          "average": 865.7843137254902
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 26577, 
-          "average": 553.6875
+          "count": 51, 
+          "sum": 35041, 
+          "average": 687.0784313725491
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 27332, 
-          "average": 557.795918367347
+          "count": 51, 
+          "sum": 31908, 
+          "average": 625.6470588235294
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 31500, 
-          "average": 670.2127659574468
+          "count": 51, 
+          "sum": 41156, 
+          "average": 806.9803921568628
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 29143, 
-          "average": 607.1458333333334
+          "count": 51, 
+          "sum": 38125, 
+          "average": 747.5490196078431
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 11600, 
-          "average": 241.66666666666666
+          "count": 51, 
+          "sum": 14800, 
+          "average": 290.19607843137254
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 24302, 
-          "average": 495.9591836734694
+          "count": 51, 
+          "sum": 28730, 
+          "average": 563.3333333333334
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 21249, 
-          "average": 424.98
+          "count": 51, 
+          "sum": 25511, 
+          "average": 500.2156862745098
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 16993, 
-          "average": 346.7959183673469
+          "count": 51, 
+          "sum": 20393, 
+          "average": 399.8627450980392
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 19082, 
-          "average": 389.42857142857144
+          "count": 51, 
+          "sum": 22914, 
+          "average": 449.29411764705884
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 12889, 
-          "average": 263.0408163265306
+          "count": 51, 
+          "sum": 15389, 
+          "average": 301.7450980392157
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 14928, 
-          "average": 304.6530612244898
+          "count": 51, 
+          "sum": 17872, 
+          "average": 350.4313725490196
         }
       }, 
       "drugs.[0].Totals.Marijuana.Used Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 746312, 
-          "average": 15878.978723404256
+          "count": 51, 
+          "sum": 926448, 
+          "average": 18165.647058823528
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 757020, 
-          "average": 16106.808510638299
+          "count": 51, 
+          "sum": 942802, 
+          "average": 18486.313725490196
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 793283, 
-          "average": 16526.729166666668
+          "count": 51, 
+          "sum": 992723, 
+          "average": 19465.156862745098
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 870482, 
-          "average": 17764.938775510203
+          "count": 51, 
+          "sum": 1009648, 
+          "average": 19797.019607843136
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 767793, 
-          "average": 16336.021276595744
+          "count": 51, 
+          "sum": 959301, 
+          "average": 18809.823529411766
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 782295, 
-          "average": 16297.8125
+          "count": 51, 
+          "sum": 975941, 
+          "average": 19136.098039215685
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 927990, 
-          "average": 19333.125
+          "count": 51, 
+          "sum": 1107690, 
+          "average": 21719.41176470588
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 883120, 
-          "average": 18022.85714285714
+          "count": 51, 
+          "sum": 1026713, 
+          "average": 20131.62745098039
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 899342, 
-          "average": 17986.84
+          "count": 51, 
+          "sum": 1043920, 
+          "average": 20469.019607843136
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 919790, 
-          "average": 18771.224489795917
+          "count": 51, 
+          "sum": 1072189, 
+          "average": 21023.313725490196
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 907757, 
-          "average": 18525.65306122449
+          "count": 51, 
+          "sum": 1057988, 
+          "average": 20744.86274509804
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 938094, 
-          "average": 19144.775510204083
+          "count": 51, 
+          "sum": 1094094, 
+          "average": 21452.823529411766
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 928919, 
-          "average": 18957.530612244896
+          "count": 51, 
+          "sum": 1083115, 
+          "average": 21237.549019607843
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.All Except Marijuana Used Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 377653, 
-          "average": 8035.170212765957
+          "count": 51, 
+          "sum": 479346, 
+          "average": 9398.941176470587
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 383695, 
-          "average": 8163.723404255319
+          "count": 51, 
+          "sum": 485511, 
+          "average": 9519.823529411764
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 403306, 
-          "average": 8402.208333333334
+          "count": 51, 
+          "sum": 503738, 
+          "average": 9877.21568627451
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 444012, 
-          "average": 9061.469387755102
+          "count": 51, 
+          "sum": 509727, 
+          "average": 9994.64705882353
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 389737, 
-          "average": 8292.27659574468
+          "count": 51, 
+          "sum": 491630, 
+          "average": 9639.803921568628
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 397283, 
-          "average": 8276.729166666666
+          "count": 51, 
+          "sum": 497710, 
+          "average": 9759.019607843138
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 454997, 
-          "average": 9479.104166666666
+          "count": 51, 
+          "sum": 557397, 
+          "average": 10929.35294117647
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 450166, 
-          "average": 9187.061224489797
+          "count": 51, 
+          "sum": 515668, 
+          "average": 10111.137254901962
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 457804, 
-          "average": 9156.08
+          "count": 51, 
+          "sum": 521562, 
+          "average": 10226.70588235294
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 441795, 
-          "average": 9016.224489795919
+          "count": 51, 
+          "sum": 507293, 
+          "average": 9946.921568627451
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 449170, 
-          "average": 9166.734693877552
+          "count": 51, 
+          "sum": 514563, 
+          "average": 10089.470588235294
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 471993, 
-          "average": 9632.510204081633
+          "count": 51, 
+          "sum": 555092, 
+          "average": 10884.156862745098
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 456721, 
-          "average": 9320.836734693878
+          "count": 51, 
+          "sum": 530900, 
+          "average": 10409.803921568628
         }
       }, 
       "drugs.[0].Totals.Alcohol.Perceptions of Risk.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 785696, 
-          "average": 16716.936170212764
+          "count": 51, 
+          "sum": 1040038, 
+          "average": 20392.901960784315
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 798633, 
-          "average": 16992.191489361703
+          "count": 51, 
+          "sum": 1055794, 
+          "average": 20701.843137254902
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 840700, 
-          "average": 17514.583333333332
+          "count": 51, 
+          "sum": 1103581, 
+          "average": 21638.843137254902
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 958560, 
-          "average": 19562.448979591838
+          "count": 51, 
+          "sum": 1119681, 
+          "average": 21954.529411764706
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 811673, 
-          "average": 17269.63829787234
+          "count": 51, 
+          "sum": 1071638, 
+          "average": 21012.50980392157
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 827395, 
-          "average": 17237.395833333332
+          "count": 51, 
+          "sum": 1087569, 
+          "average": 21324.882352941175
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 982095, 
-          "average": 20460.3125
+          "count": 51, 
+          "sum": 1162995, 
+          "average": 22803.823529411766
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 973254, 
-          "average": 19862.326530612245
+          "count": 51, 
+          "sum": 1135875, 
+          "average": 22272.058823529413
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 991385, 
-          "average": 19827.7
+          "count": 51, 
+          "sum": 1152150, 
+          "average": 22591.176470588234
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1016693, 
-          "average": 20748.836734693876
+          "count": 51, 
+          "sum": 1188593, 
+          "average": 23305.745098039217
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1002290, 
-          "average": 20454.897959183672
+          "count": 51, 
+          "sum": 1170276, 
+          "average": 22946.58823529412
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1001792, 
-          "average": 20444.73469387755
+          "count": 51, 
+          "sum": 1172992, 
+          "average": 22999.843137254902
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1009400, 
-          "average": 20600.0
+          "count": 51, 
+          "sum": 1180968, 
+          "average": 23156.235294117647
         }
       }, 
       "drugs.[0].Totals.Alcohol.Need Treatment Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 430391, 
-          "average": 9157.255319148937
+          "count": 51, 
+          "sum": 536773, 
+          "average": 10524.960784313726
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 427925, 
-          "average": 9104.787234042553
+          "count": 51, 
+          "sum": 535492, 
+          "average": 10499.843137254902
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 421882, 
-          "average": 8789.208333333334
+          "count": 51, 
+          "sum": 530698, 
+          "average": 10405.843137254902
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 461356, 
-          "average": 9415.42857142857
+          "count": 51, 
+          "sum": 528782, 
+          "average": 10368.274509803921
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 425313, 
-          "average": 9049.212765957447
+          "count": 51, 
+          "sum": 534056, 
+          "average": 10471.686274509804
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 424780, 
-          "average": 8849.583333333334
+          "count": 51, 
+          "sum": 532454, 
+          "average": 10440.274509803921
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 359594, 
-          "average": 7491.541666666667
+          "count": 51, 
+          "sum": 425494, 
+          "average": 8343.019607843138
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 457821, 
-          "average": 9343.285714285714
+          "count": 51, 
+          "sum": 526708, 
+          "average": 10327.607843137255
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 455819, 
-          "average": 9116.38
+          "count": 51, 
+          "sum": 524479, 
+          "average": 10283.901960784313
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 412297, 
-          "average": 8414.224489795919
+          "count": 51, 
+          "sum": 480397, 
+          "average": 9419.549019607843
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 433283, 
-          "average": 8842.510204081633
+          "count": 51, 
+          "sum": 502526, 
+          "average": 9853.450980392157
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 396796, 
-          "average": 8097.877551020408
+          "count": 51, 
+          "sum": 462495, 
+          "average": 9068.529411764706
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 404630, 
-          "average": 8257.755102040815
+          "count": 51, 
+          "sum": 471547, 
+          "average": 9246.019607843138
         }
       }, 
       "drugs.[0].Totals.Alcohol.Need Treatment Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 818525, 
-          "average": 17415.425531914894
+          "count": 51, 
+          "sum": 1023086, 
+          "average": 20060.50980392157
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 826158, 
-          "average": 17577.82978723404
+          "count": 51, 
+          "sum": 1035472, 
+          "average": 20303.37254901961
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 853176, 
-          "average": 17774.5
+          "count": 51, 
+          "sum": 1072454, 
+          "average": 21028.50980392157
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 939718, 
-          "average": 19177.918367346938
+          "count": 51, 
+          "sum": 1084718, 
+          "average": 21268.980392156864
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 833748, 
-          "average": 17739.31914893617
+          "count": 51, 
+          "sum": 1047833, 
+          "average": 20545.745098039217
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 845695, 
-          "average": 17618.645833333332
+          "count": 51, 
+          "sum": 1060159, 
+          "average": 20787.43137254902
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 980994, 
-          "average": 20437.375
+          "count": 51, 
+          "sum": 1143994, 
+          "average": 22431.254901960783
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 947849, 
-          "average": 19343.85714285714
+          "count": 51, 
+          "sum": 1096952, 
+          "average": 21508.86274509804
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 958942, 
-          "average": 19178.84
+          "count": 51, 
+          "sum": 1109149, 
+          "average": 21748.019607843136
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 940192, 
-          "average": 19187.591836734693
+          "count": 51, 
+          "sum": 1069591, 
+          "average": 20972.37254901961
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 948173, 
-          "average": 19350.469387755104
+          "count": 51, 
+          "sum": 1089676, 
+          "average": 21366.196078431374
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 988895, 
-          "average": 20181.530612244896
+          "count": 51, 
+          "sum": 1134695, 
+          "average": 22248.92156862745
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 964359, 
-          "average": 19680.79591836735
+          "count": 51, 
+          "sum": 1101866, 
+          "average": 21605.21568627451
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Dependence Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 259.31, 
-          "average": 5.517234042553191
+          "count": 51, 
+          "sum": 280.84, 
+          "average": 5.506666666666666
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 258.67, 
-          "average": 5.503617021276596
+          "count": 51, 
+          "sum": 280.07000000000005, 
+          "average": 5.49156862745098
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 262.11999999999995, 
-          "average": 5.460833333333333
+          "count": 51, 
+          "sum": 277.65, 
+          "average": 5.444117647058823
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 266.12000000000006, 
-          "average": 5.431020408163265
+          "count": 51, 
+          "sum": 276.8800000000001, 
+          "average": 5.429019607843137
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 257.97999999999996, 
-          "average": 5.488936170212766
+          "count": 51, 
+          "sum": 279.22999999999996, 
+          "average": 5.475098039215687
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 262.7700000000001, 
-          "average": 5.474374999999999
+          "count": 51, 
+          "sum": 278.46000000000015, 
+          "average": 5.46
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 238.29, 
-          "average": 4.9643749999999995
+          "count": 51, 
+          "sum": 253.89000000000001, 
+          "average": 4.978235294117646
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 265.44, 
-          "average": 5.417142857142857
+          "count": 51, 
+          "sum": 276.04, 
+          "average": 5.412549019607844
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 269.50999999999993, 
-          "average": 5.3902
+          "count": 51, 
+          "sum": 275.2699999999999, 
+          "average": 5.397450980392157
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 261.03999999999996, 
-          "average": 5.327346938775511
+          "count": 51, 
+          "sum": 273.8, 
+          "average": 5.368627450980393
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 262.9200000000001, 
-          "average": 5.365714285714286
+          "count": 51, 
+          "sum": 274.5300000000001, 
+          "average": 5.382941176470588
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 255.74999999999991, 
-          "average": 5.219387755102041
+          "count": 51, 
+          "sum": 268.05, 
+          "average": 5.2558823529411764
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 258.38000000000005, 
-          "average": 5.273061224489796
+          "count": 51, 
+          "sum": 270.91, 
+          "average": 5.311960784313726
         }
       }, 
       "drugs.[0].Totals.Alcohol.Binge Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 1052745, 
-          "average": 22398.82978723404
+          "count": 51, 
+          "sum": 1310233, 
+          "average": 25690.843137254902
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1061463, 
-          "average": 22584.31914893617
+          "count": 51, 
+          "sum": 1324901, 
+          "average": 25978.450980392157
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1092515, 
-          "average": 22760.729166666668
+          "count": 51, 
+          "sum": 1369000, 
+          "average": 26843.13725490196
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1213346, 
-          "average": 24762.163265306124
+          "count": 51, 
+          "sum": 1383728, 
+          "average": 27131.92156862745
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1070131, 
-          "average": 22768.744680851065
+          "count": 51, 
+          "sum": 1339581, 
+          "average": 26266.29411764706
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1083868, 
-          "average": 22580.583333333332
+          "count": 51, 
+          "sum": 1354280, 
+          "average": 26554.50980392157
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1126399, 
-          "average": 23466.645833333332
+          "count": 51, 
+          "sum": 1318599, 
+          "average": 25854.882352941175
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1223211, 
-          "average": 24963.48979591837
+          "count": 51, 
+          "sum": 1398476, 
+          "average": 27421.098039215685
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1237784, 
-          "average": 24755.68
+          "count": 51, 
+          "sum": 1413240, 
+          "average": 27710.58823529412
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1202493, 
-          "average": 24540.673469387755
+          "count": 51, 
+          "sum": 1365793, 
+          "average": 26780.254901960783
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1217764, 
-          "average": 24852.326530612245
+          "count": 51, 
+          "sum": 1389586, 
+          "average": 27246.78431372549
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1178792, 
-          "average": 24056.979591836734
+          "count": 51, 
+          "sum": 1342592, 
+          "average": 26325.333333333332
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1190859, 
-          "average": 24303.244897959183
+          "count": 51, 
+          "sum": 1354417, 
+          "average": 26557.196078431374
         }
       }, 
       "drugs.[0].Totals.Alcohol.Binge Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 3046586, 
-          "average": 64820.97872340425
+          "count": 51, 
+          "sum": 3788423, 
+          "average": 74282.80392156863
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 3101307, 
-          "average": 65985.25531914894
+          "count": 51, 
+          "sum": 3859621, 
+          "average": 75678.8431372549
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 3283681, 
-          "average": 68410.02083333333
+          "count": 51, 
+          "sum": 4076589, 
+          "average": 79933.11764705883
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 3668992, 
-          "average": 74877.38775510204
+          "count": 51, 
+          "sum": 4150047, 
+          "average": 81373.4705882353
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 3156476, 
-          "average": 67159.06382978724
+          "count": 51, 
+          "sum": 3931383, 
+          "average": 77085.94117647059
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 3227271, 
-          "average": 67234.8125
+          "count": 51, 
+          "sum": 4003703, 
+          "average": 78503.98039215687
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 3944397, 
-          "average": 82174.9375
+          "count": 51, 
+          "sum": 4578097, 
+          "average": 89766.60784313726
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 3733954, 
-          "average": 76203.14285714286
+          "count": 51, 
+          "sum": 4224061, 
+          "average": 82824.72549019608
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 3809899, 
-          "average": 76197.98
+          "count": 51, 
+          "sum": 4298641, 
+          "average": 84287.07843137255
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 3872497, 
-          "average": 79030.55102040817
+          "count": 51, 
+          "sum": 4353097, 
+          "average": 85354.8431372549
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 3835823, 
-          "average": 78282.10204081633
+          "count": 51, 
+          "sum": 4325937, 
+          "average": 84822.29411764706
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 3974394, 
-          "average": 81110.08163265306
+          "count": 51, 
+          "sum": 4477593, 
+          "average": 87795.94117647059
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 3923463, 
-          "average": 80070.67346938775
+          "count": 51, 
+          "sum": 4415303, 
+          "average": 86574.56862745098
         }
       }, 
       "drugs.[0].Totals.Marijuana.Used Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 307555, 
-          "average": 6543.723404255319
+          "count": 51, 
+          "sum": 381216, 
+          "average": 7474.823529411765
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 303291, 
-          "average": 6453.0
+          "count": 51, 
+          "sum": 378199, 
+          "average": 7415.666666666667
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 291708, 
-          "average": 6077.25
+          "count": 51, 
+          "sum": 368875, 
+          "average": 7232.843137254902
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 315003, 
-          "average": 6428.632653061224
+          "count": 51, 
+          "sum": 365682, 
+          "average": 7170.235294117647
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 298974, 
-          "average": 6361.148936170212
+          "count": 51, 
+          "sum": 375137, 
+          "average": 7355.6274509803925
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 296196, 
-          "average": 6170.75
+          "count": 51, 
+          "sum": 372030, 
+          "average": 7294.705882352941
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 274993, 
-          "average": 5729.020833333333
+          "count": 51, 
+          "sum": 330393, 
+          "average": 6478.294117647059
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 310347, 
-          "average": 6333.6122448979595
+          "count": 51, 
+          "sum": 362432, 
+          "average": 7106.509803921569
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 306262, 
-          "average": 6125.24
+          "count": 51, 
+          "sum": 359144, 
+          "average": 7042.0392156862745
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 294095, 
-          "average": 6001.938775510204
+          "count": 51, 
+          "sum": 345495, 
+          "average": 6774.411764705882
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 299829, 
-          "average": 6118.959183673469
+          "count": 51, 
+          "sum": 352280, 
+          "average": 6907.450980392156
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 290294, 
-          "average": 5924.367346938776
+          "count": 51, 
+          "sum": 335293, 
+          "average": 6574.3725490196075
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 292207, 
-          "average": 5963.408163265306
+          "count": 51, 
+          "sum": 340373, 
+          "average": 6673.980392156863
         }
       }, 
       "drugs.[0].Rates.Alcohol.Binge Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 2014.8300000000002, 
-          "average": 42.86872340425532
+          "count": 51, 
+          "sum": 2180.34, 
+          "average": 42.75176470588236
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 2007.7400000000002, 
-          "average": 42.71787234042553
+          "count": 51, 
+          "sum": 2174.7799999999997, 
+          "average": 42.64274509803922
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 2036.9, 
-          "average": 42.43541666666667
+          "count": 51, 
+          "sum": 2158.15, 
+          "average": 42.31666666666667
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 2069.3799999999997, 
-          "average": 42.232244897959184
+          "count": 51, 
+          "sum": 2152.5899999999997, 
+          "average": 42.20764705882353
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 2000.67, 
-          "average": 42.56744680851064
+          "count": 51, 
+          "sum": 2169.24, 
+          "average": 42.53411764705883
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 2044.0699999999995, 
-          "average": 42.58479166666667
+          "count": 51, 
+          "sum": 2163.68, 
+          "average": 42.42509803921568
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1846.0099999999995, 
-          "average": 38.45854166666667
+          "count": 51, 
+          "sum": 1967.509999999999, 
+          "average": 38.57862745098039
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 2062.13, 
-          "average": 42.08428571428572
+          "count": 51, 
+          "sum": 2147.05, 
+          "average": 42.09901960784314
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 2101.6, 
-          "average": 42.032
+          "count": 51, 
+          "sum": 2141.49, 
+          "average": 41.99
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 2012.3700000000003, 
-          "average": 41.06877551020408
+          "count": 51, 
+          "sum": 2096.0700000000006, 
+          "average": 41.099411764705884
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 2033.5699999999997, 
-          "average": 41.50142857142857
+          "count": 51, 
+          "sum": 2118.7299999999996, 
+          "average": 41.54372549019608
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1937.2899999999997, 
-          "average": 39.536530612244896
+          "count": 51, 
+          "sum": 2018.6599999999999, 
+          "average": 39.581568627450984
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1974.8399999999992, 
-          "average": 40.30285714285714
+          "count": 51, 
+          "sum": 2057.3699999999994, 
+          "average": 40.34058823529411
         }
       }, 
       "drugs.[0].Totals.Alcohol.Use Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 7667360, 
-          "average": 163135.31914893616
+          "count": 51, 
+          "sum": 9513388, 
+          "average": 186537.01960784313
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 7795640, 
-          "average": 165864.68085106384
+          "count": 51, 
+          "sum": 9669630, 
+          "average": 189600.58823529413
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 8222786, 
-          "average": 171308.04166666666
+          "count": 51, 
+          "sum": 10144712, 
+          "average": 198915.92156862744
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 9086251, 
-          "average": 185433.693877551
+          "count": 51, 
+          "sum": 10305189, 
+          "average": 202062.5294117647
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 7924899, 
-          "average": 168614.87234042553
+          "count": 51, 
+          "sum": 9826927, 
+          "average": 192684.8431372549
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 8090673, 
-          "average": 168555.6875
+          "count": 51, 
+          "sum": 9985289, 
+          "average": 195789.98039215687
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 9880990, 
-          "average": 205853.95833333334
+          "count": 51, 
+          "sum": 11462690, 
+          "average": 224758.6274509804
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 9240814, 
-          "average": 188588.04081632654
+          "count": 51, 
+          "sum": 10466730, 
+          "average": 205230.0
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 9420632, 
-          "average": 188412.64
+          "count": 51, 
+          "sum": 10629328, 
+          "average": 208418.19607843139
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 9755692, 
-          "average": 199095.75510204083
+          "count": 51, 
+          "sum": 11035391, 
+          "average": 216380.21568627452
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 9575205, 
-          "average": 195412.3469387755
+          "count": 51, 
+          "sum": 10831329, 
+          "average": 212379.0
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 9939294, 
-          "average": 202842.73469387754
+          "count": 51, 
+          "sum": 11235993, 
+          "average": 220313.58823529413
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 9847985, 
-          "average": 200979.2857142857
+          "count": 51, 
+          "sum": 11136360, 
+          "average": 218360.0
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.All Except Marijuana Used Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 403.9099999999999, 
-          "average": 8.593829787234043
+          "count": 51, 
+          "sum": 433.1399999999999, 
+          "average": 8.492941176470588
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 403.48999999999995, 
-          "average": 8.584893617021276
+          "count": 51, 
+          "sum": 432.86999999999995, 
+          "average": 8.48764705882353
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 409.69999999999993, 
-          "average": 8.535416666666666
+          "count": 51, 
+          "sum": 432.0799999999999, 
+          "average": 8.472156862745098
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 416.63, 
-          "average": 8.502653061224489
+          "count": 51, 
+          "sum": 431.81, 
+          "average": 8.46686274509804
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 403.0700000000001, 
-          "average": 8.575957446808511
+          "count": 51, 
+          "sum": 432.6200000000002, 
+          "average": 8.482745098039215
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 410.07000000000005, 
-          "average": 8.543125
+          "count": 51, 
+          "sum": 432.3500000000001, 
+          "average": 8.477450980392158
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 309.62000000000006, 
-          "average": 6.4504166666666665
+          "count": 51, 
+          "sum": 328.82, 
+          "average": 6.447450980392157
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 416.0700000000001, 
-          "average": 8.491224489795918
+          "count": 51, 
+          "sum": 431.5600000000002, 
+          "average": 8.461960784313726
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 423.30000000000007, 
-          "average": 8.466000000000001
+          "count": 51, 
+          "sum": 431.29000000000013, 
+          "average": 8.456666666666667
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 349.51, 
-          "average": 7.132857142857143
+          "count": 51, 
+          "sum": 362.38, 
+          "average": 7.105490196078431
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 382.54, 
-          "average": 7.806938775510204
+          "count": 51, 
+          "sum": 396.8700000000001, 
+          "average": 7.781764705882353
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 335.75999999999993, 
-          "average": 6.852244897959183
+          "count": 51, 
+          "sum": 349.37, 
+          "average": 6.850392156862745
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 342.6400000000001, 
-          "average": 6.992653061224489
+          "count": 51, 
+          "sum": 355.8800000000001, 
+          "average": 6.978039215686274
         }
       }, 
       "drugs.[0].Totals.Pain Relievers Abuse Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 301784, 
-          "average": 6420.936170212766
+          "count": 51, 
+          "sum": 372372, 
+          "average": 7301.411764705882
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 304676, 
-          "average": 6482.468085106383
+          "count": 51, 
+          "sum": 375985, 
+          "average": 7372.254901960784
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 314295, 
-          "average": 6547.8125
+          "count": 51, 
+          "sum": 386560, 
+          "average": 7579.607843137255
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 347480, 
-          "average": 7091.428571428572
+          "count": 51, 
+          "sum": 390005, 
+          "average": 7647.156862745098
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 307526, 
-          "average": 6543.106382978724
+          "count": 51, 
+          "sum": 379549, 
+          "average": 7442.137254901961
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 311469, 
-          "average": 6488.9375
+          "count": 51, 
+          "sum": 383077, 
+          "average": 7511.313725490196
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 248695, 
-          "average": 5181.145833333333
+          "count": 51, 
+          "sum": 290694, 
+          "average": 5699.882352941177
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 350437, 
-          "average": 7151.775510204082
+          "count": 51, 
+          "sum": 393407, 
+          "average": 7713.862745098039
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 354190, 
-          "average": 7083.8
+          "count": 51, 
+          "sum": 396767, 
+          "average": 7779.745098039216
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 298194, 
-          "average": 6085.591836734694
+          "count": 51, 
+          "sum": 342594, 
+          "average": 6717.529411764706
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 325922, 
-          "average": 6651.469387755102
+          "count": 51, 
+          "sum": 369827, 
+          "average": 7251.509803921569
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 281894, 
-          "average": 5752.938775510204
+          "count": 51, 
+          "sum": 328494, 
+          "average": 6441.058823529412
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 290114, 
-          "average": 5920.693877551021
+          "count": 51, 
+          "sum": 335607, 
+          "average": 6580.529411764706
         }
       }, 
       "drugs.[0].Totals.Tobacco.Perceptions of Risk.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 10434434, 
-          "average": 222009.2340425532
+          "count": 51, 
+          "sum": 13106946, 
+          "average": 256998.9411764706
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 10545386, 
-          "average": 224369.914893617
+          "count": 51, 
+          "sum": 13254843, 
+          "average": 259898.88235294117
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 10921515, 
-          "average": 227531.5625
+          "count": 51, 
+          "sum": 13697393, 
+          "average": 268576.3333333333
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 12087510, 
-          "average": 246683.8775510204
+          "count": 51, 
+          "sum": 13844530, 
+          "average": 271461.3725490196
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 10656287, 
-          "average": 226729.51063829788
+          "count": 51, 
+          "sum": 13402551, 
+          "average": 262795.1176470588
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 10810372, 
-          "average": 225216.08333333334
+          "count": 51, 
+          "sum": 13550070, 
+          "average": 265687.64705882355
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 12605697, 
-          "average": 262618.6875
+          "count": 51, 
+          "sum": 14802497, 
+          "average": 290245.03921568627
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 12220259, 
-          "average": 249393.04081632654
+          "count": 51, 
+          "sum": 13991475, 
+          "average": 274342.64705882355
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 12382256, 
-          "average": 247645.12
+          "count": 51, 
+          "sum": 14138235, 
+          "average": 277220.29411764705
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 12677089, 
-          "average": 258716.10204081633
+          "count": 51, 
+          "sum": 14560989, 
+          "average": 285509.5882352941
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 12514565, 
-          "average": 255399.2857142857
+          "count": 51, 
+          "sum": 14348827, 
+          "average": 281349.54901960783
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 12784995, 
-          "average": 260918.26530612246
+          "count": 51, 
+          "sum": 14690195, 
+          "average": 288043.03921568627
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 12732122, 
-          "average": 259839.22448979592
+          "count": 51, 
+          "sum": 14626967, 
+          "average": 286803.2745098039
         }
       }, 
       "drugs.[0].Rates.Alcohol.In Minors.Abuse": {
         "2002": {
-          "count": 47, 
-          "sum": 976.7800000000001, 
-          "average": 20.78255319148936
+          "count": 51, 
+          "sum": 1055.39, 
+          "average": 20.69392156862745
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 958.9099999999999, 
-          "average": 20.402340425531914
+          "count": 51, 
+          "sum": 1036.79, 
+          "average": 20.32921568627451
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 930.7900000000001, 
-          "average": 19.391458333333333
+          "count": 51, 
+          "sum": 981.0500000000001, 
+          "average": 19.23627450980392
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 929.0799999999999, 
-          "average": 18.96081632653061
+          "count": 51, 
+          "sum": 962.4500000000002, 
+          "average": 18.87156862745098
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 941.08, 
-          "average": 20.022978723404258
+          "count": 51, 
+          "sum": 1018.2500000000001, 
+          "average": 19.965686274509803
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 949.5000000000001, 
-          "average": 19.78125
+          "count": 51, 
+          "sum": 999.6500000000001, 
+          "average": 19.600980392156863
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 692.54, 
-          "average": 14.427916666666667
+          "count": 51, 
+          "sum": 735.97, 
+          "average": 14.430784313725491
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 910.4, 
-          "average": 18.579591836734693
+          "count": 51, 
+          "sum": 943.91, 
+          "average": 18.508039215686274
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 908.3800000000001, 
-          "average": 18.1676
+          "count": 51, 
+          "sum": 925.3100000000002, 
+          "average": 18.14333333333333
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 781.4600000000002, 
-          "average": 15.948163265306123
+          "count": 51, 
+          "sum": 816.3800000000001, 
+          "average": 16.007450980392157
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 836.5699999999997, 
-          "average": 17.072857142857142
+          "count": 51, 
+          "sum": 870.8599999999998, 
+          "average": 17.075686274509803
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 748.7500000000002, 
-          "average": 15.28061224489796
+          "count": 51, 
+          "sum": 779.5200000000002, 
+          "average": 15.284705882352942
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 765.1300000000002, 
-          "average": 15.614897959183674
+          "count": 51, 
+          "sum": 797.9700000000001, 
+          "average": 15.646470588235294
         }
       }, 
       "drugs.[0].Totals.Tobacco.Use Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 4424083, 
-          "average": 94129.4255319149
+          "count": 51, 
+          "sum": 5292392, 
+          "average": 103772.39215686274
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 4422242, 
-          "average": 94090.25531914894
+          "count": 51, 
+          "sum": 5295987, 
+          "average": 103842.88235294117
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 4429228, 
-          "average": 92275.58333333333
+          "count": 51, 
+          "sum": 5297748, 
+          "average": 103877.41176470589
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 4809919, 
-          "average": 98161.61224489796
+          "count": 51, 
+          "sum": 5295314, 
+          "average": 103829.6862745098
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 4419252, 
-          "average": 94026.63829787234
+          "count": 51, 
+          "sum": 5298084, 
+          "average": 103884.0
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 4434366, 
-          "average": 92382.625
+          "count": 51, 
+          "sum": 5298670, 
+          "average": 103895.49019607843
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 4700599, 
-          "average": 97929.14583333333
+          "count": 51, 
+          "sum": 5247399, 
+          "average": 102890.17647058824
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 4803745, 
-          "average": 98035.61224489796
+          "count": 51, 
+          "sum": 5291378, 
+          "average": 103752.50980392157
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 4806493, 
-          "average": 96129.86
+          "count": 51, 
+          "sum": 5285932, 
+          "average": 103645.72549019608
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 4860293, 
-          "average": 99189.6530612245
+          "count": 51, 
+          "sum": 5318393, 
+          "average": 104282.2156862745
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 4828387, 
-          "average": 98538.51020408163
+          "count": 51, 
+          "sum": 5302630, 
+          "average": 103973.13725490196
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 4845093, 
-          "average": 98879.44897959183
+          "count": 51, 
+          "sum": 5310491, 
+          "average": 104127.27450980392
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 4853348, 
-          "average": 99047.91836734694
+          "count": 51, 
+          "sum": 5315145, 
+          "average": 104218.5294117647
         }
       }, 
       "drugs.[0].Totals.Marijuana.Used Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 1006144, 
-          "average": 21407.31914893617
+          "count": 51, 
+          "sum": 1242314, 
+          "average": 24359.098039215685
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1033470, 
-          "average": 21988.72340425532
+          "count": 51, 
+          "sum": 1281104, 
+          "average": 25119.686274509804
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1123534, 
-          "average": 23406.958333333332
+          "count": 51, 
+          "sum": 1400924, 
+          "average": 27469.098039215685
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1232596, 
-          "average": 25155.020408163266
+          "count": 51, 
+          "sum": 1442017, 
+          "average": 28274.843137254902
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1061143, 
-          "average": 22577.510638297874
+          "count": 51, 
+          "sum": 1320467, 
+          "average": 25891.50980392157
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1094950, 
-          "average": 22811.458333333332
+          "count": 51, 
+          "sum": 1360409, 
+          "average": 26674.686274509804
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1634590, 
-          "average": 34053.958333333336
+          "count": 51, 
+          "sum": 1965790, 
+          "average": 38544.901960784315
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1265464, 
-          "average": 25825.79591836735
+          "count": 51, 
+          "sum": 1483684, 
+          "average": 29091.843137254902
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1303336, 
-          "average": 26066.72
+          "count": 51, 
+          "sum": 1525924, 
+          "average": 29920.07843137255
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1399495, 
-          "average": 28561.122448979593
+          "count": 51, 
+          "sum": 1644194, 
+          "average": 32239.098039215685
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1348826, 
-          "average": 27527.061224489797
+          "count": 51, 
+          "sum": 1584675, 
+          "average": 31072.058823529413
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1543996, 
-          "average": 31510.122448979593
+          "count": 51, 
+          "sum": 1792996, 
+          "average": 35156.78431372549
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1471101, 
-          "average": 30022.469387755104
+          "count": 51, 
+          "sum": 1717973, 
+          "average": 33685.74509803922
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Cocaine Used Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 92.87999999999997, 
-          "average": 1.9761702127659573
+          "count": 51, 
+          "sum": 100.31999999999995, 
+          "average": 1.9670588235294115
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 86.03, 
-          "average": 1.8304255319148937
+          "count": 51, 
+          "sum": 92.95, 
+          "average": 1.822549019607843
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 67.1, 
-          "average": 1.3979166666666665
+          "count": 51, 
+          "sum": 70.80999999999999, 
+          "average": 1.3884313725490196
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 61.580000000000005, 
-          "average": 1.256734693877551
+          "count": 51, 
+          "sum": 63.440000000000005, 
+          "average": 1.243921568627451
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 79.17, 
-          "average": 1.684468085106383
+          "count": 51, 
+          "sum": 85.58, 
+          "average": 1.6780392156862745
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 74.19999999999999, 
-          "average": 1.5458333333333334
+          "count": 51, 
+          "sum": 78.20999999999998, 
+          "average": 1.5335294117647058
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 21.390000000000004, 
-          "average": 0.445625
+          "count": 51, 
+          "sum": 23.260000000000005, 
+          "average": 0.45607843137254905
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 54.31000000000002, 
-          "average": 1.1083673469387756
+          "count": 51, 
+          "sum": 56.070000000000014, 
+          "average": 1.0994117647058823
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 47.42, 
-          "average": 0.9484
+          "count": 51, 
+          "sum": 48.7, 
+          "average": 0.9549019607843138
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 37.45, 
-          "average": 0.7642857142857143
+          "count": 51, 
+          "sum": 38.5, 
+          "average": 0.7549019607843137
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 42.25000000000001, 
-          "average": 0.8622448979591837
+          "count": 51, 
+          "sum": 43.61, 
+          "average": 0.8550980392156863
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 26.6, 
-          "average": 0.5428571428571429
+          "count": 51, 
+          "sum": 27.39, 
+          "average": 0.5370588235294118
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 32.04, 
-          "average": 0.6538775510204081
+          "count": 51, 
+          "sum": 32.959999999999994, 
+          "average": 0.6462745098039215
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Dependence Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 59345, 
-          "average": 1262.659574468085
+          "count": 51, 
+          "sum": 73506, 
+          "average": 1441.2941176470588
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 57905, 
-          "average": 1232.0212765957447
+          "count": 51, 
+          "sum": 72102, 
+          "average": 1413.764705882353
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 53693, 
-          "average": 1118.6041666666667
+          "count": 51, 
+          "sum": 67727, 
+          "average": 1327.9803921568628
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 57605, 
-          "average": 1175.6122448979593
+          "count": 51, 
+          "sum": 66215, 
+          "average": 1298.3333333333333
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 56436, 
-          "average": 1200.7659574468084
+          "count": 51, 
+          "sum": 70663, 
+          "average": 1385.549019607843
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 55214, 
-          "average": 1150.2916666666667
+          "count": 51, 
+          "sum": 69209, 
+          "average": 1357.0392156862745
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 39590, 
-          "average": 824.7916666666666
+          "count": 51, 
+          "sum": 46790, 
+          "average": 917.4509803921569
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 55977, 
-          "average": 1142.3877551020407
+          "count": 51, 
+          "sum": 64683, 
+          "average": 1268.2941176470588
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 54396, 
-          "average": 1087.92
+          "count": 51, 
+          "sum": 63120, 
+          "average": 1237.6470588235295
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 47890, 
-          "average": 977.3469387755102
+          "count": 51, 
+          "sum": 56490, 
+          "average": 1107.6470588235295
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 51070, 
-          "average": 1042.2448979591836
+          "count": 51, 
+          "sum": 59771, 
+          "average": 1171.9803921568628
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 42892, 
-          "average": 875.3469387755102
+          "count": 51, 
+          "sum": 49291, 
+          "average": 966.4901960784314
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 45377, 
-          "average": 926.0612244897959
+          "count": 51, 
+          "sum": 52864, 
+          "average": 1036.549019607843
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.All Except Marijuana Used Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 124.78000000000003, 
-          "average": 2.6548936170212767
+          "count": 51, 
+          "sum": 136.79000000000002, 
+          "average": 2.682156862745098
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 125.26999999999997, 
-          "average": 2.6653191489361703
+          "count": 51, 
+          "sum": 137.19, 
+          "average": 2.69
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 129.15, 
-          "average": 2.6906250000000003
+          "count": 51, 
+          "sum": 138.38, 
+          "average": 2.7133333333333334
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 132.01999999999998, 
-          "average": 2.6942857142857144
+          "count": 51, 
+          "sum": 138.78, 
+          "average": 2.7211764705882353
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 125.76000000000002, 
-          "average": 2.675744680851064
+          "count": 51, 
+          "sum": 137.57999999999998, 
+          "average": 2.6976470588235295
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 128.73000000000002, 
-          "average": 2.681875
+          "count": 51, 
+          "sum": 137.98000000000002, 
+          "average": 2.705490196078431
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 123.33, 
-          "average": 2.569375
+          "count": 51, 
+          "sum": 135.47, 
+          "average": 2.6562745098039215
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 132.39, 
-          "average": 2.7018367346938774
+          "count": 51, 
+          "sum": 139.17, 
+          "average": 2.7288235294117644
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 136.76000000000002, 
-          "average": 2.7352
+          "count": 51, 
+          "sum": 139.57000000000002, 
+          "average": 2.7366666666666664
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 126.89999999999999, 
-          "average": 2.589795918367347
+          "count": 51, 
+          "sum": 133.89, 
+          "average": 2.6252941176470586
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 129.82999999999998, 
-          "average": 2.6495918367346936
+          "count": 51, 
+          "sum": 136.72999999999996, 
+          "average": 2.6809803921568625
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 128.06, 
-          "average": 2.613469387755102
+          "count": 51, 
+          "sum": 136.86, 
+          "average": 2.6835294117647055
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 127.49000000000004, 
-          "average": 2.6018367346938773
+          "count": 51, 
+          "sum": 135.38000000000005, 
+          "average": 2.6545098039215684
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Need Treatment Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 189168, 
-          "average": 4024.851063829787
+          "count": 51, 
+          "sum": 237227, 
+          "average": 4651.509803921569
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 189844, 
-          "average": 4039.2340425531916
+          "count": 51, 
+          "sum": 238539, 
+          "average": 4677.235294117647
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 192353, 
-          "average": 4007.3541666666665
+          "count": 51, 
+          "sum": 242170, 
+          "average": 4748.431372549019
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 210511, 
-          "average": 4296.142857142857
+          "count": 51, 
+          "sum": 243290, 
+          "average": 4770.392156862745
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 190469, 
-          "average": 4052.531914893617
+          "count": 51, 
+          "sum": 239798, 
+          "average": 4701.921568627451
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 191825, 
-          "average": 3996.3541666666665
+          "count": 51, 
+          "sum": 241010, 
+          "average": 4725.686274509804
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 187690, 
-          "average": 3910.2083333333335
+          "count": 51, 
+          "sum": 222890, 
+          "average": 4370.392156862745
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 211096, 
-          "average": 4308.081632653061
+          "count": 51, 
+          "sum": 244350, 
+          "average": 4791.176470588235
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 212293, 
-          "average": 4245.86
+          "count": 51, 
+          "sum": 245369, 
+          "average": 4811.156862745098
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 200895, 
-          "average": 4099.897959183673
+          "count": 51, 
+          "sum": 242295, 
+          "average": 4750.882352941177
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 206288, 
-          "average": 4209.959183673469
+          "count": 51, 
+          "sum": 243829, 
+          "average": 4780.9607843137255
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 203492, 
-          "average": 4152.897959183673
+          "count": 51, 
+          "sum": 240792, 
+          "average": 4721.411764705882
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 202184, 
-          "average": 4126.2040816326535
+          "count": 51, 
+          "sum": 241556, 
+          "average": 4736.392156862745
         }
       }, 
       "drugs.[0].Rates.Tobacco.Use Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 1443.0599999999995, 
-          "average": 30.703404255319146
+          "count": 51, 
+          "sum": 1556.7099999999998, 
+          "average": 30.523725490196078
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1430.0100000000002, 
-          "average": 30.425744680851064
+          "count": 51, 
+          "sum": 1542.5900000000001, 
+          "average": 30.24686274509804
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1422.5700000000004, 
-          "average": 29.636875
+          "count": 51, 
+          "sum": 1500.1500000000003, 
+          "average": 29.414705882352944
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1436.6999999999996, 
-          "average": 29.320408163265306
+          "count": 51, 
+          "sum": 1486.0299999999997, 
+          "average": 29.1378431372549
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1416.95, 
-          "average": 30.147872340425533
+          "count": 51, 
+          "sum": 1528.45, 
+          "average": 29.969607843137254
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1435.84, 
-          "average": 29.91333333333333
+          "count": 51, 
+          "sum": 1514.33, 
+          "average": 29.692745098039214
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1318.8500000000001, 
-          "average": 27.476041666666664
+          "count": 51, 
+          "sum": 1389.9800000000005, 
+          "average": 27.254509803921568
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1422.98, 
-          "average": 29.040408163265308
+          "count": 51, 
+          "sum": 1471.8900000000003, 
+          "average": 28.860588235294117
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1436.6400000000003, 
-          "average": 28.7328
+          "count": 51, 
+          "sum": 1457.7700000000004, 
+          "average": 28.583725490196077
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1409.05, 
-          "average": 28.756122448979593
+          "count": 51, 
+          "sum": 1453.8, 
+          "average": 28.505882352941175
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1409.1600000000003, 
-          "average": 28.758367346938776
+          "count": 51, 
+          "sum": 1455.7800000000002, 
+          "average": 28.54470588235294
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1384.33, 
-          "average": 28.251632653061222
+          "count": 51, 
+          "sum": 1430.6099999999997, 
+          "average": 28.051176470588235
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1396.7, 
-          "average": 28.50408163265306
+          "count": 51, 
+          "sum": 1442.2099999999998, 
+          "average": 28.278627450980395
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Cocaine Used Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 268763, 
-          "average": 5718.36170212766
+          "count": 51, 
+          "sum": 331266, 
+          "average": 6495.411764705882
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 261929, 
-          "average": 5572.95744680851
+          "count": 51, 
+          "sum": 323698, 
+          "average": 6347.019607843137
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 240975, 
-          "average": 5020.3125
+          "count": 51, 
+          "sum": 299378, 
+          "average": 5870.156862745098
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 252756, 
-          "average": 5158.285714285715
+          "count": 51, 
+          "sum": 290732, 
+          "average": 5700.6274509803925
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 254877, 
-          "average": 5422.914893617021
+          "count": 51, 
+          "sum": 315862, 
+          "average": 6193.3725490196075
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 248485, 
-          "average": 5176.770833333333
+          "count": 51, 
+          "sum": 307754, 
+          "average": 6034.392156862745
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 217794, 
-          "average": 4537.375
+          "count": 51, 
+          "sum": 264094, 
+          "average": 5178.313725490196
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 244637, 
-          "average": 4992.591836734694
+          "count": 51, 
+          "sum": 281815, 
+          "average": 5525.78431372549
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 237455, 
-          "average": 4749.1
+          "count": 51, 
+          "sum": 272624, 
+          "average": 5345.568627450981
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 216194, 
-          "average": 4412.122448979592
+          "count": 51, 
+          "sum": 247794, 
+          "average": 4858.705882352941
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 226362, 
-          "average": 4619.632653061224
+          "count": 51, 
+          "sum": 260376, 
+          "average": 5105.411764705882
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 232696, 
-          "average": 4748.897959183673
+          "count": 51, 
+          "sum": 270096, 
+          "average": 5296.0
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 224337, 
-          "average": 4578.306122448979
+          "count": 51, 
+          "sum": 258800, 
+          "average": 5074.509803921569
         }
       }, 
       "drugs.[0].Rates.Tobacco.Perceptions of Risk.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 3002.3799999999997, 
-          "average": 63.880425531914895
+          "count": 51, 
+          "sum": 3282.06, 
+          "average": 64.35411764705883
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 2998.6499999999996, 
-          "average": 63.80106382978724
+          "count": 51, 
+          "sum": 3276.5299999999993, 
+          "average": 64.24568627450981
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 3050.7200000000007, 
-          "average": 63.556666666666665
+          "count": 51, 
+          "sum": 3260.040000000001, 
+          "average": 63.92235294117647
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 3111.9399999999987, 
-          "average": 63.508979591836734
+          "count": 51, 
+          "sum": 3254.509999999999, 
+          "average": 63.81392156862746
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 2994.98, 
-          "average": 63.72297872340425
+          "count": 51, 
+          "sum": 3271.0799999999995, 
+          "average": 64.13882352941177
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 3055.33, 
-          "average": 63.65270833333333
+          "count": 51, 
+          "sum": 3265.5499999999993, 
+          "average": 64.03039215686275
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 3052.75, 
-          "average": 63.598958333333336
+          "count": 51, 
+          "sum": 3254.1500000000005, 
+          "average": 63.806862745098044
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 3107.3399999999992, 
-          "average": 63.41510204081633
+          "count": 51, 
+          "sum": 3249.0599999999995, 
+          "average": 63.70705882352941
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 3172.39, 
-          "average": 63.4478
+          "count": 51, 
+          "sum": 3243.53, 
+          "average": 63.598627450980395
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 3134.8399999999992, 
-          "average": 63.97632653061225
+          "count": 51, 
+          "sum": 3273.7499999999995, 
+          "average": 64.19117647058823
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 3118.7599999999993, 
-          "average": 63.648163265306124
+          "count": 51, 
+          "sum": 3258.6399999999994, 
+          "average": 63.89490196078431
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 3104.999999999999, 
-          "average": 63.36734693877551
+          "count": 51, 
+          "sum": 3244.279999999999, 
+          "average": 63.61333333333334
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 3119.9100000000003, 
-          "average": 63.67163265306122
+          "count": 51, 
+          "sum": 3259.0000000000005, 
+          "average": 63.90196078431372
         }
       }, 
       "drugs.[0].Rates.Alcohol.Binge Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 540.3800000000001, 
-          "average": 11.497446808510638
+          "count": 51, 
+          "sum": 582.8500000000001, 
+          "average": 11.42843137254902
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 520.89, 
-          "average": 11.082765957446808
+          "count": 51, 
+          "sum": 562.44, 
+          "average": 11.028235294117646
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 477.34000000000003, 
-          "average": 9.944583333333332
+          "count": 51, 
+          "sum": 501.1900000000001, 
+          "average": 9.827254901960785
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 465.48999999999995, 
-          "average": 9.499795918367347
+          "count": 51, 
+          "sum": 480.78, 
+          "average": 9.427058823529412
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 501.44, 
-          "average": 10.668936170212765
+          "count": 51, 
+          "sum": 542.0400000000001, 
+          "average": 10.628235294117646
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 497.5800000000001, 
-          "average": 10.366249999999999
+          "count": 51, 
+          "sum": 521.63, 
+          "average": 10.228039215686275
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 293.97999999999996, 
-          "average": 6.124583333333334
+          "count": 51, 
+          "sum": 312.80999999999995, 
+          "average": 6.133529411764706
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 445.0, 
-          "average": 9.081632653061224
+          "count": 51, 
+          "sum": 460.38000000000005, 
+          "average": 9.027058823529412
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 431.4000000000003, 
-          "average": 8.628
+          "count": 51, 
+          "sum": 439.9700000000003, 
+          "average": 8.62686274509804
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 363.81, 
-          "average": 7.424693877551021
+          "count": 51, 
+          "sum": 376.21999999999997, 
+          "average": 7.376862745098038
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 394.11999999999995, 
-          "average": 8.04326530612245
+          "count": 51, 
+          "sum": 408.07, 
+          "average": 8.001372549019608
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 332.49999999999994, 
-          "average": 6.785714285714286
+          "count": 51, 
+          "sum": 344.5199999999999, 
+          "average": 6.7552941176470584
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 348.17, 
-          "average": 7.105510204081633
+          "count": 51, 
+          "sum": 360.38000000000005, 
+          "average": 7.066274509803922
         }
       }, 
       "drugs.[0].Totals.Pain Relievers Abuse Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 149362, 
-          "average": 3177.9148936170213
+          "count": 51, 
+          "sum": 188655, 
+          "average": 3699.1176470588234
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 146791, 
-          "average": 3123.2127659574467
+          "count": 51, 
+          "sum": 185737, 
+          "average": 3641.901960784314
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 139392, 
-          "average": 2904.0
+          "count": 51, 
+          "sum": 176550, 
+          "average": 3461.764705882353
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 150785, 
-          "average": 3077.2448979591836
+          "count": 51, 
+          "sum": 173350, 
+          "average": 3399.0196078431372
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 144166, 
-          "average": 3067.3617021276596
+          "count": 51, 
+          "sum": 182744, 
+          "average": 3583.2156862745096
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 142126, 
-          "average": 2960.9583333333335
+          "count": 51, 
+          "sum": 179681, 
+          "average": 3523.156862745098
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 98995, 
-          "average": 2062.3958333333335
+          "count": 51, 
+          "sum": 116395, 
+          "average": 2282.2549019607845
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 147703, 
-          "average": 3014.3469387755104
+          "count": 51, 
+          "sum": 170084, 
+          "average": 3334.9803921568628
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 144735, 
-          "average": 2894.7
+          "count": 51, 
+          "sum": 166747, 
+          "average": 3269.549019607843
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 122586, 
-          "average": 2501.7551020408164
+          "count": 51, 
+          "sum": 140786, 
+          "average": 2760.5098039215686
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 133462, 
-          "average": 2723.714285714286
+          "count": 51, 
+          "sum": 153629, 
+          "average": 3012.3333333333335
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 107994, 
-          "average": 2203.9591836734694
+          "count": 51, 
+          "sum": 124594, 
+          "average": 2443.0196078431372
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 115249, 
-          "average": 2352.0204081632655
+          "count": 51, 
+          "sum": 132640, 
+          "average": 2600.7843137254904
         }
       }, 
       "drugs.[0].Rates.Tobacco.Use Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 2237.1400000000003, 
-          "average": 47.59872340425532
+          "count": 51, 
+          "sum": 2405.8999999999996, 
+          "average": 47.17450980392157
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 2209.92, 
-          "average": 47.01957446808511
+          "count": 51, 
+          "sum": 2376.82, 
+          "average": 46.6043137254902
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 2178.5499999999997, 
-          "average": 45.38645833333334
+          "count": 51, 
+          "sum": 2289.4199999999996, 
+          "average": 44.89058823529412
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 2190.0299999999997, 
-          "average": 44.69448979591837
+          "count": 51, 
+          "sum": 2260.3399999999992, 
+          "average": 44.320392156862745
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 2182.6199999999994, 
-          "average": 46.43872340425532
+          "count": 51, 
+          "sum": 2347.649999999999, 
+          "average": 46.03235294117647
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 2206.6699999999996, 
-          "average": 45.97229166666667
+          "count": 51, 
+          "sum": 2318.5699999999997, 
+          "average": 45.462156862745104
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1833.3999999999996, 
-          "average": 38.19583333333333
+          "count": 51, 
+          "sum": 1930.5099999999995, 
+          "average": 37.85313725490196
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 2161.31, 
-          "average": 44.10836734693878
+          "count": 51, 
+          "sum": 2231.17, 
+          "average": 43.74843137254902
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 2168.16, 
-          "average": 43.3632
+          "count": 51, 
+          "sum": 2202.0899999999997, 
+          "average": 43.17823529411765
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 2031.2600000000004, 
-          "average": 41.45428571428572
+          "count": 51, 
+          "sum": 2092.9900000000007, 
+          "average": 41.03901960784313
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 2081.95, 
-          "average": 42.48877551020408
+          "count": 51, 
+          "sum": 2147.5299999999997, 
+          "average": 42.10843137254902
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1948.2199999999998, 
-          "average": 39.75959183673469
+          "count": 51, 
+          "sum": 2010.3799999999999, 
+          "average": 39.41921568627451
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1989.7299999999996, 
-          "average": 40.60673469387755
+          "count": 51, 
+          "sum": 2051.6699999999996, 
+          "average": 40.22882352941176
         }
       }, 
       "drugs.[0].Totals.Tobacco.Use Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 310758, 
-          "average": 6611.872340425532
+          "count": 51, 
+          "sum": 368272, 
+          "average": 7221.019607843137
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 300650, 
-          "average": 6396.808510638298
+          "count": 51, 
+          "sum": 357756, 
+          "average": 7014.823529411765
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 271145, 
-          "average": 5648.854166666667
+          "count": 51, 
+          "sum": 325325, 
+          "average": 6378.921568627451
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 284219, 
-          "average": 5800.3877551020405
+          "count": 51, 
+          "sum": 314221, 
+          "average": 6161.196078431372
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 290421, 
-          "average": 6179.170212765957
+          "count": 51, 
+          "sum": 347085, 
+          "average": 6805.588235294118
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 281662, 
-          "average": 5867.958333333333
+          "count": 51, 
+          "sum": 336276, 
+          "average": 6593.64705882353
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 165394, 
-          "average": 3445.7083333333335
+          "count": 51, 
+          "sum": 184693, 
+          "average": 3621.4313725490197
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 272714, 
-          "average": 5565.591836734694
+          "count": 51, 
+          "sum": 302972, 
+          "average": 5940.6274509803925
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 261410, 
-          "average": 5228.2
+          "count": 51, 
+          "sum": 291581, 
+          "average": 5717.274509803921
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 211494, 
-          "average": 4316.2040816326535
+          "count": 51, 
+          "sum": 232394, 
+          "average": 4556.745098039216
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 236042, 
-          "average": 4817.183673469388
+          "count": 51, 
+          "sum": 261678, 
+          "average": 5130.941176470588
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 187491, 
-          "average": 3826.3469387755104
+          "count": 51, 
+          "sum": 205391, 
+          "average": 4027.274509803922
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 199452, 
-          "average": 4070.4489795918366
+          "count": 51, 
+          "sum": 218835, 
+          "average": 4290.882352941177
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.All Except Marijuana Used Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 110390, 
-          "average": 2348.723404255319
+          "count": 51, 
+          "sum": 141375, 
+          "average": 2772.0588235294117
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 107444, 
-          "average": 2286.0425531914893
+          "count": 51, 
+          "sum": 138111, 
+          "average": 2708.0588235294117
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 98820, 
-          "average": 2058.75
+          "count": 51, 
+          "sum": 127956, 
+          "average": 2508.9411764705883
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 106766, 
-          "average": 2178.8979591836733
+          "count": 51, 
+          "sum": 124459, 
+          "average": 2440.372549019608
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 104451, 
-          "average": 2222.3617021276596
+          "count": 51, 
+          "sum": 134780, 
+          "average": 2642.7450980392155
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 101921, 
-          "average": 2123.3541666666665
+          "count": 51, 
+          "sum": 131400, 
+          "average": 2576.470588235294
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 68796, 
-          "average": 1433.25
+          "count": 51, 
+          "sum": 81996, 
+          "average": 1607.764705882353
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 103279, 
-          "average": 2107.734693877551
+          "count": 51, 
+          "sum": 120903, 
+          "average": 2370.6470588235293
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 99910, 
-          "average": 1998.2
+          "count": 51, 
+          "sum": 117293, 
+          "average": 2299.8627450980393
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 82589, 
-          "average": 1685.4897959183672
+          "count": 51, 
+          "sum": 96689, 
+          "average": 1895.862745098039
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 91079, 
-          "average": 1858.7551020408164
+          "count": 51, 
+          "sum": 106879, 
+          "average": 2095.6666666666665
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 72496, 
-          "average": 1479.5102040816328
+          "count": 51, 
+          "sum": 83895, 
+          "average": 1645.0
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 77509, 
-          "average": 1581.8163265306123
+          "count": 51, 
+          "sum": 90243, 
+          "average": 1769.4705882352941
         }
       }, 
       "drugs.[0].Rates.Alcohol.Perceptions of Risk.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 1760.5900000000001, 
-          "average": 37.45936170212766
+          "count": 51, 
+          "sum": 1914.01, 
+          "average": 37.529607843137256
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1772.2800000000002, 
-          "average": 37.70808510638298
+          "count": 51, 
+          "sum": 1926.7000000000003, 
+          "average": 37.77843137254902
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1839.8999999999996, 
-          "average": 38.331250000000004
+          "count": 51, 
+          "sum": 1964.7099999999996, 
+          "average": 38.52372549019608
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1892.29, 
-          "average": 38.61816326530612
+          "count": 51, 
+          "sum": 1977.4, 
+          "average": 38.772549019607844
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1783.9400000000007, 
-          "average": 37.95617021276596
+          "count": 51, 
+          "sum": 1939.370000000001, 
+          "average": 38.026862745098036
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1828.0899999999992, 
-          "average": 38.085208333333334
+          "count": 51, 
+          "sum": 1952.0599999999993, 
+          "average": 38.2756862745098
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1810.77, 
-          "average": 37.724375
+          "count": 51, 
+          "sum": 1924.9099999999999, 
+          "average": 37.74333333333333
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1904.47, 
-          "average": 38.866734693877554
+          "count": 51, 
+          "sum": 1990.0700000000002, 
+          "average": 39.020980392156865
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1962.3400000000008, 
-          "average": 39.2468
+          "count": 51, 
+          "sum": 2002.760000000001, 
+          "average": 39.26980392156863
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1866.5500000000002, 
-          "average": 38.09285714285714
+          "count": 51, 
+          "sum": 1945.6000000000004, 
+          "average": 38.14901960784314
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1891.6200000000001, 
-          "average": 38.60448979591837
+          "count": 51, 
+          "sum": 1974.2000000000003, 
+          "average": 38.70980392156863
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1848.5500000000006, 
-          "average": 37.72551020408163
+          "count": 51, 
+          "sum": 1930.8300000000008, 
+          "average": 37.85941176470588
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1857.5200000000002, 
-          "average": 37.90857142857143
+          "count": 51, 
+          "sum": 1938.19, 
+          "average": 38.00372549019608
         }
       }, 
       "drugs.[0].Rates.Alcohol.Abuse Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 881.8100000000002, 
-          "average": 18.76191489361702
+          "count": 51, 
+          "sum": 953.0700000000002, 
+          "average": 18.68764705882353
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 866.0599999999997, 
-          "average": 18.426808510638296
+          "count": 51, 
+          "sum": 937.2599999999998, 
+          "average": 18.37764705882353
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 841.8800000000001, 
-          "average": 17.539166666666667
+          "count": 51, 
+          "sum": 889.7500000000001, 
+          "average": 17.44607843137255
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 841.3800000000003, 
-          "average": 17.171020408163265
+          "count": 51, 
+          "sum": 873.9400000000004, 
+          "average": 17.13607843137255
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 850.3400000000003, 
-          "average": 18.092340425531916
+          "count": 51, 
+          "sum": 921.4700000000003, 
+          "average": 18.068039215686277
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 857.7799999999999, 
-          "average": 17.870416666666667
+          "count": 51, 
+          "sum": 905.6599999999999, 
+          "average": 17.758039215686274
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 615.43, 
-          "average": 12.821458333333332
+          "count": 51, 
+          "sum": 655.6099999999999, 
+          "average": 12.855098039215687
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 825.3100000000001, 
-          "average": 16.843061224489794
+          "count": 51, 
+          "sum": 858.1500000000001, 
+          "average": 16.826470588235292
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 826.41, 
-          "average": 16.5282
+          "count": 51, 
+          "sum": 842.34, 
+          "average": 16.516470588235293
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 727.6800000000001, 
-          "average": 14.850612244897958
+          "count": 51, 
+          "sum": 759.4200000000001, 
+          "average": 14.890588235294118
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 768.4599999999998, 
-          "average": 15.682857142857143
+          "count": 51, 
+          "sum": 800.91, 
+          "average": 15.704117647058823
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 685.2099999999998, 
-          "average": 13.98387755102041
+          "count": 51, 
+          "sum": 716.3399999999999, 
+          "average": 14.045882352941177
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 706.4499999999998, 
-          "average": 14.41734693877551
+          "count": 51, 
+          "sum": 737.8899999999998, 
+          "average": 14.46843137254902
         }
       }, 
       "drugs.[0].Totals.Marijuana.Perceptions of Risk.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 657446, 
-          "average": 13988.212765957447
+          "count": 51, 
+          "sum": 834839, 
+          "average": 16369.392156862745
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 650545, 
-          "average": 13841.382978723404
+          "count": 51, 
+          "sum": 827071, 
+          "average": 16217.078431372549
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 631143, 
-          "average": 13148.8125
+          "count": 51, 
+          "sum": 802403, 
+          "average": 15733.392156862745
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 701376, 
-          "average": 14313.795918367347
+          "count": 51, 
+          "sum": 793723, 
+          "average": 15563.196078431372
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 643494, 
-          "average": 13691.36170212766
+          "count": 51, 
+          "sum": 819080, 
+          "average": 16060.392156862745
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 638553, 
-          "average": 13303.1875
+          "count": 51, 
+          "sum": 810854, 
+          "average": 15899.098039215687
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 516094, 
-          "average": 10751.958333333334
+          "count": 51, 
+          "sum": 585394, 
+          "average": 11478.313725490196
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 694617, 
-          "average": 14175.857142857143
+          "count": 51, 
+          "sum": 784811, 
+          "average": 15388.450980392157
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 688630, 
-          "average": 13772.6
+          "count": 51, 
+          "sum": 775679, 
+          "average": 15209.392156862745
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 603890, 
-          "average": 12324.285714285714
+          "count": 51, 
+          "sum": 674190, 
+          "average": 13219.411764705883
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 645414, 
-          "average": 13171.714285714286
+          "count": 51, 
+          "sum": 724429, 
+          "average": 14204.490196078432
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 564997, 
-          "average": 11530.551020408164
+          "count": 51, 
+          "sum": 630996, 
+          "average": 12372.470588235294
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 584419, 
-          "average": 11926.918367346938
+          "count": 51, 
+          "sum": 652551, 
+          "average": 12795.117647058823
         }
       }, 
       "drugs.[0].Rates.Alcohol.Binge Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 992.6999999999999, 
-          "average": 21.121276595744682
+          "count": 51, 
+          "sum": 1085.02, 
+          "average": 21.274901960784312
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1000.2199999999999, 
-          "average": 21.281276595744682
+          "count": 51, 
+          "sum": 1093.4299999999998, 
+          "average": 21.43980392156863
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1048.19, 
-          "average": 21.83729166666667
+          "count": 51, 
+          "sum": 1118.71, 
+          "average": 21.935490196078433
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1079.1400000000003, 
-          "average": 22.02326530612245
+          "count": 51, 
+          "sum": 1127.1200000000001, 
+          "average": 22.100392156862743
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1007.7600000000001, 
-          "average": 21.441702127659575
+          "count": 51, 
+          "sum": 1101.8700000000001, 
+          "average": 21.605294117647055
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1040.4599999999998, 
-          "average": 21.67625
+          "count": 51, 
+          "sum": 1110.2799999999995, 
+          "average": 21.770196078431372
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1072.78, 
-          "average": 22.34958333333333
+          "count": 51, 
+          "sum": 1152.8999999999999, 
+          "average": 22.60588235294118
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1086.9400000000003, 
-          "average": 22.18244897959184
+          "count": 51, 
+          "sum": 1135.5600000000004, 
+          "average": 22.265882352941176
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1122.4299999999998, 
-          "average": 22.448600000000003
+          "count": 51, 
+          "sum": 1143.97, 
+          "average": 22.43078431372549
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1092.3, 
-          "average": 22.291836734693877
+          "count": 51, 
+          "sum": 1143.4199999999998, 
+          "average": 22.42
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1093.4999999999998, 
-          "average": 22.316326530612244
+          "count": 51, 
+          "sum": 1143.6899999999998, 
+          "average": 22.42529411764706
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1097.15, 
-          "average": 22.390816326530615
+          "count": 51, 
+          "sum": 1149.87, 
+          "average": 22.54647058823529
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1094.7200000000003, 
-          "average": 22.34122448979592
+          "count": 51, 
+          "sum": 1146.6400000000003, 
+          "average": 22.483137254901962
         }
       }, 
       "drugs.[0].Rates.Tobacco.Cigarette Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 645.4000000000001, 
-          "average": 13.73191489361702
+          "count": 51, 
+          "sum": 687.73, 
+          "average": 13.484901960784313
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 615.8299999999999, 
-          "average": 13.10276595744681
+          "count": 51, 
+          "sum": 656.9099999999999, 
+          "average": 12.880588235294118
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 540.9100000000001, 
-          "average": 11.268958333333332
+          "count": 51, 
+          "sum": 564.3500000000001, 
+          "average": 11.065686274509805
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 519.82, 
-          "average": 10.60857142857143
+          "count": 51, 
+          "sum": 533.5300000000001, 
+          "average": 10.461372549019607
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 586.27, 
-          "average": 12.473829787234042
+          "count": 51, 
+          "sum": 626.08, 
+          "average": 12.27607843137255
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 571.1100000000001, 
-          "average": 11.898125
+          "count": 51, 
+          "sum": 595.2600000000001, 
+          "average": 11.671764705882353
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 286.61999999999995, 
-          "average": 5.97125
+          "count": 51, 
+          "sum": 299.1699999999999, 
+          "average": 5.866078431372549
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 489.1699999999999, 
-          "average": 9.983061224489797
+          "count": 51, 
+          "sum": 502.69999999999993, 
+          "average": 9.85686274509804
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 465.0500000000001, 
-          "average": 9.301
+          "count": 51, 
+          "sum": 471.8800000000001, 
+          "average": 9.252549019607843
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 382.43000000000006, 
-          "average": 7.804693877551021
+          "count": 51, 
+          "sum": 390.51000000000005, 
+          "average": 7.657058823529412
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 420.44000000000005, 
-          "average": 8.580408163265306
+          "count": 51, 
+          "sum": 431.1500000000001, 
+          "average": 8.45392156862745
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 331.40999999999997, 
-          "average": 6.763469387755102
+          "count": 51, 
+          "sum": 338.53000000000003, 
+          "average": 6.637843137254902
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 356.9099999999999, 
-          "average": 7.283877551020408
+          "count": 51, 
+          "sum": 364.5099999999999, 
+          "average": 7.1472549019607845
         }
       }, 
       "drugs.[0].Rates.Marijuana.Used Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 328.4700000000001, 
-          "average": 6.98872340425532
+          "count": 51, 
+          "sum": 360.9700000000001, 
+          "average": 7.077843137254902
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 334.2399999999999, 
-          "average": 7.1114893617021275
+          "count": 51, 
+          "sum": 367.5499999999999, 
+          "average": 7.206862745098039
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 361.27000000000004, 
-          "average": 7.526458333333333
+          "count": 51, 
+          "sum": 387.2400000000001, 
+          "average": 7.592941176470588
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 372.90000000000003, 
-          "average": 7.610204081632652
+          "count": 51, 
+          "sum": 393.8200000000001, 
+          "average": 7.721960784313725
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 339.99999999999994, 
-          "average": 7.23404255319149
+          "count": 51, 
+          "sum": 374.11999999999995, 
+          "average": 7.335686274509804
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 355.3500000000001, 
-          "average": 7.403125
+          "count": 51, 
+          "sum": 380.70000000000016, 
+          "average": 7.464705882352941
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 468.38000000000005, 
-          "average": 9.757916666666667
+          "count": 51, 
+          "sum": 513.91, 
+          "average": 10.076666666666666
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 378.99000000000007, 
-          "average": 7.734489795918368
+          "count": 51, 
+          "sum": 400.39000000000004, 
+          "average": 7.85078431372549
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 397.16, 
-          "average": 7.943200000000001
+          "count": 51, 
+          "sum": 406.96999999999997, 
+          "average": 7.979803921568628
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 419.2899999999999, 
-          "average": 8.556938775510204
+          "count": 51, 
+          "sum": 444.54999999999984, 
+          "average": 8.716666666666667
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 402.1999999999998, 
-          "average": 8.208163265306123
+          "count": 51, 
+          "sum": 425.76999999999987, 
+          "average": 8.348431372549019
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 448.0900000000001, 
-          "average": 9.14469387755102
+          "count": 51, 
+          "sum": 474.46000000000015, 
+          "average": 9.30313725490196
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 433.71999999999997, 
-          "average": 8.851428571428572
+          "count": 51, 
+          "sum": 459.53, 
+          "average": 9.010392156862745
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Used Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 519603, 
-          "average": 11055.382978723404
+          "count": 51, 
+          "sum": 644012, 
+          "average": 12627.686274509804
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 527948, 
-          "average": 11232.936170212766
+          "count": 51, 
+          "sum": 657077, 
+          "average": 12883.862745098038
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 555683, 
-          "average": 11576.729166666666
+          "count": 51, 
+          "sum": 696931, 
+          "average": 13665.313725490196
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 613944, 
-          "average": 12529.469387755102
+          "count": 51, 
+          "sum": 710437, 
+          "average": 13930.137254901962
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 536328, 
-          "average": 11411.234042553191
+          "count": 51, 
+          "sum": 670251, 
+          "average": 13142.176470588236
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 547145, 
-          "average": 11398.854166666666
+          "count": 51, 
+          "sum": 683533, 
+          "average": 13402.607843137255
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 630694, 
-          "average": 13139.458333333334
+          "count": 51, 
+          "sum": 758494, 
+          "average": 14872.43137254902
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 623816, 
-          "average": 12730.938775510203
+          "count": 51, 
+          "sum": 724058, 
+          "average": 14197.21568627451
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 636186, 
-          "average": 12723.72
+          "count": 51, 
+          "sum": 737791, 
+          "average": 14466.490196078432
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 626093, 
-          "average": 12777.408163265307
+          "count": 51, 
+          "sum": 736493, 
+          "average": 14441.039215686274
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 629929, 
-          "average": 12855.69387755102
+          "count": 51, 
+          "sum": 737137, 
+          "average": 14453.666666666666
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 633694, 
-          "average": 12932.530612244898
+          "count": 51, 
+          "sum": 743793, 
+          "average": 14584.176470588236
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 629929, 
-          "average": 12855.69387755102
+          "count": 51, 
+          "sum": 740190, 
+          "average": 14513.529411764706
         }
       }, 
       "drugs.[0].Population.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 144202768, 
-          "average": 3068144.0
+          "count": 51, 
+          "sum": 178758944, 
+          "average": 3505077.3333333335
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 145783439, 
-          "average": 3101775.2978723403
+          "count": 51, 
+          "sum": 180893998, 
+          "average": 3546941.137254902
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 151137687, 
-          "average": 3148701.8125
+          "count": 51, 
+          "sum": 187299233, 
+          "average": 3672533.9803921566
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 166865279, 
-          "average": 3405413.8571428573
+          "count": 51, 
+          "sum": 189434311, 
+          "average": 3714398.254901961
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 147364136, 
-          "average": 3135407.14893617
+          "count": 51, 
+          "sum": 183029080, 
+          "average": 3588805.4901960786
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 149547981, 
-          "average": 3115582.9375
+          "count": 51, 
+          "sum": 185164158, 
+          "average": 3630669.7647058824
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 176005067, 
-          "average": 3666772.2291666665
+          "count": 51, 
+          "sum": 204227123, 
+          "average": 4004453.3921568627
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 168750532, 
-          "average": 3443888.4081632653
+          "count": 51, 
+          "sum": 191569393, 
+          "average": 3756262.6078431373
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 171014491, 
-          "average": 3420289.82
+          "count": 51, 
+          "sum": 193704492, 
+          "average": 3798127.294117647
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 173777080, 
-          "average": 3546471.0204081633
+          "count": 51, 
+          "sum": 197461004, 
+          "average": 3871784.3921568627
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 172206428, 
-          "average": 3514416.897959184
+          "count": 51, 
+          "sum": 195582734, 
+          "average": 3834955.568627451
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 177514327, 
-          "average": 3622741.3673469387
+          "count": 51, 
+          "sum": 201943672, 
+          "average": 3959679.843137255
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 175645693, 
-          "average": 3584605.9795918367
+          "count": 51, 
+          "sum": 199702327, 
+          "average": 3915731.901960784
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Cocaine Used Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 324.74, 
-          "average": 6.90936170212766
+          "count": 51, 
+          "sum": 349.86000000000007, 
+          "average": 6.86
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 311.7599999999999, 
-          "average": 6.633191489361702
+          "count": 51, 
+          "sum": 336.19999999999993, 
+          "average": 6.592156862745098
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 279.19999999999993, 
-          "average": 5.816666666666666
+          "count": 51, 
+          "sum": 295.17999999999995, 
+          "average": 5.787843137254902
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 271.26, 
-          "average": 5.535918367346938
+          "count": 51, 
+          "sum": 281.52000000000004, 
+          "average": 5.52
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 298.75000000000006, 
-          "average": 6.3563829787234045
+          "count": 51, 
+          "sum": 322.5100000000001, 
+          "average": 6.323725490196078
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 292.40999999999997, 
-          "average": 6.091875000000001
+          "count": 51, 
+          "sum": 308.85, 
+          "average": 6.055882352941177
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 197.35, 
-          "average": 4.111458333333333
+          "count": 51, 
+          "sum": 215.30000000000004, 
+          "average": 4.2215686274509805
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 257.75000000000006, 
-          "average": 5.260204081632653
+          "count": 51, 
+          "sum": 267.83, 
+          "average": 5.25156862745098
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 248.53000000000006, 
-          "average": 4.9706
+          "count": 51, 
+          "sum": 254.17000000000004, 
+          "average": 4.983725490196078
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 219.45000000000002, 
-          "average": 4.478571428571429
+          "count": 51, 
+          "sum": 230.01000000000005, 
+          "average": 4.51
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 231.85999999999996, 
-          "average": 4.731836734693878
+          "count": 51, 
+          "sum": 242.08999999999992, 
+          "average": 4.746862745098039
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 205.4299999999999, 
-          "average": 4.192448979591837
+          "count": 51, 
+          "sum": 216.47999999999993, 
+          "average": 4.244705882352941
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 212.42000000000002, 
-          "average": 4.335102040816326
+          "count": 51, 
+          "sum": 223.22, 
+          "average": 4.376862745098039
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.All Except Marijuana Used Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 270.19000000000005, 
-          "average": 5.748723404255319
+          "count": 51, 
+          "sum": 293.41999999999996, 
+          "average": 5.753333333333334
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 261.7100000000001, 
-          "average": 5.568297872340425
+          "count": 51, 
+          "sum": 284.3100000000001, 
+          "average": 5.574705882352942
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 241.88000000000002, 
-          "average": 5.039166666666667
+          "count": 51, 
+          "sum": 256.97, 
+          "average": 5.0386274509803926
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 238.14999999999995, 
-          "average": 4.860204081632653
+          "count": 51, 
+          "sum": 247.85999999999996, 
+          "average": 4.86
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 253.21, 
-          "average": 5.387446808510639
+          "count": 51, 
+          "sum": 275.18999999999994, 
+          "average": 5.395882352941176
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 250.70999999999995, 
-          "average": 5.2231250000000005
+          "count": 51, 
+          "sum": 266.0799999999999, 
+          "average": 5.217254901960784
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 151.29999999999998, 
-          "average": 3.1520833333333336
+          "count": 51, 
+          "sum": 161.30999999999997, 
+          "average": 3.1629411764705884
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 229.08999999999997, 
-          "average": 4.67530612244898
+          "count": 51, 
+          "sum": 238.73999999999998, 
+          "average": 4.681176470588236
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 224.40999999999994, 
-          "average": 4.4882
+          "count": 51, 
+          "sum": 229.62999999999994, 
+          "average": 4.5025490196078435
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 180.99, 
-          "average": 3.6936734693877553
+          "count": 51, 
+          "sum": 188.10999999999999, 
+          "average": 3.68843137254902
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 200.5, 
-          "average": 4.091836734693878
+          "count": 51, 
+          "sum": 208.85, 
+          "average": 4.095098039215686
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 160.17, 
-          "average": 3.2687755102040814
+          "count": 51, 
+          "sum": 169.45999999999995, 
+          "average": 3.3227450980392157
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 170.54, 
-          "average": 3.480408163265306
+          "count": 51, 
+          "sum": 178.73999999999998, 
+          "average": 3.5047058823529413
         }
       }, 
       "drugs.[0].Rates.Alcohol.Dependence Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 135.89999999999998, 
-          "average": 2.891489361702128
+          "count": 51, 
+          "sum": 149.81999999999994, 
+          "average": 2.9376470588235293
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 136.64999999999998, 
-          "average": 2.9074468085106386
+          "count": 51, 
+          "sum": 150.54, 
+          "average": 2.951764705882353
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 141.99999999999997, 
-          "average": 2.9583333333333335
+          "count": 51, 
+          "sum": 152.71, 
+          "average": 2.9943137254901964
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 145.39000000000007, 
-          "average": 2.967142857142857
+          "count": 51, 
+          "sum": 153.43000000000006, 
+          "average": 3.00843137254902
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 137.42999999999998, 
-          "average": 2.9240425531914895
+          "count": 51, 
+          "sum": 151.28999999999996, 
+          "average": 2.966470588235294
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 141.35, 
-          "average": 2.9447916666666667
+          "count": 51, 
+          "sum": 152.01000000000002, 
+          "average": 2.9805882352941175
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 138.21999999999994, 
-          "average": 2.879583333333333
+          "count": 51, 
+          "sum": 148.43999999999994, 
+          "average": 2.9105882352941177
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 146.1, 
-          "average": 2.9816326530612245
+          "count": 51, 
+          "sum": 154.18, 
+          "average": 3.023137254901961
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 151.14999999999998, 
-          "average": 3.023
+          "count": 51, 
+          "sum": 154.89999999999998, 
+          "average": 3.0372549019607846
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 143.89, 
-          "average": 2.9365306122448978
+          "count": 51, 
+          "sum": 152.08, 
+          "average": 2.981960784313726
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 145.30999999999997, 
-          "average": 2.9655102040816326
+          "count": 51, 
+          "sum": 153.47, 
+          "average": 3.00921568627451
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 148.45999999999995, 
-          "average": 3.029795918367347
+          "count": 51, 
+          "sum": 156.21, 
+          "average": 3.0629411764705883
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 146.20000000000002, 
-          "average": 2.983673469387755
+          "count": 51, 
+          "sum": 154.17000000000002, 
+          "average": 3.022941176470588
         }
       }, 
       "drugs.[0].Rates.Tobacco.Cigarette Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 1997.2900000000002, 
-          "average": 42.49553191489362
+          "count": 51, 
+          "sum": 2146.46, 
+          "average": 42.087450980392155
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1960.1300000000003, 
-          "average": 41.70489361702128
+          "count": 51, 
+          "sum": 2106.25, 
+          "average": 41.299019607843135
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1889.0599999999993, 
-          "average": 39.35541666666666
+          "count": 51, 
+          "sum": 1985.5999999999995, 
+          "average": 38.93333333333333
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1885.26, 
-          "average": 38.47469387755102
+          "count": 51, 
+          "sum": 1945.39, 
+          "average": 38.14490196078432
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1922.97, 
-          "average": 40.914255319148936
+          "count": 51, 
+          "sum": 2066.06, 
+          "average": 40.51098039215686
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1927.3800000000003, 
-          "average": 40.15375
+          "count": 51, 
+          "sum": 2025.8500000000004, 
+          "average": 39.72254901960785
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1475.1900000000003, 
-          "average": 30.733125
+          "count": 51, 
+          "sum": 1555.7600000000004, 
+          "average": 30.505098039215685
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1846.04, 
-          "average": 37.674285714285716
+          "count": 51, 
+          "sum": 1905.2, 
+          "average": 37.35686274509804
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1836.1399999999996, 
-          "average": 36.7228
+          "count": 51, 
+          "sum": 1864.9899999999998, 
+          "average": 36.56843137254902
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1687.919999999999, 
-          "average": 34.44734693877551
+          "count": 51, 
+          "sum": 1740.719999999999, 
+          "average": 34.131764705882354
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1747.3699999999994, 
-          "average": 35.66061224489796
+          "count": 51, 
+          "sum": 1802.8699999999994, 
+          "average": 35.350392156862746
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1589.77, 
-          "average": 32.44428571428571
+          "count": 51, 
+          "sum": 1644.7, 
+          "average": 32.24901960784314
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1638.8899999999999, 
-          "average": 33.44673469387755
+          "count": 51, 
+          "sum": 1692.7599999999998, 
+          "average": 33.191372549019604
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Used Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 556.68, 
-          "average": 11.844255319148937
+          "count": 51, 
+          "sum": 605.41, 
+          "average": 11.870784313725489
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 544.5699999999999, 
-          "average": 11.586595744680853
+          "count": 51, 
+          "sum": 592.9399999999999, 
+          "average": 11.626274509803922
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 521.5199999999999, 
-          "average": 10.865
+          "count": 51, 
+          "sum": 555.4699999999999, 
+          "average": 10.891568627450981
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 518.2499999999999, 
-          "average": 10.576530612244898
+          "count": 51, 
+          "sum": 543.0, 
+          "average": 10.647058823529411
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 532.4299999999998, 
-          "average": 11.328297872340425
+          "count": 51, 
+          "sum": 580.4299999999998, 
+          "average": 11.380980392156863
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 534.2099999999999, 
-          "average": 11.129375000000001
+          "count": 51, 
+          "sum": 567.96, 
+          "average": 11.136470588235294
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 422.17, 
-          "average": 8.795208333333333
+          "count": 51, 
+          "sum": 458.42, 
+          "average": 8.988627450980392
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 505.4, 
-          "average": 10.314285714285713
+          "count": 51, 
+          "sum": 530.49, 
+          "average": 10.401764705882353
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 506.10999999999996, 
-          "average": 10.1222
+          "count": 51, 
+          "sum": 518.02, 
+          "average": 10.157254901960783
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 474.55000000000007, 
-          "average": 9.684693877551021
+          "count": 51, 
+          "sum": 496.6000000000001, 
+          "average": 9.737254901960785
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 483.56, 
-          "average": 9.868571428571428
+          "count": 51, 
+          "sum": 507.30999999999995, 
+          "average": 9.947254901960784
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 452.86999999999995, 
-          "average": 9.242244897959184
+          "count": 51, 
+          "sum": 474.0199999999999, 
+          "average": 9.294509803921569
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 463.67000000000013, 
-          "average": 9.46265306122449
+          "count": 51, 
+          "sum": 485.28000000000014, 
+          "average": 9.51529411764706
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Used Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 267.49, 
-          "average": 5.691276595744681
+          "count": 51, 
+          "sum": 295.41999999999996, 
+          "average": 5.7925490196078435
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 273.09, 
-          "average": 5.810425531914893
+          "count": 51, 
+          "sum": 301.39, 
+          "average": 5.9096078431372545
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 297.91999999999996, 
-          "average": 6.206666666666667
+          "count": 51, 
+          "sum": 319.38999999999993, 
+          "average": 6.262549019607843
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 308.46000000000004, 
-          "average": 6.295102040816326
+          "count": 51, 
+          "sum": 325.36, 
+          "average": 6.379607843137255
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 278.75999999999993, 
-          "average": 5.931063829787234
+          "count": 51, 
+          "sum": 307.43, 
+          "average": 6.028039215686275
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 292.26000000000005, 
-          "average": 6.08875
+          "count": 51, 
+          "sum": 313.40000000000003, 
+          "average": 6.145098039215686
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 366.99000000000007, 
-          "average": 7.645625
+          "count": 51, 
+          "sum": 403.7900000000001, 
+          "average": 7.917450980392157
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 314.25, 
-          "average": 6.413265306122449
+          "count": 51, 
+          "sum": 331.40000000000003, 
+          "average": 6.498039215686274
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 329.55000000000007, 
-          "average": 6.591
+          "count": 51, 
+          "sum": 337.37, 
+          "average": 6.615098039215686
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 333.99, 
-          "average": 6.816122448979592
+          "count": 51, 
+          "sum": 353.36, 
+          "average": 6.928627450980392
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 326.91999999999996, 
-          "average": 6.671836734693878
+          "count": 51, 
+          "sum": 345.32, 
+          "average": 6.770980392156862
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 349.27000000000004, 
-          "average": 7.127959183673469
+          "count": 51, 
+          "sum": 370.72, 
+          "average": 7.269019607843137
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 341.6400000000001, 
-          "average": 6.972244897959183
+          "count": 51, 
+          "sum": 362.05000000000007, 
+          "average": 7.099019607843138
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Abuse Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 519603, 
-          "average": 11055.382978723404
+          "count": 51, 
+          "sum": 644012, 
+          "average": 12627.686274509804
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 527948, 
-          "average": 11232.936170212766
+          "count": 51, 
+          "sum": 657077, 
+          "average": 12883.862745098038
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 555683, 
-          "average": 11576.729166666666
+          "count": 51, 
+          "sum": 696931, 
+          "average": 13665.313725490196
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 613944, 
-          "average": 12529.469387755102
+          "count": 51, 
+          "sum": 710437, 
+          "average": 13930.137254901962
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 536328, 
-          "average": 11411.234042553191
+          "count": 51, 
+          "sum": 670251, 
+          "average": 13142.176470588236
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 547145, 
-          "average": 11398.854166666666
+          "count": 51, 
+          "sum": 683533, 
+          "average": 13402.607843137255
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 630694, 
-          "average": 13139.458333333334
+          "count": 51, 
+          "sum": 758494, 
+          "average": 14872.43137254902
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 623816, 
-          "average": 12730.938775510203
+          "count": 51, 
+          "sum": 724058, 
+          "average": 14197.21568627451
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 636186, 
-          "average": 12723.72
+          "count": 51, 
+          "sum": 737791, 
+          "average": 14466.490196078432
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 626093, 
-          "average": 12777.408163265307
+          "count": 51, 
+          "sum": 736493, 
+          "average": 14441.039215686274
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 629929, 
-          "average": 12855.69387755102
+          "count": 51, 
+          "sum": 737137, 
+          "average": 14453.666666666666
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 633694, 
-          "average": 12932.530612244898
+          "count": 51, 
+          "sum": 743793, 
+          "average": 14584.176470588236
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 629929, 
-          "average": 12855.69387755102
+          "count": 51, 
+          "sum": 740190, 
+          "average": 14513.529411764706
         }
       }, 
       "drugs.[0].Totals.Alcohol.Use Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 353629, 
-          "average": 7524.021276595745
+          "count": 51, 
+          "sum": 438461, 
+          "average": 8597.274509803921
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 344872, 
-          "average": 7337.702127659574
+          "count": 51, 
+          "sum": 428949, 
+          "average": 8410.764705882353
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 319892, 
-          "average": 6664.416666666667
+          "count": 51, 
+          "sum": 399641, 
+          "average": 7836.098039215686
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 342333, 
-          "average": 6986.3877551020405
+          "count": 51, 
+          "sum": 389615, 
+          "average": 7639.509803921569
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 336041, 
-          "average": 7149.808510638298
+          "count": 51, 
+          "sum": 419313, 
+          "average": 8221.823529411764
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 328972, 
-          "average": 6853.583333333333
+          "count": 51, 
+          "sum": 409543, 
+          "average": 8030.254901960784
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 244296, 
-          "average": 5089.5
+          "count": 51, 
+          "sum": 287496, 
+          "average": 5637.176470588235
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 332238, 
-          "average": 6780.367346938776
+          "count": 51, 
+          "sum": 379445, 
+          "average": 7440.098039215686
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 322573, 
-          "average": 6451.46
+          "count": 51, 
+          "sum": 369161, 
+          "average": 7238.450980392156
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 285391, 
-          "average": 5824.306122448979
+          "count": 51, 
+          "sum": 327191, 
+          "average": 6415.509803921569
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 303565, 
-          "average": 6195.2040816326535
+          "count": 51, 
+          "sum": 347993, 
+          "average": 6823.392156862745
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 268389, 
-          "average": 5477.326530612245
+          "count": 51, 
+          "sum": 304989, 
+          "average": 5980.176470588235
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 276824, 
-          "average": 5649.469387755102
+          "count": 51, 
+          "sum": 315996, 
+          "average": 6196.0
         }
       }, 
       "drugs.[0].Totals.Alcohol.In Minors.Abuse": {
         "2002": {
-          "count": 47, 
-          "sum": 587035, 
-          "average": 12490.106382978724
+          "count": 51, 
+          "sum": 717847, 
+          "average": 14075.43137254902
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 580906, 
-          "average": 12359.702127659575
+          "count": 51, 
+          "sum": 713724, 
+          "average": 13994.588235294117
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 565274, 
-          "average": 11776.541666666666
+          "count": 51, 
+          "sum": 701045, 
+          "average": 13745.980392156862
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 613873, 
-          "average": 12528.020408163266
+          "count": 51, 
+          "sum": 696716, 
+          "average": 13661.098039215687
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 574713, 
-          "average": 12227.936170212766
+          "count": 51, 
+          "sum": 709549, 
+          "average": 13912.725490196079
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 571728, 
-          "average": 11911.0
+          "count": 51, 
+          "sum": 705322, 
+          "average": 13829.843137254902
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 451491, 
-          "average": 9406.0625
+          "count": 51, 
+          "sum": 532391, 
+          "average": 10439.039215686274
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 607908, 
-          "average": 12406.285714285714
+          "count": 51, 
+          "sum": 692339, 
+          "average": 13575.274509803921
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 603116, 
-          "average": 12062.32
+          "count": 51, 
+          "sum": 687906, 
+          "average": 13488.35294117647
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 519693, 
-          "average": 10605.979591836734
+          "count": 51, 
+          "sum": 596693, 
+          "average": 11699.862745098038
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 560650, 
-          "average": 11441.836734693878
+          "count": 51, 
+          "sum": 642135, 
+          "average": 12590.882352941177
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 489495, 
-          "average": 9989.69387755102
+          "count": 51, 
+          "sum": 562795, 
+          "average": 11035.196078431372
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 504494, 
-          "average": 10295.795918367347
+          "count": 51, 
+          "sum": 579633, 
+          "average": 11365.35294117647
         }
       }, 
       "drugs.[0].Rates.Alcohol.Abuse Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 294.83, 
-          "average": 6.272978723404255
+          "count": 51, 
+          "sum": 323.7300000000001, 
+          "average": 6.347647058823529
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 293.78, 
-          "average": 6.25063829787234
+          "count": 51, 
+          "sum": 322.58000000000004, 
+          "average": 6.325098039215686
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 298.26, 
-          "average": 6.21375
+          "count": 51, 
+          "sum": 319.05, 
+          "average": 6.2558823529411764
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 302.9, 
-          "average": 6.181632653061224
+          "count": 51, 
+          "sum": 317.9, 
+          "average": 6.2333333333333325
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 292.71000000000004, 
-          "average": 6.227872340425532
+          "count": 51, 
+          "sum": 321.39000000000004, 
+          "average": 6.301764705882353
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 299.51000000000005, 
-          "average": 6.239791666666666
+          "count": 51, 
+          "sum": 320.24, 
+          "average": 6.27921568627451
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 285.02, 
-          "average": 5.937916666666666
+          "count": 51, 
+          "sum": 307.15, 
+          "average": 6.022549019607843
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 301.6099999999999, 
-          "average": 6.15530612244898
+          "count": 51, 
+          "sum": 316.70999999999987, 
+          "average": 6.21
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 308.68, 
-          "average": 6.1736
+          "count": 51, 
+          "sum": 315.55999999999995, 
+          "average": 6.187450980392157
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 288.7700000000001, 
-          "average": 5.893265306122449
+          "count": 51, 
+          "sum": 306.04, 
+          "average": 6.00078431372549
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 294.5800000000001, 
-          "average": 6.011836734693877
+          "count": 51, 
+          "sum": 310.8300000000001, 
+          "average": 6.094705882352941
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 294.52, 
-          "average": 6.010612244897959
+          "count": 51, 
+          "sum": 312.34000000000003, 
+          "average": 6.124313725490196
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 291.63000000000005, 
-          "average": 5.951632653061225
+          "count": 51, 
+          "sum": 309.18000000000006, 
+          "average": 6.062352941176471
         }
       }, 
       "drugs.[0].Rates.Pain Relievers Abuse Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 583.8399999999999, 
-          "average": 12.42212765957447
+          "count": 51, 
+          "sum": 621.66, 
+          "average": 12.189411764705882
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 581.66, 
-          "average": 12.375744680851064
+          "count": 51, 
+          "sum": 619.8999999999999, 
+          "average": 12.154901960784313
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 586.5000000000001, 
-          "average": 12.21875
+          "count": 51, 
+          "sum": 614.6400000000002, 
+          "average": 12.051764705882352
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 595.37, 
-          "average": 12.150408163265306
+          "count": 51, 
+          "sum": 612.88, 
+          "average": 12.017254901960785
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 579.47, 
-          "average": 12.329148936170213
+          "count": 51, 
+          "sum": 618.15, 
+          "average": 12.120588235294116
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 588.39, 
-          "average": 12.258125
+          "count": 51, 
+          "sum": 616.3899999999999, 
+          "average": 12.086078431372549
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 399.77, 
-          "average": 8.328541666666666
+          "count": 51, 
+          "sum": 423.61000000000007, 
+          "average": 8.30607843137255
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 593.41, 
-          "average": 12.110408163265305
+          "count": 51, 
+          "sum": 611.13, 
+          "average": 11.982941176470588
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 599.69, 
-          "average": 11.9938
+          "count": 51, 
+          "sum": 609.37, 
+          "average": 11.94843137254902
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 506.86999999999983, 
-          "average": 10.344285714285714
+          "count": 51, 
+          "sum": 523.4199999999998, 
+          "average": 10.26313725490196
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 549.1899999999999, 
-          "average": 11.20795918367347
+          "count": 51, 
+          "sum": 566.42, 
+          "average": 11.10627450980392
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 459.66000000000014, 
-          "average": 9.380816326530613
+          "count": 51, 
+          "sum": 476.66000000000014, 
+          "average": 9.346274509803923
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 483.30999999999995, 
-          "average": 9.863469387755103
+          "count": 51, 
+          "sum": 500.0799999999999, 
+          "average": 9.80549019607843
         }
       }, 
       "drugs.[0].Totals.Tobacco.Cigarette Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 264113, 
-          "average": 5619.425531914893
+          "count": 51, 
+          "sum": 312141, 
+          "average": 6120.411764705882
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 252934, 
-          "average": 5381.574468085107
+          "count": 51, 
+          "sum": 300197, 
+          "average": 5886.21568627451
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 219856, 
-          "average": 4580.333333333333
+          "count": 51, 
+          "sum": 263453, 
+          "average": 5165.745098039216
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 227804, 
-          "average": 4649.061224489796
+          "count": 51, 
+          "sum": 250904, 
+          "average": 4919.686274509804
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 241639, 
-          "average": 5141.255319148936
+          "count": 51, 
+          "sum": 288096, 
+          "average": 5648.941176470588
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 231428, 
-          "average": 4821.416666666667
+          "count": 51, 
+          "sum": 275851, 
+          "average": 5408.843137254902
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 117090, 
-          "average": 2439.375
+          "count": 51, 
+          "sum": 130989, 
+          "average": 2568.4117647058824
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 215155, 
-          "average": 4390.918367346939
+          "count": 51, 
+          "sum": 238204, 
+          "average": 4670.666666666667
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 202612, 
-          "average": 4052.24
+          "count": 51, 
+          "sum": 225356, 
+          "average": 4418.745098039216
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 161191, 
-          "average": 3289.612244897959
+          "count": 51, 
+          "sum": 178391, 
+          "average": 3497.8627450980393
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 181584, 
-          "average": 3705.795918367347
+          "count": 51, 
+          "sum": 201638, 
+          "average": 3953.6862745098038
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 138095, 
-          "average": 2818.265306122449
+          "count": 51, 
+          "sum": 151595, 
+          "average": 2972.450980392157
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 149597, 
-          "average": 3053.0
+          "count": 51, 
+          "sum": 164925, 
+          "average": 3233.823529411765
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Dependence Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 136158, 
-          "average": 2896.978723404255
+          "count": 51, 
+          "sum": 170731, 
+          "average": 3347.6666666666665
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 137710, 
-          "average": 2930.0
+          "count": 51, 
+          "sum": 173007, 
+          "average": 3392.294117647059
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 142833, 
-          "average": 2975.6875
+          "count": 51, 
+          "sum": 179779, 
+          "average": 3525.078431372549
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 157407, 
-          "average": 3212.387755102041
+          "count": 51, 
+          "sum": 182015, 
+          "average": 3568.921568627451
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 139244, 
-          "average": 2962.6382978723404
+          "count": 51, 
+          "sum": 175272, 
+          "average": 3436.705882352941
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 141311, 
-          "average": 2943.9791666666665
+          "count": 51, 
+          "sum": 177525, 
+          "average": 3480.8823529411766
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 145193, 
-          "average": 3024.8541666666665
+          "count": 51, 
+          "sum": 173692, 
+          "average": 3405.725490196078
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 159033, 
-          "average": 3245.5714285714284
+          "count": 51, 
+          "sum": 184240, 
+          "average": 3612.549019607843
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 161128, 
-          "average": 3222.56
+          "count": 51, 
+          "sum": 186463, 
+          "average": 3656.1372549019607
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 155094, 
-          "average": 3165.183673469388
+          "count": 51, 
+          "sum": 186793, 
+          "average": 3662.607843137255
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 157885, 
-          "average": 3222.1428571428573
+          "count": 51, 
+          "sum": 186622, 
+          "average": 3659.2549019607845
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 156690, 
-          "average": 3197.7551020408164
+          "count": 51, 
+          "sum": 186290, 
+          "average": 3652.7450980392155
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 155897, 
-          "average": 3181.5714285714284
+          "count": 51, 
+          "sum": 186559, 
+          "average": 3658.0196078431372
         }
       }, 
       "drugs.[0].Rates.Marijuana.New Users.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 349.36, 
-          "average": 7.433191489361702
+          "count": 51, 
+          "sum": 379.55, 
+          "average": 7.442156862745098
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 350.48000000000013, 
-          "average": 7.457021276595745
+          "count": 51, 
+          "sum": 381.3500000000001, 
+          "average": 7.477450980392157
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 364.94999999999993, 
-          "average": 7.6031249999999995
+          "count": 51, 
+          "sum": 386.8499999999999, 
+          "average": 7.585294117647059
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 372.49000000000007, 
-          "average": 7.601836734693878
+          "count": 51, 
+          "sum": 388.65000000000003, 
+          "average": 7.620588235294117
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 351.6099999999999, 
-          "average": 7.481063829787234
+          "count": 51, 
+          "sum": 383.16999999999996, 
+          "average": 7.513137254901961
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 363.56000000000006, 
-          "average": 7.574166666666667
+          "count": 51, 
+          "sum": 384.96999999999997, 
+          "average": 7.54843137254902
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 184.75, 
-          "average": 3.8489583333333335
+          "count": 51, 
+          "sum": 196.67000000000004, 
+          "average": 3.8562745098039213
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 373.9700000000001, 
-          "average": 7.632040816326531
+          "count": 51, 
+          "sum": 390.4700000000001, 
+          "average": 7.656274509803922
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 384.86999999999995, 
-          "average": 7.6974
+          "count": 51, 
+          "sum": 392.27, 
+          "average": 7.69156862745098
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 183.99000000000004, 
-          "average": 3.7548979591836735
+          "count": 51, 
+          "sum": 193.36000000000004, 
+          "average": 3.791372549019608
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 279.69, 
-          "average": 5.707959183673469
+          "count": 51, 
+          "sum": 292.8, 
+          "average": 5.741176470588235
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 182.55999999999995, 
-          "average": 3.725714285714286
+          "count": 51, 
+          "sum": 190.74999999999997, 
+          "average": 3.7401960784313726
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 183.24999999999997, 
-          "average": 3.739795918367347
+          "count": 51, 
+          "sum": 192.02999999999994, 
+          "average": 3.7652941176470587
         }
       }, 
       "drugs.[0].Totals.Marijuana.New Users.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 17842, 
-          "average": 379.6170212765957
+          "count": 51, 
+          "sum": 22678, 
+          "average": 444.6666666666667
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 18557, 
-          "average": 394.82978723404256
+          "count": 51, 
+          "sum": 23695, 
+          "average": 464.6078431372549
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 20870, 
-          "average": 434.7916666666667
+          "count": 51, 
+          "sum": 26859, 
+          "average": 526.6470588235294
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 23824, 
-          "average": 486.2040816326531
+          "count": 51, 
+          "sum": 27953, 
+          "average": 548.0980392156863
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 19289, 
-          "average": 410.40425531914894
+          "count": 51, 
+          "sum": 24736, 
+          "average": 485.01960784313724
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 20112, 
-          "average": 419.0
+          "count": 51, 
+          "sum": 25786, 
+          "average": 505.6078431372549
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 22095, 
-          "average": 460.3125
+          "count": 51, 
+          "sum": 26495, 
+          "average": 519.5098039215686
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 24691, 
-          "average": 503.8979591836735
+          "count": 51, 
+          "sum": 29060, 
+          "average": 569.8039215686274
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 25649, 
-          "average": 512.98
+          "count": 51, 
+          "sum": 30187, 
+          "average": 591.9019607843137
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 18190, 
-          "average": 371.2244897959184
+          "count": 51, 
+          "sum": 21490, 
+          "average": 421.37254901960785
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 21909, 
-          "average": 447.1224489795918
+          "count": 51, 
+          "sum": 25874, 
+          "average": 507.3333333333333
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 20690, 
-          "average": 422.2448979591837
+          "count": 51, 
+          "sum": 23989, 
+          "average": 470.37254901960785
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 19423, 
-          "average": 396.38775510204084
+          "count": 51, 
+          "sum": 22723, 
+          "average": 445.54901960784315
         }
       }, 
       "drugs.[0].Totals.Alcohol.Abuse Past Year.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 116090, 
-          "average": 2470.0
+          "count": 51, 
+          "sum": 145821, 
+          "average": 2859.235294117647
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 112489, 
-          "average": 2393.3829787234044
+          "count": 51, 
+          "sum": 142128, 
+          "average": 2786.823529411765
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 102189, 
-          "average": 2128.9375
+          "count": 51, 
+          "sum": 130778, 
+          "average": 2564.274509803922
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 109117, 
-          "average": 2226.877551020408
+          "count": 51, 
+          "sum": 126903, 
+          "average": 2488.294117647059
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 108854, 
-          "average": 2316.0425531914893
+          "count": 51, 
+          "sum": 138389, 
+          "average": 2713.5098039215686
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 105950, 
-          "average": 2207.2916666666665
+          "count": 51, 
+          "sum": 134606, 
+          "average": 2639.3333333333335
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 58890, 
-          "average": 1226.875
+          "count": 51, 
+          "sum": 68890, 
+          "average": 1350.7843137254902
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 105055, 
-          "average": 2143.9795918367345
+          "count": 51, 
+          "sum": 122986, 
+          "average": 2411.4901960784314
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 101073, 
-          "average": 2021.46
+          "count": 51, 
+          "sum": 119022, 
+          "average": 2333.764705882353
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 76792, 
-          "average": 1567.1836734693877
+          "count": 51, 
+          "sum": 90191, 
+          "average": 1768.450980392157
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 88756, 
-          "average": 1811.3469387755101
+          "count": 51, 
+          "sum": 104460, 
+          "average": 2048.235294117647
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 68090, 
-          "average": 1389.591836734694
+          "count": 51, 
+          "sum": 77690, 
+          "average": 1523.3333333333333
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 72413, 
-          "average": 1477.8163265306123
+          "count": 51, 
+          "sum": 83890, 
+          "average": 1644.9019607843138
         }
       }, 
       "drugs.[0].Totals.Alcohol.Dependence Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 174407, 
-          "average": 3710.7872340425533
+          "count": 51, 
+          "sum": 218349, 
+          "average": 4281.35294117647
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 174974, 
-          "average": 3722.851063829787
+          "count": 51, 
+          "sum": 219530, 
+          "average": 4304.509803921569
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 177537, 
-          "average": 3698.6875
+          "count": 51, 
+          "sum": 222935, 
+          "average": 4371.274509803921
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 195611, 
-          "average": 3992.061224489796
+          "count": 51, 
+          "sum": 224018, 
+          "average": 4392.509803921569
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 175522, 
-          "average": 3734.5106382978724
+          "count": 51, 
+          "sum": 220692, 
+          "average": 4327.294117647059
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 177021, 
-          "average": 3687.9375
+          "count": 51, 
+          "sum": 221823, 
+          "average": 4349.470588235294
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 161490, 
-          "average": 3364.375
+          "count": 51, 
+          "sum": 195190, 
+          "average": 3827.2549019607845
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 196042, 
-          "average": 4000.8571428571427
+          "count": 51, 
+          "sum": 225079, 
+          "average": 4413.313725490196
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 197174, 
-          "average": 3943.48
+          "count": 51, 
+          "sum": 226116, 
+          "average": 4433.64705882353
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 174694, 
-          "average": 3565.183673469388
+          "count": 51, 
+          "sum": 206994, 
+          "average": 4058.705882352941
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 185601, 
-          "average": 3787.7755102040815
+          "count": 51, 
+          "sum": 216579, 
+          "average": 4246.64705882353
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 169995, 
-          "average": 3469.285714285714
+          "count": 51, 
+          "sum": 200394, 
+          "average": 3929.294117647059
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 172362, 
-          "average": 3517.591836734694
+          "count": 51, 
+          "sum": 203720, 
+          "average": 3994.5098039215686
         }
       }, 
       "drugs.[0].Rates.Marijuana.Used Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 191.42, 
-          "average": 4.0727659574468085
+          "count": 51, 
+          "sum": 212.57999999999998, 
+          "average": 4.168235294117648
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 196.14999999999995, 
-          "average": 4.1734042553191495
+          "count": 51, 
+          "sum": 217.70999999999998, 
+          "average": 4.2688235294117645
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 217.19999999999996, 
-          "average": 4.5249999999999995
+          "count": 51, 
+          "sum": 233.14999999999995, 
+          "average": 4.57156862745098
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 225.26, 
-          "average": 4.597142857142857
+          "count": 51, 
+          "sum": 238.28, 
+          "average": 4.672156862745098
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 200.92999999999998, 
-          "average": 4.2751063829787235
+          "count": 51, 
+          "sum": 222.89, 
+          "average": 4.370392156862745
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 212.43000000000004, 
-          "average": 4.425625
+          "count": 51, 
+          "sum": 228.02, 
+          "average": 4.470980392156863
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 293.7200000000001, 
-          "average": 6.1191666666666675
+          "count": 51, 
+          "sum": 323.4500000000001, 
+          "average": 6.342156862745098
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 230.14000000000004, 
-          "average": 4.696734693877551
+          "count": 51, 
+          "sum": 243.46000000000004, 
+          "average": 4.773725490196078
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 242.62999999999997, 
-          "average": 4.8526
+          "count": 51, 
+          "sum": 248.59, 
+          "average": 4.874313725490196
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 254.40000000000003, 
-          "average": 5.191836734693878
+          "count": 51, 
+          "sum": 268.75000000000006, 
+          "average": 5.269607843137255
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 244.74999999999997, 
-          "average": 4.994897959183674
+          "count": 51, 
+          "sum": 258.74999999999994, 
+          "average": 5.073529411764706
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 272.91999999999996, 
-          "average": 5.5697959183673476
+          "count": 51, 
+          "sum": 288.84, 
+          "average": 5.6635294117647055
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 263.65999999999997, 
-          "average": 5.380816326530612
+          "count": 51, 
+          "sum": 278.8, 
+          "average": 5.466666666666667
         }
       }, 
       "drugs.[0].Rates.Alcohol.In Minors.Use": {
         "2002": {
-          "count": 47, 
-          "sum": 1422.68, 
-          "average": 30.269787234042553
+          "count": 51, 
+          "sum": 1544.25, 
+          "average": 30.279411764705884
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1401.5800000000002, 
-          "average": 29.820851063829785
+          "count": 51, 
+          "sum": 1521.91, 
+          "average": 29.84137254901961
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1373.0600000000002, 
-          "average": 28.605416666666667
+          "count": 51, 
+          "sum": 1454.8500000000001, 
+          "average": 28.52647058823529
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1377.55, 
-          "average": 28.113265306122447
+          "count": 51, 
+          "sum": 1432.51, 
+          "average": 28.08843137254902
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1380.4300000000003, 
-          "average": 29.37085106382979
+          "count": 51, 
+          "sum": 1499.5200000000004, 
+          "average": 29.40235294117647
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1395.0400000000002, 
-          "average": 29.063333333333333
+          "count": 51, 
+          "sum": 1477.18, 
+          "average": 28.964313725490197
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1090.13, 
-          "average": 22.711041666666663
+          "count": 51, 
+          "sum": 1162.5400000000004, 
+          "average": 22.794901960784312
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1355.3199999999997, 
-          "average": 27.65959183673469
+          "count": 51, 
+          "sum": 1410.1199999999997, 
+          "average": 27.64941176470588
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1362.3799999999997, 
-          "average": 27.247600000000002
+          "count": 51, 
+          "sum": 1387.7799999999997, 
+          "average": 27.211372549019607
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1201.32, 
-          "average": 24.51673469387755
+          "count": 51, 
+          "sum": 1262.0500000000002, 
+          "average": 24.74607843137255
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1267.19, 
-          "average": 25.861020408163267
+          "count": 51, 
+          "sum": 1324.87, 
+          "average": 25.9778431372549
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1154.1699999999998, 
-          "average": 23.554489795918368
+          "count": 51, 
+          "sum": 1206.1699999999998, 
+          "average": 23.650392156862747
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1177.7700000000002, 
-          "average": 24.03612244897959
+          "count": 51, 
+          "sum": 1234.14, 
+          "average": 24.198823529411765
         }
       }, 
       "drugs.[0].Rates.Tobacco.Cigarette Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 1209.1600000000005, 
-          "average": 25.7268085106383
+          "count": 51, 
+          "sum": 1305.7400000000005, 
+          "average": 25.602745098039215
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1196.8400000000001, 
-          "average": 25.46468085106383
+          "count": 51, 
+          "sum": 1292.2100000000003, 
+          "average": 25.33745098039216
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1184.9600000000003, 
-          "average": 24.686666666666667
+          "count": 51, 
+          "sum": 1251.5700000000004, 
+          "average": 24.540588235294116
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1195.2600000000002, 
-          "average": 24.393061224489795
+          "count": 51, 
+          "sum": 1238.0400000000002, 
+          "average": 24.275294117647057
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1184.5, 
-          "average": 25.20212765957447
+          "count": 51, 
+          "sum": 1278.67, 
+          "average": 25.071960784313728
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1197.61, 
-          "average": 24.950208333333332
+          "count": 51, 
+          "sum": 1265.1399999999996, 
+          "average": 24.80666666666667
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1094.8399999999997, 
-          "average": 22.809166666666666
+          "count": 51, 
+          "sum": 1152.4099999999996, 
+          "average": 22.596274509803923
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1182.22, 
-          "average": 24.126938775510204
+          "count": 51, 
+          "sum": 1224.5, 
+          "average": 24.00980392156863
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1192.79, 
-          "average": 23.8558
+          "count": 51, 
+          "sum": 1210.9700000000003, 
+          "average": 23.74450980392157
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1161.3900000000003, 
-          "average": 23.70183673469388
+          "count": 51, 
+          "sum": 1198.9700000000003, 
+          "average": 23.509215686274512
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1165.2799999999995, 
-          "average": 23.781224489795918
+          "count": 51, 
+          "sum": 1204.9599999999998, 
+          "average": 23.62666666666667
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1143.8399999999997, 
-          "average": 23.343673469387753
+          "count": 51, 
+          "sum": 1183.05, 
+          "average": 23.19705882352941
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1152.64, 
-          "average": 23.52326530612245
+          "count": 51, 
+          "sum": 1191.04, 
+          "average": 23.353725490196076
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Used Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 226090, 
-          "average": 4810.425531914893
+          "count": 51, 
+          "sum": 283458, 
+          "average": 5558.0
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 222654, 
-          "average": 4737.31914893617
+          "count": 51, 
+          "sum": 280614, 
+          "average": 5502.235294117647
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 213146, 
-          "average": 4440.541666666667
+          "count": 51, 
+          "sum": 271764, 
+          "average": 5328.705882352941
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 229872, 
-          "average": 4691.265306122449
+          "count": 51, 
+          "sum": 268712, 
+          "average": 5268.862745098039
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 219171, 
-          "average": 4663.212765957447
+          "count": 51, 
+          "sum": 277716, 
+          "average": 5445.411764705882
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 216782, 
-          "average": 4516.291666666667
+          "count": 51, 
+          "sum": 274764, 
+          "average": 5387.529411764706
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 188194, 
-          "average": 3920.7083333333335
+          "count": 51, 
+          "sum": 226594, 
+          "average": 4443.019607843137
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 226107, 
-          "average": 4614.428571428572
+          "count": 51, 
+          "sum": 265610, 
+          "average": 5208.0392156862745
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 222797, 
-          "average": 4455.94
+          "count": 51, 
+          "sum": 262458, 
+          "average": 5146.235294117647
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 209192, 
-          "average": 4269.224489795918
+          "count": 51, 
+          "sum": 244892, 
+          "average": 4801.803921568628
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 215676, 
-          "average": 4401.551020408163
+          "count": 51, 
+          "sum": 253586, 
+          "average": 4972.274509803921
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 198095, 
-          "average": 4042.7551020408164
+          "count": 51, 
+          "sum": 228995, 
+          "average": 4490.098039215686
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 203627, 
-          "average": 4155.65306122449
+          "count": 51, 
+          "sum": 236901, 
+          "average": 4645.117647058823
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Abuse Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 226090, 
-          "average": 4810.425531914893
+          "count": 51, 
+          "sum": 283458, 
+          "average": 5558.0
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 222654, 
-          "average": 4737.31914893617
+          "count": 51, 
+          "sum": 280614, 
+          "average": 5502.235294117647
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 213146, 
-          "average": 4440.541666666667
+          "count": 51, 
+          "sum": 271764, 
+          "average": 5328.705882352941
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 229872, 
-          "average": 4691.265306122449
+          "count": 51, 
+          "sum": 268712, 
+          "average": 5268.862745098039
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 219171, 
-          "average": 4663.212765957447
+          "count": 51, 
+          "sum": 277716, 
+          "average": 5445.411764705882
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 216782, 
-          "average": 4516.291666666667
+          "count": 51, 
+          "sum": 274764, 
+          "average": 5387.529411764706
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 188194, 
-          "average": 3920.7083333333335
+          "count": 51, 
+          "sum": 226594, 
+          "average": 4443.019607843137
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 226107, 
-          "average": 4614.428571428572
+          "count": 51, 
+          "sum": 265610, 
+          "average": 5208.0392156862745
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 222797, 
-          "average": 4455.94
+          "count": 51, 
+          "sum": 262458, 
+          "average": 5146.235294117647
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 209192, 
-          "average": 4269.224489795918
+          "count": 51, 
+          "sum": 244892, 
+          "average": 4801.803921568628
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 215676, 
-          "average": 4401.551020408163
+          "count": 51, 
+          "sum": 253586, 
+          "average": 4972.274509803921
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 198095, 
-          "average": 4042.7551020408164
+          "count": 51, 
+          "sum": 228995, 
+          "average": 4490.098039215686
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 203627, 
-          "average": 4155.65306122449
+          "count": 51, 
+          "sum": 236901, 
+          "average": 4645.117647058823
         }
       }, 
       "drugs.[0].Rates.Marijuana.New Users.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 324.62, 
-          "average": 6.906808510638298
+          "count": 51, 
+          "sum": 352.98999999999995, 
+          "average": 6.921372549019608
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 318.3100000000001, 
-          "average": 6.7725531914893615
+          "count": 51, 
+          "sum": 346.54000000000013, 
+          "average": 6.794901960784314
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 307.55, 
-          "average": 6.407291666666667
+          "count": 51, 
+          "sum": 327.19000000000005, 
+          "average": 6.415490196078431
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 306.80000000000007, 
-          "average": 6.261224489795919
+          "count": 51, 
+          "sum": 320.74000000000007, 
+          "average": 6.289019607843137
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 311.9600000000001, 
-          "average": 6.637446808510638
+          "count": 51, 
+          "sum": 340.06000000000006, 
+          "average": 6.667843137254902
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 314.07000000000005, 
-          "average": 6.543125
+          "count": 51, 
+          "sum": 333.61, 
+          "average": 6.541372549019608
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 233.08999999999992, 
-          "average": 4.856041666666667
+          "count": 51, 
+          "sum": 250.89999999999995, 
+          "average": 4.919607843137255
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 300.08, 
-          "average": 6.124081632653061
+          "count": 51, 
+          "sum": 314.26000000000005, 
+          "average": 6.161960784313726
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 300.92999999999995, 
-          "average": 6.0186
+          "count": 51, 
+          "sum": 307.80999999999995, 
+          "average": 6.035490196078431
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 253.29000000000005, 
-          "average": 5.169183673469387
+          "count": 51, 
+          "sum": 264.52000000000004, 
+          "average": 5.1866666666666665
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 273.34999999999997, 
-          "average": 5.578571428571429
+          "count": 51, 
+          "sum": 286.15999999999997, 
+          "average": 5.610980392156863
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 249.47, 
-          "average": 5.091224489795918
+          "count": 51, 
+          "sum": 260.41, 
+          "average": 5.106078431372549
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 251.36, 
-          "average": 5.129795918367347
+          "count": 51, 
+          "sum": 262.44, 
+          "average": 5.145882352941176
         }
       }, 
       "drugs.[0].Population.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 24968518, 
-          "average": 531245.0638297872
+          "count": 51, 
+          "sum": 31845476, 
+          "average": 624421.0980392157
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 25242467, 
-          "average": 537073.7659574468
+          "count": 51, 
+          "sum": 32210133, 
+          "average": 631571.2352941176
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 26167166, 
-          "average": 545149.2916666666
+          "count": 51, 
+          "sum": 33304173, 
+          "average": 653023.0
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 29270931, 
-          "average": 597365.9387755102
+          "count": 51, 
+          "sum": 33668855, 
+          "average": 660173.6274509804
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 25516438, 
-          "average": 542902.9361702128
+          "count": 51, 
+          "sum": 32574814, 
+          "average": 638721.8431372549
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 25891697, 
-          "average": 539410.3541666666
+          "count": 51, 
+          "sum": 32939496, 
+          "average": 645872.4705882353
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 30366524, 
-          "average": 632635.9166666666
+          "count": 51, 
+          "sum": 35643492, 
+          "average": 698892.0
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 29584394, 
-          "average": 603763.1428571428
+          "count": 51, 
+          "sum": 34033536, 
+          "average": 667324.2352941176
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 29999731, 
-          "average": 599994.62
+          "count": 51, 
+          "sum": 34398236, 
+          "average": 674475.2156862745
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 30174724, 
-          "average": 615810.693877551
+          "count": 51, 
+          "sum": 34736729, 
+          "average": 681112.3333333334
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 30036290, 
-          "average": 612985.5102040817
+          "count": 51, 
+          "sum": 34567472, 
+          "average": 677793.568627451
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 30725768, 
-          "average": 627056.4897959183
+          "count": 51, 
+          "sum": 35370667, 
+          "average": 693542.4901960784
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 30450232, 
-          "average": 621433.306122449
+          "count": 51, 
+          "sum": 35053683, 
+          "average": 687327.1176470588
         }
       }, 
       "drugs.[0].Year": {
         "2002": {
-          "count": 47, 
-          "sum": 94094, 
+          "count": 51, 
+          "sum": 102102, 
           "average": 2002.0
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 94141, 
+          "count": 51, 
+          "sum": 102153, 
           "average": 2003.0
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 96288, 
+          "count": 51, 
+          "sum": 102306, 
           "average": 2006.0
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 98343, 
+          "count": 51, 
+          "sum": 102357, 
           "average": 2007.0
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 94188, 
+          "count": 51, 
+          "sum": 102204, 
           "average": 2004.0
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 96240, 
+          "count": 51, 
+          "sum": 102255, 
           "average": 2005.0
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 96672, 
+          "count": 51, 
+          "sum": 102714, 
           "average": 2014.0
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 98392, 
+          "count": 51, 
+          "sum": 102408, 
           "average": 2008.0
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 100450, 
+          "count": 51, 
+          "sum": 102459, 
           "average": 2009.0
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 98539, 
+          "count": 51, 
+          "sum": 102561, 
           "average": 2011.0
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 98490, 
+          "count": 51, 
+          "sum": 102510, 
           "average": 2010.0
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 98637, 
+          "count": 51, 
+          "sum": 102663, 
           "average": 2013.0
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 98588, 
+          "count": 51, 
+          "sum": 102612, 
           "average": 2012.0
         }
       }, 
       "drugs.[0].Totals.Illicit Drugs.Used Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 812400, 
-          "average": 17285.106382978724
+          "count": 51, 
+          "sum": 1021917, 
+          "average": 20037.58823529412
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 836771, 
-          "average": 17803.63829787234
+          "count": 51, 
+          "sum": 1053227, 
+          "average": 20651.50980392157
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 916543, 
-          "average": 19094.645833333332
+          "count": 51, 
+          "sum": 1149587, 
+          "average": 22540.92156862745
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1011540, 
-          "average": 20643.673469387755
+          "count": 51, 
+          "sum": 1182514, 
+          "average": 23186.549019607843
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 861439, 
-          "average": 18328.489361702126
+          "count": 51, 
+          "sum": 1084939, 
+          "average": 21273.313725490196
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 891177, 
-          "average": 18566.1875
+          "count": 51, 
+          "sum": 1117062, 
+          "average": 21903.176470588234
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 1309595, 
-          "average": 27283.229166666668
+          "count": 51, 
+          "sum": 1592795, 
+          "average": 31231.274509803923
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1039870, 
-          "average": 21221.836734693876
+          "count": 51, 
+          "sum": 1215858, 
+          "average": 23840.352941176472
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1072170, 
-          "average": 21443.4
+          "count": 51, 
+          "sum": 1249605, 
+          "average": 24502.058823529413
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1129398, 
-          "average": 23048.938775510203
+          "count": 51, 
+          "sum": 1334298, 
+          "average": 26162.70588235294
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1098856, 
-          "average": 22425.632653061224
+          "count": 51, 
+          "sum": 1291716, 
+          "average": 25327.764705882353
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 1229295, 
-          "average": 25087.65306122449
+          "count": 51, 
+          "sum": 1449294, 
+          "average": 28417.529411764706
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 1178848, 
-          "average": 24058.122448979593
+          "count": 51, 
+          "sum": 1391227, 
+          "average": 27278.960784313724
         }
       }, 
       "drugs.[0].Totals.Marijuana.Used Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 442909, 
-          "average": 9423.595744680852
+          "count": 51, 
+          "sum": 546152, 
+          "average": 10708.862745098038
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 450452, 
-          "average": 9584.08510638298
+          "count": 51, 
+          "sum": 558029, 
+          "average": 10941.745098039215
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 475626, 
-          "average": 9908.875
+          "count": 51, 
+          "sum": 594396, 
+          "average": 11654.823529411764
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 523610, 
-          "average": 10685.918367346938
+          "count": 51, 
+          "sum": 606771, 
+          "average": 11897.470588235294
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 458045, 
-          "average": 9745.63829787234
+          "count": 51, 
+          "sum": 570028, 
+          "average": 11177.019607843138
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 467872, 
-          "average": 9747.333333333334
+          "count": 51, 
+          "sum": 582153, 
+          "average": 11414.764705882353
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 559190, 
-          "average": 11649.791666666666
+          "count": 51, 
+          "sum": 673589, 
+          "average": 13207.627450980392
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 532780, 
-          "average": 10873.061224489797
+          "count": 51, 
+          "sum": 619265, 
+          "average": 12142.450980392157
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 544175, 
-          "average": 10883.5
+          "count": 51, 
+          "sum": 631881, 
+          "average": 12389.823529411764
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 552191, 
-          "average": 11269.204081632653
+          "count": 51, 
+          "sum": 650891, 
+          "average": 12762.56862745098
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 547093, 
-          "average": 11165.163265306122
+          "count": 51, 
+          "sum": 641346, 
+          "average": 12575.411764705883
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 556993, 
-          "average": 11367.204081632653
+          "count": 51, 
+          "sum": 655893, 
+          "average": 12860.64705882353
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 554617, 
-          "average": 11318.714285714286
+          "count": 51, 
+          "sum": 653424, 
+          "average": 12812.235294117647
         }
       }, 
       "drugs.[0].Rates.Illicit Drugs.Cocaine Used Past Year.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 81.99, 
-          "average": 1.744468085106383
+          "count": 51, 
+          "sum": 90.75999999999998, 
+          "average": 1.779607843137255
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 79.31000000000002, 
-          "average": 1.6874468085106384
+          "count": 51, 
+          "sum": 87.87000000000005, 
+          "average": 1.7229411764705884
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 72.67999999999999, 
-          "average": 1.5141666666666669
+          "count": 51, 
+          "sum": 79.15999999999998, 
+          "average": 1.552156862745098
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 71.33000000000001, 
-          "average": 1.4557142857142857
+          "count": 51, 
+          "sum": 76.27000000000001, 
+          "average": 1.4954901960784313
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 76.62, 
-          "average": 1.6302127659574468
+          "count": 51, 
+          "sum": 84.94000000000001, 
+          "average": 1.6654901960784314
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 75.39999999999998, 
-          "average": 1.5708333333333335
+          "count": 51, 
+          "sum": 82.05, 
+          "average": 1.6088235294117645
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 55.720000000000006, 
-          "average": 1.1608333333333334
+          "count": 51, 
+          "sum": 62.500000000000014, 
+          "average": 1.2254901960784315
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 68.54, 
-          "average": 1.3987755102040818
+          "count": 51, 
+          "sum": 73.34, 
+          "average": 1.4380392156862747
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 68.9, 
-          "average": 1.3780000000000001
+          "count": 51, 
+          "sum": 70.45, 
+          "average": 1.3813725490196078
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 59.40999999999998, 
-          "average": 1.2124489795918367
+          "count": 51, 
+          "sum": 63.469999999999985, 
+          "average": 1.2445098039215685
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 62.58, 
-          "average": 1.2771428571428571
+          "count": 51, 
+          "sum": 66.94999999999999, 
+          "average": 1.3127450980392157
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 61.69000000000001, 
-          "average": 1.2589795918367346
+          "count": 51, 
+          "sum": 66.26000000000003, 
+          "average": 1.29921568627451
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 60.52999999999999, 
-          "average": 1.2353061224489796
+          "count": 51, 
+          "sum": 64.85, 
+          "average": 1.2715686274509803
         }
       }, 
       "drugs.[0].Totals.Alcohol.Perceptions of Risk.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 6260206, 
-          "average": 133195.87234042553
+          "count": 51, 
+          "sum": 7900294, 
+          "average": 154907.72549019608
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 6338468, 
-          "average": 134861.02127659574
+          "count": 51, 
+          "sum": 8002712, 
+          "average": 156915.92156862744
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 6598408, 
-          "average": 137466.83333333334
+          "count": 51, 
+          "sum": 8310968, 
+          "average": 162960.1568627451
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 7337873, 
-          "average": 149752.51020408163
+          "count": 51, 
+          "sum": 8414047, 
+          "average": 164981.3137254902
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 6416958, 
-          "average": 136531.02127659574
+          "count": 51, 
+          "sum": 8105298, 
+          "average": 158927.41176470587
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 6519139, 
-          "average": 135815.39583333334
+          "count": 51, 
+          "sum": 8208049, 
+          "average": 160942.13725490196
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 7339795, 
-          "average": 152912.39583333334
+          "count": 51, 
+          "sum": 8622594, 
+          "average": 169070.4705882353
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 7430591, 
-          "average": 151644.7142857143
+          "count": 51, 
+          "sum": 8517301, 
+          "average": 167005.9019607843
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 7539766, 
-          "average": 150795.32
+          "count": 51, 
+          "sum": 8620717, 
+          "average": 169033.66666666666
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 7576499, 
-          "average": 154622.42857142858
+          "count": 51, 
+          "sum": 8742999, 
+          "average": 171431.35294117648
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 7550158, 
-          "average": 154084.85714285713
+          "count": 51, 
+          "sum": 8681762, 
+          "average": 170230.6274509804
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 7595197, 
-          "average": 155004.02040816325
+          "count": 51, 
+          "sum": 8775797, 
+          "average": 172074.45098039217
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 7586835, 
-          "average": 154833.3673469388
+          "count": 51, 
+          "sum": 8760556, 
+          "average": 171775.60784313726
         }
       }, 
       "drugs.[0].Totals.Tobacco.Cigarette Past Month.26+": {
         "2002": {
-          "count": 47, 
-          "sum": 3725095, 
-          "average": 79257.34042553192
+          "count": 51, 
+          "sum": 4462092, 
+          "average": 87492.0
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 3721071, 
-          "average": 79171.72340425532
+          "count": 51, 
+          "sum": 4462497, 
+          "average": 87499.94117647059
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 3718594, 
-          "average": 77470.70833333333
+          "count": 51, 
+          "sum": 4456043, 
+          "average": 87373.39215686274
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 4034578, 
-          "average": 82338.32653061225
+          "count": 51, 
+          "sum": 4451339, 
+          "average": 87281.1568627451
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 3716084, 
-          "average": 79065.6170212766
+          "count": 51, 
+          "sum": 4461627, 
+          "average": 87482.88235294117
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 3725466, 
-          "average": 77613.875
+          "count": 51, 
+          "sum": 4459479, 
+          "average": 87440.76470588235
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 3947392, 
-          "average": 82237.33333333333
+          "count": 51, 
+          "sum": 4392492, 
+          "average": 86127.29411764706
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 4026217, 
-          "average": 82167.69387755102
+          "count": 51, 
+          "sum": 4445344, 
+          "average": 87163.60784313726
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 4025570, 
-          "average": 80511.4
+          "count": 51, 
+          "sum": 4438074, 
+          "average": 87021.05882352941
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 4030392, 
-          "average": 82252.89795918367
+          "count": 51, 
+          "sum": 4413092, 
+          "average": 86531.2156862745
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 4023872, 
-          "average": 82119.83673469388
+          "count": 51, 
+          "sum": 4426268, 
+          "average": 86789.56862745098
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 4034096, 
-          "average": 82328.48979591837
+          "count": 51, 
+          "sum": 4429996, 
+          "average": 86862.66666666667
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 4032738, 
-          "average": 82300.77551020408
+          "count": 51, 
+          "sum": 4422024, 
+          "average": 86706.35294117648
         }
       }, 
       "drugs.[0].Rates.Alcohol.Dependence Past Year.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 339.3300000000001, 
-          "average": 7.219787234042553
+          "count": 51, 
+          "sum": 368.53000000000003, 
+          "average": 7.2260784313725495
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 336.15000000000003, 
-          "average": 7.152127659574467
+          "count": 51, 
+          "sum": 365.41, 
+          "average": 7.164901960784314
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 336.20000000000005, 
-          "average": 7.004166666666666
+          "count": 51, 
+          "sum": 355.90000000000003, 
+          "average": 6.978431372549019
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 339.25999999999993, 
-          "average": 6.923673469387755
+          "count": 51, 
+          "sum": 352.78, 
+          "average": 6.917254901960784
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 332.9100000000001, 
-          "average": 7.0831914893617025
+          "count": 51, 
+          "sum": 362.2, 
+          "average": 7.101960784313725
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 339.41999999999996, 
-          "average": 7.07125
+          "count": 51, 
+          "sum": 359.08, 
+          "average": 7.0407843137254895
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 266.47, 
-          "average": 5.551458333333334
+          "count": 51, 
+          "sum": 284.31999999999994, 
+          "average": 5.574901960784314
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 335.93, 
-          "average": 6.855714285714286
+          "count": 51, 
+          "sum": 349.5700000000001, 
+          "average": 6.854313725490196
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 339.86999999999995, 
-          "average": 6.7974
+          "count": 51, 
+          "sum": 346.44999999999993, 
+          "average": 6.793137254901961
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 301.5400000000001, 
-          "average": 6.1538775510204085
+          "count": 51, 
+          "sum": 318.20000000000005, 
+          "average": 6.23921568627451
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 317.09000000000003, 
-          "average": 6.471224489795919
+          "count": 51, 
+          "sum": 332.30000000000007, 
+          "average": 6.515686274509804
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 289.37, 
-          "average": 5.905510204081633
+          "count": 51, 
+          "sum": 303.77, 
+          "average": 5.956274509803921
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 295.4299999999999, 
-          "average": 6.0291836734693875
+          "count": 51, 
+          "sum": 310.96, 
+          "average": 6.097254901960784
         }
       }, 
       "drugs.[0].Rates.Marijuana.Perceptions of Risk.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 1071.7000000000003, 
-          "average": 22.80212765957447
+          "count": 51, 
+          "sum": 1165.5, 
+          "average": 22.852941176470587
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1040.91, 
-          "average": 22.147021276595748
+          "count": 51, 
+          "sum": 1131.91, 
+          "average": 22.194313725490197
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 963.8699999999998, 
-          "average": 20.080625
+          "count": 51, 
+          "sum": 1031.1399999999999, 
+          "average": 20.21843137254902
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 959.2200000000001, 
-          "average": 19.57591836734694
+          "count": 51, 
+          "sum": 997.5500000000001, 
+          "average": 19.559803921568626
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1010.0900000000001, 
-          "average": 21.491276595744683
+          "count": 51, 
+          "sum": 1098.29, 
+          "average": 21.535098039215686
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 995.3199999999999, 
-          "average": 20.735833333333332
+          "count": 51, 
+          "sum": 1064.7, 
+          "average": 20.876470588235296
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 633.6099999999999, 
-          "average": 13.200208333333334
+          "count": 51, 
+          "sum": 663.6099999999998, 
+          "average": 13.011960784313725
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 926.9300000000001, 
-          "average": 18.916938775510204
+          "count": 51, 
+          "sum": 963.9300000000002, 
+          "average": 18.900588235294116
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 910.1199999999998, 
-          "average": 18.2024
+          "count": 51, 
+          "sum": 930.3399999999998, 
+          "average": 18.241960784313726
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 810.0099999999999, 
-          "average": 16.530816326530612
+          "count": 51, 
+          "sum": 839.3399999999998, 
+          "average": 16.45764705882353
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 852.39, 
-          "average": 17.395714285714284
+          "count": 51, 
+          "sum": 884.88, 
+          "average": 17.35058823529412
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 718.9, 
-          "average": 14.67142857142857
+          "count": 51, 
+          "sum": 746.06, 
+          "average": 14.628627450980394
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 764.4599999999999, 
-          "average": 15.60122448979592
+          "count": 51, 
+          "sum": 792.7099999999999, 
+          "average": 15.543333333333335
         }
       }, 
       "drugs.[0].Rates.Alcohol.Use Past Month.12-17": {
         "2002": {
-          "count": 47, 
-          "sum": 861.82, 
-          "average": 18.336595744680853
+          "count": 51, 
+          "sum": 932.4100000000001, 
+          "average": 18.282549019607842
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 836.0300000000002, 
-          "average": 17.78787234042553
+          "count": 51, 
+          "sum": 905.1900000000002, 
+          "average": 17.748823529411766
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 780.2399999999999, 
-          "average": 16.255
+          "count": 51, 
+          "sum": 823.5599999999998, 
+          "average": 16.148235294117647
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 768.1999999999999, 
-          "average": 15.677551020408163
+          "count": 51, 
+          "sum": 796.3399999999999, 
+          "average": 15.61450980392157
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 810.2600000000003, 
-          "average": 17.239574468085106
+          "count": 51, 
+          "sum": 878.0000000000003, 
+          "average": 17.215686274509803
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 806.8099999999998, 
-          "average": 16.808541666666667
+          "count": 51, 
+          "sum": 850.78, 
+          "average": 16.681960784313723
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 535.6600000000001, 
-          "average": 11.159583333333332
+          "count": 51, 
+          "sum": 573.0300000000002, 
+          "average": 11.235882352941175
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 741.0400000000001, 
-          "average": 15.123265306122448
+          "count": 51, 
+          "sum": 769.15, 
+          "average": 15.081372549019607
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 727.94, 
-          "average": 14.558799999999998
+          "count": 51, 
+          "sum": 741.9300000000001, 
+          "average": 14.547647058823529
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 631.3700000000001, 
-          "average": 12.885102040816326
+          "count": 51, 
+          "sum": 658.0600000000002, 
+          "average": 12.90313725490196
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 672.6199999999998, 
-          "average": 13.726938775510204
+          "count": 51, 
+          "sum": 699.9999999999999, 
+          "average": 13.72549019607843
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 591.18, 
-          "average": 12.064897959183673
+          "count": 51, 
+          "sum": 614.15, 
+          "average": 12.042156862745097
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 611.2900000000001, 
-          "average": 12.475306122448979
+          "count": 51, 
+          "sum": 636.1200000000001, 
+          "average": 12.472941176470588
         }
       }, 
       "drugs.[0].Totals.Tobacco.Cigarette Past Month.18-25": {
         "2002": {
-          "count": 47, 
-          "sum": 1047848, 
-          "average": 22294.63829787234
+          "count": 51, 
+          "sum": 1287279, 
+          "average": 25240.764705882353
         }, 
         "2003": {
-          "count": 47, 
-          "sum": 1039167, 
-          "average": 22109.936170212764
+          "count": 51, 
+          "sum": 1277404, 
+          "average": 25047.13725490196
         }, 
         "2006": {
-          "count": 48, 
-          "sum": 1014650, 
-          "average": 21138.541666666668
+          "count": 51, 
+          "sum": 1244441, 
+          "average": 24400.803921568626
         }, 
         "2007": {
-          "count": 49, 
-          "sum": 1101724, 
-          "average": 22484.163265306124
+          "count": 51, 
+          "sum": 1232347, 
+          "average": 24163.666666666668
         }, 
         "2004": {
-          "count": 47, 
-          "sum": 1030050, 
-          "average": 21915.957446808512
+          "count": 51, 
+          "sum": 1266974, 
+          "average": 24842.62745098039
         }, 
         "2005": {
-          "count": 48, 
-          "sum": 1024700, 
-          "average": 21347.916666666668
+          "count": 51, 
+          "sum": 1255985, 
+          "average": 24627.156862745098
         }, 
         "2014": {
-          "count": 48, 
-          "sum": 899795, 
-          "average": 18745.729166666668
+          "count": 51, 
+          "sum": 1028395, 
+          "average": 20164.607843137255
         }, 
         "2008": {
-          "count": 49, 
-          "sum": 1089416, 
-          "average": 22232.979591836734
+          "count": 51, 
+          "sum": 1219691, 
+          "average": 23915.50980392157
         }, 
         "2009": {
-          "count": 50, 
-          "sum": 1079582, 
-          "average": 21591.64
+          "count": 51, 
+          "sum": 1206478, 
+          "average": 23656.43137254902
         }, 
         "2011": {
-          "count": 49, 
-          "sum": 1002494, 
-          "average": 20459.061224489797
+          "count": 51, 
+          "sum": 1124594, 
+          "average": 22050.86274509804
         }, 
         "2010": {
-          "count": 49, 
-          "sum": 1039699, 
-          "average": 21218.34693877551
+          "count": 51, 
+          "sum": 1165723, 
+          "average": 22857.313725490196
         }, 
         "2013": {
-          "count": 49, 
-          "sum": 965394, 
-          "average": 19701.918367346938
+          "count": 51, 
+          "sum": 1083594, 
+          "average": 21246.941176470587
         }, 
         "2012": {
-          "count": 49, 
-          "sum": 984207, 
-          "average": 20085.85714285714
+          "count": 51, 
+          "sum": 1104389, 
+          "average": 21654.686274509804
         }
       }
     }, 

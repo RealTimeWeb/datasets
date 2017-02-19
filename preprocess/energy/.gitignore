@@ -1,0 +1,16 @@
+*.csv
+*.json
+*.txt
+*.pdf
+*.zip
+pdfs/*.pdf
+*.zip
+*.txt
+csvs/
+tabula/
+csvs-old/
+cache/
+url_cache.sqlite
+*.xls
+*.xlsx
+__pycache__
