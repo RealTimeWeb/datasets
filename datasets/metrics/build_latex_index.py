@@ -77,6 +77,11 @@ axarr[0, 0].set_title("Distribution of Datasets' Heights")
 axarr[1, 0].set_title("TESTING")
 plt.tight_layout()
 
+print("Total Size (MB)", shapes['Size (MB)'].sum())
+print("Total Size (KB)", shapes['Size (MB)'].sum()*1000)
+print("Total Rows", shapes['Rows (1000s)'].sum()*1000)
+print("Total Fields", shapes['Number of Fields'].sum())
+
 '''
 levelIQR = pd.DataFrame(columns=levels.columns)
 for c in levels.columns:
@@ -98,7 +103,7 @@ fig = matplotlib.pyplot.gcf()
 #fig.set_size_inches(2.5, .5)
 fig.subplots_adjust(hspace=.9)
 
-levels.plot.box(vert=False, showfliers=False)
+#levels.plot.box(vert=False, showfliers=False)
 
 '''
 shapes = pd.DataFrame([s['heights'] for r in reports for s in r.values()])

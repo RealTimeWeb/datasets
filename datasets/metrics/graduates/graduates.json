@@ -1,19 +1,19 @@
 {
   "graduates": {
     "dicts": {
-      "count": 6, 
+      "count": 13, 
       "levels": {
         "1": {
-          "lengths": 4, 
+          "lengths": 5, 
           "key lengths": 10
         }, 
         "2": {
           "lengths": 4, 
-          "key lengths": 11
+          "key lengths": 9
         }, 
         "3": {
-          "lengths": 3, 
-          "key lengths": 18
+          "lengths": 5, 
+          "key lengths": 13
         }
       }, 
       "inconsistent": {}, 
@@ -31,18 +31,18 @@
       "careers"
     ], 
     "atomics": {
-      "count": 20, 
+      "count": 50, 
       "nones": 0, 
-      "ints": 16, 
+      "ints": 44, 
       "booleans": 0, 
       "longs": 0, 
       "unknown": 0, 
-      "strings": 2, 
-      "floats": 2
+      "strings": 1, 
+      "floats": 5
     }, 
     "lists": {
       "count": 1, 
-      "lengths": 173, 
+      "lengths": 517, 
       "complex": 1
     }, 
     "heights": 4, 
@@ -51,11 +51,11 @@
       "keys": {}, 
       "sizes": 0
     }, 
-    "length": 173, 
+    "length": 517, 
     "indexes": [
-      0
+      2
     ], 
     "locals": 0, 
-    "size": 110659
+    "size": 961072
   }
 }

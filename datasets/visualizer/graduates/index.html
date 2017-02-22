@@ -1,11 +1,22 @@
-{% if standalone %}{% extends 'layout.html' %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Graduates Visualizer (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
-{% block title %}
-{{ metadata.name }} Visualizer (CORGIS Datasets Project)
-{% endblock %}
-{% endif -%}
-
-{% block endstyle %}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    
 <link rel="stylesheet" href="../../_lib/bootstrap-tagsinput.css">
 <link href="../../_lib/multiselect.css" media="screen" rel="stylesheet" type="text/css">
 
@@ -34,9 +45,24 @@ body {
     opacity: .75;
 }
 </style>
-{% endblock %}
 
-{% block extrahead %}
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
 
 <script>
 if (typeof log === 'undefined') {
@@ -45,9 +71,29 @@ if (typeof log === 'undefined') {
 </script>
 
 
-{% endblock %}
 
-{% block body %}
+    
+    <script>
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
     <script src="../../_lib/jquery.multi-select.js" type="text/javascript"></script>
     <script src="../../_lib/bootstrap-tagsinput.js"></script>
     <script src="../../_lib/typeahead.bundle.js"></script>
@@ -190,14 +236,14 @@ mainModel = {
         'chart': ko.observable(CHARTS()[0])
     },
     'bars': ko.observableArray([
-    {% for local in locals %}
-        {'name': {{ local.name|snake_case|replace('.', ' ')|tojson }}, 'data': {{ local.name|snake_case }}_bar}{{ ',' if not loop.last}}
-    {% endfor %}
+    
+        {'name': "graduates", 'data': graduates_bar}
+    
     ]),
     'structures':  ko.observableArray([
-    {% for local in locals %}
-        {'name': {{ local.name|snake_case|replace('.', ' ')|tojson }}, 'row': {{ local.row|tojson }}, 'order': {{ local.order|tojson }}, 'data': {{ local.name|snake_case }}}{{ ',' if not loop.last}}
-    {% endfor %}
+    
+        {'name': "graduates", 'row': "grad major", 'order': "", 'data': graduates}
+    
     ])
 };
 mainModel.selected.bar_dataset = ko.computed(function() {
@@ -776,16 +822,14 @@ ko.bindingHandlers.fadeVisible = {
 <div class='container'>
 
 <div class="page-header">
-    {% if metadata.splash %}
-    <img class="img-rounded pull-right" src="{{ metadata.name|snake_case }}_splash.png" alt="{{ metadata.name|snake_case }}_splash.png" style="max-width: 256px; max-height: 256px;">
-    {% elif metadata.icon %}
-    <img class="img-rounded pull-right" src="{{ metadata.name|snake_case }}.png" alt="{{ metadata.name }}" style="max-width: 128px; max-height: 128px;">
-    {% endif %}
-    <h1>Visualize {{ metadata.name }}</h1>
+    
+    <img class="img-rounded pull-right" src="graduates.png" alt="Graduates" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Visualize Graduates</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
-    <span class="text-muted">By {{metadata.author}}</span><br>
-    <span class="text-muted">Version {{metadata.version}}, created {{ metadata.datetime}}</span><br>
-    <span class="text-muted">Tags: {{ metadata.tags|join(', ')}}</span><br>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 11/1/2015</span><br>
+    <span class="text-muted">Tags: graduation, grads, majors, education, college, university, higher education, jobs, careers</span><br>
 </div>
 
 <div class="alert hide-on-load alert-warning row" role="alert">
@@ -823,14 +867,15 @@ ko.bindingHandlers.fadeVisible = {
     <h3 id="overview">Overview</h3>
     
     <p>
-    {{ metadata.description.overview|safe }}
+    This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series.  Included is information about employment numbers, major information, and the earnings of different majors. Many majors were not available before 2010, so their values have been recorded as 0 (note that this may affect the averages shown in the bar charts).
+
     </p>
     
-    {% if metadata.description.citation|safe %}
+    
     <p>
-    <i>{{ metadata.description.citation}}</i>
+    <i>http://www.census.gov/acs/www/data_documentation/pums_documentation/ <br> https://github.com/fivethirtyeight/data/tree/master/college-majors</i>
     </p>
-    {% endif %}
+    
 </div>
 
 <div class='row'>
@@ -977,28 +1022,15 @@ ko.bindingHandlers.fadeVisible = {
          data-bind="fadeVisible: selected.chart().id == 'bar'"></div>
 </div>
 
-{% if questions %}
-<div class='row'>
-    <h3 id="overview">Questions</h3>
-    
-    <p>
-    The following are research questions to explore about this dataset.
-    </p>
-    
-    <ol>
-    {% for question in questions %}
-    <li>{{ question }}</li>
-    {% endfor %}
-    </ol>
-</div>
-{% endif %}
+
 
 </div>
 
 <!-- Datasets! -->
-{% for local in locals %}
-<script src='{{ local.name|snake_case }}.js'></script>
-<script src='{{ local.name|snake_case }}_bar.js'></script>
-{% endfor %}
 
-{% endblock %}
+<script src='graduates.js'></script>
+<script src='graduates_bar.js'></script>
+
+
+
+</div>

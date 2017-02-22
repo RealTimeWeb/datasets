@@ -8,12 +8,16 @@ Created on Tue Oct  4 16:42:18 2016
 import weather
 import matplotlib.pyplot as plt
 
-data = weather.get_weather(test=False)
+data = weather.get_weather()
 new = []
 
 for city in data:
     if city['Station']['Location'] == "Blacksburg, VA":
         new.append(city['Data']['Precipitation'])
+print(len(data))
         
 plt.hist(new)
 plt.show()
+
+print(len(weather.get_weather(test=True)))
+print(len(weather.get_weather(test=False)))

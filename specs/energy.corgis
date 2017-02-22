@@ -28,6 +28,8 @@ interfaces:
         sql: SELECT data FROM energy
         post: json()
 comments:
+    State: The state that this report was made for.
+    Year: The year that this report was made.
     Consumption:
         Commercial:
             Coal: Coal consumed by the commercial sector in billion BTU.

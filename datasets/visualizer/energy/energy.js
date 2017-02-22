@@ -171229,7 +171229,9 @@ energy = [
     "type": "number"
   }, 
   {
-    "type": "text", 
+    "comment": "The state that this report was made for.", 
+    "index": true, 
+    "name": "energy.[0].State", 
     "data": [
       "Utah", 
       "Vermont", 
@@ -173286,12 +173288,13 @@ energy = [
       "Nebraska", 
       "District of Columbia"
     ], 
-    "name": "energy.[0].State", 
     "pretty": "State", 
-    "index": true
+    "type": "text"
   }, 
   {
-    "type": "number", 
+    "comment": "The year that this report was made.", 
+    "index": true, 
+    "name": "energy.[0].Year", 
     "data": [
       1960, 
       1960, 
@@ -175348,8 +175351,7 @@ energy = [
       2014, 
       2014
     ], 
-    "name": "energy.[0].Year", 
     "pretty": "Year", 
-    "index": true
+    "type": "number"
   }
 ]

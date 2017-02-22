@@ -189,6 +189,7 @@ def remove_outliers(lodol, actually_keep=True):
         #print(data['name'])
         #print([e for e in data['data'] if isinstance(e, (str, unicode))])
         if isinstance(data['data'][0], (int, float)):
+            print(data['name'])
             mean = statistics.mean(data['data'])
             std = statistics.stdev(data['data'])
             evils = 0
@@ -294,7 +295,8 @@ def build_locals(model, js_path):
                             aggregated_values[key][category.replace(',', '')] = {
                                 'count': len(values),
                                 'sum': sum(values),                                
-                                'average': statistics.mean(values)
+                                'average': statistics.mean(values),
+                                'average w/o zero': statistics.mean([v for v in values if v>0] if sum(values) else [0])
                             }
                     #inter = index_path.split('.', 2)[2]
                     #if '.' in inter:

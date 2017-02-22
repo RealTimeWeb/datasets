@@ -16,9 +16,9 @@ local:
     name: weather
     row: report
     indexes:
-      - name: state
+      - name: State
         jsonpath: weather.[0].Station.Location
-      - name: date
+      - name: Date
         jsonpath: weather.[0].Date.Full
 interfaces:
   - name: get weather

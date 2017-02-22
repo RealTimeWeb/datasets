@@ -336,6 +336,33 @@ $(document).ready(function() {
     );
     </script>
     
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="graduates">
+      
+      <div class="media-left  media-middle">
+        <a target="_blank" href="graduates/graduates.html">
+          <img class="media-object" src="graduates/graduates.png" alt="Graduates" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a target="_blank" href="graduates/graduates.html">
+        <h4 class="media-heading">Graduates</h4>
+        </a>
+        This library holds data about employment of new graduates by major.<br>
+        <i>graduation, grads, majors, education, college, university, higher education, jobs, careers</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "graduates",
+            'body': "This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series. Included is information about employment numbers, major information, and the earnings of different majors. Many majors were not available before 2010, so their values have been recorded as 0 (note that this may affect the averages shown in the bar charts).",
+            'description': "This library holds data about employment of new graduates by major.",
+            'tags': ["graduation", "grads", "majors", "education", "college", "university", "higher education", "jobs", "careers"]
+        }
+    );
+    </script>
+    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="immigration">
       
       <div class="media-left  media-middle">
