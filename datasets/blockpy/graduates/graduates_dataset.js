@@ -1,6 +1,8 @@
 _IMPORTED_DATASETS['graduates'] = {
   "Applied Research": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Applied Research.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Applied Research", 
     "data": [
       192876, 
       0, 
@@ -465,12 +467,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Applied Research", 
     "pretty": "Employment Work Activity: Applied Research", 
-    "index": false
+    "type": "number"
   }, 
   "Managing/Supervising People/Projects": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving managing or supervising either people or projects.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Managing/Supervising People/Projects", 
     "data": [
       288180, 
       0, 
@@ -935,12 +938,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Managing/Supervising People/Projects", 
     "pretty": "Employment Work Activity: Managing/Supervising People/Projects", 
-    "index": false
+    "type": "number"
   }, 
   "Reason Working Outside Field.No Job Available": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because there was no job available in their field.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Reason Working Outside Field.No Job Available", 
     "data": [
       23027, 
       0, 
@@ -1405,12 +1409,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Reason Working Outside Field.No Job Available", 
     "pretty": "Employment Reason Working Outside Field: No Job Available", 
-    "index": false
+    "type": "number"
   }, 
   "Human Resources": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Human Resources.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Human Resources", 
     "data": [
       157421, 
       0, 
@@ -1875,12 +1880,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Human Resources", 
     "pretty": "Employment Work Activity: Human Resources", 
-    "index": false
+    "type": "number"
   }, 
   "Reason for Not Working.No Job Available": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are not working because there was no job available.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Reason for Not Working.No Job Available", 
     "data": [
       12177, 
       0, 
@@ -2345,12 +2351,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Reason for Not Working.No Job Available", 
     "pretty": "Employment Reason For Not Working: No Job Available", 
-    "index": false
+    "type": "number"
   }, 
   "Teaching": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving teaching.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Teaching", 
     "data": [
       58441, 
       0, 
@@ -2815,12 +2822,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Teaching", 
     "pretty": "Employment Work Activity: Teaching", 
-    "index": false
+    "type": "number"
   }, 
   "Employed": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are employed.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Status.Employed", 
     "data": [
       547402, 
       0, 
@@ -3285,12 +3293,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Status.Employed", 
     "pretty": "Employment Status: Employed", 
-    "index": false
+    "type": "number"
   }, 
   "Pay/Promotion": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of pay or promotion opportunities.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Reason Working Outside Field.Pay/Promotion", 
     "data": [
       26273, 
       0, 
@@ -3755,12 +3764,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Reason Working Outside Field.Pay/Promotion", 
     "pretty": "Employment Reason Working Outside Field: Pay/Promotion", 
-    "index": false
+    "type": "number"
   }, 
   "Business/Industry": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year who described their Employer Type as \"Business/Industry\".", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Employer Type.Business/Industry", 
     "data": [
       453135, 
       0, 
@@ -4225,12 +4235,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Employer Type.Business/Industry", 
     "pretty": "Employment Employer Type: Business/Industry", 
-    "index": false
+    "type": "number"
   }, 
   "Development": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Development.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Development", 
     "data": [
       224893, 
       0, 
@@ -4695,12 +4706,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Development", 
     "pretty": "Employment Work Activity: Development", 
-    "index": false
+    "type": "number"
   }, 
   "Females": {
-    "type": "number", 
+    "comment": "The estimated number of women awarded degrees in this major during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Demographics.Gender.Females", 
     "data": [
       34011, 
       0, 
@@ -5165,12 +5177,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Demographics.Gender.Females", 
     "pretty": "Demographics Gender: Females", 
-    "index": false
+    "type": "number"
   }, 
   "Asians": {
-    "type": "number", 
+    "comment": "The estimated number of people identifying as Asian that were awarded degrees in this major during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Demographics.Ethnicity.Asians", 
     "data": [
       78979, 
       0, 
@@ -5635,12 +5648,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Demographics.Ethnicity.Asians", 
     "pretty": "Demographics Ethnicity: Asians", 
-    "index": false
+    "type": "number"
   }, 
   "Government": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year who described their Employer Type as \"Government\".", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Employer Type.Government", 
     "data": [
       59785, 
       0, 
@@ -6105,12 +6119,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Employer Type.Government", 
     "pretty": "Employment Employer Type: Government", 
-    "index": false
+    "type": "number"
   }, 
   "Unemployed": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are unemployed.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Status.Unemployed", 
     "data": [
       25498, 
       0, 
@@ -6575,12 +6590,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Status.Unemployed", 
     "pretty": "Employment Status: Unemployed", 
-    "index": false
+    "type": "number"
   }, 
   "Males": {
-    "type": "number", 
+    "comment": "The estimated number of women awarded degrees in this major during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Demographics.Gender.Males", 
     "data": [
       619603, 
       0, 
@@ -7045,12 +7061,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Demographics.Gender.Males", 
     "pretty": "Demographics Gender: Males", 
-    "index": false
+    "type": "number"
   }, 
   "Educational Institution": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year who described their Employer Type as an \"Educational Institution\".", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Employer Type.Educational Institution", 
     "data": [
       34482, 
       0, 
@@ -7515,12 +7532,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Employer Type.Educational Institution", 
     "pretty": "Employment Employer Type: Educational Institution", 
-    "index": false
+    "type": "number"
   }, 
   "Work Activity.Other": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving something not involved in any of the other categories.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Other", 
     "data": [
       41852, 
       0, 
@@ -7985,12 +8003,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Other", 
     "pretty": "Employment Work Activity: Other", 
-    "index": false
+    "type": "number"
   }, 
   "Quantity": {
-    "type": "number", 
+    "comment": "The number of salaries reported for employed people with this degree during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Salaries.Quantity", 
     "data": [
       7259, 
       0, 
@@ -8455,12 +8474,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Salaries.Quantity", 
     "pretty": "Salaries: Quantity", 
-    "index": false
+    "type": "number"
   }, 
   "Career Change": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because they wanted a career change.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Reason Working Outside Field.Career Change", 
     "data": [
       27388, 
       0, 
@@ -8925,12 +8945,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Reason Working Outside Field.Career Change", 
     "pretty": "Employment Reason Working Outside Field: Career Change", 
-    "index": false
+    "type": "number"
   }, 
   "Student": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are not working because they were still a student.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Reason for Not Working.Student", 
     "data": [
       7780, 
       0, 
@@ -9395,12 +9416,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Reason for Not Working.Student", 
     "pretty": "Employment Reason For Not Working: Student", 
-    "index": false
+    "type": "number"
   }, 
   "Family-related": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of family-related issues.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Reason Working Outside Field.Family-related", 
     "data": [
       7803, 
       0, 
@@ -9865,12 +9887,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Reason Working Outside Field.Family-related", 
     "pretty": "Employment Reason Working Outside Field: Family-Related", 
-    "index": false
+    "type": "number"
   }, 
   "Basic Research": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Basic Research.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Basic Research", 
     "data": [
       83044, 
       0, 
@@ -10335,12 +10358,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Basic Research", 
     "pretty": "Employment Work Activity: Basic Research", 
-    "index": false
+    "type": "number"
   }, 
   "Professional Service": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving professional service.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Professional Service", 
     "data": [
       49979, 
       0, 
@@ -10805,12 +10829,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Professional Service", 
     "pretty": "Employment Work Activity: Professional Service", 
-    "index": false
+    "type": "number"
   }, 
   "Doctorates": {
-    "type": "number", 
+    "comment": "The estimated number of doctoral degrees awarded in this for major during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Education.Degrees.Doctorates", 
     "data": [
       25943, 
       0, 
@@ -11275,12 +11300,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Education.Degrees.Doctorates", 
     "pretty": "Education Degrees: Doctorates", 
-    "index": false
+    "type": "number"
   }, 
   "Professionals": {
-    "type": "number", 
+    "comment": "The estimated number of professional degrees awarded in this for major during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Education.Degrees.Professionals", 
     "data": [
       9770, 
       0, 
@@ -11745,12 +11771,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Education.Degrees.Professionals", 
     "pretty": "Education Degrees: Professionals", 
-    "index": false
+    "type": "number"
   }, 
   "Masters": {
-    "type": "number", 
+    "comment": "The estimated number of Masters awarded in this for major during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Education.Degrees.Masters", 
     "data": [
       174313, 
       0, 
@@ -12215,12 +12242,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Education.Degrees.Masters", 
     "pretty": "Education Degrees: Masters", 
-    "index": false
+    "type": "number"
   }, 
   "Computer Applications": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Computer Applications.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Computer Applications", 
     "data": [
       339093, 
       0, 
@@ -12685,12 +12713,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Computer Applications", 
     "pretty": "Employment Work Activity: Computer Applications", 
-    "index": false
+    "type": "number"
   }, 
   "Median": {
-    "type": "number", 
+    "comment": "The median recorded salary reported for employed people with this degree during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Salaries.Median", 
     "data": [
       57000.0, 
       0, 
@@ -13155,12 +13184,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Salaries.Median", 
     "pretty": "Salaries: Median", 
-    "index": false
+    "type": "number"
   }, 
   "Job Location": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of the job location.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Reason Working Outside Field.Job Location", 
     "data": [
       20683, 
       0, 
@@ -13625,12 +13655,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Reason Working Outside Field.Job Location", 
     "pretty": "Employment Reason Working Outside Field: Job Location", 
-    "index": false
+    "type": "number"
   }, 
   "Working Conditions": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of working conditions.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Reason Working Outside Field.Working Conditions", 
     "data": [
       17308, 
       0, 
@@ -14095,12 +14126,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Reason Working Outside Field.Working Conditions", 
     "pretty": "Employment Reason Working Outside Field: Working Conditions", 
-    "index": false
+    "type": "number"
   }, 
   "Lowest": {
-    "type": "number", 
+    "comment": "The lowest recorded salary reported for employed people with this degree during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Salaries.Lowest", 
     "data": [
       9000.0, 
       0, 
@@ -14565,12 +14597,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Salaries.Lowest", 
     "pretty": "Salaries: Lowest", 
-    "index": false
+    "type": "number"
   }, 
   "Minorities": {
-    "type": "number", 
+    "comment": "The estimated number of people identifying as a minority (e.g., Black, African American, Native American) that were awarded degrees in this major during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Demographics.Ethnicity.Minorities", 
     "data": [
       40355, 
       0, 
@@ -15035,12 +15068,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Demographics.Ethnicity.Minorities", 
     "pretty": "Demographics Ethnicity: Minorities", 
-    "index": false
+    "type": "number"
   }, 
   "Accounting/Finance/Contracts": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Accounting, Finance, or Contracts.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Accounting/Finance/Contracts", 
     "data": [
       250688, 
       0, 
@@ -15505,12 +15539,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Accounting/Finance/Contracts", 
     "pretty": "Employment Work Activity: Accounting/Finance/Contracts", 
-    "index": false
+    "type": "number"
   }, 
   "Reason Working Outside Field.Other": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of other reasons.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Reason Working Outside Field.Other", 
     "data": [
       10845, 
       0, 
@@ -15975,12 +16010,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Reason Working Outside Field.Other", 
     "pretty": "Employment Reason Working Outside Field: Other", 
-    "index": false
+    "type": "number"
   }, 
   "Highest": {
-    "type": "number", 
+    "comment": "The highest recorded salary reported for employed people with this degree during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Salaries.Highest", 
     "data": [
       999999.0, 
       0, 
@@ -16445,12 +16481,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Salaries.Highest", 
     "pretty": "Salaries: Highest", 
-    "index": false
+    "type": "number"
   }, 
   "Bachelors": {
-    "type": "number", 
+    "comment": "The estimated number of bachelor degrees awarded in this for major during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Education.Degrees.Bachelors", 
     "data": [
       443589, 
       0, 
@@ -16915,12 +16952,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Education.Degrees.Bachelors", 
     "pretty": "Education Degrees: Bachelors", 
-    "index": false
+    "type": "number"
   }, 
   "Productions/Operations/Maintenance": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving productions, operations, or maintenance.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Productions/Operations/Maintenance", 
     "data": [
       72659, 
       0, 
@@ -17385,12 +17423,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Productions/Operations/Maintenance", 
     "pretty": "Employment Work Activity: Productions/Operations/Maintenance", 
-    "index": false
+    "type": "number"
   }, 
   "Mean": {
-    "type": "number", 
+    "comment": "The average (mean) recorded salary reported for employed people with this degree during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Salaries.Mean", 
     "data": [
       113262.51, 
       0, 
@@ -17855,12 +17894,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Salaries.Mean", 
     "pretty": "Salaries: Mean", 
-    "index": false
+    "type": "number"
   }, 
   "Major": {
-    "type": "text", 
+    "comment": "The name of the major for these graduated students.", 
+    "index": true, 
+    "name": "graduates.[0].Education.Major", 
     "data": [
       "Electrical Engineering", 
       "Biochemistry and Biophysics", 
@@ -18325,12 +18365,13 @@ _IMPORTED_DATASETS['graduates'] = {
       "Management & Administration", 
       "Political and related sciences"
     ], 
-    "name": "graduates.[0].Education.Major", 
     "pretty": "Education: Major", 
-    "index": true
+    "type": "text"
   }, 
   "Layoff": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are not working because they were laid off.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Reason for Not Working.Layoff", 
     "data": [
       14216, 
       0, 
@@ -18795,12 +18836,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Reason for Not Working.Layoff", 
     "pretty": "Employment Reason For Not Working: Layoff", 
-    "index": false
+    "type": "number"
   }, 
   "Family": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are not working because of their family.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Reason for Not Working.Family", 
     "data": [
       4319, 
       0, 
@@ -19265,12 +19307,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Reason for Not Working.Family", 
     "pretty": "Employment Reason For Not Working: Family", 
-    "index": false
+    "type": "number"
   }, 
   "Whites": {
-    "type": "number", 
+    "comment": "The estimated number of people identifying as White that were awarded degrees in this major during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Demographics.Ethnicity.Whites", 
     "data": [
       534220, 
       0, 
@@ -19735,12 +19778,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Demographics.Ethnicity.Whites", 
     "pretty": "Demographics Ethnicity: Whites", 
-    "index": false
+    "type": "number"
   }, 
   "Not in Labor Force": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are not in the labor force (e.g., retired, students, those taking care of children).", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Status.Not in Labor Force", 
     "data": [
       80715, 
       0, 
@@ -20205,12 +20249,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Status.Not in Labor Force", 
     "pretty": "Employment Status: Not In Labor Force", 
-    "index": false
+    "type": "number"
   }, 
   "Sales, Purchasing, Marketing": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving sales, purchasing, or marketing.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Sales, Purchasing, Marketing", 
     "data": [
       129887, 
       0, 
@@ -20675,12 +20720,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Sales, Purchasing, Marketing", 
     "pretty": "Employment Work Activity: Sales, Purchasing, Marketing", 
-    "index": false
+    "type": "number"
   }, 
   "No need/want": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who are not working because they either did not need a job and/or did not want a job.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Reason for Not Working.No need/want", 
     "data": [
       8996, 
       0, 
@@ -21145,12 +21191,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Reason for Not Working.No need/want", 
     "pretty": "Employment Reason For Not Working: No Need/Want", 
-    "index": false
+    "type": "number"
   }, 
   "Qualitity/Productivity Management": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving qualitity or productivity management.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Qualitity/Productivity Management", 
     "data": [
       153003, 
       0, 
@@ -21615,12 +21662,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Qualitity/Productivity Management", 
     "pretty": "Employment Work Activity: Qualitity/Productivity Management", 
-    "index": false
+    "type": "number"
   }, 
   "Design": {
-    "type": "number", 
+    "comment": "The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Design.", 
+    "index": false, 
+    "name": "graduates.[0].Employment.Work Activity.Design", 
     "data": [
       293734, 
       0, 
@@ -22085,12 +22133,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Employment.Work Activity.Design", 
     "pretty": "Employment Work Activity: Design", 
-    "index": false
+    "type": "number"
   }, 
   "Year": {
-    "type": "number", 
+    "comment": "The year that this report was made for.", 
+    "index": true, 
+    "name": "graduates.[0].Year", 
     "data": [
       "1993", 
       "1993", 
@@ -22555,12 +22604,13 @@ _IMPORTED_DATASETS['graduates'] = {
       "2015", 
       "2015"
     ], 
-    "name": "graduates.[0].Year", 
     "pretty": "Year: Year", 
-    "index": true
+    "type": "number"
   }, 
   "Standard Deviation": {
-    "type": "number", 
+    "comment": "The standard deviation (which gives the amount of variance) of salaries reported for employed people with this degree during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Salaries.Standard Deviation", 
     "data": [
       222253.95, 
       0, 
@@ -23025,12 +23075,13 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Salaries.Standard Deviation", 
     "pretty": "Salaries: Standard Deviation", 
-    "index": false
+    "type": "number"
   }, 
   "Total": {
-    "type": "number", 
+    "comment": "The estimated number of people awarded degrees in this major during this year.", 
+    "index": false, 
+    "name": "graduates.[0].Demographics.Total", 
     "data": [
       653614, 
       0, 
@@ -23495,8 +23546,7 @@ _IMPORTED_DATASETS['graduates'] = {
       0, 
       0
     ], 
-    "name": "graduates.[0].Demographics.Total", 
     "pretty": "Demographics: Total", 
-    "index": false
+    "type": "number"
   }
 }

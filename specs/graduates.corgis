@@ -9,8 +9,8 @@ metadata:
     description:
         short: This library holds data about employment of new graduates by major.
         overview: >
-            This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series.  Included is information about employment numbers, major information, and the earnings of different majors. Many majors were not available before 2010, so their values have been recorded as 0 (note that this may affect the averages shown in the bar charts).
-        citation: http://www.census.gov/acs/www/data_documentation/pums_documentation/ <br> https://github.com/fivethirtyeight/data/tree/master/college-majors
+            The data in this library comes from the National Survey of Recent College Graduates.  Included is information about employment numbers, major information, and the earnings of different majors. Many majors were not available before 2010, so their values have been recorded as 0 (note that this may affect the averages shown in the bar charts).
+        citation: https://www.nsf.gov/statistics/srvyrecentgrads/
 local:
   - file: graduates.json
     name: graduates
@@ -29,3 +29,66 @@ interfaces:
         post: json()
 structures:
     "graduates.[0].Earnings.Earnings Breakdown.Median": Based on full time, year-round workers
+comments:
+    Year: The year that this report was made for.
+    Education:
+        Major: The name of the major for these graduated students.
+        Degrees:
+            Bachelors: The estimated number of bachelor degrees awarded in this for major during this year.
+            Doctorates: The estimated number of doctoral degrees awarded in this for major during this year.
+            Masters: The estimated number of Masters awarded in this for major during this year.
+            Professionals: The estimated number of professional degrees awarded in this for major during this year.
+    Demographics:
+        Gender:
+            Females: The estimated number of women awarded degrees in this major during this year.
+            Males: The estimated number of women awarded degrees in this major during this year.
+        Total: The estimated number of people awarded degrees in this major during this year.
+        Ethnicity:
+            Asians: The estimated number of people identifying as Asian that were awarded degrees in this major during this year.
+            Minorities: The estimated number of people identifying as a minority (e.g., Black, African American, Native American) that were awarded degrees in this major during this year.
+            Whites: The estimated number of people identifying as White that were awarded degrees in this major during this year.
+    Salaries:
+        Highest: The highest recorded salary reported for employed people with this degree during this year.
+        Lowest: The lowest recorded salary reported for employed people with this degree during this year.
+        Mean: The average (mean) recorded salary reported for employed people with this degree during this year.
+        Median: The median recorded salary reported for employed people with this degree during this year.
+        Quantity: The number of salaries reported for employed people with this degree during this year.
+        Standard Deviation: The standard deviation (which gives the amount of variance) of salaries reported for employed people with this degree during this year.
+    Employment:
+        Employer Type:
+            Business/Industry: The number of people with a degree in this major during this year who described their Employer Type as "Business/Industry".
+            Educational Institution: The number of people with a degree in this major during this year who described their Employer Type as an "Educational Institution".
+            Government: The number of people with a degree in this major during this year who described their Employer Type as "Government".
+        Reason Working Outside Field:
+            Career Change: The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because they wanted a career change.
+            Family-related: The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of family-related issues.
+            Job Location: The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of the job location.
+            No Job Available: The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because there was no job available in their field.
+            Other: The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of other reasons.
+            Pay/Promotion: The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of pay or promotion opportunities.
+            Working Conditions: The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of working conditions.
+        Reason for Not Working:
+            Family: The number of people with a degree in this major during this year, who are not working because of their family.
+            Layoff: The number of people with a degree in this major during this year, who are not working because they were laid off.
+            No Job Available: The number of people with a degree in this major during this year, who are not working because there was no job available.
+            No need/want: The number of people with a degree in this major during this year, who are not working because they either did not need a job and/or did not want a job.
+            Student: The number of people with a degree in this major during this year, who are not working because they were still a student.
+        Status:
+            Employed: The number of people with a degree in this major during this year, who are employed.
+            Unemployed: The number of people with a degree in this major during this year, who are unemployed.
+            Not in Labor Force: The number of people with a degree in this major during this year, who are not in the labor force (e.g., retired, students, those taking care of children).
+        Work Activity:
+            Accounting/Finance/Contracts: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Accounting, Finance, or Contracts.
+            Applied Research: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Applied Research.
+            Basic Research: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Basic Research.
+            Computer Applications: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Computer Applications.
+            Design: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Design.
+            Development: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Development.
+            Human Resources: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Human Resources.
+            Managing/Supervising People/Projects: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving managing or supervising either people or projects.
+            Other: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving something not involved in any of the other categories.
+            Productions/Operations/Maintenance: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving productions, operations, or maintenance.
+            Professional Service: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving professional service.
+            Qualitity/Productivity Management: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving qualitity or productivity management.
+            Sales, Purchasing, Marketing: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving sales, purchasing, or marketing.
+            Teaching: The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving teaching.
