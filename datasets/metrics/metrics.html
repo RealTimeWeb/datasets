@@ -544,7 +544,7 @@ $(document).ready(function() {
     searcher.add(
         {
             'name': "energy",
-            'body': "United States Government reports on consumption, production, import, and export of various fuel sources. This data comes from the US Energy Information Administration, which has historical data from 1949 to 2014. All numbers are given in Quadrillion BTUs.",
+            'body': "United States Government reports on consumption, production, expenditures, and prices of various fuel sources. This data comes from the US Energy Information Administration, which has historical data from 1960 to 2014. Information was not always available, in which case 0 was reported instead. In some cases, very tiny values were rounded down to zero.",
             'description': "United States Government reports on consumption, production, import, and export of various fuel sources.",
             'tags': ["energy", "renewable", "united states", "us", "nuclear", "fossil fuels", "power"]
         }
@@ -679,7 +679,7 @@ $(document).ready(function() {
     searcher.add(
         {
             'name': "graduates",
-            'body': "This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series. Included is information about employment numbers, major information, and the earnings of different majors.",
+            'body': "This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series. Included is information about employment numbers, major information, and the earnings of different majors. Many majors were not available before 2010, so their values have been recorded as 0 (note that this may affect the averages shown in the bar charts).",
             'description': "This library holds data about employment of new graduates by major.",
             'tags': ["graduation", "grads", "majors", "education", "college", "university", "higher education", "jobs", "careers"]
         }

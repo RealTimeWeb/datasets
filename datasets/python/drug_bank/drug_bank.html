@@ -442,57 +442,57 @@ $(document).ready(function() {
             <tr> <td><code>"water solubility"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>""</code></td> 
-                 <td></td> </tr>
+                 <td>Maximum possible concentration of a substance dissolved in water. Reported in either mg/mL or g/L.</td> </tr>
             
             <tr> <td><code>"isoelectric point"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>4.04</code></td> 
-                 <td></td> </tr>
+                 <td>Dissociation constant (pKa) if small molecule, pH at which protein has no charge (if protein drug)</td> </tr>
             
             <tr> <td><code>"logp"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>0</code></td> 
-                 <td></td> </tr>
+                 <td>Predicted water/octanol partition coefficient.</td> </tr>
             
             <tr> <td><code>"caco2 permeability"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>0</code></td> 
-                 <td></td> </tr>
+                 <td>Caco-2 permeability coefficients</td> </tr>
             
             <tr> <td><code>"logs"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>""</code></td> 
-                 <td></td> </tr>
+                 <td>Predicted LogS (water solubility).</td> </tr>
             
             <tr> <td><code>"pka"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>0</code></td> 
-                 <td></td> </tr>
+                 <td>Dissociation constant (pKa) if small molecule, pH at which protein has no charge (if protein drug)</td> </tr>
             
             <tr> <td><code>"boiling point"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
                  <td><code>0</code></td> 
-                 <td></td> </tr>
+                 <td>Boiling point in degrees Celsius</td> </tr>
             
             <tr> <td><code>"hydrophobicity"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>-0.777</code></td> 
-                 <td></td> </tr>
+                 <td>Water/octanol partition coefficient (if small molecule) or hydrophobicity score (Gravy score) if protein/peptide.</td> </tr>
             
             <tr> <td><code>"molecular formula"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
                  <td><code>"C287H440N80O110S6"</code></td> 
-                 <td></td> </tr>
+                 <td>Chemical formula describing atomic or elemental composition</td> </tr>
             
             <tr> <td><code>"molecular weight"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>6963.425</code></td> 
-                 <td></td> </tr>
+                 <td>Molecular weight in g/mol, determined from molecular formula or sequence</td> </tr>
             
             <tr> <td><code>"melting point"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
                  <td><code>65.0</code></td> 
-                 <td></td> </tr>
+                 <td>Melting point in degrees Celsius</td> </tr>
             
         </table>
     </div>
@@ -588,12 +588,12 @@ $(document).ready(function() {
             <tr> <td><code>"atc codes"</code></td> 
                  <td><span data-toggle="tooltip" title="List">list</span></td> 
                  <td><a class='dialog-opener' id='btn-explore-drug_bank-__0__-atc-codes'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
-                 <td></td> </tr>
+                 <td>WHO drug classification system (ATC) identifiers</td> </tr>
             
             <tr> <td><code>"groups"</code></td> 
                  <td><span data-toggle="tooltip" title="List">list</span></td> 
                  <td><a class='dialog-opener' id='btn-explore-drug_bank-__0__-groups'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
-                 <td></td> </tr>
+                 <td>Can be one or more of "approved", "vet approved", "nutraceutical", "illicit", "withdrawn", "investigational", and "experimental".</td> </tr>
             
             <tr> <td><code>"inchi"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
@@ -613,7 +613,7 @@ $(document).ready(function() {
             <tr> <td><code>"categories"</code></td> 
                  <td><span data-toggle="tooltip" title="List">list</span></td> 
                  <td><a class='dialog-opener' id='btn-explore-drug_bank-__0__-categories'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
-                 <td></td> </tr>
+                 <td>Therapeutic category or general category of drug (anti-convulsant, antibacterial, etc.).</td> </tr>
             
         </table>
     </div>

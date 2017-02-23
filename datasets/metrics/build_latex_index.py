@@ -26,7 +26,7 @@ with open(os.path.join(base_directory, 'index.tex'), 'w') as output:
 import matplotlib.pyplot as plt
 import pandas as pd
 
-plt.style.use('ggplot')
+plt.style.use('classic')
 
 data_types = pd.DataFrame([s['atomics'] for r in reports for s in r.values()])
 data_types['lists'] = [s['lists']['count'] for r in reports for s in r.values()]
@@ -81,6 +81,21 @@ print("Total Size (MB)", shapes['Size (MB)'].sum())
 print("Total Size (KB)", shapes['Size (MB)'].sum()*1000)
 print("Total Rows", shapes['Rows (1000s)'].sum()*1000)
 print("Total Fields", shapes['Number of Fields'].sum())
+print("Integers", (data_types['Integer'] + data_types['Float']).sum())
+print("Strings", (data_types['String']).sum())
+print("Booleans", (data_types['Bool']).sum())
+print("Total Values", (shapes['Number of Fields'] * shapes['Rows (1000s)']*1000).sum())
+
+'''
+Total Size (MB) 267.15196199999997
+Total Size (KB) 267151.96199999994
+Total Rows 420672.9999999999
+Total Fields 1673
+Integers 1338
+Strings 293
+Booleans 39
+Total Values 9365520.0
+'''
 
 '''
 levelIQR = pd.DataFrame(columns=levels.columns)

@@ -1,23 +1,28 @@
 {
   "energy": {
     "dicts": {
-      "count": 6, 
+      "count": 20, 
       "levels": {
         "1": {
-          "lengths": 2, 
+          "lengths": 6, 
           "key lengths": 6
         }, 
         "2": {
           "lengths": 4, 
-          "key lengths": 4
+          "key lengths": 9
         }, 
         "3": {
-          "lengths": 10, 
-          "key lengths": 8
+          "lengths": 5, 
+          "key lengths": 11
         }
       }, 
-      "inconsistent": {}, 
-      "average branching factor": 8
+      "inconsistent": {
+        "Electric Power": "report.[0].Expenditure.Electric Power.Wood", 
+        "Industrial": "report.[0].Expenditure.Industrial.Solar", 
+        "Commercial": "report.[0].Expenditure.Commercial.Wind", 
+        "Residential": "report.[0].Expenditure.Residential.Geothermal"
+      }, 
+      "average branching factor": 5
     }, 
     "tags": [
       "energy", 
@@ -29,18 +34,18 @@
       "power"
     ], 
     "atomics": {
-      "count": 44, 
+      "count": 85, 
       "nones": 0, 
-      "ints": 1, 
+      "ints": 47, 
       "booleans": 0, 
       "longs": 0, 
       "unknown": 0, 
-      "strings": 0, 
-      "floats": 43
+      "strings": 1, 
+      "floats": 37
     }, 
     "lists": {
       "count": 1, 
-      "lengths": 66, 
+      "lengths": 2805, 
       "complex": 1
     }, 
     "heights": 4, 
@@ -49,11 +54,11 @@
       "keys": {}, 
       "sizes": 0
     }, 
-    "length": 66, 
+    "length": 2805, 
     "indexes": [
-      0
+      2
     ], 
     "locals": 0, 
-    "size": 71292
+    "size": 6295224
   }
 }

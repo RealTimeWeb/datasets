@@ -31,3 +31,20 @@ comments:
     inchi: The IUPAC International Chemical Identifier (InChI) is a textual identifier for chemical substances, designed to provide a standard and human-readable way to encode molecular information and to facilitate the search for such information in databases and on the web. Initially developed by IUPAC and NIST from 2000 to 2005, the format and algorithms are non-proprietary. If not available, it is coded as an empty string. More information is available <a href="https://en.wikipedia.org/wiki/International_Chemical_Identifier">here</a>.
     inchikey: An abbreviated version of the full InChi. If not available, it is coded as an empty string. More information is available <a href="https://en.wikipedia.org/wiki/International_Chemical_Identifier#InChIKey">here</a>.
     id: A unique identified for this drug.
+    properties:
+        water solubility: Maximum possible concentration of a substance dissolved in water. Reported in either mg/mL or g/L.
+        boiling point: Boiling point in degrees Celsius
+        caco2 permeability: Caco-2 permeability coefficients
+        hydrophobicity: Water/octanol partition coefficient (if small molecule) or hydrophobicity score (Gravy score) if protein/peptide.
+        isoelectric point: Dissociation constant (pKa) if small molecule, pH at which protein has no charge (if protein drug)
+        logs: Predicted LogS (water solubility).
+        logp: Predicted water/octanol partition coefficient.
+        melting point: Melting point in degrees Celsius
+        molecular formula: Chemical formula describing atomic or elemental composition
+        molecular weight: Molecular weight in g/mol, determined from molecular formula or sequence
+        pka: Dissociation constant (pKa) if small molecule, pH at which protein has no charge (if protein drug)
+    proteins: Information about the various proteins that this drug acts on.
+    atc codes: WHO drug classification system (ATC) identifiers
+    groups: Can be one or more of "approved", "vet approved", "nutraceutical", "illicit", "withdrawn", "investigational", and "experimental".
+    categories: Therapeutic category or general category of drug (anti-convulsant, antibacterial, etc.).
+        

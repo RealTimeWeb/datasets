@@ -30,5 +30,10 @@ interfaces:
     test:
         sql: SELECT data FROM finance LIMIT {hardware}
         post: json()
+comments:
+    Year: The year that this report was made for.
+    State: The state that this report was made for (full name, not the two letter abbreviation).
+    Totals:
+        Insurance trust revenue: Revenue from contributions required of employers and employees for financing social insurance programs operated by the government (see Insurance trust system, below) and earnings on assets held for such systems. Excludes any contributions by a government–either as employer contributions or for general financial support–to a social insurance system it administers. Note that tax proceeds, donations, and any forms of revenue other than those enumerated above are classified as general revenue, even though such amounts may be received specifically for insurance trust purposes.
 structures:
     "finance.[0].Details": NEC - Not Elsewhere Defined
