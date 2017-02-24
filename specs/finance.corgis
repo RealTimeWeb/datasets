@@ -33,7 +33,178 @@ interfaces:
 comments:
     Year: The year that this report was made for.
     State: The state that this report was made for (full name, not the two letter abbreviation).
+    Details:
+        Waste:
+            Sewerage Total Expenditure: Total amount spent on the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
+            Solid Waste Management Intergovernmental: Money paid to other governments for street cleaning, solid waste collection and disposal, and provision of sanitary landfills.
+            Sewerage Intergovernmental: Money paid to other governments for the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
+            Solid Waste Management Total Expenditure: Total amount spent on the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
+        Transportation:
+            Transit Subsidy Intergovernmental: Money paid to other governments in support of subway, bus, surface rail and street railroad, and other passenger transportation systems., including public support of a private utility or railroad and intergovernmental subsidy payments. Excludes amounts paid by a parent government to its dependent transit utility.
+            Airports:
+                Airports Intergovernmental: Money paid to other governments for the support of airports.
+                Airports Total Expenditure: Total amount spent on support for airports.
+            Transit Subsidy Total Expenditure: Total amount spent in support of subway, bus, surface rail and street railroad, and other passenger transportation systems., including public support of a private utility or railroad and intergovernmental subsidy payments. Excludes amounts paid by a parent government to its dependent transit utility.
+            Highways:
+                Regular Highways Intergovernmental: Money paid to other governments for the construction, maintenance, and operation of highways, streets, and related structures, including toll highways, bridges, tunnels, ferries, street lighting and snow and ice removal. However, highway policing and traffic control are classed under Police protection.
+                Toll Highways Total Expenditure: Total amount spent on the support of construction, maintenance, and operation toll highways.
+                Highways Direct: Payments to employees, suppliers, contractors, beneficiaries, and other final recipients of government payments (i.e., all expenditure other than Intergovernmental expenditure) for the support of construction, maintenance, and operation of highways, streets, and related structures, including toll highways, bridges, tunnels, ferries, street lighting and snow and ice removal. However, highway policing and traffic control are classed under Police protection.
+                Highways Intergovernmental: Money paid to other governments for the support of construction, maintenance, and operation of highways, streets, and related structures, including toll highways, bridges, tunnels, ferries, street lighting and snow and ice removal. However, highway policing and traffic control are classed under Police protection.
+                Highways Total Expenditure: Total amount spent on the support of construction, maintenance, and operation of highways, streets, and related structures, including toll highways, bridges, tunnels, ferries, street lighting and snow and ice removal. However, highway policing and traffic control are classed under Police protection.
+                Highways Land and Equipment: Total amount spent on highways land and equipment.
+                Highways Construction Total: Total amount spent on highway construction.
+                Regular Highways Total Expenditure: Total amount spent on regular highways.
+            Water Transport:
+                Water Transport Intergovernmental: Money paid to other governments for the construction, maintenance, operation, and support of canals and other waterways, harbors, docks, wharves, and related marine terminal facilities.
+                Water Transport Total Expenditure: Total amount spent on construction, maintenance, operation, and support of canals and other waterways, harbors, docks, wharves, and related marine terminal facilities.
+            Parking:
+                Parking Total: Total amount spent on construction, purchase, maintenance, and operation of public-use parking lots, garages, parking meters, and other distinctive parking facilities on a commercial basis.
+                Parking Intergovernmental: Money paid to other governments for the construction, purchase, maintenance, and operation of public-use parking lots, garages, parking meters, and other distinctive parking facilities on a commercial basis.
+        Natural Resources:
+            Fish and Game:
+                Fish and Game Intergovernmental: Money paid to other governments for the conservation, promotion, and development of fish and game.
+                Fish and Game Total Expenditure: Total amount spent on conservation, promotion, and development of fish and game.
+            Natural Resources Total: Total amount spent on conservation, promotion, and development of natural resources, such as soil, water, forests, minerals, and wildlife. Includes irrigation, drainage, flood control, forestry and fire protection, soil reclamation, soil and water conservation, fish and game programs, and agricultural fairs.
+            Natural Resources Intergovernmental: Money paid to other governments for the conservation, promotion, and development of natural resources, such as soil, water, forests, minerals, and wildlife. Includes irrigation, drainage, flood control, forestry and fire protection, soil reclamation, soil and water conservation, fish and game programs, and agricultural fairs.
+            Natural Resources NEC Total Expenditure: Total amount spent (Not elsewhere classified) on the conservation, promotion, and development of natural resources, such as soil, water, forests, minerals, and wildlife. Includes irrigation, drainage, flood control, forestry and fire protection, soil reclamation, soil and water conservation, fish and game programs, and agricultural fairs.
+            Natural Resources Construction: Total amount spent on construction for the support of natural resources.
+            Parks:
+                Parks Total Expenditure: Total amount spent on provision and support of recreational and cultural-scientific facilities and activities including golf courses, play fields, playgrounds, public beaches, swimming pools, tennis courts, parks, auditoriums, stadiums, auto camps, recreation piers, marinas, botanical gardens, galleries, museums, and zoos. Also includes building and operation of convention centers and exhibition halls. Public libraries are included under Libraries.
+                Parks Intergovernmental: Money paid to other governments for the provision and support of recreational and cultural-scientific facilities and activities including golf courses, play fields, playgrounds, public beaches, swimming pools, tennis courts, parks, auditoriums, stadiums, auto camps, recreation piers, marinas, botanical gardens, galleries, museums, and zoos. Also includes building and operation of convention centers and exhibition halls. Public libraries are included under Libraries.
+            Forestry:
+                Forestry Intergovernmental: Money paid to other governments for the support of forestry.
+                Forestry Total Expenditure: Total amount spent on the support of foresty.
+            Natural Resources Direct: Payments to employees, suppliers, contractors, beneficiaries, and other final recipients of government payments (i.e., all expenditure other than Intergovernmental expenditure) for conservation, promotion, and development of natural resources, such as soil, water, forests, minerals, and wildlife. Includes irrigation, drainage, flood control, forestry and fire protection, soil reclamation, soil and water conservation, fish and game programs, and agricultural fairs.
+            Natural Resources Equipment and Land: Total amount spent on equipment and land to support natural resources.
+            Agriculture:
+                Agriculture Intergovernmental: Money paid to other governments for the support of agriculture.
+                Agriculture Total Expenditure: Total amount spent on the support of agriculture.
+                Federal Agriculture Farm Income Intergovernmental: Money paid to other governments for the federal agriculture farm income.
+                Federal Agriculture Farm Income Total: Total amount spent on the federal agriculture farm income.
+                Federal Farm Credit Total: Total amount spent on federal farm credit.
+                Federal Farm Credit Intergovernmental: Total amount spent on federal farm credit.
+        Correction:
+            Correction Intergovernmental: Money paid to other governments for correctional purposes, such as prisons.
+            Correction NEC Intergovernmental: Money paid to other governments for correctional purposes, such as prisons, that is not elsewhere classified.
+            Correction NEC Total: Total amount spent for correctional purposes, such as prisons, that is not elsewhere classified.
+            Correction Institutions Total: Total amount spent on correctional institutions purposes, especially prisons.
+            Correction Total: Total amount spent on correctional purposes, such as prisons.
+        Utilities:
+            Utilities Current Operation: Amount spent on current operation of government owned and operated water supply, electric light and power, gas supply, or transit system. Government revenue, expenditure, and debt relating to utility facilities leased to other governments or persons, and other commercial type activities of governments, such as port facilities, airports, housing projects, radio stations, steam plants, ferries, abattoirs, etc., are classified as general government activities. 
+            Gas Utility Total Expenditure: Total amount spent on the operation and maintenance of gas supply systems including acquisition and distribution of natural gas.
+            Water Utility Total Expenditure: Total amount spent on operation and maintenance of water supply system including acquisition and distribution of water to the general public or to other local governments for domestic or industrial use. Acquisition and distribution of water for irrigation of agricultural lands are classified under Natural resources.
+            Utilities Total Expenditure: Total amount spent on government owned and operated water supply, electric light and power, gas supply, or transit system. Government revenue, expenditure, and debt relating to utility facilities leased to other governments or persons, and other commercial type activities of governments, such as port facilities, airports, housing projects, radio stations, steam plants, ferries, abattoirs, etc., are classified as general government activities. 
+            Utilities Equipment and Land: Total amount spent on equipment and land in support of utilities.
+            Utilities Construction: Total amount spent on construction for utilities.
+            Utilities Interest Total: Interest earned on various utilities.
+            Transit Utility Total Expenditure: Total amount spent on the construction, maintenance, and operation of public mass transit systems--bus, commuter rail, light rail, or subway systems. Excludes systems established solely to transport elementary and secondary school pupils. Ferry systems are classified under Highways.
+            Electric Utility Total Expenditure: Total amount spent on operation and maintenance of electric power system including production or acquisition and distribution of electric power.
+        Health:
+            Health Total Expenditure: "Total amount spent on outpatient health services, other than hospital care, including: public health administration; research and education; categorical health programs; treatment and immunization clinics; nursing; environmental health activities such as air and water pollution control; ambulance service if provided separately from fire protection services, and other general public health activities such as mosquito abatement. School health services provided by health agencies (rather than school agencies) are included here. Sewage treatment operations are classified under Sewerage."
+            Hospitals:
+                Own Hospitals Total Expenditure: Total amount spent on own hospitals. Own hospitals are facilities administered directly by the government concerned.
+                Hospital-Other Total Expenditure: Total amount spent on non-Owned hospitals. These hospitals refer to support for hospital services in private hospitals or other governments.
+                Hospitals Total Expenditure: Total amount spent on financing, construction acquisition, maintenance or operation of hospital facilities, provision of hospital care, and support of public or private hospitals.
+                Hospitals Total Intergovernmental: Money paid to other governments for the financing, construction acquisition, maintenance or operation of hospital facilities, provision of hospital care, and support of public or private hospitals.
+                Hospitals Total Equipment and land: Total amount spent on equipment and land related to hospitals.
+                Hospitals Total Construction: Total amount spent on construction for hospitals.
+                Hospitals Total Current: Direct expenditure for compensation of own officers and employees and for supplies, materials, and contractual services except amounts for capital outlay related to hospitals.
+                Hospital-Other Intergovernmental: Money paid to other governments for non-Owned hospitals. These hospitals refer to support for hospital services in private hospitals or other governments.
+            Health Intergovernmental: Money paid to other governments for the health.
+        Public Welfare:
+            Public Welfare Equipment and Land: Total amount spent on equipment and land for public welfare.
+            Public Welfare Intergovernmental: Money paid to other governments for the public welfare.
+            Public Welfare Other Current Operation: Direct expenditure for compensation of own officers and employees and for supplies, materials, and contractual services except amounts for capital outlay related to public welfare.
+            Public Welfare Direct Expenditure: Payments to employees, suppliers, contractors, beneficiaries, and other final recipients of government payments (i.e., all expenditure other than Intergovernmental expenditure) for public welfare.
+            Public Welfare Construction: Total amount spent on construction for public welfare.
+            Public Welfare Total Expenditure: "Total amount spent on support of and assistance to needy persons contingent upon their need. Excludes pensions to former employees and other benefits not contingent on need. Expenditures under this heading include: Cash assistance paid directly to needy persons under the categorical programs (Old Age Assistance, Temporary Assistance for Needy Families (TANF) and under any other welfare programs; Vendor payments made directly to private purveyors for medical care, burials, and other commodities and services provided under welfare programs; and provision and operation by the government of welfare institutions. Other public welfare includes payments to other governments for welfare purposes, amounts for administration, support of private welfare agencies, and other public welfare services. Health and hospital services provided directly by the government through its own hospitals and health agencies, and any payments to other governments for such purposes are classed under those functional headings rather than here."
+            Public Welfare Assistance and Subsidies: Assistance and subsidies related to public welfare.
+        Financial Aid:
+            Federal Agency Securities Total: Total amount spent on stocks and bonds, notes, mortgages, and other formal evidences of indebtedness.
+            Beginning Long Term Debt Total Outstanding: Total amount spent on long term debt. Long-term debt consists of loans and financial obligations lasting over one year.
+            Categorical Assistance Total Expenditure: Total amount spent on Old Age Assistance, Temporary Assistance for Needy Families (TANF), and Medical Assistance.
+            Cash Assistance Total Expenditure: Total amount spent on direct cash payments to beneficiaries of public welfare programs. 
+            Borrowing Total: Total amount borrowed.
+            Cash and Securities Total: Total amount spent on cash and deposits and governmental and private securities (bonds, notes, mortgages, corporate stocks, etc., including loans and other credit paper held by state loan and investment funds) except holdings of agency and private trust funds. Includes fund investments in securities issued by government concerned but does not include interfund loans, receivables, and the value of real property and other fixed assets.
+            Assistance and Subsidies: Total amount spent on cash contributions and subsidies to persons, not in payments for goods or services or claims against the government. For local governments, this object category comprises only direct cash assistance payments to public welfare recipients. For states, it includes also veterans' bonuses and direct cash grants for tuition, scholarships, and aid to nonpublic education institutions.
+            Cash and Deposits Total: Total amount of cash on hand and demand and savings or time deposits.
+            Categorical Assistance Intergovernmental: Money paid to other governments for Old Age Assistance, Temporary Assistance for Needy Families (TANF), and Medical Assistance.
+            Sinking Fund Total: Total amount spent on funds established specifically for the redemption of Long-term debt principal.
+            Securities Total: Total amount spent on stocks and bonds, notes, mortgages, and other formal evidences of indebtedness.
+            Bond Fund Total: Total amount spent on funds established to account for the proceeds of bond issues pending their disbursement.
+            Cash Assistance Intergovernmental: Money paid to other governments for cash assistance payments to public welfare recipients.
+        Welfare:
+            Welfare Institution Total Expenditure: Total amount spent on welfare institutions.
+            Welfare Vendor Payments Total: Total amount spent on welfare vendor payments.
+            Welfare NEC Total Expenditure: Total amount spent on welfare (not elsewhere classified).
+            Welfare NEC Intergovernmental: Money paid to other governments for welfare not elsewhere classified.
+        Education:
+            Education-NEC Intergovernmental: Money paid to other governments for education that is not elsewhere classified.
+            Education Equipment: Total amount spent on equipment for educational purposes.
+            Edcation Assistance and Subsidies: Total amount spent on assistance and subsidies for education.
+            Education-NEC Expenditure Total: Total amount spent on education that is not elsewhere classified.
+            Education Total: Total amount spent on schools, colleges, and other educational institutions (e.g., for blind, deaf, and other handicapped individuals), and educational programs for adults, veterans, and other special classes. State institutions of higher education includes activities of institutions operated by the state, except that agricultural extension services and experiment stations are classified under Natural resources and hospitals serving the public are classified under Hospitals. Revenue and expenditure for dormitories, cafeterias, athletic events, bookstores, and other auxiliary enterprises financed mainly through charges for services are reported on a gross basis.
+            Elementary Secondary Total Expenditure: Total amount spent on elementary schools.
+            Education Equipment and Land: Total amount spent on equipment and land for educational purposes.
+            Education Construction: Total amount spent on construction for educational purposes.
+            Higher Education-NEC Total Expenditure: Total amount spent on higher education that is not elsewhere classified.
+            Higher Education-NEC Intergovernmental: Money paid to other governments for higher education that is not elsewhere classified.
+            Higher Education-Auxilliary Total Expenditure: Total amount spent on auxliary higher education enterprises.
+            Education Intergovernmental: Money paid to other governments for educational purposes.
+            Elementary Secondary Intergovernmental: Money paid to other governments for elementary schools.
+            Education Other Current Operation: Direct expenditure for compensation of own officers and employees and for supplies, materials, and contractual services except amounts for capital outlay related to education.
+        Employment:
+            Unemployment Comp Total Cash and Securities: Total cash and securities related to unemployment compensation.
+            Employment Security Administration Expenditure Total: Total amount spent on administration of unemployment compensation, public employment offices, and related services, and veterans' readjustment allowances.
+            Employee Retirement Total Cash and Securities: Total cash and securities related to employee retirement.
+            Employment Security Administration Intergovernmental: Money paid to other governments for the administration of unemployment compensation, public employment offices, and related services, and veterans' readjustment allowances.
+            Employee Retirement Total Expenditure: Total amount spent on cash payments to beneficiaries (including withdrawals of contributions) of government-administered employee-retirement systems, local government contributions to state-administered employee-retirement systems, and noncontributory gratuities paid to former employees; these are classed under General expenditure.
+            Unemployment Comp Total Expenditure: Comprises payments made to beneficiaries under basic provisions of unemployment compensation programs and special program payments, such as for extended benefits triggered by economic conditions.
+        Intergovernmental:
+            Intergovernmental to Combined and Unallocable: Other kinds of money.
+            Intergovernmental to Federal: Money paid to federal governments.
+            Intergovernmental to Municipalities: Money paid to municipalities.
+            Intergovernmental to Counties: Money paid to counties.
+            Intergovernmental to State: Money paid to states.
+            Intergovernmental to Townships: Money paid to townships.
+            Intergovernmental to Special Districts: Money paid to special districts.
+            Intergovernmental Expenditure: Money paid overall.
+            Intergovernmental to Local: Money paid to local governments.
+            Intergovernmental to School Districts: Money paid to school districts.
+        Insurance Trust:
+            Insurance Trust Other Securities: Other securities related to insurance trust.
+            Insurance Trust Cash and Deposits: Cash and deposits related to insurance trust.
+            Insurance Trust State and Local Securities Total: Total amount spent on state and local securities for insurance trust.
+            Insurance Trust Securities Total: Total amount spent on securities for insurance trust.
+            Insurance Trust Federal Agency Securities: Total amount spent on federal agency insurance trust securities.
+            Insurance Trust Total Expenditure: Cash payments to beneficiaries (including withdrawals of retirement contributions) of employee retirement, unemployment compensation, workers' compensation, and disability benefit social insurance programs. Excludes cost of administering insurance trust activities, state contributions of programs administered by the state or by the federal government, intergovernmental expenditure for support of locally administered employee-retirement systems, and noncontributory gratuities paid to former employees.
+            Insurance Trust: A government-administered plan for compulsory or voluntary social insurance (insurance protection of persons or their survivors against economic hazards arising from retirement, disability, death, accident, illness, unemployment, etc.) through accumulation of assets from contributions, assessments, premiums, and the like collected from employers and employees for use in making cash benefit payments to eligible persons covered by the system. Comprises Employee retirement, Unemployment compensation, Workers' compensation, and Miscellaneous (accident, sickness, and other disability benefit) systems. In exhibit statistics, each insurance trust system is treated as an entity, with its transactions including intragovernmental amounts. However, intragovernmental transactions are excluded from the insurance trust components of revenue and expenditure. 
+            Insurance Trust Cash and Securities: Cash and securities related to insurance trust.
+            Insurance Trust Federal Securities: Federal securities related to insurance trust.
     Totals:
-        Insurance trust revenue: Revenue from contributions required of employers and employees for financing social insurance programs operated by the government (see Insurance trust system, below) and earnings on assets held for such systems. Excludes any contributions by a government–either as employer contributions or for general financial support–to a social insurance system it administers. Note that tax proceeds, donations, and any forms of revenue other than those enumerated above are classified as general revenue, even though such amounts may be received specifically for insurance trust purposes.
+        Insurance trust  revenue: Revenue from contributions required of employers and employees for financing social insurance programs operated by the government (see Insurance trust system, below) and earnings on assets held for such systems. Excludes any contributions by a government - either as employer contributions or for general financial support - to a social insurance system it administers. Note that tax proceeds, donations, and any forms of revenue other than those enumerated above are classified as general revenue, even though such amounts may be received specifically for insurance trust purposes.
+        Capital outlay: Direct expenditure for contract or force account construction of buildings,grounds, and other improvements, and purchase of equipment, land, and existing structures. Includes amounts for additions, replacements, and major alterations to fixed works and structures. However, expenditure for repairs to such works and structures is classified as current operation expenditure.
+        State intergovernmental: All intergovernmental revenue received from the state government. For local governments, includes amounts originally from the federal government but channeled through the state.
+        Miscellaneous: General expenditure for purposes and activities not falling within any standard functional category and unallocated amounts relating to two or more functions.
+        Equipment and land: Apparatus, furnishings, motor vehicles, office machines, and the like having an expected life of more than 5 years. Equipment expenditure consists only of amounts for purchase of equipment, including both additional equipment and replacements. Expenditures for facilities that are integral parts of structures are classified as expenditure for construction or for purchase of land and existing structures.
+        Construction: Production of fixed works and structures additions, replacements, and major alterations, including planning and design of specific projects, site improvements, and provision of equipment and facilities that are integral parts of a structure. Includes contract construction, undertaken on a contract basis by private contractors, and force account construction, undertaken with direct use of material and labor by the government.
+        Expenditure: All amounts of money paid out by a government--net of recoveries and other correcting transactions--other than for retirement of debt, investment in securities, extension of credit, or as agency transactions. Note that expenditure includes only external transactions of a government and excludes non-cash transactions such as the provision of perquisites or other payments in kind.
+        General revenue: All government revenue except Liquor stores revenue, Insurance trust revenue, and Utility revenue. The basis for distinction is not the fund or administrative unit receiving particular amounts, but rather the nature of the revenue sources concerned.
+        Miscellaneous commercial activity: Provision and operation of commercial facilities not classified under particular functions. Includes a bank (North Dakota), and cement plant, hail insurance systems, and the like.
+        Other insurance trust revenue: Other revenue related to ITR.
+        "Worker's comp revenue": Revenue related to Worker's Compensation.
+        Charges: Charges imposed for providing current services or for the sale of products in connection with general government activities.
+        Unemployment comp revenue: Revenue related to Unemployment Compensation.
+        Selective sales tax: Sales and gross receipts taxes imposed on sales of particular commodities or services or gross receipts of particular businesses, separately and apart from the application of general sales and gross receipts taxes. Specific selective sales taxes included are alcoholic beverages, amusements, insurance, motor fuels, parimutuels, public utilities, tobacco products, and others.
+        Sales tax: Sales or gross receipts taxes which are applicable with only specified exceptions to all types of goods and services, or all gross income, whether at a single rate or at classified rates. Taxes imposed distinctively upon sales or gross receipts from selected commodities, services, or business are reported separately under categories one through eight below.
+        License tax: Taxes exacted (either for revenue raising or for regulation) as a condition to the exercise of a business or nonbusiness privilege, at a flat rate or measured by such bases as capital stock, capital surplus, number of business units, or capacity. Excludes taxes measured directly by transactions, gross or net income, or value of property except those to which only nominal rates apply. "License" based on these latter measures, other than those at nominal rates, are classified according to the measure concerned. Includes "fees" related to licensing activities - automobile inspection, gasoline and oil inspection, professional examinations and licenses, etc. - as well as license taxes producing substantial revenue.
+        Federal intergovernmental: Intergovernmental revenue received by a government directly from the federal government. For local governments, excludes federal aid channeled through state governments, which is considered as Intergovernmental revenue from state government.
+        General expenditure: Amounts paid to other governments as fiscal aid in the form of shared revenues and grants-in-aid, as reimbursements for performance of general government activities and for specific services for the paying government, or in lieu of taxes. Excludes amounts paid to other governments for purchase of commodities, property, or utility services, any tax imposed and paid as such, and employer contributions for social insurance - e.g., contributions to the Federal Government for Old Age, Survivors', Disability, and Health Insurance for government employees.
+        Utility revenue: Revenue from sale of utility commodities and services to the public and to other governments. Does not include amounts from sales to the parent government. Also excludes income from utility fund investments and from other nonoperating properties (treated as General revenue). Any monies from taxes, special assessments, and intergovernmental revenue are classified as General revenue, not Utility revenue.
+        Revenue: All amounts of money received by a government from external sources--net of refunds and other correcting transactions--other than from issuance of debt, liquidation of investments, and as agency and private trust transactions. Note that revenue excludes noncash transactions such as receipt of services, commodities, or other "receipts in kind."
+        Tax: Compulsory contributions exacted by a government for public purposes except employee and employee assessments for retirement and social insurance purposes, which are classified as insurance trust revenue. All tax revenue is classified as general revenue and comprises amounts received (including interest and penalties but excluding protested amounts and refunds) from all taxes imposed by a government. Note that local government tax revenue excludes any amounts from shares of state-imposed and collected taxes, which are classified as Intergovernmental revenue.
+        Employee retirement revenue:
+        Intergovernmental: Amounts received from other governments as fiscal aid in the form of shared revenues and grants-in -aid, as reimbursements for performance of general government functions and specific services for the paying government (e.g., care of prisoners or contractual research), or in lieu of taxes, Excludes amounts received from other governments for sale of property, commodities, and utility services. All intergovernmental revenue is classified as General revenue.
+        Local intergovernmental: "Amounts from local governments: for shares in financial support of programs administered by the state; for reimbursements of services performed or expenditures made for them by the state; for application to debt services on state debt issued for their benefit; and for repayment of advances and contingent loans extended to them. Does not include local government contributions to state-administered employee retirement or other insurance trust systems, which are classified as insurance trust revenue, or agency transactions (see Agency and private trust transactions). Excludes proceeds from interest on local government securities held by the state and proceeds from state taxes on local government facilities."
 structures:
     "finance.[0].Details": NEC - Not Elsewhere Defined

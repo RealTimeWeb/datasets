@@ -45,6 +45,8 @@ latex_index:
 	python datasets/metrics/build_latex_index.py
 infer_json:
 	python infer_json.py specs/$(target)/$(target).json
+print_comments:
+	python print_comments.py specs/$(target)/$(target).json
 all_visualizer:
 	python builder/builder.py -l visualizer specs/airlines.corgis ./datasets
 	python builder/builder.py -l visualizer specs/broadway.corgis ./datasets
