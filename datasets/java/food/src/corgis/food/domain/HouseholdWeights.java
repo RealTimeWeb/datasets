@@ -16,28 +16,14 @@ import org.json.simple.JSONObject;
  */
 public class HouseholdWeights {
 	
-    private String onestHouseholdWeightDescription;
-    private Double onestHouseholdWeight;
+    // Another estimate of the household measure of the food item. Weights are given for edible material without refuse. This can be used to calculate the nutrient value of the food.
     private Integer twondHouseholdWeight;
+    // A string representing the units of measurements in the second household weight.
     private String twondHouseholdWeightDescription;
-    
-    
-    /*
-     * @return 
-     */
-    public String getOnestHouseholdWeightDescription() {
-        return this.onestHouseholdWeightDescription;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Double getOnestHouseholdWeight() {
-        return this.onestHouseholdWeight;
-    }
-    
+    // An estimate of the household measure of the food item. Weights are given for edible material without refuse. This can be used to calculate the nutrient value of the food.
+    private Double onestHouseholdWeight;
+    // A string representing the units of measurements in the first household weight.
+    private String onestHouseholdWeightDescription;
     
     
     /*
@@ -58,6 +44,24 @@ public class HouseholdWeights {
     
     
     
+    /*
+     * @return 
+     */
+    public Double getOnestHouseholdWeight() {
+        return this.onestHouseholdWeight;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public String getOnestHouseholdWeightDescription() {
+        return this.onestHouseholdWeightDescription;
+    }
+    
+    
+    
 	
 	/**
 	 * Creates a string based representation of this HouseholdWeights.
@@ -65,7 +69,7 @@ public class HouseholdWeights {
 	 * @return String
 	 */
 	public String toString() {
-		return "HouseholdWeights[" +onestHouseholdWeightDescription+", "+onestHouseholdWeight+", "+twondHouseholdWeight+", "+twondHouseholdWeightDescription+"]";
+		return "HouseholdWeights[" +twondHouseholdWeight+", "+twondHouseholdWeightDescription+", "+onestHouseholdWeight+", "+onestHouseholdWeightDescription+"]";
 	}
 	
 	/**
@@ -73,11 +77,11 @@ public class HouseholdWeights {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public HouseholdWeights(JSONObject json_data) {
-        try {// 1st Household Weight Description
-            this.onestHouseholdWeightDescription = (String)json_data.get("1st Household Weight Description");// 1st Household Weight
-            this.onestHouseholdWeight = ((Number)json_data.get("1st Household Weight")).doubleValue();// 2nd Household Weight
+        try {// 2nd Household Weight
             this.twondHouseholdWeight = ((Number)json_data.get("2nd Household Weight")).intValue();// 2nd Household Weight Description
-            this.twondHouseholdWeightDescription = (String)json_data.get("2nd Household Weight Description");
+            this.twondHouseholdWeightDescription = (String)json_data.get("2nd Household Weight Description");// 1st Household Weight
+            this.onestHouseholdWeight = ((Number)json_data.get("1st Household Weight")).doubleValue();// 1st Household Weight Description
+            this.onestHouseholdWeightDescription = (String)json_data.get("1st Household Weight Description");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a HouseholdWeights; a field was missing.");
     		e.printStackTrace();

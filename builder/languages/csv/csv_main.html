@@ -18,7 +18,23 @@
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    {% for item_list in descriptions %}
+    {% for item in item_list %}
+    <tr>
+        <td>{{ item['short'] }}</td>
+        <td>{{ item['example']|to_human_readable_type }}</td> 
+        <td>{{ item['comment'] }}</td>
+        <td>{{ item['example']|convert_example_value}}</td>
+    </tr>
+    {% endfor %}
+    {% endfor %}
     </table>
     
     

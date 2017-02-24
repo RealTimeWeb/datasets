@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Education SQL Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    
+    
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="education.png" alt="Education" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Education SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 11/1/2015</span><br>
+    <span class="text-muted">Tags: school, education, K-12, kindergarten, learning, teaching</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+This dataset comes from the National Center for Educational Statistics' Common Core of Data. Data is available for every state and the District of Columbia from the 2009-2010 school year. The data is roughly categorized into four categories: funding, how much money is given to the school; score, how students perform academically; attendance, the rate at which students and teachers attend; enrollment, the size of the schools. Funding is given in dollars. The 'Year' field has records for Preschool, Kindergarten, and grades 1-12.
+
+</p>
+
+<p>
+<i><a href='https://nces.ed.gov/ccd/aboutCCD.asp'>https://nces.ed.gov/ccd/aboutCCD.asp</a></i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="education.sql?forcedownload=1" download="education.sql" target="_blank">
+        <strong>education.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>all</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>755552</code></td>
+    </tr>
+    
+    <tr>
+        <td>asian</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>9753</code></td>
+    </tr>
+    
+    <tr>
+        <td>average minutes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>61768.53846</code></td>
+    </tr>
+    
+    <tr>
+        <td>average student rate</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>96</code></td>
+    </tr>
+    
+    <tr>
+        <td>average teacher rate</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>93.38461538</code></td>
+    </tr>
+    
+    <tr>
+        <td>biracial</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>2534</code></td>
+    </tr>
+    
+    <tr>
+        <td>black</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>261255</code></td>
+    </tr>
+    
+    <tr>
+        <td>expenditures</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>female</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>368003</code></td>
+    </tr>
+    
+    <tr>
+        <td>free lunch eligible</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>356929</code></td>
+    </tr>
+    
+    <tr>
+        <td>hispanic</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>35389</code></td>
+    </tr>
+    
+    <tr>
+        <td>individualized education program</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>81216</code></td>
+    </tr>
+    
+    <tr>
+        <td>latitude</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>32.3182314</code></td>
+    </tr>
+    
+    <tr>
+        <td>lep/ell students</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>17559</code></td>
+    </tr>
+    
+    <tr>
+        <td>longitude</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>-86.902298</code></td>
+    </tr>
+    
+    <tr>
+        <td>male</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>387549</code></td>
+    </tr>
+    
+    <tr>
+        <td>native american</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>6102</code></td>
+    </tr>
+    
+    <tr>
+        <td>reduced-price lunch eligible</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>45457</code></td>
+    </tr>
+    
+    <tr>
+        <td>revenue</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>schools</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1615</code></td>
+    </tr>
+    
+    <tr>
+        <td>staff</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>95144.48</code></td>
+    </tr>
+    
+    <tr>
+        <td>state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"alabama"</code></td>
+    </tr>
+    
+    <tr>
+        <td>student teacher ratio</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>15.31</code></td>
+    </tr>
+    
+    <tr>
+        <td>teachers</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>49363.24</code></td>
+    </tr>
+    
+    <tr>
+        <td>ungraded students</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>white</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>440519</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+
+
+</div>

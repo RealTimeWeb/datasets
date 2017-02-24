@@ -10,22 +10,25 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import corgis.graduates.domain.Gender;
+import corgis.graduates.domain.Ethnicity;
 
 /**
  * 
  */
 public class Demographics {
 	
-    private Integer men;
-    private Double womenAsShareOfTotal;
-    private Integer women;
+    private Gender gender;
+    // The estimated number of people awarded degrees in this major during this year.
+    private Integer total;
+    private Ethnicity ethnicity;
     
     
     /*
      * @return 
      */
-    public Integer getMen() {
-        return this.men;
+    public Gender getGender() {
+        return this.gender;
     }
     
     
@@ -33,8 +36,8 @@ public class Demographics {
     /*
      * @return 
      */
-    public Double getWomenAsShareOfTotal() {
-        return this.womenAsShareOfTotal;
+    public Integer getTotal() {
+        return this.total;
     }
     
     
@@ -42,8 +45,8 @@ public class Demographics {
     /*
      * @return 
      */
-    public Integer getWomen() {
-        return this.women;
+    public Ethnicity getEthnicity() {
+        return this.ethnicity;
     }
     
     
@@ -55,7 +58,7 @@ public class Demographics {
 	 * @return String
 	 */
 	public String toString() {
-		return "Demographics[" +men+", "+womenAsShareOfTotal+", "+women+"]";
+		return "Demographics[" +gender+", "+total+", "+ethnicity+"]";
 	}
 	
 	/**
@@ -63,10 +66,10 @@ public class Demographics {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Demographics(JSONObject json_data) {
-        try {// Men
-            this.men = ((Number)json_data.get("Men")).intValue();// Women as Share of Total
-            this.womenAsShareOfTotal = ((Number)json_data.get("Women as Share of Total")).doubleValue();// Women
-            this.women = ((Number)json_data.get("Women")).intValue();
+        try {// Gender
+            this.gender = new Gender((JSONObject)json_data.get("Gender"));// Total
+            this.total = ((Number)json_data.get("Total")).intValue();// Ethnicity
+            this.ethnicity = new Ethnicity((JSONObject)json_data.get("Ethnicity"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Demographics; a field was missing.");
     		e.printStackTrace();

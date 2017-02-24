@@ -10,35 +10,29 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.labor.domain.CivilianLaborForce;
+import corgis.labor.domain.CivilianNoninstitutionalPopulation;
 import corgis.labor.domain.NotInLaborForce;
 import corgis.labor.domain.Unemployed;
-import corgis.labor.domain.CivilianLaborForceParticipationRate;
-import corgis.labor.domain.UnemploymentRate;
-import corgis.labor.domain.CivilianNoninstitutionalPopulation;
+import corgis.labor.domain.CivilianLaborForce;
 import corgis.labor.domain.Employed;
-import corgis.labor.domain.EmploymentPopulationRatio;
 
 /**
  * 
  */
 public class Data {
 	
-    private CivilianLaborForce civilianLaborForce;
+    private CivilianNoninstitutionalPopulation civilianNoninstitutionalPopulation;
     private NotInLaborForce notInLaborForce;
     private Unemployed unemployed;
-    private CivilianLaborForceParticipationRate civilianLaborForceParticipationRate;
-    private UnemploymentRate unemploymentRate;
-    private CivilianNoninstitutionalPopulation civilianNoninstitutionalPopulation;
+    private CivilianLaborForce civilianLaborForce;
     private Employed employed;
-    private EmploymentPopulationRatio employmentPopulationRatio;
     
     
     /*
      * @return 
      */
-    public CivilianLaborForce getCivilianLaborForce() {
-        return this.civilianLaborForce;
+    public CivilianNoninstitutionalPopulation getCivilianNoninstitutionalPopulation() {
+        return this.civilianNoninstitutionalPopulation;
     }
     
     
@@ -64,26 +58,8 @@ public class Data {
     /*
      * @return 
      */
-    public CivilianLaborForceParticipationRate getCivilianLaborForceParticipationRate() {
-        return this.civilianLaborForceParticipationRate;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public UnemploymentRate getUnemploymentRate() {
-        return this.unemploymentRate;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public CivilianNoninstitutionalPopulation getCivilianNoninstitutionalPopulation() {
-        return this.civilianNoninstitutionalPopulation;
+    public CivilianLaborForce getCivilianLaborForce() {
+        return this.civilianLaborForce;
     }
     
     
@@ -97,15 +73,6 @@ public class Data {
     
     
     
-    /*
-     * @return 
-     */
-    public EmploymentPopulationRatio getEmploymentPopulationRatio() {
-        return this.employmentPopulationRatio;
-    }
-    
-    
-    
 	
 	/**
 	 * Creates a string based representation of this Data.
@@ -113,7 +80,7 @@ public class Data {
 	 * @return String
 	 */
 	public String toString() {
-		return "Data[" +civilianLaborForce+", "+notInLaborForce+", "+unemployed+", "+civilianLaborForceParticipationRate+", "+unemploymentRate+", "+civilianNoninstitutionalPopulation+", "+employed+", "+employmentPopulationRatio+"]";
+		return "Data[" +civilianNoninstitutionalPopulation+", "+notInLaborForce+", "+unemployed+", "+civilianLaborForce+", "+employed+"]";
 	}
 	
 	/**
@@ -121,15 +88,12 @@ public class Data {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Data(JSONObject json_data) {
-        try {// Civilian labor force
-            this.civilianLaborForce = new CivilianLaborForce((JSONObject)json_data.get("Civilian labor force"));// Not in labor force
-            this.notInLaborForce = new NotInLaborForce((JSONObject)json_data.get("Not in labor force"));// Unemployed
-            this.unemployed = new Unemployed((JSONObject)json_data.get("Unemployed"));// Civilian labor force participation rate
-            this.civilianLaborForceParticipationRate = new CivilianLaborForceParticipationRate((JSONObject)json_data.get("Civilian labor force participation rate"));// Unemployment rate
-            this.unemploymentRate = new UnemploymentRate((JSONObject)json_data.get("Unemployment rate"));// Civilian noninstitutional population
-            this.civilianNoninstitutionalPopulation = new CivilianNoninstitutionalPopulation((JSONObject)json_data.get("Civilian noninstitutional population"));// Employed
-            this.employed = new Employed((JSONObject)json_data.get("Employed"));// Employment-population ratio
-            this.employmentPopulationRatio = new EmploymentPopulationRatio((JSONObject)json_data.get("Employment-population ratio"));
+        try {// Civilian Noninstitutional Population
+            this.civilianNoninstitutionalPopulation = new CivilianNoninstitutionalPopulation((JSONObject)json_data.get("Civilian Noninstitutional Population"));// Not In Labor Force
+            this.notInLaborForce = new NotInLaborForce((JSONObject)json_data.get("Not In Labor Force"));// Unemployed
+            this.unemployed = new Unemployed((JSONObject)json_data.get("Unemployed"));// Civilian Labor Force
+            this.civilianLaborForce = new CivilianLaborForce((JSONObject)json_data.get("Civilian Labor Force"));// Employed
+            this.employed = new Employed((JSONObject)json_data.get("Employed"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Data; a field was missing.");
     		e.printStackTrace();

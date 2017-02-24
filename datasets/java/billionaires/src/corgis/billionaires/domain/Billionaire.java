@@ -22,10 +22,13 @@ public class Billionaire {
 	
     private Wealth wealth;
     private Company company;
+    // The rank of this billionaire compared to the rest of the billionaires reported on. A lower rank means they make more money.
     private Integer rank;
     private Location location;
+    // The year that data about this billionaire was collected.
     private Integer year;
     private Demographics demographics;
+    // The name of the billionaire.
     private String name;
     
     

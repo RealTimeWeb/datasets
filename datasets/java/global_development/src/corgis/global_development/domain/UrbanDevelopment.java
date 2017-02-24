@@ -16,19 +16,18 @@ import org.json.simple.JSONObject;
  */
 public class UrbanDevelopment {
 	
-    // Percent of total
-    private Double urbanPopulation;
+    // Percent of total population
+    private Double urbanPopulationPercent;
     // People per square kilometer of land area
     private Double populationDensity;
-    // Annual percent
-    private Double urbanPopulationGrowth;
+    private Double urbanPopulationPercentGrowth;
     
     
     /*
      * @return 
      */
-    public Double getUrbanPopulation() {
-        return this.urbanPopulation;
+    public Double getUrbanPopulationPercent() {
+        return this.urbanPopulationPercent;
     }
     
     
@@ -45,8 +44,8 @@ public class UrbanDevelopment {
     /*
      * @return 
      */
-    public Double getUrbanPopulationGrowth() {
-        return this.urbanPopulationGrowth;
+    public Double getUrbanPopulationPercentGrowth() {
+        return this.urbanPopulationPercentGrowth;
     }
     
     
@@ -58,7 +57,7 @@ public class UrbanDevelopment {
 	 * @return String
 	 */
 	public String toString() {
-		return "UrbanDevelopment[" +urbanPopulation+", "+populationDensity+", "+urbanPopulationGrowth+"]";
+		return "UrbanDevelopment[" +urbanPopulationPercent+", "+populationDensity+", "+urbanPopulationPercentGrowth+"]";
 	}
 	
 	/**
@@ -66,10 +65,10 @@ public class UrbanDevelopment {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public UrbanDevelopment(JSONObject json_data) {
-        try {// Urban Population
-            this.urbanPopulation = ((Number)json_data.get("Urban Population")).doubleValue();// Population Density
-            this.populationDensity = ((Number)json_data.get("Population Density")).doubleValue();// Urban Population Growth
-            this.urbanPopulationGrowth = ((Number)json_data.get("Urban Population Growth")).doubleValue();
+        try {// Urban Population Percent
+            this.urbanPopulationPercent = ((Number)json_data.get("Urban Population Percent")).doubleValue();// Population Density
+            this.populationDensity = ((Number)json_data.get("Population Density")).doubleValue();// Urban Population Percent Growth
+            this.urbanPopulationPercentGrowth = ((Number)json_data.get("Urban Population Percent Growth")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a UrbanDevelopment; a field was missing.");
     		e.printStackTrace();

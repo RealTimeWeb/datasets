@@ -16,10 +16,15 @@ import org.json.simple.JSONObject;
  */
 public class Correction {
 	
+    // Money paid to other governments for correctional purposes, such as prisons.
     private Integer correctionIntergovernmental;
+    // Money paid to other governments for correctional purposes, such as prisons, that is not elsewhere classified.
     private Integer correctionNecIntergovernmental;
+    // Total amount spent for correctional purposes, such as prisons, that is not elsewhere classified.
     private Integer correctionNecTotal;
+    // Total amount spent on correctional purposes, such as prisons.
     private Integer correctionTotal;
+    // Total amount spent on correctional institutions purposes, especially prisons.
     private Integer correctionInstitutionsTotal;
     
     

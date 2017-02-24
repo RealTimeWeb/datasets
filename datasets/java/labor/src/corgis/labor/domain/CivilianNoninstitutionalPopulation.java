@@ -10,24 +10,21 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.labor.domain.White;
-import corgis.labor.domain.BlackOrAfricanAmerican;
-import corgis.labor.domain.Asian;
 
 /**
  * 
  */
 public class CivilianNoninstitutionalPopulation {
 	
-    private White white;
-    private BlackOrAfricanAmerican blackOrAfricanAmerican;
-    private Asian asian;
+    private Double white;
+    private Double blackOrAfricanAmerican;
+    private Integer asian;
     
     
     /*
      * @return 
      */
-    public White getWhite() {
+    public Double getWhite() {
         return this.white;
     }
     
@@ -36,7 +33,7 @@ public class CivilianNoninstitutionalPopulation {
     /*
      * @return 
      */
-    public BlackOrAfricanAmerican getBlackOrAfricanAmerican() {
+    public Double getBlackOrAfricanAmerican() {
         return this.blackOrAfricanAmerican;
     }
     
@@ -45,7 +42,7 @@ public class CivilianNoninstitutionalPopulation {
     /*
      * @return 
      */
-    public Asian getAsian() {
+    public Integer getAsian() {
         return this.asian;
     }
     
@@ -67,9 +64,9 @@ public class CivilianNoninstitutionalPopulation {
 	 */
     public CivilianNoninstitutionalPopulation(JSONObject json_data) {
         try {// White
-            this.white = new White((JSONObject)json_data.get("White"));// Black or African American
-            this.blackOrAfricanAmerican = new BlackOrAfricanAmerican((JSONObject)json_data.get("Black or African American"));// Asian
-            this.asian = new Asian((JSONObject)json_data.get("Asian"));
+            this.white = ((Number)json_data.get("White")).doubleValue();// Black or African American
+            this.blackOrAfricanAmerican = ((Number)json_data.get("Black or African American")).doubleValue();// Asian
+            this.asian = ((Number)json_data.get("Asian")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a CivilianNoninstitutionalPopulation; a field was missing.");
     		e.printStackTrace();

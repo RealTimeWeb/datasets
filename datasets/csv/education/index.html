@@ -17,6 +17,9 @@ Education CSV Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -36,20 +39,6 @@ Education CSV Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -116,7 +105,198 @@ This dataset comes from the National Center for Educational Statistics' Common C
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>all</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>755552</code></td>
+    </tr>
+    
+    <tr>
+        <td>asian</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>9753</code></td>
+    </tr>
+    
+    <tr>
+        <td>average minutes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>61768.53846</code></td>
+    </tr>
+    
+    <tr>
+        <td>average student rate</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>96</code></td>
+    </tr>
+    
+    <tr>
+        <td>average teacher rate</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>93.38461538</code></td>
+    </tr>
+    
+    <tr>
+        <td>biracial</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>2534</code></td>
+    </tr>
+    
+    <tr>
+        <td>black</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>261255</code></td>
+    </tr>
+    
+    <tr>
+        <td>expenditures</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>female</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>368003</code></td>
+    </tr>
+    
+    <tr>
+        <td>free lunch eligible</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>356929</code></td>
+    </tr>
+    
+    <tr>
+        <td>hispanic</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>35389</code></td>
+    </tr>
+    
+    <tr>
+        <td>individualized education program</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>81216</code></td>
+    </tr>
+    
+    <tr>
+        <td>latitude</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>32.3182314</code></td>
+    </tr>
+    
+    <tr>
+        <td>lep/ell students</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>17559</code></td>
+    </tr>
+    
+    <tr>
+        <td>longitude</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>-86.902298</code></td>
+    </tr>
+    
+    <tr>
+        <td>male</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>387549</code></td>
+    </tr>
+    
+    <tr>
+        <td>native american</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>6102</code></td>
+    </tr>
+    
+    <tr>
+        <td>reduced-price lunch eligible</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>45457</code></td>
+    </tr>
+    
+    <tr>
+        <td>revenue</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>schools</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1615</code></td>
+    </tr>
+    
+    <tr>
+        <td>staff</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>95144.48</code></td>
+    </tr>
+    
+    <tr>
+        <td>state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"alabama"</code></td>
+    </tr>
+    
+    <tr>
+        <td>student teacher ratio</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>15.31</code></td>
+    </tr>
+    
+    <tr>
+        <td>teachers</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>49363.24</code></td>
+    </tr>
+    
+    <tr>
+        <td>ungraded students</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>white</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>440519</code></td>
+    </tr>
+    
+    
     </table>
     
     

@@ -2,15 +2,17 @@ from __future__ import print_function
 
 import json
 import sys, os
-from pprint import pprint
-from textwrap import wrap
 from collections import OrderedDict
-from auxiliary import to_dict, camel_case_caps, camel_case
-from auxiliary import snake_case, kebab_case, flat_case, copy_file
 import sqlite3
 import re
+from pprint import pprint
+from textwrap import wrap
+
 from jinja2 import Environment, FileSystemLoader
 import jinja2_highlight
+
+from auxiliary import to_dict, camel_case_caps, camel_case
+from auxiliary import snake_case, kebab_case, flat_case, copy_file
 
 try:
     unicode
@@ -20,7 +22,10 @@ except NameError:
 base_directory = os.path.dirname(os.path.realpath(__file__))
 python_templates = os.path.join(base_directory, 'python/')
 templates = os.path.join(base_directory, 'templates/')
-env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader([templates, python_templates]))
+
+env = Environment(extensions=['jinja2_highlight.HighlightExtension'], 
+                  loader=FileSystemLoader([templates, python_templates]))
+
 env.filters['camel_case_caps'] = camel_case_caps
 env.filters['camel_case'] = camel_case
 env.filters['snake_case'] = snake_case

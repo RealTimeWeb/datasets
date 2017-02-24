@@ -18,10 +18,11 @@ import corgis.finance.domain.Details;
  */
 public class Record {
 	
+    // The state that this report was made for (full name, not the two letter abbreviation).
     private String state;
     private Totals totals;
-    // NEC - Not Elsewhere Defined
     private Details details;
+    // The year that this report was made for.
     private Integer year;
     
     

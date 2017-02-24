@@ -18,8 +18,8 @@ import corgis.state_crime.domain.Totals;
  */
 public class Data {
 	
+    // The number of people living in this state at the time the report was created.
     private Integer population;
-    // Rates are the number of reported offenses per 100,000 population.
     private Rates rates;
     private Totals totals;
     

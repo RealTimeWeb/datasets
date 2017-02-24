@@ -10,20 +10,32 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import corgis.labor.domain.ParticipationRate;
+import corgis.labor.domain.Counts;
 
 /**
  * 
  */
 public class White {
 	
-    private Integer all;
+    private ParticipationRate participationRate;
+    private Counts counts;
     
     
     /*
      * @return 
      */
-    public Integer getAll() {
-        return this.all;
+    public ParticipationRate getParticipationRate() {
+        return this.participationRate;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Counts getCounts() {
+        return this.counts;
     }
     
     
@@ -35,7 +47,7 @@ public class White {
 	 * @return String
 	 */
 	public String toString() {
-		return "White[" +all+"]";
+		return "White[" +participationRate+", "+counts+"]";
 	}
 	
 	/**
@@ -43,8 +55,9 @@ public class White {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public White(JSONObject json_data) {
-        try {// All
-            this.all = ((Number)json_data.get("All")).intValue();
+        try {// Participation Rate
+            this.participationRate = new ParticipationRate((JSONObject)json_data.get("Participation Rate"));// Counts
+            this.counts = new Counts((JSONObject)json_data.get("Counts"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a White; a field was missing.");
     		e.printStackTrace();

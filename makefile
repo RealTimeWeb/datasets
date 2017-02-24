@@ -24,6 +24,8 @@ all_racket:
 	python builder/builder.py -l racket -a specs/ ./datasets
 all_csv:
 	python builder/builder.py -l csv -a specs/ ./datasets
+all_sql:
+	python builder/builder.py -l sql -a specs/ ./datasets
 all_json:
 	python builder/builder.py -l json -a specs/ ./datasets
 all_metrics:
@@ -39,6 +41,8 @@ python_test:
 	python test.py $(target)
 test_racket:
 	python tests/test_racket.py $(target)
+test_sql:
+	python tests/test_sql.py $(target)
 index:
 	python builder/builder.py -i specs/ ./datasets
 latex_index:

@@ -16,7 +16,9 @@ import org.json.simple.JSONObject;
  */
 public class WaterTransport {
 	
+    // Money paid to other governments for the construction, maintenance, operation, and support of canals and other waterways, harbors, docks, wharves, and related marine terminal facilities.
     private Integer waterTransportIntergovernmental;
+    // Total amount spent on construction, maintenance, operation, and support of canals and other waterways, harbors, docks, wharves, and related marine terminal facilities.
     private Integer waterTransportTotalExpenditure;
     
     

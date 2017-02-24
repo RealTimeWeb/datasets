@@ -17,8 +17,10 @@ import corgis.aids.domain.Data;
  */
 public class Report {
 	
+    // The name of the country.
     private String country;
     private Data data;
+    // 4-digit year
     private Integer year;
     
     

@@ -1,0 +1,624 @@
+
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="supreme_court.png" alt="Supreme Court" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Supreme Court SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 3/27/2016</span><br>
+    <span class="text-muted">Tags: us, usa, united states, government, law, legal, court, case, supreme, judge, barrister, lawyer, federal, national</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+<p> The U.S. Supreme Court Database traces its history back about two decades ago, when Harold J. Spaeth asked the National Science Foundation to fund a database that would be so rich in content that multiple users - even those with vastly distinct projects and purposes in mind - could draw on it. Professor Spaeth's goal was at once refreshingly simple and extremely ambitious: to produce a database that would include and classify every single vote by a Supreme Court justice in all argued cases over a five-decade period. After securing the funding, Spaeth collected and coded the data, performed reliability checks, and eventually amassed the Database. In the late 1980s, he made it (and the documentation necessary to use it) publicly available. </p><p> Since then, Professor Spaeth has not only updated it each term; he has also continued to perform reliability analyses, thereby ensuring its integrity with each release, and added new variables. Today's version of the Database houses 247 pieces of information for each case, roughly broken down into six categories: (1) identification variables (e.g., citations and docket numbers); (2) background variables (e.g., how the Court took jurisdiction, origin and source of the case, the reason the Court agreed to decide it); (3) chronological variables (e.g., the date of decision, term of Court, natural court); (4) substantive variables (e.g., legal provisions, issues, direction of decision); (5) outcome variables (e.g., disposition of the case, winning party, formal alteration of precedent, declaration of unconstitutionality); and (6) voting and opinion variables (e.g., how the individual justices voted, their opinions and interagreements). </p><p> Case Centered data provides case level information; i.e., each row in the database corresponds to a dispute. These data do not contain specific justice vote information. </p><p> A tremendously helpful resource for learning more about the dataset is the codebook: <a href='http://supremecourtdatabase.org/documentation.php?s=1'>http://supremecourtdatabase.org/documentation.php?s=1</a>. </p>
+
+</p>
+
+<p>
+<i>Harold J. Spaeth, Lee Epstein, Andrew D. Martin, Jeffrey A. Segal, Theodore J. Ruger, and Sara C. Benesh. 2016 Supreme Court Database, Version 2015 Release 02. URL: http://Supremecourtdatabase.org</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="supreme_court.sql?forcedownload=1" download="supreme_court.sql" target="_blank">
+        <strong>supreme_court.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>3 judge dc?</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>admin action.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>admin action.state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>agency</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"unknown"</code></td>
+    </tr>
+    
+    <tr>
+        <td>area</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Economic Activity"</code></td>
+    </tr>
+    
+    <tr>
+        <td>authority 1</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"statutory construction"</code></td>
+    </tr>
+    
+    <tr>
+        <td>authority 2</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>case</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1946-001"</code></td>
+    </tr>
+    
+    <tr>
+        <td>case issues</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1946-001-01-01"</code></td>
+    </tr>
+    
+    <tr>
+        <td>case.disposition</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"reversed"</code></td>
+    </tr>
+    
+    <tr>
+        <td>chief</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Vinson"</code></td>
+    </tr>
+    
+    <tr>
+        <td>date argued.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>9</code></td>
+    </tr>
+    
+    <tr>
+        <td>date argued.full</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1/9/1946"</code></td>
+    </tr>
+    
+    <tr>
+        <td>date argued.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>date argued.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1946</code></td>
+    </tr>
+    
+    <tr>
+        <td>date reargued.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>23</code></td>
+    </tr>
+    
+    <tr>
+        <td>date reargued.full</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"10/23/1946"</code></td>
+    </tr>
+    
+    <tr>
+        <td>date reargued.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>10</code></td>
+    </tr>
+    
+    <tr>
+        <td>date reargued.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1946</code></td>
+    </tr>
+    
+    <tr>
+        <td>date.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>18</code></td>
+    </tr>
+    
+    <tr>
+        <td>date.full</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"11/18/1946"</code></td>
+    </tr>
+    
+    <tr>
+        <td>date.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>11</code></td>
+    </tr>
+    
+    <tr>
+        <td>date.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1946</code></td>
+    </tr>
+    
+    <tr>
+        <td>decision.direction</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"liberal"</code></td>
+    </tr>
+    
+    <tr>
+        <td>decision.type</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"court opinion"</code></td>
+    </tr>
+    
+    <tr>
+        <td>disagreement?</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>disposition</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"affirmed"</code></td>
+    </tr>
+    
+    <tr>
+        <td>dissent agrees</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>docket</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>24</code></td>
+    </tr>
+    
+    <tr>
+        <td>end.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>23</code></td>
+    </tr>
+    
+    <tr>
+        <td>end.full</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"August/23/1949"</code></td>
+    </tr>
+    
+    <tr>
+        <td>end.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>8</code></td>
+    </tr>
+    
+    <tr>
+        <td>end.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1949</code></td>
+    </tr>
+    
+    <tr>
+        <td>id.docket</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1946-001-01"</code></td>
+    </tr>
+    
+    <tr>
+        <td>issue.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>80180</code></td>
+    </tr>
+    
+    <tr>
+        <td>jurisdiction</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"rehearing or reargument"</code></td>
+    </tr>
+    
+    <tr>
+        <td>laws.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>6</code></td>
+    </tr>
+    
+    <tr>
+        <td>laws.type</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Infrequently litigated statutes"</code></td>
+    </tr>
+    
+    <tr>
+        <td>led</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"91 L. Ed. 3"</code></td>
+    </tr>
+    
+    <tr>
+        <td>lexis</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1946 U.S. LEXIS 1724"</code></td>
+    </tr>
+    
+    <tr>
+        <td>lower court.direction</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"conservative"</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>8</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority assigner.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>78</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority assigner.long name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Black, Hugo ( 08/19/1937 - 09/17/1971 )"</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority assigner.name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"HLBlack"</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority writer.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>78</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority writer.long name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Black, Hugo ( 08/19/1937 - 09/17/1971 )"</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority writer.name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"HLBlack"</code></td>
+    </tr>
+    
+    <tr>
+        <td>minority</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"HALLIBURTON OIL WELL CEMENTING CO. v. WALKER et al., DOING BUSINESS AS DEPTHOGRAPH CO."</code></td>
+    </tr>
+    
+    <tr>
+        <td>natural court.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1301</code></td>
+    </tr>
+    
+    <tr>
+        <td>origin.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>51</code></td>
+    </tr>
+    
+    <tr>
+        <td>origin.name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"California Southern U.S. District Court"</code></td>
+    </tr>
+    
+    <tr>
+        <td>origin.state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>period</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>petitioner.entity</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"oil company, or natural gas producer"</code></td>
+    </tr>
+    
+    <tr>
+        <td>petitioner.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>198</code></td>
+    </tr>
+    
+    <tr>
+        <td>petitioner.state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>precedent altered?</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>reasons</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"to resolve question presented"</code></td>
+    </tr>
+    
+    <tr>
+        <td>respondent.entity</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"inventor, patent assigner, trademark owner or holder"</code></td>
+    </tr>
+    
+    <tr>
+        <td>respondent.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>172</code></td>
+    </tr>
+    
+    <tr>
+        <td>respondent.state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>sct</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"67 S. Ct. 6"</code></td>
+    </tr>
+    
+    <tr>
+        <td>source.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>29</code></td>
+    </tr>
+    
+    <tr>
+        <td>source.name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"U.S. Court of Appeals, Ninth Circuit"</code></td>
+    </tr>
+    
+    <tr>
+        <td>source.state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>split on second</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>start.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>24</code></td>
+    </tr>
+    
+    <tr>
+        <td>start.full</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"June/24/1946"</code></td>
+    </tr>
+    
+    <tr>
+        <td>start.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>6</code></td>
+    </tr>
+    
+    <tr>
+        <td>start.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1946</code></td>
+    </tr>
+    
+    <tr>
+        <td>term</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1946</code></td>
+    </tr>
+    
+    <tr>
+        <td>text</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"patents and copyrights: patent"</code></td>
+    </tr>
+    
+    <tr>
+        <td>unclear</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>unconstitutional</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"no unconstitutionality"</code></td>
+    </tr>
+    
+    <tr>
+        <td>unusual</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>us</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"329 U.S. 1"</code></td>
+    </tr>
+    
+    <tr>
+        <td>vote</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1946-001-01-01-01"</code></td>
+    </tr>
+    
+    <tr>
+        <td>winning party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"favorable disposition for petitioning party"</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+

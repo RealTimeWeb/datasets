@@ -16,11 +16,17 @@ import org.json.simple.JSONObject;
  */
 public class Employment {
 	
+    // Total cash and securities related to unemployment compensation.
     private Integer unemploymentCompTotalCashAndSecurities;
+    // Total amount spent on administration of unemployment compensation, public employment offices, and related services, and veterans' readjustment allowances.
     private Integer employmentSecurityAdministrationExpenditureTotal;
+    // Total cash and securities related to employee retirement.
     private Integer employeeRetirementTotalCashAndSecurities;
+    // Money paid to other governments for the administration of unemployment compensation, public employment offices, and related services, and veterans' readjustment allowances.
     private Integer employmentSecurityAdministrationIntergovernmental;
+    // Total amount spent on cash payments to beneficiaries (including withdrawals of contributions) of government-administered employee-retirement systems, local government contributions to state-administered employee-retirement systems, and noncontributory gratuities paid to former employees; these are classed under General expenditure.
     private Integer employeeRetirementTotalExpenditure;
+    // Comprises payments made to beneficiaries under basic provisions of unemployment compensation programs and special program payments, such as for extended benefits triggered by economic conditions.
     private Integer unemploymentCompTotalExpenditure;
     
     

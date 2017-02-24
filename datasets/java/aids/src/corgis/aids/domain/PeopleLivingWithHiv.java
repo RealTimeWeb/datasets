@@ -16,14 +16,15 @@ import org.json.simple.JSONObject;
  */
 public class PeopleLivingWithHiv {
 	
-    // 15+ Years Old
+    // The number of Adult Men (greater than 15 years old) suffering from AIDS in this year.
     private Integer maleAdults;
+    // The total number of people suffering from AIDS in this year.
     private Integer total;
-    // 0-14 Years Old
+    // The number of Children (less than 15 years old) suffering from AIDS in this year.
     private Integer children;
-    // 15+ Years Old
+    // The number of Adult Women (greater than 15 years old) suffering from AIDS in this year.
     private Integer femaleAdults;
-    // 15+ Years Old
+    // The number of Adults (greater than 15 years old) suffering from AIDS in this year.
     private Integer adults;
     
     

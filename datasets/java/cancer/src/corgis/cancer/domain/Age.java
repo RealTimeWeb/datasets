@@ -16,8 +16,11 @@ import org.json.simple.JSONObject;
  */
 public class Age {
 	
+    // A number representing the expected cancer rate, adjusted for the age of the participants. An age-adjusted rate is a weighted average of the age-specific rates, where the weights are the proportions of persons in the corresponding age groups of a standard population. The potential confounding effect of age is reduced when comparing age-adjusted rates computed using the same standard population.
     private Double ageAdjustedRate;
+    // A number representing the expected lower bound for the cancer rate. It is unlikely that the actual rate is lower than this number. CI means "Confidence Interval".
     private Double ageAdjustedCiLower;
+    // A number representing the expected upper bound for the cancer rate, adjusted for the age of the participants. It is unlikely that the actual rate is higher than this number. CI means "Confidence Interval".
     private Double ageAdjustedCiUpper;
     
     

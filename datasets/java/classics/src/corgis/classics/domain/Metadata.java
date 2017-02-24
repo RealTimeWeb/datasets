@@ -20,7 +20,7 @@ public class Metadata {
     private String url;
     // The number of times this book has been downloaded from Project Gutenberg, as of the last update (circa Spring 2016).
     private Integer downloads;
-    // Every book on Project Gutenberg has a unique ID number. You can use this number to check the book on project gutenberg (e.g., book 110 is http://www.gutenberg.org/ebooks/110).
+    // Every book on Project Gutenberg has a unique ID number. You can use this number to check the book on project gutenberg (e.g., book 110 is <a href="http://www.gutenberg.org/ebooks/110">http://www.gutenberg.org/ebooks/110</a>).
     private Integer id;
     // The rank of this book in comparison to other books on Gutenberg, measured by number of downloads. A lower rank indicatest that that book is more popular.
     private Integer rank;

@@ -16,8 +16,11 @@ import org.json.simple.JSONObject;
  */
 public class Wind {
 	
+    // A gust is a sudden burst of wind (less than 20 seconds long), which is often much stronger than the average windspeed. This is reported in Miles per Hour.
     private Double highGust;
+    // The average windspeed for that day, in Miles per Hour.
     private Double avgWind;
+    // The highest windspeed for that day, in Miles per Hour.
     private Double highWind;
     
     

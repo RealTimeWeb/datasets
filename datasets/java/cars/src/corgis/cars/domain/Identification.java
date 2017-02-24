@@ -16,10 +16,15 @@ import org.json.simple.JSONObject;
  */
 public class Identification {
 	
+    // The maker for this car.
     private String make;
+    // The specific name/year for this car.
     private String modelYear;
+    // A unique ID for this particular car, using the year, make, model, and transmission type.
     private String id;
+    // Whether this is a "Manual transmission" or an "Automatic transmission". If it is unknown, it is left blank.
     private String classification;
+    // The year that this car was released.
     private Integer year;
     
     

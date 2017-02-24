@@ -16,10 +16,15 @@ import org.json.simple.JSONObject;
  */
 public class ArtistInfo {
 	
+    // Their country of origin.
     private String country;
+    // The continent they were born on.
     private String continent;
+    // The range of time they have lived so far, represented as a string like "Nationality, Birth - Death".
     private String yearsLiving;
+    // The name of the artist
     private String artist;
+    // The artists' nationality.
     private String nationality;
     
     

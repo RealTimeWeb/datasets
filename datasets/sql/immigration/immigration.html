@@ -1,0 +1,162 @@
+
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="immigration.png" alt="Immigration" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Immigration SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 3, created 11/1/2015</span><br>
+    <span class="text-muted">Tags: immigration, naturalization, permanants, united states, us</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+The Yearbook of Immigration Statistics is a compendium of tables that provides data on foreign nationals who, during a fiscal year, were granted lawful permanent residence (i.e., admitted as immigrants or became legal permanent residents), were admitted into the United States on a temporary basis (e.g., tourists, students, or workers), applied for asylum or refugee status, or were naturalized. The Yearbook also presents data on immigration enforcement actions, including alien apprehensions, removals, and returns. This data ranges from 2005-2014 and covers immigration from many countries.
+
+</p>
+
+<p>
+<i>http://www.dhs.gov/yearbook-immigration-statistics</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="immigration.sql?forcedownload=1" download="immigration.sql" target="_blank">
+        <strong>immigration.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>Affirmative</td>
+        <td><code>Integer number</code></td> 
+        <td>Refugee status is a form of protection that may be granted to people who meet the definition of refugee and who are of special humanitarian concern to the United States. Refugees are generally people outside of their country who are unable or unwilling to return home because they fear serious harm. This is the number that were granted refugee status from the associated country in this year.</td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Apprehended</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of aliens who entered without inspection between ports of entry and are apprehended by U.S. Border Patrol (USBP).</td>
+        <td><code>1486</code></td>
+    </tr>
+    
+    <tr>
+        <td>Arrived</td>
+        <td><code>Integer number</code></td> 
+        <td>Refugee status is a form of protection that may be granted to people who meet the definition of refugee and who are of special humanitarian concern to the United States. Refugees are generally people outside of their country who are unable or unwilling to return home because they fear serious harm. This is the number that have arrived from the associated country in this year seeking refugee status and asylum.</td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Country</td>
+        <td><code>String</code></td> 
+        <td>The country that these immigrants came from to USA, or are going to from the USA.</td>
+        <td><code>"Canada"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Criminal</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of aliens who were removed from the US for having prior criminal convictions (e.g., immigration-related offenses, dangerous drug crimes, criminal traffic offenses, and assault).</td>
+        <td><code>462</code></td>
+    </tr>
+    
+    <tr>
+        <td>Defensive Asylum</td>
+        <td><code>Integer number</code></td> 
+        <td>Asylum status is a form of protection available to people who: (1) Meet the definition of refugee, (2) Are already in the United States, and (3) Are seeking admission at a port of entry. This is the number of people who have been granted aslyum in the USA from the associated country in this year.</td>
+        <td><code>4</code></td>
+    </tr>
+    
+    <tr>
+        <td>Inadmissable</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of aliens who were ineligible to receive a visa and ineligible to be admitted to the United States.</td>
+        <td><code>41861</code></td>
+    </tr>
+    
+    <tr>
+        <td>Legal permanant residences.Birth</td>
+        <td><code>Integer number</code></td> 
+        <td>Lawful permanent residents (LPRs), also known as "green card" holders, are non-citizens who are lawfully authorized to live permanently within the United States. This is the number that were from the associated country where they were originally born.</td>
+        <td><code>21878</code></td>
+    </tr>
+    
+    <tr>
+        <td>Legal permanant residences.Last Residence</td>
+        <td><code>Integer number</code></td> 
+        <td>Lawful permanent residents (LPRs), also known as "green card" holders, are non-citizens who are lawfully authorized to live permanently within the United States. This is the number that had their last residence in the associated country.</td>
+        <td><code>29930</code></td>
+    </tr>
+    
+    <tr>
+        <td>Naturalizations (Birth)</td>
+        <td><code>Integer number</code></td> 
+        <td>Naturalization is the process by which U.S. citizenship is granted to a foreign citizen or national after he or she fulfills the requirements established by Congress in the Immigration and Nationality Act (INA). This is the number that became naturalized in this year from the associated country. Note that this is not the number of naturally-born citizens, which is a different form of citizenship.</td>
+        <td><code>7815</code></td>
+    </tr>
+    
+    <tr>
+        <td>Non-criminal</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of aliens who were removed from the US without a prior criminal conviction (but were present in the USA illegaly).</td>
+        <td><code>1099</code></td>
+    </tr>
+    
+    <tr>
+        <td>Nonimmigrant Admissions.Birth</td>
+        <td><code>Integer number</code></td> 
+        <td>Nonimmigrants are foreign nationals granted temporary admission into the United States. The major purposes for which nonimmigrant admission may be authorized include temporary visits for business or pleasure, academic or vocational study, temporary employment, or to act as a representative of a foreign government or international organization, among others. This is the number that were entered this year from the associated country.</td>
+        <td><code>231171</code></td>
+    </tr>
+    
+    <tr>
+        <td>Nonimmigrant Admissions.Last Residence</td>
+        <td><code>Integer number</code></td> 
+        <td>Nonimmigrants are foreign nationals granted temporary admission into the United States. The major purposes for which nonimmigrant admission may be authorized include temporary visits for business or pleasure, academic or vocational study, temporary employment, or to act as a representative of a foreign government or international organization, among others. This is the number that had their last residence in the associated country.</td>
+        <td><code>527264</code></td>
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>Integer number</code></td> 
+        <td>The year that this immigration data comes from.</td>
+        <td><code>2005</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+

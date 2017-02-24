@@ -42,7 +42,100 @@ This library holds data about over Broadway shows, grouped over weeklong periods
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>Attendance</td>
+        <td><code>Integer number</code></td> 
+        <td>The total number of people who attended performances over the week.</td>
+        <td><code>5500</code></td>
+    </tr>
+    
+    <tr>
+        <td>Capacity</td>
+        <td><code>Integer number</code></td> 
+        <td>The percentage of the theatre that was filled during that week.</td>
+        <td><code>88</code></td>
+    </tr>
+    
+    <tr>
+        <td>Day</td>
+        <td><code>Integer number</code></td> 
+        <td>The day of the month that this performance's week ended on.</td>
+        <td><code>26</code></td>
+    </tr>
+    
+    <tr>
+        <td>Full</td>
+        <td><code>String</code></td> 
+        <td>The full date representation that this performance's week ended on in "Month/Day/Year" format.</td>
+        <td><code>"08/26/1990"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Gross</td>
+        <td><code>Integer number</code></td> 
+        <td>The "Gross Gross" of this performance, or how much it made in total across the entire week. Measured in dollars.</td>
+        <td><code>134456</code></td>
+    </tr>
+    
+    <tr>
+        <td>Gross Potential</td>
+        <td><code>Integer number</code></td> 
+        <td>The Gross Potential is the maximum amount an engagement can possibly earn based on calculations involving ticket prices, seating capacity, and the number of performances. This number is expressed here as a percentage of what could have been achieved (Gross Gross / Gross Potential). In case the GP could not be calculated, it was replaced with 0%.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Month</td>
+        <td><code>Integer number</code></td> 
+        <td>The numeric month that this performance's week ended in (1 = January, 2 = February, etc.).</td>
+        <td><code>8</code></td>
+    </tr>
+    
+    <tr>
+        <td>Name</td>
+        <td><code>String</code></td> 
+        <td>The name of the production.</td>
+        <td><code>"Tru"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Performances</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of performances that occurred this week.</td>
+        <td><code>8</code></td>
+    </tr>
+    
+    <tr>
+        <td>Theatre</td>
+        <td><code>String</code></td> 
+        <td>The name of the theatre.</td>
+        <td><code>"Booth"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Type</td>
+        <td><code>String</code></td> 
+        <td>Whether it is a "Musical", "Play", or "Special".</td>
+        <td><code>"Play"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>Integer number</code></td> 
+        <td>The year that this week of performances occurred in.</td>
+        <td><code>1990</code></td>
+    </tr>
+    
+    
     </table>
     
     

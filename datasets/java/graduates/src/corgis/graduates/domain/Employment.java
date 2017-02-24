@@ -10,25 +10,29 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import corgis.graduates.domain.Status;
+import corgis.graduates.domain.EmployerType;
+import corgis.graduates.domain.ReasonWorkingOutsideField;
+import corgis.graduates.domain.ReasonForNotWorking;
+import corgis.graduates.domain.WorkActivity;
 
 /**
  * 
  */
 public class Employment {
 	
-    private Integer partTime;
-    private Integer unemployed;
-    private Double unemploymentRate;
-    private Integer fullTime;
-    private Integer employed;
-    private Integer fullTimeYearRound;
+    private Status status;
+    private EmployerType employerType;
+    private ReasonWorkingOutsideField reasonWorkingOutsideField;
+    private ReasonForNotWorking reasonForNotWorking;
+    private WorkActivity workActivity;
     
     
     /*
      * @return 
      */
-    public Integer getPartTime() {
-        return this.partTime;
+    public Status getStatus() {
+        return this.status;
     }
     
     
@@ -36,8 +40,8 @@ public class Employment {
     /*
      * @return 
      */
-    public Integer getUnemployed() {
-        return this.unemployed;
+    public EmployerType getEmployerType() {
+        return this.employerType;
     }
     
     
@@ -45,8 +49,8 @@ public class Employment {
     /*
      * @return 
      */
-    public Double getUnemploymentRate() {
-        return this.unemploymentRate;
+    public ReasonWorkingOutsideField getReasonWorkingOutsideField() {
+        return this.reasonWorkingOutsideField;
     }
     
     
@@ -54,8 +58,8 @@ public class Employment {
     /*
      * @return 
      */
-    public Integer getFullTime() {
-        return this.fullTime;
+    public ReasonForNotWorking getReasonForNotWorking() {
+        return this.reasonForNotWorking;
     }
     
     
@@ -63,17 +67,8 @@ public class Employment {
     /*
      * @return 
      */
-    public Integer getEmployed() {
-        return this.employed;
-    }
-    
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getFullTimeYearRound() {
-        return this.fullTimeYearRound;
+    public WorkActivity getWorkActivity() {
+        return this.workActivity;
     }
     
     
@@ -85,7 +80,7 @@ public class Employment {
 	 * @return String
 	 */
 	public String toString() {
-		return "Employment[" +partTime+", "+unemployed+", "+unemploymentRate+", "+fullTime+", "+employed+", "+fullTimeYearRound+"]";
+		return "Employment[" +status+", "+employerType+", "+reasonWorkingOutsideField+", "+reasonForNotWorking+", "+workActivity+"]";
 	}
 	
 	/**
@@ -93,13 +88,12 @@ public class Employment {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Employment(JSONObject json_data) {
-        try {// Part Time
-            this.partTime = ((Number)json_data.get("Part Time")).intValue();// Unemployed
-            this.unemployed = ((Number)json_data.get("Unemployed")).intValue();// Unemployment Rate
-            this.unemploymentRate = ((Number)json_data.get("Unemployment Rate")).doubleValue();// Full Time
-            this.fullTime = ((Number)json_data.get("Full Time")).intValue();// Employed
-            this.employed = ((Number)json_data.get("Employed")).intValue();// Full Time, Year-Round
-            this.fullTimeYearRound = ((Number)json_data.get("Full Time, Year-Round")).intValue();
+        try {// Status
+            this.status = new Status((JSONObject)json_data.get("Status"));// Employer Type
+            this.employerType = new EmployerType((JSONObject)json_data.get("Employer Type"));// Reason Working Outside Field
+            this.reasonWorkingOutsideField = new ReasonWorkingOutsideField((JSONObject)json_data.get("Reason Working Outside Field"));// Reason for Not Working
+            this.reasonForNotWorking = new ReasonForNotWorking((JSONObject)json_data.get("Reason for Not Working"));// Work Activity
+            this.workActivity = new WorkActivity((JSONObject)json_data.get("Work Activity"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Employment; a field was missing.");
     		e.printStackTrace();

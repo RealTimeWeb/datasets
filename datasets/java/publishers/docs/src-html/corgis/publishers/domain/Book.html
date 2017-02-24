@@ -20,20 +20,20 @@
 <span class="sourceLineNo">012</span><a name="line.12"></a>
 <span class="sourceLineNo">013</span>import corgis.publishers.domain.Publisher;<a name="line.13"></a>
 <span class="sourceLineNo">014</span>import corgis.publishers.domain.Statistics;<a name="line.14"></a>
-<span class="sourceLineNo">015</span>import corgis.publishers.domain.Daily;<a name="line.15"></a>
+<span class="sourceLineNo">015</span>import corgis.publishers.domain.DailyAverage;<a name="line.15"></a>
 <span class="sourceLineNo">016</span><a name="line.16"></a>
 <span class="sourceLineNo">017</span>/**<a name="line.17"></a>
 <span class="sourceLineNo">018</span> * <a name="line.18"></a>
 <span class="sourceLineNo">019</span> */<a name="line.19"></a>
 <span class="sourceLineNo">020</span>public class Book {<a name="line.20"></a>
 <span class="sourceLineNo">021</span>        <a name="line.21"></a>
-<span class="sourceLineNo">022</span>    // The genre of the book, either "fiction", "non-fiction", "genre fiction", "childrens", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.<a name="line.22"></a>
+<span class="sourceLineNo">022</span>    // The genre of the book, either "fiction", "nonfiction", "genre fiction", "children", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.<a name="line.22"></a>
 <span class="sourceLineNo">023</span>    private String genre;<a name="line.23"></a>
 <span class="sourceLineNo">024</span>    private Publisher publisher;<a name="line.24"></a>
 <span class="sourceLineNo">025</span>    // The actual company that sold this book, as oppposed to the company that published it.<a name="line.25"></a>
 <span class="sourceLineNo">026</span>    private String soldBy;<a name="line.26"></a>
 <span class="sourceLineNo">027</span>    private Statistics statistics;<a name="line.27"></a>
-<span class="sourceLineNo">028</span>    private Daily daily;<a name="line.28"></a>
+<span class="sourceLineNo">028</span>    private DailyAverage dailyAverage;<a name="line.28"></a>
 <span class="sourceLineNo">029</span>    <a name="line.29"></a>
 <span class="sourceLineNo">030</span>    <a name="line.30"></a>
 <span class="sourceLineNo">031</span>    /*<a name="line.31"></a>
@@ -75,8 +75,8 @@
 <span class="sourceLineNo">067</span>    /*<a name="line.67"></a>
 <span class="sourceLineNo">068</span>     * @return <a name="line.68"></a>
 <span class="sourceLineNo">069</span>     */<a name="line.69"></a>
-<span class="sourceLineNo">070</span>    public Daily getDaily() {<a name="line.70"></a>
-<span class="sourceLineNo">071</span>        return this.daily;<a name="line.71"></a>
+<span class="sourceLineNo">070</span>    public DailyAverage getDailyAverage() {<a name="line.70"></a>
+<span class="sourceLineNo">071</span>        return this.dailyAverage;<a name="line.71"></a>
 <span class="sourceLineNo">072</span>    }<a name="line.72"></a>
 <span class="sourceLineNo">073</span>    <a name="line.73"></a>
 <span class="sourceLineNo">074</span>    <a name="line.74"></a>
@@ -88,7 +88,7 @@
 <span class="sourceLineNo">080</span>         * @return String<a name="line.80"></a>
 <span class="sourceLineNo">081</span>         */<a name="line.81"></a>
 <span class="sourceLineNo">082</span>        public String toString() {<a name="line.82"></a>
-<span class="sourceLineNo">083</span>                return "Book[" +genre+", "+publisher+", "+soldBy+", "+statistics+", "+daily+"]";<a name="line.83"></a>
+<span class="sourceLineNo">083</span>                return "Book[" +genre+", "+publisher+", "+soldBy+", "+statistics+", "+dailyAverage+"]";<a name="line.83"></a>
 <span class="sourceLineNo">084</span>        }<a name="line.84"></a>
 <span class="sourceLineNo">085</span>        <a name="line.85"></a>
 <span class="sourceLineNo">086</span>        /**<a name="line.86"></a>
@@ -100,8 +100,8 @@
 <span class="sourceLineNo">092</span>            this.genre = (String)json_data.get("genre");// publisher<a name="line.92"></a>
 <span class="sourceLineNo">093</span>            this.publisher = new Publisher((JSONObject)json_data.get("publisher"));// sold by<a name="line.93"></a>
 <span class="sourceLineNo">094</span>            this.soldBy = (String)json_data.get("sold by");// statistics<a name="line.94"></a>
-<span class="sourceLineNo">095</span>            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));// daily<a name="line.95"></a>
-<span class="sourceLineNo">096</span>            this.daily = new Daily((JSONObject)json_data.get("daily"));<a name="line.96"></a>
+<span class="sourceLineNo">095</span>            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));// daily average<a name="line.95"></a>
+<span class="sourceLineNo">096</span>            this.dailyAverage = new DailyAverage((JSONObject)json_data.get("daily average"));<a name="line.96"></a>
 <span class="sourceLineNo">097</span>        } catch (NullPointerException e) {<a name="line.97"></a>
 <span class="sourceLineNo">098</span>                System.err.println("Could not convert the response to a Book; a field was missing.");<a name="line.98"></a>
 <span class="sourceLineNo">099</span>                e.printStackTrace();<a name="line.99"></a>

@@ -20,7 +20,7 @@ public class Data {
 	
     private String status;
     private Disabilities disabilities;
-    private String parkingSpaces;
+    private Integer parkingSpaces;
     private String ownedOrLeased;
     private String date;
     private String type;
@@ -48,7 +48,7 @@ public class Data {
     /*
      * @return 
      */
-    public String getParkingSpaces() {
+    public Integer getParkingSpaces() {
         return this.parkingSpaces;
     }
     
@@ -108,7 +108,7 @@ public class Data {
         try {// status
             this.status = (String)json_data.get("status");// disabilities
             this.disabilities = new Disabilities((JSONObject)json_data.get("disabilities"));// parking spaces
-            this.parkingSpaces = (String)json_data.get("parking spaces");// owned or leased
+            this.parkingSpaces = ((Number)json_data.get("parking spaces")).intValue();// owned or leased
             this.ownedOrLeased = (String)json_data.get("owned or leased");// date
             this.date = (String)json_data.get("date");// type
             this.type = (String)json_data.get("type");// history

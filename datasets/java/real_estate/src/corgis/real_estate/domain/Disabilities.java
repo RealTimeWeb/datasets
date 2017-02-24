@@ -17,7 +17,7 @@ import org.json.simple.JSONObject;
 public class Disabilities {
 	
     private String ansiUsable;
-    private String abaAccessible;
+    private String adaAccessible;
     
     
     /*
@@ -32,8 +32,8 @@ public class Disabilities {
     /*
      * @return 
      */
-    public String getAbaAccessible() {
-        return this.abaAccessible;
+    public String getAdaAccessible() {
+        return this.adaAccessible;
     }
     
     
@@ -45,7 +45,7 @@ public class Disabilities {
 	 * @return String
 	 */
 	public String toString() {
-		return "Disabilities[" +ansiUsable+", "+abaAccessible+"]";
+		return "Disabilities[" +ansiUsable+", "+adaAccessible+"]";
 	}
 	
 	/**
@@ -54,8 +54,8 @@ public class Disabilities {
 	 */
     public Disabilities(JSONObject json_data) {
         try {// ansi usable
-            this.ansiUsable = (String)json_data.get("ansi usable");// aba accessible
-            this.abaAccessible = (String)json_data.get("aba accessible");
+            this.ansiUsable = (String)json_data.get("ansi usable");// ADA Accessible
+            this.adaAccessible = (String)json_data.get("ADA Accessible");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Disabilities; a field was missing.");
     		e.printStackTrace();

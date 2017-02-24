@@ -16,13 +16,21 @@ import org.json.simple.JSONObject;
  */
 public class Highways {
 	
+    // Money paid to other governments for the construction, maintenance, and operation of highways, streets, and related structures, including toll highways, bridges, tunnels, ferries, street lighting and snow and ice removal. However, highway policing and traffic control are classed under Police protection.
     private Integer regularHighwaysIntergovernmental;
+    // Total amount spent on the support of construction, maintenance, and operation toll highways.
     private Integer tollHighwaysTotalExpenditure;
+    // Payments to employees, suppliers, contractors, beneficiaries, and other final recipients of government payments (i.e., all expenditure other than Intergovernmental expenditure) for the support of construction, maintenance, and operation of highways, streets, and related structures, including toll highways, bridges, tunnels, ferries, street lighting and snow and ice removal. However, highway policing and traffic control are classed under Police protection.
     private Integer highwaysDirect;
+    // Money paid to other governments for the support of construction, maintenance, and operation of highways, streets, and related structures, including toll highways, bridges, tunnels, ferries, street lighting and snow and ice removal. However, highway policing and traffic control are classed under Police protection.
     private Integer highwaysIntergovernmental;
+    // Total amount spent on the support of construction, maintenance, and operation of highways, streets, and related structures, including toll highways, bridges, tunnels, ferries, street lighting and snow and ice removal. However, highway policing and traffic control are classed under Police protection.
     private Integer highwaysTotalExpenditure;
+    // Total amount spent on highways land and equipment.
     private Integer highwaysLandAndEquipment;
+    // Total amount spent on highway construction.
     private Integer highwaysConstructionTotal;
+    // Total amount spent on regular highways.
     private Integer regularHighwaysTotalExpenditure;
     
     

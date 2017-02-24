@@ -600,7 +600,7 @@ $(document).ready(function() {
     searcher.add(
         {
             'name': "energy",
-            'body': "United States Government reports on consumption, production, import, and export of various fuel sources. This data comes from the US Energy Information Administration, which has historical data from 1949 to 2014. All numbers are given in Quadrillion BTUs.",
+            'body': "United States Government reports on consumption, production, expenditures, and prices of various fuel sources. This data comes from the US Energy Information Administration, which has historical data from 1960 to 2014. Information was not always available, in which case 0 was reported instead. In some cases, very tiny values were rounded down to zero.",
             'description': "United States Government reports on consumption, production, import, and export of various fuel sources.",
             'tags': ["energy", "renewable", "united states", "us", "nuclear", "fossil fuels", "power"]
         }
@@ -654,7 +654,7 @@ $(document).ready(function() {
     searcher.add(
         {
             'name': "food",
-            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup.",
+            'body': "The following data comes from the United States Department of Agriculture's Food Composition Database. It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages. The food covered spans a large variety of foods from butter to Campbell's soup. Much of the supplementary documenation for each field comes directly from that pages' Wikipedia article.",
             'description': "Statistics for various food items",
             'tags': ["food", "vitamins", "minerals", "health", "nutrition"]
         }
@@ -735,7 +735,7 @@ $(document).ready(function() {
     searcher.add(
         {
             'name': "graduates",
-            'body': "This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series. Included is information about employment numbers, major information, and the earnings of different majors.",
+            'body': "The data in this library comes from the National Survey of Recent College Graduates. Included is information about employment numbers, major information, and the earnings of different majors. Many majors were not available before 2010, so their values have been recorded as 0 (note that this may affect the averages shown in the bar charts).",
             'description': "This library holds data about employment of new graduates by major.",
             'tags': ["graduation", "grads", "majors", "education", "college", "university", "higher education", "jobs", "careers"]
         }
@@ -1041,6 +1041,33 @@ $(document).ready(function() {
     );
     </script>
     
+    <div class="media col-md-5 col-md-offset-1 dataset-card" id="school_scores">
+      
+      <div class="media-left  media-middle">
+        <a target="_blank" href="school_scores/school_scores.html">
+          <img class="media-object" src="school_scores/school_scores.png" alt="School Scores" style="max-width: 64px; max-height: 64px;">
+        </a>
+      </div>
+      
+      <div class="media-body">
+        <a target="_blank" href="school_scores/school_scores.html">
+        <h4 class="media-heading">School Scores</h4>
+        </a>
+        SAT scores for students across the United States, organized by year and state.<br>
+        <i>school, education, K-12, kindergarten, learning, teaching, sat</i>
+      </div>
+    </div>
+    <script>
+    searcher.add(
+        {
+            'name': "school_scores",
+            'body': "SAT Scores from across the country",
+            'description': "SAT scores for students across the United States, organized by year and state.",
+            'tags': ["school", "education", "K-12", "kindergarten", "learning", "teaching", "sat"]
+        }
+    );
+    </script>
+    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="skyscrapers">
       
       <div class="media-left  media-middle">
@@ -1250,7 +1277,7 @@ $(document).ready(function() {
     searcher.add(
         {
             'name': "tate",
-            'body': "Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art. The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation and performance. This dataset has metadata about many pieces from their collection.",
+            'body': "Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art. The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation and performance. This dataset is not ordered in any particular way. This dataset has metadata about many pieces from their collection.",
             'description': "This dataset is about the Tate art collection, with metadata about paintings, drawings, sculptures, and more.",
             'tags': ["artwork", "art", "sculpture", "tate"]
         }

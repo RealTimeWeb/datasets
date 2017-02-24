@@ -16,7 +16,9 @@ import org.json.simple.JSONObject;
  */
 public class Parking {
 	
+    // Total amount spent on construction, purchase, maintenance, and operation of public-use parking lots, garages, parking meters, and other distinctive parking facilities on a commercial basis.
     private Integer parkingTotal;
+    // Money paid to other governments for the construction, purchase, maintenance, and operation of public-use parking lots, garages, parking meters, and other distinctive parking facilities on a commercial basis.
     private Integer parkingIntergovernmental;
     
     

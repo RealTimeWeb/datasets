@@ -1,0 +1,226 @@
+
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="medal_of_honor.png" alt="Medal of Honor" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Medal of Honor SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 2/26/2016</span><br>
+    <span class="text-muted">Tags: us, usa, united states, military, combat, government, army, airforce, marines, navy, fighting, war, award, medal, honor, glory, death</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+This dataset has records for the awarding of the United States Medal of Honor. The Medal of Honor is the United States of America's highest military honor, awarded for personal acts of valor above and beyond the call of duty. The medal is awarded by the President of the United States in the name of the U.S. Congress to U.S. military personnel only. There are three versions of the medal, one for the Army, one for the Navy, and one for the Air Force.[5] Personnel of the Marine Corps and Coast Guard receive the Navy version.
+The dataset was collected from the official military site, and includes records about how the medal was awarded and characteristics of the recipient. Unfortunately, because of the nature of century-old record keeping, many of the records are incomplete. While a very interesting dataset, it does have some missing data. 
+
+</p>
+
+<p>
+<i>http://www.cmohs.org/</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="medal_of_honor.sql?forcedownload=1" download="medal_of_honor.sql" target="_blank">
+        <strong>medal_of_honor.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>General Order number</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>accredited to</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>awarded.date.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>6</code></td>
+    </tr>
+    
+    <tr>
+        <td>awarded.date.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>2</code></td>
+    </tr>
+    
+    <tr>
+        <td>awarded.date.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1865</code></td>
+    </tr>
+    
+    <tr>
+        <td>birth.date.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>birth.date.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>birth.date.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>citation</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Under a heavy fire from the enemy carried off the field a commissioned officer who was severely wounded and also led a charge on the enemy's rifle pits."</code></td>
+    </tr>
+    
+    <tr>
+        <td>company</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Company B"</code></td>
+    </tr>
+    
+    <tr>
+        <td>death</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>division</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1st New Jersey Cavalry"</code></td>
+    </tr>
+    
+    <tr>
+        <td>entered service at</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Buffalo, N.Y."</code></td>
+    </tr>
+    
+    <tr>
+        <td>full</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1865-2-6"</code></td>
+    </tr>
+    
+    <tr>
+        <td>issued</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"01/03/1906"</code></td>
+    </tr>
+    
+    <tr>
+        <td>latitude</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>38</code></td>
+    </tr>
+    
+    <tr>
+        <td>link</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"http://www.cmohs.org/recipient-detail/1176/sagelhurst-john-c.php"</code></td>
+    </tr>
+    
+    <tr>
+        <td>location name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Buffalo, N.Y."</code></td>
+    </tr>
+    
+    <tr>
+        <td>location.name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Hatchers Run Court, Stafford, VA 22554, USA"</code></td>
+    </tr>
+    
+    <tr>
+        <td>longitude</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>-77</code></td>
+    </tr>
+    
+    <tr>
+        <td>name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Sagelhurst, John C."</code></td>
+    </tr>
+    
+    <tr>
+        <td>organization</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"U.S. Army"</code></td>
+    </tr>
+    
+    <tr>
+        <td>rank</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Sergeant"</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+

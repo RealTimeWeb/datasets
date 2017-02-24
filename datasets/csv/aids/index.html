@@ -17,6 +17,9 @@ Aids CSV Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -36,20 +39,6 @@ Aids CSV Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -116,7 +105,170 @@ The UNAIDS Organization is an entity of the United Nations that looks to reduce 
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>AIDS Orphans</td>
+        <td><code>Integer number</code></td> 
+        <td>Children who have been orphaned from AIDS (parents died of AIDS) below 17 years of age.</td>
+        <td><code>3953</code></td>
+    </tr>
+    
+    <tr>
+        <td>AIDS-Related Deaths.Adults</td>
+        <td><code>Integer number</code></td> 
+        <td>All adults (older than 15 years of age) who have died of aids.</td>
+        <td><code>312</code></td>
+    </tr>
+    
+    <tr>
+        <td>AIDS-Related Deaths.All Ages</td>
+        <td><code>Integer number</code></td> 
+        <td>The total number of deaths caused by AIDS in this year.</td>
+        <td><code>341</code></td>
+    </tr>
+    
+    <tr>
+        <td>AIDS-Related Deaths.Children</td>
+        <td><code>Integer number</code></td> 
+        <td>Children who have died of AIDS below 14 years of age.</td>
+        <td><code>30</code></td>
+    </tr>
+    
+    <tr>
+        <td>AIDS-Related Deaths.Female Adults</td>
+        <td><code>Integer number</code></td> 
+        <td>Female adults (older than 15 years of age) who have died of aids.</td>
+        <td><code>84</code></td>
+    </tr>
+    
+    <tr>
+        <td>AIDS-Related Deaths.Male Adults</td>
+        <td><code>Integer number</code></td> 
+        <td>Male adults (older than 15 years of age) who have died of aids.</td>
+        <td><code>227</code></td>
+    </tr>
+    
+    <tr>
+        <td>Country</td>
+        <td><code>String</code></td> 
+        <td>The name of the country.</td>
+        <td><code>"Afghanistan"</code></td>
+    </tr>
+    
+    <tr>
+        <td>HIV Prevalence.Adults</td>
+        <td><code>Real number</code></td> 
+        <td>The percentage of the population of Young Men (15-49 years old) suffering from AIDS in this year.</td>
+        <td><code>0.0395</code></td>
+    </tr>
+    
+    <tr>
+        <td>Incidence Rate Among Adults</td>
+        <td><code>Real number</code></td> 
+        <td>The number of reported cases of AIDS in adults (15-49 years old).</td>
+        <td><code>0.0058</code></td>
+    </tr>
+    
+    <tr>
+        <td>New HIV Infections.Adults</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of reported cases of AIDS in all adults (15+ years old).</td>
+        <td><code>906</code></td>
+    </tr>
+    
+    <tr>
+        <td>New HIV Infections.All Ages</td>
+        <td><code>Integer number</code></td> 
+        <td>The total number of reported cases of AIDS in this year.</td>
+        <td><code>968</code></td>
+    </tr>
+    
+    <tr>
+        <td>New HIV Infections.Children</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of reported cases of AIDS in children (0-14 years old).</td>
+        <td><code>62</code></td>
+    </tr>
+    
+    <tr>
+        <td>New HIV Infections.Female Adults</td>
+        <td><code>Real number</code></td> 
+        <td>The number of reported cases of AIDS in female adults (15+ years old).</td>
+        <td><code>247.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>New HIV Infections.Male Adults</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of reported cases of AIDS in male adults (15+ years old).</td>
+        <td><code>659</code></td>
+    </tr>
+    
+    <tr>
+        <td>People Living with HIV.Adults</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of Adults (greater than 15 years old) suffering from AIDS in this year.</td>
+        <td><code>6698</code></td>
+    </tr>
+    
+    <tr>
+        <td>People Living with HIV.Children</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of Children (less than 15 years old) suffering from AIDS in this year.</td>
+        <td><code>233</code></td>
+    </tr>
+    
+    <tr>
+        <td>People Living with HIV.Female Adults</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of Adult Women (greater than 15 years old) suffering from AIDS in this year.</td>
+        <td><code>1914</code></td>
+    </tr>
+    
+    <tr>
+        <td>People Living with HIV.Male Adults</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of Adult Men (greater than 15 years old) suffering from AIDS in this year.</td>
+        <td><code>4784</code></td>
+    </tr>
+    
+    <tr>
+        <td>Total</td>
+        <td><code>Integer number</code></td> 
+        <td>The total number of people suffering from AIDS in this year.</td>
+        <td><code>6931</code></td>
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>Integer number</code></td> 
+        <td>4-digit year</td>
+        <td><code>2015</code></td>
+    </tr>
+    
+    <tr>
+        <td>Young Men</td>
+        <td><code>Real number</code></td> 
+        <td>The percentage of the population of Young Men (15-24 years old) suffering from AIDS in this year.</td>
+        <td><code>0.0127</code></td>
+    </tr>
+    
+    <tr>
+        <td>Young Women</td>
+        <td><code>Real number</code></td> 
+        <td>The percentage of the population of Young Women (15-24 years old) suffering from AIDS in this year.</td>
+        <td><code>0.0108</code></td>
+    </tr>
+    
+    
     </table>
     
     

@@ -16,14 +16,24 @@ import org.json.simple.JSONObject;
  */
 public class Asian {
 	
-    private Integer all;
+    private Integer counts;
+    private Integer unemploymentRate;
     
     
     /*
      * @return 
      */
-    public Integer getAll() {
-        return this.all;
+    public Integer getCounts() {
+        return this.counts;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getUnemploymentRate() {
+        return this.unemploymentRate;
     }
     
     
@@ -35,7 +45,7 @@ public class Asian {
 	 * @return String
 	 */
 	public String toString() {
-		return "Asian[" +all+"]";
+		return "Asian[" +counts+", "+unemploymentRate+"]";
 	}
 	
 	/**
@@ -43,8 +53,9 @@ public class Asian {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Asian(JSONObject json_data) {
-        try {// All
-            this.all = ((Number)json_data.get("All")).intValue();
+        try {// Counts
+            this.counts = ((Number)json_data.get("Counts")).intValue();// Unemployment Rate
+            this.unemploymentRate = ((Number)json_data.get("Unemployment Rate")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Asian; a field was missing.");
     		e.printStackTrace();

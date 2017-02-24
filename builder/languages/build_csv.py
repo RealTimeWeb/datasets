@@ -10,8 +10,12 @@ except ImportError:
     izip = zip
 from textwrap import wrap
 from collections import OrderedDict
-from auxiliary import to_dict, camel_case_caps, camel_case
-from auxiliary import snake_case, kebab_case, flat_case, copy_file
+from auxiliary import (camel_case_caps, camel_case,
+                       snake_case, kebab_case, flat_case,
+                       to_dict, copy_file, lod_to_dol,
+                       shortest_unique_strings, first_items,
+                       convert_example_value, wrap_quotes,
+                       kill_unicode)
 import sqlite3
 import re
 from jinja2 import Environment, FileSystemLoader
@@ -21,17 +25,14 @@ base_directory = os.path.dirname(os.path.realpath(__file__))
 csv_templates = os.path.join(base_directory, 'csv/')
 templates = os.path.join(base_directory, 'templates/')
 
-env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader([csv_templates, templates]))
+env = Environment(extensions=['jinja2_highlight.HighlightExtension'], 
+                  loader=FileSystemLoader([csv_templates, templates]))
+                  
 env.filters['camel_case_caps'] = camel_case_caps
 env.filters['camel_case'] = camel_case
 env.filters['snake_case'] = snake_case
 env.filters['kebab_case'] = kebab_case
 env.filters['flat_case'] = flat_case
-
-env.filters['sluggify'] = lambda x: x
-env.filters['to_human_readable_type'] = lambda x: x
-env.filters['convert_example_value'] = lambda x: x
-env.filters['wrap_quotes'] = lambda x: x
 
 ordinals = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", 
             "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth",
@@ -76,16 +77,6 @@ class JsonLeafNodes(object):
     def walk_atomic(self, an_atomic, parent_name):
         if isinstance(an_atomic, (float, int, str, unicode)):
             self.result[self.json_path] = an_atomic
-            
-def lod_to_dol(LD):
-    dictionaires = {}
-    for row in LD:
-        for key, value in row.items():
-            if key in dictionaires:
-                dictionaires[key].append(value)
-            else:
-                dictionaires[key] = [value]
-    return [{'name': k, 'data': v} for k,v in dictionaires.items()]
 
 def flatten_json(data, delim="_"):
     result = {}
@@ -123,11 +114,26 @@ def json_path(path, data):
             entry = int(entry[1:-1])
         data = data[entry]
     return data
-
-def kill_unicode(value):
-    if isinstance(value, unicode):
-        return value.encode('ascii', 'ignore')
-    return value
+    
+def to_human_readable_type(a_value):
+    if isinstance(a_value, (int, long)):
+        return '<code>Integer number</code>'
+    elif isinstance(a_value, float):
+        return '<code>Real number</code>'
+    elif isinstance(a_value, (str, unicode)):
+        return '<code>String</code>'
+    elif isinstance(a_value, bool):
+        return '<code>Boolean (1/0)</code>'
+    else:
+        return '<code>'+str(type(a_value))+'</code>'
+        
+def sluggify(astr):
+    return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_").replace("'", "_")
+        
+env.filters['sluggify'] = sluggify
+env.filters['to_human_readable_type'] = to_human_readable_type
+env.filters['convert_example_value'] = convert_example_value
+env.filters['wrap_quotes'] = wrap_quotes
     
 def _guess_schema(input):
     if isinstance(input, dict):
@@ -137,35 +143,14 @@ def _guess_schema(input):
         return [_guess_schema(input[0])] if input else []
     else:
         return type(input)
-        
-def first_items(a_list_of_tuples):
-    return [item[0] for item in a_list_of_tuples]
 
-def shortest_unique_strings(los):
-    splits = [l.split('.') for l in los]
-    lengths = [ (l[-1], l[:-1]) for l in splits]
-    while len(first_items(lengths)) != len(set(first_items(lengths))):
-        for this_index, (this, this_rest) in enumerate(lengths):
-            for other_index, (other, other_rest) in enumerate(lengths):
-                if this == other and this_index != other_index:
-                    if len(this_rest) >= len(other_rest):
-                        lengths[this_index] = ( this_rest[-1] + '.' + this , this_rest[:-1] )
-                    if len(this_rest) <= len(other_rest):
-                        lengths[other_index] = ( other_rest[-1] + '.' + other , other_rest[:-1] )
-    return first_items(lengths)
-
-def build_metafiles(model):
+def build_metafiles(model, descriptions):
     name = snake_case(model['metadata']['name'])
     root = 'csv/{name}/'.format(name=name)
     return {
-            root+'index.html' : env.get_template('csv_main.html').render(standalone=True, **model),
-            root+name+'.html' : env.get_template('csv_main.html').render(standalone=False, **model)
+            root+'index.html' : env.get_template('csv_main.html').render(standalone=True, descriptions=descriptions, **model),
+            root+name+'.html' : env.get_template('csv_main.html').render(standalone=False, descriptions=descriptions, **model)
             }
-    
-def build_main(model):
-    name = model['metadata']['name']
-    return {'python/' + snake_case(name) + '/' + snake_case(name) + '.py' :
-                env.get_template('main.py').render(**model)}
                 
 def build_database(model):
     name = snake_case(model['metadata']['name'])
@@ -203,12 +188,22 @@ def build_locals(model):
             if row_type == "json":
                 data_list = json.load(local_file)
                 data = [JsonLeafNodes(name+'.[0]', item).result for item in data_list]
+                data_long_names = data
                 key_names = set([key for row in data for key in row.keys()])
                 short_key_names = shortest_unique_strings(key_names)
                 key_name_map = dict(zip(short_key_names, key_names))
+                comment_map = {short: model['structures_comments'].get(long, '')
+                               for short, long in key_name_map.items()}
                 data = [OrderedDict(sorted([(short, kill_unicode(row.get(long, '')))
                                             for short, long in key_name_map.items()]))
                         for row in data]
+                full_key_descriptions = [
+                    {'name': short, 
+                     'short': short,
+                     'type': value,
+                     'comment': comment_map.get(short),
+                     'example': value}
+                    for short, value in data[0].items()]
                 
                 #json_list = [OrderedDict(sorted(flatten_json(_byteify(element), '_').items()))
                 #             for element in data_list]
@@ -218,17 +213,22 @@ def build_locals(model):
                 moves[new_small_file] = 'csv/'+module_name+'/'
             elif row_type == "csv":
                 pass
-    return moves
+        yield moves, full_key_descriptions
         
 
 def build_csv(model):
     files = {}
-    files.update(build_metafiles(model))
-    
     moves = {}
-    moves.update(build_locals(model))
+    descriptions = []
+    
+    for local_file_name, fkd in build_locals(model):
+        moves.update(local_file_name)
+        descriptions.append(fkd)
+        
     for appendix in model['metadata']['appendix']:
         moves[appendix['file']] = 'csv/' + snake_case(model['metadata']['name']) + '/'
+        
+    files.update(build_metafiles(model, descriptions))
         
     icon_file = model['metadata']['icon']
     name = snake_case(model['metadata']['name'])

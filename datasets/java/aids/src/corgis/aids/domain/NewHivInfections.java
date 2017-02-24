@@ -16,16 +16,17 @@ import org.json.simple.JSONObject;
  */
 public class NewHivInfections {
 	
-    // 15-49 Years Old
+    // The number of reported cases of AIDS in adults (15-49 years old).
     private Double incidenceRateAmongAdults;
-    // 15+ Years Old
+    // The number of reported cases of AIDS in male adults (15+ years old).
     private Integer maleAdults;
+    // The total number of reported cases of AIDS in this year.
     private Integer allAges;
-    // 0-14 Years Old
+    // The number of reported cases of AIDS in children (0-14 years old).
     private Integer children;
-    // 15+ Years Old
+    // The number of reported cases of AIDS in female adults (15+ years old).
     private Double femaleAdults;
-    // 15+ Years Old
+    // The number of reported cases of AIDS in all adults (15+ years old).
     private Integer adults;
     
     

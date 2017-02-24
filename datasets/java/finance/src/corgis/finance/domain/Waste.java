@@ -16,9 +16,13 @@ import org.json.simple.JSONObject;
  */
 public class Waste {
 	
+    // Total amount spent on the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
     private Integer sewerageTotalExpenditure;
+    // Money paid to other governments for street cleaning, solid waste collection and disposal, and provision of sanitary landfills.
     private Integer solidWasteManagementIntergovernmental;
+    // Money paid to other governments for the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
     private Integer sewerageIntergovernmental;
+    // Total amount spent on the provision of sanitary and storm sewers and sewage disposal facilities and services, and payments to other governments for such purposes.
     private Integer solidWasteManagementTotalExpenditure;
     
     

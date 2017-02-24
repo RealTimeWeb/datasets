@@ -16,7 +16,9 @@ import org.json.simple.JSONObject;
  */
 public class Forestry {
 	
+    // Money paid to other governments for the support of forestry.
     private Integer forestryIntergovernmental;
+    // Total amount spent on the support of foresty.
     private Integer forestryTotalExpenditure;
     
     

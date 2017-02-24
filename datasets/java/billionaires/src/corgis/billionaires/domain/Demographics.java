@@ -16,8 +16,9 @@ import org.json.simple.JSONObject;
  */
 public class Demographics {
 	
+    // A string representing their gender.
     private String gender;
-    // Ages that are represented as -1 stand for ages that were not available in the data that was collected.
+    // The current age of the billionaire. Ages that are represented as -1 stand for ages that were not available in the data that was collected.
     private Integer age;
     
     

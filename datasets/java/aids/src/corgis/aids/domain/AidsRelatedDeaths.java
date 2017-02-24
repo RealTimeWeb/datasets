@@ -16,16 +16,17 @@ import org.json.simple.JSONObject;
  */
 public class AidsRelatedDeaths {
 	
-    // 15+ Years Old
+    // Male adults (older than 15 years of age) who have died of aids.
     private Integer maleAdults;
+    // The total number of deaths caused by AIDS in this year.
     private Integer allAges;
-    // 0-17 Years Old
+    // Children who have been orphaned from AIDS (parents died of AIDS) below 17 years of age.
     private Integer aidsOrphans;
-    // 0-14 Years Old
+    // Children who have died of AIDS below 14 years of age.
     private Integer children;
-    // 15+ Years Old
+    // Female adults (older than 15 years of age) who have died of aids.
     private Integer femaleAdults;
-    // 15+ Years Old
+    // All adults (older than 15 years of age) who have died of aids.
     private Integer adults;
     
     

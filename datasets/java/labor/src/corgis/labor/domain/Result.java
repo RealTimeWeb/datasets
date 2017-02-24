@@ -11,24 +11,16 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import corgis.labor.domain.Data;
+import corgis.labor.domain.Time;
 
 /**
  * 
  */
 public class Result {
 	
-    private Integer year;
+    // If the data is not a rate, then it is presented as the number in thousands
     private Data data;
-    private Integer month;
-    
-    
-    /*
-     * @return 
-     */
-    public Integer getYear() {
-        return this.year;
-    }
-    
+    private Time time;
     
     
     /*
@@ -43,8 +35,8 @@ public class Result {
     /*
      * @return 
      */
-    public Integer getMonth() {
-        return this.month;
+    public Time getTime() {
+        return this.time;
     }
     
     
@@ -56,7 +48,7 @@ public class Result {
 	 * @return String
 	 */
 	public String toString() {
-		return "Result[" +year+", "+data+", "+month+"]";
+		return "Result[" +data+", "+time+"]";
 	}
 	
 	/**
@@ -64,10 +56,9 @@ public class Result {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Result(JSONObject json_data) {
-        try {// year
-            this.year = ((Number)json_data.get("year")).intValue();// data
-            this.data = new Data((JSONObject)json_data.get("data"));// month
-            this.month = ((Number)json_data.get("month")).intValue();
+        try {// Data
+            this.data = new Data((JSONObject)json_data.get("Data"));// Time
+            this.time = new Time((JSONObject)json_data.get("Time"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Result; a field was missing.");
     		e.printStackTrace();

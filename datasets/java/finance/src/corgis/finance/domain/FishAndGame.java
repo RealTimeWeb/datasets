@@ -16,7 +16,9 @@ import org.json.simple.JSONObject;
  */
 public class FishAndGame {
 	
+    // Money paid to other governments for the conservation, promotion, and development of fish and game.
     private Integer fishAndGameIntergovernmental;
+    // Total amount spent on conservation, promotion, and development of fish and game.
     private Integer fishAndGameTotalExpenditure;
     
     

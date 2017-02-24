@@ -16,9 +16,12 @@ import org.json.simple.JSONObject;
  */
 public class FuelInformation {
 	
+    // The miles-per-gallon this car gets on average on highways.
     private Integer highwayMpg;
-    private Integer cityMph;
+    // Whether this car takes "Gasoline", "Diesel fuel", "Electricity", "Compressed natural gas", or "E85" (a term that refers to high-level ethanol-gasoline blends containing 51%-83% ethanol). If it is unknown, it is left blank.
     private String fuelType;
+    // The miles-per-gallon this car gets on average in cities.
+    private Integer cityMpg;
     
     
     /*
@@ -33,8 +36,8 @@ public class FuelInformation {
     /*
      * @return 
      */
-    public Integer getCityMph() {
-        return this.cityMph;
+    public String getFuelType() {
+        return this.fuelType;
     }
     
     
@@ -42,8 +45,8 @@ public class FuelInformation {
     /*
      * @return 
      */
-    public String getFuelType() {
-        return this.fuelType;
+    public Integer getCityMpg() {
+        return this.cityMpg;
     }
     
     
@@ -55,7 +58,7 @@ public class FuelInformation {
 	 * @return String
 	 */
 	public String toString() {
-		return "FuelInformation[" +highwayMpg+", "+cityMph+", "+fuelType+"]";
+		return "FuelInformation[" +highwayMpg+", "+fuelType+", "+cityMpg+"]";
 	}
 	
 	/**
@@ -64,9 +67,9 @@ public class FuelInformation {
 	 */
     public FuelInformation(JSONObject json_data) {
         try {// Highway mpg
-            this.highwayMpg = ((Number)json_data.get("Highway mpg")).intValue();// City mph
-            this.cityMph = ((Number)json_data.get("City mph")).intValue();// Fuel Type
-            this.fuelType = (String)json_data.get("Fuel Type");
+            this.highwayMpg = ((Number)json_data.get("Highway mpg")).intValue();// Fuel Type
+            this.fuelType = (String)json_data.get("Fuel Type");// City mpg
+            this.cityMpg = ((Number)json_data.get("City mpg")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a FuelInformation; a field was missing.");
     		e.printStackTrace();

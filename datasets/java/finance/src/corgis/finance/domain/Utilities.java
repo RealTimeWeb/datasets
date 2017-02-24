@@ -16,14 +16,23 @@ import org.json.simple.JSONObject;
  */
 public class Utilities {
 	
+    // Total amount spent on operation and maintenance of water supply system including acquisition and distribution of water to the general public or to other local governments for domestic or industrial use. Acquisition and distribution of water for irrigation of agricultural lands are classified under Natural resources.
     private Integer waterUtilityTotalExpenditure;
+    // Total amount spent on the operation and maintenance of gas supply systems including acquisition and distribution of natural gas.
     private Integer gasUtilityTotalExpenditure;
+    // Amount spent on current operation of government owned and operated water supply, electric light and power, gas supply, or transit system. Government revenue, expenditure, and debt relating to utility facilities leased to other governments or persons, and other commercial type activities of governments, such as port facilities, airports, housing projects, radio stations, steam plants, ferries, abattoirs, etc., are classified as general government activities.
     private Integer utilitiesCurrentOperation;
+    // Total amount spent on government owned and operated water supply, electric light and power, gas supply, or transit system. Government revenue, expenditure, and debt relating to utility facilities leased to other governments or persons, and other commercial type activities of governments, such as port facilities, airports, housing projects, radio stations, steam plants, ferries, abattoirs, etc., are classified as general government activities.
     private Integer utilitiesTotalExpenditure;
+    // Total amount spent on equipment and land in support of utilities.
     private Integer utilitiesEquipmentAndLand;
+    // Total amount spent on construction for utilities.
     private Integer utilitiesConstruction;
+    // Interest earned on various utilities.
     private Integer utilitiesInterestTotal;
+    // Total amount spent on the construction, maintenance, and operation of public mass transit systems--bus, commuter rail, light rail, or subway systems. Excludes systems established solely to transport elementary and secondary school pupils. Ferry systems are classified under Highways.
     private Integer transitUtilityTotalExpenditure;
+    // Total amount spent on operation and maintenance of electric power system including production or acquisition and distribution of electric power.
     private Integer electricUtilityTotalExpenditure;
     
     

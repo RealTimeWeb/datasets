@@ -16,11 +16,17 @@ import org.json.simple.JSONObject;
  */
 public class How {
 	
+    // A category representing where their money came from.
     private String category;
+    // Whether the money came from emerging markets.
     private Boolean fromEmerging;
+    // The specific industry this billionaire profitted from.
     private String industry;
+    // Whether the money came from politics.
     private Boolean wasPolitical;
+    // Whether the money was partially inherited.
     private Boolean inherited;
+    // Whether the billionaire was the founder of their company.
     private Boolean wasFounder;
     
     

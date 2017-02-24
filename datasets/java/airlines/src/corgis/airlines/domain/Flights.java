@@ -16,10 +16,15 @@ import org.json.simple.JSONObject;
  */
 public class Flights {
 	
+    // The number of flights that were cancelled in this month.
     private Integer cancelled;
+    // The number of flights that were on time in this month.
     private Integer onTime;
+    // The total number of flights in this month.
     private Integer total;
+    // The number of flights that were delayed in this month.
     private Integer delayed;
+    // The number of flights that were diverted in this month.
     private Integer diverted;
     
     
@@ -83,12 +88,12 @@ public class Flights {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Flights(JSONObject json_data) {
-        try {// cancelled
-            this.cancelled = ((Number)json_data.get("cancelled")).intValue();// on time
-            this.onTime = ((Number)json_data.get("on time")).intValue();// total
-            this.total = ((Number)json_data.get("total")).intValue();// delayed
-            this.delayed = ((Number)json_data.get("delayed")).intValue();// diverted
-            this.diverted = ((Number)json_data.get("diverted")).intValue();
+        try {// Cancelled
+            this.cancelled = ((Number)json_data.get("Cancelled")).intValue();// On Time
+            this.onTime = ((Number)json_data.get("On Time")).intValue();// Total
+            this.total = ((Number)json_data.get("Total")).intValue();// Delayed
+            this.delayed = ((Number)json_data.get("Delayed")).intValue();// Diverted
+            this.diverted = ((Number)json_data.get("Diverted")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Flights; a field was missing.");
     		e.printStackTrace();

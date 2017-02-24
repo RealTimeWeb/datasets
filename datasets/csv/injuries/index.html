@@ -17,6 +17,9 @@ Injuries CSV Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -36,20 +39,6 @@ Injuries CSV Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -120,7 +109,114 @@ State Participation: Not all state plan states participate in the ODI. The follo
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>city</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Cherry Hill"</code></td>
+    </tr>
+    
+    <tr>
+        <td>days away</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>days away/restricted/transfer</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>division</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Transportation, Communications, Electric, Gas, And Sanitary Services"</code></td>
+    </tr>
+    
+    <tr>
+        <td>id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>4222</code></td>
+    </tr>
+    
+    <tr>
+        <td>label</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Refrigerated Warehousing and Storage"</code></td>
+    </tr>
+    
+    <tr>
+        <td>major_group</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Motor Freight Transportation And Warehousing"</code></td>
+    </tr>
+    
+    <tr>
+        <td>name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"United States Cold Storage"</code></td>
+    </tr>
+    
+    <tr>
+        <td>second name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"US Cold"</code></td>
+    </tr>
+    
+    <tr>
+        <td>state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"NJ"</code></td>
+    </tr>
+    
+    <tr>
+        <td>street</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"100 Dobbs Ln Ste 102"</code></td>
+    </tr>
+    
+    <tr>
+        <td>total case rate</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>2002</code></td>
+    </tr>
+    
+    <tr>
+        <td>zip</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>8034</code></td>
+    </tr>
+    
+    
     </table>
     
     

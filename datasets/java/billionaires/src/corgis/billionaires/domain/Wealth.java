@@ -17,8 +17,10 @@ import corgis.billionaires.domain.How;
  */
 public class Wealth {
 	
+    // The number of billion of dollars that this billionaire is worth.
     private Double worthInBillions;
     private How how;
+    // The type of billionaire that they are.
     private String type;
     
     

@@ -16,16 +16,20 @@ import org.json.simple.JSONObject;
  */
 public class Time {
 	
-    private String label;
+    private String monthName;
+    // The reported year as a 4-digit number.
     private Integer year;
+    // The "year/month" reported as a string, to make it easier to sort by time periods.
+    private String label;
+    // The reported month as a number. 0 is January, 1 is February, etc.
     private Integer month;
     
     
     /*
      * @return 
      */
-    public String getLabel() {
-        return this.label;
+    public String getMonthName() {
+        return this.monthName;
     }
     
     
@@ -35,6 +39,15 @@ public class Time {
      */
     public Integer getYear() {
         return this.year;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public String getLabel() {
+        return this.label;
     }
     
     
@@ -55,7 +68,7 @@ public class Time {
 	 * @return String
 	 */
 	public String toString() {
-		return "Time[" +label+", "+year+", "+month+"]";
+		return "Time[" +monthName+", "+year+", "+label+", "+month+"]";
 	}
 	
 	/**
@@ -63,10 +76,11 @@ public class Time {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Time(JSONObject json_data) {
-        try {// label
-            this.label = (String)json_data.get("label");// year
-            this.year = ((Number)json_data.get("year")).intValue();// month
-            this.month = ((Number)json_data.get("month")).intValue();
+        try {// Month Name
+            this.monthName = (String)json_data.get("Month Name");// Year
+            this.year = ((Number)json_data.get("Year")).intValue();// Label
+            this.label = (String)json_data.get("Label");// Month
+            this.month = ((Number)json_data.get("Month")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Time; a field was missing.");
     		e.printStackTrace();

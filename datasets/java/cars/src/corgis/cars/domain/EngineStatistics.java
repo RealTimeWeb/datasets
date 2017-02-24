@@ -16,8 +16,9 @@ import org.json.simple.JSONObject;
  */
 public class EngineStatistics {
 	
+    // A measure of the engine's power. A unit of power equal to 550 foot-pounds per second (745.7 watts).
     private Integer horsepower;
-    // lb/ft
+    // The torque of the engine, measured in lb/ft. When an engine is said to make "200 lb-ft of torque", it means that 200 pounds of force on a 1-foot lever is needed to stop its motion.
     private Integer torque;
     
     

@@ -42,7 +42,142 @@ This is a dataset about cars and how much fuel they use.
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>City mpg</td>
+        <td><code>Integer number</code></td> 
+        <td>The miles-per-gallon this car gets on average in cities.</td>
+        <td><code>18</code></td>
+    </tr>
+    
+    <tr>
+        <td>Classification</td>
+        <td><code>String</code></td> 
+        <td>Whether this is a "Manual transmission" or an "Automatic transmission". If it is unknown, it is left blank.</td>
+        <td><code>"Automatic transmission"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Driveline</td>
+        <td><code>String</code></td> 
+        <td>A string representing whether this is "Rear-wheel drive", "Front-wheel drive", or "All-wheel drive".</td>
+        <td><code>"All-wheel drive"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Engine Type</td>
+        <td><code>String</code></td> 
+        <td>How many cylinders are in this engine. Most cars are either a 6-cylinder or an 8-cylinder.</td>
+        <td><code>"Audi 3.2L 6 cylinder 250hp 236ft-lbs"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Fuel Type</td>
+        <td><code>String</code></td> 
+        <td>Whether this car takes "Gasoline", "Diesel fuel", "Electricity", "Compressed natural gas", or "E85" (a term that refers to high-level ethanol-gasoline blends containing 51%-83% ethanol). If it is unknown, it is left blank.</td>
+        <td><code>"Gasoline"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Height</td>
+        <td><code>Integer number</code></td> 
+        <td>Unknown values are stored as 0. Unfortunately, many cars do not report this data.</td>
+        <td><code>140</code></td>
+    </tr>
+    
+    <tr>
+        <td>Highway mpg</td>
+        <td><code>Integer number</code></td> 
+        <td>The miles-per-gallon this car gets on average on highways.</td>
+        <td><code>25</code></td>
+    </tr>
+    
+    <tr>
+        <td>Horsepower</td>
+        <td><code>Integer number</code></td> 
+        <td>A measure of the engine's power. A unit of power equal to 550 foot-pounds per second (745.7 watts).</td>
+        <td><code>250</code></td>
+    </tr>
+    
+    <tr>
+        <td>Hybrid</td>
+        <td><code>Integer number</code></td> 
+        <td>Whether this is a hybrid engine or not - that is, if it uses both an internal combustion engine and an electric motor.</td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>ID</td>
+        <td><code>String</code></td> 
+        <td>A unique ID for this particular car, using the year, make, model, and transmission type.</td>
+        <td><code>"2009 Audi A3 3.2"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Length</td>
+        <td><code>Integer number</code></td> 
+        <td>Unknown values are stored as 0. Unfortunately, many cars do not report this data.</td>
+        <td><code>143</code></td>
+    </tr>
+    
+    <tr>
+        <td>Make</td>
+        <td><code>String</code></td> 
+        <td>The maker for this car.</td>
+        <td><code>"Audi"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Model Year</td>
+        <td><code>String</code></td> 
+        <td>The specific name/year for this car.</td>
+        <td><code>"2009 Audi A3"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Number of Forward Gears</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of forward gears. If no information is available, it is coded as 0.</td>
+        <td><code>6</code></td>
+    </tr>
+    
+    <tr>
+        <td>Torque</td>
+        <td><code>Integer number</code></td> 
+        <td>The torque of the engine, measured in lb/ft. When an engine is said to make "200 lb-ft of torque", it means that 200 pounds of force on a 1-foot lever is needed to stop its motion.</td>
+        <td><code>236</code></td>
+    </tr>
+    
+    <tr>
+        <td>Transmission</td>
+        <td><code>String</code></td> 
+        <td>The full name of this type of transmission, based on its Classification and number of forward gears.</td>
+        <td><code>"6 Speed Automatic Select Shift"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Width</td>
+        <td><code>Integer number</code></td> 
+        <td>Unknown values are stored as 0. Unfortunately, many cars do not report this data.</td>
+        <td><code>202</code></td>
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>Integer number</code></td> 
+        <td>The year that this car was released.</td>
+        <td><code>2009</code></td>
+    </tr>
+    
+    
     </table>
     
     

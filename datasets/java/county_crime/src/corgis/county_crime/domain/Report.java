@@ -17,9 +17,12 @@ import corgis.county_crime.domain.Data;
  */
 public class Report {
 	
+    // The long name of the police department that this report was made for.
     private String department;
+    // The long name of the state that this report was made for.
     private String state;
     private Data data;
+    // The year that this report was made in.
     private Integer year;
     
     

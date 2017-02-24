@@ -16,12 +16,19 @@ import org.json.simple.JSONObject;
  */
 public class Description {
 	
+    // What century of art this is from.
     private String style;
+    // The way that this piece of art was created.
     private String medium;
+    // The type of artwork that this is.
     private String classification;
+    // A brief description of the art.
     private String shortDescription;
+    // The signature given to the art.
     private String signed;
+    // The date/time that this art was created.
     private String dated;
+    // The estimated dimensions of the artwork.
     private String dimension;
     
     

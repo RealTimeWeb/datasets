@@ -46,7 +46,576 @@
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>3 judge dc?</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>admin action.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>admin action.state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>agency</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"unknown"</code></td>
+    </tr>
+    
+    <tr>
+        <td>area</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Economic Activity"</code></td>
+    </tr>
+    
+    <tr>
+        <td>authority 1</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"statutory construction"</code></td>
+    </tr>
+    
+    <tr>
+        <td>authority 2</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>case</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1946-001"</code></td>
+    </tr>
+    
+    <tr>
+        <td>case issues</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1946-001-01-01"</code></td>
+    </tr>
+    
+    <tr>
+        <td>case.disposition</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"reversed"</code></td>
+    </tr>
+    
+    <tr>
+        <td>chief</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Vinson"</code></td>
+    </tr>
+    
+    <tr>
+        <td>date argued.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>9</code></td>
+    </tr>
+    
+    <tr>
+        <td>date argued.full</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1/9/1946"</code></td>
+    </tr>
+    
+    <tr>
+        <td>date argued.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>date argued.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1946</code></td>
+    </tr>
+    
+    <tr>
+        <td>date reargued.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>23</code></td>
+    </tr>
+    
+    <tr>
+        <td>date reargued.full</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"10/23/1946"</code></td>
+    </tr>
+    
+    <tr>
+        <td>date reargued.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>10</code></td>
+    </tr>
+    
+    <tr>
+        <td>date reargued.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1946</code></td>
+    </tr>
+    
+    <tr>
+        <td>date.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>18</code></td>
+    </tr>
+    
+    <tr>
+        <td>date.full</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"11/18/1946"</code></td>
+    </tr>
+    
+    <tr>
+        <td>date.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>11</code></td>
+    </tr>
+    
+    <tr>
+        <td>date.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1946</code></td>
+    </tr>
+    
+    <tr>
+        <td>decision.direction</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"liberal"</code></td>
+    </tr>
+    
+    <tr>
+        <td>decision.type</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"court opinion"</code></td>
+    </tr>
+    
+    <tr>
+        <td>disagreement?</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>disposition</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"affirmed"</code></td>
+    </tr>
+    
+    <tr>
+        <td>dissent agrees</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>docket</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>24</code></td>
+    </tr>
+    
+    <tr>
+        <td>end.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>23</code></td>
+    </tr>
+    
+    <tr>
+        <td>end.full</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"August/23/1949"</code></td>
+    </tr>
+    
+    <tr>
+        <td>end.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>8</code></td>
+    </tr>
+    
+    <tr>
+        <td>end.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1949</code></td>
+    </tr>
+    
+    <tr>
+        <td>id.docket</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1946-001-01"</code></td>
+    </tr>
+    
+    <tr>
+        <td>issue.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>80180</code></td>
+    </tr>
+    
+    <tr>
+        <td>jurisdiction</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"rehearing or reargument"</code></td>
+    </tr>
+    
+    <tr>
+        <td>laws.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>6</code></td>
+    </tr>
+    
+    <tr>
+        <td>laws.type</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Infrequently litigated statutes"</code></td>
+    </tr>
+    
+    <tr>
+        <td>led</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"91 L. Ed. 3"</code></td>
+    </tr>
+    
+    <tr>
+        <td>lexis</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1946 U.S. LEXIS 1724"</code></td>
+    </tr>
+    
+    <tr>
+        <td>lower court.direction</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"conservative"</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>8</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority assigner.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>78</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority assigner.long name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Black, Hugo ( 08/19/1937 - 09/17/1971 )"</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority assigner.name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"HLBlack"</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority writer.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>78</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority writer.long name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Black, Hugo ( 08/19/1937 - 09/17/1971 )"</code></td>
+    </tr>
+    
+    <tr>
+        <td>majority writer.name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"HLBlack"</code></td>
+    </tr>
+    
+    <tr>
+        <td>minority</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"HALLIBURTON OIL WELL CEMENTING CO. v. WALKER et al., DOING BUSINESS AS DEPTHOGRAPH CO."</code></td>
+    </tr>
+    
+    <tr>
+        <td>natural court.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1301</code></td>
+    </tr>
+    
+    <tr>
+        <td>origin.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>51</code></td>
+    </tr>
+    
+    <tr>
+        <td>origin.name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"California Southern U.S. District Court"</code></td>
+    </tr>
+    
+    <tr>
+        <td>origin.state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>period</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>petitioner.entity</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"oil company, or natural gas producer"</code></td>
+    </tr>
+    
+    <tr>
+        <td>petitioner.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>198</code></td>
+    </tr>
+    
+    <tr>
+        <td>petitioner.state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>precedent altered?</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>reasons</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"to resolve question presented"</code></td>
+    </tr>
+    
+    <tr>
+        <td>respondent.entity</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"inventor, patent assigner, trademark owner or holder"</code></td>
+    </tr>
+    
+    <tr>
+        <td>respondent.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>172</code></td>
+    </tr>
+    
+    <tr>
+        <td>respondent.state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>sct</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"67 S. Ct. 6"</code></td>
+    </tr>
+    
+    <tr>
+        <td>source.id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>29</code></td>
+    </tr>
+    
+    <tr>
+        <td>source.name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"U.S. Court of Appeals, Ninth Circuit"</code></td>
+    </tr>
+    
+    <tr>
+        <td>source.state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>split on second</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>start.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>24</code></td>
+    </tr>
+    
+    <tr>
+        <td>start.full</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"June/24/1946"</code></td>
+    </tr>
+    
+    <tr>
+        <td>start.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>6</code></td>
+    </tr>
+    
+    <tr>
+        <td>start.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1946</code></td>
+    </tr>
+    
+    <tr>
+        <td>term</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1946</code></td>
+    </tr>
+    
+    <tr>
+        <td>text</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"patents and copyrights: patent"</code></td>
+    </tr>
+    
+    <tr>
+        <td>unclear</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>unconstitutional</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"no unconstitutionality"</code></td>
+    </tr>
+    
+    <tr>
+        <td>unusual</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>us</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"329 U.S. 1"</code></td>
+    </tr>
+    
+    <tr>
+        <td>vote</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1946-001-01-01-01"</code></td>
+    </tr>
+    
+    <tr>
+        <td>winning party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"favorable disposition for petitioning party"</code></td>
+    </tr>
+    
+    
     </table>
     
     

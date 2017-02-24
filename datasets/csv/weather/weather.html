@@ -46,7 +46,121 @@ Under the National Oceanic and Atmpospheric Administration, the National Weather
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>Avg Temp</td>
+        <td><code>Real number</code></td> 
+        <td>The average recorded temperature on this day, in degrees Farenheit.</td>
+        <td><code>34.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Avg Wind</td>
+        <td><code>Real number</code></td> 
+        <td>The average windspeed for that day, in Miles per Hour.</td>
+        <td><code>8.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>City</td>
+        <td><code>String</code></td> 
+        <td>The city that the reporting station sends its data to. Note that the recording station itself might actually be in a different city.</td>
+        <td><code>"Mount Holly/Philadelphia"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Code</td>
+        <td><code>String</code></td> 
+        <td>The unique code representing this station.</td>
+        <td><code>"ABE"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Day</td>
+        <td><code>Integer number</code></td> 
+        <td>The day of the month that this report was made.</td>
+        <td><code>10</code></td>
+    </tr>
+    
+    <tr>
+        <td>Full</td>
+        <td><code>String</code></td> 
+        <td>A full string representation of the date this report was made.</td>
+        <td><code>"04-10-2016"</code></td>
+    </tr>
+    
+    <tr>
+        <td>High Gust</td>
+        <td><code>Real number</code></td> 
+        <td>A gust is a sudden burst of wind (less than 20 seconds long), which is often much stronger than the average windspeed. This is reported in Miles per Hour.</td>
+        <td><code>31.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>High Wind</td>
+        <td><code>Real number</code></td> 
+        <td>The highest windspeed for that day, in Miles per Hour.</td>
+        <td><code>22.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Location</td>
+        <td><code>String</code></td> 
+        <td>The exact location of this recording station. Note that the recording station itself might be in a different location than where it sends its data.</td>
+        <td><code>"Mount Holly/Philadelphia, NJ"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Max Temp</td>
+        <td><code>Real number</code></td> 
+        <td>The highest recorded temperature on this day, in degrees Farenheit.</td>
+        <td><code>40.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Min Temp</td>
+        <td><code>Real number</code></td> 
+        <td>The lowest recorded temperature on this day, in degrees Farenheit.</td>
+        <td><code>27.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Month</td>
+        <td><code>Integer number</code></td> 
+        <td>The month of the year that this report was made.</td>
+        <td><code>4</code></td>
+    </tr>
+    
+    <tr>
+        <td>Precipitation</td>
+        <td><code>Real number</code></td> 
+        <td>The average amount of rain, in inches.</td>
+        <td><code>0.19</code></td>
+    </tr>
+    
+    <tr>
+        <td>State</td>
+        <td><code>String</code></td> 
+        <td>The state that the reporting station sends its data to. Note that the recording station itself might actually be in a different state.</td>
+        <td><code>"New Jersey"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>Integer number</code></td> 
+        <td>The year that this report was made.</td>
+        <td><code>2016</code></td>
+    </tr>
+    
+    
     </table>
     
     

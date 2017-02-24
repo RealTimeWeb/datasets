@@ -1,0 +1,212 @@
+
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="slavery.png" alt="Slavery" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Slavery SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Ryan Whitcomb (<a href="mailto:rwhit94@vt.edu">rwhit94@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 5-17-16</span><br>
+    <span class="text-muted">Tags: slavery, slave, slaves, buyer, seller, origin, history, economics</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+This dataset has financial records of New Orleans slave sales, 1856-1861. There are almost 16,000 sales recorded in this dataset. 
+
+</p>
+
+<p>
+<i>Calomiris, Charles W., and Jonathan Pritchett. 2016. "Betting on Secession: Quantifying Political Events Surrounding Slavery and the Civil War." American Economic Review, 106(1): 1-23.
+</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="slavery.sql?forcedownload=1" download="slavery.sql" target="_blank">
+        <strong>slavery.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>Age</td>
+        <td><code>Real number</code></td> 
+        <td>Ages that are represented as -1 stand for ages that were not available in the data that was collected.</td>
+        <td><code>40.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Buyer.County of Origin</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Unknown"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Buyer.Full Name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Maria Hopson"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Buyer.Origin</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Unknown, Unknown"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Buyer.State of Origin</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Unknown"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Date</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"10/6/1856"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Discount Rate</td>
+        <td><code>Real number</code></td> 
+        <td>Missing values were replaced using the mean of the rest of the category</td>
+        <td><code>0.00602698</code></td>
+    </tr>
+    
+    <tr>
+        <td>Gender</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"M"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Shadrack"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Number of Adult Slaves</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Number of Child Slaves</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Number of Total Slaves Purchased</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Payment Method</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Cash"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Predicted Interest Rate</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.07477</code></td>
+    </tr>
+    
+    <tr>
+        <td>Price</td>
+        <td><code>Real number</code></td> 
+        <td>Missing values were replaced using the mean of the rest of the category"</td>
+        <td><code>650.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Prices Listed</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Seller.County of Origin</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Unknown"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Seller.Full Name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Benjamin Screws"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Seller.Origin</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Unknown, AL"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Seller.State of Origin</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"AL"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Skin Color</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Unknown"</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+

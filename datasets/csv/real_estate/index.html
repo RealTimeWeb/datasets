@@ -17,6 +17,9 @@ Real Estate CSV Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -36,20 +39,6 @@ Real Estate CSV Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -116,7 +105,142 @@ Real Estate Across the United States (REXUS) is the primary tool used by PBS to 
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>ADA Accessible</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Will Conform"</code></td>
+    </tr>
+    
+    <tr>
+        <td>ansi usable</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"97884"</code></td>
+    </tr>
+    
+    <tr>
+        <td>city</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"HARTFORD"</code></td>
+    </tr>
+    
+    <tr>
+        <td>congressional district</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1"</code></td>
+    </tr>
+    
+    <tr>
+        <td>county</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"HARTFORD"</code></td>
+    </tr>
+    
+    <tr>
+        <td>date</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1-Jan-33"</code></td>
+    </tr>
+    
+    <tr>
+        <td>history.status</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"National Register Listed"</code></td>
+    </tr>
+    
+    <tr>
+        <td>history.type</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Field Not In Use"</code></td>
+    </tr>
+    
+    <tr>
+        <td>id</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"CT0013"</code></td>
+    </tr>
+    
+    <tr>
+        <td>line 1</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"135 HIGH ST"</code></td>
+    </tr>
+    
+    <tr>
+        <td>line 2</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>" "</code></td>
+    </tr>
+    
+    <tr>
+        <td>owned or leased</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"OWNED"</code></td>
+    </tr>
+    
+    <tr>
+        <td>parking spaces</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>29</code></td>
+    </tr>
+    
+    <tr>
+        <td>region id</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1"</code></td>
+    </tr>
+    
+    <tr>
+        <td>state</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"CT"</code></td>
+    </tr>
+    
+    <tr>
+        <td>status</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"ACTIVE"</code></td>
+    </tr>
+    
+    <tr>
+        <td>type</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"BUILDING"</code></td>
+    </tr>
+    
+    <tr>
+        <td>zip</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"61031125"</code></td>
+    </tr>
+    
+    
     </table>
     
     

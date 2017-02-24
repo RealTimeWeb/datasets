@@ -17,6 +17,9 @@ Food Access CSV Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -36,20 +39,6 @@ Food Access CSV Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -119,7 +108,233 @@ From the United States Department of Agriculture's Economic Research Service, th
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>1 Mile</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>604.389670134</code></td>
+    </tr>
+    
+    <tr>
+        <td>1/2 Mile</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>708.347212727</code></td>
+    </tr>
+    
+    <tr>
+        <td>10 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>167.470885381</code></td>
+    </tr>
+    
+    <tr>
+        <td>20 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Children.1 Mile</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>4961.14084519</code></td>
+    </tr>
+    
+    <tr>
+        <td>Children.1/2 Mile</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>5558.40555915</code></td>
+    </tr>
+    
+    <tr>
+        <td>Children.10 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>1114.80423993</code></td>
+    </tr>
+    
+    <tr>
+        <td>Children.20 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>County</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Abbeville"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Low Access Only.1 and 20 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.166666666667</code></td>
+    </tr>
+    
+    <tr>
+        <td>Low Access Only.1/2 and 10 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.5</code></td>
+    </tr>
+    
+    <tr>
+        <td>Low Income People.1 Mile</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>9451.794654</code></td>
+    </tr>
+    
+    <tr>
+        <td>Low Income People.1/2 Mile</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>10638.2083161</code></td>
+    </tr>
+    
+    <tr>
+        <td>Low Income People.10 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>2422.05604577</code></td>
+    </tr>
+    
+    <tr>
+        <td>Low Income People.20 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Low Income and Low Access.1 and 20 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.166666666667</code></td>
+    </tr>
+    
+    <tr>
+        <td>Low Income and Low Access.1/2 and 10 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.5</code></td>
+    </tr>
+    
+    <tr>
+        <td>People.1 Mile</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>21510.194817</code></td>
+    </tr>
+    
+    <tr>
+        <td>People.1/2 Mile</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>24360.3322494</code></td>
+    </tr>
+    
+    <tr>
+        <td>People.10 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>5176.76934843</code></td>
+    </tr>
+    
+    <tr>
+        <td>People.20 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Population</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>25417</code></td>
+    </tr>
+    
+    <tr>
+        <td>Residing in Group Quarters</td>
+        <td><code>Real number</code></td> 
+        <td>Group Quarters are dormitories, military bases, assisted living or skilled nursing facilities, and other large institutions.</td>
+        <td><code>901.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rural Housing Percentage</td>
+        <td><code>Real number</code></td> 
+        <td>Percentage is number of Census Tracts classified as rural divided by total tracts for the county</td>
+        <td><code>0.833333333333</code></td>
+    </tr>
+    
+    <tr>
+        <td>Seniors.1 Mile</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>3409.21234164</code></td>
+    </tr>
+    
+    <tr>
+        <td>Seniors.1/2 Mile</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>3960.8077309</code></td>
+    </tr>
+    
+    <tr>
+        <td>Seniors.10 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>984.86043463</code></td>
+    </tr>
+    
+    <tr>
+        <td>Seniors.20 Miles</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>State</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"SC"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Total Housing Units</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>9990</code></td>
+    </tr>
+    
+    <tr>
+        <td>Urban Housing Percentage</td>
+        <td><code>Real number</code></td> 
+        <td>Percentage is number of Census Tracts classified as urban divided by total tracts for the county</td>
+        <td><code>0.166666666667</code></td>
+    </tr>
+    
+    
     </table>
     
     

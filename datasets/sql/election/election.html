@@ -1,0 +1,421 @@
+
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="election.png" alt="Election" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Election SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Ryan Whitcomb</span><br>
+    <span class="text-muted">Version 1, created 6/1/2016</span><br>
+    <span class="text-muted">Tags: politics, election, votes, counties, candidate</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+Data about the results was collected from CNN's 2016 election center.  Each county has the breakdown of how many votes each candidate recieved in that county and what percentage of the total vote from that county that the candidate recieved.  The candidate's political party is also represented.  
+
+</p>
+
+<p>
+<i>http://www.cnn.com/election/primaries/counties/va/Dem</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="election.sql?forcedownload=1" download="election.sql" target="_blank">
+        <strong>election.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>Ben Carson.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>305</code></td>
+    </tr>
+    
+    <tr>
+        <td>Ben Carson.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Republican"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Ben Carson.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>8.3</code></td>
+    </tr>
+    
+    <tr>
+        <td>Bernie Sanders.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>312</code></td>
+    </tr>
+    
+    <tr>
+        <td>Bernie Sanders.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Democrat"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Bernie Sanders.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>17.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Carly Fiorina.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Carly Fiorina.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Republican"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Carly Fiorina.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Chris Christie.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Chris Christie.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Republican"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Chris Christie.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>County</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Abbeville"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Donald Trump.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1353</code></td>
+    </tr>
+    
+    <tr>
+        <td>Donald Trump.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Republican"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Donald Trump.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>36.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>Hillary Clinton.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1501</code></td>
+    </tr>
+    
+    <tr>
+        <td>Hillary Clinton.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Democrat"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Hillary Clinton.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>81.8</code></td>
+    </tr>
+    
+    <tr>
+        <td>Jeb Bush.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>236</code></td>
+    </tr>
+    
+    <tr>
+        <td>Jeb Bush.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Republican"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Jeb Bush.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>6.4</code></td>
+    </tr>
+    
+    <tr>
+        <td>John Kasich.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>157</code></td>
+    </tr>
+    
+    <tr>
+        <td>John Kasich.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Republican"</code></td>
+    </tr>
+    
+    <tr>
+        <td>John Kasich.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>4.3</code></td>
+    </tr>
+    
+    <tr>
+        <td>Marco Rubio.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>740</code></td>
+    </tr>
+    
+    <tr>
+        <td>Marco Rubio.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Republican"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Marco Rubio.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>20.2</code></td>
+    </tr>
+    
+    <tr>
+        <td>Martin O'Malley.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Martin O'Malley.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Democrat"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Martin O'Malley.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Mike Huckabee.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Mike Huckabee.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Republican"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Mike Huckabee.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>No Preference.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>No Preference.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"N/A"</code></td>
+    </tr>
+    
+    <tr>
+        <td>No Preference.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rand Paul.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rand Paul.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Republican"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rand Paul.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rick Santorum.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rick Santorum.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Republican"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rick Santorum.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>State</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"South Carolina"</code></td>
+    </tr>
+    
+    <tr>
+        <td>State Abbreviation</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"SC"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Ted Cruz.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>876</code></td>
+    </tr>
+    
+    <tr>
+        <td>Ted Cruz.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Republican"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Ted Cruz.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>23.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>Uncommitted.Number of Votes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Uncommitted.Party</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"N/A"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Uncommitted.Percent of Votes</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+

@@ -16,12 +16,19 @@ import org.json.simple.JSONObject;
  */
 public class PublicWelfare {
 	
+    // Total amount spent on equipment and land for public welfare.
     private Integer publicWelfareEquipmentAndLand;
+    // Money paid to other governments for the public welfare.
     private Integer publicWelfareIntergovernmental;
+    // Direct expenditure for compensation of own officers and employees and for supplies, materials, and contractual services except amounts for capital outlay related to public welfare.
     private Integer publicWelfareOtherCurrentOperation;
+    // Payments to employees, suppliers, contractors, beneficiaries, and other final recipients of government payments (i.e., all expenditure other than Intergovernmental expenditure) for public welfare.
     private Integer publicWelfareDirectExpenditure;
+    // Total amount spent on construction for public welfare.
     private Integer publicWelfareConstruction;
+    // Total amount spent on support of and assistance to needy persons contingent upon their need. Excludes pensions to former employees and other benefits not contingent on need. Expenditures under this heading include: Cash assistance paid directly to needy persons under the categorical programs (Old Age Assistance, Temporary Assistance for Needy Families (TANF) and under any other welfare programs; Vendor payments made directly to private purveyors for medical care, burials, and other commodities and services provided under welfare programs; and provision and operation by the government of welfare institutions. Other public welfare includes payments to other governments for welfare purposes, amounts for administration, support of private welfare agencies, and other public welfare services. Health and hospital services provided directly by the government through its own hospitals and health agencies, and any payments to other governments for such purposes are classed under those functional headings rather than here.
     private Integer publicWelfareTotalExpenditure;
+    // Assistance and subsidies related to public welfare.
     private Integer publicWelfareAssistanceAndSubsidies;
     
     

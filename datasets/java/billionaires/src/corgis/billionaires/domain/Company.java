@@ -16,10 +16,15 @@ import org.json.simple.JSONObject;
  */
 public class Company {
 	
+    // The sector of the business, or what segment of the economy they fit into.
     private String sector;
+    // The year that the company was founded.
     private Integer founded;
+    // The type of business for this company.
     private String type;
+    // The name of the company.
     private String name;
+    // The billionaires relationship to the company.
     private String relationship;
     
     

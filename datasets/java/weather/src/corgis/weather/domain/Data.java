@@ -18,9 +18,8 @@ import corgis.weather.domain.Wind;
  */
 public class Data {
 	
-    // Inches
+    // The average amount of rain, in inches.
     private Double precipitation;
-    // Degrees Farenheit
     private Temperature temperature;
     private Wind wind;
     

@@ -16,9 +16,13 @@ import org.json.simple.JSONObject;
  */
 public class Property {
 	
+    // This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.
     private Integer burglary;
+    // This property reflects the number of burglaries, or theft of personal property.
     private Integer larceny;
+    // This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.
     private Integer all;
+    // This property reflects the number of crimes where a motor vehicle was stolen.
     private Double motor;
     
     

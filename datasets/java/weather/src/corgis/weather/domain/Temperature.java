@@ -16,8 +16,11 @@ import org.json.simple.JSONObject;
  */
 public class Temperature {
 	
+    // The highest recorded temperature on this day, in degrees Farenheit.
     private Double maxTemp;
+    // The average recorded temperature on this day, in degrees Farenheit.
     private Double avgTemp;
+    // The lowest recorded temperature on this day, in degrees Farenheit.
     private Double minTemp;
     
     

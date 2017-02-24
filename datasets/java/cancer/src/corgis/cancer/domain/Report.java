@@ -19,8 +19,10 @@ import corgis.cancer.domain.Data;
 public class Report {
 	
     private Age age;
+    // The 4-digit year that this report was created for.
     private Integer year;
     private Data data;
+    // The area of the country (typically the name of the state) for this report.
     private String area;
     
     

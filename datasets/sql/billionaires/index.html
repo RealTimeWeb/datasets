@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Billionaires SQL Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    
+    
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="billionaires.png" alt="Billionaires" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Billionaires SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Ryan Whitcomb (<a href="mailto:rwhit94">rwhit94</a>)</span><br>
+    <span class="text-muted">Version 1, created 5-17-16</span><br>
+    <span class="text-muted">Tags: money, rich, wealthy, people, person, billionaire</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+Researchers have compiled a multi-decade database of the super-rich. Building off the Forbes World's Billionaires lists from 1996-2014, scholars at Peterson Institute for International Economics have added a couple dozen more variables about each billionaire - including whether they were self-made or inherited their wealth. (Roughly half of European billionaires and one-third of U.S. billionaires got a significant financial boost from family, the authors estimate.)
+
+</p>
+
+<p>
+<i>http://www.iie.com/publications/interstitial.cfm?ResearchID=2917</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="billionaires.sql?forcedownload=1" download="billionaires.sql" target="_blank">
+        <strong>billionaires.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>age</td>
+        <td><code>Integer number</code></td> 
+        <td>The current age of the billionaire. Ages that are represented as -1 stand for ages that were not available in the data that was collected.</td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>category</td>
+        <td><code>String</code></td> 
+        <td>A category representing where their money came from.</td>
+        <td><code>"Financial"</code></td>
+    </tr>
+    
+    <tr>
+        <td>citizenship</td>
+        <td><code>String</code></td> 
+        <td>The name of the country that this billionaire has citizenship with.</td>
+        <td><code>"Saudi Arabia"</code></td>
+    </tr>
+    
+    <tr>
+        <td>company.name</td>
+        <td><code>String</code></td> 
+        <td>The name of the company.</td>
+        <td><code>"Rolaco Trading and Contracting Company"</code></td>
+    </tr>
+    
+    <tr>
+        <td>company.type</td>
+        <td><code>String</code></td> 
+        <td>The type of business for this company.</td>
+        <td><code>"new"</code></td>
+    </tr>
+    
+    <tr>
+        <td>country code</td>
+        <td><code>String</code></td> 
+        <td>the 3-letter country code of the country where this billionaire has citizenship.</td>
+        <td><code>"SAU"</code></td>
+    </tr>
+    
+    <tr>
+        <td>founded</td>
+        <td><code>Integer number</code></td> 
+        <td>The year that the company was founded.</td>
+        <td><code>1968</code></td>
+    </tr>
+    
+    <tr>
+        <td>from emerging</td>
+        <td><code>Integer number</code></td> 
+        <td>Whether the money came from emerging markets.</td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>gdp</td>
+        <td><code>Real number</code></td> 
+        <td>The "Gross Domestic Product" of the country where the billionaire has citizenship. This is one of the primary indicators used to gauge the health of a country's economy. It represents the total dollar value of all goods and services produced over a specific time period; you can think of it as the size of the economy.</td>
+        <td><code>1.58e+11</code></td>
+    </tr>
+    
+    <tr>
+        <td>gender</td>
+        <td><code>String</code></td> 
+        <td>A string representing their gender.</td>
+        <td><code>"male"</code></td>
+    </tr>
+    
+    <tr>
+        <td>industry</td>
+        <td><code>String</code></td> 
+        <td>The specific industry this billionaire profitted from.</td>
+        <td><code>"Money Management"</code></td>
+    </tr>
+    
+    <tr>
+        <td>inherited</td>
+        <td><code>Integer number</code></td> 
+        <td>Whether the money was partially inherited.</td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>name</td>
+        <td><code>String</code></td> 
+        <td>The name of the billionaire.</td>
+        <td><code>"Abdul Aziz Al-Sulaiman"</code></td>
+    </tr>
+    
+    <tr>
+        <td>rank</td>
+        <td><code>Integer number</code></td> 
+        <td>The rank of this billionaire compared to the rest of the billionaires reported on. A lower rank means they make more money.</td>
+        <td><code>404</code></td>
+    </tr>
+    
+    <tr>
+        <td>region</td>
+        <td><code>String</code></td> 
+        <td>The region of the world where this billionaire lives.</td>
+        <td><code>"Middle East/North Africa"</code></td>
+    </tr>
+    
+    <tr>
+        <td>relationship</td>
+        <td><code>String</code></td> 
+        <td>The billionaires relationship to the company.</td>
+        <td><code>"founder"</code></td>
+    </tr>
+    
+    <tr>
+        <td>sector</td>
+        <td><code>String</code></td> 
+        <td>The sector of the business, or what segment of the economy they fit into.</td>
+        <td><code>"construction"</code></td>
+    </tr>
+    
+    <tr>
+        <td>was founder</td>
+        <td><code>Integer number</code></td> 
+        <td>Whether the billionaire was the founder of their company.</td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>was political</td>
+        <td><code>Integer number</code></td> 
+        <td>Whether the money came from politics.</td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>wealth.type</td>
+        <td><code>String</code></td> 
+        <td>The type of billionaire that they are.</td>
+        <td><code>"self-made finance"</code></td>
+    </tr>
+    
+    <tr>
+        <td>worth in billions</td>
+        <td><code>Real number</code></td> 
+        <td>The number of billion of dollars that this billionaire is worth.</td>
+        <td><code>1.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>year</td>
+        <td><code>Integer number</code></td> 
+        <td>The year that data about this billionaire was collected.</td>
+        <td><code>1996</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+
+
+</div>

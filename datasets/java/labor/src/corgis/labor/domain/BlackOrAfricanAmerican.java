@@ -10,21 +10,32 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.labor.domain.All;
+import corgis.labor.domain.Counts;
+import corgis.labor.domain.UnemploymentRate;
 
 /**
  * 
  */
 public class BlackOrAfricanAmerican {
 	
-    private All all;
+    private Counts counts;
+    private UnemploymentRate unemploymentRate;
     
     
     /*
      * @return 
      */
-    public All getAll() {
-        return this.all;
+    public Counts getCounts() {
+        return this.counts;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public UnemploymentRate getUnemploymentRate() {
+        return this.unemploymentRate;
     }
     
     
@@ -36,7 +47,7 @@ public class BlackOrAfricanAmerican {
 	 * @return String
 	 */
 	public String toString() {
-		return "BlackOrAfricanAmerican[" +all+"]";
+		return "BlackOrAfricanAmerican[" +counts+", "+unemploymentRate+"]";
 	}
 	
 	/**
@@ -44,8 +55,9 @@ public class BlackOrAfricanAmerican {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public BlackOrAfricanAmerican(JSONObject json_data) {
-        try {// All
-            this.all = new All((JSONObject)json_data.get("All"));
+        try {// Counts
+            this.counts = new Counts((JSONObject)json_data.get("Counts"));// Unemployment Rate
+            this.unemploymentRate = new UnemploymentRate((JSONObject)json_data.get("Unemployment Rate"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a BlackOrAfricanAmerican; a field was missing.");
     		e.printStackTrace();

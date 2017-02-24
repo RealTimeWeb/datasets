@@ -16,8 +16,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 153.9,163.3,158.6,Alabama,4490,182.8,193.8,188.2,Mortality,2385480,All Races,Female,2006
 386.7,401.7,394.2,Alabama,10957,446.7,463.8,455.2,Incidence,2407275,All Races,Female,2007
 151.8,161.1,156.4,Alabama,4492,181.2,192.1,186.6,Mortality,2407275,All Races,Female,2007
-393.2,399.8,396.5,Alabama,57019,462.7,470.4,466.5,Incidence,12222298,All Races,Female,2007-2011
-154.4,158.5,156.4,Alabama,22892,186.2,191.1,188.7,Mortality,12134084,All Races,Female,2007-2011
+393.2,399.8,396.5,Alabama,57019,462.7,470.4,466.5,Incidence,12222298,All Races,Female,2009
+154.4,158.5,156.4,Alabama,22892,186.2,191.1,188.7,Mortality,12134084,All Races,Female,2009
 399.8,414.8,407.2,Alabama,11583,468.0,485.4,476.6,Incidence,2430257,All Races,Female,2008
 152.3,161.4,156.8,Alabama,4618,184.6,195.6,190.0,Mortality,2430257,All Races,Female,2008
 393.8,408.7,401.2,Alabama,11530,462.4,479.6,471.0,Incidence,2448159,All Races,Female,2009
@@ -43,8 +43,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 255.5,270.0,262.7,Alabama,5409,234.7,247.6,241.1,Mortality,2243501,All Races,Male,2006
 570.9,591.3,581.1,Alabama,13199,572.7,592.6,582.6,Incidence,2265565,All Races,Male,2007
 254.8,269.1,261.8,Alabama,5533,237.8,250.7,244.2,Mortality,2265565,All Races,Male,2007
-564.4,573.2,568.8,Alabama,67396,580.9,589.7,585.3,Incidence,11515137,All Races,Male,2007-2011
-252.3,258.5,255.4,Alabama,27699,239.5,245.2,242.4,Mortality,11429282,All Races,Male,2007-2011
+564.4,573.2,568.8,Alabama,67396,580.9,589.7,585.3,Incidence,11515137,All Races,Male,2009
+252.3,258.5,255.4,Alabama,27699,239.5,245.2,242.4,Mortality,11429282,All Races,Male,2009
 579.9,600.3,590.1,Alabama,13671,587.5,607.6,597.5,Incidence,2287949,All Races,Male,2008
 248.6,262.5,255.5,Alabama,5564,236.8,249.7,243.2,Mortality,2287949,All Races,Male,2008
 568.2,588.2,578.1,Alabama,13659,581.5,601.4,591.4,Incidence,2309779,All Races,Male,2009
@@ -70,8 +70,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 195.8,203.8,199.8,Alabama,9899,209.7,218.1,213.8,Mortality,4628981,All Races,Male and Female,2006
 466.3,478.3,472.3,Alabama,24156,510.4,523.5,516.9,Incidence,4672840,All Races,Male and Female,2007
 194.6,202.5,198.5,Alabama,10025,210.4,218.8,214.5,Mortality,4672840,All Races,Male and Female,2007
-465.9,471.2,468.5,Alabama,124415,521.2,527.1,524.1,Incidence,23737435,All Races,Male and Female,2007-2011
-194.7,198.2,196.4,Alabama,50591,212.8,216.6,214.7,Mortality,23563366,All Races,Male and Female,2007-2011
+465.9,471.2,468.5,Alabama,124415,521.2,527.1,524.1,Incidence,23737435,All Races,Male and Female,2009
+194.7,198.2,196.4,Alabama,50591,212.8,216.6,214.7,Mortality,23563366,All Races,Male and Female,2009
 477.8,489.8,483.8,Alabama,25254,528.7,541.9,535.2,Incidence,4718206,All Races,Male and Female,2008
 193.4,201.2,197.3,Alabama,10182,211.6,220.0,215.8,Mortality,4718206,All Races,Male and Female,2008
 469.1,481.0,475.0,Alabama,25189,522.9,536.0,529.4,Incidence,4757938,All Races,Male and Female,2009
@@ -97,8 +97,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 157.2,178.3,167.5,Alabama,1004,143.4,162.4,152.7,Mortality,657654,Black,Female,2006
 354.4,385.0,369.5,Alabama,2293,330.9,359.3,344.9,Incidence,664831,Black,Female,2007
 166.7,188.2,177.2,Alabama,1076,152.3,171.8,161.8,Mortality,664831,Black,Female,2007
-370.7,384.4,377.5,Alabama,12174,352.7,365.5,359.0,Incidence,3390753,Black,Female,2007-2011
-165.9,175.2,170.5,Alabama,5294,153.4,161.9,157.6,Mortality,3358838,Black,Female,2007-2011
+370.7,384.4,377.5,Alabama,12174,352.7,365.5,359.0,Incidence,3390753,Black,Female,2009
+165.9,175.2,170.5,Alabama,5294,153.4,161.9,157.6,Mortality,3358838,Black,Female,2009
 368.5,399.5,383.7,Alabama,2435,347.5,376.4,361.8,Incidence,673102,Black,Female,2008
 162.8,183.9,173.1,Alabama,1079,150.9,170.2,160.3,Mortality,673102,Black,Female,2008
 366.1,396.8,381.2,Alabama,2460,348.3,377.1,362.5,Incidence,678586,Black,Female,2009
@@ -124,8 +124,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 305.8,344.6,324.8,Alabama,1221,201.3,225.4,213.1,Mortality,572880,Black,Male,2006
 597.3,647.3,621.9,Alabama,2692,447.5,482.8,464.9,Incidence,579036,Black,Male,2007
 314.4,353.5,333.5,Alabama,1278,208.8,233.2,220.7,Mortality,579036,Black,Male,2007
-595.7,617.2,606.4,Alabama,13981,464.8,480.5,472.6,Incidence,2958467,Black,Male,2007-2011
-306.0,322.8,314.3,Alabama,6229,207.4,218.0,212.7,Mortality,2929130,Black,Male,2007-2011
+595.7,617.2,606.4,Alabama,13981,464.8,480.5,472.6,Incidence,2958467,Black,Male,2009
+306.0,322.8,314.3,Alabama,6229,207.4,218.0,212.7,Mortality,2929130,Black,Male,2009
 619.9,670.4,644.8,Alabama,2866,471.3,507.3,489.0,Incidence,586075,Black,Male,2008
 295.7,333.3,314.1,Alabama,1244,200.6,224.4,212.3,Mortality,586075,Black,Male,2008
 601.9,650.9,626.1,Alabama,2880,468.4,504.0,485.9,Incidence,592661,Black,Male,2009
@@ -151,8 +151,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 215.9,235.0,225.3,Alabama,2225,173.4,188.5,180.8,Mortality,1230534,Black,Male and Female,2006
 455.4,482.0,468.5,Alabama,4985,389.7,412.0,400.8,Incidence,1243867,Black,Male and Female,2007
 224.6,243.9,234.1,Alabama,2354,181.7,197.1,189.2,Mortality,1243867,Black,Male and Female,2007
-462.2,473.9,468.0,Alabama,26155,407.0,417.0,411.9,Incidence,6349220,Black,Male and Female,2007-2011
-219.2,227.5,223.3,Alabama,11523,179.9,186.6,183.3,Mortality,6287968,Black,Male and Female,2007-2011
+462.2,473.9,468.0,Alabama,26155,407.0,417.0,411.9,Incidence,6349220,Black,Male and Female,2009
+219.2,227.5,223.3,Alabama,11523,179.9,186.6,183.3,Mortality,6287968,Black,Male and Female,2009
 473.7,500.6,487.0,Alabama,5301,409.7,432.5,421.0,Incidence,1259177,Black,Male and Female,2008
 215.8,234.6,225.0,Alabama,2323,177.1,192.1,184.5,Mortality,1259177,Black,Male and Female,2008
 465.8,492.3,478.9,Alabama,5340,408.9,431.5,420.1,Incidence,1271247,Black,Male and Female,2009
@@ -178,8 +178,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 0,0,0,Alabama,0,0,0,0,Mortality,60364,Hispanic,Female,2006
 149.0,268.5,203.1,Alabama,61,70.3,118.0,91.9,Incidence,66377,Hispanic,Female,2007
 47.2,124.2,79.8,Alabama,22,20.8,50.2,33.1,Mortality,66377,Hispanic,Female,2007
-188.4,237.2,211.9,Alabama,389,91.5,111.9,101.3,Incidence,384119,Hispanic,Female,2007-2011
-42.3,70.2,55.1,Alabama,73,15.9,25.6,20.3,Mortality,359043,Hispanic,Female,2007-2011
+188.4,237.2,211.9,Alabama,389,91.5,111.9,101.3,Incidence,384119,Hispanic,Female,2009
+42.3,70.2,55.1,Alabama,73,15.9,25.6,20.3,Mortality,359043,Hispanic,Female,2009
 203.6,326.9,260.3,Alabama,94,105.1,159.2,130.1,Incidence,72259,Hispanic,Female,2008
 0,0,0,Alabama,0,0,0,0,Mortality,72259,Hispanic,Female,2008
 139.8,245.9,187.9,Alabama,69,69.1,112.3,88.8,Incidence,77734,Hispanic,Female,2009
@@ -205,8 +205,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 0,0,0,Alabama,0,0,0,0,Mortality,77478,Hispanic,Male,2006
 162.0,296.5,222.8,Alabama,69,63.7,103.6,81.9,Incidence,84275,Hispanic,Male,2007
 0,0,0,Alabama,0,0,0,0,Mortality,84275,Hispanic,Male,2007
-213.7,272.6,242.0,Alabama,405,75.6,92.0,83.5,Incidence,485102,Hispanic,Male,2007-2011
-66.0,106.5,84.8,Alabama,97,17.2,25.9,21.3,Mortality,456381,Hispanic,Male,2007-2011
+213.7,272.6,242.0,Alabama,405,75.6,92.0,83.5,Incidence,485102,Hispanic,Male,2009
+66.0,106.5,84.8,Alabama,97,17.2,25.9,21.3,Mortality,456381,Hispanic,Male,2009
 256.1,430.2,336.2,Alabama,87,76.2,117.3,95.1,Incidence,91450,Hispanic,Male,2008
 67.7,172.5,112.8,Alabama,27,19.5,43.0,29.5,Mortality,91450,Hispanic,Male,2008
 168.7,300.3,228.5,Alabama,69,54.3,88.4,69.8,Incidence,98784,Hispanic,Male,2009
@@ -232,8 +232,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 23.7,67.1,41.9,Alabama,18,7.7,20.6,13.1,Mortality,137842,Hispanic,Male and Female,2006
 171.2,259.7,212.4,Alabama,130,72.1,102.5,86.3,Incidence,150652,Hispanic,Male and Female,2007
 41.2,92.7,63.7,Alabama,33,15.1,30.8,21.9,Mortality,150652,Hispanic,Male and Female,2007
-205.3,242.7,223.5,Alabama,794,85.1,97.9,91.3,Incidence,869221,Hispanic,Male and Female,2007-2011
-56.9,80.1,67.9,Alabama,170,17.8,24.2,20.8,Mortality,815424,Hispanic,Male and Female,2007-2011
+205.3,242.7,223.5,Alabama,794,85.1,97.9,91.3,Incidence,869221,Hispanic,Male and Female,2009
+56.9,80.1,67.9,Alabama,170,17.8,24.2,20.8,Mortality,815424,Hispanic,Male and Female,2009
 237.3,337.3,284.5,Alabama,181,95.0,127.9,110.6,Incidence,163709,Hispanic,Male and Female,2008
 57.8,115.8,83.7,Alabama,42,18.5,34.7,25.7,Mortality,163709,Hispanic,Male and Female,2008
 167.9,251.6,207.0,Alabama,138,65.7,92.4,78.2,Incidence,176518,Hispanic,Male and Female,2009
@@ -259,8 +259,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 150.9,161.5,156.1,Alabama,3460,198.5,212.3,205.3,Mortality,1685050,White,Female,2006
 393.0,410.4,401.6,Alabama,8531,491.9,513.3,502.6,Incidence,1697518,White,Female,2007
 146.7,157.1,151.8,Alabama,3403,193.8,207.3,200.5,Mortality,1697518,White,Female,2007
-398.1,405.8,401.9,Alabama,44031,508.1,517.6,512.8,Incidence,8585884,White,Female,2007-2011
-150.8,155.4,153.1,Alabama,17485,201.7,207.8,204.7,Mortality,8539689,White,Female,2007-2011
+398.1,405.8,401.9,Alabama,44031,508.1,517.6,512.8,Incidence,8585884,White,Female,2009
+150.8,155.4,153.1,Alabama,17485,201.7,207.8,204.7,Mortality,8539689,White,Female,2009
 403.8,421.3,412.5,Alabama,8961,513.2,535.0,524.0,Incidence,1710122,White,Female,2008
 148.0,158.3,153.1,Alabama,3516,198.9,212.5,205.6,Mortality,1710122,White,Female,2008
 399.1,416.5,407.7,Alabama,8931,508.5,530.1,519.2,Incidence,1720115,White,Female,2009
@@ -286,8 +286,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 243.0,258.7,250.7,Alabama,4170,248.3,263.9,256.0,Mortality,1629110,White,Male,2006
 557.0,579.5,568.2,Alabama,10301,614.9,639.1,626.9,Incidence,1643115,White,Male,2007
 240.6,256.0,248.2,Alabama,4242,250.5,266.1,258.2,Mortality,1643115,White,Male,2007
-546.9,556.6,551.7,Alabama,51910,618.6,629.4,624.0,Incidence,8319320,White,Male,2007-2011
-240.8,247.6,244.2,Alabama,21371,254.9,261.8,258.4,Mortality,8271927,White,Male,2007-2011
+546.9,556.6,551.7,Alabama,51910,618.6,629.4,624.0,Incidence,8319320,White,Male,2009
+240.8,247.6,244.2,Alabama,21371,254.9,261.8,258.4,Mortality,8271927,White,Male,2009
 559.2,581.6,570.3,Alabama,10525,623.3,647.7,635.4,Incidence,1656414,White,Male,2008
 237.0,252.1,244.5,Alabama,4294,251.5,267.1,259.2,Mortality,1656414,White,Male,2008
 546.4,568.4,557.3,Alabama,10452,614.3,638.3,626.2,Incidence,1669087,White,Male,2009
@@ -313,8 +313,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 189.7,198.5,194.1,Alabama,7630,225.1,235.4,230.2,Mortality,3314160,White,Male and Female,2006
 465.1,478.7,471.9,Alabama,18832,555.7,571.8,563.7,Incidence,3340633,White,Male and Female,2007
 186.8,195.5,191.1,Alabama,7645,223.7,234.0,228.8,Mortality,3340633,White,Male and Female,2007
-461.9,467.9,464.9,Alabama,95941,563.9,571.1,567.5,Incidence,16905204,White,Male and Female,2007-2011
-188.8,192.6,190.7,Alabama,38856,228.8,233.4,231.1,Mortality,16811616,White,Male and Female,2007-2011
+461.9,467.9,464.9,Alabama,95941,563.9,571.1,567.5,Incidence,16905204,White,Male and Female,2009
+188.8,192.6,190.7,Alabama,38856,228.8,233.4,231.1,Mortality,16811616,White,Male and Female,2009
 472.1,485.8,478.9,Alabama,19486,570.7,587.0,578.8,Incidence,3366536,White,Male and Female,2008
 187.3,195.9,191.5,Alabama,7810,226.9,237.2,232.0,Mortality,3366536,White,Male and Female,2008
 463.2,476.7,469.9,Alabama,19383,563.9,580.0,571.9,Incidence,3389202,White,Male and Female,2009
@@ -341,8 +341,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 150.9,186.9,168.3,Alaska,381,105.7,129.6,117.2,Mortality,325121,All Races,Female,2006
 406.9,459.8,432.8,Alaska,1181,340.7,382.2,361.0,Incidence,327138,All Races,Female,2007
 145.8,180.6,162.5,Alaska,383,105.6,129.4,117.1,Mortality,327138,All Races,Female,2007
-413.0,435.5,424.1,Alaska,6221,360.3,378.7,369.4,Incidence,1684131,All Races,Female,2007-2011
-153.5,168.7,161.0,Alaska,1958,112.7,123.2,117.9,Mortality,1661250,All Races,Female,2007-2011
+413.0,435.5,424.1,Alaska,6221,360.3,378.7,369.4,Incidence,1684131,All Races,Female,2009
+153.5,168.7,161.0,Alaska,1958,112.7,123.2,117.9,Mortality,1661250,All Races,Female,2009
 419.6,472.0,445.2,Alaska,1272,365.2,408.0,386.1,Incidence,329412,All Races,Female,2008
 142.9,176.6,159.1,Alaska,397,109.0,133.0,120.5,Mortality,329412,All Races,Female,2008
 390.2,440.3,414.7,Alaska,1215,340.5,381.4,360.5,Incidence,337002,All Races,Female,2009
@@ -369,8 +369,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 175.3,219.8,196.7,Alaska,409,105.8,128.7,116.8,Mortality,350181,All Races,Male,2006
 493.2,558.9,525.4,Alaska,1334,357.7,398.6,377.7,Incidence,353162,All Races,Male,2007
 193.8,240.3,216.2,Alaska,456,117.5,141.5,129.1,Mortality,353162,All Races,Male,2007
-487.9,515.1,501.4,Alaska,6986,374.8,392.9,383.8,Incidence,1820425,All Races,Male,2007-2011
-200.8,220.5,210.5,Alaska,2317,123.9,134.5,129.1,Mortality,1794848,All Races,Male,2007-2011
+487.9,515.1,501.4,Alaska,6986,374.8,392.9,383.8,Incidence,1820425,All Races,Male,2009
+200.8,220.5,210.5,Alaska,2317,123.9,134.5,129.1,Mortality,1794848,All Races,Male,2009
 494.5,558.2,525.7,Alaska,1398,370.3,411.5,390.5,Incidence,358043,All Races,Male,2008
 192.5,237.1,214.0,Alaska,470,119.7,143.7,131.3,Mortality,358043,All Races,Male,2008
 487.4,550.1,518.1,Alaska,1431,375.2,416.5,395.4,Incidence,361893,All Races,Male,2009
@@ -397,8 +397,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 166.3,193.7,179.7,Alaska,790,109.0,125.4,117.0,Mortality,675302,All Races,Male and Female,2006
 451.9,492.5,471.9,Alaska,2515,355.4,384.4,369.7,Incidence,680300,All Races,Male and Female,2007
 171.8,199.4,185.2,Alaska,839,115.1,132.0,123.3,Mortality,680300,All Races,Male and Female,2007
-448.9,466.1,457.5,Alaska,13207,370.5,383.3,376.9,Incidence,3504556,All Races,Male and Female,2007-2011
-176.6,188.5,182.5,Alaska,4275,120.0,127.5,123.7,Mortality,3456098,All Races,Male and Female,2007-2011
+448.9,466.1,457.5,Alaska,13207,370.5,383.3,376.9,Incidence,3504556,All Races,Male and Female,2009
+176.6,188.5,182.5,Alaska,4275,120.0,127.5,123.7,Mortality,3456098,All Races,Male and Female,2009
 459.8,499.8,479.5,Alaska,2670,373.8,403.4,388.4,Incidence,687455,All Races,Male and Female,2008
 170.1,196.9,183.2,Alaska,867,117.9,134.8,126.1,Mortality,687455,All Races,Male and Female,2008
 441.5,480.3,460.6,Alaska,2646,364.3,393.3,378.6,Incidence,698895,All Races,Male and Female,2009
@@ -425,8 +425,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 0,0,0,Alaska,0,0,0,0,Mortality,13612,Black,Female,2006
 261.8,604.2,409.8,Alaska,30,147.4,311.8,218.4,Incidence,13735,Black,Female,2007
 0,0,0,Alaska,0,0,0,0,Mortality,13735,Black,Female,2007
-291.6,422.5,353.0,Alaska,141,166.2,232.8,197.4,Incidence,71429,Black,Female,2007-2011
-97.3,194.1,140.5,Alaska,40,40.8,77.9,57.2,Mortality,69958,Black,Female,2007-2011
+291.6,422.5,353.0,Alaska,141,166.2,232.8,197.4,Incidence,71429,Black,Female,2009
+97.3,194.1,140.5,Alaska,40,40.8,77.9,57.2,Mortality,69958,Black,Female,2009
 232.3,572.5,378.3,Alaska,27,129.2,285.3,196.1,Incidence,13771,Black,Female,2008
 0,0,0,Alaska,0,0,0,0,Mortality,13771,Black,Female,2008
 204.2,492.6,327.7,Alaska,27,124.4,274.7,188.8,Incidence,14302,Black,Female,2009
@@ -453,8 +453,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 0,0,0,Alaska,0,0,0,0,Mortality,15466,Black,Male,2006
 345.8,804.0,544.6,Alaska,37,164.3,321.6,233.3,Incidence,15857,Black,Male,2007
 173.9,591.6,345.6,Alaska,17,62.5,171.7,107.2,Mortality,15857,Black,Male,2007
-481.2,677.6,574.0,Alaska,219,229.0,299.8,262.6,Incidence,83381,Black,Male,2007-2011
-183.7,339.1,254.3,Alaska,63,59.7,99.4,77.7,Mortality,81105,Black,Male,2007-2011
+481.2,677.6,574.0,Alaska,219,229.0,299.8,262.6,Incidence,83381,Black,Male,2009
+183.7,339.1,254.3,Alaska,63,59.7,99.4,77.7,Mortality,81105,Black,Male,2009
 360.9,822.8,561.4,Alaska,42,185.7,348.2,257.6,Incidence,16304,Black,Male,2008
 187.7,617.1,364.8,Alaska,18,65.4,174.5,110.4,Mortality,16304,Black,Male,2008
 417.2,910.6,634.1,Alaska,44,196.5,363.0,270.4,Incidence,16271,Black,Male,2009
@@ -481,8 +481,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 0,0,0,Alaska,0,0,0,0,Mortality,29078,Black,Male and Female,2006
 346.4,619.5,470.2,Alaska,67,175.5,287.5,226.4,Incidence,29592,Black,Male and Female,2007
 142.3,359.7,235.9,Alaska,25,54.7,124.7,84.5,Mortality,29592,Black,Male and Female,2007
-400.5,511.2,453.6,Alaska,360,209.1,257.8,232.5,Incidence,154810,Black,Male and Female,2007-2011
-150.2,234.2,189.4,Alaska,103,55.7,82.7,68.2,Mortality,151063,Black,Male and Female,2007-2011
+400.5,511.2,453.6,Alaska,360,209.1,257.8,232.5,Incidence,154810,Black,Male and Female,2009
+150.2,234.2,189.4,Alaska,103,55.7,82.7,68.2,Mortality,151063,Black,Male and Female,2009
 350.3,625.9,475.4,Alaska,69,178.5,290.4,229.4,Incidence,30075,Black,Male and Female,2008
 168.2,396.8,267.8,Alaska,28,61.9,134.6,93.1,Mortality,30075,Black,Male and Female,2008
 347.0,608.8,466.2,Alaska,71,181.4,292.9,232.2,Incidence,30573,Black,Male and Female,2009
@@ -509,8 +509,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 0,0,0,Alaska,0,0,0,0,Mortality,17102,Hispanic,Female,2006
 261.3,648.8,427.7,Alaska,31,119.9,250.5,176.5,Incidence,17568,Hispanic,Female,2007
 0,0,0,Alaska,0,0,0,0,Mortality,17568,Hispanic,Female,2007
-224.9,337.3,277.2,Alaska,144,129.5,180.8,153.6,Incidence,93775,Hispanic,Female,2007-2011
-40.3,114.5,71.6,Alaska,21,14.3,35.4,23.2,Mortality,90697,Hispanic,Female,2007-2011
+224.9,337.3,277.2,Alaska,144,129.5,180.8,153.6,Incidence,93775,Hispanic,Female,2009
+40.3,114.5,71.6,Alaska,21,14.3,35.4,23.2,Mortality,90697,Hispanic,Female,2009
 234.3,552.8,370.9,Alaska,34,131.1,264.5,189.3,Incidence,17962,Hispanic,Female,2008
 0,0,0,Alaska,0,0,0,0,Mortality,17962,Hispanic,Female,2008
 82.5,253.1,149.8,Alaska,19,61.0,158.2,101.3,Incidence,18761,Hispanic,Female,2009
@@ -537,8 +537,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 0,0,0,Alaska,0,0,0,0,Mortality,18403,Hispanic,Male,2006
 285.5,721.4,468.7,Alaska,31,112.9,235.8,166.1,Incidence,18661,Hispanic,Male,2007
 0,0,0,Alaska,0,0,0,0,Mortality,18661,Hispanic,Male,2007
-263.1,421.1,336.1,Alaska,127,106.6,152.2,127.9,Incidence,99301,Hispanic,Male,2007-2011
-72.1,179.5,118.2,Alaska,33,23.6,48.2,34.3,Mortality,96119,Hispanic,Male,2007-2011
+263.1,421.1,336.1,Alaska,127,106.6,152.2,127.9,Incidence,99301,Hispanic,Male,2009
+72.1,179.5,118.2,Alaska,33,23.6,48.2,34.3,Mortality,96119,Hispanic,Male,2009
 208.9,620.5,379.0,Alaska,24,79.7,185.1,124.4,Incidence,19294,Hispanic,Male,2008
 0,0,0,Alaska,0,0,0,0,Mortality,19294,Hispanic,Male,2008
 145.0,439.2,262.2,Alaska,23,74.9,177.2,118.1,Incidence,19471,Hispanic,Male,2009
@@ -565,8 +565,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 0,0,0,Alaska,0,0,0,0,Mortality,35505,Hispanic,Male and Female,2006
 329.4,637.4,467.6,Alaska,62,131.2,219.4,171.1,Incidence,36229,Hispanic,Male and Female,2007
 0,0,0,Alaska,0,0,0,0,Mortality,36229,Hispanic,Male and Female,2007
-258.2,350.8,302.1,Alaska,271,124.1,158.1,140.4,Incidence,193076,Hispanic,Male and Female,2007-2011
-66.6,131.4,95.7,Alaska,54,21.7,37.7,28.9,Mortality,186816,Hispanic,Male and Female,2007-2011
+258.2,350.8,302.1,Alaska,271,124.1,158.1,140.4,Incidence,193076,Hispanic,Male and Female,2009
+66.6,131.4,95.7,Alaska,54,21.7,37.7,28.9,Mortality,186816,Hispanic,Male and Female,2009
 257.2,505.7,368.0,Alaska,58,118.2,201.3,155.7,Incidence,37256,Hispanic,Male and Female,2008
 0,0,0,Alaska,0,0,0,0,Mortality,37256,Hispanic,Male and Female,2008
 133.8,288.1,200.4,Alaska,42,79.2,148.5,109.9,Incidence,38232,Hispanic,Male and Female,2009
@@ -593,8 +593,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 147.9,189.6,167.9,Alaska,285,109.0,138.0,122.9,Mortality,231903,White,Female,2006
 386.5,446.7,415.8,Alaska,858,344.4,394.2,368.7,Incidence,232706,White,Female,2007
 129.7,168.1,148.0,Alaska,266,101.0,128.9,114.3,Mortality,232706,White,Female,2007
-402.4,428.2,415.2,Alaska,4570,373.0,395.4,384.1,Incidence,1189805,White,Female,2007-2011
-146.7,164.0,155.2,Alaska,1413,113.8,126.4,120.0,Mortality,1177384,White,Female,2007-2011
+402.4,428.2,415.2,Alaska,4570,373.0,395.4,384.1,Incidence,1189805,White,Female,2009
+146.7,164.0,155.2,Alaska,1413,113.8,126.4,120.0,Mortality,1177384,White,Female,2009
 424.2,485.9,454.3,Alaska,972,390.4,443.2,416.2,Incidence,233554,White,Female,2008
 137.9,176.7,156.4,Alaska,292,111.1,140.2,125.0,Mortality,233554,White,Female,2008
 365.2,421.9,392.8,Alaska,862,338.5,387.3,362.3,Incidence,237925,White,Female,2009
@@ -621,8 +621,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 163.4,212.5,186.9,Alaska,307,106.9,134.1,119.9,Mortality,256051,White,Male,2006
 489.8,563.5,525.8,Alaska,1066,389.2,439.2,413.6,Incidence,257707,White,Male,2007
 179.3,230.5,203.8,Alaska,339,117.9,146.3,131.5,Mortality,257707,White,Male,2007
-481.4,511.8,496.5,Alaska,5489,405.2,427.3,416.2,Incidence,1318899,White,Male,2007-2011
-191.9,213.8,202.6,Alaska,1752,128.1,140.7,134.3,Mortality,1304603,White,Male,2007-2011
+481.4,511.8,496.5,Alaska,5489,405.2,427.3,416.2,Incidence,1318899,White,Male,2009
+191.9,213.8,202.6,Alaska,1752,128.1,140.7,134.3,Mortality,1304603,White,Male,2009
 494.9,567.2,530.2,Alaska,1113,402.7,453.3,427.4,Incidence,260411,White,Male,2008
 185.3,235.5,209.4,Alaska,359,124.0,152.9,137.9,Mortality,260411,White,Male,2008
 480.3,550.2,514.4,Alaska,1138,409.6,460.4,434.4,Incidence,261942,White,Male,2009
@@ -649,8 +649,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 160.0,190.9,175.0,Alaska,592,111.7,131.5,121.3,Mortality,487954,White,Male and Female,2006
 443.1,489.1,465.7,Alaska,1924,375.0,410.3,392.3,Incidence,490413,White,Male and Female,2007
 157.6,187.9,172.3,Alaska,605,113.7,133.6,123.4,Mortality,490413,White,Male and Female,2007
-442.6,462.1,452.2,Alaska,10059,393.2,408.9,401.0,Incidence,2508704,White,Male and Female,2007-2011
-169.4,182.8,176.0,Alaska,3165,123.1,132.0,127.5,Mortality,2481987,White,Male and Female,2007-2011
+442.6,462.1,452.2,Alaska,10059,393.2,408.9,401.0,Incidence,2508704,White,Male and Female,2009
+169.4,182.8,176.0,Alaska,3165,123.1,132.0,127.5,Mortality,2481987,White,Male and Female,2009
 464.7,511.0,487.4,Alaska,2085,404.2,440.6,422.1,Incidence,493965,White,Male and Female,2008
 164.5,194.9,179.3,Alaska,651,121.9,142.3,131.8,Mortality,493965,White,Male and Female,2008
 429.1,473.0,450.7,Alaska,2000,382.8,418.0,400.1,Incidence,499867,White,Male and Female,2009
@@ -677,8 +677,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 132.3,140.2,136.2,Arizona,4607,147.9,156.7,152.2,Mortality,3026134,All Races,Female,2006
 367.7,380.9,374.3,Arizona,12693,402.7,417.0,409.8,Incidence,3096998,All Races,Female,2007
 130.4,138.2,134.2,Arizona,4676,146.7,155.4,151.0,Mortality,3096998,All Races,Female,2007
-370.6,376.4,373.5,Arizona,66619,415.3,421.6,418.5,Incidence,15920312,All Races,Female,2007-2011
-130.0,133.4,131.7,Arizona,23608,148.5,152.3,150.4,Mortality,15694948,All Races,Female,2007-2011
+370.6,376.4,373.5,Arizona,66619,415.3,421.6,418.5,Incidence,15920312,All Races,Female,2009
+130.0,133.4,131.7,Arizona,23608,148.5,152.3,150.4,Mortality,15694948,All Races,Female,2009
 370.2,383.2,376.7,Arizona,13090,407.8,422.0,414.9,Incidence,3155278,All Races,Female,2008
 125.4,132.9,129.1,Arizona,4644,143.0,151.5,147.2,Mortality,3155278,All Races,Female,2008
 379.0,392.1,385.5,Arizona,13756,424.1,438.5,431.2,Incidence,3189908,All Races,Female,2009
@@ -705,8 +705,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 186.8,197.3,192.0,Arizona,5311,172.1,181.7,176.9,Mortality,3003007,All Races,Male,2006
 463.3,479.0,471.1,Arizona,14155,453.4,468.6,461.0,Incidence,3070683,All Races,Male,2007
 186.0,196.3,191.1,Arizona,5457,173.0,182.5,177.7,Mortality,3070683,All Races,Male,2007
-429.5,436.1,432.8,Arizona,68986,434.8,441.3,438.0,Incidence,15749010,All Races,Male,2007-2011
-183.7,188.2,186.0,Arizona,27473,174.7,178.9,176.8,Mortality,15538548,All Races,Male,2007-2011
+429.5,436.1,432.8,Arizona,68986,434.8,441.3,438.0,Incidence,15749010,All Races,Male,2009
+183.7,188.2,186.0,Arizona,27473,174.7,178.9,176.8,Mortality,15538548,All Races,Male,2009
 430.9,445.9,438.3,Arizona,13493,424.5,439.1,431.8,Incidence,3125084,All Races,Male,2008
 179.1,189.0,184.0,Arizona,5437,169.4,178.7,174.0,Mortality,3125084,All Races,Male,2008
 436.9,451.7,444.2,Arizona,14160,441.7,456.5,449.1,Incidence,3153246,All Races,Male,2009
@@ -733,8 +733,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 156.9,163.2,160.0,Arizona,9918,161.3,167.8,164.5,Mortality,6029141,All Races,Male and Female,2006
 411.5,421.5,416.5,Arizona,26848,430.1,440.5,435.3,Incidence,6167681,All Races,Male and Female,2007
 155.7,161.9,158.8,Arizona,10133,161.1,167.5,164.3,Mortality,6167681,All Races,Male and Female,2007
-396.3,400.6,398.4,Arizona,135605,425.9,430.5,428.2,Incidence,31669322,All Races,Male and Female,2007-2011
-153.8,156.6,155.2,Arizona,51081,162.1,165.0,163.5,Mortality,31233496,All Races,Male and Female,2007-2011
+396.3,400.6,398.4,Arizona,135605,425.9,430.5,428.2,Incidence,31669322,All Races,Male and Female,2009
+153.8,156.6,155.2,Arizona,51081,162.1,165.0,163.5,Mortality,31233496,All Races,Male and Female,2009
 397.7,407.5,402.6,Arizona,26583,418.2,428.4,423.3,Incidence,6280362,All Races,Male and Female,2008
 150.2,156.2,153.2,Arizona,10081,157.4,163.7,160.5,Mortality,6280362,All Races,Male and Female,2008
 405.3,415.0,410.1,Arizona,27916,434.9,445.3,440.1,Incidence,6343154,All Races,Male and Female,2009
@@ -761,8 +761,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 106.2,160.4,131.4,Arizona,101,65.5,97.7,80.4,Mortality,125561,Black,Female,2006
 322.5,405.8,362.5,Arizona,327,219.1,272.9,244.9,Incidence,133527,Black,Female,2007
 118.8,173.9,144.6,Arizona,120,74.5,107.5,89.9,Mortality,133527,Black,Female,2007
-318.4,351.8,334.8,Arizona,1703,221.8,244.0,232.7,Incidence,731784,Black,Female,2007-2011
-130.7,154.2,142.1,Arizona,624,82.2,96.3,89.0,Mortality,700745,Black,Female,2007-2011
+318.4,351.8,334.8,Arizona,1703,221.8,244.0,232.7,Incidence,731784,Black,Female,2009
+130.7,154.2,142.1,Arizona,624,82.2,96.3,89.0,Mortality,700745,Black,Female,2009
 278.1,353.5,314.3,Arizona,302,190.3,239.3,213.7,Incidence,141288,Black,Female,2008
 118.3,170.4,142.8,Arizona,131,77.5,110.0,92.7,Mortality,141288,Black,Female,2008
 308.0,384.7,344.9,Arizona,348,211.2,261.4,235.3,Incidence,147897,Black,Female,2009
@@ -789,8 +789,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 174.9,258.5,214.1,Arizona,134,82.2,116.2,98.1,Mortality,136589,Black,Male,2006
 430.0,542.6,484.1,Arizona,378,235.1,288.3,260.7,Incidence,145010,Black,Male,2007
 195.0,282.3,236.1,Arizona,155,90.7,125.1,106.9,Mortality,145010,Black,Male,2007
-403.0,446.6,424.5,Arizona,1909,230.2,251.9,240.9,Incidence,792508,Black,Male,2007-2011
-198.4,234.0,215.7,Arizona,743,90.9,105.1,97.8,Mortality,759925,Black,Male,2007-2011
+403.0,446.6,424.5,Arizona,1909,230.2,251.9,240.9,Incidence,792508,Black,Male,2009
+198.4,234.0,215.7,Arizona,743,90.9,105.1,97.8,Mortality,759925,Black,Male,2009
 373.5,474.5,422.0,Arizona,357,209.3,258.3,232.8,Incidence,153329,Black,Male,2008
 157.3,230.6,191.7,Arizona,139,76.2,107.0,90.7,Mortality,153329,Black,Male,2008
 390.7,491.7,439.3,Arizona,386,217.6,266.4,241.1,Incidence,160123,Black,Male,2009
@@ -817,8 +817,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 143.7,189.5,165.6,Arizona,235,78.5,101.9,89.6,Mortality,262150,Black,Male and Female,2006
 380.1,446.2,412.3,Arizona,705,234.8,272.5,253.1,Incidence,278537,Black,Male and Female,2007
 158.6,205.3,181.0,Arizona,275,87.4,111.1,98.7,Mortality,278537,Black,Male and Female,2007
-360.1,386.5,373.1,Arizona,3612,229.3,244.8,237.0,Incidence,1524292,Black,Male and Female,2007-2011
-162.1,181.8,171.7,Arizona,1367,88.7,98.7,93.6,Mortality,1460670,Black,Male and Female,2007-2011
+360.1,386.5,373.1,Arizona,3612,229.3,244.8,237.0,Incidence,1524292,Black,Male and Female,2009
+162.1,181.8,171.7,Arizona,1367,88.7,98.7,93.6,Mortality,1460670,Black,Male and Female,2009
 333.5,393.9,362.9,Arizona,659,206.9,241.4,223.7,Incidence,294617,Black,Male and Female,2008
 143.2,185.9,163.6,Arizona,270,81.0,103.3,91.6,Mortality,294617,Black,Male and Female,2008
 355.1,415.4,384.4,Arizona,734,221.4,256.2,238.3,Incidence,308020,Black,Male and Female,2009
@@ -845,8 +845,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 88.8,109.2,98.6,Arizona,406,43.9,53.5,48.5,Mortality,836893,Hispanic,Female,2006
 301.4,334.2,317.5,Arizona,1638,178.3,196.5,187.2,Incidence,874791,Hispanic,Female,2007
 98.1,118.7,108.1,Arizona,480,50.1,60.0,54.9,Mortality,874791,Hispanic,Female,2007
-289.7,303.1,296.4,Arizona,8495,180.1,187.9,184.0,Incidence,4617796,Hispanic,Female,2007-2011
-101.6,110.5,106.0,Arizona,2447,52.3,56.7,54.5,Mortality,4493720,Hispanic,Female,2007-2011
+289.7,303.1,296.4,Arizona,8495,180.1,187.9,184.0,Incidence,4617796,Hispanic,Female,2009
+101.6,110.5,106.0,Arizona,2447,52.3,56.7,54.5,Mortality,4493720,Hispanic,Female,2009
 297.7,329.6,313.4,Arizona,1700,178.9,196.8,187.7,Incidence,905674,Hispanic,Female,2008
 96.3,116.3,106.0,Arizona,483,48.7,58.3,53.3,Mortality,905674,Hispanic,Female,2008
 278.5,308.5,293.2,Arizona,1670,171.6,189.0,180.2,Incidence,926878,Hispanic,Female,2009
@@ -873,8 +873,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 146.8,178.5,162.2,Arizona,493,52.1,62.2,57.0,Mortality,865070,Hispanic,Male,2006
 362.0,405.7,383.4,Arizona,1519,160.6,177.7,169.0,Incidence,898854,Hispanic,Male,2007
 154.0,185.3,169.2,Arizona,564,57.7,68.1,62.7,Mortality,898854,Hispanic,Male,2007
-331.9,349.0,340.4,Arizona,7659,159.5,166.8,163.1,Incidence,4694470,Hispanic,Male,2007-2011
-155.4,168.6,161.9,Arizona,2861,60.1,64.7,62.4,Mortality,4587440,Hispanic,Male,2007-2011
+331.9,349.0,340.4,Arizona,7659,159.5,166.8,163.1,Incidence,4694470,Hispanic,Male,2009
+155.4,168.6,161.9,Arizona,2861,60.1,64.7,62.4,Mortality,4587440,Hispanic,Male,2009
 329.2,369.5,349.0,Arizona,1464,150.2,166.6,158.2,Incidence,925192,Hispanic,Male,2008
 153.0,183.0,167.6,Arizona,593,59.0,69.5,64.1,Mortality,925192,Hispanic,Male,2008
 333.9,372.4,352.8,Arizona,1618,163.9,180.7,172.1,Incidence,939942,Hispanic,Male,2009
@@ -901,8 +901,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 116.5,134.1,125.1,Arizona,899,49.4,56.4,52.8,Mortality,1701963,Hispanic,Male and Female,2006
 329.8,355.9,342.6,Arizona,3157,171.8,184.3,178.0,Incidence,1773645,Hispanic,Male and Female,2007
 125.0,142.5,133.6,Arizona,1044,55.3,62.5,58.9,Mortality,1773645,Hispanic,Male and Female,2007
-307.9,318.4,313.1,Arizona,16154,170.8,176.2,173.5,Incidence,9312266,Hispanic,Male and Female,2007-2011
-125.8,133.3,129.5,Arizona,5308,56.9,60.0,58.5,Mortality,9081160,Hispanic,Male and Female,2007-2011
+307.9,318.4,313.1,Arizona,16154,170.8,176.2,173.5,Incidence,9312266,Hispanic,Male and Female,2009
+125.8,133.3,129.5,Arizona,5308,56.9,60.0,58.5,Mortality,9081160,Hispanic,Male and Female,2009
 313.8,338.6,326.1,Arizona,3164,166.8,178.9,172.8,Incidence,1830866,Hispanic,Male and Female,2008
 124.1,141.1,132.4,Arizona,1076,55.3,62.4,58.8,Mortality,1830866,Hispanic,Male and Female,2008
 306.4,330.0,318.0,Arizona,3288,170.2,182.3,176.1,Incidence,1866820,Hispanic,Male and Female,2009
@@ -929,8 +929,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 134.9,143.2,139.0,Arizona,4379,161.1,171.0,166.0,Mortality,2637738,White,Female,2006
 371.9,385.9,378.9,Arizona,11753,429.2,445.1,437.1,Incidence,2688894,White,Female,2007
 131.7,139.8,135.7,Arizona,4390,158.5,168.2,163.3,Mortality,2688894,White,Female,2007
-374.2,380.3,377.3,Arizona,61198,442.2,449.3,445.8,Incidence,13728772,White,Female,2007-2011
-131.8,135.3,133.5,Arizona,22172,161.1,165.5,163.3,Mortality,13578378,White,Female,2007-2011
+374.2,380.3,377.3,Arizona,61198,442.2,449.3,445.8,Incidence,13728772,White,Female,2009
+131.8,135.3,133.5,Arizona,22172,161.1,165.5,163.3,Mortality,13578378,White,Female,2009
 374.0,387.8,380.9,Arizona,12074,434.6,450.4,442.5,Incidence,2728728,White,Female,2008
 126.8,134.7,130.7,Arizona,4353,154.8,164.3,159.5,Mortality,2728728,White,Female,2008
 379.7,393.5,386.6,Arizona,12540,448.2,464.2,456.2,Incidence,2748928,White,Female,2009
@@ -957,8 +957,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 189.8,200.7,195.2,Arizona,5068,188.3,199.0,193.6,Mortality,2617740,White,Male,2006
 459.3,475.5,467.3,Arizona,13012,479.8,496.6,488.2,Incidence,2665511,White,Male,2007
 187.5,198.2,192.8,Arizona,5150,188.0,198.6,193.2,Mortality,2665511,White,Male,2007
-427.6,434.4,431.0,Arizona,63324,463.0,470.2,466.6,Incidence,13571975,White,Male,2007-2011
-185.6,190.2,187.9,Arizona,25916,190.5,195.2,192.9,Mortality,13436459,White,Male,2007-2011
+427.6,434.4,431.0,Arizona,63324,463.0,470.2,466.6,Incidence,13571975,White,Male,2009
+185.6,190.2,187.9,Arizona,25916,190.5,195.2,192.9,Mortality,13436459,White,Male,2009
 428.8,444.4,436.6,Arizona,12417,451.6,467.8,459.7,Incidence,2701226,White,Male,2008
 180.6,190.9,185.7,Arizona,5118,184.3,194.7,189.5,Mortality,2701226,White,Male,2008
 431.9,447.3,439.5,Arizona,12906,467.2,483.6,475.3,Incidence,2715119,White,Male,2009
@@ -985,8 +985,8 @@ Age Adjusted CI Lower,Age Adjusted CI Upper,Age Adjusted Rate,Area,Count,Crude C
 159.9,166.5,163.2,Arizona,9447,176.1,183.4,179.8,Mortality,5255478,White,Male and Female,2006
 412.1,422.6,417.3,Arizona,24765,456.8,468.3,462.5,Incidence,5354405,White,Male and Female,2007
 157.2,163.7,160.5,Arizona,9540,174.6,181.8,178.2,Mortality,5354405,White,Male and Female,2007
-397.5,402.0,399.7,Arizona,124522,453.6,458.7,456.1,Incidence,27300747,White,Male and Female,2007-2011
-155.8,158.6,157.2,Arizona,48088,176.4,179.6,178.0,Mortality,27014837,White,Male and Female,2007-2011
+397.5,402.0,399.7,Arizona,124522,453.6,458.7,456.1,Incidence,27300747,White,Male and Female,2009
+155.8,158.6,157.2,Arizona,48088,176.4,179.6,178.0,Mortality,27014837,White,Male and Female,2009
 399.1,409.3,404.2,Arizona,24491,445.4,456.7,451.0,Incidence,5429954,White,Male and Female,2008
 151.8,158.1,154.9,Arizona,9471,170.9,178.0,174.4,Mortality,5429954,White,Male and Female,2008
 403.5,413.7,408.6,Arizona,25446,460.0,471.5,465.7,Incidence,5464047,White,Male and Female,2009

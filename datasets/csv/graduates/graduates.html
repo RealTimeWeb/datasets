@@ -14,12 +14,12 @@
     
     <h3 id="overview">Overview</h3>
 <p>
-This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series.  Included is information about employment numbers, major information, and the earnings of different majors.
+The data in this library comes from the National Survey of Recent College Graduates.  Included is information about employment numbers, major information, and the earnings of different majors. Many majors were not available before 2010, so their values have been recorded as 0 (note that this may affect the averages shown in the bar charts).
 
 </p>
 
 <p>
-<i>http://www.census.gov/acs/www/data_documentation/pums_documentation/ <br> https://github.com/fivethirtyeight/data/tree/master/college-majors</i>
+<i>https://www.nsf.gov/statistics/srvyrecentgrads/</i>
 </p>
 
     
@@ -46,7 +46,366 @@ This library comes from FiveThirtyEight's story on earnings of college majors ba
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>Accounting/Finance/Contracts</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Accounting, Finance, or Contracts.</td>
+        <td><code>793888</code></td>
+    </tr>
+    
+    <tr>
+        <td>Applied Research</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Applied Research.</td>
+        <td><code>341238</code></td>
+    </tr>
+    
+    <tr>
+        <td>Asians</td>
+        <td><code>Integer number</code></td> 
+        <td>The estimated number of people identifying as Asian that were awarded degrees in this major during this year.</td>
+        <td><code>84495</code></td>
+    </tr>
+    
+    <tr>
+        <td>Bachelors</td>
+        <td><code>Integer number</code></td> 
+        <td>The estimated number of bachelor degrees awarded in this for major during this year.</td>
+        <td><code>671374</code></td>
+    </tr>
+    
+    <tr>
+        <td>Basic Research</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Basic Research.</td>
+        <td><code>224277</code></td>
+    </tr>
+    
+    <tr>
+        <td>Business/Industry</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year who described their Employer Type as "Business/Industry".</td>
+        <td><code>669270</code></td>
+    </tr>
+    
+    <tr>
+        <td>Career Change</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because they wanted a career change.</td>
+        <td><code>98112</code></td>
+    </tr>
+    
+    <tr>
+        <td>Computer Applications</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Computer Applications.</td>
+        <td><code>297235</code></td>
+    </tr>
+    
+    <tr>
+        <td>Design</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Design.</td>
+        <td><code>118772</code></td>
+    </tr>
+    
+    <tr>
+        <td>Development</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Development.</td>
+        <td><code>191867</code></td>
+    </tr>
+    
+    <tr>
+        <td>Doctorates</td>
+        <td><code>Integer number</code></td> 
+        <td>The estimated number of doctoral degrees awarded in this for major during this year.</td>
+        <td><code>90543</code></td>
+    </tr>
+    
+    <tr>
+        <td>Educational Institution</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year who described their Employer Type as an "Educational Institution".</td>
+        <td><code>300468</code></td>
+    </tr>
+    
+    <tr>
+        <td>Employed</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are employed.</td>
+        <td><code>1090855</code></td>
+    </tr>
+    
+    <tr>
+        <td>Family</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are not working because of their family.</td>
+        <td><code>45962</code></td>
+    </tr>
+    
+    <tr>
+        <td>Family-related</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of family-related issues.</td>
+        <td><code>65619</code></td>
+    </tr>
+    
+    <tr>
+        <td>Females</td>
+        <td><code>Integer number</code></td> 
+        <td>The estimated number of women awarded degrees in this major during this year.</td>
+        <td><code>551695</code></td>
+    </tr>
+    
+    <tr>
+        <td>Government</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year who described their Employer Type as "Government".</td>
+        <td><code>121117</code></td>
+    </tr>
+    
+    <tr>
+        <td>Highest</td>
+        <td><code>Real number</code></td> 
+        <td>The highest recorded salary reported for employed people with this degree during this year.</td>
+        <td><code>999999.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Human Resources</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving Human Resources.</td>
+        <td><code>365049</code></td>
+    </tr>
+    
+    <tr>
+        <td>Job Location</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of the job location.</td>
+        <td><code>90842</code></td>
+    </tr>
+    
+    <tr>
+        <td>Layoff</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are not working because they were laid off.</td>
+        <td><code>7457</code></td>
+    </tr>
+    
+    <tr>
+        <td>Lowest</td>
+        <td><code>Real number</code></td> 
+        <td>The lowest recorded salary reported for employed people with this degree during this year.</td>
+        <td><code>0.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Major</td>
+        <td><code>String</code></td> 
+        <td>The name of the major for these graduated students.</td>
+        <td><code>"Biological Sciences"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Males</td>
+        <td><code>Integer number</code></td> 
+        <td>The estimated number of women awarded degrees in this major during this year.</td>
+        <td><code>743903</code></td>
+    </tr>
+    
+    <tr>
+        <td>Managing/Supervising People/Projects</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving managing or supervising either people or projects.</td>
+        <td><code>539430</code></td>
+    </tr>
+    
+    <tr>
+        <td>Masters</td>
+        <td><code>Integer number</code></td> 
+        <td>The estimated number of Masters awarded in this for major during this year.</td>
+        <td><code>248813</code></td>
+    </tr>
+    
+    <tr>
+        <td>Mean</td>
+        <td><code>Real number</code></td> 
+        <td>The average (mean) recorded salary reported for employed people with this degree during this year.</td>
+        <td><code>160585.73</code></td>
+    </tr>
+    
+    <tr>
+        <td>Median</td>
+        <td><code>Real number</code></td> 
+        <td>The median recorded salary reported for employed people with this degree during this year.</td>
+        <td><code>51000.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Minorities</td>
+        <td><code>Integer number</code></td> 
+        <td>The estimated number of people identifying as a minority (e.g., Black, African American, Native American) that were awarded degrees in this major during this year.</td>
+        <td><code>115016</code></td>
+    </tr>
+    
+    <tr>
+        <td>No need/want</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are not working because they either did not need a job and/or did not want a job.</td>
+        <td><code>30989</code></td>
+    </tr>
+    
+    <tr>
+        <td>Not in Labor Force</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are not in the labor force (e.g., retired, students, those taking care of children).</td>
+        <td><code>181940</code></td>
+    </tr>
+    
+    <tr>
+        <td>Pay/Promotion</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of pay or promotion opportunities.</td>
+        <td><code>111962</code></td>
+    </tr>
+    
+    <tr>
+        <td>Productions/Operations/Maintenance</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving productions, operations, or maintenance.</td>
+        <td><code>103385</code></td>
+    </tr>
+    
+    <tr>
+        <td>Professional Service</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving professional service.</td>
+        <td><code>506252</code></td>
+    </tr>
+    
+    <tr>
+        <td>Professionals</td>
+        <td><code>Integer number</code></td> 
+        <td>The estimated number of professional degrees awarded in this for major during this year.</td>
+        <td><code>284869</code></td>
+    </tr>
+    
+    <tr>
+        <td>Qualitity/Productivity Management</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving qualitity or productivity management.</td>
+        <td><code>269042</code></td>
+    </tr>
+    
+    <tr>
+        <td>Quantity</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of salaries reported for employed people with this degree during this year.</td>
+        <td><code>13432</code></td>
+    </tr>
+    
+    <tr>
+        <td>Reason Working Outside Field.No Job Available</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because there was no job available in their field.</td>
+        <td><code>76598</code></td>
+    </tr>
+    
+    <tr>
+        <td>Reason Working Outside Field.Other</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of other reasons.</td>
+        <td><code>24821</code></td>
+    </tr>
+    
+    <tr>
+        <td>Reason for Not Working.No Job Available</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are not working because there was no job available.</td>
+        <td><code>14976</code></td>
+    </tr>
+    
+    <tr>
+        <td>Sales, Purchasing, Marketing</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving sales, purchasing, or marketing.</td>
+        <td><code>215169</code></td>
+    </tr>
+    
+    <tr>
+        <td>Standard Deviation</td>
+        <td><code>Real number</code></td> 
+        <td>The standard deviation (which gives the amount of variance) of salaries reported for employed people with this degree during this year.</td>
+        <td><code>297818.25</code></td>
+    </tr>
+    
+    <tr>
+        <td>Student</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are not working because they were still a student.</td>
+        <td><code>51891</code></td>
+    </tr>
+    
+    <tr>
+        <td>Teaching</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving teaching.</td>
+        <td><code>381908</code></td>
+    </tr>
+    
+    <tr>
+        <td>Total</td>
+        <td><code>Integer number</code></td> 
+        <td>The estimated number of people awarded degrees in this major during this year.</td>
+        <td><code>1295598</code></td>
+    </tr>
+    
+    <tr>
+        <td>Unemployed</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are unemployed.</td>
+        <td><code>22803</code></td>
+    </tr>
+    
+    <tr>
+        <td>Whites</td>
+        <td><code>Integer number</code></td> 
+        <td>The estimated number of people identifying as White that were awarded degrees in this major during this year.</td>
+        <td><code>1094775</code></td>
+    </tr>
+    
+    <tr>
+        <td>Work Activity.Other</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who describe their primary work activity (more than 10% of their time) as involving something not involved in any of the other categories.</td>
+        <td><code>99749</code></td>
+    </tr>
+    
+    <tr>
+        <td>Working Conditions</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people with a degree in this major during this year, who are working outside of the field associated with their major, and who did so because of working conditions.</td>
+        <td><code>100886</code></td>
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>Integer number</code></td> 
+        <td>The year that this report was made for.</td>
+        <td><code>1993</code></td>
+    </tr>
+    
+    
     </table>
     
     

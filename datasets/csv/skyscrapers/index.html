@@ -17,6 +17,9 @@ Skyscrapers CSV Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -36,20 +39,6 @@ Skyscrapers CSV Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -116,7 +105,303 @@ Collected statistics about the tallest buildings all over the world, including t
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>abandoned</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>air traffic control tower</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>belltower</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>bridge</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>casino</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>city</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Chicago"</code></td>
+    </tr>
+    
+    <tr>
+        <td>city_id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1539</code></td>
+    </tr>
+    
+    <tr>
+        <td>commercial</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>completed.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>country</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"US"</code></td>
+    </tr>
+    
+    <tr>
+        <td>country id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>163</code></td>
+    </tr>
+    
+    <tr>
+        <td>current</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"vision"</code></td>
+    </tr>
+    
+    <tr>
+        <td>education</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>exhibition</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>floors above</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>528</code></td>
+    </tr>
+    
+    <tr>
+        <td>government</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>height</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>1609.35998535</code></td>
+    </tr>
+    
+    <tr>
+        <td>hospital</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>hotel</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>id</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>12</code></td>
+    </tr>
+    
+    <tr>
+        <td>industrial</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>is completed</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>is started</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>latitude</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>library</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>longitude</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>material</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"steel"</code></td>
+    </tr>
+    
+    <tr>
+        <td>multiple</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>museum</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"The Illinois"</code></td>
+    </tr>
+    
+    <tr>
+        <td>number of purposes</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>4</code></td>
+    </tr>
+    
+    <tr>
+        <td>observation</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>office</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>other</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>rank</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>religious</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>residential</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>retail</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>serviced apartments</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    <tr>
+        <td>started.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>telecommunications</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>False</code></td>
+    </tr>
+    
+    
     </table>
     
     

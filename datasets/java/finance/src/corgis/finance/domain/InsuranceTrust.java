@@ -16,14 +16,23 @@ import org.json.simple.JSONObject;
  */
 public class InsuranceTrust {
 	
+    // Other securities related to insurance trust.
     private Integer insuranceTrustOtherSecurities;
+    // Cash and deposits related to insurance trust.
     private Integer insuranceTrustCashAndDeposits;
+    // Total amount spent on state and local securities for insurance trust.
     private Integer insuranceTrustStateAndLocalSecuritiesTotal;
+    // Total amount spent on securities for insurance trust.
     private Integer insuranceTrustSecuritiesTotal;
+    // Total amount spent on federal agency insurance trust securities.
     private Integer insuranceTrustFederalAgencySecurities;
+    // Cash payments to beneficiaries (including withdrawals of retirement contributions) of employee retirement, unemployment compensation, workers' compensation, and disability benefit social insurance programs. Excludes cost of administering insurance trust activities, state contributions of programs administered by the state or by the federal government, intergovernmental expenditure for support of locally administered employee-retirement systems, and noncontributory gratuities paid to former employees.
     private Integer insuranceTrustTotalExpenditure;
+    // A government-administered plan for compulsory or voluntary social insurance (insurance protection of persons or their survivors against economic hazards arising from retirement, disability, death, accident, illness, unemployment, etc.) through accumulation of assets from contributions, assessments, premiums, and the like collected from employers and employees for use in making cash benefit payments to eligible persons covered by the system. Comprises Employee retirement, Unemployment compensation, Workers' compensation, and Miscellaneous (accident, sickness, and other disability benefit) systems. In exhibit statistics, each insurance trust system is treated as an entity, with its transactions including intragovernmental amounts. However, intragovernmental transactions are excluded from the insurance trust components of revenue and expenditure.
     private Integer insuranceTrust;
+    // Cash and securities related to insurance trust.
     private Integer insuranceTrustCashAndSecurities;
+    // Federal securities related to insurance trust.
     private Integer insuranceTrustFederalSecurities;
     
     

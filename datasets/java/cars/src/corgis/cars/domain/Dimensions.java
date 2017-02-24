@@ -16,8 +16,11 @@ import org.json.simple.JSONObject;
  */
 public class Dimensions {
 	
+    // Unknown values are stored as 0. Unfortunately, many cars do not report this data.
     private Integer width;
+    // Unknown values are stored as 0. Unfortunately, many cars do not report this data.
     private Integer length;
+    // Unknown values are stored as 0. Unfortunately, many cars do not report this data.
     private Integer height;
     
     

@@ -16,11 +16,16 @@ import org.json.simple.JSONObject;
  */
 public class MinutesDelayed {
 	
+    // The number of minutes delayed caused by a previous flight with the same aircraft arriving late, causing the present flight to depart late in this month.
     private Integer lateAircraft;
+    // Number of of minutes delayed caused by significant meteorological conditions (actual or forecasted) that, in the judgment of the carrier, delays or prevents the operation of a flight such as tornado, blizzard or hurricane in this month.
     private Integer weather;
+    // The number of minutes delayed due to circumstances within the airline's control (e.g. maintenance or crew problems, aircraft cleaning, baggage loading, fueling, etc.) in this month.
     private Integer carrier;
+    // Number of minutes delayed caused by evacuation of a terminal or concourse, re-boarding of aircraft because of security breach, inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas in this month.
     private Integer security;
     private Integer total;
+    // The number of minutes delayed attributable to the national aviation system that refer to a broad set of conditions, such as non-extreme weather conditions, airport operations, heavy traffic volume, and air traffic control in this month.
     private Integer nationalAviationSystem;
     
     
@@ -93,13 +98,13 @@ public class MinutesDelayed {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public MinutesDelayed(JSONObject json_data) {
-        try {// late aircraft
-            this.lateAircraft = ((Number)json_data.get("late aircraft")).intValue();// weather
-            this.weather = ((Number)json_data.get("weather")).intValue();// carrier
-            this.carrier = ((Number)json_data.get("carrier")).intValue();// security
-            this.security = ((Number)json_data.get("security")).intValue();// total
-            this.total = ((Number)json_data.get("total")).intValue();// national aviation system
-            this.nationalAviationSystem = ((Number)json_data.get("national aviation system")).intValue();
+        try {// Late Aircraft
+            this.lateAircraft = ((Number)json_data.get("Late Aircraft")).intValue();// Weather
+            this.weather = ((Number)json_data.get("Weather")).intValue();// Carrier
+            this.carrier = ((Number)json_data.get("Carrier")).intValue();// Security
+            this.security = ((Number)json_data.get("Security")).intValue();// Total
+            this.total = ((Number)json_data.get("Total")).intValue();// National Aviation System
+            this.nationalAviationSystem = ((Number)json_data.get("National Aviation System")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a MinutesDelayed; a field was missing.");
     		e.printStackTrace();

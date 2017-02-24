@@ -15,8 +15,7 @@ import corgis.energy.domain.*;
 import java.sql.*;
 
 /**
- * United States Government reports on consumption, production, import, and export of various fuel sources.
-This data comes from the US Energy Information Administration, which has historical data from 1949 to 2014. All numbers are given in Quadrillion BTUs. 
+ * United States Government reports on consumption, production, expenditures, and prices of various fuel sources. This data comes from the US Energy Information Administration, which has historical data from 1960 to 2014. Information was not always available, in which case 0 was reported instead. In some cases, very tiny values were rounded down to zero.
 
  */
 public class EnergyLibrary {
@@ -69,7 +68,7 @@ public class EnergyLibrary {
     
     
     /**
-     * Returns energy data from 1949 to 2014 across various factors.
+     * Returns energy data from 1960 to 2014 across various factors.
     
      * @return a list[report]
      */

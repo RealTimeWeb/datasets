@@ -16,9 +16,13 @@ import org.json.simple.JSONObject;
  */
 public class Fat {
 	
+    // A saturated fat is a type of fat in which the fatty acids all have single bonds. Measured in grams (g).
     private Double saturatedFat;
+    // Fatty acids that have one double bond in the fatty acid chain with all of the remainder carbon atoms being single-bonded. Measured in grams (g).
     private Double monosaturatedFat;
+    // Lipids comprise a group of naturally occurring molecules that include fats, waxes, sterols, fat-soluble vitamins (such as vitamins A, D, E, and K), monoglycerides, diglycerides, triglycerides, phospholipids, and others. The main biological functions of lipids include storing energy, signaling, and acting as structural components of cell membranes. Measured in grams (g).
     private Double totalLipid;
+    // Lipids in which the constituent hydrocarbon chain possesses two or more carbon-carbon double bonds. Polyunsaturated fat can be found mostly in nuts, seeds, fish, algae, leafy greens, and krill. "Unsaturated" refers to the fact that the molecules contain less than the maximum amount of hydrogen (if there were no double bonds). Measured in grams (g).
     private Double polysaturatedFat;
     
     

@@ -2,22 +2,28 @@ from __future__ import print_function
 import json
 import sys, os
 from pprint import pprint
-from itertools import tee
-try:
-    from itertools import izip
-except ImportError:
-    izip = zip
 from textwrap import wrap
 from collections import OrderedDict
-from auxiliary import to_dict, camel_case_caps, camel_case
-from auxiliary import snake_case, kebab_case, flat_case, copy_file
 import sqlite3
 import re
+
 from jinja2 import Environment, FileSystemLoader
 import jinja2_highlight
+
+from auxiliary import (camel_case_caps, camel_case,
+                       snake_case, kebab_case, flat_case,
+                       to_dict, copy_file, lod_to_dol,
+                       shortest_unique_strings, first_items,
+                       convert_example_value, wrap_quotes,
+                       kill_unicode)
+
 base_directory = os.path.dirname(os.path.realpath(__file__))
-templates = os.path.join(base_directory, 'sql/')
-env = Environment(extensions=['jinja2_highlight.HighlightExtension'], loader=FileSystemLoader(templates))
+sql_templates = os.path.join(base_directory, 'sql/')
+templates = os.path.join(base_directory, 'templates/')
+
+env = Environment(extensions=['jinja2_highlight.HighlightExtension'], 
+                  loader=FileSystemLoader([sql_templates, templates]))
+                  
 env.filters['camel_case_caps'] = camel_case_caps
 env.filters['camel_case'] = camel_case
 env.filters['snake_case'] = snake_case
@@ -56,49 +62,6 @@ sql_type_names = { "string" : "text",
                     "bool" : "integer",
                     "long": "integer"} # Yeah, okay, SQLITE is bad with big numbers. But won't a Real be more confusing?
 
-gson_conversions = { "string" : "getAsString",
-                     "integer" : "getAsInt",
-                     "float" : "getAsDouble",
-                     "boolean" : "getAsBoolean",
-                     "long" : "getAsLong"}
-
-def parse_json_path(path, result="json_data"):
-    elements = []
-    for keys in path.split("."):
-        while keys:
-            left, sep, keys = keys.partition("[")
-            val, sep, keys = keys.partition("]")
-            if left:
-                elements.append('"{}"'.format(left))
-            if val:
-                elements.append(int(val))
-    if elements:
-        for item in elements[:-1]:
-            if isinstance(item, str):
-                result = '((JSONObject) {}.get({}))'.format(result, item)
-            else:
-                result = '((JSONArray) {}.get({}))'.format(result, item)
-        result = '{}.get({})'.format(result, elements[-1])
-    return result
-    
-def parse_json_path_all(path, result="raw"):
-    elements = []
-    for keys in path.split("."):
-        while keys:
-            left, sep, keys = keys.partition("[")
-            val, sep, keys = keys.partition("]")
-            if left:
-                elements.append('"{}"'.format(left))
-            if val:
-                elements.append(int(val))
-    if elements:
-        for item in elements:
-            if isinstance(item, str):
-                result = '((JSONObject) {}).get({})'.format(result, item)
-            else:
-                result = '((JSONArray {}).get({})'.format(result, item)
-    return result
-
 def convert_url_parameters(url):
     return re.sub("<.*?>","{}",url)
 
@@ -114,46 +77,6 @@ def is_list(type):
 def strip_list(type):
     return type[5:-1]
 
-def create_json_conversion(data, type, key):
-    was_list = False
-    if is_list(type):
-        was_list = True
-        type = strip_list(type)
-    if type in json_conversion:
-        return "{}{}".format(json_conversion[type], data)
-    elif was_list:
-        return "new {}((JSONArray){})".format(convert_to_sql_type(type, key), data)
-    else:
-        return "new {}((JSONObject){})".format(convert_to_sql_type(type, key), data)
-        
-
-def convert_builtin(data, type):
-    if type == "string":
-        return data
-    else:
-        return '_Auxiliary._parse_type({}, {})'.format(data, sql_types[type])
-
-def create_xml_conversion(data, type):
-    if is_list(type):
-        type = strip_list(type)
-    if type in xml_conversions:
-        return "{}"
-    else:
-        return xml_conversion[type]
-                    
-def convert_to_sql_type(source_type, source_name=None):
-    if source_name is None:
-        source_name = source_type
-    was_list = is_list(source_type)
-    if was_list:
-        source_type = strip_list(source_type) #chomp out the "list(" and ")"
-        source_name = strip_list(source_name)
-    target_type = sql_type_names.get(source_type, camel_case_caps(source_name))
-    if was_list: # if it's a list, apply it to each element
-        return "ArrayList<{}>".format(target_type)
-    else: # otherwise just return it normally
-        return target_type
-        
 def make_array(object_map, type):
     if type in object_map and not object_map[type]:
         return "Array"
@@ -179,23 +102,6 @@ def requests_verb(verb):
         return "data"
     else:
         return "data"
-        
-def parse_bark(commands):
-    commands = commands.split("|")
-    result = "raw_result"
-    for command in commands:
-        components = re.findall(r"(.*?)\((.*)\)", command)
-        if not components:
-            raise Exception("Invalid jsonpath")
-        command_name = components[0][0]
-        args = components[0][1].split(",")
-        if command_name == "json":
-            result = "(JSONObject)this.parser.parse({})".format(result)
-        elif command_name == "jsonpath":
-            result = parse_json_path(args[0], result)
-        elif command_name == "geocode":
-            result = "{}, {} = _CACHE.geocode({})".format(args[1], args[2], args[0])
-    return result
     
 def to_sql_type_or_id(v):
     if v.__class__.__name__ in sql_type_names:
@@ -216,61 +122,48 @@ def to_sql_variable(source):
         return "a_{}".format(converted_type)
         
 def to_sql_name(astr):
-    return astr.replace('.', '_').replace("[", "__").replace("]", "__").replace(" ", "_").replace("#", "_").replace("/", "_").replace("-", "_")
+    astr = astr.replace('.', '_').replace("[", "__").replace("]", "__").replace(" ", "_").replace("#", "_").replace("/", "_").replace("-", "_")
+    if astr == 'key':
+        astr = 'key_'
+    return astr
     
-EXTENDED_TYPE_INFO = {
-    'dict': '<span data-toggle="tooltip" title="Dictionary">dict</span>',
-    'unicode': '<span data-toggle="tooltip" title="String (text)">str</span>',
-    'list': '<span data-toggle="tooltip" title="List">list</span>',
-    'str': '<span data-toggle="tooltip" title="String (text)">str</span>',
-    'int': '<span data-toggle="tooltip" title="Integer (whole number)">int</span>',
-    'float': '<span data-toggle="tooltip" title="Float (decimal number)">float</span>',
-    'long': '<span data-toggle="tooltip" title="Long (a very big whole number)">long</span>',
-    'bool': '<span data-toggle="tooltip" title="Boolean (True or False)">bool</span>',
-}
-def to_human_readable_type(atype):
-    return EXTENDED_TYPE_INFO[atype]
+def to_sql_value(a_value):
+    if isinstance(a_value, (unicode, str)):
+        return "'"+a_value.replace("'", "''")+"'"
+    elif isinstance(a_value, bool):
+        return "TRUE" if a_value else "FALSE"
+    else:
+        return str(a_value)
     
-EXPAND = "<span class='glyphicon glyphicon-new-window' aria-hidden='true'></span>"
-def convert_example_value(data, possible_path=""):
-    if isinstance(data, dict):
-        return "<a class='dialog-opener' id='{possible_path}'>{{ {E} }}</a>".format(possible_path=possible_path, E=EXPAND)
-    elif isinstance(data, list):
-        return "<a class='dialog-opener' id='{possible_path}'>[ {E} ]</a>".format(possible_path=possible_path, E=EXPAND)
-    elif isinstance(data, str) or isinstance(data, unicode):
-        return "<code>{data}</code>".format(data=wrap_quotes(data))
+def to_human_readable_type(a_value):
+    if isinstance(a_value, (int, long)):
+        return '<code>Integer number</code>'
+    elif isinstance(a_value, float):
+        return '<code>Real number</code>'
+    elif isinstance(a_value, (str, unicode)):
+        return '<code>String</code>'
+    elif isinstance(a_value, bool):
+        return '<code>Boolean (1/0)</code>'
     else:
-        return "<code>{data}</code>".format(data=data)
-        
-def wrap_quotes(data):
-    if '"' not in data:
-        pretty = '"{data}"'.format(data=data)
-    elif "'" not in data:
-        pretty = "'{data}'".format(data=data)
-    else:
-        pretty = '"{data}"'.format(data=data.replace('"', '\"'))
-    return pretty
+        return '<code>'+str(type(a_value))+'</code>'
 
+def sluggify(astr):
+    return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_").replace("'", "_")
+
+env.filters['sluggify'] = sluggify
 env.filters['tojson'] = json.dumps
 env.filters['to_sql_name'] = to_sql_name
 env.filters['wrap_quotes'] = wrap_quotes
 env.filters['to_human_readable_type'] = to_human_readable_type
 env.filters['convert_example_value'] = convert_example_value
-env.filters['to_sql_type'] = convert_to_sql_type
 env.filters['to_sql_variable'] = to_sql_variable
 env.filters['convert_url_parameters'] = convert_url_parameters
 #env.filters['collect_url_parameters'] = collect_url_parameters
 env.filters['is_builtin'] = is_builtin
 env.filters['is_list'] = is_list
 env.filters['strip_list'] = strip_list
-env.filters['parse_json_path'] = parse_json_path
-env.filters['parse_json_path_all'] = parse_json_path_all
 env.filters['convert_to_string'] = convert_to_string
 env.filters['requests_verb'] = requests_verb
-env.filters['create_json_conversion'] = create_json_conversion
-env.filters['create_xml_conversion'] = create_xml_conversion
-env.filters['convert_builtin'] = convert_builtin
-env.filters['parse_bark'] = parse_bark
 env.filters['make_array'] = make_array
 env.filters['enforce_json_array'] = enforce_json_array
 
@@ -282,10 +175,13 @@ def json_path(path, data):
         data = data[entry]
     return data
 
-def build_metafiles(model):
-    name = model['metadata']['name']
+def build_metafiles(model, descriptions):
+    name = snake_case(model['metadata']['name'])
     root = 'sql/{name}/'.format(name=name)
-    return {} #root+'index.html': env.get_template('main.html').render(**model)}
+    return {
+            root+'index.html' : env.get_template('sql_main.html').render(standalone=True, descriptions=descriptions, **model),
+            root+name+'.html' : env.get_template('sql_main.html').render(standalone=False, descriptions=descriptions, **model)
+            }
                 
 def build_database(model):
     name = snake_case(model['metadata']['name'])
@@ -295,67 +191,45 @@ def build_database(model):
     database_file = sqlite3.connect(new_file)
     return new_file, database_file
 
-class JsonToSql(object):
-    def __init__(self, structures, data, parent_name, indexes=None):
-        self.values= {}
-        self.headers = {}
-        self.last_id = {}
-        self.structures = structures
-        '''
-        for index in local["indexes"]:
-            index_name = index["name"]
-            index_path = index["jsonpath"]
-            indexed_value = [json_path(index_path, element) for element in data_list]
-            indexes.append(indexed_value)
-            index_titles += ", {} text".format(index_name)
-        '''
-        self.walk(data, parent_name)
+class JsonLeafNodes(object):    
+    def __init__(self, name, data):
+        self.result = {}
+        self.path = []
+        self.name = name
+        self.walk(data, name)
+    
+    @property
+    def json_path(self):
+        return ".".join([self.name]+self.path)
         
-    def walk(self, chunk, parent_name, from_list=False):
+    def type_check(self, value):
+        return value.__class__.__name__
+        
+    def walk(self, chunk, parent_name):
         if isinstance(chunk, dict):
-            return self.walk_dict(chunk, parent_name, from_list)
+            self.walk_dict(chunk, parent_name)
         elif isinstance(chunk, list):
-            return self.walk_list(chunk, parent_name, from_list)
+            self.walk_list(chunk, parent_name)
         else:
-            return self.walk_atom(chunk, parent_name, from_list)
-    def new_table(self, name, headers):
-        self.values[name] = []
-        self.headers[name] = headers
-        self.last_id[name] = 0
-    def walk_dict(self, data, parent, from_list):
-        row_data = [(key, to_sql_type_or_id(v))
-                    for key, v in
-                    data.items()]
-        if "id" not in data.keys():
-            row_data.append( ("id", "integer") )
-        row_data = sorted(row_data, key=lambda x: x[0])
-        if parent not in self.headers:
-            self.new_table(parent, row_data)
-        new_row = []
-        for key, key_type in row_data:
-            if key in data:
-                new_row.append(self.walk(data[key], key, False))
-            else:
-                new_row.append(self.last_id[parent])
-        self.values[parent].append(new_row)
-        self.last_id[parent] += 1
-        return self.last_id[parent]-1
-    def walk_list(self, data, parent, from_list):
-        for row in data:
-            if isinstance(data, dict):
-                self.walk(row, parent, from_list=True)
-            else:
-                #: TODO: make this work
-                r = self.walk(row, parent, from_list=True)
-                row_data = [('id', 'integer'), 
-                            (parent, to_sql_type_or_id(r))]
-                if parent not in self.headers:
-                    self.new_table(parent, row_data)
-                self.values[parent].append([self.last_id[parent], r])
-                self.last_id[parent] += 1
-        return self.last_id[parent]-1
-    def walk_atom(self, data, parent, from_list):
-        return data
+            self.walk_atomic(chunk, parent_name)
+        return self
+        
+    def walk_dict(self, a_dict, parent_name):
+        for key, value in a_dict.items():
+            self.path.append(key)
+            self.walk(value, key)
+            self.path.pop()
+    def walk_list(self, a_list, parent_name):
+        return        
+        if not a_list:
+            return
+        self.path.append("[0]")
+        first = a_list[0]
+        self.walk(first, parent_name)
+        self.path.pop()
+    def walk_atomic(self, an_atomic, parent_name):
+        if isinstance(an_atomic, (float, int, str, unicode)):
+            self.result[self.json_path] = an_atomic
 
 def build_locals(model, database_file, sql_path):
     locals = model["locals"]
@@ -369,20 +243,42 @@ def build_locals(model, database_file, sql_path):
         type = local["type"]
         with open(file, "r") as local_file, open(sql_path, 'w') as sql_file:
             if type == "json":
-                data = json.load(local_file)
-                sqlized_data = JsonToSql(structures, data, row)
-                values, headers = sqlized_data.values, sqlized_data.headers
-                for header_name, header in headers.items():
-                    header = ", ".join("{name} {type}".format(name=to_sql_name(n), type=t) for n,t in header)
-                    sql_file.write("CREATE TABLE {name} ({header})\n".format(
-                        name=to_sql_name(header_name), header=header
+                data_list = json.load(local_file)
+                data = [JsonLeafNodes(name+'.[0]', item).result for item in data_list]
+                data_long_names = data
+                key_names = set([key for row in data for key in row.keys()])
+                short_key_names = shortest_unique_strings(key_names)
+                key_name_map = dict(zip(short_key_names, key_names))
+                comment_map = {short: model['structures_comments'].get(long, '')
+                               for short, long in key_name_map.items()}
+                data = [OrderedDict(sorted([(short, kill_unicode(row.get(long, '')))
+                                            for short, long in key_name_map.items()]))
+                        for row in data]
+                header = ", ".join("{name} {type}".format(name=to_sql_name(s), 
+                                                          type=to_sql_type_or_id(v))
+                                   for s,v in data[0].items())
+                header_name = to_sql_name(name)
+                sql_file.write("CREATE TABLE {name} ({header});\n".format(
+                    name=header_name, header=header
+                ))
+                for short, long in key_name_map.items():
+                    if long in [i['jsonpath'] for i in local['indexes']]:
+                        sql_file.write("CREATE INDEX {idx} ON {table} ({field});\n".format(
+                                       idx=to_sql_name(short)+'_idx',
+                                       table=header_name,
+                                       field=to_sql_name(short)))
+                full_key_descriptions = [
+                    {'name': short, 
+                     'short': short,
+                     'type': value,
+                     'comment': comment_map.get(short),
+                     'example': value}
+                    for short, value in data[0].items()]
+                    
+                for row in data:
+                    sql_file.write("INSERT INTO {name} VALUES ({row});\n".format(
+                        name=header_name, row=", ".join(map(to_sql_value, row.values()))
                     ))
-                for table_name, value in values.items():
-                    for row in value:
-                        sql_file.write("INSERT INTO {name} VALUES ({row})\n".format(
-                            name=to_sql_name(table_name), row=", ".join(map(json.dumps, row))
-                        ))
-                    sql_file.write("\n")
                 '''
                 header = "{}(data{})".format(name, index_titles)
                 blanks = "?" + (", ?" * len(indexes))
@@ -396,6 +292,7 @@ def build_locals(model, database_file, sql_path):
                                           (row,)+indices)
                 database_file.commit()
                 '''
+                yield full_key_descriptions
                 
 def copy_file(filename):
     with open(filename, 'rb') as input:
@@ -415,18 +312,19 @@ def build_sql(model, fast):
     else:
         model["metadata"]["icon"] = False
     
-    files.update(build_metafiles(model))
     
     if not fast:
         new_file, database_file = build_database(model)
         sql_file = name+".sql"
-        build_locals(model, database_file, sql_file)
+        descriptions = build_locals(model, database_file, sql_file)
         database_file.close()
         moves = {new_file: new_folder, sql_file: new_folder}
         for appendix in model['metadata']['appendix']:
             moves[appendix['file']] = new_folder
     else:
         moves = {}
+        
+    files.update(build_metafiles(model, list(descriptions)))
     
     return files, moves
     

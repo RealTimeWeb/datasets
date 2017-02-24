@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Broadway SQL Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    
+    
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="broadway.png" alt="Broadway" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Broadway SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 11/1/2015</span><br>
+    <span class="text-muted">Tags: broadway, musical, theatre, tickets</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+This library holds data about over Broadway shows, grouped over weeklong periods. Only shows that reported capacity were included, so the dataset stretches back to the 1990s. The dataset is made available by the Broadway League (the national trade association for the Broadway industry), and you can view the data online at http://www.broadwayleague.com/. This dataset 
+
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="broadway.sql?forcedownload=1" download="broadway.sql" target="_blank">
+        <strong>broadway.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>Attendance</td>
+        <td><code>Integer number</code></td> 
+        <td>The total number of people who attended performances over the week.</td>
+        <td><code>5500</code></td>
+    </tr>
+    
+    <tr>
+        <td>Capacity</td>
+        <td><code>Integer number</code></td> 
+        <td>The percentage of the theatre that was filled during that week.</td>
+        <td><code>88</code></td>
+    </tr>
+    
+    <tr>
+        <td>Day</td>
+        <td><code>Integer number</code></td> 
+        <td>The day of the month that this performance's week ended on.</td>
+        <td><code>26</code></td>
+    </tr>
+    
+    <tr>
+        <td>Full</td>
+        <td><code>String</code></td> 
+        <td>The full date representation that this performance's week ended on in "Month/Day/Year" format.</td>
+        <td><code>"08/26/1990"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Gross</td>
+        <td><code>Integer number</code></td> 
+        <td>The "Gross Gross" of this performance, or how much it made in total across the entire week. Measured in dollars.</td>
+        <td><code>134456</code></td>
+    </tr>
+    
+    <tr>
+        <td>Gross Potential</td>
+        <td><code>Integer number</code></td> 
+        <td>The Gross Potential is the maximum amount an engagement can possibly earn based on calculations involving ticket prices, seating capacity, and the number of performances. This number is expressed here as a percentage of what could have been achieved (Gross Gross / Gross Potential). In case the GP could not be calculated, it was replaced with 0%.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Month</td>
+        <td><code>Integer number</code></td> 
+        <td>The numeric month that this performance's week ended in (1 = January, 2 = February, etc.).</td>
+        <td><code>8</code></td>
+    </tr>
+    
+    <tr>
+        <td>Name</td>
+        <td><code>String</code></td> 
+        <td>The name of the production.</td>
+        <td><code>"Tru"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Performances</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of performances that occurred this week.</td>
+        <td><code>8</code></td>
+    </tr>
+    
+    <tr>
+        <td>Theatre</td>
+        <td><code>String</code></td> 
+        <td>The name of the theatre.</td>
+        <td><code>"Booth"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Type</td>
+        <td><code>String</code></td> 
+        <td>Whether it is a "Musical", "Play", or "Special".</td>
+        <td><code>"Play"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>Integer number</code></td> 
+        <td>The year that this week of performances occurred in.</td>
+        <td><code>1990</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+
+
+</div>

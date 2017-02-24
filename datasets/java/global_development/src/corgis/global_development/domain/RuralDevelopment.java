@@ -16,18 +16,18 @@ import org.json.simple.JSONObject;
  */
 public class RuralDevelopment {
 	
-    // Square kilometers
-    private Double surfaceArea;
+    // Percent of land area
+    private Double arableLandPercent;
     // Hectacres per person
     private Double arableLand;
-    // Percent of total population
-    private Double ruralPopulation;
+    // Value of rural population
+    private Integer ruralPopulation;
     // Percent of land area
     private Double agriculturalLandPercent;
     // Annual Percent
     private Double ruralPopulationGrowth;
-    // Percent of land area
-    private Double arableLandPercent;
+    // Square kilometers
+    private Double surfaceArea;
     // Square kilometers
     private Double agriculturalLand;
     // Square kilometers
@@ -37,8 +37,8 @@ public class RuralDevelopment {
     /*
      * @return 
      */
-    public Double getSurfaceArea() {
-        return this.surfaceArea;
+    public Double getArableLandPercent() {
+        return this.arableLandPercent;
     }
     
     
@@ -55,7 +55,7 @@ public class RuralDevelopment {
     /*
      * @return 
      */
-    public Double getRuralPopulation() {
+    public Integer getRuralPopulation() {
         return this.ruralPopulation;
     }
     
@@ -82,8 +82,8 @@ public class RuralDevelopment {
     /*
      * @return 
      */
-    public Double getArableLandPercent() {
-        return this.arableLandPercent;
+    public Double getSurfaceArea() {
+        return this.surfaceArea;
     }
     
     
@@ -113,7 +113,7 @@ public class RuralDevelopment {
 	 * @return String
 	 */
 	public String toString() {
-		return "RuralDevelopment[" +surfaceArea+", "+arableLand+", "+ruralPopulation+", "+agriculturalLandPercent+", "+ruralPopulationGrowth+", "+arableLandPercent+", "+agriculturalLand+", "+landArea+"]";
+		return "RuralDevelopment[" +arableLandPercent+", "+arableLand+", "+ruralPopulation+", "+agriculturalLandPercent+", "+ruralPopulationGrowth+", "+surfaceArea+", "+agriculturalLand+", "+landArea+"]";
 	}
 	
 	/**
@@ -121,13 +121,13 @@ public class RuralDevelopment {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public RuralDevelopment(JSONObject json_data) {
-        try {// Surface Area
-            this.surfaceArea = ((Number)json_data.get("Surface Area")).doubleValue();// Arable Land
+        try {// Arable Land Percent
+            this.arableLandPercent = ((Number)json_data.get("Arable Land Percent")).doubleValue();// Arable Land
             this.arableLand = ((Number)json_data.get("Arable Land")).doubleValue();// Rural Population
-            this.ruralPopulation = ((Number)json_data.get("Rural Population")).doubleValue();// Agricultural Land Percent
+            this.ruralPopulation = ((Number)json_data.get("Rural Population")).intValue();// Agricultural Land Percent
             this.agriculturalLandPercent = ((Number)json_data.get("Agricultural Land Percent")).doubleValue();// Rural Population Growth
-            this.ruralPopulationGrowth = ((Number)json_data.get("Rural Population Growth")).doubleValue();// Arable Land Percent
-            this.arableLandPercent = ((Number)json_data.get("Arable Land Percent")).doubleValue();// Agricultural Land
+            this.ruralPopulationGrowth = ((Number)json_data.get("Rural Population Growth")).doubleValue();// Surface Area
+            this.surfaceArea = ((Number)json_data.get("Surface Area")).doubleValue();// Agricultural Land
             this.agriculturalLand = ((Number)json_data.get("Agricultural Land")).doubleValue();// Land Area
             this.landArea = ((Number)json_data.get("Land Area")).doubleValue();
         } catch (NullPointerException e) {

@@ -20,8 +20,10 @@ import corgis.finance.domain.Parking;
  */
 public class Transportation {
 	
+    // Money paid to other governments in support of subway, bus, surface rail and street railroad, and other passenger transportation systems., including public support of a private utility or railroad and intergovernmental subsidy payments. Excludes amounts paid by a parent government to its dependent transit utility.
     private Integer transitSubsidyIntergovernmental;
     private Airports airports;
+    // Total amount spent in support of subway, bus, surface rail and street railroad, and other passenger transportation systems., including public support of a private utility or railroad and intergovernmental subsidy payments. Excludes amounts paid by a parent government to its dependent transit utility.
     private Integer transitSubsidyTotalExpenditure;
     private Highways highways;
     private WaterTransport waterTransport;

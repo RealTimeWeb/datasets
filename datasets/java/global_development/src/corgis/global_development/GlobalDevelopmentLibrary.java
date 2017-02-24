@@ -15,7 +15,7 @@ import corgis.global_development.domain.*;
 import java.sql.*;
 
 /**
- * The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank.  Included is different data about urban development, agriculture and rural development, health, and infrastructure.       
+ * The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank.  Included is different data about urban development, agriculture and rural development, health, and infrastructure.   
 
  */
 public class GlobalDevelopmentLibrary {

@@ -16,15 +16,25 @@ import org.json.simple.JSONObject;
  */
 public class Intergovernmental {
 	
+    // Other kinds of money.
     private Integer intergovernmentalToCombinedAndUnallocable;
+    // Money paid to federal governments.
     private Integer intergovernmentalToFederal;
+    // Money paid to municipalities.
     private Integer intergovernmentalToMunicipalities;
+    // Money paid to counties.
     private Integer intergovernmentalToCounties;
+    // Money paid to states.
     private Integer intergovernmentalToState;
+    // Money paid to townships.
     private Integer intergovernmentalToTownships;
+    // Money paid to special districts.
     private Integer intergovernmentalToSpecialDistricts;
+    // Money paid overall.
     private Integer intergovernmentalExpenditure;
+    // Money paid to local governments.
     private Integer intergovernmentalToLocal;
+    // Money paid to school districts.
     private Integer intergovernmentalToSchoolDistricts;
     
     

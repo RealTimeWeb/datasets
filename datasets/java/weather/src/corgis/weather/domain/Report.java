@@ -19,7 +19,7 @@ import corgis.weather.domain.Data;
  */
 public class Report {
 	
-    // This is a list of strings. An empty list represents no significant weather to report for that day
+    // This is a list of strings. An empty list represents no significant weather to report for that day.
     private ArrayList<String> weatherConditions;
     private Date date;
     private Station station;

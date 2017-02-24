@@ -10,15 +10,29 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import corgis.construction_permits.domain.NumberOfPermits;
 import corgis.construction_permits.domain.Period;
+import corgis.construction_permits.domain.Valuations;
 
 /**
  * 
  */
 public class Permit {
 	
+    private NumberOfPermits numberOfPermits;
     private Period period;
-    private ArrayList<Locations> locations;
+    // In 1000's of units
+    private Valuations valuations;
+    private String name;
+    
+    
+    /*
+     * @return 
+     */
+    public NumberOfPermits getNumberOfPermits() {
+        return this.numberOfPermits;
+    }
+    
     
     
     /*
@@ -33,8 +47,17 @@ public class Permit {
     /*
      * @return 
      */
-    public ArrayList<Locations> getLocations() {
-        return this.locations;
+    public Valuations getValuations() {
+        return this.valuations;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public String getName() {
+        return this.name;
     }
     
     
@@ -46,7 +69,7 @@ public class Permit {
 	 * @return String
 	 */
 	public String toString() {
-		return "Permit[" +period+", "+locations+"]";
+		return "Permit[" +numberOfPermits+", "+period+", "+valuations+", "+name+"]";
 	}
 	
 	/**
@@ -54,13 +77,11 @@ public class Permit {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Permit(JSONObject json_data) {
-        try {// period
-            this.period = new Period((JSONObject)json_data.get("period"));// locations
-            this.locations = new ArrayList<Locations>();
-            Iterator<Object> locationsIter = ((List<Object>)json_data.get("locations")).iterator();
-            while (locationsIter.hasNext()) {
-                this.locations.add(new Locations((JSONObject)locationsIter.next()));
-            }
+        try {// Number of Permits
+            this.numberOfPermits = new NumberOfPermits((JSONObject)json_data.get("Number of Permits"));// Period
+            this.period = new Period((JSONObject)json_data.get("Period"));// Valuations
+            this.valuations = new Valuations((JSONObject)json_data.get("Valuations"));// Name
+            this.name = (String)json_data.get("Name");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Permit; a field was missing.");
     		e.printStackTrace();

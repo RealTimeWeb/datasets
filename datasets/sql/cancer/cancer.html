@@ -1,0 +1,155 @@
+
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="cancer.png" alt="Cancer" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Cancer SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Ryan Whitcomb</span><br>
+    <span class="text-muted">Version 1, created 6/17/2016</span><br>
+    <span class="text-muted">Tags: cancer, death, states, gender, race, population, crude rate</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+From the United States Cancer Statistics as part of the U.S. Center for Disease Control, the following data set focuses on the crude rate for all types of cancer reported for different demograpic groups.  Significant groupings include age, gender, race and geographical area.
+
+</p>
+
+<p>
+<i>http://www.cdc.gov/cancer/npcr/uscs/download_data.htm</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="cancer.sql?forcedownload=1" download="cancer.sql" target="_blank">
+        <strong>cancer.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>Age Adjusted CI Lower</td>
+        <td><code>Real number</code></td> 
+        <td>A number representing the expected lower bound for the cancer rate. It is unlikely that the actual rate is lower than this number. CI means "Confidence Interval".</td>
+        <td><code>160.6</code></td>
+    </tr>
+    
+    <tr>
+        <td>Age Adjusted CI Upper</td>
+        <td><code>Real number</code></td> 
+        <td>A number representing the expected upper bound for the cancer rate, adjusted for the age of the participants. It is unlikely that the actual rate is higher than this number. CI means "Confidence Interval".</td>
+        <td><code>170.5</code></td>
+    </tr>
+    
+    <tr>
+        <td>Age Adjusted Rate</td>
+        <td><code>Real number</code></td> 
+        <td>A number representing the expected cancer rate, adjusted for the age of the participants. An age-adjusted rate is a weighted average of the age-specific rates, where the weights are the proportions of persons in the corresponding age groups of a standard population. The potential confounding effect of age is reduced when comparing age-adjusted rates computed using the same standard population.</td>
+        <td><code>165.5</code></td>
+    </tr>
+    
+    <tr>
+        <td>Area</td>
+        <td><code>String</code></td> 
+        <td>The area of the country (typically the name of the state) for this report.</td>
+        <td><code>"Alabama"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Count</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of incidences of cancer in this particular group.</td>
+        <td><code>4366</code></td>
+    </tr>
+    
+    <tr>
+        <td>Crude CI Lower</td>
+        <td><code>Real number</code></td> 
+        <td>A number representing the lower bound for the Crude Rate. It is unlikely that the actual rate is lower than this number.</td>
+        <td><code>184.8</code></td>
+    </tr>
+    
+    <tr>
+        <td>Crude CI Upper</td>
+        <td><code>Real number</code></td> 
+        <td>A number representing the upper bound for the Crude Rate. It is unlikely that the actual rate is higher than this number.</td>
+        <td><code>196.1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Crude Rate</td>
+        <td><code>Real number</code></td> 
+        <td>The estimated number of people with cancer adjusted by the population. This adjustment makes it easy to compare cancer rates between different locations and over time.</td>
+        <td><code>190.4</code></td>
+    </tr>
+    
+    <tr>
+        <td>Event Type</td>
+        <td><code>String</code></td> 
+        <td>The type of event reported here - whether the participants lived or died.</td>
+        <td><code>"Mortality"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Population</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people present in this report.</td>
+        <td><code>2293259</code></td>
+    </tr>
+    
+    <tr>
+        <td>Race</td>
+        <td><code>String</code></td> 
+        <td>The races reported in this particular report.</td>
+        <td><code>"All Races"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Sex</td>
+        <td><code>String</code></td> 
+        <td>The gender of people in this particular report.</td>
+        <td><code>"Female"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>Integer number</code></td> 
+        <td>The 4-digit year that this report was created for.</td>
+        <td><code>1999</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+

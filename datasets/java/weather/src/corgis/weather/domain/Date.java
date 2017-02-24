@@ -16,9 +16,13 @@ import org.json.simple.JSONObject;
  */
 public class Date {
 	
+    // A full string representation of the date this report was made.
     private String full;
+    // The day of the month that this report was made.
     private Integer day;
+    // The month of the year that this report was made.
     private Integer month;
+    // The year that this report was made.
     private Integer year;
     
     

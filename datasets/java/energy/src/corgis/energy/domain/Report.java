@@ -10,23 +10,67 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.energy.domain.Data;
+import corgis.energy.domain.Consumption;
+import corgis.energy.domain.Price;
+import corgis.energy.domain.Production;
+import corgis.energy.domain.Expenditure;
 
 /**
  * 
  */
 public class Report {
 	
-    // Units are in quadrillion BTUs
-    private Data data;
+    private Consumption consumption;
+    private Price price;
+    // The state that this report was made for.
+    private String state;
+    private Production production;
+    private Expenditure expenditure;
+    // The year that this report was made.
     private Integer year;
     
     
     /*
      * @return 
      */
-    public Data getData() {
-        return this.data;
+    public Consumption getConsumption() {
+        return this.consumption;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Price getPrice() {
+        return this.price;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public String getState() {
+        return this.state;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Production getProduction() {
+        return this.production;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Expenditure getExpenditure() {
+        return this.expenditure;
     }
     
     
@@ -47,7 +91,7 @@ public class Report {
 	 * @return String
 	 */
 	public String toString() {
-		return "Report[" +data+", "+year+"]";
+		return "Report[" +consumption+", "+price+", "+state+", "+production+", "+expenditure+", "+year+"]";
 	}
 	
 	/**
@@ -55,9 +99,13 @@ public class Report {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Report(JSONObject json_data) {
-        try {// data
-            this.data = new Data((JSONObject)json_data.get("data"));// year
-            this.year = ((Number)json_data.get("year")).intValue();
+        try {// Consumption
+            this.consumption = new Consumption((JSONObject)json_data.get("Consumption"));// Price
+            this.price = new Price((JSONObject)json_data.get("Price"));// State
+            this.state = (String)json_data.get("State");// Production
+            this.production = new Production((JSONObject)json_data.get("Production"));// Expenditure
+            this.expenditure = new Expenditure((JSONObject)json_data.get("Expenditure"));// Year
+            this.year = ((Number)json_data.get("Year")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Report; a field was missing.");
     		e.printStackTrace();

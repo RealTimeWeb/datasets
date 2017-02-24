@@ -21,13 +21,19 @@ import corgis.finance.domain.Agriculture;
 public class NaturalResources {
 	
     private FishAndGame fishAndGame;
+    // Total amount spent on conservation, promotion, and development of natural resources, such as soil, water, forests, minerals, and wildlife. Includes irrigation, drainage, flood control, forestry and fire protection, soil reclamation, soil and water conservation, fish and game programs, and agricultural fairs.
     private Integer naturalResourcesTotal;
+    // Money paid to other governments for the conservation, promotion, and development of natural resources, such as soil, water, forests, minerals, and wildlife. Includes irrigation, drainage, flood control, forestry and fire protection, soil reclamation, soil and water conservation, fish and game programs, and agricultural fairs.
     private Integer naturalResourcesIntergovernmental;
+    // Total amount spent (Not elsewhere classified) on the conservation, promotion, and development of natural resources, such as soil, water, forests, minerals, and wildlife. Includes irrigation, drainage, flood control, forestry and fire protection, soil reclamation, soil and water conservation, fish and game programs, and agricultural fairs.
     private Integer naturalResourcesNecTotalExpenditure;
+    // Total amount spent on construction for the support of natural resources.
     private Integer naturalResourcesConstruction;
     private Parks parks;
     private Forestry forestry;
+    // Payments to employees, suppliers, contractors, beneficiaries, and other final recipients of government payments (i.e., all expenditure other than Intergovernmental expenditure) for conservation, promotion, and development of natural resources, such as soil, water, forests, minerals, and wildlife. Includes irrigation, drainage, flood control, forestry and fire protection, soil reclamation, soil and water conservation, fish and game programs, and agricultural fairs.
     private Integer naturalResourcesDirect;
+    // Total amount spent on equipment and land to support natural resources.
     private Integer naturalResourcesEquipmentAndLand;
     private Agriculture agriculture;
     

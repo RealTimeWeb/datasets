@@ -16,9 +16,13 @@ import org.json.simple.JSONObject;
  */
 public class Enforcement {
 	
+    // The number of aliens who were removed from the US without a prior criminal conviction (but were present in the USA illegaly).
     private Integer nonCriminal;
+    // The number of aliens who were removed from the US for having prior criminal convictions (e.g., immigration-related offenses, dangerous drug crimes, criminal traffic offenses, and assault).
     private Integer criminal;
+    // The number of aliens who entered without inspection between ports of entry and are apprehended by U.S. Border Patrol (USBP).
     private Integer apprehended;
+    // The number of aliens who were ineligible to receive a visa and ineligible to be admitted to the United States.
     private Integer inadmissable;
     
     

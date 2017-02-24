@@ -16,11 +16,17 @@ import org.json.simple.JSONObject;
  */
 public class Agriculture {
 	
+    // Money paid to other governments for the support of agriculture.
     private Integer agricultureIntergovernmental;
+    // Total amount spent on the support of agriculture.
     private Integer agricultureTotalExpenditure;
+    // Money paid to other governments for the federal agriculture farm income.
     private Integer federalAgricultureFarmIncomeIntergovernmental;
+    // Total amount spent on the federal agriculture farm income.
     private Integer federalAgricultureFarmIncomeTotal;
+    // Total amount spent on federal farm credit.
     private Integer federalFarmCreditTotal;
+    // Total amount spent on federal farm credit.
     private Integer federalFarmCreditIntergovernmental;
     
     

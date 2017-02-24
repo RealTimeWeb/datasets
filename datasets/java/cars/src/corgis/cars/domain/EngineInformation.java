@@ -17,11 +17,16 @@ import corgis.cars.domain.EngineStatistics;
  */
 public class EngineInformation {
 	
+    // The full name of this type of transmission, based on its Classification and number of forward gears.
     private String transmission;
+    // How many cylinders are in this engine. Most cars are either a 6-cylinder or an 8-cylinder.
     private String engineType;
     private EngineStatistics engineStatistics;
+    // Whether this is a hybrid engine or not - that is, if it uses both an internal combustion engine and an electric motor.
     private Boolean hybrid;
+    // The number of forward gears. If no information is available, it is coded as 0.
     private Integer numberOfForwardGears;
+    // A string representing whether this is "Rear-wheel drive", "Front-wheel drive", or "All-wheel drive".
     private String driveline;
     
     

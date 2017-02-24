@@ -113,10 +113,10 @@ public class AirlinesLibrary {
                 String raw_result = rs.getString(1);
                 Airline parsed = null;
                 if (test) {
-                    parsed = new Airline(((JSONObject)this.parser.parse(raw_result)));
+                    parsed = new Airports(((JSONObject)this.parser.parse(raw_result)));
                     
                 } else {
-                    parsed = new Airline(((JSONObject)this.parser.parse(raw_result)));
+                    parsed = new Airports(((JSONObject)this.parser.parse(raw_result)));
                     
                 }
                 

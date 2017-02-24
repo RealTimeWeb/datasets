@@ -17,6 +17,9 @@ State Demographics CSV Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -36,20 +39,6 @@ State Demographics CSV Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -84,7 +73,7 @@ State Demographics CSV Library (CORGIS Datasets Project)
     
     <h3 id="overview">Overview</h3>
 <p>
-The following data set is information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau.  Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.
+The following data set is summarized information obtained about states in the United States from 2007 through 2014 through the United States Census Bureau. However, this data is not available for these years; just the summarized data as of 2015. Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.
 
 </p>
 
@@ -116,7 +105,373 @@ The following data set is information obtained about states in the United States
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>2010 Population</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>308745538</code></td>
+    </tr>
+    
+    <tr>
+        <td>2014 Population</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>318857056</code></td>
+    </tr>
+    
+    <tr>
+        <td>Accommodation and Food Services Sales</td>
+        <td><code>Integer number</code></td> 
+        <td>$100,000 of dollars</td>
+        <td><code>6137957</code></td>
+    </tr>
+    
+    <tr>
+        <td>American Indian and Alaska Native Alone</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>1.2</code></td>
+    </tr>
+    
+    <tr>
+        <td>American Indian-Owned</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>Asian Alone</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>5.4</code></td>
+    </tr>
+    
+    <tr>
+        <td>Asian-Owned</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>5.7</code></td>
+    </tr>
+    
+    <tr>
+        <td>Bachelor's Degree or Higher</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>28.8</code></td>
+    </tr>
+    
+    <tr>
+        <td>Black Alone</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>13.2</code></td>
+    </tr>
+    
+    <tr>
+        <td>Black-Owned</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>7.1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Building Permits</td>
+        <td><code>Integer number</code></td> 
+        <td>2014</td>
+        <td><code>1046363</code></td>
+    </tr>
+    
+    <tr>
+        <td>Foreign Born</td>
+        <td><code>Real number</code></td> 
+        <td>percent 2009-2013</td>
+        <td><code>12.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>High School or Higher</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>86.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Hispanic or Latino</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>17.4</code></td>
+    </tr>
+    
+    <tr>
+        <td>Hispanic-Owned</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>8.3</code></td>
+    </tr>
+    
+    <tr>
+        <td>Homeownership Rate</td>
+        <td><code>Real number</code></td> 
+        <td>2009-2013</td>
+        <td><code>64.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>Households</td>
+        <td><code>Integer number</code></td> 
+        <td>2009-2013</td>
+        <td><code>115610216</code></td>
+    </tr>
+    
+    <tr>
+        <td>Housing Units</td>
+        <td><code>Integer number</code></td> 
+        <td>2014</td>
+        <td><code>133957180</code></td>
+    </tr>
+    
+    <tr>
+        <td>Land Area</td>
+        <td><code>Real number</code></td> 
+        <td>Square Miles, 2010</td>
+        <td><code>3531905.43</code></td>
+    </tr>
+    
+    <tr>
+        <td>Language Other than English at Home</td>
+        <td><code>Real number</code></td> 
+        <td>age 5+, percent, 2009-2013</td>
+        <td><code>20.7</code></td>
+    </tr>
+    
+    <tr>
+        <td>Living in Same House +1 Years</td>
+        <td><code>Real number</code></td> 
+        <td>percent, 2009-2013</td>
+        <td><code>84.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>Manufacturers Shipments</td>
+        <td><code>Integer number</code></td> 
+        <td>$100,000 of dollars, 2007</td>
+        <td><code>53194563</code></td>
+    </tr>
+    
+    <tr>
+        <td>Mean Travel Time to Work</td>
+        <td><code>Real number</code></td> 
+        <td>minutes, workers aged 16+, 2009-2013</td>
+        <td><code>25.5</code></td>
+    </tr>
+    
+    <tr>
+        <td>Median Houseold Income</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>53046</code></td>
+    </tr>
+    
+    <tr>
+        <td>Median Value of Owner-Occupied Units</td>
+        <td><code>Integer number</code></td> 
+        <td>2009-2013</td>
+        <td><code>176700</code></td>
+    </tr>
+    
+    <tr>
+        <td>Merchant Wholesaler Sales</td>
+        <td><code>Integer number</code></td> 
+        <td>$100,000 of dollars</td>
+        <td><code>41742865</code></td>
+    </tr>
+    
+    <tr>
+        <td>Native Hawaiian and Other Pacific Islander Alone</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.2</code></td>
+    </tr>
+    
+    <tr>
+        <td>Native Hawaiian and Other Pacific Islander-Owned</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Nonemployer Establishments</td>
+        <td><code>Integer number</code></td> 
+        <td>2013</td>
+        <td><code>23005620</code></td>
+    </tr>
+    
+    <tr>
+        <td>Per Capita Income</td>
+        <td><code>Integer number</code></td> 
+        <td>2013 dollars</td>
+        <td><code>28155</code></td>
+    </tr>
+    
+    <tr>
+        <td>Percent 65 and Older</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>14.5</code></td>
+    </tr>
+    
+    <tr>
+        <td>Percent Female</td>
+        <td><code>Real number</code></td> 
+        <td>2014</td>
+        <td><code>50.8</code></td>
+    </tr>
+    
+    <tr>
+        <td>Percent Under 18 Years</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>23.1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Percent Under 5 Years</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>6.2</code></td>
+    </tr>
+    
+    <tr>
+        <td>Persons Below Poverty Level</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>15.4</code></td>
+    </tr>
+    
+    <tr>
+        <td>Persons per Household</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>2.63</code></td>
+    </tr>
+    
+    <tr>
+        <td>Population Percent Change</td>
+        <td><code>Real number</code></td> 
+        <td>April 1, 2010 to July 1, 2014</td>
+        <td><code>3.3</code></td>
+    </tr>
+    
+    <tr>
+        <td>Population per Square Mile</td>
+        <td><code>Real number</code></td> 
+        <td>2010</td>
+        <td><code>87.4</code></td>
+    </tr>
+    
+    <tr>
+        <td>Private Non-farm Employment</td>
+        <td><code>Integer number</code></td> 
+        <td>2013</td>
+        <td><code>118266253</code></td>
+    </tr>
+    
+    <tr>
+        <td>Private Non-farm Employment Percent Change</td>
+        <td><code>Real number</code></td> 
+        <td>2012-2013</td>
+        <td><code>2.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Private Non-farm Establishments</td>
+        <td><code>Integer number</code></td> 
+        <td>2013</td>
+        <td><code>7488353</code></td>
+    </tr>
+    
+    <tr>
+        <td>Retail Sales</td>
+        <td><code>Integer number</code></td> 
+        <td>$100,000 of dollars</td>
+        <td><code>39176634</code></td>
+    </tr>
+    
+    <tr>
+        <td>Retail Sales per Capita</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>12990</code></td>
+    </tr>
+    
+    <tr>
+        <td>State</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"United States"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Total</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>27092908</code></td>
+    </tr>
+    
+    <tr>
+        <td>Two or More Races</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>2.5</code></td>
+    </tr>
+    
+    <tr>
+        <td>Units in Multi-Unit Structures</td>
+        <td><code>Real number</code></td> 
+        <td>percent, 2009-2013</td>
+        <td><code>26.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Veterans</td>
+        <td><code>Integer number</code></td> 
+        <td>2009-2013</td>
+        <td><code>21263779</code></td>
+    </tr>
+    
+    <tr>
+        <td>White Alone</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>77.4</code></td>
+    </tr>
+    
+    <tr>
+        <td>White Alone, not Hispanic or Latino</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>62.1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Women-Owned</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>28.8</code></td>
+    </tr>
+    
+    
     </table>
     
     

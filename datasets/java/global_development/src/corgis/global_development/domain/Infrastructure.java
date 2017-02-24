@@ -17,9 +17,9 @@ import org.json.simple.JSONObject;
 public class Infrastructure {
 	
     private Double telephoneLines;
-    private Double mobileCellularSubscriptionsPerOnezerozeroPeople;
-    private Double telephoneLinesPerOnezerozeroPeople;
     private Double mobileCellularSubscriptions;
+    private Double telephoneLinesPerOnezerozeroPeople;
+    private Double mobileCellularSubscriptionsPerOnezerozeroPeople;
     
     
     /*
@@ -34,8 +34,8 @@ public class Infrastructure {
     /*
      * @return 
      */
-    public Double getMobileCellularSubscriptionsPerOnezerozeroPeople() {
-        return this.mobileCellularSubscriptionsPerOnezerozeroPeople;
+    public Double getMobileCellularSubscriptions() {
+        return this.mobileCellularSubscriptions;
     }
     
     
@@ -52,8 +52,8 @@ public class Infrastructure {
     /*
      * @return 
      */
-    public Double getMobileCellularSubscriptions() {
-        return this.mobileCellularSubscriptions;
+    public Double getMobileCellularSubscriptionsPerOnezerozeroPeople() {
+        return this.mobileCellularSubscriptionsPerOnezerozeroPeople;
     }
     
     
@@ -65,7 +65,7 @@ public class Infrastructure {
 	 * @return String
 	 */
 	public String toString() {
-		return "Infrastructure[" +telephoneLines+", "+mobileCellularSubscriptionsPerOnezerozeroPeople+", "+telephoneLinesPerOnezerozeroPeople+", "+mobileCellularSubscriptions+"]";
+		return "Infrastructure[" +telephoneLines+", "+mobileCellularSubscriptions+", "+telephoneLinesPerOnezerozeroPeople+", "+mobileCellularSubscriptionsPerOnezerozeroPeople+"]";
 	}
 	
 	/**
@@ -74,10 +74,10 @@ public class Infrastructure {
 	 */
     public Infrastructure(JSONObject json_data) {
         try {// Telephone Lines
-            this.telephoneLines = ((Number)json_data.get("Telephone Lines")).doubleValue();// Mobile Cellular Subscriptions per 100 People
-            this.mobileCellularSubscriptionsPerOnezerozeroPeople = ((Number)json_data.get("Mobile Cellular Subscriptions per 100 People")).doubleValue();// Telephone Lines per 100 People
-            this.telephoneLinesPerOnezerozeroPeople = ((Number)json_data.get("Telephone Lines per 100 People")).doubleValue();// Mobile Cellular Subscriptions
-            this.mobileCellularSubscriptions = ((Number)json_data.get("Mobile Cellular Subscriptions")).doubleValue();
+            this.telephoneLines = ((Number)json_data.get("Telephone Lines")).doubleValue();// Mobile Cellular Subscriptions
+            this.mobileCellularSubscriptions = ((Number)json_data.get("Mobile Cellular Subscriptions")).doubleValue();// Telephone Lines per 100 People
+            this.telephoneLinesPerOnezerozeroPeople = ((Number)json_data.get("Telephone Lines per 100 People")).doubleValue();// Mobile Cellular Subscriptions per 100 People
+            this.mobileCellularSubscriptionsPerOnezerozeroPeople = ((Number)json_data.get("Mobile Cellular Subscriptions per 100 People")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Infrastructure; a field was missing.");
     		e.printStackTrace();

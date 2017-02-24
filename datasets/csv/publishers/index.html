@@ -17,6 +17,9 @@ Publishers CSV Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -36,20 +39,6 @@ Publishers CSV Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -84,7 +73,7 @@ Publishers CSV Library (CORGIS Datasets Project)
     
     <h3 id="overview">Overview</h3>
 <p>
-From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking.
+From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking. This ranking is used to sort the books. Keep in mind that this data is NOT time-oriented; it is a collection of a bunch of different books, not a book over time.
 
 </p>
 
@@ -116,7 +105,107 @@ From a newspaper article about analyzing amazon e-book sales by genre and publis
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>amazon revenue</td>
+        <td><code>Real number</code></td> 
+        <td>The amount of money that Amazon made per day on this book, in dollars.</td>
+        <td><code>6832.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>author revenue</td>
+        <td><code>Real number</code></td> 
+        <td>The amount of money that the author made per day on this book, in dollars.</td>
+        <td><code>6832.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>average rating</td>
+        <td><code>Real number</code></td> 
+        <td>The average rating of this book, on a five-point scale, as determined by customers.</td>
+        <td><code>4.57</code></td>
+    </tr>
+    
+    <tr>
+        <td>genre</td>
+        <td><code>String</code></td> 
+        <td>The genre of the book, either "fiction", "nonfiction", "genre fiction", "children", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.</td>
+        <td><code>"genre fiction"</code></td>
+    </tr>
+    
+    <tr>
+        <td>gross sales</td>
+        <td><code>Real number</code></td> 
+        <td>The total amount of money that was made per day on this book, in dollars.</td>
+        <td><code>34160.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>name</td>
+        <td><code>String</code></td> 
+        <td>The name of the publisher.</td>
+        <td><code>"Katherine Tegen Books"</code></td>
+    </tr>
+    
+    <tr>
+        <td>publisher revenue</td>
+        <td><code>Real number</code></td> 
+        <td>The amount of money that the publisher made per day on this book, in dollars.</td>
+        <td><code>20496.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>sale price</td>
+        <td><code>Real number</code></td> 
+        <td>The cost of this book on Amazon, in dollars.</td>
+        <td><code>4.88</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales rank</td>
+        <td><code>Integer number</code></td> 
+        <td>The ranking of this book, compared to other books. A higher rank indicates a more popular book.</td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>sold by</td>
+        <td><code>String</code></td> 
+        <td>The actual company that sold this book, as oppposed to the company that published it.</td>
+        <td><code>"HarperCollins Publishers"</code></td>
+    </tr>
+    
+    <tr>
+        <td>total reviews</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people who have reviewed this book.</td>
+        <td><code>9604</code></td>
+    </tr>
+    
+    <tr>
+        <td>type</td>
+        <td><code>String</code></td> 
+        <td>The type, or size, of the publisher (e.g, "indie", "small", "big five", etc.)</td>
+        <td><code>"big five"</code></td>
+    </tr>
+    
+    <tr>
+        <td>units sold</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of books sold per day.</td>
+        <td><code>7000</code></td>
+    </tr>
+    
+    
     </table>
     
     

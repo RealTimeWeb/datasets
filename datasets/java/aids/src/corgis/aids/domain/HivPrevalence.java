@@ -16,11 +16,11 @@ import org.json.simple.JSONObject;
  */
 public class HivPrevalence {
 	
-    // 15-24 Years Old
+    // The percentage of the population of Young Men (15-24 years old) suffering from AIDS in this year.
     private Double youngMen;
-    // 15-49 Years Old
+    // The percentage of the population of Young Men (15-49 years old) suffering from AIDS in this year.
     private Double adults;
-    // 15-24 Years Old
+    // The percentage of the population of Young Women (15-24 years old) suffering from AIDS in this year.
     private Double youngWomen;
     
     

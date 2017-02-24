@@ -16,9 +16,13 @@ import org.json.simple.JSONObject;
  */
 public class Welfare {
 	
+    // Total amount spent on welfare institutions.
     private Integer welfareInstitutionTotalExpenditure;
+    // Total amount spent on welfare vendor payments.
     private Integer welfareVendorPaymentsTotal;
+    // Total amount spent on welfare (not elsewhere classified).
     private Integer welfareNecTotalExpenditure;
+    // Money paid to other governments for welfare not elsewhere classified.
     private Integer welfareNecIntergovernmental;
     
     

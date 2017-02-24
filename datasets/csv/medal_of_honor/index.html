@@ -17,6 +17,9 @@ Medal of Honor CSV Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -36,20 +39,6 @@ Medal of Honor CSV Library (CORGIS Datasets Project)
     
     
     <script>
-    var user_id = "";
-    if (localStorage.getItem('user_id') !== null) {
-        user_id = localStorage.getItem('user_id');
-    }
-    function log(action, body) {
-        $.post('https://think.cs.vt.edu/blockpy/services/log', {
-                    'user_id': user_id,
-                    'event': 'corgis',
-                    'action': action,
-                    'body': body
-                }, function(data) {
-                    console.log(data);
-                });
-    }
     $(document).ready(function() {
         /*
         log('load', '{ metadata.name }');
@@ -117,7 +106,177 @@ The dataset was collected from the official military site, and includes records 
     
     <h3 id="usage">Field Descriptions</h3>
     
-    <table>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>General Order number</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>accredited to</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>""</code></td>
+    </tr>
+    
+    <tr>
+        <td>awarded.date.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>6</code></td>
+    </tr>
+    
+    <tr>
+        <td>awarded.date.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>2</code></td>
+    </tr>
+    
+    <tr>
+        <td>awarded.date.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1865</code></td>
+    </tr>
+    
+    <tr>
+        <td>birth.date.day</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>birth.date.month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>birth.date.year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>-1</code></td>
+    </tr>
+    
+    <tr>
+        <td>citation</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Under a heavy fire from the enemy carried off the field a commissioned officer who was severely wounded and also led a charge on the enemy's rifle pits."</code></td>
+    </tr>
+    
+    <tr>
+        <td>company</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Company B"</code></td>
+    </tr>
+    
+    <tr>
+        <td>death</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>True</code></td>
+    </tr>
+    
+    <tr>
+        <td>division</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1st New Jersey Cavalry"</code></td>
+    </tr>
+    
+    <tr>
+        <td>entered service at</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Buffalo, N.Y."</code></td>
+    </tr>
+    
+    <tr>
+        <td>full</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"1865-2-6"</code></td>
+    </tr>
+    
+    <tr>
+        <td>issued</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"01/03/1906"</code></td>
+    </tr>
+    
+    <tr>
+        <td>latitude</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>38</code></td>
+    </tr>
+    
+    <tr>
+        <td>link</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"http://www.cmohs.org/recipient-detail/1176/sagelhurst-john-c.php"</code></td>
+    </tr>
+    
+    <tr>
+        <td>location name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Buffalo, N.Y."</code></td>
+    </tr>
+    
+    <tr>
+        <td>location.name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Hatchers Run Court, Stafford, VA 22554, USA"</code></td>
+    </tr>
+    
+    <tr>
+        <td>longitude</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>-77</code></td>
+    </tr>
+    
+    <tr>
+        <td>name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Sagelhurst, John C."</code></td>
+    </tr>
+    
+    <tr>
+        <td>organization</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"U.S. Army"</code></td>
+    </tr>
+    
+    <tr>
+        <td>rank</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Sergeant"</code></td>
+    </tr>
+    
+    
     </table>
     
     

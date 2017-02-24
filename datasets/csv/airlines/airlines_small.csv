@@ -1,101 +1,101 @@
-# of delays.carrier,# of delays.late aircraft,# of delays.national aviation system,# of delays.security,# of delays.weather,airport.code,airport.name,cancelled,carrier.code,carrier.name,delayed,diverted,flights.total,label,minutes delayed.carrier,minutes delayed.late aircraft,minutes delayed.national aviation system,minutes delayed.security,minutes delayed.total,minutes delayed.weather,month,on time,year
-34,18,105,2,28,ATL,"Atlanta, GA: Hartsfield-Jackson Atlanta International",5,AA,American Airlines Inc.,186,0,752,2003/6,1367,1269,3817,139,8314,1722,6,561,2003
-69,46,84,2,24,BOS,"Boston, MA: Logan International",7,AA,American Airlines Inc.,225,0,1266,2003/6,4201,3043,3067,45,12139,1783,6,1034,2003
-18,25,38,0,20,BWI,"Baltimore, MD: Baltimore/Washington International Thurgood Marshall",1,AA,American Airlines Inc.,101,1,593,2003/6,1058,1600,1708,0,5698,1332,6,490,2003
-17,10,10,2,10,CLT,"Charlotte, NC: Charlotte Douglas International",4,AA,American Airlines Inc.,48,0,203,2003/6,968,653,558,127,3048,742,6,151,2003
-43,26,53,0,25,DCA,"Washington, DC: Ronald Reagan Washington National",5,AA,American Airlines Inc.,147,2,947,2003/6,2048,1566,2767,3,7868,1484,6,793,2003
-43,24,70,1,19,DEN,"Denver, CO: Denver International",1,AA,American Airlines Inc.,157,1,750,2003/6,2098,1329,2780,46,7446,1193,6,591,2003
-393,601,1070,14,67,DFW,"Dallas/Fort Worth, TX: Dallas/Fort Worth International",153,AA,American Airlines Inc.,2144,66,12276,2003/6,31999,36086,43864,459,117195,4787,6,9913,2003
-22,18,30,0,11,DTW,"Detroit, MI: Detroit Metro Wayne County",3,AA,American Airlines Inc.,82,0,576,2003/6,1029,1043,1059,0,3922,791,6,491,2003
-41,23,77,0,8,EWR,"Newark, NJ: Newark Liberty International",7,AA,American Airlines Inc.,149,4,835,2003/6,2092,1705,3383,0,7783,603,6,675,2003
-40,24,71,1,10,FLL,"Fort Lauderdale, FL: Fort Lauderdale-Hollywood International",1,AA,American Airlines Inc.,146,0,658,2003/6,1765,1599,2318,18,6181,481,6,511,2003
-18,10,33,0,16,IAD,"Washington, DC: Washington Dulles International",2,AA,American Airlines Inc.,76,3,445,2003/6,997,680,1225,0,3661,759,6,364,2003
-18,17,43,0,13,IAH,"Houston, TX: George Bush Intercontinental/Houston",6,AA,American Airlines Inc.,90,0,397,2003/6,828,899,1476,9,3791,579,6,301,2003
-61,34,95,7,15,JFK,"New York, NY: John F. Kennedy International",5,AA,American Airlines Inc.,212,4,1147,2003/6,3496,2333,3596,203,10785,1157,6,926,2003
-60,33,66,5,22,LAS,"Las Vegas, NV: McCarran International",5,AA,American Airlines Inc.,186,0,765,2003/6,3100,1770,2442,168,8904,1424,6,574,2003
-155,107,224,4,44,LAX,"Los Angeles, CA: Los Angeles International",9,AA,American Airlines Inc.,533,1,2462,2003/6,9761,7671,7404,124,27823,2863,6,1919,2003
-68,79,203,1,38,LGA,"New York, NY: LaGuardia",22,AA,American Airlines Inc.,389,12,1896,2003/6,5301,5062,10861,12,23552,2316,6,1473,2003
-54,40,74,1,23,MCO,"Orlando, FL: Orlando International",1,AA,American Airlines Inc.,192,1,1000,2003/6,3134,2516,2613,12,9737,1462,6,806,2003
-7,5,9,0,8,MDW,"Chicago, IL: Chicago Midway International",1,AA,American Airlines Inc.,29,0,214,2003/6,312,235,305,0,1585,733,6,184,2003
-146,131,391,2,53,MIA,"Miami, FL: Miami International",20,AA,American Airlines Inc.,723,13,3120,2003/6,7978,8316,16535,66,35978,3083,6,2364,2003
-23,25,61,0,8,MSP,"Minneapolis, MN: Minneapolis-St Paul International",11,AA,American Airlines Inc.,116,1,674,2003/6,1145,1360,2012,1,4941,423,6,546,2003
-226,262,763,9,49,ORD,"Chicago, IL: Chicago O'Hare International",41,AA,American Airlines Inc.,1309,14,7628,2003/6,19608,14219,34502,403,72172,3440,6,6264,2003
-12,10,15,0,10,PDX,"Portland, OR: Portland International",1,AA,American Airlines Inc.,46,0,247,2003/6,600,773,478,0,2257,406,6,200,2003
-42,20,76,1,12,PHL,"Philadelphia, PA: Philadelphia International",7,AA,American Airlines Inc.,151,1,759,2003/6,2256,1315,3559,21,7949,798,6,600,2003
-30,17,44,1,13,PHX,"Phoenix, AZ: Phoenix Sky Harbor International",2,AA,American Airlines Inc.,105,0,474,2003/6,1405,942,1349,13,4503,794,6,367,2003
-32,21,50,0,13,SAN,"San Diego, CA: San Diego International",3,AA,American Airlines Inc.,115,0,617,2003/6,1585,1237,2043,0,5678,813,6,499,2003
-48,27,36,2,11,SEA,"Seattle, WA: Seattle/Tacoma International",3,AA,American Airlines Inc.,124,0,606,2003/6,2448,1878,1447,40,7378,1565,6,479,2003
-55,47,104,1,16,SFO,"San Francisco, CA: San Francisco International",9,AA,American Airlines Inc.,224,0,1028,2003/6,2756,3151,3886,39,10939,1107,6,795,2003
-12,11,24,1,6,SLC,"Salt Lake City, UT: Salt Lake City International",2,AA,American Airlines Inc.,53,0,265,2003/6,459,619,922,56,2350,294,6,210,2003
-30,24,60,1,16,TPA,"Tampa, FL: Tampa International",3,AA,American Airlines Inc.,131,0,540,2003/6,1267,1320,2413,51,5989,938,6,406,2003
-3,1,11,0,0,BOS,"Boston, MA: Logan International",0,AS,Alaska Airlines Inc.,16,0,60,2003/6,460,19,303,14,796,0,6,44,2003
-2,0,1,0,0,DCA,"Washington, DC: Ronald Reagan Washington National",0,AS,Alaska Airlines Inc.,3,1,30,2003/6,89,0,45,0,134,0,6,26,2003
-10,10,13,0,0,DEN,"Denver, CO: Denver International",0,AS,Alaska Airlines Inc.,33,0,166,2003/6,372,419,288,0,1079,0,6,133,2003
-4,2,18,1,0,EWR,"Newark, NJ: Newark Liberty International",0,AS,Alaska Airlines Inc.,25,0,54,2003/6,340,63,546,55,1004,0,6,29,2003
-5,1,8,1,0,IAD,"Washington, DC: Washington Dulles International",0,AS,Alaska Airlines Inc.,14,0,60,2003/6,291,15,246,9,561,0,6,46,2003
-27,23,4,1,0,LAS,"Las Vegas, NV: McCarran International",1,AS,Alaska Airlines Inc.,55,0,363,2003/6,1824,573,158,8,2563,0,6,307,2003
-34,23,5,0,0,LAX,"Los Angeles, CA: Los Angeles International",14,AS,Alaska Airlines Inc.,62,0,704,2003/6,1536,764,107,0,2407,0,6,628,2003
-4,0,1,0,0,MCO,"Orlando, FL: Orlando International",0,AS,Alaska Airlines Inc.,5,1,30,2003/6,125,0,30,0,155,0,6,24,2003
-3,0,6,0,0,MIA,"Miami, FL: Miami International",0,AS,Alaska Airlines Inc.,9,0,30,2003/6,197,0,163,0,360,0,6,21,2003
-0,2,1,0,0,ORD,"Chicago, IL: Chicago O'Hare International",0,AS,Alaska Airlines Inc.,3,0,30,2003/6,0,166,30,0,196,0,6,27,2003
-54,86,66,6,1,PDX,"Portland, OR: Portland International",12,AS,Alaska Airlines Inc.,213,0,1287,2003/6,2267,4300,1719,146,8521,89,6,1062,2003
-18,17,5,1,0,PHX,"Phoenix, AZ: Phoenix Sky Harbor International",0,AS,Alaska Airlines Inc.,40,0,247,2003/6,1049,493,114,14,1670,0,6,207,2003
-27,25,7,0,0,SAN,"San Diego, CA: San Diego International",3,AS,Alaska Airlines Inc.,60,0,373,2003/6,1913,1203,207,0,3323,0,6,310,2003
-193,312,209,23,4,SEA,"Seattle, WA: Seattle/Tacoma International",58,AS,Alaska Airlines Inc.,740,8,4267,2003/6,11009,15460,5851,720,33252,212,6,3461,2003
-21,13,35,1,0,SFO,"San Francisco, CA: San Francisco International",5,AS,Alaska Airlines Inc.,70,0,383,2003/6,1198,603,1607,105,3513,0,6,308,2003
-3,2,11,1,0,ATL,"Atlanta, GA: Hartsfield-Jackson Atlanta International",0,B6,JetBlue Airways,16,0,90,2003/6,103,36,226,17,382,0,6,74,2003
-4,2,1,0,0,DEN,"Denver, CO: Denver International",0,B6,JetBlue Airways,6,0,30,2003/6,123,42,28,0,193,0,6,24,2003
-35,12,21,2,2,FLL,"Fort Lauderdale, FL: Fort Lauderdale-Hollywood International",0,B6,JetBlue Airways,72,1,401,2003/6,2152,654,797,54,3794,137,6,328,2003
-11,7,12,0,1,IAD,"Washington, DC: Washington Dulles International",0,B6,JetBlue Airways,31,0,210,2003/6,677,357,337,21,1416,24,6,179,2003
-146,95,88,12,3,JFK,"New York, NY: John F. Kennedy International",0,B6,JetBlue Airways,344,4,2040,2003/6,9995,4322,3602,316,18338,103,6,1692,2003
-15,2,1,0,0,LAS,"Las Vegas, NV: McCarran International",0,B6,JetBlue Airways,18,0,180,2003/6,822,56,26,0,904,0,6,162,2003
-19,4,5,1,0,MCO,"Orlando, FL: Orlando International",0,B6,JetBlue Airways,29,0,190,2003/6,979,184,117,29,1309,0,6,161,2003
-0,0,0,0,0,SAN,"San Diego, CA: San Diego International",0,B6,JetBlue Airways,0,0,5,2003/6,0,0,0,0,0,0,6,5,2003
-1,1,2,0,0,SEA,"Seattle, WA: Seattle/Tacoma International",0,B6,JetBlue Airways,4,0,30,2003/6,40,41,33,2,116,0,6,26,2003
-5,2,0,1,0,SLC,"Salt Lake City, UT: Salt Lake City International",0,B6,JetBlue Airways,8,0,60,2003/6,140,41,11,24,216,0,6,52,2003
-12,3,7,0,1,TPA,"Tampa, FL: Tampa International",0,B6,JetBlue Airways,22,1,150,2003/6,729,106,204,0,1181,142,6,127,2003
-12,17,63,0,7,ATL,"Atlanta, GA: Hartsfield-Jackson Atlanta International",0,CO,Continental Air Lines Inc.,99,0,376,2003/6,546,1025,2740,0,4859,548,6,277,2003
-16,16,53,0,5,BOS,"Boston, MA: Logan International",1,CO,Continental Air Lines Inc.,90,0,559,2003/6,851,681,2147,0,3873,194,6,468,2003
-9,6,20,0,2,BWI,"Baltimore, MD: Baltimore/Washington International Thurgood Marshall",0,CO,Continental Air Lines Inc.,37,1,271,2003/6,315,175,1014,0,1614,110,6,233,2003
-1,2,10,0,0,CLT,"Charlotte, NC: Charlotte Douglas International",1,CO,Continental Air Lines Inc.,14,0,46,2003/6,77,93,443,0,664,51,6,31,2003
-4,8,36,0,2,DCA,"Washington, DC: Ronald Reagan Washington National",2,CO,Continental Air Lines Inc.,49,0,337,2003/6,100,521,1586,0,2375,168,6,286,2003
-17,17,36,0,5,DEN,"Denver, CO: Denver International",0,CO,Continental Air Lines Inc.,75,0,378,2003/6,833,1098,1398,0,3660,331,6,303,2003
-15,8,34,0,2,DFW,"Dallas/Fort Worth, TX: Dallas/Fort Worth International",1,CO,Continental Air Lines Inc.,59,1,327,2003/6,803,666,1634,0,3182,79,6,266,2003
-12,3,17,0,4,DTW,"Detroit, MI: Detroit Metro Wayne County",0,CO,Continental Air Lines Inc.,36,0,255,2003/6,716,98,497,0,1450,139,6,219,2003
-76,183,692,6,32,EWR,"Newark, NJ: Newark Liberty International",10,CO,Continental Air Lines Inc.,989,14,4602,2003/6,5500,11231,31794,371,50550,1654,6,3589,2003
-19,12,49,0,1,FLL,"Fort Lauderdale, FL: Fort Lauderdale-Hollywood International",0,CO,Continental Air Lines Inc.,81,1,361,2003/6,1083,834,1600,0,3553,36,6,279,2003
-1,1,6,0,0,IAD,"Washington, DC: Washington Dulles International",0,CO,Continental Air Lines Inc.,9,0,56,2003/6,41,81,266,0,411,23,6,47,2003
-132,314,635,10,29,IAH,"Houston, TX: George Bush Intercontinental/Houston",11,CO,Continental Air Lines Inc.,1120,75,7312,2003/6,10169,19041,24773,437,57179,2759,6,6106,2003
-0,0,3,0,0,JFK,"New York, NY: John F. Kennedy International",0,CO,Continental Air Lines Inc.,3,0,30,2003/6,0,0,71,0,71,0,6,27,2003
-20,21,47,0,3,LAS,"Las Vegas, NV: McCarran International",0,CO,Continental Air Lines Inc.,91,0,492,2003/6,1200,1120,1793,0,4297,184,6,401,2003
-30,15,51,0,3,LAX,"Los Angeles, CA: Los Angeles International",0,CO,Continental Air Lines Inc.,99,1,560,2003/6,1791,960,1815,0,4681,115,6,460,2003
-7,9,38,0,5,LGA,"New York, NY: LaGuardia",2,CO,Continental Air Lines Inc.,59,2,293,2003/6,290,478,2094,0,3058,196,6,230,2003
-26,15,48,0,3,MCO,"Orlando, FL: Orlando International",0,CO,Continental Air Lines Inc.,92,0,484,2003/6,1565,933,1560,0,4274,216,6,392,2003
-1,4,5,0,1,MDW,"Chicago, IL: Chicago Midway International",0,CO,Continental Air Lines Inc.,11,0,73,2003/6,48,136,108,0,334,42,6,62,2003
-12,9,33,0,3,MIA,"Miami, FL: Miami International",0,CO,Continental Air Lines Inc.,57,4,298,2003/6,621,827,1213,0,2784,123,6,237,2003
-9,9,13,0,4,MSP,"Minneapolis, MN: Minneapolis-St Paul International",0,CO,Continental Air Lines Inc.,35,0,260,2003/6,272,462,440,0,1394,220,6,225,2003
-8,17,56,0,4,ORD,"Chicago, IL: Chicago O'Hare International",1,CO,Continental Air Lines Inc.,86,1,441,2003/6,633,871,2404,0,4138,230,6,353,2003
-4,7,9,0,2,PDX,"Portland, OR: Portland International",0,CO,Continental Air Lines Inc.,22,0,106,2003/6,184,445,318,0,1010,63,6,84,2003
-7,5,21,0,1,PHL,"Philadelphia, PA: Philadelphia International",0,CO,Continental Air Lines Inc.,34,0,183,2003/6,428,388,1037,0,1898,45,6,149,2003
-16,10,21,0,2,PHX,"Phoenix, AZ: Phoenix Sky Harbor International",0,CO,Continental Air Lines Inc.,49,1,332,2003/6,973,977,831,0,2935,154,6,282,2003
-12,18,19,0,2,SAN,"San Diego, CA: San Diego International",0,CO,Continental Air Lines Inc.,52,0,256,2003/6,565,1267,758,0,2679,89,6,204,2003
-13,9,23,0,4,SEA,"Seattle, WA: Seattle/Tacoma International",0,CO,Continental Air Lines Inc.,50,0,334,2003/6,489,459,796,0,1953,209,6,284,2003
-11,16,52,0,5,SFO,"San Francisco, CA: San Francisco International",0,CO,Continental Air Lines Inc.,83,0,376,2003/6,558,1154,1972,0,3928,244,6,293,2003
-4,8,11,0,1,SLC,"Salt Lake City, UT: Salt Lake City International",0,CO,Continental Air Lines Inc.,24,0,99,2003/6,285,482,315,0,1127,45,6,75,2003
-19,12,33,0,1,TPA,"Tampa, FL: Tampa International",0,CO,Continental Air Lines Inc.,65,0,362,2003/6,922,618,1419,0,3038,79,6,297,2003
-18,55,40,0,7,BOS,"Boston, MA: Logan International",28,DH,Atlantic Coast Airlines,120,0,874,2003/6,956,2532,1584,0,5384,312,6,726,2003
-25,7,17,0,6,CLT,"Charlotte, NC: Charlotte Douglas International",3,DH,Atlantic Coast Airlines,55,0,227,2003/6,1188,386,575,0,2403,254,6,169,2003
-2,0,1,0,0,DCA,"Washington, DC: Ronald Reagan Washington National",0,DH,Atlantic Coast Airlines,3,0,30,2003/6,76,0,64,0,140,0,6,27,2003
-11,4,5,0,3,DTW,"Detroit, MI: Detroit Metro Wayne County",1,DH,Atlantic Coast Airlines,23,0,150,2003/6,433,303,217,0,1168,215,6,126,2003
-17,8,34,0,0,EWR,"Newark, NJ: Newark Liberty International",13,DH,Atlantic Coast Airlines,59,0,246,2003/6,849,445,2136,0,3454,24,6,174,2003
-128,163,251,1,28,IAD,"Washington, DC: Washington Dulles International",79,DH,Atlantic Coast Airlines,571,18,4411,2003/6,7020,11007,12919,22,33531,2563,6,3743,2003
-61,15,21,0,3,JFK,"New York, NY: John F. Kennedy International",8,DH,Atlantic Coast Airlines,101,0,442,2003/6,3071,736,779,0,4867,281,6,333,2003
-17,2,17,0,0,LGA,"New York, NY: LaGuardia",8,DH,Atlantic Coast Airlines,36,0,173,2003/6,1005,255,1079,0,2339,0,6,129,2003
-2,0,0,0,0,MDW,"Chicago, IL: Chicago Midway International",1,DH,Atlantic Coast Airlines,2,0,30,2003/6,79,0,0,0,79,0,6,27,2003
-117,112,431,1,14,ORD,"Chicago, IL: Chicago O'Hare International",76,DH,Atlantic Coast Airlines,675,4,4248,2003/6,7667,5696,20318,31,34735,1023,6,3493,2003
-30,15,26,0,3,PHL,"Philadelphia, PA: Philadelphia International",8,DH,Atlantic Coast Airlines,75,0,322,2003/6,1445,723,1266,0,3603,169,6,239,2003
-444,484,1646,4,82,ATL,"Atlanta, GA: Hartsfield-Jackson Atlanta International",69,DL,Delta Air Lines Inc.,2660,12,15676,2003/6,25938,25881,58002,143,113870,3906,6,12935,2003
-34,21,92,1,5,BOS,"Boston, MA: Logan International",7,DL,Delta Air Lines Inc.,153,0,1460,2003/6,1295,783,2481,34,4868,275,6,1300,2003
-27,17,40,0,2,BWI,"Baltimore, MD: Baltimore/Washington International Thurgood Marshall",1,DL,Delta Air Lines Inc.,86,0,407,2003/6,1492,971,1823,0,4348,62,6,320,2003
-12,3,25,0,0,CLT,"Charlotte, NC: Charlotte Douglas International",2,DL,Delta Air Lines Inc.,40,1,180,2003/6,479,297,1230,0,2006,0,6,137,2003
-28,20,98,0,0,DCA,"Washington, DC: Ronald Reagan Washington National",18,DL,Delta Air Lines Inc.,146,3,985,2003/6,1254,972,4359,0,6607,22,6,818,2003
+# of Delays.Carrier,# of Delays.Late Aircraft,# of Delays.National Aviation System,# of Delays.Security,# of Delays.Weather,Cancelled,Carriers.Total,Code,Delayed,Diverted,Flights.Total,Label,Minutes Delayed.Carrier,Minutes Delayed.Late Aircraft,Minutes Delayed.National Aviation System,Minutes Delayed.Security,Minutes Delayed.Total,Minutes Delayed.Weather,Month,Month Name,Name,On Time,Year
+1009,1275,3217,17,328,216,11,ATL,5843,27,30060,2003/06,61606,68335,118831,518,268764,19474,6,June,"Atlanta, GA: Hartsfield-Jackson Atlanta International",23974,2003
+374,495,685,3,66,138,14,BOS,1623,3,9639,2003/06,20319,28189,24400,99,77167,4160,6,June,"Boston, MA: Logan International",7875,2003
+296,477,389,8,78,29,11,BWI,1245,15,8287,2003/06,13635,26810,17556,278,64480,6201,6,June,"Baltimore, MD: Baltimore/Washington International Thurgood Marshall",6998,2003
+300,472,735,2,54,73,11,CLT,1562,14,8670,2003/06,14763,23379,23804,127,65865,3792,6,June,"Charlotte, NC: Charlotte Douglas International",7021,2003
+283,268,487,4,58,74,13,DCA,1100,18,6513,2003/06,13775,13712,20999,120,52747,4141,6,June,"Washington, DC: Ronald Reagan Washington National",5321,2003
+516,323,664,11,98,34,13,DEN,1611,22,11691,2003/06,26634,18969,23538,706,75428,5581,6,June,"Denver, CO: Denver International",10024,2003
+986,1390,2147,19,258,394,13,DFW,4798,133,27628,2003/06,70918,80714,90574,683,263521,20632,6,June,"Dallas/Fort Worth, TX: Dallas/Fort Worth International",22303,2003
+376,371,570,6,71,123,11,DTW,1395,9,11754,2003/06,21802,18715,16482,139,60667,3529,6,June,"Detroit, MI: Detroit Metro Wayne County",10227,2003
+322,519,1948,10,121,102,13,EWR,2921,42,12506,2003/06,20190,30905,91048,490,150513,7880,6,June,"Newark, NJ: Newark Liberty International",9441,2003
+247,256,427,5,34,13,11,FLL,967,10,4662,2003/06,12547,14600,14935,141,44303,2080,6,June,"Fort Lauderdale, FL: Fort Lauderdale-Hollywood International",3672,2003
+320,295,573,3,66,101,13,IAD,1256,35,8419,2003/06,16754,18074,25807,182,65529,4712,6,June,"Washington, DC: Washington Dulles International",7027,2003
+329,730,1405,15,123,91,12,IAH,2601,173,15551,2003/06,21782,43428,56414,577,134182,11981,6,June,"Houston, TX: George Bush Intercontinental/Houston",12686,2003
+376,226,394,21,28,24,11,JFK,1046,13,5778,2003/06,22029,11593,14103,659,50335,1951,6,June,"New York, NY: John F. Kennedy International",4695,2003
+511,678,624,17,64,39,12,LAS,1893,6,11759,2003/06,24293,31043,19561,808,79533,3828,6,June,"Las Vegas, NV: McCarran International",9821,2003
+830,765,842,37,97,101,12,LAX,2571,10,18462,2003/06,40089,39655,26162,2559,114434,5969,6,June,"Los Angeles, CA: Los Angeles International",15780,2003
+302,338,867,4,94,121,11,LGA,1604,22,8908,2003/06,17384,18954,41007,191,82859,5323,6,June,"New York, NY: LaGuardia",7161,2003
+368,434,535,3,48,9,12,MCO,1388,9,7617,2003/06,17707,26116,18073,56,65140,3188,6,June,"Orlando, FL: Orlando International",6211,2003
+180,411,311,12,39,47,9,MDW,951,6,7061,2003/06,8535,20938,10702,331,42962,2456,6,June,"Chicago, IL: Chicago Midway International",6057,2003
+247,210,585,2,66,28,11,MIA,1105,22,4900,2003/06,12609,12700,22976,66,52191,3840,6,June,"Miami, FL: Miami International",3745,2003
+428,376,759,9,106,101,11,MSP,1678,11,12194,2003/06,27468,20994,23137,529,78259,6131,6,June,"Minneapolis, MN: Minneapolis-St Paul International",10404,2003
+801,982,2947,11,157,261,12,ORD,4899,38,30195,2003/06,54296,55855,135851,604,257007,10401,6,June,"Chicago, IL: Chicago O'Hare International",24997,2003
+193,248,213,11,22,17,9,PDX,684,5,4746,2003/06,8260,11909,5943,505,27645,1028,6,June,"Portland, OR: Portland International",4040,2003
+338,565,1083,1,64,83,12,PHL,2049,20,9069,2003/06,16478,31005,45538,21,97173,4131,6,June,"Philadelphia, PA: Philadelphia International",6917,2003
+491,569,664,19,41,57,12,PHX,1783,10,14008,2003/06,26512,27458,18673,768,76031,2620,6,June,"Phoenix, AZ: Phoenix Sky Harbor International",12158,2003
+324,349,341,8,30,20,12,SAN,1052,4,6851,2003/06,15034,15747,10449,223,43215,1762,6,June,"San Diego, CA: San Diego International",5775,2003
+448,552,454,28,36,63,12,SEA,1516,9,9246,2003/06,22647,28119,13860,1097,68673,2950,6,June,"Seattle, WA: Seattle/Tacoma International",7658,2003
+416,312,1080,14,59,83,11,SFO,1880,9,10183,2003/06,22673,17879,45407,1138,90487,3390,6,June,"San Francisco, CA: San Francisco International",8211,2003
+363,290,352,15,36,34,10,SLC,1057,0,10582,2003/06,16227,13883,10512,556,42863,1685,6,June,"Salt Lake City, UT: Salt Lake City International",9491,2003
+226,327,524,3,42,12,11,TPA,1122,11,5401,2003/06,11012,18558,19078,112,51364,2604,6,June,"Tampa, FL: Tampa International",4256,2003
+1259,1791,4022,13,367,484,11,ATL,7452,71,30875,2003/07,87261,116728,184740,356,418274,29189,7,July,"Atlanta, GA: Hartsfield-Jackson Atlanta International",22868,2003
+450,587,609,0,61,226,14,BOS,1710,3,9972,2003/07,28610,36619,26923,10,97186,5024,7,July,"Boston, MA: Logan International",8033,2003
+387,646,544,4,102,57,11,BWI,1679,20,8611,2003/07,18395,42876,28654,81,100157,10151,7,July,"Baltimore, MD: Baltimore/Washington International Thurgood Marshall",6855,2003
+335,542,945,0,74,163,11,CLT,1895,24,8965,2003/07,17830,32502,37630,0,94531,6569,7,July,"Charlotte, NC: Charlotte Douglas International",6883,2003
+343,270,573,3,74,181,13,DCA,1260,13,6695,2003/07,17776,18002,25897,111,67839,6053,7,July,"Washington, DC: Ronald Reagan Washington National",5241,2003
+562,434,646,2,111,71,13,DEN,1753,9,12702,2003/07,29155,30028,25912,87,91893,6711,7,July,"Denver, CO: Denver International",10869,2003
+1216,1443,2081,18,244,274,13,DFW,5003,64,28323,2003/07,78047,83156,80740,447,258631,16241,7,July,"Dallas/Fort Worth, TX: Dallas/Fort Worth International",22982,2003
+475,448,816,4,145,175,12,DTW,1891,22,12192,2003/07,33660,26421,30809,137,103913,12886,7,July,"Detroit, MI: Detroit Metro Wayne County",10104,2003
+410,706,1665,11,125,285,13,EWR,2917,59,13058,2003/07,27536,45894,95872,295,180839,11242,7,July,"Newark, NJ: Newark Liberty International",9797,2003
+262,328,412,6,35,19,11,FLL,1041,1,4846,2003/07,13333,21007,15824,172,52714,2378,7,July,"Fort Lauderdale, FL: Fort Lauderdale-Hollywood International",3785,2003
+395,406,671,10,84,217,13,IAD,1567,14,8788,2003/07,22887,26373,35084,309,92720,8067,7,July,"Washington, DC: Washington Dulles International",6990,2003
+441,960,1506,9,115,90,12,IAH,3031,77,16467,2003/07,27204,52723,52976,221,141506,8382,7,July,"Houston, TX: George Bush Intercontinental/Houston",13269,2003
+347,231,455,12,39,32,11,JFK,1082,24,6205,2003/07,21108,13117,16836,362,54400,2977,7,July,"New York, NY: John F. Kennedy International",5067,2003
+560,760,570,8,99,73,13,LAS,1998,52,12206,2003/07,30498,44219,26557,210,110270,8786,7,July,"Las Vegas, NV: McCarran International",10083,2003
+864,807,557,12,141,145,12,LAX,2380,10,19295,2003/07,45717,47458,23552,224,126984,10033,7,July,"Los Angeles, CA: Los Angeles International",16760,2003
+336,434,1060,0,105,285,11,LGA,1934,63,9294,2003/07,20643,27725,61204,12,117366,7782,7,July,"New York, NY: LaGuardia",7012,2003
+451,519,797,3,63,19,12,MCO,1834,10,8026,2003/07,24063,34566,32395,60,95295,4211,7,July,"Orlando, FL: Orlando International",6163,2003
+236,559,637,14,86,62,9,MDW,1531,51,7299,2003/07,13792,38121,35400,370,95992,8309,7,July,"Chicago, IL: Chicago Midway International",5655,2003
+315,268,588,4,41,44,12,MIA,1216,17,5126,2003/07,20847,19233,22787,121,66719,3731,7,July,"Miami, FL: Miami International",3849,2003
+531,428,860,6,108,141,11,MSP,1930,13,12850,2003/07,33129,28529,32299,153,102280,8170,7,July,"Minneapolis, MN: Minneapolis-St Paul International",10766,2003
+961,1728,4305,8,258,1258,12,ORD,7259,135,31345,2003/07,75266,137519,314331,201,551568,24251,7,July,"Chicago, IL: Chicago O'Hare International",22693,2003
+224,332,126,7,26,25,9,PDX,716,2,5016,2003/07,10823,19298,4604,180,36851,1946,7,July,"Portland, OR: Portland International",4273,2003
+399,634,1130,1,93,198,12,PHL,2257,21,9352,2003/07,19469,41424,52527,15,121153,7718,7,July,"Philadelphia, PA: Philadelphia International",6876,2003
+593,743,498,8,66,96,12,PHX,1909,27,14410,2003/07,35809,46071,18713,181,105513,4739,7,July,"Phoenix, AZ: Phoenix Sky Harbor International",12378,2003
+381,386,340,3,44,34,12,SAN,1155,14,7177,2003/07,17465,21781,12051,83,54624,3244,7,July,"San Diego, CA: San Diego International",5974,2003
+506,637,421,26,67,82,12,SEA,1654,5,9992,2003/07,25125,37050,15618,631,83220,4796,7,July,"Seattle, WA: Seattle/Tacoma International",8251,2003
+473,365,539,10,76,79,11,SFO,1464,8,10743,2003/07,24613,24504,23592,261,79460,6490,7,July,"San Francisco, CA: San Francisco International",9192,2003
+404,284,330,9,65,58,10,SLC,1093,11,10944,2003/07,20318,16143,11910,285,52635,3979,7,July,"Salt Lake City, UT: Salt Lake City International",9782,2003
+248,395,445,3,44,18,11,TPA,1135,9,5614,2003/07,12661,26212,18532,73,60777,3299,7,July,"Tampa, FL: Tampa International",4452,2003
+1220,1766,4475,9,361,364,11,ATL,7829,56,31305,2003/08,77042,108114,163912,304,370130,20758,8,August,"Atlanta, GA: Hartsfield-Jackson Atlanta International",23056,2003
+481,698,978,0,100,292,14,BOS,2256,15,9933,2003/08,28571,49297,42254,4,127494,7368,8,August,"Boston, MA: Logan International",7370,2003
+396,668,734,6,127,66,11,BWI,1931,41,8636,2003/08,19817,41456,36608,179,107756,9696,8,August,"Baltimore, MD: Baltimore/Washington International Thurgood Marshall",6598,2003
+349,511,928,1,90,189,11,CLT,1882,36,8948,2003/08,17440,30964,38430,116,93619,6669,8,August,"Charlotte, NC: Charlotte Douglas International",6841,2003
+338,327,795,3,89,262,13,DCA,1554,41,6743,2003/08,17512,23603,42353,113,90097,6516,8,August,"Washington, DC: Ronald Reagan Washington National",4886,2003
+544,362,560,3,111,79,12,DEN,1582,9,12792,2003/08,30247,25493,23385,77,87032,7830,8,August,"Denver, CO: Denver International",11122,2003
+1178,1350,2138,17,269,466,13,DFW,4951,169,27956,2003/08,77082,80115,106597,526,286661,22341,8,August,"Dallas/Fort Worth, TX: Dallas/Fort Worth International",22370,2003
+459,442,1034,6,155,412,12,DTW,2096,52,12180,2003/08,29306,27485,46410,293,116543,13049,8,August,"Detroit, MI: Detroit Metro Wayne County",9620,2003
+488,713,2528,7,144,431,13,EWR,3881,111,13022,2003/08,36683,56753,180746,177,289106,14747,8,August,"Newark, NJ: Newark Liberty International",8599,2003
+279,396,489,9,46,36,11,FLL,1220,14,4825,2003/08,15853,25824,18216,334,63559,3332,8,August,"Fort Lauderdale, FL: Fort Lauderdale-Hollywood International",3555,2003
+378,447,849,9,129,190,13,IAD,1813,40,8758,2003/08,21505,30744,43185,295,106819,11090,8,August,"Washington, DC: Washington Dulles International",6715,2003
+425,587,1132,5,144,104,12,IAH,2291,68,15985,2003/08,26927,38093,48296,183,125085,11586,8,August,"Houston, TX: George Bush Intercontinental/Houston",13522,2003
+403,380,856,15,64,205,11,JFK,1717,66,6227,2003/08,28257,29338,42732,401,105234,4506,8,August,"New York, NY: John F. Kennedy International",4239,2003
+576,747,480,7,75,70,12,LAS,1884,10,12257,2003/08,34285,38636,17699,231,97026,6175,8,August,"Las Vegas, NV: McCarran International",10293,2003
+796,761,622,11,139,141,12,LAX,2333,9,19253,2003/08,47486,46658,26226,336,131186,10480,8,August,"Los Angeles, CA: Los Angeles International",16770,2003
+419,500,1421,1,125,597,11,LGA,2465,82,9302,2003/08,26770,38198,102604,15,180002,12415,8,August,"New York, NY: LaGuardia",6158,2003
+450,584,757,6,82,48,13,MCO,1878,30,7988,2003/08,25260,38574,31786,454,101540,5466,8,August,"Orlando, FL: Orlando International",6032,2003
+205,446,414,15,72,77,9,MDW,1152,13,7277,2003/08,10853,28232,21868,578,68622,7091,8,August,"Chicago, IL: Chicago Midway International",6035,2003
+293,314,696,10,70,97,13,MIA,1385,13,5158,2003/08,18544,24339,30059,306,78097,4849,8,August,"Miami, FL: Miami International",3663,2003
+533,438,639,9,104,182,11,MSP,1724,6,12887,2003/08,36711,26224,22843,294,93346,7274,8,August,"Minneapolis, MN: Minneapolis-St Paul International",10975,2003
+1017,1512,3461,12,237,941,12,ORD,6236,138,31121,2003/08,77366,109807,237540,430,447656,22513,8,August,"Chicago, IL: Chicago O'Hare International",23806,2003
+194,336,128,5,29,26,9,PDX,693,4,4972,2003/08,9713,18118,4683,148,34824,2162,8,August,"Portland, OR: Portland International",4249,2003
+442,695,1317,0,132,242,13,PHL,2590,31,9390,2003/08,22519,44213,65862,0,143224,10630,8,August,"Philadelphia, PA: Philadelphia International",6527,2003
+607,719,509,20,87,117,12,PHX,1942,14,14357,2003/08,35681,39053,17893,840,99568,6101,8,August,"Phoenix, AZ: Phoenix Sky Harbor International",12284,2003
+375,382,256,2,48,27,12,SAN,1062,5,7199,2003/08,18544,20569,9091,84,51666,3378,8,August,"San Diego, CA: San Diego International",6105,2003
+482,730,364,24,57,113,12,SEA,1661,12,10015,2003/08,27105,41966,13662,839,87912,4340,8,August,"Seattle, WA: Seattle/Tacoma International",8229,2003
+517,385,869,10,94,96,11,SFO,1876,5,10732,2003/08,28598,27313,36056,307,99292,7018,8,August,"San Francisco, CA: San Francisco International",8755,2003
+440,326,381,15,112,74,10,SLC,1271,28,10999,2003/08,23058,16936,13330,596,64430,10510,8,August,"Salt Lake City, UT: Salt Lake City International",9626,2003
+265,350,450,2,61,37,12,TPA,1129,19,5502,2003/08,15252,24242,19501,80,63084,4009,8,August,"Tampa, FL: Tampa International",4317,2003
+700,807,2267,4,161,359,11,ATL,3936,33,30377,2003/09,45856,42031,82737,180,180656,9852,9,September,"Atlanta, GA: Hartsfield-Jackson Atlanta International",26049,2003
+287,413,675,1,23,257,14,BOS,1398,13,9528,2003/09,16865,22421,27189,45,68271,1751,9,September,"Boston, MA: Logan International",7860,2003
+238,289,358,2,41,205,11,BWI,930,43,8209,2003/09,11225,15028,13129,42,42472,3048,9,September,"Baltimore, MD: Baltimore/Washington International Thurgood Marshall",7031,2003
+169,271,475,0,14,145,11,CLT,929,1,8474,2003/09,8943,13038,15857,22,38730,870,9,September,"Charlotte, NC: Charlotte Douglas International",7399,2003
+231,161,470,1,28,354,13,DCA,894,29,6507,2003/09,11136,8715,17771,145,39420,1653,9,September,"Washington, DC: Ronald Reagan Washington National",5230,2003
+319,204,336,3,41,50,13,DEN,900,6,12076,2003/09,17206,9780,11566,117,41637,2968,9,September,"Denver, CO: Denver International",11120,2003
+654,751,1027,2,125,571,13,DFW,2562,97,27045,2003/09,41366,45046,50091,55,151679,15121,9,September,"Dallas/Fort Worth, TX: Dallas/Fort Worth International",23815,2003
+296,236,562,1,52,144,12,DTW,1147,13,11336,2003/09,18882,12584,17982,36,53533,4049,9,September,"Detroit, MI: Detroit Metro Wayne County",10032,2003
+247,483,3818,2,147,596,13,EWR,4699,14,12189,2003/09,15809,38281,231105,94,295779,10490,9,September,"Newark, NJ: Newark Liberty International",6880,2003
+143,164,385,1,9,35,11,FLL,701,3,4623,2003/09,7175,9656,14175,32,31570,532,9,September,"Fort Lauderdale, FL: Fort Lauderdale-Hollywood International",3884,2003
+221,241,470,1,29,320,13,IAD,966,20,8419,2003/09,11679,14305,21596,14,50212,2618,9,September,"Washington, DC: Washington Dulles International",7113,2003
+291,498,1094,5,71,107,12,IAH,1958,57,15132,2003/09,17168,30323,40922,135,94286,5738,9,September,"Houston, TX: George Bush Intercontinental/Houston",13010,2003
+245,159,473,3,19,34,11,JFK,896,13,5811,2003/09,13176,7732,14391,93,36388,996,9,September,"New York, NY: John F. Kennedy International",4868,2003

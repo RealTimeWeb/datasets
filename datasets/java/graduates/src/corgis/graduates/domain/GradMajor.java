@@ -10,29 +10,22 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.graduates.domain.MajorInformation;
 import corgis.graduates.domain.Demographics;
+import corgis.graduates.domain.Education;
 import corgis.graduates.domain.Employment;
-import corgis.graduates.domain.Earnings;
+import corgis.graduates.domain.Salaries;
 
 /**
  * 
  */
 public class GradMajor {
 	
-    private MajorInformation majorInformation;
     private Demographics demographics;
+    private Education education;
     private Employment employment;
-    private Earnings earnings;
-    
-    
-    /*
-     * @return 
-     */
-    public MajorInformation getMajorInformation() {
-        return this.majorInformation;
-    }
-    
+    private Salaries salaries;
+    // The year that this report was made for.
+    private Integer year;
     
     
     /*
@@ -40,6 +33,15 @@ public class GradMajor {
      */
     public Demographics getDemographics() {
         return this.demographics;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Education getEducation() {
+        return this.education;
     }
     
     
@@ -56,8 +58,17 @@ public class GradMajor {
     /*
      * @return 
      */
-    public Earnings getEarnings() {
-        return this.earnings;
+    public Salaries getSalaries() {
+        return this.salaries;
+    }
+    
+    
+    
+    /*
+     * @return 
+     */
+    public Integer getYear() {
+        return this.year;
     }
     
     
@@ -69,7 +80,7 @@ public class GradMajor {
 	 * @return String
 	 */
 	public String toString() {
-		return "GradMajor[" +majorInformation+", "+demographics+", "+employment+", "+earnings+"]";
+		return "GradMajor[" +demographics+", "+education+", "+employment+", "+salaries+", "+year+"]";
 	}
 	
 	/**
@@ -77,11 +88,12 @@ public class GradMajor {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public GradMajor(JSONObject json_data) {
-        try {// Major Information
-            this.majorInformation = new MajorInformation((JSONObject)json_data.get("Major Information"));// Demographics
-            this.demographics = new Demographics((JSONObject)json_data.get("Demographics"));// Employment
-            this.employment = new Employment((JSONObject)json_data.get("Employment"));// Earnings
-            this.earnings = new Earnings((JSONObject)json_data.get("Earnings"));
+        try {// Demographics
+            this.demographics = new Demographics((JSONObject)json_data.get("Demographics"));// Education
+            this.education = new Education((JSONObject)json_data.get("Education"));// Employment
+            this.employment = new Employment((JSONObject)json_data.get("Employment"));// Salaries
+            this.salaries = new Salaries((JSONObject)json_data.get("Salaries"));// Year
+            this.year = ((Number)json_data.get("Year")).intValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a GradMajor; a field was missing.");
     		e.printStackTrace();

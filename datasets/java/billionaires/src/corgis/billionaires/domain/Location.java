@@ -16,9 +16,13 @@ import org.json.simple.JSONObject;
  */
 public class Location {
 	
+    // The "Gross Domestic Product" of the country where the billionaire has citizenship. This is one of the primary indicators used to gauge the health of a country's economy. It represents the total dollar value of all goods and services produced over a specific time period; you can think of it as the size of the economy.
     private Double gdp;
+    // The region of the world where this billionaire lives.
     private String region;
+    // The name of the country that this billionaire has citizenship with.
     private String citizenship;
+    // the 3-letter country code of the country where this billionaire has citizenship.
     private String countryCode;
     
     

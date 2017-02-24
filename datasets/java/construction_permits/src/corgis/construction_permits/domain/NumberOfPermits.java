@@ -60,16 +60,16 @@ public class NumberOfPermits {
     
 	
 	/**
-	 * Creates a string based representation of this #OfPermits.
+	 * Creates a string based representation of this NumberOfPermits.
 	
 	 * @return String
 	 */
 	public String toString() {
-		return "#OfPermits[" +twoUnits+", "+fiveplusUnits+", "+threeFourUnits+", "+oneUnit+"]";
+		return "NumberOfPermits[" +twoUnits+", "+fiveplusUnits+", "+threeFourUnits+", "+oneUnit+"]";
 	}
 	
 	/**
-	 * Internal constructor to create a #OfPermits from a  representation.
+	 * Internal constructor to create a NumberOfPermits from a  representation.
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public NumberOfPermits(JSONObject json_data) {
@@ -79,10 +79,10 @@ public class NumberOfPermits {
             this.threeFourUnits = ((Number)json_data.get("3-4 units")).intValue();// 1 unit
             this.oneUnit = ((Number)json_data.get("1 unit")).intValue();
         } catch (NullPointerException e) {
-    		System.err.println("Could not convert the response to a #OfPermits; a field was missing.");
+    		System.err.println("Could not convert the response to a NumberOfPermits; a field was missing.");
     		e.printStackTrace();
     	} catch (ClassCastException e) {
-    		System.err.println("Could not convert the response to a #OfPermits; a field had the wrong structure.");
+    		System.err.println("Could not convert the response to a NumberOfPermits; a field had the wrong structure.");
     		e.printStackTrace();
         }
 	}	

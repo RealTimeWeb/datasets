@@ -16,7 +16,9 @@ import org.json.simple.JSONObject;
  */
 public class LegalPermanantResidences {
 	
+    // Lawful permanent residents (LPRs), also known as "green card" holders, are non-citizens who are lawfully authorized to live permanently within the United States. This is the number that had their last residence in the associated country.
     private Integer lastResidence;
+    // Lawful permanent residents (LPRs), also known as "green card" holders, are non-citizens who are lawfully authorized to live permanently within the United States. This is the number that were from the associated country where they were originally born.
     private Integer birth;
     
     

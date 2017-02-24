@@ -16,7 +16,9 @@ import org.json.simple.JSONObject;
  */
 public class Airports {
 	
+    // Money paid to other governments for the support of airports.
     private Integer airportsIntergovernmental;
+    // Total amount spent on support for airports.
     private Integer airportsTotalExpenditure;
     
     

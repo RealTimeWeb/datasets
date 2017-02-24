@@ -16,7 +16,9 @@ import org.json.simple.JSONObject;
  */
 public class Airport {
 	
+    // The 3 letter code for this airport, assigned by IATA. For more information, consult this <a href='https://en.wikipedia.org/wiki/List_of_airports_by_IATA_code'>List of Airport Codes</a>.
     private String code;
+    // The full name of this airport.
     private String name;
     
     
@@ -53,9 +55,9 @@ public class Airport {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Airport(JSONObject json_data) {
-        try {// code
-            this.code = (String)json_data.get("code");// name
-            this.name = (String)json_data.get("name");
+        try {// Code
+            this.code = (String)json_data.get("Code");// Name
+            this.name = (String)json_data.get("Name");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Airport; a field was missing.");
     		e.printStackTrace();

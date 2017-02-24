@@ -16,18 +16,31 @@ import org.json.simple.JSONObject;
  */
 public class FinancialAid {
 	
+    // Total amount spent on stocks and bonds, notes, mortgages, and other formal evidences of indebtedness.
     private Integer federalAgencySecuritiesTotal;
+    // Total amount spent on long term debt. Long-term debt consists of loans and financial obligations lasting over one year.
     private Integer beginningLongTermDebtTotalOutstanding;
+    // Total amount spent on Old Age Assistance, Temporary Assistance for Needy Families (TANF), and Medical Assistance.
     private Integer categoricalAssistanceTotalExpenditure;
+    // Total amount spent on direct cash payments to beneficiaries of public welfare programs.
     private Integer cashAssistanceTotalExpenditure;
+    // Money paid to other governments for Old Age Assistance, Temporary Assistance for Needy Families (TANF), and Medical Assistance.
     private Integer categoricalAssistanceIntergovernmental;
+    // Total amount spent on cash and deposits and governmental and private securities (bonds, notes, mortgages, corporate stocks, etc., including loans and other credit paper held by state loan and investment funds) except holdings of agency and private trust funds. Includes fund investments in securities issued by government concerned but does not include interfund loans, receivables, and the value of real property and other fixed assets.
     private Integer cashAndSecuritiesTotal;
+    // Total amount spent on cash contributions and subsidies to persons, not in payments for goods or services or claims against the government. For local governments, this object category comprises only direct cash assistance payments to public welfare recipients. For states, it includes also veterans' bonuses and direct cash grants for tuition, scholarships, and aid to nonpublic education institutions.
     private Integer assistanceAndSubsidies;
+    // Money paid to other governments for cash assistance payments to public welfare recipients.
     private Integer cashAssistanceIntergovernmental;
+    // Total amount borrowed.
     private Integer borrowingTotal;
+    // Total amount spent on funds established specifically for the redemption of Long-term debt principal.
     private Integer sinkingFundTotal;
+    // Total amount spent on stocks and bonds, notes, mortgages, and other formal evidences of indebtedness.
     private Integer securitiesTotal;
+    // Total amount spent on funds established to account for the proceeds of bond issues pending their disbursement.
     private Integer bondFundTotal;
+    // Total amount of cash on hand and demand and savings or time deposits.
     private Integer cashAndDepositsTotal;
     
     

@@ -10,25 +10,22 @@ import java.util.Map;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import corgis.labor.domain.White;
-import corgis.labor.domain.BlackOrAfricanAmerican;
-import corgis.labor.domain.Asian;
 
 /**
  * 
  */
 public class EmploymentPopulationRatio {
 	
-    private White white;
-    private BlackOrAfricanAmerican blackOrAfricanAmerican;
-    private Asian asian;
+    private Double all;
+    private Double men;
+    private Double women;
     
     
     /*
      * @return 
      */
-    public White getWhite() {
-        return this.white;
+    public Double getAll() {
+        return this.all;
     }
     
     
@@ -36,8 +33,8 @@ public class EmploymentPopulationRatio {
     /*
      * @return 
      */
-    public BlackOrAfricanAmerican getBlackOrAfricanAmerican() {
-        return this.blackOrAfricanAmerican;
+    public Double getMen() {
+        return this.men;
     }
     
     
@@ -45,8 +42,8 @@ public class EmploymentPopulationRatio {
     /*
      * @return 
      */
-    public Asian getAsian() {
-        return this.asian;
+    public Double getWomen() {
+        return this.women;
     }
     
     
@@ -58,7 +55,7 @@ public class EmploymentPopulationRatio {
 	 * @return String
 	 */
 	public String toString() {
-		return "Employment-PopulationRatio[" +white+", "+blackOrAfricanAmerican+", "+asian+"]";
+		return "Employment-PopulationRatio[" +all+", "+men+", "+women+"]";
 	}
 	
 	/**
@@ -66,10 +63,10 @@ public class EmploymentPopulationRatio {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public EmploymentPopulationRatio(JSONObject json_data) {
-        try {// White
-            this.white = new White((JSONObject)json_data.get("White"));// Black or African American
-            this.blackOrAfricanAmerican = new BlackOrAfricanAmerican((JSONObject)json_data.get("Black or African American"));// Asian
-            this.asian = new Asian((JSONObject)json_data.get("Asian"));
+        try {// All
+            this.all = ((Number)json_data.get("All")).doubleValue();// Men
+            this.men = ((Number)json_data.get("Men")).doubleValue();// Women
+            this.women = ((Number)json_data.get("Women")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Employment-PopulationRatio; a field was missing.");
     		e.printStackTrace();

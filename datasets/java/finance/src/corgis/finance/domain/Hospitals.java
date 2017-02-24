@@ -16,13 +16,21 @@ import org.json.simple.JSONObject;
  */
 public class Hospitals {
 	
+    // Total amount spent on own hospitals. Own hospitals are facilities administered directly by the government concerned.
     private Integer ownHospitalsTotalExpenditure;
+    // Total amount spent on non-Owned hospitals. These hospitals refer to support for hospital services in private hospitals or other governments.
     private Integer hospitalOtherTotalExpenditure;
+    // Total amount spent on financing, construction acquisition, maintenance or operation of hospital facilities, provision of hospital care, and support of public or private hospitals.
     private Integer hospitalsTotalExpenditure;
+    // Money paid to other governments for the financing, construction acquisition, maintenance or operation of hospital facilities, provision of hospital care, and support of public or private hospitals.
     private Integer hospitalsTotalIntergovernmental;
+    // Total amount spent on equipment and land related to hospitals.
     private Integer hospitalsTotalEquipmentAndLand;
+    // Total amount spent on construction for hospitals.
     private Integer hospitalsTotalConstruction;
+    // Direct expenditure for compensation of own officers and employees and for supplies, materials, and contractual services except amounts for capital outlay related to hospitals.
     private Integer hospitalsTotalCurrent;
+    // Money paid to other governments for non-Owned hospitals. These hospitals refer to support for hospital services in private hospitals or other governments.
     private Integer hospitalOtherIntergovernmental;
     
     

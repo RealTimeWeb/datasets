@@ -53,3 +53,57 @@ def flat_case(string):
 
 def kebab_case(string):
     return string.replace(" ", "-").replace("_", "-").lower()
+
+            
+def lod_to_dol(LD):
+    dictionaires = {}
+    for row in LD:
+        for key, value in row.items():
+            if key in dictionaires:
+                dictionaires[key].append(value)
+            else:
+                dictionaires[key] = [value]
+    return [{'name': k, 'data': v} for k,v in dictionaires.items()]
+
+def first_items(a_list_of_tuples):
+    return [item[0] for item in a_list_of_tuples]
+
+def shortest_unique_strings(los):
+    splits = [l.split('.') for l in los]
+    lengths = [ (l[-1], l[:-1]) for l in splits]
+    while len(first_items(lengths)) != len(set(first_items(lengths))):
+        for this_index, (this, this_rest) in enumerate(lengths):
+            for other_index, (other, other_rest) in enumerate(lengths):
+                if this == other and this_index != other_index:
+                    if len(this_rest) >= len(other_rest):
+                        lengths[this_index] = ( this_rest[-1] + '.' + this , this_rest[:-1] )
+                    if len(this_rest) <= len(other_rest):
+                        lengths[other_index] = ( other_rest[-1] + '.' + other , other_rest[:-1] )
+    return first_items(lengths)
+    
+    
+EXPAND = "<span class='glyphicon glyphicon-new-window' aria-hidden='true'></span>"
+def convert_example_value(data, possible_path=""):
+    if isinstance(data, dict):
+        return "<a class='dialog-opener' id='{possible_path}'>{{ {E} }}</a>".format(possible_path=possible_path, E=EXPAND)
+    elif isinstance(data, list):
+        return "<a class='dialog-opener' id='{possible_path}'>[ {E} ]</a>".format(possible_path=possible_path, E=EXPAND)
+    elif isinstance(data, str) or isinstance(data, unicode):
+        return "<code>{data}</code>".format(data=wrap_quotes(data))
+    else:
+        return "<code>{data}</code>".format(data=data)
+
+        
+def wrap_quotes(data):
+    if '"' not in data:
+        pretty = '"{data}"'.format(data=data)
+    elif "'" not in data:
+        pretty = "'{data}'".format(data=data)
+    else:
+        pretty = '"{data}"'.format(data=data.replace('"', '\"'))
+    return pretty
+
+def kill_unicode(value):
+    if isinstance(value, unicode):
+        return value.encode('ascii', 'ignore')
+    return value

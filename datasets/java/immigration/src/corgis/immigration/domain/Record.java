@@ -17,8 +17,10 @@ import corgis.immigration.domain.Data;
  */
 public class Record {
 	
+    // The country that these immigrants came from to USA, or are going to from the USA.
     private String country;
     private Data data;
+    // The year that this immigration data comes from.
     private Integer year;
     
     

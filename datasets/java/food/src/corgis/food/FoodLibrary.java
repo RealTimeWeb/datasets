@@ -15,7 +15,7 @@ import corgis.food.domain.*;
 import java.sql.*;
 
 /**
- * The following data comes from the United States Department of Agriculture's Food Composition Database.  It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages.  The food covered spans a large variety of foods from butter to Campbell's soup.            
+ * The following data comes from the United States Department of Agriculture's Food Composition Database.  It contains data for various types of food including the amounts of different vitamins and minerals found in the foods as well as macronutrient percentages.  The food covered spans a large variety of foods from butter to Campbell's soup. Much of the supplementary documenation for each field comes directly from that pages' Wikipedia article.
 
  */
 public class FoodLibrary {

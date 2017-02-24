@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Labor SQL Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    
+    
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="labor.png" alt="Labor" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Labor SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 3/11/2016</span><br>
+    <span class="text-muted">Tags: labor, race, age, sex, gender, america, usa, census, employed, unemployed, employability, job, work, civilian, black, white, asian, government</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+The Current Population Survey (CPS) is a monthly survey of households conducted by the Bureau of Census for the Bureau of Labor Statistics. It provides a comprehensive body of data on the labor force, employment, unemployment, persons not in the labor force, hours of work, earnings, and other demographic and labor force characteristics.
+
+</p>
+
+<p>
+<i>http://www.bls.gov/cps/home.htm</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="labor.sql?forcedownload=1" download="labor.sql" target="_blank">
+        <strong>labor.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>Black or African American.Employment-Population Ratio.All</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>51.4</code></td>
+    </tr>
+    
+    <tr>
+        <td>Black or African American.Employment-Population Ratio.Men</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>69.3</code></td>
+    </tr>
+    
+    <tr>
+        <td>Black or African American.Employment-Population Ratio.Women</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>45.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>Black or African American.Participation Rate.All</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>58.1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Black or African American.Participation Rate.Men</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>76.2</code></td>
+    </tr>
+    
+    <tr>
+        <td>Black or African American.Participation Rate.Women</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>50.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>Black or African American.Unemployment Rate.All</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>11.6</code></td>
+    </tr>
+    
+    <tr>
+        <td>Black or African American.Unemployment Rate.Men</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>9.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Black or African American.Unemployment Rate.Women</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>9.8</code></td>
+    </tr>
+    
+    <tr>
+        <td>Civilian Labor Force.Asian.Counts</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Civilian Labor Force.Black or African American.Counts.All</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>8334.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Civilian Labor Force.Black or African American.Counts.Men</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>4180.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Civilian Labor Force.Black or African American.Counts.Women</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>3498.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Civilian Labor Force.White.Counts.All</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>75608.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Civilian Labor Force.White.Counts.Men</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>43514.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Civilian Labor Force.White.Counts.Women</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>25728.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Civilian Noninstitutional Population.Asian</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Civilian Noninstitutional Population.Black or African American</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>14332.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Civilian Noninstitutional Population.White</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>126749.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Employed.Asian.Counts</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Employed.Asian.Unemployment Rate</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Employed.Black or African American.Counts.All</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>7367.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Employed.Black or African American.Counts.Men</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>3802.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Employed.Black or African American.Counts.Women</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>3156.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Employed.White.Counts.All</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>71169.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Employed.White.Counts.Men</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>41418.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Employed.White.Counts.Women</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>24403.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Month Name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"January"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Not In Labor Force.Asian</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Not In Labor Force.Black or African American</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>5998.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Not In Labor Force.White</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Participation Rate</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Unemployed.Asian.Counts</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Unemployed.Asian.Unemployment Rate</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Unemployed.Black or African American.Counts.All</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>967.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Unemployed.Black or African American.Counts.Men</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>378.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Unemployed.Black or African American.Counts.Women</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>343.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Unemployed.White.Counts.All</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>4439.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Unemployed.White.Counts.Men</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>2096.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Unemployed.White.Counts.Women</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>1325.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>White.Employment-Population Ratio.All</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>56.1</code></td>
+    </tr>
+    
+    <tr>
+        <td>White.Employment-Population Ratio.Men</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>77.7</code></td>
+    </tr>
+    
+    <tr>
+        <td>White.Employment-Population Ratio.Women</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>40.5</code></td>
+    </tr>
+    
+    <tr>
+        <td>White.Participation Rate.All</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>59.7</code></td>
+    </tr>
+    
+    <tr>
+        <td>White.Participation Rate.Men</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>81.7</code></td>
+    </tr>
+    
+    <tr>
+        <td>White.Participation Rate.Women</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>42.7</code></td>
+    </tr>
+    
+    <tr>
+        <td>White.Unemployment Rate.All</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>5.9</code></td>
+    </tr>
+    
+    <tr>
+        <td>White.Unemployment Rate.Men</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>4.8</code></td>
+    </tr>
+    
+    <tr>
+        <td>White.Unemployment Rate.Women</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>5.1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1972</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+
+
+</div>

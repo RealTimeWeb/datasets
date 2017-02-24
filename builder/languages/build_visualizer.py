@@ -295,8 +295,8 @@ def build_locals(model, js_path):
                             aggregated_values[key][category.replace(',', '')] = {
                                 'count': len(values),
                                 'sum': sum(values),                                
-                                'average': statistics.mean(values),
-                                'average w/o zero': statistics.mean([v for v in values if v>0] if sum(values) else [0])
+                                'average': statistics.mean(values) if sum(values) else 0,
+                                'average w/o zero': statistics.mean([v for v in values if v>0] if sum([v for v in values if v>0]) else [0])
                             }
                     #inter = index_path.split('.', 2)[2]
                     #if '.' in inter:

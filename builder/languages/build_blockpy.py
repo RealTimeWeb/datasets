@@ -13,8 +13,11 @@ except NameError:
     unicode = str
 xrange = range
 from collections import OrderedDict, defaultdict
-from auxiliary import to_dict, camel_case_caps, camel_case
-from auxiliary import snake_case, kebab_case, flat_case
+from auxiliary import (camel_case_caps, camel_case,
+                       snake_case, kebab_case, flat_case,
+                       to_dict, copy_file, lod_to_dol,
+                       shortest_unique_strings, first_items,
+                       convert_example_value, wrap_quotes)
 import sqlite3
 import re
 from jinja2 import Environment, FileSystemLoader
@@ -118,26 +121,6 @@ def to_human_readable_type(a_value):
         return '<code>long</code> (Big numbers)'
     else:
         return '<code>'+str(type(a_value))+'</code>'
-    
-EXPAND = "<span class='glyphicon glyphicon-new-window' aria-hidden='true'></span>"
-def convert_example_value(data, possible_path=""):
-    if isinstance(data, dict):
-        return "<a class='dialog-opener' id='{possible_path}'>{{ {E} }}</a>".format(possible_path=possible_path, E=EXPAND)
-    elif isinstance(data, list):
-        return "<a class='dialog-opener' id='{possible_path}'>[ {E} ]</a>".format(possible_path=possible_path, E=EXPAND)
-    elif isinstance(data, str) or isinstance(data, unicode):
-        return "<code>{data}</code>".format(data=wrap_quotes(data))
-    else:
-        return "<code>{data}</code>".format(data=data)
-        
-def wrap_quotes(data):
-    if '"' not in data:
-        pretty = '"{data}"'.format(data=data)
-    elif "'" not in data:
-        pretty = "'{data}'".format(data=data)
-    else:
-        pretty = '"{data}"'.format(data=data.replace('"', '\"'))
-    return pretty
 
 env.filters['tojson'] = json.dumps
 env.filters['to_python_variable'] = to_python_variable
@@ -209,20 +192,6 @@ class JsonLeafNodes(object):
     def walk_atomic(self, an_atomic, parent_name):
         if isinstance(an_atomic, (float, int, str, unicode)):
             self.result[self.json_path] = an_atomic
-            
-def lod_to_dol(LD):
-    dictionaires = {}
-    for row in LD:
-        for key, value in row.items():
-            if key in dictionaires:
-                dictionaires[key].append(value)
-            else:
-                dictionaires[key] = [value]
-    return [{'name': k, 'data': v} for k,v in dictionaires.items()]
-
-def sample_down(dol):
-    for data in dol:
-        data['data'] = random.sample(data['data'], min(len(data['data']), 1000))
         
 def remove_outliers(lodol):
     bad_indexes = set()
@@ -276,22 +245,6 @@ def remove_outliers(lodol):
             data['type'] = 'text'
     lodol.sort(key= lambda e: e['pretty'])
 
-def first_items(a_list_of_tuples):
-    return [item[0] for item in a_list_of_tuples]
-
-def shortest_unique_strings(los):
-    splits = [l.split('.') for l in los]
-    lengths = [ (l[-1], l[:-1]) for l in splits]
-    while len(first_items(lengths)) != len(set(first_items(lengths))):
-        for this_index, (this, this_rest) in enumerate(lengths):
-            for other_index, (other, other_rest) in enumerate(lengths):
-                if this == other and this_index != other_index:
-                    if len(this_rest) >= len(other_rest):
-                        lengths[this_index] = ( this_rest[-1] + '.' + this , this_rest[:-1] )
-                    if len(this_rest) <= len(other_rest):
-                        lengths[other_index] = ( other_rest[-1] + '.' + other , other_rest[:-1] )
-    return first_items(lengths)
-
 def build_locals(model, js_path):
     locals = model["locals"]
     metadata_name = snake_case(model['metadata']['name'])
@@ -330,7 +283,6 @@ def build_locals(model, js_path):
                 for index_data in indexes.values():
                     index_data['data'] = [str(val) for val in index_data['data']]
                 data = {key_name_map[row['name']]: row for row in data}
-                #sample_down(data)
                 json.dump(data, output_file, indent=2)
                 #model['visualized_datasets'][name] = data.keys()
             print("File sizes:", "{}mb".format(os.stat(json_path).st_size / 1024 / 1024))

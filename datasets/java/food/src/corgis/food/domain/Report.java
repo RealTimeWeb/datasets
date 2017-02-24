@@ -17,9 +17,12 @@ import corgis.food.domain.Data;
  */
 public class Report {
 	
+    // The general category of food that this item belongs to.
     private String category;
     private Data data;
+    // A full description of this food item, including its category and some sub categories.
     private String description;
+    // A unique ID for this food item.
     private Integer nutrientDataBankNumber;
     
     

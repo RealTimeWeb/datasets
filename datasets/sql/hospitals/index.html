@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Hospitals SQL Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    
+    
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="hospitals.png" alt="Hospitals" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Hospitals SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Ryan Whitcomb</span><br>
+    <span class="text-muted">Version 1, created 6/1/2016</span><br>
+    <span class="text-muted">Tags: hospitals, healthcare, medicare, outpatient, patient, doctor, health</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+Medicare has collected data on many different hospitals throughout the country to allow users to compare the quality of these institutions before using their services.  Data includes descriptions of the location of the hospitals, information about the hospitals' emergency services and type of hospital, and outpatient volume for the different wards of the hospitals.
+
+</p>
+
+<p>
+<i>https://data.medicare.gov/data/hospital-compare</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="hospitals.sql?forcedownload=1" download="hospitals.sql" target="_blank">
+        <strong>hospitals.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>Address</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"100 GROSS CRESCENT"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Cardiovascular</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>14</code></td>
+    </tr>
+    
+    <tr>
+        <td>City</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"FORT OGLETHORPE"</code></td>
+    </tr>
+    
+    <tr>
+        <td>County</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"CATOOSA"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Emergency Services</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Yes"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Eye</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>244</code></td>
+    </tr>
+    
+    <tr>
+        <td>Gastrointestinal</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>395</code></td>
+    </tr>
+    
+    <tr>
+        <td>Genitourinary</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>113</code></td>
+    </tr>
+    
+    <tr>
+        <td>Latitude</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>34.949143</code></td>
+    </tr>
+    
+    <tr>
+        <td>Longitude</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>-85.263105</code></td>
+    </tr>
+    
+    <tr>
+        <td>Musculoskeletal</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>76</code></td>
+    </tr>
+    
+    <tr>
+        <td>Name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"HUTCHESON MEDICAL CENTER"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Nervous System</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>710</code></td>
+    </tr>
+    
+    <tr>
+        <td>Ownership</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Government - Hospital District or Authority"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Phone Number</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"7068582101"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Provider ID</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"110004"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Skin</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>25</code></td>
+    </tr>
+    
+    <tr>
+        <td>State</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"GA"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Type</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Acute Care Hospitals"</code></td>
+    </tr>
+    
+    <tr>
+        <td>ZIP Code</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"30742"</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+
+
+</div>

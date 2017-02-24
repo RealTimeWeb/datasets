@@ -16,13 +16,21 @@ import org.json.simple.JSONObject;
  */
 public class Data {
 	
+    // The number of incidences of cancer in this particular group.
     private Integer count;
+    // The estimated number of people with cancer adjusted by the population. This adjustment makes it easy to compare cancer rates between different locations and over time.
     private Double crudeRate;
+    // A number representing the upper bound for the Crude Rate. It is unlikely that the actual rate is higher than this number.
     private Double crudeCiUpper;
+    // A number representing the lower bound for the Crude Rate. It is unlikely that the actual rate is lower than this number.
     private Double crudeCiLower;
+    // The gender of people in this particular report.
     private String sex;
+    // The races reported in this particular report.
     private String race;
+    // The type of event reported here - whether the participants lived or died.
     private String eventType;
+    // The number of people present in this report.
     private Integer population;
     
     

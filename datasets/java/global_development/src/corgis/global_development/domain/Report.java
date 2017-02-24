@@ -18,6 +18,7 @@ import corgis.global_development.domain.Data;
 public class Report {
 	
     private String country;
+    // Based on the nature of the data, some of the numbers that are reported are very small.  For example a field reported as 0.15 is 0.15 %, not 15 %.
     private Data data;
     private Integer year;
     

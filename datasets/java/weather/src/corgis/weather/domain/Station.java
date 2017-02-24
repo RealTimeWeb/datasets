@@ -16,9 +16,13 @@ import org.json.simple.JSONObject;
  */
 public class Station {
 	
+    // The city that the reporting station sends its data to. Note that the recording station itself might actually be in a different city.
     private String city;
+    // The state that the reporting station sends its data to. Note that the recording station itself might actually be in a different state.
     private String state;
+    // The unique code representing this station.
     private String code;
+    // The exact location of this recording station. Note that the recording station itself might be in a different location than where it sends its data.
     private String location;
     
     

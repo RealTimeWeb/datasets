@@ -12,20 +12,20 @@ import org.json.simple.JSONObject;
 
 import corgis.publishers.domain.Publisher;
 import corgis.publishers.domain.Statistics;
-import corgis.publishers.domain.Daily;
+import corgis.publishers.domain.DailyAverage;
 
 /**
  * 
  */
 public class Book {
 	
-    // The genre of the book, either "fiction", "non-fiction", "genre fiction", "childrens", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.
+    // The genre of the book, either "fiction", "nonfiction", "genre fiction", "children", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.
     private String genre;
     private Publisher publisher;
     // The actual company that sold this book, as oppposed to the company that published it.
     private String soldBy;
     private Statistics statistics;
-    private Daily daily;
+    private DailyAverage dailyAverage;
     
     
     /*
@@ -67,8 +67,8 @@ public class Book {
     /*
      * @return 
      */
-    public Daily getDaily() {
-        return this.daily;
+    public DailyAverage getDailyAverage() {
+        return this.dailyAverage;
     }
     
     
@@ -80,7 +80,7 @@ public class Book {
 	 * @return String
 	 */
 	public String toString() {
-		return "Book[" +genre+", "+publisher+", "+soldBy+", "+statistics+", "+daily+"]";
+		return "Book[" +genre+", "+publisher+", "+soldBy+", "+statistics+", "+dailyAverage+"]";
 	}
 	
 	/**
@@ -92,8 +92,8 @@ public class Book {
             this.genre = (String)json_data.get("genre");// publisher
             this.publisher = new Publisher((JSONObject)json_data.get("publisher"));// sold by
             this.soldBy = (String)json_data.get("sold by");// statistics
-            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));// daily
-            this.daily = new Daily((JSONObject)json_data.get("daily"));
+            this.statistics = new Statistics((JSONObject)json_data.get("statistics"));// daily average
+            this.dailyAverage = new DailyAverage((JSONObject)json_data.get("daily average"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Book; a field was missing.");
     		e.printStackTrace();

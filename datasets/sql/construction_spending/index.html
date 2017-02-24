@@ -1,0 +1,958 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Construction Spending SQL Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    
+    
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="construction_spending.png" alt="Construction Spending" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Construction Spending SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 3/20/2016</span><br>
+    <span class="text-muted">Tags: construction, spending, us, united states, america, government, buildings, residential, non-residential, private, public</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+The Value of Construction Put in Place Survey (VIP) provides monthly estimates of the total dollar value of construction work done in the U.S. The United States Code, Title 13, authorizes this program. The survey covers construction work done each month on new structures or improvements to existing structures for private and public sectors. Data estimates include the cost of labor and materials, cost of architectural and engineering work, overhead costs, interest and taxes paid during construction, and contractor's profits. Data collection and estimation activities begin on the first day after the reference month and continue for about three weeks. Reported data and estimates are for activity taking place during the previous calendar month. The survey has been conducted monthly since 1964. <br><br><b>Why isn't the 'total construction' the sum of the other categories?</b> It is! the trick is that the 'residential' and "nonresidential" categories are supposed to be below the 'total construction' level, and the other categories are below those two categories. This example of the data should make it more clear: <a href='http://www.census.gov/construction/c30/pdf/tot.pdf'>http://www.census.gov/construction/c30/pdf/tot.pdf</a>.<br><br>More information about the nature of the construction projects is also <a href='https://www.census.gov/construction/c30/definitions.html'>available.</a>
+
+</p>
+
+<p>
+<i>http://www.census.gov/construction/c30/c30index.html</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="construction_spending.sql?forcedownload=1" download="construction_spending.sql" target="_blank">
+        <strong>construction_spending.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>annual.combined.amusement and recreation</td>
+        <td><code>Integer number</code></td> 
+        <td>Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>17866</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.commercial</td>
+        <td><code>Integer number</code></td> 
+        <td>Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>68254</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.communication</td>
+        <td><code>Integer number</code></td> 
+        <td>Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>18873</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.conservation and development</td>
+        <td><code>Integer number</code></td> 
+        <td>Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>3603</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.educational</td>
+        <td><code>Integer number</code></td> 
+        <td>Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>72357</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.health care</td>
+        <td><code>Integer number</code></td> 
+        <td>Health Care includes hospitals, medical buildings, and special care. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>25746</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.highway and street</td>
+        <td><code>Integer number</code></td> 
+        <td>Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>62723</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.lodging</td>
+        <td><code>Integer number</code></td> 
+        <td>Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>11862</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.manufacturing</td>
+        <td><code>Integer number</code></td> 
+        <td>Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>28318</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.nonresidential</td>
+        <td><code>Integer number</code></td> 
+        <td>A categorization including all of the other categories except total and residential. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>475704</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.office</td>
+        <td><code>Integer number</code></td> 
+        <td>Offices include financial, corporate, television, radio, and even manufacturing site offices. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>49140</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.power</td>
+        <td><code>Integer number</code></td> 
+        <td>Power includes electric, gas, and oil, and also includes distribution structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>46050</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.public safety</td>
+        <td><code>Integer number</code></td> 
+        <td>Public Safety includes correctional centers, police offices, fire and rescue. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>8468</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.religious</td>
+        <td><code>Integer number</code></td> 
+        <td>Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>8745</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.residential</td>
+        <td><code>Integer number</code></td> 
+        <td>Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>382979</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.sewage and waste disposal</td>
+        <td><code>Integer number</code></td> 
+        <td>This section includes sewage, dry waste, and waste water plants and line/pump stations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>16392</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.total construction</td>
+        <td><code>Integer number</code></td> 
+        <td>This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>858654</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.transportation</td>
+        <td><code>Integer number</code></td> 
+        <td>Transportation involves all the facilities related to air, land, and water travel. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>25547</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.combined.water supply</td>
+        <td><code>Integer number</code></td> 
+        <td>Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>11760</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.amusement and recreation</td>
+        <td><code>Integer number</code></td> 
+        <td>Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>7822</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.commercial</td>
+        <td><code>Integer number</code></td> 
+        <td>Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>63972</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.communication</td>
+        <td><code>Integer number</code></td> 
+        <td>Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>18843</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.conservation and development</td>
+        <td><code>Integer number</code></td> 
+        <td>Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.educational</td>
+        <td><code>Integer number</code></td> 
+        <td>Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>13616</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.health care</td>
+        <td><code>Integer number</code></td> 
+        <td>Health Care includes hospitals, medical buildings, and special care. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>20888</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.highway and street</td>
+        <td><code>Integer number</code></td> 
+        <td>Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.lodging</td>
+        <td><code>Integer number</code></td> 
+        <td>Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>11669</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.manufacturing</td>
+        <td><code>Integer number</code></td> 
+        <td>Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>28116</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.nonresidential</td>
+        <td><code>Integer number</code></td> 
+        <td>A categorization including all of the other categories except total and residential. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>263731</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.office</td>
+        <td><code>Integer number</code></td> 
+        <td>Offices include financial, corporate, television, radio, and even manufacturing site offices. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>40176</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.power</td>
+        <td><code>Integer number</code></td> 
+        <td>Power includes electric, gas, and oil, and also includes distribution structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>42407</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.public safety</td>
+        <td><code>Integer number</code></td> 
+        <td>Public Safety includes correctional centers, police offices, fire and rescue. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.religious</td>
+        <td><code>Integer number</code></td> 
+        <td>Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>8742</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.residential</td>
+        <td><code>Integer number</code></td> 
+        <td>Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>377631</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.sewage and waste disposal</td>
+        <td><code>Integer number</code></td> 
+        <td>This section includes sewage, dry waste, and waste water plants and line/pump stations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.total construction</td>
+        <td><code>Integer number</code></td> 
+        <td>This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>641333</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.transportation</td>
+        <td><code>Integer number</code></td> 
+        <td>Transportation involves all the facilities related to air, land, and water travel. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>6512</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.private.water supply</td>
+        <td><code>Integer number</code></td> 
+        <td>Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.amusement and recreation</td>
+        <td><code>Integer number</code></td> 
+        <td>Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>10044</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.commercial</td>
+        <td><code>Integer number</code></td> 
+        <td>Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>4282</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.communication</td>
+        <td><code>Integer number</code></td> 
+        <td>Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.conservation and development</td>
+        <td><code>Integer number</code></td> 
+        <td>Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>3578</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.educational</td>
+        <td><code>Integer number</code></td> 
+        <td>Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>58742</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.health care</td>
+        <td><code>Integer number</code></td> 
+        <td>Health Care includes hospitals, medical buildings, and special care. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>4859</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.highway and street</td>
+        <td><code>Integer number</code></td> 
+        <td>Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>62553</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.lodging</td>
+        <td><code>Integer number</code></td> 
+        <td>Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.manufacturing</td>
+        <td><code>Integer number</code></td> 
+        <td>Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.nonresidential</td>
+        <td><code>Integer number</code></td> 
+        <td>A categorization including all of the other categories except total and residential. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>211973</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.office</td>
+        <td><code>Integer number</code></td> 
+        <td>Offices include financial, corporate, television, radio, and even manufacturing site offices. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>8964</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.power</td>
+        <td><code>Integer number</code></td> 
+        <td>Power includes electric, gas, and oil, and also includes distribution structures. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>3643</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.public safety</td>
+        <td><code>Integer number</code></td> 
+        <td>Public Safety includes correctional centers, police offices, fire and rescue. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>8356</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.religious</td>
+        <td><code>Integer number</code></td> 
+        <td>Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.residential</td>
+        <td><code>Integer number</code></td> 
+        <td>Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>5348</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.sewage and waste disposal</td>
+        <td><code>Integer number</code></td> 
+        <td>This section includes sewage, dry waste, and waste water plants and line/pump stations. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>16077</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.total construction</td>
+        <td><code>Integer number</code></td> 
+        <td>This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>217321</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.transportation</td>
+        <td><code>Integer number</code></td> 
+        <td>Transportation involves all the facilities related to air, land, and water travel. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>19035</code></td>
+    </tr>
+    
+    <tr>
+        <td>annual.public.water supply</td>
+        <td><code>Integer number</code></td> 
+        <td>Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The annual data represents data for the whole year, adjusted for seasonal variations (i.e. winter usually has less construction). The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>11412</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.amusement and recreation</td>
+        <td><code>Integer number</code></td> 
+        <td>Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>1328</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.commercial</td>
+        <td><code>Integer number</code></td> 
+        <td>Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>4887</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.communication</td>
+        <td><code>Integer number</code></td> 
+        <td>Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>1416</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.conservation and development</td>
+        <td><code>Integer number</code></td> 
+        <td>Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>271</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.educational</td>
+        <td><code>Integer number</code></td> 
+        <td>Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>5125</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.health care</td>
+        <td><code>Integer number</code></td> 
+        <td>Health Care includes hospitals, medical buildings, and special care. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>2013</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.highway and street</td>
+        <td><code>Integer number</code></td> 
+        <td>Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>3180</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.lodging</td>
+        <td><code>Integer number</code></td> 
+        <td>Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>989</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.manufacturing</td>
+        <td><code>Integer number</code></td> 
+        <td>Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>2134</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.nonresidential</td>
+        <td><code>Integer number</code></td> 
+        <td>A categorization including all of the other categories except total and residential. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>33545</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.office</td>
+        <td><code>Integer number</code></td> 
+        <td>Offices include financial, corporate, television, radio, and even manufacturing site offices. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>3763</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.power</td>
+        <td><code>Integer number</code></td> 
+        <td>Power includes electric, gas, and oil, and also includes distribution structures. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>3402</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.public safety</td>
+        <td><code>Integer number</code></td> 
+        <td>Public Safety includes correctional centers, police offices, fire and rescue. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>647</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.religious</td>
+        <td><code>Integer number</code></td> 
+        <td>Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>667</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.residential</td>
+        <td><code>Integer number</code></td> 
+        <td>Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>25972</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.sewage and waste disposal</td>
+        <td><code>Integer number</code></td> 
+        <td>This section includes sewage, dry waste, and waste water plants and line/pump stations. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>1150</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.total construction</td>
+        <td><code>Integer number</code></td> 
+        <td>This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>59516</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.transportation</td>
+        <td><code>Integer number</code></td> 
+        <td>Transportation involves all the facilities related to air, land, and water travel. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>1729</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.combined.water supply</td>
+        <td><code>Integer number</code></td> 
+        <td>Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The current data is the information for this month/year, not adjusted for seasonal variation. The combined data represents both privately and publicly funded projects. All units are reported in millions of dollars.</td>
+        <td><code>846</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.amusement and recreation</td>
+        <td><code>Integer number</code></td> 
+        <td>Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>609</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.commercial</td>
+        <td><code>Integer number</code></td> 
+        <td>Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>4588</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.communication</td>
+        <td><code>Integer number</code></td> 
+        <td>Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>1414</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.conservation and development</td>
+        <td><code>Integer number</code></td> 
+        <td>Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.educational</td>
+        <td><code>Integer number</code></td> 
+        <td>Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>1000</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.health care</td>
+        <td><code>Integer number</code></td> 
+        <td>Health Care includes hospitals, medical buildings, and special care. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>1629</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.highway and street</td>
+        <td><code>Integer number</code></td> 
+        <td>Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.lodging</td>
+        <td><code>Integer number</code></td> 
+        <td>Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>972</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.manufacturing</td>
+        <td><code>Integer number</code></td> 
+        <td>Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>2117</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.nonresidential</td>
+        <td><code>Integer number</code></td> 
+        <td>A categorization including all of the other categories except total and residential. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>19701</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.office</td>
+        <td><code>Integer number</code></td> 
+        <td>Offices include financial, corporate, television, radio, and even manufacturing site offices. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>3066</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.power</td>
+        <td><code>Integer number</code></td> 
+        <td>Power includes electric, gas, and oil, and also includes distribution structures. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>3129</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.public safety</td>
+        <td><code>Integer number</code></td> 
+        <td>Public Safety includes correctional centers, police offices, fire and rescue. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.religious</td>
+        <td><code>Integer number</code></td> 
+        <td>Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>667</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.residential</td>
+        <td><code>Integer number</code></td> 
+        <td>Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>25572</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.sewage and waste disposal</td>
+        <td><code>Integer number</code></td> 
+        <td>This section includes sewage, dry waste, and waste water plants and line/pump stations. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.total construction</td>
+        <td><code>Integer number</code></td> 
+        <td>This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>45273</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.transportation</td>
+        <td><code>Integer number</code></td> 
+        <td>Transportation involves all the facilities related to air, land, and water travel. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>444</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.private.water supply</td>
+        <td><code>Integer number</code></td> 
+        <td>Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The current data is the information for this month/year, not adjusted for seasonal variation. The private data represents projects undertaken by citizens, as opposed to the government. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.amusement and recreation</td>
+        <td><code>Integer number</code></td> 
+        <td>Amusement and recreation includes theme and amusement parks, sports, fitness, performance/meeting center, social centers, parks, camps, movie theaters, studios, and a host of other locations. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>719</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.commercial</td>
+        <td><code>Integer number</code></td> 
+        <td>Commercial includes buildings and structures used by the retail, wholesale and selected service industries. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>299</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.communication</td>
+        <td><code>Integer number</code></td> 
+        <td>Communication includes telephone, television, and radio, distribution and maintenance buildings and structures. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.conservation and development</td>
+        <td><code>Integer number</code></td> 
+        <td>Conservation and development includes facilities constructed for dams/leevees, breakwaters/jettys, dredging, irrigation, mine reclamation, fish hatcheries and wetlands. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>268</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.educational</td>
+        <td><code>Integer number</code></td> 
+        <td>Education includes preschool, primary, secondary, higher education, nursing schools, cosmetology and beauty schools, trade schools, military training facilities, schools for the handicapped, and modeling schools. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>4126</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.health care</td>
+        <td><code>Integer number</code></td> 
+        <td>Health Care includes hospitals, medical buildings, and special care. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>384</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.highway and street</td>
+        <td><code>Integer number</code></td> 
+        <td>Highway and Street includes pavement, lighting, retaining walls, tunnels, bridges, tolls/weighs, maintenance buildings, and rest facilities. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>3168</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.lodging</td>
+        <td><code>Integer number</code></td> 
+        <td>Lodging includes hotels, motels, resort lodging, tourist courts and cabins, and similar facilities. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.manufacturing</td>
+        <td><code>Integer number</code></td> 
+        <td>Manufacturing includes a wide variety of structures, including wood industries, paper industries, food/beverage/tobacco, textiles, printing, plastic, chemical, and much more. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.nonresidential</td>
+        <td><code>Integer number</code></td> 
+        <td>A categorization including all of the other categories except total and residential. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>13844</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.office</td>
+        <td><code>Integer number</code></td> 
+        <td>Offices include financial, corporate, television, radio, and even manufacturing site offices. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>697</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.power</td>
+        <td><code>Integer number</code></td> 
+        <td>Power includes electric, gas, and oil, and also includes distribution structures. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>273</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.public safety</td>
+        <td><code>Integer number</code></td> 
+        <td>Public Safety includes correctional centers, police offices, fire and rescue. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>637</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.religious</td>
+        <td><code>Integer number</code></td> 
+        <td>Religious includes houses of worship such as churches, chapels, mosques, and their auxiliary buildings. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.residential</td>
+        <td><code>Integer number</code></td> 
+        <td>Residential Buildings are houses, townhouses, apartments, etc. for single families, multi-families, and improvements to existing properties. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>400</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.sewage and waste disposal</td>
+        <td><code>Integer number</code></td> 
+        <td>This section includes sewage, dry waste, and waste water plants and line/pump stations. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>1127</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.total construction</td>
+        <td><code>Integer number</code></td> 
+        <td>This section is the total of all the other categories, and by extension the total of the residential and non-residential categories. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>14243</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.transportation</td>
+        <td><code>Integer number</code></td> 
+        <td>Transportation involves all the facilities related to air, land, and water travel. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>1285</code></td>
+    </tr>
+    
+    <tr>
+        <td>current.public.water supply</td>
+        <td><code>Integer number</code></td> 
+        <td>Water Supply construction involves plants, wells, lines, pump stations, resevoirs, and tanks/towers. The current data is the information for this month/year, not adjusted for seasonal variation. The public data represents projects undertaken by the government, as opposed to private citizens. All units are reported in millions of dollars.</td>
+        <td><code>826</code></td>
+    </tr>
+    
+    <tr>
+        <td>index</td>
+        <td><code>Integer number</code></td> 
+        <td>A number representing the index of this report. The first report is 0, the second report is 1, etc.</td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>month</td>
+        <td><code>Integer number</code></td> 
+        <td>The numeric month that this report was made. January is 1, February is 2, etc.</td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>month name</td>
+        <td><code>String</code></td> 
+        <td>The name of the month that this report was made.</td>
+        <td><code>"Jan"</code></td>
+    </tr>
+    
+    <tr>
+        <td>period</td>
+        <td><code>String</code></td> 
+        <td>The reporting period that this report made in (e.g., "")</td>
+        <td><code>"Jan2002"</code></td>
+    </tr>
+    
+    <tr>
+        <td>year</td>
+        <td><code>Integer number</code></td> 
+        <td>The year that this report was made in.</td>
+        <td><code>2002</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+
+
+</div>

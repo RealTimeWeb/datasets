@@ -1,0 +1,218 @@
+
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="county_crime.png" alt="County Crime" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>County Crime SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Ryan Whitcomb</span><br>
+    <span class="text-muted">Version 1, created 6/1/2016</span><br>
+    <span class="text-muted">Tags: crime, burglary, larceny, motor, property, violent, assault, murder, rape, robbery</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+From the Unified Crime Reporting Statistics and  under the collaboration of the U.S. Department of Justice and the Federal Bureau of Investigation information crime statistics are available for public review.  The following data set has information on the crime rates and totals for counties across the United States for a wide range of years.  The crime reports are divided into two main categories: property and violent crime.  Property crime refers to burglary, larceny, and motor related crime while violent crime refers to assault, murder, rape, and robbery.
+
+</p>
+
+<p>
+<i>http://www.ucrdatatool.gov/Search/Crime/Local/JurisbyJurisStepTwo.cfm</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="county_crime.sql?forcedownload=1" download="county_crime.sql" target="_blank">
+        <strong>county_crime.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>Department</td>
+        <td><code>String</code></td> 
+        <td>The long name of the police department that this report was made for.</td>
+        <td><code>"Alabaster Police Dept"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Population</td>
+        <td><code>Integer number</code></td> 
+        <td>The number of people living in this state at the time the report was created.</td>
+        <td><code>7690</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rates.Property.All</td>
+        <td><code>Real number</code></td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td>
+        <td><code>897.3</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rates.Property.Burglary</td>
+        <td><code>Real number</code></td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td>
+        <td><code>234.1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rates.Property.Larceny</td>
+        <td><code>Real number</code></td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or theft of personal property.</td>
+        <td><code>572.2</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rates.Property.Motor</td>
+        <td><code>Real number</code></td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where a motor vehicle was stolen.</td>
+        <td><code>91.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rates.Violent.All</td>
+        <td><code>Real number</code></td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td>
+        <td><code>234.1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rates.Violent.Assault</td>
+        <td><code>Real number</code></td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.</td>
+        <td><code>182.1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rates.Violent.Murder</td>
+        <td><code>Real number</code></td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td>
+        <td><code>13.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rates.Violent.Rape</td>
+        <td><code>Real number</code></td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td>
+        <td><code>13.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Rates.Violent.Robbery</td>
+        <td><code>Real number</code></td> 
+        <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.</td>
+        <td><code>26.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>State</td>
+        <td><code>String</code></td> 
+        <td>The long name of the state that this report was made for.</td>
+        <td><code>"Alabama"</code></td>
+    </tr>
+    
+    <tr>
+        <td>Totals.Property.All</td>
+        <td><code>Integer number</code></td> 
+        <td>This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td>
+        <td><code>69</code></td>
+    </tr>
+    
+    <tr>
+        <td>Totals.Property.Burglary</td>
+        <td><code>Integer number</code></td> 
+        <td>This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td>
+        <td><code>18</code></td>
+    </tr>
+    
+    <tr>
+        <td>Totals.Property.Larceny</td>
+        <td><code>Integer number</code></td> 
+        <td>This property reflects the number of burglaries, or theft of personal property.</td>
+        <td><code>44</code></td>
+    </tr>
+    
+    <tr>
+        <td>Totals.Property.Motor</td>
+        <td><code>Real number</code></td> 
+        <td>This property reflects the number of crimes where a motor vehicle was stolen.</td>
+        <td><code>7.0</code></td>
+    </tr>
+    
+    <tr>
+        <td>Totals.Violent.All</td>
+        <td><code>Integer number</code></td> 
+        <td>This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td>
+        <td><code>18</code></td>
+    </tr>
+    
+    <tr>
+        <td>Totals.Violent.Assault</td>
+        <td><code>Integer number</code></td> 
+        <td>This property reflects the number of crimes where someone made an attempt to initiate harmful or offensive contact with a person, or made a threat to do so.</td>
+        <td><code>14</code></td>
+    </tr>
+    
+    <tr>
+        <td>Totals.Violent.Murder</td>
+        <td><code>Integer number</code></td> 
+        <td>This property reflects the number of crimes where someone committed the unlawful killing of another human being without justification.</td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Totals.Violent.Rape</td>
+        <td><code>Integer number</code></td> 
+        <td>This property reflects the number of crimes where someone committed rape. The FBI UCR definition of rape, before 2013, is the carnal knowledge of a female forcibly and against her will.</td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>Totals.Violent.Robbery</td>
+        <td><code>Integer number</code></td> 
+        <td>This property reflects the number of crimes where someone took or attempted to take anything of value by force or threat of force or by putting the victim in fear.</td>
+        <td><code>2</code></td>
+    </tr>
+    
+    <tr>
+        <td>Year</td>
+        <td><code>Integer number</code></td> 
+        <td>The year that this report was made in.</td>
+        <td><code>1984</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+

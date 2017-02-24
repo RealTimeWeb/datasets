@@ -16,13 +16,13 @@ import org.json.simple.JSONObject;
  */
 public class Date {
 	
-    // The full date representation that this performance's week ended on.
+    // The full date representation that this performance's week ended on in "Month/Day/Year" format.
     private String full;
     // The day of the month that this performance's week ended on.
     private Integer day;
     // The numeric month that this performance's week ended in (1 = January, 2 = February, etc.).
     private Integer month;
-    // The year that this performance occurred in.
+    // The year that this week of performances occurred in.
     private Integer year;
     
     

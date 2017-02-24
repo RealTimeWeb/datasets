@@ -22,6 +22,7 @@ public class Data {
 	
     private Enforcement enforcement;
     private LegalPermanantResidences legalPermanantResidences;
+    // Naturalization is the process by which U.S. citizenship is granted to a foreign citizen or national after he or she fulfills the requirements established by Congress in the Immigration and Nationality Act (INA). This is the number that became naturalized in this year from the associated country. Note that this is not the number of naturally-born citizens, which is a different form of citizenship.
     private Integer naturalizationsBirth;
     private Refugees refugees;
     private NonimmigrantAdmissions nonimmigrantAdmissions;

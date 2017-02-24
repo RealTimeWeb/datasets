@@ -1,0 +1,1506 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+Retail Services SQL Library (CORGIS Datasets Project)
+</title>
+    
+    <!-- JQuery UI CSS-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    
+    
+    
+    
+    <!-- JQuery JS -->
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    
+    <!-- JQuery UI JS -->
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    
+    <!-- Knockoutjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+    
+    <!-- D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    
+    
+    
+    
+    <script>
+    $(document).ready(function() {
+        /*
+        log('load', '{ metadata.name }');
+        function doPoll(){  
+            log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
+        }
+        setInterval(doPoll, 5000);
+        */
+    });
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="retail_services.png" alt="Retail Services" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Retail Services SQL Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 3/22/2016</span><br>
+    <span class="text-muted">Tags: retail, services, government, united states, usa, us, trade, food, services</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+The Advance Monthly and Monthly Retail Trade Surveys (MARTS and MRTS), the Annual Retail Trade Survey (ARTS), and the Quarterly E-Commerce Report work together to produce the most comprehensive data available on retail economic activity in the United States. More detailed descriptions of these programs can be found by choosing one of the links to the left.
+Regular quality control and verification takes place between MARTS, MRTS, and ARTS annually and between these programs and the Economic Census of Retail Trade every five years. Each year when annual data become available, we compare and resolve differences between the data collected on the monthly and annual surveys. We refer to this process as the monthly-to-annual reconciliation. At the same time, we benchmark the monthly estimates using results of the annual survey. ARTS estimates are then benchmarked to data maintained by the Economic Census of Retail Trade. This process of benchmarking retail data over all four programs ensures consistency in our estimates.
+The Business Expenses Supplement is an addition to the 2007 Annual Retail Trade Survey. Its purpose is to compile statistics on detailed business operating expenses. The United States Code, Title 13, authorizes this program as part of the Economic Census. This coverage was previously part of the predecessor Business Expenses Survey. Detailed expenses are collected every five years. 
+
+</p>
+
+<p>
+<i>http://www.census.gov/retail/about_the_surveys.html</i>
+</p>
+
+    
+    <h3 id="downloads">Downloads</h3>
+    
+<p>Download all of the following files.</p>
+
+<div class='row'>
+<div class="well col-md-6 col-md-offset-1">
+
+<ol>
+    
+    
+    <li><a href="retail_services.sql?forcedownload=1" download="retail_services.sql" target="_blank">
+        <strong>retail_services.sql</strong>
+        <span class='glyphicon glyphicon-download-alt' aria-hidden="true"></span>
+    </a></li>
+    
+</ol>
+</div>
+</div>
+    
+    
+    
+    <h3 id="usage">Field Descriptions</h3>
+    
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+    <tr>
+        <th class='col-md-2'>Key</th>
+        <th class='col-md-2'>List of...</th>
+        <th class='col-md-5'>Comment</th>
+        <th class='col-md-3'>Example Value</th>
+    </tr>
+    
+    
+    <tr>
+        <td>index</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.all department stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.all other home furnishings stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.all other merchandise stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.appliances and other electronics stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.auto and other motor vehicles</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.automobile dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.automotive parts and tire stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.beer, wine, and liquor stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.book stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.building materials and garden supplies dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>19545</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.building supplies dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>22622</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.computer and software stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.discount department stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.drinking places</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.electronic shopping and mail-order houses</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.electronics and appliance stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.family clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.floor covering stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.food and beverage stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>26963</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.food services and drinking places</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.fuel dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.full service restaurants</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.furniture and home furnishings stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.furniture stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.furniture, home furn, electronics, and appliance stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>13850</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.gafo</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.gasoline stations</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.general merchandise stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>43750</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.gift, novelty, and souvenir stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.grocery stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.hardware stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.health and personal care stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.hobby, toy, and game stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.home furnishings stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.household appliance stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.jewelry stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.limited service eating places</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.men's clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.miscellaneous store retailers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.motor vehicle and parts dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>62619</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.new car dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.non-discount department stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.non-leased department stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>33798</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.nonstore retailers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.office supplies and stationery stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.office supplies, stationery, and gift stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.other clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.other general merchandise stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.paint and wallpaper stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.pharmacies and drug stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.radio, TV, and electronics stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.retail trade</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>235509</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.retail trade and food services</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.retail trade and food services, ex auto</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.retail trade, ex auto</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>172890</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.shoe stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.sporting goods stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.sporting goods, hobby, book, and music stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.supermarkets and other grocery (except convenience) stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.used car dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.used merchandise stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.warehouse clubs and superstores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>inventories.women's clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>month</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1</code></td>
+    </tr>
+    
+    <tr>
+        <td>month name</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Jan"</code></td>
+    </tr>
+    
+    <tr>
+        <td>period</td>
+        <td><code>String</code></td> 
+        <td></td>
+        <td><code>"Jan1992"</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.all department stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.all other home furnishings stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.all other merchandise stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.appliances and other electronics stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.auto and other motor vehicles</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.automobile dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.automotive parts and tire stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.beer, wine, and liquor stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.book stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.building materials and garden supplies dealers</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>2.18</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.building supplies dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.clothing stores</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>3.26</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.computer and software stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.discount department stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.drinking places</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.electronic shopping and mail-order houses</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.electronics and appliance stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.family clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.floor covering stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.food and beverage stores</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>0.91</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.food services and drinking places</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.fuel dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.full service restaurants</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.furniture and home furnishings stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.furniture stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.furniture, home furn, electronics, and appliance stores</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>1.95</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.gafo</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.gasoline stations</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.general merchandise stores</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>2.92</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.gift, novelty, and souvenir stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.grocery stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.hardware stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.health and personal care stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.hobby, toy, and game stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.home furnishings stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.household appliance stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.jewelry stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.limited service eating places</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.men's clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.miscellaneous store retailers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.motor vehicle and parts dealers</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>2.1</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.new car dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.non-discount department stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.non-leased department stores</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>3.28</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.nonstore retailers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.office supplies and stationery stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.office supplies, stationery, and gift stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.other clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.other general merchandise stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.paint and wallpaper stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.pharmacies and drug stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.radio, TV, and electronics stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.retail trade</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>1.8</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.retail trade and food services</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.retail trade and food services, ex auto</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.retail trade, ex auto</td>
+        <td><code>Real number</code></td> 
+        <td></td>
+        <td><code>1.71</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.shoe stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.sporting goods stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.sporting goods, hobby, book, and music stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.supermarkets and other grocery (except convenience) stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.used car dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.used merchandise stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.warehouse clubs and superstores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>ratio.women's clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.all department stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>10560</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.all other home furnishings stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.all other merchandise stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>2111</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.appliances and other electronics stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>2142</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.auto and other motor vehicles</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>26788</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.automobile dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>25800</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.automotive parts and tire stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>3023</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.beer, wine, and liquor stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1509</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.book stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>790</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.building materials and garden supplies dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>8964</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.building supplies dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>7637</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>4852</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.computer and software stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>933</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.discount department stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>5601</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.drinking places</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1049</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.electronic shopping and mail-order houses</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>2692</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.electronics and appliance stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>3241</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.family clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1649</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.floor covering stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>728</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.food and beverage stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>29589</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.food services and drinking places</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>15693</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.fuel dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1916</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.full service restaurants</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>6887</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.furniture and home furnishings stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>3846</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.furniture stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>2392</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.furniture, home furn, electronics, and appliance stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>7087</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.gafo</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>33906</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.gasoline stations</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>12099</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.general merchandise stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>14996</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.gift, novelty, and souvenir stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>658</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.grocery stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>27306</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.hardware stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>842</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.health and personal care stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>7258</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.hobby, toy, and game stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>620</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.home furnishings stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1454</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.household appliance stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>601</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.jewelry stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>796</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.limited service eating places</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>6438</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.men's clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>701</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.miscellaneous store retailers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>3642</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.motor vehicle and parts dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>29811</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.new car dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>24056</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.non-discount department stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>4959</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.non-leased department stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>10306</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.nonstore retailers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>6860</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.office supplies and stationery stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>788</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.office supplies, stationery, and gift stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1446</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.other clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.other general merchandise stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>4690</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.paint and wallpaper stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.pharmacies and drug stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>6358</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.radio, TV, and electronics stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1541</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.retail trade</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>130683</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.retail trade and food services</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>146376</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.retail trade and food services, ex auto</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>116565</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.retail trade, ex auto</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>100872</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.shoe stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1206</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.sporting goods stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>972</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.sporting goods, hobby, book, and music stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>3439</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.supermarkets and other grocery (except convenience) stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>0</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.used car dealers</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1744</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.used merchandise stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>371</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.warehouse clubs and superstores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>2579</code></td>
+    </tr>
+    
+    <tr>
+        <td>sales.women's clothing stores</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1873</code></td>
+    </tr>
+    
+    <tr>
+        <td>year</td>
+        <td><code>Integer number</code></td> 
+        <td></td>
+        <td><code>1992</code></td>
+    </tr>
+    
+    
+    </table>
+    
+    
+
+    
+
+
+</div>

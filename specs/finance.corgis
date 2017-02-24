@@ -4,6 +4,7 @@ metadata:
     builder: 2
     author: Austin Cory Bart <acbart@vt.edu>
     datetime: 11/1/2015
+    outliers: true
     tags: [finance, government, expenditure, charges, money, united states, us]
     description:
         short: The Annual Survey of State Government Finances provides a comprehensive summary of the annual survey findings for state governments, as well as data for individual states.
