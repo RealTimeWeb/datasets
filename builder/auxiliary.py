@@ -107,3 +107,6 @@ def kill_unicode(value):
     if isinstance(value, unicode):
         return value.encode('ascii', 'ignore')
     return value
+    
+def sluggify(astr):
+    return astr.replace('.', '-').replace("[", "__").replace("]", "__").replace(" ", "-").replace("#", "_").replace("/", "_").replace("'", "_")

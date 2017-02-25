@@ -21,6 +21,7 @@ import jinja2_highlight
 import random
 import statistics
 random.seed(133)
+
 base_directory = os.path.dirname(os.path.realpath(__file__))
 visualizer_templates = os.path.join(base_directory, 'visualizer/')
 templates = os.path.join(base_directory, 'templates/')

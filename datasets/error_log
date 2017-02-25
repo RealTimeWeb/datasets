@@ -1,4 +1,4 @@
 Traceback (most recent call last):
   File "C:\Users\acbart\Projects\datasets\builder\build.py", line 46, in build_dir
     output.write(data)
-UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 988: ordinal not in range(128)
+TypeError: expected a string or other character buffer object

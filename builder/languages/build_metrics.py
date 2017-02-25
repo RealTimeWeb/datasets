@@ -8,7 +8,16 @@ except ImportError:
     izip = zip
 from auxiliary import flat_case
 from collections import OrderedDict, defaultdict
-from auxiliary import snake_case, kebab_case, flat_case, copy_file
+
+from jinja2 import Environment, FileSystemLoader
+import jinja2_highlight
+
+from auxiliary import (camel_case_caps, camel_case,
+                       snake_case, kebab_case, flat_case,
+                       to_dict, copy_file, lod_to_dol,
+                       shortest_unique_strings, first_items,
+                       convert_example_value, wrap_quotes,
+                       kill_unicode, sluggify)
 
 try:
     unicode
@@ -18,6 +27,35 @@ try:
     long
 except NameError:
     long = int
+    
+base_directory = os.path.dirname(os.path.realpath(__file__))
+metrics_templates = os.path.join(base_directory, 'metrics/')
+templates = os.path.join(base_directory, 'templates/')
+env = Environment(extensions=['jinja2_highlight.HighlightExtension'], 
+                  loader=FileSystemLoader([templates, metrics_templates]))
+                  
+env.filters['camel_case_caps'] = camel_case_caps
+env.filters['camel_case'] = camel_case
+env.filters['snake_case'] = snake_case
+env.filters['kebab_case'] = kebab_case
+env.filters['flat_case'] = flat_case
+
+env.filters['sluggify'] = sluggify
+env.filters['convert_example_value'] = convert_example_value
+env.filters['wrap_quotes'] = wrap_quotes
+
+def to_human_readable_type(a_value):
+    if isinstance(a_value, (int, long)):
+        return '<code>Integer number</code>'
+    elif isinstance(a_value, float):
+        return '<code>Real number</code>'
+    elif isinstance(a_value, (str, unicode)):
+        return '<code>String</code>'
+    elif isinstance(a_value, bool):
+        return '<code>Boolean (1/0)</code>'
+    else:
+        return '<code>'+str(type(a_value))+'</code>'
+env.filters['to_human_readable_type'] = to_human_readable_type
     
 SIMPLE_TYPE_MAP = {
                    unicode: 'text',
@@ -236,6 +274,14 @@ class JsonMetrics(object):
             
     def union_walk_atomic(self, an_atomic, parent_name):
         self.union_types[self.json_path].add(SIMPLE_TYPE_MAP[type(an_atomic)])
+        
+def build_metafiles(model, report):
+    name = snake_case(model['metadata']['name'])
+    root = 'metrics/' + name + '/'
+    return {
+            root+'index.html' : env.get_template('metrics_main.html').render(report=report, standalone=True, **model),
+            root+name+'.html' : env.get_template('metrics_main.html').render(report=report, standalone=False, **model)
+            }
 
 def build_report(model):
     locals = model["locals"]
@@ -259,12 +305,26 @@ def build_report(model):
                                                  for local in locals]
             elif type == "csv":
                 pass
-    return json.dumps(json_reports, indent=2)
+    return json.dumps(json_reports, indent=2), json_reports
         
 
 def build_metrics(model, fast):
     module_name = snake_case(model['metadata']['name'])    
-    files = {'metrics/' + module_name + '/' + module_name + '.json': build_report(model)}
+    new_folder = 'metrics/' + module_name + '/'
+    
+    json_data, report = build_report(model)
+    
+    files = {'metrics/' + module_name + '/' + module_name + '.json': json_data}
+    
+    icon_file = model['metadata']['icon']
+    
+    if os.path.exists(icon_file):
+        with open(icon_file, 'rb') as icon_data:
+            files[new_folder+module_name+'.png'] = icon_data.read()
+    else:
+        model["metadata"]["icon"] = False
+    
+    files.update(build_metafiles(model, report))
     
     return files, {}
     

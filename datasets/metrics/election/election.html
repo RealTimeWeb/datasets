@@ -1,0 +1,184 @@
+
+
+
+    <div class="page-header">
+    
+    <img class="img-rounded pull-right" src="election.png" alt="Election" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Election Metrics Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Ryan Whitcomb</span><br>
+    <span class="text-muted">Version 1, created 6/1/2016</span><br>
+    <span class="text-muted">Tags: politics, election, votes, counties, candidate</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+Data about the results was collected from CNN's 2016 election center.  Each county has the breakdown of how many votes each candidate recieved in that county and what percentage of the total vote from that county that the candidate recieved.  The candidate's political party is also represented.  
+
+</p>
+
+<p>
+<i>http://www.cnn.com/election/primaries/counties/va/Dem</i>
+</p>
+
+    
+    <h3>Metrics</h3>
+    
+    
+    <h4>Election Data File</h4>
+    <div class='row'>
+    <div class='col-md-6 col-md-offset-1'>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+        <tr>
+            <th colspan='2'>Overall</th>
+        </tr>
+        <tr>
+            <td>Length:</td>
+            <td>4216 rows</td>
+        </tr>
+        <tr>
+            <td>Height:</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Size:</td>
+            <td>6419.88 kilobytes</td>
+        </tr>
+        <tr>
+            <td>Indexes:</td>
+            <td>0</td>
+        </tr>
+    
+        <tr>
+            <th colspan='2'>Atomics</th>
+        </tr>
+        <tr>
+            <td>Total Count:</td>
+            <td>51</td>
+        </tr>
+        <tr>
+            <td>Integers:</td>
+            <td>16 (31%)</td>
+        </tr>
+        <tr>
+            <td>Floats:</td>
+            <td>16 (31%)</td>
+        </tr>
+        <tr>
+            <td>Strings:</td>
+            <td>19 (37%)</td>
+        </tr>
+        <tr>
+            <td>Booleans:</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td>Longs:</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td>Null/None Values:</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td>Unknowns Types:</td>
+            <td>0 (0%)</td>
+        </tr>
+        
+        <tr>
+            <th colspan='2'>Dictionaries</th>
+        </tr>
+        <tr>
+            <td class='col-md-4'>Total Count:</td>
+            <td class='col-md-4'>19</td>
+        </tr>
+        <tr>
+            <td>Average Branching Factor:</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Levels:</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Inconsistent Field Count:</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <th colspan='2'>Lists</th>
+        </tr>
+        <tr>
+            <td>Total Count:</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Complex Lists:</td>
+            <td>1</td>
+        </tr>
+        
+        <tr>
+            <th colspan='2'>Unions</th>
+        </tr>
+        <tr>
+            <td>Total Count:</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <th colspan='2'>Tags</th>
+        </tr>
+        <tr>
+            <td>Total Count:</td>
+            <td>5</td>
+        </tr>
+        
+    </table>
+    </div>
+    </div>
+    
+    
+    <h3>Development:</h3>
+    
+    <script>
+    $(document).ready(function() {
+        $.getJSON("https://api.github.com/repos/RealTimeWeb/datasets/issues?labels=dataset_election", function(data) {
+            var cList = $("#open-github-issues");
+            if (data.length > 0) {
+                data.map(function(element, index) {
+                    if (element.state == "open") {
+                        var li = $('<li/>')
+                            .appendTo(cList);
+                        var aaa = $('<a/>')
+                            .text("#"+element.number+": "+element.title+" ")
+                            .attr("href", element.html_url)
+                            .attr("target", "_blank")
+                            .appendTo(li);
+                        var small = $("<small/>")
+                            .appendTo(aaa);
+                        var new_window_icon = $("<span/>")
+                            .addClass("glyphicon glyphicon-new-window")
+                            .attr('aria-hidden', "true")
+                            .appendTo(small);
+                    }
+                });
+            } else {
+                cList.replaceWith("<span>No issues related to this dataset!</span>")
+            }
+        });
+    });
+    </script>
+    
+    <ul>
+    <li><strong><a href="https://github.com/RealTimeWeb/datasets/blob/master/specs/election.corgis" target=_blank>Specification file <small><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></small></a></strong>: The file used to specify the metadata, datasets, interfaces, and documentation for this dataset.</li>
+    <li><strong><a href="https://github.com/RealTimeWeb/datasets/tree/master/specs/election" target=_blank>Dataset folder <small><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></small></a></strong>: The folder where the completed dataset and any accompanying files are located. This can be used to get the unprocessed, cleaned dataset itself.</li>
+    <li><strong><a href="https://github.com/RealTimeWeb/datasets/tree/master/preprocess/election" target=_blank>Preprocess folder <small><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></small></a></strong>: The folder where development of the raw dataset is handled. Not every dataset will have a Preprocess folder, but we are actively working on fixing that!</li>
+    
+    <li>
+    <strong>Open issues related to this dataset</strong>:
+    <ul id='open-github-issues'>
+    </ul>
+    </li>
+    </ul>
+
