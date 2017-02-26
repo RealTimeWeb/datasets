@@ -1,0 +1,184 @@
+
+
+
+    <div class="page-header">
+    
+    <h1>Business Dynamics Metrics Library</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 2/26/2017</span><br>
+    <span class="text-muted">Tags: government, united states, us, usa, business, businesses, firms, establishments, jobs, census</span><br>
+</div>
+    
+    <h3 id="overview">Overview</h3>
+<p>
+<p>The Business Dynamics Statistics (BDS) includes measures of establishment openings and closings, firm startups, job creation and destruction by firm size, age, and industrial sector, and several other statistics on business dynamics. The U.S. economy is comprised of over 6 million establishments with paid employees. The population of these businesses is constantly churning -- some businesses grow, others decline and yet others close. New businesses are constantly replenishing this pool. The BDS series provide annual statistics on gross job gains and losses for the entire economy and by industrial sector, state, and MSA. These data track changes in employment at the establishment level, and thus provide a picture of the dynamics underlying aggregate net employment growth.</p>
+<p>There is a longstanding interest in the contribution of small businesses to job and productivity growth in the U.S. Some recent research suggests that it is business age rather than size that is the critical factor. The BDS permits exploring the respective contributions of both firm age and size.</p>
+<p>BDS is based on data going back through 1976. This allows business dynamics to be tracked, measured and analyzed for young firms in their first critical years as well as for more mature firms including those that are in the process of reinventing themselves in an ever changing economic environment.</p>
+
+</p>
+
+<p>
+<i>https://www.census.gov/data/developers/data-sets/business-dynamics.html</i>
+</p>
+
+    
+    <h3>Metrics</h3>
+    
+    
+    <h4>Business_dynamics Data File</h4>
+    <div class='row'>
+    <div class='col-md-6 col-md-offset-1'>
+    <table class='table table-condensed table-striped table-bordered table-hover'>
+        <tr>
+            <th colspan='2'>Overall</th>
+        </tr>
+        <tr>
+            <td>Length:</td>
+            <td>1887 rows</td>
+        </tr>
+        <tr>
+            <td>Height:</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Size:</td>
+            <td>1190.413 kilobytes</td>
+        </tr>
+        <tr>
+            <td>Indexes:</td>
+            <td>2</td>
+        </tr>
+    
+        <tr>
+            <th colspan='2'>Atomics</th>
+        </tr>
+        <tr>
+            <td>Total Count:</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Integers:</td>
+            <td>16 (64%)</td>
+        </tr>
+        <tr>
+            <td>Floats:</td>
+            <td>8 (32%)</td>
+        </tr>
+        <tr>
+            <td>Strings:</td>
+            <td>1 (4%)</td>
+        </tr>
+        <tr>
+            <td>Booleans:</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td>Longs:</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td>Null/None Values:</td>
+            <td>0 (0%)</td>
+        </tr>
+        <tr>
+            <td>Unknowns Types:</td>
+            <td>0 (0%)</td>
+        </tr>
+        
+        <tr>
+            <th colspan='2'>Dictionaries</th>
+        </tr>
+        <tr>
+            <td class='col-md-4'>Total Count:</td>
+            <td class='col-md-4'>7</td>
+        </tr>
+        <tr>
+            <td>Average Branching Factor:</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>Levels:</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Inconsistent Field Count:</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <th colspan='2'>Lists</th>
+        </tr>
+        <tr>
+            <td>Total Count:</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Complex Lists:</td>
+            <td>1</td>
+        </tr>
+        
+        <tr>
+            <th colspan='2'>Unions</th>
+        </tr>
+        <tr>
+            <td>Total Count:</td>
+            <td>0</td>
+        </tr>
+        
+        <tr>
+            <th colspan='2'>Tags</th>
+        </tr>
+        <tr>
+            <td>Total Count:</td>
+            <td>10</td>
+        </tr>
+        
+    </table>
+    </div>
+    </div>
+    
+    
+    <h3>Development:</h3>
+    
+    <script>
+    $(document).ready(function() {
+        $.getJSON("https://api.github.com/repos/RealTimeWeb/datasets/issues?labels=dataset_business_dynamics", function(data) {
+            var cList = $("#open-github-issues");
+            if (data.length > 0) {
+                data.map(function(element, index) {
+                    if (element.state == "open") {
+                        var li = $('<li/>')
+                            .appendTo(cList);
+                        var aaa = $('<a/>')
+                            .text("#"+element.number+": "+element.title+" ")
+                            .attr("href", element.html_url)
+                            .attr("target", "_blank")
+                            .appendTo(li);
+                        var small = $("<small/>")
+                            .appendTo(aaa);
+                        var new_window_icon = $("<span/>")
+                            .addClass("glyphicon glyphicon-new-window")
+                            .attr('aria-hidden', "true")
+                            .appendTo(small);
+                    }
+                });
+            } else {
+                cList.replaceWith("<span>No issues related to this dataset!</span>")
+            }
+        });
+    });
+    </script>
+    
+    <ul>
+    <li><strong><a href="https://github.com/RealTimeWeb/datasets/blob/master/specs/business_dynamics.corgis" target=_blank>Specification file <small><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></small></a></strong>: The file used to specify the metadata, datasets, interfaces, and documentation for this dataset.</li>
+    <li><strong><a href="https://github.com/RealTimeWeb/datasets/tree/master/specs/business_dynamics" target=_blank>Dataset folder <small><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></small></a></strong>: The folder where the completed dataset and any accompanying files are located. This can be used to get the unprocessed, cleaned dataset itself.</li>
+    <li><strong><a href="https://github.com/RealTimeWeb/datasets/tree/master/preprocess/business_dynamics" target=_blank>Preprocess folder <small><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></small></a></strong>: The folder where development of the raw dataset is handled. Not every dataset will have a Preprocess folder, but we are actively working on fixing that!</li>
+    
+    <li>
+    <strong>Open issues related to this dataset</strong>:
+    <ul id='open-github-issues'>
+    </ul>
+    </li>
+    </ul>
+

@@ -1,0 +1,62 @@
+{
+  "business_dynamics": {
+    "dicts": {
+      "count": 7, 
+      "levels": {
+        "1": {
+          "lengths": 3, 
+          "key lengths": 6
+        }, 
+        "2": {
+          "lengths": 7, 
+          "key lengths": 4
+        }, 
+        "3": {
+          "lengths": 4, 
+          "key lengths": 12
+        }
+      }, 
+      "inconsistent": {}, 
+      "average branching factor": 4
+    }, 
+    "tags": [
+      "government", 
+      "united states", 
+      "us", 
+      "usa", 
+      "business", 
+      "businesses", 
+      "firms", 
+      "establishments", 
+      "jobs", 
+      "census"
+    ], 
+    "atomics": {
+      "count": 25, 
+      "nones": 0, 
+      "ints": 16, 
+      "booleans": 0, 
+      "longs": 0, 
+      "unknown": 0, 
+      "strings": 1, 
+      "floats": 8
+    }, 
+    "lists": {
+      "count": 1, 
+      "lengths": 1887, 
+      "complex": 1
+    }, 
+    "heights": 4, 
+    "unions": {
+      "count": 0, 
+      "keys": {}, 
+      "sizes": 0
+    }, 
+    "length": 1887, 
+    "indexes": [
+      2
+    ], 
+    "locals": 0, 
+    "size": 1190413
+  }
+}
