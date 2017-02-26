@@ -1,4 +1,6 @@
 *.csv
 *.json
+*.txt
+!art_institute_metadata_old.json
 
 cached/

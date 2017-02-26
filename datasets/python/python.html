@@ -118,33 +118,6 @@ $(document).ready(function() {
     );
     </script>
     
-    <div class="media col-md-5 col-md-offset-1 dataset-card" id="art_institute_metadata">
-      
-      <div class="media-left  media-middle">
-        <a target="_blank" href="art_institute_metadata/art_institute_metadata.html">
-          <img class="media-object" src="art_institute_metadata/art_institute_metadata.png" alt="Art Institute Metadata" style="max-width: 64px; max-height: 64px;">
-        </a>
-      </div>
-      
-      <div class="media-body">
-        <a target="_blank" href="art_institute_metadata/art_institute_metadata.html">
-        <h4 class="media-heading">Art Institute Metadata</h4>
-        </a>
-        A data set about the metadata associated with the collection of the Minneapolis Institute of Art.<br>
-        <i>art, fine art, institute, artist, style, medium</i>
-      </div>
-    </div>
-    <script>
-    searcher.add(
-        {
-            'name': "art_institute_metadata",
-            'body': "The Minneapolis Institute of Art's mission is to enrich the community by collecting, preserving, and making accessible outstanding works of art from the world's diverse cultures. The following data contains information about the culture, location, and time period associated with the artist of the work in addition to descriptive information about the work as a whole. Also added in information pertaining directly to information useful to the Minneapolis Institute of Art as it pertains to classification and location within the Institute.",
-            'description': "A data set about the metadata associated with the collection of the Minneapolis Institute of Art.",
-            'tags': ["art", "fine art", "institute", "artist", "style", "medium"]
-        }
-    );
-    </script>
-    
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="billionaires">
       
       <div class="media-left  media-middle">
@@ -544,7 +517,7 @@ $(document).ready(function() {
     searcher.add(
         {
             'name': "energy",
-            'body': "United States Government reports on consumption, production, import, and export of various fuel sources. This data comes from the US Energy Information Administration, which has historical data from 1949 to 2014. All numbers are given in Quadrillion BTUs.",
+            'body': "United States Government reports on consumption, production, expenditures, and prices of various fuel sources. This data comes from the US Energy Information Administration, which has historical data from 1960 to 2014. Information was not always available, in which case 0 was reported instead. In some cases, very tiny values were rounded down to zero.",
             'description': "United States Government reports on consumption, production, import, and export of various fuel sources.",
             'tags': ["energy", "renewable", "united states", "us", "nuclear", "fossil fuels", "power"]
         }
@@ -679,7 +652,7 @@ $(document).ready(function() {
     searcher.add(
         {
             'name': "graduates",
-            'body': "This library comes from FiveThirtyEight's story on earnings of college majors based on data from the American Community Survey 2010-2012 Public Use Microdata Series. Included is information about employment numbers, major information, and the earnings of different majors.",
+            'body': "The data in this library comes from the National Survey of Recent College Graduates. Included is information about employment numbers, major information, and the earnings of different majors. Many majors were not available before 2010, so their values have been recorded as 0 (note that this may affect the averages shown in the bar charts).",
             'description': "This library holds data about employment of new graduates by major.",
             'tags': ["graduation", "grads", "majors", "education", "college", "university", "higher education", "jobs", "careers"]
         }
@@ -1221,7 +1194,7 @@ $(document).ready(function() {
     searcher.add(
         {
             'name': "tate",
-            'body': "Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art. The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation and performance. This dataset has metadata about many pieces from their collection.",
+            'body': "Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art. The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation and performance. This dataset is not ordered in any particular way. This dataset has metadata about many pieces from their collection.",
             'description': "This dataset is about the Tate art collection, with metadata about paintings, drawings, sculptures, and more.",
             'tags': ["artwork", "art", "sculpture", "tate"]
         }
