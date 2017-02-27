@@ -5,7 +5,7 @@ metadata:
     author: Austin Cory Bart <acbart@vt.edu>
     datetime: 11/1/2015
     tags: [energy, renewable, united states, us, nuclear, fossil fuels, power]
-    outliers: true
+    outliers: True
     description:
         short: United States Government reports on consumption, production, import, and export of various fuel sources.
         overview: >
