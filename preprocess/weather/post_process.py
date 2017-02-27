@@ -76,6 +76,8 @@ for row in weather_data:
         'Year': parse_int(row['Date'][6:]),
         'Full': row['Date']
     }
+    if row['Data']['Precipitation'] > 1000:
+        row['Data']['Precipitation'] = 1
     if row["Station's State"] not in STATE_LOOKUP:
         STATES.add(row["Station's State"])
     row['Station'] = {
