@@ -16,6 +16,7 @@ var drugs_INDEX_VALUES = {
         ["Alaska", "Alaska"] ,
         ["Arizona", "Arizona"] ,
         ["Arkansas", "Arkansas"] ,
+        ["California", "California"] ,
         ["Colorado", "Colorado"] ,
         ["Connecticut", "Connecticut"] ,
         ["Delaware", "Delaware"] ,

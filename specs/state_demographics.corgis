@@ -5,6 +5,7 @@ metadata:
     author: Ryan Whitcomb
     datetime: 6/1/2016
     tags: [demographics, population, age, ethnicity, race, language, education, foreign, households, income, employment, unemployment, sales, land area, states]
+    outliers: True
     description:
         short: Demographic information for the states in the United States.
         overview: >

@@ -56,6 +56,7 @@ var state_crime_INDEX_VALUES = {
         ["South Dakota", "South Dakota"] ,
         ["Tennessee", "Tennessee"] ,
         ["Texas", "Texas"] ,
+        ["United States", "United States"] ,
         ["Utah", "Utah"] ,
         ["Vermont", "Vermont"] ,
         ["Virginia", "Virginia"] ,

@@ -5,6 +5,7 @@ metadata:
     author: Austin Cory Bart <acbart@vt.edu>
     datetime: 10/24/2016
     tags: [school, education, K-12, kindergarten, learning, teaching, sat]
+    outliers: True
     description:
         overview: >
             SAT Scores from across the country
