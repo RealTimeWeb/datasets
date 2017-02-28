@@ -160,6 +160,7 @@ var COLOR_SCHEMES = [
 mainModel = {
     'aggregators': ko.observableArray([
         {'name': 'Average', 'id': 'average'},
+        {'name': 'Average w/o Zero', 'id': 'average w/o zero'},
         {'name': 'Count', 'id': 'count'},
         {'name': 'Sum', 'id': 'sum'}
     ]),
@@ -277,7 +278,7 @@ ko.bindingHandlers.fadeVisible = {
 
     ko.applyBindings(mainModel);
     
-    mainModel.settings.sampling(Math.min(100, mainModel.structures()[0].data[0].data.length))
+    mainModel.settings.sampling(Math.min(300, mainModel.structures()[0].data[0].data.length))
     
     function changeCategory() {
         $('#select-bar-keys').empty().multiSelect('refresh');
