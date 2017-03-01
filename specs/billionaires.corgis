@@ -15,6 +15,11 @@ local:
   - file: billionaires.json
     name: billionaires
     row: billionaire
+    indexes:
+      - name: year
+        jsonpath: billionaires.[0].year
+      - name: citizenship
+        jsonpath: billionaires.[0].location.citizenship
 interfaces:
   - name: get billionaires
     returns: list[billionaire]

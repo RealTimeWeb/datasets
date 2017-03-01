@@ -15,6 +15,11 @@ local:
   - file: construction_permits.json
     name: construction_permits
     row: permit
+    indexes:
+      - name: Year
+        jsonpath: construction_permits.[0].Period.year
+      - name: State
+        jsonpath: construction_permits.[0].Name
 interfaces:
   - name: get records
     description: Returns permit data from every year.

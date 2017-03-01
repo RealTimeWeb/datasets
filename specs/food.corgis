@@ -15,6 +15,9 @@ local:
   - file: food.json
     name: food
     row: report
+    indexes:
+      - name: Category
+        jsonpath: food.[0].Category
 interfaces:
   - name: get reports
     description: Returns food reports from the dataset.

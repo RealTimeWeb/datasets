@@ -184,7 +184,7 @@ class Compiler(object):
         metadata.version = self.recommend_field("metadata", "version", raw, 1, int, "Assuming version is 1.")
         metadata.hardware = self.typecheck_field("metadata", "hardware", raw, 1000, int)
         metadata.description = self.recommend_field("metadata", "description", raw, {}, dict, "There will be no top-level documentation!")
-        metadata.outliers = self.typecheck_field("metadata", "outliers", raw, False, bool)
+        metadata.outliers = self.typecheck_field("metadata", "outliers", raw, True, bool)
         if 'overview' not in metadata.description:
             metadata.description['overview'] = ""
         if 'short' not in metadata.description:

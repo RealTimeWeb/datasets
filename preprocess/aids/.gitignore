@@ -1,0 +1,7 @@
+*.csv
+*.json
+completed/
+*.gz
+*.bz2
+*.zip
+aids_old.json
