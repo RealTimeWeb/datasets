@@ -14,6 +14,11 @@ local:
   - file: state_fragility.json
     name: fragility
     row: score
+    indexes:
+      - name: Country
+        jsonpath: fragility.[0].Country
+      - name: Location
+        jsonpath: fragility.[0].Year
 interfaces:
   - name: get scores
     description: Returns state fragility scores from the dataset.

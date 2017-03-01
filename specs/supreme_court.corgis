@@ -23,6 +23,11 @@ local:
   - file: supreme_court.json
     name: supreme_court
     row: court case
+    indexes:
+      - name: Issue
+        jsonpath: supreme_court.[0].issue.area
+      - name: Decision Year
+        jsonpath: supreme_court.[0].decision.date.year
 interfaces:
   - name: get cases
     returns: list[court case]

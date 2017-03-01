@@ -15,6 +15,9 @@ local:
   - file: labor.json
     name: labor
     row: result
+    indexes:
+      - name: Year
+        jsonpath: labor.[0].Time.Year
 interfaces:
   - name: get results
     returns: list[result]

@@ -1,0 +1,983 @@
+
+<link rel="stylesheet" href="../../_lib/bootstrap-tagsinput.css">
+<link href="../../_lib/multiselect.css" media="screen" rel="stylesheet" type="text/css">
+
+<style id='d3-styling'>
+body {
+  font: 14px sans-serif;
+}
+
+.vertically-align {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.data-viz {
+    height: 100%;
+    position: absolute;
+}
+
+#download-image:focus, #download-image:hover {
+    text-decoration: none;
+}
+
+#download-image:focus img, #download-image:hover img {
+    border: 1px solid lightblue;
+    opacity: .75;
+}
+</style>
+
+
+
+
+<script>
+if (typeof log === 'undefined') {
+    log = function(action, body) {};
+}
+</script>
+
+
+
+
+
+    <script src="../../_lib/jquery.multi-select.js" type="text/javascript"></script>
+    <script src="../../_lib/bootstrap-tagsinput.js"></script>
+    <script src="../../_lib/typeahead.bundle.js"></script>
+    <script src="../../_lib/jquery.quicksearch.js"></script>
+    
+    <script>
+    
+$(document).ready(function () {
+    
+var doctype = '<?xml version="1.0" standalone="no"?>' + '<' + '!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">';
+
+// Generates a URL-friendly "slug" from a provided string.
+// For example: "This Is Great!!!" transforms into "this-is-great"
+// https://gist.github.com/bentruyman/1211400
+function generateSafeFilename(value) {
+  return value.toLowerCase().replace(/[^a-z0-9-]/g, '').replace(/\s+/g, '_').slice(0, 40);
+};
+
+function captureImage() {
+    var selector = d3.select("#data-visualization-"+mainModel.selected.chart().id+" svg");
+    // serialize our SVG XML to a string.
+    var source = (new XMLSerializer()).serializeToString(selector.node());
+    // create a file blob of our SVG.
+    var blob = new Blob([ doctype + source], { type: 'image/svg+xml' });
+    var url = window.URL.createObjectURL(blob);
+    // Put the svg into an image tag so that the Canvas element can read it in.
+    var svg_object = selector;
+    var img = d3.select('#capture-dialog .modal-body img')
+        .attr('width', svg_object.attr('width'))
+        .attr('height', svg_object.attr('height'))
+        .node();
+    /*$('#capture-dialog .modal-body')
+        .width(30+parseInt(svg_object.attr('width')))
+        .height(100+parseInt(svg_object.attr('height')));*/
+    $('#capture-dialog .modal-body').height(100+parseInt(svg_object.attr('height')));
+    $('#capture-dialog .modal-dialog').width(30+parseInt(svg_object.attr('width')))
+    // TODO: If IE then set href to "#"
+    $("#download-image")
+            .attr("href", url)
+            .attr("download", generateSafeFilename(mainModel.settings.title())+".png");
+    img.onload = function(){
+        // Now that the image has loaded, put the image into a canvas element.
+        var canvas = document.createElement('canvas');
+        canvas.width = svg_object.attr('width');
+        canvas.height = svg_object.attr('height');
+        var ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        // TODO: TRY CATCH
+        var canvasUrl = "";
+        try {
+            canvasUrl = canvas.toDataURL("image/png");
+        } catch (e) {
+            canvasUrl = url;
+        }
+        img.onload = null;
+        img.setAttribute('src', canvasUrl);
+        $("#download-image")
+            .attr("href", canvasUrl)
+            .attr("download", generateSafeFilename(mainModel.settings.title())+".png");
+        log('save', 'canvasUrl');
+        /*
+        var img2 = d3.select('#capture-dialog .modal-body img')
+            .attr('width', svg_object.attr('width'))
+            .attr('height', svg_object.attr('height'))
+            .node();
+        // this is now the base64 encoded version of our PNG! you could optionally 
+        // redirect the user to download the PNG by sending them to the url with 
+        // ``.
+        img2.src = canvasUrl;
+        */
+    }
+    // start loading the image.
+    img.src = url;
+}
+
+function stringContains(aString, it) { 
+    return aString.indexOf(it) != -1; 
+};
+    
+function compare(a,b) {
+  if (a.name < b.name)
+    return -1;
+  else if (a.name > b.name)
+    return 1;
+  else 
+    return 0;
+}
+    
+function getRandomSubarray(arr, size) {
+    var shuffled = arr.slice(0), i = arr.length, temp, index;
+    while (i--) {
+        index = Math.floor((i + 1) * Math.random());
+        temp = shuffled[index];
+        shuffled[index] = shuffled[i];
+        shuffled[i] = temp;
+    }
+    return shuffled.slice(0, size);
+}
+    
+var CHARTS = ko.observableArray([
+        {'name': 'Line Plot', 'id': 'line', 'parameters': 1, 'first': 'Y-values'},
+        {'name': 'Histogram', 'id': 'hist', 'parameters': 1, 'first': 'Values'},
+        {'name': 'Scatter Plot', 'id': 'scatter', 'parameters': 2, 'first': 'X-values', 'second': 'Y-values'},
+        {'name': 'Bar Chart', 'id': 'bar', 'parameters': 3, 'first': 'Values', 'second': 'Category', 'third': 'Aggregation'},
+        //{'name': 'XY Plot', 'id': 'xy', 'parameters': 2, 'first': 'X-values', 'second': 'Y-values'},        
+    ]);
+var COLOR_SCHEMES = [
+        {'name': 'Blue', 'stroke': 'blue', 'fill': 'lightblue'},
+        {'name': 'Green', 'stroke': 'green', 'fill': 'lightgreen'},
+        {'name': 'Red', 'stroke': 'red', 'fill': 'pink'},
+        {'name': 'Black', 'stroke': 'black', 'fill': 'black'},
+        {'name': 'Grey', 'stroke': 'darkgray', 'fill': 'lightgray'},
+        {'name': 'Yellow', 'stroke': 'goldenrod', 'fill': 'LightGoldenRodYellow '},
+        {'name': 'Purple', 'stroke': 'purple', 'fill': 'plum '}
+    ];
+    
+mainModel = {
+    'aggregators': ko.observableArray([
+        {'name': 'Average', 'id': 'average'},
+        {'name': 'Average w/o Zero', 'id': 'average w/o zero'},
+        {'name': 'Count', 'id': 'count'},
+        {'name': 'Sum', 'id': 'sum'}
+    ]),
+    'schemes': COLOR_SCHEMES,
+    'settings': {
+        'title': ko.observable('Add your title here'),
+        'sampling': ko.observable(400),
+        'color': ko.observable(COLOR_SCHEMES[0]),
+        'bins': ko.observable(20)
+    },
+    'charts': CHARTS,
+    'selected': {
+        'dataset': ko.observable('weather'),
+        'first': ko.observable({'data': []}),
+        'second': ko.observable('humidity'),
+        'category': ko.observable({'comment': '', 'name': ''}),
+        'third': ko.observable('humidity'),
+        'filter': ko.observable('none'),
+        'filter_value': ko.observable(''),
+        'chart': ko.observable(CHARTS()[0])
+    },
+    'bars': ko.observableArray([
+    
+        {'name': "suicide_attacks", 'data': suicide_attacks_bar}
+    
+    ]),
+    'structures':  ko.observableArray([
+    
+        {'name': "suicide_attacks", 'row': "attack", 'order': "", 'data': suicide_attacks}
+    
+    ])
+};
+mainModel.selected.bar_dataset = ko.computed(function() {
+    var self = this;
+    if (this.bars().length > 0) {
+        return this.bars().filter(function(elem) {
+            return elem.name == self.selected.dataset().name;
+        })[0];
+    } else {
+        return null;
+    }
+}, mainModel);
+mainModel.sorted_indexes = function () {
+    return mainModel.selected.filter_index_data().indexes.concat().sort();
+};
+mainModel.selected.filter_index_data = ko.computed(function() {
+    var self = this;
+    var target = self.selected.filter();
+    if (target == "none") {
+        return null;
+    }
+    var dataset = self.selected.bar_dataset().data;
+    if (dataset.length > 0) {
+        return dataset.filter(function(elem) {
+            return elem.name == target;
+        })[0];
+    } else {
+        return null;
+    }
+}, mainModel);
+function filter_index_values() {
+    var self = mainModel;
+    var target = self.selected.filter();
+    if (target == "none") {
+        return null;
+    }
+    var dataset = self.selected.dataset().data;
+    if (dataset.length > 0) {
+        return dataset.filter(function(elem) {
+            return elem.name == target;
+        })[0];
+    } else {
+        return null;
+    }
+}
+
+/*
+mainModel.structures().forEach(function(e, i) {
+    e.data.sort(function(l, r) { return l.pretty > r.pretty ? 1 : -1 });
+});*/
+
+mainModel.only_numbers = function(dataset) {
+    return dataset.filter(function(element) {
+        return element.type == 'number';
+    });
+}
+
+mainModel.only_indexes = function(dataset) {
+    return dataset.filter(function(element) {
+        return element.index;
+    });
+}
+
+// Here's a custom Knockout binding that makes elements shown/hidden via jQuery's fadeIn()/fadeOut() methods
+// Could be stored in a separate utility library
+ko.bindingHandlers.fadeVisible = {
+    init: function(element, valueAccessor) {
+        // Initially set the element to be instantly visible/hidden depending on the value
+        var value = valueAccessor();
+        $(element).toggle(ko.unwrap(value)); // Use "unwrapObservable" so we can handle values that may or may not be observable
+    },
+    update: function(element, valueAccessor) {
+        // Whenever the value subsequently changes, slowly fade the element in or out
+        var value = valueAccessor();
+        ko.unwrap(value) ? $(element).fadeIn() : $(element).fadeOut();
+    }
+};
+
+    $('#capture-button').click(function() {
+        captureImage();
+        $("#capture-dialog").modal('show');
+    });
+    
+    $(".hide-on-load").hide();
+
+    ko.applyBindings(mainModel);
+    
+    mainModel.settings.sampling(Math.min(300, mainModel.structures()[0].data[0].data.length))
+    
+    function changeCategory() {
+        $('#select-bar-keys').empty().multiSelect('refresh');
+        // Check the first one to get the length
+        var bar_data = mainModel.selected.category();//bar_dataset().data[0];
+        var indexes = bar_data.indexes.concat().sort();
+        for (var i = 0, length = indexes.length; i < length; i = i+1) {
+            if (!stringContains(indexes[i], "'")) {
+                $('#select-bar-keys').multiSelect('addOption', {
+                    value: indexes[i],
+                    text: indexes[i],
+                });
+            }
+        }
+        $('#select-bar-keys').multiSelect('select', bar_data.best_indexes);
+        changeDataset();
+    }
+    
+    $('#select-bar-keys').multiSelect({
+        //selectableHeader: "<input type='text' class='search-input' autocomplete='off' placeholder='filter'>",
+        //selectionHeader: "<input type='text' class='search-input' autocomplete='off' placeholder='filter'>",
+        selectableHeader: "<div class='custom-header'>Available</div>"+
+            "<input type='text' class='search-input' autocomplete='off' placeholder='Search'>",
+        selectionHeader: "<div class='custom-header'>Selected</div>"+
+            "<input type='text' class='search-input' autocomplete='off' placeholder='Search'>",
+        afterInit: function(ms) {
+            var that = this,
+            $selectableSearch = that.$selectableUl.prev(),
+            $selectionSearch = that.$selectionUl.prev(),
+            selectableSearchString = '#'+that.$container.attr('id')+' .ms-elem-selectable:not(.ms-selected)',
+            selectionSearchString = '#'+that.$container.attr('id')+' .ms-elem-selection.ms-selected';
+            
+            that.qs1 = $selectableSearch.quicksearch(selectableSearchString)
+                .on('keydown', function(e){
+                  if (e.which === 40){
+                    that.$selectableUl.focus();
+                    return false;
+                  }
+                });
+            that.qs2 = $selectionSearch.quicksearch(selectionSearchString)
+                .on('keydown', function(e){
+                  if (e.which == 40){
+                    that.$selectionUl.focus();
+                    return false;
+                  }
+                });
+        },
+        afterSelect: function() {
+            this.qs1.cache();
+            this.qs2.cache();
+        },
+        afterDeselect: function() {
+            this.qs1.cache();
+            this.qs2.cache();
+        }
+    });
+        
+    $('#select-bar-keys').on("change", function() {
+        changeDataset();
+    });
+    
+    
+    
+    var margin = {top: 60, right: 20, bottom: 100, left: 100},
+        width = 800 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+    var formatDate = d3.time.format("%d-%b-%y");
+    
+    var x = d3.scale.linear()
+        .range([0, width]);
+    var xOrdinal = d3.scale.ordinal()
+        .rangeBands([0, width]);
+    
+    var y = d3.scale.linear()
+        .range([height, 0]);
+        
+    var yAxis = d3.svg.axis()
+        .scale(y)
+        .orient("left");
+        
+    var xAxis = d3.svg.axis()
+        .scale(x)
+        .orient("bottom");
+    var xAxisOrdinal = d3.svg.axis()
+        .scale(xOrdinal)
+        .tickFormat(function(d) { return d.index })
+        .orient("bottom");
+    
+    var line = d3.svg.line()
+        .x(function(d) { return x(d.x); })
+        .y(function(d) { return y(d.y); })
+        .interpolate("linear");
+        
+    var xMap = function(d) {return x(d.x)};
+    var yMap = function(d) {return y(d.y)};
+
+    mainModel.charts().forEach(function (e, i) {
+        var svg = d3.select("#data-visualization-"+e.id).append("svg")
+                        .attr("width", width + margin.left + margin.right)
+                        .attr("height", height + margin.top + margin.bottom)
+        e.canvas = svg.append("g")
+                        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        if (e.id == 'xy' || e.id == 'line') {
+            e.canvas.append('path')
+                     .attr("class", "line")
+                     .style('stroke', mainModel.settings.color().stroke);
+        }
+        e.canvas.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(e.id == 'bar' ? xAxisOrdinal : xAxis);
+        e.canvas.append("g")
+              .attr("class", "y axis")
+              .call(yAxis);
+        e.canvas.append("text")      // text label for the x axis
+            .attr("transform", "translate(" + (width / 2) + " ," + (height + margin.bottom-5) + ")")
+            .attr("class", "x-axis-label")
+            .style("font-size", "14px")
+            .style("text-anchor", "middle")
+            .text(mainModel.selected.first().pretty);
+        e.canvas.append("text")
+            .attr("transform", "rotate(-90)")
+            .attr("class", "y-axis-label")
+            .attr("y", 0 - margin.left)
+            .attr("x", 0 - (height / 2))
+            .style("font-size", "14px")
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .text(mainModel.selected.second().pretty);
+        e.canvas.append("text")
+            .attr("x", (width / 2))
+            .attr("y", 0 - (margin.top / 2))
+            .attr("class", "title-text")
+            .attr("text-anchor", "middle")
+            .style("font-size", "16px")
+            .style("text-decoration", "underline")  
+            .text(mainModel.settings.title());
+        e.canvas.append("text")
+            .attr("class", "aggregator-text")
+            .style("text-anchor", "left")
+            .attr("transform", "translate(" + (0 - margin.left) + " ," + (height + margin.bottom-5) + ")")
+            .style("font-size", "10px") 
+            .text(mainModel.selected.third().name);
+        svg.insert('defs', ":first-child")
+            .append('style')
+            .attr("type", "text/css")
+            .text(/*"<![CDATA[\n"+*/
+"svg { background-color: white; }\n"+
+"text { font: 14px sans-serif}\n"+
+".tick text { font-size: 14px; }\n"+
+".axis path,.axis line { fill: none; stroke: black; shape-rendering: crispEdges;}\n"+
+".line { fill: none; stroke-width: 1px;}\n"+
+".circle { r: 3; shape-rendering: crispEdges; }\n"+
+".bar { shape-rendering: crispEdges;}\n"
+/*"]]>"*/)
+    });
+    
+    // TODO: implement http://www.thesoftwaresimpleton.com/blog/2016/01/16/d3-axis/
+        
+    
+        
+    function changeDataset() {
+        var chart = mainModel.selected.chart();
+       
+        var canvas = chart.canvas;
+        
+        getRandomSubarray = function(l, leng) {
+            return l.filter(function(element, index) {
+                return index % Math.round(l.length / leng) == 0;
+            });
+        }
+        
+        var filter_index = mainModel.selected.filter();
+        var filter_value = null;
+        if (filter_index != "none") {
+            filter_value = mainModel.selected.filter_value();
+        } else {
+            filter_index = null;
+        }
+        
+        var left = mainModel.selected.first().data;
+        var actualData, xs, ys;
+        if (chart.id == 'bar') {
+            var indexes = $('#select-bar-keys').val();
+            if (mainModel.selected.bar_dataset().data.length == 0) {
+                return;
+            }
+            // TODO: fix this to be the chosen index
+            var indexed_data = mainModel.selected.category().data;
+            var key = mainModel.selected.first().name;
+            var indexifier = mainModel.selected.category();
+            var aggregator = mainModel.selected.third().id;
+            actualData = [];
+            for (var i = 0, length = indexes.length; i < length; i = i+1) {
+                var index = indexes[i];
+                actualData.push({'index': index, 
+                                 'value': indexed_data[key][index][aggregator]});
+            }
+        } else if (chart.id == 'scatter') {
+            var same_names = mainModel.selected.first().name == mainModel.selected.second().name;
+            var right = same_names ? left : mainModel.selected.second().data;
+            if (filter_index != null && filter_value != null) {
+                var indices = filter_index_values().data;
+                ys = [];
+                xs = [];
+                for (var i = 0, length = indices.length; i < length; i = i+1) {
+                    if (filter_value == indices[i]) {
+                        xs.push(left[i]);
+                        ys.push(right[i]);
+                    }
+                }
+            } else {
+                xs = getRandomSubarray(left, mainModel.settings.sampling());
+                ys = same_names ? xs : getRandomSubarray(right, mainModel.settings.sampling());
+            }
+            actualData = d3.zip(xs, ys).map(function(element) {
+                return {'x': element[0], 'y': element[1]}
+            });
+        } else {
+            if (filter_index != null && filter_value != null) {
+                var indices = filter_index_values().data;
+                ys = [];
+                for (var i = 0, length = indices.length; i < length; i = i+1) {
+                    var key_value = indices[i];
+                    if (typeof key_value === 'string') {
+                        key_value = key_value.replace(',', '')
+                    }
+                    if (filter_value == key_value) {
+                        ys.push(left[i]);
+                    }
+                }
+                console.log(ys);
+            } else {
+                ys = left;
+            }
+            actualData = ys.map(function(element, index) {
+                return {'x': index, 'y': element}
+            });
+        }
+        
+        if (chart.id == 'hist') {
+            x.domain([d3.min(ys), d3.max(ys)]);
+            var bins = parseInt(mainModel.settings.bins())+1;
+            if (isNaN(bins)) {
+                bins = 10;
+            }
+            tempScale = d3.scale.linear().domain([0, bins]).range(d3.extent(ys));
+            tickArray = d3.range(bins).map(tempScale).map(function(e) {
+                return e;
+            });
+            //var histMapper = d3.layout.histogram().bins(x.ticks(tickArray))(ys);
+            var histMapper = d3.layout.histogram().bins(tickArray)(ys);
+            y.domain([0, d3.max(histMapper, function(d) { return d.y; })]);
+        } else if (chart.id == 'bar') {
+            xOrdinal.domain(actualData.map(function(d) { return d.index; }));
+            y.domain([0, d3.max(actualData, function(d) { return Math.abs(d.value); })]);
+        } else {
+            x.domain(d3.extent(actualData, function(d) { return d.x; }));
+            y.domain(d3.extent(actualData, function(d) { return d.y; }));
+        }
+    
+        // bind data
+        
+        // add new elements
+        var appending;
+        if (chart.id == 'xy' || chart.id == 'line') {
+            appending = canvas.selectAll('.line')
+                            //.style('fill', mainModel.settings.color().fill)
+                            .style('stroke', mainModel.settings.color().stroke)
+                              .data(actualData);
+            appending.exit()
+                .transition()
+                .attr("stroke-width", 0)
+                .remove();
+                        
+            appending.transition()
+                    .duration(500)
+                    .attr("d", line(actualData));
+        } else if (chart.id == 'scatter') {
+            appending = canvas.selectAll('circle')
+                            .style('fill', mainModel.settings.color().stroke)
+                            //.style('outline', '1px solid '+mainModel.settings.color().stroke)
+                              .data(actualData);
+            appending.exit()
+                .transition()
+                .attr("r", 0)
+                .remove();
+            appending.enter().append('circle')
+                     .attr("class", "circle")
+                     .style('fill', mainModel.settings.color().stroke)
+                     .attr("cx", xMap)
+                     .attr("cy", yMap)
+                    .attr('r', 4);
+            appending.transition()
+                    .duration(500)
+                    .attr("cx", xMap)
+                    .attr("cy", yMap);
+        } else if (chart.id == 'bar') {
+            bars = canvas.selectAll('.bar')
+                            .style('fill', mainModel.settings.color().fill)
+                            .style('stroke', mainModel.settings.color().stroke)
+                            //.style('outline', '1px solid '+mainModel.settings.color().stroke)
+                            .data(actualData);
+            bars.exit()
+                .transition()
+                .duration(500)
+                .attr("y", y(0))
+                .attr('height', height - y(0))
+                .style('fill-opacity', 1e-6)
+                .remove();
+            
+            bars.enter().append("rect")
+                .attr("class", "bar")
+                .style('fill', mainModel.settings.color().fill)
+                .style('stroke', mainModel.settings.color().stroke)
+                //.style('outline', '1px solid '+mainModel.settings.color().stroke)
+                .attr("y", y(0))
+                .attr("height", height - y(0));
+                
+            bars.transition()
+                .duration(500)
+                .attr("x", function(d) { return xOrdinal(d.index); })
+                .attr("width", xOrdinal.rangeBand()) 
+                .attr("y", function(d) { return y(d.value); })
+                .attr("height", function(d) { return height - y(d.value); }); 
+            bars.append("text")
+                .attr("x", xOrdinal.rangeBand() / 2)
+                .attr("y", function(d) { return y(d.value) + 3; })
+                .attr("dy", ".75em")
+                .text(function(d) { return d.value; });    
+            
+        } else if (chart.id == 'hist') {
+            bars = canvas.selectAll('.bar')
+                            .style('fill', mainModel.settings.color().fill)
+                            .style('stroke', mainModel.settings.color().stroke)
+                            //.style('outline', '1px solid '+mainModel.settings.color().stroke)
+                            .data(histMapper);
+            bars.exit()
+                .transition()
+                .duration(500)
+                .attr("y", y(0))
+                .attr('height', height - y(0))
+                //.style('fill-opacity', 1e-6)
+                .remove();
+            
+            bars.enter().append("rect")
+                .attr("class", "bar")
+                .attr("y", y(0))
+                .style('fill', mainModel.settings.color().fill)
+                .style('stroke', mainModel.settings.color().stroke)
+                //.style('outline', '1px solid '+mainModel.settings.color().stroke)
+                .attr("height", height - y(0));
+                
+            bars.transition()
+                .duration(500)
+                .attr("x", function(d) { return x(d.x); })
+                .attr("width", width/(histMapper.length))
+                .attr("y", function(d) { return y(d.y); })
+                .attr("height", function(d) { return height - y(d.y); }); 
+        }
+        
+        var x_axis_label = mainModel.selected.chart().id == 'bar' ? 
+                  mainModel.selected.category().pretty : 
+                  mainModel.selected.chart().id == 'line' ? 
+                  //(mainModel.selected.dataset().order) : 
+                  (mainModel.selected.dataset().order !== "" ? mainModel.selected.dataset().order :
+                  (mainModel.selected.bar_dataset().data.filter(function(cur) {
+                        return cur.name != mainModel.selected.filter()
+                    }).reduce(function(pre, cur) {
+                        return pre+" / "+cur.pretty
+                    }, "").substring(3))) :
+                  mainModel.selected.first().pretty;
+        var y_axis_label = mainModel.selected.chart().id == 'hist' ? 
+                  'Number of '+mainModel.selected.dataset().row+"s": 
+                  mainModel.selected.chart().id == 'line' || mainModel.selected.chart().id == 'bar' ? 
+                  mainModel.selected.first().pretty :
+                  mainModel.selected.second().pretty;
+        
+        // Update the axis
+        var xAxis = d3.svg.axis().scale(x).orient("bottom");
+        var xAxisOrdinal = d3.svg.axis()
+                    .scale(xOrdinal)
+                    //.tickFormat(function(d) { return d.index })
+                    .orient("bottom");
+        var yAxis = d3.svg.axis().scale(y).orient("left");
+        
+        // Get the indexes; remove any filtered ones
+        // Use them in tandem to get the x-axis values
+        if (chart.id == 'line') {
+            var indexes = mainModel.only_indexes(mainModel.selected.dataset().data);
+            var all_ticks = [];
+            for (var i = 0; i < indexes[0].data.length; i = i+1) {
+                var a_tick = [];
+                var keep = true;
+                for (var j = 0; j < indexes.length; j = j+1) {
+                    var an_index = indexes[j],
+                        value = an_index.data[i];
+                    if (typeof value === 'string') {
+                        key_value = value.replace(',', '')
+                    } else {
+                        key_value = value;
+                    }
+                    if (an_index.name != filter_index) {
+                        a_tick.push(value);
+                    } else if (key_value != filter_value) {
+                        keep = false;
+                    }
+                }
+                if (keep) {
+                    all_ticks.push(""+a_tick.join(", "));
+                }
+            }
+            console.log(all_ticks);
+            xAxis.tickFormat(function(value, index) {
+                return all_ticks[value];
+            });
+            xAxisOrdinal.tickFormat(d3.format("d"));
+        } else if (stringContains(x_axis_label.toLowerCase(), "year")) {
+            xAxis.tickFormat(d3.format("d"));
+            xAxisOrdinal.tickFormat(d3.format("d"));
+        }
+        if (stringContains(y_axis_label.toLowerCase(), "year")) {
+            yAxis.tickFormat(d3.format("d"));
+        }
+        
+        canvas.selectAll("g.y.axis")
+            .call(yAxis)
+
+        var r = canvas.selectAll("g.x.axis")
+            .call(chart.id == 'bar' ? xAxisOrdinal : xAxis);
+        if (chart.id == 'bar' || chart.id == 'line') {
+            r.selectAll("text")  
+              .style("text-anchor", "end")
+              .attr("dx", "-.3em")
+              .attr("dy", ".15em")
+              .attr("transform", "rotate(-15)" );
+        }
+        if (chart.id == 'bar') {
+            d3.selectAll("text.aggregator-text")
+              .text("Aggregation: "+mainModel.selected.third().name);
+        } else {
+            if (mainModel.selected.filter_value() !== undefined) {
+                d3.selectAll("text.aggregator-text")
+                  .text(mainModel.selected.filter_value());
+            } else {
+                d3.selectAll("text.aggregator-text")
+                  .text("");
+            }
+        }
+        
+        
+        canvas.selectAll("text.x-axis-label")
+            .text(x_axis_label);
+        canvas.selectAll("text.y-axis-label")
+            .text(y_axis_label);
+    }
+    
+        
+    // generate initial legend
+    if (mainModel.selected.bar_dataset().data.length > 0) {
+        changeCategory();
+    }
+    //changeDataset();
+    mainModel.selected.first.subscribe(changeDataset);
+    mainModel.selected.second.subscribe(changeDataset);
+    mainModel.selected.category.subscribe(changeCategory);
+    mainModel.selected.third.subscribe(changeDataset);
+    mainModel.selected.chart.subscribe(changeDataset);
+    mainModel.selected.filter.subscribe(changeDataset);
+    mainModel.selected.filter_value.subscribe(changeDataset);
+    
+    mainModel.selected.chart.subscribe(function (chart_type) {
+        mainModel.settings.title("Add your title here")
+    });
+    
+    mainModel.settings.bins.subscribe(changeDataset);
+    mainModel.settings.sampling.subscribe(changeDataset);
+    mainModel.settings.color.subscribe(changeDataset);
+    mainModel.settings.title.subscribe(function() {
+        d3.selectAll("text.title-text")
+            .text(mainModel.settings.title());
+    });
+    forceUpdate = changeDataset;
+});
+    </script>
+    
+<div class='container'>
+
+<div class="page-header">
+    
+    <img class="img-rounded pull-right" src="suicide_attacks.png" alt="Suicide Attacks" style="max-width: 128px; max-height: 128px;">
+    
+    <h1>Visualize Suicide Attacks</h1>
+    <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
+    <span class="text-muted">By Austin Cory Bart (<a href="mailto:acbart@vt.edu">acbart@vt.edu</a>)</span><br>
+    <span class="text-muted">Version 1, created 3/27/2016</span><br>
+    <span class="text-muted">Tags: global, attack, damage, kill, hurt, destroy, pain, suffering, terror, terrorism, religion, warfare, war, car, bomb, gun, shooting</span><br>
+</div>
+
+<div class="alert hide-on-load alert-warning row" role="alert">
+    <p style='padding-bottom:10px'>
+    <b>Please Wait!</b> The page is loading; this can take a little while the first time.
+  </p>
+  <div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+    <span class="sr-only">45% Complete</span>
+  </div>
+  </div>
+</div>
+
+<div class='modal fade' id="capture-dialog" style='display:none'>
+    <div class='modal-dialog' style='width:750px'>
+        <div class='modal-content' id='modal-message' >
+            <div class='modal-header'>
+                <button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button>
+                <h4 class='modal-title'>Capture Dialog</h4>
+            </div>
+            <div class='modal-body' style='width:100%; height:400px; white-space:pre-wrap'>
+            Click the image below in order to save it.
+            <a id="download-image" href="" download="" target="_blank">
+            <img />
+            </a>
+            </div>
+            <!--<div class='modal-footer'>
+                <button type='button' class='btn btn-white' data-dismiss='modal'>Close</button>
+            </div>    -->
+        </div>
+    </div>
+</div>
+
+<div class='row'>
+    <h3 id="overview">Overview</h3>
+    
+    <p>
+    The Chicago Project on Security and Terrorism (CPOST) maintains a searchable database on all suicide attacks from 1982 through September 2015. The database includes information about the location of attacks, the target type, the weapon used, and systematic information on the demographic and general biographical characteristics of suicide attackers. The database expands the breadth of the data available in English using native language sources (e.g., Arabic, Hebrew, Russian, Tamil) that are likely to have the most extensive relevant information.
+The current CPOST-SAD release contains the universe of suicide attacks from 1982 through September 2015, a total of 4,814 attacks in over 40 countries. The CPOST Suicide Attack Database (CPOST-SAD) contains data on the universe of suicide attacks. For each attack, the database includes information about the geographic location, target classification, and weapon(s) used, as well as systematic information on the demographic and general biographical characteristics of suicide attackers. More information about the coding and methodology is available on the CPOST website below.
+Note that multiple attackers or targets are collapsed into a single record for simplicity's sake.
+
+    </p>
+    
+    
+    <p>
+    <i>Chicago Project on Security and Terrorism (CPOST). 2015. Suicide Attack Database (December 9, 2015 Release). [Data File]. Retrieved from http://cpostdata.uchicago.edu/</i>
+    </p>
+    
+</div>
+
+<div class='row'>
+    <h3 id="overview">Visualizer</h3>
+    
+    <!-- Dataset selector -->
+    <div class='col-md-2' data-bind="visible: structures.length >= 2">
+        <div class="form-group">
+            <label for="choose-dataset">Dataset: </label>
+            <select class="form-control" id="choose-dataset"
+                    data-bind="options: structures,
+                               value: selected.dataset,
+                               optionsText: 'name'">
+            </select>
+        </div>
+    </div>
+    
+    <!-- Dataset selector -->
+    <div class='col-md-3'>
+        <div class="form-group">
+            <label for="set-title">Title: </label>
+            <input name='set-title' class='form-control' data-bind="textInput: settings.title" />
+        </div>
+    </div>
+    <!-- Chart Type selector -->
+    <div class='col-md-2'>
+        <label for="choose-chart">Chart Type: </label>
+        <select class="form-control vertically-align" id="choose-chart"
+                data-bind="options: charts, 
+                           value: selected.chart,
+                           optionsText: 'name'">
+        </select>
+    </div>
+    <!-- Sampling selector -->
+    <div class='col-md-3' data-bind="visible: selected.chart().id == 'scatter'">
+        <div class="form-group">
+            <label for="set-sampling">Number of points: </label>
+            <span data-bind="text: settings.sampling" class='text-muted'></span>
+            <input type="range" name='set-sampling' data-bind="attr: {min: 10, max: mainModel.selected.first().data.length}, value: settings.sampling" />
+        </div>
+    </div>
+    <!-- Bin selector -->
+    <div class='col-md-3' data-bind="visible: selected.chart().id == 'hist'">
+        <div class="form-group">
+            <label for="set-bins">Bins: </label>
+            <input name='set-bins' class='form-control' data-bind="textInput: settings.bins" />
+        </div>
+    </div>
+    <!-- Aggregate selector, bar charts -->
+    <div class='col-md-3' data-bind="visible: selected.chart().id == 'bar'">
+        <label for="choose-third-bar" data-bind="text: selected.chart().third"></label>
+        <select class="form-control vertically-align" id="choose-third-bar"
+                    data-bind="options: aggregators,
+                               value: selected.third,
+                               optionsText: 'name'">
+        </select>
+    </div>
+    <!-- Color Scheme selector, bar charts -->
+    <div class='col-md-3'>
+        <label for="choose-color">Color Scheme:</label>
+        <select class="form-control" id="choose-color"
+                    data-bind="options: schemes,
+                               value: settings.color,
+                               optionsText: 'name'">
+        </select>
+    </div>
+</div>
+<hr>
+<!-- Key selector, all charts -->
+<div class='row'>
+    <div class='col-md-6' data-bind="visible: selected.chart().id != 'bar' || selected.bar_dataset().data.length > 0">
+        <label for="choose-left" data-bind="text: selected.chart().first"></label>
+        <select class="form-control vertically-align" id="choose-left"
+                    data-bind="options: $root.only_numbers(selected.dataset().data), 
+                               value: selected.first, 
+                               optionsText: 'pretty'">
+        </select>
+        <div data-bind="text: selected.first().comment"></div>
+    </div>
+<!-- Secondary Key selector, scatter plots -->
+    <div class='col-md-6' data-bind="visible: selected.chart().id == 'scatter'">
+        <label for="choose-second-scatter" data-bind="text: selected.chart().second"></label>
+        <select class="form-control vertically-align" id="choose-second-scatter"
+                    data-bind="options: $root.only_numbers(selected.dataset().data),
+                               value: selected.second,
+                               optionsText: 'pretty'">
+        </select>
+        <div data-bind="text: selected.second().comment"></div>
+    </div>
+<!-- Category selector, other charts -->
+    <div class='col-md-6' data-bind="visible: (selected.chart().id == 'line' || selected.chart().id == 'hist' || selected.chart().id == 'scatter')  && selected.bar_dataset().data.length > 0">
+        <label for="choose-filter-index">Filter</label>
+        <select class="form-control vertically-align" id="choose-filter-index"
+                data-bind="value: selected.filter">
+            <option value="none">None</option>
+            <!-- ko foreach: selected.bar_dataset().data -->
+            <option data-bind="attr: { value: name }, text: pretty"></option>
+            <!-- /ko -->
+        </select>
+        <div data-bind="text: bars.length > 0 ? selected.filter().comment : ''"></div>
+    </div>
+    <div class='col-md-6' data-bind="visible: (selected.chart().id == 'line' || selected.chart().id == 'hist' || selected.chart().id == 'scatter')  && selected.bar_dataset().data.length > 0 && selected.filter() != 'none'">
+        <label for="choose-filter-value">By</label>
+        <div data-bind="text: selected.filter_index_data() === null ? '' : selected.filter_index_data().comment"></div>
+        <select id='select-filter-value' class='form-control' 
+                data-bind="options: selected.filter_index_data() === null ? [] : sorted_indexes(),
+                                                    value: selected.filter_value">
+        </select>
+    </div>
+<!-- Category selector, bar charts -->
+    <div class='alert alert-warning col-md-6' data-bind="visible: selected.chart().id == 'bar' && selected.bar_dataset().data.length == 0">
+        This dataset has no indexes, so you cannot use it in a bar chart.
+    </div>
+    <div class='col-md-6' data-bind="visible: selected.chart().id == 'bar'  && selected.bar_dataset().data.length > 0">
+        <label for="choose-second-bar">Group By</label>
+        <select class="form-control vertically-align" id="choose-second-bar"
+                    data-bind="options: mainModel.selected.bar_dataset().data,
+                               value: selected.category,
+                               optionsText: 'pretty'">
+        </select>
+        <div data-bind="text: bars.length > 0 ? selected.category().comment : ''"></div>
+        <div data-bind="text: selected.third().comment"></div>
+        <select multiple=multiple id='select-bar-keys' name='select-bar-keys-named[]'>
+        </select>
+    </div>
+</div>
+<hr>
+
+<button class='btn btn-default' id='capture-button'><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>Download Visualization</button>
+
+<hr>
+<span data-bind=""></span>
+
+<div class='row' style='height: 400px' id='graph-area'>
+    <div id="data-visualization-line" class='data-viz col-md-4'
+         data-bind="fadeVisible: selected.chart().id == 'line'"></div>
+    <div id="data-visualization-xy" class='data-viz col-md-4'
+         data-bind="fadeVisible: selected.chart().id == 'xy'"></div>
+    <div id="data-visualization-hist" class='data-viz col-md-4'
+         data-bind="fadeVisible: selected.chart().id == 'hist'"></div>
+    <div id="data-visualization-scatter" class='data-viz col-md-4'
+         data-bind="fadeVisible: selected.chart().id == 'scatter'"></div>
+    <div id="data-visualization-bar" class='data-viz col-md-4'
+         data-bind="fadeVisible: selected.chart().id == 'bar'"></div>
+</div>
+
+
+
+</div>
+
+<!-- Datasets! -->
+
+<script src='suicide_attacks.js'></script>
+<script src='suicide_attacks_bar.js'></script>
+
+

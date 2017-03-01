@@ -16,6 +16,9 @@ local:
   - file: medal_of_honor.json
     name: medal_of_honor
     row: awardee
+    indexes:
+      - name: Awarded Year
+        jsonpath: medal_of_honor.[0].awarded.date.year
 interfaces:
   - name: get awardees
     returns: list[awardee]

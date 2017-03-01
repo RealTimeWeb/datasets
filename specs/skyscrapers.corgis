@@ -14,6 +14,11 @@ local:
   - file: skyscrapers.json
     name: skyscrapers
     row: skyscraper
+    indexes:
+      - name: Material
+        jsonpath: skyscrapers.[0].material
+      - name: Location
+        jsonpath: skyscrapers.[0].location.city
 interfaces:
   - name: get skyscrapers
     returns: list[skyscraper]

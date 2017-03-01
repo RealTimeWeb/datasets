@@ -20,6 +20,11 @@ local:
   - file: retail_services.json
     name: retail_services
     row: report
+    indexes:
+      - name: Year
+        jsonpath: retail_services.[0].time.year
+      - name: Month
+        jsonpath: retail_services.[0].time.month name
 interfaces:
   - name: get report
     description: Returns sales, inventory, and ratio data for every month.

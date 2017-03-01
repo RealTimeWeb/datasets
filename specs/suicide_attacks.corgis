@@ -18,6 +18,11 @@ local:
   - file: suicide_attacks.json
     name: suicide_attacks
     row: attack
+    indexes:
+      - name: Campaign
+        jsonpath: suicide_attacks.[0].campaign.name
+      - name: Location
+        jsonpath: suicide_attacks.[0].target.country
 interfaces:
   - name: get attacks
     returns: list[attack]

@@ -23,6 +23,11 @@ local:
   - file: injuries.json
     name: injuries
     row: report
+    indexes:
+      - name: State
+        jsonpath: injuries.[0].address.state
+      - name: Year
+        jsonpath: injuries.[0].year
 interfaces:
   - name: get reports
     description: Returns injury reports for companies in the US.
