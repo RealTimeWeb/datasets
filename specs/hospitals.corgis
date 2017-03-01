@@ -15,6 +15,9 @@ local:
   - file: hospitals.json
     name: hospitals
     row: hospital
+    indexes:
+      - name: State
+        jsonpath: hospitals.[0].Location.State
 interfaces:
   - name: get hospitals
     description: Returns hospitals from the dataset.

@@ -15,6 +15,11 @@ local:
   - file: hydropower.json
     name: hydropower
     row: dam
+    indexes:
+      - name: State
+        jsonpath: hydropower.[0].Location.State
+      - name: Year
+        jsonpath: hydropower.[0].Identity.Project.Year
 interfaces:
   - name: get dams
     description: Returns dams from the dataset.
