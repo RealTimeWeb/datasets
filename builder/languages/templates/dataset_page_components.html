@@ -1,4 +1,9 @@
 {% macro header(metadata, language) -%}
+<script>
+$(document).ready(function() {
+    log('load', '{{ metadata.name }}');
+});
+</script>
 <div class="page-header">
     {% if metadata.icon %}
     <img class="img-rounded pull-right" src="{{ metadata.name|snake_case }}.png" alt="{{ metadata.name }}" style="max-width: 128px; max-height: 128px;">
