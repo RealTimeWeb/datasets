@@ -179,9 +179,9 @@ def build_locals(model):
         name = snake_case(local["name"])
         file = local["file"]
         row_type = local["type"]
-        json_path = snake_case(model['metadata']['name']) + "_dataset.js"
-        new_file = name+'.csv'
-        new_small_file = name+'_small.csv'
+        json_path = module_name + "_dataset.js"
+        new_file = module_name+'.csv'
+        new_small_file = module_name+'_small.csv'
         row_type = local["type"]
         keys = set()
         with open(file, "r") as local_file:

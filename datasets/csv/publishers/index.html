@@ -41,7 +41,6 @@ Publishers CSV Library (CORGIS Datasets Project)
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -60,7 +59,12 @@ Publishers CSV Library (CORGIS Datasets Project)
 <div class="container">
 
 
-    <div class="page-header">
+    <script>
+$(document).ready(function() {
+    log('load', 'Publishers');
+});
+</script>
+<div class="page-header">
     
     <img class="img-rounded pull-right" src="publishers.png" alt="Publishers" style="max-width: 128px; max-height: 128px;">
     

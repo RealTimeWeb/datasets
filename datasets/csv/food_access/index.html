@@ -41,7 +41,6 @@ Food Access CSV Library (CORGIS Datasets Project)
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -60,7 +59,12 @@ Food Access CSV Library (CORGIS Datasets Project)
 <div class="container">
 
 
-    <div class="page-header">
+    <script>
+$(document).ready(function() {
+    log('load', 'Food Access');
+});
+</script>
+<div class="page-header">
     
     <img class="img-rounded pull-right" src="food_access.png" alt="Food Access" style="max-width: 128px; max-height: 128px;">
     

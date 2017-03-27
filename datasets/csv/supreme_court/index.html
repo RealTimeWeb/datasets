@@ -41,7 +41,6 @@ Supreme Court CSV Library (CORGIS Datasets Project)
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -60,7 +59,12 @@ Supreme Court CSV Library (CORGIS Datasets Project)
 <div class="container">
 
 
-    <div class="page-header">
+    <script>
+$(document).ready(function() {
+    log('load', 'Supreme Court');
+});
+</script>
+<div class="page-header">
     
     <img class="img-rounded pull-right" src="supreme_court.png" alt="Supreme Court" style="max-width: 128px; max-height: 128px;">
     
