@@ -13,22 +13,22 @@ metadata:
         citation: http://www.ucrdatatool.gov/Search/Crime/Local/JurisbyJurisStepTwo.cfm
 local:
   - file: county_crime.json
-    name: crime
+    name: county_crime
     row: report
     indexes:
       - name: department
-        jsonpath: crime.[0].Department
+        jsonpath: county_crime.[0].Department
       - name: year
-        jsonpath: crime.[0].Year
+        jsonpath: county_crime.[0].Year
 interfaces:
   - name: get all crimes
     returns: list[report]
     description: Gets a list of all the crime reports in the database.
     test:
-        sql: SELECT data FROM crime LIMIT {hardware}
+        sql: SELECT data FROM county_crime LIMIT {hardware}
         post: json()
     production:
-        sql: SELECT data FROM crime
+        sql: SELECT data FROM county_crime
         post: json()
   - name: get crime by county
     description: Given the name of an county, returns all the crime reports for that county in the database.
@@ -36,13 +36,13 @@ interfaces:
       - name: department
         default: "Alabaster Police Dept"
         type: string
-        matches: SELECT DISTINCT department FROM crime
+        matches: SELECT DISTINCT department FROM county_crime
         description: The name of the county.
     production:
-        sql: SELECT data FROM crime WHERE department=?
+        sql: SELECT data FROM county_crime WHERE department=?
         post: json()
     test:
-        sql: SELECT data FROM crime WHERE department=? LIMIT {hardware}
+        sql: SELECT data FROM county_crime WHERE department=? LIMIT {hardware}
         post: json()
     returns: list[report]
   - name: get crime by year
@@ -51,17 +51,17 @@ interfaces:
       - name: year
         default: 1984
         type: int
-        matches: SELECT DISTINCT department FROM crime
+        matches: SELECT DISTINCT department FROM county_crime
         description: The year to get reports.
     production:
-        sql: SELECT data FROM crime WHERE year=?
+        sql: SELECT data FROM county_crime WHERE year=?
         post: json()
     test:
-        sql: SELECT data FROM crime WHERE year=? LIMIT {hardware}
+        sql: SELECT data FROM county_crime WHERE year=? LIMIT {hardware}
         post: json()
     returns: list[report]
 structures:
-  "crime.[0].Data.Rates": Rates are the number of reported offenses per 100,000 population.
+  "county_crime.[0].Data.Rates": Rates are the number of reported offenses per 100,000 population.
 comments:
     Data:
         Population: The number of people living in this state at the time the report was created.

@@ -13,20 +13,20 @@ metadata:
         citation: http://www.census.gov/quickfacts/table/PST045215/00
 local:
   - file: county_demographics.json
-    name: demographics
+    name: county_demographics
     row: report
     indexes:
       - name: state
-        jsonpath: demographics.[0].State
+        jsonpath: county_demographics.[0].State
 interfaces:
   - name: get all counties
     description: Returns the report for each county from the dataset.
     returns: list[report]
     production:
-        sql: SELECT data FROM demographics
+        sql: SELECT data FROM county_demographics
         post: json()
     test:
-        sql: SELECT data FROM demographics LIMIT {hardware}
+        sql: SELECT data FROM county_demographics LIMIT {hardware}
         post: json()
   - name: get counties by state
     args:
@@ -37,41 +37,41 @@ interfaces:
     description: Returns the report for each county in a given state.
     returns: list[report]
     production:
-        sql: SELECT data FROM demographics WHERE state=? COLLATE NOCASE
+        sql: SELECT data FROM county_demographics WHERE state=? COLLATE NOCASE
         post: json()
     test:
-        sql: SELECT data FROM demographics WHERE state=? COLLATE NOCASE LIMIT {hardware}
+        sql: SELECT data FROM county_demographics WHERE state=? COLLATE NOCASE LIMIT {hardware}
         post: json()
 structures:
-    "demographics.[0].Age": percent, 2014
-    "demographics.[0].Miscellaneous.Percent Female": '2014'
-    "demographics.[0].Ethnicities": percent, 2014
-    "demographics.[0].Miscellaneous.Living in Same House +1 Years": percent, 2009-2013
-    "demographics.[0].Miscellaneous.Foreign Born": percent 2009-2013
-    "demographics.[0].Miscellaneous.Language Other than English at Home" : age 5+, percent, 2009-2013
-    "demographics.[0].Education": percent, 2009-2013
-    "demographics.[0].Miscellaneous.Veterans": 2009-2013
-    "demographics.[0].Miscellaneous.Mean Travel Time to Work": minutes, workers aged 16+, 2009-2013
-    "demographics.[0].Housing.Housing Units": '2014'
-    "demographics.[0].Housing.Homeownership Rate": 2009-2013
-    "demographics.[0].Housing.Units in Multi-Unit Structures": percent, 2009-2013
-    "demographics.[0].Housing.Median Value of Owner-Occupied Units": 2009-2013
-    "demographics.[0].Housing.Households": 2009-2013
-    "demographics.[0].Housing.Persons per Household": 2009-2013
-    "demographics.[0].Income": 2009-2013
-    "demographics.[0].Income.Per Capita Income": 2013 dollars
-    "demographics.[0].Income.Persons Below Poverty Level": percent
-    "demographics.[0].Employment.Private Non-farm Establishments": '2013'
-    "demographics.[0].Employment.Private Non-farm Employment": '2013'
-    "demographics.[0].Employment.Private Non-farm Employment Percent Change": 2012-2013
-    "demographics.[0].Employment.Nonemployer Establishments": '2013'
-    "demographics.[0].Employment.Firms": '2007'
-    "demographics.[0].Miscellaneous.Manufacturers Shipments": $100,000 of dollars, 2007
-    "demographics.[0].Sales": '2007'
-    "demographics.[0].Sales.Accommodation and Food Services Sales": $100,000 of dollars
-    "demographics.[0].Sales.Merchant Wholesaler Sales": $100,000 of dollars
-    "demographics.[0].Sales.Retail Sales": $100,000 of dollars
-    "demographics.[0].Miscellaneous.Building Permits": '2014'
-    "demographics.[0].Miscellaneous.Land Area": Square Miles, 2010
-    "demographics.[0].Population.Population per Square Mile": '2010'
-    "demographics.[0].Population.Population Percent Change": April 1, 2010 to July 1, 2014
+    "county_demographics.[0].Age": percent, 2014
+    "county_demographics.[0].Miscellaneous.Percent Female": '2014'
+    "county_demographics.[0].Ethnicities": percent, 2014
+    "county_demographics.[0].Miscellaneous.Living in Same House +1 Years": percent, 2009-2013
+    "county_demographics.[0].Miscellaneous.Foreign Born": percent 2009-2013
+    "county_demographics.[0].Miscellaneous.Language Other than English at Home" : age 5+, percent, 2009-2013
+    "county_demographics.[0].Education": percent, 2009-2013
+    "county_demographics.[0].Miscellaneous.Veterans": 2009-2013
+    "county_demographics.[0].Miscellaneous.Mean Travel Time to Work": minutes, workers aged 16+, 2009-2013
+    "county_demographics.[0].Housing.Housing Units": '2014'
+    "county_demographics.[0].Housing.Homeownership Rate": 2009-2013
+    "county_demographics.[0].Housing.Units in Multi-Unit Structures": percent, 2009-2013
+    "county_demographics.[0].Housing.Median Value of Owner-Occupied Units": 2009-2013
+    "county_demographics.[0].Housing.Households": 2009-2013
+    "county_demographics.[0].Housing.Persons per Household": 2009-2013
+    "county_demographics.[0].Income": 2009-2013
+    "county_demographics.[0].Income.Per Capita Income": 2013 dollars
+    "county_demographics.[0].Income.Persons Below Poverty Level": percent
+    "county_demographics.[0].Employment.Private Non-farm Establishments": '2013'
+    "county_demographics.[0].Employment.Private Non-farm Employment": '2013'
+    "county_demographics.[0].Employment.Private Non-farm Employment Percent Change": 2012-2013
+    "county_demographics.[0].Employment.Nonemployer Establishments": '2013'
+    "county_demographics.[0].Employment.Firms": '2007'
+    "county_demographics.[0].Miscellaneous.Manufacturers Shipments": $100,000 of dollars, 2007
+    "county_demographics.[0].Sales": '2007'
+    "county_demographics.[0].Sales.Accommodation and Food Services Sales": $100,000 of dollars
+    "county_demographics.[0].Sales.Merchant Wholesaler Sales": $100,000 of dollars
+    "county_demographics.[0].Sales.Retail Sales": $100,000 of dollars
+    "county_demographics.[0].Miscellaneous.Building Permits": '2014'
+    "county_demographics.[0].Miscellaneous.Land Area": Square Miles, 2010
+    "county_demographics.[0].Population.Population per Square Mile": '2010'
+    "county_demographics.[0].Population.Population Percent Change": April 1, 2010 to July 1, 2014

@@ -1,5 +1,6 @@
 {
   "labor": {
+    "description": "The Current Population Survey (CPS) is a monthly survey of households conducted by the Bureau of Census for the Bureau of Labor Statistics. It provides a comprehensive body of data on the labor force, employment, unemployment, persons not in the labor force, hours of work, earnings, and other demographic and labor force characteristics.\n", 
     "dicts": {
       "count": 29, 
       "levels": {
@@ -74,7 +75,7 @@
     }, 
     "length": 528, 
     "indexes": [
-      0
+      1
     ], 
     "locals": 0, 
     "size": 726272

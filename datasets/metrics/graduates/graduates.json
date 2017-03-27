@@ -1,5 +1,6 @@
 {
   "graduates": {
+    "description": "The data in this library comes from the National Survey of Recent College Graduates.  Included is information about employment numbers, major information, and the earnings of different majors. Many majors were not available before 2010, so their values have been recorded as 0 (note that this may affect the averages shown in the bar charts).\n", 
     "dicts": {
       "count": 13, 
       "levels": {

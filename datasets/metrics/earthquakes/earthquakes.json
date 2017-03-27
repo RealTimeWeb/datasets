@@ -1,5 +1,6 @@
 {
   "earthquakes": {
+    "description": "Earthquake records from around the world collected from the United States Geological Survey.  Important details about the earthquake such as distance, gap, magnitude, depth and significance are included to properly describe the earthquake.  Additionally, data about exact geological coordinates and a relative description of the earthquake's location is included. The earthquakes collected are from the past month.\n", 
     "dicts": {
       "count": 4, 
       "levels": {

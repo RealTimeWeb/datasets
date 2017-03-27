@@ -9,7 +9,7 @@ Name & ABF & Height & Lists & Objects & Booleans & Integers & Strings & Floats &
 {% endfor -%}
 \end{tabular}
 \end{figure*}
-
+%**************************************
 {% for report in reports -%}
 {% for name, data in report.items() -%}
 {% for tag in data.tags -%}
@@ -17,3 +17,4 @@ Name & ABF & Height & Lists & Objects & Booleans & Integers & Strings & Floats &
 {% endfor -%}
 {% endfor -%}
 {% endfor %}
+%**************************************

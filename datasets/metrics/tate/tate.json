@@ -1,5 +1,6 @@
 {
   "tate": {
+    "description": "Tate holds the national collection of British art from 1500 to the present day and international modern and contemporary art. The collection embraces all media, from painting, drawing, sculpture and prints to photography, video and film, installation and performance. This dataset is not ordered in any particular way.\nThis dataset has metadata about many pieces from their collection.\n", 
     "dicts": {
       "count": 7, 
       "levels": {

@@ -1,5 +1,6 @@
 {
   "aids": {
+    "description": "The UNAIDS Organization is an entity of the United Nations that looks to reduce the transmission of AIDS and provide resources to those currently affected by the disease.  The following data set contains information on the number of those affected by the disease, new cases of the disease being reported, and AIDS-related deaths for a large set of countries over the course of 1990 - 2015.\n", 
     "dicts": {
       "count": 6, 
       "levels": {

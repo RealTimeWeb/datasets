@@ -1,5 +1,6 @@
 {
   "food_access": {
+    "description": "From the United States Department of Agriculture's Economic Research Service, the dataset contains information about US county's ability to access supermarkets, supercenters, grocery stores, or other sources of healthy and affordable food.  Most measures of how individuals and neighborhoods are able to access food are based on the following indicators: \n    - Accessibility to sources of healthy food, as measured by distance to a store or by the number of stores in an area.\n    - Individual-level resources that may affect accessibility, such as family income or vehicle availability.\n    - Neighborhood-level indicators of resources, such as the average income of the neighborhood and the availability of public transportation.  \n", 
     "dicts": {
       "count": 11, 
       "levels": {

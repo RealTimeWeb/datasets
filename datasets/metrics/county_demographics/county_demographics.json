@@ -1,5 +1,6 @@
 {
   "demographics": {
+    "description": "The following data set is information obtained about counties in the United States from 2007 through 2014 through the United States Census Bureau.  Information described in the data includes the age distributions, the education levels, employment statistics, ethnicity percents, houseold information, income, and other miscellneous statistics.\n", 
     "dicts": {
       "count": 11, 
       "levels": {

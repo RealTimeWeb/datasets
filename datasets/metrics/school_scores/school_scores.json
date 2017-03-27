@@ -1,5 +1,6 @@
 {
   "school_scores": {
+    "description": "SAT Scores from across the country\n", 
     "dicts": {
       "count": 47, 
       "levels": {

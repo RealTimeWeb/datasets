@@ -1,5 +1,6 @@
 {
   "cars": {
+    "description": "This is a dataset about cars and how much fuel they use.\n", 
     "dicts": {
       "count": 6, 
       "levels": {

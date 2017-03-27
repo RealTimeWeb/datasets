@@ -1,5 +1,6 @@
 {
   "energy": {
+    "description": "United States Government reports on consumption, production, expenditures, and prices of various fuel sources. This data comes from the US Energy Information Administration, which has historical data from 1960 to 2014. Information was not always available, in which case 0 was reported instead. In some cases, very tiny values were rounded down to zero.\n", 
     "dicts": {
       "count": 20, 
       "levels": {

@@ -3,13 +3,16 @@ import os
 import json
 import matplotlib
 from sklearn import preprocessing
-
+import re
 
 base_directory = os.path.dirname(os.path.realpath(__file__))
 
 templates = base_directory
 env = Environment(loader=FileSystemLoader(templates))
 skip_list = ['twitter', 'gutenberg', 'weather', 'airports', 'johnsongrass', 'kepler', 'businesses']
+
+clean_words = lambda s: re.findall(r'[^\s!,.?":;0-9]+', s)
+env.filters['clean_words'] = clean_words
 
 folders = [folder
            for folder in os.listdir(base_directory+'/') 
@@ -26,19 +29,23 @@ with open(os.path.join(base_directory, 'index.tex'), 'w') as output:
 import matplotlib.pyplot as plt
 import pandas as pd
 
-plt.style.use('classic')
-
+#%%
 data_types = pd.DataFrame([s['atomics'] for r in reports for s in r.values()])
 data_types['lists'] = [s['lists']['count'] for r in reports for s in r.values()]
 data_types['objects'] = [s['dicts']['count'] for r in reports for s in r.values()]
 data_types = data_types[['booleans', 'floats', 'ints', 'strings', 'lists', 'objects']]
 data_types.columns = ['Bool', 'Float', 'Integer', 'String', 'Lists', 'Objects']
-#data_types = data_types.apply(lambda c: c / c.sum() * 100, axis=1)
-ax = data_types.plot.box(vert=False, figsize=(2.5,2.5))
+#data_types.ix[data_types['Integer'] > 100, 'Integer'] = 100
+data_types = data_types.apply(lambda c: c / c.sum() * 100, axis=1)
+ax = data_types.plot.box(vert=False, figsize=(1.5,1.5))
 ax.set_xlabel('Percentage of Total Types')
 ax.set_ylabel('Types')
+fig = matplotlib.pyplot.gcf()
+fig.set_size_inches(4, 4)
+plt.savefig('_images/types.tiff', format='tiff', dpi=300, bbox_inches='tight', figsize=(2, 2))
 plt.show()
 
+#%%%
 min_max_scaler = preprocessing.MinMaxScaler()
 
 dt_stds = pd.DataFrame(columns=[])
@@ -50,6 +57,7 @@ plt.xlabel("Percentage of Texts")
 plt.ylabel("Percentage of Numbers")
 plt.show()
 
+#%%
 shapes = pd.DataFrame([{'Heights': s['heights'],
                         'Average Branching Factor': s['dicts']['average branching factor'],
                         'Number of Fields': s['atomics']['count'],
@@ -77,6 +85,7 @@ axarr[0, 0].set_title("Distribution of Datasets' Heights")
 axarr[1, 0].set_title("TESTING")
 plt.tight_layout()
 
+#%%
 print("Total Size (MB)", shapes['Size (MB)'].sum())
 print("Total Size (KB)", shapes['Size (MB)'].sum()*1000)
 print("Total Rows", shapes['Rows (1000s)'].sum()*1000)
@@ -111,12 +120,14 @@ jz = [p for i, x in enumerate(jx) for p in [i]*int(x)]
 pd.Series(jz).plot.box()
 plt.show()
 '''
+#%%
 
 sax = shapes.plot.box(subplots=True, vert=False, layout=(6, 1), 
-                      sharex=False, figsize=(5,3))
+                      sharex=False, figsize=(4,4))
 fig = matplotlib.pyplot.gcf()
 #fig.set_size_inches(2.5, .5)
-fig.subplots_adjust(hspace=.9)
+fig.subplots_adjust(hspace=1)
+fig.savefig('_images/metrics.tiff', format='tiff', dpi=300, bbox_inches='tight')
 
 #levels.plot.box(vert=False, showfliers=False)
 

@@ -1,5 +1,6 @@
 {
   "health": {
+    "description": "This library holds data about reports of diseases in America.\n", 
     "dicts": {
       "count": 1, 
       "levels": {

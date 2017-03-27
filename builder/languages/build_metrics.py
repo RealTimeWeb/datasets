@@ -301,6 +301,7 @@ def build_report(model):
                 json_reports[name]['length'] = len(data_list)
                 json_reports[name]['size'] = os.path.getsize(file)
                 json_reports[name]['tags'] = model['metadata']['tags']
+                json_reports[name]['description'] = model['metadata']['description']['overview']
                 json_reports[name]['indexes'] = [len(local['indexes'])
                                                  for local in locals]
             elif type == "csv":

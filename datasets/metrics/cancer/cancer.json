@@ -1,5 +1,6 @@
 {
   "cancer": {
+    "description": "From the United States Cancer Statistics as part of the U.S. Center for Disease Control, the following data set focuses on the crude rate for all types of cancer reported for different demograpic groups.  Significant groupings include age, gender, race and geographical area.\n", 
     "dicts": {
       "count": 3, 
       "levels": {

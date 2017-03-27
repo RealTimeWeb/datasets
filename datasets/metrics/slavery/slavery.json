@@ -1,5 +1,6 @@
 {
   "slavery": {
+    "description": "This dataset has financial records of New Orleans slave sales, 1856-1861. There are almost 16,000 sales recorded in this dataset. \n", 
     "dicts": {
       "count": 6, 
       "levels": {
@@ -52,7 +53,7 @@
     }, 
     "length": 9599, 
     "indexes": [
-      0
+      1
     ], 
     "locals": 0, 
     "size": 6099012

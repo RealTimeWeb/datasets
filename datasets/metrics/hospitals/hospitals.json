@@ -1,5 +1,6 @@
 {
   "hospitals": {
+    "description": "Medicare has collected data on many different hospitals throughout the country to allow users to compare the quality of these institutions before using their services.  Data includes descriptions of the location of the hospitals, information about the hospitals' emergency services and type of hospital, and outpatient volume for the different wards of the hospitals.\n", 
     "dicts": {
       "count": 4, 
       "levels": {
@@ -47,7 +48,7 @@
     }, 
     "length": 4861, 
     "indexes": [
-      0
+      1
     ], 
     "locals": 0, 
     "size": 2682333
