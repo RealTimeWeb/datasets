@@ -49,6 +49,7 @@ def add_to_index(target, language, spec):
         'icon': spec.metadata.icon,
         'short': spec.metadata.description.get('short', ''),
         'overview': spec.metadata.description.get('overview', ''),
+        'hide': spec.metadata.hide,
         'tags': spec.metadata.tags
     }
     index[language]['datasets'][name] = new_entry
@@ -106,6 +107,7 @@ def reconstruct_index(target, specs):
                 'name': metadata['name'],
                 'icon': library_name+'.png',
                 'short': metadata['description'].get('short', ''),
+                'hide': metadata.get('hide', ''),
                 'overview': metadata['description'].get('overview', ''),
                 'tags': metadata['tags']
             }

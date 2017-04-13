@@ -17,6 +17,9 @@ for city in data:
 print(len(data))
         
 plt.hist(new)
+plt.title("Precipitation in Blacksburg over the Summer")
+plt.xlabel("Rainfall (inches)")
+plt.ylabel("Number of days")
 plt.show()
 
 print(len(weather.get_weather(test=True)))

@@ -1,0 +1,84 @@
+metadata:
+    version: 1
+    name: Video Games
+    builder: 3
+    author: Austin Cory Bart <acbart@vt.edu>
+    datetime: 4/13/2017
+    hide: True
+    tags: [video games, games, publishers, console, gaming]
+    description:
+        short:
+            This library has data about video games, including their play time and sales.
+        overview: >
+            <i>This dataset requires special permission to use.</i><br><br>
+            
+            Originally collected by Dr. Joe Cox, this dataset has information about the sales and playtime of over a thousand video games released between 2004 and 2010. The playtime information was collected from crowd-sourced data on "How Long to Beat".<br><br>
+            
+            Some more information can be found <a href="https://researchportal.port.ac.uk/portal/en/publications/what-makes-a-blockbuster-video-game(a6d848fe-38ae-4584-8c95-a0f735ec9b4c).html">here</a>.
+        citation: >
+            Cox, Joe. "What makes a blockbuster video game? An empirical analysis of US sales data." Managerial and Decision Economics 35.3 (2014): 189-198.
+local:
+  - file: video_games.json
+    name: video_games
+    row: video game
+    indexes:
+      - name: Year
+        jsonpath: video_games.[0].Release.Year
+      - name: Console
+        jsonpath: video_games.[0].Release.Console
+interfaces:
+  - name: get games
+    returns: list[video games]
+    description: Returns information about all the games
+    test:
+        sql: SELECT data FROM video_games LIMIT {hardware}
+        post: json()
+    production:
+        sql: SELECT data FROM video_games
+        post: json()
+comments:
+    Features:
+        Max Players: The maximum number of players that can play this game.
+        Multiplatform?: Whether this game is available on multiple platforms.
+        Online?: Whether this game supports online play.
+        Handheld?: Whether this is a hand-held game.
+    Title: The full title of this game.
+    Metrics:
+        Used Price: A typical "used" price for this game (i.e. previously returned and sold), measured in dollars. It is unclear where this number originally came from.
+        Sales: The total sales made on this game, measured in millions of dollars.
+        Review Score: a typical review score for this game, out of 100.
+    Length:
+        Main + Extras:
+            Average: The mean time that players reported completing the main game and major extra parts of the game, in hours.
+            Median: The median time that players reported completing the main game and major extra parts of the game, in hours.
+            Polled: The number of players that reported completing the main game and major extra parts of the game.
+            Leisure: The slowest time that players reported completing the main game and major extra parts of the game, in hours.
+            Rushed: The fastest time that players reported completing the main game and major extra parts of the game, in hours.
+        All PlayStyles:
+            Average: The mean time that players reported completing the game in any way, in hours. This is the average over all the other categories.
+            Median: The median time that players reported completing the game in any way, in hours. This is the median over all the other categories.
+            Polled: The number of players that reported completing the game in any way. This is the count over all the other categories.
+            Leisure: The slowest time that players reported completing the game in any way, in hours. This is the minimum over all the other categories.
+            Rushed: The fastest time that players reported completing the game in any way, in hours. This is the maximum over all the other categories.
+        Main Story:
+            Average: The mean time that players reported completing the main game storyline, in hours.
+            Median: The median time that players reported completing the main game storyline, in hours.
+            Polled: The number of players that reported completing the main game storyline.
+            Leisure: The slowest time that players reported completing the main game storyline, in hours.
+            Rushed: The fastest time that players reported completing the main game storyline, in hours.
+        Completionists:
+            Average: The mean time that players reported completing everything in the game, in hours.
+            Median: The median time that players reported completing everything in the game, in hours.
+            Polled: The number of players that reported completing everything in the game.
+            Leisure: The slowest time that players reported completing everything in the game, in hours.
+            Rushed: The fastest time that players reported completing everything in the game, in hours.
+    Release:
+        Rating: The ESRB rating for this game, either E (for Everyone), T (for Teen), or M (for Mature).
+        Console: The name of the console that this particular game was released for. Note that the dataset contains multiple copies of the same game, released for different consoles.
+        Re-release?: Whether this game is a re-release of an earlier one.
+        Year: The year that this game was released.
+    Metadata:
+        Publishers: The list of publishers who created this game
+        Genres: The list of genres that this game belongs to.
+        Licensed?: Whether this game was based off a previously licensed entity.
+        Sequel?: Whether this game is a sequel to another game.

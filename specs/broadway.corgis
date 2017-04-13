@@ -31,21 +31,21 @@ interfaces:
     production:
         sql: SELECT data FROM broadway
         post: json()
-  - name: get show by theatre
-    returns: list[production]
-    description: Returns information about all the shows at a given theatre
-    args:
-      - name: theatre
-        type: str
-        default: friedman
-        matches: SELECT DISTINCT theatre FROM broadway
-        description: The name of the theatre (e.g., "friedman").
-    test:
-        sql: SELECT data FROM broadway WHERE theatre=? COLLATE NOCASE LIMIT {hardware}
-        post: json()
-    production:
-        sql: SELECT data FROM broadway WHERE theatre=? COLLATE NOCASE
-        post: json()
+  # - name: get show by theatre
+    # returns: list[production]
+    # description: Returns information about all the shows at a given theatre
+    # args:
+      # - name: theatre
+        # type: str
+        # default: friedman
+        # matches: SELECT DISTINCT theatre FROM broadway
+        # description: The name of the theatre (e.g., "friedman").
+    # test:
+        # sql: SELECT data FROM broadway WHERE theatre=? COLLATE NOCASE LIMIT {hardware}
+        # post: json()
+    # production:
+        # sql: SELECT data FROM broadway WHERE theatre=? COLLATE NOCASE
+        # post: json()
 comments:
     Show:
         Theatre: The name of the theatre.

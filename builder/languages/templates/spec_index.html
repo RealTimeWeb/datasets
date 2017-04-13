@@ -72,6 +72,7 @@ $(document).ready(function() {
     
     <div class="row">
     {% for metadata in specs.values()|sort(attribute='name') %}
+    {% if not metadata.hide %}
     <div class="media col-md-5 col-md-offset-1 dataset-card" id="{{ metadata.name|snake_case }}">
       {% if metadata.icon %}
       <div class="media-left  media-middle">
@@ -98,6 +99,7 @@ $(document).ready(function() {
         }
     );
     </script>
+    {% endif %}
     {% endfor %}
     </div>
     

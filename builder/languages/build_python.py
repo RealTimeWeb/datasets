@@ -175,6 +175,7 @@ def sluggify(astr):
     return (astr.replace('.', '-').replace("[", "__")
                 .replace("]", "__").replace(" ", "-")
                 .replace("#", "_").replace("/", "_")
+                .replace("+", "_")
                 .replace("'", "_").replace('"', "_")
                 .replace("?", "_").replace('(', "_").replace(')', "_"))
     

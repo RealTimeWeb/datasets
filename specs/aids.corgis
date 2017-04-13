@@ -29,36 +29,36 @@ interfaces:
     test:
         sql: SELECT data FROM aids LIMIT {hardware}
         post: json()
-  - name: get reports by year
-    description: Given a year, returns all the aids reports for that year in the database.
-    args:
-      - name: year
-        default: 1990
-        type: int
-        matches: SELECT DISTINCT year FROM aids
-        description: The year to get reports.
-    production:
-        sql: SELECT data FROM aids WHERE year=?
-        post: json()
-    test:
-        sql: SELECT data FROM aids WHERE year=? LIMIT {hardware}
-        post: json()
-    returns: list[report]
-  - name: get reports by country
-    description: Given a country, returns all the aids reports for that country in the database.
-    args:
-      - name: country
-        default: Afghanistan
-        type: str
-        matches: SELECT DISTINCT country FROM aids
-        description: The year to get reports.
-    production:
-        sql: SELECT data FROM aids WHERE country=?
-        post: json()
-    test:
-        sql: SELECT data FROM aids WHERE country=? LIMIT {hardware}
-        post: json()
-    returns: list[report]
+  # - name: get reports by year
+    # description: Given a year, returns all the aids reports for that year in the database.
+    # args:
+      # - name: year
+        # default: 1990
+        # type: int
+        # matches: SELECT DISTINCT year FROM aids
+        # description: The year to get reports.
+    # production:
+        # sql: SELECT data FROM aids WHERE year=?
+        # post: json()
+    # test:
+        # sql: SELECT data FROM aids WHERE year=? LIMIT {hardware}
+        # post: json()
+    # returns: list[report]
+  # - name: get reports by country
+    # description: Given a country, returns all the aids reports for that country in the database.
+    # args:
+      # - name: country
+        # default: Afghanistan
+        # type: str
+        # matches: SELECT DISTINCT country FROM aids
+        # description: The year to get reports.
+    # production:
+        # sql: SELECT data FROM aids WHERE country=?
+        # post: json()
+    # test:
+        # sql: SELECT data FROM aids WHERE country=? LIMIT {hardware}
+        # post: json()
+    # returns: list[report]
 comments:
     Data:
         "AIDS-Related Deaths":
