@@ -17,6 +17,9 @@ Publishers Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -35,10 +38,15 @@ Publishers Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -191,9 +199,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Publishers');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="publishers.png" alt="Publishers" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="publishers_splash.png" alt="publishers_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Publishers Python Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -218,7 +231,7 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
     
     <h3 id="overview">Overview</h3>
 <p>
-From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking.
+From a newspaper article about analyzing amazon e-book sales by genre and publisher. Unfortunately, they do not have information on the book's title or author. This collection includes 54,000 titles spanning across several genres and types of publishing companies, practically every book on every Amazon bestseller list. Along with publisher information, it also includes the book's overall Amazon Kindle store sales ranking. This ranking is used to sort the books. Keep in mind that this data is NOT time-oriented; it is a collection of a bunch of different books, not a book over time.
 
 </p>
 
@@ -279,16 +292,579 @@ $(document).ready(function() {
             
             <tr> <td><code>"type"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"big five"</code></td> 
+                 <td>
+                    <code>"big five"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-publishers-__0__-publisher-type'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td>The type, or size, of the publisher (e.g, "indie", "small", "big five", etc.)</td> </tr>
             
             <tr> <td><code>"name"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Katherine Tegen Books"</code></td> 
+                 <td>
+                    <code>"Katherine Tegen Books"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-publishers-__0__-publisher-name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td>The name of the publisher.</td> </tr>
             
         </table>
     </div>
+    
+        
+        <div id='explore-publishers-__0__-publisher-type' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"small/medium"</code></td>
+                    <td>9741</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"big five"</code></td>
+                    <td>7309</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"indie"</code></td>
+                    <td>5946</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"single author"</code></td>
+                    <td>3608</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"amazon"</code></td>
+                    <td>423</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-publishers-__0__-publisher-name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"(Small or Medium Publisher)"</code></td>
+                    <td>9741</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"(Indie Publisher)"</code></td>
+                    <td>5946</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"(Single-Author Publisher)"</code></td>
+                    <td>3608</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HarperCollins e-books"</code></td>
+                    <td>389</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HarperCollins"</code></td>
+                    <td>253</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Simon & Schuster"</code></td>
+                    <td>209</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Random House Books for Young Readers"</code></td>
+                    <td>202</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Vintage"</code></td>
+                    <td>190</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Berkley"</code></td>
+                    <td>181</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ballantine Books"</code></td>
+                    <td>164</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Little, Brown and Company"</code></td>
+                    <td>161</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Martin's Press"</code></td>
+                    <td>159</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bantam"</code></td>
+                    <td>150</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Penguin Books"</code></td>
+                    <td>149</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Scribner"</code></td>
+                    <td>125</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Grosset & Dunlap"</code></td>
+                    <td>111</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thomas & Mercer"</code></td>
+                    <td>110</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Grand Central Publishing"</code></td>
+                    <td>107</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Puffin"</code></td>
+                    <td>103</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Atria Books"</code></td>
+                    <td>100</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thomas Nelson"</code></td>
+                    <td>93</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Farrar, Straus and Giroux"</code></td>
+                    <td>90</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Random House"</code></td>
+                    <td>87</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aladdin"</code></td>
+                    <td>86</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"William Morrow"</code></td>
+                    <td>84</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tor Books"</code></td>
+                    <td>84</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Portfolio"</code></td>
+                    <td>83</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montlake Romance"</code></td>
+                    <td>78</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Anchor"</code></td>
+                    <td>77</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"47North"</code></td>
+                    <td>77</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pocket Books"</code></td>
+                    <td>75</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Touchstone"</code></td>
+                    <td>73</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Broadway Books"</code></td>
+                    <td>70</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Zondervan"</code></td>
+                    <td>70</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LucasBooks"</code></td>
+                    <td>69</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Free Press"</code></td>
+                    <td>68</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Little, Brown Books for Young Readers"</code></td>
+                    <td>66</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Signet"</code></td>
+                    <td>65</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Two Lions"</code></td>
+                    <td>64</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gallery Books"</code></td>
+                    <td>64</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hyperion"</code></td>
+                    <td>63</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pocket Books/Star Trek"</code></td>
+                    <td>61</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harmony"</code></td>
+                    <td>61</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harper"</code></td>
+                    <td>61</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Plume"</code></td>
+                    <td>57</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Crown Business"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Delacorte Press"</code></td>
+                    <td>54</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Putnam Adult"</code></td>
+                    <td>54</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orbit"</code></td>
+                    <td>51</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Knopf"</code></td>
+                    <td>51</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ace"</code></td>
+                    <td>50</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HarperOne"</code></td>
+                    <td>49</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dell"</code></td>
+                    <td>49</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Riverhead"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Del Rey"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Spectra"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Minotaur Books"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"William Morrow Paperbacks"</code></td>
+                    <td>46</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry Holt and Co."</code></td>
+                    <td>46</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Simon & Schuster Books for Young Readers"</code></td>
+                    <td>46</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ten Speed Press"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Martin's Griffin"</code></td>
+                    <td>43</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jove"</code></td>
+                    <td>42</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thomas Dunne Books"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Viking Adult"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Crown"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clarkson Potter"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Penguin"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Atheneum Books for Young Readers"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NAL"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Knopf Books for Young Readers"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Avon"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dutton Adult"</code></td>
+                    <td>32</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AmazonCrossing"</code></td>
+                    <td>32</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Random House Trade Paperbacks"</code></td>
+                    <td>31</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HarperTeen"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ecco"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"It Books"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gotham Books"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Penguin Press"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Crown Archetype"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Zonderkidz"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Palgrave Macmillan"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DK Publishing"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Doubleday"</code></td>
+                    <td>26</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Amazon Publishing"</code></td>
+                    <td>26</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Holt Paperbacks"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HarperBusiness"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Howard Books"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Entangled: Brazen"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Forever"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Spiegel & Grau"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tarcher"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Simon Spotlight"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harper Element"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Margaret K. McElderry Books"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Forge Books"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harper Perennial"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Martin's Paperbacks"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Three Rivers Press"</code></td>
+                    <td>21</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-publishers-__0__-publisher" ).dialog({
@@ -301,142 +877,30 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        $("#btn-explore-publishers-__0__-publisher-type").click(function() {
+            $( "#explore-publishers-__0__-publisher-type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-publishers-__0__-publisher-type" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
         $("#btn-explore-publishers-__0__-publisher-name").click(function() {
             $( "#explore-publishers-__0__-publisher-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
-    });
-    </script>
-
-    <div id='explore-publishers-__0__' title='Dictionary (5 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"genre"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"genre fiction"</code></td> 
-                 <td>The genre of the book, either "fiction", "non-fiction", "genre fiction", "childrens", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.</td> </tr>
-            
-            <tr> <td><code>"publisher"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-publishers-__0__-publisher'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"sold by"</code></td> 
-                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"HarperCollins Publishers"</code></td> 
-                 <td>The actual company that sold this book, as oppposed to the company that published it.</td> </tr>
-            
-            <tr> <td><code>"statistics"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-publishers-__0__-statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
-            
-            <tr> <td><code>"daily"</code></td> 
-                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-publishers-__0__-daily'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
-                 <td></td> </tr>
-            
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-publishers-__0__" ).dialog({
+        $("#btn-explore-publishers-__0__-publisher-name").click(function() {
+            $( "#explore-publishers-__0__-publisher-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-publishers-__0__-publisher-name" ).dialog({
           autoOpen: false,
           width: 600
-        });
+        });    
         
-        $("#btn-explore-publishers-__0__-genre").click(function() {
-            $( "#explore-publishers-__0__-genre" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-publishers-__0__-publisher").click(function() {
-            $( "#explore-publishers-__0__-publisher" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-publishers-__0__-sold-by").click(function() {
-            $( "#explore-publishers-__0__-sold-by" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-publishers-__0__-statistics").click(function() {
-            $( "#explore-publishers-__0__-statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-publishers-__0__-daily").click(function() {
-            $( "#explore-publishers-__0__-daily" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-    });
-    </script>
-
-    <div id='explore-publishers-__0__-daily' title='Dictionary (5 keys)'>
-        <table class='table table-condensed table-striped table-bordered' >
-            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
-            
-            <tr> <td><code>"publisher revenue"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>20496.0</code></td> 
-                 <td>The amount of money that the publisher made per day on this book, in dollars.</td> </tr>
-            
-            <tr> <td><code>"amazon revenue"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>6832.0</code></td> 
-                 <td>The amount of money that Amazon made per day on this book, in dollars.</td> </tr>
-            
-            <tr> <td><code>"author revenue"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>6832.0</code></td> 
-                 <td>The amount of money that the author made per day on this book, in dollars.</td> </tr>
-            
-            <tr> <td><code>"units sold"</code></td> 
-                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>7000</code></td> 
-                 <td>The number of books sold per day.</td> </tr>
-            
-            <tr> <td><code>"gross sales"</code></td> 
-                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>34160.0</code></td> 
-                 <td>The total amount of money that was made per day on this book, in dollars.</td> </tr>
-            
-        </table>
-    </div>
-    <script>
-    $(document).ready(function() {
-        $( "#explore-publishers-__0__-daily" ).dialog({
-          autoOpen: false,
-          width: 600
-        });
-        
-        $("#btn-explore-publishers-__0__-daily-publisher-revenue").click(function() {
-            $( "#explore-publishers-__0__-daily-publisher-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-publishers-__0__-daily-amazon-revenue").click(function() {
-            $( "#explore-publishers-__0__-daily-amazon-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-publishers-__0__-daily-author-revenue").click(function() {
-            $( "#explore-publishers-__0__-daily-author-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-publishers-__0__-daily-units-sold").click(function() {
-            $( "#explore-publishers-__0__-daily-units-sold" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
-        
-        $("#btn-explore-publishers-__0__-daily-gross-sales").click(function() {
-            $( "#explore-publishers-__0__-daily-gross-sales" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
-            $('.ui-dialog :button').blur();
-        });
         
     });
     </script>
@@ -447,26 +911,47 @@ $(document).ready(function() {
             
             <tr> <td><code>"sales rank"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1</code></td> 
+                 <td>
+                    <code>1</code>
+                    
+                 </td> 
                  <td>The ranking of this book, compared to other books. A higher rank indicates a more popular book.</td> </tr>
             
             <tr> <td><code>"sale price"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>4.88</code></td> 
+                 <td>
+                    <code>4.88</code>
+                    
+                 </td> 
                  <td>The cost of this book on Amazon, in dollars.</td> </tr>
             
             <tr> <td><code>"total reviews"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>9604</code></td> 
+                 <td>
+                    <code>9604</code>
+                    
+                 </td> 
                  <td>The number of people who have reviewed this book.</td> </tr>
             
             <tr> <td><code>"average rating"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>4.57</code></td> 
+                 <td>
+                    <code>4.57</code>
+                    
+                 </td> 
                  <td>The average rating of this book, on a five-point scale, as determined by customers.</td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-publishers-__0__-statistics" ).dialog({
@@ -479,20 +964,358 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-publishers-__0__-statistics-sale-price").click(function() {
             $( "#explore-publishers-__0__-statistics-sale-price" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-publishers-__0__-statistics-total-reviews").click(function() {
             $( "#explore-publishers-__0__-statistics-total-reviews" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-publishers-__0__-statistics-average-rating").click(function() {
             $( "#explore-publishers-__0__-statistics-average-rating" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        
+    });
+    </script>
+
+    <div id='explore-publishers-__0__' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"genre"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"genre fiction"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-publishers-__0__-genre'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>The genre of the book, either "fiction", "nonfiction", "genre fiction", "children", "comics", or "foreign language". Some books originally had more than one genre, but this was simplified down to the most prominent genre.</td> </tr>
+            
+            <tr> <td><code>"publisher"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-publishers-__0__-publisher'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"sold by"</code></td> 
+                 <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
+                 <td>
+                    <code>"HarperCollins Publishers"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-publishers-__0__-sold-by'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
+                 <td>The actual company that sold this book, as oppposed to the company that published it.</td> </tr>
+            
+            <tr> <td><code>"statistics"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-publishers-__0__-statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+            <tr> <td><code>"daily average"</code></td> 
+                 <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-publishers-__0__-daily-average'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
+                 <td></td> </tr>
+            
+        </table>
+    </div>
+    
+        
+        <div id='explore-publishers-__0__-genre' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"nonfiction"</code></td>
+                    <td>14161</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"genre fiction"</code></td>
+                    <td>8903</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"children"</code></td>
+                    <td>2541</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"fiction"</code></td>
+                    <td>733</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"comics"</code></td>
+                    <td>568</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"foreign language"</code></td>
+                    <td>121</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+        <div id='explore-publishers-__0__-sold-by' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Amazon Digital Services,  Inc."</code></td>
+                    <td>19548</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Random House LLC"</code></td>
+                    <td>1964</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Penguin Group (USA) LLC"</code></td>
+                    <td>1411</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HarperCollins Publishers"</code></td>
+                    <td>1244</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Simon and Schuster Digital Sales Inc"</code></td>
+                    <td>1108</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Macmillan"</code></td>
+                    <td>777</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hachette Book Group"</code></td>
+                    <td>608</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DC Comics"</code></td>
+                    <td>125</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HarperCollins Publishing"</code></td>
+                    <td>99</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HarperCollins Christian Publishing"</code></td>
+                    <td>96</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Idea & Design Works"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cengage Learning"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Random House Mondadori"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"RCS MediaGroup S.p.A."</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-publishers-__0__" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-publishers-__0__-genre").click(function() {
+            $( "#explore-publishers-__0__-genre" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-genre").click(function() {
+            $( "#explore-publishers-__0__-genre" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-publishers-__0__-genre" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-publishers-__0__-publisher").click(function() {
+            $( "#explore-publishers-__0__-publisher" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-publishers-__0__-sold-by").click(function() {
+            $( "#explore-publishers-__0__-sold-by" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-publishers-__0__-sold-by").click(function() {
+            $( "#explore-publishers-__0__-sold-by" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-publishers-__0__-sold-by" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-publishers-__0__-statistics").click(function() {
+            $( "#explore-publishers-__0__-statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-publishers-__0__-daily-average").click(function() {
+            $( "#explore-publishers-__0__-daily-average" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+    });
+    </script>
+
+    <div id='explore-publishers-__0__-daily-average' title='Dictionary (5 keys)'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Key</th> <th>Type</th> <th>Example Value</th> <th>Comment</th></tr>
+            
+            <tr> <td><code>"publisher revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>20496.0</code>
+                    
+                 </td> 
+                 <td>The amount of money that the publisher made per day on this book, in dollars.</td> </tr>
+            
+            <tr> <td><code>"amazon revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>6832.0</code>
+                    
+                 </td> 
+                 <td>The amount of money that Amazon made per day on this book, in dollars.</td> </tr>
+            
+            <tr> <td><code>"author revenue"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>6832.0</code>
+                    
+                 </td> 
+                 <td>The amount of money that the author made per day on this book, in dollars.</td> </tr>
+            
+            <tr> <td><code>"gross sales"</code></td> 
+                 <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
+                 <td>
+                    <code>34160.0</code>
+                    
+                 </td> 
+                 <td>The total amount of money that was made per day on this book, in dollars.</td> </tr>
+            
+            <tr> <td><code>"units sold"</code></td> 
+                 <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
+                 <td>
+                    <code>7000</code>
+                    
+                 </td> 
+                 <td>The number of books sold per day.</td> </tr>
+            
+        </table>
+    </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <script>
+    $(document).ready(function() {
+        $( "#explore-publishers-__0__-daily-average" ).dialog({
+          autoOpen: false,
+          width: 600
+        });
+        
+        $("#btn-explore-publishers-__0__-daily-average-publisher-revenue").click(function() {
+            $( "#explore-publishers-__0__-daily-average-publisher-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-publishers-__0__-daily-average-amazon-revenue").click(function() {
+            $( "#explore-publishers-__0__-daily-average-amazon-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-publishers-__0__-daily-average-author-revenue").click(function() {
+            $( "#explore-publishers-__0__-daily-average-author-revenue" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-publishers-__0__-daily-average-gross-sales").click(function() {
+            $( "#explore-publishers-__0__-daily-average-gross-sales" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-publishers-__0__-daily-average-units-sold").click(function() {
+            $( "#explore-publishers-__0__-daily-average-units-sold" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
         
     });
     </script>

@@ -125,36 +125,6 @@ def get_buildings(test=False):
         return _Auxiliary._byteify(data)
         
 
-def get_buildings_by_state(state):
-    """
-    Returns a list of the buildings in the database for a state.
-    
-    :param state: The two-letter abbreviation for a state
-    :type state: str
-    """
-    
-    # Match it against recommend values
-    
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT state FROM real_estate").fetchall()]
-    if state.lower() not in potentials:
-        best_guesses = _difflib.get_close_matches(state, potentials)
-        if best_guesses:
-            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
-        else:
-            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
-    if False:
-        # If there was a Test version of this method, it would go here. But alas.
-        pass
-    else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM real_estate WHERE state=?".format(
-            hardware=_Constants._HARDWARE),
-            (state, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-
 ################################################################################
 # Internalized testing code
 ################################################################################
@@ -175,16 +145,6 @@ def _test_interfaces():
     print("Test get_buildings")
     start_time = _default_timer()
     result = get_buildings(test=True)
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    
-    # Production test
-    print("Production get_buildings_by_state")
-    start_time = _default_timer()
-    result = get_buildings_by_state("'VA'")
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))

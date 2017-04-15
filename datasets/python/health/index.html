@@ -17,6 +17,9 @@ Health Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -35,10 +38,15 @@ Health Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -191,7 +199,12 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Health');
+});*/
+</script>
+<div class="page-header">
     
     <img class="img-rounded pull-right" src="health.png" alt="Health" style="max-width: 128px; max-height: 128px;">
     
@@ -209,9 +222,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#downloads">Downloads</a></li>
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
-        <li><a href='#get_reports_by_year'>get_reports_by_year</a></li>
-        <li><a href='#get_reports_by_disease'>get_reports_by_disease</a></li>
-        <li><a href='#get_reports_by_location'>get_reports_by_location</a></li>
         <li><a href='#get_all_reports'>get_all_reports</a></li>
         
         </ol></li>
@@ -278,36 +288,379 @@ $(document).ready(function() {
             
             <tr> <td><code>"loc"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"ALABAMA"</code></td> 
+                 <td>
+                    <code>"ALABAMA"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-health-__0__-loc'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"number"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>8843</code></td> 
+                 <td>
+                    <code>8843</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"disease"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"MEASLES"</code></td> 
+                 <td>
+                    <code>"MEASLES"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-health-__0__-disease'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"increase"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>334.99</code></td> 
+                 <td>
+                    <code>334.99</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1928</code></td> 
+                 <td>
+                    <code>1928</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"population"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2640000</code></td> 
+                 <td>
+                    <code>2640000</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+        <div id='explore-health-__0__-loc' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"CALIFORNIA"</code></td>
+                    <td>312</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TEXAS"</code></td>
+                    <td>311</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MICHIGAN"</code></td>
+                    <td>306</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ILLINOIS"</code></td>
+                    <td>306</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"FLORIDA"</code></td>
+                    <td>305</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MASSACHUSETTS"</code></td>
+                    <td>302</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MISSOURI"</code></td>
+                    <td>302</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"OHIO"</code></td>
+                    <td>298</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NEW JERSEY"</code></td>
+                    <td>298</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MARYLAND"</code></td>
+                    <td>298</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"WASHINGTON"</code></td>
+                    <td>296</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"COLORADO"</code></td>
+                    <td>295</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARIZONA"</code></td>
+                    <td>294</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CONNECTICUT"</code></td>
+                    <td>294</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NEW YORK"</code></td>
+                    <td>293</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"IDAHO"</code></td>
+                    <td>293</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PENNSYLVANIA"</code></td>
+                    <td>292</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"UTAH"</code></td>
+                    <td>292</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TENNESSEE"</code></td>
+                    <td>291</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"INDIANA"</code></td>
+                    <td>290</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MINNESOTA"</code></td>
+                    <td>290</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"VIRGINIA"</code></td>
+                    <td>289</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"WISCONSIN"</code></td>
+                    <td>288</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARKANSAS"</code></td>
+                    <td>288</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"IOWA"</code></td>
+                    <td>288</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GEORGIA"</code></td>
+                    <td>288</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LOUISIANA"</code></td>
+                    <td>286</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ALABAMA"</code></td>
+                    <td>286</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NORTH CAROLINA"</code></td>
+                    <td>285</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOUTH CAROLINA"</code></td>
+                    <td>284</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"KANSAS"</code></td>
+                    <td>282</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"KENTUCKY"</code></td>
+                    <td>279</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NEW HAMPSHIRE"</code></td>
+                    <td>277</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"OREGON"</code></td>
+                    <td>275</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"OKLAHOMA"</code></td>
+                    <td>274</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"WEST VIRGINIA"</code></td>
+                    <td>272</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MONTANA"</code></td>
+                    <td>269</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"RHODE ISLAND"</code></td>
+                    <td>268</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NEBRASKA"</code></td>
+                    <td>268</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"VERMONT"</code></td>
+                    <td>264</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DELAWARE"</code></td>
+                    <td>263</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"WYOMING"</code></td>
+                    <td>262</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NEW MEXICO"</code></td>
+                    <td>262</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MISSISSIPPI"</code></td>
+                    <td>261</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MAINE"</code></td>
+                    <td>260</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DISTRICT OF COLUMBIA"</code></td>
+                    <td>251</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NORTH DAKOTA"</code></td>
+                    <td>250</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NEVADA"</code></td>
+                    <td>245</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOUTH DAKOTA"</code></td>
+                    <td>244</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HAWAII"</code></td>
+                    <td>214</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ALASKA"</code></td>
+                    <td>185</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+        <div id='explore-health-__0__-disease' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"MEASLES"</code></td>
+                    <td>3333</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PERTUSSIS"</code></td>
+                    <td>2716</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"HEPATITIS A"</code></td>
+                    <td>2327</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"POLIO"</code></td>
+                    <td>1860</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MUMPS"</code></td>
+                    <td>1576</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"RUBELLA"</code></td>
+                    <td>1374</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SMALLPOX"</code></td>
+                    <td>1079</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-health-__0__" ).dialog({
@@ -320,8 +673,24 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        $("#btn-explore-health-__0__-loc").click(function() {
+            $( "#explore-health-__0__-loc" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-health-__0__-loc" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
         $("#btn-explore-health-__0__-number").click(function() {
             $( "#explore-health-__0__-number" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-health-__0__-disease").click(function() {
+            $( "#explore-health-__0__-disease" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -329,21 +698,29 @@ $(document).ready(function() {
             $( "#explore-health-__0__-disease" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        $( "#explore-health-__0__-disease" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-health-__0__-increase").click(function() {
             $( "#explore-health-__0__-increase" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-health-__0__-year").click(function() {
             $( "#explore-health-__0__-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-health-__0__-population").click(function() {
             $( "#explore-health-__0__-population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -380,12 +757,9 @@ $(document).ready(function() {
     
     <h3 id="usage">Usage</h3>
     
-    This library has 4 functions you can use.
+    This library has 1 function you can use.
     
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">health</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">health</span><span class="o">.</span><span class="n">get_reports_by_year</span><span class="p">(</span><span class="mi">1990</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">health</span><span class="o">.</span><span class="n">get_reports_by_disease</span><span class="p">(</span><span class="s2">&quot;&#39;MUMPS&#39;&quot;</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">health</span><span class="o">.</span><span class="n">get_reports_by_location</span><span class="p">(</span><span class="s2">&quot;&#39;Delaware&#39;&quot;</span><span class="p">)</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">health</span><span class="o">.</span><span class="n">get_all_reports</span><span class="p">()</span>
 </pre></div>
 
@@ -396,9 +770,6 @@ $(document).ready(function() {
 
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">health</span>
 <span class="c1"># These may be slow!</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">health</span><span class="o">.</span><span class="n">get_reports_by_year</span><span class="p">(</span><span class="mi">1990</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">health</span><span class="o">.</span><span class="n">get_reports_by_disease</span><span class="p">(</span><span class="s2">&quot;&#39;MUMPS&#39;&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">health</span><span class="o">.</span><span class="n">get_reports_by_location</span><span class="p">(</span><span class="s2">&quot;&#39;Delaware&#39;&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">health</span><span class="o">.</span><span class="n">get_all_reports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
@@ -407,90 +778,6 @@ $(document).ready(function() {
     
     <h3 id="documentation">Documentation</h3>
     
-<h4 id='get_reports_by_year' style='font-family:monospace'    >&nbsp;health.get_reports_by_year(year, test=False)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns information about the status of disease for the given year, from 1928 to 2011.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>year</b>: <i>int</i></h5>
-    <p class="list-group-item-text">A year between 1928 and 2011.
-    
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='get_reports_by_disease' style='font-family:monospace'    >&nbsp;health.get_reports_by_disease(disease, test=False)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns information about the status of disease for the given disease.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>disease</b>: <i>str</i></h5>
-    <p class="list-group-item-text">A disease such as 'HEPATITIS A', 'MEASLES', 'MUMPS', 'PERTUSSIS', 'POLIO', 'RUBELLA', or 'SMALLPOX'.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='get_reports_by_location' style='font-family:monospace'    >&nbsp;health.get_reports_by_location(location, test=False)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns information about the status of disease for the given location.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>location</b>: <i>str</i></h5>
-    <p class="list-group-item-text">A state such as "Alabama"
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
 <h4 id='get_all_reports' style='font-family:monospace'    >&nbsp;health.get_all_reports(test=False)</h4>
 
 <div class='row'>

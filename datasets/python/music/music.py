@@ -103,74 +103,6 @@ class _Auxiliary(object):
 
 
 
-def get_song_by_name(title):
-    """
-    Given the title of a song, returns information about the song.
-    
-    :param title: The title of the song.
-    :type title: str
-    """
-    
-    # Match it against recommend values
-    
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT title FROM music").fetchall()]
-    if title.lower() not in potentials:
-        best_guesses = _difflib.get_close_matches(title, potentials)
-        if best_guesses:
-            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
-        else:
-            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
-    if False:
-        # If there was a Test version of this method, it would go here. But alas.
-        pass
-    else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM music WHERE title=? LIMIT 1".format(
-            hardware=_Constants._HARDWARE),
-            (title, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        data = data[0]
-        
-        return _Auxiliary._byteify(data)
-        
-
-def get_songs_by_artist(artist, test=False):
-    """
-    Given the name of an artist, returns all the songs by that artist in the database.
-    
-    :param artist: The name of the artist or band.
-    :type artist: str
-    """
-    
-    # Match it against recommend values
-    
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT artist FROM music").fetchall()]
-    if artist.lower() not in potentials:
-        best_guesses = _difflib.get_close_matches(artist, potentials)
-        if best_guesses:
-            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
-        else:
-            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
-    if _Constants._TEST or test:
-        rows = _Constants._DATABASE.execute("SELECT data FROM music WHERE artist=? LIMIT {hardware}".format(
-            hardware=_Constants._HARDWARE),
-            (artist, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-    else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM music WHERE artist=?".format(
-            hardware=_Constants._HARDWARE),
-            (artist, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-
 def get_songs(test=False):
     """
     Gets a list of all the songs in the database.
@@ -200,34 +132,6 @@ def get_songs(test=False):
 def _test_interfaces():
     from pprint import pprint as _pprint
     from timeit import default_timer as _default_timer
-    # Production test
-    print("Production get_song_by_name")
-    start_time = _default_timer()
-    result = get_song_by_name("I Didn't Mean To")
-    
-    _pprint(result)
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    
-    # Production test
-    print("Production get_songs_by_artist")
-    start_time = _default_timer()
-    result = get_songs_by_artist("Aerosmith")
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    # Test test
-    print("Test get_songs_by_artist")
-    start_time = _default_timer()
-    result = get_songs_by_artist("Aerosmith", test=True)
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    
     # Production test
     print("Production get_songs")
     start_time = _default_timer()

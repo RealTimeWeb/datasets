@@ -17,6 +17,9 @@ Music Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -35,10 +38,15 @@ Music Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -191,7 +199,12 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Music');
+});*/
+</script>
+<div class="page-header">
     
     <img class="img-rounded pull-right" src="music.png" alt="Music" style="max-width: 128px; max-height: 128px;">
     
@@ -209,8 +222,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#downloads">Downloads</a></li>
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
-        <li><a href='#get_song_by_name'>get_song_by_name</a></li>
-        <li><a href='#get_songs_by_artist'>get_songs_by_artist</a></li>
         <li><a href='#get_songs'>get_songs</a></li>
         
         </ol></li>
@@ -281,21 +292,37 @@ $(document).ready(function() {
             
             <tr> <td><code>"release"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-music-__0__-release'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-music-__0__-release'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"artist"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-music-__0__-artist'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-music-__0__-artist'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"song"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-music-__0__-song'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-music-__0__-song'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-music-__0__" ).dialog({
@@ -308,15 +335,18 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-artist").click(function() {
             $( "#explore-music-__0__-artist" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-song").click(function() {
             $( "#explore-music-__0__-song" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -327,56 +357,2687 @@ $(document).ready(function() {
             
             <tr> <td><code>"terms_freq"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>1.0</code></td> 
+                 <td>
+                    <code>1.0</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"terms"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"hip hop"</code></td> 
+                 <td>
+                    <code>"hip hop"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-music-__0__-artist-terms'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"name"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Casual"</code></td> 
+                 <td>
+                    <code>"Casual"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-music-__0__-artist-name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"familiarity"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.581793766</code></td> 
+                 <td>
+                    <code>0.581793766</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"longitude"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>-63.9333578685</code></td> 
+                 <td>
+                    <code>-63.9333578685</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"id"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"ARD7TVE1187B99BFB1"</code></td> 
+                 <td>
+                    <code>"ARD7TVE1187B99BFB1"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-music-__0__-artist-id'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"location"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"California - LA"</code></td> 
+                 <td>
+                    <code>"California - LA"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-music-__0__-artist-location'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"latitude"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>37.1573567501</code></td> 
+                 <td>
+                    <code>37.1573567501</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"similar"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"ARV4KO21187FB38008"</code></td> 
+                 <td>
+                    <code>"ARV4KO21187FB38008"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-music-__0__-artist-similar'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"hotttnesss"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.401997543</code></td> 
+                 <td>
+                    <code>0.401997543</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+        <div id='explore-music-__0__-artist-terms' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"blues-rock"</code></td>
+                    <td>346</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hip hop"</code></td>
+                    <td>346</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ccm"</code></td>
+                    <td>255</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"chanson"</code></td>
+                    <td>208</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"country rock"</code></td>
+                    <td>156</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"latin jazz"</code></td>
+                    <td>150</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"post-grunge"</code></td>
+                    <td>146</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"dance pop"</code></td>
+                    <td>141</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"gangster rap"</code></td>
+                    <td>134</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"roots reggae"</code></td>
+                    <td>131</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"pop rock"</code></td>
+                    <td>130</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"progressive house"</code></td>
+                    <td>119</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"dancehall"</code></td>
+                    <td>97</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"heavy metal"</code></td>
+                    <td>97</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"power pop"</code></td>
+                    <td>94</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"rock"</code></td>
+                    <td>92</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"chill-out"</code></td>
+                    <td>90</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"salsa"</code></td>
+                    <td>82</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"jazz funk"</code></td>
+                    <td>80</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hardcore punk"</code></td>
+                    <td>79</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"lovers rock"</code></td>
+                    <td>76</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"country gospel"</code></td>
+                    <td>75</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"honky tonk"</code></td>
+                    <td>73</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"post-hardcore"</code></td>
+                    <td>72</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"irish folk"</code></td>
+                    <td>70</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"folk-pop"</code></td>
+                    <td>69</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"dance rock"</code></td>
+                    <td>67</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"alternative metal"</code></td>
+                    <td>67</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"country blues"</code></td>
+                    <td>65</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"tech house"</code></td>
+                    <td>65</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"easy listening"</code></td>
+                    <td>65</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"soundtrack"</code></td>
+                    <td>65</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"western swing"</code></td>
+                    <td>63</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hard rock"</code></td>
+                    <td>62</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"trip hop"</code></td>
+                    <td>61</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"pop rap"</code></td>
+                    <td>59</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"blues"</code></td>
+                    <td>59</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"smooth jazz"</code></td>
+                    <td>58</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"chinese music"</code></td>
+                    <td>57</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"flamenco"</code></td>
+                    <td>56</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"folk rock"</code></td>
+                    <td>56</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"soft rock"</code></td>
+                    <td>54</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"reggae"</code></td>
+                    <td>52</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"cantonese pop"</code></td>
+                    <td>51</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"meditation"</code></td>
+                    <td>51</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"experimental rock"</code></td>
+                    <td>50</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"southern gospel"</code></td>
+                    <td>50</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"brill building pop"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"grunge"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"disco"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"bluegrass"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"black metal"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"texas blues"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ballad"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"chicago soul"</code></td>
+                    <td>46</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"delta blues"</code></td>
+                    <td>46</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"british pop"</code></td>
+                    <td>45</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"los angeles"</code></td>
+                    <td>45</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"blue-eyed soul"</code></td>
+                    <td>45</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"samba"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"new wave"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"tejano"</code></td>
+                    <td>42</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"country"</code></td>
+                    <td>42</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"orchestra"</code></td>
+                    <td>42</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"indie rock"</code></td>
+                    <td>42</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"instrumental pop"</code></td>
+                    <td>41</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"chamber jazz"</code></td>
+                    <td>41</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"opera"</code></td>
+                    <td>41</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hard trance"</code></td>
+                    <td>41</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"brazilian pop music"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"europop"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"zydeco"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"cumbia"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"dubstep"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"pop folk"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"future jazz"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"glam rock"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hard house"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"soukous"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"breakbeat"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"modern rock"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"rock 'n roll"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"comedy"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"oi"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"doo-wop"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"free jazz"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"singer-songwriter"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"roots rock"</code></td>
+                    <td>33</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"happy hardcore"</code></td>
+                    <td>33</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"heartland rock"</code></td>
+                    <td>33</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"soul jazz"</code></td>
+                    <td>31</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"chicago blues"</code></td>
+                    <td>31</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ska punk"</code></td>
+                    <td>31</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"zouk"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"rap"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"lullaby"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"reggaeton"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"bossa nova"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"bhangra"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"dirty south rap"</code></td>
+                    <td>29</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-music-__0__-artist-name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Mario Rosenstock"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Phil Collins"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sugar Minott"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Jackson Southernaires"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aerosmith"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Line Renaud"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Snow Patrol"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Radiohead"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nick Cave & The Bad Seeds"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bill & Gloria Gaither"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mikey Dread"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jacques Douai"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ayo"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Stevie Ray Vaughan And Double Trouble"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Del McCoury Band"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pumpkin Buzzard"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Michael Jackson"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"White Heart"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Selena"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Shakira"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"RUN-DMC"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Red Hot Chili Peppers"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2 Minutos"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hank Locklin"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Les Ogres De Barback"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Seal"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jimmy Riley"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mariano Yanani"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madonna"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"George Lopez"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Daniel Johnston"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"R. Carlos Nakai"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Van Halen"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Skeeter Davis"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DJ Nasty"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cali"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Los Fabulosos Cadillacs"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Leroy Hutson"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Marx Brothers"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sister Hazel"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Michael Stanley Band"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Behemoth"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alice In Chains"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"David Arkenstone"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sex Pistols"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charlie Peacock"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alexandre Desplat"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lionel Rogg"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eminem"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Otis Spann"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Michael Bloomfield"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Juan Carlos Baglietto"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Furry Lewis"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bon Jovi"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rickie Lee Jones"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BA(c)zu"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eric Burdon"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Anti-Flag"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Agnostic Front"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"EPMD"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Casual"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nestor Torres"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tony Joe White"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Santana"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Britney Spears"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Winans"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Vangelis"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Der Plan"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rihanna"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Rolling Stones"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Helen Love"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Marco Beltrami"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chris Brown"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Casiotone For The Painfully Alone"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Real Kids"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Brown"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3 Doors Down"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orbital"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mariah Carey"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Slipknot"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Hammond"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jane's Addiction"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Margaret Becker"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dropkick Murphys"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bad Company"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jeff And Sheri Easter"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kings Of Leon"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jimmy Wakely"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Impressions"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carl Smith"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jacques Dutronc"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Mayall & The Bluesbreakers"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Atman"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Martina McBride"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"K-OS"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gran Coquivacoa"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jennifer Lopez"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kraftwerk"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jack Johnson"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Julien Clerc"</code></td>
+                    <td>7</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+        
+        <div id='explore-music-__0__-artist-id' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"AROIHOI122988FEB8E"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARJIE2Y1187B994AB7"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARVN9FZ1187FB393F1"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR9W3X91187FB3994C"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AREWQSE1187B9AEC6C"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARIRD6J1187FB5A98C"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARX9YIP1187B98A656"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR12F2S1187FB56EEF"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR6PJ8R1187FB5AD70"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR78ZID1187B9B31ED"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ART3O5Z1187B9AB043"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARODBRG1187FB3FD99"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARH6W4X1187B99274F"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARN03F71187FB4E3F4"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR8BMEQ1187B9B4214"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARCCRTI11F4C845308"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR03BDP1187FB5B324"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARL3VGT1187FB40E8E"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARJ9DSA1187B990E00"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARXPPEY1187FB51DF4"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR051KA1187B98B2FF"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARE8GLF1187FB52532"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARYDFJA1241B9CBFF2"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARI648V1187B9B5379"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR7KA5V1187FB44E6B"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AROF4LP1187FB41C51"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARDVZTE1187FB5A0A1"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AREJ5K11187B993F5F"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARCII0J1187FB3A1B4"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARD3LXU1187B9ABFC5"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARVML4B1187FB52324"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR6CLFP1187B9ACB94"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARY1P2B1187B9B78F5"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARPDVPJ1187B9ADBE9"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARBB58Y1187B9B621B"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARMPRI31187FB4F7D9"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARYF20K1187B9B76BD"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARNLO5S1187B9B80CC"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR0O3AV1187FB4D030"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARD7U0O1187FB5531A"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR0X3JJ1187FB3A9A7"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARO0R521187B98A2D1"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR65K7A1187FB4DAA4"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARSQDUN1187B98D7D7"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARVEJ9M1187FB4DC44"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARDY3451187B9A0226"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARGBGC71187FB3DD0B"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARAIABB1187B9AC6E2"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARD3ICK1187B9A56C9"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARRH63Y1187FB47783"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARVUN5F1187FB4CCC7"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AREPD8D1187FB3F5BC"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARZBYDY1187FB46DD7"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARBEOHF1187B9B044D"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARRXPRY1187B9A8B34"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARFCUN31187B9AD578"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARKU3Z61187FB51DCA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARRJ3UC1187FB579D7"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARAZCWP129462A97F1"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARKFYS91187B98E58F"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARE0OLY1187B9AD19F"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARN7OQ21187FB5A6B3"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARKSZW81187B9B695D"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARTH9041187FB43E1F"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARD7TVE1187B99BFB1"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARXJSHW1187B9A2A52"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR243ZT1187B9A98D2"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARHINI31187B995C1D"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR9YV621187B99373E"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARMB95F1187B9B5B93"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARE08BN1187B98FCA3"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR7C6G11187B9B4C1E"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR107SB1187B9A79F9"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARUUXNF1187B98FB36"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARXOTQH1187FB57084"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR9OLFX1187B9A5762"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARC8CQZ1187B98DECA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARLR9U31187B9A71AD"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARUSOMY1187FB4D3B4"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARSPQ0H1187B999944"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARXPE571187FB4AFD0"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARWSMC91187B9AD369"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARCZ20M1187FB49687"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR1N6N61187FB4E25E"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARN8NCB1187FB49652"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARWI6LR1187FB46E9F"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR4B3RX1187B9A868A"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARFONSP11F50C4D175"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARDQO721187FB3C6D9"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARI4S0E1187B9B06C0"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARSW5F51187FB4CFC9"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR1OBRC1187FB59AD4"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARFCOGY1187FB454B4"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR7GOK91187FB455F5"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARB054P1187B9AD32E"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARJRQL51187FB541AB"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR3752L1187FB4B67E"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARU9KWP1187B98B2A7"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARRJNTE1187FB44E12"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR3KXHI1187FB3A8BF"</code></td>
+                    <td>7</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-music-__0__-artist-location' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Not available"</code></td>
+                    <td>4292</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"London, England"</code></td>
+                    <td>149</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New York, NY"</code></td>
+                    <td>141</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Los Angeles, CA"</code></td>
+                    <td>136</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chicago, IL"</code></td>
+                    <td>69</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"California - LA"</code></td>
+                    <td>68</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kingston, Jamaica"</code></td>
+                    <td>64</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Brooklyn, NY"</code></td>
+                    <td>59</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"United States"</code></td>
+                    <td>59</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Texas"</code></td>
+                    <td>56</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Atlanta, GA"</code></td>
+                    <td>54</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tennessee"</code></td>
+                    <td>52</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NY - New York City"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Detroit, MI"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"California - SF"</code></td>
+                    <td>46</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"California"</code></td>
+                    <td>43</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Boston, MA"</code></td>
+                    <td>42</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Philadelphia, PA"</code></td>
+                    <td>42</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"London"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Jersey"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"San Francisco, CA"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jamaica"</code></td>
+                    <td>32</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Georgia"</code></td>
+                    <td>32</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Newark, NJ"</code></td>
+                    <td>32</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Seattle, WA"</code></td>
+                    <td>31</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New York"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Minneapolis, MN"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Louis, MO"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Orleans, LA"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Toronto, Ontario, Canada"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"North Carolina"</code></td>
+                    <td>26</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CANADA - Ontario"</code></td>
+                    <td>26</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Florida"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cleveland, OH"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"England"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Austin, TX"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Memphis, TN"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oakland, CA"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Birmingham, England"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sweden"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dallas, TX"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mississippi"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nashville, TN"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paris, France"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jacksonville, FL"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Los Angeles, California"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dublin, Ireland"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pennsylvania"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Manchester, England"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New York, NY [The Bronx]"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Glasgow, Scotland"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Berlin, Germany"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gainesville, FL"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Great Britain / UK"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ireland"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jackson, MS"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dundee, Scotland"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arizona"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Missouri"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Houston, TX"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orange County, CA"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Essex, England"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Indianola, MS"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sacramento, CA"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cuba"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Greenwood, MS"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wisconsin"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chicago"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Illinois"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Queens, NY"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Scotland"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mexico City, Mexico"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Omaha, NE"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Galveston, TX"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sydney, Australia"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Germany"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Virginia"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chiswick, London, England"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oslo, Norway"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Melbourne, Australia"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louisiana"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Puerto Rico"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New York, New York"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Buenos Aires, Argentina"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lafayette, LA"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mass. - Boston"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rio de Janeiro, Brazil"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oxford, UK"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Orange, NJ"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"FR"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Barranquilla, Colombia"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Switzerland"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ukiah, CA"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"United Kingdom"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kentwood, LA; Los Angeles, CA"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charlotte, NC"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Venezuela"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Colorado"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GERMANY"</code></td>
+                    <td>10</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+        <div id='explore-music-__0__-artist-similar' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"ARV4TAT1187FB3BDE8"</code></td>
+                    <td>63</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARV4KO21187FB38008"</code></td>
+                    <td>56</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARU52PB1187FB58E46"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR1PNWN1187FB4A404"</code></td>
+                    <td>40</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARE8GLF1187FB52532"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR4WHYC1187B9896E7"</code></td>
+                    <td>32</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARHJFFY1187B98BA76"</code></td>
+                    <td>31</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARVEJ9M1187FB4DC44"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARSAIUN1187FB398D3"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARN5NHX1187FB4F755"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR07SOR1187FB46179"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARG5N201187FB570F1"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARWMY7E1187B9B7049"</code></td>
+                    <td>26</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARPY3PZ1187FB45623"</code></td>
+                    <td>26</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARM7EDF1187B9B3FA1"</code></td>
+                    <td>26</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARM2EJV1187B98EA13"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARA7YDA1187B9A5776"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR656BL1187B98F7C8"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARSPUJF1187B9A14B8"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR4SBWX1187FB4D6BE"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARSA3561187FB58C37"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARIRD6J1187FB5A98C"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARNLOX91187B990BFC"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARIIJGR11F4C83ECE9"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR0AMQB1187FB52BC2"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARE36MM1187B991E50"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARUY6971187FB3AB45"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARAWOLW1187FB3AB70"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARV03D41187FB413E8"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARMH4YI1187FB3F45E"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARBHW3X1187B999013"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARMPQIE1187FB3D4EB"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARYZTJS1187B98C555"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARJEY4N1187FB56FDF"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR94SFV1187FB4DA2C"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARXY7M01187B9B7611"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR1YFM81187FB3DC28"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARKBYFV1187B9B07FD"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARSZWK21187B9B26D7"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARG17O11187FB4A8DA"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARYPTWE1187FB49D64"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARG7AJL1187FB3E584"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR5DC8S1187B9958BE"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARFETPU124549A3F38"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARHBYTA1187FB3C812"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARES2PA1187FB38083"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARMAC4T1187FB3FA4C"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARKI64B1187FB48606"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR9NGD41187FB3AE2E"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARHNMEZ11F50C4706C"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR48TAR1187B98DC55"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARX5XTP1187FB3D8CC"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ART3O5Z1187B9AB043"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARGJTO11187FB39AC0"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARW9T471187B98D2D2"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARRU9GR1187FB43F56"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARKT6J61187FB4D324"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARWBYRS1187FB3DE02"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARL6FF81187FB5A916"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARFWLXM1187B9B5EE5"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARFGMSJ122988ED7A0"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARHJIKW1187B9ACE16"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR5H4CJ1187B9AE949"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARCQGTE1187B98F814"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARAYJW21187B99C285"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR01VU31187B997DA0"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARM6HLK1187FB427F0"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARA8DDQ1187B9AE3A0"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR03BDP1187FB5B324"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARXDFN01187B9AE80E"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARGIABO1187FB4B3B5"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARNBXYG1187FB54D38"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARF60F61187B9B14B8"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR584781187FB3BAE8"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARNFTGS1187B9A465F"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARKNGPL1187B9B90F0"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARJXL4Z1187B9A5920"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARDW1CO1187B9AD318"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR1N6N61187FB4E25E"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARLSF8H1187B9A76B0"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARP5GN61187FB5B1A3"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARMXJIZ1187FB4D8A0"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARUZRFN1187B98AC05"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARI4SKQ1187B9B43B0"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARBCUKT1187FB52F2A"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARYAUMZ1187B9A2A40"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARQ7S2H1187B9AA49B"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR6AJHY1187B996626"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARE2QID1187B98FA19"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR23C041187FB4D534"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR6LZB61187B9AF431"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARTMSZO1187B98F20E"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AREXZRG1187FB543DA"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARD2NDU1187B99B615"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR9B7GA1187B99A526"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARG06F81187FB35EE2"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR5U53D1187FB37654"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARKAI6D1187B98A539"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ARNHMFD1187FB3B3F6"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR7HM181187FB3CFC1"</code></td>
+                    <td>12</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-music-__0__-artist" ).dialog({
@@ -389,8 +3050,24 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-artist-terms").click(function() {
             $( "#explore-music-__0__-artist-terms" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-music-__0__-artist-terms").click(function() {
+            $( "#explore-music-__0__-artist-terms" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-music-__0__-artist-terms" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-music-__0__-artist-name").click(function() {
+            $( "#explore-music-__0__-artist-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -398,14 +3075,26 @@ $(document).ready(function() {
             $( "#explore-music-__0__-artist-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        $( "#explore-music-__0__-artist-name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-music-__0__-artist-familiarity").click(function() {
             $( "#explore-music-__0__-artist-familiarity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-artist-longitude").click(function() {
             $( "#explore-music-__0__-artist-longitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-artist-id").click(function() {
+            $( "#explore-music-__0__-artist-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -413,14 +3102,35 @@ $(document).ready(function() {
             $( "#explore-music-__0__-artist-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        $( "#explore-music-__0__-artist-id" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-music-__0__-artist-location").click(function() {
             $( "#explore-music-__0__-artist-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        $("#btn-explore-music-__0__-artist-location").click(function() {
+            $( "#explore-music-__0__-artist-location" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-music-__0__-artist-location" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
         $("#btn-explore-music-__0__-artist-latitude").click(function() {
             $( "#explore-music-__0__-artist-latitude" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-artist-similar").click(function() {
+            $( "#explore-music-__0__-artist-similar" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -428,11 +3138,17 @@ $(document).ready(function() {
             $( "#explore-music-__0__-artist-similar" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        $( "#explore-music-__0__-artist-similar" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-music-__0__-artist-hotttnesss").click(function() {
             $( "#explore-music-__0__-artist-hotttnesss" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -443,121 +3159,1785 @@ $(document).ready(function() {
             
             <tr> <td><code>"key"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>1.0</code></td> 
+                 <td>
+                    <code>1.0</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"mode_confidence"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.636</code></td> 
+                 <td>
+                    <code>0.636</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"artist_mbtags_count"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.0</code></td> 
+                 <td>
+                    <code>0.0</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"key_confidence"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.736</code></td> 
+                 <td>
+                    <code>0.736</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"tatums_start"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.28519</code></td> 
+                 <td>
+                    <code>0.28519</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"duration"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>218.93179</code></td> 
+                 <td>
+                    <code>218.93179</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"hotttnesss"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.60211999</code></td> 
+                 <td>
+                    <code>0.60211999</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"beats_start"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.58521</code></td> 
+                 <td>
+                    <code>0.58521</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"time_signature_confidence"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.778</code></td> 
+                 <td>
+                    <code>0.778</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"title"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"I Didn't Mean To"</code></td> 
+                 <td>
+                    <code>"I Didn't Mean To"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-music-__0__-song-title'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"bars_confidence"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.643</code></td> 
+                 <td>
+                    <code>0.643</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"id"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"SOMZWCG12A8C13C480"</code></td> 
+                 <td>
+                    <code>"SOMZWCG12A8C13C480"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-music-__0__-song-id'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"bars_start"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.58521</code></td> 
+                 <td>
+                    <code>0.58521</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"artist_mbtags"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>""</code></td> 
+                 <td>
+                    <code>""</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-music-__0__-song-artist_mbtags'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"start_of_fade_out"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>218.932</code></td> 
+                 <td>
+                    <code>218.932</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"tempo"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>92.198</code></td> 
+                 <td>
+                    <code>92.198</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"end_of_fade_in"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.247</code></td> 
+                 <td>
+                    <code>0.247</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"beats_confidence"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.834</code></td> 
+                 <td>
+                    <code>0.834</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"tatums_confidence"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.779</code></td> 
+                 <td>
+                    <code>0.779</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"mode"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"time_signature"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>4.0</code></td> 
+                 <td>
+                    <code>4.0</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"loudness"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>-11.197</code></td> 
+                 <td>
+                    <code>-11.197</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <div id='explore-music-__0__-song-title' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Intro"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Forever"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Smile"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hey Joe"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hold On"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Everyday"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Outro"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Life"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"25 Variations And Fugue On A Theme By G.F. Handel ..."</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wave"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yesterdays"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Why"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Honey"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Way I Am"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gone"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fire"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Where Are You"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Still"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Untitled"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"These Days"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Smoke"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Door"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Let It Be Me"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Problems"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Don't Stop"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ring The Alarm"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Crazy"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Silver Bells"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Just Say Yes"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Beautiful"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"You Are!"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"When I Grow Up"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mary Had A Little Lamb"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lost"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Silent Night"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"S.O.S."</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lonely"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Love Me"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Old Friends"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Watermelon Man"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Turn It Up"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Guardian Angel"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Why can't we live together"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fuck You"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Feelin` Alone"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joy In The Journey (The Final Word Album Version)"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Test 72"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Marrakech"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Here I Am"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"He Will Break Your Heart"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Merry-Go-Round"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Superstar"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Song Sung Blue"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sentimental Journey"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Over The Rainbow"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Rock"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Main Title"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Macarena"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dragonfly"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Light"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Simon"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jambalaya (On The Bayou)"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Les Femmes Des Autres"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"You'll Never Know"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Superman"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Great Is Thy Faithfulness"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Speak Low"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Down On My Knees"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Heartbreaker"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Only You"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Te Necesito"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Serenata"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"America the Beautiful"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Listen"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Metamorphosis"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wings Of Love"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Get Your Head Stuck On Your Neck"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Love"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Wedding Samba"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Missing"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Undertow"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Floating"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bad Seed"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Columbia"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"My Last Date (With You)"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Break"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Again"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hard Times"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jody"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Amazing Grace"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tell Me Why"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Psalm 27"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mathilda"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Once"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Don't Stop The Music"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hopelessly"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Juno"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Amaze"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Let's Get It Started"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Release"</code></td>
+                    <td>2</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+        <div id='explore-music-__0__-song-id' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"SOQELNC12A8C13FE06"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOMFNPC12A8C13E5FE"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOCUXEW12A58A7CA5B"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOFUNPG12A58A7F017"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOMCBPS12A8BED74BF"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOJGADT12A81C22EAB"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOHSPMJ12AB0181C96"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOUDHTP12AB0183403"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOYHFNB12AB0180890"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOFGBOY12AB018549F"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SONYQUL12AB0188C4D"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOQYKUT12A8C143BC7"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOZCDMD12AAF3B2185"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOPEKHR12A6D4FB338"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOBBUGU12A8C13E95D"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOIVWOX12CF5827585"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOBUDNE12AB018E772"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SODANYE12AB0182941"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOTYCYE12AC468AA08"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOGWCWD12AB017FC95"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOWOSFZ12AC468E52A"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOIQNTY12A6D4F5FE9"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOOOBPU12A6D4FC54A"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOGTHUU12A67020FF8"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOEWLTH12A6D4F8E29"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOZHTJI12A81C20CF5"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOGYEFP12AF729F8DF"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SODFRDR12A8C13CAE4"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOUEWVH12AB018B119"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOCTWCE12A8C135B80"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOCHXRP12A67ADF8BD"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOJWWTP12A6D4F8952"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOYETRS12AB018A8F2"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SODPTLB12A8C13E227"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SONSUTY12A6D4FA57D"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SORFIYS12A8C13C750"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOMDNTQ12A8C13D5FD"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOOLIPF12A8C13B0A2"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOBHMPJ12AB01899FE"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOJAYZL12AB01817AF"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOFNEXF12A8AE464D0"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOQFNLE12A6701F952"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOMSOXH12A67ADD011"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOFTBKK12AB018816C"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOLNWPG12A8C13B98E"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOPNTAR12A6D4F7B7D"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOAGEUK12A8C137581"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOSLDUO12A8C13F7E0"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOURQCZ12AC468CA6C"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOUROPB12A6D4FAC51"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOGWDQX12AB0185701"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOVBYCN12A8C13AABC"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOMKGQN12A8C1339D2"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOTKJVT12A6D4FAB59"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOOGPJF12A8C13F9EF"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOHBIKA12AB01857DB"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOJVMJI12AF72A14F8"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOTSHSN12AC3DF4046"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOBVXQL12A6D4F7FC0"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOOWFID12AC9DCED58"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOWCQMT12A6D4FC2BD"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOFVRHN12A8C134119"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SONIPXL12AC4688938"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOCQBOB12A67AE23D8"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOEPZJJ12A58A7C130"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOMHYKZ12B34F1F013"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOXEXQD12A58A7E72F"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOHYFHW12AB01849D8"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOPHYGD12CF5F890A6"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOVXNAP12A81C234AE"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOORCRP12AC468E63A"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOGFFYV12A8C138D74"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOYZHTW12A58A7DAD9"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOCNIVN12AC3DF98D2"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOBQWPU12A8C144A5E"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOAGRTC12AC468B954"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOFYIDZ12AB0180A2B"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOSAVBB12A8C13D255"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOYCJFP12AB017B7C4"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOHYDLL12AB0187493"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SODOOMJ12AB0185178"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOVATLZ12A8C135595"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOZLFDW12A8C137028"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOUFLRE12A58A7D6A0"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOZIGEW12AB0183C28"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOFZQHK12A8C13B23E"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOAFAGP12A81C22CC3"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOCVNKY12A6D4FBC5E"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SONGTGF12AB017EC2C"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOIOCPL12A58A800EC"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOQCJNI12A8C142188"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOBBHAH12A6310FF6B"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOQSIIB12A6D4FBEFA"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOITIZR12A8C13BA50"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOCINAM12A8C13D160"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOYORWN12A8C144436"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOIURDO12A8C1392EB"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOKFNSF12A8C13C425"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOJLUXH12A6D4FD0CE"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SOKKODJ12A58A7B73D"</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+        <div id='explore-music-__0__-song-artist_mbtags' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>""</code></td>
+                    <td>6289</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"classic pop and rock"</code></td>
+                    <td>254</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hip hop rnb and dance hall"</code></td>
+                    <td>184</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"uk"</code></td>
+                    <td>183</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"rock and indie"</code></td>
+                    <td>175</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"american"</code></td>
+                    <td>160</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"british"</code></td>
+                    <td>134</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"folk"</code></td>
+                    <td>133</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"country"</code></td>
+                    <td>95</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"french"</code></td>
+                    <td>81</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"punk"</code></td>
+                    <td>75</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"german"</code></td>
+                    <td>75</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"rock"</code></td>
+                    <td>74</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"pop and chart"</code></td>
+                    <td>72</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"production music"</code></td>
+                    <td>67</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"finnish"</code></td>
+                    <td>64</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"soul and reggae"</code></td>
+                    <td>58</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"alternative rock"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"jazz and blues"</code></td>
+                    <td>51</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hip-hop"</code></td>
+                    <td>42</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hard rock"</code></td>
+                    <td>41</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"blues"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hip hop"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"greek"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"electronic"</code></td>
+                    <td>31</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"pop"</code></td>
+                    <td>31</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"reggae"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"dance and electronica"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"world"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"heavy metal"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"black metal"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"chinese"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"jazz"</code></td>
+                    <td>26</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"italian"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"soundtrack"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"metal"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"progressive rock"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"spanish"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"los angeles"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"canadian"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"funk"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"latvian"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ska"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"norwegian"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"brazilian"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"new wave"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"classical"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"easy listening soundtracks and musicals"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"taiwanese"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hardcore punk"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"mandarin"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"punk rock"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"post-punk"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"grunge"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"rnb"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"pop rock"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"northern irish"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"industrial rock"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"trance"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"blues rock"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"hong kong"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"colombian"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"seen live"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"madchester"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"english"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"alternative metal"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"new york"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"post-hardcore"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"soft rock"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"franASSais"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"desi"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"new age"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"european"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"dA1/4sseldorf"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"southern rock"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"swedish"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"filk"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"boston"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"thrash metal"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"whistle register"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"barbadian"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"latin"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"contemporary christian"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"texas"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"bhangra"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"dancehall"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"soundtrack composer"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"karajan"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"us"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"horror punk"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"usa"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"folk punk"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"salsa"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"ragtime"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"jamaican"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"country pop"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"melodic death metal"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"house"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"mpb"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"birmingham"</code></td>
+                    <td>7</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-music-__0__-song" ).dialog({
@@ -570,48 +4950,63 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-song-mode_confidence").click(function() {
             $( "#explore-music-__0__-song-mode_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-music-__0__-song-artist_mbtags_count").click(function() {
             $( "#explore-music-__0__-song-artist_mbtags_count" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-song-key_confidence").click(function() {
             $( "#explore-music-__0__-song-key_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-music-__0__-song-tatums_start").click(function() {
             $( "#explore-music-__0__-song-tatums_start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-song-year").click(function() {
             $( "#explore-music-__0__-song-year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-music-__0__-song-duration").click(function() {
             $( "#explore-music-__0__-song-duration" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-song-hotttnesss").click(function() {
             $( "#explore-music-__0__-song-hotttnesss" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-music-__0__-song-beats_start").click(function() {
             $( "#explore-music-__0__-song-beats_start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-song-time_signature_confidence").click(function() {
             $( "#explore-music-__0__-song-time_signature_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-title").click(function() {
+            $( "#explore-music-__0__-song-title" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -619,9 +5014,20 @@ $(document).ready(function() {
             $( "#explore-music-__0__-song-title" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        $( "#explore-music-__0__-song-title" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-music-__0__-song-bars_confidence").click(function() {
             $( "#explore-music-__0__-song-bars_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-id").click(function() {
+            $( "#explore-music-__0__-song-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -629,9 +5035,20 @@ $(document).ready(function() {
             $( "#explore-music-__0__-song-id" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        $( "#explore-music-__0__-song-id" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-music-__0__-song-bars_start").click(function() {
             $( "#explore-music-__0__-song-bars_start" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-music-__0__-song-artist_mbtags").click(function() {
+            $( "#explore-music-__0__-song-artist_mbtags" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -639,46 +5056,59 @@ $(document).ready(function() {
             $( "#explore-music-__0__-song-artist_mbtags" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        $( "#explore-music-__0__-song-artist_mbtags" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-music-__0__-song-start_of_fade_out").click(function() {
             $( "#explore-music-__0__-song-start_of_fade_out" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-song-tempo").click(function() {
             $( "#explore-music-__0__-song-tempo" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-music-__0__-song-end_of_fade_in").click(function() {
             $( "#explore-music-__0__-song-end_of_fade_in" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-song-beats_confidence").click(function() {
             $( "#explore-music-__0__-song-beats_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-music-__0__-song-tatums_confidence").click(function() {
             $( "#explore-music-__0__-song-tatums_confidence" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-song-mode").click(function() {
             $( "#explore-music-__0__-song-mode" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-music-__0__-song-time_signature").click(function() {
             $( "#explore-music-__0__-song-time_signature" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-song-loudness").click(function() {
             $( "#explore-music-__0__-song-loudness" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -689,16 +5119,543 @@ $(document).ready(function() {
             
             <tr> <td><code>"id"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>300848</code></td> 
+                 <td>
+                    <code>300848</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"name"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Fear Itself"</code></td> 
+                 <td>
+                    <code>"Fear Itself"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-music-__0__-release-name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+        <div id='explore-music-__0__-release-name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Greatest Hits"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Live"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Original Album Classics"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Best Of"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Very Best Of"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gold"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Platinum Collection"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joyful"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Super Hits"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"X.O. Experience"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Leroy Hutson Selected Hits Vol. 2"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Best Of"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"20th Century Masters: The Millennium Collection: B..."</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Love Songs"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Street Singer"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Process And Passion"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Best Of Both Worlds"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Plan"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tesoros De ColecciA3n"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Ultimate Collection"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Keep An Eye On The Sky"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"If You Love These Blues_ Play'em As You Please"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"RCA Country Legends"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1970: The Complete Fun House Sessions"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Les AnnA(c)es Chansons"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Definitive Collection"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Collection"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Perfect Dragon"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Singles Collection"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Reggae Max"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mind Control"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Scratchy: The Reprise Recordings [Includes Liner N..."</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Vintage Collections"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Horse Feathers / Animal Crackers"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rise"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Murskapunkkia"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unplugged"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Timeless"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Our Lady... Kitty Kallen"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Live!"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"A Fist In The Thought"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Voyages"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"House Of Dark Shadows and Night Of Dark Shadows"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Imitations Of Life"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The X-Factor (Side B)"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Massenet: Werther"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"18 CANDLES: THE EARLY YEARS"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Curse"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Musica Sacra Nella Napoli del '700"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Babies Go To Sleep"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kino"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Magic"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"I Got To Find Me A Woman"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cover the Earth"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"A Musical Massacre (Explicit)"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Angels & Outlaws"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Anthology"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Miles To Miles"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"20 Favorites"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Beasts of Burden"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Solomon Vol. 2"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Crush The Dream"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bobby's Girl - The Complete Seville Recordings"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Distillers"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"You Are Here"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Business As Usual"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Irfan_ le hA(c)ros"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The City"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alex Loves..."</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Come A Little Bit Closer"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Love Junk"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Revenge"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"IntA(c)grale Les Cactus"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Humboldt Beginnings"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dora The Explorer"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Donde Estas Corazon"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"97 | 07"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Drama_ Spiel und Blut (Das Archiv Teil 1)"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Birmingham Jubilee Singers Vol. 2 (1927-1930)"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Remixes"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mes premiers vinyls"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kaikkien aikojen parhaat -45 klassikkoa - Aattelep..."</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The King's Harmoniers"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Edge Of Love"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Millennium-Tanzparty"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Todos Cantamos Con Maria Elena"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"No Pressure"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Purple Haze"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hear Our Prayers O Lord"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"J.Lo"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"IntA(c)grale 81-91"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rio"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Live At Alexandra Palace"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pump Up The Bhangra"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"14 Megala Tragoudia - Angela Dimitriou"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"What The Game's Been Missing!"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Directo en tus manos"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Janis"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Demolition Men Present: Block Tested Hood Approved"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Down By The River"</code></td>
+                    <td>3</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-music-__0__-release" ).dialog({
@@ -711,10 +5668,21 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-music-__0__-release-name").click(function() {
             $( "#explore-music-__0__-release-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        $("#btn-explore-music-__0__-release-name").click(function() {
+            $( "#explore-music-__0__-release-name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-music-__0__-release-name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
     });
     </script>
@@ -751,11 +5719,9 @@ $(document).ready(function() {
     
     <h3 id="usage">Usage</h3>
     
-    This library has 3 functions you can use.
+    This library has 1 function you can use.
     
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">music</span>
-<span class="n">a_music</span> <span class="o">=</span> <span class="n">music</span><span class="o">.</span><span class="n">get_song_by_name</span><span class="p">(</span><span class="s2">&quot;I Didn&#39;t Mean To&quot;</span><span class="p">)</span>
-<span class="n">list_of_music</span> <span class="o">=</span> <span class="n">music</span><span class="o">.</span><span class="n">get_songs_by_artist</span><span class="p">(</span><span class="s2">&quot;Aerosmith&quot;</span><span class="p">)</span>
 <span class="n">list_of_music</span> <span class="o">=</span> <span class="n">music</span><span class="o">.</span><span class="n">get_songs</span><span class="p">()</span>
 </pre></div>
 
@@ -766,7 +5732,6 @@ $(document).ready(function() {
 
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">music</span>
 <span class="c1"># These may be slow!</span>
-<span class="n">list_of_music</span> <span class="o">=</span> <span class="n">music</span><span class="o">.</span><span class="n">get_songs_by_artist</span><span class="p">(</span><span class="s2">&quot;Aerosmith&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">list_of_music</span> <span class="o">=</span> <span class="n">music</span><span class="o">.</span><span class="n">get_songs</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
@@ -775,56 +5740,6 @@ $(document).ready(function() {
     
     <h3 id="documentation">Documentation</h3>
     
-<h4 id='get_song_by_name' style='font-family:monospace'    >&nbsp;music.get_song_by_name(title)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Given the title of a song, returns information about the song.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>title</b>: <i>str</i></h5>
-    <p class="list-group-item-text">The title of the song.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
-
-</ul>
-
-</div>
-
-<h4 id='get_songs_by_artist' style='font-family:monospace'    >&nbsp;music.get_songs_by_artist(artist, test=False)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Given the name of an artist, returns all the songs by that artist in the database.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>artist</b>: <i>str</i></h5>
-    <p class="list-group-item-text">The name of the artist or band.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
 <h4 id='get_songs' style='font-family:monospace'    >&nbsp;music.get_songs(test=False)</h4>
 
 <div class='row'>

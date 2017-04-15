@@ -28,20 +28,20 @@ interfaces:
     test:
         sql: SELECT data FROM county_demographics LIMIT {hardware}
         post: json()
-  - name: get counties by state
-    args:
-      - name: state
-        type: string
-        description: The name of the desired state
-        default: "'VA'"
-    description: Returns the report for each county in a given state.
-    returns: list[report]
-    production:
-        sql: SELECT data FROM county_demographics WHERE state=? COLLATE NOCASE
-        post: json()
-    test:
-        sql: SELECT data FROM county_demographics WHERE state=? COLLATE NOCASE LIMIT {hardware}
-        post: json()
+  # - name: get counties by state
+    # args:
+      # - name: state
+        # type: string
+        # description: The name of the desired state
+        # default: "'VA'"
+    # description: Returns the report for each county in a given state.
+    # returns: list[report]
+    # production:
+        # sql: SELECT data FROM county_demographics WHERE state=? COLLATE NOCASE
+        # post: json()
+    # test:
+        # sql: SELECT data FROM county_demographics WHERE state=? COLLATE NOCASE LIMIT {hardware}
+        # post: json()
 structures:
     "county_demographics.[0].Age": percent, 2014
     "county_demographics.[0].Miscellaneous.Percent Female": '2014'

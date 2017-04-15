@@ -31,36 +31,36 @@ interfaces:
     test:
         sql: SELECT data FROM cancer LIMIT {hardware}
         post: json()
-  - name: get reports by year
-    description: Given a year, returns all the cancer reports for that year in the database.
-    args:
-      - name: year
-        default: 1999
-        type: int
-        matches: SELECT DISTINCT report FROM cancer
-        description: The year to get reports.
-    production:
-        sql: SELECT data FROM cancer WHERE year=?
-        post: json()
-    test:
-        sql: SELECT data FROM cancer WHERE year=? LIMIT {hardware}
-        post: json()
-    returns: list[report]
-  - name: get reports by area
-    description: Given a area, returns all the cancer reports for that area in the database.
-    args:
-      - name: area
-        default: 'Alabama'
-        type: str
-        matches: SELECT DISTINCT report FROM cancer
-        description: The year to get reports.
-    production:
-        sql: SELECT data FROM cancer WHERE year=?
-        post: json()
-    test:
-        sql: SELECT data FROM cancer WHERE year=? LIMIT {hardware}
-        post: json()
-    returns: list[report]
+  # - name: get reports by year
+    # description: Given a year, returns all the cancer reports for that year in the database.
+    # args:
+      # - name: year
+        # default: 1999
+        # type: int
+        # matches: SELECT DISTINCT report FROM cancer
+        # description: The year to get reports.
+    # production:
+        # sql: SELECT data FROM cancer WHERE year=?
+        # post: json()
+    # test:
+        # sql: SELECT data FROM cancer WHERE year=? LIMIT {hardware}
+        # post: json()
+    # returns: list[report]
+  # - name: get reports by area
+    # description: Given a area, returns all the cancer reports for that area in the database.
+    # args:
+      # - name: area
+        # default: 'Alabama'
+        # type: str
+        # matches: SELECT DISTINCT report FROM cancer
+        # description: The year to get reports.
+    # production:
+        # sql: SELECT data FROM cancer WHERE year=?
+        # post: json()
+    # test:
+        # sql: SELECT data FROM cancer WHERE year=? LIMIT {hardware}
+        # post: json()
+    # returns: list[report]
 comments:
     Age:
         Age Adjusted CI Lower: A number representing the expected lower bound for the cancer rate. It is unlikely that the actual rate is lower than this number. CI means "Confidence Interval".

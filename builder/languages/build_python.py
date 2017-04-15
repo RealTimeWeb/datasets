@@ -11,7 +11,7 @@ from textwrap import wrap
 from jinja2 import Environment, FileSystemLoader
 import jinja2_highlight
 
-from auxiliary import to_dict, camel_case_caps, camel_case
+from auxiliary import to_dict, camel_case_caps, camel_case, kill_unicode
 from auxiliary import snake_case, kebab_case, flat_case, copy_file
 
 try:
@@ -31,6 +31,7 @@ env.filters['camel_case'] = camel_case
 env.filters['snake_case'] = snake_case
 env.filters['kebab_case'] = kebab_case
 env.filters['flat_case'] = flat_case
+env.filters['max'] = max
 
 conversion_mapping = { ("string", "integer") : "",
                        ("string", "float") : "",
@@ -205,6 +206,7 @@ def convert_example_value(data, possible_path=""):
         return "<code>{data}</code>".format(data=data)
         
 def wrap_quotes(data):
+    data = kill_unicode(data)
     if '"' not in data:
         pretty = '"{data}"'.format(data=data)
     elif "'" not in data:
@@ -304,12 +306,17 @@ def build_python(model, fast):
     files = {}
     
     icon_file = model['metadata']['icon']
-    
     if os.path.exists(icon_file):
         with open(icon_file, 'rb') as icon_data:
             files[new_folder+name+'.png'] = icon_data.read()
     else:
         model["metadata"]["icon"] = False
+    splash_file = model['metadata']['splash']
+    if os.path.exists(splash_file):
+        with open(splash_file, 'rb') as splash_data:
+            files[new_folder+name+"_splash.png"] = splash_data.read()
+    else:
+        model["metadata"]["splash"] = False
     
     files.update(build_metafiles(model))
     files.update(build_main(model))

@@ -125,69 +125,6 @@ def get_cars(test=False):
         return _Auxiliary._byteify(data)
         
 
-def get_cars_by_year(year, test=False):
-    """
-    Returns all the cars for a given year.
-    
-    :param year: The year as an integer, between 1921 and 2013.
-    :type year: int
-    """
-    
-    if _Constants._TEST or test:
-        rows = _Constants._DATABASE.execute("SELECT data FROM cars WHERE year=? LIMIT {hardware}".format(
-            hardware=_Constants._HARDWARE),
-            (year, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-    else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM cars WHERE year=?".format(
-            hardware=_Constants._HARDWARE),
-            (year, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-
-def get_cars_by_make(make, test=False):
-    """
-    Returns all the cars of a certain make.
-    
-    :param make: The make of the cars
-    :type make: str
-    """
-    
-    # Match it against recommend values
-    
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT make FROM cars").fetchall()]
-    if make.lower() not in potentials:
-        best_guesses = _difflib.get_close_matches(make, potentials)
-        if best_guesses:
-            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
-        else:
-            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
-    if _Constants._TEST or test:
-        rows = _Constants._DATABASE.execute("SELECT data FROM cars WHERE make=? COLLATE NOCASE LIMIT {hardware}".format(
-            hardware=_Constants._HARDWARE),
-            (make, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-    else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM cars WHERE make=? COLLATE NOCASE".format(
-            hardware=_Constants._HARDWARE),
-            (make, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-
 ################################################################################
 # Internalized testing code
 ################################################################################
@@ -208,44 +145,6 @@ def _test_interfaces():
     print("Test get_cars")
     start_time = _default_timer()
     result = get_cars(test=True)
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    
-    # Production test
-    print("Production get_cars_by_year")
-    start_time = _default_timer()
-    result = get_cars_by_year(2001)
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    # Test test
-    print("Test get_cars_by_year")
-    start_time = _default_timer()
-    result = get_cars_by_year(2001, test=True)
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    
-    # Production test
-    print("Production get_cars_by_make")
-    start_time = _default_timer()
-    result = get_cars_by_make("Pontiac")
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    # Test test
-    print("Test get_cars_by_make")
-    start_time = _default_timer()
-    result = get_cars_by_make("Pontiac", test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))

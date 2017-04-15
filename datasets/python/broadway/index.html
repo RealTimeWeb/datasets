@@ -17,6 +17,9 @@ Broadway Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -35,10 +38,15 @@ Broadway Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -191,9 +199,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Broadway');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="broadway.png" alt="Broadway" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="broadway_splash.png" alt="broadway_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Broadway Python Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -210,7 +223,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_shows'>get_shows</a></li>
-        <li><a href='#get_show_by_theatre'>get_show_by_theatre</a></li>
         
         </ol></li>
         
@@ -276,26 +288,563 @@ $(document).ready(function() {
             
             <tr> <td><code>"Full"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"08/26/1990"</code></td> 
+                 <td>
+                    <code>"08/26/1990"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-broadway-__0__-Date-Full'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td>The full date representation that this performance's week ended on in "Month/Day/Year" format.</td> </tr>
             
             <tr> <td><code>"Day"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>26</code></td> 
+                 <td>
+                    <code>26</code>
+                    
+                 </td> 
                  <td>The day of the month that this performance's week ended on.</td> </tr>
             
             <tr> <td><code>"Month"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>8</code></td> 
+                 <td>
+                    <code>8</code>
+                    
+                 </td> 
                  <td>The numeric month that this performance's week ended in (1 = January, 2 = February, etc.).</td> </tr>
             
             <tr> <td><code>"Year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1990</code></td> 
+                 <td>
+                    <code>1990</code>
+                    
+                 </td> 
                  <td>The year that this week of performances occurred in.</td> </tr>
             
         </table>
     </div>
+    
+        
+        <div id='explore-broadway-__0__-Date-Full' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"05/06/2012"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/29/2012"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/08/2012"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/28/2010"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/10/2011"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/22/2012"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/15/2012"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/03/2011"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/07/2010"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/23/2006"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/14/2010"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/21/2010"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/30/2006"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/17/2011"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/29/2015"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/22/2015"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/22/2007"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/24/2011"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/13/2012"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/20/2014"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/01/2016"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/27/2014"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/04/2014"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/11/2008"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/06/2015"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/08/2016"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/17/2005"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/27/2015"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/13/2015"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/20/2015"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/20/2012"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/01/2005"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/04/2008"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"01/03/2016"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/24/2016"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/13/2014"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/17/2016"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/16/2000"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/14/2006"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/12/2010"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/22/2001"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/13/2001"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/06/2001"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/29/2016"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/29/2001"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/29/2007"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/07/2006"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"06/05/2016"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/25/2008"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/03/2016"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/06/2014"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/18/2014"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/23/2014"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/14/2014"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"06/08/2014"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/01/2011"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/05/2015"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/21/2006"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/27/2012"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/26/1998"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/15/2015"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/23/2000"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/11/2014"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"06/10/2007"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"10/31/2010"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/14/2000"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/09/2000"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/15/2005"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/10/2016"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/30/2014"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/05/2010"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/26/2010"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/18/2008"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/19/2010"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/07/2014"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/02/1999"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/30/2000"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"06/15/2014"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"06/03/2007"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/21/2014"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/28/2014"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/15/2001"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/15/2011"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/16/2003"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/15/2016"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/13/2007"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/23/2003"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"01/04/2015"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/27/2007"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"06/03/2012"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/07/2000"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/06/2007"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/22/2016"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/08/2005"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"06/22/2008"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/25/1999"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/26/2009"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"04/19/2009"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"05/20/2007"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"06/15/2008"</code></td>
+                    <td>35</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-broadway-__0__-Date" ).dialog({
@@ -308,20 +857,33 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        $("#btn-explore-broadway-__0__-Date-Full").click(function() {
+            $( "#explore-broadway-__0__-Date-Full" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-broadway-__0__-Date-Full" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
         $("#btn-explore-broadway-__0__-Date-Day").click(function() {
             $( "#explore-broadway-__0__-Date-Day" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-broadway-__0__-Date-Month").click(function() {
             $( "#explore-broadway-__0__-Date-Month" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-broadway-__0__-Date-Year").click(function() {
             $( "#explore-broadway-__0__-Date-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -332,31 +894,57 @@ $(document).ready(function() {
             
             <tr> <td><code>"Gross"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>134456</code></td> 
+                 <td>
+                    <code>134456</code>
+                    
+                 </td> 
                  <td>The "Gross Gross" of this performance, or how much it made in total across the entire week. Measured in dollars.</td> </tr>
             
             <tr> <td><code>"Performances"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>8</code></td> 
+                 <td>
+                    <code>8</code>
+                    
+                 </td> 
                  <td>The number of performances that occurred this week.</td> </tr>
             
             <tr> <td><code>"Attendance"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>5500</code></td> 
+                 <td>
+                    <code>5500</code>
+                    
+                 </td> 
                  <td>The total number of people who attended performances over the week.</td> </tr>
             
             <tr> <td><code>"Capacity"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>88</code></td> 
+                 <td>
+                    <code>88</code>
+                    
+                 </td> 
                  <td>The percentage of the theatre that was filled during that week.</td> </tr>
             
             <tr> <td><code>"Gross Potential"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
                  <td>The Gross Potential is the maximum amount an engagement can possibly earn based on calculations involving ticket prices, seating capacity, and the number of performances. This number is expressed here as a percentage of what could have been achieved (Gross Gross / Gross Potential). In case the GP could not be calculated, it was replaced with 0%.</td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-broadway-__0__-Statistics" ).dialog({
@@ -369,25 +957,30 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-broadway-__0__-Statistics-Performances").click(function() {
             $( "#explore-broadway-__0__-Statistics-Performances" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-broadway-__0__-Statistics-Attendance").click(function() {
             $( "#explore-broadway-__0__-Statistics-Attendance" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-broadway-__0__-Statistics-Capacity").click(function() {
             $( "#explore-broadway-__0__-Statistics-Capacity" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-broadway-__0__-Statistics-Gross-Potential").click(function() {
             $( "#explore-broadway-__0__-Statistics-Gross-Potential" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -398,21 +991,37 @@ $(document).ready(function() {
             
             <tr> <td><code>"Date"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-broadway-__0__-Date'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-broadway-__0__-Date'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Statistics"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-broadway-__0__-Statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-broadway-__0__-Statistics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Show"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-broadway-__0__-Show'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-broadway-__0__-Show'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-broadway-__0__" ).dialog({
@@ -425,15 +1034,18 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-broadway-__0__-Statistics").click(function() {
             $( "#explore-broadway-__0__-Statistics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-broadway-__0__-Show").click(function() {
             $( "#explore-broadway-__0__-Show" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -444,21 +1056,870 @@ $(document).ready(function() {
             
             <tr> <td><code>"Type"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Play"</code></td> 
+                 <td>
+                    <code>"Play"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-broadway-__0__-Show-Type'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td>Whether it is a "Musical", "Play", or "Special".</td> </tr>
             
             <tr> <td><code>"Name"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Tru"</code></td> 
+                 <td>
+                    <code>"Tru"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-broadway-__0__-Show-Name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td>The name of the production.</td> </tr>
             
             <tr> <td><code>"Theatre"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Booth"</code></td> 
+                 <td>
+                    <code>"Booth"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-broadway-__0__-Show-Theatre'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td>The name of the theatre.</td> </tr>
             
         </table>
     </div>
+    
+        
+        <div id='explore-broadway-__0__-Show-Type' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Musical"</code></td>
+                    <td>22551</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Play"</code></td>
+                    <td>8406</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Special"</code></td>
+                    <td>339</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-broadway-__0__-Show-Name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"The Phantom Of The Opera"</code></td>
+                    <td>1053</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chicago"</code></td>
+                    <td>1032</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Lion King"</code></td>
+                    <td>980</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mamma Mia!"</code></td>
+                    <td>725</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Beauty And The Beast"</code></td>
+                    <td>690</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wicked"</code></td>
+                    <td>669</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rent"</code></td>
+                    <td>639</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jersey Boys"</code></td>
+                    <td>565</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Miss Saigon"</code></td>
+                    <td>489</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Les Misrables"</code></td>
+                    <td>365</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hairspray"</code></td>
+                    <td>336</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mary Poppins"</code></td>
+                    <td>334</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Avenue Q"</code></td>
+                    <td>321</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Producers"</code></td>
+                    <td>318</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cabaret 98"</code></td>
+                    <td>304</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rock Of Ages"</code></td>
+                    <td>295</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Book Of Mormon"</code></td>
+                    <td>286</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Smokey Joe'S Cafe"</code></td>
+                    <td>258</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cats"</code></td>
+                    <td>251</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aida"</code></td>
+                    <td>237</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Monty Python'S Spamalot"</code></td>
+                    <td>202</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jekyll & Hyde"</code></td>
+                    <td>199</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"42Nd Street '01"</code></td>
+                    <td>193</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kinky Boots"</code></td>
+                    <td>181</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Matilda"</code></td>
+                    <td>180</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Billy Elliot: The Musical"</code></td>
+                    <td>171</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Movin' Out"</code></td>
+                    <td>167</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Spider-Man Turn Off The Dark"</code></td>
+                    <td>160</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"In The Heights"</code></td>
+                    <td>152</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Memphis"</code></td>
+                    <td>150</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Once"</code></td>
+                    <td>149</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The 25Th Annual Putnam County Spelling Bee"</code></td>
+                    <td>145</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bring In Da Noise, Bring In Da Funk"</code></td>
+                    <td>144</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Beautiful"</code></td>
+                    <td>143</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fosse"</code></td>
+                    <td>140</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Annie Get Your Gun"</code></td>
+                    <td>135</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Contact"</code></td>
+                    <td>131</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"South Pacific"</code></td>
+                    <td>130</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aladdin"</code></td>
+                    <td>129</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Les Misrables '14"</code></td>
+                    <td>129</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Newsies"</code></td>
+                    <td>128</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Urinetown"</code></td>
+                    <td>125</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Color Purple"</code></td>
+                    <td>119</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thoroughly Modern Millie"</code></td>
+                    <td>118</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Proof"</code></td>
+                    <td>117</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"A Gentleman'S Guide To Love And Murder"</code></td>
+                    <td>116</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kiss Me, Kate"</code></td>
+                    <td>114</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Spring Awakening"</code></td>
+                    <td>112</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ragtime"</code></td>
+                    <td>108</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Grease"</code></td>
+                    <td>107</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Titanic"</code></td>
+                    <td>105</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fiddler On The Roof 04"</code></td>
+                    <td>103</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Scarlet Pimpernel"</code></td>
+                    <td>103</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cinderella"</code></td>
+                    <td>102</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Curious Incident Of The Dog In The Night-Time"</code></td>
+                    <td>101</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Full Monty"</code></td>
+                    <td>101</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Tale Of The Allergist'S Wife"</code></td>
+                    <td>101</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The 39 Steps"</code></td>
+                    <td>100</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sunset Boulevard"</code></td>
+                    <td>99</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"A Chorus Line '06"</code></td>
+                    <td>97</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Side Story"</code></td>
+                    <td>97</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Motown The Musical"</code></td>
+                    <td>97</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Next To Normal"</code></td>
+                    <td>95</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Addams Family"</code></td>
+                    <td>95</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"War Horse"</code></td>
+                    <td>95</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"A Funny Thing Happened On The Way To The Forum"</code></td>
+                    <td>94</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pippin"</code></td>
+                    <td>94</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Little Mermaid"</code></td>
+                    <td>94</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Show Boat"</code></td>
+                    <td>94</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The King And I 96"</code></td>
+                    <td>91</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Footloose"</code></td>
+                    <td>91</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Music Man"</code></td>
+                    <td>91</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Drowsy Chaperone"</code></td>
+                    <td>89</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"August: Osage County"</code></td>
+                    <td>84</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dirty Rotten Scoundrels"</code></td>
+                    <td>83</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Legally Blonde"</code></td>
+                    <td>79</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Art"</code></td>
+                    <td>78</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Riverdance"</code></td>
+                    <td>78</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Defending The Caveman"</code></td>
+                    <td>77</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hedwig And The Angry Inch"</code></td>
+                    <td>77</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Finding Neverland"</code></td>
+                    <td>75</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"An American In Paris"</code></td>
+                    <td>75</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sister Act"</code></td>
+                    <td>75</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Grease 07"</code></td>
+                    <td>74</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Something Rotten!"</code></td>
+                    <td>73</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Last Night Of Ballyhoo"</code></td>
+                    <td>73</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fun Home"</code></td>
+                    <td>73</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Sisters Rosensweig"</code></td>
+                    <td>72</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Sound Of Music"</code></td>
+                    <td>72</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Xanadu"</code></td>
+                    <td>71</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Anything Goes '11"</code></td>
+                    <td>70</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hair"</code></td>
+                    <td>69</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Priscilla Queen Of The Desert"</code></td>
+                    <td>69</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Victor/Victoria"</code></td>
+                    <td>69</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Doubt"</code></td>
+                    <td>69</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Light In The Piazza"</code></td>
+                    <td>68</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Side Man"</code></td>
+                    <td>68</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tarzan"</code></td>
+                    <td>68</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Curtains"</code></td>
+                    <td>68</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The King And I 2015"</code></td>
+                    <td>68</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-broadway-__0__-Show-Theatre' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Majestic"</code></td>
+                    <td>1053</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Broadway"</code></td>
+                    <td>1045</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gershwin"</code></td>
+                    <td>980</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Palace"</code></td>
+                    <td>970</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Shubert"</code></td>
+                    <td>967</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ambassador"</code></td>
+                    <td>963</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Amsterdam"</code></td>
+                    <td>916</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nederlander"</code></td>
+                    <td>911</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lunt-Fontanne"</code></td>
+                    <td>910</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Minskoff"</code></td>
+                    <td>905</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Imperial"</code></td>
+                    <td>903</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eugene O'Neill"</code></td>
+                    <td>878</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Helen Hayes"</code></td>
+                    <td>868</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Vivian Beaumont"</code></td>
+                    <td>842</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Walter Kerr"</code></td>
+                    <td>827</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. James"</code></td>
+                    <td>817</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Richard Rodgers"</code></td>
+                    <td>810</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ethel Barrymore"</code></td>
+                    <td>797</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Golden"</code></td>
+                    <td>781</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Neil Simon"</code></td>
+                    <td>754</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Marquis"</code></td>
+                    <td>736</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Booth"</code></td>
+                    <td>726</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Winter Garden"</code></td>
+                    <td>719</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Broadhurst"</code></td>
+                    <td>706</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Brooks Atkinson"</code></td>
+                    <td>690</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"American Airlines"</code></td>
+                    <td>650</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Music Box"</code></td>
+                    <td>642</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Circle In The Square"</code></td>
+                    <td>639</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Al Hirschfeld"</code></td>
+                    <td>570</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"August Wilson"</code></td>
+                    <td>563</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lyceum"</code></td>
+                    <td>546</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cort"</code></td>
+                    <td>501</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Belasco"</code></td>
+                    <td>471</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jacobs"</code></td>
+                    <td>441</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Virginia"</code></td>
+                    <td>424</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Longacre"</code></td>
+                    <td>416</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Plymouth"</code></td>
+                    <td>383</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Studio 54"</code></td>
+                    <td>362</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Schoenfeld"</code></td>
+                    <td>351</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Royale"</code></td>
+                    <td>312</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Friedman"</code></td>
+                    <td>291</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Martin Beck"</code></td>
+                    <td>290</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Studio 54 ('98)"</code></td>
+                    <td>269</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Stephen Sondheim"</code></td>
+                    <td>252</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cadillac Winter Garden"</code></td>
+                    <td>242</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford Center"</code></td>
+                    <td>193</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Biltmore"</code></td>
+                    <td>167</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Foxwoods"</code></td>
+                    <td>160</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hilton Theatre"</code></td>
+                    <td>146</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Criterion"</code></td>
+                    <td>145</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry Miller"</code></td>
+                    <td>125</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford Center (Livent)"</code></td>
+                    <td>108</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lyric"</code></td>
+                    <td>78</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kit Kat Klub"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry Miller (Rndabt)"</code></td>
+                    <td>26</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ford Center (Tcn)"</code></td>
+                    <td>24</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-broadway-__0__-Show" ).dialog({
@@ -471,8 +1932,33 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        $("#btn-explore-broadway-__0__-Show-Type").click(function() {
+            $( "#explore-broadway-__0__-Show-Type" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-broadway-__0__-Show-Type" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
         $("#btn-explore-broadway-__0__-Show-Name").click(function() {
             $( "#explore-broadway-__0__-Show-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-broadway-__0__-Show-Name").click(function() {
+            $( "#explore-broadway-__0__-Show-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-broadway-__0__-Show-Name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-broadway-__0__-Show-Theatre").click(function() {
+            $( "#explore-broadway-__0__-Show-Theatre" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -480,6 +1966,11 @@ $(document).ready(function() {
             $( "#explore-broadway-__0__-Show-Theatre" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        $( "#explore-broadway-__0__-Show-Theatre" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
     });
     </script>
@@ -516,11 +2007,10 @@ $(document).ready(function() {
     
     <h3 id="usage">Usage</h3>
     
-    This library has 2 functions you can use.
+    This library has 1 function you can use.
     
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">broadway</span>
 <span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadway</span><span class="o">.</span><span class="n">get_shows</span><span class="p">()</span>
-<span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadway</span><span class="o">.</span><span class="n">get_show_by_theatre</span><span class="p">(</span><span class="s2">&quot;friedman&quot;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -531,7 +2021,6 @@ $(document).ready(function() {
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">broadway</span>
 <span class="c1"># These may be slow!</span>
 <span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadway</span><span class="o">.</span><span class="n">get_shows</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadway</span><span class="o">.</span><span class="n">get_show_by_theatre</span><span class="p">(</span><span class="s2">&quot;friedman&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
 
@@ -548,34 +2037,6 @@ Returns information about all the shows
 <br>
 
 <ul class="list-group col-md-6 col-md-offset-1">
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='get_show_by_theatre' style='font-family:monospace'    >&nbsp;broadway.get_show_by_theatre(theatre, test=False)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns information about all the shows at a given theatre
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>theatre</b>: <i>str</i></h5>
-    <p class="list-group-item-text">The name of the theatre (e.g., "friedman").
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
 
 
 <li class="list-group-item list-group-item-warning">

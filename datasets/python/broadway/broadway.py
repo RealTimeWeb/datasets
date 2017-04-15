@@ -125,42 +125,6 @@ def get_shows(test=False):
         return _Auxiliary._byteify(data)
         
 
-def get_show_by_theatre(theatre, test=False):
-    """
-    Returns information about all the shows at a given theatre
-    
-    :param theatre: The name of the theatre (e.g., "friedman").
-    :type theatre: str
-    """
-    
-    # Match it against recommend values
-    
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT theatre FROM broadway").fetchall()]
-    if theatre.lower() not in potentials:
-        best_guesses = _difflib.get_close_matches(theatre, potentials)
-        if best_guesses:
-            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
-        else:
-            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
-    if _Constants._TEST or test:
-        rows = _Constants._DATABASE.execute("SELECT data FROM broadway WHERE theatre=? COLLATE NOCASE LIMIT {hardware}".format(
-            hardware=_Constants._HARDWARE),
-            (theatre, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-    else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM broadway WHERE theatre=? COLLATE NOCASE".format(
-            hardware=_Constants._HARDWARE),
-            (theatre, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-
 ################################################################################
 # Internalized testing code
 ################################################################################
@@ -181,25 +145,6 @@ def _test_interfaces():
     print("Test get_shows")
     start_time = _default_timer()
     result = get_shows(test=True)
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    
-    # Production test
-    print("Production get_show_by_theatre")
-    start_time = _default_timer()
-    result = get_show_by_theatre("friedman")
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    # Test test
-    print("Test get_show_by_theatre")
-    start_time = _default_timer()
-    result = get_show_by_theatre("friedman", test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))

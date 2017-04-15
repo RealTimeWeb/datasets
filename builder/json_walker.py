@@ -1,6 +1,13 @@
 import json
 import sys
 from pprint import pprint
+from collections import Counter
+
+def truncate(a_str, length, ending='...'):
+    if len(a_str) > length+1+len(ending):
+        return (a_str[:length] + ending)
+    else:
+        return a_str
 
 class JsonWalker(object):
     def __init__(self, name, comment_dictionary):
@@ -26,7 +33,15 @@ class JsonWalker(object):
                 return 'list[Unknown]'
         else:
             return value.__class__.__name__
-        
+    def full_walk(self, chunk, parent_name):
+        self.walk(chunk, parent_name)
+        self.union_walk(chunk)
+        for adict in self.dictionaries.values():
+            for field in adict['fields']:
+                if field['type'] in ('str', 'unicode'):
+                    freqs = dict(field['value_frequencies'])
+        return self
+    
     def walk(self, chunk, parent_name):
         #print(self.json_path)
         if isinstance(chunk, dict):
@@ -39,10 +54,12 @@ class JsonWalker(object):
         
     def walk_dict(self, a_dict, parent_name):
         self.dictionaries[self.json_path] = {'fields': [], 'name': parent_name}
+        print(self.json_path)
         for key, value in a_dict.items():
             self.path.append(key)
             dictionary = {'type': self.type_check(value),
                           'key': key,
+                          'value_frequencies': Counter(),
                           'example': value,
                           'path': self.json_path,
                           'comment': self.comment_dictionary.get(self.json_path, "")}
@@ -72,6 +89,35 @@ class JsonWalker(object):
             self.unchecked_lists.add(self.json_path)
     def walk_atomic(self, an_atomic, parent_name):
         self.leaves.add(self.json_path)
+        
+    def union_walk(self, chunk):
+        if isinstance(chunk, dict):
+            self.union_walk_dict(chunk)
+        elif isinstance(chunk, list):
+            self.union_walk_list(chunk)
+        else:
+            self.union_walk_atomic(chunk)
+    def union_walk_dict(self, a_dict):
+        fields = self.dictionaries[self.json_path]['fields']
+        for field in fields:
+            key = field['key']
+            self.path.append(key)
+            value = a_dict[key]
+            if field['type'] in ('str', 'unicode'):
+                if isinstance(value, (str, unicode)):
+                    value = truncate(value, 50)
+                    field['value_frequencies'][value] += 1
+            self.union_walk(value)
+            self.path.pop()
+    def union_walk_list(self, a_list):
+        #assert a_list, "Empty list at {path}".format(path=self.json_path)
+        entry_path = self.json_path
+        for first in a_list:
+            self.path.append("[0]")
+            self.union_walk(first)
+            self.path.pop()
+    def union_walk_atomic(self, an_atomic):
+        pass
 
 DICTIONARIES = set()
 LISTS = set()

@@ -450,7 +450,8 @@ class Compiler(object):
         for local in self.package.locals:
             if os.path.exists(local.file):
                 with open(local.file) as json_file:
-                    walked = JsonWalker(local.name, self.package.structures_comments).walk(json.load(json_file),    local.row)
+                    walked = JsonWalker(local.name, self.package.structures_comments)
+                    walked.full_walk(json.load(json_file), local.row)
                     if walked.empty_list_warnings:
                         for location in walked.empty_list_warnings:
                             self.warning("Empty list at {}".format(location))

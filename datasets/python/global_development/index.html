@@ -17,6 +17,9 @@ Global Development Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -35,10 +38,15 @@ Global Development Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -191,9 +199,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Global Development');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="global_development.png" alt="Global Development" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="global_development_splash.png" alt="global_development_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Global Development Python Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -210,8 +223,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_reports'>get_reports</a></li>
-        <li><a href='#get_reports_by_year'>get_reports_by_year</a></li>
-        <li><a href='#get_reports_by_country'>get_reports_by_country</a></li>
         
         </ol></li>
         
@@ -281,21 +292,553 @@ $(document).ready(function() {
             
             <tr> <td><code>"Country"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Canada"</code></td> 
+                 <td>
+                    <code>"Canada"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-development-__0__-Country'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Data"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-development-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-development-__0__-Data'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td>Based on the nature of the data, some of the numbers that are reported are very small.  For example a field reported as 0.15 is 0.15 %, not 15 %.</td> </tr>
             
             <tr> <td><code>"Year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1980</code></td> 
+                 <td>
+                    <code>1980</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+        <div id='explore-development-__0__-Country' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Heavily indebted poor countries (HIPC)"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Botswana"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paraguay"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Greece"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"High income: nonOECD"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gambia, The"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"United Kingdom"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Comoros"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Congo, Dem. Rep."</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nicaragua"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tunisia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mexico"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Myanmar"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Honduras"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Japan"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Trinidad and Tobago"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Caledonia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Small states"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mauritania"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Poland"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jordan"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Zimbabwe"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Malawi"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Papua New Guinea"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Senegal"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sub-Saharan Africa (all income levels)"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Zambia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iceland"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Malaysia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Israel"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iran, Islamic Rep."</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Middle East & North Africa (developing only)"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Suriname"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Netherlands"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Malta"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Singapore"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sub-Saharan Africa (developing only)"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sudan"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bhutan"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Italy"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Qatar"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Barbados"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cyprus"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Least developed countries: UN classification"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Burundi"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"High income"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Low income"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Antigua and Barbuda"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Djibouti"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Korea, Rep."</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Equatorial Guinea"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Uruguay"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chad"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iraq"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yemen, Rep."</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Grenada"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Switzerland"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kiribati"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Guinea-Bissau"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"French Polynesia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Namibia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Morocco"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Portugal"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Philippines"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Denmark"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Asia & Pacific (developing only)"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nepal"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sierra Leone"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fragile and conflict affected situations"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Belize"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Haiti"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thailand"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Puerto Rico"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chile"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"El Salvador"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Algeria"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Australia"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ecuador"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lower middle income"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nigeria"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pakistan"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ireland"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Euro area"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Costa Rica"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Guyana"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Panama"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kuwait"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Virgin Islands (U.S.)"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Brazil"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"United States"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Niger"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hungary"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Uganda"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mozambique"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"High income: OECD"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Austria"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Middle income"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Brunei Darussalam"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Caribbean small states"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fiji"</code></td>
+                    <td>34</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-development-__0__" ).dialog({
@@ -308,15 +851,27 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        $("#btn-explore-development-__0__-Country").click(function() {
+            $( "#explore-development-__0__-Country" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-development-__0__-Country" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
         $("#btn-explore-development-__0__-Data").click(function() {
             $( "#explore-development-__0__-Data" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Year").click(function() {
             $( "#explore-development-__0__-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -327,46 +882,87 @@ $(document).ready(function() {
             
             <tr> <td><code>"Arable Land Percent"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>4.87974390527</code></td> 
+                 <td>
+                    <code>4.87974390527</code>
+                    
+                 </td> 
                  <td>Percent of land area</td> </tr>
             
             <tr> <td><code>"Arable Land"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>1.82782057091</code></td> 
+                 <td>
+                    <code>1.82782057091</code>
+                    
+                 </td> 
                  <td>Hectacres per person</td> </tr>
             
             <tr> <td><code>"Rural Population"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>5918004</code></td> 
+                 <td>
+                    <code>5918004</code>
+                    
+                 </td> 
                  <td>Value of rural population</td> </tr>
             
             <tr> <td><code>"Agricultural Land Percent"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>7.3572250979</code></td> 
+                 <td>
+                    <code>7.3572250979</code>
+                    
+                 </td> 
                  <td>Percent of land area</td> </tr>
             
             <tr> <td><code>"Rural Population Growth"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.833711883207</code></td> 
+                 <td>
+                    <code>0.833711883207</code>
+                    
+                 </td> 
                  <td>Annual Percent</td> </tr>
             
             <tr> <td><code>"Surface Area"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>9984670.0</code></td> 
+                 <td>
+                    <code>9984670.0</code>
+                    
+                 </td> 
                  <td>Square kilometers</td> </tr>
             
             <tr> <td><code>"Agricultural Land"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>669030.0</code></td> 
+                 <td>
+                    <code>669030.0</code>
+                    
+                 </td> 
                  <td>Square kilometers</td> </tr>
             
             <tr> <td><code>"Land Area"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>9093510.0</code></td> 
+                 <td>
+                    <code>9093510.0</code>
+                    
+                 </td> 
                  <td>Square kilometers</td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-development-__0__-Data-Rural-Development" ).dialog({
@@ -379,40 +975,48 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Rural-Development-Arable-Land").click(function() {
             $( "#explore-development-__0__-Data-Rural-Development-Arable-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-development-__0__-Data-Rural-Development-Rural-Population").click(function() {
             $( "#explore-development-__0__-Data-Rural-Development-Rural-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Rural-Development-Agricultural-Land-Percent").click(function() {
             $( "#explore-development-__0__-Data-Rural-Development-Agricultural-Land-Percent" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-development-__0__-Data-Rural-Development-Rural-Population-Growth").click(function() {
             $( "#explore-development-__0__-Data-Rural-Development-Rural-Population-Growth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Rural-Development-Surface-Area").click(function() {
             $( "#explore-development-__0__-Data-Rural-Development-Surface-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-development-__0__-Data-Rural-Development-Agricultural-Land").click(function() {
             $( "#explore-development-__0__-Data-Rural-Development-Agricultural-Land" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Rural-Development-Land-Area").click(function() {
             $( "#explore-development-__0__-Data-Rural-Development-Land-Area" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -423,21 +1027,37 @@ $(document).ready(function() {
             
             <tr> <td><code>"Urban Population Percent"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>75.623</code></td> 
+                 <td>
+                    <code>75.623</code>
+                    
+                 </td> 
                  <td>Percent of total population</td> </tr>
             
             <tr> <td><code>"Population Density"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>2.66970619706</code></td> 
+                 <td>
+                    <code>2.66970619706</code>
+                    
+                 </td> 
                  <td>People per square kilometer of land area</td> </tr>
             
             <tr> <td><code>"Urban Population Percent Growth"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>1.05057823382</code></td> 
+                 <td>
+                    <code>1.05057823382</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-development-__0__-Data-Urban-Development" ).dialog({
@@ -450,15 +1070,18 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Urban-Development-Population-Density").click(function() {
             $( "#explore-development-__0__-Data-Urban-Development-Population-Density" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Urban-Development-Urban-Population-Percent-Growth").click(function() {
             $( "#explore-development-__0__-Data-Urban-Development-Urban-Population-Percent-Growth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -469,46 +1092,87 @@ $(document).ready(function() {
             
             <tr> <td><code>"Life Expectancy at Birth, Total"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>74.8663414634</code></td> 
+                 <td>
+                    <code>74.8663414634</code>
+                    
+                 </td> 
                  <td>Years</td> </tr>
             
             <tr> <td><code>"Total Population"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>24277000.0</code></td> 
+                 <td>
+                    <code>24277000.0</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Life Expectancy at Birth, Male"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>71.32</code></td> 
+                 <td>
+                    <code>71.32</code>
+                    
+                 </td> 
                  <td>Years</td> </tr>
             
             <tr> <td><code>"Population Growth"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.997669360129</code></td> 
+                 <td>
+                    <code>0.997669360129</code>
+                    
+                 </td> 
                  <td>Annual Percent</td> </tr>
             
             <tr> <td><code>"Life Expectancy at Birth, Female"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>78.59</code></td> 
+                 <td>
+                    <code>78.59</code>
+                    
+                 </td> 
                  <td>Years</td> </tr>
             
             <tr> <td><code>"Birth Rate"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>15.4</code></td> 
+                 <td>
+                    <code>15.4</code>
+                    
+                 </td> 
                  <td>Crude, per 1000 People</td> </tr>
             
             <tr> <td><code>"Death Rate"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>7.0</code></td> 
+                 <td>
+                    <code>7.0</code>
+                    
+                 </td> 
                  <td>Crude, per 100 People</td> </tr>
             
             <tr> <td><code>"Fertility Rate"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>1.754</code></td> 
+                 <td>
+                    <code>1.754</code>
+                    
+                 </td> 
                  <td>Total, Births per woman</td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-development-__0__-Data-Health" ).dialog({
@@ -521,40 +1185,48 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Health-Total-Population").click(function() {
             $( "#explore-development-__0__-Data-Health-Total-Population" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Male").click(function() {
             $( "#explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Male" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Health-Population-Growth").click(function() {
             $( "#explore-development-__0__-Data-Health-Population-Growth" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Female").click(function() {
             $( "#explore-development-__0__-Data-Health-Life-Expectancy-at-Birth,-Female" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Health-Birth-Rate").click(function() {
             $( "#explore-development-__0__-Data-Health-Birth-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-development-__0__-Data-Health-Death-Rate").click(function() {
             $( "#explore-development-__0__-Data-Health-Death-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Health-Fertility-Rate").click(function() {
             $( "#explore-development-__0__-Data-Health-Fertility-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -565,26 +1237,47 @@ $(document).ready(function() {
             
             <tr> <td><code>"Infrastructure"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-development-__0__-Data-Infrastructure'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-development-__0__-Data-Infrastructure'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Health"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-development-__0__-Data-Health'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-development-__0__-Data-Health'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Rural Development"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-development-__0__-Data-Rural-Development'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-development-__0__-Data-Rural-Development'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Urban Development"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-development-__0__-Data-Urban-Development'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-development-__0__-Data-Urban-Development'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-development-__0__-Data" ).dialog({
@@ -597,20 +1290,24 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Health").click(function() {
             $( "#explore-development-__0__-Data-Health" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-development-__0__-Data-Rural-Development").click(function() {
             $( "#explore-development-__0__-Data-Rural-Development" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Urban-Development").click(function() {
             $( "#explore-development-__0__-Data-Urban-Development" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -621,26 +1318,47 @@ $(document).ready(function() {
             
             <tr> <td><code>"Telephone Lines"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>9595000.0</code></td> 
+                 <td>
+                    <code>9595000.0</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Mobile Cellular Subscriptions"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.0</code></td> 
+                 <td>
+                    <code>0.0</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Telephone Lines per 100 People"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>39.5623509248</code></td> 
+                 <td>
+                    <code>39.5623509248</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Mobile Cellular Subscriptions per 100 People"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.0</code></td> 
+                 <td>
+                    <code>0.0</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-development-__0__-Data-Infrastructure" ).dialog({
@@ -653,20 +1371,24 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions").click(function() {
             $( "#explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-development-__0__-Data-Infrastructure-Telephone-Lines-per-100-People").click(function() {
             $( "#explore-development-__0__-Data-Infrastructure-Telephone-Lines-per-100-People" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions-per-100-People").click(function() {
             $( "#explore-development-__0__-Data-Infrastructure-Mobile-Cellular-Subscriptions-per-100-People" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -703,12 +1425,10 @@ $(document).ready(function() {
     
     <h3 id="usage">Usage</h3>
     
-    This library has 3 functions you can use.
+    This library has 1 function you can use.
     
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">global_development</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">global_development</span>
 <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">global_development</span><span class="o">.</span><span class="n">get_reports</span><span class="p">()</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">global_development</span><span class="o">.</span><span class="n">get_reports_by_year</span><span class="p">(</span><span class="mi">1990</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">global_development</span><span class="o">.</span><span class="n">get_reports_by_country</span><span class="p">(</span><span class="s">&quot;Afghanistan&quot;</span><span class="p">)</span>
 </pre></div>
 
 
@@ -716,11 +1436,9 @@ $(document).ready(function() {
 
     Additionally, some of the functions can return a sample of the Big Data using an extra argument. If you use this sampled Big Data, it may be much faster. When you are sure your code is correct, you can remove the argument to use the full dataset.
 
-<div class="highlight"><pre><span class="kn">import</span> <span class="nn">global_development</span>
-<span class="c"># These may be slow!</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">global_development</span><span class="o">.</span><span class="n">get_reports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">global_development</span><span class="o">.</span><span class="n">get_reports_by_year</span><span class="p">(</span><span class="mi">1990</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
-<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">global_development</span><span class="o">.</span><span class="n">get_reports_by_country</span><span class="p">(</span><span class="s">&quot;Afghanistan&quot;</span><span class="p">,</span> <span class="n">test</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">global_development</span>
+<span class="c1"># These may be slow!</span>
+<span class="n">list_of_report</span> <span class="o">=</span> <span class="n">global_development</span><span class="o">.</span><span class="n">get_reports</span><span class="p">(</span><span class="n">test</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
 
@@ -737,62 +1455,6 @@ Returns global development reports from the dataset.
 <br>
 
 <ul class="list-group col-md-6 col-md-offset-1">
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='get_reports_by_year' style='font-family:monospace'    >&nbsp;global_development.get_reports_by_year(year, test=False)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns global development reports for a specified year.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>year</b>: <i>int</i></h5>
-    <p class="list-group-item-text">The desired year
-    
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Optional argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='get_reports_by_country' style='font-family:monospace'    >&nbsp;global_development.get_reports_by_country(country, test=False)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns global development reports for a specified country.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>country</b>: <i>str</i></h5>
-    <p class="list-group-item-text">The desired country
-    
-    </p>
-</li>
 
 
 <li class="list-group-item list-group-item-warning">

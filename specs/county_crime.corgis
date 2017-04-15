@@ -30,36 +30,36 @@ interfaces:
     production:
         sql: SELECT data FROM county_crime
         post: json()
-  - name: get crime by county
-    description: Given the name of an county, returns all the crime reports for that county in the database.
-    args:
-      - name: department
-        default: "Alabaster Police Dept"
-        type: string
-        matches: SELECT DISTINCT department FROM county_crime
-        description: The name of the county.
-    production:
-        sql: SELECT data FROM county_crime WHERE department=?
-        post: json()
-    test:
-        sql: SELECT data FROM county_crime WHERE department=? LIMIT {hardware}
-        post: json()
-    returns: list[report]
-  - name: get crime by year
-    description: Given a year, returns all the crime reports for that year in the database.
-    args:
-      - name: year
-        default: 1984
-        type: int
-        matches: SELECT DISTINCT department FROM county_crime
-        description: The year to get reports.
-    production:
-        sql: SELECT data FROM county_crime WHERE year=?
-        post: json()
-    test:
-        sql: SELECT data FROM county_crime WHERE year=? LIMIT {hardware}
-        post: json()
-    returns: list[report]
+  # - name: get crime by county
+    # description: Given the name of an county, returns all the crime reports for that county in the database.
+    # args:
+      # - name: department
+        # default: "Alabaster Police Dept"
+        # type: string
+        # matches: SELECT DISTINCT department FROM county_crime
+        # description: The name of the county.
+    # production:
+        # sql: SELECT data FROM county_crime WHERE department=?
+        # post: json()
+    # test:
+        # sql: SELECT data FROM county_crime WHERE department=? LIMIT {hardware}
+        # post: json()
+    # returns: list[report]
+  # - name: get crime by year
+    # description: Given a year, returns all the crime reports for that year in the database.
+    # args:
+      # - name: year
+        # default: 1984
+        # type: int
+        # matches: SELECT DISTINCT department FROM county_crime
+        # description: The year to get reports.
+    # production:
+        # sql: SELECT data FROM county_crime WHERE year=?
+        # post: json()
+    # test:
+        # sql: SELECT data FROM county_crime WHERE year=? LIMIT {hardware}
+        # post: json()
+    # returns: list[report]
 structures:
   "county_crime.[0].Data.Rates": Rates are the number of reported offenses per 100,000 population.
 comments:

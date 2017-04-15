@@ -30,34 +30,34 @@ interfaces:
     test:
         sql: SELECT data FROM development LIMIT {hardware}
         post: json()
-  - name: get reports by year
-    args:
-      - name: year
-        type: integer
-        description: The desired year
-        default: 1990
-    description: Returns global development reports for a specified year.
-    returns: list[report]
-    production:
-        sql: SELECT data FROM development WHERE year=?
-        post: json()
-    test:
-        sql: SELECT data FROM development WHERE year=? LIMIT {hardware}
-        post: json()
-  - name: get reports by country
-    args:
-      - name: country
-        type: string
-        description: The desired country
-        default: "Afghanistan"
-    description: Returns global development reports for a specified country.
-    returns: list[report]
-    production:
-        sql: SELECT data FROM development WHERE country=?
-        post: json()
-    test:
-        sql: SELECT data FROM development WHERE country=? LIMIT {hardware}
-        post: json()
+  # - name: get reports by year
+    # args:
+      # - name: year
+        # type: integer
+        # description: The desired year
+        # default: 1990
+    # description: Returns global development reports for a specified year.
+    # returns: list[report]
+    # production:
+        # sql: SELECT data FROM development WHERE year=?
+        # post: json()
+    # test:
+        # sql: SELECT data FROM development WHERE year=? LIMIT {hardware}
+        # post: json()
+  # - name: get reports by country
+    # args:
+      # - name: country
+        # type: string
+        # description: The desired country
+        # default: "Afghanistan"
+    # description: Returns global development reports for a specified country.
+    # returns: list[report]
+    # production:
+        # sql: SELECT data FROM development WHERE country=?
+        # post: json()
+    # test:
+        # sql: SELECT data FROM development WHERE country=? LIMIT {hardware}
+        # post: json()
 structures:
     "development.[0].Data": Based on the nature of the data, some of the numbers that are reported are very small.  For example a field reported as 0.15 is 0.15 %, not 15 %.
     "development.[0].Data.Urban Development.Population Density": People per square kilometer of land area

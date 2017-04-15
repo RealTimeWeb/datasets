@@ -31,36 +31,36 @@ interfaces:
     production:
         sql: SELECT data FROM crime
         post: json()
-  - name: get crime by state
-    description: Given the name of a state, returns all the crime reports for that state in the database.
-    args:
-      - name: department
-        default: "Alabama"
-        type: string
-        matches: SELECT DISTINCT state FROM crime
-        description: The name of the county.
-    production:
-        sql: SELECT data FROM crime WHERE state=?
-        post: json()
-    test:
-        sql: SELECT data FROM crime WHERE state=? LIMIT {hardware}
-        post: json()
-    returns: list[report]
-  - name: get crime by year
-    description: Given a year, returns all the crime reports for that year in the database.
-    args:
-      - name: year
-        default: 1984
-        type: int
-        matches: SELECT DISTINCT department FROM crime
-        description: The year to get reports.
-    production:
-        sql: SELECT data FROM crime WHERE year=?
-        post: json()
-    test:
-        sql: SELECT data FROM crime WHERE year=? LIMIT {hardware}
-        post: json()
-    returns: list[report]
+  # - name: get crime by state
+    # description: Given the name of a state, returns all the crime reports for that state in the database.
+    # args:
+      # - name: department
+        # default: "Alabama"
+        # type: string
+        # matches: SELECT DISTINCT state FROM crime
+        # description: The name of the county.
+    # production:
+        # sql: SELECT data FROM crime WHERE state=?
+        # post: json()
+    # test:
+        # sql: SELECT data FROM crime WHERE state=? LIMIT {hardware}
+        # post: json()
+    # returns: list[report]
+  # - name: get crime by year
+    # description: Given a year, returns all the crime reports for that year in the database.
+    # args:
+      # - name: year
+        # default: 1984
+        # type: int
+        # matches: SELECT DISTINCT department FROM crime
+        # description: The year to get reports.
+    # production:
+        # sql: SELECT data FROM crime WHERE year=?
+        # post: json()
+    # test:
+        # sql: SELECT data FROM crime WHERE year=? LIMIT {hardware}
+        # post: json()
+    # returns: list[report]
 comments:
     Data:
         Population: The number of people living in this state at the time the report was created.

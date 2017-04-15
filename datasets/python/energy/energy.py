@@ -105,7 +105,7 @@ class _Auxiliary(object):
 
 def get_reports():
     """
-    Returns energy data from 1949 to 2014 across various factors.
+    Returns energy data from 1960 to 2014 across various factors.
     
     """
     if False:

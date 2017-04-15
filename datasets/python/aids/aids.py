@@ -125,75 +125,6 @@ def get_reports(test=False):
         return _Auxiliary._byteify(data)
         
 
-def get_reports_by_year(year, test=False):
-    """
-    Given a year, returns all the aids reports for that year in the database.
-    
-    :param year: The year to get reports.
-    :type year: int
-    """
-    
-    if not isinstance(year, int):
-        raise DatasetException("Error, the parameter year must be of type int")
-    
-    # Match it against recommend values
-    
-    potentials = year
-    if _Constants._TEST or test:
-        rows = _Constants._DATABASE.execute("SELECT data FROM aids WHERE year=? LIMIT {hardware}".format(
-            hardware=_Constants._HARDWARE),
-            (year, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-    else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM aids WHERE year=?".format(
-            hardware=_Constants._HARDWARE),
-            (year, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-
-def get_reports_by_country(country, test=False):
-    """
-    Given a country, returns all the aids reports for that country in the database.
-    
-    :param country: The year to get reports.
-    :type country: str
-    """
-    
-    # Match it against recommend values
-    
-    potentials = [r[0].lower() for r in _Constants._DATABASE.execute("SELECT DISTINCT country FROM aids").fetchall()]
-    if country.lower() not in potentials:
-        best_guesses = _difflib.get_close_matches(country, potentials)
-        if best_guesses:
-            raise DatasetException("Error, the given identifier could not be found. Perhaps you meant one of:\n\t{}".format('\n\t'.join(map('"{}"'.format, best_guesses))))
-        else:
-            raise DatasetException("Error, the given identifier could not be found. Please check to make sure you have the right spelling.")
-    if _Constants._TEST or test:
-        rows = _Constants._DATABASE.execute("SELECT data FROM aids WHERE country=? LIMIT {hardware}".format(
-            hardware=_Constants._HARDWARE),
-            (country, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-    else:
-        rows = _Constants._DATABASE.execute("SELECT data FROM aids WHERE country=?".format(
-            hardware=_Constants._HARDWARE),
-            (country, ))
-        data = [r[0] for r in rows]
-        data = [_Auxiliary._byteify(_json.loads(r)) for r in data]
-        
-        return _Auxiliary._byteify(data)
-        
-
 ################################################################################
 # Internalized testing code
 ################################################################################
@@ -214,44 +145,6 @@ def _test_interfaces():
     print("Test get_reports")
     start_time = _default_timer()
     result = get_reports(test=True)
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    
-    # Production test
-    print("Production get_reports_by_year")
-    start_time = _default_timer()
-    result = get_reports_by_year(1990)
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    # Test test
-    print("Test get_reports_by_year")
-    start_time = _default_timer()
-    result = get_reports_by_year(1990, test=True)
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    
-    # Production test
-    print("Production get_reports_by_country")
-    start_time = _default_timer()
-    result = get_reports_by_country("Afghanistan")
-    
-    print("{} entries found.".format(len(result)))
-    _pprint(_Auxiliary._guess_schema(result))
-    
-    print("Time taken: {}".format(_default_timer() - start_time))
-    # Test test
-    print("Test get_reports_by_country")
-    start_time = _default_timer()
-    result = get_reports_by_country("Afghanistan", test=True)
     
     print("{} entries found.".format(len(result)))
     _pprint(_Auxiliary._guess_schema(result))

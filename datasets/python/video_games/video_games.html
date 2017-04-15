@@ -275,31 +275,57 @@ $(document).ready(function() {
             
             <tr> <td><code>"Average"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>29.7666666667</code></td> 
+                 <td>
+                    <code>29.7666666667</code>
+                    
+                 </td> 
                  <td>The mean time that players reported completing everything in the game, in hours.</td> </tr>
             
             <tr> <td><code>"Median"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>30.0</code></td> 
+                 <td>
+                    <code>30.0</code>
+                    
+                 </td> 
                  <td>The median time that players reported completing everything in the game, in hours.</td> </tr>
             
             <tr> <td><code>"Polled"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>20</code></td> 
+                 <td>
+                    <code>20</code>
+                    
+                 </td> 
                  <td>The number of players that reported completing everything in the game.</td> </tr>
             
             <tr> <td><code>"Leisure"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>35.0333333333</code></td> 
+                 <td>
+                    <code>35.0333333333</code>
+                    
+                 </td> 
                  <td>The slowest time that players reported completing everything in the game, in hours.</td> </tr>
             
             <tr> <td><code>"Rushed"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>22.0166666667</code></td> 
+                 <td>
+                    <code>22.0166666667</code>
+                    
+                 </td> 
                  <td>The fastest time that players reported completing everything in the game, in hours.</td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-video_games-__0__-Length-Completionists" ).dialog({
@@ -312,25 +338,30 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-Completionists-Median").click(function() {
             $( "#explore-video_games-__0__-Length-Completionists-Median" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-video_games-__0__-Length-Completionists-Polled").click(function() {
             $( "#explore-video_games-__0__-Length-Completionists-Polled" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-Completionists-Leisure").click(function() {
             $( "#explore-video_games-__0__-Length-Completionists-Leisure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-Completionists-Rushed").click(function() {
             $( "#explore-video_games-__0__-Length-Completionists-Rushed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -341,26 +372,47 @@ $(document).ready(function() {
             
             <tr> <td><code>"Publishers"</code></td> 
                  <td><span data-toggle="tooltip" title="List">list</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-video_games-__0__-Metadata-Publishers'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Metadata-Publishers'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
+                    
+                 </td> 
                  <td>The list of publishers who created this game</td> </tr>
             
             <tr> <td><code>"Genres"</code></td> 
                  <td><span data-toggle="tooltip" title="List">list</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-video_games-__0__-Metadata-Genres'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Metadata-Genres'>[ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> ]</a>
+                    
+                 </td> 
                  <td>The list of genres that this game belongs to.</td> </tr>
             
             <tr> <td><code>"Licensed?"</code></td> 
                  <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td><code>False</code></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
                  <td>Whether this game was based off a previously licensed entity.</td> </tr>
             
             <tr> <td><code>"Sequel?"</code></td> 
                  <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td><code>True</code></td> 
+                 <td>
+                    <code>True</code>
+                    
+                 </td> 
                  <td>Whether this game is a sequel to another game.</td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-video_games-__0__-Metadata" ).dialog({
@@ -373,20 +425,24 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Metadata-Genres").click(function() {
             $( "#explore-video_games-__0__-Metadata-Genres" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-video_games-__0__-Metadata-Licensed_").click(function() {
             $( "#explore-video_games-__0__-Metadata-Licensed_" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Metadata-Sequel_").click(function() {
             $( "#explore-video_games-__0__-Metadata-Sequel_" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -397,31 +453,57 @@ $(document).ready(function() {
             
             <tr> <td><code>"Average"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>14.3333333333</code></td> 
+                 <td>
+                    <code>14.3333333333</code>
+                    
+                 </td> 
                  <td>The mean time that players reported completing the main game storyline, in hours.</td> </tr>
             
             <tr> <td><code>"Median"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>14.5</code></td> 
+                 <td>
+                    <code>14.5</code>
+                    
+                 </td> 
                  <td>The median time that players reported completing the main game storyline, in hours.</td> </tr>
             
             <tr> <td><code>"Polled"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>21</code></td> 
+                 <td>
+                    <code>21</code>
+                    
+                 </td> 
                  <td>The number of players that reported completing the main game storyline.</td> </tr>
             
             <tr> <td><code>"Leisure"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>18.3166666667</code></td> 
+                 <td>
+                    <code>18.3166666667</code>
+                    
+                 </td> 
                  <td>The slowest time that players reported completing the main game storyline, in hours.</td> </tr>
             
             <tr> <td><code>"Rushed"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>9.7</code></td> 
+                 <td>
+                    <code>9.7</code>
+                    
+                 </td> 
                  <td>The fastest time that players reported completing the main game storyline, in hours.</td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-video_games-__0__-Length-Main-Story" ).dialog({
@@ -434,25 +516,30 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-Main-Story-Median").click(function() {
             $( "#explore-video_games-__0__-Length-Main-Story-Median" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-video_games-__0__-Length-Main-Story-Polled").click(function() {
             $( "#explore-video_games-__0__-Length-Main-Story-Polled" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-Main-Story-Leisure").click(function() {
             $( "#explore-video_games-__0__-Length-Main-Story-Leisure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-Main-Story-Rushed").click(function() {
             $( "#explore-video_games-__0__-Length-Main-Story-Rushed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -463,26 +550,109 @@ $(document).ready(function() {
             
             <tr> <td><code>"Rating"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"E"</code></td> 
+                 <td>
+                    <code>"E"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Release-Rating'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td>The ESRB rating for this game, either E (for Everyone), T (for Teen), or M (for Mature).</td> </tr>
             
             <tr> <td><code>"Console"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Nintendo DS"</code></td> 
+                 <td>
+                    <code>"Nintendo DS"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Release-Console'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td>The name of the console that this particular game was released for. Note that the dataset contains multiple copies of the same game, released for different consoles.</td> </tr>
             
             <tr> <td><code>"Re-release?"</code></td> 
                  <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td><code>True</code></td> 
+                 <td>
+                    <code>True</code>
+                    
+                 </td> 
                  <td>Whether this game is a re-release of an earlier one.</td> </tr>
             
             <tr> <td><code>"Year"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>2004</code></td> 
+                 <td>
+                    <code>2004</code>
+                    
+                 </td> 
                  <td>The year that this game was released.</td> </tr>
             
         </table>
     </div>
+    
+        
+        <div id='explore-video_games-__0__-Release-Rating' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"E"</code></td>
+                    <td>491</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"T"</code></td>
+                    <td>470</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"M"</code></td>
+                    <td>251</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-video_games-__0__-Release-Console' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"X360"</code></td>
+                    <td>410</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nintendo DS"</code></td>
+                    <td>362</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PlayStation 3"</code></td>
+                    <td>293</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sony PSP"</code></td>
+                    <td>265</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nintendo Wii"</code></td>
+                    <td>257</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-video_games-__0__-Release" ).dialog({
@@ -495,20 +665,42 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        $("#btn-explore-video_games-__0__-Release-Rating").click(function() {
+            $( "#explore-video_games-__0__-Release-Rating" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-video_games-__0__-Release-Rating" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
         $("#btn-explore-video_games-__0__-Release-Console").click(function() {
             $( "#explore-video_games-__0__-Release-Console" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        $("#btn-explore-video_games-__0__-Release-Console").click(function() {
+            $( "#explore-video_games-__0__-Release-Console" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-video_games-__0__-Release-Console" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-video_games-__0__-Release-Re-release_").click(function() {
             $( "#explore-video_games-__0__-Release-Re-release_" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Release-Year").click(function() {
             $( "#explore-video_games-__0__-Release-Year" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -519,36 +711,583 @@ $(document).ready(function() {
             
             <tr> <td><code>"Features"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-video_games-__0__-Features'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Features'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Title"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Super Mario 64 DS"</code></td> 
+                 <td>
+                    <code>"Super Mario 64 DS"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Title'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td>The full title of this game.</td> </tr>
             
             <tr> <td><code>"Metrics"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-video_games-__0__-Metrics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Metrics'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Length"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-video_games-__0__-Length'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Length'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Release"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-video_games-__0__-Release'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Release'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Metadata"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-video_games-__0__-Metadata'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Metadata'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+        <div id='explore-video_games-__0__-Title' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Harry Potter and the Order of the Phoenix"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Spider-Man 3"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MX vs. ATV Untamed"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Simpsons Game"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iron Man"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LEGO Batman: The Videogame"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Marvel Ultimate Alliance 2"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"WWE Smackdown vs. Raw 2008"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The BIGS"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Surf's Up"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harry Potter and the Half-Blood Prince"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Kung Fu Panda"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ghostbusters: The Video Game"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LEGO Indiana Jones: The Original Adventures"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fantastic Four: Rise of the Silver Surfer"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tony Hawk's Proving Ground"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LEGO Star Wars: The Complete Saga"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Golden Compass"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Marvel Ultimate Alliance"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Shrek the Third"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sega Superstars Tennis"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Monsters vs. Aliens"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tiger Woods PGA Tour 07"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madden NFL 07"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madden NFL 08"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Juiced 2: Hot Import Nights"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TNA iMPACT!"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rayman Raving Rabbids"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LEGO Star Wars II: The Original Trilogy"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rock Band"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ratatouille"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Major League Baseball 2K9"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Virtua Tennis 2009"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Up"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LEGO Indiana Jones 2: The Adventure Continues "</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bee Movie Game"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pinball Hall of Fame: The Williams Collection"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thrillville: Off the Rails"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Guitar Hero: World Tour"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Sims 2: Castaway"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mini Ninjas"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Star Wars: The Force Unleashed"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Incredible Hulk"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tomb Raider: Underworld"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"How to Train Your Dragon"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LEGO Rock Band"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"G.I. Joe: The Rise of Cobra"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Need for Speed: ProStreet"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Band Hero"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Star Wars: The Clone Wars - Republic Heroes"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Crash of the Titans"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Spiderwick Chronicles"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Call of Duty: World at War"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pro Evolution Soccer 2008"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"WWE SmackDown vs. Raw 2010"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SEGA Rally Revo"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Guitar Hero 5"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Shaun White Snowboarding"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Spider-Man: Web of Shadows"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Chronicles of Narnia: Prince Caspian"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Guitar Hero: Van Halen"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Guitar Hero: Metallica"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Transformers: The Game"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madagascar: Escape 2 Africa"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"UEFA Euro 2008"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Blazing Angels: Squadrons of WWII"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ice Age: Dawn of the Dinosaurs"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fight Night Round 3"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Call of Duty 4: Modern Warfare"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Transformers: Revenge of the Fallen"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Sims 2: Pets"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Lord of the Rings: Conquest"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Need for Speed: Carbon"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bionicle Heroes"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Guitar Hero: Aerosmith"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Guitar Hero Smash Hits"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tiger Woods PGA Tour 08"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madden NFL 06"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madden NFL 09"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Need for Speed: Undercover"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Virtua Tennis 3"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sonic & SEGA All-Stars Racing"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tony Hawk's Project 8"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wall-E"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NBA Live 08"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eragon"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Open Season"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hellboy: The Science of Evil"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sonic Unleashed"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Call of Duty 3"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tom Clancy's Splinter Cell: Double Agent"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tekken 6"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wolfenstein"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Top Spin 3"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"BioShock 2"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Soldier of Fortune: Payback"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Grand Theft Auto: Chinatown Wars "</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lost Planet 2"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"The Elder Scrolls IV: Oblivion"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Enchanted Arms"</code></td>
+                    <td>2</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-video_games-__0__" ).dialog({
@@ -561,30 +1300,45 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Title").click(function() {
             $( "#explore-video_games-__0__-Title" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        $("#btn-explore-video_games-__0__-Title").click(function() {
+            $( "#explore-video_games-__0__-Title" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-video_games-__0__-Title" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-video_games-__0__-Metrics").click(function() {
             $( "#explore-video_games-__0__-Metrics" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length").click(function() {
             $( "#explore-video_games-__0__-Length" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-video_games-__0__-Release").click(function() {
             $( "#explore-video_games-__0__-Release" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Metadata").click(function() {
             $( "#explore-video_games-__0__-Metadata" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -595,21 +1349,37 @@ $(document).ready(function() {
             
             <tr> <td><code>"Used Price"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>24.95</code></td> 
+                 <td>
+                    <code>24.95</code>
+                    
+                 </td> 
                  <td>A typical "used" price for this game (i.e. previously returned and sold), measured in dollars. It is unclear where this number originally came from.</td> </tr>
             
             <tr> <td><code>"Sales"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>4.69</code></td> 
+                 <td>
+                    <code>4.69</code>
+                    
+                 </td> 
                  <td>The total sales made on this game, measured in millions of dollars.</td> </tr>
             
             <tr> <td><code>"Review Score"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>85</code></td> 
+                 <td>
+                    <code>85</code>
+                    
+                 </td> 
                  <td>a typical review score for this game, out of 100.</td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-video_games-__0__-Metrics" ).dialog({
@@ -622,15 +1392,18 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Metrics-Sales").click(function() {
             $( "#explore-video_games-__0__-Metrics-Sales" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Metrics-Review-Score").click(function() {
             $( "#explore-video_games-__0__-Metrics-Review-Score" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -641,26 +1414,47 @@ $(document).ready(function() {
             
             <tr> <td><code>"Online?"</code></td> 
                  <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td><code>False</code></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
                  <td>Whether this game supports online play.</td> </tr>
             
             <tr> <td><code>"Multiplatform?"</code></td> 
                  <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td><code>False</code></td> 
+                 <td>
+                    <code>False</code>
+                    
+                 </td> 
                  <td>Whether this game is available on multiple platforms.</td> </tr>
             
             <tr> <td><code>"Max Players"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1</code></td> 
+                 <td>
+                    <code>1</code>
+                    
+                 </td> 
                  <td>The maximum number of players that can play this game.</td> </tr>
             
             <tr> <td><code>"Handheld?"</code></td> 
                  <td><span data-toggle="tooltip" title="Boolean (True or False)">bool</span></td> 
-                 <td><code>True</code></td> 
+                 <td>
+                    <code>True</code>
+                    
+                 </td> 
                  <td>Whether this is a hand-held game.</td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-video_games-__0__-Features" ).dialog({
@@ -673,20 +1467,24 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Features-Multiplatform_").click(function() {
             $( "#explore-video_games-__0__-Features-Multiplatform_" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-video_games-__0__-Features-Max-Players").click(function() {
             $( "#explore-video_games-__0__-Features-Max-Players" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Features-Handheld_").click(function() {
             $( "#explore-video_games-__0__-Features-Handheld_" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -697,26 +1495,47 @@ $(document).ready(function() {
             
             <tr> <td><code>"Main + Extras"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-video_games-__0__-Length-Main-_-Extras'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Length-Main-_-Extras'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"All PlayStyles"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-video_games-__0__-Length-All-PlayStyles'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Length-All-PlayStyles'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Main Story"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-video_games-__0__-Length-Main-Story'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Length-Main-Story'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Completionists"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-video_games-__0__-Length-Completionists'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-video_games-__0__-Length-Completionists'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-video_games-__0__-Length" ).dialog({
@@ -729,20 +1548,24 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-All-PlayStyles").click(function() {
             $( "#explore-video_games-__0__-Length-All-PlayStyles" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-video_games-__0__-Length-Main-Story").click(function() {
             $( "#explore-video_games-__0__-Length-Main-Story" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-Completionists").click(function() {
             $( "#explore-video_games-__0__-Length-Completionists" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -753,31 +1576,57 @@ $(document).ready(function() {
             
             <tr> <td><code>"Average"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>24.9166666667</code></td> 
+                 <td>
+                    <code>24.9166666667</code>
+                    
+                 </td> 
                  <td>The mean time that players reported completing the main game and major extra parts of the game, in hours.</td> </tr>
             
             <tr> <td><code>"Median"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>25.0</code></td> 
+                 <td>
+                    <code>25.0</code>
+                    
+                 </td> 
                  <td>The median time that players reported completing the main game and major extra parts of the game, in hours.</td> </tr>
             
             <tr> <td><code>"Polled"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>16</code></td> 
+                 <td>
+                    <code>16</code>
+                    
+                 </td> 
                  <td>The number of players that reported completing the main game and major extra parts of the game.</td> </tr>
             
             <tr> <td><code>"Leisure"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>29.9666666667</code></td> 
+                 <td>
+                    <code>29.9666666667</code>
+                    
+                 </td> 
                  <td>The slowest time that players reported completing the main game and major extra parts of the game, in hours.</td> </tr>
             
             <tr> <td><code>"Rushed"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>18.3333333333</code></td> 
+                 <td>
+                    <code>18.3333333333</code>
+                    
+                 </td> 
                  <td>The fastest time that players reported completing the main game and major extra parts of the game, in hours.</td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-video_games-__0__-Length-Main-_-Extras" ).dialog({
@@ -790,25 +1639,30 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-Main-_-Extras-Median").click(function() {
             $( "#explore-video_games-__0__-Length-Main-_-Extras-Median" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-video_games-__0__-Length-Main-_-Extras-Polled").click(function() {
             $( "#explore-video_games-__0__-Length-Main-_-Extras-Polled" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-Main-_-Extras-Leisure").click(function() {
             $( "#explore-video_games-__0__-Length-Main-_-Extras-Leisure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-Main-_-Extras-Rushed").click(function() {
             $( "#explore-video_games-__0__-Length-Main-_-Extras-Rushed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -819,31 +1673,57 @@ $(document).ready(function() {
             
             <tr> <td><code>"Average"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>22.7166666667</code></td> 
+                 <td>
+                    <code>22.7166666667</code>
+                    
+                 </td> 
                  <td>The mean time that players reported completing the game in any way, in hours. This is the average over all the other categories.</td> </tr>
             
             <tr> <td><code>"Median"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>24.4833333333</code></td> 
+                 <td>
+                    <code>24.4833333333</code>
+                    
+                 </td> 
                  <td>The median time that players reported completing the game in any way, in hours. This is the median over all the other categories.</td> </tr>
             
             <tr> <td><code>"Polled"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>57</code></td> 
+                 <td>
+                    <code>57</code>
+                    
+                 </td> 
                  <td>The number of players that reported completing the game in any way. This is the count over all the other categories.</td> </tr>
             
             <tr> <td><code>"Leisure"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>31.9</code></td> 
+                 <td>
+                    <code>31.9</code>
+                    
+                 </td> 
                  <td>The slowest time that players reported completing the game in any way, in hours. This is the minimum over all the other categories.</td> </tr>
             
             <tr> <td><code>"Rushed"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>14.3</code></td> 
+                 <td>
+                    <code>14.3</code>
+                    
+                 </td> 
                  <td>The fastest time that players reported completing the game in any way, in hours. This is the maximum over all the other categories.</td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-video_games-__0__-Length-All-PlayStyles" ).dialog({
@@ -856,25 +1736,30 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-All-PlayStyles-Median").click(function() {
             $( "#explore-video_games-__0__-Length-All-PlayStyles-Median" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-video_games-__0__-Length-All-PlayStyles-Polled").click(function() {
             $( "#explore-video_games-__0__-Length-All-PlayStyles-Polled" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-All-PlayStyles-Leisure").click(function() {
             $( "#explore-video_games-__0__-Length-All-PlayStyles-Leisure" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-video_games-__0__-Length-All-PlayStyles-Rushed").click(function() {
             $( "#explore-video_games-__0__-Length-All-PlayStyles-Rushed" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>

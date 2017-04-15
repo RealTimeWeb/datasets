@@ -135,7 +135,12 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Slavery');
+});*/
+</script>
+<div class="page-header">
     
     <img class="img-rounded pull-right" src="slavery.png" alt="Slavery" style="max-width: 128px; max-height: 128px;">
     
@@ -224,31 +229,138 @@ $(document).ready(function() {
             
             <tr> <td><code>"Prices Listed"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1</code></td> 
+                 <td>
+                    <code>1</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Price"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>650.0</code></td> 
+                 <td>
+                    <code>650.0</code>
+                    
+                 </td> 
                  <td>Missing values were replaced using the mean of the rest of the category"</td> </tr>
             
             <tr> <td><code>"Payment Method"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Cash"</code></td> 
+                 <td>
+                    <code>"Cash"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Transaction-Sale-Details-Payment-Method'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Discount Rate"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.00602698</code></td> 
+                 <td>
+                    <code>0.00602698</code>
+                    
+                 </td> 
                  <td>Missing values were replaced using the mean of the rest of the category</td> </tr>
             
             <tr> <td><code>"Predicted Interest Rate"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>0.07477</code></td> 
+                 <td>
+                    <code>0.07477</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+        <div id='explore-slavery-__0__-Transaction-Sale-Details-Payment-Method' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Cash"</code></td>
+                    <td>7141</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cash and Credit"</code></td>
+                    <td>1311</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Credit"</code></td>
+                    <td>848</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Donation"</code></td>
+                    <td>91</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Exchange, Cash"</code></td>
+                    <td>77</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Exchange"</code></td>
+                    <td>74</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cash "</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Barter"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Barter, Cash"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Emancipation"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"."</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Barter, Credit"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Exchange, Credit"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cash and Credit "</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-slavery-__0__-Transaction-Sale-Details" ).dialog({
@@ -261,8 +373,15 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-slavery-__0__-Transaction-Sale-Details-Price").click(function() {
             $( "#explore-slavery-__0__-Transaction-Sale-Details-Price" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-slavery-__0__-Transaction-Sale-Details-Payment-Method").click(function() {
+            $( "#explore-slavery-__0__-Transaction-Sale-Details-Payment-Method" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -270,16 +389,23 @@ $(document).ready(function() {
             $( "#explore-slavery-__0__-Transaction-Sale-Details-Payment-Method" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        $( "#explore-slavery-__0__-Transaction-Sale-Details-Payment-Method" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-slavery-__0__-Transaction-Sale-Details-Discount-Rate").click(function() {
             $( "#explore-slavery-__0__-Transaction-Sale-Details-Discount-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-slavery-__0__-Transaction-Sale-Details-Predicted-Interest-Rate").click(function() {
             $( "#explore-slavery-__0__-Transaction-Sale-Details-Predicted-Interest-Rate" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -290,26 +416,47 @@ $(document).ready(function() {
             
             <tr> <td><code>"Buyer"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-slavery-__0__-Buyer'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Buyer'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Transaction"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-slavery-__0__-Transaction'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Transaction'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Slave"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-slavery-__0__-Slave'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Slave'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Seller"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-slavery-__0__-Seller'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Seller'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-slavery-__0__" ).dialog({
@@ -322,20 +469,24 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-slavery-__0__-Transaction").click(function() {
             $( "#explore-slavery-__0__-Transaction" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-slavery-__0__-Slave").click(function() {
             $( "#explore-slavery-__0__-Slave" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-slavery-__0__-Seller").click(function() {
             $( "#explore-slavery-__0__-Seller" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
@@ -346,26 +497,1786 @@ $(document).ready(function() {
             
             <tr> <td><code>"Origin"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Unknown, AL"</code></td> 
+                 <td>
+                    <code>"Unknown, AL"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Seller-Origin'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"County of Origin"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Unknown"</code></td> 
+                 <td>
+                    <code>"Unknown"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Seller-County-of-Origin'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Full Name"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Benjamin Screws"</code></td> 
+                 <td>
+                    <code>"Benjamin Screws"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Seller-Full-Name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"State of Origin"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"AL"</code></td> 
+                 <td>
+                    <code>"AL"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Seller-State-of-Origin'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+        <div id='explore-slavery-__0__-Seller-Origin' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"New Orleans, LA"</code></td>
+                    <td>6420</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, Unknown"</code></td>
+                    <td>487</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baltimore, MD"</code></td>
+                    <td>228</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Richmond, VA"</code></td>
+                    <td>196</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jefferson, LA"</code></td>
+                    <td>158</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mobile, AL"</code></td>
+                    <td>68</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montgomery, AL"</code></td>
+                    <td>65</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orleans, LA"</code></td>
+                    <td>58</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Louis, MO"</code></td>
+                    <td>57</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Bernard, LA"</code></td>
+                    <td>54</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Plaquemines, LA"</code></td>
+                    <td>50</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Assumption, LA"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Charles, LA"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Augusta, GA"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pointe Coupee, LA"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Tammany, LA"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, LA"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. James, LA"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Memphis, TN"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nashville, TN"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mexico City, Mexico"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Baton Rouge, LA"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paris, France"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Orleans , LA"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Mary, LA"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clay, MO"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rapides, LA"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. John, LA"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Helena, LA"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iberville, LA"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, France"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Atlanta, GA"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charleston, SC"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baltimore , MD"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louisville, KY"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lafayette, LA"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Baton Rouge, LA"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jackson, MS"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harrison, MS"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Livingston, LA"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Natchitoches, LA"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Savannah, GA"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, MS"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Avoyelles, LA"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Landry, LA"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clay , MO"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Caddo, LA"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ascension, LA"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montgomery , AL"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Galveston, TX"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lafourche, LA"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New York, NY"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, AR"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tuscaloosa, AL"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Terrebonne, LA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"San Antonio, TX"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Adams, MS"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry, TN"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gibson, TN"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Martin, LA"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carroll, LA"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DeSoto, LA"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, MO"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Natchez, MS"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Calhoun, TX"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bexar, TX"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Algiers, LA"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Claiborne, LA"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jefferson, TX"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tensas, LA"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hickman, KY"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, TX"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Feliciana, LA"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Macon, AL"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hamburg, SC"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, KY"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Barren, KY"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Port Gibson, MS"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ouachita, LA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cass, TX"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry , TN"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Concordia, LA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Camden, AR"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, NY"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, NC"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clay  , MO"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Panola, MS"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Troup, GA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baton Rouge, LA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Corpus Christi, TX"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harrison , MS"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Feliciana, LA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Moorehouse, LA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lawrence, SC"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Matagorda, TX"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Catahoula, LA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Richmond , VA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Union, KY"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lagrange, GA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Macon , AL"</code></td>
+                    <td>4</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-slavery-__0__-Seller-County-of-Origin' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"New Orleans"</code></td>
+                    <td>6421</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
+                    <td>604</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baltimore"</code></td>
+                    <td>231</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Richmond"</code></td>
+                    <td>199</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jefferson"</code></td>
+                    <td>171</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mobile"</code></td>
+                    <td>69</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montgomery"</code></td>
+                    <td>67</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Louis"</code></td>
+                    <td>59</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orleans"</code></td>
+                    <td>59</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Bernard"</code></td>
+                    <td>54</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Plaquemines"</code></td>
+                    <td>51</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Assumption"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Charles"</code></td>
+                    <td>42</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Augusta"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pointe Coupee"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Tammany"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Memphis"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. James"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paris"</code></td>
+                    <td>26</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nashville"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Baton Rouge"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mexico City"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Orleans "</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Mary"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clay"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jackson"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rapides"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. John"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iberville"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Helena"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charleston"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harrison"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lafayette"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baltimore "</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louisville"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Atlanta"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Baton Rouge"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Livingston"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clay "</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Natchitoches"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Avoyelles"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Landry"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Savannah"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montgomery "</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Macon"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Claiborne"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Galveston"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Caddo"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ascension"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lafourche"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tuscaloosa"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madison"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"San Antonio"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New York"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Terrebonne"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carroll"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Franklin"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Natchez"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bexar"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Martin"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Adams"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Algiers"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Camden"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DeSoto"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Calhoun"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Richmond "</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry "</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Gibson"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lawrence"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Feliciana"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tensas"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jackson "</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lexington"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harrison "</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hickman"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Panola"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jefferson "</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hamburg"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Monroe"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Shelby"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cass"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Clay  "</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baton Rouge"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Macon "</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lagrange"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Troup"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Feliciana"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pike "</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Union"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Corpus Christi"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Concordia"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Catahoula"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Granville"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Port Gibson"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Moorehouse"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Barren"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Matagorda"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ouachita"</code></td>
+                    <td>5</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-slavery-__0__-Seller-Full-Name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Bernard Moore Campbell"</code></td>
+                    <td>233</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bernard Kendig"</code></td>
+                    <td>161</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jeremiah Smith"</code></td>
+                    <td>159</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jonathan Means Wilson"</code></td>
+                    <td>124</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joseph Bruin"</code></td>
+                    <td>104</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Robert Henry Elam"</code></td>
+                    <td>63</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lewis Neville Shelton"</code></td>
+                    <td>63</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"William Jackson Maynard"</code></td>
+                    <td>57</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Anthony Weisemann"</code></td>
+                    <td>48</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nelson Clement Trowbridge"</code></td>
+                    <td>45</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"David Resolve Godwin"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"James H. Adams"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jonathan E. Price"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John B. Womack"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Adolphe Menuet"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jeremiah  Smith"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Edward Thomas Parker"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Manuel Julian de Lizardi"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bernard Marigny"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Simeon E. Buford"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wiley J. Martin"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Trabue Hatcher"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thomas O. Moore"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louis Caretta"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charles Francis Hatcher"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Casimir Lacoste"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joseph  Bruin"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Ruckner White"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Luico Mitchell Foster"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Edward Farrelly"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lewis Hare Watson"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Summerby Merrill"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Horatio Gates Harbin"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Benjamin Myers"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Isaac Bloom"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Claude Frederick Avet"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry Freeman Peterson"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charles Fierville Bienvenu"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thomas Lafayette Lloyd"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bernard  Kendig"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John W. Hall"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John M. Bell"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eldridge Loftin"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joseph Francois Lapice"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"James Peter Freret"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Welsh"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Caldwell Jr."</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"McGuilvery George Washington Jones Bell"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charles A. Hensler"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry Holmes"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rachel, Horatio Eacrit, Weedon"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry Hirsch"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paul Kuhl Barnes"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Heirs of P. H. Kernion Unknown"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"George Heation"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Patsey Haynes"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Juan Ygnacio de Egana"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thomas F. Murray"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montgomery Little"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Francois Bizoton (late), Edward, Louis Lambert D'A..."</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paul Mouchon"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry Rodriguez"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sargent Pratt"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thomas E. Matthews"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Richard Marion Owings"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Solidelle Solet"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Robert Wesley Bullard"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"David Watson Sowles"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Balthazar Tardy"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Emilie Demoruelle"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joseph William Burto Edwards"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dennis T. Donnovan"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jean Henri Parlange"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montgomery  Little"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Valerien Allain"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Frederick Scruggs"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Numa Lacoste"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Michel Joseph Lombard"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charles Hyllested"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"James Fredell Long"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Samuel Sidle"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louis Ambroise Garidel"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Adelaide Vinot"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oursine St. Ours"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pierre Ninon Faisans"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Theodore Johnston"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"James White"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John B. Smith"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Julia Macarty Bonnabel"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jean Baptiste Dupeire"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Archibald Lilly"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jean Baptiste Fleitas"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"George Thomas Williams"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"William Joseph Payne"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alexander Bonneval"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"William E. Starke"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Laurent Millaudon"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Felix Antoine Ducros"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jonathan E.  Price"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charles Holmes"</code></td>
+                    <td>6</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-slavery-__0__-Seller-State-of-Origin' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"LA"</code></td>
+                    <td>7367</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
+                    <td>490</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MD"</code></td>
+                    <td>246</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"VA"</code></td>
+                    <td>227</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AL"</code></td>
+                    <td>196</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MS"</code></td>
+                    <td>174</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MO"</code></td>
+                    <td>145</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TX"</code></td>
+                    <td>142</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GA"</code></td>
+                    <td>119</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TN"</code></td>
+                    <td>101</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"KY"</code></td>
+                    <td>98</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SC"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR"</code></td>
+                    <td>51</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"France"</code></td>
+                    <td>46</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NC"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mexico"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"FL"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NY"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"IL"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"OH"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CA"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MA"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"England"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"IN"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Spain"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PA"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NJ"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"SC, KY"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MN"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LA, FRANCE"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LA, Mexico"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Switzerland"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LA, UK"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"RI"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NM"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mexico, LA"</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-slavery-__0__-Seller" ).dialog({
@@ -378,8 +2289,33 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        $("#btn-explore-slavery-__0__-Seller-Origin").click(function() {
+            $( "#explore-slavery-__0__-Seller-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-slavery-__0__-Seller-Origin" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
         $("#btn-explore-slavery-__0__-Seller-County-of-Origin").click(function() {
             $( "#explore-slavery-__0__-Seller-County-of-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Seller-County-of-Origin").click(function() {
+            $( "#explore-slavery-__0__-Seller-County-of-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-slavery-__0__-Seller-County-of-Origin" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-slavery-__0__-Seller-Full-Name").click(function() {
+            $( "#explore-slavery-__0__-Seller-Full-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -387,11 +2323,26 @@ $(document).ready(function() {
             $( "#explore-slavery-__0__-Seller-Full-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        $( "#explore-slavery-__0__-Seller-Full-Name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-slavery-__0__-Seller-State-of-Origin").click(function() {
             $( "#explore-slavery-__0__-Seller-State-of-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        $("#btn-explore-slavery-__0__-Seller-State-of-Origin").click(function() {
+            $( "#explore-slavery-__0__-Seller-State-of-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-slavery-__0__-Seller-State-of-Origin" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
     });
     </script>
@@ -402,26 +2353,795 @@ $(document).ready(function() {
             
             <tr> <td><code>"Gender"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"M"</code></td> 
+                 <td>
+                    <code>"M"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Slave-Gender'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Age"</code></td> 
                  <td><span data-toggle="tooltip" title="Float (decimal number)">float</span></td> 
-                 <td><code>40.0</code></td> 
+                 <td>
+                    <code>40.0</code>
+                    
+                 </td> 
                  <td>Ages that are represented as -1 stand for ages that were not available in the data that was collected.</td> </tr>
             
             <tr> <td><code>"Skin Color"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Unknown"</code></td> 
+                 <td>
+                    <code>"Unknown"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Slave-Skin-Color'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Name"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Shadrack"</code></td> 
+                 <td>
+                    <code>"Shadrack"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Slave-Name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+        <div id='explore-slavery-__0__-Slave-Gender' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"F"</code></td>
+                    <td>5432</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"M"</code></td>
+                    <td>4130</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"M "</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"F "</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"."</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"F       "</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+        <div id='explore-slavery-__0__-Slave-Skin-Color' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Negro"</code></td>
+                    <td>6119</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mulatto"</code></td>
+                    <td>1356</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Griff"</code></td>
+                    <td>1055</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
+                    <td>604</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Black"</code></td>
+                    <td>155</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dark Griff"</code></td>
+                    <td>94</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yellow"</code></td>
+                    <td>50</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Creole Negro"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Quarteroon"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Light Griff"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Brown"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dark Mulatto"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Copper"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dark"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Creole Mulatto"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bright Mulatto"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mulatto, Griff"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Light Mulatto"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Creole"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Light"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dark Negro"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dark Copper"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Negro "</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Yellow, Griff"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Chestnut"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bright Color"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Black Negro"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Light Negro"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Albino, Negro"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Light Brown"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Light Black"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Colored"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fair Mulatto"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>". "</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Griff Creole"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dark Orange, Griff "</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-slavery-__0__-Slave-Name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"Mary"</code></td>
+                    <td>206</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry"</code></td>
+                    <td>167</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John"</code></td>
+                    <td>145</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Maria"</code></td>
+                    <td>120</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"William"</code></td>
+                    <td>112</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Eliza"</code></td>
+                    <td>100</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charles"</code></td>
+                    <td>99</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sarah"</code></td>
+                    <td>97</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Caroline"</code></td>
+                    <td>96</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nancy"</code></td>
+                    <td>91</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"George"</code></td>
+                    <td>89</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Josephine"</code></td>
+                    <td>80</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jane"</code></td>
+                    <td>80</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joe"</code></td>
+                    <td>78</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Martha"</code></td>
+                    <td>75</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louisa"</code></td>
+                    <td>73</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lucy"</code></td>
+                    <td>73</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Julia"</code></td>
+                    <td>71</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charlotte"</code></td>
+                    <td>71</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harriet"</code></td>
+                    <td>70</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jim"</code></td>
+                    <td>67</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fanny"</code></td>
+                    <td>62</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Marie"</code></td>
+                    <td>61</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Elizabeth"</code></td>
+                    <td>55</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tom"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ann"</code></td>
+                    <td>50</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rachel"</code></td>
+                    <td>50</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sam"</code></td>
+                    <td>49</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Frank"</code></td>
+                    <td>49</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Betsy"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ellen"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Margaret"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mary Ann"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Robert"</code></td>
+                    <td>46</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bob"</code></td>
+                    <td>45</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henriette"</code></td>
+                    <td>44</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lucinda"</code></td>
+                    <td>43</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Susan"</code></td>
+                    <td>43</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joseph"</code></td>
+                    <td>43</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sally"</code></td>
+                    <td>43</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Moses"</code></td>
+                    <td>41</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louise"</code></td>
+                    <td>41</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alfred"</code></td>
+                    <td>41</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lewis"</code></td>
+                    <td>40</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Milly"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Catherine"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rose"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louis"</code></td>
+                    <td>38</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hannah"</code></td>
+                    <td>37</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jack"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ben"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pauline"</code></td>
+                    <td>32</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Frances"</code></td>
+                    <td>32</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Daniel"</code></td>
+                    <td>32</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Isaac"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Emily"</code></td>
+                    <td>30</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bill"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Celestine"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Peter"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Amanda"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mathilda"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rosa"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Francoise"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Adeline"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mathilde"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ned"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Edward"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Albert"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rebecca"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Marie Louise"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Dick"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Marguerite"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Richard"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Betty"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aimee"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Amelia"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"James"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Edmond"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"David"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Esther"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Simon"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Betsey"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Stephen"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Andrew"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Emeline"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mary Jane"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Celia"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henrietta"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jules"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nelson"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Julie"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Allen"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aaron"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thomas"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Victorine"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Anthony"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harry"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Victoire"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Emma"</code></td>
+                    <td>16</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-slavery-__0__-Slave" ).dialog({
@@ -434,8 +3154,24 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        $("#btn-explore-slavery-__0__-Slave-Gender").click(function() {
+            $( "#explore-slavery-__0__-Slave-Gender" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-slavery-__0__-Slave-Gender" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
         $("#btn-explore-slavery-__0__-Slave-Age").click(function() {
             $( "#explore-slavery-__0__-Slave-Age" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        
+        $("#btn-explore-slavery-__0__-Slave-Skin-Color").click(function() {
+            $( "#explore-slavery-__0__-Slave-Skin-Color" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -443,11 +3179,26 @@ $(document).ready(function() {
             $( "#explore-slavery-__0__-Slave-Skin-Color" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        $( "#explore-slavery-__0__-Slave-Skin-Color" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-slavery-__0__-Slave-Name").click(function() {
             $( "#explore-slavery-__0__-Slave-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        $("#btn-explore-slavery-__0__-Slave-Name").click(function() {
+            $( "#explore-slavery-__0__-Slave-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-slavery-__0__-Slave-Name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
     });
     </script>
@@ -458,26 +3209,1746 @@ $(document).ready(function() {
             
             <tr> <td><code>"Origin"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Unknown, Unknown"</code></td> 
+                 <td>
+                    <code>"Unknown, Unknown"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Buyer-Origin'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"County of Origin"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Unknown"</code></td> 
+                 <td>
+                    <code>"Unknown"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Buyer-County-of-Origin'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Full Name"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Maria Hopson"</code></td> 
+                 <td>
+                    <code>"Maria Hopson"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Buyer-Full-Name'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"State of Origin"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"Unknown"</code></td> 
+                 <td>
+                    <code>"Unknown"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Buyer-State-of-Origin'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+        <div id='explore-slavery-__0__-Buyer-Origin' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"New Orleans, LA"</code></td>
+                    <td>6857</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, Unknown"</code></td>
+                    <td>500</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jefferson, LA"</code></td>
+                    <td>203</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. James, LA"</code></td>
+                    <td>120</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iberville, LA"</code></td>
+                    <td>120</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Natchitoches, LA"</code></td>
+                    <td>86</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Assumption, LA"</code></td>
+                    <td>85</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Plaquemines, LA"</code></td>
+                    <td>82</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Mary, LA"</code></td>
+                    <td>76</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pointe Coupee, LA"</code></td>
+                    <td>76</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lafourche, LA"</code></td>
+                    <td>68</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orleans, LA"</code></td>
+                    <td>64</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Orleans , LA"</code></td>
+                    <td>60</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Avoyelles, LA"</code></td>
+                    <td>56</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Landry, LA"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rapides, LA"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Charles, LA"</code></td>
+                    <td>46</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ascension, LA"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Terrebonne, LA"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carroll, LA"</code></td>
+                    <td>33</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Martin, LA"</code></td>
+                    <td>33</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Baton Rouge, LA"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. John, LA"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madison, LA"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tensas, LA"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bossier, LA"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baltimore, MD"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Feliciana, LA"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Catahoula, LA"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ouachita, LA"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Bernard, LA"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DeSoto, LA"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jackson, MS"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Tammany, LA"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, LA"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Richmond, VA"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Livingston, LA"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Baton Rouge, LA"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Caddo, LA"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tuscaloosa, AL"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington, MS"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Natchez, MS"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Adams, MS"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Morehouse, LA"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mobile, AL"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pointe Coupee , LA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montgomery, AL"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, MS"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Feliciana, LA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Claiborne, LA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lafayette, LA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Concordia, LA"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iberville , LA"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baton Rouge, LA"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Louis, MO"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Caldwell, LA"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paris, France"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown, NY"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington, TX"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Shreveport, LA"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Galveston, TX"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jefferson, AR"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hancock, MS"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sabine, LA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Franklin, LA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Copiah, MS"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hinds, MS"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jefferson , LA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jackson, LA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Algiers, LA"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Holmes, MS"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Memphis, TN"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Canton, MS"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Plaquemines , LA"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Natchitoches , LA"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bolivar, MS"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nashville, TN"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pascagoula, MS"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harrison, TX"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harrison, MS"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington , MS"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Helena, LA"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Assumption , LA"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madison , LA"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Union, AR"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pass Christian, MS"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Catahoula , LA"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hinds , MS"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Issequana, MS"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wilkinson, MS"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Claiborne, MS"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fort Jessup, LA"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Terrebonne , LA"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orleans , LA"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"San Antonio, TX"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montgomery , AL"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harrison , TX"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madison, MS"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jefferson , MS"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Pascagoula, MS"</code></td>
+                    <td>2</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-slavery-__0__-Buyer-County-of-Origin' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"New Orleans"</code></td>
+                    <td>6859</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
+                    <td>541</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jefferson"</code></td>
+                    <td>209</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iberville"</code></td>
+                    <td>120</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. James"</code></td>
+                    <td>120</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Natchitoches"</code></td>
+                    <td>86</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Assumption"</code></td>
+                    <td>85</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Plaquemines"</code></td>
+                    <td>85</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pointe Coupee"</code></td>
+                    <td>76</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Mary"</code></td>
+                    <td>76</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lafourche"</code></td>
+                    <td>68</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orleans"</code></td>
+                    <td>64</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Orleans "</code></td>
+                    <td>60</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Avoyelles"</code></td>
+                    <td>56</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Landry"</code></td>
+                    <td>53</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Rapides"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Charles"</code></td>
+                    <td>46</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ascension"</code></td>
+                    <td>39</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Carroll"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Terrebonne"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Martin"</code></td>
+                    <td>33</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madison"</code></td>
+                    <td>26</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bossier"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tensas"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baltimore"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Baton Rouge"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. John"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jackson"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Feliciana"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Catahoula"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Bernard"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ouachita"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"DeSoto"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Tammany"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Livingston"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Richmond"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Baton Rouge"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Caddo"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Tuscaloosa"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Natchez"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Claiborne"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Adams"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Morehouse"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mobile"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lafayette"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harrison"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Concordia"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"East Feliciana"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pointe Coupee "</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montgomery"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Iberville "</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Baton Rouge"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Caldwell"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jefferson "</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Louis"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paris"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Galveston"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Franklin"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Shreveport"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hinds"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Union"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Algiers"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sabine"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Copiah"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hancock"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Harrison "</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Plaquemines "</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nashville"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pascagoula"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Holmes"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Memphis"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Canton"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Natchitoches "</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Washington "</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bolivar"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wilkinson"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hinds "</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pass Christian"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Issequana"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Montgomery "</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Catahoula "</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"St. Helena"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Assumption "</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"San Antonio"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Orleans "</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Madison "</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Fort Jessup"</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Terrebonne "</code></td>
+                    <td>3</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Hancock  "</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Adams "</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Calcasieu"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wilkinson "</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"West Feliciana "</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Union "</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pope"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Woodville"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Philadelphia"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Orleans, Jefferson"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Avoyelles "</code></td>
+                    <td>2</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-slavery-__0__-Buyer-Full-Name' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"William Jackson Maynard"</code></td>
+                    <td>72</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lewis Neville Shelton"</code></td>
+                    <td>69</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bernard Kendig"</code></td>
+                    <td>46</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"David Resolve Godwin"</code></td>
+                    <td>35</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry Hirsch"</code></td>
+                    <td>34</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Trabue Hatcher"</code></td>
+                    <td>32</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Adolphe Menuet"</code></td>
+                    <td>29</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Wiley J. Martin"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John B. Womack"</code></td>
+                    <td>24</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Bernard Moore Campbell"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Simeon E. Buford"</code></td>
+                    <td>20</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Oscar Liveaudais"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thomas John Pipkin"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Edward Farrelly"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joseph Francois Avet"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Benjamin Myers"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Francis Dugue Jr."</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Welsh"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Andrew Oliver Jackson"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lewis Hare Watson"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paul Choppin"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paul Mouchon"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Samuel Jameson"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Euphrosine Celeste Brunet"</code></td>
+                    <td>12</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Luico Mitchell Foster"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Lucien Constant Adams"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"James Fredell Long"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Benjamin Meyers"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jeremiah Smith"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jean Henri Parlange"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"New Orleans Gas Light Co. Unknown"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Ignatius Szymanski"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pierre Adolphe Rost"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Valerian Choppin"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thomas B. Poindexter"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Robert Spence"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Caroline Trudeau"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"David Bidwell"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Sophia Anastasia Neale"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Emilie Demoruelle"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charles D. Yancey"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charles Kock"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nathan Stephens"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louis Caretta"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Robert McGuinn Davis"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jacob Van Winckle"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John B. Cotton"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John S. Burke"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"William Jackson Pearce"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"William F. Goodrich"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Claude Frederick Avet"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"James Peter Freret"</code></td>
+                    <td>9</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abel Skannal"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"William Barry"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Micajah Harris Jr."</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Daniel Blum"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Isaac Bloom"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jacques Clement Chastant"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Antoine Bellegarde Casimir Lacoste"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Edward Nalle"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"James T. Pugh"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Burnside"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"George Heation"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"William Alfred Freret"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Patrick Irwin"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Cornelius Bicknell Payne"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Juan Ygnacio de Egana"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Charles Octave Flechier"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"James L. Powers"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Theodore Soniat Dufossat"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"George Lanaux"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Aaron Parker Cleveland"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Caldwell Jr."</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Nicholas Mareno Benachi"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Patrick Coyle"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alberic Duplantier"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Julien Tourmillon"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joseph Lanata"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Arthemise Clement"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jules Lapene"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Andrew Doyal"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Alfred Kearny"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Marr Farrell"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Paulin Durel"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"James McIntosh"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joseph Martin"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Pierre Severe Wiltz"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joseph Trotot"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Joseph McIntyre French"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John Hampden Lewis"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Henry Florence"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Thomas Askew"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Benjamin Metoyer"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Louis Joseph Frigerio"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jonathan E. Price"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Jacques Clement  Chastant"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"John H. Ermon"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Marcelin Gillis"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Abel W. Bosworth"</code></td>
+                    <td>6</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Samuel Bell"</code></td>
+                    <td>6</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+        <div id='explore-slavery-__0__-Buyer-State-of-Origin' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"LA"</code></td>
+                    <td>8700</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Unknown"</code></td>
+                    <td>504</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MS"</code></td>
+                    <td>156</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TX"</code></td>
+                    <td>47</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AL"</code></td>
+                    <td>41</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"AR"</code></td>
+                    <td>32</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MD"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"VA"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"TN"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"France"</code></td>
+                    <td>11</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"MO"</code></td>
+                    <td>10</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NY"</code></td>
+                    <td>8</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"KY"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"GA"</code></td>
+                    <td>7</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"FL"</code></td>
+                    <td>5</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"IL"</code></td>
+                    <td>4</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"OH"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"England"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"PA"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NY, LA"</code></td>
+                    <td>2</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Mexico"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"IN"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"CA"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NC"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>". "</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"Columbia"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"NH"</code></td>
+                    <td>1</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"LA "</code></td>
+                    <td>1</td>
+                </tr>
+            
+            
+        </table>
+        </div>
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-slavery-__0__-Buyer" ).dialog({
@@ -490,8 +4961,33 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        $("#btn-explore-slavery-__0__-Buyer-Origin").click(function() {
+            $( "#explore-slavery-__0__-Buyer-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-slavery-__0__-Buyer-Origin" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
         $("#btn-explore-slavery-__0__-Buyer-County-of-Origin").click(function() {
             $( "#explore-slavery-__0__-Buyer-County-of-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        
+        $("#btn-explore-slavery-__0__-Buyer-County-of-Origin").click(function() {
+            $( "#explore-slavery-__0__-Buyer-County-of-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-slavery-__0__-Buyer-County-of-Origin" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
+        $("#btn-explore-slavery-__0__-Buyer-Full-Name").click(function() {
+            $( "#explore-slavery-__0__-Buyer-Full-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
@@ -499,11 +4995,26 @@ $(document).ready(function() {
             $( "#explore-slavery-__0__-Buyer-Full-Name" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        $( "#explore-slavery-__0__-Buyer-Full-Name" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
         $("#btn-explore-slavery-__0__-Buyer-State-of-Origin").click(function() {
             $( "#explore-slavery-__0__-Buyer-State-of-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
+        $("#btn-explore-slavery-__0__-Buyer-State-of-Origin").click(function() {
+            $( "#explore-slavery-__0__-Buyer-State-of-Origin" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-slavery-__0__-Buyer-State-of-Origin" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
         
     });
     </script>
@@ -514,31 +5025,573 @@ $(document).ready(function() {
             
             <tr> <td><code>"Date"</code></td> 
                  <td><span data-toggle="tooltip" title="String (text)">str</span></td> 
-                 <td><code>"10/6/1856"</code></td> 
+                 <td>
+                    <code>"10/6/1856"</code>
+                    
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Transaction-Date'><br>
+                    <sup><i>[Preview <span class='glyphicon glyphicon-zoom-in'></span>]</i></sup></a>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Number of Total Slaves Purchased"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1</code></td> 
+                 <td>
+                    <code>1</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Number of Adult Slaves"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>1</code></td> 
+                 <td>
+                    <code>1</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Number of Child Slaves"</code></td> 
                  <td><span data-toggle="tooltip" title="Integer (whole number)">int</span></td> 
-                 <td><code>0</code></td> 
+                 <td>
+                    <code>0</code>
+                    
+                 </td> 
                  <td></td> </tr>
             
             <tr> <td><code>"Sale Details"</code></td> 
                  <td><span data-toggle="tooltip" title="Dictionary">dict</span></td> 
-                 <td><a class='dialog-opener' id='btn-explore-slavery-__0__-Transaction-Sale-Details'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a></td> 
+                 <td>
+                    <a class='dialog-opener' id='btn-explore-slavery-__0__-Transaction-Sale-Details'>{ <span class='glyphicon glyphicon-new-window' aria-hidden='true'></span> }</a>
+                    
+                 </td> 
                  <td></td> </tr>
             
         </table>
     </div>
+    
+        
+        <div id='explore-slavery-__0__-Transaction-Date' title='Previewing Values'>
+        <table class='table table-condensed table-striped table-bordered' >
+            <tr> <th>Value</th> <th>Count</th></tr>
+            
+                <tr>
+                    <td><code>"6/11/1860"</code></td>
+                    <td>36</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/6/1861"</code></td>
+                    <td>32</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/25/1859"</code></td>
+                    <td>31</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/23/1858"</code></td>
+                    <td>28</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/9/1859"</code></td>
+                    <td>27</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/7/1859"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/7/1857"</code></td>
+                    <td>25</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/30/1861"</code></td>
+                    <td>23</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/14/1858"</code></td>
+                    <td>22</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/7/1860"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/25/1859"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/5/1857"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/9/1857"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/20/1857"</code></td>
+                    <td>21</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/10/1859"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/3/1858"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/22/1856"</code></td>
+                    <td>19</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/19/1859"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/28/1859"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/23/1858"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/11/1859"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/4/1858"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/30/1857"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"5/31/1859"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/8/1856"</code></td>
+                    <td>18</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/19/1857"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/14/1857"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/5/1859"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/21/1860"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/28/1860"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"5/25/1858"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/3/1860"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/29/1858"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/22/1858"</code></td>
+                    <td>17</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/25/1857"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/8/1858"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/15/1859"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"6/28/1859"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/12/1859"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/17/1857"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/1/1861"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/5/1859"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/21/1860"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/16/1857"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/27/1860"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/3/1857"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/4/1859"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/18/1858"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/26/1860"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/18/1861"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/18/1859"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/24/1860"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"7/14/1860"</code></td>
+                    <td>16</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/26/1860"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"5/7/1857"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/8/1859"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/5/1859"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/9/1857"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/8/1859"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/16/1859"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"5/18/1857"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/18/1859"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/23/1859"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/29/1859"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"5/5/1857"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"5/22/1857"</code></td>
+                    <td>15</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/18/1860"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/17/1860"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/30/1859"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/25/1857"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/31/1860"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/28/1857"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/12/1859"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"5/16/1860"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/20/1858"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"4/20/1859"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/27/1858"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/20/1858"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/5/1860"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/14/1859"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/7/1860"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/3/1860"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/15/1859"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/30/1857"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"12/22/1859"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"5/28/1859"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/16/1857"</code></td>
+                    <td>14</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"7/31/1860"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/18/1860"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/10/1857"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"1/17/1859"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"11/26/1859"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"5/24/1858"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"6/25/1859"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/21/1859"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"10/31/1859"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/20/1857"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/16/1860"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"3/19/1859"</code></td>
+                    <td>13</td>
+                </tr>
+            
+                <tr>
+                    <td><code>"2/24/1857"</code></td>
+                    <td>13</td>
+                </tr>
+            
+            
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            
+        </table>
+        </div>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
     <script>
     $(document).ready(function() {
         $( "#explore-slavery-__0__-Transaction" ).dialog({
@@ -551,25 +5604,39 @@ $(document).ready(function() {
             $('.ui-dialog :button').blur();
         });
         
+        $("#btn-explore-slavery-__0__-Transaction-Date").click(function() {
+            $( "#explore-slavery-__0__-Transaction-Date" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
+            $('.ui-dialog :button').blur();
+        });
+        $( "#explore-slavery-__0__-Transaction-Date" ).dialog({
+          autoOpen: false,
+          width: 600
+        });    
+        
+        
         $("#btn-explore-slavery-__0__-Transaction-Number-of-Total-Slaves-Purchased").click(function() {
             $( "#explore-slavery-__0__-Transaction-Number-of-Total-Slaves-Purchased" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
         $("#btn-explore-slavery-__0__-Transaction-Number-of-Adult-Slaves").click(function() {
             $( "#explore-slavery-__0__-Transaction-Number-of-Adult-Slaves" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-slavery-__0__-Transaction-Number-of-Child-Slaves").click(function() {
             $( "#explore-slavery-__0__-Transaction-Number-of-Child-Slaves" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
         
+        
         $("#btn-explore-slavery-__0__-Transaction-Sale-Details").click(function() {
             $( "#explore-slavery-__0__-Transaction-Sale-Details" ).dialog("open").css({'max-height':"400px", overflow:"auto"});;
             $('.ui-dialog :button').blur();
         });
+        
         
     });
     </script>
