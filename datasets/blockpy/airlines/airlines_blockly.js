@@ -236,7 +236,7 @@ Blockly.Blocks['airlines_get'] = {
         .appendField(new Blockly.FieldDropdown(airlines_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
                     }), "INDEX")
-    this.updateShape_();
+    this.updateShape_("(None)");
     this.setInputsInline(false);
     this.setOutput(true, "Array");
     this.setTooltip('Returns a list of Airlines data.');

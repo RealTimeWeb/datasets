@@ -38,10 +38,15 @@ State Crime Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -194,9 +199,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'State Crime');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="state_crime.png" alt="State Crime" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="state_crime_splash.png" alt="state_crime_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>State Crime Blockpy Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -213,8 +223,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_all_crimes'>get_all_crimes</a></li>
-        <li><a href='#get_crime_by_state'>get_crime_by_state</a></li>
-        <li><a href='#get_crime_by_year'>get_crime_by_year</a></li>
         
         </ol></li>
         

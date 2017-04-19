@@ -20,6 +20,7 @@ var global_development_INDEX_VALUES = {
         ["Arab World", "Arab World"] ,
         ["Argentina", "Argentina"] ,
         ["Aruba", "Aruba"] ,
+        ["Australia", "Australia"] ,
         ["Austria", "Austria"] ,
         ["Bahamas, The", "Bahamas, The"] ,
         ["Bahrain", "Bahrain"] ,
@@ -112,11 +113,13 @@ var global_development_INDEX_VALUES = {
         ["Lesotho", "Lesotho"] ,
         ["Liberia", "Liberia"] ,
         ["Libya", "Libya"] ,
+        ["Low & middle income", "Low & middle income"] ,
         ["Low income", "Low income"] ,
         ["Lower middle income", "Lower middle income"] ,
         ["Madagascar", "Madagascar"] ,
         ["Malawi", "Malawi"] ,
         ["Malaysia", "Malaysia"] ,
+        ["Maldives", "Maldives"] ,
         ["Mali", "Mali"] ,
         ["Malta", "Malta"] ,
         ["Mauritania", "Mauritania"] ,
@@ -124,6 +127,7 @@ var global_development_INDEX_VALUES = {
         ["Mexico", "Mexico"] ,
         ["Middle East & North Africa (all income levels)", "Middle East & North Africa (all income levels)"] ,
         ["Middle East & North Africa (developing only)", "Middle East & North Africa (developing only)"] ,
+        ["Middle income", "Middle income"] ,
         ["Mongolia", "Mongolia"] ,
         ["Morocco", "Morocco"] ,
         ["Mozambique", "Mozambique"] ,
@@ -158,6 +162,7 @@ var global_development_INDEX_VALUES = {
         ["Saudi Arabia", "Saudi Arabia"] ,
         ["Senegal", "Senegal"] ,
         ["Sierra Leone", "Sierra Leone"] ,
+        ["Singapore", "Singapore"] ,
         ["Small states", "Small states"] ,
         ["Solomon Islands", "Solomon Islands"] ,
         ["Somalia", "Somalia"] ,
@@ -192,6 +197,7 @@ var global_development_INDEX_VALUES = {
         ["Venezuela, RB", "Venezuela, RB"] ,
         ["Vietnam", "Vietnam"] ,
         ["Virgin Islands (U.S.)", "Virgin Islands (U.S.)"] ,
+        ["World", "World"] ,
         ["Yemen, Rep.", "Yemen, Rep."] ,
         ["Zambia", "Zambia"] ,
         ["Zimbabwe", "Zimbabwe"] 
@@ -294,7 +300,7 @@ Blockly.Blocks['global_development_get'] = {
         .appendField(new Blockly.FieldDropdown(global_development_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
                     }), "INDEX")
-    this.updateShape_();
+    this.updateShape_("(None)");
     this.setInputsInline(false);
     this.setOutput(true, "Array");
     this.setTooltip('Returns a list of Global Development data.');

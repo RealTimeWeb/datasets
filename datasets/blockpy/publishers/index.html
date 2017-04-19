@@ -38,10 +38,15 @@ Publishers Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -194,9 +199,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Publishers');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="publishers.png" alt="Publishers" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="publishers_splash.png" alt="publishers_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Publishers Blockpy Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -245,35 +255,35 @@ From a newspaper article about analyzing amazon e-book sales by genre and publis
         <td>amazon revenue</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>The amount of money that Amazon made per day on this book, in dollars.</td>
-        <td><code>395.7525</code></td>
+        <td><code>6832.0</code></td>
     </tr>
     
     <tr>
         <td>author revenue</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>The amount of money that the author made per day on this book, in dollars.</td>
-        <td><code>213.0975</code></td>
+        <td><code>6832.0</code></td>
     </tr>
     
     <tr>
         <td>gross sales</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>The total amount of money that was made per day on this book, in dollars.</td>
-        <td><code>608.85</code></td>
+        <td><code>34160.0</code></td>
     </tr>
     
     <tr>
         <td>publisher revenue</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>The amount of money that the publisher made per day on this book, in dollars.</td>
-        <td><code>0.0</code></td>
+        <td><code>20496.0</code></td>
     </tr>
     
     <tr>
         <td>units sold</td>
         <td><code>int</code> (Integer number)</td> 
         <td>The number of books sold per day.</td>
-        <td><code>615</code></td>
+        <td><code>7000</code></td>
     </tr>
     
     <tr>
@@ -287,49 +297,49 @@ From a newspaper article about analyzing amazon e-book sales by genre and publis
         <td>name</td>
         <td><code>str</code> (Text)</td> 
         <td>The name of the publisher.</td>
-        <td><code>"(Indie Publisher)"</code></td>
+        <td><code>"Katherine Tegen Books"</code></td>
     </tr>
     
     <tr>
         <td>type</td>
         <td><code>str</code> (Text)</td> 
         <td>The type, or size, of the publisher (e.g, "indie", "small", "big five", etc.)</td>
-        <td><code>"indie"</code></td>
+        <td><code>"big five"</code></td>
     </tr>
     
     <tr>
         <td>sold by</td>
         <td><code>str</code> (Text)</td> 
         <td>The actual company that sold this book, as oppposed to the company that published it.</td>
-        <td><code>"Amazon Digital Services,  Inc."</code></td>
+        <td><code>"HarperCollins Publishers"</code></td>
     </tr>
     
     <tr>
         <td>average rating</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>The average rating of this book, on a five-point scale, as determined by customers.</td>
-        <td><code>4.5</code></td>
+        <td><code>4.57</code></td>
     </tr>
     
     <tr>
         <td>sale price</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>The cost of this book on Amazon, in dollars.</td>
-        <td><code>0.99</code></td>
+        <td><code>4.88</code></td>
     </tr>
     
     <tr>
         <td>sales rank</td>
         <td><code>int</code> (Integer number)</td> 
         <td>The ranking of this book, compared to other books. A higher rank indicates a more popular book.</td>
-        <td><code>177</code></td>
+        <td><code>1</code></td>
     </tr>
     
     <tr>
         <td>total reviews</td>
         <td><code>int</code> (Integer number)</td> 
         <td>The number of people who have reviewed this book.</td>
-        <td><code>20</code></td>
+        <td><code>9604</code></td>
     </tr>
     
     
@@ -356,14 +366,14 @@ From a newspaper article about analyzing amazon e-book sales by genre and publis
         <td>type</td>
         <td><code>str</code> (Text)</td> 
         <td>The type, or size, of the publisher (e.g, "indie", "small", "big five", etc.)</td>
-        <td><code>"indie"</code></td> 
+        <td><code>"big five"</code></td> 
     </tr>
     
     <tr>
         <td>name</td>
         <td><code>str</code> (Text)</td> 
         <td>The name of the publisher.</td>
-        <td><code>"(Indie Publisher)"</code></td> 
+        <td><code>"Katherine Tegen Books"</code></td> 
     </tr>
     
     </table>

@@ -131,7 +131,7 @@ Blockly.Blocks['state_demographics_get'] = {
         .appendField(new Blockly.FieldDropdown(state_demographics_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
                     }), "INDEX")
-    this.updateShape_();
+    this.updateShape_("(None)");
     this.setInputsInline(false);
     this.setOutput(true, "Array");
     this.setTooltip('Returns a list of State Demographics data.');

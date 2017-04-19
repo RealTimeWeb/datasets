@@ -135,9 +135,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Global Development');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="global_development.png" alt="Global Development" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="global_development_splash.png" alt="global_development_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Global Development Blockpy Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -154,8 +159,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_reports'>get_reports</a></li>
-        <li><a href='#get_reports_by_year'>get_reports_by_year</a></li>
-        <li><a href='#get_reports_by_country'>get_reports_by_country</a></li>
         
         </ol></li>
         
@@ -195,112 +198,112 @@ The following data contains records collected on different countries and geograp
         <td>Birth Rate</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Crude, per 1000 People</td>
-        <td><code>11.3</code></td>
+        <td><code>15.4</code></td>
     </tr>
     
     <tr>
         <td>Death Rate</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Crude, per 100 People</td>
-        <td><code>7.2</code></td>
+        <td><code>7.0</code></td>
     </tr>
     
     <tr>
         <td>Fertility Rate</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Total, Births per woman</td>
-        <td><code>1.6808</code></td>
+        <td><code>1.754</code></td>
     </tr>
     
     <tr>
         <td>Life Expectancy at Birth, Female</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Years</td>
-        <td><code>82.886</code></td>
+        <td><code>78.59</code></td>
     </tr>
     
     <tr>
         <td>Life Expectancy at Birth, Male</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Years</td>
-        <td><code>78.312</code></td>
+        <td><code>71.32</code></td>
     </tr>
     
     <tr>
         <td>Life Expectancy at Birth, Total</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Years</td>
-        <td><code>80.5432195122</code></td>
+        <td><code>74.8663414634</code></td>
     </tr>
     
     <tr>
         <td>Population Growth</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Annual Percent</td>
-        <td><code>1.08219708561</code></td>
+        <td><code>0.997669360129</code></td>
     </tr>
     
     <tr>
         <td>Total Population</td>
         <td><code>float</code> (Decimal number)</td> 
         <td></td>
-        <td><code>33245773.0</code></td>
+        <td><code>24277000.0</code></td>
     </tr>
     
     <tr>
         <td>Mobile Cellular Subscriptions</td>
         <td><code>float</code> (Decimal number)</td> 
         <td></td>
-        <td><code>22092500.0</code></td>
+        <td><code>0.0</code></td>
     </tr>
     
     <tr>
         <td>Mobile Cellular Subscriptions per 100 People</td>
         <td><code>float</code> (Decimal number)</td> 
         <td></td>
-        <td><code>66.204877222</code></td>
+        <td><code>0.0</code></td>
     </tr>
     
     <tr>
         <td>Telephone Lines</td>
         <td><code>float</code> (Decimal number)</td> 
         <td></td>
-        <td><code>18250000.0</code></td>
+        <td><code>9595000.0</code></td>
     </tr>
     
     <tr>
         <td>Telephone Lines per 100 People</td>
         <td><code>float</code> (Decimal number)</td> 
         <td></td>
-        <td><code>54.6900083422</code></td>
+        <td><code>39.5623509248</code></td>
     </tr>
     
     <tr>
         <td>Agricultural Land</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Square kilometers</td>
-        <td><code>646108.0</code></td>
+        <td><code>669030.0</code></td>
     </tr>
     
     <tr>
         <td>Agricultural Land Percent</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Percent of land area</td>
-        <td><code>7.10515521509</code></td>
+        <td><code>7.3572250979</code></td>
     </tr>
     
     <tr>
         <td>Arable Land</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Hectacres per person</td>
-        <td><code>1.33111659037</code></td>
+        <td><code>1.82782057091</code></td>
     </tr>
     
     <tr>
         <td>Arable Land Percent</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Percent of land area</td>
-        <td><code>4.86654768071</code></td>
+        <td><code>4.87974390527</code></td>
     </tr>
     
     <tr>
@@ -314,14 +317,14 @@ The following data contains records collected on different countries and geograp
         <td>Rural Population</td>
         <td><code>int</code> (Integer number)</td> 
         <td>Value of rural population</td>
-        <td><code>6456994</code></td>
+        <td><code>5918004</code></td>
     </tr>
     
     <tr>
         <td>Rural Population Growth</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Annual Percent</td>
-        <td><code>0.149484585089</code></td>
+        <td><code>0.833711883207</code></td>
     </tr>
     
     <tr>
@@ -335,28 +338,28 @@ The following data contains records collected on different countries and geograp
         <td>Population Density</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>People per square kilometer of land area</td>
-        <td><code>3.65598905153</code></td>
+        <td><code>2.66970619706</code></td>
     </tr>
     
     <tr>
         <td>Urban Population Percent</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Percent of total population</td>
-        <td><code>80.578</code></td>
+        <td><code>75.623</code></td>
     </tr>
     
     <tr>
         <td>Urban Population Percent Growth</td>
         <td><code>float</code> (Decimal number)</td> 
         <td></td>
-        <td><code>1.3083192428</code></td>
+        <td><code>1.05057823382</code></td>
     </tr>
     
     <tr>
         <td>Year</td>
         <td><code>int</code> (Integer number)</td> 
         <td></td>
-        <td><code>2009</code></td>
+        <td><code>1980</code></td>
     </tr>
     
     
@@ -383,7 +386,7 @@ The following data contains records collected on different countries and geograp
         <td>Year</td>
         <td><code>str</code> (Text)</td> 
         <td></td>
-        <td><code>"2009"</code></td> 
+        <td><code>"1980"</code></td> 
     </tr>
     
     </table>

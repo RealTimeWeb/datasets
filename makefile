@@ -67,7 +67,14 @@ all_visualizer:
 	python builder/builder.py -l visualizer specs/weather.corgis ./datasets
 all_blockpy:
 	python builder/builder.py -l blockpy specs/airlines.corgis ./datasets
+	python builder/builder.py -l blockpy specs/aids.corgis ./datasets
 	python builder/builder.py -l blockpy specs/broadway.corgis ./datasets
+	python builder/builder.py -l blockpy specs/billionaires.corgis ./datasets
+	python builder/builder.py -l blockpy specs/business_dynamics.corgis ./datasets
+	python builder/builder.py -l blockpy specs/drugs.corgis ./datasets
+	python builder/builder.py -l blockpy specs/energy.corgis ./datasets
+	python builder/builder.py -l blockpy specs/finance.corgis ./datasets
+	python builder/builder.py -l blockpy specs/graduates.corgis ./datasets
 	python builder/builder.py -l blockpy specs/classics.corgis ./datasets
 	python builder/builder.py -l blockpy specs/construction_spending.corgis ./datasets
 	python builder/builder.py -l blockpy specs/earthquakes.corgis ./datasets

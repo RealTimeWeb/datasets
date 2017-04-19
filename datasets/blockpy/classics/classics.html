@@ -135,9 +135,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Classics');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="classics.png" alt="Classics" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="classics_splash.png" alt="classics_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Classics Blockpy Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -186,21 +191,21 @@ Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural wo
         <td>birth</td>
         <td><code>int</code> (Integer number)</td> 
         <td>The recorded birth year of the author. If their birth year is unknown, it is replaced with "0".</td>
-        <td><code>1882</code></td>
+        <td><code>1775</code></td>
     </tr>
     
     <tr>
         <td>death</td>
         <td><code>int</code> (Integer number)</td> 
         <td>The recorded year of the author's death. If their death year is unknown, it is replaced with "0".</td>
-        <td><code>1941</code></td>
+        <td><code>1817</code></td>
     </tr>
     
     <tr>
         <td>name</td>
         <td><code>str</code> (Text)</td> 
         <td></td>
-        <td><code>"Joyce, James"</code></td>
+        <td><code>"Austen, Jane"</code></td>
     </tr>
     
     <tr>
@@ -214,35 +219,35 @@ Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural wo
         <td>full</td>
         <td><code>str</code> (Text)</td> 
         <td></td>
-        <td><code>"July, 2003"</code></td>
+        <td><code>"June, 1998"</code></td>
     </tr>
     
     <tr>
         <td>month</td>
         <td><code>int</code> (Integer number)</td> 
         <td>The month of the year when the book was published; 1 corresponds to January, 2 to February, etc. Notice that missing values have been coded as "0".</td>
-        <td><code>7</code></td>
+        <td><code>6</code></td>
     </tr>
     
     <tr>
         <td>month name</td>
         <td><code>str</code> (Text)</td> 
         <td></td>
-        <td><code>"July"</code></td>
+        <td><code>"June"</code></td>
     </tr>
     
     <tr>
         <td>year</td>
         <td><code>int</code> (Integer number)</td> 
         <td>The year when the book was published according to Project Gutenberg. Keep in mind that this may not be the original publication date of the work, just that particular edition of the work. Notice that missing values have been coded as "0".</td>
-        <td><code>2003</code></td>
+        <td><code>1998</code></td>
     </tr>
     
     <tr>
         <td>title</td>
         <td><code>str</code> (Text)</td> 
         <td></td>
-        <td><code>"Ulysses"</code></td>
+        <td><code>"Pride and Prejudice"</code></td>
     </tr>
     
     <tr>
@@ -256,91 +261,91 @@ Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural wo
         <td>total</td>
         <td><code>int</code> (Integer number)</td> 
         <td>Project Gutenberg makes books available in a wide variety of file formats, including raw text files, HTML web pages, audio books, etc. This field indicates the number of ways that this book is available.</td>
-        <td><code>7</code></td>
+        <td><code>8</code></td>
     </tr>
     
     <tr>
         <td>downloads</td>
         <td><code>int</code> (Integer number)</td> 
         <td>The number of times this book has been downloaded from Project Gutenberg, as of the last update (circa Spring 2016).</td>
-        <td><code>10568</code></td>
+        <td><code>36576</code></td>
     </tr>
     
     <tr>
         <td>id</td>
         <td><code>int</code> (Integer number)</td> 
         <td>Every book on Project Gutenberg has a unique ID number. You can use this number to check the book on project gutenberg (e.g., book 110 is <a href="http://www.gutenberg.org/ebooks/110">http://www.gutenberg.org/ebooks/110</a>).</td>
-        <td><code>4300</code></td>
+        <td><code>1342</code></td>
     </tr>
     
     <tr>
         <td>rank</td>
         <td><code>int</code> (Integer number)</td> 
         <td>The rank of this book in comparison to other books on Gutenberg, measured by number of downloads. A lower rank indicatest that that book is more popular.</td>
-        <td><code>14</code></td>
+        <td><code>1</code></td>
     </tr>
     
     <tr>
         <td>url</td>
         <td><code>str</code> (Text)</td> 
         <td></td>
-        <td><code>"https://www.gutenberg.org/ebooks/4300"</code></td>
+        <td><code>"https://www.gutenberg.org/ebooks/1342"</code></td>
     </tr>
     
     <tr>
         <td>automated readability index</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>The Automated Readability Index is a number indicating the understandability of the text. This number is an approximate US Grade Level needed to comprehend the text, calculated using the characters per word and words per sentences.</td>
-        <td><code>8.6</code></td>
+        <td><code>10.7</code></td>
     </tr>
     
     <tr>
         <td>coleman liau index</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>The Coleman Liau Index is a number indicating the understandability of the text. This number is an approximate US Grade Level needed to comprehend the text, calculated using characters instead of syllables, similar to the Automated Readability Index.</td>
-        <td><code>10.84</code></td>
+        <td><code>10.73</code></td>
     </tr>
     
     <tr>
         <td>dale chall readability score</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>The Dale Chall Readability Score provides a numeric gauge of the comprehension difficulty that readers come upon when reading a text. It uses a list of 3000 words that groups of fourth-grade American students could reliably understand, considering any word not on that list to be difficult. This number is an approximate US Grade Level needed to comprehend the text.</td>
-        <td><code>6.35</code></td>
+        <td><code>5.7</code></td>
     </tr>
     
     <tr>
         <td>difficult words</td>
         <td><code>int</code> (Integer number)</td> 
         <td>The number of words in the text that are considered "difficult"; that is, they are not on a list of 3000 words that are considered understandable by fourth-grade American students.</td>
-        <td><code>34649</code></td>
+        <td><code>9032</code></td>
     </tr>
     
     <tr>
         <td>flesch kincaid grade</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>The "Flesch-Kincaid Grade Level Formula" presents a score as a U.S. grade level, making it easier to understand. It uses a similar formula to the Flesch Reading Ease measure.</td>
-        <td><code>6.0</code></td>
+        <td><code>7.9</code></td>
     </tr>
     
     <tr>
         <td>flesch reading ease</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>The 'Flesch Reading Ease' uses the sentence length (number of words per sentence) and the number of syllables per word in an equation to calculate the reading ease. Texts with a very high Flesch reading Ease score (about 100) are very easy to read, have short sentences and no words of more than two syllables.</td>
-        <td><code>75.2</code></td>
+        <td><code>70.13</code></td>
     </tr>
     
     <tr>
         <td>gunning fog</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>The Gunning Fog Index measures the readability of English writing. The index estimates the years of formal education needed to understand the text on a first reading. The formula is calculated using the ratio of words to sentences and the percentage of words that are complex (i.e. have three or more syllables).</td>
-        <td><code>7.2</code></td>
+        <td><code>9.2</code></td>
     </tr>
     
     <tr>
         <td>linsear write formula</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Linsear Write is a readability metric for English text, purportedly developed for the United States Air Force to help them calculate the readability of their technical manuals. It was designed to calculate the United States grade level of a text sample based on sentence length and the number words used that have three or more syllables.</td>
-        <td><code>6.0</code></td>
+        <td><code>13.5</code></td>
     </tr>
     
     <tr>
@@ -354,70 +359,70 @@ Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural wo
         <td>polarity</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Sentiment analysis attempts to determine the attitude of a speaker or a writer with respect to some topic or the overall contextual polarity of a document. Polarity in particular refers to how positive or negative the author is towards the content.</td>
-        <td><code>0.0712303578872</code></td>
+        <td><code>0.136713377605</code></td>
     </tr>
     
     <tr>
         <td>subjectivity</td>
         <td><code>float</code> (Decimal number)</td> 
         <td>Sentiment analysis attempts to determine the attitude of a speaker or a writer with respect to some topic or the overall contextual polarity of a document. Subjectivity (as opposed to Objectivity) in particular refers to whether the text is opinionated or attempts to stay factual.</td>
-        <td><code>0.463066932863</code></td>
+        <td><code>0.52223914947</code></td>
     </tr>
     
     <tr>
         <td>average letter per word</td>
         <td><code>float</code> (Decimal number)</td> 
         <td></td>
-        <td><code>4.95</code></td>
+        <td><code>4.83</code></td>
     </tr>
     
     <tr>
         <td>average sentence length</td>
         <td><code>float</code> (Decimal number)</td> 
         <td></td>
-        <td><code>13.0</code></td>
+        <td><code>18.0</code></td>
     </tr>
     
     <tr>
         <td>average sentence per word</td>
         <td><code>float</code> (Decimal number)</td> 
         <td></td>
-        <td><code>0.07</code></td>
+        <td><code>0.05</code></td>
     </tr>
     
     <tr>
         <td>characters</td>
         <td><code>int</code> (Integer number)</td> 
         <td>Characters are letters and symbols in a text, not the number of people.</td>
-        <td><code>1311231</code></td>
+        <td><code>586794</code></td>
     </tr>
     
     <tr>
         <td>polysyllables</td>
         <td><code>int</code> (Integer number)</td> 
         <td>The number of words that have 3 or more syllables.</td>
-        <td><code>7005</code></td>
+        <td><code>4603</code></td>
     </tr>
     
     <tr>
         <td>sentences</td>
         <td><code>int</code> (Integer number)</td> 
         <td></td>
-        <td><code>19726</code></td>
+        <td><code>6511</code></td>
     </tr>
     
     <tr>
         <td>syllables</td>
         <td><code>float</code> (Decimal number)</td> 
         <td></td>
-        <td><code>363292.2</code></td>
+        <td><code>170648.1</code></td>
     </tr>
     
     <tr>
         <td>words</td>
         <td><code>int</code> (Integer number)</td> 
         <td></td>
-        <td><code>264835</code></td>
+        <td><code>121533</code></td>
     </tr>
     
     
@@ -437,7 +442,7 @@ Project Gutenberg (PG) is a volunteer effort to digitize and archive cultural wo
         <td>name</td>
         <td><code>str</code> (Text)</td> 
         <td></td>
-        <td><code>"Joyce, James"</code></td> 
+        <td><code>"Austen, Jane"</code></td> 
     </tr>
     
     </table>

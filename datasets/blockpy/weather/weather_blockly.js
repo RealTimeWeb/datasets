@@ -129,6 +129,7 @@ var weather_INDEX_VALUES = {
         ["Jackson, KY", "Jackson, KY"] ,
         ["Jackson, MS", "Jackson, MS"] ,
         ["Jacksonville, FL", "Jacksonville, FL"] ,
+        ["Juneau, AK", "Juneau, AK"] ,
         ["Kansas City/Pleasant Hill, MO", "Kansas City/Pleasant Hill, MO"] ,
         ["Key West, FL", "Key West, FL"] ,
         ["La Crosse, WI", "La Crosse, WI"] ,
@@ -226,7 +227,7 @@ Blockly.Blocks['weather_get'] = {
         .appendField(new Blockly.FieldDropdown(weather_INDEXES, function(option) {
                         this.sourceBlock_.updateShape_(option);
                     }), "INDEX")
-    this.updateShape_();
+    this.updateShape_("(None)");
     this.setInputsInline(false);
     this.setOutput(true, "Array");
     this.setTooltip('Returns a list of Weather data.');
