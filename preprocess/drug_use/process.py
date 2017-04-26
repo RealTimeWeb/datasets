@@ -134,7 +134,7 @@ for (year, state), g in all.groupby(['Year', 'State']):
                 'Cocaine Used Past Year': extract(g, 'Cocaine Use Past Year'),
                 'Used Past Month': extract(g, 'Illicit Drug Use Past Month'),
                 'All Except Marijuana Used Past Month': extract(g, 'Non-Marijuana Illicit Drug Use Past Month'),
-                'Abuse Past Month': extract(g, 'Illicit Drug Use Past Month'),
+                'Abuse Past Year': extract(g, 'Illicit Drug Abuse Past Year'),
                 'Dependence Past Year': extract(g, 'Illicit Drug Dependence Past Year'),
                 'Need Treatment Past Year': extract(g, 'Need Treatment Illicit Drug Use Past Year'),
             },
@@ -186,3 +186,11 @@ for (year, state), g in all.groupby(['Year', 'State']):
     
 with open('drug_use.json', 'w') as out:
     json.dump(data, out, indent=2)
+    
+'''
+Rates
+    Illicit Drugs
+        Absue Past Month
+        Used Past Month
+            18-25
+'''
