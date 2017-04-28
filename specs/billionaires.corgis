@@ -53,7 +53,7 @@ comments:
             from emerging: Whether the money came from emerging markets.
             industry: The specific industry this billionaire profitted from.
             was political: Whether the money came from politics.
-            inherited: Whether the money was partially inherited.
+            inherited: The way that this money was inherited (or not inherited). Inheritance can come from a spouse, the father, or from multiple generations within a family (either 3, 4, or 5+).
             was founder: Whether the billionaire was the founder of their company.
         worth in billions: The number of billion of dollars that this billionaire is worth.
         type: The type of billionaire that they are.

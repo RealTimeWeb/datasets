@@ -1,0 +1,6 @@
+*.csv
+*.json
+*.zip
+wp16-1/
+
+cached/
