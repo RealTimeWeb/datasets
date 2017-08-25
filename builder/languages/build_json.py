@@ -170,7 +170,7 @@ def build_locals(model):
     moves = {}
     
     for local in locals:
-        name = snake_case(local["name"])
+        name = module_name#snake_case(local["name"])
         new_file = name+'.json'
         file = local["file"]
         with open(file, 'rb') as inp, open(new_file, 'wb') as out:

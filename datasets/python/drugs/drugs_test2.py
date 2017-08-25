@@ -1,21 +1,20 @@
-import drugs
-import matplotlib
+# -*- coding: utf-8 -*-
+"""
+Created on Mon May  1 22:51:35 2017
+
+@author: acbart
+"""
+
 import matplotlib.pyplot as plt
- 
+import drugs
 list_of_report = drugs.get_reports()
- 
-illicit_drug_use = []
-illicit_drug_abuse = []
- 
-for report in list_of_report:
-    if report["State"] == "Virginia":
-        illicit_drug_abuse.append(report["Rates"]["Illicit Drugs"]["Abuse Past Month"])
-        illicit_drug_use.append(report["Rates"]["Illicit Drugs"]["Used Past Month"])
-plt.gca().xaxis.set_major_formatter(matplotlib.ticker.FormatStrFormatter('%d'))
- 
-plt.plot(illicit_drug_use, label = "Illicit Drug Use Over Past Month")
-plt.plot(illicit_drug_abuse, label = "Illicit Drug Abuse Over Past Month")
-plt.xlabel("Time")
-plt.ylabel("Drug Use vs. Drug Abuse in 2002")
-plt.legend
+alcohol_list =[]
+
+for a_report in list_of_report :
+    alcohol_list.append(a_report["Rates"]["Alcohol"]["Use Past Month"])
+plt.hist(alcohol_list, label = 'Alcohol')
+plt.title("Distribution of Alcohol Users")
+plt.ylabel("Number")
+plt.xlabel("Alcohol Users")
+plt.legend()
 plt.show()

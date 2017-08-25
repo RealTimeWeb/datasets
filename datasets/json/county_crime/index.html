@@ -17,6 +17,9 @@ County Crime JSON Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -35,10 +38,15 @@ County Crime JSON Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -57,9 +65,14 @@ County Crime JSON Library (CORGIS Datasets Project)
 <div class="container">
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'County Crime');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="county_crime.png" alt="County Crime" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="county_crime_splash.png" alt="county_crime_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>County Crime JSON Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -113,68 +126,6 @@ From the Unified Crime Reporting Statistics and  under the collaboration of the 
     
     
     <tr>
-        <td>[0].Data.Totals.Violent</td>
-        <td>dict</td> 
-        <td></td>
-        <td>{u'All': 18, u'Murder': 1, u'Robbery': 2, u'Rape': 1, u'Assault': 14}</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Data.Totals.Property</td>
-        <td>dict</td> 
-        <td></td>
-        <td>{u'Burglary': 18, u'Larceny': 44, u'All': 69, u'Motor': 7.0}</td>
-    </tr>
-    
-    
-    
-    <tr>
-        <td>[0].Department</td>
-        <td>unicode</td> 
-        <td>The long name of the police department that this report was made for.</td>
-        <td>Alabaster Police Dept</td>
-    </tr>
-    
-    <tr>
-        <td>[0].State</td>
-        <td>unicode</td> 
-        <td>The long name of the state that this report was made for.</td>
-        <td>Alabama</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Data</td>
-        <td>dict</td> 
-        <td></td>
-        <td>{u'Totals': {u'Violent': {u'All': 18, u'Murder': 1, u'Robbery': 2, u'Rape': 1, u'Assault': 14}, u'Property': {u'Burglary': 18, u'Larceny': 44, u'All': 69, u'Motor': 7.0}}, u'Rates': {u'Violent': {u'All': 234.1, u'Murder': 13.0, u'Robbery': 26.0, u'Rape': 13.0, u'Assault': 182.1}, u'Property': {u'Burglary': 234.1, u'Larceny': 572.2, u'All': 897.3, u'Motor': 91.0}}, u'Population': 7690}</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Year</td>
-        <td>int</td> 
-        <td>The year that this report was made in.</td>
-        <td>1984</td>
-    </tr>
-    
-    
-    
-    <tr>
-        <td>[0].Data.Rates.Violent</td>
-        <td>dict</td> 
-        <td></td>
-        <td>{u'All': 234.1, u'Murder': 13.0, u'Robbery': 26.0, u'Rape': 13.0, u'Assault': 182.1}</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Data.Rates.Property</td>
-        <td>dict</td> 
-        <td></td>
-        <td>{u'Burglary': 234.1, u'Larceny': 572.2, u'All': 897.3, u'Motor': 91.0}</td>
-    </tr>
-    
-    
-    
-    <tr>
         <td>[0].Data.Totals.Violent.All</td>
         <td>int</td> 
         <td>This property reflects all of the Violent crimes, including assaults, murders, rapes, and robberies.</td>
@@ -212,6 +163,52 @@ From the Unified Crime Reporting Statistics and  under the collaboration of the 
     
     
     <tr>
+        <td>[0].Data.Totals.Property.Burglary</td>
+        <td>int</td> 
+        <td>This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td>
+        <td>18</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Property.Larceny</td>
+        <td>int</td> 
+        <td>This property reflects the number of burglaries, or theft of personal property.</td>
+        <td>44</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Property.All</td>
+        <td>int</td> 
+        <td>This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td>
+        <td>69</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Property.Motor</td>
+        <td>float</td> 
+        <td>This property reflects the number of crimes where a motor vehicle was stolen.</td>
+        <td>7.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Rates.Violent</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 234.1, u'Murder': 13.0, u'Robbery': 26.0, u'Rape': 13.0, u'Assault': 182.1}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Rates.Property</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Burglary': 234.1, u'Larceny': 572.2, u'All': 897.3, u'Motor': 91.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
         <td>[0].Data.Rates.Property.Burglary</td>
         <td>float</td> 
         <td>Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td>
@@ -242,6 +239,22 @@ From the Unified Crime Reporting Statistics and  under the collaboration of the 
     
     
     <tr>
+        <td>[0].Data.Totals.Violent</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'All': 18, u'Murder': 1, u'Robbery': 2, u'Rape': 1, u'Assault': 14}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Totals.Property</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Burglary': 18, u'Larceny': 44, u'All': 69, u'Motor': 7.0}</td>
+    </tr>
+    
+    
+    
+    <tr>
         <td>[0].Data.Population</td>
         <td>int</td> 
         <td>The number of people living in this state at the time the report was created.</td>
@@ -265,31 +278,31 @@ From the Unified Crime Reporting Statistics and  under the collaboration of the 
     
     
     <tr>
-        <td>[0].Data.Totals.Property.Burglary</td>
-        <td>int</td> 
-        <td>This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.</td>
-        <td>18</td>
+        <td>[0].Department</td>
+        <td>unicode</td> 
+        <td>The long name of the police department that this report was made for.</td>
+        <td>Alabaster Police Dept</td>
     </tr>
     
     <tr>
-        <td>[0].Data.Totals.Property.Larceny</td>
-        <td>int</td> 
-        <td>This property reflects the number of burglaries, or theft of personal property.</td>
-        <td>44</td>
+        <td>[0].State</td>
+        <td>unicode</td> 
+        <td>The long name of the state that this report was made for.</td>
+        <td>Alabama</td>
     </tr>
     
     <tr>
-        <td>[0].Data.Totals.Property.All</td>
-        <td>int</td> 
-        <td>This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.</td>
-        <td>69</td>
+        <td>[0].Data</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Totals': {u'Violent': {u'All': 18, u'Murder': 1, u'Robbery': 2, u'Rape': 1, u'Assault': 14}, u'Property': {u'Burglary': 18, u'Larceny': 44, u'All': 69, u'Motor': 7.0}}, u'Rates': {u'Violent': {u'All': 234.1, u'Murder': 13.0, u'Robbery': 26.0, u'Rape': 13.0, u'Assault': 182.1}, u'Property': {u'Burglary': 234.1, u'Larceny': 572.2, u'All': 897.3, u'Motor': 91.0}}, u'Population': 7690}</td>
     </tr>
     
     <tr>
-        <td>[0].Data.Totals.Property.Motor</td>
-        <td>float</td> 
-        <td>This property reflects the number of crimes where a motor vehicle was stolen.</td>
-        <td>7.0</td>
+        <td>[0].Year</td>
+        <td>int</td> 
+        <td>The year that this report was made in.</td>
+        <td>1984</td>
     </tr>
     
     

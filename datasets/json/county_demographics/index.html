@@ -17,6 +17,9 @@ County Demographics JSON Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -35,10 +38,15 @@ County Demographics JSON Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -57,9 +65,14 @@ County Demographics JSON Library (CORGIS Datasets Project)
 <div class="container">
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'County Demographics');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="county_demographics.png" alt="County Demographics" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="county_demographics_splash.png" alt="county_demographics_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>County Demographics JSON Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -108,138 +121,6 @@ The following data set is information obtained about counties in the United Stat
         <th class='col-md-2'>Type</th>
         <th class='col-md-5'>Comment</th>
         <th class='col-md-3'>Example Value</th>
-    </tr>
-    
-    
-    
-    <tr>
-        <td>[0].Housing.Housing Units</td>
-        <td>int</td> 
-        <td>2014</td>
-        <td>22751</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Housing.Units in Multi-Unit Structures</td>
-        <td>float</td> 
-        <td>percent, 2009-2013</td>
-        <td>8.3</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Housing.Median Value of Owner-Occupied Units</td>
-        <td>int</td> 
-        <td>2009-2013</td>
-        <td>136200</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Housing.Households</td>
-        <td>int</td> 
-        <td>2009-2013</td>
-        <td>20071</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Housing.Persons per Household</td>
-        <td>float</td> 
-        <td>2009-2013</td>
-        <td>2.71</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Housing.Homeownership Rate</td>
-        <td>float</td> 
-        <td>2009-2013</td>
-        <td>76.8</td>
-    </tr>
-    
-    
-    
-    <tr>
-        <td>[0].Age.Percent Under 18 Years</td>
-        <td>float</td> 
-        <td></td>
-        <td>25.2</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Age.Percent 65 and Older</td>
-        <td>float</td> 
-        <td></td>
-        <td>13.8</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Age.Percent Under 5 Years</td>
-        <td>float</td> 
-        <td></td>
-        <td>6.0</td>
-    </tr>
-    
-    
-    
-    <tr>
-        <td>[0].Miscellaneous.Manufacturers Shipments</td>
-        <td>int</td> 
-        <td>$100,000 of dollars, 2007</td>
-        <td>0</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Miscellaneous.Foreign Born</td>
-        <td>float</td> 
-        <td>percent 2009-2013</td>
-        <td>1.6</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Miscellaneous.Percent Female</td>
-        <td>float</td> 
-        <td>2014</td>
-        <td>51.4</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Miscellaneous.Language Other than English at Home</td>
-        <td>float</td> 
-        <td>age 5+, percent, 2009-2013</td>
-        <td>3.5</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Miscellaneous.Living in Same House +1 Years</td>
-        <td>float</td> 
-        <td>percent, 2009-2013</td>
-        <td>85.0</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Miscellaneous.Mean Travel Time to Work</td>
-        <td>float</td> 
-        <td>minutes, workers aged 16+, 2009-2013</td>
-        <td>26.2</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Miscellaneous.Building Permits</td>
-        <td>int</td> 
-        <td>2014</td>
-        <td>131</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Miscellaneous.Veterans</td>
-        <td>int</td> 
-        <td>2009-2013</td>
-        <td>5922</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Miscellaneous.Land Area</td>
-        <td>float</td> 
-        <td>Square Miles, 2010</td>
-        <td>594.44</td>
     </tr>
     
     
@@ -303,52 +184,24 @@ The following data set is information obtained about counties in the United Stat
     
     
     <tr>
-        <td>[0].Employment.Firms.Total</td>
-        <td>int</td> 
+        <td>[0].Age.Percent Under 18 Years</td>
+        <td>float</td> 
         <td></td>
-        <td>4067</td>
+        <td>25.2</td>
     </tr>
     
     <tr>
-        <td>[0].Employment.Firms.Hispanic-Owned</td>
+        <td>[0].Age.Percent 65 and Older</td>
         <td>float</td> 
         <td></td>
-        <td>0.7</td>
+        <td>13.8</td>
     </tr>
     
     <tr>
-        <td>[0].Employment.Firms.Native Hawaiian and Other Pacific Islander-Owned</td>
+        <td>[0].Age.Percent Under 5 Years</td>
         <td>float</td> 
         <td></td>
-        <td>0.0</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Employment.Firms.American Indian-Owned</td>
-        <td>float</td> 
-        <td></td>
-        <td>0.0</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Employment.Firms.Black-Owned</td>
-        <td>float</td> 
-        <td></td>
-        <td>15.2</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Employment.Firms.Asian-Owned</td>
-        <td>float</td> 
-        <td></td>
-        <td>1.3</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Employment.Firms.Women-Owned</td>
-        <td>float</td> 
-        <td></td>
-        <td>31.7</td>
+        <td>6.0</td>
     </tr>
     
     
@@ -379,45 +232,6 @@ The following data set is information obtained about counties in the United Stat
         <td>int</td> 
         <td></td>
         <td>12003</td>
-    </tr>
-    
-    
-    
-    <tr>
-        <td>[0].Income.Median Houseold Income</td>
-        <td>int</td> 
-        <td></td>
-        <td>53682</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Income.Per Capita Income</td>
-        <td>int</td> 
-        <td>2013 dollars</td>
-        <td>24571</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Income.Persons Below Poverty Level</td>
-        <td>float</td> 
-        <td>percent</td>
-        <td>12.1</td>
-    </tr>
-    
-    
-    
-    <tr>
-        <td>[0].Education.Bachelor's Degree or Higher</td>
-        <td>float</td> 
-        <td></td>
-        <td>20.9</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Education.High School or Higher</td>
-        <td>float</td> 
-        <td></td>
-        <td>85.6</td>
     </tr>
     
     
@@ -539,6 +353,189 @@ The following data set is information obtained about counties in the United Stat
     
     
     <tr>
+        <td>[0].Income.Median Houseold Income</td>
+        <td>int</td> 
+        <td></td>
+        <td>53682</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Income.Per Capita Income</td>
+        <td>int</td> 
+        <td>2013 dollars</td>
+        <td>24571</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Income.Persons Below Poverty Level</td>
+        <td>float</td> 
+        <td>percent</td>
+        <td>12.1</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Miscellaneous.Manufacturers Shipments</td>
+        <td>int</td> 
+        <td>$100,000 of dollars, 2007</td>
+        <td>0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Foreign Born</td>
+        <td>float</td> 
+        <td>percent 2009-2013</td>
+        <td>1.6</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Percent Female</td>
+        <td>float</td> 
+        <td>2014</td>
+        <td>51.4</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Language Other than English at Home</td>
+        <td>float</td> 
+        <td>age 5+, percent, 2009-2013</td>
+        <td>3.5</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Living in Same House +1 Years</td>
+        <td>float</td> 
+        <td>percent, 2009-2013</td>
+        <td>85.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Mean Travel Time to Work</td>
+        <td>float</td> 
+        <td>minutes, workers aged 16+, 2009-2013</td>
+        <td>26.2</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Building Permits</td>
+        <td>int</td> 
+        <td>2014</td>
+        <td>131</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Veterans</td>
+        <td>int</td> 
+        <td>2009-2013</td>
+        <td>5922</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Miscellaneous.Land Area</td>
+        <td>float</td> 
+        <td>Square Miles, 2010</td>
+        <td>594.44</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Employment.Firms.Total</td>
+        <td>int</td> 
+        <td></td>
+        <td>4067</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms.Hispanic-Owned</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.7</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms.Native Hawaiian and Other Pacific Islander-Owned</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms.American Indian-Owned</td>
+        <td>float</td> 
+        <td></td>
+        <td>0.0</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms.Black-Owned</td>
+        <td>float</td> 
+        <td></td>
+        <td>15.2</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms.Asian-Owned</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.3</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Employment.Firms.Women-Owned</td>
+        <td>float</td> 
+        <td></td>
+        <td>31.7</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Housing.Housing Units</td>
+        <td>int</td> 
+        <td>2014</td>
+        <td>22751</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Housing.Units in Multi-Unit Structures</td>
+        <td>float</td> 
+        <td>percent, 2009-2013</td>
+        <td>8.3</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Housing.Median Value of Owner-Occupied Units</td>
+        <td>int</td> 
+        <td>2009-2013</td>
+        <td>136200</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Housing.Households</td>
+        <td>int</td> 
+        <td>2009-2013</td>
+        <td>20071</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Housing.Persons per Household</td>
+        <td>float</td> 
+        <td>2009-2013</td>
+        <td>2.71</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Housing.Homeownership Rate</td>
+        <td>float</td> 
+        <td>2009-2013</td>
+        <td>76.8</td>
+    </tr>
+    
+    
+    
+    <tr>
         <td>[0].Population.2014 Population</td>
         <td>int</td> 
         <td></td>
@@ -564,6 +561,22 @@ The following data set is information obtained about counties in the United Stat
         <td>float</td> 
         <td>April 1, 2010 to July 1, 2014</td>
         <td>1.5</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Education.Bachelor's Degree or Higher</td>
+        <td>float</td> 
+        <td></td>
+        <td>20.9</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Education.High School or Higher</td>
+        <td>float</td> 
+        <td></td>
+        <td>85.6</td>
     </tr>
     
     

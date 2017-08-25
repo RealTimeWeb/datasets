@@ -17,6 +17,9 @@ Global Development JSON Library (CORGIS Datasets Project)
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     
+    
+    
+    
     <!-- JQuery JS -->
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
@@ -35,10 +38,15 @@ Global Development JSON Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -57,9 +65,14 @@ Global Development JSON Library (CORGIS Datasets Project)
 <div class="container">
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Global Development');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="global_development.png" alt="Global Development" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="global_development_splash.png" alt="global_development_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Global Development JSON Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -70,7 +83,7 @@ Global Development JSON Library (CORGIS Datasets Project)
     
     <h3 id="overview">Overview</h3>
 <p>
-The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank.  Included is different data about urban development, agriculture and rural development, health, and infrastructure.       
+The following data contains records collected on different countries and geographic locations from 1980 - 2013 from the World Bank.  Included is different data about urban development, agriculture and rural development, health, and infrastructure.   
 
 </p>
 
@@ -122,8 +135,8 @@ The following data contains records collected on different countries and geograp
     <tr>
         <td>[0].Data</td>
         <td>dict</td> 
-        <td></td>
-        <td>{u'Infrastructure': {u'Telephone Lines': 9595000.0, u'Mobile Cellular Subscriptions': 0.0, u'Telephone Lines per 100 People': 39.5623509247736, u'Mobile Cellular Subscriptions per 100 People': 0.0}, u'Health': {u'Life Expectancy at Birth, Total': 74.8663414634146, u'Total Population': 24277000.0, u'Life Expectancy at Birth, Male': 71.32, u'Population Growth': 0.997669360128831, u'Life Expectancy at Birth, Female': 78.59, u'Birth Rate': 15.4, u'Death Rate': 7.0, u'Fertility Rate': 1.754}, u'Rural Development': {u'Arable Land Percent': 4.8797439052687, u'Arable Land': 1.82782057091074, u'Rural Population': 5918004.0, u'Agricultural Land Percent': 7.35722509789949, u'Rural Population Growth': 0.833711883207287, u'Surface Area': 9984670.0, u'Agricultural Land': 669030.0, u'Land Area': 9093510.0}, u'Urban Development': {u'Urban Population': 75.623, u'Population Density': 2.66970619705702, u'Urban Population Growth': 1.05057823382459}}</td>
+        <td>Based on the nature of the data, some of the numbers that are reported are very small.  For example a field reported as 0.15 is 0.15 %, not 15 %.</td>
+        <td>{u'Infrastructure': {u'Telephone Lines': 9595000.0, u'Mobile Cellular Subscriptions per 100 People': 0.0, u'Telephone Lines per 100 People': 39.5623509247736, u'Mobile Cellular Subscriptions': 0.0}, u'Health': {u'Life Expectancy at Birth, Total': 74.8663414634146, u'Total Population': 24277000.0, u'Life Expectancy at Birth, Male': 71.32, u'Population Growth': 0.997669360128831, u'Life Expectancy at Birth, Female': 78.59, u'Birth Rate': 15.4, u'Death Rate': 7.0, u'Fertility Rate': 1.754}, u'Urban Development': {u'Urban Population Percent': 75.623, u'Population Density': 2.66970619705702, u'Urban Population Percent Growth': 1.05057823382459}, u'Rural Development': {u'Surface Area': 9984670.0, u'Arable Land': 1.82782057091074, u'Rural Population': 5918004, u'Agricultural Land Percent': 7.35722509789949, u'Rural Population Growth': 0.833711883207287, u'Arable Land Percent': 4.8797439052687, u'Agricultural Land': 669030.0, u'Land Area': 9093510.0}}</td>
     </tr>
     
     <tr>
@@ -136,33 +149,10 @@ The following data contains records collected on different countries and geograp
     
     
     <tr>
-        <td>[0].Data.Urban Development.Urban Population</td>
+        <td>[0].Data.Rural Development.Arable Land Percent</td>
         <td>float</td> 
-        <td>Percent of total</td>
-        <td>75.623</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Data.Urban Development.Population Density</td>
-        <td>float</td> 
-        <td>People per square kilometer of land area</td>
-        <td>2.66970619706</td>
-    </tr>
-    
-    <tr>
-        <td>[0].Data.Urban Development.Urban Population Growth</td>
-        <td>float</td> 
-        <td>Annual percent</td>
-        <td>1.05057823382</td>
-    </tr>
-    
-    
-    
-    <tr>
-        <td>[0].Data.Rural Development.Surface Area</td>
-        <td>float</td> 
-        <td>Square kilometers</td>
-        <td>9984670.0</td>
+        <td>Percent of land area</td>
+        <td>4.87974390527</td>
     </tr>
     
     <tr>
@@ -174,9 +164,9 @@ The following data contains records collected on different countries and geograp
     
     <tr>
         <td>[0].Data.Rural Development.Rural Population</td>
-        <td>float</td> 
-        <td>Percent of total population</td>
-        <td>5918004.0</td>
+        <td>int</td> 
+        <td>Value of rural population</td>
+        <td>5918004</td>
     </tr>
     
     <tr>
@@ -194,10 +184,10 @@ The following data contains records collected on different countries and geograp
     </tr>
     
     <tr>
-        <td>[0].Data.Rural Development.Arable Land Percent</td>
+        <td>[0].Data.Rural Development.Surface Area</td>
         <td>float</td> 
-        <td>Percent of land area</td>
-        <td>4.87974390527</td>
+        <td>Square kilometers</td>
+        <td>9984670.0</td>
     </tr>
     
     <tr>
@@ -212,6 +202,29 @@ The following data contains records collected on different countries and geograp
         <td>float</td> 
         <td>Square kilometers</td>
         <td>9093510.0</td>
+    </tr>
+    
+    
+    
+    <tr>
+        <td>[0].Data.Urban Development.Urban Population Percent</td>
+        <td>float</td> 
+        <td>Percent of total population</td>
+        <td>75.623</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Urban Development.Population Density</td>
+        <td>float</td> 
+        <td>People per square kilometer of land area</td>
+        <td>2.66970619706</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Urban Development.Urban Population Percent Growth</td>
+        <td>float</td> 
+        <td></td>
+        <td>1.05057823382</td>
     </tr>
     
     
@@ -278,7 +291,7 @@ The following data contains records collected on different countries and geograp
         <td>[0].Data.Infrastructure</td>
         <td>dict</td> 
         <td></td>
-        <td>{u'Telephone Lines': 9595000.0, u'Mobile Cellular Subscriptions': 0.0, u'Telephone Lines per 100 People': 39.5623509247736, u'Mobile Cellular Subscriptions per 100 People': 0.0}</td>
+        <td>{u'Telephone Lines': 9595000.0, u'Mobile Cellular Subscriptions per 100 People': 0.0, u'Telephone Lines per 100 People': 39.5623509247736, u'Mobile Cellular Subscriptions': 0.0}</td>
     </tr>
     
     <tr>
@@ -289,17 +302,17 @@ The following data contains records collected on different countries and geograp
     </tr>
     
     <tr>
-        <td>[0].Data.Urban Development</td>
-        <td>dict</td> 
-        <td></td>
-        <td>{u'Urban Population': 75.623, u'Population Density': 2.66970619705702, u'Urban Population Growth': 1.05057823382459}</td>
-    </tr>
-    
-    <tr>
         <td>[0].Data.Rural Development</td>
         <td>dict</td> 
         <td></td>
-        <td>{u'Arable Land Percent': 4.8797439052687, u'Arable Land': 1.82782057091074, u'Rural Population': 5918004.0, u'Agricultural Land Percent': 7.35722509789949, u'Rural Population Growth': 0.833711883207287, u'Surface Area': 9984670.0, u'Agricultural Land': 669030.0, u'Land Area': 9093510.0}</td>
+        <td>{u'Surface Area': 9984670.0, u'Arable Land': 1.82782057091074, u'Rural Population': 5918004, u'Agricultural Land Percent': 7.35722509789949, u'Rural Population Growth': 0.833711883207287, u'Arable Land Percent': 4.8797439052687, u'Agricultural Land': 669030.0, u'Land Area': 9093510.0}</td>
+    </tr>
+    
+    <tr>
+        <td>[0].Data.Urban Development</td>
+        <td>dict</td> 
+        <td></td>
+        <td>{u'Urban Population Percent': 75.623, u'Population Density': 2.66970619705702, u'Urban Population Percent Growth': 1.05057823382459}</td>
     </tr>
     
     
@@ -312,7 +325,7 @@ The following data contains records collected on different countries and geograp
     </tr>
     
     <tr>
-        <td>[0].Data.Infrastructure.Mobile Cellular Subscriptions per 100 People</td>
+        <td>[0].Data.Infrastructure.Mobile Cellular Subscriptions</td>
         <td>float</td> 
         <td></td>
         <td>0.0</td>
@@ -326,7 +339,7 @@ The following data contains records collected on different countries and geograp
     </tr>
     
     <tr>
-        <td>[0].Data.Infrastructure.Mobile Cellular Subscriptions</td>
+        <td>[0].Data.Infrastructure.Mobile Cellular Subscriptions per 100 People</td>
         <td>float</td> 
         <td></td>
         <td>0.0</td>
