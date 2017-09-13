@@ -357,7 +357,8 @@ PythonToBlocks.KNOWN_MODULES['global_development'] = {
 };
 
 AbstractInterpreter.MODULES['global_development'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
+    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Global Development'] = '<category name="Data - Global Development" colour="50">'+

@@ -202,7 +202,8 @@ PythonToBlocks.KNOWN_MODULES['business_dynamics'] = {
 };
 
 AbstractInterpreter.MODULES['business_dynamics'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
+    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Business Dynamics'] = '<category name="Data - Business Dynamics" colour="50">'+

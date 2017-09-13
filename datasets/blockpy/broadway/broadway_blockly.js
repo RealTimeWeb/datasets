@@ -191,7 +191,8 @@ PythonToBlocks.KNOWN_MODULES['broadway'] = {
 };
 
 AbstractInterpreter.MODULES['broadway'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
+    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Broadway'] = '<category name="Data - Broadway" colour="50">'+

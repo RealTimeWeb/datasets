@@ -257,6 +257,15 @@ def build_locals(model, js_path):
         file = local["file"]
         row_type = local["type"]
         row = local["row"]
+        # Complete Dataset
+        complete_path = snake_case(model['metadata']['name']) + "_complete.js"
+        with open(file, "r") as local_file, open(complete_path, 'w') as output_file:
+            output_file.write("_IMPORTED_COMPLETE_DATASETS['{}'] = Sk.ffi.remapToPy(".format(metadata_name))
+            if row_type == "json":
+                data_list = json.load(local_file)
+                json.dump(data_list, output_file, indent=2)
+                output_file.write(");");
+        # Linearized Dataset
         json_path = snake_case(model['metadata']['name']) + "_dataset.js"
         with open(file, "r") as local_file, open(json_path, 'w') as output_file:
             output_file.write("_IMPORTED_DATASETS['{}'] = ".format(metadata_name))
@@ -289,7 +298,7 @@ def build_locals(model, js_path):
                 json.dump(data, output_file, indent=2)
                 #model['visualized_datasets'][name] = data.keys()
             print("File sizes:", "{}mb".format(os.stat(json_path).st_size / 1024 / 1024))
-        yield json_path, short_key_names, indexes, full_key_descriptions
+        yield json_path, complete_path, short_key_names, indexes, full_key_descriptions
 
 def build_blockpy(model, fast):
     name = snake_case(model['metadata']['name'])
@@ -306,10 +315,12 @@ def build_blockpy(model, fast):
         model["metadata"]["icon"] = False
     
     results = list(build_locals(model, new_folder))
-    moves = {f: new_folder for f in first_items(results)}
-    key_names = [k for s in results for k in s[1]]
-    indexes = {k:v for s in results for k, v in s[2].items()}
-    full_key_descriptions = [i[3] for i in results]
+    moves = {f: new_folder
+             for s in results
+             for f in s[:2]}
+    key_names = [k for s in results for k in s[2]]
+    indexes = {k:v for s in results for k, v in s[3].items()}
+    full_key_descriptions = [i[4] for i in results]
         
     files.update(build_metafiles(model, key_names, indexes, full_key_descriptions))
     

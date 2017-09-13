@@ -107,9 +107,9 @@ var drugs_PROPERTIES = [
     ["Rates.Alcohol.Use Past Month.12-17", "Rates.Alcohol.Use Past Month.12-17"] ,
     ["Rates.Alcohol.Use Past Month.18-25", "Rates.Alcohol.Use Past Month.18-25"] ,
     ["Rates.Alcohol.Use Past Month.26+", "Rates.Alcohol.Use Past Month.26+"] ,
-    ["Rates.Illicit Drugs.Abuse Past Month.12-17", "Rates.Illicit Drugs.Abuse Past Month.12-17"] ,
-    ["Rates.Illicit Drugs.Abuse Past Month.18-25", "Rates.Illicit Drugs.Abuse Past Month.18-25"] ,
-    ["Rates.Illicit Drugs.Abuse Past Month.26+", "Rates.Illicit Drugs.Abuse Past Month.26+"] ,
+    ["Rates.Illicit Drugs.Abuse Past Year.12-17", "Rates.Illicit Drugs.Abuse Past Year.12-17"] ,
+    ["Rates.Illicit Drugs.Abuse Past Year.18-25", "Rates.Illicit Drugs.Abuse Past Year.18-25"] ,
+    ["Rates.Illicit Drugs.Abuse Past Year.26+", "Rates.Illicit Drugs.Abuse Past Year.26+"] ,
     ["Rates.Illicit Drugs.All Except Marijuana Used Past Month.12-17", "Rates.Illicit Drugs.All Except Marijuana Used Past Month.12-17"] ,
     ["Rates.Illicit Drugs.All Except Marijuana Used Past Month.18-25", "Rates.Illicit Drugs.All Except Marijuana Used Past Month.18-25"] ,
     ["Rates.Illicit Drugs.All Except Marijuana Used Past Month.26+", "Rates.Illicit Drugs.All Except Marijuana Used Past Month.26+"] ,
@@ -170,9 +170,9 @@ var drugs_PROPERTIES = [
     ["Totals.Alcohol.Use Past Month.12-17", "Totals.Alcohol.Use Past Month.12-17"] ,
     ["Totals.Alcohol.Use Past Month.18-25", "Totals.Alcohol.Use Past Month.18-25"] ,
     ["Totals.Alcohol.Use Past Month.26+", "Totals.Alcohol.Use Past Month.26+"] ,
-    ["Totals.Illicit Drugs.Abuse Past Month.12-17", "Totals.Illicit Drugs.Abuse Past Month.12-17"] ,
-    ["Totals.Illicit Drugs.Abuse Past Month.18-25", "Totals.Illicit Drugs.Abuse Past Month.18-25"] ,
-    ["Totals.Illicit Drugs.Abuse Past Month.26+", "Totals.Illicit Drugs.Abuse Past Month.26+"] ,
+    ["Totals.Illicit Drugs.Abuse Past Year.12-17", "Totals.Illicit Drugs.Abuse Past Year.12-17"] ,
+    ["Totals.Illicit Drugs.Abuse Past Year.18-25", "Totals.Illicit Drugs.Abuse Past Year.18-25"] ,
+    ["Totals.Illicit Drugs.Abuse Past Year.26+", "Totals.Illicit Drugs.Abuse Past Year.26+"] ,
     ["Totals.Illicit Drugs.All Except Marijuana Used Past Month.12-17", "Totals.Illicit Drugs.All Except Marijuana Used Past Month.12-17"] ,
     ["Totals.Illicit Drugs.All Except Marijuana Used Past Month.18-25", "Totals.Illicit Drugs.All Except Marijuana Used Past Month.18-25"] ,
     ["Totals.Illicit Drugs.All Except Marijuana Used Past Month.26+", "Totals.Illicit Drugs.All Except Marijuana Used Past Month.26+"] ,
@@ -283,7 +283,8 @@ PythonToBlocks.KNOWN_MODULES['drugs'] = {
 };
 
 AbstractInterpreter.MODULES['drugs'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
+    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Drugs'] = '<category name="Data - Drugs" colour="50">'+

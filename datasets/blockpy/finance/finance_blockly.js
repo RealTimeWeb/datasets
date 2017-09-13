@@ -309,7 +309,8 @@ PythonToBlocks.KNOWN_MODULES['finance'] = {
 };
 
 AbstractInterpreter.MODULES['finance'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
+    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Finance'] = '<category name="Data - Finance" colour="50">'+

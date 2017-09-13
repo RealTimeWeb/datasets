@@ -188,7 +188,8 @@ PythonToBlocks.KNOWN_MODULES['state_demographics'] = {
 };
 
 AbstractInterpreter.MODULES['state_demographics'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
+    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - State Demographics'] = '<category name="Data - State Demographics" colour="50">'+

@@ -220,7 +220,8 @@ PythonToBlocks.KNOWN_MODULES['earthquakes'] = {
 };
 
 AbstractInterpreter.MODULES['earthquakes'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
+    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Earthquakes'] = '<category name="Data - Earthquakes" colour="50">'+

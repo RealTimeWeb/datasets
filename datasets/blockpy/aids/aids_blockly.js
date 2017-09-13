@@ -236,7 +236,8 @@ PythonToBlocks.KNOWN_MODULES['aids'] = {
 };
 
 AbstractInterpreter.MODULES['aids'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
+    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Aids'] = '<category name="Data - Aids" colour="50">'+

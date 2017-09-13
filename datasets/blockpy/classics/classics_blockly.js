@@ -674,7 +674,8 @@ PythonToBlocks.KNOWN_MODULES['classics'] = {
 };
 
 AbstractInterpreter.MODULES['classics'] = {
-    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}}
+    'get': {"type": "List", "empty": false, "subtype": {"type": 'Num'}},
+    'get_weather': {"type": "List", "empty": false, "subtype": {"type": 'Dict'}},
 };
 
 BlockPyEditor.CATEGORY_MAP['Data - Classics'] = '<category name="Data - Classics" colour="50">'+

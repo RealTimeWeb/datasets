@@ -25,6 +25,11 @@ var $builtinmodule = function(name)
         }
         return Sk.ffi.remapToPy(data);
     });
+    
+    mod.get_weather = new Sk.builtin.func(function() {
+        Sk.builtin.pyCheckArgs("get_classics", arguments, 0, 0);
+        return _IMPORTED_COMPLETE_DATASETS["classics"];
+    });
 
     return mod;
 }
