@@ -26,10 +26,17 @@ var $builtinmodule = function(name)
         return Sk.ffi.remapToPy(data);
     });
     
-    mod.get_weather = new Sk.builtin.func(function() {
-        Sk.builtin.pyCheckArgs("get_global_development", arguments, 0, 0);
-        return _IMPORTED_COMPLETE_DATASETS["global_development"];
+    
+    mod.get_reports = new Sk.builtin.func(function() {
+        Sk.builtin.pyCheckArgs("get_reports", arguments, 0, 0);
+        if (!("global_development" in _IMPORTED_COMPLETE_DATASETS)) {
+            alert("This library has not finished loading yet. Please wait about 10 seconds and try again.")
+        } else {
+            return _IMPORTED_COMPLETE_DATASETS["global_development"];
+        }
     });
+    
+    
 
     return mod;
 }

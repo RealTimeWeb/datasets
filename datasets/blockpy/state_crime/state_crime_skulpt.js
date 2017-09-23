@@ -26,10 +26,17 @@ var $builtinmodule = function(name)
         return Sk.ffi.remapToPy(data);
     });
     
-    mod.get_weather = new Sk.builtin.func(function() {
-        Sk.builtin.pyCheckArgs("get_state_crime", arguments, 0, 0);
-        return _IMPORTED_COMPLETE_DATASETS["state_crime"];
+    
+    mod.get_all_crimes = new Sk.builtin.func(function() {
+        Sk.builtin.pyCheckArgs("get_all_crimes", arguments, 0, 0);
+        if (!("state_crime" in _IMPORTED_COMPLETE_DATASETS)) {
+            alert("This library has not finished loading yet. Please wait about 10 seconds and try again.")
+        } else {
+            return _IMPORTED_COMPLETE_DATASETS["state_crime"];
+        }
     });
+    
+    
 
     return mod;
 }

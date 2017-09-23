@@ -26,10 +26,17 @@ var $builtinmodule = function(name)
         return Sk.ffi.remapToPy(data);
     });
     
-    mod.get_weather = new Sk.builtin.func(function() {
-        Sk.builtin.pyCheckArgs("get_publishers", arguments, 0, 0);
-        return _IMPORTED_COMPLETE_DATASETS["publishers"];
+    
+    mod.get_books = new Sk.builtin.func(function() {
+        Sk.builtin.pyCheckArgs("get_books", arguments, 0, 0);
+        if (!("publishers" in _IMPORTED_COMPLETE_DATASETS)) {
+            alert("This library has not finished loading yet. Please wait about 10 seconds and try again.")
+        } else {
+            return _IMPORTED_COMPLETE_DATASETS["publishers"];
+        }
     });
+    
+    
 
     return mod;
 }

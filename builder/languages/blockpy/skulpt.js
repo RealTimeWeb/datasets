@@ -26,10 +26,17 @@ var $builtinmodule = function(name)
         return Sk.ffi.remapToPy(data);
     });
     
-    mod.get_weather = new Sk.builtin.func(function() {
-        Sk.builtin.pyCheckArgs("get_{{ library_name }}", arguments, 0, 0);
-        return _IMPORTED_COMPLETE_DATASETS[{{ library_name | tojson }}];
+    {% for interface in interfaces %}
+    mod.{{ interface.name | snake_case }} = new Sk.builtin.func(function() {
+        Sk.builtin.pyCheckArgs("{{ interface.name | snake_case }}", arguments, 0, 0);
+        if (!({{ library_name | tojson }} in _IMPORTED_COMPLETE_DATASETS)) {
+            alert("This library has not finished loading yet. Please wait about 10 seconds and try again.")
+        } else {
+            return _IMPORTED_COMPLETE_DATASETS[{{ library_name | tojson }}];
+        }
     });
+    
+    {% endfor %}
 
     return mod;
 }
