@@ -263,6 +263,7 @@ public class Song {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Song(JSONObject json_data) {
+        System.out.println(json_data);
         try {// key
             this.key = ((Number)json_data.get("key")).doubleValue();// mode_confidence
             this.mode_Confidence = ((Number)json_data.get("mode_confidence")).doubleValue();// artist_mbtags_count

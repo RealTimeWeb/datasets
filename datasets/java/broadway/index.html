@@ -38,10 +38,15 @@ Broadway Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -194,9 +199,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Broadway');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="broadway.png" alt="Broadway" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="broadway_splash.png" alt="broadway_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Broadway Java Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -213,7 +223,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_shows'>get_shows</a></li>
-        <li><a href='#get_show_by_theatre'>get_show_by_theatre</a></li>
         
         </ol></li>
         
@@ -256,7 +265,7 @@ This library holds data about over Broadway shows, grouped over weeklong periods
     
     <h3 id="usage">Usage</h3>
     
-    Begin by adding the above JAR file to your classpath. This library has 2 functions you can use.
+    Begin by adding the above JAR file to your classpath. This library has 1 function you can use.
     
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">corgis.broadway.BroadwayLibrary</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">corgis.broadway.domain.*</span><span class="o">;</span>
@@ -267,7 +276,7 @@ This library holds data about over Broadway shows, grouped over weeklong periods
         <span class="c1">// Get access to the library</span>
         <span class="n">BroadwayLibrary</span> <span class="n">broadwayLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BroadwayLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Production</span><span class="o">&gt;</span> <span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadwayLibrary</span><span class="o">.</span><span class="na">getShows</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Production</span><span class="o">&gt;</span> <span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadwayLibrary</span><span class="o">.</span><span class="na">getShowByTheatre</span><span class="o">(</span><span class="s">&quot;friedman&quot;</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Production</span><span class="o">&gt;</span> <span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadwayLibrary</span><span class="o">.</span><span class="na">getShows</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -286,7 +295,7 @@ This library holds data about over Broadway shows, grouped over weeklong periods
         <span class="c1">// Get access to the library</span>
         <span class="n">BroadwayLibrary</span> <span class="n">broadwayLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BroadwayLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Production</span><span class="o">&gt;</span> <span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadwayLibrary</span><span class="o">.</span><span class="na">getShows</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Production</span><span class="o">&gt;</span> <span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadwayLibrary</span><span class="o">.</span><span class="na">getShowByTheatre</span><span class="o">(</span><span class="s">&quot;friedman&quot;</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Production</span><span class="o">&gt;</span> <span class="n">list_of_production</span> <span class="o">=</span> <span class="n">broadwayLibrary</span><span class="o">.</span><span class="na">getShows</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -307,34 +316,6 @@ Returns information about all the shows
 <br>
 
 <ul class="list-group col-md-6 col-md-offset-1">
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='getShowByTheatre' style='font-family:monospace'    >&nbsp;broadwayLibrary.getShowByTheatre(theatre, test)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns information about all the shows at a given theatre
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>theatre</b>: <i>String</i></h5>
-    <p class="list-group-item-text">The name of the theatre (e.g., "friedman").
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
 
 
 <li class="list-group-item list-group-item-warning">

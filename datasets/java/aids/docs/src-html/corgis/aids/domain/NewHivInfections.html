@@ -26,16 +26,16 @@
 <span class="sourceLineNo">018</span>        <a name="line.18"></a>
 <span class="sourceLineNo">019</span>    // The number of reported cases of AIDS in adults (15-49 years old).<a name="line.19"></a>
 <span class="sourceLineNo">020</span>    private Double incidenceRateAmongAdults;<a name="line.20"></a>
-<span class="sourceLineNo">021</span>    // The number of reported cases of AIDS in male adults (15+ years old).<a name="line.21"></a>
-<span class="sourceLineNo">022</span>    private Integer maleAdults;<a name="line.22"></a>
+<span class="sourceLineNo">021</span>    // The number of reported cases of AIDS in all adults (15+ years old).<a name="line.21"></a>
+<span class="sourceLineNo">022</span>    private Integer adults;<a name="line.22"></a>
 <span class="sourceLineNo">023</span>    // The total number of reported cases of AIDS in this year.<a name="line.23"></a>
 <span class="sourceLineNo">024</span>    private Integer allAges;<a name="line.24"></a>
 <span class="sourceLineNo">025</span>    // The number of reported cases of AIDS in children (0-14 years old).<a name="line.25"></a>
 <span class="sourceLineNo">026</span>    private Integer children;<a name="line.26"></a>
 <span class="sourceLineNo">027</span>    // The number of reported cases of AIDS in female adults (15+ years old).<a name="line.27"></a>
 <span class="sourceLineNo">028</span>    private Double femaleAdults;<a name="line.28"></a>
-<span class="sourceLineNo">029</span>    // The number of reported cases of AIDS in all adults (15+ years old).<a name="line.29"></a>
-<span class="sourceLineNo">030</span>    private Integer adults;<a name="line.30"></a>
+<span class="sourceLineNo">029</span>    // The number of reported cases of AIDS in male adults (15+ years old).<a name="line.29"></a>
+<span class="sourceLineNo">030</span>    private Integer maleAdults;<a name="line.30"></a>
 <span class="sourceLineNo">031</span>    <a name="line.31"></a>
 <span class="sourceLineNo">032</span>    <a name="line.32"></a>
 <span class="sourceLineNo">033</span>    /*<a name="line.33"></a>
@@ -50,8 +50,8 @@
 <span class="sourceLineNo">042</span>    /*<a name="line.42"></a>
 <span class="sourceLineNo">043</span>     * @return <a name="line.43"></a>
 <span class="sourceLineNo">044</span>     */<a name="line.44"></a>
-<span class="sourceLineNo">045</span>    public Integer getMaleAdults() {<a name="line.45"></a>
-<span class="sourceLineNo">046</span>        return this.maleAdults;<a name="line.46"></a>
+<span class="sourceLineNo">045</span>    public Integer getAdults() {<a name="line.45"></a>
+<span class="sourceLineNo">046</span>        return this.adults;<a name="line.46"></a>
 <span class="sourceLineNo">047</span>    }<a name="line.47"></a>
 <span class="sourceLineNo">048</span>    <a name="line.48"></a>
 <span class="sourceLineNo">049</span>    <a name="line.49"></a>
@@ -86,8 +86,8 @@
 <span class="sourceLineNo">078</span>    /*<a name="line.78"></a>
 <span class="sourceLineNo">079</span>     * @return <a name="line.79"></a>
 <span class="sourceLineNo">080</span>     */<a name="line.80"></a>
-<span class="sourceLineNo">081</span>    public Integer getAdults() {<a name="line.81"></a>
-<span class="sourceLineNo">082</span>        return this.adults;<a name="line.82"></a>
+<span class="sourceLineNo">081</span>    public Integer getMaleAdults() {<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        return this.maleAdults;<a name="line.82"></a>
 <span class="sourceLineNo">083</span>    }<a name="line.83"></a>
 <span class="sourceLineNo">084</span>    <a name="line.84"></a>
 <span class="sourceLineNo">085</span>    <a name="line.85"></a>
@@ -99,7 +99,7 @@
 <span class="sourceLineNo">091</span>         * @return String<a name="line.91"></a>
 <span class="sourceLineNo">092</span>         */<a name="line.92"></a>
 <span class="sourceLineNo">093</span>        public String toString() {<a name="line.93"></a>
-<span class="sourceLineNo">094</span>                return "NewHivInfections[" +incidenceRateAmongAdults+", "+maleAdults+", "+allAges+", "+children+", "+femaleAdults+", "+adults+"]";<a name="line.94"></a>
+<span class="sourceLineNo">094</span>                return "NewHivInfections[" +incidenceRateAmongAdults+", "+adults+", "+allAges+", "+children+", "+femaleAdults+", "+maleAdults+"]";<a name="line.94"></a>
 <span class="sourceLineNo">095</span>        }<a name="line.95"></a>
 <span class="sourceLineNo">096</span>        <a name="line.96"></a>
 <span class="sourceLineNo">097</span>        /**<a name="line.97"></a>
@@ -108,12 +108,12 @@
 <span class="sourceLineNo">100</span>         */<a name="line.100"></a>
 <span class="sourceLineNo">101</span>    public NewHivInfections(JSONObject json_data) {<a name="line.101"></a>
 <span class="sourceLineNo">102</span>        try {// Incidence Rate Among Adults<a name="line.102"></a>
-<span class="sourceLineNo">103</span>            this.incidenceRateAmongAdults = ((Number)json_data.get("Incidence Rate Among Adults")).doubleValue();// Male Adults<a name="line.103"></a>
-<span class="sourceLineNo">104</span>            this.maleAdults = ((Number)json_data.get("Male Adults")).intValue();// All Ages<a name="line.104"></a>
+<span class="sourceLineNo">103</span>            this.incidenceRateAmongAdults = ((Number)json_data.get("Incidence Rate Among Adults")).doubleValue();// Adults<a name="line.103"></a>
+<span class="sourceLineNo">104</span>            this.adults = ((Number)json_data.get("Adults")).intValue();// All Ages<a name="line.104"></a>
 <span class="sourceLineNo">105</span>            this.allAges = ((Number)json_data.get("All Ages")).intValue();// Children<a name="line.105"></a>
 <span class="sourceLineNo">106</span>            this.children = ((Number)json_data.get("Children")).intValue();// Female Adults<a name="line.106"></a>
-<span class="sourceLineNo">107</span>            this.femaleAdults = ((Number)json_data.get("Female Adults")).doubleValue();// Adults<a name="line.107"></a>
-<span class="sourceLineNo">108</span>            this.adults = ((Number)json_data.get("Adults")).intValue();<a name="line.108"></a>
+<span class="sourceLineNo">107</span>            this.femaleAdults = ((Number)json_data.get("Female Adults")).doubleValue();// Male Adults<a name="line.107"></a>
+<span class="sourceLineNo">108</span>            this.maleAdults = ((Number)json_data.get("Male Adults")).intValue();<a name="line.108"></a>
 <span class="sourceLineNo">109</span>        } catch (NullPointerException e) {<a name="line.109"></a>
 <span class="sourceLineNo">110</span>                System.err.println("Could not convert the response to a NewHivInfections; a field was missing.");<a name="line.110"></a>
 <span class="sourceLineNo">111</span>                e.printStackTrace();<a name="line.111"></a>

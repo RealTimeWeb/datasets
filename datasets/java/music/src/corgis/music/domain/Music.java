@@ -66,6 +66,7 @@ public class Music {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Music(JSONObject json_data) {
+        System.out.println(json_data);
         try {// release
             this.release = new Release((JSONObject)json_data.get("release"));// artist
             this.artist = new Artist((JSONObject)json_data.get("artist"));// song

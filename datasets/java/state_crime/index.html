@@ -38,10 +38,15 @@ State Crime Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -194,9 +199,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'State Crime');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="state_crime.png" alt="State Crime" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="state_crime_splash.png" alt="state_crime_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>State Crime Java Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -213,8 +223,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_all_crimes'>get_all_crimes</a></li>
-        <li><a href='#get_crime_by_state'>get_crime_by_state</a></li>
-        <li><a href='#get_crime_by_year'>get_crime_by_year</a></li>
         
         </ol></li>
         
@@ -261,7 +269,7 @@ From the Unified Crime Reporting Statistics and under the collaboration of the U
     
     <h3 id="usage">Usage</h3>
     
-    Begin by adding the above JAR file to your classpath. This library has 3 functions you can use.
+    Begin by adding the above JAR file to your classpath. This library has 1 function you can use.
     
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">corgis.state_crime.StateCrimeLibrary</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">corgis.state_crime.domain.*</span><span class="o">;</span>
@@ -272,7 +280,7 @@ From the Unified Crime Reporting Statistics and under the collaboration of the U
         <span class="c1">// Get access to the library</span>
         <span class="n">StateCrimeLibrary</span> <span class="n">stateCrimeLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StateCrimeLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">stateCrimeLibrary</span><span class="o">.</span><span class="na">getAllCrimes</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">stateCrimeLibrary</span><span class="o">.</span><span class="na">getCrimeByState</span><span class="o">(</span><span class="s">&quot;Alabama&quot;</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">stateCrimeLibrary</span><span class="o">.</span><span class="na">getCrimeByYear</span><span class="o">(</span><span class="mi">1984</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">stateCrimeLibrary</span><span class="o">.</span><span class="na">getAllCrimes</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -291,7 +299,7 @@ From the Unified Crime Reporting Statistics and under the collaboration of the U
         <span class="c1">// Get access to the library</span>
         <span class="n">StateCrimeLibrary</span> <span class="n">stateCrimeLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StateCrimeLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">stateCrimeLibrary</span><span class="o">.</span><span class="na">getAllCrimes</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">stateCrimeLibrary</span><span class="o">.</span><span class="na">getCrimeByState</span><span class="o">(</span><span class="s">&quot;Alabama&quot;</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">stateCrimeLibrary</span><span class="o">.</span><span class="na">getCrimeByYear</span><span class="o">(</span><span class="mi">1984</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">stateCrimeLibrary</span><span class="o">.</span><span class="na">getAllCrimes</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -312,62 +320,6 @@ Gets a list of all the crime reports in the database.
 <br>
 
 <ul class="list-group col-md-6 col-md-offset-1">
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='getCrimeByState' style='font-family:monospace'    >&nbsp;stateCrimeLibrary.getCrimeByState(department, test)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Given the name of a state, returns all the crime reports for that state in the database.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>department</b>: <i>String</i></h5>
-    <p class="list-group-item-text">The name of the county.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='getCrimeByYear' style='font-family:monospace'    >&nbsp;stateCrimeLibrary.getCrimeByYear(year, test)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Given a year, returns all the crime reports for that year in the database.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>year</b>: <i>Integer</i></h5>
-    <p class="list-group-item-text">The year to get reports.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
 
 
 <li class="list-group-item list-group-item-warning">

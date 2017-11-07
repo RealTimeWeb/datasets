@@ -135,9 +135,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Real Estate');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="real_estate.png" alt="Real Estate" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="real_estate_splash.png" alt="real_estate_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Real Estate Java Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -154,7 +159,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_buildings'>get_buildings</a></li>
-        <li><a href='#get_buildings_by_state'>get_buildings_by_state</a></li>
         
         </ol></li>
         
@@ -201,7 +205,7 @@ Real Estate Across the United States (REXUS) is the primary tool used by PBS to 
     
     <h3 id="usage">Usage</h3>
     
-    Begin by adding the above JAR file to your classpath. This library has 2 functions you can use.
+    Begin by adding the above JAR file to your classpath. This library has 1 function you can use.
     
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">corgis.real_estate.RealEstateLibrary</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">corgis.real_estate.domain.*</span><span class="o">;</span>
@@ -212,7 +216,7 @@ Real Estate Across the United States (REXUS) is the primary tool used by PBS to 
         <span class="c1">// Get access to the library</span>
         <span class="n">RealEstateLibrary</span> <span class="n">realEstateLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RealEstateLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Building</span><span class="o">&gt;</span> <span class="n">list_of_building</span> <span class="o">=</span> <span class="n">realEstateLibrary</span><span class="o">.</span><span class="na">getBuildings</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Building</span><span class="o">&gt;</span> <span class="n">list_of_building</span> <span class="o">=</span> <span class="n">realEstateLibrary</span><span class="o">.</span><span class="na">getBuildingsByState</span><span class="o">(</span><span class="s">&quot;&#39;VA&#39;&quot;</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Building</span><span class="o">&gt;</span> <span class="n">list_of_building</span> <span class="o">=</span> <span class="n">realEstateLibrary</span><span class="o">.</span><span class="na">getBuildings</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -259,28 +263,6 @@ Returns a list of the buildings in the database.
     <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
     <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
 </li>
-
-</ul>
-
-</div>
-
-<h4 id='getBuildingsByState' style='font-family:monospace'    >&nbsp;realEstateLibrary.getBuildingsByState(state)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns a list of the buildings in the database for a state.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>state</b>: <i>String</i></h5>
-    <p class="list-group-item-text">The two-letter abbreviation for a state
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
 
 </ul>
 

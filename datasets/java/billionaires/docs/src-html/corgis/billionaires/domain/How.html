@@ -32,8 +32,8 @@
 <span class="sourceLineNo">024</span>    private String industry;<a name="line.24"></a>
 <span class="sourceLineNo">025</span>    // Whether the money came from politics.<a name="line.25"></a>
 <span class="sourceLineNo">026</span>    private Boolean wasPolitical;<a name="line.26"></a>
-<span class="sourceLineNo">027</span>    // Whether the money was partially inherited.<a name="line.27"></a>
-<span class="sourceLineNo">028</span>    private Boolean inherited;<a name="line.28"></a>
+<span class="sourceLineNo">027</span>    // The way that this money was inherited (or not inherited). Inheritance can come from a spouse, the father, or from multiple generations within a family (either 3, 4, or 5+).<a name="line.27"></a>
+<span class="sourceLineNo">028</span>    private String inherited;<a name="line.28"></a>
 <span class="sourceLineNo">029</span>    // Whether the billionaire was the founder of their company.<a name="line.29"></a>
 <span class="sourceLineNo">030</span>    private Boolean wasFounder;<a name="line.30"></a>
 <span class="sourceLineNo">031</span>    <a name="line.31"></a>
@@ -77,7 +77,7 @@
 <span class="sourceLineNo">069</span>    /*<a name="line.69"></a>
 <span class="sourceLineNo">070</span>     * @return <a name="line.70"></a>
 <span class="sourceLineNo">071</span>     */<a name="line.71"></a>
-<span class="sourceLineNo">072</span>    public Boolean getInherited() {<a name="line.72"></a>
+<span class="sourceLineNo">072</span>    public String getInherited() {<a name="line.72"></a>
 <span class="sourceLineNo">073</span>        return this.inherited;<a name="line.73"></a>
 <span class="sourceLineNo">074</span>    }<a name="line.74"></a>
 <span class="sourceLineNo">075</span>    <a name="line.75"></a>
@@ -112,7 +112,7 @@
 <span class="sourceLineNo">104</span>            this.fromEmerging = (Boolean)json_data.get("from emerging");// industry<a name="line.104"></a>
 <span class="sourceLineNo">105</span>            this.industry = (String)json_data.get("industry");// was political<a name="line.105"></a>
 <span class="sourceLineNo">106</span>            this.wasPolitical = (Boolean)json_data.get("was political");// inherited<a name="line.106"></a>
-<span class="sourceLineNo">107</span>            this.inherited = (Boolean)json_data.get("inherited");// was founder<a name="line.107"></a>
+<span class="sourceLineNo">107</span>            this.inherited = (String)json_data.get("inherited");// was founder<a name="line.107"></a>
 <span class="sourceLineNo">108</span>            this.wasFounder = (Boolean)json_data.get("was founder");<a name="line.108"></a>
 <span class="sourceLineNo">109</span>        } catch (NullPointerException e) {<a name="line.109"></a>
 <span class="sourceLineNo">110</span>                System.err.println("Could not convert the response to a How; a field was missing.");<a name="line.110"></a>

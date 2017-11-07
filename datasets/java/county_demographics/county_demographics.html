@@ -135,9 +135,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'County Demographics');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="county_demographics.png" alt="County Demographics" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="county_demographics_splash.png" alt="county_demographics_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>County Demographics Java Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -154,7 +159,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_all_counties'>get_all_counties</a></li>
-        <li><a href='#get_counties_by_state'>get_counties_by_state</a></li>
         
         </ol></li>
         
@@ -201,7 +205,7 @@ The following data set is information obtained about counties in the United Stat
     
     <h3 id="usage">Usage</h3>
     
-    Begin by adding the above JAR file to your classpath. This library has 2 functions you can use.
+    Begin by adding the above JAR file to your classpath. This library has 1 function you can use.
     
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">corgis.county_demographics.CountyDemographicsLibrary</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">corgis.county_demographics.domain.*</span><span class="o">;</span>
@@ -212,7 +216,7 @@ The following data set is information obtained about counties in the United Stat
         <span class="c1">// Get access to the library</span>
         <span class="n">CountyDemographicsLibrary</span> <span class="n">countyDemographicsLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CountyDemographicsLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">countyDemographicsLibrary</span><span class="o">.</span><span class="na">getAllCounties</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">countyDemographicsLibrary</span><span class="o">.</span><span class="na">getCountiesByState</span><span class="o">(</span><span class="s">&quot;&#39;VA&#39;&quot;</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">countyDemographicsLibrary</span><span class="o">.</span><span class="na">getAllCounties</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -231,7 +235,7 @@ The following data set is information obtained about counties in the United Stat
         <span class="c1">// Get access to the library</span>
         <span class="n">CountyDemographicsLibrary</span> <span class="n">countyDemographicsLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CountyDemographicsLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">countyDemographicsLibrary</span><span class="o">.</span><span class="na">getAllCounties</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">countyDemographicsLibrary</span><span class="o">.</span><span class="na">getCountiesByState</span><span class="o">(</span><span class="s">&quot;&#39;VA&#39;&quot;</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">countyDemographicsLibrary</span><span class="o">.</span><span class="na">getAllCounties</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -252,34 +256,6 @@ Returns the report for each county from the dataset.
 <br>
 
 <ul class="list-group col-md-6 col-md-offset-1">
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='getCountiesByState' style='font-family:monospace'    >&nbsp;countyDemographicsLibrary.getCountiesByState(state, test)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns the report for each county in a given state.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>state</b>: <i>String</i></h5>
-    <p class="list-group-item-text">The name of the desired state
-    
-    </p>
-</li>
 
 
 <li class="list-group-item list-group-item-warning">

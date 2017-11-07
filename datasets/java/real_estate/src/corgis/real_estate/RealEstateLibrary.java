@@ -37,12 +37,6 @@ public class RealEstateLibrary {
         ArrayList<Building> list_of_building_1_test = realEstateLibrary.getBuildings(true);
         
         
-        
-        System.out.println("Testing production GetBuildingsByState");
-        ArrayList<Building> list_of_building_2_production = realEstateLibrary.getBuildingsByState("'VA'");
-        
-        
-        
     }
     
     private void connectToDatabase(String databasePath) {
@@ -133,68 +127,6 @@ public class RealEstateLibrary {
     		e.printStackTrace();
         } catch (ParseException e) {
             System.err.println("Could not convert the response from getBuildings; a parser error occurred.");
-    		e.printStackTrace();
-        }
-        return result;
-	}
-    
-    
-    
-    /**
-     * Returns a list of the buildings in the database for a state.
-    
-     * @param state The two-letter abbreviation for a state
-     * @return a list[building]
-     */
-	public ArrayList<Building> getBuildingsByState(String state) {
-        String query;
-        boolean test = false;
-        if (test) {
-            query = String.format("", this.HARDWARE);
-        } else {
-            query = "SELECT data FROM real_estate WHERE state=?";
-        }
-        PreparedStatement preparedQuery = null;
-        ResultSet rs = null;
-        try {
-            preparedQuery = this.connection.prepareStatement(query);
-        } catch (SQLException e) {
-            System.err.println("Could not build SQL query for local database.");
-    		e.printStackTrace();
-        }
-        try {
-            preparedQuery.setString(1, state);
-        } catch (SQLException e) {
-            System.err.println("Could not build prepare argument: state");
-    		e.printStackTrace();
-        }
-        try {
-            rs = preparedQuery.executeQuery();
-        } catch (SQLException e) {
-            System.err.println("Could not execute query.");
-    		e.printStackTrace();
-        }
-        
-        ArrayList<Building> result = new ArrayList<Building>();
-        try {
-            while (rs.next()) {
-                String raw_result = rs.getString(1);
-                Building parsed = null;
-                if (test) {
-                    
-                } else {
-                    parsed = new Building(((JSONObject)this.parser.parse(raw_result)));
-                    
-                }
-                
-                result.add(parsed);
-                
-            }
-        } catch (SQLException e) {
-            System.err.println("Could not iterate through query.");
-    		e.printStackTrace();
-        } catch (ParseException e) {
-            System.err.println("Could not convert the response from getBuildingsByState; a parser error occurred.");
     		e.printStackTrace();
         }
         return result;

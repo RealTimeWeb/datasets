@@ -38,10 +38,15 @@ Aids Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -194,9 +199,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Aids');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="aids.png" alt="Aids" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="aids_splash.png" alt="aids_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Aids Java Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -213,8 +223,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_reports'>get_reports</a></li>
-        <li><a href='#get_reports_by_year'>get_reports_by_year</a></li>
-        <li><a href='#get_reports_by_country'>get_reports_by_country</a></li>
         
         </ol></li>
         
@@ -261,7 +269,7 @@ The UNAIDS Organization is an entity of the United Nations that looks to reduce 
     
     <h3 id="usage">Usage</h3>
     
-    Begin by adding the above JAR file to your classpath. This library has 3 functions you can use.
+    Begin by adding the above JAR file to your classpath. This library has 1 function you can use.
     
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">corgis.aids.AidsLibrary</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">corgis.aids.domain.*</span><span class="o">;</span>
@@ -272,7 +280,7 @@ The UNAIDS Organization is an entity of the United Nations that looks to reduce 
         <span class="c1">// Get access to the library</span>
         <span class="n">AidsLibrary</span> <span class="n">aidsLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AidsLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aidsLibrary</span><span class="o">.</span><span class="na">getReports</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aidsLibrary</span><span class="o">.</span><span class="na">getReportsByYear</span><span class="o">(</span><span class="mi">1990</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aidsLibrary</span><span class="o">.</span><span class="na">getReportsByCountry</span><span class="o">(</span><span class="s">&quot;Afghanistan&quot;</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aidsLibrary</span><span class="o">.</span><span class="na">getReports</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -291,7 +299,7 @@ The UNAIDS Organization is an entity of the United Nations that looks to reduce 
         <span class="c1">// Get access to the library</span>
         <span class="n">AidsLibrary</span> <span class="n">aidsLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AidsLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aidsLibrary</span><span class="o">.</span><span class="na">getReports</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aidsLibrary</span><span class="o">.</span><span class="na">getReportsByYear</span><span class="o">(</span><span class="mi">1990</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aidsLibrary</span><span class="o">.</span><span class="na">getReportsByCountry</span><span class="o">(</span><span class="s">&quot;Afghanistan&quot;</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">aidsLibrary</span><span class="o">.</span><span class="na">getReports</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -312,62 +320,6 @@ Returns aids reports from the dataset.
 <br>
 
 <ul class="list-group col-md-6 col-md-offset-1">
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='getReportsByYear' style='font-family:monospace'    >&nbsp;aidsLibrary.getReportsByYear(year, test)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Given a year, returns all the aids reports for that year in the database.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>year</b>: <i>Integer</i></h5>
-    <p class="list-group-item-text">The year to get reports.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='getReportsByCountry' style='font-family:monospace'    >&nbsp;aidsLibrary.getReportsByCountry(country, test)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Given a country, returns all the aids reports for that country in the database.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>country</b>: <i>String</i></h5>
-    <p class="list-group-item-text">The year to get reports.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
 
 
 <li class="list-group-item list-group-item-warning">

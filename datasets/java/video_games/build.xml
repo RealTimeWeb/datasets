@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<project name="Build Video Games" basedir="." default="dist">
+	<description>
+		A build file to generate a distributable .jar for the RealTimeWeb Video Games.
+	</description>
+	
+	<property name="src" location="src"/>
+	<property name="bin" location="bin"/>
+	<property name="dist" location="dist"/>
+	<property name="docs" location="docs"/>
+	<property name="ver" value="1"/>
+	<!-- <propertyfile file=".properties">
+		<entry key="docs" value="docs/" />
+	</propertyfile>-->
+	
+	<path id="classpath">
+		<fileset dir="libs" includes="**/*.jar" />
+	</path>
+	
+	<target name="init">
+	    <!-- Create the build directory structure used by compile -->
+	    <mkdir dir="${bin}"/>
+		<!-- Create the doc directory structure used by compile -->
+		<mkdir dir="${docs}"/>
+	</target>
+	
+	<target name="compile" depends="init" description="Compile the source" >
+	    <!-- Compile the java code from ${src} into ${build} -->
+	    <javac srcdir="${src}" destdir="${bin}" classpathref="classpath" includeantruntime="false"/>
+		<!-- Copy all the non-.java files to ${build} -->
+		<copy todir="bin">
+			<fileset dir="src" excludes="**/*.java" />
+		</copy>
+		<!-- Compile Javadoc -->
+		<javadoc  
+		      use='true' author='true'  version='true'
+		      overview='docs/index.html'  
+		      access='package' 
+		      sourcepath='src'
+		      packagenames='*.*'
+              classpathref="classpath"              
+		      destdir='${docs}'
+		      windowtitle='Video Games: version ${ver}'
+		      noqualifier='java.*:javax.*:com.sun.*'   
+		      linksource='true'
+		    />
+	</target>
+	
+	<target name="dist" depends="compile" description="Generate the Distribution files" >
+	    <!-- Create the distribution directory -->
+	    <mkdir dir="${dist}"/>
+
+	    <!-- Put everything in ${build} into the video_games-${DSTAMP}.jar file -->
+	    <jar jarfile="${dist}/video_games-${ver}.jar" basedir="${bin}">
+	    	<fileset dir="bin" includes="bin/*.class" />
+            <fileset file="video_games.db" />
+			<zipgroupfileset dir="libs/" includes="*.jar" />
+            <manifest><attribute name="Main-Class" value="corgis.video_games.VideoGamesLibrary" /></manifest>
+		</jar>
+		
+		<!-- Put everything in ${build} and ${docs} into the video_games-doc-${DSTAMP}.jar file -->
+		<jar jarfile="${dist}/video_games-doc-${ver}.jar" basedir="${bin}">
+	    	<fileset dir="bin" includes="bin/*.class" />
+			<fileset dir="docs" includes="**" />
+            <fileset file="video_games.db" />
+			<zipgroupfileset dir="libs/" includes="*.jar" />
+            <manifest><attribute name="Main-Class" value="corgis.video_games.VideoGamesLibrary" /></manifest>
+		</jar>
+		
+		<!-- Put everything in ${build} and ${src} into the video_games-src-${DSTAMP}.jar file -->
+		<jar jarfile="${dist}/video_games-src-${ver}.jar" basedir="${bin}">
+	    	<fileset dir="bin" includes="bin/*.class" />
+			<fileset dir="src" includes="**" />
+            <fileset file="video_games.db" />
+			<zipgroupfileset dir="libs/" includes="*.jar" />
+            <manifest><attribute name="Main-Class" value="corgis.video_games.VideoGamesLibrary" /></manifest>
+		</jar>
+	</target>
+	
+		
+	<target name="clean" description="Clean up the files" >
+	    <!-- Delete the ${build} and ${dist} directory trees -->
+	    <delete dir="${bin}"/>
+	    <delete dir="${dist}"/>
+	</target>
+</project>

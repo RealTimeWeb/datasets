@@ -37,24 +37,6 @@ public class CountyCrimeLibrary {
         ArrayList<Report> list_of_report_1_test = countyCrimeLibrary.getAllCrimes(true);
         
         
-        
-        System.out.println("Testing production GetCrimeByCounty");
-        ArrayList<Report> list_of_report_2_production = countyCrimeLibrary.getCrimeByCounty("Alabaster Police Dept", false);
-        
-        
-        System.out.println("Testing test GetCrimeByCounty");
-        ArrayList<Report> list_of_report_2_test = countyCrimeLibrary.getCrimeByCounty("Alabaster Police Dept", true);
-        
-        
-        
-        System.out.println("Testing production GetCrimeByYear");
-        ArrayList<Report> list_of_report_3_production = countyCrimeLibrary.getCrimeByYear(1984, false);
-        
-        
-        System.out.println("Testing test GetCrimeByYear");
-        ArrayList<Report> list_of_report_3_test = countyCrimeLibrary.getCrimeByYear(1984, true);
-        
-        
     }
     
     private void connectToDatabase(String databasePath) {
@@ -105,9 +87,9 @@ public class CountyCrimeLibrary {
 	public ArrayList<Report> getAllCrimes(boolean test) {
         String query;
         if (test) {
-            query = String.format("SELECT data FROM crime LIMIT %d", this.HARDWARE);
+            query = String.format("SELECT data FROM county_crime LIMIT %d", this.HARDWARE);
         } else {
-            query = "SELECT data FROM crime";
+            query = "SELECT data FROM county_crime";
         }
         PreparedStatement preparedQuery = null;
         ResultSet rs = null;
@@ -145,150 +127,6 @@ public class CountyCrimeLibrary {
     		e.printStackTrace();
         } catch (ParseException e) {
             System.err.println("Could not convert the response from getAllCrimes; a parser error occurred.");
-    		e.printStackTrace();
-        }
-        return result;
-	}
-    
-    
-    /**
-     * Given the name of an county, returns all the crime reports for that county in the database.
-    
-     * @param department The name of the county.
-     * @return a list[report]
-     */
-	public ArrayList<Report> getCrimeByCounty(String department) {
-        return this.getCrimeByCounty(department, true);
-    }
-    
-    
-    /**
-     * Given the name of an county, returns all the crime reports for that county in the database.
-    
-     * @param department The name of the county.
-     * @return a list[report]
-     */
-	public ArrayList<Report> getCrimeByCounty(String department, boolean test) {
-        String query;
-        if (test) {
-            query = String.format("SELECT data FROM crime WHERE department=? LIMIT %d", this.HARDWARE);
-        } else {
-            query = "SELECT data FROM crime WHERE department=?";
-        }
-        PreparedStatement preparedQuery = null;
-        ResultSet rs = null;
-        try {
-            preparedQuery = this.connection.prepareStatement(query);
-        } catch (SQLException e) {
-            System.err.println("Could not build SQL query for local database.");
-    		e.printStackTrace();
-        }
-        try {
-            preparedQuery.setString(1, department);
-        } catch (SQLException e) {
-            System.err.println("Could not build prepare argument: department");
-    		e.printStackTrace();
-        }
-        try {
-            rs = preparedQuery.executeQuery();
-        } catch (SQLException e) {
-            System.err.println("Could not execute query.");
-    		e.printStackTrace();
-        }
-        
-        ArrayList<Report> result = new ArrayList<Report>();
-        try {
-            while (rs.next()) {
-                String raw_result = rs.getString(1);
-                Report parsed = null;
-                if (test) {
-                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
-                    
-                } else {
-                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
-                    
-                }
-                
-                result.add(parsed);
-                
-            }
-        } catch (SQLException e) {
-            System.err.println("Could not iterate through query.");
-    		e.printStackTrace();
-        } catch (ParseException e) {
-            System.err.println("Could not convert the response from getCrimeByCounty; a parser error occurred.");
-    		e.printStackTrace();
-        }
-        return result;
-	}
-    
-    
-    /**
-     * Given a year, returns all the crime reports for that year in the database.
-    
-     * @param year The year to get reports.
-     * @return a list[report]
-     */
-	public ArrayList<Report> getCrimeByYear(Integer year) {
-        return this.getCrimeByYear(year, true);
-    }
-    
-    
-    /**
-     * Given a year, returns all the crime reports for that year in the database.
-    
-     * @param year The year to get reports.
-     * @return a list[report]
-     */
-	public ArrayList<Report> getCrimeByYear(Integer year, boolean test) {
-        String query;
-        if (test) {
-            query = String.format("SELECT data FROM crime WHERE year=? LIMIT %d", this.HARDWARE);
-        } else {
-            query = "SELECT data FROM crime WHERE year=?";
-        }
-        PreparedStatement preparedQuery = null;
-        ResultSet rs = null;
-        try {
-            preparedQuery = this.connection.prepareStatement(query);
-        } catch (SQLException e) {
-            System.err.println("Could not build SQL query for local database.");
-    		e.printStackTrace();
-        }
-        try {
-            preparedQuery.setInt(1, year);
-        } catch (SQLException e) {
-            System.err.println("Could not build prepare argument: year");
-    		e.printStackTrace();
-        }
-        try {
-            rs = preparedQuery.executeQuery();
-        } catch (SQLException e) {
-            System.err.println("Could not execute query.");
-    		e.printStackTrace();
-        }
-        
-        ArrayList<Report> result = new ArrayList<Report>();
-        try {
-            while (rs.next()) {
-                String raw_result = rs.getString(1);
-                Report parsed = null;
-                if (test) {
-                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
-                    
-                } else {
-                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
-                    
-                }
-                
-                result.add(parsed);
-                
-            }
-        } catch (SQLException e) {
-            System.err.println("Could not iterate through query.");
-    		e.printStackTrace();
-        } catch (ParseException e) {
-            System.err.println("Could not convert the response from getCrimeByYear; a parser error occurred.");
     		e.printStackTrace();
         }
         return result;

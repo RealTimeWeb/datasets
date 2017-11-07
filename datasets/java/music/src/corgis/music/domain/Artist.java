@@ -133,6 +133,7 @@ public class Artist {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Artist(JSONObject json_data) {
+        System.out.println(json_data);
         try {// terms_freq
             this.terms_Freq = ((Number)json_data.get("terms_freq")).doubleValue();// terms
             this.terms = (String)json_data.get("terms");// name

@@ -38,10 +38,15 @@ Health Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -194,9 +199,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Health');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="health.png" alt="Health" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="health_splash.png" alt="health_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Health Java Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -212,9 +222,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#downloads">Downloads</a></li>
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
-        <li><a href='#get_reports_by_year'>get_reports_by_year</a></li>
-        <li><a href='#get_reports_by_disease'>get_reports_by_disease</a></li>
-        <li><a href='#get_reports_by_location'>get_reports_by_location</a></li>
         <li><a href='#get_all_reports'>get_all_reports</a></li>
         
         </ol></li>
@@ -258,7 +265,7 @@ This library holds data about reports of diseases in America.
     
     <h3 id="usage">Usage</h3>
     
-    Begin by adding the above JAR file to your classpath. This library has 4 functions you can use.
+    Begin by adding the above JAR file to your classpath. This library has 1 function you can use.
     
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">corgis.health.HealthLibrary</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">corgis.health.domain.*</span><span class="o">;</span>
@@ -269,7 +276,7 @@ This library holds data about reports of diseases in America.
         <span class="c1">// Get access to the library</span>
         <span class="n">HealthLibrary</span> <span class="n">healthLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HealthLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">healthLibrary</span><span class="o">.</span><span class="na">getReportsByYear</span><span class="o">(</span><span class="mi">1990</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">healthLibrary</span><span class="o">.</span><span class="na">getReportsByDisease</span><span class="o">(</span><span class="s">&quot;&#39;MUMPS&#39;&quot;</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">healthLibrary</span><span class="o">.</span><span class="na">getReportsByLocation</span><span class="o">(</span><span class="s">&quot;&#39;Delaware&#39;&quot;</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">healthLibrary</span><span class="o">.</span><span class="na">getAllReports</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">healthLibrary</span><span class="o">.</span><span class="na">getAllReports</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -288,7 +295,7 @@ This library holds data about reports of diseases in America.
         <span class="c1">// Get access to the library</span>
         <span class="n">HealthLibrary</span> <span class="n">healthLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HealthLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">healthLibrary</span><span class="o">.</span><span class="na">getReportsByYear</span><span class="o">(</span><span class="mi">1990</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">healthLibrary</span><span class="o">.</span><span class="na">getReportsByDisease</span><span class="o">(</span><span class="s">&quot;&#39;MUMPS&#39;&quot;</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">healthLibrary</span><span class="o">.</span><span class="na">getReportsByLocation</span><span class="o">(</span><span class="s">&quot;&#39;Delaware&#39;&quot;</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">healthLibrary</span><span class="o">.</span><span class="na">getAllReports</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Report</span><span class="o">&gt;</span> <span class="n">list_of_report</span> <span class="o">=</span> <span class="n">healthLibrary</span><span class="o">.</span><span class="na">getAllReports</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -300,90 +307,6 @@ This library holds data about reports of diseases in America.
     
     We provide full <a href="docs/index.html" target="blank">JavaDoc<span class="glyphicon glyphicon-new-window" aria-hidden="true"></span></a> for this library. Alternatively, you may refer to the below:
     
-<h4 id='getReportsByYear' style='font-family:monospace'    >&nbsp;healthLibrary.getReportsByYear(year, test)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns information about the status of disease for the given year, from 1928 to 2011.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>year</b>: <i>Integer</i></h5>
-    <p class="list-group-item-text">A year between 1928 and 2011.
-    
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='getReportsByDisease' style='font-family:monospace'    >&nbsp;healthLibrary.getReportsByDisease(disease, test)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns information about the status of disease for the given disease.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>disease</b>: <i>String</i></h5>
-    <p class="list-group-item-text">A disease such as 'HEPATITIS A', 'MEASLES', 'MUMPS', 'PERTUSSIS', 'POLIO', 'RUBELLA', or 'SMALLPOX'.
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='getReportsByLocation' style='font-family:monospace'    >&nbsp;healthLibrary.getReportsByLocation(location, test)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns information about the status of disease for the given location.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>location</b>: <i>String</i></h5>
-    <p class="list-group-item-text">A state such as "Alabama"
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
 <h4 id='getAllReports' style='font-family:monospace'    >&nbsp;healthLibrary.getAllReports(test)</h4>
 
 <div class='row'>

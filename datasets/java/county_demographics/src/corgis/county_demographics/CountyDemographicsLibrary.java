@@ -37,15 +37,6 @@ public class CountyDemographicsLibrary {
         ArrayList<Report> list_of_report_1_test = countyDemographicsLibrary.getAllCounties(true);
         
         
-        
-        System.out.println("Testing production GetCountiesByState");
-        ArrayList<Report> list_of_report_2_production = countyDemographicsLibrary.getCountiesByState("'VA'", false);
-        
-        
-        System.out.println("Testing test GetCountiesByState");
-        ArrayList<Report> list_of_report_2_test = countyDemographicsLibrary.getCountiesByState("'VA'", true);
-        
-        
     }
     
     private void connectToDatabase(String databasePath) {
@@ -96,9 +87,9 @@ public class CountyDemographicsLibrary {
 	public ArrayList<Report> getAllCounties(boolean test) {
         String query;
         if (test) {
-            query = String.format("SELECT data FROM demographics LIMIT %d", this.HARDWARE);
+            query = String.format("SELECT data FROM county_demographics LIMIT %d", this.HARDWARE);
         } else {
-            query = "SELECT data FROM demographics";
+            query = "SELECT data FROM county_demographics";
         }
         PreparedStatement preparedQuery = null;
         ResultSet rs = null;
@@ -136,78 +127,6 @@ public class CountyDemographicsLibrary {
     		e.printStackTrace();
         } catch (ParseException e) {
             System.err.println("Could not convert the response from getAllCounties; a parser error occurred.");
-    		e.printStackTrace();
-        }
-        return result;
-	}
-    
-    
-    /**
-     * Returns the report for each county in a given state.
-    
-     * @param state The name of the desired state
-     * @return a list[report]
-     */
-	public ArrayList<Report> getCountiesByState(String state) {
-        return this.getCountiesByState(state, true);
-    }
-    
-    
-    /**
-     * Returns the report for each county in a given state.
-    
-     * @param state The name of the desired state
-     * @return a list[report]
-     */
-	public ArrayList<Report> getCountiesByState(String state, boolean test) {
-        String query;
-        if (test) {
-            query = String.format("SELECT data FROM demographics WHERE state=? COLLATE NOCASE LIMIT %d", this.HARDWARE);
-        } else {
-            query = "SELECT data FROM demographics WHERE state=? COLLATE NOCASE";
-        }
-        PreparedStatement preparedQuery = null;
-        ResultSet rs = null;
-        try {
-            preparedQuery = this.connection.prepareStatement(query);
-        } catch (SQLException e) {
-            System.err.println("Could not build SQL query for local database.");
-    		e.printStackTrace();
-        }
-        try {
-            preparedQuery.setString(1, state);
-        } catch (SQLException e) {
-            System.err.println("Could not build prepare argument: state");
-    		e.printStackTrace();
-        }
-        try {
-            rs = preparedQuery.executeQuery();
-        } catch (SQLException e) {
-            System.err.println("Could not execute query.");
-    		e.printStackTrace();
-        }
-        
-        ArrayList<Report> result = new ArrayList<Report>();
-        try {
-            while (rs.next()) {
-                String raw_result = rs.getString(1);
-                Report parsed = null;
-                if (test) {
-                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
-                    
-                } else {
-                    parsed = new Report(((JSONObject)this.parser.parse(raw_result)));
-                    
-                }
-                
-                result.add(parsed);
-                
-            }
-        } catch (SQLException e) {
-            System.err.println("Could not iterate through query.");
-    		e.printStackTrace();
-        } catch (ParseException e) {
-            System.err.println("Could not convert the response from getCountiesByState; a parser error occurred.");
     		e.printStackTrace();
         }
         return result;

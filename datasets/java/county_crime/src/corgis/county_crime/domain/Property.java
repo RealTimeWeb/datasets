@@ -16,20 +16,20 @@ import org.json.simple.JSONObject;
  */
 public class Property {
 	
-    // This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.
-    private Integer burglary;
-    // This property reflects the number of burglaries, or theft of personal property.
-    private Integer larceny;
-    // This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.
-    private Integer all;
-    // This property reflects the number of crimes where a motor vehicle was stolen.
+    // Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.
+    private Double burglary;
+    // Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or theft of personal property.
+    private Double larceny;
+    // Rates are the number of reported offenses per 100,000 population. This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.
+    private Double all;
+    // Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where a motor vehicle was stolen.
     private Double motor;
     
     
     /*
      * @return 
      */
-    public Integer getBurglary() {
+    public Double getBurglary() {
         return this.burglary;
     }
     
@@ -38,7 +38,7 @@ public class Property {
     /*
      * @return 
      */
-    public Integer getLarceny() {
+    public Double getLarceny() {
         return this.larceny;
     }
     
@@ -47,7 +47,7 @@ public class Property {
     /*
      * @return 
      */
-    public Integer getAll() {
+    public Double getAll() {
         return this.all;
     }
     
@@ -78,9 +78,9 @@ public class Property {
 	 */
     public Property(JSONObject json_data) {
         try {// Burglary
-            this.burglary = ((Number)json_data.get("Burglary")).intValue();// Larceny
-            this.larceny = ((Number)json_data.get("Larceny")).intValue();// All
-            this.all = ((Number)json_data.get("All")).intValue();// Motor
+            this.burglary = ((Number)json_data.get("Burglary")).doubleValue();// Larceny
+            this.larceny = ((Number)json_data.get("Larceny")).doubleValue();// All
+            this.all = ((Number)json_data.get("All")).doubleValue();// Motor
             this.motor = ((Number)json_data.get("Motor")).doubleValue();
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Property; a field was missing.");

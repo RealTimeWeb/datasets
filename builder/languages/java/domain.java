@@ -65,6 +65,7 @@ public class {{ dictionary.name | clean_invalid_characters | camel_case_caps }} 
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public {{ dictionary.name | clean_invalid_characters | camel_case_caps }}(JSONObject json_data) {
+        System.out.println(json_data);
         try {
             {%- for field in dictionary.fields -%}
             // {{field.key}}

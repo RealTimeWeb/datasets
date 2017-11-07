@@ -11,9 +11,9 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import corgis.aids.domain.HivPrevalence;
-import corgis.aids.domain.PeopleLivingWithHiv;
-import corgis.aids.domain.NewHivInfections;
 import corgis.aids.domain.AidsRelatedDeaths;
+import corgis.aids.domain.NewHivInfections;
+import corgis.aids.domain.PeopleLivingWithHiv;
 
 /**
  * 
@@ -21,9 +21,9 @@ import corgis.aids.domain.AidsRelatedDeaths;
 public class Data {
 	
     private HivPrevalence hivPrevalence;
-    private PeopleLivingWithHiv peopleLivingWithHiv;
-    private NewHivInfections newHivInfections;
     private AidsRelatedDeaths aidsRelatedDeaths;
+    private NewHivInfections newHivInfections;
+    private PeopleLivingWithHiv peopleLivingWithHiv;
     
     
     /*
@@ -38,8 +38,8 @@ public class Data {
     /*
      * @return 
      */
-    public PeopleLivingWithHiv getPeopleLivingWithHiv() {
-        return this.peopleLivingWithHiv;
+    public AidsRelatedDeaths getAidsRelatedDeaths() {
+        return this.aidsRelatedDeaths;
     }
     
     
@@ -56,8 +56,8 @@ public class Data {
     /*
      * @return 
      */
-    public AidsRelatedDeaths getAidsRelatedDeaths() {
-        return this.aidsRelatedDeaths;
+    public PeopleLivingWithHiv getPeopleLivingWithHiv() {
+        return this.peopleLivingWithHiv;
     }
     
     
@@ -69,7 +69,7 @@ public class Data {
 	 * @return String
 	 */
 	public String toString() {
-		return "Data[" +hivPrevalence+", "+peopleLivingWithHiv+", "+newHivInfections+", "+aidsRelatedDeaths+"]";
+		return "Data[" +hivPrevalence+", "+aidsRelatedDeaths+", "+newHivInfections+", "+peopleLivingWithHiv+"]";
 	}
 	
 	/**
@@ -78,10 +78,10 @@ public class Data {
 	 */
     public Data(JSONObject json_data) {
         try {// HIV Prevalence
-            this.hivPrevalence = new HivPrevalence((JSONObject)json_data.get("HIV Prevalence"));// People Living with HIV
-            this.peopleLivingWithHiv = new PeopleLivingWithHiv((JSONObject)json_data.get("People Living with HIV"));// New HIV Infections
-            this.newHivInfections = new NewHivInfections((JSONObject)json_data.get("New HIV Infections"));// AIDS-Related Deaths
-            this.aidsRelatedDeaths = new AidsRelatedDeaths((JSONObject)json_data.get("AIDS-Related Deaths"));
+            this.hivPrevalence = new HivPrevalence((JSONObject)json_data.get("HIV Prevalence"));// AIDS-Related Deaths
+            this.aidsRelatedDeaths = new AidsRelatedDeaths((JSONObject)json_data.get("AIDS-Related Deaths"));// New HIV Infections
+            this.newHivInfections = new NewHivInfections((JSONObject)json_data.get("New HIV Infections"));// People Living with HIV
+            this.peopleLivingWithHiv = new PeopleLivingWithHiv((JSONObject)json_data.get("People Living with HIV"));
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a Data; a field was missing.");
     		e.printStackTrace();

@@ -16,10 +16,10 @@ import org.json.simple.JSONObject;
  */
 public class Company {
 	
-    // The sector of the business, or what segment of the economy they fit into.
-    private String sector;
     // The year that the company was founded.
     private Integer founded;
+    // The sector of the business, or what segment of the economy they fit into.
+    private String sector;
     // The type of business for this company.
     private String type;
     // The name of the company.
@@ -31,8 +31,8 @@ public class Company {
     /*
      * @return 
      */
-    public String getSector() {
-        return this.sector;
+    public Integer getFounded() {
+        return this.founded;
     }
     
     
@@ -40,8 +40,8 @@ public class Company {
     /*
      * @return 
      */
-    public Integer getFounded() {
-        return this.founded;
+    public String getSector() {
+        return this.sector;
     }
     
     
@@ -80,7 +80,7 @@ public class Company {
 	 * @return String
 	 */
 	public String toString() {
-		return "Company[" +sector+", "+founded+", "+type+", "+name+", "+relationship+"]";
+		return "Company[" +founded+", "+sector+", "+type+", "+name+", "+relationship+"]";
 	}
 	
 	/**
@@ -88,9 +88,9 @@ public class Company {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Company(JSONObject json_data) {
-        try {// sector
-            this.sector = (String)json_data.get("sector");// founded
-            this.founded = ((Number)json_data.get("founded")).intValue();// type
+        try {// founded
+            this.founded = ((Number)json_data.get("founded")).intValue();// sector
+            this.sector = (String)json_data.get("sector");// type
             this.type = (String)json_data.get("type");// name
             this.name = (String)json_data.get("name");// relationship
             this.relationship = (String)json_data.get("relationship");

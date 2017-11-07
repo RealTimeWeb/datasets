@@ -38,10 +38,15 @@ Cars Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -194,9 +199,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Cars');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="cars.png" alt="Cars" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="cars_splash.png" alt="cars_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Cars Java Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -213,8 +223,6 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
         <li><a href="#usage">Usage</a></li>
         <li><a href="#documentation">Documentation</a><ol>
         <li><a href='#get_cars'>get_cars</a></li>
-        <li><a href='#get_cars_by_year'>get_cars_by_year</a></li>
-        <li><a href='#get_cars_by_make'>get_cars_by_make</a></li>
         
         </ol></li>
         
@@ -257,7 +265,7 @@ This is a dataset about cars and how much fuel they use.
     
     <h3 id="usage">Usage</h3>
     
-    Begin by adding the above JAR file to your classpath. This library has 3 functions you can use.
+    Begin by adding the above JAR file to your classpath. This library has 1 function you can use.
     
 <div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">corgis.cars.CarsLibrary</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">corgis.cars.domain.*</span><span class="o">;</span>
@@ -268,7 +276,7 @@ This is a dataset about cars and how much fuel they use.
         <span class="c1">// Get access to the library</span>
         <span class="n">CarsLibrary</span> <span class="n">carsLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CarsLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Car</span><span class="o">&gt;</span> <span class="n">list_of_car</span> <span class="o">=</span> <span class="n">carsLibrary</span><span class="o">.</span><span class="na">getCars</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Car</span><span class="o">&gt;</span> <span class="n">list_of_car</span> <span class="o">=</span> <span class="n">carsLibrary</span><span class="o">.</span><span class="na">getCarsByYear</span><span class="o">(</span><span class="mi">2001</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Car</span><span class="o">&gt;</span> <span class="n">list_of_car</span> <span class="o">=</span> <span class="n">carsLibrary</span><span class="o">.</span><span class="na">getCarsByMake</span><span class="o">(</span><span class="s">&quot;Pontiac&quot;</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Car</span><span class="o">&gt;</span> <span class="n">list_of_car</span> <span class="o">=</span> <span class="n">carsLibrary</span><span class="o">.</span><span class="na">getCars</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -287,7 +295,7 @@ This is a dataset about cars and how much fuel they use.
         <span class="c1">// Get access to the library</span>
         <span class="n">CarsLibrary</span> <span class="n">carsLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CarsLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Car</span><span class="o">&gt;</span> <span class="n">list_of_car</span> <span class="o">=</span> <span class="n">carsLibrary</span><span class="o">.</span><span class="na">getCars</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Car</span><span class="o">&gt;</span> <span class="n">list_of_car</span> <span class="o">=</span> <span class="n">carsLibrary</span><span class="o">.</span><span class="na">getCarsByYear</span><span class="o">(</span><span class="mi">2001</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span><span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Car</span><span class="o">&gt;</span> <span class="n">list_of_car</span> <span class="o">=</span> <span class="n">carsLibrary</span><span class="o">.</span><span class="na">getCarsByMake</span><span class="o">(</span><span class="s">&quot;Pontiac&quot;</span><span class="o">,</span> <span class="kc">true</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Car</span><span class="o">&gt;</span> <span class="n">list_of_car</span> <span class="o">=</span> <span class="n">carsLibrary</span><span class="o">.</span><span class="na">getCars</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -308,62 +316,6 @@ Returns the complete list of cars.
 <br>
 
 <ul class="list-group col-md-6 col-md-offset-1">
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='getCarsByYear' style='font-family:monospace'    >&nbsp;carsLibrary.getCarsByYear(year, test)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns all the cars for a given year.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>year</b>: <i>Integer</i></h5>
-    <p class="list-group-item-text">The year as an integer, between 1921 and 2013.
-    
-    </p>
-</li>
-
-
-<li class="list-group-item list-group-item-warning">
-    <span class="badge">optional</span>
-    <h5 class="list-group-item-heading"><b>test</b>: <i>boolean</i></h5>
-    <p class="list-group-item-text">Argument to control whether ALL or SOME of the data is returned for this function. This makes it much easier to develop and test your code, only using a large (slow) amount of data when you are ready.</p>
-</li>
-
-</ul>
-
-</div>
-
-<h4 id='getCarsByMake' style='font-family:monospace'    >&nbsp;carsLibrary.getCarsByMake(make, test)</h4>
-
-<div class='row'>
-<div class='col-md-offset-1'>
-Returns all the cars of a certain make.
-</div>
-<br>
-
-<ul class="list-group col-md-6 col-md-offset-1">
-
-<li class="list-group-item">
-    <h5 class="list-group-item-heading"><b>make</b>: <i>String</i></h5>
-    <p class="list-group-item-text">The make of the cars
-    <br><br>If you make a typo, it will attempt to suggest a corrected answer. However, this is not perfect, so try to be as accurate as possible.
-    </p>
-</li>
 
 
 <li class="list-group-item list-group-item-warning">

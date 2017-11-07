@@ -24,8 +24,8 @@ public class How {
     private String industry;
     // Whether the money came from politics.
     private Boolean wasPolitical;
-    // Whether the money was partially inherited.
-    private Boolean inherited;
+    // The way that this money was inherited (or not inherited). Inheritance can come from a spouse, the father, or from multiple generations within a family (either 3, 4, or 5+).
+    private String inherited;
     // Whether the billionaire was the founder of their company.
     private Boolean wasFounder;
     
@@ -69,7 +69,7 @@ public class How {
     /*
      * @return 
      */
-    public Boolean getInherited() {
+    public String getInherited() {
         return this.inherited;
     }
     
@@ -104,7 +104,7 @@ public class How {
             this.fromEmerging = (Boolean)json_data.get("from emerging");// industry
             this.industry = (String)json_data.get("industry");// was political
             this.wasPolitical = (Boolean)json_data.get("was political");// inherited
-            this.inherited = (Boolean)json_data.get("inherited");// was founder
+            this.inherited = (String)json_data.get("inherited");// was founder
             this.wasFounder = (Boolean)json_data.get("was founder");
         } catch (NullPointerException e) {
     		System.err.println("Could not convert the response to a How; a field was missing.");

@@ -24,20 +24,20 @@
 <span class="sourceLineNo">016</span> */<a name="line.16"></a>
 <span class="sourceLineNo">017</span>public class Property {<a name="line.17"></a>
 <span class="sourceLineNo">018</span>        <a name="line.18"></a>
-<span class="sourceLineNo">019</span>    // This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.<a name="line.19"></a>
-<span class="sourceLineNo">020</span>    private Integer burglary;<a name="line.20"></a>
-<span class="sourceLineNo">021</span>    // This property reflects the number of burglaries, or theft of personal property.<a name="line.21"></a>
-<span class="sourceLineNo">022</span>    private Integer larceny;<a name="line.22"></a>
-<span class="sourceLineNo">023</span>    // This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.<a name="line.23"></a>
-<span class="sourceLineNo">024</span>    private Integer all;<a name="line.24"></a>
-<span class="sourceLineNo">025</span>    // This property reflects the number of crimes where a motor vehicle was stolen.<a name="line.25"></a>
+<span class="sourceLineNo">019</span>    // Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or entry into a building illegally with intent to commit a crime, especially theft.<a name="line.19"></a>
+<span class="sourceLineNo">020</span>    private Double burglary;<a name="line.20"></a>
+<span class="sourceLineNo">021</span>    // Rates are the number of reported offenses per 100,000 population. This property reflects the number of burglaries, or theft of personal property.<a name="line.21"></a>
+<span class="sourceLineNo">022</span>    private Double larceny;<a name="line.22"></a>
+<span class="sourceLineNo">023</span>    // Rates are the number of reported offenses per 100,000 population. This property reflects all of the Property-related crimes, including burglaries, larcenies, and motor crimes.<a name="line.23"></a>
+<span class="sourceLineNo">024</span>    private Double all;<a name="line.24"></a>
+<span class="sourceLineNo">025</span>    // Rates are the number of reported offenses per 100,000 population. This property reflects the number of crimes where a motor vehicle was stolen.<a name="line.25"></a>
 <span class="sourceLineNo">026</span>    private Double motor;<a name="line.26"></a>
 <span class="sourceLineNo">027</span>    <a name="line.27"></a>
 <span class="sourceLineNo">028</span>    <a name="line.28"></a>
 <span class="sourceLineNo">029</span>    /*<a name="line.29"></a>
 <span class="sourceLineNo">030</span>     * @return <a name="line.30"></a>
 <span class="sourceLineNo">031</span>     */<a name="line.31"></a>
-<span class="sourceLineNo">032</span>    public Integer getBurglary() {<a name="line.32"></a>
+<span class="sourceLineNo">032</span>    public Double getBurglary() {<a name="line.32"></a>
 <span class="sourceLineNo">033</span>        return this.burglary;<a name="line.33"></a>
 <span class="sourceLineNo">034</span>    }<a name="line.34"></a>
 <span class="sourceLineNo">035</span>    <a name="line.35"></a>
@@ -46,7 +46,7 @@
 <span class="sourceLineNo">038</span>    /*<a name="line.38"></a>
 <span class="sourceLineNo">039</span>     * @return <a name="line.39"></a>
 <span class="sourceLineNo">040</span>     */<a name="line.40"></a>
-<span class="sourceLineNo">041</span>    public Integer getLarceny() {<a name="line.41"></a>
+<span class="sourceLineNo">041</span>    public Double getLarceny() {<a name="line.41"></a>
 <span class="sourceLineNo">042</span>        return this.larceny;<a name="line.42"></a>
 <span class="sourceLineNo">043</span>    }<a name="line.43"></a>
 <span class="sourceLineNo">044</span>    <a name="line.44"></a>
@@ -55,7 +55,7 @@
 <span class="sourceLineNo">047</span>    /*<a name="line.47"></a>
 <span class="sourceLineNo">048</span>     * @return <a name="line.48"></a>
 <span class="sourceLineNo">049</span>     */<a name="line.49"></a>
-<span class="sourceLineNo">050</span>    public Integer getAll() {<a name="line.50"></a>
+<span class="sourceLineNo">050</span>    public Double getAll() {<a name="line.50"></a>
 <span class="sourceLineNo">051</span>        return this.all;<a name="line.51"></a>
 <span class="sourceLineNo">052</span>    }<a name="line.52"></a>
 <span class="sourceLineNo">053</span>    <a name="line.53"></a>
@@ -86,9 +86,9 @@
 <span class="sourceLineNo">078</span>         */<a name="line.78"></a>
 <span class="sourceLineNo">079</span>    public Property(JSONObject json_data) {<a name="line.79"></a>
 <span class="sourceLineNo">080</span>        try {// Burglary<a name="line.80"></a>
-<span class="sourceLineNo">081</span>            this.burglary = ((Number)json_data.get("Burglary")).intValue();// Larceny<a name="line.81"></a>
-<span class="sourceLineNo">082</span>            this.larceny = ((Number)json_data.get("Larceny")).intValue();// All<a name="line.82"></a>
-<span class="sourceLineNo">083</span>            this.all = ((Number)json_data.get("All")).intValue();// Motor<a name="line.83"></a>
+<span class="sourceLineNo">081</span>            this.burglary = ((Number)json_data.get("Burglary")).doubleValue();// Larceny<a name="line.81"></a>
+<span class="sourceLineNo">082</span>            this.larceny = ((Number)json_data.get("Larceny")).doubleValue();// All<a name="line.82"></a>
+<span class="sourceLineNo">083</span>            this.all = ((Number)json_data.get("All")).doubleValue();// Motor<a name="line.83"></a>
 <span class="sourceLineNo">084</span>            this.motor = ((Number)json_data.get("Motor")).doubleValue();<a name="line.84"></a>
 <span class="sourceLineNo">085</span>        } catch (NullPointerException e) {<a name="line.85"></a>
 <span class="sourceLineNo">086</span>                System.err.println("Could not convert the response to a Property; a field was missing.");<a name="line.86"></a>

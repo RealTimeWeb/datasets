@@ -271,39 +271,40 @@
 <span class="sourceLineNo">263</span>         * @param json_data The raw json data that will be parsed.<a name="line.263"></a>
 <span class="sourceLineNo">264</span>         */<a name="line.264"></a>
 <span class="sourceLineNo">265</span>    public Song(JSONObject json_data) {<a name="line.265"></a>
-<span class="sourceLineNo">266</span>        try {// key<a name="line.266"></a>
-<span class="sourceLineNo">267</span>            this.key = ((Number)json_data.get("key")).doubleValue();// mode_confidence<a name="line.267"></a>
-<span class="sourceLineNo">268</span>            this.mode_Confidence = ((Number)json_data.get("mode_confidence")).doubleValue();// artist_mbtags_count<a name="line.268"></a>
-<span class="sourceLineNo">269</span>            this.artist_Mbtags_Count = ((Number)json_data.get("artist_mbtags_count")).doubleValue();// key_confidence<a name="line.269"></a>
-<span class="sourceLineNo">270</span>            this.key_Confidence = ((Number)json_data.get("key_confidence")).doubleValue();// tatums_start<a name="line.270"></a>
-<span class="sourceLineNo">271</span>            this.tatums_Start = ((Number)json_data.get("tatums_start")).doubleValue();// year<a name="line.271"></a>
-<span class="sourceLineNo">272</span>            this.year = ((Number)json_data.get("year")).intValue();// duration<a name="line.272"></a>
-<span class="sourceLineNo">273</span>            this.duration = ((Number)json_data.get("duration")).doubleValue();// hotttnesss<a name="line.273"></a>
-<span class="sourceLineNo">274</span>            this.hotttnesss = ((Number)json_data.get("hotttnesss")).doubleValue();// beats_start<a name="line.274"></a>
-<span class="sourceLineNo">275</span>            this.beats_Start = ((Number)json_data.get("beats_start")).doubleValue();// time_signature_confidence<a name="line.275"></a>
-<span class="sourceLineNo">276</span>            this.time_Signature_Confidence = ((Number)json_data.get("time_signature_confidence")).doubleValue();// title<a name="line.276"></a>
-<span class="sourceLineNo">277</span>            this.title = (String)json_data.get("title");// bars_confidence<a name="line.277"></a>
-<span class="sourceLineNo">278</span>            this.bars_Confidence = ((Number)json_data.get("bars_confidence")).doubleValue();// id<a name="line.278"></a>
-<span class="sourceLineNo">279</span>            this.id = (String)json_data.get("id");// bars_start<a name="line.279"></a>
-<span class="sourceLineNo">280</span>            this.bars_Start = ((Number)json_data.get("bars_start")).doubleValue();// artist_mbtags<a name="line.280"></a>
-<span class="sourceLineNo">281</span>            this.artist_Mbtags = (String)json_data.get("artist_mbtags");// start_of_fade_out<a name="line.281"></a>
-<span class="sourceLineNo">282</span>            this.start_Of_Fade_Out = ((Number)json_data.get("start_of_fade_out")).doubleValue();// tempo<a name="line.282"></a>
-<span class="sourceLineNo">283</span>            this.tempo = ((Number)json_data.get("tempo")).doubleValue();// end_of_fade_in<a name="line.283"></a>
-<span class="sourceLineNo">284</span>            this.end_Of_Fade_In = ((Number)json_data.get("end_of_fade_in")).doubleValue();// beats_confidence<a name="line.284"></a>
-<span class="sourceLineNo">285</span>            this.beats_Confidence = ((Number)json_data.get("beats_confidence")).doubleValue();// tatums_confidence<a name="line.285"></a>
-<span class="sourceLineNo">286</span>            this.tatums_Confidence = ((Number)json_data.get("tatums_confidence")).doubleValue();// mode<a name="line.286"></a>
-<span class="sourceLineNo">287</span>            this.mode = ((Number)json_data.get("mode")).intValue();// time_signature<a name="line.287"></a>
-<span class="sourceLineNo">288</span>            this.time_Signature = ((Number)json_data.get("time_signature")).doubleValue();// loudness<a name="line.288"></a>
-<span class="sourceLineNo">289</span>            this.loudness = ((Number)json_data.get("loudness")).doubleValue();<a name="line.289"></a>
-<span class="sourceLineNo">290</span>        } catch (NullPointerException e) {<a name="line.290"></a>
-<span class="sourceLineNo">291</span>                System.err.println("Could not convert the response to a Song; a field was missing.");<a name="line.291"></a>
-<span class="sourceLineNo">292</span>                e.printStackTrace();<a name="line.292"></a>
-<span class="sourceLineNo">293</span>        } catch (ClassCastException e) {<a name="line.293"></a>
-<span class="sourceLineNo">294</span>                System.err.println("Could not convert the response to a Song; a field had the wrong structure.");<a name="line.294"></a>
-<span class="sourceLineNo">295</span>                e.printStackTrace();<a name="line.295"></a>
-<span class="sourceLineNo">296</span>        }<a name="line.296"></a>
-<span class="sourceLineNo">297</span>        }       <a name="line.297"></a>
-<span class="sourceLineNo">298</span>}<a name="line.298"></a>
+<span class="sourceLineNo">266</span>        System.out.println(json_data);<a name="line.266"></a>
+<span class="sourceLineNo">267</span>        try {// key<a name="line.267"></a>
+<span class="sourceLineNo">268</span>            this.key = ((Number)json_data.get("key")).doubleValue();// mode_confidence<a name="line.268"></a>
+<span class="sourceLineNo">269</span>            this.mode_Confidence = ((Number)json_data.get("mode_confidence")).doubleValue();// artist_mbtags_count<a name="line.269"></a>
+<span class="sourceLineNo">270</span>            this.artist_Mbtags_Count = ((Number)json_data.get("artist_mbtags_count")).doubleValue();// key_confidence<a name="line.270"></a>
+<span class="sourceLineNo">271</span>            this.key_Confidence = ((Number)json_data.get("key_confidence")).doubleValue();// tatums_start<a name="line.271"></a>
+<span class="sourceLineNo">272</span>            this.tatums_Start = ((Number)json_data.get("tatums_start")).doubleValue();// year<a name="line.272"></a>
+<span class="sourceLineNo">273</span>            this.year = ((Number)json_data.get("year")).intValue();// duration<a name="line.273"></a>
+<span class="sourceLineNo">274</span>            this.duration = ((Number)json_data.get("duration")).doubleValue();// hotttnesss<a name="line.274"></a>
+<span class="sourceLineNo">275</span>            this.hotttnesss = ((Number)json_data.get("hotttnesss")).doubleValue();// beats_start<a name="line.275"></a>
+<span class="sourceLineNo">276</span>            this.beats_Start = ((Number)json_data.get("beats_start")).doubleValue();// time_signature_confidence<a name="line.276"></a>
+<span class="sourceLineNo">277</span>            this.time_Signature_Confidence = ((Number)json_data.get("time_signature_confidence")).doubleValue();// title<a name="line.277"></a>
+<span class="sourceLineNo">278</span>            this.title = (String)json_data.get("title");// bars_confidence<a name="line.278"></a>
+<span class="sourceLineNo">279</span>            this.bars_Confidence = ((Number)json_data.get("bars_confidence")).doubleValue();// id<a name="line.279"></a>
+<span class="sourceLineNo">280</span>            this.id = (String)json_data.get("id");// bars_start<a name="line.280"></a>
+<span class="sourceLineNo">281</span>            this.bars_Start = ((Number)json_data.get("bars_start")).doubleValue();// artist_mbtags<a name="line.281"></a>
+<span class="sourceLineNo">282</span>            this.artist_Mbtags = (String)json_data.get("artist_mbtags");// start_of_fade_out<a name="line.282"></a>
+<span class="sourceLineNo">283</span>            this.start_Of_Fade_Out = ((Number)json_data.get("start_of_fade_out")).doubleValue();// tempo<a name="line.283"></a>
+<span class="sourceLineNo">284</span>            this.tempo = ((Number)json_data.get("tempo")).doubleValue();// end_of_fade_in<a name="line.284"></a>
+<span class="sourceLineNo">285</span>            this.end_Of_Fade_In = ((Number)json_data.get("end_of_fade_in")).doubleValue();// beats_confidence<a name="line.285"></a>
+<span class="sourceLineNo">286</span>            this.beats_Confidence = ((Number)json_data.get("beats_confidence")).doubleValue();// tatums_confidence<a name="line.286"></a>
+<span class="sourceLineNo">287</span>            this.tatums_Confidence = ((Number)json_data.get("tatums_confidence")).doubleValue();// mode<a name="line.287"></a>
+<span class="sourceLineNo">288</span>            this.mode = ((Number)json_data.get("mode")).intValue();// time_signature<a name="line.288"></a>
+<span class="sourceLineNo">289</span>            this.time_Signature = ((Number)json_data.get("time_signature")).doubleValue();// loudness<a name="line.289"></a>
+<span class="sourceLineNo">290</span>            this.loudness = ((Number)json_data.get("loudness")).doubleValue();<a name="line.290"></a>
+<span class="sourceLineNo">291</span>        } catch (NullPointerException e) {<a name="line.291"></a>
+<span class="sourceLineNo">292</span>                System.err.println("Could not convert the response to a Song; a field was missing.");<a name="line.292"></a>
+<span class="sourceLineNo">293</span>                e.printStackTrace();<a name="line.293"></a>
+<span class="sourceLineNo">294</span>        } catch (ClassCastException e) {<a name="line.294"></a>
+<span class="sourceLineNo">295</span>                System.err.println("Could not convert the response to a Song; a field had the wrong structure.");<a name="line.295"></a>
+<span class="sourceLineNo">296</span>                e.printStackTrace();<a name="line.296"></a>
+<span class="sourceLineNo">297</span>        }<a name="line.297"></a>
+<span class="sourceLineNo">298</span>        }       <a name="line.298"></a>
+<span class="sourceLineNo">299</span>}<a name="line.299"></a>
 
 
 

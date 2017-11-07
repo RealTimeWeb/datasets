@@ -53,6 +53,7 @@ public class Release {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Release(JSONObject json_data) {
+        System.out.println(json_data);
         try {// id
             this.id = ((Number)json_data.get("id")).intValue();// name
             this.name = (String)json_data.get("name");
