@@ -31,11 +31,11 @@ public class AirlinesLibrary {
         
         
         System.out.println("Testing production GetReports");
-        ArrayList<Airline> list_of_airline_1_production = airlinesLibrary.getReports(false);
+        ArrayList<Airports> list_of_airports_1_production = airlinesLibrary.getReports(false);
         
         
         System.out.println("Testing test GetReports");
-        ArrayList<Airline> list_of_airline_1_test = airlinesLibrary.getReports(true);
+        ArrayList<Airports> list_of_airports_1_test = airlinesLibrary.getReports(true);
         
         
     }
@@ -71,21 +71,21 @@ public class AirlinesLibrary {
     
     
     /**
-     * Returns a list of airline reports in the database.
+     * Returns a list of airports reports in the database.
     
-     * @return a list[airline]
+     * @return a list[airports]
      */
-	public ArrayList<Airline> getReports() {
+	public ArrayList<Airports> getReports() {
         return this.getReports(true);
     }
     
     
     /**
-     * Returns a list of airline reports in the database.
+     * Returns a list of airports reports in the database.
     
-     * @return a list[airline]
+     * @return a list[airports]
      */
-	public ArrayList<Airline> getReports(boolean test) {
+	public ArrayList<Airports> getReports(boolean test) {
         String query;
         if (test) {
             query = String.format("SELECT data FROM airlines LIMIT %d", this.HARDWARE);
@@ -107,11 +107,11 @@ public class AirlinesLibrary {
     		e.printStackTrace();
         }
         
-        ArrayList<Airline> result = new ArrayList<Airline>();
+        ArrayList<Airports> result = new ArrayList<Airports>();
         try {
             while (rs.next()) {
                 String raw_result = rs.getString(1);
-                Airline parsed = null;
+                Airports parsed = null;
                 if (test) {
                     parsed = new Airports(((JSONObject)this.parser.parse(raw_result)));
                     

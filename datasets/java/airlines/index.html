@@ -38,10 +38,15 @@ Airlines Library (CORGIS Datasets Project)
     
     
     
+    <style>
+    .dialog-opener {
+        cursor: pointer;
+    }
+    </style>
+    
     <script>
     $(document).ready(function() {
         /*
-        log('load', '{ metadata.name }');
         function doPoll(){  
             log('remain', '{ metadata.name }, '+$(document).scrollTop()+", "+$(document).height());
         }
@@ -194,9 +199,14 @@ pre .il { color: #40a070 } /* Literal.Number.Integer.Long */.syntax pre .hll { b
 </style>
 
 
-    <div class="page-header">
+    <script>
+/*$(document).ready(function() {
+    log('load', 'Airlines');
+});*/
+</script>
+<div class="page-header">
     
-    <img class="img-rounded pull-right" src="airlines.png" alt="Airlines" style="max-width: 128px; max-height: 128px;">
+    <img class="img-rounded pull-right" src="airlines_splash.png" alt="airlines_splash.png" style="max-width: 256px; max-height: 256px;">
     
     <h1>Airlines Java Library</h1>
     <p class="lead">From the <a href="../index.html">CORGIS Dataset Project</a></p>
@@ -267,7 +277,7 @@ Additional information is available: <a href="http://www.rita.dot.gov/bts/help/a
         <span class="c1">// Get access to the library</span>
         <span class="n">AirlinesLibrary</span> <span class="n">airlinesLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AirlinesLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Airline</span><span class="o">&gt;</span> <span class="n">list_of_airline</span> <span class="o">=</span> <span class="n">airlinesLibrary</span><span class="o">.</span><span class="na">getReports</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Airports</span><span class="o">&gt;</span> <span class="n">list_of_airports</span> <span class="o">=</span> <span class="n">airlinesLibrary</span><span class="o">.</span><span class="na">getReports</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -286,7 +296,7 @@ Additional information is available: <a href="http://www.rita.dot.gov/bts/help/a
         <span class="c1">// Get access to the library</span>
         <span class="n">AirlinesLibrary</span> <span class="n">airlinesLibrary</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AirlinesLibrary</span><span class="o">();</span>
         <span class="c1">// Access data inside the library</span>
-        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Airline</span><span class="o">&gt;</span> <span class="n">list_of_airline</span> <span class="o">=</span> <span class="n">airlinesLibrary</span><span class="o">.</span><span class="na">getReports</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Airports</span><span class="o">&gt;</span> <span class="n">list_of_airports</span> <span class="o">=</span> <span class="n">airlinesLibrary</span><span class="o">.</span><span class="na">getReports</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
@@ -302,7 +312,7 @@ Additional information is available: <a href="http://www.rita.dot.gov/bts/help/a
 
 <div class='row'>
 <div class='col-md-offset-1'>
-Returns a list of airline reports in the database.
+Returns a list of airports reports in the database.
 </div>
 <br>
 

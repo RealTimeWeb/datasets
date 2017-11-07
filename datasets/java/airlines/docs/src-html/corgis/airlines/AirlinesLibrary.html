@@ -39,11 +39,11 @@
 <span class="sourceLineNo">031</span>        <a name="line.31"></a>
 <span class="sourceLineNo">032</span>        <a name="line.32"></a>
 <span class="sourceLineNo">033</span>        System.out.println("Testing production GetReports");<a name="line.33"></a>
-<span class="sourceLineNo">034</span>        ArrayList&lt;Airline&gt; list_of_airline_1_production = airlinesLibrary.getReports(false);<a name="line.34"></a>
+<span class="sourceLineNo">034</span>        ArrayList&lt;Airports&gt; list_of_airports_1_production = airlinesLibrary.getReports(false);<a name="line.34"></a>
 <span class="sourceLineNo">035</span>        <a name="line.35"></a>
 <span class="sourceLineNo">036</span>        <a name="line.36"></a>
 <span class="sourceLineNo">037</span>        System.out.println("Testing test GetReports");<a name="line.37"></a>
-<span class="sourceLineNo">038</span>        ArrayList&lt;Airline&gt; list_of_airline_1_test = airlinesLibrary.getReports(true);<a name="line.38"></a>
+<span class="sourceLineNo">038</span>        ArrayList&lt;Airports&gt; list_of_airports_1_test = airlinesLibrary.getReports(true);<a name="line.38"></a>
 <span class="sourceLineNo">039</span>        <a name="line.39"></a>
 <span class="sourceLineNo">040</span>        <a name="line.40"></a>
 <span class="sourceLineNo">041</span>    }<a name="line.41"></a>
@@ -79,21 +79,21 @@
 <span class="sourceLineNo">071</span>    <a name="line.71"></a>
 <span class="sourceLineNo">072</span>    <a name="line.72"></a>
 <span class="sourceLineNo">073</span>    /**<a name="line.73"></a>
-<span class="sourceLineNo">074</span>     * Returns a list of airline reports in the database.<a name="line.74"></a>
+<span class="sourceLineNo">074</span>     * Returns a list of airports reports in the database.<a name="line.74"></a>
 <span class="sourceLineNo">075</span>    <a name="line.75"></a>
-<span class="sourceLineNo">076</span>     * @return a list[airline]<a name="line.76"></a>
+<span class="sourceLineNo">076</span>     * @return a list[airports]<a name="line.76"></a>
 <span class="sourceLineNo">077</span>     */<a name="line.77"></a>
-<span class="sourceLineNo">078</span>        public ArrayList&lt;Airline&gt; getReports() {<a name="line.78"></a>
+<span class="sourceLineNo">078</span>        public ArrayList&lt;Airports&gt; getReports() {<a name="line.78"></a>
 <span class="sourceLineNo">079</span>        return this.getReports(true);<a name="line.79"></a>
 <span class="sourceLineNo">080</span>    }<a name="line.80"></a>
 <span class="sourceLineNo">081</span>    <a name="line.81"></a>
 <span class="sourceLineNo">082</span>    <a name="line.82"></a>
 <span class="sourceLineNo">083</span>    /**<a name="line.83"></a>
-<span class="sourceLineNo">084</span>     * Returns a list of airline reports in the database.<a name="line.84"></a>
+<span class="sourceLineNo">084</span>     * Returns a list of airports reports in the database.<a name="line.84"></a>
 <span class="sourceLineNo">085</span>    <a name="line.85"></a>
-<span class="sourceLineNo">086</span>     * @return a list[airline]<a name="line.86"></a>
+<span class="sourceLineNo">086</span>     * @return a list[airports]<a name="line.86"></a>
 <span class="sourceLineNo">087</span>     */<a name="line.87"></a>
-<span class="sourceLineNo">088</span>        public ArrayList&lt;Airline&gt; getReports(boolean test) {<a name="line.88"></a>
+<span class="sourceLineNo">088</span>        public ArrayList&lt;Airports&gt; getReports(boolean test) {<a name="line.88"></a>
 <span class="sourceLineNo">089</span>        String query;<a name="line.89"></a>
 <span class="sourceLineNo">090</span>        if (test) {<a name="line.90"></a>
 <span class="sourceLineNo">091</span>            query = String.format("SELECT data FROM airlines LIMIT %d", this.HARDWARE);<a name="line.91"></a>
@@ -115,16 +115,16 @@
 <span class="sourceLineNo">107</span>                e.printStackTrace();<a name="line.107"></a>
 <span class="sourceLineNo">108</span>        }<a name="line.108"></a>
 <span class="sourceLineNo">109</span>        <a name="line.109"></a>
-<span class="sourceLineNo">110</span>        ArrayList&lt;Airline&gt; result = new ArrayList&lt;Airline&gt;();<a name="line.110"></a>
+<span class="sourceLineNo">110</span>        ArrayList&lt;Airports&gt; result = new ArrayList&lt;Airports&gt;();<a name="line.110"></a>
 <span class="sourceLineNo">111</span>        try {<a name="line.111"></a>
 <span class="sourceLineNo">112</span>            while (rs.next()) {<a name="line.112"></a>
 <span class="sourceLineNo">113</span>                String raw_result = rs.getString(1);<a name="line.113"></a>
-<span class="sourceLineNo">114</span>                Airline parsed = null;<a name="line.114"></a>
+<span class="sourceLineNo">114</span>                Airports parsed = null;<a name="line.114"></a>
 <span class="sourceLineNo">115</span>                if (test) {<a name="line.115"></a>
-<span class="sourceLineNo">116</span>                    parsed = new Airline(((JSONObject)this.parser.parse(raw_result)));<a name="line.116"></a>
+<span class="sourceLineNo">116</span>                    parsed = new Airports(((JSONObject)this.parser.parse(raw_result)));<a name="line.116"></a>
 <span class="sourceLineNo">117</span>                    <a name="line.117"></a>
 <span class="sourceLineNo">118</span>                } else {<a name="line.118"></a>
-<span class="sourceLineNo">119</span>                    parsed = new Airline(((JSONObject)this.parser.parse(raw_result)));<a name="line.119"></a>
+<span class="sourceLineNo">119</span>                    parsed = new Airports(((JSONObject)this.parser.parse(raw_result)));<a name="line.119"></a>
 <span class="sourceLineNo">120</span>                    <a name="line.120"></a>
 <span class="sourceLineNo">121</span>                }<a name="line.121"></a>
 <span class="sourceLineNo">122</span>                <a name="line.122"></a>

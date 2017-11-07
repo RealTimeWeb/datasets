@@ -1,10 +1,16 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Mar 22 15:47:14 2017
-
-@author: acbart
-"""
 
 import earthquakes
+import matplotlib.pyplot as plt
 
-list_of_earthquakes = earthquakes.get_earthquakes()
+list_of_quakes = earthquakes.get_earthquakes()
+depths = []
+magnitudes = []
+for quake in list_of_quakes:
+    depths.append(quake["location"]["depth"])
+    magnitudes.append(quake["impact"]["magnitude"])
+    
+# How do I add a legend?
+plt.plot(depths, label="Depths")
+plt.plot(magnitudes, label="Magnitudes")
+plt.legend()
+plt.show()

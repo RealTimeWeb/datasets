@@ -24,8 +24,8 @@ local:
         jsonpath: airlines.[0].Time.Label
 interfaces:
   - name: get reports
-    returns: list[airline]
-    description: Returns a list of airline reports in the database.
+    returns: list[airports]
+    description: Returns a list of airports reports in the database.
     production:
         sql: SELECT data FROM airlines
         post: json()
