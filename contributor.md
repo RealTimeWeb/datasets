@@ -35,6 +35,18 @@ We demand that every instance in the main list is of the exact same type. This s
 
 A suitable icon should be found to represent the dataset. This icon should be appropriately licensed and sourced in the Spec file.
 
+Guidelines on text:
+
+* Capitalization must be consistent within a dataset.
+* Capitalize keys and values ({'Key': 'Value'})
+* Use whitespace instead of underscores or other artificial separators ("Average Temperature" instead of "Average_Temperature")
+* Avoid abbreviations and symbols, unless it greatly helps brevity ("Temperature" is preferred over "Temp", but it is acceptable to use "Avg Temp", particularly if it is unambiguous)
+
+Dead Data
+*********
+
+Unfortunately, data does tend to disappear. It is critical that we document as much as possible. Not just the fields of the dataset, but also the way it was obtained, where it was obtained, etc. Things that seem obvious now are not as obvious later. Write a script (with comments) that documents exactly how the dataset was transformed from its raw state into its finalized state, preferably so it could be regenerated at will. Keep the original data around, and preferably also keep a snapshot of its source website.
+
 The .corgis Spec File
 ---------------------
 
