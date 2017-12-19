@@ -2,6 +2,8 @@ playground/
 users/
 .class
 
+tools/code2uml
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

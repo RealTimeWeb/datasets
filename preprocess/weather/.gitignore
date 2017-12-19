@@ -4,3 +4,4 @@ completed/
 *.gz
 *.bz2
 *.zip
+raw/*.zip

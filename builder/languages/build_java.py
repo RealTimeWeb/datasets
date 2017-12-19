@@ -379,6 +379,9 @@ def post_build(model, files, moves, target):
 
     subprocess.call(["ant"], shell=True)
     
+    #jar_file = os.path.join('./dist', name+'-doc-1.jar')
+    #subprocess.call(["java", "-jar", "../../../tools/plantuml.jar", jar_file, "-o", "./docs/uml/"], shell=True)
+    
     os.chdir(backup_location)
     return None
 

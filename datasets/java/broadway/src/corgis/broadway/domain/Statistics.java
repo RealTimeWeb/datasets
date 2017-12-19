@@ -88,6 +88,7 @@ public class Statistics {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Statistics(JSONObject json_data) {
+        System.out.println(json_data);
         try {// Gross
             this.gross = ((Number)json_data.get("Gross")).intValue();// Performances
             this.performances = ((Number)json_data.get("Performances")).intValue();// Attendance

@@ -66,6 +66,7 @@ public class Production {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Production(JSONObject json_data) {
+        System.out.println(json_data);
         try {// Date
             this.date = new Date((JSONObject)json_data.get("Date"));// Statistics
             this.statistics = new Statistics((JSONObject)json_data.get("Statistics"));// Show

@@ -20,18 +20,6 @@ local:
 structures:
     "school.[0].data.enrollment.students.year": "Each of these match to the different age groups for students: The first one is Preschool, the second is Kindergarten, and so on for 1st grade - 12th grade."
 interfaces:
-  - name: get state
-    args:
-      - name: state
-        type: str
-        description: The state you are interested in.
-        default: "'Virginia'"
-        matches: SELECT DISTINCT state FROM school
-    returns: state record
-    description: Returns information about one state. Enrollment data is for Pre-K through 12th grade.
-    production:
-        sql: SELECT data FROM school WHERE state=? COLLATE NOCASE
-        post: json()|jsonpath(data)
   - name: get all states
     args: []
     returns: list[state record]

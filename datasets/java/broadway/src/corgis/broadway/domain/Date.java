@@ -77,6 +77,7 @@ public class Date {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Date(JSONObject json_data) {
+        System.out.println(json_data);
         try {// Full
             this.full = (String)json_data.get("Full");// Day
             this.day = ((Number)json_data.get("Day")).intValue();// Month

@@ -66,6 +66,7 @@ public class Show {
 	 * @param json_data The raw json data that will be parsed.
 	 */
     public Show(JSONObject json_data) {
+        System.out.println(json_data);
         try {// Type
             this.type = (String)json_data.get("Type");// Name
             this.name = (String)json_data.get("Name");// Theatre
